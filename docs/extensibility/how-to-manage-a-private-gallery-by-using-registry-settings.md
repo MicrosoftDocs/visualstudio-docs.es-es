@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d81594265f19eed0530aaeb06aebc777630bfbf7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d75976ba9c677bb9b8f6c32623f81834471e10a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986978"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021525"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procedimiento Administrar una galería privada mediante la configuración del registro
 Si es un administrador o el desarrollador de una extensión de Shell aislado, puede controlar el acceso a los controles, plantillas y herramientas en la Galería de Visual Studio, la Galería de ejemplos o galerías privadas. Para realizar una galería disponible o no está disponible, crearía un *.pkgdef* archivo que describe las claves del registro modificada y sus valores.  

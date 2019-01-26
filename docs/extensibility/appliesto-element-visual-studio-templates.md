@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c760c4a66a3f1d4bc9e3956d2d7dc824145d7cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8616d2cf922f1522f44470bc76ed3b80e3ef9ceb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912787"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008899"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo (elemento) (plantillas de Visual Studio)
 Especifica una expresión opcional para buscar una o varias funciones coincidentes. (vea <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Las funciones las exponen los tipos de proyecto a través de la jerarquía como una propiedad <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. De esta manera, la plantilla se puede compartir en varios tipos de proyecto que tengan funciones aplicables comunes.  
@@ -23,9 +23,9 @@ Especifica una expresión opcional para buscar una o varias funciones coincident
   
  Apareció por primera vez en Visual Studio 2013 Update 2. Para hacer referencia a la versión correcta, consulte [hacer referencia a ensamblados ofrecidas en Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<AppliesTo >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<AppliesTo>  
   
 ## <a name="syntax"></a>Sintaxis  
   

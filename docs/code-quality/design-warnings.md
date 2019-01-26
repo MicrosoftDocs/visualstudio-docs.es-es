@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e69178039d89d1a20a361045c3c6716cc780b679
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06447475e2686bf3f4ec7c79c0e2417d4ee99a8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904327"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011317"
 ---
 # <a name="design-warnings"></a>Diseñar advertencias
 Advertencias compatibles con el cumplimiento para las instrucciones de diseño de .NET Framework de diseño.

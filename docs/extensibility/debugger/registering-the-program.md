@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 873fff0e366f424911db2af4dd9c38a766361c2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d517e973ed712e7d3cbbacde482fdf7030ffc81e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867373"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006286"
 ---
 # <a name="register-the-program"></a>Registrar el programa
 Después de que el motor de depuración ha adquirido un puerto, representado por un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz, que es el paso siguiente para habilitar el programa que se desea depurar registrarlo en el puerto. Una vez registrado, el programa está disponible para la depuración en uno de los siguientes medios:  

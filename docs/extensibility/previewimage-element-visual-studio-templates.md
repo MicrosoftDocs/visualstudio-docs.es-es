@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0e2c2f5f4914fafbf37daa5fbc8a9218c8e0482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a09d116ed59492376944612ab95eb19bbac71e40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913402"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030592"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage (elemento) (plantillas de Visual Studio)
 Especifica la imagen de vista previa, como un nombre de archivo para la imagen de vista previa que aparece en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<PreviewImage >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<PreviewImage>  
   
 ## <a name="syntax"></a>Sintaxis  
   

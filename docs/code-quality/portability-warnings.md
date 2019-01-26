@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 902e859a-2153-4970-baaa-8a5b4a11806f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f181411d8379c8583057419c2a31f6b27c9d884
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c6caae7a3d9459b44c5be0a93a0cff99846284a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882460"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011187"
 ---
 # <a name="portability-warnings"></a>advertencias de portabilidad
 Advertencias de portabilidad compatibles con la portabilidad entre diferentes sistemas operativos.
