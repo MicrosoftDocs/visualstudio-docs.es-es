@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: b70a7442440a7d7604c226f9b8ae8bc7fc3c4cb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 295b7c2bb0c146e567ab752f693b8dba9aa08517
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886571"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069361"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Trabajar con el Explorador de lenguajes específicos de dominio
 El **DSL Explorer** muestra distintos tipos de información en una vista de árbol. Para obtener más información sobre la mayoría de los elementos en el Explorador de DSL, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md).

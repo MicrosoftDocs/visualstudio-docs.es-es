@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9d860a20-c154-4df4-ba15-636e0fcd42bf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b4db16541ec4e55639f0029005805dc24eb3a21
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d92acea3bb4a8ebd09033ab652b8106f4c4ecb4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850010"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988784"
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
 Deshabilita la asociación automática para todos los motores de depuración asociados con este servidor.  

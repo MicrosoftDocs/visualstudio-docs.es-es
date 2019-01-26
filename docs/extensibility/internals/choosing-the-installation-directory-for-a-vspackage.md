@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df13749a16ad107c864fa1dcf1b3e0f4e7cbed41
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e452523c8789214d35281840cb307d329e485ada
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926299"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978547"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Elija el directorio de instalación de un VSPackage
 Un VSPackage y sus archivos auxiliares deben estar en el sistema de archivos de un usuario. La ubicación depende de si VSPackage está administrado o no administrados, el esquema de versiones en paralelo y la elección del usuario.  

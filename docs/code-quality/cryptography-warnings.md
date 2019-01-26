@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff3ffef284c0cbf1503d573ba01c7a88c1c5e95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15c70941f1c450b4df0e485266611835208306fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964181"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928157"
 ---
 # <a name="cryptography-warnings"></a>Advertencias de criptografía
 Las advertencias de criptografía admiten bibliotecas y aplicaciones más seguras gracias al uso correcto de criptografía. Estas advertencias ayudan a evitar los errores de seguridad en su programa. Si deshabilita cualquier advertencia de este tipo, se debe indicar el motivo claramente en el código además de informar al responsable de seguridad designado a ese proyecto de desarrollo.

@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::IsCustomAttributeDefined | Documentos de Microsoft
+title: IDebugMethodField::IsCustomAttributeDefined | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: faf06a9a6a15b751116b3d1e64b28459f56c27db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ecb0e2c068e3ddd0aae246fe782f808c95ced52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903249"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992326"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 Determina si se ha definido un atributo personalizado específico.  

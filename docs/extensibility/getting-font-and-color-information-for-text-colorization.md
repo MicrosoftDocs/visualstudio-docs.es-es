@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c48a500323185466b1fa5ffaedeff750de31e04d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f5d66a2baada5841dc6a0edefb6fa759168bcb5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919435"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924089"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Obtener información de fuente y color de coloración de texto
 El proceso que se representa o muestra el texto con colores de elementos de interfaz de usuario depende del tipo de proyecto, su tecnología y desarrollador de preferencias. El **fuentes y colores** página de propiedades almacena la configuración.

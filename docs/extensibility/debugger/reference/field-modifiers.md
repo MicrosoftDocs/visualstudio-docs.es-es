@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84275f107872358f027a85843c3ce5c431bba6a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 282e7ec04f2cff029480701de10af2294a8185d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946271"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944506"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 Especifica modificadores para un tipo de campo.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9735a1ef80c22a9bf81edc711ef0f8819114720
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e9c7f8514dffbea2246f74019a8e684f8af76e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941130"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940692"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Grupos, menús y comandos definidos por el IDE
 Muchos de los menús, comandos y grupos de comandos ya están definidos para su uso por el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Estos comandos también están disponibles para su uso cuando se amplía [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

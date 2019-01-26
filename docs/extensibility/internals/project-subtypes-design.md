@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf1b3f57fe82a4f5f6747c2667e0849f6ce6456
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41f7708e9e10c1d5ec78354c137c5ee657575bd6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858028"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927611"
 ---
 # <a name="project-subtypes-design"></a>Diseño de subtipos de proyecto
 Subtipos de proyecto permiten a los VSPackages ampliar proyectos basados en Microsoft Build Engine (MSBuild). El uso de agregación permite reutilizar la mayor parte del sistema del proyecto principal administrada implementada en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aún sigue personalizar el comportamiento de un escenario determinado.  

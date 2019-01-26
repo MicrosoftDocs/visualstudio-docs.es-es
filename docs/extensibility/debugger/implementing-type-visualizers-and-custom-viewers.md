@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14e9efa179405602cd94fa7460a9c7790077403d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8a515fb184d43478c07723e7fe1b15a15e99f50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820457"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037387"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>Implementar los visualizadores de tipo y visores personalizados
 > [!IMPORTANT]

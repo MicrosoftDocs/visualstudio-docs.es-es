@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f49d2e10b61bac39941a12f5617fc313f17c208f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e742e2432596b4b31ecfcfc666a913076050cf06
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967286"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927845"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Extender otras partes de Visual Studio
 Hay muchos más elementos de la IU de Visual Studio que se pueden ampliar. Aquí le mostramos algunas.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ba22bb5f8f20446b87236a4784b02e7ad2eb41e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96a57d2dc3274a1373f5cfa3641c4702b0a1429c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990758"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929606"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
 No se pudo intenta determinar por qué un auto-attach.  

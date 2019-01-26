@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5fce651b-fead-4418-81b0-a011df7644ab
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70cd308eaf7234343f7d4c59a7696f668e4415cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed25959cd6afa7232555757e358a99836d93924b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826262"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981485"
 ---
 # <a name="symbol-provider"></a>Proveedor de símbolos
 Una implementación del evaluador de expresiones debe tener acceso a la información de depuración simbólica generada por el compilador de lenguaje con el fin de evaluar variables y expresiones. Lo hace si consume las interfaces de un proveedor de símbolos (SP), también denominado un controlador de símbolos.  

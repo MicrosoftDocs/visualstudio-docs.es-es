@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8bf47a17-f811-4d9b-bcea-7488908830ff
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d353a7ccbef37b7e2cd6b040a493c9a530ad21c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56caa01fa99e515437116d4d6af9e9be696ac334
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902258"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977699"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 Obtiene el código de salida para un subproceso.  

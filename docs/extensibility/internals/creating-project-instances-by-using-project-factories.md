@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1eefd53b82ef12c0ee2b374a320e049e620dcf5a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bfde36f5e2b4854dbcee494ddd83ff4610982530
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938127"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936923"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Crear instancias de proyecto mediante generadores de proyectos
 Tipos de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizar un *generador de proyectos* para crear instancias de objetos del proyecto. Un generador de proyectos es similar a un generador de clases estándar para los objetos COM cocreatable. Sin embargo, no son cocreatable; objetos del proyecto solo se pueden crear mediante el uso de un generador de proyectos.  

@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 165798341f08afd3b55e8f6b8092457f022a0634
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 967a5ddd369700e66aec4d910ece9115f5809c98
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960042"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035268"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizar y ampliar lenguajes específicos de dominio
 Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios niveles en el que puede definir las herramientas de modelado:
@@ -55,7 +55,7 @@ Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios nivele
 |Eliminar, cambiar el valor primario o volver a vincular los elementos relacionados cuando se elimina un elemento.|Establecer el **propaga eliminar** valor de un rol de relación. Para efectos más complejos, invalidar `ShouldVisitRelationship` y `ShouldVisitRolePlayer` métodos en el `MyDslDeleteClosure` (clase), definido en **DomainModel.cs**<br /><br /> Consulte [personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md)|
 |Conservar el diseño de la forma y la apariencia en la copia y arrastrar y colocar.|Agregar las formas y conectores a copiado `ElementGroupPrototype`. Es el método más cómodo para invalidar `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consulte [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|
 |Pegar formas en la ubicación elegida, como la posición actual del cursor.|Invalidar `ClipboardCommandSet.ProcessOnCopy()` para usar la versión específica de la ubicación de `ElementOperations.Merge().` vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|
-|Crear vínculos adicionales al pegar|Invalidar ClipboardCommandSet.ProcessOnPasteCommand()|
+|Crear vínculos adicionales al pegar|Override ClipboardCommandSet.ProcessOnPasteCommand()|
 |Habilitar arrastrar y colocar en este diagrama, otros lenguajes DSL y Windows elementos|Vea [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Permitir que una forma o la herramienta y se puedan arrastrar una forma secundaria, como un puerto, como si se arrastró el elemento primario.|Definir una directiva de mezcla de elementos en la clase de objeto de destino, para reenviar el objeto colocado con el elemento primario. Consulte [personalizar la creación de elemento y movimiento](../modeling/customizing-element-creation-and-movement.md).|
 |Permiten una forma o una herramienta que se puedan arrastrar una forma y hacer que los vínculos adicionales o los objetos creados. Por ejemplo, para permitir un comentario que se pueden colocar en un elemento al que está vinculado.|Definir una directiva de mezcla de elementos en la clase de dominio de destino y definir los vínculos que se genere. En casos complejos, puede agregar código personalizado. Consulte [personalizar la creación de elemento y movimiento](../modeling/customizing-element-creation-and-movement.md).|

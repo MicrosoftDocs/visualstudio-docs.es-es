@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 899a8ac07d8e5b578c7619cceff173608b15792a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d2ea57e16876d550694fb378a853b10d8f0af29
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947028"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069322"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Elemento VSTemplate (plantillas de Visual Studio)
 Contiene todos los metadatos acerca de la plantilla de proyecto, la plantilla de elemento o el starter kit de.  

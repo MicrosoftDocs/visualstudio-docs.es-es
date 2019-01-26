@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 505267eac618a65434457b0e77f5d53da8e00ee1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7d3a85126d58839da2bd04de32ea4d9dd09c405
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967485"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070895"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 Esta estructura representa la dirección de un campo de una clase o estructura.  

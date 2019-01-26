@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df250545963ad29a609ebe9202c554f646eef74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 930a95d733c0467c3c5d9da89a9732a18d718f99
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840049"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037400"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 Describe los distintos atributos para un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) o un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interfaz. Miembro de la [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estructura.  

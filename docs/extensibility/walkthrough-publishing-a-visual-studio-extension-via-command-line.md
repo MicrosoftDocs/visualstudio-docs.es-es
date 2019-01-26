@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a955331e4f6bfc0f50be3dfb60fba4cd211b987
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857220"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974154"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Tutorial: Publicación de una extensión de Visual Studio a través de la línea de comandos
 
@@ -41,7 +41,7 @@ Publica una extensión en Marketplace. La extensión puede ser un archivo vsix, 
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
 ```
 
-### <a name="createpublisher"></a>CreatePublisher para
+### <a name="createpublisher"></a>createPublisher
 
 Crea un publicador en Marketplace. También registra el publicador en la máquina para las futuras acciones (por ejemplo, una extensión de eliminación y publicación).
 
@@ -90,9 +90,9 @@ Registra un publicador en el equipo.
 
 |Opciones de comando |Descripción |
 |---------|---------|
-|personalAccessToken (obligatorio | Token de acceso personal que se usa para autenticar el publicador. |
+|personalAccessToken (required | Token de acceso personal que se usa para autenticar el publicador. |
 |publisherName (obligatorio) | El nombre del publicador (por ejemplo, el identificador). |
-|Sobrescribir | Especifica que se debe sobrescribir cualquier publicador existente con el nuevo token de acceso personal. |
+|overwrite | Especifica que se debe sobrescribir cualquier publicador existente con el nuevo token de acceso personal. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"

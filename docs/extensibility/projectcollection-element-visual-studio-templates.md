@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: deb27180-2035-49ed-b835-c47bb3cd2f8f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87a2bd56522477e56c57b69e4b3b400c84d3b0a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2631af8fa4d6ee34fb47b5094631d2d64c9ff73c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841257"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942612"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection (elemento) (plantillas de Visual Studio)
 Especifica la organización y el contenido de las plantillas de varios proyectos.  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<ProjectCollection >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectCollection>  
   
 ## <a name="syntax"></a>Sintaxis  
   

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 402c746f23eb472b3b63066389464c4fed6346a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6bf3764d1c1e2e463406775ae11374e924b0d91f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870260"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922030"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Versiones de Visual Studio compatibles con el SDK de modelado y virtualización
 
