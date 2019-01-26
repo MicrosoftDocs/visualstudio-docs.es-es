@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce0a3f760f3ac34b602b236064dee80923d65845
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47e72bbc19fef3f75bbd99d2d61902fd881c09bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880343"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068711"
 ---
 # <a name="extend-properties-and-the-property-window"></a>Extender las propiedades y la ventana de propiedades
 El **propiedades** ventana se utiliza para ver y editar las propiedades de tiempo de diseño y los eventos de los objetos seleccionados.  
