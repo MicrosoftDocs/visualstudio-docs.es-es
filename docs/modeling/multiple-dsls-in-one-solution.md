@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: fce705b4f36c8c3bf0e6d44feaff353853652cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea5deaf02801a15bba851589d1f20beaa091b1b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940659"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022084"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Varios DSL en una solución
 Puede empaquetar varios DSL como parte de una única solución para que se instalen juntos.

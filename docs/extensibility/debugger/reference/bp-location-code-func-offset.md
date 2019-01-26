@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc76bca11eb963f2e51e0a97aca023b011b6bc33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4c7d342b82a8c5b047c49bbedfb680541ad997a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989116"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025129"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 Describe la ubicación de desplazamiento de un punto de interrupción en una función en el código.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1352c6ab-7b92-4a16-b2d2-6520b628830e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15bff421ea7af8aa0835b9fcd6c455cd4e12fbcf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f70d4dc824ab38d25bb4dee9601a71c2e4a4a284
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953729"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021317"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 Determina si se oculta el código en la dirección de depurador especificado.  

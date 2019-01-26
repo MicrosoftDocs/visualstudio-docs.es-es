@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd08f356-cc67-4717-98c9-c3d00cad2040
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0339da5c07741c6db15f2df9db6daad455af699
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e6679c35452c63009046afb275922188d4fede6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851893"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916360"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 Destruye el identificador único asociado a esta propiedad, que indica que el llamador ya no se ocupa de identificar esta propiedad de forma única en todas las demás propiedades.  
