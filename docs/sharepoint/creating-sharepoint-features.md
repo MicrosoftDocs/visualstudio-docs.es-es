@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 - features [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55b1b3f2f243a6c4d35a4c1effbb4ca759abd9d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58db8ea5affd295ec21ed9e398053c57345dee79
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842887"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862136"
 ---
 # <a name="create-sharepoint-features"></a>Crear características de SharePoint
   Puede usar una característica de SharePoint para agrupar elementos relacionados del proyecto de SharePoint para una fácil implementación. Puede crear características, establecer ámbitos y marcar otras características como dependencias mediante el Diseñador de características de SharePoint. El diseñador también genera un manifiesto, que es un archivo XML que describe cada característica.  
@@ -42,7 +42,7 @@ ms.locfileid: "53842887"
 |--------------|-----------------|  
 |Título|Opcional. El título predeterminado de la característica está establecido en *SolutionName* *FeatureName*.|  
 |Descripción|Opcional. La descripción de la característica de SharePoint.|  
-|Ámbito|Obligatorio. Si se crea con una característica **el Explorador de soluciones**, el ámbito se establece en Web de forma predeterminada.<br /><br /> -Granja de servidores: Activar una característica para una granja de servidores completa.<br /><br /> -Sitio: Activar una característica para todos los sitios web en una colección de sitios.<br /><br /> -Web: Activar una característica para un sitio web específico.<br /><br /> -WebApplication: Activar una característica para todos los sitios web en una aplicación web.|  
+|Ámbito|Obligatorio. Si se crea con una característica **el Explorador de soluciones**, el ámbito se establece en Web de forma predeterminada.<br /><br /> -Granja de servidores: Activar una característica para una granja de servidores completa.<br /><br /> -Sitio: Activar una característica para todos los sitios web en una colección de sitios.<br /><br /> -Web: Activar una característica para un sitio web específico.<br /><br /> - WebApplication: Activar una característica para todos los sitios web en una aplicación web.|  
 |Elementos de la solución|Todos los elementos de SharePoint que se pueden agregar a la característica.|  
 |Elementos de la característica|Los elementos de proyecto de SharePoint que se han agregado a la característica.|  
   

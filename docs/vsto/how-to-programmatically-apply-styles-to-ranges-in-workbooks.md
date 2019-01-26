@@ -11,15 +11,15 @@ helpviewer_keywords:
 - workbooks, styles
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d12b42d7af92204992f1e32cbb29f311d337b70f
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c9932aae9e54c65baf35e1dbff5c6ebbf2ff9dc7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096139"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863258"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Procedimiento Aplicar estilos a rangos de libros mediante programación
   Puede aplicar estilos con nombre a distintas áreas de los libros. Excel proporciona una serie de estilos predefinidos.  

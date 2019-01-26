@@ -21,17 +21,17 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - read-only properties
 - Ribbon [Office development in Visual Studio], shortcut keys
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7179de49f80bee847077a7f247cc11dee855be80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928872"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867265"
 ---
 # <a name="ribbon-designer"></a>Diseñador de la cinta de opciones
   El Diseñador de cinta es un lienzo de diseño visual. Usar el Diseñador de cinta de opciones para agregar pestañas personalizadas, grupos y controles a la cinta de opciones de una aplicación de Microsoft Office.
@@ -142,11 +142,11 @@ ms.locfileid: "53928872"
 |-------------|-----------------|
 |**Box**|Un contenedor que organiza los controles de un grupo. Puede agregar cualquier control a un cuadro, excepto un separador, un grupo o una pestaña. Un cuadro puede ser horizontal o vertical.|
 |**Button**|Un botón que inicia una acción. Puede agregar un botón a un grupo, un grupo de botones, una lista desplegable, una galería, un menú o un botón de expansión.|
-|**Grupo de botones**|Un grupo que contiene uno o varios botones, botones de alternancia, menús, botones de expansión y galerías. Puede agregar un grupo de botones a un grupo o un menú.|
+|**ButtonGroup**|Un grupo que contiene uno o varios botones, botones de alternancia, menús, botones de expansión y galerías. Puede agregar un grupo de botones a un grupo o un menú.|
 |**CheckBox**|Un cuadro que está activado o desactivado para activar o desactivar una opción.|
 |**ComboBox**|Un cuadro de edición con un cuadro de lista asociado. Los usuarios pueden escribir o seleccionar su opción. El cuadro muestra la selección actual. Use el <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> propiedad para agregar y quitar elementos en tiempo de ejecución antes o después de carga la cinta de opciones en la aplicación de Office.|
-|**Lista desplegable**|Una lista de elementos que el usuario puede seleccionar. El usuario no puede escribir un nuevo elemento en una lista desplegable.<br /><br /> Use el <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> propiedad para agregar elementos a la lista. Puede agregar y quitar elementos en tiempo de ejecución.<br /><br /> Use el <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> propiedad para agregar botones a la lista. Sin embargo, no puede agregar y quitar botones en tiempo de ejecución después de carga la cinta de opciones en la aplicación de Office.|
-|**Cuadro de edición**|Un cuadro en el que el usuario puede escribir texto.|
+|**DropDown**|Una lista de elementos que el usuario puede seleccionar. El usuario no puede escribir un nuevo elemento en una lista desplegable.<br /><br /> Use el <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> propiedad para agregar elementos a la lista. Puede agregar y quitar elementos en tiempo de ejecución.<br /><br /> Use el <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> propiedad para agregar botones a la lista. Sin embargo, no puede agregar y quitar botones en tiempo de ejecución después de carga la cinta de opciones en la aplicación de Office.|
+|**EditBox**|Un cuadro en el que el usuario puede escribir texto.|
 |**Galería**|Un menú que presenta una matriz o cuadrícula de opciones visuales las desde el que los usuarios pueden seleccionar. Puede controlar el diseño de las selecciones en el menú. Use la <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> y <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> propiedades para especificar el número de filas y columnas que se mostrarán los elementos y botones de la galería.|
 |**Label**|Texto que puede usar para identificar controles en la cinta de opciones.|
 |**Menu**|Una lista desplegable que puede contener ninguno de los siguientes controles:<br /><br /> : Botón<br />: Casilla de verificación<br />-Galería<br />-Menú<br />: Botón de expansión<br />: Botón de alternancia<br />: Separador<br /><br /> Para agregar un control a un menú en el Diseñador de cinta, haga clic en la flecha hacia abajo en el menú para exponer la superficie de diseño de menú. A continuación, puede arrastrar los controles de cinta de opciones desde el **cuadro de herramientas** en el menú. Para organizar los controles, arrástrelos hacia las posiciones deseadas.<br /><br /> Para agregar controles a la <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> después de carga la cinta de opciones en la aplicación de Office, debe establecer el <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> propiedad **true** antes de que se cargue la cinta de opciones. Para obtener información acerca de cómo hacerlo, consulte [información general sobre el modelo de objetos de cinta de opciones](../vsto/ribbon-object-model-overview.md).|
@@ -188,7 +188,7 @@ ms.locfileid: "53928872"
 |Copie los controles seleccionados.|**Ctrl**+**C**|
 |Cortar los controles seleccionados.|**Ctrl**+**X**|
 |Pegar controles desde el Portapapeles.|**Ctrl**+**V**|
-|Seleccione el **cuadro de herramientas**.|**CTRL**+**Alt**+**X**|
+|Seleccione el **cuadro de herramientas**.|**Ctrl**+**Alt**+**X**|
 |Seleccione el componente primario.|**Esc**|
 
  Métodos abreviados de teclado que se aplican solo al menú de Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>, y <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> se muestran en la tabla siguiente.

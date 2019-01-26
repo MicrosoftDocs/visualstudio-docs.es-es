@@ -16,15 +16,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 474c0085851d826b4b15f5f7c84600e0dd04bcb1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986406"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862185"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Características disponibles por tipo de aplicación y el proyecto de Office
   Visual Studio tiene varios tipos de plantillas de proyecto que admiten diferentes escenarios empresariales para las aplicaciones de Microsoft Office, incluyendo los siguientes tipos:  
@@ -53,16 +53,16 @@ ms.locfileid: "53986406"
 |-------------|--------------------------------------------|---------------------|  
 |Panel de acciones.|Proyectos de nivel del documento.|[Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)|  
 |Implementación ClickOnce|VS y los proyectos de nivel del documento.|[Implementar una solución de Office](../vsto/deploying-an-office-solution.md)|  
-|Paneles de tareas personalizados.|Proyectos de complementos de VSTO para las siguientes aplicaciones:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 e InfoPath 2010 solo)<br />-Outlook<br />-PowerPoint<br />-Word|[Paneles de tareas personalizados](../vsto/custom-task-panes.md)|  
-|Elementos XML personalizados.|Proyectos de nivel del documento.<br /><br /> Proyectos de nivel de aplicación para las siguientes aplicaciones:<br /><br /> -Excel<br />-PowerPoint<br />-Word|[Información general sobre elementos XML personalizados](../vsto/custom-xml-parts-overview.md)|  
+|Paneles de tareas personalizados.|Proyectos de complementos de VSTO para las siguientes aplicaciones:<br /><br /> -   Excel<br />-InfoPath (InfoPath 2013 e InfoPath 2010 solo)<br />-Outlook<br />-   PowerPoint<br />-   Word|[Paneles de tareas personalizados](../vsto/custom-task-panes.md)|  
+|Elementos XML personalizados.|Proyectos de nivel del documento.<br /><br /> Proyectos de nivel de aplicación para las siguientes aplicaciones:<br /><br /> -   Excel<br />-   PowerPoint<br />-   Word|[Información general sobre elementos XML personalizados](../vsto/custom-xml-parts-overview.md)|  
 |Caché de datos.|Proyectos de nivel del documento.|[Datos almacenados en caché en las personalizaciones de nivel de documento](../vsto/cached-data-in-document-level-customizations.md)|  
 |Exponer un objeto de un complemento de VSTO a otras soluciones de Microsoft Office.|Proyectos de complementos de VSTO.|[Llamar a código en complementos VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
-|Los siguientes controles host:<br /><br /> -Gráfico<br />-ListObject<br />-NamedRange<br />: Controles de contenido<br />-Marcador|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO para Word y Excel.|[Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)|  
-|Los siguientes controles host:<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|Proyectos de nivel del documento.|[Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)|  
+|Los siguientes controles host:<br /><br /> -Gráfico<br />-   ListObject<br />-   NamedRange<br />: Controles de contenido<br />-Marcador|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO para Word y Excel.|[Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)|  
+|Los siguientes controles host:<br /><br /> -   XMLMappedRange<br />-XMLNode<br />-XMLNodes|Proyectos de nivel del documento.|[Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)|  
 |Implementación de varios proyectos.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO.|[Tutorial: Implementar varias soluciones de Office en un único instalador ClickOnce](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Áreas de formulario de Outlook.|Proyectos de complementos de VSTO para Outlook.|[Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)|  
 |Acciones posteriores a la implementación.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO.|[Tutorial: Copiar un documento en el equipo del usuario final después de una instalación ClickOnce](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
-|Personalizaciones de la Cinta.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO para las siguientes aplicaciones:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 e InfoPath 2010 solo)<br />-Outlook<br />-PowerPoint<br />: Proyecto<br />: Visio<br />-Word|[Información general de la cinta de opciones](../vsto/ribbon-overview.md)|  
+|Personalizaciones de la Cinta.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO para las siguientes aplicaciones:<br /><br /> -   Excel<br />-InfoPath (InfoPath 2013 e InfoPath 2010 solo)<br />-Outlook<br />-   PowerPoint<br />-   Project<br />-   Visio<br />-   Word|[Información general de la cinta de opciones](../vsto/ribbon-overview.md)|  
 |Diseñador de documentos de Visual.|Proyectos de nivel del documento.|[Proyectos de Office en el entorno de Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>Vea también  

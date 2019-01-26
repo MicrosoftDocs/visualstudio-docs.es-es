@@ -10,17 +10,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], parameter types
 - BDC [SharePoint development in Visual Studio], type descriptor
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1911f9b6a0031c53177ff15815dbb7ad16e4100a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953162"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866797"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procedimiento Definir el descriptor de tipo de un parámetro
   Un descriptor de tipo contiene propiedades que describen el tipo de datos de un parámetro. Un descriptor de tipo puede definir un campo, una entidad o una colección de entidades. Para obtener más información, consulte [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
@@ -95,19 +95,19 @@ ms.locfileid: "53953162"
   
       En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a una colección de las clases del proyecto.  
   
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` ` BdcModel1.Contact, BdcModel1]'  
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` `BdcModel1.Contact, BdcModel1]`  
   
    - Si se trata de un tipo ubicado en un ensamblado de la solución, el nombre completo contiene el nombre del tipo, el nombre del ensamblado, el número de versión, la referencia cultural y el token de clave pública.  
   
       En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a una colección de tipos en un ensamblado que se hace referencia en la solución.  
   
-      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, versión = 4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089]'  
+      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]`  
   
    - Si se trata de un tipo definido en el modelo de objetos de BDC, el nombre completo solamente incluye el espacio de nombres y el nombre del tipo.  
   
       En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a una colección de tipos definidos en el modelo de objetos BDC.  
   
-      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]'  
+      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]`  
   
 6. En el **detalles del método de BDC** , abra la lista que aparece en el descriptor de tipo y, a continuación, elija **editar**.  
   

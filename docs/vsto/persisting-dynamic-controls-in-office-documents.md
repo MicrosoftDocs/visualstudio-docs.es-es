@@ -13,17 +13,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 - documents [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], persisting in the document
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 570131dfdb3cb582ba6ee6c8a12fff2dfcc01e98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48b2cc1402243bfedb7b22280b4a161235cb9957
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894800"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863518"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Guardar controles dinámicos en documentos de Office
 

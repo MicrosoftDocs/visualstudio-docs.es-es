@@ -4,17 +4,17 @@ ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d55c260618eb7edcf68e91b521f2ace203ddbf01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd28e7a9f0fc04a704d6d3600fb80390d9509de1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898887"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863050"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Procedimiento Controlar conflictos de implementación
   Puede proporcionar su propio código para controlar conflictos de implementación para un elemento de proyecto de SharePoint. Por ejemplo, puede determinar si los archivos en el elemento de proyecto actual ya existen en la ubicación de implementación y, a continuación, eliminación los archivos implementados antes de implementa el elemento de proyecto actual. Para obtener más información acerca de los conflictos de implementación, consulte [extender SharePoint empaquetado e implementación](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  

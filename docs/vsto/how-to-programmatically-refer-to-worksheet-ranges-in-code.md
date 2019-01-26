@@ -10,17 +10,17 @@ helpviewer_keywords:
 - worksheets, referring to ranges
 - referring to worksheet ranges
 - Excel [Office development in Visual Studio], referring to worksheet ranges
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1a9904140d08d3ddca63c70bc77f1db4dffb1d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b1a1f0f6c37bca2d545e3b689bc72c553ffc6c6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851253"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867148"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Procedimiento Mediante programación hacen referencia a rangos de hoja de cálculo en el código
   Usar un proceso similar para hacer referencia al contenido de un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto nativo de rango de Excel.  

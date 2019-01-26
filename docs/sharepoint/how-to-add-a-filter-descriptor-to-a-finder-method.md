@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], add a filter
 - BDC [SharePoint development in Visual Studio], add a filter
 - BDC [SharePoint development in Visual Studio], filter descriptors
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf1909f6c57ed82ba5afcfd30f6586e9bd4d6d14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f21cecee163b6d79d22d008314c0dcf54a313032
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877775"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866144"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Procedimiento Agregar un descriptor de filtro a un método Finder
   Descriptores de filtro permiten a los consumidores del modelo pasar valores a los métodos antes de ejecutarlos. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).  
