@@ -11,15 +11,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31690ccc3c2f32b4abb2ff9fefcc268c83977595
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea95a5c64a4f3bbe6332542aee84d0ec0b12ec3e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856324"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036204"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Utilice la ventana de resultados de las métricas de código
 

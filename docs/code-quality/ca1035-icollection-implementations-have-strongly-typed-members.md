@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ad404eb5-cf6a-44b7-b78a-8ebfb654bc7f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1695ee55c8142a170fae41a1143118e0ba5a53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35fa1bb45013b885bfdabb014980f97fe670d697
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921991"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Las implementaciones de ICollection tienen miembros fuertemente tipados
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9d5c6bc6-7e72-4f1b-801c-7192458f3ba8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8dd02f49b7865bf92cce2f6cd5e48fdf8992b27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8fd1422b787fc8322e66e362b629092a1bb2cca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863753"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006800"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
 Devuelve una copia de la enumeración actual como un objeto independiente.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerList | Documentos de Microsoft
+title: IDebugProperty3::GetCustomViewerList | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4af30d678711047043ce0ff20f9a5d964d725a6d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2b10de8e8d184342a8994050afaaeff94f8ca24
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852013"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988381"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Obtiene una lista de visores personalizados asociados a esta propiedad.  

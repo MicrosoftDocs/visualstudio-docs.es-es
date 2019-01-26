@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6161c7568760947dcc0fc43c409cd9e947630b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9213440d0c3c3dbaa7c95e45bbf61386b60ff46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908884"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016193"
 ---
 # <a name="feedback-to-the-user"></a>Comentarios para el usuario
 En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE), los comentarios visuales sobre la funcionalidad disponible se basa en la selección actual y el contexto de la selección global del usuario. En la tabla siguiente se enumera la funcionalidad que está disponible en los contextos de selección diferente.  

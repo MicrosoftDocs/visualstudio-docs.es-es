@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b0739294f5c2b003baa7e221c7e617456fda89e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bdc3470d07ebe8061a1e8b0c452cd55480af94c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822047"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926195"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Este método devuelve un servicio solicitado.  

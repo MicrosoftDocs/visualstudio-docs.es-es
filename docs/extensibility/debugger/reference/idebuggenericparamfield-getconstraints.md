@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3190b52e1963e0647a522075ca736673ff78e26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4630ecef2acb7806aaca97381f23dd890a5700e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905892"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970466"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 Recupera las restricciones que están asociadas con este parámetro genérico.  

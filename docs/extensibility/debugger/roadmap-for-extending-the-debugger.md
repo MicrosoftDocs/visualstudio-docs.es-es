@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87d9d1eb077e875e234166ba57e378dde721abaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 637452fe5b36860cd23385f4a041872ea9dfeb0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951078"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013475"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Guía básica para ampliar el depurador
 Esta documentación proporciona información de referencia y la guía para extender la [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] del depurador con el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  

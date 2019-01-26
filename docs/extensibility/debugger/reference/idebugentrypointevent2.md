@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bf75f84d8adf6aa8786c02a6b5fb1a927be7595
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2205ef7d6fa8b270ce30224f867dd2c318272b37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931121"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992287"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 El motor de depuración (DE) envía esta interfaz para el Administrador de depuración de la sesión (SDM) cuando el programa que se va a ejecutar la primera instrucción de código de usuario.  

@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, escape sequences
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4f38d82ab220b348ad9e74d3c257be1d4e3b9c87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b88786c8403347e6526a7a097afcee69889b2a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887096"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031108"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Usar secuencias de escape en las plantillas de texto
 Puede utilizar secuencias de escape en las plantillas de texto para generar etiquetas de plantilla de texto y (en C# solo código) para los caracteres de escape de control y entre comillas.

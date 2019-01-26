@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f72e251f66c196ec36eb68f5a228536658ab89d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83284124f4cdf2fce49812998b6444fa43dc958e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823952"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954948"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 Crea una instancia del campo dada una matriz de argumentos de tipo.  

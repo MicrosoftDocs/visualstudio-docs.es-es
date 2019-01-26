@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakEvent2 | Documentos de Microsoft
+title: IDebugBreakEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23a8c534ba3d829a02075d2d195689df6d08482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 218c1d01a693b81472a40430fa60455073bb8fb4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857509"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929015"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 Esta interfaz indica al administrador de depuración de la sesión (SDM) que una interrupción asincrónica se ha completado correctamente.  

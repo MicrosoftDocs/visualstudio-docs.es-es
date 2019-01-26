@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 45a0328a-add7-40f9-8934-dff59beb02b3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48f5e0649b9d59994098622d00c3cf23772a9d81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dae0d33bc1dd2ae826d4c8a301287f09f05f17cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987750"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003405"
 ---
 # <a name="ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute"></a>CA2139: Los métodos transparentes no pueden usar el atributo HandleProcessCorruptingExceptions
 

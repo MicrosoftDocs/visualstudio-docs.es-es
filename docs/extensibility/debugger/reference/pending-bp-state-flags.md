@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1b578362ae4e7f505a1bd06361edb2f1512e16b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db6f2b84c0d10ed6be171ad1c3055ca8f02fa5db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831594"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958166"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 Especifica las marcas de estado de punto de interrupción pendiente.  

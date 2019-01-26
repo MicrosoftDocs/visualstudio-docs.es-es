@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 56f7bb70-d55b-471c-8c65-09a9e7f4938e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4754e0207f2f46ff9437e4c6204b2e0881960fa1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 856a66c6d0d402f4302bc49c9ddd8b265b1cfdbd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944741"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027699"
 ---
 # <a name="ienumdebugerrorbreakpoints2getcount"></a>IEnumDebugErrorBreakpoints2::GetCount
 Devuelve el número de elementos de la enumeración.  

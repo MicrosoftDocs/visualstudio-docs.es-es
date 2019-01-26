@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d6ce26d5-42ba-44c1-8659-0516db5bc82d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5447539cba2d336a21d9a55a833418185dc4a34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93b356ef6c57c8a3b67a806a1d1495a96b2391b7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938106"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017726"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 Obtiene el tipo de clase de atributo personalizado.  

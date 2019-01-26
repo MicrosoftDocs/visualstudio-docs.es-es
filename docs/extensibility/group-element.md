@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19bc3f44a4ba87195986327fe756e7419f259076
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6dadd65aa1e3850417e43bfce6dea848b12e07b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827460"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955149"
 ---
 # <a name="group-element"></a>Elemento Group
 Define un grupo de comandos del VSPackage.  

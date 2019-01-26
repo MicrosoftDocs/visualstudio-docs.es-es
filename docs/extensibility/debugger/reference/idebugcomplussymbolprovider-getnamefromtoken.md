@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6e8cf468-5fd1-4655-93ed-88828d6068b7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa11df7b1bb3bfab3079593880262c20304be14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3cc1bf67a04fd625bc3e3431a510906072c7d375
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960545"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017544"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 Devuelve el nombre asociado con el token especificado, dado su objeto de metadatos.  

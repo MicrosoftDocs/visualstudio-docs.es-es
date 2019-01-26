@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79991880b244165f6041903c2f71188a25d910cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be33e399ff50d0f9c1caa4d88410f61ab9ede689
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850822"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988654"
 ---
 # <a name="required-port-supplier-interfaces"></a>Interfaces de proveedor de puerto requerido
 Debe implementar un proveedor de puerto del [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interfaz.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
