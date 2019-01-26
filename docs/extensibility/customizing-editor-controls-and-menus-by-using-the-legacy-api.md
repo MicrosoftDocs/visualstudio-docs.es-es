@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1ce1f55b-6825-4654-a60a-7831af2ab44f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30e30bd1ce04c6a554aa1ab737e4c8d7c36163da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a365ac32ad59d01ceff7bc29cbb223a8fd32e5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851266"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002731"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Personalizar controles de editor y Mmenus mediante la API heredada
 Un servicio de lenguaje o una vista de texto puede controlar los menús contextuales y los controles en el editor. Las páginas de esta sección explican cómo trabajar con estas características.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2e4ea69779e88cbe01dc6a76809e05c7ab1a6c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 682df39774d3f58ca4d4d0df560b2d900b8f6c9c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853377"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006884"
 ---
 # <a name="project-configuration-object"></a>Objeto de configuración del proyecto
 El objeto de configuración de proyecto administra la presentación de información de configuración de la interfaz de usuario.  

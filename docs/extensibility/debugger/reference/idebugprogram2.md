@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2 | Documentos de Microsoft
+title: IDebugProgram2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ee7d44d6087ea53cf0ae063ce3bcb7473157aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4576160183067828f21787af9e24f6e034cad56
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826184"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012162"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Esta interfaz representa un programa que se está ejecutando en un proceso.  

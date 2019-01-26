@@ -13,17 +13,17 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 805500b9f12e227e95add02ca0180b658b85d1cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ec1bc999025128c0dd68281dfc53e3f6353ae6b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931952"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875555"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Crear listas, tipos de contenido y columnas de sitio para SharePoint
   Visual Studio proporciona plantillas de elemento de proyecto para muchos elementos diferentes, fundamentales SharePoint, incluidos *enumera* y *tipos de contenido*, ambos de los cuales pueden incorporar columnas de sitio (o  *campos*). Los nuevos diseñadores para listas y tipos de contenido que sea más fácil que nunca la creación de estos elementos.  

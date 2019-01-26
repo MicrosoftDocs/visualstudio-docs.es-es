@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f3380545ce78defb57be8944881309ea2ab2990
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21785e7aed4e59e9ee7852bdb5474f7c1ca9d95f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929910"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031739"
 ---
 # <a name="language-services-and-the-core-editor"></a>Servicios de lenguaje y el editor básico
 Editores de Visual Studio están asociados con frecuencia a un servicio de lenguaje. Entre otras cosas, un servicio de lenguaje proporciona colores de sintaxis, finalización de instrucciones, IntelliSense y el formato de texto.  
