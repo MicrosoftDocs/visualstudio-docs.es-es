@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 816ed6d35c77a19abdd97679513411e05721b17a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96313333c330bff1a278a81e1276f8bcd2799e21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861395"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017882"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
 Describe una matriz de identificadores únicos para los motores de depuración disponible.  

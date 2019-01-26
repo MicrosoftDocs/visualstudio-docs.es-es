@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d63feb1c90552c507d2429e903de305fc61c9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae629739bd1af7a47048cb7d1097916a1fda3958
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895956"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014957"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage (Elemento, Plantillas de Visual Studio)
 Especifica si o no la **seleccionar la página maestra** tiene activada la casilla de verificación el **Agregar nuevo elemento** cuadro de diálogo.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<SupportsMasterPage >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<SupportsMasterPage>  
   
 ## <a name="syntax"></a>Sintaxis  
   

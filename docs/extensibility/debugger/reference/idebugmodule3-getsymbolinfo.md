@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fb03186d623c63fd4c3ff950140918244397115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8273a8111eb087202a1b97ec042e8d1bd21f637a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945761"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992833"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Recupera una lista de rutas de acceso que se buscan los símbolos, así como los resultados de búsqueda en cada ruta de acceso.  

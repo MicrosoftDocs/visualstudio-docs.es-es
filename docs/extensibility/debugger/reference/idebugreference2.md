@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2 | Documentos de Microsoft
+title: IDebugReference2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df5eb1558cf2d93866eaa50e3a480ba70f904fe8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c6e68785640e68aa6fe4641528ca2f96d3c8406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855249"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978287"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Esta interfaz representa una referencia a una propiedad de marco de pila o alguna otra propiedad.  

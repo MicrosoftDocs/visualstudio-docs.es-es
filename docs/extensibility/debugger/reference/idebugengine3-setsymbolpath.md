@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a307f0ad2493db88c94f3578afa171db3e47a5ae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c92bdd32c43e3877262bae16011e27eb73963e7a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882447"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932966"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 Establece la ruta de acceso o rutas de acceso que se buscan los símbolos de depuración.  

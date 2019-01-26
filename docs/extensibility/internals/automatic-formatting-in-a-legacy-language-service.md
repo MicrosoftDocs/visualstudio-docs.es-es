@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c210fc94-77bd-4694-b312-045087d8a549
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89345c7cd466211292a21ec4ca99276ebf95d67a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74e92cac718c24245988f0e5bdbcbc05e2aee43d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873553"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002566"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>Formato automático en un servicio de lenguaje heredado
 Con el formato automático, un servicio de lenguaje inserta automáticamente un fragmento de código cuando un usuario empieza a escribir una construcción de código conocidos.  

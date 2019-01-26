@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fc2b74b32c0fb90a578644df0065e24eb8e373f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5124088599eced9d5ae6bc17365d06dc36f81987
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027898"
 ---
 # <a name="sccadd-function"></a>SccAdd (función)
 Esta función agrega nuevos archivos al sistema de control de código fuente.  
@@ -43,7 +43,7 @@ SCCRTN SccAdd(
  hWnd  
  [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
   
- n  
+ nFiles  
  [in] Número de archivos que se van a agregarse al proyecto actual como se indica en la `lpFileNames` matriz.  
   
  lpFileNames  
@@ -84,13 +84,13 @@ SCCRTN SccAdd(
   
 |Opción|Valor|Significado|  
 |------------|-----------|-------------|  
-|SCC_FILETYPE_AUTO|0 x 00|El complemento de control de origen debe detectar el tipo de archivo.|  
-|SCC_FILETYPE_TEXT|0 x 01|Indica un archivo de texto ASCII.|  
-|SCC_FILETYPE_BINARY|0 x 02|Indica un tipo de archivo que no sea texto ASCII.|  
+|SCC_FILETYPE_AUTO|0x00|El complemento de control de origen debe detectar el tipo de archivo.|  
+|SCC_FILETYPE_TEXT|0x01|Indica un archivo de texto ASCII.|  
+|SCC_FILETYPE_BINARY|0x02|Indica un tipo de archivo que no sea texto ASCII.|  
 |SCC_ADD_STORELATEST|0x04|Almacena sólo la última copia del archivo, no hay diferencias.|  
-|SCC_FILETYPE_TEXT_ANSI|0 x 08|Trata el archivo como texto ANSI.|  
-|SCC_FILETYPE_UTF8|0 x 10|Trata el archivo como texto Unicode en formato UTF8.|  
-|SCC_FILETYPE_UTF16LE|0 x 20|Trata el archivo como texto Unicode en UTF16 Little Endian formato.|  
+|SCC_FILETYPE_TEXT_ANSI|0x08|Trata el archivo como texto ANSI.|  
+|SCC_FILETYPE_UTF8|0x10|Trata el archivo como texto Unicode en formato UTF8.|  
+|SCC_FILETYPE_UTF16LE|0x20|Trata el archivo como texto Unicode en UTF16 Little Endian formato.|  
 |SCC_FILETYPE_UTF16BE|0x40|Trata el archivo como texto Unicode en UTF16 Big Endian de formato.|  
   
 ## <a name="see-also"></a>Vea también  

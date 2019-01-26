@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4198cf6bbed2d8f6172872e4f98f1edb4749e7d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3f9086bba7d5c5adfa42f1297de07a2f50ff7e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926325"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988134"
 ---
 # <a name="command-handling"></a>Control de comandos
 El editor puede definir nuevos comandos. Normalmente, los comandos se muestran en un menú, en una barra de herramientas o en un menú contextual.  
@@ -27,21 +27,21 @@ El editor puede definir nuevos comandos. Normalmente, los comandos se muestran e
 ## <a name="add-commands-to-the-editor-context-menu"></a>Agregar comandos en el menú contextual del editor  
  Para agregar un comando al menú contextual, primero debe definir un conjunto de comandos de menú que pertenecen a un grupo específico. En el siguiente ejemplo se toma de la *.vsct* archivo generado como parte del tutorial [Tutorial: Agregar características a un editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Guid del menú = "guidCustomEditorCmdSet" id = "IDMX_RTF" prioridad = "0 x 0000" type = "Context" >  
+ \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
   
- \<Guid del elemento primario = "guidCustomEditorCmdSet" id = "0" / >  
+ \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
   
  \<Cadenas >  
   
  \<ButtonText > menú contextual de CustomEditor\</ButtonText >  
   
- \<CommandName > CustomEditorContextMenu\</CommandName >  
+ \<CommandName>CustomEditorContextMenu\</CommandName>  
   
- \</ Cadenas de >  
+ \</Strings>  
   
  \</ Menú >  
   
- \</ Menús >  
+ \</Menus>  
   
  El texto anterior agrega un comando de menú contextual con el texto **menú contextual de CustomEditor**. El GUID del menú es parte del conjunto de comandos que se crea con este editor. El tipo es "Contexto".  
   

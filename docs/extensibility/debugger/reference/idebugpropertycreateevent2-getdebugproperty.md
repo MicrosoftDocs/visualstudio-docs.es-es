@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyCreateEvent2::GetDebugProperty | Documentos de Microsoft
+title: IDebugPropertyCreateEvent2::GetDebugProperty | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d7e43183-444c-4417-af19-82e28229f83a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7614cb66b9e4bbcb31804e78f2b24ebeee66473
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c38ccf4adcef59454e6d65730034099777a2c549
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901836"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999410"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 Obtiene la nueva propiedad.  

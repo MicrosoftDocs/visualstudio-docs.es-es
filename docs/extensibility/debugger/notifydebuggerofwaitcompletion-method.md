@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf89c21d533ae994052d9bf47c9f6e2b3d480921
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29657a85b72fa57f37a3932465b5aeb874e9a672
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944579"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012396"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion (método)
 Método de marcador de posición usado como un destino de punto de interrupción por el depurador. Este método no debe ser entre líneas u optimizado.  

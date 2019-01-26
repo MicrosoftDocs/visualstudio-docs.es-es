@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499b6cb593dd29d9bd881203daab19fc319ff1a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de713065b61df07a791fa81e89425481227676ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902459"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006716"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Agregar comandos de Visual Studio a una página de inicio
 Cuando se crea una página de inicio personalizada, puede agregar comandos de Visual Studio a él. Este documento describen las distintas formas para enlazar comandos de Visual Studio con objetos XAML en una página de inicio.  
@@ -80,7 +80,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
   
 3.  Invoque el comando estableciendo el `Command` propiedad de un objeto XAML, como se muestra en el ejemplo siguiente.  
   
-     XAML  
+     Xaml  
   
     ```  
     <vs:Button Text="Hide me" Command="{x:Static vsc:HideControl}" .../>  

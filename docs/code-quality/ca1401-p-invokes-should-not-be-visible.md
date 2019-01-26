@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 0f4d96c1-f9de-414e-b223-4dc7f691bee3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e52140f07cb72eca62a1a52a01ae37e3e6a53382
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a139dd44c470422554dd2d5ccb42ab61a9d84637
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930321"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021408"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: Los elementos P/Invoke no deben estar visibles
 

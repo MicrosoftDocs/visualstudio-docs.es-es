@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 8e99d72b-a658-47a7-8dd5-9784ce2c30b8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 26118f2686abe7077f1c698a1c80e48de119fb9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7903e5f5241dabecc8077f4c56148c6ac40f5518
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920714"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018857"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: Los parámetros de URI no deben ser cadenas
 

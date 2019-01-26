@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce0bee04719a9c984f300d34da09a6b9f6adbb81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06bfb109ce58ee822a32bc3a92d7e6e45578fb05
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955807"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005515"
 ---
 # <a name="manage-universal-windows-projects"></a>Administrar proyectos de Windows Universal
 Aplicaciones universales de Windows son aplicaciones que tienen como destino Windows 8.1 y Windows Phone 8.1, lo que permite a los desarrolladores usar código y otros activos en ambas plataformas. El código compartido y los recursos se mantienen en un proyecto compartido, mientras que el código específico de plataforma y los recursos se mantienen en proyectos independientes, uno para Windows y otro para Windows Phone. Para obtener más información sobre las aplicaciones universales de Windows, consulte [Windows Universal apps](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Extensiones de Visual Studio que administran proyectos deben ser consciente de que los proyectos de aplicaciones universales de Windows tienen una estructura que difiere de las aplicaciones de plataforma única. En este tutorial se muestra cómo navegar por el proyecto compartido y administrar los elementos compartidos.  

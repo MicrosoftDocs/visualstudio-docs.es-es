@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 329b5800cac59c82c226bf7e0cf99a9045f88277
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8f245a1657883acb63e9721837063c6a8ef245f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835755"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977032"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Cadenas usadas como claves para buscar un complemento de control de código fuente
 Las siguientes cadenas son las claves de acceso al registro para obtener información sobre el control de código fuente complemento.  
@@ -36,8 +36,8 @@ Las siguientes cadenas son las claves de acceso al registro para obtener informa
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
-|`SCC_STATUS_FILE`|MSSCCPRJ. CONTROL DE CÓDIGO FUENTE|  
-|`SCC_KEY`|CONTROL DE CÓDIGO FUENTE|  
+|`SCC_STATUS_FILE`|MSSCCPRJ.SCC|  
+|`SCC_KEY`|SCC|  
 |`SCC_FILE_SIGNATURE`|Un archivo de control de código fuente|  
 |`SCC_NSE`|Extensión de Namespace|  
 |`SCC_NSE_PREFIX`|Prefijo de protocolo|  

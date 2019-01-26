@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01c96ce035fa2ec0322397a68ebdcd3f862d6c7a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e81a384686303ecba2225dfcc865ae7f390664b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914723"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025311"
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
 Enumera los valores válidos para las marcas opcionales. Las marcas opcionales pueden utilizarse para especificar información adicional al establecer un punto de interrupción. Esta enumeración se extiende el [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeración.  
