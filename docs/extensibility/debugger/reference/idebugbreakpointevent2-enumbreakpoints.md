@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7f82a50e8a0d4b17ec63204248ccb88544ba6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 310f4b9937632abddf0c789b510140081bbb51f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868847"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944775"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 Crea un enumerador para todos los puntos de interrupción que se desencadena en la ubicación actual del código.  

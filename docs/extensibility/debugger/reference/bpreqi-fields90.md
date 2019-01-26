@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b1fd893440e4659815a4915edef5a36c9c14aa2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32795c5b6b0bc2de5864e9a617d6bced1cfbe24c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851961"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946813"
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
 Enumera los valores válidos que especifican la información que se va a recuperar sobre una solicitud de punto de interrupción. Esta enumeración se extiende el [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeración.  
