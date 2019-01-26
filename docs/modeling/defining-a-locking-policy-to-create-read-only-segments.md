@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: eb39e9d510d2da8a7e8b7ae9ac08ff655f334f2e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 548840c3671b0760380c84520fe3a39238dfd19a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866496"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027352"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 La API de inmutabilidad del SDK de modelado y visualización de Visual Studio permite que un programa bloquear la totalidad o parte de un modelo de lenguaje específico de dominio (DSL) para que se pueden leer pero no cambia. Podría usar esta opción de solo lectura, por ejemplo, para que un usuario puede pedir a sus compañeros para anotar y revisar un modelo DSL pero puede no puedan cambiar el original.
@@ -84,7 +84,7 @@ partition.SetLocks(Locks.Delete);
 |Mover|Elemento no puede moverse entre las particiones si `element.IsLocked(Move)` es true, o si `targetPartition.IsLocked(Move)` es true.|
 |Eliminar|No se puede eliminar un elemento si este bloqueo se establece en el propio elemento, o en cualquiera de los elementos a la que podría propagar la eliminación, como las formas y elementos incrustados.<br /><br /> Puede usar `element.CanDelete()` para detectar si se puede eliminar un elemento.|
 |Volver a ordenar|No se puede cambiar el orden de vínculos en un encargado de rol.|
-|Encargado de rol|No se puede cambiar el conjunto de vínculos que se obtienen en este elemento. Por ejemplo, no se puede incrustar elementos nuevos en este elemento. Esto no afecta a los vínculos para que este elemento es el destino.<br /><br /> Si este elemento es un vínculo, su origen y destino no se ven afectados.|
+|RolePlayer|No se puede cambiar el conjunto de vínculos que se obtienen en este elemento. Por ejemplo, no se puede incrustar elementos nuevos en este elemento. Esto no afecta a los vínculos para que este elemento es el destino.<br /><br /> Si este elemento es un vínculo, su origen y destino no se ven afectados.|
 |Todas|Operación OR bit a bit de los demás valores.|
 
 ## <a name="locking-policies"></a>Directivas de bloqueos

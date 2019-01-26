@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b06aa06ed4b007c17fa88ecffccc27a0563127
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c1b9dc08812722f843c091e1c87835377eb0621e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921385"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025324"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Hace que el proceso paso a paso una instrucción o instrucción.  

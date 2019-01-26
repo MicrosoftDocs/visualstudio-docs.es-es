@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a4f4d69fe736ebe9a4ae538356b35c397e3e9d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 605effa6f8970b1a89601e72837d4ab7ab352f79
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976672"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 Convierte una ubicación del objeto o una dirección de memoria de 64 bits en un contexto de la memoria.  
