@@ -11,29 +11,29 @@ helpviewer_keywords:
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 356c9d50ebdac052efdb622e26d22e97542a0d03
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ce474c0896d5f9a72c3c09253bef8ca1a5c4a4e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947054"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (plantillas de Visual Studio)
 Especifica la ruta de acceso a la *.vstemplate* archivo de un proyecto en una plantilla de varios proyectos.  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<ProjectCollection >  
- \<ProjectTemplateLink >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<ProjectTemplateLink>  
 O bien  
-\<VSTemplate >  
- \<TemplateContent >  
- \<ProjectCollection >  
- \<SolutionFolder >  
- \<ProjectTemplateLink >  
+\<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<SolutionFolder>  
+ \<ProjectTemplateLink>  
   
 ## <a name="syntax"></a>Sintaxis  
   

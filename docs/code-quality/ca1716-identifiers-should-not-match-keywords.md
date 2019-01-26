@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d27fdd455d019532b47bc531f9f7377bacd6572e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1ecd5fc5163bfcb5a0f217e21b5aab353a074a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828633"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972945"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Los identificadores no deben coincidir con palabras clave
 

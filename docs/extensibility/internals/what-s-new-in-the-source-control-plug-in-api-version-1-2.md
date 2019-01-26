@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f323bde8719090815e76cf9887630930e5151da7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80bfefacf73e1ed7209ee7b40eec4c180e16904d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915301"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949706"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>¿Qué&#39;s nuevo en el origen de controlar la API del complemento versión 1.2
 En esta sección destaca la funcionalidad de control de código fuente avanzados en la API de complemento de Control de origen de la versión 1.2. A continuación enumeran las nuevas características en la versión 1.2:  

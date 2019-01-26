@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d0e356fc1683da505068899bf15e916b2bc1408
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b7eda2399b3bd711664e141800c503f31b12e244
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921502"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916555"
 ---
 # <a name="expression-evaluator"></a>Evaluador de expresiones
 Evaluadores de expresión (EE) examina la sintaxis de un idioma para analizar y evaluar variables y expresiones en tiempo de ejecución, lo que les permite ver el usuario cuando el IDE está en modo de interrupción.  

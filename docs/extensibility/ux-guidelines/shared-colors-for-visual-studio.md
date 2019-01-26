@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9e709ceb16a95094f14df65d42e7167ef5abdba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195ec36affc9ede9efc61ead2cdede8233ebb65a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991248"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928911"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
 Cuando diseña la interfaz de usuario que utiliza elementos comunes de shell de Visual Studio, o desea que el elemento de la interfaz para que sea coherente con características similares, utilice nombres de token existentes en archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.  
@@ -160,7 +160,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 | Glifo | `CommonControls.CheckBoxGlyphFocused` |
 
 ### <a name="drop-downs-and-combo-boxes"></a>Listas desplegables y combinado cuadros
-![Lista desplegable o cuadro combinado (línea roja)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")<br />Lista desplegable o cuadro combinado (límite)  
+![Drop-down/combo box (redline)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />Lista desplegable o cuadro combinado (límite)  
 
 | Utilice... | No use … |
 | --- | --- |
@@ -208,7 +208,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Listas desplegables y combinado cuadros: estado presionado**  
 
-![Presiona la lista desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")<br />Presiona la lista desplegable o cuadro combinado  
+![Pressed drop-down/combo box](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")<br />Presiona la lista desplegable o cuadro combinado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -245,7 +245,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Listas desplegables y combinado cuadros: selección de entrada de texto**  
 
-![Selección de entrada de texto de la lista desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")<br />Selección de entrada de texto de la lista desplegable o cuadro combinado  
+![Drop-down/combo box text input selection](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")<br />Selección de entrada de texto de la lista desplegable o cuadro combinado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -370,7 +370,7 @@ Texto de sugerencia aparece en un control vacío, debajo de un control o en una 
 ### <a name="hyperlink"></a>Hipervínculo  
 El hipervínculo es un control que no tiene un par de primer plano y fondo. En todos los casos, use el color de hipervínculo de primer plano, que se muestre adecuadamente en fondos oscuros, grises y blancos. Si no usa el token de color para el control de hipervínculo, verá el color predeterminado del sistema para "pressed", que parpadeará en rojo. Que es la señal de que el control no está usando el token de color correcto del entorno.  
 
-![Hipervínculo (línea roja)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303 133_HyperlinkRedline")<br />Hipervínculo (límite)
+![Hyperlink (redline)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303-133_HyperlinkRedline")<br />Hipervínculo (límite)
 
 | Utilice... | No use … |
 | --- | --- |
@@ -394,7 +394,7 @@ El hipervínculo es un control que no tiene un par de primer plano y fondo. En t
 
 **Hipervínculo: estado presionado**
 
-![Hipervínculo presionado](../../extensibility/ux-guidelines/media/0303-136_hyperlinkpressed.png "0303 136_HyperlinkPressed")<br />Hipervínculo presionado  
+![Pressed hyperlink](../../extensibility/ux-guidelines/media/0303-136_hyperlinkpressed.png "0303-136_HyperlinkPressed")<br />Hipervínculo presionado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -408,10 +408,10 @@ El hipervínculo es un control que no tiene un par de primer plano y fondo. En t
 | --- | --- |
 | Primer plano (texto) | `Environment.PanelHyperlinkDisabled` |
 
-### <a name="infobars"></a>Barras de información  
+### <a name="infobars"></a>Infobars  
 Las barras de información se usan para proporcionar más información sobre un determinado contexto y siempre se muestran en la parte superior de una ventana de documento o una ventana de herramientas.  
 
-![Barra de información (línea roja)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303 138_InfobarRedline")<br />Barra de información (límite)
+![Infobar (redline)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />Infobar (redline)
 
 | Utilice... | No use … |
 | --- | --- |
@@ -631,7 +631,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 -   "Deshabilitado" significa que la función de búsqueda se ha desactivado para el contexto actual.  
 
-![Cuadro de búsqueda (línea roja)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303 110_SearchBoxRedline")<br />Cuadro de búsqueda (límite)  
+![Search box (redline)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Cuadro de búsqueda (límite)  
 
 | Utilice... | No use … |
 | --- | --- |
@@ -857,7 +857,7 @@ El menú de lista desplegable del cuadro de búsqueda tiene el potencial para ve
 ###  <a name="BKMK_TreeView"></a> Vistas de árbol  
 Varias ventanas de herramientas, incluido el Explorador de soluciones, el Explorador de servidores y la vista de clases, implementan un esquema organizativo jerárquico cuyos colores se controlan mediante nombres de colores en el `TreeView` categoría. Todos los elementos de una vista de árbol tienen colores de fondo y de texto. Los elementos que tienen elementos secundarios anidados también tienen glifos que indican si el elemento está expandido o contraído.  
 
-![Vista de árbol (línea roja)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Vista de árbol (límite)
+![Tree view (redline)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303-147_TreeViewRedline")<br />Vista de árbol (límite)
 
 | Utilice... | No use … |
 | --- | --- |
@@ -1050,7 +1050,7 @@ Los menús pueden aparecer en varios lugares dentro de Visual Studio: la barra d
 #### <a name="menu-titles"></a>Títulos de menú  
 Los títulos de menú constan de un fondo, un borde y el texto del título, así como un glifo opcional, que suele usarse cuando el menú se encuentra en una barra de comandos.  
 
-![Título de menú (línea roja)](../../extensibility/ux-guidelines/media/0303-001_menutitleredline.png "0303 001_MenuTitleRedline")<br />Título de menú (límite)  
+![Menu title (redline)](../../extensibility/ux-guidelines/media/0303-001_menutitleredline.png "0303-001_MenuTitleRedline")<br />Título de menú (límite)  
 
 | Utilice... | No use … |
 | --- | --- |
@@ -1110,7 +1110,7 @@ Los títulos de menú constan de un fondo, un borde y el texto del título, así
 #### <a name="menu-items"></a>Elementos de menú
 Un elemento de menú individual se compone del texto del menú y un icono opcional, una casilla o un glifo de submenú. Su color de fondo y de texto cambian al mantener el puntero. Este token de color es un par de primer plano y fondo.  
 
-![Revisión de los elementos de menú](../../extensibility/ux-guidelines/media/0303-009_menuitemredline.png "0303 009_MenuItemRedline")  
+![Menu items redline](../../extensibility/ux-guidelines/media/0303-009_menuitemredline.png "0303-009_MenuItemRedline")  
 
 | Utilice... | No use … |
 |---|---|
@@ -1769,7 +1769,7 @@ Cada documento abierto tiene una pestaña en el canal de pestañas de documentos
 #### <a name="preview-tab"></a>Pestaña de vista previa  
 También se denomina una pestaña "provisional". La pestaña de vista previa aparece en la parte derecha del canal de pestañas de documentos cuando el usuario hace clic en un elemento de la ventana de herramientas del Explorador de soluciones. Funciona como una vista previa del documento y también proporciona al usuario la posibilidad de mantener el documento abierto en la parte izquierda del canal de pestañas de documentos. Solo se puede abrir una pestaña de vista previa a la vez. Las pestañas de vista previa tienen tanto el estado seleccionado como en segundo plano al igual que las pestañas abiertas y, además, pueden estar con y sin foco en su estado activo.  
 
-![Pestaña de vista previa (línea roja)](../../extensibility/ux-guidelines/media/0303-078_previewtabredline.png "0303 078_PreviewTabRedline")<br />Pestaña de vista previa (límite)
+![Preview tab (redline)](../../extensibility/ux-guidelines/media/0303-078_previewtabredline.png "0303-078_PreviewTabRedline")<br />Pestaña de vista previa (límite)
 
 | Utilice... | No use … |
 | --- | --- |

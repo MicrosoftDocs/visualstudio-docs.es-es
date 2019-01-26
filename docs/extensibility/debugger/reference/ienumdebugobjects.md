@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects | Documentos de Microsoft
+title: IEnumDebugObjects | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0950364c-6c8a-4b6c-ba37-c6aa359fa72c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b76b63aee413b830a468f064647798a13f3d7f99
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a93d94a49ed331b74886f001fb2d4069d6b10ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895186"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919721"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
@@ -52,7 +52,7 @@ IEnumDebugObjects : IUnknown
  Esta interfaz permite que un motor de depuración enumerar a través de un conjunto de objetos en una matriz.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: ee.h  
+ Header: ee.h  
   
  Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   

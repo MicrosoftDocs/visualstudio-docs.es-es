@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1e7e60819b9ac10308be26a1f3ea3243cc71c34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58a472ad20bbaee34937fcfd058710b58478dade
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990508"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961694"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procedimiento Instalar un complemento de control de código fuente
 Creación de un control de código fuente complemento implica tres pasos:  

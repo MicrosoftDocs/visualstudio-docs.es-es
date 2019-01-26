@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 691cabb67df53faf23c23e2fa3f05f0ca68038a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd5fdae152cf3810d9b9bc95596081473eecc965
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942540"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que se deben ejecutar después de la instalación
 Si implementa la extensión a través de un *.msi* archivo, debe ejecutar **devenv /setup** como parte de la instalación en orden para Visual Studio detectar sus extensiones.  
@@ -60,10 +60,10 @@ Si implementa la extensión a través de un *.msi* archivo, debe ejecutar **deve
   
 |Acción|Tipo|Origen|Destino|  
 |------------|----------|------------|------------|  
-|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/Setup|  
-|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/Setup|  
-|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/Setup|  
-|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/Setup|  
+|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
+|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
+|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|  
+|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|  
   
  Acciones personalizadas se deben crear en la tabla InstallExecuteSequence para programar su ejecución durante la instalación. Utilice la propiedad correspondiente en cada fila de la columna de la condición para evitar que la acción personalizada que se va a ejecutar si esa versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no está instalado en el sistema.  
   

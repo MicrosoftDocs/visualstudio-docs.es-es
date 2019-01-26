@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97bc3af6-6e55-4940-8a6d-692c61257806
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e66019ec0e8e23606a40687247a5d436a301049b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c30d8981564df3b43542cd54b5380991ece89ce4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821814"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929528"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 Obtiene el objeto que de este alias.  

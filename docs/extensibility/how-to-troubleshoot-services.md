@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce33e86714c68d8eac39dca236e67b156187448d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 827c4e4aa1857790e090e34c179bffa4a4f439a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877947"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040364"
 ---
 # <a name="how-to-troubleshoot-services"></a>Procedimiento Solucionar problemas de servicios
 Hay varios problemas comunes que pueden producirse al intentar obtener un servicio:  

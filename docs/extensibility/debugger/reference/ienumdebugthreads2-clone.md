@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugThreads2::Clone | Documentos de Microsoft
+title: IEnumDebugThreads2::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d774322c-e72d-4df3-b317-928da39dadc5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6431651f3bfba7387256f62286bf42d4b0f99ef8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25d8874b853b3d8930d99fa8f3099f22f2da9f4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959836"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957733"
 ---
 # <a name="ienumdebugthreads2clone"></a>IEnumDebugThreads2::Clone
 Devuelve una copia de la enumeración actual como un objeto independiente.  

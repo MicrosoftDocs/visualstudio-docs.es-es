@@ -7,16 +7,16 @@ f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d60962fbe53184767095735cd460d6eb1eb969fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 62de732d4f2aed819681c0d2141df4ba0553ffe2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963998"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033638"
 ---
 # <a name="transition-activity-designer"></a>Diseñadores de actividad de transición
 
