@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2403b9b692e12fe4639ee2957a863bd1f07259d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a3af886e5035281260aa1bcdfd88d931e674c93
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870695"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954480"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 Recupera el índice de este parámetro genérico.  

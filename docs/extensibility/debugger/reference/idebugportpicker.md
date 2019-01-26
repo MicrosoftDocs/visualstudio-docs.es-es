@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8b7f6685-a3c5-4355-b706-c1b574f6ff84
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5546895231415cdf8092dcadd1dce7a65e72707a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 753303ecc5a3b3f66fe8135a5955308c0cf4e586
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914256"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957603"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 Representa una interfaz de usuario personalizada para seleccionar el puerto.  

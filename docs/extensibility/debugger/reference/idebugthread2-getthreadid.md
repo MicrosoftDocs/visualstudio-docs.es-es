@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ec9275519568473f3d762d7b709270ab53770f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74b7e0a2e2754361899a65e66ecac8a75be55722
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854072"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949446"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 Obtiene el identificador de subproceso del sistema.  

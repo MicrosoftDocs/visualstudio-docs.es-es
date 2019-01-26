@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerServiceProvider | Documentos de Microsoft
+title: IEEVisualizerServiceProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed17748a2c635de5b4a4b715d4061ee3841f18ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a21f14cbe6396a754d01892394584f319eaf8166
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990443"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951747"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
@@ -49,7 +49,7 @@ IEEVisualizerServiceProvider : IUnknown
  Consulte [visualización y ver datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información sobre cómo interactúan estas interfaces.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: ee.h  
+ Header: ee.h  
   
  Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   

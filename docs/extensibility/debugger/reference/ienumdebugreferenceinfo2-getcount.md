@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugReferenceInfo2::GetCount | Documentos de Microsoft
+title: IEnumDebugReferenceInfo2::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e62706e0-d2cd-48fb-8fdf-444463c651ab
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8d1b7581217e424b28c042dd96d19056d26f750
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5898e0e1e59235a4b4561fc0792fa932b0c19a92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877233"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956784"
 ---
 # <a name="ienumdebugreferenceinfo2getcount"></a>IEnumDebugReferenceInfo2::GetCount
 Devuelve el número de elementos de la enumeración.  

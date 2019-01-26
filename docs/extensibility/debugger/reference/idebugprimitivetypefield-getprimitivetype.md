@@ -1,5 +1,5 @@
 ---
-title: IDebugPrimitiveTypeField::GetPrimitiveType | Documentos de Microsoft
+title: IDebugPrimitiveTypeField::GetPrimitiveType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a186c922-bbfe-478c-a744-b21eb4672d8f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a100b02d8a12c70a5fde1a3823035e0f3202586
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88fe1efbdd30993a5b30457d952f98b3055d7c25
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932219"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949927"
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
 Recupera el tipo primitivo que está asociado este campo.  

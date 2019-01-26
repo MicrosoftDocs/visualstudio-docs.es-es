@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ec5c409e13838c68656a35a92dab3688a5ce326
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827528"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948081"
 ---
 # <a name="walkthrough-outlining"></a>Tutorial: esquematizar
 Configurar características basadas en lenguaje como mediante la definición de los tipos de regiones de texto que desea expandir o contraer la esquematización. Puede definir regiones en el contexto de un servicio de lenguaje, o definir su propio tipo de contenido y la extensión de nombre de archivo y la definición de la región se aplican sólo a ese tipo o aplicar las definiciones de la región a un tipo de contenido existente (por ejemplo, "text"). En este tutorial se muestra cómo definir y mostrar las regiones de esquematización.  

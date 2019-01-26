@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eba96a742dfe674440e7b4fd2432a56bf8458ec9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ccd33c31a466882716ca745fe310bc395cd0655a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928427"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948926"
 ---
 # <a name="bptype"></a>BP_TYPE
 Especifica si el punto de interrupción en una ubicación de código, es una ubicación de datos o es otro tipo de punto de interrupción.  

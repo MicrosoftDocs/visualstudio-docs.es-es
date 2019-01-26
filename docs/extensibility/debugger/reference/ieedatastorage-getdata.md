@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed1788804fea7d10734de339d7b5a91d9cd168b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26a77547ba16c6cfafde0d1629a4fef570aaef9c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959582"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Recupera el número de bytes especificado desde el objeto.  

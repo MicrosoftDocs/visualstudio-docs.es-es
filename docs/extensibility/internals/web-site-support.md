@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e7cb983ec850c0efc9d22f1dd6458c71bcdcb2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a84b59085e2850a7c889e3468788fb8ef23414ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824774"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959919"
 ---
 # <a name="web-site-support"></a>Compatibilidad del sitio web
 Un sistema de proyectos de sitio Web es un sistema de proyecto que crea proyectos Web. Los proyectos Web a su vez crean aplicaciones Web. Un proyecto de sitio Web genera un archivo ejecutable para cada página Web que está asociado el código. Se generan archivos ejecutables adicionales de los archivos de código fuente en la carpeta /bin.  

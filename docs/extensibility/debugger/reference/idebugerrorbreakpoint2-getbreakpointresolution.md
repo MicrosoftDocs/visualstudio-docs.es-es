@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1c2324ed-2a11-4e63-8f3a-f420c7a4018b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d8a97b3807b76b99544dffdc1884d0cb0de7749
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b46ce61266310279d035a515cc17d20e99ef9b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893186"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961119"
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
 Obtiene la resolución de errores de punto de interrupción que describe el error.  

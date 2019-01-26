@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26e227af6eb15874e6f79dd890a20a76d62d1a96
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8ecd36719170fdc027667e15c6b3913fba86cd9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962394"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958984"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Cómo Depurar un motor de depuración personalizado
 Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método. Esto significa que se ha iniciado la DE bajo el control de la instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controlar el tipo de proyecto. Sin embargo, esa instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no se puede depurar la DE. Las siguientes son los pasos que le permiten depurar su personalizada DE.  

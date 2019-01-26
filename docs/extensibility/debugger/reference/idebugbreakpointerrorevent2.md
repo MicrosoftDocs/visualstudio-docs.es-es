@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c64bd12bba1c3935575078a551d2edf06702e68d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0235caf659ca259780d87a002b5b9eb5225e59aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900383"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967094"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 Esta interfaz indica al administrador de depuración de la sesión (SDM) que un punto de interrupción pendiente no se pudo enlazar a un programa cargado, ya sea debido a una advertencia o un error.  

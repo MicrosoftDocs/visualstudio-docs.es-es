@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 648625164d58dca8449196bc80373a0fbfa96d9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0e99623e84bcd5342f1d0b080d2dd00095b6262
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825414"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956927"
 ---
 # <a name="security-warnings"></a>Advertencias de seguridad
 

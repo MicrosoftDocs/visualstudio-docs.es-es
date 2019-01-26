@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2::Clone | Documentos de Microsoft
+title: IEnumDebugPropertyInfo2::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0ede1667-1071-4aa4-b887-260ea103d724
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64852260048627aa1213e753ca871052a08e767c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83d791a27618d55b166b4b3afea55619d5033a9f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965215"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955628"
 ---
 # <a name="ienumdebugpropertyinfo2clone"></a>IEnumDebugPropertyInfo2::Clone
 Devuelve una copia de la enumeración actual como un objeto independiente.  

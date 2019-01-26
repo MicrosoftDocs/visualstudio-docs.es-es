@@ -11,16 +11,16 @@ helpviewer_keywords:
 - text templates, template directive
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3bf8248a7a68b914d6276e3e6f37261fb6137efc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0772342f4770a4c9f6e378abe1e9a8c856fc411
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939257"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966100"
 ---
 # <a name="t4-text-template-directives"></a>Directivas de plantilla de texto T4
 Las directivas proporcionan instrucciones al motor de transformación de plantillas de texto.

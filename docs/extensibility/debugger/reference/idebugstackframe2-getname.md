@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9799a14251d8ecd12d722357ee4eaf85dc3a91de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c5f86680e0cc4fde118a201302efb88df9b7fc83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848660"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959741"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 Obtiene el nombre del marco de pila.  

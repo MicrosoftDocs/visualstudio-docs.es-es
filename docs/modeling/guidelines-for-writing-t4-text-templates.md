@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c0b7e1c151333a3afd0fe93fe533913f6f6d3fbd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a302eb05e6b4c763740f03baea4aa8bd41c72891
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911629"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959897"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instrucciones para escribir plantillas de texto T4
 Estas directrices generales pueden resultar útiles si va a generar código de programa u otros recursos de la aplicación en Visual Studio. Las reglas no son fijas.

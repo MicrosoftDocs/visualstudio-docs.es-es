@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 362a4c09e3e0c732d939cf42b926b003260c4b00
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ebd8fef41c1ba8a81d116bddca61026cdf79ee24
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988127"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929210"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Conservación de datos en el archivo de proyecto de MSBuild
 Un subtipo de proyecto que necesite conservar datos específicos del subtipo en el archivo de proyecto para su uso posterior. Un subtipo de proyecto utiliza la persistencia de archivo de proyecto para cumplir los requisitos siguientes:  

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2 | Documentos de Microsoft
+title: IDebugEngine2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384d6179f2e8a8c9252e4c631a97d8e429330f96
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5298b807d1e5bb0695a1b6c3a2442c834576a969
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914228"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949888"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 Esta interfaz representa un motor de depuración (DE). Sirve para administrar diversos aspectos de una sesión de depuración, desde la creación de puntos de interrupción para establecer y borrar las excepciones.  

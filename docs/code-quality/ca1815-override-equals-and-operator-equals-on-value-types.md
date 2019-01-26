@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0a8ab3a3-ee8e-46f7-985d-dcf00c89363b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8fc26bca5ecce3b5459890e96e429ef10f3b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8747ac1ba5945011fa9f20b7e37521250cfd415c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971598"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Invalidar Equals y el operador Equals en los tipos de valores
 

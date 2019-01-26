@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c1a44327205f9bdbdab00ac3554f501c52e1c36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895446"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967552"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 El manifiesto de la herramienta de código es una aplicación de consola que toma un archivo .imagemanifest para el servicio de imágenes de Visual Studio y genera un archivo contenedor o archivos para hacer referencia a los valores del manifiesto de la imagen en C++, C#, VB o archivos .vsct para extensiones de Visual Studio. Esta herramienta genera archivos de contenedor que se pueden usar para solicitar las imágenes desde el servicio Visual Studio imagen directamente, o para pasar los valores del manifiesto a través de API si el código no controla cualquiera de su propia interfaz de usuario y la representación.  
@@ -33,18 +33,18 @@ El manifiesto de la herramienta de código es una aplicación de consola que tom
 |/imageIdClass|El nombre de la imageIdClass y el archivo asociado creado por la herramienta. La opción de lenguaje C++, solo los archivos .h se generan.<br /><br /> Predeterminado: \<Ruta de acceso de manifiesto > \MyImageIds. \<Lang Ext >|Optional|  
 |/monikerClass|El nombre de la monikerClass y el archivo asociado creado por la herramienta. La opción de lenguaje C++, solo los archivos .h se generan. Esto se omite para el lenguaje VSCT.<br /><br /> Predeterminado: \<Ruta de acceso de manifiesto > \MyMonikers. \<Lang Ext >|Optional|  
 |/classAccess|El modificador de acceso para el imageIdClass y el monikerClass. Asegúrese de que el modificador de acceso es válido para el idioma especificado. Se omite para la opción de idioma VSCT.<br /><br /> Predeterminado: Public|Optional|  
-|/ Namespace|El espacio de nombres definido en el contenedor de código. Se omite para la opción de idioma VSCT. Ya sea '. 'o'::' son los separadores de espacio de nombres válido, independientemente de la opción de lenguaje elegido.<br /><br /> Predeterminado: MyImages|Optional|  
+|/namespace|El espacio de nombres definido en el contenedor de código. Se omite para la opción de idioma VSCT. Ya sea '. 'o'::' son los separadores de espacio de nombres válido, independientemente de la opción de lenguaje elegido.<br /><br /> Predeterminado: MyImages|Optional|  
 |/noLogo|Al establecer esta marca detiene la información de producto y copyright de impresión.|Optional|  
 |/?|Imprimir información de ayuda.|Optional|  
 |/help|Imprimir información de ayuda.|Optional|  
   
  **Ejemplos**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest/Language: CSharp  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ Namespace/namespace: mi:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Notas  
   

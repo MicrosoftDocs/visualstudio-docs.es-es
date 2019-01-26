@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::ReplaceSymbols | Documentos de Microsoft
+title: IDebugComPlusSymbolProvider::ReplaceSymbols | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 82fbc8db-c4b1-432f-bec9-1a9dc09570be
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 745066b7300a17cfb82cd4d6110c7f91086c80a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 61370695ad363d6e3eb3a62ac517f34c707eac94
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843757"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963014"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 Reemplaza los símbolos de depuración actual con los de la secuencia de datos especificada.  

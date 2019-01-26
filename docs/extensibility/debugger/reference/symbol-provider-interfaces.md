@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ecc2d37c85e20ce000dc7998e62afc4541614a83
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 908e597d9ee0a1db4e78de02f3dd4ade1a9aa119
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934714"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945364"
 ---
 # <a name="symbol-provider-interfaces"></a>Interfaces de proveedor de símbolos
 Los siguientes son las Interfaces de control de símbolos para el [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
@@ -40,7 +40,7 @@ Los siguientes son las Interfaces de control de símbolos para el [!INCLUDE[vsip
 |[IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)|SP|La interfaz base para cualquier tipo que se puede determinar en tiempo de ejecución.|  
 |[IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)|SP|Representa un campo dinámico para un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objeto.|  
 |[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)|SP|Representa un tipo de enumeración.|  
-|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|SP|Amplía los tipos de campos disponibles para admitir tipos genéricos de código administrado.|  
+|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|Sp|Amplía los tipos de campos disponibles para admitir tipos genéricos de código administrado.|  
 |[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)|SP|La clase base para todos los campos; Representa una descripción de un símbolo o el tipo.|  
 |[IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)|SP|Representa la definición de un campo para un tipo genérico de código administrado.|  
 |[IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)|SP|Representa una instancia de un campo para un tipo genérico de código administrado.|  

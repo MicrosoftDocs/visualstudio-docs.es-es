@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ce82bc81ef54cff9dbfb0a6282411e03775ebc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11e97544e4f2389ef1704d418dda841938a17a88
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892019"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948536"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 Lee las instrucciones a partir de la posición actual en la secuencia de desensamblado.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetEngineInfo | Documentos de Microsoft
+title: IDebugProgramNode2::GetEngineInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f461bf24df12732085416c12f60219973163d819
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b67c6919fbdcc68b44b52ed449147ebe09085c5d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848014"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972012"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Obtiene el nombre y el identificador del motor de depuración (DE) ejecuta un programa.  

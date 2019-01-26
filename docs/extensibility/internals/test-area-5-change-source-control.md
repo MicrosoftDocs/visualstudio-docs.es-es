@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83928a2b28b32d7e1ee11475a7693f8f11483cad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78e34e919d912af09e1265ea5326189d4f3e7b89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942637"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935948"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de prueba 5: Control de código fuente de cambios
 Esta área de prueba de complemento de control de código fuente trata el cambio del control de código fuente a través de la **cambiar Control de código fuente** comando.  
@@ -53,7 +53,7 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
 | Enlazar a la ubicación que está sincronizada con el cliente | 1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Crear un duplicado de la solución y proyecto en el almacén de versiones (compartir y bifurcar si usa [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />4.  Abra **cambiar Control de código fuente** cuadro de diálogo (**archivo**, **Control de código fuente**, **cambiar Control de código fuente**).<br />5.  Desenlace todos.<br />6.  Haga clic en **Aceptar** para cerrar **cambiar Control de código fuente** cuadro de diálogo.<br />7.  Vuelva a abrir **cambiar Control de código fuente** cuadro de diálogo.<br />8.  Seleccionar todo.<br />9. Haga clic en **enlazar**.<br />10. Vaya a la ubicación de la solución y proyecto bifurcada (del paso 3)<br />11. Haga clic en **Aceptar** para cerrar el **cambiar Control de código fuente** cuadro de diálogo.<br />12. Obtener todos los elementos más recientes de forma recursiva. | Contenido del archivo después de la operación get es igual que antes de la operación get. |
 | Enlazar a la ubicación que no está sincronizado con el cliente | 1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Crear un duplicado de la solución y proyecto en el almacén de versiones (compartir y bifurcar si usa [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />4.  Modificar los archivos del proyecto en el almacén de versiones bifurcado.<br />5.  Abra **cambiar Control de código fuente** cuadro de diálogo (**archivo**, **Control de código fuente**, **cambiar Control de código fuente**).<br />6.  Desenlace todos.<br />7.  Haga clic en **Aceptar** para cerrar **cambiar Control de código fuente** cuadro de diálogo.<br />8.  Vuelva a abrir **cambiar Control de código fuente** cuadro de diálogo.<br />9. Seleccionar todo.<br />10. Haga clic en **enlazar**.<br />11. Vaya a ramas de ubicación para la solución y proyecto.<br />12. Haga clic en **Aceptar** para cerrar el **cambiar Control de código fuente** cuadro de diálogo.<br />13. Si aparece, acepte el cuadro de diálogo de advertencia.<br />14, Obtener recursiva más reciente para todos los elementos. | También se modifican localmente los archivos que se han modificado en el paso 4. |
 | Enlazar la solución que se encontraba nunca bajo control de código fuente | 1.  Cree una carpeta vacía en control de código fuente.<br />2.  Cree un proyecto de cliente.<br />3.  Abra **cambiar Control de código fuente** cuadro de diálogo (**archivo**, **Control de código fuente**, **cambiar Control de código fuente**).<br />4.  Enlazar la solución a una ubicación vacía en control de código fuente.<br />5.  Haga clic en **Aceptar** para cerrar el **cambiar Control de código fuente** cuadro de diálogo.<br />6.  Haga clic en **continuar con estos enlaces** en el cuadro de diálogo de confirmación.<br />7.  Haga clic en **Aceptar** en el cuadro de diálogo de advertencia si aparece. | Solución se agrega al control de código fuente.<br /><br /> Solución y proyecto se desprotegen. |
-| Cancelar el enlace | 1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Abra el cuadro de diálogo Cambiar Control de código fuente.<br />4.  Desenlace todos.<br />5.  Haga clic en **Aceptar** botón para cerrar el cuadro de diálogo. Si este paso se realiza correctamente, vaya al paso siguiente.<br />6.  Vuelva a abrir el **cambiar Control de código fuente** cuadro de diálogo.<br />7.  Enlazar a una ubicación no relacionada.<br />8.  Haga clic en **cancelar**. | `Result from Step 5:`<br /><br /> La solución ya no está bajo control de código fuente<br /><br /> `Result from Step 8:`<br /><br /> Solución está todavía no bajo control de código fuente. |
+| Cancelar el enlace | 1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Abra el cuadro de diálogo Cambiar Control de código fuente.<br />4.  Desenlace todos.<br />5.  Haga clic en **Aceptar** botón para cerrar el cuadro de diálogo. Si este paso se realiza correctamente, vaya al paso siguiente.<br />6.  Vuelva a abrir el **cambiar Control de código fuente** cuadro de diálogo.<br />7.  Enlazar a una ubicación no relacionada.<br />8.  Haga clic en **Cancelar**. | `Result from Step 5:`<br /><br /> La solución ya no está bajo control de código fuente<br /><br /> `Result from Step 8:`<br /><br /> Solución está todavía no bajo control de código fuente. |
 
 ### <a name="case-5b-unbind"></a>Case 5b: Desenlazar  
  Desenlazar quita información de control de código de origen de sus soluciones y proyectos. La solución y proyectos afectados se basan en una combinación de selección del usuario y cómo se agregaron los elementos de control de código fuente.  
@@ -61,7 +61,7 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Desenlazar la solución que contiene un sistema de archivos o un proyecto Web de IIS local y el proyecto de un cliente|1.  Crear un sistema de archivos o un proyecto Web de IIS local.<br />2.  Agregue la solución al control de código fuente.<br />3.  Agregue un nuevo proyecto de cliente a la solución.<br />4.  Si se le solicite, acepte comprobar fuera de la solución.<br />5.  Abra el **cambiar Control de código fuente** cuadro de diálogo.<br />6.  Haga clic en **desenlazar**.<br />7.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo.<br />8.  Intenta desproteger la solución, proyecto, elementos de la solución, los elementos de proyecto.|Soluciones y proyectos no están bajo control de código fuente.<br /><br /> Comandos de menú de Control de código fuente no aparecen.|  
-|Desenlazar Cancelar|1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Abra el **cambiar Control de código fuente** cuadro de diálogo.<br />4.  Haga clic en **desenlazar todos**.<br />5.  Haga clic en **cancelar**.|Solución está bajo control de código fuente.|  
+|Desenlazar Cancelar|1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Abra el **cambiar Control de código fuente** cuadro de diálogo.<br />4.  Haga clic en **desenlazar todos**.<br />5.  Haga clic en **Cancelar**.|Solución está bajo control de código fuente.|  
 
 ### <a name="case-5c-rebind"></a>Mayúsculas y minúsculas 5c: volver a enlazar  
  Volver a vincular es simplemente una combinación de desenlazar y enlazar: el proceso de volver a enlazar una proyecto o solución que estaba bajo control de código fuente y no está enlazado.  

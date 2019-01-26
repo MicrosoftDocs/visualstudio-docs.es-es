@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumBoundBreakpoints | Documentos de Microsoft
+title: IDebugPendingBreakpoint2::EnumBoundBreakpoints | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 179c7c54-8446-462d-b099-e0f9cf06dc52
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9e2aab2c612f2437e3cc83379adb3fbfb2f3283
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16f042fc45f84a68189fd0d3fb82401aaddf56ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971928"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
 Enumera todos los puntos de interrupción enlazados desde este punto de interrupción pendiente.  

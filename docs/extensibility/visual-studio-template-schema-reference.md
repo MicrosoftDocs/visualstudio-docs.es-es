@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25c8af779c8c943e7145c44d8e64f814977f88aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df36d255f5277ff9c91901b1ebe12daaef3c7c19
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966945"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959767"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Referencia de esquema de plantillas de Visual Studio
 Esta sección contiene información acerca de los elementos XML en *.vstemplate* archivos, que son archivos que almacenan los metadatos para las plantillas de proyecto, plantillas de elementos y Starter Kits.
@@ -43,7 +43,7 @@ Esta sección contiene información acerca de los elementos XML en *.vstemplate*
 |[Carpeta](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Carpeta|nombre|
 ||[en desuso]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
-|[Oculto](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
+|[Hidden](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
 |[Iconos](../extensibility/icon-element-visual-studio-templates.md)|--|Paquete<br /><br /> Id.|
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|

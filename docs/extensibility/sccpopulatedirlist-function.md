@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477d18f3cb5f187b61d78d779339e2c43c402a43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79eb0bdfdcb9f0b64258128b801e65f257e0ed3e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854742"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949953"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList (Función)
 Esta función determina qué directorios y archivos (opcionalmente) se almacenan en el control de código fuente, dada una lista de directorios que se va a examinar.  

@@ -1,5 +1,5 @@
 ---
-title: MSSCCPRJ. Archivo de control de código fuente | Microsoft Docs
+title: MSSCCPRJ.SCC File | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3566903824f82cb266fa87f1dec0e8bcf04f9ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 028490e6c23051496202fad2d85b0d11cc434218
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825930"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964293"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Archivo de control de código fuente
 Cuando se coloca una solución de Visual Studio o proyecto bajo control de código fuente mediante el IDE, el IDE recibe dos piezas clave de la información. La información procede el complemento en forma de cadenas de control de código fuente. Estas cadenas, "AuxPath" y "Nombre_proyecto", son opacas para el IDE, pero se usan por el complemento para buscar la solución o proyecto bajo control de versiones. El IDE normalmente obtiene estas cadenas de la primera vez mediante una llamada a la [SccGetProjPath](../extensibility/sccgetprojpath-function.md), y, a continuación, guarda en el archivo de solución o proyecto para las futuras llamadas a la [SccOpenProject](../extensibility/sccopenproject-function.md). Cuando se insertan en los archivos de solución y proyecto, las cadenas "AuxPath" y "Nombre_proyecto" no se actualizan automáticamente cuando un usuario, ramas, las bifurcaciones, o copia los archivos de solución y proyecto que se encuentran en el control de versiones. Para asegurarse de que los archivos de solución y proyecto señalan a su ubicación correcta en el control de versiones, los usuarios deben actualizar manualmente las cadenas. Dado que las cadenas están diseñadas para ser opaca, no siempre puede claro cómo debe actualizarse.  

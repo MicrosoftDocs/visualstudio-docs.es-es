@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bbd9bddaeab9d073affb35a1b275f0eef7afe99
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcd8f318c66766e016aa146cc5be22ca3c57bb62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874075"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959923"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID (Elemento, Plantillas de Visual Studio)
 Especifica un identificador para una plantilla de elementos que se clasifica por categorías en un grupo de plantillas de elementos por el [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) elemento.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<TemplateID >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<TemplateID>  
   
 ## <a name="syntax"></a>Sintaxis  
   

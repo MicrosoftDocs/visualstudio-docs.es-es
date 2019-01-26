@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 621ba178f255fc3c86e8234d4e01bcb74b106b62
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4be06a69eac693e951407ecf4c04eabff7bbb31c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922330"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933248"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Extender las ventanas Propiedades, lista de tareas, resultados y opciones
 Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este tutorial se muestra cómo integrar información acerca de la ventana de herramientas en un nuevo **opciones** página y una nueva configuración en el **propiedades** página y también cómo se escriben en el **delistadetareas** y **salida** windows.  

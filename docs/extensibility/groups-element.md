@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 740ca4ec-79fa-4b98-8f9a-2a137f9f7f98
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a8a7d17161b6d14926232f66905d7556a244e29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35266ff23d93e0dbdfbe6a2be14631db5c0629e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874555"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972711"
 ---
 # <a name="groups-element"></a>Elemento Groups
 Contiene entradas que definen los grupos de comandos de un paquete VSPackage.  

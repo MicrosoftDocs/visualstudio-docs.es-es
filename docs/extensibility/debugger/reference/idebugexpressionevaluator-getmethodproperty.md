@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodProperty | Documentos de Microsoft
+title: IDebugExpressionEvaluator::GetMethodProperty | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0569c3e6a3d79279533c1c1c6717e8e5c3ce059
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e8af1162ca51ae5bae8ca01b0da195ee343f095
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820779"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962672"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 Este método obtiene un objeto de propiedad que contiene las variables locales, argumentos y otras propiedades de un método.  

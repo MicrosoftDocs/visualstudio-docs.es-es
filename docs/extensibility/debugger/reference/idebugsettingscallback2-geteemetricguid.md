@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a05daa1e9706ba7157d5fc2c0514d188416d2db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7662d5c99225a9d9d0ab61883a993bb968e73cdf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901998"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964514"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 Recupera el identificador único para una métrica de evaluador de expresión dado su nombre.  

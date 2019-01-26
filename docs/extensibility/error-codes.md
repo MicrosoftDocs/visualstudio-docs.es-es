@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f05a28ab046c1c0221162bce623a2ccf983f3d43
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931978"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958152"
 ---
 # <a name="error-codes"></a>Códigos de error
 Cuando una función de la API de complemento de Control de origen devuelve un error, se espera a ser uno de los siguientes códigos de error. Todos los errores son negativos, son positivos, advertencias o los códigos de error informativo y correcta es 0.  

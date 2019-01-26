@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ddcde26ffeb50db045295a39fa444059cf59bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7a1313a5d74f973e439d6177234eb11a202b344
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827905"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949693"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guía de pruebas para los complementos de control de código fuente
 Esta sección proporciona instrucciones para probar su complemento con control de código fuente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se proporciona una visión general amplia de las áreas más comunes de pruebas, así como algunas de las áreas más complicadas que pueden ser problemáticas. Esta información general no pretende ser una lista exhaustiva de casos de prueba.  
@@ -95,9 +95,9 @@ Esta sección proporciona instrucciones para probar su complemento con control d
   
     -   Mayúsculas y minúsculas 5c: volver a enlazar  
   
--   [Área de prueba 6: Eliminar](../../extensibility/internals/test-area-6-delete.md)  
+-   [Área de prueba 6: Delete](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Área de prueba 7: Compartir](../../extensibility/internals/test-area-7-share.md)  
+-   [Área de prueba 7: Share](../../extensibility/internals/test-area-7-share.md)  
   
 -   [Área de prueba 8: Cambio de complementos](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   

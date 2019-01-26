@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e56688d74647c12340fcf9755dca3de282806773
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821046"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933031"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
 
@@ -39,7 +39,7 @@ Aunque pueden parecer las operaciones de creación sea distinto de las operacion
 
 La responsabilidad de una EMD es decidir cómo se debe combinar un objeto o grupo de objetos en una ubicación determinada en el modelo. En concreto, decide qué relaciones deben crearse para vincular el grupo combinado en el modelo. También puede personalizar para establecer las propiedades y para crear objetos adicionales.
 
-![DSL&#45;EMD&#95;fusionar mediante combinación](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 Una EMD se genera automáticamente al definir una relación de incrustación. Este valor predeterminado EMD crea una instancia de la relación cuando los usuarios agreguen nuevas instancias de elemento secundario al elemento primario. Puede modificar estos EMDs de forma predeterminada, por ejemplo agregando código personalizado.
 

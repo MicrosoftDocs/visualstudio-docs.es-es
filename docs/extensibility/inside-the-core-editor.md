@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01756778c7937654339fe0fc41b752ed02659d3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 243202b116af63a7d14672cd33d30030e8e987b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828529"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959088"
 ---
 # <a name="inside-the-core-editor"></a>Dentro del editor de núcleo
 El [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor básico es un conjunto de varios componentes que le permiten modificar y consultar información textual. Si ha personalizado el editor básico mediante el uso de la API heredada, aún puede usar estas personalizaciones, que se enrutarán a través de adaptadores de editor. Sin embargo, se recomienda que adaptar sus personalizaciones al nuevo editor de API.  

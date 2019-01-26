@@ -11,18 +11,18 @@ helpviewer_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ab74b2cf7a2b9da99c673fc6b6822e0d7e67f959
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c10eb0a37f24b4fe36b2e1afde8d3bec16e5896a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890422"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955000"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: No bloquear objetos con identidad débil
 

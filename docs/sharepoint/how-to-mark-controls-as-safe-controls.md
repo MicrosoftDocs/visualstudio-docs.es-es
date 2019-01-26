@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3f0ff39658aca76318174143da52e17594ace24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989379"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875473"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procedimiento Marcar los controles como seguros
   Para la seguridad, SharePoint diferencia entre los controles Web que están protegidos contra la inyección de script y los controles Web que no están. Protegido de los controles, o *controles seguros*, pueden tener acceso a los usuarios de confianza. Puede marcar los controles como seguros en la propiedad de las entradas de Control seguro de un elemento de proyecto de SharePoint o en el **Diseñador de paquetes** cuando agrega un ensamblado para el paquete. Para obtener más información, consulte  
@@ -89,7 +89,7 @@ ms.locfileid: "53989379"
     |-------------------|-----------|  
     |Espacio de nombres|El espacio de nombres completo del control, como **BdcModelProject1.VisualWebPart1**.|  
     |Nombre de tipo|Button1|  
-    |Nombre del ensamblado|Un nombre seguro, como: Ejemplo, versión = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Nombre del ensamblado|Un nombre seguro, como: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Safe|Desactive el **seguro** casilla de verificación.|  
     |Protección frente a scripts|Deje el **Safe Against Script** casilla de verificación.|  
   
@@ -106,7 +106,7 @@ ms.locfileid: "53989379"
     |-------------------|-----------|  
     |Espacio de nombres|El espacio de nombres completo del control, como **BdcModelProject1.VisualWebPart1**.|  
     |Nombre de tipo|TextBox1|  
-    |Nombre del ensamblado|Un nombre seguro, como: Ejemplo, versión = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Nombre del ensamblado|Un nombre seguro, como: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Safe|Seleccione el **seguro** casilla de verificación.|  
     |Protección frente a scripts|Seleccione el **Safe Against Script** casilla de verificación.|  
   

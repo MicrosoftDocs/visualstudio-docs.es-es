@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, accessing models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 513ab6f1a953a2992b744aa3680cd453f677f5bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856870"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966808"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acceso a modelos a partir de plantillas de texto
 Mediante el uso de plantillas de texto, puede crear archivos de informe, archivos de código fuente y otros archivos de texto que se basan en modelos de lenguaje específico de dominio. Para obtener información básica acerca de las plantillas de texto, consulte [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Las plantillas de texto funcionarán en modo experimental cuando se depura su DSL y también funcionará en un equipo en el que ha implementado el DSL.

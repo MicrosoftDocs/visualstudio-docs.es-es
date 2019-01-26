@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 91092763-3362-4857-adf0-231bc1254206
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 844b3f9a60d7aadfba080a253203406007294dd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f045196350817f69c859394d269f49a7fa959d7f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863922"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963789"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 Recupera el identificador único de una métrica dado su nombre.  
