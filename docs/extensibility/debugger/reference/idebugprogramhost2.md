@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb56da6abb76053a3dd18989695b42b0f167c3e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa165aba25b46cab554517c55eb4e9bc174f7b94
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903268"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990750"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 Esta interfaz proporciona información de host (proceso) acerca de un programa.  

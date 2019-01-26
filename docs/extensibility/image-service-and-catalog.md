@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3113280b7a32d9323f1b5a1638123dca8163528f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899709"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018818"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
 Esta guía contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imágenes que se introdujo en Visual Studio 2015.  
@@ -48,7 +48,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
   
 - WPF: BitmapSource  
   
-- Formularios Windows Forms: System.Drawing.Bitmap  
+- WinForms: System.Drawing.Bitmap  
   
 - Win32: HBITMAP  
   
@@ -126,7 +126,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |CommonProgramFiles|El valor de la variable de entorno % CommonProgramFiles %|  
 |LocalAppData|El valor de la variable de entorno % LocalAppData %|  
 |ManifestFolder|La carpeta que contiene el archivo de manifiesto|  
-|Mis documentos|La ruta de acceso completa de la carpeta Mis documentos del usuario actual|  
+|MyDocuments|La ruta de acceso completa de la carpeta Mis documentos del usuario actual|  
 |ProgramFiles|El valor de la variable de entorno % ProgramFiles %|  
 |Sistema|El *Windows\System32* carpeta|  
 |WinDir|El valor de la variable de entorno % WinDir %|  
@@ -175,9 +175,9 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |-|-|-|  
 |**Element**|**Atributos (todas requeridas)**|**Definición**|  
 |\<Tamaño >|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|  
-|\<SizeRange >|MinSize, MaxSize|El origen se usará para las imágenes de MinSize con tamaño máximo (en unidades de dispositivo), ambos inclusive. La imagen será cuadrada.|  
+|\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize con tamaño máximo (en unidades de dispositivo), ambos inclusive. La imagen será cuadrada.|  
 |\<Dimensiones >|Ancho, alto|El origen se usará para las imágenes del ancho y alto (en unidades de dispositivo).|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho y alto mínimo para el máximo ancho/alto (en unidades de dispositivo), ambos inclusive.|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho y alto mínimo para el máximo ancho/alto (en unidades de dispositivo), ambos inclusive.|  
   
  Un \<origen > elemento también puede tener un elemento opcional \<NativeResource > subelemento, que define un \<origen > que se carga desde un ensamblado nativo en lugar de un ensamblado administrado.  
   
@@ -240,7 +240,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
   
     -   Obligatorio si se usa el **BrushToColorConverter** para el **ImageThemingUtilities.ImageBackgroundColor** en la UI de WPF.  
   
--   *Microsoft.VisualStudio.Shell. \<VSVersion >.0*  
+-   *Microsoft.VisualStudio.Shell.\<VSVersion>.0*  
   
     -   Obligatorio si se usa el **IVsUIObject** tipo.  
   
@@ -915,7 +915,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupIntrinsic|GlyphItemInternal|ObjectInternal|  
         |GlyphGroupIntrinsic|GlyphItemFriend|ObjectInternal|  
         |GlyphGroupIntrinsic|GlyphItemProtected|ObjectProtected|  
-        |GlyphGroupIntrinsic|GlyphItemPrivate|Objeto empresarialprivate|  
+        |GlyphGroupIntrinsic|GlyphItemPrivate|ObjectPrivate|  
         |GlyphGroupIntrinsic|GlyphItemShortcut|ObjectShortcut|  
         |GlyphGroupJSharpMethod|GlyphItemPublic|MethodPublic|  
         |GlyphGroupJSharpMethod|GlyphItemInternal|MethodInternal|  

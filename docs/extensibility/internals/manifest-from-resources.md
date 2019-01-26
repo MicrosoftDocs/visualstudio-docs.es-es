@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1affa200527e770dc87c51c4bb6f7b8a088fcc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 286ec5b71691777af601c00e26c2db5772bd5f1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959382"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993980"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 El manifiesto de la herramienta de recursos es una aplicación de consola que toma una lista de recursos de imagen (.png o .xaml archivos) y genera un archivo .imagemanifest que permite que esas imágenes para su uso con el servicio de imágenes de Visual Studio. Además, esta herramienta puede usarse para agregar imágenes a un .imagemanifest existente. Esta herramienta es útil para agregar compatibilidad con valores altos de PPP y temas para las imágenes a una extensión de Visual Studio. El archivo generado .imagemanifest debe incluido en e implementarse como parte de una extensión de Visual Studio (VSIX).  
@@ -28,7 +28,7 @@ El manifiesto de la herramienta de recursos es una aplicación de consola que to
 ||||  
 |-|-|-|  
 |**Nombre del conmutador**|**Notas**|**Obligatorio u opcional**|  
-|Resources|Una lista delimitada por punto y coma de las imágenes o directorios. Esta lista debería contener siempre la lista completa de las imágenes que se incluirán en el manifiesto. Si solo se proporciona una lista parcial, se perderán las entradas no incluidas.<br /><br /> Si un archivo de recursos determinado es una tira de imagen, la herramienta dividirla en imágenes independientes antes de agregar cada subimagen en el manifiesto.<br /><br /> Si la imagen es un archivo .png, se recomienda que formatear el nombre de esta manera para que la herramienta puede rellenar los atributos de la imagen adecuados: \<Nombre >. \<Ancho >. \<Alto >. png.|Obligatorio|  
+|/resources|Una lista delimitada por punto y coma de las imágenes o directorios. Esta lista debería contener siempre la lista completa de las imágenes que se incluirán en el manifiesto. Si solo se proporciona una lista parcial, se perderán las entradas no incluidas.<br /><br /> Si un archivo de recursos determinado es una tira de imagen, la herramienta dividirla en imágenes independientes antes de agregar cada subimagen en el manifiesto.<br /><br /> Si la imagen es un archivo .png, se recomienda que formatear el nombre de esta manera para que la herramienta puede rellenar los atributos de la imagen adecuados: \<Nombre >. \<Ancho >. \<Alto >. png.|Obligatorio|  
 |/Assembly|El nombre del ensamblado administrado (sin incluir la extensión) o la ruta de acceso en tiempo de ejecución del ensamblado nativo que hospeda los recursos (con respecto a la ubicación de tiempo de ejecución del manifiesto).|Obligatorio|  
 |/ manifest|El nombre que asigne al archivo .imagemanifest generado. Esto también puede incluir una ruta de acceso absoluta o relativa para crear el archivo en una ubicación diferente. El nombre predeterminado coincide con el nombre del ensamblado.<br /><br /> Predeterminado: \<Directorio actual >\\< ensamblado\>.imagemanifest|Optional|  
 |/guidName|El nombre para el símbolo GUID para todas las imágenes en el manifiesto generado.<br /><br /> Predeterminado: AssetsGuid|Optional|  
@@ -43,9 +43,9 @@ El manifiesto de la herramienta de recursos es una aplicación de consola que to
   
  **Ejemplos**  
   
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
+-   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
 -   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
