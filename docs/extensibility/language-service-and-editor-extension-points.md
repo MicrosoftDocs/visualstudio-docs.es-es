@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abc4824a3e90250401d720aefedda80189419c85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907967"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010056"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Puntos de extensión de editor y el servicio de lenguaje
 El editor proporciona puntos de extensión que se pueden ampliar como componentes de Managed Extensibility Framework (MEF), incluidos la mayoría de las características de servicio de lenguaje. Estas son las categorías de punto de extensión principal:  
@@ -403,7 +403,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   1.  Cualquier formato personalizado  
   
-  2.  Entrega de archivos  
+  2.  FileDrop  
   
   3.  EnhancedMetafile  
   
@@ -411,7 +411,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   5.  RIFF  
   
-  6.  DIF  
+  6.  Dif  
   
   7.  Configuración regional  
   
@@ -423,11 +423,11 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   11. SymbolicLink  
   
-  12. XAML  
+  12. Xaml  
   
   13. XamlPackage  
   
-  14. TIFF  
+  14. Tiff  
   
   15. Bitmap  
   

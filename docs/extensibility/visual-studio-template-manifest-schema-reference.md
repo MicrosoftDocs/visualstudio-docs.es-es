@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba9f4123b69a2decbcc46433e85082a4897b378d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961960"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999475"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referencia de esquema del manifiesto de plantilla de Visual Studio
 Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*vstman*) los archivos que se generan para las plantillas de proyecto o elemento de Visual Studio. El esquema también describe la ubicación y otra información relevante acerca de la plantilla.  
@@ -30,11 +30,11 @@ Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*
   
 -   **Versión**: Una cadena que representa la versión del manifiesto de plantilla. Obligatorio.  
   
--   **Configuración regional**: Una cadena que representa la configuración regional o configuraciones regionales del manifiesto de plantilla. El valor de configuración regional se aplica a todas las plantillas. Debe usar un manifiesto independiente para cada configuración regional. Opcional.  
+-   **Locale**: Una cadena que representa la configuración regional o configuraciones regionales del manifiesto de plantilla. El valor de configuración regional se aplica a todas las plantillas. Debe usar un manifiesto independiente para cada configuración regional. Opcional.  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
--   **VSTemplateContainer** opcional.  
+-   **VSTemplateContainer** Optional.  
   
 -   **VSTemplateDir** opcional.  
   
@@ -51,7 +51,7 @@ Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*
   
 -   **RelativePathOnDisk**:  La ruta de acceso relativa del archivo de plantilla en el disco. Esta ubicación también define la posición de la plantilla en el árbol de la plantilla se muestra en el **nuevo proyecto** o **nuevo elemento** cuadro de diálogo. Plantillas que se implementa como un directorio y los archivos individuales, esta ruta de acceso hace referencia al directorio que contiene los archivos de plantilla. Para implementar plantillas como un *.zip* archivo, esta ruta de acceso debe ser la ruta de acceso a la *.zip* archivo.  
   
--   ** VSTemplateHeader: Un [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento que describe el encabezado.  
+-   **VSTemplateHeader: Un [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento que describe el encabezado.  
   
 ### <a name="parent-element"></a>Elemento primario  
  **VSTemplateManifest**  
@@ -84,7 +84,7 @@ Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*
   
 -   **Paquete**: Valor de cadena que especifica el paquete. Opcional.  
   
--   **ID. DE**: Valor de cadena que especifica el identificador. Opcional.  
+-   **ID**: Valor de cadena que especifica el identificador. Opcional.  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  

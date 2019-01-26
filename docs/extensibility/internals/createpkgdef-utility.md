@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5c18e77405cd4e48c89d3b481937c7d837488cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 312bbab46cfb7dec85e42f425b2363c2442e576b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910940"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016231"
 ---
 # <a name="createpkgdef-utility"></a>Utilidad CreatePkgDef
 Toma un archivo .dll para una extensión de Visual Studio como un parámetro y crea un *.pkgdef* archivo para acompañar la *.dll* archivo. El *.pkgdef* archivo contiene toda la información en caso contrario, se escribiría en el registro del sistema cuando se instala la extensión.  
@@ -33,13 +33,13 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```  
   
 ## <a name="arguments"></a>Argumentos  
- **/ out =&lt;nombre de archivo&gt;**  
+ **/out=&lt;FileName&gt;**  
  Obligatorio. Establece el nombre de la *.pkgdef* archivo de salida &lt;FileName&gt;.  
   
  **/codebase**  
  Opcional. Fuerza el registro con el **CodeBase** utilidad.  
   
- **/Assembly**  
+ **/assembly**  
  Fuerza el registro con el **ensamblado** utilidad.  
   
  **&lt;AssemblyPath&gt;**  
@@ -52,7 +52,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 - *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
  
-- *%VSInstallDir%\common7\ide\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Extensions\\*
     
   Si la carpeta de instalación es *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, la extensión de Visual Studio reconocerá, pero se deshabilitará de forma predeterminada. El usuario puede habilitar la extensión mediante **extensiones y actualizaciones**. 
    
@@ -62,4 +62,4 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 >  El **extensiones y actualizaciones** herramienta no puede utilizarse para tener acceso a una extensión a menos que se instala como parte de un paquete VSIX.  
   
 ## <a name="see-also"></a>Vea también  
- [Utilidad CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)
+ [CreateExpInstance utility](../../extensibility/internals/createexpinstance-utility.md)

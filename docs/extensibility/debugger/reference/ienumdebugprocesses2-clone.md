@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3d4196d3-5a80-4f76-b8b2-f72e80c8d406
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7813ba6731837b3437ba467c0ea9a9510d317be1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b3a71daeceea807d6bc9d20326e4aae10cc517b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991793"
 ---
 # <a name="ienumdebugprocesses2clone"></a>IEnumDebugProcesses2::Clone
 Devuelve una copia de la enumeración actual como un objeto independiente.  
