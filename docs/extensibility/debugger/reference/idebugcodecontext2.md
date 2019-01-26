@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2 | Documentos de Microsoft
+title: IDebugCodeContext2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4c744e5dc79c5e704e2cec6d83e39a4170bcd68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac77b0c43d6b300bd41e0b49d4b523dc0f43d025
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922973"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990412"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Esta interfaz representa la posición inicial de una instrucción de código. Para la mayoría de las arquitecturas de tiempo de ejecución en la actualidad, un contexto de código puede considerarse como una dirección de flujo de ejecución de un programa.  

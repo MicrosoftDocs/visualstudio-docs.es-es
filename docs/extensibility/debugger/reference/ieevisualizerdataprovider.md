@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ee69cf02bb91623e10359ea68e88cd106116ef2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc5c16d71fac3b52187b3e0392ed21bdd56a079f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962038"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978326"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -50,7 +50,7 @@ IEEVisualizerDataProvider : IUnknown
  El servicio del visualizador (tal como está representada por la [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interfaz y devuelto por [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) mantiene una referencia al objeto que implementa el `IEEVisualizerDataProvider` interfaz . Como resultado, el `IEEVisualizerDataProvider` interfaz no debe implementarse en el mismo objeto que implementa el [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) si ese objeto mantiene una referencia a la `IEEVisualizerService` objeto: resultados de una referencia circular y un interbloqueo se produce cuando los objetos se destruyen. El enfoque recomendado consiste en implementar `IEEVisualizerDataProvider` en un objeto independiente para que el `IDebugProperty2` objeto delegados sin llamar a `IUnknown::AddRef` en él.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: ee.h  
+ Header: ee.h  
   
  Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   

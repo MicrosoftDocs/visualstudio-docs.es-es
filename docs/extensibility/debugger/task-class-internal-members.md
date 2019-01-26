@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c8da8d661dcb0a8096576617403209a0a70c56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfcdf7e4509e5e06bd5c39ecbb5f538f7d2d01a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872796"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952332"
 ---
 # <a name="task-class---internal-members"></a>Clase de tarea: miembros internos
 En este artículo se describe los miembros internos de la <xref:System.Threading.Tasks.Task?displayProperty=fullName> clase que le ayudarán a implementar un depurador personalizado. Para obtener información general acerca de esta clase, vea el <xref:System.Threading.Tasks.Task> artículo de referencia.  
@@ -53,7 +53,7 @@ En este artículo se describe los miembros internos de la <xref:System.Threading
 |----------|-----------------|  
 |[m_action](../../extensibility/debugger/m-action-field.md)|Delegado que representa el código para ejecutarlo en el <xref:System.Threading.Tasks.Task> objeto.|  
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Almacena las propiedades adicionales de la <xref:System.Threading.Tasks.Task> objeto.|  
-|[m_Parent](../../extensibility/debugger/m-parent-field.md)|El campo de respaldo para el <xref:System.Threading.Tasks.Task?displayProperty=fullName> propiedad principal.|  
+|[m_parent](../../extensibility/debugger/m-parent-field.md)|El campo de respaldo para el <xref:System.Threading.Tasks.Task?displayProperty=fullName> propiedad principal.|  
 |[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|Almacena información sobre el estado actual de la <xref:System.Threading.Tasks.Task> objeto.|  
 |[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Objeto que representa los datos que se usará en la acción.|  
 |[m_taskId](../../extensibility/debugger/m-taskid-field.md)|El campo de respaldo para el <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> propiedad.|  

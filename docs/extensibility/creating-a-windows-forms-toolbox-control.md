@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b84c554427d443d54d117b72cec5a423e10e7887
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8edfce1eb86169581acfa2ace857a766b899ee6b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872926"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992534"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Crear un Control de cuadro de herramientas de Windows Forms
 La plantilla de elemento de Control de cuadro de herramientas de Windows Forms que se incluye en las herramientas de extensibilidad de Visual Studio (SDK de VS) le permite crear un control que se agrega automáticamente a la **cuadro de herramientas** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un control de contador sencillo que puede distribuir a otros usuarios.  

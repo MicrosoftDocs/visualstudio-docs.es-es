@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2987f2290236d8846afdd4fc213b12ffbeadb632
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e179d3b96fd1aeb101ceb6df2bc0d9169c51cb9d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945787"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006065"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 Crea un objeto de matriz. Esta matriz puede contener a cualquier tipo primitivo o valores de la instancia del objeto.  

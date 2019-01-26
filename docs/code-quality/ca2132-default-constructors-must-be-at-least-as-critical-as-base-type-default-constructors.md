@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: e758afa1-8bde-442a-8a0a-bd1ea7b0ce4d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68dd8093d279ae1a2651bc04845b2459b9fb3808
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfe6e4f3ce896e5ae3d728a002bf2caf9f1948ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912800"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013540"
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: Los constructores predeterminados deben ser al menos tan críticos para la seguridad como los constructores predeterminados de tipo base
 

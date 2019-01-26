@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 47578cc281334da7eeebeea6eaa5ef0c1c021c8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e7e82d6d631f12733e75262050afc66fb844416
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819866"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999202"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Quitar variables locales no utilizadas
 
