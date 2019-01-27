@@ -7,15 +7,15 @@ dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986991"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013709"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidad y el conjunto de herramientas de integración de Project
 
@@ -140,7 +140,7 @@ Los archivos de destinos se importan en este orden:
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *destinos*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *destinos*  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*.*targets*  
 
 Si tiene que definir algunas propiedades predeterminadas para el conjunto de herramientas, puede agregar archivos a las carpetas ImportBefore e ImportAfter correspondientes.
 
@@ -482,7 +482,7 @@ El `PageTemplate` atributo define cómo se muestra la regla en el **páginas de 
 |------------| - |
 | `generic` | Todas las propiedades se muestran en una sola página bajo los encabezados de categoría<br/>La regla puede ser visible para `Project` y `PropertySheet` contextos, pero no `File`.<br/><br/> Ejemplo: `$(VCTargetsPath)`\\*1033*\\*general.xml* |
 | `tool` | Las categorías se muestran como subpáginas.<br/>La regla puede ser visible en todos los contextos: `Project`, `PropertySheet` y `File`.<br/>La regla sólo está visible en las propiedades del proyecto si el proyecto tiene elementos con el `ItemType` definido en `Rule.DataSource`, a menos que se incluye el nombre de regla en el `ProjectTools` grupo de elementos.<br/><br/>Ejemplo: `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
-| `debugger` | La página se muestra como parte de la página de depuración.<br/>Actualmente se omiten las categorías.<br/>El nombre de la regla debe coincidir con el objeto de MEF de iniciador de depuración `ExportDebugger` atributo.<br/><br/>Ejemplo: `$(VCTargetsPath)`\\*1033*\\*depurador\_local\_windows.xml* |
+| `debugger` | La página se muestra como parte de la página de depuración.<br/>Actualmente se omiten las categorías.<br/>El nombre de la regla debe coincidir con el objeto de MEF de iniciador de depuración `ExportDebugger` atributo.<br/><br/>Ejemplo: `$(VCTargetsPath)`\\*1033*\\*debugger\_local\_windows.xml* |
 | *custom* | Plantilla personalizada. Debe coincidir con el nombre de la plantilla de la `ExportPropertyPageUIFactoryProvider` atributo de la `PropertyPageUIFactoryProvider` objeto MEF. Consulte **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Ejemplo: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 Si la regla usa una de las plantillas de la cuadrícula de propiedades, pueden usar estos puntos de extensibilidad para sus propiedades:

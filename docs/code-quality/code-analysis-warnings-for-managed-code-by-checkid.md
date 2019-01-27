@@ -256,15 +256,15 @@ f1_keywords:
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba3d5d157cebe48212128a6eeb0312f9f67c2f3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55a4f53915e50275df0876d50564b3f30add1d5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936001"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010329"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Advertencias de análisis de código para código administrado por CheckId
 
@@ -401,7 +401,7 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA1812 | [CA1812: Evitar las clases internas sin instancia](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | El código del ensamblado no crea una instancia del tipo del nivel de ensamblado. |
 | CA1813 | [CA1813: Evitar atributos no sellados](../code-quality/ca1813-avoid-unsealed-attributes.md) | La biblioteca de clases de .NET Framework proporciona métodos para recuperar los atributos personalizados. De forma predeterminada, estos métodos buscan la jerarquía de herencia de atributo. La acción de sellar el atributo elimina la búsqueda en la jerarquía de herencia y puede mejorarse el rendimiento. |
 | CA1814 | [CA1814: Preferir las matrices escalonadas antes que multidimensionales](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | Una matriz escalonada es una matriz cuyos elementos son matrices. Las matrices que constituyen los elementos pueden ser de tamaños diferentes, reduciendo el espacio desaprovechado para algunos conjuntos de datos. |
-| CA1815 | [CA1815: Invalidar equals y el operador equals en los tipos de valor](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | Para los tipos de valor, la implementación heredada de Equals utiliza la biblioteca de reflexión y compara el contenido de todos los campos. Mediante el cálculo, la reflexión es cara y no es necesario comparar cada campo para comprobar si hay igualdad. Si espera que los usuarios comparen u ordenen instancias, o utilicen instancias como claves de tabla hash, el tipo de valor debe implementar Equals. |
+| CA1815 | [CA1815: Invalidar Equals y el operador Equals en los tipos de valores](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | Para los tipos de valor, la implementación heredada de Equals utiliza la biblioteca de reflexión y compara el contenido de todos los campos. Mediante el cálculo, la reflexión es cara y no es necesario comparar cada campo para comprobar si hay igualdad. Si espera que los usuarios comparen u ordenen instancias, o utilicen instancias como claves de tabla hash, el tipo de valor debe implementar Equals. |
 | CA1816 | [CA1816: Llamar a GC. SuppressFinalize correctamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Un método que es una implementación de Dispose no llama a GC. SuppressFinalize; o un método que no es una implementación de Dispose llama a GC. SuppressFinalize; o un método llama a GC. SuppressFinalize y pasa un valor distinto de esto (Me en Visual Basic). |
 | CA1819 | [CA1819: Las propiedades no deberían devolver matrices](../code-quality/ca1819-properties-should-not-return-arrays.md) | Las matrices devueltas por las propiedades no están protegidas contra escritura, aun cuando la propiedad es de solo lectura. Para mantener la matriz inviolable, la propiedad debe devolver una copia de la matriz. Por lo general, los usuarios no entienden las implicaciones de rendimiento adversas que se originan al llamar a este tipo de propiedad. |
 | CA1820 | [CA1820: Probar las cadenas están vacías mediante la longitud de cadena](../code-quality/ca1820-test-for-empty-strings-using-string-length.md) | El uso de la propiedad String.Length o del método String.IsNullOrEmpty para comparar cadenas es mucho más rápido que el uso de Equals. |
@@ -498,7 +498,7 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA2233 |[CA2233: Las operaciones no deben desbordarse](../code-quality/ca2233-operations-should-not-overflow.md) | No debería realizar operaciones aritméticas sin validar primero los operandos. Esto asegura que el resultado de la operación no está fuera del intervalo de valores posibles para los tipos de datos que están implicados. |
 | CA2234 | [CA2234: Pase objetos System.Uri en lugar de cadenas](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md) | Se realiza una llamada a un método que tiene un parámetro de cadena cuyo nombre contiene "uri", "URI", "urn", "URN", "url" o "URL". El tipo declarativo del método contiene una sobrecarga de método correspondiente que tiene un parámetro System.Uri. |
 | CA2235 | [CA2235: Marcar todos los campos no serializables](../code-quality/ca2235-mark-all-non-serializable-fields.md) | Un campo de instancia de un tipo que no es serializable se declara en un tipo que es serializable. |
-| CA2236 | [LCA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md) | Para corregir una infracción de esta regla, llame al método de tipo base GetObjectData o al constructor de serialización desde el constructor o el método de tipo derivado correspondiente. |
+| CA2236 | [CA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md) | Para corregir una infracción de esta regla, llame al método de tipo base GetObjectData o al constructor de serialización desde el constructor o el método de tipo derivado correspondiente. |
 | CA2237 | [CA2237: Marcar los tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md) | Para que los tipos sean reconocidos como serializables por Common Language Runtime, deben estar marcados con el atributo SerializableAttribute incluso si el tipo utiliza una rutina de serialización personalizada a través de la implementación de la interfaz ISerializable. |
 | CA2238 |[CA2238: Implementar métodos de serialización correctamente](../code-quality/ca2238-implement-serialization-methods-correctly.md) | Un método que controla un evento de serialización no especifica la firma correcta, el tipo de valor devuelto ni la visibilidad. |
 | CA2239 | [CA2239: Proporcionar métodos de deserialización para campos opcionales](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md) | Un tipo tiene un campo que está marcado con el atributo System.Runtime.Serialization.OptionalFieldAttribute y el tipo no proporciona métodos de control de eventos de deserialización. |

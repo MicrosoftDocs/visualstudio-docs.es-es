@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d2194a2646f31ec31c8a499d1ae2e3c80b5335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e255695cd461f5c272bc65f695d8935ab892d034
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833172"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960248"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
 Describe una excepción o error de tiempo de ejecución producido por el programa que se está depurando.  
@@ -59,7 +59,7 @@ public struct EXCEPTION_INFO { 
  dwCode  
  El código de identificación del error de excepción o tiempo de ejecución.  
   
- "_mfc_CTabCtrl.3a3a.GetItem"  
+ dwState  
  Un valor de la [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) enumeración que define el estado de la excepción.  
   
  guidType  
