@@ -1,8 +1,6 @@
 ---
 title: Creación de visualizadores de datos personalizado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607827"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54204393"
 ---
-# <a name="create-custom-data-visualizers"></a>Creación de visualizadores de datos personalizados 
+# <a name="create-custom-data-visualizers"></a>Creación de visualizadores de datos personalizados
  Un *visualizador* forma parte de la [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfaz de usuario del depurador que muestra una variable o un objeto de forma adecuada según su tipo de datos. Por ejemplo, un visualizador HTML interpreta una cadena HTML y muestra el resultado tal como aparecería en una ventana del explorador. Un visualizador de mapa de bits interpreta una estructura de mapa de bits y muestra el gráfico que representa. Algunos visualizadores permiten modificar así como ver los datos.
 
  El depurador de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] incluye seis visualizadores estándar. El texto, HTML, XML y JSON visualizadores funcionan en objetos de cadena. El visualizador de árboles de WPF muestra las propiedades de un árbol visual de objetos WPF. El visualizador del conjunto de datos funciona con objetos DataSet, DataView y DataTable. 
@@ -42,13 +40,13 @@ En el depurador, un visualizador se representa mediante un icono de lupa ![Visua
  > [!NOTE]
  > Para crear un visualizador personalizado para código nativo, vea el [visualizador del depurador nativo SQLite](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) ejemplo. No se admiten los visualizadores personalizados para las aplicaciones UWP y Windows 8.x.
 
-Puede escribir un visualizador personalizado para un objeto de cualquier clase administrada, excepto <xref:System.Object> y <xref:System.Array>.  
+Puede escribir un visualizador personalizado para un objeto de cualquier clase administrada, excepto <xref:System.Object> o <xref:System.Array>.  
   
 La arquitectura de un visualizador del depurador tiene dos partes:  
   
 - El *lado depurador* se ejecuta en el depurador de Visual Studio y crea y muestra la interfaz de usuario del visualizador.  
   
-- El *lado depurado* se ejecuta dentro del proceso de Visual Studio está depurando (el *depurado*). El objeto de datos para visualizar (por ejemplo, un objeto de cadena) existe en el proceso depurado. El lado depurado envía el objeto en el lado depurador, que se muestra en la interfaz de usuario creada.  
+- El *lado depurado* se ejecuta dentro del proceso que Visual Studio depura (el *depurado*). El objeto de datos para visualizar (por ejemplo, un objeto de cadena) existe en el proceso depurado. El lado depurado envía el objeto en el lado depurador, que se muestra en la interfaz de usuario creada.  
 
 El lado depurador recibe el objeto de datos desde un *proveedor de objetos* que implementa el <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interfaz. El lado depurado envía el objeto a través de la *origen del objeto*, que se deriva de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. 
 
@@ -88,10 +86,10 @@ Especificar el código del lado depurado mediante el <xref:System.Diagnostics.De
 
  [Tutorial: Escritura de un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
- [Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md)  
+ [Cómo: Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md)  
   
- [Prueba y depuración de un visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [Cómo: Prueba y depuración de un visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
  [Referencia de la API del visualizador](../debugger/visualizer-api-reference.md)  
   
- [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)
+ [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)
