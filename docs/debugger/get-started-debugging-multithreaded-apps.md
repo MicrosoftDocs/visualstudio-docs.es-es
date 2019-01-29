@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863295"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227985"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>Introducción a la depuración de aplicaciones multiproceso
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Empezar a depurar aplicaciones multiproceso (C#, Visual Basic, C++)
 Visual Studio proporciona varias herramientas y elementos de interfaz de usuario para ayudar a depurar aplicaciones multiproceso. Este tutorial muestra cómo usar los marcadores de subprocesos, el **pilas paralelas** ventana, el **inspección paralela** ventana puntos de interrupción condicionales y los puntos de interrupción de filtro. Completar este tutorial le permitirá familiarizarse con las características de Visual Studio para depurar aplicaciones multiproceso.
 
 | | |
@@ -275,7 +275,7 @@ En el **pilas paralelas** ventana, puede cambiar entre una vista de subprocesos 
 
 4. Haga doble clic en una de las filas en la ventana para ver las opciones disponibles.
 
-### <a name="flag-and-unflag-threads"></a>Marcado y desmarcado de subprocesos  
+### <a name="flag-and-unflag-threads"></a>Marcar y desmarcar subprocesos  
 Puede marcar los subprocesos para realizar un seguimiento de los subprocesos importantes y pasar por alto los demás subprocesos.  
   
 1. En el **inspección paralela** ventana, mantenga presionada la **MAYÚS** clave y seleccione varias filas.

@@ -23,26 +23,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: d9759b988e592b122866701b398eec55aedd8e95
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946167"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228024"
 ---
-# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Vista de subprocesos en el depurador de Visual Studio mediante el uso de la ventana subprocesos
+# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Ver conversaciones en el depurador de Visual Studio mediante el uso de la ventana de subprocesos (C#, Visual Basic, C++)
 En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en la aplicación que está depurando. Para obtener instrucciones detalladas sobre cómo usar el **subprocesos** ventana, consulte [Tutorial: Depuración mediante la ventana subprocesos](../debugger/how-to-use-the-threads-window.md).
 
 ## <a name="use-the-threads-window"></a>Usar la ventana Subprocesos 
  El **subprocesos** ventana contiene una tabla donde cada fila describe un subproceso independiente en la aplicación. De forma predeterminada, en la tabla se enumeran todos los subprocesos, pero puede filtrar la lista para mostrar solo los que le interesen. Cada columna describe un tipo diferente de información. También puede ocultar algunas columnas. Si muestra todas las columnas, aparecerán las siguientes columnas, de izquierda a derecha:  
   
-- **Marcar** En esta columna no etiquetada, puede marcar un subproceso al que desea prestar atención especial. Para obtener información acerca de cómo marcar un subproceso, vea [Cómo: Marcado y desmarcado de subprocesos](../debugger/how-to-flag-and-unflag-threads.md)  
+- **Marcar** En esta columna no etiquetada, puede marcar un subproceso al que desea prestar atención especial. Para obtener información acerca de cómo marcar un subproceso, vea [Cómo: Marcado y desmarcado de subprocesos  
   
-- Subproceso actual En esta columna no etiquetada, una flecha amarilla indica el subproceso actual. Esquema de una flecha indica el contexto del depurador actual para un subproceso distinto del actual.
+- -   Subproceso actual En esta columna no etiquetada, una flecha amarilla indica el subproceso actual. Esquema de una flecha indica el contexto del depurador actual para un subproceso distinto del actual.
   
-- **IDENTIFICADOR** Muestra el número de identificación para cada subproceso.  
+- **ID**: Muestra el número de identificación para cada subproceso.  
   
-- Identificador administrado Muestra los números de identificación administrados para los subprocesos administrados.  
+- -   Identificador administrado Muestra los números de identificación administrados para los subprocesos administrados.  
   
 - **Categoría**. Muestra la categoría de subprocesos como subprocesos de interfaz de usuario, controladores de llamadas a procedimientos remotos o subprocesos de trabajo. Una categoría especial identifica el subproceso principal de la aplicación.  
   
@@ -50,13 +50,13 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
   
 - **location**: Se muestra donde se está ejecutando el subproceso. Puede expandir esta ubicación para mostrar la pila de llamadas completa del subproceso.  
   
-- Prioridad Una columna avanzada (oculta de forma predeterminada) que muestra la prioridad o prioridad que el sistema ha asignado a cada subproceso.  
+- -   Prioridad Una columna avanzada (oculta de forma predeterminada) que muestra la prioridad o prioridad que el sistema ha asignado a cada subproceso.  
   
-- Máscara de afinidad Una columna avanzada (oculta de forma predeterminada) muestra la máscara de afinidad de procesador para cada subproceso. En un sistema multiprocesador, la máscara de afinidad determina los procesadores en los que se puede ejecutar un subproceso.  
+- -   Máscara de afinidad Una columna avanzada (oculta de forma predeterminada) muestra la máscara de afinidad de procesador para cada subproceso. En un sistema multiprocesador, la máscara de afinidad determina los procesadores en los que se puede ejecutar un subproceso.  
   
-- Recuento de suspendidos Una columna avanzada (oculta de forma predeterminada) que muestra el recuento de suspensión. Este recuento determina si un subproceso se puede ejecutar. Para obtener más información sobre recuentos suspendidos, consulte [inmovilizar y reanudar subprocesos](#freeze-and-thaw-threads).  
+- -   Recuento de suspendidos Una columna avanzada (oculta de forma predeterminada) que muestra el recuento de suspensión. Este recuento determina si un subproceso se puede ejecutar. Para obtener más información sobre recuentos suspendidos, consulte [inmovilizar y reanudar subprocesos](#freeze-and-thaw-threads).  
   
-- Nombre del proceso Una columna avanzada (oculta de forma predeterminada) que muestra el proceso al que pertenece cada subproceso. Los datos de esta columna pueden ser útiles al depurar varios procesos.  
+- -   Nombre del proceso Una columna avanzada (oculta de forma predeterminada) que muestra el proceso al que pertenece cada subproceso. Los datos de esta columna pueden ser útiles al depurar varios procesos.  
 
 - Identificador de proceso Una columna avanzada (oculta de forma predeterminada) que muestra el identificador de proceso al que pertenece cada subproceso. 
 
