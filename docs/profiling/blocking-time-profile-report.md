@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4621170ba1ab37ef22bf8a2a974d01d36ddfb705
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5559584b02bf5338fb50fd41527c6958b0b05a21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946427"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037465"
 ---
 # <a name="blocking-time-profile-report"></a>Informe de perfil de tiempo de bloqueo
 Los informes de perfil proporcionan datos agregados de tiempo de bloqueo para las pilas de llamadas que son específicas de cada categoría de bloqueo (por ejemplo, "E/S" o "Sincronización"). El informe de adelantamiento enumera los procesos que adelantaron el proceso actual junto con el número de instancias de adelantamiento. Para compilar el informe de perfil de bloqueo, la herramienta recopila las llamadas API de bloqueo y las acumula en un árbol de pilas de llamadas. Los datos que se muestran en estos informes varían según el intervalo de tiempo actual, los subprocesos ocultos y los dos filtros siguientes que se pueden aplicar:  

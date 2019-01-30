@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 8a68df65-eb63-452f-9285-fb4ffc92f2b2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 570e5d313b6246903f5e6a931b10f33fa40bf3ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c7d68547e0c2d0b056e2c60f1e9e183270841c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913415"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030267"
 ---
 # <a name="gpu-activity-other-processes"></a>Actividad GPU (Otros procesos)
 Los segmentos **Actividad de GPU (otros procesos)** en la vista de subprocesos del visualizador de simultaneidad representan los momentos en que la GPU estaba procesando solicitudes en nombre de otros procesos del sistema. Estas solicitudes se envían a la GPU como paquetes de acceso a memoria directa (DMA).  La longitud de un segmento representa la cantidad de tiempo que la GPU ha procesado el paquete.  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42e6a7d0ddd00fefa071f18ef4d7ee0d508a06da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5f9872b66bdb22a53f7c8f6b774bec389e2eaa7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857846"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933716"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de memoria mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar una aplicación independiente (cliente) de .NET Framework y recopilar datos de memoria.  

@@ -5,15 +5,15 @@ ms.date: 03/27/2018
 ms.topic: overview
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60a37a7c970fdbf2ed428741cb21221429d4026d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0531d016b2ddcc90348dcbfd2ef80525ac400e5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921810"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039818"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Información general sobre herramientas para medir el rendimiento en Visual Studio
 

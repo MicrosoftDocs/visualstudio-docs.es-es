@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bdfc727e3214292aade933abde6d6671c4b02fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68325e88f5c575fae9c2d6bdb3bc1ac512da59d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955164"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958295"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Explorador web, Entorno, Opciones (Cuadro de diálogo)
 

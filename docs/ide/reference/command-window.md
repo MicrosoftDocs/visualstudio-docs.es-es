@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567553895437bc013a7415ce305bfd863d46994a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d939ca758d8ea398fc0af3f40c38f6459c27b5d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841864"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026025"
 ---
 # <a name="command-window"></a>Ventana Comandos
 La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Puede ejecutar comandos de menú y comandos que no aparecen en ningún menú. Para mostrar la ventana **Comandos**, pulse **Otras ventanas** desde el menú **Ver** y seleccione **Ventana Comandos**.

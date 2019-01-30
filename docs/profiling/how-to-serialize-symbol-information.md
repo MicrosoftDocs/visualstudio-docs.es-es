@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e0da706-6325-4073-83d1-aeab3b7c137a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ae49e4656bcbeb8e1048331b9fb0b61849e4099
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7957917c999396f2e09bbb697474beb47ebcc47
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987606"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042444"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Procedimiento Serializar la información de símbolos
 Puede serializar símbolos que debe tener para analizar la aplicación. La serialización de símbolos agrega símbolos al archivo .*vsp*. Al agregar información de símbolos al archivo .*vsp*, otros usuarios pueden analizar un informe de rendimiento sin tener acceso a los símbolos originales. Si no se serializan los símbolos, debe tener archivos .*exe* y .*pdb* originales instrumentados para analizar el archivo .*vsp*.  

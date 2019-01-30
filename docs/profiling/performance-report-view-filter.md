@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be48c6d0879a257e17be2d92dc00829097d11c15
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48e6dc6e35ca6388926030412dbbb5380e054b1e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939892"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930413"
 ---
 # <a name="performance-report-view-filter"></a>Filtro de vista Informe de rendimiento
 La ventana **Filtro de vista Informe de rendimiento** se encuentra en la parte superior de la ventana **Informe de generador de perfiles**. Si no la ve, haga clic en el botón **Mostrar filtro**.  

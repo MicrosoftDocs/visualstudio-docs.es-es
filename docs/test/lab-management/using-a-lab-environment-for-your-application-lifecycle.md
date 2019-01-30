@@ -6,16 +6,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7b93e4f065cbd776de9f70fae61594e828a92fe8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6bf618f8d7f93ca19e788fe8e6e9e1486548fa06
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940700"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000232"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar un entorno de laboratorio para DevOps
 

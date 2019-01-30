@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5743e9532a50089317f0c28917927f514eb4709
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44f098cf1a7e8535dfcf533721c24638bdddd975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987043"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070102"
 ---
 # <a name="msbuild-properties"></a>propiedades de MSBuild
 Las propiedades son pares nombre-valor que se pueden utilizar para configurar compilaciones. Las propiedades son útiles para pasar valores a tareas, evaluar condiciones y almacenar valores a los que se hará referencia en el archivo del proyecto.  

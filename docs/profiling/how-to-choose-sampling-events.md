@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb4e501985d5a9043d381e02acbe70a45d0ee22
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96e84d459485ef9d9f796cd30b758ebe1613ef2e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962972"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947574"
 ---
 # <a name="how-to-choose-sampling-events"></a>Procedimiento Elegir eventos de muestreo
 De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] recopilan datos de rendimiento en un intervalo especificado como un número de ciclos de procesador que utiliza el proceso del que se genera el perfil. El número predeterminado de ciclos en un intervalo es de 10 000 000, que es aproximadamente 0,01 segundos en un equipo de 1 GH. Puede cambiar el número de ciclos en un intervalo, así como el evento de muestras. Los siguientes eventos de muestras están disponibles:  

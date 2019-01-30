@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 345d2c744aeffe84517377ed99f486ab02d5e00c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9421df86166c76bda22bdecf166969e4a2142a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860869"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995666"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Análisis del uso de energía en las aplicaciones para UWP
 El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a analizar el consumo de potencia y energía de las aplicaciones para UWP en dispositivos de tableta de bajo consumo que funcionan siempre o al menos parte del tiempo con baterías. En un dispositivo que funciona con baterías, una aplicación que usa demasiada energía puede producir tanta insatisfacción en el cliente que este puede decidir incluso desinstalarla. La optimización del uso de energía puede incrementar la adopción y el uso de la aplicación por parte de los clientes.  

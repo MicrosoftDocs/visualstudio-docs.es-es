@@ -4,15 +4,15 @@ ms.date: 02/15/2018
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c04132dde3f668c007c8fc0bf750c434baa81bbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7d693b1c2948e747532d21d4172cf2e366572ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925029"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945481"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Procedimiento Filtrar vistas de herramientas de generación de perfiles para mostrar Solo mi código
 

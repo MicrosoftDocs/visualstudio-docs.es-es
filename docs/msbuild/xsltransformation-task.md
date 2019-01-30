@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6f3a7d81-3ae3-4703-9a06-870b32b69d80
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc005efd13acfa3ea50d3e2cd0d04fc40f89de8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4daff2ed32bc5fe5f622c1ab5b16b421297c24a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966095"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963507"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation (tarea)
 Transforma una entrada XML mediante una transformación XSL o una transformación XSL compilada y la envía a un dispositivo de salida o archivo.  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 565b69de16768175e520e06333d714865bbcc0a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d897b999509e181daf5156660f366b58dabca0c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893346"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987367"
 ---
 # <a name="resolvecomreference-task"></a>Tarea ResolveComReference
 Toma una lista de uno o varios nombres de biblioteca de tipos o archivos *.tlb* y resuelve esas bibliotecas de tipos en ubicaciones de disco.  

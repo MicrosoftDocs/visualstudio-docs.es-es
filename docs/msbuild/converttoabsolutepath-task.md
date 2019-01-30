@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f1af2cb8-b4ef-4a72-be80-22fa526c4491
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2d2932b9fc18141b3b16ad2b8c35990351267a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78f82d5d7936a9c5fd318804ea6ba9c5731da39c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966338"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068984"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath (tarea)
 Convierte una ruta de acceso relativa o una referencia en una ruta de acceso absoluta.  

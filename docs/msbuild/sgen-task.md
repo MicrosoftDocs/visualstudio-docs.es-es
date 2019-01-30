@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54f3f19617e71137f6f318f62d13c9119727f5f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d1d3b504f5987eca850cb2cbd73223c5c115fcde
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939659"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948224"
 ---
 # <a name="sgen-task"></a>SGen (tarea)
 Crea un ensamblado de serialización XML para los tipos del ensamblado especificado. Esta tarea ajusta la herramienta Generador de serializador XML (*Sgen.exe*). Para más información, consulte [Herramienta Generador de serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  

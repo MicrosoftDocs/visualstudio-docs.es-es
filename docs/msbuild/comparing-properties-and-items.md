@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e27f9973bc24cf7d45e86e9982d40cdb20a367ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e85a3606ae0dc53ab4ae65662ce67996e3bb3064
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942364"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987614"
 ---
 # <a name="compare-properties-and-items"></a>Comparación de propiedades y elementos
 Las propiedades y elementos de MSBuild se utilizan para pasar información a las tareas, evaluar condiciones y almacenar valores a los que se puede hacer referencia en el archivo del proyecto.  

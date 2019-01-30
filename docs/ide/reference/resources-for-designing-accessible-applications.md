@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b63de96ce56005abeb59de35b533693edcff53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b00574fe94e2b439540fd12d16957126e29c065a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959630"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011161"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para diseñar aplicaciones accesibles
 

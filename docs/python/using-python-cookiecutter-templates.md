@@ -1,22 +1,22 @@
 ---
 title: Uso de plantillas de CookieCutter con Python
 description: Visual Studio admite la extensión gráfica Cookiecutter para detectar plantillas del código de Python y crear proyectos a partir de ellas.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09e46f65d7aeafbf781af2a5e77ae9e4cc17ea0
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958240"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231797"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Uso de la extensión Cookiecutter
 
@@ -60,7 +60,7 @@ Después de que la plantilla está instalada localmente, Cookiecutter muestra un
 
 ![Página de opciones de Cookiecutter](media/cookiecutter-template-options.png)
 
-Cada plantilla de Cookiecutter define su propio conjunto de opciones y especifica un valor predeterminado para cada una (se muestra como el texto sugerido en cada campo de entrada). Un valor predeterminado puede ser un fragmento de código, normalmente cuando es un valor dinámico que usa otras opciones. 
+Cada plantilla de Cookiecutter define su propio conjunto de opciones y especifica un valor predeterminado para cada una (se muestra como el texto sugerido en cada campo de entrada). Un valor predeterminado puede ser un fragmento de código, normalmente cuando es un valor dinámico que usa otras opciones.
 
 Es posible personalizar los valores predeterminados para opciones específicas con un archivo de configuración de usuario. Cuando la extensión Cookiecutter detecta un archivo de configuración de usuario, sobrescribe los valores predeterminados de la plantilla con los valores predeterminados de la configuración de usuario. Esto se explica en la sección [User Config](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) (Configuración de usuario) de la documentación de Cookiecutter.
 

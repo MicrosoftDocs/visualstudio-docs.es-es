@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d89c880754683682e443bac1a18204319740b903
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bdd95b5eb94567c7d05e1cedf7605c4e7688a89
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879561"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231836"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Proyectos de servicio en la nube de Azure para Python
 
@@ -25,7 +25,7 @@ Visual Studio proporciona plantillas para ayudarle a empezar a crear Azure Cloud
 
 Un [servicio en la nube](https://docs.microsoft.com/azure/cloud-services/) consta de cualquier número de *roles de trabajo* y *roles web*, cada uno de los cuales realiza una tarea conceptualmente independiente, pero se puede replicar por separado entre máquinas virtuales según sea necesario para escalar. Los roles web proporcionan hospedaje para aplicaciones web de front-end. En lo que se refiere a Python, se puede usar cualquier marco web que admita WSGI para escribir este tipo de aplicación (tal como admite la [plantilla Proyecto web](python-web-application-project-templates.md)). Los roles de trabajo están pensados para procesos de larga ejecución que no interactúan directamente con los usuarios. Suelen usar los paquetes del paquete "azure", que se instala con [`pip install azure`](https://pypi.org/project/azure).
 
-Este artículo contiene detalles sobre la plantilla de proyecto y otra compatibilidad en Visual Studio 2017 (las versiones anteriores son similares, pero con algunas diferencias). Para más información sobre el trabajo con Azure desde Python, visite el [Centro para desarrolladores de Python para Azure](https://docs.microsoft.com/python/azure/?view=azure-python).
+Este artículo contiene detalles sobre la plantilla de proyecto y otra compatibilidad en Visual Studio 2017 (las versiones anteriores son similares, pero con algunas diferencias). Para más información sobre el trabajo con Azure desde Python, visite el [Centro para desarrolladores de Python para Azure](https://docs.microsoft.com/python/azure/?view=azure-python/?view=azure-python).
 
 ## <a name="create-a-project"></a>Crear un proyecto
 

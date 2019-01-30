@@ -7,15 +7,15 @@ helpviewer_keywords:
 - configure test agents, test lab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc0ea16ea10f4479fb635d4b84cb2eaee24c8b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5c0a9078cdbe9ad84b53cd7f667dbd9e3c83d2b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879882"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970492"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes y controladores de pruebas
 

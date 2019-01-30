@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b90bdc015e31d2c9c4313be874b7f38a58a7ac45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44912d26682479b37eaa13483320ffe093f40b5c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986549"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964066"
 ---
 # <a name="execution-profile-report"></a>Informe del perfil de ejecución
 El informe del perfil de ejecución es un perfil de muestreo tradicional. Se toman muestras aproximadamente cada milisegundo durante los períodos cuando un subproceso se está ejecutando en un núcleo lógico, y el visualizador de simultaneidad intercala el conjunto acumulado de pilas de muestras para generar un árbol de llamadas típico. Los datos de esta tabla pueden verse afectados por el intervalo de tiempo actual y los subprocesos ocultos, así como por estos filtros que se pueden aplicar:  

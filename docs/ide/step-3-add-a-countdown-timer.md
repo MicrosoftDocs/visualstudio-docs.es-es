@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c259f8cae798db3ed79329276c95135a9b607541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d07265ec978b6bf444d1d98407ddace991c162df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962563"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935051"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Paso 3: Agregar un temporizador de cuenta atrás
 En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás para el seguimiento del número de segundos que quedan para que el jugador finalice.

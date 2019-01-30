@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc9c6af2a87502c2b651e91f7d935ffc7ae3474
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f979162dbbef7c04372d42d9ab693b013f33b8ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964486"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923340"
 ---
 # <a name="watch-command"></a>Inspección (Comando)
 Crea y abre una instancia especificada de una ventana **Inspección** . Puede usar una ventana **Inspección** para calcular los valores de variables, expresiones y registros, para editar estos valores y para guardar los resultados.

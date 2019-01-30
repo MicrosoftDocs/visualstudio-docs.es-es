@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5332fd38-622d-47a3-874f-8c2fd7a30f95
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 570ddb4472baec04e656db0b36af5a2550720774
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: efc893aaaeb3755946ca3e0f21b352d6a5ef8bb4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830289"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975067"
 ---
 # <a name="cpu-utilization-graph"></a>Gráfico de uso de la CPU
 El gráfico de utilización de la CPU muestra el nivel de uso en una aplicación a lo largo del tiempo. El eje X representa la duración de la traza y el eje Y representa el número de núcleos lógicos del sistema. El gráfico no muestra qué núcleo concreto está activo en un momento dado. Por ejemplo, si dos núcleos se ejecutan al 50 por ciento de su capacidad durante un período de tiempo determinado, esta vista muestra que se está utilizando un núcleo lógico.  

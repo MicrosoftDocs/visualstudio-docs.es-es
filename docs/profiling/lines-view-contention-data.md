@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0afb540a314d1e980e9b0a6ccace0b36145cce6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25f6e144e75a9544caf7bc11c66bb0ba542bd775
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905431"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917268"
 ---
 # <a name="lines-view---contention-data"></a>Vista Líneas: datos de contención
 La vista Líneas de datos de contención muestra los datos de rendimiento de las instrucciones que se estaban ejecutando cuando se recopilaron las muestras en la ejecución de generación de perfiles. En un archivo de origen, una instrucción puede abarcar más de una línea y una sola línea puede incluir más de una instrucción.  

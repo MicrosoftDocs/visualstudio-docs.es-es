@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6d4e2a5d-9f17-4ece-a6f1-75836e1fc382
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 104e34af7bd596b861fc3d1da1da193a6c1c373a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe2e87613cc73682548c278942e17c59026828d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922051"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068971"
 ---
 # <a name="process-view"></a>Vista Proceso
 La vista Proceso muestra los datos de generación de perfiles de los procesos y subprocesos que se ejecutaron durante la generación de perfiles.  

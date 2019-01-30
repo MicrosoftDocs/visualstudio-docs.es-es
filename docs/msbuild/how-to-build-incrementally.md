@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fc2b076bffd843c4882e40f1c3c18dbf161e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5866ae345aaa8b28cdc0ff448500104ba946f504
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883219"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010147"
 ---
 # <a name="how-to-build-incrementally"></a>Procedimiento Compilación de forma incremental
 Cuando se compila un proyecto grande, es importante que los componentes que se compilaron previamente y que aún están actualizados no se recompilen. Si todos los destinos se compilan cada vez, llevará más tiempo finalizar la compilación. Para habilitar las compilaciones incrementales (aquellas en las que solo se compilan los destinos no compilados con anterioridad o no actualizados), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En cambio, debe haber una asignación unívoca entre las entradas y resultados. Se pueden usar las transformaciones para permitir que los destinos identifiquen esta asignación directa. Para obtener más información sobre transformaciones, vea [Transformaciones](../msbuild/msbuild-transforms.md).  

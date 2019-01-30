@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 6a179dc2dc8f3851b1b75ca840b55e07e1ff6a30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060834"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927521"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Paso 4: Uso de la plantilla de proyecto web completa de Flask
 
@@ -163,7 +163,7 @@ Las plantillas de página individuales, *about.html*, *contact.html* e *index.ht
 
 Como se ha indicado al principio de este artículo, Visual Studio proporciona una plantilla "Proyecto web de Flask/Jade", que crea una aplicación que es visualmente idéntica a lo que genera "Proyecto web de Flask". La principal diferencia es que usa el motor de plantillas de Jade, que es una extensión de Jinja que implementa los mismos conceptos con un lenguaje más conciso. En concreto, Jade usa, por ejemplo, palabras clave en lugar de etiquetas entre delimitadores {% %} y permite hacer referencia a estilos CSS y elementos HTML mediante palabras clave.
 
-Para habilitar Jade, la plantilla de proyecto incluye primero el paquete pyjade en *requirements.txt*. 
+Para habilitar Jade, la plantilla de proyecto incluye primero el paquete pyjade en *requirements.txt*.
 
 El archivo *\_\_init\_\_.py* de la aplicación contiene una línea para
 

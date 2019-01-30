@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4fad4d5f974f1316e50cc5435c482948edcc892
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: f1a8acda9d6edf2aace86079f72e27cda76b5a9b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002000"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de C++ con Visual Studio
 

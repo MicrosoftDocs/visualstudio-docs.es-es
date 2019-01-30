@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2800bc660ac157fd7acf8d9d0452a21e62db45da
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: aa7aca674968251418242b57625fb9e0b8b3561e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406053"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940809"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Características de accesibilidad del Visor de Ayuda
 Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. Este tema incluye información sobre las características, productos y servicios que permiten que el Visor de Ayuda de Microsoft sea accesible para los usuarios con una amplia gama de opciones.

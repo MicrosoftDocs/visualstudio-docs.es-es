@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5489aea1-57b4-4561-9bb4-24d490269602
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a22978ee432f4de261932808589e92c9738a8b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6776df2bd0edf6fc639604e6b00502dbf83f657
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880486"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925557"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Número de versión de los ensamblados principales y los ensamblados satélite localizados
 La clase <xref:System.Resources.SatelliteContractVersionAttribute> proporciona compatibilidad de versiones para un ensamblado principal que usa recursos localizados mediante el Administrador de recursos. La aplicación de <xref:System.Resources.SatelliteContractVersionAttribute> al ensamblado principal de una aplicación permite actualizar y volver a implementar el ensamblado sin actualizar sus ensamblados satélite. Por ejemplo, puede usar la clase <xref:System.Resources.SatelliteContractVersionAttribute> con un Service Pack que no introduce nuevos recursos sin volver a compilar e implementar los ensamblados satélite. Para que los recursos localizados estén disponibles, la versión de contrato satélite del ensamblado principal debe coincidir con la clase <xref:System.Reflection.AssemblyVersionAttribute> de los ensamblados satélite. Especifique un número de versión exacto en <xref:System.Resources.SatelliteContractVersionAttribute>; los caracteres comodín como "*" no están permitidos. Para obtener más información, consulte [Recuperar recursos](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).

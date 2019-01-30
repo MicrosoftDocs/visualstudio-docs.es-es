@@ -7,15 +7,15 @@ ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25450c2bb2965852e2077fc234548f224e070ff8
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: f62e963af28a165246ba7e0ec977d7fd2149d622
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441748"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033770"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Información sobre proyectos y soluciones
 

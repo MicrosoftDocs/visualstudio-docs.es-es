@@ -4,18 +4,41 @@ ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.Basic.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.CSharp.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.CoffeeScript.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.CSS.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.Dockerfile.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.F%2523.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.HQL.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.HTML.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.HTMLX.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.JavaScript.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.JSON.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.LESS.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.Plain_Text.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.ResJSON.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.SCSS.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.SQL_Server_Tools.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.StreamAnalytics.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.T-SQL90.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881f995dc8f4c675691f7eaa63d26acefd4b3d01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ec0121f9048151ae91bd21d9ede1528f6e48f812
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876791"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945117"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opciones, Editor de texto, Todos los idiomas, Barras de desplazamiento
 Este cuadro de diálogo le permite cambiar el comportamiento predeterminado de la barra de desplazamiento del Editor de código. Para mostrar estas opciones, seleccione **Opciones** desde el menú **Herramientas**. En la carpeta **Editor de texto**, expanda la subcarpeta **Todos los idiomas** y después seleccione **Barras de desplazamiento**.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1df3eea826f2b439d2dfb9d6607c1afded80421
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6e840d64ebe91258104846903ae08a9fd2798b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914006"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015618"
 ---
 # <a name="build-loggers"></a>Registradores de compilación
 Los registradores proporcionan un método para personalizar el resultado de la compilación y de mostrar mensajes, errores o advertencias en respuesta a eventos de compilación específicos. Cada registrador se implementa como una clase .NET que implementa la interfaz <xref:Microsoft.Build.Framework.ILogger>, que se define en el ensamblado *Microsoft.Build.Framework.dll*.  

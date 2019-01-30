@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8812db301b4e58b89ac8ab879625b7cf101ad94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eaeebaf4a6b935d59152e9f15e01cfae88ff6f92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913972"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974323"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Recopilar datos de control de tiempo detallados mediante la instrumentación
 El método de instrumentación de herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] inserta código de generación de perfiles en una copia de un módulo. El código registra cada entrada, salida y llamada de función a las funciones del módulo durante una ejecución de la generación de perfiles. El método de instrumentación es útil para recopilar información de tiempo detallada sobre una sección del código y para entender el impacto de las operaciones de entrada y salida en el rendimiento de la aplicación.  

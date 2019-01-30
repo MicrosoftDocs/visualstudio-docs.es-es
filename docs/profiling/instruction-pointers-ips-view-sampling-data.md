@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c7f647bb-c5a3-4708-9f9d-33c0fd6e2e96
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc695dab636f486783e3f0ae778457d531934a8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e881c1a7919032d5bcee2ba0019c818f964dc5fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819619"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985493"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Vista Punteros de instrucción (IP): Datos de muestreo
 La vista Punteros de instrucción de datos de muestreo muestra los datos de rendimiento de las instrucciones de ensamblado que se estaban ejecutando directamente cuando se recopilaron las muestras en la ejecución de generación de perfiles.  

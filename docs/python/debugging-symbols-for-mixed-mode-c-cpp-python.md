@@ -6,16 +6,16 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 909b3ab71a4e204372c291ec6ca5421b500a056a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d61c3bcf9e7d403a73c78700257f1ecfe8a70fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885973"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010160"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalación de símbolos de depuración para intérpretes de Python
 
@@ -51,7 +51,7 @@ Si ha descargado los símbolos por separado, siga estos pasos para hacer que Vis
 
 1. Seleccione el menú **Herramientas** > **Opciones** y después vaya a **Depuración** > **Símbolos**.
 
-1. Haga clic en el botón **Agregar** de la barra de herramientas (descrito a continuación), escriba la carpeta donde ha expandido los símbolos descargados (que es donde se encuentra *python.pdb*; por ejemplo *c:\python34\Símbolos*, como se muestra a continuación) y haga clic en **Aceptar**. 
+1. Haga clic en el botón **Agregar** de la barra de herramientas (descrito a continuación), escriba la carpeta donde ha expandido los símbolos descargados (que es donde se encuentra *python.pdb*; por ejemplo *c:\python34\Símbolos*, como se muestra a continuación) y haga clic en **Aceptar**.
 
     ![Opciones de símbolos para el depurador en modo mixto](media/mixed-mode-debugging-symbols.png)
 
@@ -62,9 +62,9 @@ Si ha descargado los símbolos por separado, siga estos pasos para hacer que Vis
 
 ## <a name="official-distributions"></a>Distribuciones oficiales
 
-| Versión de Python | Descargas | 
-| --- | --- | 
-| 3.5 y versiones posteriores | Instale los símbolos mediante el programa de instalación de Python. | 
+| Versión de Python | Descargas |
+| --- | --- |
+| 3.5 y versiones posteriores | Instale los símbolos mediante el programa de instalación de Python. |
 | 3.4.4 | [32 bits](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
 | 3.4.3 | [32 bits](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip) |
 | 3.4.2 | [32 bits](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |

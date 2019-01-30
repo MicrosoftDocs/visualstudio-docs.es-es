@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fd4475f149627776480fb54ec821298bf74b700
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ada47f29f66239a8177b379ba11b4bc66658820
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875412"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979265"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedimiento Seleccionar los archivos que se van a compilar
 Cuando se compila un proyecto que contiene varios archivos, se puede enumerar cada archivo en el archivo de proyecto de forma independiente, o bien usar comodines para incluir todos los archivos de un directorio o un conjunto anidado de directorios.  

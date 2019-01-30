@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d76548ad85a02df6e2217b28535d268d7823be70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3bd0ee2d1149e2f2fa231b407c8ce2717beb3953
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895512"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967500"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn y ThreadOff
 Los subcomandos **ThreadOff** y **ThreadOn** de *VSPerfCmd.exe* solo están disponibles en las sesiones de generación de perfiles de la línea de comandos en las que se usa el método de instrumentación. **ThreadOff** y **ThreadOn** pausan y reanudan la generación de perfiles para el subproceso especificado. **ThreadOff** detiene la generación de perfiles del subproceso y **ThreadOn** la inicia.  

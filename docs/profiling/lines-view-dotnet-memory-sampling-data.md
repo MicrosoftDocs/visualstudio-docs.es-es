@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6631ab87-0e62-4c76-a063-4ea7222b07da
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe56df4f2984d5d354924b3e897b01f71b43e76d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d49cba09d5ca9f7a3a88d2b585937b50a2c5aa1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925893"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033082"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Vista Líneas: datos de muestreo de memoria de .NET
 La vista Líneas para los datos de generación de perfiles de asignación de memoria .NET que usa el método de muestreo enumera las instrucciones que asignaron memoria durante la ejecución de la generación de perfiles. Las columnas también incluyen el número de asignaciones y su tamaño.  

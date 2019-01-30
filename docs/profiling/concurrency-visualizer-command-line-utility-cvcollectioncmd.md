@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3627398d4a0b7d069b626ee8dc2b9e95ab81d10c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986848"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013072"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de la línea de comandos del visualizador de simultaneidad (CVCollectionCmd)
 Se puede usar la utilidad de la línea de comandos (*CVCollectionCmd.exe*) del Visualizador de simultaneidad para recopilar seguimientos desde la línea de comandos de manera que los pueda ver en el Visualizador de simultaneidad para Visual Studio. Las herramientas se pueden usar en equipos que no tengan instalado Visual Studio.  
