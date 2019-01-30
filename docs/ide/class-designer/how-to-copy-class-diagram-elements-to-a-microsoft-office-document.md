@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c29a3c167f6bf8f0588f94f3ed843d15bc02bc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f1b105f0e5cc566acb09d999c2341e4edaf0692
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991325"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Procedimiento Copiar elementos de un diagrama de clases en un documento de Microsoft Office
 
