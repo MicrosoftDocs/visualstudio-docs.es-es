@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d81bbc96e2191d7e637c63a3d28364f957ed5e55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d6e11d7c160537f795a5af188f02ebb2a559c4b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950860"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012071"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Procedimiento Crear un sombreador de color básico
 

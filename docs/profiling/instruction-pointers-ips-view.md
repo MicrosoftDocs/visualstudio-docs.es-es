@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5e26e0fd-383b-4fb6-a29d-a458d8232828
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67e890b725ecc9ed13490d9b874ebf45086044fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c673a362cfa48e41c82518da50f489422ea480fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994282"
 ---
 # <a name="instruction-pointers-ips-view"></a>Vista Punteros de instrucciones (IP)
 La vista Punteros de instrucción permite ver instrucciones concretas que se ejecutan durante la generación de perfiles de muestreo.  

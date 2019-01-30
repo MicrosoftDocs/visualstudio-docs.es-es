@@ -2,22 +2,22 @@
 title: Paso 3 del tutorial de Python en Visual Studio, Ventana interactiva de REPL
 titleSuffix: ''
 description: Paso 3 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, que trata sobre la ventana interactiva REPL de Python.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf51a53301ad65debe2bb69d33ce8a159aa9612f
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986835"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231888"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Paso 3: Uso de la ventana interactiva de REPL
 
@@ -74,7 +74,7 @@ La ventana **interactiva** de Visual Studio para Python proporciona una experien
     ![Edición de una instrucción anterior en la ventana interactiva](media/vs-getting-started-python-16-interactive6.png)
 
 1. Repita el proceso para experimentar con valores de paso diferentes hasta que encuentre el que más le guste. También puede hacer que se repita la onda si amplía el intervalo, por ejemplo, `range(0, 1800, 12)`.
- 
+
 1. Cuando esté satisfecho con el código escrito en la ventana **interactiva**, selecciónelo, haga clic con el botón derecho, seleccione **Copiar código** (**Ctrl**+**Mayús**+**C**) y péguelo en el editor. Observe que esta característica especial de Visual Studio omite automáticamente cualquier salida y los símbolos `>>>` y `...`. Por ejemplo, en la imagen siguiente se muestra el uso del comando **Copiar código** en una selección que incluye los símbolos y la salida:
 
     ![Comando Copiar código de la ventana interactiva en una selección con símbolos y salida](media/vs-getting-started-python-17-interactive7.png)

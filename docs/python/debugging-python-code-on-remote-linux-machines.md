@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eaeb13a087723b10098c9cfe6f75f3be2aad351e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6681e3e1a1e04468d00c3b2087d5914cf0e71b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964895"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015347"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Depurar código de Python en Linux de forma remota
 
@@ -66,7 +66,7 @@ Para obtener detalles sobre cómo crear una regla de firewall para una máquina 
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Instale el paquete `ptvsd` en su entorno mediante `pip3 install ptvsd`. 
+1. Instale el paquete `ptvsd` en su entorno mediante `pip3 install ptvsd`.
    >[!NOTE]
    >Es buena idea registrar la versión de ptvsd que se instala en caso de necesitarla para solucionar problemas; la [lista de ptvsd](https://pypi.python.org/pypi/ptvsd) también muestra las versiones disponibles.
 

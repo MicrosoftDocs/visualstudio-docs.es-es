@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fd9e4225-68cb-4608-8b27-468b0218c936
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e0a0e4feaaa3aca4a1f6bfb367644bbfabac5e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfa56e76c3bd31572385499dd5055fd63f359a8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844150"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948237"
 ---
 # <a name="setenv-task"></a>Tarea SetEnv
 Establece o elimina el valor de una variable de entorno especificada.  
