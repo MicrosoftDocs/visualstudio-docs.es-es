@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b1dfb467-f3d3-47f3-83ef-af7b0e33a772
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63c8b6c0834f427103240ae0b9d11f5958d1b41c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce88efd0c2fd116d0f8008ead45a82d0ce68a4ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822591"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022461"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath (Tarea)
 La tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> devuelve el directorio del runtime [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] actual.  

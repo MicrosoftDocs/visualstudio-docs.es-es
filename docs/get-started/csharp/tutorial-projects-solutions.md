@@ -7,17 +7,17 @@ ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba7bb7452fd86da4ab449c61c41dc27c865070c3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3ebc53148e40be1285c554526743c4950465c3a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738996"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983409"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>Información sobre proyectos y soluciones con C#
 

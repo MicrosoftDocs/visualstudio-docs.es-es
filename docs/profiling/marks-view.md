@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e162e234a5f0596073df12f7791cdb3e3126cf9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 799185aa3ea1caa84c64d2887506d666fdc68577
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873888"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996381"
 ---
 # <a name="marks-view"></a>Vista Marcas
 En la vista Marcas se muestran eventos ETW y de muestreo que se insertaron en la aplicación.  

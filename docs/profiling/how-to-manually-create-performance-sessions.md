@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ee2b3e0c-0990-46d9-8de6-c29fa386b15b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c186fdd2c54697b5cda7845547eb33f3fca16ded
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e283128d17d088ed9d90597ccde24bcb22470b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819684"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035619"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Procedimiento Crear manualmente sesiones de rendimiento
 Puede crear manualmente una sesión de rendimiento. No es necesario abrir un proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para ello. Para obtener más información, vea [Configuración sesiones de rendimiento](../profiling/configuring-performance-sessions.md).  
