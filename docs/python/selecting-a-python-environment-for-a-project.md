@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c37492bfe514536ff94cf8c51a616e2df69b891e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879363"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010212"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Cómo seleccionar un entorno de Python para un proyecto
 
@@ -46,7 +46,7 @@ El menú contextual del nodo **Entornos de Python** también proporciona comando
 
 ## <a name="use-virtual-environments"></a>Uso de entornos virtuales
 
-Un entorno virtual es una combinación única de un intérprete de Python específico y un conjunto de bibliotecas específico distinto de otros entornos globales y de conda. Un entorno virtual es específico a un proyecto y se mantiene en una carpeta de proyecto. Esta carpeta contiene las bibliotecas instaladas del entorno junto con un archivo *pyvenv.cfg* que especifica la ruta de acceso al *intérprete básico* de ese entorno en otra parte del sistema de archivos. (Es decir, un entorno virtual no contiene una copia del intérprete, solo un vínculo a él). 
+Un entorno virtual es una combinación única de un intérprete de Python específico y un conjunto de bibliotecas específico distinto de otros entornos globales y de conda. Un entorno virtual es específico a un proyecto y se mantiene en una carpeta de proyecto. Esta carpeta contiene las bibliotecas instaladas del entorno junto con un archivo *pyvenv.cfg* que especifica la ruta de acceso al *intérprete básico* de ese entorno en otra parte del sistema de archivos. (Es decir, un entorno virtual no contiene una copia del intérprete, solo un vínculo a él).
 
 Una ventaja de usar un entorno virtual es que a medida que el proyecto se desarrolla a lo largo del tiempo, el entorno virtual siempre refleja las dependencias exactas del proyecto. (Por otra parte, un entorno global compartido, contiene cualquier número de bibliotecas independientemente de si se usan en el proyecto o no). A continuación, puede crear fácilmente un archivo *requirements.txt* desde el entorno virtual, que después se usa para volver a instalar esas dependencias en otro equipo de desarrollo o producción. Para más información, consulte [Administración de los paquetes necesarios con requirements.txt](managing-required-packages-with-requirements-txt.md).
 
