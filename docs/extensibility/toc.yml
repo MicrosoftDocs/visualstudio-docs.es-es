@@ -380,7 +380,45 @@ items:
 - name: Extensibilidad de proyectos de Visual Studio C++
   href: visual-cpp-project-extensibility.md
 - name: Instrucciones para la experiencia de usuario de Visual Studio
-  href: ux-guidelines/toc.yml
+  href: ux-guidelines/visual-studio-user-experience-guidelines.md
+  items:
+  - name: Conceptos básicos de UX
+    href: ux-guidelines/ux-essentials-for-visual-studio.md
+  - name: Fuentes y formato
+    href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
+  - name: Colores y estilos
+    href: ux-guidelines/colors-and-styling-for-visual-studio.md
+    items:
+    - name: Colores compartidos
+      href: ux-guidelines/shared-colors-for-visual-studio.md
+    - name: Referencia de valor de color
+      href: ux-guidelines/color-value-reference-for-visual-studio.md
+  - name: Imágenes e iconos
+    href: ux-guidelines/images-and-icons-for-visual-studio.md
+    items:
+    - name: Diccionario del lenguaje visual
+      href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
+  - name: Menús y comandos
+    href: ux-guidelines/menus-and-commands-for-visual-studio.md
+  - name: Patrones de interacción
+    href: ux-guidelines/interaction-patterns-for-visual-studio.md
+    items:
+    - name: Patrones de aplicación
+      href: ux-guidelines/application-patterns-for-visual-studio.md
+    - name: Patrones de control comunes
+      href: ux-guidelines/common-control-patterns-for-visual-studio.md
+    - name: Patrones compuestos
+      href: ux-guidelines/composite-patterns-for-visual-studio.md
+  - name: Texto de UI y ayuda
+    href: ux-guidelines/ui-text-and-help-for-visual-studio.md
+  - name: Diseño de cuadros de diálogo
+    href: ux-guidelines/layout-for-visual-studio.md
+  - name: Notificaciones y progreso
+    href: ux-guidelines/notifications-and-progress-for-visual-studio.md
+  - name: Animaciones
+    href: ux-guidelines/animations-for-visual-studio.md
+  - name: Herramientas de evaluación
+    href: ux-guidelines/evaluation-tools-for-visual-studio.md
 - name: Solución de problemas de PPP
   href: addressing-dpi-issues2.md
 - name: Catálogo y servicio de imágenes
@@ -743,9 +781,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Referencia de versión del paquete de Roslyn
     href: roslyn-version-support.md
-ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 14efc710953d669b51b275226885eb9d0f5bbe50
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562365"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232005"
