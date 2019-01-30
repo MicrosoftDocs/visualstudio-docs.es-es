@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8077b08765e1db372ec9f19c39e62f10dd2c285a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935468"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069920"
 ---
 # <a name="exploration-bounds"></a>Límites de exploración
 
@@ -106,7 +106,7 @@ Por ejemplo, cada ruta del siguiente código consume n+1 condiciones:
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -144,10 +144,10 @@ El número máximo de rutas únicas que IntelliTest considerará durante una exp
 
 La motivación para este límite de exploración es que cualquier código que contiene bucles o recursividad pueda tener un número infinito de rutas de ejecución y, por lo tanto, IntelliTest debe limitarse durante la [generación de entradas](input-generation.md).
 
-Las dos opciones **MaxRuns** y **MaxRunsWithUniquePaths** se relacionan de la manera siguiente: 
+Las dos opciones **MaxRuns** y **MaxRunsWithUniquePaths** se relacionan de la manera siguiente:
 
 * IntelliTest llamará a un método de prueba parametrizado hasta **MaxRuns** veces con diferentes entradas de prueba.
-* Si el código de prueba es determinista, IntelliTest tomará una ruta de ejecución diferente cada vez. En cambio, en determinadas condiciones el código ejecutado puede seguir una ruta de ejecución que ya haya tomado antes, con entradas diferentes. 
+* Si el código de prueba es determinista, IntelliTest tomará una ruta de ejecución diferente cada vez. En cambio, en determinadas condiciones el código ejecutado puede seguir una ruta de ejecución que ya haya tomado antes, con entradas diferentes.
 * IntelliTest cuenta el número de rutas de ejecución únicas que detecta; este número está limitado mediante la opción **MaxRunsWithUniquePaths**.
 
 <a name="maxexceptions"></a>

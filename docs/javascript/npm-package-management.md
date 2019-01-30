@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bae9beac69daf78bfd6a8604c4364af857dff0a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4f04d1d919123bca787c6175696224042f79725
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845959"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948211"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Administrar paquetes de npm en Visual Studio
 
@@ -36,7 +36,7 @@ La manera más sencilla de instalar paquetes de npm es a través de la ventana d
 
 ![Instalación del nuevo paquete de npm desde el Explorador de soluciones](../javascript/media/solution-explorer-install-package.png)
 
-En esta ventana puede buscar un paquete, especificar opciones e instalar. 
+En esta ventana puede buscar un paquete, especificar opciones e instalar.
 
 ![Búsqueda del paquete de npm](../javascript/media/search-package.png)
 
@@ -73,10 +73,10 @@ También puede usar el comando `.npm` en la ventana interactiva de Node.js para 
 En la ventana, puede usar comandos como los siguientes para instalar un paquete:
 
 `.npm install azure@4.2.3`
- 
+
  > [!Tip]
- > De forma predeterminada, npm se ejecuta en el directorio de inicio del proyecto. Si tiene varios proyectos en la solución, especifique el nombre o la ruta de acceso del proyecto entre paréntesis. 
+ > De forma predeterminada, npm se ejecuta en el directorio de inicio del proyecto. Si tiene varios proyectos en la solución, especifique el nombre o la ruta de acceso del proyecto entre paréntesis.
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > Si el proyecto no contiene un archivo package.json, use `.npm init -y` para crear un archivo package.json con entradas predeterminadas. 
+ > Si el proyecto no contiene un archivo package.json, use `.npm init -y` para crear un archivo package.json con entradas predeterminadas.

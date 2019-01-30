@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3425573d1ee60ce5a4f96d5762b353afa18dc9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2af20a0a50e9405cf7df2fb97aa38cfa6be5c50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827106"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042795"
 ---
 # <a name="prerequisites-dialog-box"></a>Cuadro de diálogo Requisitos previos
 

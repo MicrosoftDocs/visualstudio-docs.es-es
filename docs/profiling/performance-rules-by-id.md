@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9a1c934c-4798-4df9-a8ef-eb17ef06b6a2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f73285ab62f59b382d3571ad739a81360c2e42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ccb684de1bf45f1f9afd13f1b2dd454b94f89fc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846813"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935116"
 ---
 # <a name="performance-rules-by-id"></a>Reglas de rendimiento por identificador
 

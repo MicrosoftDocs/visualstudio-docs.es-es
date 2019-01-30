@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9395f576e942e799312dad2e22be79942110a8ae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0c0371992bde7b7ac58551457fa81e2b18a8f56
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967805"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006989"
 ---
 # <a name="cvcreatemarkerseries-function"></a>Función CvCreateMarkerSeries
 Crea series de marcadores para un proveedor determinado.  

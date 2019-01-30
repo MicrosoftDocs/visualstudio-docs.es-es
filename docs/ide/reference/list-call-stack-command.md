@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 066bf09da72f0f0bee91057c9547e5d3b2daf774
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4442b5c7275bd7733f4d5a49c4ac3baf0b92c1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929690"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007469"
 ---
 # <a name="list-call-stack-command"></a>Mostrar pila de llamadas (Comando)
 Muestra la pila de llamadas actual.

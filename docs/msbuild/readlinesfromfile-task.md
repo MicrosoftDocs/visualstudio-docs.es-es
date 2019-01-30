@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a18af929-b53a-4d9e-b7bf-e3d3737ee85f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4062f8bb2620dfcd3d8cf8c3406bcd10f16578
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c304f4c3f0a3bda805e8e32dc06c9ab0f370690
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885671"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021158"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile (tarea)
 Lee una lista de elementos de un archivo de texto.  

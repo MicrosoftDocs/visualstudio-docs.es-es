@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ef4f6259-a110-43b6-a325-364154e1ba00
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c46404eba23c2e80a18232d01ff7a58fb92070c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9372e4ae27142fa31beb2a4fb8730b64f025cbdf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938334"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019572"
 ---
 # <a name="report-based-on-visible-time-range"></a>Informe basado en el intervalo de tiempo visible
 La vista Perfil muestra los informes que se basan en los canales y el intervalo de tiempo visible en ese momento. Para ver detalles de los diferentes subconjuntos de datos, haga clic en los elementos de la leyenda.  

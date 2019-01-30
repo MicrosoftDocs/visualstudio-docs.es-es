@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: ef064995-3b84-4698-a708-9689b7723533
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e246d31a3c3126f28cd6be383b368a1373118504
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 513cd8295a3e25a171de6623ba706ce7dfb2a2e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916814"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962110"
 ---
 # <a name="neutral-resources-languages-for-localization"></a>Idiomas de los recursos neutros para la localización
 

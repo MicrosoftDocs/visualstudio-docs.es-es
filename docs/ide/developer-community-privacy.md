@@ -8,15 +8,15 @@ helpviewer_keywords:
 - privacy, developer community
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c98747a4ad1d37d7a8b0d8cc51b4e1ddbd851663
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24ac5c42f91e7dbf4dac310d67fc710f75fc8309
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895771"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986857"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 
