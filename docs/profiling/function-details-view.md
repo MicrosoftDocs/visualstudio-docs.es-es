@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba470b4ec9ef3bc52f9c7250649fc098c999149
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3d54a1d3484d2e908c808a71358234f34a9972a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945345"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941437"
 ---
 # <a name="function-details-view"></a>Vista Detalles de la función
 La ventana de **Vista Detalles de la función** muestra la siguiente información:  

@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23e57e8bbd87f365ce1c8dcaf1d420059e16cf21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922025"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027924"
 ---
 # <a name="lib-task"></a>LIB (tarea)
 Incluye la herramienta de Microsoft Administrador de bibliotecas de 32 bits, *lib.exe*. El Administrador de bibliotecas crea y administra una biblioteca de archivos objeto con formato de archivo de objeto común (COFF). El Administrador de bibliotecas también puede crear archivos de exportación y bibliotecas de importación para hacer referencia a las definiciones que se exportan. Para obtener más información, vea [Referencia de LIB](/cpp/build/reference/lib-reference) y [Ejecutar LIB](/cpp/build/reference/running-lib).  

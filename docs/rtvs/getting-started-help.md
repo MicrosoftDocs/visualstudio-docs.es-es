@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: cd8be6e0b89ae0e110e16bcad9975108fa69bd5b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 953233d9a1260d5cbe504c8caa9dbc23a0e4700d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931926"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023985"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Ayuda de Herramientas de R para Visual Studio
 
