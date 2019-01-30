@@ -23,13 +23,13 @@ description: Obtenga información sobre cómo actualizar el producto gratuito Do
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7c4c6069c68708d869d58dfe60aa226983afcf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 62a9273ef55a84c26714d2ad2ea1ebb7efe94319
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871877"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034147"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Actualizar Dotfuscator Community Edition (CE)
 

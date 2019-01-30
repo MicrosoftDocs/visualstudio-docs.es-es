@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398304"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959728"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 
@@ -47,7 +47,7 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Después de ordenar:
 
    ```csharp
@@ -58,7 +58,7 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Separar grupos de directivas using
 
    Cuando se selecciona, el comando **Eliminar y ordenar instrucciones Using** en el menú contextual separa las directivas `using` al insertar una línea vacía entre los grupos de directivas con el mismo espacio de nombres raíz.
@@ -73,28 +73,28 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Después de ordenar:
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Sugerir usos para tipos de ensamblados de referencia 
-- Sugerir usos para tipos de paquetes NuGet 
+
+- Sugerir usos para tipos de ensamblados de referencia
+- Sugerir usos para tipos de paquetes NuGet
 
    Cuando se seleccionan estas opciones, una [acción rápida](../quick-actions.md) se encuentra disponible para instalar un paquete NuGet y agregar una directiva `using` para tipos sin referencia.
 
    ![Acción rápida para instalar el paquete NuGet en Visual Studio](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Resaltado
 
 - Resaltar referencias al símbolo bajo el cursor

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84f169d221ad8e6920844f2ccc2675277bb4af74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ebb74c201a730ffe256670b936ef2a886a24e95
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869838"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941593"
 ---
 # <a name="message-task"></a>Message (tarea)
 Registra un mensaje durante una compilación.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5797d004-2325-46cf-bbf3-6739a15958ec
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4c9eeffe2ac0a3b08d8379a50bb88e3c52cbfe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 332202d5062b081227619f4007e011f611b6192e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988915"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036945"
 ---
 # <a name="average-cpu-utilization"></a>Uso medio de la CPU
 Muestra el uso medio por parte del proceso para el que se generan perfiles de los núcleos lógicos del sistema mientras dura el proceso. El gráfico no muestra qué núcleo concreto está activo en un momento determinado. Por ejemplo, si dos núcleos se están ejecutando cada uno al 50 % de su capacidad en un período de tiempo determinado, esta vista mostrará que se está utilizando un núcleo lógico.  

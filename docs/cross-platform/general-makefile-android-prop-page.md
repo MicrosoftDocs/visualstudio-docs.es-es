@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: f76d717c-56ed-4373-8cf9-9bd1a053a4cd
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCConfiguration.OutputDirectory
 - VC.Project.VCConfiguration.IntermediateDirectory
@@ -15,12 +15,12 @@ f1_keywords:
 - VC.Project.VCConfiguration.ConfigurationType
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5ac5c50a1bf7c6f0d9046f136ad821370b59ad0a
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: ee398add6b0cca8288d82cd090e1abef07a40d23
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252315"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041768"
 ---
 # <a name="general-project-properties-android-c-makefile"></a>Propiedades de proyectos generales (archivos Make de C++ para Android)
 

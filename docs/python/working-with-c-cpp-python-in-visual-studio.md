@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96921c3b711fa1f2d01bee343d68891cf246bc6b
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: cd0e2079edde74155d38646fa5e22b6a11c1c7fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315636"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032428"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 
@@ -323,7 +323,7 @@ El método alternativo, que se describe en los pasos siguientes, instala el mód
 
     setup(
         name = 'superfastcode2',
-        version = '1.0',    
+        version = '1.0',
         description = 'Python package with superfastcode2 C++ extension (PyBind11)',
         ext_modules = [sfc_module],
     )
@@ -409,7 +409,7 @@ Existen diversos métodos para crear extensiones de Python, como se describe en 
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Sin compilación, amplia disponibilidad. | El acceso y la mutación de estructuras de C son complicados y propensos a errores. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generar enlaces para muchos lenguajes a la vez. | Sobrecarga excesiva si Python es el único destino. |
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Facilidad de integración, compatibilidad con PyPy. | Más reciente, menos maduro. |
-| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Similar a cffi con C++. | Más reciente, puede tener algunos problemas con Visual Studio 2017. |  
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Similar a cffi con C++. | Más reciente, puede tener algunos problemas con Visual Studio 2017. |
 
 ## <a name="see-also"></a>Vea también
 

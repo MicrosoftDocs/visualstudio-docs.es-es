@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f7f3cc2d39a28052a0f34eed8ab36d224d4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d01686d3e0bbc034095ae1b4ec54e5995fc6462f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934364"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958737"
 ---
 # <a name="overview-report-a-problem"></a>Información general: Notificar un problema
 
@@ -63,7 +63,7 @@ Después de notificar un problema, los estados indican en qué punto de su ciclo
 
 - - -
 
-![Estado Cerrado: corregido de los informes de problemas en la Comunidad de desarrolladores](../ide/media/ProblemStates/ClosedFixed.jpg) 
+![Estado Cerrado: corregido de los informes de problemas en la Comunidad de desarrolladores](../ide/media/ProblemStates/ClosedFixed.jpg)
 
 **Cerrado: corregido** indica que hemos publicado una corrección para el problema. El problema ahora también tiene una etiqueta "corregido en:" que especifica la versión de lanzamiento.
 

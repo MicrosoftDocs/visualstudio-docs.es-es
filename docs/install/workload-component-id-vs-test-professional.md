@@ -5,7 +5,7 @@ description: Uso de identificadores de componente y carga de trabajo de Visual S
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.workload:
 - multiple
-ms.openlocfilehash: d166a0e0c2d21b9df80cce046d81b92806e16f87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8cfeceecabb2e322e23de4d2c85196b1fc9e045
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937600"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942239"
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Directorio de componentes de Visual Studio Test Professional 2017
 
