@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42beee330bcd8ab6003bd44277b77063937cf2d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 806fcb9ee4dd078301095192df8cb143cc085161
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955190"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021513"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procedimiento Agregar o quitar espacios de nombres importados (Visual Basic)
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e292de3e-7482-4426-83ce-d921061808bf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ec28617c66b4fc3b759f3ba1b491a20217c70a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a43060f05caf0cb0ae076df9b53c7b2263c12bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937535"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037296"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile (tarea)
 Busca el archivo *app.config*, si hay alguno, en las listas proporcionadas.  
