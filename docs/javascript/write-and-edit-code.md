@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 4c272ba3009f3a9e947563cfa8c65843eab57067
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398291"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034134"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 029d5ebb-e551-46b0-b64e-2c553d9dbb8e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f45c2437a1bf1f5d0c81d91bced3f26a6faaad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4bf90e28fec2c97c4dbdc5d90bb78ffed4020970
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942585"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948744"
 ---
 # <a name="functions-view---sampling-data"></a>Vista Funciones: datos de muestreo
 La vista de informe de funciones para el método de perfiles de muestreo enumera las funciones que se muestrearon durante la ejecución de generación de perfiles.  
