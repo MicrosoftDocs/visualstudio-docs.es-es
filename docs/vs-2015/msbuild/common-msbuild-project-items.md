@@ -1,14 +1,9 @@
 ---
 title: Elementos comunes de proyectos de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d4975390802c8a04459750be5e5405bd17c3a68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796882"
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 |Nombre del elemento|Descripción|  
 |---------------|-----------------|  
 |HintPath|Cadena opcional. Ruta de acceso absoluta o relativa del ensamblado.|  
-|Name|Cadena opcional. Nombre para mostrar del ensamblado, por ejemplo, "System.Windows.Forms".|  
+|nombre|Cadena opcional. Nombre para mostrar del ensamblado, por ejemplo, "System.Windows.Forms".|  
 |FusionName|Cadena opcional. Especifica el nombre de fusión sencillo o seguro del elemento.<br /><br /> Cuando este atributo está presente se ahorra tiempo, ya que no es necesario abrir el archivo de ensamblado para obtener el nombre de fusión.|  
 |SpecificVersion|Booleano opcional. Especifica si solo se debe hacer referencia a la versión del nombre de fusión.|  
 |Alias|Cadena opcional. Cualquier alias de la referencia.|  
@@ -54,8 +49,8 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
   
 |Nombre del elemento|Descripción|  
 |---------------|-----------------|  
-|Name|Cadena opcional. El nombre para mostrar del componente.|  
-|Guid|Cadena opcional. GUID del componente, con el formato {12345678-1234-1234-1234-1234567891234}.|  
+|nombre|Cadena opcional. El nombre para mostrar del componente.|  
+|GUID|Cadena opcional. GUID del componente, con el formato {12345678-1234-1234-1234-1234567891234}.|  
 |VersionMajor|Cadena opcional. Parte principal del número de versión del componente. Por ejemplo, "5" si el número de versión completo es "5.46".|  
 |VersionMinor|Cadena opcional. Parte secundaria del número de versión del componente. Por ejemplo, "46" si el número de versión completo es "5.46".|  
 |LCID|Cadena opcional. LocaleID del componente.|  
@@ -74,7 +69,7 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
   
 |Nombre del elemento|Descripción|  
 |---------------|-----------------|  
-|Name|Cadena necesaria. Nombre base del archivo de manifiesto.|  
+|nombre|Cadena necesaria. Nombre base del archivo de manifiesto.|  
 |HintPath|Cadena necesaria. Ruta de acceso relativa del archivo de manifiesto.|  
   
 ### <a name="projectreference"></a>ProjectReference  
@@ -82,8 +77,8 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
   
 |Nombre del elemento|Descripción|  
 |---------------|-----------------|  
-|Name|Cadena opcional. Nombre para mostrar de la referencia.|  
-|Project|Cadena opcional. GUID de la referencia, con el formato {12345678-1234-1234-1234-1234567891234}.|  
+|nombre|Cadena opcional. Nombre para mostrar de la referencia.|  
+|Proyecto|Cadena opcional. GUID de la referencia, con el formato {12345678-1234-1234-1234-1234567891234}.|  
 |Package|Cadena opcional. Ruta de acceso del archivo de proyecto al que se hace referencia.|  
   
 ### <a name="compile"></a>Compile  
@@ -106,12 +101,12 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 |Generator|Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
 |LastGenOutput|Cadena necesaria. Nombre del archivo creado por cualquier generador de archivos que se ejecutó en este elemento.|  
 |CustomToolNamespace|Cadena necesaria. Espacio de nombres en el que cualquier generador de archivos que se ejecute en este elemento debe crear código.|  
-|Link|Cadena opcional. La ruta de acceso notacional se muestra si el archivo se encuentra físicamente fuera de la influencia del proyecto.|  
+|Vínculo|Cadena opcional. La ruta de acceso notacional se muestra si el archivo se encuentra físicamente fuera de la influencia del proyecto.|  
 |Visible|Booleano opcional. Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Always<br />3.  PreserveNewest|  
 |LogicalName|Cadena necesaria. Nombre lógico del recurso incrustado.|  
   
-### <a name="content"></a>Content  
+### <a name="content"></a>Contenido  
  Representa archivos que no están compilados en el proyecto pero que podrían incrustarse o publicarse junto con él.  
   
 |Nombre del elemento|Descripción|  
@@ -135,7 +130,7 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 |Generator|Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
 |LastGenOutput|Cadena necesaria. Nombre del archivo creado por cualquier generador de archivos que se ejecutó en este elemento.|  
 |CustomToolNamespace|Cadena necesaria. Espacio de nombres en el que cualquier generador de archivos que se ejecute en este elemento debe crear código.|  
-|Link|Cadena opcional. Ruta de acceso notacional que se mostrará si el archivo se encuentra físicamente fuera de la influencia del proyecto.|  
+|Vínculo|Cadena opcional. Ruta de acceso notacional que se mostrará si el archivo se encuentra físicamente fuera de la influencia del proyecto.|  
 |Visible|Booleano opcional. Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Always<br />3.  PreserveNewest|  
   
@@ -150,6 +145,3 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
   
 ## <a name="see-also"></a>Vea también  
  [Propiedades comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-properties.md)
-
-
-

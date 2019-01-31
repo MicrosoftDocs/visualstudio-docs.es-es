@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c19d70817588a40ced0d57a6753cf52803a353
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5ca047f29f1112fc551188548dc98c60885f83d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896375"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019442"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Procedimiento Filtrar vistas de informe desde la escala de tiempo de resumen
 Puede filtrar los datos que aparecen en los informes de rendimiento si especifica un segmento de tiempo en el gráfico de escala de tiempo de la vista de resumen. Al filtrar los informes, el archivo de datos de generación de perfiles se vuelve a analizar para incluir solamente el segmento de tiempo especificado.  

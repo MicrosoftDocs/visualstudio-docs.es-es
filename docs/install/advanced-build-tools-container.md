@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fa07228c0df8e02f5f3a53895c516e9d679d3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0db5e5093ade9ce4853e71c63cbafef1b649562f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916658"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028392"
 ---
 # <a name="advanced-example-for-containers"></a>Ejemplo avanzado de contenedores
 

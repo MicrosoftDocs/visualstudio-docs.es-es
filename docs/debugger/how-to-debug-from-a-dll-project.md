@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6061d2c05ff6946cd323dd2292e46c6b7d07e713
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854079"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029497"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedimiento Depurar desde un proyecto DLL en Visual Studio (C#, C++, Visual Basic, F#)
 

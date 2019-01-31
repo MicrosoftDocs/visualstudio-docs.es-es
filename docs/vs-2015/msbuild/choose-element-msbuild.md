@@ -1,14 +1,9 @@
 ---
 title: Elemento Choose (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Choose
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c5fe8ede508f82984bb3101ecb74cb2ed3e7626
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 244c4009c69dfaf66116dd0e9d5acf3258fd6eb5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758613"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -130,6 +125,3 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
 ## <a name="see-also"></a>Vea también  
  [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md)   
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

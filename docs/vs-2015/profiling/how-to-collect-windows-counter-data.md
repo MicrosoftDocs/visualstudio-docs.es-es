@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Recopilar datos de contadores de Windows | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Recopilar datos de contadores de Windows | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.syscounter
 - vs.performance.property.wincounter
@@ -20,15 +15,15 @@ ms.assetid: db4fbac2-bea5-4558-aa8b-160fcccf4b33
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 030a36f2f09465b29faf23b1fc05ad13f4a01326
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2c3e4a9cffd81561af39cef5eb88f4a7745b2dad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770492"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753421"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>Cómo: Recopilar datos de contadores de Windows
+# <a name="how-to-collect-windows-counter-data"></a>Procedimiento Recopilar datos de contadores de Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los contadores de Windows son contadores de rendimiento del sistema que se pueden recopilar durante la generación de perfiles a intervalos establecidos. En la vista Marcas del informe de herramientas de generación de perfiles, aparece una fila **AutoMark** para cada intervalo de la colección. La fila contiene columnas que describen los valores de contador de rendimiento en ese intervalo. Para restringir el análisis a un período de tiempo entre dos marcas concretas, seleccione las marcas, haga clic con el botón derecho y después seleccione **Filtrar por** ->  **marcas** en el menú contextual.  
@@ -62,6 +57,3 @@ Los contadores de Windows son contadores de rendimiento del sistema que se puede
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)   
  [Contadores de Windows y de CPU](../profiling/cpu-and-windows-counters.md)
-
-
-

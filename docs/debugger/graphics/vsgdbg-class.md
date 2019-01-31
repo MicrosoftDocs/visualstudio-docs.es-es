@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f457d35725a0a6041fe82b06853a6dffdf69b53d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9235adfdf99bd898f8dcd074a3a3cd169161acf7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922460"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018701"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg (Clase)
 Representa una interfaz para el control mediante programación del componente de aplicación de diagnóstico de gráficos.  

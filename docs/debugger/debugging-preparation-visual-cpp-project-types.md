@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd76689d52bce7f77f61d7998eec683abec30555
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 223a04eada43d9ca69bf5f2d6b5a36ce2d7a5933
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968159"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979171"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Preparación de la depuración: Tipos de proyecto de Visual C++
 En esta sección se describe cómo depurar los tipos de proyectos básicos creados mediante las plantillas de proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].  

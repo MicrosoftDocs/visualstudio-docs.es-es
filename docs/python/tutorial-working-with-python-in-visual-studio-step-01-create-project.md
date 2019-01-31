@@ -2,22 +2,22 @@
 title: Paso 1 del tutorial de Python en Visual Studio, Creación de un proyecto
 titleSuffix: ''
 description: Información general y paso 1 de un tutorial básico de las funcionalidades de Python en Visual Studio, incluidos los requisitos previos y la creación de un proyecto de Python.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc6f831d30f578cb03bbb760da410aefff312e99
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916051"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231875"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Uso de Python en Visual Studio
 
@@ -61,7 +61,7 @@ En este tutorial, empezará con un proyecto simple que contiene un único archiv
 
     (1) El proyecto está resaltado en negrita. Tiene el nombre que le ha asignado en el cuadro de diálogo **Nuevo proyecto**. En el disco, este proyecto se representa mediante un archivo *.pyproj* en la carpeta del proyecto.
 
-    (2) En el nivel superior se encuentra una *solución*, que de forma predeterminada tiene el mismo nombre que el proyecto. Una solución, representada por un archivo *.sln* en el disco, es un contenedor para uno o más proyectos relacionados. Por ejemplo, si escribe una extensión de C++ para la aplicación de Python, ese proyecto de C++ puede residir dentro de la misma solución. La solución también podría contener un proyecto para un servicio web, junto con proyectos para programas de prueba dedicados. 
+    (2) En el nivel superior se encuentra una *solución*, que de forma predeterminada tiene el mismo nombre que el proyecto. Una solución, representada por un archivo *.sln* en el disco, es un contenedor para uno o más proyectos relacionados. Por ejemplo, si escribe una extensión de C++ para la aplicación de Python, ese proyecto de C++ puede residir dentro de la misma solución. La solución también podría contener un proyecto para un servicio web, junto con proyectos para programas de prueba dedicados.
 
     (3) Bajo el proyecto verá los archivos de código fuente, en este caso, un solo archivo *.py*. Al seleccionar un archivo, se muestran sus propiedades en la ventana **Propiedades**. Si hace doble clic en un archivo, se abrirá de la manera más adecuada.
 

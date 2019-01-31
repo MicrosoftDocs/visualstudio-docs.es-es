@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1cf68af84556a76c29417c9bd56894a70f12ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821197"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997330"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Creación de vistas personalizadas de objetos nativos en el depurador
 
@@ -26,10 +26,6 @@ Visual Studio *Natvis* framework personaliza la forma en que los tipos nativos a
 
 Natvis sustituye el *autoexp.dat* archivo en versiones anteriores de Visual Studio con sintaxis XML, mejores diagnósticos, control de versiones y varios archivos de soporte técnico.  
 
-Natvis no funciona para:
-
-- Proyectos de escritorio de Windows de C++ con **tipo de depurador** establecido en **mixto** en **propiedades de configuración** > **depuración**. 
-- [Depuración en modo mixto](how-to-debug-in-mixed-mode.md) para aplicaciones de escritorio de Windows en modo de compatibilidad administrado (**herramientas** > **opciones** > **depuración**  >  **General** > **usar el modo de compatibilidad administrado**).
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Visualizaciones de Natvis
 

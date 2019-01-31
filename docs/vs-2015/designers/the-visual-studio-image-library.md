@@ -1,13 +1,9 @@
 ---
 title: Biblioteca de imágenes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 helpviewer_keywords:
 - animation [Visual Studio]
 - graphics [Visual Studio], Image Library
@@ -20,13 +16,13 @@ ms.assetid: f7a2e7c8-3b9f-4f8e-a6a8-000d72e3811d
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2f82b8bae9bf983ede20e0fca24e635288c15cea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8ce131e91a6eb4f8f5ed36701d71000763df29b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753846"
 ---
 # <a name="the-visual-studio-image-library"></a>Biblioteca de imágenes de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8fb4ff42-b8eb-4152-b49e-b802d194b05e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ce767465262533e1122a58bb4c51dd6caf0c5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e819759494efdee16cdf3a5dd41dcc65aa4590d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874280"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005389"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Dónde buscar códigos de error de Win32
 El archivo WINERROR.H, situado en el directorio INCLUDE de la instalación predeterminada del sistema, contiene las definiciones de código de error para las funciones de la API Win32.  

@@ -12,24 +12,24 @@ helpviewer_keywords:
 ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e752160c7406f858a2aa370a542efe14eb82e3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dcb25faba045f9af9a00bd544ae4031e9da239a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931108"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985060"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Selección de una estrategia de implementación de ClickOnce
 Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]; la estrategia que elija depende principalmente del tipo de aplicación que vaya a implementar. Las tres estrategias de implementación son las siguientes:  
   
--   Instalación desde Internet o un recurso compartido de red  
+-   Instalar desde el Web o un recurso compartido de red  
   
 -   Instalar desde un CD  
   
--   Inicio de la aplicación desde Internet o un recurso compartido de red  
+-   Iniciar la aplicación desde el Web o desde un recurso compartido de red  
   
     > [!NOTE]
     >  Además de seleccionar una estrategia de implementación, también seleccionará una estrategia para proporcionar actualizaciones de la aplicación. Para obtener más información, consulte [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  

@@ -1,22 +1,22 @@
 ---
 title: Administración de proyectos de aplicación de Python
 description: Los proyectos de Visual Studio administran las dependencias entre los archivos y la complejidad de las relaciones en una aplicación.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825297"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231940"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
@@ -113,7 +113,7 @@ Los archivos vinculados se omiten en cualquiera de las condiciones siguientes:
 
 Para agregar un elemento existente como un vínculo, haga clic con el botón derecho en la carpeta donde desea agregar el archivo, seleccione **Agregar** > **Elemento existente**. En el cuadro de diálogo que aparece, seleccione un archivo y pulse **Agregar como vínculo** en la lista desplegable del botón **Agregar**. Siempre que no haya ningún archivo en conflicto, este comando crea un vínculo en la carpeta seleccionada. Sin embargo, el vínculo no se agrega si ya existe un archivo con el mismo nombre o ya existe un vínculo a ese archivo en el proyecto.
 
-Si intenta establecer el vínculo a un archivo que ya existe en las carpetas de proyecto, se agrega como un archivo normal y no como un vínculo. Para convertir un archivo en un vínculo, seleccione **Archivo** > **Guardar como** para guardar el archivo en una ubicación fuera de la jerarquía del proyecto; Visual Studio lo convierte automáticamente en un vínculo. De forma similar, se puede invertir la conversión de un vínculo mediante **Archivo** > **Guardar como** para guardar el archivo en algún lugar dentro de la jerarquía del proyecto. 
+Si intenta establecer el vínculo a un archivo que ya existe en las carpetas de proyecto, se agrega como un archivo normal y no como un vínculo. Para convertir un archivo en un vínculo, seleccione **Archivo** > **Guardar como** para guardar el archivo en una ubicación fuera de la jerarquía del proyecto; Visual Studio lo convierte automáticamente en un vínculo. De forma similar, se puede invertir la conversión de un vínculo mediante **Archivo** > **Guardar como** para guardar el archivo en algún lugar dentro de la jerarquía del proyecto.
 
 Si mueve un archivo vinculado en el **Explorador de soluciones**, dicho vínculo se mueve, pero el archivo real no se ve afectado. De manera similar, al eliminar un vínculo este se quita sin afectar al archivo.
 

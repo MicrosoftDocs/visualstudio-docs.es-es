@@ -7,16 +7,16 @@ helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 974648db0a6b8fa8ede1c26f7e1d605d0023b699
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 272ee186a92a282033ea59ddfbcb9db7d89a292a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924129"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038596"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Pruebas unitarias para métodos genéricos
 

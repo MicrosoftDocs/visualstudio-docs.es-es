@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: Modificar el punto de pivote de un modelo 3D | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Modificar el punto de pivote de un modelo 3D | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: beba04bab85b3fd09aafb195039ad6e34106e293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850534"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774106"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Cómo: Modificar el punto de pivote de un modelo 3D
+# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Procedimiento Modificar el punto de pivote de un modelo 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Editor de modelos para modificar el *punto de pivote* de un modelo 3D. El punto de pivote es el punto en el espacio que define el centro matemático del objeto para la rotación y la escala.  
@@ -57,6 +52,3 @@ En este documento se muestra cómo usar el Editor de modelos para modificar el *
 ## <a name="see-also"></a>Vea también  
  [Cómo: Crear un modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)   
  [Editor de modelos](../designers/model-editor.md)
-
-
-

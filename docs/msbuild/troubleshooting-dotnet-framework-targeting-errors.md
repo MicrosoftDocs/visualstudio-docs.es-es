@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44be4be33f0aa951b00f9237903ddcbf2c415309
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c779b9f51d9b73d945d10edc2d6f80999f91536
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893615"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004495"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Solucionar problemas de versión de .NET Framework de destino
 En este tema se describen los errores de MSBuild que pueden producirse debido a problemas de referencia y cómo pueden resolverse esos errores.

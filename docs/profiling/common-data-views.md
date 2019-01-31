@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c37bea5a5b447c7cd93c63d5a0ba8cf497d1723
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c18bd4b5893d500c27bb32c9b5b7c4c22b7fc78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950016"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918036"
 ---
 # <a name="common-data-views"></a>Vistas de datos comunes
 Esta sección contiene información de referencia acerca de las vistas e informes de archivos de datos del generador de perfiles que son comunes para todos los métodos de generación de perfiles.  

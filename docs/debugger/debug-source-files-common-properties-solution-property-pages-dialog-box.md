@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 0af11464-eeb1-4d0b-87a6-0cc96779afb1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a722422306a16ee7e2dc340448f0e082f8a1f014
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 63f3f5649484a9714368b4c441379241252d8f36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931913"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024609"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Depurar archivos de código fuente, Propiedades comunes, Páginas de propiedades de Solución (Cuadro de diálogo)
 Esta página de propiedades especifica si el depurador buscará archivos de código fuente al depurar la solución.  

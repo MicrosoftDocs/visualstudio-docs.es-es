@@ -1,27 +1,22 @@
 ---
-title: 'Introducción a PTVS: Depurar | Microsoft Docs'
-ms.custom: ''
+title: 'Introducción a PTVS: Depuración | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 82803559-1d60-4c57-98fb-2dc1e0182b42
 caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 8a92eb3779abf5be00f39bd4aa3e66238a729ded
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b636dd4f3a5c5265231898573bfdf52de2dff84e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204948"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834479"
 ---
-# <a name="getting-started-with-ptvs-debugging"></a>Introducción a PTVS: Depurar
+# <a name="getting-started-with-ptvs-debugging"></a>Introducción a PTVS: Depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El depurador interactivo de Visual Studio facilita el proceso de diagnosticar y resolver problemas en el código Python.  
@@ -62,4 +57,3 @@ if __name__ == "__main__":
 ## <a name="see-also"></a>Vea también  
  [Documentación de la wiki](https://github.com/Microsoft/PTVS/wiki/Debugging)   
  [Introducción y vídeos Deep Dive de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-
