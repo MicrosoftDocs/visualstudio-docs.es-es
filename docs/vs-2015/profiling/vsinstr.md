@@ -1,14 +1,9 @@
 ---
 title: VSInstr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, instrumentation
 - instrumentation, VSInstr tool
@@ -22,13 +17,13 @@ ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 caps.latest.revision: 49
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d905a7a6fa99afa0e7d43409ca1d7b53e7fbd9b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 09562c3372a6dd933d3656f1b2f7ccf7ca68109d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773332"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771041"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,13 +47,13 @@ VSInstr [/U] filename [/options]
 |**DumpFuncs**|Enumera las funciones en la imagen especificada. No se realiza ninguna instrumentación.|  
 |**ExcludeSmallFuncs**|Excluye de la instrumentación las funciones pequeñas, que son funciones cortas que no realizan ninguna llamada de función. La opción **ExcludeSmallFuncs** proporciona menos sobrecarga de instrumentación y, por tanto, una velocidad de instrumentación mejorada.<br /><br /> La exclusión de las funciones pequeñas también reduce el tamaño del archivo .vsp y el tiempo necesario para el análisis.|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|Inserta una marca de perfil (un identificador utilizado para delimitar los datos de informes) que puede utilizar para identificar el inicio o final de un intervalo de datos en el archivo de informe .vsp.<br /><br /> **Before**: inmediatamente antes de la entrada de la función de destino.<br /><br /> **After**: inmediatamente después de la salida de la función de destino.<br /><br /> **Top**: inmediatamente después de la entrada de la función de destino.<br /><br /> **Bottom**: inmediatamente antes de cada devolución de la función de destino.<br /><br /> `funcname`: nombre de la función de destino<br /><br /> `Markid`: un entero positivo (largo) que se usará como el identificador de la marca de perfil.|  
-|**Coverage**|Realiza instrumentación de cobertura. Solo se puede utilizar con las siguientes opciones: **Verbose**, **OutputPath**, **Exclude** y **Logfile**.|  
+|**Coverage**|Realiza instrumentación de cobertura. Puede ser que puede utilizarse solo con las siguientes opciones: **Verbose**, **OutputPath**, **Exclude** y **Logfile**.|  
 |**Verbose**|La opción **Verbose** se utiliza para ver información detallada sobre el proceso de instrumentación.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Suprime todas las advertencias o solo advertencias específicas.<br /><br /> `Message Number`: el número de advertencia. Si se omite `Message Number`, se suprimen todas las advertencias.<br /><br /> Para obtener más información, consulte [Advertencias de VSInstr](../profiling/vsinstr-warnings.md).|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|Especifica el nivel de generación de perfiles de las siguientes opciones de control de recopilación de datos de VSInstr:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread**: especifica las funciones de control de recopilación de datos de nivel de subproceso. La generación de perfiles se inicia o detiene solo para el subproceso actual. El estado de generación de perfiles de otros subprocesos no se ve afectado. El valor predeterminado es thread.<br /><br /> **Process**: especifica las funciones de control de recopilación de datos de generación de perfiles de nivel de proceso. La generación de perfiles se inicia o se detiene en todos los subprocesos del proceso actual. No se ve afectado el estado de generación de perfiles de otros procesos.<br /><br /> **Global**: especifica las funciones de control de recopilación de datos de nivel global (entre procesos).<br /><br /> Se produce un error si no se especifica el nivel de generación de perfiles.|  
 |**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|Limita la recopilación de datos a la función de destino y las funciones secundarias a las que llama.<br /><br /> **Inside**: inserta la función StartProfile inmediatamente después de la entrada a la función de destino. Inserta la función StopProfile inmediatamente antes de cada devolución de la función de destino.<br /><br /> **Outside**: inserta la función StartProfile inmediatamente antes de cada llamada a la función de destino. Inserta la función StopProfile inmediatamente después de cada llamada a la función de destino.<br /><br /> `funcname`: el nombre de la función de destino.|  
 |**Suspend** `:{` **Inside** `&#124;` **Outside** `},funcname`|Excluye la recopilación de datos de la función de destino y las funciones secundarias a las que llama.<br /><br /> **Inside**: inserta la función SuspendProfile inmediatamente después de la entrada a la función de destino. Inserta la función ResumeProfile inmediatamente antes de cada devolución de la función de destino.<br /><br /> **Outside**: inserta la función SuspendProfile inmediatamente antes de la entrada a la función de destino. Inserta la función ResumeProfile inmediatamente después de cada salida de la función de destino.<br /><br /> `funcname`: el nombre de la función de destino.<br /><br /> Si la función de destino contiene una función StartProfile, la función SuspendProfile se inserta antes. Si la función de destino contiene una función StopProfile, la función ResumeProfile se inserta después.|  
-|**StartOnly:** `{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|Comienza la recopilación de datos durante un proceso de generación de perfiles. Inserta la función de API StartProfile en la ubicación especificada.<br /><br /> **Before**: inmediatamente antes de la entrada de la función de destino.<br /><br /> **After**: inmediatamente después de la salida de la función de destino.<br /><br /> **Top**: inmediatamente después de la entrada de la función de destino.<br /><br /> **Bottom**: inmediatamente antes de cada devolución de la función de destino.<br /><br /> `funcname`: el nombre de la función de destino.|  
+|**StartOnly**: `{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|Comienza la recopilación de datos durante un proceso de generación de perfiles. Inserta la función de API StartProfile en la ubicación especificada.<br /><br /> **Before**: inmediatamente antes de la entrada de la función de destino.<br /><br /> **After**: inmediatamente después de la salida de la función de destino.<br /><br /> **Top**: inmediatamente después de la entrada de la función de destino.<br /><br /> **Bottom**: inmediatamente antes de cada devolución de la función de destino.<br /><br /> `funcname`: el nombre de la función de destino.|  
 |**StopOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|Detiene la recopilación de datos durante un proceso de generación de perfiles. Inserta la función StopProfile en la ubicación especificada.<br /><br /> **Before**: inmediatamente antes de la entrada de la función de destino.<br /><br /> **After**: inmediatamente después de la salida de la función de destino.<br /><br /> **Top**: inmediatamente después de la entrada de la función de destino.<br /><br /> **Bottom**: inmediatamente antes de cada devolución de la función de destino.<br /><br /> `funcname`: el nombre de la función de destino.|  
 |**SuspendOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|Detiene la recopilación de datos durante un proceso de generación de perfiles. Inserta la función de API SuspendProfile en la ubicación especificada.<br /><br /> **Before**: inmediatamente antes de la entrada de la función de destino.<br /><br /> **After**: inmediatamente después de la salida de la función de destino.<br /><br /> **Top**: inmediatamente después de la entrada de la función de destino.<br /><br /> **Bottom**: inmediatamente antes de cada devolución de la función de destino.<br /><br /> `funcname`: el nombre de la función de destino.<br /><br /> Si la función de destino contiene una función StartProfile, la función SuspendProfile se inserta antes.|  
 |**ResumeOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|Comienza o reanuda la recopilación de datos durante un proceso de generación de perfiles.<br /><br /> Normalmente se utiliza para iniciar la generación de perfiles después de que una opción **SuspendOnly** haya dejado de generar perfiles. Inserta una API ResumeProfile en la ubicación especificada.<br /><br /> **Before**: inmediatamente antes de la entrada de la función de destino.<br /><br /> **After**: inmediatamente después de la salida de la función de destino.<br /><br /> **Top**: inmediatamente después de la entrada de la función de destino.<br /><br /> **Bottom**: inmediatamente antes de cada devolución de la función de destino.<br /><br /> `funcname`: el nombre de la función de destino.<br /><br /> Si la función de destino contiene una función StopProfile, la función ResumeProfile se inserta después.|  
@@ -69,6 +64,3 @@ VSInstr [/U] filename [/options]
  [VSPerfReport](../profiling/vsperfreport.md)   
  [Advertencias de VSInstr](../profiling/vsinstr-warnings.md)   
  [Vistas de informes de rendimiento](../profiling/performance-report-views.md)
-
-
-

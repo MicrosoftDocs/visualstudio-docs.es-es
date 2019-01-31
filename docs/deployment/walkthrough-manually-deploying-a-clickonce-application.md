@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6dac1a48db34f1b3a5a9dbdbac4469344f3e5383
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923275"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001727"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Tutorial: Implementar manualmente una aplicación ClickOnce
 Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, o si necesita usar características avanzadas de implementación, como la implementación de aplicaciones de confianza, debe usar el *Mage.exe* herramienta de línea de comandos para crear su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos. En este tutorial se describe cómo crear un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación mediante el uso de la versión de línea de comandos (*Mage.exe*) o la versión gráfica (*MageUI.exe*) de la generación de manifiestos y Herramienta de edición.  
@@ -51,7 +51,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
   
 - Obtenga un certificado de Authenticode.  
   
-   Debe firmar la implementación con un certificado Authenticode. Puede generar un certificado de prueba mediante el uso de Visual Studio, *MageUI.exe*, o *MakeCert.exe* y *Pvk2Pfx.exe* herramientas, o bien puede obtener un certificado de un certificado Entidad emisora (CA). Si decide usar la implementación de aplicaciones de confianza, también debe realizar una instalación única del certificado en todos los equipos cliente. Para obtener más información, vea [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md).  
+   Debe firmar la implementación con un certificado Authenticode. Puede generar un certificado de prueba mediante el uso de Visual Studio, *MageUI.exe*, o *MakeCert.exe* y *Pvk2Pfx.exe* herramientas, o bien puede obtener un certificado de un certificado Entidad emisora (CA). Si decide usar la implementación de aplicaciones de confianza, también debe realizar una instalación única del certificado en todos los equipos cliente. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
   > [!NOTE]
   >  También puede firmar la implementación con un certificado CNG que puede obtener de una entidad de certificación.  

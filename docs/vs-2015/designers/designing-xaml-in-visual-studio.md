@@ -1,24 +1,20 @@
 ---
 title: Diseño de XAML
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a1c58ca9d567db88fb8267d56e071c11ba8aef27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ae621a36a8e5226c60ff5b879d359b0e8556aeaa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870234"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754191"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Diseño de XAML en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +41,7 @@ Visual Studio y Blend para Visual Studio proporcionan tanto herramientas visuale
 
      ![Experiencia de recarga de archivo](../designers/media/blendfilereload.png "BlendFileReload")
 
--   **Diseños y configuraciones sincronizados:** los diseños personalizados permiten guardar y aplicar las personalizaciones de diseño de la ventana de herramientas. Visual Studio sincronizará estas personalizaciones y preferencias de Visual Studio y Blend para Visual Studio en los equipos cuando inicie sesión con la misma cuenta de Microsoft. Consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+-   **Diseños y configuraciones sincronizados:** los diseños personalizados permiten guardar y aplicar las personalizaciones de diseño de la ventana de herramientas. Visual Studio sincronizará estas personalizaciones y preferencias de Visual Studio y Blend para Visual Studio en los equipos cuando inicie sesión con la misma cuenta de Microsoft. Consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 -   **Explorador de soluciones común:** el Explorador de soluciones proporciona una vista organizada de los proyectos y los archivos, así como acceso a los comandos asociados a ellos. Con el Explorador de soluciones, es más fácil trabajar con proyectos empresariales grandes. Vea [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md).
 

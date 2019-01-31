@@ -14,15 +14,15 @@ dev_langs:
 ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a635d36a18c5630f654922e0d96bca54a223fd91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb24a4bf5b3625255ea9503c2ce88bb64b28ef4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935858"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037075"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Ventana de salida, Depuración, Opciones (Cuadro de diálogo)
 Puede especificar qué tipos de información de depuración aparecen en la **Ventana de salida**. Para mostrar estas opciones, abra el menú **Herramientas**, haga clic en **Opciones**, expanda el nodo **Depuración** y haga clic en **Ventana de salida**.

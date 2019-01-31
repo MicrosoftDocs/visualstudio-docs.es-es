@@ -1,14 +1,9 @@
 ---
 title: Parámetros de plantilla | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 1b567143-08c6-4d7a-b484-49f0671754fe
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238906"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787097"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +88,7 @@ Si se usan parámetros en las plantillas, se pueden reemplazar los valores de la
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>Ejemplo: Utilizar el nombre de proyecto para el nombre del espacio de nombres  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>Ejemplo: Con el nombre de proyecto para el nombre de Namespace  
  Para utilizar el nombre del proyecto para el espacio de nombres en un archivo de clase de Visual C#, Class1.cs, utilice la sintaxis siguiente:  
   
 ```  
@@ -130,6 +125,3 @@ namespace $safeprojectname$
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)
-
-
-

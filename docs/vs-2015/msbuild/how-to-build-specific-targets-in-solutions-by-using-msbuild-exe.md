@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Compilar destinos específicos en soluciones mediante MSBuild.exe | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Compilar destinos específicos en soluciones mediante MSBuild.exe | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building specific targets in a solution
 - msbuild.exe, building specific targets in a solution
@@ -17,15 +12,15 @@ ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: af1322145ad262a15b5ad47560e7c79aceeccc2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 26e1670d5e67581ee61ec5517bedc4e8cfce1755
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245848"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766255"
 ---
-# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Cómo: Generar destinos específicos en soluciones mediante MSBuild.exe
+# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Procedimiento Compilar destinos específicos en soluciones mediante MSBuild.exe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -49,5 +44,3 @@ msbuild SlnFolders.sln /t:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clea
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
  [MSBuild](msbuild.md)  
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
-
-

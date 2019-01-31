@@ -3,11 +3,8 @@ title: Desinstalación de Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - uninstalling
 - uninstalling visual studio
@@ -17,13 +14,13 @@ ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 985f99afb0f9c0e659586d7878df94bf1b7266c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822430"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834834"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +43,7 @@ Esta página le guiará en el proceso de desinstalación de Visual Studio 2015, 
 1.  Busque el archivo .exe de Visual Studio (por ejemplo, busque "vs_enterprise.exe").
 
     > [!NOTE]
-    >  El archivo debe estar en una subcarpeta de "%ProgramData%\Package Cache", por ejemplo: Caché C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
+    >  El archivo debe estar en una subcarpeta de "%ProgramData%\Package Cache", por ejemplo: C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
 
 2.  Ejecute el archivo .exe mediante el uso de la desinstalación o forzar los parámetros de línea de comandos.
 

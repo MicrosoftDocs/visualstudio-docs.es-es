@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 69c74548340e8b8f642fa1e373bdd424c3c81a69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417803"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989749"
 ---
 # <a name="options-text-editor-general"></a>Opciones, editor de texto, general
 
@@ -67,7 +67,7 @@ Cuando está activa, las convenciones de la codificación especificada del proye
 
 Si se selecciona esta opción, puede presionar **Ctrl** y mantener el puntero sobre un elemento mientras hace clic con el mouse. Al hacerlo, va a la definición del elemento seleccionado. También puede elegir **Alt** o **Ctrl** + **Alt** en el menú desplegable **Usar clave de modificador**.
 
-Active la casilla de verificación **Abrir definición en vista de inspección** para mostrar la definición del elemento en una ventana sin salir de la ubicación actual en el editor de código. 
+Active la casilla de verificación **Abrir definición en vista de inspección** para mostrar la definición del elemento en una ventana sin salir de la ubicación actual en el editor de código.
 
 ## <a name="display"></a>Pantalla
 

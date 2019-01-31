@@ -6,19 +6,19 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a4f4ea1add79ce0317ff5823066a0070a407c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944631"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024102"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introducción a Herramientas de R para Visual Studio
 
-Una vez que Herramientas de R para Visual Studio (RTVS) esté instalado (vea [Instalación](installing-r-tools-for-visual-studio.md)), podrá obtener rápidamente una idea de la experiencia que proporcionan esas herramientas. 
+Una vez que Herramientas de R para Visual Studio (RTVS) esté instalado (vea [Instalación](installing-r-tools-for-visual-studio.md)), podrá obtener rápidamente una idea de la experiencia que proporcionan esas herramientas.
 
 ## <a name="create-an-r-project"></a>Crear un proyecto de R
 
@@ -93,7 +93,7 @@ Como ejemplo, los pasos siguientes crean un poco de código para explorar el [te
 
 > [!Tip]
 > Aprenda el patrón de realizar ediciones y presionar **Ctrl**+**Entrar** (o seleccionar todo con **Ctrl**+**A** y luego presionar **Ctrl**+**Entrar**) para ejecutar el código rápidamente. Realizar esto es mucho más eficaz que usar el mouse para las mismas operaciones.
-> 
+>
 > Además, puede arrastrar y colocar la ventana de trazados fuera del marco de Visual Studio y ponerla en cualquier otro lugar que quiera de la pantalla. Después, puede cambiar fácilmente el tamaño de la ventana de trazados y guardarla en un archivo PDF o de imagen.
 
 1. Agregue algunas líneas más de código para incluir un segundo trazado:

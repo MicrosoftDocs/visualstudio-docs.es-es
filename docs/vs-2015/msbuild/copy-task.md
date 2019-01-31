@@ -1,14 +1,9 @@
 ---
 title: Copy (tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Copy
 - MSBuild.Copy.SourceFileNotFound
@@ -26,13 +21,13 @@ ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 44136d52c1fd33d3f4dac225c6e8d83a0c9569f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8f6e1bf48d80362a4f51e10583c5827eff8fe932
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758324"
 ---
 # <a name="copy-task"></a>Copy (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ Copia los archivos en una nueva ubicación del sistema de archivos.
 |`OverwriteReadOnlyFiles`|Parámetro `Boolean` opcional.<br /><br /> Sobrescribe los archivos aunque estén marcados como archivos de solo lectura|  
 |`Retries`|Parámetro `Int32` opcional.<br /><br /> Especifica cuántas veces se intentará copiar, si se produjera un error en todos los intentos anteriores. Se establece en cero de forma predeterminada.<br /><br /> **Nota:** El uso de reintentos puede enmascarar un problema de sincronización en el proceso de compilación.|  
 |`RetryDelayMilliseconds`|Parámetro `Int32` opcional.<br /><br /> Especifica el retraso entre los reintentos necesarios. Adopta como valor predeterminado el argumento RetryDelayMillisecondsDefault, que se pasa al constructor CopyTask.|  
-|`SkipUnchangedFiles`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se omite la copia de los archivos sin modificar entre el origen y destino. La tarea `Copy` considera que los archivos están sin modificar si tienen el mismo tamaño y la misma hora de última modificación. **Nota:** Si se establece este parámetro como `true`, no debe usar el análisis de dependencias en el destino continente, ya que solo se ejecuta la tarea si las horas de última modificación de los archivos de origen son más recientes que las de los archivos de destino.|  
+|`SkipUnchangedFiles`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se omite la copia de los archivos sin modificar entre el origen y destino. La tarea `Copy` considera que los archivos están sin modificar si tienen el mismo tamaño y la misma hora de última modificación. **Nota:**  Si se establece este parámetro como `true`, no deberá usar el análisis de dependencias en el destino continente, ya que solo se ejecuta la tarea si las horas de última modificación de los archivos de origen son más recientes que las de los archivos de destino.|  
 |`SourceFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos que se van a copiar.|  
 |`UseHardlinksIfPossible`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, crea vínculos físicos para los archivos copiados en lugar de copiar los archivos.|  
   
@@ -122,6 +117,3 @@ Copia los archivos en una nueva ubicación del sistema de archivos.
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

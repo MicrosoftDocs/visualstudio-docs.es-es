@@ -1,18 +1,18 @@
 ---
-title: 'Tutorial: Captura de información de gráficos mediante programación | Microsoft Docs'
+title: 'Tutorial: Capturar información de gráficos mediante programación | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ea39346689d2a9a68d34e1e9189f2cab300b02
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 379180c21bfe1bbb36faa0ad1becad162068e698
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850692"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001191"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Captura de información de gráficos mediante programación
 Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar mediante programación información de gráficos desde la aplicación Direct3D.  
@@ -34,7 +34,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-qual
   
 -   Obtención de la interfaz IDXGraphicsAnalysis  
   
--   Captura de información de gráficos  
+-   Capturar información de gráficos  
   
 > [!NOTE]
 >  Las implementaciones previas de captura mediante programación dependían de herramientas remotas para Visual Studio para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para proporcionar funcionalidad de captura.
@@ -86,7 +86,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-qual
   > [!NOTE]
   >  Si `DXGIGetDebugInterface1` devuelve `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), asegúrese de que la aplicación se esté ejecutando en Diagnóstico de gráficos (Alt+F5 en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
   
-### <a name="capturing-graphics-information"></a>Captura de información de gráficos  
+### <a name="capturing-graphics-information"></a>Capturar información de gráficos  
  Tenga en cuenta que tiene una interfaz `IDXGraphicsAnalysis` válida, puede utilizar `BeginCapture` y `EndCapture` para capturar información de gráficos.  
   
 ##### <a name="to-capture-graphics-information"></a>Cómo capturar información de gráficos  
@@ -116,5 +116,5 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-qual
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Captura de información de gráficos](walkthrough-capturing-graphics-information.md)   
- [Captura de información de gráficos](capturing-graphics-information.md)   
+ [Capturing Graphics Information](capturing-graphics-information.md)   
  [Herramienta de captura de línea de comandos](command-line-capture-tool.md)

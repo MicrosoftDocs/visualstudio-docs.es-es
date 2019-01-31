@@ -16,13 +16,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
-manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+manager: jillfra
+ms.openlocfilehash: ee22803c7a479c6d22821a9a6b267cd72938792e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398439"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013007"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript en Visual Studio 2017
 
@@ -206,7 +206,8 @@ Podría usar el siguiente archivo `tsconfig.json` para asegurarse de que el serv
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>La solución de problemas del servicio de lenguaje JavaScript se ha deshabilitado para los proyectos siguientes
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>La solución de problemas del servicio de lenguaje JavaScript se ha deshabilitado para los proyectos siguientes
 Al abrir un proyecto de JavaScript que tiene una gran cantidad de contenido, es posible que obtenga un mensaje que dice "el servicio de lenguaje de JavaScript se ha deshabilitado para los siguientes proyectos". La razón más común para tener una gran cantidad de código fuente de JavaScript es para incluir las bibliotecas con código fuente que supera un límite de proyecto de 20 MB.
 
 Una manera sencilla de optimizar el proyecto consiste en agregar un archivo `tsconfig.json` en la raíz del proyecto para que el servicio de lenguaje sepa qué archivos se pueden ignorar. Use el ejemplo siguiente para excluir los directorios más comunes donde se almacenan las bibliotecas:
@@ -231,7 +232,7 @@ Una manera sencilla de optimizar el proyecto consiste en agregar un archivo `tsc
 }
 ```
 
-Agregue más directorios como considere oportuno. Otros ejemplos incluyen los directorios "proveedor" o "wwwroot/lib". 
+Agregue más directorios como considere oportuno. Otros ejemplos incluyen los directorios "proveedor" o "wwwroot/lib".
 
 > [!NOTE]
 > También se puede usar la propiedad de compilador `disableSizeLimit` para deshabilitar el límite de comprobación de 20 MB. Tome precauciones especiales al usar esta propiedad porque deshabilitar el límite es posible que bloquee el servicio de lenguaje.
