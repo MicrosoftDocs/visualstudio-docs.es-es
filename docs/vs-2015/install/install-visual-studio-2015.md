@@ -3,10 +3,7 @@ title: Instalación de Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -21,13 +18,13 @@ ms.assetid: da049020-cfda-40d7-8ff4-7492772b620f
 caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799182"
 ---
 # <a name="install-visual-studio-2015"></a>Instalación de Visual Studio 2015
 
@@ -65,7 +62,7 @@ Antes de profundizar en los detalles, se muestra a continuación una lista de lo
 |**Actualizaciones**|Visual Studio 2015 Update 3|
 |**Lenguajes de programación**|Visual C++<br />Visual F#<br />Python Tools para Visual Studio|
 |**Desarrollo de Web y de Windows**|Herramientas de publicación de ClickOnce<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer Tools<br />PowerShell Tools para Visual Studio (3ª parte)<br />Kit de desarrollo de Silverlight<br />Herramientas de desarrollo de aplicaciones universales de Windows<br />SDK y herramientas de Windows 10<br />Herramientas de Windows 8.1 y Windows Phone 8.0/8.1<br />SDK y herramientas de Windows 8.1|
-|**Desarrollo móvil multiplataforma**|C#/.NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />Desarrollo móvil de Visual C++ para iOS y Android<br />Clang con Microsoft CodeGen|
+|**Desarrollo móvil multiplataforma**|C# / .NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />Desarrollo móvil de Visual C++ para iOS y Android<br />Clang con Microsoft CodeGen|
 |**Herramientas comunes y Kits de desarrollo de Software**|Kit de desarrollo nativo de Android (3ª parte)<br /> SDK de Android [parte 3ª]<br />Las API de instalación de Android SDK (3ª parte)<br />Apache Ant (3ª parte)<br /> Kit de desarrollo de Java SE (3ª parte)<br /> Joyent Node.js (3ª parte)|
 |**Herramientas comunes**|GIT para Windows (3ª parte)<br />Extensión de GitHub para Visual Studio (3ª parte)<br /> Herramientas de extensibilidad de Visual Studio|
 
@@ -83,7 +80,7 @@ Antes de profundizar en los detalles, se muestra a continuación una lista de lo
 |Programas de depuración|SeDebugPrivilege|
 |Administrar la auditoría y el registro de seguridad|SeSecurityPrivilege|
 
- Para obtener más información sobre este requisito de la cuenta de administrador local, vea el artículo de Knowledge Base [Se produce un error en la instalación de SQL Server si la cuenta de instalación no tiene ciertos derechos de usuario](https://support.microsoft.com/en-us/kb/2000257).
+ Para obtener más información sobre este requisito de la cuenta de administrador local, vea el artículo de Knowledge Base [Se produce un error en la instalación de SQL Server si la cuenta de instalación no tiene ciertos derechos de usuario](https://support.microsoft.com/kb/2000257).
 
 ###  <a name="BKMK_Media"></a> Uso de medios de instalación
  Para instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en el directorio raíz del disco de instalación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ejecute el archivo de instalación de la edición que desee:

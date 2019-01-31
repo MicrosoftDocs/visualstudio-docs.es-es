@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Creación y ejecución de pruebas unitarias para aplicaciones de la Tienda Windows | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones de Windows Store | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
@@ -17,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dcd09c2a19bd96a02075901f6b58da71a1a9bee9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754879"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Tutorial: Creación y ejecución de pruebas unitarias para aplicaciones de la Tienda Windows.
+# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones de Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaciones [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] administradas e incluye plantillas de biblioteca de pruebas unitarias para Visual C#, Visual Basic y Visual C++.  
@@ -119,7 +114,7 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
     >  Debe compilar la solución para actualizar la lista de pruebas unitarias en el Explorador de pruebas.  
   
     > [!WARNING]
-    >  Problema conocido de Visual Studio: debe abrir el Explorador de pruebas antes de compilar el proyecto de prueba.  
+    >  Visual Studio problema conocido: Debe abrir el Explorador de pruebas antes de compilar el proyecto de prueba.  
   
 3.  En el Explorador de pruebas, elija la prueba unitaria que creó.  
   
@@ -144,7 +139,7 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="videos"></a>Vídeos  
- [Channel 9: Unit testing your Windows Store apps built using XAML (Channel 9: prueba de las unidades de las aplicaciones de la Tienda Windows compiladas mediante XAML)](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9 Las aplicaciones de Windows Store compiladas con XAML de pruebas unitarias](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Foros  
  [Prueba unitaria de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -155,6 +150,3 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
 ## <a name="see-also"></a>Vea también  
  [Probar aplicaciones de la Tienda con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Compilar y probar una aplicación de la Tienda Windows mediante Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
-
-

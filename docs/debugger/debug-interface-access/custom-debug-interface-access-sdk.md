@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a219fc83-d2a8-4bc5-b7e1-bfafeb247f16
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaa6934fbed6780fb9a8a3be6685dbb7bcf0fbc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b5764ec6d996e4e76d509e0cfe65ec34237d581
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834365"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931315"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Personalizado (Debug Interface Access SDK)
 Algunos compiladores introducen símbolos que no se identifican mediante cualquiera de los tipos de símbolo estándar de léxico. Estos símbolos se identifican mediante un `SymTagCustom` etiqueta.  

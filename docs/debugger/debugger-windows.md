@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b802503fe612b80a171a328502f8074b2f596d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875811"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916626"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Obtenga información sobre el depurador Windows en Visual Studio
 
@@ -36,7 +36,7 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 |Inspección paralela|CTR:+MAYÚS+D, (1, 2, 3, 4)|[Introducción a la depuración de aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Subprocesos|CTRL+ALT+H|[Depurar con la ventana Subprocesos](../debugger/how-to-use-the-threads-window.md)|
 |Módulos|CTRL+ALT+U|[Cómo: Uso de la ventana Módulos](../debugger/how-to-use-the-modules-window.md)|
-|Subprocesos de GPU|-|[Cómo: Uso de la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
+|Subprocesos de GPU|-|[Cómo: usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Tareas|CTR:+MAYÚS+D, K|[Usar la ventana Tareas](../debugger/using-the-tasks-window.md)|
 |Depuración de Python interactiva|MAYÚS+ALT+I|[Ventana de REPL interactiva](../python/python-interactive-repl-in-visual-studio.md)|
 |Consola de JavaScript|CTRL+ALT+V, C|[Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|

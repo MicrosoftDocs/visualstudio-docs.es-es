@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: daf589eeabbdf753512cc31ca00b6a88e001c0db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecf63cc03af13cadb5791e2f0f5a058feedb8418
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918758"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934080"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Procedimiento Guardar datos mediante una transacción
 

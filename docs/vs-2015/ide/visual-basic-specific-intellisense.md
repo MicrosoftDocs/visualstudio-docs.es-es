@@ -1,14 +1,9 @@
 ---
 title: Opciones de IntelliSense específicas de Visual Basic | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [Visual Basic]
 - IntelliSense [Visual Studio], Visual Basic
@@ -16,13 +11,13 @@ ms.assetid: 4dec8753-05e5-4f74-b304-5f8c4ed8723b
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7fbeae534915863ec8a49e529bef4f6eb0c0fcb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ce0d1f2fd5c4ea8549f638f97846fdf7a1726b90
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796898"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Opciones de IntelliSense específicas de Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ El editor de código fuente de Visual Basic ofrece las siguientes característic
   
 ## <a name="see-also"></a>Vea también  
  [Usar IntelliSense](../ide/using-intellisense.md)
-
-
-

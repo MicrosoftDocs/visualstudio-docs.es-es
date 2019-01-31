@@ -1,14 +1,9 @@
 ---
-title: Características de accesibilidad del Visor de ayuda | Documentos de Microsoft
-ms.custom: ''
+title: Características de accesibilidad del Visor de ayuda | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - accessibility features [Help Viewer 2.0]
 - Help Viewer 2.0, accessibility features
@@ -16,13 +11,13 @@ ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2d6dee81d823c52986922d59a4e41f402db4fbd5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 041e83f8d71679ffb26d24be37f353e39fbc08e6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765849"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Características de accesibilidad del Visor de Ayuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
   
 ## <a name="see-also"></a>Vea también  
  [Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)
-
-
-

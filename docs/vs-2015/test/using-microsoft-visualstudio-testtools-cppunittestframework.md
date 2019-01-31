@@ -1,24 +1,19 @@
 ---
 title: Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 68f083bf6aa99177f6b9e697be8affa5d29804a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4315e4008c3a4f14e8d9124da5d7ff83c8275a65
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796933"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -657,8 +652,5 @@ public:
   
 ## <a name="see-also"></a>Vea también  
  [Hacer una prueba unitaria de su código](../test/unit-test-your-code.md)   
- [Pruebas unitarias de código nativo con el Explorador de pruebas](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)   
+ [Pruebas unitarias de código nativo con el Explorador de pruebas](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)   
  [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-
-
-

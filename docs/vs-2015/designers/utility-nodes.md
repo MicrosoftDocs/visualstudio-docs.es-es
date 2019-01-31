@@ -1,25 +1,20 @@
 ---
 title: Nodos de utilidad | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1d85735c5fb355163f2003a27a96675ed097d66e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5907b388e59b136a2d89b02348e7ac3d2b25d63c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783868"
 ---
 # <a name="utility-nodes"></a>Nodos de utilidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ En el Diseñador de sombras, los nodos de utilidad representan cálculos de somb
 |**Vector de máscara**|Enmascara los componentes de vector especificado.<br /><br /> Se puede usar para quitar canales de color específicos de un valor de color o bien para evitar que determinados componentes afecten a cálculos subsiguientes.<br /><br /> **Entrada:**<br /><br /> `Vector`: `float4`<br /> El vector que se va a enmascarar.<br /><br /> **Salida:**<br /><br /> `Output`: `float4`<br /> El vector enmascarado.|**Rojo / X**<br /> **False** para desenmascarar el componente rojo (X). De lo contrario, **True**.<br /><br /> **Verde / Y**<br /> **False** para desenmascarar el componente verde (Y). De lo contrario, **True**.<br /><br /> **Azul / Z**<br /> **False** para desenmascarar el componente azul (Z). De lo contrario, **True**.<br /><br /> **Alfa / W**<br /> **False** para desenmascarar el componente alfa (W). De lo contrario, **True**.|  
 |**Vector de reflexión**|Calcula el vector de la reflexión del píxel actual en el espacio tangente en función de la posición de la cámara.<br /><br /> Se puede usar para calcular reflexiones, coordenadas de mapa de cubo y contribuciones de la iluminación especular.<br /><br /> **Entrada:**<br /><br /> `Tangent Space Surface Normal`: `float3`<br /> La normal de superficie del píxel actual, definida en el espacio tangente del píxel actual. Se puede usar para alterar la normal de superficie aparente, como en la asignación normal.<br /><br /> **Salida:**<br /><br /> `Output`: `float3`<br /> El vector de reflexión.|Ninguna|  
 |**Specular**|Calcula la contribución de iluminación especular según el modelo de iluminación Phong, mediante el normal de superficie especificado.<br /><br /> La iluminación especular proporciona una apariencia reluciente y reflectante a un objeto, por ejemplo, agua, plástico o metales.<br /><br /> **Entrada:**<br /><br /> `Surface Normal`: `float3`<br /> La normal de superficie del píxel actual, definida en el espacio tangente del píxel actual. Se puede usar para alterar la normal de superficie aparente, como en la asignación normal.<br /><br /> **Salida:**<br /><br /> `Output`: `float3`<br /> La contribución de color de los reflejos especulares.|Ninguna|
-
-
-

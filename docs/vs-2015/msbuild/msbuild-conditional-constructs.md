@@ -1,14 +1,9 @@
 ---
 title: Construcciones condicionales de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -27,13 +22,13 @@ ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc84f8ec612ff602a615f27489bce617b5b7009a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d28819ddb7b6b5e860e885803f8037f104e9f645
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264152"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769018"
 ---
 # <a name="msbuild-conditional-constructs"></a>Construcciones condicionales de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,6 +85,3 @@ ms.locfileid: "49264152"
  [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)   
  [Elemento Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)
-
-
-

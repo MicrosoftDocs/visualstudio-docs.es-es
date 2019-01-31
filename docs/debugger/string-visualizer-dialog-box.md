@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4808e1a6f3086e15162bf2f25c1df369ab90866
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88ad69182a422d1fa1ee04eb35f973d0d1f7ea1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901235"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968900"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Ver cadenas en un visualizador de cadenas en Visual Studio
 

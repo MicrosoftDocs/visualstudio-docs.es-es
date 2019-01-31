@@ -1,25 +1,20 @@
 ---
 title: Realizar acciones rápidas con las bombillas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 990ee487-cf9a-4b89-9784-e7b47c220e8c
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3eff05df37dd1d15774fb059396f3f94b0fff2a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 74237b42ebafb82e82705d42174efb6f6a4d3661
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758653"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Realizar acciones rápidas con las bombillas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ Las bombillas son una nueva característica de productividad en Visual Studio 20
  Puede seguir haciendo refactorizaciones haciendo clic con el botón derecho para mostrar el menú contextual, pero también puede presionar Ctrl + . para mostrar las opciones de refactorización. En la ilustración siguiente, se ofrece la refactorización Extraer método tras presionar Ctrl + . en algún punto de la línea que contiene la llamada `Math.Abs`:  
   
  ![Bombilla mostrando opciones de refactorización](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Definiciones de elementos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866576"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796679"
 ---
 # <a name="item-definitions"></a>Definiciones de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,6 +242,3 @@ ms.locfileid: "49866576"
   
 ## <a name="see-also"></a>Vea también  
  [Procesamiento por lotes](../msbuild/msbuild-batching.md)
-
-
-

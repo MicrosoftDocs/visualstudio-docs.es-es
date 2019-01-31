@@ -1,6 +1,6 @@
 ---
 title: Extensibilidad de proyectos de Visual C++
-ms.date: 09/12/2018
+ms.date: 01/25/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013709"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232057"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidad y el conjunto de herramientas de integración de Project
 
@@ -274,6 +274,8 @@ El Microsoft.Cpp.Common.Tasks.dll implementa estas tareas:
 
 - `SetEnv`
 
+- `GetOutOfDateItems`
+
 Si tiene una herramienta que realiza la misma acción que una herramienta existente y que tiene los modificadores de línea de comandos similar (como clang-cl y CL), puede usar la misma tarea para ambos.
 
 Si necesita crear una nueva tarea para una herramienta de compilación, puede elegir entre las siguientes opciones:
@@ -294,11 +296,14 @@ Si necesita crear una nueva tarea para una herramienta de compilación, puede el
 
 La compilación incremental de MSBuild predeterminado tiene como destino uso `Inputs` y `Outputs` atributos. Si se especifica, MSBuild llama al destino sólo si cualquiera de las entradas tiene una marca de tiempo más reciente de todas las salidas. Porque a menudo archivos de código fuente incluirán o importan otros archivos y generación herramientas generan resultados diferentes dependiendo de las opciones de herramienta, es difícil especificar todas las posibles entradas y salidas en destinos de MSBuild.
 
-Para administrar este problema, la compilación de C++ usa una técnica diferente para admitir las compilaciones incrementales. La mayoría de los destinos no especificar entradas y salidas y como resultado, siempre se ejecutan durante la compilación. Las tareas que se llama a destinos de escriben información acerca de todas las entradas y salidas en *tlog* archivos que tienen una extensión .tlog. Los archivos .tlog son usados por compilaciones posteriores para comprobar qué ha cambiado y debe volver a generar y, lo que está actualizado.
+Para administrar este problema, la compilación de C++ usa una técnica diferente para admitir las compilaciones incrementales. La mayoría de los destinos no especificar entradas y salidas y como resultado, siempre se ejecutan durante la compilación. Las tareas que se llama a destinos de escriben información acerca de todas las entradas y salidas en *tlog* archivos que tienen una extensión .tlog. Los archivos .tlog son usados por compilaciones posteriores para comprobar qué ha cambiado y debe volver a generar y, lo que está actualizado. Los archivos .tlog también son el único origen para la comprobación de actualización de la compilación de forma predeterminada en el IDE.
 
 Para determinar todas las entradas y salidas, las tareas de la herramienta nativa usan tracker.exe y [FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) clase proporcionada por MSBuild.
 
 Microsoft.Build.CPPTasks.Common.dll define el `TrackedVCToolTask` clase base abstracta pública. La mayoría de las tareas de la herramienta nativa se deriva de esta clase.
+
+A partir de Visual Studio 2017 update 15,8, puede usar el `GetOutOfDateItems` implementado en Microsoft.Cpp.Common.Tasks.dll para generar archivos .tlog para destinos personalizados con conocidos entradas y salidas de tareas.
+Como alternativa, puede crear mediante la `WriteLinesToFile` tarea. Consulte la `_WriteMasmTlogs` tener como destino en `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* como ejemplo.
 
 ## <a name="tlog-files"></a>archivos .tlog
 
@@ -314,7 +319,6 @@ El [FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata) cl
 
 Archivos .tlog de línea de comandos contienen información acerca de las líneas de comandos que se usará en la compilación. Solo se usan para las compilaciones incrementales, las comprobaciones no actualizadas, por lo que el formato interno viene determinada por la tarea de MSBuild que los genera.
 
-Si se crean archivos .tlog por una tarea, es mejor usar estas clases auxiliares para crearlos. Sin embargo, dado que la comprobación de actualización predeterminada ahora se basa únicamente en los archivos .tlog que se van, a veces resulta más conveniente producirlas en un destino sin una tarea. Puede escribir utilizando la `WriteLinesToFile` tarea. Consulte la `_WriteMasmTlogs` tener como destino en `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* como ejemplo.
 
 ### <a name="read-tlog-format"></a>Formato de lectura .tlog
 

@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: Ver, guardar y configurar archivos de registro de compilación | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Ver, guardar y configurar archivos de registro de compilación | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26ece0c0d46e5c747ac05bae8c2d4fc793c34601
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760062"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Cómo: Ver, guardar y configurar archivos de registro de compilación
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Procedimiento Ver, guardar y configurar archivos de registro de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre la compilación en la ventana **Salida**. Con esta información puede, por ejemplo, solucionar un error de compilación. En el caso de los proyectos de C++, también puede ver la misma información en un archivo .txt que se crea y se guarda automáticamente. Si se trata de proyectos de código administrado, puede copiar y pegar la información de la ventana **Salida** en un archivo .txt y guardarlo donde quiera. También puede usar el IDE para especificar qué tipo de información quiere ver para cada compilación.  
@@ -65,6 +60,3 @@ Después de compilar un proyecto en el IDE de Visual Studio, puede ver informaci
  [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

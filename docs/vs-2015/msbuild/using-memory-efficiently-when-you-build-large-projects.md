@@ -1,14 +1,9 @@
 ---
 title: Usar la memoria de forma eficaz al compilar proyectos grandes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - memory use (MSBuild)
 - msbuild, efficient memory use building large trees
@@ -17,13 +12,13 @@ ms.assetid: 853a21ed-69f7-4817-af00-57f73e2c74b5
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 89c7102a789f07cc9f0434dd5bf351ea4814d073
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b214ff057125b2921ec853fbee004cbb7d41f9e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218522"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792772"
 ---
 # <a name="using-memory-efficiently-when-you-build-large-projects"></a>Usar la memoria de forma eficaz al compilar grandes proyectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,6 +30,3 @@ Los proyectos grandes suelen contener numerosos subproyectos y otras dependencia
   
 ## <a name="see-also"></a>Vea también  
  [Compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
-
-
-

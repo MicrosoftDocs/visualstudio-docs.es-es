@@ -1,14 +1,9 @@
 ---
 title: Generar perfiles en clústeres HPC (Sistemas de alto rendimiento) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -25,13 +20,13 @@ ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809163"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802319"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (Sistemas de alto rendimiento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,8 +55,8 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
 |||  
 |-|-|  
 |*%HeadNode%*|Nombre del nodo principal del clúster.|  
-|*%FxPath%*|Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. En los medios de instalación de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] la ruta de acceso es: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En los medios de instalación de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] la ruta de acceso es: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. En el [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] es la ruta de acceso de medios de instalación: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En el [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] es la ruta de acceso de medios de instalación: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Generación de perfiles en un nodo de ejecución HPC  
  Configure una sesión de generación de perfiles mediante el Asistente de rendimiento HPC para especificar la información de destino y de clúster de HPC. Puede establecer opciones adicionales en las páginas de propiedades de la sesión de rendimiento. Las herramientas de generación de perfiles implementan los binarios de destino necesarios e inician el generador de perfiles y la aplicación HPC automáticamente.  
@@ -131,7 +126,7 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
   
 ### <a name="hpc-launch-properties"></a>Propiedades de inicio de HPC  
   
-|Property|Descripción|  
+|Propiedad.|Descripción|  
 |--------------|-----------------|  
 |**Nodo principal**|Especifica el equipo que actúa como el nodo principal de HPC en la generación de perfiles.|  
 |**Número de procesos**|Especifica el número de instancias de la aplicación que se ejecutan en la aplicación perfilada.|  
@@ -142,7 +137,7 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
   
 ### <a name="advanced-properties"></a>Avanzadas (Propiedades)  
   
-|Property|Descripción|  
+|Propiedad.|Descripción|  
 |--------------|-----------------|  
 |**Nombre del proyecto**|Muestra el nombre del proyecto o la solución de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] actual.|  
 |**Limpiar cuando se detenga el generador de perfiles**|Cuando es true, quita los binarios que se han implementado en el directorio de ejecución. Los archivos y directorios creados por el programa de usuario no se quitan en este paso. Si el directorio de ejecución y el de implementación fueron creados por el IDE, el IDE intentará quitarlos, pero no podrá hacerlo si tienen archivos no implementados por el IDE.|  
@@ -155,6 +150,3 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
 |**Argumentos de script anteriores a la generación de perfiles**|Especifica los argumentos para pasar al script que se ejecuta antes de la generación de perfiles.|  
 |**Script posterior a la generación de perfiles**|Especifica la ruta de acceso y el nombre de archivo de un script que se ejecutará en el equipo de desarrollo local después de finalizar la sesión de generación de perfiles.|  
 |**Argumentos de script posteriores a la generación de perfiles**|Especifica los argumentos para pasar al script que se ejecuta después de la generación de perfiles.|
-
-
-

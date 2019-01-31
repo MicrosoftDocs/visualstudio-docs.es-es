@@ -1,14 +1,9 @@
 ---
 title: RegisterAssembly (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RegisterAssembly
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: ba5f19ac-6764-4d28-9b79-a86de58f8987
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ca8def8de6a290822a6736f70a401ed7e0cf9bf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9913d2762b5ebfff98ddb9296637f3e8847ee2f2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769208"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,6 +66,3 @@ Lee los metadatos del ensamblado especificado y agrega las entradas necesarias a
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

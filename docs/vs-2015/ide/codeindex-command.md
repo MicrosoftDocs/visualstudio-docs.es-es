@@ -1,14 +1,9 @@
 ---
 title: CodeIndex (Comando)| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools [Team Foundation Server]
 - TFSConfig
@@ -17,13 +12,13 @@ ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9586348a1862820540613a5f191132c49fa6a74d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 624a2a735032342d4eb47e2393ecae3ea3247891
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797299"
 ---
 # <a name="codeindex-command"></a>CodeIndex (Comando)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +49,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Opción**|**Descripción**|  
 |----------------|---------------------|  
 |**/indexingStatus**|Muestra el estado y la configuración del servicio de indización de código.|  
-|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: inicia la indexación de todos los conjuntos de cambios.<br />-   **off**: detiene la indexación de todos los conjuntos de cambios.<br />-   **keepupOnly**: detiene la indexación de los conjuntos de cambios creados previamente e inicia solo la indexación de los nuevos conjuntos de cambios.|  
-|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Puede usar el carácter comodín (*) al principio, al final o en ambos extremos de la ruta de acceso del servidor.|Especifica una lista de archivos de código, con sus rutas de acceso, que no desea que estén indizados.<br /><br /> -   **add**: agrega el archivo que no quiere indexar a la lista de archivos omitidos.<br />-   **remove**: quita el archivo que quiere indexar de la lista de archivos omitidos.<br />-   **removeAll**: borra la lista de archivos omitidos e inicia la indexación de todos los archivos.<br />-   **view**: permite ver todos los archivos que no se están indexando.|  
+|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: Inicia la indexación de todos los conjuntos de cambios.<br />-   **off**: Detiene la indexación de todos los conjuntos de cambios.<br />-   **keepupOnly**: Detiene la indexación de los conjuntos de cambios creados previamente e inicia solamente la de nuevos conjuntos de cambios.|  
+|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Puede usar el carácter comodín (*) al principio, al final o en ambos extremos de la ruta de acceso del servidor.|Especifica una lista de archivos de código, con sus rutas de acceso, que no desea que estén indizados.<br /><br /> -   **add**: Agrega el archivo que no se quiere indexar a la lista de archivos omitidos.<br />-   **remove**: Quita el archivo que se quiere indexar de la lista de archivos omitidos.<br />-   **removeAll**: Borra la lista de archivos omitidos e inicia la indexación de todos los archivos.<br />-   **view**: Permite ver todos los archivos que no se están indexando.|  
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Muestra el número especificado de archivos que supera el tamaño especificado en KB. Posteriormente, puede usar la opción **/ignoreList** para excluir estos archivos de la indexación.|  
 |**/reindexAll**|Borra datos anteriormente indizados y reinicia la indización.|  
 |**/destroyCodeIndex [/noPrompt]**|Elimina el índice de código y quita todos los datos indizados. No requiere confirmación si usa la opción **/noPrompt**.|  
-|**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|Controla la cantidad de datos temporales creados por CodeLens al procesar los conjuntos de cambios. El límite predeterminado es de 2 GB.<br /><br /> -   **view**: muestra el límite de tamaño actual.<br />-   `SizeInGBs`: cambia el límite de tamaño.<br />-   **disable**: quita el límite de tamaño.<br /><br /> Este límite se comprueba antes de que CodeLens procese un conjunto de cambios nuevo. Si los datos temporales superan este límite, CodeLens se pausará al procesar los conjuntos de cambios antiguos, pero no los nuevos. CodeLens comenzará a procesar de nuevo cuando los datos se hayan limpiado y no superen este límite. La limpieza se ejecuta automáticamente una vez al día. Esto significa que los datos temporales podrían superar este límite hasta que empiece a ejecutarse la limpieza.|  
-|**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|Controla durante cuánto tiempo se indizará el historial de cambios. Esto afecta a la cantidad de historial mostrado por CodeLens. El límite predeterminado son 12 meses. Esto significa que CodeLens solo muestra el historial de cambios de los últimos 12 meses.<br /><br /> -   **view**: muestra el número actual de meses.<br />-   **all**: indexa todo el historial de cambios.<br />-   `NumberOfMonths`: cambia el número de meses usados para indexar el historial de cambios.|  
+|**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|Controla la cantidad de datos temporales creados por CodeLens al procesar los conjuntos de cambios. El límite predeterminado es de 2 GB.<br /><br /> -   **view**: Muestra el límite de tamaño actual.<br />-   `SizeInGBs`: Cambia el límite de tamaño.<br />-   **disable**: Quita el límite de tamaño.<br /><br /> Este límite se comprueba antes de que CodeLens procese un conjunto de cambios nuevo. Si los datos temporales superan este límite, CodeLens se pausará al procesar los conjuntos de cambios antiguos, pero no los nuevos. CodeLens comenzará a procesar de nuevo cuando los datos se hayan limpiado y no superen este límite. La limpieza se ejecuta automáticamente una vez al día. Esto significa que los datos temporales podrían superar este límite hasta que empiece a ejecutarse la limpieza.|  
+|**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|Controla durante cuánto tiempo se indizará el historial de cambios. Esto afecta a la cantidad de historial mostrado por CodeLens. El límite predeterminado son 12 meses. Esto significa que CodeLens solo muestra el historial de cambios de los últimos 12 meses.<br /><br /> -   **view**: Muestra el número actual de meses.<br />-   **all**: Indexa todo el historial de cambios.<br />-   `NumberOfMonths`: Cambia el número de meses usados para indexar el historial de cambios.|  
 |**/collectionName:** `CollectionName`|Especifica el nombre de la colección de proyectos de equipo en la que se va a ejecutar el comando **CodeIndex**. Es obligatorio si no usa **/CollectionId**.|  
 |**/collectionId:** `CollectionId`|Especifica el número de identificación de la colección de proyectos de equipo en la que se va a ejecutar el comando **CodeIndex**. Es obligatorio si no usa **/CollectionName**.|  
   
@@ -130,8 +125,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Administración de la configuración del servidor con TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [Herramientas de la línea de comandos de TFS](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)
-
-
-
+ [Administración de la configuración del servidor con TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
+ [Herramientas de la línea de comandos de TFS](http://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)

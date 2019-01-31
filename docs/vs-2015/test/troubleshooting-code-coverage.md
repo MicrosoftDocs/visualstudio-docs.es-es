@@ -1,24 +1,19 @@
 ---
 title: Solución de problemas de cobertura de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: troubleshooting
 ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f7df2f4c83a61c62a7774bea475d54c3deea4c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797371"
 ---
 # <a name="troubleshooting-code-coverage"></a>Solucionar problemas de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,6 +147,3 @@ La herramienta de análisis de cobertura de código de Visual Studio recopila da
   
 ## <a name="see-also"></a>Vea también  
  [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-
-
-

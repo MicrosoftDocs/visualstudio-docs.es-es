@@ -1,24 +1,19 @@
 ---
 title: Usar emuladores para aislar las pruebas unitarias para las aplicaciones de SharePoint 2010 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4c2922d5be6c3326dac3b0c2667e5210ec908722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b111ee037fe02e3c98d0628a4c358c56153c2053
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802692"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Usar emuladores para aislar las pruebas unitarias para las aplicaciones de SharePoint 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -597,6 +592,3 @@ namspace MySPAppTests
  [Probar aplicaciones de SharePoint 2010 con pruebas automatizadas de IU](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)   
  [Rendimiento web y pruebas de carga de aplicaciones de SharePoint 2010 y 2013](http://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
  [Desarrollar soluciones de SharePoint](http://msdn.microsoft.com/library/059bce0f-c301-4234-a0b4-9c14b7cdfa3e)
-
-
-

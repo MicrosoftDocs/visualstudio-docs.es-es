@@ -1,13 +1,9 @@
 ---
 title: Personalizar los diseños de ventana
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.windows
 - vs.environment
@@ -27,13 +23,13 @@ ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53934380"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802034"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +77,7 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
   Las ventanas de herramientas y de documento se pueden organizar arrastrándolas, mediante los comandos del menú **Ventana** y haciendo clic con el botón derecho en la barra de título de la ventana que se desea organizar.
 
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+>  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Acoplar ventanas
  Al hacer clic y arrastrar la barra de título de una ventana de herramientas o la pestaña de una ventana de documento, aparece un rombo de guía. Durante la operación de arrastre, cuando el cursor del ratón se encuentra sobre una de las flechas del rombo, aparece un área sombreada que muestra dónde se acoplará la ventana al soltar el botón del ratón.
@@ -186,4 +182,4 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 |[Tipos de ventanas](../misc/kinds-of-windows.md)|Describe las diferencias entre las ventanas de herramientas y las ventanas de documento en el IDE.|
 |[Cómo: ordenar y acoplar las ventanas](../misc/how-to-arrange-and-dock-windows.md)|Describe cómo acoplar las ventanas, ocultarlas de forma automática y disponerlas en mosaico, así como la manera de restablecer el diseño de las ventanas.|
 |[Cómo: moverse por el IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Describe cómo puede recorrer las ventanas abiertas del IDE, por orden de uso. También describe cómo puede ir a documentos concretos.|
-|[Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Contiene información sobre las combinaciones de opciones de configuración y cómo estas opciones afectan a los diseños de ventanas, los métodos abreviados de teclado y otros elementos del IDE.|
+|[Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Contiene información sobre las combinaciones de opciones de configuración y cómo estas opciones afectan a los diseños de ventanas, los métodos abreviados de teclado y otros elementos del IDE.|

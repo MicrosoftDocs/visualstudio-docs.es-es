@@ -1,14 +1,9 @@
 ---
 title: Conjunto de herramientas de MSBuild (ToolsVersion) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, multitargeting
 - targeting a specific .NET framework [MSBuild]
@@ -18,13 +13,13 @@ ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
 caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f2f570252a5bf87d0949bcda04ba312fe8092704
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851834"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773043"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Conjunto de herramientas de MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +72,7 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
   
 - Mediante los métodos de la clase <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
   
-  Las propiedades del conjunto de herramientas especifican las rutas de acceso de las herramientas. MSBuild usa el valor del atributo `ToolsVersion` del archivo de proyecto para encontrar la clave del Registro correspondiente, y después utiliza la información de dicha clave para establecer las propiedades del conjunto de herramientas. Por ejemplo, si `ToolsVersion` tiene el valor `12.0`, MSBuild establece las propiedades del conjunto de herramientas en función de esta clave del Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  Las propiedades del conjunto de herramientas especifican las rutas de acceso de las herramientas. MSBuild usa el valor del atributo `ToolsVersion` del archivo de proyecto para encontrar la clave del Registro correspondiente, y después utiliza la información de dicha clave para establecer las propiedades del conjunto de herramientas. Por ejemplo, si `ToolsVersion` tiene el valor `12.0`, MSBuild establece las propiedades del conjunto de herramientas conforme a esta clave del Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
   Estas son las propiedades del conjunto de herramientas:  
   
@@ -124,6 +119,3 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 ## <a name="see-also"></a>Vea también  
  [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md)   
  [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

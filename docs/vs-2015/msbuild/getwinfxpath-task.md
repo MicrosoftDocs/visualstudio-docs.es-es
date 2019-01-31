@@ -1,14 +1,9 @@
 ---
 title: GetWinFXPath (tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: b1dfb467-f3d3-47f3-83ef-af7b0e33a772
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ca9f7240e8f1f521d3eac9c3915f9a78e142bc1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3587cb1308c5d85cebc57f759ab488cb205cddf0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778904"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,6 +66,3 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> devuelve el directori
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Compilar una aplicación de WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
-
-
-

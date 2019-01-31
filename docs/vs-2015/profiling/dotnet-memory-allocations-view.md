@@ -1,14 +1,9 @@
 ---
 title: Vista de asignaciones de memoria de .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760354"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798812"
 ---
 # <a name="net-memory-allocations-view"></a>Vista de asignaciones de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,6 +59,3 @@ La vista de asignaciones enumera los tipos que se han creado durante la generaci
 |**Porcentaje de bytes inclusivos**|-   Para una función, el porcentaje de toda la memoria asignada en la generación de perfiles que eran asignaciones inclusivas del tipo primario por parte de la función.<br />-   Para un tipo, el porcentaje de toda la memoria asignada en la generación de perfiles que se ha asignado para las instancias del tipo.|  
 |**Bytes exclusivos**|-   Para una función, el número de bytes de memoria que la función ha asignado para objetos del tipo primario. Este número no incluye la memoria que sus funciones secundarias han asignado.<br />-   Para un tipo, el número total de bytes asignados en la generación de perfiles para las instancias del tipo.|  
 |**Porcentaje de bytes exclusivos**|-   Para una función, el porcentaje de toda la memoria asignada en la generación de perfiles que eran asignaciones exclusivas del tipo primario por parte de la función.<br />-   Para un tipo, el porcentaje de toda la memoria asignada en la generación de perfiles que se ha asignado para las instancias del tipo.|
-
-
-

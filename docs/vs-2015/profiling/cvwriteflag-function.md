@@ -1,14 +1,9 @@
 ---
 title: CvWriteFlag (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvWriteFlagExVA
 - cvmarkers/CvWriteFlagExW
@@ -23,13 +18,13 @@ ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 83dde7f6dfa465cc56a208ae041f52c7caf50682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bea5e2acea9a89c5a3b2fdfba441530a74ad8515
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802985"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779154"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,6 +93,3 @@ HRESULT CvWriteFlagExVA(
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)
-
-
-
