@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fe434c1128c9f0b81455e010872ccaa49790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67ac7693d4332c4dc5d6eae3fb89cf3e9a9c2384
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871630"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953036"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procedimiento Cambio del idioma de publicación de una aplicación ClickOnce
 
@@ -47,4 +47,4 @@ El `Publish language` propiedad puede establecerse el **opciones de publicación
 ## <a name="see-also"></a>Vea también
 
 - [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

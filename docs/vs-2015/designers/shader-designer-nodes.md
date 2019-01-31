@@ -1,25 +1,20 @@
 ---
 title: Nodos del Diseñador de sombras | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 659ac2dadd5500ef3cd4a4a3e7c3b36b91e9cc49
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293506"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793269"
 ---
 # <a name="shader-designer-nodes"></a>Nodos del Diseñador de sombras
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Los artículos de esta sección de la documentación contienen información sobr
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Descripción|  
 |-----------|-----------------|  
 |[Nodos de constante](../designers/constant-nodes.md)|Describe los nodos que se pueden usar para representar valores literales y la información de estado de vértice interpolada en los cálculos del sombreador. Como el estado de los vértices se interpola, y por tanto es diferente para cada píxel, cada instancia de sombreador de píxeles recibe una versión diferente de la constante.|  
 |[Nodos de parámetros](../designers/parameter-nodes.md)|Describe los nodos que se pueden usar para representar la posición de la cámara, propiedades de los materiales, parámetros de iluminación, hora y otra información de estado de la aplicación en los cálculos del sombreador.|  
@@ -57,6 +52,3 @@ Los artículos de esta sección de la documentación contienen información sobr
 |[Nodos matemáticos](../designers/math-nodes.md)|Describe los nodos que se pueden usar para realizar operaciones algebraicas, lógicas, trigonométricas y otras operaciones matemáticas que se asignan directamente a las instrucciones de HLSL.|  
 |[Nodos de utilidad](../designers/utility-nodes.md)|Describe los nodos que se pueden usar para realizar operaciones de iluminación y otras operaciones comunes que no se asignan directamente a las instrucciones de HLSL.|  
 |[Nodos de filtro](../designers/filter-nodes.md)|Describe los nodos que se pueden usar para realizar el filtrado de textura y de color.|
-
-
-

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 62aee7c3-d314-4272-a32b-b2818f32fab8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 102d3456e1daf3c72f5f6c95c629ca2a42e7542f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91daf238b1bc02c5f6799188a9e9540d3839dfeb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907714"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980380"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfaces (Debug Interface Access SDK)
 Los métodos están enumerados alfabéticamente en cada interfaz en la tabla de contenido y en la página de interfaz en el orden de Vtable.  

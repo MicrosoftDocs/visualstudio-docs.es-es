@@ -1,22 +1,18 @@
 ---
 title: Visual Studio Tools para Apache Cordova | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 21dcf46e-5d6d-439c-90e3-3d678e50c5a6
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: f439fdedd1be094eb2f1b437b2abeed2c49bc8b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0d0903db05b193b3318dc30c250bfdb21e76b093
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785502"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools para Apache Cordova
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +29,6 @@ Cree aplicaciones que se ejecutan en dispositivos iOS, Android y Windows, y que 
   
 - Un proyecto totalmente compatible con la interfaz de línea de comandos.  
   
-  Si está considerando la posibilidad de usar estas herramientas, pero aún no está listo para probarlas, visite nuestra página de [características](https://www.visualstudio.com/explore/cordova-vs) , donde encontrará más información sobre ellas.  
+Si está considerando la posibilidad de usar estas herramientas, pero aún no está listo para probarlas, visite nuestra página de [características](https://www.visualstudio.com/explore/cordova-vs) , donde encontrará más información sobre ellas.  
   
-  Si está listo para comenzar, visite nuestro [sitio web](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/).
-
-
-
+Si está listo para comenzar, consulte [desarrollo móvil con JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017).

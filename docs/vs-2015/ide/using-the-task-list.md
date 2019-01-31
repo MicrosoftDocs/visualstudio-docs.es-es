@@ -1,14 +1,9 @@
 ---
 title: Usar la Lista de tareas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -20,13 +15,13 @@ ms.assetid: f46a75a8-47b3-4cb6-bb59-b72e3356a664
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172034"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801175"
 ---
 # <a name="using-the-task-list"></a>Usar la Lista de tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Use la **Lista de tareas** para hacer un seguimiento de los comentarios de códi
   
 #### <a name="to-open-the-task-list"></a>Para abrir la Lista de tareas  
   
--   En el menú **Ver**, elija **Lista de tareas** (teclado: CTRL+\\, T).  
+-   En el **vista** menú, elija **lista de tareas** (teclado: CTRL+\\, T).  
   
      ![Ventana Lista de tareas](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -91,7 +86,7 @@ Use la **Lista de tareas** para hacer un seguimiento de los comentarios de códi
  Dado que `TODO` es un token predefinido, este comentario aparece como una tarea `TODO` en la lista.  
   
 ###  <a name="customTokens"></a> Tokens personalizados  
- De forma predeterminada, Visual Studio incluye los tokens siguientes: HACK, TODO, UNDONE, NOTE. Estos no distinguen mayúsculas de minúsculas.  
+ De forma predeterminada, Visual Studio incluye los tokens siguientes: HACK, TODO, DESHECHA, TENGA EN CUENTA. Estos no distinguen mayúsculas de minúsculas.  
   
  También puede crear tokens propios personalizados.  
   
@@ -127,12 +122,9 @@ Use la **Lista de tareas** para hacer un seguimiento de los comentarios de códi
   
 #### <a name="to-create-a-shortcut"></a>Para crear un acceso directo  
   
--   Inserte el puntero donde desee colocar un acceso directo en el código. Elija **Editar &#124; Marcadores &#124; Agregar acceso directo de la Lista de tareas** o presione (teclado: CTRL+K, CTRL+H).  
+-   Inserte el puntero donde desee colocar un acceso directo en el código. Elija **editar &#124; marcadores &#124; agregar acceso directo de lista de tareas** o presione (teclado: Ctrl+K, Ctrl+H  
   
      Para navegar por los accesos directos en el código, elija un acceso directo de la lista y, después, elija **Tarea siguiente** o **Tarea anterior** en el menú contextual.  
   
 ## <a name="see-also"></a>Vea también  
  [Lista de tareas, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/task-list-environment-options-dialog-box.md)
-
-
-

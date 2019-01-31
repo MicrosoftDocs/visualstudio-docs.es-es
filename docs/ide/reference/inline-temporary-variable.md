@@ -5,18 +5,18 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa329dd3fe7d01046c35be9829aed4ca4519c3e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37a70dd119cf94bf79796cdc0684c8dbee47032c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909039"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991267"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Refactorización de inserción de una variable temporal
 

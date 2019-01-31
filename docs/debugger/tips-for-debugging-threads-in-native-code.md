@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 0374c8c6-57a3-4cfe-8047-2effef5ff5dc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8787af757a65a25cdd03240bd3942030120ad48
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 363e42700188c931c8be84d456a21112142925c8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910079"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968849"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>Sugerencias para depurar subprocesos en código nativo
 A continuación se muestran algunas sugerencias que puede usar al depurar subprocesos en código nativo:  

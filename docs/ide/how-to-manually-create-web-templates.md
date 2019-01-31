@@ -10,13 +10,13 @@ helpviewer_keywords:
 - project templates [Visual Studio], Web
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 052e9daa7911051138e831436cad23de7ae7ee8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 21c44587d3398313993e0e65bb32b1dbbbb98dc2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921856"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955926"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Procedimiento para crear plantillas web manualmente
 
