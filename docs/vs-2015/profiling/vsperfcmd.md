@@ -1,14 +1,9 @@
 ---
 title: VSPerfCmd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, VSPerfCmd tool
 - command-line tools, VSPerfCmd tool
@@ -19,13 +14,13 @@ ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e8cd602a005026c8dec4bf5a309d6f04044b960d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766671"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776103"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,8 +61,8 @@ VSPerfCmd [/U] [/options]
   
 |Opción|Descripción|  
 |------------|-----------------|  
-|[Launch](../profiling/launch.md) **:** *Executable*|Inicia la aplicación específica y empieza a generar perfiles.|  
-|[Args](../profiling/args.md) **:** *Arguments*|Especifica los argumentos de la línea de comandos que se van a pasar a la aplicación iniciada.|  
+|[Launch](../profiling/launch.md) **:** *Ejecutable*|Inicia la aplicación específica y empieza a generar perfiles.|  
+|[Args](../profiling/args.md) **:** *Argumentos*|Especifica los argumentos de la línea de comandos que se van a pasar a la aplicación iniciada.|  
 |[Consola](../profiling/console.md)|Inicia el comando especificado en una nueva ventana del símbolo del sistema.|  
 |[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Inicia la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por identificador de proceso o por nombre de proceso.|  
 |[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Detiene la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por identificador de proceso o por nombre de proceso. Si no se especifica ningún proceso, la generación de perfiles se detiene para todos los procesos.|  
@@ -101,6 +96,3 @@ VSPerfCmd [/U] [/options]
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

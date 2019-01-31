@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: Crear un modelo 3D básico | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un modelo 3D básico | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83d4069135adf37156457321b8ce15a254c9c27b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760776"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>Cómo: Crear un modelo 3D básico
+# <a name="how-to-create-a-basic-3-d-model"></a>Procedimiento Crear un modelo 3D básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Editor de modelos para crear un modelo 3D básico.  
@@ -79,12 +74,9 @@ En este documento se muestra cómo usar el Editor de modelos para crear un model
   
    ![El modelo completado de la casa simplificada](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")  
   
-   Como paso siguiente, puede aplicar un sombreador a este modelo 3D. Para más información, vea [Cómo: aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+   Como paso siguiente, puede aplicar un sombreador a este modelo 3D. Para obtener información, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md)   
+ [Cómo: Modelo terreno en 3D](../designers/how-to-model-3-d-terrain.md)   
  [Editor de modelos](../designers/model-editor.md)   
  [Diseñador de sombras](../designers/shader-designer.md)
-
-
-

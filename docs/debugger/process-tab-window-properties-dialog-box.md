@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bb464429-4e7c-4919-98b5-1aaafe89bb5f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 557f471a841aa549ecb67fbe99a40b69465fb4b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afa1d17b31a75945392dd5bc49f5a1979e265180
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968026"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924865"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Pestaña Proceso (Cuadro de diálogo Propiedades de la ventana)
 Use la **proceso** ficha para identificar el proceso de la ventana seleccionada. Para mostrar el [ventana cuadro de diálogo de propiedades](../debugger/window-properties-dialog-box.md), mover el foco a la [Windows Vista](../debugger/windows-view.md) ventana. Seleccione el nodo de una ventana en el árbol y luego elija **propiedades** desde el **vista** menú.  

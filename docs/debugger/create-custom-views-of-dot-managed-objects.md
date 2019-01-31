@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 9969e9b2-9008-4729-8a14-0d6deaa61576
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2e4b2d34df1a1e870247112892d4cd00ff887f3
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 57480eff4e2ad6e6c33008be6f1bbc2a2f332432
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227647"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015100"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Crear vistas personalizadas de objetos (C#, Visual Basic, C++)
 Se puede personalizar la manera en que Visual Studio muestra los tipos de datos en las ventanas de variables del depurador.  

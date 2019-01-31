@@ -1,14 +1,9 @@
 ---
 title: marker_series (Clase) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: b8445ed0-c512-4f92-b6b4-3d05c044f939
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bd82862800feacf92059a2d019e9f9988616d615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb199d74ade593d0bc8318c27bc96ffbf70e4dcf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754186"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778875"
 ---
 # <a name="markerseries-class"></a>marker_series (Clase)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,14 +35,14 @@ class marker_series;
   
 ### <a name="public-constructors"></a>Constructores públicos  
   
-|Name|Descripción|  
+|nombre|Descripción|  
 |----------|-----------------|  
 |[marker_series::marker_series (Constructor)](../profiling/marker-series-marker-series-constructor.md)|Inicializa una nueva instancia de la clase `marker_series`.|  
 |[marker_series::~marker_series (Destructor)](../profiling/marker-series-tilde-marker-series-destructor.md)|Destruye el objeto marker_series y libera todos los recursos asignados.|  
   
 ### <a name="public-methods"></a>Métodos públicos  
   
-|Name|Descripción|  
+|nombre|Descripción|  
 |----------|-----------------|  
 |[marker_series::is_enabled (Método)](../profiling/marker-series-is-enabled-method.md)|Determina si alguna sesión habilitó el proveedor.|  
 |[marker_series::write_alert (Método)](../profiling/marker-series-write-alert-method.md)|Escribe una alerta en el archivo de seguimiento del visualizador de simultaneidad.|  
@@ -60,10 +55,7 @@ class marker_series;
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkersobj.h  
   
- **Espacio de nombres:** Concurrency::diagnostic  
+ **Espacio de nombres**: Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Vea también  
  [diagnostic (Espacio de nombres)](../profiling/diagnostic-namespace.md)
-
-
-

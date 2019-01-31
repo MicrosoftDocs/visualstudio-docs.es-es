@@ -1,27 +1,22 @@
 ---
 title: Bibliografía sobre seguridad | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio], additional information
 ms.assetid: 3e839007-c388-4fc4-a6d1-8127cd207750
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0634c07d18fc9bac782eb2ccd2407afd86089e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6440dabdc1252440e68e424e94aa6534d63173e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178716"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784211"
 ---
 # <a name="security-bibliography"></a>Bibliografía sobre seguridad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ A continuación se incluye una selección de los recursos, disponibles en línea
   
  [Microsoft TechNet Security](http://go.microsoft.com/fwlink/?LinkId=67991)  
  Contiene indicadores a la información técnica más importante sobre seguridad para los profesionales informáticos (IT) y los "usuarios avanzados".
-
-
-

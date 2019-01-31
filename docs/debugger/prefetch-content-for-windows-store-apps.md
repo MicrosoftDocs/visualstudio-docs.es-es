@@ -9,15 +9,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6f8ebe41f2775dddd5f70c654e21c7dc64adc44e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe9d698e5732c0dfe4c9282e6cfac683e0d4d8b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835204"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984228"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Depurar aplicaciones para UWP con contenido precargado en Visual Studio
   
@@ -40,4 +40,4 @@ ms.locfileid: "53835204"
 >  Repite estos pasos siempre que agregues o modifiques el contenido web especificado.  
   
 ## <a name="see-also"></a>Vea también  
- [Entrada de blog Desencadenar precarga de aplicaciones de Windows Store en Visual Studio 2013 Update 2](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+ [Entrada de blog: Desencadenar precarga de aplicaciones de Windows Store en Visual Studio 2013 Update 2](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

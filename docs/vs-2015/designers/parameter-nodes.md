@@ -1,25 +1,20 @@
 ---
 title: Nodos de parámetros | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bb15b19ebdef04facdb66d4b97042bb47e4cb5fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 110f380f7450d611de5786fb865bdee8e64195f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276295"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764176"
 ---
 # <a name="parameter-nodes"></a>Nodos de parámetros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ En el Diseñador de sombras, los nodos de parámetro representan entradas al som
 |**Potencia especular de material**|Valor escalar que describe la intensidad de los reflejos especulares.<br /><br /> Cuanto mayor sea la potencia especular, más intensidad y alcance tiene la iluminación especular.<br /><br /> **Salida:**<br /><br /> `Output`: `float`<br /> Un término exponencial que describe la intensidad de los reflejos especulares en el píxel actual.|**Acceso**<br /> **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**<br /> El exponente que define la intensidad de los reflejos especulares en el píxel actual.|  
 |**Tiempo normalizado**|El tiempo en segundos, normalizado en el intervalo [0, 1], de forma que cuando el tiempo llega a 1, se restablece en 0.<br /><br /> Se puede usar como parámetro en los cálculos del sombreador, por ejemplo, para animar coordenadas de textura, valores de color u otros atributos.<br /><br /> **Salida:**<br /><br /> `Output`: `float`<br /> El tiempo normalizado, en segundos.|Ninguna|  
 |**Tiempo**|Tiempo en segundos.<br /><br /> Se puede usar como parámetro en los cálculos del sombreador, por ejemplo, para animar coordenadas de textura, valores de color u otros atributos.<br /><br /> **Salida:**<br /><br /> `Output`: `float`<br /> El tiempo, en segundos.|Ninguna|
-
-
-

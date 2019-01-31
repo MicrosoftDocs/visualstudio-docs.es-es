@@ -1,25 +1,20 @@
 ---
 title: Visualizar eventos EventSource como marcadores | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c39f137299c1f229de8c3c6dc8d7329cba6033cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801497"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
   
 ### <a name="marker-type"></a>Tipo de marcador  
   
-1.  Los eventos que tienen un [Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start orwin:Stop se tratan como el principio o el final de un intervalo, respectivamente.  Los intervalos anidados o superpuestos no se pueden mostrar. Los pares de eventos que comienzan en un subproceso y acaban en otro no se pueden mostrar.  
+1.  Los eventos que tienen un [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start orwin:Stop se tratan como el principio o el final de un intervalo, respectivamente.  Los intervalos anidados o superpuestos no se pueden mostrar. Los pares de eventos que comienzan en un subproceso y acaban en otro no se pueden mostrar.  
   
-2.  Un evento cuyo código de operación no es win:Start ni win:Stop se trata como una marca de marcador a menos que su [Level](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) sea win:Verbose o superior.  
+2.  Un evento cuyo código de operación no es win:Start ni win:Stop se trata como una marca de marcador a menos que su [Level](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) sea win:Verbose o superior.  
   
 3.  En los demás casos, el evento se trata como un mensaje.  
   
@@ -103,6 +98,3 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
   
 ## <a name="see-also"></a>Vea también  
  [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)
-
-
-
