@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b3bb42613fd28741ea6541a13ad08e3d12b97a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b968ac3cc7356aa085eb8237d37a5372e1f67bb7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949990"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944454"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Pestaña Ventanas (Cuadro de diálogo Propiedades de la ventana)
 Use la **Windows** ficha para mostrar información sobre windows relacionadas con la ventana seleccionada. Para mostrar el [ventana cuadro de diálogo de propiedades](../debugger/window-properties-dialog-box.md), mover el foco a la [Windows Vista](../debugger/windows-view.md) ventana. Seleccione el nodo de una ventana en el árbol y luego elija **propiedades** desde el **vista** menú.  

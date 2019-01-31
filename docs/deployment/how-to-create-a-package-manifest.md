@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Creación de un manifiesto de paquete | Microsoft Docs'
+title: Procedimiento Crear un manifiesto de paquete | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d7a9863891d8d7c0e91ba2b7bc243908860d0a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943478"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976490"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Procedimiento Creación de un manifiesto de paquete
+# <a name="how-to-create-a-package-manifest"></a>Procedimiento Crear un manifiesto de paquete
 Para implementar los requisitos previos para la aplicación, puede usar un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único, pero un manifiesto del paquete para cada configuración regional. Funcionalidad compartida entre diferentes versiones localizadas debe incluirse en el manifiesto del producto.  
   
  Para obtener más información acerca de los manifiestos de paquete, vea [Cómo: Creación de un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md)  

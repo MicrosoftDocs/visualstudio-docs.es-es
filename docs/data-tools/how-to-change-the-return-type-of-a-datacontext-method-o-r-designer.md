@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77d7b98367e343f90827429ad50be91527f7f303
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 297f4df8c34f7289cb39dfaf2b5d1d9c8c88314e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939442"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004713"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Procedimiento Cambio del tipo de valor devuelto de un método DataContext (Object Relational Designer)
 El tipo de valor devuelto de un <xref:System.Data.Linq.DataContext> método (creado a partir de un procedimiento almacenado o función) difiere dependiendo de dónde se coloque el procedimiento almacenado o la función en el **Object Relational Designer**. Si se coloca un elemento directamente en una clase de entidad existente, se crea un método de <xref:System.Data.Linq.DataContext> que tiene el tipo de valor devuelto de la clase de entidad (si el esquema de los datos devueltos por el procedimiento almacenado o la función coincide con la forma de la clase de entidad). Si coloca un elemento en un área vacía de la **Object Relational Designer**, un <xref:System.Data.Linq.DataContext> se crea el método que devuelve un tipo generado automáticamente. Se puede cambiar el tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> después de agregarlo al panel de métodos. Para examinar o cambiar el tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext>, selecciónelo y haga clic en la propiedad **Tipo devuelto** en la ventana **Propiedades**.

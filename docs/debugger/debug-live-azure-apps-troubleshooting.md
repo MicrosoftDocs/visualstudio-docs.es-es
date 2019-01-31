@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 511a0697-c68a-4988-9e29-8d0166ca044a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f16206b4c537c141bd90615580934c4481ddf06
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 817e6f31d9282caf77c9f403c7e5555075726d2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880668"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943804"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solución de problemas y problemas conocidos para la instantánea de depuración en Visual Studio
 

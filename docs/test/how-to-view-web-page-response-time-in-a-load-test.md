@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 885729100f56c7f3491f17b10f6731e3d4df6eb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75f2538c5c07231fa46f70a640784d1b6ac93712
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850143"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970531"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedimiento para ver el tiempo de respuesta de la página web en una prueba de carga mediante el Analizador de pruebas de carga
 

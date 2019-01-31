@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1f4b9604afc511dcbb1362461a2e8c11c7098e
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 036f6918aaeb7fc7dfc0289028e01ea64cbd6736
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269779"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942862"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparación y configuración de la depuración
 En esta sección se describe la configuración de las propiedades relacionadas con el depurador y la preparación necesaria para depurar el programa con el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si crea el programa en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante las plantillas de proyecto, esta configuración se habilita automáticamente en la configuración Debug.  
