@@ -1,14 +1,9 @@
 ---
 title: Gráfico de utilización de la CPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.graph
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5332fd38-622d-47a3-874f-8c2fd7a30f95
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b1eb8baeee066336834cc1fcfe427512108387a3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cebba40ee1c438e7be8ea97dcfc7050491511039
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726999"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780739"
 ---
 # <a name="cpu-utilization-graph"></a>Gráfico de utilización de la CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,6 +38,3 @@ El gráfico de utilización de la CPU muestra el nivel de uso en una aplicación
 ## <a name="see-also"></a>Vea también  
  [Vista Utilización](../profiling/utilization-view.md)   
  [Uso medio de la CPU](../profiling/average-cpu-utilization.md)
-
-
-

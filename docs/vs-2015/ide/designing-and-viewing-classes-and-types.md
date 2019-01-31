@@ -1,14 +1,9 @@
 ---
 title: Diseñar y ver clases y tipos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 559702f41f2694a6042e26b2760251e775c9cad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b4d9636a29485430be92ab622ae8ce56712f22aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191628"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756864"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Diseñar y ver clases y tipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +31,11 @@ Diseñe, visualice y refactorice clases y otros tipos del código con el Diseña
   
  Aquí tiene más información sobre lo que puede hacer con los diagramas de clases:  
   
--   **Diseñar**: edite el código del proyecto modificando el diagrama de clases. Agregar nuevos elementos y eliminar los que no quiera. Los cambios se reflejan en el código.  
+-   **Diseñar**: Edite el código del proyecto al modificar el diagrama de clases. Agregar nuevos elementos y eliminar los que no quiera. Los cambios se reflejan en el código.  
   
--   **Visualizar**: comprenda la estructura del proyecto viendo las clases del proyecto en un diagrama. Personalice el diagrama para poder centrarse en los detalles del proyecto que más le importan. Guarde el diagrama para utilizarlo más adelante en demostraciones o documentación.  
+-   **Visualizar**: Comprenda la estructura del proyecto al ver las clases del proyecto en un diagrama. Personalice el diagrama para poder centrarse en los detalles del proyecto que más le importan. Guarde el diagrama para utilizarlo más adelante en demostraciones o documentación.  
   
--   **Refactorizar**: reemplace métodos, cambie el nombre de los identificadores, refactorice parámetros e implemente interfaces y clases abstractas.  
+-   **Refactorizar**: Reemplace métodos, cambie el nombre de identificadores, refactorice parámetros e implemente interfaces y clases abstractas.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Trabajar con clases y otros tipos (Diseñador de clases)](../ide/working-with-classes-and-other-types-class-designer.md)  
@@ -61,6 +56,3 @@ Diseñe, visualice y refactorice clases y otros tipos del código con el Diseña
  [Escribir código](../ide/writing-code-in-the-code-and-text-editor.md)  
   
  [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)
-
-
-

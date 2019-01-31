@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c795671f6e8f5f47d8b0da7e36fbb1f81ab95c28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 73d4d32af6e3aa76dd586f665c66d3ef014518ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958070"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961629"
 ---
 # <a name="process-search-dialog-box"></a>Cuadro de diálogo Buscar proceso
 Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un proceso concreto en [vista procesos](../debugger/processes-view.md). Para mostrar este cuadro de diálogo, mueva el foco a un **procesos** ventana de vista. A continuación, elija **Buscar proceso** desde el **búsqueda** menú.  

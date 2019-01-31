@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ee733077-d17a-4439-8a49-bc2f5dbc60d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f88994bb5752a16e690522d35259b0853e997b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4514f914569c6a28681ce5450d10913bbd7a22a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879087"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011694"
 ---
 # <a name="find-window-dialog-box"></a>Cuadro de diálogo Buscar ventana
 Utilice este cuadro de diálogo para seleccionar una ventana y mostrar sus propiedades o los mensajes. Para mostrar este cuadro de diálogo, elija **Buscar ventana** desde el **Spy** menú.  

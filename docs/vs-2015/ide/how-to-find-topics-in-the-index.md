@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Buscar temas en el índice | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Buscar temas en el índice | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Index tab [Help Viewer 2.0]
 - Help Viewer 2.0, using the index
@@ -20,15 +15,15 @@ ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50c19fdaeaf9842c91e5dd7e9ca1472355b1b3e0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815991"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758174"
 ---
-# <a name="how-to-find-topics-in-the-index"></a>Cómo: Buscar temas en el índice
+# <a name="how-to-find-topics-in-the-index"></a>Procedimiento Buscar temas en el índice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El índice contiene una lista de palabras clave asociadas a los temas del contenido instalado. Cada tema puede tener más de una palabra clave asociada, y cada palabra clave se puede asociar a más de un tema. Use este índice de la misma manera que usaría un índice de un libro.  
@@ -50,6 +45,3 @@ El índice contiene una lista de palabras clave asociadas a los temas del conten
   
 ## <a name="see-also"></a>Vea también  
  [Sugerencias para la búsqueda en el índice](../ide/index-search-tips.md)
-
-
-

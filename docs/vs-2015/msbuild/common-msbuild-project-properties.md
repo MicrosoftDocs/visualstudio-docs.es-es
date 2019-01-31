@@ -1,14 +1,9 @@
 ---
 title: Propiedades comunes de proyectos de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30371d20e240e5679664a687c5ca098519cac9c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300058"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758475"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
 |DisableFastUpToDateCheck|Valor booleano que solo se aplica a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. El administrador de compilación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utiliza un proceso denominado FastUpToDateCheck para determinar si es necesario recompilar un proyecto para actualizarlo. Este proceso es más rápido que utilizar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Al establecer la propiedad DisableFastUpToDateCheck en `true`, puede omitir el administrador de compilación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y obligarlo a usar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para determinar si el proyecto está actualizado.|  
 |DocumentationFile|Nombre del archivo que se genera como archivo de documentación XML. Este nombre solo incluye el nombre de archivo sin información sobre la ruta de acceso.|  
 |ErrorReport|Especifica cómo debe el compilador documentar los errores internos del compilador. Los valores válidos son "prompt", "send" o "none". Esta propiedad es equivalente al modificador `/errorreport` del compilador.|  
-|ExcludeDeploymentUrl|La [tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) agrega una etiqueta deploymentProvider al manifiesto de implementación si el archivo de proyecto incluye alguno de los elementos siguientes:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Sin embargo, mediante ExcludeDeploymentUrl, puede evitar que la etiqueta deploymentProvider se agregue al manifiesto de implementación aunque se especifique alguna de las direcciones URL anteriores. Para ello, agregue la siguiente propiedad al archivo de proyecto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Nota:** ExcludeDeploymentUrl no se expone en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y solo se puede establecer manualmente editando el archivo de proyecto. Al establecer esta propiedad, la publicación desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no resulta afectada; es decir, la etiqueta deploymentProvider se agregará de igual modo a la dirección URL especificada por PublishUrl.|  
+|ExcludeDeploymentUrl|La [tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) agrega una etiqueta deploymentProvider al manifiesto de implementación si el archivo de proyecto incluye alguno de los elementos siguientes:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Sin embargo, mediante ExcludeDeploymentUrl, puede evitar que la etiqueta deploymentProvider se agregue al manifiesto de implementación aunque se especifique alguna de las direcciones URL anteriores. Para ello, agregue la siguiente propiedad al archivo de proyecto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Nota:**  ExcludeDeploymentUrl no se expone en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y solo se puede establecer manualmente editando el archivo de proyecto. Al establecer esta propiedad, la publicación desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no resulta afectada; es decir, la etiqueta deploymentProvider se agregará de igual modo a la dirección URL especificada por PublishUrl.|  
 |FileAlignment|Especifica, en bytes, dónde se alinean las secciones del archivo de salida. Los valores válidos son 512, 1024, 2048, 4096, 8192. Esta propiedad es equivalente al modificador `/filealignment` del compilador.|  
 |FrameworkPathOverride|Especifica la ubicación de mscorlib.dll y microsoft.visualbasic.dll. Este parámetro es equivalente al modificador `/sdkpath` del compilador de vbc.exe.|  
 |GenerateDocumentation|Parámetro booleano que indica si la compilación generará la documentación. Si es `true`, la compilación genera la información de documentación y la coloca en un archivo .xml junto con el nombre del archivo ejecutable o la biblioteca creada por la tarea de compilación.|  
@@ -136,6 +131,3 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
   
 ## <a name="see-also"></a>Vea también  
  [Elementos comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-items.md)
-
-
-

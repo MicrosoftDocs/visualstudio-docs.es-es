@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdd69b83702b07aae8a1c39c6c9298201c2f048
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b738a419c93e1741fd2567fb18c9998beb181bd7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862171"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040637"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Solución de problemas de errores específicos de implementaciones de ClickOnce
 Este artículo enumeran los siguientes errores comunes que pueden producirse al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y proporciona los pasos para solucionar cada problema.  

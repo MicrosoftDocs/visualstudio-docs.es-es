@@ -1,14 +1,9 @@
 ---
 title: Tarea CallTarget | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fc3c5822732a4ae584500bfe1c48d7ba9e29b038
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 12c0992cd9d1ece4f9d3ea0d22512948fafaf5cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307682"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791399"
 ---
 # <a name="calltarget-task"></a>CallTarget (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,6 +68,3 @@ Invoca los destinos especificados en el archivo del proyecto.
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Destinos](../msbuild/msbuild-targets.md)
-
-
-

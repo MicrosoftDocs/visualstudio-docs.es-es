@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1325d32c3656a45cab41bd174596113a18c5f58c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56ed4b317dc9259458ddb9f984c5d086595d7846
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936911"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033926"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Información de la operación de compilación se divide entre los símbolos con un `SymTagCompiland` etiqueta (detalle baja) y un `SymTagCompilandDetails` etiqueta (detalle alto). `SymTagCompilandDetails` requiere la carga de símbolos adicionales. Sin embargo, ofrece una gran cantidad de información sobre la operación de compilación que no está disponible con un `SymTagCompiland` símbolos.  

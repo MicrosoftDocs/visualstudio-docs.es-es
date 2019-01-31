@@ -1,24 +1,19 @@
 ---
 title: Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e492f3bfaf725c157060a23778e1f1725bb88ee3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: baf26fb00a53e4680d44caf5fb8b2f2c5bd5f4c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188747"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773381"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Los registros de pruebas de IU programadas filtran y guardan información import
   
 ## <a name="how-do-i-do-this"></a>¿Cómo lo hago?  
   
-### <a name="step-1-enable-logging"></a>Paso 1: habilitar el registro  
+### <a name="step-1-enable-logging"></a>Paso 1: Habilite el registro  
  Según su escenario, use uno de los siguientes métodos para habilitar el registro.  
   
 -   .NET Framework versión 4 de destino sin archivo App.config en el proyecto de prueba  
@@ -69,7 +64,7 @@ Los registros de pruebas de IU programadas filtran y guardan información import
   
     -   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
-### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Paso 2: ejecutar la prueba de interfaz de usuario codificada y ver el registro  
+### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Paso 2: Ejecutar la prueba de IU codificada y ver el registro  
  Cuando ejecute una prueba de IU codificada una vez realizadas las modificaciones en el archivo **QTAgent32.exe.config**, verá que hay un vínculo de salida en los resultados del Explorador de pruebas. Los archivos de registro no solo se generan cuando la prueba produzca un error, sino también para las pruebas correctas cuando el nivel de seguimiento sea “detallado”.  
   
 1.  En el menú **PRUEBA**, seleccione **Ventanas** y después elija **Explorador de pruebas**.  
@@ -99,7 +94,7 @@ Los registros de pruebas de IU programadas filtran y guardan información import
   
 ## <a name="q--a"></a>Preguntas y respuestas  
   
-### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>P: ¿Qué sucedió con la clave EnableHtmlLogger?  
+### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>P: ¿Qué sucedió a la clave EnableHtmlLogger?  
  En versiones anteriores de Visual Studio, había dos opciones de configuración adicionales para habilitar el registrador Html en Prueba de IU codificada:  
   
 ```  
@@ -115,6 +110,3 @@ Los registros de pruebas de IU programadas filtran y guardan información import
 ## <a name="see-also"></a>Vea también  
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
  [Cómo: Ejecutar pruebas desde Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
-
-
-

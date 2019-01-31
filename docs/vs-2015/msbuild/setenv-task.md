@@ -1,14 +1,9 @@
 ---
 title: Tarea SetEnv | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.setenv
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: fd9e4225-68cb-4608-8b27-468b0218c936
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c15f0be4498c3ff3014c273d31657851c9e65b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4c5066709002c815e2cdad549d424af549eb0bca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784427"
 ---
 # <a name="setenv-task"></a>SetEnv (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,6 +48,3 @@ Establece o elimina el valor de una variable de entorno especificada.
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-
