@@ -1,27 +1,22 @@
 ---
 title: Crear una aplicación de actividad nativa de Android | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
 caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: f6bc8d96c6207889f07ec6bf1257be3d620855fc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 045955ff33cc4c4e745e0c844f1b2cca80e62955
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731423"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773876"
 ---
 # <a name="create-an-android-native-activity-app"></a>Crear una aplicación de Android Native Activity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +73,7 @@ Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataform
   
      Si ha instalado otros emuladores o ha conectado un dispositivo Android, puede elegirlos en la lista desplegable de destinos de implementación.  
   
-4.  Presione F5 para iniciar la depuración o Mayús+F5 para iniciar sin depurar.  
+4.  Presione F5 para iniciar la depuración o Mayús+F5 para iniciar sin depurar.  
   
      Este es el aspecto de la aplicación predeterminada en el emulador de Visual Studio para Android.  
   
@@ -89,4 +84,3 @@ Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataform
 5.  Presione Mayús+F5 para detener la depuración.  
   
      El emulador es un proceso independiente que sigue ejecutándose. Puede editar, compilar e implementar el código varias veces en el mismo emulador.
-

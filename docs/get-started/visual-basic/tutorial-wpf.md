@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c9d1dd1b17c9e3c301822a2c4a3b5eaae037d2f
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 3e1789a14d1b3d398372a6490c901b8e9b347691
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54405375"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013306"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Creación de una aplicación sencilla con Visual Basic
 
@@ -270,5 +270,5 @@ Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzam
 
 ## <a name="see-also"></a>Vea también
 
-- [Novedades de Visual Studio 2017](../../ide/whats-new-in-visual-studio.md)
+- [Novedades de Visual Studio 2017](../../ide/whats-new-visual-studio.md)
 - [Sugerencias de productividad](../../ide/productivity-tips-for-visual-studio.md)

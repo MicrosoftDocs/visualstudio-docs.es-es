@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2d8f9cd98d7f3fa794dedff87bfe4072906b075b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbe0144985355b30d92430d8b0a923987b7bf111
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891740"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936156"
 ---
 # <a name="work-with-sql-server-and-r"></a>Trabajar con SQL Server y R
 

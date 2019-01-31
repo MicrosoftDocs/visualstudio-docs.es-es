@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b3191df6ead3454bb138efae2aaf7183cc556d12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 326627f16bb431b582666cccafb6a511cf815718
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968370"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918607"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Editar código de R en Visual Studio
 
@@ -40,7 +40,7 @@ Para cambiar este comportamiento, vea la configuración **Avanzadas** > **Compro
 
 ## <a name="edit-and-organize-code"></a>Editar y organizar el código
 
-Mientras escribe código, RTVS proporciona finalización automática, como se describe en la página [IntelliSense](r-intellisense.md). También realiza formato automático como la finalización de paréntesis y llaves: 
+Mientras escribe código, RTVS proporciona finalización automática, como se describe en la página [IntelliSense](r-intellisense.md). También realiza formato automático como la finalización de paréntesis y llaves:
 
 ![Animación de formato en línea](media/editing-inline-formatting.gif)
 
@@ -129,6 +129,6 @@ Las opciones de la pestaña **R** > **Avanzadas** son específicas de RTVS:
 | | Lista de finalización en el primer carácter | Activado | Muestra la lista de finalización en los primeros tipos de caracteres. Si está desactivado, se muestra una lista de finalización con **Editar** > **IntelliSense** > **Lista de miembros** (**Ctrl**+**J**). |
 | | Lista de finalización en la tecla **Tab** | Desactivado | Invoca la lista de finalización al escribir uno o varios caracteres y presionar **Tab**. |
 | | Hacer coincidir nombres de argumentos escritos de forma parcial | Desactivado | Al escribir nombres de argumentos en una llamada de función, la ayuda de signatura muestra una descripción del argumento que coincide mejor. |
-| Ventana interactiva | Comprobación de sintaxis en la consola de R | Desactivado | Aplica la comprobación de sintaxis en la ventana interactiva. Es posible que la comprobación de sintaxis no funcione correctamente con instrucciones multilínea. | 
+| Ventana interactiva | Comprobación de sintaxis en la consola de R | Desactivado | Aplica la comprobación de sintaxis en la ventana interactiva. Es posible que la comprobación de sintaxis no funcione correctamente con instrucciones multilínea. |
 | esquematizar | Esquematización de código | Activado | Crea automáticamente regiones contraíbles para áreas como instrucciones multilínea. |
 | Comprobación de sintaxis | Mostrar errores de sintaxis | Activado | Habilita la comprobación automática de sintaxis del código. |

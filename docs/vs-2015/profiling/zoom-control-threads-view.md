@@ -1,14 +1,9 @@
 ---
 title: Zoom (control) (Vista de subprocesos) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.zoom
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 7f9bda07-53a8-4f11-9846-a3e31064c596
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 897ee8b650914b352c1cd4053428a35bf48997ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 44d816c7107d34cf81369a98ea0c435133e8e4b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804441"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767525"
 ---
 # <a name="zoom-control-threads-view"></a>Zoom (control) (Vista de subprocesos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ El control de zoom es un control deslizante que le ayuda a acercar y alejar la e
  [Modo de medida Activado/desactivado](../profiling/measure-mode-on-off.md)   
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)   
  [Navegador de uso](../profiling/utilization-navigator.md)
-
-
-

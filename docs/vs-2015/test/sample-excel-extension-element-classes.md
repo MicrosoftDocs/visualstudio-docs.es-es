@@ -1,26 +1,21 @@
 ---
-title: 'Extensión de Excel de muestra: clases de elementos | Microsoft Docs'
-ms.custom: ''
+title: 'Extensión de Excel: Element (clases) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb5085bdd9a79330f7c4f73fb39993af63eb0a78
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 052ef261270b2cd6e66d71bbbb0c9cc3d12696eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811951"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796046"
 ---
-# <a name="sample-excel-extension-element-classes"></a>Extensión de Excel de muestra: clases de elementos
+# <a name="sample-excel-extension-element-classes"></a>Extensión de Excel: Clases de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La extensión usa clases que derivan de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> y representan el control de la hoja de cálculo y el control de la celda en [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].  
@@ -58,6 +53,3 @@ La extensión usa clases que derivan de <xref:Microsoft.VisualStudio.TestTools.U
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement>   
  [Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-
