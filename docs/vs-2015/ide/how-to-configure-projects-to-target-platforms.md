@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Configurar proyectos para plataformas de destino | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Configurar proyectos para plataformas de destino | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -22,15 +17,15 @@ ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4e2b39aa13316b1b9ca47c5587ffabf6f6a14e68
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ee35a42ea28295869fe05bf6cd1d2c49f12cc39b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791415"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Cómo: Configurar proyectos para plataformas de destino
+# <a name="how-to-configure-projects-to-target-platforms"></a>Procedimiento Configurar proyectos para plataformas de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits. Para más información sobre la compatibilidad con plataformas de 64 bits en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vea [Aplicaciones de 64 bits](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
@@ -73,6 +68,3 @@ ms.locfileid: "49843059"
  [/platform (Opciones del compilador de C#)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
  [Aplicaciones de 64 bits](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Compatibilidad de 64 bits del IDE de Visual Studio](../ide/visual-studio-ide-64-bit-support.md)
-
-
-

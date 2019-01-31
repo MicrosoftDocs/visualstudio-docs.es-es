@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e11c336f891ae71968a3b325a66a50d4d9a79446
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b24cb2b90bdd9e3fad5128a483314d75ffc1672f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826960"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926895"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedimiento Especificación de los archivos que se van a publicar mediante ClickOnce
 Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] archivos de aplicación, que no son código en el proyecto se implementan junto con la aplicación. En algunos casos, es posible que no desea o necesita publicar determinados archivos, o desea instalar determinados archivos según las condiciones. Visual Studio proporciona las capacidades para excluir archivos, marcar archivos como archivos de datos o los requisitos previos y crear grupos de archivos para la instalación condicional.  
@@ -115,4 +115,4 @@ Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

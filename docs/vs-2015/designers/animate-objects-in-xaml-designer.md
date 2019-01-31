@@ -1,25 +1,20 @@
 ---
 title: Animar objetos en el Diseñador XAML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0495397ccce63b93e524c2b3898b4f18ac981ff6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7846ade8dba2ce849acf62311e508c157b07dd3e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230092"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54805514"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animar objetos en el Diseñador XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ Cree animaciones cortas para el movimiento y el fundido de objetos.
   
 ## <a name="see-also"></a>Vea también  
  [Crear una IU con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

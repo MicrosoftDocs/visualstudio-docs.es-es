@@ -1,25 +1,20 @@
 ---
 title: Insertar imágenes, vídeos y clips de audio en el Diseñador XAML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ff707aca-6bc5-4a2d-834b-bb6511a7b8f6
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 63d26d079e686339ad8ed93c5aefb8c7a468e899
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db6225f8bf8055edb0fb5b6f3cdea98de79b4bcc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283964"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774145"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>Insertar imágenes, vídeos y clips de audio en el Diseñador XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ Las imágenes, los vídeos y los clips de audio agregan atractivo visual a la ap
   
 ## <a name="see-also"></a>Vea también  
  [Crear una IU con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

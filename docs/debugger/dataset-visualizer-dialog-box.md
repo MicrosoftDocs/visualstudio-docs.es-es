@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: dfbede03-805b-4f88-a645-b479450e6cb0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29cbefaa2993b894b9868b6719ecf5fde1d832e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43890273a1343de380f7b9b289f8836725d2016a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985308"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967357"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Visualizador del conjunto de datos (cuadro de diálogo)
 El visualizador de conjuntos de datos permite ver el contenido de objetos DataSet, DataTable, DataView o DataViewManager. Puede tener acceso a este visualizador si hace clic en el icono de lupa que aparece junto al valor de uno de dichos objetos en una ventana de variables del depurador o en una información sobre datos.  

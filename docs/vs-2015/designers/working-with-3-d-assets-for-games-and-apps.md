@@ -1,27 +1,22 @@
 ---
 title: Trabajar con activos 3D para juegos y aplicaciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90bf88beafee6f263695b3614cf6385419b33efe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797600"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Trabajar con activos 3D para juegos y aplicaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +51,9 @@ En este documento, se describen las herramientas de [!INCLUDE[vsprvs](../include
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Descripción|  
 |-----------|-----------------|  
 |[Trabajar con texturas e imágenes](../designers/working-with-textures-and-images.md)|Describe cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con imágenes y texturas.|  
 |[Trabajar con modelos 3D](../designers/working-with-3-d-models.md)|Describe cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con modelos 3D.|  
 |[Trabajar con sombreadores](../designers/working-with-shaders.md)|Describe cómo usar el Diseñador de sombras de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear y modificar efectos de sombreador personalizados.|  
 |[Usar activos 3D en un juego o una aplicación](../designers/using-3-d-assets-in-your-game-or-app.md)|Describe cómo usar activos creados mediante el Editor de imágenes, el Editor de modelos o el Diseñador de sombras en su juego o aplicación.|
-
-
-

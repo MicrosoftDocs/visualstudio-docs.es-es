@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c798eb2b-664a-41ec-ae90-5e9d292507ca
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4dc9e8ef259c67abe0b972584153c7eba8e80b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b3f30d9724346686a980fc139ff48474557145a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956665"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042978"
 ---
 # <a name="compiland"></a>Compiland
 Hay un `SymTagCompiland` para cada operación de compilación vinculado con el archivo .exe de símbolos. Información de la operación de compilación se divide entre los símbolos con un `SymTagCompiland` etiqueta, que se pueda recuperar sin la carga de símbolos adicionales de la operación de compilación, así como símbolos con un `SymTagCompilandDetails` etiqueta, lo que puede requerir la carga de símbolos adicionales.  

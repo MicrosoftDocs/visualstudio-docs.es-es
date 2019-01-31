@@ -1,14 +1,9 @@
 ---
 title: Segmento de escala de tiempo vacío | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.empty
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f37b301f-3edc-4e56-8084-feec2dc5a9b1
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 64ff71dca6a4a590551909dc05357b80da32e18c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4ac39a776cb7e6c2c9cbce648c0b3ca3ebc86783
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770750"
 ---
 # <a name="empty-timeline-segment"></a>Segmento de escala de tiempo vacío
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ En el visualizador de simultaneidad, el motivo por el que una sección de la esc
 ## <a name="see-also"></a>Vea también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)   
  [Control de zoom (vista de subprocesos)](../profiling/zoom-control-threads-view.md)
-
-
-
