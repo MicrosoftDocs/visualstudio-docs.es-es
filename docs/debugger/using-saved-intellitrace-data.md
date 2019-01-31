@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c348bc105d997e07dcbc6ee373c2952e16c572cf
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 7d662ef0e0b838b324250da8dca4255a6237bccb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227790"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969725"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso de los datos de IntelliTrace guardados (C#, Visual Basic, C++)
 

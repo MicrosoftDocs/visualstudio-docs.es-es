@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 591bd1b7-ef10-4d10-817b-3f92ca4be006
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7be386a7d792c99ba361d70af1f8aac34c809cf0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88689df3b1dad671f56b42e9c8523c6f85169c9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930978"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976438"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar y continuar (Visual C#)
  Con Editar y continuar para C#, puede realizar cambios en el código en modo de interrupción mientras depura. Los cambios pueden aplicarse sin necesidad de detener y reiniciar la sesión de depuración. En modo de ejecución, el editor de código fuente es de solo lectura.  

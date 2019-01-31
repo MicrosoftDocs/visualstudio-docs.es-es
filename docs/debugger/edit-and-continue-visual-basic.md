@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3e1305a67fa4347a8b39b677c5be31ada257b65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d36ab4ed41b790fd43cfe97c67f39b07782ab0ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838026"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016543"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Editar y continuar (Visual Basic)
 Editar y continuar es una característica de depuración de [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] que le permite realizar cambios en el código mientras se ejecuta en modo de interrupción. Una vez que se aplican los cambios de código, se puede reanudar su ejecución con las nuevas modificaciones en contexto y observar el efecto.  

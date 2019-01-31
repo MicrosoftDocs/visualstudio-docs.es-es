@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5cc12ce8-c819-48e4-b487-98d403001b28
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bea0f48432f67dc4109f5175c730a06aab4c0143
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89a7cd7648b7e04e82e5e490f4958ad5a97f6521
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927173"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936542"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Procedimiento Prueba y depuración de un visualizador
 Cuando se ha escrito un visualizador, es necesario depurarlo y comprobarlo.  

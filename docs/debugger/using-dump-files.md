@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d79fdbbb34bdd5794b2b9120c2c24dbf5be71c71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0adb7e86f2b14dd25fa333fe54cc5121bbc8c1f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952425"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012500"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Archivos de volcado de memoria en el depurador de Visual Studio
 

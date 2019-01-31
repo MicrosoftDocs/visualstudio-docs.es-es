@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: daf41a06-8a55-48f6-95f5-49a8416bd308
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ded332b68ee4ae4d628bc272b563e973da6154e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d45fa813a7bb75ea0cdd11a412ae35e5444883dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913348"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924972"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Pestaña Archivo de paginación (Cuadro de diálogo Propiedades del proceso)
 Use la **archivo de paginación** pestaña para examinar el archivo de paginación de un proceso. Para mostrar el [cuadro de diálogo de propiedades de proceso](../debugger/process-properties-dialog-box.md), mover el foco a un [vista procesos](../debugger/processes-view.md) ventana. Seleccione cualquier nodo de proceso en el árbol y luego elija **propiedades** desde el **vista** menú.  
