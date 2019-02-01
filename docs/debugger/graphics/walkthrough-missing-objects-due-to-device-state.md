@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a0b09ca7e9693914d94cdc3337cc4ac2759c07c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33e4d07b6eb6a3af0799385d989bd8383faf3fec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944368"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019520"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Tutorial: Objetos ausentes debido al estado del dispositivo
 En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un estado de dispositivo mal configurado.  
@@ -35,7 +35,7 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
   
  ![La aplicación antes de que se ha corregido el problema](media/vsg_walkthru1_firstview.png "vsg_walkthru1_firstview")  
   
- Para obtener información sobre cómo capturar los problemas de gráficos en un registro de gráficos, vea [Captura de información de gráficos](capturing-graphics-information.md).  
+ Para obtener información sobre cómo capturar los problemas de gráficos en un registro de gráficos, vea [Capturing Graphics Information](capturing-graphics-information.md).  
   
 ## <a name="investigation"></a>Investigación  
  Mediante las herramientas de Diagnóstico de gráficos, puede cargar el archivo de registro de gráficos para inspeccionar los fotogramas que se capturaron durante la prueba.  

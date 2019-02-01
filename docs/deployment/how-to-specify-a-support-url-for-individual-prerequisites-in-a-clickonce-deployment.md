@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8b510a07ff60420cc81aed073e7f42445e924d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0abf694bcfb0adf13e3da4fb92bcdc9c180a68fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825521"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023150"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procedimiento Especificación de una dirección URL de soporte para requisitos previos individuales en una implementación ClickOnce
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Filtrar Especificación de una dirección URL de soporte para requisitos previos individuales en una implementación ClickOnce
 Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede probar la implementación de una serie de requisitos previos que deben estar disponibles en el equipo cliente para el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se ejecute. Estas dependencias incluyen la versión mínima necesaria de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], la versión del sistema operativo y los ensamblados que deben estar preinstalados en la caché global de ensamblados (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], sin embargo, no se puede instalar cualquiera de estos requisitos previos. Si no se encuentra un requisito previo, simplemente detiene la instalación y muestra un cuadro de diálogo que explica el motivo del error de la instalación.  
   
  Hay dos métodos para instalar los requisitos previos. Puede instalarlos mediante una aplicación de programa previo. Como alternativa, puede especificar una dirección URL de soporte para requisitos previos individuales, que se muestra a los usuarios en el cuadro de diálogo si no se encuentra el requisito previo. La página hace referencia a esa dirección URL puede contener vínculos a instrucciones para instalar el requisito previo necesario. Si una aplicación no especifica una dirección URL de soporte para un requisito previo individual, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] muestra la dirección URL de soporte técnico especificada en el manifiesto de implementación para la aplicación como un todo, si está definido.  
@@ -76,7 +76,7 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede proba
    </compatibleFrameworks>  
    ```  
   
-7. Una vez que se ha modificado manualmente el manifiesto de aplicación, debe volver a firmar el manifiesto de aplicación mediante su certificado digital, a continuación, actualizar y volver a firmar el manifiesto de implementación también. Use la *Mage.exe* o *MageUI.exe* herramientas del SDK para realizar esta tarea, como volver a generar estos archivos mediante [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] borra los cambios manuales. Para obtener más información sobre el uso de Mage.exe para volver a firmar los manifiestos, consulte [Cómo: Repetición de la firma de manifiestos de implementación y aplicación](../deployment/how-to-re-sign-application-and-deployment-manifests.md)  
+7. Una vez que se ha modificado manualmente el manifiesto de aplicación, debe volver a firmar el manifiesto de aplicación mediante su certificado digital, a continuación, actualizar y volver a firmar el manifiesto de implementación también. Use la *Mage.exe* o *MageUI.exe* herramientas del SDK para realizar esta tarea, como volver a generar estos archivos mediante [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] borra los cambios manuales. Para obtener más información sobre el uso de Mage.exe para volver a firmar los manifiestos, consulte [Cómo: Repetición de la firma de manifiestos de implementación y aplicación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>seguridad en .NET Framework  
  La dirección URL de soporte técnico no se muestra en el cuadro de diálogo si la aplicación está marcada para ejecutarse en confianza parcial.  

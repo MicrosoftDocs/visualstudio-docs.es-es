@@ -1,14 +1,9 @@
 ---
 title: Métodos abreviados de teclado y de mouse en el diagrama de clases y la ventana de detalles de clase (Diseñador de clases) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.window
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f607046609208804f349eb06e927ab8e72e28992
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247915"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775832"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Métodos abreviados de teclado y de mouse en el diagrama de clases y la ventana de detalles de clase (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,11 +106,8 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 |Ctrl+Tab|Cambiar a otra ventana del documento. Por ejemplo, cambia de la ventana Detalles de clase a un archivo de código abierto.|  
 |ESC (Escape)|Si ha empezado a escribir texto en un campo, ESC actúa como tecla «deshacer» y restablece el contenido del campo a su valor anterior. Si la ventana Detalles de clase tiene el foco general sin que ninguna celda concreta tenga el foco, la tecla ESC quita el foco de la ventana Detalles de clase.|  
 |Flecha arriba y flecha abajo|Estas teclas mueven el cursor fila a fila, verticalmente, en la cuadrícula de la ventana Detalles de clase.|  
-|Flecha izquierda|Si el cursor está en la columna Nombre, al presionar la flecha izquierda se contrae el nodo actual de la jerarquía (si está abierto).|  
+| Flecha izquierda|Si el cursor está en la columna Nombre, al presionar la flecha izquierda se contrae el nodo actual de la jerarquía (si está abierto).|  
 |Flecha derecha|Si el cursor está en la columna Nombre, al presionar la flecha derecha se expande el nodo actual de la jerarquía (si está contraído).|  
   
 ## <a name="see-also"></a>Vea también  
  [Crear y configurar miembros de tipo (Diseñador de clases)](../ide/creating-and-configuring-type-members-class-designer.md)
-
-
-

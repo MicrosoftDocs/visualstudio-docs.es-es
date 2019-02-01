@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e56ad2c36e4b7a22cfb74e020c31e93f4846872
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85cbe463d2790a706570dcc53dce44bd825cba13
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837230"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013722"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Usar las ventanas de memoria en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 

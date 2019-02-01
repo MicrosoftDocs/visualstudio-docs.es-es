@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 624d9649-5946-4298-a138-70773b72e810
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b7f2929dbb1946b9e4852006260e7ac8c45fa45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb0b7d507453fc162c6fd748346e34c8abbdf88f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923723"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959127"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Cuadro de diálogo Editar y continuar (C++)
 Editar y continuar no pudo aplicar los cambios realizados en el código nativo. Puede tratarse de una condición temporal. A veces, Editar y continuar no puede aplicar cambios en el código nativo inmediatamente, pero puede aplicarlos más tarde durante la sesión de depuración (por ejemplo, después de finalizar la llamada actual al procedimiento que se está ejecutando). Para obtener más información, vea [Editar y continuar](../debugger/edit-and-continue.md).  

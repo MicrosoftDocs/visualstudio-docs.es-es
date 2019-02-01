@@ -1,14 +1,9 @@
 ---
 title: Opciones, editor de texto, JavaScript, formato | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.General
@@ -17,13 +12,13 @@ ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86c766f776195da17a33b9d52570a2867f700c9b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 545d5ff9530de577a553923eea3cb208bd5bc68e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794415"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opciones, editor de texto, JavaScript, formato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ Use la página **Formato** del cuadro de diálogo **Opciones** para establecer l
 |**Colocar llave de apertura para bloques de control en nueva línea**|Cuando se selecciona esta opción, el editor de código desplaza la llave de apertura asociada a un bloque de control (por ejemplo, los bloques de control `if` y `while`) a una nueva línea.|  
   
 ## <a name="spacing"></a>Espaciado  
- Estas opciones determinan cómo se insertan espacios en **origen** vista.  
+ Estas opciones determinan cómo se insertan los espacios en la vista **Origen**.  
   
 ## <a name="uielement-list"></a>Lista de UIElement  
   
@@ -71,6 +66,3 @@ Use la página **Formato** del cuadro de diálogo **Opciones** para establecer l
   
 ## <a name="see-also"></a>Vea también  
  [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

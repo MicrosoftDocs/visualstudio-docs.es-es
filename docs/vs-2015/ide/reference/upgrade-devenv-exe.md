@@ -1,14 +1,9 @@
 ---
 title: /Upgrade (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /upgrade Devenv switch
 - Devenv, /upgrade switch
@@ -17,13 +12,13 @@ ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 79a00da92ac2da6eb37fa1eef90fa112598d23f3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 465c90736f5470f48d47336bc916ca3cb2c09b6a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264967"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779351"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ devenv SolutionFile | ProjectFile /upgrade
   
  Se deben desproteger las soluciones o los proyectos bajo el control de código fuente antes de poderse actualizar.  
   
- Al utilizar el modificador `/upgrade` no se inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Los resultados de la actualización se pueden ver en el informe de actualización para el lenguaje de desarrollo de la solución o el proyecto. No se devuelve ninguna información de error o de uso. Para obtener más información sobre cómo actualizar proyectos en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], consulte [Cómo: solucionar problemas de incorrecta Visual Studio actualizaciones de proyecto](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
+ Al utilizar el modificador `/upgrade` no se inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Los resultados de la actualización se pueden ver en el informe de actualización para el lenguaje de desarrollo de la solución o el proyecto. No se devuelve ninguna información de error o de uso. Para obtener más información sobre cómo actualizar proyectos en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], vea [Cómo: Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se actualiza un archivo de solución denominado "MyProject.sln" en la carpeta predeterminada para las soluciones de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -59,8 +54,5 @@ devenv "MyProject.sln" /upgrade
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
+ [Cómo: Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
  [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
-
-
-

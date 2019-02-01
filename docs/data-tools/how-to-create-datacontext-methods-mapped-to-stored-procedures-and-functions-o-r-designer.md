@@ -1,22 +1,22 @@
 ---
-title: Procedimiento Crear métodos DataContext asignados a funciones y procedimientos almacenados (Object Relational Designer)
+title: Filtrar Crear métodos DataContext asignados a funciones y procedimientos almacenados (Object Relational Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: bda01cec76629bd69d0e3773d99da0b34773f4ff
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: ce1d2a4f5e8b068da20d7fd7e46471cdad6d9e59
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53868519"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952361"
 ---
-# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Procedimiento Crear métodos DataContext asignados a funciones y procedimientos almacenados (Object Relational Designer)
+# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Filtrar Crear métodos DataContext asignados a funciones y procedimientos almacenados (Object Relational Designer)
 
 Puede agregar procedimientos almacenados y funciones para el **Object Relational Designer** como <xref:System.Data.Linq.DataContext> métodos. Al llamar al método y pasar los parámetros necesarios se ejecuta el procedimiento almacenado o la función en la base de datos y se devuelven los datos en el tipo de valor devuelto del método <xref:System.Data.Linq.DataContext>. Para obtener información detallada sobre <xref:System.Data.Linq.DataContext> métodos, vea [métodos DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 

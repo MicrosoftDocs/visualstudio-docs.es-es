@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: c7e77a5a-cb57-4b11-9187-ecc89acc8775
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 938d2a81f60b86904d0334380734979c2a39cc43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6344d37566fb37fcb7b35d005aa6bef66d18dd89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893949"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964267"
 ---
 # <a name="debugging-gpu-code"></a>Depurar código de GPU
 Puede depurar el código de C++ que se está ejecutando en la unidad central de gráficos (GPU). La compatibilidad con la depuración de GPU en Visual Studio incluye la detección de carrera, el inicio de procesos y su asociación y la integración en las ventanas de depuración.  
@@ -57,7 +57,7 @@ Puede depurar el código de C++ que se está ejecutando en la unidad central de 
   
 -   [Depurar procesos y subprocesos](../debugger/debug-threads-and-processes.md) (barra de herramientas ubicación de depuración)  
   
--   [Cómo: Uso de la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
+-   [Cómo: usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Excepciones de la sincronización de datos  
  El depurador puede identificar varias condiciones de sincronización de datos durante la ejecución. Cuando se detecta una condición, el depurador entra en el estado de interrupción. Tiene dos opciones: **Interrumpir** o **Continuar**. Mediante el cuadro de diálogo **Excepciones**, puede configurar si el depurador detectará estas condiciones y también para qué condiciones se interrumpirá. Para obtener más información, consulte [administrar excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md). También puede utilizar el cuadro de diálogo **Opciones** para especificar que el depurador omita las excepciones si los datos escritos no cambian el valor de los datos. Para obtener más información, consulta [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  

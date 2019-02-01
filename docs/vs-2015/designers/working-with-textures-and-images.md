@@ -1,25 +1,20 @@
 ---
 title: Trabajar con texturas e imágenes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ff5125ce46abe993f35551a0ce46a0d211af99bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bdee0fadfb1101d7087b7154f231958615aee227
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250502"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795937"
 ---
 # <a name="working-with-textures-and-images"></a>Trabajar con texturas e imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,10 +47,7 @@ Puede usar el editor de imágenes de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Descripción|  
 |-----------|-----------------|  
 |[Image Editor](../designers/image-editor.md)|Se describe el uso del editor de imágenes para trabajar con texturas e imágenes.|  
 |[Ejemplos del Editor de imágenes](../designers/image-editor-examples.md)|Se ofrecen vínculos a temas que muestran cómo usar el editor de imágenes para realizar tareas comunes de procesamiento de imágenes.|
-
-
-

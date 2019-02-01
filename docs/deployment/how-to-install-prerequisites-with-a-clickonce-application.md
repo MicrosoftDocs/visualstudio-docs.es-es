@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e474bba5168867180f0f50a927ea4c71ebe0370
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf4e015da7f5661f0964e9f60d65f39b665fe9d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907857"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973972"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedimiento Requisitos previos de instalación con una aplicación ClickOnce
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Filtrar Requisitos previos de instalación con una aplicación ClickOnce
 Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones requieren que la versión correcta de .NET Framework está instalada en un equipo antes de poder ejecutar; muchas aplicaciones tienen también otros requisitos previos. Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, puede elegir un conjunto de componentes de requisitos previos pueden empaquetarse junto con la aplicación. Durante la instalación, se realizará una comprobación para que todos los requisitos previos determinar si ya existe; Si no se instalará antes de instalar el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.  
   
  En lugar de empaquetar y publicar los requisitos previos, también puede especificar una ubicación de descarga de los componentes. Por ejemplo, en lugar de incluir requisitos previos con todas las aplicaciones que publique, puede usar un recurso compartido de archivos centralizado o la ubicación Web que contenga los instaladores para todos los requisitos previos, durante la instalación, se descargarán los componentes y instalada desde esa ubicación.  
@@ -69,4 +69,4 @@ Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
