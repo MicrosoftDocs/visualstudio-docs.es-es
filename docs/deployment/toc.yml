@@ -41,7 +41,7 @@ items:
       href: /aspnet/core/publishing/azure-continuous-deployment
     - name: Publicar en Kubernetes con herramientas de Kubernetes de Visual Studio
       href: tutorial-kubernetes-tools.md
-  - name: Nativo
+  - name: C++
     items:
     - name: Implementar en Visual C++...
       href: /cpp/ide/deployment-in-visual-cpp
@@ -57,7 +57,7 @@ items:
     items:
     - name: Publicación en App Service de Linux
       href: /visualstudio/javascript/publish-nodejs-app-azure
-  - name: Plantillas de
+  - name: Python
     items:
     - name: Publicación en Azure App Service
       href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
@@ -107,6 +107,8 @@ items:
     - name: Publicar aplicaciones ClickOnce
       href: publishing-clickonce-applications.md
       items:
+      - name: Publicar una aplicación ClickOnce mediante el Asistente para publicación
+        href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
       - name: Crear aplicaciones ClickOnce para que las implementen terceros
         href: creating-clickonce-applications-for-others-to-deploy.md
       - name: Implementar aplicaciones para servidores de prueba y producción sin volver a firmar
@@ -117,8 +119,6 @@ items:
         href: deploying-com-components-with-clickonce.md
       - name: Compilar aplicaciones ClickOnce desde la línea de comandos
         href: building-clickonce-applications-from-the-command-line.md
-      - name: Publicar una aplicación ClickOnce mediante el Asistente para publicación
-        href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
       - name: Especificar dónde Visual Studio copia los archivos
         href: how-to-specify-where-visual-studio-copies-the-files.md
       - name: Especificar la ubicación desde la que instalarán los usuarios finales
@@ -169,21 +169,21 @@ items:
         href: how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-dotnet-framework.md
       - name: Publicar una aplicación WPF con estilos visuales habilitados
         href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
-      - name: 'Tutorial: Descargar ensamblados a petición mediante el diseñador'
+      - name: 'Tutorial: Descarga de ensamblados a petición mediante el diseñador'
         href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
         items:
-        - name: 'Tutorial: Descargar ensamblados a petición'
+        - name: 'Tutorial: Descarga de ensamblados a petición'
           href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
-      - name: 'Tutorial: Descargar ensamblados satélite a petición mediante el diseñador'
+      - name: 'Tutorial: Descarga de ensamblados satélite a petición mediante el diseñador'
         href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-      - name: 'Tutorial: Implementar manualmente una aplicación ClickOnce'
+      - name: 'Tutorial: Implementación manual de una aplicación ClickOnce'
         href: walkthrough-manually-deploying-a-clickonce-application.md
         items:
-        - name: 'Tutorial: Implementar manualmente una aplicación que no requiere volver a firmar'
+        - name: 'Tutorial: Implementación manual de una aplicación que no requiera volver a firmar'
           href: walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md
-      - name: 'Tutorial: Descargar ensamblados satélite a petición'
+      - name: 'Tutorial: Descarga de ensamblados satélite a petición'
         href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md
-      - name: 'Tutorial: Crear un instalador personalizado'
+      - name: 'Tutorial: Creación de un instalador personalizado'
         href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
     - name: Elegir una estrategia de actualización de ClickOnce
       href: choosing-a-clickonce-update-strategy.md
@@ -224,26 +224,26 @@ items:
       href: how-to-create-a-package-manifest.md
     - name: Crear un paquete de programa previo localizado
       href: how-to-create-a-localized-bootstrapper-package.md
-    - name: 'Tutorial: Crear un programa previo personalizado con un mensaje de privacidad'
+    - name: 'Tutorial: Creación de un arranque personalizado con un mensaje de privacidad'
       href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
     - name: Referencia de esquemas de productos y paquetes
       href: product-and-package-schema-reference.md
       items:
-      - name: <Product> (Elemento, Arranque)
+      - name: Elemento <Product> (arranque)
         href: product-element-bootstrapper.md
-      - name: <Package> (Elemento, Arranque)
+      - name: Elemento <Package> (arranque)
         href: package-element-bootstrapper.md
-      - name: <RelatedProducts> (Elemento, Arranque)
+      - name: Elemento <RelatedProducts> (arranque)
         href: relatedproducts-element-bootstrapper.md
-      - name: <InstallChecks> (Elemento, Arranque)
+      - name: Elemento <InstallChecks> (arranque)
         href: installchecks-element-bootstrapper.md
-      - name: <Commands> (Elemento, Arranque)
+      - name: Elemento <Commands> (arranque)
         href: commands-element-bootstrapper.md
-      - name: <PackageFiles> (Elemento, Arranque)
+      - name: Elemento <PackageFiles> (arranque)
         href: packagefiles-element-bootstrapper.md
-      - name: <Strings> (Elemento, Arranque)
+      - name: Elemento <Strings> (arranque)
         href: strings-element-bootstrapper.md
-      - name: <Schedules> (Elemento, Arranque)
+      - name: Elemento <Schedules> (arranque)
         href: schedules-element-bootstrapper.md
 - name: Referencia
   items:
@@ -253,46 +253,46 @@ items:
     - name: ClickOnce Application Manifest
       href: clickonce-application-manifest.md
       items:
-      - name: Elemento <assembly> (Aplicación ClickOnce)
+      - name: Elemento <assembly> (aplicación ClickOnce)
         href: assembly-element-clickonce-application.md
-      - name: Elemento <assemblyIdentity> (Aplicación ClickOnce)
+      - name: Elemento <assemblyIdentity> (aplicación ClickOnce)
         href: assemblyidentity-element-clickonce-application.md
-      - name: Elemento <trustInfo> (Aplicación ClickOnce)
+      - name: Elemento <trustInfo> (aplicación ClickOnce)
         href: trustinfo-element-clickonce-application.md
-      - name: Elemento <entryPoint> (Aplicación ClickOnce)
+      - name: Elemento <entryPoint> (aplicación ClickOnce)
         href: entrypoint-element-clickonce-application.md
-      - name: Elemento <dependency> (Aplicación ClickOnce)
+      - name: Elemento <dependency> (aplicación ClickOnce)
         href: dependency-element-clickonce-application.md
-      - name: Elemento <file> (Aplicación ClickOnce)
+      - name: Elemento <file> (aplicación ClickOnce)
         href: file-element-clickonce-application.md
-      - name: Elemento <fileAssociation> (Aplicación ClickOnce)
+      - name: Elemento <fileAssociation> (aplicación ClickOnce)
         href: fileassociation-element-clickonce-application.md
     - name: Manifiesto de la implementación ClickOnce
       href: clickonce-deployment-manifest.md
       items:
-      - name: <assembly> (Elemento) [Implementación ClickOnce]
+      - name: Elemento <assembly> (implementación ClickOnce)
         href: assembly-element-clickonce-deployment.md
-      - name: <assemblyIdentity> (Elemento) [Implementación ClickOnce]
+      - name: Elemento <assemblyIdentity> (implementación ClickOnce)
         href: assemblyidentity-element-clickonce-deployment.md
       - name: <description> Elemento (Implementación ClickOnce)
         href: description-element-clickonce-deployment.md
-      - name: <deployment> (Elemento) [Implementación ClickOnce]
+      - name: Elemento <deployment> (implementación ClickOnce)
         href: deployment-element-clickonce-deployment.md
-      - name: <compatibleFrameworks> (Elemento) [Implementación ClickOnce]
+      - name: Elemento <compatibleFrameworks> (implementación ClickOnce)
         href: compatibleframeworks-element-clickonce-deployment.md
-      - name: <dependency> (Elemento) [Implementación ClickOnce]
+      - name: Elemento <dependency> (implementación ClickOnce)
         href: dependency-element-clickonce-deployment.md
-      - name: <publisherIdentity> (Elemento) [Implementación ClickOnce]
+      - name: Elemento <publisherIdentity> (implementación ClickOnce)
         href: publisheridentity-element-clickonce-deployment.md
-      - name: <Signature> (Elemento) [Implementación ClickOnce]
+      - name: Elemento <Signature> (implementación ClickOnce)
         href: signature-element-clickonce-deployment.md
-      - name: <customErrorReporting> (Elemento) [Implementación ClickOnce]
+      - name: Elemento <customErrorReporting> (implementación ClickOnce)
         href: customerrorreporting-element-clickonce-deployment.md
     - name: Referencia de la API no administrada de ClickOnce
       href: clickonce-unmanaged-api-reference.md
-ms.openlocfilehash: 303890cae6181264f0bcd96e24b27a1065d67d6b
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 427a4156599cbf4ed4fc718c2b5f6199aeef2342
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243983"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484061"
