@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ee3a262-cda6-48bf-b799-a37edde6c8b8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9d7c7d3710d7bca7fa76b30b7b2d0e97a0dfd50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23214e9a0af3ca506677e5f67b4460fa6d9d8414
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843494"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969004"
 ---
 # <a name="symbols-and-symbol-tags"></a>Símbolos y etiquetas de símbolo
 Información de depuración sobre un programa compilado se almacena en el archivo de programa (.pdb) de la base de datos como los símbolos que son accesibles mediante la API del SDK de Debug Interface Access (DIA). Todos los símbolos tienen un [Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) y un [Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) propiedad. El `symTag` propiedad indica el tipo de símbolo definido por el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración. El `symIndexId` propiedad es un `DWORD` valor que contiene el identificador único para cada instancia de un símbolo.  

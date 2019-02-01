@@ -1,25 +1,20 @@
 ---
 title: Nodos de textura | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bda107323b24940ed8cab18a61f9e491f8392f53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e43329cb15eaf41ccb8859521bd45eff6f749c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779845"
 ---
 # <a name="texture-nodes"></a>Nodos de textura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ En el Diseñador de sombras, los nodos de textura muestrean diversos tipos de te
 |**Dimensiones de textura**|Muestra el ancho y el alto de un mapa de textura 2D.<br /><br /> Se pueden usar las dimensiones de textura para tener en cuenta el ancho y el alto de la textura en un sombreador.<br /><br /> **Salida:**<br /><br /> `Output`: `float2`<br /> El ancho y el alto de la textura, expresados como un vector. El ancho se almacena en el primer elemento del vector. El alto se almacena en el segundo elemento.|**Textura**<br /> El registro de textura que está asociado con las dimensiones de textura.|  
 |**Delta del elemento de textura**|Muestra el delta (distancia) entre los elementos de textura de un mapa de textura 2D.<br /><br /> Se puede usar el delta del elemento de textura para muestrear valores de elemento de textura contiguos de un sombreador.<br /><br /> **Salida:**<br /><br /> `Output`: `float2`<br /> El delta (distancia) desde un elemento de textura al siguiente (con movimiento diagonal en la dirección positiva), expresado como un vector en el espacio de textura normalizado. Se pueden derivar las posiciones de todos los elementos de textura contiguos omitiendo o negando de forma selectiva las coordenadas U o V del delta.|**Textura**<br /> El registro de textura asociado al delta del elemento de textura.|  
 |**Muestra de textura**|Toma una muestra de color de un mapa de texturas en 2D en las coordenadas especificadas.<br /><br /> Se puede usar un mapa de texturas para proporcionar detalles de color en la superficie de un objeto.<br /><br /> **Entrada:**<br /><br /> `UV`: `float2`<br /> Las coordenadas en las que se toma la muestra.<br /><br /> **Salida:**<br /><br /> `Output`: `float4`<br /> El ejemplo de color.|**Textura**<br /> El registro de textura asociado a la muestra.|
-
-
-

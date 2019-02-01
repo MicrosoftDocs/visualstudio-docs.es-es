@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94f791da-bfea-454f-8a14-da31e8e1596a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 450c568288418ab5f12039096546ef7e9bcef918
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93389070e78b381be5b8e02e16d37777fe408612
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967049"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919387"
 ---
 # <a name="dimension"></a>Dimensión
 Cada matriz de FORTRAN tiene una dimensión que se identifica mediante un `SymTagDimension` símbolos.  

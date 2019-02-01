@@ -1,14 +1,9 @@
 ---
 title: Escala de tiempo de la vista Núcleos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.timeline.threads
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 10f0c666-ac2f-4ac5-9fb5-a88f660ab840
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 90fcbe540c8ce91f219d629e28ee3006379f3df4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0f3904f214967b411a79a8db5cff0bec7727be4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800229"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770828"
 ---
 # <a name="cores-view-timeline"></a>Escala de tiempo de la vista Núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,6 +28,3 @@ Cada fila de la escala de tiempo representa un núcleo de procesador lógico del
 ## <a name="see-also"></a>Vea también  
  [Vista de núcleos](../profiling/cores-view.md)   
  [Control de zoom (vista de subprocesos)](../profiling/zoom-control-threads-view.md)
-
-
-
