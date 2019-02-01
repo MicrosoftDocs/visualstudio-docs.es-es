@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 631ccf0b9bd48278318c857e5b6011898bac72ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42d61b940d7ca30020ece1d1b1aab200360e9b0c
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014606"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424556"
 ---
 # <a name="attach-to-the-program"></a>Adjunte al programa
 Después de haber registrado sus programas con el puerto adecuado, debe asociar al depurador al programa que desea depurar.  
@@ -35,7 +35,7 @@ Después de haber registrado sus programas con el puerto adecuado, debe asociar 
   
    Si ejecuta su DE en el mismo proceso que la aplicación que se desea depurar, a continuación, debe implementar los métodos siguientes de [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
   
-- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
+- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)  
   
 - [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
   

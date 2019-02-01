@@ -1,14 +1,9 @@
 ---
 title: -LCID (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - language default
 - locale IDs, setting for IDE
@@ -21,13 +16,13 @@ ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 242e0055e59312cba616859e08a2a61a45064e66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: def8ce2a40e068c602b0182b4580f5e3b524d222
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782228"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ devenv {/LCID|/l} LocaleID
   
 ## <a name="arguments"></a>Argumentos  
  `LocaleID`  
- Requerido. LCID (identificador de configuración regional) del idioma especificado.  
+ Obligatorio. LCID (identificador de configuración regional) del idioma especificado.  
   
 ## <a name="remarks"></a>Comentarios  
  Carga el IDE y establece el idioma natural predeterminado para el entorno. Este cambio se conserva entre sesiones y se refleja en el panel **Configuración internacional** de las opciones de **Entorno** en el cuadro de diálogo **Opciones** del IDE.  
@@ -75,6 +70,3 @@ devenv /LCID 1033
  [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)   
  [Configuración internacional, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/international-settings-environment-options-dialog-box.md)   
  [Personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

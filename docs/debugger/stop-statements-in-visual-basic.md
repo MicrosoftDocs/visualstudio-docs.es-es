@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4ad3fe5c-3dfb-4913-b2eb-a0b635751c18
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fefd2c2957ea7f659d3cbf7a0c866cc3586b2ae3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ea8f2b9fc9b6cc2694db94e156f1a182fb98e29
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934471"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011603"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Instrucciones Stop en Visual Basic
 La instrucción Stop de Visual Basic proporciona una alternativa de programación al establecimiento de un punto de interrupción. Cuando el depurador encuentra una instrucción Stop, interrumpe la ejecución del programa (entra en el modo de interrupción). Los programadores de C# pueden lograr el mismo efecto utilizando una llamada a System.Diagnostics.Debugger.Break.  

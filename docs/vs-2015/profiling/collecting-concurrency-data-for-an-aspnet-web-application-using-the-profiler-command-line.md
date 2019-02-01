@@ -1,14 +1,9 @@
 ---
 title: Recopilar datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - profiling tools,concurrency method
@@ -16,13 +11,13 @@ ms.assetid: 0ba431c1-9eaf-4af9-8ce0-669c0835cdc2
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9abf64864c9b722f344662200dfc923cc3e192b6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 73270acd97ac4555ade609601d92327235a2f3c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53914188"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752361"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Recopilar datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,3 @@ El método de simultaneidad de las herramientas de generación de perfiles de [!
   
 ## <a name="reference"></a>Referencia  
  [Referencia de las herramientas de generación de perfiles de la línea de comandos](../profiling/command-line-profiling-tools-reference.md)
-
-
-

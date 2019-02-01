@@ -5,17 +5,17 @@ ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb508a84e9c258463ca2a9f3971cd51d55b402c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9569ca48ac95ff1f2f99948f6fc700ea6dd8902
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861506"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029315"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedimiento Publicación de una aplicación WPF con estilos visuales habilitados
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Filtrar Publicación de una aplicación WPF con estilos visuales habilitados
 Los estilos visuales permiten cambiar el aspecto de los controles comunes en función del tema elegido por el usuario. De forma predeterminada, los estilos visuales no están habilitados para las aplicaciones de Windows Presentation Foundation (WPF), por lo que es necesario habilitarlos manualmente. Sin embargo, habilitar los estilos visuales para una aplicación WPF y publicar después la solución produce un error. En este tema se describe cómo resolver este error y el proceso para publicar una aplicación WPF con estilos visuales habilitados. Para obtener más información sobre los estilos visuales, vea [información general de los estilos visuales](/windows/desktop/Controls/visual-styles-overview). Para obtener más información sobre el mensaje de error, consulte [solucionar los errores específicos en las implementaciones de ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Para resolver el error y publicar la solución, debe realizar las tareas siguientes:  
@@ -71,7 +71,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
   
          Este botón muestra todos los elementos del proyecto, incluidos los que se han excluido y los que normalmente están ocultos. El archivo de manifiesto aparece como un elemento de proyecto.  
   
-2.  Compile y publique la solución. Para obtener más información sobre cómo publicar la solución, vea [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)  
+2.  Compile y publique la solución. Para obtener más información sobre cómo publicar la solución, vea [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="create-a-manifest-file"></a>Crear un archivo de manifiesto  
   
@@ -176,7 +176,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
   
 ## <a name="see-also"></a>Vea también
 
--[Solución de problemas específicos de implementaciones de ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+-[Solucionar problemas de errores específicos de las implementaciones ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Información general de los estilos visuales](/windows/desktop/Controls/visual-styles-overview)
 - [Habilitar los estilos visuales](/windows/desktop/Controls/cookbook-overview)
 - [Símbolos del sistema](/dotnet/framework/tools/developer-command-prompt-for-vs)

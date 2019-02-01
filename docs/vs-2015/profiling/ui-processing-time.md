@@ -1,14 +1,9 @@
 ---
 title: Tiempo de procesamiento de la interfaz de usuario | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.uiprocessing
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 0ddb05a3-8c6b-448b-8488-2751c1e5abcc
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ecf2c33b2af2e57c964e145a334f6dd0d7161a92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4bbed9d8c4725b6bd497377d4a9dee22f2f8573d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738433"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783449"
 ---
 # <a name="ui-processing-time"></a>Tiempo de procesamiento de la interfaz de usuario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,6 +31,3 @@ Estos segmentos de la escala de tiempo están asociados a tiempos de bloqueo que
   
 ## <a name="see-also"></a>Vea también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
-
-
-
