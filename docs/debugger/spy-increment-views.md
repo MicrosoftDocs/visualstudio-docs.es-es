@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c60867af-f814-4fac-8f06-3c39cbefc7ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece3caef0619f580441d8b689ae8a89fbd0b91a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 861129a6251f0142a22cd916cddbfd95d03b22db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886168"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938557"
 ---
 # <a name="spy-views"></a>Vistas de Spy++
 Spy ++ muestra las vistas de árbol de la windows, los mensajes, los procesos y subprocesos disponibles en el equipo.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 57deb50a-9c22-43ea-a80c-eab205997bc4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f799e543cfe5c94fb9f17d9a1e994e7fc3a68ab9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e977916f55220ba0dad878e8cbcbdaaea973ea13
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948360"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035736"
 ---
 # <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
 Recupera un enumerador de elementos que tienen números de línea que hacen referencia a este archivo.  

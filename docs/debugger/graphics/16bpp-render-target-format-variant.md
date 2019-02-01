@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab58cbcd6644d540b7db2efb1cad59e5d80f8530
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe41f5e526abedbbae6bb870cc4ae607d0bfff9a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986666"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993383"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp representar variante del formato de destino
 Establece el formato de píxeles en DXGI_FORMAT_B5G6R5_UNORM para todos los objetivos de presentación y búferes de reserva.  

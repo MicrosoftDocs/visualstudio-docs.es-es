@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8e0d7c00cf902baa41586301ff338ebfef78c5aa
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 9b892ab4566409f29506359d4655002877c9740e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204062"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970219"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Advertencia: Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se han aplicado
 
