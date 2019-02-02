@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a302eb05e6b4c763740f03baea4aa8bd41c72891
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f07b75806d331fa0fb21444dee72214706edbcb
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959897"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571166"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instrucciones para escribir plantillas de texto T4
 Estas directrices generales pueden resultar útiles si va a generar código de programa u otros recursos de la aplicación en Visual Studio. Las reglas no son fijas.
@@ -48,7 +48,8 @@ Permitir el código que se escribe a mano además del código generado. Es raro 
 
   En otros lenguajes generados como XML, utilice el `<#@include#>` directiva para realizar combinaciones simples de contenido escrito a mano y generado. En casos más complejos, es posible que deba escribir un paso posterior al procesamiento que combina el archivo generado con los archivos escritos a mano.
 
-  Mover material común a los archivos de inclusión o plantillas en tiempo de ejecución para evitar repetir similar bloques de texto y código en varias plantillas, usan el `<#@ include #>` directiva. Para obtener más información, consulte [directiva Include de T4](../modeling/t4-include-directive.md).
+  Mueva material común a los archivos de inclusión o plantillas en tiempo de ejecución.
+  Para evitar repetir similar bloques de texto y código en varias plantillas, use el `<#@ include #>` directiva. Para obtener más información, consulte [directiva Include de T4](../modeling/t4-include-directive.md).
 
   Puede también crear plantillas de texto en tiempo de ejecución en un proyecto independiente y, a continuación, llame a partir de la plantilla en tiempo de diseño. Para ello, use el `<#@ assembly #>` directiva de acceso al proyecto independiente. Para obtener ejemplos, vea ["Herencia en plantillas de texto" en el Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
@@ -57,13 +58,15 @@ Permitir el código que se escribe a mano además del código generado. Es raro 
 
   Puede colocar los métodos en una clase abstracta que puede heredar la plantilla. La clase abstracta debe heredar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Para obtener más información, consulte [directiva de plantilla T4](../modeling/t4-template-directive.md).
 
-  Generar código, no archivos un método de configuración de la escritura de una aplicación de la variable es escribir código de programa genérico que acepta un archivo de configuración. Una aplicación escrita de esta manera es muy flexible y puede configurarse cuando cambian los requisitos empresariales, sin volver a generar la aplicación. Sin embargo, un inconveniente de este enfoque es que la aplicación llevará a cabo bien que una aplicación más específica. Además, su código de programa será más difícil de leer y mantener, en parte porque siempre tiene que tratar con los tipos genéricos más.
+  Generar código, no los archivos de configuración.
+  Un método para escribir una aplicación variable consiste en escribir código de programa genérico que acepta un archivo de configuración. Una aplicación escrita de esta manera es muy flexible y puede configurarse cuando cambian los requisitos empresariales, sin volver a generar la aplicación. Sin embargo, un inconveniente de este enfoque es que la aplicación llevará a cabo bien que una aplicación más específica. Además, su código de programa será más difícil de leer y mantener, en parte porque siempre tiene que tratar con los tipos genéricos más.
 
   Por el contrario, una aplicación cuyas partes variables se generan antes de la compilación puede estar fuertemente tipada. Esto facilita mucho más fáciles y más confiables para escribir código escrito a mano y cómo integrarlo con generado partes del software.
 
   Para obtener todas las ventajas de la generación de código, intente generar código de programa en lugar de los archivos de configuración.
 
-  Use una carpeta Generated Code coloque las plantillas y los archivos generados en una carpeta de proyecto denominada **código generado**, para asegurarse de desactive que estos no son archivos que deben editarse directamente. Si crea código personalizado para invalidar o agregar a las clases generadas, coloque estas clases en una carpeta que se denomina **código personalizado**. La estructura de un proyecto típico tiene este aspecto:
+  Use una carpeta Generated Code.
+  Coloque las plantillas y los archivos generados en una carpeta de proyecto denominada **código generado**, para asegurarse de desactive que estos no son archivos que deben editarse directamente. Si crea código personalizado para invalidar o agregar a las clases generadas, coloque estas clases en una carpeta que se denomina **código personalizado**. La estructura de un proyecto típico tiene este aspecto:
 
 ```
 MyProject
@@ -79,7 +82,8 @@ MyProject
 ```
 
 ## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Directrices para las plantillas T4 de tiempo de ejecución (preprocesada)
- Mover material común en las plantillas heredadas puede usar la herencia para compartir los métodos y los bloques de texto entre las plantillas de texto T4. Para obtener más información, consulte [directiva de plantilla T4](../modeling/t4-template-directive.md).
+ Mover material común a plantillas heredadas.
+Puede usar la herencia para compartir los métodos y los bloques de texto entre las plantillas de texto T4. Para obtener más información, consulte [directiva de plantilla T4](../modeling/t4-template-directive.md).
 
  También puede usar incluyen archivos que tienen plantillas en tiempo de ejecución.
 
@@ -96,7 +100,8 @@ Cada plantilla en tiempo de ejecución genera una definición de clase parcial q
 
  `private string ComputeTotal() { ... }`
 
- Permitir código personalizado: proporcionar puntos de extensión que considere la posibilidad de generación de métodos virtuales en \<bloquea la característica de clase #+ #>. Esto permite que una sola plantilla para su uso en muchos contextos sin ninguna modificación. En lugar de modificar la plantilla, puede construir una clase derivada que proporciona la lógica adicional mínima. La clase derivada puede ser cualquier código normal, o puede ser una plantilla en tiempo de ejecución.
+ Permitir código personalizado: proporcionar puntos de extensión.
+Considere la posibilidad de generar métodos virtuales en \<bloquea la característica de clase #+ #>. Esto permite que una sola plantilla para su uso en muchos contextos sin ninguna modificación. En lugar de modificar la plantilla, puede construir una clase derivada que proporciona la lógica adicional mínima. La clase derivada puede ser cualquier código normal, o puede ser una plantilla en tiempo de ejecución.
 
  Por ejemplo, en MyStandardRunTimeTemplate.tt:
 
@@ -117,9 +122,11 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Directrices para todas las plantillas T4
- Recopilación de datos independiente de la generación de texto intentan evitar la mezcla de cálculo y bloques de texto. En cada plantilla de texto, use la primera \<código # Bloquear #> para establecer las variables y realizar cálculos complejos. Desde el primer bloque de texto hasta el final de la plantilla o la primera \<característica de clase #+ Bloquear #>, evitar expresiones largas y evitar instrucciones condicionales y bucles a menos que contengan los bloques de texto. Esta práctica hace que sea más fácil de leer y mantener la plantilla.
+ Separar la recopilación de datos de generación de texto.
+Intente evitar la mezcla de cálculo y bloques de texto. En cada plantilla de texto, use la primera \<código # Bloquear #> para establecer las variables y realizar cálculos complejos. Desde el primer bloque de texto hasta el final de la plantilla o la primera \<característica de clase #+ Bloquear #>, evitar expresiones largas y evitar instrucciones condicionales y bucles a menos que contengan los bloques de texto. Esta práctica hace que sea más fácil de leer y mantener la plantilla.
 
- No use `.tt` para incluir archivos de usan una extensión de nombre de archivo diferente, como `.ttinclude` archivos de inclusión. Use `.tt` solamente los archivos que desea que se puede procesan las plantillas de texto como tiempo de ejecución o tiempo de diseño. En algunos casos, Visual Studio reconoce `.tt` archivos y automáticamente se establecen sus propiedades para su procesamiento.
+ No use `.tt` archivos de inclusión.
+Usar una extensión de nombre de archivo diferente, como `.ttinclude` archivos de inclusión. Use `.tt` solamente los archivos que desea que se puede procesan las plantillas de texto como tiempo de ejecución o tiempo de diseño. En algunos casos, Visual Studio reconoce `.tt` archivos y automáticamente se establecen sus propiedades para su procesamiento.
 
  Cada plantilla de inicio como un prototipo fijo.
 Escribir un ejemplo del código o el texto que desea generar y asegúrese de que es correcta. A continuación, cambie su extensión a .tt e incrementalmente insertar código que modifica el contenido, lea el modelo.
