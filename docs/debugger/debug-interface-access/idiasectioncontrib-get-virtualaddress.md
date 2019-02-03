@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib | Microsoft Docs
+title: IDiaSectionContrib::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e5b44a81-0804-429b-97d8-467cbba3132a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6e148101255d12e4661ce594cb871afe38ea12d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11cf89cf7250d47ba2e3bc246d7f3bd5e710042f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953029"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029617"
 ---
 # <a name="idiasectioncontribgetvirtualaddress"></a>IDiaSectionContrib::get_virtualAddress
 Recupera la dirección virtual (VA) de la contribución.  

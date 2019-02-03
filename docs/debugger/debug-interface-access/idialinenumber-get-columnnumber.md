@@ -1,5 +1,5 @@
 ---
-title: Get_columnnumber | Microsoft Docs
+title: IDiaLineNumber::get_columnNumber | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e317f29a-6525-46a7-8421-33985392f8fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b5b79a7f5342a240a16506f97322d915228949
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01f8442c12cdbe31111967bd04e2af6d091e36b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893398"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925785"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
 Recupera el número de columna donde comienza la expresión o instrucción.  

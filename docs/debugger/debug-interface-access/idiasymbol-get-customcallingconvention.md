@@ -1,5 +1,5 @@
 ---
-title: Get_customcallingconvention | Microsoft Docs
+title: IDiaSymbol::get_customCallingConvention | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0aa97951-f7e1-4fa5-a87f-2920460c122d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39dba1a0358435822e43263d4812b601649e1461
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f46be0798023679bc7186dfa05ef3cfbac011507
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986471"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926725"
 ---
 # <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 Recupera una marca que especifica si la función tiene una convención de llamada personalizada.  

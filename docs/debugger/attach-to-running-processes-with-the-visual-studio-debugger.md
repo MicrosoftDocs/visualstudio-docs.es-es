@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2609c76c39924794e2a9623e9e70c037c20415
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa81baae882376aae99eedd1fdf825c863fd70c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899618"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932407"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
 Puede asociar el depurador de Visual Studio a un proceso en ejecución en un equipo local o remoto. Una vez que se ejecuta el proceso, seleccione **depurar** > **asociar al proceso** o presione **Ctrl**+**Alt** + **P** en Visual Studio y usan el **asociar al proceso** cuadro de diálogo para asociar el depurador al proceso.
@@ -118,7 +118,7 @@ Para obtener instrucciones más completas para depurar aplicaciones de ASP.NET q
    - Para buscar procesos que se ejecutan en todas las cuentas de usuario, seleccione el **mostrar los procesos de todos los usuarios** casilla de verificación.
       
      >[!NOTE]
-     >Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: Adjuntar a un proceso que pertenezca a un usuario de confianza puede ser peligroso. Si la información siguiente le resulta sospechosa o no está seguro de su procedencia, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: Adjuntar a un proceso que pertenezca a un usuario que no sea de confianza puede ser peligroso. Si la información siguiente le resulta sospechosa o no está seguro de su procedencia, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)  
       
 5. En el **adjuntar a** campo, asegúrese de que se muestra el tipo de código que se va a depurar. El valor predeterminado **automática** establecimiento funciona para la mayoría de los tipos de aplicación. 
   
@@ -161,7 +161,7 @@ Para seleccionar rápidamente un proceso en ejecución para adjuntar a, en Visua
 |Depuración remota de ASP.NET 4 o 4.5 en un servidor IIS|Utilizar las herramientas remotas y **asociar al proceso**|*w3wp.exe*|Consulte [ASP.NET en un equipo remoto de IIS de la depuración remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Depuración remota de ASP.NET Core en un servidor IIS|Utilizar las herramientas remotas y **asociar al proceso**|*dotnet.exe*|Implementación de aplicaciones, consulte [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, vea [remoto depuración ASP.NET Core en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Depurar script de cliente en un servidor IIS local, para los tipos de aplicación admitidos |Use **asociar al proceso**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, o *iexplore.exe*|Debe estar habilitada la depuración de scripts. Para Chrome, también debe ejecutar Chrome en modo de depuración y seleccione **código Webkit** en el **adjuntar a** campo.|
-|Depurar una aplicación de C#, Visual Basic o C++ en el equipo local|Usar [depuración estándar](../debugger/debugger-feature-tour.md) o **asociar al proceso**|*\<NombreAplicación > .exe*|En la mayoría de los escenarios, use la depuración estándar y no **asociar al proceso**.|
+|Depurar una aplicación de C#, Visual Basic o C++ en el equipo local|Usar [depuración estándar](../debugger/debugger-feature-tour.md) o **asociar al proceso**|*\<appname>.exe*|En la mayoría de los escenarios, use la depuración estándar y no **asociar al proceso**.|
 |Depuración remota de una aplicación de escritorio de Windows|Herramientas remotas|N/D| Consulte [remoto depurar una aplicación de C# o Visual Basic](../debugger/remote-debugging-csharp.md) o [depuración remota de una aplicación de C++](../debugger/remote-debugging-cpp.md)|
 |Depurar una aplicación ASP.NET en el equipo local después de iniciar la aplicación sin el depurador|Use **asociar al proceso**|*iiexpress.exe*|Esto puede resultar útil para realizar la aplicación carga más rápida, por ejemplo, (por ejemplo) al generar perfiles. |
 |Depurar otros tipos de aplicaciones compatibles en un proceso de servidor|Si el servidor remoto, use las herramientas remotas, y **asociar al proceso**|*Chrome.exe*, *iexplore.exe*, u otros procesos|Si es necesario, utilice al Monitor de recursos para ayudar a identificar el proceso. Vea [Depuración remota](../debugger/remote-debugging.md).|

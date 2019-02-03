@@ -1,5 +1,5 @@
 ---
-title: Idiastackframe | Microsoft Docs
+title: IDiaStackFrame::get_base | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f27477d7-26fe-4c1c-a08a-c52cb20c8293
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b3948cdc8d752a6d491b0b094477fdc327f0ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4053a49b0b0a4ebf55e55f0633672d98c2f02ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956821"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975210"
 ---
 # <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
 Recupera la dirección base del marco.  

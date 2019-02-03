@@ -1,29 +1,24 @@
 ---
-title: 'Cómo: Configurar las reglas de rendimiento | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Configurar reglas de rendimiento | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.ruleseditor
 ms.assetid: a148b468-b849-4858-880a-808a6b47e596
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3b4750dcd245094d0ea116097c7e58b87065aa91
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dc91bff6819cc5a1ed1e22864157143843f88ba9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765114"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790434"
 ---
-# <a name="how-to-configure-performance-rules"></a>Cómo: Configurar las reglas de rendimiento
+# <a name="how-to-configure-performance-rules"></a>Procedimiento Configurar las reglas de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las advertencias de rendimiento de las Herramientas de generación de perfiles de Visual Studio indican problemas en una aplicación para la que se han generado perfiles que pueden ralentizar la ejecución de programas. Las advertencias también pueden indicar que puede ser necesario cambiar los métodos de recolección para recopilar datos más útiles. Las advertencias de rendimiento se generan automáticamente en una sesión de generación de perfiles y aparecen en la ventana **Lista de errores** cuando se abre un archivo de datos de generación de perfiles en [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Es posible que determinadas advertencias no se apliquen en los escenarios que le interesan y que otras se produzcan de manera inexacta. Puede configurar las advertencias de rendimiento para mostrar u ocultar advertencias concretas.  
@@ -45,6 +40,3 @@ Las advertencias de rendimiento de las Herramientas de generación de perfiles d
     -   **Error**: detiene la ejecución de la generación de perfiles y muestra la regla como un error.  
   
     -   **Información**: la regla se muestra solo como información.
-
-
-

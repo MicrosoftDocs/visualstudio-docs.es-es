@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Buscar fugas de memoria (JavaScript) | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Buscar pérdidas de memoria (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744951"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780939"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar pérdidas de memoria (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar una fuga de memoria (JavaScript).
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
@@ -224,7 +219,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
     - Este es un objeto sobrante de la instantánea 2 y representa una posible pérdida de memoria.  
   
-      En este punto puede ser útil conocer algo de la aplicación: al elegir el botón **Leak Memory** , se debería quitar un elemento DIV y agregarse un elemento, por lo que el código parece que no funciona bien, es decir, hay una pérdida de memoria. En la sección siguiente se explica cómo solucionar esto.  
+      Cierto conocimiento de la aplicación Ayuda en este momento: Elegir el **Leak Memory** botón debería quitar un elemento DIV y agregarse un elemento, por lo que el código no parece estar trabajando directamente (es decir, pierde memoria). En la sección siguiente se explica cómo solucionar esto.  
   
     > [!TIP]
     >  A veces, la ubicación de un objeto con respecto al objeto `Global` puede ayudar a identificar ese objeto. Para ello, abre el menú contextual del identificador y elige **Mostrar en vista de raíces**.  
@@ -293,6 +288,3 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 ## <a name="see-also"></a>Vea también  
  [Memoria de JavaScript](../profiling/javascript-memory.md)
-
-
-
