@@ -1,5 +1,5 @@
 ---
-title: Get_systemexceptionhandling | Microsoft Docs
+title: IDiaFrameData::get_systemExceptionHandling | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e8df1972-913c-446c-9779-775575b0caa9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf18ed2bb25ab2632c471c0da7d19ea54239c70d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f309b0e3651f3832eba905cd17a5de9bebd5df40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939945"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019715"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 Recupera una marca que indica si el control de excepciones del sistema está en vigor.  

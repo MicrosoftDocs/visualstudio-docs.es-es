@@ -1,5 +1,5 @@
 ---
-title: Get_uninitializeddata | Microsoft Docs
+title: IDiaSectionContrib::get_uninitializedData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 39736f35-6c73-4f54-a092-517192e417ff
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ee13b8d6718152552ef075437e95566c997155
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a00efedaf92f050c90b8e46202292c9573bfb14f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951490"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993501"
 ---
 # <a name="idiasectioncontribgetuninitializeddata"></a>IDiaSectionContrib::get_uninitializedData
 Recupera una marca que indica si la sección contiene los datos sin inicializar.  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5422cf4899e68a913e6cf15e4923da564859653
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 675bd0ceef2b8eef382891bf0fc4b42400ca9df4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922578"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018662"
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
 Define por su presencia si una instancia predeterminada de la [Case Vsgdbg](vsgdbg-class.md) clase, que proporciona la interfaz de captura mediante programación, se proporciona.  

@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83e1d56c14ff4659c681ae2aadd0c6f1b88bec50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968344"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009900"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato de C++ en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en el **inspección** ventana mediante el uso de especificadores de formato.  
@@ -74,7 +74,7 @@ int main() {
 |su|Cadena Unicode (codificación UTF-16) (con comillas)|\<ubicación > L "Hola mundo"|L"hola a todos"<br /><br /> u"hola a todos"|  
 |sub|Cadena Unicode (codificación UTF-16; sin comillas)|\<ubicación > L "Hola mundo"|hola a todos|  
 |bstr|Cadena binaria de BSTR (con comillas)|\<ubicación > L "Hola mundo"|L"hola a todos"|  
-|env|Bloque de entorno (cadena terminada en doble null)|\<ubicación > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|env|Bloque de entorno (cadena terminada en doble null)|\<ubicación > L "=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|Cadena de UTF-32 (con comillas)|\<ubicación > U "Hola a todos"|u"hola a todos"|  
 |**s32b**|cadena UTF-32 (sin comillas)|\<ubicación > U "Hola a todos"|hola a todos|  
 |**en**|enum|Sábado(6)|Sábado|  

@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Configurar la reducción de ruido en las vistas de informes | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Configurar la reducción de ruido en las vistas de informes | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
 helpviewer_keywords:
@@ -19,15 +14,15 @@ ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e85e765ed80b37c7c688f9c0f25e3b7e8782a42f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a532a4ddf877e49a6cf355d182d41ed723b2f5d0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767703"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800334"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>Cómo: Configurar la reducción de ruido en las vistas de informes
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Procedimiento Configurar la reducción de ruido en las vistas de informes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los informes de rendimiento pueden configurarse para la reducción de ruido limitando la cantidad de datos que se presentan en la vistas Árbol de llamadas y Asignación. Gracias a la reducción de ruido, los problemas de rendimiento destacan más. Esto es útil a la hora de analizar informes de rendimiento.  
@@ -89,6 +84,3 @@ Los informes de rendimiento pueden configurarse para la reducción de ruido limi
  [Cómo: Excluir o incluir funciones cortas en la instrumentación](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Vista Árbol de llamadas](../profiling/call-tree-view.md)   
  [Vista Asignaciones](../profiling/dotnet-memory-allocations-view.md)
-
-
-

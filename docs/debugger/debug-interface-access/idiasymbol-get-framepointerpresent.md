@@ -1,5 +1,5 @@
 ---
-title: Get_framepointerpresent | Microsoft Docs
+title: IDiaSymbol::get_framePointerPresent | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d036090a-1651-454d-9130-b798f58ba053
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40464f1c9628fca9a7cd3a0d911c32efef9666a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24797dc18a247c050225b3bcd8c8215b3b266464
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959149"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960443"
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
 Recupera una marca que especifica si el puntero de marco está presente. Cuando utilice el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) está establecido en `SymTagFunction`.  
@@ -47,7 +47,7 @@ HRESULT get_framePointerPresent( 
   
  Biblioteca: diaguids.lib  
   
- Archivo DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f80a2e24-5744-4fec-bab0-3ed51aef6e58
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c15f6b7dc4a4c110507a3b65a34f4a8c3adc505
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5dea61b14cdee1ac260e4a21db0056abbdcad74f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989888"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977387"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
 Lee `ULONGLONG` valores en un conjunto de propiedades.  

@@ -1,5 +1,5 @@
 ---
-title: Get_slot | Microsoft Docs
+title: IDiaSymbol::get_slot | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97e405b8-483f-4da0-91e7-ca4d88251ecd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a8f56068e1278fcf1bbe6b1feb9354f229f7d09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd1a92b83ce6b5c04cc0225ffeb1173b641bdba2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989006"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036490"
 ---
 # <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
 Recupera el número de ranura de la ubicación. Cuando utilice el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) es `LocIsSlot`.  
