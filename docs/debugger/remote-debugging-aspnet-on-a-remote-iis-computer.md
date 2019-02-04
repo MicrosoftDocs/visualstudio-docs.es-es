@@ -188,7 +188,7 @@ Para obtener información acerca de cómo ejecutar el depurador remoto como un s
 
     Se alcanzará el punto de interrupción en Visual Studio.
 
-## <a name="bkmk_openports">Solución de problemas</a> Abra los puertos necesarios en Windows Server
+## <a name="bkmk_openports"></a>Solución de problemas Abra los puertos necesarios en Windows Server
 
 En la mayoría de las instalaciones, se abren los puertos requeridos por la instalación de ASP.NET y el depurador remoto. Sin embargo, deberá comprobar que los puertos estén abiertos.
 

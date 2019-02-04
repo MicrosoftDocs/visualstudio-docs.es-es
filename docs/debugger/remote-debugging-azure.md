@@ -225,7 +225,7 @@ En este tutorial, estamos usando Visual Studio 2017.
 
     Se alcanzará el punto de interrupción en Visual Studio.
 
-### <a name="bkmk_openports">Solución de problemas</a> Abra los puertos necesarios en Windows Server
+### <a name="bkmk_openports"></a> Solución de problemas Abra los puertos necesarios en Windows Server
 
 En la mayoría de las instalaciones, se abren los puertos requeridos por la instalación de ASP.NET y el depurador remoto. Sin embargo, si está solucionando problemas de implementación y la aplicación se hospeda detrás de un firewall, es posible que deba comprobar que están abiertos los puertos correctos.
 
