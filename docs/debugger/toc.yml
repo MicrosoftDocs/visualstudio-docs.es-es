@@ -202,6 +202,9 @@ items:
       items:
       - name: Crear vistas personalizadas de objetos nativos
         href: create-custom-views-of-native-objects.md
+        items:
+        - name: Compatibilidad del visualizador personalizado de Visual C++
+          href: visual-cpp-custom-visualizer-compatibility.md
       - name: Crear vistas personalizadas de objetos administrados
         href: create-custom-views-of-dot-managed-objects.md
         items:
@@ -835,9 +838,9 @@ items:
   items:
   - name: Novedades del depurador de Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: c65dcb45bc60abaaec767785e3059012b59a3e74
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71d02bd5fba02367da6f28400c4b991784422133
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002774"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231666"
