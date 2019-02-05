@@ -9,13 +9,13 @@ searchscope: VS Subscription
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.openlocfilehash: 414a7a9ef25740505e08da74cd4dcfce0fe11ce9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 01d1aebf03e71d90e31010a3a5610017c01e1f92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003423"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novedades de las suscripciones de Visual Studio
 
@@ -29,7 +29,7 @@ Esta es una pequeña recapitulación de las novedades del segundo trimestre.
 
 Hemos agregado una nueva funcionalidad para que a los administradores de la nube les resulte más fácil administrar las suscripciones de nube:
 
-* [**Asignaciones masivas**](/visualstudio/subscriptions/assign-license#bulk-assignments): agregue y cargue varios suscriptores en masa.
+* [**Asignaciones en masa**](/visualstudio/subscriptions/assign-license#bulk-assignments): agregue y cargue varios suscriptores en masa.
 
   ![Agregue varios usuarios con el botón Agregar en masa](media/bulk-add-multiple-subscribers.png)
 
@@ -38,29 +38,29 @@ Hemos agregado una nueva funcionalidad para que a los administradores de la nube
    ![Exporte una lista de suscriptores a Excel con el botón Exportar](media/export-subscriber-list-to-csv.png)
 
 
-* [**Edición masiva**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): edite la información de suscripción de varios suscriptores en masa.
+* [**Edición en masa**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): edite la información de suscripción de varios suscriptores en masa.
 
   ![Edite varios usuarios con el botón Edición masiva](media/bulk-edit-multiple-subscribers.png)
 
 * Explore los nuevos campos que están disponibles en la experiencia [**Agregar suscripción**](assign-license.md):
 
-  * **Correo electrónico de notificación**: si su organización no usa Azure AD y quiere usar un correo electrónico diferente para las notificaciones que no sea el correo electrónico de inicio de sesión, puede agregarlo.
+  * **Correo electrónico de notificación**: si su organización no usa Azure AD y quiere usar un correo para notificaciones que sea distinto del correo de inicio de sesión, puede agregarlo.
 
-    ![Agregue una nueva dirección de correo electrónico para las notificaciones](media/add-new-subscriber-notification-email.png)
+    ![Adición de una nueva dirección de correo electrónico de notificación](media/add-new-subscriber-notification-email.png)
 
-  * **Preferencias de comunicación**: elija el idioma que quiera usar para enviar correos electrónicos de asignación.
+  * **Preferencias de comunicación**: elija el idioma que quiera usar para enviar correos de asignación.
 
-    ![Cambie el idioma que se usará cuando se envíen correos electrónicos de notificación](media/change-subscriber-communication-preference.png)
+    ![Cambio del idioma que se va a usar cuando se envíen correos electrónicos de notificación](media/change-subscriber-communication-preference.png)
 
-  * **Agregar referencia**: agregue notas de referencia para las suscripciones que administra.
+  * **Agregar referencia**: agregue notas de referencia para las suscripciones que administre.
 
-    ![Agregue sus propias notas de referencia a cada suscripción](media/add-subscriber-reference-notes.png)
+    ![Adición de notas de referencia propias a cada suscripción](media/add-subscriber-reference-notes.png)
 
-* [**Reenviar el correo electrónico de asignación**](resend-assignment-email.md): envíe un correo electrónico de notificación de nuevo a cualquier persona de la lista de suscriptores, tantas veces como quiera.
+* [**Reenviar correo electrónico de asignación**](resend-assignment-email.md): envíe un correo de notificación de nuevo a cualquier persona de la lista de suscriptores, tantas veces como quiera.
 
-  ![Reenvíe el correo electrónico de activación a cualquier usuario o a varios usuarios cada vez que quiera](media/resend-subscriber-activation-emails.png)
+  ![Reenvío del correo electrónico de activación a cualquier usuario o a varios usuarios siempre que se quiera](media/resend-subscriber-activation-emails.png)
 
-* [**Filtrar**](search-license.md): organice y filtre los datos de suscriptor según se adapten mejor a sus necesidades.
+* [**Filtro**](search-license.md): organice y filtre los datos de suscriptor según se adapten mejor a sus necesidades.
 
   ![Filtre los datos de suscriptor, basándose en los campos disponibles](media/filter-subscriber-data.png)
 
