@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: ccf0e8d76aeaf1f6982d7b776abfd32609e1b3e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398252"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998266"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opciones, Editor de texto, Básico (Visual Basic), Avanzado
 La página de propiedades **Opciones específicas de VB**, en la carpeta **Básico** de la carpeta **Editor de texto** del cuadro de diálogo **Opciones** (menú **Herramientas**) incluye las propiedades siguientes:
@@ -40,18 +40,18 @@ La página de propiedades **Opciones específicas de VB**, en la carpeta **Bási
 - Aplicar primero directivas "System" al ordenar instrucciones Using
 
    Cuando se selecciona el comando **Eliminar y ordenar instrucciones Using** en el menú contextual, ordena las directivas `using` y coloca los espacios de nombres "System" en la parte superior de la lista.
-   
+
 - Separar grupos de directivas using
 
    Cuando se selecciona, el comando **Eliminar y ordenar instrucciones Using** en el menú contextual separa las directivas `using` al insertar una línea vacía entre los grupos de directivas con el mismo espacio de nombres raíz.
-   
-- Sugerir usos para tipos de ensamblados de referencia 
-- Sugerir usos para tipos de paquetes NuGet 
+
+- Sugerir usos para tipos de ensamblados de referencia
+- Sugerir usos para tipos de paquetes NuGet
 
    Cuando se seleccionan estas opciones, una [acción rápida](../quick-actions.md) se encuentra disponible para instalar un paquete NuGet y agregar una directiva `using` para tipos sin referencia.
 
    ![Acción rápida para instalar el paquete NuGet en Visual Studio](media/nuget-lightbulb.png)
-  
+
 
 ## <a name="highlighting"></a>Resaltado
 
@@ -77,7 +77,7 @@ El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una
 
 ## <a name="block-structure-guides"></a>Guías de estructura de bloque
 
-Active estas casillas de verificación para mostrar líneas punteadas verticales entre llaves (**{}**) en el código. Esto le permite ver con facilidad los bloques individuales de código para las construcciones de nivel de declaración y de nivel de código.
+Cuando se selecciona esta opción, aparecen líneas verticales en el editor que se alinean con bloques de código estructurado, lo que permite identificar fácilmente los bloques de código individuales. Por ejemplo, verá una línea entre `Sub` y `EndSub` en una instrucción `Sub`.
 
 ## <a name="editor-help"></a>Ayuda del editor
 

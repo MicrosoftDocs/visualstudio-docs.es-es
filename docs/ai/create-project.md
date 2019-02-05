@@ -1,4 +1,19 @@
 ---
+title: Creación de un proyecto de IA a partir de una plantilla
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.service: multiple
+ms.workload:
+- multiple
+ms.openlocfilehash: e8b3f7a12b13c931513962a10d1eb5fcd4344174
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786114"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Creación de un proyecto de IA desde una plantilla en Visual Studio
 

@@ -5,20 +5,20 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.date: 01/09/2019
+manager: jillfra
+ms.date: 01/24/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: 15738554ca658a337f187f554b07786569f95ea3
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 886dcff968f5fcb25a3c7c69808b2811fffa6f5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154513"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929041"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -28,6 +28,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.6 | Versión | 24 de enero de 2019 | 15.9.28307.344 |
 | 15.9.5 | Versión | 8 de enero de 2019 | 15.9.28307.280 |
 | 15.9.4 | Versión | 11 de diciembre de 2018 | 15.9.28307.222 |
 | 15.0.20 | Versión | 11 de diciembre de 2018 | 15.0.26228.64 |
@@ -175,6 +176,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Preview 2 | 23 de enero de 2019 | 16.0.28522.59 |
 | 16.0.0 | Versión preliminar 1.1 | 10 de diciembre de 2018 | 16.0.28408.50 |
 | 16.0.0 | Versión preliminar 1 | 4 de diciembre de 2018 | 16.0.28329.73 |
 
