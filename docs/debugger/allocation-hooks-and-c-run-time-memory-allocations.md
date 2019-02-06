@@ -20,24 +20,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9432eab55f22bcf18266a10e4e1616997ed8c4a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2f7f81abd82857b3d9ed2161a6923a79b614bf5a
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924183"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742409"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Enlaces de asignación y asignaciones de memoria en tiempo de ejecución de C
-Una restricción muy importante en las funciones de enlace de asignación es que deben omitir explícitamente `_CRT_BLOCK` bloques. Estos bloques son las asignaciones de memoria realizadas internamente por las funciones de biblioteca en tiempo de ejecución de C si realizan alguna llamada a funciones de biblioteca en tiempo de ejecución de C que asignan memoria interna. Puede hacer caso omiso `_CRT_BLOCK` bloques incluyendo el código siguiente al principio de la asignación de función de enlace:  
-  
+Una restricción muy importante en las funciones de enlace de asignación es que deben omitir explícitamente `_CRT_BLOCK` bloques. Estos bloques son las asignaciones de memoria realizadas internamente por las funciones de biblioteca en tiempo de ejecución de C si realizan alguna llamada a funciones de biblioteca en tiempo de ejecución de C que asignan memoria interna. Puede hacer caso omiso `_CRT_BLOCK` bloques incluyendo el código siguiente al principio de la asignación de función de enlace:
+
 ```cpp
-if ( nBlockUse == _CRT_BLOCK )  
-    return( TRUE );  
-```  
-  
- Si el enlace de asignación no omite `_CRT_BLOCK` se bloquea, entonces cualquier función de biblioteca en tiempo de ejecución de C llamada en el enlace puede hacer que el programa en un bucle infinito. Por ejemplo, `printf` realiza una asignación interna. Si el código del enlace llama a `printf`, la asignación resultante hará que se vuelva a llamar al enlace, que llamará de nuevo a **printf**, etc. hasta que se desborde la pila. Si necesita informar de las operaciones de asignación de `_CRT_BLOCK`, una forma de evitar esta restricción consiste en utilizar funciones de la API de Windows, en vez de funciones en tiempo de ejecución de C, para operaciones de formato y salida. Dado que las API de Windows no usan el montón de la biblioteca en tiempo de ejecución de C, no interceptar el enlace de asignación en un bucle infinito.  
-  
- Si examina los archivos de código fuente de la biblioteca en tiempo de ejecución, verá que la función de enlace de asignación predeterminada, **CrtDefaultAllocHook** (que simplemente devuelve **TRUE**), se encuentra en un archivo independiente, DBGHOOK.C. Si desea llamar al enlace de asignación incluso en las asignaciones realizadas por el código de inicio en tiempo de ejecución que se ejecuta antes que la función **main** de la aplicación, puede reemplazar esta función predeterminada por una propia en lugar de usar [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).  
-  
-## <a name="see-also"></a>Vea también  
- [Creación de funciones de enlace de depuración](../debugger/debug-hook-function-writing.md)   
+if ( nBlockUse == _CRT_BLOCK )
+    return( TRUE );
+```
+
+Si el enlace de asignación no omite `_CRT_BLOCK` se bloquea, entonces cualquier función de biblioteca en tiempo de ejecución de C llamada en el enlace puede hacer que el programa en un bucle infinito. Por ejemplo, `printf` realiza una asignación interna. Si el código del enlace llama a `printf`, la asignación resultante hará que se vuelva a llamar al enlace, que llamará de nuevo a **printf**, etc. hasta que se desborde la pila. Si necesita informar de las operaciones de asignación de `_CRT_BLOCK`, una forma de evitar esta restricción consiste en utilizar funciones de la API de Windows, en vez de funciones en tiempo de ejecución de C, para operaciones de formato y salida. Dado que las API de Windows no usan el montón de la biblioteca en tiempo de ejecución de C, no interceptar el enlace de asignación en un bucle infinito.
+
+Si examina los archivos de código fuente de la biblioteca en tiempo de ejecución, verá que la función de enlace de asignación predeterminada, **CrtDefaultAllocHook** (que simplemente devuelve **TRUE**), se encuentra en un archivo independiente, DBGHOOK.C. Si desea llamar al enlace de asignación incluso en las asignaciones realizadas por el código de inicio en tiempo de ejecución que se ejecuta antes que la función **main** de la aplicación, puede reemplazar esta función predeterminada por una propia en lugar de usar [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).
+
+## <a name="see-also"></a>Vea también
+[Creación de funciones de enlace de depuración](../debugger/debug-hook-function-writing.md)
