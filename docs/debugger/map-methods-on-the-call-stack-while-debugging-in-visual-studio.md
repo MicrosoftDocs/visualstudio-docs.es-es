@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 087e8f850aa7d12a427924133f82f1e72c9c4bd3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5285149bbefa8230940cfad19b5e0391a1e99bd
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959491"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690507"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Crear un mapa visual de la pila de llamadas durante la depuración (C#, Visual Basic, C++, JavaScript)
 
@@ -45,7 +45,7 @@ Para ver un tutorial, vea este vídeo: [Vídeo: Depurar visualmente con la integ
 Para obtener detalles de los comandos y acciones que puede utilizar con mapas de código, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->Puede crear únicamente en los mapas de código [edition de Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+>Puede crear únicamente en los mapas de código [edition de Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
 
 Este es un vistazo rápido a un mapa de código:
 
