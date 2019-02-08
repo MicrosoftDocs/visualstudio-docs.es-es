@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fcd6032879dc8e218aa782d27a34250982fb7c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14a595de3b80635ad6974f2abb94bd9645d5a7f7
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961954"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483822"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introducción de una variable local en Visual Basic
 
@@ -47,11 +47,11 @@ Esta generación de código se aplica a:
       - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
       - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
+      - Haga clic en el botón ![icono de destornillador](media/screwdriver.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con la expresión resaltada.
 
    ![Vista previa de la introducción de la variable local](media/local-preview-cs.png)
 
-3. Seleccione **Introducir la variable local para todas las repeticiones de "*expresión*"** en el menú desplegable.
+3. Seleccione **Introducir la variable local para todas las repeticiones de "expresión"** en el menú desplegable.
 
    > [!TIP]
    > Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios ](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.

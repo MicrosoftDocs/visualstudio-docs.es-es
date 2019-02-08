@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab4485953203c9f3b19947b89f76329b6bc277b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b84e02c4ca63d80d6ef80637fcce042c869bcf
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017102"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483775"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Hacer que el código funcione en Visual Studio
 
@@ -89,9 +89,9 @@ Las advertencias nuevas o actualizadas se muestran en la pestaña **Lista de err
 
 ![Lista de errores con advertencias de Visual Studio](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Usar bombillas para corregir o refactorizar el código
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Uso de Acciones rápidas para corregir o refactorizar el código
 
-Las [acciones rápidas](../ide/quick-actions.md), que están disponibles desde el icono de la bombilla o el destornillador, le permiten refactorizar código alineado. Son una manera fácil de corregir advertencias comunes de forma rápida y eficaz en el código de C#, C++ y Visual Basic. Para obtener acceso a ellas, haga clic con el botón derecho en un subrayado ondulado de advertencia y seleccione **Acciones rápidas y refactorizaciones**. O bien, cuando el cursor se encuentre en la línea con el subrayado ondulado de color, presione **Ctrl**+**.** o seleccione el icono de la bombilla o el destornillador en el margen. Verá una lista de posibles correcciones o refactorizaciones que puede aplicar a esa línea de código.
+Las [acciones rápidas](../ide/quick-actions.md), que están disponibles desde el icono de la bombilla o el destornillador, le permiten refactorizar código alineado. Son una manera fácil de corregir advertencias comunes de forma rápida y eficaz en el código de C#, C++ y Visual Basic. Para obtener acceso a ellas, haga clic con el botón derecho en un subrayado ondulado de advertencia y seleccione **Acciones rápidas y refactorizaciones**. O bien, cuando el cursor se encuentre en la línea con el subrayado ondulado de color, presione **Ctrl**+**.** o bien, haga clic en el icono de la bombilla, la bombilla de error o el destornillador en el margen. Verá una lista de posibles correcciones o refactorizaciones que puede aplicar a esa línea de código.
 
 ![Vista previa de bombilla de Visual Studio](../ide/media/quick-actions-options.png)
 

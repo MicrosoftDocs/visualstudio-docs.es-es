@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 856c20175fd444c7acf83bdf02526c907a28b92f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f303b67365b5f824fe1ee114921ddc94c333922
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936962"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424530"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
 
@@ -66,9 +66,9 @@ En primer lugar, exploraremos algunos cálculos de enteros básicos en C#. Despu
 
 Empecemos con algunos cálculos de enteros en C#.
 
-1. En el editor de código, elimine el código predeterminado "Hello World".
+1. En el editor de código, elimine el código predeterminado "Hola mundo".
 
-    ![Eliminar el código "Hello World" predeterminado de la nueva aplicación de calculadora](./media/csharp-console-calculator-deletehelloworld.png)
+    ![Eliminar el código "Hola mundo" predeterminado de la nueva aplicación de calculadora](./media/csharp-console-calculator-deletehelloworld.png)
 
    En concreto, elimine la línea que dice `Console.WriteLine("Hello World!");`.
 
@@ -530,7 +530,7 @@ namespace Calculator
 Enhorabuena por completar este tutorial. Para más información, continúe con los tutoriales siguientes.
 
 > [!div class="nextstepaction"]
-> [Tutoriales de C#](/dotnet/csharp/tutorials/)
+> [Continuar con más tutoriales de C#](/dotnet/csharp/tutorials/)
 
 ## <a name="see-also"></a>Vea también
 

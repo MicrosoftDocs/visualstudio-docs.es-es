@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ee615f688b80ae02bf7986c18e0b05a5c94bc4ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e2e3a734f78a11a4657899eda58ee3a4fe3ff2c6
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020573"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571192"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2: Creación de una aplicación de Django con vistas y plantillas de página
 
@@ -35,7 +35,7 @@ En este paso aprenderá lo siguiente:
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Paso 2-1: Creación de una aplicación con una estructura predeterminada
 
-Una aplicación de Django es un paquete de Python independiente que contiene un conjunto de archivos relacionados para un propósito específico. Un proyecto de Django puede contener cualquier número de aplicaciones, lo que refleja el hecho de que un host de web puede atender cualquier número de puntos de entrada independientes desde un único nombre de dominio. Por ejemplo, un proyecto de Django para un dominio como contoso.com puede contener una aplicación para www.contoso.com, una segunda aplicación para support.contoso.com y una tercera aplicación para docs.contoso.com. En este caso, el proyecto de Django controla el enrutamiento y la configuración de direcciones URL de nivel de sitio (en sus archivos *urls.py* y *settings.py*), mientras que cada aplicación tiene su propio estilo y comportamiento distintivo definidos por su enrutamiento interno, vistas, modelos, archivos estáticos e interfaz administrativa.
+Una aplicación de Django es un paquete de Python independiente que contiene un conjunto de archivos relacionados para un propósito específico. Un proyecto de Django puede contener cualquier número de aplicaciones, lo que refleja el hecho de que un host de web puede atender cualquier número de puntos de entrada independientes desde un único nombre de dominio. Por ejemplo, es posible que un proyecto de Django para un dominio como contoso.com contenga una aplicación para `www.contoso.com`, una segunda aplicación para support.contoso.com y una tercera para docs.contoso.com. En este caso, el proyecto de Django controla el enrutamiento y la configuración de direcciones URL de nivel de sitio (en sus archivos *urls.py* y *settings.py*), mientras que cada aplicación tiene su propio estilo y comportamiento distintivo definidos por su enrutamiento interno, vistas, modelos, archivos estáticos e interfaz administrativa.
 
 Normalmente, una aplicación de Django comienza con un conjunto estándar de archivos. Visual Studio proporciona plantillas de elementos para inicializar una aplicación de Django dentro de un proyecto de Django, junto con un comando de menú integrado que tiene la misma finalidad:
 

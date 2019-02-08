@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 82334ebb6dbcee17954baf0ddd793eb02c37ff43
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63f33d80a89a35d78e1c4465c9367f0674f73f18
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928807"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483853"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementación de una interfaz en Visual Studio
 
@@ -47,8 +47,8 @@ Esta generación de código se aplica a:
       - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
       - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
-      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
+      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![bombilla de error](media/error-bulb.png) que aparece.
+      - Haga clic en el botón ![bombilla de error](media/error-bulb.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
 
 3. Seleccione **Implementar interfaz** en el menú desplegable.
 

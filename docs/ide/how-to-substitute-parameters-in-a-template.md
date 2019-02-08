@@ -10,14 +10,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93e553338478bcdead9e283323348b02ac73eaac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19dcfbca8025ef73cea38e5b2b6e5768ab5e8a1f
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031765"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424283"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Procedimiento Sustituir parámetros en una plantilla
+# <a name="how-to-substitute-parameters-in-a-template"></a>Filtrar Sustituir parámetros en una plantilla
 
 Los parámetros de plantilla le permiten reemplazar identificadores, como nombres de clase y espacios de nombres, cuando se crea un archivo a partir de una plantilla. Puede agregar parámetros de plantilla a una plantilla o bien crear sus propias plantillas con dichos parámetros.
 
@@ -25,7 +25,7 @@ Los parámetros de plantilla se escriben con el formato $*parámetro*$. Para obt
 
 En la sección siguiente se muestra cómo modificar una plantilla para reemplazar el nombre de un espacio de nombres con el nombre del proyecto "seguro".
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>Para usar un parámetro para reemplazar el nombre de espacio de nombres
+## <a name="example---namespace-name"></a>Ejemplo: nombre del espacio de nombres
 
 1. Inserte el parámetro en uno o varios archivos de código en la plantilla. Por ejemplo:
 

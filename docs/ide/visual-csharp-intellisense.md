@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f352ac46b87fee66a491c178f5f11369eca7b7d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d45501f4f8038daf0a891493286ab5f5835195b8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979067"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484191"
 ---
 # <a name="c-intellisense"></a>IntelliSense para C#
 
@@ -99,7 +99,7 @@ Para iniciar la operación **Agregar using**, coloque el cursor en una referenci
 
 ![Imagen expandida de Agregar using, Acción rápida](../ide/media/addusing-quickaction.png)
 
-Haga clic en el icono de bombilla y después elija **using System.Xml;** para agregar automáticamente la directiva using.
+Haga clic en el icono de la bombilla de error y después elija **using System.Xml;** para agregar la directiva "using" de forma automática.
 
 ### <a name="remove-and-sort-usings"></a>Eliminar y ordenar instrucciones Using
 
@@ -123,7 +123,7 @@ La característica **Generar a partir del uso** le permite usar clases y miembro
 
 Aparece un subrayado ondulado de color rojo debajo de cada identificador no definido. Cuando se sitúa el puntero del mouse sobre el identificador, aparece un mensaje de error en una ventana de información rápida. Para mostrar las opciones adecuadas, puede usar uno de los procedimientos siguientes:
 
-- Haga clic en el identificador no definido. Aparece una bombilla de **Acciones rápidas** debajo del identificador. Haga clic en la bombilla.
+- Haga clic en el identificador no definido. Aparece una bombilla de error **Acciones rápidas** debajo del identificador. Haga clic en la bombilla de error.
 
 - Haga clic en el identificador no definido y, después, presione **CTRL**+**.** (**CTRL** + punto).
 

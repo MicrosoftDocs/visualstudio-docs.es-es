@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90a9ba0da2ee8c77b66d147c9af5fa560f50f3a0
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010394"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484139"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de accesibilidad de Visual Studio
 
@@ -41,7 +41,7 @@ Algunas personas tienen más dificultades para ver ciertos colores. Si necesita 
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Uso de anotaciones para revelar información útil sobre el código
 
-El editor de Visual Studio incluye numerosos elementos gráficos en el texto que le permiten conocer las características y las funciones en puntos concretos de una línea de código, como bombillas, subrayados ondulados de error y advertencia, marcadores, etc. Puede usar el conjunto de comandos "Mostrar anotaciones de línea" para detectar estos elementos gráficos y navegar por ellos.
+El editor de Visual Studio incluye numerosos "adornos" de texto que permiten conocer las características y las funciones en puntos concretos de una línea de código, como los iconos del destornillador y la bombilla, los subrayados ondulados de errores y advertencias, los marcadores, etc. Puede usar el conjunto de comandos "Mostrar anotaciones de línea" para detectar estos adornos y navegar por ellos.
 
   ![Use el conjunto de comandos Mostrar anotaciones de línea](media/show-line-annotations-command-set.png)
 
