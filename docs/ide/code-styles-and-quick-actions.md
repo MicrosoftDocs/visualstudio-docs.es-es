@@ -11,12 +11,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 065a4c21be596b409ed82718e0b38c38367612cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f33c1edec4b4093e9157a59618befa2e1175be49
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039064"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483996"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 
@@ -31,7 +31,7 @@ Cada elemento de la lista muestra una vista previa de la preferencia cuando se s
 
 ## <a name="preference-and-severity"></a>Preferencia y gravedad
 
-Para cada elemento, puede establecer el valor de **Preferencia** y **Gravedad** usando las listas desplegables de cada línea. La gravedad se puede establecer en **Ninguno**, **Sugerencia**, **Advertencia** o **Error**. Si desea habilitar las [Acciones rápidas](../ide/quick-actions.md) para un estilo de código, asegúrese de que el valor **Gravedad** se establece en un valor distinto de **Ninguno**. El icono de bombilla de **Acciones rápidas** ![icono de bombilla pequeña](media/vs2015_lightbulbsmall.png) aparece cuando se usa un estilo no preferido y puede elegir una opción en la lista **Acciones rápidas** para volver a escribir código automáticamente para el estilo preferido.
+Para cada elemento, puede establecer el valor de **Preferencia** y **Gravedad** usando las listas desplegables de cada línea. La gravedad se puede establecer en **Ninguno**, **Sugerencia**, **Advertencia** o **Error**. Si desea habilitar las [Acciones rápidas](../ide/quick-actions.md) para un estilo de código, asegúrese de que el valor **Gravedad** se establece en un valor distinto de **Ninguno**. El icono de bombilla ![Bombilla](media/vs2015_lightbulbsmall.png), de bombilla de error ![Bombilla de error](media/error-bulb.png) o de destornillador ![Destornillador](media/screwdriver.png) de **Acciones rápidas** aparece cuando se usa un estilo no preferido, y puede elegir una opción en la lista **Acciones rápidas** para volver a escribir código de forma automática para el estilo preferido.
 
 ## <a name="editorconfig-files"></a>Archivos EditorConfig
 

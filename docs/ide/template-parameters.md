@@ -11,18 +11,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c46c0094985e8b84e546ef64fbdd268689c5296
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd80a7d29ae62cac691775e85cc432ac65a6eded
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935025"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424452"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 
 Es posible sustituir valores de la plantilla cuando se crea una instancia de ella. Para configurar esta funcionalidad, use *parámetros de plantilla*. Los parámetros de plantilla pueden usarse para sustituir valores como nombres de clase y espacios de nombres de la plantilla. El asistente para plantillas que se ejecuta en segundo plano cuando un usuario agrega un nuevo elemento o proyecto reemplaza estos parámetros.
 
-## <a name="declaring-and-enabling-template-parameters"></a>Declarar y habilitar parámetros de plantilla
+## <a name="declare-and-enable-template-parameters"></a>Declaración y habilitación de parámetros de plantilla
 
 Los parámetros de plantilla se declaran en el formato $*parámetro*$. Por ejemplo:
 
@@ -32,7 +32,7 @@ Los parámetros de plantilla se declaran en el formato $*parámetro*$. Por ejemp
 
 - $guid5$
 
-### <a name="to-enable-parameter-substitution-in-templates"></a>Para habilitar la substitución de parámetros en las plantillas
+### <a name="enable-parameter-substitution-in-templates"></a>Habilitación de la sustitución de parámetros en las plantillas
 
 1. En el archivo *.vstemplate* de la plantilla, busque el elemento `ProjectItem` correspondiente al elemento para el que quiere habilitar el reemplazo de parámetros.
 
@@ -46,11 +46,12 @@ Los parámetros de plantilla se declaran en el formato $*parámetro*$. Por ejemp
 
 ## <a name="reserved-template-parameters"></a>Parámetros de plantilla reservados
 
-La tabla siguiente muestra los parámetros de plantilla reservados que cualquier plantilla puede utilizar.
+En la tabla siguiente se muestran los parámetros de plantilla reservados que se pueden usar en cualquier plantilla:
 
 |Parámetro|Descripción|
 |---------------|-----------------|
 |clrversion|Versión actual del Common Language Runtime (CLR).|
+|ext_*|Agrega el prefijo `ext_` a cualquier parámetro para hacer referencia a las variables de la plantilla principal. Por ejemplo: `ext_safeprojectname`.|
 |guid[1-10]|GUID utilizado para reemplazar el GUID del proyecto en un archivo de proyecto. Puede especificar hasta 10 GUID únicos (por ejemplo, `guid1`).|
 |itemname|Nombre proporcionado por el usuario en el cuadro de diálogo **Agregar nuevo elemento**.|
 |machinename|Nombre del equipo actual (por ejemplo, Equipo01).|
@@ -118,6 +119,7 @@ En el archivo *.vstemplate* de la plantilla de proyecto, incluya el atributo `Re
 
 ## <a name="see-also"></a>Vea también
 
+- [Cómo: Sustituir parámetros en una plantilla](how-to-substitute-parameters-in-a-template.md)
 - [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
 - [Referencia de esquema de plantillas](../extensibility/visual-studio-template-schema-reference.md)

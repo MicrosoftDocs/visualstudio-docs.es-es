@@ -1,5 +1,5 @@
 ---
-title: 'Creación de una interfaz de usuario: Blend para Visual Studio'
+title: Paseo por las características de Blend para Visual Studio
 titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0a39bee4f44f0cf62c237ec9bb62135637a957
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58b2e84a28a2d453eb109915bb9c38672b6bed98
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923797"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484126"
 ---
-# <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Creación de una interfaz de usuario con Blend para Visual Studio
+# <a name="blend-for-visual-studio-overview"></a>Introducción de Blend para Visual Studio
 
 Blend para Visual Studio le ayuda a diseñar aplicaciones web y de Windows basadas en XAML. Proporciona la misma experiencia de diseño XAML básica que Visual Studio y agrega diseñadores visuales para tareas avanzadas como animaciones y comportamientos. Para ver una comparación entre Blend y Visual Studio, vea [Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md).
 

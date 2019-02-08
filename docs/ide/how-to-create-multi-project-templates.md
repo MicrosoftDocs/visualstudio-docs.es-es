@@ -10,14 +10,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cefeabffc42722b1fa574a19068eb45c5e850e86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b1470620ce6640b3a287a5d86fc6922597258b3
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985921"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424219"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Procedimiento Crear plantillas de varios proyectos
+# <a name="how-to-create-multi-project-templates"></a>Filtrar Crear plantillas de varios proyectos
 
 Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. Cuando se crea un proyecto basado en una plantilla de varios proyectos a partir del cuadro de diálogo **Nuevo proyecto**, todos los proyectos de la plantilla se agregan a la solución.
 
@@ -69,17 +69,20 @@ El archivo raíz *vstemplate* de una plantilla de varios proyectos difiere de un
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>Para crear una plantilla de varios proyectos a partir de una solución existente
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>crear una plantilla de varios proyectos a partir de una solución existente
 
 1. Cree una solución y agregue como mínimo dos proyectos.
 
 1. Personalice los proyectos hasta que estén listos para exportarlos a una plantilla.
 
+   > [!TIP]
+   > Si usa [parámetros de plantilla](template-parameters.md) y quiere hacer referencia a variables de la plantilla principal, agregue el prefijo `ext_` al nombre del parámetro. Por ejemplo: `$ext_safeprojectname$`.
+
 1. En el menú **Proyecto**, elija **Exportar plantilla**.
 
    Se abre el **Asistente para exportar plantillas**.
 
-1. En la página **Elegir tipo de plantilla**, seleccione **Plantilla de proyecto**. Seleccione el proyecto que quiera exportar a una plantilla y, después, **Siguiente**.
+1. En la página **Elegir tipo de plantilla**, seleccione **Plantilla de proyecto**. Seleccione uno de los proyectos que quiera exportar a una plantilla y, después, haga clic en **Siguiente**. (Repita estos pasos con todos los proyectos de la solución).
 
 1. En la página **Seleccionar opciones de plantilla**, escriba un nombre y, si quiere, una descripción, un icono y una imagen de vista previa para su plantilla. Elija **Finalizar**.
 

@@ -10,20 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ac3acc8b5addf02e510943b6b61ce1c5f0c5b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52a0b5d046580e5d4dbf499e504cd0ea123ff5b2
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999761"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424387"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
-Use Visual Studio para definir y ejecutar sus pruebas unitarias para conservar el estado del código, garantizar la cobertura del código y para detectar errores antes de que los clientes lo hagan.
+Use Visual Studio para definir y ejecutar pruebas unitarias para conservar el estado del código, garantizar la cobertura del código y detectar errores y fallos antes de que lo hagan los clientes. Ejecute las pruebas unitarias con frecuencia para asegurarse de que el código funciona correctamente.
 
 ## <a name="create-unit-tests"></a>Crear pruebas unitarias
 
-Cree pruebas unitarias y ejecútelas con frecuencia para asegurarse de que el código funciona correctamente.
+En esta sección se describe de forma general cómo se crea un proyecto de prueba unitaria.
+
+> [!TIP]
+> El proyecto que se va a probar, "Hola mundo", es un proyecto de ejemplo y no se mostrará código relacionado con él. Si quiere crear un proyecto "Hola mundo" para probarlo, vea [Uso de Visual Studio para crear la primera aplicación de consola de C#](../ide/quickstart-csharp-console.md). Para obtener un artículo con un tutorial completo, vea [Crear y ejecutar pruebas unitarias en código administrado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 1. Cree un proyecto de prueba unitaria.
 
@@ -150,6 +153,7 @@ Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
 
 ## <a name="see-also"></a>Vea también
 
+* [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Crear un comando de pruebas unitarias](create-unit-tests-menu.md)
 * [Generate tests with IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md) (Generar pruebas con IntelliTest)
 * [Ejecutar pruebas con el Explorador de pruebas](run-unit-tests-with-test-explorer.md)
