@@ -2,7 +2,7 @@
 title: Novedades de Visual Studio 2019
 titleSuffix: ''
 description: Obtenga más información sobre las nuevas características de Visual Studio 2019.
-ms.date: 01/24/2019
+ms.date: 01/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 9f1d2ba67739dd5349a1a361744543089900a371
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55090123"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483710"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Novedades de la versión preliminar de Visual Studio 2019
 
@@ -40,7 +40,7 @@ Aquí tiene un resumen detallado de todo lo que ofrece Visual Studio:
 * **[Innovación continua](#continuous-innovation)**. Escriba código de forma inteligente con la ayuda con tecnología en la nube.
 
 > [!NOTE]
-> Para obtener una lista completa de las nuevas características y funcionalidades de la versión preliminar de Visual Studio 2019, consulte las [notas de la versión](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
+> Para obtener una lista completa de las nuevas características y funcionalidades de la versión preliminar de Visual Studio 2019, consulte las [notas de la versión](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017). Y para obtener un resumen de las novedades de nuestra segunda versión preliminar, vea la entrada de blog [Visual Studio 2019 Preview 2 is now available](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/) (Visual Studio 2019 Preview 2 ya disponible).
 
 ## <a name="personal-and-team-productivity"></a>Productividad personal y en equipo
 
@@ -82,6 +82,8 @@ También puede dar formato a la visualización de un valor en las ventanas Inspe
 
    ![Nueva ventana Inspección y uso del formato para los valores en Visual Studio 2019](media/search-watch-window.png)
 
+Para más información, vea la entrada de blog [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Mejoras en Visual Studio 2019: búsqueda de objetos y propiedades en las ventanas Inspección, Automático y Variables locales)
+
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) es un servicio para desarrolladores que permite compartir código base y su contexto con un compañero de equipo, de forma que obtengan una colaboración bidireccional instantánea directamente en Visual Studio. Con Live Share, un compañero de equipo puede leer, navegar, editar y depurar un proyecto que ha compartido con él de forma segura y sin problemas.
@@ -110,7 +112,7 @@ La versión preliminar de Visual Studio 2019 admite la compilación de aplicacio
 
 Si usa monitores configurados con diferentes factores de escala o se conecta de forma remota a una máquina con factores de escala distintos a los de su dispositivo principal, es posible que Visual Studio se muestre borroso o que se represente en una escala incorrecta.
 
-Con la publicación de la versión preliminar 1 de Visual Studio 2019, hemos comenzado a hacer que Visual Studio sea una aplicación con reconocimiento del monitor (PMA). Estamos asentando la base que nos permitirá hacer que Visual Studio se represente correctamente independientemente de los factores de escala de monitor que use.
+Con la publicación de Visual Studio 2019 Preview, se toman los primeros pasos para hacer que Visual Studio sea una aplicación con reconocimiento del monitor (PMA). Estamos asentando la base que nos permitirá hacer que Visual Studio se represente correctamente independientemente de los factores de escala de monitor que use.
 
    ![Representación con reconocimiento del monitor (PMA) en Visual Studio 2019](media/per-monitor-aware-dpi-scaling.png)
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2fe0c653706212e33b2a60b2d51a8b6cfea5a29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941397"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484100"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guía de productividad de C# para Visual Studio 2017
 
@@ -81,7 +81,7 @@ Puede utilizar un archivo *.editorconfig* para codificar las convenciones de cod
 
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>Necesito más correcciones de código y refactorizaciones
 
-Visual Studio 2017 incluye un gran número de refactorizaciones, acciones de generación de código y correcciones de código. Un subrayado ondulado rojo representa un error, un subrayado ondulado verde representa una advertencia y tres puntos de color gris representan sugerencias de código. Para acceder a las correcciones de código, puede hacer clic en el icono de bombilla o destornillador, o bien presionar **CTRL**+**.** o **Alt**+**Enter**. Cada corrección incluye una ventana de vista previa que muestra un diff de código activo con el funcionamiento de la solución.
+Visual Studio 2017 incluye un gran número de refactorizaciones, acciones de generación de código y correcciones de código. Un subrayado ondulado rojo representa un error, un subrayado ondulado verde representa una advertencia y tres puntos de color gris representan sugerencias de código. Para acceder a las correcciones de código, puede hacer clic en el icono de bombilla o destornillador, o bien presionar **Ctrl**+**.** o **Alt**+**Enter**. Cada corrección incluye una ventana de vista previa que muestra un diff de código activo con el funcionamiento de la solución.
 
 - Las correcciones rápidas y las refactorizaciones populares incluyen:
   - *Cambiar nombre*
@@ -155,7 +155,7 @@ La lista siguiente incluye características de editor y productividad que aument
 | Característica | Detalles | Cómo habilitar |
 |-|-|-|
 | Buscar archivo en el Explorador de soluciones | Resalta el archivo activo en el **Explorador de soluciones** | **Herramientas** > **Opciones** > **Proyectos y soluciones** > **Realizar seguimiento del elemento activo en el Explorador de soluciones** |
-| Agregar usos para tipos de ensamblados de referencia y paquetes NuGet | Muestra una bombilla con una corrección de código para instalar un paquete NuGet para un tipo sin referencia | **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Opciones avanzadas** > **Sugerir usos para tipos de ensamblados de referencia** y **Sugerir usos para tipos de paquetes NuGet** |
+| Agregar usos para tipos de ensamblados de referencia y paquetes NuGet | Muestra una bombilla de error con una corrección de código para instalar un paquete NuGet para un tipo sin referencia | **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Opciones avanzadas** > **Sugerir usos para tipos de ensamblados de referencia** y **Sugerir usos para tipos de paquetes NuGet** |
 | Habilitar análisis de la solución completa | Ver todos los errores de la solución en la **Lista de errores** | **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Opciones avanzadas** > **Habilitar análisis de la solución completa** |
 | Habilitar la navegación a orígenes descompilados | Permite Ir a definición en tipos y miembros de orígenes externos y usar el descompilador ILSpy para mostrar los cuerpos de método | **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Opciones avanzadas** > **Habilitar la navegación a orígenes descompilados** |
 | Modo de finalización y sugerencias | Cambia el comportamiento de la finalización en IntelliSense (los desarrolladores con conocimientos de IntelliJ tienden a cambiar esta configuración predeterminada) | **Menú** > **Editar** > **IntelliSense** > **Alternar el modo de finalización** |

@@ -1,22 +1,22 @@
 ---
-title: Ejecutar, compilar y depurar pruebas unitarias con el Explorador de pruebas
+title: Ejecución y depuración de pruebas unitarias con el Explorador de pruebas
 description: Obtenga información sobre cómo ejecutar pruebas con el Explorador de pruebas en Visual Studio. En este tema se explica cómo habilitar ejecuciones de pruebas automáticas después de la compilación, ver los resultados de las pruebas, agrupar y filtrar la lista de pruebas, crear listas de reproducción, depurar las pruebas y usar métodos abreviados de pruebas.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
+author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: fd829083cc86d16dd01186bd848c6bc29c062ef5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f7c7e1f5dbe45f9792c1db4afbfbc151a9a2e26
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000320"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484165"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -58,6 +58,9 @@ Según se vayan ejecutando las pruebas, se animará la **barra de superado o no 
 |-|-|
 |![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar, o **Ejecutar pruebas después de compilar** en la barra de herramientas del **Explorador de pruebas**.|
 
+> [!NOTE]
+> La ejecución de pruebas unitarias después de cada compilación requiere la edición Visual Studio Enterprise.
+
 ## <a name="view-test-results"></a>Ver los resultados de las pruebas
 
 Al ejecutar, escribir y volver a ejecutar las pruebas, el Explorador de pruebas muestra los resultados en los grupos de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. El panel de detalles de la parte inferior del Explorador de pruebas muestra un resumen de la ejecución de la prueba.
@@ -84,7 +87,7 @@ Si la prueba no se supera, en el panel de detalles se mostrará también:
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Ver el código fuente de un método de prueba
 
- Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y haga clic en **Abrir prueba** en el menú contextual (teclado: **F12**).
+Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y haga clic en **Abrir prueba** en el menú contextual (teclado: **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Agrupar y filtrar la lista de pruebas
 
@@ -92,9 +95,9 @@ El Explorador de pruebas permite agrupar las pruebas en las categorías predefin
 
 ### <a name="group-tests-in-the-test-list"></a>Agrupar pruebas en la lista de pruebas
 
- Para cambiar la forma en que se organizan las pruebas, haga clic en la flecha abajo situada junto al botón **Agrupar por** ![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png) y seleccione un nuevo criterio de agrupación.
+Para cambiar la forma en que se organizan las pruebas, haga clic en la flecha abajo situada junto al botón **Agrupar por** ![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png) y seleccione un nuevo criterio de agrupación.
 
- ![Agrupar pruebas por categoría en el Explorador de pruebas](../test/media/ute_groupbycategory.png)
+![Agrupar pruebas por categoría en el Explorador de pruebas](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Grupos del Explorador de pruebas
 
@@ -107,11 +110,11 @@ El Explorador de pruebas permite agrupar las pruebas en las categorías predefin
 
 ### <a name="group-by-traits"></a>Agrupar por rasgos
 
- Por lo general, un rasgo es un par nombre-valor de categoría, pero también puede ser una sola categoría. Los rasgos se pueden asignar a los métodos identificados como métodos de prueba desde el marco de pruebas unitarias. Un marco de pruebas unitarias puede definir categorías de rasgo. Si lo desea, puede agregar valores a las categorías de rasgo para definir sus propios pares nombre-valor de categoría. La sintaxis para especificar los valores y las categorías de rasgo se define desde el marco de pruebas unitarias.
+Por lo general, un rasgo es un par nombre-valor de categoría, pero también puede ser una sola categoría. Los rasgos se pueden asignar a los métodos identificados como métodos de prueba desde el marco de pruebas unitarias. Un marco de pruebas unitarias puede definir categorías de rasgo. Si lo desea, puede agregar valores a las categorías de rasgo para definir sus propios pares nombre-valor de categoría. La sintaxis para especificar los valores y las categorías de rasgo se define desde el marco de pruebas unitarias.
 
- **Rasgos del marco de pruebas unitarias de Microsoft para código administrado**
+**Rasgos del marco de pruebas unitarias de Microsoft para código administrado**
 
- En el marco de pruebas unitarias de Microsoft para aplicaciones administradas, el par nombre-valor de rasgo se define en un atributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . El marco de pruebas también contiene estos rasgos predefinidos:
+En el marco de pruebas unitarias de Microsoft para aplicaciones administradas, el par nombre-valor de rasgo se define en un atributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . El marco de pruebas también contiene estos rasgos predefinidos:
 
 |Rasgo|Descripción|
 |-|-----------------|
@@ -120,7 +123,9 @@ El Explorador de pruebas permite agrupar las pruebas en las categorías predefin
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|El atributo TestCategory permite proporcionar una categoría sin ningún valor. Las categorías que define el atributo TestCategory también pueden ser categorías del atributo TestProperty.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|El atributo TestProperty permite definir un par categoría-valor de rasgo.|
 
- **Rasgos del marco de pruebas unitarias de Microsoft para C++** Vea [Cómo usar el marco de pruebas unitarias de Microsoft para C++](how-to-use-microsoft-test-framework-for-cpp.md).
+**Rasgos del marco de pruebas unitarias de Microsoft para C++**
+
+ Vea [How to use the Microsoft Unit Testing Framework for C++](how-to-use-microsoft-test-framework-for-cpp.md) (Cómo usar el marco de pruebas unitarias de Microsoft para C++).
 
 ### <a name="search-and-filter-the-test-list"></a>Buscar y filtrar la lista de pruebas
 
@@ -161,21 +166,19 @@ Por ejemplo, `FullName:"MyClass" - FullName:"PerfTest"` devuelve todas las prueb
 
 ## <a name="create-custom-playlists"></a>Crear listas de reproducción personalizadas
 
- Puede crear y guardar una lista de pruebas que desea ejecutar o ver como grupo. Al seleccionar una lista de reproducción, las pruebas de la lista aparecerán en el Explorador de pruebas. Si lo desea, puede agregar una prueba a varias listas de reproducción. Para acceder a todas las pruebas de un proyecto, elija la lista de reproducción predeterminada **Todas las pruebas** .
+Puede crear y guardar una lista de pruebas que desea ejecutar o ver como grupo. Al seleccionar una lista de reproducción, las pruebas de la lista aparecerán en el Explorador de pruebas. Si lo desea, puede agregar una prueba a varias listas de reproducción. Para acceder a todas las pruebas de un proyecto, elija la lista de reproducción predeterminada **Todas las pruebas** .
 
- ![Elegir una lista de reproducción](../test/media/ute_playlist.png)
+![Elegir una lista de reproducción](../test/media/ute_playlist.png)
 
- **Para crear una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. En el menú contextual, seleccione **Agregar a lista de reproducción** > **Nueva lista de reproducción**. Guarde el archivo con la ubicación y el nombre especificados en el cuadro de diálogo **Crear nueva lista de reproducción** .
+**Para crear una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. En el menú contextual, seleccione **Agregar a lista de reproducción** > **Nueva lista de reproducción**. Guarde el archivo con la ubicación y el nombre especificados en el cuadro de diálogo **Crear nueva lista de reproducción** .
 
- **Para agregar pruebas a una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. En el menú contextual, haga clic en **Agregar a lista de reproducción** y, después, seleccione la lista de reproducción a la que quiera agregar las pruebas.
+**Para agregar pruebas a una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. En el menú contextual, haga clic en **Agregar a lista de reproducción** y, después, seleccione la lista de reproducción a la que quiera agregar las pruebas.
 
- **Para abrir una lista de reproducción**, elija **Prueba** > **Lista de reproducción** en el menú de Visual Studio, y seleccione un elemento entre las listas de reproducción usadas recientemente. O bien, elija **Abrir lista de reproducción** para especificar el nombre y la ubicación de la lista de reproducción específica.
+**Para abrir una lista de reproducción**, elija **Prueba** > **Lista de reproducción** en el menú de Visual Studio, y seleccione un elemento entre las listas de reproducción usadas recientemente. O bien, elija **Abrir lista de reproducción** para especificar el nombre y la ubicación de la lista de reproducción específica.
 
- Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Depurar y analizar pruebas unitarias
-
-### <a name="debug-unit-tests"></a>Depurar pruebas unitarias
 
 Se puede usar el Explorador de pruebas para iniciar una sesión de depuración para las pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
 
@@ -190,7 +193,7 @@ Se puede usar el Explorador de pruebas para iniciar una sesión de depuración p
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticar problemas de rendimiento del método de prueba
 
- Para diagnosticar por qué tarda demasiado un método de prueba, seleccione el método en el Explorador de pruebas y, en el menú contextual, haga clic en **Perfil**. Vea [Explorador de rendimiento](../profiling/performance-explorer.md).
+Para diagnosticar por qué tarda demasiado un método de prueba, seleccione el método en el Explorador de pruebas y, en el menú contextual, haga clic en **Perfil**. Vea [Explorador de rendimiento](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizar la cobertura de código de prueba unitaria
 

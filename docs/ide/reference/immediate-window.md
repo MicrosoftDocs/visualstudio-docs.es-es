@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f25f9ab44bee749283603b78744c9e01e4e469
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b18e1837fdc673500fae96555dab7fb0195ec42e
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992638"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424245"
 ---
 # <a name="immediate-window"></a>Inmediato (ventana)
 
@@ -102,7 +102,7 @@ Escriba el signo mayor que (>) al emitir comandos de Visual Studio en la ventana
 
 Cuando hace clic en cualquier línea anterior de la ventana **Inmediato**, cambia automáticamente al modo Marcar. Esto le permite seleccionar, editar y copiar el texto de los comandos anteriores como lo haría en cualquier editor de texto, y pegarlo en la línea actual.
 
-## <a name="the-equals-sign"></a>El signo igual (=)
+## <a name="the-equals-sign-"></a>Signo igual (=)
 
 La ventana que se usa para escribir el comando `EvaluateStatement` determina si el signo igual (=) se interpreta como un operador de comparación o como un operador de asignación.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 115ffb5c22b45a8cdae1f404556d9aab3ed38bad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2e90993a6600adaa7f14242289ecb91cf2e74634
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964618"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484113"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Tutorial: Desarrollo basado en pruebas previas con la característica de generación a partir del uso
 
@@ -64,7 +64,7 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
    > [!NOTE]
    >  IntelliSense proporciona ahora dos alternativas para la finalización de instrucciones de IntelliSense: el *modo de finalización* y el *modo de sugerencia*. Use el modo de sugerencia para situaciones en que se usan clases y miembros antes de definirlos. Cuando se abre una ventana de **IntelliSense**, puede presionar **CTRL**+**Alt**+**Barra espaciadora** para alternar entre el modo de finalización y el modo de sugerencia. Vea [Usar IntelliSense](../ide/using-intellisense.md) para obtener más información. El modo de sugerencia le ayudará cuando escriba `Automobile` en el paso siguiente.
 
-3. Busque el método `TestMethod1()` y cambie su nombre a `DefaultAutomobileIsInitializedCorrectly()`. En este método, cree una instancia de una clase denominada `Automobile`, como se muestra en las siguientes capturas de pantalla. Aparece un subrayado ondulado, que indica un error en tiempo de compilación. También aparece una bombilla [Acciones rápidas](../ide/quick-actions.md) en el margen izquierdo (solo para C#) o directamente debajo de la línea ondulada si sitúa el cursor encima.
+3. Busque el método `TestMethod1()` y cambie su nombre a `DefaultAutomobileIsInitializedCorrectly()`. En este método, cree una instancia de una clase denominada `Automobile`, como se muestra en las siguientes capturas de pantalla. Aparece un subrayado ondulado, que indica un error en tiempo de compilación, y una bombilla de error de [Acciones rápidas](../ide/quick-actions.md) en el margen izquierdo o directamente debajo de la línea ondulada si se sitúa el cursor encima.
 
     ![Acciones rápidas en Visual Basic](../ide/media/genclass_underlinevb.png)
 
@@ -90,7 +90,7 @@ Supongamos que la especificación del producto indica que la clase `Automobile` 
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Dado que el código hace referencia a dos propiedades no definidas en `Automobile`, aparece un subrayado ondulado debajo de `Model` y `TopSpeed`. Sitúe el cursor encima de `Model` y elija la bombilla **Acciones rápidas**. Luego, elija **Generar propiedad "Automobile.Model"**.
+2. Dado que el código hace referencia a dos propiedades no definidas en `Automobile`, aparece un subrayado ondulado debajo de `Model` y `TopSpeed`. Sitúe el cursor encima de `Model`, haga clic en la bombilla de error de **Acciones rápidas** y, después, elija **Generar propiedad "Automobile.Model"**.
 
 3. Genere código auxiliar para la propiedad `TopSpeed` de la misma manera.
 
@@ -104,12 +104,12 @@ Ahora vamos a crear un método de prueba que generará un código auxiliar de co
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  Haga clic en la bombilla **Acciones rápidas** situada debajo de la línea roja ondulada y, luego, haga clic en **Generar constructor en "Automobile"**.
+2.  Haga clic en la bombilla de error de **Acciones rápidas** situada debajo de la línea roja ondulada y, luego, haga clic en **Generar constructor en "Automobile"**.
 
      En el archivo de clase `Automobile` , observe que el nuevo constructor ha examinado los nombres de las variables locales que se usan en la llamada al constructor, ha encontrado propiedades que tienen los mismos nombres en la clase `Automobile` y el código proporcionado en el cuerpo del constructor para almacenar los valores de argumento en las propiedades `Model` y `TopSpeed` .
 
 
-3.  Después de generar el nuevo constructor, aparece un subrayado ondulado bajo la llamada al constructor predeterminado en `DefaultAutomobileIsInitializedCorrectly`. El mensaje de error indica que la clase `Automobile` no tiene ningún constructor que no tome ningún argumento. Para generar un constructor predeterminado explícito que no tenga parámetros, haga clic en la bombilla **Acciones rápidas** y, luego, en **Generar constructor en "Automobile"**.
+3.  Después de generar el nuevo constructor, aparece un subrayado ondulado bajo la llamada al constructor predeterminado en `DefaultAutomobileIsInitializedCorrectly`. El mensaje de error indica que la clase `Automobile` no tiene ningún constructor que no tome ningún argumento. Para generar un constructor predeterminado explícito que no tenga parámetros, haga clic en la bombilla de error de **Acciones rápidas** y, luego, en **Generar constructor en "Automobile"**.
 
 ### <a name="generate-a-stub-for-a-method"></a>Generar un código auxiliar para un método
 Suponga que la especificación indica que un nuevo `Automobile` se puede poner en estado de `IsRunning` si sus propiedades `Model` y `TopSpeed` se establecen en un valor distinto de los valores predeterminados.
@@ -119,7 +119,7 @@ Suponga que la especificación indica que un nuevo `Automobile` se puede poner e
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  Haga clic en la bombilla **Acciones rápidas** de la llamada al método `myAuto.Start` y, luego, haga clic en **Generar método "Automobile.Start"**.
+2.  Haga clic en la bombilla de error de **Acciones rápidas** de la llamada al método `myAuto.Start` y luego en **Generar método "Automobile.Start"**.
 
 3.  Haga clic en la bombilla **Acciones rápidas** de la propiedad `IsRunning` y, luego, haga clic en **Generar propiedad "Automobile.IsRunning"**.
 

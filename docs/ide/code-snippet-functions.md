@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d448111a9bac5d03fe3bc8e7ba35c0f9fed1d4a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4e09602ed62e21a4a5a80a8e6fee301eef30512
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020469"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483723"
 ---
 # <a name="code-snippet-functions"></a>Funciones de los fragmentos de código
 
@@ -30,11 +30,11 @@ En la tabla siguiente se describen las funciones que puede utilizar con el eleme
 
 |Función|Descripción|Lenguaje|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificada por el parámetro `EnumerationLiteral`. El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o un tipo de enumeración.|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificada por el parámetro `EnumerationLiteral`. El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o un tipo de enumeración.|C#|
 |`ClassName()`|Devuelve el nombre de la clase que contiene el fragmento de código insertado.|C#|
-|`SimpleTypeName(` `TypeName` `)`|Reduce el parámetro *TypeName* a su forma más sencilla en el contexto en que se invocó el fragmento de código.|C#|
+|`SimpleTypeName(TypeName)`|Reduce el parámetro *TypeName* a su forma más sencilla en el contexto en que se invocó el fragmento de código.|C#|
 
-## <a name="example"></a>Ejemplo
+## <a name="generateswitchcases-example"></a>Ejemplo de GenerateSwitchCases
 
 En el siguiente ejemplo se muestra cómo usar la función `GenerateSwitchCases`. Cuando se inserta este fragmento de código y se especifica una enumeración en el literal `$switch_on$`, el literal `$cases$` genera una instrucción `case` para cada valor de la enumeración.
 
@@ -76,7 +76,7 @@ En el siguiente ejemplo se muestra cómo usar la función `GenerateSwitchCases`.
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="classname-example"></a>Ejemplo de ClassName
 
 En el siguiente ejemplo se muestra cómo usar la función `ClassName`. Cuando se inserta este fragmento de código, el literal `$classname$` se reemplaza con el nombre de la clase envolvente en esa ubicación del archivo de código.
 
@@ -123,7 +123,7 @@ En el siguiente ejemplo se muestra cómo usar la función `ClassName`. Cuando se
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Ejemplo
+## <a name="simpletypename-example"></a>Ejemplo de SimpleTypeName
 
 En este ejemplo se muestra cómo utilizar la función `SimpleTypeName`. Al insertar este fragmento de código en un archivo de código, el literal `$SystemConsole$` se reemplaza por la forma más sencilla del tipo <xref:System.Console> en el contexto en el que se invocó el fragmento de código.
 

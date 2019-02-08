@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 130cb83e078a0f7c2924349dcd13692d3fe9125a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12b232bf32be6802ccd82ecad647f2becc95addc
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924605"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484204"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
@@ -82,6 +82,11 @@ public void Debit(double amount)
 ## <a name="create-a-unit-test-project"></a>Crear un proyecto de prueba unitaria
 
 1. En el menú **Archivo**, seleccione **Agregar** > **Nuevo proyecto**.
+
+   > [!TIP]
+   > Hay un par de formas de agregar un proyecto adicional a una solución existente. Puede hacer clic con el botón derecho en la solución en el **Explorador de soluciones** y seleccionar **Agregar** > **Nuevo proyecto**. O bien, puede seleccionar **Archivo** > **Nuevo** > **Proyecto** y, después, en el cuadro de diálogo **Nuevo proyecto**, seleccionar la opción **Agregar a la solución**:
+   >
+   > ![Opción Agregar a la solución en el cuadro de diálogo Nuevo proyecto](media/add-to-solution.png)
 
 2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, expanda **Visual C#** y, después, elija **Prueba**.
 
