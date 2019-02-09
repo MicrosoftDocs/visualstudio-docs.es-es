@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Crear un esquema XML a partir de un documento XML
+title: Filtrar Crear un esquema XML a partir de un documento XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32072a25a57988c0cf1273518e5c0a5d4745fe20
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ebea3b20bc606ec82529e4a9b2a547d6a44fc905
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033809"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953794"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedimiento Crear un esquema XML de un documento XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Filtrar Crear un esquema XML de un documento XML
 
 El Editor XML permite crear un esquema de lenguaje de definición de esquemas XML (XSD) a partir de un documento XML. El documento de instancia XML determina cómo se genera el esquema de la siguiente manera:
 

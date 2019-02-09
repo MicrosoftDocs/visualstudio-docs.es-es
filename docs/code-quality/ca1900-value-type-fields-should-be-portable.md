@@ -1,7 +1,6 @@
 ---
 title: 'CA1900: Los campos de tipo de valor deben ser portátiles'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1900
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84861aa1d17f041061d1666d6f78c9d273b948b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e823a58d7a2be45c43305320bd32175de7a3fad6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037777"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953729"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Los campos de tipo de valor deben ser portátiles
 

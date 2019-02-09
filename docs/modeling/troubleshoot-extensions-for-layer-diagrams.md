@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 01b8486c9ca0ffc62d338b9d9a46e50248182581
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 431748ee6e9b5ee5b66f19ebed2d7fdaeb3ccb9f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028600"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949985"
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Solucionar problemas de extensiones de diagramas de dependencia
 

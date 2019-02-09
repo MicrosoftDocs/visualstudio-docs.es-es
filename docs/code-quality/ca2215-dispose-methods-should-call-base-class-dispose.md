@@ -1,7 +1,6 @@
 ---
 title: 'CA2215: Los métodos Dispose deben llamar al método Dispose de la clase base'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2215
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84e1ef38627d0e0ec06085f062dc59b97fb52dbc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 203fc14097e0c6d2fbdaee1689deffdfe814eb63
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55032216"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914323"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Los métodos Dispose deben llamar al método Dispose de la clase base
 

@@ -2,19 +2,18 @@
 title: Diseñador de flujo de trabajo - diseñadores de actividad de flujo de Control
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ac70e2b9628274e932d2b16fd695700aa2701a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a3bcbf5ee70b90a0606c7e4cb3d691d28298c2d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998643"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913816"
 ---
 # <a name="control-flow-activity-designers"></a>Diseñadores de actividades de flujos de control
 

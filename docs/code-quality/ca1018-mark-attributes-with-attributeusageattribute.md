@@ -1,7 +1,6 @@
 ---
 title: 'CA1018: Marcar atributos con AttributeUsageAttribute'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1018
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dfdaca64c166a29ad731719f79bbad57e975ff8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4c0aa3fe5c45e34445c49c4b3a5f0abad1e98739
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043731"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943615"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Marcar atributos con AttributeUsageAttribute
 

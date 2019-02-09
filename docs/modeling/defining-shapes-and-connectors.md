@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: edf82cde2674b91954737973ddfa37e738ff8ec1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a7e83f8fa52717c4e965f9e68b727b02a81c5a6b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016933"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917589"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definir formas y conectores
 Hay varios tipos básicos de formas que puede usar para mostrar información en un diagrama en un lenguaje específico de dominio (DSL).

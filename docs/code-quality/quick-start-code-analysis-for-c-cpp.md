@@ -1,7 +1,6 @@
 ---
 title: 'Inicio rápido: Análisis de código para C/C++'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -11,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecb4f46b238b72c9d83b46122b8567a8636282b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825206"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950102"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Inicio rápido: Análisis de código para C/C++
 

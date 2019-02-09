@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Establecer atributos de CLR en un elemento
+title: Filtrar Establecer atributos de CLR en un elemento
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,15 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 54b4340fe72552f3287a5c6ebec55c9c9d326ac1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b890a5d3d5c48ad3841075a8ae818d2d37d44f98
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932277"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946631"
 ---
-# <a name="how-to-set-clr-attributes-on-an-element"></a>Procedimiento Establecer atributos de CLR en un elemento
+# <a name="how-to-set-clr-attributes-on-an-element"></a>Filtrar Establecer atributos de CLR en un elemento
 Los atributos personalizados son atributos especiales que se pueden agregar a diagramas, formas, conectores y elementos de dominio. Puede agregar cualquier atributo que hereda de la `System.Attribute` clase.
 
 ### <a name="to-add-a-custom-attribute"></a>Para agregar un atributo personalizado
@@ -44,4 +43,4 @@ Los atributos personalizados son atributos especiales que se pueden agregar a di
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

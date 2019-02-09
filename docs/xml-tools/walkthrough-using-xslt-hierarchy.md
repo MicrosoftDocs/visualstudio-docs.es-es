@@ -1,17 +1,16 @@
 ---
 title: 'Tutorial: Usar la herramienta jerarquía XSLT'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dcbb61e0a23d1a530d9c104337454b7a8ba66ca7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 83081b7fb03a4272622c25f783abbc7134fac12b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020768"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970392"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Tutorial: Utilice la herramienta jerarquía XSLT
 

@@ -1,7 +1,6 @@
 ---
 title: 'Tutorial: Uso de características del Editor XML'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8044c48ee2721a8461d9d7c2932707c3c01eeaf4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026764"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954691"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Tutorial: Usar características del editor XML
 

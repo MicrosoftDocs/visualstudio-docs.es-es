@@ -1,7 +1,6 @@
 ---
 title: Compilar soluciones de Office
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -27,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4ab9fafbc56149bb1c1476ae9632ca81988dcd3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866170"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945422"
 ---
 # <a name="build-office-solutions"></a>Compilar soluciones de Office
   En general, compilar y depurar proyectos de Office se hace de la misma manera que al compilar y depurar otros tipos de proyectos en Visual Studio, como Windows Forms. Los temas de esta sección explican las diferencias que existen entre ellos. Para obtener información general acerca de cómo crear aplicaciones, consulte [compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md).

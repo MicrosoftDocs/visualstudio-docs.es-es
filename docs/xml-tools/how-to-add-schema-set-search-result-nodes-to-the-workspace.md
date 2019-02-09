@@ -1,7 +1,6 @@
 ---
 title: Agregar nodos de resultados de búsqueda del conjunto de esquemas XML al área de trabajo
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 114a7dbd8056f2e102d574a2c7f19742fceaea2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7cb8e66292a1cdb393401d180bd8b9f8691dc8f0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020846"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913933"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procedimiento Agregar nodos de resultados de búsqueda de conjunto de esquemas al área de trabajo
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Filtrar Agregar nodos de resultados de búsqueda de conjunto de esquemas al área de trabajo
 
 En este tema se explica cómo agregar nodos que están resaltados en la **Explorador de esquemas XML** como resultado de una búsqueda de palabra clave en el área de trabajo.
 

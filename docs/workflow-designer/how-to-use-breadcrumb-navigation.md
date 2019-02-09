@@ -2,21 +2,20 @@
 title: 'Diseñador de flujo de trabajo - Cómo: Usar la ruta de navegación'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a15ec584007775811a91594e11c6cffdfb1bc21
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9b4856188cb08379649ab7611dceb5b26b55149
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959114"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950479"
 ---
-# <a name="how-to-use-breadcrumb-navigation"></a>Procedimiento Usar la ruta de navegación
+# <a name="how-to-use-breadcrumb-navigation"></a>Filtrar Usar la ruta de navegación
 
 Hay tres maneras principales para cambiar el conjunto de actividades que se muestran en el Diseñador de flujo de trabajo:
 

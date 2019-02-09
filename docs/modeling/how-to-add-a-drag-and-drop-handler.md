@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar un controlador para arrastrar y colocar
+title: Filtrar Agregar un controlador para arrastrar y colocar
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,15 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 70aceff2ab56e4b884d4746cc2ba582138fe7f3b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4ff2be60979298de7a4c10e55285f1cdedc01ba9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990320"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954470"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Procedimiento Agregar un controlador para arrastrar y colocar
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Filtrar Agregar un controlador para arrastrar y colocar
 
 Puede agregar controladores para eventos de arrastrar y colocar su DSL, para que los usuarios podrán arrastrar elementos al diagrama desde otros diagramas o desde otras partes de Visual Studio. También puede agregar controladores para eventos como doble clic. Juntos, los controladores de arrastrar y colocar y haga doble clic se conocen como *controladores de gestos*.
 

@@ -1,7 +1,6 @@
 ---
 title: Suprimir advertencias de análisis de código
 ms.date: 12/01/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -15,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fd2d8323a249771357ca0b32dc3106f11d8aa1b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e85ca90dac30ad348dfeb91357ded153c1764a16
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036191"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927820"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 

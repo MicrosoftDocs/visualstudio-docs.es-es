@@ -1,7 +1,6 @@
 ---
 title: Agregar nodos al área de trabajo desde la vista de inicio en el Diseñador de esquemas XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 549caa94e81aa98481054b5b305c6363baf82ce0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8f2fac4ce1266dc9df59ada54631306664bd6f42
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950720"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913842"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procedimiento Agregar nodos al área de trabajo desde la vista inicio
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Filtrar Agregar nodos al área de trabajo desde la vista inicio
 
 En este tema se describe cómo agregar nodos globales al [área de trabajo del Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md) desde el [vista inicio](../xml-tools/start-view.md).
 

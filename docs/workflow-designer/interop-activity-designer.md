@@ -2,7 +2,6 @@
 title: Diseñador de flujo de trabajo - Diseñador de actividades Interop
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 947527af9c5eb4b257f07a46b16b4d5556c48757
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000060"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942705"
 ---
 # <a name="interop-activity-designer"></a>Diseñador de actividades Interop
 

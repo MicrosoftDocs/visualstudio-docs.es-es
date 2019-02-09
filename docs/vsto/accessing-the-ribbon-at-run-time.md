@@ -1,7 +1,6 @@
 ---
 title: Obtener acceso a la cinta de opciones en tiempo de ejecución
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e408b475b4ba7ac912826af3021c371b3af57f4c
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 5b00721325d6d4fa57fcb0ef6ecd2ebdf0da9930
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876231"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919968"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Obtener acceso a la cinta de opciones en tiempo de ejecución
   Puede escribir código para mostrar, ocultar y modificar la cinta de opciones y permitir a los usuarios ejecutar el código desde los controles de un panel de tareas personalizado, un panel de acciones o un área del formulario de Outlook.  

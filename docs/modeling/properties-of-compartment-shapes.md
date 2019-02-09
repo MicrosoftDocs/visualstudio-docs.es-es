@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cc2527739c40802f3e21ea4fabebfc20fb09cdcc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b44b32f98406e4692de97562bbf97e2656b3a7de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962136"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937388"
 ---
 # <a name="properties-of-compartment-shapes"></a>Propiedades de las formas de compartimiento
 Formas de compartimiento son una de las formas que puede usar para mostrar una clase de dominio en un lenguaje específico de dominio. Puede expandir y contraer los compartimientos.
@@ -58,4 +57,4 @@ Formas de compartimiento son una de las formas que puede usar para mostrar una c
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
