@@ -1,7 +1,6 @@
 ---
 title: 'CA1411: Los métodos de registro COM no deben ser visibles'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1411
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 39547159f46f4c1921093b020c2bb888e4aecce0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bd721edab080de7708ac395e2a7d7e486c504fba
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013176"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950661"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Los métodos de registro COM no deben ser visibles
 

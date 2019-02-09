@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Editar archivos XML
+title: Filtrar Editar archivos XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ee170d42390ed04292be28740dde4d597b7f7d9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005452"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931759"
 ---
-# <a name="how-to-edit-xml-files"></a>Procedimiento Editar archivos XML
+# <a name="how-to-edit-xml-files"></a>Filtrar Editar archivos XML
 
 El Editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archivo XML independiente o en uno asociado con un proyecto de Visual Studio. El Editor XML está asociado con las siguientes extensiones de archivo: *.config*, *.dtd*, *.xml*, *.xsd*, *.xdr*, *.xsl*, *.xslt*, y *.vssettings*. También está asociado con otros tipos de archivos que no tengan registrado un editor específico y que incluyan contenido XML o DTD.
 

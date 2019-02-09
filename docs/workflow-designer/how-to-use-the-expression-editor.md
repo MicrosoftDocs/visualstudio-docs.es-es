@@ -2,7 +2,6 @@
 title: 'Diseñador de flujo de trabajo - Cómo: Usar el Editor de expresiones'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
@@ -11,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c6d2bf026295d899f2bd0aee05eccb8013eedf0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fee9738cfce003ef19d311856304d87f6a4b2f15
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967263"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918915"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Procedimiento Usar el Editor de expresiones
+# <a name="how-to-use-the-expression-editor"></a>Filtrar Usar el Editor de expresiones
 
 El Editor de expresiones es un control del Diseñador de flujo de trabajo que se usa en muchas actividades de flujo de trabajo para escribir y evaluar expresiones. El Editor de expresiones proporciona un IDE completo edición experiencia, incluido IntelliSense, colores, ParamInfo y subrayados ondulados de errores, entre otras características. El compilador valida la expresión después de que se escribe. Si la expresión no es válida, se muestra un icono de error. También se puede abrir el editor como un **Editor de expresiones** cuadro de diálogo.
 

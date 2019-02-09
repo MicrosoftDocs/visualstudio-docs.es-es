@@ -1,7 +1,6 @@
 ---
 title: 'CA2101: Especificar serialización de argumentos de cadena P-Invoke'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - SpecifyMarshalingForPInvokeStringArguments
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f7e6e0a09bf4b6b11d5cbdab3ab86cfa79724c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 622097e4dd1408c46863098a8f29fe6666b64b2a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971525"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918158"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Especificar serialización en argumentos de cadena P/Invoke
 

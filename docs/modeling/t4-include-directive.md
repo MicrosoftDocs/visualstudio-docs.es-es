@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cd4cb2f3d4d6fb2ae2b2500bdf1f09a9d355140d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a42a15263b658acbbfc5e7500a776063ef58a51
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070961"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918463"
 ---
 # <a name="t4-include-directive"></a>Directiva Include T4
 

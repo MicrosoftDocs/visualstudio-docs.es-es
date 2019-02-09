@@ -2,7 +2,6 @@
 title: Características del shell del Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 538a9d7b0a895b5cc50c04c107dad55d1c662f3f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4519be8ec5c5d4ba8a611df1880ae770a83cf981
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977517"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919474"
 ---
 # <a name="workflow-designer-shell-features"></a>Características del shell del Diseñador de flujo de trabajo
 

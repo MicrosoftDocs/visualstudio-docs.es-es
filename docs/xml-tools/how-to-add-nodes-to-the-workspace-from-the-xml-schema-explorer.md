@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Agregar nodos al área de trabajo desde el Explorador de esquemas XML
+title: Filtrar Agregar nodos al área de trabajo desde el Explorador de esquemas XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 699f57829e2f7d9bfd7a8841f5b1c82de5b9c7f7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 578a50d8fae4047b6e36338f8067561c9e4e9636
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012110"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935906"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procedimiento Agregar nodos al área de trabajo desde el Explorador de esquemas XML
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Filtrar Agregar nodos al área de trabajo desde el Explorador de esquemas XML
 
 En este tema se explica cómo agregar nodos a la [área de trabajo del Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md) desde el **Explorador de esquemas XML**. Esto puede lograrse arrastrando y colocando nodos desde el **Explorador de esquemas XML** en una vista del diseñador XSD, o mediante el **del explorador de esquemas XML** menú contextual. También puede agregar los nodos que se resaltan como resultado de una búsqueda realizada por el **Explorador de esquemas XML**. Para obtener más información, vea [Cómo: Agregar nodos de resultados de búsqueda de conjunto de esquemas al área de trabajo](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 

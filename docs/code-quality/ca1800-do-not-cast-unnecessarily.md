@@ -1,7 +1,6 @@
 ---
 title: 'CA1800: No convertir innecesariamente'
 ms.date: 10/26/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1800
@@ -18,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ea831e1cec04d6ccce7e35137b6f02bac4b08c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a13aeeffbc77e4f40ff886c0d890f181697fcc11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971681"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950687"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: No convertir innecesariamente
 

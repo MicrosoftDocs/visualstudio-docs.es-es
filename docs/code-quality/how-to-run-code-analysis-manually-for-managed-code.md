@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Ejecutar análisis de código manualmente para código administrado
+title: Filtrar Ejecutar análisis de código manualmente para código administrado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, running
@@ -11,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41c95ca8adc0b02db89af0b7c0ba2f1dafd399f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 159b13fafdaaa0b6dfaa2f590be2300c6b14425e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000775"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917368"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Procedimiento Ejecutar análisis de código manualmente para código administrado
+# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Filtrar Ejecutar análisis de código manualmente para código administrado
 La herramienta de análisis de código proporciona información sobre posibles defectos en el código fuente. Puede ejecutar análisis de código automáticamente con cada compilación de un proyecto de código y también puede ejecutar análisis de código manualmente. Las reglas que se comprueban cuando se ejecuta el análisis de código se especifican en la página de análisis de código de las páginas de propiedades del proyecto. Para obtener más información, vea [Cómo: Configurar análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 
 ### <a name="to-run-code-analysis-manually"></a>Para ejecutar el análisis de código manualmente

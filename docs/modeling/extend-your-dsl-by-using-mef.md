@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f7ffe818ae58618381451549fdf8a0898ec6aa6f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b08dab6be6a959b6a7ac37b243ff1bb94fbb4b1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026001"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939624"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Ampliar DSL mediante MEF
 

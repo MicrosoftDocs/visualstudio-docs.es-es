@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Usar transacciones para actualizar el modelo
+title: Filtrar Usar transacciones para actualizar el modelo
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,15 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 70ec77254ec4d76e978b685441bb8d6e3df1b802
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921227"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924401"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Procedimiento Usar transacciones para actualizar el modelo
+# <a name="how-to-use-transactions-to-update-the-model"></a>Filtrar Usar transacciones para actualizar el modelo
 Las transacciones Asegúrese de que los cambios realizados en el almacén se tratan como un grupo. Los cambios que se agrupan pueden ser confirmados o revertidos como una sola unidad.
 
  Siempre que modifica el código del programa, agrega o elimina cualquier elemento en el Store en Visual Studio SDK de visualización y modelado, debe hacerlo dentro de una transacción. Debe haber una instancia activa de <xref:Microsoft.VisualStudio.Modeling.Transaction> asociada con el Store cuando se produce el cambio. Esto se aplica a todos los elementos del modelo, las relaciones, formas, diagramas y sus propiedades.

@@ -1,7 +1,6 @@
 ---
 title: 'CA2001: Evitar llamar a métodos problemáticos'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2001
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3a20179bb8463d059b5e7d7c82e045b3517f47
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1abef0067a58225eea6110d4cc2f7257bc605463
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957631"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916575"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: Evitar llamar a métodos problemáticos
 

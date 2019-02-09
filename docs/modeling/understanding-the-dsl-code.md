@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2a1a32f60f1cee19310af76e1f4b82a4dfe2f828
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033289"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928288"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 Una solución de lenguaje específico de dominio (DSL) genera una API que puede usar para leer y actualizar las instancias del DSL en Visual Studio. Esta API se define en el código que se genera a partir de la definición de DSL. Este tema describe la API que se genera.
@@ -59,7 +58,7 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
 
  *Sudsl* `Schema.xsd`
 
- Esquema de los archivos que contienen instancias de su DSL. Este archivo se copia en la compilación (**bin**) directory. Cuando instale su DSL, puede copiar este archivo en **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** para que se pueden validar los archivos de modelo. Para obtener más información, consulte [implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md).
+ Esquema de los archivos que contienen instancias de su DSL. Este archivo se copia en la compilación (**bin**) directory. Cuando instale su DSL, puede copiar este archivo en **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** para que se pueden validar los archivos de modelo. Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
  Si personaliza la serialización estableciendo las opciones en DSL Explorer (Explorador de DSL), el esquema cambiará como corresponda. Sin embargo, si escribe su propio código de serialización, este archivo podría no representar ya el esquema actual. Para obtener más información, consulte [personalizar el almacenamiento de archivos y serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
@@ -138,7 +137,7 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
 
  Contiene cadenas que se podrían mostrar al usuario, tales como descripciones de las clases y propiedades de dominio, nombres de propiedad, etiquetas de cuadro de herramientas o mensajes de error estándar, entre otras. También contiene imágenes e iconos de herramienta para formas de imagen.
 
- Este archivo se enlaza en el ensamblado compilado y proporciona los valores predeterminados de estos recursos. Puede localizar su DSL creando un ensamblado satélite que contenga una versión localizada de los recursos. Esta versión se usará cuando se instale el DSL en una referencia cultural que coincida con los recursos localizados. Para obtener más información, consulte [implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md).
+ Este archivo se enlaza en el ensamblado compilado y proporciona los valores predeterminados de estos recursos. Puede localizar su DSL creando un ensamblado satélite que contenga una versión localizada de los recursos. Esta versión se usará cuando se instale el DSL en una referencia cultural que coincida con los recursos localizados. Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
  `DomainRelationships.cs`
 
@@ -341,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 > [!WARNING]
 >  Si edita el archivo .tt para incluir recursos como iconos o imágenes, asegúrese de que el recurso se incluye en la compilación de VSIX. En el Explorador de soluciones, seleccione el archivo y asegúrese de que el **incluir en VSIX** propiedad es `True`.
 
- Este archivo controla cómo se empaqueta el DSL en una extensión de integración de Visual Studio (VSIX). Para obtener más información, consulte [implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md).
+ Este archivo controla cómo se empaqueta el DSL en una extensión de integración de Visual Studio (VSIX). Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Vea también
 

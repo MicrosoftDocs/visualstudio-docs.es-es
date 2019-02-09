@@ -1,7 +1,6 @@
 ---
 title: 'CA1722: Los identificadores no deben tener un prefijo incorrecto'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotHaveIncorrectPrefix
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e997bce3c3e6cd96478e5b7ba6899d8563b4ac7e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c1d2aa6f0889216b39b891b042989f1c8c69692
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029679"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907768"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Los identificadores no deben tener un prefijo incorrecto
 

@@ -1,7 +1,6 @@
 ---
 title: Instalar analizadores de Roslyn
 ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6a9c2dcbbee307578f837b8472b1026c0aa7a2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de4818a57dc09825e6f41a635ea777a9e3f06e2a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969586"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910516"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalar analizadores de .NET Compiler Platform
 

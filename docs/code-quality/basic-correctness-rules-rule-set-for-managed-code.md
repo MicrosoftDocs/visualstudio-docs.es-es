@@ -1,7 +1,6 @@
 ---
 title: Conjunto de reglas Reglas de corrección básicas para código administrado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 937a41f6d308e9c3ff8a99f925cd75c95c17fb24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012487"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937273"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección básicas para código administrado
 El conjunto de reglas reglas de corrección básicas se centra en errores lógicos y errores comunes en el uso de las API del marco de trabajo. Las reglas de corrección básicas se incluyen las reglas en el conjunto de reglas reglas mínimas recomendadas. Para obtener más información, consulte [pravidel administra reglas recomendadas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) debe incluir este conjunto de reglas para ampliar la lista de advertencias que las reglas mínimas recomendadas.

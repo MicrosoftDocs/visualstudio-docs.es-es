@@ -1,7 +1,6 @@
 ---
 title: Asociar un área de formulario a una clase de mensaje de Outlook
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VSTO.NewFormRegionWizard.InvalidMessageClassName
@@ -16,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ac0b74981b7e4a364bbc551be132b79cc432448
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 3a7833ecd2245e9acaa7c4bc35189bd5c9069daf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875828"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922048"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Asociar un área de formulario a una clase de mensaje de Outlook
   Puede especificar qué elementos de Microsoft Office Outlook muestran un área de formulario al asociar el área de formulario con la clase de mensaje de cada elemento. Por ejemplo, si desea anexar un área de formulario a la parte inferior de un elemento de correo, puede asociar el área de formulario con el `IPM.Note` message (clase).  

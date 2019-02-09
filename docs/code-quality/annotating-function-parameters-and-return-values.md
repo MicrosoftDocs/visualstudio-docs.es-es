@@ -1,7 +1,6 @@
 ---
 title: Anotar parámetros de función y valores devueltos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -126,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e958674858eaa2de01cf837de12f70ed17b4f210
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14ea474200875b5667962895deadd6479b44c391
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921022"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923935"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 En este artículo se describe los usos típicos de las anotaciones de parámetros de función simple, escalares y punteros a estructuras y clases y casi todos los tipos de búferes.  En este artículo también muestra los patrones de uso común para las anotaciones. Para obtener información sobre las anotaciones adicionales que están relacionados con las funciones, vea [anotar comportamiento de la función](../code-quality/annotating-function-behavior.md)

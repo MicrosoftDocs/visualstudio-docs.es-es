@@ -1,7 +1,6 @@
 ---
 title: advertencias de rendimiento
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.performancerules
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1000009e243906daf32fd68b22b5c49a07b21595
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d44c9a4a5c59907c527c47523c6c758adaf7ee51
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947535"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938038"
 ---
 # <a name="performance-warnings"></a>advertencias de rendimiento
 Las advertencias de rendimiento compatibles con aplicaciones y bibliotecas de alto rendimiento.
