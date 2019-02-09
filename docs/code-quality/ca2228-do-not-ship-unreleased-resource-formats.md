@@ -1,7 +1,6 @@
 ---
 title: 'CA2228: No enviar formatos de recursos no lanzados'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotShipUnreleasedResourceFormats
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dc7763b8c9dd303ec154dae02db3fb5aa677782
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4355db8b15a3869e785589170bec3f80e8f08fbb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971171"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923413"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: No enviar formatos de recursos no lanzados
 

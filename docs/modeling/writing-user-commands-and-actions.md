@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 74466c4757c802647bc98082c68b3a9d73207f68
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 50b151358df90be3db423bbf3db8b5123d1069f3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940393"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949426"
 ---
 # <a name="writing-user-commands-and-actions"></a>Escribir acciones y comandos de usuario
 Puede personalizar un lenguaje específico de dominio agregando comandos al diagrama y respondiendo a gestos como los eventos de arrastrar y colocar, clic y doble clic.

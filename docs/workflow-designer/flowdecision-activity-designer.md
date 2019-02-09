@@ -2,7 +2,6 @@
 title: Diseñador de flujo de trabajo - Diseñador de actividades FlowDecision
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3320192e75d47194f7421f49ab28925306540ce4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 095ffb7284b9363d3bdb04749c8cff7114927935
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998682"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918408"
 ---
 # <a name="flowdecision-activity-designer"></a>Diseñador de actividades FlowDecision
 

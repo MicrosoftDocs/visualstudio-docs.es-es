@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Habilitar y deshabilitar el análisis de la solución completa para código administrado
+title: Filtrar Habilitar y deshabilitar el análisis de la solución completa para código administrado
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
-ms.openlocfilehash: ffda04828789a591c0e6dca35ef391fe6b8556d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dbd4cf06a5d51a668acc5c980e7e93a94f2992f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035479"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931005"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Procedimiento Habilitar y deshabilitar el análisis de la solución completa para código administrado
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Filtrar Habilitar y deshabilitar el análisis de la solución completa para código administrado
 
 *Completa el análisis de la solución* es una característica de Visual Studio que le permite ver los problemas de análisis de código solo en abierto Visual C# o los archivos de Visual Basic en la solución, o también en los archivos de código que se cierran. De forma predeterminada, es el análisis de la solución completa *habilitado* para Visual Basic, y *deshabilitado* Visual C#.
 

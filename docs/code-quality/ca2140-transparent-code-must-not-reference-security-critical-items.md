@@ -1,7 +1,6 @@
 ---
 title: 'CA2140: El código transparente no debe hacer referencia a elementos críticos para la seguridad'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2129
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a67bd5649bd0f3f06d30f14f233cf3501871c25b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4462bb8ef65fdf593ab0bf64813c19af5d390d97
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033020"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916822"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: El código transparente no debe hacer referencia a elementos críticos para la seguridad
 

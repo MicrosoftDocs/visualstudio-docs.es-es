@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 992a3fe8c32c757425a0f223e37dfac32ea0a080
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c4b559b80613197dae62bc6246bd7ef1532d7071
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037049"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941171"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Establecer una imagen de fondo en un diagrama
 En Visual Studio de visualización y el SDK de modelado, puede establecer la imagen de fondo para un diseñador generado usando código personalizado.

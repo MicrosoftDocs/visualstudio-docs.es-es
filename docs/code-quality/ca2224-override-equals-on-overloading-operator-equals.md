@@ -1,7 +1,6 @@
 ---
 title: 'CA2224: Invalidar Equals al sobrecargar operadores de igualdad'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2224
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eac7f403cd0e115a01252537ade45e6a1bc0aaad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fa6bfa5b590d330d791eb8c735099e619ffaf3a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957889"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922971"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Invalidar Equals al sobrecargar operadores de igualdad
 

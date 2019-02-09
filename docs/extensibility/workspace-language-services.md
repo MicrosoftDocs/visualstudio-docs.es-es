@@ -2,18 +2,17 @@
 title: Áreas de trabajo y servicios de lenguaje en Visual Studio | Documentos de Microsoft
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 8631ffea-83c8-4fd4-a01e-c59772e89c84
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ecd995446969c271694c554ae21e03c1afc79d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2893ae2bcd70ff317ba799fea6cfd2751c685731
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850273"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929783"
 ---
 # <a name="workspaces-and-language-services"></a>Áreas de trabajo y servicios de lenguaje
 
@@ -61,4 +60,4 @@ El `Microsoft.VisualStudio.Workspace.*` API no son la única forma de habilitar 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* [Compilación de área de trabajo](workspace-build.md) -Abrir carpeta es compatible con sistemas como MSBuild y archivos MAKE de compilación. 
+* [Compilación de área de trabajo](workspace-build.md) -Abrir carpeta es compatible con sistemas como MSBuild y archivos MAKE de compilación.

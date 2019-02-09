@@ -1,7 +1,6 @@
 ---
 title: Advertencias de globalización
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.globalizationrules
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f1b1b6981c4aa03392267d64ce8a28e88d9b904
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3b61b0f10e4231ce1970a55cf352490cbf02a42d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940731"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936686"
 ---
 # <a name="globalization-warnings"></a>Advertencias de globalización
 Advertencias de globalización admiten aplicaciones y bibliotecas de uso internacional.

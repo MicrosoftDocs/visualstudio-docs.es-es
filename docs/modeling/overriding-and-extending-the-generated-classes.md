@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d96ad4d297fac21f9efd0b67c40308af9c2ed29d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978248"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936985"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Invalidar y ampliar las clases generadas
 

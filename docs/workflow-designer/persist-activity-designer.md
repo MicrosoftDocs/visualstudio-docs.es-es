@@ -2,7 +2,6 @@
 title: Diseñador de flujo de trabajo - Diseñador de actividades Persist
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Persist.UI
 ms.assetid: be8648dd-3eb9-4a50-8ec1-57a8be804692
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: deb08f829e25b6518c3b7ded64b0917c742d007a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c97d916d00d1c976b4e27381f55e42cbb7cb0db
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013137"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940625"
 ---
 # <a name="persist-activity-designer"></a>Diseñador de actividades Persist
 

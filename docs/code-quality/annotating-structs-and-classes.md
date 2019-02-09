@@ -1,7 +1,6 @@
 ---
 title: Anotar structs y clases
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -25,12 +24,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d3a964020cf9b5c885e52a948ad1fc229d44db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e37d1ad27fab77e5aff1064ecc83e67ee7cc739d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948938"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935061"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotar structs y clases
 Miembros de clase y struct se pueden anotar utilizando las anotaciones que actúan como invariables, que se supone que cumplirse en cualquier llamada de función o de entrada/salida de la función que implica la estructura envolvente como un parámetro o un valor de resultado.

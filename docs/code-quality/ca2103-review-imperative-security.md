@@ -1,7 +1,6 @@
 ---
 title: 'CA2103: Revisar la seguridad imperativa'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2103
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae092017890552613bfddb16cf0c7313cf422e5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2417266da44c4af38e37eb8e0f67ac13a5a7823e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967250"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916731"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: Revisar la seguridad imperativa
 

@@ -1,7 +1,6 @@
 ---
 title: Crear y editar un archivo de esquema XSD
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0792149950e3cf1d1e358aac17ae45a3365eda4a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0628b4824ebb33199521b660112622b130a090b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977296"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937921"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Procedimiento Crear y editar un archivo de esquema XSD
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Filtrar Crear y editar un archivo de esquema XSD
 
 En este tema se describe cómo crear un nuevo archivo de esquema XML (XSD) y luego agregar contenido al archivo XSD.
 
