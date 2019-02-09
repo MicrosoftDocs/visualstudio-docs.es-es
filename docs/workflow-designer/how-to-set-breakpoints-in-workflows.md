@@ -2,21 +2,20 @@
 title: 'Diseñador de flujo de trabajo - Cómo: Establecer puntos de interrupción en los flujos de trabajo'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fde1741cd23e481b1354380786fcf81392eeeb8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7503d0b0bee201a9617e90966c9f75ac6333f228
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043458"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908444"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Procedimiento Establecer puntos de interrupción en los flujos de trabajo
+# <a name="how-to-set-breakpoints-in-workflows"></a>Filtrar Establecer puntos de interrupción en los flujos de trabajo
 
 Cuando se usa el Diseñador de flujo de trabajo, puede establecer puntos de interrupción en los flujos de trabajo gráficas como lo haría en el código de Visual Basic o C#. Como es de esperar, la ejecución del flujo de trabajo se detiene en cada punto de interrupción que se establece.
 

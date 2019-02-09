@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ca1cb693977a5197bdf6adfe399ed269e0211a00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b3e6d9812f06df6d4af65f624579ec5f6550515
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55071077"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913319"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Elegir una plantilla de soluciones para lenguajes específicos de dominio
 Para crear una solución de lenguaje específico de dominio, elija una de las plantillas de solución están disponibles en el Asistente para el Diseñador de lenguaje específico de dominio. Al elegir la plantilla que más se parezca el idioma que desea crear, puede minimizar las modificaciones que se deben realizar en la solución inicial.

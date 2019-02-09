@@ -1,7 +1,6 @@
 ---
 title: Vista Gráfico del Diseñador de esquemas XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eacdb8729f2347e9be4b982ee2704161ba6dd29a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989385"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952650"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 

@@ -2,18 +2,17 @@
 title: Contextos de archivo del área de trabajo en Visual Studio | Documentos de Microsoft
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 7aaa0e65-f492-49ea-a845-35bd14910ca7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93690eab989cee62d756a774675bf1d46da017fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826869"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939195"
 ---
 # <a name="workspace-file-contexts"></a>Contextos de archivo del área de trabajo
 
@@ -27,7 +26,7 @@ Los escenarios más comunes para los contextos de archivo están relacionados co
 
 ## <a name="file-context-lifecycle"></a>Ciclo de vida del contexto de archivo
 
-Los ciclos de vida para un `FileContext` son no deterministas. En cualquier momento, un componente de forma asincrónica puede solicitar para algún conjunto de tipos de contexto. Los proveedores que admiten un subconjunto de los tipos de contexto de solicitud que se va a consultar. El `IWorkspace` instancia actúa como intermediario entre los consumidores y proveedores a través de la <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> método. Los consumidores pueden solicitar un contexto y realizar alguna acción a corto plazo en función del contexto, mientras que otros usuarios pueden solicitar un contexto y mantener una referencia de larga duración. 
+Los ciclos de vida para un `FileContext` son no deterministas. En cualquier momento, un componente de forma asincrónica puede solicitar para algún conjunto de tipos de contexto. Los proveedores que admiten un subconjunto de los tipos de contexto de solicitud que se va a consultar. El `IWorkspace` instancia actúa como intermediario entre los consumidores y proveedores a través de la <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> método. Los consumidores pueden solicitar un contexto y realizar alguna acción a corto plazo en función del contexto, mientras que otros usuarios pueden solicitar un contexto y mantener una referencia de larga duración.
 
 Es posible que realizan los cambios en los archivos que provocan un contexto de archivo a quedar obsoleto. El proveedor puede desencadenar un evento en el `FileContext` para notificar a los consumidores de las actualizaciones. Por ejemplo, si se proporciona un contexto de compilación para algunos archivos, pero ese contexto invalida un cambio en el disco, el productor original puede invocar el evento. Los consumidores que siguen haciendo referencia a ella `FileContext` , a continuación, puede volver a consultar un nuevo `FileContext`.
 

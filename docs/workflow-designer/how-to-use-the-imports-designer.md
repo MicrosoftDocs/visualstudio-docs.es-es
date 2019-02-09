@@ -2,7 +2,6 @@
 title: 'Diseñador de flujo de trabajo - Cómo: Usar el diseñador de importaciones'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
@@ -11,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a358ca4fbc6ffdfb1cf88aa42750e1d31cabb37
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: df041111bb452462c969995bacee97b08488d1c6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959244"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931967"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Procedimiento Usar el diseñador de importaciones
+# <a name="how-to-use-the-imports-designer"></a>Filtrar Usar el diseñador de importaciones
 
 El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. De forma similar a la **importa** o **mediante** habilitar palabras clave en Visual Basic y C#, la especificación de espacios de nombres en el Diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre completo nombre del tipo de versión.
 

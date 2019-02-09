@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Crear fragmentos XML
+title: Filtrar Crear fragmentos XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0414974946fefe9ab473d120be10deda4b9471
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8a17f5699ffc5bfe33e86370a9c5ef114331e90
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920687"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907339"
 ---
-# <a name="how-to-create-xml-snippets"></a>Procedimiento Crear fragmentos XML
+# <a name="how-to-create-xml-snippets"></a>Filtrar Crear fragmentos XML
 
 El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incluye un fragmento XML, llamado "Fragmento", que es un fragmento reutilizable que permite la creación de nuevos fragmentos XML.
 

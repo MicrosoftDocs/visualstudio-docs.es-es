@@ -2,18 +2,17 @@
 title: Área de trabajo de indexación en Visual Studio | Documentos de Microsoft
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 3163e98c-1c79-48a7-813f-7923be894ba1
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90722b540fd0569ab54ff945f5c1caa43668dccf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899748"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956992"
 ---
 # <a name="workspace-indexing"></a>Área de trabajo de indexación
 

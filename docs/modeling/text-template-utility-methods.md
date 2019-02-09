@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: da35b3d5c605c6974f99a840866d90c025bd4edc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c65960b2ad7f0eb31a9c969fb4671f883dc477c7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992573"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914401"
 ---
 # <a name="text-template-utility-methods"></a>Métodos de utilidad de las plantillas de texto
 

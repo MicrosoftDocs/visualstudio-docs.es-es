@@ -2,7 +2,6 @@
 title: Desarrollar aplicaciones con el Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 369f4d9d3761e41655bb0e430c8dba70268f9c9a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb1b746e862385395089fe0ccf3bd2d4bfdb8d33
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916477"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909250"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Desarrollar aplicaciones con el Diseñador de flujo de trabajo
 

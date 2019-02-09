@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Acceder a la selección actual y restringirla
+title: Filtrar Acceder a la selección actual y restringirla
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bb87e8785d58354b837896e4a5af580d348e61f2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb3ef158bafa172736f53898ea60b860c44dd77a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954169"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945331"
 ---
-# <a name="how-to-access-and-constrain-the-current-selection"></a>Procedimiento Acceder a la selección actual y restringirla
+# <a name="how-to-access-and-constrain-the-current-selection"></a>Filtrar Acceder a la selección actual y restringirla
 
 Al escribir un controlador de comandos o gestos para su lenguaje específico de dominio, puede determinar qué elemento haga el usuario. También puede impedir que algunas formas o campos que se seleccione. Por ejemplo, puede organizar que cuando el usuario hace clic en un elemento decorator de icono, en su lugar, se selecciona la forma que lo contiene. Restringir la selección de esta manera reduce el número de controladores que se deben escribir. También resulta más fácil para el usuario, quien puede haga clic en la forma sin tener que evitar el decorador.
 

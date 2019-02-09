@@ -2,7 +2,6 @@
 title: Diseñador de flujo de trabajo - mediante los diseñadores de actividad
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 helpviewer_keywords:
 - Workflow Designer [WFD], activity designer
 - Visual Studio Workflow Designer [WFD], activity designer
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f001c503628d63c0a78e064d472e10391fa6993a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc81d6f63abe97f05d4d2794c9fc157772399a1f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979275"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930953"
 ---
 # <a name="using-the-activity-designers"></a>Utilizar los diseñadores de actividades
 

@@ -1,7 +1,6 @@
 ---
 title: Instalar analizadores de FxCop
 ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b82225e075856e068456b5fb86bee679799fce61
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e4b97779c458fd7cb02ab5c168401f061869ccb1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043120"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953456"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Instalar analizadores de FxCop en Visual Studio
 

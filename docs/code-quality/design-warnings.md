@@ -1,7 +1,6 @@
 ---
 title: Diseñar advertencias
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.designrules
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06447475e2686bf3f4ec7c79c0e2417d4ee99a8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c8da8b003f74b21ab0a6178742c28f85423dd2ec
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011317"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908899"
 ---
 # <a name="design-warnings"></a>Diseñar advertencias
 Advertencias compatibles con el cumplimiento para las instrucciones de diseño de .NET Framework de diseño.

@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9cc30e43ea10a0b206351df9722d813b565b78a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 76129141ed293281eeb3179a654f470bcf608bdf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942183"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907586"
 ---
 # <a name="properties-of-decorators"></a>Propiedades de los decoradores
 Los elementos Decorator son iconos, texto o expandir o contraer comillas angulares que pueden aparecer en formas o conectores en el diagrama. Las siguientes tablas muestran las propiedades de los tres tipos de elemento decorator. Algunas de las propiedades aparecen sólo en shape elementos Decorator o sólo en los elementos Decorator del conector.
@@ -67,4 +66,4 @@ Los elementos Decorator son iconos, texto o expandir o contraer comillas angular
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

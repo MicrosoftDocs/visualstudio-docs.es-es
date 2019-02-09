@@ -2,18 +2,17 @@
 title: Área de trabajo de compilación en Visual Studio | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 813f7a5e-f298-4469-9f4c-a5bddf5a6e14
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0d90a3d317583e987eae83fadae5afa40546701
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826726"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951233"
 ---
 # <a name="workspace-build"></a>Compilación de área de trabajo
 

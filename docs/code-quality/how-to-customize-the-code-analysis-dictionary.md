@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Personalizar el diccionario de análisis de código
+title: Filtrar Personalizar el diccionario de análisis de código
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ad0da444f99e0fbf618d97729c64a1e5ed5666
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71ba70f536074365b3b0ead56b845216918f1a6f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971824"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919851"
 ---
-# <a name="how-to-customize-the-code-analysis-dictionary"></a>Procedimiento Personalizar el diccionario de análisis de código
+# <a name="how-to-customize-the-code-analysis-dictionary"></a>Filtrar Personalizar el diccionario de análisis de código
 Análisis de código usa un diccionario integrado para comprobar los identificadores en el código para los errores de ortografía, caso gramatical y otras convenciones de nomenclatura de las directrices de .NET Framework. Puede crear un archivo Xml de diccionario personalizado para agregar, quitar o modificar los términos, abreviaturas y acrónimos al diccionario integrado.
 
  Por ejemplo, suponga que el código contiene una clase denominada **DoorKnokker**. Análisis de código podría identificar el nombre como un compuesto de dos palabras: **puerta** y **knokker**. A continuación, generaría una advertencia que **knokker** no se ha escrito correctamente. Para forzar a reconocer la ortografía de análisis de código, puede agregar el término **knokker** al diccionario personalizado.
