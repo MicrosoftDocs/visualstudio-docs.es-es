@@ -3,17 +3,17 @@ layout: LandingPage
 title: Creación de aplicaciones de JavaScript en Visual Studio | Microsoft Docs
 description: Obtenga más información sobre cómo usar Visual Studio 2017 para crear aplicaciones.
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 5a295a6f9a347960ec42c34834bf8d478d94cb4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c6987cfe4934933bc85680d7ae4d3b3cda8fa060
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956810"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920868"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript en Visual Studio
 
