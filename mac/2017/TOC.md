@@ -53,6 +53,10 @@
 ## [Configurar un repositorio de Subversion](/visualstudio/mac/set-up-subversion-repository)
 ## [Trabajar con Subversion](/visualstudio/mac/working-with-subversion)
 
+# [Implementación de aplicaciones web](/visualstudio/mac/web-app-deployment.md)
+## [Publicación en Azure App Service](/visualstudio/mac/publish-app-svc.md)
+## [Publicación en una carpeta](/visualstudio/mac/publish-folder.md)
+
 # [Cargas de trabajo](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)
 ### [Razor](/visualstudio/mac/razor)
