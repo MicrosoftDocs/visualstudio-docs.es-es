@@ -82,7 +82,7 @@ La siguiente comparación muestra que MLS y MRO con MKL tienen un rendimiento de
 
 ![Comparación de MLS y MRO con MKL y R y MRO sin MKL](media/samples-speed-comparison.png)
 
-Para obtener una comparación técnica de R con MRO y MLS, vea [la explicación detallada de Lixun Zhang](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre el tema.
+Para obtener una comparación técnica de R con MRO y MLS, vea [la explicación detallada de Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre el tema.
 
 En la siguiente ilustración se compara el tiempo transcurrido en segundos empleado en la creación de modelos de regresión logística para predecir retrasos en vuelos de más de 15 minutos.  El tiempo transcurrido empleado en CRAN R aumenta significativamente al agregar un número pequeño de filas, mientras que en MLS solo aumenta aproximadamente el doble. Para obtener detalles de esta prueba comparativa, consulte el ejemplo de *Benchmarks/rxGlm_benchmark.R*.
 
