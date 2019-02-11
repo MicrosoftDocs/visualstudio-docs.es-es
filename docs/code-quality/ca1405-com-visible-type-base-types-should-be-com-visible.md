@@ -1,7 +1,6 @@
 ---
 title: 'CA1405: Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1405
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a94654475432706592c3cd2845488163529ca260
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 65bddd599bb544e000ca1d1269b84e53f51843bb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943226"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918564"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM
 
