@@ -9,7 +9,7 @@
 
 # [Cuentas de usuario](user-accounts.md)
 ## [Iniciar sesión](signing-in.md)
-## [Habilitar la suscripción](activation.md)
+## [Habilitar la suscripción](enable-subscription.md)
 
 # [Personalizar el IDE](customizing-the-ide.md)
 ## [Extender Visual Studio para Mac](extending-visual-studio-mac.md)
