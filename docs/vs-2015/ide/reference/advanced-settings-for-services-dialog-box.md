@@ -1,14 +1,9 @@
 ---
 title: Configuración avanzada de servicios (Cuadro de diálogo) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedServices
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 217d1f6f546df94a66c5b7554a7a1710747cf83c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a7affd12dceeb8802740b7d0cd502ede051f5ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291881"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779141"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Configuración avanzada de servicios (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +33,11 @@ Los servicios de aplicaciones cliente proporcionan acceso simplificado al inicio
 ## <a name="task-list"></a>Lista de tareas  
  [Cómo: Configurar servicios de aplicaciones cliente](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  
   
- [Cómo: Trabajar sin conexión con servicios de aplicaciones cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
+ [Cómo: Trabajar sin conexión con servicios de aplicaciones cliente](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
   
 ## <a name="uielement-list"></a>Lista de UIElement  
  **Guardar hash de contraseña para permitir el inicio de sesión sin conexión**  
- Especifica si se almacenará en caché de forma local una forma cifrada de la contraseña del usuario para permitir que el usuario inicie sesión cuando la aplicación está en modo sin conexión. Para obtener más información, consulte [Cómo: Trabajar sin conexión con servicios de aplicaciones cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38). Esta opción está seleccionada de forma predeterminada.  
+ Especifica si se almacenará en caché de forma local una forma cifrada de la contraseña del usuario para permitir que el usuario inicie sesión cuando la aplicación está en modo sin conexión. Para obtener más información, vea [Cómo: Trabajar sin conexión con servicios de aplicaciones cliente](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38). Esta opción está seleccionada de forma predeterminada.  
   
  **Exigir que los usuarios vuelvan a iniciar sesión cuando expire la cookie del servidor**  
  Especifica si los usuarios autenticados previamente se vuelven a autenticar de forma automática cuando la aplicación accede a los roles o al servicio de perfil y la cookie de autenticación de servidor ha expirado. Seleccione esta opción para denegar el acceso a los servicios de aplicación y requerir una reautenticación explícita después de que expire la cookie. Esta opción es útil en aplicaciones implementadas en ubicaciones públicas, ya que garantiza que los usuarios que dejan la aplicación en ejecución después de usarla no permanecen autenticados indefinidamente. Esta opción se encuentra desactivada de forma predeterminada.  
@@ -59,7 +54,4 @@ Los servicios de aplicaciones cliente proporcionan acceso simplificado al inicio
  [Servicios de aplicación cliente](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
  [Página Servicios, Diseñador de proyectos](../../ide/reference/services-page-project-designer.md)   
  [Cómo: Configurar servicios de aplicaciones cliente](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
- [Cómo: Trabajar sin conexión con servicios de aplicaciones cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)
-
-
-
+ [Cómo: Trabajar sin conexión con servicios de aplicaciones cliente](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)

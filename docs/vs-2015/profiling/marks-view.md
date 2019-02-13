@@ -28,7 +28,7 @@ En la vista Marcas se muestran eventos ETW y de muestreo que se insertaron en la
   
  Las marcas predeterminadas rellenadas en el informe etiquetan el inicio y el final del programa.  
   
- Los datos de los contadores de Windows de las marcas generadas automáticamente también se presentan en esta vista. Para obtener más información, vea [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)  
+ Los datos de los contadores de Windows de las marcas generadas automáticamente también se presentan en esta vista. Para obtener más información, consulte [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md).  
   
  Para crear un filtro entre dos marcas, seleccione las marcas, haga clic con el botón derecho y, a continuación, haga clic en la opción **Agregar filtro por Marcas** o **Agregar filtro por Marca de tiempo**.  
   

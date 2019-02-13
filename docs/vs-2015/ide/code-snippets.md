@@ -1,14 +1,9 @@
 ---
 title: Fragmentos de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -23,13 +18,13 @@ ms.assetid: 85976ad9-4c9a-4e7b-896e-66ec6f955199
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 317471f73c9e7507768b9b600ce995a35b000c23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774878"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,6 +93,3 @@ End Property
  [Fragmentos de código de Visual C#](../ide/visual-csharp-code-snippets.md)   
  [Fragmentos de código de Visual C++](../ide/visual-cpp-code-snippets.md)   
  [Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)
-
-
-

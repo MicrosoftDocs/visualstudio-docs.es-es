@@ -1,14 +1,9 @@
 ---
 title: 'Cómo: Especificar qué destino utilizar primero al compilar | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
 - MSBuild, specifying the defalut target
@@ -17,13 +12,13 @@ ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 52baabe5a8cf2e064c72ef7a5ab146d534214d90
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840706"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797046"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Cómo: Especificar qué destino utilizar primero al compilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,5 +79,3 @@ Un archivo del proyecto puede contener uno o vario elementos `Target` que define
   [MSBuild](msbuild.md)  
  [Destinos](../msbuild/msbuild-targets.md)   
  [Cómo: Limpiar una compilación](../msbuild/how-to-clean-a-build.md)
-
-

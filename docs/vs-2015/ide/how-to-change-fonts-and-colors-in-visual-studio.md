@@ -1,13 +1,9 @@
 ---
-title: Procedimiento Cambiar fuentes y colores
-ms.custom: ''
+title: 'Cómo: Cambiar fuentes y colores'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -15,21 +11,21 @@ ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 017494f4241c74f2c319f918433f1072b7097a9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53915366"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760352"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedimiento Cambiar fuentes y colores en Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Cómo: Cambiar fuentes y colores en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede personalizar el color del marco y las ventanas de herramientas del IDE de Visual Studio de varias maneras.
 
 > [!TIP]
->  Para obtener información sobre cómo cambiar los colores del editor de código, vea [Cómo: Cambio de fuentes y colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+>  Para obtener información sobre cómo cambiar los colores del editor de código, vea [Cómo: Cambiar las fuentes y los colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Cambiar el tema de color del IDE
 
@@ -70,4 +66,4 @@ Puede personalizar el color del marco y las ventanas de herramientas del IDE de 
 5.  En la lista **Tamaño**, elija un tamaño de texto y elija el botón **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
- [Características de accesibilidad de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [Cómo: Cambio de fuentes y colores del editor.
+ [Características de accesibilidad de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [Cómo: Cambiar las fuentes y los colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

@@ -1,14 +1,9 @@
 ---
 title: 'Cómo: Excluir archivos de la compilación | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
 - MSBuild, excluding files
@@ -17,13 +12,13 @@ ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 114c973246c325604c79ca248cc3487fd495a19a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb390e98b8650764dfc9f4237f150a5b903f1618
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230615"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796729"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Cómo: Excluir archivos de la compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,5 +129,3 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
 ## <a name="see-also"></a>Vea también  
  [Elementos](../msbuild/msbuild-items.md)   
  [MSBuild](msbuild.md) [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md)
-
-
