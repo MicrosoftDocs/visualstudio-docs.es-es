@@ -1,7 +1,6 @@
 ---
 title: Actualización de las plantillas de elemento de proyecto existentes
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -11,14 +10,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b5f72f6cbe2fcf3be2566fd7e51d7366dd2563ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf40216393e32602139e62378f6874ff362d5ee0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985895"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952156"
 ---
-# <a name="how-to-update-existing-templates"></a>Procedimiento Actualizar plantillas existentes
+# <a name="how-to-update-existing-templates"></a>Filtrar Actualizar plantillas existentes
 
 Después de crear una plantilla y comprimir los archivos en un archivo *.zip*, es posible que desee modificarla. Puede hacerlo al cambiar los archivos de la misma de forma manual o al exportar una nueva plantilla de un proyecto basado en la plantilla.
 

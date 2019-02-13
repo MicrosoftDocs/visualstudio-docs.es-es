@@ -12,15 +12,14 @@ ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 328d6e35116787f32b22e2ab265f94f497b01af5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 716366366bd9bb7514d042748b07dcb30a3567eb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997252"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923829"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos simple
 
@@ -121,7 +120,7 @@ En el caso de los controles simples que admiten enlaces de datos, implemente el 
 
 ## <a name="create-a-data-source-from-your-database"></a>Crear un origen de datos de la base de datos
 
-En este paso se usa el **Asistente para configuración de orígenes de datos** para crear un origen de datos basado en la tabla `Customers` de la base de datos de ejemplo Northwind. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: Instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+En este paso se usa el **Asistente para configuración de orígenes de datos** para crear un origen de datos basado en la tabla `Customers` de la base de datos de ejemplo Northwind. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1.  Para abrir el **orígenes de datos** ventana, en el **datos** menú, haga clic en **Mostrar orígenes de datos**.
 

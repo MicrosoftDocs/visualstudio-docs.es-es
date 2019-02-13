@@ -10,17 +10,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 721613b36a14c82c67c4cc187593651a4fd24acd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a01a249df088d2a89e64f1c04c69e80d69b111c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972383"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926754"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Tutorial: Crear un objeto DataTable en el Diseñador de Dataset
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Tutorial: Crear un DataTable en el Diseñador de Dataset
 
 En este tutorial se explica cómo crear un <xref:System.Data.DataTable> (sin un TableAdapter) mediante el **Diseñador de Dataset**. Para obtener información sobre la creación de tablas de datos que incluyen los TableAdapters, vea [crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 

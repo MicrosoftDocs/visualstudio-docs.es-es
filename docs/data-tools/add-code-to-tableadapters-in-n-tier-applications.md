@@ -12,15 +12,14 @@ ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b12c84151c55828a9e0ab2e97f5ccfff4592ee3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75f7dd3149785520023657bb86ec8172dc379ab6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039324"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927001"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Agregar código a TableAdapters en aplicaciones de n niveles
 Puede ampliar la funcionalidad de un TableAdapter mediante la creación de un archivo de clase parcial del TableAdapter y agregarle código (en lugar de agregar código a la *DatasetName.DataSet.Designer* archivo). Las clases parciales permiten código para una clase específica que va a dividir entre varios archivos físicos. Para obtener más información, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) o [partial (tipos)](/dotnet/csharp/language-reference/keywords/partial-type).
