@@ -1,14 +1,9 @@
 ---
 title: Descripción de las configuraciones de compilación | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - SolutionProperties.ActiveConfig
 - vs.build.newprojectconfiguration
@@ -30,13 +25,13 @@ ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799315"
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49304140"
 Se pueden almacenar diferentes configuraciones de propiedades de solución y de proyecto para utilizar en distintos tipos de compilaciones. Para crear, seleccionar, modificar o eliminar una configuración, se puede usar el **Administrador de configuración**. Para abrirlo, en la barra de menús, seleccione **Compilación**, **Administrador de configuración**, o simplemente escriba **Configuración** en el cuadro **Inicio rápido**. También se puede usar la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar** para seleccionar una configuración o abrir el **Administrador de configuración**.  
   
 > [!NOTE]
->  Si no se pueden encontrar los valores de configuración de soluciones en la barra de herramientas y no se puede tener acceso al **Administrador de configuración**, se puede aplicar la configuración de desarrollo de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Para más información, vea [Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
+>  Si no se pueden encontrar los valores de configuración de soluciones en la barra de herramientas y no se puede tener acceso al **Administrador de configuración**, se puede aplicar la configuración de desarrollo de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Para obtener más información, vea [Cómo: Administrar configuraciones de opciones del desarrollador de Visual Basic aplica](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
   
  De forma predeterminada, las configuraciones Debug y Release se incluyen en los proyectos creados mediante plantillas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Una configuración Debug admite la depuración de una aplicación y una configuración Release compila una versión de la aplicación que se puede implementar. Para más información, vea [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). También se pueden crear configuraciones de soluciones personalizadas y configuraciones de proyecto. Para obtener más información, consulte [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).  
   
@@ -95,6 +90,3 @@ Se pueden almacenar diferentes configuraciones de propiedades de solución y de 
  [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)   
  [Referencia de compilación de C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   
  [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)
-
-
-

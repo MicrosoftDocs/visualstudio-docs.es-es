@@ -1,14 +1,9 @@
 ---
 title: 'Cómo: actualizar plantillas existentes | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating existing templates
 - Visual Studio templates, updating existing templates
@@ -17,13 +12,13 @@ ms.assetid: d585e45b-7fe2-45fa-9cf3-7f2bc060f3c4
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aa7c6f534756298006e07d287b118edfd4944717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5b1ffd20fb33048427ba4cacdbbd9360313db089
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242286"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771118"
 ---
 # <a name="how-to-update-existing-templates"></a>Cómo: Actualizar plantillas existentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +69,3 @@ Después de crear una plantilla y comprimir los archivos en un archivo .zip, es 
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Parámetros de plantilla](../ide/template-parameters.md)   
  [Cómo: Crear Starter Kits](../ide/how-to-create-starter-kits.md)
-
-
-

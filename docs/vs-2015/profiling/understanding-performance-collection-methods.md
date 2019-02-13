@@ -1,14 +1,9 @@
 ---
 title: Descripción de los métodos de recopilación de rendimiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.methodpage
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ea4881fd-bd04-4875-9b7b-28490d6706f9
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1a941b3c9dff3a80adea61026c6176dcf4c44361
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 357623a6c93cf2ec87cc9d4b53f76cec535fd6c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809056"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805313"
 ---
 # <a name="understanding-performance-collection-methods"></a>Descripción de los métodos de recopilación de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,6 +131,3 @@ Datos de interacción de capas recopilados por las Herramientas de generación d
 ## <a name="see-also"></a>Vea también  
  [Cómo: Recopilar datos de rendimiento de un sitio web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)
-
-
-

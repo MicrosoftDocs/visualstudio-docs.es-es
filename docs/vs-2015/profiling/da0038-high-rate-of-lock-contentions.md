@@ -1,5 +1,5 @@
 ---
-title: 'DA0038: Alta frecuencia de contenciones de bloqueo | Microsoft Docs'
+title: 'DA0038: Tasa alta de contenciones de bloqueo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54766207"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Alta frecuencia de contenciones de bloqueo
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Tasa alta de contenciones de bloqueo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente de Visual Studio 2017, consulte [DA0038: Alta tasa de contenciones de bloqueo](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) en docs.microsoft.com.  
@@ -50,7 +50,7 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [DA
  Esta regla se desencadena cuando las mediciones tomadas durante una generación de perfiles indican que hay una cantidad excesivamente alta de contención de bloqueo. Las contenciones de bloqueo retrasan la ejecución de subprocesos que están esperando para adquirir el bloqueo. Deberían investigarse incluso las cantidades bastante pequeñas de contención de bloqueo en pruebas unitarias o en pruebas de carga que se ejecuten en hardware de gama baja.  
   
 > [!NOTE]
->  Cuando la frecuencia de contenciones de bloqueo notificadas en los datos de generación de perfiles es excesivamente alta, se desencadena el mensaje de advertencia [DA0039: Frecuencia muy alta de contenciones de bloqueo](../profiling/da0039-very-high-rate-of-lock-contentions.md) en lugar de este mensaje informativo.  
+>  Cuando la tasa de contenciones de bloqueo en los datos de generación de perfiles es excesivamente alta, se muestra el mensaje de advertencia [DA0039: alta frecuencia de contenciones de bloqueo](../profiling/da0039-very-high-rate-of-lock-contentions.md) en lugar de este mensaje de información.  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
  Haga doble clic en el mensaje para navegar a la vista [Marcas](../profiling/marks-view.md) de los datos de generación de perfiles.  Busque la columna **LocksAndThreads de .NET CLR\Tasa de contención por segundo**. Determine si hay fases concretas de ejecución del programa en que la contención de bloqueo sea mayor que en otras.  

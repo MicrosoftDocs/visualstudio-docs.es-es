@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54782215"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Procedimiento para crear plantillas web manualmente
+# <a name="how-to-manually-create-web-templates"></a>Cómo: Crear plantillas web manualmente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La creación de una plantilla web es diferente de la creación de otros tipos de plantillas. Dado que las plantillas de proyecto web aparecen en el cuadro de diálogo **Agregar nuevo sitio web** y los elementos de proyecto web se clasifican por lenguaje de programación, el archivo .vstemplate debe especificar la plantilla como una plantilla web e identificar el lenguaje de programación.  

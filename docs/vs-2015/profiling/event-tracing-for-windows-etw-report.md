@@ -1,14 +1,9 @@
 ---
 title: Informe Seguimiento de eventos para Windows (ETW) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Event tracing for Windows profiling report
 - ETW profiling report
@@ -16,13 +11,13 @@ ms.assetid: 81e88162-b88a-40b6-8b85-a232c8096a47
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9be86d9ad6243a91763778f7027252a78d6ef254
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ba40e16f70451a288a17c138bdfa3b2070d56122
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724965"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752254"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Informe Seguimiento de eventos para Windows (ETW)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ El informe Seguimiento de eventos para Windows (ETW) muestra los eventos ETW reg
 |**Descripción**|Identifica el proveedor del evento.|  
 |**Type**|Identifica el tipo de evento.|  
 |**Propiedades**|Propiedades del evento. Cada evento es un par nombre-valor separado por comas e incluido entre corchetes.|
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: Procedimiento para agregar o quitar referencias mediante el Administrador de referencias | Microsoft Docs
-ms.custom: ''
+title: Procedimiento Agregar o quitar referencias mediante el Administrador de referencias | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -27,13 +22,13 @@ ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
 caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917562"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756991"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento para agregar o quitar referencias mediante el Administrador de referencias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,16 +154,16 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
   
  Puede generar un archivo WinMD en Visual Studio de dos maneras:  
   
-- **Proyectos administrados de aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: los proyectos de aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] pueden generar archivos binarios WinMD al establecer Tipo de salida en Archivo WinMD en las propiedades del proyecto. El nombre de archivo WinMD debe ser el espacio de nombres que engloba a todos los espacios de nombres que existen en él. Por ejemplo, si un proyecto consta de los espacios de nombres A.B y A.B.C, los nombres posibles para sus archivos WinMD resultantes son A.winmd y A.B.winmd. Si un usuario especifica un valor en Propiedades del proyecto &#124; Nombre del ensamblado o Propiedades del proyecto &#124; Espacio de nombres que diverge del conjunto de espacios de nombres del proyecto, o si no hay un espacio de nombres englobador dentro de un proyecto, se genera una advertencia de compilación: ''A.winmd'' no es un nombre de archivo .winmd válido para este ensamblado. Todos los tipos de un archivo de metadatos de Windows deben existir en un subespacio de nombres del nombre de archivo. Los tipos que no existen en un subespacio de nombres del nombre de archivo no podrán encontrarse en tiempo de ejecución. En este ensamblado, el espacio de nombres común más pequeño es “CSWSClassLibrary1”. Un proyecto de escritorio de Visual Basic o Visual C# solo puede utilizar archivos WinMD que hayan sido generados mediante los SDK de [!INCLUDE[win8](../includes/win8-md.md)], denominados archivos WinMD propios, y no puede generar archivos WinMD.  
+- **Proyectos administrados de aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: los proyectos de aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] pueden generar archivos binarios WinMD al establecer Tipo de salida en Archivo WinMD en las propiedades del proyecto. El nombre de archivo WinMD debe ser el espacio de nombres que engloba a todos los espacios de nombres que existen en él. Por ejemplo, si un proyecto consta de los espacios de nombres A.B y A.B.C, los nombres posibles para sus archivos WinMD resultantes son A.winmd y A.B.winmd. Si un usuario escribe las propiedades de un proyecto &#124; nombre del ensamblado o propiedades del proyecto &#124; valor Namespace que diverge del conjunto de espacios de nombres en el proyecto o no hay ningún espacio de nombres englobador dentro de un proyecto, se genera una advertencia de compilación: "A.winmd" no es un nombre de archivo .winmd válido para este ensamblado. Todos los tipos de un archivo de metadatos de Windows deben existir en un subespacio de nombres del nombre de archivo. Los tipos que no existen en un subespacio de nombres del nombre de archivo no podrán encontrarse en tiempo de ejecución. En este ensamblado, el espacio de nombres común más pequeño es “CSWSClassLibrary1”. Un proyecto de escritorio de Visual Basic o Visual C# solo puede utilizar archivos WinMD que hayan sido generados mediante los SDK de [!INCLUDE[win8](../includes/win8-md.md)], denominados archivos WinMD propios, y no puede generar archivos WinMD.  
   
-- **Proyectos nativos de aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: un archivo WinMD nativo solo contiene metadatos. Su implementación está en un archivo DLL distinto. Se pueden generar archivos binarios nativos si se elige la plantilla del proyecto Componente de Windows Runtime en el cuadro de diálogo **Nuevo proyecto** o si se empieza a partir de un proyecto en blanco y se modifican las propiedades del proyecto para generar un archivo WinMD. Si el proyecto está compuesto de espacios de nombres dispares, un error de compilación indicará al usuario que combine los espacios de nombres o ejecute la herramienta MSMerge.  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] proyectos nativos de aplicaciones**: Un archivo WinMD nativo solo contiene metadatos. Su implementación está en un archivo DLL distinto. Se pueden generar archivos binarios nativos si se elige la plantilla del proyecto Componente de Windows Runtime en el cuadro de diálogo **Nuevo proyecto** o si se empieza a partir de un proyecto en blanco y se modifican las propiedades del proyecto para generar un archivo WinMD. Si el proyecto está compuesto de espacios de nombres dispares, un error de compilación indicará al usuario que combine los espacios de nombres o ejecute la herramienta MSMerge.  
   
   La pestaña Windows se compone de dos subgrupos.  
   
 ### <a name="core-subgroup"></a>Subgrupo Principal  
  El subgrupo Principal muestra todos los archivos WinMD (para los elementos de Windows en tiempo de ejecución) del SDK de la versión de Windows de destino.  
   
- Los proyectos de aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contienen referencias a todos los archivos WinMD del SDK de [!INCLUDE[win8](../includes/win8-md.md)] de forma predeterminada cuando se crea el proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta Referencias del **Explorador de soluciones** indica la referencia a la versión completa del SDK de [!INCLUDE[win8](../includes/win8-md.md)]. Por tanto, el subgrupo Principal del Administrador de referencias no mostrará los ensamblados del SDK de [!INCLUDE[win8](../includes/win8-md.md)], y en su lugar mostrará un mensaje: “Ya se hace referencia a Windows SDK. Use el Examinador de objetos para explorar las referencias en el Windows SDK".  
+ Los proyectos de aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contienen referencias a todos los archivos WinMD del SDK de [!INCLUDE[win8](../includes/win8-md.md)] de forma predeterminada cuando se crea el proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta Referencias del **Explorador de soluciones** indica la referencia a la versión completa del SDK de [!INCLUDE[win8](../includes/win8-md.md)]. Por tanto, el subgrupo principal del Administrador de referencias no mostrará ninguno de los ensamblados de la [!INCLUDE[win8](../includes/win8-md.md)] SDK y en su lugar mostrará un mensaje: "Ya se hace referencia a Windows SDK. Use el Examinador de objetos para explorar las referencias en el Windows SDK".  
   
  En los proyectos de escritorio, el subgrupo Principal no aparece de forma predeterminada. Puede agregar Windows Runtime si abre el menú contextual del nodo del proyecto, elige **Descargar el proyecto**, agrega el siguiente fragmento de código y vuelve a abrir el proyecto (en el nodo del proyecto, elija **Volver a cargar el proyecto**). Cuando se invoca el cuadro de diálogo **Administrador de referencias**, aparece el subgrupo Principal.  
   
@@ -221,8 +216,5 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
  La barra de búsqueda del cuadro de diálogo **Administrador de referencias** funciona según la pestaña que tiene el foco. Por ejemplo, si el usuario escribe “System” en la barra de búsqueda mientras la pestaña **Solución** tiene el foco, la búsqueda no devuelve ningún resultado a menos que la solución conste de un nombre de proyecto que contenga “system”.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [(NIB) Cómo: Agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)
-
-
-

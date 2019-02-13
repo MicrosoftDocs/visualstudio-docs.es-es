@@ -1,14 +1,9 @@
 ---
 title: Vista Funciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functions
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 207daebe03327216095c8e6b45798d3cf3fb43d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 08fd68d99841d2877a2b32fe71968ea05e8db427
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817638"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774666"
 ---
 # <a name="functions-view"></a>Vista Funciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ La vista Funciones muestra las funciones que se llaman durante la generación de
  [Vista Funciones](../profiling/functions-view-instrumentation-data.md)   
  [Vista Funciones: instrumentación](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Vista Funciones: muestreo](../profiling/functions-view-dotnet-memory-sampling-data.md)
-
-
-

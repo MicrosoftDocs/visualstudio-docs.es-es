@@ -1,14 +1,9 @@
 ---
 title: 'DA0039: Tasa muy alta de contenciones de bloqueo | Documentos de Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.39
 - vs.performance.DA0039
@@ -17,18 +12,18 @@ ms.assetid: 5a9fc57d-9097-413b-af0c-8726b1a57048
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e226ad010845d6aa2419c9fe497334e93c5323f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f5b994e14dc63d9fabe0c02b70f5df584c03067e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752414"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Tasa muy alta de contenciones de bloqueo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [DA0039: muy alta frecuencia de contenciones de bloqueo](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio 2017, consulte [DA0039: Muy alta frecuencia de contenciones de bloqueo](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions) en docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -61,4 +56,3 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [DA
  Haga doble clic en el mensaje para navegar a la vista [Marcas](../profiling/marks-view.md) de los datos de generación de perfiles.  Busque la columna **LocksAndThreads de .NET CLR\Tasa de contención por segundo**. Determine si hay fases concretas de ejecución del programa en que la contención de bloqueo sea mayor que en otras.  
   
  Esta regla solo se desencadena cuando no está utilizando el método de generación de perfiles de simultaneidad. El método de generación de perfiles de simultaneidad es la mejor herramienta para diagnosticar problemas de rendimiento relacionados con la contención de bloqueo en la aplicación. Recopile datos de generación de perfiles de simultaneidad para comprender el comportamiento de bloqueo de la aplicación. Esto incluye entender qué bloqueos compiten fuertemente, cuánto se retrasa el tiempo de ejecución de subprocesos a la espera de los bloqueos que compiten y qué código concreto hay implicado. Los perfiles de simultaneidad recopilan datos en todas las contenciones de bloqueo, incluidos el comportamiento de bloqueo de funciones nativas de Windows, las clases de .NET Framework y otras bibliotecas de terceros que la aplicación utilice como referencia. Para obtener información sobre la generación de perfiles de simultaneidad del IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [Recopilar datos de simultaneidad de subprocesos y procesos](../profiling/collecting-thread-and-process-concurrency-data.md). Para acceder a los vínculos para obtener información sobre la generación de perfiles de simultaneidad desde la línea de comandos, consulte la sección **Uso del método de simultaneidad para recopilar datos de contención de recursos y actividad de subprocesos** de [Uso de métodos de generación de perfiles desde la línea de comandos](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
-

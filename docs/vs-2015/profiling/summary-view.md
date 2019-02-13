@@ -1,14 +1,9 @@
 ---
 title: Vista Resumen | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fdacfcba18d465685053cdea4581a5806c25db9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bfba1981fb6becea34fb567a2f7ae2e6c06896d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767862"
 ---
 # <a name="summary-view"></a>Vista Resumen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,8 +52,8 @@ En la vista Resumen se muestra información sobre las funciones o los objetos m�
 |**Mostrar árbol de llamadas reducido**|Muestra las rutas de acceso de ejecución más exigentes en la vista Árbol de llamadas. Para obtener más información, consulte [Vista Árbol de llamadas](../profiling/call-tree-view.md).|  
 |**Mostrar líneas activas**|No está disponible para generar perfiles de datos que se han recopilado mediante el método de instrumentación. Muestra las líneas de código fuente más exigentes en la vista Líneas. Para obtener más información, consulte [Vista Líneas](../profiling/lines-view.md).|  
 |**Comparar informes**|Muestra el cuadro de diálogo **Seleccionar archivos de análisis para la comparación**, en el que puede especificar otro archivo de datos de generación de perfiles para compararlo con el archivo actual. Para obtener más información, consulte [Comparar archivos de datos de rendimiento](../profiling/comparing-performance-data-files.md).|  
-|**Exportar datos de informe**|Muestra el cuadro de diálogo **Exportar informe**, en el que puede especificar una o varias vistas de informe para guardar como archivos de valores separados por comas (.csv) o .xml. Para obtener más información, consulte [Cómo: Exportar informes de las Herramientas de generación de perfiles](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
-|**Guardar informe analizado**|Guarda el archivo de datos de generación de perfiles actual como un archivo .vsps, que se abre más rápidamente en la interfaz para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información, consulte [Cómo: Guardar archivos de datos de generación de perfiles analizados](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
+|**Exportar datos de informe**|Muestra el cuadro de diálogo **Exportar informe**, en el que puede especificar una o varias vistas de informe para guardar como archivos de valores separados por comas (.csv) o .xml. Para obtener más información, consulte [Cómo: Exportar informes de las Herramientas de generación de perfiles](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
+|**Guardar informe analizado**|Guarda el archivo de datos de generación de perfiles actual como un archivo .vsps, que se abre más rápidamente en la interfaz para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información, consulte [Cómo: Guardar archivos de datos de generación de perfiles analizados](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Filtrar datos del informe**|Muestra el panel de filtro del informe de generación de perfiles, en el que puede especificar criterios para restringir los datos de la vista Informe. Para obtener más información, consulte [Filtro de vista Informe de rendimiento](../profiling/performance-report-view-filter.md)|  
 |**Alternar pantalla completa**|Alterna el modo de pantalla completa para la vista Informe.|  
   
@@ -66,6 +61,3 @@ En la vista Resumen se muestra información sobre las funciones o los objetos m�
  [Vista Resumen](../profiling/summary-view-sampling-data.md)   
  [Vista Resumen](../profiling/summary-view-instrumentation-data.md)   
  [Vista Resumen](../profiling/summary-view-dotnet-memory-data.md)
-
-
-

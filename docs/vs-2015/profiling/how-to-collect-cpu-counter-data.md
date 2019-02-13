@@ -1,14 +1,9 @@
 ---
 title: 'Cómo: Recopilar datos de contadores de CPU | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.cpucounters
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 102fb6ca-5fbf-4b05-925f-56912ce3f44b
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46ade222b6032baca17afe37d72dd6e5657ae1c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2a774ce8b36ceddb4d4b53f90c63bec30acc0273
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762937"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Cómo: Recopilar datos de contadores de CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,6 +70,3 @@ Un contador de eventos de CPU se utiliza para recopilar datos de rendimiento esp
  [Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)   
  [Contadores de CPU y de Windows](../profiling/cpu-and-windows-counters.md)   
  [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)
-
-
-

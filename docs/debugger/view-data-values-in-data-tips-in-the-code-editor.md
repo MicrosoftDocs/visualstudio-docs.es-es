@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: caca7622d2634a6da08d0d09aaef5b0a8634180e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204406"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986558"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Ver valores de datos en la información sobre datos en el editor de código
 
-La Información sobre datos es una manera útil de ver información sobre las variables del programa durante la depuración. La Información sobre datos funciona únicamente en modo de interrupción y únicamente con las variables que están dentro del actual ámbito de ejecución. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para solucionar errores) antes de continuar con este artículo.
+La Información sobre datos es una manera útil de ver información sobre las variables del programa durante la depuración. La Información sobre datos funciona únicamente en modo de interrupción y únicamente con las variables que están dentro del actual ámbito de ejecución. Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) y [herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md) antes de pasar a través de este artículo.
   
 ## <a name="work-with-datatips"></a>Trabajar con información sobre datos
 
@@ -124,7 +124,7 @@ Puede exportar información sobre datos a un archivo XML, que puede compartir o 
 
 ## <a name="see-also"></a>Vea también  
  [¿Qué es la depuración?](../debugger/what-is-debugging.md)  
- [Corrección de errores escribiendo mejor código de C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md)  
  [Primer vistazo al depurar](../debugger/debugger-feature-tour.md) [ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
  [Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)   
  [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)   

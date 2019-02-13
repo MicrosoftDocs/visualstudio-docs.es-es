@@ -1,25 +1,20 @@
 ---
-title: 'Cómo: Adjuntar el generador de perfiles a un servicio .NET para recopilar datos de memoria mediante la línea de comandos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Adjuntar el Profiler a un servicio .NET para recopilar datos de memoria mediante la línea de comandos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 93809264569065d1b13fd08b89f91a9335576413
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2568b04e999a1b887e918a07ff8233ea9bf289a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763695"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802383"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a un servicio .NET para recopilar datos de memoria utilizando la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +115,7 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
 
     -   Detenga el servicio.  
 
-         O bien  
+         o bien  
 
     -   Escriba **VSPerfCmd /detach**  
 
@@ -137,6 +132,3 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
 ## <a name="see-also"></a>Vea también  
  [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)   
  [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)
-
-
-

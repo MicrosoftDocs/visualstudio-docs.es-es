@@ -1,14 +1,9 @@
 ---
 title: 'Cómo: Generar perfiles de código de JavaScript en páginas web | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript performance profiling
 - Profiling Tools,JavaScript
@@ -17,13 +12,13 @@ ms.assetid: 37d02aad-ca4d-4eb0-bf66-ca3ecef31fbe
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8f9def923e0cc012a37c02d24b67e807668ae976
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 093054168a2314711476a5c4bc8a98ffdc6f732e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792117"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780765"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Cómo: Generar perfiles de código de JavaScript en páginas web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,6 +85,3 @@ Las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsp
 7.  Ejecute la funcionalidad de la que desea generar perfiles.  
   
 8.  Para finalizar la sesión de generación de perfiles, cierre el explorador.
-
-
-

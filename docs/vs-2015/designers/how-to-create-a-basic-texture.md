@@ -1,25 +1,20 @@
 ---
-title: 'Cómo: Crear una textura básica | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear una textura básica | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2312b82fbcb6f4cd4ed00b288cb87283538cb372
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767104"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Cómo: Crear una textura básica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,6 +92,3 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
   
 ## <a name="see-also"></a>Vea también  
  [Image Editor](../designers/image-editor.md)
-
-
-

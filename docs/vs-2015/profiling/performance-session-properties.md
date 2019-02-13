@@ -1,14 +1,9 @@
 ---
 title: Propiedades de las sesiones de rendimiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,properties
 - property pages,Profiling Tools
@@ -17,13 +12,13 @@ ms.assetid: c3a86913-172b-488f-a31a-cea01a71b2ea
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed020d09bc3c7b85a395625f410f0062bf4bfac9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b8769cbb23b2c192fd3db07eca9519661b3e214c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739285"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762851"
 ---
 # <a name="performance-session-properties"></a>Propiedades de las sesiones de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,6 +115,3 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
  [Temas de introducción](../profiling/overviews-performance-tools.md)   
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Contadores de Windows y de CPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f79eeae8539657f6556b87d917f991113c5de807
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800445"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +96,7 @@ El generador de perfiles de Visual Studio le permite recopilar datos de rendimie
   
       **Nota** Haga clic en **Cancelar** para volver a la configuración de muestreo anterior.  
   
-     O bien  
+     o bien  
   
    - Seleccione **Contadores de CPU** y, a continuación, seleccione **Recopilar contadores de CPU**. Los contadores de CPU se enumeran en **Contadores disponibles**.  
   
@@ -139,6 +134,3 @@ El generador de perfiles de Visual Studio le permite recopilar datos de rendimie
  [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)   
  [Cómo: Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)   
  [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)
-
-
-

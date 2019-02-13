@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Compatibilidad del desarrollo de pruebas en primer lugar con la característica de generación a partir del uso | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Compatibilidad con prueba primero el generar a partir de la característica de uso | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
@@ -16,13 +11,13 @@ ms.assetid: 764c17a4-cd95-4c23-bf63-d92d9c5adfb2
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2308be73eb7b483168544dc706a9b682af7eca35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232848"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755143"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Tutorial: Compatibilidad del desarrollo de pruebas en primer lugar con la característica de generación a partir del uso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -196,6 +191,3 @@ Resultados de pruebas (ventana)
  [Escribir código](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Usar IntelliSense](../ide/using-intellisense.md)   
  [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
-
-
-

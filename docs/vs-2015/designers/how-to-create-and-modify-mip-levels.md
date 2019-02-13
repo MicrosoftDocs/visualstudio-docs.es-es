@@ -1,25 +1,20 @@
 ---
-title: 'Cómo: Crear y modificar niveles de MIP | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear y modificar niveles de MIP | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9578fd2bdafeaf8c9a3e9fcd3dd5523b4d8cc7f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6495f9271114be5fcd35e38d9ed210e07a8b6f66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184293"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774067"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Cómo: Crear y modificar niveles de MIP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ En este documento se muestra cómo usar el **Editor de imágenes** para generar 
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md)
-
-
-

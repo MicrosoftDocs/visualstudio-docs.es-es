@@ -28,13 +28,13 @@ Puede experimentar uno de los siguientes problemas al utilizar las herramientas 
 ##  <a name="NoDataCollected"></a> No se recopilan datos con las herramientas de generación de perfiles  
  Después de generar perfiles de una aplicación, no se crea un archivo de datos de generación de perfiles (.vsp) y recibe la siguiente advertencia en la ventana de salida o en la ventana Comandos:  
   
- PRF0025: No se ha recopilado ningún dato.  
+ PRF0025: No se recopiló ningún dato.  
   
  Este problema puede tener varias causas:  
   
 -   Un proceso cuyo perfil se generó usando el método de muestreo o de memoria de .NET inicia un proceso secundario que se convierte en el proceso que realiza el trabajo de la aplicación. Por ejemplo, algunas aplicaciones leen la línea de comandos para determinar si se han iniciado como una aplicación de Windows o como una aplicación de línea de comandos. Si se solicitó una aplicación Windows, el proceso original inicia un nuevo proceso configurado como una aplicación de Windows y después se cierra el proceso original. Dado que las herramientas de generación de perfiles no recopilan automáticamente datos de procesos secundarios, no se recopilan datos.  
   
-     Para recopilar datos de generación de perfiles en esta situación, adjunte el generador de perfiles al proceso secundario en lugar de iniciar la aplicación con el generador de perfiles. Para obtener más información, vea [Cómo: Asociar y desasociar las herramientas de rendimiento en los procesos en ejecución](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) y [Attach (VSPerfCmd)](../profiling/attach.md)  
+     Para recopilar datos de generación de perfiles en esta situación, adjunte el generador de perfiles al proceso secundario en lugar de iniciar la aplicación con el generador de perfiles. Para obtener más información, consulte [Cómo: Adjuntar y separar las herramientas de rendimiento para los procesos en ejecución](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) y [Adjuntar (VSPerfCmd)](../profiling/attach.md)  
   
 ##  <a name="NoSymbols"></a> Las vistas de rendimiento y los informes muestran números para los nombres de función  
  Después de generar perfiles de una aplicación, se muestran números en lugar de los nombres de función en las vistas e informes.  

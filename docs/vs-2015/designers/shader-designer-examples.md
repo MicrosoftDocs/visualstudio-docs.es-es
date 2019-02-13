@@ -1,25 +1,20 @@
 ---
 title: Ejemplos del Diseñador de sombras | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f12f5dee-63ab-4376-9952-7f87f269e9c4
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a10c05a0f63f57422cb0e4b4d6baf3413d9a2ce9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 17486ad7206a49eabae1998bd060c697c011ba8e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174751"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769481"
 ---
 # <a name="shader-designer-examples"></a>Ejemplos del Diseñador de sombras
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,6 +33,3 @@ Los artículos de esta sección de la documentación contienen ejemplos en los q
 |[Cómo: Crear un sombreador de gradiente basado en geometría](../designers/how-to-create-a-geometry-based-gradient-shader.md)|Se muestra un sombreador que modula un color en función de la geometría de un objeto y lo aplica al objeto.|  
 |[Tutorial: Crear una bola de billar 3D realista](../designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md)|Se muestra cómo combinar recursos de textura y técnicas del sombreador para crear un sombreador de bola de billar realista.|  
 |[Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)|Se explica cómo exportar un sombreador DGSL en un formato que pueda usar su aplicación.|
-
-
-

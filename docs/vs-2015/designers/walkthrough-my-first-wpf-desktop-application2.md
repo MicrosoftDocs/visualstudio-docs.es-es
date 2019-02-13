@@ -1,30 +1,25 @@
 ---
-title: 'Tutorial: Mi primera aplicación de escritorio WPF2 | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Mi primer Application2 de escritorio de WPF | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795950"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Tutorial: Mi primera aplicación de escritorio WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-un name = "Introducción" ></a> este tutorial proporciona una introducción al desarrollo de Windows Presentation Foundation (WPF). Podrá crear una aplicación básica que incluya los elementos que son comunes a la mayoría de las aplicaciones de escritorio WPF: marcado XAML, código subyacente, definiciones de aplicación, controles, diseño, enlace de datos y estilos.  
+un name = "Introducción" ></a> este tutorial proporciona una introducción al desarrollo de Windows Presentation Foundation (WPF). Creará una aplicación básica que incluye los elementos que son comunes a la mayoría de las aplicaciones de escritorio WPF: Marcado XAML, código subyacente, definiciones de aplicación, controles, diseño, enlace de datos y estilos.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Creación del proyecto de la aplicación  
  En esta sección, creará la infraestructura de la aplicación, que incluye el proyecto y una ventana principal o formulario.  
@@ -983,6 +978,3 @@ un name = "Introducción" ></a> este tutorial proporciona una introducción al d
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Crear una aplicación de escritorio de WPF conectada a un servicio móvil de Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [Crear aplicaciones de escritorio modernas con Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

@@ -48,4 +48,4 @@ En función de la configuración de los permisos de acceso de usuario de [!INCLU
 ## <a name="see-also"></a>Vea también  
  [Información general](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Cómo: Asociar con procesos en ejecución](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [Cómo: Conectar a procesos en ejecución](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

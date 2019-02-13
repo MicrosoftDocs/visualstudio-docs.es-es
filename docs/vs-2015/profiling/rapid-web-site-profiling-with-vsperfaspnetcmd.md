@@ -1,14 +1,9 @@
 ---
 title: Generación rápida de perfiles de sitio web con VSPerfASPNETCmd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - proflilng tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
@@ -16,13 +11,13 @@ ms.assetid: 9a9d62a6-549a-45ac-a948-76eb98586ac5
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 80acb5030c61bd986bfbd2a5f2b383ac37a25a0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b269ef28218fd51e3a87f331c44096cd80773f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760302"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Generación rápida de perfiles de sitio web con VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,6 +100,3 @@ La herramienta de línea de comandos **VSPerfASPNETCmd** le permite generar perf
 |------------|-----------------|  
 |**/Output:** `VspFile`|De forma predeterminada, el archivo de datos de generación de perfiles (.vsp) se crea en el directorio actual con el nombre de archivo **PerformanceReport.vsp**. Utilice la opción /output para cambiar la ubicación, el nombre de archivo o ambos.|  
 |**/PackSymbols:Off**|De forma predeterminada, VsPerfASPNETCmd incrusta símbolos (nombres de función y parámetro, etcétera) en el archivo .vsp. Incrustar los símbolos puede hacer que el archivo de datos de generación de perfiles sea muy grande. Si tiene acceso a los archivos .pdb que contienen los símbolos al analizar los datos, utilice la opción /packsymbols:off para deshabilitar la incrustación de los símbolos.|
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Recursos para diseñar aplicaciones accesibles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -18,13 +13,13 @@ ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178287"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761677"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para diseñar aplicaciones accesibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Use los siguientes vínculos para encontrar información sobre las tecnologías 
   
 ## <a name="windows-applications"></a>Aplicaciones para Windows  
   
--   [Tutorial: Crear una aplicación accesible basada en Windows](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) Este tema proporciona instrucciones paso a paso para cumplir los cinco requisitos de accesibilidad del logotipo Certificado para Windows en una aplicación de Windows de ejemplo.  
+-   [Tutorial: Creación de una aplicación basada en Windows accesible](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) en este tema proporciona instrucciones paso a paso para cumplir los cinco requisitos de accesibilidad para el logotipo certificado para Windows en una aplicación de Windows de ejemplo.  
   
 -   **Guidelines for Keyboard User Interface Design (Directrices para el diseño de interfaces de usuario de teclado)**  En este artículo técnico se explica cómo diseñar una interfaz de usuario de aplicación de Windows que permita a los usuarios explorar desde el teclado. Para obtener más información, vea [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
   
@@ -64,6 +59,3 @@ Use los siguientes vínculos para encontrar información sobre las tecnologías 
   
 ## <a name="see-also"></a>Vea también  
  [Características de accesibilidad de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-
