@@ -1,7 +1,6 @@
 ---
 title: Invalidaciones de Help Content Manager
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b73feb967e340f66eb243013add0b650916c956
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e5614f182b08c41a7ec2172fe080560a4f78b439
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961431"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918551"
 ---
 # <a name="help-content-manager-overrides"></a>Invalidaciones de Help Content Manager
 

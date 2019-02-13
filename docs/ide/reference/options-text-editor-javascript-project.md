@@ -1,7 +1,6 @@
 ---
 title: Opciones, Editor de texto, JavaScript, Proyecto
 ms.date: 1/15/2019
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2fc32a173f1c05fc200c9acd9b37ad2307a3a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031817"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936751"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opciones, Editor de texto, JavaScript, Proyecto
 

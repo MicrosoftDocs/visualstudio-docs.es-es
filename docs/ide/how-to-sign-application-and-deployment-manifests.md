@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Firmar manifiestos de implementación y aplicación
+title: Filtrar Firmar manifiestos de implementación y aplicación
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -18,14 +17,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f394acb8ef939b3d550ed0966fe002aab75b6b22
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33afb83fdf680ef2eb1dd51e7b0e4dca8b77c3cb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001961"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916888"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Procedimiento Firmar manifiestos de implementación y aplicación
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Filtrar Firmar manifiestos de implementación y aplicación
 
 Si quiere publicar una aplicación mediante la implementación ClickOnce, los manifiestos de aplicación e implementación deben estar firmados con un par de claves pública y privada mediante la tecnología Authenticode. Puede firmar los manifiestos con un certificado del almacén de certificados de Windows o un archivo de clave.
 

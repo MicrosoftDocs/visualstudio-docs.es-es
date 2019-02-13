@@ -1,7 +1,6 @@
 ---
 title: Opciones, editor de texto, JavaScript, IntelliSense
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fad8ba4b41768246fcd14bd6c3aed8b31c1647b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927679"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938701"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opciones, editor de texto, JavaScript, IntelliSense
 Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para modificar la configuración que afecta al comportamiento de IntelliSense para JavaScript. Puede acceder a la página **IntelliSense** en **Herramientas** > **Opciones**, en la barra de menús. Luego, amplíe **Editor de texto** > **JavaScript** > **IntelliSense**.

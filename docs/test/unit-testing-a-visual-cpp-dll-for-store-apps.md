@@ -1,19 +1,18 @@
 ---
 title: Prueba de un archivo DLL de Visual C++ en aplicaciones para UWP
 ms.date: 02/15/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: b6ab809287bdcaac290328b81b5e9213758f5984
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87cffd39897d0e3122181792409044c6b0aedc99
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986545"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924687"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Cómo probar una DLL de Visual C++
 

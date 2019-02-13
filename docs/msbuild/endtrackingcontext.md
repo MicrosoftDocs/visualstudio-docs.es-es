@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60db5058f3a084a4d24f3b3a1d83e615a9071d8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f380b57b95cfc0601984794bf02ad4ed145bac5
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920259"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853344"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
-Finaliza el contexto de seguimiento actual.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT WINAPI EndTrackingContext();  
-```  
-  
-## <a name="return-value"></a>Valor devuelto  
- Un elemento **HRESULT** con el conjunto de bits **SUCCEEDED** si el contexto de seguimiento ha finalizado.  
-  
-## <a name="requirements"></a>Requisitos  
- **Encabezado**: *FileTracker.h*  
-  
-## <a name="see-also"></a>Vea también  
- [StartTrackingContext](../msbuild/starttrackingcontext.md)
+Finaliza el contexto de seguimiento actual.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT WINAPI EndTrackingContext();
+```
+
+## <a name="return-value"></a>Valor devuelto
+Un elemento **HRESULT** con el conjunto de bits **SUCCEEDED** si el contexto de seguimiento ha finalizado.
+
+## <a name="requirements"></a>Requisitos
+**Encabezado**: *FileTracker.h*
+
+## <a name="see-also"></a>Vea también
+[StartTrackingContext](../msbuild/starttrackingcontext.md)
