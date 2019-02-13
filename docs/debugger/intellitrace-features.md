@@ -17,21 +17,21 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], IntelliTrace
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 2191ed7d6c091b730be9204d70cec79a0c6e5e44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227842"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035242"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Las características de IntelliTrace (C#, Visual Basic, C++)
 
 IntelliTrace le permite registrar eventos y llamadas de método de su aplicación, por lo que puede examinar el estado de la misma (pila de llamadas y valores de variables locales) en distintos puntos de la ejecución. Empiece la depuración como de costumbre: IntelliTrace está activado de forma predeterminada y la información que registra se puede ver en la nueva ventana **Herramientas de diagnóstico** de la pestaña **Eventos**. Seleccione un evento y haga clic en **Activar depuración histórica** para ver la pila de llamadas y las variables locales registradas para este evento.
 
-Para obtener una descripción paso a paso, consulte [Tutorial: Uso de IntelliTrace
+Para obtener una descripción paso a paso, consulte [Tutorial: Uso de IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 IntelliTrace está disponible en la edición Visual Studio Enterprise, pero no en las ediciones Professional o Community.
 
@@ -129,4 +129,4 @@ Al guardar los datos de IntelliTrace en un archivo, se crea un archivo .itrace p
 
 [Experiencia de IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 
-Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716) (Depuración histórica con IntelliTrace en Microsoft Visual Studio Ultimate 2015)
+[Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716) (Depuración histórica con IntelliTrace en Microsoft Visual Studio Ultimate 2015)

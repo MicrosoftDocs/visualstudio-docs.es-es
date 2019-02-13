@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: 8649e862a20e6f6c854a2bbe67b756103c5e68dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54204393"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009061"
 ---
 # <a name="create-custom-data-visualizers"></a>Creación de visualizadores de datos personalizados
  Un *visualizador* forma parte de la [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfaz de usuario del depurador que muestra una variable o un objeto de forma adecuada según su tipo de datos. Por ejemplo, un visualizador HTML interpreta una cadena HTML y muestra el resultado tal como aparecería en una ventana del explorador. Un visualizador de mapa de bits interpreta una estructura de mapa de bits y muestra el gráfico que representa. Algunos visualizadores permiten modificar así como ver los datos.
@@ -86,9 +86,9 @@ Especificar el código del lado depurado mediante el <xref:System.Diagnostics.De
 
  [Tutorial: Escritura de un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
- [Cómo: Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md)  
+ [Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md)  
   
- [Cómo: Prueba y depuración de un visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [Prueba y depuración de un visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
  [Referencia de la API del visualizador](../debugger/visualizer-api-reference.md)  
   

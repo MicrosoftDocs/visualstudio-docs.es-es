@@ -1,26 +1,22 @@
 ---
 title: Ejemplos de | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - sample applications [Visual Studio]
 ms.assetid: 3070fa13-46c7-4252-a1c2-857b4a2c9528
 caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c604684fea431d29c76098a77218e36a63fc770f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b6a899de205fc22940aa0d48f897ea4ecd6f49ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936573"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752343"
 ---
 # <a name="visual-studio-samples"></a>Ejemplos de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +31,7 @@ Puede encontrar ejemplos de Visual Studio en el sitio web [Galería de código d
 |Área|Descripción|
 |----------|-----------------|
 |[Ejemplos de aplicaciones de la Tienda Windows](http://go.microsoft.com/fwlink/?LinkID=255278)|Muestra cómo desarrollar aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].|
-|[Ejemplos de .NET Framework](http://msdn.microsoft.com/en-us/177055f8-4a1f-43e7-aee6-995c196079b1)|Muestra varios aspectos de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] en C# y Visual Basic.|
+|[Ejemplos de .NET Framework](http://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Muestra varios aspectos de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] en C# y Visual Basic.|
 |[Muestras de C++](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)|Muestra cómo usar diversas características de C#.|
 |[Muestras de Visual Basic](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=VB&f%5B0%5D.Text=VB.NET)|Muestra cómo usar diversas características de Visual Basic.|
 |[Muestras de F#](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=F%23&f%5B0%5D.Text=F%23)|Muestra cómo usar diversas características de F#.|
