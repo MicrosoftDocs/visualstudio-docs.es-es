@@ -1,22 +1,22 @@
 ---
-title: Procedimiento Configurar la herencia mediante Object Relational Designer
+title: Filtrar Configurar la herencia mediante Object Relational Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99f353da4b6269ebf9fac425a12dfce5b5917df6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 2a68101b6090a20526088309a441956a68e875e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53923762"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014671"
 ---
-# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedimiento Configurar herencia mediante Object Relational Designer
+# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Filtrar Configurar herencia mediante Object Relational Designer
 El **Object Relational Designer** (**Object Relational Designer**) admite el concepto de herencia de tabla única normalmente implementada en los sistemas relacionales. En la herencia de tabla única, hay una sola tabla de base de datos que contiene campos tanto para la información de elementos primarios como para la información de elementos secundarios. En el caso de datos relacionales, una columna discriminadora contiene el valor que determina la clase a la que pertenece un registro cualquiera.
 
 Por ejemplo, considere un `Persons` tabla que contiene todos los usuarios trabajan en una compañía. Algunas personas son los empleados y otras son los directores. El `Persons` tabla contiene una columna denominada `EmployeeType` que tiene un valor de 1 para directores y el valor de 2 para empleados; ésta es la columna discriminadora. En este escenario, puede crear una subclase de empleados y rellenar la clase únicamente con los registros cuyo `EmployeeType` tiene el valor 2. Puede eliminar también columnas que no se aplican desde cada una de las clases.
