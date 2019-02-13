@@ -1,7 +1,6 @@
 ---
 title: Uso de XAML
 ms.date: 07/17/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0068865d2ab7699a090616c7ce111ea51440868d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 252e9d17ba272dd61af87427ad91f42d2fcd13ee
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981758"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908041"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Diseño de XAML en Visual Studio
 

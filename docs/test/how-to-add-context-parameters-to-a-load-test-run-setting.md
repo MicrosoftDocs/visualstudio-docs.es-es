@@ -9,15 +9,14 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 27ad32dc88253fcbe9be3f6f3aae1b3618c9ae5f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8b7af7b566e874941e72ae3a905ab2c1b58c89ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966990"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907911"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedimiento para agregar parámetros de contexto a los parámetros de ejecución de una prueba de carga
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Filtrar para agregar parámetros de contexto a los parámetros de ejecución de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 

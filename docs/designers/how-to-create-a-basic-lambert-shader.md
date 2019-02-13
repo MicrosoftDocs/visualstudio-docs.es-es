@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Crear un sombreador Lambert básico
+title: Filtrar Crear un sombreador Lambert básico
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce633ef790c3d88d02762369af2abb701cb0bc25
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 595f44403d5dc8062bea86504a74ed0d7e0ee565
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945585"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913670"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Procedimiento Crear un sombreador Lambert básico
+# <a name="how-to-create-a-basic-lambert-shader"></a>Filtrar Crear un sombreador Lambert básico
 
 En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de iluminación que implementa el modelo de iluminación de Lambert clásico.
 

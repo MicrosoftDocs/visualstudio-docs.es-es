@@ -2,7 +2,6 @@
 title: Editar código de Python
 description: Para Python, Visual Studio proporciona IntelliSense enriquecido, fragmentos de código y características de navegación, además de formato, detección de errores y refactorización.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,22 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81430d156330f067f84cdf7fbba1238c098ae406
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036061"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155401"
 ---
 # <a name="edit-python-code"></a>Editar código de Python
 
 Dado que invierte mucho tiempo de desarrollo en el editor de código, la [compatibilidad de Python en Visual Studio](installing-python-support-in-visual-studio.md) proporciona funciones para ayudarle a ser más productivo. Las características incluyen resalte de sintaxis de IntelliSense, finalización automática, ayuda para la firma, invalidaciones de método, búsqueda y navegación.
 
 El editor también está integrado en la ventana **interactiva** de Visual Studio, lo que hace que sea sencillo intercambiar código entre los dos. Vea [Paso 3 del tutorial: Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) y [Uso de la ventana interactiva - Comando Enviar código a Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obtener información detallada.
-
-|   |   |
-|---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Eche un vistazo a un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) para ver una demostración de la edición de código Python (2 minutos 30 segundos).|
 
 Para obtener documentación general sobre la edición de código en Visual Studio, vea [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md). Vea también [Esquematización](../ide/outlining.md), que le ayudará a mantenerse centrado en determinadas secciones del código.
 

@@ -1,7 +1,6 @@
 ---
 title: Pantalla completa y modo de espacio virtual
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -25,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e288c202bbba093738592c5060ee0d3a4f605c88
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943895"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907151"
 ---
-# <a name="how-to-manage-editor-modes"></a>Procedimiento Administrar los modos del editor
+# <a name="how-to-manage-editor-modes"></a>Filtrar Administrar los modos del editor
 
 Puede mostrar el editor de código de Visual Studio en varios modos de visualización.
 

@@ -1,7 +1,6 @@
 ---
 title: 'Paso 7: Agregar componentes de diálogo al formulario'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dde58462d1f9fd985b99a6abf943ee21de51a96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bab093c450a7913ea0f1d3e94b6d04e287c6c539
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982954"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911083"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Paso 7: Agregar componentes de diálogo al formulario
 Para que el programa abra archivos de imagen y para elegir un color de fondo, en este paso agregará un componente <xref:System.Windows.Forms.OpenFileDialog> y un componente <xref:System.Windows.Forms.ColorDialog> al formulario.

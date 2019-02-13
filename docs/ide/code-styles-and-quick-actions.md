@@ -1,7 +1,6 @@
 ---
 title: Preferencias de estilo del código
 ms.date: 03/10/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: f33c1edec4b4093e9157a59618befa2e1175be49
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483996"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923384"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 

@@ -1,7 +1,6 @@
 ---
 title: Instalar agentes y controladores de pruebas
 ms.date: 10/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c0a9078cdbe9ad84b53cd7f667dbd9e3c83d2b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55cff84a4633b3b59d8167c0f460cbd96a98f04c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970492"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912747"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes y controladores de pruebas
 

@@ -2,19 +2,18 @@
 title: Instalación de las Herramientas de R
 description: Se describe cómo instalar las Herramientas de R en Visual Studio 2017 y Visual Studio 2015, incluidas las instalaciones sin conexión.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 9f4c00056c93230d588216ff425dee56d42e0961
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1cfdf0e301ff4c2fdf997824a037eedcc9886081
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921103"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909198"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Cómo instalar Herramientas de R para Visual Studio
 
@@ -30,7 +29,7 @@ En este artículo:
 
 ## <a name="supported-versions-of-visual-studio"></a>Versiones compatibles de Visual Studio
 
-Herramientas de R para Visual Studio (RTVS) es compatible con Windows con las ediciones Community (gratis), Professional y Enterprise de [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) y [Visual Studio 2015 Update 3 (o versiones superiores)](http://go.microsoft.com/fwlink/?LinkId=691129) (descarga directa).
+Herramientas de R para Visual Studio (RTVS) es compatible con Windows con las ediciones Community (gratis), Professional y Enterprise de [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) y [Visual Studio 2015 Update 3 (o versiones superiores)](http://go.microsoft.com/fwlink/?LinkId=691129) (descarga directa).
 
 RTVS no es compatible actualmente con Visual Studio para Mac.
 
