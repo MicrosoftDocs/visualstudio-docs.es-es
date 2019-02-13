@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Crear un sombreador de gradiente basado en geometría
+title: Filtrar Crear un sombreador de gradiente basado en geometría
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d6c11b63202703d52c4be7f9bc4ba8e35764589
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1baaccbe2d7df07900eecbedd385ce8c5a031cc5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019429"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957761"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedimiento Crear un sombreador de degradado basado en geometría
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Filtrar Crear un sombreador de degradado basado en geometría
 
 En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de degradado basado en geometría. Este sombreador escala un valor de color RGB constante según el alto de cada punto de un objeto en el espacio global.
 

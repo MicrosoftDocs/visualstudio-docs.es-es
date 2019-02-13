@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Aplicar un sombreador a un modelo en 3D
+title: Filtrar Aplicar un sombreador a un modelo en 3D
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef5f4f840991d78bc67f1ba32685e49765deaef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 896cc39ae3e9f53d96a30f6485c40afc8259e270
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957408"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909094"
 ---
-# <a name="how-to-apply-a-shader-to-a-3d-model"></a>Procedimiento Aplicar un sombreador a un modelo en 3D
+# <a name="how-to-apply-a-shader-to-a-3d-model"></a>Filtrar Aplicar un sombreador a un modelo en 3D
 
 En este artículo se muestra cómo usar el Editor de modelos para aplicar un sombreador del lenguaje DGSL (Directed Graph Shader Language) a un modelo 3D.
 

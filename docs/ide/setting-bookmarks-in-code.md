@@ -1,7 +1,6 @@
 ---
 title: Establecimiento de marcadores de código
 ms.date: 02/23/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d2b8532e71cd5448b4ea284fdbb36d0bc35738f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6369aab354e3362c3ac3f1d9320203f930497c7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983019"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941925"
 ---
 # <a name="set-bookmarks-in-code"></a>Establecimiento de marcadores de código en Visual Studio
 

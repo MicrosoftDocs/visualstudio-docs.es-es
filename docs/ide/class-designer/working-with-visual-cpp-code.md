@@ -1,7 +1,6 @@
 ---
 title: Trabajar con código de Visual C++ (Diseñador de clases)
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1497730cf7c2b2e9abc17ec6cb82179deebb30d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16dbcbecece0e8ec38e3f38391ca5063e2e3d36c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948055"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950624"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>Trabajar con código de Visual C++ en el Diseñador de clases
 

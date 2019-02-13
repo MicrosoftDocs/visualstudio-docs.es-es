@@ -2,7 +2,6 @@
 title: Plantilla de proyecto web de Django para Python
 description: Visual Studio proporciona una plantilla completa para la creación rápida de aplicaciones web de Django con Python.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 78ec334667f6bdc789bb5b638ca5ea84156c8900
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0848eb7f4ce7894035db06a775c0cb3628970421
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950525"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943030"
 ---
 # <a name="django-web-project-template"></a>Plantilla de proyecto web de Django
 
