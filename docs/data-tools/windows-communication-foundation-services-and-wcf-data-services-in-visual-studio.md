@@ -32,18 +32,18 @@ helpviewer_keywords:
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 677d68aab6f6dfdb39f12ba33002758f61a03a31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847933"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919946"
 ---
-# <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servicios de Windows Communication Foundation y Servicios de datos de WCF en Visual Studio
+# <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servicios de Windows Communication Foundation y Data Services de WCF en Visual Studio
 
 Visual Studio proporciona herramientas para trabajar con Windows Communication Foundation (WCF) y WCF Data Services, las tecnologías de Microsoft para crear aplicaciones distribuidas. En este tema se proporciona una introducción a los servicios desde una perspectiva de Visual Studio. Para obtener la documentación completa, consulte [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).
 
@@ -92,7 +92,7 @@ Una vez creado un cliente WCF, haga referencia al servicio en el código tal com
 
 ## <a name="wcf-tools-in-visual-studio"></a>Herramientas WCF en Visual Studio
 
-Visual Studio proporciona herramientas para ayudarle a crear servicios WCF y clientes de WCF. Para ver un tutorial que demuestra las herramientas, consulte [Tutorial: Crear un servicio WCF sencillo en Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
+Visual Studio proporciona herramientas para ayudarle a crear servicios WCF y clientes de WCF. Para ver un tutorial que demuestra las herramientas, consulte [Tutorial: Crear un servicio WCF sencillo en Windows Forms
 
 ### <a name="create-and-test-wcf-services"></a>Crear y probar los servicios WCF
 
@@ -260,7 +260,7 @@ Para evitar este problema, los tipos en ensamblados de referencia se comparten d
 | [Utilización de las herramientas de desarrollo de WCF](/dotnet/framework/wcf/using-the-wcf-development-tools) | Describe cómo crear y probar los servicios WCF en Visual Studio. |
 | | [Cómo: Adición, actualización o eliminación de una referencia de servicio de datos de WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [Solucionar problemas de referencias de servicio](../data-tools/troubleshooting-service-references.md) | Presenta algunos errores comunes que pueden producirse con las referencias de servicio y cómo evitarlos. |
-| [Depuración de servicios WCF](../debugger/debugging-wcf-services.md) | Describe problemas de depuración comunes y técnicas que puede surgir al depurar los servicios WCF. |
+| [Depurar servicios WCF](../debugger/debugging-wcf-services.md) | Describe problemas de depuración comunes y técnicas que puede surgir al depurar los servicios WCF. |
 | [Tutorial: Creación de una aplicación de datos de n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Contiene instrucciones paso a paso para crear un conjunto de datos con tipo y separar el código de TableAdapter y del conjunto de datos en varios proyectos. |
 | [Configurar referencia de servicio (cuadro de diálogo)](../data-tools/configure-service-reference-dialog-box.md) | Describe los elementos de interfaz de usuario de la **configurar referencia de servicio** cuadro de diálogo. |
 

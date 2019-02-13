@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227985"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231979"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Empezar a depurar aplicaciones multiproceso (C#, Visual Basic, C++)
 Visual Studio proporciona varias herramientas y elementos de interfaz de usuario para ayudar a depurar aplicaciones multiproceso. Este tutorial muestra cómo usar los marcadores de subprocesos, el **pilas paralelas** ventana, el **inspección paralela** ventana puntos de interrupción condicionales y los puntos de interrupción de filtro. Completar este tutorial le permitirá familiarizarse con las características de Visual Studio para depurar aplicaciones multiproceso.
@@ -36,7 +36,7 @@ Estos dos temas proporcionan información adicional sobre el uso de otras herram
 
 - Para usar el **ubicación de depuración** barra de herramientas y la **subprocesos** ventana, consulte [Tutorial: Depurar una aplicación multiproceso](../debugger/how-to-use-the-threads-window.md).
 
-- Para obtener un ejemplo que usa <xref:System.Threading.Tasks.Task> (código administrado) y el runtime de simultaneidad (C++), consulte [Tutorial: Depuración de una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md). Para sugerencias de depuración generales que se aplican a los tipos de aplicaciones multiproceso más, lea ese tema y ésta.
+- Para obtener un ejemplo que usa <xref:System.Threading.Tasks.Task> (código administrado) y el runtime de simultaneidad (C++), consulte [Tutorial: Depuración de una aplicación paralela Para sugerencias de depuración generales que se aplican a los tipos de aplicaciones multiproceso más, lea ese tema y ésta.
   
 En primer lugar, necesitará un proyecto de aplicación multiproceso. A continuación se muestra un ejemplo.  
   
@@ -106,39 +106,37 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,6 +192,8 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
     ```
   
 7.  En el menú **Archivo**, seleccione **Guardar todo**.  
+
+8. (Sólo Visual Basic) En el Explorador de soluciones (panel derecho), haga clic en el nodo del proyecto, elija **propiedades**. En el **aplicación** , modifique la **objeto Startup** a **Simple**.
   
 ## <a name="debug-the-multithreaded-app"></a>Depurar la aplicación multiproceso  
   
@@ -205,8 +205,8 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -214,7 +214,7 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
     Console.WriteLine()
     ```
 
-1. Haga clic en el margen interno izquierdo de la `Thread.Sleep` o `this_thread::sleep_for` instrucción para insertar un nuevo punto de interrupción.  
+1. Haga clic en el margen interno izquierdo de la `Thread.Sleep` o `std::this_thread::sleep_for` instrucción para insertar un nuevo punto de interrupción.  
   
     En el margen interno, un círculo rojo indica que un punto de interrupción está establecido en esta ubicación. 
   
