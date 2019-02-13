@@ -1,7 +1,6 @@
 ---
 title: Búsqueda y uso de extensiones
 ms.date: 01/30/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 766d2e87361ad191b985272a8e1de8a6fa272353
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484087"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919747"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Búsqueda y uso de extensiones de Visual Studio
 

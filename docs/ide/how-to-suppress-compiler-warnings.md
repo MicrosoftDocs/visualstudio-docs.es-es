@@ -1,7 +1,6 @@
 ---
 title: Supresión de las advertencias del compilador para proyectos y paquetes NuGet
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 353cd36f1a45f1d9d63319b4cc951d3033137ac7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b7e9f995c8fc1107da7bc90b230eddc265e6082b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926493"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913137"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Procedimiento Supresión de advertencias del compilador
+# <a name="how-to-suppress-compiler-warnings"></a>Filtrar Supresión de advertencias del compilador
 
 Puede despejar un registro de compilación mediante el filtrado de uno o varios tipos de advertencias del compilador. Por ejemplo, quizá quiera revisar solo parte de los resultados generados al establecer el nivel de detalle del registro de la compilación en **Normal**, **Detallado** o **Diagnóstico**. Para obtener más información sobre el nivel de detalle, vea [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).
 

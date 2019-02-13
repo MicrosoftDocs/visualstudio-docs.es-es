@@ -1,7 +1,6 @@
 ---
 title: Cuadro de diálogo Requisitos previos
 ms.date: 06/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2af20a0a50e9405cf7df2fb97aa38cfa6be5c50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b83a3851c74d97992fa75e9ce533ca707e2115c9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042795"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926000"
 ---
 # <a name="prerequisites-dialog-box"></a>Cuadro de diálogo Requisitos previos
 

@@ -10,15 +10,14 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 49bfce2cd5265ba1747258b14a3f0ef522ee006f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8390808a8174d0abb2dec96beddb473a4fbc0e0b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952488"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932708"
 ---
-# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Procedimiento para agregar conjuntos de contadores personalizados mediante el Editor de pruebas de carga
+# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Filtrar para agregar conjuntos de contadores personalizados mediante el Editor de pruebas de carga
 
 Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva**, se agrega un conjunto de contadores inicial. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga.
 

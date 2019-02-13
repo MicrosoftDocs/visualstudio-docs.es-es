@@ -1,19 +1,18 @@
 ---
 title: Métodos abreviados de teclado
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6755ab33f3d68a4cfdedbd9835fbde62532b504d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e420ed36168e45e067a78a1118b2199981aff3eb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042639"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927573"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Métodos abreviados de teclado de Visual Studio
 

@@ -1,7 +1,6 @@
 ---
 title: Búsqueda de llamadas a un método
 ms.date: 05/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77142ff9f2923ba21507327ad3f6f487b4f895ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ad95d1c48992b8ecac6715db41aa9d85791999bb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960898"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910369"
 ---
 # <a name="view-call-hierarchy"></a>Visualización de la jerarquía de llamadas
 

@@ -1,7 +1,6 @@
 ---
 title: Administrar herramientas externas
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d82a42e83364e43afbe242e93c7f08dbfb27be96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5e73a20cfd50d859cc050f540fa2d84cae874fc9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025805"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907807"
 ---
 # <a name="manage-external-tools"></a>Administrar herramientas externas
 

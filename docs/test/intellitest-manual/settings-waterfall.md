@@ -1,7 +1,6 @@
 ---
 title: Cascada de configuración | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Settings waterfall
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5371900ec439a0d8c736d5437316705b6bfb98cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 966182ca79ffd06e17642e1b24d6e48b8e637efe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934522"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923726"
 ---
 # <a name="settings-waterfall"></a>Cascada de configuración
 

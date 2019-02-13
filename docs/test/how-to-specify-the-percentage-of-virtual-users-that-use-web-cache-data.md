@@ -8,15 +8,14 @@ ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cbbb60ef63158f8724e961007a25d8d8817d59ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08f0bb9fb14c631f3bf1e5545a69663eb060e3e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022968"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956147"
 ---
-# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Procedimiento para especificar el porcentaje de usuarios virtuales que usan datos de caché web
+# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Filtrar para especificar el porcentaje de usuarios virtuales que usan datos de caché web
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba. Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, consulte [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 

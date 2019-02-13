@@ -1,7 +1,6 @@
 ---
 title: Datos privados para los informes de problemas
 ms.date: 06/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ac5c42f91e7dbf4dac310d67fc710f75fc8309
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d3db48578d2b316ddd203316a15536b144cb28cf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986857"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910459"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 

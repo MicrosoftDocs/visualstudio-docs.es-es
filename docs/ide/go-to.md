@@ -1,7 +1,6 @@
 ---
 title: Ir a archivo, ir a símbolo, ir a línea
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, go to
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b06bc4e3bc598f57838d633ccf0713338d5f9179
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 92e82e4570f7df3ab42ed452b0ee8d71ace91901
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934762"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923543"
 ---
 # <a name="find-code-using-go-to-commands"></a>Buscar código mediante comandos Ir a
 
@@ -57,7 +56,7 @@ Prefijo | Iconos | Acceso directo | Descripción
 :-: | - | - | -
 :| ![Icono de línea](media/gotoall-line-icon.png) | **Ctrl**+**G** | Ir al número de línea especificado
 f| ![Icono de archivos](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Ir al archivo especificado
-c| ![Icono de archivos recientes](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Ir al archivo especificado que haya visitado recientemente
+r| ![Icono de archivos recientes](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Ir al archivo especificado que haya visitado recientemente
 m| ![Icono de tipos](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Ir al tipo especificado
 m| ![Icono de miembros](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Ir al miembro especificado
 \#| ![Icono de símbolos](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Ir al símbolo especificado

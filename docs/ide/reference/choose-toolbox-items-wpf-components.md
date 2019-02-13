@@ -1,7 +1,6 @@
 ---
 title: Elegir elementos del cuadro de herramientas, Componentes de WPF
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.chooseitems.wpfcomponents
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98000fda073cf480ad7204912ffa1461c4bdc5ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008769"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928093"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Elegir elementos del Cuadro de herramientas, componentes de WPF
 

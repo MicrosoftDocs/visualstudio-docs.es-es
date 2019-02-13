@@ -10,15 +10,14 @@ ms.author: gewarren
 manager: jillfra
 f1_keywords:
 - vs.performancecenter
-ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: e8ed42160d6bdbcc6b68a1652ff725c7e1d75e3a
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: df1d5b89115e6fa33be09bf41de3b51d4d584d57
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690323"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913007"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimización del rendimiento de Visual Studio
 

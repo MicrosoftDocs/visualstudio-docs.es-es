@@ -2,19 +2,18 @@
 title: Edición de código de R
 description: Visual Studio ofrece una experiencia de edición adaptada a R mientras conserva todas las características y la posibilidad de usar extensiones.
 ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 326627f16bb431b582666cccafb6a511cf815718
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918607"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921242"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Editar código de R en Visual Studio
 
