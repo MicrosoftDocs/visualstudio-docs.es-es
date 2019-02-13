@@ -1,21 +1,20 @@
 ---
 title: Crear plantillas de elemento
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 766df44bc5b793b589120de928f7c21e424e9f69
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003354"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935581"
 ---
-# <a name="how-to-create-item-templates"></a>Procedimiento Crear plantillas de elemento
+# <a name="how-to-create-item-templates"></a>Filtrar Crear plantillas de elemento
 
 En este tema se muestra cómo crear una plantilla de elemento con el **Asistente para exportar plantillas**. Si la plantilla consta de varios archivos, vea [Cómo: Crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md).
 

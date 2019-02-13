@@ -16,13 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-monikerRange: '>= vs-2017'
-ms.openlocfilehash: 3dd6a4d1dc8c17773a509576ad489a7ba3d752ce
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 942007063ffa5ce6f24963067b7707495faa84b9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55090124"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935100"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -383,6 +382,7 @@ Si quiere realizar sugerencias sobre cómo podemos mejorar Visual Studio u obten
 ## <a name="see-also"></a>Vea también
 
 * [Notas de la versión de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
+* [Novedades de Visual Studio 2017 SDK](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk?view=vs-2017)
 * [Novedades de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novedades de C#](/dotnet/csharp/whats-new)
 * [Novedades de Team Foundation Server](/tfs/server/whats-new?view=vsts)

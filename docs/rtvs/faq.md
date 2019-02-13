@@ -2,19 +2,18 @@
 title: Preguntas frecuentes sobre las herramientas de R para Visual Studio
 description: Preguntas más frecuentes sobre R en Visual Studio.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 21b4abf2ddb2bd7a8f026c31bac681eef8c18253
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b67a82a286e3772d87c4cc1ad06a6b8099205c73
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024154"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947767"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

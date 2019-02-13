@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para importar los resultados de pruebas de carga en un repositorio
+title: Filtrar para importar los resultados de pruebas de carga en un repositorio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,14 @@ ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3c264a709b8eef3068be4440c21573b245d356cd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: efbd13bf7ada237dc21bc5b2b6a186b13a52fd06
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923576"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932423"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>Procedimiento para importar los resultados de pruebas de carga en un repositorio
+# <a name="how-to-import-load-test-results-into-a-repository"></a>Filtrar para importar los resultados de pruebas de carga en un repositorio
 
 Cuando se ejecutan pruebas de carga, cualquier información recolectada durante una ejecución se almacena en el repositorio de resultados de pruebas de carga. El repositorio de resultados de pruebas de carga contiene datos de los contadores de rendimiento e información acerca de los errores que se hayan producido. Para obtener más información, vea [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

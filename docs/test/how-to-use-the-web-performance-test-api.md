@@ -9,15 +9,14 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: de64059325e1bbfc9a1c9ffb1adc988522f276ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: add516e9a8f5cb31b85429b1bf41cfa438e8a438
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968195"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949920"
 ---
-# <a name="how-to-use-the-web-performance-test-api"></a>Procedimiento para usar la API de prueba de rendimiento web
+# <a name="how-to-use-the-web-performance-test-api"></a>Filtrar para usar la API de prueba de rendimiento web
 
 Puede escribir código para sus pruebas de rendimiento web. La API de prueba de rendimiento web se utiliza para crear pruebas de rendimiento web automatizadas, complementos de prueba de rendimiento web, complementos de solicitud, solicitudes, reglas de extracción y reglas de validación. Las clases que constituyen estos tipos son las clases principales de esta API. Los otros tipos contenidos en esta API se utilizan para permitir la creación de objetos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. El espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting> sirve para crear pruebas de rendimiento web personalizadas.
 

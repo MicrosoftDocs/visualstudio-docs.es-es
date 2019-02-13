@@ -1,7 +1,6 @@
 ---
 title: Nodos matemáticos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6120975febd9dae5f7cb21e3ab425b1a2389c30
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 43809923b730800cfa71185b136743f3098239e1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984813"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952099"
 ---
 # <a name="math-nodes"></a>Nodos matemáticos
 

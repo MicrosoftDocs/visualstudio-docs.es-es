@@ -2,7 +2,6 @@
 title: Creación de la primera aplicación de consola con Visual Basic
 description: Aprenda a crear una aplicación de consola Hello World sencilla en Visual Studio con Visual Basic, paso a paso.
 ms.date: 12/10/2017
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
@@ -13,18 +12,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ddb96187f270e1a7158d007302ec16b1bb7ad22
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ed05ae0c223ac61db52782b76509d7f42f2b43fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034810"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947372"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Inicio rápido: Creación de la primera aplicación de consola en Visual Studio con Visual Basic
 
 En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, de entre 5 y 10 minutos, creará una sencilla aplicación de Visual Basic que se ejecuta en la consola.
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
 ## <a name="create-a-project"></a>Crear un proyecto
 

@@ -11,15 +11,14 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: e06ed07ba37b6f9c6442c69edab86aaf0f10e9de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: efd430ce9f8bef3ab04e3a7cec91ce3f606cc786
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971106"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930316"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procedimiento para agregar una regla de umbral mediante el Editor de pruebas de carga
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Filtrar para agregar una regla de umbral mediante el Editor de pruebas de carga
 
 Las reglas de umbral de las pruebas de carga comparan un valor de contador de rendimiento con un valor constante o con otro valor de contador de rendimiento.
 

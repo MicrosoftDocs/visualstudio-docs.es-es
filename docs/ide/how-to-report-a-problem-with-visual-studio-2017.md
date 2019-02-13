@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Obtenga información sobre cómo notificar un problema con Visual Studio 2017 a Microsoft, para que podamos diagnosticarlo y corregirlo.
 ms.date: 03/11/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6225fa70bba0f6b044bb77a83ea03bda34591a41
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4e9ce21c0abf365606b1c09aa37c59e4217feb02
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042652"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936933"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Cómo notificar un problema con Visual Studio 2017
 

@@ -1,7 +1,6 @@
 ---
 title: Trabajo con recursos en 3D para juegos y aplicaciones
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d67db39e719dcc90c61c6e3d63e2ad4b9bef80f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1ee4d850250abf0249ce1cccebd3408872b34fd6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011099"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941117"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Trabajar con recursos en 3D para juegos y aplicaciones
 

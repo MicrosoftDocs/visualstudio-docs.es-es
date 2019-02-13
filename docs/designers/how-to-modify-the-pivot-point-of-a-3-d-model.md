@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Modificar el punto de pivote de un modelo en 3D
+title: Filtrar Modificar el punto de pivote de un modelo en 3D
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: gewarren
@@ -9,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870c08210ff16b92cd44be580cad57576f7b7628
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ad14241f5247e7ce16e84cfe26675bde45cb0de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008262"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945487"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Procedimiento Modificar el punto de pivote de un modelo en 3D
+# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Filtrar Modificar el punto de pivote de un modelo en 3D
 
 En este artículo se muestra cómo usar el Editor de modelos para modificar el *punto de pivote* de un modelo 3D. El punto de pivote es el punto en el espacio que define el centro matemático del objeto para la rotación y la escala.
 

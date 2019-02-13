@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Administrar las ventanas del editor
+title: Filtrar Administrar las ventanas del editor
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
@@ -14,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f7aa70a5de2014d2e088d0c56ce7408e40b24ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028485"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949270"
 ---
-# <a name="how-to-manage-editor-windows"></a>Procedimiento Administrar las ventanas del editor
+# <a name="how-to-manage-editor-windows"></a>Filtrar Administrar las ventanas del editor
 
 Puede trabajar con código en varias ubicaciones a la vez. Para ello, divida una ventana del editor o abra varias instancias de ventanas del editor.
 

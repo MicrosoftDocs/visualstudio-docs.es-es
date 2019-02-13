@@ -12,15 +12,14 @@ ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7f43cbd8e9002d026fba632046907dfee969884d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4243bcedea1699ba02b3c3715cab7f61ba62281
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948367"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950024"
 ---
 # <a name="create-and-configure-tableadapters"></a>Crear y configurar TableAdapters
 

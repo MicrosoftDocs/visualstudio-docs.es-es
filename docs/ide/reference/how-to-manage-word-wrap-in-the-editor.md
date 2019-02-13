@@ -1,7 +1,6 @@
 ---
 title: Ajuste de línea
 ms.date: 11/07/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7493a7aebad8a0372d2150f766caf464ec47af6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 88d5b4729ec24ef9594e3c0528a8d09156f23b1b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935910"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926283"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedimiento Administrar el ajuste de línea en el editor
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Filtrar Administrar el ajuste de línea en el editor
 
 Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuando se establece esta opción, se muestra la parte de una línea larga que se extiende más allá del ancho actual de la ventana del editor de código en la siguiente línea. Cuando se desactiva esta opción, por ejemplo, para facilitar el uso de numeración de líneas, puede desplazarse a la derecha para ver los finales de las líneas largas.
 

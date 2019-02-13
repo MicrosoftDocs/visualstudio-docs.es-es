@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Especificación de eventos de compilación (C#)
+title: Filtrar Especificación de eventos de compilación (C#)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9dc28312784ecf8ae403b8a7d94df074d57474b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: af2329789e5eea4c9b0875f2986181f6d672757c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975171"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930469"
 ---
-# <a name="how-to-specify-build-events-c"></a>Procedimiento Especificación de eventos de compilación (C#)
+# <a name="how-to-specify-build-events-c"></a>Filtrar Especificación de eventos de compilación (C#)
 
 Use eventos de compilación para especificar comandos que se ejecutan antes de que se inicie la compilación o después de que esta finalice. Los eventos de compilación se ejecutan solo si se alcanzan correctamente esos puntos en el proceso de compilación.
 

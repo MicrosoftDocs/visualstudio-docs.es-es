@@ -8,15 +8,14 @@ ms.assetid: 417059bf-37ae-4e7a-b9b0-29bd71f1414f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5b685681444e501ef05b76bea22d2152c3296908
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 398cbeab145a470e7b3cfc63312f289a5eb545a9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973686"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927963"
 ---
-# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Procedimiento para especificar el tamaño máximo del archivo de registro de las pruebas de carga
+# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Filtrar para especificar el tamaño máximo del archivo de registro de las pruebas de carga
 
 De forma predeterminada, el tamaño máximo del archivo de registro que se utiliza para las pruebas de carga está establecido en 20 megabytes. Puede cambiar este valor modificando el archivo de configuración asociado con el servicio del controlador.
 

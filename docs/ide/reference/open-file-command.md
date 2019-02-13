@@ -1,7 +1,6 @@
 ---
 title: Abrir archivo (Comando)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - file.openfile
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54fd99ce727065c90da994cc431a77d7e55543c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b76db52534f4c264e065152548d49f9773863a29
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927885"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937934"
 ---
 # <a name="open-file-command"></a>Abrir archivo (Comando)
 

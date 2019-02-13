@@ -1,7 +1,6 @@
 ---
 title: Opciones, Editor de texto, JavaScript, detección de errores
 ms.date: 1/15/2019
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c62970ab6377ddaaf295007fd49ba8be7dd225
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74cd522da1d29ce7f9a58737fc44ecec0909ed1f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026287"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934008"
 ---
 # <a name="options-text-editor-javascript-linting"></a>Opciones, Editor de texto, JavaScript, detección de errores
 

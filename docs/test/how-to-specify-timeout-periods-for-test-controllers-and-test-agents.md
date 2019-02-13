@@ -11,15 +11,14 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1edf37a6c6c22591f0a4f857e9ff38a701b8ddff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5d05ed422f5d08a1a8c7d4f1b2444d9b751aafaf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919921"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929237"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedimiento para especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Filtrar para especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 
 Tanto el controlador de pruebas como el agente de prueba tienen varias configuraciones de tiempo de espera que especifican cuánto tiempo deben esperar las respuestas el uno del otro, o de un origen de datos antes de que se genere un error. En ciertas circunstancias, podría ser necesario editar los valores de tiempo de espera para satisfacer las necesidades de su topología u otros problemas del entorno. Para editar los valores de tiempo de espera, edite el archivo de configuración XML asociado al controlador de pruebas o al agente de prueba, como se explica en los procedimientos siguientes.
 
