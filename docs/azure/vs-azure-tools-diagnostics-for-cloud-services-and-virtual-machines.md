@@ -8,13 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8fbbdfa3bbe76a4b09503f619d7a05c89291e5dc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0dbeccece261a347a2de5218910eddca8b2d715c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55140977"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908731"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales
 Cuando tenga que solucionar problemas de un servicio en la nube o una máquina virtual de Azure, puede usar Visual Studio para configurar más fácilmente Azure Diagnostics. Diagnostics captura los datos del sistema y los datos de registro en las máquinas virtuales y las instancias de máquina virtual que ejecutan el servicio en la nube. Los datos de Diagnostics se transfieren a la cuenta de almacenamiento que elija. Para más información sobre el registro de diagnósticos en Azure, consulte [Habilitación del registro de diagnóstico para Web Apps en Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
