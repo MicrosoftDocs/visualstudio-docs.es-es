@@ -1,7 +1,6 @@
 ---
 title: Herramientas de conjunto de datos
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
@@ -48,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b131e1339c1eab5cac84f55f08779e41c50eedd5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949147"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935035"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Herramientas de conjunto de datos en Visual Studio
 
