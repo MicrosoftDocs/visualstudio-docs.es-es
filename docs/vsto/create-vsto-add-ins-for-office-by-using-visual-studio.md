@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6dfbd0ed4ae41942f3c587d490a4dafaa1f93a7
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ad4ea46d79ea06b83b5456f41d013c70b76e5011
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875893"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156090"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Crear complementos de VSTO para Office con Visual Studio
   Puede usar las herramientas para desarrolladores de Microsoft Office en Visual Studio para crear aplicaciones de .NET Framework que amplíen Office. Estas aplicaciones también se denominan *soluciones de Office*.  
@@ -101,7 +101,7 @@ ms.locfileid: "54875893"
  [Centro para desarrolladores de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=99124)  
  Proporciona recursos adicionales de Visual Studio, como artículos técnicos, vídeos y blogs.  
   
- [Portal para desarrolladores de aplicaciones de negocio de Office](http://go.microsoft.com/fwlink/?LinkId=99125)  
+ [Portal para desarrolladores de aplicaciones empresariales de Office](http://go.microsoft.com/fwlink/?LinkId=99125)  
  Proporciona información acerca de las aplicaciones de negocio de Office (OBA) y cómo se crean mediante el uso de la plataforma de sistema de Office.  
   
  [Sección de desarrollo de Microsoft Office de MSDN library](http://go.microsoft.com/fwlink/?LinkId=149870)  
