@@ -1,7 +1,6 @@
 ---
 title: Crear y ejecutar pruebas unitarias en código administrado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -14,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 12b232bf32be6802ccd82ecad647f2becc95addc
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484204"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922295"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 

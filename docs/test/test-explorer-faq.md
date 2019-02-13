@@ -1,7 +1,6 @@
 ---
 title: Preguntas más frecuentes sobre el Explorador de pruebas
 ms.date: 11/07/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -15,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 8ce8969ecb668d30f87753412dfd53887d050f4c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a251698b7c7a2ff1247bb03902deaa7b27f18a49
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043575"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935126"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
 

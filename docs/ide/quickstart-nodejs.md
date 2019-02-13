@@ -2,7 +2,6 @@
 title: 'Inicio rápido: Uso de Visual Studio para crear su primera aplicación Node.js'
 description: En este tutorial rápido, se crea una aplicación Node.js en Visual Studio.
 ms.date: 06/27/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
 ms.devlang: javascript
@@ -14,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: dd5e16c76e3f1619251a797825e99058d1d6a4d3
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 144e06450b4419b28e1ec2ad2684fd730164df48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690403"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952377"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Inicio rápido: Uso de Visual Studio para crear su primera aplicación Node.js
 

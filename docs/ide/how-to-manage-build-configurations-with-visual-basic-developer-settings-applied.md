@@ -1,7 +1,6 @@
 ---
 title: Administración de configuraciones de compilación con opciones de desarrollador de Visual Basic
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92ff0f0d79657855667c260754bbc4a9857fec83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f4f1ef20a376c0f77f8ecbbea87ad9769870d60
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985856"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949297"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Procedimiento Administración de configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Filtrar Administración de configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
 
 De manera predeterminada, todas las opciones de configuración de compilación avanzadas están ocultas cuando se aplica la configuración de desarrollador de Visual Basic. En este artículo se explica cómo habilitar manualmente la configuración de compilación.
 

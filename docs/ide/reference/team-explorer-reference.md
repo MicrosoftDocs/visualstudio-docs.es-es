@@ -1,17 +1,16 @@
 ---
 title: Referencia de Team Explorer
 ms.date: 12/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 063c002b77761a14bf6a0bae8452b7ff28bd1b99
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918746"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946280"
 ---
 # <a name="team-explorer-reference"></a>Referencia de Team Explorer
 

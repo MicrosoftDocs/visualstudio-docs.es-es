@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Especificación de eventos de compilación (Visual Basic)
+title: Filtrar Especificación de eventos de compilación (Visual Basic)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e900f410c7484a403b8a24996147af5ff5c2edb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e07081d8b02e4f884ae7ec983e4c97dcb8bfe672
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069270"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938740"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Procedimiento Especificación de eventos de compilación (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Filtrar Especificación de eventos de compilación (Visual Basic)
 
 Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts, macros u otras acciones como parte del proceso de compilación. Los eventos anteriores a la compilación se producen antes de la compilación; los eventos posteriores a la compilación se producen después de la compilación.
 

@@ -1,7 +1,6 @@
 ---
 title: Diseñador de sombras
 ms.date: 09/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ce5bb964b3d774a7030bfeb1909d8e9042de69
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043562"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940352"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 

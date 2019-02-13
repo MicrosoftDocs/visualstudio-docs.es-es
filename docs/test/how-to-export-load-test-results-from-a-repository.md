@@ -11,15 +11,14 @@ ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ecb9a41928fecdfb89ac6969abaa234d00be3d7a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7bc496c4f6a445ffd43e992302457bdb92f3239a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938651"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949868"
 ---
-# <a name="how-to-export-load-test-results-from-a-repository"></a>Procedimiento para exportar resultados de pruebas de carga desde un repositorio
+# <a name="how-to-export-load-test-results-from-a-repository"></a>Filtrar para exportar resultados de pruebas de carga desde un repositorio
 
 Cuando se ejecutan pruebas de carga, cualquier información recolectada durante una ejecución se almacena en el repositorio de resultados de pruebas de carga. El repositorio de resultados de pruebas de carga contiene datos de los contadores de rendimiento e información acerca de los errores que se hayan producido. Para obtener más información, vea [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

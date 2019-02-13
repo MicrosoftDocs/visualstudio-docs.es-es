@@ -2,19 +2,18 @@
 title: Áreas de trabajo de R
 description: Describe cómo controlar dónde se ejecuta el código de R mediante áreas de trabajo de Visual Studio.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 897b5b82b00235404c599f77b8909b007fc80bb8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987692"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948152"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Controlar dónde se ejecuta el código de R con áreas de trabajo
 

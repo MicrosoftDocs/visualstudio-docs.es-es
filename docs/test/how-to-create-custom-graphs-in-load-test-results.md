@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para crear gráficos personalizados en los resultados de pruebas de carga
+title: Filtrar para crear gráficos personalizados en los resultados de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,14 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8fd80a4d7cbfeb7cf79ae3dddad9aa1da367fd87
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a03d16f74623d935e8f4f09b0f397672ad226487
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992781"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932420"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procedimiento para crear gráficos personalizados en los resultados de pruebas de carga
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Filtrar para crear gráficos personalizados en los resultados de pruebas de carga
 
 puede diseñar gráficos que muestren información específica sobre los resultados de pruebas de carga. Los gráficos personalizados se diseñan especificando los contadores de la prueba de carga que se van a mostrar en el gráfico.
 

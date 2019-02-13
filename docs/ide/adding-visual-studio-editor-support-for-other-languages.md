@@ -14,15 +14,14 @@ ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: d2eafb2153ec900754a4d1c150612200f04e47f7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1e368d22a876ddb29770416ba5bbbb2a7995d576
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55071038"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950584"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 
