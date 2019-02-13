@@ -14,15 +14,14 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 573019483f1c7c616f8bdf61286c46f76458354f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031297"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927055"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referencias de servicio
 
@@ -48,7 +47,7 @@ Para corregir este error:
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Error al acceder a un servicio a través de un escritorio remoto
 
-Cuando un usuario accede a un servicio WCF hospedado en Web a través de una conexión a escritorio remota y el usuario no tiene permisos administrativos, se usa la autenticación NTLM. Si el usuario no tiene permisos administrativos, el usuario puede recibir el mensaje de error siguiente: "La solicitud HTTP no está autorizada con el esquema de autenticación de cliente 'Anónimo'. El encabezado de autenticación recibido del servidor era 'NTLM'."
+Cuando un usuario accede a un servicio WCF hospedado en Web a través de una conexión a escritorio remota y el usuario no tiene permisos administrativos, se usa la autenticación NTLM. Si el usuario no tiene permisos administrativos, el usuario puede recibir el siguiente mensaje de error: "la solicitud HTTP no está autorizada con el esquema de autenticación de cliente 'Anónimo'. El encabezado de autenticación recibido del servidor era 'NTLM'."
 
 Para corregir este error:
 
@@ -83,7 +82,7 @@ Para corregir este error, tendrá que volver a crear el proyecto de servicio:
 
 4.  Cargue el proyecto de servicio WCF.
 
-5.  En el **Configuration Manager** cuadro de diálogo, establezca el **configuración de soluciones activas** a **depurar**. Para obtener más información, vea [Cómo: crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).
+5.  En el **Configuration Manager** cuadro de diálogo, establezca el **configuración de soluciones activas** a **depurar**. Para obtener más información, consulte [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).
 
 6.  En **el Explorador de soluciones**, seleccione el proyecto de servicio WCF.
 

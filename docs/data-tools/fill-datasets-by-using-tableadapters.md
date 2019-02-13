@@ -17,15 +17,14 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b069e1ed40c4bd110cba87886ea21ea90a96774b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006169"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937999"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Rellenar conjuntos de datos mediante TableAdapters
 
