@@ -1,7 +1,6 @@
 ---
 title: Opciones, editor de texto, XML y formato
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Formatting
@@ -9,12 +8,12 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 23fcfe1093d2100034f248fa06db95feb1975bca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55032324"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943550"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opciones, editor de texto, XML y formato
 

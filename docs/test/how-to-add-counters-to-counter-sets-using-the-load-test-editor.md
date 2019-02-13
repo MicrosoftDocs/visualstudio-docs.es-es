@@ -10,15 +10,14 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 29ca2518e56adf95d11fcaf750d8ddd9aa15a3f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 539d56d4adaa0cf831bde96ccd280fd03750b89f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916519"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970535"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Procedimiento Agregar contadores a conjuntos de contadores mediante el Editor de pruebas de carga
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Filtrar Agregar contadores a conjuntos de contadores mediante el Editor de pruebas de carga
 
 Cuando se crea una prueba de carga con el **Asistente para prueba de carga**, se agrega un conjunto inicial de contadores. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga. Para más información, consulte [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 

@@ -1,21 +1,20 @@
 ---
 title: Modo Mapa y modo Barra de la barra de desplazamiento
 ms.date: 09/25/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3189bf2c87b6996cfd11a42a05ee9612d79bee38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77f7db396b814eb9163c055b8fadb8793432acee
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965778"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948361"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>Procedimiento Personalizar la barra de desplazamiento
+# <a name="how-to-customize-the-scroll-bar"></a>Filtrar Personalizar la barra de desplazamiento
 
 Al trabajar con archivos de código largo, puede ser difícil llevar la cuenta de todo lo que está en el archivo. Puede personalizar la barra de desplazamiento del editor de código para tener una visión general de lo que sucede en el código.
 
