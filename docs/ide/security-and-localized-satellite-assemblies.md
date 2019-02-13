@@ -1,7 +1,6 @@
 ---
 title: Seguridad y ensamblados satélite localizados
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - key pairs for strong-named assemblies
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9938398f0a4f9c81e26b3ddb3c0754e56a31a286
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b33f890212cd3e310dc58a436b8674d20b81c453
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040274"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933124"
 ---
 # <a name="security-and-localized-satellite-assemblies"></a>Seguridad y ensamblados satélite localizados
 

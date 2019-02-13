@@ -9,13 +9,12 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: e97525416433fcbc1ca03a4801aa17ffc7b2fa04
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 411e0a83b180014ffb3a896887c3798d57ffc635
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932446"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938012"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edición de modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba
 

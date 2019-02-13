@@ -1,7 +1,6 @@
 ---
 title: 'Tutorial: Creación de una aplicación'
 ms.date: 09/25/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adf3ef6be32b36d0bb033486dfb846c55c1fad34
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31806b05dc088da2e4cb5920f28a2e4cd04f0053
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926685"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954132"
 ---
 # <a name="walkthrough-build-an-application"></a>Tutorial: Creación de una aplicación
 

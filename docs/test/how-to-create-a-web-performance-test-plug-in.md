@@ -11,15 +11,14 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 34e9358dbe84f93e107a28298e6657df801ea6f6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6a9b5ec7b0a4231297925ab8b487ec3f529ddaef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938950"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955107"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Procedimiento para crear un complemento de prueba de rendimiento web
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Filtrar para crear un complemento de prueba de rendimiento web
 
 Los complementos de pruebas de rendimiento web permiten aislar y reutilizar código fuera de las principales instrucciones declarativas de la prueba de rendimiento web. Un complemento de prueba de rendimiento web personalizado ofrece un modo de llamar a código cuando se ejecuta la prueba de rendimiento web. El complemento de prueba de rendimiento web se ejecuta una vez por cada iteración de la prueba. Además, si invalida los métodos PreRequest o PostRequest en el complemento de pruebas, esos complementos de solicitud se ejecutarán antes o después de cada solicitud, respectivamente.
 

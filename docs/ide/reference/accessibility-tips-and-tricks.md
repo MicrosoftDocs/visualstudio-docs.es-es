@@ -2,7 +2,6 @@
 title: Sugerencias y trucos de accesibilidad de Visual Studio
 description: Obtenga más información sobre sugerencias y trucos que pueden ayudar a que el entorno de desarrollo integrado (IDE) de Visual Studio sea más accesible para todos los usuarios, incluidas las personas con discapacidades.
 ms.date: 09/15/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90a9ba0da2ee8c77b66d147c9af5fa560f50f3a0
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 8fddaedca2e1e1728916a2e12ea9d9538081be96
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484139"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954054"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de accesibilidad de Visual Studio
 

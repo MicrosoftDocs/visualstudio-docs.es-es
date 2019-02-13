@@ -1,8 +1,7 @@
 ---
-title: Procedimiento Uso exclusivo del teclado
+title: Filtrar Uso exclusivo del teclado
 description: Obtenga información sobre cómo usar combinaciones de teclas de método abreviado predeterminadas para facilitar la navegación y codificación en el entorno de desarrollo integrado (IDE) de Visual Studio.
 ms.date: 08/22/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -17,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9f82d9b19d1a256a9fb3e8fa8671025ee267ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fad50ea0a2d37d04edb12830ecb195990c508fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981498"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921424"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Procedimiento Uso exclusivo del teclado
+# <a name="how-to-use-the-keyboard-exclusively"></a>Filtrar Uso exclusivo del teclado
 
 > [!TIP]
 > Para más información sobre las actualizaciones de accesibilidad recientes, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).

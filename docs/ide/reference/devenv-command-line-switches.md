@@ -1,7 +1,6 @@
 ---
 title: Modificadores de línea de comandos para Devenv
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bc159ffb4fe330f52cf8364fc9f0d07b4bc5979
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016205"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908470"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 

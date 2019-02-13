@@ -2,19 +2,18 @@
 title: Administrador de paquetes para R
 description: Describe cómo usar el administrador de paquetes de R en Visual Studio para instalar y administrar paquetes de R.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 966a05e0b339409a5dc4df247b4ea2101a8a768d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d35bfd45e862912ff78ae600eed01ce8dc002493
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922852"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931590"
 ---
 # <a name="package-manager"></a>Administrador de paquetes
 

@@ -1,7 +1,6 @@
 ---
 title: Crear plantillas de varios proyectos
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -10,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b1470620ce6640b3a287a5d86fc6922597258b3
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 5a596d37d4446332461709cb6737d4f526e9b02e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424219"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970886"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Filtrar Crear plantillas de varios proyectos
 

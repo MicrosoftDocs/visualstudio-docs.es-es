@@ -9,15 +9,14 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: a2fd63e80baaca6363db26dfdfe65e7ec9367685
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e022eec099682581f244ad426500a512c63035d4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929171"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936166"
 ---
-# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Procedimiento para seleccionar los parámetros de ejecución de una prueba de carga que se van a usar desde la línea de comandos
+# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Filtrar para seleccionar los parámetros de ejecución de una prueba de carga que se van a usar desde la línea de comandos
 
 Una prueba de carga puede incluir *parámetros de ejecución*, que son propiedades que afectan a la manera en que se ejecuta una prueba de carga. Los parámetros de ejecución están organizados por categorías en la ventana **Propiedades**. Cuando se ejecuta una prueba de carga, utiliza el parámetro de ejecución que actualmente está definido como activo.
 

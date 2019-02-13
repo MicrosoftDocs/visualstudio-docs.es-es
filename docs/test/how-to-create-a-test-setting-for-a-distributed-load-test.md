@@ -8,15 +8,14 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 37910ab925265a70d8d3b7e96f1b0f07dc698745
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f8cb4c3c2cba9f7734aa50c95f28bb6cef6bcba
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932641"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928886"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procedimiento Crear una configuración de pruebas para una prueba de carga distribuida
+# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Filtrar Crear una configuración de pruebas para una prueba de carga distribuida
 
 Establezca la *configuración de pruebas* de sus pruebas de carga para que pueda distribuir dichas pruebas entre varias máquinas por medio de agentes de prueba y controladores de pruebas. También puede establecer la configuración de pruebas para usar *adaptadores de datos de diagnóstico*, que especifican los tipos de datos que se van a recopilar o cómo afectan a los equipos de pruebas cuando se ejecutan las pruebas de carga desde Visual Studio.
 

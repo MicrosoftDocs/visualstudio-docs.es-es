@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para crear un adaptador de datos de diagnóstico
+title: Filtrar para crear un adaptador de datos de diagnóstico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,14 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 57c0ac315aa7ca24d5fbd95bd67b99f49a108d92
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990319"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914024"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedimiento Crear un adaptador de datos de diagnóstico
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>Filtrar Crear un adaptador de datos de diagnóstico
 
 Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de clases mediante Visual Studio y, luego, agregar a la biblioteca de clases las API del adaptador de datos de diagnóstico proporcionadas por Visual Studio Enterprise. Al administrar los eventos que se generan durante la ejecución de pruebas, envíe la información que quiera como una secuencia o un archivo al elemento <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> proporcionado por el marco de trabajo. Las secuencias o los archivos enviados a <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> se almacenan como datos adjuntos a los resultados de pruebas cuando una prueba finaliza. Si crea un error a partir de estos resultados de pruebas o al usar [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], los archivos también se vinculan al error.
 

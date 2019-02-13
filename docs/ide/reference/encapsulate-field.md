@@ -1,7 +1,6 @@
 ---
 title: Refactorización de un campo a una propiedad
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b0ccda198cede5f7f4f3094605043eec4defba2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9030fd2ae85d12760d6f6a12be54492f3c14e12b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932251"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911279"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactorización de encapsulamiento de un campo
 

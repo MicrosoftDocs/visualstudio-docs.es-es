@@ -1,7 +1,6 @@
 ---
 title: 'Tutorial: Creación de un entorno de compilación para varios equipos'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d6aea526494e2adfd8151497f8b8b01f3f5c07
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98c93f193a17c8581694079ce0c9d7add0341bd1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038388"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925987"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Tutorial: Creación de un entorno de compilación para varios equipos
 

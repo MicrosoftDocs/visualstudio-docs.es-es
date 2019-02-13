@@ -3,7 +3,6 @@ title: Uso de Visual Studio para crear la primera aplicación de consola de C#
 titleSuffix: ''
 description: Obtenga información sobre cómo crear una aplicación de consola Hola mundo sencilla en Visual Studio con C#, paso a paso.
 ms.date: 09/21/2018
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
@@ -14,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ec3adbd0a8c8d6a4e37879295b040b3f91e66bd
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 12a08aa0e7509d04b522b74362347bc996e02946
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690184"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923739"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación de consola de C#
 
