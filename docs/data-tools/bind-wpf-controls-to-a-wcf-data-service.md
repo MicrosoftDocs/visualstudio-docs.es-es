@@ -13,15 +13,14 @@ ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1a84a9a1a8f0a7d30aafc1daa7a0a669674b021e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918025"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909692"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles de WPF a un servicio de datos de WCF
 
@@ -79,7 +78,7 @@ Iniciar este tutorial creando un proyecto para un servicio de datos de WCF:
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Crear un Entity Data Model para el servicio
 
-Para exponer datos a una aplicación mediante el uso de un servicio de datos de WCF, debe definir un modelo de datos para el servicio. El servicio de datos de WCF admite dos tipos de modelos de datos: Entity Data Model y modelos de datos personalizados que se definen mediante objetos de Common Language Runtime (CLR) que implementan la interfaz <xref:System.Linq.IQueryable%601>. En este tutorial, se crea un Entity Data Model para el modelo de datos.
+Para exponer datos a una aplicación mediante el uso de un servicio de datos de WCF, debe definir un modelo de datos para el servicio. El servicio de datos de WCF admite dos tipos de modelos de datos: Entity Data Model y modelos de datos personalizados que se definen mediante objetos de common language runtime (CLR) que implementan la <xref:System.Linq.IQueryable%601> interfaz. En este tutorial, se crea un Entity Data Model para el modelo de datos.
 
 1. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
@@ -230,7 +229,7 @@ Crear controles que muestren registros de clientes, arrastrando el `SalesOrderHe
 
 Utilice el objeto de proxy de servicio para cargar los datos de ventas desde el servicio. A continuación, asigne los datos devueltos al origen de datos para el <xref:System.Windows.Data.CollectionViewSource> en la ventana de WPF.
 
-1. En el diseñador, para crear el `Window_Loaded` controlador de eventos, haga doble clic en el texto que dice: MainWindow()
+1. En el diseñador, para crear el `Window_Loaded` controlador de eventos, haga doble clic en el texto que dice: **MainWindow**.
 
 2. Reemplace el controlador de evento con el código siguiente: Asegúrese de reemplazar la dirección *localhost* en este código por la dirección del host local de su equipo de desarrollo.
 
@@ -306,7 +305,7 @@ Una vez completado este tutorial, puede realizar las siguientes tareas relaciona
 
 - Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para enlazar controles WPF a otros tipos de orígenes de datos. Para obtener más información, consulte [WPF enlazar controles a un conjunto de datos](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-- Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para mostrar datos relacionados (es decir, datos en una relación primario-secundario) en controles WPF. Para obtener más información, vea [Tutorial: Visualización de datos relacionados en una aplicación de WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para mostrar datos relacionados (es decir, datos en una relación primario-secundario) en controles WPF. Para obtener más información, consulte [Tutorial: mostrar datos relacionados en una aplicación WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Vea también
 

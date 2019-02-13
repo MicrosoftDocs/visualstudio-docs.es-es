@@ -12,15 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: cf68127d875ba4c785f10319cabdd96a3c11adc2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 841620330c10bae3cbced7710930af8c72456c31
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996200"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943784"
 ---
 # <a name="upgrade-mdf-files"></a>Actualizar archivos .mdf
 
@@ -70,7 +69,7 @@ Antes de actualizar una base de datos, tenga en cuenta los siguientes criterios:
 
         -   Para usar una versión específica: `(localdb)\ProjectsV12` o `(localdb)\ProjectsV13`, donde V12 es LocalDB 2014 y V13 es LocalDB 2016.
 
-    -   **Adjuntar un archivo de base de datos**: La ruta de acceso física de la principal *.mdf* archivo.
+    -   **Adjuntar un archivo de base de datos**: la ruta de acceso física de la principal *.mdf* archivo.
 
     -   **Nombre lógico**: el nombre que desea usar con el archivo.
 
