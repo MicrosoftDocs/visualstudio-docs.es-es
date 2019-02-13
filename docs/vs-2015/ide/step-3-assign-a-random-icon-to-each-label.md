@@ -1,25 +1,20 @@
 ---
 title: 'Paso 3: Asignar un icono aleatorio a cada etiqueta | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8ce8047cbdf6d487a1b4ff00ae99c617a9548fca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 993f6533a5d654ab183fdee587f4968d7bff8c4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298784"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799672"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Paso 3: Asignar un icono aleatorio a cada etiqueta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Si los iconos aparecen en las mismas celdas en todas las partidas, el juego no p
   
      La primera línea convierte la variable `control` en una etiqueta denominada `iconLabel`. La línea siguiente es una instrucción `if` que comprueba que la conversión ha funcionado. Si la conversión funciona, se ejecutan las instrucciones de la instrucción `if`. (Es posible que recuerde de los tutoriales anteriores que la instrucción `if` se utiliza para evaluar cualquier condición que se especifique.) La primera línea de la instrucción `if` crea una variable denominada `randomNumber` que contiene un número aleatorio que se corresponde con uno de los elementos de la lista de iconos. Para ello, utiliza el método `Next` del objeto de `Random` que creó anteriormente. El método `Next` devuelve el número aleatorio. Esta línea también utiliza la propiedad `Count` de la lista `icons` para determinar el intervalo en el que se elige el número aleatorio. La línea siguiente asigna uno de los elementos de la lista de iconos a la propiedad `Text` de la etiqueta. La línea comentada se explica más adelante en este tema. Finalmente, la última línea de la instrucción `if` quita de la lista el icono agregado al formulario.  
   
-     Recuerde que, si no está seguro de qué hace una parte del código, puede situar el puntero del mouse sobre un elemento y consultar la información sobre herramientas que aparece. También puede avanzar por cada línea de código mientras se ejecuta el programa con el depurador de Visual Studio. Para más información, vea [How Do I: Step with The Debugger in Visual Studio?](http://msdn.microsoft.com/vstudio/ee672313.aspx) (Cómo recorrer con el depurador el Visual Studio) o [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md).  
+     Recuerde que, si no está seguro de qué hace una parte del código, puede situar el puntero del mouse sobre un elemento y consultar la información sobre herramientas que aparece. También puede avanzar por cada línea de código mientras se ejecuta el programa con el depurador de Visual Studio. Vea [Cómo: ¿Paso con el depurador de Visual Studio? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) o [desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md) para obtener más información.  
   
 3.  Para rellenar el tablero de juego de iconos, debe llamar al método `AssignIconsToSquares()` en cuanto el programa se inicie. Si usa Visual C#, agregue una instrucción justo debajo de la llamada al método `InitializeComponent()` en el `Form1`*constructor*, de modo que el formulario llame al nuevo método para que se establezca antes de mostrarse. A los constructores se les llama cuando se crea un nuevo objeto, como una clase o struct. Para más información, vea [Constructores (Guía de programación de C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) o [Utilizar constructores y destructores](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) en Visual Basic.  
   
@@ -90,6 +85,3 @@ Juego de formar parejas con iconos aleatorios
 -   Para ir al siguiente paso del tutorial, vea [Paso 4: Agregar un controlador de eventos Click a cada etiqueta](../ide/step-4-add-a-click-event-handler-to-each-label.md).  
   
 -   Para volver al paso anterior del tutorial, vea [Paso 2: Agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
-
-
-

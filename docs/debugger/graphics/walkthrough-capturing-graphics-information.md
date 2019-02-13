@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Captura de información de gráficos | Microsoft Docs'
+title: 'Tutorial: Capturar información de gráficos | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424

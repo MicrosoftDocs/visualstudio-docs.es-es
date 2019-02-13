@@ -1,26 +1,21 @@
 ---
 title: Crear una prueba de IU codificada controlada por datos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
 ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 71c08c78d67f65ec69a982ce431a64ec1c620d27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932629"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755375"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -210,7 +205,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
    **Orientación**  
   
-   Para obtener más información, consulte [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: prueba interna](http://go.microsoft.com/fwlink/?LinkID=255188) y [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   Para obtener más información, consulte [pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188) y [pruebas para entrega continua con Visual Studio 2012 – capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Preguntas y respuestas  
   
@@ -262,6 +257,3 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)   
  [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

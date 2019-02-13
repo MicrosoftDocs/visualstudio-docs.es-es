@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especificar ubicaciones del archivo de símbolos desde la línea de comandos | Microsoft Docs
+title: 'Cómo: Especificar ubicaciones del archivo de símbolos desde la línea de comandos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,7 +16,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54776183"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedimiento Especificar ubicaciones del archivo de símbolos desde la línea de comandos
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Cómo: Especificar ubicaciones del archivo de símbolos desde la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para mostrar información de símbolos como nombres de función y números de línea, la herramienta de línea de comandos VSPerfReport requiere acceso a los archivos de símbolos (.pdb) de los componentes que generan perfiles y los archivos de sistema de Windows. Los archivos de símbolos se crean cuando se compila un componente. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport busca archivos de símbolos automáticamente en las siguientes ubicaciones:  
@@ -38,7 +38,7 @@ Para mostrar información de símbolos como nombres de función y números de l�
   También puede utilizar ambos métodos.  
   
 > [!NOTE]
->  Si [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] está instalado en el equipo local, probablemente ya se ha especificado una ubicación de los archivos de símbolos de Windows. Para obtener más información, vea [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md) Todavía debe configurar VSPerfReport para utilizar la ubicación y el servidor tal como se describe más adelante en este tema.  
+>  Si [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] está instalado en el equipo local, probablemente ya se ha especificado una ubicación de los archivos de símbolos de Windows. Para obtener más información, consulte [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md). Todavía debe configurar VSPerfReport para utilizar la ubicación y el servidor tal como se describe más adelante en este tema.  
   
 ## <a name="specifying-windows-symbol-files"></a>Especificar archivos de símbolos de Windows  
   

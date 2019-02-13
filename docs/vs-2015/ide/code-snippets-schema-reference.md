@@ -1,14 +1,9 @@
 ---
 title: Referencia de esquemas de fragmentos de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
 - snippets [Visual Studio], schema reference
@@ -18,13 +13,13 @@ ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5c62d8a65b1015029f183ea2b617dfe77f9b4f05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188142"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753568"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -666,6 +661,3 @@ is a great color. I love Blue.
 ## <a name="see-also"></a>Vea también  
  [Fragmentos de código](../ide/code-snippets.md)   
  [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
-
-
-

@@ -41,7 +41,7 @@ En Visual Studio puede usar la configuración **Opciones avanzadas para guardar/
   
 - NEL: Línea siguiente, carácter Unicode 0085  
   
-- LS: Separador de línea, carácter Unicode 2028  
+- LS: Separador de líneas, carácter Unicode 2028  
   
 - PS: Separador de párrafo, carácter Unicode 2029  
   

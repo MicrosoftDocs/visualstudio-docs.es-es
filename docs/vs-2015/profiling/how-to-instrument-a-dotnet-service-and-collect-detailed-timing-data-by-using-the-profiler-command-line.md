@@ -1,25 +1,20 @@
 ---
 title: 'Cómo: Instrumentar un servicio .NET y recopilar datos detallados de control de tiempo utilizando la línea de comandos del generador de perfiles | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 9f73593a-69a7-41b7-a21c-81d3ab0eb8fe
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc95a776713876f559bf3d72b50dc6f24e055dc8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7931341080fbb2d2a98b695e5a864365c7bf6784
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737655"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766437"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Cómo: Instrumentar un servicio .NET y recopilar datos detallados de control de tiempo utilizando la línea de comandos del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,6 +116,3 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 ## <a name="see-also"></a>Vea también  
  [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)   
  [Vistas de datos del método de instrumentación](../profiling/instrumentation-method-data-views.md)
-
-
-

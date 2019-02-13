@@ -1,14 +1,9 @@
 ---
 title: Tareas de MSBuild específicas de Visual C++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 05410f0c-7356-4692-bc00-20664421c9ff
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1da9bdb5c181c9fd935987d629f08af1505f0501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c7bebf38462e7ca6d979e22a962f7872a7f764b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246160"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790303"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Tareas de MSBuild específicas de Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Descripción|  
 |-----------|-----------------|  
 |[Tarea BscMake](../msbuild/bscmake-task.md)|Ajusta la herramienta Utilidad de mantenimiento de información de examen de Microsoft (bscmake.exe).|  
 |[Tarea CL](../msbuild/cl-task.md)|Incluye la herramienta compilador de Visual C++, cl.exe.|  
@@ -60,6 +55,3 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
 |[Referencia de MSBuild](../msbuild/msbuild-reference.md)|Describe los elementos del sistema MSBuild.|  
 |[Tareas](../msbuild/msbuild-tasks.md)|Describe tareas, que son unidades de código que se pueden combinar para generar una compilación.|  
 |[Escribir tareas](../msbuild/task-writing.md)|Describe cómo se crea una tarea.|
-
-
-

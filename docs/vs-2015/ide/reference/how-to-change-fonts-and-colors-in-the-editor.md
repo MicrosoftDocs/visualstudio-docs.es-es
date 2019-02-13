@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Cambiar las fuentes y los colores del editor | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Cambiar fuentes y colores en el Editor | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - editors, fonts
 - text, color
@@ -19,13 +14,13 @@ ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7fb415c68884b2486d0bd45559530f1a36c90bfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229325"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799113"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Cómo: Cambiar las fuentes y los colores del editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Puede cambiar el nombre de fuente predeterminado, ajustar el tamaño de fuente y
 -   Las opciones **Primer plano del elemento**, **Fondo del elemento** y **Negrita** pueden establecerse para cada tipo de elemento de texto. Por ejemplo, si cambia los colores y selecciona **Negrita** para **Comentario** y **Marcadores**, otros tipos de elementos de texto no se verán afectados.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>Para cambiar el nombre de fuente predeterminado, el tamaño y los colores  
   
@@ -64,6 +59,3 @@ Puede cambiar el nombre de fuente predeterminado, ajustar el tamaño de fuente y
  [Editor de texto, Opciones (cuadro de diálogo)](../../ide/reference/text-editor-options-dialog-box.md)   
  [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md)   
  [Cómo: Cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-

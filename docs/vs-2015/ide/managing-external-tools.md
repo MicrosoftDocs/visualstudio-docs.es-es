@@ -1,14 +1,9 @@
 ---
-title: Administrar herramientas externas | Documentos de Microsoft
-ms.custom: ''
+title: Administrar herramientas externas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
@@ -61,13 +56,13 @@ ms.assetid: f382fd40-a98f-4934-8c9a-5aeae881acde
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bf8e00635ff76e9e4ccfc4cbedbafabe8b0718dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763328"
 ---
 # <a name="managing-external-tools"></a>Administrar herramientas externas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,14 +78,14 @@ Se puede llamar a herramientas externas desde Visual Studio. Algunas herramienta
   
 3.  Herramienta de seguimiento de ATL/MFC: muestra mensajes de seguimiento de depuración en los orígenes ATL y MFC.  
   
-4.  Dotfuscator y Analytics de PreEmptive: protege los programas de .NET frente a técnicas de ingeniería inversa.  
+4.  PreEmptive Dotfuscator y Analytics: Protege los programas de .NET frente a ingeniería inversa.  
   
-5.  SPY++: muestra procesos, subprocesos, ventanas y mensajes de ventana de forma gráfica.  
+5.  SPY++ Muestra gráficamente los procesos, subprocesos, windows y los mensajes de ventana.  
   
-6.  Editor de configuración de servicios WCF: permite crear y modificar opciones de configuración para servicios WCF.  
+6.  Editor de configuración de servicios &WCF Permite crear y modificar la configuración para los servicios WCF.  
   
 > [!WARNING]
->  Puede que aparezca una lista diferente de herramientas externas, según la edición de Visual Studio que tenga instalada y el perfil de configuración que haya aplicado. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Puede que aparezca una lista diferente de herramientas externas, según la edición de Visual Studio que tenga instalada y el perfil de configuración que haya aplicado. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Agregar nuevas herramientas  
  Puede agregar una herramienta externa al menú **Herramientas**. Abra el cuadro de diálogo **Herramientas externas**, haga clic en **Agregar** y rellene la información. Por ejemplo, la entrada siguiente hace que el Explorador de Windows se abra en el directorio del archivo que tiene abierto actualmente en Visual Studio:  
@@ -128,11 +123,3 @@ Se puede llamar a herramientas externas desde Visual Studio. Algunas herramienta
   
 ## <a name="see-also"></a>Vea también  
  [Herramientas de compilación de C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
-
-
-
-
-
-
-
-

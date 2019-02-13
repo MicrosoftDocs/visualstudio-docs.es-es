@@ -1,14 +1,9 @@
 ---
 title: 'Cómo: Serializar la información de símbolos | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Performance.General
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 9e0da706-6325-4073-83d1-aeab3b7c137a
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f57339f7fc5c7c9e2cd34441daf4c8e42d485cc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3f0359613586531a4cc7b80e25acc02be9ae37f9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802517"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769189"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Cómo: Serializar la información de símbolos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,4 @@ Puede serializar símbolos que debe tener para analizar la aplicación. La seria
 ## <a name="see-also"></a>Vea también  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)   
- [Cómo: Guardar archivos del informe analizado](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)
-
-
-
+ [Cómo: Guardar archivos del informe analizado](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

@@ -1,14 +1,9 @@
 ---
 title: Obtener registros de compilación con MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
@@ -16,13 +11,13 @@ ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
 caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a7ab53b2f8918760fcfccdf6086073b0c808b80b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811755"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771984"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtener registros de compilación con MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,6 +83,3 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
  [Registrar en un entorno de varios procesadores](../msbuild/logging-in-a-multi-processor-environment.md)   
  [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
-
-
-

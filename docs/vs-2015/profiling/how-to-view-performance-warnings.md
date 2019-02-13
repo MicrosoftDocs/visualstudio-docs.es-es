@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Ver advertencias de rendimiento | Microsoft Docs
+title: 'Cómo: Ver advertencias de rendimiento | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,7 +16,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54784617"
 ---
-# <a name="how-to-view-performance-warnings"></a>Procedimiento Ver advertencias de rendimiento
+# <a name="how-to-view-performance-warnings"></a>Cómo: Ver advertencias de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las advertencias de rendimiento de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] indican problemas en una aplicación para la que se han generado perfiles que pueden ralentizar la ejecución de programas. Las advertencias también pueden indicar que puede ser conveniente cambiar los métodos de recopilación para recopilar datos más útiles. Las advertencias de rendimiento se generan automáticamente en una sesión de generación de perfiles y aparecen en la ventana **Lista de errores** cuando se abre un archivo de datos de generación de perfiles en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

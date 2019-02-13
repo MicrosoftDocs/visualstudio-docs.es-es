@@ -1,14 +1,9 @@
 ---
 title: Refactorización de clases y tipos (Diseñador de clases) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e6a150d32fa4eb5bc162f9ce8522ddfed634253b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207967"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782131"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactorización de clases y tipos (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49207967"
 Al refactorizar el código, lo hace más fácil de entender y mantener, y más eficiente al cambiar su estructura interna y la manera en la que están diseñados los objetos, no su comportamiento externo. Utilice el Diseñador de clases y la ventana Detalles de clase para reducir el trabajo necesario y la posibilidad de que se introduzcan errores al refactorizar código de .NET de Visual C#, .NET de Visual Basic o C++ en el proyecto de Visual Studio.  
   
 > [!NOTE]
->  Si los archivos de un proyecto son de solo lectura, el motivo puede ser que el proyecto esté bajo el control del código fuente y no esté desprotegido, que sea un proyecto al que se hace referencia o que sus archivos estén marcados como de solo lectura en el disco. Al trabajar en un proyecto que se encuentre en uno de estos estados, se le presentarán varias formas de guardar el trabajo según el estado del proyecto. Esto se aplica a la refactorización de código y también al código que cambie de otro modo como, por ejemplo, editándolo directamente. Para obtener más información, consulte [Presentación de la información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+>  Si los archivos de un proyecto son de solo lectura, el motivo puede ser que el proyecto esté bajo el control del código fuente y no esté desprotegido, que sea un proyecto al que se hace referencia o que sus archivos estén marcados como de solo lectura en el disco. Al trabajar en un proyecto que se encuentre en uno de estos estados, se le presentarán varias formas de guardar el trabajo según el estado del proyecto. Esto se aplica a la refactorización de código y también al código que cambie de otro modo como, por ejemplo, editándolo directamente. Para obtener más información, consulte [Presentación de la información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Tareas comunes  
   
@@ -95,10 +90,7 @@ Al refactorizar el código, lo hace más fácil de entender y mantener, y más e
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Descripción|  
 |-----------|-----------------|  
 |[Ver tipos y relaciones (Diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md)||  
 |[Diseñar clases y tipos (Diseñador de clases)](../ide/designing-classes-and-types-class-designer.md)||
-
-
-

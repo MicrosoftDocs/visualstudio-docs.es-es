@@ -1,14 +1,9 @@
 ---
-title: Extender IntelliSense para JavaScript | Documentos de Microsoft
-ms.custom: ''
+title: Extender IntelliSense para JavaScript | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript, intellisense object
 - extending JavaScript IntelliSense
@@ -19,13 +14,13 @@ ms.assetid: 004e1ab6-bd7a-4327-9e01-89b9be96ba2f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867083"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797452"
 ---
 # <a name="extending-javascript-intellisense"></a>Extender IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -553,6 +548,3 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="see-also"></a>Vea también  
  [IntelliSense para JavaScript](../ide/javascript-intellisense.md)   
  [Finalización de instrucciones para identificadores](../ide/statement-completion-for-identifiers.md)
-
-
-

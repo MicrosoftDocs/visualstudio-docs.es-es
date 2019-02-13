@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Configurar la reducción de ruido en las vistas de informes | Microsoft Docs
+title: 'Cómo: Configurar la reducción de ruido en las vistas de informes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,7 +22,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54800334"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>Procedimiento Configurar la reducción de ruido en las vistas de informes
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Cómo: Configurar la reducción de ruido en las vistas de informes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los informes de rendimiento pueden configurarse para la reducción de ruido limitando la cantidad de datos que se presentan en la vistas Árbol de llamadas y Asignación. Gracias a la reducción de ruido, los problemas de rendimiento destacan más. Esto es útil a la hora de analizar informes de rendimiento.  

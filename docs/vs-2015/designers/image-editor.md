@@ -1,14 +1,9 @@
 ---
 title: Editor de imágenes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
@@ -16,13 +11,13 @@ ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768308"
 ---
 # <a name="image-editor"></a>Editor de imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -156,7 +151,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
   
  En la tabla siguiente se describen las propiedades de la imagen.  
   
-|Property|Descripción|  
+|Propiedad.|Descripción|  
 |--------------|-----------------|  
 |Ancho|El ancho de la imagen.|  
 |Alto|El alto de la imagen.|  
@@ -274,11 +269,8 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Descripción|  
 |-----------|-----------------|  
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas que puede utilizar en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con recursos gráficos, como texturas e imágenes, modelos 3D y efectos de sombreador.|  
 |[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con modelos 3D.|  
 |[Diseñador de sombras](../designers/shader-designer.md)|Describe cómo usar el diseñador de sombras de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con sombreadores.|
-
-
-

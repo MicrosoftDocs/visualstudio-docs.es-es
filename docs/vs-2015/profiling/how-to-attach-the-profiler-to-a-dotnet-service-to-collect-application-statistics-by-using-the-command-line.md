@@ -1,25 +1,20 @@
 ---
-title: 'Cómo: Adjuntar el generador de perfiles a un servicio de .NET para recopilar estadísticas de aplicación mediante la línea de comandos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Adjuntar el Profiler a un servicio .NET para recopilar estadísticas de la aplicación mediante la línea de comandos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8100f04471b0fd5886bed5c5ea815632cb0031db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 402d0c4de07cb827bbad389c447dedd2dc79d7ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800840"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760183"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a un servicio .NET para recopilar estadísticas de aplicación mediante la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +117,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
 
     -   Detenga el servicio.  
 
-         O bien  
+         o bien  
 
     -   Escriba **VSPerfCmd /detach**  
 
@@ -139,6 +134,3 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
 ## <a name="see-also"></a>Vea también  
  [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)   
  [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)
-
-
-

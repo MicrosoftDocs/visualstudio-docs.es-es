@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54780939"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar una fuga de memoria (JavaScript).
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar pérdidas de memoria (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  

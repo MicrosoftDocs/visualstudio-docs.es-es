@@ -1,25 +1,20 @@
 ---
 title: 'Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a87704f7d836da2309e711f3379df01b01c807c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5156af5f8532879bc748627fb62b0b4b6fba4af2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294494"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776020"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,6 +75,3 @@ Cuadro de diálogo Propiedades
 -   Para ir al siguiente paso del tutorial, vea [Paso 6: Agregar un problema de resta](../ide/step-6-add-a-subtraction-problem.md).  
   
 -   Para volver al paso anterior del tutorial, vea [Paso 4: Agregar el método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
-
-
-

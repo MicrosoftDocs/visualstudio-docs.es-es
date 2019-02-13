@@ -1,24 +1,19 @@
 ---
 title: Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Xamarin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f2e7af8227e11d554a4f953593dad396d5543aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 6f8d2a776b8867230bb618dfb0ce8b558c69619e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745214"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793816"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
  Las siguientes tablas identifican qué características ALM de Visual Studio puede esperar que funcionen bien con un proyecto de Xamarin y cuáles tienen limitaciones. Consulte la documentación vinculada para obtener más información acerca de cada característica.  
   
 ## <a name="agile-tools"></a>Herramientas de Agile  
- Vínculo de referencia: **[Trabajar](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (con Visual Studio Team Services o TFS, incluido Team Explorer Everywhere)  
+ Vínculo de referencia: **[Trabajo](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (con Visual Studio Team Services o TFS, incluido Team Explorer Everywhere)  
   
  Comentario general: todas las características de planeación y seguimiento son independientes del tipo de proyecto y de los lenguajes de codificación.  
   
@@ -80,7 +75,7 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |-------------|----------------------------|-------------------------|  
 |Servidor TFS local|Sí|Los equipos de compilación deben tener instalado Xamarin y se pueden vincular a un equipo OSX para compilar para iOS. Vea [Configuring TFS for Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (sitio web de Xamarin).|  
 |Servidor de compilación local vinculado a Visual Studio Team Services|Sí|Vea [Build server (Servidor de compilación)](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) para obtener instrucciones.|  
-|Servicio de controlador hospedado de Visual Studio Team Services|Sí|Vea [Build your Xamarin app](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin) (Crear su aplicación de Xamarin).|  
+|Servicio de controlador hospedado de Visual Studio Team Services|Sí|Vea [Build your Xamarin app](https://www.visualstudio.com/docs/build/apps/mobile/xamarin) (Crear su aplicación de Xamarin).|  
 |Compilar definiciones con scripts anteriores y posteriores|Sí||  
 |Integración continua, incluidas entradas validadas|Sí|Entradas validadas para TFVC solo cuando GIT funciona en un modelo de solicitud de extracción en lugar de entradas.|  
   
@@ -122,4 +117,3 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |Característica|Compatible con Xamarin|Comentarios adicionales|  
 |-------------|----------------------------|-------------------------|  
 |Análisis de bloqueo, telemetría y distribución beta|Sí||
-

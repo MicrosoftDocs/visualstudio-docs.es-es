@@ -1,25 +1,20 @@
 ---
-title: 'Cómo: Excluir proyectos de una compilación | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Excluir proyectos de una compilación | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6419d2aa216f625aaf82087f0dc8f453e0d0d475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 04a3a45af932a34b89feb2726e7a137ceea2ac5a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941846"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780131"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Cómo: Excluir proyectos de una compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,6 +59,3 @@ Para compilar una solución no es necesario compilar todos los proyectos que con
  [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
  [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md)   
  [Cómo: Compilar varias configuraciones simultáneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)
-
-
-

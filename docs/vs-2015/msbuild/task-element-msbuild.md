@@ -1,14 +1,9 @@
 ---
 title: Elemento Task (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: d82e2485-e5f0-4936-a357-745bacccc299
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4d9d616e9b3520d3592f3e34a5aa3b95a2c5f722
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 000aa83256f5015a847c517b8dce1d04f48af1cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761729"
 ---
 # <a name="task-element-msbuild"></a>Elemento de tarea (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,6 +92,3 @@ Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../includes/vs
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

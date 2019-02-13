@@ -1,25 +1,20 @@
 ---
 title: Introducción a WPF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9f408042c5c8a07e00b37adffacc9c3e6b13207d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a0137fd1eda8613d332cb07df0d87df97ff9a51a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776382"
 ---
 # <a name="getting-started-with-wpf"></a>Introducción a WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,3 @@ Windows Presentation Foundation (WPF) es un marco de interfaz de usuario que cre
  [Información general sobre el desarrollo de aplicaciones](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)   
  [Centro para desarrolladores de .NET Framework](http://go.microsoft.com/fwlink/?LinkId=187437)   
  [Crear aplicaciones de escritorio modernas con Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-
-

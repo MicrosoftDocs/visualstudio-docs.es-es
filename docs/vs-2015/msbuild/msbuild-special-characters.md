@@ -1,14 +1,9 @@
 ---
 title: Caracteres especiales de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - escape characters
 - escape
@@ -17,13 +12,13 @@ ms.assetid: 545e6a59-1093-4514-935e-78679a46fb3c
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c9ce1697f370ec1beec8ce12faceb15825fbe5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a96831650e09b1018c6cffc8149a9a0020edc90b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793105"
 ---
 # <a name="msbuild-special-characters"></a>Caracteres especiales de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +44,3 @@ ms.locfileid: "49256456"
 ## <a name="see-also"></a>Vea también  
  [Conceptos avanzados](../msbuild/msbuild-advanced-concepts.md)   
  [Elementos](../msbuild/msbuild-items.md)
-
-
-

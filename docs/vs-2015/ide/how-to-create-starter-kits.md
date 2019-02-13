@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: Crear Starter Kits | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear Starter Kits | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Starter Kits, creating
 ms.assetid: ed7d1844-7c01-424a-a831-5003efe0f7bc
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 163fcc07318ae02ff88fda13d4ea6300d513806e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fb7b601c04c73cd1f617e42c848edaf7dc65bde8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798951"
 ---
 # <a name="how-to-create-starter-kits"></a>Cómo: Crear Starter Kits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,3 @@ Un Starter Kit contiene código de una aplicación completa y documentación sob
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-
-
-

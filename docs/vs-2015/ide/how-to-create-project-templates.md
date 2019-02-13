@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Crear plantillas de proyectos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear plantillas de proyecto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ExportTemplateWizard
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fb68a9902fc3adf9f2643b52e069cf182d9ca75a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a7a48039699c5bb35e07a21e5c5c3be8ae8585f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225516"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785918"
 ---
 # <a name="how-to-create-project-templates"></a>Cómo: Crear plantillas de proyectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Este procedimiento le permite crear una plantilla con el Asistente **Exportar pl
   
 2.  Modifique el proyecto hasta que esté listo para exportarse como una plantilla.  
   
-3.  Modifique los archivos de código según corresponda para indicar dónde debe aplicarse el reemplazo de parámetros. Para obtener más información sobre el reemplazo de parámetros, vea [Cómo: Sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md).  
+3.  Modifique los archivos de código según corresponda para indicar dónde debe aplicarse el reemplazo de parámetros. Para obtener más información sobre el reemplazo de parámetros, vea [Cómo: Sustituir parámetros en una plantilla.](../ide/how-to-substitute-parameters-in-a-template.md)  
   
 4.  En el menú **Archivo**, haga clic en **Exportar plantilla**. Se abre el Asistente **Exportar plantilla**.  
   
@@ -64,6 +59,3 @@ Este procedimiento le permite crear una plantilla con el Asistente **Exportar pl
 ## <a name="see-also"></a>Vea también  
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
-
-
-

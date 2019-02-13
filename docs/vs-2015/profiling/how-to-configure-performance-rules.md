@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Configurar reglas de rendimiento | Microsoft Docs
+title: 'Cómo: Configurar las reglas de rendimiento | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,7 +18,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54790434"
 ---
-# <a name="how-to-configure-performance-rules"></a>Procedimiento Configurar las reglas de rendimiento
+# <a name="how-to-configure-performance-rules"></a>Cómo: Configurar las reglas de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las advertencias de rendimiento de las Herramientas de generación de perfiles de Visual Studio indican problemas en una aplicación para la que se han generado perfiles que pueden ralentizar la ejecución de programas. Las advertencias también pueden indicar que puede ser necesario cambiar los métodos de recolección para recopilar datos más útiles. Las advertencias de rendimiento se generan automáticamente en una sesión de generación de perfiles y aparecen en la ventana **Lista de errores** cuando se abre un archivo de datos de generación de perfiles en [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Es posible que determinadas advertencias no se apliquen en los escenarios que le interesan y que otras se produzcan de manera inexacta. Puede configurar las advertencias de rendimiento para mostrar u ocultar advertencias concretas.  

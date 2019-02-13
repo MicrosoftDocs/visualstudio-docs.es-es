@@ -1,14 +1,9 @@
 ---
 title: Vista Módulos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.modules
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 90e81530a3d682b1604a5226bb66f9e62637dd0e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785598"
 ---
 # <a name="modules-view"></a>Vista Módulos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ En la vista Módulos se enumeran los módulos de los datos de generación de per
  [Vista Módulos: instrumentación](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Vista Módulos: muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Vista Módulos](../profiling/modules-view-contention-data.md)
-
-
-

@@ -1,33 +1,28 @@
 ---
 title: Complemento de Excel de muestra para probar la IU codificada| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, Excel Add-in sample
 ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 564669d5af3ea526ad8822d3aea7310095151c6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ded54760efe611b337c736e0474042b70ff8bf2e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791955"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Complemento de Excel de muestra para probar la IU codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este complemento de ejemplo para [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] está diseñado específicamente para admitir las pruebas de interfaz de usuario codificadas de las hojas de cálculo de Excel que se registran y se ejecutan en Visual Studio Enterprise. El complemento se crea con Visual Studio Tools para Office.  
   
- Para obtener más información sobre cómo crear un complemento de Excel, vea [Tutorial: Crear el primer complemento de VSTO para Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) o busque "Complemento Excel" en MSDN.  
+ Para obtener más información sobre cómo crear un complemento de Excel, vea [Tutorial: Crear el primer complemento de VSTO para Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) o busque en MSDN para "Excel Add-In".  
   
  Aunque el complemento de Excel no es el tema principal de esta documentación de la extensión de prueba de IU codificada para Excel, algunos comentarios pueden resultar útiles.  
   
@@ -54,6 +49,3 @@ Este complemento de ejemplo para [!INCLUDE[ofprexcel](../includes/ofprexcel-md.m
  [Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
  [Tutorial: Crear el primer complemento de VSTO para Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
  [Desarrollo de Office y SharePoint](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)
-
-
-
