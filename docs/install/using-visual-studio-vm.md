@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Aprenda a usar Visual Studio en una máquina virtual de Azure
 ms.date: 09/12/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 415e108da2187b2e3b5057da6b9a3850bd3eb3ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1dbda84c1e8eee48c4a442e922c1852496155ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926753"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952910"
 ---
 # <a id="top"> </a> Imágenes de Visual Studio en Azure
 
@@ -39,7 +38,7 @@ En Azure Marketplace puede encontrar imágenes de las versiones principales más
 | Visual Studio 2017: Versión más reciente (15.9)                    |    Enterprise, Community     |      Versión 15.9.4      |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versión 15.0.20     |
 |   Visual Studio 2015: Más reciente (actualización 3)                      |    Enterprise, Community     |  Versión 14.0.25431.01   |
-|         Visual Studio 2015: RTW                              |             None             | (Servicio de mantenimiento expirado)  |
+|         Visual Studio 2015: RTW                              |             Ninguna             | (Servicio de mantenimiento expirado)  |
 
 > [!NOTE]
 > De conformidad con la directiva de mantenimiento de Microsoft, el servicio de mantenimiento de la versión de lanzamiento original ("RTW") de Visual Studio 2015 ha expirado. Visual Studio 2015 Update 3 es la única versión que se ofrece con la línea de productos de Visual Studio 2015.

@@ -1,7 +1,6 @@
 ---
 title: Comandos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 015cc736ca9c6c430ca0312d55ab53b58794f01b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041222"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928223"
 ---
 # <a name="visual-studio-commands"></a>Comandos de Visual Studio
 

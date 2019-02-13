@@ -1,7 +1,6 @@
 ---
 title: Opciones, Editor de texto, HTML (formularios Web Forms), formato
 ms.date: 1/15/2019
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efb2e1ee43d0967ed27224241e6819933339b42f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f90e6c4bb3759adb46bf827580cc94dc4a8ed71f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939782"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927183"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opciones, Editor de texto, HTML (formularios Web Forms), formato
 

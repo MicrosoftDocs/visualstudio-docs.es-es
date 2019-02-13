@@ -1,7 +1,6 @@
 ---
 title: Características del editor de código
 ms.date: 02/23/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 993b3156084f0f780da168bcafd406012e8cd704
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 97172ec56815f989b13cd5a15c22241b669a9dc0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022838"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908860"
 ---
 # <a name="features-of-the-code-editor"></a>Características del editor de código
 

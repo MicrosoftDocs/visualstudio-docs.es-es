@@ -1,7 +1,6 @@
 ---
 title: Información general para desarrolladores de Visual Basic
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b9777fc9bbe22e394c06152808d35b3f0a549d4
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: ee53c59c0ff3fcc898e30551357733b9d8b71725
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690533"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155713"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Le damos la bienvenida al IDE de Visual Studio | Visual Basic
 
@@ -298,4 +297,3 @@ Profundice aún más en Visual Studio con alguno de estos artículos introductor
 - Descubra [más características de Visual Studio](../../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - Lea el [blog de Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-- Eche un vistazo a los cursos gratuitos sobre Visual Studio disponibles en [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)

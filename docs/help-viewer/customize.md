@@ -1,7 +1,6 @@
 ---
 title: Personalizar el Visor de Ayuda
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - hv_options
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cdf7f1d2cf815154b17312645d3c55027a58a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e416a0dc91cfd4bd77983f1e0e5d215a85ee1f27
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940705"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914664"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizar el Visor de Ayuda
 Puede personalizar el diseño de las ventanas del Visor de Ayuda, así como otras opciones como el tamaño de fuente, el número máximo de resultados y si se debe incluir el contenido en inglés.

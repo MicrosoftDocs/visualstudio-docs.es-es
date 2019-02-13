@@ -2,7 +2,6 @@
 title: Herramientas de F#
 description: Obtenga información sobre qué características de Visual Studio son compatibles con F#.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eaaf9f82bea6fdba86b6404cfc0ab36384805ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920635"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955871"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desarrollar con Visual F# en Visual Studio
 
@@ -61,7 +60,7 @@ El **Diseñador de proyectos** consta de varias páginas de propiedades de proye
 
 |Página del Diseñador de proyectos|Vínculos relacionados|Descripción|
 | - |-------------|-----------|
-|Application|[Página de aplicación, Diseñador de proyectos](reference/application-page-project-designer-csharp.md)|Permite especificar la configuración y las propiedades de nivel de aplicación, por ejemplo si se está creando una biblioteca o un archivo ejecutable, qué versión de .NET Framework tiene la aplicación como destino e información sobre la ubicación de almacenamiento de los archivos de recursos que usa la aplicación.|
+|Administración de|[Página de aplicación, Diseñador de proyectos](reference/application-page-project-designer-csharp.md)|Permite especificar la configuración y las propiedades de nivel de aplicación, por ejemplo si se está creando una biblioteca o un archivo ejecutable, qué versión de .NET Framework tiene la aplicación como destino e información sobre la ubicación de almacenamiento de los archivos de recursos que usa la aplicación.|
 |Compilar|[Página Compilación, Diseñador de proyectos](reference/build-page-project-designer-csharp.md)|Permite controlar cómo se compila el código.|
 |Eventos de compilación|[Eventos de compilación (Página, Diseñador de proyectos)](reference/build-events-page-project-designer-csharp.md)|Permite especificar comandos que se van a ejecutar antes o después de una compilación.|
 |Depuración|[Página Depuración, Diseñador de proyectos](reference/debug-page-project-designer.md)|Permite controlar cómo se ejecuta la aplicación durante la depuración. Esto incluye qué comandos se van a usar y cuál es el directorio de inicio de la aplicación, así como los modos de depuración especiales que quiera habilitar, como código nativo y SQL.|

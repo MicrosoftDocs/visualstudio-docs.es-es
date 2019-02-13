@@ -9,15 +9,14 @@ f1_keywords:
 author: mikeblome
 ms.author: mblome
 manager: wpickett
-ms.prod: visual-studio-dev15
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13bcc65b3d8ffe4872c8b7d5f18b1bbf13bc67c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 535f67f7456f26d3f61820e909c3f7622eb71c85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893333"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954901"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
 

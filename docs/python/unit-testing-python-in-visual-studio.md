@@ -2,7 +2,6 @@
 title: Código de pruebas unitarias de Python
 description: La configuración de pruebas unitarias para código de Python en Visual Studio aprovecha al máximo las características del Explorador de pruebas con el fin de detectar, ejecutar y depurar las pruebas.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 76cdaadc8258acd3ed0ea87b69a6446b4ad920df
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929197"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155986"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Configuración de pruebas unitarias para código de Python
 
@@ -25,10 +24,6 @@ Las pruebas unitarias son fragmentos de código que prueban otras unidades de c�
 Python utiliza pruebas unitarias ampliamente para validar escenarios durante el diseño de un programa. La compatibilidad de Python en Visual Studio incluye características para descubrir, ejecutar y depurar pruebas unitarias dentro del contexto de su proceso de desarrollo, sin tener que ejecutar pruebas independientemente.
 
 En este artículo se proporciona una descripción breve de las funcionalidades de las pruebas unitarias en Visual Studio con Python. Para más información sobre las pruebas unitarias en general, vea [Hacer una prueba unitaria del código](../test/unit-test-your-code.md).
-
-|   |   |
-|---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea el vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) sobre pruebas unitarias de Python (2 minutos 31 segundos). |
 
 ## <a name="discover-and-view-tests"></a>Detección y visualización de pruebas
 

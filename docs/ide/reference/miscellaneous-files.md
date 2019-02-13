@@ -1,7 +1,6 @@
 ---
 title: Archivos varios
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.newfile
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2e00e836725620c9a3ded6e2df5119a66d1cb54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8bde65506a9005459f1102cd6181e0fa346ec26a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942289"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912708"
 ---
 # <a name="miscellaneous-files"></a>Archivos varios
 Tal vez desee usar los editores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para trabajar de forma independiente en los archivos de un proyecto o de una solución. Mientras la solución está abierta, se pueden abrir y modificar los archivos sin necesidad de agregarlos a soluciones o proyectos. Los archivos con los que desea trabajar independientemente de los contenedores reciben el nombre de archivos varios. Los archivos varios son externos a soluciones y proyectos, no se incluyen en compilaciones y no se pueden incluir en soluciones que estén bajo control de código fuente.

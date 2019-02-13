@@ -1,7 +1,6 @@
 ---
 title: Fragmentos de código de C#
 ms.date: 06/05/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - snippets [C#]
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38794c3a81d98b245102f48b0c99319f6e9571b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: badd1ef796f1854f07043e775923c4d3f1480624
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021395"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917849"
 ---
 # <a name="c-code-snippets"></a>Fragmentos de código de C#
 

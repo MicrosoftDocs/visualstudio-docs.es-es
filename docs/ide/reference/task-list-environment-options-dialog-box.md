@@ -1,7 +1,6 @@
 ---
 title: Lista de tareas, Entorno, Opciones (Cuadro de diálogo)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
@@ -23,12 +22,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b986efd252c212665d98c93d5452d510008e2dae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bda16e5939f34cbea29eb92e08ee7325b49301b5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997278"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912175"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Lista de tareas, Entorno, Opciones (Cuadro de diálogo)
 
@@ -66,7 +65,7 @@ Esta página Opciones permite agregar, eliminar y cambiar los tokens de comentar
 
  Escriba la cadena de token. Esto habilita el botón **Agregar**. En **Agregar**, esta cadena está incluida en la **Lista de tokens** y los comentarios que comienzan por este nombre se mostrarán en la **Lista de tareas**.
 
- Add
+ Agregar
 
  Se habilita al escribir un nuevo **Nombre**. Haga clic para agregar una nueva cadena de tokens utilizando los valores especificados en los campos **Nombre** y **Prioridad**.
 

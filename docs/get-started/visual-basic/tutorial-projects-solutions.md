@@ -1,7 +1,6 @@
 ---
 title: 'Tutorial: Soluciones y proyectos de Visual Basic'
 ms.date: 12/12/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9de49d9e5c7c1ebbe8fef41ff5efdb65c96d6e9
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: a91bf1a43a5cbb92713b1068f882bd6248c4f70a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483879"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955627"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Información sobre proyectos y soluciones con Visual Basic
 

@@ -2,7 +2,6 @@
 title: Depuración de código de Python
 description: Visual Studio proporciona depuración enriquecida para código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cdaaf7964ee7da9a5ae7a1b1bfa0f77631c22622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036074"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155882"
 ---
 # <a name="debug-your-python-code"></a>Depurar el código de Python
 
@@ -27,10 +26,6 @@ Vea también los siguientes artículos de depuración específicos para distinto
 - [Depuración remota de Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Mixed-mode Python/C++ debugging](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) (Depuración en modo mixto Python/C++)
 - [Symbols for mixed-mode debugging](debugging-symbols-for-mixed-mode-c-cpp-python.md) (Símbolos de depuración en modo mixto)
-
-|   |   |
-|---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Eche un vistazo a un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) para ver una demostración de la depuración de Python (3 minutos 32 segundos).|
 
 <a name="debugging-without-a-project"></a>
 

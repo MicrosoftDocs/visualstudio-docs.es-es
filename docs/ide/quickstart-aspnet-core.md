@@ -2,7 +2,6 @@
 title: Creación de una aplicación web ASP.NET Core en C#
 description: Obtenga información sobre cómo crear una aplicación web simple Hola mundo en Visual Studio con C# y ASP.NET Core, paso a paso.
 ms.date: 02/01/2019
-ms.prod: visual-studio-dev15
 ms.custom: mvc,seodec18
 ms.topic: quickstart
 author: TerryGLee
@@ -13,12 +12,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 61bfe7dfa42542199f3773d1587d0e10ec315f98
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 60f7c7bd7d0a3073f75d4ece7012601ded8eb059
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571153"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957786"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación web ASP.NET Core
 
@@ -80,7 +79,7 @@ Poco después, Visual Studio abre el archivo de proyecto.
 
    ![El código HTML para el área de información adicional en el editor de Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Cambie el texto "información adicional" para que rece "**Hola mundo**".
+1. Cambie el texto "información adicional" para que rece "**Hello World!**".
 
    ![Cambio del código HTML predeterminado para el área de información adicional en el editor de Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 

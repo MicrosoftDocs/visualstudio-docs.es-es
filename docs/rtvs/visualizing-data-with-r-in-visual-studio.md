@@ -2,19 +2,18 @@
 title: Visualización de datos con R
 description: Describe cómo trazar datos desde programas de R en Visual Studio con ventanas de trazados.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: bc568c6e2e28d27516ac5a92d7ccd01d3704bb7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009939"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911772"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
 

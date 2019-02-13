@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Visualización, guardado y configuración de archivos de registro de compilación | Microsoft Docs
+title: Filtrar Visualización, guardado y configuración de archivos de registro de compilación | Microsoft Docs
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabfb6b9209ff57249ceb79460c2bc75e7d63bf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f50117a4101fd3c76e431891ca9a9fe20fa3959
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026202"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925233"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Procedimiento Visualización, guardado y configuración de archivos de registro de compilación
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Filtrar Visualización, guardado y configuración de archivos de registro de compilación
 
 Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre la compilación en la ventana **Salida**. Con esta información puede, por ejemplo, solucionar un error de compilación. En el caso de los proyectos de C++, también puede ver la misma información en un archivo *.txt* que se crea y se guarda automáticamente. Si se trata de proyectos de código administrado, puede copiar y pegar la información de la ventana **Salida** en un archivo *.txt* y guardarlo donde quiera. También puede usar el IDE para especificar qué tipo de información quiere ver para cada compilación.
 
@@ -43,7 +42,7 @@ Si compila un proyecto mediante MSBuild, puede crear un archivo *.txt* para guar
 
 3.  En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, seleccione uno de los valores siguientes y, después, elija el botón **Aceptar**.
 
-    |Nivel de detalle|DESCRIPCIÓN|
+    |Nivel de detalle|Descripción|
     | - |-----------------|
     |**Silencioso**|Muestra un resumen solo de la compilación.|
     |**Mínima**|Muestra un resumen de la compilación y los errores, las advertencias y los mensajes que están clasificados como muy importantes.|

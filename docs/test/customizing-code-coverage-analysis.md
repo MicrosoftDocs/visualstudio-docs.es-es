@@ -1,19 +1,18 @@
 ---
 title: Personalizar el análisis de cobertura de código
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bb4b8625c69c28ca6d9a2e0a4b86122e810a87e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935818"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952494"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 

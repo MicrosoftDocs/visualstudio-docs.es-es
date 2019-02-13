@@ -1,7 +1,6 @@
 ---
 title: Instalación de ayuda sin conexión
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - installing Help Viewer
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6f2fb01c73a588adc64813c191742de5bf5938
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005714"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155674"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalación del Visor de Ayuda de Microsoft
 
@@ -43,10 +42,6 @@ Otra manera de instalar fácilmente el Visor de Ayuda de Microsoft es a través 
 1. En el cuadro de diálogo que aparece, haga clic en el botón **Instalar**.
 
    ![Botón Instalar](media/installation/install.png)
-
-| | |
-|---------|---------|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png) | [Vea un vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) sobre cómo instalar el Visor de Ayuda de Microsoft con el Instalador de Visual Studio. |
 
 ## <a name="see-also"></a>Vea también
 

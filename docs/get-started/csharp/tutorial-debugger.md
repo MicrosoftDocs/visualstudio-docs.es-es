@@ -15,20 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fca037da8a0623d7cebbb7108e4a1028833ffe8
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 187fe0e75ffa084f95265adf5ca3061f29f11ca7
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424582"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156116"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de C# con Visual Studio
 
 En este artículo se describen las características del depurador de Visual Studio en un tutorial paso a paso. Si quiere ahondar en las características del depurador, vea [Primer vistazo al depurador](../../debugger/debugger-feature-tour.md). Normalmente, *depurar una aplicación* significa ejecutar la aplicación con el depurador activado. Al hacerlo, el depurador ofrece muchas formas de ver lo que hace el código durante la ejecución. Esto permite revisar el código y fijarse en los valores almacenados en variables, establecer inspecciones en ellas para ver cuándo cambian los valores, examinar la ruta de ejecución del código, ver si una rama de código está en funcionamiento, etc. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Depuración para principiantes sin experiencia](../../debugger/debugging-absolute-beginners.md) antes de continuar con este artículo.
-
-| | |
-|---------|---------|
-| ![icono de cámara de película para vídeo](../../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre la depuración en el que se muestran pasos parecidos a estos. |
 
 Aunque la aplicación de demostración está en C#, la mayoría de las características son aplicables a C++, Visual Basic, F#, Python, JavaScript y otros lenguajes compatibles con Visual Studio (F# no admite Editar y continuar, mientras que F# y JavaScript no admiten la ventana **Automático**). Las capturas de pantalla son de código C#.
 
