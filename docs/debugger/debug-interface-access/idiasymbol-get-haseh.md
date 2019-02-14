@@ -1,5 +1,5 @@
 ---
-title: Get_haseh | Microsoft Docs
+title: IDiaSymbol::get_hasEH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9a4952d8-9fa7-4798-b48c-fe4357648276
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 254fbd73f740daeb4f8fe8087b76111985e3e43e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e3834d1bfe9e15cf3dfc950e370440c3f15c5c28
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919299"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002197"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
 Recupera una marca que especifica si la función contiene cualquier control de excepciones de estilo de C++ no administrado (por ejemplo, un bloque try/catch).  

@@ -1,14 +1,9 @@
 ---
 title: 'DA0504: Espacio de trabajo máximo en bytes para el proceso del que se está generando el perfil | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0504
 - vs.performance.504
@@ -17,13 +12,13 @@ ms.assetid: 36e71603-ece7-4000-85fc-9da4eed61bf2
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a39171c8786f3b2149a50bd3c4a6915575f050ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a990b428cfa03722ee5e02884344d96844825ee8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800203"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787196"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: Conjunto de trabajo máximo en bytes para el proceso que se va a perfilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51800203"
 Id. de regla | DA0504 |  
 | Categoría | Administración de recursos |  
 | Método de generación de perfiles | Todos los |  
-| Mensaje | Esta información se recopiló solo meramente informativos. El contador del espacio de trabajo del proceso mide el uso de memoria física que hace el proceso del que está generando perfiles. El valor indicado es el máximo observado de todos los intervalos de medición. |  
+| Mensaje | Esta información se recopiló solo meramente informativos. El contador del espacio de trabajo del proceso mide el uso de memoria física que hace el proceso del que está generando perfiles. El valor notificado es el máximo observado de todos los intervalos de medición.  
 | Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
@@ -47,6 +42,3 @@ Id. de regla | DA0504 |
  La regla recopila estos datos de medición de la utilidad de supervisión de rendimiento de Windows y los notifica únicamente con fines informativos. Utilícelos para comparar el rendimiento de distintas versiones o compilaciones del programa o para entender el rendimiento de la aplicación en otros escenarios de prueba diferentes.  
   
  Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles. Busque las columnas del contador **Process\Working Set** y **Memory\Pages/sec**. A continuación, busque el valor máximo de **Process\Working Set** y compárelo con el valor de **Memory\Pages/sec**. Con frecuencia, el espacio de trabajo máximo está asociado a un intervalo en que hay una disminución de la actividad de E/S de paginación, especialmente si el equipo tiene restricciones de memoria.
-
-
-

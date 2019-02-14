@@ -1,5 +1,5 @@
 ---
-title: Set_imageheaders | Microsoft Docs
+title: IDiaAddressMap::set_imageHeaders | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a46b9d0e-43e6-433f-b2c7-aa203981e4e4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6593092fc155a375480f082a1f82dc53a1d851fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2435d009197c77945476fbc173b1b74e33a9be9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834144"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943648"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 Conjuntos de encabezados para habilitar la traducción de dirección virtual relativa de la imagen.  

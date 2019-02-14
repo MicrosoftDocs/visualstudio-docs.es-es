@@ -1,5 +1,5 @@
 ---
-title: 'DA0506: Máximo de bytes privados asignados para el proceso del que se está generando el perfil | Microsoft Docs'
+title: 'DA0506: Máximo de bytes privados asignados al proceso que se va a perfilar | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54767496"
 ---
-# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Máximo de bytes privados asignados para el proceso del que se está generando el perfil
+# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Máximo de bytes privados asignados al proceso que se va a perfilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id. de regla | DA0506 |  

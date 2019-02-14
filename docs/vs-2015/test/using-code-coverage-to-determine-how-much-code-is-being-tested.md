@@ -1,26 +1,21 @@
 ---
 title: Uso de cobertura de código para determinar la cantidad de código que se está probando | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
 ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 46e9ad272dd7d7b6e4a1f6033f09e99cb4b289d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834063"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782664"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Para determinar qué proporción de código del proyecto se está probando realm
   
 2.  Para ver qué líneas se han ejecutado, elija ![Show Code Coverage Coloring Icon] (Mostrar icono de colores en cobertura de código)(../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Show Code Coverage Coloring**.  
   
-     Para modificar los colores o utilizar la negrita, elija **Herramientas**, **Opciones**, **Entorno**, **Fuentes y colores**, **Mostrar valores para: Editor de texto**. En **Mostrar los elementos**, ajuste los elementos de cobertura.  
+     Para modificar los colores o utilizar la negrita, elija **herramientas**, **opciones**, **entorno**, **fuentes y colores**, **mostrar configuración para: Editor de texto**. En **Mostrar los elementos**, ajuste los elementos de cobertura.  
   
 3.  Si los resultados muestran una cobertura baja, investigue qué partes del código no se están ensayando y escriba más pruebas para abarcarlas. Los equipos de desarrollo normalmente aspiran a una cobertura de código de un 80 %. En algunas situaciones, una cobertura menor es aceptable. Por ejemplo, una cobertura menor es aceptable cuando el código se genera a partir de una plantilla estándar.  
   
@@ -261,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
     Si tiene más de una definición de origen de la prueba, repita este paso para cada una.  
   
-   - <em>Pero no hay ningún campo denominado **tipo de archivo de configuración de ejecución</em>*. *  
+   - <em>Pero no hay ningún campo denominado*Tipo de archivo de parámetros de ejecución</em>.*  
   
       En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y elija los puntos suspensivos **[...]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, en **Ejecutor de pruebas**, elija **Ejecutor de pruebas de Visual Studio**.  
   
@@ -285,13 +280,10 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
 ## <a name="external-resources"></a>Recursos externos  
   
-### <a name="guidance"></a>Orientación  
- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
+### <a name="guidance"></a>Instrucciones  
+ [Pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md)   
  [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md)   
  [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
-
-
-

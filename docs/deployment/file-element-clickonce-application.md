@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d71192b38ea14ade737ecb4b34e3cc25f8b91d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828308"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984722"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;archivo&gt; elemento (aplicación ClickOnce)
 Identifica todos los archivos nonassembly descargado y usado por la aplicación.  
@@ -94,7 +94,7 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 |`optional`|Opcional. Especifica si este archivo debe descargar cuando la aplicación es la primera ejecución, o si el archivo debe residir únicamente en el servidor hasta que la aplicación lo solicita a petición. Si `false` o undefined, el archivo se descarga cuando la aplicación se ejecuta o se instala en primer lugar. Si `true`, un `group` debe especificarse para que el manifiesto de aplicación sea válido. `optional` no puede ser true si `writeableType` se especifica con el valor `applicationData`.|  
 |`writeableType`|Opcional. Especifica que este archivo es un archivo de datos. Actualmente, el único valor válido es: `applicationData`.|  
 
-## <a name="typelib"></a>biblioteca de tipos  
+## <a name="typelib"></a>typelib  
  El `typelib` elemento es un elemento secundario opcional del elemento file. El elemento describe la biblioteca de tipos al que pertenece el componente COM. El elemento tiene los atributos siguientes.  
 
 |Atributo|Descripción|  
@@ -160,7 +160,7 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 
  Si un manifiesto contiene un archivo que no está en hash, ese manifiesto no puede ser digitalmente firmado, ya que los usuarios no pueden comprobar el contenido de un archivo de este tipo.  
 
-## <a name="dsigtransforms"></a>dsig: TRANSFORMS  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  El `dsig:Transforms` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:Transforms` no tiene atributos.  
 
 ## <a name="dsigtransform"></a>dsig: Transform  
@@ -179,7 +179,7 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 |-------------| - |
 | `Algorithm` | El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-## <a name="dsigdigestvalue"></a>dsig: DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  El `dsig:DigestValue` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:DigestValue` no tiene atributos. Su valor de texto es el hash calculado para el archivo especificado.  
 
 ## <a name="remarks"></a>Comentarios  
