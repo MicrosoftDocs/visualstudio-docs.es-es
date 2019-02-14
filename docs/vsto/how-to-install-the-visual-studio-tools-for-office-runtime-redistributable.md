@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Instalar Visual Studio Tools para Office runtime redistribuible
+title: Filtrar Instalar Visual Studio Tools para Office runtime redistribuible
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74e63f34a7285fc035ae2acd338a73725a77e6ce
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 28bd6b050f5f313132167631d25ec7c4be661462
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867213"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227373"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Procedimiento Instalar Visual Studio Tools para Office runtime redistribuible
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Filtrar Instalar Visual Studio Tools para Office runtime redistribuible
   Visual Studio 2010 Tools para Office runtime debe instalarse en cada equipo que ejecuta las soluciones que se crean mediante el uso de Microsoft Office developer tools en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. El runtime se instala de forma automática cuando se instala [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y Microsoft Office. Para obtener más información, consulte [Visual Studio Tools para escenarios de instalación de Office en tiempo de ejecución](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
  En las situaciones siguientes, deberá seguir las instrucciones de instalación manual que aparecen a continuación:  
@@ -48,7 +48,7 @@ ms.locfileid: "54867213"
   
      Puede descargar estos archivos de programa de instalación de [Visual Studio 2010 Tools para Office runtime](http://go.microsoft.com/fwlink/?LinkId=140384). Los requisitos previos para [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] coinciden con los requisitos previos para .NET Framework.  
   
-     El [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]incluye paquetes de idioma. Si la instalación de Windows está establecida en un idioma distinto del inglés, puede mostrar los mensajes del runtime en el mismo idioma que se usa para Windows. De igual forma, si los usuarios finales instalan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] y, a continuación, ejecutan sus soluciones en instalaciones de Windows que están establecidas en un idioma distinto del inglés, los mensajes del runtime aparecerán en el mismo idioma que Windows. En algunos casos, puede necesitar paquetes de idioma adicionales. Por ejemplo, puede necesitar paquetes de idioma adicionales si su copia de Windows utiliza más de una configuración de idioma, o cambia a otro idioma después de que ya ha instalado el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Puede encontrar paquetes de idioma en [Microsoft Visual Studio 2010 Tools para el paquete de idioma de Microsoft Office system (versión 4.0 runtime)](http://go.microsoft.com/fwlink/?LinkId=140386).  
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] incluye paquetes de idioma. Si la instalación de Windows está establecida en un idioma distinto del inglés, puede mostrar los mensajes del runtime en el mismo idioma que se usa para Windows. De igual forma, si los usuarios finales instalan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] y, a continuación, ejecutan sus soluciones en instalaciones de Windows que están establecidas en un idioma distinto del inglés, los mensajes del runtime aparecerán en el mismo idioma que Windows. En algunos casos, puede necesitar paquetes de idioma adicionales. Por ejemplo, puede necesitar paquetes de idioma adicionales si su copia de Windows utiliza más de una configuración de idioma, o cambia a otro idioma después de que ya ha instalado el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Puede encontrar paquetes de idioma en [Microsoft Visual Studio 2010 Tools para el paquete de idioma de Microsoft Office system (versión 4.0 runtime)](http://go.microsoft.com/fwlink/?LinkId=140386).  
   
 ## <a name="see-also"></a>Vea también  
  [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
