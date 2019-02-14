@@ -1,5 +1,5 @@
 ---
-title: Get_compilandid | Microsoft Docs
+title: IDiaSectionContrib::get_compilandId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 71ef2e63-d095-42b6-88d8-626e3129f0d9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b53066e1fd247340d6d7d05b147597ccb338a19
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dda294060e9126e43e80bac35ea68ba202434140
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966134"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951214"
 ---
 # <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
 Recupera el identificador de la sección de la operación de compilación.  

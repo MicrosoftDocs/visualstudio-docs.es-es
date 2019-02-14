@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8778c047-edeb-4495-8f9f-3f8bbb297099
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a83a37a3aa454885d714be667ca7678ae543ff09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 42cfe138aa6be00628d319f01e7cccfbb4cc4f8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875921"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040169"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 Especifica el tipo de memoria para tener acceso.  

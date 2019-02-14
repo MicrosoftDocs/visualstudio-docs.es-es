@@ -1,32 +1,27 @@
 ---
-title: 'Cómo: Ver y editar código mediante Definición de Peek (Alt+F12) | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Ver y editar código mediante definición de Peek (ALT+F12) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 45f3dd20-902a-4047-8cca-9f18216123f4
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc99602fe1ca2003995594f75736d581fa37e0d0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 24db36d6bb3a431d5ee3848eb8a6a794980f919a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777308"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Cómo: Ver y editar código mediante Definición de Peek (Alt+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar el comando **Ver la definición** para ver y editar código sin salir del código que está escribiendo. **Ver la definición** e **Ir a definición** muestran la misma información, pero **Ver la definición** la muestra en una ventana emergente, mientras que **Ir a definición** muestra el código en una ventana de código independiente. **Ir a definición** hace que el contexto (es decir, la ventana de código activa, la línea actual y la posición del cursor) cambie a la ventana de código de definición. Con **Ver la definición**, puede ver y editar la definición y moverse por el archivo de definición manteniendo su lugar en el archivo de código original.  
   
- Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En Visual Basic, **ver la definición** muestra un vínculo a la **Examinador de objetos** para los símbolos que no tienen metadatos de definición (por ejemplo, tipos de .NET Framework que se generan en).  
+ Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En Visual Basic, **Ver la definición** muestra un vínculo al **Examinador de objetos** para los símbolos que no tienen metadatos de definición (por ejemplo, los tipos de .NET Framework integrados).  
   
 > [!IMPORTANT]
 >  No puede utilizar este comando en ninguna versión Express de Visual Studio 2013.  
@@ -85,6 +80,3 @@ Puede usar el comando **Ver la definición** para ver y editar código sin salir
   
 ## <a name="see-also"></a>Vea también  
  [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)
-
-
-

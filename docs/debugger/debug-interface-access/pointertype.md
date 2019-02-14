@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 67228681-7345-4537-8af3-93806803ee96
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11317981fd6b9993edc06fd986df476b9e64de5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81eb1057ebc8ccb06b08b1dc40779699d7e75981
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906818"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026845"
 ---
 # <a name="pointertype"></a>PointerType
 Cada puntero se identifica mediante un `SymTagPointerType` símbolos.  

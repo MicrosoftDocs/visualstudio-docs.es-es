@@ -1,5 +1,5 @@
 ---
-title: Get_machinetype | Microsoft Docs
+title: IDiaSymbol::get_machineType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30870b10-6f32-45c6-a0d7-020dea707710
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1975bed92547f842b6fef548a9773316f0816d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7287a90a19bcce21530b4df56ff5a2ead9d28cb8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957438"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024726"
 ---
 # <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
 Recupera el tipo de la CPU de destino.  

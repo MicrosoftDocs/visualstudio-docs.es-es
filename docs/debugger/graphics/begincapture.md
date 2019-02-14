@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9edbb52d-ee0b-4cc4-a382-972bcee067d3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2fc3dd2d2851df56d3638333a78f4852ad86bef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 536fac55c68a7736a37961ccab2741d6b8aedd41
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823819"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993187"
 ---
 # <a name="begincapture"></a>BeginCapture
 Inicia un intervalo de captura que finalizará con `EndCapture`.  

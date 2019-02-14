@@ -1,5 +1,5 @@
 ---
-title: Idiatable | Microsoft Docs
+title: IDiaTable::get_Count | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb47abe8-6706-4679-bc52-79f6444dae7e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0964077c158940298d5a99535a12054b79c57e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 822a32bdef1a9974c12b5f2b19e03cc4bedbcb0e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906831"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973881"
 ---
 # <a name="idiatablegetcount"></a>IDiaTable::get_Count
 Recupera el número de elementos de la tabla.  

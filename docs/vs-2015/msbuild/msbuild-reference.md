@@ -1,14 +1,9 @@
 ---
 title: Referencia de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
 caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b99a082355742ad81ee2ac2e7280a17cfd233a2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f1bded7e322387363bddb6b3aa2e6d7913d2da8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773178"
 ---
 # <a name="msbuild-reference"></a>Referencia de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +73,7 @@ ms.locfileid: "49292310"
  Enumera los caracteres que se tengan que "escapar" para que se interpreten correctamente. Una secuencia de escape es una serie de caracteres que indica que lo que sigue es una interpretación alternativa.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Información general sobre MSBuild](http://msdn.microsoft.com/en-us/e39f13f7-1e1d-4435-95ca-0c222bca071c) presenta [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] y proporciona vínculos a temas que explican cómo usarlo para compilar proyectos.  
+ [Información general sobre MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Presenta [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] y proporciona vínculos a temas que explican cómo usarlo para compilar proyectos.  
   
  <xref:Microsoft.Build.Conversion>  
  Contiene la referencia de espacio de nombres de conversión  
@@ -100,6 +95,3 @@ ms.locfileid: "49292310"
   
  <xref:Microsoft.Build.Utilities>  
  Contiene la referencia de espacio de nombres de utilidades
-
-
-

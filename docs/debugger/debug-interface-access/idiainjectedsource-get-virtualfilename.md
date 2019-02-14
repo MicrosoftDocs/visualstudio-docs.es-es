@@ -1,5 +1,5 @@
 ---
-title: Get_virtualfilename | Microsoft Docs
+title: IDiaInjectedSource::get_virtualFilename | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9977075-8fd1-4b11-bfff-d87e9f2586dc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a6cbaaf3594e7d4e708d5f70bcc3c75cb88718
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: edb0d0b163830b488c44f1c5e3143e1a87e69d55
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958936"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926057"
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
 Recupera el nombre dado no es un archivo de código; es decir, el código insertado.  

@@ -1,25 +1,20 @@
 ---
-title: Introducción a Python | Documentos de Microsoft
-ms.custom: ''
+title: Introducción a Python | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 18e55aef8d95110dc44f20084eb5e45f643bf3cf
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275293"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833948"
 ---
 # <a name="getting-started-with-python"></a>Introducción a Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +27,11 @@ Python es un lenguaje de programación más popular que utiliza muchas universid
 
 Como un lenguaje de programación Python es:
   
-- Confiable.
+- Fiable
 - Suelen ser útiles para scripting programas rápidos, scripting de aplicaciones, aplicaciones de escritorio, servidores web, servicios web y la informática científica.
-- Fácil de aprender y tiene un buen diseño para promover una codificación correcta (numerosas universidades lo usan para cursos introductorios de programación).
+- Fácil de aprender a usar y con un diseño adecuado para promover una codificación correcta (numerosas universidades lo usan para cursos de introducción a la programación)
 - Flexible, compatibilidad con los estilos de programación imperativos, funcionales y orientada a objetos.
-- Gratuito de código abierto.
+- Código abierto y gratuito
 - Se ejecuta correctamente en todos los sistemas operativos principales.  
 - Compatible con muchas bibliotecas gratis, útiles y bien diseñadas.  
 - Admite una gran cantidad de documentación, ejemplos y una gran comunidad de desarrolladores.  
@@ -48,10 +43,10 @@ Para instalar Python en sí mismo, visite [ https://www.python.org/download/ ](h
   
 ## <a name="python-tools-for-visual-studio"></a>Python Tools para Visual Studio
   
-Las herramientas de Python para Visual Studio, que puede instalar desde [visualstudio.com](https://www.visualstudio.com/en-us/explore/python-vs), proporcionan las siguientes características:  
+Las herramientas de Python para Visual Studio, que puede instalar desde [visualstudio.com](https://www.visualstudio.com/explore/python-vs), proporcionan las siguientes características:  
   
 - Compatibilidad con varios intérpretes: distintas versiones de CPython, IronPython e IPython  
-- Un sistema de proyectos que selecciona implícitamente una estructura de carpetas de código de Python y también permite control explícito para que pueda identificar código de la aplicación, código de prueba, las páginas web, JavaScript, los scripts de compilación y así sucesivamente.  
+- Un sistema de proyectos que selecciona implícitamente una estructura de carpetas de código Python y también permite control explícito para que pueda identificar el código de la aplicación, el código de prueba, las páginas web, JavaScript, los scripts de compilación y demás.  
 - Plantillas de proyecto de consola, web, Azure, datos científicos y otros tipos de proyectos.    
 - El SDK de Azure para Python (ver abajo)    
 - Características de edición avanzada y comprensión de código, incluyendo usar color de sintaxis, autocompletado en el código y las bibliotecas, ayuda para las firmas, vista de clases, Ir a definición, Buscar todas las referencias, refactorización y mucho más.    
@@ -98,10 +93,9 @@ Se recomienda obtener IPython y las bibliotecas informáticas científicas (matp
   
 ## <a name="see-also"></a>Vea también  
 
-[Introducción a PTVS: configuración de Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[Introducción a PTVS: comenzar a codificar (proyectos)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[Introducción a PTVS: editar código](../python/getting-started-with-ptvs-editing-code.md)
-[Introducción a PTVS: depurar](../python/getting-started-with-ptvs-debugging.md)
+[Introducción a PTVS: Configuración de Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[Introducción a PTVS: Comenzar a codificar (proyectos)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[Introducción a PTVS: Edición de código](../python/getting-started-with-ptvs-editing-code.md)
+[Introducción a PTVS: Depuración](../python/getting-started-with-ptvs-debugging.md)
 [Introducción a PTVS: Python interactivo](../python/getting-started-with-ptvs-interactive-python.md)
-[Introducción a PTVS: compilar un sitio web en Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
-
+[Introducción a PTVS: Creación de un sitio Web en Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

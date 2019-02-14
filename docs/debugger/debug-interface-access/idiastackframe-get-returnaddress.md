@@ -1,5 +1,5 @@
 ---
-title: Get_returnaddress | Microsoft Docs
+title: IDiaStackFrame::get_returnAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0df91981-919f-48ed-9c70-4121567d645b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a94a37d9879560e02bf1ed5b22e1dda06b3046de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee42ee1a2ccea5f17a6f6fe60d165bdb151884f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859495"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026911"
 ---
 # <a name="idiastackframegetreturnaddress"></a>IDiaStackFrame::get_returnAddress
 Recupera la dirección de devolución del marco.  

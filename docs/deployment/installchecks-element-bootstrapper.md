@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3556c36e00ac092c1ebb3af4e6d09921fcd11233
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023582"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; (elemento, arranque)
 El `InstallChecks` elemento admite el inicio de una variedad de pruebas en el equipo local para asegurarse de que se han instalado todos los requisitos previos para una aplicación.  
@@ -168,7 +168,7 @@ El `InstallChecks` elemento admite el inicio de una variedad de pruebas en el eq
 |Propiedad.|Notas|Valores posibles|  
 |--------------|-----------|---------------------|  
 |`Version9X`|Número de versión del sistema operativo Windows 9 X.|4.10 = Windows 98|  
-|`VersionNT`|Número de versión de un sistema operativo basado en Windows NT.|Principal.secundaria.servicepack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Profesional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
+|`VersionNT`|Número de versión de un sistema operativo basado en Windows NT.|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Profesional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
 |`VersionNT64`|Número de versión de un sistema operativo basado en Windows NT de 64 bits.|Igual que se ha mencionado anteriormente.|  
 |`VersionMsi`|Número de versión del servicio Windows Installer.|2.0 = Windows Installer 2.0|  
 |`AdminUser`|Especifica si un usuario tiene privilegios de administrador en un sistema operativo basado en Windows NT.|0 no = privilegios de administrador<br /><br /> 1 = privilegios de administrador|  

@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsectioncontribs | Microsoft Docs
+title: IDiaEnumSectionContribs::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a6bb2adb-ee6d-4f3c-ab5b-e89361c8880e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915588402264ac6ba7076f3e9cd95b347b946689
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96c64a1ebee54470823b2426e3363a1c61cd4acd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936274"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008425"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 Recupera un número especificado de las contribuciones de la sección de la secuencia de enumeración.  

@@ -1,14 +1,9 @@
 ---
 title: Invalidar la configuración de ToolsVersion | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
 - MSBuild, building solutions with
@@ -16,13 +11,13 @@ ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2a4e3485b09780490a9d589766eeed85e6b84e28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e4cd6d3199d09ffa56c0ac6d2d29fcba613fd280
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770715"
 ---
 # <a name="overriding-toolsversion-settings"></a>Invalidar el valor de la versión de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +111,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
 5.  Si se establece la variable de entorno `MSBUILDLEGACYDEFAULTTOOLSVERSION`, o si `ToolsVersion` no se establece, entonces se usan los pasos siguientes:  
   
-    1.  El atributo `ToolsVersion` del elemento [Project](../msbuild/project-element-msbuild.md) del archivo del proyecto. Si este atributo no existe, se supone que la versión actual.  
+    1.  El atributo `ToolsVersion` del elemento [Project](../msbuild/project-element-msbuild.md) del archivo del proyecto. Si el atributo no existe, se presupone que es la versión actual.  
   
     2.  La versión de las herramientas predeterminada en el archivo MSBuild.exe.config.  
   
@@ -137,6 +132,3 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
  [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md)
-
-
-

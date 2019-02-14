@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3e6e88b-0594-4d82-9457-480239a2e85a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 214f62788c77ea5a15d6065a1661213201d1a341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c5af84f7d8458855af7cef397f9e631b071c21f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827892"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991377"
 ---
 # <a name="idiastackframegetfunctionstart"></a>IDiaStackFrame::get_functionStart
 Recupera una marca que indica si el bloque contiene el punto de entrada de una función.  

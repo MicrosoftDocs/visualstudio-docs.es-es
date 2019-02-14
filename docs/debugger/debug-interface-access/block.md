@@ -1,5 +1,5 @@
 ---
-title: Bloque | Microsoft Docs
+title: Block | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 95b7b0c1-ecc9-405f-8456-5f9cfb866498
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ec49d3c147d6666c81e5ba1ef6d092de5baf0ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 40fc3c1ecd68177fdc032f634b73e65c8b41c443
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832546"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033835"
 ---
 # <a name="block"></a>Bloque
 Cada bloque de código se identifica mediante un `SymTagBlock` símbolos. Símbolos de bloque se usan para identificar los ámbitos anidados dentro de las funciones.  

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0baff8d685a1ac5f4899edc2f1dbf6ddf9c2e5b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3525d12bfbb745c54bb452a16d12cd65394023ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941078"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995692"
 ---
 # <a name="application-deployment-prerequisites"></a>Requisitos previos para la implementación de aplicaciones
 
@@ -45,10 +45,10 @@ Para que la aplicación para instalar y ejecutar correctamente, debe instalar pr
 
 - La versión mínima de todos los ensamblados que deben estar preinstalados en la caché global de ensamblados (GAC), según lo especificado por las declaraciones de dependencias de ensamblado en el manifiesto del ensamblado.  
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede detectar requisitos previos que falten, y puede instalar los requisitos previos mediante el uso de un programa previo. Para obtener más información, vea [Cómo: Requisitos previos de instalación con una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede detectar requisitos previos que falten, y puede instalar los requisitos previos mediante el uso de un programa previo. Para obtener más información, consulte [Cómo: instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
 
 > [!NOTE]
->  Para cambiar los valores en los manifiestos generados por herramientas tales como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y *MageUI.exe*, necesita editar el manifiesto de la aplicación en un editor de texto y, después, volver a firmar los manifiestos de la aplicación y de la implementación. Para obtener más información, vea [Cómo: Repetición de la firma de manifiestos de implementación y aplicación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Para cambiar los valores en los manifiestos generados por herramientas tales como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y *MageUI.exe*, necesita editar el manifiesto de la aplicación en un editor de texto y, después, volver a firmar los manifiestos de la aplicación y de la implementación. Para obtener más información, consulta [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
 
  Si usa Visual Studio y ClickOnce para implementar su aplicación, los paquetes de programa previo se seleccionan de forma predeterminada según la versión de .NET Framework en la solución. Sin embargo, si cambia la versión de .NET Framework de destino, debe actualizar manualmente las opciones en el **cuadro de diálogo Requisitos previos**.  
 
@@ -75,10 +75,10 @@ Para que la aplicación para instalar y ejecutar correctamente, debe instalar pr
 | Argumento de la línea de comandos | Descripción |
 | - | - |
 | **-?, -h, -help** | Muestra el cuadro de diálogo Ayuda. |
-| **-dirección url, - componentsurl** | Muestra la dirección URL almacenada y la dirección URL de los componentes para esta instalación. |
-| **-url =** `location` | Establece la dirección URL donde *Setup.exe* buscará la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
-| **-componentsurl =** `location` | Establece la dirección URL donde *Setup.exe* buscará las dependencias, como [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
-| **-homesite =** `true`**&#124;** `false` | Cuando `true`, descarga las dependencias de la ubicación preferida en el sitio del proveedor. Esta configuración invalida la **- componentsurl** configuración. Cuando `false`, descarga las dependencias de la dirección URL especificada por **- componentsurl**. |
+| **-url, -componentsurl** | Muestra la dirección URL almacenada y la dirección URL de los componentes para esta instalación. |
+| **-url=** `location` | Establece la dirección URL donde *Setup.exe* buscará la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
+| **-componentsurl=** `location` | Establece la dirección URL donde *Setup.exe* buscará las dependencias, como [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| **-homesite=** `true` **&#124;** `false` | Cuando `true`, descarga las dependencias de la ubicación preferida en el sitio del proveedor. Esta configuración invalida la **- componentsurl** configuración. Cuando `false`, descarga las dependencias de la dirección URL especificada por **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Compatibilidad con el sistema operativo  
  El programa previo de Visual Studio no se admite en Server Core de Windows Server 2008 o Windows Server 2008 R2 Server Core, ya que proporcionan un entorno de servidor de bajo mantenimiento con funcionalidad limitada. Por ejemplo, la opción de instalación Server Core solo admite el perfil de .NET Framework 3.5 Server Core, que no se puede ejecutar las características de Visual Studio que dependen de la versión completa de .NET Framework.  

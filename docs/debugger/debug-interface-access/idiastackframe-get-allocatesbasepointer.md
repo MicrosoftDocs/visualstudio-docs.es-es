@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a91e9c8e-c5e3-4887-a60b-f03b5a98f30c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 223c8ded44770cc84ed61d35819cd840bca1248b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a747edd3c0140661177438cd9d25e0d1ec811bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951516"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029639"
 ---
 # <a name="idiastackframegetallocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
 Recupera una marca que indica si el puntero base se asigna para el código en este intervalo de direcciones.  

@@ -1,5 +1,5 @@
 ---
-title: Idiasegment | Microsoft Docs
+title: IDiaSegment::get_read | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aafbc86d-352c-4e1a-911a-1472d2d59212
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54326c915acbbdc33c44b52efd19fd0f6edd1f66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2fa39c6bfd36b59693b76df3ce3332e786fa313
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911330"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928963"
 ---
 # <a name="idiasegmentgetread"></a>IDiaSegment::get_read
 Recupera una marca que indica si se puede leer el segmento.  

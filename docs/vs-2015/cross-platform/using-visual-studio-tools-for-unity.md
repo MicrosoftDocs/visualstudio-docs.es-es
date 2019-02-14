@@ -1,25 +1,20 @@
 ---
 title: Uso de Visual Studio Tools para Unity | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: a7dbe0e13691e5ac0dbf67945728bada3ef4e57f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777386"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ En esta sección aprenderá a utilizar las características de productividad e i
   
 3.  Busque el método que desee sobrecargar. En la ventana Crear método de script, comience a escribir el nombre del método en el cuadro de texto. Se mostrará una lista de los métodos cuyos nombres coincidan con lo que ha escrito.  
   
-4.  Seleccione el método que desee sobrecargar. Cuando se muestre el método que quiera en la lista, selecciónelo con el mouse o las teclas de flecha y, después, presione **Entrar**. Si es el único método en la lista, puede simplemente presionar **ENTRAR**. El método se inserta en el código.  
+4.  Seleccione el método que desee sobrecargar. Cuando se muestre el método que quiera en la lista, selecciónelo con el mouse o las teclas de flecha y, después, presione **Entrar**. Si es el único método de la lista, puede simplemente presionar **Entrar**. El método se inserta en el código.  
   
 ### <a name="unity-project-explorer"></a>Explorador de proyectos de Unity  
  Puede utilizar el Explorador de proyectos de Unity para navegar por el proyecto de Unity dentro de Visual Studio.  
@@ -193,4 +188,3 @@ En esta sección aprenderá a utilizar las características de productividad e i
      Los archivos PDB son necesarios para la depuración porque contienen símbolos de depuración de los archivos DLL y asignan el código del archivo DLL a su forma de código fuente. Visual Studio Tools para Unity usará información de los archivos DLL y PDB para crear un archivo DLL.MDB, que es el formato de símbolo de depuración utilizado por el motor de scripting de Unity.  
   
 4. Depure el código que ha creado. Ahora puede depurar el código fuente de archivos DLL junto con el código fuente del proyecto de Unity y utilizar todas las características de depuración a las que está acostumbrado, como los puntos de interrupción y ejecutar código paso a paso.
-

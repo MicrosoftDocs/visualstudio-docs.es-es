@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: Solucionar problemas de plantillas | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Solucionar problemas de plantillas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual Studio templates, troubleshooting
 ms.assetid: 3e577ad2-f725-4c11-93b3-477f2404ec81
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a68097745de1f1d94e5c09963a474a0095588fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb2c708bfb6bfafe90b548ad2826e0cf11882a3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296431"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793211"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Cómo: Solucionar problemas de plantillas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Si una plantilla no se puede cargar en el entorno de desarrollo, hay varias mane
 5.  Compruebe que el XML del archivo .vstemplate cumple el esquema de plantilla de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información sobre el esquema .vstemplate, vea [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) (Referencia de esquema de plantillas de Visual Studio).  
   
     > [!NOTE]
-    >  Para obtener compatibilidad con IntelliSense mientras crea el archivo .vstemplate, agregue un `xmlns` atributo a la `VSTemplate` elemento y asígnele un valor de http://schemas.microsoft.com/developer/vstemplate/2005.  
+    >  Para obtener compatibilidad con IntelliSense mientras se crea el archivo `xmlns`vstemplate`VSTemplate`, agregue un atributo http://schemas.microsoft.com/developer/vstemplate/2005 al elemento  y asígnele un valor de .  
   
 6.  Guarde y cierre el archivo .vstemplate.  
   
@@ -71,6 +66,3 @@ Si una plantilla no se puede cargar en el entorno de desarrollo, hay varias mane
  [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)   
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-
-
-

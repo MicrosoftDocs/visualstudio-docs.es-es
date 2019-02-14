@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata | Microsoft Docs
+title: IDiaFrameData::get_addressOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b68e2e68-6483-4936-bf97-1b0a13cb75e2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3880628077a251c02cf501d7a877fc8b259ed248
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6ba0a925f74bec1c4bd14d20bda13260f2083d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828048"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035788"
 ---
 # <a name="idiaframedatagetaddressoffset"></a>IDiaFrameData::get_addressOffset
 Recupera la parte del ajuste de la dirección de código para el marco.  

@@ -1,5 +1,5 @@
 ---
-title: Put_loadaddress | Microsoft Docs
+title: IDiaSession::put_loadAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b157b245-1ea0-4b80-8962-d8b278dbc742
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de23c511f238578de2492992556b557c051841db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 488ae20ae4e38905b722f833a52676eea6ce0e81
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956993"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035775"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 Establece la dirección de carga del archivo ejecutable que corresponde a los símbolos en este almacén de símbolos.  

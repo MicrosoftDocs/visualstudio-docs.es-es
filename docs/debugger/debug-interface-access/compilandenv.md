@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 808404bb-ece1-47f1-b9ea-c76d4d86ddd9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc538472dec0c0def2cdc5906eecf0c735b9cffc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44da3c5979e9bacc2c777c365347166ab8928fba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953188"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023699"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 El compilador puede incluir variables de entorno adicionales con los símbolos. Hay un `SymTagCompilandEnv` símbolo para cada una de estas variables.  

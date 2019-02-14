@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b696f350-fc08-4352-9287-a15e87512c1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f10f12f8f9f08335e6234757c5254efca78dd18
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: e6854a099548b8db97b26a2b3fe70c7870fb2af2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894134"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964943"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Expone los detalles de los desplazamientos de memoria y la ubicación bases del módulo o la imagen.  
@@ -115,7 +115,7 @@ void ShowImageData(IDiaSession *pSession)
   
  Biblioteca: diaguids.lib  
   
- Archivo DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vea también  
  [Interfaces (SDK de acceso a la interfaz de depuración)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

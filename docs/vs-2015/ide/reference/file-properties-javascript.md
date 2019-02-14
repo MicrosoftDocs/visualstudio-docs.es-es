@@ -1,14 +1,9 @@
 ---
 title: Propiedades de archivo, JavaScript | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -30,13 +25,13 @@ ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909739"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780374"
 ---
 # <a name="file-properties-javascript"></a>Propiedades de archivo, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Puede usar propiedades de archivo para indicar qué acciones debe realizar el si
   
 - **Contenido**: el archivo está incluido en el manifiesto de paquete. Por ejemplo, esta opción es el valor predeterminado para un archivo de vídeo, audio, imagen, .htm, .js o.css.  
   
-- **Manifiesto** : el archivo no está incluido en el manifiesto del paquete. En su lugar, el archivo se usa para la entrada al generar el manifiesto de paquete. Este es el valor predeterminado para el archivo package.appxmanifest.  
+- **Manifiesto**: el archivo no está incluido en el manifiesto de paquete. En su lugar, el archivo se usa para la entrada al generar el manifiesto de paquete. Este es el valor predeterminado para el archivo package.appxmanifest.  
   
 - **Recurso**: el archivo no está incluido en el manifiesto de paquete. En su lugar, el contenido del archivo se indexa en el Índice de recursos del paquete (PRI) que se incluye en el manifiesto de paquete. Normalmente se usa para los archivos de recursos.  
   
@@ -96,13 +91,10 @@ Puede usar propiedades de archivo para indicar qué acciones debe realizar el si
  Muestra la ruta de acceso del archivo SDK al que se hace referencia.  
   
 ### <a name="uri"></a>URI  
- Muestra el URI que debe incluirse en los archivos del proyecto HTML o JavaScript para incluir el archivo como un archivo de origen.  
+ Muestra el URI que debe incluirse en los archivos de JavaScript o HTML del proyecto para incluir el archivo como un archivo de origen.  
   
 ### <a name="version"></a>Versión  
  Muestra la versión de la referencia.  
   
 ## <a name="see-also"></a>Vea también  
- [NIB: Propiedades del proyecto (Visual Studio)](http://msdn.microsoft.com/en-us/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
-
-
-
+ [NIB: Propiedades del proyecto (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

@@ -1,5 +1,5 @@
 ---
-title: Get_comdat | Microsoft Docs
+title: IDiaSectionContrib::get_comdat | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8bd9be8d-59ee-4698-b055-daba354b8dcc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ba0e015ae4383a0d8bb215d565635570f04daa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7a15e0001342a31d13cb1b77f2c8e6d7fc4d31c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951451"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936273"
 ---
 # <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
 Recupera una marca que indica si la sección es un registro COMDAT.  
