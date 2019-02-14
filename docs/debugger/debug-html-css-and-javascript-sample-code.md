@@ -10,19 +10,19 @@ dev_langs:
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 131fb1cf2db9a22bb6bc6aa4ca313481c3b399aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947561"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991585"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Depurar código de ejemplo HTML y CSS
   
- El código de este tema es el archivo de ejemplo para [inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md) Los errores presentes por diseño en el tutorial rápido se corrigen en esta versión del código.  
+ El código de este tema es el archivo de ejemplo para [inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md). Los errores presentes por diseño en el tutorial rápido se corrigen en esta versión del código.  
   
 ## <a name="sample-code"></a>Código de ejemplo  
  El siguiente código HTML se usa en la etiqueta \<body> del Inicio rápido.  
@@ -101,4 +101,4 @@ ms.locfileid: "53947561"
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
