@@ -1,5 +1,5 @@
 ---
-title: Idialinenumber | Microsoft Docs
+title: IDiaLineNumber::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9048ef91-a59d-4ad8-90cb-4c13d0989241
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60fdc5a568f70795aff3388a3b0722807611bfc1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1c5b485bf0fbd06b71aa7fb3239ca2796a4512a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985701"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944805"
 ---
 # <a name="idialinenumbergetvirtualaddress"></a>IDiaLineNumber::get_virtualAddress
 Recupera la dirección virtual (VA) del bloque.  

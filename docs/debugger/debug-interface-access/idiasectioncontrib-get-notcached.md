@@ -1,5 +1,5 @@
 ---
-title: Get_notcached | Microsoft Docs
+title: IDiaSectionContrib::get_notCached | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5408ea53-f64c-431e-9f62-62819026b038
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9aaf964d4072691746009c4d1ebb8f46a3c4d47
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8903e302b6b6461e2acb6084ac25f06c6666eb21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851607"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973608"
 ---
 # <a name="idiasectioncontribgetnotcached"></a>IDiaSectionContrib::get_notCached
 Recupera una marca que indica si la sección no se puede almacenar en caché.  

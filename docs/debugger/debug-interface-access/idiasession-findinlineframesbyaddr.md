@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: e7dc1ac7-bb09-45be-96d2-365a9b7336e4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d02383a2635e3a50a5f72ceec157624cd5e141a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c46728d50531b77499d59260833a3a5f9f74e1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843442"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981719"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
 Recupera una enumeración que permite que un cliente recorrer en iteración todos los marcos en línea en una dirección determinada.  

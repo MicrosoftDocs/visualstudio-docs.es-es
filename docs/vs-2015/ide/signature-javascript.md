@@ -1,14 +1,9 @@
 ---
-title: '&lt;firma&gt; (JavaScript) | Documentos de Microsoft'
-ms.custom: ''
+title: '&lt;signature&gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <signature> JavaScript XML tag
 - signature JavaScript XML tag
@@ -16,15 +11,15 @@ ms.assetid: 319138e7-cfbe-4b37-9643-2ddb7f9c63d4
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b3278087545a4d49d5f4f2f0d3f6942c4ec6d9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 02a4c36f3969ca0f9ef61e817afb82eb8247f041
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293012"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780322"
 ---
-# <a name="ltsignaturegt-javascript"></a>&lt;firma&gt; (JavaScript)
+# <a name="ltsignaturegt-javascript"></a>&lt;signature&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Agrupa un conjunto de elementos relacionados para que una función o un método ofrezca documentación para las funciones sobrecargadas.  
@@ -100,6 +95,3 @@ function add(a, b) {
   
 ## <a name="see-also"></a>Vea también  
  [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
-
-
-

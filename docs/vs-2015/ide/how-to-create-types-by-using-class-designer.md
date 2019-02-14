@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Crear tipos con el Diseñador de clases | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear tipos con el Diseñador de clases | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -22,13 +17,13 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175041"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772159"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Cómo: Crear tipos con el Diseñador de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
     |Clases, clases abstractas, estructuras o structs|Métodos, propiedades, campos, eventos, constructores (método), destructores (método) y constantes que definen el tipo|  
     |Enumeraciones|Valores de campo que constituyen la enumeración|  
     |Interfaces|Métodos, propiedades y eventos que constituyen la interfaz|  
-    |Delegate|Parámetros que definen el delegado|  
+    |delegado|Parámetros que definen el delegado|  
     |Module|Métodos, propiedades, campos, eventos, constructores (método) y constantes que definen el módulo|  
   
      Vea [Crear miembros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -84,7 +79,7 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
   
 1.  Haga clic en la forma del tipo en un diagrama de clases.  
   
-2.  En la ventana Propiedades, junto a la **atributos personalizados** propiedad para el tipo, haga clic en el botón de puntos suspensivos (...).  
+2.  En la ventana Propiedades, junto a la propiedad **Atributos personalizados** del tipo, haga clic en el botón de puntos suspensivos (...).  
   
 3.  Agregue uno o varios atributos personalizados, uno por línea. No los encierre entre corchetes.  
   
@@ -106,6 +101,3 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
  [Crear y configurar miembros de tipo (Diseñador de clases)](../ide/creating-and-configuring-type-members-class-designer.md)   
  [Trabajar con diagramas de clases (Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md)   
  [Diseñar clases y tipos (Diseñador de clases)](../ide/designing-classes-and-types-class-designer.md)
-
-
-

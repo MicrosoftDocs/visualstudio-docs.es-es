@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d66e5c84-565d-494e-8486-f91db9a34548
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f498ea6f34522b3eb5ca8eda78f9bb188ea1c241
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80f269df947227f36e0c87a7efeddda8d8ef1248
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957516"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944233"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 Facilita el recorrido de la pila mediante el archivo de programa depuración (.pdb) de la base de datos.  
@@ -56,7 +56,7 @@ IDiaStackWalkHelper: IUnknown
   
  Biblioteca: diaguids.lib  
   
- Archivo DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vea también  
  [Interfaces (SDK de acceso a la interfaz de depuración)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

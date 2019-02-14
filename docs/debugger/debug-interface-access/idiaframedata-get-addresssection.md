@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata | Microsoft Docs
+title: IDiaFrameData::get_addressSection | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e4eedede-4a1c-4da2-a812-b92df328fd8d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 291db81f2c17b5baa6d5b719b659b07919b86508
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01d3f343e54f2d45799b5020f7ea0d39d79f524c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898731"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977361"
 ---
 # <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
 Recupera la parte de la sección de la dirección de código para el marco.  

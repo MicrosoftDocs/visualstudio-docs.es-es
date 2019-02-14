@@ -1,5 +1,5 @@
 ---
-title: Get_statement | Microsoft Docs
+title: IDiaLineNumber::get_statement | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22b8ee29-79ef-427f-bd05-00d255ab836b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6b16d142f5bdc83b9a16e3299c15a0c845cf2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e517eac8e3649328c56b77e86288fbb9a52ba436
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949328"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977439"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 Recupera una marca que indica que esta información de línea describe el principio de una instrucción, en lugar de una expresión, en el código fuente del programa.  

@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Localizar y organizar plantillas de proyectos y de elementos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Localizar y organizar el proyecto y plantillas de elemento | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,13 +15,13 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830982"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778531"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Cómo: Localizar y organizar plantillas de proyectos y de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
   Por ejemplo, el directorio siguiente contiene las plantillas de proyecto personalizadas de [!INCLUDE[csprcs](../includes/csprcs-md.md)]:  
   
-  C:\Documents and Settings\nombreDeUsuario\Mis documentos\\< versión de Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\UserName\My Documents\Visual Studio \\Version\>\Templates\ProjectTemplates\Visual C#\  
   
   Las plantillas personalizadas no incluyen un subdirectorio para las plantillas de otros idiomas. Puede cambiar el directorio predeterminado para las plantillas personalizadas en el cuadro de diálogo **Opciones**, bajo **Entorno\Proyectos y soluciones**.  
   
@@ -122,7 +117,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
 1. Cree una carpeta en la carpeta del lenguaje del directorio de plantillas de proyecto personalizadas. Por ejemplo, para crear la categoría HelloWorld para las plantillas de [!INCLUDE[csprcs](../includes/csprcs-md.md)], crearía el directorio siguiente:  
   
-    Documentos \My\\< versión de Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\Visual Studio \\Version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. Coloque todas las plantillas de esta categoría en la nueva carpeta.  
   
@@ -136,7 +131,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
 1.  Cree una carpeta en la carpeta del lenguaje en el directorio de plantillas de elementos personalizadas. Por ejemplo, para crear la categoría HelloWorld para las plantillas de [!INCLUDE[csprcs](../includes/csprcs-md.md)], se  crearía el directorio siguiente:  
   
-     Documentos \My\\< versión de Visual Studio\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\Visual Studio \\Version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  Coloque todas las plantillas de esta categoría en la nueva carpeta.  
   
@@ -183,6 +178,3 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
  [NumberOfParentCategoriesToRollUp (Plantillas de Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)   
  [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
-
-
-

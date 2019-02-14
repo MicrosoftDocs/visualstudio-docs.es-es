@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib | Microsoft Docs
+title: IDiaSectionContrib::get_length | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d0f6b9c7-90fc-4e3c-945a-b8f683a8f006
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852bf1c4a502c9d76a9f7f460c8fd62c26f73df9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9b16fa64ec77b32ab6c2634c85535658e94cb1e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918718"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955965"
 ---
 # <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
 Recupera el número de bytes en una sección.  

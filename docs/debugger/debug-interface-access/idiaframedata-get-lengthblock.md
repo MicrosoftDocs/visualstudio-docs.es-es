@@ -1,5 +1,5 @@
 ---
-title: Get_lengthblock | Microsoft Docs
+title: IDiaFrameData::get_lengthBlock | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2e54deb7-7744-428e-913c-1d47a2aa89b0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e2eafc0737a1bb93df73b7648734d1f1c77708a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3466f211edb90783a64f8c7d02c602847e616d82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875960"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043004"
 ---
 # <a name="idiaframedatagetlengthblock"></a>IDiaFrameData::get_lengthBlock
 Recupera la longitud, en bytes, del bloque de código descrito por el marco.  

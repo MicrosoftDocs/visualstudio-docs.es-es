@@ -1,5 +1,5 @@
 ---
-title: Get_overloadedoperator | Microsoft Docs
+title: IDiaSymbol::get_overloadedOperator | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 257a9894-e980-47ae-bdc0-c5e2293ea734
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4941bcdbd7a88acc05d948b847c8fcb82973efdd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25d0d21bc0959c2c96351da45e2da87f23f7eb4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959123"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996017"
 ---
 # <a name="idiasymbolgetoverloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 Recupera una marca que especifica si el tipo de datos definido por el usuario dispone de los operadores sobrecargados.  

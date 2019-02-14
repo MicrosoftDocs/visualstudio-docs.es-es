@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a3ecd9d4b7e1dc8cffc3a11a8b58c0812a1a36
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0697507b9df10ac1f39108581a651c5290ad6b78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829649"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919557"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Especifica un registro de destino.  
@@ -409,37 +409,37 @@ enum CV_HREG_e { 
 ```  
   
 ## <a name="elements"></a>Elementos  
- CV_REG_ *  
+ CV_REG_*  
  Registros que usan Intel 80 x 86 y procesadores ix86 y p-code.  
   
- CV_R68_ *  
+ CV_R68_*  
  Registros usados por el procesador de 68K.  
   
- CV_M4_ *  
+ CV_M4_*  
  Registros usados por el procesador de serie de MIPS 4000.  
   
- CV_ALPHA_ *  
+ CV_ALPHA_*  
  Registros usados por Digital equipos Corporation Alpha AXP serie procesador.  
   
- CV_PPC_ *  
+ CV_PPC_*  
  Registros usados por el procesador de IBM/Motorola PowerPC.  
   
  CV_SH3_ * y CV_SH_\*  
  Registros usados por procesador serie Hitachi SH3 y Hitachi SH.  
   
- CV_ARM_ *  
+ CV_ARM_*  
  Registros que se usan los procesadores de Advanced RISC Machine (ARM).  
   
- CV_IA64_ *  
+ CV_IA64_*  
  Registros que se usan los procesadores de Intel IA64 serie.  
   
- CV_TRI_ *  
+ CV_TRI_*  
  Registros usados por procesador Infineon tecnologías TriCore.  
   
- CV_AM33_ *  
+ CV_AM33_*  
  Registra usando Matsushita/Panasonic AM33 y relacionados con los procesadores.  
   
- CV_M32R_ *  
+ CV_M32R_*  
  Registros usados por el procesador de Mitsubishi M32R.  
   
 ## <a name="remarks"></a>Comentarios  

@@ -1,5 +1,5 @@
 ---
-title: Get_frontendminor | Microsoft Docs
+title: IDiaSymbol::get_frontEndMinor | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 40792153-827c-4859-be7c-6aa16d5abab6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4cadb5dbea74bcdd3c020ba8a08ccd8bbb76fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc74214dfdad676926c20a83d74c4ee9016fc200
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847235"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965973"
 ---
 # <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
 Recupera el número de versión secundaria de front-end.  

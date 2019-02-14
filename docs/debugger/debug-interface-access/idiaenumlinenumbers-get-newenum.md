@@ -1,5 +1,5 @@
 ---
-title: Idiaenumlinenumbers | Microsoft Docs
+title: IDiaEnumLineNumbers::get__NewEnum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8b15f76b-a431-4f60-8bed-3206256b0d10
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e77104708008eef9a928fe0ae148d84fd47807b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bce737861eb75e291f3eb11cf7cee6419eefd095
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875477"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949277"
 ---
 # <a name="idiaenumlinenumbersgetnewenum"></a>IDiaEnumLineNumbers::get__NewEnum
 Recupera el <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versión de este enumerador.  

@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreams | Microsoft Docs
+title: IDiaEnumDebugStreams::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e85ec592-de97-4f95-a774-1623315ba415
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e22f7fffa3b1eab0726b47b8b4d8a23c91804b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b1420fabc81227ef57884416e9459ed42587b95
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875360"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031479"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
 Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.  

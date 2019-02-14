@@ -1,5 +1,5 @@
 ---
-title: Get_arrayindextype | Microsoft Docs
+title: IDiaSymbol::get_arrayIndexType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd63b9ec-9694-406c-b37f-bde6bd5fcbf2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dacaba9db4a05eaaf173cc4936b075782b725025
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 628a8005f904e946e4f939f94b866cbdfc8672ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820882"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939561"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 Recupera la interfaz de símbolo del tipo de índice de matriz del símbolo.  

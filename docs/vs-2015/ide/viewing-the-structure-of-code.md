@@ -1,14 +1,9 @@
 ---
 title: Ver la estructura del código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -32,13 +27,13 @@ ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801217"
 ---
 # <a name="viewing-the-structure-of-code"></a>Ver la estructura del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ Puede examinar los objetos y miembros de proyectos de Visual Studio y los objeto
   
  [Ventana Definición de código (C#, C++)](#BKMK_CodeDefinition)  
   
- También puede usar **el Explorador de soluciones** para examinar los tipos y miembros de sus proyectos, buscar símbolos, Ver jerarquía de llamadas de un método, buscar referencias de símbolos etc. sin tener que cambiar entre las múltiples ventanas de herramienta mencionados anteriormente.  
+ También puede usar el **Explorador de soluciones** para examinar los tipos y miembros de sus proyectos, buscar símbolos, ver la jerarquía de llamadas de un método o buscar referencias de símbolos, entre otros, sin necesidad de cambiar entre las múltiples ventanas de herramientas enumeradas anteriormente.  
   
  Si tiene Visual Studio Enterprise puede utilizar mapas de código para visualizar la estructura del código y sus dependencias en toda la solución y explorar en profundidad hasta llegar a las partes del código que le interesen. Para obtener más información, vea [Asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md).  
   
@@ -229,6 +224,3 @@ Ventana Jerarquía de llamadas
   
 ## <a name="see-also"></a>Vea también  
  [Iconos de la Vista de clases y del Examinador de objetos](../ide/class-view-and-object-browser-icons.md)
-
-
-

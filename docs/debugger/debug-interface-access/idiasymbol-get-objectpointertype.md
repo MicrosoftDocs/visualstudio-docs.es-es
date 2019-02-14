@@ -1,5 +1,5 @@
 ---
-title: Get_objectpointertype | Microsoft Docs
+title: IDiaSymbol::get_objectPointerType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bce193b9-67b0-4c35-96e5-6a664937322e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e21418da2516553f2c62e2c746e6a75e3f67cbc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce60ea631fe0c769740a2c3aa20281b13e525d18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961743"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916202"
 ---
 # <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
 Recupera el tipo del puntero del objeto para un método de clase.  

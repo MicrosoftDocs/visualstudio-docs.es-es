@@ -1,14 +1,9 @@
 ---
-title: Comentarios de documentación XML (JavaScript) | Documentos de Microsoft
-ms.custom: ''
+title: Comentarios de documentación XML (JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code comments, JavaScript IntelliSense
 - documentation comments, JavaScript IntelliSense
@@ -18,13 +13,13 @@ ms.assetid: db0aa50d-f0a4-47ef-ac02-7b1cc015fc7e
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26d690948378998f83d4fe6c8f909ffca1d3df8d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0dfcb4a44befca2a9e9d9d2619f5d9ad954b28ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225633"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755239"
 ---
 # <a name="xml-documentation-comments-javascript"></a>Comentarios de documentación XML (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,26 +30,23 @@ En JavaScript puede crear documentación para el código mediante la inserción 
   
  Se admiten las siguientes etiquetas:  
   
--   [\<en desuso >](../ide/deprecated-javascript.md)  
+-   [\<deprecated>](../ide/deprecated-javascript.md)  
   
--   [\<Campo >](../ide/field-javascript.md)  
+-   [\<field>](../ide/field-javascript.md)  
   
--   [\<LOC >](../ide/loc-javascript.md)  
+-   [\<loc>](../ide/loc-javascript.md)  
   
--   [\<param >](../ide/param-javascript.md)  
+-   [\<param>](../ide/param-javascript.md)  
   
 -   [\<returns>](../ide/returns-javascript.md)  
   
--   [\<firma >](../ide/signature-javascript.md)  
+-   [\<signature>](../ide/signature-javascript.md)  
   
 -   [\<summary>](../ide/summary-javascript.md)  
   
 -   [\<value>](../ide/value-javascript.md)  
   
--   [\<var >](../ide/var-javascript.md)  
+-   [\<var>](../ide/var-javascript.md)  
   
 ## <a name="see-also"></a>Vea también  
  [IntelliSense para JavaScript](../ide/javascript-intellisense.md)
-
-
-

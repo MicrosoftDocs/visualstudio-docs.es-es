@@ -1,5 +1,5 @@
 ---
-title: Idiaenuminjectedsources | Microsoft Docs
+title: IDiaEnumInjectedSources::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 38af80fc-748f-4b15-bff1-823db21dd4d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 097fd17523d72a8e909c044dddb34f6a50e99fc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba51ecbb1d47707dcfc8bd112a09deb170546d28
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989729"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036230"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 Recupera un número especificado de orígenes insertados en la secuencia de enumeración.  

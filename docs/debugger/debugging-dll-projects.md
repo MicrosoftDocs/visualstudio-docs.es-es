@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baca738ef60ae727db852d00ed821e024f62c22f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4606eebe6ef2505143e329242e1f9b17cc227365
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871643"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009003"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Depurar archivos DLL en Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -50,7 +50,7 @@ Cuando se usa una plantilla de proyecto de Visual Studio para crear una aplicaci
 - [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Configuración de proyectos para configuraciones de depuración en C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Configuración de proyectos para una configuración de depuración en Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md)  
+- [How to: Set Debug and Release configurations](../debugger/how-to-set-debug-and-release-configurations.md) (Definición de configuraciones Debug y Release)  
   
 ### <a name="set-c-debuggableattribute"></a>Establezca el atributo DebuggableAttribute de C++
 
@@ -117,11 +117,11 @@ Para depurar un archivo DLL desde una aplicación que realiza la llamada, hacer 
 
   o  
 
-- Adjuntar a una aplicación que ya está implementado y ejecutándose en un equipo de prueba o producción. Utilice este método para archivos DLL en sitios Web o en aplicaciones web. Para obtener más información, vea [Cómo: Adjuntar a un proceso en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Adjuntar a una aplicación que ya está implementado y ejecutándose en un equipo de prueba o producción. Utilice este método para archivos DLL en sitios Web o en aplicaciones web. Para obtener más información, vea [Asociar con procesos en ejecución con el depurador de Visual Studio](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 Antes de iniciar la depuración de la aplicación que realiza la llamada, establezca un punto de interrupción en el archivo DLL. Consulte [usar puntos de interrupción](../debugger/using-breakpoints.md). Cuando se alcanza el punto de interrupción de archivo DLL, puede avanzar por el código, observando la acción en cada línea. Para obtener más información, consulte [navegar por el código en el depurador](../debugger/navigating-through-code-with-the-debugger.md).
   
-Durante la depuración, puede usar el **módulos** ventana para comprobar los archivos DLL y *.exe* archivos se cargue la aplicación. Para abrir el **módulos** ventana, durante la depuración, seleccione **depurar** > **Windows** > **módulos**. Para obtener más información, vea [Cómo: Uso de la ventana Módulos](../debugger/how-to-use-the-modules-window.md). 
+Durante la depuración, puede usar el **módulos** ventana para comprobar los archivos DLL y *.exe* archivos se cargue la aplicación. Para abrir el **módulos** ventana, durante la depuración, seleccione **depurar** > **Windows** > **módulos**. Para obtener más información, consulta [Ver los archivos DLL y ejecutables en la ventana Módulos (C#, C++, Visual Basic, F#)](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Utilice la ventana Inmediato  
 
@@ -156,7 +156,7 @@ Por ejemplo, para probar un método denominado `Test` en clase `Class1`:
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Depuración en modo mixto  
 
-Puede escribir una aplicación de llamada para un archivo DLL en código administrado o nativo. Si su aplicación nativa llama a un archivo DLL administrado y desea depurar ambos, puede habilitar a los depuradores administrados y nativos en las propiedades del proyecto. El proceso exacto depende de si desea iniciar la depuración desde el proyecto DLL o el proyecto de aplicación que realiza la llamada. Para obtener más información, vea [Cómo: Depurar en modo mixto](../debugger/how-to-debug-in-mixed-mode.md). 
+Puede escribir una aplicación de llamada para un archivo DLL en código administrado o nativo. Si su aplicación nativa llama a un archivo DLL administrado y desea depurar ambos, puede habilitar a los depuradores administrados y nativos en las propiedades del proyecto. El proceso exacto depende de si desea iniciar la depuración desde el proyecto DLL o el proyecto de aplicación que realiza la llamada. Para obtener más información, vea [Cómo: depurar en modo mixto (C#, C++, Visual Basic)](../debugger/how-to-debug-in-mixed-mode.md). 
 
 También puede depurar una DLL nativa desde un proyecto administrado que realiza la llamada. Para obtener más información, consulte [cómo depurar código administrado y nativo](how-to-debug-managed-and-native-code.md). 
 

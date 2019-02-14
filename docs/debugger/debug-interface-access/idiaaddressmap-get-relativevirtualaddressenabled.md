@@ -1,5 +1,5 @@
 ---
-title: Get_relativevirtualaddressenabled | Microsoft Docs
+title: IDiaAddressMap::get_relativeVirtualAddressEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4c48af81-7148-4d9a-818e-dbe62cbfc638
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9048a3b0d4371d73f98f53645f8580405cd95c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c737a16a35a0d2889bb062429d9d8b27c006687c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939309"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031414"
 ---
 # <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
 Indica si está habilitado el cálculo y el uso de direcciones virtuales relativas (RVA).  

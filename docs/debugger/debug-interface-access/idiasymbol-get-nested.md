@@ -1,5 +1,5 @@
 ---
-title: Get_nested | Microsoft Docs
+title: IDiaSymbol::get_nested | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6ae46d43-8486-48d6-a6f2-d73ebf4023e3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6911f603041bf7e717780fefde71e61683f13e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 743bd6914920c561e0e03c7b6ce4ba7f1b918d46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848001"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950772"
 ---
 # <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
 Recupera una marca que especifica si se anida el tipo de datos definido por el usuario.  

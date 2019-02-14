@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad1822db-4572-48f7-9919-f8137f6701f2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fbe3b4654e5ace11069fa90c087ff5498626360
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf0e91e2d617877596798512140195b54f4d3f8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933170"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924553"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 Lee `BOOL` valores en un conjunto de propiedades.  

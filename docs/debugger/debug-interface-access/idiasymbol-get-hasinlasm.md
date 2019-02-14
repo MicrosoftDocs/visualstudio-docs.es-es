@@ -1,5 +1,5 @@
 ---
-title: Get_hasinlasm | Microsoft Docs
+title: IDiaSymbol::get_hasInlAsm | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7001c7cc-1459-4929-851b-a08066a803c6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e924b7a2c1d2fe3d0d28585924f68648a4a07ce4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbb07470f63c337ccefd5352b3fb7b2a6ff75e83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859781"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036217"
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
 Recupera una marca que especifica si la función contiene un ensamblado alineado.  

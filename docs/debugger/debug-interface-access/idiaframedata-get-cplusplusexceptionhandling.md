@@ -1,5 +1,5 @@
 ---
-title: Get_cplusplusexceptionhandling | Microsoft Docs
+title: IDiaFrameData::get_cplusplusExceptionHandling | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 54ee9cde-ce8e-45f1-809c-6fbad800d850
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2b7ceb69e4d4310330ea356037b7b155ea81f26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 981227f24cb35400b3b4483458a4a6afa5175c6a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959172"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021655"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
 Recupera una marca que indica si el control de excepciones de C++ está en vigor.  

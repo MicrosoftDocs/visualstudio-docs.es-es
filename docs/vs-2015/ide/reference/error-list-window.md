@@ -1,14 +1,9 @@
 ---
 title: Lista de errores (ventana) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ErrorList
 helpviewer_keywords:
@@ -20,19 +15,19 @@ ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873711"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785776"
 ---
 # <a name="error-list-window"></a>Lista de errores (ventana)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-NOTA]
+NOTA
 >  La Lista de errores muestra información sobre un mensaje de error específico. Puede copiar el número de error o el texto de la cadena de error de la ventana de salida. Para mostrar la ventana de salida, presione Ctrl+Alt+O. Vea [Ventana de salida](../../ide/reference/output-window.md).  
   
  La ventana **Lista de errores** permite desarrollar aplicaciones de forma más rápida. Por ejemplo, puede realizar las tareas siguientes:  
@@ -56,7 +51,7 @@ NOTA]
   Para ordenar la lista, haga clic en cualquier encabezado de columna. Para ordenar de nuevo por otra columna, mantenga presionada la tecla MAYÚS y haga clic en otro encabezado de columna. Para seleccionar las columnas que se muestran y las que están ocultas, seleccione **Mostrar columnas** en el menú contextual. Si desea cambiar el orden en el que se muestran las columnas, arrastre cualquier encabezado de columna hacia la izquierda o la derecha.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos aquí, en función de los valores de configuración o de edición activos. Para cambiar su configuración, haga clic en **Herramientas/Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos aquí, en función de los valores de configuración o de edición activos. Para cambiar su configuración, haga clic en **Herramientas/Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="error-list-filters"></a>Filtros de la lista de errores  
  Hay dos tipos de filtro en dos listas desplegables, una en el lado derecho de la barra de herramientas y otra a la izquierda de la barra de herramientas. La lista desplegable del lado izquierdo de la barra de herramientas especifica el conjunto de archivos de código que se va a usar (**Toda la solución**, **Documentos abiertos**, **Proyecto actual** o **Documento actual**).  
@@ -100,6 +95,3 @@ NOTA]
   
  Línea  
  Muestra la línea en la que se produce el problema.
-
-
-

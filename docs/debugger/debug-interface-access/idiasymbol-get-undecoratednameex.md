@@ -1,5 +1,5 @@
 ---
-title: Get_undecoratednameex | Microsoft Docs
+title: IDiaSymbol::get_undecoratedNameEx | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 715ab90837441974c05176c69c53366199e3543c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1db5d9b876beecc68345075a624e0368d8115999
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932186"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928834"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Recupera parte o todo un nombre no representativo de C++ representativo nombre (vinculación).  
@@ -61,7 +61,7 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_RESERVED1|0x0020|RESERVADO.|  
 |UNDNAME_RESERVED2|0x0040|RESERVADO.|  
 |UNDNAME_NO_THISTYPE|0x0060|Deshabilita todos los modificadores en el `this` tipo.|  
-|UNDNAME_NO_ACCESS_SPECIFIERS|0 x 0080|Deshabilita la expansión de especificadores de acceso para los miembros.|  
+|UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Deshabilita la expansión de especificadores de acceso para los miembros.|  
 |UNDNAME_NO_THROW_SIGNATURES|0x0100|Deshabilita la expansión de "throw-firmas" para las funciones y punteros a funciones.|  
 |UNDNAME_NO_MEMBER_TYPE|0x0200|Deshabilita la expansión de `static` o `virtual` miembros.|  
 |UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Deshabilita la expansión del modelo de Microsoft para UDT se devuelve.|  
@@ -71,7 +71,7 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_HAVE_PARAMETERS|0x4000|Los parámetros de plantilla reales están disponibles.|  
 |UNDNAME_NO_ECSU|0x8000|Suprime la enumeración, clase, struct o unión.|  
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Suprime la comprobación de caracteres de identificador válidos.|  
-|UNDNAME_NO_PTR64|0 x 20000|No incluye ptr64 en la salida.|  
+|UNDNAME_NO_PTR64|0x20000|No incluye ptr64 en la salida.|  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: Get_typeids | Microsoft Docs
+title: IDiaSymbol::get_typeIds | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5166e647-fde5-4efe-92bf-77f8ae3fbc9b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d038c0be6f023206c6a96ec59389ec4063d975fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d06648c884a4406c6a5d28b2b33a7cbfd4f6d24
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880093"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987471"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 Recupera una matriz de valores de identificador de tipo específico del compilador para este símbolo.  

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3165337a7386d90d674b42e7fd7e6f29822b284
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55035a214d98abd262f85c29c55bd633c0b35505
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906935"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023725"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;implementación&gt; elemento (implementación ClickOnce)
 Identifica los atributos utilizados para la implementación de actualizaciones y la exposición del sistema.  
@@ -67,7 +67,7 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
 | `minimumRequiredVersion` | Opcional. Especifica la versión mínima de la aplicación que se puede ejecutar en el cliente. Si el número de versión de la aplicación es menor que el número de versión proporcionado en el manifiesto de implementación, no se ejecutará la aplicación. Números de versión deben especificarse en el formato `N.N.N.N`, donde `N` es un entero sin signo. Si el `install` atributo es `false`, `minimumRequiredVersion` no debe establecerse. |
 | `mapFileExtensions` | Opcional. Tiene como valor predeterminado `false`. Si `true`, todos los archivos de la implementación deben tener una extensión. deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] eliminará esta extensión de estos archivos, en cuanto descarga desde el servidor Web. Si publica la aplicación mediante el uso de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], esta extensión se agregará automáticamente a todos los archivos. Este parámetro permite que todos los archivos dentro de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación se descarguen desde un servidor Web que bloquea la transmisión de archivos que terminan en "unsafe" extensiones como .exe. |
 | `disallowUrlActivation` | Opcional. Tiene como valor predeterminado `false`. Si `true`, impide que una aplicación instalada desde la que se inicia al hacer clic en la dirección URL o escribiendo la dirección URL en Internet Explorer. Si el `install` atributo no está presente, se omite este atributo. |
-| `trustURLParameters` | Opcional. Tiene como valor predeterminado `false`. Si `true`, permite que la dirección URL para que contenga los parámetros de cadena de consulta que se pasan a la aplicación, tanto como argumentos de línea de comandos se pasan a una aplicación de línea de comandos. Para obtener más información, vea [Cómo: Recuperación de información de la cadena de consulta de una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Si el `disallowUrlActivation` atributo es `true`, `trustUrlParameters` debe ser excluidos del manifiesto o establecida explícitamente en `false`. |
+| `trustURLParameters` | Opcional. Tiene como valor predeterminado `false`. Si `true`, permite que la dirección URL para que contenga los parámetros de cadena de consulta que se pasan a la aplicación, tanto como argumentos de línea de comandos se pasan a una aplicación de línea de comandos. Para obtener más información, consulte [Cómo: recuperar información de cadena de consulta en una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Si el `disallowUrlActivation` atributo es `true`, `trustUrlParameters` debe ser excluidos del manifiesto o establecida explícitamente en `false`. |
 
  El `deployment` elemento también contiene los siguientes elementos secundarios.  
 

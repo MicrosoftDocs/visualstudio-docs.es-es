@@ -1,25 +1,20 @@
 ---
 title: 'Cómo: Usar el SDK de marcadores del visualizador de simultaneidad | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 17e18ada321752c1cde780031524fb45d8bd4997
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e589ab9d3dde1e8940f6db28d42a566d021b4d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761122"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801718"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Cómo: Usar el SDK de marcadores del visualizador de concurrencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +96,7 @@ Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Agregue código para crear tres intervalos en la serie de marcadores predeterminada y escriba una marca, un mensaje y una alerta para cada intervalo. Crear un <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> objeto mediante una llamada a estático [EnterSpan] (<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->) método. Para escribir en la serie predeterminada, use los métodos de escritura estáticos de la clase <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
+3.  Agregue código para crear tres intervalos en la serie de marcadores predeterminada y escriba una marca, un mensaje y una alerta para cada intervalo. Cree un objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> llamando al método estático <!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->EnterSpan. Para escribir en la serie predeterminada, use los métodos de escritura estáticos de la clase <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
   
     ```vb  
   
@@ -186,6 +181,3 @@ Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear
   
 ## <a name="see-also"></a>Vea también  
  [SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)
-
-
-

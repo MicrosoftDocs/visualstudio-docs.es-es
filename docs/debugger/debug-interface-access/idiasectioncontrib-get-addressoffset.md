@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib | Microsoft Docs
+title: IDiaSectionContrib::get_addressOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4d569323-0e11-456d-9f92-a218bf292ecf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca1beea8f28c1b8ddf37afd82265a8b8d52e2baf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb4a6519410c484daecba0fbd801d4db40535445
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834573"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920726"
 ---
 # <a name="idiasectioncontribgetaddressoffset"></a>IDiaSectionContrib::get_addressOffset
 Recupera la parte del ajuste de la dirección de la contribución.  

@@ -1,5 +1,5 @@
 ---
-title: Idiaenumframedata | Microsoft Docs
+title: IDiaEnumFrameData::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 546e2e23-efb2-425a-96a1-808c67c519fb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a2c4c2a80ea5186b4a3036491bd64a6531d753
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7905a9226d120c14a4b9e6472e14714167c1b09
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951568"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949394"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 Recupera un número especificado de elementos de datos de marco de la secuencia de enumeración.  

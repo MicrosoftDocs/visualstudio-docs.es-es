@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Crear plantillas de elementos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear plantillas de elementos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project item templates, XML reference
 - project item templates, custom template locations
@@ -18,13 +13,13 @@ ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863638"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788254"
 ---
 # <a name="how-to-create-item-templates"></a>Cómo: Crear plantillas de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,7 +155,7 @@ En los pasos del [primer procedimiento](../ide/how-to-create-item-templates.md#e
   
 7.  En el Explorador de Windows, seleccione los archivos que desea incluir en la plantilla, haga clic con el botón secundario en la selección, haga clic en Enviar a y, a continuación, haga clic en Carpeta comprimida (en zip). Los archivos seleccionados se comprimen en un archivo .zip.  
   
-8.  Copie el archivo .zip y péguelo en la ubicación de la plantilla de elementos del usuario. En Visual Studio 2015, el directorio predeterminado es... \Users\\< nombre de usuario\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Para más información, vea Cómo: Localizar y organizar plantillas de proyectos y de elementos.  
+8.  Copie el archivo .zip y péguelo en la ubicación de la plantilla de elementos del usuario. En Visual Studio 2015, el directorio predeterminado es ..\Users\\<nombreDeUsuario\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Para más información, vea Cómo: Localizar y organizar plantillas de proyectos y de elementos.  
   
 ## <a name="see-also"></a>Vea también  
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   

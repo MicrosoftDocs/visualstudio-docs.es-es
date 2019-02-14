@@ -1,5 +1,5 @@
 ---
-title: Idiatable | Microsoft Docs
+title: IDiaTable::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eae11b26-4807-400c-be25-e85bbc0c6b20
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e8ba825c0dba1b0218e53f9ad66f6958602d0c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bf9ad425b703cbaa15378200260061304223607
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953984"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040182"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 Recupera una referencia a la entrada especificada en la tabla.  

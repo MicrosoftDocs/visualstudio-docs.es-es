@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbc57c6c-7d64-4469-a114-1dd6671e5ec5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83711ca61a1bd9a27a7ebed2262bd5ca3f3487e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aa1c1d10d9f1675811c63a78b017fe3dc3f537e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903070"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950800"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
 Recupera a los elementos secundarios del símbolo que son válidos en una dirección virtual relativa (RVA) especificada.  
@@ -61,7 +61,7 @@ HRESULT findChildrenExByRVA ( 
   
  Biblioteca: diaguids.lib  
   
- Archivo DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

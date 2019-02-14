@@ -1,25 +1,20 @@
 ---
-title: 'Tutorial: Compilar una aplicación | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Creación de una aplicación | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220214"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799160"
 ---
 # <a name="walkthrough-building-an-application"></a>Tutorial: Compilar una aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
 4.  Elija el botón **Aceptar** .  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> Crear una configuración de compilación personalizada  
- Cuando se crea una solución, se definen automáticamente configuraciones de compilación de depuración y de versión y sus destinos de plataforma predeterminados para la solución. Es posible personalizar estas configuraciones o crear sus propias configuraciones. Las configuraciones de compilación especifican el tipo de compilación. Las plataformas de compilación especifican el sistema operativo de destino de una aplicación para esa configuración. Para obtener más información, consulte [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md), [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) y [Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Cuando se crea una solución, se definen automáticamente configuraciones de compilación de depuración y de versión y sus destinos de plataforma predeterminados para la solución. Es posible personalizar estas configuraciones o crear sus propias configuraciones. Las configuraciones de compilación especifican el tipo de compilación. Las plataformas de compilación especifican el sistema operativo de destino de una aplicación para esa configuración. Para obtener más información, consulte [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md), [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) y [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  Puede cambiar o crear configuraciones y opciones de plataforma mediante el cuadro de diálogo **Administrador de configuración**. En este procedimiento, creará una configuración de compilación para probar.  
   
@@ -98,7 +93,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
   
 4. En la lista **Plataforma de soluciones activas**, elija **Nueva**.  
   
-5. En el **nueva plataforma de solución** diálogo cuadro, elija **x64**y no copie valores de la x86 plataforma.  
+5. 5. En el cuadro de diálogo **Nueva plataforma de soluciones**, elija **x64** y no copie valores de la plataforma x86.  
   
     ![Cuadro de diálogo Nueva plataforma de solución](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -121,11 +116,11 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
   
   La ventana **Salida** muestra los resultados de la compilación. La compilación se realizó correctamente, pero se generaron algunos mensajes de advertencia.  
   
-  Figura 1: advertencias de Visual Basic  
+  Figura 1: Advertencias de Visual Basic  
   
   ![Ventana de salida de Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  Figura 2: advertencias de Visual C#  
+  Figura 2: Advertencias de Visual C#  
   
   ![Ventana de salida de Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
@@ -208,7 +203,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
 ##  <a name="BKMK_releasebuild"></a> Crear una compilación de versión  
  Se puede compilar una versión de la aplicación de ejemplo optimizada para su entrega. Para la compilación de versión, especificará que el ejecutable se copie a un recurso compartido de red antes de que se inicie la compilación.  
   
- Para obtener más información, consulte [Cómo: Cambiar el directorio de resultados de compilación](../ide/how-to-change-the-build-output-directory.md) y [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
+ Para obtener más información, vea [Cómo: Cambie el directorio de salida de compilación](../ide/how-to-change-the-build-output-directory.md) y [compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
   
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>Para especificar una compilación de versión para Visual Basic  
   
@@ -262,8 +257,5 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Compilar un proyecto (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
- [Información general sobre la precompilación de proyectos de aplicación web ASP.NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
+ [Información general sobre la precompilación de proyectos de aplicación web ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)   
  [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md)
-
-
-

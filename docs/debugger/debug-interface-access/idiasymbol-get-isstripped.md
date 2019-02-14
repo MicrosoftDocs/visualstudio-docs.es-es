@@ -1,5 +1,5 @@
 ---
-title: Get_isstripped | Microsoft Docs
+title: IDiaSymbol::get_isStripped | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cc2c4a0b-ab9f-4b79-a8ff-a3badb0405d6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfd91022fd99ee1b57769bacc4a956d91d12a1a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c5635ddc5869a2f65ecf61696c59c163853e574
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919591"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034497"
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
 Recupera marca que indica si se han quitado los símbolos privados desde el archivo de símbolos.  
