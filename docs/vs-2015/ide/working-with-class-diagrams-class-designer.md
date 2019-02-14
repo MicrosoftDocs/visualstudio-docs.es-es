@@ -1,14 +1,9 @@
 ---
 title: Trabajar con diagramas de clases (Diseñador de clases) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams
 - documentation, using class diagrams
@@ -20,13 +15,13 @@ ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 578fd81c41d2c46130cf80f7e55e71a0d0f196de
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306714"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834105"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Trabajar con diagramas de clases (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Con los diagramas de clases, es más fácil comprender la estructura de clases d
   
  Además de definir lo que muestra cada diagrama de clases, puede cambiar la forma en la que se presenta la información. Para obtener más información, vea [Cómo: Personalizar los diagramas de clases (Diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md).  
   
- Después de ajustar uno o varios diagramas de clases, puede copiarlos a documentos de Microsoft Office e imprimirlos o exportarlos como archivos de imagen. Para obtener más información, vea [Cómo: Copiar elementos del diagrama de clases en un documento de Microsoft Office (Diseñador de clases)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [Cómo: Imprimir diagramas de clases (Diseñador de clases)](../ide/how-to-print-class-diagrams-class-designer.md) y [Cómo: Exportar los diagramas de clases como imágenes (Diseñador de clases)](../ide/how-to-export-class-diagrams-as-images-class-designer.md).  
+ Después de ajustar uno o varios diagramas de clases, puede copiarlos a documentos de Microsoft Office e imprimirlos o exportarlos como archivos de imagen. Para obtener más información, consulte [Cómo: copiar elementos del diagrama de clase en un documento de Microsoft Office (Diseñador de clases)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [Cómo: imprimir diagramas de clases (Diseñador de clases)](../ide/how-to-print-class-diagrams-class-designer.md) y [Cómo: exportar clases Diagramas como imágenes (Diseñador de clases)](../ide/how-to-export-class-diagrams-as-images-class-designer.md).  
   
 > [!NOTE]
 >  El Diseñador de clases no realiza un seguimiento de la ubicación de los archivos de origen, por lo que cambiar la estructura del proyecto o mover los archivos de origen del proyecto puede hacer que el Diseñador de clases pierda de vista el tipo, especialmente el tipo de origen de una typedef, de clases base o de tipos de asociación. Puede que reciba un error, como **El Diseñador de clases no puede mostrar este tipo**. Si lo recibe, arrastre otra vez el código fuente modificado o reubicado al diagrama de clases para volver a mostrarlo.  
@@ -74,7 +69,4 @@ Con los diagramas de clases, es más fácil comprender la estructura de clases d
 ## <a name="see-also"></a>Vea también  
  [Ver tipos y relaciones (Diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md)   
  [Cómo: Personalizar los diagramas de clases (Diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md)   
- [Cómo: Quitar formas de tipo de diagramas de clases (Diseñador de clases)](http://msdn.microsoft.com/en-us/ae41897d-d066-4b8c-bb9b-05436e12ff39)
-
-
-
+ [Cómo: Quitar formas de tipo de diagramas de clases (Diseñador de clases)](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)
