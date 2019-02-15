@@ -1,14 +1,9 @@
 ---
 title: Editar pruebas automatizadas de IU mediante el editor de pruebas automatizadas de IU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793768"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ Editar propiedades de acción de IU
   
  Para modificar las propiedades de una acción de la interfaz de usuario, en el panel **Acción de IU** , expanda el método de prueba que contenga una acción de la interfaz de usuario de la que desee modificar las propiedades, seleccione la acción de la interfaz de usuario y, después, modifique las propiedades mediante la ventana Propiedades.  
   
- Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador web que indica **Ir a la página web "<http://Contoso1/default.aspx’>"**, puede cambiar la dirección URL por `‘http://Contoso2/default.aspx’`.  
+ Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador Web que indica **ir a página Web '<http://Contoso1/default.aspx’>**, puede cambiar la dirección URL de `‘http://Contoso2/default.aspx’`.  
   
  ![Propiedades de los controles](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Editar las propiedades de los controles  
@@ -133,7 +128,7 @@ Editar las propiedades de los controles
   
 - ![Sugerencia](../test/media/tip.png "Sugerencia") Puede cambiar el nombre del método nuevo. Selecciónelo desde el panel Acciones de la interfaz de usuario y elija el botón **Cambiar nombre** de la barra de herramientas del editor de pruebas de IU codificadas.  
   
-   O bien  
+   o bien  
   
    Abra el menú contextual del nuevo método de prueba y elija **Cambiar nombre**.  
   
@@ -226,6 +221,3 @@ Editar las propiedades de los controles
  [Crear una prueba automatizada de IU controlada por datos](../test/creating-a-data-driven-coded-ui-test.md)   
  [Generar una prueba automatizada de IU a partir de la grabación de acciones existente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-
-
-

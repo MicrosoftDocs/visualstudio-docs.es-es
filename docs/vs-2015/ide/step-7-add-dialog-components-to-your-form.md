@@ -1,25 +1,20 @@
 ---
 title: 'Paso 7: Agregar componentes de diálogo al formulario | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ca17a6958a3c66054b89fc65c30bf397c4e6b821
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 051f88f81f443b1748ce3d8b0c9ce33e89fac77d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192951"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796664"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Paso 7: Agregar componentes de diálogo al formulario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ Para que el programa abra archivos de imagen y para elegir un color de fondo, en
   
  En algunos sentidos, un componente es como un control. El Cuadro de herramientas se usa para agregar un componente al formulario, y las propiedades se establecen mediante la ventana **Propiedades**. Sin embargo, a diferencia de un control, al agregar un componente al formulario no se agrega un elemento visible que el usuario puede ver. En cambio, se proporcionan determinados comportamientos que se pueden desencadenar mediante código. Un componente es lo que abre un cuadro de diálogo **Abrir archivo**.  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 3)](http://go.microsoft.com/fwlink/?LinkId=205213) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 3)](http://go.microsoft.com/fwlink/?LinkId=205202). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo")para una versión en vídeo de este tema, consulte [Tutorial 1: crear un visor de imágenes en Visual Basic - vídeo 3](http://go.microsoft.com/fwlink/?LinkId=205213) o [Tutorial 1: crear un visor de imágenes en C#: Vídeo 3](http://go.microsoft.com/fwlink/?LinkId=205202). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### <a name="to-add-dialog-components-to-your-form"></a>Para agregar componentes de cuadro de diálogo al formulario  
   
@@ -62,6 +57,3 @@ Componentes del cuadro de diálogo
 -   Para ir al paso siguiente del tutorial, vea [Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).  
   
 -   Para volver al paso anterior del tutorial, vea [Paso 6: Asignar un nombre a los controles de botón](../ide/step-6-name-your-button-controls.md).
-
-
-

@@ -1,32 +1,27 @@
 ---
 title: 'Paso 3: Establecer las propiedades del formulario | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 64e197e3f6f34cc46d91c330b4d5f80b3c6ce578
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848636"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782254"
 ---
 # <a name="step-3-set-your-form-properties"></a>Paso 3: Establecer las propiedades del formulario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Después, se usa la ventana **Propiedades** para cambiar la apariencia del formulario.  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 1)](http://go.microsoft.com/fwlink/?LinkId=205209) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 1)](http://go.microsoft.com/fwlink/?LinkId=205199). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo")para una versión en vídeo de este tema, consulte [Tutorial 1: crear un visor de imágenes en Visual Basic - vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205209) o [Tutorial 1: crear un visor de imágenes en C#: Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205199). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### <a name="to-set-your-form-properties"></a>Para establecer las propiedades del formulario  
   
@@ -80,6 +75,3 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
 -   Para ir al paso siguiente del tutorial, vea [Paso 4: Diseñar un formulario con un control TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
 -   Para volver al paso anterior del tutorial, vea [Paso 2: Ejecutar el programa](../ide/step-2-run-your-program.md).
-
-
-
