@@ -1,25 +1,20 @@
 ---
 title: Uso de red | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dd68bec55b53d1b4618e8ae1679603577daf295
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726847"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759914"
 ---
 # <a name="network-usage"></a>Uso de red
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
 1. Abra el proyecto en Visual Studio.  
   
-2. En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento...** Elija Red y después **Iniciar**.  
+2. En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento...** Elija **Red** y después **Iniciar**.  
   
 3. La herramienta de red comienza a recopilar el tráfico de red HTTP de la aplicación.  
   
@@ -82,6 +77,3 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
  [Ejecutar herramientas de generación de perfiles sin depurar](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Blog de Visual Studio: presentación del inspector Visual Studio red](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Vídeo de Channel 9: "Herramientas de diagnóstico de VS: nuevo generador de perfiles de red"](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
-
-
-

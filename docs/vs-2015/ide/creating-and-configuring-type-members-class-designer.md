@@ -1,14 +1,9 @@
 ---
 title: Crear y configurar miembros de tipo (Diseñador de clases) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
 - vs.classdetails.property
@@ -34,13 +29,13 @@ ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827979"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795308"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Crear y configurar miembros de tipo (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
 |**Crear y modificar miembros de tipo:** puede crear nuevos miembros, modificar miembros y agregar parámetros a un método usando la ventana Detalles de clase.|-   [Crear miembros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [Modificar miembros de tipo](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [Agregar parámetros a métodos](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|  
   
 ##  <a name="OpenClassDetails"></a>Abrir la ventana Detalles de clase  
- De manera predeterminada, la ventana Detalles de clase aparece automáticamente cuando se abre un nuevo diagrama de clases [vea [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)]. También puede abrir la ventana Detalles de clase de forma explícita de las maneras siguientes.  
+ De forma predeterminada, la ventana Detalles de clase aparece automáticamente cuando se abre un nuevo diagrama de clases (vea [Cómo: agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). También puede abrir la ventana Detalles de clase de forma explícita de las maneras siguientes.  
   
 #### <a name="to-open-the-class-details-window"></a>Para abrir la ventana Detalles de clase  
   
@@ -136,7 +131,7 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
      **Nota:** También puede usar métodos abreviados de teclado para crear miembros. Para obtener más información, vea [Métodos abreviados de teclado y de mouse en el diagrama de clases y la ventana de detalles de clase (Diseñador de clases)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ##  <a name="ModifyTypeMembers"></a>Modificar miembros de tipo  
- El Diseñador de clases permite modificar los miembros de los tipos que aparecen en el diagrama. Puede modificar los miembros de cualquier tipo que aparezca en un diagrama de clases que no sean de solo lectura. [Vea [Presentación de la información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)]. Para modificar los miembros de tipo, se usa la edición en contexto en la superficie de diseño, la ventana Propiedades y la ventana Detalles de clase.  
+ El Diseñador de clases permite modificar los miembros de los tipos que aparecen en el diagrama. Puede modificar los miembros de cualquier tipo que aparezca en un diagrama de clases que no sean de solo lectura. [Vea [Presentación de la información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)]. Para modificar los miembros de tipo, se usa la edición en contexto en la superficie de diseño, la ventana Propiedades y la ventana Detalles de clase.  
   
  Todos los miembros mostrados en la ventana Detalles de clase representan los miembros de los tipos del diagrama de clases. Hay cuatro tipos de miembros: métodos, propiedades, campos y eventos.  
   
@@ -268,7 +263,7 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
   
  Todas las celdas de la ventana Detalles de clase son modificables, con unas pocas excepciones:  
   
-- Todo el tipo es de solo lectura cuando, por ejemplo, reside en un ensamblado al que se hace referencia [vea [Mostrar información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)]. Cuando se selecciona la forma en el Diseñador de clases, la ventana Detalles de clase muestra los detalles en estado de sólo lectura.  
+- Todo el tipo es de solo lectura cuando, por ejemplo, reside en un ensamblado al que se hace referencia [vea [Mostrar información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)]. Cuando se selecciona la forma en el Diseñador de clases, la ventana Detalles de clase muestra los detalles en estado de sólo lectura.  
   
 - En el caso de los indizadores, el nombre es de sólo lectura y el resto de los datos (tipo, modificador, resumen) son modificables.  
   
@@ -327,7 +322,7 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Descripción|  
 |-----------|-----------------|  
 |[Ver tipos y relaciones (Diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md)|Puede ver los tipos, los miembros y las relaciones existentes en un diagrama de clase.|  
 |[Refactorización de clases y tipos (Diseñador de clases)](../ide/refactoring-classes-and-types-class-designer.md)|Mediante la refactorización, es sencillo cambiar el nombre del tipo y de los miembros de tipo. También puede mover los miembros entre las clases, dividir una clase en clases parciales e implementar interfaces.|
