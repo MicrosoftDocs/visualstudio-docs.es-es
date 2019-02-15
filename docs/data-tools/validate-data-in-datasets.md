@@ -19,15 +19,14 @@ ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a8d533b647861b8185a65c926f1783744cded74
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a68d93e43feea26dc62635fccb561f9c2bd025a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004401"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945812"
 ---
 # <a name="validate-data-in-datasets"></a>Validar datos en conjuntos de datos
 Validación de datos es el proceso de confirmar que los valores que se especifican en los objetos de datos se ajustan a las restricciones de esquema de un conjunto de datos. El proceso de validación también confirma que estos valores están siguiendo las reglas que se han establecido para la aplicación. Es una buena práctica para validar los datos antes de enviar actualizaciones a la base de datos subyacente. Esto reduce los errores, así como el número de viajes de ida y vuelta entre una aplicación y la base de datos.
@@ -39,9 +38,9 @@ Es el mejor lugar para agregar validación a la aplicación en el archivo de cla
 ## <a name="validate-data"></a>Validar datos
  Se realiza la validación dentro de un conjunto de datos de las maneras siguientes:
 
--   Mediante la creación de su propia validación específica de la aplicación puede comprobar los valores en una columna de datos individuales durante los cambios. Para obtener más información, vea [Cómo: Validar los datos durante los cambios de columna](validate-data-in-datasets.md).
+-   Mediante la creación de su propia validación específica de la aplicación puede comprobar los valores en una columna de datos individuales durante los cambios. Para obtener más información, consulte [Cómo: validar datos durante los cambios de columna](validate-data-in-datasets.md).
 
--   Creando su propia validación específica de la aplicación que puede comprobar los datos a los valores mientras un completo de datos está cambiando la fila. Para obtener más información, vea [Cómo: Validar los datos durante los cambios de fila](validate-data-in-datasets.md).
+-   Creando su propia validación específica de la aplicación que puede comprobar los datos a los valores mientras un completo de datos está cambiando la fila. Para obtener más información, consulte [Cómo: validar datos durante los cambios de fila](validate-data-in-datasets.md).
 
 -   Mediante la creación de claves, restricciones únicas, y así sucesivamente como parte de la definición de esquema real del conjunto de datos.
 
@@ -98,7 +97,7 @@ Puede escribir código para comprobar que cada columna que desee validar contien
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Para validar los datos cuando se modifica una fila (Visual Basic)
 
-1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Tutorial: Creación de un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, consulte [Tutorial: crear un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Haga doble clic en la barra de título de la tabla que desee validar. Esta acción crea automáticamente el controlador de eventos <xref:System.Data.DataTable.RowChanging> del control <xref:System.Data.DataTable> en el archivo de clase parcial del conjunto de datos.
 
@@ -109,7 +108,7 @@ Puede escribir código para comprobar que cada columna que desee validar contien
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Para validar los datos cuando se modifica una fila (C#)
 
-1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Tutorial: Creación de un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, consulte [Tutorial: crear un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Haga doble clic en la barra de título de la tabla que desee validar. Esta acción crea un archivo de clase parcial para el control <xref:System.Data.DataTable>.
 
@@ -211,5 +210,5 @@ Si se pasa el valor <xref:System.Data.DataRowVersion> junto con el índice de la
 ## <a name="see-also"></a>Vea también
 
 - [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Cómo: Validar datos en el control DataGridView de formularios Windows Forms](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Cómo: Mostrar iconos de error de validación de formularios con el componente ErrorProvider de formularios Windows Forms](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Procedimiento para validar datos en el control DataGridView de Windows Forms](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Procedimiento para mostrar iconos de error para la validación de formularios con el componente ErrorProvider de Windows Forms](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

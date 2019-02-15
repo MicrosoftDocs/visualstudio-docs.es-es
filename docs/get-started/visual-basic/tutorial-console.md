@@ -3,7 +3,6 @@ title: 'Tutorial: Introducción a Visual Basic'
 description: Aprenda a crear aplicaciones de consola de Visual Basic en Visual Studio mediante un procedimiento paso a paso.
 ms.custom: seodec18, get-started
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: vb
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2d5cf15b6afd1b6eed6d800a1b7ba67c1f87b8
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424504"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155700"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introducción a Visual Basic en Visual Studio
 
@@ -142,10 +141,10 @@ Una aplicación de consola toma la entrada y muestra la salida en una ventana de
 Enhorabuena por completar este tutorial. Para más información, continúe con el tutorial siguiente.
 
 > [!div class="nextstepaction"]
-> [Tutorial en vídeo: Aspectos básicos de Visual Basic para principiantes sin experiencia](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+> [Creación de una biblioteca con Visual Basic y el SDK de .NET Core en Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Vea también
 
-* [Novedades de Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
-* [Archivos de código de IntelliSense para Visual Basic](../../ide/visual-basic-specific-intellisense.md)
+* [Tutoriales del lenguaje Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Referencia del lenguaje Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [Archivos de código de IntelliSense para Visual Basic](../../ide/visual-basic-specific-intellisense.md)

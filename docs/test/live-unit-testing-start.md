@@ -1,7 +1,6 @@
 ---
-title: Más información sobre cómo probar el código con Live Unit Test 2017 | Microsoft Docs
+title: Más información sobre cómo probar el código con Live Unit Test
 ms.date: 08/31/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd4986d88654e584b3c05be2fd2b720b76be423a
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834258"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950310"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Comenzar a utilizar Live Unit Testing en Visual Studio
 
@@ -24,8 +23,11 @@ Al habilitar Live Unit Testing en una solución de Visual Studio, Live Unit Test
 Live Unit Testing puede utilizarse para probar soluciones que tienen como destino .NET Framework o .NET Core. En este tutorial, obtendrá información sobre cómo utilizar Live Unit Testing mediante la creación de una biblioteca de clases sencilla que tiene como destino .NET Standard y podrá crear un proyecto de MSTest, cuyo destino es .NET Core, para probarlo.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 La solución completa de C# puede descargarse desde el repositorio [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) en GitHub.
+
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 La solución completa de Visual Basic puede descargarse desde el repositorio [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) en GitHub.
 
 ---
@@ -51,6 +53,7 @@ La solución es simplemente un contenedor para uno o varios proyectos. Para crea
 Ahora que ha creado la solución, podrá crear una biblioteca de clases denominada `StringLibrary`, que contiene una serie de métodos de extensión para trabajar con cadenas.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
 
 1. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de C# y, después, **.NET Standard**.
@@ -76,9 +79,10 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 
       - `HasEmbeddedSpaces` devuelve `true` si una cadena contiene un espacio en blanco insertado; en caso contrario, devuelve `false`.
 
-1.  Seleccione **Compilar** > **Compilar solución** en el menú de nivel superior de Visual Studio. Visual Studio compilará correctamente la biblioteca.
+1. Seleccione **Compilar** > **Compilar solución** en el menú de nivel superior de Visual Studio. Visual Studio compilará correctamente la biblioteca.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
 
 1. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de Visual Basic y, después, **.NET Standard**.
@@ -108,7 +112,7 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 
    ![Cuadro de diálogo Propiedades del proyecto para un proyecto de Visual Basic](./media/lut-start/vb-properties.png)
 
-1.  Seleccione **Compilar** > **Compilar solución** en el menú de nivel superior de Visual Studio. Visual Studio compilará correctamente la biblioteca.
+1. Seleccione **Compilar** > **Compilar solución** en el menú de nivel superior de Visual Studio. Visual Studio compilará correctamente la biblioteca.
 
 ---
 
@@ -117,6 +121,7 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 El paso siguiente consiste en crear el proyecto de prueba unitaria para probar la biblioteca de `StringLibrary`. Siga estos pasos para crear las pruebas unitarias:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
 
 1. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de C# y, después, **.NET Core**.
@@ -208,9 +213,11 @@ Hasta ahora, aunque ha escrito las pruebas para la biblioteca de clases `StringL
 Cuando acaba de ejecutar las pruebas, el **Explorador de pruebas** muestra los resultados globales y el resultado de las pruebas individuales. Además, la ventana de código muestra gráficamente la cobertura de código de prueba y el resultado de las pruebas. Como se muestra en la figura siguiente, las tres pruebas se han ejecutado correctamente. También muestra que nuestras pruebas han cubierto todas las rutas de acceso de código en el método `StartsWithUpper` y que esas pruebas se han ejecutado correctamente (lo que se indica mediante la marca de verificación de color verde, "✓"). Por último, muestra que ninguno de los otros métodos de `StringLibrary` tiene cobertura de código (lo que se indica mediante una línea azul, "➖").
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 ![Explorador de pruebas y ventana de código después de iniciar Live Unit Testing](media/lut-start/lut-results-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 ![Explorador de pruebas y ventana de código después de iniciar Live Unit Testing](media/lut-start/lut-results-vb.png)
 
 ---
@@ -218,6 +225,7 @@ Cuando acaba de ejecutar las pruebas, el **Explorador de pruebas** muestra los r
 También puede obtener información más detallada sobre la cobertura y los resultados de las pruebas seleccionando un icono de cobertura de código determinado en la ventana de código. Para examinar este detalle, haga lo siguiente:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Haga clic en la marca de verificación verde situada en la línea `if (String.IsNullOrWhiteSpace(s))` del método `StartsWithUpper`. Como se muestra en la figura siguiente, Live Unit Testing indica que las tres pruebas cubren esa línea de código y que todas se han ejecutado correctamente.
 
    ![Cobertura de código para la instrucción condicional "if"](media/lut-start/code-coverage-cs1.png)
@@ -227,6 +235,7 @@ También puede obtener información más detallada sobre la cobertura y los resu
    ![Cobertura de código para la instrucción Return](media/lut-start/code-coverage-cs2.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Haga clic en la marca de verificación verde situada en la línea `If (String.IsNullOrWhiteSpace(s)) Then` del método `StartsWithUpper`. Como se muestra en la figura siguiente, Live Unit Testing indica que las tres pruebas cubren esa línea de código y que todas se han ejecutado correctamente.
 
    ![Cobertura de código para la instrucción condicional "If"](media/lut-start/code-coverage-vb1.png)
@@ -246,6 +255,7 @@ En esta sección, podrá ampliar las pruebas unitarias al método `StartsWithLow
 Para ampliar la cobertura de código al método `StartsWithLower`, haga lo siguiente:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Agregue los métodos `TestStartsWithLower` y `TestDoesNotStartWithLower` al archivo de código fuente de prueba del proyecto:
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
@@ -263,6 +273,7 @@ Para ampliar la cobertura de código al método `StartsWithLower`, haga lo sigui
     ![Cobertura de código para el método StartsWithLower](media/lut-start/lut-extended-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Agregue los métodos `TestStartsWithLower` y `TestDoesNotStartWithLower` al archivo de código fuente de prueba del proyecto:
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
@@ -290,6 +301,7 @@ Hasta ahora, todas nuestras pruebas se han realizado correctamente. En la siguie
 En esta sección, explorará cómo puede usar Live Unit Testing para identificar, solucionar y abordar los errores de pruebas. Para ello, debe expandir la cobertura de las pruebas al método `HasEmbeddedSpaces`.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Agregue el método siguiente al archivo de prueba:
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
@@ -323,6 +335,7 @@ En esta sección, explorará cómo puede usar Live Unit Testing para identificar
 1. Seleccione **Depurar** > **Continuar**, presione **F5** o haga clic en el botón **Continuar** de la barra de herramientas para continuar ejecutando el programa de prueba. La prueba ha finalizado porque se ha producido una excepción no controlada.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Agregue el método siguiente al archivo de prueba:
 
     [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
@@ -360,6 +373,7 @@ En esta sección, explorará cómo puede usar Live Unit Testing para identificar
 Esto proporciona información suficiente para una investigación preliminar del error. `TestHasEmbeddedSpaces`, la rutina de prueba, ha realizado una suposición incorrecta, o bien `HasEmbeddedSpaces` no reconoce correctamente todos los espacios insertados. Para diagnosticar y corregir el problema, comience por el método `StringLibrary.HasEmbeddedSpaces`:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Mire la comparación en el método `HasEmbeddedSpaces`. Considera que U+0020 es un espacio insertado. Sin embargo, el estándar Unicode incluye otros caracteres de espacio. Esto sugiere que el código de biblioteca ha probado incorrectamente la presencia de un carácter de espacio en blanco.
 
 1. Reemplace la comparación de igualdad por una llamada al método <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName>:
@@ -371,6 +385,7 @@ Esto proporciona información suficiente para una investigación preliminar del 
     ![Prueba HasEmbeddedSpaces correcta.](media/lut-start/test-success-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Mire la comparación en el método `HasEmbeddedSpaces`. Considera que U+0020 es un espacio insertado. Sin embargo, el estándar Unicode incluye otros caracteres de espacio. Esto sugiere que el código de biblioteca ha probado incorrectamente la presencia de un carácter de espacio en blanco.
 
 1. Reemplace la comparación de igualdad por una llamada al método <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName>:
@@ -384,5 +399,6 @@ Esto proporciona información suficiente para una investigación preliminar del 
 ---
 
 ## <a name="see-also"></a>Vea también
+
 - [Live Unit Testing en Visual Studio](live-unit-testing.md)
 - [Preguntas más frecuentes sobre Live Unit Testing](live-unit-testing-faq.md)
