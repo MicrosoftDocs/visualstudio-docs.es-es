@@ -6,14 +6,14 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: c4852e3c760f2974620f0a6c641a540b92d19bc3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957447"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317125"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procedimiento Diagnosticar retrasos de la interfaz de usuario causados por las extensiones
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Filtrar Diagnosticar retrasos de la interfaz de usuario causados por las extensiones
 
 Cuando la interfaz de usuario deja de responder, Visual Studio examina la pila de llamadas del subproceso de interfaz de usuario, comenzando por la hoja y dirigiéndose a la base. Si Visual Studio determina que un marco de pila de llamadas pertenece a un módulo que forma parte de una extensión habilitada e instalada, muestra una notificación.
 
@@ -102,7 +102,7 @@ A continuación, abra el archivo de seguimiento. Para ello, ya sea mediante la m
 A continuación, seleccione el archivo de seguimiento en el panel izquierdo y ábrala eligiendo **abrir** en el menú contextual.
 
 > [!NOTE]
-> De forma predeterminada PerfView da como resultado un archivo Zip. Al abrir *trace.zip*, descomprime el archivo automáticamente y se abre el seguimiento. Puede omitir esto desactivando el **Zip** cuadro durante la recolección de seguimiento. Sin embargo, si va a transferir y utilizar seguimientos en las distintas máquinas, se recomienda desactivar la **Zip** cuadro. Sin esta opción, los archivos PDB necesarios para los ensamblados Ngen no se adjuntará a la traza y, por tanto, no se resolverán símbolos de los ensamblados Ngen en el equipo de destino. (Consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/) para obtener más información sobre los archivos PDB para ensamblados Ngen.) 
+> De forma predeterminada PerfView da como resultado un archivo Zip. Al abrir *trace.zip*, descomprime el archivo automáticamente y se abre el seguimiento. Puede omitir esto desactivando el **Zip** cuadro durante la recolección de seguimiento. Sin embargo, si va a transferir y utilizar seguimientos en las distintas máquinas, se recomienda desactivar la **Zip** cuadro. Sin esta opción, los archivos PDB necesarios para los ensamblados Ngen no se adjuntará a la traza y, por tanto, no se resolverán símbolos de los ensamblados Ngen en el equipo de destino. (Consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) para obtener más información sobre los archivos PDB para ensamblados Ngen.) 
 
 Puede tardar varios minutos en PerfView procesar y abrir el seguimiento. Una vez que el seguimiento está abierto, aparecerá una lista de diversas "vistas" debajo de él.
 
