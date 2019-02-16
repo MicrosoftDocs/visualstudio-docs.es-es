@@ -1,4 +1,4 @@
-# [Visual Studio para Mac](index.md)
+# [Visual Studio para Mac](index.yml)
 # [Paseo por el IDE](/visualstudio/mac/ide-tour/)
 
 # [Instalación](/visualstudio/mac/installation/)
@@ -70,7 +70,7 @@
 ### [Uso de herramientas de Unity](using-vsmac-tools-unity.md)
 ### [Uso de .NET 4.x en Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Registro de cambios](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
-## [Aplicaciones móviles con Xamarin](/xamarin/)
+## [Aplicaciones móviles con Xamarin](/visualstudio/mac/xamarin)
 
 # [Accesibilidad](accessibility.md)
 
