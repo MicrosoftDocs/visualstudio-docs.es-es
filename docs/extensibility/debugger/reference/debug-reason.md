@@ -12,65 +12,65 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6102c0897c80fc927713d2f8bb1e5c83708e6bd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0091924c5c117eb8953b5dd3fc70b5cdf446761
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000203"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318607"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
-Especifica por qué se inició el proceso para la depuración.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-enum enum_DEBUG_REASON {  
-   DEBUG_REASON_ERROR         = 0,  
-   DEBUG_REASON_USER_LAUNCHED = 1,  
-   DEBUG_REASON_USER_ATTACHED = 2,  
-   DEBUG_REASON_AUTO_ATTACHED = 3,  
-   DEBUG_REASON_CAUSALITY     = 4  
-};  
-typedef DWORD DEBUG_REASON;  
-```  
-  
-```csharp  
-public enum enum_DEBUG_REASON {  
-   DEBUG_REASON_ERROR         = 0,  
-   DEBUG_REASON_USER_LAUNCHED = 1,  
-   DEBUG_REASON_USER_ATTACHED = 2,  
-   DEBUG_REASON_AUTO_ATTACHED = 3,  
-   DEBUG_REASON_CAUSALITY     = 4  
-};  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- DEBUG_REASON_ERROR  
- Se produjo un error no especificado (Esto se usa como una condición predeterminada cuando ninguno de los otros motivos de ajuste).  
-  
- DEBUG_REASON_USER_LAUNCHED  
- Se inició el proceso a petición del usuario.  
-  
- DEBUG_REASON_USER_ATTACHED  
- El proceso de ejecución ya se ha adjuntado a por el usuario.  
-  
- DEBUG_REASON_AUTO_ATTACHED  
- El proceso se adjunta automáticamente a cuando se inició.  
-  
- DEBUG_REASON_CAUSALITY  
- El proceso se inició debido a un *Just-In-Time* eventos de depuración (JIT).  
-  
-## <a name="remarks"></a>Comentarios  
- Devuelve el [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) método.  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
-  
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
-  
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vea también  
- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)
+Especifica por qué se inició el proceso para la depuración.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+enum enum_DEBUG_REASON {
+    DEBUG_REASON_ERROR         = 0,
+    DEBUG_REASON_USER_LAUNCHED = 1,
+    DEBUG_REASON_USER_ATTACHED = 2,
+    DEBUG_REASON_AUTO_ATTACHED = 3,
+    DEBUG_REASON_CAUSALITY     = 4
+};
+typedef DWORD DEBUG_REASON;
+```
+
+```csharp
+public enum enum_DEBUG_REASON {
+    DEBUG_REASON_ERROR         = 0,
+    DEBUG_REASON_USER_LAUNCHED = 1,
+    DEBUG_REASON_USER_ATTACHED = 2,
+    DEBUG_REASON_AUTO_ATTACHED = 3,
+    DEBUG_REASON_CAUSALITY     = 4
+};
+```
+
+#### <a name="parameters"></a>Parámetros
+DEBUG_REASON_ERROR  
+Se produjo un error no especificado (Esto se usa como una condición predeterminada cuando ninguno de los otros motivos de ajuste).
+
+DEBUG_REASON_USER_LAUNCHED  
+Se inició el proceso a petición del usuario.
+
+DEBUG_REASON_USER_ATTACHED  
+El proceso de ejecución ya se ha adjuntado a por el usuario.
+
+DEBUG_REASON_AUTO_ATTACHED  
+El proceso se adjunta automáticamente a cuando se inició.
+
+DEBUG_REASON_CAUSALITY  
+El proceso se inició debido a un *Just-In-Time* eventos de depuración (JIT).
+
+## <a name="remarks"></a>Comentarios
+Devuelve el [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) método.
+
+## <a name="requirements"></a>Requisitos
+Encabezado: msdbg.h
+
+Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+
+Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vea también
+[Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

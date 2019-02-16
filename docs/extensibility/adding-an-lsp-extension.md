@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965697"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318802"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Agregar una extensión del protocolo de servidor de lenguaje
 
@@ -89,9 +89,9 @@ textDocument/rename | sí
 ## <a name="getting-started"></a>Introducción
 
 > [!NOTE]
-> A partir de Visual Studio 15,8 Preview 3, compatibilidad con el protocolo de servidor de lenguaje común está integrado en Visual Studio.  Si ha creado con la versión preliminar de extensiones LSP [VSIX de cliente de servidor de lenguaje](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) versión, dejará de funcionar una vez para que haya actualizado a 15,8 Preview 3 o posterior.  Deberá hacer lo siguiente para obtener las extensiones LSP funcione de nuevo:
+> A partir de Visual Studio 15,8 Preview 3, compatibilidad con el protocolo de servidor de lenguaje común está integrado en Visual Studio. Si ha creado con la versión preliminar de extensiones LSP [VSIX de cliente de servidor de lenguaje](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) versión, dejará de funcionar una vez para que haya actualizado a 15,8 Preview 3 o posterior. Deberá hacer lo siguiente para obtener las extensiones LSP funcione de nuevo:
 >
-> 1. Desinstale el protocolo de servidor de Microsoft Visual Studio lenguaje Preview VSIX.  A partir de 15,8 Preview 4, cada vez que realice una actualización en Visual Studio, hemos automáticamente detectará y quitar la versión preliminar de VSIX automáticamente durante el proceso de actualización.
+> 1. Desinstale el protocolo de servidor de Microsoft Visual Studio lenguaje Preview VSIX. A partir de 15,8 Preview 4, cada vez que realice una actualización en Visual Studio, hemos automáticamente detectará y quitar la versión preliminar de VSIX automáticamente durante el proceso de actualización.
 >
 > 2. Actualizar la referencia de Nuget a la última versión sin vista previa para [paquetes LSP](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client).
 >
@@ -129,10 +129,10 @@ El LSP no incluye la especificación sobre cómo proporcionar la coloración de 
 
 4. Crear un *.pkgdef* archivo y agregue una línea similar a esto:
 
-   ```xml
-   [$RootKey$\TextMate\Repositories]
-   "MyLang"="$PackageFolder$\Grammars"
-   ```
+    ```xml
+    [$RootKey$\TextMate\Repositories]
+    "MyLang"="$PackageFolder$\Grammars"
+    ```
 
 5. Haga doble clic en los archivos y seleccione **propiedades**. Cambiar el **compilar** acción a **contenido** y el **incluir en VSIX** propiedad en true.
 
@@ -292,31 +292,31 @@ Siga estos pasos para agregar compatibilidad para la configuración a la extensi
 
 1. Agregue un archivo JSON (por ejemplo, *MockLanguageExtensionSettings.json*) en el proyecto que contiene la configuración y sus valores predeterminados. Por ejemplo:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": -1
-   }
-   ```
+    ```json
+    {
+        "foo.maxNumberOfProblems": -1
+    }
+    ```
 2. Haga doble clic en el archivo JSON y seleccione **propiedades**. Cambio la **compilar** acción para "Content" y "incluir en VSIX' propiedad en true.
 
 3. Implementar ConfigurationSections y devolver la lista de los prefijos de la configuración definida en el archivo JSON (en Visual Studio Code, se podría asignar al nombre de sección de configuración en package.json):
 
-   ```csharp
-   public IEnumerable<string> ConfigurationSections
-   {
-      get
-      {
-          yield return "foo";
-      }
-   }
-   ```
+    ```csharp
+    public IEnumerable<string> ConfigurationSections
+    {
+        get
+        {
+            yield return "foo";
+        }
+    }
+    ```
 
 4. Agregue un archivo .pkgdef en el proyecto (Agregar nuevo archivo de texto y cambie la extensión de archivo .pkgdef). El archivo pkgdef debe contener esta información:
 
-   ```xml
+    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-   ```
+    ```
 
     Ejemplo:
     ```xml
@@ -340,13 +340,13 @@ Siga estos pasos para agregar compatibilidad para la configuración a la extensi
 2. Usuario agrega un archivo en el *.vs* carpeta denominada *VSWorkspaceSettings.json*.
 3. Usuario agrega una línea a la *VSWorkspaceSettings.json* archivo para una configuración que proporciona el servidor. Por ejemplo:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": 10
-   }
-   ```
-   ### <a name="enabling-diagnostics-tracing"></a>Habilitar el seguimiento de diagnóstico
-   Seguimiento de diagnóstico puede habilitarse para todos los mensajes entre el cliente y servidor, que puede ser útil al depurar problemas de salida.  Para habilitar el seguimiento de diagnóstico, haga lo siguiente:
+    ```json
+    {
+        "foo.maxNumberOfProblems": 10
+    }
+    ```
+    ### <a name="enabling-diagnostics-tracing"></a>Habilitar el seguimiento de diagnóstico
+    Seguimiento de diagnóstico puede habilitarse para todos los mensajes entre el cliente y servidor, que puede ser útil al depurar problemas de salida. Para habilitar el seguimiento de diagnóstico, haga lo siguiente:
 
 4. Abra o cree el archivo de configuración de área de trabajo *VSWorkspaceSettings.json* (vea "Edición del usuario de configuración para un área de trabajo").
 5. Agregue la siguiente línea en el archivo de configuración de json:
@@ -362,7 +362,7 @@ Hay tres valores posibles para el nivel de detalle del seguimiento:
 * "Los mensajes": activado pero el identificador de nombre y la respuesta de método solo se realiza un seguimiento.
 * "Detallado": activado; el mensaje rpc todo se realiza un seguimiento.
 
-Cuando está activado el seguimiento del contenido se escribe en un archivo en el *%temp%\VisualStudio\LSP* directory.  El registro sigue el formato de nomenclatura *[LanguageClientName]-[marca de fecha y hora] .log*.  Actualmente, el seguimiento solo puede habilitarse para escenarios de carpeta abierta.  Apertura de un único archivo para activar un servidor de lenguaje no tiene soporte de seguimiento de diagnóstico.
+Cuando está activado el seguimiento del contenido se escribe en un archivo en el *%temp%\VisualStudio\LSP* directory. El registro sigue el formato de nomenclatura *[LanguageClientName]-[marca de fecha y hora] .log*. Actualmente, el seguimiento solo puede habilitarse para escenarios de carpeta abierta. Apertura de un único archivo para activar un servidor de lenguaje no tiene soporte de seguimiento de diagnóstico.
 
 ### <a name="custom-messages"></a>Mensajes personalizados
 
@@ -425,7 +425,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     }
 
     public async Task SendServerCustomNotification(object arg)
-    {    
+    {
         await this.customMessageRpc.NotifyWithParameterObjectAsync("OnCustomNotification", arg);
     }
 
@@ -477,7 +477,7 @@ Para ver el código fuente de una extensión de ejemplo mediante la API de clien
 
 **Me gustaría crear un sistema de proyecto personalizadas para complementar mi servidor de lenguaje LSP para proporcionar compatibilidad con las características más completa en Visual Studio, ¿cómo ir sobre cómo hacer que?**
 
-Compatibilidad con lenguajes basados en LSP servidores en Visual Studio se basa en el [característica Abrir carpeta](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/) y está específicamente diseñado para no requerir un sistema de proyecto personalizado. Puede crear su propio sistema de proyecto personalizado siguiendo las instrucciones [aquí](https://github.com/Microsoft/VSProjectSystem), pero algunas características, como la configuración, podrían no funcionar. La lógica de inicialización predeterminado para los servidores de lenguaje LSP consiste en pasar la ubicación de la carpeta raíz de la carpeta que se está abierta actualmente, por lo que es posible que si usa un sistema de proyectos personalizados, deberá proporcionar lógica personalizada durante la inicialización para asegurarse de su servidor de lenguaje puede iniciar correctamente.
+Compatibilidad con lenguajes basados en LSP servidores en Visual Studio se basa en el [característica Abrir carpeta](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/) y está específicamente diseñado para no requerir un sistema de proyecto personalizado. Puede crear su propio sistema de proyecto personalizado siguiendo las instrucciones [aquí](https://github.com/Microsoft/VSProjectSystem), pero algunas características, como la configuración, podrían no funcionar. La lógica de inicialización predeterminado para los servidores de lenguaje LSP consiste en pasar la ubicación de la carpeta raíz de la carpeta que se está abierta actualmente, por lo que es posible que si usa un sistema de proyectos personalizados, deberá proporcionar lógica personalizada durante la inicialización para asegurarse de su servidor de lenguaje puede iniciar correctamente.
 
 **¿Cómo se puede agregar compatibilidad con el depurador?**
 
