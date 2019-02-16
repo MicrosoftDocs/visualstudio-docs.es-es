@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012279"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318750"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Cambios en la extensibilidad de Visual Studio 2017
 
-Con Visual Studio 2017, le ofrecemos un [experiencia de instalación de Visual Studio más rápido y ligero](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer) que reduce el impacto de Visual Studio en sistemas de usuario, mientras proporciona a los usuarios más opciones a través de las características y las cargas de trabajo que se instalan. Para admitir estas mejoras, se ha realizado cambios en el modelo de extensibilidad y han realizado algunos cambios importantes a la extensibilidad de Visual Studio. Este documento describirá los detalles técnicos de estos cambios, y qué se puede hacer para solucionarlos. Tenga en cuenta que cierta información es los detalles de implementación en un momento y se puede cambiar más adelante.
+Con Visual Studio 2017, le ofrecemos un [experiencia de instalación de Visual Studio más rápido y ligero](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer) que reduce el impacto de Visual Studio en sistemas de usuario, mientras proporciona a los usuarios más opciones a través de las características y las cargas de trabajo que se instalan. Para admitir estas mejoras, se ha realizado cambios en el modelo de extensibilidad y han realizado algunos cambios importantes a la extensibilidad de Visual Studio. Este documento describirá los detalles técnicos de estos cambios, y qué se puede hacer para solucionarlos. Tenga en cuenta que cierta información es los detalles de implementación en un momento y se puede cambiar más adelante.
 
 ## <a name="changes-affecting-vsix-format-and-installation"></a>Cambios que afectan a la instalación y el formato VSIX
 
@@ -28,7 +28,7 @@ Incluyen cambios en el formato VSIX:
 * Declaración de requisitos previos del programa de instalación. Para hacer realidad la promesa de una ligera y rápida: instalación de Visual Studio, el instalador ahora ofrece más opciones de configuración a los usuarios. Como resultado, para asegurarse de que se instalan las características y los componentes requeridos por una extensión, las extensiones se deben declaran sus dependencias.
   * El instalador de Visual Studio 2017 ofrecerá automáticamente adquirir e instalar los componentes necesarios para el usuario como parte de la instalación de la extensión.
   * Los usuarios también se le avisará cuando se intenta instalar una extensión que no se creó mediante el nuevo formato VSIX v3, incluso si se han marcado en el manifiesto para seleccionar como destino la versión 15.0.
-* Capacidades mejoradas para el formato VSIX. Para cumplir con un [instalación de bajo impacto](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install) de Visual Studio que también es compatible con instalaciones en paralelo, ya no guardar la mayoría de los datos de configuración en el registro del sistema y se han movido los ensamblados específico de Visual Studio fuera de la GAC. También se aumenta las capacidades del formato VSIX y motor de instalación de VSIX, que le permite usar en lugar de una MSI o EXE para instalar las extensiones para algunos tipos de instalación.
+* Capacidades mejoradas para el formato VSIX. Para cumplir con un [instalación de bajo impacto](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install) de Visual Studio que también es compatible con instalaciones en paralelo, ya no guardar la mayoría de los datos de configuración en el registro del sistema y se han movido los ensamblados específico de Visual Studio fuera de la GAC. También se aumenta las capacidades del formato VSIX y motor de instalación de VSIX, que le permite usar en lugar de una MSI o EXE para instalar las extensiones para algunos tipos de instalación.
 
   Las nuevas capacidades incluyen:
 

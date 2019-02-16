@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10acf356ccfc790f9dd6a185c12a6ec5c26cccd3
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: c6382d4b75d24d88e9fb93b2cf46386392458ebb
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742487"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316200"
 ---
 # <a name="extend-the-output-window"></a>Ampliar la ventana de salida
 El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. Visual Studio tiene estos paneles integrados: **Compilar**, en los proyectos que se comunican los mensajes sobre las compilaciones, y **General**, en el que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comunica mensajes de información sobre el IDE. Proyectos de obtención una referencia a la **compilar** automáticamente a través del panel la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> métodos de interfaz y Visual Studio ofrece acceso directo a la **General** panel a través de la <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servicio. Además de los paneles integrados, puede crear y administrar sus propios paneles personalizados.  
@@ -153,7 +153,7 @@ void DeletePane(Guid paneGuid)
  En este ejemplo se muestra cómo obtener los integrados **General** panel de la **salida** ventana.  
   
 ```csharp  
-void GetGeneralPane()  
+IVsOutputWindowPane GetGeneralPane()  
 {  
     return (IVsOutputWindowPane)GetService(  
         typeof(SVsGeneralOutputWindowPane));  
