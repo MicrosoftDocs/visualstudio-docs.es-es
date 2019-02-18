@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829201"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023959"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuración remota de ASP.NET en un equipo remoto de IIS
 Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y ejecutar las herramientas remotas en el equipo donde ha implementado la aplicación y, a continuación, adjunte a su aplicación en ejecución desde Visual Studio.
@@ -48,7 +48,7 @@ En este artículo incluye pasos sobre cómo configurar una configuración básic
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Creación de ASP.NET 4.5.2 aplicación en el equipo de Visual Studio
   
-1. Cree una nueva aplicación de MVC ASP.NET (**Archivo > Nuevo > proyecto**, a continuación, seleccione <strong>Visual C# > Web > aplicación Web ASP.NET. En el **ASP.NET 4.5.2</strong> sección plantillas, seleccione **MVC**. Asegúrese de que **habilitar la compatibilidad con Docker** no está seleccionada y que **autenticación** está establecido en **sin autenticación**. Denomine el proyecto **MyASPApp**.)
+1. Cree una nueva aplicación de MVC ASP.NET (**Archivo > Nuevo > proyecto**, a continuación, seleccione <strong>Visual C# > Web > aplicación Web ASP.NET. En la sección de plantillas ASP.NET 4.5.2 , seleccione MVC</strong>. Asegúrese de que **habilitar la compatibilidad con Docker** no está seleccionada y que **autenticación** está establecido en **sin autenticación**. Denomine el proyecto **MyASPApp**.)
 
 2. Abra el archivo HomeController.cs y establezca un punto de interrupción en el método `About()` .
 
@@ -80,7 +80,7 @@ Si desea información más detallada para instalar ASP.NET en IIS, consulte [IIS
     > [!NOTE]
     > Si usa Windows Server 2008 R2, instale ASP.NET 4 en lugar de utilizar este comando:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Reinicie el sistema (o ejecute **net stop was /y** seguido de **net start w3svc** desde un símbolo del sistema para obtener un cambio en la ruta de acceso del sistema).
 
@@ -206,7 +206,7 @@ Para obtener información acerca de cómo ejecutar el depurador remoto como un s
 
     Se alcanzará el punto de interrupción en Visual Studio.
 
-## <a name="bkmk_openports">Solución de problemas</a> Abra los puertos necesarios en Windows Server
+## <a name="bkmk_openports"></a> Solución de problemas Abra los puertos necesarios en Windows Server
 
 En la mayoría de las instalaciones, se abren los puertos requeridos por la instalación de ASP.NET y el depurador remoto. Sin embargo, deberá comprobar que los puertos estén abiertos.
 
