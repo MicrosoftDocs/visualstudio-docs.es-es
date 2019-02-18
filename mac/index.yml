@@ -1,0 +1,121 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: b8f5921be45ead5ec97263c01b780c57cb1acb68
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318959"
+documentType: LandingData
+title: Documentación de Visual Studio para Mac
+metadata:
+  description: En este artículo se presentan las características de Visual Studio para Mac.
+  author: conceptdev
+  ms.author: crdun
+  ms.date: 02/06/2019
+  ms.topic: landing-page
+  ms.prod: visual-studio-mac
+  ms.technology: vs-ide-general
+sections:
+- title: Introducción a Visual Studio para Mac
+  items:
+  - type: paragraph
+    text: Instale y obtenga información sobre el entorno de desarrollo integrado (IDE) de Visual Studio para Mac.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: ~/installation.md
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_setup.svg
+      title: Instalación de Visual Studio para Mac
+    - href: ~/ide-tour.md
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
+      title: Paseo por Visual Studio para Mac
+    - href: ~/installation.md?view=vsmac-2019
+      html: <p></p>
+      image:
+        src: ~/media/index-2019-preview.png
+      title: Pruebe la versión preliminar 2019.
+- title: ¿Qué aplicaciones puedo compilar?
+  items:
+  - type: paragraph
+    text: Con Visual Studio para Mac puede crear sitios web con ASP.NET Core, aplicaciones con .NET Core, juegos con Unity y aplicaciones móviles para iOS y Android con Xamarin. Azure se puede incorporar a todas las aplicaciones.
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
+      text: ASP.NET Core
+      href: ~/asp-net-core.md
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_azure.svg
+      text: Azure
+      href: ~/azure-workload.md
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_unity.svg
+      text: Unity
+      href: ~/unity-tools.md
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_xamarin.svg
+      text: Xamarin
+      href: /xamarin/
+- title: ¿Qué lenguajes puedo usar?
+  items:
+  - type: paragraph
+    text: Con Visual Studio para Mac puede escribir en C#, F#, Razor, HTML5, CSS, Javascript y Typescript, XAML y XML.
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_Csharp.svg
+      text: C#
+      href: /dotnet/csharp/
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
+      text: F#
+      href: /dotnet/fsharp/
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_js.svg
+      text: JavaScript
+      href: ~/javascript.md
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_TS.svg
+      text: TypeScript
+      href: ~/javascript.md
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_html5.svg
+      text: HTML/Razor
+      href: ~/razor.md
+- title: Escritura de código con Visual Studio para Mac
+  items:
+  - type: paragraph
+    text: Obtenga más información sobre cómo usar Visual Studio para escribir, compilar, depurar y almacenar el código.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: ~/source-editor.md
+      html: <p>IntelliSense, refactorización y resaltado de sintaxis para su lenguaje favorito.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_code-edit.svg
+      title: Escribir código
+    - href: ~/compiling-and-building.md
+      html: <p>Configure el compilador y cree una aplicación.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_build.svg
+      title: Compilar y generar
+    - href: ~/debugging.md
+      html: <p>Ejecute la aplicación en el depurador para investigar problemas.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_debug.svg
+      title: Depuración
+    - href: ~/version-control.md
+      html: <p>Acceso a los repositorios de código fuente de Azure DevOps, Git o Subversion.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_pull-request.svg
+      title: Control de versiones
