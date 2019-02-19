@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 73d515c03b7966e3434a2fc2507d3ad5f8d13c1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782860"
 ---
-# <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Información general sobre la interfaz de usuario de las Herramientas del lenguaje específico de dominio
+# <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cuando se abre una solución de las Herramientas del lenguaje específico de dominio (Herramientas DSL) en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la interfaz de usuario será algo parecido a esta imagen.  
@@ -50,7 +50,7 @@ Cuando se abre una solución de las Herramientas del lenguaje específico de dom
 |Formas y conectores|Las formas especifican cómo deben mostrarse los elementos del modelo en un diagrama de DSL. Los conectores especifican las líneas en un diagrama de DSL que se pueden usar para mostrar las relaciones.<br /><br /> Para crear una forma o un conector, arrastre la herramienta a la parte **Elementos de diagrama** del diagrama.|  
 |Asignaciones de formas|Un mapa de formas aparece como una línea en el diagrama del modelo de dominio y vincula una forma a la clase de dominio que se muestra, o un conector a la relación de dominio que se muestra.|  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Vea también  
  [Información general sobre las Herramientas del lenguaje específico de dominio](../modeling/overview-of-domain-specific-language-tools.md)   
  [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)
