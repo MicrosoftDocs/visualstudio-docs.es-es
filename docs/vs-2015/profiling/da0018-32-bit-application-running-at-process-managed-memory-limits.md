@@ -26,7 +26,7 @@ ms.locfileid: "54773292"
 Id. de regla | DA0018 |  
 | Categoría | Uso de herramientas de generación de perfiles |  
 | Método de generación de perfiles | Muestreo |  
-| Mensaje | Administrar las asignaciones de memoria que se está acercando al límite predeterminado para un proceso de 32 bits. Puede que la aplicación esté enlazada a la memoria.  
+| Mensaje | Administrar las asignaciones de memoria que se está acercando al límite predeterminado para un proceso de 32 bits. Puede que la aplicación esté enlazada a la memoria.|  
 | Tipo de regla | Advertencia |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  

@@ -1,14 +1,9 @@
 ---
 title: Buscar en archivos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -25,18 +20,18 @@ ms.assetid: 989e0737-46d7-4474-8453-fad52a74669d
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902144"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804364"
 ---
 # <a name="find-in-files"></a>Buscar en archivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Buscar en archivos ** permite buscar un conjunto de archivos especificado. Las coincidencias encontradas y las acciones realizadas se muestran en la ventana **Resultados de la búsqueda** seleccionada en **Opciones de resultados**.  
+Buscar en archivos** permite buscar en un conjunto de archivos especificado. Las coincidencias encontradas y las acciones realizadas se muestran en la ventana **Resultados de la búsqueda** seleccionada en **Opciones de resultados**.  
   
  Puede usar cualquiera de los métodos siguientes para mostrar **Buscar en archivos** en la ventana **Buscar y reemplazar**.  
   
@@ -72,7 +67,7 @@ Buscar en archivos ** permite buscar un conjunto de archivos especificado. Las c
  Coincidir mayúsculas y minúsculas  
  Cuando se selecciona, la búsqueda **Resultados de la búsqueda** distinguirá entre mayúsculas y minúsculas  
   
- Solo palabras completas  
+  Solo palabras completas  
  Cuando se selecciona, las ventanas**Resultados de la búsqueda** solo devolverán coincidencias de palabras completas.  
   
  Usar expresiones regulares  
@@ -102,6 +97,3 @@ Buscar en archivos ** permite buscar un conjunto de archivos especificado. Las c
  [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)   
  [Reemplazar en archivos](../ide/replace-in-files.md)   
  [Comandos de Visual Studio](../ide/reference/visual-studio-commands.md)
-
-
-

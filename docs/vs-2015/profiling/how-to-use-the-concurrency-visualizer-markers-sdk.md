@@ -96,7 +96,7 @@ Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Agregue código para crear tres intervalos en la serie de marcadores predeterminada y escriba una marca, un mensaje y una alerta para cada intervalo. Cree un objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> llamando al método estático <!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->EnterSpan. Para escribir en la serie predeterminada, use los métodos de escritura estáticos de la clase <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
+3.  Agregue código para crear tres intervalos en la serie de marcadores predeterminada y escriba una marca, un mensaje y una alerta para cada intervalo. Cree un objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> llamando al método estático [EnterSpan](<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->). Para escribir en la serie predeterminada, use los métodos de escritura estáticos de la clase <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
   
     ```vb  
   

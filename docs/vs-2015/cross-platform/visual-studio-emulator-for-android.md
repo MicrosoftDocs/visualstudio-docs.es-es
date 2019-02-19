@@ -1,24 +1,19 @@
 ---
 title: Emulador de Visual Studio para Android | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 22126bb5a364148c7079d59d750483a7ebc47418
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: ec7e6d3ee6d27c444d0904e750293a3d82c3ab4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799605"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789862"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulador de Visual Studio para Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
   
 -   [Características que puede probar en el emulador](#FeaturesTest)  
   
--   [Características que no se puede probar en el emulador](#FeaturesNonTest)  
+-   [Características que no puede probar en el emulador](#FeaturesNonTest)  
   
 -   [Recursos de soporte técnico](#Support)  
   
@@ -98,7 +93,7 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
 ##  <a name="FeaturesTest"></a> Características que puede probar en el emulador  
  Para obtener información detallada sobre las características que puede probar en el emulador, vea esta [documentación](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
   
-##  <a name="FeaturesNonTest"></a> Características que no se puede probar en el emulador  
+##  <a name="FeaturesNonTest"></a> Características que no puede probar en el emulador  
  La lista siguiente describe características de la plataforma Android que **no puede** probar en el emulador. Deberá probarlas en un dispositivo físico.  
   
 -   Brújula  
@@ -119,4 +114,3 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
 ## <a name="see-also"></a>Vea también  
  [Requisitos de sistema del emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
-

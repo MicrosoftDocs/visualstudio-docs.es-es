@@ -51,7 +51,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
   Por ejemplo, el directorio siguiente contiene las plantillas de proyecto personalizadas de [!INCLUDE[csprcs](../includes/csprcs-md.md)]:  
   
-  C:\Documents and Settings\UserName\My Documents\Visual Studio \\Version\>\Templates\ProjectTemplates\Visual C#\  
+  C:\Documents and Settings\UserName\My Documents\\<versión de Visual Studio\>\Templates\ProjectTemplates\Visual C#\  
   
   Las plantillas personalizadas no incluyen un subdirectorio para las plantillas de otros idiomas. Puede cambiar el directorio predeterminado para las plantillas personalizadas en el cuadro de diálogo **Opciones**, bajo **Entorno\Proyectos y soluciones**.  
   
@@ -117,7 +117,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
 1. Cree una carpeta en la carpeta del lenguaje del directorio de plantillas de proyecto personalizadas. Por ejemplo, para crear la categoría HelloWorld para las plantillas de [!INCLUDE[csprcs](../includes/csprcs-md.md)], crearía el directorio siguiente:  
   
-    \My Documents\Visual Studio \\Version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\\<versión de Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. Coloque todas las plantillas de esta categoría en la nueva carpeta.  
   
@@ -131,7 +131,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
 1.  Cree una carpeta en la carpeta del lenguaje en el directorio de plantillas de elementos personalizadas. Por ejemplo, para crear la categoría HelloWorld para las plantillas de [!INCLUDE[csprcs](../includes/csprcs-md.md)], se  crearía el directorio siguiente:  
   
-     \My Documents\Visual Studio \\Version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\\<versión de Visual Studio\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  Coloque todas las plantillas de esta categoría en la nueva carpeta.  
   

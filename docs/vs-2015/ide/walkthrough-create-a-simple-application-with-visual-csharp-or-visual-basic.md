@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802621"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Tutorial: Crear una aplicación sencilla con Visual C# o Visual Basic
@@ -47,7 +47,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
  Puede crear personalizaciones adicionales en Visual Studio, como cambiar el tipo de fuente y el tamaño del texto en el editor o el tema de color del IDE, mediante el cuadro de diálogo **Opciones** . Dependiendo de la combinación de opciones que haya aplicado, puede que algunos elementos de este cuadro de diálogo no aparezcan automáticamente. Puede asegurarse de que aparezcan todas las opciones posibles activando la casilla **Mostrar todas las configuraciones** .  
   
- Figura 3: Opciones (cuadro de diálogo)  
+ Figura 3: Cuadro de diálogo Opciones  
   
  ![Cuadro de diálogo Opciones con la opción Mostrar todas las configuraciones](../ide/media/exploreide-optionsdialogbox.png "ExploreIDE-Optionsdialogbox")  
   
@@ -94,7 +94,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
    Visual Studio crea el proyecto HelloWPFApp y la solución y el **Explorador de soluciones** muestra los distintos archivos. WPF Designer muestra una vista de diseño y una vista XAML de MainWindow.xaml en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas.  Puede elegir ver solo la vista visual o solo la vista XAML. (Para obtener más información, vea [Diseñador WPF para desarrolladores de Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Los elementos siguientes aparecen en el **Explorador de soluciones**:  
   
-   Figura 5: elementos de proyecto  
+   Figura 5: Elementos del proyecto  
   
    ![Explorador de soluciones con los archivos HelloWPFApp cargados](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
@@ -132,7 +132,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
    La ventana debería ser similar a la siguiente ilustración:  
   
-   (Figura 7) Ventana Greetings con el control TextBlock  
+   Figura 7: Ventana Greetings con el control TextBlock  
   
    ![Control TextBlock del formulario Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
@@ -162,7 +162,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
     La ventana debe ser similar a la que se muestra a continuación:  
   
-    Figura 8. Botones de opción en la ventana Greetings.  
+    Figura 8: RadioButtons en la ventana Greetings.  
   
     ![Formulario Greetings con bloque de texto y dos botones de selección](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
   
@@ -259,7 +259,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
     ![Comando Iniciar depuración del menú Depurar](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    Aparece un cuadro de diálogo que indica que se ha producido una excepción IOException: No se encuentra el recurso "mainwindow.xaml".  
+    Aparece un cuadro de diálogo que indica que se ha producido una excepción IOException: No se encuentra el recurso ‘mainwindow.xaml’.  
   
 2. Elija el botón **Aceptar** y después detenga el depurador.  
   

@@ -50,7 +50,7 @@ Puede examinar los objetos y miembros de proyectos de Visual Studio y los objeto
   
  [Ventana Definición de código (C#, C++)](#BKMK_CodeDefinition)  
   
- También puede usar el **Explorador de soluciones** para examinar los tipos y miembros de sus proyectos, buscar símbolos, ver la jerarquía de llamadas de un método o buscar referencias de símbolos, entre otros, sin necesidad de cambiar entre las múltiples ventanas de herramientas enumeradas anteriormente.  
+ También puede usar el **Explorador de soluciones** para examinar los tipos y miembros de los proyectos, buscar símbolos, ver la jerarquía de llamadas de un método o buscar referencias de símbolos, entre otros, sin necesidad de cambiar entre las múltiples ventanas de herramientas enumeradas anteriormente.  
   
  Si tiene Visual Studio Enterprise puede utilizar mapas de código para visualizar la estructura del código y sus dependencias en toda la solución y explorar en profundidad hasta llegar a las partes del código que le interesen. Para obtener más información, vea [Asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md).  
   

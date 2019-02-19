@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775877"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
@@ -34,7 +34,7 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 |Área|Tarea|Para obtener más información|
 |----------|----------|--------------------------|
 |Instalación|Instalar Visual Studio.|[Instalación de Visual Studio 2015](../install/install-visual-studio-2015.md)|
-||Actualizar desde una edición de evaluación de Visual Studio.|[Cómo: Actualización desde una edición de prueba de Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Actualizar desde una edición de evaluación de Visual Studio.|[Cómo: Actualizar desde una edición de prueba de Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Instalar, actualizar o quitar contenido de la Ayuda local.|[Instalar y administrar el contenido local](../ide/install-and-manage-local-content.md)|
 |Tipos de aplicación|Desarrollar soluciones para SharePoint 2010.|[Requisitos para desarrollar soluciones de SharePoint](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||Adquirir una licencia de desarrollador para la [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Obtener una licencia de desarrollador (aplicaciones de la Tienda Windows)](http://go.microsoft.com/fwlink/?LinkID=241313)|
@@ -48,8 +48,8 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 ||Usar el emulador para depurar proyectos de servicios en la nube para Microsoft Azure.|[Depurar un servicio en la nube en Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||Configurar un firewall para depuración remota.|[Configurar las herramientas remotas en el dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Herramientas de rendimiento|Generar perfiles de una aplicación.|[Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)|
-|Implementación|Implementar una aplicación web en Internet Information Services (IIS) en un equipo local.|[Implementar una aplicación web ASP.NET en un proveedor de hospedaje mediante Visual Studio or Visual Web Developer: Implementar en IIS como entorno de prueba](http://go.microsoft.com/fwlink/?LinkId=266478)|
-|Proporcionar comentarios a Microsoft|Cambiar cómo participar en el Programa para la mejora de la experiencia del usuario de Visual Studio.|[Cómo: enviar comentarios](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Implementación|Implementar una aplicación web en Internet Information Services (IIS) en un equipo local.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](http://go.microsoft.com/fwlink/?LinkId=266478) (Implementar una aplicación web ASP.NET en un proveedor de host mediante Visual Studio o Visual Web Developer: implementar en IIS como entorno de prueba)|
+|Proporcionar comentarios a Microsoft|Cambiar cómo participar en el Programa para la mejora de la experiencia del usuario de Visual Studio.|[Cómo: Enviar comentarios](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Ejecutar Visual Studio como administrador
  Puede iniciar Visual Studio con permisos administrativos cada vez que inicie el IDE o puede modificar el acceso directo de la aplicación para que se ejecute siempre con permisos administrativos. Para obtener más información, vea la Ayuda de Windows.

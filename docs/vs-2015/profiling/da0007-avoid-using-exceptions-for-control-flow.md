@@ -27,7 +27,7 @@ ms.locfileid: "54770839"
 Id. de regla | DA0007 |  
 | Categoría |. Uso de .NET Framework |  
 | Métodos de generación de perfiles | Todos los |  
-| Mensaje | Constantemente se está produciendo un gran número de excepciones. Considere la posibilidad de reducir el uso de excepciones en la lógica del programa.  
+| Mensaje | Constantemente se está produciendo un gran número de excepciones. Considere la posibilidad de reducir el uso de excepciones en la lógica del programa.|  
 | Tipo de mensaje | Advertencia |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 25 ejemplos para activar esta regla.  

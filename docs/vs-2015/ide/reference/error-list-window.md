@@ -27,7 +27,7 @@ ms.locfileid: "54785776"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-NOTA
+NOTA]
 >  La Lista de errores muestra información sobre un mensaje de error específico. Puede copiar el número de error o el texto de la cadena de error de la ventana de salida. Para mostrar la ventana de salida, presione Ctrl+Alt+O. Vea [Ventana de salida](../../ide/reference/output-window.md).  
   
  La ventana **Lista de errores** permite desarrollar aplicaciones de forma más rápida. Por ejemplo, puede realizar las tareas siguientes:  

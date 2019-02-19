@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834834"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar Visual Studio
@@ -43,7 +43,7 @@ Esta página le guiará en el proceso de desinstalación de Visual Studio 2015, 
 1.  Busque el archivo .exe de Visual Studio (por ejemplo, busque "vs_enterprise.exe").
 
     > [!NOTE]
-    >  El archivo debe estar en una subcarpeta de "%ProgramData%\Package Cache", por ejemplo: C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
+    >  El archivo debe estar en una subcarpeta de "%ProgramData%\Package Cache", por ejemplo: caché C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
 
 2.  Ejecute el archivo .exe mediante el uso de la desinstalación o forzar los parámetros de línea de comandos.
 
@@ -73,7 +73,7 @@ Esta página le guiará en el proceso de desinstalación de Visual Studio 2015, 
 
 2. Instalar o reinstalar la versión anterior de Visual Studio que desea usar.
 
-   Incluso si instala una versión anterior de Visual Studio, el programa de instalación todavía es posible que intente usar una versión más reciente o si está disponible. Para obtener más información, consulte el [Cómo: Instalar una versión específica de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tema.
+   Incluso si instala una versión anterior de Visual Studio, el programa de instalación todavía es posible que intente usar una versión más reciente o si está disponible. Para obtener más información, consulte el [Cómo: instalar una versión específica de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tema.
 
 ## <a name="see-also"></a>Vea también
  [Instalar Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

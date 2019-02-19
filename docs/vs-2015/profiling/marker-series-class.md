@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb199d74ade593d0bc8318c27bc96ffbf70e4dcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778875"
 ---
 # <a name="markerseries-class"></a>marker_series (Clase)
@@ -55,7 +55,7 @@ class marker_series;
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkersobj.h  
   
- **Espacio de nombres**: Concurrency::diagnostic  
+ **Espacio de nombres:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Vea también  
  [diagnostic (Espacio de nombres)](../profiling/diagnostic-namespace.md)

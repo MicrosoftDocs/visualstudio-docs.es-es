@@ -24,10 +24,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54763655"
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
@@ -35,7 +35,7 @@ ms.locfileid: "54763655"
 
 Antes de escribir código en un componente externo o en un servicio conectado, el proyecto debe contener primero una referencia a él. Una referencia es básicamente una entrada de un archivo de proyecto que contiene la información que Visual Studio necesita para localizar el componente o el servicio.  
   
- Para agregar una referencia, haga clic con el botón derecho en el nodo Referencias del Explorador de soluciones y elija **Agregar referencia**. Para obtener más información, vea [Cómo: Agregar o quitar referencias con el Administrador de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)  
+ Para agregar una referencia, haga clic con el botón derecho en el nodo Referencias del Explorador de soluciones y elija **Agregar referencia**. Para obtener más información, consulta [Procedimiento para agregar o quitar referencias mediante el Administrador de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
   
  ![Agregar una referencia en Visual C&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")  
   
@@ -108,7 +108,7 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 ## <a name="project-to-project-references"></a>Referencias entre proyectos  
  Las referencias entre proyectos son referencias a proyectos que contienen ensamblados. Puede crearlas en la pestaña **Proyecto** . Visual Studio puede encontrar un ensamblado cuando se le proporciona una ruta de acceso al proyecto.  
   
- Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio bin, lo cual no es posible. Si se produce este conflicto, verá el mensaje [Advertencia: la dependencia "archivo" del proyecto "proyecto" no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia "archivo"](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Para obtener más información, consulte [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) y [Cómo: Creación y eliminación de dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).  
+ Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio bin, lo cual no es posible. Si se produce este conflicto, verá el mensaje [Advertencia: la dependencia "archivo" del proyecto "proyecto" no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia "archivo"](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Para obtener más información, consulte [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Cómo: Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
 >  Se crea una referencia de archivo en lugar de una referencia entre proyectos si la versión de destino de .NET Framework de un proyecto es la versión 4.5, y la del otro proyecto es la versión 2, 3, 3.5 o 4.0.  
@@ -119,4 +119,4 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 ## <a name="see-also"></a>Vea también  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
  [Programar con ensamblados](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [Cómo: Agregar o quitar referencias con el Administrador de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [Cómo: Agregar o quitar referencias usando el Administrador de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

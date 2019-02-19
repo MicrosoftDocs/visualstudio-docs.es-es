@@ -35,7 +35,7 @@ El Debug Interface Access (DIA) SDK proporciona documentación con instrucciones
   
   Encabezado: include\dia2.h  
   
-  Library: lib\diaguids.lib  
+  Biblioteca: lib\diaguids.lib  
   
   Archivo DLL: bin\msdia80.dll  
   

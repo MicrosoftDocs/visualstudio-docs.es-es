@@ -1,14 +1,9 @@
 ---
 title: Fragmentos de código de Visual C# | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
@@ -19,13 +14,13 @@ ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297419"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787110"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Los fragmentos de código están listos para usar y puede insertarlos rápidamen
 |clase|Crea una declaración de clase.|Dentro de un espacio de nombres (incluido el espacio de nombres global), una clase o un struct.|  
 |ctor|Crea un constructor para la clase contenedora.|Dentro de una clase.|  
 |cw|Crea una llamada a <xref:System.Console.WriteLine%2A>.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|  
-|do|Crea un [hacer](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) `while` bucle.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|  
+|do|Crea un bucle [do](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|  
 |else|Crea un bloque [else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|  
 |enum|Crea una declaración [enum](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|Dentro de un espacio de nombres (incluido el espacio de nombres global), una clase o un struct.|  
 |equals|Crea una declaración de método que invalida el método <xref:System.Object.Equals%2A> que se define en la clase <xref:System.Object>.|Dentro de una clase o un struct.|  
@@ -83,10 +78,7 @@ Los fragmentos de código están listos para usar y puede insertarlos rápidamen
 ## <a name="see-also"></a>Vea también  
  [Funciones de los fragmentos de código](../ide/code-snippet-functions.md)   
  [Fragmentos de código](../ide/code-snippets.md)   
- [Cómo: Crear un nuevo fragmento de código con sustituciones](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
+ [Cómo: Crear un nuevo fragmento de código con sustituciones](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Parámetros de plantilla](../ide/template-parameters.md)   
- [Cómo: usar fragmentos de código envolventes](../ide/how-to-use-surround-with-code-snippets.md)   
- [Cómo: Restaurar fragmentos de código de refactorización de C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
-
-
-
+ [Procedimientos para usar fragmentos de código envolventes](../ide/how-to-use-surround-with-code-snippets.md)   
+ [Cómo: Restaurar miniprogramas de refactorización de C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

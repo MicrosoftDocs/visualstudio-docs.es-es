@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Administrar configuraciones de compilación con Visual Basic aplicado opciones del desarrollador | Microsoft Docs
+title: 'Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784792"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Procedimiento Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 De manera predeterminada, todas las opciones de configuración de compilación avanzadas están ocultas con las opciones del desarrollador de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] aplicadas. En este tema se explica cómo habilitar manualmente estas opciones.  

@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63a2e1b98baa61ef0a83c1de65653dd2e57a8b2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755469"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Administrar la firma de ensamblados y manifiestos
@@ -61,11 +61,11 @@ La firma de nombre seguro ofrece una identidad única a un componente de softwar
 > [!WARNING]
 >  Siempre debe proteger el archivo de clave con una contraseña para evitar que otra persona lo use. También puede proteger las claves mediante proveedores o almacenes de certificados.  
   
- También puede señalar a una clave que ya ha creado. Para obtener más información sobre cómo crear claves, consulte [Cómo: Creación de un par de claves privada y pública](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ También puede señalar a una clave que ya ha creado. Para obtener más información sobre la creación de claves, consulte [Cómo: Crear un par de claves privada y pública](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
  Si tiene acceso solo a una clave pública, puede usar Retrasar la firma para aplazar la asignación de la clave. Para habilitar Retrasar la firma, active la casilla **Retrasar firma solo**. Un proyecto con retraso de firma no se ejecutará y no lo podrá depurar. En cambio, puede omitir la comprobación durante el desarrollo al usar [Sn.exe (Herramienta de nombre seguro)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) con la opción `-Vr`.  
   
- Para obtener información sobre la firma de manifiestos, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Para obtener información sobre cómo firmar manifiestos, consulte [Cómo: Firmar aplicaciones y manifiestos de implementación](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Ensamblados con nombre seguro](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   

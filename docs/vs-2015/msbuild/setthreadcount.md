@@ -41,7 +41,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  El número de subprocesos que se va a usar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Un elemento <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> con el conjunto de bits SUCCEEDED si el recuento de subprocesos se ha actualizado.  
+ Un elemento [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con el conjunto de bits [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) si se ha actualizado el recuento de subprocesos.  
   
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** FileTracker.h

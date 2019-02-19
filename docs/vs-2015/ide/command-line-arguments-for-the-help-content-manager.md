@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ae1643b4a01c9bcab3878ec82b1808444cdc7712
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778635"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos de línea de comandos para Help Content Manager
@@ -57,7 +57,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/skuId|No|Especifica la referencia de almacén (SKU) del producto del origen de instalación y filtra los libros que el modificador /SourceURI identifica.|  
 |/membership|No|-   **Mínima**: instala un conjunto mínimo de contenido de Ayuda basado en el SKU especificado mediante el modificador /skuId. La asignación entre SKU y el conjunto de contenido se expone en la API de servicio.<br />-   **Recomendada**: instala un conjunto de libros recomendados para el SKU especificado con el argumento /skuId. El origen de instalación es la API de servicio o .MSHA.<br />-   **Completa**: instala el conjunto completo de libros para el SKU especificado con el argumento /skuId. El origen de instalación es la API de servicio o .MSHA.|  
 |/locationpath|No|Especifica la carpeta predeterminada para el contenido de Ayuda local. Debe utilizar este modificador para instalar o mover solo el contenido. Si especifica este modificador, también debe especificar el modificador /silent.|  
-|/silent|No|Instala o quita contenido de Ayuda sin preguntar al usuario ni mostrar ninguna interfaz de usuario, incluido el icono en el área de notificación de estado. La salida se registra en un archivo en el directorio %Temp%. **Importante:**  Para instalar contenido de forma silenciosa, debe utilizar los archivos .cab firmados digitalmente, no los archivos .mshc.|  
+|/silent|No|Instala o quita contenido de Ayuda sin preguntar al usuario ni mostrar ninguna interfaz de usuario, incluido el icono en el área de notificación de estado. La salida se registra en un archivo en el directorio %Temp%. **Importante:** Para instalar contenido de forma silenciosa, debe usar los archivos .cab firmados digitalmente, no los archivos .mshc.|  
 |/launchingApp|No|Define la aplicación y el contexto de catálogo cuando el Visor de Ayuda se inicia sin la aplicación primaria. Los argumentos para este modificador son *CompanyName*, *ProductName* y *VersionNumber* (por ejemplo, `/launchingApp Microsoft,VisualStudio,11.0`).<br /><br /> Esto es necesario para instalar contenido con el parámetro /silent.|  
 |/wait *Segundos*|No|Pausa las operaciones de instalación, desinstalación y actualización. Si una operación ya está en curso para el catálogo, el proceso esperará hasta el número especificado de segundos para continuar. Use 0 para esperar indefinidamente.|  
 |/?|No|Hace una lista de los modificadores y sus descripciones para la herramienta de la línea de comandos de Help Content Manager.|  

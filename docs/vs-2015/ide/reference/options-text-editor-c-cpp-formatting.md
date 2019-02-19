@@ -1,5 +1,5 @@
 ---
-title: Opciones, editor de texto, C/C++, formato | Microsoft Docs
+title: Opciones, editor de texto, C-C++, formato | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 767bb04bcfe14c8cafbe69e5cb19ecbd8082ee40
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770644"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opciones, editor de texto, C/C++, formato

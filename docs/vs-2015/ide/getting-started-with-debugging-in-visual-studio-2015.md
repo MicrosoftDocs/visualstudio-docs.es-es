@@ -11,10 +11,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54764853"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introducción a la depuración en Visual Studio 2015
@@ -22,13 +22,13 @@ ms.locfileid: "54764853"
 
 Visual Studio 2015 proporciona un conjunto integrado y eficaz de herramientas de compilación y depuración de proyectos. En este tema verá cómo empezar a usar el conjunto más básico de características de depuración de la interfaz de usuario.
 
- Nota: Los vínculos a características más avanzadas y a temas específicos de la plataforma (o característica) están en la parte inferior de esta página.
+ Nota: los vínculos a características más avanzadas y a temas específicos de la plataforma (o característica) están en la parte inferior de esta página.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio-2015"></a>Mi código no funciona. ¡Ayuda, Visual Studio 2015!
  Ha ideado el editor y ha creado parte del código. Ahora, quiere empezar a depurar ese código. En Visual Studio 2015, al igual que en la mayoría de los IDE, hay dos fases de depuración: compilar el código para detectar y resolver errores de proyecto y de compilador; y ejecutar ese código en el entorno para detectar y resolver errores de tiempo de ejecución y dinámicos.
 
 ### <a name="configuring-a-build"></a>Configurar una compilación
- Hay dos tipos básicos de configuración de compilación: **depuración** y **lanzamiento**. La primera configuración genera un archivo ejecutable más lento y más grande que permite una experiencia de depuración en tiempo de ejecución interactiva y más completa, pero que nunca se debe enviar. La segunda crea un archivo ejecutable más rápido y optimizado, adecuado para enviar (al menos desde la perspectiva del compilador).
+ Hay dos tipos básicos de configuración de compilación: **Depuración** y **Versión**. La primera configuración genera un archivo ejecutable más lento y más grande que permite una experiencia de depuración en tiempo de ejecución interactiva y más completa, pero que nunca se debe enviar. La segunda crea un archivo ejecutable más rápido y optimizado, adecuado para enviar (al menos desde la perspectiva del compilador).
 
  La configuración de compilación predeterminada es **Depuración**.
 
@@ -44,7 +44,7 @@ Visual Studio 2015 proporciona un conjunto integrado y eficaz de herramientas de
 
  Para empezar, use **Depuración** y **x86** como configuración de compilación y plataforma, respectivamente. Cuando haya terminado la codificación y la depuración, cambie la configuración a **Versión** y elija una plataforma de destino específica. (Las versiones anteriores de Visual Studio proporcionan una plataforma predeterminada **AnyCPU** para los proyectos de código de .NET).
 
- Nota: Al compilar un proyecto, se usan también los valores de configuración y plataforma para determinar la ruta de acceso al directorio del proyecto que se creará para almacenar el archivo ejecutable. Normalmente, esta es **\<ruta-al-proyecto>\\<nombre-proyecto>\\<configuración\>\\<plataforma\>**. Por ejemplo, un proyecto con una configuración de `Debug` y una plataforma de `x86` se encontraría en `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Esto puede ser útil si tiene sus propias herramientas o scripts que administran estos ejecutables compilados.
+ Nota: al compilar un proyecto, se usan también los valores de configuración y plataforma para determinar la ruta de acceso al directorio del proyecto que se creará para almacenar el archivo ejecutable. Normalmente, esta es **\<ruta-al-proyecto>\\<nombre-proyecto>\\<configuración\>\\<plataforma\>**. Por ejemplo, un proyecto con una configuración de `Debug` y una plataforma de `x86` se encontraría en `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Esto puede ser útil si tiene sus propias herramientas o scripts que administran estos ejecutables compilados.
 
 ### <a name="building-your-code"></a>Compilar el código
  Una vez configurada la compilación, es el momento de compilar el proyecto. La manera más sencilla de hacerlo es presionar F7, pero también puede iniciar la compilación seleccionando **Compilar->Compilar solución** en el menú principal.

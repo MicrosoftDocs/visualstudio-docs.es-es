@@ -25,10 +25,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 94f0fc19c84a5e86dbfff27a88b179f6a9bfb566
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54795489"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Lista de tareas, Entorno, Opciones (Cuadro de diálogo)
@@ -62,7 +62,7 @@ Esta página Opciones permite agregar, eliminar y cambiar los tokens de comentar
  nombre  
  Escriba la cadena de token. Esto habilita el botón **Agregar**. En **Agregar**, esta cadena está incluida en la **Lista de tokens** y los comentarios que comienzan por este nombre se mostrarán en la **Lista de tareas**.  
   
- Add  
+ Agregar  
  Se habilita al escribir un nuevo **Nombre**. Haga clic para agregar una nueva cadena de tokens utilizando los valores especificados en los campos **Nombre** y **Prioridad**.  
   
  Eliminar  

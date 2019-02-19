@@ -32,7 +32,7 @@ ms.locfileid: "54777157"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-IMPORTANTE:
+IMPORTANTE]
 >  El IDE de Visual Studio ya no utiliza bscmake. Desde Visual Studio Desde Visual Studio 2008, la información de examen y de símbolos se almacena automáticamente en un archivo .sdf en la carpeta de soluciones.  
   
  Ajusta la herramienta Utilidad de mantenimiento de información de examen de Microsoft (bscmake.exe).  La herramienta bscmake.exe genera un archivo de información de examen (.bsc) a partir de archivos de explorador de origen (.sbr) que se crean durante la compilación. Use el **Examinador de objetos** para ver un archivo .bsc. Para más información, vea [Referencia de BSCMAKE](http://msdn.microsoft.com/library/b97ad994-1355-4809-98db-6abc12c6fb13).  

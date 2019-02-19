@@ -28,7 +28,7 @@ ms.locfileid: "54785054"
 # <a name="class-view-and-object-browser-icons"></a>Iconos de la Vista de clases y del Examinador de objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En **Vista de clases** y Examinador de objetos se muestran iconos que representan las entidades de código, por ejemplo, los espacios de nombres, las clases, las funciones y las variables. En la tabla siguiente se muestran y describen los iconos.  
+En Vista de clases** y el **Examinador de objetos** se muestran iconos que representan las entidades de código, por ejemplo, los espacios de nombres, las clases, las funciones y las variables. En la tabla siguiente se muestran y describen los iconos.  
   
 |Iconos|Descripción|Iconos|Descripción|  
 |----------|-----------------|----------|-----------------|  

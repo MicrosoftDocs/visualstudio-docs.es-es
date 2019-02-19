@@ -1,29 +1,24 @@
 ---
 title: Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a6cd7efa12fc87c5de4bd82bcfb789d50193dbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b5d905c16be219229b62d3f0a9a8d125874a22f0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904421"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784146"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Tipos de correcciones de compatibilidad ** son una de las dos tecnologías que usa el marco Microsoft Fakes para permitir aislar fácilmente componentes sometida a prueba desde el entorno. Las correcciones de compatibilidad desvían las llamadas a métodos específicos hacia el código que se escribe como parte de la prueba. Muchos métodos devuelven resultados diferentes según las condiciones externas, pero una corrección de compatibilidad está bajo el control de la prueba y puede devolver resultados coherentes en cada llamada. De esta forma, es mucho más fácil escribir las pruebas.  
+Los tipos de correcciones de compatibilidad (shim)** son una de las dos tecnologías que usa el marco Microsoft Fakes para permitir aislar fácilmente del entorno los componentes que se están probando. Las correcciones de compatibilidad desvían las llamadas a métodos específicos hacia el código que se escribe como parte de la prueba. Muchos métodos devuelven resultados diferentes según las condiciones externas, pero una corrección de compatibilidad está bajo el control de la prueba y puede devolver resultados coherentes en cada llamada. De esta forma, es mucho más fácil escribir las pruebas.  
   
  Utilice las correcciones de compatibilidad para aislar el código de los ensamblados que no forman parte de la solución. Para aislar los componentes de la solución, se recomienda que use códigos auxiliares.  
   
@@ -33,7 +28,7 @@ Tipos de correcciones de compatibilidad ** son una de las dos tecnologías que u
   
 - Visual Studio Enterprise  
   
-  Vea un [vídeo (1 h 16 min): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012)  
+  Consulte [vídeo (1 h 16 min): Las pruebas un-testable Code with Fakes en Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
   
 ## <a name="in-this-topic"></a>En este tema  
  En este tema aprenderá lo siguiente:  
@@ -552,12 +547,9 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="guidance"></a>Orientación  
- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Vea también  
  [Aislar el código en pruebas con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
  [Blog de Peter Provost sobre correcciones de compatibilidad (shim) de Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
- [Vídeo (1 h 16 min): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012)
-
-
-
+ [Vídeo (1 hora 16 minutos): Las pruebas un-testable Code with Fakes en Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

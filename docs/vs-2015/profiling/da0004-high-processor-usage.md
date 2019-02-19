@@ -27,7 +27,7 @@ ms.locfileid: "54762529"
 Id. de regla | DA0004 |  
 | Categoría | Uso de herramientas de generación de perfiles |  
 | Métodos de generación de perfiles | Muestreo de instrumentación |  
-| Mensaje | El uso del procesador está constantemente por encima del 75%. Considere la posibilidad de utilizar el modo de muestreo para aplicaciones enlazadas a la CPU.  
+| Mensaje | El uso del procesador está constantemente por encima del 75%. Considere la posibilidad de usar el modo de muestreo para aplicaciones enlazadas a la CPU.|  
 | Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  

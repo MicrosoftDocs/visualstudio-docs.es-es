@@ -26,7 +26,7 @@ ms.locfileid: "54768976"
 Id. de regla | LISTA DE TAREAS |  
 | Categoría | Uso de herramientas de generación de perfiles |  
 | Método de generación de perfiles | Muestreo |  
-| Mensaje | Se midió una cantidad relativamente alta de tiempo de CPU de modo kernel. Considere la posibilidad de investigar el origen con el muestreo de SysCall habilitado.  
+| Mensaje | Se midió una cantidad relativamente alta de tiempo de CPU de modo kernel. Considere la posibilidad de investigar el origen con el muestreo de SysCall habilitado.|  
 | Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  

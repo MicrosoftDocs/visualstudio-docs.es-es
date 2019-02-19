@@ -44,7 +44,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
  El nombre raíz del nombre del archivo de registro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Un elemento <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> con el conjunto de bits SUCCEEDED si el contexto de seguimiento se ha creado.  
+ Un elemento [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con el conjunto de bits [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) si se ha creado el contexto de seguimiento.  
   
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** FileTracker.h  

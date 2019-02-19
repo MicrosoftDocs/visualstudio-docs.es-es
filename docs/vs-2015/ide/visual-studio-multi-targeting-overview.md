@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768885"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio
@@ -60,7 +60,7 @@ En esta versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede especifi
 >  La elección del marco de destino no garantiza que la aplicación se ejecute correctamente. Debe probar la aplicación para asegurarse de que se ejecuta en la versión de destino. No puede elegir como destino versiones de .NET Framework anteriores a la versión 2.0.
 
 ## <a name="selecting-a-target-framework-version"></a>Seleccionar una versión de .NET Framework de destino
- Al crear un proyecto, seleccione la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino en el cuadro de diálogo **Nuevo proyecto**. La lista de plantillas de proyecto disponibles se filtra según la selección. En un proyecto existente, puede cambiar la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino en el cuadro de diálogo de propiedades del proyecto. Para obtener más información, vea [Cómo: usar una versión de .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ Al crear un proyecto, seleccione la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino en el cuadro de diálogo **Nuevo proyecto**. La lista de plantillas de proyecto disponibles se filtra según la selección. En un proyecto existente, puede cambiar la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino en el cuadro de diálogo de propiedades del proyecto. Para obtener más información, consulte [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
 >  En las ediciones Express de Visual Studio, no se puede establecer el marco de destino en el cuadro de diálogo **Nuevo proyecto**.
@@ -76,7 +76,7 @@ En esta versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede especifi
  Para obtener más información sobre las referencias de ensamblado, consulte [Resolver ensamblados en tiempo de diseño](../msbuild/resolving-assemblies-at-design-time.md).
 
 ## <a name="enabling-linq"></a>Habilitar LINQ
- Si elige como destino .NET Framework 3.5 o una versión posterior, se agregan de forma automática una referencia a System.Core y una importación de nivel de proyecto para System.Linq (solo en Visual Basic). Si quiere usar características de LINQ, también debe activar Option Infer (solo en Visual Basic). La referencia y la importación se quitan de forma automática si cambia el destino a una versión anterior de .NET Framework. Para obtener más información, vea [Cómo: crear un proyecto de LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
+ Si elige como destino .NET Framework 3.5 o una versión posterior, se agregan de forma automática una referencia a System.Core y una importación de nivel de proyecto para System.Linq (solo en Visual Basic). Si quiere usar características de LINQ, también debe activar Option Infer (solo en Visual Basic). La referencia y la importación se quitan de forma automática si cambia el destino a una versión anterior de .NET Framework. Para obtener más información, consulte [Cómo: Crear un proyecto de LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Vea también
  [Compatibilidad con múltiples versiones](../msbuild/msbuild-multitargeting-overview.md) [compatibilidad con múltiples versiones de .NET Framework para proyectos Web ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [requisitos del sistema y compatibilidad de plataforma](http://www.microsoft.com/visualstudio/eng/products/compatibility)

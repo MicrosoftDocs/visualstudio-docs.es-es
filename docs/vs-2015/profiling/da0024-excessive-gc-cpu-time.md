@@ -26,7 +26,7 @@ ms.locfileid: "54771074"
 Id. de regla | DA0024 |  
 | Categoría |. Uso de .NET Framework |  
 | Método de generación de perfiles | Todos los |  
-| Mensaje | % de tiempo del GC es muy alta. Hay una cantidad excesiva de carga de recolección de elementos no utilizados.  
+| Mensaje | % de tiempo del GC es muy alta. Hay una cantidad excesiva de carga de recolección de elementos no utilizados.|  
 | Tipo de regla | Advertencia |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  

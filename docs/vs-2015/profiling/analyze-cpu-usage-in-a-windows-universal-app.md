@@ -27,7 +27,7 @@ ms.locfileid: "54777441"
 
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Si necesita investigar problemas de rendimiento de la aplicación, un buen punto de partida es entender cómo utiliza la CPU. La herramienta **Uso de CPU** muestra que la CPU dedica tiempo a ejecutar código. Para centrarse en escenarios concretos, Uso de CPU se puede ejecutar con las herramientas [Capacidad de respuesta de la IU de XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), [Consumo de energía](../profiling/analyze-energy-use-in-store-apps.md), o con ambas en una única sesión de diagnóstico.  
+ Si necesita investigar problemas de rendimiento de la aplicación, un buen punto de partida es entender cómo utiliza la CPU. La herramienta **Uso de CPU** muestra que la CPU dedica tiempo a ejecutar código. Para centrarse en escenarios concretos, Uso de CPU se puede ejecutar con las herramientas [Capacidad de respuesta de la IU de XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), [Consumo de energía](../profiling/analyze-energy-use-in-store-apps.md) o con ambas en una única sesión de diagnóstico.  
   
 > [!NOTE]
 >  La herramienta **Uso de CPU** no se puede utilizar con las aplicaciones de Windows Phone Silverlight 8.1.  

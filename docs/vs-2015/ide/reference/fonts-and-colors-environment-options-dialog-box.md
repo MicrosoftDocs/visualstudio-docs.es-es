@@ -192,7 +192,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 |**Atributo XML**|Nombres de atributo.|  
 |**Comillas de atributo XML**|Los caracteres de comillas para los atributos XML.|  
 |**Valor del atributo XML**|Contenido de atributos XML.|  
-|**Sección CData XML**|Contenido de \<![CDATA[...]]>.|  
+|**Sección CData XML**|Contenido de \<![CDATA[…]]>.|  
 |**Comentario XML**|Contenido de \<!-- -->.|  
 |**Delimitador XML**|Delimitadores de sintaxis XML, <, <?, <!, \<!--, -->, ?\>, \<![, ]]> y [, ].|  
 |**Atributo de documento XML**|El valor de un atributo de documentación xml, como \<param name = "I" > donde la "I" se colorea.|  

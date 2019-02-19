@@ -1,24 +1,19 @@
 ---
 title: Personalizar el análisis de cobertura de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890171"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768040"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -207,7 +202,7 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
   
 3. En la página **Proceso**, expanda **Pruebas automatizadas**, **Origen de la prueba**, **Parámetros de ejecución**. Seleccione el archivo **.runsettings**.  
   
-   - <em>Pero **ensamblado de prueba</em>* aparece en lugar de **Probar origen**. Cuando intento establecer el campo Parámetros de ejecución**, solo puedo seleccionar los archivos .testsettings.*  
+   - <em>Pero aparece **Ensamblado de prueba</em>* en lugar de **Origen de la prueba**. Cuando intento establecer el campo **Parámetros de ejecución**, solo puedo seleccionar los archivos .testsettings.*  
   
       En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y haga clic en **[…]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, establezca **Ejecutor de pruebas** en **Ejecutor de pruebas de Visual Studio**.  
   
@@ -333,6 +328,3 @@ Included items must then not match any entries in the exclude list to remain inc
 ## <a name="see-also"></a>Vea también  
  [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
-
-
-

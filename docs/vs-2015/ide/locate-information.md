@@ -21,7 +21,7 @@ ms.locfileid: "54758618"
 
 El Visor de Ayuda proporciona diversas maneras de buscar información en la Ayuda. En función del tipo de información que busque, algunas estrategias podrían ser más eficaces que otras.  
   
-|Para buscar información sobre|Consulte|  
+|Para obtener información sobre|Consulte|  
 |----------------------------|---------|  
 |Un elemento de la interfaz de usuario|La tecla F1|  
 |Otros temas que se encuentran en la misma área de la tabla de contenido que el tema actual|El botón **Mostrar tema en contenido** en la barra de herramientas|  

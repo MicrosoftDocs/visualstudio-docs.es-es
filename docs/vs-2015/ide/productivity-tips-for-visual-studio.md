@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 096de590d49f5d09614bb9149ae6e5218f2ab7ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54785692"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
@@ -79,13 +79,13 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
      Los cuadros azules sugieren maneras de corregir errores en el código.
 
-     Figura 1: Etiquetas inteligentes de error
+     Figura 1: etiquetas inteligentes de error
 
      ![Sugerencias de etiquetas inteligentes de error](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
      Los cuadros rojos sugieren formas de refactorizar el código.
 
-     Figura 2: Etiquetas inteligentes de refactorización
+     Figura 2: etiquetas inteligentes de refactorización
 
      ![Sugerencias de etiquetas inteligentes de refactorización](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
 
@@ -115,7 +115,7 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
 -   **Buscar cuadros de diálogo, comandos de menú y opciones**. En el cuadro [Inicio rápido, Entorno, Opciones (cuadro de diálogo)](../ide/reference/quick-launch-environment-options-dialog-box.md), escriba palabras clave o frases correspondientes a los elementos que intenta buscar. Por ejemplo, aparecen las opciones siguientes si escribe `new project`:
 
-     Figura 3: Lista de resultados de inicio rápidos para `new project`
+     Figura 3: lista de resultados de Inicio rápido para `new project`
 
      ![Resultados de inicio rápido para "nuevo proyecto"](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
@@ -151,11 +151,11 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
      Para anclar un archivo, pulse la pestaña del archivo y, después, seleccione el botón **Alternar estado de anclaje**.
 
--   **Mover documentos y ventanas a otros monitores**. Si utiliza más de un monitor al desarrollar aplicaciones, puede trabajar en algunas partes de la aplicación más fácilmente si mueve a otro monitor los archivos que están abiertos en el editor. También puede mover las ventanas de herramientas, por ejemplo las ventanas del depurador, a otro monitor y acoplar en una pestaña las ventanas de documentos y de herramientas para crear «pilas». Para obtener más información, vea [Cómo: ordenar y acoplar las ventanas](../misc/how-to-arrange-and-dock-windows.md).
+-   **Mover documentos y ventanas a otros monitores**. Si utiliza más de un monitor al desarrollar aplicaciones, puede trabajar en algunas partes de la aplicación más fácilmente si mueve a otro monitor los archivos que están abiertos en el editor. También puede mover las ventanas de herramientas, por ejemplo las ventanas del depurador, a otro monitor y acoplar en una pestaña las ventanas de documentos y de herramientas para crear «pilas». Para obtener más información, vea [Cómo: Organizar y acoplar ventanas](../misc/how-to-arrange-and-dock-windows.md).
 
      También puede administrar los archivos más fácilmente si crea otra instancia del **Explorador de soluciones** y la mueve a otro monitor. Para crear otra instancia del **Explorador de soluciones**, abra un menú contextual en el **Explorador de soluciones** y pulse **Nueva vista del Explorador de soluciones**.
 
--   **Personalizar las fuentes que aparecen en Visual Studio**. Puede cambiar la fuente, el tamaño y el color que se usa para el texto en el IDE. Por ejemplo, puede personalizar el color de determinados elementos de código en el editor y la fuente en las ventanas de herramientas o en todo el IDE. Para obtener más información, vea [Cómo: Cambio de fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) y [Cómo: Cambio de fuentes y colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+-   **Personalizar las fuentes que aparecen en Visual Studio**. Puede cambiar la fuente, el tamaño y el color que se usa para el texto en el IDE. Por ejemplo, puede personalizar el color de determinados elementos de código en el editor y la fuente en las ventanas de herramientas o en todo el IDE. Para obtener más información, vea [Cómo: Cambiar fuentes y colores en Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) y [Cómo: Cambiar las fuentes y los colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Vea también
- [Métodos abreviados de teclado para comandos usados con frecuencia](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [Tutorial: Crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [accesibilidad sugerencias y trucos](../ide/reference/accessibility-tips-and-tricks.md)
+ [Métodos abreviados de teclado para comandos usados con frecuencia](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [Cómo: personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [Tutorial: crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [sugerencias de accesibilidad y Trucos](../ide/reference/accessibility-tips-and-tricks.md)

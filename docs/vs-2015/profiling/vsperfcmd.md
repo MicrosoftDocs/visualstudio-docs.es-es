@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54776103"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -61,8 +61,8 @@ VSPerfCmd [/U] [/options]
   
 |Opción|Descripción|  
 |------------|-----------------|  
-|[Launch](../profiling/launch.md) **:** *Ejecutable*|Inicia la aplicación específica y empieza a generar perfiles.|  
-|[Args](../profiling/args.md) **:** *Argumentos*|Especifica los argumentos de la línea de comandos que se van a pasar a la aplicación iniciada.|  
+|[Launch](../profiling/launch.md) **:** *Executable*|Inicia la aplicación específica y empieza a generar perfiles.|  
+|[Args](../profiling/args.md) **:** *Arguments*|Especifica los argumentos de la línea de comandos que se van a pasar a la aplicación iniciada.|  
 |[Consola](../profiling/console.md)|Inicia el comando especificado en una nueva ventana del símbolo del sistema.|  
 |[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Inicia la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por identificador de proceso o por nombre de proceso.|  
 |[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Detiene la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por identificador de proceso o por nombre de proceso. Si no se especifica ningún proceso, la generación de perfiles se detiene para todos los procesos.|  

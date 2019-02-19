@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7fbd03676d69dde5f9a6d169739a25e7b5e1b82e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755130"
 ---
 # <a name="formatversion-task"></a>FormatVersion (Tarea)
@@ -27,11 +27,11 @@ ms.locfileid: "54755130"
   
 Anexa el número de revisión al número de versión.  
   
--   Caso n.º 1: Entrada: Version=\<undefined>;  Revision=\<don't care>;   Output: OutputVersion="1.0.0.0"  
+-   Caso 1: Input: Version=\<undefined>;  Revision=\<don't care>;   Output: OutputVersion="1.0.0.0"  
   
--   Caso n.º 2: Entrada: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"  
+-   Caso 2: Input: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"  
   
--   Caso n.º 3: Entrada: Version="1.0.0.0"  Revision=\<don't care>;  Output: OutputVersion="1.0.0.0"  
+-   Caso 3: Input: Version="1.0.0.0"  Revision=\<don't care>;  Output: OutputVersion="1.0.0.0"  
   
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `FormatVersion` .  

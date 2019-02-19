@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd371fac572c347ae2b5299f085f5e063306fc1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54783048"
 ---
 # <a name="spanspan-constructor"></a>span::span (Constructor)
@@ -70,7 +70,7 @@ span(
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkersobj.h  
   
- **Espacio de nombres**: Concurrency::diagnostic
+ **Espacio de nombres:** Concurrency::diagnostic
  
  ## <a name="see-also"></a>Vea también
  [Clase span](../profiling/span-class.md)

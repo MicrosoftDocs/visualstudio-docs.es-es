@@ -37,7 +37,7 @@ HRESULT WINAPI EndTrackingContext();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Un elemento <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> con el conjunto de bits SUCCEEDED si el contexto de seguimiento ha finalizado.  
+ Un elemento [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con el conjunto de bits [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) si el contexto de seguimiento ha finalizado.  
   
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** FileTracker.h  

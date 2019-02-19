@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Limpiar una compilación | Microsoft Docs
+title: 'Cómo: Limpiar una compilación | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780752"
 ---
-# <a name="how-to-clean-a-build"></a>Procedimiento Limpiar una compilación
+# <a name="how-to-clean-a-build"></a>Cómo: Limpiar los resultados de una compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

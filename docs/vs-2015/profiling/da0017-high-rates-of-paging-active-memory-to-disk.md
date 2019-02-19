@@ -26,7 +26,7 @@ ms.locfileid: "54803493"
 Id. de regla | DA0017 |  
 | Categoría | Memoria y paginación |  
 | Método de generación de perfiles | Todos los |  
-| Mensaje | Se está produciendo una tasa alta de paginación de memoria activa en el disco. Puede que la aplicación esté enlazada a memoria.  
+| Mensaje | Se está produciendo una tasa alta de paginación de memoria activa en el disco. Puede que la aplicación esté enlazada a memoria.|  
 | Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  

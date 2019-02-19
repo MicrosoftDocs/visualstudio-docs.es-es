@@ -188,7 +188,7 @@ En este tutorial se muestra cómo crear una bola de billar 3D realista mediante 
   
    ![Diseño del entorno del mapa del cubo](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
-   La imagen en la parte superior es la cara del cubo Positivo Y (+Y); en el centro, de izquierda a derecha, están las caras del cubo -X, +Z, +X y -Z; en la parte inferior está la cara del cubo -Y.  
+   La imagen en la parte superior es la cara positiva del cubo Y (+Y); en el centro, de izquierda a derecha, están las caras del cubo -X, +Z, +X y -Z; en la parte inferior está la cara del cubo -Y.  
   
    Ahora puede modificar el sombreador para combinar el ejemplo de mapa de cubo en el resto del sombreador.  
   

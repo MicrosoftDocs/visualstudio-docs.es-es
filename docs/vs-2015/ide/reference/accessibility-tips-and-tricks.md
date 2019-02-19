@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800793"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Sugerencias y trucos de accesibilidad
@@ -50,7 +50,7 @@ ms.locfileid: "54800793"
 |Ventana Cuadro de herramientas|Agregar un control del cuadro de herramientas a un formulario o diseñador.|**ENTRAR**|  
 |Teclado, Entorno, Opciones (cuadro de diálogo)|Eliminar una combinación de teclas especificada en la opción **Presionar teclas de método abreviado**.|**RETROCESO**|  
 |Todas las ventanas de herramientas|Seleccionar el primer botón de la barra de herramientas de la ventana.|**MAYÚS** + **ALT**|  
-|Barras de herramientas del IDE|Seleccionar el primer botón de la barra de herramientas Estándar.|**ALT**, **CTRL** + **TAB** **Note:**  Presione **CTRL** + **ficha** nuevo para seleccionar el primer botón de la siguiente barra de herramientas IDE.|  
+|Barras de herramientas del IDE|Seleccionar el primer botón de la barra de herramientas Estándar.|**ALT**, **CTRL** + **TAB** **Nota**: Presione de nuevo **CTRL** + **TAB** para seleccionar el primer botón de la siguiente barra de herramientas del IDE.|  
   
 ## <a name="see-also"></a>Vea también  
  [Características de accesibilidad de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

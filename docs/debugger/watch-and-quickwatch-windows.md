@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204474"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002539"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Variables de inspección con ventanas Inspección e Inspección rápida 
 
@@ -30,7 +30,7 @@ Durante la depuración, puede usar **inspección** windows y **Inspección rápi
 
 **Inspección** windows pueden mostrar varias variables a la vez durante la depuración. El **Inspección rápida** cuadro de diálogo muestra una única variable a la vez y debe cerrarse para que pueda continuar la depuración.
 
-Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para solucionar errores) antes de continuar con este artículo.
+Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) y [herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md) antes de pasar a través de este artículo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Observar variables con una ventana Inspección
 
@@ -280,5 +280,5 @@ Para observar el `a` variable,
 
 ## <a name="see-also"></a>Vea también
  [¿Qué es la depuración?](../debugger/what-is-debugging.md)  
- [Corrección de errores escribiendo mejor código de C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md)  
  [Primer vistazo al depurar](../debugger/debugger-feature-tour.md) [ventanas del depurador](../debugger/debugger-windows.md)

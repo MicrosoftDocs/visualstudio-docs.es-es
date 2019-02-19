@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd9775bf03754913aea84f41e9878e755ff15d95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54795371"
 ---
 # <a name="span-class"></a>span (Clase)
@@ -46,7 +46,7 @@ class span;
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkersobj.h  
   
- **Espacio de nombres**: Concurrency::diagnostic  
+ **Espacio de nombres:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Vea también  
  [diagnostic (Espacio de nombres)](../profiling/diagnostic-namespace.md)

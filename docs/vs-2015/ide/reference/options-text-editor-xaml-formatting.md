@@ -114,7 +114,7 @@ Use la página de propiedades **Formato** para especificar cómo se aplica forma
 |**Llaves de cierre para MarkupExtensions**|Especifica si la llave de cierre (}) de una extensión de marcado se genera automáticamente cuando se escribe el carácter de llave de apertura ({).|  
 |**Comas para separar parámetros de MarkupExtension**|Especifica si se generan comas al escribir más de un parámetro en una extensión de marcado.|  
 
-## <a name="default-view"></a>vista predeterminada  
+## <a name="default-view"></a>Vista predeterminada  
  Use esta configuración para controlar si la vista de diseño aparece al cargar documentos XAML.  
 
 |||  

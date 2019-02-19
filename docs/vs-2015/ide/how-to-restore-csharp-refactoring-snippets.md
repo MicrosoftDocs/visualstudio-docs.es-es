@@ -1,14 +1,9 @@
 ---
 title: 'Cómo: Restaurar miniprogramas de refactorización de C# | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - unsafe expansion
 - expansions, unsafe
@@ -16,22 +11,22 @@ ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8cb5906009d4c3f5d9d94a8e9898a1f02b3aedc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227889"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54782601"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Cómo: Restaurar miniprogramas de refactorización de C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las operaciones de refactorización de C# dependen de fragmentos de código situados en el directorio siguiente:  
   
- *Directorio de instalación*\Microsoft Visual Studio 14.0\VC#\Snippets\\*Id. de idioma*\Refactoring  
+ *Directorio de instalación*\Microsoft Visual Studio 14.0\VC#\Snippets\\*ID_de_lenguaje*\Refactoring  
   
- Si este directorio Refactoring o cualquiera de sus archivos se elimina o se daña, es posible que las operaciones de refactorización de C# no funcionen en el IDE.  Los procedimientos siguientes pueden ayudarle a restaurar los fragmentos de código de refactorización de C#.  
+ Si este directorio Refactoring o cualquiera de sus archivos se elimina o se daña, es posible que las operaciones de refactorización de C# no funcionen en el IDE. Los procedimientos siguientes pueden ayudarle a restaurar los fragmentos de código de refactorización de C#.  
   
 ### <a name="to-verify-c-refactoring-snippets-are-available-through-the-code-snippet-manager"></a>Para comprobar que los miniprogramas de refactorización de C# están disponibles a través del Administrador de fragmentos de código  
   
@@ -53,7 +48,7 @@ Las operaciones de refactorización de C# dependen de fragmentos de código situ
   
 5.  Busque la carpeta **Refactorización**, cuya ruta de acceso del directorio es la siguiente:  
   
-     *Directorio de instalación*\Microsoft Visual Studio 14.0\VC#\Snippets\\*Id. de idioma*\Refactoring  
+     *Directorio de instalación*\Microsoft Visual Studio 14.0\VC#\Snippets\\*ID_de_lenguaje*\Refactoring  
   
      La ruta de acceso real es similar a la siguiente para una instalación predeterminada:  
   
@@ -65,6 +60,3 @@ Las operaciones de refactorización de C# dependen de fragmentos de código situ
  [Fragmentos de código de Visual C#](../ide/visual-csharp-code-snippets.md)   
  [Refactorización (C#)](../csharp-ide/refactoring-csharp.md)   
  [Fragmentos de código](../ide/code-snippets.md)
-
-
-

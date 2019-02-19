@@ -37,7 +37,7 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve un elemento <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> con el conjunto de bits SUCCEEDED si el seguimiento se ha detenido.  
+ Devuelve un elemento [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con el conjunto de bits [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) si el seguimiento se ha detenido.  
   
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** FileTracker.h  

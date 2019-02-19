@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fb26e310673003ab25c4d08d4991ec33aa50932
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54792212"
 ---
 # <a name="javascript-memory"></a>Memoria de JavaScript
@@ -47,7 +47,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
    Los objetos que no se crean directamente en el código de la aplicación se filtran automáticamente. También puedes filtrar datos por nombre de objeto.  
   
-  Para obtener un tutorial que le guíe a lo largo del proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, vea [Tutorial: Buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Para obtener un tutorial que le guíe por el proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, consulte [Tutorial: buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
   En este tema:  
   
@@ -126,7 +126,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 -   [Ver una diferencia de instantánea](#SnapshotDiff). Muestra valores diferenciales entre las instantáneas. Estas vistas muestran diferencias respecto al tamaño del objeto y los recuentos de objetos.  
   
 ##  <a name="Isolate"></a> Isolate a memory leak  
- Estos pasos proporcionan un flujo de trabajo que puede ayudarte a usar el analizador de memoria de JavaScript de forma más eficaz. Estos pasos pueden resultar útiles si sospechas que tu aplicación tiene una pérdida de memoria. Para obtener un tutorial que le guíe a lo largo del proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, vea [Tutorial: Buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ Estos pasos proporcionan un flujo de trabajo que puede ayudarte a usar el analizador de memoria de JavaScript de forma más eficaz. Estos pasos pueden resultar útiles si sospechas que tu aplicación tiene una pérdida de memoria. Para obtener un tutorial que le guíe por el proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, consulte [Tutorial: buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Abre la aplicación en Visual Studio.  
   
@@ -168,7 +168,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
     - Tamaño diferencial del montón (vínculo izquierdo debajo del tamaño del montón). El texto del vínculo muestra la diferencia entre el tamaño del montón de la instantánea actual y el de la instantánea anterior.  
   
-    - Recuento diferencial de objetos (vínculo derecho debajo del recuento de objetos). El texto del vínculo muestra dos valores (por ejemplo, +1858 / -1765): El primer valor es el número de objetos nuevos agregados desde la instantánea anterior, mientras que el segundo es el número de objetos que se han quitado desde la instantánea anterior.  
+    - Recuento diferencial de objetos (vínculo derecho debajo del recuento de objetos). El texto del vínculo muestra dos valores (por ejemplo, +1858/-1765): el primer valor es el número de objetos nuevos agregados desde la instantánea anterior, mientras que el segundo es el número de objetos que se han quitado desde la instantánea anterior.  
   
       Estos vínculos abren una vista diferencial de detalles de instantánea de tipos en el montón, ordenada por tamaño retenido o recuento de objetos, en función de qué vínculo se abriera.  
   
@@ -224,7 +224,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
 -   Recuento de objetos. Este recuento solo muestra los objetos creados en la aplicación y filtra los objetos integrados creados por el runtime de JavaScript. El recuento de objetos tiene un vínculo a la vista Tipos de los detalles de la instantánea.  
   
--   Recuento diferencial de objetos. Muestra dos valores: El primer valor es el número de objetos nuevos agregados desde la instantánea anterior, mientras que el segundo es el número de objetos que se han quitado desde la instantánea anterior. Por ejemplo, la ilustración muestra que se agregaron 1.859 objetos y se quitaron 1.733 objetos de la instantánea 1. Esta información va seguida de una flecha arriba de color rojo si el recuento total de objetos ha aumentado o de una flecha abajo de color verde si se ha reducido. Si el recuento de objetos no ha cambiado, verás el texto **No cambia** en lugar de un número. Para la primera instantánea, verás el texto **Línea de base**. El recuento diferencial de objetos es un vínculo a la vista Tipos de la diferencia de instantánea.  
+-   Recuento diferencial de objetos. Esto muestra dos valores: el primer valor es el número de objetos nuevos agregados desde la instantánea anterior. El segundo valor es el número de objetos que se han quitado desde la instantánea anterior. Por ejemplo, la ilustración muestra que se agregaron 1.859 objetos y se quitaron 1.733 objetos de la instantánea 1. Esta información va seguida de una flecha arriba de color rojo si el recuento total de objetos ha aumentado o de una flecha abajo de color verde si se ha reducido. Si el recuento de objetos no ha cambiado, verás el texto **No cambia** en lugar de un número. Para la primera instantánea, verás el texto **Línea de base**. El recuento diferencial de objetos es un vínculo a la vista Tipos de la diferencia de instantánea.  
   
 -   Captura de la pantalla en el momento en que se toma la instantánea.  
   
@@ -401,4 +401,4 @@ if (performance && performance.mark) {
     -   Crea un objeto de prueba y realiza un seguimiento de él en las vistas del analizador de memoria de JavaScript, como la vista Tipos. Por ejemplo, puedes adjuntar un objeto muy grande a otro para ver si un objeto o elemento determinado se ha detectado durante la recolección de elementos no utilizados.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Búsqueda de una pérdida de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)
+ [Tutorial: Buscar fugas de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

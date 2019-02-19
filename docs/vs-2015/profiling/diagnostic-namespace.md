@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d412cfa5a9b5e7e90aeac3ac6bbb530b0ef48ad0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758501"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic (Espacio de nombres)
@@ -49,7 +49,7 @@ namespace diagnostic;
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkersobj.h  
   
- **Espacio de nombres**: simultaneidad  
+ **Espacio de nombres:** Concurrency  
   
 ## <a name="see-also"></a>Vea también  
  [Espacio de nombres de simultaneidad (visualizador de simultaneidad)](../profiling/concurrency-namespace-concurrency-visualizer.md)

@@ -60,7 +60,7 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
  Al ejecutarse el método, se agrega una marca de usuario a los datos de generación de perfiles junto con un mensaje.  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel implementa la interfaz [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (proyectada como [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) en C# y VB). Para evitar la pérdida de recursos de sistema operativo, llame a [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) (Windows.Foundation.Diagnostics.LoggingChannel.Dispose en C# y VB) cuando haya finalizado con un canal de registro.  
+> - Windows.Foundation.Diagnostics LoggingChannel implementa la interfaz [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (proyectada como [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) en C# y VB). Para evitar la pérdida de recursos de sistema operativo, llame a [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() en C# y VB) cuando haya finalizado con un canal de registro.  
 >   -   Cada canal de registro abierto debe tener un nombre único. Al intentar crear un nuevo canal de registro con el mismo nombre que un canal no desechado, se produce una excepción.  
   
  Consulte el [ejemplo de LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) en el Windows SDK.  
