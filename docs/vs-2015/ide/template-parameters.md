@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787097"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
@@ -88,7 +88,7 @@ Si se usan parámetros en las plantillas, se pueden reemplazar los valores de la
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>Ejemplo: Con el nombre de proyecto para el nombre de Namespace  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>Ejemplo: Utilizar el nombre de proyecto para el nombre del espacio de nombres  
  Para utilizar el nombre del proyecto para el espacio de nombres en un archivo de clase de Visual C#, Class1.cs, utilice la sintaxis siguiente:  
   
 ```  

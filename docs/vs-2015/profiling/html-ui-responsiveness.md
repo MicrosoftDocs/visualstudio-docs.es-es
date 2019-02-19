@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752971"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidad de respuesta de IU HTML
@@ -74,7 +74,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
 6.  Para detener la generación de perfiles de la aplicación y ver los datos recopilados por el generador de perfiles, elige **Detener colección**.  
   
 ##  <a name="IsolateAnIssue"></a> Aislar un problema  
- En la siguiente sección se proporcionan sugerencias para ayudarte a aislar problemas de rendimiento. Para obtener una explicación paso a paso de cómo identificar y corregir problemas de rendimiento con una aplicación de pruebas de rendimiento de ejemplo, vea [Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ En la siguiente sección se proporcionan sugerencias para ayudarte a aislar problemas de rendimiento. Para obtener una explicación paso a paso de cómo identificar y corregir problemas de rendimiento con una aplicación de prueba de rendimiento de ejemplo, consulte [Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Aislar un problema de capacidad de respuesta de la IU  
  Estos pasos proporcionan un flujo de trabajo sugerido que puede ayudarte a utilizar el generador de perfiles de la capacidad de respuesta de la IU de forma más eficaz:  
@@ -193,7 +193,7 @@ if (performance.mark && performance.measure) {
 -   Un evento de navegación, que se produce cuando navegas a otra página. La información sobre herramientas del evento muestra la dirección URL de la página de destino.  
   
 ###  <a name="CPUUtilization"></a> Ver uso de CPU  
- El gráfico de uso de CPU te permite identificar los períodos de tiempo en los que hay una actividad excesiva de la CPU. Proporciona información sobre el promedio de consumo de CPU de la aplicación durante un período de tiempo. La información está codificada por colores para representar las siguientes categorías específicas: **Cargando**, **Scripting**, recolección de elementos no utilizados (**GC**), **Aplicación de estilos**, **Representación** y **Descodificación de imágenes**. Para obtener más información sobre estas categorías, consulte [Profiler event reference](#ProfilerEvents) en este tema.  
+ El gráfico de uso de CPU te permite identificar los períodos de tiempo en los que hay una actividad excesiva de la CPU. Proporciona información sobre el promedio de consumo de CPU de la aplicación durante un período de tiempo. La información está codificada por colores para representar las categorías específicas siguientes: **Carga**, **Scripting**, recolección de elementos no utilizados (**GC**), **Aplicación de estilos**, **Representación**y **Descodificación de imágenes**. Para obtener más información sobre estas categorías, consulte [Profiler event reference](#ProfilerEvents) en este tema.  
   
  El gráfico de uso de CPU muestra la cantidad de tiempo empleado en todos los subprocesos de la aplicación, agrupando valores de uso de CPU de una o más CPU en un único valor de porcentaje. El valor de uso de CPU puede superar el cien por cien si se utilizan varias CPU.  
   

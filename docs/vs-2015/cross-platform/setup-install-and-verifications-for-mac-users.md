@@ -111,7 +111,7 @@ Este tema está destinado a los desarrolladores que trabajan principalmente con 
   
 2. Valide el diseñador de Android: en el proyecto de Android en el Explorador de soluciones, abra el archivo **Recursos > Diseño > Main.axml**.  
   
-   -   Si se muestra un error similar a "El SDK de Android instalado es demasiado antiguo", haga clic en **Abrir el SDK de Android** en dicho mensaje y seleccione la versión del SDK más reciente disponible. Tenga en cuenta que debe estar ejecutando Visual Studio como administrador para actualizar el SDK.  
+   -   Si se muestra un error similar a "El SDK de Android instalado es demasiado antiguo", haga clic en **Abrir el SDK de Android** en ese mensaje y seleccione la versión del SDK más reciente disponible. Tenga en cuenta que debe estar ejecutando Visual Studio como administrador para actualizar el SDK.  
   
 3. Compruebe que puede conectarse desde Visual Studio al emulador que está instalado en el Mac.  El resultado de esto es que verá el reproductor de Xamarin en la lista de los emuladores que seleccione en Visual Studio para la depuración.  To do this, follow the instructions on [Connecting Visual Studio to the Xamarin Android Player](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/android-player-with-visual-studio-in-vm/) (Conexión de Visual Studio a Xamarin Android Player) en xamarin.com.  
   

@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758247"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
@@ -61,7 +61,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
    El proyecto y la solución GreetingsConsoleApp, con los archivos básicos para una aplicación de consola Win32 se crean y se cargan automáticamente en el **Explorador de soluciones**. El archivo GreetingsConsoleApp.cpp se abre en el Editor de código. Los elementos siguientes aparecen en el **Explorador de soluciones**:
 
-   Figura 4: elementos de proyecto
+   Figura 4: Elementos del proyecto
 
    ![Archivos para la solución en el Explorador de soluciones](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")
 

@@ -26,7 +26,7 @@ ms.locfileid: "54779122"
 # <a name="concurrency-visualizer"></a>Visualizador de simultaneidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-NOTA
+NOTA]
 >  El Visualizador de simultaneidad es una extensión opcional de Visual Studio. Descargue el Visualizador de simultaneidad y las Herramientas de recolección del visualizador de simultaneidad desde los siguientes vínculos:  
 > 
 > - Descargue la extensión              [Visualizador de simultaneidad](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) .  

@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e71b8675aad05f45d13be5a86e8729266a3a017
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aeaa87cf55b9429904286817b043dcba92d2bfcf
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954103"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335225"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Estructura de VSPackage (VSPackage de control de código fuente)
 
-El SDK de paquete de Control de código fuente proporciona directrices para crear un VSPackage que permiten un implementador de control de origen para integrar su propia funcionalidad de control de código fuente con el entorno de Visual Studio. Un VSPackage es un componente COM que normalmente se carga a petición mediante el entorno de desarrollo integrado de Visual Studio (IDE) en función de los servicios que se anuncian el paquete en sus entradas del registro. Cada VSPackage debe implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Normalmente, un VSPackage consume servicios ofrecidos por el IDE de Visual Studio y ofrece algunos servicios propios.
+El SDK de paquete de Control de código fuente proporciona directrices para crear un VSPackage que permiten un implementador de control de origen para integrar su propia funcionalidad de control de código fuente con el entorno de Visual Studio. Un VSPackage es un componente COM que normalmente se carga a petición mediante el entorno de desarrollo integrado de Visual Studio (IDE) en función de los servicios que se anuncian el paquete en sus entradas del registro. Cada VSPackage debe implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Normalmente, un VSPackage consume servicios ofrecidos por el IDE de Visual Studio y ofrece algunos servicios propios.
 
 Un VSPackage declara sus elementos de menú y establece el estado de un elemento de forma predeterminada mediante el archivo .vsct. El IDE de Visual Studio muestra los elementos de menú en este estado hasta que se carga el VSPackage. Posteriormente, la implementación de VSPackage de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método se llama para habilitar o deshabilitar elementos de menú.
 
@@ -66,9 +66,9 @@ Servicio SVsRegisterScciProvider
 
 Un paquete de control de código fuente es un paquete VSPackage y, por lo tanto puede interactuar directamente con otros VSPackages que están registrados con Visual Studio. Con el fin de proporcionar la gran variedad de funcionalidad de control de código fuente, un control de código fuente VSPackage puede tratar con interfaces proporcionadas por el shell o proyectos.
 
-Todos los proyectos de Visual Studio deben implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> sea reconocida como un proyecto en el IDE de Visual Studio. Sin embargo, no está especializada en esta interfaz suficiente para el control de código fuente. Proyectos que se esperan que esté en el origen de control de implementar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>. Esta interfaz se usa por el VSPackage de control de código fuente para consultar un proyecto para su contenido y proporcionarla glifos e información de enlace (la información necesaria para establecer una conexión entre la ubicación del servidor y la ubicación del disco de un proyecto que está por debajo control de código fuente).
+Deben implementar todos los proyectos de Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> sea reconocida como un proyecto en el IDE de Visual Studio. Sin embargo, no está especializada en esta interfaz suficiente para el control de código fuente. Proyectos que se esperan que esté en el origen de control implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>. Esta interfaz se usa por el VSPackage de control de código fuente para consultar un proyecto para su contenido y proporcionarla glifos e información de enlace (la información necesaria para establecer una conexión entre la ubicación del servidor y la ubicación del disco de un proyecto que está por debajo control de código fuente).
 
-El control de código fuente VSPackage implementa el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, que a su vez permite a los proyectos se registran para el control de código fuente y recuperar los glifos de estado.
+El control de código fuente VSPackage implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, que a su vez permite a los proyectos se registran para el control de código fuente y recuperar los glifos de estado.
 
 Para obtener una lista completa de interfaces que debe tener en cuenta un VSPackage de control de código fuente, consulte [Interfaces y servicios relacionados](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
 

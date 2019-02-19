@@ -50,7 +50,7 @@ En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar
   
 1.  Consulte un tema.  
   
-2.  Haga clic en el botón **Mostrar tema en contenido** en la barra de herramientas o presione CTRL+S.  
+2.  Haga clic en el botón **Mostrar tema en contenido** en la barra de herramientas o presione Ctrl+S.  
   
      Se abre la pestaña **Contenido** y se muestra la ubicación del tema en la TDC.  
   

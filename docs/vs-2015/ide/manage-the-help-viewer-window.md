@@ -24,12 +24,12 @@ ms.locfileid: "54833918"
 
 En el Visor de ayuda puede personalizar el diseño de ventana.  
   
-## <a name="docking-tabs"></a>Pestañas de acoplamiento  
+## <a name="docking-tabs"></a>Acoplamiento de pestañas  
  El Visor de Ayuda es compatible con la funcionalidad de acoplamiento estándar. De manera predeterminada, todas las pestañas del Visor de Ayuda están acopladas, pero puede moverlas, cambiar su tamaño, acoplarlas en otras ubicaciones y hacerlas “flotar” para que aparezcan como ventanas secundarias independientes.  
   
  Para restaurar la ventana del Visor de Ayuda a su diseño predeterminado, abra el cuadro de diálogo **Opciones del visor** y, a continuación, elija el botón **Restablecer**.  
   
-## <a name="opening-a-topic-in-a-new-tab"></a>Abrir un tema en una pestaña nueva  
+## <a name="opening-a-topic-in-a-new-tab"></a>Apertura de un tema en una pestaña nueva  
  Elija el tema en cualquier pestaña de navegación y, a continuación, pulse Ctrl + Entrar claves.  
   
 ## <a name="minimize-a-navigation-tab"></a>Minimizar una pestaña de navegación  

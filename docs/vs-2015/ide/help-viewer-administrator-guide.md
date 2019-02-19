@@ -1,25 +1,20 @@
 ---
 title: Guía del administrador del Visor de Ayuda | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871295"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799710"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guía del administrador del Visor de Ayuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
 ## <a name="deploying-local-help-content-from-the-internet"></a>Implementación de contenido de Ayuda local desde Internet  
  Puede utilizar el servicio de paquete de contenido de MSDN para distribuir el contenido de la Ayuda local desde Internet a los equipos cliente. Utilice la sintaxis siguiente:  
   
- \\<*ruta de acceso a*>/Operation \v2.2\HlpCtntmgr.exe \< *nombre*> /catalogname \< *CatalogName*> /locale \<  *configuración regional*>  
+ \\<*ruta_de_acceso_a*>\v2.2\HlpCtntmgr.exe /operation \<*nombre*> /catalogname \<*nombre_del_catálogo*> /locale \<*configuración_regional*>  
   
  Para obtener más información sobre la sintaxis de la línea de comandos de HlpCtntMgr.exe, vea [Argumentos de línea de comandos para Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).  
   
@@ -100,13 +95,13 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
   
 1. En el Visor de Ayuda, seleccione la pestaña **Administrar contenido**.  
   
-2. En **documentación disponible**, navegue hasta el conjunto de documentos de Visual Studio.  
+2. En **Documentación disponible**, navegue hasta el conjunto de documentos de Visual Studio.  
   
 3. Seleccione **Quitar** junto a cada subelemento.  
   
-4. Elija **iniciar** para desinstalar  
+4. Haga clic en **Iniciar** para desinstalarlo.  
   
-5. Vaya a *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 y compruebe que la carpeta solo contiene el archivo catalogType.xml.  
+5. Vaya a *n*:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 y compruebe que la carpeta solo contiene el archivo catalogType.xml.  
   
    Una vez que haya quitado todo el contenido local de Ayuda de Visual Studio instalado previamente, está listo para descargar el conjunto de contenido base.  
   
@@ -114,7 +109,7 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
   
 1. En el Visor de Ayuda, seleccione la pestaña **Administrar contenido**.  
   
-2. En **documentación disponible**, vaya a los conjuntos de documentación que desee descargar y, a continuación, elija **agregar**.  
+2. En **Documentación disponible**, navegue hasta los conjuntos de documentación que quiera descargar y haga clic en **Agregar**.  
   
 3. Elija **Iniciar**.  
   
@@ -132,7 +127,7 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
   
 4.  Escriba lo siguiente:  
   
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *nombreDeCarpeta*> \ /y /e /k /o  
+     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nombre_de_carpeta*>\ /y /e /k /o  
   
      Por ejemplo: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`.  
   
@@ -142,7 +137,7 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
   
 1.  Cree un recurso compartido de red y copie el contenido de Ayuda a esa ubicación.  
   
-     Por ejemplo, copiar el contenido de c:\VS12Help en \\\myserver\VS12Help.  
+     Por ejemplo, copie el contenido de c:\VS12Help a \\\myserver\VS12Help.  
   
 2.  Cree un archivo .bat que contendrá el script de implementación para el contenido de Ayuda. Puesto que el cliente podría tener un bloqueo de lectura en cualquiera de los archivos que se estén eliminando como parte de la inserción, debe cerrar el cliente antes de insertar las actualizaciones.  
   
@@ -209,6 +204,3 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
 ## <a name="see-also"></a>Vea también  
  [Argumentos de línea de comandos para Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md)   
  [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md)
-
-
-

@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13993fca03afce3e14b5a016eba7924226c24b8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037842"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335251"
 ---
-# <a name="how-to-implement-nested-projects"></a>Procedimiento Implementación de proyectos anidados
+# <a name="how-to-implement-nested-projects"></a>Filtrar Implementación de proyectos anidados
 
 Cuando se crea un tipo de proyecto anidado, hay varios pasos adicionales que deben implementarse. Un proyecto principal que se tarda en algunas de las mismas responsabilidades que tiene la solución para sus proyectos anidados (secundarios). El proyecto principal es un contenedor de proyectos similares a una solución. En concreto, hay varios eventos que se deben generar la solución y los proyectos primario para crear la jerarquía de proyectos anidados. Estos eventos se describen en el siguiente proceso para la creación de proyectos anidados.
 
@@ -65,7 +65,7 @@ Cuando se crea un tipo de proyecto anidado, hay varios pasos adicionales que deb
      Dado que los proyectos primarios y secundarios se crean instancias mediante programación, puede establecer propiedades para proyectos anidados en este momento.
 
     > [!NOTE]
-    > No solo recibir la información de contexto desde el proyecto anidado, pero también puede hacer si el proyecto principal tiene cualquier contexto de ese elemento comprobando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De esa manera, puede agregar atributos de Ayuda dinámica adicionales y opciones de menú específicas para proyectos anidados individuales.
+    > No solo recibir la información de contexto desde el proyecto anidado, pero también puede hacer si el proyecto principal tiene cualquier contexto de ese elemento comprobando [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). De esa manera, puede agregar atributos de Ayuda dinámica adicionales y opciones de menú específicas para proyectos anidados individuales.
 
 10. La jerarquía se crea para su presentación en **el Explorador de soluciones** con una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> método.
 

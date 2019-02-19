@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796882"
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
@@ -88,9 +88,9 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 |---------------|-----------------|  
 |DependentUpon|Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente.|  
 |AutoGen|Booleano opcional. Indica si el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ha generado el archivo para el proyecto.|  
-|Vínculo|Cadena opcional. Ruta de acceso notacional que se va a mostrar cuando el archivo se encuentre físicamente fuera de la influencia del archivo de proyecto.|  
+|Link|Cadena opcional. Ruta de acceso notacional que se va a mostrar cuando el archivo se encuentre físicamente fuera de la influencia del archivo de proyecto.|  
 |Visible|Booleano opcional. Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Always<br />3.  PreserveNewest|  
+|CopyToOutputDirectory|Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Siempre<br />3.  PreserveNewest|  
   
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Representa los recursos que se van a incrustar en el ensamblado generado.  
@@ -101,9 +101,9 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 |Generator|Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
 |LastGenOutput|Cadena necesaria. Nombre del archivo creado por cualquier generador de archivos que se ejecutó en este elemento.|  
 |CustomToolNamespace|Cadena necesaria. Espacio de nombres en el que cualquier generador de archivos que se ejecute en este elemento debe crear código.|  
-|Vínculo|Cadena opcional. La ruta de acceso notacional se muestra si el archivo se encuentra físicamente fuera de la influencia del proyecto.|  
+|Link|Cadena opcional. La ruta de acceso notacional se muestra si el archivo se encuentra físicamente fuera de la influencia del proyecto.|  
 |Visible|Booleano opcional. Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Always<br />3.  PreserveNewest|  
+|CopyToOutputDirectory|Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Siempre<br />3.  PreserveNewest|  
 |LogicalName|Cadena necesaria. Nombre lógico del recurso incrustado.|  
   
 ### <a name="content"></a>Contenido  
@@ -119,7 +119,7 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 |PublishState|Cadena necesaria. El estado de publicación del contenido:<br /><br /> - Predeterminado<br />- Incluido<br />- Excluido<br />- Archivo de datos<br />- Requisito previo|  
 |IsAssembly|Booleano opcional. Especifica si el archivo es un ensamblado.|  
 |Visible|Booleano opcional. Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Always<br />3.  PreserveNewest|  
+|CopyToOutputDirectory|Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Siempre<br />3.  PreserveNewest|  
   
 ### <a name="none"></a>Ninguna  
  Representa archivos que no deberían tener ningún rol en el proceso de compilación.  
@@ -130,9 +130,9 @@ En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento es una 
 |Generator|Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
 |LastGenOutput|Cadena necesaria. Nombre del archivo creado por cualquier generador de archivos que se ejecutó en este elemento.|  
 |CustomToolNamespace|Cadena necesaria. Espacio de nombres en el que cualquier generador de archivos que se ejecute en este elemento debe crear código.|  
-|Vínculo|Cadena opcional. Ruta de acceso notacional que se mostrará si el archivo se encuentra físicamente fuera de la influencia del proyecto.|  
+|Link|Cadena opcional. Ruta de acceso notacional que se mostrará si el archivo se encuentra físicamente fuera de la influencia del proyecto.|  
 |Visible|Booleano opcional. Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Always<br />3.  PreserveNewest|  
+|CopyToOutputDirectory|Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Siempre<br />3.  PreserveNewest|  
   
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
  Representa el manifiesto de aplicación base de la compilación y contiene información de seguridad de implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  

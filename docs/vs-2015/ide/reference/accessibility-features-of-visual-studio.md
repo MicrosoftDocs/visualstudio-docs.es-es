@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778518"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Características de accesibilidad de Visual Studio
@@ -40,15 +40,15 @@ Además de las características y utilidades de accesibilidad de Windows, las ca
 
  Para obtener más información, vea los temas siguientes:
 
--   [Cómo: establecer opciones de accesibilidad de IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Cómo: Establecer opciones de accesibilidad de IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Cómo: usar exclusivamente el teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+-   [Cómo: Usar el teclado exclusivamente](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 -   [Sugerencias y trucos de accesibilidad](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Cómo: cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Cómo: Cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Vea también
  [Servicios y productos de Microsoft para mejorar la accesibilidad](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

@@ -29,7 +29,7 @@ ms.locfileid: "54803545"
 Id. de regla | DA0029 |  
 | Categoría | Uso de herramientas de generación de perfiles |  
 | Método de generación de perfiles | Generación de perfiles desde la línea de comandos |  
-| Mensaje | Se detectó una versión CLR no admitida durante la recolección. Puede que los símbolos administrados no se resuelvan correctamente.  
+| Mensaje | Se detectó una versión CLR no admitida durante la recolección. Puede que los símbolos administrados no se resuelvan correctamente.|  
 | Tipo de regla | Información. |  
   
 ## <a name="cause"></a>Motivo  

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Extender el proceso de compilación | Microsoft Docs
+title: 'Cómo: Extender el proceso de compilación | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758670"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Procedimiento Extender el proceso de compilación de Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Cómo: Extender el proceso de compilación de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 
@@ -59,7 +59,7 @@ El proceso de compilación [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se defin
 |Nombre de destino|Descripción|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de realizar la compilación básica. La mayoría de las personalizaciones se realiza en uno de estos dos destinos.|
-|`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutarán antes o después de todo lo demás en la compilación. **Nota:**  El `BeforeBuild` y `AfterBuild` destinos ya están definidos en los comentarios al final de la mayoría de los archivos de proyecto. Esto le permite agregar con facilidad eventos previos y posteriores a la compilación del archivo del proyecto.|
+|`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutarán antes o después de todo lo demás en la compilación. **Nota**: Los destinos `BeforeBuild` y `AfterBuild` ya están definidos en los comentarios al final de la mayoría de los archivos del proyecto. Esto le permite agregar con facilidad eventos previos y posteriores a la compilación del archivo del proyecto.|
 |`BeforeRebuild`, `AfterRebuild`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de invocar la funcionalidad de la recompilación básica. El orden de ejecución de destino en Microsoft.Common.targets es: `BeforeRebuild`, `Clean`, `Build` y, a continuación, `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de invocar la funcionalidad de la limpieza básica.|
 |`BeforePublish`, `AfterPublish`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de invocar la funcionalidad de la publicación básica.|

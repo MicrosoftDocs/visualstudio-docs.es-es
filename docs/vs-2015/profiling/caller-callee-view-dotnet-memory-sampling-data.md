@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c43ba87fea6af474975c759cc18dab74b12e8eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782496"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Vista Llamador y destinatario: datos de muestreo de memoria de .NET
@@ -54,6 +54,6 @@ La vista Llamador y destinatario muestra datos de la generación de perfiles de 
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
- [Vista Llamador y destinatario: datos de instrumentación de memoria de .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Vista Llamador y destinatario: datos de instrumentación de memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Vista Llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)   
  [Vista Llamador y destinatario: datos de instrumentación](../profiling/caller-callee-view-instrumentation-data.md)

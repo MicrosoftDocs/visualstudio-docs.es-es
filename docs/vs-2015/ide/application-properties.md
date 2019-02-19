@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54757663"
 ---
 # <a name="application-properties"></a>Application Properties
@@ -54,7 +54,7 @@ Desde el panel **Aplicación** del **Diseñador de proyectos** puede establecer 
   Las tareas disponibles para la aplicación dependerán del lenguaje de desarrollo que se use.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Cómo: especificar un icono de aplicación (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
+ [Cómo: Especificar el icono de una aplicación (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   

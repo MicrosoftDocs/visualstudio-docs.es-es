@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54765017"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Trabajar con código de Visual C++ (Diseñador de clases)
@@ -48,7 +48,7 @@ El Diseñador de clases muestra una superficie de diseño visual denominada *dia
 -   Definición de tipo  
   
 > [!NOTE]
->  No es igual que el diagrama de clases UML, que se puede crear en un proyecto de modelado. Para más información, vea [Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md).  
+>  No es igual que el diagrama de clases UML, que se puede crear en un proyecto de modelado. Para obtener más información, vea [Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md).  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Solucionar problemas de visualización y resolución de tipos  
   
@@ -63,7 +63,7 @@ El Diseñador de clases muestra una superficie de diseño visual denominada *dia
 ### <a name="type-resolution-issues"></a>Problemas de resolución de tipo  
  Puede que el Diseñador de clases no pueda resolver tipos por las razones siguientes:  
   
-- El tipo está en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para obtener más información, vea [Cómo: Agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- El tipo está en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 - El tipo no está en el ámbito correcto, por lo que el Diseñador de clases no puede encontrarlo. Asegúrese de que al código no le falta una instrucción `using`, `imports` o `#include`. Asegúrese también de que no quitó el tipo (o un tipo relacionado) del espacio de nombres en el que se encontraba originalmente.  
   
@@ -77,7 +77,7 @@ El Diseñador de clases muestra una superficie de diseño visual denominada *dia
   
 - Asegúrese de que el Diseñador de clases admite el tipo especificado. Vea [Limitaciones de los elementos de código C++](#limitations).  
   
-- Intente resolver el tipo. Puede que el tipo esté en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para obtener más información, vea [Cómo: Agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Intente resolver el tipo. Puede que el tipo esté en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 - Asegúrese de que el tipo está en el ámbito correcto para que el Diseñador de clases pueda encontrarlo. Asegúrese de que al código no le falta una instrucción `using`, `imports` o `#include`. Asegúrese también de que no quitó el tipo (o un tipo relacionado) del espacio de nombres en el que se encontraba originalmente.  
   

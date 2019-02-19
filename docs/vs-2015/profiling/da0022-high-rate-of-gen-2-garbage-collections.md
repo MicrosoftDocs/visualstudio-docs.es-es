@@ -26,7 +26,7 @@ ms.locfileid: "54755302"
 Id. de regla | DA0022 |  
 | Categoría |. Uso de .NET Framework |  
 | Método de generación de perfiles | Todos los |  
-| Mensaje | Hay una frecuencia relativamente alta de elementos no utilizados de Gen 2 que se producen. Si, por diseño, la mayoría de las estructuras de datos del programa se asignan y se conservan durante mucho tiempo, esto no es normalmente un problema. Sin embargo, si este comportamiento no es intencionado, su aplicación puede estar anclando objetos. Si no está seguro, puede recopilar datos de asignación de memoria de .NET e información de duración de objetos para entender el patrón de asignación de memoria que la aplicación utiliza.  
+| Mensaje | Hay una frecuencia relativamente alta de elementos no utilizados de Gen 2 que se producen. Si, por diseño, la mayoría de las estructuras de datos del programa se asignan y se conservan durante mucho tiempo, esto no es normalmente un problema. Sin embargo, si este comportamiento no es intencionado, su aplicación puede estar anclando objetos. Si no está seguro, puede recopilar datos de asignación de memoria de .NET e información de duración de objetos para entender el patrón de asignación de memoria que usa la aplicación.|  
 | Tipo de regla | Advertencia |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  

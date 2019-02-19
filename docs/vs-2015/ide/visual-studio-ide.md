@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780684"
 ---
 # <a name="visual-studio-ide"></a>IDE de Visual Studio
@@ -92,7 +92,7 @@ Si desea obtener información sobre las nuevas características de Visual Studio
 
  Si el proyecto tiene una interfaz de usuario basada en XAML, el diseñador predeterminado es Blend para Visual Studio, una sofisticada herramienta de gráficos que funciona sin problemas con Visual Studio.
 
- ![Artboard](../ide/media/b5-artboard.png "b5_artboard")
+ ![Mesa de trabajo](../ide/media/b5-artboard.png "b5_artboard")
 
 |||
 |-|-|
@@ -111,7 +111,7 @@ Si desea obtener información sobre las nuevas características de Visual Studio
 
  ![GreetingsConsoleApp.cpp en el editor de código](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C ++")
 
- El editor de texto es sumamente interactivo (si quiere que lo sea) con muchas características de productividad que le ayudarán a escribir código mejor y más rápidamente. Las características varían según el lenguaje y no tiene que usar cualquiera de ellos (escriba "Editor" en el inicio rápido) para activar o desactivar las características: Algunas de las características de productividad comunes son:
+ El editor de texto es sumamente interactivo (si quiere que lo sea) con muchas características de productividad que le ayudarán a escribir código mejor y más rápidamente. Las características varían según el lenguaje y no tiene que usar todas ellas. Escriba "Editor" en Inicio rápido para activar o desactivar características. Algunas de las características de productividad más comunes son:
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) incluye operaciones tales como el cambio inteligente de nombre de las variables, mover líneas seleccionadas de código a una función diferente, mover código a otras ubicaciones, reordenar los parámetros de una función y mucho más.
 
@@ -169,7 +169,7 @@ La salida de la compilación, incluidos los mensajes de error o éxito, aparecen
 ## <a name="connecting-to-cloud-services-and-databases"></a>Conectarse a bases de datos y servicios en la nube
  La ventana [Explorador de servidores](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) de Visual Studio muestra los recursos de todas las cuentas administradas en su cuenta de personalización (con la que inició sesión), incluidas las instancias de SQL Server, Azure, Salesforce.com, Office 365 y los sitios web.
 
- ![Server Explorer](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
+ ![Explorador de servidores](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
  Visual Studio incluye [Microsoft SQL Server Data Tools](https://msdn.microsoft.com/data/tools.aspx) (SSDT), que permiten compilar, depurar, mantener y refactorizar bases de datos. Puede trabajar con un proyecto de base de datos o directamente con una instancia de base de datos conectada de manera local o externa.
 

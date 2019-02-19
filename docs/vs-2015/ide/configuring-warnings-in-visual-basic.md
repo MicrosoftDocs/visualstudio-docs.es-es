@@ -1,14 +1,9 @@
 ---
 title: Configurar advertencias en Visual Basic | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
@@ -17,13 +12,13 @@ ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c3b28bea858c867bd7fae8e1b4045d79d5e4b513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5a33e1d4f2ddecdb467929edaae9ba184bfae920
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297614"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763238"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurar advertencias en Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,15 +120,10 @@ El compilador [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] incluye un conjunto d
  Id.: 42029, 42031  
   
 ## <a name="see-also"></a>Vea también  
- [Cuadro de diálogo Asistente de excepciones](../debugger/exception-assistant-dialog-box.md)   
+ [Cuadro de diálogo del Asistente de excepciones](../debugger/exception-assistant-dialog-box.md)   
  [Tipos de error](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
  [Try...Catch...Finally (instrucción)](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
  [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
  [/warnaserror (Visual Basic)](http://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
  [Página Compilación, Diseñador de proyectos (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Advertencias del compilador desactivadas de forma predeterminada](http://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)
-
-
-
-
-

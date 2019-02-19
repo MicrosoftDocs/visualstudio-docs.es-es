@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Ver, guardar y configurar archivos de registro de compilación | Microsoft Docs
+title: 'Cómo: Ver, guardar y configurar archivos de registro de compilación | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54760062"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Procedimiento Ver, guardar y configurar archivos de registro de compilación
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Cómo: Ver, guardar y configurar archivos de registro de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre la compilación en la ventana **Salida**. Con esta información puede, por ejemplo, solucionar un error de compilación. En el caso de los proyectos de C++, también puede ver la misma información en un archivo .txt que se crea y se guarda automáticamente. Si se trata de proyectos de código administrado, puede copiar y pegar la información de la ventana **Salida** en un archivo .txt y guardarlo donde quiera. También puede usar el IDE para especificar qué tipo de información quiere ver para cada compilación.  

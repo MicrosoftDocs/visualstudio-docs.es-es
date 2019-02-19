@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1c1932f3b9a065115c7977207b0678fbcd44c2e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758895"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)
@@ -65,7 +65,7 @@ Use el cuadro de diálogo **Configuración de compilación avanzada** del **Dise
  De manera predeterminada, esta casilla está activada, lo que indica que se establece una constante TRACE.  
   
  **Constantes personalizadas**  
- Escriba una de estas constantes personalizada para su aplicación en este cuadro de texto. Las entradas deben delimitarse mediante comas, con este formato: **Name1="Value1",Name2="Value2",Name3="Value3"**.  
+ Escriba una de estas constantes personalizada para su aplicación en este cuadro de texto. Las entradas deben estar delimitadas por comas, con este formato: **Nombre1="Valor1",Nombre2="Valor2",Nombre3="Valor3"**.  
   
 ## <a name="other-settings"></a>Otras configuraciones  
  **Generar ensamblados de serialización**  

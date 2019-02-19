@@ -25,10 +25,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f66dae4d9e69ce1fc5d4351d72606e1fdad10725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755318"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Explorador web, Entorno, Opciones (Cuadro de diálogo)
@@ -54,7 +54,7 @@ Establece opciones para el explorador web interno e Internet Explorer. Para acce
   
 - **Editor de código fuente** Seleccione esta opción para ver código fuente en [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
-- **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de entre dos vistas: Vista de diseño o vista estándar de código fuente basada en texto.  
+- **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de las dos vistas: vista de diseño o la vista de código fuente estándar basada en texto.  
   
 - **Editor externo** Seleccione esta opción para ver código fuente en otro editor. Especifique la ruta de acceso al editor que elija, por ejemplo, Notepad.exe.  
   

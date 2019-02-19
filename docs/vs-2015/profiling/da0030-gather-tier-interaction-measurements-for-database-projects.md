@@ -26,7 +26,7 @@ ms.locfileid: "54801484"
 Id. de regla | DA0030 |  
 | Categoría | Uso de herramientas de generación de perfiles |  
 | Método de generación de perfiles | Muestreo |  
-| Mensaje | La recopilación de mediciones de interacción para aplicaciones de varios niveles tendrá ayudará a comprender los patrones de uso de la base de datos y datos clave de acceso a retrasos. Intente generar de nuevo el perfil de la aplicación con la opción de generación de perfiles de interacción de capas habilitada.  
+| Mensaje | La recopilación de mediciones de interacción para aplicaciones de varios niveles tendrá ayudará a comprender los patrones de uso de la base de datos y datos clave de acceso a retrasos. Intente generar de nuevo el perfil de la aplicación con la opción de generación de perfiles de interacción de capas habilitada.|  
 | Tipo de regla | Información |  
   
 ## <a name="cause"></a>Motivo  

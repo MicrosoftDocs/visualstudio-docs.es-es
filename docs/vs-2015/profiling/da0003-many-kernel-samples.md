@@ -27,7 +27,7 @@ ms.locfileid: "54782639"
 Id. de regla | DA0003 |  
 | Categoría | Uso de herramientas de generación de perfiles |  
 | Métodos de generación de perfiles | Muestreo |  
-| Mensaje | Tener una proporción elevada de muestras en modo Kernel. Esto podría indicar un gran volumen de actividad de E/S o una alta tasa de cambio de contexto. Considere la posibilidad de volver a generar perfiles para la aplicación mediante el modo Instrumentación.  
+| Mensaje | Tener una proporción elevada de muestras en modo Kernel. Esto podría indicar un gran volumen de actividad de E/S o una alta tasa de cambio de contexto. Considere la posibilidad de volver a generar perfiles para la aplicación mediante el modo Instrumentación.|  
 | Tipo de regla | Información |  
   
 ## <a name="cause"></a>Motivo  

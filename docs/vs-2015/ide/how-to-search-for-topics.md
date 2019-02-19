@@ -1,25 +1,20 @@
 ---
-title: 'Cómo: Buscar temas | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Buscar temas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b784dc20f072a7cb8ab6ed80242c09e57ce1127a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799085"
 ---
 # <a name="how-to-search-for-topics"></a>Cómo: Buscar por temas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +34,16 @@ Puede usar la característica de búsqueda de texto completo para buscar todos l
     > [!NOTE]
     >  En el cuadro de diálogo **Opciones del Visor**, puede especificar preferencias adicionales, como el número máximo de resultados de la búsqueda que se mostrarán en todo momento o si se debe incluir contenido en inglés si la configuración regional principal no es inglés.  
   
-3.  Elija la tecla ENTRAR.  
+3.  Presione la tecla Entrar.  
   
      De forma predeterminada, una búsqueda devuelve un máximo de 200 aciertos y los muestra en el área de resultados de la búsqueda.  
   
-     Puede aparecer la información de versión adicional para cada resultado según el contenido.  
+     Podría aparecer información adicional sobre la versión para cada resultado, en función del contenido.  
   
 4.  Para ver un tema, seleccione el título en la lista de resultados.  
   
 ## <a name="see-also"></a>Vea también  
  [Sugerencias para la búsqueda de texto completo](../ide/full-text-search-tips.md)   
  [Operadores lógicos en expresiones de búsqueda](../ide/logical-operators-in-search-expressions.md)   
- [Operadores de búsqueda en expresiones de búsqueda avanzada](../ide/advanced-search-operators-in-search-expressions.md)   
- [Cómo: Personalizar los resultados de la búsqueda](../ide/how-to-customize-search-results.md)
-
-
-
+ [Operadores de búsqueda avanzada en expresiones de búsqueda](../ide/advanced-search-operators-in-search-expressions.md)   
+ [Cómo: Personalizar los resultados de búsqueda](../ide/how-to-customize-search-results.md)
