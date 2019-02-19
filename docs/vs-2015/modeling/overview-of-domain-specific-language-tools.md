@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805657"
 ---
-# <a name="overview-of-domain-specific-language-tools"></a>Información general sobre las Herramientas del lenguaje específico de dominio
+# <a name="overview-of-domain-specific-language-tools"></a>Información general sobre las herramientas de los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las Herramientas del lenguaje específico de dominio (herramientas DSL), que se hospedan en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], permiten diseñar un lenguaje específico de dominio y, después, generar todo lo que los usuarios deben tener para crear modelos basados en el lenguaje.  
@@ -78,6 +78,6 @@ Las Herramientas del lenguaje específico de dominio (herramientas DSL), que se 
   
  Al compilar y ejecutar la solución Herramientas de DSL [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], una segunda instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muestra el aspecto de su lenguaje específico de dominio para el usuario del lenguaje. Después de comprobar que todo funciona correctamente, puede distribuir el archivo `.vsix` que encontrará en la carpeta de compilación del proyecto DslPackage. Este archivo se puede usar para instalar DSL como una extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en otros equipos.  Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Vea también  
  [Instancia experimental](../extensibility/the-experimental-instance.md)   
  [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
