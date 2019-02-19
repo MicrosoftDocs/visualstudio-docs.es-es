@@ -9,20 +9,20 @@ f1_keywords:
 ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ad611c2f8dc04eb92ba4be112d32d49808f3c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f6bbaf9a387a43accfd779c9583687ec98b1813
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838156"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952436"
 ---
-# <a name="capturing-graphics-information"></a>Captura de información de gráficos
+# <a name="capturing-graphics-information"></a>Capturar información de gráficos
 Capture información de gráficos desde la aplicación basada en Direct3D para que pueda usar el Analizador de gráficos de Visual Studio con el fin de diagnosticar problemas de representación y de rendimiento.  
   
-## <a name="capturing-graphics-information"></a>Captura de información de gráficos  
+## <a name="capturing-graphics-information"></a>Capturar información de gráficos  
  La captura de información de gráficos es un proceso de dos pasos. En primer lugar, ejecute la aplicación en Diagnóstico de gráficos y después especifique uno o varios fotogramas de los que desea capturar información detallada.  
   
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>Para ejecutar la aplicación en Diagnóstico de gráficos  
@@ -73,15 +73,15 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
      **Detención de la captura si se encuentran errores en las capas del SDK**  
      Active esta casilla para detener la captura inmediatamente si se producen errores.  
   
-## <a name="capturing-graphics-information-remotely"></a>Captura de información de gráficos de forma remota  
+## <a name="capturing-graphics-information-remotely"></a>Capturar información de gráficos de forma remota  
  Se puede capturar información de gráficos desde una aplicación que se ejecute en el equipo local o en un dispositivo remoto. La captura remota se admite para los equipos [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)] y dispositivos [!INCLUDE[winblue_winrt_2](../includes/winblue_winrt_2_md.md)]. Para capturar información de gráficos desde una aplicación que se ejecute de forma remota, configure el proyecto para la depuración remota y después ejecute la aplicación en Diagnóstico de gráficos tal como se ha descrito anteriormente. La aplicación se ejecuta en el equipo remoto y la información de gráficos capturada se registra en el equipo de desarrollo.  
   
  El modo en que configure el proyecto para la depuración remota dependerá del tipo de aplicación que esté desarrollando y del lenguaje de programación que utilice. Para obtener información acerca de cómo configurar la depuración remota para una aplicación UWP, vea [ejecutar aplicaciones para UWP en un equipo remoto](../run-windows-store-apps-on-a-remote-machine.md). Para obtener información acerca de cómo configurar la depuración remota para una aplicación de escritorio de Windows, consulte [depuración remota](../remote-debugging.md).  
   
- Posteriormente, podrá utilizar un equipo o un dispositivo remoto para reproducir la información de los gráficos, independientemente del lugar donde se haya capturado la información. Para obtener más información, vea [Cómo: Cambio de la máquina de reproducción de Diagnóstico de gráficos](how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Posteriormente, podrá utilizar un equipo o un dispositivo remoto para reproducir la información de los gráficos, independientemente del lugar donde se haya capturado la información. Para más información, vea [Procedimientos para cambiar la máquina de reproducción de Diagnóstico de gráficos](how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Captura de información de gráficos desde la línea de comandos  
  Se puede capturar información de los gráficos desde una aplicación con una herramienta de línea de comandos. Esta herramienta, DXCap.exe, puede capturar y reproducir rápidamente información de gráficos sin usar Visual Studio ni capturas de programación. En particular, puede utilizar DXCap.exe para la automatización o en un entorno de prueba. Para obtener más información sobre DXCap.exe, vea [Herramienta de captura de línea de comandos](command-line-capture-tool.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Captura de información de gráficos](walkthrough-capturing-graphics-information.md)
+ [Tutorial: Capturar información de gráficos](walkthrough-capturing-graphics-information.md)

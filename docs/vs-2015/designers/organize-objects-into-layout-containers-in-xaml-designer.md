@@ -21,7 +21,7 @@ ms.locfileid: "54753956"
 
 Piense en qué parte de la página desea que aparezcan los objetos como imágenes, botones y vídeos. Tal vez desee que aparezcan en filas y columnas, en una sola línea vertical u horizontal, o en posiciones fijas.  
   
- Después de que haya considerado el aspecto que tendría la página, seleccione un panel de diseño. Todas las páginas tienen uno como punto de partida, ya que se necesita algo donde agregar los objetos. De manera predeterminada, es una **Cuadrícula**, pero puede cambiar esta configuración.  
+ Después de que haya considerado el aspecto que tendría la página, seleccione un panel de diseño. Todas las páginas tienen uno como punto de partida, ya que se necesita algo donde agregar los objetos. De manera predeterminada, es una **Cuadrícula**, pero se puede cambiar.  
   
  Los paneles de diseño le ayudarán a organizar los objetos en una página, pero no solo sirven para eso. Además, facilitan el diseño en diferentes tamaños y resoluciones de pantalla. Cuando los usuarios ejecutan la aplicación, todo lo que contiene el panel de diseño cambia de tamaño para coincidir con el espacio real en pantalla de sus dispositivos. Por supuesto, si no desea que el diseño actúe de ese modo, puede invalidar este comportamiento en todo o parte del diseño. Para controlarlo, puede utilizar propiedades de alto y ancho.  
   

@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801175"
 ---
 # <a name="using-the-task-list"></a>Usar la Lista de tareas
@@ -47,7 +47,7 @@ Use la **Lista de tareas** para hacer un seguimiento de los comentarios de códi
   
 #### <a name="to-open-the-task-list"></a>Para abrir la Lista de tareas  
   
--   En el **vista** menú, elija **lista de tareas** (teclado: CTRL+\\, T).  
+-   En el menú **Ver**, elija **Lista de tareas** (teclado: CTRL+\\, T).  
   
      ![Ventana Lista de tareas](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -86,7 +86,7 @@ Use la **Lista de tareas** para hacer un seguimiento de los comentarios de códi
  Dado que `TODO` es un token predefinido, este comentario aparece como una tarea `TODO` en la lista.  
   
 ###  <a name="customTokens"></a> Tokens personalizados  
- De forma predeterminada, Visual Studio incluye los tokens siguientes: HACK, TODO, DESHECHA, TENGA EN CUENTA. Estos no distinguen mayúsculas de minúsculas.  
+ De forma predeterminada, Visual Studio incluye los tokens siguientes: HACK, TODO, UNDONE, NOTE. Estos no distinguen mayúsculas de minúsculas.  
   
  También puede crear tokens propios personalizados.  
   
@@ -122,7 +122,7 @@ Use la **Lista de tareas** para hacer un seguimiento de los comentarios de códi
   
 #### <a name="to-create-a-shortcut"></a>Para crear un acceso directo  
   
--   Inserte el puntero donde desee colocar un acceso directo en el código. Elija **editar &#124; marcadores &#124; agregar acceso directo de lista de tareas** o presione (teclado: Ctrl+K, Ctrl+H  
+-   Inserte el puntero donde desee colocar un acceso directo en el código. Elija **Editar &#124; Marcadores &#124; Agregar acceso directo de la Lista de tareas** o presione (teclado: CTRL+K, CTRL+H).  
   
      Para navegar por los accesos directos en el código, elija un acceso directo de la lista y, después, elija **Tarea siguiente** o **Tarea anterior** en el menú contextual.  
   

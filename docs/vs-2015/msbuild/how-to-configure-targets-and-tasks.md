@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Configurar destinos y tareas | Microsoft Docs
+title: Configuración de destinos y tareas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -10,13 +10,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 036705b8184b0c2465b92d616bec399c769fc496
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758231"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>Procedimiento Configurar destinos y tareas
+# <a name="how-to-configure-targets-and-tasks"></a>Cómo: Configurar destinos y tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
