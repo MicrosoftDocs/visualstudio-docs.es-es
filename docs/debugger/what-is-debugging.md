@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204286"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919335"
 ---
 # <a name="what-is-debugging"></a>¿Qué es la depuración?
 
@@ -54,4 +54,4 @@ En este artículo, ha aprendido algunos conceptos generales de depuración. A co
 > [Depuración para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
-> [Corrección de errores escribiendo mejor código de C#](../debugger/write-better-code-with-visual-studio.md)
+> [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md)

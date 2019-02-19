@@ -18,10 +18,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c7ec3911496c5106d53f90a281452df2c8a128f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54788352"
 ---
 # <a name="command-window"></a>Ventana Comandos
@@ -120,7 +120,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 >Edit.Find ^^t /regex  
 ```  
   
- El símbolo de intercalación funciona igual tanto si está dentro como fuera de unas comillas. Si el símbolo de intercalación es el último carácter de la línea, se ignora. En el ejemplo que se muestra aquí se muestra cómo buscar el patrón "^t".  
+ El símbolo de intercalación funciona igual tanto si está dentro como fuera de unas comillas. Si el símbolo de intercalación es el último carácter de la línea, se ignora. En este ejemplo se muestra cómo buscar el patrón "^t".  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usar comillas para los nombres de ruta con espacios  
  Si, por ejemplo, quiere abrir un archivo que tiene una ruta que contiene espacios, debe colocar comillas alrededor de la ruta o del segmento de ruta que contiene espacios: **C:\\"Archivos de programa"** o **"C:\Archivos de programa"**.  

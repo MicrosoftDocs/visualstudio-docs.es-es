@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54798992"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
@@ -91,7 +91,7 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
      Por ejemplo, puede elegir **Global** si quiere que el método abreviado funcione en todos los contextos. Puede usar cualquier método abreviado que no esté asignado (como Global) en otro editor. De lo contrario, el editor reemplaza el método abreviado.
 
     > [!NOTE]
-    >  No se pueden asignar las teclas siguientes como parte de un método abreviado de teclado en **Global**: Imprimir PANT/PET SIS, Bloq Despl, pausa/interrumpir, ficha, BLOQ MAYÚS, Insert, principal, fin, RE PÁG, AV PÁG, la tecla del logotipo de Windows, la clave de aplicación, cualquiera de las teclas de dirección o ENTRAR; BLOQ NUM, eliminar o borrar en el teclado numérico; o Ctrl + Alt + Supr.
+    >  No se pueden asignar las siguientes teclas a un método abreviado de teclado en **Global**: Imp Pant/Pet Sis, Bloq Despl, Pausa/Inter, Tab, Bloq Mayús, Ins, Inicio, Fin, Re Pág, Av Pág, la tecla del logotipo de Windows, la tecla de aplicación, cualquiera de las teclas de dirección o ENTRAR; Bloq Num o Supr en el teclado numérico; o CTRL+Alt+Supr.
 
 6.  En el cuadro **Presionar teclas de método abreviado**, especifique el método abreviado que quiere usar.
 

@@ -26,7 +26,7 @@ ms.locfileid: "54794165"
 Id. de regla | DA0023 |  
 | Categoría |. Uso de .NET Framework |  
 | Método de generación de perfiles | Todos los |  
-| Mensaje | % de tiempo del GC es bastante alto. Esta indicación de una cantidad excesiva de sobrecarga de la recolección de elementos no utilizados podría estar afectando a la capacidad de respuesta de la aplicación. Puede recopilar datos de asignación de memoria de .NET e información de vigencia del objeto para entender el patrón de asignación de memoria que la aplicación utiliza mejor.  
+| Mensaje | % de tiempo del GC es bastante alto. Esta indicación de una cantidad excesiva de sobrecarga de la recolección de elementos no utilizados podría estar afectando a la capacidad de respuesta de la aplicación. Puede recopilar datos de asignación de memoria de .NET e información de vigencia del objeto para entender el patrón de asignación de memoria que la aplicación usa mejor.|  
 | Tipo de regla | Informativo |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  

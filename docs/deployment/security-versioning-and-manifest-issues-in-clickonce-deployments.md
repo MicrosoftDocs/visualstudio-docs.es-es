@@ -1,5 +1,5 @@
 ---
-title: Seguridad, control de versiones y manifiestos problemas en implementaciones de ClickOnce | Microsoft Docs
+title: Problemas de seguridad, control de versiones y manifiestos en implementaciones de ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:

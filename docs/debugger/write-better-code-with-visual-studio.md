@@ -40,7 +40,7 @@ Para demostrar estas tareas, se muestran algunos de los tipos más comunes de er
 
 El código siguiente tiene algunos errores que pueden corregir mediante el IDE de Visual Studio. Aquí la aplicación es una aplicación sencilla que simula obtener los datos JSON de alguna operación, deserializar los datos a un objeto y actualizar una lista simple con los nuevos datos.
 
-Para crear la aplicación
+Para crear la aplicación:
 
 1. Abra Visual Studio y elija **archivo > Nuevo proyecto**. En **Visual C#** , elija **Windows Desktop** o **.NET Core**y, a continuación, en el panel central, elija un **aplicación de consola**.
 

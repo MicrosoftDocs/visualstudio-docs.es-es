@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Entorno de compilación de la creación de varios equipos | Microsoft Docs'
+title: 'Tutorial: Crear un entorno de compilación para varios equipos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769082"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Tutorial: Creación de un entorno de compilación para varios equipos
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Tutorial: Crear un entorno de compilación para varios equipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se puede crear un entorno de compilación dentro de la organización si se instala Visual Studio en un equipo host y después se copian los diversos archivos y configuraciones en otro equipo para que pueda participar en las compilaciones. No es necesario instalar Visual Studio en el otro equipo.  

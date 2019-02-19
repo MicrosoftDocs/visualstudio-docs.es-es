@@ -27,7 +27,7 @@ ms.locfileid: "54800410"
 Id. de regla | DA0008 |  
 | Categoría | Uso de herramientas de generación de perfiles |  
 | Método de generación de perfiles | Muestreo |  
-| Mensaje | Se recopilaron las muestras sólo unos pocos. Considere una ejecución más prolongada o una frecuencia de muestreo más rápida para obtener resultados más significativos.  
+| Mensaje | Se recopilaron las muestras sólo unos pocos. Considere una ejecución más prolongada o una frecuencia de muestreo más rápida para obtener resultados más significativos.|  
 | Tipo de regla | Información |  
   
 ## <a name="cause"></a>Motivo  

@@ -25,10 +25,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54766229"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
@@ -52,7 +52,7 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
   
     -   Escriba la ruta de un archivo MSHA o la URL de un punto de conexión de servicio.  
   
-    -   Elija el botón Examinar (**...**) para desplazarse hasta un archivo .msha.  
+    -   Haga clic en el botón Examinar (**...**) para desplazarse hasta un archivo .msha.  
   
     -   En la lista, seleccione la entrada que se usó más recientemente.  
   

@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780429"
 ---
 # <a name="toolbox-html-tab"></a>Cuadro de herramientas, HTML (Pestaña)
@@ -32,7 +32,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
   
 ## <a name="tasks"></a>Tareas  
   
--   [Cómo: Administrar la ventana del cuadro de herramientas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+-   [Cómo: Administrar la ventana Cuadro de herramientas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
 -   [Cómo: Manipular las fichas del cuadro de herramientas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
@@ -42,7 +42,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
  **Pointer**  
  ![Puntero de página HTML del Diseñador de ASP.NET Mobile](../../ide/reference/media/vxpointer.gif "vxPointer")  
   
- Esta herramienta está seleccionada de manera predeterminada cuando se abre cualquier pestaña del cuadro de herramientas. No se puede eliminar. El puntero le permite arrastrar objetos a la superficie de la vista Diseño, cambiar su tamaño y su ubicación en la página o formulario. Para obtener más información, vea [Cómo: Administrar la ventana del cuadro de herramientas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) y [Cómo: Manipular las fichas del cuadro de herramientas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+ Esta herramienta está seleccionada de manera predeterminada cuando se abre cualquier pestaña del cuadro de herramientas. No se puede eliminar. El puntero le permite arrastrar objetos a la superficie de la vista Diseño, cambiar su tamaño y su ubicación en la página o formulario. Para obtener más información, consulte [Cómo: Administrar la ventana Cuadro de herramientas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) y [Cómo: Manipular fichas del cuadro de herramientas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  **Input (Button)**  
  ![Botón de página web HTML](../../ide/reference/media/vxbutton.gif "vxButton")  
@@ -55,7 +55,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- Para obtener más información, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxis declarativa del Control de servidor HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Procedimiento Crear secuencias de comandos y editar controladores de eventos](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [mapa de contenido de controles de botón de servidor Web](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, y <xref:System.Web.UI.WebControls.Button>.  
+ Para obtener más información, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxis declarativa del Control de servidor HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Cómo: crear secuencias de comandos y editar controladores de eventos](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [ Mapa de contenido de controles de botón de servidor Web](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, y <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Reset)**  
  ![Captura de pantalla de HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -126,7 +126,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="Password1" type="password" name="Password1">  
 ```  
   
- Para obtener más información, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxis declarativa del Control de servidor HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Cómo: Establecer un Control de servidor Web de cuadro de texto para escribir contraseñas](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310), y [Tutorial: Validar la entrada del usuario en un sitio Web Forms página](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
+ Para obtener más información, consulte [Controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintaxis declarativa del control de servidor HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Cómo: Establecer un control TextBox de servidor Web para escribir contraseñas](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) y [Tutorial: Validar los datos introducidos por el usuario en una página de formularios Web Forms](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
 >  Si la aplicación transmite nombres de usuario y contraseñas, debe configurar su sitio web para que use la capa de sockets seguros (SSL) para cifrar la transmisión. Para obtener más información, consulte "Securing Connections with SSL" (Proteger conexiones con SSL) en la [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (Guía de operaciones de IIS). Además, se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -225,7 +225,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
   
  Para crear un elemento `select` multilínea, aumente el valor de la propiedad Size.  
   
- Para obtener más información, consulte [sintaxis declarativa del Control de servidor HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Procedimiento Crear secuencias de comandos y editar controladores de eventos](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [información general sobre el Control de servidor Web DropDownList](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [información general sobre el Control de servidor Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, y <xref:System.Web.UI.WebControls.DropDownList>.  
+ Para obtener más información, consulte [sintaxis declarativa del Control de servidor HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Cómo: crear secuencias de comandos y editar controladores de eventos](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [DropDownList Web Server Control Overview](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Información general sobre el Control de servidor Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, y <xref:System.Web.UI.WebControls.DropDownList>.  
   
  **Horizontal Rule**  
  ![Elemento de regla horizontal de página HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  

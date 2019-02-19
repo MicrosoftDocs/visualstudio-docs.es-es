@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804181"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas de MSBuild
@@ -55,7 +55,7 @@ ms.locfileid: "54804181"
 |`MSBuildThisFileDirectory`|Parte de directorio de `MSBuildThisFileFullPath`.<br /><br /> Incluya la barra diagonal inversa final de la ruta.|Reservada|  
 |`MSBuildThisFileDirectoryNoRoot`|Parte del directorio de `MSBuildThisFileFullPath`, sin incluir la unidad raíz.<br /><br /> Incluya la barra diagonal inversa final de la ruta.|Reservada|  
 |`MSBuildThisFileExtension`|Parte de la extensión de nombre de archivo de `MSBuildThisFileFullPath`.|Reservada|  
-|`MSBuildThisFileFullPath`|Ruta de acceso absoluta del archivo de proyecto o de destinos que contiene el destino que se está ejecutando.<br /><br /> Sugerencia: Puede especificar una ruta de acceso relativa en un archivo de destinos relativa al archivo de destinos y no relativa al archivo de proyecto original.|Reservada|  
+|`MSBuildThisFileFullPath`|Ruta de acceso absoluta del archivo de proyecto o de destinos que contiene el destino que se está ejecutando.<br /><br /> Consejo: Puede especificar una ruta de acceso relativa en un archivo de destinos relativa al archivo de destinos y no relativa al archivo del proyecto original.|Reservada|  
 |`MSBuildThisFileName`|Parte de nombre de archivo de `MSBuildThisFileFullPath`, sin la extensión de nombre de archivo.|Reservada|  
 |`MSBuildToolsPath`|Ruta de acceso de instalación de la versión de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que se asocia al valor de `MSBuildToolsVersion`.<br /><br /> No incluya la barra diagonal inversa final de la ruta.<br /><br /> Esta propiedad no se puede invalidar.|Reservada|  
 |`MSBuildToolsVersion`|Versión del conjunto de herramientas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que se utilizará para compilar el proyecto.<br /><br /> Nota: Un conjunto de herramientas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] consta de tareas, destinos y herramientas que se utilizan para compilar una aplicación. Las herramientas incluyen compiladores como csc.exe y vbc.exe. Para obtener más información, consulte [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) y [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md).|Reservada|  

@@ -26,7 +26,7 @@ ms.locfileid: "54787360"
 Id. de regla | DA0502 |  
 | Categoría | Supervisión de recursos |  
 | Método de generación de perfiles | Todos los |  
-| Mensaje | Esta regla es sólo informativa. El contador % de tiempo del procesador del proceso()\\ mide el consumo de CPU del proceso del que está generando perfiles. El valor notificado es el máximo observado de todos los intervalos de medición.  
+| Mensaje | Esta regla es sólo informativa. El contador % de tiempo del procesador del proceso()\\ mide el consumo de CPU del proceso del que está generando perfiles. El valor notificado es el máximo observado de todos los intervalos de medición.|  
 | Tipo de regla | Informativo |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  

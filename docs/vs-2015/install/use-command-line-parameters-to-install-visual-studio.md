@@ -38,10 +38,10 @@ Al instalar Visual Studio 2015 desde un símbolo del sistema, puede usar los sig
 |---------------|-----------------|
 |**/?**<br /><br /> **/help**<br /><br /> **/h**|Muestra los parámetros de la línea de comandos.|
 |**/AddRemoveFeatures**|Especifica qué características se van a agregar o quitar del producto instalado.|
-|**/AdminFile** *AdminDeployment.xml*|Instala Visual Studio usando el archivo de datos que especificó para la instalación administrativa.|
-|**/ChainingPackage** *BundleName*|Especifica qué agrupación está encadenando este paquete. También puede usarse para especificar una cohorte para la experiencia de mejora del cliente.|
-|**/CreateAdminFile \<filename>**|Especifica la ubicación para crear un archivo de control que se puede usar con /AdminFile|
-|**/CustomInstallPath** *InstallationDirectory*|Instala todos los paquetes que se pueden volver a establecer como destino en el directorio especificado.|
+|**/AdminFile** *ImplementaciónDeAdministración.xml*|Instala Visual Studio usando el archivo de datos que especificó para la instalación administrativa.|
+|**/ChainingPackage** *NombreDePaquete*|Especifica qué agrupación está encadenando este paquete. También puede usarse para especificar una cohorte para la experiencia de mejora del cliente.|
+|**/CreateAdminFile \<nombreDeArchivo>**|Especifica la ubicación para crear un archivo de control que se puede usar con /AdminFile|
+|**/CustomInstallPath** *DirectorioDeInstalación*|Instala todos los paquetes que se pueden volver a establecer como destino en el directorio especificado.|
 |**/ForceRestart**|Reinicia siempre el equipo después de la instalación.|
 |**/full**|Instala todas las características del producto.|
 |**/Installselectableitems \<nombre del elemento 1 > [;\< nombre del elemento 2 >]**|Lista de elementos del árbol de selección que se comprueba en la pantalla de selección del Asistente para la instalación.|

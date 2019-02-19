@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54975444"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Cómo: Usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedimientos para usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework
 Puede implementar una aplicación que tenga como destino varias versiones de .NET Framework mediante el uso de la tecnología de implementación de ClickOnce. Esto requiere que generar y actualizar los manifiestos de aplicación e implementación.  
   
 > [!NOTE]
@@ -100,7 +100,7 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Para actualizar y volver a firmar la aplicación y la implementación de manifiestos  
   
--   Actualizar y volver a firmar los manifiestos de aplicación e implementación. Para obtener más información, consulta [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Actualizar y volver a firmar los manifiestos de aplicación e implementación. Para obtener más información, vea [Procedimientos para volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   

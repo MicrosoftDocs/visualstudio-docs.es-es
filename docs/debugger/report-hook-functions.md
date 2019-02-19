@@ -49,4 +49,4 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
   
 ## <a name="see-also"></a>Vea también  
  [Creación de funciones de enlace de depuración](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 Sample](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)
+ [Ejemplo crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

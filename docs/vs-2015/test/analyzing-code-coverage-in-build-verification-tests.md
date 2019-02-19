@@ -28,7 +28,7 @@ El análisis de cobertura de código de Microsoft Visual Studio muestra que cant
   
     Si tiene más de una definición de origen de la prueba, repita este paso para cada una.  
   
-   - <em>Pero no hay ningún campo denominado*Tipo de archivo de parámetros de ejecución</em>.*  
+   - <em>Pero no hay ningún campo denominado **Tipo de archivo de parámetros de ejecución</em>*.*  
   
       En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y elija los puntos suspensivos **[...]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, en **Ejecutor de pruebas**, elija **Ejecutor de pruebas de Visual Studio**.  
   

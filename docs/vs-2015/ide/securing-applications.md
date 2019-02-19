@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5e7bba9dd9806952fc56ac62b2322f00aebc5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800779"
 ---
 # <a name="securing-applications"></a>Proteger aplicaciones
@@ -30,7 +30,7 @@ Aunque la mayoría de las aplicaciones presentan desafíos en relación con la s
  [Procedimientos recomendados para la seguridad](http://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42)  
  Proporciona información sobre las características y las prácticas de seguridad disponibles al trabajar con Visual C++.  
   
- [EN LA COMPILACIÓN: Seguridad y programación (C# y Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
+ [NO INCLUIDO EN COMPILACIÓN: Seguridad y programación (C# y Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
  Proporciona información sobre los tres aspectos relacionados con la seguridad que más preocupan a los desarrolladores de Visual Basic y C#: privilegios, aplicaciones web e instalación de Visual Studio.  
   
 ## <a name="securing-mobile-applications"></a>Proteger aplicaciones móviles  
@@ -57,7 +57,7 @@ Aunque la mayoría de las aplicaciones presentan desafíos en relación con la s
  [Consideraciones de seguridad para JScript](http://msdn.microsoft.com/8572efc9-071a-472d-a1a4-f0a3b42644c1)  
  Describe algunos problemas relacionados con la seguridad que pueden encontrar los programadores de JScript.  
   
- [Cómo: Usar seguridad de transporte](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
+ [Cómo utilizar seguridad de transporte](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
  Describe cómo usar la seguridad de transporte para la autenticación cuando se establece conexión con un servicio WCF.  
   
 ## <a name="securing-desktop-applications"></a>Proteger aplicaciones de escritorio  

@@ -27,7 +27,7 @@ ms.locfileid: "54792928"
 Id. de regla | DA0002 |  
 | Categoría | Uso de herramientas de generación de perfiles |  
 | Métodos de generación de perfiles | Generación de perfiles mediante las herramientas de línea de comandos VSPerfCmd y VSPerfASPNETCmd |  
-| Mensaje | Parece que el archivo se recopiló sin haber establecido correctamente las variables de entorno con VSPerfCLREnv.cmd. Puede que no se resuelvan los símbolos de archivos binarios administrados.  
+| Mensaje | Parece que el archivo se recopiló sin haber establecido correctamente las variables de entorno con VSPerfCLREnv.cmd. Es posible que los símbolos de archivos binarios administrados no se resuelvan.|  
 | Tipo de regla | Información |  
   
 ## <a name="cause"></a>Motivo  

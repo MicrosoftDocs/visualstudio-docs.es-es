@@ -51,10 +51,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54795257"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
@@ -96,7 +96,7 @@ Cuando cree una aplicación, una solicitud, un sitio web, una aplicación web, u
 
 -   [Administrar la firma de ensamblados y manifiestos](../ide/managing-assembly-and-manifest-signing.md)
 
--   [Cómo: especificar un icono de aplicación (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+-   [Cómo: Especificar el icono de una aplicación (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
 -   [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
 

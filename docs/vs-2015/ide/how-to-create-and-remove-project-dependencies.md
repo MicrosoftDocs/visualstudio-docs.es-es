@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear y quitar dependencias del proyecto | Microsoft Docs
+title: 'Cómo: Crear y quitar dependencias del proyecto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -19,13 +19,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54799777"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Filtrar Crear y quitar dependencias del proyecto
+# <a name="how-to-create-and-remove-project-dependencies"></a>Cómo: Crear y quitar dependencias del proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Al compilar una solución que contiene varios proyectos, puede ser necesario compilar determinados proyectos primero para generar código que usan otros proyectos. Cuando un proyecto consume código ejecutable generado por otro proyecto, al proyecto que genera el código se le hace referencia como una dependencia de proyecto del proyecto que consume el código. Dichas relaciones de dependencia pueden definirse en el cuadro de diálogo **Dependencias del proyecto**.  
@@ -66,4 +66,4 @@ Al compilar una solución que contiene varios proyectos, puede ser necesario com
  [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)   
  [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
- [(NIB) Cómo: Modificar las propiedades del proyecto y los valores de configuración](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB Cómo: Modificar las propiedades y los valores de configuración del proyecto](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

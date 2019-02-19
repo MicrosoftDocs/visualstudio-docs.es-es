@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805326"
 ---
 # <a name="build-page-project-designer-c"></a>Compilar (Página, Diseñador de proyectos) (C#)
@@ -41,7 +41,7 @@ Use la página **Compilar** del **Diseñador de proyectos** para especificar las
  Especifica qué opciones de configuración se mostrarán o modificarán. Los valores pueden ser **(Depurar) activa** (es el valor predeterminado), **Depuración**, **Lanzamiento** o **Todas las configuraciones**.  
   
  **Plataforma**  
- Especifica qué configuración de plataforma se mostrará o modificará. La configuración predeterminada es **(Cualquier CPU) activa**. Puede cambiar la plataforma activa mediante el **Administrador de configuración**. Para obtener más información, vea [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md).  
+ Especifica qué configuración de plataforma se mostrará o modificará. La configuración predeterminada es **(Cualquier CPU) activa**. Puede cambiar la plataforma activa mediante el **Administrador de configuración**. Para obtener más información, consulte [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="general"></a>General  
  Las opciones siguientes le permiten configurar varias opciones del compilador de C#.  

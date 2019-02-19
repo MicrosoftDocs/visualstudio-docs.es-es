@@ -91,7 +91,7 @@ Puede usar propiedades de archivo para indicar qué acciones debe realizar el si
  Muestra la ruta de acceso del archivo SDK al que se hace referencia.  
   
 ### <a name="uri"></a>URI  
- Muestra el URI que debe incluirse en los archivos de JavaScript o HTML del proyecto para incluir el archivo como un archivo de origen.  
+ Muestra el URI que se debe incluir en los archivos de JavaScript o HTML del proyecto para incluir el archivo como un archivo de origen.  
   
 ### <a name="version"></a>Versión  
  Muestra la versión de la referencia.  

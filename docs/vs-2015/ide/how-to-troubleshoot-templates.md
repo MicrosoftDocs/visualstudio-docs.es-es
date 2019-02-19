@@ -39,7 +39,7 @@ Si una plantilla no se puede cargar en el entorno de desarrollo, hay varias mane
 5.  Compruebe que el XML del archivo .vstemplate cumple el esquema de plantilla de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información sobre el esquema .vstemplate, vea [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) (Referencia de esquema de plantillas de Visual Studio).  
   
     > [!NOTE]
-    >  Para obtener compatibilidad con IntelliSense mientras se crea el archivo `xmlns`vstemplate`VSTemplate`, agregue un atributo http://schemas.microsoft.com/developer/vstemplate/2005 al elemento  y asígnele un valor de .  
+    >  Para obtener compatibilidad con IntelliSense mientras se crea el archivo .vstemplate, agregue un atributo `xmlns` al elemento `VSTemplate` y asígnele un valor de http://schemas.microsoft.com/developer/vstemplate/2005.  
   
 6.  Guarde y cierre el archivo .vstemplate.  
   

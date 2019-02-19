@@ -27,10 +27,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54763289"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
@@ -157,7 +157,7 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
 </asp:ScriptManager>
 ```
 
- IntelliSense también admite archivos de script que se incrustan como recursos en un ensamblado en aplicaciones web ASP.NET AJAX. Para obtener más información acerca de los recursos de script incrustados, vea [Tutorial: Incrustar un archivo JavaScript como un recurso en un ensamblado](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ IntelliSense también admite archivos de script que se incrustan como recursos en un ensamblado en aplicaciones web ASP.NET AJAX. Para obtener más información acerca de los recursos de script incrustados, vea [Tutorial: incrustar un archivo JavaScript como un recurso en un ensamblado](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 ####  <a name="ReferenceDirectives"></a> Directivas de referencia
  Con una directiva `reference`, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] puede establecer una relación entre el script que está modificando actualmente y otros scripts. La directiva `reference` le permite incluir un archivo de script en el contexto de scripting del archivo de script actual. Esto habilita IntelliSense para poder hacer referencias, mientras codifica, a las funciones, tipos y campos definidos externamente.

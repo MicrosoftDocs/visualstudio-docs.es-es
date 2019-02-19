@@ -27,11 +27,11 @@ Python es un lenguaje de programación más popular que utiliza muchas universid
 
 Como un lenguaje de programación Python es:
   
-- Fiable
+- Confiable.
 - Suelen ser útiles para scripting programas rápidos, scripting de aplicaciones, aplicaciones de escritorio, servidores web, servicios web y la informática científica.
-- Fácil de aprender a usar y con un diseño adecuado para promover una codificación correcta (numerosas universidades lo usan para cursos de introducción a la programación)
+- Fácil de aprender y con un diseño adecuado para promover una codificación correcta (numerosas universidades lo usan para cursos de introducción a la programación).
 - Flexible, compatibilidad con los estilos de programación imperativos, funcionales y orientada a objetos.
-- Código abierto y gratuito
+- De código abierto y gratuito.
 - Se ejecuta correctamente en todos los sistemas operativos principales.  
 - Compatible con muchas bibliotecas gratis, útiles y bien diseñadas.  
 - Admite una gran cantidad de documentación, ejemplos y una gran comunidad de desarrolladores.  
@@ -46,7 +46,7 @@ Para instalar Python en sí mismo, visite [ https://www.python.org/download/ ](h
 Las herramientas de Python para Visual Studio, que puede instalar desde [visualstudio.com](https://www.visualstudio.com/explore/python-vs), proporcionan las siguientes características:  
   
 - Compatibilidad con varios intérpretes: distintas versiones de CPython, IronPython e IPython  
-- Un sistema de proyectos que selecciona implícitamente una estructura de carpetas de código Python y también permite control explícito para que pueda identificar el código de la aplicación, el código de prueba, las páginas web, JavaScript, los scripts de compilación y demás.  
+- Un sistema de proyectos que selecciona implícitamente una estructura de carpetas de código Python y también permite control explícito para que pueda identificar el código de la aplicación, el de prueba, las páginas web, JavaScript, los scripts de compilación y demás.  
 - Plantillas de proyecto de consola, web, Azure, datos científicos y otros tipos de proyectos.    
 - El SDK de Azure para Python (ver abajo)    
 - Características de edición avanzada y comprensión de código, incluyendo usar color de sintaxis, autocompletado en el código y las bibliotecas, ayuda para las firmas, vista de clases, Ir a definición, Buscar todas las referencias, refactorización y mucho más.    

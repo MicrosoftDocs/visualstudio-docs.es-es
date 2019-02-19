@@ -256,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
     Si tiene más de una definición de origen de la prueba, repita este paso para cada una.  
   
-   - <em>Pero no hay ningún campo denominado*Tipo de archivo de parámetros de ejecución</em>.*  
+   - <em>Pero no hay ningún campo denominado **Tipo de archivo de parámetros de ejecución</em>*.*  
   
       En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y elija los puntos suspensivos **[...]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, en **Ejecutor de pruebas**, elija **Ejecutor de pruebas de Visual Studio**.  
   
@@ -280,7 +280,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
 ## <a name="external-resources"></a>Recursos externos  
   
-### <a name="guidance"></a>Instrucciones  
+### <a name="guidance"></a>Orientación  
  [Pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Vea también  

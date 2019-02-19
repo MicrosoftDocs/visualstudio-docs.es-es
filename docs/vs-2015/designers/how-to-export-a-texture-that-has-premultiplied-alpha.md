@@ -34,18 +34,18 @@ La canalización de contenido de la imagen puede generar texturas de alfa premul
   
 -   Debido a la naturaleza asociativa de la combinación con alfa premultiplicado, la representación de varias pasadas de objetos translúcidos se simplifica.  
   
--   Mediante el uso de alfa premultiplicado, se puede lograr simultáneamente la combinación aditiva pura (estableciendo alfa en cero) y la combinación lineal interpolada. Por ejemplo, en un sistema de partículas, una partícula de fuego aditivamente mezclada puede convertirse en una partícula de humo translúcido que se mezcla mediante el uso de interpolación lineal. Sin alfa multiplicada previamente, tendría que dibujar las partículas de activación con independencia de las partículas de humo, y modificar el estado de presentación entre las llamadas de dibujo.  
+-   Mediante el uso de alfa premultiplicado, se puede lograr simultáneamente la combinación aditiva pura (estableciendo alfa en cero) y la combinación lineal interpolada. Por ejemplo, en un sistema de partículas, una partícula de fuego mezclada de manera aditiva se puede convertir en una partícula de humo translúcido que se mezcla mediante el uso de interpolación lineal. Sin alfa multiplicada previamente, tendría que dibujar las partículas de activación con independencia de las partículas de humo, y modificar el estado de presentación entre las llamadas de dibujo.  
   
--   Las texturas que usan alfa premultiplicado se comprimen con mayor calidad que aquellas que no lo usan y no presentan el efecto de bordes descoloridos (o de "halo") que puede producirse cuando se mezclan texturas que no usan alfa premultiplicado.  
+-   Las texturas que usan alfa premultiplicado se comprimen con mayor calidad que aquellas que no lo usan y no presentan el efecto de bordes descoloridos (o de "halo") que se puede producir cuando se mezclan texturas que no usan alfa premultiplicado.  
   
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Para crear una textura que usa alfa multiplicado previamente  
   
 1. Comience con una textura básica. Cargue un archivo de imagen existente o cree uno como se describe en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md).  
   
-2. Configure el archivo de textura para que sea procesado por la canalización de contenido de imagen. En el **Explorador de soluciones**, abra el menú contextual del archivo de textura y seleccione **Propiedades**. En **Propiedades de configuración**, la página **General**, establezca la propiedad **Tipo de elemento** en **Canalización de contenido de la imagen**. Asegúrese de que la propiedad **Contenido** esté establecida en **Sí** y **Excluir de la compilación** esté establecido en **No**, y, después, seleccione el botón **Aplicar**. Aparece la página de propiedades de configuración de **Canalización de contenido de la imagen**.  
+2. Configure el archivo de textura para que lo procese la canalización de contenido de imagen. En el **Explorador de soluciones**, abra el menú contextual del archivo de textura y seleccione **Propiedades**. En **Propiedades de configuración**, la página **General**, establezca la propiedad **Tipo de elemento** en **Canalización de contenido de la imagen**. Asegúrese de que la propiedad **Contenido** esté establecida en **Sí** y **Excluir de la compilación** esté establecido en **No**, y, después, seleccione el botón **Aplicar**. Aparece la página de propiedades de configuración de **Canalización de contenido de la imagen**.  
   
 3. Configure la canalización de contenido de la imagen para generar valores alfa premultiplicados. En **Propiedades de configuración**, **Canalización de contenido de la imagen**, la página **General**, establezca la propiedad de **Convertir en formato alfa premultiplicado** en **Sí (/generatepremultipliedalpha)**.  
   
 4. Elija el botón **Aceptar** .  
   
-   Al compilar el proyecto, la canalización de contenido de la imagen convierte la imagen de origen del formato de trabajo al formato de salida especificado (esto incluye la conversión de la imagen del formato de alfa multiplicado previamente) y el resultado se copia en el directorio de resultados del proyecto.
+   Al compilar el proyecto, la canalización de contenido de la imagen convierte la imagen de origen del formato de trabajo al formato de salida especificado (esto incluye la conversión de la imagen al formato de alfa multiplicado previamente) y el resultado se copia en el directorio de resultados del proyecto.

@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 773ecc04569850546f03fd0cdb68bfe1a81a79f9
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54835031"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Elegir elementos del cuadro de herramientas, Componentes de WPF
@@ -30,7 +30,7 @@ En esta pestaña del cuadro de diálogo **Elegir elementos del cuadro de herrami
 - Cuando se seleccione la casilla junto a un componente, se mostrará un icono de ese componente en el **cuadro de herramientas**.  
   
   > [!TIP]
-  >  Para agregar una instancia de un control de WPF a un documento del proyecto abierto para su edición, arrastre su icono de **cuadro de herramientas** a la superficie de la vista Diseño. El marcado y el código predeterminados del componente se insertan en el proyecto, preparados para que los pueda modificar. Para obtener más información, vea [Cómo: Administrar la ventana del cuadro de herramientas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) y [Cómo: Manipular las fichas del cuadro de herramientas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  >  Para agregar una instancia de un control de WPF a un documento del proyecto abierto para su edición, arrastre su icono de **cuadro de herramientas** a la superficie de la vista Diseño. El marcado y el código predeterminados del componente se insertan en el proyecto, preparados para que los pueda modificar. Para obtener más información, consulte [Cómo: Administrar la ventana Cuadro de herramientas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) y [Cómo: Manipular fichas del cuadro de herramientas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Cuando se desactive la casilla junto a un componente, el icono correspondiente se quitará del **cuadro de herramientas.**  
   
@@ -73,10 +73,10 @@ En esta pestaña del cuadro de diálogo **Elegir elementos del cuadro de herrami
   
   Además, si se aplican metadatos en tiempo de diseño al control personalizado y estos especifican que el atributo <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> se establece en `false`, el control no aparece en el cuadro de herramientas.  
   
-  Puede hacer referencia a los controles directamente en la vista XAML mediante la asignación del espacio de nombres y el ensamblado para el control. Para obtener más información, vea [Cómo: Importar un Namespace en XAML](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
+  Puede hacer referencia a los controles directamente en la vista XAML mediante la asignación del espacio de nombres y el ensamblado para el control. Para obtener más información, consulte [Cómo: Importar un espacio de nombres a XAML](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
   
 ## <a name="see-also"></a>Vea también  
  [Elegir elementos del cuadro de herramientas (Cuadro de diálogo): Visual Studio](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
  [Cuadro de herramientas](../../ide/reference/toolbox.md)   
- [Cómo: Usar un Control WPF de terceros en una aplicación WPF](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
+ [Cómo: Usar un control de WPF de otro proveedor en una aplicación de WPF](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
  [WPF Designer](http://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

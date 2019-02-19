@@ -33,7 +33,7 @@ Mediante el uso de operadores de búsqueda avanzada, puede refinar la búsqueda 
   
 |Para buscar|Usar|Ejemplo|Resultado|  
 |-------------------|---------|-------------|------------|  
-|Un término en el título del tema|title:|title:binaryreader|Temas que contienen "binaryreader" en sus títulos.|  
+|Un término en el título del tema|title:|title:binaryreader|Temas que contienen "binaryreader" en los títulos.|  
 |Un término en un ejemplo de código|code:|code:readdouble|Temas que contienen "readdouble" en un ejemplo de código.|  
 |Un término en un ejemplo de un lenguaje de programación específico|code:vb:|code:vb:string|Temas que contienen "string" en un ejemplo de Visual Basic.|  
 |Un tema que está asociado a una palabra clave de índice específica|keyword:|keyword:readbyte|Temas que están asociados con la palabra clave de índice "readbyte".|  

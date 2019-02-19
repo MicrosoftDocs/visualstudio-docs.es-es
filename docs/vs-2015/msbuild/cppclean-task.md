@@ -1,14 +1,9 @@
 ---
 title: CPPClean (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.cppclean
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: b62a482e-8fb5-4999-b50b-6605a078e291
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a96571cbc4de4281daddd42f4b1d53b60b300e53
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e29a80c9cc3f492a19de630e2a09e1f15ca9c45c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826952"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791444"
 ---
 # <a name="cppclean-task"></a>CPPClean (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,12 +43,9 @@ Elimina los archivos temporales que MSBuild crea cuando se compila un proyecto d
 |          **DoDelete**           |                                                            Parámetro **Boolean** opcional.<br /><br /> Si `true`, limpie los archivos de compilación temporales.                                                             |
 | **FilePatternsToDeleteOnClean** |                                            Parámetro `String` requerido.<br /><br /> Especifica una lista delimitada por punto y coma de extensiones de archivo de archivos que se van a limpiar.                                             |
 |   **FilesExcludedFromClean**    |                                                    Parámetro `String` opcional.<br /><br /> Especifica una lista delimitada por punto y coma de archivos que no se van a limpiar.                                                    |
-|       **FoldersToClean**        | Parámetro `String` requerido.<br /><br /> Especifica una lista delimitada por punto y coma de directorios que se van a limpiar. Puede especificar una completa o una ruta de acceso relativa y la ruta de acceso puede contener el carácter comodín (**\\**\*). |
+|       **FoldersToClean**        | Parámetro `String` requerido.<br /><br /> Especifica una lista delimitada por punto y coma de directorios que se van a limpiar. Puede especificar una ruta de acceso completa o relativa que puede contener el carácter comodín (**\\**\*). |
 
 ## <a name="remarks"></a>Comentarios  
 
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

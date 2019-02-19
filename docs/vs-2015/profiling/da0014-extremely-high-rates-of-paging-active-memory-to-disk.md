@@ -27,7 +27,7 @@ ms.locfileid: "54784443"
 Id. de regla | DA0014 |  
 | Categoría | Memoria y paginación |  
 | Método de generación de perfiles | Todos los |  
-| Mensaje | Se está produciendo una frecuencia extremadamente alta de paginación de memoria activa en el disco. Puede que la aplicación esté enlazada a memoria.  
+| Mensaje | Se está produciendo una frecuencia extremadamente alta de paginación de memoria activa en el disco. Puede que la aplicación esté enlazada a memoria.|  
 | Tipo de regla | Advertencia |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 25 ejemplos para activar esta regla.  

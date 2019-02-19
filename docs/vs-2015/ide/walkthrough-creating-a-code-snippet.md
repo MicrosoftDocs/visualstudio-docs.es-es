@@ -26,7 +26,7 @@ ms.locfileid: "54790118"
 # <a name="walkthrough-creating-a-code-snippet"></a>Tutorial: Crear un fragmento de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hacer es crear un archivo XML, rellenar los elementos correspondientes y agregarle código. También puede agregar referencias y parámetros de reemplazo en el código. Puede agregar el fragmento de código a la instalación de Visual Studio mediante el botón Importar del Administrador de fragmentos de código (**Herramientas**, Administrador de fragmentos de código…).  
+Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hacer es crear un archivo XML, rellenar los elementos correspondientes y agregarle código. También puede agregar referencias y parámetros de reemplazo en el código. Puede agregar el fragmento de código a la instalación de Visual Studio mediante el botón Importar del Administrador de fragmentos de código (**Herramientas/Administrador de fragmentos de código**).  
   
 > [!TIP]
 >  Para obtener información sobre cómo escribir fragmentos de código más fácilmente, busque el sitio Web de CodePlex para herramientas de la Comunidad, como [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
@@ -73,7 +73,7 @@ Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hace
   
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>Para agregar un fragmento de código a Visual Studio  
   
-1.  Puede agregar sus propios fragmentos de código a la instalación de Visual Studio mediante el Administrador de fragmentos de código. Abra el Administrador de fragmentos de código (**Herramientas**, Administrador de fragmentos de código…).  
+1.  Puede agregar sus propios fragmentos de código a la instalación de Visual Studio mediante el Administrador de fragmentos de código. Abra el Administrador de fragmentos de código (**Herramientas/Administrador de fragmentos de código**).  
   
 2.  Haga clic en el botón **Importar**.  
   
