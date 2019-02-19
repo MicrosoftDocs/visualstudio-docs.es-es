@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787081"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Clase de Visual C++ en el Diseñador de clases
@@ -36,7 +36,7 @@ class A {};
 class B : A {};  
 ```  
   
- También puede arrastrar únicamente la clase B al diagrama de clases, hacer clic con el botón derecho en la forma de clase de B y hacer clic en **Mostrar clases base**. De este modo se muestra su clase base: R.  
+ También puede arrastrar únicamente la clase B al diagrama de clases, hacer clic con el botón derecho en la forma de clase de B y hacer clic en **Mostrar clases base**. De este modo se muestra su clase base: A.  
   
 ## <a name="multiple-inheritance"></a>Herencia múltiple  
  El Diseñador de clases admite la visualización de relaciones de herencia de varias clases. La *herencia múltiple* se usa cuando una clase derivada tiene atributos de más de una clase base. A continuación se muestra un ejemplo de herencia múltiple:  

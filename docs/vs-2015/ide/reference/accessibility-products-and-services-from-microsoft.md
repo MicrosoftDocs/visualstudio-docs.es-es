@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d07901a14b61ccddf8d4799828c6d42bddf7f94b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794359"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Servicios y productos de Microsoft para mejorar la accesibilidad
@@ -63,7 +63,7 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
   
 |Recording for the Blind & Dyslexic, Inc.|  
 |----------------------------------------------|  
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Número de teléfono desde los Estados Unidos: (800) 221-4792<br /><br /> Número de teléfono desde fuera de los Estados Unidos y Canadá: (609) 452-0606<br /><br /> Fax: (609) 987-8116<br /><br /> Sitio web de Recording for the Blind & Dyslexic: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Número de teléfono en los Estados Unidos: (800) 221-4792<br /><br /> Número de teléfono desde fuera de los Estados Unidos y Canadá: (609) 452-0606<br /><br /> Fax: (609) 987 8116<br /><br /> Sitio web de Recording for the Blind & Dyslexic: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
   
  Las direcciones web pueden cambiar, por lo que quizás no pueda conectarse al sitio o los sitios web aquí mencionados.  
   

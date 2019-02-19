@@ -27,7 +27,7 @@ ms.locfileid: "54770778"
 Id. de regla | DA0012 |  
 | Categoría |. Uso de .NET Framework |  
 | Métodos de generación de perfiles | Muestreo |  
-| Mensaje | Se puede estar usando reflexión en exceso. Se trata de una operación que utiliza muchos recursos.  
+| Mensaje | Se puede estar usando reflexión en exceso. Es una operación que consume muchos recursos.|  
 | Tipo de regla | Advertencia |  
   
 ## <a name="cause"></a>Motivo  

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Busque la clave de producto | Microsoft Docs
+title: 'Cómo: encontrar la clave de producto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -13,13 +13,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: c4eb2b40d6f61cefe0b8d80cafba84ebdf0dcedc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793944"
 ---
-# <a name="how-to-locate-the-visual-studio-product-key"></a>Procedimiento Busque la clave de producto de Visual Studio
+# <a name="how-to-locate-the-visual-studio-product-key"></a>Cómo: Encontrar la clave de producto de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quizás desee buscar la clave del producto para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cuando esté trabajando con soporte al cliente, realizando una actualización de una versión de prueba o actualizando sus propios registros.
@@ -35,4 +35,4 @@ Quizás desee buscar la clave del producto para [!INCLUDE[vsprvs](../includes/vs
     -   Documentación u otra comunicación del proveedor al que compró el software.
 
 ## <a name="see-also"></a>Vea también
- [Cómo: Actualización desde una edición de prueba de Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [instalar Visual Studio](../install/install-visual-studio-2015.md) [notas sobre licencias de MSDN y Visual Studio](http://go.microsoft.com/fwlink/?LinkId=191417)
+ [Cómo: actualizar desde una edición de prueba de Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [instalar Visual Studio](../install/install-visual-studio-2015.md) [notas sobre licencias de MSDN y Visual Studio](http://go.microsoft.com/fwlink/?LinkId=191417)

@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767997"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de opciones, Propiedades de nodo Editor de texto
@@ -58,7 +58,7 @@ En este documento, se describen algunas páginas (o colecciones de propiedades) 
 |WordWrap|Get/Set (Boolean)|Determina si se ajustan las líneas largas en los límites de las palabras. Si se establece como `true`, el elemento de propiedades `VirtualSpace` (de esta lista) se establecerá en `false`.|  
 |WordWrapGlyphs|Get/Set (Boolean)|Muestra un glifo al final de una línea; esto indica que la línea se ajusta a la línea siguiente.|  
 |EnableLeftClickForURLs|Get/Set (Boolean)|Determina si el editor subraya las URL y permite efectuar un solo clic con el botón primario del mouse para saltar a la URL del explorador web registrado en el sistema.|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina el estilo de sangría: Predeterminado, Inteligente o Ninguno.|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina el estilo de sangría: Default, Smart o None.|  
 |TabSize|Get/Set (Long)|Representa el número de espacios a los que equivale un tabulador. Si se selecciona un entero fuera del intervalo de 1 a 60 (incluidos), se producirá un error.|  
 |InsertTabs|Get/Set (Boolean)|Si es `True`, se utilizan caracteres de tabulación al aplicar sangría.|  
 |IndentSize|Get/Set (Long)|Representa el número de espacios a los que equivale un nivel de sangría. Si se selecciona un valor entero fuera del intervalo de 1 a 60 (incluidos), se producirá un error.|  
