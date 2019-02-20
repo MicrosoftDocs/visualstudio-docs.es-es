@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 942007063ffa5ce6f24963067b7707495faa84b9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935100"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318815"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -72,7 +72,7 @@ Para más información sobre la nueva experiencia de instalación, incluidas ins
 
 **Novedad de la versión 15.3**: hemos realizado más de 1700 correcciones de destino para mejorar la compatibilidad entre Visual Studio y las tecnologías de asistencia que muchos clientes usan. Existen docenas de escenarios que son más compatibles que nunca con lectores de pantalla, temas de alto contraste y otras tecnologías de ayuda. El depurador, el editor y el shell también se han mejorado considerablemente.
 
-Para más información, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
+Para más información, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
 
 ## <a name="performance-and-productivity"></a>Rendimiento y productividad
 
@@ -80,7 +80,7 @@ Para más información, vea la entrada de blog [Accessibility improvements in Vi
 
 Presentamos un nuevo servicio de identidad en Visual Studio que le permite compartir cuentas de usuario en Team Explorer, Azure Tools, publicar contenido en Microsoft Store y mucho más.
 
-También puede permanecer más tiempo con la sesión abierta. Visual Studio no le pedirá que vuelva a iniciar sesión cada 12 horas. Para obtener más información, vea la publicación del blog [Fewer Visual Studio Sign-in Prompts](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) (Menos mensajes emergentes de inicio de sesión en Visual Studio).
+También puede permanecer más tiempo con la sesión abierta. Visual Studio no le pedirá que vuelva a iniciar sesión cada 12 horas. Para obtener más información, vea la publicación del blog [Fewer Visual Studio Sign-in Prompts](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/) (Menos mensajes emergentes de inicio de sesión en Visual Studio).
 
 ### <a name="start-visual-studio-faster"></a>Iniciar Visual Studio más rápido
 
@@ -131,7 +131,7 @@ Las pruebas automatizadas son una parte fundamental de cualquier canalización d
 
 Para más información sobre las pruebas automatizadas, vea la publicación del blog [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (Canalización de CI/CD para pruebas automatizadas en DevOps).
 
-Para obtener más información sobre las novedades de la extensión de DevLabs de [Herramientas de entrega continua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), vea la entrada de blog [Commit with Confidence: Commit Time Code Quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) (Confirmar con confianza: calidad del código en tiempo de confirmación).
+Para obtener más información sobre las novedades de la extensión de DevLabs de [Herramientas de entrega continua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), vea la entrada de blog [Commit with Confidence: Commit Time Code Quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/) (Confirmar con confianza: calidad del código en tiempo de confirmación).
 
 ### <a name="visual-studio-ide-enhancements"></a>Mejoras del IDE de Visual Studio
 
@@ -188,7 +188,7 @@ Se ha actualizado la experiencia de navegación para ayudarle a llegar de A a B 
 
   ![Visualizador de estructura de Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Para más información sobre las características de productividad nuevas, consulte el blog de Mark Wilson-Thomas sobre la [productividad en Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/).
+Para más información sobre las características de productividad nuevas, consulte el blog de Mark Wilson-Thomas sobre la [productividad en Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/).
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -212,7 +212,7 @@ El nuevo asistente de excepciones le ayuda a ver la información de excepciones 
 
 ![Cuadro de diálogo Nuevo asistente de excepciones en Visual Studio](media/vs2017ide-ExceptionHelper.png)
 
-Para obtener más información, vea la publicación del blog [Use the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar el nuevo asistente de excepciones en Visual Studio).
+Para obtener más información, vea la publicación del blog [Use the New Exception Helper in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar el nuevo asistente de excepciones en Visual Studio).
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Instantáneas y step-back de IntelliTrace
 
@@ -328,7 +328,7 @@ Incluido con todas las ediciones de Visual Studio 2017:
 
 * [Búsqueda de SQL de Redgate](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) aumenta la productividad al permitir encontrar rápidamente fragmentos y objetos de SQL en varias bases de datos.
 
-Para más información, consulte la entrada de blog [Redgate Data Tools en Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/).
+Para más información, consulte la entrada de blog [Redgate Data Tools en Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/).
 
 ### <a name="net-core"></a>Núcleo de .NET
 

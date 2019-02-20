@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a251698b7c7a2ff1247bb03902deaa7b27f18a49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935126"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318321"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
 
@@ -107,7 +107,7 @@ Todos los proyectos de prueba deben incluir la referencia de NuGet del adaptador
 
 **El proyecto de prueba {} no hace referencia a ningún adaptador NuGet de .NET. La detección o ejecución de pruebas podría no funcionar para este proyecto. Se recomienda hacer referencia a los adaptadores de prueba de NuGet en cada proyecto de prueba de .NET de la solución.**
 
-En lugar de usar las extensiones del adaptador de prueba, los proyectos deben usar paquetes de NuGet del adaptador de prueba. Este requisito mejora el rendimiento considerablemente y hace que se reduzcan los problemas con la integración continua. Obtenga más información sobre la depreciación de la extensión del adaptador de prueba de .NET en las [notas de la versión](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+En lugar de usar las extensiones del adaptador de prueba, los proyectos deben usar paquetes de NuGet del adaptador de prueba. Este requisito mejora el rendimiento considerablemente y hace que se reduzcan los problemas con la integración continua. Obtenga más información sobre la depreciación de la extensión del adaptador de prueba de .NET en las [notas de la versión](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
 > [!NOTE]
 > Si usa NUnit 2 Test Adapter y no puede migrar a NUnit 3 Test Adapter, puede desactivar este nuevo comportamiento de detección en la versión 15.8 de Visual Studio en **Herramientas** > **Opciones** > **Prueba**.

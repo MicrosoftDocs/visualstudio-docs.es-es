@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bc82ccf47575bf30b8c8e2e3def26746feb998d3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ee6b01e2c154ddebf71f5ae2511ccfe693506db6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912295"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316540"
 ---
 # <a name="test-generation"></a>Generación de pruebas
 
@@ -237,8 +237,8 @@ namespace MyTests
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>Información adicional
 
-* [Prueba para los enlaces de código](https://blogs.msdn.microsoft.com/devops/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
-* [Una prueba para controlarlo todo](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
+* [Prueba para los enlaces de código](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
+* [Una prueba para controlarlo todo](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 

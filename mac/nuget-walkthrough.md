@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 0a98425ba12ae7aba16a2bc6ffa29e701c1b9f11
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.custom: video
+ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948627"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335095"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Incluir un paquete NuGet en el proyecto
 
@@ -113,6 +114,10 @@ En la documentación de NuGet se trata el [uso de NuGet sin confirmar paquetes e
 ![Restauración automática de paquetes](media/nuget-walkthrough-AutoRestore.png)
 
 Consulte la documentación del control de origen de su propiedad para obtener detalles sobre cómo excluir el directorio `packages` del seguimiento.
+
+## <a name="related-video"></a>Vídeo relacionado
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
 ## <a name="see-also"></a>Vea también
 
