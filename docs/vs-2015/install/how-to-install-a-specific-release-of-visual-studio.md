@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Instalar una versión específica | Microsoft Docs
+title: 'Cómo: instalar una versión específica | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -12,13 +12,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756365"
 ---
-# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Procedimiento Instalar una versión específica de Visual Studio
+# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Cómo: Instalar una versión específica de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Actualizamos el programa de instalación de Visual Studio a menudo para que obtenga la versión más reciente y optimizada de nuestras características opcionales.  Sin embargo, si quiere instalar una versión anterior de Visual Studio 2015, como, por ejemplo, una versión anterior a Visual Studio 2015 Update 1 con compatibilidad con iOS, deberá forzar que el programa de instalación de Visual Studio use una versión anterior de los archivos de manifiesto de características. En este artículo se describe cómo hacerlo.
@@ -33,7 +33,7 @@ Actualizamos el programa de instalación de Visual Studio a menudo para que obte
 
 |Edición de Visual Studio 2015|Qué ejecutar|Línea de comandos que se va a usar|Qué hace la configuración|
 |--------------------------------|-----------------|--------------------------|---------------------|
-|Visual Studio Enterprise (última versión pública)|Visual Studio Enterprise con actualizaciones (disponible en [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **Nota:**  El comportamiento predeterminado de esta instalación ofrece las últimas características opcionales y, por lo tanto, no requiere ningún parámetro de línea de comandos.|El programa de instalación de Visual Studio usa el archivo feed.xml más reciente e instala los archivos más recientes|
+|Visual Studio Enterprise (última versión pública)|Visual Studio Enterprise con actualizaciones (disponible en [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **Nota:** El comportamiento predeterminado de esta instalación ofrece las últimas características opcionales y, por lo tanto, no requiere ningún parámetro de línea de comandos.|El programa de instalación de Visual Studio usa el archivo feed.xml más reciente e instala los archivos más recientes|
 |Visual Studio Enterprise Update 3 (versión Update 3 original sin ninguna actualización posterior)|Visual Studio Enterprise RTM (disponible en la [página de descargas de suscripciones a MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160628.2/enu/feed.xml`|Instalación de Visual Studio usará el archivo feed.xml que estaba disponible cuando publique Update 3|
 |Visual Studio Enterprise Update 2 (original Update 2, pero con actualizaciones de ese día previamente Update 3)|Visual Studio Enterprise RTM (disponible en la [página de descargas de suscripciones a MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160620.2/enu/feed.xml`|El programa de instalación de Visual Studio usará el archivo feed.xml que era el actual antes del lanzamiento de Update 3|
 |Visual Studio Enterprise (la actualización 2 original sin las actualizaciones Update 2 era)|Visual Studio Enterprise RTM (disponible en la [página de descargas de suscripciones a MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Instalación de Visual Studio usará el archivo feed.xml que estaba disponible cuando publique Update 2|

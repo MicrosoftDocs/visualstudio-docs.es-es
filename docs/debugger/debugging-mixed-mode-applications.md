@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b8f0f2f09d0ee0741fea4af2477ce0e95e00db0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ac2a9817ceae660f42cbed0fdbfb364ddc79c45
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998461"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318698"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Depurar aplicaciones en modo mixto
 Una aplicación en modo mixto es cualquier aplicación que combine código nativo (C++) y código administrado (como Visual Basic, Visual C# o C++ administrado que se ejecute en Common Language Runtime). La depuración de aplicaciones en modo mixto es un proceso en gran medida transparente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; no difiere mucho de la depuración de una aplicación en modo individual. Sin embargo, existen consideraciones especiales.
@@ -36,7 +36,7 @@ Una aplicación en modo mixto es cualquier aplicación que combine código nativ
 Para habilitar editar y continuar para C++, vea [cómo habilitar y deshabilitar Editar y continuar](../debugger/how-to-enable-and-disable-edit-and-continue.md).
 
 > [!NOTE]
-> Para usar Editar y Continuar para C++ en Visual Studio 2013, tiene que revertir al motor de depuración heredado. Vea [Switching to Managed Compatibility Mode in Visual Studio 2013](https://blogs.msdn.microsoft.com/devops/2013/10/16/switching-to-managed-compatibility-mode-in-visual-studio-2013/) (Cambiar al modo de compatibilidad administrado en Visual Studio 2013) en el blog Microsoft Application Lifecycle Management.
+> Para usar Editar y Continuar para C++ en Visual Studio 2013, tiene que revertir al motor de depuración heredado. Vea [Switching to Managed Compatibility Mode in Visual Studio 2013](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/) (Cambiar al modo de compatibilidad administrado en Visual Studio 2013) en el blog Microsoft Application Lifecycle Management.
 
 ## <a name="property-evaluation-in-mixed-mode-applications"></a>Evaluación de propiedades en aplicaciones en modo mixto
  En las aplicaciones en modo mixto, la evaluación de propiedades por parte del depurador es una operación costosa. En consecuencia, las operaciones de depuración como la ejecución paso a paso pueden parecer lentas. Para obtener más información, vea [Code Stepping Overview](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)) (Información general sobre cómo ejecutar código). Si se produce un rendimiento muy bajo en la depuración en modo mixto, puede desactivar la evaluación de propiedades en las ventanas del depurador.

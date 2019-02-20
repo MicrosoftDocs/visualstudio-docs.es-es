@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2f709322c847057e31b89260a7cfae99e46f7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016539"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318425"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias de productividad y trucos del depurador de Visual Studio
 
@@ -77,9 +77,9 @@ Es fácil ver las variables mediante las ventanas del depurador, como la **inspe
 3. Busque la variable en el **variables locales** ventana (**Depurar > Windows > variables locales**), haga clic en la variable y seleccione **Make Object ID**.
 
     ![Crear un identificador de objeto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  Debería ver el símbolo **$** junto con un número en la ventana **Locales** . Esta variable es el identificador de objeto.
-  
+
 5.  Haga clic en la variable de Id. de objeto y elija **Agregar inspección**.
 
 Para obtener más información, consulte [crear un identificador de objeto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
@@ -123,11 +123,11 @@ Si tiene que depurar los tipos de problemas que son comunes a las aplicaciones m
 #### <a name="to-show-threads-in-your-source-code"></a>Para mostrar los subprocesos en el código fuente
 
 1.  Durante la depuración, haga clic en el **Mostrar subprocesos en código fuente** botón ![Mostrar subprocesos en código fuente](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") en el **depurar** barra de herramientas.
-  
+
 2.  Examine el margen interno izquierdo de la ventana. En esta línea, verá un *marcador de subproceso* icono ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker") que es similar a dos hilos. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
 
     Tenga en cuenta que un marcador de subproceso es posible que se ocultan parcialmente por un punto de interrupción.
-  
+
 3.  Desplace el puntero sobre el marcador de subproceso. Aparece la Información sobre datos. En ella se indican el nombre y el número de id. de subproceso de cada subproceso detenido.
 
     También puede ver la ubicación de los subprocesos en la [ventana Pilas paralelas](../debugger/get-started-debugging-multithreaded-apps.md).
@@ -162,8 +162,8 @@ Para averiguar cómo el depurador clasifica el código como código de usuario, 
 
 Para otras recomendaciones y trucos y obtener información más detallada, vea estas entradas de blog:
 
-- [7 ataques conocidos menor para la depuración en Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 gemas ocultas de Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 ataques conocidos menor para la depuración en Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 gemas ocultas de Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Vea también
 [Métodos abreviados de teclado](../ide/tips-and-tricks-for-visual-studio.md)

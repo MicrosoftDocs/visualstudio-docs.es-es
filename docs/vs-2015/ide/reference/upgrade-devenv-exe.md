@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 465c90736f5470f48d47336bc916ca3cb2c09b6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54779351"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
@@ -44,7 +44,7 @@ devenv SolutionFile | ProjectFile /upgrade
   
  Se deben desproteger las soluciones o los proyectos bajo el control de código fuente antes de poderse actualizar.  
   
- Al utilizar el modificador `/upgrade` no se inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Los resultados de la actualización se pueden ver en el informe de actualización para el lenguaje de desarrollo de la solución o el proyecto. No se devuelve ninguna información de error o de uso. Para obtener más información sobre cómo actualizar proyectos en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], vea [Cómo: Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
+ Al utilizar el modificador `/upgrade` no se inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Los resultados de la actualización se pueden ver en el informe de actualización para el lenguaje de desarrollo de la solución o el proyecto. No se devuelve ninguna información de error o de uso. Para obtener más información sobre cómo actualizar proyectos en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], consulte [Cómo: solucionar problemas de incorrecta Visual Studio actualizaciones de proyecto](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se actualiza un archivo de solución denominado "MyProject.sln" en la carpeta predeterminada para las soluciones de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -54,5 +54,5 @@ devenv "MyProject.sln" /upgrade
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
+ [Procedimiento para solucionar problemas relativos a una actualización incorrecta de un proyecto de Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
  [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)

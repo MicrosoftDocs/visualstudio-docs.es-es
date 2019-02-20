@@ -12,128 +12,128 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e50952247d441b9fbc3132074b9b17c201d34dad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: c0e1bc647f8455eeaa5b31a9ddae99b2ae7d2de3
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931399"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227662"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
-Permite leer las propiedades de un conjunto de propiedades DIA persistentes.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-IDiaPropertyStorage : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- La tabla siguiente muestran los métodos de `IDiaPropertyStorage`.  
-  
-|Método|Descripción|  
-|------------|-----------------|  
-|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|Obtiene un puntero a un enumerador para las propiedades dentro de este conjunto.|  
-|[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|Lee `BOOL` valores en un conjunto de propiedades.|  
-|[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|Lee `BSTR` valores en un conjunto de propiedades.|  
-|[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|Lee `DWORD` valores en un conjunto de propiedades.|  
-|[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|Lee `LONG` valores en un conjunto de propiedades.|  
-|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|Lee los valores de propiedad en un conjunto de propiedades.|  
-|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Obtiene correspondiente para los nombres de cadena según identificadores de propiedad.|  
-|[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Lee `ULONGLONG` valores en un conjunto de propiedades.|  
-  
-## <a name="remarks"></a>Comentarios  
- Cada propiedad en un conjunto de propiedades se identifica mediante un identificador de propiedad (ID), cuatro bytes `ULONG` valor único para ese conjunto. Las propiedades expuestas a través de la `IDiaPropertyStorage` interfaz corresponden a las propiedades disponibles en la interfaz primaria. Por ejemplo, las propiedades de la [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interfaz puede tener acceso por nombre a través de la `IDiaPropertyStorage` interfaz (sin embargo, tenga en cuenta que aun cuando la propiedad puede ser accesible, no significa la propiedad es válida para un determinado `IDiaSymbol` objeto).  
-  
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Esta interfaz se obtiene mediante una llamada a la `QueryInterface` método en otra interfaz. Se pueden consultar las siguientes interfaces para el `IDiaPropertyStorage` interfaz:  
-  
--   [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
-  
--   [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)  
-  
--   [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)  
-  
--   [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)  
-  
--   [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-  
--   [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)  
-  
--   [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
-  
-## <a name="example"></a>Ejemplo  
- En este ejemplo se muestra una función que muestra todas las propiedades expuestas por la `IDiaPropertyStorage` objeto. Consulte la [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfaz para obtener un ejemplo de cómo el `IDiaPropertyStorage` interfaz se obtiene desde el [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interfaz.  
-  
-```C++  
-void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)  
-{  
-    IEnumSTATPROPSTG* pEnumProps;  
-    STATPROPSTG       prop;  
-    DWORD             celt = 1;  
-  
-    if (pPropertyStorage->Enum(&pEnumProps) == S_OK)  
-    {  
-        while (pEnumProps->Next(celt, &prop, &celt) == S_OK)  
-        {  
-            PROPSPEC pspec = { PRSPEC_PROPID, prop.propid };  
-            PROPVARIANT vt = { VT_EMPTY };  
-  
-            if (pPropertyStorage->ReadMultiple( 1, &pspec, &vt) == S_OK)  
-            {  
-                switch( vt.vt ){  
-                    case VT_BOOL:  
-                        wprintf( L"%32s:\t %s\n", prop.lpwstrName, vt.bVal ? L"true" : L"false" );  
-                        break;  
-                    case VT_I2:  
-                        wprintf( L"%32s:\t %d\n", prop.lpwstrName, vt.iVal );  
-                        break;  
-                    case VT_UI2:  
-                        wprintf( L"%32s:\t %d\n", prop.lpwstrName, vt.uiVal );  
-                        break;  
-                    case VT_I4:  
-                        wprintf( L"%32s:\t %d\n", prop.lpwstrName, vt.intVal );  
-                        break;  
-                    case VT_UI4:  
-                        wprintf( L"%32s:\t 0x%0x\n", prop.lpwstrName, vt.uintVal );  
-                        break;  
-                    case VT_UI8:  
-                        wprintf( L"%32s:\t 0x%x\n", prop.lpwstrName, vt.uhVal.QuadPart );  
-                        break;  
-                    case VT_BSTR:  
-                        wprintf( L"%32s:\t %s\n", prop.lpwstrName, vt.bstrVal );  
-                        break;  
-                    case VT_UNKNOWN:  
-                        wprintf( L"%32s:\t %p\n", prop.lpwstrName, vt.punkVal );  
-                        break;  
-                    case VT_SAFEARRAY:  
-                        break;  
-                    default:  
-                       break;  
-                }  
-                VariantClear((VARIANTARG*) &vt);  
-            }  
-        }  
-        pEnumProps->Release();  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: dia2.h  
-  
- Biblioteca: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>Vea también  
- [Interfaces (SDK de acceso a la interfaz de depuración)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+Permite leer las propiedades de un conjunto de propiedades DIA persistentes.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+IDiaPropertyStorage : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
+La tabla siguiente muestran los métodos de `IDiaPropertyStorage`.
+
+|Método|Descripción|
+|------------|-----------------|
+|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|Obtiene un puntero a un enumerador para las propiedades dentro de este conjunto.|
+|[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|Lee `BOOL` valores en un conjunto de propiedades.|
+|[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|Lee `BSTR` valores en un conjunto de propiedades.|
+|[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|Lee `DWORD` valores en un conjunto de propiedades.|
+|[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|Lee `LONG` valores en un conjunto de propiedades.|
+|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|Lee los valores de propiedad en un conjunto de propiedades.|
+|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Obtiene correspondiente para los nombres de cadena según identificadores de propiedad.|
+|[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Lee `ULONGLONG` valores en un conjunto de propiedades.|
+
+## <a name="remarks"></a>Comentarios
+Cada propiedad en un conjunto de propiedades se identifica mediante un identificador de propiedad (ID), cuatro bytes `ULONG` valor único para ese conjunto. Las propiedades expuestas a través de la `IDiaPropertyStorage` interfaz corresponden a las propiedades disponibles en la interfaz primaria. Por ejemplo, las propiedades de la [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interfaz puede tener acceso por nombre a través de la `IDiaPropertyStorage` interfaz (sin embargo, tenga en cuenta que aun cuando la propiedad puede ser accesible, no significa la propiedad es válida para un determinado `IDiaSymbol` objeto).
+
+## <a name="notes-for-callers"></a>Notas para los llamadores
+Esta interfaz se obtiene mediante una llamada a la `QueryInterface` método en otra interfaz. Se pueden consultar las siguientes interfaces para el `IDiaPropertyStorage` interfaz:
+
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+
+## <a name="example"></a>Ejemplo
+En este ejemplo se muestra una función que muestra todas las propiedades expuestas por la `IDiaPropertyStorage` objeto. Consulte la [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfaz para obtener un ejemplo de cómo el `IDiaPropertyStorage` interfaz se obtiene desde el [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interfaz.
+
+```C++
+void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
+{
+    IEnumSTATPROPSTG* pEnumProps;
+    STATPROPSTG       prop;
+    DWORD             celt = 1;
+
+    if (pPropertyStorage->Enum(&pEnumProps) == S_OK)
+    {
+        while (pEnumProps->Next(celt, &prop, &celt) == S_OK)
+        {
+            PROPSPEC pspec = { PRSPEC_PROPID, prop.propid };
+            PROPVARIANT vt = { VT_EMPTY };
+
+            if (pPropertyStorage->ReadMultiple( 1, &pspec, &vt) == S_OK)
+            {
+                switch( vt.vt ){
+                    case VT_BOOL:
+                        wprintf( L"%32s:\t %s\n", prop.lpwstrName, vt.bVal ? L"true" : L"false" );
+                        break;
+                    case VT_I2:
+                        wprintf( L"%32s:\t %d\n", prop.lpwstrName, vt.iVal );
+                        break;
+                    case VT_UI2:
+                        wprintf( L"%32s:\t %d\n", prop.lpwstrName, vt.uiVal );
+                        break;
+                    case VT_I4:
+                        wprintf( L"%32s:\t %d\n", prop.lpwstrName, vt.intVal );
+                        break;
+                    case VT_UI4:
+                        wprintf( L"%32s:\t 0x%0x\n", prop.lpwstrName, vt.uintVal );
+                        break;
+                    case VT_UI8:
+                        wprintf( L"%32s:\t 0x%x\n", prop.lpwstrName, vt.uhVal.QuadPart );
+                        break;
+                    case VT_BSTR:
+                        wprintf( L"%32s:\t %s\n", prop.lpwstrName, vt.bstrVal );
+                        break;
+                    case VT_UNKNOWN:
+                        wprintf( L"%32s:\t %p\n", prop.lpwstrName, vt.punkVal );
+                        break;
+                    case VT_SAFEARRAY:
+                        break;
+                    default:
+                       break;
+                }
+                VariantClear((VARIANTARG*) &vt);
+            }
+        }
+        pEnumProps->Release();
+    }
+}
+```
+
+## <a name="requirements"></a>Requisitos
+Encabezado: Dia2.h
+
+Biblioteca: diaguids.lib
+
+DLL: msdia80.dll
+
+## <a name="see-also"></a>Vea también
+[Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
+[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
+[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)  
+[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)  
+[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)  
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
+[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)  
+[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
+[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

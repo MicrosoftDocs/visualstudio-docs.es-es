@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Probar y depurar un visualizador | Microsoft Docs
+title: 'Cómo: comprobar y depurar un visualizador | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,43 +17,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89a7cd7648b7e04e82e5e490f4958ad5a97f6521
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bd0c483f7fb4941430355ef287bce973e1a1659e
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936542"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227137"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>Procedimiento Prueba y depuración de un visualizador
-Cuando se ha escrito un visualizador, es necesario depurarlo y comprobarlo.  
-  
- Una manera de comprobar un visualizador es instalarlo en Visual Studio y llamarlo desde una ventana del depurador. Vea [Cómo: Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md). Si lo hace, será necesario usar una segunda instancia de Visual Studio para asociar y depurar el visualizador, que se ejecuta en la primera instancia del depurador.  
-  
- Una manera más fácil de depurar un visualizador es ejecutarlo desde un controlador de prueba. Las API del visualizador facilitan la creación de este tipo de controlador, denominado *host de desarrollo del visualizador*.  
-  
-### <a name="to-create-a-visualizer-development-host"></a>Para crear un host de desarrollo del visualizador  
-  
-1.  En la clase del depurador, incluya un método estático que cree un objeto <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> y llame al método Show:  
-  
+# <a name="how-to-test-and-debug-a-visualizer"></a>Cómo: Comprobar y depurar un visualizador
+Cuando se ha escrito un visualizador, es necesario depurarlo y comprobarlo.
+
+Una manera de comprobar un visualizador es instalarlo en Visual Studio y llamarlo desde una ventana del depurador. (Consulte [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md).) Si lo hace, será necesario usar una segunda instancia de Visual Studio para asociar y depurar el visualizador, que se ejecuta en la primera instancia del depurador.
+
+Una manera más fácil de depurar un visualizador es ejecutarlo desde un controlador de prueba. Las API del visualizador facilitan la creación de este tipo de controlador, denominado *host de desarrollo del visualizador*.
+
+### <a name="to-create-a-visualizer-development-host"></a>Para crear un host de desarrollo del visualizador
+
+1. En la clase del depurador, incluya un método estático que cree un objeto <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> y llame al método Show:
+
     ```csharp
-    public static void TestShowVisualizer(object objectToVisualize)  
-    {  
-       VisualizerDevelopmentHost myHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(DebuggerSide));  
-       myHost.ShowVisualizer();  
-    }  
-    ```  
-  
-     Los parámetros utilizados para construir el host son el objeto de datos que aparecerá en el visualizador (`objectToVisualize`) y el tipo de la clase del depurador.  
-  
-2.  Agregue la instrucción siguiente para llamar a `TestShowVisualizer`. Si el visualizador se creó en una biblioteca de clases, es necesario crear un ejecutable que llame a la biblioteca de clases y coloque esta instrucción en el ejecutable:  
-  
+    public static void TestShowVisualizer(object objectToVisualize)
+    {
+        VisualizerDevelopmentHost myHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(DebuggerSide));
+        myHost.ShowVisualizer();
+    }
+    ```
+
+    Los parámetros utilizados para construir el host son el objeto de datos que aparecerá en el visualizador (`objectToVisualize`) y el tipo de la clase del depurador.
+
+2. Agregue la instrucción siguiente para llamar a `TestShowVisualizer`. Si el visualizador se creó en una biblioteca de clases, es necesario crear un ejecutable que llame a la biblioteca de clases y coloque esta instrucción en el ejecutable:
+
     ```csharp
-    DebuggerSide.TestShowVisualizer(myString);  
-    ```  
-  
-     Para obtener un ejemplo más completo, vea [Tutorial: Escritura de un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
-  
-## <a name="see-also"></a>Vea también  
- [Tutorial: Escritura de un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Cómo: Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md)   
- [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)
+    DebuggerSide.TestShowVisualizer(myString);
+    ```
+
+    Para obtener un ejemplo más completo, vea [Tutorial: escribir un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
+
+## <a name="see-also"></a>Vea también
+[Tutorial: Escribir un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+[Cómo: Instalar un visualizador](../debugger/how-to-install-a-visualizer.md)  
+[Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)

@@ -322,6 +322,10 @@ items:
           items:
           - name: Cambiar signatura del método
             href: ide/reference/change-method-signature.md
+          - name: Conversión de un tipo anónimo en clase
+            href: ide/reference/convert-anonymous-type-to-class.md
+          - name: Conversión de un tipo anónimo en tupla
+            href: ide/reference/convert-anonymous-type-to-tuple.md
           - name: Convertir un bucle for en instrucción foreach (y a la inversa)
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: Convertir un método Get en propiedad (y a la inversa)
@@ -340,6 +344,8 @@ items:
             href: ide/reference/move-declaration-near-reference.md
           - name: Trasladar tipo a archivo coincidente
             href: ide/reference/move-type-to-matching-file.md
+          - name: Extracción de miembros
+            href: ide/reference/pull-members-up.md
           - name: Quitar código inaccesible
             href: ide/reference/remove-unreachable-code.md
           - name: Cambiar nombre
@@ -348,6 +354,8 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Usar un tipo explícito
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: Encapsulado, sangría y alineación de parámetros
+            href: ide/reference/wrap-align-indent-parameters.md
         - name: 'Tutorial: Generación de código a partir del uso'
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: Sugerencias de productividad
@@ -508,6 +516,11 @@ items:
       href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: Trabajar con archivos XML y XSLT
       href: xml-tools/xml-tools-in-visual-studio.md
+    - name: Desarrollo de aplicaciones internacionales
+      href: ide/globalizing-and-localizing-applications.md
+      items:
+      - name: Lenguajes bidireccionales
+        href: ide/creating-applications-in-bi-directional-languages.md
     - name: Otros tutoriales
       items:
       - name: Crear una aplicación WPF con C# o Visual Basic
@@ -696,29 +709,6 @@ items:
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
     - name: Recursos para diseñar aplicaciones accesibles
       href: ide/reference/resources-for-designing-accessible-applications.md
-  - name: Globalización y localización de aplicaciones
-    href: ide/globalizing-and-localizing-applications.md
-    items:
-    - name: Introducción a aplicaciones internacionales basadas en .NET Framework
-      href: ide/introduction-to-international-applications-based-on-the-dotnet-framework.md
-    - name: Localización de aplicaciones
-      href: ide/localizing-applications.md
-      items:
-      - name: Organización jerárquica de recursos para la localización
-        href: ide/hierarchical-organization-of-resources-for-localization.md
-      - name: Seguridad y ensamblados satélite localizados
-        href: ide/security-and-localized-satellite-assemblies.md
-      - name: Número de versión de los ensamblados principales y los ensamblados satélite localizados
-        href: ide/version-numbers-for-main-and-localized-satellite-assemblies.md
-      - name: Idiomas de los recursos neutros para la localización
-        href: ide/neutral-resources-languages-for-localization.md
-    - name: Globalización de aplicaciones
-      href: ide/globalizing-applications.md
-      items:
-      - name: Clases específicas de las referencias culturales para Windows Forms y formularios Web Forms globales
-        href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
-    - name: Creación de aplicaciones en lenguajes bidireccionales
-      href: ide/creating-applications-in-bi-directional-languages.md
 - name: Referencia
   items:
   - name: Elementos generales de la interfaz de usuario
@@ -1145,9 +1135,9 @@ items:
   - name: Hable con nosotros
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 69a36121297349edd6a3e79880935a9b3ed6fe75
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: d81e33771d4e5b8333c7dddf7311e63488a55604
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424621"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335589"

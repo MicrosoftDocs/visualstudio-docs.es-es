@@ -12,60 +12,60 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 756a1b9fde9c85ca914b00924cb13191859be78e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 482c5f7bd0565c3b6ece124c88bd5e225b4cc7dd
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952306"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318529"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
-Designa los tipos de código thunk.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-typedef enum THUNK_ORDINAL {   
-   THUNK_ORDINAL_NOTYPE,  
-   THUNK_ORDINAL_ADJUSTOR,  
-   THUNK_ORDINAL_VCALL,  
-   THUNK_ORDINAL_PCODE,  
-   THUNK_ORDINAL_LOAD   
-  
-   // trampoline thunk ordinals - only for use in Trampoline thunk symbols  
-   THUNK_ORDINAL_TRAMP_INCREMENTAL,  
-   THUNK_ORDINAL_TRAMP_BRANCHISLAND,  
-} THUNK_ORDINAL;  
-```  
-  
-## <a name="elements"></a>Elementos  
- THUNK_ORDINAL_NOTYPE  
- Thunk estándar.  
-  
- THUNK_ORDINAL_ADJUSTOR  
- Un `this` código thunk ajustador.  
-  
- THUNK_ORDINAL_VCALL  
- Código thunk de llamada virtual.  
-  
- THUNK_ORDINAL_PCODE  
- Código thunk de código.  
-  
- THUNK_ORDINAL_LOAD  
- Código thunk de carga de retraso.  
-  
- THUNK_ORDINAL_TRAMP_INCREMENTAL  
- Código thunk de cama elástica incremental (un código thunk de cama elástica se usa para hacer rebotar la llamadas desde el espacio de memoria de uno a otro).  
-  
- THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- Código thunk cama elástica de punto de bifurcación.  
-  
-## <a name="remarks"></a>Comentarios  
- Los valores de esta enumeración se devuelven en una llamada a la [Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) método.  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: cvconst.h  
-  
-## <a name="see-also"></a>Vea también  
- [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
+Designa los tipos de código thunk.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+typedef enum THUNK_ORDINAL {
+    THUNK_ORDINAL_NOTYPE,
+    THUNK_ORDINAL_ADJUSTOR,
+    THUNK_ORDINAL_VCALL,
+    THUNK_ORDINAL_PCODE,
+    THUNK_ORDINAL_LOAD
+
+    // trampoline thunk ordinals - only for use in Trampoline thunk symbols
+    THUNK_ORDINAL_TRAMP_INCREMENTAL,
+    THUNK_ORDINAL_TRAMP_BRANCHISLAND,
+} THUNK_ORDINAL;
+```
+
+## <a name="elements"></a>Elementos
+THUNK_ORDINAL_NOTYPE  
+Thunk estándar.
+
+THUNK_ORDINAL_ADJUSTOR  
+Un `this` código thunk ajustador.
+
+THUNK_ORDINAL_VCALL  
+Código thunk de llamada virtual.
+
+THUNK_ORDINAL_PCODE  
+Código thunk de código.
+
+THUNK_ORDINAL_LOAD  
+Código thunk de carga de retraso.
+
+THUNK_ORDINAL_TRAMP_INCREMENTAL  
+Código thunk de cama elástica incremental (un código thunk de cama elástica se usa para hacer rebotar la llamadas desde el espacio de memoria de uno a otro).
+
+THUNK_ORDINAL_TRAMP_BRANCHISLAND  
+Código thunk cama elástica de punto de bifurcación.
+
+## <a name="remarks"></a>Comentarios
+Los valores de esta enumeración se devuelven en una llamada a la [Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) método.
+
+## <a name="requirements"></a>Requisitos
+Encabezado: cvconst.h
+
+## <a name="see-also"></a>Vea también
+[Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)  
+[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

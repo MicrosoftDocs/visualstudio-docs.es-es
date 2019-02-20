@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b29907488ba276f3deb18e10cf47a0205501e1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 470212f3b6dc4151b793dcd62b9ff1d39fc2e55b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982889"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316228"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuración remota de un proyecto C# o Visual Basic en Visual Studio
 Para depurar una aplicación de Visual Studio que se ha implementado en un equipo diferente, instalar y ejecutar las herramientas remotas en el equipo donde ha implementado la aplicación, configurar el proyecto para conectarse al equipo remoto desde Visual Studio y, a continuación, ejecute la aplicación.
@@ -98,7 +98,7 @@ El depurador no puede implementar aplicaciones de escritorio de Visual C# o Visu
 
      Verá que la ventana principal de la aplicación de WPF está abierta en el equipo remoto.
   
-14. Si es necesario, tome medidas para el punto de interrupción. Debe ver que el punto de interrupción está activo. Si no lo está, no ha cargado los símbolos para la aplicación. Vuelva a intentar y si esto no funciona, obtener información sobre la carga de símbolos y cómo solucionarlos en [descripción de los archivos de símbolos y Visual Studio Lores](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
+14. Si es necesario, tome medidas para el punto de interrupción. Debe ver que el punto de interrupción está activo. Si no lo está, no ha cargado los símbolos para la aplicación. Vuelva a intentar y si esto no funciona, obtener información sobre la carga de símbolos y cómo solucionarlos en [descripción de los archivos de símbolos y Visual Studio Lores](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/).
   
 15. En la máquina de Visual Studio, verá que la ejecución se detiene en el punto de interrupción.
   
