@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155999"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317229"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Le damos la bienvenida al IDE de Visual Studio | C#
 
@@ -122,18 +122,6 @@ Vamos a configurar Visual Studio para que use la configuración de entorno adapt
 Para obtener información sobre otras maneras de personalizar el IDE, vea [Personalizar Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-program"></a>Creación de un programa
-
-En primer lugar, configuraremos Visual Studio para que use la configuración de entorno adaptada a los desarrolladores de C#.
-
-1. En la barra de menús, elija **Herramientas** > **Importar y exportar configuraciones**.
-
-2. En el **Asistente para importar y exportar configuraciones**, seleccione **Restablecer todas las configuraciones** en la primera página y, luego, seleccione **Siguiente**.
-
-3. En la página **Guardar configuración actual**, seleccione una opción para guardar o no la configuración actual y, luego, elija **Siguiente**. (Si no personalizó la configuración, seleccione **No, just reset settings, overwriting my current settings** [No, solo restablecer la configuración y sobrescribir la configuración actual]).
-
-4. En la página **Elija una colección de configuraciones predeterminadas**, elija **Visual C#** y, luego, **Finalizar**.
-
-5. En la página **Restablecimiento completado**, elija **Cerrar**.
 
 Vamos a profundizar y crear un programa sencillo.
 
@@ -303,4 +291,4 @@ Profundice aún más en Visual Studio con alguno de estos artículos introductor
 
 - Descubra [más características de Visual Studio](../../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Lea el [blog de Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
+- Lea el [blog de Visual Studio](https://devblogs.microsoft.com/visualstudio/)

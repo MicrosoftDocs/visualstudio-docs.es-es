@@ -8,7 +8,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: c393d6f9fbd239ab38957f66161bcff7372ac45f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe6a2b69cbd95ad558ed87e9afb65883b30175a3
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058668"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335576"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019-preview"></a>Referencia de migración y actualización de proyectos para la versión preliminar de Visual Studio 2019
 
@@ -35,7 +35,7 @@ La compatibilidad con algunos tipos de proyecto también cambia a lo largo del t
 
 En este artículo se proporciona información para los tipos de proyectos que se pueden migrar en la versión preliminar de Visual Studio 2019. También se proporcionan detalles sobre los tipos de proyecto que están en desuso en la versión preliminar de Visual Studio 2019, o que pronto lo estarán. En el artículo no se incluyen los tipos de proyecto que ya no se admiten en Visual Studio 2019 y que, por tanto, no se pueden migrar. Tampoco se incluyen los tipos de proyectos compatibles que no tienen problemas de migración. Esa lista se encuentra en [Compatibilidad y destinatarios de la plataforma de Visual Studio 2017](/visualstudio/releases/2019/compatibility).
 
-> [!Important]
+> [!IMPORTANT]
 > Determinados tipos de proyectos requieren la instalación de cargas de trabajo específicas mediante el instalador de Visual Studio. Si no tiene la carga de trabajo instalada, Visual Studio notifica que se trata de un tipo de proyecto incompatible o desconocido. En ese caso, compruebe sus opciones de instalación y vuelva a intentarlo. Vea el artículo [Compatibilidad y destinatarios de la plataforma de la versión preliminar de Visual Studio 2019](/visualstudio/releases/2019/compatibility) para obtener información sobre la compatibilidad de proyectos en la versión preliminar de Visual Studio 2019.
 
 ## <a name="project-types"></a>Tipos de proyecto

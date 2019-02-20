@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577cb338e7cbf20b23d2d75ad2dfded017b0aacb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955146"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315110"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Crear códigos auxiliares de método de pruebas unitarias con el comando Crear pruebas unitarias
 
@@ -60,11 +60,11 @@ Las extensiones de marcos de pruebas están disponibles en Visual Studio Marketp
 
 ## <a name="when-should-i-use-this-feature"></a>¿Cuándo debería usar esta característica?
 
-Use esta característica cada vez que necesite crear pruebas unitarias, pero específicamente cuando esté probando código existente que tenga poca o ninguna cobertura de prueba, y ninguna documentación. En otras palabras, donde exista una especificación de código limitada o inexistente. Implementa de manera eficaz un enfoque similar a las [pruebas unitarias inteligentes](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/) que caracterizan el comportamiento observado del código.
+Use esta característica cada vez que necesite crear pruebas unitarias, pero específicamente cuando esté probando código existente que tenga poca o ninguna cobertura de prueba, y ninguna documentación. En otras palabras, donde exista una especificación de código limitada o inexistente. Implementa de manera eficaz un enfoque similar a las [pruebas unitarias inteligentes](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) que caracterizan el comportamiento observado del código.
 
 En cambio, esta característica se aplica igualmente a la situación en la que el desarrollador comienza escribiendo código y la usa para arrancar la disciplina de pruebas unitarias. Dentro del flujo de codificación, el desarrollador puede que quiera crear rápidamente un código auxiliar de método de pruebas unitarias (con una clase de prueba y un proyecto de prueba adecuados) para un fragmento de código concreto.
 
 ## <a name="see-also"></a>Vea también
 
-- [Crear códigos auxiliares de método de pruebas unitarias con "Crear pruebas unitarias"](https://blogs.msdn.microsoft.com/devops/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
-- [Entradas del blog de pruebas unitarias](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)
+- [Crear códigos auxiliares de método de pruebas unitarias con "Crear pruebas unitarias"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Entradas del blog de pruebas unitarias](https://devblogs.microsoft.com/devops/?s=unit+testing)

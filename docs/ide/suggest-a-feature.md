@@ -8,12 +8,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e94d48a1a9dc926bc039ba12c64f26616ae68ec5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912162"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316086"
 ---
 # <a name="overview-suggest-a-feature"></a>Información general: Sugerencia de una característica
 
@@ -129,4 +129,4 @@ El tiempo de respuesta depende del estado en el que se encuentran sus comentario
 
 ## <a name="see-also"></a>Vea también
 
-- Blog de Visual Studio [Introducing 'Suggest a Feature' in Developer Community](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral) (Incorporación de "Sugerir una característica" a la Comunidad de desarrolladores)
+- Blog de Visual Studio [Introducing 'Suggest a Feature' in Developer Community](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral) (Incorporación de "Sugerir una característica" a la Comunidad de desarrolladores)

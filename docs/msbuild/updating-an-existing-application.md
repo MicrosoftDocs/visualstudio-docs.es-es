@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93504bbfa7e225db3aa0ec3c544574f5d0a79bb8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9db632ba38d408223928d43921da8dd188fe93d9
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963039"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227256"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Actualización de una aplicación existente a MSBuild 15
 
@@ -77,7 +77,7 @@ Agregue una referencia de paquete NuGet a [Microsoft.Build.Locator](https://www.
 
 ```xml
     <PackageReference Include="Microsoft.Build.Locator">
-      <Version>1.0.7-preview-ge60d679b53</Version>
+      <Version>1.1.2</Version>
     </PackageReference>
 ```
 

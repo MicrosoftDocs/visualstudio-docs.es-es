@@ -19,17 +19,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5b610a268344946390c66a5c6cc34ae0dc3c4d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932097"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318633"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Servicios y productos de Microsoft para mejorar la accesibilidad
 
 > [!TIP]
-> Para obtener más información sobre las actualizaciones de accesibilidad recientes en Visual Studio, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
+> Para obtener más información sobre las actualizaciones de accesibilidad recientes en Visual Studio, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
 
 Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. En los temas siguientes se proporciona información acerca de las características, los productos y los servicios que permiten a Microsoft Windows ser más accesible para las personas con discapacidades:
 
