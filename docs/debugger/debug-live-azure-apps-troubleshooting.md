@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 817e6f31d9282caf77c9f403c7e5555075726d2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bbdbeb10d9d5d7afb7adf17b7a27a0b8d59c9e72
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943804"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335485"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solución de problemas y problemas conocidos para la instantánea de depuración en Visual Studio
 
@@ -32,7 +32,7 @@ Siga estos pasos:
 
 1. Asegúrese de que tiene la misma versión de código fuente que se usó para crear e implementar su app.isua1. Asegúrese de que va a cargar los símbolos correctos para su implementación. Para ello, vea el **módulos** ventana mientras la depuración de instantáneas y compruebe que la columna del archivo de símbolos muestra un archivo .pdb cargado para el módulo que está depurando. El depurador de instantáneas intentará descargar automáticamente y usar los símbolos para la implementación.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: No se cargan los símbolos al abrir una instantánea
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: Los símbolos no se cargan al abrir una instantánea
 
 Si ve la siguiente ventana, los símbolos no se cargó.
 
@@ -48,14 +48,26 @@ Siga estos pasos:
 
 - Como alternativa, si su organización usa un servidor de símbolos o quita los símbolos en una ruta de acceso diferente, utilice los valores de símbolos para cargar los símbolos para la implementación correctos.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: No puedo ver la opción de "Adjuntar depurador de instantáneas" en el explorador en la nube
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: no puedo ver la opción de "Adjuntar depurador de instantáneas" en el explorador en la nube
 
 Siga estos pasos:
 
 - Asegúrese de que está instalado el componente del depurador de instantáneas. Abra el instalador de Visual Studio y compruebe el **Snapshot Debugger** componente en la carga de trabajo de Azure.
+::: moniker range="< vs-2019"
 - Asegúrese de que se admite la aplicación. Actualmente, solo ASP.NET (4.6.1+) y son compatibles con las aplicaciones de ASP.NET Core (2.0 +) implementadas en Azure App Services.
+::: moniker-end
+::: moniker range=">= vs-2019"
+- Asegúrese de que se admite la aplicación:
+  - Servicios de aplicación de Azure - aplicaciones de ASP.NET que se ejecutan en .NET Framework 4.6.1 o posterior.
+  - Azure App Services: aplicaciones de ASP.NET Core que se ejecutan en .NET Core 2.0 o posterior en Windows.
+  - Azure Virtual Machines (y VMSS): las aplicaciones ASP.NET que se ejecutan en .NET Framework 4.6.1 o posterior.
+  - Azure las máquinas virtuales (VMSS) - ASP.NET Core aplicaciones y que se ejecutan en .NET Core 2.0 o posterior en Windows.
+  - Servicios de Azure Kubernetes - aplicaciones de ASP.NET Core que se ejecutan en .NET Core 2.2 o posterior en Debian 9.
+  - Servicios de Azure Kubernetes - aplicaciones de ASP.NET Core que se ejecutan en .NET Core 2.2 o posterior en Alpine 3.8.
+  - Servicios de Azure Kubernetes - aplicaciones de ASP.NET Core que se ejecutan en .NET Core 2.2 o posterior en Ubuntu 18.04.
+::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: Sólo se ve limitado instantáneas en las herramientas de diagnóstico
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema:, sólo se ve limitado instantáneas en las herramientas de diagnóstico
 
 ![Punto de acoplamiento limitado](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "limita el punto de acoplamiento")
 
@@ -66,7 +78,7 @@ Siga estos pasos:
 ## <a name="known-issues"></a>Problemas conocidos
 
 - No se admite actualmente la depuración de instantáneas con varios clientes de Visual Studio en el mismo App Service.
-- Optimizaciones de IL Roslyn no son totalmente compatibles en proyectos de ASP.NET Core. Para algunos proyectos de ASP.NET Core, es posible que no podrá ver algunas de las variables o usar algunas de las variables en instrucciones condicionales. 
+- Optimizaciones de IL Roslyn no son totalmente compatibles en proyectos de ASP.NET Core. Para algunos proyectos de ASP.NET Core, es posible que no podrá ver algunas de las variables o usar algunas de las variables en instrucciones condicionales.
 - Variables especiales, como *$FUNCTION* o *$CALLER*, no se puede evaluar en instrucciones condicionales o puntos de registro para los proyectos de ASP.NET Core.
 - Depuración de instantáneas no funciona en los servicios de aplicaciones que tienen [almacenamiento en caché Local](/azure/app-service/app-service-local-cache) activado.
 - Las aplicaciones de API de depuración de instantáneas no se admiten actualmente.
@@ -86,4 +98,6 @@ Depuración de instantáneas y Application Insights dependen de un ICorProfiler,
 
 [Depurar en Visual Studio](../debugger/index.md)  
 [Depurar aplicaciones ASP.NET activas con el depurador de instantáneas](../debugger/debug-live-azure-applications.md)  
+[Depuración en directo ASP.NET Azure Virtual Machines\Virtual máquinas conjuntos de escalado mediante el depurador de instantáneas](../debugger/debug-live-azure-virtual-machines.md)  
+[Depuración en directo ASP.NET Azure Kubernetes con el depurador de instantáneas](../debugger/debug-live-azure-kubernetes.md)  
 [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)  
