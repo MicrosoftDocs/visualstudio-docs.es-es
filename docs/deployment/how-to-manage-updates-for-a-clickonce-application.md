@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Administrar actualizaciones de una aplicación ClickOnce | Microsoft Docs
+title: Procedimientos para administrar actualizaciones de aplicaciones ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95436528b42c4b32e15048b771a36daf32a22c1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 591f69ddc1ac163858c3d3a2b2ce8721c27e16b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955913"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedimiento Administración de actualizaciones de aplicaciones ClickOnce
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedimientos para administrar actualizaciones de aplicaciones ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones pueden buscar actualizaciones automáticamente o mediante programación. Como desarrollador, tiene mucha flexibilidad para especificar cuándo y cómo se realizan comprobaciones de actualización, si éstas son obligatorias y donde la aplicación debe buscar actualizaciones.  
   
  Puede configurar la aplicación para buscar actualizaciones automáticamente antes de se inicia la aplicación o a intervalos establecidos tras iniciar la aplicación. Además puede especificar la versión mínima requerida; es decir, se instala una actualización si la versión del usuario es inferior a la versión necesaria.  
@@ -101,7 +101,7 @@ ms.locfileid: "53945904"
   
 5.  En el **Actualizar ubicación** , introduzca la ubicación de actualización con una dirección URL completa, con el formato *http://Hostname/ApplicationName*, o una ruta UNC con el formato  *\\\Server\ ApplicationName*, o haga clic en el **examinar** botón para buscar la ubicación de actualización. La ubicación de actualización es donde la aplicación buscará una versión actualizada de sí mismo.  
   
-6.  Crear un botón, el elemento de menú o el otro elemento de interfaz de usuario en un formulario de Windows que se seleccionarán los usuarios para comprobar si hay actualizaciones. Desde el controlador de eventos de ese elemento, llame a un método para buscar e instalar las actualizaciones. Puede encontrar un ejemplo de código de Visual Basic y Visual C# para este tipo de método en [Cómo: Búsqueda de actualizaciones de aplicaciones mediante programación utilizando la API de implementación de ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)  
+6.  Crear un botón, el elemento de menú o el otro elemento de interfaz de usuario en un formulario de Windows que se seleccionarán los usuarios para comprobar si hay actualizaciones. Desde el controlador de eventos de ese elemento, llame a un método para buscar e instalar las actualizaciones. Puede encontrar un ejemplo de código de Visual Basic y Visual C# para este tipo de método en [Cómo: buscar actualizaciones de aplicaciones mediante programación con la API de implementación ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   
 7.  Compile la aplicación.  
   
@@ -110,5 +110,5 @@ ms.locfileid: "53945904"
  [Cuadro de diálogo Actualizaciones de la aplicación](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
  [Selección de una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Cómo: Búsqueda de actualizaciones de aplicaciones mediante programación utilizando la API de implementación de ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
+ [Procedimientos para publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Procedimientos para buscar actualizaciones de aplicaciones mediante programación a través de la API de implementación ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

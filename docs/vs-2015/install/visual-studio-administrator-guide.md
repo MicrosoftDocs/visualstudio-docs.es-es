@@ -1,14 +1,9 @@
 ---
-title: Guía del Administrador de Visual Studio | Documentos de Microsoft
-ms.custom: ''
+title: Guía del administrador de Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -17,20 +12,20 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 25d6655969245adf1b2a28df2b3327561d149983
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722815"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834882"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente de Visual Studio 2017, consulte el [Guía del Administrador de Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
-Puede implementar Visual Studio 2015 en una red siempre que cada equipo de destino cumpla los [requisitos mínimos de instalación](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Puede crear un recurso compartido de red ejecutando el archivo de instalación con el modificador/Layout (tal como se describe en el [crear una sin conexión instalación de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) página) y, a continuación, copiarlo desde la máquina local al recurso compartido de red. Si usa una imagen ISO, montar la imagen ISO y compartirla o copiarla en un recurso compartido de red.  
+Puede implementar Visual Studio 2015 en una red siempre que cada equipo de destino cumpla los [requisitos mínimos de instalación](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Para crear un recurso compartido de red, puede ejecutar el archivo de instalación con el modificador -layout (como se describe en la página [Crear una instalación sin conexión de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)) y, después, copiarlo desde el equipo al recurso compartido de red. Si usa una imagen ISO, montar la imagen ISO y compartirla o copiarla en un recurso compartido de red.  
   
  Tenga en cuenta que las instalaciones que se realizan desde un recurso compartido de red "recuerdan" la ubicación de la que proceden. Esto significa que, para reparar un equipo cliente, quizás sea necesario volver al recurso compartido de red desde el que se instaló el cliente. Elija cuidadosamente la ubicación de red para que esté disponible durante el tiempo que espera que los clientes de Visual Studio 2015 se ejecuten en su organización.  
   

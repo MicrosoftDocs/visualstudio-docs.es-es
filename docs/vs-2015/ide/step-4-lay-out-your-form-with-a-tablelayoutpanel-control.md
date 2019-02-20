@@ -1,25 +1,20 @@
 ---
-title: 'Paso 4: Diseñar un formulario con un control TableLayoutPanel | Microsoft Docs'
-ms.custom: ''
+title: 'Paso 4: Diseñar un formulario con un Control TableLayoutPanel | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a08359c11fa45c87c787a5a3a414eb8515e7473
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763276"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Paso 4: Diseñar un formulario con un control TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ Ventana Propiedades mostrando el control TableLayoutPanel
      ![Ventana Propiedades con la opción Rellenar seleccionada](../ide/media/express-docktable.png "Express_DockTable")  
 Ventana Propiedades con la opción Rellenar seleccionada  
   
-     *Acoplar* en Visual Studio hace referencia a cuando una ventana está asociada a otra ventana o área en el IDE. Por ejemplo, la ventana Propiedades puede estar desacoplada, es decir, estar desasociada y flotar libremente en Visual Studio, o puede estar acoplada en **el Explorador de soluciones**.  
+     *Acoplar* en Visual Studio hace referencia a cuando una ventana está asociada a otra ventana o área en el IDE. Por ejemplo, la ventana Propiedades puede estar desacoplada, es decir, estar desasociada y flotar libremente en Visual Studio, o puede estar acoplada en el **Explorador de soluciones**.  
   
 7.  Después de establecer la propiedad **Dock** de TableLayoutPanel en **Fill**, el panel rellena el formulario completo. Si vuelve a cambiar el tamaño del formulario, TableLayoutPanel permanecerá acoplado y cambiará de tamaño para ajustarse al formulario.  
   
@@ -98,6 +93,3 @@ Form1 con TableLayoutPanel cambiado de tamaño
 -   Para ir al siguiente paso del tutorial, vea [Paso 5: Agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md).  
   
 -   Para volver al paso anterior del tutorial, vea [Paso 3: Establecer las propiedades del formulario](../ide/step-3-set-your-form-properties.md).
-
-
-

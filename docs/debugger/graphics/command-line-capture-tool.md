@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: be2882cd6db93da4222f8ed12d1847aa5b39a288
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53960659"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995224"
 ---
 # <a name="command-line-capture-tool"></a>Herramienta de captura de línea de comandos
 DXCap.exe es una herramienta de línea de comandos para la captura y la reproducción de diagnóstico de gráficos. Admite Direct3D 10 a través de Direct3D 12 en todos los niveles de características.  
@@ -164,12 +164,12 @@ DXCap.exe -e map
  **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **Nombre completo: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Name             : Microsoft.BingMaps**  
+ **Nombre             : Microsoft.BingMaps**  
  **Publicador CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
  **Versión          : 2.1.2914.1734**  
  **Aplicaciones disponibles:**  
  **Id: AppexMaps**  
- **Exe C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **"exe": C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: No**  
  **AppSpec (para iniciar): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** la última línea de salida para cada aplicación enumerada muestra el comando puede utilizar para capturar información de gráficos.  
   
