@@ -6,23 +6,34 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 2a5b60496a53c35bb67e5cd19d6059212e22ccfd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e192f75508173cd4014e391168ab27e9abe2bc9a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911785"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317216"
 ---
 # <a name="visual-studio-2019-for-mac-preview-tour"></a>Paseo por la versión preliminar de Visual Studio 2019 para Mac
 
 > [!NOTE]
 > Visual Studio 2019 para Mac [ya está disponible](installation.md) para su instalación y pruebas.
 
-Visual Studio para Mac convierte el IDE centrado en dispositivos móviles de Xamarin, Xamarin Studio, en un entorno de desarrollo con un enfoque de primero móvil, primero en la nube en el equipo Mac. Esta herramienta para desarrolladores permite utilizar la eficacia de .NET para crear aplicaciones para todas las plataformas que exigen los usuarios.
+Visual Studio para Mac es un _entorno de desarrollo integrado_ de .NET en Mac que se puede usar para editar, depurar y compilar código y, después, publicar una aplicación. Además de las características esperadas, como un editor estándar y un depurador, Visual Studio para Mac incluye compiladores, herramientas de finalización de código, diseñadores gráficos y control de código fuente para facilitar el proceso de desarrollo de software.
 
-La experiencia de usuario (UX) de Visual Studio para Mac es similar a la de su equivalente de Windows, pero con una sensación de macOS nativo. La creación, la apertura y el desarrollo de una aplicación son experiencias familiares para cualquiera que haya usado anteriormente Visual Studio en Windows. Además, Visual Studio para Mac emplea muchas de las eficaces herramientas que convierten a su equivalente de Windows en un IDE tan eficaz. La plataforma de compilador Roslyn se usa para la refactorización e IntelliSense. El sistema del proyecto y el motor de compilación usan MSBuild y el editor de código fuente es compatible con los paquetes de TextMate. Usa los mismos motores de depuración para las aplicaciones .NET Core y Xamarin y los mismos diseñadores para Xamarin.iOS y Xamarin.Android.
+Visual Studio para Mac admite muchos de los mismos tipos de archivo que su equivalente de Windows, como `.csproj`, `.fsproj` o `.sln`, y admite características como EditorConfig, lo que significa que puede usar el IDE que mejor le convenga.
+La creación, la apertura y el desarrollo de una aplicación son experiencias familiares para cualquiera que haya usado anteriormente Visual Studio en Windows. Además, Visual Studio para Mac emplea muchas de las eficaces herramientas que convierten a su equivalente de Windows en un IDE tan eficaz. La plataforma de compilador Roslyn se usa para la refactorización e IntelliSense. El sistema del proyecto y el motor de compilación usan MSBuild y el editor de código fuente es compatible con los paquetes de TextMate. Usa los mismos motores de depuración para las aplicaciones .NET Core y Xamarin y los mismos diseñadores para Xamarin.iOS y Xamarin.Android.
 
-En este artículo se analizan varias secciones de Visual Studio para Mac y se ofrece una visión general de algunas de las características que lo convierten en una herramienta eficaz para crear aplicaciones multiplataforma.
+## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Qué puedo hacer en Visual Studio para Mac
+
+Visual Studio para Mac admite los siguientes tipos de desarrollo:
+
+- Aplicaciones web de ASP.NET Core con C#, F# y compatibilidad con páginas de Razor, JavaScript y TypeScript
+- Aplicaciones de consola .NET Core con C# o F#
+- Aplicaciones y juegos de Unity multiplataforma con C#
+- Aplicaciones de Android, iOS, tvOS y watchOS en Xamarin con C# o F# y XAML
+- Aplicaciones de escritorio de Cocoa en C# o F#
+
+En este artículo se analizan varias secciones de Visual Studio para Mac y se ofrece una visión general de algunas de las características que lo convierten en una herramienta eficaz para crear estas aplicaciones.
 
 ## <a name="ide-tour"></a>Paseo por el IDE
 
