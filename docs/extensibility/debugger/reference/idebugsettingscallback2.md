@@ -10,65 +10,65 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24dd668c2a5877ab3fb674e4a8f46454b9f12e30
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: da1831bbea755ba0b403eb6f67dca70afb80cb53
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022175"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56449781"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
-Habilita los motores para leer la configuración de métrica de depuración remota.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-IDebugSettingsCallback2D : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Notas para los implementadores  
- Esta interfaz está implementada por la devolución de llamada del Administrador de depuración de sesión de eventos y consumida por los motores de depuración. También se puede usar localmente en lugar de .lib Dbgmetric [d].  
-  
-## <a name="methods"></a>Métodos  
- La tabla siguiente muestran los métodos de `IDebugSettingsCallback2`.  
-  
-|Método|Descripción|  
-|------------|-----------------|  
-|[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|Enumera los evaluadores de expresión disponibles según los identificadores de idioma y el proveedor.|  
-|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|Recupera un objeto local de evaluador de expresión dado la métrica.|  
-|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|Recupera un valor que corresponde a la métrica especificada del evaluador de expresiones.|  
-|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|Recupera el archivo de métrica del evaluador de expresiones de expresión asigna el nombre o la métrica.|  
-|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|Recupera el identificador único para una métrica de evaluador de expresión dado su nombre.|  
-|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|Recupera la cadena del valor de una métrica de evaluador de expresión dada su nombre.|  
-|[GetMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricdword.md)|Recupera el valor de una métrica dado su nombre.|  
-|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|Recupera el identificador único de una métrica dado su nombre.|  
-|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|Recupera la cadena del valor de la métrica de acuerdo con su nombre.|  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: Msdbg.h  
-  
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
-  
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra una función que toma un **IDebugSettingsCallback2** objeto como parámetro.  
-  
-```cpp  
-HRESULT GetDebugSettingsCallback (IDebugSettingsCallback2 **ppCallback)  
-{  
-    HRESULT hRes = E_FAIL;  
-  
-    if ( ppCallback )  
-   {  
-        if ( EVAL(m_pdec) )  
-            hRes = m_pdec->QueryInterface(IID_IDebugSettingsCallback2, (void **)ppCallback);  
-        else  
-            hRes = E_FAIL;  
-    }  
-    else  
-        hRes = E_INVALIDARG;  
-  
-    return ( hRes );  
-}  
+Habilita los motores para leer la configuración de métrica de depuración remota.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+IDebugSettingsCallback2D : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Notas para los implementadores
+Esta interfaz está implementada por la devolución de llamada del Administrador de depuración de sesión de eventos y consumida por los motores de depuración. También se puede usar localmente en lugar de .lib Dbgmetric [d].
+
+## <a name="methods"></a>Métodos
+La tabla siguiente muestran los métodos de `IDebugSettingsCallback2`.
+
+|Método|Descripción|
+|------------|-----------------|
+|[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|Enumera los evaluadores de expresión disponibles según los identificadores de idioma y el proveedor.|
+|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|Recupera un objeto local de evaluador de expresión dado la métrica.|
+|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|Recupera un valor que corresponde a la métrica especificada del evaluador de expresiones.|
+|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|Recupera el archivo de métrica del evaluador de expresiones de expresión asigna el nombre o la métrica.|
+|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|Recupera el identificador único para una métrica de evaluador de expresión dado su nombre.|
+|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|Recupera la cadena del valor de una métrica de evaluador de expresión dada su nombre.|
+|[GetMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricdword.md)|Recupera el valor de una métrica dado su nombre.|
+|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|Recupera el identificador único de una métrica dado su nombre.|
+|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|Recupera la cadena del valor de la métrica de acuerdo con su nombre.|
+
+## <a name="requirements"></a>Requisitos
+Encabezado: Msdbg.h
+
+Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+
+Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="example"></a>Ejemplo
+El ejemplo siguiente muestra una función que toma un **IDebugSettingsCallback2** objeto como parámetro.
+
+```cpp
+HRESULT GetDebugSettingsCallback (IDebugSettingsCallback2 **ppCallback)
+{
+    HRESULT hRes = E_FAIL;
+
+    if ( ppCallback )
+    {
+        if ( EVAL(m_pdec) )
+            hRes = m_pdec->QueryInterface(IID_IDebugSettingsCallback2, (void **)ppCallback);
+        else
+            hRes = E_FAIL;
+    }
+    else
+        hRes = E_INVALIDARG;
+
+    return ( hRes );
+}
 ```

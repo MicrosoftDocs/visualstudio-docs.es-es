@@ -12,77 +12,77 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a91016c493b722ef6c14a0fe6e45468544f35d0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a1ca2f649bd680249cc00ec537c6015def6ad8a
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54995601"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56449613"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
-Esta interfaz registrada permite la depuración de la sesión manager (SDM) para obtener información acerca de los programas que se han "publicado" a través de la [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interfaz.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-IDebugProgramProvider2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Notas para los implementadores  
- El motor de depuración (DE) implementa esta interfaz para proporcionar información acerca de los programas que se está depurando. Esta interfaz está registrada en la sección del registro con la métrica `metricProgramProvider`, tal y como se describe en [aplicaciones auxiliares de SDK para depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
-  
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Llame a la de COM `CoCreateInstance` funcionando con el `CLSID` del proveedor de programa que se obtiene del registro. Vea el ejemplo.  
-  
-## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
-  
-|Método|Descripción|  
-|------------|-----------------|  
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Obtiene información acerca de los programas que está ejecutando, el filtrado en una variedad de formas.|  
-|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Obtiene un nodo de programa, dado un identificador de proceso específico.|  
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Establece una devolución de llamada para inspeccionar los eventos del proveedor asociados con determinados tipos de procesos.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Establece una configuración regional para los recursos específicos del idioma necesarios para la DE.|  
-  
-## <a name="remarks"></a>Comentarios  
- Normalmente, un proceso usa esta interfaz para obtener información sobre los programas que se ejecutan en ese proceso.  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
-  
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
-  
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="example"></a>Ejemplo  
-  
-```cpp  
-IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)  
-{  
-    // This is typically defined globally.  For this example, it is  
-    // defined here.  
-    static const WCHAR strRegistrationRoot[] = L"Software\\Microsoft\\VisualStudio\\8.0Exp";  
-    IDebugProgramProvider2 *pProvider = NULL;  
-    if (pDebugEngineGuid != NULL) {  
-        CLSID clsidProvider = { 0 };  
-        ::GetMetric(NULL,  
-                    metrictypeEngine,  
-                    *pDebugEngineGuid,  
-                    metricProgramProvider,  
-                    &clsidProvider,  
-                    strRegistrationRoot);  
-        if (!IsEqualGUID(clsidProvider,GUID_NULL)) {  
-            CComPtr<IDebugProgramProvider2> spProgramProvider;  
-            spProgramProvider.CoCreateInstance(clsidProvider);  
-            if (spProgramProvider != NULL) {  
-                pProvider = spProgramProvider.Detach();  
-            }  
-        }  
-    }  
-    return(pProvider);  
-}  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Interfaces del núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
- [Asistentes de SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+Esta interfaz registrada permite la depuración de la sesión manager (SDM) para obtener información acerca de los programas que se han "publicado" a través de la [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interfaz.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+IDebugProgramProvider2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Notas para los implementadores
+El motor de depuración (DE) implementa esta interfaz para proporcionar información acerca de los programas que se está depurando. Esta interfaz está registrada en la sección del registro con la métrica `metricProgramProvider`, tal y como se describe en [aplicaciones auxiliares de SDK para depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).
+
+## <a name="notes-for-callers"></a>Notas para los llamadores
+Llame a la de COM `CoCreateInstance` funcionando con el `CLSID` del proveedor de programa que se obtiene del registro. Vea el ejemplo.
+
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
+
+|Método|Descripción|
+|------------|-----------------|
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Obtiene información acerca de los programas que está ejecutando, el filtrado en una variedad de formas.|
+|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Obtiene un nodo de programa, dado un identificador de proceso específico.|
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Establece una devolución de llamada para inspeccionar los eventos del proveedor asociados con determinados tipos de procesos.|
+|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Establece una configuración regional para los recursos específicos del idioma necesarios para la DE.|
+
+## <a name="remarks"></a>Comentarios
+Normalmente, un proceso usa esta interfaz para obtener información sobre los programas que se ejecutan en ese proceso.
+
+## <a name="requirements"></a>Requisitos
+Encabezado: msdbg.h
+
+Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+
+Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="example"></a>Ejemplo
+
+```cpp
+IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
+{
+    // This is typically defined globally. For this example, it is
+    // defined here.
+    static const WCHAR strRegistrationRoot[] = L"Software\\Microsoft\\VisualStudio\\8.0Exp";
+    IDebugProgramProvider2 *pProvider = NULL;
+    if (pDebugEngineGuid != NULL) {
+        CLSID clsidProvider = { 0 };
+        ::GetMetric(NULL,
+                    metrictypeEngine,
+                    *pDebugEngineGuid,
+                    metricProgramProvider,
+                    &clsidProvider,
+                    strRegistrationRoot);
+        if (!IsEqualGUID(clsidProvider,GUID_NULL)) {
+            CComPtr<IDebugProgramProvider2> spProgramProvider;
+            spProgramProvider.CoCreateInstance(clsidProvider);
+            if (spProgramProvider != NULL) {
+                pProvider = spProgramProvider.Detach();
+            }
+        }
+    }
+    return(pProvider);
+}
+```
+
+## <a name="see-also"></a>Vea también
+[Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)  
+[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)  
+[Asistentes de SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
