@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 219b2e1bd3ff7690f19066f83e914e5d0b878a73
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca3810df7751245acc3f7a93372d565b88170b07
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945786"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634830"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Habilitar el acceso a VBA para crear o abrir un proyecto de Visual Studio Tools para el proyecto de Microsoft Office system
 
@@ -126,5 +126,4 @@ Debe habilitar explícitamente acceso a Visual Basic para el sistema de proyecto
 5. Seleccione **detectar y reparar errores en la instalación de Office**y, a continuación, haga clic en **instalar**.
 
 ## <a name="see-also"></a>Vea también
-
- [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
+- [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
