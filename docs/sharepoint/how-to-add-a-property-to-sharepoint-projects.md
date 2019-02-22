@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar una propiedad a proyectos de SharePoint | Documentos de Microsoft
+title: Filtrar Agregar una propiedad a proyectos de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,74 +14,74 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f898ffd70888f00b508223ec4d3c578cbc4d538
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 51f4aeef55d20a728567b50e67c2232a0a77b1e6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869611"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646062"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Procedimiento Agregar una propiedad a proyectos de SharePoint
-  Puede usar una extensión de proyecto para agregar una propiedad a un proyecto de SharePoint. La propiedad aparece en la **propiedades** ventana cuando se selecciona el proyecto en **el Explorador de soluciones**.  
-  
- Los pasos siguientes se supone que ya ha creado una extensión de proyecto. Para obtener más información, vea [Cómo: Crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
-  
-### <a name="to-add-a-property-to-a-sharepoint-project"></a>Para agregar una propiedad a un proyecto de SharePoint  
-  
-1.  Defina una clase con una propiedad pública que representa la propiedad que se va a agregar a proyectos de SharePoint. Si desea agregar varias propiedades, puede definir todas las propiedades de la misma clase o en clases diferentes.  
-  
-2.  En el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> método de su <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementación, el identificador de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> eventos de la *projectService* parámetro.  
-  
-3.  En el controlador de eventos para el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> evento, agregue una instancia de la clase de propiedades para el <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> colección del parámetro de argumentos del evento.  
-  
-## <a name="example"></a>Ejemplo  
- El ejemplo de código siguiente muestra cómo agregar dos propiedades a los proyectos de SharePoint. Una propiedad hace persistir los datos en el archivo de opciones de usuario de proyecto (el *. csproj.user* archivo o *. vbproj.user* archivo). La otra propiedad hace persistir los datos en el archivo de proyecto (*.csproj* archivo o *.vbproj* archivo).  
-  
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Filtrar Agregar una propiedad a proyectos de SharePoint
+  Puede usar una extensión de proyecto para agregar una propiedad a un proyecto de SharePoint. La propiedad aparece en la **propiedades** ventana cuando se selecciona el proyecto en **el Explorador de soluciones**.
+
+ Los pasos siguientes se supone que ya ha creado una extensión de proyecto. Para obtener más información, vea [Cómo: Crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+
+### <a name="to-add-a-property-to-a-sharepoint-project"></a>Para agregar una propiedad a un proyecto de SharePoint
+
+1.  Defina una clase con una propiedad pública que representa la propiedad que se va a agregar a proyectos de SharePoint. Si desea agregar varias propiedades, puede definir todas las propiedades de la misma clase o en clases diferentes.
+
+2.  En el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> método de su <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementación, el identificador de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> eventos de la *projectService* parámetro.
+
+3.  En el controlador de eventos para el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> evento, agregue una instancia de la clase de propiedades para el <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> colección del parámetro de argumentos del evento.
+
+## <a name="example"></a>Ejemplo
+ El ejemplo de código siguiente muestra cómo agregar dos propiedades a los proyectos de SharePoint. Una propiedad hace persistir los datos en el archivo de opciones de usuario de proyecto (el *. csproj.user* archivo o *. vbproj.user* archivo). La otra propiedad hace persistir los datos en el archivo de proyecto (*.csproj* archivo o *.vbproj* archivo).
+
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
- [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]  
-  
-### <a name="understand-the-code"></a>Entender el código  
- Para asegurarse de que la misma instancia de la `CustomProjectProperties` clase se usa cada vez que el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> se produce el evento, el ejemplo de código agrega el objeto de propiedades para el <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propiedad del proyecto la primera vez que se produce este evento. El código recupera un objeto cada vez que este evento se produce de nuevo. Para obtener más información sobre el uso de la <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propiedad para asociar los datos con los proyectos, vea [asociar datos personalizados con SharePoint de extensiones de herramientas](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
-  
- Para conservar los cambios realizados en los valores de propiedad, el **establecer** descriptores de acceso para las propiedades utilizan las siguientes API:  
-  
-- `CustomUserFileProperty` usa el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> propiedad para guardar su valor en el archivo de opciones de usuario de proyecto.  
-  
-- `CustomProjectFileProperty` usa el <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> método para guardar su valor en el archivo de proyecto.  
-  
-  Para obtener más información sobre cómo guardar datos en estos archivos, consulte [guardar datos en las extensiones del sistema del proyecto de SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
-  
-### <a name="specify-the-behavior-of-custom-properties"></a>Especificar el comportamiento de las propiedades personalizadas  
- Puede definir cómo una propiedad personalizada aparece y se comporta en la **propiedades** ventana aplicando los atributos de la <xref:System.ComponentModel> espacio de nombres para la definición de propiedad. Los atributos siguientes son útiles en muchos escenarios:  
-  
--   <xref:System.ComponentModel.DisplayNameAttribute>: Especifica el nombre de la propiedad que aparece en el **propiedades** ventana.  
-  
--   <xref:System.ComponentModel.DescriptionAttribute>: Especifica la cadena de descripción que aparece en la parte inferior de la **propiedades** ventana cuando se selecciona la propiedad.  
-  
--   <xref:System.ComponentModel.DefaultValueAttribute>: Especifica el valor predeterminado de la propiedad.  
-  
--   <xref:System.ComponentModel.TypeConverterAttribute>: Especifica una conversión personalizada entre la cadena que se muestra en el **propiedades** ventana y un valor de propiedad que no son de cadena.  
-  
--   <xref:System.ComponentModel.EditorAttribute>: Especifica un editor personalizado para usar para modificar la propiedad.  
-  
-## <a name="compile-the-code"></a>Compilar el código  
- Este ejemplo requiere referencias a los ensamblados siguientes:  
-  
+ [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]
+
+### <a name="understand-the-code"></a>Entender el código
+ Para asegurarse de que la misma instancia de la `CustomProjectProperties` clase se usa cada vez que el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> se produce el evento, el ejemplo de código agrega el objeto de propiedades para el <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propiedad del proyecto la primera vez que se produce este evento. El código recupera un objeto cada vez que este evento se produce de nuevo. Para obtener más información sobre el uso de la <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propiedad para asociar los datos con los proyectos, vea [asociar datos personalizados con SharePoint de extensiones de herramientas](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
+
+ Para conservar los cambios realizados en los valores de propiedad, el **establecer** descriptores de acceso para las propiedades utilizan las siguientes API:
+
+- `CustomUserFileProperty` usa el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> propiedad para guardar su valor en el archivo de opciones de usuario de proyecto.
+
+- `CustomProjectFileProperty` usa el <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> método para guardar su valor en el archivo de proyecto.
+
+  Para obtener más información sobre cómo guardar datos en estos archivos, consulte [guardar datos en las extensiones del sistema del proyecto de SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+
+### <a name="specify-the-behavior-of-custom-properties"></a>Especificar el comportamiento de las propiedades personalizadas
+ Puede definir cómo una propiedad personalizada aparece y se comporta en la **propiedades** ventana aplicando los atributos de la <xref:System.ComponentModel> espacio de nombres para la definición de propiedad. Los atributos siguientes son útiles en muchos escenarios:
+
+-   <xref:System.ComponentModel.DisplayNameAttribute>: Especifica el nombre de la propiedad que aparece en el **propiedades** ventana.
+
+-   <xref:System.ComponentModel.DescriptionAttribute>: Especifica la cadena de descripción que aparece en la parte inferior de la **propiedades** ventana cuando se selecciona la propiedad.
+
+-   <xref:System.ComponentModel.DefaultValueAttribute>: Especifica el valor predeterminado de la propiedad.
+
+-   <xref:System.ComponentModel.TypeConverterAttribute>: Especifica una conversión personalizada entre la cadena que se muestra en el **propiedades** ventana y un valor de propiedad que no son de cadena.
+
+-   <xref:System.ComponentModel.EditorAttribute>: Especifica un editor personalizado para usar para modificar la propiedad.
+
+## <a name="compile-the-code"></a>Compilar el código
+ Este ejemplo requiere referencias a los ensamblados siguientes:
+
 -   Microsoft.VisualStudio.SharePoint
--    
+-
 -   Microsoft.VisualStudio.Shell
--     
+-
 -   Microsoft.VisualStudio.Shell.Interop
--     
+-
 -   Microsoft.VisualStudio.Shell.Interop.8.0
--     
--   System.ComponentModel.Composition  
-  
-## <a name="deploy-the-extension"></a>Implementar la extensión  
- Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y otros archivos que desea distribuir con la extensión. Para obtener más información, consulte [implementar extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
-  
+-
+-   System.ComponentModel.Composition
+
+## <a name="deploy-the-extension"></a>Implementar la extensión
+ Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y otros archivos que desea distribuir con la extensión. Para obtener más información, consulte [implementar extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+
 ## <a name="see-also"></a>Vea también
- [Extender los proyectos de SharePoint](../sharepoint/extending-sharepoint-projects.md)   
- [Cómo: Crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [Cómo: Agregar un elemento de menú contextual a los proyectos de SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
- [Extender el sistema de proyecto de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  
+- [Extender los proyectos de SharePoint](../sharepoint/extending-sharepoint-projects.md)
+- [Cómo: Crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+- [Cómo: Agregar un elemento de menú contextual a los proyectos de SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
+- [Extender el sistema de proyecto de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

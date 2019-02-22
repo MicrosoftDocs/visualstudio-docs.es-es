@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75e918c752484129f9b89f939bc6fbbce6df803c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961603"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618203"
 ---
 # <a name="web-site-support-templates"></a>Plantillas de compatibilidad del sitio web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Plantillas de proyecto y elemento de sitio Web proporcionan stubs de proyectos y elementos de sitio Web reutilizables y personalizables que aceleran el proceso de desarrollo mediante la eliminación de la necesidad de crear nuevos proyectos de sitios Web y los elementos desde el principio. Para obtener más información sobre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] plantillas, consulte [crear plantillas de proyecto y elemento](../../ide/creating-project-and-item-templates.md).
@@ -185,4 +185,4 @@ ms.locfileid: "54961603"
      El archivo de plantilla que determina el contenido de la nueva página principal y su archivo dependiente, si existe.
 
 ## <a name="see-also"></a>Vea también
- [Compatibilidad con sitios web](../../extensibility/internals/web-site-support.md)
+- [Compatibilidad con sitios web](../../extensibility/internals/web-site-support.md)
