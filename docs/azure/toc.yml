@@ -118,9 +118,9 @@ items:
     href: vs-azure-tools-resources-managing-with-cloud-explorer.md
   - name: Acceso a las máquinas virtuales de Azure desde el Explorador de servidores
     href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-ms.openlocfilehash: 47bd746cddc9563615d271a096fbd02911032077
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 212306b43f2be4ccb4fdee84945d317904f6f8b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571101"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629266"
