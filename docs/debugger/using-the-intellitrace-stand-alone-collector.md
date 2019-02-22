@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96a7fe0e46420a2469271219aa44ee76c9a49774
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 446348078f79ae49408dac9a1d00cb29f968b184
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986818"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316852"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usar el recopilador independiente IntelliTrace (C#, Visual Basic)
 
 El **recolector independiente IntelliTrace** permite recopilar datos de diagnóstico de IntelliTrace para las aplicaciones en servidores de producción o en otros entornos sin instalar Visual Studio en el equipo de destino y sin cambiar el entorno del sistema de destino. El recolector independiente IntelliTrace funciona en aplicaciones web, de Sharepoint, de WPF y de Windows Forms. Cuando la recolección de datos haya terminado, basta con eliminar el recolector para desinstalarlo.
 
- Observe IntelliTrace en acción: [Recopilar y analizar datos de IntelliTrace en producción para la depuración (vídeo de Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
+ Eche un vistazo a IntelliTrace en acción: [Recopilación y análisis de datos en un entorno de producción (vídeo de Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
 >  Los mismos datos de IntelliTrace se pueden recopilar también para aplicaciones web y de Sharepoint que se ejecutan en equipos remotos; para ello, hay que usar **Microsoft Monitoring Agent** en modo **Trace** .
@@ -393,10 +393,10 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
  [Optimizar la recolección de IntelliTrace en servidores de producción](http://go.microsoft.com/fwlink/?LinkId=255233)
 
- [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)
+ [Microsoft DevOps](https://devblogs.microsoft.com/devops/)
 
 ### <a name="forums"></a>Foros
  [Depurador de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 ### <a name="videos"></a>Vídeos
- [Vídeo de Channel 9: Recopilar y analizar datos de IntelliTrace](http://go.microsoft.com/fwlink/?LinkID=251851)
+ [Vídeo de Channel 9: Recopilación y análisis de datos de IntelliTrace](http://go.microsoft.com/fwlink/?LinkID=251851)

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b416d48b8e5351f0a6ddf037fa80b442888bbe2
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866836"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450183"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalización y localización de las soluciones de Excel
   Esta sección contiene información sobre las consideraciones especiales de las soluciones de Microsoft Office Excel que se vayan a ejecutar en equipos que tengan una configuración de Windows distinta del inglés. La mayoría de los aspectos de globalización y localización de las soluciones de Microsoft Office son los mismos que se pueden encontrar cuando se crean otros tipos de soluciones mediante Visual Studio. Para obtener información general, consulte [Globalize y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md).
@@ -47,7 +47,7 @@ ms.locfileid: "54866836"
  Aún debe asegurarse de que cualquier parte del código que interactúa con el texto del documento sigue coincidiendo con el idioma del texto y que los marcadores, rangos con nombre y otros campos de visualización se adaptan a cualquier nuevo formato del documento de Office necesario para ajustarse a diferentes gramáticas y longitud de texto. Las plantillas de documento que contienen relativamente poco texto, puede considerar almacenar el texto en archivos de recursos y, a continuación, cargar el texto en tiempo de ejecución.
 
 ### <a name="text-direction"></a>Dirección del texto
- En Excel, puede establecer una propiedad de la hoja de cálculo para representar el texto de derecha a izquierda. Controles host, o cualquier control que tenga un `RightToLeft` propiedad, que se coloca en el diseñador automáticamente coinciden con esta configuración en tiempo de ejecución. Word no tiene una configuración de documento para texto bidireccional (solo cambia la alineación del texto), de manera que los controles no se pueden asignar a esta configuración. En su lugar, debe establecer la alineación del texto para cada control. Es posible escribir código para recorrer todos los controles y hacer que representen el texto de derecha a izquierda.
+ En Excel, puede establecer una propiedad de la hoja de cálculo para representar el texto de derecha a izquierda. Controles host, o cualquier control que tenga un `RightToLeft` propiedad, que se coloca en el diseñador automáticamente coinciden con esta configuración en tiempo de ejecución. Word no tiene una configuración de documento para el texto de bidireccional (solo cambia la alineación del texto), por lo que los controles no se puede asignar a esta configuración. En su lugar, debe establecer la alineación del texto para cada control. Es posible escribir código para recorrer todos los controles y hacer que representen el texto de derecha a izquierda.
 
 ### <a name="change-culture"></a>Cambiar la referencia cultural
  Su código de personalización de nivel de documento normalmente comparte el subproceso de la interfaz de usuario principal de Excel, de modo que cualquier cambio que realice a la referencia cultural del subproceso afecta a todo lo demás que se está ejecutando en dicho subproceso; el cambio no se limita a la personalización.

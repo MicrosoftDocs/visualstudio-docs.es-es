@@ -324,7 +324,7 @@ items:
             href: ide/reference/change-method-signature.md
           - name: Conversión de un tipo anónimo en clase
             href: ide/reference/convert-anonymous-type-to-class.md
-          - name: Conversión de un tipo anónimo en tupla
+          - name: Conversión de un tipo anónimo para tupla
             href: ide/reference/convert-anonymous-type-to-tuple.md
           - name: Convertir un bucle for en instrucción foreach (y a la inversa)
             href: ide/reference/convert-for-loop-to-foreach.md
@@ -1135,9 +1135,9 @@ items:
   - name: Hable con nosotros
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: d81e33771d4e5b8333c7dddf7311e63488a55604
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f956b9a47ffe8fcf3f082711a742e36c90c95304
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335589"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450612"
