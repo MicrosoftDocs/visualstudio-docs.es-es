@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873749"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636520"
 ---
-# <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Procedimiento Almacenar en caché datos para su uso sin conexión o en un servidor
+# <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Filtrar Almacenar en caché datos para su uso sin conexión o en un servidor
   Puede marcar un elemento de datos en la memoria caché en el documento, por lo que esté disponible sin conexión. Esto también permite para los datos en el documento que se va a ser manipulados por otro código cuando el documento está almacenado en un servidor.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
@@ -60,4 +60,8 @@ ms.locfileid: "54873749"
 4.  En el **propiedades** ventana, establezca el **modificadores** propiedad **pública** (de forma predeterminada es **interno**).
 
 ## <a name="see-also"></a>Vea también
- [Almacenar en caché datos](../vsto/caching-data.md) [Cómo: Almacenar en caché mediante programación un origen de datos en un documento de Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) [Cómo: Almacenar en caché datos en un documento protegido por contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md) [tener acceso a datos de documentos en el servidor](../vsto/accessing-data-in-documents-on-the-server.md) [guardar los datos](../data-tools/saving-data.md)
+- [Almacenar datos en caché](../vsto/caching-data.md)
+- [Cómo: Almacenar en caché mediante programación un origen de datos en un documento de Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [Cómo: Almacenar datos en caché en un documento protegido por contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [Acceder a los datos de documentos en el servidor](../vsto/accessing-data-in-documents-on-the-server.md)
+- [Guardar datos](../data-tools/saving-data.md)
