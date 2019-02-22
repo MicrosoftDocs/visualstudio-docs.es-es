@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 11c344b683a67f369ef3848a41b7907622945ffa
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866862"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614433"
 ---
 # <a name="custom-document-properties-overview"></a>Información general sobre propiedades de documento personalizadas
 
