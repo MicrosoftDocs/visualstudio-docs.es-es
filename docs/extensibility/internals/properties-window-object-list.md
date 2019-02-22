@@ -10,24 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46df412a1f3f717ae8a8ee369b9b6f57a0242d04
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eccc7cfc432918a80723251a7b9a87ec4e13450d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929106"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619776"
 ---
 # <a name="properties-window-object-list"></a>Lista de objetos de la ventana Propiedades
-La lista de objetos en el **propiedades** ventana es una lista desplegable que le permite cambiar la selección a otros objetos disponibles dentro de una o varias ventanas seleccionados. Seleccionar un objeto diferente desde dentro de esta lista desencadena una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> para informar al entorno que se ha seleccionado un nuevo objeto. La información mostrada en el **propiedades** ventana, a continuación, se cambia para mostrar las propiedades asociadas con el objeto recién seleccionado.  
-  
-## <a name="the-object-list"></a>La lista de objetos  
- La lista de objetos consta de dos campos: el nombre del objeto (se muestra en negrita) y el tipo de objeto.  
-  
- El nombre del objeto aparece a la izquierda del tipo de objeto en negrita se recupera desde el propio objeto utilizando el `Name` propiedad proporcionada por el <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> interfaz. <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>, el único método en <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, devuelve <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> para coclase esa interfaz. El **propiedades** ventana usa <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> para obtener el nombre de la coclase, que se muestra como el nombre del objeto en la lista desplegable.  
-  
- Si el objeto no tiene un `Name` propiedad, un nombre no se muestra en el área nombre de la lista de objetos. Puede agregar una propiedad de nombre para el objeto si desea que el nombre mostrado en la lista de objetos.  
-  
- Si el objeto COM implementa <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, **propiedades** ventana muestra el nombre de la interfaz en lugar del nombre de objeto en el lado izquierdo de la lista.  
-  
-## <a name="see-also"></a>Vea también  
- [Extensión de propiedades](../../extensibility/internals/extending-properties.md)
+La lista de objetos en el **propiedades** ventana es una lista desplegable que le permite cambiar la selección a otros objetos disponibles dentro de una o varias ventanas seleccionados. Seleccionar un objeto diferente desde dentro de esta lista desencadena una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> para informar al entorno que se ha seleccionado un nuevo objeto. La información mostrada en el **propiedades** ventana, a continuación, se cambia para mostrar las propiedades asociadas con el objeto recién seleccionado.
+
+## <a name="the-object-list"></a>La lista de objetos
+ La lista de objetos consta de dos campos: el nombre del objeto (se muestra en negrita) y el tipo de objeto.
+
+ El nombre del objeto aparece a la izquierda del tipo de objeto en negrita se recupera desde el propio objeto utilizando el `Name` propiedad proporcionada por el <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> interfaz. <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>, el único método en <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, devuelve <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> para coclase esa interfaz. El **propiedades** ventana usa <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> para obtener el nombre de la coclase, que se muestra como el nombre del objeto en la lista desplegable.
+
+ Si el objeto no tiene un `Name` propiedad, un nombre no se muestra en el área nombre de la lista de objetos. Puede agregar una propiedad de nombre para el objeto si desea que el nombre mostrado en la lista de objetos.
+
+ Si el objeto COM implementa <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, **propiedades** ventana muestra el nombre de la interfaz en lugar del nombre de objeto en el lado izquierdo de la lista.
+
+## <a name="see-also"></a>Vea también
+- [Extensión de propiedades](../../extensibility/internals/extending-properties.md)

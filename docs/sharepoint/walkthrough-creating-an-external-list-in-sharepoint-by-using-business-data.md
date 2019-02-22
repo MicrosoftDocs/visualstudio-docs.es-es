@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874190"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600303"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: Crear una lista externa en SharePoint con datos profesionales
 
@@ -276,7 +276,7 @@ Puede obtener más información acerca de cómo diseñar modelos para el servici
 
 ## <a name="see-also"></a>Vea también
 
-[Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[Crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[Introducción a las herramientas de diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)  
-[Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)
+[crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)
+[información general de las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md) 
+ [ Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
