@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3
 helpviewer_keywords:
@@ -12,60 +12,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad01cf848d90a421f36aba65876afdd94ac9649c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cbce619e15006736a2f36bf1d3ab360f6b964a2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002670"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705929"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
-Esta interfaz proporciona compatibilidad para:  
-  
--   Recuperar una cadena de longitud arbitraria asociada a la propiedad.  
-  
--   Asocia un identificador único a la propiedad.  
-  
--   Recuperar una lista de visores personalizados para la propiedad.  
-  
--   Establecer el valor de una propiedad con la capacidad para notificar los errores resultantes  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-IDebugProperty3 : IDebugProperty2  
-```  
-  
-## <a name="notes-for-implementers"></a>Notas para los implementadores  
- El motor de depuración (DE) implementa esta interfaz en el mismo objeto que implementa [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) para proporcionar compatibilidad con cadenas largas, los identificadores de propiedad y visores personalizados.  
-  
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Llame a [QueryInterface](/cpp/atl/queryinterface) en un `IDebugProperty2` interfaz para obtener esta interfaz.  
-  
-## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- Además de los métodos heredados de `IDebugProperty2`, el `IDebugProperty3` interfaz expone los métodos siguientes.  
-  
-|Método|Descripción|  
-|------------|-----------------|  
-|[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)|Devuelve la longitud de la cadena asociada a la propiedad.|  
-|[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|Devuelve la cadena en un búfer proporcionado por el usuario.|  
-|[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|Crea un identificador único para esta propiedad.|  
-|[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)|Destruye el identificador único para esta propiedad.|  
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Devuelve el número de visores personalizados que se puede ver con esta propiedad.|  
-|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Devuelve la lista de visores personalizados que se puede ver con esta propiedad.|  
-|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Establece el valor de esta propiedad, devuelve un mensaje de error si algo salía mal.|  
-  
-## <a name="remarks"></a>Comentarios  
- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) es la manera preferida para el Administrador de depuración (SDM) para establecer el valor de la propiedad de sesión.  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
-  
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
-  
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vea también  
- [Interfaces del núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)
+Esta interfaz proporciona compatibilidad para:
+
+-   Recuperar una cadena de longitud arbitraria asociada a la propiedad.
+
+-   Asocia un identificador único a la propiedad.
+
+-   Recuperar una lista de visores personalizados para la propiedad.
+
+-   Establecer el valor de una propiedad con la capacidad para notificar los errores resultantes
+
+## <a name="syntax"></a>Sintaxis
+
+```
+IDebugProperty3 : IDebugProperty2
+```
+
+## <a name="notes-for-implementers"></a>Notas para los implementadores
+ El motor de depuración (DE) implementa esta interfaz en el mismo objeto que implementa [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) para proporcionar compatibilidad con cadenas largas, los identificadores de propiedad y visores personalizados.
+
+## <a name="notes-for-callers"></a>Notas para los llamadores
+ Llame a [QueryInterface](/cpp/atl/queryinterface) en un `IDebugProperty2` interfaz para obtener esta interfaz.
+
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
+ Además de los métodos heredados de `IDebugProperty2`, el `IDebugProperty3` interfaz expone los métodos siguientes.
+
+|Método|Descripción|
+|------------|-----------------|
+|[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)|Devuelve la longitud de la cadena asociada a la propiedad.|
+|[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|Devuelve la cadena en un búfer proporcionado por el usuario.|
+|[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|Crea un identificador único para esta propiedad.|
+|[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)|Destruye el identificador único para esta propiedad.|
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Devuelve el número de visores personalizados que se puede ver con esta propiedad.|
+|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Devuelve la lista de visores personalizados que se puede ver con esta propiedad.|
+|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Establece el valor de esta propiedad, devuelve un mensaje de error si algo salía mal.|
+
+## <a name="remarks"></a>Comentarios
+- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) es la manera preferida para el Administrador de depuración (SDM) para establecer el valor de la propiedad de sesión.
+
+## <a name="requirements"></a>Requisitos
+ Encabezado: msdbg.h
+
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vea también
+- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

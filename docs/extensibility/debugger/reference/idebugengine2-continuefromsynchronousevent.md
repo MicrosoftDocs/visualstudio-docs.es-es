@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::ContinueFromSynchronousEvent | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::ContinueFromSynchronousEvent
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9e4a02fdccb15f959615c0e7e39d22a05c40ea2
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 87b484a1f8e2a116bd6cae288be7cc295c1a93e5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450469"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711844"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Llamado por el Administrador de depuración de la sesión (SDM) para indicar que un evento de depuración sincrónica, enviado previamente por el motor de depuración (DE) para el SDM, se ha recibido y procesado.
@@ -37,8 +37,9 @@ HRESULT ContinueFromSynchronousEvent(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`pEvent`  
-[in] Un [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objeto que representa los eventos sincrónicos enviados anteriormente desde el que el depurador ahora debe seguir.
+`pEvent`
+
+ [in] Un [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objeto que representa los eventos sincrónicos enviados anteriormente desde el que el depurador ahora debe seguir.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -86,5 +87,5 @@ HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)  
-[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

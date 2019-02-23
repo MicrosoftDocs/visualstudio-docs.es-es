@@ -8,14 +8,14 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 809ca83d164b4cb589f19438b1fc5672cc1b4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07a9363eef7d350ddbc7ec55f9fab62f38dadc1d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880957"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710609"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procedimiento Crear extensiones compatibles con Visual Studio 2017 y Visual Studio 2015
+# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Filtrar Crear extensiones compatibles con Visual Studio 2017 y Visual Studio 2015
 
 Este documento explica cómo crear proyectos de extensibilidad de ida y vuelta entre Visual Studio 2015 y Visual Studio 2017. Después de completar esta actualización, será capaz de abrir, compilar, instalar y ejecutar en Visual Studio 2015 y Visual Studio 2017 en un proyecto. Como referencia, algunas extensiones que pueden ida y vuelta entre Visual Studio 2015 y Visual Studio 2017 pueden encontrarse en el [ejemplos de extensibilidad de SDK de VS](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 

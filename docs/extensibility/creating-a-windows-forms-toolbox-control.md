@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b711d91e50d0aecb579f7d02afe2123e365425
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316592"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687892"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Crear un Control de cuadro de herramientas de Windows Forms
 La plantilla de elemento de Control de cuadro de herramientas de Windows Forms que se incluye en las herramientas de extensibilidad de Visual Studio (SDK de VS) le permite crear un control que se agrega automáticamente a la **cuadro de herramientas** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un control de contador sencillo que puede distribuir a otros usuarios.
@@ -209,7 +209,7 @@ El `Counter` control va a exponer un método para incrementar el contador, un ev
 Cuando se crea un **cuadro de herramientas** control, Visual Studio crea un archivo denominado *ProjectName.vsix* en la carpeta \bin\debug\ del proyecto. Puede implementar el control mediante la carga de la *.vsix* archivo a una red o a un sitio Web. Cuando un usuario abre el *.vsix* archivo, el control se instala y se agrega a Visual Studio **cuadro de herramientas** en el equipo del usuario. Como alternativa, puede cargar el *.vsix* archivo [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) para que los usuarios pueden buscarlo en el **herramientas**  >   **Extensiones y actualizaciones** cuadro de diálogo.
 
 ## <a name="see-also"></a>Vea también
-[Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Crear un Control de cuadro de herramientas WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
-[Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Fundamentos de desarrollo de controles de Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Crear un Control de cuadro de herramientas WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Fundamentos de desarrollo de controles de Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
