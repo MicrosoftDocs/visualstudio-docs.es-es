@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a162858431f319e4d56667c2c85b7b53d1d86ab
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c41a155fb3a85bcb9f0b0e5eae461f2ae172c7e2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316033"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709985"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 Esta estructura describe un contexto de la memoria o el contexto del código.
@@ -49,26 +49,19 @@ public struct CONTEXT_INFO {
 ```
 
 ## <a name="members"></a>Miembros
-dwFields  
-Una combinación de marcas de él [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeración que especifica qué campos se rellenan<strong>.</strong>
+dwFields una combinación de marcas de él [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeración que especifica qué campos se rellenan<strong>.</strong>
 
-bstrModuleUrl  
-El nombre del módulo donde se encuentra el contexto.
+El nombre del módulo donde se encuentra el contexto de bstrModuleUrl.
 
-bstrFunction  
-El nombre de la función donde se encuentra el contexto.
+El nombre de la función donde se encuentra el contexto de bstrFunction.
 
-posFunctionOffset  
-Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que identifica el desplazamiento de línea y columna de la función asociada al contexto del código.
+posFunctionOffset A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que identifica el desplazamiento de línea y columna de la función asociada al contexto del código.
 
-bstrAddress  
-La dirección en el código donde se encuentra el contexto especificado.
+bstrAddress la dirección en el código donde se encuentra el contexto especificado.
 
-bstrAddressOffset  
-El desplazamiento de la dirección en el código donde se encuentra el contexto especificado.
+bstrAddressOffset el desplazamiento de la dirección en el código donde se encuentra el contexto especificado.
 
-bstrAddressAbsolute  
-La dirección absoluta en la memoria donde se encuentra el contexto especificado.
+bstrAddressAbsolute la dirección absoluta en la memoria donde se encuentra el contexto especificado.
 
 ## <a name="remarks"></a>Comentarios
 Esta estructura se devuelve desde una llamada a la [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) método.
@@ -83,7 +76,7 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)  
-[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
+- [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

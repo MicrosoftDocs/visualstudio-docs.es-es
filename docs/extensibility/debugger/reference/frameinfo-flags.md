@@ -1,7 +1,7 @@
 ---
 title: FRAMEINFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FRAMEINFO_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10641f9af57f572b660e900161a450c69886ad5e
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 54bb93fa6f88c02731691728bceacdd4a5fe2036
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316046"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694353"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 Especifica la información para recuperar sobre un objeto de marco de pila.
@@ -98,98 +98,67 @@ public enum enum_FRAMEINFO_FLAGS {
 ```
 
 ## <a name="members"></a>Miembros
-FIF_FUNCNAME  
-Inicializar o usar el `m_bstrFuncName` campo.
+FIF_FUNCNAME Initialize o usar el `m_bstrFuncName` campo.
 
-FIF_RETURNTYPE  
-Inicializar o usar el `m_bstrReturnType` campo.
+FIF_RETURNTYPE Initialize o usar el `m_bstrReturnType` campo.
 
-FIF_ARGS  
-Inicializar o usar el `m_bstrArgs` campo.
+FIF_ARGS Initialize o usar el `m_bstrArgs` campo.
 
-FIF_LANGUAGE  
-Inicializar o usar el `m_bstrLanguage` campo.
+FIF_LANGUAGE Initialize o usar el `m_bstrLanguage` campo.
 
-FIF_MODULE  
-Inicializar o usar el `m_bstrModule` campo.
+FIF_MODULE Initialize o usar el `m_bstrModule` campo.
 
-FIF_STACKRANGE  
-Inicializar o usar el `m_addrMin` y `m_addrMax` campos (intervalo de pila).
+FIF_STACKRANGE Initialize o usar el `m_addrMin` y `m_addrMax` campos (intervalo de pila).
 
-FIF_FRAME  
-Inicializar o usar el `m_pFrame` campo.
+FIF_FRAME Initialize o usar el `m_pFrame` campo.
 
-FIF_DEBUGINFO  
-Inicializar o usar el `m_fHasDebugInfo` campo.
+FIF_DEBUGINFO Initialize o usar el `m_fHasDebugInfo` campo.
 
-FIF_STALECODE  
-Inicializar o usar el `m_fStaleCode` campo.
+FIF_STALECODE Initialize o usar el `m_fStaleCode` campo.
 
-FIF_ANNOTATEDFRAME  
-Inicializar o usar el `m_fAnnotatedFrame` campo.
+FIF_ANNOTATEDFRAME Initialize o usar el `m_fAnnotatedFrame` campo.
 
-FIF_DEBUG_MODULEP  
-Inicializar o usar el `m_pModule` campo.
+FIF_DEBUG_MODULEP Initialize o usar el `m_pModule` campo.
 
-FIF_FUNCNAME_FORMAT  
-Formatos de nombre de la función. El resultado se devuelve en el `m_bstrFunName` campo y no hay otros campos se rellenan.
+FIF_FUNCNAME_FORMAT formatos de nombre de la función. El resultado se devuelve en el `m_bstrFunName` campo y no hay otros campos se rellenan.
 
-FIF_FUNCNAME_RETURNTYPE  
-Agrega el tipo de valor devuelto para la `m_bstrFuncName` campo.
+FIF_FUNCNAME_RETURNTYPE agrega el tipo de valor devuelto para la `m_bstrFuncName` campo.
 
-FIF_FUNCNAME_ARGS  
-Agrega los argumentos para el `m_bstrFuncName` campo.
+FIF_FUNCNAME_ARGS agrega los argumentos para el `m_bstrFuncName` campo.
 
-FIF_FUNCNAME_LANGUAGE  
-El idioma que se agrega el `m_bstrFuncName` campo.
+FIF_FUNCNAME_LANGUAGE agrega el idioma para el `m_bstrFuncName` campo.
 
-FIF_FUNCNAME_MODULE  
-Agrega el nombre del módulo para el `m_bstrFuncName` campo.
+FIF_FUNCNAME_MODULE agrega el nombre del módulo para el `m_bstrFuncName` campo.
 
-FIF_FUNCNAME_LINES  
-Agrega el número de líneas para el `m_bstrFuncName` campo.
+FIF_FUNCNAME_LINES agrega el número de líneas para el `m_bstrFuncName` campo.
 
-FIF_FUNCNAME_OFFSET  
-Agrega a la `m_bstrFuncName` campo el desplazamiento en bytes desde el principio de la línea si `FIF_FUNCNAME_LINES` se especifica. Si `FIF_FUNCNAME_LINES` no se especifica, o si los números de línea no están disponibles, agrega el desplazamiento en bytes desde el principio de la función.
+FIF_FUNCNAME_OFFSET agrega a la `m_bstrFuncName` campo el desplazamiento en bytes desde el principio de la línea si `FIF_FUNCNAME_LINES` se especifica. Si `FIF_FUNCNAME_LINES` no se especifica, o si los números de línea no están disponibles, agrega el desplazamiento en bytes desde el principio de la función.
 
-FIF_FUNCNAME_ARGS_TYPES  
-Agrega el tipo de cada argumento de función para el `m_bstrFuncName` campo.
+FIF_FUNCNAME_ARGS_TYPES agrega el tipo de cada argumento de función para el `m_bstrFuncName` campo.
 
-FIF_FUNCNAME_ARGS_NAMES  
-Agrega el nombre de cada argumento de función para el `m_bstrFuncName` campo.
+FIF_FUNCNAME_ARGS_NAMES agrega el nombre de cada argumento de función para el `m_bstrFuncName` campo.
 
-FIF_FUNCNAME_ARGS_VALUES  
-Agrega el valor de cada argumento de función para el `m_bstrFuncName` campo.
+FIF_FUNCNAME_ARGS_VALUES agrega el valor de cada argumento de función para el `m_bstrFuncName` campo.
 
-FIF_FUNCNAME_ARGS_ALL  
-Agrega el tipo, nombre y valor de todos los argumentos de la `m_bstrFuncName` campo.
+FIF_FUNCNAME_ARGS_ALL agrega el tipo, nombre y valor de todos los argumentos de la `m_bstrFuncName` campo.
 
-FIF_ARGS_TYPES  
-Los tipos de argumento se recupera y da formato.
+FIF_ARGS_TYPES los tipos de argumento se recupera y da formato.
 
-FIF_ARGS_NAMES  
-Los nombres de argumento se recuperan y con formato.
+FIF_ARGS_NAMES los nombres de argumento se recupera y da formato.
 
-FIF_ARGS_VALUES  
-Los valores de argumento se recuperan y con formato.
+FIF_ARGS_VALUES los valores de argumento se recupera y da formato.
 
-FIF_ARGS_ALL  
-Recuperar y dar formato el tipo, nombre y valor de todos los argumentos.
+Recuperar FIF_ARGS_ALL y el tipo de formato, nombre y valor de todos los argumentos.
 
-FIF_ARGS_NOFORMAT  
-Especifica que los argumentos no se tiene el formato (por ejemplo, no agregue apertura y cierre de la lista de argumentos entre paréntesis ni agregar un separador entre los argumentos).
+FIF_ARGS_NOFORMAT especifica que los argumentos no son tengan el formato (por ejemplo, no agregue apertura y cierre de la lista de argumentos entre paréntesis ni agregar un separador entre los argumentos).
 
-FIF_ARGS_NO_FUNC_EVAL  
-Especifica que la evaluación de función (propiedad) no debe utilizarse cuando se recuperan valores de argumento.
+FIF_ARGS_NO_FUNC_EVAL especifica que la evaluación (propiedad) de la función no debe usarse cuando se recuperan valores de argumento.
 
-FIF_FILTER_NON_USER_CODE  
-El motor de depuración es filtrar marcos de código de no usuario, por lo que no se incluyen.
+FIF_FILTER_NON_USER_CODE el motor de depuración es filtrar marcos de código de no usuario, por lo que no se incluyen.
 
-FIF_ARGS_NO_TOSTRING  
-No permitir `ToString()` función evaluación o cuando se devuelven los argumentos de la función de formato.
+FIF_ARGS_NO_TOSTRING no permiten `ToString()` función evaluación o cuando se devuelven los argumentos de la función de formato.
 
-FIF_DESIGN_TIME_EXPR_EVAL  
-Información del marco debe ser recibido desde el dominio de aplicación hospedado en lugar de con el proceso de hospedaje.
+Información del marco FIF_DESIGN_TIME_EXPR_EVAL debe ser recibido del dominio de aplicación hospedado en lugar de con el proceso de hospedaje.
 
 ## <a name="remarks"></a>Comentarios
 Estas marcas se pasan a la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) y [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) métodos para indicar cuáles son los campos se inicialicen en la [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) o más estructuras.
@@ -204,7 +173,7 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)  
-[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)
+- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)
+- [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)

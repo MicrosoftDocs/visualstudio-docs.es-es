@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramPublisher2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramPublisher2
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 616966eea58ab0f458abdfe2dace936a251ec8e0
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 4a7547639fb2f7f3068dd7f738b0c0d10ea926f0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450300"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690310"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Esta interfaz permite que un motor de depuración (DE) o proveedores de puerto personalizado para registrar los programas para la depuración.
@@ -90,5 +90,5 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 ```
 
 ## <a name="see-also"></a>Vea también
-[Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)  
-[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
+- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

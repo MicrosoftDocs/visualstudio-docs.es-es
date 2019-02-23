@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::Enable | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::Enable
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1b677ac9ef9a1f718f1928d07e546a5b7d172fe
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 267f7b3fed8df1a326bca9dd5c1ca8128330ee16
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318724"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705091"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 Habilita o deshabilita el punto de interrupción.
@@ -38,8 +38,9 @@ int Enable( 
 ```
 
 #### <a name="parameters"></a>Parámetros
-`fEnable`  
-[in] Conjunto distinto de cero (`TRUE`) para habilitar o cero (`FALSE`) para deshabilitar el punto de interrupción.
+`fEnable`
+
+ [in] Conjunto distinto de cero (`TRUE`) para habilitar o cero (`FALSE`) para deshabilitar el punto de interrupción.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se establece el estado del objeto de punto de interrupción enlazado en `BPS_DELETED` (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).
@@ -95,5 +96,5 @@ HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
-[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
