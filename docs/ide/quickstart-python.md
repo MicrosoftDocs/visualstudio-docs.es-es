@@ -31,7 +31,7 @@ Los pasos siguientes crean un proyecto vacío que actúa como un contenedor para
 
 1. En la barra de menús superior, elija **Archivo > Nuevo > Proyecto**.
 
-1. En el diálogo cuadro **Nuevo proyecto**, escriba "Proyecto web de Python" en el campo de búsqueda situado en la parte superior derecha, elija **Proyecto Web** en la lista del medio, asigne un nombre al proyecto (por ejemplo, "HelloPython") y luego elija **Aceptar**.
+1. En el cuadro de diálogo **Nuevo proyecto**, escriba "Proyecto web de Python" en el campo de búsqueda situado en la parte superior derecha, elija **Proyecto Web** en la lista del medio, asigne un nombre al proyecto (por ejemplo, "HelloPython") y luego elija **Aceptar**.
 
     ![Cuadro de diálogo Nuevo proyecto con Proyecto web de Python seleccionado](media/quickstart-python-00-web-project.png)
 
