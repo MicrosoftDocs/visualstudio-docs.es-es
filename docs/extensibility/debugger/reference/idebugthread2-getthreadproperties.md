@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::GetThreadProperties | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::GetThreadProperties
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41164b906ba3fca25347aaa65031b4dd5befe48
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: b32ec64123ef8db4724c7646c54af790fc7500a1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449845"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714652"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Obtiene las propiedades que describen este subproceso.
@@ -39,11 +39,13 @@ int GetThreadProperties (
 ```
 
 #### <a name="parameters"></a>Parámetros
-`dwFields`  
-[in] Una combinación de marcas de la [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeración que determina qué campos de `ptp` deben rellenarse.
+`dwFields`
 
-`ptp`  
-[in, out] Un [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estructura que se rellena con las propiedades del subproceso.
+ [in] Una combinación de marcas de la [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeración que determina qué campos de `ptp` deben rellenarse.
+
+`ptp`
+
+ [in, out] Un [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estructura que se rellena con las propiedades del subproceso.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -91,6 +93,6 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
-[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)  
-[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)
+- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

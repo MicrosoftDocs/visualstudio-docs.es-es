@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317125"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719488"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Filtrar Diagnosticar retrasos de la interfaz de usuario causados por las extensiones
 
@@ -21,7 +21,7 @@ Cuando la interfaz de usuario deja de responder, Visual Studio examina la pila d
 
 La notificación informa al usuario que el retraso de la interfaz de usuario (es decir, en la falta de respuesta en la interfaz de usuario) podría haber sido el resultado del código de una extensión. También proporciona al usuario con opciones para deshabilitar la extensión o las notificaciones futuras de esa extensión.
 
-Este documento describe cómo puede diagnosticar qué en el código de extensión está causando las notificaciones de retraso de la interfaz de usuario. 
+Este documento describe cómo puede diagnosticar qué en el código de extensión está causando las notificaciones de retraso de la interfaz de usuario.
 
 > [!NOTE]
 > No use la instancia experimental de Visual Studio para diagnosticar retrasos de la interfaz de usuario. Algunas partes de los análisis de la pila de llamadas necesarios para las notificaciones de retraso de la interfaz de usuario se desactivan cuando se usa la instancia experimental, lo que significa que no se muestren las notificaciones de retraso de la interfaz de usuario.
@@ -102,7 +102,7 @@ A continuación, abra el archivo de seguimiento. Para ello, ya sea mediante la m
 A continuación, seleccione el archivo de seguimiento en el panel izquierdo y ábrala eligiendo **abrir** en el menú contextual.
 
 > [!NOTE]
-> De forma predeterminada PerfView da como resultado un archivo Zip. Al abrir *trace.zip*, descomprime el archivo automáticamente y se abre el seguimiento. Puede omitir esto desactivando el **Zip** cuadro durante la recolección de seguimiento. Sin embargo, si va a transferir y utilizar seguimientos en las distintas máquinas, se recomienda desactivar la **Zip** cuadro. Sin esta opción, los archivos PDB necesarios para los ensamblados Ngen no se adjuntará a la traza y, por tanto, no se resolverán símbolos de los ensamblados Ngen en el equipo de destino. (Consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) para obtener más información sobre los archivos PDB para ensamblados Ngen.) 
+> De forma predeterminada PerfView da como resultado un archivo Zip. Al abrir *trace.zip*, descomprime el archivo automáticamente y se abre el seguimiento. Puede omitir esto desactivando el **Zip** cuadro durante la recolección de seguimiento. Sin embargo, si va a transferir y utilizar seguimientos en las distintas máquinas, se recomienda desactivar la **Zip** cuadro. Sin esta opción, los archivos PDB necesarios para los ensamblados Ngen no se adjuntará a la traza y, por tanto, no se resolverán símbolos de los ensamblados Ngen en el equipo de destino. (Consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) para obtener más información sobre los archivos PDB para ensamblados Ngen.)
 
 Puede tardar varios minutos en PerfView procesar y abrir el seguimiento. Una vez que el seguimiento está abierto, aparecerá una lista de diversas "vistas" debajo de él.
 

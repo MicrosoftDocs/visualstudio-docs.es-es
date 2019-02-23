@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAssemblyName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAssemblyName
 - GetAssemblyName
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60ea9a6f498a776bc8db0b7ee0fe12aa3c23e19f
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 491e3cbb2003dc293f41a207ab7ae13a7e76cc68
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412934"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692312"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
 Recupera el nombre del ensamblado dado su módulo y dominio de aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
-[C++]
+```cpp
 HRESULT GetAssemblyName(
     ULONG32 ulAppDomainID,
     GUID    guidModule,
@@ -32,8 +31,7 @@ HRESULT GetAssemblyName(
 );
 ```
 
-```
-[C#]
+```csharp
 int GetAssemblyName(
     uint   ulAppDomainID,
     Guid   guidModule,
@@ -42,14 +40,17 @@ int GetAssemblyName(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`ulAppDomainID`  
-[in] Identificador del dominio de aplicación.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Identificador único para el módulo.
+ [in] Identificador del dominio de aplicación.
 
-`pbstrName`  
-[out] Devuelve el nombre del ensamblado.
+`guidModule`
+
+ [in] Identificador único para el módulo.
+
+`pbstrName`
+
+ [out] Devuelve el nombre del ensamblado.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -84,4 +85,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

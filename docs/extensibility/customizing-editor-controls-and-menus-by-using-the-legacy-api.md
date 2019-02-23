@@ -10,29 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a365ac32ad59d01ceff7bc29cbb223a8fd32e5f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f52c0bbb87cc610b1b05ef987f43167f60292f4f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002731"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684005"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Personalizar controles de editor y Mmenus mediante la API heredada
-Un servicio de lenguaje o una vista de texto puede controlar los menús contextuales y los controles en el editor. Las páginas de esta sección explican cómo trabajar con estas características.  
-  
-## <a name="in-this-section"></a>En esta sección  
- [Barra desplegable](../extensibility/drop-down-bar.md)  
- Describe la barra desplegable y se proporcionan instrucciones para su implementación.  
-  
- [Control de comandos](../extensibility/command-handling.md)  
- Comando de detalles en los editores de control.  
-  
- [Menús contextuales](../extensibility/context-menus.md)  
- Describe los menús contextuales del editor.  
-  
- [Cómo: Actualización de la barra de estado](../extensibility/how-to-update-the-status-bar.md)  
- Proporciona instrucciones para actualizar el **barra de estado**.  
-  
-## <a name="related-sections"></a>Secciones relacionadas  
- [Extensiones de servicio de editor y lenguaje](../extensibility/editor-and-language-service-extensions.md)  
- Presenta a los diferentes tipos de editores que se puede usar en Visual Studio.
+Un servicio de lenguaje o una vista de texto puede controlar los menús contextuales y los controles en el editor. Las páginas de esta sección explican cómo trabajar con estas características.
+
+## <a name="in-this-section"></a>En esta sección
+- [Barra desplegable](../extensibility/drop-down-bar.md) describe la barra desplegable y se proporcionan instrucciones para su implementación.
+
+- [Gestión de comandos](../extensibility/command-handling.md) control en los editores de comandos de detalles.
+
+- [Menús contextuales](../extensibility/context-menus.md) se describen los menús contextuales del editor.
+
+- [Cómo: Actualizar la barra de estado](../extensibility/how-to-update-the-status-bar.md) proporciona instrucciones para actualizar el **barra de estado**.
+
+## <a name="related-sections"></a>Secciones relacionadas
+- [Las extensiones de servicio de editor y lenguaje](../extensibility/editor-and-language-service-extensions.md) presenta los diferentes tipos de editores que se puede usar en Visual Studio.

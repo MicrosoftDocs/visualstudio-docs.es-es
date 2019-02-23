@@ -12,35 +12,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fe071cb0c0de62f4e59785f829adfaacc992336
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e2b3818aaa5097313d9150b365544267768507f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023543"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708945"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion (Función)
-Esta función obtiene el número de versión de la API de complemento de Control de código fuente compatibles con el complemento de control de código fuente.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-LONG SccGetVersion(void);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- Ninguno.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Un `LONG` tipo de datos que contiene el número de versión de la API de complemento de Control de origen compatibles:  
-  
-|WORD|Descripción|  
-|----------|-----------------|  
-|HIWORD|Versión principal|  
-|LOWORD|Versión secundaria|  
-  
-## <a name="remarks"></a>Comentarios  
- Por ejemplo, si un complemento de control de origen es compatible con la versión 1.3 de la API de complemento de Control de origen, esta función debería devolver 0 x 0103.  
-  
-## <a name="see-also"></a>Vea también  
- [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+Esta función obtiene el número de versión de la API de complemento de Control de código fuente compatibles con el complemento de control de código fuente.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+LONG SccGetVersion(void);
+```
+
+#### <a name="parameters"></a>Parámetros
+ Ninguno.
+
+## <a name="return-value"></a>Valor devuelto
+ Un `LONG` tipo de datos que contiene el número de versión de la API de complemento de Control de origen compatibles:
+
+|WORD|Descripción|
+|----------|-----------------|
+|HIWORD|Versión principal|
+|LOWORD|Versión secundaria|
+
+## <a name="remarks"></a>Comentarios
+ Por ejemplo, si un complemento de control de origen es compatible con la versión 1.3 de la API de complemento de Control de origen, esta función debería devolver 0 x 0103.
+
+## <a name="see-also"></a>Vea también
+- [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

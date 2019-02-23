@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetFunctionLineOffset | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetFunctionLineOffset
 - GetFunctionLineOffset
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ff64676ba99f16941044f18c8988a690bfc8a28
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 73bd3184396ec020e8337efe6397503263be5359
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412986"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706293"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 Recupera la dirección dentro de una función que representa el desplazamiento de la línea determinada.
@@ -40,14 +40,17 @@ int GetFunctionLineOffset(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`pAddress`  
-[in] Dirección que representa la función.
+`pAddress`
 
-`dwLine`  
-[in] Desplazamiento desde el principio de la función de la línea.
+ [in] Dirección que representa la función.
 
-`ppNewAddress`  
-[out] Nueva dirección que representa el desplazamiento desde el principio de la función de línea.
+`dwLine`
+
+ [in] Desplazamiento desde el principio de la función de la línea.
+
+`ppNewAddress`
+
+ [out] Nueva dirección que representa el desplazamiento desde el principio de la función de línea.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -101,4 +104,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

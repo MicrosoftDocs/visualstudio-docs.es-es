@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess3::Continue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcess3::Continue
 helpviewer_keywords:
@@ -12,46 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58cae37bb73a397a7d1b1226c91f68ecb44484c8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fefbbbced72a53566ffb726c9ea900e037ee4639
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985437"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719345"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
-Continúa la ejecución de este proceso de un estado detenido. Se conserva ningún estado de ejecución anterior (por ejemplo, un paso), y el proceso comienza a ejecutarse de nuevo.  
-  
+Continúa la ejecución de este proceso de un estado detenido. Se conserva ningún estado de ejecución anterior (por ejemplo, un paso), y el proceso comienza a ejecutarse de nuevo.
+
 > [!NOTE]
->  Este método debería usarse en lugar de [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT Continue(  
-   IDebugThread2* pThread  
-);  
-```  
-  
-```csharp  
-int Continue(  
-   IDebugThread2 pThread  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pThread`  
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso se puede continuar.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- Este método se llama en este proceso, independientemente de cuántos procesos se están depurando o proceso que generó el evento de detención. La implementación debe conservar el estado de ejecución anterior (por ejemplo, un paso) y continuar la ejecución como si nunca había dejado antes de completar su ejecución anterior. Es decir, si un subproceso en este proceso estaba realizando una operación de paso y se detuvo porque se detuvo de algún otro proceso y, a continuación, `Continue` llamó, el subproceso debe completar la operación pasó por alto original.  
-  
- **Advertencia** no enviar ningún evento de detención o a un evento (sincrónico) inmediato [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; en caso contrario, el depurador puede dejar de responder.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+>  Este método debería usarse en lugar de [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT Continue(
+   IDebugThread2* pThread
+);
+```
+
+```csharp
+int Continue(
+   IDebugThread2 pThread
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pThread`
+
+ [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso se puede continuar.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.
+
+## <a name="remarks"></a>Comentarios
+ Este método se llama en este proceso, independientemente de cuántos procesos se están depurando o proceso que generó el evento de detención. La implementación debe conservar el estado de ejecución anterior (por ejemplo, un paso) y continuar la ejecución como si nunca había dejado antes de completar su ejecución anterior. Es decir, si un subproceso en este proceso estaba realizando una operación de paso y se detuvo porque se detuvo de algún otro proceso y, a continuación, `Continue` llamó, el subproceso debe completar la operación pasó por alto original.
+
+ **Advertencia** no enviar ningún evento de detención o a un evento (sincrónico) inmediato [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; en caso contrario, el depurador puede dejar de responder.
+
+## <a name="see-also"></a>Vea también
+- [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugDynamicField | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDynamicField
 helpviewer_keywords:
@@ -12,38 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53e4bd31833ad5cf3441638c3735230b89a16cf7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d94a685b9c79069a047e32155234f9bf6a50d5c5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938472"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692026"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
-Esta interfaz representa un tipo de una variable.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-IDebugDynamicField : IDebugField  
-```  
-  
-## <a name="notes-for-implementers"></a>Notas para los implementadores  
- Esta interfaz se implementa mediante proveedores de símbolos como una clase base para cualquier tipo que se puede determinar en tiempo de ejecución. Esto es solo para código administrado.  
-  
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Esta interfaz representa una clase base desde la que se pueden derivar las interfaces más especializadas.  
-  
-## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- Esta interfaz no proporciona ningún método distinto de los heredados de `IDebugField`.  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: sh.h  
-  
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
-  
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vea también  
- [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+Esta interfaz representa un tipo de una variable.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+IDebugDynamicField : IDebugField
+```
+
+## <a name="notes-for-implementers"></a>Notas para los implementadores
+ Esta interfaz se implementa mediante proveedores de símbolos como una clase base para cualquier tipo que se puede determinar en tiempo de ejecución. Esto es solo para código administrado.
+
+## <a name="notes-for-callers"></a>Notas para los llamadores
+ Esta interfaz representa una clase base desde la que se pueden derivar las interfaces más especializadas.
+
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
+ Esta interfaz no proporciona ningún método distinto de los heredados de `IDebugField`.
+
+## <a name="requirements"></a>Requisitos
+ Encabezado: sh.h
+
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vea también
+- [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

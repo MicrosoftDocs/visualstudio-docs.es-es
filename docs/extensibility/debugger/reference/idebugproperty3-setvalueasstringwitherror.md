@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee3d317cf45692a8214f15c1473eb8f781b21451
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450313"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709283"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Establece el valor de esta propiedad y devuelve un mensaje de error, si es necesario.
@@ -43,17 +43,21 @@ int SetValueAsStringWithError(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`pszValue`  
-[in] Valor que se va a establecer.
+`pszValue`
 
-`dwRadix`  
-[in] La base del valor que se va a establecer.
+ [in] Valor que se va a establecer.
 
-`dwTimeout`  
-[in] La longitud de tiempo de espera para que se puede establecer el valor (`INFINITE` , espera indefinida).
+`dwRadix`
 
-`errorString`  
-[out] Si se produjo un error al establecer el valor, contiene el motivo del error.
+ [in] La base del valor que se va a establecer.
+
+`dwTimeout`
+
+ [in] La longitud de tiempo de espera para que se puede establecer el valor (`INFINITE` , espera indefinida).
+
+`errorString`
+
+ [out] Si se produjo un error al establecer el valor, contiene el motivo del error.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -167,4 +171,4 @@ HRESULT CProperty::SetValueAsStringWithError(
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

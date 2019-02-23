@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetFlags | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetFlags
 - IDebugGenericParamField::GetFlags
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c68e532c893cd8a51895c8e409f646b003bba85
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: a5f03eae07ff02d69f304d1a9bb9deaa668bf521
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449729"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689647"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 Recupera las marcas para este parámetro genérico.
@@ -36,8 +36,9 @@ int GetFlags(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`pdwFlags`  
-[out] Devuelve las marcas para este parámetro genérico.
+`pdwFlags`
+
+ [out] Devuelve las marcas para este parámetro genérico.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -67,4 +68,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

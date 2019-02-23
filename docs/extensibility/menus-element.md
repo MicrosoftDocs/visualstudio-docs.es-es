@@ -11,72 +11,72 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e31be4d128ef9a349c4f2278a5b3f64982e1a4eb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96628f3b7050a4ce6f14185033e3d59af63a9de5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039129"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705604"
 ---
 # <a name="menus-element"></a>Menus (elemento)
-Define todos los menús y barras de herramientas que implementa un paquete VSPackage.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```xml  
-<Menus>  
-  <Menu>... </Menu>  
-  <Menu>... </Menu>  
-</Menus>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atributos y elementos  
- En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
-  
-### <a name="attributes"></a>Atributos  
-  
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementos secundarios  
-  
-|Elemento|Descripción|  
-|-------------|-----------------|  
-|[Menus (elemento)](../extensibility/menus-element.md)|Define todos los menús y barras de herramientas que implementa un paquete VSPackage.|  
-|[Elemento de menú](../extensibility/menu-element.md)|Representa un único menú o barra de herramientas.|  
-  
-### <a name="parent-elements"></a>Elementos primarios  
-  
-|Elemento|Descripción|  
-|-------------|-----------------|  
-|[Elemento Commands](../extensibility/commands-element.md)|Representa la colección de comandos en el VSPackage.|  
-  
-## <a name="example"></a>Ejemplo  
-  
-```xml  
-<Commands package="guidMyPackage">  
-    <Menus>  
-      <Menu Condition="'%(DEBUG)' != 'true'"   
-        guid="cmdSetGuidMyProductCommands" id="menuIDMainMenu"   
-        priority="0x0000" type="Menu">  
-        <Annotation>  
-          <Documentation>this is an annotation</Documentation>  
-          <AppInfo>  
-            <CustomData>  
-              <CustomSubElement>Some data</CustomSubElement>  
-            </CustomData>  
-          </AppInfo>  
-        </Annotation>  
-        <CommandFlag>AlwaysCreate</CommandFlag>  
-        <Strings>  
-          <ButtonText>MainMenu</ButtonText>  
-        </Strings>  
-      </Menu>  
-  </Menus>  
-<Commands>  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
+Define todos los menús y barras de herramientas que implementa un paquete VSPackage.
+
+## <a name="syntax"></a>Sintaxis
+
+```xml
+<Menus>
+  <Menu>... </Menu>
+  <Menu>... </Menu>
+</Menus>
+```
+
+## <a name="attributes-and-elements"></a>Atributos y elementos
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
+
+### <a name="attributes"></a>Atributos
+
+|Atributo|Descripción|
+|---------------|-----------------|
+|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementos secundarios
+
+|Elemento|Descripción|
+|-------------|-----------------|
+|[Menus (elemento)](../extensibility/menus-element.md)|Define todos los menús y barras de herramientas que implementa un paquete VSPackage.|
+|[Elemento de menú](../extensibility/menu-element.md)|Representa un único menú o barra de herramientas.|
+
+### <a name="parent-elements"></a>Elementos primarios
+
+|Elemento|Descripción|
+|-------------|-----------------|
+|[Elemento Commands](../extensibility/commands-element.md)|Representa la colección de comandos en el VSPackage.|
+
+## <a name="example"></a>Ejemplo
+
+```xml
+<Commands package="guidMyPackage">
+    <Menus>
+      <Menu Condition="'%(DEBUG)' != 'true'"
+        guid="cmdSetGuidMyProductCommands" id="menuIDMainMenu"
+        priority="0x0000" type="Menu">
+        <Annotation>
+          <Documentation>this is an annotation</Documentation>
+          <AppInfo>
+            <CustomData>
+              <CustomSubElement>Some data</CustomSubElement>
+            </CustomData>
+          </AppInfo>
+        </Annotation>
+        <CommandFlag>AlwaysCreate</CommandFlag>
+        <Strings>
+          <ButtonText>MainMenu</ButtonText>
+        </Strings>
+      </Menu>
+  </Menus>
+<Commands>
+```
+
+## <a name="see-also"></a>Vea también
+- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

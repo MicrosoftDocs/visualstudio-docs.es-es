@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer3::DisableAutoAttach | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer3::DisableAutoAttach
 helpviewer_keywords:
@@ -12,30 +12,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d92acea3bb4a8ebd09033ab652b8106f4c4ecb4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5cb6f819d7e1282b567c90623ce89b09eab2600f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988784"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678480"
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
-Deshabilita la asociación automática para todos los motores de depuración asociados con este servidor.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT DisableAutoAttach(  
-   void  
-);  
-```  
-  
-```csharp  
-int DisableAutoAttach();  
-```  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
+Deshabilita la asociación automática para todos los motores de depuración asociados con este servidor.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT DisableAutoAttach(
+   void
+);
+```
+
+```csharp
+int DisableAutoAttach();
+```
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

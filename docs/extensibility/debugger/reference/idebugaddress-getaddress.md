@@ -1,7 +1,7 @@
 ---
 title: IDebugAddress::GetAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugAddress::GetAddress
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91b90fd54ea70aed729707e927ad2394d756139
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1cff380759163a38129b92f07752e72904f6bbaf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917684"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684460"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
-Devuelve una estructura que describe un objeto y su ubicación dentro de su ámbito o el contenedor.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT GetAddress (  
-   DEBUG_ADDRESS * pAddress  
-);  
-```  
-  
-```csharp  
-int GetAddress(  
-   DEBUG_ADDRESS[] pAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pAddress`  
- [in, out] Un [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura que se rellena mediante este método.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- El [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura se pasa a este método, que, a continuación, se rellena con la información adecuada. Cómo se interpreta esta información depende del tipo de información que se devuelve como el propio controlador de símbolos. Consulte [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) para obtener más detalles.  
-  
-## <a name="see-also"></a>Vea también  
- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
+Devuelve una estructura que describe un objeto y su ubicación dentro de su ámbito o el contenedor.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetAddress (
+   DEBUG_ADDRESS * pAddress
+);
+```
+
+```csharp
+int GetAddress(
+   DEBUG_ADDRESS[] pAddress
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pAddress`
+
+ [in, out] Un [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura que se rellena mediante este método.
+
+## <a name="return-value"></a>Valor devuelto
+ Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ El [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura se pasa a este método, que, a continuación, se rellena con la información adecuada. Cómo se interpreta esta información depende del tipo de información que se devuelve como el propio controlador de símbolos. Consulte [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) para obtener más detalles.
+
+## <a name="see-also"></a>Vea también
+- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

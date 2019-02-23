@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91db654370cb9a186484c0fd61688bcb25af4ba1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316198"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710089"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Agregar que una lista a un submenú usados recientemente
 En este tutorial se basa en las demostraciones en [agregar un submenú a un menú](../extensibility/adding-a-submenu-to-a-menu.md)y se muestra cómo agregar una lista dinámica a un submenú. La lista dinámica constituye la base para la creación de una lista de usados recientemente (MRU).
@@ -202,4 +202,4 @@ Para seguir este tutorial, debe instalar el SDK de Visual Studio. Para obtener m
 4. Vuelva a abrir el submenú. Tenga en cuenta que **elemento 3** está ahora en la parte superior de la lista y los demás elementos se han insertado una posición hacia abajo. Haga clic en **elemento 3** nuevo y tenga en cuenta que el cuadro de mensaje todavía muestra **seleccionado elemento 3**, lo que indica que el texto se ha movido correctamente a la nueva posición junto con la etiqueta del comando.
 
 ## <a name="see-also"></a>Vea también
-[Agregar dinámicamente elementos de menú](../extensibility/dynamically-adding-menu-items.md)
+- [Agregar dinámicamente elementos de menú](../extensibility/dynamically-adding-menu-items.md)

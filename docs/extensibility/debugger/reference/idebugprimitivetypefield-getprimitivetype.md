@@ -1,7 +1,7 @@
 ---
 title: IDebugPrimitiveTypeField::GetPrimitiveType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetPrimitiveType
 - IDebugPrimitiveTypeField::GetPrimitiveType
@@ -11,36 +11,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88fe1efbdd30993a5b30457d952f98b3055d7c25
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 09015d343507afb8f68ed8165b07314465d2500c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949927"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695744"
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
-Recupera el tipo primitivo que está asociado este campo.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT GetPrimitiveType (  
-   DWORD* pdwType  
-);  
-```  
-  
-```csharp  
-int GetPrimitiveType (  
-   out uint pdwType  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pdwType`  
- [out] Valor de la [CorElementType (enumeración)](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) que representa el tipo primitivo.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE`.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)
+Recupera el tipo primitivo que está asociado este campo.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetPrimitiveType (
+   DWORD* pdwType
+);
+```
+
+```csharp
+int GetPrimitiveType (
+   out uint pdwType
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pdwType`
+
+ [out] Valor de la [CorElementType (enumeración)](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) que representa el tipo primitivo.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE`.
+
+## <a name="see-also"></a>Vea también
+- [IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)

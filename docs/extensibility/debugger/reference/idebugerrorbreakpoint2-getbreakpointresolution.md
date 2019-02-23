@@ -1,7 +1,7 @@
 ---
 title: IDebugErrorBreakpoint2::GetBreakpointResolution | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugErrorBreakpoint2::GetBreakpointResolution
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b46ce61266310279d035a515cc17d20e99ef9b6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1b1ba346a24c22a01039736b53568a89684af92c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961119"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702374"
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
-Obtiene la resolución de errores de punto de interrupción que describe el error.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT GetBreakpointResolution(   
-   IDebugErrorBreakpointResolution2** ppErrorResolution  
-);  
-```  
-  
-```csharp  
-int GetBreakpointResolution(   
-   out IDebugErrorBreakpointResolution2 ppErrorResolution  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `ppErrorResolution`  
- [out] Devuelve un [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) objeto que describe el error.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
- [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
+Obtiene la resolución de errores de punto de interrupción que describe el error.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetBreakpointResolution( 
+   IDebugErrorBreakpointResolution2** ppErrorResolution
+);
+```
+
+```csharp
+int GetBreakpointResolution( 
+   out IDebugErrorBreakpointResolution2 ppErrorResolution
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `ppErrorResolution`
+
+ [out] Devuelve un [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) objeto que describe el error.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
+- [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)

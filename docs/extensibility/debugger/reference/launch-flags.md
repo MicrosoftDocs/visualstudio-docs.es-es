@@ -1,7 +1,7 @@
 ---
 title: LAUNCH_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - LAUNCH_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d793adfd8be2fb86f51e94cfd43e8dbcbd75036f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450001"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680193"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Especifica las marcas de inicio de depuración.
@@ -44,17 +44,13 @@ public enum enum_LAUNCH_FLAGS {
 ```
 
 ## <a name="members"></a>Miembros
-LAUNCH_DEBUG  
-Inicia el proceso de depuración.
+LAUNCH_DEBUG inicia el proceso de depuración.
 
-LAUNCH_NODEBUG  
-Inicia el proceso sin depurarlo.
+LAUNCH_NODEBUG inicia el proceso sin depurarlo.
 
-LAUNCH_ENABLE_ENC  
-EN DESUSO, NO USE.
+LAUNCH_ENABLE_ENC EN DESUSO, NO USE.
 
-LAUNCH_MERGE_ENV  
-Inicia el proceso y combina el entorno con el host al iniciar.
+LAUNCH_MERGE_ENV inicia el proceso y combina el entorno con el host al iniciar.
 
 ## <a name="remarks"></a>Comentarios
 Estos valores se pasan como argumento a la [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) método.
@@ -69,5 +65,5 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
+- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

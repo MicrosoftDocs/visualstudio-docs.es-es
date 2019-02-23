@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a198b56576367058a8f3f701e03d0772bad47a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fa0ef14b64f3d7bf89e103d8a262af174475fdff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315955"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685799"
 ---
 # <a name="implement-getmethodproperty"></a>Implementar GetMethodProperty
 > [!IMPORTANT]
@@ -125,4 +125,4 @@ STDMETHODIMP CExpressionEvaluator::GetMethodProperty(
 ```
 
 ## <a name="see-also"></a>Vea también
-[Implementación de ejemplo de variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [Implementación de ejemplo de variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3650f59f4ad9fe690064d9972b3280bf5bbd15d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318490"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681314"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Crear un sistema de proyectos básico, parte 2
 El primer tutorial de esta serie, [crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), se muestra cómo crear un sistema de proyectos básico. En este tutorial se basa en el sistema de proyectos básico mediante la adición de una plantilla de Visual Studio, una página de propiedades y otras características. Debe completar el primer tutorial antes de iniciar esta.
@@ -40,7 +40,7 @@ En este tutorial se enseña cómo realizar estas tareas:
 > Los pasos descritos en este tutorial se basan en un proyecto de C#. Sin embargo, excepto para obtener información específica como extensiones de nombre de archivo y el código, puede usar los mismos pasos para un proyecto de Visual Basic.
 
 ## <a name="create-a-visual-studio-template"></a>Crear una plantilla de Visual Studio
-[Crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) se muestra cómo crear una plantilla de proyecto básico y agregarlo al sistema del proyecto. También muestra cómo registrar esta plantilla con Visual Studio mediante el uso de la <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo, que escribe la ruta de acceso completa de la *\\Templates\Projects\SimpleProject\\* carpeta en el sistema registro.
+- [Crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) se muestra cómo crear una plantilla de proyecto básico y agregarlo al sistema del proyecto. También muestra cómo registrar esta plantilla con Visual Studio mediante el uso de la <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo, que escribe la ruta de acceso completa de la *\\Templates\Projects\SimpleProject\\* carpeta en el sistema registro.
 
 Mediante una plantilla de Visual Studio (*.vstemplate* archivo) en lugar de una plantilla de proyecto básico, puede controlar cómo la plantilla aparece en el **nuevo proyecto** cuadro de diálogo y cómo son parámetros de plantilla sustituir. Un *.vstemplate* archivo es un archivo XML que se describe cómo los archivos de origen se incluirán cuando se crea un proyecto mediante la plantilla de proyecto del sistema. El sistema del proyecto se compila mediante la recopilación de la *.vstemplate* archivo y los archivos de origen en un *.zip* archivo e implementado mediante la copia de la *.zip* en una ubicación que es conocidos de Visual Studio. Este proceso se explica con más detalle más adelante en este tutorial.
 
@@ -271,7 +271,7 @@ Probar el archivo de proyecto modificado para ver si el **consola** nodo secunda
     ![Nodo de proyecto simple consola](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
 ## <a name="substitute-project-template-parameters"></a>Sustituir los parámetros de plantilla de proyecto
-[Creación de un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) se ha explicado cómo sobrescribir los `ProjectNode.AddFileFromTemplate` método para hacer un tipo básico de sustitución de parámetros de plantilla. Esta sección explican cómo usar los parámetros de plantilla de Visual Studio más sofisticados.
+- [Creación de un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) se ha explicado cómo sobrescribir los `ProjectNode.AddFileFromTemplate` método para hacer un tipo básico de sustitución de parámetros de plantilla. Esta sección explican cómo usar los parámetros de plantilla de Visual Studio más sofisticados.
 
 Cuando crea un proyecto mediante el uso de una plantilla de Visual Studio en el **nuevo proyecto** cuadro de diálogo plantilla de parámetros se reemplazan por cadenas para personalizar el proyecto. Un parámetro de plantilla es un token especial que empieza y termina con un signo de dólar, por ejemplo, $time$. Los dos parámetros siguientes son especialmente útiles para habilitar la personalización en los proyectos que se basan en la plantilla:
 

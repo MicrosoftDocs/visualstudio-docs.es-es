@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bb77683187bcb50c1aa5a4f599610acdbf1ac45
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ebb82353b3137e03e559a3b60132f4c25a306ab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038349"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716108"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Tutorial: Publicar una extensión de Visual Studio
 
@@ -73,33 +73,33 @@ En este artículo usa una extensión predeterminada de VSPackage, pero los pasos
 8. En **2: Proporcionar detalles de la extensión**, algunos campos están rellena automáticamente desde el *source.extension.vsixmanifest* archivo desde la extensión. Encontrar más detalles sobre cada una a continuación:
 
     * **Nombre interno** se usa en la dirección URL de página de detalles de la extensión. Para obtener un ejemplo, publicar una extensión en el nombre de publicador "MiNombre" y especificar el nombre interno para que sea "extensión my" da como resultado una dirección URL de "marketplace.visualstudio\.com/items?itemName=myname.myextension" para obtener información detallada de la extensión página.
-    
+
     * **Nombre para mostrar** de su extensión. Este nombre es rellena automáticamente desde el *source.extension.vsixmanifest* archivo.
-   
+
     * **Versión** número de la extensión que se va a cargar. Esta versión está rellena automáticamente desde el *source.extension.vsixmanifest* archivo.
-    
+
     * **Id. de VSIX** es el identificador único que usa Visual Studio para la extensión. Este identificador es necesario si desea que tengan la extensión que se actualiza automáticamente. Este identificador es rellena automáticamente desde el *source.extension.vsixmanifest* archivo.
-    
+
    * **Logotipo de** que se utiliza para la extensión. Este logotipo es rellena automáticamente desde el *source.extension.vsixmanifest* archivo si se proporciona.
-    
+
      * **Descripción breve** de lo que hace la extensión. Esta descripción es rellena automáticamente desde el *source.extension.vsixmanifest* archivo.
-    
+
      * **Información general sobre** es un buen lugar para incluir capturas de pantalla e información detallada sobre lo que hace la extensión.
-    
+
      * **Versiones compatibles de Visual Studio** permite elegir qué versiones de Visual Studio funcionará la extensión en. Solo se instala la extensión para esas versiones.
-    
+
      * ** Compatible de Visual Studio edition le permite elegir qué ediciones de Visual Studio funcionará la extensión en. Solo se instala la extensión para esas ediciones.
-    
+
      * **Tipo**. El tipo más común de las extensiones son **herramientas**.
-    
+
      * **Categorías**. Elija hasta tres son una mejor opción para la extensión.
-    
+
      * **Etiquetas** son palabras clave que ayudan a los usuarios encontrar la extensión. Las etiquetas pueden ayudar a aumentar la relevancia de la búsqueda de las extensiones en Marketplace.
-    
+
      * **Categoría de precios** es el costo de la extensión.
-    
+
      * **Repositorio de código fuente** le permite compartir un vínculo al código fuente con la Comunidad.
-    
+
      * **Permitir preguntas y respuestas para la extensión** permite a los usuarios dejar preguntas en la página de entrada de extensión.
 
 9. Haga clic en **guardar y cargar**. Esta opción se retrocede para el publicador de la página de administración. Aún no se ha publicado la extensión. Para publicar su extensión, haga doble clic en la extensión y seleccione **hacer público**. Puede ver cómo la extensión sería en Marketplace seleccionando **ver extensión**. Para los números de adquisición, haga clic en **informes**. Para realizar cambios en la extensión, haga clic en **editar**.
@@ -121,13 +121,13 @@ Marketplace admite la concesión de permisos de usuarios adicionales para accede
 3. A continuación, puede especificar la dirección de correo electrónico del usuario que desea agregar y conceder el nivel adecuado de acceso bajo **seleccionar un rol**.  Puede elegir entre las siguientes opciones:
 
    * **Creador**: El usuario puede publicar extensiones, pero no se puede ver o administrar extensiones publicadas por otros usuarios.
-  
+
    * **Reader**: El usuario puede ver las extensiones, pero no se puede publicar o administrar extensiones.
-  
+
    * **Colaborador**: El usuario puede publicar y administrar extensiones, pero no se puede editar la configuración del publicador o administrar el acceso.
-  
+
    * **Propietario**: El usuario puede publicar y administrar extensiones, editar la configuración del publicador y administrar el acceso.
-  
+
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Instalar la extensión de Visual Studio Marketplace
 
 Ahora que se ha publicado la extensión, instalarlo en Visual Studio y pruébela.

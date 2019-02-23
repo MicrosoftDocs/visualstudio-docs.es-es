@@ -11,39 +11,39 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f672a9d18e4963dba47b46a12e113e0a25a618
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 60129950c2311cc94b8573de4cd8ae3c46194e75
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001555"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704753"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties class: miembros internos
-Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> objeto.  
-  
- **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Ensamblado:** mscorlib (en mscorlib.dll)  
-  
- Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```csharp  
-.class auto ansi nested assembly beforefieldinit ContingentProperties  
-       extends System.Object  
-```  
-  
-## <a name="members"></a>Miembros  
-  
-### <a name="fields"></a>Campos  
-  
-|nombre|Descripción|  
-|----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|La lista de tareas secundarias que están registrados en esta tarea.|  
-  
-## <a name="remarks"></a>Comentarios  
- .NET Framework inicializa los campos de esta clase solo cuando sean necesarios.  
-  
-## <a name="see-also"></a>Vea también  
- [Parámetros internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> objeto.
+
+ **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Ensamblado:** mscorlib (en mscorlib.dll)
+
+ Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).
+
+## <a name="syntax"></a>Sintaxis
+
+```csharp
+.class auto ansi nested assembly beforefieldinit ContingentProperties
+       extends System.Object
+```
+
+## <a name="members"></a>Miembros
+
+### <a name="fields"></a>Campos
+
+|nombre|Descripción|
+|----------|-----------------|
+|[m_children](../../extensibility/debugger/m-children-field.md)|La lista de tareas secundarias que están registrados en esta tarea.|
+
+## <a name="remarks"></a>Comentarios
+ .NET Framework inicializa los campos de esta clase solo cuando sean necesarios.
+
+## <a name="see-also"></a>Vea también
+- [Parámetros internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
