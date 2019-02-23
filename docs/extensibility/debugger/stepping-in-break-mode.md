@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aefa1c4b3767ae58cb526c6f5a663350efd3137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 66e7e227daa0dd58bf24ae946cce667992e09f90
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922878"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685032"
 ---
 # <a name="stepping-in-break-mode"></a>Ejecución paso a paso en modo de interrupción
-La siguiente sección describe el proceso que se produce cuando el depurador está en modo de interrupción y debe recorrer el código:  
-  
-## <a name="stepping-process"></a>Proceso de ejecución paso a paso  
-  
-1.  Llame a [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) con [STEPKIND](../../extensibility/debugger/reference/stepkind.md) y [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) argumentos al ejecutar un paso.  
-  
-2.  Cuando finalice el paso, enviar un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) como un evento de detención.  
-  
-## <a name="see-also"></a>Vea también  
- [Llamar a los eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
+La siguiente sección describe el proceso que se produce cuando el depurador está en modo de interrupción y debe recorrer el código:
+
+## <a name="stepping-process"></a>Proceso de ejecución paso a paso
+
+1.  Llame a [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) con [STEPKIND](../../extensibility/debugger/reference/stepkind.md) y [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) argumentos al ejecutar un paso.
+
+2.  Cuando finalice el paso, enviar un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) como un evento de detención.
+
+## <a name="see-also"></a>Vea también
+- [Llamar a los eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

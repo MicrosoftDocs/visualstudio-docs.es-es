@@ -1,7 +1,7 @@
 ---
 title: AD_PROCESS_ID | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - AD_PROCESS_ID
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e03b51081b082c1180091e823eead47a21a7b3d2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 395070d018492fa8950c6856270c61c0a645cdd0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315435"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688425"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 Especifica el identificador de proceso, que puede ser un identificador de sistema o un GUID.
@@ -45,17 +45,13 @@ public struct AD_PROCESS_ID {
 ```
 
 ## <a name="members"></a>Miembros
-`ProcessIdType`  
-Un valor de la [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) enumeración que especifica cómo interpretar la `ProcessId` union (o, para código administrado, qué miembro de la estructura para tener acceso a).
+`ProcessIdType` Un valor de la [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) enumeración que especifica cómo interpretar la `ProcessId` union (o, para código administrado, qué miembro de la estructura para tener acceso a).
 
-dwProcessId  
-El identificador de proceso como un valor desde el sistema.
+dwProcessId el identificador de proceso como un valor desde el sistema.
 
-guidProcessId  
-El identificador de proceso como un GUID.
+guidProcessId el identificador de proceso como un GUID.
 
-dwUnused  
-El relleno.
+dwUnused relleno.
 
 ## <a name="remarks"></a>Comentarios
 Esta estructura se pasa a los métodos siguientes:
@@ -82,12 +78,12 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
-[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)  
-[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)  
-[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
-[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
-[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
-[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
-[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
+- [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
+- [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)
+- [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
+- [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)
+- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

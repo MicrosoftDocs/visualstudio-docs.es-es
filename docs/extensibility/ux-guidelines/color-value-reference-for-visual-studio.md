@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016244"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722283"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referencia de valor de color para Visual Studio
 
-En este tema es una referencia para la creación de nuevos tokens de color. Al crear la nueva interfaz de usuario, puede usar colores similares de la interfaz de usuario existente para elegir los colores para cada tema principal y el nombre del color del sistema para ese elemento para los temas de contraste alto. 
+En este tema es una referencia para la creación de nuevos tokens de color. Al crear la nueva interfaz de usuario, puede usar colores similares de la interfaz de usuario existente para elegir los colores para cada tema principal y el nombre del color del sistema para ese elemento para los temas de contraste alto.
 
 Para obtener más información sobre la creación de nuevos tokens de color, vea [herramientas de creación de temas de Color](../../extensibility/internals/color-theming-tools.md).
 
@@ -26,11 +26,11 @@ Para que los tokens de color usar con la interfaz de usuario existente, consulte
 
 Al usar a esta guía de referencia, recuerde:
 
--   **Copiar siempre los matices de primer plano y fondo juntos.** No elija un primer plano de un elemento de interfaz de usuario y un fondo de otro solo porque le gusta los matices.  
+-   **Copiar siempre los matices de primer plano y fondo juntos.** No elija un primer plano de un elemento de interfaz de usuario y un fondo de otro solo porque le gusta los matices.
 
 -   **Estos son los códigos hexadecimales, no los tokens de color.** No se puede usar los nombres de token de color real de estos elementos de interfaz de usuario porque no se puede controlar cómo se puede cambiar los tokens en el futuro. En su lugar, cree tokens dentro de su categoría y use los valores de matiz que se muestra en las tablas. Los tokens de color de la interfaz de usuario existente se puede encontrar en [compartido colores para Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
-- **Muestras de contraste altos se muestran para la comparación solo.** Use el nombre del color del sistema para la interfaz de usuario de contraste alto y no use un selector de color o Cuentagotas en estas muestras. Muestras de contraste altos en este tema reflejan el tema de alto contraste #1 en Windows. Los colores tendrá un aspecto diferentes en otros temas de contraste alto. 
+- **Muestras de contraste altos se muestran para la comparación solo.** Use el nombre del color del sistema para la interfaz de usuario de contraste alto y no use un selector de color o Cuentagotas en estas muestras. Muestras de contraste altos en este tema reflejan el tema de alto contraste #1 en Windows. Los colores tendrá un aspecto diferentes en otros temas de contraste alto.
 
 -   **Para obtener mejores resultados, el color de par establece con la interfaz de usuario similar del ejemplo.**
 
@@ -39,17 +39,17 @@ Al usar a esta guía de referencia, recuerde:
 ![Ventana Propiedades de luz (izquierda), oscuro (centro) y temas (derecho) azules](../../extensibility/ux-guidelines/media/properties-window-light-dark-blue.png "ventana Propiedades en los temas claro, oscuro y azul")<br />Ventana de propiedades en los temas claro, oscuro y azul
 
 > [!NOTE]
-> **Muestras de contraste altos se muestran para la comparación solo.** Use el nombre del color del sistema para la interfaz de usuario de contraste alto y no use un selector de color o Cuentagotas en estas muestras. Muestras de contraste altos en este tema reflejan el tema de alto contraste #1 en Windows. Los colores tendrá un aspecto diferentes en otros temas de contraste alto. 
+> **Muestras de contraste altos se muestran para la comparación solo.** Use el nombre del color del sistema para la interfaz de usuario de contraste alto y no use un selector de color o Cuentagotas en estas muestras. Muestras de contraste altos en este tema reflejan el tema de alto contraste #1 en Windows. Los colores tendrá un aspecto diferentes en otros temas de contraste alto.
 
 ### <a name="divider-lines"></a>Líneas divisorias
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Default | ![#FFEEEEF2 muestrario](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 muestrario")<br />`#FFEEEEF2` | ![#FF2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 muestrario")<br />`#FF2D2D30` | ![#FFEEEEF2 muestrario](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 muestrario")<br />`#FFEEEEF2` | ![Muestrario ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark muestrario")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>Glifo de expansión
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano |![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | Fondo | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` | ![Muestras de ventana](../../extensibility/ux-guidelines/media/HCWindow.png "muestrario de ventana")<br />`Window`|
@@ -60,7 +60,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="embedded-tab-control-body"></a>Los controles de ficha insertados: cuerpo
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | Fondo | ![#FFE7E8EC muestrario](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC muestrario")<br />`#FFE7E8EC` | ![#FF1B1B1C muestrario](../../extensibility/ux-guidelines/media/1B1B1C.png "#FF1B1B1C muestrario")<br />`#FF1B1B1C` | ![#FFE7E8EC muestrario](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC muestrario")<br />`#FFE7E8EC` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
@@ -68,7 +68,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="embedded-tab-control-active-tab"></a>Los controles de ficha insertados: pestaña activa
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` |![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | Fondo | ![Muestrario ## FFE7E8EC](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC muestrario")<br />`#FFE7E8EC` | ![#FF1B1B1C muestrario](../../extensibility/ux-guidelines/media/1B1B1C.png "FF1B1B1C ## muestrario")<br />`#FF1B1B1C` | ![#FFE7E8EC muestrario](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC muestrario")<br />`#FFE7E8EC` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
@@ -76,7 +76,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="embedded-tab-control-inactive-tab"></a>Los controles de ficha insertados: ficha inactiva
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | Fondo | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
@@ -85,12 +85,12 @@ Al usar a esta guía de referencia, recuerde:
 | Primer plano: deshabilitada | ![#FFA2A4A5 muestrario](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 muestrario")<br />`#FFA2A4A5` | ![#FF656565 muestrario](../../extensibility/ux-guidelines/media/656565.png "#FF656565 muestrario")<br />`#FF656565` | ![#FFA2A4A5 muestrario](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 muestrario")<br />`#FFA2A4A5` | ![Muestrario GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText muestrario")<br />`GrayText` |
 | En segundo plano: deshabilitada | ![Muestrario ## FFF5F5F5](../../extensibility/ux-guidelines/media/F5F5F5.png "FFF5F5F5 ## muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
 | Borde | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` | ![Muestrario WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame muestrario")<br />`WindowFrame` |
-| Borde: al mantener el mouse | ![#FFC9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 muestrario")<br />`#FFC9DEF5` | ![#FF3E3E40 muestrario](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 muestrario")<br />`#FF3E3E40` | ![Muestrario #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "muestrario #FFFEFEFE")<br />`#FFFEFEFE` | ![Muestrario WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame muestrario")<br />`WindowFrame` | 
+| Borde: al mantener el mouse | ![#FFC9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 muestrario")<br />`#FFC9DEF5` | ![#FF3E3E40 muestrario](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 muestrario")<br />`#FF3E3E40` | ![Muestrario #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "muestrario #FFFEFEFE")<br />`#FFFEFEFE` | ![Muestrario WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame muestrario")<br />`WindowFrame` |
 | Borde: deshabilitada | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` | ![Muestrario WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame muestrario")<br />`WindowFrame` |
 
 ### <a name="section-header"></a>Encabezado de sección
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ## FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | Primer plano: al mantener el mouse | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
@@ -101,7 +101,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="category-group"></a>Grupo de categorías
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano del cuerpo | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | Fondo del cuerpo | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![Muestrario FF252526](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
@@ -110,7 +110,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="toggle-buttons"></a>Botones de alternancia
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText muestrario")<br />`WindowText` |
 | Fondo | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` | ![Muestras de ventana](../../extensibility/ux-guidelines/media/HCWindow.png "muestrario de ventana")<br />`Window` |
@@ -127,7 +127,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="input-fields"></a>Campos de entrada
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | Fondo | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![#FF333337 muestrario](../../extensibility/ux-guidelines/media/333337.png "#FF333337 muestrario")<br />`#FF333337` | ![Muestrario #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "muestrario #FFFCFCFC")<br />`#FFFCFCFC` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
@@ -138,7 +138,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="list-items"></a>Elementos de lista
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | Primer plano: al mantener el mouse | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
@@ -151,7 +151,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="command-buttons"></a>Botones de comando
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | En segundo plano: al mantener el mouse | ![#FFC9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 muestrario")<br />`#FFC9DEF5` | ![#FF3E3E40 muestrario](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 muestrario")<br />`#FF3E3E40` | ![Muestrario #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "muestrario #FFFEFEFE")<br />`#FFFEFEFE` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
@@ -172,7 +172,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="content"></a>Contenido
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![Muestrario #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 muestrario")<br />`#FF000000` | ![Muestrario WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText muestrario")<br />`WindowText` |
 | Fondo | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
@@ -184,7 +184,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="header"></a>Header
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![Muestrario #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 muestrario")<br />`#FF000000` | ![Muestrario WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText muestrario")<br />`WindowText` |
 | Fondo | ![#FF2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 muestrario")<br />`#FFEEEEF2` | ![#FF2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 muestrario")<br />`#FF2D2D30` | ![#FFEEEEF2 muestrario](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 muestrario")<br />`#FFEEEEF2` | ![Muestrario ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark muestrario")<br />`ControlDark` |
@@ -193,7 +193,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ![IU de CodeLens](../../extensibility/ux-guidelines/media/codelens.png "IU de CodeLens")
 
-> [!NOTE] 
+> [!NOTE]
 > Colores de CodeLens UI son los mismos para los temas claro, oscuro y azul.
 
 > [!NOTE]
@@ -201,7 +201,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="body"></a>Cuerpo
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText muestrario")<br />`WindowText` |
 | Fondo | ![Muestrario #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "muestrario #FFFCFCFC")<br />`#FFFCFCFC` | ![Muestrario #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "muestrario #FFFCFCFC")<br />`#FFFCFCFC` | ![Muestrario #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "muestrario #FFFCFCFC")<br />`#FFFCFCFC` | ![Muestras de ventana](../../extensibility/ux-guidelines/media/HCWindow.png "muestrario de ventana")<br />`Window` |
@@ -212,7 +212,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="hyperlink-and-separator"></a>Hipervínculo y separador
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano de hipervínculo | ![#FF0E70C0 muestrario](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 muestrario")<br />`#FF0E70C0` | ![#FF0E70C0 muestrario](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 muestrario")<br />`#FF0E70C0` | ![#FF0E70C0 muestrario](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 muestrario")<br />`#FF0E70C0` | ![Muestrario HotTrack](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack muestrario")<br />`HotTrack` |
 | Primer plano del separador | ![#FF9C9C9C muestrario](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C muestrario")<br />`#FF9C9C9C` | ![#FF9C9C9C muestrario](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C muestrario")<br />`#FF9C9C9C` | ![#FF9C9C9C muestrario](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C muestrario")<br />`#FF9C9C9C` | ![Muestrario HotTrack](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack muestrario")<br />`HotTrack` |
@@ -226,14 +226,14 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="body"></a>Cuerpo
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![Muestrario #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 muestrario")<br />`#FF000000` | ![Muestrario WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText muestrario")<br />`WindowText` |
 | Primer plano: seleccionado | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
 
 ### <a name="subsection-header"></a>Encabezado de la subsección
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF717171 muestrario](../../extensibility/ux-guidelines/media/717171.png "#FF717171 muestrario")<br />`#FF717171` | ![#FF999999 muestrario](../../extensibility/ux-guidelines/media/999999.png "#FF999999 muestrario")<br />`#FF999999` | ![#FF717171 muestrario](../../extensibility/ux-guidelines/media/717171.png "#FF717171 muestrario")<br />`#FF717171` | ![Muestrario GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText muestrario")<br />`GrayText` |
 | Fondo | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestras de ventana](../../extensibility/ux-guidelines/media/HCWindow.png "muestrario de ventana")<br />`Window` |
@@ -241,7 +241,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="grid-lines"></a>Líneas de cuadrícula
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Elementos (primer plano) | ![#FFF0F0F0 muestrario](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 muestrario")<br />`#FFF0F0F0` | ![Muestrario #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 muestrario")<br />`#FF000000` | ![#FFF0F0F0 muestrario](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 muestrario")<br />`#FFF0F0F0` | ![Barra de desplazamiento muestra](../../extensibility/ux-guidelines/media/HCScrollBar.png "muestras de la barra de desplazamiento")<br />`ScrollBar` |
 | Encabezado (primer plano) | ![#FFE0E3E6 muestrario](../../extensibility/ux-guidelines/media/E0E3E6.png "#FFE0E3E6 muestrario")<br />`#FFE0E3E6` | ![#FF333337 muestrario](../../extensibility/ux-guidelines/media/333337.png "#FF333337 muestrario")<br />`#FF333337` | ![#FFBEC3CB muestrario](../../extensibility/ux-guidelines/media/BEC3CB.png "#FFBEC3CB muestrario")<br />`#FFBEC3CB` | ![Muestrario ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark muestrario")<br />`ControlDark` |
@@ -255,21 +255,21 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="body"></a>Cuerpo
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | Fondo | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
 
 ### <a name="active-tab"></a>Pestaña activa
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText muestrario")<br />`ActiveCaptionText` |
 | Fondo | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` |![Muestrario ActiveCaption](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption muestrario")<br />`ActiveCaption` |
 
 ### <a name="inactive-tab"></a>Pestaña inactiva
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText muestrario")<br />`InactiveCaptionText` |
 | Fondo | ![Muestrario #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "muestrario #FFFEFEFE")<br />`#FFFEFEFE` | ![#FF333337 muestrario](../../extensibility/ux-guidelines/media/333337.png "#FF333337 muestrario")<br />`#FF333337` | ![Muestrario #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "muestrario #FFFEFEFE")<br />`#FFFEFEFE` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
@@ -278,14 +278,14 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="watermark-text"></a>Texto de marca de agua
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF717171 muestrario](../../extensibility/ux-guidelines/media/717171.png "#FF717171 muestrario")<br />`#FF999999` | ![#FF999999 muestrario](../../extensibility/ux-guidelines/media/717171.png "999999 muestrario")<br />`#FF999999` | ![#FF717171 muestrario](../../extensibility/ux-guidelines/media/717171.png "#FF717171 muestrario")<br />`#FF717171` | ![Muestrario GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText muestrario")<br />`GrayText` |
 | Fondo | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
 
 ### <a name="description-pane"></a>Panel de descripción
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | Fondo | ![#FFEEEEF2 muestrario](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 muestrario")<br />`#FFEEEEF2` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
@@ -299,7 +299,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="tags"></a>Etiquetas
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano (texto) | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText muestrario")<br />`ActiveCaptionText` |
 | Fondo | ![#FFE1E6F1 muestrario](../../extensibility/ux-guidelines/media/E1E6F1.png "#FFE1E6F1 muestrario")<br />`#FFE1E6F1` | ![#FF424242 muestrario](../../extensibility/ux-guidelines/media/424242.png "#FF424242 muestrario")<br />`#FF424242` | ![#FFE9ECEE muestrario](../../extensibility/ux-guidelines/media/E9ECEE.png "#FFE9ECEE muestrario")<br />`#FFE9ECEE` | ![Muestrario ActiveCaption](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption muestrario")<br />`ActiveCaption` |
@@ -312,7 +312,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="glyph-on-hover"></a>Glifo al mantener el mouse
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Glifo | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
 | Fondo | ![#FFF7F7F9 muestrario](../../extensibility/ux-guidelines/media/F7F7F9.png "#FFF7F7F9 muestrario")<br />`#FFF7F7F9` | ![#FF393939 muestrario](../../extensibility/ux-guidelines/media/393939.png "#FF393939 muestrario")<br />`#FF393939` | ![#FFFFFCF4 muestrario](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 muestrario")<br />`#FFFFFCF4` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
@@ -323,7 +323,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="selected-glyph"></a>Glifo seleccionado
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Glifo | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
 | Fondo | ![#FF52B0EF muestrario](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF muestrario")<br />`#FF52B0EF` | ![#FF52B0EF muestrario](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF muestrario")<br />`#FF52B0EF` | ![#FF52B0EF muestrario](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF muestrario")<br />`#FF52B0EF` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
@@ -339,7 +339,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="default"></a>Default
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Botón predeterminado en el tema claro](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.png "botón predeterminado en el tema claro") | ![Botón predeterminado en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.dark.png "botón predeterminado en el tema oscuro") | ![Botón predeterminado en el tema azul](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.blue.png "botón predeterminado en el tema azul") | ![Botón predeterminado en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.hc.png "botón predeterminado en el tema de contraste alto") |
 | Primer plano | ![#1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E muestrario")<br />`#1E1E1E` | ![#F1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 muestrario")<br />`#F1F1F1` | ![#1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E muestrario")<br />`#1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
@@ -348,7 +348,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="disabled"></a>Deshabilitado
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Botón deshabilitado en el tema claro](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.png "botón deshabilitado en el tema claro") | ![Botón deshabilitado en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.dark.png "botón deshabilitado en el tema oscuro") | ![Botón deshabilitado en el tema azul](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.blue.png "botón deshabilitado en el tema azul") | ![Botón deshabilitado en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.hc.png "botón deshabilitado en el tema de contraste alto") |
 | Primer plano | ![#A2A4A5 muestrario](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 muestrario")<br />`#A2A4A5` | ![#656565 muestrario](../../extensibility/ux-guidelines/media/656565.png "#656565 muestrario")<br />`#656565` | ![#A2A4A5 muestrario](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 muestrario")<br />`#A2A4A5` | ![Muestrario InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText muestrario")<br />`InactiveCaptionText` |
@@ -357,7 +357,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="hover"></a>Al mantener el puntero
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Botón de estado al mantener el mouse en el tema claro](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.png "botón de estado al mantener el mouse en el tema claro") | ![Botón de estado al mantener el mouse en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.dark.png "botón de estado al mantener el mouse en el tema oscuro") | ![Botón de estado al mantener el mouse en el tema azul](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.blue.png "botón de estado al mantener el mouse en el tema azul") | ![Botón de estado al mantener el mouse en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "botón de estado al mantener el mouse en el tema de contraste alto") |
 | Primer plano | ![#1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E muestrario")<br />`#1E1E1E` | ![#F1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 muestrario")<br />`#F1F1F1` | ![#1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E muestrario")<br />`#1E1E1E` | ![Muestrario ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText muestrario")<br />`ActiveCaptionText` |
@@ -366,7 +366,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="pressed"></a>Presionado
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Botón presionado en el tema claro](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.png "botón presionado en el tema claro") | ![Botón presionado en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.dark.png "botón presionado en el tema oscuro") | ![Botón presionado en el tema azul](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.blue.png "botón presionado en el tema azul") | ![Botón presionado en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "botón presionado en el tema de contraste alto") |
 | Primer plano | ![Muestrario #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFF")<br />`#FFFFFF` | ![#F1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 muestrario")<br />`#F1F1F1` | ![Muestrario #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFF")<br />`#FFFFFF` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
@@ -375,7 +375,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="focused"></a>Con foco
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Botón enfocado en el tema claro](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.png "botón enfocado en el tema claro") | ![Botón enfocado en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.dark.png "botón enfocado en el tema oscuro") | ![Botón enfocado en el tema azul](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.blue.png "botón enfocado en el tema azul") | ![Botón enfocado en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "botón enfocado en el tema de contraste alto") |
 | Primer plano | ![#1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E muestrario")<br />`#1E1E1E` | ![#F1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 muestrario")<br />`#F1F1F1` | ![#1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E muestrario")<br />`#1E1E1E` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
@@ -389,7 +389,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="default"></a>Default
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Casilla de verificación de forma predeterminada en el tema claro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.png "casilla de verificación de forma predeterminada en el tema claro") | ![Casilla de verificación de forma predeterminada en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.dark.png "casilla de verificación de forma predeterminada en el tema oscuro") | ![Casilla de verificación de forma predeterminada en el tema azul](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.blue.png "casilla de verificación de forma predeterminada en el tema azul") | ![Casilla de verificación de forma predeterminada en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.hc.png "casilla de verificación de forma predeterminada en el tema de contraste alto") |
 | Fondo | ![Muestrario #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "muestrario #FEFEFE")<br />`#FEFEFE` | ![#252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#252526 muestrario")<br />`#252526` | ![Muestrario #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "muestrario #FEFEFE")<br />`#FEFEFE` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
@@ -399,7 +399,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="disabled"></a>Deshabilitado
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Casilla deshabilitada en el tema claro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.png "deshabilita la casilla de verificación en el tema claro") | ![Casilla deshabilitada en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.dark.png "deshabilita la casilla de verificación en el tema oscuro") | ![Casilla deshabilitada en el tema azul](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.blue.png "deshabilita la casilla de verificación en el tema azul") | ![Casilla deshabilitada en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.hc.png "deshabilita la casilla de verificación en el tema de contraste alto") |
 | Fondo | ![Muestra F6F6F6 #](../../extensibility/ux-guidelines/media/F6F6F6.png "muestra F6F6F6 #")<br />`#F6F6F6` | ![#2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 muestrario")<br />`#2D2D30` | ![Muestra F6F6F6 #](../../extensibility/ux-guidelines/media/F6F6F6.png "muestra F6F6F6 #")<br />`#F6F6F6` | ![Muestrario InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption muestrario")<br />`InactiveCaption` |
@@ -409,7 +409,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="hover"></a>Al mantener el puntero
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Casilla de verificación de estado al mantener el mouse en el tema claro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.png "casilla de verificación de estado al mantener el mouse en el tema claro") | ![Casilla de verificación de estado al mantener el mouse en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.dark.png "casilla de verificación de estado al mantener el mouse en el tema oscuro") | ![Casilla de verificación de estado al mantener el mouse en el tema azul](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.blue.png "casilla de verificación de estado al mantener el mouse en el tema azul") | ![Casilla de verificación de estado al mantener el mouse en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "casilla de verificación de estado al mantener el mouse en el tema de contraste alto") |
 | Fondo | ![#F3F9FF muestrario](../../extensibility/ux-guidelines/media/F3F9FF.png "#F3F9FF muestrario")<br />`#F3F9FF` | ![#1F1F20 muestrario](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 muestrario")<br />`#1F1F20` | ![#FDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF muestrario")<br />`#FDF4BF` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
@@ -419,7 +419,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="pressed"></a>Presionado
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Casilla de verificación presionada en el tema claro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.png "casilla presionada en el tema claro") | ![Casilla de verificación presionada en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.dark.png "casilla presionada en el tema oscuro") | ![Casilla de verificación presionada en el tema azul](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.blue.png "casilla presionada en el tema azul") | ![Casilla de verificación presionada en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "casilla presionada en el tema de contraste alto") |
 | Fondo | ![#007ACC muestrario](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC muestrario")<br />`#007ACC` | ![#007ACC muestrario](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC muestrario")<br />`#007ACC` | ![#E5C365 muestrario](../../extensibility/ux-guidelines/media/E5C365.png "#E5C365 muestrario")<br />`#E5C365` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
@@ -429,7 +429,7 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="focused"></a>Con foco
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Casilla de verificación enfocado en el tema claro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.png "Focused casilla en el tema claro") | ![Casilla de verificación enfocado en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.dark.png "Focused casilla en el tema oscuro") | ![Casilla de verificación enfocado en el tema azul](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.blue.png "Focused casilla en el tema azul") | ![Casilla de verificación enfocado en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "Focused casilla en el tema de contraste alto") |
 | Fondo | ![#FDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF muestrario")<br />`#FDF4BF` | ![#1F1F20 muestrario](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 muestrario")<br />`#1F1F20` | ![#FDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF muestrario")<br />`#FDF4BF` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
@@ -446,7 +446,7 @@ Al usar a esta guía de referencia, recuerde:
 
 #### <a name="default"></a>Default
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Predeterminada colocar desplegable o cuadro combinado en el tema claro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.png "predeterminada colocar desplegable o cuadro combinado en el tema claro") | ![Predeterminada colocar desplegable o cuadro combinado en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.dark.png "predeterminada colocar desplegable o cuadro combinado en el tema oscuro") | ![Predeterminada colocar desplegable o cuadro combinado en el tema azul](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.blue.png "predeterminada colocar desplegable o cuadro combinado en el tema azul") | ![Predeterminada colocar desplegable o cuadro combinado en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.hc.png "predeterminada colocar desplegable o cuadro combinado en el tema de contraste alto") |
 | Fondo | ![Muestrario ## 007ACC](../../extensibility/ux-guidelines/media/007ACC.png "007ACC ## muestrario")<br />`##007ACC` | ![#333337 muestrario](../../extensibility/ux-guidelines/media/333337.png "#333337 muestrario")<br />`#333337` | ![Muestrario #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "muestrario #FCFCFC")<br />`#FCFCFC` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
@@ -457,19 +457,19 @@ Al usar a esta guía de referencia, recuerde:
 
 #### <a name="disabled"></a>Deshabilitado
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Deshabilitado colocar desplegable o cuadro combinado en el tema claro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.png "deshabilitada la lista desplegable o cuadro combinado en el tema claro") | ![Deshabilitado colocar desplegable o cuadro combinado en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.dark.png "deshabilitada la lista desplegable o cuadro combinado en el tema oscuro") | ![Deshabilitado colocar desplegable o cuadro combinado en el tema azul](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.blue.png "deshabilitada la lista desplegable o cuadro combinado en el tema azul") | ![Deshabilitado colocar desplegable o cuadro combinado en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.hc.png "deshabilitada la lista desplegable o cuadro combinado en el tema de contraste alto") |
 | Fondo | ![#EEEEF2 muestrario](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 muestrario")<br />`#EEEEF2` | ![#2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 muestrario")<br />`#2D2D30` | ![#DFE7F3 muestrario](../../extensibility/ux-guidelines/media/DFE7F3.png "#DFE7F3 muestrario")<br />`#DFE7F3` | ![Muestrario InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption muestrario")<br />`InactiveCaption` |
 | Borde | ![Muestrario #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "muestrario #CCCEDB")<br />`#CCCEDB` | ![#434346 muestrario](../../extensibility/ux-guidelines/media/434346.png "#434346 muestrario")<br />`#434346` | ![#A4ADBA muestrario](../../extensibility/ux-guidelines/media/A4ADBA.png "#A4ADBA muestrario")<br />`#A4ADBA` | ![Muestrario InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder muestrario")<br />`InactiveBorder` |
 | Texto | ![#A2A4A5 muestrario](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 muestrario")<br />`#A2A4A5` | ![# 656565swatch](../../extensibility/ux-guidelines/media/656565.png "#656565 muestrario")<br />`#656565` | ![#A2A4A5 muestrario](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 muestrario")<br />`#A2A4A5` | ![Muestrario InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText muestrario")<br />`InactiveCaptionText` |
-| Separador | ![#EEEEF2 muestrario](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 muestrario")<br />`#EEEEF2` | ![#2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 muestrario")<br />`#2D2D30` | ![#D5DCE8 muestrario](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 muestrario")<br />`#D5DCE8` | ![Muestrario InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder muestrario")<br />`InactiveBorder` | 
+| Separador | ![#EEEEF2 muestrario](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 muestrario")<br />`#EEEEF2` | ![#2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 muestrario")<br />`#2D2D30` | ![#D5DCE8 muestrario](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 muestrario")<br />`#D5DCE8` | ![Muestrario InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder muestrario")<br />`InactiveBorder` |
 | Glifo | ![Muestrario #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "muestrario #CCCEDB")<br />`#CCCEDB` | ![#656565 muestrario](../../extensibility/ux-guidelines/media/656565.png "#656565 muestrario")<br />`#656565` | ![#A2A4A5 muestrario](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 muestrario")<br />`#A2A4A5` | ![Muestrario InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText muestrario")<br />`InactiveCaptionText` |
 | Fondo de glifo | ![#EEEEF2 muestrario](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 muestrario")<br />`#EEEEF2` | ![#2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 muestrario")<br />`#2D2D30` | ![#D5DCE8 muestrario](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 muestrario")<br />`#D5DCE8` | ![Muestrario InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption muestrario")<br />`InactiveCaption` |
 
 #### <a name="hover"></a>Al mantener el puntero
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Al mantener el mouse estado colocar desplegable o cuadro combinado en el tema claro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.png "al mantener el mouse estado colocar desplegable o cuadro combinado en el tema claro") | ![Al mantener el mouse estado colocar desplegable o cuadro combinado en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.dark.png "al mantener el mouse estado colocar desplegable o cuadro combinado en el tema oscuro") | ![Al mantener el mouse estado colocar desplegable o cuadro combinado en el tema azul](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.blue.png "al mantener el mouse estado colocar desplegable o cuadro combinado en el tema azul") | ![Al mantener el mouse estado colocar desplegable o cuadro combinado en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.hc.png "al mantener el mouse estado colocar desplegable o cuadro combinado en el tema de contraste alto") |
 | Fondo | ![#007ACC muestrario](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC muestrario")<br />`#007ACC` | ![#3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 muestrario")<br />`#3F3F46` | ![Muestrario #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "muestrario #FCFCFC")<br />`#FCFCFC` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
@@ -481,7 +481,7 @@ Al usar a esta guía de referencia, recuerde:
 
 #### <a name="pressed"></a>Presionado
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Presionado lista desplegable o cuadro combinado en el tema claro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.png "presionado lista desplegable o cuadro combinado en el tema claro") | ![Presionado lista desplegable o cuadro combinado en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.dark.png "presionado lista desplegable o cuadro combinado en el tema oscuro") | ![Presionado lista desplegable o cuadro combinado en el tema azul](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.blue.png "presionado lista desplegable o cuadro combinado en el tema azul") | ![Presionado lista desplegable o cuadro combinado en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.hc.png "presionado lista desplegable o cuadro combinado en el tema de contraste alto") |
 | Fondo | ![Muestrario #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFF")<br />`#FFFFFF` | ![#3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 muestrario")<br />`#3F3F46` | ![Muestrario #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "muestrario #FCFCFC")<br />`#FCFCFC` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
@@ -493,7 +493,7 @@ Al usar a esta guía de referencia, recuerde:
 
 #### <a name="focused"></a>Con foco
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Focused lista desplegable o cuadro combinado en el tema claro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.png "Focused lista desplegable o cuadro combinado en el tema claro") | ![Focused lista desplegable o cuadro combinado en el tema oscuro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.dark.png "Focused lista desplegable o cuadro combinado en el tema oscuro") | ![Focused lista desplegable o cuadro combinado en el tema azul](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.blue.png "Focused lista desplegable o cuadro combinado en el tema azul") | ![Focused lista desplegable o cuadro combinado en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.hc.png "Focused lista desplegable o cuadro combinado en el tema de contraste alto") |
 | Fondo | ![Muestrario #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFF")<br />`#FFFFFF` | ![#3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 muestrario")<br />`#3F3F46` | ![Muestrario #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "muestrario #FCFCFC")<br />`#FCFCFC` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
@@ -511,7 +511,7 @@ Al usar a esta guía de referencia, recuerde:
 
 #### <a name="default"></a>Default
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Fondo | ![Muestra F6F6F6 #](../../extensibility/ux-guidelines/media/F6F6F6.png "muestra F6F6F6 #")<br />`#F6F6F6` | ![#1B1B1C muestrario](../../extensibility/ux-guidelines/media/1B1B1C.png "#1B1B1C muestrario")<br />`#1B1B1C` | ![Muestrario #EFEFEF](../../extensibility/ux-guidelines/media/EFEFEF.png "muestrario #EFEFEF")<br />`#EFEFEF` | ![Muestras de menú](../../extensibility/ux-guidelines/media/HCMenu.png "muestrario de menú")<br />`Menu` |
 | Borde | ![Muestrario #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "muestrario #CCCEDB")<br />`#CCCEDB` | ![#3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 muestrario")<br />`#3F3F46` | ![#98A7B7 muestrario](../../extensibility/ux-guidelines/media/98A7B7.png "#98A7B7 muestrario")<br />`#98A7B7`| ![Muestrario MenuText](../../extensibility/ux-guidelines/media/HCMenuText.png "MenuText muestrario")<br />`MenuText` |
@@ -520,7 +520,7 @@ Al usar a esta guía de referencia, recuerde:
 
 #### <a name="hover"></a>Al mantener el puntero
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Fondo | ![#C9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 muestrario")<br />`#C9DEF5` | ![#3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 muestrario")<br />`#3F3F46` | ![#FDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF muestrario")<br />`#FDF4BF` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
 | Borde | ![Muestrario #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "muestrario #CCCEDB")<br />`#CCCEDB` |![#3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 muestrario")<br />`#3F3F46` | ![#FDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF muestrario")<br />`#FDF4BF` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
@@ -528,7 +528,7 @@ Al usar a esta guía de referencia, recuerde:
 
 #### <a name="pressed"></a>Presionado
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Fondo |![#C9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 muestrario")<br />`#C9DEF5` |![#3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 muestrario")<br />`#3F3F46` | ![#FDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF muestrario")<br />`#FDF4BF` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
 | Borde | ![Muestrario #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "muestrario #CCCEDB")<br />`#CCCEDB` |![#3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 muestrario")<br />`#3F3F46` | ![#FDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF muestrario")<br />`#FDF4BF` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
@@ -536,7 +536,7 @@ Al usar a esta guía de referencia, recuerde:
 
 #### <a name="focused"></a>Con foco
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Fondo | ![Muestra F6F6F6 #](../../extensibility/ux-guidelines/media/F6F6F6.png "muestra F6F6F6 #")<br />`#F6F6F6` |![#3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 muestrario")<br />`#3F3F46` | ![#FDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF muestrario")<br />`#FDF4BF` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
 | Borde | ![#C9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 muestrario")<br />`#C9DEF5` |![#3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 muestrario")<br />`#3F3F46` |![#FDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF muestrario")<br />`#FDF4BF` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
@@ -544,14 +544,14 @@ Al usar a esta guía de referencia, recuerde:
 
 ### <a name="text-input-selection"></a>Selección de entrada de texto
 
-| | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
+| | Tema claro | Tema oscuro | Tema azul | Contraste alto |
 | --- | :---: | :---: | :---: | :---: |
 | Apariencia | ![Selección en el tema claro de la entrada de texto de la lista desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.png "selección en el tema claro de la entrada de texto del cuadro combinado desplegable/abajo") | ![Selección en el tema oscuro de la entrada de texto de la lista desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.dark.png "selección en el tema oscuro de la entrada de texto del cuadro combinado desplegable/abajo") | ![Entrada de texto de la lista desplegable o cuadro combinado selección en el tema azul](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.blue.png "selección en el tema azul de la entrada de texto del cuadro combinado desplegable/abajo") | ![Entrada de texto de la lista desplegable o cuadro combinado selección en el tema de contraste alto](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.hc.png "selección en el tema de contraste alto de la entrada de texto del cuadro combinado desplegable/abajo") |
 | Selección de entrada de texto | ![#66007ACC muestrario](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC muestrario")<br />`#66007ACC` | ![#66007ACC muestrario](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC muestrario")<br />`#66007ACC` | ![#66007ACC muestrario](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC muestrario")<br />`#66007ACC` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
 
 ## <a name="color-swatches-by-function"></a>Muestras de color por función
 
-| Claro | Oscuro | Azul | Se utiliza para... | 
+| Claro | Oscuro | Azul | Se utiliza para... |
 | :---: | :---: | :---: | --- |
 | ![#FFC9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 muestrario")<br />`#FFC9DEF5`   | ![#FF2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 muestrario")<br />`#FF2D2D30`   | ![#FFFDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF muestrario")<br />`#FFFDF4BF` | Los elementos de menú, elementos del cuadro combinado, botones de barra de comandos, botones desplegables y botones de acción: en segundo plano |
 | ![Muestrario #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "muestrario #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 muestrario")<br />`#FF3F3F46` | ![#FF465A7D muestrario](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D muestrario")<br />`#FF465A7D` | Borde de pestaña de ocultación automática |

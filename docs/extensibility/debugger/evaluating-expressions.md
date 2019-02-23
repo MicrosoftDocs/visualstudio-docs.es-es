@@ -12,26 +12,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41e56368497d3a8058437ea726488874081f4d45
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de25fca07642414ec42f17c2e458b90ce94041cb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069759"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711311"
 ---
 # <a name="evaluate-expressions"></a>Evaluar expresiones
-Las expresiones se crean a partir de cadenas que se pasan desde el **automático**, **inspección**, **Inspección rápida**, o **inmediato** windows. Cuando se evalúa una expresión, genera una cadena imprimible que contiene el nombre y tipo de variable o argumento y su valor. Esta cadena se muestra en la ventana del IDE correspondiente.  
-  
-## <a name="implementation"></a>Implementación  
- Las expresiones se evalúan cuando se ha detenido un programa en un punto de interrupción. La expresión se representa mediante un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaz, que representa una expresión analizada que está lista para enlace y evaluación dentro del contexto de evaluación de la expresión dada. El marco de pila determina el contexto de evaluación de expresión, que proporciona el motor de depuración (DE) implementando la [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaz.  
-  
- Dada una cadena de usuario y una [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaz, puede obtener un motor de depuración (DE) un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaz, pase la cadena de usuario para el [ IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) método. La interfaz IDebugExpression2 devuelto contiene la expresión analizada lista para su evaluación.  
-  
- Con el `IDebugExpression2` interfaz, la DE puede obtener el valor de la expresión a través de la evaluación de expresiones sincrónica o asincrónica, utilizando [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [IDebugExpression2:: EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Este valor, junto con el nombre y tipo de la variable o argumento, se envía en el IDE para su presentación. El valor, el nombre y el tipo se representan mediante un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfaz.  
-  
- Para habilitar la evaluación de expresiones, debe implementar a DE la [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) y [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaces. Evaluación sincrónica y asincrónica requiere la implementación de la [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) método.  
-  
-## <a name="see-also"></a>Vea también  
- [Marcos de pila](../../extensibility/debugger/stack-frames.md)   
- [Contexto de evaluación de expresión](../../extensibility/debugger/expression-evaluation-context.md)   
- [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)
+Las expresiones se crean a partir de cadenas que se pasan desde el **automático**, **inspección**, **Inspección rápida**, o **inmediato** windows. Cuando se evalúa una expresión, genera una cadena imprimible que contiene el nombre y tipo de variable o argumento y su valor. Esta cadena se muestra en la ventana del IDE correspondiente.
+
+## <a name="implementation"></a>Implementación
+ Las expresiones se evalúan cuando se ha detenido un programa en un punto de interrupción. La expresión se representa mediante un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaz, que representa una expresión analizada que está lista para enlace y evaluación dentro del contexto de evaluación de la expresión dada. El marco de pila determina el contexto de evaluación de expresión, que proporciona el motor de depuración (DE) implementando la [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaz.
+
+ Dada una cadena de usuario y una [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaz, puede obtener un motor de depuración (DE) un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaz, pase la cadena de usuario para el [ IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) método. La interfaz IDebugExpression2 devuelto contiene la expresión analizada lista para su evaluación.
+
+ Con el `IDebugExpression2` interfaz, la DE puede obtener el valor de la expresión a través de la evaluación de expresiones sincrónica o asincrónica, utilizando [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [IDebugExpression2:: EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Este valor, junto con el nombre y tipo de la variable o argumento, se envía en el IDE para su presentación. El valor, el nombre y el tipo se representan mediante un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfaz.
+
+ Para habilitar la evaluación de expresiones, debe implementar a DE la [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) y [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaces. Evaluación sincrónica y asincrónica requiere la implementación de la [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) método.
+
+## <a name="see-also"></a>Vea también
+- [Marcos de pila](../../extensibility/debugger/stack-frames.md)
+- [Contexto de evaluación de expresión](../../extensibility/debugger/expression-evaluation-context.md)
+- [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

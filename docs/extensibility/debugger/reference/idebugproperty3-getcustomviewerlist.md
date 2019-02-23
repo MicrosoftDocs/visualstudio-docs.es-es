@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetCustomViewerList | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetCustomViewerList
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8038e1d127a726a12ec37372758b992a1296c1d4
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 7bf31379f99c9cde8b0050b080797f3a4e70acea
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449923"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722738"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Obtiene una lista de visores personalizados asociados a esta propiedad.
@@ -43,17 +43,21 @@ int GetCustomViewerList(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`celtSkip`  
-[in] El número de lectores para pasarla por alto.
+`celtSkip`
 
-`celtRequested`  
-[in] El número de lectores para recuperar (también especifica el tamaño de la `rgViewers` matriz).
+ [in] El número de lectores para pasarla por alto.
 
-`rgViewers`  
-[in, out] Matriz de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) estructuras que deben rellenarse.
+`celtRequested`
 
-`pceltFetched`  
-[out] Devuelve el número real de los visores.
+ [in] El número de lectores para recuperar (también especifica el tamaño de la `rgViewers` matriz).
+
+`rgViewers`
+
+ [in, out] Matriz de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) estructuras que deben rellenarse.
+
+`pceltFetched`
+
+ [out] Devuelve el número real de los visores.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -86,7 +90,7 @@ STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested,
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)  
-[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)  
-[Visualizador de tipo y visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
+- [Visualizador de tipo y visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

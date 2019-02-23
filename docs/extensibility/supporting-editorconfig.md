@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 047545f3b2ab3c08b84fbb4af95a46c44655f1cd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3c29c22ae4539d874ffc08c9ce5adf94ab33d404
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981311"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696979"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Compatibilidad con EditorConfig el servicio de lenguaje
 
@@ -45,5 +45,5 @@ Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsof
 
 ## <a name="see-also"></a>Vea también
 
-[Crear una configuración de editor y portátiles con EditorConfig](../ide/create-portable-custom-editor-options.md)  
-[Ampliar los servicios de editor y lenguaje](../extensibility/extending-the-editor-and-language-services.md)
+- [Crear una configuración de editor y portátiles con EditorConfig](../ide/create-portable-custom-editor-options.md)
+- [Ampliar los servicios de editor y lenguaje](../extensibility/extending-the-editor-and-language-services.md)

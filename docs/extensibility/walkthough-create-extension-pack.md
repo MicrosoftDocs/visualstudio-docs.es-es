@@ -10,31 +10,31 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55ceb788807f5d4fc9de2a96b4d359f290218dda
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866327"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718375"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Tutorial: Crear un paquete de extensión
 
 Un paquete de extensión es un conjunto de extensiones que se pueden instalar juntos. Módulos de extensión permiten compartir sus extensiones favoritas con otros usuarios fácilmente o agrupar un conjunto de extensiones juntos para un escenario determinado.
-  
+
 ## <a name="prerequisites"></a>Requisitos previos
 
-A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 La característica de extensión Pack está disponible a partir de Visual Studio 15,8 Preview 2.
-  
+
 ## <a name="create-an-extension-with-an-extension-pack-item-template"></a>Crear una extensión con una plantilla de elementos de paquete de extensiones
 
 La plantilla de elemento del módulo de extensión crea un paquete de extensión con el conjunto de extensiones que se pueden instalar juntos.
-  
-1. En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre** , escriba `Test Extension Pack`. Haga clic en **Aceptar**.  
-  
-2. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **paquete de extensión**. Deje el nombre de archivo predeterminado (ExtensionPack1.cs).  
-  
+
+1. En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre** , escriba `Test Extension Pack`. Haga clic en **Aceptar**.
+
+2. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **paquete de extensión**. Deje el nombre de archivo predeterminado (ExtensionPack1.cs).
+
 3. Se agrega ExtensionPack1.vsext archivo que contiene el código siguiente
 
    ```json
@@ -53,18 +53,18 @@ La plantilla de elemento del módulo de extensión crea un paquete de extensión
         "name": "CopyAsHtml"
       }
     ]
-   }  
+   }
    ```
 
 4. El elemento vsixid de la extensión debe incluir en el paquete de extensiones puede encontrarse en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Busque la extensión que desea incluir y haga clic en **identificador de copia**. Puede actualizar la existente **vsixId** en los pasos anteriores de archivos o agregar otra extensión a la lista.
 
     ![Copiar elemento VsixId de Marketplace](media/vsixid-marketplace.png)
 
-5. Compile el proyecto y cargar la extensión en Marketplace. Consulte [publicar una extensión de Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). 
-    
+5. Compile el proyecto y cargar la extensión en Marketplace. Consulte [publicar una extensión de Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
+
 > [!NOTE]
 > Un paquete de extensión solo puede instalar las extensiones que están disponibles en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o [Galería privada](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
- 
+
 ## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Instalar el paquete de extensiones de Visual Studio Marketplace
 
 Ahora que se ha publicado la extensión, instalarlo en Visual Studio y pruébela.

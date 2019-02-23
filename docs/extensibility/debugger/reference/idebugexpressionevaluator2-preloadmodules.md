@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator2::PreloadModules | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::PreloadModules
 - PreloadModules
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e5db35150814665f5e75b5b42a2a27447c40a75
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: f9c2af93b814f7762488a185476d395237a276a9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450053"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678376"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 Carga previamente los módulos designados por el proveedor de símbolos especificado.
@@ -36,8 +36,9 @@ int PreloadModules (
 ```
 
 #### <a name="parameters"></a>Parámetros
-`pSym`  
-[in] Proveedor de símbolos para el que se cargarán previamente los módulos.
+`pSym`
+
+ [in] Proveedor de símbolos para el que se cargarán previamente los módulos.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -75,4 +76,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

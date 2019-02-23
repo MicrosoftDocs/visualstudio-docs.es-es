@@ -1,7 +1,7 @@
 ---
 title: AD_PROCESS_ID_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - AD_PROCESS_ID_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c600dd1fcf22ac7e32e91a38c98d6f524a9ba79
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 405d11b0c685017d59251ba83126a73fe1a96db2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315656"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708971"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
 Especifica cómo interpretar un identificador de proceso en el [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura.
@@ -55,5 +55,5 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)
+- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

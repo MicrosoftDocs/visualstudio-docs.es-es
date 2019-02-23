@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::CreatePendingBreakpoint | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::CreatePendingBreakpoint
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1beac81e3d2b9e5a6c563028bbc39c7f4cb82539
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 72719a2dc6d424487c0fdd6b5850ff7f1d1e29aa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450339"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703388"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 Crea un punto de interrupción pendiente en el motor de depuración (DE).
@@ -39,11 +39,13 @@ int CreatePendingBreakpoint(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`pBPRequest`  
-[in] Un [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) objeto que describe el punto de interrupción pendiente a crear.
+`pBPRequest`
 
-`ppPendingBP`  
-[out] Devuelve un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto que representa el punto de interrupción pendiente.
+ [in] Un [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) objeto que describe el punto de interrupción pendiente a crear.
+
+`ppPendingBP`
+
+ [out] Devuelve un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto que representa el punto de interrupción pendiente.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve normalmente `E_FAIL` si el `pBPRequest` parámetro no coincide con cualquier lenguaje compatible con la DE If el `pBPRequest` parámetro no es válido o incompleto.
@@ -70,7 +72,7 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)  
-[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)  
-[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)  
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

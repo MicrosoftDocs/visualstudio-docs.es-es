@@ -1,7 +1,7 @@
 ---
 title: IDebugThreadDestroyEvent2::GetExitCode | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThreadDestroyEvent2::GetExitCode
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56caa01fa99e515437116d4d6af9e9be696ac334
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b2330c8462f88fca401c2e83980465f6f98fc5a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977699"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704025"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
-Obtiene el código de salida para un subproceso.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT GetExitCode (   
-   DWORD* pdwExit  
-);  
-```  
-  
-```csharp  
-int GetExitCode (   
-   out uint pdwExit  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pdwExit`  
- [out] Devuelve el código de salida del subproceso.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)
+Obtiene el código de salida para un subproceso.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetExitCode ( 
+   DWORD* pdwExit
+);
+```
+
+```csharp
+int GetExitCode ( 
+   out uint pdwExit
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pdwExit`
+
+ [out] Devuelve el código de salida del subproceso.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)

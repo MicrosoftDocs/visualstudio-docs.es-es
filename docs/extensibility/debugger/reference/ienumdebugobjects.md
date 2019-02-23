@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugObjects | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugObjects
 helpviewer_keywords:
@@ -12,52 +12,52 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a93d94a49ed331b74886f001fb2d4069d6b10ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8a0de2742b5fee3215d1fddbe7912943effe639d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919721"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680976"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
->  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
-  
- Esta interfaz representa una colección de objetos que implementan la [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaz.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-IEnumDebugObjects : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Notas para los implementadores  
- El evaluador de expresiones implementa esta interfaz para proporcionar conjuntos de objetos que implementan la [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaz. Tenga en cuenta que esto no es una enumeración de COM estándar debido a la presencia de la [GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md) método.  
-  
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md) devuelve esta interfaz.  
-  
-## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- Esta interfaz implementa los métodos siguientes.  
-  
-|Método|Descripción|  
-|------------|-----------------|  
-|[Siguiente](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|Recupera el siguiente conjunto de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos de la enumeración.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|Omite un número especificado de entradas.|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|Restablece la enumeración a la primera entrada.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|Recupera una copia de la enumeración actual.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|Recupera el número de entradas de la enumeración.|  
-  
-## <a name="remarks"></a>Comentarios  
- Esta interfaz permite que un motor de depuración enumerar a través de un conjunto de objetos en una matriz.  
-  
-## <a name="requirements"></a>Requisitos  
- Header: ee.h  
-  
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
-  
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
- [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)
+>  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+
+ Esta interfaz representa una colección de objetos que implementan la [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaz.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+IEnumDebugObjects : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Notas para los implementadores
+ El evaluador de expresiones implementa esta interfaz para proporcionar conjuntos de objetos que implementan la [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaz. Tenga en cuenta que esto no es una enumeración de COM estándar debido a la presencia de la [GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md) método.
+
+## <a name="notes-for-callers"></a>Notas para los llamadores
+- [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md) devuelve esta interfaz.
+
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
+ Esta interfaz implementa los métodos siguientes.
+
+|Método|Descripción|
+|------------|-----------------|
+|[Siguiente](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|Recupera el siguiente conjunto de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos de la enumeración.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|Omite un número especificado de entradas.|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|Restablece la enumeración a la primera entrada.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|Recupera una copia de la enumeración actual.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|Recupera el número de entradas de la enumeración.|
+
+## <a name="remarks"></a>Comentarios
+ Esta interfaz permite que un motor de depuración enumerar a través de un conjunto de objetos en una matriz.
+
+## <a name="requirements"></a>Requisitos
+ Header: ee.h
+
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vea también
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+- [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)
