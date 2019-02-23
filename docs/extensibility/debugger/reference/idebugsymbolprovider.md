@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 280494149225cb90ff60d4e3ac893061278f9641
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: db4e5592fac73f629aba69fa23d1a7163c794875
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450560"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693443"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Esta interfaz representa un proveedor de símbolos que proporciona los símbolos y tipos, devolverlos como campos.
@@ -104,4 +104,4 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 ```
 
 ## <a name="see-also"></a>Vea también
-[Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

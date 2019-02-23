@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointChecksumRequest2::GetChecksum | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba3d10fc129edfa5ac159bcf394cdbe734d65dba
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 8d3c85d949f9547897b924bea86fe0cf9d438768
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317645"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685669"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 Recupera la suma de comprobación de documento para una solicitud de punto de interrupción según el identificador único del algoritmo de suma de comprobación para usar.
@@ -37,11 +37,13 @@ public int GetChecksum(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`guidAlgorithm`  
-[in] Identificador único del algoritmo de suma de comprobación.
+`guidAlgorithm`
 
-`pChecksumData`  
-[out] Suma de comprobación de documento para la solicitud de punto de interrupción.
+ [in] Identificador único del algoritmo de suma de comprobación.
+
+`pChecksumData`
+
+ [out] Suma de comprobación de documento para la solicitud de punto de interrupción.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -102,4 +104,4 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)
+- [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

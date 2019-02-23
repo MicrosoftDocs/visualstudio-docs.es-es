@@ -1,7 +1,7 @@
 ---
 title: CONSTRUCTOR_ENUM | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONSTRUCTOR_ENUM
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd5067591f4f296825db6362f4a7b91f1a7a37e8
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bb880516d13085af594bb639a15d76fca8262279
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412818"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680365"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 Selecciona distintos tipos de constructores.
@@ -41,14 +41,11 @@ public enum ConstructorMatchOptions {
 ```
 
 ## <a name="members"></a>Miembros
-crAll  
-Selecciona todos los constructores.
+crAll selecciona todos los constructores.
 
-crNonStatic  
-Selecciona los constructores no estáticos.
+crNonStatic selecciona los constructores no estáticos.
 
-crStatic  
-Selecciona los constructores estáticos.
+crStatic selecciona los constructores estáticos.
 
 ## <a name="remarks"></a>Comentarios
 Se pasa como argumento a la [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) método.
@@ -61,5 +58,5 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
+- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

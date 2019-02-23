@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::IsCustomAttributeDefined
 - IsCustomAttributeDefined
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb4e26e1d9067985f9d7fd00d7b0a57950148306
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 8a907d6460a9bf31e501ed4c2239cb31112a39f5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413506"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708230"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 Determina si se ha definido el atributo personalizado especificado.
@@ -36,8 +36,9 @@ int IsCustomAttributeDefined(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`pszCustomAttributeName`  
-[in] Nombre del atributo personalizado.
+`pszCustomAttributeName`
+
+ [in] Nombre del atributo personalizado.
 
 ## <a name="return-value"></a>Valor devuelto
 Si el atributo personalizado se define, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE`.
@@ -83,4 +84,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

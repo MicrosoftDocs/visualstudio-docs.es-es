@@ -1,7 +1,7 @@
 ---
 title: DisassemblyData | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DisassemblyData
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bbc61236156cdcbfacdf73101752ea6811470c0
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f48d9eb61a3f017f61ef717a27e89cb7426bad26
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317450"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712481"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Describe una instrucción de desensamblado para el entorno de desarrollo integrado (IDE) para mostrar.
@@ -61,45 +61,33 @@ public struct DisassemblyData { 
 ```
 
 ## <a name="members"></a>Miembros
-`dwFields`  
-El [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) constante que especifica qué campos se rellenan.
+`dwFields` El [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) constante que especifica qué campos se rellenan.
 
-`bstrAddress`  
-La dirección como un desplazamiento desde el punto de inicio (normalmente el principio de la función asociada).
+`bstrAddress` La dirección como un desplazamiento desde el punto de inicio (normalmente el principio de la función asociada).
 
-`bstrCodeBytes`  
-Bytes de código para esta instrucción.
+`bstrCodeBytes` Bytes de código para esta instrucción.
 
-`bstrOpcode`  
-El código de operación para esta instrucción.
+`bstrOpcode` El código de operación para esta instrucción.
 
-`bstrOperands`  
-Los operandos de esta instrucción.
+`bstrOperands` Los operandos de esta instrucción.
 
-`bstrSymbol`  
-El nombre del símbolo, si hay alguno, asociado con la dirección (símbolos públicos, etiqueta y así sucesivamente).
+`bstrSymbol` El nombre del símbolo, si hay alguno, asociado con la dirección (símbolos públicos, etiqueta y así sucesivamente).
 
-`uCodeLocationId`  
-El identificador de ubicación de código para esta línea de desensamblado. Si la dirección de contexto de código de una línea es mayor que la dirección de contexto de código de otro, el identificador de ubicación el código desensamblado del primer también será mayor que el identificador de ubicación del código de la segunda.
+`uCodeLocationId` El identificador de ubicación de código para esta línea de desensamblado. Si la dirección de contexto de código de una línea es mayor que la dirección de contexto de código de otro, el identificador de ubicación el código desensamblado del primer también será mayor que el identificador de ubicación del código de la segunda.
 
-`posBeg`  
-El [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que corresponde a la posición de un documento donde comienzan los datos de desensamblado.
+`posBeg` El [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que corresponde a la posición de un documento donde comienzan los datos de desensamblado.
 
-`posEnd`  
-El [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que corresponde a la posición de un documento que acaba de los datos de desensamblado.
+`posEnd` El [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que corresponde a la posición de un documento que acaba de los datos de desensamblado.
 
-`bstrDocumentUrl`  
-Para los documentos de texto que se pueden representar como nombres de archivo, el `bstrDocumentUrl` campo se rellena con el nombre de archivo donde se puede encontrar el origen, con el formato `file://file name`.
+`bstrDocumentUrl` Para los documentos de texto que se pueden representar como nombres de archivo, el `bstrDocumentUrl` campo se rellena con el nombre de archivo donde se puede encontrar el origen, con el formato `file://file name`.
 
 Para los documentos de texto que no se puede representar como nombres de archivo, `bstrDocumentUrl` es un identificador único para el documento y el motor de depuración debe implementar la [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) método.
 
 Este campo puede contener también información adicional sobre las sumas de comprobación. Para obtener más información, vea la sección Comentarios.
 
-`dwByteOffset`  
-El número de bytes de que la instrucción es desde el principio de la línea de código.
+`dwByteOffset` El número de bytes de que la instrucción es desde el principio de la línea de código.
 
-`dwFlags`  
-El [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) constante que especifica las marcas que están activas.
+`dwFlags` El [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) constante que especifica las marcas que están activas.
 
 ## <a name="remarks"></a>Comentarios
 Cada `DisassemblyData` estructura describe una instrucción de desensamblado. Una matriz de estas estructuras se devuelve desde el [lectura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) método.
@@ -224,10 +212,10 @@ namespace MyNamespace
 ```
 
 ## <a name="see-also"></a>Vea también
-[Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)  
-[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)  
-[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)  
-[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)  
-[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
+- [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
+- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

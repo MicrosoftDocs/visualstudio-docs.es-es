@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetStringChars | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetStringChars
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ce59e1fcbc9b219f1436bd09d4d947cd6995c0f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 900238434f5671cd9a5ba1bd358304638551dbc5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450430"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698149"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Recupera la cadena asociada a esta propiedad y lo almacena en un búfer proporcionado por el usuario.
@@ -41,16 +41,20 @@ int GetStringChars(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`buflen`  
-[in] Número máximo de caracteres que puede contener el búfer proporcionado por el usuario.
+`buflen`
 
-`rgString`  
-[out] Devuelve la cadena.
+ [in] Número máximo de caracteres que puede contener el búfer proporcionado por el usuario.
 
-[Solo en C++], `rgString` es un puntero a un búfer que recibe los caracteres Unicode de la cadena. Este búfer debe ser al menos `buflen` caracteres (no bytes) de tamaño.
+`rgString`
 
-`pceltFetched`  
-[out] Donde se devuelve el número de caracteres que realmente se almacenan en el búfer. (Puede ser `NULL` en C++.)
+ [out] Devuelve la cadena.
+
+
+ [Solo en C++], `rgString` es un puntero a un búfer que recibe los caracteres Unicode de la cadena. Este búfer debe ser al menos `buflen` caracteres (no bytes) de tamaño.
+
+`pceltFetched`
+
+ [out] Donde se devuelve el número de caracteres que realmente se almacenan en el búfer. (Puede ser `NULL` en C++.)
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -85,6 +89,6 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 ```
 
 ## <a name="see-also"></a>Vea también
-[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)  
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

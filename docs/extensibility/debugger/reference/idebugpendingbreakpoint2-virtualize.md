@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::Virtualize | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Virtualize
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ba9f1fd7587eb99115751790fdca2995c9ab019
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 58c2dd4ffd150caebe616e3d891f0227970826cc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450132"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689660"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Alterna el estado virtualizado de este pendiente de punto de interrupción. Cuando se virtualiza un punto de interrupción pendiente, el motor de depuración intentará enlazar cada vez que carga el nuevo código en el programa.
@@ -38,8 +38,9 @@ int Virtualize(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`fVirtualize`  
-[in] Establecer a distinto de cero (`TRUE`) para virtualizar el punto de interrupción pendiente o en cero (`FALSE`) para desactivar la virtualización.
+`fVirtualize`
+
+ [in] Establecer a distinto de cero (`TRUE`) para virtualizar el punto de interrupción pendiente o en cero (`FALSE`) para desactivar la virtualización.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.
@@ -83,4 +84,4 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

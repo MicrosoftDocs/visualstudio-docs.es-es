@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator2::Terminate | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Terminate
 - IDebugExpressionEvaluator2::Terminate
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e0fd752e20eca4e46e80eb62c40f876f966c957
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 3ef5f17354e45327a87ee77e5b437409719094e9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450443"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678324"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
 Detiene y limpia el evaluador de expresiones.
@@ -57,4 +57,4 @@ STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35c68d2be2179b3bbcb1b3c691deb42cd8e8414f
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412843"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689179"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 Especifica los criterios para comparar dos contextos de memoria.
@@ -54,32 +54,23 @@ public enum enum_CONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>Miembros
-CONTEXT_EQUAL  
-Busque el primer contexto de memoria en la lista que es igual que el contexto de la memoria de destino.
+CONTEXT_EQUAL buscar el primer contexto de memoria en la lista que es igual que el contexto de la memoria de destino.
 
-CONTEXT_LESS_THAN  
-Busque el primer contexto de memoria en la lista que es menor que el contexto de la memoria de destino.
+CONTEXT_LESS_THAN buscar el primer contexto de memoria en la lista que es menor que el contexto de la memoria de destino.
 
-CONTEXT_GREATER_THAN  
-Busque el primer contexto de memoria en la lista que es mayor que el contexto de la memoria de destino.
+CONTEXT_GREATER_THAN buscar el primer contexto de memoria en la lista que es mayor que el contexto de la memoria de destino.
 
-CONTEXT_LESS_THAN_OR_EQUAL  
-Busque el primer contexto de memoria en la lista que es menor o igual que el contexto de la memoria de destino.
+CONTEXT_LESS_THAN_OR_EQUAL buscar el primer contexto de memoria en la lista que sea menor o igual que el contexto de la memoria de destino.
 
-CONTEXT_GREATER_THAN_OR_EQUAL  
-Busque el primer contexto de memoria en la lista que es mayor o igual que el contexto de la memoria de destino.
+CONTEXT_GREATER_THAN_OR_EQUAL buscar el primer contexto de memoria en la lista que es mayor o igual que el contexto de la memoria de destino.
 
-CONTEXT_SAME_SCOPE  
-Busque el primer contexto de memoria en la lista que se encuentra en el mismo ámbito que el contexto de la memoria de destino.
+CONTEXT_SAME_SCOPE buscar el primer contexto de memoria en la lista que se encuentra en el mismo ámbito que el contexto de la memoria de destino.
 
-CONTEXT_SAME_FUNCTION  
-Busque el primer contexto de memoria en la lista que se encuentra en la misma función que el ámbito de la memoria de destino.
+CONTEXT_SAME_FUNCTION buscar el primer contexto de memoria en la lista que se encuentra en la misma función que el ámbito de la memoria de destino.
 
-CONTEXT_SAME_MODULE  
-Busque el primer contexto de memoria en la lista que se encuentra en el mismo módulo que el contexto de la memoria de destino.
+CONTEXT_SAME_MODULE buscar el primer contexto de memoria en la lista que se encuentra en el mismo módulo que el contexto de la memoria de destino.
 
-CONTEXT_SAME_PROCESS  
-Busque el primer contexto de memoria en la lista que se encuentra en el mismo proceso que el contexto de la memoria de destino.
+CONTEXT_SAME_PROCESS buscar el primer contexto de memoria en la lista que se encuentra en el mismo proceso que el contexto de la memoria de destino.
 
 ## <a name="remarks"></a>Comentarios
 Se pasa como argumento a la [comparar](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) método.
@@ -94,5 +85,5 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

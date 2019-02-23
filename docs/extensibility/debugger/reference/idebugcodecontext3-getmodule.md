@@ -1,7 +1,7 @@
 ---
 title: IDebugCodeContext3::GetModule | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetModule
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f79403bfd1dfe89868b3a8e3a901e2fc370609d
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: ae925ab4c05db45d09638070df9291541f19a869
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412791"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703726"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 Recupera una referencia a la interfaz del módulo de depuración.
@@ -35,8 +35,9 @@ public int GetModule(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`ppModule`  
-[out] Referencia a la interfaz del módulo de depuración.
+`ppModule`
+
+ [out] Referencia a la interfaz del módulo de depuración.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -63,4 +64,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)
+- [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

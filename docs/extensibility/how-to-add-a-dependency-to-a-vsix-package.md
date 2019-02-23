@@ -13,14 +13,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba9f1f5f1d656dc2283d9cc943ca03f752cb5067
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 225f2bba47aea209e406abe4555b508a2ee93ade
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000134"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708581"
 ---
-# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Procedimiento Agregar una dependencia a un paquete VSIX
+# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Filtrar Agregar una dependencia a un paquete VSIX
 
 Puede configurar una implementación de paquete VSIX que instala las dependencias que no están presentes en el equipo de destino. Para ello, incluyen las dependencias VSIX para la *source.extension.vsixmanifest* archivo.
 
@@ -49,6 +49,6 @@ El VSIXInstaller detectará las versiones anteriores de Visual Studio e informar
 
 ## <a name="see-also"></a>Vea también
 
- [Referencia de esquema 1.0 de extensión VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Preparar las extensiones para la implementación de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+- [Referencia de esquema 1.0 de extensión VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)
+- [Preparar las extensiones para la implementación de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

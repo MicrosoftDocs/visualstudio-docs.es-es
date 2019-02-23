@@ -1,7 +1,7 @@
 ---
 title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_UNBOUND_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab701ef9886dddc0c2e32aa79092f22ad91d4630
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316072"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717668"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Proporciona la razón que no está enlazado a un punto de interrupción.
@@ -44,17 +44,13 @@ public enum enum_BP_UNBOUND_REASON {
 ```
 
 ## <a name="members"></a>Miembros
-BPUR_UNKNOWN  
-El motivo es desconocido.
+BPUR_UNKNOWN el motivo es desconocido.
 
-BPUR_CODE_UNLOADED  
-El código que contiene el punto de interrupción se ha descargado.
+BPUR_CODE_UNLOADED el código que contiene el punto de interrupción se ha descargado.
 
-BPUR_BREAKPOINT_REBIND  
-Se han vuelto a enlazar el punto de interrupción en una ubicación diferente. Esto puede ocurrir después de editar y continuar con las operaciones cuando se mueve el punto de interrupción o cuando el punto de interrupción se enlaza a un archivo con una ruta de acceso que ya no es válido.
+Se han vuelto a enlazar BPUR_BREAKPOINT_REBIND el punto de interrupción en una ubicación diferente. Esto puede ocurrir después de editar y continuar con las operaciones cuando se mueve el punto de interrupción o cuando el punto de interrupción se enlaza a un archivo con una ruta de acceso que ya no es válido.
 
-BPUR_ BREAKPOINT_ERROR  
-El punto de interrupción se determina como error después de que está enlazado. Esto sucede a los puntos de interrupción administrados cuyas condiciones ya no son válidos.
+BPUR_ BREAKPOINT_ERROR el punto de interrupción se determina como error después de que está enlazado. Esto sucede a los puntos de interrupción administrados cuyas condiciones ya no son válidos.
 
 ## <a name="remarks"></a>Comentarios
 Devuelto por la [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) método.
@@ -67,5 +63,5 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

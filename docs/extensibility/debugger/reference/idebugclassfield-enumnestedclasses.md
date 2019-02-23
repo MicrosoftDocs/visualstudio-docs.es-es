@@ -1,7 +1,7 @@
 ---
 title: IDebugClassField::EnumNestedClasses | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugClassField::EnumNestedClasses
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b85d7a681d84f5549e0cb8f88d3c7a40773cc2f
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 512329317ce1e9587848edf15c68f57fe112299e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413207"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681926"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 Crea un enumerador para las clases anidadas de esta clase.
@@ -37,8 +37,9 @@ int EnumNestedClasses(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`ppEnum`  
-[out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa la lista de las clases anidadas. Devuelve un valor null si no hay ninguna clase anidada.
+`ppEnum`
+
+ [out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa la lista de las clases anidadas. Devuelve un valor null si no hay ninguna clase anidada.
 
 ## <a name="return-value"></a>Valor devuelto
 Si se realiza correctamente, devuelve S_OK o devuelve S_FALSE si no hay ninguna clase anidada. De lo contrario, devuelve un código de error.
@@ -57,5 +58,5 @@ class RootClass {
 El [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumeración contendría un objeto que representa el `NestedClass` clase.
 
 ## <a name="see-also"></a>Vea también
-[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)  
-[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

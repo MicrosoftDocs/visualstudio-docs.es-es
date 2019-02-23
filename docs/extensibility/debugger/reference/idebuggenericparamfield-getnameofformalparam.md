@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetNameOfFormalParam | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetNameOfFormalParam
 - GetNameOfFormalParam
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3994ab978335d9cf8f1c607d2bd90fea7d45bc3f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 8e927c6fb85a4e654224f95564f6575141783137
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450170"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682874"
 ---
 # <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
 Recupera el nombre de este parámetro genérico.
@@ -36,8 +36,9 @@ int GetNameOfFormalParam (
 ```
 
 #### <a name="parameters"></a>Parámetros
-`pbstrName`  
-[out] Nombre de este parámetro genérico.
+`pbstrName`
+
+ [out] Nombre de este parámetro genérico.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -65,4 +66,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

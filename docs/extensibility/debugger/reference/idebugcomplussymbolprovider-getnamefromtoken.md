@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetNameFromToken | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetNameFromToken
 - GetNameFromToken
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f9a07b7c6e1abcf8bf63fb8f6bd61ec82d7e9b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 6122e134fda4b7704385609fec8fa7cd25665968
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413415"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682536"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 Devuelve el nombre asociado con el token especificado, dado su objeto de metadatos.
@@ -40,14 +40,17 @@ int GetNameFromToken (
 ```
 
 #### <a name="parameters"></a>Parámetros
-`pMetadataImport`  
-[in] Objeto que contiene la información de metadatos.
+`pMetadataImport`
 
-`dwToken`  
-[in] Símbolo (token) que el nombre.
+ [in] Objeto que contiene la información de metadatos.
 
-`pbstrName`  
-[out] Nombre que se corresponde con el token.
+`dwToken`
+
+ [in] Símbolo (token) que el nombre.
+
+`pbstrName`
+
+ [out] Nombre que se corresponde con el token.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -120,4 +123,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
