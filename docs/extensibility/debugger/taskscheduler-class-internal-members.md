@@ -11,40 +11,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1801bc087311170169c752af8b50de4cd4e01da6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf7b693c058cd69ab2dcb79be787cf5a16d8f8a0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926844"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696160"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler Class: miembros internos
-En este artículo se describe los miembros internos de la <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> clase que le ayudarán a implementar un depurador personalizado. Para obtener información general acerca de esta clase, vea el <xref:System.Threading.Tasks.TaskScheduler> artículo de referencia.  
-  
- **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Ensamblado:** mscorlib (en *mscorlib.dll*)  
-  
- Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```csharp  
-.class public abstract auto ansi beforefieldinit System.Threading.Tasks.TaskScheduler  
-       extends System.Object  
-```  
-  
-## <a name="members"></a>Miembros  
-  
-### <a name="methods"></a>Métodos  
-  
-|Name|Descripción|  
-|----------|-----------------|  
-|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Recupera una matriz de todas las tareas programadas.|  
-|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Recupera una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están activos actualmente.|  
-  
-## <a name="remarks"></a>Comentarios  
-  
-## <a name="see-also"></a>Vea también  
- <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
- [Parámetros internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+En este artículo se describe los miembros internos de la <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> clase que le ayudarán a implementar un depurador personalizado. Para obtener información general acerca de esta clase, vea el <xref:System.Threading.Tasks.TaskScheduler> artículo de referencia.
+
+ **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Ensamblado:** mscorlib (en *mscorlib.dll*)
+
+ Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).
+
+## <a name="syntax"></a>Sintaxis
+
+```csharp
+.class public abstract auto ansi beforefieldinit System.Threading.Tasks.TaskScheduler
+       extends System.Object
+```
+
+## <a name="members"></a>Miembros
+
+### <a name="methods"></a>Métodos
+
+|Name|Descripción|
+|----------|-----------------|
+|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Recupera una matriz de todas las tareas programadas.|
+|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Recupera una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están activos actualmente.|
+
+## <a name="remarks"></a>Comentarios
+
+## <a name="see-also"></a>Vea también
+- <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
+- [Parámetros internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

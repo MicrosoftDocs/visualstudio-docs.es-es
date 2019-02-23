@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetConstraints | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetConstraints
 - GetConstraints
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abed2d77156aac83b09bf5a0ba472b1887d15600
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: a98a62ca294af5f7151ca0047b966cc151970fe6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450079"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700879"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 Recupera las restricciones que están asociadas con este parámetro genérico.
@@ -40,14 +40,17 @@ int GetConstraints(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`cConstraints`  
-[in] Número de restricciones.
+`cConstraints`
 
-`ppConstraints`  
-[out] Devuelve una matriz que contiene las restricciones asociadas con este campo.
+ [in] Número de restricciones.
 
-`pcConstraints`  
-[in, out] Número de restricciones en el `ppConstraints` matriz.
+`ppConstraints`
+
+ [out] Devuelve una matriz que contiene las restricciones asociadas con este campo.
+
+`pcConstraints`
+
+ [in, out] Número de restricciones en el `ppConstraints` matriz.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -149,4 +152,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
