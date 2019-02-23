@@ -20,7 +20,7 @@ ms.locfileid: "55950492"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
-En esta introducción de 10 minutos al editor de código, se agrega código a un archivo para ver algunas de las formas en que Visual Studio hace que escribir y comprender el código (así como desplazarse por él) sea más fácil.
+En esta introducción de 10 minutos al editor de código en Visual Studio, agregaremos código a un archivo para ver algunas de las formas en que Visual Studio facilita la escritura, navegación y compresión del código.
 
 > [!TIP]
 > Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
