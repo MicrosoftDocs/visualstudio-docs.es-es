@@ -1,7 +1,7 @@
 ---
 title: IDebugPropertyDestroyEvent2::GetDebugProperty | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPropertyDestroyEvent2::GetDebugProperty
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 963a3d204841cf92423fa893413d375cfb62cfd8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9a9d0b6ec922e010fb9800c212d4a233e8eeeb0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960027"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709231"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
-Obtiene la propiedad que se va a destruir.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT GetDebugProperty (   
-   IDebugProperty2** ppProperty  
-);  
-```  
-  
-```csharp  
-int GetDebugProperty (   
-   out IDebugProperty2 ppProperty  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `ppProperty`  
- [out] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa la propiedad que se va a destruir.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+Obtiene la propiedad que se va a destruir.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetDebugProperty ( 
+   IDebugProperty2** ppProperty
+);
+```
+
+```csharp
+int GetDebugProperty ( 
+   out IDebugProperty2 ppProperty
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `ppProperty`
+
+ [out] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa la propiedad que se va a destruir.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

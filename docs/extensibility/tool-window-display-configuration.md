@@ -11,29 +11,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973413"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707047"
 ---
 # <a name="tool-window-display-configuration"></a>Configuración de pantalla de ventana de herramienta
-Cuando registra un VSPackage una ventana de herramientas, la posición predeterminada, tamaño, estilo de acoplamiento y otra información de visibilidad se especifica en los valores opcionales. Para obtener más información sobre el registro de la ventana de herramienta, consulte [herramienta de Windows en el registro](../extensibility/tool-windows-in-the-registry.md)  
+Cuando registra un VSPackage una ventana de herramientas, la posición predeterminada, tamaño, estilo de acoplamiento y otra información de visibilidad se especifica en los valores opcionales. Para obtener más información sobre el registro de la ventana de herramienta, consulte [herramienta de Windows en el registro](../extensibility/tool-windows-in-the-registry.md)
 
-## <a name="window-display-information"></a>Información de pantalla de ventana  
- Configuración de presentación básica de una ventana de herramientas se almacena en un máximo de seis valores opcionales:  
+## <a name="window-display-information"></a>Información de pantalla de ventana
+ Configuración de presentación básica de una ventana de herramientas se almacena en un máximo de seis valores opcionales:
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
+```
 
 
 | nombre | Tipo | Datos | Descripción |
@@ -45,67 +45,67 @@ HKEY_LOCAL_MACHINE\
 | Orientación | REG_SZ | "Izquierda"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Bottom" | Consulte la sección de comentarios siguiente. |
 | DontForceCreate | REG_DWORD | 0 o 1 | Cuando esta entrada está presente y su valor no es cero, la ventana se carga, pero no inmediatamente muestra. |
 
-### <a name="comments"></a>Comentarios  
- La entrada de orientación define la posición donde se acopla la ventana de herramientas cuando se hace doble clic en la barra de título. La posición es relativa a la ventana especificada en la entrada de la ventana. Si la entrada de estilo se establece en "Vinculado", la entrada de la orientación puede ser "Left", "Right", "Top" o "Bottom". Si la entrada de estilo es "por pestañas", la orientación de la entrada puede "izquierda" o "Right" y especifica dónde se agrega la pestaña. Si la entrada de estilo "Flotar", la ventana de herramientas flota en primer lugar. Cuando se hace doble clic en la barra de título, se aplican las entradas de orientación y la ventana y la ventana usa el estilo "por pestañas". Si la entrada de estilo "AlwaysFloat", no se puede acoplar la ventana de herramientas. Si la entrada de estilo "MDI", la ventana de herramientas está vinculada al área de MDI y se omite la entrada de la ventana.  
+### <a name="comments"></a>Comentarios
+ La entrada de orientación define la posición donde se acopla la ventana de herramientas cuando se hace doble clic en la barra de título. La posición es relativa a la ventana especificada en la entrada de la ventana. Si la entrada de estilo se establece en "Vinculado", la entrada de la orientación puede ser "Left", "Right", "Top" o "Bottom". Si la entrada de estilo es "por pestañas", la orientación de la entrada puede "izquierda" o "Right" y especifica dónde se agrega la pestaña. Si la entrada de estilo "Flotar", la ventana de herramientas flota en primer lugar. Cuando se hace doble clic en la barra de título, se aplican las entradas de orientación y la ventana y la ventana usa el estilo "por pestañas". Si la entrada de estilo "AlwaysFloat", no se puede acoplar la ventana de herramientas. Si la entrada de estilo "MDI", la ventana de herramientas está vinculada al área de MDI y se omite la entrada de la ventana.
 
-### <a name="example"></a>Ejemplo  
+### <a name="example"></a>Ejemplo
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\  
-              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}  
-              DontForceCreate = reg_dword: 0x00000000  
-              Float           = reg_sz: 100,100,450,300  
-              Name            = reg_sz: Bookmarks  
-              Orientation     = reg_sz: Left  
-              Style           = reg_sz: Tabbed  
-              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\
+              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}
+              DontForceCreate = reg_dword: 0x00000000
+              Float           = reg_sz: 100,100,450,300
+              Name            = reg_sz: Bookmarks
+              Orientation     = reg_sz: Left
+              Style           = reg_sz: Tabbed
+              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}
+```
 
-## <a name="tool-window-visibility"></a>Visibilidad de la ventana de herramienta  
- Valores de la subclave de visibilidad opcional determinan la configuración de visibilidad de una ventana de herramienta. Los nombres de los valores se usan para almacenar los GUID de los comandos que requieren la visibilidad de la ventana. Si se ejecuta el comando, el IDE garantiza que se crea y se hace visible la ventana de herramientas.  
+## <a name="tool-window-visibility"></a>Visibilidad de la ventana de herramienta
+ Valores de la subclave de visibilidad opcional determinan la configuración de visibilidad de una ventana de herramienta. Los nombres de los valores se usan para almacenar los GUID de los comandos que requieren la visibilidad de la ventana. Si se ejecuta el comando, el IDE garantiza que se crea y se hace visible la ventana de herramientas.
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              Visibility\  
-                (Default) = reg_sz:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_sz:  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              Visibility\
+                (Default) = reg_sz:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_sz:
+```
 
-|nombre|Tipo|Datos|Descripción|  
-|----------|----------|----------|-----------------|  
-|(Predeterminado)|REG_SZ|Ninguna|Deje en blanco.|  
-|*\<GUID>*|REG_DWORD o REG_SZ|0 o una cadena descriptiva.|Opcional. Nombre de la entrada debe ser el GUID de un comando que requiere la visibilidad. El valor contiene solo una cadena de carácter informativo. Normalmente, el valor es un `reg_dword` establecido en 0.|  
+|nombre|Tipo|Datos|Descripción|
+|----------|----------|----------|-----------------|
+|(Predeterminado)|REG_SZ|Ninguna|Deje en blanco.|
+|*\<GUID>*|REG_DWORD o REG_SZ|0 o una cadena descriptiva.|Opcional. Nombre de la entrada debe ser el GUID de un comando que requiere la visibilidad. El valor contiene solo una cadena de carácter informativo. Normalmente, el valor es un `reg_dword` establecido en 0.|
 
-### <a name="example"></a>Ejemplo  
+### <a name="example"></a>Ejemplo
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {EEFA5220-E298-11D0-8F78-00A0C9110057}\  
-              Visibility\  
-                (Default) = reg_sz:  
-                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000  
-                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {EEFA5220-E298-11D0-8F78-00A0C9110057}\
+              Visibility\
+                (Default) = reg_sz:
+                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000
+                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+```
 
-## <a name="see-also"></a>Vea también  
- [VSPackages](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>Vea también
+- [VSPackages](../extensibility/internals/vspackages.md)
