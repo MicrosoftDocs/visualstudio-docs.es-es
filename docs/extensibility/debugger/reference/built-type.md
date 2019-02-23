@@ -1,7 +1,7 @@
 ---
 title: BUILT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BUILT_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 692391379c3f2581e535a9e5c885f776565fb93d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 09f0438bed235729d390b784725b89abec201c7f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315498"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693534"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 Esta estructura especifica información sobre un tipo de campo que se toman de los metadatos.
@@ -41,14 +41,11 @@ public struct BUILT_TYPE {
 ```
 
 #### <a name="parameters"></a>Parámetros
-ulAppDomainID  
-Identificador de la aplicación del que procede el símbolo. Esto se utiliza para identificar de forma exclusiva una instancia de la aplicación.
+ulAppDomainID Id. de la aplicación del que procede el símbolo. Esto se utiliza para identificar de forma exclusiva una instancia de la aplicación.
 
-guidModule  
-El GUID del módulo que contiene este campo.
+guidModule el GUID del módulo que contiene este campo.
 
-pUnderlyingField  
-Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que identifica el campo subyacente asociado a este campo integrado.
+pUnderlyingField una [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que identifica el campo subyacente asociado a este campo integrado.
 
 ## <a name="remarks"></a>Comentarios
 Esta estructura aparece como parte de la unión en el [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) estructura cuando la `dwKind` campo de la `TYPE_INFO` estructura está establecida en `TYPE_KIND_BUILT` (un valor de la [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumeración).
@@ -61,7 +58,7 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)  
-[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
+- [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

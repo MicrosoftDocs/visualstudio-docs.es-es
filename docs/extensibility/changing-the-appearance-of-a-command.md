@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317086"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691350"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Cambiar la apariencia de un comando
 Puede proporcionar comentarios al usuario cambiar la apariencia de un comando. Por ejemplo, es posible que desee un comando que parecen diferentes cuando no está disponible. Puede hacer que los comandos disponibles o no está disponible, ocultar o mostrar, o comprobar o anule su selección en el menú.
@@ -85,7 +85,7 @@ Para cambiar la apariencia de un comando, realice una de estas acciones:
 8. En el **herramientas** ahora debería ver el menú **nuevo texto**. Haga clic en **nuevo texto**. El comando ahora debería aparecer atenuado.
 
 ## <a name="see-also"></a>Vea también
-[Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
-[Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)  
-[Tabla de comandos de Visual Studio (. Archivos Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)
+- [Tabla de comandos de Visual Studio (. Archivos Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

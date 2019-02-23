@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2 | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2
 helpviewer_keywords:
@@ -12,59 +12,59 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6105c16fc24f37f97bb04ebd005dbf663229804
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 816fad53554675e7f29cef838d4ea24e154dca8c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018220"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713313"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
-Esta interfaz representa un punto de interrupción que está listo para enlazar a una ubicación del código.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-IDebugPendingBreakpoint2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Notas para los implementadores  
- El motor de depuración (DE) implementa esta interfaz como parte de su compatibilidad con los puntos de interrupción.  
-  
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- Una llamada a [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) crea un punto de interrupción pendiente desde un [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interfaz. Una llamada a [enlazar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) crea un `IDebugBreakpoint2` interfaz que representa un punto de interrupción enlazado en el programa.  
-  
-## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- La tabla siguiente muestran los métodos de `IDebugPendingBreakpoint2`.  
-  
-|Método|Descripción|  
-|------------|-----------------|  
-|[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Determina si este punto de interrupción pendiente puede enlazar a una ubicación del código.|  
-|[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Este punto de interrupción pendiente se enlaza a una o varias ubicaciones del código.|  
-|[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Obtiene el estado de este pendiente de punto de interrupción.|  
-|[GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Obtiene la solicitud de punto de interrupción que se usó para crear este punto de interrupción pendiente.|  
-|[Virtualize](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|Alterna el estado virtualizado de este pendiente de punto de interrupción.|  
-|[Enable](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Alterna el estado habilitado de este pendiente de punto de interrupción.|  
-|[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)|Establece o cambia la condición asociada a este pendiente de punto de interrupción.|  
-|[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)|Establece o cambia el recuento de pass asociado a este pendiente de punto de interrupción.|  
-|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Enumera todos los puntos de interrupción enlazados desde este punto de interrupción pendiente.|  
-|[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Enumera todos los puntos de interrupción de error que dan como resultado de este punto de interrupción pendiente.|  
-|[Eliminar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Elimina este punto de interrupción pendiente y todos los puntos de interrupción enlazados a partir de él.|  
-  
-## <a name="remarks"></a>Comentarios  
- `IDebugPendingBreakpoint2` puede considerarse como un proveedor de toda la información necesaria para enlazar un punto de interrupción al código que se puede aplicar a uno o varios programas.  
-  
- Un punto de interrupción pendiente puede producir potencialmente más de un punto de interrupción enlazado. Por ejemplo, un punto de interrupción en una plantilla de estilo de C++ podría producir un punto de interrupción enlazado para cada instancia única de esa plantilla.  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
-  
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
-  
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vea también  
- [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)   
- [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)   
- [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)   
- [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)
+Esta interfaz representa un punto de interrupción que está listo para enlazar a una ubicación del código.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+IDebugPendingBreakpoint2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Notas para los implementadores
+ El motor de depuración (DE) implementa esta interfaz como parte de su compatibilidad con los puntos de interrupción.
+
+## <a name="notes-for-callers"></a>Notas para los llamadores
+ Una llamada a [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) crea un punto de interrupción pendiente desde un [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interfaz. Una llamada a [enlazar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) crea un `IDebugBreakpoint2` interfaz que representa un punto de interrupción enlazado en el programa.
+
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
+ La tabla siguiente muestran los métodos de `IDebugPendingBreakpoint2`.
+
+|Método|Descripción|
+|------------|-----------------|
+|[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Determina si este punto de interrupción pendiente puede enlazar a una ubicación del código.|
+|[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Este punto de interrupción pendiente se enlaza a una o varias ubicaciones del código.|
+|[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Obtiene el estado de este pendiente de punto de interrupción.|
+|[GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Obtiene la solicitud de punto de interrupción que se usó para crear este punto de interrupción pendiente.|
+|[Virtualize](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|Alterna el estado virtualizado de este pendiente de punto de interrupción.|
+|[Enable](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Alterna el estado habilitado de este pendiente de punto de interrupción.|
+|[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)|Establece o cambia la condición asociada a este pendiente de punto de interrupción.|
+|[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)|Establece o cambia el recuento de pass asociado a este pendiente de punto de interrupción.|
+|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Enumera todos los puntos de interrupción enlazados desde este punto de interrupción pendiente.|
+|[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Enumera todos los puntos de interrupción de error que dan como resultado de este punto de interrupción pendiente.|
+|[Eliminar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Elimina este punto de interrupción pendiente y todos los puntos de interrupción enlazados a partir de él.|
+
+## <a name="remarks"></a>Comentarios
+ `IDebugPendingBreakpoint2` puede considerarse como un proveedor de toda la información necesaria para enlazar un punto de interrupción al código que se puede aplicar a uno o varios programas.
+
+ Un punto de interrupción pendiente puede producir potencialmente más de un punto de interrupción enlazado. Por ejemplo, un punto de interrupción en una plantilla de estilo de C++ podría producir un punto de interrupción enlazado para cada instancia única de esa plantilla.
+
+## <a name="requirements"></a>Requisitos
+ Encabezado: msdbg.h
+
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vea también
+- [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
+- [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)
+- [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)
+- [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)

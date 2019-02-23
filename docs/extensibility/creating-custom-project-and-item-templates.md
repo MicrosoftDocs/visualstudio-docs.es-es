@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeb08af2edeea8650303b8e954bc7d3b42ef2641
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 733ffa76fdc24639d0e379b7e00a4a8c72a5f40e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012253"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714327"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Crear plantillas de proyecto y elemento personalizadas
 
@@ -84,5 +84,5 @@ Para escenarios de creación de la plantilla básica, debe usar el **Exportar pl
 
 ## <a name="see-also"></a>Vea también
 
-[Referencia de plantillas de Visual Studio](../ide/creating-project-and-item-templates.md)
-[paquetes de NuGet en plantillas de Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)
+- [Referencia de plantillas de Visual Studio](../ide/creating-project-and-item-templates.md)
+- [Paquetes NuGet en plantillas de Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

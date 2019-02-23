@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetCustomViewerCount | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetCustomViewerCount
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14fc55c65aa94d4f84d541de9f20e5f5886142ad
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 4067fc314889e7aa991407c99ba949564b547087
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450092"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709153"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Obtiene el número de visores personalizados que pueden estar disponibles para esta propiedad.
@@ -37,8 +37,9 @@ int GetCustomViewerCount(
 ```
 
 #### <a name="parameters"></a>Parámetros
-`pcelt`  
-[out] El número de visores personalizados disponibles para esta propiedad.
+`pcelt`
+
+ [out] El número de visores personalizados disponibles para esta propiedad.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -71,6 +72,6 @@ STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
-[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)
-[escriba visualizador y el visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)
+- [Visualizador de tipo y visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Migrar proyectos de extensibilidad a Visual Studio 2017 | Microsoft Docs
+title: Filtrar Migrar proyectos de extensibilidad a Visual Studio 2017 | Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3726ee6995e770d89e5916a922c0546439c3ba14
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 32d212b7deee3244847b3ae5f04c64d29621564f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953515"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681847"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedimiento Migrar proyectos de extensibilidad de Visual Studio 2017
 

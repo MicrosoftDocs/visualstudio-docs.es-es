@@ -1,7 +1,7 @@
 ---
 title: BPREQI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BPREQI_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 448cdf3087014b927a9c144fbc756c5cc8f4a37e
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 25b95e2934de9d09ef9541162b05920a04f645bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317411"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723050"
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
 Especifica la información que se va a recuperar de una solicitud de punto de interrupción.
@@ -64,47 +64,33 @@ public enum enum_BPREQI_FIELDS {
 ```
 
 ## <a name="members"></a>Miembros
-BPREQI_BPLOCATION  
-Inicializar o usar el `bpLocation` campo (ubicación de punto de interrupción) de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) o [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructura.
+BPREQI_BPLOCATION Initialize o usar el `bpLocation` campo (ubicación de punto de interrupción) de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) o [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructura.
 
-BPREQI_LANGUAGE  
-Inicializar o usar el `guidLanguage` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
+BPREQI_LANGUAGE Initialize o usar el `guidLanguage` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
 
-BPREQI_PROGRAM  
-Inicializar o usar el `pProgram` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
+BPREQI_PROGRAM Initialize o usar el `pProgram` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
 
-BPREQI_PROGRAMNAME  
-Inicializar o usar el `bstrProgramName` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
+BPREQI_PROGRAMNAME Initialize o usar el `bstrProgramName` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
 
-BPREQI_THREAD  
-Inicializar o usar el `pThread` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
+BPREQI_THREAD Initialize o usar el `pThread` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
 
-BPREQI_THREADNAME  
-Inicializar o usar el `bstrThreadName` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
+BPREQI_THREADNAME Initialize o usar el `bstrThreadName` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
 
-BPREQI_PASSCOUNT  
-Inicializar o usar el `bpPassCount` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
+BPREQI_PASSCOUNT Initialize o usar el `bpPassCount` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
 
-BPREQI_CONDITION  
-Inicializar o usar el `bpCondition` campo (condición de punto de interrupción) de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
+BPREQI_CONDITION Initialize o usar el `bpCondition` campo (condición de punto de interrupción) de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
 
-BPREQI_FLAGS  
-Inicializar o usar el `dwFlags` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
+BPREQI_FLAGS Initialize o usar el `dwFlags` campo de la `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` estructura.
 
-BPREQI_ALLOLDFIELDS  
-Inicializar o usar todos los campos de la de la `BP_REQUEST_INFO` estructura.
+BPREQI_ALLOLDFIELDS Initialize o usar todos los campos para el de la `BP_REQUEST_INFO` estructura.
 
-BPREQI_VENDOR  
-Inicializar o usar el `guidVendor` campo `BP_REQUEST_INFO2` estructura.
+BPREQI_VENDOR Initialize o usar el `guidVendor` campo `BP_REQUEST_INFO2` estructura.
 
-BPREQI_CONSTRAINT  
-Inicializar o usar el `bstrConstraint` campo `BP_REQUEST_INFO2` estructura.
+BPREQI_CONSTRAINT Initialize o usar el `bstrConstraint` campo `BP_REQUEST_INFO2` estructura.
 
-BPREQI_TRACEPOINT  
-Inicializar o usar el `bstrTracepoint` campo `BP_REQUEST_INFO2` estructura.
+BPREQI_TRACEPOINT Initialize o usar el `bstrTracepoint` campo `BP_REQUEST_INFO2` estructura.
 
-BPREQI_ALLFIELDS  
-Especifica todos los campos de la `BP_REQUEST_INFO2` estructura.
+BPREQI_ALLFIELDS especifica todos los campos para el `BP_REQUEST_INFO2` estructura.
 
 ## <a name="remarks"></a>Comentarios
 Se pasa como argumento a la [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) y [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) métodos para especificar qué campos de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2 ](../../../extensibility/debugger/reference/bp-request-info2.md) estructuras son para inicializarse.
@@ -121,7 +107,7 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
-[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

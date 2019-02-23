@@ -12,61 +12,67 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79eb0bdfdcb9f0b64258128b801e65f257e0ed3e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a74d6008db15cc8cd89daf4882d8952006dc547d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949953"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711598"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList (Función)
-Esta función determina qué directorios y archivos (opcionalmente) se almacenan en el control de código fuente, dada una lista de directorios que se va a examinar.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-SCCRTN SccPopulateDirList(  
-   LPVOID        pContext,  
-   LONG          nDirs,  
-   LPCSTR*       lpDirPaths,  
-   POPDIRLISTFUNCpfnPopulate,  
-   LPVOID        pvCallerData,  
-   LONG          fOptions  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- pContext  
- [in] El puntero de contexto de complemento de control de código fuente.  
-  
- nDirs  
- [in] Número de rutas de acceso de directorio en el `lpDirPaths` matriz.  
-  
- lpDirPaths  
- [in] Matriz de rutas de acceso de directorio para examinar.  
-  
- pfnPopulate  
- [in] Función de devolución de llamada para llamar para cada ruta de acceso de directorio y (opcionalmente) en el nombre de archivo `lpDirPaths` (consulte [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) para obtener más información).  
-  
- pvCallerData  
- [in] Valor que se pasa sin cambios a la función de devolución de llamada.  
-  
- Opciones  
- [in] Una combinación de valores que controlan cómo se procesan los directorios (consulte la sección "PopulateDirList marcas" de [marcadores de bits utilizados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) posibles valores).  
-  
-## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
-  
-|Valor|Descripción|  
-|-----------|-----------------|  
-|SCC_OK|La operación se completó correctamente.|  
-|SCC_E_UNKNOWNERROR|Error.|  
-  
-## <a name="remarks"></a>Comentarios  
- Solo los directorios y (opcionalmente los nombres de archivo que se encuentran realmente en el repositorio de control de código fuente) se pasan a la función de devolución de llamada.  
-  
-## <a name="see-also"></a>Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
- [Marcadores de bits utilizados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)   
- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
- [Códigos de error](../extensibility/error-codes.md)
+Esta función determina qué directorios y archivos (opcionalmente) se almacenan en el control de código fuente, dada una lista de directorios que se va a examinar.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+SCCRTN SccPopulateDirList(
+   LPVOID        pContext,
+   LONG          nDirs,
+   LPCSTR*       lpDirPaths,
+   POPDIRLISTFUNCpfnPopulate,
+   LPVOID        pvCallerData,
+   LONG          fOptions
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ pContext
+
+[in] El puntero de contexto de complemento de control de código fuente.
+
+ nDirs
+
+[in] Número de rutas de acceso de directorio en el `lpDirPaths` matriz.
+
+ lpDirPaths
+
+[in] Matriz de rutas de acceso de directorio para examinar.
+
+ pfnPopulate
+
+[in] Función de devolución de llamada para llamar para cada ruta de acceso de directorio y (opcionalmente) en el nombre de archivo `lpDirPaths` (consulte [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) para obtener más información).
+
+ pvCallerData
+
+[in] Valor que se pasa sin cambios a la función de devolución de llamada.
+
+ Opciones
+
+[in] Una combinación de valores que controlan cómo se procesan los directorios (consulte la sección "PopulateDirList marcas" de [marcadores de bits utilizados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) posibles valores).
+
+## <a name="return-value"></a>Valor devuelto
+ La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:
+
+|Valor|Descripción|
+|-----------|-----------------|
+|SCC_OK|La operación se completó correctamente.|
+|SCC_E_UNKNOWNERROR|Error.|
+
+## <a name="remarks"></a>Comentarios
+ Solo los directorios y (opcionalmente los nombres de archivo que se encuentran realmente en el repositorio de control de código fuente) se pasan a la función de devolución de llamada.
+
+## <a name="see-also"></a>Vea también
+- [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+- [Marcadores de bits utilizados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)
+- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)
+- [Códigos de error](../extensibility/error-codes.md)

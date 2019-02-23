@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e33b0eba41b2faa7070452444779b14b85bf72f4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e1704a33abddada9a439786b408a8bc7bceeba0d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315916"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711233"
 ---
 # <a name="evaluate-a-watch-expression"></a>Evaluar una expresión de inspección
 > [!IMPORTANT]
@@ -83,7 +83,6 @@ namespace EEMC
 Se trata de una implementación de la `IDebugParsedExpression::EvaluateSync` en código no administrado. La función auxiliar `Evaluate` analiza y evalúa la expresión que devuelve un `VARIANT` que contiene el valor resultante. La función auxiliar `VariantValueToProperty` agrupaciones el `VARIANT` en un `CValueProperty` objeto.
 
 ```cpp
-[C++]
 STDMETHODIMP CParsedExpression::EvaluateSync(
     in  DWORD                 evalFlags,
     in  DWORD                 dwTimeout,
@@ -173,5 +172,5 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 ```
 
 ## <a name="see-also"></a>Vea también
-[Evaluar una expresión de la ventana Inspección](../../extensibility/debugger/evaluating-a-watch-window-expression.md)  
-[Ejemplo de implementación de evaluación de expresiones](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
+- [Evaluar una expresión de la ventana Inspección](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [Ejemplo de implementación de evaluación de expresiones](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

@@ -1,7 +1,7 @@
 ---
 title: BP_STATE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_STATE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95e228a3aa0e96eedcf0413df7680e7a5664b707
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4117b3cb92eef555d5ed9a6c3e829fb3302924ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315422"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709258"
 ---
 # <a name="bpstate"></a>BP_STATE
 Especifica la existencia de un punto de interrupción enlazado y también especifica si está habilitado.
@@ -44,17 +44,13 @@ public enum enum_BP_STATE {
 ```
 
 ## <a name="members"></a>Miembros
-BPS_NONE  
-Especifica que no existe ningún punto de interrupción.
+BPS_NONE especifica que no existe ningún punto de interrupción.
 
-BPS_DELETED  
-Especifica que se ha eliminado el punto de interrupción.
+BPS_DELETED especifica que se ha eliminado el punto de interrupción.
 
-BPS_DISABLED  
-Especifica que el punto de interrupción está deshabilitado.
+BPS_DISABLED especifica que el punto de interrupción está deshabilitado.
 
-BPS_ENABLED  
-Especifica que el punto de interrupción está habilitado.
+BPS_ENABLED especifica que el punto de interrupción está habilitado.
 
 ## <a name="remarks"></a>Comentarios
 Devuelve el [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) método.
@@ -67,5 +63,5 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

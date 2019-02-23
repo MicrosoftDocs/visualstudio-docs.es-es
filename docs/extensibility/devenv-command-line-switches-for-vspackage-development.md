@@ -18,28 +18,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89114689f933f3b09aac1d7ffcec109e81f631ad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd95fe31949b51c7167337ad21c51251e84a19a7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970557"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705536"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Modificadores de línea de comandos para devenv para el desarrollo de VSPackage
 
-Visual Studio permite a los desarrolladores a automatizar las tareas desde la línea de comandos al ejecutar `devenv.exe`, el archivo que se inicia el IDE de Visual Studio.  
+Visual Studio permite a los desarrolladores a automatizar las tareas desde la línea de comandos al ejecutar `devenv.exe`, el archivo que se inicia el IDE de Visual Studio.
 
- Las tareas incluyen:  
+ Las tareas incluyen:
 
-- Implementación de aplicaciones en las configuraciones prediseñadas desde fuera del IDE.  
+- Implementación de aplicaciones en las configuraciones prediseñadas desde fuera del IDE.
 
-- Compilar proyectos mediante programación la configuración de generación o automáticamente configuraciones de depuración.  
+- Compilar proyectos mediante programación la configuración de generación o automáticamente configuraciones de depuración.
 
-- Cargando el IDE en configuraciones específicas, todo ello desde fuera del IDE. También puede personalizar el IDE al iniciarse.  
+- Cargando el IDE en configuraciones específicas, todo ello desde fuera del IDE. También puede personalizar el IDE al iniciarse.
 
 ## <a name="guidelines-for-switches"></a>Directrices para los modificadores
 
-Documentación de Visual Studio describe el nivel de usuario `devenv` modificadores de línea de comandos. Para obtener más información, consulte [modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md). El `devenv` herramienta también admite modificadores de línea de comandos adicionales que son útiles con desarrollo VSPackage, implementación y depuración.  
+Documentación de Visual Studio describe el nivel de usuario `devenv` modificadores de línea de comandos. Para obtener más información, consulte [modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md). El `devenv` herramienta también admite modificadores de línea de comandos adicionales que son útiles con desarrollo VSPackage, implementación y depuración.
 
 | Conmutador de línea de comandos | Descripción |
 |---------------------| - |

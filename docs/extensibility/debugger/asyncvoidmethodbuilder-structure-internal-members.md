@@ -11,37 +11,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fa4eb73257b98a588102bee96c037e2d302e96c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0a4c51d76d38680945eaccbd3ace256813668c51
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976659"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716810"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder structure: miembros internos
-En este tema se describe los miembros internos de la <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> clase. Para obtener información general acerca de esta clase, vea el <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> tema de referencia.  
-  
- **Espacio de nombres:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **Ensamblado:** mscorlib (en mscorlib.dll)  
-  
- Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```csharp  
-.class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncVoidMethodBuilder  
-       extends System.ValueType  
-       implements System.Runtime.CompilerServices.IAsyncMethodBuilder  
-```  
-  
-## <a name="internal-members"></a>Miembros internos  
-  
-|nombre|Descripción|  
-|----------|-----------------|  
-|[Propiedad ObjectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|Obtiene un objeto que puede utilizarse para identificar de forma única este generador para el depurador.|  
-|[m_objectIdForDebugger field](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|Representa el objeto inicializado de forma diferida utilizado por el depurador para identificar de forma única este generador.|  
-  
-## <a name="see-also"></a>Vea también  
- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
- [Parámetros internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+En este tema se describe los miembros internos de la <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> clase. Para obtener información general acerca de esta clase, vea el <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> tema de referencia.
+
+ **Espacio de nombres:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **Ensamblado:** mscorlib (en mscorlib.dll)
+
+ Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).
+
+## <a name="syntax"></a>Sintaxis
+
+```csharp
+.class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+       extends System.ValueType
+       implements System.Runtime.CompilerServices.IAsyncMethodBuilder
+```
+
+## <a name="internal-members"></a>Miembros internos
+
+|nombre|Descripción|
+|----------|-----------------|
+|[Propiedad ObjectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|Obtiene un objeto que puede utilizarse para identificar de forma única este generador para el depurador.|
+|[m_objectIdForDebugger field](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|Representa el objeto inicializado de forma diferida utilizado por el depurador para identificar de forma única este generador.|
+
+## <a name="see-also"></a>Vea también
+- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
+- [Parámetros internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

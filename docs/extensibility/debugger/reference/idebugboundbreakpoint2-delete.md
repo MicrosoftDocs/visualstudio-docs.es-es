@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::Delete | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::Delete
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15dab8794bbb9f8cf9293f7ae322e9123d03bc74
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 6d534fb10d87b0b7c62ede892aa8abdf0957b6be
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316605"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691675"
 ---
 # <a name="idebugboundbreakpoint2delete"></a>IDebugBoundBreakpoint2::Delete
 Elimina el punto de interrupción.
@@ -66,5 +66,5 @@ HRESULT CBoundBreakpoint::Delete(void)
 ```
 
 ## <a name="see-also"></a>Vea también
-[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
-[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

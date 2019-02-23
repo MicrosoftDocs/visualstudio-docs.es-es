@@ -10,30 +10,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea3a68237b82873cc4c6646957832beb8880dcac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2bfec03e44b4af46ed75761d96f1e37bc1370e0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001378"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704909"
 ---
 # <a name="taskstaterantocompletion-field"></a>TASK_STATE_RAN_TO_COMPLETION (campo)
-La tarea terminó de ejecutarse correctamente.  
-  
- **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Ensamblado:** mscorlib (en *mscorlib.dll*)  
-  
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```csharp  
-.field static assembly literal int32 TASK_STATE_RAN_TO_COMPLETION = int32(0x02000000)  
-```  
-  
-## <a name="remarks"></a>Comentarios  
- Si el [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene este valor, el <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
-  
-## <a name="see-also"></a>Vea también  
- [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)
+La tarea terminó de ejecutarse correctamente.
+
+ **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Ensamblado:** mscorlib (en *mscorlib.dll*)
+
+ Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).
+
+## <a name="syntax"></a>Sintaxis
+
+```csharp
+.field static assembly literal int32 TASK_STATE_RAN_TO_COMPLETION = int32(0x02000000)
+```
+
+## <a name="remarks"></a>Comentarios
+ Si el [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene este valor, el <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.
+
+## <a name="see-also"></a>Vea también
+- [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

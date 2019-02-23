@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer3::GetConnectionProtocol | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer3::GetConnectionProtocol
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649550446fb610ebab542fc927041f71c8af33a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 230712dddc3359ab69894bab15b919f997cf40a4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017765"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694886"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
-Devuelve un valor que indica el protocolo que se usa para comunicarse entre el servidor y el paquete de depuración.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT GetConnectionProtocol(  
-   CONNECTION_PROTOCOL* pProtocol  
-);  
-```  
-  
-```csharp  
-int GetConnectionProtocol(  
-   CONNECTION_PROTOCOL[] pProtocol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pProtocol`  
- [out] Devuelve uno de los valores de la [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) enumeración.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
- [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)
+Devuelve un valor que indica el protocolo que se usa para comunicarse entre el servidor y el paquete de depuración.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetConnectionProtocol(
+   CONNECTION_PROTOCOL* pProtocol
+);
+```
+
+```csharp
+int GetConnectionProtocol(
+   CONNECTION_PROTOCOL[] pProtocol
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pProtocol`
+
+ [out] Devuelve uno de los valores de la [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) enumeración.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
+- [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)
