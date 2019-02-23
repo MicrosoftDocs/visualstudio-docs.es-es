@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_STREAM_SCOPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DISASSEMBLY_STREAM_SCOPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8773a37e8762ad88513a2636b9c692b45be2c4ae
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 446b0eec7593457ed2cd384eb9a6bca383094e62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413090"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684499"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 Especifica el ámbito de la secuencia de desensamblado.
@@ -44,17 +44,13 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 ```
 
 ## <a name="members"></a>Miembros
-DSS_HUGE  
-Especifica que el desensamblado en el contexto del código generaría más resultados de un cliente normalmente desea recuperar en una sola llamada.
+DSS_HUGE especifica que el desensamblado en el contexto del código generaría resultados más que un cliente desearía normalmente recuperar en una sola llamada.
 
-DSS_FUNCTION  
-Especifica que se debe desensamblar la función contenida en el contexto del código. Especifica que la secuencia de desensamblado representa una función, cuando devuelve el [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) método.
+Debe ser desensambla DSS_FUNCTION especifica que la función contenida por el contexto del código. Especifica que la secuencia de desensamblado representa una función, cuando devuelve el [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) método.
 
-DSS_MODULE  
-Cuando devuelve el `IDebugDisassemblyStream2::GetScope` método, especifica que la secuencia de desensamblado representa un módulo.
+DSS_MODULE cuando devuelto por la `IDebugDisassemblyStream2::GetScope` método, especifica que la secuencia de desensamblado representa un módulo.
 
-DSS_ALL  
-Especifica el desensamblado disponibles para el espacio de direcciones completa.
+Desensamblado DSS_ALL especifica para el espacio de direcciones completa.
 
 ## <a name="remarks"></a>Comentarios
 Pasa como argumento a la [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) método y devuelve el [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) método.
@@ -69,6 +65,6 @@ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)  
-[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
+- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)
+- [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)

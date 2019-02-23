@@ -1,7 +1,7 @@
 ---
 title: IDebugThreadDestroyEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThreadDestroyEvent2
 helpviewer_keywords:
@@ -12,47 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f511a7f90a7f9d34352bf0b42bb4182b58ddd50c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7fc94a1289f8b65798f5ad0dab1b4e82bf76b533
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957998"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700229"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
-Esta interfaz se envía por el motor de depuración (DE) el Administrador de depuración de la sesión (SDM) cuando un subproceso se ha ejecutado hasta su finalización.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-IDebugThreadDestroyEvent2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Notas para los implementadores  
- La DE implementa esta interfaz para informar de que un subproceso ha finalizado. El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaz debe implementarse en el mismo objeto que esta interfaz. Usa el SDM [QueryInterface](/cpp/atl/queryinterface) para tener acceso a la `IDebugEvent2` interfaz.  
-  
-## <a name="notes-for-callers"></a>Notas para los llamadores  
- La DE crea y envía este objeto event para informar de que un subproceso ha finalizado. El evento se envía mediante la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) función de devolución de llamada suministrada por el SDM cuando está conectado al programa que se está depurando.  
-  
-## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- La tabla siguiente muestran los métodos de `IDebugThreadDestroyEvent2`.  
-  
-|Método|Descripción|  
-|------------|-----------------|  
-|[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|Obtiene el código de salida del subproceso.|  
-  
-## <a name="remarks"></a>Comentarios  
- Visual Studio utiliza este evento para actualizar el **subprocesos** ventana.  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: msdbg.h  
-  
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
-  
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vea también  
- [Interfaces del núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+Esta interfaz se envía por el motor de depuración (DE) el Administrador de depuración de la sesión (SDM) cuando un subproceso se ha ejecutado hasta su finalización.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+IDebugThreadDestroyEvent2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Notas para los implementadores
+ La DE implementa esta interfaz para informar de que un subproceso ha finalizado. El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaz debe implementarse en el mismo objeto que esta interfaz. Usa el SDM [QueryInterface](/cpp/atl/queryinterface) para tener acceso a la `IDebugEvent2` interfaz.
+
+## <a name="notes-for-callers"></a>Notas para los llamadores
+ La DE crea y envía este objeto event para informar de que un subproceso ha finalizado. El evento se envía mediante la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) función de devolución de llamada suministrada por el SDM cuando está conectado al programa que se está depurando.
+
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
+ La tabla siguiente muestran los métodos de `IDebugThreadDestroyEvent2`.
+
+|Método|Descripción|
+|------------|-----------------|
+|[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|Obtiene el código de salida del subproceso.|
+
+## <a name="remarks"></a>Comentarios
+ Visual Studio utiliza este evento para actualizar el **subprocesos** ventana.
+
+## <a name="requirements"></a>Requisitos
+ Encabezado: msdbg.h
+
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vea también
+- [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
