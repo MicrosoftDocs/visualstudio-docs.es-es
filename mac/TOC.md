@@ -41,6 +41,7 @@
 # [Compilar y generar en Visual Studio](compiling-and-building.md)
 ## [Compilar y limpiar proyectos y soluciones](building-and-cleaning-projects-and-solutions.md)
 ## [Acciones de compilación](build-actions.md)
+## [Cómo: Establecimiento de varios proyectos de inicio](set-startup-projects.md)
 ## [Personalizar el sistema de compilación](customizing-build-system.md)
 ## [Configuraciones](configurations.md)
 ### [Crear y editar configuraciones](create-and-edit-configurations.md)

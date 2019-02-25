@@ -673,15 +673,15 @@ items:
       href: ide/environment-settings.md
     - name: Configuración sincronizada
       href: ide/synchronized-settings-in-visual-studio.md
-    - name: Cambiar fuentes y colores
+    - name: Fuentes y colores
       href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
-    - name: Personalización de menús y barras de herramientas
+    - name: Menús y barras de herramientas
       href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
-    - name: Personalizar los diseños de ventana
+    - name: Diseños de ventana
       href: ide/customizing-window-layouts-in-visual-studio.md
-    - name: Personalizar el anidamiento de archivos en el Explorador de soluciones
+    - name: Anidamiento de archivos en el Explorador de soluciones
       href: ide/file-nesting-solution-explorer.md
-    - name: Personalizar la página de inicio
+    - name: Comportamiento de inicio
       href: ide/customizing-the-start-page-for-visual-studio.md
     - name: Búsqueda y uso de extensiones de Visual Studio
       href: ide/finding-and-using-visual-studio-extensions.md
@@ -1135,9 +1135,9 @@ items:
   - name: Hable con nosotros
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: f956b9a47ffe8fcf3f082711a742e36c90c95304
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 5145f3d07dc85e137bca0bbc605381d5347a624d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450612"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722582"
