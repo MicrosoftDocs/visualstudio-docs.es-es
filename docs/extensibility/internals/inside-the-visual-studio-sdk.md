@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978274"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796678"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dentro de Visual Studio SDK
 En esta sección se proporciona información detallada acerca de las extensiones de Visual Studio, incluida la arquitectura de Visual Studio, componentes, servicios, esquemas, utilidades y similares.
@@ -55,13 +55,13 @@ En esta sección se proporciona información detallada acerca de las extensiones
 
  Ventanas de herramientas normalmente ofrecen diversos controles con el que el usuario puede interactuar. Por ejemplo, el **propiedades** ventana permite al usuario establecer las propiedades de objetos que sirven para un propósito determinado. El **propiedades** ventana está especializado en este sentido, pero también general porque se puede usar en muchas situaciones diferentes. De forma similar, el **salida** está especializada en la ventana porque proporciona salida basado en texto, pero general porque muchos subsistemas en Visual Studio pueden usar para proporcionar la salida para el usuario de Visual Studio.
 
- Tenga en cuenta la siguiente imagen de Visual Studio, que contiene varias ventanas de herramientas.
+ Tenga en cuenta la siguiente imagen de Visual Studio, que contiene varias ventanas de herramientas:
 
  ![Captura de pantalla](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Algunas de las ventanas de herramientas están acopladas juntas en un solo panel que muestra la ventana de herramientas del explorador de soluciones y oculta las otras ventanas de herramientas, pero hace que estén disponibles al hacer clic en las pestañas. La imagen muestran dos ventanas de herramientas, el **lista de errores** y **salida** ventana, acoplada juntas en un único panel.
 
- También se muestra es el panel de documento principal, que muestra varias ventanas del editor. Aunque las ventanas de herramientas normalmente tienen una sola instancia (por ejemplo, puede abrir sólo uno **el Explorador de soluciones**), ventanas del editor pueden tener varias instancias, cada uno de los cuales se usa para editar un documento independiente, pero todos ellos están acoplados en el mismo panel. La imagen muestra un panel de documento que tiene dos ventanas del editor, una ventana del Diseñador de formulario y una ventana del explorador que muestra la página de inicio. Todas las ventanas en el panel de documento están disponibles al hacer clic en las fichas, pero la ventana del editor que contiene el archivo EditorPane.cs está visible y activo.
+ También se muestra es el panel de documento principal, que muestra varias ventanas del editor. Aunque las ventanas de herramientas normalmente tienen una sola instancia (por ejemplo, puede abrir sólo uno **el Explorador de soluciones**), ventanas del editor pueden tener varias instancias, cada uno de los cuales se usa para editar un documento independiente, pero todos ellos están acoplados en el mismo panel. La imagen muestra un panel de documento que tiene dos ventanas del editor, una ventana del Diseñador de formulario. Todas las ventanas en el panel de documento están disponibles al hacer clic en las fichas, pero la ventana del editor que contiene el archivo EditorPane.cs está visible y activo.
 
  Al extender Visual Studio, puede crear la herramienta interactúan de ventanas que permiten a los usuarios de Visual Studio con la extensión. También puede crear sus propios editores que permiten a los usuarios de Visual Studio editar documentos. Dado que los editores y ventanas de herramientas se integrarán en Visual Studio, no es necesario programarlos para acoplar o aparezcan correctamente en una pestaña. Están registrados correctamente en Visual Studio, automáticamente tienen las características típicas de las ventanas de herramientas y ventanas de documento en Visual Studio. Para obtener más información, consulte [ampliación y personalización de Windows de herramienta](../../extensibility/extending-and-customizing-tool-windows.md).
 

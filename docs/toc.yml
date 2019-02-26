@@ -1119,7 +1119,7 @@ items:
     - name: Privacidad de datos de la Comunidad de desarrolladores
       href: ide/developer-community-privacy.md
   - name: Notificación de un problema en Visual Studio
-    href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+    href: ide/how-to-report-a-problem-with-visual-studio.md
     items:
     - name: Estados de un problema notificado y preguntas frecuentes
       href: ide/report-a-problem.md
@@ -1135,9 +1135,9 @@ items:
   - name: Hable con nosotros
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 5145f3d07dc85e137bca0bbc605381d5347a624d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d89804036f0fd71a94a2d86c38b3d32a65c6c42
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722582"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796873"

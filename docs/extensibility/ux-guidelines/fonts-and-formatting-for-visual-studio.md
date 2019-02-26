@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311ccb546d1712fc21e6ca01a69b5aa50a21786b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721828"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796756"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fuentes y formato de Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> La fuente del entorno
@@ -101,9 +101,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
 
 #### <a name="375-environment-font--light"></a>Fuente del entorno 375% + claro
- **Aparece como:** 34 pt Segoe UI Light **usar para:** (poco frecuente) única con marca la interfaz de usuario, como en la página de inicio de Visual Studio 2017
 
- **Código de procedimientos:** Donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:
+**Aparece como:** Segoe UI Light de 34 pt
+
+::: moniker range="vs-2017"
+
+**Uso de:** (poco frecuente) única con marca la interfaz de usuario, como en la página de inicio
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**Uso de:** IU único (poco frecuente)
+
+::: moniker-end
+
+**Código de procedimientos:** Donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -112,7 +125,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
- **XAML:** Establecer el estilo del TextBlock o Label tal como se muestra.
+**XAML:** Establecer el estilo del TextBlock o Label tal como se muestra.
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -406,9 +419,21 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="310-environment-font--light"></a>Fuente del entorno 310% + claro
 
+::: moniker range="vs-2017"
+
 |||
 |-|-|
 |**Uso:**<br /><br /> -Título más grande en los cuadros de diálogo de firma<br />: Encabezado de informe principal<br /><br /> **Hacer:**<br /><br /> -Use oración<br />-Use siempre ligero<br /><br /> **No:**<br /><br /> -El uso de la interfaz de usuario que no sea de interfaz de usuario como página de inicio de la firma<br />-En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar ventanas de herramientas|**Aparece como:** Segoe UI Light de 28 pt<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno 310% &#43; encabezado claro](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|||
+|-|-|
+|**Uso:**<br /><br /> -Título más grande en los cuadros de diálogo de firma<br />: Encabezado de informe principal<br /><br /> **Hacer:**<br /><br /> -Use oración<br />-Use siempre ligero<br /><br /> **No:**<br /><br /> -Uso de la interfaz de usuario que no sea de firma de la interfaz de usuario<br />-En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar ventanas de herramientas|**Aparece como:** Segoe UI Light de 28 pt<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno 310% &#43; encabezado claro](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
 
 #### <a name="200-environment-font--semilight"></a>Fuente del entorno 200% + Semiclaro
 

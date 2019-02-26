@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953347c79470b4a77fcd590a1107416f5fcce872
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0d132c9689348fa728fc639d2aa3c8ecd8ba9e25
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694288"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796795"
 ---
 # <a name="animations-for-visual-studio"></a>Animaciones para Visual Studio
 ## <a name="animation-fundamentals"></a>Aspectos básicos de animación
@@ -305,7 +305,7 @@ Como una transición animada cuando un elemento de interfaz de usuario cambia el
 
 -   Panel del explorador de arquitectura expandir y contraer
 
--   Elemento de la página de inicio expandir y contraer
+-   Elemento de la página de inicio de Studio de 2017 Visual expandir y contraer
 
 #### <a name="x-y-position-change"></a>Cambio de posición de X-Y
 Con este patrón, un elemento de interfaz de usuario cambia su posición X o Y o ambos.

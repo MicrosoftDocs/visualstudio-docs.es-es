@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a162e7ff75a23ea99277f875522aac88b6c84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690466"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796886"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicación para Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interacciones de ventana
@@ -128,16 +128,28 @@ Ejemplos de ventanas de herramientas de lista navegable son el Explorador de sol
 
 **Otras ventanas de herramientas**
 
+::: moniker range="vs-2017"
+
 | Ventana de herramientas | Función |
 | --- | --- |
 | Cuadro de herramientas | La ventana de herramientas que se utiliza para almacenar los elementos que se van a quitar en superficies de diseño, que proporciona un origen de arrastre coherente para todos los diseñadores. |
-| Página de inicio | El portal del usuario a Visual Studio 2017, con acceso a las fuentes de noticias para desarrolladores, la Ayuda de Visual Studio y proyectos recientes. Los usuarios también pueden crear páginas de inicio personalizada copiando el archivo StartPage.xaml desde el "Common7\IDE\StartPages\" directorio y, a continuación, edite el XAML documenta directorio de archivos de programa de Visual Studio a la carpeta StartPages en Visual Studio a mano o ábralo en Visual Studio u otro editor de código. |
+| Página de inicio | El portal del usuario a Visual Studio, con acceso a las fuentes de noticias para desarrolladores, la Ayuda de Visual Studio y proyectos recientes. Los usuarios también pueden crear páginas de inicio personalizada copiando el archivo StartPage.xaml desde el "Common7\IDE\StartPages\" directorio y, a continuación, edite el XAML documenta directorio de archivos de programa de Visual Studio a la carpeta StartPages en Visual Studio a mano o ábralo en Visual Studio u otro editor de código. |
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+| Ventana de herramientas | Función |
+| --- | --- |
+| Cuadro de herramientas | La ventana de herramientas que se utiliza para almacenar los elementos que se van a quitar en superficies de diseño, que proporciona un origen de arrastre coherente para todos los diseñadores. |
+
+::: moniker-end
 
 **Ventanas de herramientas del depurador**
 
 | Ventana de herramientas | Función |
 | --- | --- |
-| Automático ||
+| Autos ||
 | Inmediato ||
 | Salida | La ventana de salida puede usarse siempre que tenga eventos textuales o estado para declarar. |
 | Memoria ||
