@@ -18,7 +18,7 @@
 ### [Beneficios para los suscriptores](subscriber-benefits.md)
 ## Uso de beneficios para los suscriptores
 ### Herramientas
-#### [Visual Studio IDE](vs-ide-benefit.md)
+#### [IDE de Visual Studio](vs-ide-benefit.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Crédito de Azure](vs-azure.md)
 #### [Suscripción a Office 365 Developer](vs-office-dev.md)
@@ -30,7 +30,7 @@
 #### [Enterprise Mobility & Security](vs-ems.md)
 #### [Cuenta de desarrollador de Windows](vs-windows-dev.md)
 #### [Suscripción de Office 365](vs-office365.md)
-#### [Power BI Pro ](vs-pbi.md)
+#### [Power BI Pro](vs-pbi.md)
 #### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Pago por uso de Azure](vs-azure-payg.md)
 ### [Desarrollo profesional](professional-development.md)

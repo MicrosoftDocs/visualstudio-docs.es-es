@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5f6741828f1f8ba5aeb433fb8702ca6b0a798e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949478"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796821"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referencia de C++ Core Guidelines Comprobador
 
@@ -201,7 +201,7 @@ Consulte [C++ Core Guidelines GSL.view: Vistas](https://github.com/isocpp/CppCor
 
 [C26446 USE_GSL_AT](c26446.md) prefieren usar `gsl::at()` en lugar del operador de subíndice unchecked. Consulte [directrices principales de C++:  Bounds.4: No use la biblioteca estándar de funciones y tipos que no son límites](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) considere el uso `gsl::finally` si está destinada la acción final. Consulte [directrices principales de C++:  GSL.util: Utilidades](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY](c26448.md) considere el uso `gsl::finally` si está destinada la acción final. Consulte [directrices principales de C++:  GSL.util: Utilidades](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` o `std::string_view` creado a partir de un archivo temporal se consideran no válidos cuando se invalida temporal. Consulte [directrices principales de C++: GSL.view: Vistas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
