@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4399c6f3c1bc5168f4a7bce0a82e251051432033
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964423"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612795"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
-Recupera un valor de clave de entero simple que es único para esta imagen.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_uniqueId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Devuelve un valor de clave de entero simple que es único para esta imagen.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- Comparar las claves en lugar de cadenas pueden acelerar el proceso de número de línea.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Recupera un valor de clave de entero simple que es único para esta imagen.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_uniqueId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Devuelve un valor de clave de entero simple que es único para esta imagen.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ Comparar las claves en lugar de cadenas pueden acelerar el proceso de número de línea.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

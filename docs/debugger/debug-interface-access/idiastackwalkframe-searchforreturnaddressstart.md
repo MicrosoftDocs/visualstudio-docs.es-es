@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a9c1e28c458ad863248235166df03cb2ae4f8a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf7de77016f5ccc15f2cea8bf3172321dd824096
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931237"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640758"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
-Busca el marco de pila especificado para una dirección de retorno en o cerca de la dirección especificada.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT searchForReturnAddressStart (   
-   IDiaFrameData* frame,  
-   ULONGLONG      startAddress,  
-   ULONGLONG*     returnAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `frame`  
- [in] Un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa el marco de pila actual.  
-  
- `startAddress`  
- [in] Una dirección de memoria virtual desde el que se va a comenzar la búsqueda.  
-  
- `returnAddress`  
- [out] Devuelve la función más cercana remite que `startAddress`.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Busca el marco de pila especificado para una dirección de retorno en o cerca de la dirección especificada.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT searchForReturnAddressStart ( 
+   IDiaFrameData* frame,
+   ULONGLONG      startAddress,
+   ULONGLONG*     returnAddress
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `frame`
+
+[in] Un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa el marco de pila actual.
+
+ `startAddress`
+
+[in] Una dirección de memoria virtual desde el que se va a comenzar la búsqueda.
+
+ `returnAddress`
+
+[out] Devuelve la función más cercana remite que `startAddress`.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

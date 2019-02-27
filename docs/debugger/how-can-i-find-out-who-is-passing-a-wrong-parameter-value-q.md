@@ -22,36 +22,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d33e1ae22da7980b9f4228243e93568864535ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6346b7751ccb076298c406f3f3e583991bfadfe7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069205"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702959"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Cómo averiguar quién está pasando un valor de parámetro erróneo
-## <a name="problem-description"></a>Descripción del problema  
- Una de las funciones recibe un valor de parámetro erróneo. La llamada a esta función se realiza desde múltiples lugares. ¿Cómo puedo averiguar qué llamada está pasando el valor erróneo?  
-  
-## <a name="solution"></a>Soluciones  
-  
-#### <a name="to-resolve-this-problem"></a>Para solucionar este problema  
-  
-1.  Establezca un punto de interrupción de ubicación al principio de la función.  
-  
-2.  Haga clic con el botón derecho en el punto de interrupción y seleccione **Condición**.  
-  
-3.  En el cuadro de diálogo **Condición del punto de interrupción**, active la casilla **Condición**. Consulte [avanzada de puntos de interrupción](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
-  
-4.  Escriba una expresión, como `Var==3`, en el cuadro de texto, donde `Var` es el nombre del parámetro que contiene el valor no válido, y `3` es el valor no válido que se le ha pasado.  
-  
-5.  Seleccione el botón de radio **es True** y haga clic en el botón **Aceptar**.  
-  
-6.  Ejecute el programa otra vez. El punto de interrupción hace que el programa se detenga al principio de la función cuando el parámetro `Var` sea `3`.  
-  
-7.  Utilice la ventana Pila de llamadas para detectar la función que realizó la llamada y navegar hasta su código fuente. Para obtener más información, vea [Cómo: usar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).  
-  
-## <a name="see-also"></a>Vea también  
- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
- [Puntos de interrupción](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
- [Depuración de código nativo](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>Descripción del problema
+ Una de las funciones recibe un valor de parámetro erróneo. La llamada a esta función se realiza desde múltiples lugares. ¿Cómo puedo averiguar qué llamada está pasando el valor erróneo?
+
+## <a name="solution"></a>Soluciones
+
+#### <a name="to-resolve-this-problem"></a>Para solucionar este problema
+
+1.  Establezca un punto de interrupción de ubicación al principio de la función.
+
+2.  Haga clic con el botón derecho en el punto de interrupción y seleccione **Condición**.
+
+3.  En el cuadro de diálogo **Condición del punto de interrupción**, active la casilla **Condición**. Consulte [avanzada de puntos de interrupción](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+
+4.  Escriba una expresión, como `Var==3`, en el cuadro de texto, donde `Var` es el nombre del parámetro que contiene el valor no válido, y `3` es el valor no válido que se le ha pasado.
+
+5.  Seleccione el botón de radio **es True** y haga clic en el botón **Aceptar**.
+
+6.  Ejecute el programa otra vez. El punto de interrupción hace que el programa se detenga al principio de la función cuando el parámetro `Var` sea `3`.
+
+7.  Utilice la ventana Pila de llamadas para detectar la función que realizó la llamada y navegar hasta su código fuente. Para obtener más información, consulte [Cómo: utilizar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).
+
+## <a name="see-also"></a>Vea también
+- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)
+- [Puntos de interrupción](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [Depuración de código nativo](../debugger/debugging-native-code.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 704605ed2d4eb3d69b988da59ba443790ffa138d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155791"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709855"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Empezar a depurar aplicaciones multiproceso (C#, Visual Basic, C++)
 
@@ -33,25 +33,25 @@ Estos dos temas proporcionan información adicional sobre el uso de otras herram
 - Para usar el **ubicación de depuración** barra de herramientas y la **subprocesos** ventana, consulte [Tutorial: depurar una aplicación multiproceso](../debugger/how-to-use-the-threads-window.md).
 
 - Para obtener un ejemplo que usa <xref:System.Threading.Tasks.Task> (código administrado) y el runtime de simultaneidad (C++), consulte [Tutorial: Depuración de una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md). Para sugerencias de depuración generales que se aplican a los tipos de aplicaciones multiproceso más, lea ese tema y ésta.
-  
-En primer lugar, necesitará un proyecto de aplicación multiproceso. A continuación se muestra un ejemplo.  
-  
-## <a name="create-a-multithreaded-app-project"></a>Crear un proyecto de aplicación multiproceso  
-  
-1.  En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.  
-  
-     Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
-  
-2.  Seleccione un idioma: **Visual C#** , **Visual C++**, o **Visual Basic**.  
-  
-3.  En **Windows Desktop**, elija **aplicación de consola**.  
-  
-4.  En el **nombre** , introduzca MyThreadWalkthroughApp.  
-  
-5.  Seleccione **Aceptar**.  
-  
-     Aparecerá un nuevo proyecto de consola. Una vez creado el proyecto, aparecerá un archivo de origen. Dependiendo del lenguaje que ha elegido, el archivo de código fuente podría denominarse *Program.cs*, *MyThreadWalkthroughApp.cpp*, o *Module1.vb*.  
-  
+
+En primer lugar, necesitará un proyecto de aplicación multiproceso. A continuación se muestra un ejemplo.
+
+## <a name="create-a-multithreaded-app-project"></a>Crear un proyecto de aplicación multiproceso
+
+1.  En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+
+     Aparecerá el cuadro de diálogo **Nuevo proyecto** .
+
+2.  Seleccione un idioma: **Visual C#** , **Visual C++**, o **Visual Basic**.
+
+3.  En **Windows Desktop**, elija **aplicación de consola**.
+
+4.  En el **nombre** , introduzca MyThreadWalkthroughApp.
+
+5.  Seleccione **Aceptar**.
+
+     Aparecerá un nuevo proyecto de consola. Una vez creado el proyecto, aparecerá un archivo de origen. Dependiendo del lenguaje que ha elegido, el archivo de código fuente podría denominarse *Program.cs*, *MyThreadWalkthroughApp.cpp*, o *Module1.vb*.
+
 6.  Elimine el código que aparece en el archivo de origen y reemplácelo por la lista debajo del código de ejemplo correspondiente.
 
     ```csharp
@@ -186,54 +186,54 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
         End Sub
     End Class
     ```
-  
-7.  En el menú **Archivo**, seleccione **Guardar todo**.  
+
+7.  En el menú **Archivo**, seleccione **Guardar todo**.
 
 8. (Sólo Visual Basic) En el Explorador de soluciones (panel derecho), haga clic en el nodo del proyecto, elija **propiedades**. En el **aplicación** , modifique la **objeto Startup** a **Simple**.
-  
-## <a name="debug-the-multithreaded-app"></a>Depurar la aplicación multiproceso  
-  
-1. En el editor de código fuente, busque uno de los fragmentos de código siguiente: 
-  
-    ```csharp  
-    Thread.Sleep(3000);  
-    Console.WriteLine();  
-    ```  
-  
-    ```C++  
+
+## <a name="debug-the-multithreaded-app"></a>Depurar la aplicación multiproceso
+
+1. En el editor de código fuente, busque uno de los fragmentos de código siguiente:
+
+    ```csharp
+    Thread.Sleep(3000);
+    Console.WriteLine();
+    ```
+
+    ```C++
     std::this_thread::sleep_for(std::chrono::seconds(3));
-    std::cout << "The function called by the worker thread has ended." << std::endl; 
-    ```  
+    std::cout << "The function called by the worker thread has ended." << std::endl;
+    ```
 
     ```VB
     Thread.Sleep(3000)
     Console.WriteLine()
     ```
 
-1. Haga clic en el margen interno izquierdo de la `Thread.Sleep` o `std::this_thread::sleep_for` instrucción para insertar un nuevo punto de interrupción.  
-  
-    En el margen interno, un círculo rojo indica que un punto de interrupción está establecido en esta ubicación. 
-  
-2. En el **depurar** menú, seleccione **Iniciar depuración** (**F5**).  
-  
-    Visual Studio compila la solución, la aplicación comienza a ejecutarse con el depurador asociado y, a continuación, se detiene la aplicación en el punto de interrupción.  
-  
+1. Haga clic en el margen interno izquierdo de la `Thread.Sleep` o `std::this_thread::sleep_for` instrucción para insertar un nuevo punto de interrupción.
+
+    En el margen interno, un círculo rojo indica que un punto de interrupción está establecido en esta ubicación.
+
+2. En el **depurar** menú, seleccione **Iniciar depuración** (**F5**).
+
+    Visual Studio compila la solución, la aplicación comienza a ejecutarse con el depurador asociado y, a continuación, se detiene la aplicación en el punto de interrupción.
+
 3. En el editor de código fuente, busque la línea que contiene el punto de interrupción.
-  
+
 ### <a name="ShowThreadsInSource"></a>Detectar el marcador de subproceso  
 
 1.  En la barra de herramientas de depuración, seleccione el **Mostrar subprocesos en código fuente** botón ![Mostrar subprocesos en código fuente](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Presione **F11** una vez para avanzar a la línea de un depurador de código.
-  
+
 3.  Examine el margen interno izquierdo de la ventana. En esta línea, verá un *marcador de subproceso* icono ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker") que es similar a dos subprocesos trenzados. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
 
-    Un marcador de subproceso es posible que se ocultan parcialmente por un punto de interrupción. 
-  
-4.  Desplace el puntero sobre el marcador de subproceso. Una información sobre datos aparece indicando el número de Id. de nombre y el subproceso para cada subproceso detenido. En este caso, el nombre es probablemente `<noname>`. 
-  
+    Un marcador de subproceso es posible que se ocultan parcialmente por un punto de interrupción.
+
+4.  Desplace el puntero sobre el marcador de subproceso. Una información sobre datos aparece indicando el número de Id. de nombre y el subproceso para cada subproceso detenido. En este caso, el nombre es probablemente `<noname>`.
+
 5.  Seleccione el marcador de subproceso para ver las opciones disponibles en el menú contextual.
-    
+
 ### <a name="ParallelStacks"></a>Ver las ubicaciones de subproceso
 
 En el **pilas paralelas** ventana, puede cambiar entre una vista de subprocesos y (para la programación basada en tareas) vista de tareas y se puede ver la información de la pila de llamadas para cada subproceso. En esta aplicación, podemos usar la vista de subprocesos.
@@ -243,7 +243,7 @@ En el **pilas paralelas** ventana, puede cambiar entre una vista de subprocesos 
     ![Ventana Pilas paralelas en](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
     En este ejemplo, de izquierda a derecha vemos esta información para el código administrado:
-    
+
     - Se ha detenido el subproceso principal (izquierda) en `Thread.Start`, donde el punto de detención se indica mediante el icono de marcador de subproceso ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker").
     - Han escrito dos subprocesos el `ServerClass.InstanceMethod`, uno de los cuales es el subproceso actual (la flecha amarilla), mientras que el otro subproceso ha detenido en `Thread.Sleep`.
     - También se está iniciando un nuevo subproceso (a la derecha), pero se ha detenido en `ThreadHelper.ThreadStart`.
@@ -271,31 +271,31 @@ En el **pilas paralelas** ventana, puede cambiar entre una vista de subprocesos 
 
 4. Haga doble clic en una de las filas en la ventana para ver las opciones disponibles.
 
-### <a name="flag-and-unflag-threads"></a>Marcar y desmarcar subprocesos  
-Puede marcar los subprocesos para realizar un seguimiento de los subprocesos importantes y pasar por alto los demás subprocesos.  
-  
+### <a name="flag-and-unflag-threads"></a>Marcar y desmarcar subprocesos
+Puede marcar los subprocesos para realizar un seguimiento de los subprocesos importantes y pasar por alto los demás subprocesos.
+
 1. En el **inspección paralela** ventana, mantenga presionada la **MAYÚS** clave y seleccione varias filas.
 
 2. Haga clic en y seleccione **marca**.
 
     Se marcan todos los subprocesos seleccionados. Ahora, puede filtrar para mostrar sólo subprocesos marcados.
-  
-3.  En el **inspección paralela** ventana, seleccione el **mostrar sólo subprocesos marcados** botón ![Mostrar subprocesos marcados](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
-  
+
+3.  En el **inspección paralela** ventana, seleccione el **mostrar sólo subprocesos marcados** botón ![Mostrar subprocesos marcados](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
+
     Los subprocesos marcados solo aparecen en la lista.
 
     > [!TIP]
     > Después de que algunos subprocesos marcados, puede haga clic en una línea de código en el editor de código y elija **ejecutar subprocesos marcados al Cursor**. Asegúrese de elegir llegará a todos los subprocesos marcan de código. Visual Studio pausará subprocesos en la línea seleccionada del código, lo que facilita controlar el orden de ejecución por [inmovilizar y reanudar subprocesos](#bkmk_freeze).
 
 4.  Seleccione el **mostrar sólo subprocesos marcados** botón nuevo para volver al **mostrar todos los subprocesos** modo.
-    
+
 5. Para quitar marcadores de subprocesos, haga clic en uno o más subprocesos marcados en el **inspección paralela** ventana y seleccione **Quitar marcador**.
 
-### <a name="bkmk_freeze"></a> Inmovilizar y reanudar la ejecución de subprocesos 
+### <a name="bkmk_freeze"></a> Inmovilizar y reanudar la ejecución de subprocesos
 
 > [!TIP]
 > Puede inmovilizar y descongelar (suspender y reanudar) los subprocesos para controlar el orden en que subprocesos realizan el trabajo. Esto puede ayudarle a resolver problemas de simultaneidad, como interbloqueos y condiciones de carrera.
-   
+
 1.  En el **inspección paralela** ventana, con todas las filas seleccionadas, secundario y seleccione **inmovilizar**.
 
     En la segunda columna, aparece un icono de pausa para cada fila. El icono de pausa indica que el subproceso está inmovilizado.
@@ -336,11 +336,11 @@ Puede establecer puntos de interrupción en distintas condiciones, como el nombr
     Siempre y cuando la condición de punto de interrupción es única para el subproceso y el depurador no alcanza a cualquier otro punto de interrupción en otros subprocesos (es posible que deba deshabilitarlas), puede ir al código sin tener que cambiar a otros subprocesos y recorrer el código.
 
     > [!NOTE]
-    > Al avanzar el depurador, se ejecutarán todos los subprocesos. Sin embargo, el depurador no interrumpe el código en otros subprocesos a menos que uno de los demás subprocesos alcanza un punto de interrupción. 
-  
+    > Al avanzar el depurador, se ejecutarán todos los subprocesos. Sin embargo, el depurador no interrumpe el código en otros subprocesos a menos que uno de los demás subprocesos alcanza un punto de interrupción.
+
 ## <a name="see-also"></a>Vea también
 
-[Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[Cambio a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Cómo: utilizar la ventana Pila de paralelos](../debugger/using-the-parallel-stacks-window.md)  
-[Uso de la ventana Inspección paralela](../debugger/how-to-use-the-parallel-watch-window.md)  
+- [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Cambio a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [Cómo: utilizar la ventana Pila de paralelos](../debugger/using-the-parallel-stacks-window.md)
+- [Uso de la ventana Inspección paralela](../debugger/how-to-use-the-parallel-watch-window.md)

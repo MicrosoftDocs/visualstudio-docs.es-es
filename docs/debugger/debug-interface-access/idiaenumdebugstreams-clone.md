@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1420fabc81227ef57884416e9459ed42587b95
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 11a7f8e051350b066c745c47530ab4ed818f8b1b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031479"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607246"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
-Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumDebugStreams** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `ppenum`  
- [out] Devuelve un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) objeto que contiene un duplicado del enumerador. No se duplican los flujos, solo el enumerador.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumDebugStreams** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `ppenum`
+
+[out] Devuelve un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) objeto que contiene un duplicado del enumerador. No se duplican los flujos, solo el enumerador.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

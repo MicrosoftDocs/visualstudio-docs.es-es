@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfdd6d9c48e701ce123b8602eacffafb61da1b55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87518257d9cab91976f69dd03c9026b0800a0680
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003388"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641486"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddress"></a>IDiaStackWalkHelper::searchForReturnAddress
-Busca el marco de pila especificado para la dirección de devolución de función más cercano.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT searchForReturnAddress(   
-   IDiaFrameData*  frame,  
-   ULONGLONG*      returnAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `frame`  
- [in] Un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa el marco de pila actual.  
-  
- `returnAddress`  
- [out] Devuelve la dirección de devolución de función más cercana.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Busca el marco de pila especificado para la dirección de devolución de función más cercano.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT searchForReturnAddress( 
+   IDiaFrameData*  frame,
+   ULONGLONG*      returnAddress
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `frame`
+
+[in] Un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa el marco de pila actual.
+
+ `returnAddress`
+
+[out] Devuelve la dirección de devolución de función más cercana.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

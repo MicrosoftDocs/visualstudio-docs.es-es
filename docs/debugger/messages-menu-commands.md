@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a4a6e65929e6c437481397e5aadb6bbe4d1f33
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978937"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692572"
 ---
 # <a name="messages-menu-commands"></a>Comandos del menú Mensajes
-El **mensajes** menú proporciona comandos para controlar las vistas de mensajes.  
-  
- **Iniciar/Detener registro**  
- Inicia o detiene la vista de mensaje.  
-  
- **Opciones de registro**  
- Se abre el **opciones de mensaje** cuadro de diálogo, donde puede especificar criterios de búsqueda del mensaje.  
-  
- **Borrar registro**  
- Borra el contenido de la vista activa de mensajes.
+El **mensajes** menú proporciona comandos para controlar las vistas de mensajes.
+
+ **Iniciar/Detener registro** inicia o detiene el ver el mensaje.
+
+ **Opciones de registro** abre el **opciones de mensaje** cuadro de diálogo, donde puede especificar criterios de búsqueda del mensaje.
+
+ **Borrar registro** borra el contenido de la vista activa de mensajes.

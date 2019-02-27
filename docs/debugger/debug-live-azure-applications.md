@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335602"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613380"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicaciones de ASP.NET Azure activas con el depurador de instantáneas
 
@@ -63,7 +63,7 @@ En este tutorial va a:
 2. Adjunte al depurador de instantáneas. Puede usar varios métodos diferentes:
 
     * Elija **Depurar > asociar Snapshot Debugger...** . Seleccione el proyecto se implementa en Azure App Service y una cuenta de almacenamiento de Azure y, a continuación, haga clic en **adjuntar**.
-  
+
       ![Iniciar al depurador de instantáneas en el menú Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Haga clic con el botón derecho en el proyecto y seleccione **publicar**y, a continuación, en la página de publicación, haga clic en **asociar Snapshot Debugger**. Seleccione el proyecto se implementa en Azure App Service y una cuenta de almacenamiento de Azure y, a continuación, haga clic en **adjuntar**.
@@ -73,7 +73,7 @@ En este tutorial va a:
     ![Iniciar al depurador de instantáneas en el menú desplegable de F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Mediante el explorador en la nube (**Ver > Cloud Explorer**), haga clic en el proyecto se implementa en Azure App Service y seleccione una cuenta de almacenamiento de Azure y, a continuación, haga clic en **asociar Snapshot Debugger**.
-  
+
       ![Iniciar al depurador de instantáneas desde el Explorador de nube](../debugger/media/snapshot-launch.png)
 
     La primera vez que selecciona **asociar Snapshot Debugger**, se le pedirá que instale la extensión del sitio Snapshot Debugger en Azure App Service. Esta instalación requiere un reinicio de Azure App Service.

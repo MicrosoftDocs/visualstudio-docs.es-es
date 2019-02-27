@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a43e42f68b93c358ed5808a6cffc9570fcbef9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918114"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700918"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Administración de excepciones con el depurador de Visual Studio
 
@@ -222,8 +222,8 @@ Para agregar excepciones condicionales:
 
 ## <a name="see-also"></a>Vea también
 
-[Continuación de la ejecución después de una excepción](../debugger/continuing-execution-after-an-exception.md)<br/>
-[Cómo: examinar el código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[Cómo: usar comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[Usar comprobaciones en tiempo de ejecución sin la biblioteca en tiempo de ejecución de C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
+- [Continuación de la ejecución después de una excepción](../debugger/continuing-execution-after-an-exception.md)<br/>
+- [Análisis del código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Uso de comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Usar comprobaciones en tiempo de ejecución sin la biblioteca en tiempo de ejecución de C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

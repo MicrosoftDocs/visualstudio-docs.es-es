@@ -17,28 +17,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671593cf19eab22d1b7e233481ee4004ca8ed8ee
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 85d1d1307a119fa23bf7ba015130ab9c7b6f69d5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925104"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703700"
 ---
 # <a name="no-source-available"></a>No hay código fuente disponible
-El proyecto no contiene código fuente para el código que se está intentando ver. El motivo habitual es hacer doble clic en un módulo que no tiene código fuente en la **Ventana Pila de llamadas** o en la **Ventana Subprocesos**. Puede seguir depurando, pero no puede utilizar la ventana de código fuente para establecer puntos de interrupción y realizar otras acciones en dicha ubicación. Si necesita establecer un punto de interrupción, utilice la **Ventana Desensamblado** en su lugar.  
-  
- En las Páginas de propiedades de la solución, puede cambiar los directorios en los que el depurador busca archivos de código fuente e indicar al depurador que omita los archivos de código fuente seleccionados. Consulte [cuadro de diálogo de páginas de propiedad de origen archivos, propiedades comunes, solución de depuración](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  
-  
- **Buscar código fuente**  
- Haga clic en este vínculo para abrir un cuadro de diálogo en el que puede buscar código fuente.  
-  
- **Mostrar desensamblado**  
- Inicia la **Ventana Desensamblado**.  
-  
- **Mostrar siempre el desensamblado de los archivos de código fuente que falten**  
- Seleccione esta opción para que aparezca automáticamente la **Ventana Desensamblado** cuando no haya disponible ningún código fuente. Esta configuración también se puede cambiar en el cuadro de diálogo **Opciones**, categoría **Depuración**, página **General**. Para ello active o desactive **Mostrar desensamblado si el código fuente no está disponible**.  
-  
-## <a name="see-also"></a>Vea también  
- [Cuadro de diálogo Depurar archivos de código fuente, Propiedades comunes, Páginas de propiedades de solución](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
- [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [SOS.dll (Extensión de depuración de SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)
+El proyecto no contiene código fuente para el código que se está intentando ver. El motivo habitual es hacer doble clic en un módulo que no tiene código fuente en la **Ventana Pila de llamadas** o en la **Ventana Subprocesos**. Puede seguir depurando, pero no puede utilizar la ventana de código fuente para establecer puntos de interrupción y realizar otras acciones en dicha ubicación. Si necesita establecer un punto de interrupción, utilice la **Ventana Desensamblado** en su lugar.
+
+ En las Páginas de propiedades de la solución, puede cambiar los directorios en los que el depurador busca archivos de código fuente e indicar al depurador que omita los archivos de código fuente seleccionados. Consulte [cuadro de diálogo de páginas de propiedad de origen archivos, propiedades comunes, solución de depuración](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).
+
+ **Busque el código fuente** haga clic en este vínculo para abrir un cuadro de diálogo donde puede examinar para buscar el código fuente.
+
+ **Mostrar desensamblado** inicia el **ventana Desensamblado**.
+
+ **Mostrar siempre el desensamblado de los archivos de origen que faltan** Seleccione esta opción para mostrar el **ventana Desensamblado** automáticamente cuando no está disponible ningún origen. Esta configuración también se puede cambiar en el cuadro de diálogo **Opciones**, categoría **Depuración**, página **General**. Para ello active o desactive **Mostrar desensamblado si el código fuente no está disponible**.
+
+## <a name="see-also"></a>Vea también
+- [Depurar archivos de código fuente, Propiedades comunes, Cuadro de diálogo Páginas de propiedades de Solución](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
+- [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [SOS.dll (Extensión de depuración de SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

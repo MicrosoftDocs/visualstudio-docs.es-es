@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc44e8201a3df3887e098206ffcfcb3fee34ea00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0b97b30b6f19e367cfbae72be29b6d8961f4e1a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965034"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642006"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
-Coloca el enumerador realizando una búsqueda por dirección virtual (VA).  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT symbolByVA (   
-   DWORD**      virtualAddress,  
-   IDiaSymbol** ppsymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- virtualAddress  
- [in] Dirección virtual.  
-  
- ppsymbol  
- [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el símbolo se encuentra.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se encontró el símbolo. De lo contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Coloca el enumerador realizando una búsqueda por dirección virtual (VA).
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT symbolByVA ( 
+   DWORD**      virtualAddress,
+   IDiaSymbol** ppsymbol
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ virtualAddress
+
+[in] Dirección virtual.
+
+ ppsymbol
+
+[out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el símbolo se encuentra.
+
+## <a name="return-value"></a>Valor devuelto
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se encontró el símbolo. De lo contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

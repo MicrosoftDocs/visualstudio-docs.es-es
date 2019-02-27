@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 596f36457627e8da435c2a8c4223487aa35c60f4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227399"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692274"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expresiones en el depurador de Visual Studio
 El depurador de Visual Studio incluye evaluadores de expresión que funcionan cuando escribe una expresión en el cuadro de diálogo **Inspección rápida** , la ventana **Inspección** o la ventana **Inmediato** . Los evaluadores de expresión también se utilizan en la ventana **Puntos de interrupción** y en muchos otros lugares en el depurador.
@@ -205,7 +205,7 @@ No se pueden declarar nuevas variables explícitas en las ventanas del depurador
 - Palabras clave de espacio de nombres o de módulo como, por ejemplo, `End Sub` o `Module`.
 
 ## <a name="see-also"></a>Vea también
-[Especificadores de formato en C++](../debugger/format-specifiers-in-cpp.md)  
-[Operador de contexto (C++)](../debugger/context-operator-cpp.md)  
-[Especificadores de formato en C#](../debugger/format-specifiers-in-csharp.md)  
-[Pseudovariables](../debugger/pseudovariables.md)
+- [Especificadores de formato en C++](../debugger/format-specifiers-in-cpp.md)
+- [Operador de contexto (C++)](../debugger/context-operator-cpp.md)
+- [Especificadores de formato en C#](../debugger/format-specifiers-in-csharp.md)
+- [Pseudovariables](../debugger/pseudovariables.md)

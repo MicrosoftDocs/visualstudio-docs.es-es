@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7652f05bf6028dd7d5b14d207fdd0b83a73ef5ad
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227636"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722920"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Capturar información de gráficos mediante programación
 Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar mediante programación información de gráficos desde la aplicación Direct3D.
@@ -115,6 +115,6 @@ Este tutorial le ha mostrado cómo capturar información de gráficos mediante p
 - Aprender cómo analizar la información de gráficos capturada utilizando la herramienta Diagnóstico de gráficos. Consulte [Introducción](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Vea también
-[Tutorial: Capturar información de gráficos](walkthrough-capturing-graphics-information.md)  
-[Capturing Graphics Information](capturing-graphics-information.md)  
-[Herramienta de captura de línea de comandos](command-line-capture-tool.md)
+- [Tutorial: Capturar información de gráficos](walkthrough-capturing-graphics-information.md)
+- [Capturing Graphics Information](capturing-graphics-information.md)
+- [Herramienta de captura de línea de comandos](command-line-capture-tool.md)

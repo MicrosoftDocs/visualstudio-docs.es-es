@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a747edd3c0140661177438cd9d25e0d1ec811bd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 60f39b55ffc14d423d4197765ef89784940f137b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029639"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642240"
 ---
 # <a name="idiastackframegetallocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
-Recupera una marca que indica si el puntero base se asigna para el código en este intervalo de direcciones.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_allocatesBasePointer (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Devuelve `TRUE` si se asigna un puntero de base para el código de este marco; de lo contrario, devuelve `FALSE`.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite la propiedad. De lo contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Recupera una marca que indica si el puntero base se asigna para el código en este intervalo de direcciones.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_allocatesBasePointer ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Devuelve `TRUE` si se asigna un puntero de base para el código de este marco; de lo contrario, devuelve `FALSE`.
+
+## <a name="return-value"></a>Valor devuelto
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite la propiedad. De lo contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

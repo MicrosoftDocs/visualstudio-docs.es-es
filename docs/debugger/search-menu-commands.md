@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de9fdd38655c5c4baf8630df75c1365e38fca1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c61dc9e752dccee909baa742e4c8d677df865a8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069069"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693339"
 ---
 # <a name="search-menu-commands"></a>Comandos del menú Buscar
-El **búsqueda** menú proporciona comandos para buscar ventanas específicas.  
-  
- **Buscar ventana, proceso o subproceso/mensaje**  
- Se abre el **ventana**/**proceso**/**subprocesos**/**Buscar mensaje** cuadro de diálogo dónde se puede utilizar el **FinderTool** o especificar los criterios de búsqueda.  
-  
- **Buscar siguiente**  
- Busca la vista actual para la siguiente ventana coincidente, el proceso, subproceso o mensaje. Este elemento de menú (y el botón de barra de herramientas relacionados) están disponibles solo cuando hay un resultado de búsqueda válido que no es único.  
-  
- **Buscar anterior**  
- Busca la vista actual de la ventana coincidente anterior, el proceso, subproceso o mensaje. Este elemento de menú (y el botón de barra de herramientas relacionados) están disponibles solo cuando hay un resultado de búsqueda válido que no es único.
+El **búsqueda** menú proporciona comandos para buscar ventanas específicas.
+
+ **Buscar ventana, proceso o subproceso/mensaje** abre el **ventana**/**proceso**/**subprocesos** /  **Buscar mensaje** cuadro de diálogo, donde puede usar el **FinderTool** o especificar los criterios de búsqueda.
+
+ **Buscar siguiente** busca la siguiente ventana coincidente, el proceso, subproceso o mensaje de la vista actual. Este elemento de menú (y el botón de barra de herramientas relacionados) están disponibles solo cuando hay un resultado de búsqueda válido que no es único.
+
+ **Buscar anterior** busca la vista actual de la ventana coincidente anterior, el proceso, subproceso o mensaje. Este elemento de menú (y el botón de barra de herramientas relacionados) están disponibles solo cuando hay un resultado de búsqueda válido que no es único.

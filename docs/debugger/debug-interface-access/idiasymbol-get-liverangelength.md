@@ -12,42 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 774ea527cb34b1be1a27bed2904788498390ec10
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e9f1c8caa9e658cfca4e4b2ede8a38b57fcf8713
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968887"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624625"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
-Devuelve la longitud del intervalo de direcciones en el que el símbolo local es válido.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_liveRangeLength (   
-   ULONGLONG* length  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `length`  
- [out] Devuelve la longitud del intervalo de direcciones.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
+Devuelve la longitud del intervalo de direcciones en el que el símbolo local es válido.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_liveRangeLength ( 
+   ULONGLONG* length
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `length`
+
+[out] Devuelve la longitud del intervalo de direcciones.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
 > [!NOTE]
->  Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.  
-  
-## <a name="remarks"></a>Comentarios  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: dia2.h  
-  
- Biblioteca: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.
+
+## <a name="remarks"></a>Comentarios
+
+## <a name="requirements"></a>Requisitos
+ Encabezado: Dia2.h
+
+ Biblioteca: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

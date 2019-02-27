@@ -12,43 +12,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a637608c8da5d7c5c5e0d857520a08ffae494a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f199db93fa2ea0b3ee2633f9af8a02fff5a4fdf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944872"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695822"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
-Lee el número especificado de bytes a partir del desplazamiento especificado desde un archivo ejecutable.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT ReadExecutableAt (   
-   DWORDLONG fileOffset,  
-   DWORD     cbData,  
-   DWORD*    pcbData,  
-   BYTE      data[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- fileOffset  
- [in] El desplazamiento en el archivo ejecutable al comenzar la lectura.  
-  
- cbData  
- [in] Número de bytes que se leen.  
-  
- pcbData  
- [out] Devuelve el número de bytes leídos.  
-  
- data[]  
- [in, out] Una matriz que se rellena con los bytes leídos del archivo.  
-  
-## <a name="remarks"></a>Comentarios  
- Este método es invocado por el código de soporte técnico DIA para cargar los bytes de datos de una aplicación ejecutable mediante un desplazamiento de archivo absoluta. Se llama a este método de apoyo del [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+Lee el número especificado de bytes a partir del desplazamiento especificado desde un archivo ejecutable.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT ReadExecutableAt ( 
+   DWORDLONG fileOffset,
+   DWORD     cbData,
+   DWORD*    pcbData,
+   BYTE      data[]
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ fileOffset
+
+[in] El desplazamiento en el archivo ejecutable al comenzar la lectura.
+
+ cbData
+
+[in] Número de bytes que se leen.
+
+ pcbData
+
+[out] Devuelve el número de bytes leídos.
+
+ data[]
+
+[in, out] Una matriz que se rellena con los bytes leídos del archivo.
+
+## <a name="remarks"></a>Comentarios
+ Este método es invocado por el código de soporte técnico DIA para cargar los bytes de datos de una aplicación ejecutable mediante un desplazamiento de archivo absoluta. Se llama a este método de apoyo del [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método.
+
+## <a name="see-also"></a>Vea también
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

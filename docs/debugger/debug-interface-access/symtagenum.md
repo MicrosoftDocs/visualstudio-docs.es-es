@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 086b30bd46071e96af1f87f71c74c5cc1b9eda80
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dbc86bb43048b06bc1f7080bc6cb579771138c49
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317801"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607751"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 Especifica el tipo de símbolo.
@@ -67,116 +67,79 @@ enum SymTagEnum {
 ```
 
 ## <a name="elements"></a>Elementos
-`SymTagNull`  
-Indica que el símbolo no tiene ningún tipo.
+`SymTagNull` Indica que el símbolo no tiene ningún tipo.
 
-`SymTagExe`  
-Indica que el símbolo es un archivo .exe. Solo hay un `SymTagExe` símbolo por el almacén de símbolos. Actúa como el ámbito global y no tiene un elemento primario léxico.
+`SymTagExe` Indica que el símbolo es un archivo .exe. Solo hay un `SymTagExe` símbolo por el almacén de símbolos. Actúa como el ámbito global y no tiene un elemento primario léxico.
 
-`SymTagCompiland`  
-Indica el símbolo de la operación de compilación para cada componente de la operación de compilación del almacén de símbolos. Para aplicaciones nativas, `SymTagCompiland` símbolos corresponden a los archivos objeto vinculados en la imagen. Para algunos tipos de imágenes de lenguaje intermedio de Microsoft (MSIL), hay una operación de compilación por clase.
+`SymTagCompiland` Indica el símbolo de la operación de compilación para cada componente de la operación de compilación del almacén de símbolos. Para aplicaciones nativas, `SymTagCompiland` símbolos corresponden a los archivos objeto vinculados en la imagen. Para algunos tipos de imágenes de lenguaje intermedio de Microsoft (MSIL), hay una operación de compilación por clase.
 
-`SymTagCompilandDetails`  
-Indica que el símbolo contiene atributos extendidos de la operación de compilación. Recuperar estas propiedades puede requerir la carga de símbolos de la operación de compilación.
+`SymTagCompilandDetails` Indica que el símbolo contiene atributos extendidos de la operación de compilación. Recuperar estas propiedades puede requerir la carga de símbolos de la operación de compilación.
 
-`SymTagCompilandEnv`  
-Indica que el símbolo es una cadena de entorno definida para la operación de compilación.
+`SymTagCompilandEnv` Indica que el símbolo es una cadena de entorno definida para la operación de compilación.
 
-`SymTagFunction`  
-Indica que el símbolo es una función.
+`SymTagFunction` Indica que el símbolo es una función.
 
-`SymTagBlock`  
-Indica que el símbolo es un bloque anidado.
+`SymTagBlock` Indica que el símbolo es un bloque anidado.
 
-`SymTagData`  
-Indica que el símbolo de datos.
+`SymTagData` Indica que el símbolo de datos.
 
-`SymTagAnnotation`  
-Indica que el símbolo de una anotación de código. Los elementos secundarios de este símbolo son cadenas de datos constantes (`SymTagData`, `LocIsConstant`, `DataIsConstant`). La mayoría de los clientes pasar por alto este símbolo.
+`SymTagAnnotation` Indica que el símbolo de una anotación de código. Los elementos secundarios de este símbolo son cadenas de datos constantes (`SymTagData`, `LocIsConstant`, `DataIsConstant`). La mayoría de los clientes pasar por alto este símbolo.
 
-`SymTagLabel`  
-Indica que el símbolo es una etiqueta.
+`SymTagLabel` Indica que el símbolo es una etiqueta.
 
-`SymTagPublicSymbol`  
-Indica que el símbolo es un símbolo público. Para aplicaciones nativas, este símbolo es el símbolo externo COFF al vincular la imagen.
+`SymTagPublicSymbol` Indica que el símbolo es un símbolo público. Para aplicaciones nativas, este símbolo es el símbolo externo COFF al vincular la imagen.
 
-`SymTagUDT`  
-Indica que el símbolo es un tipo definido por el usuario (estructura, unión o clase).
+`SymTagUDT` Indica que el símbolo es un tipo definido por el usuario (estructura, unión o clase).
 
-`SymTagEnum`  
-Indica que el símbolo es una enumeración.
+`SymTagEnum` Indica que el símbolo es una enumeración.
 
-`SymTagFunctionType`  
-Indica que el símbolo es un tipo de firma de función.
+`SymTagFunctionType` Indica que el símbolo es un tipo de firma de función.
 
-`SymTagPointerType`  
-Indica que el símbolo es un tipo de puntero.
+`SymTagPointerType` Indica que el símbolo es un tipo de puntero.
 
-`SymTagArrayType`  
-Indica que el símbolo es un tipo de matriz.
+`SymTagArrayType` Indica que el símbolo es un tipo de matriz.
 
-`SymTagBaseType`  
-Indica que el símbolo es un tipo base.
+`SymTagBaseType` Indica que el símbolo es un tipo base.
 
-`SymTagTypedef`  
-Indica que el símbolo es un `typedef`, es decir, un alias para otro tipo.
+`SymTagTypedef` Indica que el símbolo es un `typedef`, es decir, un alias para otro tipo.
 
-`SymTagBaseClass`  
-Indica que el símbolo es una clase base de un tipo definido por el usuario.
+`SymTagBaseClass` Indica que el símbolo es una clase base de un tipo definido por el usuario.
 
-`SymTagFriend`  
-Indica que el símbolo es un elemento friend de un tipo definido por el usuario.
+`SymTagFriend` Indica que el símbolo es un elemento friend de un tipo definido por el usuario.
 
-`SymTagFunctionArgType`  
-Indica que el símbolo es un argumento de función.
+`SymTagFunctionArgType` Indica que el símbolo es un argumento de función.
 
-`SymTagFuncDebugStart`  
-Indica que el símbolo es la ubicación final del código de prólogo de la función.
+`SymTagFuncDebugStart` Indica que el símbolo es la ubicación final del código de prólogo de la función.
 
-`SymTagFuncDebugEnd`  
-Indica que el símbolo es la ubicación de comienzo del código de epílogo de la función.
+`SymTagFuncDebugEnd` Indica que el símbolo es la ubicación de comienzo del código de epílogo de la función.
 
-`SymTagUsingNamespace`  
-Indica que el símbolo es un nombre de espacio de nombres activo en el ámbito actual.
+`SymTagUsingNamespace` Indica que el símbolo es un nombre de espacio de nombres activo en el ámbito actual.
 
-`SymTagVTableShape`  
-Indica que el símbolo es una descripción de la tabla virtual.
+`SymTagVTableShape` Indica que el símbolo es una descripción de la tabla virtual.
 
-`SymTagVTable`  
-Indica que el símbolo es un puntero a la tabla virtual.
+`SymTagVTable` Indica que el símbolo es un puntero a la tabla virtual.
 
-`SymTagCustom`  
-Indica que el símbolo es un símbolo personalizado y no interpreta DIA.
+`SymTagCustom` Indica que el símbolo es un símbolo personalizado y no interpreta DIA.
 
-`SymTagThunk`  
-Indica que el símbolo es un código thunk que se utiliza para compartir datos entre 16 y el código de 32 bits.
+`SymTagThunk` Indica que el símbolo es un código thunk que se utiliza para compartir datos entre 16 y el código de 32 bits.
 
-`SymTagCustomType`  
-Indica que el símbolo es un símbolo personalizado del compilador.
+`SymTagCustomType` Indica que el símbolo es un símbolo personalizado del compilador.
 
-`SymTagManagedType`  
-Indica que el símbolo es en los metadatos.
+`SymTagManagedType` Indica que el símbolo es en los metadatos.
 
-`SymTagDimension`  
-Indica que el símbolo es una matriz multidimensional de FORTRAN.
+`SymTagDimension` Indica que el símbolo es una matriz multidimensional de FORTRAN.
 
-`SymTagCallSite`  
-Indica que el símbolo representa el sitio de llamada.
+`SymTagCallSite` Indica que el símbolo representa el sitio de llamada.
 
-`SymTagInlineSite`  
-Indica que el símbolo representa el sitio en línea.
+`SymTagInlineSite` Indica que el símbolo representa el sitio en línea.
 
-`SymTagBaseInterface`  
-Indica que el símbolo es una interfaz base.
+`SymTagBaseInterface` Indica que el símbolo es una interfaz base.
 
-`SymTagVectorType`  
-Indica que el símbolo es un tipo de vector.
+`SymTagVectorType` Indica que el símbolo es un tipo de vector.
 
-`SymTagMatrixType`  
-Indica que el símbolo es un tipo de matriz.
+`SymTagMatrixType` Indica que el símbolo es un tipo de matriz.
 
-`SymTagHLSLType`  
-Indica que el símbolo es un tipo de lenguaje de sombreado de alto nivel.
+`SymTagHLSLType` Indica que el símbolo es un tipo de lenguaje de sombreado de alto nivel.
 
 ## <a name="remarks"></a>Comentarios
 Todos los símbolos dentro de un archivo de depuración tienen una etiqueta de identificación que especifica el tipo del símbolo.
@@ -205,13 +168,13 @@ Los valores de esta enumeración se pasan a los métodos siguientes para limitar
 Encabezado: cvconst.h
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[Jerarquía léxica de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)  
-[IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  
-[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)  
-[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)  
-[IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)  
-[IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)  
-[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)  
-[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [Jerarquía léxica de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
+- [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)
+- [IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)
+- [IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)
+- [IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)
+- [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)
+- [IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

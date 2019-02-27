@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3ef7418a232c5c6fa06062fbe6214f55e40b8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d448fe9c8eb3379d4d66bbc174626a3c3998a737
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008535"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639315"
 ---
 # <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
-Recupera una marca que especifica si nunca se llega a la función o etiqueta.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_notReached(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- pFlag  
- [out] Devuelve `TRUE` si nunca se alcanza la función o la etiqueta; de lo contrario, devuelve `FALSE`.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
-  
+Recupera una marca que especifica si nunca se llega a la función o etiqueta.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_notReached(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ pFlag
+
+[out] Devuelve `TRUE` si nunca se alcanza la función o la etiqueta; de lo contrario, devuelve `FALSE`.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
-  
-## <a name="requirements"></a>Requisitos  
-  
-|Requisito|Descripción|  
-|-----------------|-----------------|  
-|Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v8.0|  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+
+## <a name="requirements"></a>Requisitos
+
+|Requisito|Descripción|
+|-----------------|-----------------|
+|Encabezado:|dia2.h|
+|Versión:|SDK de DIA v8.0|
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

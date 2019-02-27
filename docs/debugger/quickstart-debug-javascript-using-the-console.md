@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1056e65e769710a1092142104e87eaead37521
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: ca403045a22bb2f2aca6af537660d70c791064e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227580"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720515"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar JavaScript mediante la consola en Visual Studio
 
@@ -249,11 +249,11 @@ La siguiente ilustración muestra la lista Destino en la ventana Consola JavaScr
 Puede cambiar el contexto de ejecución mediante el comando `cd` , pero debe saber el nombre del otro contexto de ejecución, y la referencia que use debe estar en el ámbito. La lista **Destino** permite un acceso mejorado a otros contextos de ejecución.
 
 ## <a name="see-also"></a>Vea también
-[Depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md)  
-[Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)  
-[Depurar un control WebView](../debugger/debug-a-webview-control.md)  
-[Compatibilidad de productos y accesibilidad](https://visualstudio.microsoft.com/vs/support/)
+- [Depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md)
+- [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Depurar un control WebView](../debugger/debug-a-webview-control.md)
+- [Compatibilidad de productos y accesibilidad](https://visualstudio.microsoft.com/vs/support/)

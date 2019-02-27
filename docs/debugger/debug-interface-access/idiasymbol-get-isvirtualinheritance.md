@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb0970d7c907821a2ba0578cd5a326688bee2b34
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f5d1630b46ca2203e9f935517e96b11856b273b9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922683"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631489"
 ---
 # <a name="idiasymbolgetisvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
-Especifica si el `this` puntero apunta a un miembro de datos con herencia virtual.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_isVirtualInheritance(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Un puntero a un `BOOL` que especifica si el `this` puntero apunta a un miembro de datos con herencia virtual.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Especifica si el `this` puntero apunta a un miembro de datos con herencia virtual.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_isVirtualInheritance(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Un puntero a un `BOOL` que especifica si el `this` puntero apunta a un miembro de datos con herencia virtual.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
