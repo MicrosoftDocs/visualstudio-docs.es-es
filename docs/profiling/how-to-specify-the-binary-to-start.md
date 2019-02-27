@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a82e67d92dcb7b59898e4eb9d4b72d3e53ff351
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a03bf203e5078bdbdf6327ec7bda186613a25c03
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952579"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622662"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Procedimiento Especificar el binario de inicio
 

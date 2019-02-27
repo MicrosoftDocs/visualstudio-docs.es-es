@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4314af1509cbeb22ad35b372b45e2429aa10476c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90bf6b41400143d7a6703db24c031cb3ed31de2c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972578"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609701"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
-Omite un número especificado de secuencias de depuración en una secuencia de enumeración.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `celt`  
- [in] El número de secuencias de depuración en la secuencia de enumeración que se omitirán.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no existen más registros que se omitirán.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+Omite un número especificado de secuencias de depuración en una secuencia de enumeración.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `celt`
+
+[in] El número de secuencias de depuración en la secuencia de enumeración que se omitirán.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no existen más registros que se omitirán.
+
+## <a name="see-also"></a>Vea también
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

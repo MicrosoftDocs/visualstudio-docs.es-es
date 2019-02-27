@@ -18,50 +18,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c304f4c3f0a3bda805e8e32dc06c9ab0f370690
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c3b08ab26b30abe767674d51795dd4f3a4cfac01
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021158"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645438"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile (tarea)
-Lee una lista de elementos de un archivo de texto.  
-  
-## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `ReadLinesFromFile` .  
-  
-|Parámetro|Descripción|  
-|---------------|-----------------|  
-|`File`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el archivo que se va a leer. El archivo debe tener un elemento en cada línea.|  
-|`Lines`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las líneas leídas del archivo.|  
-  
-## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se usa la tarea `ReadLinesFromFile` para crear elementos de una lista de un archivo de texto. Los elementos leídos del archivo se almacenan en la colección de elementos `ItemsFromFile`.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyTextFile Include="Items.txt"/>  
-    </ItemGroup>  
-  
-    <Target Name="ReadFromFile">  
-        <ReadLinesFromFile  
-            File="@(MyTextFile)" >  
-            <Output  
-                TaskParameter="Lines"  
-                ItemName="ItemsFromFile"/>  
-        </ReadLinesFromFile>  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
- [Tareas](../msbuild/msbuild-tasks.md)
+Lee una lista de elementos de un archivo de texto.
+
+## <a name="parameters"></a>Parámetros
+ En la siguiente tabla se describen los parámetros de la tarea `ReadLinesFromFile` .
+
+|Parámetro|Descripción|
+|---------------|-----------------|
+|`File`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el archivo que se va a leer. El archivo debe tener un elemento en cada línea.|
+|`Lines`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las líneas leídas del archivo.|
+
+## <a name="remarks"></a>Comentarios
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Ejemplo
+ En el ejemplo siguiente se usa la tarea `ReadLinesFromFile` para crear elementos de una lista de un archivo de texto. Los elementos leídos del archivo se almacenan en la colección de elementos `ItemsFromFile`.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyTextFile Include="Items.txt"/>
+    </ItemGroup>
+
+    <Target Name="ReadFromFile">
+        <ReadLinesFromFile
+            File="@(MyTextFile)" >
+            <Output
+                TaskParameter="Lines"
+                ItemName="ItemsFromFile"/>
+        </ReadLinesFromFile>
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Vea también
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
+- [Tareas](../msbuild/msbuild-tasks.md)

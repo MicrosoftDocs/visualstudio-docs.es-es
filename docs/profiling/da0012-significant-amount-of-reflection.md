@@ -13,30 +13,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2083b6446fc4f818bfc7d88b2b8a029ef4b06624
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33617b71c8ba13c459df8bcf29fb8a51cf948299
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962123"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621368"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Cantidad considerable de reflexión
 
-|||  
-|-|-|  
-|Identificador de regla|DA0012|  
-|Categoría|Uso de .NET Framework|  
-|Métodos de generación de perfiles|Muestreo|  
-|Mensaje|Quizá está usando reflexión en exceso. Se trata de una operación que utiliza muchos recursos.|  
-|Tipo de regla|Advertencia|  
+|||
+|-|-|
+|Identificador de regla|DA0012|
+|Categoría|Uso de .NET Framework|
+|Métodos de generación de perfiles|Muestreo|
+|Mensaje|Quizá está usando reflexión en exceso. Se trata de una operación que utiliza muchos recursos.|
+|Tipo de regla|Advertencia|
 
-## <a name="cause"></a>Motivo  
- Las llamadas a métodos System.Reflection, como InvokeMember y GetMember, o a métodos Type, como MemberInvoke, constituyen una proporción considerable de los datos de generación de perfiles. Cuando sea posible, considere la posibilidad de reemplazar estos métodos con enlace anticipado a los métodos de ensamblados dependientes.  
+## <a name="cause"></a>Motivo
+ Las llamadas a métodos System.Reflection, como InvokeMember y GetMember, o a métodos Type, como MemberInvoke, constituyen una proporción considerable de los datos de generación de perfiles. Cuando sea posible, considere la posibilidad de reemplazar estos métodos con enlace anticipado a los métodos de ensamblados dependientes.
 
-## <a name="rule-description"></a>Descripción de la regla  
- La reflexión es una herramienta flexible de .NET Framework que puede utilizar para realizar el enlace tardío de la aplicación a un ensamblado de run-time dependiente o para crear y ejecutar dinámicamente nuevos tipos durante el run-time. Sin embargo, estas técnicas pueden disminuir el rendimiento si se utilizan con frecuencia o se llaman en bucles de pequeñas dimensiones.  
+## <a name="rule-description"></a>Descripción de la regla
+ La reflexión es una herramienta flexible de .NET Framework que puede utilizar para realizar el enlace tardío de la aplicación a un ensamblado de run-time dependiente o para crear y ejecutar dinámicamente nuevos tipos durante el run-time. Sin embargo, estas técnicas pueden disminuir el rendimiento si se utilizan con frecuencia o se llaman en bucles de pequeñas dimensiones.
 
- Para obtener más información, consulte la sección [Reflexión y enlace tardío](http://go.microsoft.com/fwlink/?LinkId=177826) de Capítulo 5: Mejorar el rendimiento de código administrado en el volumen Mejorar el rendimiento y la escalabilidad de las aplicaciones .NET de la biblioteca Patrones y prácticas de Microsoft de MSDN.  
+ Para obtener más información, consulte la sección [Reflexión y enlace tardío](http://go.microsoft.com/fwlink/?LinkId=177826) de Capítulo 5: Mejorar el rendimiento de código administrado en el volumen Mejorar el rendimiento y la escalabilidad de las aplicaciones .NET de la biblioteca Patrones y prácticas de Microsoft de MSDN.
 
-## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
+## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia
  Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Detalles de la función](../profiling/function-details-view.md) de los datos de generación de perfiles. Examine las funciones de llamada del método System.Type o System.Reflection para encontrar las secciones del programa que hacen un uso más frecuente de las API de reflexión de .NET. Evite usar métodos que devuelvan metadatos. Cuando el rendimiento de su aplicación es crítico, debe evitar el uso de enlace tardío y la creación dinámica de tipos en run-time.

@@ -11,50 +11,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dbec142635c1856dfd701f31253b3773cee1b01
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b284a53d930fc7882b9a2a9a3bde8d5334ea13ff
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917386"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638781"
 ---
 # <a name="resource-contention-data-views"></a>Vistas de datos de contención de recursos
-Esta sección contiene información de referencia sobre las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de generación de perfiles de contención de subprocesos.  
-  
-## <a name="in-this-section"></a>En esta sección  
- [Vista Proceso: Datos de contención del generador de perfiles](../profiling/resource-contention-data-views.md)  
- Muestra una escala de tiempo gráfica de los datos de generación de perfiles y enumera las funciones y los recursos que formaron parte de los eventos de bloqueo.  
-  
- [Vista Árbol de llamadas](../profiling/call-tree-view-contention-data.md)  
- Muestra un árbol de jerarquía que representa las rutas de acceso de ejecución y los datos de contención de recursos de las funciones incluidas en la ejecución de generación de perfiles.  
-  
- [Vista Módulos](../profiling/modules-view-contention-data.md)  
- Organiza los datos de subprocesos y contención de recursos por módulo y enumera las funciones, las líneas de código fuente y las instrucciones que se estaban ejecutando cuando se produjeron eventos de bloqueo.  
-  
- [Vista Llamador y destinatario: datos de contención](../profiling/caller-callee-view-contention-data.md)  
- Enumera datos de subprocesos y contención de recursos para una función seleccionada y las funciones a las que llamó y que llamaron a la función seleccionada.  
-  
- [Vista Detalles de recursos](../profiling/resource-details-view-contention-data.md)  
- Muestra una escala de tiempo gráfica de los eventos de bloqueo para cada recurso contenido y enumera la pila de llamadas para los eventos de bloqueo.  
-  
- [Vista Detalles del subproceso](../profiling/thread-details-view-contention-data.md)  
- Muestra una escala de tiempo gráfica de los eventos de bloqueo para cada subproceso y enumera la pila de llamadas para los eventos de bloqueo.  
-  
- [Vista Funciones](../profiling/functions-view-contention-data.md)  
- Muestra datos de contención de recursos y subprocesos por función.  
-  
- [Vista Contención de recursos](../profiling/resource-contentions-view-contention-data.md)  
- Muestra datos de contención de recursos por recurso bloqueado.  
-  
- [Vista Líneas](../profiling/lines-view-contention-data.md)  
- Muestra datos de contención de recursos por línea de código de origen.  
-  
- [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)  
- Muestra contención de recursos por instrucción.  
-  
- [Vista Proceso](../profiling/process-view-contention-data.md)  
- Muestra contención de recursos por procesos y subprocesos.  
-  
-## <a name="reference"></a>Referencia  
- [Vista Detalles de la función](../profiling/function-details-view.md)  
+Esta sección contiene información de referencia sobre las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de generación de perfiles de contención de subprocesos.
+
+## <a name="in-this-section"></a>En esta sección
+- [Vista Proceso: Datos de contención del generador de perfiles](../profiling/resource-contention-data-views.md)
+
+ Muestra una escala de tiempo gráfica de los datos de generación de perfiles y enumera las funciones y los recursos que formaron parte de los eventos de bloqueo.
+
+- [Vista Árbol de llamadas](../profiling/call-tree-view-contention-data.md)
+
+ Muestra un árbol de jerarquía que representa las rutas de acceso de ejecución y los datos de contención de recursos de las funciones incluidas en la ejecución de generación de perfiles.
+
+- [Vista Módulos](../profiling/modules-view-contention-data.md)
+
+ Organiza los datos de subprocesos y contención de recursos por módulo y enumera las funciones, las líneas de código fuente y las instrucciones que se estaban ejecutando cuando se produjeron eventos de bloqueo.
+
+- [Vista Llamador y destinatario: datos de contención](../profiling/caller-callee-view-contention-data.md)
+
+ Enumera datos de subprocesos y contención de recursos para una función seleccionada y las funciones a las que llamó y que llamaron a la función seleccionada.
+
+- [Vista Detalles de recursos](../profiling/resource-details-view-contention-data.md)
+
+ Muestra una escala de tiempo gráfica de los eventos de bloqueo para cada recurso contenido y enumera la pila de llamadas para los eventos de bloqueo.
+
+- [Vista Detalles del subproceso](../profiling/thread-details-view-contention-data.md)
+
+ Muestra una escala de tiempo gráfica de los eventos de bloqueo para cada subproceso y enumera la pila de llamadas para los eventos de bloqueo.
+
+- [Vista Funciones](../profiling/functions-view-contention-data.md)
+
+ Muestra datos de contención de recursos y subprocesos por función.
+
+- [Vista Contención de recursos](../profiling/resource-contentions-view-contention-data.md)
+
+ Muestra datos de contención de recursos por recurso bloqueado.
+
+- [Vista Líneas](../profiling/lines-view-contention-data.md)
+
+ Muestra datos de contención de recursos por línea de código de origen.
+
+- [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)
+
+ Muestra contención de recursos por instrucción.
+
+- [Vista Proceso](../profiling/process-view-contention-data.md)
+
+ Muestra contención de recursos por procesos y subprocesos.
+
+## <a name="reference"></a>Referencia
+- [Vista Detalles de la función](../profiling/function-details-view.md)
+
  Muestra un gráfico de la relación entre una función seleccionada y las funciones que llamaron y fueron llamadas por dicha función.

@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7d693b1c2948e747532d21d4172cf2e366572ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b11d3c177f880894a2f47abd8e80e7796c7923ef
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945481"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624339"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Procedimiento Filtrar vistas de herramientas de generación de perfiles para mostrar Solo mi código
 

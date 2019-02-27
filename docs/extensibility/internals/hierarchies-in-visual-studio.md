@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9466e081aad6e5e928198b4d6f43d9f68c4eee8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616890"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841784"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Jerarquías en Visual Studio
 El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) muestra un proyecto como un *jerarquía*. En el IDE, una jerarquía es un árbol de nodos, donde cada nodo tiene un conjunto de propiedades asociadas. Un *jerarquía del proyecto* es un contenedor que contiene elementos de proyecto, las relaciones de los elementos y las propiedades asociadas y los comandos.
@@ -35,4 +35,4 @@ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de de
 ## <a name="see-also"></a>Vea también
 - [Tipos de proyecto](../../extensibility/internals/project-types.md)
 - [Selección y moneda en el IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [Muestras de VSSDK](http://aka.ms/vs2015sdksamples)
+- [Muestras de VSSDK](https://aka.ms/vs2015sdksamples)

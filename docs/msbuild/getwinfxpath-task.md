@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd751f36ce3a5f74bea78fd0d57920a5145c0fb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c95e5ad882d7021b597d7ba0ad8c38177f4a5136
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853682"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646934"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath (Tarea)
 La tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> devuelve el directorio del runtime [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] actual.
@@ -57,8 +57,8 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> devuelve el directori
 ```
 
 ## <a name="see-also"></a>Vea también
-[Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)  
-[Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)  
-[Referencia de MSBuild](../msbuild/msbuild-reference.md)  
-[Referencia de tareas](../msbuild/msbuild-task-reference.md)  
-[Compilar una aplicación de WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)
+- [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)
+- [Referencia de MSBuild](../msbuild/msbuild-reference.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Compilar una aplicación de WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3afbee1d4f0aee1dbf752ca241521ee121d00975
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb06b656b107dce623ea75df162b20a1ea34b401
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937502"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610325"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest (tarea)
 
@@ -67,7 +67,7 @@ Además de los parámetros mencionados anteriormente, esta tarea hereda los par�
 
 ## <a name="see-also"></a>Vea también
 
-[Tareas](../msbuild/msbuild-tasks.md)  
-[GenerateApplicationManifest (Tarea)](../msbuild/generateapplicationmanifest-task.md)  
-[SignFile (Tarea)](../msbuild/signfile-task.md)  
-[Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [GenerateApplicationManifest (Tarea)](../msbuild/generateapplicationmanifest-task.md)
+- [SignFile (Tarea)](../msbuild/signfile-task.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)

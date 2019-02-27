@@ -10,30 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2112f7186ee8bb861cf4d283b0bb0b4499f2c4ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd81117c11eb42dbccf22e55ee5e294ad9c3c96a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023998"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613224"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-Recupera el número de archivo y la línea de código fuente que indican dónde se define un tipo definido por el usuario especificado.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT getSrcLineOnTypeDefn(  
-   IDiaLineNumber **ppResult);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `ppResult`  
- [out] Un `IDiaLineNumber` objeto que contiene el número de archivo y la línea de código fuente donde definido por el usuario.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Recupera el número de archivo y la línea de código fuente que indican dónde se define un tipo definido por el usuario especificado.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT getSrcLineOnTypeDefn(
+   IDiaLineNumber **ppResult);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `ppResult`
+
+[out] Un `IDiaLineNumber` objeto que contiene el número de archivo y la línea de código fuente donde definido por el usuario.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 18e55aef8d95110dc44f20084eb5e45f643bf3cf
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833948"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678870"
 ---
 # <a name="getting-started-with-python"></a>Introducción a Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Los siguientes recursos le ayudarán a empezar:
 - [Documentación](https://github.com/Microsoft/PTVS/wiki)  
 
 
-Tenga en cuenta que Visual Studio no en la actualidad proporciona los medios para crear un archivo ejecutable independiente con Python, lo que significa básicamente un programa con un intérprete de Python incrustado. Pero hay varias formas dentro de la comunidad de Python para hacerlo, como se describe en [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython también se puede insertar en una aplicación nativa, como se describe en la entrada de blog [Using CPython's Embeddable Zip File](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) (Uso del archivo Zip insertable de CPython).
+Tenga en cuenta que Visual Studio no en la actualidad proporciona los medios para crear un archivo ejecutable independiente con Python, lo que significa básicamente un programa con un intérprete de Python incrustado. Pero hay varias formas dentro de la comunidad de Python para hacerlo, como se describe en [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython también se puede insertar en una aplicación nativa, como se describe en la entrada de blog [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Uso del archivo Zip insertable de CPython).
   
 ## <a name="building-ui-with-python"></a>Creación de interfaz de usuario con Python  
 
@@ -93,9 +93,9 @@ Se recomienda obtener IPython y las bibliotecas informáticas científicas (matp
   
 ## <a name="see-also"></a>Vea también  
 
-[Introducción a PTVS: Configuración de Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[Introducción a PTVS: Comenzar a codificar (proyectos)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[Introducción a PTVS: Edición de código](../python/getting-started-with-ptvs-editing-code.md)
-[Introducción a PTVS: Depuración](../python/getting-started-with-ptvs-debugging.md)
+[Introducción a PTVS: configuración de Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[Introducción a PTVS: comenzar a codificar (proyectos)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[Introducción a PTVS: editar código](../python/getting-started-with-ptvs-editing-code.md)
+[Introducción a PTVS: depurar](../python/getting-started-with-ptvs-debugging.md)
 [Introducción a PTVS: Python interactivo](../python/getting-started-with-ptvs-interactive-python.md)
-[Introducción a PTVS: Creación de un sitio Web en Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[Introducción a PTVS: compilar un sitio web en Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

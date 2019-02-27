@@ -14,35 +14,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b81c724d5b0c8057abb706073c3faf94bfe1b7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 905979e0bc563e7525f1385a484e9b44b523a1f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965203"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613991"
 ---
 # <a name="lines-view"></a>Vista Líneas
-La vista Líneas está disponible solo para los datos del generador de perfiles recopilados mediante el método de muestreo. La vista no está disponible para los datos recopilados mediante instrumentación.  
-  
- Para los datos de perfil de muestreo, la vista Líneas identifica las instrucciones de una función que se estaba ejecutando directamente cuando se recopiló la muestra. Para los datos de memoria. NET, la vista Líneas identifica las instrucciones que asignan memoria.  
-  
- En un archivo de origen, una instrucción puede abarcar más de una línea y una sola línea puede incluir más de una instrucción.  
-  
- Una instrucción se identifica mediante lo siguiente:  
-  
--   El archivo de código fuente que contiene la instrucción de la función.  
-  
--   La función que contiene la instrucción.  
-  
--   La línea de origen donde se inicia la instrucción.  
-  
--   El carácter en la línea de origen donde se inicia la instrucción.  
-  
--   La línea de origen donde finaliza la instrucción.  
-  
--   El carácter en la línea de origen donde finaliza la instrucción.  
-  
-## <a name="see-also"></a>Vea también  
- [Vista Líneas](../profiling/lines-view-sampling-data.md)   
- [Vista Líneas: muestreo](../profiling/lines-view-dotnet-memory-sampling-data.md)   
- [Vista Líneas](../profiling/lines-view-contention-data.md)
+La vista Líneas está disponible solo para los datos del generador de perfiles recopilados mediante el método de muestreo. La vista no está disponible para los datos recopilados mediante instrumentación.
+
+ Para los datos de perfil de muestreo, la vista Líneas identifica las instrucciones de una función que se estaba ejecutando directamente cuando se recopiló la muestra. Para los datos de memoria. NET, la vista Líneas identifica las instrucciones que asignan memoria.
+
+ En un archivo de origen, una instrucción puede abarcar más de una línea y una sola línea puede incluir más de una instrucción.
+
+ Una instrucción se identifica mediante lo siguiente:
+
+-   El archivo de código fuente que contiene la instrucción de la función.
+
+-   La función que contiene la instrucción.
+
+-   La línea de origen donde se inicia la instrucción.
+
+-   El carácter en la línea de origen donde se inicia la instrucción.
+
+-   La línea de origen donde finaliza la instrucción.
+
+-   El carácter en la línea de origen donde finaliza la instrucción.
+
+## <a name="see-also"></a>Vea también
+- [Vista Líneas](../profiling/lines-view-sampling-data.md)
+- [Vista Líneas: muestreo](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Vista Líneas](../profiling/lines-view-contention-data.md)

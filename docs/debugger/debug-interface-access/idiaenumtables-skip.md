@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80d734b03741bc6b794c925daa0c02084173c088
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 24232878452082dd1769c9bc9f1cd22d081968f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042717"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596560"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
-Omite un número especificado de las tablas de una secuencia de enumeración.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `celt`  
- [in] El número de tablas en la secuencia de enumeración que se omitirán.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no hay ningún más tablas que se omitirán.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+Omite un número especificado de las tablas de una secuencia de enumeración.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `celt`
+
+[in] El número de tablas en la secuencia de enumeración que se omitirán.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no hay ningún más tablas que se omitirán.
+
+## <a name="see-also"></a>Vea también
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

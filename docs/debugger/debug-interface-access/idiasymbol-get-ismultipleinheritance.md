@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c680e1faf7a2a70f7763b55e5fa521d94bb819e0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a353f9fc3605d1f2d26248b3ce907fb76b947c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941372"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596469"
 ---
 # <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-Especifica si el `this` puntero apunta a un miembro de datos con herencia múltiple.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_isMultipleInheritance(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Un puntero a un `BOOL` que especifica si el `this` puntero apunta a un miembro de datos con herencia múltiple.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Especifica si el `this` puntero apunta a un miembro de datos con herencia múltiple.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_isMultipleInheritance(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Un puntero a un `BOOL` que especifica si el `this` puntero apunta a un miembro de datos con herencia múltiple.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

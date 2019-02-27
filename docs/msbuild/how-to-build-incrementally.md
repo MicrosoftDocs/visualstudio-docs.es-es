@@ -1,5 +1,5 @@
 ---
-title: Filtrar Compilar de forma incremental | Microsoft Docs
+title: Procedimiento Compilar de forma incremental | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853906"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621336"
 ---
-# <a name="how-to-build-incrementally"></a>Filtrar Compilación de forma incremental
+# <a name="how-to-build-incrementally"></a>Procedimiento Compilación de forma incremental
 Cuando se compila un proyecto grande, es importante que los componentes que se compilaron previamente y que aún están actualizados no se recompilen. Si todos los destinos se compilan cada vez, llevará más tiempo finalizar la compilación. Para habilitar las compilaciones incrementales (aquellas en las que solo se compilan los destinos no compilados con anterioridad o no actualizados), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En cambio, debe haber una asignación unívoca entre las entradas y resultados. Se pueden usar las transformaciones para permitir que los destinos identifiquen esta asignación directa. Para obtener más información sobre transformaciones, vea [Transformaciones](../msbuild/msbuild-transforms.md).
 
 ## <a name="specify-inputs-and-outputs"></a>Definición de entradas y salidas
@@ -38,12 +38,12 @@ Es posible compilar un destino de forma incremental si se han especificado las e
   [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En el ejemplo siguiente, si algún archivo de la lista de elementos `@(CSFile)` es más reciente que el archivo *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ejecuta el destino; de lo contrario, se omite:
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ Este archivo de proyecto contiene los destinos `Convert` y `Build`. Las tareas `
 ```
 
 ## <a name="see-also"></a>Vea también
-[Destinos](../msbuild/msbuild-targets.md)  
-[Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Transformaciones](../msbuild/msbuild-transforms.md)  
-[Tarea Csc](../msbuild/csc-task.md)  
-[Vbc (Tarea)](../msbuild/vbc-task.md)
+- [Destinos](../msbuild/msbuild-targets.md)
+- [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Transformaciones](../msbuild/msbuild-transforms.md)
+- [Tarea Csc](../msbuild/csc-task.md)
+- [Vbc (Tarea)](../msbuild/vbc-task.md)

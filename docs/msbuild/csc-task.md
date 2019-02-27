@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: a505194a71058d791b7d67d74cd203c43298d684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854127"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643943"
 ---
 # <a name="csc-task"></a>Csc (tarea)
 Contiene *csc.exe* y genera archivos ejecutables (*.exe*), archivos de biblioteca de vínculos dinámicos (*.dll*) o archivos de módulos de códigos (*.netmodule*). Para obtener más información sobre *csc.exe*, vea [Opciones del compilador de C#](/dotnet/csharp/language-reference/compiler-options/index).
@@ -94,5 +94,5 @@ En el ejemplo siguiente se utiliza la tarea `Csc` para compilar un ejecutable de
 ```
 
 ## <a name="see-also"></a>Vea también
-[Referencia de tareas](../msbuild/msbuild-task-reference.md)  
-[Tareas](../msbuild/msbuild-tasks.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Tareas](../msbuild/msbuild-tasks.md)

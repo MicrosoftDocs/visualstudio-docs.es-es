@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854114"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626627"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (tarea)
 Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifiesto nativo. Un manifiesto nativo describe un componente al definir una identidad única para dicho componente e identificar todos los ensamblados y archivos que lo conforman. Un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] extiende un manifiesto nativo indicando el punto de entrada de la aplicación y especificando el nivel de seguridad de la aplicación.
@@ -88,7 +88,7 @@ Esto ilustra el escenario de generación de manifiestos más sencillo posible do
 
 > [!NOTE]
 > En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.
-> 
+>
 > [!NOTE]
 > Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` de este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).
 
@@ -141,7 +141,7 @@ Este ejemplo es similar al ejemplo anterior, excepto que el nombre y la identida
 
 > [!NOTE]
 > En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.
-> 
+>
 > [!NOTE]
 > Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` de este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).
 
@@ -199,7 +199,7 @@ En este ejemplo se usan las tareas `GenerateApplicationManifest` y `GenerateDepl
 
 > [!NOTE]
 > En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.
-> 
+>
 > [!NOTE]
 > Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` de este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).
 
@@ -350,7 +350,7 @@ En este ejemplo se genera *Test.exe.manifest*, que hace que la aplicación XCOPY
 ```
 
 ## <a name="see-also"></a>Vea también
-[Tareas](../msbuild/msbuild-tasks.md)  
-[Tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)  
-[SignFile (Tarea)](../msbuild/signfile-task.md)  
-[Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [Tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
+- [SignFile (Tarea)](../msbuild/signfile-task.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3923cc545cc04b544db4771374fddabf2cc272fd
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 864c15203b0b9601f2c9f5bd1421acf48120bb41
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853877"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610039"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly (Tarea)
 La tarea <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> genera un ensamblado si al menos una página de [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] del proyecto hace referencia a un tipo declarado localmente en ese proyecto. El ensamblado generado se quita una vez completado el proceso de compilación, o si este no se produce.
@@ -71,9 +71,9 @@ En el ejemplo siguiente se genera un ensamblado temporal porque *Page1.xaml* con
 ```
 
 ## <a name="see-also"></a>Vea también
-[Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)  
-[Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)  
-[Referencia de MSBuild](../msbuild/msbuild-reference.md)  
-[Referencia de tareas](../msbuild/msbuild-task-reference.md)  
-[Compilar una aplicación de WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Información general sobre las aplicaciones de explorador XAML de WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)
+- [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)
+- [Referencia de MSBuild](../msbuild/msbuild-reference.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Compilar una aplicación de WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Información general sobre las aplicaciones de explorador XAML de WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

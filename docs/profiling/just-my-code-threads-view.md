@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e6cb50e3b62380ff8de191de153ff4edd0545de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982993"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625197"
 ---
 # <a name="just-my-code-threads-view"></a>Sólo mi código (Vista de subprocesos)
-Si selecciona esta opción, se filtrará la pila de llamadas para mostrar solo su código además de un nivel de las funciones llamadas.  
-  
- Al activar esta opción, puede reducir significativamente la complejidad de la pila de llamadas y es posible que resulte más fácil diagnosticar un problema determinado.  
-  
- En algunos casos, la selección de esta opción puede filtrar la llamada de bloqueo. Si necesita detalles completos de la pila de llamadas para tomar esa determinación, desactive esta opción para exponer la pila de llamadas completa.  
-  
-## <a name="see-also"></a>Vea también  
- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)   
- [Porcentaje de reducción de ruido](../profiling/noise-reduction-percentage.md)
+Si selecciona esta opción, se filtrará la pila de llamadas para mostrar solo su código además de un nivel de las funciones llamadas.
+
+ Al activar esta opción, puede reducir significativamente la complejidad de la pila de llamadas y es posible que resulte más fácil diagnosticar un problema determinado.
+
+ En algunos casos, la selección de esta opción puede filtrar la llamada de bloqueo. Si necesita detalles completos de la pila de llamadas para tomar esa determinación, desactive esta opción para exponer la pila de llamadas completa.
+
+## <a name="see-also"></a>Vea también
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Porcentaje de reducción de ruido](../profiling/noise-reduction-percentage.md)
