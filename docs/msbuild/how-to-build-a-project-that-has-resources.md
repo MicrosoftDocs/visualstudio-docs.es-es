@@ -1,5 +1,5 @@
 ---
-title: Filtrar Compilar un proyecto que tiene recursos | Microsoft Docs
+title: Procedimiento Compilar un proyecto que tiene recursos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e8f7f8bd6410f338fd7a40f4c9b1ee663211c8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852845"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610416"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>Filtrar Compilar un proyecto que tiene recursos
+# <a name="how-to-build-a-project-that-has-resources"></a>Procedimiento Compilar un proyecto que tiene recursos
 Si está compilando versiones adaptadas de un proyecto, todos los elementos de la interfaz de usuario deben estar separados en archivos de recursos para los distintos idiomas. Si el proyecto utiliza solo cadenas, los archivos de recursos pueden utilizar archivos de texto. Como alternativa, puede usar archivos *.resx* como los archivos de recursos.
 
 ## <a name="compile-resources-with-msbuild"></a>Compilación de recursos con MSBuild
@@ -77,7 +77,7 @@ El siguiente proyecto de ejemplo contiene dos tareas: la tarea `GenerateResource
 ```
 
 ## <a name="see-also"></a>Vea también
-[MSBuild](../msbuild/msbuild.md)  
-[Tarea GenerateResource](../msbuild/generateresource-task.md)  
-[Tarea Csc](../msbuild/csc-task.md)  
-[Resgen.exe (generador de archivos de recursos)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+- [MSBuild](../msbuild/msbuild.md)
+- [Tarea GenerateResource](../msbuild/generateresource-task.md)
+- [Tarea Csc](../msbuild/csc-task.md)
+- [Resgen.exe (generador de archivos de recursos)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

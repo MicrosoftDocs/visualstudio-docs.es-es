@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf6957b0757da709a7f95ccf58b1b192e0edf098
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602044"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841748"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Tutorial: Generar perfiles de una aplicación de SharePoint
   En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite encontrar y eliminar la parte más cara (rendimiento más lento) del proyecto, también conocido como el *caliente*.
@@ -47,7 +47,7 @@ ms.locfileid: "56602044"
 ## <a name="create-a-sharepoint-project"></a>Crear un proyecto de SharePoint
  Primero, cree un proyecto de SharePoint.
 
-#### <a name="to-create-a-sharepoint-project"></a>Para crear un proyecto de SharePoint
+### <a name="to-create-a-sharepoint-project"></a>Para crear un proyecto de SharePoint
 
 1. En la barra de menús, elija **archivo** > **New** > **proyecto** para mostrar el **nuevo proyecto** cuadro de diálogo.
 
@@ -70,7 +70,7 @@ ms.locfileid: "56602044"
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Agregar una característica y un receptor de eventos de característica
  A continuación, agregue una característica al proyecto junto con un receptor de eventos para esa característica. Este receptor de eventos contendrá el código cuyo perfil se va a generar.
 
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>Para agregar una característica y un receptor de eventos de características
+### <a name="to-add-a-feature-and-feature-event-receiver"></a>Para agregar una característica y un receptor de eventos de características
 
 1.  En **el Explorador de soluciones**, abra el menú contextual para el **características** nodo, elija **Agregar característica**y deje el nombre en el valor predeterminado, **Feature1**.
 
@@ -191,7 +191,7 @@ ms.locfileid: "56602044"
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>Configurar e implementar la aplicación de SharePoint
  Ahora que el proyecto de SharePoint está listo, configúrelo e impleméntelo en el servidor de SharePoint.
 
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Para configurar e implementar la aplicación de SharePoint
+### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Para configurar e implementar la aplicación de SharePoint
 
 1.  En el **analizar** menú, elija **iniciar Asistente de rendimiento**.
 
@@ -214,7 +214,7 @@ ms.locfileid: "56602044"
 ## <a name="run-the-sharepoint-application"></a>Ejecute la aplicación de SharePoint
  Active la característica en SharePoint, desencadenando el código de evento `FeatureActivation` para la ejecución.
 
-#### <a name="to-run-the-sharepoint-application"></a>Para ejecutar la aplicación de SharePoint
+### <a name="to-run-the-sharepoint-application"></a>Para ejecutar la aplicación de SharePoint
 
 1.  En SharePoint, abra el **acciones del sitio** menú y, a continuación, elija **configuración del sitio**.
 
@@ -235,7 +235,7 @@ ms.locfileid: "56602044"
 ## <a name="view-and-interpret-the-profile-results"></a>Ver e interpretar los resultados del perfil
  Ahora que ha ejecutado la aplicación de SharePoint y ha generado perfiles, vea los resultados de las pruebas.
 
-#### <a name="to-view-and-interpret-the-profile-results"></a>Para ver e interpretar los resultados del perfil
+### <a name="to-view-and-interpret-the-profile-results"></a>Para ver e interpretar los resultados del perfil
 
 1.  En el **funciones que realizan la mayor parte del trabajo Individual** sección del informe de generación de perfiles de ejemplo, tenga en cuenta que `TimeCounter` está cerca de la parte superior de la lista.
 
@@ -256,7 +256,7 @@ ms.locfileid: "56602044"
 ## <a name="fix-the-code-and-reprofile-the-application"></a>Corrija el código y regenerar los perfiles de la aplicación
  Ahora que ha identificado la función de zona activa de la aplicación de SharePoint, corríjala.
 
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>Para corregir el código y regenerar los perfiles de la aplicación
+### <a name="to-fix-the-code-and-reprofile-the-application"></a>Para corregir el código y regenerar los perfiles de la aplicación
 
 1.  En el código del receptor de eventos de características, comente la llamada al método `TimeCounter` de `FeatureActivated` para evitar que se le llame.
 

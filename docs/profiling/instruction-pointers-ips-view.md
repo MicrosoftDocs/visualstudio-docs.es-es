@@ -17,23 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c673a362cfa48e41c82518da50f489422ea480fd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a9208a274c9dc50226452bbe9d2235d8dbf9b42
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994282"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620166"
 ---
 # <a name="instruction-pointers-ips-view"></a>Vista Punteros de instrucciones (IP)
-La vista Punteros de instrucción permite ver instrucciones concretas que se ejecutan durante la generación de perfiles de muestreo.  
-  
- Esta vista no está disponible durante la generación de perfiles de instrumentación.  
-  
- Para los datos de perfil de muestreo, la vista IP identifica las instrucciones de una función que se estaba ejecutando directamente cuando se recopiló la muestra.  
-  
- Para los datos de memoria. NET, la vista Líneas identifica las instrucciones que asignan memoria.  
-  
-## <a name="see-also"></a>Vea también  
- [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)   
- [Vista Punteros de instrucción (IP): muestreo](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
- [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)
+La vista Punteros de instrucción permite ver instrucciones concretas que se ejecutan durante la generación de perfiles de muestreo.
+
+ Esta vista no está disponible durante la generación de perfiles de instrumentación.
+
+ Para los datos de perfil de muestreo, la vista IP identifica las instrucciones de una función que se estaba ejecutando directamente cuando se recopiló la muestra.
+
+ Para los datos de memoria. NET, la vista Líneas identifica las instrucciones que asignan memoria.
+
+## <a name="see-also"></a>Vea también
+- [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Vista Punteros de instrucción (IP): muestreo](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)

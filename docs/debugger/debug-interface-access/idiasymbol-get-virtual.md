@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ba63b79a71ea4424bc9a46499b29f97d061a227
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf8bb654c00a956b7445a15afaedd97729f92356
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987653"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635402"
 ---
 # <a name="idiasymbolgetvirtual"></a>IDiaSymbol::get_virtual
-Recupera una marca que especifica si la función es virtual.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_virtual (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Devuelve `TRUE` si la función es virtual; en caso contrario, devuelve `FALSE`.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
-  
+Recupera una marca que especifica si la función es virtual.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_virtual ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Devuelve `TRUE` si la función es virtual; en caso contrario, devuelve `FALSE`.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

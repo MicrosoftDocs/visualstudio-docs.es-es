@@ -8,15 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 744b0861a1cd0f27974765822946f3c6986bdba6
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: c3eccdd231db075b7022548aabbd61f382a79900
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231953"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842481"
 ---
 # <a name="installation"></a>Instalación
 
@@ -26,7 +25,7 @@ Visual Studio Tools para AI se puede instalar en sistemas operativos Windows de 
 
 Esta extensión funciona con Visual Studio 2015 y 2017, Community Edition o superior.
 
-Puede descargar las herramientas desde [Visual Studio Marketplace](http://aka.ms/vstoolsforai) o desde Visual Studio:
+Puede descargar las herramientas desde [Visual Studio Marketplace](https://aka.ms/vstoolsforai) o desde Visual Studio:
 
 1. Seleccione **Herramientas** > **Extensiones y actualizaciones**.
 

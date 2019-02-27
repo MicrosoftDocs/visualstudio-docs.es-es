@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95e8989524c8e4df707fca364bc068b9151ba8bb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f28de400b417011b127b76c8813024f9721cc375
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605086"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843171"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procedimiento Definir el descriptor de tipo de un parámetro
   Un descriptor de tipo contiene propiedades que describen el tipo de datos de un parámetro. Un descriptor de tipo puede definir un campo, una entidad o una colección de entidades. Para obtener más información, consulte [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
@@ -95,7 +95,7 @@ ms.locfileid: "56605086"
 
       En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a una colección de las clases del proyecto.
 
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` `BdcModel1.Contact, BdcModel1]`
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.BdcModel1.Contact, BdcModel1]`
 
    - Si se trata de un tipo ubicado en un ensamblado de la solución, el nombre completo contiene el nombre del tipo, el nombre del ensamblado, el número de versión, la referencia cultural y el token de clave pública.
 

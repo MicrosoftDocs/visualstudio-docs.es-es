@@ -12,45 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3b20ade9ccb7799a764c8a43a1e1957dc91960
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: daf0b48aca06b404824059030052223a8545a6b0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993422"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641460"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
-Recibe las devoluciones de llamada desde el símbolo DIA localizar procedimiento, lo que permite a las restricciones a imponerse en el proceso de localización.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-IDiaLoadCallback2 : IDiaLoadCallback  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- Además de los métodos en el [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) interfaz, esta interfaz expone los métodos siguientes:  
-  
-|Método|Descripción|  
-|------------|-----------------|  
-|[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|Determina si busca un archivo .pdb en el directorio de depuración original.|  
-|[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|Determina si se permite la búsqueda de un archivo .pdb en la ruta de acceso donde se encuentra el archivo .exe.|  
-|[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|Determina si se permite la búsqueda de información de depuración desde archivos .dbg.|  
-|[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|Determina si se permite la búsqueda de los archivos .pdb en el directorio raíz del sistema.|  
-  
-## <a name="remarks"></a>Comentarios  
- La aplicación cliente implementa esta interfaz y proporciona una referencia a él en la llamada a la [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método. Recuerde que debe implementar todos los métodos en el [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) interfaz también.  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: dia2.h  
-  
- Biblioteca: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>Vea también  
- [Interfaces (SDK de acceso a la interfaz de depuración)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   
- [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)
+Recibe las devoluciones de llamada desde el símbolo DIA localizar procedimiento, lo que permite a las restricciones a imponerse en el proceso de localización.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+IDiaLoadCallback2 : IDiaLoadCallback
+```
+
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
+ Además de los métodos en el [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) interfaz, esta interfaz expone los métodos siguientes:
+
+|Método|Descripción|
+|------------|-----------------|
+|[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|Determina si busca un archivo .pdb en el directorio de depuración original.|
+|[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|Determina si se permite la búsqueda de un archivo .pdb en la ruta de acceso donde se encuentra el archivo .exe.|
+|[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|Determina si se permite la búsqueda de información de depuración desde archivos .dbg.|
+|[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|Determina si se permite la búsqueda de los archivos .pdb en el directorio raíz del sistema.|
+
+## <a name="remarks"></a>Comentarios
+ La aplicación cliente implementa esta interfaz y proporciona una referencia a él en la llamada a la [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método. Recuerde que debe implementar todos los métodos en el [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) interfaz también.
+
+## <a name="requirements"></a>Requisitos
+ Encabezado: Dia2.h
+
+ Biblioteca: diaguids.lib
+
+ DLL: msdia80.dll
+
+## <a name="see-also"></a>Vea también
+- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
+- [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)

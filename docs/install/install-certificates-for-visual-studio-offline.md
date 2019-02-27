@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6855603c0cc322d5ed235ac81e0f9f15cef725c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936647"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645724"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar los certificados necesarios para la instalación sin conexión de Visual Studio
 
@@ -61,6 +61,7 @@ Si está creando el script de la implementación de Visual Studio en un entorno 
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+
    **Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, cree el archivo por lotes con los comandos siguientes:
 
    ```cmd
@@ -123,7 +124,7 @@ Si los nombres de los certificados no estaban en las columnas **Emitido para**, 
 
 ## <a name="install-visual-studio"></a>Instalar Visual Studio
 
-Después de instalar los certificados, la implementación de Visual Studio puede continuar siguiendo las instrucciones de la sección [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) de la página "Creación de una instalación de red de Visual Studio".
+Después de instalar los certificados, la implementación de Visual Studio puede continuar siguiendo las instrucciones de la sección [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) de la página "Creación de una instalación de red de Visual Studio".
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

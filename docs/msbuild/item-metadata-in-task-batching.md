@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93edaaf22dd59014a29c374ea3c4613d98d00d36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946556"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623715"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadatos de elementos en el procesamiento por lotes de tareas
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tiene la capacidad de dividir las listas de elementos en distintas categorías, o lotes, basándose en los metadatos de estos elementos, y luego ejecutar una tarea una vez con cada lote. Puede resultar complicado entender exactamente qué elementos se pasan con cada lote. En este tema se tratan los escenarios comunes siguientes en los que se utiliza el procesamiento por lotes.
@@ -218,9 +218,9 @@ Items in ExampColl: Item2;Item5
 ```
 
 ## <a name="see-also"></a>Vea también
-[Metadatos de los elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md)  
-[Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)  
-[Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Procesamiento por lotes](../msbuild/msbuild-batching.md)  
-[Conceptos de MSBuild](../msbuild/msbuild-concepts.md)  
-[Referencia de MSBuild](../msbuild/msbuild-reference.md)
+- [Metadatos de los elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md)
+- [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)
+- [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Procesamiento por lotes](../msbuild/msbuild-batching.md)
+- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
+- [Referencia de MSBuild](../msbuild/msbuild-reference.md)

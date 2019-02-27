@@ -8,28 +8,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a42774d2f91afe0e3b469a97a17763950b4bdc2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c89e741e4f854f0426a3b3908b896a8908325684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968130"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634817"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Especificar la ruta de acceso a las herramientas de línea de comandos de las Herramientas de generación de perfiles
-La ruta de acceso a las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no se agrega a la variable de entorno PATH. En equipos de 32 bits, las herramientas se encuentran en un único directorio. En los equipos de 64 bits, están disponibles las versiones de 32 y 64 bits de las herramientas de generación de perfiles.  
-  
-## <a name="32-bit-computers"></a>Equipos de 32 bits  
+La ruta de acceso a las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no se agrega a la variable de entorno PATH. En equipos de 32 bits, las herramientas se encuentran en un único directorio. En los equipos de 64 bits, están disponibles las versiones de 32 y 64 bits de las herramientas de generación de perfiles.
+
+## <a name="32-bit-computers"></a>Equipos de 32 bits
  Para el código nativo, las API del generador de perfiles de Visual Studio se encuentran en *VSPerf.dll*. El archivo de encabezado (*VSPerf.h*) y la biblioteca de importación (*VSPerf.lib*) se encuentran en el directorio *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.
-  
+
  Para el código administrado, las API del generador de perfiles se encuentran en *Microsoft.VisualStudio.Profiler.dll*. Este archivo DLL se encuentra en el directorio *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
-  
-## <a name="64-bit-computers"></a>Equipos de 64 bits  
- En los equipos de 64 bits, especifique la ruta de acceso según la plataforma de destino de la aplicación para la que se genera el perfil.  
-  
--   En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
-  
-     (nativo) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*  
-  
--   En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
-  
+
+## <a name="64-bit-computers"></a>Equipos de 64 bits
+ En los equipos de 64 bits, especifique la ruta de acceso según la plataforma de destino de la aplicación para la que se genera el perfil.
+
+-   En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:
+
+     (nativo) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+
+-   En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:
+
      (nativo) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

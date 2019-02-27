@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 482c5f7bd0565c3b6ece124c88bd5e225b4cc7dd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318529"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613276"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 Designa los tipos de código thunk.
@@ -39,26 +39,19 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Elementos
-THUNK_ORDINAL_NOTYPE  
-Thunk estándar.
+Thunk THUNK_ORDINAL_NOTYPE estándar.
 
-THUNK_ORDINAL_ADJUSTOR  
-Un `this` código thunk ajustador.
+Un THUNK_ORDINAL_ADJUSTOR `this` código thunk ajustador.
 
-THUNK_ORDINAL_VCALL  
-Código thunk de llamada virtual.
+THUNK_ORDINAL_VCALL Virtual código thunk de llamada.
 
-THUNK_ORDINAL_PCODE  
-Código thunk de código.
+Código thunk de código empaquetado THUNK_ORDINAL_PCODE.
 
-THUNK_ORDINAL_LOAD  
-Código thunk de carga de retraso.
+Código thunk de carga de retraso THUNK_ORDINAL_LOAD.
 
-THUNK_ORDINAL_TRAMP_INCREMENTAL  
-Código thunk de cama elástica incremental (un código thunk de cama elástica se usa para hacer rebotar la llamadas desde el espacio de memoria de uno a otro).
+THUNK_ORDINAL_TRAMP_INCREMENTAL Incremental código thunk de cama elástica (un código thunk de cama elástica se usa para hacer rebotar la llamadas desde el espacio de memoria de uno a otro).
 
-THUNK_ORDINAL_TRAMP_BRANCHISLAND  
-Código thunk cama elástica de punto de bifurcación.
+Código thunk de rama THUNK_ORDINAL_TRAMP_BRANCHISLAND punto cama elástica.
 
 ## <a name="remarks"></a>Comentarios
 Los valores de esta enumeración se devuelven en una llamada a la [Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) método.
@@ -67,5 +60,5 @@ Los valores de esta enumeración se devuelven en una llamada a la [Get_thunkordi
 Encabezado: cvconst.h
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
+- [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

@@ -18,26 +18,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47d51566074eec4c38bab1bd7846b1dfe0f034d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fa8bb0fb7672c177d0543a06fe423ca1d115514
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027833"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693131"
 ---
 # <a name="debugging-web-applications"></a>Depurar aplicaciones web
-En esta sección se explica cómo depurar varios tipos de aplicaciones web.  
-  
-## <a name="in-this-section"></a>En esta sección   
- [Depuración de scripts del lado cliente](../debugger/client-side-script-debugging.md)  
- Se abordan los scripts de prueba y de cliente de las páginas [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
-  
-## <a name="related-sections"></a>Secciones relacionadas  
- [Depuración de aplicaciones de ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
- Se describen los pasos necesarios para habilitar la depuración de las aplicaciones [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
-  
-## <a name="see-also"></a>Vea también  
- [Depurar script y aplicaciones web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
- [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)  
- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)  
- [Depurar en Visual Studio](../debugger/index.md)
+En esta sección se explica cómo depurar varios tipos de aplicaciones web.
+
+## <a name="in-this-section"></a>En esta sección
+ [Depuración de scripts del lado cliente](../debugger/client-side-script-debugging.md) explica probar secuencias de comandos y scripts de cliente en [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] páginas.
+
+## <a name="related-sections"></a>Secciones relacionadas
+ [Depurar aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md) se describen los pasos necesarios para habilitar la depuración de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicaciones.
+
+## <a name="see-also"></a>Vea también
+- [Depurar script y aplicaciones web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)
+- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
+- [Depurar en Visual Studio](../debugger/index.md)

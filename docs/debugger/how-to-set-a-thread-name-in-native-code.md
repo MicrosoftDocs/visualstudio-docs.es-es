@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c547dd00f7a5a31b949d22c13f305050355207c7
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 264ac57a0d159b9cdd2627d7a62372fa070e31de
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227321"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715185"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Cómo: Establecer un nombre de subproceso en código nativo
 La denominación de los subprocesos es posible en cualquier edición de Visual Studio. Denominación de los subprocesos es útil para identificar los subprocesos de interés en el **subprocesos** ventana cuando se depura un proceso en ejecución. Denominado reconozca los subprocesos también pueden ser útil al realizar la depuración post-mortem a través de la inspección de volcado de bloqueo y al analizar el rendimiento de captura mediante distintas herramientas.
@@ -109,6 +109,6 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ```
 
 ## <a name="see-also"></a>Vea también
-[Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)  
-[Cómo: Establecer un nombre de subproceso en código administrado](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+- [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)
+- [Cómo: Establecer un nombre de subproceso en código administrado](../debugger/how-to-set-a-thread-name-in-managed-code.md)

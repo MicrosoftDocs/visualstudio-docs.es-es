@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027391"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683602"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Inicio rápido: Depurar ASP.NET con el depurador de Visual Studio
 
 El depurador de Visual Studio proporciona muchas características de gran eficacia para ayudar a depurar aplicaciones. En este tema se proporciona una forma rápida de obtener información sobre las características básicas.
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo 
+## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
 1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
 
@@ -110,7 +110,7 @@ Los comandos de teclado habituales usados para ejecutar el código paso a paso s
 
     ![Visualización de información sobre datos](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    La información sobre datos muestra el valor actual de la variable `c2` y permite inspeccionar sus propiedades. Al depurar, si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o de llamada. 
+    La información sobre datos muestra el valor actual de la variable `c2` y permite inspeccionar sus propiedades. Al depurar, si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o de llamada.
 
 2. Expanda la información sobre datos para ver los valores de propiedad actuales del objeto `c2`.
 

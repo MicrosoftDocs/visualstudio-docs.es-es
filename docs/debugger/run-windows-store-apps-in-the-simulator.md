@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 36e5d5285f59170afaa22338829d186e7eb3e2e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 628683ae87bc53d59a61e13d3c21d45bfa4eee79
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949810"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710544"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Ejecutar aplicaciones para UWP en el simulador
 El simulador de Visual Studio para aplicaciones UWP es una aplicación de escritorio que simula una aplicación para UWP. Normalmente, desea depurar en el equipo local, un dispositivo conectado o un equipo remoto. Sin embargo, en algunos escenarios, es posible que desee usar el simulador de Visual Studio para emular un tamaño de pantalla física diferente y la resolución. También puede simular eventos comunes táctiles y rotaciones y simular las propiedades de conexión de red.
@@ -107,7 +107,7 @@ El simulador de Visual Studio para aplicaciones UWP es una aplicación de escrit
      ![Menú de contexto de configuración de captura de pantalla](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")
 
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simular propiedades de conexión de red
- Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en itinerancia o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) le permiten responder a los eventos [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) y [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) que firman. (Vea [Inicio rápido: Administrar las restricciones de costo de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+ Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en itinerancia o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) le permiten responder a los eventos [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) y [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) que firman. Vea [Inicio rápido: administrar los límites de costos de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
 
  Para depurar o probar el código con reconocimiento de costos de red, el simulador puede imitar las propiedades de una red que se exponen a través del objeto [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) devuelto por [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
 
@@ -131,7 +131,7 @@ El simulador de Visual Studio para aplicaciones UWP es una aplicación de escrit
 
    **Más información sobre la administración de conexiones de red**
 
-   [Inicio rápido: Administración de las restricciones de costo de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+   [Inicio rápido: administrar los límites de costos de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
    [Ejemplo de información de red](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
@@ -149,4 +149,4 @@ El simulador de Visual Studio para aplicaciones UWP es una aplicación de escrit
  Puede apagar el simulador presionando **CTRL + ALT + F4**.
 
 ## <a name="see-also"></a>Vea también
- [Ejecutar aplicaciones desde Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Ejecutar aplicaciones desde Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

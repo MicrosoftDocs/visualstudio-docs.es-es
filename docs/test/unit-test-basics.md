@@ -1,6 +1,6 @@
 ---
 title: Conceptos básicos de prueba unitaria
-ms.date: 2016-01-07
+ms.date: 01/07/2016
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d2da519bc51149051a3f2476fb6d3a7623bb39
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922360"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796834"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 

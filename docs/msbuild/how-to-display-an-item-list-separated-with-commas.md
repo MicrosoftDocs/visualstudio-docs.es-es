@@ -1,5 +1,5 @@
 ---
-title: Filtrar Mostrar una lista de elementos separados por comas | Microsoft Docs
+title: Procedimiento Mostrar una lista de elementos separados por comas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531bd7877a6bfc2f1300a7a397556c9e24d84654
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b01e39569207065fac9c28d093267348a829d73f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853435"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610468"
 ---
-# <a name="how-to-display-an-item-list-separated-with-commas"></a>Filtrar Mostrar una lista de elementos separados por comas
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>Procedimiento Mostrar una lista de elementos separados por comas
 Cuando se trabaja con listas de elementos en [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), a veces resulta útil mostrar el contenido de las listas de elementos de tal forma que sea fácil de leer. O puede que tenga una tarea que toma una lista de elementos separados con una cadena de separación especial. En ambos casos, puede especificar una cadena de separación para una lista de elementos.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Separar los elementos de una lista con comas
@@ -67,5 +67,5 @@ En este ejemplo, el comando de línea de comandos equivalente es:
 ```
 
 ## <a name="see-also"></a>Vea también
-[Referencia de MSBuild](../msbuild/msbuild-reference.md)  
-[Elementos](../msbuild/msbuild-items.md)
+- [Referencia de MSBuild](../msbuild/msbuild-reference.md)
+- [Elementos](../msbuild/msbuild-items.md)

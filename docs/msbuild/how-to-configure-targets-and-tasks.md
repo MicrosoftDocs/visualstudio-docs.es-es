@@ -1,5 +1,5 @@
 ---
-title: Filtrar Configurar destinos y tareas | Microsoft Docs
+title: Procedimiento Configurar destinos y tareas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4889c0d9c7342652063633e11c82e7e8eb6d2c6
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853708"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603236"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>Filtrar Configurar destinos y tareas
+# <a name="how-to-configure-targets-and-tasks"></a>Procedimiento Configurar destinos y tareas
 Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el entorno de destino, independientemente del entorno del equipo de desarrollo. Por ejemplo, cuando se utiliza un equipo de 64 bits para compilar una aplicación destinada a una arquitectura de 32 bits, las tareas seleccionadas se ejecutan en un proceso de 32 bits.
 
 > [!NOTE]
@@ -108,4 +108,4 @@ Los parámetros `MSBuildRuntime` y `MSBuildArchitecture` proporcionan la manera 
 > Los parámetros de tareas se evalúan en el contexto del nodo primario, no en el del host de tareas. Las variables de entorno dependientes del tiempo de ejecución o de la arquitectura (por ejemplo, la ubicación *Archivos de programa*) se evalúan como el valor que coincide con el nodo primario. Pero si la tarea lee directamente la misma variable de entorno, se evaluará correctamente en el contexto del host de la tarea.
 
 ## <a name="see-also"></a>Vea también
-[Configurar destinos y tareas](../msbuild/configuring-targets-and-tasks.md)
+- [Configurar destinos y tareas](../msbuild/configuring-targets-and-tasks.md)
