@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ebd50b42408dc7bd2642c257dece686245870f
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55485058"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622025"
 ---
 # <a name="getfilehash-task"></a>Tarea GetFileHash
 
@@ -65,6 +65,6 @@ En el ejemplo siguiente se usa la tarea `GetFileHash` para determinar e imprimir
 
 ## <a name="see-also"></a>Vea también
 
-[Tareas](../msbuild/msbuild-tasks.md)
+- [Tareas](../msbuild/msbuild-tasks.md)
 
-[Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)

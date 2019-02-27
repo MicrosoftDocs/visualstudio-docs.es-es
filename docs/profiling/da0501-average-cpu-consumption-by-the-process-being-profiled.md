@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7bd27ceb83105a9d790937b3a5fcb904adf3abd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f3b9ed2a0a27c3be992f6dadd2a6f18c1f8df9bd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983981"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598913"
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Promedio de consumo de CPU del proceso del que se está generando el perfil.
 
-|||  
-|-|-|  
-|Identificador de regla|DA501|  
-|Categoría|Supervisión de recursos|  
-|Método de generación de perfiles|Todas|  
-|Mensaje|Promedio de consumo de CPU del proceso del que se está generando el perfil.|  
-|Tipo de regla|Información|  
+|||
+|-|-|
+|Identificador de regla|DA501|
+|Categoría|Supervisión de recursos|
+|Método de generación de perfiles|Todas|
+|Mensaje|Promedio de consumo de CPU del proceso del que se está generando el perfil.|
+|Tipo de regla|Información|
 
- Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
+ Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.
 
-## <a name="rule-description"></a>Descripción de la regla  
- Este mensaje indica el porcentaje de tiempo que un procesador estuvo ocupado ejecutando instrucciones de la aplicación. El valor notificado es el promedio de todos los intervalos de medición en que estuvo activo el proceso del que se está generando el perfil. El valor puede ser mayor que el 100 % en un equipo con más de un procesador.  
+## <a name="rule-description"></a>Descripción de la regla
+ Este mensaje indica el porcentaje de tiempo que un procesador estuvo ocupado ejecutando instrucciones de la aplicación. El valor notificado es el promedio de todos los intervalos de medición en que estuvo activo el proceso del que se está generando el perfil. El valor puede ser mayor que el 100 % en un equipo con más de un procesador.
 
-## <a name="how-to-use-rule-data"></a>Cómo usar los datos de la regla  
+## <a name="how-to-use-rule-data"></a>Cómo usar los datos de la regla
  Utilice el valor de la regla para comparar el rendimiento de distintas versiones o compilaciones del programa o para entender el rendimiento de la aplicación en otros escenarios de prueba diferentes.

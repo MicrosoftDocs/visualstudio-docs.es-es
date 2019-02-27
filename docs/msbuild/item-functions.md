@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e62482df42581b60e4e7758806efd5c7d9300c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d01de837deb5141b4b0bdbb7bebcb50412826b1f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950518"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617163"
 ---
 # <a name="item-functions"></a>funciones de elementos
 A partir de MSBuild 4.0, el código de las tareas y de los destinos puede llamar a funciones de elementos para obtener información sobre los elementos del proyecto. Estas funciones simplifican la obtención de elementos Distinct() y son más rápidas que si se recorren en bucle los elementos.
@@ -100,4 +100,4 @@ En el ejemplo siguiente, se muestra cómo utilizar las funciones de elementos in
 ```
 
 ## <a name="see-also"></a>Vea también
-[Elementos](../msbuild/msbuild-items.md)
+- [Elementos](../msbuild/msbuild-items.md)

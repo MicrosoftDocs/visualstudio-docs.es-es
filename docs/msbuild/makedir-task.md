@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e7e9e61ffd20828d73cef9c4ce3831d613d69bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89bfc33aaf4b3f80ee6b80a93ad6b71dd3786599
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922230"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627069"
 ---
 # <a name="makedir-task"></a>MakeDir (tarea)
 Crea directorios y, si es preciso, cualquier directorio primario.
@@ -58,5 +58,5 @@ En el siguiente ejemplo de código se usa la tarea `MakeDir` para crear el direc
 ```
 
 ## <a name="see-also"></a>Vea también
-[Tareas](../msbuild/msbuild-tasks.md)  
-[Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)

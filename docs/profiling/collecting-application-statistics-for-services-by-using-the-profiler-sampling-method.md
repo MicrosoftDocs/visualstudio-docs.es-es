@@ -8,44 +8,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1de40418af63c3d5a963bd83a59c916c87251b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 32ebcb8c317d02ee4a55696f231d5c1b7ef7c06a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961590"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631164"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Recopilación de estadísticas de la aplicación para los servicios utilizando el método de muestreo del generador de perfiles
-En esta sección se describen los procedimientos y las opciones para recopilar estadísticas de rendimiento para servicios de Windows mediante el método de muestreo desde la línea de comandos.  
-  
-> [!NOTE]
->  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-  
-## <a name="common-tasks"></a>Tareas comunes  
-  
-|Tarea|Contenido relacionado|  
-|----------|---------------------|  
-|**Adjuntar el generador de perfiles a un servicio de .NET**|-   [Cómo: Asociar el generador de perfiles a un servicio .NET para recopilar estadísticas de aplicación](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
-|**Agregar datos de interacción de capas**|-   [Recopilación de datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Adjuntar el generador de perfiles a un servicio de C o C++**|-   [Cómo: Asociar el generador de perfiles a un servicio nativo para recopilar estadísticas de aplicación](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
-  
-## <a name="related-tasks"></a>Tareas relacionadas  
-  
-### <a name="profile-windows-services"></a>Generación de perfiles de servicios de Windows  
-  
-|Tarea|Contenido relacionado|  
-|----------|---------------------|  
-|**Generar perfiles mediante el método de instrumentación**|-   [Recopilación de datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
-|**Generar perfiles de recolección de elementos no utilizados y de asignación de memoria de .NET**|-   [Recopilación de datos de memoria de .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
-|**Generar perfiles de actividad de subprocesos y contención de recursos**|-   [Recopilación de datos de simultaneidad](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
-  
+En esta sección se describen los procedimientos y las opciones para recopilar estadísticas de rendimiento para servicios de Windows mediante el método de muestreo desde la línea de comandos.
 
-### <a name="profile-by-using-the-sampling-method"></a>Generar perfiles utilizando el método de muestreo  
-  
-|Tarea|Contenido relacionado|  
-|----------|---------------------|  
-|**Generar perfiles de aplicaciones independientes (cliente)**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|**Generar perfiles de aplicaciones web ASP.NET**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|  
-  
-### <a name="analyze-sampling-data-views-and-reports"></a>Análisis de vistas e informes de datos de muestreo  
- [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)
+> [!NOTE]
+>  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+
+## <a name="common-tasks"></a>Tareas comunes
+
+|Tarea|Contenido relacionado|
+|----------|---------------------|
+|**Adjuntar el generador de perfiles a un servicio de .NET**|-   [Cómo: Asociar el generador de perfiles a un servicio .NET para recopilar estadísticas de aplicación](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|
+|**Agregar datos de interacción de capas**|-   [Recopilación de datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+|**Adjuntar el generador de perfiles a un servicio de C o C++**|-   [Cómo: Asociar el generador de perfiles a un servicio nativo para recopilar estadísticas de aplicación](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|
+
+## <a name="related-tasks"></a>Tareas relacionadas
+
+### <a name="profile-windows-services"></a>Generación de perfiles de servicios de Windows
+
+|Tarea|Contenido relacionado|
+|----------|---------------------|
+|**Generar perfiles mediante el método de instrumentación**|-   [Recopilación de datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
+|**Generar perfiles de recolección de elementos no utilizados y de asignación de memoria de .NET**|-   [Recopilación de datos de memoria de .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
+|**Generar perfiles de actividad de subprocesos y contención de recursos**|-   [Recopilación de datos de simultaneidad](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
+
+
+### <a name="profile-by-using-the-sampling-method"></a>Generar perfiles utilizando el método de muestreo
+
+|Tarea|Contenido relacionado|
+|----------|---------------------|
+|**Generar perfiles de aplicaciones independientes (cliente)**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
+|**Generar perfiles de aplicaciones web ASP.NET**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
+
+### <a name="analyze-sampling-data-views-and-reports"></a>Análisis de vistas e informes de datos de muestreo
+- [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)

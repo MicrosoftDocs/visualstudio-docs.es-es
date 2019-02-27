@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ca5cc1806aa1b53a3646c1b67320037ed56983
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 604c68ef82f66358238f94b43f000fae24a076f1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227295"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616838"
 ---
 # <a name="idiatable"></a>IDiaTable
 Enumera una tabla de origen de datos DIA.
@@ -138,7 +138,7 @@ Biblioteca: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Vea también
-[Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)  
-[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)  
-[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)
+- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)
+- [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)

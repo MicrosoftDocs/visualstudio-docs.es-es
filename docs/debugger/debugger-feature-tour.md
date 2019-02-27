@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042067"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696745"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -27,7 +27,7 @@ Las características que se explican aquí son aplicables a C#, C++, Visual Basi
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Establecer un punto de interrupción e iniciar el depurador
 
-Para depurar, tiene que iniciar la aplicación con el depurador asociado al proceso de la aplicación. **F5** (**Depurar > Iniciar depuración**) es la forma más habitual de hacerlo. Pero de momento es posible que no haya establecido ningún punto de interrupción para examinar el código de la aplicación, por lo que eso es lo que se va a hacer primero y luego se va a iniciar la depuración. Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código. 
+Para depurar, tiene que iniciar la aplicación con el depurador asociado al proceso de la aplicación. **F5** (**Depurar > Iniciar depuración**) es la forma más habitual de hacerlo. Pero de momento es posible que no haya establecido ningún punto de interrupción para examinar el código de la aplicación, por lo que eso es lo que se va a hacer primero y luego se va a iniciar la depuración. Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código.
 
 Si tiene un archivo abierto en el editor de código, puede establecer un punto de interrupción si hace clic en el margen situado a la izquierda de una línea de código.
 

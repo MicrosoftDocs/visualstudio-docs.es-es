@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36fadcdabe80e7f74662a8d157bae88f68e09670
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc5ac9b3892ad9447f413df58d43791b1be1720a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969228"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626484"
 ---
 # <a name="idiatablegetname"></a>IDiaTable::get_name
-Recupera el nombre de la tabla.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_name (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Devuelve el nombre de la tabla.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+Recupera el nombre de la tabla.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_name ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Devuelve el nombre de la tabla.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

@@ -4,19 +4,19 @@ description: Describe cómo configurar la integración continua de Azure DevOps 
 author: mlearned
 manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
-ms.service: azure-resource-manager
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: bbe4fc4f59527b73b46d95f70541202f87ffab4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c91b52d10e3692be600bdee3a0e2dd60182f0668
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55140944"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841797"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Integración continua de Azure DevOps Services con proyectos del grupo de recursos de Azure
+
 Para implementar una plantilla de Azure, es necesario realizar tareas en varias fases: compilación, prueba, copia en Azure (también denominado "almacenamiento provisional") e implementación de plantilla. Hay dos maneras distintas de implementar plantillas en Azure DevOps Services. Ambos métodos proporcionan los mismos resultados, así que puede elegir el que mejor se adapte a su flujo de trabajo.
 
 1. Agregue un paso único a la canalización de compilación que ejecuta el script de PowerShell incluido en el proyecto de implementación del grupo de recursos de Azure (Deploy-AzureResourceGroup.ps1). El script copia los artefactos y, a continuación, implementa la plantilla.

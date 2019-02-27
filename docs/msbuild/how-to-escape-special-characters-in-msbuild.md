@@ -1,5 +1,5 @@
 ---
-title: Filtrar Usar caracteres de escape especiales en MSBuild | Microsoft Docs
+title: Procedimiento Usar caracteres de escape especiales en MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 752f4c6535f498b074d2c85b4b7cb6e9870ea862
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 983e10f26e6fd1d8b4b7ff18c73edd65cb4810f4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853945"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634635"
 ---
-# <a name="how-to-escape-special-characters-in-msbuild"></a>Filtrar Usar caracteres de escape especiales en MSBuild
+# <a name="how-to-escape-special-characters-in-msbuild"></a>Procedimiento Usar caracteres de escape especiales en MSBuild
 
 Ciertos caracteres tienen un significado especial en archivos del proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Algunos ejemplos de estos caracteres son los signos de punto y coma (`;`) y los asteriscos (`*`). Para obtener una lista completa de estos caracteres especiales, vea [Caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md).
 
@@ -51,6 +51,6 @@ También puede usar una [función de propiedad](../msbuild/property-functions.md
 Utilice la notación `%<xx>` en lugar del carácter especial, donde `<xx>` representa el valor hexadecimal del carácter ASCII. Por ejemplo, para usar un asterisco (`*`) como un carácter literal, utilice el valor `%2A`.
 
 ## <a name="see-also"></a>Vea también
-[Conceptos de MSBuild](../msbuild/msbuild-concepts.md)  
-[MSBuild](../msbuild/msbuild.md)  
-[Elementos](../msbuild/msbuild-items.md)
+- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Elementos](../msbuild/msbuild-items.md)

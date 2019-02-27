@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922126"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645490"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opciones, editor de texto, C/C++, formato
 
@@ -42,7 +42,7 @@ Esta página tiene opciones para dar formato a las instrucciones y las bloquea a
 
 ### <a name="configuring-clangformat-options"></a>Configurar las opciones de ClangFormat
 
-En Visual Studio 2017 versión 15.7 y versiones posteriores, la compatibilidad con ClangFormat está habilitada de forma predeterminada. Puede elegir cuál de estas convenciones de formato comunes quiere aplicar a todos los proyectos: LLVM, Google, Chromium, Mozilla o WebKit. También puede crear un archivo de formato .clang o _clang de definición de formato personalizado. Si este archivo está presente en una carpeta de proyecto, Visual Studio lo usará para dar formato a todos los archivos de código fuente en esa carpeta y en sus subcarpetas. 
+En Visual Studio 2017 versión 15.7 y versiones posteriores, la compatibilidad con ClangFormat está habilitada de forma predeterminada. Puede elegir cuál de estas convenciones de formato comunes quiere aplicar a todos los proyectos: LLVM, Google, Chromium, Mozilla o WebKit. También puede crear un archivo de formato .clang o _clang de definición de formato personalizado. Si este archivo está presente en una carpeta de proyecto, Visual Studio lo usará para dar formato a todos los archivos de código fuente en esa carpeta y en sus subcarpetas.
 
 De forma predeterminada, Visual Studio ejecuta clangformat.exe en segundo plano y aplica formato a medida que escribe. También puede especificar que solo se ejecute manualmente en los comandos de formato invocados manualmente **Dar formato al documento (Ctrl+K, Ctrl+D)** o **Dar formato a la selección (Ctrl+K, Ctrl+F)**.
 

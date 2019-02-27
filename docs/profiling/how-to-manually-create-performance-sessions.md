@@ -14,28 +14,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e283128d17d088ed9d90597ccde24bcb22470b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: becf63a9945c8e12f3c306da757e288a3fe8134c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035619"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645230"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Procedimiento Crear manualmente sesiones de rendimiento
-Puede crear manualmente una sesión de rendimiento. No es necesario abrir un proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para ello. Para obtener más información, vea [Configuración sesiones de rendimiento](../profiling/configuring-performance-sessions.md).  
-  
-### <a name="to-manually-create-a-performance-session"></a>Para crear manualmente una sesión de rendimiento  
-  
-1.  En el menú **Depurar**, vaya a **Generador de perfiles**, a **Explorador de rendimiento** y después haga clic en **Nueva sesión de rendimiento**.  
-  
-     Se agrega una sesión de rendimiento vacía al **Explorador de rendimiento**.  
-  
-2.  Haga clic con el botón derecho en **Destinos** y después haga clic en **Agregar binario de destino**.  
-  
-3.  En el cuadro de diálogo **Agregar binario de destino**, seleccione el nombre de archivo y después haga clic en **Abrir**.  
-  
-     Se agrega un nuevo binario.  
-  
-## <a name="see-also"></a>Vea también  
- [Explorador de rendimiento](../profiling/performance-explorer.md)   
- [Introducción](../profiling/getting-started-with-performance-tools.md)
+Puede crear manualmente una sesión de rendimiento. No es necesario abrir un proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para ello. Para obtener más información, vea [Configuración sesiones de rendimiento](../profiling/configuring-performance-sessions.md).
+
+### <a name="to-manually-create-a-performance-session"></a>Para crear manualmente una sesión de rendimiento
+
+1.  En el menú **Depurar**, vaya a **Generador de perfiles**, a **Explorador de rendimiento** y después haga clic en **Nueva sesión de rendimiento**.
+
+     Se agrega una sesión de rendimiento vacía al **Explorador de rendimiento**.
+
+2.  Haga clic con el botón derecho en **Destinos** y después haga clic en **Agregar binario de destino**.
+
+3.  En el cuadro de diálogo **Agregar binario de destino**, seleccione el nombre de archivo y después haga clic en **Abrir**.
+
+     Se agrega un nuevo binario.
+
+## <a name="see-also"></a>Vea también
+- [Explorador de rendimiento](../profiling/performance-explorer.md)
+- [Introducción](../profiling/getting-started-with-performance-tools.md)

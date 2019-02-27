@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b96dff857d49f12ffaa10e22c9189eb3a1d5b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925454"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638751"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrar en un entorno de varios procesadores
 La capacidad de MSBuild para usar varios procesadores puede reducir significativamente el tiempo de compilación de los proyectos, pero también agrega complejidad al proceso de registro. En un entorno de un solo procesador, el registrador puede administrar eventos de entrada, mensajes, advertencias y errores de una manera predecible y secuencial. Sin embargo, en un entorno de varios procesadores, los eventos de varios orígenes pueden llegar simultáneamente o desordenados. MSBuild dispone de un nuevo registrador para varios procesadores y habilita la creación de "registradores de reenvío" personalizados.
@@ -71,5 +71,5 @@ Culture=neutral
 Un asterisco (*) separa los dos nombres de registrador en el modificador `-dl`.
 
 ## <a name="see-also"></a>Vea también
-[Registradores de compilación](../msbuild/build-loggers.md)  
-[Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md)
+- [Registradores de compilación](../msbuild/build-loggers.md)
+- [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md)

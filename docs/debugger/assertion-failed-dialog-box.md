@@ -20,21 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942abb66e56e72cbe462f35944a9e4e03d471052
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39362adf5837e3293782df04627af9acd06fdd88
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941819"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619854"
 ---
 # <a name="assertion-failed-dialog-box"></a>Error de aserción (cuadro de diálogo)
-Una instrucción de aserción especifica una condición que se espera que sea cierta (valor true) en un determinado punto del programa. Si la condición no es cierta, la aserción produce un error, la ejecución del programa se interrumpe y aparece este cuadro de diálogo.  
-  
-|Clic|En|  
-|-----------|--------|  
-|Reintentar|Depurar la aserción u obtener ayuda sobre aserciones.|  
-|Ignore|Omitir la aserción y seguir ejecutando el programa.|  
-|Abort|Detener la ejecución del programa y finalizar la sesión de depuración.|  
-  
-## <a name="see-also"></a>Vea también  
- [Aserciones de C/C++](../debugger/c-cpp-assertions.md)
+Una instrucción de aserción especifica una condición que se espera que sea cierta (valor true) en un determinado punto del programa. Si la condición no es cierta, la aserción produce un error, la ejecución del programa se interrumpe y aparece este cuadro de diálogo.
+
+|Haga clic|En|
+|-----------|--------|
+|Reintentar|Depurar la aserción u obtener ayuda sobre aserciones.|
+|Ignore|Omitir la aserción y seguir ejecutando el programa.|
+|Abort|Detener la ejecución del programa y finalizar la sesión de depuración.|
+
+## <a name="see-also"></a>Vea también
+
+- [Aserciones de C/C++](../debugger/c-cpp-assertions.md)

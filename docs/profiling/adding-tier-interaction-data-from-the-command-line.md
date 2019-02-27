@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e6af91a542c105704a7237d5cd1dcbf8efa2a7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b04b2d2c3c23b444d011d81002f7f22a12b1ebf0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015815"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638548"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
 
@@ -61,7 +61,7 @@ En el ejemplo siguiente, se generan perfiles para una aplicación de escritorio 
 3. Inicie el generador de perfiles. Escriba el comando siguiente:
 
     ```cmd
-    vsperfcmd /start:trace /output:Desktop_tip.vsp 
+    vsperfcmd /start:trace /output:Desktop_tip.vsp
     ```
 
 4. Inicie la aplicación con VSPerfCmd. Escriba el comando siguiente:
@@ -113,7 +113,7 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 7. Inicie el generador de perfiles. Escriba el comando siguiente:
 
     ```cmd
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
+    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession
     ```
 
 8. Si es necesario, inicie el servicio.
@@ -121,7 +121,7 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 9. Adjunte el generador de perfiles al servicio. Escriba el comando siguiente:
 
     ```cmd
-    vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
+    vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession
     ```
 
 10. Ejecute el servicio y recopile datos de generación de perfiles.
