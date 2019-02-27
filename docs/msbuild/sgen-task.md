@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1d3b504f5987eca850cb2cbd73223c5c115fcde
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 548943b9d203cf84773385f6b12d70dcb246b708
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948224"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607361"
 ---
 # <a name="sgen-task"></a>SGen (tarea)
-Crea un ensamblado de serialización XML para los tipos del ensamblado especificado. Esta tarea ajusta la herramienta Generador de serializador XML (*Sgen.exe*). Para más información, consulte [Herramienta Generador de serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
+Crea un ensamblado de serialización XML para los tipos del ensamblado especificado. Esta tarea ajusta la herramienta Generador de serializador XML (*Sgen.exe*). Para más información, consulte [Herramienta Generador de serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
-## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `SGen` .  
+## <a name="parameters"></a>Parámetros
+ En la siguiente tabla se describen los parámetros de la tarea `SGen` .
 
 
 | Parámetro | Descripción |
@@ -50,10 +50,10 @@ Crea un ensamblado de serialización XML para los tipos del ensamblado especific
 | `Types` | Parámetro `String[]` opcional.<br /><br /> Obtiene o establece una lista de tipos específicos para los que generar código de serialización. SGen generará el código de serialización solo para esos tipos. |
 | `UseProxyTypes` | Parámetro `Boolean` requerido.<br /><br /> Si es `true`, la tarea SGen genera código de serialización únicamente para los tipos de proxy de servicios web XML. |
 
-## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [ToolTaskExtension (Clase base)](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Comentarios
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [ToolTaskExtension (Clase base)](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="see-also"></a>Vea también  
- [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
- [Tareas](../msbuild/msbuild-tasks.md)   
- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Vea también
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)

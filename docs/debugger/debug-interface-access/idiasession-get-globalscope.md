@@ -12,32 +12,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b880c154c8b0f096dc0c22cd252054a06a770632
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b68a2a7105fba7bfb6f1240c6eec8c6ae497bed6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981810"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612938"
 ---
 # <a name="idiasessiongetglobalscope"></a>IDiaSession::get_globalScope
-Recupera una referencia al ámbito global.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_globalScope (   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el ámbito global.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [Exe](../../debugger/debug-interface-access/exe.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera una referencia al ámbito global.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_globalScope ( 
+   IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el ámbito global.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [Exe](../../debugger/debug-interface-access/exe.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

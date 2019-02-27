@@ -10,33 +10,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a8f3c19559f5c2b267410d22fd30f32dca7a02
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0d6332be7049d575b15c229b5892112fc972895
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947106"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719774"
 ---
 # <a name="window-menu-commands"></a>Comandos del menú Ventana
-El **ventana** menú proporciona comandos para administrar ventanas de Spy ++.  
-  
- **Cascade**  
- Reorganiza todas las ventanas en cascada.  
-  
- **Mosaico horizontal**  
- Reorganice todas las ventanas en un patrón de mosaico horizontal.  
-  
- **Mosaico vertical**  
- Reorganiza todas las ventanas en un patrón de mosaico vertical.  
-  
- **Organizar iconos**  
- Reorganiza los iconos de la vista, si windows se han minimizado.  
-  
- **Cerrar Cerrar todo**  
- Cierra una o todas las ventanas de Spy ++.  
-  
- **Actualizar**  
- Actualiza la vista seleccionada actualmente.  
-  
- **Ventana**  
- Permite la selección de una ventana específica.
+El **ventana** menú proporciona comandos para administrar ventanas de Spy ++.
+
+ **CASCADE** Reorganiza todas las ventanas en cascada.
+
+ **Mosaico horizontal** reorganizar todas las ventanas en un patrón de mosaico horizontal.
+
+ **Mosaico vertical** Reorganiza todas las ventanas en un patrón de mosaico vertical.
+
+ **Organizar iconos** reorganiza los iconos de la vista, si windows se han minimizado.
+
+ **Cerrar / Cerrar todo** cierra una o todas las ventanas de Spy ++.
+
+ **Actualizar** actualiza la vista seleccionada actualmente.
+
+ **Ventana** permite la selección de una ventana específica.

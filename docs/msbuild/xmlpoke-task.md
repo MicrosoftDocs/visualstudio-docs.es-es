@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 691a9ddbba4291bb6b54d15c9b60e6339b2548b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963793"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626692"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke (tarea)
 
@@ -30,7 +30,7 @@ Establece los valores especificados por una consulta XPath en un archivo XML.
 ## <a name="parameters"></a>Parámetros
 
  En la siguiente tabla se describen los parámetros de la tarea `XmlPoke` .
-  
+
 |Parámetro|Descripción|
 |---------------|-----------------|
 |`Namespaces`|Parámetro `String` opcional.<br /><br /> Especifica los espacios de nombres para los prefijos de la consulta XPath. `Namespaces` es un fragmento XML que consta de elementos `Namespace` con los atributos `Prefix` y `Uri`. El atributo `Prefix` especifica el prefijo para asociar con el espacio de nombres especificado en el atributo `Uri`. No use un valor `Prefix` vacío.|
@@ -81,5 +81,5 @@ En este ejemplo, si quiere modificar `/Package/mp:PhoneIdentity/PhonePublisherId
 
 ## <a name="see-also"></a>Vea también
 
- [Tareas](../msbuild/msbuild-tasks.md)   
- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)

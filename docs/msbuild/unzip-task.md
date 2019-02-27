@@ -22,36 +22,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883595eb6cd7565250de216bcae23eba86bf5074
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f570009ad937e955853a616987a08583f2ba2237
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937028"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632412"
 ---
 # <a name="unzip-task"></a>Tarea Unzip
 Descomprime un archivo *.zip* en la ubicación especificada.
 
 >[!NOTE]
 >La tarea `Unzip` solo está disponible en MSBuild 15.8 y versiones posteriores.
-  
-## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `Unzip` .  
-  
-|Parámetro|Descripción|  
-|---------------|-----------------|  
+
+## <a name="parameters"></a>Parámetros
+ En la siguiente tabla se describen los parámetros de la tarea `Unzip` .
+
+|Parámetro|Descripción|
+|---------------|-----------------|
 |`DestinationFolder`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido<br /><br /> Especifica la carpeta de destino en la que se va a descomprimir el archivo.|
 |`OverwriteReadOnlyFiles`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, sobrescribe los archivos de solo lectura. Tiene como valor predeterminado `false`.|
 |`SkipUnchangedFiles`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, omite la descompresión de archivos sin cambios. Tiene como valor predeterminado `true`. La tarea `Unzip` considera que los archivos están sin modificar si tienen el mismo tamaño y la misma hora de última modificación.|
 |`SourceFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica uno o varios de los archivos para descomprimir. Cuando se especifican varios archivos, se descomprimen en orden en la misma carpeta.|
-  
-## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Ejemplo  
+
+## <a name="remarks"></a>Comentarios
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Ejemplo
  En el siguiente ejemplo se descomprime un archivo y se sobrescriben los archivos de solo lectura.
-  
-```xml  
+
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <Target Name="UnzipArchive" BeforeTargets="Build">
@@ -64,7 +64,7 @@ Descomprime un archivo *.zip* en la ubicación especificada.
 
 </Project>
 ```
-  
-## <a name="see-also"></a>Vea también  
- [Tareas](../msbuild/msbuild-tasks.md)   
- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+
+## <a name="see-also"></a>Vea también
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)

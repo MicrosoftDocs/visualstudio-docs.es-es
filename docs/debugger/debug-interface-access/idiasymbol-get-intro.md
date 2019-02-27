@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020d631405586227d91fd06fb1794ab5554d1075
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226916"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613588"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 Recupera una marca que especifica si la función es una función virtual de presentación.
@@ -31,7 +31,8 @@ HRESULT get_intro ( 
 ```
 
 #### <a name="parameters"></a>Parámetros
-`pRetVal`  
+`pRetVal`
+
 [out] Devuelve `TRUE` en caso contrario, devuelve si la función es virtual; Introducción `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
@@ -61,4 +62,4 @@ Ambos `A::f1` y `B::f1` son funciones virtuales, pero `A::f1` es virtual Introdu
 |Versión:|SDK de DIA v7.0|
 
 ## <a name="see-also"></a>Vea también
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

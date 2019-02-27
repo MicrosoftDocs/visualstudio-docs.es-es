@@ -1,14 +1,9 @@
 ---
 title: Etiqueta redefinida | Documentos de Microsoft
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1025
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aff2415c08718e8b4ee82f817de337c9cda80f4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 58e313b1e47c033589e0a53c11f769cbca893047
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347819"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843343"
 ---
 # <a name="label-redefined"></a>Etiqueta redefinida
 Crea una nueva etiqueta, pero se le asignó el nombre de una etiqueta existente. Etiquetas se pueden usar para marcar los bloques de código, pero en un ámbito especificado, debe ser únicos.  

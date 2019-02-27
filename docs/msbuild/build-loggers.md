@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8ef9aa27638c01b0b941284b6c5a0fff442c4c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c5bb6bbd3d05c22b7615a027ac3fcf6aa686156
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853526"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602486"
 ---
 # <a name="build-loggers"></a>Registradores de compilación
 Los registradores proporcionan un método para personalizar el resultado de la compilación y de mostrar mensajes, errores o advertencias en respuesta a eventos de compilación específicos. Cada registrador se implementa como una clase .NET que implementa la interfaz <xref:Microsoft.Build.Framework.ILogger>, que se define en el ensamblado *Microsoft.Build.Framework.dll*.
@@ -25,8 +25,8 @@ Los registradores proporcionan un método para personalizar el resultado de la c
 Existen dos métodos que se pueden utilizar al implementar un registrador:
 
 - Implementar la interfaz <xref:Microsoft.Build.Framework.ILogger> directamente.
-- Derivar la clase de la clase del asistente, <xref:Microsoft.Build.Utilities.Logger>, que se define en el ensamblado *Microsoft.Build.Utilities.dll*. <xref:Microsoft.Build.Utilities.Logger> implementa <xref:Microsoft.Build.Framework.ILogger> y proporciona implementaciones predeterminadas de algunos miembros <xref:Microsoft.Build.Framework.ILogger>.  
-  
+- Derivar la clase de la clase del asistente, <xref:Microsoft.Build.Utilities.Logger>, que se define en el ensamblado *Microsoft.Build.Utilities.dll*. <xref:Microsoft.Build.Utilities.Logger> implementa <xref:Microsoft.Build.Framework.ILogger> y proporciona implementaciones predeterminadas de algunos miembros <xref:Microsoft.Build.Framework.ILogger>.
+
   En este tema se explica cómo escribir un registrador simple que se deriva de <xref:Microsoft.Build.Utilities.Logger> y muestra mensajes en la consola en respuesta a ciertos eventos de compilación.
 
 ## <a name="register-for-events"></a>Registrarse en eventos
@@ -76,5 +76,5 @@ El ejemplo siguiente muestra cómo implementar un registrador que escribe el reg
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
 ## <a name="see-also"></a>Vea también
-[Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)  
-[Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
+- [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)

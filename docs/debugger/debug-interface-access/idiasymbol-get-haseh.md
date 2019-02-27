@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3834d1bfe9e15cf3dfc950e370440c3f15c5c28
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 475771d85a408238539a6faa0d8ce1eab6ec273c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002197"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617553"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
-Recupera una marca que especifica si la función contiene cualquier control de excepciones de estilo de C++ no administrado (por ejemplo, un bloque try/catch).  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_hasEH(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pFlag`  
- [out] Devuelve `TRUE` si la función no tiene ningún control de excepciones de C++ estilo; en caso contrario, devuelve `FALSE`.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
-  
+Recupera una marca que especifica si la función contiene cualquier control de excepciones de estilo de C++ no administrado (por ejemplo, un bloque try/catch).
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_hasEH(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pFlag`
+
+[out] Devuelve `TRUE` si la función no tiene ningún control de excepciones de C++ estilo; en caso contrario, devuelve `FALSE`.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.
+
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
-  
-## <a name="requirements"></a>Requisitos  
-  
-|Requisito|Descripción|  
-|-----------------|-----------------|  
-|Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v8.0|  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+
+## <a name="requirements"></a>Requisitos
+
+|Requisito|Descripción|
+|-----------------|-----------------|
+|Encabezado:|dia2.h|
+|Versión:|SDK de DIA v8.0|
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

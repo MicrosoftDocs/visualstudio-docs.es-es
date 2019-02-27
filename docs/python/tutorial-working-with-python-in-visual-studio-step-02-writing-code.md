@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918109"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843096"
 ---
 # <a name="step-2-write-and-run-code"></a>Paso 2: Escritura y ejecución de código
 
@@ -53,7 +53,7 @@ Aunque el **Explorador de soluciones** es donde se administran los archivos del 
 
     ![Resultado de la primera ejecución del programa](media/vs-getting-started-python-07-output.png)
 
-1. Además de finalizaciones para instrucciones y funciones, IntelliSense ofrece finalizaciones para las instrucciones `import` y `from` de Python. Estas finalizaciones le ayudan a detectar fácilmente qué módulos están disponibles en su entorno y los miembros de esos módulos. En el editor, elimine la línea `print` y comience a escribir `import `. Cuando se escribe el espacio, aparece una lista de módulos:
+1. Además de finalizaciones para instrucciones y funciones, IntelliSense ofrece finalizaciones para las instrucciones `import` y `from` de Python. Estas finalizaciones le ayudan a detectar fácilmente qué módulos están disponibles en su entorno y los miembros de esos módulos. En el editor, elimine la línea `print` y comience a escribir `import`. Cuando se escribe el espacio, aparece una lista de módulos:
 
     ![IntellSense muestra los módulos disponibles para una instrucción import](media/vs-getting-started-python-08-import1.png)
 

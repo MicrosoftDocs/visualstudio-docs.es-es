@@ -1,14 +1,9 @@
 ---
 title: No puede tener 'continue' fuera del bucle | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1020
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 9b0356e524228e22def9b17dd134e3e011185203
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348560"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841109"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>'continue' no puede estar fuera del bucle
 Se intentó utilizar el **continuar** instrucción fuera de un bucle. El **continuar** se puede usar la instrucción solo dentro del cuerpo de r:  

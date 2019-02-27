@@ -8,15 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: c6585eed1cfc6c4d9b57d6f6c66a8e4e2e93c5a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26668247bf993da3eb3f2803abaf9288e566ffee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920383"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842866"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Entrenar un modelo de TensorFlow localmente
 

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027242"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611079"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro de cambios (Visual Studio Tools para Unity, Mac)
 Registro de cambios de Visual Studio Tools para Unity.
@@ -34,11 +34,11 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   **Depurador:**
 
      -   Se ha corregido un interbloqueo en la biblioteca usada para comunicarse con el motor de depuración de Unity, que hacía que Visual Studio o Unity se congelara, especialmente al ejecutar 'Asociar a Unity' o reiniciar el juego.
-     
+
 -   **Integración:**
 
      -   Se ha corregido la activación de los complementos de Unity cuando se seleccionaba otro editor predeterminado.
-     
+
      -   Se ha corregido la creación de plantillas de archivo de Unity.
 
 ## <a name="1602"></a>1.6.0.2
@@ -49,7 +49,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   **Integración:**
 
      -   Se revirtió la solución a un error de rendimiento de Unity que se ha corregido en Unity.
-     
+
 ## <a name="1601"></a>1.6.0.1
  Publicado el 10 de julio de 2018
 
@@ -58,7 +58,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   **Integración:**
 
      -   Corrección de la compatibilidad con la coloración del sombreador.
-     
+
 ## <a name="1600"></a>1.6.0.0
  Publicado el 26 de junio de 2018
 
@@ -71,23 +71,23 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   **Generación de proyectos:**
 
      -   Solución alternativa temporal de un error de rendimiento de Unity: MonoIslands en caché al generar proyectos.
-     
+
      -   No convierta más archivos PDB portátiles a MDB con el nuevo entorno de ejecución de Unity.
-     
+
 ## <a name="1502"></a>1.5.0.2
  Publicado el 18 de abril de 2018
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Integración:**
 
     -   Se ha agregado la compatibilidad con la finalización del código básico del sombreador.
-    
+
     -   Se ha agregado la compatibilidad con la alternancia de comentarios en los archivos del sombreador.
 
 ## <a name="1501"></a>1.5.0.1
  Publicado el 28 de marzo de 2018
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Integración:**
@@ -96,7 +96,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1500"></a>1.5.0.0
  Publicado el 21 de marzo de 2018
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Integración:**
@@ -105,7 +105,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1403"></a>1.4.0.3
  Publicado el 5 de marzo de 2018
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Generación de proyectos:**
@@ -118,7 +118,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1402"></a>1.4.0.2
  Publicado el 24 de enero de 2018
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Generación de proyectos:**
@@ -133,7 +133,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1401"></a>1.4.0.1
  Publicado el 23 de enero de 2018
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Integración:**
@@ -142,7 +142,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1400"></a>1.4.0.0
  Publicado el 13 de diciembre de 2017
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Generación de proyectos:**
@@ -157,7 +157,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1301"></a>1.3.0.1
  Publicado el 12 de diciembre de 2017
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Integración:**
@@ -170,7 +170,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1300"></a>1.3.0.0
  Publicado el 20 de noviembre de 2017
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Asistentes:**
@@ -181,7 +181,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1200"></a>1.2.0.0
  Publicado el 23 de octubre de 2017
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Depurador:**
@@ -198,7 +198,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1103"></a>1.1.0.3
  Publicado el 23 de octubre de 2017
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Generación de proyectos:**
@@ -207,7 +207,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1102"></a>1.1.0.2
  Publicado el 8 de agosto de 2017
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Depurador:**
@@ -220,7 +220,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1101"></a>1.1.0.1
  Publicado el 20 de julio de 2017
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Integración:**
@@ -229,7 +229,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1100"></a>1.1.0.0
  Publicado el 12 de julio de 2017
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Integración:**
@@ -240,9 +240,9 @@ Registro de cambios de Visual Studio Tools para Unity.
 
     -   Se corrigieron las referencias al nombre de ensamblado con archivos mcs.rsp.
 
-    -   Se agregó compatibilidad con las unidades de compilación assembly.json.    
+    -   Se agregó compatibilidad con las unidades de compilación assembly.json.
 
-    -   Se corrigieron las definiciones con niveles de API.    
+    -   Se corrigieron las definiciones con niveles de API.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
@@ -252,7 +252,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="1001"></a>1.0.0.1
  Publicado el 4 de mayo de 2017
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Integración:**

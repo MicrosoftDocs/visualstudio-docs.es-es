@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe3e959f9e34dfbc757789a5461a920125eb10e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ff9aa4cdc2e3a406b21aeccf5538bcbfdd6b4249
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970327"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606321"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadatos de elementos en el procesamiento por lotes de destinos
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede realizar el análisis de dependencias de las entradas y las salidas de un destino de compilación. Si se determina que las entradas o las salidas del destino están actualizadas, el destino se omite y la compilación continúa. Los elementos `Target` usan los atributos `Inputs` y `Outputs` para especificar los elementos que se van a inspeccionar durante el análisis de dependencias.
@@ -66,7 +66,7 @@ El ejemplo siguiente contiene una lista de elementos denominada `Res` que se div
 ```
 
 ## <a name="see-also"></a>Vea también
-[Cómo: Compilar de forma incremental](../msbuild/how-to-build-incrementally.md)  
-[Procesamiento por lotes](../msbuild/msbuild-batching.md)  
-[Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Metadatos de elementos en el procesamiento por lotes de tareas](../msbuild/item-metadata-in-task-batching.md)
+- [Cómo: Compilar de forma incremental](../msbuild/how-to-build-incrementally.md)
+- [Procesamiento por lotes](../msbuild/msbuild-batching.md)
+- [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Metadatos de elementos en el procesamiento por lotes de tareas](../msbuild/item-metadata-in-task-batching.md)

@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8cbcbb562267f776b04aad8387e853bd1f58b5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aaae5621f3e371deb34506a9f0bd5cc64602c3f3
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764583"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841810"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -519,7 +519,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 2.  Seleccione un destino de emulador o un dispositivo adecuado y después presione la tecla F5 para iniciar la aplicación.
 
-3.  En el dispositivo o en el emulador, escriba un código postal de Estados Unidos válido en el cuadro de edición (por ejemplo: 60601) y presione **obtener tiempo**. Los datos meteorológicos de esa región aparecerán en los controles.
+3.  En el dispositivo o el emulador, escriba un código postal válido de los Estados Unidos en el cuadro de edición (por ejemplo, 60601) y presione **Obtener el tiempo**. Los datos meteorológicos de esa región aparecerán en los controles.
 
      ![Aplicación meteorológica para Android y Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +625,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 2.  Inicie la aplicación al presionar la tecla F5.
 
-3.  En el emulador de Windows Phone, escriba un código postal de Estados Unidos válido en el cuadro de edición (por ejemplo: 60601) y presione **obtener tiempo**. Los datos meteorológicos de esa región aparecerán en los controles.
+3.  En el emulador de Windows Phone, escriba un código postal válido de los Estados Unidos en el cuadro de edición (por ejemplo, 60601) y presione **Obtener el tiempo**. Los datos meteorológicos de esa región aparecerán en los controles.
 
      ![Versión de Windows de la aplicación en ejecución](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -644,4 +644,4 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
  El código compartido en una PCL es independiente de la plataforma, porque la PCL se compila una vez y se incluye en cada paquete de aplicaciones específico de la plataforma. Si quiere escribir código compartido que use la compilación condicional para aislar el código específico de la plataforma, puede usar un proyecto *compartido*. Para obtener más detalles, vea [Code Sharing Options](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Opciones de uso compartido de código) (xamarin.com).
 
 ## <a name="see-also"></a>Vea también
- [Desarrollo de Xamarin](http://developer.xamarin.com/) [centro de desarrollo de Windows](https://dev.windows.com/en-us) [Swift y C# Quick Reference Poster](http://aka.ms/scposter)
+ [Desarrollo de Xamarin](http://developer.xamarin.com/) [centro de desarrollo de Windows](https://dev.windows.com/en-us) [Swift y C# Quick Reference Poster](https://aka.ms/scposter)

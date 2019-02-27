@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f356dec92e1553eba0b8704f6d456b4d1fb4326f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6b893a40172bfd806130bef663da8676b513042
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916347"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636403"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
-Recupera la cadena de programa que se usa para calcular el conjunto antes de llamar a la función actual de registros.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_program (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Devuelve la cadena de programa.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- La cadena de programa es una secuencia de macros que se interpreta para establecer el prólogo. Por ejemplo, un marco de pila típica podría usar la cadena de programa `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. El formato es la notación de Polaco inverso, donde los operadores siguen los operandos. `T0` Representa una variable temporal en la pila. En este ejemplo realiza los pasos siguientes:  
-  
-1. Mover el contenido del registro `ebp` a `T0`.  
-  
-2. Agregar `4` al valor de `T0` para producir una dirección, obtener el valor de esa dirección y almacenar el valor de registro `eip`.  
-  
-3. Obtener el valor de la dirección almacenada en `T0` y almacenar ese valor en el registro `ebp`.  
-  
-4. Agregar `8` al valor de `T0` y almacenar ese valor en el registro `esp`.  
-  
-   Tenga en cuenta que la cadena de programa es específica para la CPU y la convención de llamada que se configure para la función representada por el marco de pila actual.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Recupera la cadena de programa que se usa para calcular el conjunto antes de llamar a la función actual de registros.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_program ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Devuelve la cadena de programa.
+
+## <a name="return-value"></a>Valor devuelto
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ La cadena de programa es una secuencia de macros que se interpreta para establecer el prólogo. Por ejemplo, un marco de pila típica podría usar la cadena de programa `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. El formato es la notación de Polaco inverso, donde los operadores siguen los operandos. `T0` Representa una variable temporal en la pila. En este ejemplo realiza los pasos siguientes:
+
+1. Mover el contenido del registro `ebp` a `T0`.
+
+2. Agregar `4` al valor de `T0` para producir una dirección, obtener el valor de esa dirección y almacenar el valor de registro `eip`.
+
+3. Obtener el valor de la dirección almacenada en `T0` y almacenar ese valor en el registro `ebp`.
+
+4. Agregar `8` al valor de `T0` y almacenar ese valor en el registro `esp`.
+
+   Tenga en cuenta que la cadena de programa es específica para la CPU y la convención de llamada que se configure para la función representada por el marco de pila actual.
+
+## <a name="see-also"></a>Vea también
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

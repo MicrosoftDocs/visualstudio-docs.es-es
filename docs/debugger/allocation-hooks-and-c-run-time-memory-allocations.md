@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f7f81abd82857b3d9ed2161a6923a79b614bf5a
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 1840f6f5650b3491cf7898c1d8d6a6fcae19f906
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742409"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682848"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Enlaces de asignación y asignaciones de memoria en tiempo de ejecución de C
 Una restricción muy importante en las funciones de enlace de asignación es que deben omitir explícitamente `_CRT_BLOCK` bloques. Estos bloques son las asignaciones de memoria realizadas internamente por las funciones de biblioteca en tiempo de ejecución de C si realizan alguna llamada a funciones de biblioteca en tiempo de ejecución de C que asignan memoria interna. Puede hacer caso omiso `_CRT_BLOCK` bloques incluyendo el código siguiente al principio de la asignación de función de enlace:
@@ -40,4 +40,4 @@ Si el enlace de asignación no omite `_CRT_BLOCK` se bloquea, entonces cualquier
 Si examina los archivos de código fuente de la biblioteca en tiempo de ejecución, verá que la función de enlace de asignación predeterminada, **CrtDefaultAllocHook** (que simplemente devuelve **TRUE**), se encuentra en un archivo independiente, DBGHOOK.C. Si desea llamar al enlace de asignación incluso en las asignaciones realizadas por el código de inicio en tiempo de ejecución que se ejecuta antes que la función **main** de la aplicación, puede reemplazar esta función predeterminada por una propia en lugar de usar [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).
 
 ## <a name="see-also"></a>Vea también
-[Creación de funciones de enlace de depuración](../debugger/debug-hook-function-writing.md)
+- [Creación de funciones de enlace de depuración](../debugger/debug-hook-function-writing.md)

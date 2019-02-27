@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 488ae20ae4e38905b722f833a52676eea6ce0e81
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b768b06e0702f7929b402086dcc6e11918f3e683
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035775"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630098"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
-Establece la dirección de carga del archivo ejecutable que corresponde a los símbolos en este almacén de símbolos.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT put_loadAddress (   
-   ULONGLONG NewVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `NewVal`  
- [in] Carga la dirección del archivo ejecutable.  
-  
-## <a name="remarks"></a>Comentarios  
- Propiedades de dirección virtual (VA) de símbolos se calculan utilizando el valor de este método. No se calculan las direcciones virtuales a menos que esta propiedad se establece en cero.  
-  
+Establece la dirección de carga del archivo ejecutable que corresponde a los símbolos en este almacén de símbolos.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT put_loadAddress ( 
+   ULONGLONG NewVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `NewVal`
+
+[in] Carga la dirección del archivo ejecutable.
+
+## <a name="remarks"></a>Comentarios
+ Propiedades de dirección virtual (VA) de símbolos se calculan utilizando el valor de este método. No se calculan las direcciones virtuales a menos que esta propiedad se establece en cero.
+
 > [!NOTE]
->  Debe llamar a este método cuando llegue el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) de objetos y antes de empezar a usar el objeto si tiene que usar las propiedades virtuales en los símbolos.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+>  Debe llamar a este método cuando llegue el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) de objetos y antes de empezar a usar el objeto si tiene que usar las propiedades virtuales en los símbolos.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3589447cdc9451a52dcffb4653a31f188b33c634
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987397"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702023"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opciones de Python en Visual Studio
 
@@ -33,7 +33,7 @@ Para ver las opciones de Python, use el comando de menú **Herramientas** > **Op
 También hay opciones adicionales específicas de Python en la pestaña **Editor de texto** > **Python** > **Opciones avanzadas** y en la pestaña **Entorno** > **Fuentes y colores** del grupo **Editor de texto**.
 
 > [!Note]
-> El grupo **Experimental** contiene opciones de características que están aún en desarrollo y no se documentan aquí. A menudo, se habla de ellas en entradas del [blog de ingeniería de Python en Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
+> El grupo **Experimental** contiene opciones de características que están aún en desarrollo y no se documentan aquí. A menudo, se habla de ellas en entradas del [blog de ingeniería de Python en Microsoft](https://devblogs.microsoft.com/python/).
 
 ## <a name="general-options"></a>Opciones generales
 

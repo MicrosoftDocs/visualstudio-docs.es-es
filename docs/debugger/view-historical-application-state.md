@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8d1026ca2ac677a98d36dbf4fffe12428151885
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf319dd00048a4abf6cc4e3806845200c9eefc64
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992703"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703583"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspección de los estados de aplicación anteriores mediante el retroceso de IntelliTrace en Visual Studio (Visual Studio Enterprise)
 
@@ -29,14 +29,14 @@ En este tutorial va a:
 > * Activación de las instantáneas y los eventos de IntelliTrace
 > * Navegar por los eventos mediante los comandos Retroceder paso a paso y Avanzar paso a paso
 > * Ver las instantáneas de eventos
-  
-## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Activar eventos de IntelliTrace y el modo instantáneas 
+
+## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Activar eventos de IntelliTrace y el modo instantáneas
 
 1. Abra el proyecto en Visual Studio Enterprise.
 
-1. Abra la configuración **Herramientas** > **Opciones** > **IntelliTrace** y seleccione la opción **Eventos e instantáneas de IntelliTrace**. 
+1. Abra la configuración **Herramientas** > **Opciones** > **IntelliTrace** y seleccione la opción **Eventos e instantáneas de IntelliTrace**.
 
-    A partir de Visual Studio 2017 Enterprise versión 15.9 versión preliminar 2, esta opción es **Instantáneas de IntelliTrace (administradas y nativas)**. 
+    A partir de Visual Studio 2017 Enterprise versión 15.9 versión preliminar 2, esta opción es **Instantáneas de IntelliTrace (administradas y nativas)**.
 
     ![Habilitar el modo de instantáneas y eventos de IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Habilitar el modo de instantáneas y eventos de IntelliTrace")
 
@@ -55,7 +55,7 @@ En este tutorial va a:
 
     IntelliTrace toma una instantánea del proceso de la aplicación en cada paso del depurador, eventos de punto de interrupción y eventos de excepción no controlados. Estos eventos se registran en la pestaña **Eventos** de la ventana **Herramientas de diagnóstico**, junto con otros eventos de IntelliTrace. Para abrir esta ventana, elija **Depurar** > **Windows** > **Mostrar herramientas de diagnóstico**.
 
-    Aparece un icono de cámara junto a los eventos para los que hay instantáneas. 
+    Aparece un icono de cámara junto a los eventos para los que hay instantáneas.
 
     ![Pestaña Eventos con instantáneas](../debugger/media/intellitrace-events-tab-with-snapshots.png "Pestaña Eventos con instantáneas en los puntos de interrupción y pasos")
 
@@ -69,15 +69,15 @@ En este tutorial va a:
 
     ![Botones Retroceder paso a paso y Avanzar paso a paso](../debugger/media/intellitrace-step-back-icons-description.png "Botones Retroceder paso a paso y Avanzar paso a paso")
 
-    Al retroceder o avanzar paso a paso, Visual Studio entra en modo de depuración histórica. En este modo, el contexto del depurador cambia a la hora a la que se registró el evento seleccionado. Visual Studio también mueve el puntero a la línea de código correspondiente en la ventana de código fuente. 
+    Al retroceder o avanzar paso a paso, Visual Studio entra en modo de depuración histórica. En este modo, el contexto del depurador cambia a la hora a la que se registró el evento seleccionado. Visual Studio también mueve el puntero a la línea de código correspondiente en la ventana de código fuente.
 
     Desde esta vista, puede inspeccionar los valores de las ventanas **Pila de llamadas**, **Variables locales**, **Automático** e **Inspección**. También puede mantener el mouse sobre las variables para ver información sobre datos y realizar la evaluación de expresiones en la ventana **Inmediato**. Los datos que ve provienen de la instantánea del proceso de la aplicación que se realizó en ese momento dado.
 
-    Así, por ejemplo, si ha alcanzado un punto de interrupción y realizado un Paso (**F10**), el botón **Retroceder paso a paso** pone a Visual Studio en el modo histórico en la línea de código correspondiente al punto de interrupción. 
+    Así, por ejemplo, si ha alcanzado un punto de interrupción y realizado un Paso (**F10**), el botón **Retroceder paso a paso** pone a Visual Studio en el modo histórico en la línea de código correspondiente al punto de interrupción.
 
     ![Activar el modo histórico en un evento con una instantánea](../debugger/media/intellitrace-historical-mode-with-snapshot.png "Activar el modo histórico en un evento con una instantánea")
 
-2. Para volver a la ejecución en vivo, elija **Continuar (F5)** o haga clic en el vínculo **Volver a depuración en directo** en la barra de información. 
+2. Para volver a la ejecución en vivo, elija **Continuar (F5)** o haga clic en el vínculo **Volver a depuración en directo** en la barra de información.
 
 3. También puede ver una instantánea de la pestaña **Eventos**. Para ello, seleccione un evento con una instantánea y haga clic en **Activar depuración histórica**.
 
@@ -87,28 +87,28 @@ En este tutorial va a:
 
     ![Información general de la característica step-back de IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Información general de la característica step-back de IntelliTrace")
 
-    Para obtener más información sobre cómo inspeccionar las variables en Visual Studio, vea [Primer vistazo al depurador de Visual Studio](../debugger/debugger-feature-tour.md)  
+    Para obtener más información sobre cómo inspeccionar las variables en Visual Studio, vea [Primer vistazo al depurador de Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 #### <a name="how-is-intellitrace-step-back-different-from-intellitrace-events-only-mode"></a>¿Qué diferencia hay entre el modo solo de eventos de IntelliTrace y la característica step-back?
 
-IntelliTrace en modo de solo eventos permite activar la depuración histórica en puntos de interrupción y pasos del depurador. Sin embargo, IntelliTrace solo captura los datos en las ventanas **Variables locales** y **Automático** si están abiertas y solo captura los datos que están expandidos y en la vista. En modo de solo los eventos, a menudo no tiene una visión completa de las variables y los objetos complejos. Además, la evaluación de expresiones y la visualización de datos en la ventana **Inspección** no es compatible. 
+IntelliTrace en modo de solo eventos permite activar la depuración histórica en puntos de interrupción y pasos del depurador. Sin embargo, IntelliTrace solo captura los datos en las ventanas **Variables locales** y **Automático** si están abiertas y solo captura los datos que están expandidos y en la vista. En modo de solo los eventos, a menudo no tiene una visión completa de las variables y los objetos complejos. Además, la evaluación de expresiones y la visualización de datos en la ventana **Inspección** no es compatible.
 
 En los modos de eventos y de instantáneas, IntelliTrace captura la instantánea completa del proceso de la aplicación, incluidos los objetos complejos. En una línea de código, puede ver la misma información como si se hubiese detenido en un punto de interrupción (y no importa si anteriormente se expandió la información). La evaluación de expresiones también se admite cuando se está viendo una instantánea.  
 
 #### <a name="what-is-the-performance-impact-of-this-feature"></a>¿Cuál es el impacto en el rendimiento de esta característica? 
 
 El impacto en el rendimiento general de ejecución paso a paso depende de la aplicación. La sobrecarga de tomar una instantánea es aproximadamente de 30 ms. Cuando se toma una instantánea, se bifurca el proceso de la aplicación y se suspende la copia bifurcada. Cuando ve una instantánea, Visual Studio se conecta a la copia del proceso bifurcada. En cada instantánea, Visual Studio copia solo la tabla de páginas y establece páginas para la copia en escritura. Si cambian los objetos del montón entre los pasos del depurador con instantáneas asociadas, se copia la tabla de la página correspondiente, lo que resulta en un costo de memoria mínimo. Si Visual Studio detecta que no hay memoria suficiente para tomar una instantánea, no la toma.
- 
-## <a name="known-issues"></a>Problemas conocidos  
+
+## <a name="known-issues"></a>Problemas conocidos
 * Si está utilizando el modo de eventos e instantáneas de IntelliTrace en las versiones de Windows anteriores a Windows 10 Fall Creators Update (RS3), y la plataforma de destino de depuración de la aplicación se establece en x86, IntelliTrace no toma instantáneas.
 
     Soluciones:
-  * Si está en la Actualización de aniversario de Windows 10 (RS1) y por debajo de la versión 10.0.14393.2273, [instale KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+  * Si está en la Actualización de aniversario de Windows 10 (RS1) y por debajo de la versión 10.0.14393.2273, [instale KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720).
   * Si está en Windows 10 Creators Update (RS2) y por debajo de la versión 10.0.15063.1112, [instale KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
-  * Instale o actualice a Windows 10 Fall Creators Update (RS3). 
-  * Alternativamente: 
+  * Instale o actualice a Windows 10 Fall Creators Update (RS3).
+  * Alternativamente:
     1. Instale el componente de conjunto de herramientas de VC++ 2015.3 v140 para el escritorio (x86, x64) del Instalador de Visual Studio.
     2. Compile la aplicación de destino.
     3. En la línea de comandos, use la herramienta editbin para establecer la marca `Largeaddressaware` para el destino ejecutable. Por ejemplo, es posible que use este comando (después de actualizar la ruta de acceso): "C:\Archivos de programa (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Ruta de acceso\a\la\aplicación\app.exe".
@@ -120,11 +120,11 @@ El impacto en el rendimiento general de ejecución paso a paso depende de la apl
 * Cuando se toma una instantánea del proceso de la aplicación en una aplicación que utiliza un archivo asignado a memoria persistente, el proceso con la instantánea mantiene un bloqueo exclusivo en el archivo asignado a memoria (incluso después de que el proceso primario haya liberado el bloqueo). Otros procesos todavía pueden leer pero no escribir en el archivo asignado a la memoria.
 
     Solución:
-    * Desactive todas las instantáneas finalizando la sesión de depuración. 
+    * Desactive todas las instantáneas finalizando la sesión de depuración.
 
-* Al depurar una aplicación cuyo proceso tiene un gran número de regiones de memoria exclusiva, como una aplicación que carga un gran número de archivos DLL, el rendimiento de la ejecución paso a paso con instantáneas habilitadas puede verse afectado. Este problema se corregirá en una futura versión de Windows. Si experimenta este problema, póngase en contacto con nosotros en stepback@microsoft.com. 
+* Al depurar una aplicación cuyo proceso tiene un gran número de regiones de memoria exclusiva, como una aplicación que carga un gran número de archivos DLL, el rendimiento de la ejecución paso a paso con instantáneas habilitadas puede verse afectado. Este problema se corregirá en una futura versión de Windows. Si experimenta este problema, póngase en contacto con nosotros en stepback@microsoft.com.
 
-* Al guardar un archivo con **Depurar > IntelliTrace > Guardar sesión de IntelliTrace** en el modo de eventos e instantáneas, los datos adicionales capturados desde instantáneas no están disponibles en el archivo .itrace. En los eventos de punto de interrupción y paso, verá la misma información como si hubiera guardado el archivo en modo de solo eventos de IntelliTrace. 
+* Al guardar un archivo con **Depurar > IntelliTrace > Guardar sesión de IntelliTrace** en el modo de eventos e instantáneas, los datos adicionales capturados desde instantáneas no están disponibles en el archivo .itrace. En los eventos de punto de interrupción y paso, verá la misma información como si hubiera guardado el archivo en modo de solo eventos de IntelliTrace.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

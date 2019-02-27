@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bcf2c97e26e61b72a1279a11e8c95474099c3d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918569"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716524"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Inicio rápido: Depurar con C++ mediante el depurador de Visual Studio
 
 El depurador de Visual Studio proporciona muchas características de gran eficacia para ayudar a depurar aplicaciones. En este tema se proporciona una forma rápida de obtener información sobre las características básicas.
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo 
+## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
 1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
 
@@ -47,7 +47,7 @@ El depurador de Visual Studio proporciona muchas características de gran eficac
     con este código (no quite `#include "stdafx.h"`):
 
     ```c++
-    #include <list>  
+    #include <list>
     #include <iostream>
 
     using namespace std;
@@ -90,7 +90,7 @@ Un *punto de interrupción* es un marcador que indica en qué punto debe Visual 
     > [!TIP]
     > Si tiene un punto de interrupción en un bucle o recursión, o si tiene muchos puntos de interrupción que ejecuta paso a paso con frecuencia, use un [punto de interrupción condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) para asegurarse de que el código se suspende ÚNICAMENTE cuando se cumplen determinadas condiciones. Un punto de interrupción condicional ahorra tiempo y además puede facilitar la depuración de problemas que son difíciles de reproducir.
 
-    Al intentar depurar errores relacionados con la memoria en C++, también puede usar puntos de interrupción para inspeccionar valores de dirección (busque NULL) y números de referencia. 
+    Al intentar depurar errores relacionados con la memoria en C++, también puede usar puntos de interrupción para inspeccionar valores de dirección (busque NULL) y números de referencia.
 
 ## <a name="navigate-code"></a>Navegación en el código
 
@@ -110,7 +110,7 @@ Los comandos de teclado habituales usados para ejecutar el código paso a paso s
 
     ![Visualización de una información sobre datos](../debugger/media/dbg-qs-data-tip.png "View a datatip")
 
-    La información sobre datos muestra el valor actual de la variable `c1` y permite inspeccionar sus propiedades. Al depurar, si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o de llamada. 
+    La información sobre datos muestra el valor actual de la variable `c1` y permite inspeccionar sus propiedades. Al depurar, si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o de llamada.
 
 2. Expanda la información sobre datos para ver los valores de propiedad actuales del objeto `c1`.
 

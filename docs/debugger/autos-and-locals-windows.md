@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941988"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636910"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspeccionar las variables en las ventanas automático y variables locales
 
 El **automático** y **variables locales** ventanas muestran valores de variables durante la depuración. Windows solo están disponibles durante una sesión de depuración. El **automático** ventana muestra las variables usadas en torno al punto de interrupción actual. El **variables locales** ventana muestra las variables definidas en el ámbito local, que normalmente es la función actual o el método. Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) y [herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md) antes de pasar a través de este artículo.
 
  El **automático** ventana está disponible para C#, código de Visual Basic, C++ y Python, pero no para JavaScript o F#.
-  
-Para abrir el **automático** ventana, durante la depuración, seleccione **depurar** > **Windows** > **automático**, o presione **Ctrl**+**Alt**+**V** > **A**.  
+
+Para abrir el **automático** ventana, durante la depuración, seleccione **depurar** > **Windows** > **automático**, o presione **Ctrl**+**Alt**+**V** > **A**.
 
 Para abrir el **variables locales** ventana, durante la depuración, seleccione **depurar** > **Windows** > **variables locales**, o presione **Alt**+**4**.
 
@@ -142,13 +142,15 @@ private static int subtractVars(int i, int j)
 
 Para ver los valores devueltos de la `sumVars()` y `subtractVars()` llama al método en la ventana automático:
 
-1. Establezca un punto de interrupción en la línea `int x = sumVars(a, b) + subtractVars(c, d);` .  
-   
-1. Inicie la depuración y cuando la ejecución se detiene en el punto de interrupción, seleccione **saltar** o presione **F10**. Debería ver los siguientes valores devueltos en la **automático** ventana:  
-   
-  ![Valor devuelven de autos C# ](../debugger/media/autosreturnvaluecsharp2.png "automático de valor devueltoC#")  
-  
-## <a name="see-also"></a>Vea también  
- [¿Qué es la depuración?](../debugger/what-is-debugging.md)  
- [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md)  
- [Primer vistazo al depurar](../debugger/debugger-feature-tour.md) [ventanas del depurador](../debugger/debugger-windows.md)
+1. Establezca un punto de interrupción en la línea `int x = sumVars(a, b) + subtractVars(c, d);` .
+
+1. Inicie la depuración y cuando la ejecución se detiene en el punto de interrupción, seleccione **saltar** o presione **F10**. Debería ver los siguientes valores devueltos en la **automático** ventana:
+
+  ![Valor devuelven de autos C# ](../debugger/media/autosreturnvaluecsharp2.png "automático de valor devueltoC#")
+
+## <a name="see-also"></a>Vea también
+
+- [¿Qué es la depuración?](../debugger/what-is-debugging.md)
+- [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md)
+- [Primer vistazo a la depuración](../debugger/debugger-feature-tour.md)
+- [Ventanas del depurador](../debugger/debugger-windows.md)

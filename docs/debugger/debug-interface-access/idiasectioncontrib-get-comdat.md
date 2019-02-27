@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a15e0001342a31d13cb1b77f2c8e6d7fc4d31c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 49502c0d693c7a309da9756f73c34df361b7d7bb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936273"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621752"
 ---
 # <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-Recupera una marca que indica si la sección es un registro COMDAT.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_comdat (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Devuelve `TRUE` si la sección es un registro COMDAT; de lo contrario, devuelve `FALSE`.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- Un registro COMDAT es un formato de archivo de objeto común (COFF) que realiza funciones empaquetadas visibles para el vinculador.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Recupera una marca que indica si la sección es un registro COMDAT.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_comdat ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Devuelve `TRUE` si la sección es un registro COMDAT; de lo contrario, devuelve `FALSE`.
+
+## <a name="return-value"></a>Valor devuelto
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ Un registro COMDAT es un formato de archivo de objeto común (COFF) que realiza funciones empaquetadas visibles para el vinculador.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

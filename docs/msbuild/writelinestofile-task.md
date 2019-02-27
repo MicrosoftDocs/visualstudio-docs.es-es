@@ -18,57 +18,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577a87d9faccbb110011eb1fe9bdc6ddb6b3d732
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8cfe294e94acce70f48b96265b3edc491b37e668
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919374"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56653883"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile (tarea)
-Escribe las rutas de acceso de los elementos especificados en el archivo de texto especificado.  
-  
-## <a name="task-parameters"></a>Parámetros de tareas  
- En la siguiente tabla se describen los parámetros de la tarea `WriteLinestoFile` .  
-  
-|Parámetro|Descripción|  
-|---------------|-----------------|  
-|`File`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el archivo en el que se escriben los elementos.|  
-|`Lines`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los elementos que se van a escribir en el archivo.|  
-|`Overwrite`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, la tarea sobrescribe cualquier contenido existente en el archivo.|  
-|`Encoding`|Parámetro `String` opcional.<br /><br /> Selecciona la codificación de caracteres, por ejemplo, "Unicode".  Vea también <xref:System.Text.Encoding>.|  
-|`WriteOnlyWhenDifferent`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, el archivo de destino especificado, si existe, se leerá en primer lugar para hacer una comparación con lo que habría escrito la tarea. Si el resultado de la comparación es idéntico, el archivo no se escribe en disco y la marca de tiempo se conservará.|  
+Escribe las rutas de acceso de los elementos especificados en el archivo de texto especificado.
 
-## <a name="remarks"></a>Comentarios  
- Si `Overwrite` es `true`, crea un archivo, escribe el contenido en el archivo y después lo cierra. Si el archivo de destino ya existe, se sobrescribe. Si `Overwrite` es `false`, anexa el contenido al archivo y crea el archivo de destino si aún no existe.  
-  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se usa la tarea `WriteLinesToFile` para escribir las rutas de acceso de los elementos de la colección de elementos `MyItems` en el archivo especificado por la colección de elementos `MyTextFile`.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyTextFile Include="Items.txt"/>  
-        <MyItems Include="*.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name="WriteToFile">  
-        <WriteLinesToFile  
-            File="@(MyTextFile)"  
-            Lines="@(MyItems)"  
-            Overwrite="true"  
-            Encoding="Unicode"/>  
-    </Target>  
-  
-</Project>  
+## <a name="task-parameters"></a>Parámetros de tareas
+ En la siguiente tabla se describen los parámetros de la tarea `WriteLinestoFile` .
+
+|Parámetro|Descripción|
+|---------------|-----------------|
+|`File`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el archivo en el que se escriben los elementos.|
+|`Lines`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los elementos que se van a escribir en el archivo.|
+|`Overwrite`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, la tarea sobrescribe cualquier contenido existente en el archivo.|
+|`Encoding`|Parámetro `String` opcional.<br /><br /> Selecciona la codificación de caracteres, por ejemplo, "Unicode".  Vea también <xref:System.Text.Encoding>.|
+|`WriteOnlyWhenDifferent`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, el archivo de destino especificado, si existe, se leerá en primer lugar para hacer una comparación con lo que habría escrito la tarea. Si el resultado de la comparación es idéntico, el archivo no se escribe en disco y la marca de tiempo se conservará.|
+
+## <a name="remarks"></a>Comentarios
+ Si `Overwrite` es `true`, crea un archivo, escribe el contenido en el archivo y después lo cierra. Si el archivo de destino ya existe, se sobrescribe. Si `Overwrite` es `false`, anexa el contenido al archivo y crea el archivo de destino si aún no existe.
+
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Ejemplo
+ En el ejemplo siguiente se usa la tarea `WriteLinesToFile` para escribir las rutas de acceso de los elementos de la colección de elementos `MyItems` en el archivo especificado por la colección de elementos `MyTextFile`.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyTextFile Include="Items.txt"/>
+        <MyItems Include="*.cs"/>
+    </ItemGroup>
+
+    <Target Name="WriteToFile">
+        <WriteLinesToFile
+            File="@(MyTextFile)"
+            Lines="@(MyItems)"
+            Overwrite="true"
+            Encoding="Unicode"/>
+    </Target>
+
+</Project>
 ```
 
 En este ejemplo se usa una propiedad con nuevas líneas insertadas para escribir un archivo de texto con varias líneas. Si una entrada en `Lines` ha insertado caracteres de nueva línea, las nuevas líneas se incluirán en el archivo de salida. De este modo, puede hacer referencia a las propiedades de varias líneas.
 
-```xml  
+```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -89,8 +89,8 @@ dotnet %~dp0$(AssemblyName).dll %*
         Lines="$(LauncherCmd)" />
   </Target>
 </Project>
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Tareas](../msbuild/msbuild-tasks.md)   
- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+```
+
+## <a name="see-also"></a>Vea también
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)

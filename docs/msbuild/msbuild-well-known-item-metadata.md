@@ -16,37 +16,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c031d4a76b818992948b2299981b0d650e9e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a4c87d9dd6200fdd386db750a97e8f0866597d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966600"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627290"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadatos de los elementos conocidos de MSBuild
-En la tabla siguiente se describen los metadatos asignados a cada elemento en el momento de su creación. En cada ejemplo, se usó la siguiente declaración de elementos para incluir el archivo *C:\MyProject\Source\Program.cs* en el proyecto.  
-  
-```xml  
-<ItemGroup>  
-    <MyItem Include="Source\Program.cs" />  
-</ItemGroup>  
-```  
-  
-|Metadatos de elementos|Descripción|  
-|-------------------|-----------------|  
-|%(FullPath)|Contiene la ruta de acceso completa del elemento. Por ejemplo:<br /><br /> *C:\MyProject\Source\Program.cs*|  
-|%(RootDir)|Contiene el directorio raíz del elemento. Por ejemplo:<br /><br /> *C:\\*|  
-|%(Filename)|Contiene el nombre de archivo del elemento, sin la extensión. Por ejemplo:<br /><br /> *Program*|  
-|%(Extension)|Contiene la extensión de nombre de archivo del elemento. Por ejemplo:<br /><br /> *.cs*|  
-|%(RelativeDir)|Contiene la ruta de acceso especificada en el atributo `Include`, hasta la última barra diagonal inversa (\\). Por ejemplo:<br /><br /> *Source\\*|  
-|%(Directory)|Contiene el directorio del elemento, sin el directorio raíz. Por ejemplo:<br /><br /> *MyProject\\Source\\*|  
-|%(RecursiveDir)|Si el atributo `Include` contiene el carácter comodín \*\*, este metadato especifica la parte de la ruta de acceso que reemplaza el carácter comodín. Para obtener más información sobre los caracteres comodín, vea [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Si la carpeta *C:\MySolution\MyProject\Source\\* contiene el archivo *Program.cs* y si el archivo de proyecto contiene este elemento:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> entonces el valor de `%(MyItem.RecursiveDir)` sería *MySolution\MyProject\Source\\*.|  
-|%(Identity)|El elemento especificado en el atributo `Include`. Por ejemplo:<br /><br /> *Source\Program.cs*|  
-|%(ModifiedTime)|Contiene la marca de tiempo correspondiente a la última modificación del elemento. Por ejemplo:<br /><br /> `2004-07-01 00:21:31.5073316`|  
-|%(CreatedTime)|Contiene la marca de tiempo correspondiente a la creación del elemento. Por ejemplo:<br /><br /> `2004-06-25 09:26:45.8237425`|  
-|%(AccessedTime)|Contiene la marca de tiempo correspondiente a la última vez que se tuvo acceso al elemento.<br /><br /> `2004-08-14 16:52:36.3168743`|  
-  
-## <a name="see-also"></a>Vea también  
- [Elementos](../msbuild/msbuild-items.md)   
- [Procesamiento por lotes](../msbuild/msbuild-batching.md)   
- [Referencia de MSBuild](../msbuild/msbuild-reference.md)
+En la tabla siguiente se describen los metadatos asignados a cada elemento en el momento de su creación. En cada ejemplo, se usó la siguiente declaración de elementos para incluir el archivo *C:\MyProject\Source\Program.cs* en el proyecto.
+
+```xml
+<ItemGroup>
+    <MyItem Include="Source\Program.cs" />
+</ItemGroup>
+```
+
+|Metadatos de elementos|Descripción|
+|-------------------|-----------------|
+|%(FullPath)|Contiene la ruta de acceso completa del elemento. Por ejemplo:<br /><br /> *C:\MyProject\Source\Program.cs*|
+|%(RootDir)|Contiene el directorio raíz del elemento. Por ejemplo:<br /><br /> *C:\\*|
+|%(Filename)|Contiene el nombre de archivo del elemento, sin la extensión. Por ejemplo:<br /><br /> *Program*|
+|%(Extension)|Contiene la extensión de nombre de archivo del elemento. Por ejemplo:<br /><br /> *.cs*|
+|%(RelativeDir)|Contiene la ruta de acceso especificada en el atributo `Include`, hasta la última barra diagonal inversa (\\). Por ejemplo:<br /><br /> *Source\\*|
+|%(Directory)|Contiene el directorio del elemento, sin el directorio raíz. Por ejemplo:<br /><br /> *MyProject\\Source\\*|
+|%(RecursiveDir)|Si el atributo `Include` contiene el carácter comodín \*\*, este metadato especifica la parte de la ruta de acceso que reemplaza el carácter comodín. Para obtener más información sobre los caracteres comodín, vea [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Si la carpeta *C:\MySolution\MyProject\Source\\* contiene el archivo *Program.cs* y si el archivo de proyecto contiene este elemento:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> entonces el valor de `%(MyItem.RecursiveDir)` sería *MySolution\MyProject\Source\\*.|
+|%(Identity)|El elemento especificado en el atributo `Include`. Por ejemplo:<br /><br /> *Source\Program.cs*|
+|%(ModifiedTime)|Contiene la marca de tiempo correspondiente a la última modificación del elemento. Por ejemplo:<br /><br /> `2004-07-01 00:21:31.5073316`|
+|%(CreatedTime)|Contiene la marca de tiempo correspondiente a la creación del elemento. Por ejemplo:<br /><br /> `2004-06-25 09:26:45.8237425`|
+|%(AccessedTime)|Contiene la marca de tiempo correspondiente a la última vez que se tuvo acceso al elemento.<br /><br /> `2004-08-14 16:52:36.3168743`|
+
+## <a name="see-also"></a>Vea también
+- [Elementos](../msbuild/msbuild-items.md)
+- [Procesamiento por lotes](../msbuild/msbuild-batching.md)
+- [Referencia de MSBuild](../msbuild/msbuild-reference.md)

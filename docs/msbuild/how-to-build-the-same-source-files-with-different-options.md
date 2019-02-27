@@ -1,5 +1,5 @@
 ---
-title: Filtrar Compilar los mismos archivos de código fuente con diferentes opciones | Microsoft Docs
+title: Procedimiento Compilar los mismos archivos de código fuente con diferentes opciones | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e07ed209b0e2fee460bd43e2a588a8deb25eeb1
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8cb678a05b9301982b4842d272c3032cafa46a87
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854075"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610130"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Filtrar Compilar los mismos archivos de código fuente con diferentes opciones
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedimiento Compilar los mismos archivos de código fuente con diferentes opciones
 Al compilar proyectos, con frecuencia se compilan los mismos componentes con distintas opciones de compilación. Por ejemplo, puede crear una compilación de depuración con información de símbolos o una compilación de versión sin información de símbolos, pero con optimizaciones habilitadas. También puede compilar un proyecto que se ejecute en una plataforma concreta, como x86 o [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. En todos estos casos, la mayoría de las opciones de compilación permanecen iguales; solo unas cuantas opciones cambian para controlar la configuración de compilación. Con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], se utilizan propiedades y condiciones para crear configuraciones de compilación diferentes.
 
 ## <a name="use-properties-to-modify-projects"></a>Usar propiedades para modificar proyectos
@@ -183,7 +183,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ```
 
 ## <a name="see-also"></a>Vea también
-[MSBuild](../msbuild/msbuild.md)  
-[Conceptos de MSBuild](../msbuild/msbuild-concepts.md)  
-[Referencia de MSBuild](../msbuild/msbuild-reference.md)  
-[Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
+- [Referencia de MSBuild](../msbuild/msbuild-reference.md)
+- [Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md)

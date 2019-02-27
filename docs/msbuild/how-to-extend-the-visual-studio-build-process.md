@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908496"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603266"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Filtrar para ampliar el proceso de compilación de Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Procedimiento para ampliar el proceso de compilación de Visual Studio
 El proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se define mediante una serie de archivos *.targets* de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se importan en el archivo de proyecto. Uno de estos archivos importados, *Microsoft.Common.targets*, se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este artículo se explican dos métodos que puede usar para extender el proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
 
 - Reemplazar destinos predefinidos concretos definidos en *Microsoft.Common.targets*.
@@ -35,8 +35,8 @@ El archivo *Microsoft.Common.targets* contiene un conjunto de destinos vacíos p
 
 1. Identifique un destino predefinido de *Microsoft.Common.targets* que quiera reemplazar. Consulte la tabla siguiente para ver la lista completa de destinos que puede reemplazar de forma segura.
 
-2. Defina el destino o los destinos al final del archivo del proyecto, inmediatamente antes de la etiqueta `</Project>`. Por ejemplo:  
-  
+2. Defina el destino o los destinos al final del archivo del proyecto, inmediatamente antes de la etiqueta `</Project>`. Por ejemplo:
+
     ```xml
     <Project>
         ...
@@ -48,7 +48,7 @@ El archivo *Microsoft.Common.targets* contiene un conjunto de destinos vacíos p
         </Target>
     </Project>
     ```
-  
+
 3. Compile el archivo del proyecto.
 
 En la tabla siguiente se muestran todos los destinos de *Microsoft.Common.targets* que puede reemplazar de forma segura.
@@ -124,6 +124,6 @@ Los proyectos que importan los archivos del proyecto pueden reemplazar estas pro
 |`CompileDependsOn`|La propiedad que se debe reemplazar si quiere insertar procesos personalizados antes o después del paso de compilación.|
 
 ## <a name="see-also"></a>Vea también
-[Integración de Visual Studio](../msbuild/visual-studio-integration-msbuild.md)  
-[Conceptos de MSBuild](../msbuild/msbuild-concepts.md)  
-[Archivos .targets](../msbuild/msbuild-dot-targets-files.md)
+- [Integración de Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
+- [Archivos .targets](../msbuild/msbuild-dot-targets-files.md)
