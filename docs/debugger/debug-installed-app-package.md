@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 84d2296a467bb1fc2c3e1466b715578c94c7d0d8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: b6a41ad863ee25e4294d5d0242b3113cd405fb00
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317946"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637352"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Depurar un paquete de aplicación para UWP instalado en Visual Studio
 
@@ -33,7 +33,7 @@ Visual Studio puede depurar paquetes de aplicación plataforma Universal de Wind
 
 >[!NOTE]
 >No se admite la depuración para aplicaciones UWP instaladas de Visual Studio en teléfonos.
-   
+
 Para obtener más información sobre la depuración de aplicaciones para UWP, vea las entradas de blog en [depuración instalado paquetes de aplicaciones](https://devblogs.microsoft.com/devops/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) y [compilar las aplicaciones universales de Windows (UWP)](https://devblogs.microsoft.com/visualstudio/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
 ## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>Depurar una aplicación para UWP instalada en un equipo local

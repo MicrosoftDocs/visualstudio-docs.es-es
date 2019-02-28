@@ -12,37 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be097c9d57f67c0e4fcf211041b3862e32952d18
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b8cd86edee72f3d25763fd3d19dd9c789e152ed6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931614"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615317"
 ---
 # <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
-Recupera el número de intervalos de direcciones válido asociado con los símbolos locales.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_countLiveRanges (   
-   DWORD* count  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `count`  
- [out] Devuelve el número de intervalos de direcciones.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: dia2.h  
-  
- Biblioteca: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera el número de intervalos de direcciones válido asociado con los símbolos locales.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_countLiveRanges ( 
+   DWORD* count
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `count`
+
+[out] Devuelve el número de intervalos de direcciones.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="requirements"></a>Requisitos
+ Encabezado: Dia2.h
+
+ Biblioteca: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

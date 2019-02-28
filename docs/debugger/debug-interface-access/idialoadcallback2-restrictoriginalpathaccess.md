@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27bf39aea5b095860f9e5aebf864abb4df6bf86d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 26539d4217682b4d5357f13e9f9368c81297da78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964397"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635753"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
-Determina si es correcto buscar un archivo .pdb en el directorio de depuración original.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT RestrictOriginalPathAccess ();  
-```  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- Cualquier código de retorno distinto `S_OK` impide que busca un archivo .pdb en el directorio de depuración original. El directorio de depuración original es la ruta de acceso para el archivo de símbolos que se compilan en el archivo ejecutable cuando se activa la depuración. Esta ruta de acceso no es necesariamente el mismo que la ruta de acceso donde existe el archivo ejecutable.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+Determina si es correcto buscar un archivo .pdb en el directorio de depuración original.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT RestrictOriginalPathAccess ();
+```
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ Cualquier código de retorno distinto `S_OK` impide que busca un archivo .pdb en el directorio de depuración original. El directorio de depuración original es la ruta de acceso para el archivo de símbolos que se compilan en el archivo ejecutable cuando se activa la depuración. Esta ruta de acceso no es necesariamente el mismo que la ruta de acceso donde existe el archivo ejecutable.
+
+## <a name="see-also"></a>Vea también
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

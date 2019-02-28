@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfe88fc7f31f90b6c6d4dd3935d7c40e4cc223c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c22e2465b79faa68f8789cefeeb181c2e15b73b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853760"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602197"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath (tarea)
 Determina qué elementos de la colección de elementos especificada tienen rutas de acceso que están en la carpeta especificada o en sus subcarpetas.
@@ -73,6 +73,6 @@ En el ejemplo siguiente, se usa la tarea `FindUnderPath` para determinar si los 
 ```
 
 ## <a name="see-also"></a>Vea también
-[Referencia de tareas](../msbuild/msbuild-task-reference.md)  
-[Tareas](../msbuild/msbuild-tasks.md)  
-[Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)

@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9d30ff3762e8c429cdd92725ee79c6bff603db
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c3b7dcdfe5f101a3b832a550c53d02007d9afba1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924459"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605788"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
-Recupera una marca que especifica si la función tiene el [naked](/cpp/cpp/naked-cpp) atributo (es decir, la función no tiene ningún código de prólogo o epílogo agregado por el compilador).  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_isNaked(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pFlag`  
- [out] Devuelve `TRUE` si la función tiene el `naked` atributo; en caso contrario, devuelve `FALSE`.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
-  
+Recupera una marca que especifica si la función tiene el [naked](/cpp/cpp/naked-cpp) atributo (es decir, la función no tiene ningún código de prólogo o epílogo agregado por el compilador).
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_isNaked(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pFlag`
+
+[out] Devuelve `TRUE` si la función tiene el `naked` atributo; en caso contrario, devuelve `FALSE`.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
-  
-## <a name="requirements"></a>Requisitos  
-  
-|Requisito|Descripción|  
-|-----------------|-----------------|  
-|Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v8.0|  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Llamadas de función naked](/cpp/cpp/naked-function-calls)
+>  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+
+## <a name="requirements"></a>Requisitos
+
+|Requisito|Descripción|
+|-----------------|-----------------|
+|Encabezado:|dia2.h|
+|Versión:|SDK de DIA v8.0|
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Llamadas de función naked](/cpp/cpp/naked-function-calls)

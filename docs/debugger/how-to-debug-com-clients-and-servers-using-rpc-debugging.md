@@ -26,33 +26,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a9d649ddf3bb9814f837c132bef7d96574336f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01dca60a19adcf27652bccd096d6e1596ec2fc15
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925539"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688048"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procedimiento Depurar clientes y servidores COM mediante la depuración RPC
-Puede utilizar la depuración RPC (llamada a procedimiento remoto) para depurar aplicaciones COM cliente-servidor. Debe habilitar la depuración RPC para poder utilizarla. Con la depuración RPC habilitada, cuando entra en la llamada al servidor desde el cliente, el depurador se adjunta al servidor y le permite depurar el código. Una vez asociado el depurador, podrá utilizar todas sus características con los procesos del servidor y del cliente.  
-  
-### <a name="to-enable-rpc-debugging"></a>Para habilitar la depuración RPC  
-  
-1.  En el menú **Herramientas** , haga clic en **Opciones**.  
-  
-2.  En el cuadro de diálogo **Opciones**, haga clic en la carpeta **Depuración**.  
-  
-3.  Haga clic en la página **Nativo**.  
-  
-4.  Active la casilla **Depuración RPC**.  
-  
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Cómo: Depurar clientes y servidores COM mediante la depuración RPC
+Puede utilizar la depuración RPC (llamada a procedimiento remoto) para depurar aplicaciones COM cliente-servidor. Debe habilitar la depuración RPC para poder utilizarla. Con la depuración RPC habilitada, cuando entra en la llamada al servidor desde el cliente, el depurador se adjunta al servidor y le permite depurar el código. Una vez asociado el depurador, podrá utilizar todas sus características con los procesos del servidor y del cliente.
+
+### <a name="to-enable-rpc-debugging"></a>Para habilitar la depuración RPC
+
+1.  En el menú **Herramientas** , haga clic en **Opciones**.
+
+2.  En el cuadro de diálogo **Opciones**, haga clic en la carpeta **Depuración**.
+
+3.  Haga clic en la página **Nativo**.
+
+4.  Active la casilla **Depuración RPC**.
+
     > [!NOTE]
-    >  Para depurar las llamadas RPC, debe tener privilegios de Administrador o Usuario avanzado.  
-  
+    >  Para depurar las llamadas RPC, debe tener privilegios de Administrador o Usuario avanzado.
+
     > [!NOTE]
-    >  La introducción paso a paso de las RPC en un servidor remoto donde se ejecuta Microsoft Windows Vista sólo funcionará si se asocia un depurador nativo al servidor remoto. De lo contrario, se producirá un error en la llamada RPC sin que se muestre ningún mensaje de error. Si no, se completará la llamada RPC, pero no funcionará la ejecución paso a paso en la llamada RPC.  
-  
-## <a name="see-also"></a>Vea también  
- [Depuración de servidores y contenedores COM](../debugger/com-server-and-container-debugging.md)  
- [Depurar en Visual Studio](../debugger/index.md)  
- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
+    >  La introducción paso a paso de las RPC en un servidor remoto donde se ejecuta Microsoft Windows Vista sólo funcionará si se asocia un depurador nativo al servidor remoto. De lo contrario, se producirá un error en la llamada RPC sin que se muestre ningún mensaje de error. Si no, se completará la llamada RPC, pero no funcionará la ejecución paso a paso en la llamada RPC.
+
+## <a name="see-also"></a>Vea también
+- [Depuración de servidores y contenedores COM](../debugger/com-server-and-container-debugging.md)
+- [Depurar en Visual Studio](../debugger/index.md)
+- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

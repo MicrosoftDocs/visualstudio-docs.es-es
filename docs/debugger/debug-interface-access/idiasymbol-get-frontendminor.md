@@ -12,45 +12,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc74214dfdad676926c20a83d74c4ee9016fc200
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 65c402834d2f08b921a31aa19cc22fb6ad2af7fc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965973"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645087"
 ---
 # <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
-Recupera el número de versión secundaria de front-end.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_frontEndMinor (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Devuelve el número de versión secundaria front.end.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
-  
+Recupera el número de versión secundaria de front-end.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_frontEndMinor ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Devuelve el número de versión secundaria front.end.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.
+
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
-  
-## <a name="remarks"></a>Comentarios  
- Un compilador normalmente se compone de dos elementos principales: el front-end (analizador), que controla el análisis del código fuente en un formato intermedio, y un back-end (generador de código), que convierte el formato intermedio en el ensamblado. No es raro que el front-end tener una versión diferente que el back-end.  
-  
- Un front-end o el número de versión de back-end se compone de tres partes: \<principal >.\< secundaria >. \<compilar >, donde \<principales > es el número de versión principal, \<menores > es el número de versión secundaria, y \<compilar > es el número de compilación. Por ejemplo, 13.10.3077.  
-  
-## <a name="requirements"></a>Requisitos  
-  
-|Requisito|Descripción|  
-|-----------------|-----------------|  
-|Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v7.0|  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+
+## <a name="remarks"></a>Comentarios
+ Un compilador normalmente se compone de dos elementos principales: el front-end (analizador), que controla el análisis del código fuente en un formato intermedio, y un back-end (generador de código), que convierte el formato intermedio en el ensamblado. No es raro que el front-end tener una versión diferente que el back-end.
+
+ Un front-end o el número de versión de back-end se compone de tres partes: \<principal >.\< secundaria >. \<compilar >, donde \<principales > es el número de versión principal, \<menores > es el número de versión secundaria, y \<compilar > es el número de compilación. Por ejemplo, 13.10.3077.
+
+## <a name="requirements"></a>Requisitos
+
+|Requisito|Descripción|
+|-----------------|-----------------|
+|Encabezado:|dia2.h|
+|Versión:|SDK de DIA v7.0|
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

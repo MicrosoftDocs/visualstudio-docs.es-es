@@ -7,18 +7,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e819e4935a14d3902245432b5a5c843071af0fbf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965464"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843244"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introducción a Visual Studio Tools de Kubernetes
 
 Las herramientas de Kubernetes de Visual Studio ayudan a simplificar el desarrollo de aplicaciones en contenedores como destino de Kubernetes. Visual Studio puede crear automáticamente los archivos de configuración como código necesarios para admitir la implementación de Kubernetes, como gráficos Dockerfiles y Helm. Puede depurar el código en un clúster activo de Azure Kubernetes Service (AKS) con espacios de desarrollo de Azure, o publicar directamente en un clúster de AKS desde dentro de Visual Studio.
 
-Este tutorial trata con Visual Studio para agregar compatibilidad con Kubernetes a un proyecto y publicar en AKS. Si interesa principalmente utilizar [espacios de desarrollo de Azure](http://aka.ms/get-azds) para depurar y probar el proyecto en AKS, puede ir a la [tutorial de Azure Dev espacios](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) en su lugar.
+Este tutorial trata con Visual Studio para agregar compatibilidad con Kubernetes a un proyecto y publicar en AKS. Si interesa principalmente utilizar [espacios de desarrollo de Azure](https://aka.ms/get-azds) para depurar y probar el proyecto en AKS, puede ir a la [tutorial de Azure Dev espacios](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) en su lugar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -78,7 +78,7 @@ Los archivos agregados son:
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publicar en Azure Kubernetes Service (AKS)
 
-Con todos estos archivos en su lugar, puede usar el IDE de Visual Studio para escribir y depurar el código de aplicación, igual que siempre tiene. También puede usar [Azure Dev espacios](http://aka.ms/get-azds) rápidamente, ejecutar y depurar el código que se ejecuta en directo en un clúster de AKS. Para obtener más información, consulte el [tutorial de espacios de desarrollo de Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+Con todos estos archivos en su lugar, puede usar el IDE de Visual Studio para escribir y depurar el código de aplicación, igual que siempre tiene. También puede usar [Azure Dev espacios](https://aka.ms/get-azds) rápidamente, ejecutar y depurar el código que se ejecuta en directo en un clúster de AKS. Para obtener más información, consulte el [tutorial de espacios de desarrollo de Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Una vez que tenga el código que se ejecuta como quiera, puede publicar directamente desde Visual Studio en un clúster de AKS.
 
@@ -120,4 +120,4 @@ Para ello, primero debe comprobar que se ha instalado todo el contenido como se 
 
 Más información sobre el desarrollo de Kubernetes en Azure, lea el [documentación de AKS](/azure/aks).
 
-Más información sobre los espacios de desarrollo de Azure, lea el [documentación de espacios de desarrollo de Azure](http://aka.ms/get-azds)
+Más información sobre los espacios de desarrollo de Azure, lea el [documentación de espacios de desarrollo de Azure](https://aka.ms/get-azds)

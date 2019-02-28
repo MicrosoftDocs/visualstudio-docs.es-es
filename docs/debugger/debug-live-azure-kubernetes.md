@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 437c9a6d75df3c063a53bda0549c22fd0cbc0876
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335998"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627953"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Depurar servicios de Kubernetes de Azure de ASP.NET en vivo mediante el depurador de instantáneas
 
@@ -57,7 +57,7 @@ En este tutorial va a:
 1. Adjunte al depurador de instantáneas. Puede usar varios métodos diferentes:
 
     * Elija **Depurar > asociar Snapshot Debugger...** . Seleccione la aplicación web se implementa en el recurso de AKS y una cuenta de almacenamiento de Azure y, a continuación, haga clic en **adjuntar**.
-  
+
       ![Iniciar al depurador de instantáneas en el menú Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Haga clic con el botón derecho en el proyecto y seleccione **publicar**y, a continuación, en la página de publicación, haga clic en **asociar Snapshot Debugger**. Seleccione la aplicación web se implementa en el recurso de AKS y una cuenta de almacenamiento de Azure y, a continuación, haga clic en **adjuntar**.
@@ -67,7 +67,7 @@ En este tutorial va a:
     ![Iniciar al depurador de instantáneas en el menú desplegable de F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Mediante el explorador en la nube (**Ver > Cloud Explorer**), haga clic en la aplicación web se implementa en el recurso de AKS y una cuenta de almacenamiento de Azure y, a continuación, haga clic en **asociar Snapshot Debugger**.
-  
+
       ![Iniciar al depurador de instantáneas desde el Explorador de nube](../debugger/media/snapshot-launch.png)
 
     > [!NOTE]

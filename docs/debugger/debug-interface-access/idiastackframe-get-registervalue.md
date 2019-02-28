@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52967a96cccc1d02f6361cccc00b06a391f06427
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a819293863b658f6e12609b2c1cd83c37532e02d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935571"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637638"
 ---
 # <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
-Recupera el valor de un registro especificado tal como está almacenado en el marco de pila.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_registerValue(  
-   ULONG      registerIndex,  
-   ULONGLONG *pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `registerIndex`  
- [in] Uno de los [CV_HREG_e (enumeración)](../../debugger/debug-interface-access/cv-hreg-e.md) valores de enumeración.  
-  
- `pRetVal`  
- [out] Valor almacenado en el registro.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [Enumeración CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)
+Recupera el valor de un registro especificado tal como está almacenado en el marco de pila.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_registerValue(
+   ULONG      registerIndex,
+   ULONGLONG *pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `registerIndex`
+
+[in] Uno de los [CV_HREG_e (enumeración)](../../debugger/debug-interface-access/cv-hreg-e.md) valores de enumeración.
+
+ `pRetVal`
+
+[out] Valor almacenado en el registro.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+- [Enumeración CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

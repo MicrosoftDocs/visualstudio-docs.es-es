@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b2baf119259c749e8da99a9326eb22aa1e034b4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56336002"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646478"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Depurar aplicaciones ASP.NET activas en Azure virtual machines y conjuntos de escalado de máquina virtual de Azure con el depurador de instantáneas
 
@@ -53,7 +53,7 @@ En este tutorial va a:
 1. Adjunte al depurador de instantáneas. Puede usar varios métodos diferentes:
 
     * Elija **Depurar > asociar Snapshot Debugger...** . Seleccione la la aplicación web se implementa en VM/VMSS de Azure y una cuenta de almacenamiento de Azure y, a continuación, haga clic en **adjuntar**.
-  
+
       ![Iniciar al depurador de instantáneas en el menú Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Haga clic con el botón derecho en el proyecto y seleccione **publicar**y, a continuación, en la página de publicación, haga clic en **asociar Snapshot Debugger**. Seleccione la la aplicación web se implementa en VM/VMSS de Azure y una cuenta de almacenamiento de Azure y, a continuación, haga clic en **adjuntar**.
@@ -63,7 +63,7 @@ En este tutorial va a:
     ![Iniciar al depurador de instantáneas en el menú desplegable de F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Mediante el explorador en la nube (**Ver > Cloud Explorer**), haga clic en Azure VM/VMSS se implementa la aplicación web en y seleccionar una cuenta de almacenamiento de Azure y, a continuación, haga clic en **asociar Snapshot Debugger**.
-  
+
       ![Iniciar al depurador de instantáneas desde el Explorador de nube](../debugger/media/snapshot-launch.png)
 
     > [!IMPORTANT]

@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8504ebcbcea9906148f9c3a671f185375d269d83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a688ff56f770f2446384ab34cf7da03d69827de4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766399"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842299"
 ---
 # <a name="signing-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio est
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>¿Por qué debo iniciar sesión en Visual Studio?
  Al iniciar sesión en Visual Studio obtiene las siguientes ventajas:
 
--   **Concede acceso a una amplia gama de ventajas** desde el programa Visual Studio Dev Essentials, como el software gratuito, el aprendizaje, el soporte técnico y mucho más Consulte [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) para obtener más información
+-   **Concede acceso a una amplia gama de ventajas** desde el programa Visual Studio Dev Essentials, como el software gratuito, el aprendizaje, el soporte técnico y mucho más Consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) para obtener más información
 
 -   **Sincroniza la configuración de Visual Studio** : la configuración que ha personalizado, como los enlaces de clave, el diseño de ventana y el tema de color, se aplican inmediatamente al iniciar sesión en Visual Studio en cualquier dispositivo. Vea [Configuración sincronizada en Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 

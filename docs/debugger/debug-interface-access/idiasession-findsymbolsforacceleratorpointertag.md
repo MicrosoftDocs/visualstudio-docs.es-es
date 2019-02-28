@@ -10,39 +10,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a601143161ed17961ae5efd22cdc14c3fbb923
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 72510e9e82c1ec6983075880d4335dee8c0ad23c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924394"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642227"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
-Devuelve una enumeración de símbolos de la variable que el valor de etiqueta especificado corresponde de la principal función de código auxiliar del acelerador.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT findSymbolsForAcceleratorPointerTag (   
-   IDiaSymbol*           parent,  
-   DWORD                 tagValue,  
-   IDiaEnumSymbols**     ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `parent`  
- [in] Un IDiaSymbol que corresponde a la función de código auxiliar de acelerador se va a buscar.  
-  
- `tagValue`  
- [in] El valor de etiqueta de puntero.  
-  
- `ppResult`  
- [out] Un puntero a un `IDiaEnumSymbols` puntero de interfaz que se inicializa con el resultado.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Devuelve una enumeración de símbolos de la variable que el valor de etiqueta especificado corresponde de la principal función de código auxiliar del acelerador.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT findSymbolsForAcceleratorPointerTag ( 
+   IDiaSymbol*           parent,
+   DWORD                 tagValue,
+   IDiaEnumSymbols**     ppResult
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `parent`
+
+[in] Un IDiaSymbol que corresponde a la función de código auxiliar de acelerador se va a buscar.
+
+ `tagValue`
+
+[in] El valor de etiqueta de puntero.
+
+ `ppResult`
+
+[out] Un puntero a un `IDiaEnumSymbols` puntero de interfaz que se inicializa con el resultado.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

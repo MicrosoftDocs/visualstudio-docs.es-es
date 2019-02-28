@@ -12,45 +12,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a7bf8786f2ca066248ada3f1a0473b85681315
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 06ef9eb5969b351d49212e9b940988e7ff14c40e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987000"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636182"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
-Devuelve la parte del ajuste de la dirección inicial del intervalo en el que el símbolo local es válido.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_liveRangeStartAddressOffset (   
-   DWORD* offset  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `offset`  
- [out] Devuelve la parte de desplazamiento del intervalo de direcciones inicial.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
+Devuelve la parte del ajuste de la dirección inicial del intervalo en el que el símbolo local es válido.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_liveRangeStartAddressOffset ( 
+   DWORD* offset
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `offset`
+
+[out] Devuelve la parte de desplazamiento del intervalo de direcciones inicial.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
 > [!NOTE]
->  Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.  
-  
-## <a name="remarks"></a>Comentarios  
- La dirección formada por la sección y el desplazamiento es el principio del intervalo en el que el símbolo es válido.  
-  
- Para obtener la parte de la sección de la dirección, use [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: dia2.h  
-  
- Biblioteca: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.
+
+## <a name="remarks"></a>Comentarios
+ La dirección formada por la sección y el desplazamiento es el principio del intervalo en el que el símbolo es válido.
+
+ Para obtener la parte de la sección de la dirección, use [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).
+
+## <a name="requirements"></a>Requisitos
+ Encabezado: Dia2.h
+
+ Biblioteca: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

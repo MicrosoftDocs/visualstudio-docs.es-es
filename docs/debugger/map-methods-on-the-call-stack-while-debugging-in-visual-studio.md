@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5285149bbefa8230940cfad19b5e0391a1e99bd
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 118b8a6c8d857e626d39cf27d2767f75cd0550ee
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690507"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704818"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Crear un mapa visual de la pila de llamadas durante la depuración (C#, Visual Basic, C++, JavaScript)
 
@@ -54,7 +54,7 @@ Este es un vistazo rápido a un mapa de código:
 ##  <a name="MapStack"></a> Asignar la pila de llamadas
 
 1. En un Visual Studio Enterprise C#, Visual Basic, C++ o JavaScript del proyecto, iniciar la depuración seleccionando **depurar** > **Iniciar depuración** o presionando **F5**.
-   
+
 1. Después de la aplicación entra en modo de interrupción o entra en una función, seleccione **depurar** > **mapa de código**, o bien presione **Ctrl**+**MAYÚS** +**`**.
 
    La pila de llamadas actual aparece en naranja en un nuevo mapa de código:
@@ -73,19 +73,19 @@ Para obtener más información sobre un elemento, mantenga el mouse sobre él y 
 ## <a name="map-external-code"></a>Mapa de código externo
 
 De forma predeterminada, en el mapa solo se muestra su código. Para ver código externo en el mapa:
-  
+
 - Haga clic en el **pila de llamadas** ventana y seleccione **mostrar código externo**:
-  
+
   ![Mostrar código externo mediante la ventana Pila de llamadas](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
 - O bien, anule la selección de **habilitar solo mi código** en Visual Studio **herramientas** (o **depurar**) > **opciones**  >   **Depuración**:
-  
+
   ![Mostrar código externo mediante el cuadro de diálogo Opciones](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
 ## <a name="control-the-maps-layout"></a>Controlar el diseño del mapa
 
-Cambiar el diseño del mapa no afecta al código de algún modo. 
+Cambiar el diseño del mapa no afecta al código de algún modo.
 
-Para controlar el diseño del mapa, seleccione el **diseño** menú en la barra de herramientas del mapa. 
+Para controlar el diseño del mapa, seleccione el **diseño** menú en la barra de herramientas del mapa.
 
 En el **diseño** menú, puede:
 
@@ -95,9 +95,9 @@ En el **diseño** menú, puede:
 
 ##  <a name="MakeNotes"></a> Hacer notas sobre el código
 
-Puede agregar comentarios para realizar un seguimiento de lo que sucede en el código. 
+Puede agregar comentarios para realizar un seguimiento de lo que sucede en el código.
 
-Para agregar un comentario, haga clic en el mapa de código y seleccione **editar** > **nuevo comentario**, a continuación, escriba el comentario. 
+Para agregar un comentario, haga clic en el mapa de código y seleccione **editar** > **nuevo comentario**, a continuación, escriba el comentario.
 
 Para agregar una nueva línea en un comentario, presione **MAYÚS**+**ENTRAR**.
 
@@ -109,11 +109,11 @@ Cuando ejecute la aplicación en el siguiente punto de interrupción o el paso e
 
 ![Actualizar el mapa de código con la siguiente pila de llamadas](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-Para detener la asignación de agregar automáticamente nuevas pilas de llamadas, seleccione ![pila de llamadas Mostrar en mapa de código automáticamente](../debugger/media/debuggermap_automaticupdateicon.gif "pila de llamadas Mostrar en mapa de código automáticamente") en la barra de herramientas del mapa de código. La asignación continúa resaltar las pilas de llamadas existentes. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl**+**MAYÚS**+**`**. 
+Para detener la asignación de agregar automáticamente nuevas pilas de llamadas, seleccione ![pila de llamadas Mostrar en mapa de código automáticamente](../debugger/media/debuggermap_automaticupdateicon.gif "pila de llamadas Mostrar en mapa de código automáticamente") en la barra de herramientas del mapa de código. La asignación continúa resaltar las pilas de llamadas existentes. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl**+**MAYÚS**+**`**.
 
 ##  <a name="AddRelatedCode"></a> Agregar código relacionado al mapa
 
-Ahora que tiene una asignación, en C# o Visual Basic, puede agregar elementos tales como campos, propiedades y otros métodos para realizar un seguimiento de lo que sucede en el código. 
+Ahora que tiene una asignación, en C# o Visual Basic, puede agregar elementos tales como campos, propiedades y otros métodos para realizar un seguimiento de lo que sucede en el código.
 
 Para ir a la definición de un método en el código, haga doble clic en el método en el mapa, o selecciónelo y presione **F12**, o haga clic en él y seleccione **ir a definición**.
 
@@ -151,7 +151,7 @@ Continúe con la compilación del mapa para ver más código.
 
 Puede exportar un mapa, enviarlo a otros usuarios con Microsoft Outlook, guárdelo en la solución y consultarla en el control de versiones.
 
-Para compartir o guardar el mapa, utilice **compartir** en la barra de herramientas del mapa de código. 
+Para compartir o guardar el mapa, utilice **compartir** en la barra de herramientas del mapa de código.
 
 ![Mapa de código de pila de llamadas de recurso compartido con otras personas](../debugger/media/debuggermap_sharewithothers.png "mapa de código de pila de llamadas de recurso compartido con otros usuarios")
 

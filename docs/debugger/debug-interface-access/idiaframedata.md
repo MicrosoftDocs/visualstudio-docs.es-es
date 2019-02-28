@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d710699912a05839ac32c582f40571b04b2de7c2
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 4e4adb0747ce569bc372daf0d36cfe1719a2ff61
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155754"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597756"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Expone los detalles de un marco de pila.
@@ -120,7 +120,7 @@ Biblioteca: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Vea también
-[Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
-[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)  
-[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)
+- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+- [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)
+- [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)

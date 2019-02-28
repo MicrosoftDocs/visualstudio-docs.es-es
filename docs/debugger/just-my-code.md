@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6630f277ef24a6e84e8dc8d6b0fbfa58d720626f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335524"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722491"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Depurar código de usuario sólo con sólo mi código
 
@@ -80,7 +80,7 @@ Si se produce una excepción no controlada en código de no usuario, el depurado
 Si se habilitan excepciones de primera oportunidad para la excepción, la línea de código de usuario que realiza la llamada está resaltada en verde en el código fuente. El **pila de llamadas** ventana muestra el marco anotado con la etiqueta **[código externo]**.
 
 ## <a name="BKMK_C___Just_My_Code"></a> Solo mi código de C++
-  
+
 A partir de Visual Studio 2017 versión 15,8, solo mi código para el código también se admite la ejecución paso a paso. Esta característica también requiere el uso de la [/JMC (solo mi código de depuración)](/cpp/build/reference/jmc) modificador del compilador. El modificador está habilitado de forma predeterminada en los proyectos de C++. Para **pila de llamadas** ventana y llame al soporte técnico de la pila en solo mi código, no se requiere el modificador /JMC.
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> Para ser clasificado como código de usuario, se debe cargar el archivo PDB para el archivo binario que contiene el código de usuario por el depurador (usar la **módulos** ventana para comprobarlo).
@@ -90,9 +90,9 @@ Para el comportamiento de la pila de llamadas, como en el **pila de llamadas** v
 - Funciones con información de origen eliminada en su archivo de símbolos.
 - Funciones en las que los archivos de símbolos indican que no hay ningún archivo de código fuente correspondiente al marco de pila.
 - Funciones especificadas en  *\*.natjmc* archivos en el *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* carpeta.
-  
+
 Para el comportamiento de ejecución paso a paso de código, solo mi código en C++ considera que solo estas funciones se *código de no usuario*:
-  
+
 - Funciones para la que no se ha cargado el archivo PDB correspondiente en el depurador.
 - Funciones especificadas en  *\*.natjmc* archivos en el *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* carpeta.
 
@@ -108,117 +108,117 @@ Si no hay ningún código de usuario más, depuración continúa hasta que final
 
 Si el depurador se interrumpe en el código que no es de usuario (por ejemplo, usa **depurar** > **interrumpir todos** y poner en pausa en el código de no usuario), el avance continúa en el código que no es de usuario.
 
-Si el depurador llega a una excepción, se detiene en la excepción, ya sea en el código de usuario o que no es de usuario. **No controla el usuario** opciones en el **configuración de excepciones** se pasan por alto el cuadro de diálogo.   
-  
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizar la pila de llamadas de C++ y el comportamiento del recorrido de código  
+Si el depurador llega a una excepción, se detiene en la excepción, ya sea en el código de usuario o que no es de usuario. **No controla el usuario** opciones en el **configuración de excepciones** se pasan por alto el cuadro de diálogo.
+
+###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizar la pila de llamadas de C++ y el comportamiento del recorrido de código
 
 Para los proyectos de C++, puede especificar los módulos, archivos de código fuente y las funciones del **pila de llamadas** ventana trata como código de no usuario especificándolas en  *\*.natjmc* archivos. Esta personalización también se aplica al código de ejecución paso a paso si usa el compilador más reciente (vea [C++ solo mi código](#BKMK_CPP_User_and_non_user_code)).
-  
-- Para especificar código que no es de usuario para todos los usuarios del equipo de Visual Studio, agregue el archivo *.natjmc* a la carpeta *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.  
-- Para especificar código que no es de usuario para un usuario individual, agregue el archivo *.natjmc* a la carpeta *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.  
 
-Un *.natjmc* archivo es un archivo XML con esta sintaxis:  
+- Para especificar código que no es de usuario para todos los usuarios del equipo de Visual Studio, agregue el archivo *.natjmc* a la carpeta *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.
+- Para especificar código que no es de usuario para un usuario individual, agregue el archivo *.natjmc* a la carpeta *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.
 
-```xml  
-<?xml version="1.0" encoding="utf-8"?>  
-<NonUserCode xmlns="http://schemas.microsoft.com/vstudio/debugger/jmc/2015">  
-  
-  <!-- Modules -->  
-  <Module Name="ModuleSpec" />  
-  <Module Name="ModuleSpec" Company="CompanyName" />  
-  
-  <!-- Files -->  
-  <File Name="FileSpec"/>  
-  
-  <!-- Functions -->  
-  <Function Name="FunctionSpec" />  
-  <Function Name="FunctionSpec" Module ="ModuleSpec" />  
-  <Function Name="FunctionSpec" Module ="ModuleSpec" ExceptionImplementation="true" />  
-  
-</NonUserCode>  
-  
-```  
+Un *.natjmc* archivo es un archivo XML con esta sintaxis:
 
- **Atributos del elemento Module**  
-  
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`Name`|Obligatorio. Ruta de acceso completa al módulo o los módulos. Puede usar los caracteres comodín de Windows `?` (cero o un carácter) y `*` (cero o más caracteres). Por ejemplo,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al depurador que trate como código externo todos los módulos de *\3rdParty\UtilLibs* en cualquier unidad.|  
-|`Company`|Opcional. Nombre de la compañía que publica el módulo que está incrustado en el archivo ejecutable. Puede utilizar este atributo para eliminar la ambigüedad de los módulos.|  
-  
- **Atributos del elemento File**  
-  
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`Name`|Obligatorio. Ruta de acceso completa del archivo o archivos de código fuente que se van a tratar como código externo. Puede usar los caracteres comodín `?` y `*` de Windows para especificar la ruta de acceso.|  
-  
- **Atributos del elemento Function**  
-  
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`Name`|Obligatorio. Nombre completo de la función que se va a tratar como código externo.|  
-|`Module`|Opcional. Nombre o ruta de acceso completa al módulo que contiene la función. Puede utilizar este atributo para eliminar la ambigüedad de funciones que tienen el mismo nombre.|  
-|`ExceptionImplementation`|Cuando se establece en `true`, la pila de llamadas muestra la función que produjo la excepción en lugar de esta función.|  
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<NonUserCode xmlns="http://schemas.microsoft.com/vstudio/debugger/jmc/2015">
+
+  <!-- Modules -->
+  <Module Name="ModuleSpec" />
+  <Module Name="ModuleSpec" Company="CompanyName" />
+
+  <!-- Files -->
+  <File Name="FileSpec"/>
+
+  <!-- Functions -->
+  <Function Name="FunctionSpec" />
+  <Function Name="FunctionSpec" Module ="ModuleSpec" />
+  <Function Name="FunctionSpec" Module ="ModuleSpec" ExceptionImplementation="true" />
+
+</NonUserCode>
+
+```
+
+ **Atributos del elemento Module**
+
+|Atributo|Descripción|
+|---------------|-----------------|
+|`Name`|Obligatorio. Ruta de acceso completa al módulo o los módulos. Puede usar los caracteres comodín de Windows `?` (cero o un carácter) y `*` (cero o más caracteres). Por ejemplo,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al depurador que trate como código externo todos los módulos de *\3rdParty\UtilLibs* en cualquier unidad.|
+|`Company`|Opcional. Nombre de la compañía que publica el módulo que está incrustado en el archivo ejecutable. Puede utilizar este atributo para eliminar la ambigüedad de los módulos.|
+
+ **Atributos del elemento File**
+
+|Atributo|Descripción|
+|---------------|-----------------|
+|`Name`|Obligatorio. Ruta de acceso completa del archivo o archivos de código fuente que se van a tratar como código externo. Puede usar los caracteres comodín `?` y `*` de Windows para especificar la ruta de acceso.|
+
+ **Atributos del elemento Function**
+
+|Atributo|Descripción|
+|---------------|-----------------|
+|`Name`|Obligatorio. Nombre completo de la función que se va a tratar como código externo.|
+|`Module`|Opcional. Nombre o ruta de acceso completa al módulo que contiene la función. Puede utilizar este atributo para eliminar la ambigüedad de funciones que tienen el mismo nombre.|
+|`ExceptionImplementation`|Cuando se establece en `true`, la pila de llamadas muestra la función que produjo la excepción en lugar de esta función.|
 
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personalizar el comportamiento de ejecución paso a paso de C++ independiente de la configuración de solo mi código
 
 En los proyectos de C++, puede especificar funciones salten enumera como código que no son de usuario en  *\*.natstepfilter* archivos. Funciones que se enumeran en  *\*.natstepfilter* archivos no son dependientes de la configuración de solo mi código.
-  
-- Para especificar código que no son de usuario para todos los usuarios locales de Visual Studio, agregue el *.natstepfilter* del archivo a la *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* carpeta.  
-- Para especificar código que no es de usuario para un usuario individual, agregue el archivo *.natstepfilter* a la carpeta *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.  
-  
-Un *.natstepfilter* archivo es un archivo XML con esta sintaxis:  
-  
-```xml  
-<?xml version="1.0" encoding="utf-8"?>  
-<StepFilter xmlns="http://schemas.microsoft.com/vstudio/debugger/natstepfilter/2010">  
-    <Function>  
-        <Name>FunctionSpec</Name>  
-        <Action>StepAction</Action>  
-    </Function>  
-    <Function>  
-        <Name>FunctionSpec</Name>  
-        <Module>ModuleSpec</Module>  
-        <Action>StepAction</Action>  
-    </Function>  
-</StepFilter>  
-  
-```  
-  
-|Elemento|Descripción|  
-|-------------|-----------------|  
-|`Function`|Obligatorio. Especifica una o más funciones como funciones que no son de usuario.|  
-|`Name`|Obligatorio. Expresión regular con formato ECMA-262 que especifica el nombre de función completo que debe coincidir. Por ejemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al depurador que todos los métodos de `MyNS::MyClass` deben considerarse código que no es de usuario. La coincidencia distingue mayúsculas de minúsculas.|  
-|`Module`|Opcional. Expresión regular con formato ECMA-262 que especifica la ruta de acceso completa al módulo que contiene la función. La búsqueda no distingue entre mayúsculas y minúsculas.|  
-|`Action`|Obligatorio. Uno de estos valores que distingue mayúsculas y minúsculas:<br /><br /> `NoStepInto`  -indica al depurador que omita la función.<br /> `StepInto`  -indica al depurador paso a paso por la función, invalidando cualquier otro `NoStepInto` para la función coincidente.| 
-  
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> Solo mi código de JavaScript  
 
-<a name="BKMK_JS_User_and_non_user_code"></a> Solo mi código de JavaScript controla la ejecución paso a paso y la presentación de la pila de llamadas categorizando el código en una de estas clasificaciones:  
+- Para especificar código que no son de usuario para todos los usuarios locales de Visual Studio, agregue el *.natstepfilter* del archivo a la *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* carpeta.
+- Para especificar código que no es de usuario para un usuario individual, agregue el archivo *.natstepfilter* a la carpeta *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.
 
-|||  
-|-|-|  
-|**MyCode**|Código de usuario que posee y controla.|  
-|**LibraryCode**|Código de no usuario desde su aplicación y bibliotecas que utiliza habitualmente se basa en para funcionar correctamente (por ejemplo, WinJS o jQuery).|  
-|**UnrelatedCode**|Código que no son de usuario en su aplicación que no posee y la aplicación no se basa en funcione correctamente. Por ejemplo, un SDK que muestra anuncios publicitarios podrían ser UnrelatedCode. En los proyectos UWP, cualquier código que se carga en la aplicación desde un URI HTTP o HTTPS también se considera UnrelatedCode.|  
+Un *.natstepfilter* archivo es un archivo XML con esta sintaxis:
 
-El depurador de JavaScript clasifica el código como usuario o el usuario en este orden:  
-  
-1. Las clasificaciones predeterminadas.  
-   -   Script que se ejecuta pasando una cadena a la proporcionada por el host `eval` función es **MyCode**.  
-   -   Script que se ejecuta pasando una cadena a la `Function` constructor es **LibraryCode**.  
-   -   Secuencia de comandos en una referencia de framework, como WinJS o el SDK de Azure, es **LibraryCode**.  
-   -   Script que se ejecuta pasando una cadena a la `setTimeout`, `setImmediate`, o `setInterval` functions es **UnrelatedCode**.  
-   
-2. Las clasificaciones especificadas para todos los proyectos de JavaScript de Visual Studio en el *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* archivo.  
-   
-3. Clasificaciones en el *mycode.json* archivo del proyecto actual.  
-  
-Cada paso de clasificación invalida los pasos anteriores. 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<StepFilter xmlns="http://schemas.microsoft.com/vstudio/debugger/natstepfilter/2010">
+    <Function>
+        <Name>FunctionSpec</Name>
+        <Action>StepAction</Action>
+    </Function>
+    <Function>
+        <Name>FunctionSpec</Name>
+        <Module>ModuleSpec</Module>
+        <Action>StepAction</Action>
+    </Function>
+</StepFilter>
 
-Todo el código restante se clasifica como **MyCode**.  
+```
 
-Puede modificar las clasificaciones predeterminadas y clasificar determinados archivos y direcciones URL como código de usuario o que no son de usuario, agregando un *.json* archivo denominado *mycode.json* a la carpeta raíz de un proyecto de JavaScript. Consulte [personalizar solo mi código de JavaScript](#BKMK_JS_Customize_Just_My_Code). 
+|Elemento|Descripción|
+|-------------|-----------------|
+|`Function`|Obligatorio. Especifica una o más funciones como funciones que no son de usuario.|
+|`Name`|Obligatorio. Expresión regular con formato ECMA-262 que especifica el nombre de función completo que debe coincidir. Por ejemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al depurador que todos los métodos de `MyNS::MyClass` deben considerarse código que no es de usuario. La coincidencia distingue mayúsculas de minúsculas.|
+|`Module`|Opcional. Expresión regular con formato ECMA-262 que especifica la ruta de acceso completa al módulo que contiene la función. La búsqueda no distingue entre mayúsculas y minúsculas.|
+|`Action`|Obligatorio. Uno de estos valores que distingue mayúsculas y minúsculas:<br /><br /> `NoStepInto`  -indica al depurador que omita la función.<br /> `StepInto`  -indica al depurador paso a paso por la función, invalidando cualquier otro `NoStepInto` para la función coincidente.|
+
+##  <a name="BKMK_JavaScript_Just_My_Code"></a> Solo mi código de JavaScript
+
+<a name="BKMK_JS_User_and_non_user_code"></a> Solo mi código de JavaScript controla la ejecución paso a paso y la presentación de la pila de llamadas categorizando el código en una de estas clasificaciones:
+
+|||
+|-|-|
+|**MyCode**|Código de usuario que posee y controla.|
+|**LibraryCode**|Código de no usuario desde su aplicación y bibliotecas que utiliza habitualmente se basa en para funcionar correctamente (por ejemplo, WinJS o jQuery).|
+|**UnrelatedCode**|Código que no son de usuario en su aplicación que no posee y la aplicación no se basa en funcione correctamente. Por ejemplo, un SDK que muestra anuncios publicitarios podrían ser UnrelatedCode. En los proyectos UWP, cualquier código que se carga en la aplicación desde un URI HTTP o HTTPS también se considera UnrelatedCode.|
+
+El depurador de JavaScript clasifica el código como usuario o el usuario en este orden:
+
+1. Las clasificaciones predeterminadas.
+   -   Script que se ejecuta pasando una cadena a la proporcionada por el host `eval` función es **MyCode**.
+   -   Script que se ejecuta pasando una cadena a la `Function` constructor es **LibraryCode**.
+   -   Secuencia de comandos en una referencia de framework, como WinJS o el SDK de Azure, es **LibraryCode**.
+   -   Script que se ejecuta pasando una cadena a la `setTimeout`, `setImmediate`, o `setInterval` functions es **UnrelatedCode**.
+
+2. Las clasificaciones especificadas para todos los proyectos de JavaScript de Visual Studio en el *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* archivo.
+
+3. Clasificaciones en el *mycode.json* archivo del proyecto actual.
+
+Cada paso de clasificación invalida los pasos anteriores.
+
+Todo el código restante se clasifica como **MyCode**.
+
+Puede modificar las clasificaciones predeterminadas y clasificar determinados archivos y direcciones URL como código de usuario o que no son de usuario, agregando un *.json* archivo denominado *mycode.json* a la carpeta raíz de un proyecto de JavaScript. Consulte [personalizar solo mi código de JavaScript](#BKMK_JS_Customize_Just_My_Code).
 
 <a name="BKMK_JS_Stepping_behavior"></a> Durante la depuración de JavaScript:
 

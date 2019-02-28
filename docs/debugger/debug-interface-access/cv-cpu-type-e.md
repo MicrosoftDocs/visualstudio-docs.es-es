@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd089cc22c69978485c9277a67b44114b66c38b
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ab2081d5f75eea3ad23db4151f43ed882bdf74cc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315255"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599743"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 Especifica el procesador de destino.
@@ -101,5 +101,5 @@ Los valores de esta enumeración se devuelven mediante una llamada a la [Get_pla
 Encabezado: cvconst.h
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)
+- [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

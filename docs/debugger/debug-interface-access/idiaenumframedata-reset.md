@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aab10b0f6c5027f5e91ac48c99d5ee3f8e679d5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a92742d1c3286aa8e6fd3bc97254066fab25a55c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939743"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641785"
 ---
 # <a name="idiaenumframedatareset"></a>IDiaEnumFrameData::Reset
-Restablece una secuencia de enumeración al principio.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-HRESULT Reset();  
-```  
-  
-## <a name="return-value"></a>Valor devuelto  
- Devuelve `S_OK`.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+Restablece una secuencia de enumeración al principio.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+HRESULT Reset();
+```
+
+## <a name="return-value"></a>Valor devuelto
+ Devuelve `S_OK`.
+
+## <a name="see-also"></a>Vea también
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

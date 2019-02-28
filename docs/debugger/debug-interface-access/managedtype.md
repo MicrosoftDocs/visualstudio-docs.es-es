@@ -14,24 +14,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36352d88a777b33d65853e17144f771a5cd4d5c5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0c121e996972b47a91a018d910a5d3677cb4cffa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987601"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607465"
 ---
 # <a name="managedtype"></a>ManagedType
-Un tipo administrado (cualquier símbolo definido por los metadatos, o nativo a la funcionalidad de administración de memoria y los recursos de lenguajes como C#) se identifica mediante un `SymTagManagedType` símbolos.  
-  
-## <a name="properties"></a>Propiedades  
- La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.  
-  
-|Propiedad.|Tipo de datos|Descripción|  
-|--------------|---------------|-----------------|  
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nombre de los símbolos administrados.|  
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Id. de índice de símbolo.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Devuelve `SymTagManagedType` (uno de los [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) valores).|  
-  
-## <a name="see-also"></a>Vea también  
- [Jerarquía de clases de tipos de símbolos](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
+Un tipo administrado (cualquier símbolo definido por los metadatos, o nativo a la funcionalidad de administración de memoria y los recursos de lenguajes como C#) se identifica mediante un `SymTagManagedType` símbolos.
+
+## <a name="properties"></a>Propiedades
+ La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.
+
+|Propiedad.|Tipo de datos|Descripción|
+|--------------|---------------|-----------------|
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nombre de los símbolos administrados.|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Id. de índice de símbolo.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Devuelve `SymTagManagedType` (uno de los [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) valores).|
+
+## <a name="see-also"></a>Vea también
+- [Jerarquía de clases de tipos de símbolos](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

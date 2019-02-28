@@ -8,44 +8,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ac619a77dbe8f12b3436f2b1b087478c19473b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dcce2a7a505c5ac5aa1db3232055f8b37b7e64ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001035"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628953"
 ---
 # <a name="overviews-performance-tools"></a>Información general (herramientas de rendimiento)
-Esta sección proporciona información sobre los conceptos y la terminología relacionados con las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], herramientas que le sirven para medir las características de rendimiento de una aplicación en desarrollo.  
-  
-## <a name="in-this-section"></a>En esta sección  
- [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md)  
- Conozca los aspectos básicos de la generación de perfiles de rendimiento con las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
- [Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)  
- Describe las propiedades que se pueden usar para configurar una sesión de rendimiento.  
-  
- [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)  
- Obtenga información acerca de los valores de datos que se presentan cuando se utiliza el método de generación de perfiles de muestreo.  
-  
- [Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)  
- Obtenga información acerca de los valores de datos que se presentan cuando se utiliza el método de generación de perfiles de instrumentación.  
-  
- [Descripción de los valores de datos de asignación de memoria y duración de objetos](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
- Obtenga información acerca de los valores de datos que se presentan cuando se utiliza el método de generación de perfiles de memoria de .NET.  
-  
- [Descripción de los valores de datos de contención de recursos](../profiling/understanding-resource-contention-data-values.md)  
- Obtenga información acerca de los valores de datos que se presentan cuando se utiliza el método de generación de perfiles de simultaneidad.  
-  
- [Ventana Explorador de rendimiento](../profiling/performance-explorer-window.md)  
- Describe la ventana que se utiliza para configurar e iniciar sesiones de rendimiento.  
-  
- [Contadores de Windows y de CPU](../profiling/cpu-and-windows-counters.md)  
- Obtenga información sobre los contadores de rendimiento de Windows y de CPU que pueden proporcionar datos de rendimiento adicionales en una sesión de rendimiento.  
-  
- [Generación de perfiles y seguridad en Windows Vista](../profiling/profiling-and-windows-vista-security.md)  
- Obtenga información acerca de los problemas y los pasos necesarios para recopilar datos de muestreo y generar perfiles de aplicaciones entre sesiones en [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].  
-  
-## <a name="see-also"></a>Vea también  
- [Introducción](../profiling/getting-started-with-performance-tools.md)   
- [Explorador de rendimiento](../profiling/performance-explorer.md)
+Esta sección proporciona información sobre los conceptos y la terminología relacionados con las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], herramientas que le sirven para medir las características de rendimiento de una aplicación en desarrollo.
+
+## <a name="in-this-section"></a>En esta sección
+- [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md)
+
+ Conozca los aspectos básicos de la generación de perfiles de rendimiento con las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+- [Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)
+
+ Describe las propiedades que se pueden usar para configurar una sesión de rendimiento.
+
+- [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)
+
+ Obtenga información acerca de los valores de datos que se presentan cuando se utiliza el método de generación de perfiles de muestreo.
+
+- [Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)
+
+ Obtenga información acerca de los valores de datos que se presentan cuando se utiliza el método de generación de perfiles de instrumentación.
+
+- [Descripción de los valores de datos de asignación de memoria y duración de objetos](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
+
+ Obtenga información acerca de los valores de datos que se presentan cuando se utiliza el método de generación de perfiles de memoria de .NET.
+
+- [Descripción de los valores de datos de contención de recursos](../profiling/understanding-resource-contention-data-values.md)
+
+ Obtenga información acerca de los valores de datos que se presentan cuando se utiliza el método de generación de perfiles de simultaneidad.
+
+- [Ventana Explorador de rendimiento](../profiling/performance-explorer-window.md)
+
+ Describe la ventana que se utiliza para configurar e iniciar sesiones de rendimiento.
+
+- [Contadores de Windows y de CPU](../profiling/cpu-and-windows-counters.md)
+
+ Obtenga información sobre los contadores de rendimiento de Windows y de CPU que pueden proporcionar datos de rendimiento adicionales en una sesión de rendimiento.
+
+- [Generación de perfiles y seguridad en Windows Vista](../profiling/profiling-and-windows-vista-security.md)
+
+ Obtenga información acerca de los problemas y los pasos necesarios para recopilar datos de muestreo y generar perfiles de aplicaciones entre sesiones en [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].
+
+## <a name="see-also"></a>Vea también
+
+- [Introducción](../profiling/getting-started-with-performance-tools.md)
+- [Explorador de rendimiento](../profiling/performance-explorer.md)

@@ -26,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bf131634dc673fdeefe61fa2238c35fcc2ed8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e4c9d783fb68372e67f41eb84a1697ea3e1123b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938466"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688217"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: No es posible iniciar la depuración en el servidor web
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: No se puede iniciar la depuración en el servidor Web
 
 Al intentar depurar una aplicación de ASP.NET que se ejecutan en un servidor Web, puede aparecer este mensaje de error: `Unable to start debugging on the Web server`.
 
-A menudo, este error se produce porque se ha producido un error o cambio de configuración que requiere una actualización para los grupos de aplicaciones, el restablecimiento de IIS o ambos. Puede restablecer IIS, abra un símbolo del sistema con privilegios elevados y escriba `iisreset`. 
+A menudo, este error se produce porque se ha producido un error o cambio de configuración que requiere una actualización para los grupos de aplicaciones, el restablecimiento de IIS o ambos. Puede restablecer IIS, abra un símbolo del sistema con privilegios elevados y escriba `iisreset`.
 
 ## <a name="specificerrors"></a>¿Qué es el mensaje de error detallado?
 
@@ -61,7 +61,7 @@ El `Unable to start debugging on the Web server` mensaje es genérico. Normalmen
 
 ## <a name="web_server_config"></a> El servidor web no está configurado correctamente
 
-- Consulte [Error: ](../debugger/error-the-web-server-is-not-configured-correctly.md) El servidor web no está configurado correctamente
+- Consulte [Error: el servidor web no está configurado correctamente](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
 ## <a name="unabletoconnect"></a> No se puede conectar al servidor Web
 
@@ -106,12 +106,12 @@ Además, si usa un archivo de HOSTS, asegúrese de que esté configurado correct
 
 ##  <a name="vxtbshttpservererrorsthingstocheck"></a> Compruebe la configuración de IIS
 
-Después de realizar los pasos detallados aquí para resolver el problema y antes de intentar de nuevo depurar, es posible que también deba restablezca IIS. Para ello, abra un símbolo del sistema con privilegios elevados y escriba `iisreset`. 
+Después de realizar los pasos detallados aquí para resolver el problema y antes de intentar de nuevo depurar, es posible que también deba restablezca IIS. Para ello, abra un símbolo del sistema con privilegios elevados y escriba `iisreset`.
 
-* Detener y reiniciar los grupos de aplicaciones de IIS y vuelva a intentar. 
+* Detener y reiniciar los grupos de aplicaciones de IIS y vuelva a intentar.
 
     El grupo de aplicaciones puede haberse detenido como resultado un error. O bien, otro cambio de configuración que ha realizado puede requerir que se detenga y reinicie el grupo de aplicaciones.
-    
+
     > [!NOTE]
     > Si mantiene detener el grupo de aplicaciones, deberá desinstalar el módulo URL Rewrite desde el Panel de Control. Puede volver a instalarlo mediante el instalador de plataforma Web (WebPI). Esto puede ocurrir después de una actualización del sistema significativos.
 
@@ -120,7 +120,7 @@ Después de realizar los pasos detallados aquí para resolver el problema y ante
     El grupo de aplicaciones puede configurarse para una versión de ASP.NET que no coincide con el proyecto de Visual Studio. Actualice la versión ASP.NET en el grupo de aplicaciones y reinícielo. Para obtener información detallada, consulte [IIS 8.0 utilizando ASP.NET 3.5 y ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     Además, si han cambiado las credenciales de contraseña, deberá actualizarlos en el grupo de aplicaciones o sitio Web.  En el grupo de aplicaciones, actualice las credenciales en **configuración avanzada > modelo de proceso > identidad**. Para el sitio Web, actualizar las credenciales en **configuración básica > Conectar como...** . Reinicie el grupo de aplicaciones.
-    
+
 * Compruebe que la carpeta de aplicación Web tiene los permisos adecuados.
 
     Asegúrese de que se asigne a IIS_IUSRS, IUSR, o el usuario específico asociado con el [AppPool](/iis/manage/configuring-security/application-pool-identities) de lectura y ejecución de derechos para la carpeta de aplicación Web. Corrija el problema y reinicie el grupo de aplicaciones.
@@ -128,11 +128,11 @@ Después de realizar los pasos detallados aquí para resolver el problema y ante
 * Asegúrese de que está instalada la versión correcta de ASP.NET en IIS.
 
     No coinciden las versiones de ASP.NET en IIS y en el proyecto de Visual Studio pueden causar este problema. Es posible que deba establecer la versión de .NET framework en el archivo web.config. Para instalar ASP.NET en IIS, use el [instalador de plataforma Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Consulte también [IIS 8.0 utilizando ASP.NET 3.5 y ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) o, para ASP.NET Core, [Host en Windows con IIS](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 * Resolver errores de autenticación si solo usa la dirección IP
 
      De manera predeterminada, se asume que las direcciones IP forman parte de Internet y la autenticación NTLM no se realiza a través de Internet. Si se configura el sitio web en IIS para requerir la autenticación, se produce un error en esta autenticación. Para corregir este problema, puede especificar el nombre del equipo remoto en lugar de la dirección IP.
-     
+
 ## <a name="other-causes"></a>Otras causas
 
 Si la configuración de IIS no está causando el problema, siga estos pasos:
@@ -140,7 +140,7 @@ Si la configuración de IIS no está causando el problema, siga estos pasos:
 - Reinicie Visual Studio con privilegios de administrador y vuelva a intentarlo.
 
     Algunos escenarios de depuración de ASP.NET como el uso de Web Deploy requieren privilegios elevados para Visual Studio.
-    
+
 - Si se ejecutan varias instancias de Visual Studio, vuelva a abrir el proyecto en una instancia de Visual Studio (con privilegios de administrador) y vuelva a intentarlo.
 
 - Si está utilizando un archivo de HOSTS con direcciones locales, pruebe a usar la dirección de bucle invertido en lugar de la dirección IP del equipo.
@@ -152,12 +152,12 @@ Si la configuración de IIS no está causando el problema, siga estos pasos:
 * Abrir la página de localhost en el explorador en el servidor.
 
      Si IIS no está instalado correctamente, debería obtener errores al escribir `http://localhost` en un explorador.
-     
+
      Para obtener más información sobre la implementación en IIS, consulte [IIS 8.0 utilizando ASP.NET 3.5 y ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) y, para ASP.NET Core, [Host en Windows con IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Crear una aplicación ASP.NET básica en el servidor (o usar un archivo web.config básico).
 
     Si no se puede obtener la aplicación para que funcione con el depurador, intente crear una aplicación ASP.NET básica localmente en el servidor e intente depurar la aplicación básica. (Es posible que desee usar la plantilla predeterminada ASP.NET MVC.) Si se puede depurar una aplicación básica, que puede ayudarle a identificar cuál es la diferencia entre las dos configuraciones. Busque diferencias en la configuración en el archivo web.config, como las reglas de reescritura de direcciones URL.
 
-## <a name="see-also"></a>Vea también  
- [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Vea también
+- [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

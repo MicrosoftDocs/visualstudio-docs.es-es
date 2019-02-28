@@ -12,50 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f728551f97c0b402cb4a9f8294a5401759cb338c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019364"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689556"
 ---
 # <a name="windows-view"></a>Vista Ventanas
-Cuando abra por primera vez Spy ++, vista de Windows muestra un árbol de todas las ventanas y controles en el sistema. Se muestran el nombre de identificador y la clase de ventana. La ventana del escritorio actual está en la parte superior del árbol. Todas las demás ventanas son elementos secundarios del escritorio y se muestran según la jerarquía de ventana estándar. Las ventanas relacionadas aparecen en las listas pueden expandir con una sangría debajo de sus elementos primarios.  
-  
- La siguiente ilustración muestra una vista de Spy ++ Windows típica con el nodo superior expandido.  
-  
- ![Spy&#43; &#43; Windows Vista](../debugger/media/spy--_windowsview.png "Spy ++ _WindowsView")  
-Vista de ventanas de Spy++  
-  
- La ventana del escritorio actual está en la parte superior del árbol. Todas las demás ventanas son elementos secundarios del escritorio y se muestran según la jerarquía de la ventana estándar, con ventanas relacionadas se ordenan por orden Z. Puede expandir o contraer cualquier nodo primario del árbol, haga clic en el + o - símbolo situado junto al nodo.  
-  
- Cuando la vista de Windows tiene el foco, puede usar la herramienta de búsqueda en el [cuadro de diálogo Buscar ventana](../debugger/window-search-dialog-box.md) para mostrar información de cualquier ventana abierta en el sistema.  
-  
-## <a name="in-this-section"></a>En esta sección  
- [Cómo: Uso de la herramienta de búsqueda](../debugger/how-to-use-the-finder-tool.md)  
- Muestra cómo esta herramienta examina las ventanas para las propiedades o los mensajes.  
-  
- [Cómo: Búsqueda de una ventana en la vista Ventanas](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- Explica cómo buscar una ventana específica en la vista de Windows.  
-  
- [Cómo: Mostrar propiedades de ventana](../debugger/how-to-display-window-properties.md) m  
- Procedimientos para abrir el cuadro de diálogo Propiedades de la ventana.  
-  
-## <a name="related-sections"></a>Secciones relacionadas  
- [Vistas de Spy++](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.  
-  
- [Usar Spy++](../debugger/using-spy-increment.md)  
- Presenta la herramienta Spy ++ y explica cómo se puede usar.  
-  
- [Cuadro de diálogo Buscar ventana](../debugger/find-window-dialog-box.md)  
- Se usa para ver las propiedades o los mensajes de una ventana específica.  
-  
- [Cuadro de diálogo Búsqueda de ventana](../debugger/window-search-dialog-box.md)  
- Se usa para encontrar el nodo de una ventana específica en la vista de Windows.  
-  
- [Cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md)  
- Se utiliza para mostrar las propiedades de una ventana seleccionado en Windows Vista.  
-  
- [Referencia de Spy++](../debugger/spy-increment-reference.md)  
- Incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.
+Cuando abra por primera vez Spy ++, vista de Windows muestra un árbol de todas las ventanas y controles en el sistema. Se muestran el nombre de identificador y la clase de ventana. La ventana del escritorio actual está en la parte superior del árbol. Todas las demás ventanas son elementos secundarios del escritorio y se muestran según la jerarquía de ventana estándar. Las ventanas relacionadas aparecen en las listas pueden expandir con una sangría debajo de sus elementos primarios.
+
+ La siguiente ilustración muestra una vista de Spy ++ Windows típica con el nodo superior expandido.
+
+ ![Spy&#43; &#43; Windows Vista](../debugger/media/spy--_windowsview.png "Spy ++ _WindowsView") Spy ++ Windows Vista
+
+ La ventana del escritorio actual está en la parte superior del árbol. Todas las demás ventanas son elementos secundarios del escritorio y se muestran según la jerarquía de la ventana estándar, con ventanas relacionadas se ordenan por orden Z. Puede expandir o contraer cualquier nodo primario del árbol, haga clic en el + o - símbolo situado junto al nodo.
+
+ Cuando la vista de Windows tiene el foco, puede usar la herramienta de búsqueda en el [cuadro de diálogo Buscar ventana](../debugger/window-search-dialog-box.md) para mostrar información de cualquier ventana abierta en el sistema.
+
+## <a name="in-this-section"></a>En esta sección
+ [Cómo: usar la herramienta de búsqueda](../debugger/how-to-use-the-finder-tool.md) muestra cómo esta herramienta examina las ventanas para las propiedades o los mensajes.
+
+ [Cómo: buscar una ventana de Windows Vista](../debugger/how-to-search-for-a-window-in-windows-view.md) explica cómo buscar una ventana específica en la vista de Windows.
+
+ [Cómo: mostrar propiedades de la ventana](../debugger/how-to-display-window-properties.md) m procedimientos para abrir el cuadro de diálogo Propiedades de la ventana.
+
+## <a name="related-sections"></a>Secciones relacionadas
+ [Vistas de Spy ++](../debugger/spy-increment-views.md) explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.
+
+ [Usar Spy ++](../debugger/using-spy-increment.md) presenta la herramienta Spy ++ y explica cómo se puede usar.
+
+ [Ventana cuadro de diálogo Buscar](../debugger/find-window-dialog-box.md) utilizado para ver las propiedades o los mensajes de una ventana específica.
+
+ [Cuadro de diálogo Buscar ventana](../debugger/window-search-dialog-box.md) usa para encontrar el nodo de una ventana específica en la vista de Windows.
+
+ [Cuadro de diálogo de propiedades de ventana](../debugger/window-properties-dialog-box.md) utilizado para mostrar las propiedades de una ventana seleccionado en Windows Vista.
+
+ [Referencia de Spy ++](../debugger/spy-increment-reference.md) incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.

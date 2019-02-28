@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb649915179bc6e6b767970150df99caff306b4c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317736"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636585"
 ---
 # <a name="udtkind"></a>UdtKind
 Describe la variedad de tipo definido por el usuario (UDT).
@@ -34,17 +34,13 @@ enum UdtKind {
 ```
 
 ## <a name="elements"></a>Elementos
-UdtStruct  
-UDT es una estructura.
+UdtStruct UDT es una estructura.
 
-UdtClass  
-UDT es una clase.
+UdtClass UDT es una clase.
 
-UdtUnion  
-UDT es una unión.
+UdtUnion UDT es una unión.
 
-UdtInterface  
-UDT es una interfaz.
+UdtInterface UDT es una interfaz.
 
 ## <a name="remarks"></a>Comentarios
 Devuelven los valores de esta enumeración la [Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) método.
@@ -53,5 +49,5 @@ Devuelven los valores de esta enumeración la [Get_udtkind](../../debugger/debug
 Encabezado: cvconst.h
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)
+- [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

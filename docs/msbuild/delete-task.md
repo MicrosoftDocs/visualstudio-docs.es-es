@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0893ded1cd2eb40cc6004f90e29e0765ff48ca6a
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 4995d948cc4ad452da1585404987e3feb15e233e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853808"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610299"
 ---
 # <a name="delete-task"></a>Delete (tarea)
 Elimina los archivos especificados.
@@ -57,5 +57,5 @@ En el ejemplo siguiente se elimina el archivo *MyApp.pdb*.
 ```
 
 ## <a name="see-also"></a>Vea también
-[Tareas](../msbuild/msbuild-tasks.md)  
-[Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)

@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e9e1632fa9031dc502cce6467e60e76d30bf874
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87751dcca1e2109db53c9d6dd4594bc969ffc684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999046"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616508"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
-Recupera un segmento por medio de un índice.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT Item (   
-   DWORD         index,  
-   IDiaSegment** segment  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- índice  
- [in] Índice de la [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objeto va a recuperar. El índice está en el intervalo de 0 a `count`-1, donde `count` devuelto por la [Idiaenumsegments](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) método.  
-  
- segment  
- [out] Devuelve un [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objeto que representa el segmento deseado.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Recupera un segmento por medio de un índice.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT Item ( 
+   DWORD         index,
+   IDiaSegment** segment
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ índice
+
+[in] Índice de la [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objeto va a recuperar. El índice está en el intervalo de 0 a `count`-1, donde `count` devuelto por la [Idiaenumsegments](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) método.
+
+ segment
+
+[out] Devuelve un [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objeto que representa el segmento deseado.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

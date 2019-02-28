@@ -12,46 +12,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adf7054b98b4f3ee821b552d4b247aae14d01b5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f24bd9c4a541caad54f963a4ea2924e80846e80d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969345"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632295"
 ---
 # <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
-Recupera la parte de la sección de una dirección de ubicación. Cuando utilice el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) está establecido en `LocIsStatic`.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Devuelve la parte de la sección de una dirección de ubicación.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
-  
+Recupera la parte de la sección de una dirección de ubicación. Cuando utilice el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) está establecido en `LocIsStatic`.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_addressSection ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Devuelve la parte de la sección de una dirección de ubicación.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
-  
-## <a name="remarks"></a>Comentarios  
- Los miembros estáticos ubicados en un archivo DLL externo, la sección devuelta por este método puede ser 0 como este método se basa en obtener la dirección virtual del miembro. Las direcciones virtuales son válidas solo si el [Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) método en el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaz se ha llamado con un parámetro distinto de cero que especifica la dirección de carga del archivo DLL.  
-  
- Para obtener la parte de una dirección de desplazamiento, llame a la [Get_addressoffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) método.  
-  
-## <a name="requirements"></a>Requisitos  
-  
-|Requisito|Descripción|  
-|-----------------|-----------------|  
-|Encabezado:|dia2.h|  
-|Versión:|SDK de DIA v7.0|  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumeración LocationType](../../debugger/debug-interface-access/locationtype.md)
+>  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+
+## <a name="remarks"></a>Comentarios
+ Los miembros estáticos ubicados en un archivo DLL externo, la sección devuelta por este método puede ser 0 como este método se basa en obtener la dirección virtual del miembro. Las direcciones virtuales son válidas solo si el [Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) método en el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaz se ha llamado con un parámetro distinto de cero que especifica la dirección de carga del archivo DLL.
+
+ Para obtener la parte de una dirección de desplazamiento, llame a la [Get_addressoffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) método.
+
+## <a name="requirements"></a>Requisitos
+
+|Requisito|Descripción|
+|-----------------|-----------------|
+|Encabezado:|dia2.h|
+|Versión:|SDK de DIA v7.0|
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumeración LocationType](../../debugger/debug-interface-access/locationtype.md)

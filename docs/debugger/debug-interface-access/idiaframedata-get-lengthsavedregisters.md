@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a4b85c3f98d80039b6d490ccf690b10682f5d04
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4e05ebb4d7a58be353bb933a4ce5e5053d8dbf33
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950499"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599926"
 ---
 # <a name="idiaframedatagetlengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
-Recupera el número de bytes de registros guardadas insertado en la pila.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_lengthSavedRegisters (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Devuelve el número de bytes de los registros guardados.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- El valor devuelto por este método se utiliza normalmente en la interpretación de una cadena de programa (consulte la [Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) método para la definición de una cadena de programa).  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
+Recupera el número de bytes de registros guardadas insertado en la pila.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_lengthSavedRegisters ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Devuelve el número de bytes de los registros guardados.
+
+## <a name="return-value"></a>Valor devuelto
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ El valor devuelto por este método se utiliza normalmente en la interpretación de una cadena de programa (consulte la [Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) método para la definición de una cadena de programa).
+
+## <a name="see-also"></a>Vea también
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

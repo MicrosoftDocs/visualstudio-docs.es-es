@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d736f9b48952d370de3e033ee4dc80edccad6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03b0bf45d4b8100f4ebfd1d6a61dc73547312fe6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926688"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617267"
 ---
 # <a name="idiasymbolgetishlsldata"></a>IDiaSymbol::get_isHLSLData
-Especifica si este símbolo representa datos de sombreador lenguaje HLSL (High Level).  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_isHLSLData(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Un puntero a un `BOOL` que especifica si este símbolo representa datos HLSL.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Especifica si este símbolo representa datos de sombreador lenguaje HLSL (High Level).
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_isHLSLData(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Un puntero a un `BOOL` que especifica si este símbolo representa datos HLSL.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

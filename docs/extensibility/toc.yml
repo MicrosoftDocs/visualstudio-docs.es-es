@@ -7,7 +7,12 @@ items:
   href: starting-to-develop-visual-studio-extensions.md
 - name: 'Crear la primera extensión: Hello World'
   href: extensibility-hello-world.md
-- name: Novedades de Visual Studio 2017 SDK
+- name: Novedades del SDK de Visual Studio 2019
+  href: whats-new-visual-studio-2019-sdk.md
+  items:
+  - name: Extensiones cargadas automáticamente y sincrónicamente
+    href: synchronously-autoloaded-extensions.md
+- name: Novedades del SDK de Visual Studio 2017
   href: what-s-new-in-the-visual-studio-2017-sdk.md
   items:
   - name: Cambios importantes en la extensibilidad
@@ -781,9 +786,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Referencia de versión del paquete de Roslyn
     href: roslyn-version-support.md
-ms.openlocfilehash: 14efc710953d669b51b275226885eb9d0f5bbe50
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 5b59d25db51cf7c159d54a821aaa6afa048e2228
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232005"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841823"
