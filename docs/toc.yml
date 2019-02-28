@@ -3,7 +3,7 @@ items:
   href: ide/index.yml
 - name: Información general
   items:
-  - name: Acerca de Visual Studio 2017
+  - name: Acerca de Visual Studio
     href: get-started/visual-studio-ide.md
   - name: Acerca del editor de código
     href: get-started/tutorial-editor.md
@@ -1135,9 +1135,9 @@ items:
   - name: Hable con nosotros
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 3d89804036f0fd71a94a2d86c38b3d32a65c6c42
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 9d2edce3ea128754c4820736f90e26be9af4c479
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796873"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954524"

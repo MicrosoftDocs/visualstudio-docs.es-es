@@ -8,14 +8,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d212b7deee3244847b3ae5f04c64d29621564f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bc1964fdb3860702818454ee4e918cc93c0156c3
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681847"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954272"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedimiento Migrar proyectos de extensibilidad de Visual Studio 2017
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Filtrar Migrar proyectos de extensibilidad de Visual Studio 2017
 
 Este documento explica cómo actualizar proyectos de extensibilidad a Visual Studio 2017. Además de describir cómo se actualizan los archivos de proyecto, también describe cómo actualizar desde la versión del manifiesto de extensión 2 (v2 VSIX) a la nueva versión 3 formato del manifiesto VSIX (VSIX v3).
 
@@ -162,9 +162,9 @@ Al buscar las dependencias, encontrará que una dependencia se puede asignar a v
 
 Para proporcionar instrucciones adicionales, hemos identificado algunos tipos de extensión comunes y sus requisitos previos sugeridos:
 
-Tipo de extensión | Nombre para mostrar | Id.
+Tipo de extensión | Display Name | Id.
 --- | --- | ---
-Editor | Editor de núcleo de Visual Studio  | Microsoft.VisualStudio.Component.CoreEditor
+Editor | Editor de núcleo de Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# y Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Núcleo de carga de trabajo de escritorio administrado | Microsoft.VisualStudio.Component.ManagedDesktop.Core
 instantáneas | Depurador Just-In-Time | Microsoft.VisualStudio.Component.Debugger.JustInTime

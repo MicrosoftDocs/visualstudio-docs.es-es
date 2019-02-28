@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318802"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954285"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Agregar una extensión del protocolo de servidor de lenguaje
 
@@ -129,7 +129,7 @@ El LSP no incluye la especificación sobre cómo proporcionar la coloración de 
 
 4. Crear un *.pkgdef* archivo y agregue una línea similar a esto:
 
-    ```xml
+    ```
     [$RootKey$\TextMate\Repositories]
     "MyLang"="$PackageFolder$\Grammars"
     ```
@@ -313,13 +313,13 @@ Siga estos pasos para agregar compatibilidad para la configuración a la extensi
 
 4. Agregue un archivo .pkgdef en el proyecto (Agregar nuevo archivo de texto y cambie la extensión de archivo .pkgdef). El archivo pkgdef debe contener esta información:
 
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
     ```
 
     Ejemplo:
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
@@ -345,8 +345,10 @@ Siga estos pasos para agregar compatibilidad para la configuración a la extensi
         "foo.maxNumberOfProblems": 10
     }
     ```
-    ### <a name="enabling-diagnostics-tracing"></a>Habilitar el seguimiento de diagnóstico
-    Seguimiento de diagnóstico puede habilitarse para todos los mensajes entre el cliente y servidor, que puede ser útil al depurar problemas de salida. Para habilitar el seguimiento de diagnóstico, haga lo siguiente:
+
+### <a name="enabling-diagnostics-tracing"></a>Habilitar el seguimiento de diagnóstico
+
+Seguimiento de diagnóstico puede habilitarse para todos los mensajes entre el cliente y servidor, que puede ser útil al depurar problemas de salida. Para habilitar el seguimiento de diagnóstico, haga lo siguiente:
 
 4. Abra o cree el archivo de configuración de área de trabajo *VSWorkspaceSettings.json* (vea "Edición del usuario de configuración para un área de trabajo").
 5. Agregue la siguiente línea en el archivo de configuración de json:

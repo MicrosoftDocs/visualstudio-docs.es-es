@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722283"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954434"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referencia de valor de color para Visual Studio
 
@@ -553,7 +553,7 @@ Al usar a esta guía de referencia, recuerde:
 
 | Claro | Oscuro | Azul | Se utiliza para... |
 | :---: | :---: | :---: | --- |
-| ![#FFC9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 muestrario")<br />`#FFC9DEF5`   | ![#FF2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 muestrario")<br />`#FF2D2D30`   | ![#FFFDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF muestrario")<br />`#FFFDF4BF` | Los elementos de menú, elementos del cuadro combinado, botones de barra de comandos, botones desplegables y botones de acción: en segundo plano |
+| ![#FFC9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 muestrario")<br />`#FFC9DEF5` | ![#FF2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 muestrario")<br />`#FF2D2D30` | ![#FFFDF4BF muestrario](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF muestrario")<br />`#FFFDF4BF` | Los elementos de menú, elementos del cuadro combinado, botones de barra de comandos, botones desplegables y botones de acción: en segundo plano |
 | ![Muestrario #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "muestrario #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF3F3F46 muestrario](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 muestrario")<br />`#FF3F3F46` | ![#FF465A7D muestrario](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D muestrario")<br />`#FF465A7D` | Borde de pestaña de ocultación automática |
 | ![#FFEEEEF2 muestrario](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 muestrario")<br />`#FFEEEEF2` | ![#FF2D2D30 muestrario](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 muestrario")<br />`#FF2D2D30` | ![#FF293955 muestrario](../../extensibility/ux-guidelines/media/293955.png "#FF293955 muestrario")<br />`#FF293955` | Fondos de predeterminado y mantenga el puntero de pestaña de ocultación automática |
 | ![#FF444444 muestrario](../../extensibility/ux-guidelines/media/444444.png "#FF444444 muestrario")<br />`#FF444444` | ![#FFD0D0D0 muestrario](../../extensibility/ux-guidelines/media/D0D0D0.png "#FFD0D0D0 muestrario")<br />`#FFD0D0D0` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | Texto de la pestaña de ocultación automática, texto de barra de título de ventana de herramientas no enfocado y texto de ficha de ventana de herramientas |

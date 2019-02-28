@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27624f4b5336d91b30410303c9fd3823cc00fb88
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 442d78f494381021bd480f5649dbb6957bec5ae1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620920"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954055"
 ---
 # <a name="author-vsct-files"></a>Archivos .vsct de autor
 Este documento muestra cómo crear un *.vsct* archivo para agregar elementos de menú, barras de herramientas y otros elementos de interfaz de usuario para el entorno de desarrollo integrado (IDE) de Visual Studio. Siga estos pasos al agregar elementos de interfaz de usuario a un paquete de Visual Studio (VSPackage) que no tenga ya una *.vsct* archivo.
