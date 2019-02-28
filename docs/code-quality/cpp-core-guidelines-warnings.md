@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c023e6200f9e0b0efaf730fdca3a068f73c29262
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957944"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954314"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 
@@ -161,27 +161,28 @@ Puede usar la opción de línea de comandos para deshabilitar temporalmente todo
 
 A veces puede ser útil para realizar centrado de análisis de código y aún aprovechar el IDE de Visual Studio. A continuación es un escenario de ejemplo que puede utilizarse para proyectos grandes para ahorrar tiempo de compilación y para que sea más fácil para filtrar los resultados.
 
-1.  En el shell de comandos establece la `esp.extension` y `esp.annotationbuildlevel` variables de entorno.
-2.  Inicie Visual Studio desde el shell de comandos para heredar estas variables.
-3.  Cargar el proyecto y abra sus propiedades.
-4.  Habilitar análisis de código, seleccionar los conjuntos de reglas adecuada, pero no habilita las extensiones de análisis de código.
-5.  Vaya al archivo que desea analizar con el Comprobador de directrices principales de C++ y abrir sus propiedades.
-6.  Elija **C / C ++ \Command las opciones de línea** y agregar `/analyze:plugin EspXEngine.dll`
-7.  Deshabilitar el uso del encabezado precompilado (**C / C ++ \Precompiled encabezados**). Esto es necesario porque el motor de extensiones puede intentar leer la información interna del encabezado precompilado y si esto último se compiló con las opciones de proyecto predeterminadas, no serán compatible.
-8.  Recompile el proyecto. Deben ejecutar las comprobaciones de PREFast comunes en todos los archivos. Dado que el Comprobador de directrices principales de C++ no está habilitado de forma predeterminada, solo debe ejecutar en el archivo que está configurado para usarlo.
+1. En el shell de comandos establece la `esp.extension` y `esp.annotationbuildlevel` variables de entorno.
+2. Inicie Visual Studio desde el shell de comandos para heredar estas variables.
+3. Cargar el proyecto y abra sus propiedades.
+4. Habilitar análisis de código, seleccionar los conjuntos de reglas adecuada, pero no habilita las extensiones de análisis de código.
+5. Vaya al archivo que desea analizar con el Comprobador de directrices principales de C++ y abrir sus propiedades.
+6. Elija **C / C ++ \Command las opciones de línea** y agregar `/analyze:plugin EspXEngine.dll`
+7. Deshabilitar el uso del encabezado precompilado (**C / C ++ \Precompiled encabezados**). Esto es necesario porque el motor de extensiones puede intentar leer la información interna del encabezado precompilado y si esto último se compiló con las opciones de proyecto predeterminadas, no serán compatible.
+8. Recompile el proyecto. Deben ejecutar las comprobaciones de PREFast comunes en todos los archivos. Dado que el Comprobador de directrices principales de C++ no está habilitado de forma predeterminada, solo debe ejecutar en el archivo que está configurado para usarlo.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Cómo usar el Comprobador de directrices de C++ Core fuera de Visual Studio
 Puede usar las comprobaciones de C++ Core Guidelines en compilaciones automatizadas.
 
 ### <a name="msbuild"></a>MSBuild
- El Comprobador de análisis de código nativo (PREfast) se integra en el entorno de MSBuild mediante archivos de destinos personalizados. Puede usar las propiedades del proyecto para habilitarla y agregar el Comprobador de directrices principales de C++ (que se basa en PREfast):
 
- ```xml
-  <PropertyGroup>
-    <EnableCppCoreCheck>true</EnableCppCoreCheck>
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
+El Comprobador de análisis de código nativo (PREfast) se integra en el entorno de MSBuild mediante archivos de destinos personalizados. Puede usar las propiedades del proyecto para habilitarla y agregar el Comprobador de directrices principales de C++ (que se basa en PREfast):
+
+```xml
+<PropertyGroup>
+  <EnableCppCoreCheck>true</EnableCppCoreCheck>
+  <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
+  <RunCodeAnalysis>true</RunCodeAnalysis>
+</PropertyGroup>
 ```
 
 Asegúrese de que agregar estas propiedades antes de importar el archivo Microsoft.Cpp.targets. Puede elegir conjuntos de reglas específicas o crear un conjunto de reglas personalizado o usar el conjunto de reglas predeterminado que incluye otras comprobaciones de PREfast.
@@ -221,14 +222,16 @@ Deberá establecer algunas variables de entorno y usar las opciones de línea de
    - `/analyze:plugin EspXEngine.dll` Esta opción, carga el motor de extensiones de análisis de código en el PREfast. Este motor, a su vez, carga el Comprobador de directrices principales de C++.
 
 ## <a name="use-the-guideline-support-library"></a>Uso de la biblioteca de compatibilidad con criterio
- La biblioteca de compatibilidad de instrucciones está diseñada para ayudarle a seguir las instrucciones de núcleo. El GSL incluye las definiciones que le permiten reemplazar construcciones propensas a errores por alternativas más seguras. Por ejemplo, puede reemplazar un `T*, length` par de parámetros con el `span<T>` tipo. Está disponible en el GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). La biblioteca es código abierto, por lo que puede ver los orígenes, hacer comentarios o contribuir. El proyecto puede encontrarse en [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Use las directrices de C++ Core Check en proyectos de Visual Studio 2015
-  Si usa Visual Studio 2015, los conjuntos de reglas de análisis de código de C++ Core Check no se instalan de forma predeterminada. Debe realizar algunos pasos adicionales antes de poder habilitar las herramientas de análisis de código de C++ Core Check en Visual Studio 2015. Microsoft proporciona compatibilidad para los proyectos de Visual Studio 2015 mediante un paquete de Nuget. El paquete se denomina Microsoft.CppCoreCheck, y está disponible en [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este paquete requiere que tenga al menos Visual Studio 2015 con Update 1 instalado.
+La biblioteca de compatibilidad de instrucciones está diseñada para ayudarle a seguir las instrucciones de núcleo. El GSL incluye las definiciones que le permiten reemplazar construcciones propensas a errores por alternativas más seguras. Por ejemplo, puede reemplazar un `T*, length` par de parámetros con el `span<T>` tipo. Está disponible en el GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). La biblioteca es código abierto, por lo que puede ver los orígenes, hacer comentarios o contribuir. El proyecto puede encontrarse en [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- El paquete también instala otro paquete como una dependencia de un solo encabezado directriz soporte técnico de biblioteca (GSL). También está disponible en GitHub en el GSL [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+## <a name="vs2015_corecheck"></a> Use las directrices de C++ Core Check en proyectos de Visual Studio 2015
 
- Debido al modo en que se cargan las reglas de análisis de código, debe instalar el paquete Microsoft.CppCoreCheck NuGet en cada proyecto de C++ que se desea comprobar dentro de Visual Studio 2015.
+Si usa Visual Studio 2015, los conjuntos de reglas de análisis de código de C++ Core Check no se instalan de forma predeterminada. Debe realizar algunos pasos adicionales antes de poder habilitar las herramientas de análisis de código de C++ Core Check en Visual Studio 2015. Microsoft proporciona compatibilidad para los proyectos de Visual Studio 2015 mediante un paquete de Nuget. El paquete se denomina Microsoft.CppCoreCheck, y está disponible en [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este paquete requiere que tenga al menos Visual Studio 2015 con Update 1 instalado.
+
+El paquete también instala otro paquete como una dependencia de un solo encabezado directriz soporte técnico de biblioteca (GSL). También está disponible en GitHub en el GSL [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+
+Debido al modo en que se cargan las reglas de análisis de código, debe instalar el paquete Microsoft.CppCoreCheck NuGet en cada proyecto de C++ que se desea comprobar dentro de Visual Studio 2015.
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Para agregar el paquete de Microsoft.CppCoreCheck al proyecto en Visual Studio 2015
 
