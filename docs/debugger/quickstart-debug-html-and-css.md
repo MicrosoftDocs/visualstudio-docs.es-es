@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02203ba84ee2d394ca9b714d74f607480ba68460
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227818"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721061"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depurar HTML y CSS en aplicaciones para UWP en Visual Studio
 
@@ -254,10 +254,10 @@ Puedes seleccionar elementos DOM de tres maneras al depurar una aplicación:
 > El resaltado de elementos al pasar sobre ellos solo se admite en parte en el emulador de Windows Phone.
 
 ## <a name="see-also"></a>Vea también
-[Depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Depurar un control WebView](../debugger/debug-a-webview-control.md)  
-[Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md)  
-[Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Compatibilidad de productos y accesibilidad](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [Depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Depurar un control WebView](../debugger/debug-a-webview-control.md)
+- [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md)
+- [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Compatibilidad de productos y accesibilidad](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

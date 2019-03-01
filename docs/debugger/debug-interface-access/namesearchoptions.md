@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa637a5f403a4651541d920c6390204ee579994
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318620"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639692"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Especifica las opciones de búsqueda para los nombres de archivo y símbolos.
@@ -43,23 +43,17 @@ enum NameSearchOptions {
 ```
 
 ## <a name="elements"></a>Elementos
-`nsNone`  
-No se especifican opciones.
+`nsNone` No se especifica ninguna opción.
 
-`nsfCaseSensitive`  
-Se aplica a una coincidencia de nombre distingue mayúsculas de minúsculas.
+`nsfCaseSensitive` Se aplica a una coincidencia de nombre distingue mayúsculas de minúsculas.
 
-`nsfCaseInsensitive`  
-Se aplica a una coincidencia de mayúsculas y minúsculas del nombre.
+`nsfCaseInsensitive` Se aplica a una coincidencia de mayúsculas y minúsculas del nombre.
 
-`nsfFNameExt`  
-Trata los nombres como rutas de acceso y se aplica a la coincidencia de nombres nombreDeArchivo.ext.
+`nsfFNameExt` Trata los nombres como rutas de acceso y se aplica a la coincidencia de nombres nombreDeArchivo.ext.
 
-`nsfRegularExpression`  
-Se aplica a una coincidencia de mayúsculas y minúsculas del nombre con asteriscos (*) y signos de interrogación (?) como caracteres comodín.
+`nsfRegularExpression` Se aplica a una coincidencia de mayúsculas y minúsculas del nombre con asteriscos (*) y signos de interrogación (?) como caracteres comodín.
 
-`nsfUndecoratedName`  
-Solo se aplica a los símbolos que tienen tanto no representativos y nombres representativos.
+`nsfUndecoratedName` Solo se aplica a los símbolos que tienen tanto no representativos y nombres representativos.
 
 ## <a name="remarks"></a>Comentarios
 Los valores de esta enumeración se pasan a los métodos siguientes:
@@ -74,7 +68,7 @@ Los valores de esta enumeración se pasan a los métodos siguientes:
 Encabezado: dia2.h
 
 ## <a name="see-also"></a>Vea también
-[Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
-[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
+- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

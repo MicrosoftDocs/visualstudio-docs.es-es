@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f24c8d79f0b300be4e65b9a14e7675ddf2dcf195
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227412"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701958"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos de la consola de JavaScript en Visual Studio
 
@@ -103,13 +103,7 @@ console.log(user.first, user.last);
 
  Se admiten los siguientes patrones de sustitución:
 
-- %s - cadena %i - entero  
-  %d - entero  
-  %f - flotante  
-  %o - objeto  
-  %b - binario  
-  %x - hexadecimal  
-  %e - exponente  
+- %s - cadena %i - entero %d - entero %f - flotante %o - objeto %b - binario %x - hexadecimal %e - exponente
 
   Aquí se proporcionan algunos ejemplos del empleo de patrones de sustitución en `console.log`:
 
@@ -129,5 +123,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Vea también
-[Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)  
-[Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
