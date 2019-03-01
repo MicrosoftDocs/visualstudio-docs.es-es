@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 461c2c4bc5525eee61c413cb8c25afd6090852a5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987475"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628330"
 ---
 # <a name="cc-assertions"></a>Aserciones de C/C++
 Una instrucción de aserción especifica una condición que se espera que sea cierta (valor true) en un punto del programa. Si esa condición no es "true", la aserción produce un error, la ejecución del programa se interrumpe y aparece el [cuadro de diálogo Error de aserción](../debugger/assertion-failed-dialog-box.md).
@@ -46,7 +46,7 @@ Visual C++ admite instrucciones de aserción que se basan en los constructores s
 
 - Aserciones de CRT para programas que utilizan la biblioteca en tiempo de ejecución de C.
 
-- [Función assert](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) de ANSI para otros programas en C o C++.  
+- [Función assert](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) de ANSI para otros programas en C o C++.
 
   Se pueden utilizar aserciones para detectar errores lógicos, comprobar resultados de una operación y probar condiciones de error que deben haberse controlado.
 
@@ -63,7 +63,7 @@ Visual C++ admite instrucciones de aserción que se basan en los constructores s
 
 - [MFC ASSERT_VALID y CObject::AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [Limitaciones de AssertValid](#BKMK_Limitations_of_AssertValid)  
+- [Limitaciones de AssertValid](#BKMK_Limitations_of_AssertValid)
 
   [Uso de las aserciones](#BKMK_Using_assertions)
 
@@ -339,6 +339,7 @@ Este código se basa en la instrucción de aserción para controlar la condició
 [En este tema](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>Vea también
-[Seguridad del depurador](../debugger/debugger-security.md)  
-[Depuración de código nativo](../debugger/debugging-native-code.md)  
-[Aserciones en el código administrado](../debugger/assertions-in-managed-code.md)
+
+- [Seguridad del depurador](../debugger/debugger-security.md)
+- [Depuración de código nativo](../debugger/debugging-native-code.md)
+- [Aserciones en el código administrado](../debugger/assertions-in-managed-code.md)

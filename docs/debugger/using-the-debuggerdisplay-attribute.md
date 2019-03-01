@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5304da009aa35eefb91f064929a58444f139f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317008"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680196"
 ---
 # <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Usar el atributo DebuggerDisplay (C#, Visual Basic, F#, C++ / c++ / CLI)
 El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.
@@ -178,7 +178,8 @@ class MyHashtable
 ```
 
 ## <a name="see-also"></a>Vea también
-[Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)  
-[Creación de vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-dot-managed-objects.md)  
-[Especificadores de formato en C#](../debugger/format-specifiers-in-csharp.md)  
-[Mejorar la depuración con los atributos de visualización del depurador](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+
+- [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Creación de vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Especificadores de formato en C#](../debugger/format-specifiers-in-csharp.md)
+- [Mejorar la depuración con los atributos de visualización del depurador](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
