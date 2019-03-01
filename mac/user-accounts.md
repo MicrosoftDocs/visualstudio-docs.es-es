@@ -16,7 +16,7 @@ ms.locfileid: "55987295"
 
 Una vez que haya descargado e instalado Visual Studio para Mac, debe iniciar sesión para activar la suscripción con el fin de obtener acceso a todas las características de Visual Studio para Mac.
 
-Al iniciar sesión, habilita el acceso a todos los servicios asociados a la cuenta de usuario y a todas las cuentas vinculadas a ella. La configuración de su cuenta se traspasa allá donde use Visual Studio. Puede configurar niveles de permisos en una instancia específica de Visual Studio para usuarios individuales.
+Al iniciar sesión, habilita el acceso a todos los servicios asociados a la cuenta de usuario y a todas las cuentas vinculadas a ella. La configuración de tu cuenta te acompaña donde sea que uses Visual Studio. Puede configurar niveles de permisos en una instancia específica de Visual Studio para usuarios individuales.
 
 ## <a name="in-this-section"></a>En esta sección
 
