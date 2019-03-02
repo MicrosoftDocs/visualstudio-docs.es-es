@@ -7,18 +7,18 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d4a5b28686b2af356d1247bf9690708739fea8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 82f42ba3c984d53952bed2396ca1218883977204
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907873"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222563"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de reglas para especificar las reglas de C++ en ejecución
 
 En Visual Studio, puede crear y modificar una personalizada *conjunto de reglas* para satisfacer las necesidades concretas del proyecto asociadas con el análisis de código. Los conjuntos de reglas predeterminado se almacenan en `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 versión 15.7** puede crear conjuntos de reglas personalizadas con cualquier texto editor y aplicarlas en las compilaciones de línea de comandos con independencia de lo que usa el sistema de compilación. Para obtener más información, consulte [/ analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 versión 15.7 y versiones posterior** puede crear conjuntos de reglas personalizadas con cualquier texto editor y aplicarlas en las compilaciones de línea de comandos con independencia de lo que usa el sistema de compilación. Para obtener más información, consulte [/ analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
 
 Para crear una regla personalizada de C++ en Visual Studio, un proyecto de C o C++ debe estar abierto en el IDE de Visual Studio. Y, a continuación, abra un conjunto de reglas estándar en el editor de conjunto de reglas, a continuación, agregar o quitar reglas concretas y, opcionalmente, cambiar la acción que se produce cuando el análisis de código determina que se ha infringido una regla.
 

@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909147"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222602"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Información general del análisis de código estático de código administrado en Visual Studio
 
-Visual Studio 2017 puede realizar análisis de código del código administrado de dos maneras: con *FxCop* análisis estático de los ensamblados administrados y con la versión más moderna *analizadores de Roslyn*. En este tema se trata los análisis de código estático de FxCop. Para más información acerca del análisis de código mediante el uso de analizadores de código, consulte [analizadores de información general de Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio puede realizar análisis de código del código administrado de dos maneras: con *FxCop* análisis estático de los ensamblados administrados y con la versión más moderna *analizadores de Roslyn*. En este tema se trata los análisis de código estático de FxCop. Para más información acerca del análisis de código mediante el uso de analizadores de código, consulte [analizadores de información general de Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 En el análisis de código administrado se analizan los ensamblados administrados y se muestra información sobre dichos ensamblados, como por ejemplo las infracciones de las reglas de programación y las reglas de diseño estipuladas en las instrucciones de diseño de Microsoft .NET Framework.
 
@@ -59,7 +59,7 @@ Public class MyClass
 Para obtener más información, consulte [Suprimir advertencias](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Si migra un proyecto de Visual Studio 2017, podría encontrarse, de repente, con un gran número de advertencias de análisis de código. Si no está listo para solucionar las advertencias y quieran ser más productivos inmediatamente, puede *baseline* el estado de análisis de su proyecto. Desde el **analizar** menú, seleccione **ejecutar análisis de código y suprimir problemas activos**.
+> Si migra un proyecto de Visual Studio 2017 o Visual Studio de 2019, podría encontrarse, de repente, con un gran número de advertencias de análisis de código. Si no está listo para solucionar las advertencias y quieran ser más productivos inmediatamente, puede *baseline* el estado de análisis de su proyecto. Desde el **analizar** menú, seleccione **ejecutar análisis de código y suprimir problemas activos**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Ejecutar el análisis de código como parte de la directiva de inserción en el repositorio
 
@@ -69,7 +69,7 @@ En una organización, puede ser necesario exigir que todas las protecciones cump
 
 - Análisis de código se ejecuta como parte de la compilación más reciente.
 
-Para conseguirlo, se especifican las directivas de inserción en el repositorio. Para obtener más información, consulte [mejorar la calidad del código con directivas de protección del proyecto](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md).
+Para conseguirlo, se especifican las directivas de protección. Para obtener más información, consulte [mejorar la calidad del código con directivas de protección del proyecto](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Integración de Team build
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f4a09950de9480604d922b0d3dd5cefda17256
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908805"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223824"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependencia: instrucciones
 
@@ -26,7 +26,7 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
 Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Diagramas de dependencia no se admiten para los proyectos de .NET Core en Visual Studio 2017.
+> Diagramas de dependencia no se admiten para los proyectos de .NET Core en Visual Studio.
 
 ## <a name="what-is-a-dependency-diagram"></a>¿Qué es un diagrama de dependencias?
 

@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007363"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223733"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Filtrar Generar datos de métricas de código
+# <a name="how-to-generate-code-metrics-data"></a>Procedimiento Generar datos de métricas de código
 
 Puede generar resultados de métricas de código para una solución completa o uno o varios proyectos. Las métricas del código está disponible dentro del entorno de desarrollo interactivo (IDE) de Visual Studio y, para C# y proyectos de Visual Basic, en la línea de comandos.
 
@@ -206,7 +206,7 @@ Para obtener más información, consulte [Habilitar generación de las métricas
 
 ### <a name="previous-versions"></a>Versiones anteriores
 
-Las versiones anteriores de Visual Studio, incluidos Visual Studio 2015, incluyen una herramienta de métricas de código de línea de comandos que también se denomina *Metrics.exe*. Esta versión anterior de la herramienta realizó un análisis binario, es decir, un análisis basado en ensamblados. La nueva herramienta analiza el código fuente en su lugar. Dado que la nueva herramienta de métricas de código de línea de comandos es el origen basado en código, los resultados son diferentes a lo que generan las versiones anteriores de *Metrics.exe* y en el IDE de Visual Studio 2017.
+Visual Studio 2015 incluye una herramienta de métricas de código de línea de comandos que también se denomina *Metrics.exe*. Esta versión anterior de la herramienta realizó un análisis binario, es decir, un análisis basado en ensamblados. El nuevo *Metrics.exe* herramienta analiza el código fuente en su lugar. Dado que el nuevo *Metrics.exe* herramienta es métricas del código de línea de comandos, basado en código de origen son diferentes a los generados por el IDE de Visual Studio y las versiones anteriores de los resultados *Metrics.exe*.
 
 La nueva herramienta de métricas de código de línea de comandos calcula las métricas incluso en presencia de errores de código fuente, siempre que se pueden cargar la solución y proyecto.
 
@@ -214,7 +214,7 @@ La nueva herramienta de métricas de código de línea de comandos calcula las m
 
 El `LinesOfCode` métrica es más precisas y confiables en la nueva herramienta de métricas de código de línea de comandos. Es independiente de las diferencias de generación de código y no cambia cuando cambia el conjunto de herramientas o en tiempo de ejecución. La nueva herramienta cuenta reales líneas de código, incluidos los comentarios y las líneas en blanco.
 
-Otras métricas como `CyclomaticComplexity` y `MaintainabilityIndex` utilizar las fórmulas de la mismas que en versiones anteriores de *Metrics.exe*, pero la nueva herramienta cuenta el número de `IOperations` (instrucciones de origen lógico) en lugar de nivel intermedio instrucciones de lenguaje (IL). Los números será ligeramente diferentes de versiones anteriores de *Metrics.exe* y de los resultados de las métricas del código de IDE de Visual Studio 2017.
+Otras métricas como `CyclomaticComplexity` y `MaintainabilityIndex` utilizar las fórmulas de la mismas que en versiones anteriores de *Metrics.exe*, pero la nueva herramienta cuenta el número de `IOperations` (instrucciones de origen lógico) en lugar de nivel intermedio instrucciones de lenguaje (IL). Los números será ligeramente diferentes a los generados por el IDE de Visual Studio y las versiones anteriores de *Metrics.exe*.
 
 ## <a name="see-also"></a>Vea también
 
