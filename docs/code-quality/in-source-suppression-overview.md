@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: e85ca90dac30ad348dfeb91357ded153c1764a16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927820"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223096"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
@@ -33,7 +33,7 @@ En C++ / c++ / CLI, use las macros CA\_suprimir\_mensaje o CA\_GLOBAL\_SUPPRESS_
 > No debe utilizar supresiones en código fuente en las compilaciones de versión para evitar que los metadatos de supresión en el origen de trasvase de registros por accidente. Además, debido al costo de procesamiento de supresión en el código fuente, puede disminuir el rendimiento de la aplicación.
 
 > [!NOTE]
-> Si migra un proyecto de Visual Studio 2017, podría encontrarse, de repente, con un gran número de advertencias de análisis de código. Estas advertencias proceden [analizadores de Roslyn](roslyn-analyzers-overview.md). Si no está preparado para solucionar las advertencias, puede suprimir todas ellas eligiendo **analizar** > **ejecutar análisis de código y suprimir problemas activos**.
+> Si migra un proyecto de Visual Studio 2017 o Visual Studio de 2019, podría encontrarse, de repente, con un gran número de advertencias de análisis de código. Estas advertencias proceden [analizadores de Roslyn](roslyn-analyzers-overview.md). Si no está preparado para solucionar las advertencias, puede suprimir todas ellas eligiendo **analizar** > **ejecutar análisis de código y suprimir problemas activos**.
 >
 > ![Ejecutar análisis de código y suprimir problemas en Visual Studio](media/suppress-active-issues.png)
 

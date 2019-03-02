@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de4818a57dc09825e6f41a635ea777a9e3f06e2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910516"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222940"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalar analizadores de .NET Compiler Platform
 
-Visual Studio 2017 incluye un conjunto básico de .NET Compiler Platform (*Roslyn*) analizadores. Estos analizadores están siempre disponibles. Puede instalar analizadores adicionales como paquetes de NuGet, o como extensiones de Visual Studio en *VSIX* archivos.
+Visual Studio incluye un conjunto básico de .NET Compiler Platform (*Roslyn*) analizadores. Estos analizadores están siempre disponibles. Puede instalar analizadores adicionales como paquetes de NuGet, o como extensiones de Visual Studio en *VSIX* archivos.
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Para instalar paquetes de NuGet analyzer
 
@@ -60,7 +60,7 @@ Visual Studio 2017 incluye un conjunto básico de .NET Compiler Platform (*Rosly
 
 6. Seleccione **modificar** para iniciar la instalación.
 
-7. Después de un minuto o dos, se completa la instalación. Seleccione **cerrar**.
+7. Después de un minuto o dos, se completa la instalación. Seleccione **Cerrar**.
 
 8. Vuelva a abrir Visual Studio.
 

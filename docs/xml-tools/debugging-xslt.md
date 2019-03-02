@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b7caed64a263e5f347558dcea479b2e5ee27c96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f6c72146f6e76605cc379c4db269982f6eed1c6f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913907"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221845"
 ---
 # <a name="debugging-xslt"></a>Depuración de XSLT
 
 Puede utilizar el depurador de Visual Studio para depurar XSLT. El depurador admite la definición de puntos de interrupción, la visualización de los estados de ejecución de XSLT, etc.
 
 > [!NOTE]
-> El depurador de XSLT solo está disponible en la edición Enterprise de Visual Studio 2017.
+> El depurador de XSLT solo está disponible en la edición Enterprise de Visual Studio.
 
 ## <a name="xslt-profiler"></a>Generador de perfiles XSLT
 
