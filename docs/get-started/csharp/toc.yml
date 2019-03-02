@@ -4,7 +4,7 @@ items:
   items:
   - name: Información general
     items:
-    - name: Acerca de Visual Studio 2017
+    - name: Acerca de Visual Studio
       href: visual-studio-ide.md
     - name: Acerca del editor de código
       href: tutorial-editor.md
@@ -38,9 +38,9 @@ items:
     - name: Acceder a datos
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
     expanded: true
-ms.openlocfilehash: d87b0861c007490137dd6e3f164173616f12f66f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc0478d8d9084d37f1c58670e2815ebfd0ee6f1c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994006"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222709"

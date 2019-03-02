@@ -1092,7 +1092,7 @@ items:
   items:
   - name: Novedades de Visual Studio 2017
     href: ide/whats-new-visual-studio-2017.md
-  - name: Novedades de la versión preliminar de Visual Studio 2019
+  - name: Novedades en Visual Studio 2019 RC
     href: ide/whats-new-visual-studio-2019.md
   - name: Notas de la versión y requisitos del sistema
     items:
@@ -1135,9 +1135,9 @@ items:
   - name: Hable con nosotros
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 9d2edce3ea128754c4820736f90e26be9af4c479
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: d741f539d2db3e4e9df2c686adeea494cfe71a2e
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954524"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007389"
