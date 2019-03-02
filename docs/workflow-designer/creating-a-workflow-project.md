@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0450260d5d889c141607a281740bf06d255d5c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923426"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222459"
 ---
 # <a name="workflow-project-templates"></a>Plantillas de proyecto de flujo de trabajo
 
@@ -34,7 +34,7 @@ Visual Studio proporciona cuatro plantillas de proyecto de flujo de trabajo dife
 
 - Biblioteca del Diseñador de actividad
 
-Para obtener acceso a estas plantillas, instale primero el **Windows Workflow Foundation** componente de Visual Studio 2017. Para obtener instrucciones detalladas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+Para obtener acceso a estas plantillas, instale primero el **Windows Workflow Foundation** componente de Visual Studio. Para obtener instrucciones detalladas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 1. Una vez instalado el **Windows Workflow Foundation** componente, abra el **nuevo proyecto** cuadro de diálogo seleccionando **archivo** > **New**  >  **Proyecto**.
 

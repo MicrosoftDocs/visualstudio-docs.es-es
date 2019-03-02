@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9016ee501c0fc4064e15358c3c8e2e4e0ac11cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 44d68b83f9364885ea33af2184f2a911bf916325
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939013"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222339"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Filtrar Agregar un nuevo elemento a un proyecto de flujo de trabajo
 
@@ -38,7 +38,7 @@ En la tabla siguiente se enumera los elementos de Windows Workflow Foundation (W
 1. En el panel izquierdo, seleccione el **flujo de trabajo** categoría y, a continuación, seleccione una plantilla de elemento de flujo de trabajo.
 
    > [!NOTE]
-   > Si no ve el **flujo de trabajo** categoría, instalar primero el **Windows Workflow Foundation** componente de Visual Studio 2017. Para obtener instrucciones detalladas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Si no ve el **flujo de trabajo** categoría, instalar primero el **Windows Workflow Foundation** componente de Visual Studio. Para obtener instrucciones detalladas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 1. Escriba un nombre para el elemento en el **nombre** cuadro en la parte inferior del cuadro de diálogo.
 
