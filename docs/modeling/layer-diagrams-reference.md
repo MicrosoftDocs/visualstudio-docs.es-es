@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baee97f08a4e6015d6c2e1d88f83f5835431578b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957918"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223018"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependencia: referencia
 
@@ -34,7 +34,7 @@ En Visual Studio, puede usar un *diagrama dependencias* para visualizar la arqui
 Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Diagramas de dependencia no se admiten para los proyectos de .NET Core en Visual Studio 2017.
+> Diagramas de dependencia no se admiten para los proyectos de .NET Core en Visual Studio.
 
 Se pueden especificar las dependencias planeadas o existentes entre las capas. Estas dependencias, que se representan como flechas, indican qué capas pueden usar o usan actualmente la funcionalidad representada por otras capas. Al organizar el sistema en capas que describen los distintos roles y funciones, puede ayudar a un diagrama de dependencias resultará más fácil entender y mantener el código.
 

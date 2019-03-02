@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d085ca32363888e2c59748aa5fdfd19eb190d5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24567262eff261638a6004817d4d0eef51537fd6
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316800"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223512"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 
 En este tema se explica los conceptos básicos de la definición y uso de un lenguaje específico de dominio (DSL) creado con el SDK de modelado para Visual Studio.
 
 > [!NOTE]
-> En Visual Studio 2017, el SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> El SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Si está familiarizado con los DSL, le recomendamos que trabaje a través de la **laboratorio de herramientas de DSL**, que encontrará en este sitio: [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=186128)
 
