@@ -3,15 +3,9 @@ layout: HubPage
 hide_bc: true
 title: Documentación de Visual Studio | Microsoft Docs
 titleSuffix: ''
-description: Aprenda a usar Visual Studio 2017 para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas.
+description: 'Aprenda a usar Visual Studio para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas.'
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: 9bcd261ce7d6efbd7fac50352c9dfaa17ed6c41f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316787"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -55,7 +49,7 @@ ms.locfileid: "56316787"
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/whats-new-in-visual-studio">
+                <a href="/visualstudio/ide/whats-new-visual-studio-2017">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -65,7 +59,7 @@ ms.locfileid: "56316787"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Novedades de Visual Studio 2017</h3>
+                                    <h3>Novedades de Visual Studio</h3>
                                 </div>
                             </div>
                         </div>
