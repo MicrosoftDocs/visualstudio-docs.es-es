@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9474bd1dc78dd9b2896749d92fa796a3febd1104
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692065"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223564"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidad y el conjunto de herramientas de integración de Project
 
@@ -604,7 +604,7 @@ Para deshabilitar las actualizaciones del proyecto, use un `NoUpgrade` valor:
 
 ## <a name="project-cache-and-extensibility"></a>Caché de proyectos y extensibilidad
 
-Para mejorar el rendimiento cuando se trabaja con grandes soluciones de C++ en Visual Studio 2017, el [proyecto caché](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-solution-load-with-vs-15/) introducida. Se implementa como una base de datos de SQLite rellena con datos del proyecto y, a continuación, se usa para cargar los proyectos sin cargar los proyectos de MSBuild o CPS en la memoria.
+Para mejorar el rendimiento cuando se trabaja con grandes soluciones de C++ en Visual Studio 2017, el [proyecto caché](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/) introducida. Se implementa como una base de datos de SQLite rellena con datos del proyecto y, a continuación, se usa para cargar los proyectos sin cargar los proyectos de MSBuild o CPS en la memoria.
 
 Dado que no hay ningún objeto de CPS presente para los proyectos de .vcxproj cargados desde la memoria caché, los componentes MEF de la extensión importar `UnconfiguredProject` o `ConfiguredProject` no se puede crear. Para admitir la extensibilidad, la caché del proyecto no se usa cuando Visual Studio detecta si un proyecto utiliza (o es probable que use) en las extensiones MEF.
 
