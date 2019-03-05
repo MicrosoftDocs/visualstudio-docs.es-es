@@ -7,27 +7,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e84ff96381fb29a1728ad43df4ff558abd17243
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689843"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324005"
 ---
 # <a name="troubleshooting-template-installation"></a>Solución de problemas de instalación de la plantilla
 
 Si experimenta problemas al implementar las plantillas de proyecto o elemento, puede habilitar el registro de diagnóstico.
 
-1. Cree un archivo pkgdef en la carpeta Common7\IDE\CommonExtensions para la instalación (por ejemplo, C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) con el siguiente contenido:
+::: moniker range="vs-2017"
+
+1. Cree un archivo pkgdef en el *Common7\IDE\CommonExtensions* carpeta para la instalación. Por ejemplo, *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Cree un archivo pkgdef en el *Common7\IDE\CommonExtensions* carpeta para la instalación. Por ejemplo, *C:\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*.
+
+::: moniker-end
+
+2. En el archivo pkgdef, agregue lo siguiente:
 
     ```
     [$RootKey$\VsTemplate]
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-1. Abra una "línea de comandos de desarrollador" para la instalación mediante una búsqueda en búsqueda de Windows y ejecute `devenv /updateConfiguration`.
+3. Abra un [símbolo](/dotnet/framework/tools/developer-command-prompt-for-vs) para la instalación y ejecución `devenv /updateConfiguration`.
 
-1. Iniciar Visual Studio y los cuadros de diálogo nuevo proyecto y el nuevo elemento para inicializar ambos árboles de plantilla. El registro de plantilla aparece ahora en **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid se corresponde con el identificador de instalación de la instancia de Visual Studio). La inicialización de cada árbol de la plantilla anexa entradas en este registro.
+::: moniker range="vs-2017"
+
+4. Iniciar Visual Studio y los cuadros de diálogo nuevo proyecto y el nuevo elemento para inicializar ambos árboles de plantilla.
+
+   El registro de plantilla aparece ahora en **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid se corresponde con el identificador de instalación de la instancia de Visual Studio). La inicialización de cada árbol de la plantilla anexa entradas en este registro.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Iniciar Visual Studio y los cuadros de diálogo nuevo proyecto y el nuevo elemento para inicializar ambos árboles de plantilla.
+
+   El registro de plantilla aparece ahora en **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid se corresponde con el identificador de instalación de la instancia de Visual Studio). La inicialización de cada árbol de la plantilla anexa entradas en este registro.
+
+::: moniker-end
 
 El archivo de registro contiene las columnas siguientes:
 

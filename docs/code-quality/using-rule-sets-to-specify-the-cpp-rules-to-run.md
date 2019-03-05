@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82f42ba3c984d53952bed2396ca1218883977204
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d4d7dfc1f010b860653edbe14fa7af9050bddba4
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222563"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323658"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de reglas para especificar las reglas de C++ en ejecución
 
@@ -82,8 +82,9 @@ Puede crear un conjunto de reglas personalizado en el texto del editor, almacén
 
 El ejemplo siguiente se muestra que una regla básica de establece el archivo que puede usar como punto de partida:
 
-```xml
+::: moniker range="vs-2017"
 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
   <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
@@ -92,3 +93,19 @@ El ejemplo siguiente se muestra que una regla básica de establece el archivo qu
   </Rules>
 </RuleSet>
 ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+::: moniker-end

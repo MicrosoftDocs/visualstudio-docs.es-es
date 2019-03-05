@@ -8,12 +8,13 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc1964fdb3860702818454ee4e918cc93c0156c3
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+monikerRange: vs-2017
+ms.openlocfilehash: d2d54bf83cac677c09e63da6169e39100cbb30cc
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954272"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324213"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Filtrar Migrar proyectos de extensibilidad de Visual Studio 2017
 

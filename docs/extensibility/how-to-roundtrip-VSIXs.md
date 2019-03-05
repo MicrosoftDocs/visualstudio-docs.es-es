@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 07a9363eef7d350ddbc7ec55f9fab62f38dadc1d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710609"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323820"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Filtrar Crear extensiones compatibles con Visual Studio 2017 y Visual Studio 2015
 
@@ -51,7 +51,7 @@ Se recomienda iniciar esta actualización con Visual Studio 2015, en lugar de Vi
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Asegúrese de que no hay ninguna referencia de project.json
 
-Más adelante en este documento, se insertará instrucciones de importación condicional en para su **.csproj* archivo.  Esto no funcionará si se almacenan las referencias de NuGet en *project.json*. Por lo tanto, se recomienda para mover todas las referencias de NuGet para la *packages.config* archivo.
+Más adelante en este documento, se insertará instrucciones de importación condicional en para su **.csproj* archivo. Esto no funcionará si se almacenan las referencias de NuGet en *project.json*. Por lo tanto, se recomienda para mover todas las referencias de NuGet para la *packages.config* archivo.
 Si el proyecto contiene un *project.json* archivo:
 
 * Tome nota de las referencias de *project.json*.
@@ -61,7 +61,7 @@ Si el proyecto contiene un *project.json* archivo:
     * Visual Studio crea automáticamente la *packages.config* archivo automáticamente.
 
 > [!NOTE]
-> Si el proyecto contenía paquetes EnvDTE, deba agregarse, haga clic con el botón secundario en **referencias** seleccionando **Agregar referencia** y agregar la referencia correspondiente.  Uso de paquetes NuGet, puede crear errores al intentar compilar el proyecto.
+> Si el proyecto contenía paquetes EnvDTE, deba agregarse, haga clic con el botón secundario en **referencias** seleccionando **Agregar referencia** y agregar la referencia correspondiente. Uso de paquetes NuGet, puede crear errores al intentar compilar el proyecto.
 
 ## <a name="add-appropriate-build-tools"></a>Agregar herramientas de compilación adecuado
 
@@ -84,18 +84,18 @@ Para ello:
 
 ### <a name="1-installation-targets"></a>1. Destinos de instalación
 
-Es necesario indicar a Visual Studio qué versiones de destino para la creación de un archivo VSIX.  Normalmente, estas referencias son a la versión 14.0 (Visual Studio 2015) o versión 15.0 (Visual Studio 2017).  En nuestro caso, deseamos crear un VSIX que se instalará una extensión en ambos casos, por lo que necesitamos para ambas versiones de destino.  Si desea que el proyecto de VSIX para crear e instalar en versiones anteriores a 14.0, esto puede hacerse estableciendo el número de versión anterior; Sin embargo, ya no se admite la versión 10.0 y versiones anterior.
+Es necesario indicar a Visual Studio qué versiones de destino para la creación de un archivo VSIX. Normalmente, estas referencias son a la versión 14.0 (Visual Studio 2015), versión 15.0 (Visual Studio 2017) o versión 16.0 (Visual Studio 2019). En nuestro caso, deseamos crear un VSIX que se instalará una extensión en ambos casos, por lo que necesitamos para ambas versiones de destino. Si desea que el proyecto de VSIX para crear e instalar en versiones anteriores a 14.0, esto puede hacerse estableciendo el número de versión anterior; Sin embargo, ya no se admite la versión 10.0 y versiones anterior.
 
 * Abra el *source.extension.vsixmanifest* archivo en Visual Studio.
 * Abra el **destinos de instalación** ficha.
-* Cambiar el **intervalo de versiones** a [14,0, 16.0).  El ' [' indica a Visual Studio para incluir 14,0 y todas las versiones anteriores se.  El ')' indica a Visual Studio para incluir todas las versiones de 15.0 hacia arriba, pero no incluyen la versión 16.0.
+* Cambiar el **intervalo de versiones** a [14,0, 17.0). El ' [' indica a Visual Studio para incluir 14,0 y todas las versiones anteriores se. El ')' indica a Visual Studio para incluir todas las versiones hasta, pero sin incluir, versión 17.0.
 * Guarde todos los cambios y cierre todas las instancias de Visual Studio.
 
 ![Imagen de instalación de destinos](media/visual-studio-installation-targets-example.png)
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Agregar requisitos previos para la *extension.vsixmanifest* archivo
 
-Requisitos previos son una característica nueva con Visual Studio 2017.  En este caso, el Editor de núcleo de Visual Studio es necesario como requisito previo. Puesto que el Diseñador de Visual Studio 2015 VSIX no controla el nuevo `Prerequisites` sección, deberá modificar esta parte manualmente en el código XML.  Como alternativa, puede abrir Visual Studio 2017 y utilizar el Diseñador de manifiestos actualizado para insertar los requisitos previos.
+Requisitos previos son una característica nueva con Visual Studio 2017. En este caso, el Editor de núcleo de Visual Studio es necesario como requisito previo. Puesto que el Diseñador de Visual Studio 2015 VSIX no controla el nuevo `Prerequisites` sección, deberá modificar esta parte manualmente en el código XML. Como alternativa, puede abrir Visual Studio 2017 y utilizar el Diseñador de manifiestos actualizado para insertar los requisitos previos.
 
 Para hacerlo manualmente:
 
@@ -112,7 +112,7 @@ Para hacerlo manualmente:
 * Guarde y cierre el archivo.
 
 > [!NOTE]
-> Si decide realizar esto con el diseñador VSIX en Visual Studio 2017, deberá editar manualmente la versión de requisitos previos para asegurarse de que es compatible con todas las versiones de Visual Studio 2017.  Esto es porque el diseñador, inserta la versión mínima como la versión actual de Visual Studio (por ejemplo, 15.0.26208.0).  Sin embargo, dado que otros usuarios tengan una versión anterior, le interesará editar manualmente este 15.0.
+> Si decide realizar esto con el diseñador VSIX en Visual Studio 2017, deberá editar manualmente la versión de requisitos previos para asegurarse de que es compatible con todas las versiones de Visual Studio 2017. Esto es porque el diseñador, inserta la versión mínima como la versión actual de Visual Studio (por ejemplo, 15.0.26208.0). Sin embargo, dado que otros usuarios tengan una versión anterior, le interesará editar manualmente este 15.0.
 
 En este momento, el archivo de manifiesto debe tener un aspecto similar al siguiente:
 
@@ -120,14 +120,14 @@ En este momento, el archivo de manifiesto debe tener un aspecto similar al sigui
 
 ## <a name="modify-the-project-file-myprojectcsproj"></a>Modificar el archivo de proyecto (myproject.csproj)
 
-Se recomienda tener una referencia a una modificación .csproj abierto mientras realiza este paso.  Puede encontrar varios ejemplos [aquí](https://github.com/Microsoft/VSSDK-Extensibility-Samples).  Seleccione cualquier ejemplo de extensibilidad, busque el *.csproj* como referencia de archivo y ejecute los siguientes pasos:
+Se recomienda tener una referencia a una modificación .csproj abierto mientras realiza este paso. Puede encontrar varios ejemplos [aquí](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Seleccione cualquier ejemplo de extensibilidad, busque el *.csproj* como referencia de archivo y ejecute los siguientes pasos:
 
 * Vaya al directorio del proyecto en **Explorador de archivos**.
 * Abra el *myproject.csproj* archivo con un editor de texto.
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. Actualizar el MinimumVisualStudioVersion
 
-* Establece la versión mínima de visual studio en `$(VisualStudioVersion)` y agregue una instrucción condicional para ella.  Agregue estas etiquetas si no existen.  Asegúrese de que las etiquetas se establecen como sigue:
+* Establece la versión mínima de visual studio en `$(VisualStudioVersion)` y agregue una instrucción condicional para ella. Agregue estas etiquetas si no existen. Asegúrese de que las etiquetas se establecen como sigue:
 
 ```xml
 <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
@@ -163,7 +163,7 @@ Se recomienda tener una referencia a una modificación .csproj abierto mientras 
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. Agregar condiciones a las importaciones de las herramientas de compilación
 
-* Agregar instrucciones condicionales adicionales a la `<import>` etiquetas que tienen una referencia Microsoft.VSSDK.BuildTools.  Insertar `'$(VisualStudioVersion)' != '14.0' And` en la parte delantera de la instrucción de condición.  Estas instrucciones aparecerán en el encabezado y pie de página del archivo csproj.
+* Agregar instrucciones condicionales adicionales a la `<import>` etiquetas que tienen una referencia Microsoft.VSSDK.BuildTools. Insertar `'$(VisualStudioVersion)' != '14.0' And` en la parte delantera de la instrucción de condición. Estas instrucciones aparecerán en el encabezado y pie de página del archivo csproj.
 
 Por ejemplo:
 
@@ -179,7 +179,7 @@ Por ejemplo:
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* Agregar instrucciones condicionales adicionales a la `<Error>` etiquetas que tienen una referencia Microsoft.VSSDK.BuildTools.  Hacer esto mediante la inserción de `'$(VisualStudioVersion)' != '14.0' And` en la parte delantera de la instrucción de condición. Estas instrucciones se mostrarán en el pie de página del archivo csproj.
+* Agregar instrucciones condicionales adicionales a la `<Error>` etiquetas que tienen una referencia Microsoft.VSSDK.BuildTools. Hacer esto mediante la inserción de `'$(VisualStudioVersion)' != '14.0' And` en la parte delantera de la instrucción de condición. Estas instrucciones se mostrarán en el pie de página del archivo csproj.
 
 Por ejemplo:
 
@@ -187,7 +187,7 @@ Por ejemplo:
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* Agregar instrucciones condicionales adicionales a la `<Error>` etiquetas que tienen un Microsoft.VisualStudio.Sdk.BuildTasks.14.0.  Insertar `'$(VisualStudioVersion)' == '14.0' And` en la parte delantera de la instrucción de condición. Estas instrucciones se mostrarán en el pie de página del archivo csproj.
+* Agregar instrucciones condicionales adicionales a la `<Error>` etiquetas que tienen un Microsoft.VisualStudio.Sdk.BuildTasks.14.0. Insertar `'$(VisualStudioVersion)' == '14.0' And` en la parte delantera de la instrucción de condición. Estas instrucciones se mostrarán en el pie de página del archivo csproj.
 
 Por ejemplo:
 
