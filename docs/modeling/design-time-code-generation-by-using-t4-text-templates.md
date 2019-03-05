@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb45d8e53b1ec24dceed7845bc344822c6a6830d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 0a6b8a01151e192c4c92f8e8264d45b70d1fba85
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223091"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323436"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 Plantillas de texto T4 de tiempo de diseño permiten generar código de programa y otros archivos en el proyecto de Visual Studio. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o una base de datos que contiene información esencial sobre los requisitos de la aplicación.
@@ -284,17 +284,20 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```
 
 > [!TIP]
->  Una plantilla de texto se ejecuta en su propio dominio de aplicación y el acceso a los servicios se realiza mediante el cálculo de referencias. En este caso, GetCOMService() es más confiable que GetService().
+> Una plantilla de texto se ejecuta en su propio dominio de aplicación y el acceso a los servicios se realiza mediante el cálculo de referencias. En este caso, GetCOMService() es más confiable que GetService().
 
 ## <a name="Regenerating"></a> Volver a generar el código automáticamente
- Normalmente, se generan varios archivos en una solución de Visual Studio con un modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.
 
- Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **Transformar todas las plantillas** en el **compilar** menú.
+Normalmente, se generan varios archivos en una solución de Visual Studio con un modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.
 
- Si ha instalado el SDK de modelado de Visual Studio, puede tener todas las plantillas se transformen automáticamente cada vez que realice una compilación. Para ello, edite el archivo de proyecto (.csproj o .vbproj) en un editor de texto y agregue las siguientes líneas cerca del final del archivo, después de cualquier otra instrucción `<import>`:
+Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **Transformar todas las plantillas** en el **compilar** menú.
+
+Si ha instalado el SDK de modelado de Visual Studio, puede tener todas las plantillas se transformen automáticamente cada vez que realice una compilación. Para ello, edite el archivo de proyecto (.csproj o .vbproj) en un editor de texto y agregue las siguientes líneas cerca del final del archivo, después de cualquier otra instrucción `<import>`:
 
 > [!NOTE]
 > El SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+
+::: moniker range="vs-2017"
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -304,10 +307,25 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 </PropertyGroup>
 ```
 
- Para obtener más información, consulte [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
+<PropertyGroup>
+   <TransformOnBuild>true</TransformOnBuild>
+   <!-- Other properties can be inserted here -->
+</PropertyGroup>
+```
+
+::: moniker-end
+
+Para obtener más información, consulte [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Notificación de errores
- Para colocar mensajes de error y advertencia en la ventana de errores de Visual Studio, puede utilizar estos métodos:
+
+Para colocar mensajes de error y advertencia en la ventana de errores de Visual Studio, puede utilizar estos métodos:
 
 ```
 Error("An error message");

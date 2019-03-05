@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023920"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323937"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 
@@ -29,7 +29,8 @@ En este artículo contiene las siguientes tareas para los integradores del Visor
 
 -   Recursos adicionales
 
-### <a name="creating-a-topic-f1-support"></a>Creación de un tema (soporte de F1)
+## <a name="create-a-topic-f1-support"></a>Crear un tema (soporte de F1)
+
 En esta sección se proporciona información general de los componentes de un tema presentado, los requisitos del tema, una breve descripción de cómo crear un tema (incluidos los requisitos de soporte técnico de F1) y, finalmente, un tema de ejemplo con el resultado representado.
 
 **Introducción al Visor de tema de ayuda**
@@ -91,17 +92,17 @@ Crear un nuevo documento XHTML denominado ContosoTopic4.htm e incluyen la etique
 
 ```
 
-A continuación, agregar datos para definir cómo se presentarán (propio con la marca o no), el tema de cómo hacer referencia en este tema para F1, donde existe en este tema dentro de la tabla de contenido, su identificador (por referencia de vínculo por otros temas), etcetera.  Consulte la tabla "Metadatos de contenido" a continuación para obtener una lista completa de metadatos admitidos.
+A continuación, agregar datos para definir cómo se presentarán (propio con la marca o no), el tema de cómo hacer referencia en este tema para F1, donde existe en este tema dentro de la tabla de contenido, su identificador (por referencia de vínculo por otros temas), etcetera. Consulte la tabla "Metadatos de contenido" a continuación para obtener una lista completa de metadatos admitidos.
 
 -   En este caso, usaremos nuestro propio paquete de personalización de marca, una variante del paquete de personalización de marca en el Visor de Ayuda de Visual Studio.
 
--   Agregue el nombre de metadatos de F1 y valor (contenido de "Microsoft.Help.F1" = "ContosoTopic4") que coincidirá con el valor de F1 proporcionado en la bolsa IDE.  (Consulte la sección de soporte técnico de F1 para obtener más información).   Este es el valor que coincida con la tecla F1 llamar desde el IDE para mostrar de este tema cuando se elige la tecla F1 en el IDE.
+-   Agregue el nombre de metadatos de F1 y valor (contenido de "Microsoft.Help.F1" = "ContosoTopic4") que coincidirá con el valor de F1 proporcionado en la bolsa IDE. (Consulte la sección de soporte técnico de F1 para obtener más información). Este es el valor que coincida con la tecla F1 llamar desde el IDE para mostrar de este tema cuando se elige la tecla F1 en el IDE.
 
--   Agregue el identificador de tema. Se trata de la cadena que se utiliza en otros temas para vincular a este tema.  Es el identificador de Visor de ayuda para este tema.
+-   Agregue el identificador de tema. Se trata de la cadena que se utiliza en otros temas para vincular a este tema. Es el identificador de Visor de ayuda para este tema.
 
 -   Para la tabla de contenido, agregue el nodo de elemento primario de este tema para definir dónde aparecerá este nodo de tabla de contenido del tema.
 
--   La tabla de contenido, agregue el orden de los nodos de este tema. Cuando el nodo primario tiene un número n de los nodos secundarios, defina en el orden de los nodos secundarios ubicación de este tema. Por ejemplo, en este tema es el número 4 de 4 temas secundarios.)
+-   La tabla de contenido, agregue el orden de los nodos de este tema. Cuando el nodo primario tiene `n` número de elementos secundarios de los nodos, se definen en el orden de los nodos secundarios ubicación de este tema. Por ejemplo, en este tema es el número 4 de 4 temas secundarios.
 
 Sección de metadatos de ejemplo:
 
@@ -124,7 +125,6 @@ Sección de metadatos de ejemplo:
 
 </body>
 </html>
-
 ```
 
 **El cuerpo del tema**
@@ -141,10 +141,10 @@ El cuerpo (sin incluir el encabezado y pie de página) del tema contendrá vínc
 
 5.  Agregue texto específico del lenguaje de código:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Tenga en cuenta que `devLangnu=` permite introducir otros lenguajes. Por ejemplo, `devLangnu="Fortran"` Fortran se muestra cuando el fragmento de código DisplayLanguage = Fortran
 
-6.  Agregar vínculos de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6.  Agregar vínculos de página: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Nota: para que no es compatible con nuevos "Idioma" (ejemplo, F#, Cobol, Fortran) el código en colores en el fragmento de código será monocromo.
+> Nota: para que no es compatible con nuevos "Idioma" (ejemplo, F#, Cobol, Fortran) el código en colores en el fragmento de código será monocromo.
 
 **Tema del Visor de Ayuda de ejemplo** el código muestra cómo definir los metadatos, un fragmento de código, un área contraíble y texto específicos del idioma.
 
@@ -257,7 +257,7 @@ some F# code
 
     <div id="seeAlsoSection" class="section">
     <div class="seeAlsoStyle">
-        <a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>
+        <a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>
     </div>
  </div>
 </div>
@@ -340,9 +340,21 @@ Un usuario, a continuación, puede registrar CustomLibrary como el espacio de no
 
 Agregue la siguiente clave del registro y el valor:
 
-Clave de la Ayuda de HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic: Mostrar resultados de depuración en el valor de venta: SÍ
+::: moniker range="vs-2017"
 
-En el IDE, bajo el elemento de menú Ayuda, seleccione "Depurar contexto de ayuda"
+**Ayuda de HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**Ayuda de HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic**
+
+::: moniker-end
+
+Valor: Mostrar resultados de la depuración en los datos de venta directa: SÍ
+
+En el IDE, bajo el elemento de menú Ayuda, seleccione **depurar contexto de Ayuda**.
 
 **Metadatos de contenido**
 
@@ -366,7 +378,8 @@ En la siguiente tabla, cualquier cadena que aparece entre corchetes es un marcad
 | \< el contenido de meta name="Microsoft.Help.TopicVersion ="[número de versión de tema]"/ > | Especifica esta versión del tema cuando existen varias versiones de un catálogo. Porque Microsoft.Help.Id no está garantizado que sea único, esta etiqueta es necesaria cuando más de una versión de un tema no existe en un catálogo, por ejemplo, cuando un catálogo contiene un tema de .NET Framework 3.5 y un tema para .NET Framework 4 y ambos tienen el mismo Micro suave. Help.Id. |
 | \< nombre de la meta = "SelfBranded" content = "[TRUE o FALSE]" / > | Especifica si en este tema usa el paquete de personalización de marca de inicio de administrador de bibliotecas de ayuda o un paquete de personalización de marca específica del tema. Esta etiqueta debe ser TRUE o FALSE. Si es TRUE, el paquete de personalización de marca para el tema asociado reemplaza el paquete de personalización de marca que se establece cuando se inicia el Administrador de bibliotecas de ayuda para que el tema se presenta como se espera incluso si es diferente de la representación de otro tipo de contenido. Si es FALSE, el tema actual se representa según el paquete de personalización de marca que se establece cuando se inicia el Administrador de bibliotecas de ayuda. De forma predeterminada, se supone una personalización de marca automáticamente a ser false a menos que se declara la variable SelfBranded como TRUE; Administrador de bibliotecas de ayuda por lo tanto, no es necesario declarar \<nombre meta = "SelfBranded" content = "FALSE" / >. |
 
-### <a name="creating-a-branding-package"></a>Creación de un paquete de personalización de marca
+## <a name="create-a-branding-package"></a>Crear un paquete de personalización de marca
+
 La versión de Visual Studio incluye a una serie de diferentes productos de Visual Studio, incluido el aislado y shells integrados para Partners de Visual Studio.  Cada uno de estos productos requiere cierto grado de personalización de marca única para el producto, soporte contenido de Ayuda basada en temas.  Por ejemplo, los temas de Visual Studio deben tener una presentación de marca coherentes, mientras que SQL Studio, que ajusta el Shell de ISO, requiere su propio único ayuda contenido personalización de marca para cada tema.  Un asociado de Shell integrado podría ser dentro del elemento primario de contenido de Ayuda del producto de Visual Studio mientras mantiene su propio tema de la personalización de marca los temas de ayuda.
 
 Personalización de marca de los paquetes se instalan por el producto que contiene el Visor de ayuda.  Productos de Visual Studio:
@@ -432,7 +445,6 @@ El archivo Branding.xml contiene una lista de elementos que se usan para represe
 Nota: las variables que se ha indicado por "{n}" tienen las dependencias del código, quitar o cambiar estos valores hará que los errores y, posiblemente, el bloqueo de la aplicación. Los identificadores de localización (ejemplo _locID="codesnippet.n") se incluyen en el paquete de personalización de marca de Visual Studio.
 
 **Branding.xml**
-
 
 | | |
 | - | - |
@@ -603,7 +615,8 @@ Contenido de Visual Studio muestra un logotipo de Visual Studio, así como otros
 |ccOn.png|Gráfico de subtítulos (CC)||
 |ImageSprite.png|Utilizado para representar un área contraíble|Expandir o contraer gráfico|
 
-### <a name="deploying-a-set-of-topics"></a>Implementación de un conjunto de temas
+## <a name="deploy-a-set-of-topics"></a>Implementar un conjunto de temas
+
 Se trata de un tutorial para crear un conjunto de implementación de contenido del Visor de Ayuda consta de un archivo MSHA y el conjunto de archivos CAB o MSHCs que contiene los temas de forma rápido y sencillo. El MSHA es un archivo XML que describe un conjunto de archivos .cab o los archivos MSHC. El Visor de ayuda puede leer el MSHA para obtener una lista de contenido (el. CAB o. Archivos MSHC) disponible para su instalación local.
 
 Esto es sólo un manual que describe el esquema XML muy básico para el Visor de ayuda, MSHA.  Hay un ejemplo de implementación por debajo de esta breve introducción y ejemplo HelpContentSetup.msha.
@@ -677,14 +690,14 @@ Para obtener el paquete de personalización de marca de Visual Studio, copie el 
 </div>
 </body>
 </html>
-
 ```
 
 **Resumen**
 
 Usar y ampliar los pasos anteriores le permitirá VSPs implementar sus conjuntos de contenido para el Visor de Ayuda de Visual Studio.
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Agregar ayuda a Visual Studio Shell (integrado y aislado)
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Agregar ayuda a Visual Studio Shell (integrado y aislado)
+
 **Introducción**
 
 Este tutorial muestra cómo incorporar contenido de ayuda en una aplicación de Shell de Visual Studio y, a continuación, implementarlo.
@@ -786,7 +799,7 @@ Para probar esto como si implementan:
 
 6. Crear CatalogType.xml y agregar al almacén de contenido (paso anterior) que contiene:
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <catalogType>UserManaged</catalogType>
    ```
@@ -817,7 +830,7 @@ Para probar esto como si implementan:
 
 12. En el IDE de Contoso, elija la tecla F1 para probar la funcionalidad de F1.
 
-### <a name="additional-resources"></a>Recursos adicionales
+## <a name="additional-resources"></a>Recursos adicionales
 
 Para la API de tiempo de ejecución, consulte [API de Ayuda de Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).
 
