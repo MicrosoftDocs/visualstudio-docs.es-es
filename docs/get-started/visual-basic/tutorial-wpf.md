@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eb1f0e404bf6815bc26e3c1a14aeff79cde40e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b6dc096eebde5c47bfa74214b24b91a05511894d
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945395"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800563"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Creación de una aplicación sencilla con Visual Basic
 
@@ -32,9 +32,19 @@ Cuando inicie Visual Studio por primera vez, se le pedirá que inicie sesión. E
 
 ![Cuadro de diálogo Elegir configuración](../media/exploreide-settings.png)
 
+::: moniker range="vs-2017"
+
 Una vez que se haya iniciado Visual Studio, verá las ventanas de herramientas, los menús, las barras de herramientas y el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. En el centro de la ventana de la aplicación está la **Página principal**. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio donde está la **página de inicio** . Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.
 
-![IDE con configuración general aplicada.](../media/exploreide-idewithgeneralsettings.png)
+![IDE de Visual Studio 2017 con configuración general aplicada](../media/exploreide-idewithgeneralsettings.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Cuando se inicia Visual Studio, la primera ventana que se abre es la de **Inicio**. Haga clic en **Continuar sin código** para abrir el entorno de desarrollo. Se mostrarán las ventanas de herramientas, los menús, las barras de herramientas y el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio central de la ventana de la aplicación. Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>Crear el proyecto
 

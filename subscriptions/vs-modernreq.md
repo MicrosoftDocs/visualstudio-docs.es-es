@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Obtenga información sobre el conjunto de productos MODERNRequirements incluido en la suscripción de Visual Studio Enterprise seleccionada.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fd7aed3acd11b0d9e5ce05784619c34a97e726a8
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: b35dae73b0fad0acb0acb7f67a2a35533d7cf95a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380239"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842512"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Ventaja de MODERNRequirements4TFS en suscripciones de Visual Studio
 

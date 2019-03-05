@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/15/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Información para proveedores de soluciones en la nube sobre cómo comprar y administrar suscripciones de nube de Visual Studio para sus clientes.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7ca04ab81462c2126068ed5a5710cee663944431
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: b17c5bb663f364cda4a9a93d63f2583e59426bac
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270013"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842642"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Adquirir y administrar suscripciones de nube de Visual Studio para los clientes
 
@@ -34,7 +32,7 @@ En primer lugar, hay que configurar el inquilino del cliente en el Centro de par
 [Más información](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
 ## <a name="who-can-buy-visual-studio-subscriptions"></a>¿Quién puede comprar suscripciones de Visual Studio?
-Cualquier persona con [acceso de propietario o de colaborador](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) a la suscripción de Azure puede comprar suscripciones de Visual Studio. 
+Cualquier persona con [acceso de propietario o de colaborador](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) a la suscripción de Azure puede comprar suscripciones de Visual Studio.
 
 ## <a name="how-to-buy"></a>Cómo comprarlas
 
@@ -93,14 +91,14 @@ Ofrecemos un descuento del 5 % por la sexta unidad que se adquiera (para un mism
 
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: ¿Cómo se procesan los cargos de las suscripciones de nube **mensuales**?
 
-A: En la primera compra, facturaremos una cantidad prorrateada para cubrir los días restantes del mes actual. Por ejemplo, si se compran 10 suscripciones de nube mensuales de Visual Studio Professional el 15 de abril, cobraríamos solo cinco unidades (porque siguen quedando por delante 15 de los 30 días del mes en curso), o bien el 50 % y prorratearíamos las unidades facturadas al 50 %.
+R: En la primera compra, facturaremos una cantidad prorrateada para cubrir los días restantes del mes actual. Por ejemplo, si se compran 10 suscripciones de nube mensuales de Visual Studio Professional el 15 de abril, cobraríamos solo cinco unidades (porque siguen quedando por delante 15 de los 30 días del mes en curso), o bien el 50 % y prorratearíamos las unidades facturadas al 50 %.
 A partir del 1 de mayo, y así cada mes en adelante hasta que se cancele, se facturarán las 10 unidades por completo.
 
 Si, más adelante, la cantidad de pago se incrementa, también prorratearemos la diferencia en las unidades para cubrir los días restantes del mes en curso. Así, si el 10 de mayo se adquiere una suscripción de nube de Visual Studio Professional mensual más, facturaríamos aproximadamente 0,677 unidades (21 días restantes del mes de mayo, que tiene 31 días).
 
 ### <a name="q-how-do-cancellations-work"></a>P: ¿Cómo funcionan las cancelaciones?
 
-A: Cuando una suscripción de nube de Visual Studio se cancela, se cancela la renovación automática. La suscripción prosigue hasta la fecha de renovación normal y, tras ello, sencillamente expira.
+R: Cuando una suscripción de nube de Visual Studio se cancela, se cancela la renovación automática. La suscripción prosigue hasta la fecha de renovación normal y, tras ello, sencillamente expira.
 Al expirar, el suscriptor de Visual Studio ya no puede usar Visual Studio ni disfrutar de ninguna otra ventaja de la suscripción.
 
 En las suscripciones de nube mensuales, las cancelaciones surten efecto el primer día del siguiente mes. Si cancela solo algunas de las suscripciones de nube mensuales del cliente, asegúrese de quitar a los usuarios correspondientes al inicio del siguiente mes para, de este modo, procurar que las personas adecuadas sigan teniendo suscripciones activas asignadas.
@@ -109,7 +107,7 @@ En el caso de las suscripciones de nube anuales, las cancelaciones surten efecto
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>P: ¿Qué tipo de descuentos por volumen están disponibles para las suscripciones de Visual Studio?
 
-A:  Disfrutará de un 5 % de descuento a partir de la sexta suscripción y en todas las siguientes *dentro del mismo tipo* de suscripción:
+R:  Disfrutará de un 5 % de descuento a partir de la sexta suscripción y en todas las siguientes *dentro del mismo tipo* de suscripción:
 
 * Visual Studio Professional mensual
 * Visual Studio Enterprise mensual
@@ -122,8 +120,8 @@ Estos descuentos aparecen reflejados en los datos de precios del [Centro de part
 
 ### <a name="q-are-there-renewal-discounts"></a>P: ¿Hay descuentos por renovación?
 
-A:  No, los precios de las suscripciones de Visual Studio son fijos. El precio es el mismo tanto para las suscripciones nuevas como para las que sigan renovándose.
+R:  No, los precios de las suscripciones de Visual Studio son fijos. El precio es el mismo tanto para las suscripciones nuevas como para las que sigan renovándose.
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>P: ¿Existen opciones de precios de desarrollo/pruebas de Azure para CSP?
 
-A: No en este momento. Los clientes pueden sacar partido de las ventajas de [precios de desarrollo y pruebas de Azure](http://aka.ms/azuredevtestpricing), pero no tenemos algo que sea específico para CSP.
+R: No en este momento. Los clientes pueden sacar partido de las ventajas de [precios de desarrollo y pruebas de Azure](https://aka.ms/azuredevtestpricing), pero no tenemos algo que sea específico para CSP.

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952832"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703258"
 ---
 # <a name="environment-options-dialog-box"></a>Opciones de entorno (Cuadro de diálogo)
 
@@ -35,7 +35,7 @@ Puede usar las páginas de la carpeta **Entorno** en el cuadro de diálogo **Opc
 |Para establecer las opciones de asignación de teclado.|[Teclado, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Para especificar si las notificaciones están habilitadas.|[Notificaciones, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Para especificar las opciones de la ventana de inicio rápido.|[Inicio rápido, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|Para especificar las opciones de la página de inicio.|[Inicio, Entorno, Cuadro de diálogo Opciones](../../ide/reference/startup-environment-options-dialog-box.md)|
+|Para especificar las opciones de inicio.|[Inicio, Entorno, Cuadro de diálogo Opciones](../../ide/reference/startup-environment-options-dialog-box.md)|
 |Para especificar si desea cambiar la configuración de los equipos.|[Configuración sincronizada, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Obtener información sobre cómo establecer opciones para tareas y listas de tareas|[Lista de tareas, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Cambiar las páginas Principal y de búsqueda predeterminadas, cambiar el editor de código fuente del sistema y configurar opciones de Internet Explorer.|[Explorador web, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/web-browser-environment-options-dialog-box.md)|

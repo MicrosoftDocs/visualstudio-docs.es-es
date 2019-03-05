@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102b48131a705b39afb45fb59377d76114a426dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920488"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796652"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 
@@ -30,11 +30,23 @@ Para seguir este inicio rápido, se necesita una copia de Visual Studio 2017 ver
 
 ## <a name="create-a-console-app"></a>Crear una aplicación de consola
 
-Inicie Visual Studio si aún no se está ejecutando.
+Abra Visual Studio si aún no se está ejecutando.
+
+::: moniker range="vs-2017"
 
 ![IDE con la configuración de Visual C&#43;&#43; aplicada](../ide/media/get-started-cpp-ide-layout.png)
 
 Después de abrir Visual Studio, puede ver las tres partes básicas del IDE: ventanas de herramientas, menús y barras de herramientas, así como el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación. El cuadro **Inicio rápido**, la barra de menús y la barra de herramientas estándar se sitúan en la parte superior. El centro de la ventana contiene la **Página de inicio**. Cuando se abre una solución o un proyecto, los editores y diseñadores aparecen en este espacio. Al desarrollar una aplicación, la mayor parte del tiempo se invierte en esta área central.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Después de abrir Visual Studio, la primera ventana que aparece es la de **Inicio**. Haga clic en **Continuar sin código** para abrir el entorno de desarrollo.
+
+Verá las tres partes básicas del IDE: ventanas de herramientas, menús y barras de herramientas, así como el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación. El cuadro **Inicio rápido**, la barra de menús y la barra de herramientas estándar se sitúan en la parte superior. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio central de la ventana de la aplicación. Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.
+
+::: moniker-end
 
 Visual Studio usa *proyectos* para organizar el código de una aplicación y *soluciones* para organizar los proyectos. Un proyecto contiene todas las opciones, las configuraciones y las reglas que se usan para compilar las aplicaciones. También sirve para administrar la relación entre todos los archivos del proyecto y cualquier archivo externo. Para crear la aplicación, hay que crear en primer lugar un proyecto y una solución.
 

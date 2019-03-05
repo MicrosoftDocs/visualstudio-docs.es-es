@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Obtenga información sobre cómo los administradores de suscripciones pueden tener acceso al portal de administración y administrar las suscripciones adquiridas a través de Licencias por volumen (VL)
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379545"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843150"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Acceso al portal y gestión de administradores para las suscripciones adquiridas a través de Licencias por volumen (VL)
 
@@ -22,8 +20,8 @@ ms.locfileid: "39379545"
 
 A partir del 1 de marzo de 2017, los clientes que todavía estén trabajando en el proceso de incorporación y migración al portal tendrán que administrar sus suscripciones en el Centro de servicio de licencias por volumen (VLSC).
 
-Para obtener más información sobre cómo administrar las suscripciones en el VLSC, consulte estas guías: [Comprender las suscripciones de Visual Studio para VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
-[Administrar las suscripciones de Visual Studio para VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+Para obtener más información sobre cómo administrar las suscripciones en el VLSC, vea estas guías: [Understanding Visual Studio Subscriptions for VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf) (Descripción de las suscripciones de Visual Studio para VLSC)
+[Managing Visual Studio Subscriptions for VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf) (Administración de suscripciones de Visual Studio para VLSC)
 
 **Portal de administración de suscripciones de Visual Studio** Si su organización ha migrado, pero aún no lo han configurado en el portal nuevo, el contacto principal o el encargado de los avisos del contrato de Licencias por volumen de su organización deberá realizar algunos pasos para incorporar su organización y configurarlo como administrador.
 

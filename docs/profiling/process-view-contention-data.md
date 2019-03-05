@@ -10,34 +10,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd21dd4b4e24694619ba341f624780432dcb671c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 79f9330733a0d32faeb9980813f170f52a6f7121
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990893"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643917"
 ---
 # <a name="process-view---contention-data"></a>Vista Proceso: datos de contención
-La vista Proceso muestra datos de contención de los procesos y subprocesos que se ejecutaron durante la generación de perfiles.  
-  
- Cuando haya símbolos disponibles, los procesos se enumeran por nombre. Cuando no haya símbolos disponibles, los procesos se enumeran por su dirección de memoria en formato hexadecimal. Los subprocesos se enumeran como elementos secundarios del proceso que los creó.  
-  
- En la siguiente tabla se explican los valores de las columnas de la tabla de vista Proceso.  
-  
-|Columna|Descripción|  
-|------------|-----------------|  
-|**Hora de inicio**|El número de milisegundos o ciclos de procesador desde el inicio de la generación de perfiles hasta el inicio del proceso o subproceso.|  
-|**Tiempo de bloqueo**|El tiempo total durante el cual no se pudieron ejecutar las funciones del proceso o subproceso.|  
-|**Porcentaje de tiempo de bloqueo**|El porcentaje de la duración del proceso o subproceso en el que no se pudieron ejecutar las funciones del proceso o subproceso.|  
-|**Contenciones**|El número de veces que no se pudieron ejecutar las funciones del proceso o subproceso.|  
-|**Porcentaje de contenciones**|El porcentaje de todas las contenciones de la generación de perfiles que son contenciones del proceso o subproceso.|  
-|**Hora de finalización**|El número de milisegundos o ciclos de procesador desde el inicio de la generación de perfiles hasta el final del proceso o subproceso.|  
-|**ID**|El identificador generado por el sistema del proceso o subproceso.|  
-|**Duración**|El número de milisegundos o ciclos de procesador desde el inicio del proceso o subproceso hasta el final del proceso o subproceso o el final de la generación de perfiles.|  
-|**ype**|El tipo de fila, ya sea un proceso o un subproceso.<br /><br /> Solo disponible en los informes de línea de comandos de **VSReport**. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md).|  
-|**Name**|El nombre del proceso o subproceso.|  
-|**Id. único**|Un identificador generado por el generador de perfiles que es único para el proceso o subproceso.|  
-  
-## <a name="see-also"></a>Vea también  
- [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
- [Vista Proceso](../profiling/process-view.md)
+La vista Proceso muestra datos de contención de los procesos y subprocesos que se ejecutaron durante la generación de perfiles.
+
+ Cuando haya símbolos disponibles, los procesos se enumeran por nombre. Cuando no haya símbolos disponibles, los procesos se enumeran por su dirección de memoria en formato hexadecimal. Los subprocesos se enumeran como elementos secundarios del proceso que los creó.
+
+ En la siguiente tabla se explican los valores de las columnas de la tabla de vista Proceso.
+
+|Columna|Descripción|
+|------------|-----------------|
+|**Hora de inicio**|El número de milisegundos o ciclos de procesador desde el inicio de la generación de perfiles hasta el inicio del proceso o subproceso.|
+|**Tiempo de bloqueo**|El tiempo total durante el cual no se pudieron ejecutar las funciones del proceso o subproceso.|
+|**Porcentaje de tiempo de bloqueo**|El porcentaje de la duración del proceso o subproceso en el que no se pudieron ejecutar las funciones del proceso o subproceso.|
+|**Contenciones**|El número de veces que no se pudieron ejecutar las funciones del proceso o subproceso.|
+|**Porcentaje de contenciones**|El porcentaje de todas las contenciones de la generación de perfiles que son contenciones del proceso o subproceso.|
+|**Hora de finalización**|El número de milisegundos o ciclos de procesador desde el inicio de la generación de perfiles hasta el final del proceso o subproceso.|
+|**ID**|El identificador generado por el sistema del proceso o subproceso.|
+|**Duración**|El número de milisegundos o ciclos de procesador desde el inicio del proceso o subproceso hasta el final del proceso o subproceso o el final de la generación de perfiles.|
+|**ype**|El tipo de fila, ya sea un proceso o un subproceso.<br /><br /> Solo disponible en los informes de línea de comandos de **VSReport**. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md).|
+|**Name**|El nombre del proceso o subproceso.|
+|**Id. único**|Un identificador generado por el generador de perfiles que es único para el proceso o subproceso.|
+
+## <a name="see-also"></a>Vea también
+- [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)
+- [Vista Proceso](../profiling/process-view.md)

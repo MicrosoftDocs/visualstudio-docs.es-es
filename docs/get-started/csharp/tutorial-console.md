@@ -2,7 +2,7 @@
 title: 'Tutorial: Creación de una aplicación de consola de C# sencilla'
 description: Aprenda a crear una aplicación de consola de C# en Visual Studio mediante un procedimiento paso a paso.
 ms.custom: seodec18, get-started
-ms.date: 01/25/2019
+ms.date: 02/26/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156077"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841187"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
 
@@ -39,7 +39,7 @@ Para empezar, crearemos un proyecto de aplicación de C#. En el tipo de proyecto
 
    ![Plantilla de proyecto Aplicación de consola (.NET Core) en el cuadro de diálogo Nuevo proyecto en el IDE de Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>Agregar un grupo de trabajo (opcional)
+### <a name="add-a-workload-optional"></a>Agregar una carga de trabajo (opcional)
 
 Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, puede obtenerla si agrega la carga de trabajo **Desarrollo multiplataforma de .NET Core**. Esta es la manera de hacerlo.
 
@@ -80,6 +80,7 @@ Empecemos con algunos cálculos de enteros en C#.
             Console.WriteLine(c);
             Console.ReadKey();
     ```
+
 1. Elija **Calculator** para ejecutar el programa, o bien presione **F5**.
 
    ![Elección del botón Calculator para ejecutar la aplicación desde la barra de herramientas](./media/csharp-console-calculator-button.png)
@@ -151,6 +152,7 @@ Ahora vamos a agregar al proyecto un conjunto más complejo de código de la cal
         }
     }
     ```
+
 1. Elija **Calculator** para ejecutar el programa, o bien presione **F5**.
 
    ![Elección del botón Calculator para ejecutar la aplicación desde la barra de herramientas](./media/csharp-console-calculator-button.png)
@@ -382,6 +384,7 @@ Comencemos.
         }
     }
     ```
+
 1. Elija **Calculator** para ejecutar el programa, o bien presione **F5**.
 
 1. Siga las indicaciones y divida el número **42** entre el número **119**. La aplicación debe ser similar a la siguiente:

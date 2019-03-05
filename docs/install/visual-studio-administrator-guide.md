@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7294040f079bf6ff5961f985f82beea112d1f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970418"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710115"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Guía del administrador de Visual Studio 2017
 
@@ -54,7 +54,7 @@ Puede implementar Visual Studio 2017 en estaciones de trabajo cliente siempre y 
 Tenemos varias herramientas disponibles para ayudarle a [detectar y administrar las instancias de Visual Studio instaladas](tools-for-managing-visual-studio-instances.md) en los equipos cliente.
 
 > [!TIP]
-> Además de la documentación de la guía del administrador, una buena fuente de información sobre la instalación de Visual Studio 2017 es el [blog de Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
+> Además de la documentación de la guía del administrador, una buena fuente de información sobre la instalación de Visual Studio 2017 es [Visual Studio Setup Archives](https://devblogs.microsoft.com/setup/tag/vs2017/) (Archivos de instalación de Visual Studio).
 
 ## <a name="specify-customer-feedback-settings"></a>Especificar valores de comentarios de clientes
 

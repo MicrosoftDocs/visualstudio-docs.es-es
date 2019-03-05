@@ -10,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089271"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615551"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de montón ETW nativos personalizados
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Esta biblioteca se puede usar fácilmente en C y C++.
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > Este elemento Decorator le indica al compilador que esta función es una llamada a un asignador.  Cada llamada a la función dará como resultado la dirección del sitio de llamada, el tamaño de la instrucción de llamada y el identificador de tipo del nuevo objeto en un nuevo símbolo `S_HEAPALLOCSITE`.  Cuando se asigna una pila de llamadas, Windows emite un evento ETW con esta información.  La herramienta de generador de perfiles de memoria recorre la pila de llamadas en busca de una dirección de devolución que coincida con un símbolo `S_HEAPALLOCSITE`, y la información del identificador de tipo del símbolo se usa para mostrar el tipo de tiempo de ejecución de la asignación.
    >
@@ -79,7 +79,7 @@ Esta biblioteca se puede usar fácilmente en C y C++.
    ```
 
    Si usa C, use la función `OpenHeapTracker`.  Esta función devuelve un identificador que usará cuando realice una llamada a otras funciones de seguimiento:
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -136,7 +136,7 @@ Esta biblioteca se puede usar fácilmente en C y C++.
    ```
 
 ## <a name="track-memory-usage"></a>Realizar un seguimiento del uso de la memoria
-Una vez realizadas estas llamadas, se puede realizar un seguimiento del uso del montón personalizado mediante la herramienta estándar **Uso de memoria** en Visual Studio.  Para obtener más información sobre cómo usar esta herramienta, vea la documentación sobre el [uso de memoria](../profiling/memory-usage.md). Asegúrese de que ha habilitado la generación de perfiles de montón con instantáneas. En caso contrario, no verá el uso del montón personalizado. 
+Una vez realizadas estas llamadas, se puede realizar un seguimiento del uso del montón personalizado mediante la herramienta estándar **Uso de memoria** en Visual Studio.  Para obtener más información sobre cómo usar esta herramienta, vea la documentación sobre el [uso de memoria](../profiling/memory-usage.md). Asegúrese de que ha habilitado la generación de perfiles de montón con instantáneas. En caso contrario, no verá el uso del montón personalizado.
 
 ![Habilitar la generación de perfiles de montón](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ Al igual que en el montón de Windows estándar, también puede usar esta herram
 > Visual Studio también contiene la herramienta **Uso de memoria** en el conjunto de herramientas **Generación de perfiles de rendimiento**, que se habilita en la opción de menú **Depurar** > **Generador de perfiles de rendimiento** o mediante la combinación de teclado **Alt**+**F2**.  Esta característica no incluye el seguimiento del montón y no mostrará el montón personalizado como se describe aquí.  Esta funcionalidad solo está incluida en la ventana **Herramientas de diagnóstico**, que se puede habilitar en el menú **Depurar** > **Windows** > **Mostrar herramientas de diagnóstico** o mediante la combinación de teclado **Ctrl**+**Alt**+**F2**.
 
 ## <a name="see-also"></a>Vea también
-[Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)  
+[Un primer vistazo a las herramientas de generación de perfiles](../profiling/profiling-feature-tour.md)
 [Uso de memoria](../profiling/memory-usage.md)

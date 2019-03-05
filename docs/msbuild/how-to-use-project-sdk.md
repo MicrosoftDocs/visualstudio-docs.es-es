@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 361b64191d10056d80ab89dd6d4254ca128dcc96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020599"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638184"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Procedimiento Usar SDK de proyecto de MSBuild
 
@@ -94,7 +94,7 @@ Durante la evaluación del proyecto, [!INCLUDE[vstecmsbuild](../extensibility/in
 Al evaluar la importación, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] resuelve dinámicamente la ruta de acceso al SDK del proyecto basándose en el nombre y la versión especificada.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] también tiene una lista de resoluciones de SDK registradas que son complementos que ubican los SDK de proyecto en el equipo.  Entre estos complementos se incluyen los siguientes:
 
 1. Una resolución basada en NuGet que consulta las fuentes de paquetes configuradas para los paquetes NuGet que coinciden con el identificador y la versión del SDK especificado.<br/>
-   Esta resolución solo está activa si ha especificado una versión opcional y se puede utilizar para cualquier SDK de proyecto personalizado.  
+   Esta resolución solo está activa si ha especificado una versión opcional y se puede utilizar para cualquier SDK de proyecto personalizado.
 2. Una resolución de CLI de .NET que resuelve los SDK que se instalan con la CLI de .NET.<br/>
    Esta resolución busca SDK de proyecto como `Microsoft.NET.Sdk` y `Microsoft.NET.Sdk.Web` que forman parte del producto.
 3. Una resolución predeterminada que resuelve los SDK que se instalaron con MSBuild.
@@ -110,11 +110,11 @@ La resolución del SDK basado en NuGet admite la especificación de una versión
 }
 ```
 
-Durante una compilación, solo se puede usar una versión de cada SDK de proyecto.  Si está haciendo referencia a dos versiones diferentes del mismo SDK de proyecto, MSBuild emitirá una advertencia.  Se recomienda **no** especificar una versión en los proyectos si se ha especificado una versión en *global.json*.  
+Durante una compilación, solo se puede usar una versión de cada SDK de proyecto.  Si está haciendo referencia a dos versiones diferentes del mismo SDK de proyecto, MSBuild emitirá una advertencia.  Se recomienda **no** especificar una versión en los proyectos si se ha especificado una versión en *global.json*.
 
 ## <a name="see-also"></a>Vea también
 
- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
- [Personalizar una compilación](../msbuild/customize-your-build.md)   
- [Paquetes, metapaquetes y marcos de trabajo](/dotnet/core/packages)   
- [Adiciones al formato csproj para .NET Core](/dotnet/core/tools/csproj)
+- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
+- [Personalizar una compilación](../msbuild/customize-your-build.md)
+- [Paquetes, metapaquetes y marcos de trabajo](/dotnet/core/packages)
+- [Adiciones al formato csproj para .NET Core](/dotnet/core/tools/csproj)

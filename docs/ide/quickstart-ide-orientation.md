@@ -1,19 +1,19 @@
 ---
 title: Un paseo por el IDE de Visual Studio
 titleSuffix: ''
-ms.date: 07/12/2018
+ms.date: 02/21/2019
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e847829877328cff1a244eae4cd5d29616c7a8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955835"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712533"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Inicio rápido: Primer vistazo al IDE de Visual Studio
 
@@ -78,6 +78,8 @@ Vamos a compilar el proyecto para ver algún resultado de compilación. En el me
 ## <a name="quick-launch"></a>Inicio rápido
 
 El cuadro **Inicio rápido** es una manera rápida y sencilla de hacer prácticamente todo en Visual Studio. Puede especificar algún texto relacionado con lo que quiere hacer, y se mostrará una lista de opciones que pertenecen al texto. Por ejemplo, supongamos que se quiere aumentar el detalle de los resultados de compilación para mostrar más detalles sobre lo que está haciendo exactamente la compilación. Así es como se haría:
+
+1. Localice el cuadro **Inicio rápido** en la esquina superior derecha del IDE. (Como alternativa, presione **Ctrl**+**Q** para acceder a él).
 
 1. Escriba **verbosity** en el cuadro **Inicio rápido**. En los resultados que aparecen, elija **Proyectos y soluciones --> Compilar y ejecutar** en la categoría **Opciones**.
 

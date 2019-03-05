@@ -18,64 +18,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a7ecc4c91dcb39d090c00b7b2ed37bd6bb906c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff783c76595e1cc79d2520a4e27f5afa01b0a978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011902"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603682"
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
-Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es `false` para una tarea con error.  
+Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es `false` para una tarea con error.
 
- \<Project>  
- \<Target>  
- \<OnError>  
+ \<Project> \<Target> \<OnError>
 
-## <a name="syntax"></a>Sintaxis  
+## <a name="syntax"></a>Sintaxis
 
-```xml  
-<OnError ExecuteTargets="TargetName"  
-    Condition="'String A'=='String B'" />  
-```  
+```xml
+<OnError ExecuteTargets="TargetName"
+    Condition="'String A'=='String B'" />
+```
 
-## <a name="attributes-and-elements"></a>Atributos y elementos  
- En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
-### <a name="attributes"></a>Atributos  
+### <a name="attributes"></a>Atributos
 
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
-|`ExecuteTargets`|Atributo necesario.<br /><br /> Los destinos para ejecutar si se produce un error en una tarea. Separe varios destinos con puntos y coma. Se ejecutan varios destinos en el orden especificado.|  
+|Atributo|Descripción|
+|---------------|-----------------|
+|`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|
+|`ExecuteTargets`|Atributo necesario.<br /><br /> Los destinos para ejecutar si se produce un error en una tarea. Separe varios destinos con puntos y coma. Se ejecutan varios destinos en el orden especificado.|
 
-### <a name="child-elements"></a>Elementos secundarios  
- Ninguno.  
+### <a name="child-elements"></a>Elementos secundarios
+ Ninguno.
 
-### <a name="parent-elements"></a>Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios
 
 | Elemento | Descripción |
 | - | - |
 | [Target](../msbuild/target-element-msbuild.md) | Elemento contenedor para tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
-## <a name="remarks"></a>Comentarios  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ejecuta el elemento `OnError` si una de las tareas del elemento `Target` da error con el atributo `ContinueOnError` establecido en `ErrorAndStop` (o `false`). Cuando la tarea produce un error, se ejecutan los destinos especificados en el atributo `ExecuteTargets`. Si hay más de un elemento `OnError` en el destino, los elementos `OnError` se ejecutan secuencialmente cuando se produce un error en la tarea.  
+## <a name="remarks"></a>Comentarios
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ejecuta el elemento `OnError` si una de las tareas del elemento `Target` da error con el atributo `ContinueOnError` establecido en `ErrorAndStop` (o `false`). Cuando la tarea produce un error, se ejecutan los destinos especificados en el atributo `ExecuteTargets`. Si hay más de un elemento `OnError` en el destino, los elementos `OnError` se ejecutan secuencialmente cuando se produce un error en la tarea.
 
- Para información sobre el atributo `ContinueOnError`, consulte [Elemento Task (MSBuild)](../msbuild/task-element-msbuild.md). Para más información sobre los destinos, consulte [Destinos](../msbuild/msbuild-targets.md).  
+ Para información sobre el atributo `ContinueOnError`, consulte [Elemento Task (MSBuild)](../msbuild/task-element-msbuild.md). Para más información sobre los destinos, consulte [Destinos](../msbuild/msbuild-targets.md).
 
-## <a name="example"></a>Ejemplo  
- El código siguiente ejecuta las tareas `TaskOne` y `TaskTwo`. Si `TaskOne` da error, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] evalúa como el elemento `OnError` y ejecuta el destino `OtherTarget`.  
+## <a name="example"></a>Ejemplo
+ El código siguiente ejecuta las tareas `TaskOne` y `TaskTwo`. Si `TaskOne` da error, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] evalúa como el elemento `OnError` y ejecuta el destino `OtherTarget`.
 
-```xml  
-<Target Name="ThisTarget">  
-    <TaskOne ContinueOnError="ErrorAndStop">  
-    </TaskOne>  
-    <TaskTwo>  
-    </TaskTwo>  
-    <OnError ExecuteTargets="OtherTarget" />  
-</Target>  
-```  
+```xml
+<Target Name="ThisTarget">
+    <TaskOne ContinueOnError="ErrorAndStop">
+    </TaskOne>
+    <TaskTwo>
+    </TaskTwo>
+    <OnError ExecuteTargets="OtherTarget" />
+</Target>
+```
 
-## <a name="see-also"></a>Vea también  
- [Referencia de esquemas de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)   
- [Destinos](../msbuild/msbuild-targets.md)
+## <a name="see-also"></a>Vea también
+- [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Destinos](../msbuild/msbuild-targets.md)

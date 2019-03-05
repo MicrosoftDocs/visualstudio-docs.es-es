@@ -19,40 +19,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 598e802f9868399073bba7a6f1bc1f2278af83f6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 505a05c13add7c9e4d2ee27790ef6b971ee281f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921069"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635142"
 ---
 # <a name="project-element-msbuild"></a>Elemento Project (MSBuild)
-Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .  
+Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .
 
-## <a name="syntax"></a>Sintaxis  
+## <a name="syntax"></a>Sintaxis
 
-```xml  
-<Project InitialTargets="TargetA;TargetB"  
-         DefaultTargets="TargetC;TargetD"  
-         TreatAsLocalProperty="PropertyA;PropertyB"  
+```xml
+<Project InitialTargets="TargetA;TargetB"
+         DefaultTargets="TargetC;TargetD"
+         TreatAsLocalProperty="PropertyA;PropertyB"
          ToolsVersion=<version number>
          Sdk="name[/version]"
-         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <Sdk... />
-    <Choose>... </Choose>  
-    <PropertyGroup>... </PropertyGroup>  
-    <ItemGroup>... </ItemGroup>  
-    <Target>... </Target>  
-    <UsingTask.../>  
-    <ProjectExtensions>... </ProjectExtensions>  
-    <Import... />  
-</Project>  
-```  
+    <Choose>... </Choose>
+    <PropertyGroup>... </PropertyGroup>
+    <ItemGroup>... </ItemGroup>
+    <Target>... </Target>
+    <UsingTask.../>
+    <ProjectExtensions>... </ProjectExtensions>
+    <Import... />
+</Project>
+```
 
-## <a name="attributes-and-elements"></a>Atributos y elementos  
- En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
-### <a name="attributes"></a>Atributos  
+### <a name="attributes"></a>Atributos
 
 | Atributo | Descripción |
 |------------------------| - |
@@ -63,7 +63,7 @@ Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../ex
 | `TreatAsLocalProperty` | Atributo opcional.<br /><br /> Nombres de propiedad que no se consideran globales. Este atributo impide que determinadas propiedades de la línea de comandos invaliden los valores de propiedad que se establecen en un archivo del proyecto o de destinos y todas las importaciones posteriores. Si hay varias propiedades, se delimitan con punto y coma (;).<br /><br /> Normalmente, las propiedades globales invalidan los valores de propiedad que se establecen en el archivo del proyecto o de destinos. Si la propiedad aparece en el valor `TreatAsLocalProperty`, el valor de propiedad global no invalida los valores de propiedad que se establecen en ese archivo ni las importaciones posteriores. Para obtener más información, vea [Cómo: Compilar los mismos archivos de código fuente con diferentes opciones](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Nota:**  Establezca propiedades globales en el símbolo del sistema mediante el modificador **-property** (o **-p**). También puede establecer o modificar propiedades globales para proyectos secundarios en una compilación de varios proyectos mediante el atributo `Properties` de la tarea de MSBuild. Para más información, consulte [Tarea de MSBuild](../msbuild/msbuild-task.md). |
 | `Xmlns` | Atributo opcional.<br /><br /> Cuando se especifica, el atributo `xmlns` debe tener el valor de `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
-### <a name="child-elements"></a>Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios
 
 | Elemento | Descripción |
 | - | - |
@@ -78,11 +78,11 @@ Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../ex
 | [Target](../msbuild/target-element-msbuild.md) | Elemento opcional.<br /><br /> Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] las ejecute de manera secuencial. Las tareas se especifican mediante el elemento [Task](../msbuild/task-element-msbuild.md). Puede haber cero o más elementos `Target` en un proyecto. |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Elemento opcional.<br /><br /> Proporciona una manera de registrar las tareas en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Puede haber cero o más elementos `UsingTask` en un proyecto. |
 
-### <a name="parent-elements"></a>Elementos primarios  
- Ninguno.  
+### <a name="parent-elements"></a>Elementos primarios
+ Ninguno.
 
-## <a name="see-also"></a>Vea también  
- [Cómo: Especificar qué destino se compila primero](../msbuild/how-to-specify-which-target-to-build-first.md)   
- [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md)   
- [Referencia de esquemas de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)   
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>Vea también
+- [Cómo: Especificar qué destino usar primero al compilar](../msbuild/how-to-specify-which-target-to-build-first.md)
+- [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md)
+- [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

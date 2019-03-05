@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb64e988f88546efafc26ffe8bcc39441e20cd4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918620"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635090"
 ---
 # <a name="understand-performance-collection-methods"></a>Descripción de los métodos de recopilación de rendimiento
 
@@ -131,5 +131,5 @@ Datos de interacción de capas recopilados por las Herramientas de generación d
 
 ## <a name="see-also"></a>Vea también
 
-[Cómo: Recopilar datos de rendimiento de un sitio web](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
-[Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)
+[Cómo: Recopilar datos de rendimiento de un sitio web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
+[Medición del rendimiento de aplicaciones mediante el análisis de uso de CPU](../profiling/beginners-guide-to-performance-profiling.md)

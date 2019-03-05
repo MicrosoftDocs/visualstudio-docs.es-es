@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1785be784b48a0130fd09c616d09900cb4c2656c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0bf78c94f8982af78d0f393c9cb5b878bef27d87
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975899"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646374"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Guardar información de símbolos con archivos de datos de rendimiento
 
@@ -61,6 +61,6 @@ VsPerfReport -packsymbols -summary:all filename.vsp
 
 ## <a name="see-also"></a>Vea también
 
-[Guardar y exportar datos de herramientas de rendimiento](../profiling/saving-and-exporting-performance-tools-data.md)  
-[Cómo: Referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+[Guardar y exportar datos de herramientas de rendimiento](../profiling/saving-and-exporting-performance-tools-data.md)
+[ Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)
 [VSPerfReport](../profiling/vsperfreport.md)

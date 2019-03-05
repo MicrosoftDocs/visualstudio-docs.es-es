@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Obtenga información sobre cómo aprovechar la ventaja Chat de asesoramiento de Azure incluida en las suscripciones de Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e078ddd71c126cdf70b56f6b8d6a9a467a4f56d4
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380039"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841023"
 ---
 # <a name="azure-advisory-chat"></a>Chat de asesoramiento de Azure
 
@@ -57,7 +55,7 @@ El empleo de Chat de asesoramiento de Azure es sencillo.
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>P:  ¿Cuál es la diferencia entre el chat de asesoramiento de Azure y Azure Advisor?
--  A:  El chat de asesoramiento Azure es un servicio de chat en tiempo real que le ayudará con preguntas acerca de Azure. [Azure Advisor](/azure/advisor/advisor-overview) es un consultor personalizado en la nube que le ayudará a seguir los procedimientos recomendados para optimizar las implementaciones de Azure. Analiza la telemetría de uso y la configuración de recursos y, a continuación, recomienda soluciones que le ayudarán a mejorar la rentabilidad, el rendimiento, la alta disponibilidad y la seguridad de los recursos de Azure.
+-  R:  El chat de asesoramiento Azure es un servicio de chat en tiempo real que le ayudará con preguntas acerca de Azure. [Azure Advisor](/azure/advisor/advisor-overview) es un consultor personalizado en la nube que le ayudará a seguir los procedimientos recomendados para optimizar las implementaciones de Azure. Analiza la telemetría de uso y la configuración de recursos y, a continuación, recomienda soluciones que le ayudarán a mejorar la rentabilidad, el rendimiento, la alta disponibilidad y la seguridad de los recursos de Azure.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.

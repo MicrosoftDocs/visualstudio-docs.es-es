@@ -1,5 +1,5 @@
 ---
-title: Instalación de la página de inicio personalizada o cambio del elemento de inicio
+title: Cambiar la experiencia de inicio
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,16 +13,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f367a46423c12f6e7553d81baa9229d8c7138d1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948295"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685136"
 ---
-# <a name="customize-the-start-page-for-visual-studio"></a>Personalizar la página principal de Visual Studio
+# <a name="customize-startup"></a>Personalizar el inicio
 
-Hay varias formas diferentes de personalizar la experiencia de inicio de Visual Studio: se puede mostrar el cuadro de diálogo **Abrir proyecto** o abrir la solución que se ha cargado en último lugar. También puede mostrar una página principal personalizada, que es una página XAML de Windows Presentation Foundation (WPF), que se ejecuta en una ventana de herramientas y ejecuta comandos internos de Visual Studio.
+La experiencia de inicio de Visual Studio se puede personalizar de varias maneras. Por ejemplo, puede elegir que se abra la solución más reciente o un entorno de desarrollo vacío.
+
+::: moniker range="vs-2017"
+
+También puede mostrar una página principal personalizada, que es una página XAML de Windows Presentation Foundation (WPF), que se ejecuta en una ventana de herramientas y ejecuta comandos internos de Visual Studio.
+
+::: moniker-end
 
 ## <a name="to-change-the-startup-item"></a>Para cambiar la pantalla de inicio
 
@@ -30,7 +36,19 @@ Hay varias formas diferentes de personalizar la experiencia de inicio de Visual 
 
 1. Expanda **Entorno** y después elija **Inicio**.
 
+::: moniker range="vs-2017"
+
 1. En la lista **Al iniciar el sistema**, seleccione el elemento que se mostrará después del inicio de Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. En la lista **On startup, open** (Al iniciar, abrir), seleccione cuál debe ser el comportamiento al iniciarse Visual Studio. Puede elegir **Start window** (Ventana de inicio, que permite abrir un proyecto nuevo o existente), **Most recent solution** (Solución más reciente) o **Emtpy environment** (Entorno vacío).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="to-show-a-custom-start-page"></a>Para mostrar una página principal personalizada
 
@@ -40,15 +58,17 @@ Para instalar una página de inicio personalizada, abra el archivo *.vsix* o cop
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>Para seleccionar la página de inicio personalizada que se va a mostrar
 
-1. En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 1. Expanda **Entorno** y después elija **Inicio**.
 
 1. En la lista **Personalizar página principal**, seleccione la página que quiera.
 
-> [!NOTE]
+> [!TIP]
 > Si un error de una página principal personalizada hace que Visual Studio se bloquee, inicie Visual Studio en modo seguro y después establezca que se use la página principal predeterminada. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
+
+::: moniker-end

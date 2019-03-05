@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Puede producirse un error en el inicio de sesión si se utilizan alias o nombres descriptivos
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817443"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841632"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 
@@ -150,7 +148,7 @@ Se le ha asignado una suscripción de Visual Studio, y es posible que se le haya
 
 6. Ahora debería ver los beneficios.
 
-Nota: Al visitar https://my.visualstudio.com en el futuro, es posible que se le solicite que seleccione la cuenta que quiere utilizar (por ejemplo, "Cuenta profesional o educativa" o "Cuenta personal").  Después de seguir los pasos anteriores, debe utilizar la opción "Cuenta personal".
+Nota:  Al visitar https://my.visualstudio.com en el futuro, es posible que se le solicite que seleccione la cuenta que quiere utilizar (por ejemplo, "Cuenta profesional o educativa" o "Cuenta personal").  Después de seguir los pasos anteriores, debe utilizar la opción "Cuenta personal".
 
 Si tiene problemas, póngase en contacto con el equipo de soporte técnico (https://visualstudio.microsoft.com/subscriptions/support/)).
 

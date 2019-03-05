@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c7561bd3ec991308b2250869a6f0c6f66d117e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970834"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700268"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 
-La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Puede acceder a este cuadro de diálogo haciendo clic en **Herramientas / Opciones**, y,después, seleccione **Entorno / Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.
+La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Para acceder a este cuadro de diálogo, haga clic en **Herramientas** > **Opciones** y seleccione **Entorno** > **Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.
 
 Los cambios de combinaciones de colores no surten efecto durante la sesión en la que se realizan. Puede evaluar los cambios de color abriendo otra instancia de Visual Studio y creando las condiciones en las que espera aplicar los cambios.
 
@@ -63,7 +63,13 @@ Enumera todos los elementos de la interfaz de usuario para los que puede cambiar
 
 -   **Fuente del entorno**
 
-     Cambia el estilo y el tamaño de la fuente de todos los elementos de la interfaz de usuario del IDE que aún no tienen una opción independiente en **Mostrar valores para.** Por ejemplo, esta opción se aplica a la **Página de inicio** pero no afectaría a la ventana de **salida**.
+     Cambia el estilo y el tamaño de la fuente de todos los elementos de la interfaz de usuario del IDE que aún no tienen una opción independiente en **Mostrar valores para**.
+
+     ::: moniker range="vs-2017"
+
+     Por ejemplo, esta opción se aplica a la **Página de inicio** pero no afecta a la ventana de **salida**.
+
+     ::: moniker-end
 
 -   **[Todas las ventanas de herramientas de texto]**
 

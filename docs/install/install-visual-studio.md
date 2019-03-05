@@ -2,7 +2,7 @@
 title: Instalar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo instalar Visual Studio, paso a paso.
-ms.date: 05/07/2018
+ms.date: 02/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,16 +18,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156142"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607036"
 ---
 # <a name="install-visual-studio-2017"></a>Instalación de Visual Studio 2017
 
-Le presentamos una nueva manera de instalar Visual Studio. En nuestra versión más reciente, hemos facilitado la selección e instalación de solo las características que necesita. También hemos reducido el espacio de Visual Studio al mínimo, de manera que se instale más rápidamente con menos impacto del sistema que nunca antes.
+Le presentamos una nueva manera de instalar Visual Studio. En esta versión, hemos facilitado la selección e instalación de solo las características que necesita. También hemos reducido el espacio de Visual Studio al mínimo, de manera que se instale más rápidamente con menos impacto del sistema que nunca antes.
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Instalación de Visual Studio para Mac](/visualstudio/mac/installation).

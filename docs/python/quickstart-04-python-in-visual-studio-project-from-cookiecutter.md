@@ -1,7 +1,7 @@
 ---
 title: 'Inicio rápido: Crear un proyecto de Python mediante Cookiecutter'
 description: En este inicio rápido, creará un proyecto de Visual Studio para Python utilizando una plantilla de Cookiecutter.
-ms.date: 12/06/2018
+ms.date: 02/25/2019
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 76aa53b88bc9c9ecd1fc95915204c070aaa7207b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c5a3170a2fa66a68fd010b616afcd24e8661776
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920163"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843109"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Inicio rápido: Creación de un proyecto a partir de una plantilla de Cookiecutter
 
@@ -29,13 +29,13 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 
     ![Proyecto nuevo a partir de una plantilla de Cookiecutter](media/projects-from-cookiecutter1.png)
 
-1. Seleccione la plantilla **Microsoft/python-sklearn-classifier-cookiecutter** y, después, haga clic en **Siguiente**. (El proceso puede tardar varios minutos la primera vez que use Cookiecutter).
+1. Seleccione la plantilla **Microsoft/python-sklearn-classifier-cookiecutter** y, después, haga clic en **Siguiente**. (El proceso puede tardar varios minutos la primera vez que use una plantilla en particular, ya que Visual Studio instala los paquetes de Python necesarios).
 
-1. En el paso siguiente, indique una ubicación para el nuevo proyecto en el campo **Crear en** y, después, haga clic en **Crear**.
+1. En el paso siguiente, indique una ubicación para el nuevo proyecto en el campo **Crear en** y, después, haga clic en **Crear y Abrir proyecto**.
 
     ![Segundo paso de uso Cookiecutter: establecer propiedades del proyecto](media/projects-from-cookiecutter2.png)
 
-1. Una vez completado el proceso, verá el mensaje **Los archivos se han creado correctamente**. Seleccione el comando **Abrir en el Explorador de soluciones** para abrir el proyecto.
+1. Una vez completado el proceso, verá el mensaje **Archivos creados correctamente con la plantilla...**. El proyecto se abre automáticamente en el Explorador de soluciones.
 
 1. Presione **Ctrl**+**F5** o seleccione **Depurar** > **Iniciar sin depurar** para ejecutar el programa.
 

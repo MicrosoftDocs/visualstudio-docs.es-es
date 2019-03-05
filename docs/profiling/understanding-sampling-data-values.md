@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db8230c393ad18d72ff4d4d186d916c0e938996d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978586"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641083"
 ---
 # <a name="understand-sampling-data-values"></a>Introducción a los valores de datos de muestreo
 
@@ -51,5 +51,5 @@ El porcentaje del número total de muestras exclusivas de la generación de perf
 
 ## <a name="see-also"></a>Vea también
 
-[Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
-[Análisis de datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)
+[Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
+[Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

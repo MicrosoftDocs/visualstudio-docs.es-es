@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Preguntas más frecuentes sobre la migración de la administración del Centro de servicios de licencias por volumen
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4bc2902c819f4e677127d4c2c857ed1fb5dc015
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297550"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844105"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migración de la administración de suscripciones de Visual Studio
 
@@ -60,7 +58,7 @@ A continuación se ofrecen instrucciones sobre el proceso.
 
     Después de especificar el PCN, se le dirigirá a la página en que podrá agregar a superadministradores y administradores (conocidos anteriormente como administradores de suscripciones). Lo ideal es que esto se realice antes de la fecha de migración de su organización para que no tenga ninguna interrupción en la administración de sus suscripciones.
 
-3.  **Acceso al nuevo portal de administración de suscripciones:** cuando se haya migrado la organización, se enviarán correos electrónicos a los superadministradores y administradores para invitarlos a acceder al portal nuevo y comenzar a administrar suscripciones.
+3.  **Acceso al nuevo portal de administración de suscripciones:** cuando se haya migrado la organización, se enviarán correos electrónicos a los superadministradores y administradores en los que se les invitará a acceder al nuevo portal para administrar las suscripciones.
 
 > [!NOTE]
 > Si los contactos principales o los encargados de los avisos reciben más de un correo electrónico, significa que tienen más de un PCN. Tendrán que completar el proceso mediante el vínculo único del PCN al que se haga referencia en cada correo electrónico.
@@ -77,10 +75,10 @@ Los contactos principales y los encargados de los avisos de su organización rec
 Continuará administrando suscripciones a través de VLSC hasta que reciba el correo electrónico de Suscripciones de Visual Studio para informarlo de que su organización ha migrado y está lista para que se administre en el portal nuevo.
 
 ### <a name="where-can-i-locate-my-organizations-public-customer-number-pcn-or-authorization-number"></a>¿Dónde puedo encontrar el número de cliente público (PCN) o el número de autorización de mi organización?
-Inicie sesión en el [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y siga la ruta de acceso siguiente: **Suscripciones** > **Suscripciones de Visual Studio**. El PCN se encuentra debajo de **Contrato / Resultados del número de cliente público**. En este [artículo de ayuda](find-pcn.md), puede obtener instrucciones paso a paso sobre cómo localizar el PCN.
+Inicie sesión en [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y desplácese a la ruta de acceso siguiente: **Suscripciones** > **Suscripciones de Visual Studio**. El PCN se encuentra debajo de **Contrato / Resultados del número de cliente público**. En este [artículo de ayuda](find-pcn.md), puede obtener instrucciones paso a paso sobre cómo localizar el PCN.
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>¿Cómo averiguo quién es mi contacto principal o el encargado de los avisos?
-Inicie sesión en el [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y siga la ruta de acceso siguiente: **Licencias > Resumen de la relación** Seleccione su **id. de licencia > Contactos**. En este [artículo de ayuda](find-primary-contact.md), puede obtener instrucciones paso a paso sobre cómo buscar el contacto principal o el encargado de los avisos.
+Inicie sesión en [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y desplácese a la ruta de acceso siguiente: **Licencias > Resumen de relaciones**. Seleccione su **Id. de licencia > Contactos**. En este [artículo de ayuda](find-primary-contact.md), puede obtener instrucciones paso a paso sobre cómo buscar el contacto principal o el encargado de los avisos.
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>¿Qué ocurre si mi contacto principal o el encargado de los avisos ya no está, ya no forma parte de la empresa o no está disponible para completar la incorporación?
 Deberá [ponerse en contacto con el Equipo de Soporte Técnico](https://visualstudio.microsoft.com/subscriptions/support/#talktous) y proporcionar el correo electrónico que utilizó en el VLSC para administrar suscripciones. Una vez comprobado, el Equipo de Soporte Técnico podrá ayudarlo en el proceso de incorporación.

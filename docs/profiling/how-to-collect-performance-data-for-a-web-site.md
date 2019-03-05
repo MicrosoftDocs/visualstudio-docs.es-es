@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8580163b0bc6c56480479794658019a22d0ea02c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970323"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630493"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedimiento para recopilar datos de rendimiento de un sitio web
 
@@ -101,7 +101,7 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
 
 ## <a name="see-also"></a>Vea también
 
-[Información general](../profiling/overviews-performance-tools.md)  
-[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
-[Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)  
+[Información general](../profiling/overviews-performance-tools.md)
+[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
+[Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)
 [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)

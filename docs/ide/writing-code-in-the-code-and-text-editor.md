@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172ec56815f989b13cd5a15c22241b669a9dc0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908860"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721526"
 ---
 # <a name="features-of-the-code-editor"></a>Características del editor de código
 
@@ -56,15 +56,15 @@ Puede encontrar un número de características avanzadas en el menú **Editar** 
 |Dar formato a la selección|Establece la sangría adecuada de las líneas de código y mueve las llaves para separar las líneas de la selección.|
 |Aplicar tabulación a las líneas seleccionadas|Cambia los espacios iniciales por tabulaciones en los casos que sea apropiado.|
 |No aplicar tabulación a las líneas seleccionadas|Cambia las tabulaciones iniciales por espacios. Si desea convertir todos los espacios del archivo en tabulaciones (o todas las tabulaciones en espacios), puede utilizar los comandos `Edit.ConvertSpacesToTabs` y `Edit.ConvertTabsToSpaces` . Estos comandos no aparecen en los menús de Visual Studio, pero se pueden llamar desde la ventana **Acceso rápido** o la ventana Comandos.|
-|Poner en mayúsculas|Cambia todos los caracteres de la selección a mayúsculas o, si no hay ninguna selección, cambia el carácter situado en el punto de inserción a mayúsculas.|
-|Poner en minúsculas|Cambia todos los caracteres de la selección a minúsculas o, si no hay ninguna selección, cambia el carácter situado en el punto de inserción a minúsculas.|
+|Poner en mayúsculas|Cambia todos los caracteres de la selección a mayúsculas o, si no hay ninguna selección, cambia el carácter situado en el punto de inserción a mayúsculas. Método abreviado: **Ctrl**+**Mayús**+**U**.|
+|Poner en minúsculas|Cambia todos los caracteres de la selección a minúsculas o, si no hay ninguna selección, cambia el carácter situado en el punto de inserción a minúsculas. Método abreviado: **Ctrl**+**U**.|
 |Subir líneas seleccionadas|Mueve la línea seleccionada una línea hacia arriba. Método abreviado: **Alt**+**Flecha arriba**.|
 |Bajar líneas seleccionadas|Mueve la línea seleccionada una línea hacia abajo. Método abreviado: **Alt**+**Flecha abajo**.|
-|Eliminar espacio en blanco horizontal|Elimina las tabulaciones o los espacios al final de la línea actual.|
+|Eliminar espacio en blanco horizontal|Elimina las tabulaciones o los espacios al final de la línea actual. Método abreviado: **Ctrl**+**K**, **Ctrl**+**\\**|
 |Ver espacios en blanco|Muestra los espacios como puntos elevados y las tabulaciones como flechas. El final de un archivo se muestra como un glifo rectangular. Si está seleccionada la opción **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **Ajuste automático de línea** > **Mostrar glifos visibles para ajuste automático de línea**, también se muestra ese glifo.|
 |Ajuste automático de línea|Hace que todas las líneas de un documento se vean en la ventana de código. Puede activar o desactivar el ajuste automático de línea en la configuración **Editor de texto/Todos los lenguajes** (**Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes**).|
-|Selección con comentarios|Agrega los caracteres de comentarios a la selección o la línea actual.|
-|Selección sin comentarios|Quita los caracteres de comentarios de la selección o la línea actual.|
+|Selección con comentarios|Agrega los caracteres de comentarios a la selección o la línea actual. Método abreviado: **Ctrl**+**K**, **Ctrl**+**C**|
+|Selección sin comentarios|Quita los caracteres de comentarios de la selección o la línea actual. Método abreviado: **Ctrl**+**K**, **Ctrl**+**U**|
 |Aumentar sangría de línea|Agrega una tabulación (o los espacios equivalentes) a las líneas seleccionadas o la línea actual.|
 |Reducir sangría de línea|Quita una tabulación (o los espacios equivalentes) de las líneas seleccionadas o la línea actual.|
 |Seleccionar etiqueta|En un documento que contenga etiquetas (por ejemplo, XML o HTML), selecciona la etiqueta.|
@@ -76,7 +76,7 @@ Puede moverse por el editor de código de varias maneras. Por ejemplo, puede nav
 
 ## <a name="find-references-in-your-code-base"></a>Búsqueda de referencias en el código base
 
-Para buscar dónde se hace referencia a elementos de código específicos en todo el código base, puede usar el comando **Buscar todas las referencias**. Además, al hacer clic en un tipo o miembro, la característica de **resaltado de referencia** resalta automáticamente todas las referencias a ese tipo o miembro. Para obtener más información, vea [Búsqueda de referencias en el código](finding-references.md).
+Para buscar dónde se hace referencia a elementos de código específicos en todo el código base, puede usar el comando **Buscar todas las referencias** o presionar **Mayús**+**F12**. Además, al hacer clic en un tipo o miembro, la característica de **resaltado de referencia** resalta automáticamente todas las referencias a ese tipo o miembro. Para obtener más información, vea [Búsqueda de referencias en el código](finding-references.md).
 
 ## <a name="customize-the-editor"></a>Personalización del editor
 
