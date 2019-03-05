@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08cc8426dcc82a178bbcf042c13fa51956697702
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948828"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796356"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar agentes y controladores de pruebas para ejecutar pruebas de carga
 
@@ -77,7 +77,7 @@ El agente de prueba se ejecuta como un servicio que realiza escuchas de solicitu
 
 La siguiente ilustración muestra los puntos de conexión entre el controlador de prueba, el agente de prueba y el cliente. Describe qué puertos se usan para las conexiones entrantes y salientes, así como las restricciones de seguridad empleadas en estos puertos.
 
- ![Puertos de controlador de pruebas y agente de prueba y seguridad](./media/test-controller-agent-firewall.png)
+ ![Puertos y seguridad del controlador y el agente de pruebas](./media/test-controller-agent-firewall.png)
 
  Para obtener más información, vea [Configuración de los puertos para los controladores de pruebas y los agentes de pruebas](../test/configure-ports-for-test-controllers-and-test-agents.md).
 

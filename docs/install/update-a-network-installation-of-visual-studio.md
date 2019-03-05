@@ -1,7 +1,7 @@
 ---
 title: Actualización de una instalación basada en red
 description: Más información sobre cómo actualizar una instalación de Visual Studio basada en red con el comando --layout
-ms.date: 08/14/2017
+ms.date: 2/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9159651ea1f7c8890cdf8832a8898743e91bb222
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937544"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796639"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Actualización de una instalación basada en red de Visual Studio 2017
 
@@ -26,13 +26,13 @@ Se puede actualizar un diseño de instalación de red de Visual Studio con las a
 
 ## <a name="how-to-update-a-network-layout"></a>Actualización de un diseño de red
 
-Para actualizar el recurso compartido de instalación de red para que incluya las actualizaciones más recientes, ejecute el comando --layout para descargar paquetes actualizados de forma incremental.
+Para actualizar el recurso compartido de instalación de red de forma que incluya las actualizaciones más recientes, ejecute el comando `--layout` para descargar paquetes actualizados de forma incremental.
 
-Si ha seleccionado un diseño parcial al crear el diseño de red, esas opciones se guardan.  Cualquier comando de diseño futuro usa las opciones anteriores además de las nuevas que especifique.  Esto es una novedad de la versión 15.3.  Si está usando un diseño de una versión anterior, debe usar los mismos parámetros de la línea de comandos que ha usado cuando ha creado el diseño de instalación de red por primera vez (en otras palabras, las mismas cargas de trabajo y lenguajes) para actualizar su contenido.
+**Novedad de la versión 15.3**: Si ha seleccionado un diseño parcial al crear el diseño de red, esas opciones se guardan.  Cualquier comando de diseño futuro usa las opciones anteriores además de las nuevas que especifique. Pero, si está usando un diseño de una versión anterior, debe usar los mismos parámetros de la línea de comandos que utilizó cuando creó el diseño de instalación de red por primera vez (en otras palabras, las mismas cargas de trabajo y los mismos lenguajes) para actualizar su contenido.
 
 Si hospeda un diseño en un recurso compartido de archivos, debe actualizar una copia privada del diseño (por ejemplo, c:\vs2017offline) y, después de descargar todo el contenido actualizado, lo copie en dicho recurso compartido de archivos (por ejemplo, \\server\products\VS2017). Si no lo hace, existe una mayor probabilidad de que los usuarios que ejecutan el programa de instalación mientras se actualiza el diseño no puedan obtener todo el contenido del diseño ya que todavía no está completamente actualizado.
 
-Veamos cómo crear y actualizar un diseño:
+Veamos unos cuantos ejemplos de cómo crear y actualizar un diseño:
 
 * Primero, aquí se muestra un ejemplo de cómo crear un diseño con una carga de trabajo solo para inglés:
 
@@ -58,7 +58,11 @@ Veamos cómo crear y actualizar un diseño:
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
-* Por último, aquí se muestra cómo agregar una carga de trabajo adicional y un idioma localizado sin actualizar la versión. (Este comando agrega la carga de trabajo de ASP.NET & Web).  Ahora el escritorio administrado, Azure y las cargas de trabajo de ASP.NET & Web se incluyen en este diseño.  Los recursos de idioma para inglés, francés y alemán también se incluyen para todas estas cargas de trabajo.  En cambio, el diseño no se ha actualizado a la última versión disponible cuando se ha ejecutado este comando.  Sigue correspondiendo a la versión existente.
+    > [!IMPORTANT]
+    > Una operación de actualización no instala los componentes opcionales recién agregados, ni siquiera si se incluyen estos componentes en una sección de adición ("add") de un [archivo de respuesta](automated-installation-with-response-file.md). Esto ocurre porque la operación de adición no se usa durante una actualización.<br>
+    > **Solución alternativa**: Después de una actualización, ejecute una operación de modificación independiente para instalar los componentes que faltan.
+
+* Por último, aquí se muestra cómo agregar una carga de trabajo adicional y un idioma localizado sin actualizar la versión. (Este comando agrega la carga de trabajo de ASP.NET & Web).  Ahora el escritorio administrado, Azure y las cargas de trabajo de ASP.NET & Web se incluyen en este diseño. Los recursos de idioma para inglés, francés y alemán también se incluyen para todas estas cargas de trabajo.  En cambio, el diseño no se ha actualizado a la última versión disponible cuando se ha ejecutado este comando. Sigue correspondiendo a la versión existente.
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion

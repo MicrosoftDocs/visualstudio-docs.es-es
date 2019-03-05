@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Vea cómo activar el beneficio de Azure que se incluye con la suscripción de Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 5ef69bbaeeeed7de66e1cf206182bb83f4f42ff2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380128"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843213"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 
@@ -28,7 +26,7 @@ Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise estándar               |     Crédito mensual de 150 USD     |                             Sí                             ||
 |               Visual Studio Enterprise mensual               |        No disponible        |                                                             |
-|             Visual Studio Professional estándar              |     Crédito mensual de 50 USD      |                             Sí                            
+|             Visual Studio Professional estándar              |     Crédito mensual de 50 USD      |                             Sí
 |              Visual Studio Professional mensual              |        No disponible        |                                                             |
 |                    Visual Studio Test Pro                    |     Crédito mensual de 50 USD      |                             Sí                             |
 |                        Plataformas de MSDN                        |     Crédito mensual de 100 USD     |                             Sí                             |
@@ -77,7 +75,7 @@ Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional
 ## <a name="faq"></a>Preguntas más frecuentes
 
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>P: ¿Cómo enviar un incidente de soporte técnico desde Azure Portal?
-A:  El envío de un incidente de soporte técnico desde Azure Portal es un proceso de tres pasos.
+R:  El envío de un incidente de soporte técnico desde Azure Portal es un proceso de tres pasos.
 1. Active la ventaja de soporte técnico y obtenga su identificador de acceso del identificador de contrato.
 2. Vincule su contrato de soporte técnico a la suscripción de Azure.
 3. Envíe un incidente de soporte técnico.
@@ -86,7 +84,7 @@ Consulte la documentación de [Soporte técnico](vs-tech-support.md) para obtene
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>P: He recibido un mensaje en que se indica que el acceso a Azure terminará pronto.  ¿Qué puedo hacer para seguir usando Azure?
 
-A:  Recibe este correo electrónico porque utiliza la ventaja de Azure asociada a su suscripción de Visual Studio y dicha suscripción ha expirado o se ha quitado.  Para seguir usando Azure, tiene varias opciones:
+R:  Recibe este correo electrónico porque utiliza la ventaja de Azure asociada a su suscripción de Visual Studio y dicha suscripción ha expirado o se ha quitado.  Para seguir usando Azure, tiene varias opciones:
 
 **Acción recomendada:**
 

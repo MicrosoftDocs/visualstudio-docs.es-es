@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebcf76f07eadaee6402facb4fa62a3ac309ebbac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 496dbfb48b8cc8052d174ba1dd69faa3b4fc9d01
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933163"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722504"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
@@ -109,7 +109,7 @@ El bloque de código se contrae para mostrar únicamente la primera línea segui
 
 ## <a name="view-symbol-definitions"></a>Ver definiciones de símbolos
 
-Gracias al editor de Visual Studio, es muy sencillo inspeccionar la definición de un tipo, método, etc. Una forma consiste en ir al archivo que contiene la definición, por ejemplo, seleccionando **Ir a definición** en cualquier lugar donde se haga referencia al símbolo. Otra más rápida aún (y que no desplaza el enfoque del archivo en el que está trabajando) es usar [Ver la definición](../../ide/go-to-and-peek-definition.md#peek-definition). Vamos a ver la definición del tipo `string`.
+Gracias al editor de Visual Studio, es muy sencillo inspeccionar la definición de un tipo, método, etc. Una forma consiste en ir al archivo que contiene la definición, por ejemplo, seleccionando **Ir a definición** o presionando **F12** en cualquier lugar donde se haga referencia al símbolo. Otra más rápida aún (y que no desplaza el enfoque del archivo en el que está trabajando) es usar [Ver la definición](../../ide/go-to-and-peek-definition.md#peek-definition). Vamos a ver la definición del tipo `string`.
 
 1. Haga clic con el botón derecho en cualquier instancia de `string` y elija **Ver la definición** en el menú de contenido. O bien, presione **Alt**+**F12**.
 

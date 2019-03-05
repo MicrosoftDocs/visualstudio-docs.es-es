@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 5d7150ec407b2ce9c0c4c5bf22a8ae75b3ac3b93
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318815"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450599"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -364,7 +364,7 @@ Para más información, consulte la página [Visual Studio Tools para IA](../ai/
 
 Actualizamos Visual Studio 2017 a menudo con nuevas características que pueden mejorar aún más su experiencia de desarrollo. Este es un resumen de algunas de nuestras actualizaciones más importantes que se encuentran en versión preliminar experimental:
 
-* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**, una nueva herramienta que le permite compartir un código base y su contexto con un compañero de equipo, de forma que obtengan una colaboración bidireccional instantánea directamente desde Visual Studio. Con Live Share, un compañero de equipo puede leer, navegar, editar y depurar un proyecto que ha compartido con él de forma segura y sin problemas.<br><br>Para obtener más información, vea [Live Share FAQ](/visualstudio/liveshare/faq) (Preguntas frecuentes sobre Live Share).<br><br>
+* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**, una nueva herramienta que le permite compartir un código base y su contexto con un compañero de equipo, de forma que se establezca una colaboración bidireccional instantánea directamente desde Visual Studio. Con Live Share, un compañero de equipo puede leer, navegar, editar y depurar un proyecto que ha compartido con él de forma segura y sin problemas.<br><br>Para obtener más información, vea [Live Share FAQ](/visualstudio/liveshare/faq) (Preguntas frecuentes sobre Live Share).<br><br>
 * **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, una nueva funcionalidad que mejora el desarrollo de software al usar IA para ofrecer mejores finalizaciones de código relacionadas con el contexto, guiar a los desarrolladores para que escriban código para los patrones y estilos de su equipo, encontrar problemas de código difíciles de captar y centrar las revisiones de código en áreas que importan de verdad. <br><br>Para obtener más información, vea [Preguntas más frecuentes de IntelliCode](/visualstudio/intellicode/faq).
 
 ¿Quiere saber más sobre lo que se está preparando de Visual Studio 2017? Vea la página [Guía básica de Visual Studio](/visualstudio/productinfo/vs2018-roadmap).

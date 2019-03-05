@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948815"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716511"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 
@@ -47,12 +47,9 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
 1. Compruebe que el código funciona correctamente presionando **F5** o seleccionando el comando de menú **Depurar** > **Iniciar depuración**. Este comando ejecuta el código en el depurador, pero dado que aún no ha hecho nada para pausar el programa mientras se está ejecutando, solo imprime un patrón ondulado para algunas iteraciones. Presione cualquier tecla para cerrar la ventana de salida.
 
     > [!Tip]
-    > Para cerrar la ventana de salida automáticamente cuando se completa el programa, reemplace la llamada `main()` con el código siguiente:
+    > Para cerrar la ventana de salida automáticamente cuando se complete el programa, seleccione el comando de menú **Herramientas** > **Opciones**, expanda el nodo **Python**, seleccione **Depuración** y, después, desactive la opción **Esperar la entrada cuando el proceso se cierre normalmente**:
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Opción de depuración de Python para cerrar la ventana de salida cuando el programa se cierre normalmente](media/vs-getting-started-python-22-debugging5.png)
 
 1. Establezca un punto de interrupción en la instrucción `for` haciendo clic una vez en el margen gris junto a esa línea o colocando el operador exponencial en dicha línea y usando el comando **Depurar** > **Alternar puntos de interrupción** (**F9**). Aparecerá un punto rojo en el margen gris para indicar el punto de interrupción (como indica la flecha a continuación):
 

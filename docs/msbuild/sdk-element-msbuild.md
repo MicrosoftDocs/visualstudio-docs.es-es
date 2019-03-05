@@ -17,47 +17,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24392fe34069025209f0e2c02e1231d1cbbe3397
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 36132dce94bb4836242858c82c47562259e83f2e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993279"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596156"
 ---
 # <a name="sdk-element-msbuild"></a>Elemento Sdk (MSBuild)
-Hace referencia a un SDK de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+Hace referencia a un SDK de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
- \<Project>  
- \<Sdk>  
+ \<Project> \<Sdk>
 
 
-## <a name="syntax"></a>Sintaxis  
+## <a name="syntax"></a>Sintaxis
 
-```xml  
+```xml
 <Sdk Name="My.Custom.Sdk"
-     Version="1.0.0" />  
-```  
+     Version="1.0.0" />
+```
 
-## <a name="attributes-and-elements"></a>Atributos y elementos  
- En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
-### <a name="attributes"></a>Atributos  
+### <a name="attributes"></a>Atributos
 
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`Name`|Atributo necesario.<br /><br /> Nombre del SDK del proyecto.|  
-|`Version`|Atributo opcional.<br /><br /> Versión del SDK del proyecto.|  
+|Atributo|Descripción|
+|---------------|-----------------|
+|`Name`|Atributo necesario.<br /><br /> Nombre del SDK del proyecto.|
+|`Version`|Atributo opcional.<br /><br /> Versión del SDK del proyecto.|
 
-### <a name="child-elements"></a>Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios
  Ninguno.
 
-### <a name="parent-elements"></a>Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios
 
 | Elemento | Descripción |
 | - | - |
 | [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
-## <a name="see-also"></a>Vea también  
- [Cómo: Hacer referencia a un SDK de un proyecto de MSBuild](../msbuild/how-to-use-project-sdk.md)   
- [Referencia de esquemas de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)   
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>Vea también
+- [Cómo: Hacer referencia a un SDK de un proyecto de MSBuild](../msbuild/how-to-use-project-sdk.md)
+- [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

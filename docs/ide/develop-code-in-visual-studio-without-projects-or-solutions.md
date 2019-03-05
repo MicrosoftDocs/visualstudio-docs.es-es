@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45828cc73e679bdf177c212604b95820bc58011c
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155362"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718562"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desarrollo de código en Visual Studio sin proyectos o soluciones
 
-En Visual Studio 2017, puede abrir código desde casi cualquier tipo de proyecto basado en directorios en Visual Studio sin necesidad de un archivo de solución o proyecto. Esto significa que, por ejemplo, puede clonar un repositorio en GitHub, abrirlo directamente en Visual Studio y comenzar a desarrollar sin tener que crear una solución o proyecto. Si es necesario, puede especificar tareas de compilación personalizadas y parámetros de inicio a través de archivos JSON simples.
+Puede abrir código desde casi cualquier tipo de proyecto basado en directorios en Visual Studio sin necesidad de un archivo de solución o proyecto. Esto significa que, por ejemplo, puede clonar un repositorio en GitHub, abrirlo directamente en Visual Studio y comenzar a desarrollar sin tener que crear una solución o proyecto. Si es necesario, puede especificar tareas de compilación personalizadas y parámetros de inicio a través de archivos JSON simples.
 
 Una vez que abre los archivos de código en Visual Studio, el **Explorador de soluciones** muestra todos los archivos de la carpeta. Puede hacer clic en cualquier archivo para comenzar a editarlo. En segundo plano, Visual Studio comienza a indexar los archivos para habilitar las características de refactorización, navegación e IntelliSense. A medida que edita, crea, mueve o elimina archivos, Visual Studio hace seguimiento de manera automática de los cambios y actualiza de manera continua su indice de IntelliSense. El código aparecerá con coloración de sintaxis y, en muchos casos, incluye la finalización de instrucciones de IntelliSense básicas.
 
@@ -29,9 +29,19 @@ Una vez que abre los archivos de código en Visual Studio, el **Explorador de so
 Puede abrir el código en Visual Studio de una de las maneras siguientes:
 
 - En la barra de menús de Visual Studio, elija **Archivo** > **Abrir** > **Carpeta** y vaya a la ubicación del código.
+
 - En el menú contextual (clic derecho) de una carpeta que contiene código, elija el comando **Abrir en Visual Studio**.
+
+::: moniker range="vs-2017"
 - Elija el vínculo **Abrir carpeta** en la **página de inicio** de Visual Studio.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Haga clic en el vínculo **Abrir carpeta** de la ventana Inicio.
+::: moniker-end
+
 - Si es usuario de teclado, presione **Ctrl**+**Mayús**+**Alt**+**O** en Visual Studio.
+
 - Abra el código desde un repositorio GitHub clonado.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>Para abrir el código desde un repositorio de GitHub clonado

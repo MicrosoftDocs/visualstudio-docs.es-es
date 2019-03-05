@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2abf307dd2205b556744c61c974e389179c465b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920605"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708646"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guía de productividad de C# para Visual Studio 2017
 
@@ -92,6 +92,8 @@ Visual Studio 2017 incluye un gran número de refactorizaciones, acciones de gen
   - *Agregar comprobación de valores Null*
   - *Agregar parámetro*
   - *Quitar directivas Using innecesarias*
+  - *Bucle foreach para una consulta LINQ o un método LINQ*
+  - *Refactorización de Extraer miembros con las opciones del cuadro de diálogo*
   - Consulte más información en nuestra [documentación](https://aka.ms/refactorings)
 - Escriba su propia refactorización o corrección de código con [analizadores de Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Varios miembros de la comunidad han escrito extensiones gratuitas que agregan más inspecciones de código:
@@ -108,7 +110,7 @@ Visual Studio de 2017 tiene muchas características para ayudarle a buscar códi
 
 | Característica | Acceso directo | Detalles y mejoras |
 |- | - | -|
-| Buscar todas las referencias | **MAYÚS**+**F12**| Los resultados aparece en color y se pueden agrupar por proyecto, definición, etc. También puede "bloquear" resultados. |
+| Buscar todas las referencias | **MAYÚS**+**F12**| Los resultados aparece en color y se pueden agrupar por proyecto, definición y tipo de referencia como lectura o escritura. También puede "bloquear" resultados. |
 | Ir a implementación | **CTRL**+**F12** | Puede usar Ir a definición en la palabra clave `override` para navegar al miembro reemplazado. |
 | Ir a definición | **F12** o **CTRL**+**Clic**| Puede mantener presionada la tecla **Ctrl** mientras hace clic para navegar a la definición. |
 | Definición de Peek | **Alt**+**F12** | Vista en línea de una definición. |

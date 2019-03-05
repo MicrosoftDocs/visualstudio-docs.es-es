@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Obtener información sobre cómo sacar el máximo partido de las suscripciones de Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822168"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842668"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -92,18 +90,18 @@ En la página de beneficios, se mostrará la suscripción que está usando en un
 **Suscripciones estándar**
 
 - Microsoft Store: si ha comprado la suscripción a través de [Microsoft Store](http://www.microsoft.com/store), también la puede renovar desde ahí.
-- Licencia por volumen: si su empresa compra suscripciones a través de una licencia por volumen, el administrador debe ponerse en contacto con un distribuidor para renovar las suscripciones.
+- Licencia por volumen:  si su empresa compra suscripciones a través de una licencia por volumen, el administrador debe ponerse en contacto con un distribuidor para renovar las suscripciones.
 
-**Suscripciones de nube**: no es necesario renovar las suscripciones de nube. Siempre y cuando pague la suscripción, esta se mantendrá activa.
+**Suscripciones de nube:**  no es necesario renovar las suscripciones de nube. Siempre y cuando pague la suscripción, esta se mantendrá activa.
 
-**Suscripciones adquiridas a través de programas**: si ha obtenido la suscripción a través de un programa, estará vinculada a su participación en dicho programa. Consulte a sus contactos del programa para obtener más información.
+**Suscripciones adquiridas a través de programas:**  si ha obtenido la suscripción a través de un programa, estará vinculada a su participación en dicho programa. Consulte a sus contactos del programa para obtener más información.
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials**: Dev Essentials es un programa gratuito y las pertenencias no expiran.
+**Visual Studio Dev Essentials:**  Dev Essentials es un programa gratuito y las suscripciones no expiran.
 
 ## <a name="transferring-subscriptions"></a>Transferir suscripciones
 

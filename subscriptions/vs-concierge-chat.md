@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Obtenga información sobre la ventaja Chat de soporte técnico incluida en las suscripciones de Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: a2636f2758f189de9de9a014d67bcebb1a8248fc
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380002"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843625"
 ---
 # <a name="concierge-chat"></a>Chat de soporte técnico
 
@@ -60,12 +58,8 @@ Obtener ayuda a través del servicio de chat de soporte técnico es un proceso m
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>P:  ¿El servicio de chat está disponible en varios idiomas?
-   A: La asistencia con problemas de cuentas, suscripciones y facturación está disponible en varios idiomas.  La asistencia con la búsqueda de información de productos y documentación técnica está disponible en inglés.
+   R: La asistencia con problemas de cuentas, suscripciones y facturación está disponible en varios idiomas.  La asistencia con la búsqueda de información de productos y documentación técnica está disponible en inglés.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 -  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
-
-
-
-

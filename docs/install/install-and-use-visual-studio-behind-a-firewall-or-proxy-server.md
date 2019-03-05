@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954652"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796626"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
@@ -84,7 +84,7 @@ Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual
 | Servicio o escenario | Punto de conexión DNS | Protocolo | Puerto | Description |
 | - | - | - | - | - |
 | Resolución<br>dirección URL | go.microsoft.com<br><br>aka.ms | | | Se utiliza para acortar las direcciones URL que, después, se resuelven en direcciones URL más largas. |
-| Página de inicio | vsstartpage.blob.core.windows.net | | 443 | Se utiliza para mostrar las noticias del desarrollador que aparecen en la página de inicio en Visual Studio. |
+| Página de inicio | vsstartpage.blob.core.windows.net | | 443 | Se utiliza para mostrar las noticias del desarrollador que aparecen en la página de inicio (solo en Visual Studio 2017). |
 | Servicio de<br> notificación <br>dirigido | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | Se utiliza para filtrar una lista global de notificaciones a una lista que solo se aplica a tipos específicos de máquinas/escenarios de uso. |
 | Comprobación de actualización <br>de la extensión | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Se utiliza para proporcionar notificaciones cuando una extensión instalada tiene una actualización disponible. <br><br> Se utiliza como ubicación de inicio de sesión. |
 | Integración <br>de proyectos de AI | az861674.vo.msecnd.net | | 443<br> | Se utiliza para configurar nuevos proyectos y enviar datos de uso a su cuenta de Application Insights registrada. |

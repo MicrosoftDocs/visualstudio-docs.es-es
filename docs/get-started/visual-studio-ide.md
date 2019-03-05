@@ -1,7 +1,7 @@
 ---
 title: Información general sobre Visual Studio 2017
 titleSuffix: ''
-ms.date: 10/26/2018
+ms.date: 2/21/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38f102dd0a61d80c383307abdc96a03b50c0d74
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f49d4e9c734d1a7f20a765a75c4dcb6b950b38f8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316826"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705510"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Le damos la bienvenida al IDE de Visual Studio
 
@@ -62,6 +62,8 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
 - [Inicio rápido](../ide/reference/quick-launch-environment-options-dialog-box.md)
 
    Visual Studio puede parecer abrumador a veces con tantas propiedades, opciones y menús. El cuadro de búsqueda **Inicio rápido** supone una excelente manera de encontrar rápidamente lo que necesita en Visual Studio. Al empezar a escribir el nombre de lo que está buscando, Visual Studio muestra resultados que llevan exactamente a donde necesita ir. Si necesita agregar funcionalidad a Visual Studio, por ejemplo, agregar compatibilidad con otro lenguaje de programación, **Inicio rápido** proporciona resultados que abren el Instalador de Visual Studio para instalar un componente individual o una carga de trabajo.
+
+   Puede encontrar el cuadro de búsqueda **Inicio rápido** en la esquina superior derecha del IDE. (Como alternativa, presione **Ctrl**+**Q** para acceder a él).
 
    ![Cuadro de búsqueda Inicio rápido en Visual Studio](media/quick-launch-nuget.png)
 

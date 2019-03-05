@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7d8843fe7e23293b0e95ce6b076d8548362fb50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934843"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597574"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedimiento Limitar la instrumentación a archivos DLL específicos
 
@@ -69,5 +69,5 @@ El método de generación de perfiles de instrumentación permite limitar la rec
 
 ## <a name="see-also"></a>Vea también
 
-[Control de la recopilación de datos](../profiling/controlling-data-collection.md)  
-[Cómo: Limitar la instrumentación a funciones específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+[Controlar la recopilación de datos](../profiling/controlling-data-collection.md)
+[ Limitar la instrumentación a funciones específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

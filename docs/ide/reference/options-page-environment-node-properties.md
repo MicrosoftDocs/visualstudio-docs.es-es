@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f1f8ea2ca9f55610c666ad5fa28fa189bb3be1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955757"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708334"
 ---
 # <a name="options-page-environment-node-properties"></a>Página de opciones, Propiedades de nodo Entorno
-En este documento se describen las páginas (o colecciones de propiedades) asociadas a la categoría **Entorno**, `DTE.Properties("Environment", <Property Page>)`, del cuadro de diálogo **Opciones**. El título de cada subsección es la llamada que se usa para acceder a la colección Propiedades y, en la tabla de cada subsección, se muestran las propiedades que se encuentran en la colección.
+
+En este artículo se describen las páginas (o colecciones de propiedades) asociadas a la categoría **Entorno**, `DTE.Properties("Environment", <Property Page>)` del cuadro de diálogo **Opciones**. El título de cada subsección es la llamada que se usa para acceder a la colección Propiedades y, en la tabla de cada subsección, se muestran las propiedades que se encuentran en la colección.
 
 ## <a name="general"></a>General
- `DTE.Properties("Environment", "General")`
+
+`DTE.Properties("Environment", "General")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
@@ -37,7 +39,8 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |AutohidePinActiveTabOnly|Get/Set (Boolean)|Determina si el botón **Ocultar automáticamente** afecta solo a la pestaña activa.|
 
 ## <a name="add-inmacros-security"></a>Seguridad de macros/complementos
- `DTE.Properties("Environment", "AddinMacrosSecurity")`
+
+`DTE.Properties("Environment", "AddinMacrosSecurity")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
@@ -46,7 +49,8 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |LoadAddinsFromTheWeb|Get/Set (Boolean)|Permite cargar complementos desde una dirección URL de la Web.|
 
 ## <a name="documents"></a>Documentos
- `DTE.Properties("Environment", "Documents")`
+
+`DTE.Properties("Environment", "Documents")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
@@ -63,7 +67,8 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |DocumentDockPreference|Get/Set (Enum)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Posición correcta en la pestaña en la que se va a insertar el documento abierto.|
 
 ## <a name="extension-manager"></a>Administrador de extensiones
- `DTE.Properties("Environment", "ExtensionManager")`
+
+`DTE.Properties("Environment", "ExtensionManager")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
@@ -72,7 +77,8 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |AutomaticallyCheckForUpdates|Get/Set (Boolean)|Comprueba automáticamente si hay actualizaciones de las extensiones instaladas.|
 
 ## <a name="find-and-replace"></a>Buscar y reemplazar
- `DTE.Properties("Environment", "FindAndReplace")`
+
+`DTE.Properties("Environment", "FindAndReplace")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
@@ -82,7 +88,8 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |HideWindowsAfterMatchFromQuickFindReplace|Get/Set (Boolean)|Oculta la ventana **Buscar y reemplazar** después de localizar una coincidencia con **Búsqueda rápida** o **Reemplazo rápido**.|
 
 ## <a name="import-and-export-settings"></a>Importar y exportar configuraciones
- `DTE.Properties("Environment", "Import and Export Settings")`
+
+`DTE.Properties("Environment", "Import and Export Settings")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
@@ -91,21 +98,24 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |AutoSaveFile|Get/Set (String)|Nombre del archivo donde se guarda automáticamente la configuración de usuario.|
 
 ## <a name="international-settings"></a>Configuración internacional
- `DTE.Properties("Environment", "International")`
+
+`DTE.Properties("Environment", "International")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
 |Lenguaje|Get/Set (String)|Valor LCID del idioma actual de Visual Studio.|
 
 ## <a name="keyboard"></a>Teclado
- `DTE.Properties("Environment", "Keyboard")`
+
+`DTE.Properties("Environment", "Keyboard")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
 |Scheme|Get/Set (String)|Devuelve una cadena que contiene un esquema integrado, una cadena que contiene la ruta de acceso completa del archivo .vsk cargado o "(Default)" si no hay ninguno cargado.|
 
 ## <a name="projects-and-solution"></a>Proyectos y solución
- `DTE.Properties("Environment", "ProjectsAndSolution")`
+
+`DTE.Properties("Environment", "ProjectsAndSolution")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
@@ -128,7 +138,10 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |MSBuildOutputVerbosity|Get/Set (String)|Especifica el nivel de detalle de la salida de compilación.|
 
 ## <a name="startup"></a>Inicio
- `DTE.Properties("Environment", "Startup")`
+
+`DTE.Properties("Environment", "Startup")`
+
+::: moniker range="vs-2017"
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
@@ -137,8 +150,19 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Actualiza la página de inicio después de cada paso del intervalo especificado en StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Short)|Intervalo en minutos para actualizar la página de inicio.|
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|Nombre de elemento de propiedad|Valor|Descripción|
+| - |-----------|-----------------|
+|OnStartUp|Get/Set (Enum)|Acción que se realiza en el inicio, desde <xref:EnvDTE.vsStartUp>.|
+
+::: moniker-end
+
 ## <a name="tasklist"></a>TaskList
- `DTE.Properties("Environment", "TaskList")`
+
+`DTE.Properties("Environment", "TaskList")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
@@ -148,7 +172,8 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |CommentTokens|SafeArray|Devuelve una matriz SafeArray de valores de token de comentarios. Cada uno tiene los campos `Name` (cadena) y `Priority` (<xref:EnvDTE.vsTaskPriority>, alto, medio o bajo).|
 
 ## <a name="web-browser"></a>Explorador web
- `DTE.Properties("Environment", "WebBrowser")`
+
+`DTE.Properties("Environment", "WebBrowser")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|

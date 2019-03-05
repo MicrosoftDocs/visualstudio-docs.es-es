@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 27e990c300702301fc7c701339254bbe6f385cd0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768425"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843810"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depuración de una aplicación JavaScript o TypeScript en Visual Studio
 
@@ -168,7 +168,7 @@ La depuración de archivos generados dinámicamente no es automática. Los punto
    En Chrome, vaya a **Explorador de soluciones > Documentos de Script > nombreDeLaPágina**.
 
     > [!NOTE]
-    > Si usa Chrome, podría aparecer el mensaje `no source is available between `<script>` tags.` This is OK, just continue debugging.
+    > Al usar Chrome, podría obtener un mensaje de tipo **no hay código fuente disponible entre etiquetas \<script>**. Esto es normal, simplemente continúe con la depuración.
 
    En Internet Explorer, vaya a **Explorador de soluciones > Documentos de Script > Windows Internet Explorer > nombreDeLaPágina**.
 

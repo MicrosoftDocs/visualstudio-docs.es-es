@@ -1,7 +1,7 @@
 ---
 title: Sugerencias y trucos de accesibilidad de Visual Studio
 description: Obtenga más información sobre sugerencias y trucos que pueden ayudar a que el entorno de desarrollo integrado (IDE) de Visual Studio sea más accesible para todos los usuarios, incluidas las personas con discapacidades.
-ms.date: 09/15/2017
+ms.date: 02/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318561"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680937"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de accesibilidad de Visual Studio
 
 > [!TIP]
-> Para más información sobre las actualizaciones de accesibilidad recientes, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
+> Para obtener más información sobre las actualizaciones de accesibilidad, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
 
 Visual Studio tiene características de accesibilidad integradas que son compatibles con los lectores de pantalla y otras tecnologías de asistencia. En este tema se enumeran combinaciones comunes de teclas de método abreviado que puede usar para realizar tareas únicamente con el teclado y se muestra información sobre el uso de temas de alto contraste para mejorar la visibilidad. Además, en el tema se indica cómo usar anotaciones para revelar información útil sobre el código y cómo configurar indicaciones sonoras para eventos de compilación y de punto de interrupción.
 
@@ -64,6 +64,7 @@ Otras combinaciones útiles de teclas de método abreviado son las siguientes.
 |Cuadro de diálogo|Activar o desactivar la opción de la casilla de un cuadro de diálogo. <br> <br> **NOTA:** Acceso directo estándar de Windows|**BARRA ESPACIADORA**|
 |Menús contextuales|Abrir un menú contextual (clic con el botón derecho). <br> <br> **NOTA:** Acceso directo estándar de Windows|**MAYÚS** + **F10**|
 |Menús|Obtener acceso rápidamente a un elemento de menú con sus teclas de aceleración. Pulse la tecla **ALT** seguida de letras subrayadas en un menú para activar el comando. Por ejemplo, para ver el cuadro de diálogo Abrir proyecto en Visual Studio, pulsaría **ALT** + **F** + **O** + **P**.  <br><br> **NOTA:** Acceso directo estándar de Windows|**ALT** + **[letra]**|
+|Cuadro de búsqueda de inicio rápido| Usar la característica de búsqueda de Visual Studio.|**Ctrl** + **Q**|
 |Ventana Cuadro de herramientas|Desplazarse por las pestañas del cuadro de herramientas.|**CTRL** + **FLECHA ARRIBA**<br /><br /> y<br /><br /> **CTRL** + **FLECHA ABAJO**|
 |Ventana Cuadro de herramientas|Agregar un control del cuadro de herramientas a un formulario o diseñador.|**ENTRAR**|
 |Teclado, Entorno, Opciones (cuadro de diálogo)|Eliminar una combinación de teclas especificada en la opción **Presionar teclas de método abreviado**.|**RETROCESO**|
