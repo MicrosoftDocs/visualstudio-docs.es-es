@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb86929a050a61a50a7aa1dd41220f4e087ad767
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607049"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428549"
 ---
 # <a name="dia2dump-sample"></a>Ejemplo Dia2dump
 
@@ -64,7 +64,7 @@ De forma predeterminada, el directorio de instalación es un directorio protegid
 
 ## <a name="run-the-dia2dump-sample"></a>Ejecutar el ejemplo Dia2Dump
 
-Dia2Dump.exe se basa en el msdia*versión*.dll COM de servidor para proporcionar sus servicios. En Visual Studio 2015 y Visual Studio 2017, la versión es el archivo msdia140.dll. Si el msdia*versión*no se ha inicializado el servidor COM dll, debe registrarlo antes dia2dump.exe puede trabajar. El directorio del SDK de DIA tiene un subdirectorio bin que contiene el x86 versión del archivo DLL. Una versión para x64 máquinas de la arquitectura está en bin\amd64 y es una versión de ARM en bin\arm. Para registrar la dll, abra una ventana de símbolo del sistema para desarrolladores con privilegios elevados y cambie al directorio que contiene la versión de la arquitectura del equipo. Escriba el comando `regsvr32 msdia140.dll` para registrar el servidor COM.
+Dia2Dump.exe se basa en el msdia*versión*.dll COM de servidor para proporcionar sus servicios. A partir de Visual Studio 2015, la versión es el archivo msdia140.dll. Si el msdia*versión*no se ha inicializado el servidor COM dll, debe registrarlo antes dia2dump.exe puede trabajar. El directorio del SDK de DIA tiene un subdirectorio bin que contiene el x86 versión del archivo DLL. Una versión para x64 máquinas de la arquitectura está en bin\amd64 y es una versión de ARM en bin\arm. Para registrar la dll, abra una ventana de símbolo del sistema para desarrolladores con privilegios elevados y cambie al directorio que contiene la versión de la arquitectura del equipo. Escriba el comando `regsvr32 msdia140.dll` para registrar el servidor COM.
 
 ### <a name="to-run-the-sample"></a>Para ejecutar el ejemplo
 

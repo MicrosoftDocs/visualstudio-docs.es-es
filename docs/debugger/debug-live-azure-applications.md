@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5f9b7e700ff21bac570cf8545207bb75fda820e
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613380"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428744"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicaciones de ASP.NET Azure activas con el depurador de instantáneas
 
@@ -50,7 +50,7 @@ En este tutorial va a:
 
     > [!IMPORTANT]
     > Depuración de instantáneas, deberá abrir el *misma versión de código fuente* que se publica en Azure App Service.
-::: moniker range="< vs-2019"
+::: moniker range="vs-2019"
 
 2. En el explorador en la nube (**Ver > Cloud Explorer**), haga clic en el proyecto se implementa en Azure App Service y seleccione **asociar Snapshot Debugger**.
 

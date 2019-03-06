@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703713"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428653"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Introducción a Snapshot Debugger
 
@@ -69,6 +69,6 @@ Puede encontrar más información sobre el depurador de instantáneas en el [pá
 
 ## <a name="dont-show-me-this-again"></a>No volver a mostrar
 
-Para que nunca la página de inicio del depurador de instantáneas volver a mostrar cuando se conecta el depurador de instantáneas, cambie el **mostrar la página "Introducción" en el inicio de sesión** opción **herramientas**  >   **Opciones de** > **depurador de instantáneas**.
+Para no volver a mostrar la página de inicio del depurador de instantáneas al conectar el depurador de instantáneas, cambie el **mostrar la página "Introducción" en el inicio de sesión** opción **herramientas**  >   **Opciones de** > **depurador de instantáneas**.
 
 ![Página de opciones de herramienta de depurador de instantáneas](../media/snapshot-startpage-tools-options.png)
