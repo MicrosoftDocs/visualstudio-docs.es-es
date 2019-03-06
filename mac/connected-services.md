@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 11/06/2018
-ms.openlocfilehash: ada47aa3d0cb0d9917404efc2775b843223c6e86
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948951"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953987"
 ---
 # <a name="connected-services-walkthrough"></a>Tutorial de Servicios conectados
 
@@ -65,10 +65,10 @@ En este tutorial se muestra cómo agregar un servicio back-end de Azure, que ofr
 
 Un servicio nuevo necesita los parámetros siguientes:
 
--   **Nombre del servicio de aplicaciones**: nombre o identificador único del plan
--   **Suscripción**: la suscripción que le gustaría utilizar para pagar el servicio
--   **Grupo de recursos**: forma de organizar todos los recursos de Azure de un proyecto. Hay la opción de usar uno existente o crear uno nuevo. Si se trata de su primer servicio de Azure, cree uno nuevo.
--   **Plan del servicio**: determina la ubicación y el coste de todos los recursos que lo utilizan. Hay la opción de usar uno existente o crear uno nuevo. Si se trata de su primer servicio de Azure, utilice el predeterminado o cree uno nuevo en el nivel libre (F1).
+- **Nombre del servicio de aplicaciones**: nombre o identificador único del plan
+- **Suscripción**: la suscripción que le gustaría utilizar para pagar el servicio
+- **Grupo de recursos**: forma de organizar todos los recursos de Azure de un proyecto. Hay la opción de usar uno existente o crear uno nuevo. Si se trata de su primer servicio de Azure, cree uno nuevo.
+- **Plan del servicio**: determina la ubicación y el coste de todos los recursos que lo utilizan. Hay la opción de usar uno existente o crear uno nuevo. Si se trata de su primer servicio de Azure, utilice el predeterminado o cree uno nuevo en el nivel libre (F1).
 
 Visite la [documentación de las aplicaciones móviles](/azure/app-service-mobile/) para obtener más información.
 

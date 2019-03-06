@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Sepa cómo obtener y administrar las claves de producto en las suscripciones de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843729"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953906"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio
 
@@ -104,10 +104,10 @@ Los suscriptores de Visual Studio pueden aumentar el número de usuarios que pue
 Hay disponibles cinco claves de cada tipo para Windows Server 2008 R2 y cada clave admitirá 20 conexiones. En el caso de Windows Server 2012 R2, se proporcionan cuatro claves de cada tipo y cada una admitirá 50 conexiones.
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Para habilitar más conexiones en Windows Server:
-1.  Abra el Administrador de servidores.
-2.  Abra la lista de servidores en el panel de navegación izquierdo.
-3.  Haga clic con el botón derecho en su servidor de licencias y elija "Instalar licencias".
-4.  Siga los pasos del asistente.  Cuando seleccione el tipo de contrato, elija "Paquete de licencias (venta directa)" y escriba la clave de producto que obtuvo en Mi portal.
+1. Abra el Administrador de servidores.
+2. Abra la lista de servidores en el panel de navegación izquierdo.
+3. Haga clic con el botón derecho en su servidor de licencias y elija "Instalar licencias".
+4. Siga los pasos del asistente.  Cuando seleccione el tipo de contrato, elija "Paquete de licencias (venta directa)" y escriba la clave de producto que obtuvo en Mi portal.
 
 Los usuarios finales pueden conectarse para tener acceso a aplicaciones a través de RDS si se cumplen las condiciones siguientes:
 - Los usuarios deben ser anónimos (en un estado no autenticado).

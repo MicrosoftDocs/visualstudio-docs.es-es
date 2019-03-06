@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8633eeae377fa511aee105d674d03d418dd1e9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1570590a37e76301305159a4249165b1a20c475a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317151"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223330"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medición del uso de memoria en Visual Studio
 
@@ -164,7 +164,7 @@ El informe de cambios agrega columnas (marcadas con **(Dif.)**) al informe base,
 
 [Analyze CPU and Memory While Debugging](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/) (Análisis de la CPU y la memoria durante la depuración)
 
-[Blog de Visual C++: Generación de perfiles de memoria en Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)
+[Blog de Visual C++: Generación de perfiles de memoria en Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

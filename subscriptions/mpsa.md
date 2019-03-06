@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
 searchscope: VS Subscription
-ms.openlocfilehash: 59332dcc1d993df414a9c5981778767adaf155e9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841677"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953812"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
 
@@ -29,21 +29,22 @@ Un inquilino sin administrar es un inquilino que no cuenta con ningún administr
 Antes de completar la asociación del inquilino, presentamos unos requisitos y pasos necesarios para convertirse en administrador de suscripciones de Visual Studio.
 
 ## <a name="pre-tenant-association-managed-tenant"></a>Asociación previa al inquilino (inquilino administrado)
--   Debe ser un usuario registrado en el Centro de negocios.
--   Debe ser un administrador de usuario (como mínimo) o el administrador global del inquilino del que forma parte. (Esto se aplica si en su compañía ya se usan servicios en la nube). Cualquiera de los roles es necesario para ser administrador de suscripciones de Visual Studio.
--   Debe ser un administrador global del inquilino del que forma parte para poder asociar su cuenta de compras a su inquilino.
--   Debe ser un Administrador de cuentas en el Centro de negocios.
--   El campo "País o región" de su perfil de usuario (y de cualquier otro usuario) en [Azure](https://portal.azure.com/) debe rellenarse de forma adecuada según su país (es decir, Estados Unidos, Canadá, etcétera).
+
+- Debe ser un usuario registrado en el Centro de negocios.
+- Debe ser un administrador de usuario (como mínimo) o el administrador global del inquilino del que forma parte. (Esto se aplica si en su compañía ya se usan servicios en la nube). Cualquiera de los roles es necesario para ser administrador de suscripciones de Visual Studio.
+- Debe ser un administrador global del inquilino del que forma parte para poder asociar su cuenta de compras a su inquilino.
+- Debe ser un Administrador de cuentas en el Centro de negocios.
+- El campo "País o región" de su perfil de usuario (y de cualquier otro usuario) en [Azure](https://portal.azure.com/) debe rellenarse de forma adecuada según su país (es decir, Estados Unidos, Canadá, etcétera). 
 
 > [!NOTE]
 > No es necesario que los usuarios que quiera convertir en administradores de suscripciones de Visual Studio sean usuarios del Centro de negocios, ya que solo deben cumplir los criterios de los pasos 2 y 5.
 
 Una vez que se hayan cumplido los criterios de los 5 pasos anteriores, puede seguir los pasos que se indican a continuación para asociar su cuenta de compras a su inquilino.
-1.  Inicie sesión en el [Centro de negocios](https://businessaccount.microsoft.com/).
-2.  Haga clic en la pestaña **Cuenta** y elija **Asociar dominios**.
-3.  Seleccione la **Cuenta de compras** (si tiene más de una).
-4.  Seleccione el **inquilino** (es decir, contoso.onmicrosoft.com).
-5.  Haga clic en **Asociar dominio**.
+1. Inicie sesión en el [Centro de negocios](https://businessaccount.microsoft.com/).
+2. Haga clic en la pestaña **Cuenta** y elija **Asociar dominios**.
+3. Seleccione la **Cuenta de compras** (si tiene más de una).
+4. Seleccione el **inquilino** (es decir, contoso.onmicrosoft.com).
+5. Haga clic en **Asociar dominio**.
 
 Tras realizar la asociación, todos los usuarios que cumplan los criterios necesarios normalmente constarán como administradores de suscripciones de Visual Studio al cabo de pocos minutos. Sin embargo, en ocasiones este proceso puede tardar hasta 24 horas. Cuando conste como administrador, podrá tener acceso al Portal de administración de suscripciones de Visual Studio. Si el proceso tarda más de 24 horas, póngase en contacto con el Equipo de Soporte Técnico de MPSA.
 

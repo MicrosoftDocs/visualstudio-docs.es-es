@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Obtenga más información sobre cómo administrar las suscripciones de Visual Studio de su organización con el Portal de administradores.
 searchscope: VS Subscription
-ms.openlocfilehash: ec741707f061de7e7173da9c4a07a50469cf50da
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843724"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953961"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Uso del Portal de administradores de suscripciones de Visual Studio
 
@@ -38,13 +38,14 @@ Para usar el portal de administradores para administrar las suscripciones de su 
 ### <a name="onboarding"></a>Incorporación
 
 Cuando la organización esté preparada para incorporarse al Portal de administradores de suscripciones de Visual Studio, se enviará un correo electrónico a los contactos principales y los encargados de los avisos invitándolos a completar el proceso de incorporación. Los detalles siguientes corresponden a los pasos que hay que seguir para incorporarse al nuevo portal. Si quiere acceder a un tutorial sobre el proceso, consulte este [vídeo de incorporación de administradores](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) o este [artículo de soporte técnico](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Visual Studio Subscriptions Administrator Migration Process") (Proceso de migración de administradores de suscripciones de Visual Studio).
-1.  **Búsqueda de PCN e inicio de sesión:**
-    - En el correo electrónico, los contactos principales o los encargados de los avisos encontrarán un vínculo único y los tres últimos dígitos de su número de cliente público (PCN). *
-    - Para obtener el PCN entero, el contacto principal deberá iniciar sesión en VLSC. Aquí encontrará instrucciones para buscar el PCN.
-    - Tras obtener el PCN, tendrá que seleccionar su vínculo único. Seguidamente, se le pedirá que inicie sesión. Podrá iniciar sesión con una cuenta profesional o educativa, si la organización se encuentra en AAD, o una cuenta Microsoft (MSA), si la organización no está en AAD.
-    - Después, tendrá que especificar el PCN.
-2.  **Configuración de los administradores.** Después de especificar el PCN, se registrará como superadministrador en el nuevo sistema y podrá agregar a otros superadministradores y administradores, lo que anteriormente se conocía como administradores de suscripciones. Para evitar perder el acceso, este procedimiento deberá realizarse antes de la fecha de la migración de su organización.
-3.  **Acceso al nuevo portal de administración de suscripciones.**  Cuando se haya migrado la organización, se enviarán correos electrónicos a los superadministradores y administradores recién agregados en los que se les invitará a acceder al nuevo portal y comenzar a administrar suscripciones.
+
+1. **Búsqueda de PCN e inicio de sesión:**
+    - En el correo electrónico, los contactos principales o los encargados de los avisos encontrarán un vínculo único y los tres últimos dígitos de su número de cliente público (PCN). * 
+    - Para obtener el PCN entero, el contacto principal deberá iniciar sesión en VLSC. Aquí encontrará instrucciones para buscar el PCN. 
+    - Tras obtener el PCN, tendrá que seleccionar su vínculo único. Seguidamente, se le pedirá que inicie sesión. Podrá iniciar sesión con una cuenta profesional o educativa, si la organización se encuentra en AAD, o una cuenta Microsoft (MSA), si la organización no está en AAD. 
+    - Después, tendrá que especificar el PCN. 
+2. **Configuración de los administradores.** Después de especificar el PCN, se registrará como superadministrador en el nuevo sistema y podrá agregar a otros superadministradores y administradores, lo que anteriormente se conocía como administradores de suscripciones. Para evitar perder el acceso, este procedimiento deberá realizarse antes de la fecha de la migración de su organización. 
+3. **Acceso al nuevo portal de administración de suscripciones.**  Cuando se haya migrado la organización, se enviarán correos electrónicos a los superadministradores y administradores recién agregados en los que se les invitará a acceder al nuevo portal y comenzar a administrar suscripciones.  
 
 > [!NOTE]
 > Si los contactos principales o los encargados de los avisos reciben más de un correo electrónico, significa que tienen más de un PCN. Tendrán que completar el proceso mediante el vínculo único del PCN al que se haga referencia en cada correo electrónico.*

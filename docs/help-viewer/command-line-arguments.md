@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff769fa7625ee1798088953a04113ffb8ed74d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944265"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323470"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos de línea de comandos para Help Content Manager
 
@@ -57,7 +57,7 @@ En la tabla siguiente se definen los modificadores y los argumentos que puede ut
 |/membership|No|-   **Mínima**: instala un conjunto mínimo de contenido de Ayuda basado en el SKU especificado mediante el modificador /skuId. La asignación entre SKU y el conjunto de contenido se expone en la API de servicio.<br />-   **Recomendada**: instala un conjunto de libros recomendados para el SKU especificado con el argumento /skuId. El origen de instalación es la API de servicio o *.MSHA*.<br />-   **Completa**: instala el conjunto completo de libros para el SKU especificado con el argumento /skuId. El origen de instalación es la API de servicio o *.MSHA*.|
 |/locationpath|No|Especifica la carpeta predeterminada para el contenido de Ayuda local. Debe utilizar este modificador para instalar o mover solo el contenido. Si especifica este modificador, también debe especificar el modificador /silent.|
 |/silent|No|Instala o quita contenido de Ayuda sin preguntar al usuario ni mostrar ninguna interfaz de usuario, incluido el icono en el área de notificación de estado. La salida se registra en un archivo en el directorio *%Temp%*. **Importante:**  Para instalar contenido de forma silenciosa, debe utilizar los archivos *.cab* firmados digitalmente, no los archivos *.mshc*.|
-|/launchingApp|No|Define la aplicación y el contexto de catálogo cuando el Visor de Ayuda se inicia sin la aplicación primaria. Los argumentos para este modificador son *CompanyName*, *ProductName* y *VersionNumber* (por ejemplo, `/launchingApp Microsoft,VisualStudio,15.0`).<br /><br /> Esto es necesario para instalar contenido con el parámetro /silent.|
+|/launchingApp|No|Define la aplicación y el contexto de catálogo cuando el Visor de Ayuda se inicia sin la aplicación primaria. Los argumentos para este modificador son *CompanyName*, *ProductName* y *VersionNumber* (por ejemplo, `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Esto es necesario para instalar contenido con el parámetro /silent.|
 |/wait *Segundos*|No|Pausa las operaciones de instalación, desinstalación y actualización. Si una operación ya está en curso para el catálogo, el proceso esperará hasta el número especificado de segundos para continuar. Use 0 para esperar indefinidamente.|
 |/?|No|Hace una lista de los modificadores y sus descripciones para la herramienta de la línea de comandos de Help Content Manager.|
 

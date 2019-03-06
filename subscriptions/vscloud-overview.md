@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a mes o de forma anual sin contrato a largo plazo.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aee20e2c96dd79455968e8aeb87b8f17ec0cf65
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842226"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953426"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 
@@ -26,28 +26,28 @@ Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/
 
 ## <a name="before-you-start"></a>Antes de empezar
 
-*   Para facturar las compras que realice, necesita una [suscripción de Azure](https://azure.microsoft.com/pricing/purchase-options/). Puede [registrarse](https://portal.azure.com) antes de la primera compra o durante la primera compra en Visual Studio Marketplace.
+* Para facturar las compras que realice, necesita una [suscripción de Azure](https://azure.microsoft.com/pricing/purchase-options/). Puede [registrarse](https://portal.azure.com) antes de la primera compra o durante la primera compra en Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>¿Quién puede comprar suscripciones a la nube de Visual Studio?
 Cualquier persona con [acceso de propietario y de colaborador](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) a la suscripción de Azure puede comprar suscripciones de nube.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Cómo adquirir suscripciones de nube
 
-1.  Inicie sesión en [Visual Studio Marketplace > Suscripciones](https://marketplace.visualstudio.com/subscriptions).
+1. Inicie sesión en [Visual Studio Marketplace > Suscripciones](https://marketplace.visualstudio.com/subscriptions).
 
-2.  Seleccione la suscripción de quiera comprar (por ejemplo, "Visual Studio Professional: suscripción mensual").
+2. Seleccione la suscripción de quiera comprar (por ejemplo, "Visual Studio Professional: suscripción mensual").
 
-3.  Seleccione la suscripción de Azure que se usará para facturar. Puede crear una suscripción de Azure desde cero, si no tiene una.
+3. Seleccione la suscripción de Azure que se usará para facturar. Puede crear una suscripción de Azure desde cero, si no tiene una.
     > [!div class="mx-imgBorder"]
     > ![Seleccionar una suscripción a Azure para facturación](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
-4.  Seleccione el número de suscripciones que va a comprar.
+4. Seleccione el número de suscripciones que va a comprar.
     > [!div class="mx-imgBorder"]
     > ![Seleccionar número de suscripciones](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     Si no quiere que se le asignen las suscripciones, desactive **Asignarme esta suscripción**.
 
-5.  Confirme y finalice la compra. Si se ha asignado una suscripción a sí mismo, puede visitar el [portal de suscriptores de Visual Studio](https://my.visualstudio.com) para descargar software y empezar a disfrutar de otras ventajas de suscriptor.
+5. Confirme y finalice la compra. Si se ha asignado una suscripción a sí mismo, puede visitar el [portal de suscriptores de Visual Studio](https://my.visualstudio.com) para descargar software y empezar a disfrutar de otras ventajas de suscriptor.
 
 > [!div class="mx-imgBorder"]
 > ![Finalizar la compra correctamente](_img/buy-vs-subscriptions/buy-vs-sub-success.png)

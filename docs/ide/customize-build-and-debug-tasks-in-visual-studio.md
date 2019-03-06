@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03943f4c50785f0c02be2afc0e874c94c1021b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919058"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954178"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalización de las tareas de compilación y depuración para el desarrollo de "Abrir carpeta"
 
@@ -56,6 +56,7 @@ Si el código base usa las herramientas de compilación personalizadas que Visua
 
 Considere un código base que consta de un solo archivo de C# llamado *hello.cs*. El *archivo Make* para este tipo de código base podría tener el aspecto siguiente:
 
+<!-- markdownlint-disable MD010 -->
 ```makefile
 build: directory hello.exe
 
@@ -72,6 +73,7 @@ directory: bin
 bin:
     md bin
 ```
+<!-- markdownlint-enable MD010 -->
 
 Para este tipo de *archivo Make* que contiene destinos de compilación, limpieza y recompilación, es posible definir el siguiente archivo *tasks.vs.json*. Contiene tres tareas de compilación para compilar, recompilar y limpiar el código base, con NMAKE como la herramienta de compilación.
 
