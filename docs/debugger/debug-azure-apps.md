@@ -1,6 +1,6 @@
 ---
 title: Depurar servicios de Azure | Microsoft Docs
-ms.date: 09/14/2017
+ms.date: 09/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 67d25bcea141c15a55b5cc2950c42d9a5fb5f4f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9cf5752c43e22f2df73fa6701374805cf4770a82
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654157"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428627"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Depurar servicios de Azure en Visual Studio
 

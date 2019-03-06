@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35cc3e8336dc2f4b618be10626c014692fdfa650
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695003"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222368"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar y continuar (Visual C++)
 Puede usar Editar y continuar en proyectos de Visual C++. Consulte [cambios de código compatible (C++)](../debugger/supported-code-changes-cpp.md) para obtener información acerca de las limitaciones de editar y continuar.
 
-Para obtener más información acerca de las mejoras de Visual Studio 2015 Update 3, vea [C++ editar y continuar en Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).
+Para obtener más información acerca de las mejoras de Visual Studio 2015 Update 3, vea [C++ editar y continuar en Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
  La opción de compilador [/Zo (Mejorar la depuración optimizada)](/cpp/build/reference/zo-enhance-optimized-debugging) que se introdujo en Visual Studio 2013 actualización 3 agrega información adicional a los archivos .pdb (símbolo) para los archivos binarios que se compilan sin la opción [/Od (Deshabilitar (Depurar))](https://msdn.microsoft.com/library/aafb762y.aspx).
 
@@ -37,7 +37,7 @@ Para obtener más información acerca de las mejoras de Visual Studio 2015 Updat
  Quizá quiera deshabilitar la invocación automática de Editar y continuar si realiza modificaciones en el código que no quiere aplicar durante la sesión de depuración actual. También puede volver a habilitar la invocación automática de Editar y continuar.
 
 > [!IMPORTANT]
-> Para la configuración de compilación necesaria y otra información sobre la compatibilidad de característica, vea [C++ editar y continuar en Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
+> Para la configuración de compilación necesaria y otra información sobre la compatibilidad de característica, consulte [C++ editar y continuar en Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
 1. Si está en una sesión de depuración, detenga la depuración (**MAYÚS + F5**).
 

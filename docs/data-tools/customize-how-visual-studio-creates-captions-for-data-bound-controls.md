@@ -13,16 +13,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939845"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323711"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
 
-Cuando se arrastran elementos desde la [ventana Orígenes de datos](add-new-data-sources.md#data-sources-window) a un diseñador, una consideración especial entra en juego: se cambian los nombres de columna en las etiquetas de leyenda en una cadena más legible cuando dos o más palabras se encuentran concatenados. Puede personalizar la manera en que se crean estas etiquetas, estableciendo el **SmartCaptionExpression**, **SmartCaptionReplacement**, y **SmartCaptionSuffix** valores en el **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data diseñadores** clave del registro.
+Cuando se arrastran elementos desde la [ventana Orígenes de datos](add-new-data-sources.md#data-sources-window) a un diseñador, una consideración especial entra en juego: se cambian los nombres de columna en las etiquetas de leyenda en una cadena más legible cuando dos o más palabras se encuentran concatenados.
+
+::: moniker range="vs-2017"
+
+Puede personalizar la manera en que se crean estas etiquetas estableciendo el **SmartCaptionExpression**, **SmartCaptionReplacement**, y **SmartCaptionSuffix** valores en el **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data diseñadores** clave del registro.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Puede personalizar la manera en que se crean estas etiquetas estableciendo el **SmartCaptionExpression**, **SmartCaptionReplacement**, y **SmartCaptionSuffix** valores en el **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data diseñadores** clave del registro.
+
+::: moniker-end
 
 > [!NOTE]
 > Esta clave del registro no existe hasta que la cree.
@@ -46,21 +58,31 @@ La tabla siguiente muestra la configuración predeterminada interna para estos v
 |**SmartCaptionSuffix**|**:**|Representa un carácter que se anexa a la cadena devuelta. Por ejemplo, si el título es `Company Name`, el sufijo facilita `Company Name:`|
 
 > [!CAUTION]
-> Debe tener mucho cuidado al hacer nada en el Editor del registro. Realizar una copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el Editor del registro, puede provocar problemas graves que quizás requieran reinstalar el sistema operativo. Microsoft no garantiza que se pueden resolver los problemas que provocan utilizando el Editor del Registro incorrectamente. Utilice el Editor del registro bajo su propia responsabilidad.
+> Tenga mucho cuidado al hacer nada en el Editor del registro. Realizar una copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el Editor del registro, puede provocar problemas graves que quizás requieran reinstalar el sistema operativo. Microsoft no garantiza que se pueden resolver los problemas que provocan utilizando el Editor del Registro incorrectamente. Utilice el Editor del registro bajo su propia responsabilidad.
 >
-> El siguiente artículo de Knowledge Base contiene instrucciones para realizar copias de seguridad, editar y restaurar el registro: [descripción del registro de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> Para obtener información acerca de la copia de seguridad, editar y restaurar el registro, consulte [información del registro de Windows para usuarios avanzados](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificar el comportamiento inteligente subtítulos (CC) de la ventana de orígenes de datos
 
-1.  Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
+1. Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
 
-2.  Tipo `regedit` en el **ejecutar** cuadro de diálogo y haga clic en **Aceptar**.
+2. Tipo `regedit` en el **ejecutar** cuadro de diálogo y haga clic en **Aceptar**.
 
-3.  Expanda el **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
+3. Expanda el **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
 
-4.  Haga clic en el **15.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Haga clic en el **diseñadores de datos** nodo y crear tres nuevos valores de cadena:
+4. Haga clic en el **15.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Haga clic en el **16.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+
+::: moniker-end
+
+5. Haga clic en el **diseñadores de datos** nodo y crear tres nuevos valores de cadena:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
@@ -82,15 +104,25 @@ La tabla siguiente muestra la configuración predeterminada interna para estos v
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>Desactivar la característica smart subtítulos (CC)
 
-1.  Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
+1. Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
 
-2.  Tipo `regedit` en el **ejecutar** cuadro de diálogo y haga clic en **Aceptar**.
+2. Tipo `regedit` en el **ejecutar** cuadro de diálogo y haga clic en **Aceptar**.
 
-3.  Expanda el **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
+3. Expanda el **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
 
-4.  Haga clic en el **15.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Haga clic en el **diseñadores de datos** nodo y crear tres nuevos valores de cadena:
+4. Haga clic en el **15.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Haga clic en el **16.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+
+::: moniker-end
+
+5. Haga clic en el **diseñadores de datos** nodo y crear tres nuevos valores de cadena:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 931200e6f921c26d23fddde4a8420f042240e32f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637860"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428809"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Creación de vistas personalizadas de objetos nativos en el depurador
 
@@ -99,11 +99,21 @@ El *.natvis* archivos se evalúan en el orden siguiente:
 
 1. Cualquier *.natvis* archivos que están incrustados en un *.pdb* depurar, a menos que exista un archivo del mismo nombre en el proyecto cargado.
 
-1. Cualquier *.natvis* archivos que están en un proyecto de C++ cargado o una solución de nivel superior. Este grupo incluye cargados todos los proyectos de C++, incluidas las bibliotecas de clases, pero no los proyectos en otros idiomas.
+2. Cualquier *.natvis* archivos que están en un proyecto de C++ cargado o una solución de nivel superior. Este grupo incluye cargados todos los proyectos de C++, incluidas las bibliotecas de clases, pero no los proyectos en otros idiomas.
 
-1.  El directorio de Natvis específico del usuario (por ejemplo, *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+::: moniker range="vs-2017"
 
-1.  El directorio de Natvis de todo el sistema (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Este directorio tiene el *.natvis* archivos que se instalan con Visual Studio. Si tiene permisos de administrador, puede agregar archivos a este directorio.
+3.  El directorio de Natvis específico del usuario (por ejemplo, *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+3.  El directorio de Natvis específico del usuario (por ejemplo, *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*).
+
+::: moniker-end
+
+4.  El directorio de Natvis de todo el sistema (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Este directorio tiene el *.natvis* archivos que se instalan con Visual Studio. Si tiene permisos de administrador, puede agregar archivos a este directorio.
 
 ## <a name="modify-natvis-files-while-debugging"></a>Modificar archivos .natvis durante la depuración
 

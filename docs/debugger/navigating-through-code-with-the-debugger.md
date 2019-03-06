@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8c9a2f68427cfa7c5db69dca202a619c86444c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706717"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428757"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegar por el código con el depurador de Visual Studio
 
@@ -133,7 +133,7 @@ Mientras está en pausa en el depurador, puede desplazar el puntero sobre una in
 ![Ejecutar hasta clic](../debugger/media/dbg-run-to-click.png "Run to click")
 
 > [!NOTE]
-> **Hacer clic y ejecutar** es nuevo en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> **Hacer clic y ejecutar** está disponible a partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 ### <a name="manually-break-into-code"></a>Interrumpir el código manualmente
 

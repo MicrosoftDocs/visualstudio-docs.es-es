@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8de3edf65b67463bb1678f23d71695bc4867b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: 206b14a1cdab61d64354e134449149b70a030683
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599173"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954498"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicaciones de 64 bits
 Puede depurar una aplicación de 64 bits que se esté ejecutando en el equipo local o en un equipo remoto.
@@ -50,7 +50,7 @@ Puede depurar una aplicación de 64 bits que se esté ejecutando en el equipo lo
 
 -   Tiene software de seguridad de red instalado en el equipo que provoca que la pila de red no sea confiable y tiene paquetes eliminados transfiriéndose a través de localhost. Intente deshabilitar todo el software de seguridad de red y compruebe si se resuelve el problema. Si es así, notifique a su proveedor de software de seguridad de red que el software está interfiriendo con el tráfico de localhost.
 
--   Está experimentando un problema de falta de respuesta o de rendimiento con Visual Studio. Si el problema ocurre con frecuencia, puede recopilar volcados de Visual Studio (devenv.exe) y el proceso de trabajo (msvsmon.exe) y enviarlos a Microsoft. Para obtener información acerca de cómo notificar un problema, consulte [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md).
+-   Está experimentando un problema de falta de respuesta o de rendimiento con Visual Studio. Si el problema ocurre con frecuencia, puede recopilar volcados de Visual Studio (devenv.exe) y el proceso de trabajo (msvsmon.exe) y enviarlos a Microsoft. Para obtener información acerca de cómo notificar un problema, consulte [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Vea también
 

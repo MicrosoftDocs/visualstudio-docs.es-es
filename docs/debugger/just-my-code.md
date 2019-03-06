@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722491"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223681"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Depurar código de usuario sólo con sólo mi código
 
@@ -97,7 +97,7 @@ Para el comportamiento de ejecución paso a paso de código, solo mi código en 
 - Funciones especificadas en  *\*.natjmc* archivos en el *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* carpeta.
 
 > [!NOTE]
-> Compatibilidad con el código paso a paso en solo mi código, se debe compilar el código de C++ mediante los compiladores MSVC en Visual Studio 15,8 Preview 3 o posterior, y debe estar habilitado el modificador del compilador /JMC (está habilitado de forma predeterminada). Para obtener más información, consulte [personalizar C++ pila de llamadas y comportamiento de ejecución paso a paso de código](#BKMK_CPP_Customize_call_stack_behavior)) y esto [entrada de blog](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/). Para el código compilado mediante un compilador anterior, *.natstepfilter* archivos son la única forma de personalizar el código de ejecución paso a paso, que es independiente de solo mi código. Consulte [comportamiento del avance personalizar C++](#BKMK_CPP_Customize_stepping_behavior).
+> Compatibilidad con el código paso a paso en solo mi código, se debe compilar el código de C++ mediante los compiladores MSVC en Visual Studio 15,8 Preview 3 o posterior, y debe estar habilitado el modificador del compilador /JMC (está habilitado de forma predeterminada). Para obtener más información, consulte [personalizar C++ pila de llamadas y comportamiento de ejecución paso a paso de código](#BKMK_CPP_Customize_call_stack_behavior)) y esto [entrada de blog](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Para el código compilado mediante un compilador anterior, *.natstepfilter* archivos son la única forma de personalizar el código de ejecución paso a paso, que es independiente de solo mi código. Consulte [comportamiento del avance personalizar C++](#BKMK_CPP_Customize_stepping_behavior).
 
 <a name="BKMK_CPP_Stepping_behavior"></a> Durante la depuración de C++:
 

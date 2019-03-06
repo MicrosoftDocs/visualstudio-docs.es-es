@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b74b924d8d3e10192940686fac0ffce88e3f153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692871"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953672"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio
 Este mensaje puede producirse porque el monitor de depuración remota no está correctamente configurado en el equipo remoto o el equipo remoto es accesible debido a problemas de red o la presencia de un firewall.
 
 > [!IMPORTANT]
->  Si cree que ha recibido este mensaje debido a un error en el producto, por favor, [informar de este problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) a Visual Studio. Si necesita más ayuda, vea [Talk to Us](../ide/talk-to-us.md) para obtener información sobre las distintas formas de ponerse en contacto con Microsoft.
+>  Si cree que ha recibido este mensaje debido a un error en el producto, por favor, [informar de este problema](../ide/how-to-report-a-problem-with-visual-studio.md) a Visual Studio. Si necesita más ayuda, vea [Talk to Us](../ide/talk-to-us.md) para obtener información sobre las distintas formas de ponerse en contacto con Microsoft.
 
 ## <a name="specificerrors"></a>¿Qué es el mensaje de error detallado?
 
