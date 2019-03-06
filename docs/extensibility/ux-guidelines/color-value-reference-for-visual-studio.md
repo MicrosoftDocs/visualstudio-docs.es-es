@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954434"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428835"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referencia de valor de color para Visual Studio
 
@@ -134,7 +134,7 @@ Al usar a esta guía de referencia, recuerde:
 | Primer plano: deshabilitada | ![#FFA2A4A5 muestrario](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 muestrario")<br />`#FFA2A4A5` | ![#FF656565 muestrario](../../extensibility/ux-guidelines/media/656565.png "#FF656565 muestrario")<br />`#FF656565` | ![#FFA2A4A5 muestrario](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 muestrario")<br />`#FFA2A4A5` | ![Muestrario GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText muestrario")<br />`GrayText` |
 | En segundo plano: deshabilitada | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
 | Borde | ![Muestrario #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "muestrario #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF434346 muestrario](../../extensibility/ux-guidelines/media/434346.png "#FF434346 muestrario")<br />`#FF434346` | ![Muestrario #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "muestrario #FFCCCEDB")<br />`#FFCCCEDB` | ![Muestrario ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark muestrario")<br />`ControlDark` |
-| Borde: deshabilitada | ![Muestrario #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "muestrario #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF434346 muestrario](../../extensibility/ux-guidelines/media/434346.png "#FF434346 muestrario")<br />`#FF434346` | ![#FFC6C6C6 muestrario](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 muestrario")<br />`#FFC6C6C6` | ![Muestrario ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark muestrario")<br />`ControlDark ` |
+| Borde: deshabilitada | ![Muestrario #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "muestrario #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF434346 muestrario](../../extensibility/ux-guidelines/media/434346.png "#FF434346 muestrario")<br />`#FF434346` | ![#FFC6C6C6 muestrario](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 muestrario")<br />`#FFC6C6C6` | ![Muestrario ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark muestrario")<br />`ControlDark` |
 
 ### <a name="list-items"></a>Elementos de lista
 
