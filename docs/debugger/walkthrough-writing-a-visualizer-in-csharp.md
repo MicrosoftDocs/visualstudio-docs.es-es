@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eb372fffac9c9750f5912871e32a987b41e41b6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 45c80500e216041a444b1f6232d8c939132e413d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042406"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323376"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>Tutorial: Escribir un visualizador en C# #
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>Tutorial: Escribir un visualizador en C\#
 En este tutorial se muestra cómo escribir un visualizador sencillo con C#. El visualizador que creará en este tutorial muestra el contenido de una cadena mediante un cuadro de mensaje de formularios Windows Forms. Este sencillo visualizador de cadenas no es especialmente útil, pero muestra los pasos básicos que se deben seguir para crear visualizadores más útiles para otros tipos de datos.
 
 > [!NOTE]
@@ -221,7 +221,7 @@ Realice las tareas siguientes para crear un visualizador.
 
    Enhorabuena. Acaba de compilar y probar el primer visualizador.
 
-   Si desea utilizar el visualizador en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], en lugar de simplemente llamarlo desde el instrumento de prueba, tendrá que instalarlo. Para obtener más información, vea [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md).
+   Si desea utilizar el visualizador en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], en lugar de simplemente llamarlo desde el instrumento de prueba, tendrá que instalarlo. Para obtener más información, consulte [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md).
 
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Crear un visualizador mediante la plantilla de elemento del visualizador
 
@@ -260,5 +260,5 @@ En primer lugar, debe crear un nuevo proyecto de biblioteca de clases.
 ## <a name="see-also"></a>Vea también
 
 - [Arquitectura de un visualizador](../debugger/visualizer-architecture.md)
-- [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md)
+- [Cómo: Instalar un visualizador](../debugger/how-to-install-a-visualizer.md)
 - [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)
