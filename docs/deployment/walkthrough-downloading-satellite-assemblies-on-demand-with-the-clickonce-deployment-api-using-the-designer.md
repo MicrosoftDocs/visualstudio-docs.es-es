@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a063a42cd3597f69d0500012d74c7be700e02138
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c70782190bbfd76f5536a68eb597dbf3d122e773
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634999"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323833"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce
 Las aplicaciones de Windows Forms pueden configurarse para varias referencias culturales utilizando ensamblados satélite. Un *ensamblado satélite* es un ensamblado que contiene los recursos de aplicación para una referencia cultural que no sea la referencia cultural predeterminada de la aplicación.
@@ -53,7 +53,7 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 
 6.  Cierre el cuadro de diálogo **Archivos de aplicación**.
 
-### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Para descargar ensamblados satélite a petición en C#
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Para descargar ensamblados satélite a petición en C\#
 
 1.  Abra el archivo *Program.cs*. Si no ve este archivo en el Explorador de soluciones, seleccione el proyecto y en el menú **Proyecto** haga clic en **Mostrar todos los archivos**.
 

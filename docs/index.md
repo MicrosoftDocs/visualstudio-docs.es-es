@@ -580,7 +580,7 @@ Aplicación web con ASP.NET Core</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>Un lenguaje de programación extensible que a menudo se usa para cálculos estadísticos y gráficos.</p>
+                                                    <p>(Solo Visual Studio 2017) Lenguaje de programación extensible que normalmente se usa para cálculos estadísticos y gráficos.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -699,7 +699,7 @@ Aplicación web con ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -710,7 +710,7 @@ Aplicación web con ASP.NET Core</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>Aplicaciones analíticas y de ciencia de datos</h3>
-                                            <p>Lenguajes y herramientas para crear aplicaciones de ciencia de datos, como Python, R y F#.</p>
+                                            <p>Lenguajes y herramientas para crear aplicaciones de ciencia de datos, como Python y F# (y R solo en Visual Studio 2017).</p>
                                         </div>
                                       </div>
                                     </div>
