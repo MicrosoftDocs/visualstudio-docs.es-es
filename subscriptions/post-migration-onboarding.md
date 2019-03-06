@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Obtenga información sobre cómo incorporar correctamente su organización para suscripciones de Visual Studio después de migrar al portal de administración.
 searchscope: VS Subscription
-ms.openlocfilehash: 1862361ec6ce38acc3376d972c29d56c5aa7bd51
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842161"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954233"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Incorporación al Portal de administración de suscripciones de Visual Studio después de migrar la organización
 
@@ -24,9 +24,9 @@ Sin embargo, las suscripciones se administran ahora mediante un nuevo portal lla
 
 Se pueden dar varios casos:
 
-1. [El contacto principal no completó el proceso de incorporación.](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup>
-2. [El contacto principal completó la incorporación, pero no lo agregó como administrador. Las credenciales se mostraron en VLSC.](#Primary-Contact-did-not-provide-you-administrator-access)
-3. [El contacto principal completó la incorporación, pero no lo agregó como administrador. Las credenciales no se mostraron en VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
+1. [El contacto principal no completó el proceso de incorporación.](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup> 
+2. [El contacto principal completó la incorporación, pero no lo agregó como administrador. Las credenciales se mostraron en VLSC.](#Primary-Contact-did-not-provide-you-administrator-access) 
+3. [El contacto principal completó la incorporación, pero no lo agregó como administrador. Las credenciales no se mostraron en VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
 
 <sup>1</sup> Si usted es el contacto principal o el contacto para notificaciones y no completó el proceso de incorporación, deberá seguir los pasos del escenario 1 para configurar su organización.
 

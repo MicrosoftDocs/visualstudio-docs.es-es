@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2693d661e7bc442f8de2ba707487e7d35068e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954249"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323580"
 ---
 # <a name="manage-application-settings-net"></a>Administración de la configuración de la aplicación (.NET)
 
@@ -84,7 +84,9 @@ Si ha cambiado parte de la configuración de ámbito de usuario durante el tiemp
 
 Se recomienda encarecidamente usar el objeto `My.Settings` y el archivo *.settings* predeterminado para acceder a la configuración. Esto se debe a que puede usar el **Diseñador de configuración** para asignar propiedades a la configuración y, además, la configuración del usuario se guarda automáticamente antes de cerrar la aplicación. Pero la aplicación de Visual Basic puede obtener acceso directamente a la configuración. En ese caso, necesita acceso a la clase `MySettings` y usar un archivo *.settings* personalizado en la raíz del proyecto. Debe guardar la configuración del usuario antes de finalizar la aplicación, igual que con una aplicación de C#; esto se explica en la sección siguiente.
 
-## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Acceso a la configuración de la aplicación o modificación de ella en tiempo de ejecución en C# #
+<!-- markdownlint-disable MD003 -->
+## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Acceso a la configuración de la aplicación o modificación de ella en tiempo de ejecución en C#
+<!-- markdownlint-enable MD003 -->
 
 En otros lenguajes distintos de Visual Basic, como C#, se debe tener acceso directamente a la clase `Settings`, como se muestra en el ejemplo de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente.
 

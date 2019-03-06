@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Preguntas más frecuentes sobre la migración de la administración del Centro de servicios de licencias por volumen
 searchscope: VS Subscription
-ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844105"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953956"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migración de la administración de suscripciones de Visual Studio
 
@@ -44,21 +44,21 @@ Sí.  Hay dos fases en este proceso. Configurar (o incorporar) su organización 
 ### <a name="what-is-the-onboarding-process"></a>¿Qué es el proceso de incorporación?
 Se envía un correo electrónico a los contactos principales y los encargados de los avisos para invitarlos a completar el proceso de incorporación.
 A continuación se ofrecen instrucciones sobre el proceso.
-1.  **Búsqueda de PCN e inicio de sesión:**
+1. **Búsqueda de PCN e inicio de sesión:**
 
-    a.  En el correo electrónico, los contactos principales y los encargados de los avisos encontrarán un vínculo único y los tres últimos dígitos de su número de cliente público (PCN).*
+    a. En el correo electrónico, los contactos principales y los encargados de los avisos encontrarán un vínculo único y los tres últimos dígitos de su número de cliente público (PCN).*
 
-    b.  Para obtener el PCN entero, el contacto principal deberá iniciar sesión en VLSC (a continuación, encontrará instrucciones para buscar el PCN).
+    b. Para obtener el PCN entero, el contacto principal deberá iniciar sesión en VLSC (a continuación, encontrará instrucciones para buscar el PCN).
 
-    c.  Tras obtener el PCN, tendrá que seleccionar su vínculo único. Seguidamente, se le pedirá que inicie sesión. Podrá iniciar sesión con una cuenta profesional o educativa, si la organización se encuentra en Azure AD, o una cuenta Microsoft (MSA), si la organización no está en Azure AD.
+    c. Tras obtener el PCN, tendrá que seleccionar su vínculo único. Seguidamente, se le pedirá que inicie sesión. Podrá iniciar sesión con una cuenta profesional o educativa, si la organización se encuentra en Azure AD, o una cuenta Microsoft (MSA), si la organización no está en Azure AD.
 
-    d.  Después, se le solicitará que especifique el PCN.
+    d. Después, se le solicitará que especifique el PCN.
 
-2.  **Configuración de los administradores:**
+2. **Configuración de los administradores:**
 
     Después de especificar el PCN, se le dirigirá a la página en que podrá agregar a superadministradores y administradores (conocidos anteriormente como administradores de suscripciones). Lo ideal es que esto se realice antes de la fecha de migración de su organización para que no tenga ninguna interrupción en la administración de sus suscripciones.
 
-3.  **Acceso al nuevo portal de administración de suscripciones:** cuando se haya migrado la organización, se enviarán correos electrónicos a los superadministradores y administradores en los que se les invitará a acceder al nuevo portal para administrar las suscripciones.
+3. **Acceso al nuevo portal de administración de suscripciones:** cuando se haya migrado la organización, se enviarán correos electrónicos a los superadministradores y administradores en los que se les invitará a acceder al nuevo portal para administrar las suscripciones.
 
 > [!NOTE]
 > Si los contactos principales o los encargados de los avisos reciben más de un correo electrónico, significa que tienen más de un PCN. Tendrán que completar el proceso mediante el vínculo único del PCN al que se haga referencia en cada correo electrónico.

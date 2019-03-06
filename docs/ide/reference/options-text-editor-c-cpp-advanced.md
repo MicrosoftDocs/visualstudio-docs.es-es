@@ -14,191 +14,198 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6136c9c1cd2bb169c08fc314dcd7cb327d143125
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b88170e1fe1aa5154616c95c29d0585fc74ba34c
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933969"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954327"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opciones, editor de texto, C/C++, avanzado
+
 Al cambiar estas opciones, puede modificar el comportamiento relacionado con IntelliSense y la base de datos de exploración cuando programa en C o C++.
 
- Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, después, pulse **Opciones avanzadas**.
+Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, después, pulse **Opciones avanzadas**.
 
 > [!NOTE]
 > Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 
 ## <a name="browsingnavigation"></a>Exploración o navegación
- Nunca debería elegir estas opciones excepto en el caso excepcional donde una solución sea tan grande que la actividad de base de datos use una cantidad inaceptable de recursos del sistema.
 
- **Deshabilitar la base de datos**
+Nunca debería elegir estas opciones excepto en el caso excepcional donde una solución sea tan grande que la actividad de base de datos use una cantidad inaceptable de recursos del sistema.
 
- Todo el uso del código que examina la base de datos (SDF), todas las demás opciones de exploración o navegación, y todas las características de IntelliSense salvo Autocompletar #include se deshabilitan.
+**Deshabilitar la base de datos**
 
- **Deshabilitar las actualizaciones de la base de datos**
+Todo el uso del código que examina la base de datos (SDF), todas las demás opciones de exploración o navegación, y todas las características de IntelliSense salvo Autocompletar #include se deshabilitan.
 
- La base de datos se abrirá en modo de solo lectura y no se realizarán actualizaciones a medida que se editen los archivos. La mayoría de las características seguirán funcionando. En cambio, cuando se realicen las modificaciones, los datos quedarán obsoletos y obtendrá resultados incorrectos.
+**Deshabilitar las actualizaciones de la base de datos**
 
- **Deshabilitar las actualizaciones automáticas de la base de datos**
+La base de datos se abrirá en modo de solo lectura y no se realizarán actualizaciones a medida que se editen los archivos. La mayoría de las características seguirán funcionando. En cambio, cuando se realicen las modificaciones, los datos quedarán obsoletos y obtendrá resultados incorrectos.
 
- La base de datos de exploración de código no se actualizará automáticamente cuando se modifiquen los archivos de código fuente. En cambio, si abre el **Explorador de soluciones**, abre el menú contextual del proyecto y, después, pulsa **Volver a examinar la solución**, todos los archivos obsoletos se comprobarán y la base de datos se actualizará.
+**Deshabilitar las actualizaciones automáticas de la base de datos**
 
- **Deshabilitar los archivos implícitos**
+La base de datos de exploración de código no se actualizará automáticamente cuando se modifiquen los archivos de código fuente. En cambio, si abre el **Explorador de soluciones**, abre el menú contextual del proyecto y, después, pulsa **Volver a examinar la solución**, todos los archivos obsoletos se comprobarán y la base de datos se actualizará.
 
- La base de datos de exploración de código no recopila datos para los archivos que no se especifican en un proyecto. Un proyecto contiene archivos de origen y archivos de encabezado que se especifican explícitamente. Los archivos implícitos se incluyen mediante archivos explícitos (por ejemplo, afxwin.h, windows.h y atlbase.h). Normalmente, el sistema busca estos archivos y también los indexa para diferentes características de exploración (incluida Navegar a). Si elige esta opción, esos archivos no se indexan y algunas características no están disponibles para ellos. Si selecciona esta opción, "Deshabilitar limpieza implícita" y "Deshabilitar carpetas de dependencias externas" también se seleccionan de manera implícita.
+**Deshabilitar los archivos implícitos**
 
- **Deshabilitar limpieza implícita**
+La base de datos de exploración de código no recopila datos para los archivos que no se especifican en un proyecto. Un proyecto contiene archivos de origen y archivos de encabezado que se especifican explícitamente. Los archivos implícitos se incluyen mediante archivos explícitos (por ejemplo, afxwin.h, windows.h y atlbase.h). Normalmente, el sistema busca estos archivos y también los indexa para diferentes características de exploración (incluida Navegar a). Si elige esta opción, esos archivos no se indexan y algunas características no están disponibles para ellos. Si selecciona esta opción, "Deshabilitar limpieza implícita" y "Deshabilitar carpetas de dependencias externas" también se seleccionan de manera implícita.
 
- La base de datos de exploración de código no limpia archivos implícitos a los que ya no se hace referencia. Esta opción impide que los archivos implícitos se quiten de la base de datos cuando ya no se usan. Por ejemplo, si agrega una directiva `#include` que hace referencia a mapi.h en uno de los archivos de origen, mapi.h se encontrará e indexará. Si después quita #include y no se hace referencia al archivo en ningún lugar, la información sobre este se quitará finalmente a menos que elija esta opción. (Vea la opción **Intervalo para volver a examinar la solución**). Esta opción se ignora cuando vuelve a examinar la solución explícitamente.
+**Deshabilitar limpieza implícita**
 
- **Deshabilitar las carpetas de dependencias externas**
+La base de datos de exploración de código no limpia archivos implícitos a los que ya no se hace referencia. Esta opción impide que los archivos implícitos se quiten de la base de datos cuando ya no se usan. Por ejemplo, si agrega una directiva `#include` que hace referencia a mapi.h en uno de los archivos de origen, mapi.h se encontrará e indexará. Si después quita #include y no se hace referencia al archivo en ningún lugar, la información sobre este se quitará finalmente a menos que elija esta opción. (Vea la opción **Intervalo para volver a examinar la solución**). Esta opción se ignora cuando vuelve a examinar la solución explícitamente.
 
- La carpeta Dependencias externas de cada proyecto no se crea ni se actualiza. En el **Explorador de soluciones**, cada proyecto contiene una carpeta de dependencias externas, que contiene todos los archivos implícitos de ese proyecto. Si elige esta opción, esa carpeta no aparece.
+**Deshabilitar las carpetas de dependencias externas**
 
- **Volver a crear la base de datos**
+La carpeta Dependencias externas de cada proyecto no se crea ni se actualiza. En el **Explorador de soluciones**, cada proyecto contiene una carpeta de dependencias externas, que contiene todos los archivos implícitos de ese proyecto. Si elige esta opción, esa carpeta no aparece.
 
- Vuelva a crear la base de datos de exploración de código desde cero la próxima vez que se cargue la solución. Si elige esta opción, el archivo de base de datos SDF se elimina la próxima vez que cargue la solución, por lo que la base de datos se volverá a crear y todos los archivos se indexarán.
+**Volver a crear la base de datos**
 
- **Intervalo para volver a examinar la solución**
+Vuelva a crear la base de datos de exploración de código desde cero la próxima vez que se cargue la solución. Si elige esta opción, el archivo de base de datos SDF se elimina la próxima vez que cargue la solución, por lo que la base de datos se volverá a crear y todos los archivos se indexarán.
 
- Un trabajo "Volver a examinar la solución ahora" está programado para el intervalo que especifique. Debe especificar un valor entre 0 y 5000 minutos. El valor predeterminado es de 60 minutos. Mientras la solución se vuelve a examinar, las marcas de tiempo de archivo se comprueban para determinar si un archivo se ha cambiado fuera del IDE. (Los cambios que se realizan en el IDE se detectan automáticamente y los archivos se actualizan). Los archivos incluidos implícitamente se comprueban para determinar si todavía se hace referencia a todos ellos.
+**Intervalo para volver a examinar la solución**
+
+Un trabajo "Volver a examinar la solución ahora" está programado para el intervalo que especifique. Debe especificar un valor entre 0 y 5000 minutos. El valor predeterminado es de 60 minutos. Mientras la solución se vuelve a examinar, las marcas de tiempo de archivo se comprueban para determinar si un archivo se ha cambiado fuera del IDE. (Los cambios que se realizan en el IDE se detectan automáticamente y los archivos se actualizan). Los archivos incluidos implícitamente se comprueban para determinar si todavía se hace referencia a todos ellos.
 
 ## <a name="diagnostic-logging"></a>Registro de diagnóstico
- Estas opciones se proporcionan en caso de que Microsoft le pida recopilar información avanzada para diagnosticar un problema. La información de registro no es útil para los usuarios y recomendamos que la mantenga deshabilitada.
 
- **Habilitar el registro**
+Estas opciones se proporcionan en caso de que Microsoft le pida recopilar información avanzada para diagnosticar un problema. La información de registro no es útil para los usuarios y recomendamos que la mantenga deshabilitada.
 
- Habilita el registro de diagnóstico en la ventana de salida.
+**Habilitar el registro**
 
- **Nivel de registro**
+Habilita el registro de diagnóstico en la ventana de salida.
 
- Establezca el nivel de detalle del registro, de 0 a 5.
+**Nivel de registro**
 
- **Filtro de registro**
+Establezca el nivel de detalle del registro, de 0 a 5.
 
- Los filtros mostraban tipos de eventos mediante una máscara de bits.
+**Filtro de registro**
 
- Puede establecerlo con una suma de alguna de las siguientes opciones:
+Los filtros mostraban tipos de eventos mediante una máscara de bits.
 
--   0 - Ninguno
+Puede establecerlo con una suma de alguna de las siguientes opciones:
 
--   1 - General
+- 0 - Ninguno
 
--   2 - Inactivo
+- 1 - General
 
--   4 - WorkItem
+- 2 - Inactivo
 
--   8 - IntelliSense
+- 4 - WorkItem
 
--   16 - ACPerf
+- 8 - IntelliSense
 
--   32 - ClassView
+- 16 - ACPerf
+
+- 32 - ClassView
 
 ## <a name="fallback-location"></a>Ubicación de recursos de reserva
- La ubicación de recursos de reserva es el lugar donde se colocan los archivos auxiliares de SDF e IntelliSense (por ejemplo, iPCH) cuando la ubicación principal (mismo directorio que la solución) no se usa. Esta situación puede producirse si el usuario no tiene permisos para escribir en el directorio de la solución o este se encuentra en un dispositivo lento. La ubicación de recursos de reserva predeterminada está en el directorio temporal del usuario.
 
- **Usar siempre ubicación de recursos de reserva**
+La ubicación de recursos de reserva es el lugar donde se colocan los archivos auxiliares de SDF e IntelliSense (por ejemplo, iPCH) cuando la ubicación principal (mismo directorio que la solución) no se usa. Esta situación puede producirse si el usuario no tiene permisos para escribir en el directorio de la solución o este se encuentra en un dispositivo lento. La ubicación de recursos de reserva predeterminada está en el directorio temporal del usuario.
 
- Indica que los archivos de la base de datos de exploración de código y de IntelliSense deben almacenarse siempre en una carpeta que especifique como la "Ubicación de recursos de reserva", no junto al archivo .sln. El IDE nunca intentará colocar los archivos SDF o iPCH junto al directorio de la solución y siempre usará la ubicación de recursos de reserva.
+**Usar siempre ubicación de recursos de reserva**
 
- **No advertir si se usa una ubicación de recursos de reserva**
+Indica que los archivos de la base de datos de exploración de código y de IntelliSense deben almacenarse siempre en una carpeta que especifique como la "Ubicación de recursos de reserva", no junto al archivo .sln. El IDE nunca intentará colocar los archivos SDF o iPCH junto al directorio de la solución y siempre usará la ubicación de recursos de reserva.
 
- No se le informará ni preguntará si se usa una "Ubicación de recursos de reserva". Normalmente, el IDE le indicará si tuvo que usar la ubicación de recursos de reserva. Esta opción desactiva esa advertencia.
+**No advertir si se usa una ubicación de recursos de reserva**
 
- **Ubicación de recursos de reserva**
+No se le informará ni preguntará si se usa una "Ubicación de recursos de reserva". Normalmente, el IDE le indicará si tuvo que usar la ubicación de recursos de reserva. Esta opción desactiva esa advertencia.
 
- Este valor se usa como una ubicación secundaria para almacenar la base de datos de exploración de código o los archivos IntelliSense. De manera predeterminada, el directorio temporal es su ubicación de recursos de reserva. El IDE creará un subdirectorio en la ruta especificada (o el directorio temporal) que incluye el nombre de la solución junto con un hash de la ruta de acceso completa a la solución, lo que evita problemas con nombres de solución que son idénticos.
+**Ubicación de recursos de reserva**
+
+Este valor se usa como una ubicación secundaria para almacenar la base de datos de exploración de código o los archivos IntelliSense. De manera predeterminada, el directorio temporal es su ubicación de recursos de reserva. El IDE creará un subdirectorio en la ruta especificada (o el directorio temporal) que incluye el nombre de la solución junto con un hash de la ruta de acceso completa a la solución, lo que evita problemas con nombres de solución que son idénticos.
 
 ## <a name="intellisense"></a>IntelliSense
- **Información rápida automática**
 
- Permite información rápida cuando mueve el puntero sobre el texto.
+**Información rápida automática**
 
- **Deshabilitar IntelliSense**
+Permite información rápida cuando mueve el puntero sobre el texto.
 
- Deshabilita todas las características de IntelliSense. El IDE no crea procesos VCPkgSrv.exe para atender las solicitudes de IntelliSense, y ninguna característica de IntelliSense funcionará (Información rápida, Lista de miembros, Autocompletar, Ayuda de Parám). La coloración semántica y el resaltado de referencias también están deshabilitados. Esta opción no deshabilita las características de exploración que se basan únicamente en la base de datos (incluida la barra de navegación, ClassView y la ventana Propiedades).
+**Deshabilitar IntelliSense**
 
- **Deshabilitar actualización automática**
+Deshabilita todas las características de IntelliSense. El IDE no crea procesos VCPkgSrv.exe para atender las solicitudes de IntelliSense, y ninguna característica de IntelliSense funcionará (Información rápida, Lista de miembros, Autocompletar, Ayuda de Parám). La coloración semántica y el resaltado de referencias también están deshabilitados. Esta opción no deshabilita las características de exploración que se basan únicamente en la base de datos (incluida la barra de navegación, ClassView y la ventana Propiedades).
 
- La actualización de IntelliSense se retrasa hasta que se realice una solicitud real de IntelliSense. Este retraso puede provocar un tiempo de ejecución mayor de la primera operación de IntelliSense en un archivo, pero puede resultar útil para establecer esta opción en equipos con recursos limitados o muy lentos. Si selecciona esta opción, también selecciona implícitamente las opciones "Deshabilitar informe de errores" y "Deshabilitar subrayados ondulados".
+**Deshabilitar actualización automática**
 
- **Deshabilitar informe de errores**
+La actualización de IntelliSense se retrasa hasta que se realice una solicitud real de IntelliSense. Este retraso puede provocar un tiempo de ejecución mayor de la primera operación de IntelliSense en un archivo, pero puede resultar útil para establecer esta opción en equipos con recursos limitados o muy lentos. Si selecciona esta opción, también selecciona implícitamente las opciones "Deshabilitar informe de errores" y "Deshabilitar subrayados ondulados".
 
- Deshabilita los informes de errores de IntelliSense con subrayados ondulados y la ventana Lista de errores. También deshabilita el análisis en segundo plano asociado con los informes de errores. Si selecciona esta opción, también selecciona implícitamente la opción "Deshabilitar subrayados ondulados".
+**Deshabilitar informe de errores**
 
- **Deshabilitar subrayados ondulados**
+Deshabilita los informes de errores de IntelliSense con subrayados ondulados y la ventana Lista de errores. También deshabilita el análisis en segundo plano asociado con los informes de errores. Si selecciona esta opción, también selecciona implícitamente la opción "Deshabilitar subrayados ondulados".
 
- Deshabilita los subrayados ondulados de errores de IntelliSense. Los "subrayados ondulados" rojos no se muestran en la ventana del editor, pero el error seguirá apareciendo en la ventana Lista de errores.
+**Deshabilitar subrayados ondulados**
 
- **Ajustar automáticamente unidades máximas de traducción en caché**
+Deshabilita los subrayados ondulados de errores de IntelliSense. Los "subrayados ondulados" rojos no se muestran en la ventana del editor, pero el error seguirá apareciendo en la ventana Lista de errores.
 
- Número máximo de unidades de traducción que se mantendrán activas al mismo tiempo para solicitudes de IntelliSense. Debe especificar un valor entre 2 y 15. Este número se relaciona directamente con el número máximo de procesos VCPkgSrv.exe que se ejecutarán (para una instancia determinada de Visual Studio). El valor predeterminado es 2, pero si tiene memoria disponible, puede aumentar este valor y posiblemente conseguir un rendimiento ligeramente mejor en IntelliSense.
+**Ajustar automáticamente unidades máximas de traducción en caché**
 
- Para obtener más información sobre unidades de traducción, vea [Fases de traducción](/cpp/preprocessor/phases-of-translation).
+Número máximo de unidades de traducción que se mantendrán activas al mismo tiempo para solicitudes de IntelliSense. Debe especificar un valor entre 2 y 15. Este número se relaciona directamente con el número máximo de procesos VCPkgSrv.exe que se ejecutarán (para una instancia determinada de Visual Studio). El valor predeterminado es 2, pero si tiene memoria disponible, puede aumentar este valor y posiblemente conseguir un rendimiento ligeramente mejor en IntelliSense.
 
- **Deshabilitar autocompletado #include**
+Para obtener más información sobre unidades de traducción, vea [Fases de traducción](/cpp/preprocessor/phases-of-translation).
 
- Deshabilita el autocompletado de instrucciones `#include`.
+**Deshabilitar autocompletado #include**
 
- **Usar barra diagonal en autocompletado #include**
+Deshabilita el autocompletado de instrucciones `#include`.
 
- Desencadena el autocompletado de instrucciones `#include` cuando se usa "/". El delimitador predeterminado es la barra diagonal inversa "\'. El compilador puede aceptar cualquiera, por lo que use esta opción para especificar la que usa su código base.
+**Usar barra diagonal en autocompletado #include**
 
- **Deshabilitar lista de miembros absoluta**
+Desencadena el autocompletado de instrucciones `#include` cuando se usa "/". El delimitador predeterminado es la barra diagonal inversa "\'. El compilador puede aceptar cualquiera, por lo que use esta opción para especificar la que usa su código base.
 
- La lista de miembros no aparece mientras escribe el nombre de un tipo o una variable. La lista aparece solo después de que escriba uno de los caracteres de confirmación, según lo definido en la opción **Caracteres de confirmación de las listas de miembros**.
+**Deshabilitar lista de miembros absoluta**
 
- **Deshabilitar palabras clave de listas de miembros**
+La lista de miembros no aparece mientras escribe el nombre de un tipo o una variable. La lista aparece solo después de que escriba uno de los caracteres de confirmación, según lo definido en la opción **Caracteres de confirmación de las listas de miembros**.
 
- Las palabras clave de lenguaje como `void`, `class`, `switch` no aparecen en las sugerencias de lista de miembros.
+**Deshabilitar palabras clave de listas de miembros**
 
- **Deshabilitar fragmentos de código de listas de miembros**
+Las palabras clave de lenguaje como `void`, `class`, `switch` no aparecen en las sugerencias de lista de miembros.
 
- Los fragmentos de código no aparecen en las sugerencias de lista de miembros.
+**Deshabilitar fragmentos de código de listas de miembros**
 
- **Modo de filtro de la lista de miembros**
+Los fragmentos de código no aparecen en las sugerencias de lista de miembros.
 
- Establece el tipo de algoritmo de coincidencia. **Aproximada** busca las coincidencias más posibles porque usa un algoritmo que es similar a un corrector ortográfico para buscar coincidencias que sean similares pero no idénticas. **Filtrado inteligente** coincide con subcadenas incluso si no se encuentran al comienzo de una palabra. **Prefijo** solo coincide con subcadenas idénticas que comienzan al principio de la palabra.
+**Modo de filtro de la lista de miembros**
 
- **Deshabilitar coloración semántica**
+Establece el tipo de algoritmo de coincidencia. **Aproximada** busca las coincidencias más posibles porque usa un algoritmo que es similar a un corrector ortográfico para buscar coincidencias que sean similares pero no idénticas. **Filtrado inteligente** coincide con subcadenas incluso si no se encuentran al comienzo de una palabra. **Prefijo** solo coincide con subcadenas idénticas que comienzan al principio de la palabra.
 
- Desactiva toda la coloración de código excepto para las palabras clave de lenguaje, cadenas y comentarios.
+**Deshabilitar coloración semántica**
 
- **Caracteres de confirmación de las listas de miembros**
+Desactiva toda la coloración de código excepto para las palabras clave de lenguaje, cadenas y comentarios.
 
- Especifica los caracteres que provocan que se confirme la sugerencia de lista de miembros resaltada en ese momento. Puede agregar o quitar caracteres de esta lista.
+**Caracteres de confirmación de las listas de miembros**
 
- **Confirmación automática de las listas de miembros**
+Especifica los caracteres que provocan que se confirme la sugerencia de lista de miembros resaltada en ese momento. Puede agregar o quitar caracteres de esta lista.
 
- Agrega una línea cuando pulsa la tecla Entrar al final de una palabra completa.
+**Confirmación automática de las listas de miembros**
 
- **Habilitar punto a flecha en lista de miembros**
+Agrega una línea cuando pulsa la tecla Entrar al final de una palabra completa.
 
- Reemplaza "." por "->" si corresponde en la lista de miembros.
+**Habilitar punto a flecha en lista de miembros**
+
+Reemplaza "." por "->" si corresponde en la lista de miembros.
 
 ## <a name="references"></a>Referencias
- **Deshabilitar resolución**
 
- Por razones de rendimiento, "Buscar todas las referencias" mostrará los resultados de la búsqueda de texto sin formato de manera predeterminada, en lugar de usar IntelliSense para comprobar cada candidato. Puede desactivar esta casilla para obtener resultados más precisos en todas las operaciones de búsqueda. Para filtrar en una base por búsqueda, abra el menú contextual para obtener la lista de resultados y, después, pulse "Resolver resultados".
+**Deshabilitar resolución**
 
- **Ocultar no confirmados**
+Por razones de rendimiento, "Buscar todas las referencias" mostrará los resultados de la búsqueda de texto sin formato de manera predeterminada, en lugar de usar IntelliSense para comprobar cada candidato. Puede desactivar esta casilla para obtener resultados más precisos en todas las operaciones de búsqueda. Para filtrar en una base por búsqueda, abra el menú contextual para obtener la lista de resultados y, después, pulse "Resolver resultados".
 
- Ocultar elementos no confirmados en los resultados de "Buscar todas las referencias". Si no establece la opción "Deshabilitar resolución", puede usar esta opción para ocultar los elementos no confirmados en los resultados.
+**Ocultar no confirmados**
 
- **Deshabilitar resaltado de referencia**
+Ocultar elementos no confirmados en los resultados de "Buscar todas las referencias". Si no establece la opción "Deshabilitar resolución", puede usar esta opción para ocultar los elementos no confirmados en los resultados.
+
+**Deshabilitar resaltado de referencia**
 
 De forma predeterminada, cuando se selecciona texto, todas las instancias del mismo texto se resaltan automáticamente en el documento actual. Puede deshabilitar esta característica estableciendo **Deshabilitar Resaltado de referencias** en **True**.
 
- ## <a name="text-editor"></a>Editor de texto
- **Habilitar Rodear con llaves**
+## <a name="text-editor"></a>Editor de texto
 
- Si esta opción está habilitada, se puede encerrar el texto seleccionado entre llaves al escribir "{" en el editor de texto.
+**Habilitar Rodear con llaves**
 
- **Habilitar Rodear con paréntesis**
+Si esta opción está habilitada, se puede encerrar el texto seleccionado entre llaves al escribir "{" en el editor de texto.
 
- Si esta opción está habilitada, se puede encerrar el texto seleccionado entre paréntesis al escribir "(" en el editor de texto.
+**Habilitar Rodear con paréntesis**
+
+Si esta opción está habilitada, se puede encerrar el texto seleccionado entre paréntesis al escribir "(" en el editor de texto.
 
 ## <a name="see-also"></a>Vea también
 

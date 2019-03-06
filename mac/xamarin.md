@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: cae109ef815e837026bc12366a5902d7d151edcb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56319475"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428575"
 ---
 # <a name="xamarin-mobile-app-development"></a>Desarrollo de aplicaciones móviles con Xamarin
 
@@ -28,7 +28,7 @@ Para obtener más información sobre Android Designer, consulte la guía de [inf
 
 ## <a name="ios"></a>iOS
 
-iOS Designer está totalmente integrado con Visual Studio para Mac y permite la edición visual de archivos .xib y de guión gráfico para crear interfaces de usuario y transiciones de iOS, tvOS y watchOS. La interfaz de usuario al completo puede compilarse mediante la funcionalidad de arrastrar y colocar entre el cuadro de herramientas y la superficie de diseño, mientras se usa un enfoque intuitivo para controlar los eventos. iOS Designer también admite [custom controls/xamarin/ios/user-interface/designer/ios-designable-controls-overview) con la ventaja adicional de representación en tiempo de diseño.
+iOS Designer está totalmente integrado con Visual Studio para Mac y permite la edición visual de archivos .xib y de guión gráfico para crear interfaces de usuario y transiciones de iOS, tvOS y watchOS. La interfaz de usuario al completo puede compilarse mediante la funcionalidad de arrastrar y colocar entre el cuadro de herramientas y la superficie de diseño, mientras se usa un enfoque intuitivo para controlar los eventos. iOS Designer también admite [controles personalizados](/xamarin/ios/user-interface/designer/ios-designable-controls-overview) con la ventaja adicional de representación en tiempo de diseño.
 
 ![Diseñador de guiones gráficos de iOS](media/intro-image30.png)
 

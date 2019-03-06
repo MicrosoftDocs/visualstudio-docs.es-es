@@ -7,22 +7,23 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Conozca cuáles son las responsabilidades de los administradores de suscripciones.
 searchscope: VS Subscription
-ms.openlocfilehash: ca1dc2dd7a2232a85a7e6aefece63272bb0039fc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842356"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954485"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Introducción a las responsabilidades del administrador
 Como administrador, tiene la capacidad de administrar suscripciones para su organización.  El rol de administrador también conlleva responsabilidades para asegurarse de que las suscripciones se administran de acuerdo con los términos de licencia. En este artículo se describen las responsabilidades, ventajas y limitaciones del rol de administrador.
 
 ## <a name="roles--responsibilities"></a>Roles y responsabilidades
 Un administrador de Visual Studio tiene cuatro responsabilidades esenciales:
-1.  **Comprender los beneficios y las restricciones de las suscripciones de Visual Studio.** Comprender correctamente que los beneficios pueden reducir los costos de hardware mediante el uso de servicios en la nube, así como reducir los costos de software con licencias por usuario para entornos de preproducción.
-2.  **Asignar suscripciones de Visual Studio a usuarios con nombre específicos.** El contrato requiere que las suscripciones de Visual Studio se asignen a usuarios con nombre específicos. Realice un seguimiento de los usuarios asignados para asegurarse de que pueden acceder y aprovechar al máximo las ventajas incluidas en su suscripción de Visual Studio.
-3.  **Crear un inventario preciso del entorno de preproducción.** Esto es esencial para garantizar que todos los usuarios que interactúan con el software con licencia de Visual Studio tienen una licencia adecuada a su propia suscripción de Visual Studio.
-4.  **Realizar un seguimiento de los cambios de asignación y adquirir licencias adicionales según lo programado.** Los contratos de licencias por volumen (VL) de Microsoft y los MPSA ofrecen flexibilidad en el modo de usar y asignar suscripciones de Visual Studio. A cambio, deberá realizar un seguimiento de los cambios en el uso del software y las asignaciones de usuarios, y procesar los pedidos para adquirir licencias adicionales según la programación descrita en el contrato.
+
+1. **Comprender los beneficios y las restricciones de las suscripciones de Visual Studio.** Comprender correctamente que los beneficios pueden reducir los costos de hardware mediante el uso de servicios en la nube, así como reducir los costos de software con licencias por usuario para entornos de preproducción. 
+2. **Asignar suscripciones de Visual Studio a usuarios con nombre específicos.** El contrato requiere que las suscripciones de Visual Studio se asignen a usuarios con nombre específicos. Realice un seguimiento de los usuarios asignados para asegurarse de que pueden acceder y aprovechar al máximo las ventajas incluidas en su suscripción de Visual Studio.
+3. **Crear un inventario preciso del entorno de preproducción.** Esto es esencial para garantizar que todos los usuarios que interactúan con el software con licencia de Visual Studio tienen una licencia adecuada a su propia suscripción de Visual Studio. 
+4. **Realizar un seguimiento de los cambios de asignación y adquirir licencias adicionales según lo programado.** Los contratos de licencias por volumen (VL) de Microsoft y los MPSA ofrecen flexibilidad en el modo de usar y asignar suscripciones de Visual Studio. A cambio, deberá realizar un seguimiento de los cambios en el uso del software y las asignaciones de usuarios, y procesar los pedidos para adquirir licencias adicionales según la programación descrita en el contrato.
 
 ## <a name="benefits-and-limitations"></a>Beneficios y limitaciones
 Las suscripciones de Visual Studio permiten a los miembros del equipo de desarrollo instalar y usar software para diseñar, desarrollar, probar, evaluar y demostrar otro software. Las licencias de software otorgadas mediante suscripciones de Visual Studio no son válidas para entornos de producción.
@@ -70,9 +71,10 @@ Los administradores de suscripciones de Visual Studio deberán realizar un segui
 - Un usuario interactúa con el software de Visual Studio.
 
 La obligación de compra completa viene determinada por el **límite máximo de uso**. Este límite máximo está destinado a asignaciones de usuarios por día o a usuarios que interactúan con el software de Visual Studio, lo que antes alcance el límite.
-1.  Los administradores de suscripciones de Visual Studio pueden aumentar el límite máximo de uso mediante la asignación de suscripciones de Visual Studio a usuarios individuales.
-2.  Los administradores de suscripciones de Visual Studio suscripciones pueden volver a asignar las suscripciones de un suscriptor a otro si han transcurrido 90 días desde el momento de la asignación original. Para evitar un límite máximo artificial, quite primero la suscripción existente y después agregue una nueva.
-3.  Los administradores de suscripciones de Visual Studio pueden cambiar el nivel de suscripción asignada para un usuario individual, lo que supondría una disminución en una asignación y un aumento en otra. Cuando se reduce el nivel de suscripción asignada a un suscriptor, el usuario debe dejar de usar inmediatamente y desinstalar todo aquello que se encuentre solo en el nivel de suscripción de nivel más alto.
+
+1. Los administradores de suscripciones de Visual Studio pueden aumentar el límite máximo de uso mediante la asignación de suscripciones de Visual Studio a usuarios individuales.
+2. Los administradores de suscripciones de Visual Studio suscripciones pueden volver a asignar las suscripciones de un suscriptor a otro si han transcurrido 90 días desde el momento de la asignación original. Para evitar un límite máximo artificial, quite primero la suscripción existente y después agregue una nueva.
+3. Los administradores de suscripciones de Visual Studio pueden cambiar el nivel de suscripción asignada para un usuario individual, lo que supondría una disminución en una asignación y un aumento en otra. Cuando se reduce el nivel de suscripción asignada a un suscriptor, el usuario debe dejar de usar inmediatamente y desinstalar todo aquello que se encuentre solo en el nivel de suscripción de nivel más alto. 
 
 ### <a name="cloud-subscriptions-open-license-or-open-value"></a>Suscripciones de nube, Open License u Open Value
 Las suscripciones se pueden asignar a través de un programa como las suscripciones de Microsoft Cloud, Open License u Open Value. Si usa estos programas, debe procesar su pedido para los usuarios adicionales durante el mes en el que los usuarios (empleados o contratistas externos) empiezan a interactuar con el software con licencia de Visual Studio.
