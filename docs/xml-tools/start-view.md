@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5609844763a5bb9ece7aa45b558191cf974fefb0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2758dd6425e2bfb4505a1ee9e61d4966e3ba90b6
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951623"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525162"
 ---
 # <a name="start-view"></a>Vista Inicio
 
@@ -25,7 +25,7 @@ La vista inicio contiene dos secciones principales, el *marca de agua* y **detal
 
 ## <a name="watermark"></a>Marca de agua
 
-El panel de la marca de agua contiene una lista de vínculos a todas las vistas de diseñador XSD, el Editor XML, y **Explorador de esquemas XML**. Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".
+El panel de la marca de agua contiene una lista de vínculos a todas las vistas de diseñador XSD, el editor XML, y **Explorador de esquemas XML**. Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".
 
 ## <a name="schema-set-details"></a>Detalles del conjunto de esquemas
 

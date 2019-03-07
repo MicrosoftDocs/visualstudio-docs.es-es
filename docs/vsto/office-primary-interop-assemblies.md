@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9ef409b305901cc36e67eeadfe0000202c935b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602291"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525912"
 ---
 # <a name="office-primary-interop-assemblies"></a>ensamblados de interoperabilidad primarios de Office
 
@@ -57,15 +57,15 @@ Al instalar Visual Studio, los PIA se instalan automáticamente en una ubicació
 
 Estas copias de los PIA ayudan a Visual Studio a evitar varios problemas de desarrollo que se pueden producir cuando se registran distintas versiones de los PIA en la caché global de ensamblados.
 
-Visual Studio instala estas copias de los PIA en las siguientes ubicaciones del equipo de desarrollo:
+A partir de Visual Studio 2017, estas copias de los PIA se instalan en las siguientes ubicaciones compartidas en el equipo de desarrollo:
 
-- *%ProgramFiles%\Microsoft visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office14*
+- *%ProgramFiles%\Microsoft Studio\Shared\Visual visual Studio Tools para Office\PIA\*
 
-  (o *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office14* en sistemas operativos de 64 bits)
+- (o * % ProgramFiles (x86) %\Microsoft Visual Studio\Shared\Visual Studio Tools para Office\PIA\* en sistemas operativos de 64 bits)
 
-- *%ProgramFiles%\Microsoft visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office15*
-
-  (o *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office15* en sistemas operativos de 64 bits)
+> [!NOTE]
+> Las versiones anteriores de Visual Studio, estos PIA se instalará en Visual Studio Tools para Office\PIA carpeta en el * carpeta % ProgramFiles % para esa versión de Visual Studio.  
+> Por ejemplo: * % ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Visual Studio Tools para Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Ensamblados de interoperabilidad primarios en la caché global de ensamblados
 
@@ -79,7 +79,7 @@ Los PIA de Office no son obligatorios en los equipos de los usuarios finales par
 
 Cada plantilla de proyecto de Office en Visual Studio está diseñada para funcionar con una sola aplicación de Microsoft Office. Para usar características de varias aplicaciones de Microsoft Office o para usar características de una aplicación o un componente que no tenga un proyecto en Visual Studio, debe agregar una referencia a los PIA necesarios.
 
-En la mayoría de los casos, debe agregar referencias a los PIA se instalan con Visual Studio bajo el `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` directory. Estas versiones de los ensamblados aparecen en la **Framework** pestaña de la **Administrador de referencias** cuadro de diálogo. Para obtener más información, vea [Cómo: Apuntar a las aplicaciones de Office a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+En la mayoría de los casos, debe agregar referencias a los PIA se instalan con Visual Studio bajo el `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` directory. Estas versiones de los ensamblados aparecen en la **Framework** pestaña de la **Administrador de referencias** cuadro de diálogo. Para obtener más información, vea [Cómo: Apuntar a las aplicaciones de Office a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
 
 Si ha instalado y registrado los PIA en la caché global de ensamblados, estas versiones de los ensamblados aparecen en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** . Debe evitar agregar referencias a estas versiones de los ensamblados, puesto que se pueden producir algunos problemas de desarrollo al usarlas. Por ejemplo, si ha registrado distintas versiones de los PIA en la caché global de ensamblados, el proyecto se enlazará automáticamente a la última versión del ensamblado que se registró, aunque especifique una versión distinta en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** .
 
@@ -90,7 +90,7 @@ Si ha instalado y registrado los PIA en la caché global de ensamblados, estas v
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Ensamblados de interoperabilidad primarios para aplicaciones de Microsoft Office
 
-En la siguiente tabla se incluyen los ensamblados de interoperabilidad primarios disponibles para [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] y [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+La tabla siguiente enumeran los ensamblados de interoperabilidad primarios que están disponibles para [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] y [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
 <br/>
 

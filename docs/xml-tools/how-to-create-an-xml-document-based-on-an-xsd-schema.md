@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2848fee32094ba9c79cc3190b48b8953a5f7e942
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912890"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525123"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Filtrar Crear un documento XML basado en un esquema XSD
 
@@ -45,7 +45,7 @@ Además, observe que el contenido de `xs:base64Binary` solo se generará si apar
 
 2.  En el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), haga clic en el `PurchaseOrder` elemento global. Seleccione **generar XML de ejemplo**.
 
-     Cuando se selecciona esta opción, PurchaseOrder. *xml* se generarán archivos con el siguiente contenido XML de ejemplo y abre el Editor de XML:
+     Cuando se selecciona esta opción, PurchaseOrder. *xml* archivo con el siguiente contenido XML de ejemplo se genera y se abre en el editor XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -73,7 +73,3 @@ Además, observe que el contenido de `xs:base64Binary` solo se generará si apar
       </BillTo>
     </PurchaseOrder>
     ```
-
-## <a name="see-also"></a>Vea también
-
-- [Trabajar con datos XML](../xml-tools/working-with-xml-data.md)

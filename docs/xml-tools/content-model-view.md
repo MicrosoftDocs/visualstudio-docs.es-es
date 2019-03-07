@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933579"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525796"
 ---
 # <a name="content-model-view"></a>Vista Modelo de contenido
 
@@ -35,7 +35,7 @@ Cuando se selecciona un nodo en el **área de trabajo** panel, se agrega a la su
 
 El modelo de contenido de un nodo se representa con un árbol gráfico que puede expandirse, en el que los elementos y atributos aparecen como nodos del árbol. De forma predeterminada, solo se expande un nivel. Otra información, como los compositores, los nombres de tipo, los grupos y otros contenedores se coloca en una barra vertical (cuando se expande) junto con los elementos y atributos que encierran. Al hacer doble clic en una barra vertical, se vuelve horizontal y el árbol se contrae. Al hacer doble clic en una barra horizontal, se vuelve vertical y el árbol se expande. Al seleccionar la barra vertical selecciona todos los nodos en el contenedor. Los expansores aparecen a la derecha de un nodo si se puede expandir o contraer un elemento.
 
-Si la superficie de diseño está en blanco, el Editor XML, el **Explorador de esquemas XML**, y se muestran la marca de agua. El *marca de agua* es una lista de vínculos a todas las vistas de diseñador XSD. Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".
+Si la superficie de diseño está en blanco, el editor XML, el **Explorador de esquemas XML**, y se muestran la marca de agua. El *marca de agua* es una lista de vínculos a todas las vistas de diseñador XSD. Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".
 
 ## <a name="breadcrumb-bar"></a>Barra de ruta de navegación
 
@@ -52,7 +52,7 @@ Cuando haga clic en un elemento en la superficie de diseño o **área de trabajo
 |**Generar XML de ejemplo**|Disponible solo para los elementos globales. Genera un archivo XML de ejemplo para el elemento global.|
 |**Mostrar documentación**|Muestra u oculta el contenido del nodo Anotación/Documentación.|
 |**Exportar diagrama como imagen**|Guarda la superficie de diseño en un archivo XPS.|
-|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el Editor XML.|
+|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el editor XML.|
 |**Propiedades (ventana)**|Se abre el **propiedades** ventana (si aún no está abierto). Esta ventana muestra información sobre el nodo.|
 
 En la tabla siguiente se describe las opciones que están disponibles para el **área de trabajo** panel.
@@ -66,7 +66,7 @@ En la tabla siguiente se describe las opciones que están disponibles para el **
 |**Quitar todo salvo la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño.|
 |**Generar XML de ejemplo**|Disponible solo para los elementos globales. Genera un archivo XML de ejemplo para el elemento global.|
 |**Seleccionar todo**|Selecciona todos los nodos en el **área de trabajo** panel.|
-|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el Editor XML.|
+|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el editor XML.|
 |**Propiedades (ventana)**|Se abre el **propiedades** ventana (si aún no está abierto). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="properties-window"></a>Propiedades (ventana)
@@ -119,9 +119,9 @@ El control deslizante de Zoom es opaco al seleccionarla, mantenga el mouse sobre
 
 ## <a name="xml-editor-integration"></a>Integración del editor XML
 
-Puede cambiar entre la **diseñador XSD** y el Editor XML mediante el menú contextual (contexto).
+Puede cambiar entre la **diseñador XSD** y el editor XML mediante el menú contextual (contexto).
 
-Si realiza cambios en el esquema especificado en el Editor XML se sincronizan los cambios en la vista de modelo de contenido. Para obtener más información, consulte [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
+Si realiza cambios en el esquema especificado en el editor XML se sincronizan los cambios en la vista de modelo de contenido. Para obtener más información, consulte [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Vea también
 
