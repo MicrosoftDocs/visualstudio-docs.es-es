@@ -1,5 +1,5 @@
 ---
-title: Filtrar Generar un fragmento de código XML a partir de un esquema XML
+title: Procedimiento Generar un fragmento de código XML a partir de un esquema XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 311503aed0787fece7985d7df1f6dc2d4ddd03b2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913959"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526248"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Filtrar Generar un fragmento XML desde un esquema XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedimiento Generar un fragmento XML desde un esquema XML
 
-Con el Editor XML es posible generar fragmentos de código XML a partir de un esquema de lenguaje de definición de esquema XML (XSD). Por ejemplo, durante la creación de un archivo XML, mientras se coloca junto al nombre del elemento, puede presionar **ficha** para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
+El editor XML tiene la capacidad de generar fragmentos XML desde un esquema (XSD) del lenguaje de definición de esquemas XML. Por ejemplo, durante la creación de un archivo XML, mientras se coloca junto al nombre del elemento, puede presionar **ficha** para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
 
 Esta característica solamente está disponible en elementos. Además, se aplican las siguientes reglas:
 
@@ -43,7 +43,7 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
 ## <a name="example"></a>Ejemplo
 
- Los pasos descritos en esta sección muestran cómo usar el fragmento XML generados por esquema, característica del Editor XML.
+ Los pasos descritos en esta sección muestran cómo utilizar la característica de fragmento de código generados por esquema XML del editor XML.
 
 > [!NOTE]
 > Antes de comenzar estos procedimientos, guarde el archivo de esquema en el equipo local.

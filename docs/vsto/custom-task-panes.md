@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 205b4739d152186415a811b934a210d5f9a38ac4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615408"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526713"
 ---
 # <a name="custom-task-panes"></a>Paneles de tareas personalizados
   Los paneles de tareas son paneles de interfaz de usuario que normalmente están acoplados a un lado de una ventana en una aplicación de Microsoft Office. Los paneles de tareas personalizados proporcionan una manera de crear su propio panel de tareas y ofrecer a los usuarios una interfaz conocida para acceder a las características de la solución. Por ejemplo, la interfaz puede contener controles que ejecutan código para modificar documentos o mostrar datos de un origen de datos.
@@ -136,8 +136,6 @@ ms.locfileid: "56615408"
 - [Outlook](#Outlook)
 
 - [Word, InfoPath y PowerPoint](#WordAndInfoPath)
-
-  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: ¿Administrar paneles de tareas en complementos de VSTO de Word? ](http://go.microsoft.com/fwlink/?LinkId=136781).
 
 ##  <a name="Outlook"></a> Outlook
  Cuando se crea un panel de tareas personalizado para Outlook, se asocia a una ventana específica del Explorador o el Inspector. Los exploradores son ventanas que muestran el contenido de una carpeta y los inspectores son ventanas que muestran un elemento como un mensaje de correo electrónico o una tarea.

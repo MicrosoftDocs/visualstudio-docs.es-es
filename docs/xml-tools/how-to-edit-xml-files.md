@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931759"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525458"
 ---
 # <a name="how-to-edit-xml-files"></a>Filtrar Editar archivos XML
 
-El Editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archivo XML independiente o en uno asociado con un proyecto de Visual Studio. El Editor XML está asociado con las siguientes extensiones de archivo: *.config*, *.dtd*, *.xml*, *.xsd*, *.xdr*, *.xsl*, *.xslt*, y *.vssettings*. También está asociado con otros tipos de archivos que no tengan registrado un editor específico y que incluyan contenido XML o DTD.
+El editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archivo XML independiente o en uno asociado con un proyecto de Visual Studio. El editor XML está asociado con las siguientes extensiones de archivo: *.config*, *.dtd*, *.xml*, *.xsd*, *.xdr*, *.xsl*, *.xslt*, y *.vssettings*. El editor XML también está asociado con ningún otro tipo de archivo que tiene no hay registrado un editor específico y que contiene el contenido XML o DTD.
 
 > [!NOTE]
 > Los documentos XHTML son manejados con el Editor HTML.
@@ -34,7 +34,7 @@ El Editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archiv
 
 3.  Escriba el nombre de archivo en el **nombre** campo y presione **agregar**.
 
-     Se agrega el archivo XML al proyecto y se abre en el Editor XML. El archivo contiene la declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8" ?>`.
+     El archivo XML se agrega al proyecto y abre en el editor XML. El archivo contiene la declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8" ?>`.
 
 ## <a name="to-add-an-existing-xml-file-to-a-project"></a>Para agregar un archivo XML existente a un proyecto
 
@@ -64,7 +64,7 @@ El Editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archiv
 
 3.  Agregue archivos XML al proyecto.
 
-     El Editor XML busca los esquemas que agregue a este proyecto y los utiliza para la validación e IntelliSense en cualquier archivo XML, de esquema o XSLT que edite mientras este proyecto está abierto.
+     El editor XML busca los esquemas que agregue a este proyecto y los utiliza para la validación e IntelliSense en cualquier XML, esquema o los archivos XSLT que edite mientras este proyecto está abierto.
 
 ## <a name="see-also"></a>Vea también
 

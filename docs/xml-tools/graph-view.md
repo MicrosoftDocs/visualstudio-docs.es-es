@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952650"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526651"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 
@@ -27,11 +27,11 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  La superficie de diseño de la vista gráfico muestra el contenido de la [área de trabajo de diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md). Si el área de trabajo contiene nodos globales del conjunto de esquemas, dichos nodos se muestran en la superficie de diseño de la vista Gráfico y se dibujan flechas entre los nodos que tienen relaciones.
 
- Haga doble clic en un nodo en la vista Gráfico para mostrar el Editor XML.
+ Haga doble clic en un nodo en la vista gráfico se abrirá el editor de XML.
 
  Para eliminar los nodos seleccionados del área de trabajo, use la barra de herramientas del diseñador XSD o **eliminar** clave.
 
- Si la superficie de diseño está en blanco, el Editor XML, el **Explorador de esquemas XML**, y se muestran la marca de agua. El *marca de agua* es una lista de vínculos a todas las vistas de diseñador XSD.
+ Si la superficie de diseño está en blanco, el editor XML, el **Explorador de esquemas XML**, y se muestran la marca de agua. El *marca de agua* es una lista de vínculos a todas las vistas de diseñador XSD.
 
  ![Diseñador XSD; vista Gráfico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
@@ -55,7 +55,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 |**Quitar todo salvo la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño.|
 |**Exportar diagrama como imagen**|Guarda la superficie de diseño en un archivo XPS.|
 |**Seleccionar todo**|Selecciona todos los nodos de la superficie de diseño.|
-|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el Editor XML.|
+|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el editor XML.|
 |**Propiedades (ventana)**|Se abre el **propiedades** ventana (si aún no está abierto). Esta ventana muestra información sobre el nodo.|
 
  Además de las opciones comunes descritas anteriormente, el menú contextual para los elementos globales también tiene las opciones siguientes:
@@ -140,9 +140,9 @@ El control deslizante de Zoom es opaco al seleccionarla, mantenga el mouse sobre
 
 ## <a name="xml-editor-integration"></a>Integración del editor XML
 
- Puede alternar entre las vistas gráfico y el Editor XML haciendo clic en un nodo y mediante el menú contextual (clic derecho) de la vista código.
+ Puede alternar entre las vistas gráfico y el editor XML haciendo clic en un nodo y mediante el menú contextual (clic derecho) de la vista código.
 
- Si realiza modificaciones en el conjunto de esquemas en el Editor XML, dichas modificaciones se sincronizarán en la vista Gráfico. Para obtener más información, consulte [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
+ Si realiza cambios en el esquema especificado en el editor XML, se sincronizarán los cambios en la vista gráfico. Para obtener más información, consulte [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Vea también
 

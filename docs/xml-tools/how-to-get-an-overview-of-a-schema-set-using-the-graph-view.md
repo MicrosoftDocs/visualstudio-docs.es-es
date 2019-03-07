@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e6530f5f2856953041039171b2604236706bfd3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922035"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525149"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Filtrar Obtenga información general sobre un conjunto mediante la vista Gráfico de esquemas
 
@@ -23,11 +23,11 @@ Este tema describe cómo usar el [vista gráfico](../xml-tools/graph-view.md) pa
 
 1.  Cree un nuevo archivo de esquema XML y guarde el archivo como *Relationships.xsd*.
 
-2.  Haga clic en el **Use el Editor XML para ver y editar el archivo de esquema XML subyacente** vínculo en la vista inicio.
+2.  Haga clic en el **editor XML de uso para ver y editar el archivo de esquema XML subyacente** vínculo en la vista inicio.
 
 3.  Copie el código de ejemplo de esquema XML de [esquema XML de muestra: relaciones](../xml-tools/sample-xsd-file-relationships.md) y péguelo para reemplazar el código que se ha agregado el nuevo archivo XSD de forma predeterminada.
 
-4.  Haga clic en cualquier lugar en el Editor XML y seleccione **Diseñador de vistas**.
+4.  Haga clic en cualquier lugar en el editor XML y seleccione **Diseñador de vistas**.
 
 5.  Seleccione la vista de gráfico desde el **barra de herramientas XSD**.
 

@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ac977be83440bfd3e0b1436635bbeb9c39c0ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24dd2c13a0d2d4d2a98d11e5154b96261d19d492
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915991"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525715"
 ---
 # <a name="xml-schema-explorer"></a>Explorador de esquemas XML
 
-El **Explorador de esquemas XML** está integrado con Microsoft Visual Studio y el Editor XML para permitirle trabajar con esquemas (XSD). Al abrir un archivo de esquema XML, el **del conjunto de esquemas** nodo aparece en el **Explorador de esquemas XML**. Todos los esquemas importados, incluidos o redefinidos para el archivo de destino, así como los archivos que se hace referencia mediante un `include` o `import` instrucción, también aparecen en la **Explorador de esquemas XML**.
+El **Explorador de esquemas XML** está integrado con Microsoft Visual Studio y el editor XML para permitirle trabajar con esquemas (XSD). Al abrir un archivo de esquema XML, el **del conjunto de esquemas** nodo aparece en el **Explorador de esquemas XML**. Todos los esquemas importados, incluidos o redefinidos para el archivo de destino, así como los archivos que se hace referencia mediante un `include` o `import` instrucción, también aparecen en la **Explorador de esquemas XML**.
 
  El **Explorador de esquemas XML** le permite hacer lo siguiente:
 
@@ -31,7 +31,7 @@ El **Explorador de esquemas XML** está integrado con Microsoft Visual Studio y 
 
 -   Ordenar el árbol por documento, tipo o nombre. Para obtener más información, consulte [ordenación, filtrado y agrupación](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
--   Abrir el Editor XML y saltar a las ubicaciones de código del archivo XSD. Para obtener más información, consulte [integración con el Editor XML](../xml-tools/integration-with-xml-editor.md).
+-   Abra el editor XML y saltar a las ubicaciones de código en el archivo XSD. Para obtener más información, consulte [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
 
 -   Generar XML de ejemplo para elementos globales.
 

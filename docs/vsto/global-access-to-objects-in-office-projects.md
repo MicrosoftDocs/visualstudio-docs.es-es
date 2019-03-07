@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c9ed2a67f320d9d7af94e1a31d88e48e3672a11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600394"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525202"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Acceso global a objetos en los proyectos de Office
   Cuando se crea un proyecto de Office, Visual Studio genera automáticamente una clase denominada `Globals` en el proyecto. Puede utilizar la clase `Globals` para tener acceso en tiempo de ejecución a diversos elementos del proyecto desde cualquier código del proyecto.
@@ -74,7 +74,7 @@ ms.locfileid: "56600394"
  El código que intenta utilizar el `Globals` clase antes de inicializa el documento o el complemento de VSTO podría producir una excepción de tiempo de ejecución. Por ejemplo, el uso de `Globals` al declarar una variable de nivel de clase podría provocar un error, ya que la clase `Globals` podría no estar inicializada con referencias a todos los elementos host antes de que se creara una instancia del objeto declarado.
 
 > [!NOTE]
->  La clase `Globals` nunca se inicializa en tiempo de diseño, sino que el diseñador crea instancias de controles. Esto significa que si crea un control de usuario que utiliza una propiedad de la clase `Globals` desde dentro de una clase de control de usuario, deberá comprobar si la propiedad devuelve **null** antes de intentar usar el objeto devuelto.
+>  La clase `Globals` nunca se inicializa en tiempo de diseño, sino que el diseñador crea instancias de controles. Esto significa que si crea un control de usuario que utiliza una propiedad de la `Globals` clase desde dentro de una clase de control de usuario, debe comprobar si la propiedad devuelve **null** antes de intentar usar el objeto devuelto.
 
 ## <a name="see-also"></a>Vea también
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)

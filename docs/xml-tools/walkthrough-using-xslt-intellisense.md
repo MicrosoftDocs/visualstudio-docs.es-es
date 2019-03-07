@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630e88c01960a6477d586952b0680d53fee62401
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 826967355b26e06e5d9f0bd26f3efcf745006fe9
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915955"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525445"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Tutorial: Usar XSLT IntelliSense
 
@@ -162,4 +162,4 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
 
 ## <a name="see-also"></a>Vea también
 
-- [Características de IntelliSense del Editor XML](../xml-tools/xml-editor-intellisense-features.md)
+- [Características de IntelliSense del editor XML](../xml-tools/xml-editor-intellisense-features.md)

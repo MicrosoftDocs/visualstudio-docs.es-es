@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear fragmentos XML
+title: Procedimiento Crear fragmentos XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a17f5699ffc5bfe33e86370a9c5ef114331e90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907339"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526625"
 ---
-# <a name="how-to-create-xml-snippets"></a>Filtrar Crear fragmentos XML
+# <a name="how-to-create-xml-snippets"></a>Procedimiento Crear fragmentos XML
 
-El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incluye un fragmento XML, llamado "Fragmento", que es un fragmento reutilizable que permite la creación de nuevos fragmentos XML.
+El editor XML se puede usar para crear nuevos fragmentos XML. El editor incluye un fragmento XML, llamado "Fragmento", que es un fragmento reutilizable que permite la creación de nuevos fragmentos XML.
 
 ## <a name="to-create-a-new-xml-snippet"></a>Para crear un nuevo fragmento XML
 
@@ -80,7 +80,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
 - $name$ es una variable definida por el usuario. Crea un elemento `name`, que tiene un valor editable que adopta "name" como valor predeterminado. Las variables definidas por el usuario se definen mediante el elemento `Literal`.
 
-- $selected$ es una variable predefinida. Representa el texto que se ha seleccionado en el Editor XML antes de invocar el fragmento. La colocación de esta variable determina dónde aparece el texto seleccionado en el fragmento de código que rodea esa selección.
+- $selected$ es una variable predefinida. Representa el texto que se ha seleccionado en el editor XML antes de invocar el fragmento de código. La colocación de esta variable determina dónde aparece el texto seleccionado en el fragmento de código que rodea esa selección.
 
 - $end$ es una variable predefinida. Cuando el usuario presiona **ENTRAR** para finalizar la edición de los campos del fragmento de código, esta variable determina dónde se mueve el símbolo de intercalación (^) a.
 
@@ -105,7 +105,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 </Literal
 ```
 
- Los literales también pueden hacer referencia a funciones. El Editor XML incluye una función denominada **LookupPrefix**. El **LookupPrefix** función busca el URI de espacio de nombres determinado desde la ubicación en el documento XML que este fragmento de código se invoca desde y devuelve el prefijo de espacio de nombres que se define para ese espacio de nombres, si la hubiera, e incluye los dos puntos (:) en ese nombre. El siguiente es un ejemplo de un `Literal` elemento que usa el **LookupPrefix** función.
+ Los literales también pueden hacer referencia a funciones. El editor XML incluye una función denominada **LookupPrefix**. El **LookupPrefix** función busca el URI de espacio de nombres determinado desde la ubicación en el documento XML que este fragmento de código se invoca desde y devuelve el prefijo de espacio de nombres que se define para ese espacio de nombres, si la hubiera, e incluye los dos puntos (:) en ese nombre. El siguiente es un ejemplo de un `Literal` elemento que usa el **LookupPrefix** función.
 
 ```xml
 <Literal Editable="false">

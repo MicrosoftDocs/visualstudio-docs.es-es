@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 83081b7fb03a4272622c25f783abbc7134fac12b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970392"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526313"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Tutorial: Utilice la herramienta jerarquía XSLT
 
@@ -111,4 +111,4 @@ El ejemplo de este tema muestra la depuración en una hoja de estilos a la que s
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Generador de perfiles XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+- [Generador de perfiles XSLT](../xml-tools/xslt-profiler.md)
