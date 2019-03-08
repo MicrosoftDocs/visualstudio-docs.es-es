@@ -10,18 +10,18 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952923"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007181"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluciones filtradas en Visual Studio
 
-**Novedades de Visual Studio 2019 Preview 1**
+**Novedades de Visual Studio 2019**
 
-Los equipos grandes de desarrollo suelen colaborar mediante una sola solución de gran tamaño con muchos proyectos. Sin embargo, los desarrolladores individuales normalmente trabajan en un pequeño subconjunto de estos proyectos. Para mejorar el rendimiento al abrir soluciones de gran tamaño, Visual Studio 2019 Preview 1 presenta el *filtrado de soluciones*. El filtrado de soluciones permite abrir una solución únicamente con proyectos selectivos cargados. El hecho de cargar un subconjunto de proyectos en una solución reduce el tiempo de carga, compilación y pruebas de la solución, y permite una revisión más específica.
+Los equipos grandes de desarrollo suelen colaborar mediante una sola solución de gran tamaño con muchos proyectos. Sin embargo, los desarrolladores individuales normalmente trabajan en un pequeño subconjunto de estos proyectos. Para mejorar el rendimiento al abrir soluciones de gran tamaño, Visual Studio 2019 presenta el *filtrado de soluciones*. El filtrado de soluciones permite abrir una solución únicamente con proyectos selectivos cargados. El hecho de cargar un subconjunto de proyectos en una solución reduce el tiempo de carga, compilación y pruebas de la solución, y permite una revisión más específica.
 
 A continuación se enumeran las características disponibles:
 

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc10a43cc5834453e6c5e11e1c7b787903f24c06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0036bb9bf8ef6d0c09fddc2b8ac0a4977c3674c
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909185"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323441"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactorización de extracción de una interfaz
 
@@ -29,13 +29,13 @@ Esta refactorización se aplica a lo siguiente:
 
 **Qué:** Permite crear una interfaz con los miembros existentes de una clase, estructura o interfaz.
 
-**Cuándo:** Se tienen varias clases, estructuras o interfaces con métodos que podrían hacerse comunes y usarse por otras clases, estructuras o interfaces.
+**Cuándo:** Tiene miembros de una clase, estructura o interfaz que otras clases, estructuras o interfaces podrían heredar.
 
 **Por qué:** Las interfaces son excelentes construcciones para diseños orientados a objetos. Imagine que tiene clases para varios animales (Perro, Gato, Pájaro) que podrían tener métodos en común, como Comer, Beber, Dormir. Usando una interfaz como IAnimal, podría hacer que Perro, Gato y Pájaro tengan una "firma" común para estos métodos.
 
-## <a name="how-to"></a>Procedimiento
+## <a name="extract-an-interface-refactoring"></a>Refactorización de extracción de una interfaz
 
-1. Resalte el nombre de la clase en la que va a realizar la acción, o simplemente coloque el cursor de texto en alguna parte del nombre de la clase.
+1. Coloque el cursor en el nombre de clase.
 
    - C#:
 
@@ -45,10 +45,10 @@ Esta refactorización se aplica a lo siguiente:
 
        ![Código resaltado (Visual Basic)](media/extractinterface-highlight-vb.png)
 
-2. A continuación, realice alguno de los siguientes procedimientos:
+2. Luego realice alguna de las siguientes acciones:
 
    - **Teclado**
-      - Presione **CTRL+R** y, a continuación, **CTRL+I**. (Tenga en cuenta que su método abreviado de teclado puede ser diferente en función del perfil que haya seleccionado).
+      - Presione **CTRL+R** y, a continuación, **CTRL+I**. (El método abreviado de teclado puede variar en función del perfil que se haya seleccionado).
       - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione **Extraer interfaz** en el menú emergente de la ventana Vista previa.
    - **Mouse**
       - Seleccione **Editar > Refactorizar > Extraer interfaz**.
@@ -56,13 +56,13 @@ Esta refactorización se aplica a lo siguiente:
 
 3. En el cuadro de diálogo **Extraer interfaz** que se abre, escriba la información que se le pide:
 
-   ![Extraer interfaz](media/extractinterface-dialog-cs.png)
+   ![Extraer interfaz](media/extractinterface-dialog-same-file.png)
 
 
    | Campo | Descripción |
    | - | - |
-   | **Nuevo nombre de interfaz** | Nombre de la interfaz que se va a crear. El valor predeterminado es I*ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. |
-   | **Nuevo nombre de archivo** | El nombre del archivo que se generará y que contendrá la interfaz. Al igual que con el nombre de la interfaz, el valor predeterminado es I*ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. |
+   | **Nuevo nombre de interfaz** | Nombre de la interfaz que se va a crear. El nombre predeterminado es I*ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. |
+   | **Nuevo nombre de archivo** | Nombre del archivo generado que va a incluir la interfaz. Al igual que el nombre de interfaz, el nombre predeterminado es I*ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. También puede seleccionar la opción **Agregar al archivo actual**. |
    | **Seleccionar miembros públicos para formar interfaz** | Los elementos que se van a extraer a la interfaz. Puede seleccionar tantos como desee. |
 
 
@@ -81,3 +81,4 @@ Esta refactorización se aplica a lo siguiente:
 ## <a name="see-also"></a>Vea también
 
 - [Refactorización](../refactoring-in-visual-studio.md)
+- [Sugerencias para desarrolladores de .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)

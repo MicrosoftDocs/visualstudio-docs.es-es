@@ -14,84 +14,84 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a19a243d6bd54c62d680ff348be016c011653db7
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318321"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221897"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
 
 ## <a name="dynamic-test-discovery"></a>Detección de pruebas dinámicas
 
-**El Explorador de pruebas no detecta las pruebas que están definidas dinámicamente (por ejemplo, teorías, adaptadores personalizados, rasgos personalizados, #ifdefs, etc.) ¿Cómo puedo detectar estas pruebas?**
+**El Explorador de pruebas no detecta las pruebas definidas dinámicamente (por ejemplo, teorías, adaptadores personalizados, rasgos personalizados, #ifdefs, etc.) ¿Cómo puedo detectar estas pruebas?**
 
-  Compile el proyecto y asegúrese de que está activada la detección basada en ensamblados en **Herramientas** > **Opciones** > **Prueba**.
+Compile el proyecto y asegúrese de que está activada la detección basada en ensamblados en **Herramientas** > **Opciones** > **Prueba**.
 
-  La [detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824) es la detección de pruebas basada en el origen. No puede detectar las pruebas que usan teorías, adaptadores personalizados, rasgos personalizados, instrucciones `#ifdef`, etc. porque ya están definidas en tiempo de ejecución. Se requiere una compilación para que estas pruebas se puedan detectar con precisión. En las versiones 15.6 y posteriores de Visual Studio 2017, la detección basada en ensamblados (el detector tradicional) se ejecuta solo tras las compilaciones. Esta opción significa que la detección de pruebas en tiempo real detecta tantas pruebas como sea posible mientras está editando, y la detección basada en ensamblados permite que aparezcan pruebas definidas dinámicamente después de una compilación. La detección de pruebas en tiempo real mejora la capacidad de respuesta, pero sigue permitiendo la obtención de resultados completos y precisos tras una compilación.
+La [detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824) es la detección de pruebas basada en el origen. No puede detectar las pruebas que usan teorías, adaptadores personalizados, rasgos personalizados, instrucciones `#ifdef`, etc. porque ya están definidas en tiempo de ejecución. Se requiere una compilación para que estas pruebas se puedan detectar con precisión. En las versiones 15.6 y posteriores de Visual Studio 2017, la detección basada en ensamblados (el detector tradicional) se ejecuta solo tras las compilaciones. Esta opción significa que la detección de pruebas en tiempo real detecta tantas pruebas como sea posible mientras está editando, y la detección basada en ensamblados permite que aparezcan pruebas definidas dinámicamente después de una compilación. La detección de pruebas en tiempo real mejora la capacidad de respuesta, pero sigue permitiendo la obtención de resultados completos y precisos tras una compilación.
 
 ## <a name="test-explorer--plus-symbol"></a>Signo "+" (más) en el Explorador de pruebas
 
 **¿Qué significa el signo "+" (más) que aparece en la línea superior del Explorador de pruebas?**
 
-  El signo "+" (más) indica que se pueden detectar más pruebas después de una compilación siempre y cuando la detección basada en ensamblados esté activada. Este símbolo aparece si se detectan pruebas definidas dinámicamente en el proyecto.
+El signo "+" (más) indica que se pueden detectar más pruebas después de una compilación siempre y cuando la detección basada en ensamblados esté activada. Este símbolo aparece si se detectan pruebas definidas dinámicamente en el proyecto.
 
-  ![Línea de resumen del signo más](media/testex-plussymbol.png)
+![Línea de resumen del signo más](media/testex-plussymbol.png)
 
 ## <a name="assembly-based-discovery"></a>Detección basada en ensamblados
 
 **La detección basada en ensamblados ha dejado de funcionar en mi proyecto. ¿Cómo puedo volver a activarla?**
 
-  Vaya a **Herramientas** > **Opciones** > **Prueba** y active la casilla **Detectar también las pruebas de los ensamblados compilados después de las compilaciones**.
+Vaya a **Herramientas** > **Opciones** > **Prueba** y active la casilla **Detectar también las pruebas de los ensamblados compilados después de las compilaciones**.
 
-  ![Opción basada en ensamblados](media/testex-toolsoptions.png)
+![Opción basada en ensamblados](media/testex-toolsoptions.png)
 
 ## <a name="real-time-test-discovery"></a>Detección de pruebas en tiempo real
 
 **Ahora aparecen pruebas en el Explorador de pruebas mientras escribo, sin tener que compilar el proyecto. ¿Qué ha cambiado?**
 
-  Esta característica se denomina [Detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824). Usa un analizador de Roslyn para detectar pruebas y rellenar el Explorador de pruebas en tiempo real sin necesidad de que se compile el proyecto. Vea la pregunta frecuente n.º 1 para obtener más información sobre el comportamiento de la detección de pruebas en las pruebas definidas dinámicamente, como teorías o rasgos personalizados.
+Esta característica se denomina [Detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824). Usa un analizador de Roslyn para detectar pruebas y rellenar el Explorador de pruebas en tiempo real sin necesidad de que se compile el proyecto. Vea la pregunta frecuente n.º 1 para obtener más información sobre el comportamiento de la detección de pruebas en las pruebas definidas dinámicamente, como teorías o rasgos personalizados.
 
 ## <a name="real-time-test-discovery-compatibility"></a>Compatibilidad de la detección de pruebas en tiempo real
 
 **¿Los lenguajes y marcos de pruebas pueden utilizar la detección de pruebas en tiempo real?**
 
-  La [detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824) solo funciona con los lenguajes administrados (C# y Visual Basic), porque se ha compilado mediante el compilador Roslyn. Por ahora, la detección de pruebas en tiempo real solo funciona con los marcos xUnit, NUnit y MSTest.
+La [detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824) solo funciona con los lenguajes administrados (C# y Visual Basic), porque se ha compilado mediante el compilador Roslyn. Por ahora, la detección de pruebas en tiempo real solo funciona con los marcos xUnit, NUnit y MSTest.
 
 ## <a name="test-explorer-logs"></a>Registros del Explorador de pruebas
 
 **¿Cómo puedo activar los registros del Explorador de pruebas?**
 
-  Vaya a **Herramientas** > **Opciones** > **Prueba** y busque ahí la sección Registro.
+Vaya a **Herramientas** > **Opciones** > **Prueba** y busque ahí la sección Registro.
 
 ## <a name="uwp-test-discovery"></a>Detección de pruebas de UWP
 
 **¿Por qué las pruebas de los proyectos de UWP no se detectan hasta que implemento la aplicación?**
 
-  Las pruebas de UWP tienen como destino un tiempo de ejecución distinto cuando la aplicación se implementa. Esto significa que, para detectar las pruebas de proyectos de UWP de forma precisa, no solo debe compilar el proyecto, sino también implementarlo.
+Las pruebas de UWP tienen como destino un tiempo de ejecución distinto cuando la aplicación se implementa. Esto significa que, para detectar las pruebas de proyectos de UWP de forma precisa, no solo debe compilar el proyecto, sino también implementarlo.
 
 ## <a name="test-explorer-sorting"></a>Ordenación del Explorador de pruebas
 
 **¿Cómo funciona la ordenación de los resultados de las pruebas en la vista de jerarquía?**
 
-  En la vista de jerarquía, las pruebas se ordenan alfabéticamente, y no por su resultado. Normalmente, la otra configuración de agrupamiento suele ordenar las pruebas por resultados y, después, alfabéticamente. Vea los diferentes grupos por opciones en la imagen siguiente para establecer comparaciones. Puede dejar sus comentarios sobre el diseño [en este problema de GitHub](https://github.com/Microsoft/vstest/issues/1425).
+En la vista de jerarquía, las pruebas se ordenan alfabéticamente, y no por su resultado. Normalmente, la otra configuración de agrupamiento suele ordenar las pruebas por resultados y, después, alfabéticamente. Vea los diferentes grupos por opciones en la imagen siguiente para establecer comparaciones. Puede dejar sus comentarios sobre el diseño [en este problema de GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
-  ![Ejemplos de ordenación](media/testex-sortingex.png)
+![Ejemplos de ordenación](media/testex-sortingex.png)
 
 ## <a name="test-explorer-hierarchy-view"></a>Vista de jerarquía del Explorador de pruebas
 
 **En la vista de jerarquía, hay iconos de pasados, con errores, omitidos y no ejecutados junto a los grupos Proyecto, Espacio de nombres y Clase. ¿Qué significan estos iconos?**
 
-  Los iconos situados junto a los grupos Proyecto, Espacio de nombres y Clase reflejan el estado de las pruebas de ese grupo. Vea la siguiente tabla.
+Los iconos situados junto a los grupos Proyecto, Espacio de nombres y Clase reflejan el estado de las pruebas de ese grupo. Vea la siguiente tabla.
 
-  ![Iconos de jerarquía del Explorador de pruebas](media/testex-hierarchyicons.png)
+![Iconos de jerarquía del Explorador de pruebas](media/testex-hierarchyicons.png)
 
 ## <a name="search-by-file-path"></a>Búsqueda por ruta de acceso de archivo
 
 **Ya no hay un filtro "Ruta de acceso de archivo" en el cuadro de búsqueda del Explorador de pruebas.**
 
-El filtro de ruta de acceso de archivo en el cuadro de búsqueda **Explorador de pruebas** se quitó en Visual Studio de 2017, versión 15.7 y presentación preliminar 3. Esta característica se usaba poco y el Explorador de pruebas puede recuperar los métodos de prueba más rápido al excluirla. Si este cambio interrumpe el flujo de desarrollo, háganoslo saber enviando sus comentarios a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
+El filtro de ruta de acceso de archivo del cuadro de búsqueda **Explorador de pruebas** se ha quitado en Visual Studio de 2017 versión 15.7. Esta característica se usaba poco y el Explorador de pruebas puede recuperar los métodos de prueba más rápido al excluirla. Si este cambio interrumpe el flujo de desarrollo, háganoslo saber enviando sus comentarios a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
 
 ## <a name="remove-undocumented-interfaces"></a>Eliminación de interfaces no documentadas
 
@@ -112,11 +112,11 @@ En lugar de usar las extensiones del adaptador de prueba, los proyectos deben us
 > [!NOTE]
 > Si usa NUnit 2 Test Adapter y no puede migrar a NUnit 3 Test Adapter, puede desactivar este nuevo comportamiento de detección en la versión 15.8 de Visual Studio en **Herramientas** > **Opciones** > **Prueba**.
 
-  ![Comportamiento del adaptador de explorador de pruebas en las opciones de las herramientas](media/testex-adapterbehavior.png)
+![Comportamiento del adaptador de explorador de pruebas en las opciones de las herramientas](media/testex-adapterbehavior.png)
 
 ## <a name="uwp-testcontainer-was-not-found"></a>No se encuentra TestContainer de UWP
 
-**Ya no se ejecutan mis pruebas de UWP en Visual Studio 2017 versión 15.7 o posterior.**
+**Ya no se ejecutan las pruebas de UWP en Visual Studio 2017 versión 15.7 y posteriores.**
 
 Los proyectos de prueba recientes de UWP especifican una propiedad de compilación de plataforma de prueba que permite un mejor rendimiento para identificar las aplicaciones de prueba. Si tiene un proyecto de prueba de UWP que se haya inicializado antes de Visual Studio versión 15.7, puede ver este error en **Salida** > **Pruebas**:
 

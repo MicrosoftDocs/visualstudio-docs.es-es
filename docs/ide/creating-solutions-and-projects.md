@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e4652bb6a0ea1ec138138e6966ab005362a45d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937531"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223252"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -53,7 +53,7 @@ Aun así, no hacen falta soluciones ni proyectos para desarrollar aplicaciones e
    ![Cuadro de diálogo Nuevo proyecto](./media/vside-newproject-templates-list.png)
 
    > [!NOTE]
-   > La lista de lenguajes y plantillas de proyecto disponibles que aparece depende de la versión de Visual Studio que se ejecute y de las cargas de trabajo que estén instaladas. Para obtener información sobre cómo instalar cargas de trabajo adicionales, vea [Modificación de Visual Studio 2017 mediante la incorporación o la eliminación de cargas de trabajo y componentes](../install/modify-visual-studio.md).
+   > La lista de lenguajes y plantillas de proyecto disponibles que aparece depende de la versión de Visual Studio que se ejecute y de las cargas de trabajo que estén instaladas. Para obtener información sobre cómo instalar otras cargas de trabajo, vea [Modificación de Visual Studio mediante la incorporación o la eliminación de cargas de trabajo y componentes](../install/modify-visual-studio.md).
 
 2. Muestre la lista de plantillas del lenguaje de programación que quiera usar. Para ello, seleccione el triángulo situado junto al nombre de lenguaje y, después, elija un tipo de proyecto.
 

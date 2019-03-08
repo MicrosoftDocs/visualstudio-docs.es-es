@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8464ecd96234511017953b6bc0dce7fabdef810b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 7cdf118ef901e607d24609e521325e27b90d345b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796737"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222019"
 ---
 # <a name="introducing-live-unit-testing"></a>Presentación de Live Unit Testing
 
-Live Unit Testing es una tecnología disponible en Visual Studio 2017 versión 15.3 que ejecuta las pruebas unitarias automáticamente en tiempo real cuando se realizan cambios en el código. Live Unit Testing:
+Live Unit Testing es una tecnología que se presentó en Visual Studio 2017. Ejecuta las pruebas unitarias automáticamente en tiempo real a medida que se realizan cambios de código. Live Unit Testing:
 
 - Le permite refactorizar y cambiar código con mayor confianza. Live Unit Testing ejecuta automáticamente todas las pruebas afectadas mientras se edita el código para asegurarse de que los cambios no interrumpen las pruebas.
 
@@ -31,7 +31,7 @@ Para obtener más información sobre Live Unit Testing:
 
 - Pruebe el tutorial de introducción, [Get started with Live Unit Testing in Visual Studio](live-unit-testing-start.md) (Introducción a Live Unit Testing en Visual Studio).
 
-- Lea la documentación detallada contenida en [Live Unit Testing con Visual Studio 2017 Enterprise Edition](live-unit-testing.md).
+- Lea la documentación detallada, [Live Unit Testing con Visual Studio Enterprise Edition](live-unit-testing.md).
 
 - Lea las [Preguntas más frecuentes sobre Live Unit Testing](live-unit-testing-faq.md) para conocer las novedades de Live Unit Testing y obtener información sobre sugerencias y técnicas para el uso de Live Unit Testing.
 
@@ -40,5 +40,6 @@ Para obtener más información sobre Live Unit Testing:
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>Recursos relacionados
+
 - [Herramientas de pruebas de código](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Haga una prueba unitaria de su código](unit-test-your-code.md)

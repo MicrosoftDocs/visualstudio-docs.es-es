@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0869dcaccbd5f0b13661738a1d923758513aeb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935113"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222914"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -258,7 +258,17 @@ Para ejecutar pruebas desde la línea de comandos, utilice *vstest.console.exe*.
 
 1. Inicie el Símbolo del sistema para desarrolladores de Visual Studio:
 
+   ::: moniker range="vs-2017"
+
    En el menú **Inicio** de Windows, elija **Visual Studio 2017** > **Símbolo del sistema para desarrolladores de VS 2017**.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   En el menú **Inicio** de Windows, elija **Visual Studio 2019** > **Símbolo del sistema para desarrolladores de VS 2019**.
+
+   ::: moniker-end
 
 2. En el símbolo del sistema, ejecute el siguiente comando:
 

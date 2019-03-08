@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a54f18e6e69fd71f1d46205903728a909c668383
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935724"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222066"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 
@@ -106,11 +106,21 @@ Puede compartir los métodos abreviados de teclado personalizados exportándolos
 
 4. Active la casilla **Teclado** y elija el botón **Siguiente**.
 
-    ![Exportar solo los métodos abreviados de teclado personalizados](../ide/media/exportshortcuts.png)
+   ![Exportar solo los métodos abreviados de teclado personalizados](../ide/media/exportshortcuts.png)
 
 5. En los cuadros **¿Qué nombre desea dar al archivo de configuración?** y **Almacenar mi archivo de configuración en este directorio**, deje los valores predeterminados o especifique otros diferentes y elija el botón **Finalizar**.
 
-    Los métodos abreviados se guardan de forma predeterminada en un archivo de la carpeta *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. El nombre del archivo indica la fecha en la que se ha exportado la configuración y la extensión es *.vssettings*.
+::: moniker range="vs-2017"
+
+Los métodos abreviados se guardan de forma predeterminada en un archivo de la carpeta *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. El nombre del archivo indica la fecha en la que se ha exportado la configuración y la extensión es *.vssettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+De forma predeterminada, los accesos directos se guardan en un archivo de la carpeta *%USERPROFILE%\Documents\Visual Studio 2019\Settings*. El nombre del archivo indica la fecha en la que se ha exportado la configuración y la extensión es *.vssettings*.
+
+::: moniker-end
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Para importar solo métodos abreviados de teclado
 

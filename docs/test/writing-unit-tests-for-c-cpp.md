@@ -7,12 +7,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926793"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223066"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -30,11 +30,11 @@ Visual Studio incluye estos marcos de pruebas de C++ sin que sea preciso descarg
 
 Además de los marcos instalados, puede escribir su propio adaptador de prueba para cualquier marco de trabajo que quiera usar en Visual Studio. Un adaptador de prueba puede integrar pruebas unitarias con la ventana **Explorador de pruebas**. En [Visual Studio Marketplace](https://marketplace.visualstudio.com) hay disponibles varios adaptadores de terceros. Para más información, vea [Instalar marcos de prueba unitaria de terceros](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 versión 15.7 (Professional y Enterprise)**
+**Visual Studio 2017 versión 15.7 y posteriores (Professional y Enterprise)**
 
 Los proyectos de prueba unitaria de C++ admiten [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017, versión 15.5**
+**Visual Studio 2017 versión 15.5 y posteriores**
 
 - **Google Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++**. Tiene una plantilla de proyecto que se puede agregar a una solución mediante el menú contextual **Agregar nuevo proyecto** del nodo de solución en el **Explorador de soluciones**, así como opciones que se pueden configurar mediante **Herramientas** > **Opciones**. Para más información, vea [Cómo usar Google Test para C++ en Visual Studio](how-to-use-google-test-for-cpp.md).
 
@@ -117,7 +117,9 @@ Para ver procedimientos recomendados relativos a las pruebas unitarias, vea [Con
 
 ## <a name="use-codelens"></a>Uso de CodeLens
 
-**Visual Studio 2017 versión 15.7 (solo las ediciones Professional y Enterprise)**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) permite ver rápidamente el estado de una prueba unitaria sin salir del editor de código. Puede inicializar CodeLens para un proyecto de prueba unitaria de C++ de cualquiera de las siguientes maneras:
+**Visual Studio 2017 versión 15.7 y posteriores (solo ediciones Professional y Enterprise)**
+
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) permite ver rápidamente el estado de una prueba unitaria sin salir del editor de código. Puede inicializar CodeLens para un proyecto de prueba unitaria de C++ de cualquiera de las siguientes maneras:
 
 - Editar y compilar el proyecto de prueba o la solución.
 - Recompilar el proyecto o la solución.
@@ -127,10 +129,10 @@ Después de que **CodeLens** se inicialice, puede ver los iconos de estado de pr
 
 ![Iconos de CodeLens en C++](media/cpp-test-codelens-icons.png)
 
- Haga clic en el icono para más información o para ejecutar o depurar la prueba unitaria:
+Haga clic en el icono para más información o para ejecutar o depurar la prueba unitaria:
 
 ![Ejecución y depuración de CodeLens en C++](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Vea también
 
-[Haga una prueba unitaria de su código](unit-test-your-code.md)
+- [Haga una prueba unitaria de su código](unit-test-your-code.md)
