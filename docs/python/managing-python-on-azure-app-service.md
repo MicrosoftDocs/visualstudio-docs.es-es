@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f68f12578ea7b5148aa018c21e14c334c33ad9a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c0f0cdb6c1807aa8ce0a30e7371fe8ad4270ca7b
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918928"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324187"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Configuración de un entorno de Python en Azure App Service (Windows)
 
@@ -76,7 +76,7 @@ Por ejemplo, después de agregar una referencia a `python361x64` (Python 3.6.1 x
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Configuración de web.config para que apunte al intérprete de Python
 
-Después de instalar la extensión de sitio (a través del portal o de una plantilla de Azure Resource Manager), lo siguiente es hacer que el archivo *web.config* de la aplicación apunte al intérprete de Python. El archivo *web.config* indica al servidor web de IIS (7+) que se ejecuta en App Service el modo en que debe administrar las solicitudes de Python a través de FastCGI o HttpPlatform.
+Después de instalar la extensión de sitio (a través del portal o de una plantilla de Azure Resource Manager), lo siguiente es hacer que el archivo *web.config* de la aplicación apunte al intérprete de Python. El archivo *web.config* indica al servidor web de IIS (7+) que se ejecuta en App Service el modo en que debe administrar las solicitudes de Python a través de FastCGI o HttpPlatform (recomendado).
 
 Empiece buscando la ruta de acceso completa a *python.exe* de la extensión de sitio y, luego, cree y modifique el archivo *web.config* correspondiente.
 
@@ -97,6 +97,33 @@ Si tiene problemas para ver la ruta de acceso de la extensión, la puede encontr
 1. En la página de App Service, seleccione **Herramientas de desarrollo** > **Consola**.
 1. Escriba el comando `ls ../home` o `dir ..\home` para ver las carpetas de extensión de nivel superior, como *Python361x64*.
 1. Escriba un comando como `ls ../home/python361x64` o `dir ..\home\python361x64` para confirmar que esa carpeta contiene *python.exe* y otros archivos de intérprete.
+
+### <a name="configure-the-httpplatform-handler"></a>Configuración del controlador de HttpPlatform
+
+El módulo HttpPlatform pasa conexiones de socket directamente a un proceso de Python independiente. Ese paso a través le permite ejecutar cualquier servidor web que quiera, pero necesita un script de inicio que ejecute un servidor web local. Especifique el script en el elemento `<httpPlatform>` de *web.config*, donde el atributo `processPath` apunta al intérprete de Python de la extensión de sitio y el atributo `arguments`, a su script y a cualquier argumento que quiera proporcionar:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
+    </handlers>
+    <httpPlatform processPath="D:\home\Python361x64\python.exe"
+                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
+                  stdoutLogEnabled="true"
+                  stdoutLogFile="D:\home\LogFiles\python.log"
+                  startupTimeLimit="60"
+                  processesPerApplication="16">
+      <environmentVariables>
+        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
+      </environmentVariables>
+    </httpPlatform>
+  </system.webServer>
+</configuration>
+```
+
+La variable de entorno `HTTP_PLATFORM_PORT` que se muestra aquí contiene el puerto en el que debe escuchar su servidor local para las conexiones del localhost. Este ejemplo también muestra cómo crear otra variable de entorno (si se quiere), que en este caso es `SERVER_PORT`.
 
 ### <a name="configure-the-fastcgi-handler"></a>Configuración del controlador FastCGI
 
@@ -128,33 +155,6 @@ Los valores de `<appSettings>` aquí definidos están disponibles para la aplica
 - `WSGI_LOG` es opcional, pero es recomendable para depurar la aplicación.
 
 Vea [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) para obtener más detalles sobre el contenido de *web.config* para las aplicaciones web de Bottle, Flask y Django.
-
-### <a name="configure-the-httpplatform-handler"></a>Configuración del controlador de HttpPlatform
-
-El módulo HttpPlatform pasa conexiones de socket directamente a un proceso de Python independiente. Ese paso a través le permite ejecutar cualquier servidor web que quiera, pero necesita un script de inicio que ejecute un servidor web local. Especifique el script en el elemento `<httpPlatform>` de *web.config*, donde el atributo `processPath` apunta al intérprete de Python de la extensión de sitio y el atributo `arguments`, a su script y a cualquier argumento que quiera proporcionar:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
-    </handlers>
-    <httpPlatform processPath="D:\home\Python361x64\python.exe"
-                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
-                  stdoutLogEnabled="true"
-                  stdoutLogFile="D:\home\LogFiles\python.log"
-                  startupTimeLimit="60"
-                  processesPerApplication="16">
-      <environmentVariables>
-        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
-      </environmentVariables>
-    </httpPlatform>
-  </system.webServer>
-</configuration>
-```
-
-La variable de entorno `HTTP_PLATFORM_PORT` que se muestra aquí contiene el puerto en el que debe escuchar su servidor local para las conexiones del localhost. Este ejemplo también muestra cómo crear otra variable de entorno (si se quiere), que en este caso es `SERVER_PORT`.
 
 ## <a name="install-packages"></a>Instalar paquetes
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696745"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428692"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -77,7 +77,7 @@ En el depurador, mantenga el puntero sobre una línea de código hasta que el bo
 ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click-2.png "Run to click")
 
 > [!NOTE]
-> El botón **Ejecutar hasta clic** (ejecutar hasta aquí) es nuevo en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> El botón **Ejecutar hasta clic** (Ejecutar hasta aquí) está disponible a partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Haga clic en el botón **Ejecutar hasta clic** (ejecutar hasta aquí). El depurador avanza hasta la línea de código donde se ha hecho clic.
 
@@ -188,7 +188,7 @@ En este ejemplo, la llamada a `DirectoryInfo` ha producido el error en la cadena
 El Asistente de excepciones es una característica excelente que puede ayudar a depurar errores. También se pueden hacer cosas como ver detalles de errores y agregar una inspección desde el Asistente de excepciones. O bien, si fuera necesario, se pueden cambiar las condiciones para producir la excepción concreta. Para más información sobre cómo controlar las excepciones en el código, vea [Técnicas y herramientas de depuración](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> El Asistente de excepciones reemplaza al de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> El Asistente de excepciones ha reemplazado al de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda el nodo **Configuración de excepciones** para ver más opciones para controlar este tipo de excepción sin necesidad de cambiar nada de este paseo.
 

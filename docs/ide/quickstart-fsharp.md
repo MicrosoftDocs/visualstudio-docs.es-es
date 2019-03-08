@@ -11,14 +11,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 166ff1fae5cbc494fe287a47a2983fc52364493b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934671"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323282"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Inicio rápido: Usar Visual Studio para crear su primer servicio web de ASP.NET Core en F#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Inicio rápido: Usar Visual Studio para crear el primer servicio web de ASP.NET Core en F\#
 
 En esta introducción a F# en Visual Studio de unos 5 a 10 minutos, creará una aplicación web de ASP.NET Core en F#.
 
@@ -28,7 +28,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 Primero creará un proyecto de API web de ASP.NET Core. En el tipo de proyecto se incluyen los archivos de plantilla, que constituyen un servicio web funcional por sí mismos, sin necesidad de agregar nada más.
 
-1. Abra Visual Studio 2017.
+1. Abra Visual Studio.
 
 2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 

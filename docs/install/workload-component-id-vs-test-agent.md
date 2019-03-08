@@ -1,61 +1,46 @@
 ---
-title: Identificadores de componente y carga de trabajo de Visual Studio Test Agent 2017
+title: Identificadores de componente y carga de trabajo de Visual Studio Test Agent
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para ejecutar pruebas automatizadas y pruebas de carga de manera remota
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
-ms.workload:
-- multiple
-ms.openlocfilehash: 95fad33bfe21546e0e5ecbbab4e1259505941eec
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: c6d7582a34b4e91607b076275c8b254591f0ab89
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841044"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323136"
 ---
-# <a name="visual-studio-test-agent-2017-component-directory"></a>Directorio de componentes de Visual Studio Test Agent 2017
+# <a name="visual-studio-test-agent-component-directory"></a>Directorio de componentes de Visual Studio Test Agent
 
-Las tablas de esta página presentan los identificadores que puede usar para instalar Visual Studio mediante la línea de comandos o que puede especificar como una dependencia en un manifiesto VSIX. Tenga en cuenta que agregaremos componentes adicionales a medida que se publiquen actualizaciones de Visual Studio.
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-Tenga en cuenta también lo siguiente sobre la página:
+::: moniker range="vs-2017"
 
-* Cada carga de trabajo tiene su propia sección, seguida por el identificador de la carga de trabajo y una tabla de los componentes que están disponibles para la carga de trabajo.
-* De forma predeterminada, los componentes con carácter **Obligatorio** se instalarán cuando se instala la carga de trabajo.
-* Si lo desea, también puede instalar los componentes con la marca **Recomendado** y **Opcional**.
-* También hemos agregado una sección que muestra los componentes adicionales que no están asociados a ninguna carga de trabajo.
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, vea la página [Cómo: Migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+[!include[Visual Studio Test Agent 2017](includes/vs-2017/workload-component-id-vs-test-agent.md)]
 
-Para obtener más información acerca de cómo utilizar estos identificadores, vea [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Y, para obtener una lista de los identificadores de componente y carga de trabajo para otros productos, consulte la página [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) (Identificadores de componente y carga de trabajo de Visual Studio 2017).
+::: moniker-end
 
-## <a name="test-agent"></a>Test Agent
+::: moniker range=">= vs-2019"
 
-**ID:** Microsoft.VisualStudio.Workload.TestAgent
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**Descripción:** Admite la ejecución de pruebas automatizadas y la carga de pruebas de manera remota
+[!include[Visual Studio Test Agent 2019](includes/vs-2019/workload-component-id-vs-test-agent.md)]
 
-### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
-
-Id. de componente | nombre | Versión | Tipo de dependencia
---- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Características principales de Test Agent | 15.0.27019.1 | Obligatorio
-
-## <a name="unaffiliated-components"></a>Componentes no afiliados
-
-Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
-
-Id. de componente | nombre | Versión
---- | --- | ---
-N/D | N/D | N/D
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

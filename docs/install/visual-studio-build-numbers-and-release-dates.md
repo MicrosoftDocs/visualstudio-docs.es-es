@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: fceccbc77b2999124e1d2af50a53cfd044556312
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4b251a2eb53d37260cf44613c2cc0cf279f0041a
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317996"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954139"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -171,13 +171,15 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 | 15.1 (versión preliminar 1) | Vista previa | 7 de marzo de 2017 | 15.0.26304.0 |
 | 15.0.0 | Release | 7 de marzo de 2017 | 15.0.26228.4 |
 
-## <a name="visual-studio-2019-preview"></a>Visual Studio 2019 Preview
+## <a name="visual-studio-2019"></a>Visual Studio 2019
 
-En la tabla siguiente se enumeran los números de compilación y las fechas de lanzamiento de Visual Studio 2019 Preview, hasta la fecha.
+En la tabla siguiente se enumeran los números de compilación y las fechas de versión de Visual Studio 2019 hasta la fecha.
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.0.0 | Preview 3 | 13 de febrero de 2019 | 16.0.28608.199 |
+| 16.0.0 | Versión candidata para lanzamiento (RC) | 27 de febrero de 2019 | 16.0.28625.133 |
+| 16.0.0 | Versión preliminar 4 | 27 de febrero de 2019 | 16.0.28625.133 |
+| 16.0.0 | Versión preliminar 3 | 13 de febrero de 2019 | 16.0.28608.199 |
 | 16.0.0 | Versión preliminar 2.2 | 5 de febrero de 2019 | 16.0.28602.52 |
 | 16.0.0 | Versión preliminar 2.1 | 31 de enero de 2019 | 16.0.28529.54 |
 | 16.0.0 | Preview 2 | 23 de enero de 2019 | 16.0.28522.59 |

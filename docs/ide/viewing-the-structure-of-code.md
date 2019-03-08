@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926377"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323872"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualización de la estructura del código mediante distintas ventanas de herramienta
 
@@ -126,7 +126,19 @@ El menú contextual de la ventana **Jerarquía de llamadas** contiene los siguie
 
 La ventana del **Examinador de objetos** muestra descripciones del código en sus proyectos.
 
-Puede filtrar los componentes que desee ver mediante el uso de la lista desplegable en la parte superior de la ventana. Los componentes personalizados pueden incluir archivos ejecutables de código administrado, ensamblados de biblioteca, bibliotecas de tipo y archivos *.ocx*. No es posible agregar componentes personalizados de C++. La configuración personalizada se guarda en el directorio de aplicaciones de usuario de Visual Studio, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+Puede filtrar los componentes que desee ver mediante el uso de la lista desplegable en la parte superior de la ventana. Los componentes personalizados pueden incluir archivos ejecutables de código administrado, ensamblados de biblioteca, bibliotecas de tipo y archivos *.ocx*. No es posible agregar componentes personalizados de C++.
+
+::: moniker range="vs-2017"
+
+La configuración personalizada se guarda en el directorio de aplicaciones de usuario de Visual Studio, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+La configuración personalizada se guarda en el directorio de aplicaciones de usuario de Visual Studio, *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
+
+::: moniker-end
 
 El panel izquierdo del **Examinador de objetos** muestra los ensamblados. Puede expandir los ensamblados para mostrar los espacios de nombres que contengan y, a continuación, expandir los espacios de nombres para mostrar los tipos que contengan. Cuando se selecciona un tipo, sus miembros (como es el caso de las propiedades y los métodos) se enumeran en el panel derecho. El panel inferior derecho muestra información detallada acerca del elemento seleccionado.
 

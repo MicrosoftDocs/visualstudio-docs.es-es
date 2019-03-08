@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55cff84a4633b3b59d8167c0f460cbd96a98f04c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912747"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223031"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes y controladores de pruebas
 
@@ -24,7 +24,7 @@ También considere la posibilidad de si mejor [usar Build o Release Management e
 
 ## <a name="system-requirements"></a>Requisitos del sistema
 
-En la siguiente tabla se muestran los requisitos del sistema para instalar el controlador de pruebas o el agente de pruebas para Visual Studio 2017:
+En la siguiente tabla se muestran los requisitos del sistema para instalar el controlador de pruebas o el agente de pruebas para Visual Studio:
 
 | Elemento | Requisitos |
 | ---- | ------------ |
@@ -34,7 +34,7 @@ En la siguiente tabla se muestran los requisitos del sistema para instalar el co
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Instalación del controlador de pruebas y agentes de prueba
 
-Puede descargar agentes de Visual Studio 2017 desde [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Busque *Agentes para Visual Studio 2017*, seleccione *Agente* o *Controlador* y elija *Descargar*. Ejecute el archivo ejecutable descargado para instalar el controlador o el agente de prueba.
+Puede descargar agentes de Visual Studio desde [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Busque *Agentes para Visual Studio 2017*, seleccione *Agente* o *Controlador* y elija *Descargar*. Ejecute el archivo ejecutable descargado para instalar el controlador o el agente de prueba.
 
 Puede descargar agentes de Visual Studio 2015 y Visual Studio 2013 desde la página de [descargas anterior](https://visualstudio.microsoft.com/vs/older-downloads/).
 

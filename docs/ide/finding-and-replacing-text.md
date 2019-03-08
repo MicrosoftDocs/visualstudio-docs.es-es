@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5fc437d1365fe58c8eb7ae725196c4ad3370836
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937453"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323740"
 ---
 # <a name="find-and-replace-text"></a>Buscar y reemplazar texto
 
-Puede buscar y reemplazar texto en el editor de Visual Studio mediante [Buscar y reemplazar](#find-and-replace-control) o [Find/Replace in Files (Buscar/Reemplazar en archivos)](#find-in-files-and-replace-in-files). Una novedad de Visual Studio 2017 versión 15.8 es que se pueden buscar y reemplazar *algunas* instancias de un patrón mediante la *[selección de varios símbolos de inserción](#multi-caret-selection)*.
+Puede buscar y reemplazar texto en el editor de Visual Studio mediante [Buscar y reemplazar](#find-and-replace-control) (**Ctrl**+**F** o **Ctrl**+**H**) o [Find/Replace in Files](#find-in-files-and-replace-in-files) (Buscar/Reemplazar en archivos) (**Ctrl**+**Mayús**+**F** o **Ctrl**+**Mayús**+**H**). También puede buscar y reemplazar solo *algunas* instancias de un patrón mediante la *[selección de varios símbolos de inserción](#multi-caret-selection)*.
 
 > [!TIP]
 > Si está cambiando el nombre de símbolos de código, como variables y métodos, es mejor que los *[refactorice](../ide/reference/rename.md)*  en lugar de usar Buscar y reemplazar. La refactorización es inteligente y entiende el ámbito, mientras que Buscar y reemplazar reemplaza de forma automática todas las instancias.
@@ -53,7 +53,10 @@ Puede definir el ámbito de las búsquedas en el documento actual, en la soluci�
 
 ## <a name="find-and-replace-control"></a>Control Buscar y reemplazar
 
-El control **Buscar y reemplazar** aparece en la esquina superior derecha de la ventana del editor de código. El control **Buscar y reemplazar** resalta inmediatamente cada aparición de la cadena de búsqueda determinada en el documento actual. Puede ir de una aparición a otra pulsando el botón **Buscar siguiente** o en el botón **Buscar anterior** en el control de búsqueda.
+- Presione **Ctrl**+**F** como acceso directo para *buscar* una cadena en el archivo actual.
+- Presione **Ctrl**+**H** como acceso directo para *buscar y reemplazar* una cadena en el archivo actual.
+
+El control **Buscar y reemplazar** aparece en la esquina superior derecha de la ventana del editor de código. Resalta inmediatamente cada aparición de la cadena de búsqueda determinada en el documento actual. Puede ir de una aparición a otra pulsando el botón **Buscar siguiente** o en el botón **Buscar anterior** en el control de búsqueda.
 
 ![Buscar y reemplazar en Visual Studio](media/find-and-replace-box.png)
 
@@ -69,7 +72,10 @@ También está disponible una versión del control **Buscar** en algunas ventana
 
 ## <a name="find-in-files-and-replace-in-files"></a>Buscar en archivos y reemplazar en archivos
 
-**Buscar y reemplazar en archivos** funciona como el control **Buscar y reemplazar**, excepto que puede definir un ámbito para la búsqueda. No solo puede buscar el archivo abierto actual en el editor, sino que también todos los documentos abiertos, la solución completa, el proyecto actual y los conjuntos de carpetas seleccionados. También puede buscar mediante la extensión del nombre de archivo. Para tener acceso al cuadro de diálogo **Buscar y reemplazar en archivos**, seleccione **Buscar y reemplazar** en el menú **Edición** o presione **Ctrl+Mayús+F**.
+- Presione **Ctrl**+**Mayús**+**F** como acceso directo para *buscar* una cadena en varios archivos.
+- Presione **Ctrl**+**Mayús**+**H** como acceso directo para *buscar y reemplazar* una cadena en varios archivos.
+
+**Buscar y reemplazar en archivos** funciona como el control **Buscar y reemplazar**, excepto que puede definir un ámbito para la búsqueda. No solo puede buscar el archivo abierto actual en el editor, sino que también todos los documentos abiertos, la solución completa, el proyecto actual y los conjuntos de carpetas seleccionados. También puede buscar mediante la extensión del nombre de archivo. Para acceder al cuadro de diálogo **Find/Replace in Files** (Buscar/Reemplazar en archivos), seleccione **Buscar y reemplazar** en el menú **Edición** (o presione **Ctrl**+**Mayús**+**F**).
 
 ![Buscar archivos en Visual Studio](media/find-in-files-box.png)
 
@@ -93,7 +99,7 @@ Puede definir conjuntos de componentes como su ámbito de búsqueda pulsando el 
 > [!NOTE]
 > Esta sección se aplica a Visual Studio en Windows. En el caso de Visual Studio para Mac, vea [Selección de bloques](/visualstudio/mac/block-selection).
 
-**Novedad de Visual Studio 2017 versión 15.8**
+**Presentado en Visual Studio 2017 versión 15.8**
 
 Puede usar la *selección de varios símbolos de inserción* para realizar la misma edición en dos o más lugares al mismo tiempo. Por ejemplo, puede insertar el mismo texto o modificar el texto existente en varias ubicaciones al mismo tiempo.
 

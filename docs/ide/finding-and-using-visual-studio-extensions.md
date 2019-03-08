@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1033eb38b10eaaf85a20eedf0a8260654a793962
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919747"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222758"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Búsqueda y uso de extensiones de Visual Studio
 
@@ -61,9 +61,9 @@ Si desea deshabilitar las actualizaciones automáticas, puede deshabilitar la ca
 
 ## <a name="extension-crash-and-unresponsiveness-notifications"></a>Notificaciones de bloqueo y falta de respuesta de una extensión
 
-Como novedad en **Visual Studio 2017 (versión 15.3)**, Visual Studio le notifica si sospecha que una extensión estaba implicada en un bloqueo durante una sesión anterior. Cuando Visual Studio se bloquea, almacena la pila de excepciones. La próxima vez que Visual Studio se inicia, examina la pila, comenzando por la hoja y dirigiéndose a la base. Si Visual Studio determina que un marco pertenece a un módulo que forma parte de una extensión habilitada e instalada, muestra una notificación.
+Visual Studio avisa si sospecha que una extensión ha estado implicada en un bloqueo durante una sesión anterior. Cuando Visual Studio se bloquea, almacena la pila de excepciones. La próxima vez que Visual Studio se inicia, examina la pila, comenzando por la hoja y dirigiéndose a la base. Si Visual Studio determina que un marco pertenece a un módulo que forma parte de una extensión habilitada e instalada, muestra una notificación.
 
-Como novedad en **Visual Studio 2017, versión 15.6**, Visual Studio también le notifica si sospecha que una extensión está causando la falta de respuesta de la interfaz de usuario.
+Visual Studio también avisa si sospecha que una extensión está provocando la falta de respuesta de la interfaz de usuario.
 
 Cuando aparezcan estas notificaciones, puede ignorarlas o realizar una de las acciones siguientes:
 

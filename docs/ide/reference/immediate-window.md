@@ -1,6 +1,6 @@
 ---
 title: Inmediato (ventana)
-ms.date: 11/04/2016
+ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,24 +16,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3947c2f16be4e5c0d8054e48a46981aa22475423
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931954"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954204"
 ---
 # <a name="immediate-window"></a>Inmediato (ventana)
 
-La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar instrucciones, imprimir valores de variables, etc. Permite escribir expresiones para evaluarlas o ejecutarlas mediante el lenguaje de desarrollo durante la depuración.
+Use la ventana **Inmediato** para depurar y evaluar expresiones, ejecutar instrucciones e imprimir valores de variables. La ventana **Inmediato** evalúa las expresiones al compilar y usar el proyecto seleccionado.
 
 Para mostrar la ventana **Inmediato**, abra un proyecto para editarlo, elija **Depurar** > **Ventanas** > **Inmediato** o presione **Ctrl**+**Alt**+**I**. También puede escribir **Debug.Immediate** en la ventana **Comandos**.
 
-Puede usar la ventana **Inmediato** para emitir comandos individuales de Visual Studio. Entre los comandos disponibles se incluye `EvaluateStatement`, que puede usarse para asignar valores a variables. La ventana **Inmediato** también admite IntelliSense.
+La ventana **Inmediato** admite IntelliSense.
 
 ## <a name="display-the-values-of-variables"></a>Mostrar los valores de variables
 
-La ventana **Inmediato** puede resultar particularmente útil al depurar una aplicación. Por ejemplo, para comprobar el valor de una variable `varA`, usar el [comando Imprimir](../../ide/reference/print-command.md):
+La ventana **Inmediato** es particularmente útil al depurar una aplicación. Por ejemplo, para comprobar el valor de una variable `varA`, puede usar el [comando Imprimir](../../ide/reference/print-command.md):
 
 ```cmd
 >Debug.Print varA
@@ -42,13 +42,13 @@ La ventana **Inmediato** puede resultar particularmente útil al depurar una apl
 El signo de interrogación (?) es un alias de `Debug.Print`, por lo que este comando también puede escribirse:
 
 ```cmd
->? varA
+? varA
 ```
 
 Ambas versiones de este comando devuelven el valor de la variable `varA`.
 
 > [!TIP]
-> Para emitir un comando de Visual Studio en la ventana **Inmediato**, este debe ir precedido por un signo mayor que (>). Para escribir varios comandos, cambie a la ventana **Comando**.
+> Para emitir un comando de Visual Studio en la ventana **Inmediato**, este debe ir precedido por un signo mayor que (>). Para escribir varios comandos, cambie a la ventana [Comandos](command-window.md).
 
 ## <a name="design-time-expression-evaluation"></a>Evaluación de expresiones en tiempo de diseño
 
@@ -56,7 +56,7 @@ Puede usar la ventana **Inmediato** para ejecutar una función o subrutina en ti
 
 ### <a name="execute-a-function-at-design-time"></a>Ejecutar una función en tiempo de diseño
 
-1. Copie el código siguiente en una aplicación de consola [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:
+1. Copie el siguiente código en una aplicación de consola de Visual Basic:
 
    ```vb
    Module Module1
@@ -72,23 +72,23 @@ Puede usar la ventana **Inmediato** para ejecutar una función o subrutina en ti
    End Module
    ```
 
-2. En el menú **Depurar**, haga clic en **Ventanas** y en **Inmediato**.
+2. En el menú **Depurar**, elija **Windows** > **Inmediato**.
 
 3. Escriba `?MyFunction(2)` en la ventana **Inmediato** y presione **Entrar**.
 
     La ventana **Inmediato** ejecuta `MyFunction` y muestra `4`.
 
-Si la función o subrutina contiene un punto de interrupción, Visual Studio interrumpe la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Para más información, vea [Tutorial: Depuración en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).
+Si la función o subrutina contiene un punto de interrupción, Visual Studio interrumpe la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Para obtener más información, vea [Tutorial: Depuración en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).
 
-No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de proyectos que requieren que se inicie un entorno de ejecución, incluidos los proyectos de [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], proyectos web, proyectos de Smart Device y proyectos de SQL.
+No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de proyectos que requieren que se inicie un entorno de ejecución, incluidos los proyectos de Visual Studio Tools para Office, proyectos web, proyectos de Smart Device y proyectos de SQL.
 
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Evaluación de expresiones en tiempo de diseño en soluciones de varios proyectos
 
-Al establecer el contexto de evaluación de expresiones en tiempo de diseño, Visual Studio hace referencia al proyecto seleccionado actualmente en Explorador de soluciones. Si no se selecciona ningún proyecto en Explorador de soluciones, Visual Studio intenta evaluar la función en el proyecto de inicio. Si no se puede evaluar la función en el contexto actual, recibirá un mensaje de error. Si está intentando evaluar una función en un proyecto que no es el proyecto de inicio para la solución y recibe un error, pruebe a seleccionar el proyecto en el Explorador de soluciones e intente realizar la evaluación otra vez.
+Al establecer el contexto de evaluación de expresiones en tiempo de diseño, Visual Studio hace referencia al proyecto seleccionado en el Explorador de soluciones. Si no se selecciona ningún proyecto en Explorador de soluciones, Visual Studio intenta evaluar la función en el proyecto de inicio. Si no se puede evaluar la función en el contexto actual, se recibe un mensaje de error. Si está intentando evaluar una función en un proyecto que no es el proyecto de inicio de la solución y recibe un error, pruebe a seleccionar el proyecto en el Explorador de soluciones e intente realizar la evaluación otra vez.
 
 ## <a name="enter-commands"></a>Especificar comandos
 
-Escriba el signo mayor que (>) al emitir comandos de Visual Studio en la ventana **Inmediato**. Use las teclas **Flecha arriba** y **Flecha abajo** para desplazarse por los comandos emitidos anteriormente.
+Escriba el signo mayor que (>) al emitir comandos de Visual Studio en la ventana **Inmediato**. Use las teclas **Flecha arriba** y **Flecha abajo** para desplazarse por los comandos usados anteriormente.
 
 |Tarea|Soluciones|Ejemplo|
 |----------|--------------|-------------|
@@ -101,25 +101,23 @@ Escriba el signo mayor que (>) al emitir comandos de Visual Studio en la ventana
 
 Cuando hace clic en cualquier línea anterior de la ventana **Inmediato**, cambia automáticamente al modo Marcar. Esto le permite seleccionar, editar y copiar el texto de los comandos anteriores como lo haría en cualquier editor de texto, y pegarlo en la línea actual.
 
-## <a name="the-equals-sign-"></a>Signo igual (=)
+## <a name="examples"></a>Ejemplos
 
-La ventana que se usa para escribir el comando `EvaluateStatement` determina si el signo igual (=) se interpreta como un operador de comparación o como un operador de asignación.
-
-En la ventana **Inmediato**, un signo igual (=) se interpreta como un operador de asignación. Por lo tanto, por ejemplo, el comando
+El ejemplo siguiente muestra cuatro expresiones y su resultado en la ventana **Inmediato** de un proyecto de Visual Basic.
 
 ```cmd
->Debug.EvaluateStatement(varA=varB)
+j = 2
+Expression has been evaluated and has no value
+
+? j
+2
+
+j = DateTime.Now.Day
+Expression has been evaluated and has no value
+
+? j
+26
 ```
-
-asigna a la variable `varA` el valor de la variable `varB`.
-
-Por el contrario, en la ventana **Comando**, un signo igual (=) se interpreta como un operador de comparación. No puede usar operaciones de asignación en la ventana **Comando**. Por lo tanto, por ejemplo, si los valores de las variables `varA` y `varB` son diferentes, entonces el comando
-
-```cmd
->Debug.EvaluateStatement(varA=varB)
-```
-
-, devuelve un valor de `False`.
 
 ## <a name="first-chance-exception-notifications"></a>Notificaciones de excepciones de primera oportunidad
 

@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923384"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223135"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 
@@ -38,11 +38,11 @@ También puede administrar la configuración del estilo de código para .NET con
 
 ## <a name="format-document-command"></a>Comando Dar formato al documento
 
-En Visual Studio 2017 versión 15.8 y posteriores, puede configurar el comando **Dar formato al documento** (**Edición** > **Avanzado** > **Dar formato al documento**) para realizar la limpieza de código adicional en un archivo, como quitar y ordenar instrucciones using o aplicar las preferencias de estilo de código. Puede definir qué configuración quiere que **Dar formato al documento** aplique en la [página de opciones Formato](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Puede configurar el comando **Dar formato al documento** (**Edición** > **Avanzado** > **Dar formato al documento**) para realizar una limpieza de código adicional en un archivo, como quitar y ordenar instrucciones Using o aplicar preferencias de estilo de código. Puede definir qué configuración quiere que **Dar formato al documento** aplique en la [página de opciones Formato](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 La limpieza de código respeta la configuración establecida en un archivo *.editorconfig* o, si falta dicha regla o archivo, la establecida en **Herramientas** > **Opciones** > **Editor de texto** > **C#** > [**Estilo de código** o **Formato**].
 
-La primera vez que desencadena el comando **Dar formato al documento** en Visual Studio 2017, una barra amarilla de información le pedirá que configure las opciones de limpieza de código.
+La primera vez que desencadena el comando **Dar formato al documento** en Visual Studio, una barra amarilla de información le pide que configure las opciones de limpieza de código.
 
 > [!TIP]
 > Las reglas configuradas como **ninguna** en un archivo *.editorconfig* no participan en la limpieza de código, pero se pueden aplicar individualmente a través del menú **Acciones rápidas y refactorizaciones**.
