@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Uso de características del Editor XML'
+title: 'Tutorial: Uso de características del editor XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954691"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525875"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Tutorial: Usar características del editor XML
 
-En este tutorial se indican los pasos para crear un nuevo documento XML. El tutorial también utiliza algunas de las características del Editor XML que lo convierten en una valiosa herramienta para la creación de XML.
+En este tutorial se indican los pasos para crear un nuevo documento XML. El tutorial también utiliza algunas de las características del editor XML que facilitan la valiosa para la creación de XML.
 
 > [!NOTE]
 > Antes de comenzar el tutorial, guarde el *hireDate.xsd* archivo (incluido a continuación en este tema) en el equipo local.
@@ -96,9 +96,11 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
 
 ## <a name="to-format-the-xml-document"></a>Para dar formato al documento XML
 
-- Seleccione el **dar formato al documento** botón desde la barra de herramientas del Editor XML.
+- Seleccione el **dar formato al documento** botón en la barra de herramientas del editor XML, o presione **Ctrl**+**E**,**d**.
 
-    El documento XML adquiere un nuevo formato.
+   ![Botón de documento de formato XML en Visual Studio](media/format-xml-document.png)
+
+   El documento XML adquiere un nuevo formato.
 
 ## <a name="to-save-the-xml-document"></a>Para guardar el documento XML
 
@@ -109,7 +111,8 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
 2.  Escriba el nombre de archivo y la ubicación del documento XML y haga clic en **guardar**.
 
 ## <a name="hiredatexsd-file"></a>archivo hireDate.xsd
- El tutorial utiliza el siguiente archivo de esquema.
+
+En este tutorial, se usa el archivo de esquema siguiente:
 
 ```xml
 <?xml version="1.0"?>
