@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea4cd33c67cfbd2d2150fceacaf0399810db0ca4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638041"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567188"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Acciones personalizadas en áreas de formulario de Outlook
   Acciones muestran los botones que permiten a los usuarios respondan a un elemento de Microsoft Office Outlook. Por ejemplo, para responder a un elemento de correo, los usuarios hacen clic los **respuesta**, **responder a todos**, o **reenviar** botones de acción. Cada una de estas acciones crea un nuevo elemento de correo y rellena los campos del elemento mediante el uso de información del elemento original.
@@ -28,7 +28,7 @@ ms.locfileid: "56638041"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Agregar acciones personalizadas a un área de formulario
- Para agregar una acción personalizada a un área de formulario, utilice el **acciones personalizadas** cuadro de diálogo. Puede abrir el **acciones personalizadas** cuadro de diálogo de **el Explorador de soluciones** expandiendo el **manifiesto** nodo, seleccione el **elemento CustomAction**propiedad y, a continuación, haga clic en el botón de puntos suspensivos (![elipse Diseñador de ASP.NET mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")).
+ Para agregar una acción personalizada a un área de formulario, utilice el **acciones personalizadas** cuadro de diálogo. Puede abrir el **acciones personalizadas** cuadro de diálogo, seleccione el área de formulario en **el Explorador de soluciones**, expandiendo el **manifiesto** nodo en el **propiedades Ventana**, seleccionando la **elemento CustomAction** propiedad y, a continuación, haga clic en el botón de puntos suspensivos (![elipse Diseñador de ASP.NET mobile](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Elipse del diseñador")).
 
  Puede usar el **acciones personalizadas** cuadro de diálogo para especificar un *formulario de destino*. Un formulario de destino es el formulario que aparece cuando el usuario ejecuta la acción personalizada.
 

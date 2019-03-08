@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 622887a3886eb51b148451bfaee561b7d5c7a466
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712533"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223635"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Inicio rápido: Primer vistazo al IDE de Visual Studio
 
@@ -114,5 +114,5 @@ Solo se han examinado algunas de las características de Visual Studio para fami
 ## <a name="see-also"></a>Vea también
 
 - [Información general sobre Visual Studio](../get-started/visual-studio-ide.md)
-- [Más características de Visual Studio 2017](../ide/advanced-feature-overview.md)
+- [Más características de Visual Studio](../ide/advanced-feature-overview.md)
 - [Cambiar los colores de la fuente y el tema](../ide/quickstart-personalize-the-ide.md)

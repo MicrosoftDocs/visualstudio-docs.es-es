@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 22dcbcbf9a3506e3cd6c962b1f31ada24d5234e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 60302646abbf36034756f38183d7be7f0d28c1ca
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315877"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223655"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimizar el tiempo de inicio de Visual Studio
 
@@ -27,7 +27,7 @@ Visual Studio está diseñado para iniciarse de la forma más rápida y eficaz p
 
 ## <a name="startup-behavior"></a>Comportamiento de inicio
 
-Para evitar que se alargue demasiado el tiempo de inicio, Visual Studio de 2017 carga las extensiones mediante un enfoque _a petición_. Con este comportamiento, las extensiones no se abren inmediatamente cuando Visual Studio se inicia, sino cuando son necesarias. Además, como las ventanas de herramientas que se han quedado abiertas en una sesión de Visual Studio anterior pueden ralentizar el tiempo de inicio, Visual Studio abre ventanas de herramientas de una manera más inteligente para evitar el impacto en el tiempo de inicio.
+Para evitar que se alargue demasiado el tiempo de inicio, Visual Studio carga las extensiones mediante un enfoque _a petición_. Con este comportamiento, las extensiones no se abren inmediatamente cuando Visual Studio se inicia, sino cuando son necesarias. Además, como las ventanas de herramientas que se han quedado abiertas en una sesión de Visual Studio anterior pueden ralentizar el tiempo de inicio, Visual Studio abre ventanas de herramientas de una manera más inteligente para evitar el impacto en el tiempo de inicio.
 
 Si Visual Studio detecta un inicio lento, aparece un mensaje emergente avisándole de la extensión o la ventana de herramientas que está provocando la ralentización. El mensaje ofrece un vínculo al cuadro de diálogo **Administrar el rendimiento de Visual Studio**. También puede acceder a este cuadro de diálogo si elige **Ayuda** > **Administrar el rendimiento de Visual Studio** en la barra de menús.
 
@@ -66,7 +66,7 @@ Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro
      ![Administración del rendimiento de Visual Studio: vista de ventanas de herramientas](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
-> Algunas versiones anteriores de Visual Studio 2017 tenían una característica llamada **carga de solución ligera**. Esta característica ya no está disponible en la versión 15.5 de Visual Studio 2017 ni en versiones posteriores. En la versión 15.5 de Visual Studio 2017 y versiones posteriores, las soluciones de gran tamaño que contiene código administrado se cargan mucho más rápido que antes, incluso sin la carga de solución ligera.
+> Algunas versiones anteriores de Visual Studio 2017 tenían una característica llamada **carga de solución ligera**. En las versiones actuales, las soluciones de gran tamaño que contienen código administrado se cargan mucho más rápido que antes, incluso sin la carga de solución ligera.
 
 ## <a name="see-also"></a>Vea también
 

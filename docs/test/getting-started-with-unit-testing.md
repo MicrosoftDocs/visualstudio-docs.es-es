@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11fb8fe4b30aa986a6c442278d1e8984604a6794
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927989"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223525"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
@@ -74,7 +74,7 @@ También puede crear códigos auxiliares de método de pruebas unitarias con el 
 Si está usando el marco de pruebas de MSTest, xUnit o NUnit en Visual Studio 2017 o versiones posteriores, puede ver los resultados en vivo de sus pruebas unitarias.
 
 > [!NOTE]
-> Live Unit Testing solo está disponible en Visual Studio 2017 Enterprise Edition.
+> Live Unit Testing solo está disponible en Visual Studio Enterprise Edition.
 
 1. Active las pruebas unitarias en vivo desde el menú **Prueba**.
 
