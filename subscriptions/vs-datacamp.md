@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
 searchscope: VS Subscription
-ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841434"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428640"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 
@@ -69,8 +69,8 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | 3 meses       |  No.  Disponible solo para nuevos suscriptores          |
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |  No.  Disponible solo para nuevos suscriptores           |
-| Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Disponible                                             |  No.  Disponible solo para nuevos suscriptores           |
-| Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Disponible                                              |  No.  Disponible solo para nuevos suscriptores           |
+| Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | 3 meses                                             |  No.  Disponible solo para nuevos suscriptores           |
+| Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | 3 meses                                              |  No.  Disponible solo para nuevos suscriptores           |
 | Visual Studio Dev Essentials | N/D  | 2 meses | No. Disponible solo para nuevos suscriptores |
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |

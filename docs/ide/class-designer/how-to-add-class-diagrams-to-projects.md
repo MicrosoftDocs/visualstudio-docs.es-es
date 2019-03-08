@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar diagramas de clases a proyectos (Diseñador de clases)
+title: Procedimiento Agregar diagramas de clases a proyectos (Diseñador de clases)
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ac40b3ae84aad689df9884ad8453860f91d971
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919721"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223746"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>Filtrar Agregar diagramas de clases a proyectos
+# <a name="how-to-add-class-diagrams-to-projects"></a>Procedimiento Agregar diagramas de clases a proyectos
 
 Para diseñar, editar y refactorizar clases y otros tipos, agregue un diagrama de clases al proyecto de C#, Visual Basic o C++. Para visualizar distintas partes del código de un proyecto, agregue varios diagramas de clases al proyecto.
 
@@ -26,7 +26,7 @@ No se pueden crear diagramas de clases de proyectos que compartan código en var
 
 ## <a name="install-the-class-designer-component"></a>Instalar el componente del Diseñador de clases
 
-Si va a ejecutar Visual Studio 2017 y no ha instalado el componente del **Diseñador de clases**, siga estos pasos para instalarlo.
+Si no ha instalado el componente del **Diseñador de clases**, siga estos pasos para hacerlo.
 
 1. Abra el **Instalador de Visual Studio** desde el menú Inicio de Windows o seleccionando **Herramientas** > **Obtener herramientas y características** en la barra de menús de Visual Studio.
 
