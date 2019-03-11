@@ -116,6 +116,8 @@ items:
       items:
       - name: Aplicar ediciones en el modo de interrupción con Editar y continuar
         href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
+    - name: Escribir y depurar código XAML en ejecución
+      href: xaml-edit-and-continue.md
     - name: Editar y Continuar no admitido para F#
       href: edit-and-continue-not-supported-for-f-hash.md
   - name: Visualización de datos de depurador
@@ -841,9 +843,9 @@ items:
   items:
   - name: Novedades del depurador de Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 60b141b0f9a7b00dda32a68f5f33e2bc8321dad6
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335472"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699660"
