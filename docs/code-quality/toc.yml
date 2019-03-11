@@ -314,7 +314,7 @@ items:
         href: ca1309-use-ordinal-stringcomparison.md
       - name: 'CA2101: Especificar serialización de argumentos de cadena P-Invoke'
         href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
-    - name: advertencias de interoperabilidad
+    - name: Advertencias de interoperabilidad
       href: interoperability-warnings.md
       items:
       - name: 'CA1400: Deben existir puntos de entrada P-Invoke'
@@ -349,7 +349,7 @@ items:
         href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
       - name: 'CA1415: Declarar elementos P-Invoke correctamente'
         href: ca1415-declare-p-invokes-correctly.md
-    - name: advertencias de mantenimiento
+    - name: Advertencias de mantenimiento
       href: maintainability-warnings.md
       items:
       - name: 'CA1500: Los nombres de las variables no deben coincidir con los nombres de los campos'
@@ -364,14 +364,14 @@ items:
         href: ca1505-avoid-unmaintainable-code.md
       - name: 'CA1506: Evitar el acoplamiento excesivo de clases'
         href: ca1506-avoid-excessive-class-coupling.md
-    - name: advertencias de movilidad
+    - name: Advertencias de movilidad
       href: mobility-warnings.md
       items:
       - name: 'CA1600: No utilizar la prioridad del proceso inactiva'
         href: ca1600-do-not-use-idle-process-priority.md
       - name: 'CA1601: No utilizar temporizadores que impidan los cambios de estado de energía'
         href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-    - name: advertencias de nomenclatura
+    - name: Advertencias de nomenclatura
       href: naming-warnings.md
       items:
       - name: "CA1700: No nombrar valores de enumeración como 'Reserved'"
@@ -420,7 +420,7 @@ items:
         href: ca1724-type-names-should-not-match-namespaces.md
       - name: 'CA1726: Utilizar términos preferidos'
         href: ca1726-use-preferred-terms.md
-    - name: advertencias de rendimiento
+    - name: Advertencias de rendimiento
       href: performance-warnings.md
       items:
       - name: 'CA1800: No convertir innecesariamente'
@@ -455,7 +455,7 @@ items:
         href: ca1823-avoid-unused-private-fields.md
       - name: 'CA1824: Marcar los ensamblados con NeutralResourcesLanguageAttribute'
         href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-    - name: advertencias de portabilidad
+    - name: Advertencias de portabilidad
       href: portability-warnings.md
       items:
       - name: 'CA1900: Los campos de tipo de valor deben ser portátiles'
@@ -464,7 +464,7 @@ items:
         href: ca1901-p-invoke-declarations-should-be-portable.md
       - name: 'CA1903: Usar solo API de la versión de .NET Framework de destino'
         href: ca1903-use-only-api-from-targeted-framework.md
-    - name: advertencias de confiabilidad
+    - name: Advertencias de confiabilidad
       href: reliability-warnings.md
       items:
       - name: 'CA2000: Desechar objetos antes de perder el ámbito'
@@ -479,6 +479,8 @@ items:
         href: ca2004-remove-calls-to-gc-keepalive.md
       - name: 'CA2006: Utilizar SafeHandle para encapsular recursos nativos'
         href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+      - name: 'CA2007: No esperar una tarea directamente'
+        href: ca2007-do-not-directly-await-task.md
     - name: Advertencias de seguridad
       href: security-warnings.md
       items:
@@ -580,7 +582,7 @@ items:
         href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
       - name: 'CA3147: Marcar los controladores de verbo con ValidateAntiForgeryToken'
         href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
-    - name: advertencias de uso
+    - name: Advertencias de uso
       href: usage-warnings.md
       items:
       - name: 'CA1801: Revisar parámetros sin utilizar'
@@ -1468,9 +1470,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd (errores)
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 4d6e4458e334cc1d51b65ae9ba8eaeb83fc70aa2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: d922322159ed52441168ab7bfec76c0f92804501
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835155"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699673"

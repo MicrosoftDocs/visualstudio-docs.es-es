@@ -1,6 +1,7 @@
 items:
 - name: Documentación de Visual Studio
   href: ide/index.yml
+  pdf_name: Visual Studio documentation
 - name: Información general
   items:
   - name: Acerca de Visual Studio
@@ -131,6 +132,7 @@ items:
 - name: Guías de inicio rápido
   items:
   - name: Orientación de Visual Studio
+    displayName: Feature tour
     href: ide/quickstart-ide-orientation.md
   - name: 'C++: Crear una aplicación de consola'
     href: ide/getting-started-with-cpp-in-visual-studio.md
@@ -236,12 +238,15 @@ items:
           href: ide/template-parameters.md
       - name: compatibilidad con la programación de 64 bits
         href: ide/visual-studio-ide-64-bit-support.md
-    - name: Desarrollar sin proyectos o soluciones ("Abrir carpeta")
+    - name: Desarrollar sin proyectos o soluciones
+      displayName: Open folder
       href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
       items:
       - name: Personalizar las tareas de compilación y depuración
+        displayName: makefile tasks.vs.json
         href: ide/customize-build-and-debug-tasks-in-visual-studio.md
     - name: Conexión a un proyecto o repositorio
+      displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
     - name: Usar el editor
       href: ide/writing-code-in-the-code-and-text-editor.md
@@ -251,6 +256,7 @@ items:
         items:
         - name: Usar expresiones regulares
           href: ide/using-regular-expressions-in-visual-studio.md
+          dispayName: RegEx
         - name: Cuadro Buscar/Comando
           href: ide/find-command-box.md
         - name: Buscar en archivos
@@ -263,6 +269,7 @@ items:
         - name: Guardar y abrir archivos con codificación
           href: ide/how-to-save-and-open-files-with-encoding.md
       - name: esquematizar
+        displayName: Expand and collapse
         href: ide/outlining.md
       - name: Generación y corrección del código
         href: ide/code-generation-in-visual-studio.md
@@ -389,6 +396,7 @@ items:
           - name: Todos los métodos abreviados de teclado
             href: ide/default-keyboard-shortcuts-in-visual-studio.md
         - name: Sugerencias para desarrolladores de .NET
+          displayName: ReSharper
           href: ide/visual-studio-2017-for-dotnet-developers.md
       - name: Usar IntelliSense
         href: ide/using-intellisense.md
@@ -438,6 +446,7 @@ items:
         href: ide/code-styles-and-quick-actions.md
         items:
         - name: Usar archivos EditorConfig para el estilo de código
+          displayName: Configure code style analyzers
           href: ide/create-portable-custom-editor-options.md
           items:
           - name: Lenguaje .NET y convenciones de formato
@@ -535,6 +544,7 @@ items:
     - name: Trabajar con archivos XML y XSLT
       href: xml-tools/xml-tools-in-visual-studio.md
     - name: Desarrollo de aplicaciones internacionales
+      displayName: Globalization localization world-ready
       href: ide/globalizing-and-localizing-applications.md
       items:
       - name: Lenguajes bidireccionales
@@ -611,8 +621,10 @@ items:
           - name: 'Paso 9: prueba de otras características'
             href: ide/step-9-try-other-features.md
   - name: Acceder a datos...
+    displayName: Data connections
     href: data-tools/accessing-data-in-visual-studio.md
   - name: Diseñar interfaces de usuario...
+    displayName: XAML designer
     href: designers/designing-user-interfaces.md
   - name: Compilar y generar
     href: ide/compiling-and-building-in-visual-studio.md
@@ -659,6 +671,7 @@ items:
     - name: MSBuild...
       href: msbuild/msbuild.md
     - name: Azure Pipelines y TFS...
+      displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
       href: /azure/devops/pipelines/index?view=vsts
     - name: Especificación de eventos de compilación (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
@@ -671,14 +684,18 @@ items:
   - name: Depurar...
     href: debugger/index.md
   - name: Probar...
+    displayName: Unit testing
     href: test/improve-code-quality.md
   - name: Medir el rendimiento...
+    displayName: Profiling
     href: profiling/index.md
   - name: Analizar la calidad del código...
+    displayName: Code analysis FxCop Analyzers
     href: code-quality/index.md
   - name: Implementar...
     href: deployment/index.md
   - name: Ampliar Visual Studio...
+    displayName: Visual Studio SDK
     href: extensibility/visual-studio-sdk.md
   - name: Analizar y modelar la arquitectura...
     href: modeling/analyze-and-model-your-architecture.md
@@ -700,6 +717,7 @@ items:
     - name: Anidamiento de archivos en el Explorador de soluciones
       href: ide/file-nesting-solution-explorer.md
     - name: Comportamiento de inicio
+      displayName: Start page window
       href: ide/customizing-the-start-page-for-visual-studio.md
     - name: Búsqueda y uso de extensiones de Visual Studio
       href: ide/finding-and-using-visual-studio-extensions.md
@@ -730,6 +748,7 @@ items:
 - name: Referencia
   items:
   - name: Elementos generales de la interfaz de usuario
+    displayName: Windows and dialogs
     items:
     - name: Jerarquía de llamadas
       href: ide/reference/call-hierarchy.md
@@ -1078,6 +1097,7 @@ items:
     href: help-viewer/overview.md
     items:
     - name: Instalar y administrar el contenido local
+      displayName: Offline books docs
       href: help-viewer/install-manage-local-content.md
     - name: Buscar temas en el visor de la Ayuda
       items:
@@ -1114,28 +1134,40 @@ items:
     href: ide/whats-new-visual-studio-2019.md
   - name: Notas de la versión y requisitos del sistema
     items:
-    - name: Notas de la versión actual
-      href: /visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017
-    - name: Notas de la versión preliminar
-      href: /visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017
-    - name: Historial de notas de versiones
-      href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default&contextView=vs-2017
     - name: Progresión de versiones
-      href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default&contextView=vs-2017
-    - name: Guía básica de Visual Studio
-      href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default&contextView=vs-2017
-    - name: Requisitos del sistema
-      href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017
-    - name: Compatibilidad de plataformas
-      href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default&contextView=vs-2017
-    - name: Licencias
+      href: /visualstudio/productinfo/release-rhythm/
+    - name: Visual Studio 2017
+      items:
+      - name: Notas de la versión actual
+        href: /visualstudio/releasenotes/vs2017-relnotes/
+      - name: Notas de la versión preliminar
+        href: /visualstudio/releasenotes/vs2017-preview-relnotes/
+      - name: Historial de notas de versiones
+        href: /visualstudio/releasenotes/vs2017-relnotes-history/
+      - name: Código distribuible
+        href: /visualstudio/productinfo/2017-redistribution-vs/
+      - name: Compatibilidad de plataformas
+        href: /visualstudio/productinfo/vs2017-compatibility-vs/
+      - name: Requisitos del sistema
+        href: /visualstudio/productinfo/vs2017-system-requirements-vs/
+    - name: Visual Studio 2019
+      items:
+      - name: Notas de la versión actual
+        href: /visualstudio/releases/2019/release-notes/
+      - name: Notas de la versión preliminar
+        href: /visualstudio/releases/2019/release-notes-preview/
+      - name: Historial de notas de versiones
+        href: /visualstudio/releases/2019/release-notes-history/
+      - name: Código distribuible
+        href: /visualstudio/releases/2019/redistribution/
+      - name: Compatibilidad de plataformas
+        href: /visualstudio/releases/2019/compatibility/
+      - name: Requisitos del sistema
+        href: /visualstudio/releases/2019/system-requirements/
+    - name: Términos de licencia
       href: https://visualstudio.microsoft.com/license-terms/
-    - name: Código distribuible
-      href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default&contextView=vs-2017
     - name: Ciclo de vida de soporte técnico y servicio
-      href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default&contextView=vs-2017
-    - name: Privacidad de datos de la Comunidad de desarrolladores
-      href: ide/developer-community-privacy.md
+      href: /visualstudio/productinfo/vs-servicing-vs/
   - name: Notificación de un problema en Visual Studio
     href: ide/how-to-report-a-problem-with-visual-studio.md
     items:
@@ -1143,6 +1175,8 @@ items:
       href: ide/report-a-problem.md
   - name: Sugerir una característica para Visual Studio
     href: ide/suggest-a-feature.md
+  - name: Privacidad de datos de la Comunidad de desarrolladores
+    href: ide/developer-community-privacy.md
   - name: Programa para la mejora de la experiencia del usuario
     href: ide/visual-studio-experience-improvement-program.md
     items:
@@ -1151,11 +1185,12 @@ items:
   - name: Recursos de solución de problemas de errores del IDE
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Hable con nosotros
+    displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 3ee3f3df16357d6a39090dc64504ef7f7fae6351
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: fb7a40cf8558fb5c3732fba0ec32ebbbb35fb0bb
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526560"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683403"
