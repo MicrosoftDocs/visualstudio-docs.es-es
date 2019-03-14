@@ -2,7 +2,7 @@
 title: Portar, migrar y actualizar proyectos en la versión preliminar de Visual Studio 2019
 titleSuffix: ''
 description: Referencia de la compatibilidad en Visual Studio 2019 de los proyectos creados en versiones anteriores de Visual Studio y de cómo Visual Studio decide cuándo migrar un proyecto.
-ms.date: 12/06/2018
+ms.date: 02/26/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9c5bf46f3626f5929f615437781495cd766f6ff4
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 7447dff5d8855fb141ab66f23ab9bd9b272c3d0d
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428796"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683364"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019"></a>Referencia de migración y actualización de proyectos para Visual Studio 2019
 
@@ -71,7 +71,7 @@ Si no ve un tipo de archivo o proyecto que debería mostrarse, consulte la [vers
 | Silverlight | Los proyectos de Silverlight no se admiten en la versión preliminar de Visual Studio 2019. Para conservar las aplicaciones de Silverlight, siga usando Visual Studio 2015. |
 | SQL: Redgate | SQL Change Automation Core de Redgate (anteriormente denominado ReadyRoll Core), SQL Prompt Core y SQL Search ya no se incluyen en el instalador de Visual Studio.<br/><br/>Puede seguir usando Visual Studio 2017 para estas características. En la versión preliminar de Visual Studio 2019, puede actualizar a los productos de pago SQL Change Automation y SQL Prompt que están disponibles en SQL Toolbelt de Redgate.|
 | SQL Server Reporting Services y SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | El soporte técnico para estos tipos de proyectos se proporciona mediante dos extensiones en la Galería de Visual Studio:  [Proyectos de modelado de Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) y [proyectos de Microsoft Reporting Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). En la versión preliminar de Visual Studio 2019 también se incluye compatibilidad de SSDT con la carga de trabajo Almacenamiento y procesamiento de datos. |
-| SQL Server Integration Services (SSIS) | La compatibilidad con la versión preliminar de Visual Studio 2019 está disponible mediante SQL Server Data Tools (SSDT). Para obtener más información, consulte el [blog de SQL Server Integration Services](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
+| SQL Server Integration Services (SSIS) | El soporte técnico para la versión preliminar de Visual Studio 2019 estará disponible próximamente. Reciba las noticias más recientes del [Blog oficial de SSIS](https://blogs.msdn.microsoft.com/ssis/). |
 | Extensión de ventana de prueba | En Visual Studio 2019, se han quitado algunas API de la ventana de prueba que anteriormente estaban marcadas como públicas, pero que nunca se documentaron oficialmente. Las API con gran visibilidad se han marcado como en desuso en Visual Studio 2017 para proporcionar una advertencia prematura a los mantenedores de extensiones. Que nosotros sepamos, pocas extensiones han tomado una dependencia en estas API. Para obtener más información y actualizaciones, vea la [lista completa de API en desuso relacionadas con pruebas](https://github.com/Microsoft/vstest/issues/1830). Si esto afecta a su escenario, notifíquelo en la [comunidad de desarrolladores](https://developercommunity.visualstudio.com). |
 | Visual C++ | Puede usar la versión preliminar de Visual Studio 2019 para trabajar en proyectos creados en versiones anteriores de Visual Studio hasta Visual Studio 2010. Cuando abre el archivo por primera vez, tiene la opción de actualizar al conjunto de herramientas y al compilador más recientes o de continuar usando los originales. Si elige seguir usando los originales, la versión preliminar de Visual Studio 2019 no modifica el archivo del proyecto y usa el conjunto de herramientas de la instalación anterior de Visual Studio para compilar el proyecto. Mantener las opciones originales significa que todavía puede abrir el proyecto en la versión original de Visual Studio si es necesario. Para obtener más información, vea [Use native multi-targeting in Visual Studio to build old projects](/cpp/porting/use-native-multi-targeting) (Usar compatibilidad nativa con múltiples versiones en Visual Studio para compilar proyectos antiguos). |
 | Extensibilidad de Visual Studio/VSIX | Los proyectos con MinimumVersion 14.0 o menos se actualizarán para que declaren MinimumVersion 15.0, lo que impide que el proyecto se abra en versiones anteriores de Visual Studio. Para permitir que un proyecto se abra en versiones anteriores, establezca MinimumVersion en `$(VisualStudioVersion)`. Vea también [Cómo: Migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |

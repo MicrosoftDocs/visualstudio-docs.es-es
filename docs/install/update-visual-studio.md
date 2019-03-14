@@ -2,34 +2,37 @@
 title: Actualizar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo actualizar Visual Studio a la versión más reciente, paso a paso.
-ms.date: 04/23/2018
+ms.date: 03/09/2019
 ms.custom: seodec18
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
 helpviewer_keywords:
-- update Visual Studio
-- change visual studio
-- changing Visual Studio
+- update [Visual Studio]
+- change [Visual Studio]
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e972c86f4a3dfecdcd36d2aec768e0ea3b0065
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953963"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737013"
 ---
-# <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Actualizar Visual Studio 2017 a la versión más reciente
+# <a name="update-visual-studio-to-the-most-recent-release"></a>Actualización de Visual Studio a la versión más reciente
 
-Le recomendamos que actualice a la [versión más reciente](/visualstudio/releasenotes/vs2017-relnotes) de Visual Studio 2017 para recibir siempre las características, correcciones y mejoras más recientes.
+::: moniker range="vs-2017"
 
-Y si desea probar algo antes de que lo publiquemos, piense en descargar también la [versión preliminar](/visualstudio/releasenotes/vs2017-preview-relnotes) de la siguiente versión.
+Le recomendamos que actualice a la [versión más reciente](/visualstudio/releasenotes/vs2017-relnotes/) de Visual Studio 2017 para recibir siempre las características, correcciones y mejoras más recientes.
+
+Y si quiere probar la siguiente versión, considere también la opción de descargar la [versión candidata para lanzamiento](//visualstudio/releases/2019/release-notes/) de Visual Studio 2019.
 
 > [!IMPORTANT]
 > Para instalar, actualizar o modificar Visual Studio, debe iniciar sesión con una cuenta que tenga permisos administrativos. Para obtener más información, vea [Permisos de usuario y Visual Studio](../ide/user-permissions-and-visual-studio.md).
-
+>
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Actualización de Visual Studio para Mac](/visualstudio/mac/update).
 
@@ -43,11 +46,11 @@ Cuando haya una actualización, aparecerá la correspondiente marca de notificac
 
 1. No olvide guardar su trabajo.
 
-2. Haga clic en la marca de notificaciones para abrir el Centro de **notificaciones** y, después, elija la actualización que desea instalar.
+1. Haga clic en la marca de notificaciones para abrir el Centro de **notificaciones** y, después, elija la actualización que desea instalar.
 
    ![Actualizar Visual Studio 2017 mediante el Centro de Notificaciones](media/vs-install-notifications-hub-15dot6.png "El Centro de notificaciones en Visual Studio 2017")
 
-3. Cuando aparezca el cuadro de diálogo **Actualizar**, elija **Actualizar ahora**.
+1. Cuando aparezca el cuadro de diálogo **Actualizar**, elija **Actualizar ahora**.
 
     ![Actualizar Visual Studio 2017 mediante el Centro de notificaciones](media/vs-update-now-from-notifications-hub.png "Cuadro de diálogo Actualizar en el Centro de notificaciones de Visual Studio")
 
@@ -66,11 +69,11 @@ Puede buscar una actualización y, a continuación, instalarla desde la barra de
 
 1. No olvide guardar su trabajo.
 
-2. Elija **Ayuda** > **Buscar actualizaciones**.
+1. Elija **Ayuda** > **Buscar actualizaciones**.
 
      ![El nuevo menú Ayuda de Visual Studio, versión 15.6](media/vs-help-menu-check-for-updates.png "The new Help menu in Visual Studio version 15.6")
 
-3. Cuando aparezca el cuadro de diálogo **Actualizar**, elija **Actualizar ahora**.
+1. Cuando aparezca el cuadro de diálogo **Actualizar**, elija **Actualizar ahora**.
 
    La actualización continúa como se describe en la sección anterior y Visual Studio se reinicia una vez que la actualización finalice correctamente.
 
@@ -83,14 +86,14 @@ Al igual que en versiones anteriores de Visual Studio de 2017, puede usar el ins
 
 1. No olvide guardar su trabajo.
 
-2. Abra el instalador. El instalador de Visual Studio podría necesitar una actualización antes de continuar.
+1. Abra el instalador. El instalador de Visual Studio podría necesitar una actualización antes de continuar.
 
    > [!NOTE]
    > En un equipo con Windows 10, encontrará el instalador en la letra **I**, como **Instalador de Visual Studio**, o en la letra **M**, como **Microsoft Visual Studio Installer** (Instalador de Microsoft Visual Studio).
 
-3. En la página **Producto** del instalador, busque la edición de Visual Studio que tenga instalada.
+1. En la página **Producto** del instalador, busque la edición de Visual Studio que tenga instalada.
 
-4. Si hay alguna actualización disponible, verá el botón **Actualizar**. (El instalador podría tardar unos segundos en determinar si hay alguna actualización disponible).
+1. Si hay alguna actualización disponible, verá el botón **Actualizar**. (El instalador podría tardar unos segundos en determinar si hay alguna actualización disponible).
 
    Haga clic en el botón **Actualizar** para instalar las actualizaciones.
 
@@ -110,11 +113,11 @@ Si está utilizando una versión anterior, aquí se muestra cómo aplicar una ac
 
    ![Actualizar Visual Studio 2017 mediante el centro de Notificaciones](media/notifications-hub.png "Centro de Notificaciones en Visual Studio")
 
-2. Haga clic en **Está disponible la actualización de Visual Studio** para abrir el cuadro de diálogo **Extensiones y actualizaciones**.
+1. Haga clic en **Está disponible la actualización de Visual Studio** para abrir el cuadro de diálogo **Extensiones y actualizaciones**.
 
    ![Actualizar Visual Studio 2017 mediante el Hub de notificaciones](media/notifications-hub-select.png "Hub de notificaciones en Visual Studio")
 
-3. En el cuadro de diálogo **Extensiones y actualizaciones**, haga clic en el botón **Actualizar**.
+1. En el cuadro de diálogo **Extensiones y actualizaciones**, haga clic en el botón **Actualizar**.
 
    ![Actualizar Visual Studio 2017 mediante el Hub de notificaciones](media/notifications-extensions-and-updates.png "Cuadro de diálogo Extensiones y actualizaciones en Visual Studio")
 
@@ -141,9 +144,9 @@ Si elige ignorar una notificación, Visual Studio deja de mostrarla. Si quiere r
    > [!NOTE]
    > En un equipo con Windows 10, encontrará el instalador en la letra **I**, como **Instalador de Visual Studio**, o en la letra **M**, como **Microsoft Visual Studio Installer** (Instalador de Microsoft Visual Studio).
 
-2. En la página **Producto** del instalador, busque la edición de Visual Studio que tenga instalada.
+1. En la página **Producto** del instalador, busque la edición de Visual Studio que tenga instalada.
 
-3. Si hay alguna actualización disponible, verá el botón **Actualizar**. (El instalador podría tardar unos segundos en determinar si hay alguna actualización disponible).
+1. Si hay alguna actualización disponible, verá el botón **Actualizar**. (El instalador podría tardar unos segundos en determinar si hay alguna actualización disponible).
 
    Haga clic en el botón **Actualizar** para instalar las actualizaciones.
 
@@ -156,3 +159,47 @@ Si elige ignorar una notificación, Visual Studio deja de mostrarla. Si quiere r
 * [Modificación de Visual Studio 2017](modify-visual-studio.md)
 * [Desinstalación de Visual Studio 2017](uninstall-visual-studio.md)
 * [Actualización de Visual Studio para Mac](/visualstudio/mac/update)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Le recomendamos que actualice a la [versión más reciente](/visualstudio/releases/2019/release-notes/) de Visual Studio 2019 para recibir siempre las características, correcciones y mejoras más recientes.
+
+> [!IMPORTANT]
+> Para instalar, actualizar o modificar Visual Studio, debe iniciar sesión con una cuenta que tenga permisos administrativos. Para obtener más información, vea [Permisos de usuario y Visual Studio](../ide/user-permissions-and-visual-studio.md).
+>
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Actualización de Visual Studio para Mac](/visualstudio/mac/update).
+
+## <a name="update-visual-studio-2019"></a>Actualización a Visual Studio 2019
+
+A continuación le mostramos cómo usar el Instalador de Visual Studio para actualizar a la versión preliminar de Visual&nbsp;Studio&nbsp;2019&nbsp;o a la versión candidata para lanzamiento de Visual&nbsp;Studio&nbsp;2019&nbsp;.
+
+1. Abra el instalador.
+
+     ![Apertura del Instalador de Visual Studio](media/vs2019-visual-studio-installer.png "Apertura del Instalador de Visual Studio")
+
+   Es posible que tenga que actualizar el instalador antes de continuar. De ser así, siga las indicaciones.
+
+1. En el instalador, busque la edición de Visual Studio que tenga instalada.
+
+   Por ejemplo, si anteriormente instaló la versión candidata para lanzamiento de Visual&nbsp;Studio Community&nbsp;2019&nbsp; y hay una actualización para esta, aparecerá un mensaje de **Actualización disponible** en el instalador.
+
+     ![Selección de la edición de Visual Studio 2019 para actualizar](media/vs2019-update-visual-studio-community-rc.png "Selección de la edición de Visual Studio 2019 para actualizar")
+
+1. Haga clic en el botón **Actualizar** para instalar las actualizaciones.
+
+    ![Selección del botón Actualizar para instalar las actualizaciones](media/vs2019-choose-update-visual-studio-community-rc.png "Selección del botón Actualizar para instalar las actualizaciones")
+
+1. Una vez completada la actualización, seleccione **Iniciar** para abrir Visual Studio.
+
+    ![Selección del botón Iniciar para abrir Visual Studio](media/vs2019-choose-launch-visual-studio-community-rc.png "Selección del botón Iniciar para abrir Visual Studio")
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+
+## <a name="see-also"></a>Vea también
+
+* [Actualización de Visual Studio para Mac](/visualstudio/mac/update)
+
+::: moniker-end

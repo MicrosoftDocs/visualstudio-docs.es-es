@@ -80,7 +80,7 @@ SQL Server admite el uso de Python para realizar análisis avanzados directament
 
 Ejecutar este código donde ya se encuentran los datos le ofrece una serie de ventajas:
 
-- **Eliminación del movimiento de datos**: En lugar de mover datos de la base de datos a la aplicación o el modelo, puede compilar aplicaciones en la base de datos. Esta función elimina las barreras de seguridad, cumplimiento normativo, gobierno, integridad y una gran cantidad de problemas similares relacionados con el movimiento de grandes cantidades de datos. También puede consumir conjuntos de datos que no se puedan ajustar en la memoria de un equipo cliente.
+- **Eliminación del movimiento de datos**: En lugar de mover datos de la base de datos a la aplicación o el modelo, puede compilar aplicaciones en la base de datos. Esta función elimina las barreras de seguridad, cumplimiento normativo, gobernanza, integridad y una gran cantidad de problemas similares relacionados con el movimiento de grandes cantidades de datos. También puede consumir conjuntos de datos que no se puedan ajustar en la memoria de un equipo cliente.
 
 - **Facilidad de implementación**: Una vez que tenga listo un modelo, implementarlo en producción es tan sencillo como insertarlo en un script T-SQL. Después, cualquier aplicación cliente SQL escrita en cualquier lenguaje puede aprovechar las ventajas de los modelos y la inteligencia mediante una llamada de procedimiento almacenado. No se necesitan integraciones específicas del lenguaje.
 

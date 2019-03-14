@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: c378067a9078ab3e1c4c845412c886227a3c9197
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 4da1fcce5d959c3c5a46902dc4e425524b041b10
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324710"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525953"
 ---
 ## <a name="express-for-windows-desktop"></a>Express para escritorio de Windows
 
@@ -28,7 +28,7 @@ ms.locfileid: "57324710"
 Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.8.27825.0 | Obligatorio
-Microsoft.Component.HelpViewer | Visor de Ayuda | 15.6.27323.2 | Obligatorio
+Microsoft.Component.HelpViewer | Visor de Ayuda | 15.9.28307.421 | Obligatorio
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obligatorio
 Microsoft.Component.VC.Runtime.OSSupport | Tiempo de ejecución de Visual C++ para UWP | 15.6.27406.0 | Obligatorio
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 15.6.27406.0 | Obligatorio
@@ -60,7 +60,7 @@ Microsoft.VisualStudio.Component.VC.Tools.ARM | Bibliotecas y compiladores de Vi
 Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Bibliotecas y compiladores de Visual C++ para ARM64 | 15.9.28230.55 | Obligatorio
 Microsoft.VisualStudio.Component.VisualStudioData | Referencias de servicio y orígenes de datos | 15.6.27406.0 | Obligatorio
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK de Windows 10 (10.0.14393.0) | 15.6.27406.0 | Obligatorio
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17134.0) | 15.8.27924.0 | Obligatorio
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK de Windows 10 (10.0.17763.0) | 15.9.28307.102 | Obligatorio
 
 ## <a name="unaffiliated-components"></a>Componentes no afiliados
 
