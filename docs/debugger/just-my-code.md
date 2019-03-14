@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 607a3d9ac015232e882d20e8514b3143b411df20
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223681"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526781"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Depurar código de usuario sólo con sólo mi código
 
@@ -115,7 +115,7 @@ Si el depurador llega a una excepción, se detiene en la excepción, ya sea en e
 Para los proyectos de C++, puede especificar los módulos, archivos de código fuente y las funciones del **pila de llamadas** ventana trata como código de no usuario especificándolas en  *\*.natjmc* archivos. Esta personalización también se aplica al código de ejecución paso a paso si usa el compilador más reciente (vea [C++ solo mi código](#BKMK_CPP_User_and_non_user_code)).
 
 - Para especificar código que no es de usuario para todos los usuarios del equipo de Visual Studio, agregue el archivo *.natjmc* a la carpeta *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.
-- Para especificar código que no es de usuario para un usuario individual, agregue el archivo *.natjmc* a la carpeta *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.
+- Para especificar código que no son de usuario para un usuario individual, agregue el *.natjmc* del archivo a la *%USERPROFILE%\My documentos\\<Visual Studio version>\Visualizers* carpeta.
 
 Un *.natjmc* archivo es un archivo XML con esta sintaxis:
 
@@ -165,7 +165,7 @@ Un *.natjmc* archivo es un archivo XML con esta sintaxis:
 En los proyectos de C++, puede especificar funciones salten enumera como código que no son de usuario en  *\*.natstepfilter* archivos. Funciones que se enumeran en  *\*.natstepfilter* archivos no son dependientes de la configuración de solo mi código.
 
 - Para especificar código que no son de usuario para todos los usuarios locales de Visual Studio, agregue el *.natstepfilter* del archivo a la *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* carpeta.
-- Para especificar código que no es de usuario para un usuario individual, agregue el archivo *.natstepfilter* a la carpeta *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.
+- Para especificar código que no son de usuario para un usuario individual, agregue el *.natstepfilter* del archivo a la *%USERPROFILE%\My documentos\\<Visual Studio version>\Visualizers* carpeta.
 
 Un *.natstepfilter* archivo es un archivo XML con esta sintaxis:
 

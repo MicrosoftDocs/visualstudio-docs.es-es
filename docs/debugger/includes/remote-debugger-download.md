@@ -8,17 +8,24 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 887d41805063f64c6b96a0375284928efd9321ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01ec01ad642333d9ee46296cbcb4a02526152e94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56741432"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526878"
 ---
 En el dispositivo remoto o servidor que desee depurar en, en lugar de la máquina de Visual Studio, descargue e instale la versión correcta de las herramientas remotas de uno de los vínculos en la tabla siguiente.
 
 - Descargue las herramientas remotas más reciente para su versión de Visual Studio. La versión más reciente de herramientas remotas es compatible con versiones anteriores de Visual Studio, pero las versiones anteriores de herramientas remotas no son compatibles con versiones posteriores de Visual Studio.
 - Descargue las herramientas remotas con la misma arquitectura que la máquina está instalando en. Por ejemplo, si desea depurar una aplicación de 32 bits en un equipo remoto ejecuta un sistema operativo de 64 bits, instale las herramientas remotas de 64 bits.
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Hasta que estén disponibles, si tiene que usar el depurador remoto con Visual Studio 2019, las herramientas remotas de independiente de Visual Studio de 2019 [encontrar el depurador remoto](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2017#fileshare_msvsmon) en su propia instalación de Visual Studio de 2019 y, o bien copiar y ejecutarlo en el control remoto ejecutarlo desde un recurso compartido de archivos o de equipo.
+
+::: moniker-end
 
 |Versión|Link|Notas|
 |-|-|-|

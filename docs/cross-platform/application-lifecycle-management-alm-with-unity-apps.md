@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802571"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567307"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con aplicaciones de Unity
 
@@ -26,7 +26,7 @@ En estas tablas se recogen cómo las características de DevOps en Visual Studio
 
 ## <a name="agile-tools"></a>Herramientas de Agile
 
-Vínculo de referencia: [About Agile tools and Agile project management](/azure/devops/boards/backlogs/overview?view=vsts) (Información sobre las herramientas y la administración de proyectos en Agile) con Azure Boards o TFS, incluido Team Explorer Everywhere
+Vínculo de referencia: [About Agile tools and Agile project management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (Información sobre las herramientas y la administración de proyectos en Agile) con Azure Boards o TFS, incluido Team Explorer Everywhere
 
 Comentario general: todas las características de planeación y seguimiento son independientes del tipo de proyecto y de los lenguajes de codificación.
 
