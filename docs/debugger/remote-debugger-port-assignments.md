@@ -1,7 +1,7 @@
 ---
 title: Las asignaciones de puerto del depurador remoto | Microsoft Docs
-ms.custom: H1Hack27Feb2017
-ms.date: 05/18/2017
+ms.custom: ''
+ms.date: 05/18/2018
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b167dad483fd0ba2ea202a1f17f6e2f02c76789d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 672d54b29e6de9302e88b1b95b4117783b8a0113
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690596"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699621"
 ---
 # <a name="remote-debugger-port-assignments"></a>Asignaciones de puertos del depurador remoto
 El depurador remoto de Visual Studio se puede ejecutar como una aplicación o como un servicio en segundo plano. Cuando se ejecuta como una aplicación, usa un puerto asignado de forma predeterminada como se muestra a continuación:
-
+::: moniker range=">=vs-2019"
 - Visual Studio 2019: 4024
-
+::: moniker-end
 - Visual Studio 2017: 4022
 
 - Visual Studio 2015: 4020
@@ -32,7 +32,13 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
   En otras palabras, el número de puerto asignado al depurador remoto se incrementa en 2 para cada versión. Puede establecer un número de puerto distinto según desee. Explicaremos cómo establecer números de puerto en una sección posterior.
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Puerto del depurador remoto en sistemas operativos de 32 bits
+
+::: moniker range=">=vs-2019"
+ El puerto TCP 4024 (en Visual Studio 2019) es el puerto principal y es necesario en todos los escenarios. Puede configurar este puerto desde la línea de comandos o en la ventana del depurador remoto.
+::: moniker-end
+::: moniker range="vs-2017"
  El puerto TCP 4022 (en Visual Studio 2017) es el puerto principal y el necesario para todos los escenarios. Puede configurar este puerto desde la línea de comandos o en la ventana del depurador remoto.
+::: moniker-end
 
  En la ventana del depurador remoto, haga clic en **Herramientas > Opciones** y establezca el número de puerto TCP/IP.
 
@@ -41,7 +47,12 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
  Puede encontrar información sobre todos los conmutadores de la línea de comandos del depurador remoto en la ayuda de depuración remota (presione **F1** o haga clic en **Ayuda <Uso** en la ventana del depurador remoto).
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Puerto del depurador remoto en sistemas operativos de 64 bits
+::: moniker range=">=vs-2019"
+ Cuando se inicia la versión de 64 bits del depurador remoto, usa el método main (4024) de puerto de forma predeterminada.  Si depura un proceso de 32 bits, la versión de 64 bits del depurador remoto inicia una versión de 32 bits del depurador remoto en el puerto 4025 (el número de puerto principal incrementado en 1). Si ejecuta el depurador remoto de 32 bits, se usa el puerto 4024 y no el 4025.
+::: moniker-end
+::: moniker range="vs-2017"
  Cuando se inicia la versión de 64 bits del depurador remoto, usa el método main (4022) de puerto de forma predeterminada.  Si depura un proceso de 32 bits, la versión de 64 bits del depurador remoto inicia una versión de 32 bits del depurador remoto en el puerto 4023 (el número de puerto principal incrementado en 1). Si ejecuta el depurador remoto de 32 bits, usa el puerto 4022 y no usa el puerto 4023.
+:::moniker-end
 
  Este puerto se puede configurar desde la línea de comandos: **Msvsmon /wow64port \<número de puerto>**.
 
@@ -57,6 +68,7 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
 |-|-|-|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|
+|Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarderx86|31401|31399|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
 ## <a name="see-also"></a>Vea también

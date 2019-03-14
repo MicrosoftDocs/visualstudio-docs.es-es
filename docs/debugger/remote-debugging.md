@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fdfb851b2fc0fad6e6c394f30697dd39aa078d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2142b73dc44b16e8e7ac149b7377959ae3c5cfcc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961681"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526443"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Puede depurar una aplicación de Visual Studio que se ha implementado en un equipo diferente. Para ello, use el depurador remoto de Visual Studio
 
 Para obtener instrucciones sobre la depuración remota, vea estos temas.
 
-|Escenario|Vínculo|
+|Escenario|Link|
 |-|-|-|
 |Azure App Service|[Depurador de instantáneas](../debugger/debug-live-azure-applications.md) o [depuración remota de ASP.NET en Azure](../debugger/remote-debugging-azure.md)|
 |Máquina virtual de Azure|[Depuración remota de ASP.NET en Azure](../debugger/remote-debugging-azure.md)|
@@ -57,11 +57,22 @@ Si simplemente desea descargar e instalar al depurador remoto y no necesita toda
 
 Puede encontrar el depurador remoto (*msvsmon.exe*) en un equipo con Visual Studio Community, Professional o Enterprise ya instalado. En algunos escenarios, la manera más fácil de configurar la depuración remota es ejecutar al depurador remoto (msvsmon.exe) desde un recurso compartido de archivos. Para conocer las limitaciones de uso, consulte la página de Ayuda del depurador remoto (**Ayuda > uso** en el depurador remoto).
 
-1. Buscar *msvsmon.exe* en el directorio que coincida con su versión de Visual Studio. Para Visual Studio Enterprise 2017:
+1. Buscar *msvsmon.exe* en el directorio que coincida con su versión de Visual Studio:
 
-      *Programa archivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+   ::: moniker range=">=vs-2019"
 
-      *Programa archivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+   *Programa archivos (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Programa archivos (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+
+   *Programa archivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Programa archivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
 
 2. Recurso compartido de la **Remote Debugger** carpeta en el equipo de Visual Studio.
 
