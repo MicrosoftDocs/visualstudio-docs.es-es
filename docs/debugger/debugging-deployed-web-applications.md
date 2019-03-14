@@ -1,6 +1,6 @@
 ---
 title: Depuración de aplicaciones ASP.NET implementadas | Microsoft Docs
-ms.date: 06/30/2017
+ms.date: 06/30/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: bfbf5dc7421446c863bfd104f4247bb06411dfb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 57594775afe5d6708cd5d11b141f8cffc1b42e6c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717629"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525393"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Depuración de aplicaciones ASP.NET implementadas
 Para usar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a fin de depurar una aplicación implementada, debe establecer una asociación al proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y asegurarse de que el depurador tiene acceso a los símbolos de la aplicación. También debe buscar y abrir los archivos de código fuente de la aplicación. Para obtener más información, consulte [especificar símbolos (.pdb) y archivos de código fuente](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [Cómo: buscar el nombre del proceso de ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), y [requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md).

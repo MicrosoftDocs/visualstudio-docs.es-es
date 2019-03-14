@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763655"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567220"
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 ## <a name="project-to-project-references"></a>Referencias entre proyectos  
  Las referencias entre proyectos son referencias a proyectos que contienen ensamblados. Puede crearlas en la pestaña **Proyecto** . Visual Studio puede encontrar un ensamblado cuando se le proporciona una ruta de acceso al proyecto.  
   
- Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio bin, lo cual no es posible. Si se produce este conflicto, verá el mensaje [Advertencia: la dependencia "archivo" del proyecto "proyecto" no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia "archivo"](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Para obtener más información, consulte [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Cómo: Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).  
+ Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio bin, lo cual no es posible. Si se produce este conflicto, verá el mensaje [Advertencia: la dependencia "archivo" del proyecto "proyecto" no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia "archivo"](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Para obtener más información, consulte [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Cómo: Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
 >  Se crea una referencia de archivo en lugar de una referencia entre proyectos si la versión de destino de .NET Framework de un proyecto es la versión 4.5, y la del otro proyecto es la versión 2, 3, 3.5 o 4.0.  

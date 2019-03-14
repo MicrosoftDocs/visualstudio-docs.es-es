@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dee0372bc660d2246ead2ecc5340474c96230cbd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713157"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526586"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Cómo depurar para principiantes sin experiencia
 
@@ -78,7 +78,7 @@ A continuación, crearemos una aplicación que tiene algunos errores.
 
 1. Debe tener instalado Visual Studio y las cargas de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo multiplataforma de .NET Core**, según el tipo de aplicación que quiera crear.
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
 
     Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en **Herramientas** > **Obtener herramientas y características**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** (o la carga de trabajo **Desarrollo multiplataforma de .NET Core**) y después haga clic en **Modificar**.
 

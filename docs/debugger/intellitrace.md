@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4ad4108e798c493ee17bf37420440acdf607b53
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24785b4f39265b71c3f1cb18b4331ded53652905
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317060"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526768"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -69,7 +69,7 @@ IntelliTrace también puede ayudar en la depuración de errores que son difícil
 
 Puede guardar datos de IntelliTrace de estos orígenes:
 
-- Una sesión de IntelliTrace en Visual Studio Enterprise 2017, Visual Studio 2015 Enterprise o versiones anteriores de Visual Studio Ultimate.
+- Una sesión de IntelliTrace en Visual Studio 2015 Enterprise o versiones posteriores o versiones anteriores de Visual Studio Ultimate.
 
 - Sesiones de prueba en Microsoft Test Manager.
 
@@ -131,7 +131,7 @@ De forma predeterminada, IntelliTrace únicamente registra eventos de IntelliTra
 
 - **Eventos de aplicación de SharePoint 2010 y SharePoint 2013**
 
-     Puede registrar eventos de perfil de usuario y un subconjunto de eventos del sistema de registro unificado (ULS) para las aplicaciones de SharePoint 2010 y 2013 que se ejecutan fuera de Visual Studio. Puede guardar estos eventos en un archivo .iTrace. Requiere Visual Studio Enterprise 2017, Visual Studio Enterprise 2015, una versión anterior de Visual Studio Ultimate, o [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) que se ejecutan en **seguimiento** modo.
+     Puede registrar eventos de perfil de usuario y un subconjunto de eventos del sistema de registro unificado (ULS) para las aplicaciones de SharePoint 2010 y 2013 que se ejecutan fuera de Visual Studio. Puede guardar estos eventos en un archivo .iTrace. Requiere Visual Studio Enterprise 2015 o versiones posteriores, una versión anterior de Visual Studio Ultimate, o [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) que se ejecutan en **seguimiento** modo.
 
      Al abrir el archivo .iTrace, especifique un identificador de correlación de SharePoint para buscar la solicitud web coincidente, ver los eventos registrados e iniciar la depuración desde un evento específico. Si el archivo contiene excepciones no controladas, puede elegir un identificador de correlación para empezar a depurar una excepción.
 

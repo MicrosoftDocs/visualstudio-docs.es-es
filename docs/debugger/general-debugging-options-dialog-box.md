@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347e2948538b8d4149ce6228656d190c5f972a6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689309"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526547"
 ---
 # <a name="general-debugging-options"></a>Opciones generales de depuración
 
@@ -54,7 +54,7 @@ En condiciones de 2 y 3, a veces detecta la excepción mediante código administ
 
 **Habilitar filtros de punto de interrupción**: le permite establecer filtros en los puntos de interrupción, por lo que afectará solo procesos específicos, subprocesos o equipos.
 
-**Usar la nueva aplicación auxiliar de excepciones**: permite que la aplicación auxiliar de excepciones (Visual Studio 2017) que reemplaza el Asistente de excepciones.
+**Usar la nueva aplicación auxiliar de excepciones**: permite que la aplicación auxiliar de excepciones que reemplaza el Asistente de excepciones. (Aplicación auxiliar de excepciones se admite a partir de Visual Studio 2017)
 
 > [!NOTE]
 > Para código administrado, esta opción se denominaba anteriormente **habilitar el Asistente de excepciones** .
@@ -158,7 +158,7 @@ Para ver los símbolos que están disponibles en la tabla de exportación de un 
 
 Si usa una versión anterior de Visual Studio, podrían encontrarse con algunas opciones adicionales.
 
-**Habilitar el Asistente de excepciones**: para código administrado, permite que el Asistente de excepciones. En Visual Studio 2017, la aplicación auxiliar de excepciones reemplaza al Asistente de excepciones.
+**Habilitar el Asistente de excepciones**: para código administrado, permite que el Asistente de excepciones. A partir de Visual Studio 2017, la aplicación auxiliar de excepciones reemplaza al Asistente de excepciones.
 
 **Desenredar la pila de llamadas en las excepciones no controladas**: hace que el **pila de llamadas** ventana para revertir la pila de llamadas al punto antes de que se produjo la excepción no controlada.
 

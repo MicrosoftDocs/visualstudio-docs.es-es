@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 08b58dd22e47844e62c0d312efc17e332c53f2c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0b97808da917fcbeefcd849dae601fe7410d84b7
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702179"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526608"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Depuración remota de ASP.NET Core en un equipo remoto de IIS en Visual Studio 2017
 Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y ejecutar las herramientas remotas en el equipo donde ha implementado la aplicación y, a continuación, adjunte a su aplicación en ejecución desde Visual Studio.
@@ -163,7 +163,7 @@ Para obtener información acerca de cómo ejecutar el depurador remoto como un s
 2. En Visual Studio, haga clic en **Depurar > asociar al proceso** (Ctrl + Alt + P).
 
     > [!TIP]
-    > En Visual Studio 2017, puede volver a adjuntar al mismo proceso adjuntado previamente, utilizando **Depurar > adjuntar al proceso...** (Mayús + Alt + P).
+    > En Visual Studio 2017 y versiones posteriores, puede volver a adjuntar al mismo proceso adjuntado previamente, utilizando **Depurar > adjuntar al proceso...** (Mayús + Alt + P).
 
 3. Establezca el campo Calificador en **\<nombre de equipo remoto>:4022**.
 4. Haga clic en **Actualizar**.

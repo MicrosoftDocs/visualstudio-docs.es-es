@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a53d29e7d72c10b3b7b9f295cb5b7adebab45e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8f8bc5a19e3cb91634b5a61e0b3e917fb0a3f9a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949166"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736993"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Inicio rápido, Entorno, Opciones (cuadro de diálogo)
 
@@ -36,9 +36,9 @@ Puede utilizar los siguientes accesos directos para limitar la búsqueda a las c
 |Categoría|Acceso directo|Descripción del acceso directo|
 |--------------|--------------| - |
 |Usados más recientemente|@mru<br /><br /> Por ejemplo, `@mru font`.|Muestra hasta cinco de los elementos que ha **usado más recientemente**.|
-|Menús|@menu<br /><br /> Por ejemplo, `@menu font`.|Limita la búsqueda a los elementos de menú.|
+|Menús|@menu<br /><br /> Por ejemplo, `@menu project`.|Limita la búsqueda a los elementos de menú.|
 |Opciones|@opt<br /><br /> Por ejemplo, `@opt font`.|Limita la búsqueda a la configuración del cuadro de diálogo **Opciones**.|
-|Documentos|@doc<br /><br /> Por ejemplo, `@doc font`.|Limita la búsqueda a los nombres de archivo y rutas de acceso de documentos abiertos para los criterios de búsqueda, pero no busca el texto dentro de los propios archivos.|
+|Documentos|@doc<br /><br /> Por ejemplo, `@doc program.cs`.|Limita la búsqueda a los nombres de archivo y rutas de acceso de documentos abiertos para los criterios de búsqueda, pero no busca el texto dentro de los propios archivos.|
 
 > [!NOTE]
 > Puede cambiar las teclas de método abreviado en la página **General**, **Teclado**, en el cuadro de diálogo **Opciones**.
