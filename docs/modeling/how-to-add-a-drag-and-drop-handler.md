@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff2be60979298de7a4c10e55285f1cdedc01ba9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954470"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867753"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Filtrar Agregar un controlador para arrastrar y colocar
 
@@ -70,7 +70,7 @@ En el nuevo archivo, defina una clase parcial para la clase de forma o diagrama 
 
      Para obtener más información, vea [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
-Defina `IsAcceptableDropItem(e)` para determinar si el elemento arrastrado es aceptable, y ProcessDragDropItem(e) para actualizar su modelo cuando el elemento se suelta. Estos métodos deben extraer primero el elemento de los argumentos de evento. Para obtener información acerca de cómo hacerlo, consulte [cómo obtener una referencia al elemento arrastrado](#extracting).
+Defina `IsAcceptableDropItem(e)` para determinar si el elemento arrastrado es aceptable, y ProcessDragDropItem(e) para actualizar su modelo cuando el elemento se suelta. Estos métodos deben extraer primero el elemento de los argumentos de evento. Para obtener información acerca de cómo hacerlo, consulte [cómo obtener una referencia al elemento arrastrado](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="define-gesture-handlers-by-using-mef"></a>Definir controladores de gestos usando MEF
 
@@ -114,7 +114,7 @@ MEF (Managed Extensibility Framework) permite definir componentes que se pueden 
 
      Puede crear más de un componente de controlador de gestos, como cuando tiene diferentes tipos de objetos arrastrados.
 
-3.  Agregue definiciones de clase parciales para las clases de forma, conector o diagrama de destino, y defina los métodos `IsAcceptableDropItem()` y `ProcessDragDropItem()`. Estos métodos deben empezar por extraer el elemento arrastrado de los argumentos del evento. Para obtener más información, consulte [cómo obtener una referencia al elemento arrastrado](#extracting).
+3.  Agregue definiciones de clase parciales para las clases de forma, conector o diagrama de destino, y defina los métodos `IsAcceptableDropItem()` y `ProcessDragDropItem()`. Estos métodos deben empezar por extraer el elemento arrastrado de los argumentos del evento. Para obtener más información, consulte [cómo obtener una referencia al elemento arrastrado](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="how-to-decode-the-dragged-item"></a>Cómo decodificar el elemento arrastrado
 
@@ -132,7 +132,7 @@ Para detectar los formatos en los que la información del origen de la operació
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         También puede transmitir objetos, como referencias de ModelBus, desde el origen con su propio formato personalizado. Para obtener más información, consulte [cómo enviar referencias de ModelBus en operaciones de arrastrar y colocar](#mbr).
+         También puede transmitir objetos, como referencias de ModelBus, desde el origen con su propio formato personalizado. Para obtener más información, consulte [cómo enviar referencias de ModelBus en operaciones de arrastrar y colocar](#to-send-an-object-from-a-source-dsl).
 
 -   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -Utilice esta propiedad si desea que los usuarios arrastren elementos desde un DSL o un modelo UML. Un prototipo de grupo de elementos contiene uno o varios objetos, vínculos y los valores de sus propiedades. También se usa en operaciones de pegar y cuando se agrega un elemento del cuadro de herramientas. En un prototipo, los objetos y sus tipos se identifican por su GUID. Por ejemplo, este código permite al usuario arrastrar elementos de clase desde un diagrama UML o el Explorador de modelos UML:
 

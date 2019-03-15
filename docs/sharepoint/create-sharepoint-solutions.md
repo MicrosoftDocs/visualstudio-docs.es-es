@@ -12,17 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c29c74388ed5766827ef04b378aa2d51167662d3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599855"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869920"
 ---
 # <a name="create-sharepoint-solutions"></a>Crear soluciones de SharePoint
   Puede crear aplicaciones de SharePoint en Visual Studio como una alternativa a crearlas en SharePoint Designer. Visual Studio promueve el desarrollo rápido de SharePoint al ofrecer características como herramientas de depuración avanzadas, IntelliSense, finalización de instrucciones y plantillas de proyecto. Visual Studio también aprovecha las herramientas y los lenguajes avanzados basados en .NET Framework. Puede desarrollar proyectos de SharePoint mediante Visual Basic o Visual C# y puede desarrollar proyectos de aplicaciones para SharePoint mediante JavaScript.
 
- Para obtener información sobre SharePoint 2013 y los complementos de SharePoint, vea [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) y [Crear aplicaciones para SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Para obtener información sobre SharePoint 2013 y los complementos de SharePoint, vea [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) y [Crear aplicaciones para SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
 >  Descubra cómo usar el nuevo [modelo de complementos de SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) a fin de ampliar la experiencia de SharePoint para los usuarios. Estos complementos tienen una superficie muy pequeña en comparación con las soluciones de SharePoint y puede crearlos con prácticamente cualquier tecnología de programación web, como HTML5, CSS3, JavaScript y XML.

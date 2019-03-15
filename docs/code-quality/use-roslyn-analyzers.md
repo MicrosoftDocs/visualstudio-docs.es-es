@@ -1,5 +1,5 @@
 ---
-title: Usar y configurar los analizadores de Roslyn
+title: Supresión y la gravedad de regla de analizador
 ms.date: 03/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924609"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873507"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurar y usar las reglas del analizador de Roslyn
+# <a name="use-roslyn-analyzers"></a>Usar analizadores de Roslyn
 
 Reglas del analizador de .NET compiler Platform («Roslyn»), o *diagnósticos*, analizar el código de C# o Visual Basic a medida que escribe. Cada diagnóstico tiene un estado de gravedad y la supresión de predeterminado que se puede sobrescribir para el proyecto. Este artículo describe la gravedad de regla de configuración, utilizando los conjuntos de reglas y suprimir las infracciones.
 
@@ -91,7 +91,7 @@ Puede cambiar la gravedad de una regla de **el Explorador de soluciones**, o den
 
 ### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Para establecer la regla de archivo de conjunto de gravedad de la regla
 
-1. Abrir el conjunto de reglas archivo haga doble clic en **el Explorador de soluciones**, seleccione **Abrir conjunto de reglas activo** en el menú contextual de la **analizadores** nodo, o mediante la selección **Abierto** en el **análisis de código** página de propiedades del proyecto.
+1. Abrir el [conjunto de reglas](analyzer-rule-sets.md) archivo haciendo doble clic en él en **el Explorador de soluciones**, seleccione **Abrir conjunto de reglas activo** en el menú contextual de la **analizadores** nodo, o bien seleccionando **abierto** en el **análisis de código** página de propiedades del proyecto.
 
 1. Vaya a la regla expandiendo el ensamblado que lo contiene.
 

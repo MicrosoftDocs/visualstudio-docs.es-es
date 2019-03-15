@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687892"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873016"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Crear un Control de cuadro de herramientas de Windows Forms
 La plantilla de elemento de Control de cuadro de herramientas de Windows Forms que se incluye en las herramientas de extensibilidad de Visual Studio (SDK de VS) le permite crear un control que se agrega automáticamente a la **cuadro de herramientas** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un control de contador sencillo que puede distribuir a otros usuarios.
@@ -206,7 +206,7 @@ El `Counter` control va a exponer un método para incrementar el contador, un ev
     El contador se restablece a **0**.
 
 ## <a name="next-steps"></a>Pasos siguientes
-Cuando se crea un **cuadro de herramientas** control, Visual Studio crea un archivo denominado *ProjectName.vsix* en la carpeta \bin\debug\ del proyecto. Puede implementar el control mediante la carga de la *.vsix* archivo a una red o a un sitio Web. Cuando un usuario abre el *.vsix* archivo, el control se instala y se agrega a Visual Studio **cuadro de herramientas** en el equipo del usuario. Como alternativa, puede cargar el *.vsix* archivo [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) para que los usuarios pueden buscarlo en el **herramientas**  >   **Extensiones y actualizaciones** cuadro de diálogo.
+Cuando se crea un **cuadro de herramientas** control, Visual Studio crea un archivo denominado *ProjectName.vsix* en la carpeta \bin\debug\ del proyecto. Puede implementar el control mediante la carga de la *.vsix* archivo a una red o a un sitio Web. Cuando un usuario abre el *.vsix* archivo, el control se instala y se agrega a Visual Studio **cuadro de herramientas** en el equipo del usuario. Como alternativa, puede cargar el *.vsix* archivo [Visual Studio Marketplace](https://marketplace.visualstudio.com/) para que los usuarios pueden buscarlo en el **herramientas**  >   **Extensiones y actualizaciones** cuadro de diálogo.
 
 ## <a name="see-also"></a>Vea también
 - [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)

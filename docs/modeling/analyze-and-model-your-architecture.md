@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf7e7bf78baede7e964aeeed7484261fdab2ef7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924477"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873673"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizar y modelar la arquitectura
 
@@ -88,7 +88,7 @@ Diagramas de dependencia le permiten definir la estructura de una aplicación co
 **Vea:**
 
 -   [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
--   [Diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md)
+-   [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
 -   [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Lenguaje específico del dominio (DSL)
@@ -109,5 +109,5 @@ Un DSL es una notación que se diseña con un objetivo concreto. En Visual Studi
 
 ## <a name="see-also"></a>Vea también
 
-- [Novedades](../modeling/what-s-new-for-design-in-visual-studio.md)
+- [Novedades de modelado en Visual Studio 2017](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps y administración del ciclo de vida de las aplicaciones](/azure/devops/user-guide/devops-alm-overview)

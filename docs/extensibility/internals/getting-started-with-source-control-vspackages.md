@@ -11,26 +11,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4038b552a8be2ae1e47ad4f4a6fa1ca0cee6d82e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6f58511f8f716e71851c727915399f18d2e1d31a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619867"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872070"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Introducción a VSPackages de control de código fuente
+
 Un VSPackage de control de código fuente es una alternativa más avanzada para el complemento de control de código fuente. Para obtener más información acerca de los complementos de control de código fuente, consulte [crear un control de código fuente complemento](../../extensibility/internals/creating-a-source-control-plug-in.md). Un VSPackage de control de código fuente permite un control completo sobre el modelo de control de código fuente, las características y la interfaz de usuario (UI) y se integra en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno como un paquete VSPackage.
 
 ## <a name="in-this-section"></a>En esta sección
-- [Determinar si se debe implementar un VSPackage de control de código fuente](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
 
- Explica las opciones para soluciones de control de código fuente y proporciona directrices generales para elegir una ruta de acceso de integración adecuados.
+[Determinar si se debe implementar un VSPackage de control de código fuente](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
+
+Explica las opciones para soluciones de control de código fuente y proporciona directrices generales para elegir una ruta de acceso de integración adecuados.
 
 ## <a name="related-sections"></a>Secciones relacionadas
+
 - [Novedades en control de código fuente](../../extensibility/internals/what-s-new-in-source-control.md)
 
- Describe nuevas características de uso de VSPackages con control de código fuente.
+   Describe nuevas características de uso de VSPackages con control de código fuente.
 
 - [Crear un VSPackage de control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- Describe cómo crear un control de código fuente VSPackage que no solo proporciona la funcionalidad de control de código fuente, pero se puede usar para personalizar el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la interfaz de usuario de control de código fuente.
+   Describe cómo crear un control de código fuente VSPackage que no solo proporciona la funcionalidad de control de código fuente, pero se puede usar para personalizar el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la interfaz de usuario de control de código fuente.

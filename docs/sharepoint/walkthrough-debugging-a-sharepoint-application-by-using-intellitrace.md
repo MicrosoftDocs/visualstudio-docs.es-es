@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad0d12560b1da99beadf2e519d2e430e8d76a45f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6cf4cd222c511d1ae9071d07f0fab517e36eb30e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875376"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868264"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace
 
@@ -33,15 +33,15 @@ Con IntelliTrace, puede depurar las soluciones de SharePoint más fácilmente. L
 
  En este tutorial se muestran las tareas siguientes:
 
-- [Crear un receptor de características](#BKMK_CreateReceiver)
+- [Crear un receptor de características](#create-a-feature-receiver)
 
-- [Agregue código al receptor de características](#BKMK_AddCode)
+- [Agregue código al receptor de características](#add-code-to-the-feature-receiver)
 
-- [El proyecto de prueba](#BKMK_Test1)
+- [El proyecto de prueba](#test-the-project)
 
-- [Recopilar datos de IntelliTrace mediante Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)
+- [Recopilar datos de IntelliTrace mediante Microsoft Monitoring Agent](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [Depurar y corregir la solución de SharePoint](#BKMK_DebugSolution)
+- [Depurar y corregir la solución de SharePoint](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

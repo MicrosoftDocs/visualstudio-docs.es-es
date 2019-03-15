@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59aada89df05d27644eb13aeef58b5573bb24478
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f1fe4ebce3a49c4aa626515e22eacd1c8e263847
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931356"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870378"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Especificar CultureInfo
 
@@ -86,4 +86,4 @@ Este ejemplo produce el siguiente resultado:
 
 ## <a name="see-also"></a>Vea también
 
-- [Uso de la clase CultureInfo](/dotnet/standard/globalization-localization/globalization#Cultures)
+- [Uso de la clase CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

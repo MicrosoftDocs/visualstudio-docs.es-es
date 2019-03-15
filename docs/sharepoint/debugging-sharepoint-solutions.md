@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d375386da4d62117105bc732425a2678e0a48d0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640238"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873115"
 ---
 # <a name="debug-sharepoint-solutions"></a>Depurar soluciones de SharePoint
   Puede depurar las soluciones de SharePoint utilizando el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Al iniciar la depuración, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implementa los archivos de proyecto en el servidor de SharePoint y, a continuación, se abre una instancia del sitio de SharePoint en el explorador Web. En las secciones siguientes se explica cómo depurar aplicaciones de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Habilitar la depuración](#EnableDebug)
+-   [Habilitar la depuración](#enable-debugging)
 
--   [Depuración con F5 y proceso de implementación](#Deployment)
+-   [Proceso de depuración e implementación de F5](#f5-debug-and-deployment-process)
 
--   [Características de proyecto de SharePoint](#Features)
+-   [Características de proyecto de SharePoint](#sharepoint-project-features)
 
--   [Depuración de flujos de trabajo](#Workflow)
+-   [Depurar flujos de trabajo](#debug-workflows)
 
--   [Depurar receptores de eventos de característica](#FeatureEvents)
+-   [Depurar receptores de eventos de característica](#debug-feature-event-receivers)
 
--   [Habilitar información de depuración mejorada](#EnhancedDebug)
+-   [Habilitar ehanced información de depuración](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Habilitar depuración
  Cuando se depura por primera vez una solución de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], un cuadro de diálogo advierte de que el archivo web.config no está configurado para habilitar la depuración. (Se crea el archivo web.config al instalar el servidor de SharePoint. Para obtener más información, consulte [trabajar con archivos Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) El cuadro de diálogo da la opción de ejecutar el proyecto sin depurar o modificar el archivo web.config para habilitar la depuración. Si elige la primera opción, el proyecto se ejecuta normalmente. Si elige la segunda opción, el archivo web.config se configura para:
@@ -137,7 +137,7 @@ ms.locfileid: "56640238"
 
  Para deshabilitar la activación automática de la característica en SharePoint y permitir la depuración correcta de receptores de eventos de característica, establezca el valor del proyecto **Active Deployment Configuration** propiedad **sin activación** antes de depurar. A continuación, una vez que empiece a depurar su aplicación de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], active manualmente la característica en SharePoint. Para activar la característica, abra el **acciones del sitio** en SharePoint, elija **configuración del sitio**, elija el **administrar las características del sitio** vincular y, a continuación, elija el **Activar** botón situado junto a la característica para continuar con la depuración con normalidad.
 
-## <a name="enable-enhanced-debug-information"></a>Habilitar información de depuración mejorada
+## <a name="enable-enhanced-debugging-information"></a>Habilitar información de depuración mejorada
  Debido a las interacciones a veces complejas entre el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proceso (devenv.exe), el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proceso de host de SharePoint (*vssphost4.exe*), SharePoint y la capa de WCF, diagnóstico de errores que se producen mientras creación, implementación etc. pueden ser un desafío. Para ayudarle a resolverlos, puede habilitar la información de depuración mejorada. Para ello, entre en la clave del Registro siguiente en el Registro de Windows:
 
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**

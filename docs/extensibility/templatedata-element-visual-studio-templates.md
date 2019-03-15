@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd18443e36a48967b4eb9fdf24f8d5e7869c323
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 94a6f4b69648c94e6530cb28180193e5a74c1265
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700151"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870585"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData (Elemento, Plantillas de Visual Studio)
 Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .
@@ -58,7 +58,7 @@ Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuev
 | [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si se crea una carpeta que contiene en las instancias del proyecto. |
 | [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica el nombre que el sistema del proyecto de Visual Studio generará para el proyecto o elemento cuando se crea. |
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si el sistema del proyecto de Visual Studio generará el nombre predeterminado para un proyecto o elemento cuando se crea. |
-| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si se puede crear el proyecto como un proyecto temporal. |
+| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si se puede crear el proyecto como un proyecto temporal (solo Visual Studio 2017). |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si el **examinar** botón está disponible en el **nuevo proyecto** cuadro de diálogo para que los usuarios puedan modificar fácilmente el directorio predeterminado donde se guarda un nuevo proyecto. |
 | [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si la plantilla aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo. |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica el número de categorías primarias que mostrará la plantilla en el **nuevo proyecto** cuadro de diálogo. |
