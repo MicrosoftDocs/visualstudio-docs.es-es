@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223499"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872439"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 
@@ -187,7 +187,7 @@ El Comprobador de análisis de código nativo (PREfast) se integra en el entorno
 
 Asegúrese de que agregar estas propiedades antes de importar el archivo Microsoft.Cpp.targets. Puede elegir conjuntos de reglas específicas o crear un conjunto de reglas personalizado o usar el conjunto de reglas predeterminado que incluye otras comprobaciones de PREfast.
 
-Puede ejecutar el Comprobador de C++ Core solo en los archivos especificados utilizando el mismo enfoque que [se ha descrito anteriormente](#coreckeck_per_file), pero con archivos de MSBuild. Se pueden establecer las variables de entorno mediante el `BuildMacro` elemento:
+Puede ejecutar el Comprobador de C++ Core solo en los archivos especificados utilizando el mismo enfoque que [se ha descrito anteriormente](#corecheck_per_file), pero con archivos de MSBuild. Se pueden establecer las variables de entorno mediante el `BuildMacro` elemento:
 
 ```xml
 <ItemGroup>
