@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Cálculo del rendimiento de las aplicaciones con la generación de perfiles | Microsoft Docs
-description: 'Aprenda a usar Visual Studio 2017 para crear perfiles del rendimiento de las aplicaciones, los servicios y las herramientas en el idioma de su elección.'
+description: 'Aprenda a usar Visual Studio para crear perfiles del rendimiento de las aplicaciones, los servicios y las herramientas en el idioma de su elección.'
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
