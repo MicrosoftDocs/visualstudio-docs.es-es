@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear proyectos de Office en Visual Studio
+title: Procedimiento Crear proyectos de Office en Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -23,14 +23,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 617ca350f318a8617b28d4bface3d09106b3b591
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614316"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868177"
 ---
-# <a name="how-to-create-office-projects-in-visual-studio"></a>Procedimiento Crear proyectos de Office en Visual Studio
+# <a name="how-to-create-office-projects-in-visual-studio"></a>Filtrar Crear proyectos de Office en Visual Studio
   Puede usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para crear complementos de VSTO y de nivel de documento personalizaciones para aplicaciones de Microsoft Office. Para obtener más información acerca de estos tipos de proyectos, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -85,17 +85,18 @@ ms.locfileid: "56614316"
 
 7. Elija el botón **Aceptar** .
 
-    > [!NOTE]
-    >  Los proyectos de complemento siempre se guardan cuando se crean y no se pueden crear como proyectos temporales. Para obtener más información sobre proyectos temporales, vea [proyectos temporales](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).
+   ::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Los proyectos de complemento siempre se guardan cuando se crean y no se pueden crear como proyectos temporales. Para obtener más información sobre proyectos temporales, vea [proyectos temporales](../ide/creating-solutions-and-projects.md#create-a-temporary-project).
+
+   ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>Para crear un proyecto de personalización en el nivel de documento
 
 1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. Si su IDE está configurado para usar la configuración de desarrollo de Visual Basic, en el **archivo** menú, elija **New** > **proyecto**.
 
     Aparecerá el cuadro de diálogo **Nuevo proyecto** .
-
-   > [!NOTE]
-   >  De forma predeterminada, los proyectos de Office tienen como destino [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Para obtener más información, consulte [perfil de cliente de .NET Framework](/dotnet/framework/deployment/client-profile).
 
 2. En el panel Plantillas, bajo el nodo para el idioma que desea usar, expanda **Office/SharePoint**.
 
@@ -104,12 +105,12 @@ ms.locfileid: "56614316"
 4. En la lista de plantillas de proyecto, seleccione una plantilla de proyecto de nivel de documento. Para obtener una lista de plantillas de proyecto de nivel de documento disponibles, consulte [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Si las plantillas de proyecto no son visibles al seleccionar el **complementos de Office** nodo, asegúrese de que **.NET Framework 4** o posterior, está seleccionado en el cuadro combinado en la parte superior del cuadro de diálogo. Las plantillas de proyecto de Office se pueden ver para ambas versiones de .NET Framework.
+   > Si las plantillas de proyecto no son visibles al seleccionar el **complementos de Office** nodo, asegúrese de que **.NET Framework 4** o posterior esté seleccionado.
 
 5. En el **nombre** , escriba un nombre para el proyecto. De forma predeterminada, este nombre también se usa para el documento. Si el IDE está definido para usar la configuración de desarrollo de Visual C# o la configuración de desarrollo general, escriba también la ubicación y el nombre de la solución.
 
    > [!NOTE]
-   >  No se pueden usar caracteres suplentes en la ruta de acceso del proyecto ni en el nombre del proyecto. Además, si tiene previsto implementar la solución para su uso sin conexión, los caracteres del nombre del proyecto deben ajustarse a las especificaciones del protocolo HTTP.
+   > No se pueden usar caracteres suplentes en la ruta de acceso del proyecto ni en el nombre del proyecto. Además, si tiene previsto implementar la solución para su uso sin conexión, los caracteres del nombre del proyecto deben ajustarse a las especificaciones del protocolo HTTP.
 
 6. Elija el botón **Aceptar** .
 

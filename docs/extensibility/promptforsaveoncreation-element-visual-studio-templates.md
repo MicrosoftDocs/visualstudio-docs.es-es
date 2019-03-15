@@ -13,17 +13,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 309c02abb29b599a5753a39c28d9b95314088550
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: 882465acd61f3f76d358f52ae75c9041c311dcd5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696719"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867287"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation (elemento) (plantillas de Visual Studio)
-Especifica si se pide al usuario para un proyecto de la ubicación a través de almacenamiento la **nuevo proyecto** cuadro de diálogo al crear un proyecto. Si este elemento está establecido en `true`, a continuación, se solicitará al usuario una operación de guardar ubicación; si `false`, a continuación, se les pide no. (Es decir, se crea un proyecto temporal).
 
- \<VSTemplate> \<TemplateData> \<PromptForSaveOnCreation>
+Especifica si se pide al usuario para un proyecto de la ubicación a través de almacenamiento la **nuevo proyecto** cuadro de diálogo al crear un proyecto. Si este elemento se establece en `true`, a continuación, se solicitará al usuario una operación de guardar ubicación. Si `false`, a continuación, se les pide no (es decir, se crea un proyecto temporal).
+
+```xml
+\<VSTemplate>
+\<TemplateData>
+\<PromptForSaveOnCreation>
+```
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +65,7 @@ Especifica si se pide al usuario para un proyecto de la ubicación a través de 
 ## <a name="example"></a>Ejemplo
  En el ejemplo siguiente se establece el valor de `PromptForSaveOnCreation` igual a `false`, lo que especifica que el proyecto se deben crear como un proyecto temporal.
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +91,6 @@ Especifica si se pide al usuario para un proyecto de la ubicación a través de 
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

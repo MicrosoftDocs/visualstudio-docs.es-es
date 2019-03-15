@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0445e66b10ca8bfa0ae4f5d2c35246d71745788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 79c27ec92d93f9f9cd88cc1155521b04ea7c2908
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604875"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868110"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2
   Después de definir un tipo personalizado de elemento de proyecto de SharePoint y asociarlo a una plantilla de proyecto en Visual Studio, es posible que desee proporcionar también un asistente para la plantilla. Puede usar el asistente con el fin de recopilar información de los usuarios cuando usan la plantilla para crear un nuevo proyecto que contiene el elemento de proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.
@@ -195,7 +195,7 @@ ms.locfileid: "56604875"
 
 - El administrador de firma del proyecto.
 
-  Para obtener más información acerca de estos componentes, consulte [descripción de los componentes del asistente](#wizardcomponents).
+  Para obtener más información acerca de estos componentes, consulte [comprender los componentes del asistente](#understand-the-wizard-components).
 
 #### <a name="to-define-the-sharepoint-command-ids"></a>Para definir los identificadores de comando de SharePoint
 

@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbd581da1e2a081636c4f4cf7885241c15eff97
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876270"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868064"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implementar extensiones para las herramientas de SharePoint en Visual Studio
 
 Para implementar una extensión de herramientas de SharePoint, cree un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) que contiene el ensamblado de extensión y cualquier otro archivo que desea distribuir con la extensión. Un paquete VSIX no es un archivo comprimido que sigue el estándar Open Packaging Conventions (OPC). Los paquetes VSIX tienen la *.vsix* extensión.
 
-Después de crear un paquete VSIX, otros usuarios pueden ejecutar el archivo .vsix para instalar la extensión. Cuando un usuario instala la extensión, todos los archivos se instalan en la carpeta %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions. Para implementar la extensión, puede cargar el paquete VSIX para la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) sitio Web o se puede distribuir el paquete a los clientes por otros medios, como el paquete en un recurso compartido de red o algún otro sitio Web de hospedaje.
+Después de crear un paquete VSIX, otros usuarios pueden ejecutar el archivo .vsix para instalar la extensión. Cuando un usuario instala la extensión, todos los archivos se instalan en la carpeta %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions. Para implementar la extensión, puede cargar el paquete VSIX para la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sitio Web o se puede distribuir el paquete a los clientes por otros medios, como el paquete en un recurso compartido de red o algún otro Web de hospedaje sitio.
 
-Para obtener más información sobre cómo crear paquetes VSIX y su implementación a la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847), consulte [envío extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
+Para obtener más información sobre cómo crear paquetes VSIX y su implementación a la [Visual Studio Marketplace](https://marketplace.visualstudio.com/), consulte [envío extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
  Puede crear un paquete VSIX mediante el **proyecto VSIX** plantilla en Visual Studio, o bien puede crear manualmente un paquete VSIX.
 

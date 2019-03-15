@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f22630a823e592e0cdc2128dfb3ab38e1b177d72
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841748"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867711"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Tutorial: Generar perfiles de una aplicación de SharePoint
   En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite encontrar y eliminar la parte más cara (rendimiento más lento) del proyecto, también conocido como el *caliente*.
 
  En este tutorial se muestran las siguientes tareas:
 
-- [Agregar una característica y un receptor de eventos de característica](#BKMK_AddFtrandFtrEvntReceiver).
+- [Addg una característica y un receptor de eventos de característica](#add-a-feature-and-feature-event-receiver).
 
-- [Configurar e implementar la aplicación de SharePoint](#BKMK_ConfigSharePointApp).
+- [Configurar e implementar la aplicación de SharePoint](#configure-and-deploy-the-sharepoint-application).
 
-- [Ejecutar la aplicación de SharePoint](#BKMK_RunSPApp).
+- [Ejecute la aplicación de SharePoint](#run-the-sharepoint-application).
 
-- [Visualización e interpretación de los resultados de la generación de perfiles](#BKMK_ViewResults).
+- [Ver e interpretar los resultados del perfil](#view-and-interpret-the-profile-results).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

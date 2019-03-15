@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796678"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870278"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dentro de Visual Studio SDK
 En esta sección se proporciona información detallada acerca de las extensiones de Visual Studio, incluida la arquitectura de Visual Studio, componentes, servicios, esquemas, utilidades y similares.
@@ -90,7 +90,7 @@ En esta sección se proporciona información detallada acerca de las extensiones
  Para obtener más información, consulte [proyectos](../../extensibility/internals/projects.md) y [soluciones](../../extensibility/internals/solutions.md).
 
 ## <a name="project-and-item-templates"></a>Plantillas de proyecto y elemento
- Visual Studio incluye plantillas de proyecto predefinidas y las plantillas de elemento de proyecto. Puede también hacer sus propias plantillas o adquirir las plantillas de la Comunidad y, a continuación, integrarlos en Visual Studio. El [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) es el lugar indicado para las plantillas y las extensiones.
+ Visual Studio incluye plantillas de proyecto predefinidas y las plantillas de elemento de proyecto. Puede también hacer sus propias plantillas o adquirir las plantillas de la Comunidad y, a continuación, integrarlos en Visual Studio. El [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) es el lugar indicado para las plantillas y las extensiones.
 
  Las plantillas contienen la estructura del proyecto y los archivos básicos que son necesarios para compilar un determinado tipo de clase, biblioteca, control o aplicación. Cuando desea desarrollar software que se parece a una de las plantillas, cree un proyecto que se basa en la plantilla y, a continuación, modifique los archivos en el proyecto.
 

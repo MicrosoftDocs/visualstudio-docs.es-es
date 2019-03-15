@@ -1,6 +1,6 @@
 ---
 title: 'CA1024: Utilizar las propiedades donde corresponda'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3fba3a733381642999d7bccb5666b7db895b87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4008872a7cb96386ef702d21ba8a18d96037d83
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922308"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869262"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Utilizar las propiedades donde corresponda
 
@@ -35,7 +35,9 @@ ms.locfileid: "55922308"
 
 ## <a name="cause"></a>Motivo
 
-Un método público o protegido tiene un nombre que comienza con `Get`no toma ningún parámetro y devuelve un valor que no es una matriz.
+Un método tiene un nombre que comienza con `Get`no toma ningún parámetro y devuelve un valor que no es una matriz.
+
+De forma predeterminada, esta regla solo se examina los métodos públicos y protegidos, pero se trata de [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
@@ -69,11 +71,21 @@ Para corregir una infracción de esta regla, cambie el método a una propiedad.
 
 Suprima una advertencia de esta regla si el método cumpla al menos uno de los criterios mostrados anteriormente.
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>Controlar la expansión de la propiedad en el depurador
+## <a name="configurability"></a>Capacidad de configuración
 
-Una razón que los programadores de evitan el uso de una propiedad es ya que no desean que el depurador se expanda automáticamente. Por ejemplo, puede implicar la propiedad de asignación de un objeto grande o una llamada P/Invoke, pero realmente no podría tener cualquier efecto secundario observable.
+Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
 
-Puede impedir que el depurador de ampliación automática propiedades aplicando <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. El ejemplo siguiente muestra este atributo se aplica a una propiedad de instancia.
+```
+dotnet_code_quality.ca1024.api_surface = private, internal
+```
+
+Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (diseño). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
+
+## <a name="control-property-expansion-in-the-debugger"></a>Expansión de la propiedad de control en el depurador
+
+Los programadores de evitan el uso de una propiedad de una de las razones es ya que no desean que el depurador de ampliación automática. Por ejemplo, puede implicar la propiedad de asignación de un objeto grande o una llamada P/Invoke, pero realmente no podría tener cualquier efecto secundario observable.
+
+Puede evitar que el depurador de propiedades autoexpanding aplicando <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. El ejemplo siguiente muestra este atributo se aplica a una propiedad de instancia.
 
 ```vb
 Imports System
@@ -123,6 +135,6 @@ namespace Microsoft.Samples
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente contiene varios métodos que deben convertirse en Propiedades, y varios que no deben porque no se comportan como campos.
+El ejemplo siguiente contiene varios métodos que deben convertirse en propiedades y varios que no deben porque no se comportan como campos.
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

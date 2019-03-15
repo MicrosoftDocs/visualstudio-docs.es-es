@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5495d5aaa3591a5d090b9c0324fb75d2f17d9a4a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316774"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867988"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Crear un Control de cuadro de herramientas WPF
 La plantilla de Control de cuadro de herramientas WPF (Windows Presentation Framework) le permite crear controles de WPF que se agregan automáticamente a la **cuadro de herramientas** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un **cuadro de herramientas** control que se puede distribuir a otros usuarios.
@@ -97,4 +97,4 @@ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el cent
 
 3. Cargar el *.vsix* archivo a una red o a un sitio Web.
 
-    Si va a cargar el archivo a la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) sitio Web, otros usuarios pueden usar **herramientas** > **extensiones y actualizaciones** en Visual Studio para encontrar el control en línea e instalarlo.
+    Si va a cargar el archivo a la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sitio Web, otros usuarios pueden usar **herramientas** > **extensiones y actualizaciones** en Visual Studio para buscar el controlar en línea e instálelo.

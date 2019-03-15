@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c8555067dc86c610c370568ce9e0c7fd13cc5ca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709751"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873446"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Soporte técnico para Visual Studio SDK
 Existen varias opciones de soporte técnico para los clientes que tengan preguntas sobre cómo ampliar el entorno de desarrollo integrado (IDE) de Visual Studio.
@@ -36,7 +36,7 @@ Existen varias opciones de soporte técnico para los clientes que tengan pregunt
  El [foros de MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) proporcionan otra forma para charlar con expertos y homólogos. La interfaz gráfica de usuario (UI) de los foros está diseñada para que sean más fáciles de usar que los grupos de noticias. El [foro de extensibilidad de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=121964) es un buen lugar para empezar a buscar respuestas a preguntas de extensibilidad. Buscar siempre antes de formular una pregunta que otra persona es posible que ya ha solicitado la misma pregunta.
 
 ### <a name="visual-studio-gallery"></a>Galería de Visual Studio
- El [Galería de Visual Studio](https://marketplace.visualstudio.com/) es el lugar para las extensiones y código de ejemplo. Puede encontrar herramientas que mejoran la productividad y el usuario experiencia con aplicaciones de ejemplo que muestran cómo usar VSPackages y Managed Extensibility Framework (MEF) y otros tipos de ejemplos de Visual Studio.
+ El [Visual Studio Marketplace](https://marketplace.visualstudio.com/) es el lugar para las extensiones y código de ejemplo. Puede encontrar herramientas que mejoran la productividad y el usuario experiencia con aplicaciones de ejemplo que muestran cómo usar VSPackages y Managed Extensibility Framework (MEF) y otros tipos de ejemplos de Visual Studio.
 
 ### <a name="visual-studio-sdk-samples"></a>Ejemplos de SDK de Visual Studio
 
@@ -53,16 +53,18 @@ Puede encontrar ejemplos de código abierto de extensiones del SDK de VS en GitH
 ## <a name="paid-support"></a>Soporte técnico de pago
 
 ### <a name="developer-tools-support"></a>Compatibilidad con herramientas de desarrollador
- También se puede adquirir soporte técnico. Una variedad de ofertas de soporte técnico están disponibles en la categoría de herramientas de desarrollo en [Microsoft Help y centros de soporte técnico](http://go.microsoft.com/fwlink/?LinkID=82383).
 
- Los clientes que deseen usar la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] desarrollar paquetes complejos puede considerar la posibilidad de adquirir un contrato de soporte técnico Premier con Microsoft. Para obtener más información, consulte [Microsoft Premier Support](http://go.microsoft.com/fwlink/?LinkID=76660). Las pequeñas empresas, [soporte de las ventajas de asociados](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) puede ser una alternativa atractiva en una oferta de soporte Premier tradicional.
+También se puede adquirir soporte técnico. Una variedad de ofertas de soporte técnico están disponibles en la categoría de herramientas de desarrollo en [Microsoft Help y centros de soporte técnico](http://go.microsoft.com/fwlink/?LinkID=82383).
+
+Los clientes que deseen usar la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] desarrollar paquetes complejos puede considerar la posibilidad de adquirir un contrato de soporte técnico Premier con Microsoft. Para obtener más información, consulte [Microsoft Premier Support](https://support.microsoft.com/premier). Las pequeñas empresas, [soporte de las ventajas de asociados](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) puede ser una alternativa atractiva en una oferta de soporte Premier tradicional.
 
 > [!NOTE]
->  Soporte técnico Standard no se puede usar para la consulta o para obtener consejos.
+> Soporte técnico Standard no se puede usar para la consulta o para obtener consejos.
 
- Se pueden enviar preguntas acerca de las ofertas de soporte técnico Premier junto con el programa VSIP a [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Se pueden enviar preguntas sobre el nuevo programa de ventajas para socios a [ advantg@microsoft.com ](mailto:advantg@microsoft.com).
+Se pueden enviar preguntas acerca de las ofertas de soporte técnico Premier junto con el programa VSIP a [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Se pueden enviar preguntas sobre el nuevo programa de ventajas para socios a [ advantg@microsoft.com ](mailto:advantg@microsoft.com).
 
- Puede encontrar información acerca de las solicitudes de soporte técnico individual en [solicitudes de soporte técnico Individual](http://go.microsoft.com/fwlink/?LinkID=82385).
+Puede encontrar información acerca de las solicitudes de soporte técnico individual en [solicitudes de soporte técnico Individual](http://go.microsoft.com/fwlink/?LinkID=82385).
 
 ## <a name="see-also"></a>Vea también
+
 - [Hable con nosotros](../ide/talk-to-us.md)

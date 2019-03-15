@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223200"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870365"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -102,14 +102,14 @@ Si tiene un diagrama abierto de dependencia que esté vinculado a elementos de l
     > [!NOTE]
     > De forma predeterminada, el **acción de compilación** propiedad en el archivo de diagrama (.layerdiagram) de dependencia se establece en **validar** para que el diagrama se incluye en el proceso de validación.
 
-     El **lista de errores** ventana notifica los errores que se producen. Para obtener más información sobre los errores de validación, consulte [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).
+     El **lista de errores** ventana notifica los errores que se producen. Para obtener más información sobre los errores de validación, consulte [solucionar problemas de validación de capas](#troubleshoot-layer-validation-issues).
 
 2.  Para ver el origen de cada error, haga doble clic en el error en la **lista de errores** ventana.
 
     > [!NOTE]
     > Visual Studio podría mostrar un mapa de código en lugar del origen del error. Esto se produce cuando el código tiene una dependencia en un ensamblado que no se especifica en el diagrama de dependencia o el código le falta una dependencia que se especifica en el diagrama de dependencia. Revise el mapa de código o el código para determinar si debe existir la dependencia. Para obtener más información acerca de los mapas de código, vea [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Para administrar los errores, vea [administrar errores de validación](#ManageErrors).
+3.  Para administrar los errores, vea [resolver errores de validación de capas](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Validar el código en el símbolo del sistema
 
@@ -147,7 +147,7 @@ Si tiene un diagrama abierto de dependencia que esté vinculado a elementos de l
 
      Se mostrará cualquier error que se produzca. Para obtener más información acerca de MSBuild, vea [MSBuild](../msbuild/msbuild.md) y [tarea MSBuild](../msbuild/msbuild-task.md).
 
-   Para obtener más información sobre los errores de validación, consulte [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).
+   Para obtener más información sobre los errores de validación, consulte [solucionar problemas de validación de capas](#troubleshoot-layer-validation-issues).
 
 ### <a name="manage-validation-errors"></a>Administrar errores de validación
 
@@ -195,11 +195,11 @@ Use un editor de texto para abrir el archivo del proyecto de modelado (.modelpro
 
     Esto incluye el diagrama de dependencia en el proceso de validación.
 
-Para administrar los errores en la ventana Lista de errores, vea [administrar errores de validación](#ManageErrors).
+Para administrar los errores en la ventana Lista de errores, vea [resolver errores de validación de capas](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Solucionar problemas de validación de capas
 
-En la siguiente tabla se describen problemas de validación de capas y su solución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información acerca de estos errores, vea [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).
+En la siguiente tabla se describen problemas de validación de capas y su solución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información acerca de estos errores, vea [solucionar problemas de validación de capas](#troubleshoot-layer-validation-issues).
 
 |**Problema**|**Causa posible**|**Resolución**|
 |-|-|-|

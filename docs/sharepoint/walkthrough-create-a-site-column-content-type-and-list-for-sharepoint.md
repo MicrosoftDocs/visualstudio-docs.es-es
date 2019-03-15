@@ -19,27 +19,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d30567186cd1f96d0df9af9493c87cbea4edd0b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607387"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870404"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint
   Los procedimientos siguientes muestran cómo crear columnas de sitio de SharePoint personalizadas, o *campos*, así como un tipo de contenido que usa las columnas de sitio. También muestra cómo crear una lista que usa el nuevo tipo de contenido.
 
  En este tutorial se incluyen las tareas siguientes:
 
-- [Creación de columnas de sitio personalizada](#BKMK_CreatingCustSiteCols).
+- [Crear columnas de sitio personalizadas](#create-custom-site-columns).
 
-- [Creación de un tipo de contenido personalizado](#BKMK_CreateCustContType).
+- [Crear un tipo de contenido personalizado](#create-a-custom-content-type).
 
-- [Creación de una lista](#BKMK_CreateList).
+- [Crear una lista](#create-a-list).
 
-- [Creación de una lista](#BKMK_CreateList).
-
-- [Probar la aplicación](#BKMK_TestApp).
+- [Probar la aplicación](#test-the-application).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

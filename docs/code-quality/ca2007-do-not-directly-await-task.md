@@ -1,5 +1,5 @@
 ---
-title: 'CA2007: No espera una tarea directamente'
+title: 'CA2007: No esperar una tarea directamente'
 ms.date: 03/08/2019
 ms.topic: reference
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 8e94b67d1924e2144f658cd6bcd5989751efdb85
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699684"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869294"
 ---
-# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: No espera una tarea directamente
+# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: No esperar una tarea directamente
 
 |||
 |-|-|
@@ -71,6 +71,26 @@ public async Task Execute()
     await task.ConfigureAwait(false);
 }
 ```
+
+## <a name="configurability"></a>Capacidad de configuración
+
+Puede configurar si desea excluir los métodos asincrónicos que no devuelven un valor de esta regla. Para excluir estos tipos de métodos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+```
+
+También puede configurar qué tipos de ensamblado al que aplicar esta regla de salida. Por ejemplo, para esta regla solo se aplican al código que genera una aplicación de consola o una biblioteca de vínculos dinámicos (es decir, no una interfaz de usuario aplicación), agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+
+```
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
+```
+
+Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>Vea también
 

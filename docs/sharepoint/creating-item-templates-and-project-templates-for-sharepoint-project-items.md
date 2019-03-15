@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de1843891779c3663d11910c3ae87720d7196e17
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: a7bc365df9ef84b5ef8e501bcbbfd48865bb865e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869906"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868048"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint
   Al definir un tipo de elemento de proyecto de SharePoint personalizado, puede asociarlo con una plantilla de elemento o una plantilla de proyecto. Esta asociación permite que otros desarrolladores usen el elemento de proyecto en Visual Studio. También puede crear a un Asistente para la plantilla.
@@ -72,7 +72,7 @@ ms.locfileid: "54869906"
 
 |Archivo opcional|Descripción|
 |-------------------|-----------------|
-|elementos de proyecto de SharePoint|Puede incluir uno o varios archivos .spdata que definen los tipos de elemento de proyecto de SharePoint. Cada *.spdata* debe tener su correspondiente archivo <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementación en un ensamblado de extensión que se incluye en el paquete VSIX con la plantilla de proyecto. Para obtener más información, consulte [creación de plantillas de elemento](#creatingitemtemplates).<br /><br /> Normalmente, los proyectos de SharePoint incluyen al menos un elemento de proyecto de SharePoint. Sin embargo, esto no es necesario.|
+|elementos de proyecto de SharePoint|Puede incluir uno o varios archivos .spdata que definen los tipos de elemento de proyecto de SharePoint. Cada *.spdata* debe tener su correspondiente archivo <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementación en un ensamblado de extensión que se incluye en el paquete VSIX con la plantilla de proyecto. Para obtener más información, consulte [crear plantillas de elementos](#createitemtemplates).<br /><br /> Normalmente, los proyectos de SharePoint incluyen al menos un elemento de proyecto de SharePoint. Sin embargo, esto no es necesario.|
 |*\<featureName>.feature*|Este archivo define una característica de SharePoint que se usa para agrupar varios elementos de proyecto para la implementación. Cuando usa el Diseñador de características para personalizar una característica en el proyecto, Visual Studio almacena datos sobre la característica de este archivo. Si desea agrupar los elementos de proyecto en diferentes características, puede incluir varios *.feature* archivos.<br /><br /> Cuando se crea una plantilla de proyecto de SharePoint personalizada, se recomienda que incluya solo el contenido mínimo necesario en cada *.feature* archivos y configuración de características mediante las API en el <xref:Microsoft.VisualStudio.SharePoint.Features> espacio de nombres en un extensión que está asociada con la plantilla de proyecto. Si lo hace, la plantilla de proyecto está protegida de futuros cambios en la estructura de la *.feature* archivo. Para obtener un ejemplo que muestra cómo crear un *.feature* contenido del archivo con solo el mínimo requerido, consulte [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Si desea modificar un *.feature* archivo directamente, puede comprobar el contenido mediante el esquema en *% archivos de programa (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd*.|
 |*\<featureName>.Template.xml*|Este archivo proporciona la base para el archivo de manifiesto de característica (*Feature.xml*) para cada característica que se genera a partir del proyecto. Puede agregar contenido a este archivo si desea especificar algún comportamiento que no está pensado para los usuarios de su tipo de proyecto pueden cambiar. Para obtener más información, consulte [bloques de creación: Características](http://go.microsoft.com/fwlink/?LinkId=169183) y [Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795) archivos.<br /><br /> Al compilar un paquete de solución del proyecto, Visual Studio combina el contenido de cada par de  *\<NombreDeCaracterística > .feature* archivo y  *\<NombreDeCaracterística >. Template.XML* archivos en función de un archivo de manifiesto. Para obtener más información sobre la creación de paquetes de soluciones, vea [Cómo: Crear un paquete de solución de SharePoint mediante el uso de las tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 

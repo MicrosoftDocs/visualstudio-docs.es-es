@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c2c73e4c74502c047251bd64a2f6d3550cf7fe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642838"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867569"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empaquetar e implementar soluciones de SharePoint
   Normalmente, una solución de SharePoint se implementa en un servidor de SharePoint mediante un archivo de paquete (.wsp) de la solución. Puede usar Visual Studio para organizar los elementos de proyecto de SharePoint en características y crear un paquete para implementar las características de SharePoint.
 
  En este tema se proporciona la información siguiente:
 
--   [Creación de características y paquetes](#Creating)
+-   [Creación de paquetes y características](#create-features-and-packages)
 
--   [Compatibilidad con la herramienta de paquetes y características](#Tools)
+-   [Características y compatibilidad con la herramienta de empaquetado](#feature-and-packaging-tool-support)
 
--   [Implementar soluciones de SharePoint](#Deploying)
+-   [Implementar soluciones de SharePoint](#deploy-sharepoint-solutions)
 
--   [Implementar archivos en soluciones de SharePoint](#DeployingFiles)
+-   [Implementar archivos en soluciones de SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Creación de paquetes y características
  Puede usar Visual Studio para agrupar elementos relacionados de SharePoint en un *característica*. Por ejemplo, una característica para una definición de lista de contactos puede incluir la instancia de lista y la definición de lista. Puede combinar estos dos elementos en una sola característica para la implementación. Para obtener más información acerca de las características, consulte [bloques de creación: Características](http://go.microsoft.com/fwlink/?LinkID=169183).
