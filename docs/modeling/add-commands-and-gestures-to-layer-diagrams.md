@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c595465a9791f00036fb5358c49afae808dce13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b29735eeb8b35b2d674f3574343b19665c87fa19
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932721"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983850"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Agregar comandos y gestos a diagramas de dependencia
 
@@ -54,7 +54,17 @@ El método más rápido para crear una extensión consiste en usar la plantilla 
 
     [Definir un controlador de gestos](#gesture)
 
+::: moniker range="vs-2017"
+
 6. Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque el *.vsix* de archivos en el *bin* directory. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, elija **extensiones y actualizaciones** en el **herramientas** menú.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque el *.vsix* de archivos en el *bin* directory. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, elija **administrar extensiones** en el **extensiones** menú.
+
+::: moniker-end
 
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Agregar un comando o gesto a un VSIX independiente
 
@@ -104,11 +114,9 @@ Si desea crear un VSIX que contenga comandos, validadores de capas y otras exten
 
      Vea también [navegación y actualización de modelos en el código de programa capa](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
-6.  Para probar la característica, presione CTRL+F5 o F5. Se abre una instancia experimental de Visual Studio. En este caso, cree o abra un diagrama de dependencia.
+6.  Para probar la característica, presione **Ctrl**+**F5** o **F5**. Se abre una instancia experimental de Visual Studio. En este caso, cree o abra un diagrama de dependencia.
 
 7.  Para instalar VSIX en la instancia principal de Visual Studio o en otro equipo, busque el **.vsix** de archivos en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX.
-
-     Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .
 
 ##  <a name="command"></a> Definir un comando de menú
 
