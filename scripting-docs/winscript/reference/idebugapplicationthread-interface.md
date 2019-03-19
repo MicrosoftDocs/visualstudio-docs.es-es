@@ -2,7 +2,6 @@
 title: IDebugApplicationThread (interfaz) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 262174d0daecd2c37bafbecee13532ba62e9967f
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: a464085eddbea4f5d29c684c0f1dabc6f853b6d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347793"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158794"
 ---
 # <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread (Interfaz)
 Permite que los motores de lenguaje y los hosts para proporcionar sincronización de subprocesos y para mantener la información de estado de depuración específicas de un subproceso. Esta interfaz extiende la `IRemoteDebugApplicationThread` interfaz para proporcionar acceso no remotos para el subproceso.  

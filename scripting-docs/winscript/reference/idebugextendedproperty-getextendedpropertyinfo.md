@@ -1,8 +1,7 @@
 ---
-title: IDebugExtendedProperty::GetExtendedPropertyInfo | Documentos de Microsoft
+title: IDebugExtendedProperty::GetExtendedPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6ceed386d4c8284ec7aa1d4fd685a76a821fbc7
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 89067720b6643c8c187e6340fb529989f2439933
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094359"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159171"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
 Captura información extendida de una propiedad extendida, que es más información que el más sencillo `IDebugProperty`.  

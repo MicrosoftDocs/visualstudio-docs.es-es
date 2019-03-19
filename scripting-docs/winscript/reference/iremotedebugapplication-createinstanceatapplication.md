@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplication::CreateInstanceAtApplication | Documentos de Microsoft
+title: IRemoteDebugApplication::CreateInstanceAtApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29cbcebc5bdc51be4223b2592bbe6ac3ae76525d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 6e17c5abcb21bfaad6de948c3676d29232da66cf
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086364"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146297"
 ---
 # <a name="iremotedebugapplicationcreateinstanceatapplication"></a>IRemoteDebugApplication::CreateInstanceAtApplication
 Permite la creación de objetos en el proceso de aplicación mediante código que es fuera de proceso a la aplicación.  

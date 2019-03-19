@@ -2,7 +2,6 @@
 title: IDebugProperty (interfaz) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e5e5274e8a3d1c81ce010afc3893b27510a0fad
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 963b11a4760fad8086822f13db129fae76467802
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348365"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145764"
 ---
 # <a name="idebugproperty-interface"></a>IDebugProperty (Interfaz)
 Se usa para describir cualquier propiedad de la entidad que se está depura jerárquica que tiene un nombre, tipo y valor. Normalmente, `IDebugProperty` se usa para describir el resultado de evaluación de expresiones, evaluación de la instrucción o evaluation de registro.  

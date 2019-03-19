@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptDebug::EnumCodeContextsOfPosition | Documentos de Microsoft
+title: IActiveScriptDebug::EnumCodeContextsOfPosition | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abca643dc4e18f786421959c20804a28cf54ec7b
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c364d00941a65272b4d22cc7674a0f0e6178f099
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097180"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145434"
 ---
 # <a name="iactivescriptdebugenumcodecontextsofposition"></a>IActiveScriptDebug::EnumCodeContextsOfPosition
 Utiliza un host inteligente para delegar el `IDebugDocumentContext::EnumCodeContexts` método.  

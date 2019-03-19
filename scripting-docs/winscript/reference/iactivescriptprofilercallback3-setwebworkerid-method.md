@@ -2,7 +2,6 @@
 title: Método Iactivescriptprofilercallback3 | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4025dbee7b8b5b246163a1919aec335a8863937
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 0798a23b4c8ad4e5859bec73ebfed47a56b322d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347221"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151302"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId (Método)
 Notifica al generador de perfiles de Id. de trabajo que se usará para esta sesión de generación de perfiles. Si la función no se está ejecutando en el contexto de la página, no se invoca este método. El valor de `webWorkerId` se incrementa en 1 para cada trabajo, comenzando en 1. Los valores de identificador no pretenden ser estable más allá de una sesión y se corresponden con solo el orden en que se crearon los trabajadores.  

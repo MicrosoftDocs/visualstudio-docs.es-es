@@ -1,8 +1,7 @@
 ---
-title: 'Iactivescriptsitedebug:: Getdocumentcontextfromposition | Documentos de Microsoft'
+title: IActiveScriptSiteDebug::GetDocumentContextFromPosition | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bcc7469e02ba380ebd6839e9fe55031e52ecd32
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: df6c59fea5cfd60b6ae9a1b34e7000bd38dd9920
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086989"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58147130"
 ---
 # <a name="iactivescriptsitedebuggetdocumentcontextfromposition"></a>IActiveScriptSiteDebug::GetDocumentContextFromPosition
 Usa el motor de lenguaje para delegar `IDebugCodeContext::GetSourceContext`.  

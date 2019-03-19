@@ -2,7 +2,6 @@
 title: ERRORRESUMEACTION (enumeración) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d78852a05226f5112447dd142c06a2ba55ddba5a
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: d92b4b2e00b25a509d29511008876d781c8a577a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347234"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146206"
 ---
 # <a name="errorresumeaction-enumeration"></a>Enumeración ERRORRESUMEACTION
 Describe cómo continuar desde un error de tiempo de ejecución.  
