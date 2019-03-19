@@ -1,8 +1,7 @@
 ---
-title: 'Idebugdocumenthelper:: Setdebugdocumenthost | Documentos de Microsoft'
+title: IDebugDocumentHelper::SetDebugDocumentHost | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c4a935d849fed2b617abf5ee33ca2901b9c944c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 47c003657518edae0e8ffed13ffef9f6f072d296
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088223"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58148039"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
 Establece el `IDebugDocumentHost` para este documento.  

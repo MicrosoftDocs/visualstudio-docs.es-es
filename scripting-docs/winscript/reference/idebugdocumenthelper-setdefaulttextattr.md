@@ -1,8 +1,7 @@
 ---
-title: IDebugDocumentHelper::SetDefaultTextAttr | Documentos de Microsoft
+title: IDebugDocumentHelper::SetDefaultTextAttr | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e43740f41dacfed54ba5269522eb7b92cbc76bf6
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 09f75e6f09639520462d5ef3983d67333097f76e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093684"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159249"
 ---
 # <a name="idebugdocumenthelpersetdefaulttextattr"></a>IDebugDocumentHelper::SetDefaultTextAttr
 Establece los atributos predeterminados que se utilizará para el texto que no está en un bloque de script.  
