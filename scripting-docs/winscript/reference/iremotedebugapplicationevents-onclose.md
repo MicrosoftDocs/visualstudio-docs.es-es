@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplicationEvents::OnClose | Documentos de Microsoft
+title: IRemoteDebugApplicationEvents::OnClose | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ad44e0db3c125239b7f877bc856edd0e861d51a
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 33f394309c50488a08ff6f345e4720d866d5a0ec
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095542"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160422"
 ---
 # <a name="iremotedebugapplicationeventsonclose"></a>IRemoteDebugApplicationEvents::OnClose
 Controla un evento de cierre de la aplicación.  

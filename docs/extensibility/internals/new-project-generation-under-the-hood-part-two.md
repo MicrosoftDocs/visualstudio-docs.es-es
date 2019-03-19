@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f168a896c218f33735c4e67f43a9833a474191ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624196"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58148209"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nueva generación de proyectos: Internamente, la segunda parte
+
 En [nueva generación de proyectos: Internamente, una parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos cómo **nuevo proyecto** se rellena el cuadro de diálogo. Supongamos que ha seleccionado un **aplicación de Windows de Visual C#**, se han rellenado los **nombre** y **ubicación** cuadros de texto y hace clic en Aceptar.
 
 ## <a name="generating-the-solution-files"></a>Generar los archivos de solución
@@ -31,7 +32,7 @@ En [nueva generación de proyectos: Internamente, una parte](../../extensibility
 
  Echemos un vistazo a una plantilla de elemento de proyecto típica. Extraer y examine Program.cs en la carpeta de 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip Program Files\Microsoft Visual Studio.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -45,9 +46,9 @@ namespace $safeprojectname$
 }
 ```
 
- Si crea un nuevo proyecto de aplicación de Windows denominado Simple, la plantilla reemplaza el `$safeprojectname$` parámetro con el nombre del proyecto.
+Si crea un nuevo proyecto de aplicación de Windows denominado Simple, la plantilla reemplaza el `$safeprojectname$` parámetro con el nombre del proyecto.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -66,7 +67,7 @@ namespace Simple
 ## <a name="a-look-inside-a-vstemplate-file"></a>Una mirada a una. Archivo VSTemplate
  Un archivo .vstemplate básico tiene este formato
 
-```
+```xml
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
     <TemplateData>
     </TemplateData>
@@ -79,7 +80,7 @@ namespace Simple
 
  Las etiquetas en el \<TemplateContent > sección control de la generación de nuevos proyectos y elementos de proyecto. Este es el \<TemplateContent > sección del archivo en la carpeta \Archivos 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip de Visual Studio \Program Files\Microsoft cswindowsapplication.vstemplate.
 
-```
+```xml
 <TemplateContent>
   <Project File="WindowsApplication.csproj" ReplaceParameters="true">
     <ProjectItem ReplaceParameters="true"
@@ -121,7 +122,7 @@ namespace Simple
 
  El primer y único \<proyecto > etiquetas en las lecturas de plantilla:
 
-```
+```xml
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">
 ```
 
@@ -132,7 +133,7 @@ namespace Simple
 
  Este es el \<ItemGroup > desde Simple.csproj que crea las referencias del proyecto:
 
-```
+```xml
 <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -145,7 +146,7 @@ namespace Simple
 
  Puede ver que se trata de las referencias del seis proyecto que aparecen en el Explorador de soluciones. Esta es una sección de otro \<ItemGroup >. Se han eliminado muchas líneas de código para mayor claridad. Esta sección hace Settings.Designer.cs depende Settings.Settings creado por:
 
-```
+```xml
 <ItemGroup>
     <Compile Include="Properties\Settings.Designer.cs">
         <DependentUpon>Settings.settings</DependentUpon>
@@ -154,5 +155,6 @@ namespace Simple
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Nueva generación de proyectos: Internamente, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

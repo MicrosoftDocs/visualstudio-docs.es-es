@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c7a98a3c03f63b74cefa3ab3a4586408cfccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4fdbb093abdf0d99f17c9bd27af3623d529a31ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621011"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146349"
 ---
 # <a name="checklist-create-new-project-types"></a>Lista de comprobación: Crear nuevos tipos de proyecto
 Debe completar varias tareas para crear un nuevo tipo de proyecto. La siguiente lista de comprobación proporciona a una guía para esas tareas:
@@ -37,7 +37,7 @@ Debe completar varias tareas para crear un nuevo tipo de proyecto. La siguiente 
 
     -   Administración de elementos de proyecto, incluida la adición de su proyecto a la **nuevo proyecto** cuadro de diálogo. Para obtener más información, consulte [Agregar proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md) y [registrar las plantillas de proyecto y elemento](../../extensibility/internals/registering-project-and-item-templates.md).
 
-    -   Persistencia de estado del proyecto y elementos individuales. Para obtener más información, consulte [abrir y guardar los elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md). Para la persistencia de la información de la solución, consulte [soluciones](../../extensibility/internals/solutions.md).
+    -   Persistencia de estado del proyecto y elementos individuales. Para obtener más información, consulte [abrir y guardar los elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md). Para la persistencia de la información de la solución, consulte [soluciones](../../extensibility/internals/solutions-overview.md).
 
     -   Propiedades independientes de la configuración que se muestra en la ventana Propiedades. Para obtener más información, consulte [extender propiedades](../../extensibility/internals/extending-properties.md).
 

@@ -2,7 +2,6 @@
 title: IDebugDocumentProvider (interfaz) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d775deb153205d0e9a452775272285c67e74a210
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 5632134c86b5aa0e3cb769a68d2d4cfd944ff35c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345219"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157215"
 ---
 # <a name="idebugdocumentprovider-interface"></a>IDebugDocumentProvider (Interfaz)
 Proporciona los medios para crear instancias de un documento a petición.  

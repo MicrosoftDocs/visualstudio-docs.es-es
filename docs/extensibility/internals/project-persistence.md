@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca9786183f2d814459e650c6018a99d7ee37f6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601028"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146531"
 ---
 # <a name="project-persistence"></a>Persistencia de un proyecto
 Persistencia es una consideración de diseño clave para el proyecto. La mayoría de los proyectos usan elementos de proyecto que representan los archivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también es compatible con los proyectos cuyos datos están basados en archivos que no sean. Se deben conservar los archivos de propiedad del proyecto y el archivo de proyecto. El IDE indica que el proyecto para guardar en sí mismo o a un elemento de proyecto.
 
- Plantillas de proyectos se pasan en el generador de proyectos. Las plantillas deben admitir la inicialización de todos los elementos de proyecto según los requisitos del tipo de proyecto específico. Estas plantillas más adelante pueden se guardan como archivos de proyecto y administradas por el IDE a través de la solución. Para obtener más información, consulte [crear proyecto instancias por usar generadores de proyectos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) y [soluciones](../../extensibility/internals/solutions.md).
+ Plantillas de proyectos se pasan en el generador de proyectos. Las plantillas deben admitir la inicialización de todos los elementos de proyecto según los requisitos del tipo de proyecto específico. Estas plantillas más adelante pueden se guardan como archivos de proyecto y administradas por el IDE a través de la solución. Para obtener más información, consulte [crear proyecto instancias por usar generadores de proyectos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) y [soluciones](../../extensibility/internals/solutions-overview.md).
 
  Elementos de proyecto pueden ser basados en archivos o no basada en archivo:
 

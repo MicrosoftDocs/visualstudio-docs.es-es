@@ -2,7 +2,6 @@
 title: Debug Property (Interfaces) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -15,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64e2aa684862d6b05b1a4051c31d23656a741c37
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: c40db5b1639112bb95c0859da63705afcd9a3411
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344608"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58148872"
 ---
 # <a name="debug-property-interfaces"></a>Debug Property (Interfaces)
 El archivo de encabezado DbgProp.h proporciona las interfaces enumeradas en esta sección.  
