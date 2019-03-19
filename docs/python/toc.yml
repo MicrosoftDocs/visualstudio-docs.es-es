@@ -21,6 +21,8 @@ items:
     maintainContext: true
   - name: Creación de un proyecto a partir de una plantilla
     href: quickstart-02-python-in-visual-studio-project-from-template.md
+  - name: Apertura y ejecución de código de Python en una carpeta
+    href: quickstart-05-python-visual-studio-open-folder.md
   - name: Creación de un proyecto a partir del código existente
     href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
   - name: Creación de un proyecto a partir de un repositorio
@@ -142,9 +144,9 @@ items:
     href: python-item-templates.md
   - name: Opciones
     href: python-support-options-and-settings-in-visual-studio.md
-ms.openlocfilehash: 49d8cc84c44934eb11ed65a084b7e09b4830edec
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: f9fc649b365f43cf50ec98b5a8059985ddd666a4
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323632"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982862"

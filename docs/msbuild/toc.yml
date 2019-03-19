@@ -2,6 +2,8 @@ items:
 - name: MsBuild
   href: msbuild.md
   items:
+  - name: Novedades de MSBuild 16.0
+    href: whats-new-msbuild-16-0.md
   - name: Novedades de MSBuild 15.0
     href: what-s-new-in-msbuild-15-0.md
   - name: Conceptos de MSBuild
@@ -246,7 +248,7 @@ items:
           href: xdcmake-task.md
         - name: XSD (tarea)
           href: xsd-task.md
-      - name: Base de tarea (Clase)
+      - name: Task Base (Clase)
         href: task-base-class.md
       - name: TaskExtension (Clase base)
         href: taskextension-base-class.md
@@ -433,9 +435,9 @@ items:
       href: updating-an-existing-application.md
   - name: Glosario de MSBuild
     href: msbuild-glossary.md
-ms.openlocfilehash: d177a19b3fce1e7ebdd182dd09e9c8bbd05709c5
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: f05970702d32b15fb27add1adf8dca28a25c4b13
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483749"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983044"

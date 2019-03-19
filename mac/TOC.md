@@ -33,7 +33,7 @@
 ## [Selección de bloques](block-selection.md)
 ## [Temas del editor](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [Accesos directos comunes del teclado](keyboard-shortcuts.md)
+## [Métodos abreviados de teclado predeterminados](keyboard-shortcuts.md)
 
 # [Depuración](debugging.md)
 ## [Visualizaciones de datos](data-visualizations.md)
