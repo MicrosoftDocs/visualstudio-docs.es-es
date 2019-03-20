@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222901"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194063"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurar un proyecto de C++ para IntelliSense
 
@@ -52,7 +52,7 @@ Para obtener más información, vea [Cómo: Habilitar IntelliSense para proyecto
 
 ### <a name="open-folder-projects"></a>Proyectos Abrir carpeta
 
-En el caso de los proyectos CMake, asegúrese de que las rutas de acceso #include están correctamente especificadas para todas las configuraciones en CMakeLists.txt. Es posible que otros tipos de proyecto requieran un archivo CppProperties.json. Para más información, consulte [Configurar IntelliSense con CppProperties.json](/cpp/ide/non-msbuild-projects#cppproperties). Asegúrese de que las rutas de acceso sean correctas para cada configuración definida en el archivo.
+En el caso de los proyectos CMake, asegúrese de que las rutas de acceso #include están correctamente especificadas para todas las configuraciones en CMakeLists.txt. Es posible que otros tipos de proyecto requieran un archivo CppProperties.json. Para más información, consulte [Configurar IntelliSense con CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Asegúrese de que las rutas de acceso sean correctas para cada configuración definida en el archivo.
 
 Si hay un error de sintaxis en el archivo CppProperties.json, IntelliSense será incorrecto en los archivos afectados. Visual Studio mostrará el error en la ventana de salida.
 
@@ -72,7 +72,7 @@ Este problema se manifiesta de dos maneras habituales en Visual Studio:
 
    ![El analizador de etiquetas ofrece definir una función ya existente](media/vcpp-intellisense-tag-parser-function.png)
 
-Para corregir estos problemas, agregue un archivo llamado **cpp.hint** en la raíz del directorio de la solución. Para más información, consulte [Archivos de indicaciones](/cpp/ide/hint-files).
+Para corregir estos problemas, agregue un archivo llamado **cpp.hint** en la raíz del directorio de la solución. Para más información, consulte [Archivos de indicaciones](/cpp/build/reference/hint-files).
 
 Los errores del analizador de etiquetas aparecen en la ventana **Lista de errores**.
 

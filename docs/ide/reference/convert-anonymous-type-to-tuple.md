@@ -3,18 +3,18 @@ title: Conversión de un tipo anónimo en tupla
 ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7a53aa8f329c1cdedc0cedff7e56b3f6dfa2f2a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b6f5dd8e53ed2e0695370a1cdcb837609be30035
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335874"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154444"
 ---
 # <a name="convert-anonymous-type-to-tuple"></a>Conversión de un tipo anónimo para tupla
 

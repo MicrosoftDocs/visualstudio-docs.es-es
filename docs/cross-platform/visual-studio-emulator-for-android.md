@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a7d9d72f38b6ac166eb5c92998fbe6c4d8c096
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 0cbf7582c5089d99a71b2354878b03c265755e65
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318737"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869088"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulador de Visual Studio para Android
 
@@ -25,7 +25,7 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
 > En la mayoría de los escenarios, se recomienda el uso del emulador de Android de Google en lugar del emulador de Visual Studio para Android:
 > - El Emulador de Visual Studio para Android ya no se admite a partir de Visual Studio 2015.
 > - Las imágenes del emulador de versiones posteriores a Android 6.0 no están disponibles para el Emulador de Visual Studio para Android.
-> - Google Android Emulator ahora es compatible con [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
+> - Google Android Emulator ahora es compatible con [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
 > - Herramientas para Apache Cordova de Visual Studio es compatible con Google Android Emulator. Para obtener más información, vea [Run your Apache Cordova app on Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (Ejecutar la aplicación Apache Cordova en Android). Tenga en cuenta que ya no es necesario que deshabilite Hyper-V como se explica en este artículo.
 >
 > Para obtener más información sobre cómo configurar y usar Google Android Emulator, vea [Configuración de Android Emulator](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).

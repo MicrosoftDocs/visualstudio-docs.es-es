@@ -3,19 +3,19 @@ title: Encapsulado, sangría y alineación de parámetros
 ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1490ff0bcae91a6f4870b0cfb623d975fa1e064b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9c17d5c9d6874c836954941e1fccd8ce9d9f2e3a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335886"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149268"
 ---
 # <a name="wrap-indent-and-align-parameters"></a>Encapsulado, sangría y alineación de parámetros
 

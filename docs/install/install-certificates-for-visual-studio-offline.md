@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e670e90f29e0ceb33fb52b4e29bf1bb917df1a8e
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737046"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983005"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar los certificados necesarios para la instalación sin conexión de Visual Studio
 
@@ -113,6 +113,7 @@ Cuando se comprueba una firma en un entorno en línea, se usan las API de Window
 ## <a name="checking-if-certificates-are-already-installed"></a>Comprobar si los certificados ya están instalados
 
 Una manera de comprobar el sistema de instalación es seguir estos pasos:
+
 1. Ejecute **mmc.exe**.<br/>
   a. Haga clic en Archivo y, después, seleccione **Agregar o quitar complemento**.<br/>
   b. Haga doble clic en **Certificados**, seleccione **Cuenta de equipo** y, después, haga clic en **Siguiente**.<br/>

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718562"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194955"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desarrollo de código en Visual Studio sin proyectos o soluciones
 
@@ -103,7 +103,7 @@ Si el código base contiene código de Python o JavaScript, no es necesario conf
 
 ### <a name="codebases-that-contain-c-code"></a>Códigos base que contienen código C++
 
-Para información sobre cómo abrir el código C++ sin soluciones ni proyectos en Visual Studio, consulte [Open Folder projects for C++](/cpp/ide/non-msbuild-projects) (Proyectos Abrir carpeta para C++).
+Para información sobre cómo abrir el código C++ sin soluciones ni proyectos en Visual Studio, consulte [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Proyectos Abrir carpeta para C++).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Códigos base que contienen un proyecto de Visual Studio
 
@@ -118,6 +118,6 @@ El texto del botón **Inicio** cambia para reflejar que el proyecto es el elemen
 ## <a name="see-also"></a>Vea también
 
 - [Personalización de las tareas de compilación y depuración](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Open Folder projects for C++](/cpp/ide/non-msbuild-projects) (Proyectos Abrir carpeta para C++)
-- [CMake projects in C++](/cpp/ide/cmake-tools-for-visual-cpp) (Proyectos CMake en C++)
+- [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Proyectos Abrir carpeta para C++)
+- [CMake projects in C++](/cpp/build/cmake-projects-in-visual-studio) (Proyectos CMake en C++)
 - [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f33351245d35ef025d98b3dcf1c2c325fa1ca802
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 94fcaab3c02524584df5349d481e59067a7253aa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796489"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982667"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio
 
@@ -118,4 +118,4 @@ Habilite las conexiones para las direcciones URL siguientes:
 
 * [Instalación y uso de Visual Studio detrás de un firewall o servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
-* [Instalación de Visual Studio 2017](install-visual-studio.md)
+* [Instalar Visual Studio](install-visual-studio.md)

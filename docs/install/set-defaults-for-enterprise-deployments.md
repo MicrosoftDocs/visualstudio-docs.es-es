@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91a2bda02f62391c84ff5b39a934192eccbd6bb8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910823"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984149"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Establecimiento de valores predeterminados para implementaciones empresariales de Visual Studio 2017
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Establecimiento de valores predeterminados para implementaciones empresariales de Visual Studio
 
 Puede establecer directivas de Registro que afectan a la implementación de Visual Studio. Estas directivas son globales para el nuevo instalador y afectan a:
 
@@ -62,6 +62,6 @@ Puede establecer los siguientes valores del Registro:
 
 ## <a name="see-also"></a>Vea también
 
- * [Instalar Visual Studio](install-visual-studio.md)
- * [Deshabilitar o mover la caché del paquete](disable-or-move-the-package-cache.md)
- * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Instalar Visual Studio](install-visual-studio.md)
+- [Deshabilitar o mover la caché del paquete](disable-or-move-the-package-cache.md)
+- [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

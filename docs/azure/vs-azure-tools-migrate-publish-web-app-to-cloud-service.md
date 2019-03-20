@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: bb470e245f41bc83245d8c2234753ad84c0ee8db
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa0af441071c90ca42d7aa7169c75803bebeb255
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936309"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869010"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedimiento Migración y publicación de una aplicación web a un servicio en la nube de Azure desde Visual Studio
 
@@ -30,7 +30,7 @@ Para aprovechar los servicios de hospedaje y la escalabilidad de Azure, puede mi
 1. Visual Studio también establece la propiedad **Copia local**en true para todos los ensamblados necesarios para MVC 2, MVC 3, MVC 4 y las aplicaciones empresariales de Silverlight. Esta propiedad agrega estos ensamblados al paquete de servicio empleado para la implementación.
 
    > [!Important]
-   > Si tiene otros ensamblados o archivos que son necesarios para esta aplicación web, debe establecer manualmente las propiedades para estos archivos. Para obtener más información sobre cómo establecer estas propiedades, vea [Incluir archivos en el paquete de servicio](#include-files-in-the-service-package).
+   > Si tiene otros ensamblados o archivos que son necesarios para esta aplicación web, debe establecer manualmente las propiedades para estos archivos. Para obtener más información sobre cómo establecer estas propiedades, vea [Incluir archivos en el paquete de servicio](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package).
 
 ### <a name="errors-and-warnings"></a>Errores y advertencias
 
