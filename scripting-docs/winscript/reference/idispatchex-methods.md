@@ -2,7 +2,6 @@
 title: IDispatchEx (métodos) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7abe9f1b7832706040fabb7f65754c518f2b1742
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 86a9696b6ea9ef8c592ecb0841ac58c4fa38c36d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347806"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149476"
 ---
 # <a name="idispatchex-methods"></a>IDispatchEx (Métodos)
 Los siguientes son IDispatchEx (métodos).  

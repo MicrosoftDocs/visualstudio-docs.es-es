@@ -2,7 +2,6 @@
 title: Active Script Authoring Interfaces | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -15,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 787dbfab822990c94867bd7e3932c59559daa917
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 6891a33afcb002e806ff8e4ed529604f69256313
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346532"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160208"
 ---
 # <a name="active-script-authoring-interfaces"></a>Active Script Authoring (Interfaces)
 El archivo de encabezado ActivAut.h proporciona las interfaces enumeradas en esta sección.  
