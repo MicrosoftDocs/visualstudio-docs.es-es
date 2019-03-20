@@ -2,7 +2,6 @@
 title: IActiveScriptProfilerCallback::Shutdown | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bbe5acd75ecf4f004d835490579b1f35c1bf675c
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 091ccc30f16081fdca8f10778efec208ef5ccb16
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346298"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154457"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
 Se llama para informar al objeto de generador de perfiles, siempre que se detiene la generación de perfiles en un motor de scripting. De este modo, el objeto de generador de perfiles puede llamar a sus rutinas de limpieza, si es necesario. Este método también se llama por el motor de scripting cuando se está cerrando el motor de scripting, o cuando una llamada a [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) se produce un error.  

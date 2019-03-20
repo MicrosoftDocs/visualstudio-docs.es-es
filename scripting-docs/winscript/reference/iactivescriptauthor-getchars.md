@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor::GetChars | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06e7a7cf276e589aaaa3c00ecab8cbf881942f82
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 69cdeb16fa0791b3ff8c0cce4a4e67fe110eefc2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094333"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151068"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
 Devuelve el conjunto de caracteres de finalización para un contexto de finalización solicitado.  
@@ -43,7 +42,7 @@ HRESULT GetChars(
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
-|SCRIPT_CMPL_ENUM_TRIGGER|0 x 0001|Solicita la enumeración del lado izquierdo.|  
+|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Solicita la enumeración del lado izquierdo.|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Solicita el contexto de la finalización de miembros.|  
 |SCRIPT_CMPL_PARAM_TRIGGER|0x0003|Solicita la lista de parámetros.|  
 |SCRIPT_CMPL_COMMIT|0x0004|Finalización de las solicitudes de la lista de parámetros.|  

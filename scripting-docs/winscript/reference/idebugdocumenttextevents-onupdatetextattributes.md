@@ -1,8 +1,7 @@
 ---
-title: IDebugDocumentTextEvents::onUpdateTextAttributes | Documentos de Microsoft
+title: IDebugDocumentTextEvents::onUpdateTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c2e5624e7cbefdca929a11b75f0273337fab30c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 746339cb281d4d039759f350bb5516456ce142cf
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097167"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144477"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
 Indica que los atributos de texto asociados al intervalo de posición de carácter subyacente han cambiado.  

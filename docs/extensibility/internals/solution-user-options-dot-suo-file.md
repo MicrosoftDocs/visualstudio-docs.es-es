@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f529a3861ed6061b428818140ad90d6ca79991af
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fab823a9057c44eca9928b1b1f97ec446fb251c4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600874"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145088"
 ---
 # <a name="solution-user-options-suo-file"></a>Archivo de opciones de usuario de la solución (.Suo)
 El archivo de opciones (.suo) del usuario de solución contiene opciones de la solución por usuario. Este archivo no debe comprobarse para el control de código fuente.
@@ -38,4 +38,4 @@ El archivo de opciones (.suo) del usuario de solución contiene opciones de la s
 
 ## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
-- [Soluciones](../../extensibility/internals/solutions.md)
+- [Soluciones](../../extensibility/internals/solutions-overview.md)
