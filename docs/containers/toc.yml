@@ -12,16 +12,16 @@ items:
     href: tutorial-kubernetes-tools.md
   - name: Depuración de aplicaciones en un contenedor de Docker local
     href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: Implementación de un contenedor ASP.NET en un registro de contenedor con Visual Studio
+  - name: Implementación en un registro de contenedor
     href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: Configuración de un host de Docker con VirtualBox
-    href: vs-azure-tools-docker-setup.md
-  - name: Solución de problemas de desarrollo de Visual Studio 2017 con Docker
+  - name: Implementación en Azure App Service
+    href: docker-deploy-app-service.md
+  - name: Solución de problemas de desarrollo de Visual Studio con Docker
     href: vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 9269e4b0f090b170f234433ff802f41d0dd8790a
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: af94841d54c8c045af72dfc4597bae047778a5a3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525916"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160032"
