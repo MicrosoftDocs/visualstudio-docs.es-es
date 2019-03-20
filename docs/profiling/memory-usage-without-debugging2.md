@@ -1,6 +1,6 @@
 ---
 title: Análisis del uso de memoria sin depuración | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615926"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873459"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Análisis del uso de memoria sin el depurador
 
@@ -72,7 +72,7 @@ Una vez detenida la recopilación de datos, la herramienta **Uso de memoria** de
 
 Los números de los paneles de **Instantánea** muestran los bytes y objetos en memoria cuando se tomó cada instantánea y la diferencia entre la instantánea y la anterior.
 
-Los números son vínculos que abren vistas de informes de **Uso de memoria** detalladas en nuevas ventanas de Visual Studio. Un [informe detallado de instantánea](#snapshot-details-report) muestra los tipos y las instancias en una instantánea. Un [informe de diferencias de instantáneas (diff)](#snapshot-difference-diff-reports) compara los tipos y las instancias en las dos instantáneas.
+Los números son vínculos que abren vistas de informes de **Uso de memoria** detalladas en nuevas ventanas de Visual Studio. Un [informe detallado de instantánea](#snapshot-details-reports) muestra los tipos y las instancias en una instantánea. Un [informe de diferencias de instantáneas (diff)](#snapshot-difference-diff-reports) compara los tipos y las instancias en las dos instantáneas.
 
   ![Vínculos de vista Instantánea](../profiling/media/memuse__snapshotview_numbered.png "Snapshot view links")
 

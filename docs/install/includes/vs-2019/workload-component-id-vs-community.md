@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/29/2019
+ms.date: 03/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: ca58542f20b33b61b82b4baf4b8f8541f837aa2b
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 61b5a7e251f4c20a2118869605b89b0cea21ffc3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325140"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160960"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2019"></a>Editor principal de Visual Studio (incluido con Visual Studio Community 2019)
 

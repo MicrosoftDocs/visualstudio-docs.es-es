@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: Puede producirse un error en el inicio de sesión si se utilizan alias o nombres descriptivos
 searchscope: VS Subscription
-ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841632"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195156"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 
@@ -28,7 +28,7 @@ Esta situación puede darse cuando una empresa emplea un servicio en línea de M
 
 Como administrador, dispone de dos opciones para asegurarse de que los suscriptores pueden iniciar sesión correctamente en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - La primera de ellas (la recomendada) es aprovechar la cuenta de directorio como dirección asignada en Microsoft Business Center. Consulte la sección [Asignación de suscriptores a una cuenta de directorio](#assigning-subscribers-to-a-directory-account) de este artículo para obtener más detalles.
-- La segunda opción (menos segura) consiste en permitir que los suscriptores asocien su dirección de correo electrónico "profesional o educativa" a una cuenta "personal" (conocida como cuenta Microsoft o MSA). Consulte la sección [Definición de una cuenta profesional o educativa como cuenta personal](#defining-a-work-or-school-account-as-a-personal-account ) de este artículo para obtener más detalles.
+- La segunda opción (menos segura) consiste en permitir que los suscriptores asocien su dirección de correo electrónico "profesional o educativa" a una cuenta "personal" (conocida como cuenta Microsoft o MSA). Consulte la sección [Definición de una cuenta profesional o educativa como cuenta personal](#defining-a-work-or-school-account-as-a-personal-account) de este artículo para obtener más detalles.
 
 > [!NOTE]
 > Una vez que su empresa se migre al nuevo [Portal de administración](https://manage.visualstudio.com) de suscripciones de Visual Studio, podrá aprovechar las ventajas de la nueva experiencia de administración que permite especificar tanto las direcciones de correo electrónico como de directorio en el perfil del suscriptor. Obtenga más información acerca de [la migración](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).

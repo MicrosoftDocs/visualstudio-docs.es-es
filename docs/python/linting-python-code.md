@@ -1,7 +1,7 @@
 ---
 title: Uso de PyLint para código de Python
 description: Ejecute PyLint en Visual Studio para comprobar los problemas en el código de Python, incluidas las opciones de línea de comandos para personalizar la detección de errores.
-ms.date: 01/28/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a658035d24a7a92dee2f26ae9a65535ef14d029d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0d18c7cb5f27695478e296d308347aaaf1b20f94
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939703"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58153739"
 ---
 # <a name="use-pylint-to-check-python-code"></a>Uso de PyLint para comprobar el código de Python
 
