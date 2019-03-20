@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear plantillas de elementos | Microsoft Docs
+title: 'Cómo: Crear plantillas de elementos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788254"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867938"
 ---
 # <a name="how-to-create-item-templates"></a>Cómo: Crear plantillas de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En los pasos del [primer procedimiento](../ide/how-to-create-item-templates.md#export_template) de este tema se muestra cómo crear una plantilla de elementos mediante el asistente **Exportar plantilla**. Si la plantilla consta de varios archivos, vea [Cómo: Crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md).  
+En los pasos del [primer procedimiento](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) de este tema se muestra cómo crear una plantilla de elementos mediante el asistente **Exportar plantilla**. Si la plantilla consta de varios archivos, vea [Cómo: Crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md).  
   
- El asistente hace gran parte del trabajo de creación de la plantilla básica, pero en muchos casos deberá modificar manualmente el archivo .vstemplate después de haber exportado la plantilla. Por ejemplo, si quiere que el elemento aparezca en el cuadro de diálogo **Agregar nuevo elemento** de un proyecto de aplicación de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], tendrá que efectuar unos pasos adicionales. El [segundo procedimiento](../ide/how-to-create-item-templates.md#modify_template) de este tema le ayudará a realizar dicha tarea.  
+ El asistente hace gran parte del trabajo de creación de la plantilla básica, pero en muchos casos deberá modificar manualmente el archivo .vstemplate después de haber exportado la plantilla. Por ejemplo, si quiere que el elemento aparezca en el cuadro de diálogo **Agregar nuevo elemento** de un proyecto de aplicación de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], tendrá que efectuar unos pasos adicionales. El [segundo procedimiento](#to-enable-the-item-template-to-be-used-in-a-store-project) de este tema le ayudará a realizar dicha tarea.  
  
- En algunos casos es posible que quiera o deba crear una plantilla de elementos manualmente desde cero. En el [tercer procedimiento](../ide/how-to-create-item-templates.md#create_template) se muestra cómo hacerlo.  
+ En algunos casos es posible que quiera o deba crear una plantilla de elementos manualmente desde cero. En el [tercer procedimiento](#to-enable-templates-for-specific-project-sub-types) se muestra cómo hacerlo.  
   
  Vea [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md) para obtener información sobre los elementos que se pueden usar en el archivo .vstemplate.  
   

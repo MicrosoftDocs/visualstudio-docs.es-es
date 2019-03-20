@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24785b4f39265b71c3f1cb18b4331ded53652905
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e68e6c7258cb906ac81cb97f7d82bd5c5d9b467a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526768"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873128"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -52,7 +52,7 @@ Puede usar IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Pr
 
 | | |
 |---------------------| - |
-| **Compatibilidad total con** | - Aplicaciones de Visual Basic y Visual C# que usan .NET Framework 2.0 o versiones posteriores.<br/>Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br/>Para depurar aplicaciones de SharePoint con IntelliTrace, consulte [Tutorial: depurar una aplicación de SharePoint mediante el uso de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar aplicaciones de Microsoft Azure con IntelliTrace, vea [depurar con IntelliTrace y Visual Studio un servicio de nube publicado](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Compatibilidad total con** | - Aplicaciones de Visual Basic y Visual C# que usan .NET Framework 2.0 o versiones posteriores.<br/>Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br/>Para depurar aplicaciones de SharePoint con IntelliTrace, consulte [Tutorial: depurar una aplicación de SharePoint mediante el uso de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar aplicaciones de Microsoft Azure con IntelliTrace, vea [depurar con IntelliTrace y Visual Studio un servicio de nube publicado](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Compatibilidad limitada** | : C++ aplicaciones destinadas a soporte técnico de Windows para ver las instantáneas mediante step-back de IntelliTrace. Se admiten solo eventos de depurador y la excepción.<br />-.NET core y aplicaciones de ASP.NET Core admiten para ciertos sólo eventos (eventos de controlador de MVC, ADO.NET y HTTPClient) en la depuración local. No se admite el recopilador independiente para las aplicaciones .NET Core o ASP.NET Core.<br />- Aplicaciones de F# en modo experimental<br />-Las aplicaciones UWP compatibles solo para eventos |
 | **No se admite** | -Otros lenguajes y script<br />- Servicios de Windows, Silverlight, Xbox o aplicaciones de [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] |
 
@@ -91,7 +91,7 @@ Puede guardar datos de IntelliTrace de estos orígenes:
 
 - Se produce un error o un bloqueo en una aplicación implementada.
 
-     En aplicaciones basadas en Microsoft Azure, puede configurar la recopilación de datos de IntelliTrace antes de publicar la aplicación. Mientras se ejecuta la aplicación, IntelliTrace guarda los datos en un archivo .iTrace. Consulte [depurar un servicio en la nube publicado con IntelliTrace y Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).
+     En aplicaciones basadas en Microsoft Azure, puede configurar la recopilación de datos de IntelliTrace antes de publicar la aplicación. Mientras se ejecuta la aplicación, IntelliTrace guarda los datos en un archivo .iTrace. Consulte [depurar un servicio en la nube publicado con IntelliTrace y Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
      Para las aplicaciones web ASP.NET hospedadas en IIS 7.0, 7.5, y 8.0, y las aplicaciones de SharePoint 2010 o SharePoint 2013, utilice Microsoft Monitoring Agent, solo o con System Center 2012, para guardar los datos de IntelliTrace en un archivo .iTrace.
 

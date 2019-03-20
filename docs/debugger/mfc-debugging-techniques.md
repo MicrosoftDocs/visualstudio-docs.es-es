@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff3fbd9332c2d402e2b1f72880595bd649cf01c3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316878"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154811"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
 Si está depurando un programa MFC, estas técnicas de depuración pueden resultar de utilidad.
@@ -230,7 +230,7 @@ Entre los bloques que no son objetos se incluyen las matrices y las estructuras 
 En un programa MFC, puede usar [CMemoryState:: DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) para volcar una descripción de todos los objetos del montón que no se han desasignado. `DumpAllObjectsSince` vuelca todos los objetos asignados desde el último [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Si no se realizó ninguna llamada a `Checkpoint` , `DumpAllObjectsSince` produce un volcado de memoria de todos los objetos y elementos que no sean objetos actualmente en memoria.
 
 > [!NOTE]
-> Para poder utilizar el volcado de objetos MFC, debe [habilitar el seguimiento de diagnóstico](#BKMK_Enabling_Memory_Diagnostics).
+> Para poder utilizar el volcado de objetos MFC, debe [habilitar el seguimiento de diagnóstico](#BKMK_Enabling_memory_diagnostics).
 
 > [!NOTE]
 > MFC produce automáticamente un volcado de memoria de todos los objetos no desasignados (pérdidas) cuando el programa termina, de modo que no es necesario crear código para volcar objetos en ese punto.

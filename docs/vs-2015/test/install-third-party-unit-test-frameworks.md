@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787886"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868719"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar marcos de prueba unitaria de terceros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de prue
 ### <a name="installing-from-the-web"></a>Instalación desde la Web  
  Si sabe qué marco le interesa, realice lo siguiente:  
   
-1. Abra la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) en el sitio web de MSDN.  
+1. Abra [Visual Studio Marketplace ](https://marketplace.visualstudio.com).  
   
 2. Escriba el nombre del marco en el cuadro **Buscar**.  
   
@@ -50,7 +50,7 @@ El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de prue
   
    Para examinar una lista de los marcos junto con otras herramientas de pruebas, realice lo siguiente:  
   
-4. Abra la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) en el sitio web de MSDN.  
+4. Abra [Visual Studio Marketplace ](https://marketplace.visualstudio.com).  
   
 5. Seleccione **Examinar**.  
   

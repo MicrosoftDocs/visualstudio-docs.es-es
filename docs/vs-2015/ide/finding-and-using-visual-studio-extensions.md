@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49e636e223cc699aa73419bca0c41688eea2620c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798485"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867766"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Buscar y usar extensiones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Las extensiones de Visual Studio son paquetes de códigos que se ejecutan dentro
 >  A partir de Visual Studio 2015, las extensiones de la Galería de Visual Studio se actualizarán automáticamente.  Puede cambiar esta configuración en el cuadro de diálogo **Extensiones y actualizaciones** .  Vea la sección sobre **Actualizaciones automáticas de extensión** a continuación para obtener más información.
 
 ## <a name="finding-visual-studio-extensions"></a>Buscar extensiones de Visual Studio
- Se pueden instalar extensiones desde la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=178891) o desde la [Galería de ejemplos](http://go.microsoft.com/fwlink/?LinkId=245175) del sitio web de Microsoft. Las extensiones pueden ser controles, ejemplos, plantillas, herramientas u otros componentes que agregan funcionalidad a Visual Studio. Visual Studio admite extensiones con el formato de paquete VSIX; esto incluye plantillas de proyecto, plantillas de elementos, elementos del **Cuadro de herramientas** , componentes de Managed Extension Framework (MEF) y VSPackages. También puede descargar e instalar extensiones basadas en MSI, pero el cuadro de diálogo **Extensiones y actualizaciones** no puede habilitarlas ni deshabilitarlas. La Galería de Visual Studio contiene extensiones VSIX y MSI.
+ Puede instalar extensiones desde la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o [Galería de ejemplos](https://code.msdn.microsoft.com/vstudio) en el sitio Web de Microsoft. Las extensiones pueden ser controles, ejemplos, plantillas, herramientas u otros componentes que agregan funcionalidad a Visual Studio. Visual Studio admite extensiones con el formato de paquete VSIX; esto incluye plantillas de proyecto, plantillas de elementos, elementos del **Cuadro de herramientas** , componentes de Managed Extension Framework (MEF) y VSPackages. También puede descargar e instalar extensiones basadas en MSI, pero el cuadro de diálogo **Extensiones y actualizaciones** no puede habilitarlas ni deshabilitarlas. La Galería de Visual Studio contiene extensiones VSIX y MSI.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Instalar o desinstalar extensiones de Visual Studio
  En **Extensiones y actualizaciones**, busque la extensión que desea instalar. (Si conoce el nombre o parte del nombre de la extensión, puede buscar en la ventana **Búsqueda en la Galería de Visual Studio**). Haga clic en **Descargar** y, después, en **Instalar**. Para cargar la extensión, debe reiniciar Visual Studio.

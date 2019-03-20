@@ -21,17 +21,17 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802319"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867934"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (Sistemas de alto rendimiento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows HPC usando el método de muestreo de las herramientas de generación de perfiles de [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] o [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Para obtener más información sobre HPC, consulte [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) en el sitio web de Microsoft.  
+Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows HPC usando el método de muestreo de las herramientas de generación de perfiles de [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] o [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Para obtener más información sobre HPC, vea [Big Compute: HPC y Batch](https://azure.microsoft.com/solutions/big-compute/) en el sitio Web de Microsoft.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para generar perfiles en un nodo de ejecución HPC, debe hacer lo siguiente:  
@@ -55,8 +55,8 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
 |||  
 |-|-|  
 |*%HeadNode%*|Nombre del nodo principal del clúster.|  
-|*%FxPath%*|Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. En el [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] es la ruta de acceso de medios de instalación: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En el [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] es la ruta de acceso de medios de instalación: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. En los medios de instalación de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] la ruta de acceso es: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En los medios de instalación de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] la ruta de acceso es: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Generación de perfiles en un nodo de ejecución HPC  
  Configure una sesión de generación de perfiles mediante el Asistente de rendimiento HPC para especificar la información de destino y de clúster de HPC. Puede establecer opciones adicionales en las páginas de propiedades de la sesión de rendimiento. Las herramientas de generación de perfiles implementan los binarios de destino necesarios e inician el generador de perfiles y la aplicación HPC automáticamente.  

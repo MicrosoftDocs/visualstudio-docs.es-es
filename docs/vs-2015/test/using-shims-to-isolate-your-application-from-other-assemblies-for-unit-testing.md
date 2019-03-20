@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b5d905c16be219229b62d3f0a9a8d125874a22f0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ab2925024fdf9e4f0b4e93db34b375b89933a48
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784146"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155948"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,50 +28,7 @@ Los tipos de correcciones de compatibilidad (shim)** son una de las dos tecnolog
   
 - Visual Studio Enterprise  
   
-  Consulte [vídeo (1 h 16 min): Las pruebas un-testable Code with Fakes en Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
-  
-## <a name="in-this-topic"></a>En este tema  
- En este tema aprenderá lo siguiente:  
-  
- [Ejemplo: El error Y2K](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
-  
- [Usar correcciones de compatibilidad (shim)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Fakes_requirements)  
-  
-- [Agregar ensamblados de Fakes](#AddFakes)  
-  
-- [Usar ShimsContext](#ShimsContext)  
-  
-- [Escribir pruebas con correcciones de compatibilidad (shim)](#WriteTests)  
-  
-  [Correcciones de compatibilidad (shim) para los diferentes tipos de métodos](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
-  
-- [Métodos estáticos](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
-  
-- [Métodos de instancia (para todas las instancias)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
-  
-- [Métodos de instancia (para una instancia en tiempo de ejecución)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
-  
-- [Constructores](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
-  
-- [Miembros base](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
-  
-- [Constructores estáticos](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
-  
-- [Finalizadores](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
-  
-- [Métodos privados](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
-  
-- [Interfaces de enlace](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
-  
-  [Cambiar el comportamiento predeterminado](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
-  
-  [Detectar accesos al entorno](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
-  
-  [Simultaneidad](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
-  
-  [Llamar al método original desde el método de la corrección de compatibilidad (shim)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
-  
-  [Limitaciones](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
+  Vea un [vídeo (1 h 16 min): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012)
   
 ##  <a name="BKMK_Example__The_Y2K_bug"></a> Ejemplo: El error Y2K  
  Consideremos un método que produce una excepción el 1 de enero de 2000:  
@@ -82,7 +39,7 @@ public static class Y2KChecker {
     public static void Check() {  
         if (DateTime.Now == new DateTime(2000, 1, 1))  
             throw new ApplicationException("y2kbug!");  
-    }  
+    }
 }  
   
 ```  
@@ -547,9 +504,9 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="guidance"></a>Orientación  
- [Pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Vea también  
  [Aislar el código en pruebas con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
  [Blog de Peter Provost sobre correcciones de compatibilidad (shim) de Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
- [Vídeo (1 hora 16 minutos): Las pruebas un-testable Code with Fakes en Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+ [Vídeo (1 h 16 min): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012)

@@ -1,5 +1,5 @@
 ---
-title: 'Inicio rápido: Desarrollo con el Explorador de pruebas controlado por pruebas | Microsoft Docs'
+title: 'Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9429bf3f77ec015c245eb29e6354aaf810bb895a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: af763149df8997e711677d978468a57d276cb636
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797970"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868929"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,10 +65,10 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 >  Los resultados que se muestran son para la ejecución más reciente. La barra de resultados coloreados presenta solo los resultados de las pruebas ejecutadas. Por ejemplo, si se ejecutan varias pruebas y alguna de ellas produce un error y, a continuación, se ejecutan solo las pruebas que se completan correctamente, la barra de resultados mostrará todo en color verde.  
   
 > [!NOTE]
->  Si no aparece ninguna prueba, asegúrese de haber instalado un adaptador para conectar el Explorador de pruebas al marco de pruebas que se está usando. Para obtener más información, consulte [Usar diferentes marcos de prueba con el Explorador de pruebas](#frameworks).  
+>  Si no aparece ninguna prueba, asegúrese de haber instalado un adaptador para conectar el Explorador de pruebas al marco de pruebas que se está usando. Para obtener más información, consulte [usar un marco de pruebas diferentes](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 ##  <a name="walkthrough"></a> Tutorial: utilizar pruebas unitarias para desarrollar un método  
- En este tutorial se muestra cómo desarrollar un método probado en C# con el marco de pruebas unitarias de Microsoft. Se puede adaptar fácilmente a otros lenguajes y utilizar otros marcos de prueba tales como NUnit. Para obtener más información, vea [Usar diferentes marcos de prueba](#frameworks).  
+ En este tutorial se muestra cómo desarrollar un método probado en C# con el marco de pruebas unitarias de Microsoft. Se puede adaptar fácilmente a otros lenguajes y utilizar otros marcos de prueba tales como NUnit. Para obtener más información, consulte [marco de pruebas diferente de Estados Unidos](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Crear la prueba y el método  
   
