@@ -1,5 +1,4 @@
 # [Depurar en Visual Studio](debugging-in-visual-studio.md)
-# [Novedades del depurador de Visual Studio 2015](what’s-new-for-the-debugger-in-visual-studio-2015.md)
 # [Conceptos básicos del depurador](debugger-basics.md)
 ## [Introducción al depurador](getting-started-with-the-debugger.md)
 ## [Desplazarse por el código con el depurador](navigating-through-code-with-the-debugger.md)

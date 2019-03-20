@@ -1,6 +1,6 @@
 ---
 title: Crear un Control de cuadro de herramientas WPF | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -12,23 +12,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867988"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194832"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Crear un Control de cuadro de herramientas WPF
-La plantilla de Control de cuadro de herramientas WPF (Windows Presentation Framework) le permite crear controles de WPF que se agregan automáticamente a la **cuadro de herramientas** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un **cuadro de herramientas** control que se puede distribuir a otros usuarios.
+
+La plantilla de Control de cuadro de herramientas WPF (Windows Presentation Framework) le permite crear controles de WPF que se agregan automáticamente a la **cuadro de herramientas** cuando se instala la extensión. En este tutorial se muestra cómo usar la plantilla para crear un **cuadro de herramientas** control que se puede distribuir a otros usuarios.
 
 A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-wpf-toolbox-control"></a>Crear un Control de cuadro de herramientas WPF
+## <a name="create-the-toolbox-control"></a>Crear el Control de cuadro de herramientas
 
 ### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>Crear una extensión con un Control de cuadro de herramientas de WPF
 
-1. Cree un proyecto VSIX denominado `MyToolboxControl`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C#** > **extensibilidad**.
+1. Cree un proyecto VSIX denominado `MyToolboxControl`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** diálogo buscando "vsix".
 
 2. Cuando se abra el proyecto, agregue un **Control Toolbox de WPF** plantilla de elemento denominado `MyToolboxControl`. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C#** > **extensibilidad** y seleccione **Control Toolbox de WPF**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para *MyToolboxControl.cs*.
 
@@ -53,6 +54,7 @@ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el cent
     ```
 
 ## <a name="renaming-the-control"></a>Cambiar el nombre del control
+
  De forma predeterminada, el control aparecerá en el **cuadro de herramientas** como **MyToolboxControl** en un grupo denominado **MyToolboxControl.MyToolboxControl**. Puede cambiar estos nombres en el *MyToolboxControl.xaml.cs* archivo.
 
 1. Abra *MyToolboxControl.xaml.cs* en la vista código.
@@ -75,6 +77,7 @@ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el cent
     ```
 
 ## <a name="build-test-and-deployment"></a>Compilación, prueba e implementación
+
  Cuando se depura el proyecto, debe buscar el control instalado en el **cuadro de herramientas** de la instancia experimental de Visual Studio.
 
 ### <a name="to-build-and-test-the-control"></a>Para compilar y probar el control
