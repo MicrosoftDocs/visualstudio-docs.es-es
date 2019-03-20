@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d32e2864f42fa9a2bfc30cfe83da7d4e021dfd0
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088873"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154418"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 Devuelve escriba información y las posiciones de delimitador para un carácter dado en un bloque de código. Esto proporciona información de miembro, IntelliSense, listas globales y sugerencias sobre parámetros.  
@@ -61,7 +60,7 @@ HRESULT GetInfoFromContext(
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|Ninguna lista.|  
-|SCRIPT_CMPL_MEMBERLIST|0 x 0001|Lista de miembros.|  
+|SCRIPT_CMPL_MEMBERLIST|0x0001|Lista de miembros.|  
 |SCRIPT_CMPL_ENUMLIST|0x0002|Lista de enumeración.|  
 |SCRIPT_CMPL_PARAMLIST|0x0004|Llame a la lista de parámetros de método.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Lista global.|  
