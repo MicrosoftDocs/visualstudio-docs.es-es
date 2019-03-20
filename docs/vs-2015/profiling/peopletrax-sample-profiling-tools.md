@@ -14,14 +14,14 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa92e5cf08114b2e5e7f993a70dbc228e16c6c64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e8984f37709f0f24722ae65a04972f940e955ff9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760049"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867582"
 ---
 # <a name="peopletrax-sample-profiling-tools"></a>Ejemplo PeopleTrax (Herramientas de generación de perfiles)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La aplicación de ejemplo PeopleTrax se usa para una serie de tutoriales paso a paso para las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Puede descargar un archivo .zip que contenga el código de aplicación de People Trax desde la [Galería de códigos de MSDN](http://go.microsoft.com/fwlink/?LinkId=160299).
+La aplicación de ejemplo PeopleTrax se usa para una serie de tutoriales paso a paso para las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Puede descargar un archivo .zip que contenga el código de aplicación de People Trax desde la [Galería de códigos de MSDN](https://code.msdn.microsoft.com/).

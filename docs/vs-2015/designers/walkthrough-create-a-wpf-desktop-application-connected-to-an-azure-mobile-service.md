@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803736"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195078"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Tutorial: Crear una aplicación de escritorio de WPF conectada a un servicio móvil de Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -484,7 +484,7 @@ Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una apl
     > [!NOTE]
     >  Puede que necesite cambiar la parte numérica de la dirección URL. Microsoft Azure requiere una dirección URL única para cada servicio móvil.  
   
-     Esto establece la dirección URL para el servicio *https://wpfquickstart01.azure-mobile.net/*.  
+     Esto establece la dirección URL para el servicio `https://wpfquickstart01.azure-mobile.net/`.  
   
 4.  En la lista **BASE DE DATOS** elija una opción de base de datos. Puesto que se trata de una aplicación que probablemente no obtendrá una gran cantidad de uso, puede que prefiera usar la opción **Crear una base de datos SQL de 20 MB gratuita** . También puede elegir la base de datos gratuita ya asociada a su suscripción.  
   

@@ -13,19 +13,19 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834882"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868890"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente de Visual Studio 2017, consulte el [Guía del Administrador de Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
-Puede implementar Visual Studio 2015 en una red siempre que cada equipo de destino cumpla los [requisitos mínimos de instalación](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Para crear un recurso compartido de red, puede ejecutar el archivo de instalación con el modificador -layout (como se describe en la página [Crear una instalación sin conexión de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)) y, después, copiarlo desde el equipo al recurso compartido de red. Si usa una imagen ISO, montar la imagen ISO y compartirla o copiarla en un recurso compartido de red.  
+Puede implementar Visual Studio 2015 en una red siempre que cada equipo de destino cumpla los [requisitos mínimos de instalación](https://visualstudio.microsoft.com/vs/older-downloads/). Para crear un recurso compartido de red, puede ejecutar el archivo de instalación con el modificador -layout (como se describe en la página [Crear una instalación sin conexión de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)) y, después, copiarlo desde el equipo al recurso compartido de red. Si usa una imagen ISO, montar la imagen ISO y compartirla o copiarla en un recurso compartido de red.  
   
  Tenga en cuenta que las instalaciones que se realizan desde un recurso compartido de red "recuerdan" la ubicación de la que proceden. Esto significa que, para reparar un equipo cliente, quizás sea necesario volver al recurso compartido de red desde el que se instaló el cliente. Elija cuidadosamente la ubicación de red para que esté disponible durante el tiempo que espera que los clientes de Visual Studio 2015 se ejecuten en su organización.  
   

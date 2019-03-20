@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 447c51193845e4cc558ed70bcd89b68ceef888fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919175"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983499"
 ---
 # <a name="access-data-in-visual-studio"></a>Acceder a datos en Visual Studio
 
@@ -65,10 +65,20 @@ La mayoría de los otros productos SQL y NoSQL base de datos que se enumeran aqu
 - VelocityDB
 - Y mucho más...
 
-Muchos proveedores de base de datos y de terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en nuget.org o mediante el Administrador de paquetes de NuGet en Visual Studio (**herramientas** > **Administrador de paquetes de NuGet** > **administrar paquetes NuGet Paquetes para la solución**). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en Visual Studio Marketplace, vaya a **herramientas**, **extensiones y actualizaciones** y, a continuación, seleccione **Online** en el panel izquierdo de la cuadro de diálogo. Para obtener más información, consulte [sistemas de base de datos Compatible para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+::: moniker range="vs-2017"
+
+Muchos proveedores de base de datos y de terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en nuget.org o mediante el Administrador de paquetes de NuGet en Visual Studio (**herramientas** > **Administrador de paquetes de NuGet** > **administrar paquetes NuGet Paquetes para la solución**). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o yendo a **herramientas** > **extensiones y actualizaciones** y, a continuación, seleccione  **Online** en el panel izquierdo del cuadro de diálogo. Para obtener más información, consulte [sistemas de base de datos Compatible para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Muchos proveedores de base de datos y de terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en nuget.org o mediante el Administrador de paquetes de NuGet en Visual Studio (**herramientas** > **Administrador de paquetes de NuGet** > **administrar paquetes NuGet Paquetes para la solución**). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o yendo a **extensiones** > **administrar extensiones** y, a continuación, seleccione  **Online** en el panel izquierdo del cuadro de diálogo. Para obtener más información, consulte [sistemas de base de datos Compatible para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
 
 > [!NOTE]
-> El soporte extendido de SQL Server 2005 finalizó el 12 de abril de 2016. No hay ninguna garantía de que las herramientas de datos en Visual Studio 2015 y versiones posteriores seguirán funcionando con SQL Server 2005 después de esta fecha. Para obtener más información, consulte el [anuncio de fin de soporte para SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> El soporte extendido de SQL Server 2005 finalizó el 12 de abril de 2016. No hay ninguna garantía de que las herramientas de datos en Visual Studio 2015 y versiones posteriores seguirán funcionando con SQL Server 2005. Para obtener más información, consulte el [anuncio de fin de soporte para SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>Lenguajes de .NET
 

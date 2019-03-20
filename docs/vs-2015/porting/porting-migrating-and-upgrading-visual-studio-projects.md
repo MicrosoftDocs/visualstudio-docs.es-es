@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805558"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194929"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portar, migrar y actualizar proyectos de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Cuando considere la posibilidad de cambiar a una versión más reciente de Visua
 |Office 2007 VSTO|Si actualiza el proyecto al destino Office 2013 y .NET Framework 4, puede abrir este proyecto en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]o Visual Studio 2010 SP1.|
 |Office 2010 VSTO|Si el proyecto tiene como destino .NET Framework 4, puede abrirlo en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1. Todos los demás proyectos requieren una actualización unidireccional.|
 |Aplicaciones de Internet enriquecidas|Si actualiza el proyecto, puede abrirlo en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1.|
-|SharePoint 2007|Este proyecto no se puede abrir en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Sin embargo, si actualiza manualmente el proyecto a SharePoint 2010, puede abrirlo en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1. Para obtener más información sobre cómo actualizar SharePoint 2007, vea [Migrar de SharePoint 2007 a SharePoint 2010 para el profesional de TI](http://go.microsoft.com/fwlink/?LinkId=238224), [Migrar un flujo de trabajo de 2007 a Visual Studio y SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=238225) y [Herramienta de migración del motor de búsqueda Enterprise Search de SharePoint para SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=238226).|
+|SharePoint 2007|Este proyecto no se puede abrir en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Sin embargo, si actualiza manualmente el proyecto a SharePoint 2010, puede abrirlo en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1. Para obtener más información sobre cómo actualizar SharePoint 2007, consulte [migración desde SharePoint 2007 a SharePoint 2010 para profesionales de TI](http://go.microsoft.com/fwlink/?LinkId=238224) y [herramienta de migración de SharePoint Enterprise Search para SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|Puede abrir el proyecto en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1.|
 |SketchFlow|Si permite que Visual Studio actualice el proyecto a WPF 4.5/Silverlight 5, puede abrirlo en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] y [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |Base de datos [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]|Puede abrir el proyecto en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1. Si tiene un archivo de base de datos (.mdf) creado en una versión anterior de SQL Server, debe actualizarlo a [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] antes de poder utilizarlo con SQL Server Express LocalDB, pero la base de datos ya no es compatible con versiones anteriores de SQL Server. Si no realiza la actualización, puede continuar trabajando con la base de datos en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] si instala y usa [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] en el mismo equipo. Para obtener más información, consulte [actualizar archivos .mdf](../data-tools/upgrade-dot-mdf-files.md).|
@@ -91,7 +91,7 @@ Cuando considere la posibilidad de cambiar a una versión más reciente de Visua
 
 - Si intenta abrir un proyecto para una aplicación de escritorio en [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], se produce un error y se muestra uno de estos mensajes: "Esta edición de Visual Studio solo admite aplicaciones de [!INCLUDE[win81](../includes/win81-md.md)] " o "Este proyecto no es compatible con la edición actual de Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] está restringido al desarrollo, prueba e implementación de aplicaciones de la Tienda Windows diseñadas para Windows 8.1. Para abrir un proyecto de aplicación de escritorio, debe usar una edición de Visual Studio que admita ese tipo de proyecto.
 
-   Para obtener más información sobre las ediciones de Visual Studio, vea [Productos de Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332).
+   Para obtener más información sobre las ediciones de Visual Studio, vea [Productos de Microsoft Visual Studio](https://visualstudio.microsoft.com/products/).
 
 - Si intenta abrir un proyecto de aplicación de la Tienda Windows en [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, aparece un error. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop no se puede usar para compilar aplicaciones de la Tienda Windows. Si desea compilar aplicaciones de la Tienda Windows, también puede instalar [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. O bien, para desarrollar aplicaciones para todas las plataformas de Microsoft y la Web, pruebe Visual Studio Professional 2013.
 
