@@ -1,6 +1,6 @@
 ---
-title: Procedimiento Usar asistentes con plantillas de proyectos
-ms.date: 11/04/2016
+title: Filtrar Usar asistentes con plantillas de proyectos
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ad50d22641d6b52d688c685fbf0f50fd0c54b31
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 140c72e124143860fee80054ab3fe7e6e921b918
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723713"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194676"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedimiento Usar a asistentes con plantillas de proyecto
 
@@ -31,14 +31,14 @@ El <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> se denominan métodos de
 
 ## <a name="create-a-project-template-project-with-a-vsix-project"></a>Crear un proyecto de plantilla de proyecto con un proyecto VSIX
 
-Comenzar a crear una plantilla personalizada con el proyecto de plantilla de proyecto, que forma parte del SDK de Visual Studio. En este procedimiento usaremos un C# proyecto de plantilla de proyecto, pero también hay un proyecto de plantilla de proyecto de Visual Basic. A continuación, un proyecto de VSIX se agregue a la solución que contiene el proyecto de plantilla de proyecto.
+Comenzar a crear una plantilla personalizada con el proyecto de plantilla de proyecto, que forma parte del SDK de Visual Studio. En este procedimiento, utilizaremos un C# proyecto de plantilla de proyecto, pero también hay un proyecto de plantilla de proyecto de Visual Basic. A continuación, un proyecto de VSIX se agregue a la solución que contiene el proyecto de plantilla de proyecto.
 
-1. Crear un proyecto de plantilla de proyecto de C# (en Visual Studio, **archivo** > **New** > **proyecto** > **Visual C#**   >  **Extensibilidad** > **plantilla de proyecto de C#**). Asígnele el nombre **MyProjectTemplate**.
+1. Crear un C# proyecto de plantilla de proyecto (en Visual Studio, seleccione **archivo** > **New** > **proyecto** y busque "plantilla de proyecto" ). Asígnele el nombre **MyProjectTemplate**.
 
    > [!NOTE]
    > Se le pedirá que instale el SDK de Visual Studio. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Agregue un nuevo proyecto VSIX (**archivo** > **New** > **proyecto** > **Visual C#**   >  **Extensibilidad** > **proyecto VSIX**) en la misma solución que el proyecto de plantilla de proyecto (en **el Explorador de soluciones**, Seleccione el nodo de la solución, contextual y seleccione **agregar** > **nuevo proyecto**). Asígnele el nombre **MyProjectWizard.**
+2. Agregue un nuevo proyecto VSIX en la misma solución que el proyecto de plantilla de proyecto (en **el Explorador de soluciones**, seleccione el nodo de la solución, contextual y seleccione **agregar** > **nuevo proyecto**  y busque "vsix"). Asígnele el nombre **MyProjectWizard.**
 
 3. Establezca el proyecto VSIX como proyecto de inicio. En **el Explorador de soluciones**, seleccione el nodo del proyecto VSIX, contextual y seleccione **establecer como proyecto de inicio**.
 
@@ -50,7 +50,7 @@ Comenzar a crear una plantilla personalizada con el proyecto de plantilla de pro
 
 7. Compile la solución y comience la depuración. Se muestra una segunda instancia de Visual Studio. (Esto puede tardar unos minutos).
 
-8. En la segunda instancia de Visual Studio, intente crear un nuevo proyecto con la nueva plantilla (**archivo** > **New** > **proyecto > Visual C#**   >  **MyProject plantilla**). Debería aparecer el nuevo proyecto con una clase denominada **Class1**. Ahora ha creado una plantilla de proyecto personalizado. Detener ahora la depuración.
+8. En la segunda instancia de Visual Studio, intente crear un nuevo proyecto con la nueva plantilla (**archivo** > **New** > **proyecto**, busque " MyProject"). Debería aparecer el nuevo proyecto con una clase denominada **Class1**. Ahora ha creado una plantilla de proyecto personalizado. Detener ahora la depuración.
 
 ## <a name="create-a-custom-template-wizard"></a>Crear a un asistente de plantilla personalizada
 
@@ -60,11 +60,11 @@ Este procedimiento muestra cómo crear a un asistente personalizado que abre un 
 
 2. En **el Explorador de soluciones**, seleccione el nodo del proyecto VSIX. A continuación **el Explorador de soluciones**, debería ver el **propiedades** ventana. Si no lo hace, seleccione **vista** > **ventana propiedades**, o bien presione **F4**. En el **propiedades** ventana, seleccione los siguientes campos a `true`:
 
-   -   **IncludeAssemblyInVSIXContainer**
+   - **IncludeAssemblyInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInVSIXContainer**
+   - **IncludeDebugSymbolsInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**
 
 3. Agregue el ensamblado como un recurso para el proyecto VSIX. Abra el *source.extension.vsixmanifest* de archivo y seleccione el **activos** ficha. En el **Agregar nuevo activo** ventana, para **tipo** seleccione **Microsoft.VisualStudio.Assembly**, para **origen** seleccione **A proyecto de la solución actual**y para **proyecto** seleccione **MyProjectWizard**.
 
@@ -157,7 +157,7 @@ Este procedimiento muestra cómo crear a un asistente personalizado que abre un 
 
    - Un <xref:System.Object> matriz que contiene un conjunto de parámetros que se pasa al asistente por Visual Studio.
 
-     Este ejemplo agrega un valor de parámetro del formulario de entrada de datos al parámetro <xref:System.Collections.Generic.Dictionary%602>. Cada instancia del parámetro `$custommessage$` del proyecto se reemplazará por el texto escrito por el usuario. Debe agregar los ensamblados siguientes al proyecto: **Sistema** y **System.Drawing**.
+     Este ejemplo agrega un valor de parámetro del formulario de entrada de datos al parámetro <xref:System.Collections.Generic.Dictionary%602>. Cada instancia del parámetro `$custommessage$` del proyecto se reemplazará por el texto escrito por el usuario. Agregue los siguientes ensamblados al proyecto: **Sistema** y **System.Drawing**.
 
 7. Ahora cree la **UserInputForm**. En el *WizardImplementation.cs* , agregue el código siguiente después del final de la `WizardImplementation` clase.
 
@@ -228,7 +228,7 @@ En el orden de la plantilla de proyecto personalizadas utilizar al Asistente per
 
      *Herramientas de C:\Program archivos (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1*
 
-     Si no se encuentra la herramienta, intente ejecutar **donde/r.  Sn.exe** en la ventana de comandos. Tome nota de la ruta de acceso.
+     Si no se encuentra la herramienta, intente ejecutar **donde /R. sn.exe** en la ventana de comandos. Tome nota de la ruta de acceso.
 
 10. Extraiga la clave pública desde el *key.snk* archivo. En la ventana de comandos, escriba
 
@@ -297,19 +297,19 @@ namespace $safeprojectname$
 
 Ahora puede crear un proyecto a partir de la plantilla y utilizar el asistente personalizado.
 
-1.  Recompile la solución e iniciar la depuración. Aparece una segunda instancia de Visual Studio.
+1. Recompile la solución e iniciar la depuración. Aparece una segunda instancia de Visual Studio.
 
-2.  Cree un nuevo proyecto MyProjectTemplate. (**Archivo** > **nueva** > **proyecto** > **Visual C#**  >  **MyProjectTemplate**)
+2. Cree un nuevo proyecto MyProjectTemplate. (**Archivo** > **nueva** > **proyecto**).
 
-3.  En el **nuevo proyecto** cuadro de diálogo, busque la plantilla, escriba un nombre y haga clic en **Aceptar**.
+3. En el **nuevo proyecto** cuadro de diálogo, busque "myproject" buscar la plantilla, escriba un nombre y haga clic en **Aceptar**.
 
      Se abrirá el formulario de datos proporcionados por el usuario.
 
-4.  Escriba un valor para el parámetro personalizado y haga clic en el botón.
+4. Escriba un valor para el parámetro personalizado y haga clic en el botón.
 
      El formulario de datos proporcionados por el usuario del asistente se cierra y se crea un proyecto a partir de la plantilla.
 
-5.  En **el Explorador de soluciones**, haga clic en el archivo de código fuente y haga clic en **ver código**.
+5. En **el Explorador de soluciones**, haga clic en el archivo de código fuente y haga clic en **ver código**.
 
      Observe que `$custommessage$` se ha reemplazado con el texto escrito en el formulario de datos proporcionados por el usuario del asistente.
 

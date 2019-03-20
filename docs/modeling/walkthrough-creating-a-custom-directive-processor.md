@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4b46937e8b30dec1f9e2a78d181cd53692b7d1b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910433"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195130"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizado
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Tutorial: Creación de un procesador de directivas personalizado
 
 *Procesadores de directivas* funcionan agregando código a la *clase de transformación generada*. Si se llama a un *directiva* desde un *plantilla de texto*, el resto del código que se escribe en la plantilla de texto puede basarse en la funcionalidad que proporciona la directiva.
 
@@ -34,7 +34,7 @@ Las tareas que se ilustran en este tutorial son las siguientes:
 
 - Probar el procesador de directivas
 
-## <a name="create-a-custom-directive-processor"></a>Crear un procesador de directivas personalizado
+## <a name="create-a-custom-directive-processor"></a>Creación de un procesador de directivas personalizado
 
 En este tutorial, creará un procesador de directivas personalizado. Agregará una directiva personalizada que lea un archivo XML, le almacene en una variable <xref:System.Xml.XmlDocument> y lo exponga a través de una propiedad. En la sección "Probar el procesador de directivas", utilizará esta propiedad en una plantilla de texto para tener acceso al archivo XML.
 
@@ -331,7 +331,7 @@ End Property
             {
                 XmlDocument d = new XmlDocument();
 
-                using (XmlTextReader reader = new XmlTextReader(fileName))
+                using (XmlReader reader = XmlReader.Create(fileName))
                 {
                     try
                     {
@@ -581,7 +581,7 @@ End Property
 
                 Dim d As XmlDocument = New XmlDocument()
 
-                Using reader As XmlTextReader = New XmlTextReader(fileName)
+                Using reader As XmlReader = XmlReader.Create(fileName)
 
                     Try
                         d.Load(reader)

@@ -1,6 +1,6 @@
 ---
 title: Crear un Windows Forms Control Toolbox | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -12,31 +12,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873016"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194582"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Crear un Control de cuadro de herramientas de Windows Forms
-La plantilla de elemento de Control de cuadro de herramientas de Windows Forms que se incluye en las herramientas de extensibilidad de Visual Studio (SDK de VS) le permite crear un control que se agrega automáticamente a la **cuadro de herramientas** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un control de contador sencillo que puede distribuir a otros usuarios.
+
+La plantilla de elemento de Control de cuadro de herramientas de Windows Forms que se incluye en las herramientas de extensibilidad de Visual Studio (SDK de VS), le permite crear un **cuadro de herramientas** control que se agrega automáticamente cuando se instala la extensión. En este tutorial se muestra cómo usar la plantilla para crear un control de contador sencillo que puede distribuir a otros usuarios.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-windows-forms-toolbox-control"></a>Crear un Control de cuadro de herramientas de Windows Forms
+## <a name="create-the-toolbox-control"></a>Crear el Control de cuadro de herramientas
+
 La plantilla de Control de cuadro de herramientas de Windows Forms crea un control de usuario no definido y proporciona toda la funcionalidad que es necesario para agregar el control a la **cuadro de herramientas**.
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Crear una extensión con un Control de cuadro de herramientas de Windows Forms
 
-1. Cree un proyecto VSIX denominado `MyWinFormsControl`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C#** > **extensibilidad**.
+1. Cree un proyecto VSIX denominado `MyWinFormsControl`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** cuadro de diálogo, busque "vsix".
 
 2. Cuando se abra el proyecto, agregue un **Control Toolbox de Windows Forms** plantilla de elemento denominado `Counter`. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C#** > **extensibilidad** y seleccione **Control Toolbox de Windows Forms**
 
 3. Esto agrega un control de usuario, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> para colocar el control en el **cuadro de herramientas**y un **Microsoft.VisualStudio.ToolboxControl** entrada del activo en el manifiesto VSIX para la implementación.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Crear una interfaz de usuario para el control
+
 El `Counter` control requiere dos controles secundarios: una <xref:System.Windows.Forms.Label> para mostrar el recuento actual y un <xref:System.Windows.Forms.Button> para restablecer el recuento a 0. No hay más controles secundarios son necesarios porque los autores de llamadas incrementarán el contador mediante programación.
 
 #### <a name="to-build-the-user-interface"></a>Para crear la interfaz de usuario
@@ -58,6 +62,7 @@ El `Counter` control requiere dos controles secundarios: una <xref:System.Window
     |`Button1`|**Texto**|Restablecer|
 
 ### <a name="code-the-user-control"></a>Codificar el control de usuario
+
 El `Counter` control va a exponer un método para incrementar el contador, un evento que se genera cada vez que se incrementa el contador, un **restablecer** botón y tres propiedades para almacenar el recuento actual, el texto para mostrar y si se debe mostrar u ocultar el **restablecer** botón. El atributo `ProvideToolboxControl` determina la ubicación del **Cuadro de herramientas** donde se mostrará el control `Counter` .
 
 #### <a name="to-code-the-user-control"></a>Para codificar el control de usuario
@@ -146,13 +151,14 @@ El `Counter` control va a exponer un método para incrementar el contador, un ev
     ```
 
 ### <a name="test-the-control"></a>Probar el control
+
  Para probar un **cuadro de herramientas** controlar, pruébelo primero en el entorno de desarrollo y, a continuación, vuelva a probarlo en una aplicación compilada.
 
 #### <a name="to-test-the-control"></a>Para probar el control
 
-1. Presione **F5**.
+1. Presione **F5** a **iniciar la depuración**.
 
-    Esto compila el proyecto y abre una segunda instancia Experimental de Visual Studio que tiene instalado el control.
+    Este comando compila el proyecto y abre una segunda instancia Experimental de Visual Studio que tiene instalado el control.
 
 2. En la instancia Experimental de Visual Studio, cree un **aplicación de Windows Forms** proyecto.
 
@@ -199,16 +205,18 @@ El `Counter` control va a exponer un método para incrementar el contador, un ev
 
 16. Haga clic en **prueba** hasta que el contador llega a **5** al cerrar el mensaje cuadros cada vez.
 
-    El **restablecer** botón vuelve a aparecer.
+    El **restablecer** botón volverá a aparecer.
 
 17. Haga clic en **Restablecer**.
 
     El contador se restablece a **0**.
 
 ## <a name="next-steps"></a>Pasos siguientes
+
 Cuando se crea un **cuadro de herramientas** control, Visual Studio crea un archivo denominado *ProjectName.vsix* en la carpeta \bin\debug\ del proyecto. Puede implementar el control mediante la carga de la *.vsix* archivo a una red o a un sitio Web. Cuando un usuario abre el *.vsix* archivo, el control se instala y se agrega a Visual Studio **cuadro de herramientas** en el equipo del usuario. Como alternativa, puede cargar el *.vsix* archivo [Visual Studio Marketplace](https://marketplace.visualstudio.com/) para que los usuarios pueden buscarlo en el **herramientas**  >   **Extensiones y actualizaciones** cuadro de diálogo.
 
 ## <a name="see-also"></a>Vea también
+
 - [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Crear un Control de cuadro de herramientas WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 - [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
