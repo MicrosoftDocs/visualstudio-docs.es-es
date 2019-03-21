@@ -172,6 +172,8 @@ items:
     - name: Trabajar con soluciones y proyectos
       href: ide/solutions-and-projects-in-visual-studio.md
       items:
+      - name: Crear un proyecto nuevo
+        href: ide/create-new-project.md
       - name: Crear soluciones y proyectos
         href: ide/creating-solutions-and-projects.md
       - name: Portar, migrar y actualizar proyectos
@@ -302,6 +304,7 @@ items:
             - name: Solución de problemas con fragmentos de código
               href: ide/troubleshooting-snippets.md
         - name: Acciones rápidas
+          displayName: light bulb screwdriver suggestions
           href: ide/quick-actions.md
           items:
           - name: Acciones rápidas comunes
@@ -784,7 +787,7 @@ items:
           href: ide/reference/autorecover-environment-options-dialog-box.md
         - name: 'Entorno: Documentos'
           href: ide/reference/documents-environment-options-dialog-box.md
-        - name: 'Entorno: Extensiones y actualizaciones'
+        - name: 'Entorno: Extensiones'
           href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
         - name: 'Entorno: Buscar y reemplazar'
           href: ide/reference/find-and-replace-environment-options-dialog-box.md
@@ -1190,9 +1193,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 6b2aef6cb17789a665cb4a7a0360b2bc7dd396ab
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c230bbe05320a57aecf0b7141f44f069eadd2a8d
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873779"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268740"
