@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868148"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195182"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidad y el conjunto de herramientas de integración de Project
 
@@ -418,7 +418,7 @@ El sistema de proyectos de Visual C++ se basa en el [sistema del proyecto de VS]
 
 Para obtener información general de diseño, vea [extensibilidad de plataformas, parte 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) y [extensibilidad de plataformas, parte 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
-En otras palabras, las páginas de propiedades se vea en el **las propiedades del proyecto** cuadro de diálogo para un proyecto de C++ se definen mediante *regla* archivos. Un archivo de reglas especifica un conjunto de propiedades para mostrar en una página de propiedades y cómo y dónde debe guardarse en el proyecto de archivos. Los archivos de reglas son archivos .xml que usar el formato Xaml. Se describen los tipos utilizados para serializarlos en [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Para obtener más información sobre el uso de archivos de reglas en los proyectos, vea [los archivos de reglas de XML de la página de propiedades](/cpp/ide/property-page-xml-files).
+En otras palabras, las páginas de propiedades se vea en el **las propiedades del proyecto** cuadro de diálogo para un proyecto de C++ se definen mediante *regla* archivos. Un archivo de reglas especifica un conjunto de propiedades para mostrar en una página de propiedades y cómo y dónde debe guardarse en el proyecto de archivos. Los archivos de reglas son archivos .xml que usar el formato Xaml. Se describen los tipos utilizados para serializarlos en [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Para obtener más información sobre el uso de archivos de reglas en los proyectos, vea [los archivos de reglas de XML de la página de propiedades](/cpp/build/reference/property-page-xml-files).
 
 Los archivos de regla deben agregarse a la `PropertyPageSchema` grupo de elementos:
 
@@ -636,8 +636,8 @@ Para obtener información sobre cómo crear archivos VSIX, vea [envío extension
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-El sistema de compilación de Microsoft ([MSBuild](../msbuild/msbuild.md)) proporciona el motor de compilación y el formato extensible basado en XML para archivos de proyecto. Debe estar familiarizado con basic [conceptos de MSBuild](../msbuild/msbuild-concepts.md) y con la forma [MSBuild de Visual C++](/cpp/build/msbuild-visual-cpp-overview) funciona con el fin de ampliar Visual C++ de sistema de proyectos.
+El sistema de compilación de Microsoft ([MSBuild](../msbuild/msbuild.md)) proporciona el motor de compilación y el formato extensible basado en XML para archivos de proyecto. Debe estar familiarizado con basic [conceptos de MSBuild](../msbuild/msbuild-concepts.md) y con la forma [MSBuild de Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) funciona con el fin de ampliar Visual C++ de sistema de proyectos.
 
 Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) proporciona la extensión de API que se usan por el sistema de proyectos de Visual C++ y CPS. Para obtener información general de cómo se usa MEF CPS, consulte [CPS y MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) en el [VSProjectSystem introducción de MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
-Puede personalizar el sistema de compilación existente para agregar pasos de compilación o nuevos tipos de archivo. Para obtener más información, consulte [información general sobre MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) y [trabajar con las propiedades del proyecto](/cpp/ide/working-with-project-properties).
+Puede personalizar el sistema de compilación existente para agregar pasos de compilación o nuevos tipos de archivo. Para obtener más información, consulte [información general sobre MSBuild (Visual C++)](/cpp/build/reference/msbuild-visual-cpp-overview) y [trabajar con las propiedades del proyecto](/cpp/build/working-with-project-properties).
