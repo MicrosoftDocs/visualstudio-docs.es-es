@@ -6,6 +6,7 @@ description: 'Aprenda a usar Visual Studio 2017 para desarrollar aplicaciones, s
 ms.topic: landing-page
 searchScope: []
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <h1>Documentación de productos de Visual Studio</h1>

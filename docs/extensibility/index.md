@@ -13,6 +13,8 @@ ms.workload:
 
 Visual Studio ofrece muchas opciones de extensibilidad. Puede extender el propio Visual Studio, agregar analizadores de código fuente para el compilador "Roslyn", o incluso crear sus propios SDK.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/visualstudio/extensibility/visual-studio-sdk">

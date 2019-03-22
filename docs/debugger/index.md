@@ -12,6 +12,8 @@ manager: jillfra
 
 El depurador de Visual Studio permite observar el comportamiento del programa en tiempo de ejecución y detectar problemas. El depurador trabaja con todos los lenguajes de programación de Visual Studio y sus bibliotecas asociadas. Con el depurador se puede interrumpir la ejecución del programa para examinar el código, evaluar y modificar variables, ver registros, mostrar las instrucciones creadas a partir del código fuente y observar el espacio que ocupa la aplicación en memoria.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">
