@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719488"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324349"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Filtrar Diagnosticar retrasos de la interfaz de usuario causados por las extensiones
 
@@ -43,7 +43,7 @@ Para diagnosticar un retraso de la interfaz de usuario, primero debe identificar
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Reinicie VS con la actividad de inicio de sesión
 
-Visual Studio puede generar un "registro de actividad" que proporciona información útil al depurar un problema. Para activar la actividad de registro en Visual Studio, inicie Visual Studio con el `/log` opción de línea de comandos. Cuando se inicia Visual Studio, el registro de actividad se almacena en la siguiente ubicación:
+Visual Studio puede generar un "registro de actividad" que proporciona información útil al depurar un problema. Para activar la actividad de registro en Visual Studio, abra Visual Studio con el `/log` opción de línea de comandos. Cuando se inicia Visual Studio, el registro de actividad se almacena en la siguiente ubicación:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml

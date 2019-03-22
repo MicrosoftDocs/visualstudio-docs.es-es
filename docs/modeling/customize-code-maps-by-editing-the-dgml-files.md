@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31f26acadcbeac4aa042f7372fd4c80a9e385c54
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5394e7918c623fee3c1fed4008a952ca7a9e0f22
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937947"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323154"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizar mapas de código mediante la edición de los archivos DGML
 
@@ -131,7 +131,7 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
     Background="ColorNameOrHexadecimalValue"
     ```
 
-     Esquema
+     Contorno
 
     ```xml
     Stroke="ColorNameOrHexadecimalValue"
@@ -149,7 +149,7 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
     Foreground="ColorNameOrHexadecimalValue"
     ```
 
-     Icono
+     Iconos
 
     ```xml
     Icon="IconFilePathLocation"
@@ -286,29 +286,29 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
 
     Esta expresión usa la sintaxis de la forma de Backus-Naur (BNF) siguiente:
 
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
+    \<Expresión >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "("\<expresión > "")"" &#124; \<MemberBindings > &#124; \<Literal > &#124; \<Número >
 
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>
+    \<BinaryExpression >:: = \<expresión > \<operador > \<expresión >
 
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
+    \<UnaryExpression >:: = "!" \<Expresión > &#124; "+" \<expresión > &#124; "-" \<expresión >
 
-    <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operador >:: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "o" &#124; "y" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
+    \<MemberBindings> ::= \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding>
 
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
+    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>
 
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
+    \<MethodCall >:: = \<identificador > "(" \<MethodArgs > "")""
 
-    <PropertyGet> :: = Identificador
+    \<PropertyGet >:: = identificador
 
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
+    \<MethodArgs >:: = \<expresión > &#124; \<expresión > "," \<MethodArgs > &#124; \<vacía >
 
-    <Identifier> ::= [^. ]*
+    \<Identificador >:: = [^. ]*
 
-    <Literal> :: = literal de cadena único o entre comillas dobles
+    \<Literal >:: = literal de cadena único o entre comillas dobles
 
-    <Number> :: = cadena de dígitos con separador decimal opcional
+    \<Número >:: = cadena de dígitos con separador decimal opcional
 
     Puede especificar varios `<Condition/>` elementos, que deben ser true para aplicar el estilo.
 
@@ -373,9 +373,9 @@ Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el ma
 
  En este ejemplo:
 
-1.  Si `Coverage` es > 80, la propiedad `Background` se establece en verde.
+1.  Si `Coverage` es > 80, a continuación, establezca el `Background` propiedad a verde.
 
-2.  En cambio, si `Coverage` es > 50, la propiedad `Background` se establece en una sombra naranja en función del valor de la propiedad `Coverage`.
+2.  Else if `Coverage` es > 50, a continuación, establezca el `Background` en función del valor de propiedad en una sombra naranja el `Coverage` propiedad.
 
 3.  Por otro lado, la propiedad `Background` se establece en una sombra roja en función de la propiedad `Coverage`.
 

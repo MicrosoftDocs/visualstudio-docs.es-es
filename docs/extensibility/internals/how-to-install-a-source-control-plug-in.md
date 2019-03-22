@@ -1,5 +1,5 @@
 ---
-title: Filtrar Instalar un complemento de Control de código fuente | Documentos de Microsoft
+title: Procedimiento Instalar un complemento de Control de código fuente | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cedadf6cc19794c8e1251aef0b9f24c8a54fa788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635194"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323391"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Filtrar Instalar un complemento de control de código fuente
 Creación de un control de código fuente complemento implica tres pasos:
@@ -78,7 +78,7 @@ Creación de un control de código fuente complemento implica tres pasos:
 
 4. Cree una subclave denominada **InstalledSCCProviders** bajo el **SourceCodeControlProvider** subclave y, a continuación, coloque una entrada en dicha subclave.
 
-    El nombre de esta entrada es el nombre legible por el usuario del proveedor (igual que el valor especificado para la entrada SCCServerName) y el valor es, una vez más, la subclave que se creó en el paso 1. El patrón es **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<display name>** = *SOFTWARE\\< nombre de la compañía\> \\< nombre de producto\>*.
+    El nombre de esta entrada es el nombre legible por el usuario del proveedor (igual que el valor especificado para la entrada SCCServerName) y el valor es, una vez más, la subclave que se creó en el paso 1. El patrón es **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nombre para mostrar\>** = *SOFTWARE\\< empresa nombre\>\\< nombre de producto\>*.
 
     Por ejemplo:
 

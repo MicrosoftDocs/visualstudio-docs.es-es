@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872439"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323456"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 
@@ -84,7 +84,7 @@ C++ Core Guidelines sirven para ayudarle a escribir código mejor y más seguro.
 
 Cuando se agregan nuevas reglas para el Comprobador de directrices principales de C++, puede aumentar el número de advertencias que se generan para código preexistente. Puede usar conjuntos de reglas predefinidas para filtrar qué tipos de reglas para habilitar. A partir de Visual Studio 2017 versión 15.3, los conjuntos de reglas compatibles son:
 
-  - **Reglas de puntero Owner** aplicar [administración de recursos comprueba relacionadas con owner<T> de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+  - **Reglas de puntero Owner** aplicar [administración de recursos comprueba relacionadas con owner\<T > de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
   - **Reglas de constantes** aplicar [relacionadas con las comprobaciones de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -162,7 +162,7 @@ Puede usar la opción de línea de comandos para deshabilitar temporalmente todo
 A veces puede ser útil para realizar centrado de análisis de código y aún aprovechar el IDE de Visual Studio. A continuación es un escenario de ejemplo que puede utilizarse para proyectos grandes para ahorrar tiempo de compilación y para que sea más fácil para filtrar los resultados.
 
 1. En el shell de comandos establece la `esp.extension` y `esp.annotationbuildlevel` variables de entorno.
-2. Inicie Visual Studio desde el shell de comandos para heredar estas variables.
+2. Abra Visual Studio desde el shell de comandos para heredar estas variables.
 3. Cargar el proyecto y abra sus propiedades.
 4. Habilitar análisis de código, seleccionar los conjuntos de reglas adecuada, pero no habilita las extensiones de análisis de código.
 5. Vaya al archivo que desea analizar con el Comprobador de directrices principales de C++ y abrir sus propiedades.

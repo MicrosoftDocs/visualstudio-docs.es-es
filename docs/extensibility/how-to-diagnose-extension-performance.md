@@ -8,12 +8,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 2d9337b443fdaabe713f1708b2be9051c2f02b3c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707073"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323690"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Medir el impacto de la extensión de inicio
 
@@ -74,11 +74,11 @@ Utilizando la carga del paquete asincrónica y las API de E/S asincrónicas debe
 
 Uno de los patrones comunes de inicialización del paquete consiste en inicializar los servicios proporcionados por ese paquete en el paquete o utilizado por `constructor` o `initialize` método. Aunque esto garantiza que los servicios están listos para usarse, también puede agregar costos innecesarios para empaquetar la carga si esos servicios no se utilizan inmediatamente. En su lugar se deben inicializar dichos servicios a petición para minimizar el trabajo realizado en la inicialización del paquete.
 
-Proporcionado por un paquete de servicios globales, puede usar `AddService` métodos que toman una función para inicializar el servicio de forma diferida solo cuando se solicita un componente. Para los servicios utilizados dentro del paquete, puede usar Lazy<T> o elemento AsyncLazy<T> para asegurarse de que los servicios son inicializado ni consultarse en el primer uso.
+Proporcionado por un paquete de servicios globales, puede usar `AddService` métodos que toman una función para inicializar el servicio de forma diferida solo cuando se solicita un componente. Para los servicios utilizados dentro del paquete, puede usar Lazy\<T > o elemento AsyncLazy\<T > para asegurarse de que los servicios son inicializado ni consultarse en el primer uso.
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Medición del impacto de auto carga extensiones mediante el registro de actividad
 
-A partir de Visual Studio 2017 Update 3, registro de actividad de Visual Studio ahora contendrá las entradas de impacto en el rendimiento de los paquetes durante la carga de inicio y la solución. Para ver estas mediciones, tiene que iniciar Visual Studio con el modificador/log y abra *ActivityLog.xml* archivo.
+A partir de Visual Studio 2017 Update 3, registro de actividad de Visual Studio ahora contendrá las entradas de impacto en el rendimiento de los paquetes durante la carga de inicio y la solución. Para ver estas mediciones, tiene que abrir Visual Studio con el modificador/log y abra *ActivityLog.xml* archivo.
 
 En el registro de actividad, las entradas se encontrarán en el origen de "Administrar el rendimiento de Visual Studio" y tendrá un aspecto similar al ejemplo siguiente:
 
@@ -141,9 +141,9 @@ Una vez configurado el entorno de Visual Studio con la extensión instalada, pue
 
 ![menú recopilar perfview](media/perfview-collect-menu.png)
 
-Las opciones predeterminadas proporcionará las pilas de llamadas para el consumo de CPU, pero puesto que estamos interesados en tiempo de bloqueo, también debe habilitar **tiempo subprocesos** pilas. Una vez que la configuración esté lista, puede hacer clic en **iniciar colección** e iniciar Visual Studio una vez que se inicia la grabación.
+Las opciones predeterminadas proporcionará las pilas de llamadas para el consumo de CPU, pero puesto que estamos interesados en tiempo de bloqueo, también debe habilitar **tiempo subprocesos** pilas. Una vez que la configuración esté lista, puede hacer clic en **iniciar colección** y, a continuación, abra Visual Studio después de la grabación se inicia.
 
-Antes de detener la recopilación, desea asegurarse de que Visual Studio está completamente inicializado, la ventana principal está completamente visible y si la extensión tiene interfaz de usuario que se muestran automáticamente, también están visibles. Una vez que Visual Studio se cargó completamente y se inicializa la extensión, puede detener la grabación para analizar el seguimiento.
+Antes de detener la recopilación, desea asegurarse de que Visual Studio está completamente inicializado, la ventana principal está completamente visible y si la extensión tiene interfaz de usuario que se muestran automáticamente, también están visibles. Cuando Visual Studio se cargó completamente y se inicializa la extensión, puede detener la grabación para analizar el seguimiento.
 
 **Analizar un seguimiento con PerfView:**
 

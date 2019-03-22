@@ -7,12 +7,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: c98c13528facb08f475614a6cbca9cee3c426ef9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324005"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323112"
 ---
 # <a name="troubleshooting-template-installation"></a>Solución de problemas de instalación de la plantilla
 
@@ -41,7 +41,7 @@ Si experimenta problemas al implementar las plantillas de proyecto o elemento, p
 
 ::: moniker range="vs-2017"
 
-4. Iniciar Visual Studio y los cuadros de diálogo nuevo proyecto y el nuevo elemento para inicializar ambos árboles de plantilla.
+4. Abra Visual Studio e inicie los cuadros de diálogo nuevo proyecto y el nuevo elemento para inicializar ambos árboles de plantilla.
 
    El registro de plantilla aparece ahora en **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid se corresponde con el identificador de instalación de la instancia de Visual Studio). La inicialización de cada árbol de la plantilla anexa entradas en este registro.
 
@@ -49,7 +49,7 @@ Si experimenta problemas al implementar las plantillas de proyecto o elemento, p
 
 ::: moniker range=">=vs-2019"
 
-4. Iniciar Visual Studio y los cuadros de diálogo nuevo proyecto y el nuevo elemento para inicializar ambos árboles de plantilla.
+4. Abra Visual Studio e inicie los cuadros de diálogo nuevo proyecto y el nuevo elemento para inicializar ambos árboles de plantilla.
 
    El registro de plantilla aparece ahora en **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid se corresponde con el identificador de instalación de la instancia de Visual Studio). La inicialización de cada árbol de la plantilla anexa entradas en este registro.
 

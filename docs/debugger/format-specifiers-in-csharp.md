@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698994"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870525"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato en C# en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en el **inspección** ventana mediante el uso de especificadores de formato. También puede usar especificadores de formato en el **inmediato** ventana, el **comando** ventana, en [puntos de seguimiento](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)y en las ventanas de código fuente. Si hace una pausa en una expresión de esas ventanas, el resultado aparecerá en un [información sobre datos](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) en la visualización del formato especificado.
@@ -51,6 +51,14 @@ Vamos a usar el código de ejemplo siguiente:
 Agregar el `my_var1` variable a la **inspección** ventana durante la depuración, **depurar** > **Windows** > **ver**  >  **Inspección 1**. A continuación, haga clic en la variable y seleccione **presentación Hexadecimal**. Ahora el **inspección** ventana muestra el valor 0 x 0065. Para ver este valor como un entero decimal en lugar de como entero hexadecimal, agregue el especificador de formato decimal **, d.** en el **nombre** columna después del nombre de variable. El **valor** columna muestra ahora **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+
+::: moniker range=">= vs-2019" 
+
+Puede ver y seleccionar de una lista de especificadores de formato disponibles mediante la anexión de una coma (,) en el valor de la **inspección** ventana. 
+
+![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
+
+::: moniker-end
 
 ## <a name="format-specifiers"></a>Especificadores de formato
 La tabla siguiente se describen los C# especificadores para que el depurador de Visual Studio de formato.

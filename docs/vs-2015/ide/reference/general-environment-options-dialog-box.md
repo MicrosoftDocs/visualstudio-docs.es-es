@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752295"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868135"
 ---
 # <a name="general-environment-options-dialog-box"></a>General, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Use esta página para cambiar, entre otras opciones, los temas de color, la conf
  **Tema de color**  
  Pulse el tema de color **Azul**, **Claro** u **Oscuro** para el IDE.  
   
- Puede instalar temas predefinidos adicionales y crear temas personalizados si descarga e instala **Visual Studio 2015 Color Theme Editor** desde la [Galería de Visual Studio](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools). Después de instalar esta herramienta, aparecerán temas de color adicionales en el cuadro de lista Tema de color.  
+ Puede instalar temas predefinidos adicionales y crear temas personalizados si descarga e instala **Visual Studio 2015 Color Theme Editor** desde [Visual Studio Marketplace](https://marketplace.visualstudio.com). Después de instalar esta herramienta, aparecerán temas de color adicionales en el cuadro de lista Tema de color.  
   
  Aplicar el tipo título en la barra de menús  
  Los menús están en **Tipo título** de manera predeterminada en Visual Studio 2015. Desactive esta opción para establecerlos en **MAYÚSCULAS**.  
