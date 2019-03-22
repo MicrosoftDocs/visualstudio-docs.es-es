@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bec1627af7bbef1c3fcd264f2d74aca86d1cfad4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639341"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325245"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Información general del modelo de programación de SharePoint de extensiones
   Al crear una extensión para las herramientas de SharePoint en Visual Studio, comience por implementar una o varias de las interfaces de extensibilidad que exponen las herramientas de SharePoint. En la mayoría de los casos, usará también otros tipos proporcionados por las herramientas de SharePoint para implementar características en la extensión. En algunos escenarios, también se pueden usar tipos de otros modelos de objetos proporcionados por Visual Studio y SharePoint. Debe comprender el propósito de cada uno de estos modelos de objetos y sabe cómo usarlos entre sí para crear extensiones para las herramientas de SharePoint.
@@ -83,7 +83,7 @@ ms.locfileid: "56639341"
 ### <a name="visual-studio-automation-object-model"></a>Modelo de objetos de automatización de Visual Studio
  El modelo de objetos de automatización de Visual Studio proporciona las API que se pueden usar para automatizar proyectos de Visual Studio y el IDE. Use el modelo de objetos de Visual Studio para llevar a cabo tareas relacionadas con el proyecto que no son específicas de proyectos de SharePoint u otras tareas de automatización generales de Visual Studio. Tradicionalmente, este modelo de objetos se suele usar en las macros y complementos de Visual Studio, pero también se puede usar en las extensiones de herramientas de SharePoint.
 
- La parte principal del modelo de objetos de automatización de Visual Studio se define en el *EnvDTE.dll* ensamblado. El *EnvDTE\\<version>.dll* ensamblados proporcionan una funcionalidad adicional que se introdujo en versiones específicas de Visual Studio. Estos ensamblados se incluyen en Visual Studio.
+ La parte principal del modelo de objetos de automatización de Visual Studio se define en el *EnvDTE.dll* ensamblado. El *EnvDTE\\\<versión > .dll* ensamblados proporcionan una funcionalidad adicional que se introdujo en versiones específicas de Visual Studio. Estos ensamblados se incluyen en Visual Studio.
 
  Para obtener más información sobre el modelo de objetos de automatización, vea [referencia de SDK de Visual Studio](../extensibility/visual-studio-sdk-reference.md).
 

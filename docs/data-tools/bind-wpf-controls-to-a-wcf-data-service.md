@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909692"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069780"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles de WPF a un servicio de datos de WCF
 
@@ -50,7 +50,7 @@ Necesita los componentes siguientes para completar este tutorial:
 
 El conocimiento previo de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial:
 
-- Data Services de WCF. Para obtener más información, consulte [Introducción](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Modelos de datos en [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -60,21 +60,9 @@ El conocimiento previo de los siguientes conceptos es útil, aunque no necesario
 
 ## <a name="create-the-service-project"></a>Crear el proyecto de servicio
 
-Iniciar este tutorial creando un proyecto para un servicio de datos de WCF:
+1. Iniciar este tutorial creando un C# o Visual Basic **aplicación Web ASP.NET** proyecto. Denomine el proyecto **AdventureWorksService**.
 
-1. Inicie Visual Studio.
-
-2. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
-
-3. Expanda **Visual Basic** o **Visual C#** y después seleccione **Web**.
-
-4. Seleccione la plantilla de proyecto **Aplicación web ASP.NET**.
-
-5. En el cuadro **Nombre**, escriba **AdventureWorksService** y haga clic en **Aceptar**.
-
-     Visual Studio crea el proyecto **AdventureWorksService**.
-
-6. En el **Explorador de soluciones**, haga clic con el botón derecho en **Default.aspx** y seleccione **Eliminar**. Este archivo no es necesario en este tutorial.
+2. En el **Explorador de soluciones**, haga clic con el botón derecho en **Default.aspx** y seleccione **Eliminar**. Este archivo no es necesario para el tutorial.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Crear un Entity Data Model para el servicio
 

@@ -1,13 +1,10 @@
 ---
 title: Dar formato a los especificadores en el depurador (C++) | Microsoft Docs
-ms.date: 11/20/2018
+ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - QuickWatch dialog box, format specifiers in C++
@@ -27,15 +24,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ad821c15ee8b405982d36c6b1c62d038bb11633
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227727"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870598"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato de C++ en el depurador de Visual Studio
-Puede cambiar el formato en el que se muestra un valor en el **inspección** ventana mediante el uso de especificadores de formato.
+Puede cambiar el formato en el que se muestra un valor en el **inspección**, **automático**, y **variables locales** windows mediante el uso de especificadores de formato.
 
 También puede usar especificadores de formato en el **inmediato** ventana, el **comando** ventana, en [puntos de seguimiento](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e incluso en las ventanas de código fuente. Si hace una pausa en una expresión de esas ventanas, el resultado aparece en un [información sobre datos](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). La visualización de información sobre datos refleja el especificador de formato.
 
@@ -57,8 +54,55 @@ Agregar el `my_var1` variable a la **inspección** ventana durante la depuració
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
+::: moniker range=">= vs-2019" 
+Puede ver y seleccionar de una lista de especificadores de formato disponibles mediante la anexión de una coma (,) en el valor de la **inspección** ventana. 
+
+![WatchFormatSpecDropdown](../debugger/media/vs-2019/format-specs-cpp.png "FormatSpecCpp")
+
+::: moniker-end
+
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Especificadores de formato
 Las tablas siguientes describen los especificadores de formato que puede usar en Visual Studio. Solo se admiten los especificadores en negrita para el nuevo depurador y no para la depuración de interoperabilidad con C++ / c++ / CLI.
+
+::: moniker range=">= vs-2019" 
+
+|Especificador|Formato|Valor de inspección original|Valor mostrado|
+|---------------|------------|--------------------------|---------------------|
+|d|Entero decimal|0x00000066|102|
+|o|Entero octal sin signo|0x00000066|000000000146|
+|x<br /><br /> **h**|entero hexadecimal|102|0xcccccccc|
+|X<br /><br /> **H**|entero hexadecimal|102|0xcccccccc|
+|xb<br /><br /> **hb**|entero hexadecimal (sin 0x inicial)|102|cccccccc|
+|Xb<br /><br /> **Hb**|entero hexadecimal (sin 0x inicial)|102|CCCCCCCC|
+|b|entero binario sin signo|25|0b00000000000000000000000000011001|
+|bb|entero binario sin signo (sin 0b inicial)|25|00000000000000000000000000011001|
+|h|notación científica|25000000|2.500000e + 07|
+|e|más corta, científica o de número de punto flotante|25000000|2.5e+07|
+|c|carácter único|0x0065, c|101 'e'|
+|s|const char * string (con comillas)|\<ubicación > "Hola mundo"|"hola a todos"|
+|**sb**|Cadena const char* (sin comillas)|\<ubicación > "Hola mundo"|hola a todos|
+|s8|Cadena UTF-8|\<ubicación > "Esto es un â˜• taza de café de UTF-8"|"Esto es un ☕ taza de café de UTF-8"|
+|**s8b**|Cadena UTF-8 (sin comillas)|\<ubicación > "Hola mundo"|hola a todos|
+|su|Cadena Unicode (codificación UTF-16) (con comillas)|\<ubicación > L "Hola mundo"|L"hola a todos"<br /><br /> u"hola a todos"|
+|sub|Cadena Unicode (codificación UTF-16; sin comillas)|\<ubicación > L "Hola mundo"|hola a todos|
+|bstr|Cadena binaria de BSTR (con comillas)|\<ubicación > L "Hola mundo"|L"hola a todos"|
+|env|Bloque de entorno (cadena terminada en doble null)|\<ubicación > L "=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|Cadena de UTF-32 (con comillas)|\<ubicación > U "Hola a todos"|u"hola a todos"|
+|**s32b**|cadena UTF-32 (sin comillas)|\<ubicación > U "Hola a todos"|hola a todos|
+|**en**|enum|Sábado(6)|Sábado|
+|**hv**|Tipo de puntero: indica que el valor de puntero que se va a inspeccionar es el resultado de la asignación del montón de una matriz, por ejemplo, `new int[3]`.|\<ubicación>{\<primer miembro>}|\<ubicación > {\<primer miembro >, \<segundo miembro >,...}|
+|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<ubicación> {member=value...}|{member=value…}|
+|**nd**|Muestra solo la información de la clase, omitiendo las clases derivadas|`(Shape*) square` incluye la información de clase base y derivada|Muestra únicamente la información de clase base|
+|hr|HRESULT o código de error Win32. Este especificador ya no es necesario para los valores HRESULT como el depurador descodifica automáticamente.|S_OK|S_OK|
+|wc|Marcador de clase de ventana|0x0010|WC_DEFAULTCHAR|
+|wm|Números de mensajes de Windows|16|WM_CLOSE|
+|nr|Suprimir el elemento "Vista sin formato"|
+|nvo|Mostrar elemento "Vista sin formato" para solo valores numéricos|
+|!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<representación personalizada>|4|
+
+::: moniker-end
+
+::: moniker range="vs-2017" 
 
 |Especificador|Formato|Valor de inspección original|Valor mostrado|
 |---------------|------------|--------------------------|---------------------|
@@ -86,8 +130,10 @@ Las tablas siguientes describen los especificadores de formato que puede usar en
 |wm|Números de mensajes de Windows|16|WM_CLOSE|
 |!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<representación personalizada>|4|
 
+::: moniker-end
+
 > [!NOTE]
-> Cuando el **hv** especificador de formato está presente, el depurador intenta determinar la longitud del búfer y muestra ese número de elementos. Dado que el depurador no siempre puede averiguar el tamaño del búfer exacto de una matriz, debe usar un especificador de tamaño de `(pBuffer,[bufferSize])` siempre que sea posible. El **hv** especificador de formato es útil cuando el tamaño de búfer no está disponible
+> Cuando el **hv** especificador de formato está presente, el depurador intenta determinar la longitud del búfer y muestra ese número de elementos. Dado que el depurador no siempre puede averiguar el tamaño del búfer exacto de una matriz, debe usar un especificador de tamaño de `(pBuffer,[bufferSize])` siempre que sea posible. El **hv** especificador de formato es útil cuando el tamaño de búfer no está disponible.
 
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Especificadores de tamaño para punteros como matrices
 Si tiene un puntero a un objeto que desea ver como una matriz, puede utilizar un entero o una expresión para especificar el número de elementos de matriz.

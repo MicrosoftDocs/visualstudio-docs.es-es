@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15ccf8ab1b3f2fa97faaae5b97c47ac3179a672d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c80ee3cebe003eff7248626f0d8e27b3c179453
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679390"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323810"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Puntos de extensión de editor y el servicio de lenguaje
 El editor proporciona puntos de extensión que se pueden ampliar como componentes de Managed Extensibility Framework (MEF), incluidos la mayoría de las características de servicio de lenguaje. Estas son las categorías de punto de extensión principal:
@@ -260,7 +260,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 
   El ejemplo siguiente muestra los atributos de exportación en un proveedor del etiquetador.
 
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder> los siguientes tipos de etiqueta están integrados:
+\<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> los siguientes tipos de etiqueta están integrados:
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: asociado con un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>.
 

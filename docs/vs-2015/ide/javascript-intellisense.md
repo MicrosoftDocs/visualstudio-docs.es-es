@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763289"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194462"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +122,7 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
  IntelliSense para JavaScript proporciona referencias de programación para los elementos DOM HTML dinámicos (DHTML), como `body`, `form` y `div`. IntelliSense sólo muestra los elementos que están incluidos en el documento y la página maestra actuales. IntelliSense para JavaScript también admite los objetos `window` y `document`, y sus miembros.
 
 ###  <a name="IntrinsicObjects"></a> Objetos intrínsecos
- IntelliSense para JavaScript proporciona referencias de programación para los objetos intrínsecos de forma nativa, como `Array`, `String`, `Math`, `Date` y `Number`. Para más información acerca de los objetos intrínsecos, consulte [Objetos intrínsecos](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript).
+ IntelliSense para JavaScript proporciona referencias de programación para los objetos intrínsecos de forma nativa, como `Array`, `String`, `Math`, `Date` y `Number`. Para obtener más información acerca de los objetos intrínsecos, consulte [objetos integrados estándares](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
 ###  <a name="UserDefined"></a> Variables, funciones y objetos definidos por el usuario
  Al cambiar un archivo JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] examina los documentos que están abiertos y a los que se hace referencia con el fin de identificar todos los recursos de código disponibles. Esto incluye las variables, funciones y objetos que haya creado. Posteriormente, estos recursos se ponen a disposición de IntelliSense para JavaScript.
@@ -160,7 +160,7 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
  IntelliSense también admite archivos de script que se incrustan como recursos en un ensamblado en aplicaciones web ASP.NET AJAX. Para obtener más información acerca de los recursos de script incrustados, vea [Tutorial: incrustar un archivo JavaScript como un recurso en un ensamblado](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 ####  <a name="ReferenceDirectives"></a> Directivas de referencia
- Con una directiva `reference`, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] puede establecer una relación entre el script que está modificando actualmente y otros scripts. La directiva `reference` le permite incluir un archivo de script en el contexto de scripting del archivo de script actual. Esto habilita IntelliSense para poder hacer referencias, mientras codifica, a las funciones, tipos y campos definidos externamente.
+ Con una directiva `reference`, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] puede establecer una relación entre el script que está modificando actualmente y otros scripts. La directiva `reference` le permite incluir un archivo de script en el contexto de scripting del archivo de script actual. Esto habilita IntelliSense para poder hacer referencias, mientras programa, a las funciones, tipos y campos definidos externamente.
 
  Cree una directiva `reference` con formato de comentario XML. La directiva se debe declarar en el archivo antes que cualquier script. Una directiva `reference` puede incluir una referencia a un script basado en discos, basado en ensamblados, basado en servicios o basado en páginas.
 

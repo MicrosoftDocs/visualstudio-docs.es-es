@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f57356cfe2d382ec0f4199555515e08e765e9486
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634934"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324687"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualizar las personalizaciones de cinta de opciones en proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5
   Si el proyecto contiene una personalización de cinta que se creó mediante la **cinta (diseñador Visual)** de elemento de proyecto, debe realizar los siguientes cambios en el código del proyecto si se cambia la plataforma de destino a la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o más adelante.
@@ -103,9 +103,9 @@ ms.locfileid: "56634934"
 
      Por ejemplo, suponga que su archivo contiene la siguiente línea de código que controla el evento <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> en un proyecto que tenga como destino .NET Framework 3.5.
 
-    <CodeContentPlaceHolder>8</CodeContentPlaceHolder> en un proyecto que tenga como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, debe usar el código siguiente en su lugar.
+    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> en un proyecto que tenga como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, debe usar el código siguiente en su lugar.
 
-    <CodeContentPlaceHolder>9</CodeContentPlaceHolder> para obtener una lista completa de los delegados de la cinta de opciones, consulte [los eventos de Ribbon controlar](#ribbonevents).
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> para obtener una lista completa de los delegados de la cinta de opciones, consulte [los eventos de Ribbon controlar](#ribbonevents).
 
 5.  En los proyectos de Visual Basic, busque la clase `ThisRibbonCollection` al final del archivo. Modifique la declaración de esta clase para que deje de heredar de `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
@@ -120,8 +120,7 @@ ms.locfileid: "56634934"
 
   En el siguiente ejemplo de código se muestra cómo crear un [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] en una clase Ribbon en un proyecto que tiene como destino <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> o una versión posterior.
 
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder> en la tabla siguiente se enumera los controles se pueden crear mediante programación y el método que se usará para crear los controles en proyectos que tienen como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior.
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder> en la tabla siguiente se enumera los controles se pueden crear mediante programación y el método que se usará para crear los controles en proyectos que tienen como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior.
 
 |Control|El método RibbonFactory a usar en proyectos de la versión [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] y versiones posteriores|
 |-------------| - |

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bb21773a9cf5bd7ff9f34e1aabffeefb3dc00e2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2673b22bf502f019f0a10361c9d0cef9d5ac1b8c
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616503"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322537"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile (elemento)
   Representa la salida de un proyecto independiente para incluir con el elemento de proyecto cuando se implementa en SharePoint.
@@ -62,7 +62,7 @@ ms.locfileid: "56616503"
 
 |||
 |-|-|
-|**Espacio de nombres**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Espacio de nombres**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|
 |**Archivo de validación**|ProjectItemModelSchema.xsd|
 |**Puede estar vacío**|No|

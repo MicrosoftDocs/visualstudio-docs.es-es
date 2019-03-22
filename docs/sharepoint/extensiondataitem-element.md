@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 969c82152c1e781da83fe4da20e49fdcf8dda375
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 658fb63227f4c4532038d537bde7cc10ca2c4f5e
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617059"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322618"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem (elemento)
   Un elemento de datos personalizado que está asociado con el elemento de proyecto de SharePoint, en formato de clave/valor. La clave y el valor deben ser cadenas.
@@ -55,7 +55,7 @@ ms.locfileid: "56617059"
 
 |||
 |-|-|
-|**Espacio de nombres**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Espacio de nombres**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|
 |**Archivo de validación**|ProjectItemModelSchema.xsd|
 |**Puede estar vacío**|No|
