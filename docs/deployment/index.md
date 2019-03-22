@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio proporciona diferentes herramientas para ayudarle a implementar sus aplicaciones.
 
+<!-- markdownlint-disable MD033 -->
+
 <h2>Experimente la implementación de Visual Studio con guías de inicio rápido de 5 minutos</h2>
 
 <ul class="panelContent cardsFTitle">

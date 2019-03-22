@@ -19,6 +19,7 @@ Las suscripciones de Visual Studio son un conjunto de recursos completo para que
 Los administradores deben iniciar sesión en [https://manage.visualstudio.com](https://manage.visualstudio.com) para asignar suscripciones a su equipo.<br>
 Los suscriptores deben iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com) para tener acceso a las ventajas de la suscripción.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">

@@ -2,7 +2,7 @@
 layout: LandingPage
 title: Control de versiones
 description: Guía de introducción al control de versiones en Visual Studio
-keywords: VSTS, TFS, control de versiones
+keywords: 'VSTS, TFS, control de versiones'
 author: steved0x
 ms.manager: jillfra
 ms.author: sdanie
@@ -11,13 +11,7 @@ ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
-- multiple
-ms.openlocfilehash: edcf47601007e3249c58dd8ad215c5ba1fd3bf83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998929"
+  - multiple
 ---
 # <a name="version-control-in-visual-studio"></a>Control de versiones en Visual Studio
 
@@ -27,6 +21,7 @@ Los sistemas de control de versiones le ayudan a hacer el seguimiento de los cam
 
 GIT es el sistema de control de versiones más usado actualmente y se está convirtiendo rápidamente en el estándar de control de versiones. GIT es un sistema de control de versiones distribuido, lo que significa que su copia local del código es un repositorio de control de versiones completo. Estos repositorios locales plenamente funcionales permiten trabajar sin conexión o de forma remota fácilmente. El trabajo se confirma localmente y, a continuación, se sincroniza la copia del repositorio con la del servidor. Este paradigma es distinto del control de versiones centralizado, donde los clientes deben sincronizar el código con un servidor antes de crear nuevas versiones.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">
