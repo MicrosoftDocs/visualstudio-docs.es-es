@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b7ba2b707ea6a9d79e15891e85b66a82d3a832
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633868"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355583"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Tutorial: Diseñar un formulario de Outlook
   Las áreas de formulario personalizadas extienden los formularios estándar o personalizados de Microsoft Office Outlook. En este tutorial diseñará un área de formulario personalizada que aparece como una nueva página en la ventana del inspector de un elemento de contacto. Esta área de formulario muestra una asignación de cada dirección incluida para el contacto, enviando la información de la dirección al sitio web de búsqueda local de Windows Live. Para obtener información acerca de las áreas de formulario, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56633868"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] o versiones más recientes.
 
   ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una versión en vídeo de este tema, consulte [vídeo Cómo: Diseñar un formulario de Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).
 
@@ -160,6 +160,8 @@ ms.locfileid: "56633868"
 4.  Guarde y cierre el elemento de contacto.
 
 5.  Vuelva a abrir el **Ann Beebe** elemento de contacto.
+
+    En Outlook, esto puede hacerse el **buscar** agrupe por abrir la libreta de direcciones para los contactos o escribiendo Ann Beebe en **buscar personas**.
 
 6.  En el **mostrar** grupo de cinta de opciones del elemento, haga clic en **Map It** para abrir el área de formulario Map It.
 
