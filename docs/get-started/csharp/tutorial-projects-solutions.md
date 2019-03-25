@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc927a9d3f4414d8bdf769ad697e9e209ae8f5c5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b23b67ea2fe48bb3ba1bcf174d28938379fc1ad9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323201"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070092"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>Información sobre proyectos y soluciones con C\#
 
@@ -38,9 +38,11 @@ A pesar de su nombre, una solución no es una "respuesta", sino simplemente cont
 
 Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice con Visual Studio, lo más probable es que no cree soluciones vacías con mucha frecuencia. Al crear un proyecto, Visual Studio crea automáticamente una solución para hospedar ese proyecto si es que no hay ya una solución abierta.
 
+::: moniker range="vs-2017"
+
 1. Abra Visual Studio.
 
-1. En la barra de menús, que es la fila de menús, como **Archivo** y **Editar**, elija **Archivo** > **Nuevo** > **Proyecto**.
+1. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
    Aparece el cuadro de diálogo **Nuevo proyecto** .
 
@@ -49,6 +51,22 @@ Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice
    ![Plantilla Solución en blanco en Visual Studio](../media/tutorial-projects-new-solution.png)
 
    La **página de inicio** se cierra y aparece una solución en el **Explorador de soluciones**, en el lado derecho de la ventana de Visual Studio. Seguramente use el **Explorador de soluciones** a menudo para examinar el contenido de los proyectos.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio.
+
+2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+3. En la página **Crear un proyecto nuevo**, escriba **solución en blanco** en el cuadro de búsqueda, seleccione la plantilla **Solución en blanco** y elija **Siguiente**.
+
+4. Asígnele a la solución el nombre **QuickSolution** y elija **Crear**.
+
+   Aparece una solución en el **Explorador de soluciones**, en el lado derecho de la ventana de Visual Studio. Seguramente use el **Explorador de soluciones** a menudo para examinar el contenido de los proyectos.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Agregar un proyecto
 

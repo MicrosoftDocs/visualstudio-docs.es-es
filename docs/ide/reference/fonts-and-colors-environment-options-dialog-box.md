@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700268"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070261"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 
@@ -218,7 +218,7 @@ Los elementos pueden heredar el color de primer plano de otros elementos para mo
 
 **Predetermiado**
 
-Color que aparece para el elemento la primera vez que se inicia Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
+Color que aparece para el elemento la primera vez que se abre Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
 
 **Custom**
 
@@ -237,7 +237,7 @@ Los elementos pueden heredar el color de fondo de otros elementos para mostrar c
 
 **Predetermiado**
 
-Color que aparece para el elemento la primera vez que se inicia Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
+Color que aparece para el elemento la primera vez que se abre Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
 
 **Custom**
 

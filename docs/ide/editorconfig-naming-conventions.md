@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908197"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983279"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura .NET para EditorConfig
 
@@ -73,18 +73,19 @@ En la lista siguiente se muestran los valores permitidos y puede especificar var
 - private
 - protected
 - protected\_internal o protected_friend
+- private\_protected
 - locales
 
 > [!NOTE]
 > No especifique un nivel de accesibilidad como parte de la convención de nomenclatura si la accesibilidad no es aplicable al tipo de símbolo que ha tomado como destino. Por ejemplo, los parámetros no tienen niveles de accesibilidad. Si especifica un nivel de accesibilidad para una convención de nomenclatura de parámetros, la regla de nomenclatura no funcionará correctamente.
 
-### <a name="symbol-modifiers"></a>Modificadores de símbolo
+### <a name="symbol-modifiers-optional"></a>Modificadores de símbolo (opcionales)
 
 Para describir los modificadores de los símbolos a los que quiere aplicar la regla de nomenclatura, especifique un nombre de propiedad con el formato siguiente:
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-En la lista siguiente se muestran los valores permitidos y puede especificar varios valores si los separa con una coma. Una regla de nomenclatura solo coincidirá con las firmas que tengan todos los modificadores especificados en `required_modifiers`. Si se omite esta propiedad, se usa el valor predeterminado de una lista vacía, es decir, no se necesitan modificadores específicos para una coincidencia. Esto significa que los modificadores de un símbolo no influyen positiva o negativamente en la aplicación de esta regla.
+En la lista siguiente se muestran los valores permitidos (separe los distintos valores con una coma):
 
 - `abstract` o `must_inherit`
 - `async`
@@ -95,7 +96,10 @@ En la lista siguiente se muestran los valores permitidos y puede especificar var
    > [!NOTE]
    > Si tiene una regla de nomenclatura para los símbolos `static` o `shared`, también se aplica a símbolos `const` porque son implícitamente estáticos. Si no desea que la regla de nomenclatura `static` se aplique a símbolos `const`, cree una regla de nomenclatura independiente para los símbolos `const`.
 
-`required_modifiers` es una propiedad opcional. Si se omite esta propiedad, la regla de nomenclatura se aplicará a todos los modificadores.
+Una regla de nomenclatura coincide con las firmas que tienen *todos* los modificadores especificados en `required_modifiers`. Si se omite esta propiedad, se usa el valor predeterminado de una lista vacía, es decir, no se necesitan modificadores específicos para una coincidencia. Esto significa que los modificadores de un símbolo no influyen positiva o negativamente en la aplicación de esta regla.
+
+> [!TIP]
+> No se especifica un valor de `*` para `required_modifiers`. En su lugar, simplemente omita por completo la propiedad `required_modifiers` y la regla de nomenclatura se aplicará a todo tipo de modificador.
 
 ## <a name="style"></a>Estilo
 

@@ -1,7 +1,7 @@
 ---
 title: Información general de Visual Studio para desarrolladores de Python
 titleSuffix: ''
-ms.date: 12/14/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316618"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983512"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenida al IDE de Visual Studio | Python
 
@@ -26,8 +26,12 @@ El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio crea
 
 En esta imagen se muestra Visual Studio con un proyecto de Python abierto y varias ventanas de herramientas clave que probablemente usará:
 
-- El [**Explorador de soluciones**](../ide/solutions-and-projects-in-visual-studio.md) (parte superior derecha) permite ver, desplazarse por y administrar los archivos de código. El **Explorador de soluciones** puede ayudar a organizar el código al agrupar los archivos en [soluciones y proyectos](/visualstudio/get-started/tutorial-projects-solutions).
+- El [**Explorador de soluciones**](../ide/solutions-and-projects-in-visual-studio.md) (parte superior derecha) permite ver, navegar y administrar los archivos de código. El **Explorador de soluciones** puede ayudar a organizar el código al agrupar los archivos en [soluciones y proyectos](/visualstudio/get-started/tutorial-projects-solutions).
     - Además del **Explorador de soluciones**, están los [**entornos de Python**](managing-python-environments-in-visual-studio.md), donde se administran los diferentes intérpretes de Python que hay instalados en el equipo.
+
+    ::: moniker range=">=vs-2019"
+    - También puede abrir y ejecutar código de Python en una carpeta sin crear archivos de solución ni un proyecto de Visual Studio. Para obtener más información, vea [Inicio rápido: Apertura y ejecución de código de Python en una carpeta](quickstart-05-python-visual-studio-open-folder.md).
+    ::: moniker-end
 
 - La [ventana del editor](../ide/writing-code-in-the-code-and-text-editor.md) (centro), donde es probable que pase la mayor parte del tiempo, muestra el contenido del archivo. Aquí es donde se [edita código de Python](editing-python-code-in-visual-studio.md), se navega por la estructura del código y se establecen puntos de interrupción durante las sesiones de depuración. Con Python, también puede seleccionar código y presionar Ctrl+ENTRAR para ejecutar ese código en una [ventana de REPL interactiva](python-interactive-repl-in-visual-studio.md).
 
@@ -83,6 +87,12 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
    ![Comandos de navegación por el código](media/tour-ide-navigation-commands.png)
 
 ## <a name="powerful-features-for-python"></a>Características eficaces de Python
+
+::: moniker range=">=vs-2019"
+- [Ejecución de código sin un proyecto](quickstart-05-python-visual-studio-open-folder.md)
+
+    A partir de Visual Studio 2019, puede abrir una carpeta que contiene código de Python para disfrutar de características como IntelliSense y depuración sin tener que crear un proyecto de Visual Studio para el código.
+::: moniker-end
 
 - [Ventana de REPL interactiva](python-interactive-repl-in-visual-studio.md)
 

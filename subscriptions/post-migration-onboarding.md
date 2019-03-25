@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Obtenga información sobre cómo incorporar correctamente su organización para suscripciones de Visual Studio después de migrar al portal de administración.
 searchscope: VS Subscription
-ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 188842272f7e4ee102829f961b29b4d5ffbf70dc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954233"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154184"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Incorporación al Portal de administración de suscripciones de Visual Studio después de migrar la organización
 
@@ -24,9 +24,9 @@ Sin embargo, las suscripciones se administran ahora mediante un nuevo portal lla
 
 Se pueden dar varios casos:
 
-1. [El contacto principal no completó el proceso de incorporación.](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup> 
-2. [El contacto principal completó la incorporación, pero no lo agregó como administrador. Las credenciales se mostraron en VLSC.](#Primary-Contact-did-not-provide-you-administrator-access) 
-3. [El contacto principal completó la incorporación, pero no lo agregó como administrador. Las credenciales no se mostraron en VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
+1. [El contacto principal no completó el proceso de incorporación.](#onboarding-not-completed-by-primary-contact)
+2. [El contacto principal completó la incorporación, pero no lo agregó como administrador. Las credenciales se mostraron en VLSC.](#primary-contact-did-not-provide-you-administrator-access)
+3. [El contacto principal completó la incorporación, pero no lo agregó como administrador. Las credenciales no se mostraron en VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
 
 <sup>1</sup> Si usted es el contacto principal o el contacto para notificaciones y no completó el proceso de incorporación, deberá seguir los pasos del escenario 1 para configurar su organización.
 

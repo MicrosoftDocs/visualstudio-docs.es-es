@@ -16,18 +16,22 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 443e181edfb0fc60c73d528063a6e6a2be5ab62a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911876"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868383"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configuración de la convención de codificación de .NET para EditorConfig
 
-En Visual Studio 2017, se puede definir y mantener un estilo de código coherente en el código base con el uso de un archivo [EditorConfig](../ide/create-portable-custom-editor-options.md). EditorConfig incluye varias propiedades de formato básicas, como `indent_style` e `indent_size`. En Visual Studio, las convenciones de codificación de .NET también se pueden configurar mediante un archivo EditorConfig. Los archivos EditorConfig permiten habilitar o deshabilitar las convenciones de codificación individuales de .NET y configurar el grado en el que quiere que se aplique la convención mediante un nivel de gravedad. Para más información sobre cómo usar EditorConfig para aplicar la coherencia en el código base, lea [Crear opciones de configuración del editor personalizadas y portátiles](../ide/create-portable-custom-editor-options.md).
+Puede definir y mantener un estilo de código coherente en el código base con el uso de un archivo [EditorConfig](../ide/create-portable-custom-editor-options.md). EditorConfig incluye varias propiedades de formato básicas, como `indent_style` e `indent_size`. En Visual Studio, las convenciones de codificación de .NET también se pueden configurar mediante un archivo EditorConfig. Puede habilitar o deshabilitar convenciones de codificación de .NET individuales y configurar el grado en que quiere que se aplique cada regla, a través de un nivel de gravedad.
 
-En la parte final de este artículo encontrará un [archivo .editorconfig de ejemplo](#example-editorconfig-file).
+> [!TIP]
+> - Al definir las convenciones de codificación en un archivo .editorconfig, configura cómo quiere que los [analizadores de estilo de código](../code-quality/roslyn-analyzers-overview.md) que se integran en Visual Studio para analizar el código. El archivo .editorconfig es el archivo de configuración de estos analizadores.
+> - Las preferencias de estilo del código para Visual Studio también se pueden establecer en el cuadro de diálogo [Opciones del editor de texto](code-styles-and-quick-actions.md). Sin embargo, la configuración de .editorconfig tiene prioridad y las preferencias que establece en **Opciones** no están asociadas con un proyecto concreto.
+
+En la parte final de este artículo hay un [archivo .editorconfig de ejemplo](#example-editorconfig-file).
 
 ## <a name="convention-categories"></a>Categorías de convención
 

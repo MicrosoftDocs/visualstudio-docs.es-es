@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223525"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984123"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
@@ -112,25 +112,39 @@ Es posible ejecutar pruebas unitarias en Visual Studio con un marco de pruebas d
 
 Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
 
-1. En la barra de menús, elija **Herramientas** > **Extensiones y actualizaciones**.
+::: moniker range="vs-2017"
 
-1. En el cuadro de diálogo **Extensiones y actualizaciones**, expanda la categoría **En línea** y, después, elija **Visual Studio Marketplace**. A continuación, elija **Herramientas** > **Pruebas**.
+1. Elija **Herramientas** > **Extensiones y actualizaciones** en la barra de menús.
+
+2. En el cuadro de diálogo **Extensiones y actualizaciones**, expanda la categoría **En línea** y, después, elija **Visual Studio Marketplace**. A continuación, elija **Herramientas** > **Pruebas**.
 
    ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
-1. Seleccione el marco o el adaptador que quiera instalar y, después, elija **Descargar**.
+::: moniker-end
 
-1. Cree un proyecto de biblioteca de clases y agréguelo a su solución.
+::: moniker range=">=vs-2019"
+
+1. Elija **Extensiones** > **Administrar extensiones** en la barra de menús.
+
+2. En el cuadro de diálogo **Administrar extensiones**, expanda la categoría **En línea** y, después, elija **Visual Studio Marketplace**. A continuación, elija **Herramientas** > **Pruebas**.
+
+   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+
+::: moniker-end
+
+3. Seleccione el marco o el adaptador que quiera instalar y, después, elija **Descargar**.
+
+4. Cree un proyecto de biblioteca de clases y agréguelo a su solución.
 
    ![Asignar un nombre al proyecto de biblioteca de clases y agregarlo](media/create3rdpartyunittest3.png)
 
-1. Instale el complemento. En el **Explorador de soluciones**, seleccione el proyecto de biblioteca de clases y, después, haga clic con el botón derecho y elija **Administrar paquetes NuGet** en el menú contextual.
+5. Instale el complemento. En el **Explorador de soluciones**, seleccione el proyecto de biblioteca de clases y, después, haga clic con el botón derecho y elija **Administrar paquetes NuGet** en el menú contextual.
 
    ![Administrar paquetes NuGet para instalar el complemento](media/create3rdpartyunittest3a.png)
 
    [NuGet](https://www.nuget.org/) es una extensión de Visual Studio que puede usar para agregar y actualizar bibliotecas y herramientas para sus proyectos.
 
-1. En la ventana **Administrador de paquetes NuGet**, busque y seleccione el complemento y, después, elija **Instalar**.
+6. En la ventana **Administrador de paquetes NuGet**, busque y seleccione el complemento y, después, elija **Instalar**.
 
    ![Instalar el marco de terceros](media/create3rdpartyunittest4.png)
 
@@ -138,15 +152,15 @@ Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
 
    ![La referencia del marco de pruebas unitarias de terceros se agrega a la solución](media/create3rdpartyunittest6.png)
 
-1. En el nodo **Referencias** del proyecto de biblioteca de clases, seleccione **Agregar referencia**.
+7. En el nodo **Referencias** del proyecto de biblioteca de clases, seleccione **Agregar referencia**.
 
    ![Agregar una referencia al proyecto](media/createunittest6.png)
 
-1. En el cuadro de diálogo **Administrador de referencias**, seleccione el proyecto que contiene el código que va a probar.
+8. En el cuadro de diálogo **Administrador de referencias**, seleccione el proyecto que contiene el código que va a probar.
 
    ![Seleccionar el proyecto de código que va a probar](media/createunittest7.png)
 
-1. Codifique la prueba unitaria.
+9. Codifique la prueba unitaria.
 
    ![Adición de código al archivo de prueba unitaria](media/create3rdpartyunittest7.png)
 

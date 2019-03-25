@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2a5edfb7983de5cb794c27907abc19191be99dee
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222524"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070287"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 

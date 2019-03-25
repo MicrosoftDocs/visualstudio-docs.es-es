@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 496dbfb48b8cc8052d174ba1dd69faa3b4fc9d01
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9b03a1d78e929ed3e21be086ea78ab09c334da6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722504"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069676"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
@@ -35,9 +35,21 @@ En este artículo se da por hecho que ya está familiarizado con C#. Si no lo es
 
 Empezaremos creando un archivo y agregándole código.
 
-1. Abra Visual Studio y, en el menú **Archivo** de la barra de menús, elija **Nuevo** > **Archivo**.
+::: moniker range="vs-2017"
 
-1. En el cuadro de diálogo **Nuevo archivo**, en la categoría **General**, elija **Clase de Visual C#** y, después, elija **Abrir**.
+1. Abra Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio. Presione **Esc** o haga clic en **Continuar sin código** en la ventana de inicio para abrir el entorno de desarrollo.
+
+::: moniker-end
+
+2. En el menú **Archivo** de la barra de menús, elija **Nuevo** > **Archivo**.
+
+3. En el cuadro de diálogo **Nuevo archivo**, en la categoría **General**, elija **Clase de Visual C#** y, después, elija **Abrir**.
 
    Se abre un archivo nuevo en el editor con el esqueleto de una clase de C#. (Observe que no es necesario crear un proyecto de Visual Studio completo para aprovechar algunas de las ventajas que ofrece el editor de código; lo único que se necesita es un archivo de código).
 

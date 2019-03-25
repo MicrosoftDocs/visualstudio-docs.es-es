@@ -11,17 +11,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38d63de6c223d8a77bd2c1fa2e0a13b0e814ef8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e3a77797cb519294c16329a432cf742746293c13
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620322"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983408"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configuraciones de conjuntos de herramientas estándar y personalizados
 Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y herramientas que puede usar para compilar un proyecto de aplicación. MSBuild incluye un conjunto de herramientas estándar, pero también puede crear conjuntos de herramientas personalizados. Para obtener información sobre cómo especificar un conjunto de herramientas, consulte [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
 
 ## <a name="standard-toolset-configurations"></a>Configuraciones del conjunto de herramientas estándar
+
+::: moniker range=">=vs-2019"
+ MSBuild 16.0 incluye los siguientes conjuntos de herramientas estándar:
+
+|ToolsVersion|Ruta de acceso del conjunto de herramientas (como se especifica en la propiedad de compilación MSBuildToolsPath o MSBuildBinPath)|
+|------------------| - |
+|2.0|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v2.0.50727\\*|
+|3.5|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v3.5\\*|
+|4.0|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v4.0.30319\\*|
+|Current|*\<Ruta de acceso de instalación de Visual Studio>\MSBuild\Current\bin*|
+
+ El valor de `ToolsVersion` determina qué conjunto de herramientas usará un proyecto generado por Visual Studio. En Visual Studio 2019, el valor predeterminado es "Current" (con independencia de la versión especificada en el archivo del proyecto), pero es posible reemplazar ese atributo con el modificador **/toolsversion** en un símbolo del sistema. Para información sobre este atributo y otras maneras de especificar el valor de `ToolsVersion`, consulte [Reemplazar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
+
+ ::: moniker-end
+
+::: moniker range="vs-2017"
  MSBuild 15.0 incluye los siguientes conjuntos de herramientas estándar:
 
 |ToolsVersion|Ruta de acceso del conjunto de herramientas (como se especifica en la propiedad de compilación MSBuildToolsPath o MSBuildBinPath)|
@@ -32,8 +48,9 @@ Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y
 |15.0|*\<Ruta de acceso de instalación de Visual Studio>MSBuild\15.0\bin*|
 
  El valor de `ToolsVersion` determina qué conjunto de herramientas usará un proyecto generado por Visual Studio. En Visual Studio 2017, el valor predeterminado es "15.0" (con independencia de la versión especificada en el archivo del proyecto), pero es posible reemplazar ese atributo con el modificador **/toolsversion** en un símbolo del sistema. Para información sobre este atributo y otras maneras de especificar el valor de `ToolsVersion`, consulte [Reemplazar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
+ ::: moniker-end
 
- En Visual Studio 2017 no se usa una clave del Registro para la ruta de acceso a MSBuild. En las versiones de MSBuild anteriores a 15.0 que se instalan con Visual Studio 2017, las siguientes claves del Registro indican la ruta de instalación de MSBuild.exe.
+Visual Studio 2017 y versiones posteriores no usan una clave del Registro para la ruta de acceso a MSBuild. En las versiones de MSBuild anteriores a 15.0 que se instalan con Visual Studio 2017, las siguientes claves del Registro indican la ruta de instalación de MSBuild.exe.
 
 |Clave del Registro|Nombre de clave|Cadena (valor de clave)|
 |------------------|--------------|----------------------|
@@ -56,11 +73,11 @@ Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y
 ## <a name="custom-toolset-definitions"></a>Definiciones de conjuntos de herramientas personalizados
  Cuando un conjunto de herramientas estándar no cumple sus requisitos de compilación, puede crear un conjunto de herramientas personalizado. Por ejemplo, puede tener un escenario de laboratorio de compilación en el que necesite un sistema independiente para compilar proyectos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Mediante un conjunto de herramientas personalizado, puede asignar valores personalizados al atributo `ToolsVersion` al crear proyectos o ejecutar *MSBuild.exe*. De este modo, también podrá usar la propiedad `$(MSBuildToolsPath)` para importar los archivos *.targets* de ese directorio, así como para definir sus propias propiedades de conjunto de herramientas personalizado que puede usar en cualquier proyecto que utilice ese conjunto de herramientas.
 
- Especifique un conjunto de herramientas personalizado en el archivo de configuración de *MSBuild.exe* (o de la herramienta personalizada que hospeda el motor de MSBuild si eso es lo que está usando). Por ejemplo, el archivo de configuración de *MSBuild.exe* podría incluir la siguiente definición de conjunto de herramientas si se quisiera invalidar el comportamiento predeterminado de ToolsVersion 15.0.
+ Especifique un conjunto de herramientas personalizado en el archivo de configuración de *MSBuild.exe* (o de la herramienta personalizada que hospeda el motor de MSBuild si eso es lo que está usando). Por ejemplo, el archivo de configuración de *MSBuild.exe* podría incluir la siguiente definición de conjunto de herramientas si se deseaba definir un conjunto de herramientas denominado *MyCustomToolset*.
 
 ```xml
-<msbuildToolsets default="15.0">
-   <toolset toolsVersion="15.0">
+<msbuildToolsets default="MyCustomToolset">
+   <toolset toolsVersion="MyCustomToolset">
       <property name="MSBuildToolsPath"
         value="C:\SpecialPath" />
    </toolset>

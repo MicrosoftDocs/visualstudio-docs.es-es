@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939481"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069637"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
@@ -35,9 +35,21 @@ En este artículo se da por hecho que ya está familiarizado con Visual Basic. S
 
 Empezaremos creando un archivo y agregándole código.
 
-1. Abra Visual Studio y, en el menú **Archivo** de la barra de menús, elija **Nuevo archivo**.
+::: moniker range="vs-2017"
 
-1. En el cuadro de diálogo **Nuevo archivo**, en la categoría **General**, elija **Clase de Visual Basic** y, después, elija **Abrir**.
+1. Abra Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio. Presione **Esc** o haga clic en **Continuar sin código** en la ventana de inicio para abrir el entorno de desarrollo.
+
+::: moniker-end
+
+2. En el menú **Archivo** de la barra de menús, elija **Nuevo archivo**.
+
+3. En el cuadro de diálogo **Nuevo archivo**, en la categoría **General**, elija **Clase de Visual Basic** y, después, elija **Abrir**.
 
    Se abre un archivo nuevo en el editor con el esqueleto de una clase de Visual Basic. (Ya habrá podido observar que no es necesario crear un proyecto de Visual Studio completo para aprovechar algunas de las ventajas que ofrece el editor de código, como el resaltado de sintaxis. Lo único que se necesita es un archivo de código).
 

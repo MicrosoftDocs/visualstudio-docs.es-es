@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: bf78bc26a2eb0c0a217a48b7c663851447aa4f7f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954026"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57871332"
 ---
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>Creación de una instalación de red de Visual Studio 2017
+# <a name="create-a-network-installation-of-visual-studio"></a>Creación de una instalación de red de Visual Studio
 
 Normalmente, un administrador de empresa crea un punto de instalación de red para implementar en estaciones de trabajo cliente. Hemos diseñado Visual Studio 2017 para permitirle almacenar en caché los archivos de la instalación inicial junto con todas las actualizaciones de producto en una única carpeta. Este proceso también se conoce como la _creación de un diseño_. 
 
@@ -48,7 +48,7 @@ Otros programas previos admitidos incluyen [vs_buildtools.exe](https://aka.ms/vs
 Deberá disponer de conexión a Internet para poder completar este paso. Para crear una instalación sin conexión con todos los lenguajes y todas las características, utilice uno de los comandos de los ejemplos siguientes.
 
    > [!IMPORTANT]
-   > Un diseño de Visual Studio 2017 completo requiere al menos 35 GB de espacio en disco y puede tardar algún tiempo en descargarse.  Consulte la sección [Customizing the network layout](#customizing-the-network-layout) (Personalización del diseño de red) para detalles sobre cómo crear un diseño únicamente con los componentes que desea instalar.
+   > Un diseño de Visual Studio 2017 completo requiere al menos 35 GB de espacio en disco y puede tardar algún tiempo en descargarse.  Consulte la sección [Personalización del diseño de red](#customize-the-network-layout) para detalles sobre cómo crear un diseño únicamente con los componentes que desea instalar.
    >
    > [!TIP]
    > Asegúrese de ejecutar el comando desde el directorio de descarga. Normalmente, es `C:\Users\<username>\Downloads` en un equipo que ejecuta Windows 10.
@@ -127,7 +127,7 @@ Estos son algunos ejemplos de cómo crear un diseño parcial personalizado.
     vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
 
-### <a name="new-in-153"></a>Novedades de la versión 15.3
+### <a name="new-in-version-153"></a>Novedades de la versión 15.3
 
 Cuando ejecuta un comando de diseño, las opciones que especifique se guardan, como las cargas de trabajo y los idiomas. Los comandos de diseño posteriores incluirán todas las opciones anteriores.  Aquí se muestra un ejemplo de un diseño con una carga de trabajo solo para inglés:
 
@@ -209,7 +209,7 @@ Tenemos también otras opciones de soporte técnico disponibles. Para obtener un
 
 ## <a name="see-also"></a>Vea también
 
-* [Actualización de una instalación basada en red de Visual Studio 2017](update-a-network-installation-of-visual-studio.md)
+* [Actualizar una instalación basada en red de Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Control updates to network-based Visual Studio deployments](controlling-updates-to-visual-studio-deployments.md) (Control de actualizaciones de implementaciones de Visual Studio basadas en red)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

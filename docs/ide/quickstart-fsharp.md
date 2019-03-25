@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b4b6a9bcc9828d0fdeb76f3f74732d8d5496e59c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323282"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069767"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Inicio rápido: Usar Visual Studio para crear el primer servicio web de ASP.NET Core en F\#
 
@@ -28,9 +28,11 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 Primero creará un proyecto de API web de ASP.NET Core. En el tipo de proyecto se incluyen los archivos de plantilla, que constituyen un servicio web funcional por sí mismos, sin necesidad de agregar nada más.
 
+::: moniker range="vs-2017"
+
 1. Abra Visual Studio.
 
-2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
+2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
 3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual F#** y seleccione **Web**. En el panel central, elija **Aplicación web ASP.NET Core** y después elija **Aceptar**.
 
@@ -38,7 +40,23 @@ Primero creará un proyecto de API web de ASP.NET Core. En el tipo de proyecto s
 
      ![Carga de trabajo ASP.NET en el instalador de Visual Studio](../ide/media/quickstart-aspnet-workload.png)
 
-4. En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, seleccione **ASP.NET Core 2.1** en el menú desplegable situado en la parte superior. Si en la lista no aparece **ASP.NET Core 2.1**, debe instalarlo siguiendo el vínculo **Descargar** que aparece en una barra amarilla en la parte superior del cuadro de diálogo. Elija **Aceptar**.
+4.En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, seleccione **ASP.NET Core 2.1** en el menú desplegable situado en la parte superior. Si en la lista no aparece **ASP.NET Core 2.1**, debe instalarlo siguiendo el vínculo **Descargar** que aparece en una barra amarilla en la parte superior del cuadro de diálogo. Elija **Aceptar**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio.
+
+2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+3. En la página **Crear un proyecto nuevo**, escriba **f# web** en el cuadro de búsqueda y elija la plantilla de proyecto **Aplicación web de ASP.NET Core**. Seleccione **Siguiente**.
+
+4. En la página **Configure su nuevo proyecto**, escriba un nombre y elija **Crear**.
+
+5. En la página **Crear una aplicación web de ASP.NET Core**, seleccione **ASP.NET Core 2.1** en el menú desplegable superior y elija **Crear**.
+
+::: moniker-end
 
 ## <a name="explore-the-ide"></a>Explorar el IDE
 

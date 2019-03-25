@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315110"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982771"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Crear códigos auxiliares de método de pruebas unitarias con el comando Crear pruebas unitarias
 
@@ -38,17 +38,28 @@ Para comenzar, seleccione un método, un tipo o un espacio de nombres en el edit
 
 ![Usar el comando Crear pruebas unitarias](media/createunittestcommand.png)
 
-## <a name="setting-unit-test-traits"></a>Establecer los rasgos de las pruebas unitarias
+## <a name="set-unit-test-traits"></a>Establecer los rasgos de las pruebas unitarias
 
 Si planea ejecutar estas pruebas como parte del proceso de automatización de pruebas, puede considerar la posibilidad de crear la prueba en otro proyecto de prueba (la segunda opción del cuadro de diálogo anterior) y establecer los rasgos de las pruebas unitarias para la prueba unitaria. Esto le permite incluir o excluir más fácilmente estas pruebas específicas como parte de una integración continua o de una canalización de implementación continua. Los rasgos se establecen agregando metadatos a las pruebas unitarias directamente, como se muestra a continuación.
 
 ![Establecer los rasgos de las pruebas unitarias](media/createunittest.png)
 
-## <a name="using-third-party-unit-test-frameworks"></a>Usar marcos de pruebas unitarias de terceros
+## <a name="use-third-party-unit-test-frameworks"></a>Usar plataformas de pruebas unitarias de terceros
 
 Con Visual Studio, puede tener pruebas unitarias creadas fácilmente con cualquier marco de pruebas. Para instalar otros marcos de pruebas:
 
-1. Seleccione **Herramientas** > **Extensiones y actualizaciones**.
+::: moniker range="vs-2017"
+
+1. Elija **Herramientas** > **Extensiones y actualizaciones**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Elija **Extensiones** > **Administrar extensiones**.
+
+::: moniker-end
+
 2. Expanda **En línea** > **Visual Studio Marketplace** > **Herramientas** y, a continuación, elija **Pruebas**.
 
 ![Usar marcos de pruebas de terceros](media/createunittestfx.png)

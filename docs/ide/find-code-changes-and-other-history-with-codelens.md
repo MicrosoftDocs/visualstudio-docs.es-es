@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941054"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867860"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Buscar cambios en el código y otro historial con CodeLens
 
 CodeLens le permite averiguar qué ocurrió con el código mientras sigue centrado en su trabajo sin dejar el editor. Puede buscar referencias de una parte del código, cambios de código, errores vinculados, elementos de trabajo, revisiones de código y pruebas unitarias.
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > CodeLens solo está disponible en las ediciones Visual Studio Enterprise y Visual Studio Professional. No está disponible en la edición Visual Studio Community.
+
+::: moniker-end
 
 Vea dónde y cómo se usan las partes individuales del código de la solución:
 
@@ -62,7 +66,7 @@ Inspeccione el historial del código para averiguar qué ocurrió. O bien, revis
 
 Es necesario:
 
-- Visual Studio Enterprise o Visual Studio Professional
+- Visual Studio 2019 (o la edición Enterprise o Professional de Visual Studio 2017)
 
 - Team Foundation Server 2013 o versiones posteriores, Azure DevOps Services o Git.
 
@@ -145,11 +149,11 @@ Puede revisar el cambio sin salir de la rama actual ("Main"):
 
 Puede ver cuándo se combinaron los cambios, para que pueda determinar qué cambios se incluyen en la rama:
 
-![CodeLens - Cambios combinados entre ramas](../ide/media/codelensbranchmergedconceptual.png)
+![CodeLens - Cambios combinados entre bifurcaciones](../ide/media/codelensbranchmergedconceptual.png)
 
 Por ejemplo, el código de la bifurcación Main ahora incluye la corrección de errores de la bifurcación "Dev":
 
-![CodeLens - Cambios combinados entre ramas](../ide/media/codelens-branch-merged.png)
+![CodeLens - Cambios combinados entre bifurcaciones](../ide/media/codelens-branch-merged.png)
 
 ### <a name="compare-an-incoming-change-with-your-local-version"></a>Comparar un cambio entrante con la versión local
 

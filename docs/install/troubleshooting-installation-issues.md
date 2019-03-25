@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 73e1616af5665fc7ae89a3aa1019f2600afc24fd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953974"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984146"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Solución de problemas de instalación y actualización de Visual Studio 2017
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Solución de problemas de instalación y actualización de Visual Studio
 
 > [!IMPORTANT]
 > ¿Tiene un problema con la instalación? Podemos ayudarle. Disponemos de una opción de soporte de [**chat en directo**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo en inglés).
@@ -86,7 +86,7 @@ Esta es una tabla de problemas conocidos y algunas soluciones que podrían servi
 
 Los registros de instalación son necesarios para solucionar la mayoría de los problemas de instalación. Cuando se envía un problema mediante el uso de [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio.md) del Instalador de Visual Studio, estos registros se incluyen automáticamente en el informe.
 
-Si se pone en contacto con el Soporte técnico de Microsoft, puede que necesite proporcionar estos registros de instalación mediante la [herramienta de recopilación de registros de Microsoft Visual Studio y .NET Framework](https://aka.ms/vscollect). La herramienta de recopilación de registros recopila registros de instalación de todos los componentes instalados por Visual 2017 Studio, incluido .NET Framework, Windows SDK y SQL Server. También recopila información del equipo, un inventario de Windows Installer y la información de registro de eventos de Windows para el Instalador de Visual Studio, Windows Installer y Restaurar sistema.
+Si se pone en contacto con el Soporte técnico de Microsoft, puede que necesite proporcionar estos registros de instalación mediante la [herramienta de recopilación de registros de Microsoft Visual Studio y .NET Framework](https://aka.ms/vscollect). La herramienta de recopilación de registros recopila registros de instalación de todos los componentes instalados por Visual Studio, incluido .NET Framework, Windows SDK y SQL Server. También recopila información del equipo, un inventario de Windows Installer y la información de registro de eventos de Windows para el Instalador de Visual Studio, Windows Installer y Restaurar sistema.
 
 Para recopilar los registros:
 
@@ -104,7 +104,7 @@ Si las soluciones incluidas en esta guía de solución de problemas no le ayudan
 
 ## <a name="see-also"></a>Vea también
 
-* [Quitar Visual Studio 2017](remove-visual-studio.md)
+* [Quitar Visual Studio](remove-visual-studio.md)
 * [Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Herramientas para detectar y administrar instancias de Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)

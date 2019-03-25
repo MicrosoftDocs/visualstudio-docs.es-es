@@ -2,7 +2,6 @@
 title: Interfaces de Windows Script | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f98e60a82735ae561edf404763e0700f71b3a3d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905368"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154431"
 ---
 # <a name="windows-script-interfaces"></a>Windows Script (Interfaces)
 
@@ -37,7 +36,7 @@ La documentación de Windows Script se divide en las secciones siguientes:
 
 ## <a name="windows-script-background"></a>Información previa sobre Windows Script
 
-Las interfaces de Windows Script se dividen en dos categorías: hosts de Windows Script y motores de Windows Script. Un host crea un motor de scripting y llama al motor para ejecutar los scripts. Algunos ejemplos de hosts de Windows Script son los siguientes:
+Las interfaces de Windows Script se dividen en dos categorías: Hosts de Windows Script y motores de Windows Script. Un host crea un motor de scripting y llama al motor para ejecutar los scripts. Algunos ejemplos de hosts de Windows Script son los siguientes:
 
 - Microsoft Internet Explorer
 

@@ -1,5 +1,5 @@
 ---
-title: Extensiones y actualizaciones, Entorno, Opciones (cuadro de diálogo)
+title: Extensiones, Entorno, Opciones (cuadro de diálogo)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8625d24be0e5bffa465cb2d5116cd021e99a017
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a9b890f57fc8148233a17e3910477a4e8697564
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912864"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983941"
 ---
-# <a name="extensions-and-updates-environment-options-dialog-box"></a>Extensiones y actualizaciones, Entorno, Opciones (cuadro de diálogo)
+# <a name="extensions-environment-options-dialog-box"></a>Extensiones, Entorno, Opciones (cuadro de diálogo)
 
 Utilice esta página para establecer las opciones de la manera en que Visual Studio realiza las actualizaciones y de cómo se actualizan y detectan las extensiones.
 
@@ -35,7 +35,7 @@ Para más información, vea [Buscar y usar extensiones de Visual Studio](../../i
 
 ## <a name="additional-extension-galleries"></a>Galerías de extensión adicionales
 
-Una característica empresarial que permite la compatibilidad para galerías de extensiones propias. Para más información, vea [Private Galleries](../../extensibility/private-galleries.md) (Galerías privadas).
+Una característica empresarial que permite la compatibilidad para galerías de extensiones propias. Para más información, consulte [Private galleries](../../extensibility/private-galleries.md) (Galerías privadas).
 
 ## <a name="see-also"></a>Vea también
 

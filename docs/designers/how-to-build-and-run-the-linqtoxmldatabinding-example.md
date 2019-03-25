@@ -1,5 +1,5 @@
 ---
-title: Filtrar para compilar y ejecutar el ejemplo LinqToXmlDataBinding
+title: Procedimiento para compilar y ejecutar el ejemplo LinqToXmlDataBinding
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,24 +7,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88b705a7dc64f46ba750feed1e5259f2b74c555
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951909"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069923"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Filtrar Compilar y ejecutar el ejemplo LinqToXmlDataBinding
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Procedimiento Compilar y ejecutar el ejemplo LinqToXmlDataBinding
 
 En este tema se muestra cómo crear y compilar el proyecto LinqToXmlDataBinding de Visual Studio  y cómo ejecutar el programa de ejemplo LinqToXmlDataBinding de Windows Presentation Foundation (WPF) resultante.
 
 Para obtener más información sobre Visual Studio, vea [Introducción al IDE de Visual Studio](../get-started/visual-studio-ide.md).
 
-## <a name="create-and-populate-the-project"></a>Crear y rellenar el proyecto
+## <a name="create-the-project"></a>Crear el proyecto
 
-### <a name="to-create-the-starting-project"></a>Para crear el proyecto inicial
-
-1. Inicie Visual Studio y cree una aplicación WPF de C# con el nombre LinqToXmlDataBinding. El proyecto debe usar .NET Framework 3.5 (o posterior).
+1. Abra Visual Studio y cree una **aplicación WPF** de C# con el nombre **LinqToXmlDataBinding**. El proyecto debe tener como destino .NET Framework3.5 (o posterior).
 
 1. Si aún no están presentes, agregue referencias al proyecto para los siguientes ensamblados de .NET:
 
@@ -38,9 +36,9 @@ Para obtener más información sobre Visual Studio, vea [Introducción al IDE de
 
 1. Compile la solución presionando **Ctrl**+**Mayús**+**B** y después presione **F5** para ejecutarla. El proyecto debería compilarse sin errores y ejecutarse como una aplicación WPF genérica.
 
-### <a name="to-add-custom-code-to-the-project"></a>Para agregar código personalizado al proyecto
+## <a name="add-code-to-the-project"></a>Incorporación de código en el proyecto
 
-1. En el Explorador de soluciones, cambie el nombre del archivo de origen **Window1.xaml** a **L2XDBForm.xaml**. El archivo de origen **Window1.xaml.cs** dependiente debería cambiar automáticamente de nombre a **L2XDBForm.xaml.cs**.
+1. En el **Explorador de soluciones**, cambie el nombre del archivo de origen **Window1.xaml** a **L2XDBForm.xaml**. El archivo de origen **Window1.xaml.cs** dependiente debería cambiar automáticamente de nombre a **L2XDBForm.xaml.cs**.
 
 1. Sustituya el código fuente del archivo **L2XDBForm.xaml** con la sección de código del tema [Código fuente de L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md). (Use la vista de origen de XAML para trabajar con este archivo).
 
@@ -56,9 +54,7 @@ El programa LinqToXmlDataBinding permite al usuario ver y manipular una lista de
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>Para ejecutar el programa y ver la lista de libros
 
-- Ejecute LinqToXmlDataBinding presionando **F5** (**Iniciar depuración**) o **Ctrl**+**F5** (**Iniciar sin depurar**).
-
-   Se muestra una ventana de programa con el título **Enlace de datos de WPF con LINQ to XML**.
+Ejecute LinqToXmlDataBinding presionando **F5** (**Iniciar depuración**) o **Ctrl**+**F5** (**Iniciar sin depurar**). Se muestra una ventana de programa con el título **Enlace de datos de WPF con LINQ to XML**.
 
 - Observe la sección superior de la interfaz de usuario, en la que se muestra el código **XML** sin formato que representa la lista de libros. Se muestra mediante un control <xref:System.Windows.Controls.TextBlock> de WPF, que no permite la interacción a través del mouse o del teclado.
 

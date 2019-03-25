@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a047512b8f6434661193f088f981c52c0ad118
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d358d4f608437ad7ca004d4adef614632a123012
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939442"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983213"
 ---
-# <a name="repair-visual-studio-2017"></a>Reparación de Visual Studio 2017
+# <a name="repair-visual-studio"></a>Repare Visual Studio.
 
 En ocasiones, una instalación de Visual Studio resulta dañada. Una reparación puede solucionar este problema.
 
@@ -39,7 +39,7 @@ En ocasiones, una instalación de Visual Studio resulta dañada. Una reparación
 
 ## <a name="see-also"></a>Vea también
 
-* [Instalación de Visual Studio 2017](install-visual-studio.md)
-* [Actualizar Visual Studio 2017](update-visual-studio.md)
-* [Desinstalación de Visual Studio 2017](uninstall-visual-studio.md)
-* [Solución de problemas de instalación y actualización de Visual Studio 2017](troubleshooting-installation-issues.md)
+* [Instalar Visual Studio](install-visual-studio.md)
+* [Actualizar Visual Studio](update-visual-studio.md)
+* [Desinstalar Visual Studio](uninstall-visual-studio.md)
+* [Solución de problemas de instalación y actualización de Visual Studio](troubleshooting-installation-issues.md)

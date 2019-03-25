@@ -1,7 +1,22 @@
+---
+ms.openlocfilehash: 447dd56d27c29136b7eb72f30564156ca56f2a74
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58051976"
+---
 ## <a name="prerequisites"></a>Requisitos previos
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) instalado con las cargas de trabajo adecuadas:
+::: moniker range=">=vs-2019"
+
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) instalado con las cargas de trabajo adecuadas para el lenguaje elegido:
   * ASP.NET: **Desarrollo de ASP.NET y web**
+::: moniker-end
+::: moniker range="vs-2017"
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) instalado con las cargas de trabajo adecuadas para el lenguaje elegido:
+  * ASP.NET: **Desarrollo de ASP.NET y web**
+::: moniker-end
 
 * Una suscripción a Azure. Si ya no tiene suscripción, puede [registrarse gratuitamente](https://azure.microsoft.com/free/dotnet/), lo que incluye 200 € de crédito durante 30 días y 12 meses de servicios populares gratis.
 

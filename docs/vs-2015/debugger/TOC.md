@@ -112,7 +112,7 @@
 ### [Error: No tiene permiso para inspeccionar la identidad del proceso](error-you-do-not-have-permission-to-inspect-the-process-s-identity.md)
 ### [Error: El servicio Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)
 ### [Error: IIS ha interrumpido el proceso de trabajo del sitio web](error-web-site-worker-process-has-been-terminated-by-iis.md)
-### [Error: No se puede conectar al equipo <name>. No se puede encontrar el equipo en la red.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
+### [Error: No se puede conectar al equipo \<name>. No se puede encontrar el equipo en la red.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 ### [Error: El modo de depuración mixto se admite solo cuando se usa Microsoft .NET Framework 2.0 o superior](error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md)
 ### [Error: No se admite la depuración en modo mixto de procesos IA64](error-mixed-mode-debugging-for-ia64-processes-is-unsupported.md)
 ### [Error: El modo de depuración mixto para procesos x64 se admite solo cuando se usa Microsoft .NET Framework 4 o posterior](error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md)

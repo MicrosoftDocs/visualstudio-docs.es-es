@@ -7,12 +7,12 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: Obtenga información sobre toda la gama de ventajas disponibles en el portal de suscripciones de Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843819"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867602"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Uso del Portal de suscriptor: my.<span></span>visualstudio<span></span>.com
 
@@ -31,7 +31,7 @@ La categoría Herramientas es donde encontrará las principales herramientas de 
 ### <a name="professional-development"></a>Desarrollo profesional
 Esta categoría contiene beneficios como la formación en línea ofrecida por Microsoft y por nuestros asociados, así como una suscripción a MSDN Magazine, todo con el objetivo de ayudarle a que mejore sus conocimientos de desarrollo y se mantenga al día de todo lo relacionado con el código.
 
-### <a name="support"></a>Compatibilidad
+### <a name="support"></a>Soporte técnico
 ¿Tiene alguna pregunta sobre Azure?  Consiga ayuda de la Comunidad Azure a través de los foros o aproveche el chat de asesoramiento de Azure (versión preliminar).  El chat de soporte técnico está disponible para ayudarle a encontrar información de productos y documentación técnica, así como para responder a preguntas relacionadas con la suscripción.  Algunas suscripciones incluyen también un soporte técnico basado en incidentes para ayudarle a resolver los problemas de una amplia variedad de productos de Microsoft que se ejecutan en entornos de desarrollo y pruebas.
 
 ## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[Descargas](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
@@ -45,10 +45,10 @@ Visite la página Claves de producto para obtener las claves para instalar y act
 ## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Suscripciones](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 La página Suscripciones le permite ver sus suscripciones, cambiar entre ellas, renovarlas y activar otras nuevas. También puede asociar las suscripciones a las que accede mediante la cuenta de Microsoft con una cuenta alternativa que ya esté asociada con los recursos existentes del IDE de Visual Studio, Azure DevOps o Azure.
 
-## <a name="support"></a>Compatibilidad
+## <a name="support"></a>Soporte técnico
 
 Además de las ventajas particulares que se encuentran en la categoría Soporte técnico de la página Beneficios, la página Soporte técnico proporciona acceso a recursos que le ayudarán a sacar el máximo partido de su suscripción de Visual Studio. Acceda a los [recursos de soporte técnico](https://visualstudio.microsoft.com/subscriptions/support/) para resolver problemas técnicos o preguntas relacionadas con las ventas de suscripciones, cuentas y facturación.
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
-¿Tiene que renovar una suscripción a la nube de Visual Studio?  ¿Desea descargar las extensiones más recientes para la familia de productos de Visual Studio?  Marketplace ayuda a los usuarios a encontrar extensiones, herramientas y servicios que hacen de Azure DevOps, Team Foundation Server y Visual Studio Code productos aún mejores. Puede incluso convertirse en publicador y publicar sus propias extensiones en Marketplace.
+¿Tiene que renovar una suscripción a la nube de Visual Studio?  ¿Desea descargar las extensiones más recientes para la familia de productos de Visual Studio?  Marketplace ayuda a los usuarios a encontrar extensiones, herramientas y servicios que hacen de Azure DevOps, Azure DevOps Server y Visual Studio Code productos aún mejores. Puede incluso convertirse en publicador y publicar sus propias extensiones en Marketplace.

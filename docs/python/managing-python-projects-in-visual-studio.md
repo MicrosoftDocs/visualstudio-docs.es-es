@@ -1,7 +1,7 @@
 ---
 title: Administración de proyectos de aplicación de Python
 description: Los proyectos de Visual Studio administran las dependencias entre los archivos y la complejidad de las relaciones en una aplicación.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155869"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194346"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
@@ -29,8 +29,13 @@ Visual Studio proporciona numerosas plantillas de proyecto de Python para config
 
 <a name="lightweight-usage-project-free"></a>
 
+::: moniker range=">=vs-2019"
 > [!Tip]
-> Incluso sin un proyecto, Visual Studio funciona bien con código de Python. Por ejemplo, puede abrir un archivo de Python por sí mismo y disfrutar de las funciones de autocompletar, IntelliSense y depuración. Para ello, haga clic con el botón derecho en el editor y seleccione **Iniciar con depurar**. Como dicho código siempre usa el entorno global predeterminado, puede ver finalizaciones incorrectas o errores si el código está pensado para un entorno diferente. Además, Visual Studio analiza todos los archivos y paquetes de la carpeta desde la que se abrió el archivo único, lo que podría consumir mucho tiempo de CPU.
+> Visual Studio 2019 permite abrir una carpeta que contiene código de Python y ejecutar ese código sin crear archivos de solución y proyecto de Visual Studio. Para obtener más información, vea [Inicio rápido: Apertura y ejecución de código de Python en una carpeta](quickstart-05-python-visual-studio-open-folder.md). Sin embargo, usar un archivo del proyecto trae ventajas, como se explica en esta sección.
+::: moniker-end
+
+> [!Tip]
+> Sin un proyecto, todas las versiones de Visual Studio funcionan bien con el código de Python. Por ejemplo, puede abrir un archivo de Python por sí mismo y disfrutar de las funciones de autocompletar, IntelliSense y depuración. Para ello, haga clic con el botón derecho en el editor y seleccione **Iniciar con depurar**. Como dicho código siempre usa el entorno global predeterminado, puede ver finalizaciones incorrectas o errores si el código está pensado para un entorno diferente. Además, Visual Studio analiza todos los archivos y paquetes de la carpeta desde la que se abrió el archivo único, lo que podría consumir mucho tiempo de CPU.
 >
 > Se puede crear fácilmente un proyecto de Visual Studio a partir de código existente, como se describe en [Creación de un proyecto a partir de archivos existentes](#create-project-from-existing-files).
 
@@ -42,14 +47,23 @@ Visual Studio proporciona numerosas plantillas de proyecto de Python para config
 
 Al desarrollar la aplicación, normalmente necesita agregar nuevos archivos de distintos tipos al proyecto. La adición de dichos archivos se realiza fácilmente haciendo clic con el botón derecho en el proyecto y seleccionando **Agregar** > **Elemento existente**, lo que le permitirá buscar un archivo que quiere agregar, o mediante **Agregar** > **Nuevo elemento**, que abre un cuadro de diálogo con numerosas plantillas de elementos. Como se describe en la referencia sobre [plantillas de elemento](python-item-templates.md), las opciones incluyen archivos de Python vacíos, una clase de Python, una prueba unitaria y varios archivos relacionados con aplicaciones web. Puede explorar estas opciones con un proyecto de prueba para saber lo que está disponible en la versión de Visual Studio.
 
-Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en negrita en el **Explorador de soluciones**. El archivo de inicio es el archivo que se ejecuta al iniciar la depuración (**F5** o **Depurar** > **Iniciar depuración**) o que ejecuta el proyecto en la ventana **interactiva** (**Mayús**+**Alt**+**F5** o **Depurar** > **Ejecutar proyecto en Python interactivo**). Para cambiarlo, haga clic con el botón derecho en el archivo nuevo y seleccione **Set as Startup File** (Establecer como archivo de inicio).
+Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en negrita en el **Explorador de soluciones**. El archivo de inicio es el archivo que se ejecuta al iniciar la depuración (**F5** o **Depurar** > **Iniciar depuración**) o que ejecuta el proyecto en la ventana **interactiva** (**Mayús**+**Alt**+**F5** o **Depurar** > **Ejecutar proyecto en Python interactivo**). Para cambiarlo, haga clic con el botón derecho en el archivo nuevo y seleccione **Establecer como elemento de inicio** (o **Establecer como archivo de inicio** en versiones anteriores de Visual Studio).
 
 > [!Tip]
 > Si quita el archivo de inicio seleccionado de un proyecto y no selecciona uno nuevo, Visual Studio no sabrá con que archivo de Python empezar al intentar ejecutar el proyecto. En este caso, Visual Studio 2017, versión 15.6 y posteriores, muestra un error; con las versiones anteriores, se abre una ventana de salida con el intérprete de Python en ejecución o verá la ventana de salida aparecer pero desaparecer a continuación casi de inmediato. Si se produce alguno de estos comportamientos, compruebe que tiene un archivo de inicio asignado.
 >
 > Si desea mantener abierta la ventana de salida por cualquier motivo, haga clic con el botón derecho en el proyecto, seleccione **Propiedades**, seleccione la pestaña **Depurar** y, después, agregue `-i` al campo **Argumentos del intérprete**. Este argumento hace que el intérprete entre en modo interactivo una vez que se haya finalizado un programa, con lo que la ventana se mantendrá abierta hasta que pulse **Ctrl**+**Z** > **Entrar** para salir.
 
-Un proyecto nuevo siempre está asociado al entorno de Python global predeterminado. Para asociar el proyecto a otro entorno (incluidos los entornos virtuales), haga clic con el botón derecho en el nodo **Python Environments** (Entornos de Python) del proyecto, seleccione **Add/Remove Python Environments** (Agregar o quitar entornos de Python) y seleccione los que desee. Para cambiar el entorno activo, haga clic con el botón derecho en el entorno que quiera y seleccione **Activar entorno** como se muestra a continuación. Para más información, vea [Selección de un entorno para un proyecto](selecting-a-python-environment-for-a-project.md).
+::: moniker range="vs-2017"
+Un proyecto nuevo siempre está asociado al entorno de Python global predeterminado. Para asociar el proyecto a otro entorno (incluidos los entornos virtuales), haga clic con el botón derecho en el nodo **Python Environments** (Entornos de Python) del proyecto, seleccione **Add/Remove Python Environments** (Agregar o quitar entornos de Python) y seleccione los que desee.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Un proyecto nuevo siempre está asociado al entorno de Python global predeterminado. Para asociar el proyecto con un entorno distinto (incluidos los entornos virtuales), haga clic con el botón derecho en el nodo **Entornos de Python** del proyecto, seleccione **Agregar entorno…** y seleccione el que quiera. También puede usar el control desplegable de entornos de la barra de herramientas para seleccionar un entorno o agregar uno al proyecto.
+
+![Comando Agregar entorno de la barra de herramientas de Python](media/environments/environments-toolbar-2019.png)
+::: moniker-end
+
+Para cambiar el entorno activo, haga clic con el botón derecho en el entorno que quiera en el **Explorador de soluciones** y seleccione **Activar entorno** como se muestra a continuación. Para más información, vea [Selección de un entorno para un proyecto](selecting-a-python-environment-for-a-project.md).
 
 ![Activación de un entorno para un proyecto de Python](media/projects-activate-environment.png)
 
