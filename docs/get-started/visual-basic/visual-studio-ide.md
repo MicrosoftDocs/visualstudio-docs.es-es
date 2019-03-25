@@ -11,22 +11,32 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cd9bf3cd624439e2f4846043822305743520931
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c1273c5475fe6090648b61ca351ae3b507702708
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318672"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873264"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Le damos la bienvenida al IDE de Visual Studio | Visual Basic
 
 El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio creativo que se puede usar para editar, depurar y compilar código y, después, publicar una aplicación. Un entorno de desarrollo integrado (IDE) es un programa con numerosas características que se pueden usar para muchos aspectos del desarrollo de software. Más allá del editor estándar y el depurador que proporcionan la mayoría de IDE, Visual Studio incluye compiladores, herramientas de finalización de código, diseñadores gráficos y muchas más características para facilitar el proceso de desarrollo de software.
 
+::: moniker range="vs-2017"
+
 ![El IDE de Visual Studio](../media/visual-studio-ide.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+[![](media/vs-2019/ide-overview.png "El IDE de Visual Studio")](media/vs-2019/ide-overview.png#lightbox)
+
+::: moniker-end
 
 En esta imagen se muestra Visual Studio con un proyecto abierto y varias ventanas de herramientas clave que probablemente usará:
 
-- El [**Explorador de soluciones**](../../ide/solutions-and-projects-in-visual-studio.md) (parte superior derecha) permite ver, desplazarse por y administrar los archivos de código. El **Explorador de soluciones** puede ayudar a organizar el código al agrupar los archivos en [soluciones y proyectos](tutorial-projects-solutions.md).
+- El [Explorador de soluciones](../../ide/solutions-and-projects-in-visual-studio.md) (parte superior derecha) permite ver, navegar y administrar los archivos de código. El **Explorador de soluciones** puede ayudar a organizar el código al agrupar los archivos en [soluciones y proyectos](tutorial-projects-solutions.md).
 
 - La [ventana del editor](../../ide/writing-code-in-the-code-and-text-editor.md) (centro), donde es probable que pase la mayor parte del tiempo, muestra el contenido del archivo. Es donde puede editar código o diseñar una interfaz de usuario, como una ventana con botones y cuadros de texto.
 
@@ -44,66 +54,160 @@ Existen tres ediciones de Visual Studio 2017: Community, Professional y Enterpri
 
 Algunas de las características populares de Visual Studio que ayudan a ser más productivos durante el desarrollo de software incluyen:
 
+- Subrayados ondulados y [Acciones rápidas](../../ide/quick-actions.md)
+
+   Los subrayados ondulados son rayas con formas de onda debajo de las palabras que alertan de errores o posibles problemas en el código a medida que se escribe. Estas pistas visuales permiten corregir problemas inmediatamente sin esperar a que el error se detecte durante la compilación o cuando se ejecute el programa. Si mantiene el cursor sobre un subrayado ondulado, se ve información adicional sobre el error. También puede aparecer una bombilla en el margen izquierdo con acciones, conocidas como Acciones rápidas, para corregir el error.
+
+   ::: moniker range="vs-2017"
+
+   ![Subrayados ondulados en Visual Studio](media/squiggles-error.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Subrayados ondulados en Visual Studio](media/vs-2019/squiggles-error.png)
+
+   ::: moniker-end
+
 - [Refactorización](../../ide/refactoring-in-visual-studio.md)
 
    La refactorización incluye operaciones como el cambio de nombre inteligente de variables, la extracción de una o más líneas de código en un nuevo método, el cambio del orden de los parámetros de método, etc.
 
-   ![Refactorización en Visual Studio](media/refactoring-menu.png)
+   ::: moniker range="vs-2017"
+
+   ![Menú de refactorización de Visual Studio](media/refactoring-menu.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Menú de refactorización de Visual Studio](media/vs-2019/refactorings-menu.png)
+
+   ::: moniker-end
 
 - [IntelliSense](../../ide/using-intellisense.md)
 
    IntelliSense es un término que define un conjunto de características que muestran información sobre el código directamente en el editor y, en algunos casos, escriben pequeños fragmentos de código automáticamente. Es como tener documentación básica insertada en el editor, lo que evita tener que buscar información escrita en cualquier otro lugar. Las características de IntelliSense varían según el lenguaje. Para más información, vea [IntelliSense para C#](../../ide/visual-csharp-intellisense.md), [IntelliSense para Visual C++](../../ide/visual-cpp-intellisense.md), [IntelliSense para JavaScript](../../ide/javascript-intellisense.md) e [IntelliSense de Visual Basic](../../ide/visual-basic-specific-intellisense.md). La siguiente ilustración muestra cómo IntelliSense muestra una lista de miembros de un tipo:
 
+   ::: moniker range="vs-2017"
+
    ![Lista de miembros de Visual Studio](media/intellisense-list-members.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Lista de miembros de Visual Studio](media/vs-2019/intellisense-list-members.png)
+
+   ::: moniker-end
 
 - [Inicio rápido](../../ide/reference/quick-launch-environment-options-dialog-box.md)
 
    Visual Studio puede parecer abrumador a veces con tantas propiedades, opciones y menús. El cuadro de búsqueda **Inicio rápido** supone una excelente manera de encontrar rápidamente lo que necesita en Visual Studio. Al empezar a escribir el nombre de lo que está buscando, Visual Studio muestra resultados que llevan exactamente a donde necesita ir. Si necesita agregar funcionalidad a Visual Studio, por ejemplo, agregar compatibilidad con otro lenguaje de programación, **Inicio rápido** proporciona resultados que abren el Instalador de Visual Studio para instalar un componente individual o una carga de trabajo.
 
-   ![Cuadro de búsqueda Inicio rápido en Visual Studio](../media/quick-launch-nuget.png)
+   > [!TIP]
+   > Presione **Ctrl**+**Q** como método abreviado para el cuadro de búsqueda **Inicio rápido**.
 
-- Subrayados ondulados y [Acciones rápidas](../../ide/quick-actions.md)
+   ::: moniker range="vs-2017"
 
-   Los subrayados ondulados son rayas con formas de onda debajo de las palabras que alertan de errores o posibles problemas en el código a medida que se escribe. Estas pistas visuales permiten corregir problemas inmediatamente sin esperar a que el error se detecte durante la compilación o cuando se ejecute el programa. Si mantiene el cursor sobre un subrayado ondulado, se ve información adicional sobre el error. También puede aparecer una bombilla en el margen izquierdo con acciones, conocidas como Acciones rápidas, para corregir el error.
+   ![Cuadro de búsqueda Inicio rápido de Visual Studio 2017](../media/quick-launch-nuget.png)
 
-   ![Subrayados ondulados en Visual Studio](media/squiggles-error.png)
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Cuadro de búsqueda Inicio rápido de Visual Studio 2019](media/vs-2019/quick-launch.png)
+
+   ::: moniker-end
+
+- [Live Share](/visualstudio/liveshare/)
+
+   Edite y depure colaborativamente con otros usuarios en tiempo real, sin importar el tipo de aplicación o el lenguaje de programación. Puede compartir al instante y de manera segura su proyecto y, según sea necesario, las sesiones de depuración, las instancias de terminal, las aplicaciones web de localhost, las llamadas de voz, etc.
 
 - [Jerarquía de llamadas](../../ide/reference/call-hierarchy.md)
 
    En la ventana **Jerarquía de llamadas** se muestran los métodos que llaman a un método seleccionado. Puede ser información útil si está pensando en cambiar o quitar el método, o si está intentando realizar un seguimiento de un error.
 
+   ::: moniker range="vs-2017"
+
    ![Ventana Jerarquía de llamadas en Visual Studio](media/call-hierarchy.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Ventana Jerarquía de llamadas en Visual Studio](media/vs-2019/call-hierarchy.png)
+
+   ::: moniker-end
 
 - [CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)
 
    CodeLens ayuda a buscar referencias al código, cambios en él, errores vinculados, elementos de trabajo, revisiones de código y pruebas unitarias, todo sin salir del editor.
 
+   ::: moniker range="vs-2017"
+
    ![CodeLens en Visual Studio](media/codelens.png)
 
-   > [!NOTE]
-   > CodeLens no está disponible en la edición Visual Studio 2017 Community.
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![CodeLens en Visual Studio](media/vs-2019/codelens.png)
+
+   ::: moniker-end
 
 - [Ir a definición](../../ide/go-to-and-peek-definition.md)
 
    La característica Ir a definición lleva directamente a la ubicación donde se define una función o un tipo.
 
-   ![Ir a la definición en Visual Studio](media/go-to-definition-menu.png)
+   ::: moniker range="vs-2017"
+
+   ![Ir a la definición de Visual Studio 2017](media/go-to-definition-menu.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Ir a la definición de Visual Studio 2019](media/vs-2019/go-to-definition-menu.png)
+
+   ::: moniker-end
 
 - [Ver la definición](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    En la ventana **Ojear la definición** se muestra la definición de un tipo o método sin abrir en realidad un archivo independiente.
 
+   ::: moniker range="vs-2017"
+
    ![Ver la definición en Visual Studio](media/peek-definition.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Ver la definición en Visual Studio](media/vs-2019/peek-definition.png)
+
+   ::: moniker-end
 
 ## <a name="install-the-visual-studio-ide"></a>Instalación del IDE de Visual Studio
 
-En este artículo de introducción se explica la creación de un proyecto simple y algunas cosas que se pueden hacer con Visual Studio, como cambiar el tema de color, usar [IntelliSense](../../ide/using-intellisense.md) como ayuda para la codificación y depurar una aplicación para ver el valor de una variable durante la ejecución del programa. Para comenzar, [descargue Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) e instálelo en el sistema.
+En esta sección, creará un proyecto sencillo para probar algo de lo que puede hacer con Visual Studio. Cambiará el tema de color, usará [IntelliSense](../../ide/using-intellisense.md) como ayuda para codificar y depurará una aplicación para ver el valor de una variable durante la ejecución del programa.
 
-El instalador modular le permite elegir e instalar *cargas de trabajo*, que son grupos de características necesarias para el lenguaje de programación o la plataforma que prefiera. Siga los pasos para [crear un programa](#create-a-program) y no se olvide de seleccionar la carga de trabajo **Desarrollo multiplataforma de .NET Core** durante la instalación.
+::: moniker range="vs-2017"
+
+Para empezar, [descargue Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) e instálelo en su sistema. El instalador modular le permite elegir e instalar *cargas de trabajo*, que son grupos de características necesarias para el lenguaje de programación o la plataforma que prefiera. Siga los pasos para [crear un programa](#create-a-program) y no se olvide de seleccionar la carga de trabajo **Desarrollo multiplataforma de .NET Core** durante la instalación.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para empezar, [descargue Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) e instálelo en su sistema. El instalador modular le permite elegir e instalar *cargas de trabajo*, que son grupos de características necesarias para el lenguaje de programación o la plataforma que prefiera. Siga los pasos para [crear un programa](#create-a-program) y no se olvide de seleccionar la carga de trabajo **Desarrollo multiplataforma de .NET Core** durante la instalación.
+
+::: moniker-end
 
 ![Carga de trabajo de desarrollo multiplataforma de .NET Core en el Instalador de Visual Studio](../media/dotnet-core-cross-platform-workload.png)
 
-Cuando se inicia Visual Studio por primera vez, se puede [iniciar sesión](../../ide/signing-in-to-visual-studio.md) opcionalmente con la cuenta de Microsoft o con la cuenta profesional o educativa.
+Cuando se abre Visual Studio por primera vez, se puede [iniciar sesión](../../ide/signing-in-to-visual-studio.md) opcionalmente con la cuenta de Microsoft o con la cuenta profesional o educativa.
 
 ## <a name="customize-visual-studio"></a>Personalizar Visual Studio
 
@@ -113,15 +217,41 @@ Puede personalizar la interfaz de usuario de Visual Studio, incluso cambiar el t
 
 Para cambiar al tema **Oscuro**:
 
-1. En la barra de menús, seleccione **Herramientas** > **Opciones** para abrir el cuadro de diálogo **Opciones**.
+::: moniker range="vs-2017"
 
-2. En la página de opciones **Entorno** > **General**, cambie la selección de **Tema de color** a **Oscuro** y, después, elija **Aceptar**.
+1. Abra Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio. En la ventana de inicio, elija **Continuar sin código**.
+
+   ![Ventana de inicio de Visual Studio 2019](media/vs-2019/continue-without-code.png)
+
+   Se abre el IDE.
+
+::: moniker-end
+
+2. En la barra de menús, seleccione **Herramientas** > **Opciones** para abrir el cuadro de diálogo **Opciones**.
+
+3. En la página de opciones **Entorno** > **General**, cambie la selección de **Tema de color** a **Oscuro** y, después, elija **Aceptar**.
 
    ![Cambio del tema de color a oscuro en Visual Studio](media/change-color-theme.png)
 
    El tema de color para todo el IDE se cambia a **Oscuro**.
 
+   ::: moniker range="vs-2017"
+
    ![Visual Studio con tema oscuro](../../ide/media/quickstart-personalize-dark-theme.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio con tema oscuro](media/vs-2019/dark-theme.png)
+
+   ::: moniker-end
 
 ### <a name="select-environment-settings"></a>Selección de la configuración del entorno
 
@@ -143,11 +273,15 @@ Para obtener información sobre otras maneras de personalizar el IDE, vea [Perso
 
 Vamos a profundizar y crear un programa sencillo.
 
-1. Abra Visual Studio. En la barra de menús, elija **Archivo** > **Nuevo proyecto**.
+::: moniker range="vs-2017"
+
+1. En la barra de menús de Visual Studio, elija **Archivo** > **Nuevo proyecto**.
 
    ![Archivo > Nuevo proyecto en la barra de menús](media/file-new-project-menu.png)
 
-2. En el cuadro de diálogo **Nuevo proyecto** se muestran varias *plantillas* de proyecto. Una plantilla contiene los archivos básicos y la configuración necesaria para un tipo de proyecto concreto. Elija la categoría **.NET Core** bajo **Visual Basic** y, después, elija la plantilla **Aplicación de consola (.NET Core)**. En el cuadro de texto **Nombre**, escriba **HelloWorld** y después haga clic en el botón **Aceptar**.
+   En el cuadro de diálogo **Nuevo proyecto** se muestran varias *plantillas* de proyecto. Una plantilla contiene los archivos básicos y la configuración necesaria para un tipo de proyecto concreto.
+
+1. Elija la categoría **.NET Core** bajo **Visual Basic** y, después, elija la plantilla **Aplicación de consola (.NET Core)**. En el cuadro de texto **Nombre**, escriba **HelloWorld** y después haga clic en el botón **Aceptar**.
 
    ![Plantilla de aplicación de .NET Core](media/overview-npd.png)
 
@@ -166,15 +300,17 @@ Vamos a profundizar y crear un programa sencillo.
 
    Hay otros menús y ventanas de herramientas disponibles, pero por ahora vamos a continuar.
 
-3. Ahora, presione **Ctrl**+**F5** para iniciar la aplicación.
+1. Ahora, inicie la aplicación. Para ello, elija **Iniciar sin depurar** en el menú **Depurar** de la barra de menús. También puede presionar **Ctrl**+**F5**.
+
+   ![Menú Depurar > Iniciar sin depurar](../media/overview-start-without-debugging.png)
 
    Visual Studio compila la aplicación y se abre una ventana de consola con el mensaje **¡Hola mundo!** ¡Ya tiene una aplicación en ejecución!
 
    ![Ventana de consola](../media/overview-console-window.png)
 
-4. Para cerrar la ventana de consola, presione cualquier tecla del teclado.
+1. Para cerrar la ventana de consola, presione cualquier tecla del teclado.
 
-5. Ahora vamos a agregar código adicional a la aplicación. Agregue el código de Visual Basic siguiente antes de la línea que dice `Console.WriteLine("Hello World!")`:
+1. Ahora vamos a agregar código adicional a la aplicación. Agregue el código de Visual Basic siguiente antes de la línea que dice `Console.WriteLine("Hello World!")`:
 
    ```vb
    Console.WriteLine("What is your name?")
@@ -183,23 +319,90 @@ Vamos a profundizar y crear un programa sencillo.
 
    Este código muestra **What is your name?** en la ventana de la consola y espera a que el usuario escriba algún texto seguido de la tecla **Entrar**.
 
-6. Cambie la línea que indica `Console.WriteLine("Hello World!")` por el código siguiente:
+1. Cambie la línea que indica `Console.WriteLine("Hello World!")` por el código siguiente:
 
    ```vb
    Console.WriteLine("Hello " + name + "!")
    ```
 
-7. Presione **Ctrl**+**F5** para volver a ejecutar la aplicación.
+1. Presione **Ctrl**+**F5** para volver a ejecutar la aplicación.
 
    Visual Studio recompila la aplicación y se abre una ventana de consola que le solicita su nombre.
 
-8. Escriba su nombre en la ventana de consola y presione **Entrar**.
+1. Escriba su nombre en la ventana de consola y presione **Entrar**.
 
-   El programa lo saluda por su nombre.
+   ![Entrada de la ventana de consola](../media/overview-console-input.png)
 
-   ![Entrada de la ventana de consola](media/overview-console-input.png)
+1. Presione cualquier tecla para cerrar la ventana de consola y detener la ejecución del programa.
 
-9. Presione cualquier tecla para cerrar la ventana de consola y detener la ejecución del programa.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. En la barra de menús de Visual Studio, elija **Archivo** > **Nuevo proyecto**.
+
+   ![Archivo > Nuevo proyecto en la barra de menús](media/vs-2019/file-new-project.png)
+
+   La ventana **Crear un nuevo proyecto** se abre y muestra varias *plantillas* de proyecto. Una plantilla contiene los archivos básicos y la configuración necesaria para un tipo de proyecto concreto.
+
+1. Para buscar la plantilla que quiere, escriba **consola .net core** en el cuadro de búsqueda. La lista de plantillas disponibles se filtra automáticamente en función de las palabras clave que escribió. Para filtrar aún más los resultados de las plantillas, elija **Visual Basic** en la lista desplegable **Lenguaje**.
+
+1. Seleccione la plantilla **Aplicación de consola (.NET Core)** y haga clic en **Siguiente**.
+
+   ![Creación de un proyecto nuevo en Visual Studio](media/vs-2019/create-new-project.png)
+
+1. En la ventana **Configure su nuevo proyecto**, escriba **HelloWorld** en el cuadro **Nombre del proyecto** y, si quiere, cambie la ubicación del directorio de los archivos del proyecto y, a continuación, elija **Crear**.
+
+   ![Configuración de un nuevo proyecto en Visual Studio](media/vs-2019/configure-new-project.png)
+
+   Visual Studio crea el proyecto. Es una aplicación "Hola mundo" sencilla que llama al método <xref:System.Console.WriteLine?displayProperty=nameWithType> para mostrar la cadena literal "¡Hola mundo!" en la ventana de la consola (salida del programa).
+
+   En breve, debería ver algo parecido a lo siguiente:
+
+   ![IDE de Visual Studio](media/overview-ide-console-app.png)
+
+   El código de Visual Basic para la aplicación aparece en la ventana del editor, que ocupa la mayor parte del espacio. Observe que el texto se colorea automáticamente para indicar diferentes partes del código, como palabras clave y tipos. Además, líneas pequeñas, verticales y discontinuas en el código indican qué llaves coinciden, y los números de línea sirven para ubicar código más adelante. Puede elegir el pequeño signo menos de la casilla para contraer o expandir bloques de código. Esta característica de esquematización de código le permite ocultar el código que no necesita, ayudando a minimizar el desorden en la pantalla. Los archivos del proyecto se muestran en el lado derecho de una ventana llamada **Explorador de soluciones**.
+
+   ![IDE de Visual Studio con cuadros rojos](media/overview-ide-console-app-red-boxes.png)
+
+   Hay otros menús y ventanas de herramientas disponibles, pero por ahora vamos a continuar.
+
+1. Ahora, inicie la aplicación. Para ello, elija **Iniciar sin depurar** en el menú **Depurar** de la barra de menús. También puede presionar **Ctrl**+**F5**.
+
+   ![Menú Depurar > Iniciar sin depurar](media/vs-2019/start-without-debugging.png)
+
+   Visual Studio compila la aplicación y se abre una ventana de consola con el mensaje **¡Hola mundo!** ¡Ya tiene una aplicación en ejecución!
+
+   ![Ventana de consola](../media/vs-2019/overview-console-window.png)
+
+1. Para cerrar la ventana de consola, presione cualquier tecla del teclado.
+
+1. Ahora vamos a agregar código adicional a la aplicación. Agregue el código de Visual Basic siguiente antes de la línea que dice `Console.WriteLine("Hello World!")`:
+
+   ```vb
+   Console.WriteLine("What is your name?")
+   Dim name = Console.ReadLine()
+   ```
+
+   Este código muestra **What is your name?** en la ventana de la consola y espera a que el usuario escriba algún texto seguido de la tecla **Entrar**.
+
+1. Cambie la línea que indica `Console.WriteLine("Hello World!")` por el código siguiente:
+
+   ```vb
+   Console.WriteLine("Hello " + name + "!")
+   ```
+
+1. Presione **Ctrl**+**F5** para volver a ejecutar la aplicación.
+
+   Visual Studio recompila la aplicación y se abre una ventana de consola que le solicita su nombre.
+
+1. Escriba su nombre en la ventana de consola y presione **Entrar**.
+
+   ![Ventana de consola](../media/vs-2019/overview-console-input.png)
+
+1. Presione cualquier tecla para cerrar la ventana de consola y detener la ejecución del programa.
+
+::: moniker-end
 
 ## <a name="use-refactoring-and-intellisense"></a>Usar IntelliSense y la refactorización
 
@@ -252,9 +455,21 @@ En primer lugar, vamos a cambiar el nombre de la variable `name`:
 
 9. Haga clic en **Variable temporal en línea** para refactorizar el código.
 
+::: moniker range="vs-2017"
+
 10. Vuelva a ejecutar el programa presionando **Ctrl**+**F5**. La salida tendrá un aspecto similar a este:
 
-    ![Ventana de consola con la salida del programa](media/overview-console-final.png)
+    ![Ventana de consola con la salida del programa](../media/overview-console-final.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+10. Vuelva a ejecutar el programa presionando **Ctrl**+**F5**. La salida tendrá un aspecto similar a este:
+
+    ![Ventana de consola con la salida del programa](../media/vs-2019/overview-console-final.png)
+
+::: moniker-end
 
 ## <a name="debug-code"></a>Depurar código
 

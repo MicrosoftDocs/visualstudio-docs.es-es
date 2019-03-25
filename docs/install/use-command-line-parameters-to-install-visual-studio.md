@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c328b8ed549dc4afd90ccc1e02353f292f0dfc
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 371574ad6c49d4601b571c2378c57fd399e6e715
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796847"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983080"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Uso de parámetros de la línea de comandos para instalar Visual Studio 2017
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parámetros de la línea de comandos para instalar Visual Studio
 
-Cuando instala Visual Studio 2017 desde un símbolo del sistema, puede usar diversos parámetros de la línea de comandos para controlar o personalizar la instalación. Desde la línea de comandos, puede hacer lo siguiente:
+Cuando instala Visual Studio desde un símbolo del sistema, puede usar diversos parámetros de la línea de comandos para controlar o personalizar la instalación. Desde la línea de comandos, puede hacer lo siguiente:
 
 - Iniciar la instalación con determinadas opciones preseleccionadas.
 - Automatizar el proceso de instalación.
@@ -45,7 +45,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 (Reemplace `vs_enterprise.exe` según corresponda para la edición del producto que está instalando.
 
 >[!TIP]
-> Para obtener más ejemplos de cómo usar la línea de comandos para instalar Visual Studio 2017, vea la página [Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017](command-line-parameter-examples.md).
+> Para más ejemplos de cómo usar la línea de comandos para instalar Visual Studio, consulte la página de [ejemplos de parámetros de la línea de comandos](command-line-parameter-examples.md).
 
 | **Comando** | **Descripción** |
 | ----------------------- | --------------- |
@@ -54,7 +54,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | `update` | Actualiza un producto instalado. |
 | `repair` | Repara un producto instalado. |
 | `uninstall` | Desinstala un producto instalado. |
-| `export` | **Novedad de la versión 15.9**: exporta la selección de instalación a un archivo de configuración de la instalación. **Nota**: solo se puede utilizar con vs_installer.exe. |
+| `export` | **Novedades de la versión 15.9**: exporta la selección de instalación a un archivo de configuración de la instalación. **Nota**: solo se puede utilizar con vs_installer.exe. |
 
 ## <a name="install-options"></a>Opciones de instalación
 
@@ -115,7 +115,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Lista de los id. de carga de trabajo y los id. de componente
 
-Para obtener una lista de los identificadores de componente y carga de trabajo ordenados por producto de Visual Studio, vea la página [Identificadores de componente y carga de trabajo de Visual Studio 2017](workload-and-component-ids.md).
+Para una lista de los identificadores de componente y carga de trabajo ordenados por producto de Visual Studio, consulte la página [Identificadores de componente y carga de trabajo de Visual Studio](workload-and-component-ids.md).
 
 ## <a name="list-of-language-locales"></a>Lista de configuraciones regionales de idioma
 
@@ -155,7 +155,7 @@ Cada operación genera varios archivos de registro en el directorio `%TEMP%` que
 
 ## <a name="see-also"></a>Vea también
 
-- [Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017](command-line-parameter-examples.md)
-- [Crear una instalación sin conexión de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Ejemplos de parámetros de la línea de comandos para la instalación de Visual Studio](command-line-parameter-examples.md)
+- [Crear una instalación sin conexión de Visual Studio](create-an-offline-installation-of-visual-studio.md)
 - [Automatizar la instalación de Visual Studio con un archivo de respuesta](automated-installation-with-response-file.md)
-- [Identificadores de componente y carga de trabajo de Visual Studio 2017](workload-and-component-ids.md)
+- [Identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md)

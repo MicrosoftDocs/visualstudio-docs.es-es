@@ -7,18 +7,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39a6316265b6b3747f247890d45a769ef9240387
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596030"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984045"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Actualización de una aplicación existente a MSBuild 15
 
 En las versiones de MSBuild anteriores a 15.0, MSBuild se cargaba desde la caché global de ensamblados (GAC) y las extensiones de MSBuild se instalaban en el Registro. Así se garantizaba que todas las aplicaciones usaran la misma versión de MSBuild y tuvieran acceso a los mismos conjuntos de herramientas, pero se evitaban instalaciones en paralelo de distintas versiones de Visual Studio.
 
-Para permitir una instalación más rápida, reducida y en paralelo, Visual Studio 2017 ya no coloca MSBuild en la GAC ni modifica el Registro. Lamentablemente, esto significa que las aplicaciones que quieren usar la API de MSBuild para evaluar o compilar proyectos, no pueden confiar de forma implícita en la instalación de Visual Studio.
+Para permitir una instalación más rápida, reducida y en paralelo, Visual Studio 2017 y las versiones posteriores ya no colocan MSBuild en la GAC ni modifican el Registro. Lamentablemente, esto significa que las aplicaciones que quieren usar la API de MSBuild para evaluar o compilar proyectos, no pueden confiar de forma implícita en la instalación de Visual Studio.
 
 ## <a name="use-msbuild-from-visual-studio"></a>Uso de MSBuild desde Visual Studio
 
@@ -42,7 +42,7 @@ En estas instrucciones se da por hecho que usa las [referencias NuGet de estilo 
 
 Cambie los archivos de proyecto para hacer referencia a ensamblados de MSBuild desde sus paquetes NuGet. Especifique `ExcludeAssets=runtime` para indicar a NuGet que los ensamblados son necesarios solo en tiempo de compilación y no deben copiarse en el directorio de salida.
 
-La versión principal y secundaria de los paquetes de MSBuild debe ser menor o igual que la versión mínima de Visual Studio que quiere permitir. Si quiere permitir cualquier versión de Visual Studio 2017, haga referencia a la versión de paquete `15.1.548`.
+La versión principal y secundaria de los paquetes de MSBuild debe ser menor o igual que la versión mínima de Visual Studio que quiere permitir. Por ejemplo, si quiere admitir Visual Studio 2017 y versiones posteriores, haga referencia a la versión `15.1.548` del paquete.
 
 Por ejemplo, puede usar este XML:
 

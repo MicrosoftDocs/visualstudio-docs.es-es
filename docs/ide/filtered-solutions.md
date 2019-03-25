@@ -10,12 +10,12 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007181"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983889"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluciones filtradas en Visual Studio
 
@@ -37,7 +37,7 @@ Para abrir una solución con solo algunos de los proyectos cargados, siga estos 
 
 1. Elija **Archivo** > **Abrir** > **Proyecto o solución** en la barra de menús.
 
-2. En el cuadro de diálogo **Nuevo proyecto**, seleccione la solución y, a continuación, seleccione **No cargar los proyectos**.
+2. En el cuadro de diálogo **Abrir proyecto**, seleccione la solución y, a continuación, seleccione **No cargar los proyectos**.
 
    ![Cuadro de diálogo Abrir proyecto de Visual Studio con la opción para no cargar proyectos seleccionada](media/filtered-solutions/do-not-load-projects.png)
 

@@ -13,25 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8ecd06b2c340640db082c5d0a6bbdb6a30596748
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624417"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872071"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Análisis del uso de energía en las aplicaciones para UWP
+
 El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a analizar el consumo de potencia y energía de las aplicaciones para UWP en dispositivos de tableta de bajo consumo que funcionan siempre o al menos parte del tiempo con baterías. En un dispositivo que funciona con baterías, una aplicación que usa demasiada energía puede producir tanta insatisfacción en el cliente que este puede decidir incluso desinstalarla. La optimización del uso de energía puede incrementar la adopción y el uso de la aplicación por parte de los clientes.
 
 ## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a>Qué es el generador de perfiles Consumo de energía, cómo funciona y qué mide
- El generador de perfiles Consumo de energía captura las actividades de la pantalla, la CPU y las conexiones de red de un dispositivo durante una sesión de generación de perfiles. Después genera estimaciones de la potencia usada para esas actividades y de la cantidad total de energía para la sesión de generación de perfiles.
+
+El generador de perfiles Consumo de energía captura las actividades de la pantalla, la CPU y las conexiones de red de un dispositivo durante una sesión de generación de perfiles. Después genera estimaciones de la potencia usada para esas actividades y de la cantidad total de energía para la sesión de generación de perfiles.
 
 > [!NOTE]
 > El generador de perfiles de energía calcula el uso de potencia y energía mediante un modelo de hardware de dispositivo de referencia estándar representativo de los dispositivos de tableta de bajo consumo en los que se puede ejecutar la aplicación. Para proporcionar las mejores estimaciones, recomendamos recopilar los datos del perfil en un dispositivo de tableta de bajo consumo.
 >
 > Aunque el modelo proporciona buenas estimaciones para diversos dispositivos de bajo consumo, los valores reales del dispositivo para el que se genera el perfil probablemente serán diferentes. Use los valores para buscar las actividades de pantalla, la CPU y de red con un consumo elevado de los recursos en relación con otros usos de estos y que, por tanto, puedan ser buenas candidatas para la optimización.
 
- El generador de perfiles Consumo de energía usa estas definiciones de *potencia* y *energía*:
+El generador de perfiles Consumo de energía usa estas definiciones de *potencia* y *energía*:
 
 - *Potencia* mide la velocidad a la que se usa la fuerza para realizar un trabajo que se lleva a cabo en un período de tiempo. En electricidad, la unidad de potencia estándar es un *vatio*, que se define como la velocidad a la que se realiza un trabajo cuando una corriente de un amperio fluye a través de una diferencia de potencial eléctrico de un voltio. En el gráfico **Uso de potencia** , las unidades se muestran en milivatios **mW** , que son la milésima parte de un vatio.
 
@@ -39,9 +41,9 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
 
 - *Energía* mide la cantidad total de potencia, bien como capacidad o como potencial, como en la capacidad de potencia de una batería, o como el total de potencia gastada en un período de tiempo. La unidad de energía es un vatio-hora, la cantidad de potencia de un vatio aplicada constantemente durante una hora. En el **Resumen de uso de energía**, las unidades se muestran en milivatios-hora **mW-h**.
 
-  ![Capacidad energética, potencia usada, energía total usada](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")
+![Capacidad energética, potencia usada, energía total usada](../profiling/media/energyprof_capcitypowerused.png)
 
-  Por ejemplo, una batería totalmente cargada en una tableta gráfica tiene cierta cantidad de energía almacenada. Dado que la energía se usa para realizar tareas, como comunicarse a través de una red, calcular valores o mostrar gráficos, la potencia de la batería se disipa a distintas tasas. En cualquier período de tiempo, el total de potencia consumido también se mide por energía.
+Por ejemplo, una batería totalmente cargada en una tableta gráfica tiene cierta cantidad de energía almacenada. Dado que la energía se usa para realizar tareas, como comunicarse a través de una red, calcular valores o mostrar gráficos, la potencia de la batería se disipa a distintas tasas. En cualquier período de tiempo, el total de potencia consumido también se mide por energía.
 
 ## <a name="identify-scenarios-with-user-marks"></a>Identificar escenarios con marcas de usuario
  Puedes agregar *marcas de usuario* a los datos de generación de perfiles para ayudar a identificar áreas en la regla de escala de tiempo.
@@ -57,14 +59,14 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
  Al ejecutarse el método, se agrega una marca de usuario a los datos de generación de perfiles junto con un mensaje.
 
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel implementa la interfaz [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) (proyectada como [System.IDisposable](/dotnet/api/system.idisposable) en C# y VB). Para evitar la pérdida de recursos de sistema operativo, llame a [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) en C# y VB) cuando haya finalizado con un canal de registro.
->  - Cada canal de registro abierto debe tener un nombre único. Al intentar crear un nuevo canal de registro con el mismo nombre que un canal no desechado, se produce una excepción.
+> - <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=nameWithType> implemente la interfaz <xref:Windows.Foundation.IClosable?displayProperty=nameWithType> (proyectada como <xref:System.IDisposable?displayProperty=nameWithType> en C# y VB). Para evitar la pérdida de recursos del sistema operativo, llame a <xref:Windows.Foundation.Diagnostics.LoggingChannel.Close%2A?displayProperty=nameWithType> (<xref:Windows.Foundation.Diagnostics.LoggingChannel.Dispose%2A?displayProperty=nameWithType> en C# y VB) cuando haya terminando con un canal de registro.
+> - Cada canal de registro abierto debe tener un nombre único. Si intenta crea un canal de registro nuevo con el mismo nombre que un canal no desechado, se produce una excepción.
 
- Vea el ejemplo [LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) de Windows SDK para obtener otros ejemplos.
+Para ver un código de ejemplo, consulte el [ejemplo de LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) del ejemplo de Windows SDK.
 
- **Agregar marcas a código de JavaScript**
+**Agregar marcas a código de JavaScript**
 
- Para agregar marcas de usuario, agrega el código siguiente en los puntos del código que desees marcar:
+Para agregar marcas de usuario, agrega el código siguiente en los puntos del código que desees marcar:
 
 ```JavaScript
 if (performance && performance.mark) {
@@ -72,15 +74,15 @@ if (performance && performance.mark) {
 }
 ```
 
- *markDescription* es una cadena que contiene el mensaje que se va a mostrar en la información sobre herramientas de la marca de usuario.
+*markDescription* es una cadena que contiene el mensaje que se va a mostrar en la información sobre herramientas de la marca de usuario.
 
 ## <a name="configure-your-environment-for-profiling"></a>Configurar el entorno para la generación de perfiles
  Para obtener buenas estimaciones, deberá generar un perfil de uso de energía para la aplicación en un dispositivo de bajo consumo que esté funcionando con baterías. Dado que Visual Studio no se ejecuta en la mayoría de estos dispositivos, deberá conectar su equipo de Visual Studio al dispositivo usando las Herramientas remotas para Visual Studio. Para conectarte con un dispositivo remoto, debes configurar tanto el proyecto de Visual Studio como el dispositivo remoto. Vea [Ejecución de aplicaciones para UWP en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) para más información.
 
 > [!TIP]
 > - No se recomienda la generación de perfiles de energía en el simulador de UWP ni en el equipo de Visual Studio. La generación de perfiles en el dispositivo real proporciona datos mucho más realistas.
->   -   Genere el perfil en el dispositivo de destino mientras esté funcionando con baterías.
->   -   Cierre otras aplicaciones que puedan usar los mismos recursos (red, CPU o pantalla).
+> - Genere el perfil en el dispositivo de destino mientras esté funcionando con baterías.
+> - Cierre otras aplicaciones que puedan usar los mismos recursos (red, CPU o pantalla).
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>Recopilar datos del perfil de energía para la aplicación
 
@@ -91,7 +93,7 @@ if (performance && performance.mark) {
 2.  Elija **Consumo de energía** y, a continuación, **Iniciar**.
 
     > [!NOTE]
-    >  Al iniciar el generador de perfiles **Consumo de energía**, es posible que vea una ventana **Control de cuentas de usuario** que solicite su permiso para ejecutar *VsEtwCollector.exe*. Elija **Sí**.
+    > Al iniciar el generador de perfiles **Consumo de energía**, es posible que vea una ventana **Control de cuentas de usuario** que solicite su permiso para ejecutar *VsEtwCollector.exe*. Elija **Sí**.
 
 3.  Ejecute la aplicación para recopilar datos.
 
@@ -145,11 +147,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>Otros recursos
 
--   Las secciones de **estado de la conexión y administración de los costos** para [C#/VB/C++ y XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) y [JavaScript y HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) en el Centro de desarrollo de Windows describen las API de Windows que proporcionan información sobre la conectividad de red que puede usar su aplicación para minimizar el costo del tráfico de red.
+- Las secciones de **estado de la conexión y administración de los costos** para [C#/VB/C++ y XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) y [JavaScript y HTML](/previous-versions/windows/apps/hh452983(v=win.10)) describen las API de Windows que proporcionan información sobre la conectividad de red que puede usar su aplicación para minimizar el costo del tráfico de red.
 
-     El simulador de Visual Studio para aplicaciones para UWP permite simular las propiedades de la conexión de datos de las API de información de red. Vea [Ejecución de aplicaciones para UWP en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md)
+   El simulador de Visual Studio para aplicaciones para UWP permite simular las propiedades de la conexión de datos de las API de información de red. Vea [Ejecución de aplicaciones para UWP en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md)
 
--   Las herramientas **Control de tiempo de función de JavaScript** y **Uso de CPU** pueden ayudarle a reducir la carga de la CPU siempre que esté causada por funciones ineficaces Vea [Analizar el uso de CPU](/visualstudio/profiling/beginners-guide-to-performance-profiling).
+- Las herramientas **Control de tiempo de función de JavaScript** y **Uso de CPU** pueden ayudarle a reducir la carga de la CPU siempre que esté causada por funciones ineficaces Vea [Analizar el uso de CPU](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Vea también
 

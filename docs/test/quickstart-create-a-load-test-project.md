@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c53d458a3ca80492abd83f5081be220835a613b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948477"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069975"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de pruebas de carga
 
@@ -42,15 +42,33 @@ Si aún no tiene instalado el componente de herramientas de pruebas de carga y r
 
 En esta sección, vamos a crear un proyecto de prueba de carga de C#. También puede crear un proyecto de prueba de carga de Visual Basic, si lo prefiere.
 
-1. Abra Visual Studio y seleccione **Archivo** > **Nuevo** > **Proyecto** en la barra de menús.
+::: moniker range="vs-2017"
+
+1. Abra Visual Studio.
+
+2. Elija **Archivo** > **Nuevo** > **Proyecto** en la barra de menús.
 
    Aparece el cuadro de diálogo **Nuevo proyecto** .
 
-1. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado** y **Visual C#** y, después, elija la categoría **Prueba**. Elija la plantilla **Proyecto de prueba de carga y rendimiento web**.
+3. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado** y **Visual C#** y, después, elija la categoría **Prueba**. Elija la plantilla **Proyecto de prueba de carga y rendimiento web**.
 
    ![Plantilla de proyecto de prueba de carga y rendimiento web](media/web-perf-load-test-project-template.png)
 
-1. Escriba un nombre para el proyecto si no quiere usar el predeterminado y elija **Aceptar**.
+4. Escriba un nombre para el proyecto si no quiere usar el predeterminado y elija **Aceptar**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio.
+
+2. En la ventana de inicio, elija **Crear un nuevo proyecto**.
+
+3. En el cuadro de diálogo **Crear un proyecto nuevo**, escriba **prueba web** en el cuadro de búsqueda y seleccione la plantilla **Proyecto de prueba de carga y rendimiento web \[En desuso]** para C#. Seleccione **Siguiente**.
+
+4. Escriba un nombre para el proyecto si no quiere usar el predeterminado y elija **Crear**.
+
+::: moniker-end
 
    Visual Studio crea el proyecto y muestra los archivos en el **Explorador de soluciones**. Inicialmente, el proyecto contiene un archivo de prueba web denominado *WebTest1.webtest*.
 

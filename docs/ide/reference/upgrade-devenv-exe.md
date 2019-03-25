@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ca13af8cd6b1a144ee3202165908f1d282ca81
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0fa2e2eaa583f7da0437907fdaa3e7af2fe4a0e2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924076"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070248"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 
@@ -49,7 +49,7 @@ Se guardan automáticamente copias de seguridad en un directorio denominado Back
 
 Se deben desproteger las soluciones o los proyectos bajo el control de código fuente antes de poderse actualizar.
 
-Si se usa el modificador `/Upgrade`, Visual Studio no se iniciará. Los resultados de la actualización se pueden ver en el informe de actualización para el lenguaje de desarrollo de la solución o el proyecto. No se devuelve ninguna información de error o de uso. Para obtener más información sobre cómo actualizar proyectos en Visual Studio, vea [Portar, migrar y actualizar proyectos de Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Si usa el modificador `/Upgrade`, Visual Studio no se abrirá. Los resultados de la actualización se pueden ver en el informe de actualización para el lenguaje de desarrollo de la solución o el proyecto. No se devuelve ninguna información de error o de uso. Para obtener más información sobre cómo actualizar proyectos en Visual Studio, vea [Portar, migrar y actualizar proyectos de Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ## <a name="example"></a>Ejemplo
 

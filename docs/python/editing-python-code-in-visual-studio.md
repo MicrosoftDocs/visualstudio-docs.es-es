@@ -1,7 +1,7 @@
 ---
 title: Editar código de Python
 description: Para Python, Visual Studio proporciona IntelliSense enriquecido, fragmentos de código y características de navegación, además de formato, detección de errores y refactorización.
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155401"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155529"
 ---
 # <a name="edit-python-code"></a>Editar código de Python
 
@@ -109,10 +109,20 @@ Al usar el comando **Ejecutar MyPy** en este código se genera el siguiente erro
 
 ![Resultado de ejemplo donde MyPy valida las sugerencias de tipo](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> Para las versiones de Python anteriores a la 3.5, Visual Studio también muestra las sugerencias de tipo que proporcione a través de *archivos de código auxiliar* (*.pyi*). Puede usar archivos de código auxiliar siempre que no quiera incluir sugerencias de tipo directamente en el código o cuando quiera crear sugerencias de tipo para una biblioteca que no los usa directamente. Para obtener más información, vea [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creación de códigos auxiliares para los módulos de Python) en la wiki de proyecto de MyPy.
+> Para las versiones de Python anteriores a la 3.5, Visual Studio también muestra las sugerencias de tipo que proporcione a través de *archivos de código auxiliar* de Typeshed (*.pyi*). Puede usar archivos de código auxiliar siempre que no quiera incluir sugerencias de tipo directamente en el código o cuando quiera crear sugerencias de tipo para una biblioteca que no los usa directamente. Para obtener más información, vea [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creación de códigos auxiliares para los módulos de Python) en la wiki de proyecto de MyPy.
 >
 > Actualmente Visual Studio no admite sugerencias de tipo en los comentarios.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> Para las versiones de Python anteriores a la 3.5, Visual Studio también muestra las sugerencias de tipo que proporcione a través de *archivos de código auxiliar* de Typeshed (*.pyi*). Puede usar archivos de código auxiliar siempre que no quiera incluir sugerencias de tipo directamente en el código o cuando quiera crear sugerencias de tipo para una biblioteca que no los usa directamente. Para obtener más información, vea [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creación de códigos auxiliares para los módulos de Python) en la wiki de proyecto de MyPy.
+>
+> Visual Studio incluye un conjunto de agrupaciones de archivos Typeshed para Python 2 y 3, por lo que no se necesitan otras descargas. Sin embargo, si quiere usar un conjunto de archivos distinto, puede especificar la ruta en las opciones **Herramientas** > **Opciones** > **Python** > **Servidor de lenguaje**. Consulte [Opciones: servidor de lenguaje](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+>
+> Actualmente Visual Studio no admite sugerencias de tipo en los comentarios.
+::: moniker-end
 
 ### <a name="signature-help"></a>Ayuda para la firma
 

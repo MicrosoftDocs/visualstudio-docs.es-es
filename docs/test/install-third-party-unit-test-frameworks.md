@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316150"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982927"
 ---
 # <a name="install-unit-test-frameworks"></a>Instalación de marcos de pruebas unitarias
 
@@ -26,9 +26,19 @@ Puede descargar e instalar marcos de pruebas unitarias de terceros mediante el A
 
 ### <a name="install-from-visual-studio"></a>Instalar desde Visual Studio
 
-1. En el menú estándar, seleccione **Herramientas** y **Extensiones y actualizaciones**.
+::: moniker range="vs-2017"
 
-2. Expanda **En línea** > **Visual Studio Marketplace** > **Herramientas**. Seleccione **Pruebas**.
+1. Elija **Herramientas** > **Extensiones y actualizaciones**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Elija **Extensiones** > **Administrar extensiones**.
+
+::: moniker-end
+
+2. Expanda **En línea** > **Visual Studio Marketplace** > **Herramientas** y, a continuación, elija **Pruebas**.
 
 3. Examine la lista para buscar el marco.
 

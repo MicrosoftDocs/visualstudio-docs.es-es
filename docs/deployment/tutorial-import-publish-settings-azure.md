@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be70da79b1edc6142be1c45464097a027f859979
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413571"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983928"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publicar una aplicación en Azure App Service mediante la importación de la configuración de publicación a Visual Studio
 
 Puede usar la herramienta **Publicar** para importar la configuración de publicación y después implementar la aplicación. En este artículo, se usa la configuración de publicación de Azure App Service, pero se pueden usar pasos similares para importar la configuración de publicación de [IIS](../deployment/tutorial-import-publish-settings-iis.md). En algunos escenarios, el uso de un perfil de configuración de publicación puede ser más rápido que configurar manualmente la implementación en el servicio para cada instalación de Visual Studio.
 
-Estos pasos se aplican a aplicaciones ASP.NET, ASP.NET Core y .NET Core en Visual Studio. También puede importar la configuración de publicación de aplicaciones [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md). Estos pasos corresponden a Visual Studio 2017 versión 15.6.
+Estos pasos se aplican a aplicaciones ASP.NET, ASP.NET Core y .NET Core en Visual Studio. También puede importar la configuración de publicación de aplicaciones [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 En este tutorial va a:
 
@@ -37,9 +37,19 @@ Un archivo de configuración de publicación (*\*.publishsettings*) es diferente
 
 ## <a name="prerequisites"></a>Requisitos previos
 
+::: moniker range=">=vs-2019"
+
+* Debe tener instalado Visual Studio 2019 y la carga de trabajo **Desarrollo web y ASP.NET**.
+
+    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 * Debe tener instalado Visual Studio 2017 y la carga de trabajo **Desarrollo web y ASP.NET**.
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+::: moniker-end
 
 * Cree una instancia de Azure App Service. Para obtener instrucciones detalladas, vea [Publicar una aplicación de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 

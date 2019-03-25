@@ -1,6 +1,6 @@
 ---
 title: Tareas de MSBuild específicas de Visual C++ | Microsoft Docs
-ms.date: 06/27/2018
+ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,18 +15,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e676e8fc3bbd8532e5261ab2095fc67380e27ca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 243ed824ba278300a798a34b05854129e8197504
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597067"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984019"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Tareas de MSBuild específicas de Visual C++
 Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Cuando se instala Visual C++, las tareas siguientes están disponibles, además de las que se instalan con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Para obtener más información, consulte [Información general sobre MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview).
 
  Además de los parámetros específicos de cada tarea, las tareas también tienen los parámetros siguientes.
-
 
 | Parámetro | Descripción |
 |-------------------| - |
@@ -40,13 +39,22 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
 |[Tarea BscMake](../msbuild/bscmake-task.md)|Incluye la herramienta Utilidad de mantenimiento de información de examen de Microsoft (*bscmake.exe*).|
 |[Tarea CL](../msbuild/cl-task.md)|Contiene la herramienta compiladora de Visual C++ (*cl.exe*).|
 |[Tarea CPPClean](../msbuild/cppclean-task.md)|Elimina los archivos temporales que MSBuild crea cuando se compila un proyecto de Visual C++.|
+|[Tarea ClangCompile](../msbuild/clangcompile-task.md)|Contiene la herramienta de compilación de Visual C++ (*clang.exe*).|
+|[Tarea CustomBuild](../msbuild/custombuild-task.md)|Contiene la herramienta de compilación de Visual C++ (*cmd.exe*).|
+|[Tarea FXC](../msbuild/fxc-task.md)|Use los compiladores de sombreador de HLS en el proceso de compilación.|
+|[GetOutOfDateItems](../msbuild/getoutofdateitems-task.md)|Lee TLog antiguos, escribe TLog nuevos y devuelve un conjunto de elementos no actualizados. (tarea asistente)|
+|[GetOutputFileName](../msbuild/getoutputfilename-task.md)|Obtiene el nombre de archivo de salida para cl y otras herramientas, lo que permite especificar solo el directorio de salida, el nombre de archivo completo o nada. (tarea asistente)|
 |[Tarea LIB](../msbuild/lib-task.md)|Incluye la herramienta del Administrador de bibliotecas de Microsoft de 32 bits (*lib.exe*).|
 |[Tarea Link](../msbuild/link-task.md)|Incluye la herramienta del enlazador de Visual C++ (*link.exe*).|
 |[Tarea MIDL](../msbuild/midl-task.md)|Incluye la herramienta de compilación Lenguaje de definición de interfaz de Microsoft (MIDL), *midl.exe*.|
 |[Tarea MT](../msbuild/mt-task.md)|Incluye la herramienta Manifiesto de Microsoft (*mt.exe*).|
+|[Tarea MultiToolTask](../msbuild/multitooltask-task.md)|Sin descripción.|
+|[Tarea ParallelCustomBuild](../msbuild/parallelcustombuild-task.md)|Ejecute instancias en paralelo de la [tarea CustomBuild](../msbuild/custombuild-task.md).|
 |[Tarea RC](../msbuild/rc-task.md)|Incluye la herramienta Compilador de recursos de Microsoft Windows (*rc.exe*).|
 |[Tarea SetEnv](../msbuild/setenv-task.md)|Establece o elimina el valor de una variable de entorno especificada.|
+|[Clase base TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md)|Se hereda de [VCToolTask](../msbuild/vctooltask-base-class.md).|
 |[Tarea VCMessage](../msbuild/vcmessage-task.md)|Registra mensajes de advertencia y mensajes de error durante una compilación. (No ampliable. Solo para uso interno).|
+|[Clase base ClaseVCToolTask](../msbuild/vctooltask-base-class.md)|Se hereda de [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask).|
 |[Tarea XDCMake](../msbuild/xdcmake-task.md)|Incluye la herramienta Documentación XML (*xdcmake.exe*), que combina archivos de comentarios de documento XML (*.xdc*) en un archivo *.xml*.|
 |[Tarea XSD](../msbuild/xsd-task.md)|Encapsula la herramienta de definición de esquema XML (*xsd.exe*), que genera archivos de esquema o clase desde un origen. *Vea la nota siguiente.*|
 |[Referencia de MSBuild](../msbuild/msbuild-reference.md)|Describe los elementos del sistema MSBuild.|
@@ -54,4 +62,4 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
 |[Escribir tareas](../msbuild/task-writing.md)|Describe cómo se crea una tarea.|
 
 > [!NOTE]
-> En Visual Studio 2017, el proyecto C++ ya no es compatible con *xsd.exe*. Puede seguir usando la API **Microsoft.VisualC.CppCodeProvider** agregando manualmente *CppCodeProvider.dll* a la GAC.
+> A partir de Visual Studio 2017, el proyecto C++ ya no es compatible con *xsd.exe*. Puede seguir usando la API **Microsoft.VisualC.CppCodeProvider** agregando manualmente *CppCodeProvider.dll* a la GAC.

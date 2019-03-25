@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951350"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869368"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalación de símbolos de depuración para intérpretes de Python
 
@@ -54,7 +54,7 @@ Si ha descargado los símbolos por separado, siga estos pasos para hacer que Vis
 
     ![Opciones de símbolos para el depurador en modo mixto](media/mixed-mode-debugging-symbols.png)
 
-1. Durante una sesión de depuración, es posible que Visual Studio también le pida la ubicación de un archivo de origen para el intérprete de Python. Si ha descargado los archivos de origen (desde [python.org/downloads](https://www.python.org/downloads), por ejemplo), entonces también puede apuntar hacia ellos.
+1. Durante una sesión de depuración, es posible que Visual Studio también le pida la ubicación de un archivo de origen para el intérprete de Python. Si ha descargado los archivos de origen (desde [python.org/downloads/](https://www.python.org/downloads/), por ejemplo), entonces también puede apuntar hacia ellos.
 
 > [!Note]
 > Las características de almacenamiento en caché de símbolos que se muestran en el cuadro de diálogo se usan para crear una caché local de símbolos obtenidos de un origen en línea. Estas características no son necesarias con los símbolos del intérprete de Python, pues ya hay símbolos presentes localmente. En cualquier caso, consulte [Specify Symbols and Source Files in the Visual Studio Debugger](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) (Especificar símbolos y archivos de origen en el depurador de Visual Studio) para obtener más detalles.

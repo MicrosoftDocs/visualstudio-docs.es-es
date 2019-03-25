@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936868"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194611"
 ---
 # <a name="c-intellisense"></a>IntelliSense para C#
 
@@ -94,7 +94,7 @@ Puede instalar una [extensión de IntelliCode](/visualstudio/intellicode/intelli
 
 La operación **Agregar using** de IntelliSense agrega automáticamente la directiva `using` necesaria al archivo de código. Esta característica le permite mantener el foco en el código que escribe en lugar de tener que cambiar el foco a otra parte del código.
 
-Para iniciar la operación **Agregar using**, coloque el cursor en una referencia de tipo que no se pueda resolver. Por ejemplo, al crear una aplicación de consola y después agregar `XmlTextReader` en el cuerpo del método `Main`, aparece un subrayado ondulado de color rojo en esa línea de código porque no se puede resolver la referencia de tipo. Puede invocar **Agregar using** a través de **Acciones rápidas**. **Acciones rápidas** solo está visible cuando el cursor se coloca en el tipo sin enlazar.
+Para iniciar la operación **Agregar using**, coloque el cursor en una referencia de tipo que no se pueda resolver. Por ejemplo, al crear una aplicación de consola y después agregar `XmlReader` en el cuerpo del método `Main`, aparece un subrayado ondulado de color rojo en esa línea de código porque no se puede resolver la referencia de tipo. Puede invocar **Agregar using** a través de **Acciones rápidas**. **Acciones rápidas** solo está visible cuando el cursor se coloca en el tipo sin enlazar.
 
 ![Imagen expandida de Agregar using, Acción rápida](../ide/media/addusing-quickaction.png)
 

@@ -2,7 +2,7 @@
 title: Compatibilidad con Python en Visual Studio en Windows
 titleSuffix: ''
 description: Resumen de características de Python en Visual Studio, que lo convierten en el mejor IDE de Python en Windows (también conocidas como Herramientas de Python para Visual Studio, PTVS).
-ms.date: 11/19/2018
+ms.date: 03/12/2019
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -11,18 +11,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b4e257f77d29a75e0400d9dd43030fc479c04c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 411b2e918658fa786885ccebf3f6c5703ddd9eb0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711207"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195013"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabajar con Python en Visual Studio en Windows
 
 Python es un lenguaje de programación popular confiable, flexible, fácil de aprender, de uso libre en todos los sistemas operativos y admitido por una gran comunidad de desarrolladores y muchas bibliotecas gratuitas. Python es compatible con todos los modos de desarrollo, lo que incluye aplicaciones web, servicios web, aplicaciones de escritorio, scripting e informática científica, y lo utilizan muchas universidades, científicos, programadores ocasionales y desarrolladores profesionales. Puede obtener más información sobre el lenguaje en [python.org](https://www.python.org) y [Python for Beginners](https://www.python.org/about/gettingstarted/) (Python para principiantes).
 
-Visual Studio es un potente IDE de Python en Windows. Visual Studio proporciona compatibilidad con [código abierto](https://github.com/Microsoft/ptvs) para el lenguaje Python a través del **desarrollo de Python** y las cargas de trabajo de **ciencia de datos** (Visual Studio 2017) y la extensión gratuita Herramientas de Python para Visual Studio (Visual Studio 2015 y versiones anteriores).
+Visual Studio es un potente IDE de Python en Windows. Visual Studio proporciona compatibilidad con [código abierto](https://github.com/Microsoft/ptvs) para el lenguaje Python a través del **desarrollo de Python** y las cargas de trabajo de **ciencia de datos** (Visual Studio 2017 y versiones posteriores) y la extensión gratuita Herramientas de Python para Visual Studio (Visual Studio 2015 y versiones anteriores).
 
 Python no se admite actualmente en Visual Studio para Mac, pero está disponible en Mac y Linux a través de Visual Studio Code (vea las [preguntas y respuestas](#questions-and-answers)).
 
@@ -30,14 +30,24 @@ Para comenzar:
 
 - Siga las [instrucciones de instalación](installing-python-support-in-visual-studio.md) para configurar la carga de trabajo de Python.
 - Familiarícese con las capacidades de Python de Visual Studio a través de las secciones de este artículo.
+::: moniker range="vs-2017"
 - Consulte una o varias de las guías de inicio rápido para crear un proyecto. Si no está seguro, comience por [Create a web app with Flask (Crear una aplicación web con Flask)](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
+::: moniker-end
+::: moniker range=">=vs-2019"
+- Consulte una o varias de las guías de inicio rápido para crear un proyecto. Si no está seguro, empiece con [Inicio rápido: Apertura y ejecución de código de Python en una carpeta](quickstart-05-python-visual-studio-open-folder.md) o [Creación de una aplicación web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
+::: moniker-end
 - Siga el tutorial [Trabajar con Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) para obtener una experiencia completa.
 
 ## <a name="support-for-multiple-interpreters"></a>Compatibilidad con diversos intérpretes
 
 La ventana **Entornos de Python** de Visual Studio (se muestra a continuación en una vista amplia y expandida) proporciona un lugar único para administrar todos los entornos de Python globales, los entornos de conda y los entornos virtuales. Visual Studio detecta automáticamente las instalaciones de Python en ubicaciones estándares y le permite configurar las instalaciones personalizadas. Con cada entorno, puede administrar fácilmente paquetes, abrir una ventana interactiva para ese entorno y tener acceso a carpetas de entorno.
 
-![Vista expandida de la ventana Entornos de Python](media/environments-expanded-view.png)
+::: moniker range="vs-2017"
+![Vista expandida de la ventana Entornos de Python](media/environments/environments-expanded-view.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Vista expandida de la ventana Entornos de Python](media/environments/environments-expanded-view-2019.png)
+::: moniker-end
 
 Use el comando **Abrir ventana interactiva** para ejecutar Python de forma interactiva en el contexto de Visual Studio. Use el comando **Abrir en PowerShell** para abrir una ventana de comandos independiente en la carpeta del entorno seleccionado. Desde esa ventana de comandos puede ejecutar cualquier script de Python.
 
@@ -77,7 +87,12 @@ Para obtener más información:
 
 ## <a name="project-system-and-project-and-item-templates"></a>Sistema de proyecto y plantillas de proyecto y de elemento
 
-Visual Studio lo ayuda a administrar la complejidad de un proyecto a medida que se desarrolla con el tiempo. Un proyecto es mucho más que una estructura de carpetas: incluye una descripción de cómo se utilizan distintos archivos y cómo se relacionan entre sí. Visual Studio lo ayuda a distinguir el código de aplicación, el código de prueba, las páginas web, JavaScript, los scripts de compilación, etcétera, lo cual, posteriormente, habilita las características apropiadas para los archivos. Además, una solución de Visual Studio lo ayuda a administrar varios proyectos relacionados, como por ejemplo, un proyecto de Python y un proyecto de extensión de C++.
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio 2019 permite abrir una carpeta que contiene código de Python y ejecutar ese código sin crear archivos de solución y proyecto de Visual Studio. Para obtener más información, vea [Inicio rápido: Apertura y ejecución de código de Python en una carpeta](quickstart-05-python-visual-studio-open-folder.md). Sin embargo, usar un archivo del proyecto trae ventajas, como se explica en esta sección.
+::: moniker-end
+
+Visual Studio lo ayuda a administrar la complejidad de un proyecto a medida que se desarrolla con el tiempo. Un *proyecto de Visual Studio* es mucho más que una estructura de carpetas: incluye una descripción de cómo se utilizan distintos archivos y cómo se relacionan entre sí. Visual Studio lo ayuda a distinguir el código de aplicación, el código de prueba, las páginas web, JavaScript, los scripts de compilación, etcétera, lo cual, posteriormente, habilita las características apropiadas para los archivos. Además, una solución de Visual Studio lo ayuda a administrar varios proyectos relacionados, como por ejemplo, un proyecto de Python y un proyecto de extensión de C++.
 
 ![Una solución de Visual Studio que contiene proyectos de Python y C++](media/projects-solution-explorer-two-projects.png)
 
@@ -99,6 +114,10 @@ Para obtener más información:
 Uno de los puntos fuertes de Visual Studio es su depurador potente. Para Python en particular, Visual Studio incluye depuración en modo mixto Python/C++, depuración remota en Linux, depuración en la ventana **interactiva** y depuración de las pruebas unitarias de Python.
 
 ![Depurador de Visual Studio para Python que muestra un menú emergente de excepción](media/debugging-exception-popup.png)
+
+::: moniker range=">=vs-2019"
+En Visual Studio 2019, puede ejecutar y depurar código sin tener un archivo del proyecto de Visual Studio. Consulte [Inicio rápido: Apertura y ejecución de código de Python en una carpeta](quickstart-05-python-visual-studio-open-folder.md) para ver un ejemplo.
+::: moniker-end
 
 Para obtener más información:
 
@@ -149,11 +168,14 @@ R. La oferta principal en este área es [Qt Project](https://www.qt.io/qt-for-ap
 
 R. Por lo general, Python es un lenguaje interpretado, con código que se ejecuta bajo demanda en un entorno compatible con Python adecuado como Visual Studio y servidores web. En la actualidad, Visual Studio no proporciona por sí mismo los medios para crear un archivo ejecutable independiente, lo que significa básicamente un programa con un intérprete de Python insertado. En cambio, la comunidad de Python ha proporcionado varios medios para crear ejecutables como se describe en [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython también se puede insertar en una aplicación nativa, como se describe en la entrada de blog [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Uso del archivo Zip insertable de CPython).
 
-## <a name="features-matrix"></a>Matriz de características
+::: moniker range="<=vs-2017"
+
+## <a name="feature-support"></a>Compatibilidad con las características
 
 Las características de Python se pueden instalar en las siguientes ediciones de Visual Studio, tal y como se describe en la [guía de instalación](installing-python-support-in-visual-studio.md):
 
-- [Visual Studio 2017 (todas las ediciones)](https://visualstudio.microsoft.com/vs/)
+- [Visual Studio 2019 (todas las ediciones)](https://visualstudio.microsoft.com/vs/)
+- Visual Studio 2017 (todas las ediciones)
 - Visual Studio 2015 (todas las ediciones)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express para Web, Update 2 o una versión posterior
@@ -167,7 +189,7 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 > [!Important]
 > Las características son totalmente compatibles y se mantienen para la versión más reciente de Visual Studio exclusivamente. Estas características están disponibles en versiones anteriores, pero no se mantienen de manera activa.
 
-|          Compatibilidad de Python          |   2017   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|          Compatibilidad de Python          |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |   Administrar varios intérpretes   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | Detección automática de intérpretes populares | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -178,7 +200,7 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 <br/>
 
 
-|         Sistema de proyectos         |   2017   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
+|         Sistema de proyectos         |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
 |--------------------------------|----------|----------|-----------|--------------|----------|-----------|----------------------|---------------|
 | Nuevo proyecto a partir de código existente | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
 |         Mostrar todos los archivos         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
@@ -188,7 +210,7 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 <br/>
 
 
-|           Editar            |   2017   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|           Editar            |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     Resalte de sintaxis      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        Autocompletar         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -209,7 +231,7 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 <br/>
 
 
-|     Ventana interactiva     |   2017   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|     Ventana interactiva     |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     Ventana interactiva     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | IPython con gráficos insertados | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -217,7 +239,7 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 <br/>
 
 
-|               Escritorio               |   2017   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|               Escritorio               |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     Aplicación de consola y Windows     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | WPF en IronPython (con diseñador XAML) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -226,7 +248,7 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 <br/>
 
 
-|         Web         |   2017   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|         Web         |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Proyecto web de Django  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | Proyecto web de Bottle  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -236,7 +258,7 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 <br/>
 
 
-|         Azure          |   2017   |   2015   | 2013 Comm | 2013 Escritorio |       2013 Web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
+|         Azure          |   2017+   |   2015   | 2013 Comm | 2013 Escritorio |       2013 Web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
 |------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
 |   Implementación en el sitio web   | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       |       &#10004;       | &#10004;<sup>2</sup> |
 |   Implementación en el rol web   | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
@@ -248,7 +270,7 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 <br/>
 
 
-|           Plantillas de Django           |   2017   |   2015   | 2013 Comm | 2013 Escritorio |       2013 Web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
+|           Plantillas de Django           |   2017+   |   2015   | 2013 Comm | 2013 Escritorio |       2013 Web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
 |--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
 |              Depuración               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
 |            Autocompletar             | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004;  |   &#10004;    |
@@ -257,7 +279,7 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 <br/>
 
 
-|                  Depuración                  |   2017   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|                  Depuración                  |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |                  Depuración                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |         Depuración sin un proyecto         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -271,14 +293,14 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 <a name="matrix-profiling"></a>
 
 
-| Generación de perfiles |   2017   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Generación de perfiles |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-----------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Generación de perfiles | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
 
 
-|     Prueba      |   2017   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|     Prueba      |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Explorador de pruebas | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
 |   Ejecutar prueba    | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
@@ -286,7 +308,7 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 
 <br/>
 
-1. La compatibilidad de Git para Visual Studio 2012 está disponible en la extensión Visual Studio Tools para Git, disponible en la [Galería de Visual Studio](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
+1. La compatibilidad de Git para Visual Studio 2012 está disponible en la extensión Visual Studio Tools para Git, disponible en [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
 
 1. La implementación del sitio Web de Azure requiere [Azure SDK para .NET 2.1 - Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855). Las versiones más recientes no son compatibles con Visual Studio 2010.
 
@@ -301,3 +323,4 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 1. Requiere Windows 8 o una versión posterior. El comando **Adjuntar depurador (Python)** del **Explorador de servidores** requiere el [SDK de Azure para .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) o una versión posterior.
 
 1. Requiere Windows 8 o una versión posterior.
+::: moniker-end

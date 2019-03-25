@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703258"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983720"
 ---
 # <a name="environment-options-dialog-box"></a>Opciones de entorno (Cuadro de diálogo)
 
@@ -27,7 +27,7 @@ Puede usar las páginas de la carpeta **Entorno** en el cuadro de diálogo **Opc
 |Personalizar la apariencia y el comportamiento de ventanas, menús y otros elementos del IDE.|[General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)|
 |Cambiar la configuración para guardar y restaurar archivos automáticamente.|[Autorrecuperación, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Establecer la configuración de administración y presentación de documentos que incluya el comportamiento de archivos varios.|[Documentos, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/documents-environment-options-dialog-box.md)|
-|Personalizar cómo se producen las actualizaciones y cómo se administran las extensiones.|[Extensiones y actualizaciones, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
+|Personalizar cómo se producen las actualizaciones y cómo se administran las extensiones.|[Extensiones, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
 |Personalizar cuándo aparecen los cuadros de mensaje y cómo actúa la ventana **Buscar y reemplazar** durante una Búsqueda rápida o Reemplazo rápido, así como rellenar de forma automática Buscar.|[Buscar y reemplazar, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
 |Establecer la fuente y el color de ciertos editores, cuadros de diálogo, ventanas de herramientas y otros elementos de la interfaz de usuario (UI).|[Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |Personalizar la ubicación de los archivos de vssettings que almacenan información de configuración de usuario.|[Importar y exportar configuraciones, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222992"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868235"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -25,7 +25,7 @@ Las recomendaciones de rendimiento de Visual Studio están previstas para situac
 
 Si actualiza el sistema desde una versión de Windows de 32 bits a una de 64 bits, se amplía la cantidad de memoria virtual disponible para Visual Studio de 2 GB a 4 GB. Esto permite a Visual Studio gestionar cargas de trabajo considerablemente mayores, aunque sea un proceso de 32 bits.
 
-Para obtener más información, vea [Memory limits](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) (Límites de memoria) y [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (Uso de /LARGEADDRESSAWARE en Windows de 64 bits).
+Para obtener más información, vea [Memory limits](/windows/desktop/Memory/memory-limits-for-windows-releases) (Límites de memoria) y [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (Uso de /LARGEADDRESSAWARE en Windows de 64 bits).
 
 ## <a name="disable-automatic-file-restore"></a>Desactivación de la restauración automática de archivos
 
@@ -105,7 +105,17 @@ Para más información sobre las consideraciones de rendimiento de .NET Compiler
 
     Las extensiones son componentes de software adicionales agregados a Visual Studio para proporcionar nueva funcionalidad o extender la funcionalidad existente. Las extensiones suelen ser una fuente de problemas de recursos de memoria. Si experimenta problemas de recursos de memoria, intente deshabilitar extensiones de una en una para ver cómo repercuten en el escenario o el flujo de trabajo.
 
+   ::: moniker range="vs-2017"
+
     Para deshabilitar extensiones, vaya a **Herramientas** > **Extensiones y actualizaciones** y deshabilite una extensión determinada.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    Para deshabilitar extensiones, vaya a **Extensiones** > **Administrar extensiones** y deshabilite una extensión determinada.
+
+   ::: moniker-end
 
 - **Deshabilite el diseñador XAML**
 

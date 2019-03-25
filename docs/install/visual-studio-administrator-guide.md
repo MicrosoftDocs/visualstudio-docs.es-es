@@ -15,20 +15,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b30a104afcbadc9397cc5c7bd79fa746b0e69a9f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710115"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983824"
 ---
-# <a name="visual-studio-2017-administrator-guide"></a>Guía del administrador de Visual Studio 2017
+# <a name="visual-studio-administrator-guide"></a>Guía del administrador de Visual Studio
 
 En entornos empresariales, es habitual que los administradores del sistema implementen instalaciones en los usuarios finales desde un recurso compartido de red o mediante software de administración de sistemas. El motor de instalación de Visual Studio se ha diseñado para admitir implementaciones empresariales, lo que otorga a los administradores del sistema la posibilidad de crear una ubicación de instalación de red, configurar previamente los valores predeterminados de instalación, implementar claves de producto durante el proceso de instalación y administrar actualizaciones de producto después de un lanzamiento satisfactorio. Esta guía de administrador proporciona instrucciones basadas en escenarios para la implementación empresarial en entornos de red.
 
-## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Implementar Visual Studio 2017 en un entorno empresarial
+## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Implementación de Visual Studio en un entorno empresarial
 
-Puede implementar Visual Studio 2017 en estaciones de trabajo cliente siempre y cuando cada equipo de destino cumpla los [requisitos mínimos de instalación](/visualstudio/productinfo/vs2017-system-requirements-vs). Tanto si va a realizar la implementación a través de software como System Center o mediante un archivo por lotes, normalmente deberá seguir los pasos siguientes:
+Puede implementar Visual Studio en estaciones de trabajo cliente siempre y cuando cada equipo de destino cumpla los [requisitos mínimos de instalación](/visualstudio/productinfo/vs2017-system-requirements-vs). Tanto si va a realizar la implementación a través de software como System Center o mediante un archivo por lotes, normalmente deberá seguir los pasos siguientes:
 
 1. [Crear un recurso compartido de red que contenga los archivos de producto de Visual Studio](create-a-network-installation-of-visual-studio.md) en una ubicación de red.
 
@@ -47,14 +47,14 @@ Puede implementar Visual Studio 2017 en estaciones de trabajo cliente siempre y 
 8. [Actualizar la ubicación de red con las actualizaciones más recientes](update-a-network-installation-of-visual-studio.md) para Visual Studio mediante la ejecución del comando usado en el paso 1 de forma periódica para agregar componentes actualizados.
 
 > [!IMPORTANT]
-> Tenga en cuenta que las instalaciones que se realizan desde un recurso compartido de red "recordarán" la ubicación de la que proceden. Esto significa que, para reparar un equipo cliente, quizás sea necesario volver al recurso compartido de red desde el que se instaló el cliente. Elija cuidadosamente la ubicación de red para que esté disponible durante el tiempo que espera que los clientes de Visual Studio 2017 se ejecuten en su organización.
+> Tenga en cuenta que las instalaciones que se realizan desde un recurso compartido de red "recordarán" la ubicación de la que proceden. Esto significa que, para reparar un equipo cliente, quizás sea necesario volver al recurso compartido de red desde el que se instaló el cliente. Elija cuidadosamente la ubicación de red para que esté disponible durante el tiempo que espera que los clientes de Visual Studio se ejecuten en su organización.
 
 ## <a name="use-visual-studio-tools"></a>Uso de Visual Studio Tools
 
 Tenemos varias herramientas disponibles para ayudarle a [detectar y administrar las instancias de Visual Studio instaladas](tools-for-managing-visual-studio-instances.md) en los equipos cliente.
 
 > [!TIP]
-> Además de la documentación de la guía del administrador, una buena fuente de información sobre la instalación de Visual Studio 2017 es [Visual Studio Setup Archives](https://devblogs.microsoft.com/setup/tag/vs2017/) (Archivos de instalación de Visual Studio).
+> Además de la documentación de la guía del administrador, una buena fuente de información sobre la instalación de Visual Studio es [Visual Studio Setup Archives](https://devblogs.microsoft.com/setup/tag/vs2017/) (Archivos de instalación de Visual Studio).
 
 ## <a name="specify-customer-feedback-settings"></a>Especificar valores de comentarios de clientes
 
@@ -74,8 +74,8 @@ Para obtener más información sobre la configuración de los comentarios del cl
 
 ## <a name="see-also"></a>Vea también
 
-* [Instalación de Visual Studio 2017](install-visual-studio.md)
-* [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Instalar Visual Studio](install-visual-studio.md)
+* [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Ejemplos de parámetros de línea de comandos](command-line-parameter-examples.md)
   * [Carga de trabajo y referencia de id. de componente](workload-and-component-ids.md)
 * [Crear una instalación basada en red de Visual Studio](create-a-network-installation-of-visual-studio.md)

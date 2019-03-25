@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7a17431fa2ad85c660164110ab005fa00053ff17
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e2df347edfa2ea6672449dfbaa5f3740e94cd11c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525406"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58153020"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Inicio rápido: Depurar ASP.NET con el depurador de Visual Studio
 
@@ -25,17 +25,20 @@ El depurador de Visual Studio proporciona muchas características de gran eficac
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
-1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
+1. En Visual Studio, elija **Archivo > Nuevo > Proyecto**.
 
-1. En **Visual C#**, elija **Web** y, luego, en el panel central, **Aplicación web ASP.NET Core**.
+    ::: moniker range=">=vs-2019"
+    Aparece el cuadro de diálogo **Crear un proyecto nuevo**. Escriba **asp.net** en el cuadro de búsqueda para filtrar los resultados, elija **Aplicación web ASP.NET Core** y haga clic en **Siguiente**. Luego escriba un nombre como **MyDbgApp** y elija **Crear**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Aparece el cuadro de diálogo **Nuevo proyecto**. En **Visual C#**, elija **Web** y, luego, en el panel central, **Aplicación web ASP.NET Core**. Escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
 
-1. Escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
-
-1. En el cuadro de diálogo que aparece, elija **Aplicación web** en el panel central y luego haga clic en **Aceptar**.
-
-     Si no ve la plantilla de proyecto **Aplicación web**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de ASP.NET y web** y después elija **Modificar**.
+    En el cuadro de diálogo que aparece, elija **Aplicación web** en el panel central y luego haga clic en **Aceptar**.
 
     ![Elección de una aplicación web](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
+    ::: moniker-end
+
+    Si no ve la plantilla de proyecto **Aplicación web ASP.NET**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de ASP.NET y web** y después elija **Modificar**.
 
     Visual Studio crea el proyecto.
 

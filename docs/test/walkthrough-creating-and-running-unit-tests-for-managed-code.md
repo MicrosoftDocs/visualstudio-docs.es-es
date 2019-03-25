@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922295"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069663"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
@@ -35,28 +35,38 @@ Para obtener información sobre cómo ejecutar pruebas desde una línea de coman
 
 ## <a name="create-a-project-to-test"></a>Crear un proyecto para pruebas
 
+::: moniker range="vs-2017"
+
 1. Abra Visual Studio.
 
 2. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
    Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
-3. En **Plantillas instaladas**, haga clic en **Visual C#**.
+::: moniker-end
 
-4. En la lista de tipos de aplicación, haga clic en **Biblioteca de clases**.
+::: moniker range=">=vs-2019"
 
-5. En el cuadro **Nombre** escriba **Bank** y, después, haga clic en **Aceptar**.
+1. Abra Visual Studio.
 
-   Se crea el nuevo proyecto Bank y se muestra en el **Explorador de soluciones** con el archivo *Class1.cs* abierto en el editor de código.
+2. En la ventana de inicio, elija **Crear un nuevo proyecto**.
+
+::: moniker-end
+
+3. Elija la plantilla de proyecto Biblioteca de clases de C#.
+
+4. Asígnele al proyecto el nombre **Bank** y haga clic en **Aceptar** o en **Crear**.
+
+   Se crea el proyecto Bank y se muestra en el **Explorador de soluciones** con el archivo *Class1.cs* abierto en el editor de código.
 
    > [!NOTE]
    > Si *Class1.cs* no se abre en el editor de código, haga doble clic en el archivo *Class1.cs* en el **Explorador de soluciones** para abrirlo.
 
-6. Copie el código fuente del [Proyecto de ejemplo para crear pruebas unitarias](../test/sample-project-for-creating-unit-tests.md) y reemplace el contenido original de *Class1.cs* por el código copiado.
+5. Copie el código fuente del [Proyecto de ejemplo para crear pruebas unitarias](../test/sample-project-for-creating-unit-tests.md) y reemplace el contenido original de *Class1.cs* por el código copiado.
 
-7. Guarde el archivo como *BankAccount.cs*.
+6. Guarde el archivo como *BankAccount.cs*.
 
-8. En el menú **Compilar** , haga clic en **Compilar solución**.
+7. En el menú **Compilar** , haga clic en **Compilar solución**.
 
 Ahora tiene un proyecto denominado Bank que contiene código fuente para realizar pruebas y las herramientas necesarias para ello. El espacio de nombres de Bank, BankAccountNS, contiene la clase pública BankAccountcuyos métodos probará en los procedimientos siguientes.
 

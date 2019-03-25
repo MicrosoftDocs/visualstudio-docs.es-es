@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323123"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070027"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa para la mejora de la experiencia del usuario de Visual Studio
 
@@ -25,9 +25,7 @@ El Programa para la mejora de la experiencia del usuario de Visual Studio (VSCEI
 
 VSCEIP está activado de forma predeterminada. Para desactivarlo o volver a activarlo, siga estas instrucciones:
 
-1. Inicie Visual Studio.
-
-1. En el menú **Ayuda**, elija **Enviar comentarios** y, después, seleccione **Configuración**.
+1. En Visual Studio, elija **Ayuda** > **Enviar comentarios** y seleccione **Configuración**.
 
    Se abre el cuadro de diálogo **Programa para la mejora de la experiencia de Visual Studio**.
 

@@ -1,6 +1,6 @@
 ---
 title: Problemas conocidos de contenedores
-description: Obtenga más información sobre los problemas conocidos que pueden producirse al instalar Visual Studio Build Tools 2017 en un contenedor de Windows.
+description: Obtenga más información sobre los problemas conocidos que pueden producirse al instalar Visual Studio Build Tools en un contenedor de Windows.
 ms.date: 04/18/2018
 ms.custom: seodec18
 ms.topic: conceptual
@@ -10,16 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1fdfcc71f2bd17bf8ab4be0796350799af2c35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 52e3ab107aac36f50307db910c71e03b5a8b439b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935022"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983707"
 ---
 # <a name="known-issues-for-containers"></a>Problemas conocidos de contenedores
 
 Hay algunos problemas al instalar Visual Studio en un contenedor Docker.
+
+::: moniker range="vs-2017"
 
 ## <a name="windows-container"></a>Contenedor de Windows
 
@@ -36,6 +38,8 @@ Los problemas conocidos aquí descritos se producen cuando se instala Visual Stu
 
 * Visual Studio 2017 versión 15.8 o cualquier versión anterior (de cualquier producto) no se pueden instalar en mcr<span></span>.microsoft.com/windows/servercore:1809 o posterior. Vea https://aka.ms/setup/containers/servercore1809 para obtener más información.
 
+::: moniker-end
+
 ## <a name="build-tools-container"></a>Contenedor de Build Tools
 
 Es posible que se produzcan los siguientes problemas conocidos al usar un contenedor de Build Tools. Para ver si se han corregido problemas o si hay otros problemas conocidos, visite https://developercommunity.visualstudio.com.
@@ -48,4 +52,4 @@ Es posible que se produzcan los siguientes problemas conocidos al usar un conten
 
 * [Instalar Build Tools en un contenedor](build-tools-container.md)
 * [Ejemplo avanzado de contenedores](advanced-build-tools-container.md)
-* [Identificadores de componentes y cargas de trabajo de Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)
+* [Identificadores de componente y carga de trabajo de Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

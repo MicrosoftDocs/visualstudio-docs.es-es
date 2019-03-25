@@ -1,7 +1,7 @@
 ---
 title: Depuración de código de Python
 description: Visual Studio proporciona depuración enriquecida para código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva.
-ms.date: 01/07/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 81e83b85c3f221cbd949067da6279facafb6e3d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954366"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151367"
 ---
 # <a name="debug-your-python-code"></a>Depurar el código de Python
 
@@ -40,7 +40,7 @@ Vea también los siguientes artículos de depuración específicos para distinto
 
 El flujo de trabajo de depuración básica conlleva configurar puntos de interrupción, recorrer paso a paso el código, inspeccionar valores y administrar excepciones, tal y como se describe en las secciones siguientes.
 
-Puede iniciar una sesión de depuración con el comando **Depurar** > **Iniciar depuración**, el botón **Iniciar** de la barra de herramientas o la tecla **F5**. Estas acciones inician el archivo de inicio del proyecto (se muestra en negrita en el **Explorador de soluciones**) con el entorno activo del proyecto y los argumentos de línea de comandos o las rutas de búsqueda que se hayan especificado en **Propiedades del proyecto** (vea [Project debugging options](#project-debugging-options) [Opciones de depuración de proyectos]). **Visual Studio 2017, versión 15.6** y posteriores, le avisa si no tiene un archivo de inicio configurado; en las versiones anteriores, es posible que se abra una ventana de salida con el intérprete de Python en ejecución o que la ventana de salida aparezca brevemente y luego desaparezca. En cualquier caso, haga clic con el botón derecho en el archivo adecuado y seleccione **Establecer como archivo de inicio**.
+Puede iniciar una sesión de depuración con el comando **Depurar** > **Iniciar depuración**, el botón **Iniciar** de la barra de herramientas o la tecla **F5**. Estas acciones inician el archivo de inicio del proyecto (se muestra en negrita en el **Explorador de soluciones**) con el entorno activo del proyecto y los argumentos de línea de comandos o las rutas de búsqueda que se hayan especificado en **Propiedades del proyecto** (vea [Project debugging options](#project-debugging-options) [Opciones de depuración de proyectos]). Visual Studio 2017, versión 15.6 y posteriores, le avisa si no tiene un archivo de inicio configurado; en las versiones anteriores, es posible que se abra una ventana de salida con el intérprete de Python en ejecución o que la ventana de salida aparezca brevemente y luego desaparezca. En cualquier caso, haga clic con el botón derecho en el archivo adecuado y seleccione **Establecer como archivo de inicio**.
 
 > [!Note]
 > El depurador siempre se inicia con el entorno de Python activo para el proyecto. Para cambiar el entorno, active otro distinto como se explica en [Cómo asignar el entorno de Python que se usa en un proyecto](selecting-a-python-environment-for-a-project.md).
@@ -166,25 +166,21 @@ La ventana **Interactiva de depuración** admite metacomandos especiales además
 | `$continue`, `$cont`, `$c` | Inicia la ejecución del programa a partir de la instrucción actual. |
 | `$down`, `$d` | Baja el marco actual un nivel en el seguimiento de la pila. |
 | `$frame` | | Muestra el identificador del marco actual.
-| `$frame` | Identificador del marco | Cambia el marco actual al identificador del marco especificado.
+| `$frame` | frame ID | Cambia el marco actual al identificador del marco especificado.
 | `$load` | Carga los comandos del archivo y los ejecuta hasta que terminan. |
 | `$proc` |  | Muestra el identificador de proceso actual. |
-| `$proc` | Identificador de proceso | Cambia el proceso actual al identificador de proceso especificado. |
+| `$proc` | process ID | Cambia el proceso actual al identificador de proceso especificado. |
 | `$procs` | | Muestra los procesos que se están depurando actualmente. |
 | `$stepin`, `$step`, `$s` | Recorre paso a paso instrucciones hasta llegar a la siguiente llamada de función, si es posible. |
 | `$stepout`, `$return`, `$r` | Sale paso a paso de la función actual. |
 | `$stepover`, `$until`, `$unt` | Pasa por alto la siguiente llamada de función. |
 | `$thread` | | Muestra el identificador de subproceso actual. |
-| `$thread` | Identificador de subproceso | Cambia el subproceso actual al identificador de subproceso especificado. |
+| `$thread` | thread ID | Cambia el subproceso actual al identificador de subproceso especificado. |
 | `$threads` | | Muestra los subprocesos que se están depurando actualmente. |
 | `$up`, `$u` | | Sube el marco actual un nivel en el seguimiento de la pila. |
 | `$where`, `$w`, `$bt` | Muestra los marcos del subproceso actual. |
 
 Tenga en cuenta que las ventanas estándar del depurador, como **Procesos**, **Subprocesos** y **Pila de llamadas**, no están sincronizadas con la ventana **Interactiva de depuración**. El cambio del marco, subproceso o proceso activo en la ventana **Interactiva de depuración** no afecta a las otras ventanas del depurador. Del mismo modo, el cambio del marco, subproceso o proceso activo en las otras ventanas del depurador no afecta a la ventana **Interactiva de depuración**.
-
-La ventana **Interactiva de depuración** tiene su propio conjunto de opciones, a las que puede acceder en **Herramientas** > **Opciones** > **Herramientas de Python** > **Ventana interactiva de depuración**. A diferencia de la ventana **Python interactivo** normal, que tiene una instancia independiente para cada entorno Python, solo hay una ventana **Interactiva de depuración** y siempre usa el intérprete de Python para el proceso que se va a depurar. Vea [Opciones: Opciones de depuración](python-support-options-and-settings-in-visual-studio.md#debugging-options).
-
-![Opciones de la ventana Depuración interactiva](media/debugging-interactive-options.png)
 
 <a name="use-the-experimental-debugger"></a>
 

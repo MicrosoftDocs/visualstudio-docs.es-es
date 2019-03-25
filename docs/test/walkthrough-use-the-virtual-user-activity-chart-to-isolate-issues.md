@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d64f104cd7d893b48fca5fdbd454fb380dafc6ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947294"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069949"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Tutorial: Uso del diagrama de actividad del usuario virtual para aislar problemas
 
@@ -36,7 +36,7 @@ El Diagrama de actividad del usuario virtual permite visualizar la actividad del
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Abrir la solución ColorWebApp creada en los tutoriales anteriores
 
-1.  Inicie Visual Studio.
+1.  Abra Visual Studio.
 
 2.  Abra la solución **ColorWebApp** que contiene *LoadTest1.loadtest*. Esta prueba de carga es el resultado de realizar los pasos de los tres tutoriales que se enumeran al principio de este tema en la sección de requisitos previos.
 

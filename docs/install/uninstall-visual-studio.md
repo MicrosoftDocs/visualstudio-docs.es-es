@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe26bb7e0139c1521de17dab7cd7e8146aa780a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5188a46807eef84b942c3d551c938d97f372413e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907864"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982888"
 ---
-# <a name="uninstall-visual-studio-2017"></a>Desinstalar Visual Studio 2017
+# <a name="uninstall-visual-studio"></a>Desinstalar Visual Studio
 
 Esta página le guía a través de la desinstalación de Visual Studio, nuestro conjunto integrado de herramientas de productividad para desarrolladores.
 
@@ -39,7 +39,7 @@ Esta página le guía a través de la desinstalación de Visual Studio, nuestro 
 
 2. Haga clic para iniciar el instalador, haga clic en el icono ![Icono de detalles](media/vs2017uninstall-UninstallIcon.png "Icono de seleccionar las opciones") y, después, haga clic en **Desinstalar**.
 
-     ![Modificación de Visual Studio 2017; Modificación, inicio, reparación o desinstalación](media/vs2017-uninstall.PNG "Reparación o desinstalación de Visual Studio 2017")
+     ![Modificación de Visual Studio; Modificación, inicio, reparación o desinstalación](media/vs2017-uninstall.PNG "Reparación o desinstalación de Visual Studio 2017")
 
 3. Haga clic en **Aceptar** para confirmar su elección.
 
@@ -59,6 +59,6 @@ Para quitar completamente todas las instalaciones de Visual Studio 2017 así com
 
 ## <a name="see-also"></a>Vea también
 
-* [Modificación de Visual Studio 2017](modify-visual-studio.md)
+* [Modificar Visual Studio](modify-visual-studio.md)
 * [Actualizar Visual Studio](update-visual-studio.md)
 * [Desinstalación de Visual Studio para Mac](/visualstudio/mac/uninstall)

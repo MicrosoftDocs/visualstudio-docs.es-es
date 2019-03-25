@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a91bf1a43a5cbb92713b1068f882bd6248c4f70a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 124d27b5dc139e57f9041694afe42d42eef03fb5
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955627"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069624"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Información sobre proyectos y soluciones con Visual Basic
 
@@ -38,17 +38,35 @@ A pesar de su nombre, una solución no es una "respuesta", sino simplemente cont
 
 Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice con Visual Studio, lo más probable es que no cree soluciones vacías con mucha frecuencia. Al crear un proyecto, Visual Studio crea automáticamente una solución para hospedar ese proyecto si es que no hay ya una solución abierta.
 
+::: moniker range="vs-2017"
+
 1. Abra Visual Studio.
 
-1. En la barra de menús, que es la fila de menús, como **Archivo** y **Editar**, elija **Archivo** > **Nuevo** > **Proyecto**.
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
    Aparece el cuadro de diálogo **Nuevo proyecto** .
 
-1. En el panel izquierdo, expanda **Otros tipos de proyectos** y seleccione **Soluciones de Visual Studio**. En el panel central, elija la plantilla **Solución en blanco**. Ponga el nombre **QuickSolution** a la solución y luego haga clic en el botón **Aceptar**.
+1. En el panel izquierdo, expanda **Otros tipos de proyectos** y seleccione **Soluciones de Visual Studio**. En el panel central, elija la plantilla **Solución en blanco**. Denomine la solución **QuickSolution** y, luego, elija **Aceptar**.
 
    ![Plantilla Solución en blanco en Visual Studio](../media/tutorial-projects-new-solution.png)
 
    La **página de inicio** se cierra y aparece una solución en el **Explorador de soluciones**, en el lado derecho de la ventana de Visual Studio. Seguramente use el **Explorador de soluciones** a menudo para examinar el contenido de los proyectos.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio.
+
+2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+3. En la página **Crear un proyecto nuevo**, escriba **solución en blanco** en el cuadro de búsqueda, seleccione la plantilla **Solución en blanco** y elija **Siguiente**.
+
+4. Asígnele a la solución el nombre **QuickSolution** y elija **Crear**.
+
+   Aparece una solución en el **Explorador de soluciones**, en el lado derecho de la ventana de Visual Studio. Seguramente use el **Explorador de soluciones** a menudo para examinar el contenido de los proyectos.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Agregar un proyecto
 

@@ -2,7 +2,7 @@
 title: 'Tutorial: Aplicación Hola mundo con Windows Presentation Foundation (WPF) en Visual Basic'
 description: Cree una aplicación sencilla de .NET de escritorio de Windows en Visual Basic con Visual Studio mediante el marco de interfaz de usuario de Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
-ms.date: 10/03/2017
+ms.date: 03/14/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -13,26 +13,31 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6dc096eebde5c47bfa74214b24b91a05511894d
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: ecfb6f144b632f2c332d73e90a8deca08e8c03c6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800563"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155542"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Creación de una aplicación sencilla con Visual Basic
 
 Tras completar este tutorial, estará familiarizado con muchas de las herramientas, cuadros de diálogo y diseñadores que puede usar para desarrollar aplicaciones con Visual Studio. Creará una aplicación "Hola mundo", diseñará la interfaz de usuario, agregará código y depurará errores, mientras aprende a trabajar en el entorno de desarrollo integrado ([IDE](visual-studio-ide.md)).
 
+::: moniker range="vs-2017"
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) para instalarlo de forma gratuita.
+::: moniker-end
 
 ## <a name="configure-the-ide"></a>Configurar el IDE
 
-Cuando inicie Visual Studio por primera vez, se le pedirá que inicie sesión. Este paso es opcional para este tutorial. Después, probablemente aparezca un cuadro de diálogo que le pide que elija la configuración de desarrollo y el tema de color. Mantenga los valores predeterminados y elija **Iniciar Visual Studio**.
+::: moniker range="vs-2017"
+
+Cuando inicie Visual Studio por primera vez, se le pedirá que inicie sesión. Este paso es opcional en este tutorial. Después, probablemente aparezca un cuadro de diálogo que le pide que elija la configuración de desarrollo y el tema de color. Mantenga los valores predeterminados y elija **Iniciar Visual Studio**.
 
 ![Cuadro de diálogo Elegir configuración](../media/exploreide-settings.png)
-
-::: moniker range="vs-2017"
 
 Una vez que se haya iniciado Visual Studio, verá las ventanas de herramientas, los menús, las barras de herramientas y el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. En el centro de la ventana de la aplicación está la **Página principal**. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio donde está la **página de inicio** . Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.
 
@@ -52,20 +57,37 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
 1. Cree un nuevo proyecto. En la barra de menús, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
+     ::: moniker range="vs-2017"
      ![En la barra de menús, elija Archivo, Nuevo, Proyecto](../media/exploreide-filenewproject.png)
+     ::: moniker-end
+     ::: moniker range=">=vs-2019"
+     ![En la barra de menús, elija Archivo, Nuevo, Proyecto](../media/vs-2019/exploreide-filenewproject-vs2019.png)
+     ::: moniker-end
 
-1. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual Basic** > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)**. Asigne al proyecto el nombre **HelloWPFApp**.
+::: moniker range="vs-2017"
+2. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual Basic** > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)**. Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
 
      ![Plantilla de aplicación de WPF en el cuadro de diálogo Nuevo proyecto de Visual Studio](media/exploreide-newproject-vb.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+2. En la pantalla **Crear un nuevo proyecto**, busque "WPF", elija **Aplicación de WPF (.NET Framework)** y haga clic en **Siguiente**.
 
-1. Seleccione **Aceptar**.
+   ![Plantilla de aplicación de WPF en el cuadro de diálogo Nuevo proyecto de Visual Studio](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
-   Visual Studio crea el proyecto HelloWPFApp y la solución, y el **Explorador de soluciones** muestra los distintos archivos. **WPF Designer** muestra una vista de diseño y una vista XAML de *MainWindow.xaml* en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas. Puede elegir ver solo la vista visual o solo la vista XAML. Los elementos siguientes aparecen en el **Explorador de soluciones**:
+3. En la pantalla siguiente, asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Crear**.
+::: moniker-end
 
-   ![Explorador de soluciones con los archivos HelloWPFApp cargados](../media/exploreide-hellowpfappfiles.png)
+Visual Studio crea el proyecto HelloWPFApp y la solución, y el **Explorador de soluciones** muestra los distintos archivos. **WPF Designer** muestra una vista de diseño y una vista XAML de *MainWindow.xaml* en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas. Puede elegir ver solo la vista visual o solo la vista XAML. Los elementos siguientes aparecen en el **Explorador de soluciones**:
 
-   > [!NOTE]
-   > Para más información sobre XAML (eXtensible Application Markup Language), consulte la página [Información general XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
+::: moniker range="vs-2017"
+![Explorador de soluciones con los archivos HelloWPFApp cargados](../media/exploreide-hellowpfappfiles.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Explorador de soluciones con los archivos HelloWPFApp cargados](../media/vs-2019/exploreide-hellowpfappfiles.png)
+::: moniker-end
+
+> [!NOTE]
+> Para más información sobre XAML (eXtensible Application Markup Language), consulte la página [Información general XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
 
 Después de crear el proyecto, puede personalizarlo. Mediante la ventana **Propiedades** , (que se encuentra en el menú **Ver** ), puede mostrar y cambiar las opciones de los elementos de proyecto, controles y otros elementos de una aplicación.
 
@@ -87,7 +109,7 @@ Agregaremos tres tipos de controles a esta aplicación: un control <xref:System.
 
 ### <a name="add-a-textblock-control"></a>Agregar un control TextBlock
 
-1. Abra la ventana **Cuadro de herramientas** eligiendo el menú **Ver** y el elemento **Cuadro de herramientas** .
+1.  Escriba **Ctrl**+**Q** para invocar a **Inicio rápido** y escriba **Cuadro de herramientas**. Elija **Ver > Cuadro de herramientas** en la lista de resultados.
 
 2. En el **Cuadro de herramientas**, expanda el nodo **Controles WPF comunes** para ver el control TextBlock.
 
@@ -113,7 +135,7 @@ El marcado XAML debe tener un aspecto similar al siguiente ejemplo:
    Text="Select a message option and then choose the Display button."
    ```
 
-2. Vuelva a centrar TextBlock si es necesario y guarde los cambios. Para ello, presione **CTRL**+**S** o use el elemento de menú **Archivo**.
+2. Vuelva a centrar TextBlock si es necesario y guarde los cambios. Para ello, presione Ctrl+S o use el elemento de menú **Archivo**.
 
 Después, agregará dos controles [RadioButton](/dotnet/framework/wpf/controls/radiobutton) al formulario.
 
@@ -127,7 +149,7 @@ Después, agregará dos controles [RadioButton](/dotnet/framework/wpf/controls/r
 
      La ventana debe ser similar a la que se muestra a continuación:
 
-     ![Formulario Greetings con bloque de texto y dos botones de opción](../media/exploreide-greetingswithradiobuttons.png)
+     ![Formulario Greetings con control TextBlock y dos botones de radio](../media/exploreide-greetingswithradiobuttons.png)
 
 3. En la ventana **Propiedades** del control RadioButton izquierdo, cambie la propiedad **Name** (la propiedad situada en la parte superior de la ventana **Propiedades** ) a `HelloButton`.
 
@@ -203,15 +225,13 @@ En este paso, buscará el error que se ha producido anteriormente al cambiar el 
 
 #### <a name="start-debugging-and-find-the-error"></a>Iniciar la depuración y buscar el error
 
-1. Inicie el depurador seleccionando **Depurar**y después **Iniciar depuración**.
+1. Para iniciar el depurador, presione **F5** o seleccione **Depurar** y, a continuación, **Iniciar depuración**.
 
-     ![Comando Iniciar depuración del menú Depurar](../media/exploreide-startdebugging.png)
+   Aparece la ventana **Modo de interrupción** y en la ventana **Salida** se indica que se ha producido una excepción IOException: No se encuentra el recurso "mainwindow.xaml".
 
-     Aparece la ventana **Modo de interrupción** y en la ventana **Salida** se indica que se ha producido una excepción IOException: No se encuentra el recurso "mainwindow.xaml".
+   ![Captura de pantalla del mensaje IOException](../media/exploreide-ioexception.png)
 
 2. Detenga el depurador. Para ello, elija **Depurar** > **Detener depuración**.
-
-     ![Comando Detener depuración del menú Depurar](../media/exploreide-stopdebugging.png)
 
 Hemos cambiado el nombre de *MainWindow.xaml* a *Greetings.xaml* al comienzo de este tutorial, pero el código todavía hace referencia a *MainWindow.xaml* como URI de inicio de la aplicación, por lo que el proyecto no puede iniciarse.
 
@@ -231,11 +251,9 @@ Puede probar el código durante la depuración. Para ello, agregue algunos punto
 
 1. Abra *Greetings.xaml.vb* y seleccione la línea siguiente: `MessageBox.Show("Hello.")`
 
-2. Agregue un punto de interrupción en el menú seleccionando **Depurar**y después **Alternar puntos de interrupción**.
+2. Para agregar un punto de interrupción, presione **F9** o seleccione **Depurar** en el menú y, luego, **Alternar punto de interrupción**.
 
-     ![Comando Alternar puntos de interrupción del menú Depurar](../media/exploreide-togglebreakpoint.png)
-
-     Aparece un círculo rojo al lado de la línea de código en el margen izquierdo de la ventana del editor.
+   Aparece un círculo rojo al lado de la línea de código en el margen izquierdo de la ventana del editor.
 
 3. Seleccione la línea siguiente: `MessageBox.Show("Goodbye.")`.
 
@@ -243,7 +261,9 @@ Puede probar el código durante la depuración. Para ello, agregue algunos punto
 
 5. En la ventana **Greetings** , elija el botón de radio **Hello** y después elija el botón **Mostrar** .
 
-     La línea `MessageBox.Show("Hello.")` se resalta en amarillo. En la parte inferior del IDE, las ventanas Automático, Variables locales e Inspección están acopladas juntas en el lado izquierdo, mientras que las ventanas Pila de llamadas, Puntos de interrupción, Comando, Inmediato y Salida están acopladas juntas en el lado derecho.
+   La línea `MessageBox.Show("Hello.")` se resalta en amarillo. En la parte inferior del IDE, las ventanas Automático, Variables locales e Inspección están acopladas juntas en el lado izquierdo, mientras que las ventanas Pila de llamadas, Puntos de interrupción, Configuración de excepción, Comando, Inmediato y Salida están acopladas juntas en el lado derecho.
+
+   ![Captura de pantalla del punto de interrupción en el depurador](media/exploreide-debugbreakpoint.png)
 
 6. En la barra de menús, elija **Depurar** > **Paso a paso para salir**.
 
@@ -267,17 +287,11 @@ Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzam
 
 1. En el menú principal, seleccione **Compilar** > **Limpiar solución** para eliminar los archivos intermedios y de salida que se han creado durante las compilaciones anteriores. Esto no es necesario, pero se limpian las salidas de compilación de depuración.
 
-     ![El comando Limpiar solución del menú Compilar](../media/exploreide-cleansolution.png)
-
 2. Cambie la configuración de compilación de HelloWPFApp de **Depurar** a **Liberar** mediante el control de lista desplegable en la barra de herramientas (dice "Depurar" actualmente).
-
-     ![Barra de herramientas Estándar con la versión seleccionada](../media/exploreide-releaseversion.png)
 
 3. Compile la solución seleccionando **Compilar** > **Compilar solución**.
 
-     ![Comando Compilar solución del menú Compilar](../media/exploreide-buildsolution.png)
-
-¡Enhorabuena por completar este tutorial! Puede encontrar el *.exe* creado en el directorio de soluciones y proyectos (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Enhorabuena por completar este tutorial. Puede encontrar el *.exe* creado en el directorio de soluciones y proyectos (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Vea también
 

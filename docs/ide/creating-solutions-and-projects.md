@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223252"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867892"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -113,11 +113,17 @@ Después de crear una solución vacía, puede agregarle elementos o proyectos nu
 
 Como ya se ha indicado, también puede abrir archivos de código sin un proyecto o una solución. Para obtener información sobre el desarrollo de código de esta manera, vea [Desarrollo de código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="create-a-temporary-project-c-and-visual-basic"></a>Crear un proyecto temporal (C# y Visual Basic)
+::: moniker range="vs-2017"
+
+## <a name="create-a-temporary-project"></a>Creación de un proyecto temporal
+
+(Solo C# y Visual Basic)
 
 Si crea un proyecto basado en .NET sin especificar una ubicación de disco, el proyecto será temporal. Los proyectos temporales permiten experimentar con proyectos de .NET. Cuando trabaje con un proyecto temporal, podrá guardarlo o descartarlo en cualquier momento.
 
 Para crear un proyecto temporal, vaya primero a **Herramientas** > **Opciones** > **Proyectos y soluciones** > **General** y desactive la casilla **Guardar nuevos proyectos al crearlos**. Después, abra el cuadro de diálogo **Nuevo proyecto**.
+
+::: moniker-end
 
 ## <a name="delete-a-solution-project-or-item"></a>Eliminar una solución, un proyecto o un elemento
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155661"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151146"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Uso de la ventana interactiva de Python
 
@@ -56,7 +56,7 @@ Por último, puede seleccionar código en el archivo y usar el comando [**Enviar
 
 ## <a name="interactive-window-options"></a>Opciones de la ventana interactiva
 
-Puede controlar varios aspectos de la ventana **interactiva** mediante **Herramientas** > **Opciones** > **Herramientas de Python** > **Ventanas interactivas** (vea [Opciones](python-support-options-and-settings-in-visual-studio.md)):
+Puede controlar varios aspectos de la ventana **interactiva** mediante **Herramientas** > **Opciones** > **Python** > **Ventanas interactivas** (consulte [Opciones](python-support-options-and-settings-in-visual-studio.md)):
 
 ![Opciones de la ventana interactiva de Python](media/options-interactive-windows.png)
 
@@ -121,4 +121,4 @@ Visual Studio también detecta celdas de código que comienzan con comentarios c
 
 La ventana **interactiva** incluye IntelliSense basándose en los objetos activos, a diferencia del editor de código, en el que IntelliSense se basa exclusivamente en el análisis de código fuente. Estas sugerencias son más correctas en la ventana **interactiva**, sobre todo, con el código generado de forma dinámica. El inconveniente es que las funciones con efectos secundarios (como los mensajes de registro) pueden afectar a su experiencia de desarrollo.
 
-Si este comportamiento es un problema, cambie la configuración en **Herramientas** > **Opciones** > **Herramientas de Python** > **Ventanas interactivas** en el grupo **Modo de finalización**, como se describe en [Opciones: Opciones de las ventanas interactivas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Si este comportamiento es un problema, cambie la configuración en **Herramientas** > **Opciones** > **Python** > **Ventanas Interactivas** en el grupo **Modo de finalización**, como se describe en [Opciones: Opciones de las ventanas interactivas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

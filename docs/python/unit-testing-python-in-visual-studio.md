@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d4cab82a8fc7d3aec512ead169ff2be4b528eda6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155986"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983811"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Configuración de pruebas unitarias para código de Python
 
@@ -86,7 +86,7 @@ Para iniciar la depuración, establezca un punto de interrupción inicial en el 
 
 ![Depuración de una prueba](media/unit-test-debugging.png)
 
-También puede utilizar los comandos **Analizar cobertura de código para las pruebas seleccionadas** y **Generar perfil para pruebas**, según la versión de Visual Studio (consulte la [Matriz de características](overview-of-python-tools-for-visual-studio.md#features-matrix)).
+También puede usar los comandos **Analizar cobertura de código para las pruebas seleccionadas** y **Generar perfil para pruebas**.
 
 ### <a name="known-issues"></a>Problemas conocidos
 
