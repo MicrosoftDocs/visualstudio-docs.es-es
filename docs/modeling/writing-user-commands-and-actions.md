@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b151358df90be3db423bbf3db8b5123d1069f3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e7241e6f74d3ac034d52636b1bba1ee73b92c6
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949426"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415687"
 ---
 # <a name="writing-user-commands-and-actions"></a>Escribir acciones y comandos de usuario
 Puede personalizar un lenguaje específico de dominio agregando comandos al diagrama y respondiendo a gestos como los eventos de arrastrar y colocar, clic y doble clic.
@@ -27,9 +27,7 @@ Puede personalizar un lenguaje específico de dominio agregando comandos al diag
 
 -   [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -permitir que el usuario haga clic en a través de un elemento a otro elemento que hace referencia.
 
--   [Cómo: Tener acceso y restringir la selección actual](../modeling/how-to-access-and-constrain-the-current-selection.md)
-
--   [Personalizar herramientas de elemento](../modeling/customizing-element-tools.md)
+-   [Cómo: Acceder a la selección actual y restringirla](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 ## <a name="see-also"></a>Vea también
 

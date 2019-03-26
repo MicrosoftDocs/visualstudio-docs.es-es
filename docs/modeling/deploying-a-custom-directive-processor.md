@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad29fbc042e9f6397dc1f09fe3fce81f20403aa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c139e2a9675bdbe204b54220709ac8cdc794e5b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932058"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416063"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
 
@@ -46,9 +46,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Para desarrollar un procesador de directivas personalizado en un proyecto VSIX
 
-1.  Cree un proyecto VSIX en Visual Studio.
-
-    -   En el **nuevo proyecto** cuadro de diálogo, expanda **Visual Basic** o **Visual C#**, a continuación, expanda **extensibilidad**. Haga clic en **proyecto VSIX**.
+1.  Cree un nuevo **proyecto VSIX** proyecto.
 
 2.  En **source.extension.vsixmanifest**, establezca el tipo de contenido y las ediciones compatibles.
 
@@ -184,7 +182,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
    Si el procesador de directivas personalizado no se encuentra en la GAC, las subclaves del Registro deben ser similares a las que aparecen en la siguiente tabla:
 
-|nombre|Tipo|Datos|
+|Name|Tipo|Datos|
 |-|-|-|
 |(Predeterminado)|REG_SZ|(valor no establecido)|
 |Clase|REG_SZ|**\<Nombre de Namespace >. \<Nombre de clase >**|
@@ -192,7 +190,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
  Si el ensamblado se encuentra en la GAC, las subclaves del Registro deben ser similares a las que se muestran en la siguiente tabla:
 
-|nombre|Tipo|Datos|
+|Name|Tipo|Datos|
 |-|-|-|
 |(Predeterminado)|REG_SZ|(valor no establecido)|
 |Clase|REG_SZ|\<**El nombre de clase completo**>|
