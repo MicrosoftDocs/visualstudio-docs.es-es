@@ -74,12 +74,6 @@ items:
       href: add-custom-architecture-validation-to-layer-diagrams.md
     - name: Agregar propiedades personalizadas a diagramas de dependencia
       href: add-custom-properties-to-layer-diagrams.md
-    - name: Navegar por modelos de dependencia en el código del programa y actualizarlos
-      href: navigate-and-update-layer-models-in-program-code.md
-    - name: Implementar una extensión de modelo de dependencia
-      href: deploy-a-layer-model-extension.md
-    - name: Solucionar problemas de extensiones de diagramas de dependencia
-      href: troubleshoot-extensions-for-layer-diagrams.md
   - name: Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
     href: modeling-sdk-for-visual-studio-domain-specific-languages.md
     items:
@@ -115,8 +109,6 @@ items:
         href: customizing-element-creation-and-movement.md
       - name: Personalizar el comportamiento de copia
         href: customizing-copy-behavior.md
-      - name: Personalizar el comportamiento de eliminación
-        href: customizing-deletion-behavior.md
       - name: Personalizar la ventana Propiedades
         href: customizing-the-properties-window.md
       - name: Personalizar el Explorador de modelos
@@ -177,8 +169,6 @@ items:
         href: adding-extensions-to-dsl-definitions.md
       - name: Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
         href: adding-a-tracking-property-to-a-domain-specific-language-definition.md
-      - name: Depurar con el visor de almacén
-        href: debugging-by-using-the-store-viewer.md
       - name: El archivo DslDefinition.dsl
         href: the-dsldefinition-dsl-file.md
       - name: Introducción al código DSL
@@ -198,8 +188,6 @@ items:
         href: how-to-intercept-a-click-on-a-shape-or-decorator.md
       - name: Acceder a la selección actual y restringirla
         href: how-to-access-and-constrain-the-current-selection.md
-      - name: Personalizar herramientas de elemento
-        href: customizing-element-tools.md
     - name: Responder a cambios y propagarlos
       href: responding-to-and-propagating-changes.md
       items:
@@ -211,8 +199,6 @@ items:
         href: rules-propagate-changes-within-the-model.md
       - name: Los controladores de eventos propagan cambios fuera del modelo
         href: event-handlers-propagate-changes-outside-the-model.md
-      - name: Ubicación y tamaño de las reglas de restricción de formas BoundsRules
-        href: boundsrules-constrain-shape-location-and-size.md
       - name: Actualizar formas y conectores para reflejar el modelo
         href: updating-shapes-and-connectors-to-reflect-the-model.md
     - name: Generar código a partir de un lenguaje específico de dominio
@@ -344,9 +330,9 @@ items:
           href: walkthrough-creating-a-custom-text-template-host.md
     - name: Referencia de API para plantillas de texto T4
       href: api-reference-for-t4-text-templates.md
-ms.openlocfilehash: 04587f1fed1b83cf8ebac8d42be9e1031c7dcf9d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 25393b9c38dc994f41d8f78dd7f8b901f4f298b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872072"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415714"
