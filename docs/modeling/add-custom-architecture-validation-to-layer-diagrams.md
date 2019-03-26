@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f4f3a7f6c3ab8d01b50a614fb006305d25eee
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983369"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415049"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Agregar validación de arquitectura personalizada a diagramas de dependencia
 
@@ -40,9 +40,7 @@ El método más rápido para crear un validador consiste en usar la plantilla de
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>Para definir una extensión mediante una plantilla de proyecto
 
-1. Cree un proyecto en una nueva solución mediante el comando **Nuevo proyecto** del menú **Archivo** .
-
-2. En el cuadro de diálogo **Nuevo proyecto** , en **Proyectos de modelado**, seleccione **Layer Designer Validation Extension**(Extensión de validación de diseñador de capas).
+1. Cree un nuevo **extensión de validación de capas diseñador** proyecto.
 
     La plantilla crea un proyecto que contiene un pequeño ejemplo.
 
@@ -52,22 +50,22 @@ El método más rápido para crear un validador consiste en usar la plantilla de
    > - Edite las llamadas a `LogValidationError` para quitar los argumentos opcionales `errorSourceNodes` y `errorTargetNodes`.
    > - Si usa propiedades personalizadas, aplique la actualización mencionada en [agregar propiedades personalizadas a diagramas de dependencia](../modeling/add-custom-properties-to-layer-diagrams.md).
 
-3. Modifique el código para definir la validación. Para obtener más información, vea [Programar la validación](#programming).
+2. Modifique el código para definir la validación. Para obtener más información, vea [Programar la validación](#programming).
 
-4. Para probar la extensión, vea [Depurar la validación de capas](#debugging).
+3. Para probar la extensión, vea [Depurar la validación de capas](#debugging).
 
    > [!NOTE]
    > Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).
 
 ::: moniker range="vs-2017"
 
-5. Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque el *.vsix* de archivos en el *bin* directory. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, elija **extensiones y actualizaciones** en el **herramientas** menú.
+4. Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque el *.vsix* de archivos en el *bin* directory. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, elija **extensiones y actualizaciones** en el **herramientas** menú.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque el *.vsix* de archivos en el *bin* directory. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, elija **administrar extensiones** en el **extensiones** menú.
+4. Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque el *.vsix* de archivos en el *bin* directory. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, elija **administrar extensiones** en el **extensiones** menú.
 
 ::: moniker-end
 
@@ -77,15 +75,13 @@ Si desea crear un VSIX que contenga validadores de capas, comandos y otras exten
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Para agregar la validación de capas a un VSIX independiente
 
-1.  Cree un proyecto de biblioteca de clases en una solución de Visual Studio nueva o en una existente. En el cuadro de diálogo **Nuevo proyecto** , haga clic en **Visual C#** y haga clic en **Biblioteca de clases**. Este proyecto contendrá la clase de validación de capas.
+1. Cree un nuevo **biblioteca de clases** proyecto. Este proyecto contendrá la clase de validación de capas.
 
-2.  Identifique o cree un proyecto de VSIX en la solución. Un proyecto de VSIX contiene un archivo denominado **source.extension.vsixmanifest**. Si tiene que agregar un proyecto VSIX, siga estos pasos:
+2. Buscar o crear un **proyecto VSIX** en la solución. Un proyecto de VSIX contiene un archivo denominado **source.extension.vsixmanifest**.
 
-    1.  En el cuadro de diálogo **Nuevo proyecto** , elija **Visual C#**, **Extensibilidad**, **Proyecto VSIX**.
+3. En **el Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **establecer como proyecto de inicio**.
 
-    2.  En el **Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.
-
-3.  En **source.extension.vsixmanifest**, en **Activos**, agregue el proyecto de validación de capas como componente MEF:
+4. En **source.extension.vsixmanifest**, en **Activos**, agregue el proyecto de validación de capas como componente MEF:
 
     1.  Elija **Nuevo**.
 
@@ -97,7 +93,7 @@ Si desea crear un VSIX que contenga validadores de capas, comandos y otras exten
 
          **Proyecto** = *El proyecto validador*
 
-4.  También debe agregarse como validación de capas:
+5. También debe agregarse como validación de capas:
 
     1.  Elija **Nuevo**.
 
@@ -109,7 +105,7 @@ Si desea crear un VSIX que contenga validadores de capas, comandos y otras exten
 
          **Proyecto** = *El proyecto validador*
 
-5.  Vuelva al proyecto de validación de capas y agregue las siguientes referencias de proyecto:
+6. Vuelva al proyecto de validación de capas y agregue las siguientes referencias de proyecto:
 
     |**Referencia**|**Qué permite hacer**|
     |-|-|
@@ -120,14 +116,14 @@ Si desea crear un VSIX que contenga validadores de capas, comandos y otras exten
     |System.ComponentModel.Composition|Definir el componente de validación mediante MEF (Managed Extensibility Framework)|
     |Microsoft.VisualStudio.Modeling.Sdk.[versión]|Definir las extensiones de modelado|
 
-6.  Copie el código de ejemplo al final de este tema en el archivo de clase del proyecto de biblioteca de validador para que contenga el código de la validación. Para obtener más información, vea [Programar la validación](#programming).
+7. Copie el código de ejemplo al final de este tema en el archivo de clase del proyecto de biblioteca de validador para que contenga el código de la validación. Para obtener más información, vea [Programar la validación](#programming).
 
-7.  Para probar la extensión, vea [Depurar la validación de capas](#debugging).
+8. Para probar la extensión, vea [Depurar la validación de capas](#debugging).
 
     > [!NOTE]
     > Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).
 
-8.  Para instalar VSIX en la instancia principal de Visual Studio o en otro equipo, busque el **.vsix** de archivos en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX.
+9. Para instalar VSIX en la instancia principal de Visual Studio o en otro equipo, busque el **.vsix** de archivos en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX.
 
 ##  <a name="programming"></a> Programar la validación
 

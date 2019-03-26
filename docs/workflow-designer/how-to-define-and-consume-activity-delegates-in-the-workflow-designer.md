@@ -8,25 +8,23 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222888"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415816"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedimiento Definir y usar delegados de actividad en el Diseñador de flujo de trabajo
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Filtrar Definir y usar delegados de actividad en el Diseñador de flujo de trabajo
 
 .NET framework 4.5 incluye un diseñador de out-of-box para el <xref:System.Activities.Statements.InvokeDelegate> actividad. Este diseñador se puede usar para asignar delegados a la actividad que se derivan de <xref:System.Activities.ActivityDelegate>, como <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.
 
 ## <a name="define-an-activity-delegate"></a>Definir un delegado de actividad
 
-1. En Visual Studio, seleccione **Archivo** > **Nuevo** > **Proyecto**.
-
-2. En el **nuevo proyecto** cuadro de diálogo, seleccione el **flujo de trabajo** categoría de la izquierda y, a continuación, seleccione el **aplicación de consola de flujos de trabajo** plantilla de proyecto. Denomine el proyecto (si lo desea) y haga clic en **Aceptar**.
+1. Cree un nuevo **aplicación de consola de flujos de trabajo** proyecto.
 
    > [!NOTE]
-   > Si no ve el **flujo de trabajo** categoría, instalar primero el **Windows Workflow Foundation** componente de Visual Studio. Para obtener instrucciones detalladas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Si no ve el **flujo de trabajo** plantillas de proyecto, instale primero el **Windows Workflow Foundation** componente de Visual Studio. Para obtener instrucciones detalladas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Haga doble clic en el proyecto en **el Explorador de soluciones** y seleccione **agregar** > **nuevo elemento**. Seleccione el **flujo de trabajo** categoría y, a continuación, seleccione el **actividad** plantilla de elemento. Nombre de la nueva actividad **MyForEach.xaml** y, a continuación, seleccione **Aceptar**.
 

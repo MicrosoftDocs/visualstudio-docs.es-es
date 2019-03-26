@@ -16,40 +16,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46dc8def91a15b8534d597f8cc0d14eb99f9002
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927885"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416427"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Cómo: Definir lenguajes específicos de dominio
 Para definir un lenguaje específico de dominio (DSL), crea una solución de Visual Studio desde una plantilla. La parte clave de la solución es el diagrama DSL Definition (Definición de DSL), que se almacena en DslDefinition.dsl. DSL Definition (Definición de DSL) define las clases y las formas del DSL. Después de modificar y agregar estos elementos, puede agregar código de programa para personalizar el DSL con más detalle.
 
-Si está familiarizado con los DSL, le recomendamos que trabaje a través de la **laboratorio de herramientas de DSL**, que encontrará en este sitio: [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=186128)
+Si está familiarizado con los DSL, le recomendamos que trabaje a través de la **laboratorio de herramientas de DSL**, que encontrará en este sitio: [SDK de modelado y](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Seleccionar una plantilla de solución
- Para definir un DSL, debe tener instalados los siguientes componentes:
 
+Para definir un DSL, debe tener instalados los siguientes componentes:
 
-| | |
-|-|-|
-| Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
-| SDK de Visual Studio de visualización y modelado | |
+- Programa para la mejora
+- Visual Studio extensión carga de trabajo desarrollo (incluye el SDK de Visual Studio)
+- SDK de modelado (instalarlo como un componente individual en Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de Visual Studio mediante la plantilla de proyecto de lenguaje específico de dominio.
 
- Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de Visual Studio mediante la plantilla de proyecto de lenguaje específico de dominio.
+### <a name="to-create-a-dsl-solution"></a>Para crear una solución de DSL
 
-#### <a name="to-create-a-dsl-solution"></a>Para crear una solución de DSL
+1. Cree un nuevo **lenguajes específicos de dominio** proyecto.
 
-1. Crear una solución con el **lenguajes específicos de dominio** plantilla, que puede encontrarse en **otros tipos de proyecto/extensibilidad** en el **nuevo proyecto** cuadro de diálogo.
+   ::: moniker range="vs-2017"
 
     ![Cuadro de diálogo para crear solución DSL](../modeling/media/create_dsldialog.png)
 
-    Al hacer clic en **Aceptar**, **Domain-Specific Language asistente** se abre y muestra una lista de soluciones DSL de plantilla.
+   ::: moniker-end
+
+    El **Domain-Specific Language asistente** se abre y muestra una lista de soluciones DSL de plantilla.
 
 2. Haga clic en cada plantilla para ver una descripción. Elija la solución que más se parezca a lo que quiere crear.
 
@@ -169,7 +170,7 @@ Si está familiarizado con los DSL, le recomendamos que trabaje a través de la 
 |-|-|-|
 |Forma en el diagrama<br /><br /> Calle.|Clase raíz del DSL.|Minimal Language.<br /><br /> Task Flow: clase Actor.|
 |Forma en una calle.|Clase de dominio de los elementos que se muestran como calles.|Task Flow: clase Task.|
-|Elemento en una lista en una forma; el elemento se elimina si el contenedor se elimina.<br /><br /> Puerto en el borde de una forma.|Clase de dominio que se asigna a la forma del contenedor.|Class diagram: clase Attribute.<br /><br /> Component diagram: clase Port.|
+|Elemento en una lista en una forma; el elemento se elimina si el contenedor se elimina.<br /><br /> Puerto en el borde de una forma.|Clase de dominio que se asigna a la forma del contenedor.|Diagrama de clases: clase Attribute.<br /><br /> Component diagram: clase Port.|
 |Elemento en una lista; no se elimina si el contenedor se elimina.|Clase raíz del DSL.<br /><br /> La lista muestra vínculos de referencia.||
 |No se muestra directamente.|Clase de la que forma parte.||
 
@@ -594,7 +595,7 @@ Si está familiarizado con los DSL, le recomendamos que trabaje a través de la 
 
      Para obtener más información, consulte [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-2.  Amplíe sus herramientas de modelado usando código de programa para lograr efectos más avanzados. Por ejemplo, puede crear comandos de menú que pueden cambiar el modelo, y puede crear herramientas que integren dos o más DSL. VMSDK está diseñado específicamente para facilitar la integración de las extensiones con el código que se genera a partir de la definición de DSL.  Para obtener más información, consulte [escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+2.  Amplíe sus herramientas de modelado usando código de programa para lograr efectos más avanzados. Por ejemplo, puede crear comandos de menú que pueden cambiar el modelo, y puede crear herramientas que integren dos o más DSL. VMSDK está diseñado específicamente para facilitar la integración de las extensiones con el código que se genera a partir de la definición de DSL.  Para obtener más información, consulte [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ### <a name="changing-the-dsl-definition"></a>Cambiar la definición de DSL
  Cuando se crea un elemento en una definición de DSL, muchos valores predeterminados se establecen automáticamente. Una vez establecidos, puede cambiarlos. Esto simplifica el desarrollo de un DSL, al tiempo que permite realizar personalizaciones eficaces.
@@ -606,7 +607,7 @@ Si está familiarizado con los DSL, le recomendamos que trabaje a través de la 
  Vea también [Cómo: Cambiar el Namespace de un lenguaje específico de dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Solución de problemas
- En la tabla siguiente se enumeran algunos de los problemas más comunes que se encuentran al diseñar un DSL, además de sugerencias para solucionarlos. Encontrará más consejos está disponible en el [foro de extensibilidad de las herramientas de visualización](http://go.microsoft.com/fwlink/?LinkId=186074).
+ En la tabla siguiente se enumeran algunos de los problemas más comunes que se encuentran al diseñar un DSL, además de sugerencias para solucionarlos. Encontrará más consejos está disponible en el [foro de extensibilidad de herramientas de visualización](http://go.microsoft.com/fwlink/?LinkId=186074).
 
 
 | Problema | Sugerencia |

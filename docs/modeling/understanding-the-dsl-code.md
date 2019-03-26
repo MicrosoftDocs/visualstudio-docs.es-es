@@ -9,25 +9,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928288"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416024"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
+
 Una solución de lenguaje específico de dominio (DSL) genera una API que puede usar para leer y actualizar las instancias del DSL en Visual Studio. Esta API se define en el código que se genera a partir de la definición de DSL. Este tema describe la API que se genera.
 
 ## <a name="the-example-solution-component-diagrams"></a>Solución de ejemplo: Diagrama de componentes
- Para crear la solución que es el origen de la mayoría de los ejemplos de este tema, cree un DSL desde el **modelos de componentes** plantilla de solución. Esta es una de las plantillas estándar que aparece al crear una nueva solución de DSL.
+
+Para crear la solución que es el origen de la mayoría de los ejemplos de este tema, cree un DSL desde el **modelos de componentes** plantilla de solución. Esta es una de las plantillas estándar que aparece al crear una nueva solución de DSL.
 
 > [!NOTE]
->  La plantilla de DSL de diagramas de componentes no está relacionado con los diagramas de componentes UML que se pueden crear mediante el menú de la arquitectura en Visual Studio. En el **nuevo proyecto** cuadro de diálogo, expanda **otros tipos de proyecto\extensibilidad** y, a continuación, haga clic en **Diseñador de lenguaje específico de dominio**.
+> Se llama a la plantilla de DSL de diagramas de componentes **Diseñador de lenguaje específico de dominio**.
 
- Si no está familiarizado con esta plantilla de solución, presione F5 y experimente. En concreto, tenga en cuenta que los puertos se crean arrastrando una herramienta de puerto a un componente, y que puede conectar puertos.
+Presione **F5** y experimentar si no está familiarizado con esta plantilla de solución. En concreto, tenga en cuenta que los puertos se crean arrastrando una herramienta de puerto a un componente, y que puede conectar puertos.
 
- ![Componentes y puertos interconectados](../modeling/media/componentsample.png)
+![Componentes y puertos interconectados](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Estructura de la solución de DSL
  El **Dsl** proyecto define la API para su DSL. El **DslPackage** proyecto define cómo se integra con Visual Studio. También puede agregar sus propios proyectos, que también pueden contener código generado a partir del modelo.
@@ -347,4 +349,4 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)
 - [Personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950154"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416250"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navegar por un modelo en el código del programa y actualizarlo
 
@@ -226,27 +226,28 @@ using (Transaction t =
   Cuando se crea un elemento de esta manera, se crea automáticamente un conector en el diagrama, pero tiene una forma predeterminada, el color y otras características. Para controlar cómo se crea el conector asociado, vea [creación de un elemento y su forma](#merge).
 
 ##  <a name="deleteelements"></a> Eliminar elementos
- Eliminar un elemento mediante una llamada a `Delete()`:
 
- `henry.Delete();`
+Eliminar un elemento mediante una llamada a `Delete()`:
 
- Esta operación, también se eliminarán:
+`henry.Delete();`
+
+Esta operación, también se eliminarán:
 
 - Vínculos de relación desde y hacia el elemento. Por ejemplo, `edward.Parents` ya no contendrá `henry`.
 
 - Los elementos en roles para los que el `PropagatesDelete` marca es true. Por ejemplo, se eliminará la forma que muestre el elemento.
 
-  De forma predeterminada, cada relación de incrustación tiene `PropagatesDelete` verdadera en el rol de destino. Eliminando `henry` no elimina el `familyTree`, pero `familyTree.Delete()` eliminaría todas las `Persons`. Para obtener más información, consulte [personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md).
+De forma predeterminada, cada relación de incrustación tiene `PropagatesDelete` verdadera en el rol de destino. Eliminando `henry` no elimina el `familyTree`, pero `familyTree.Delete()` eliminaría todas las `Persons`.
 
-  De forma predeterminada, `PropagatesDelete` no es cierto para los roles de las relaciones de referencia.
+De forma predeterminada, `PropagatesDelete` no es cierto para los roles de las relaciones de referencia.
 
-  Puede hacer que las reglas de eliminación omitir propagaciones específicos cuando se elimina un objeto. Esto es útil si sustituye un elemento de otro. Proporcione el GUID de uno o varios roles para los que no se debe propagar eliminación. Puede obtener el GUID de la clase de relación:
+Puede hacer que las reglas de eliminación omitir propagaciones específicos cuando se elimina un objeto. Esto es útil si sustituye un elemento de otro. Proporcione el GUID de uno o varios roles para los que no se debe propagar eliminación. Puede obtener el GUID de la clase de relación:
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (Este ejemplo concreto no tendría ningún efecto, porque `PropagatesDelete` es `false` para los roles de la `ParentsHaveChildren` relación.)
+(Este ejemplo concreto no tendría ningún efecto, porque `PropagatesDelete` es `false` para los roles de la `ParentsHaveChildren` relación.)
 
-  En algunos casos, la existencia de un bloqueo, en el elemento o en un elemento que se eliminaría la propagación impide la eliminación. Puede usar `element.CanDelete()` para comprobar si se puede eliminar el elemento.
+En algunos casos, la existencia de un bloqueo, en el elemento o en un elemento que se eliminaría la propagación impide la eliminación. Puede usar `element.CanDelete()` para comprobar si se puede eliminar el elemento.
 
 ##  <a name="deletelinks"></a> Eliminar vínculos de relación
  Puede eliminar un vínculo de relación mediante la eliminación de un elemento de una propiedad de rol:

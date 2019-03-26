@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355794"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415701"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 Plantillas de texto T4 de tiempo de diseño permiten generar código de programa y otros archivos en el proyecto de Visual Studio. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o una base de datos que contiene información esencial sobre los requisitos de la aplicación.
@@ -34,13 +34,9 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 
  Una plantilla de texto contiene una mezcla del texto que se desea generar y el código de programa que genera partes variables del texto. El código de programa permite repetir u omitir condicionalmente partes del texto generado. El texto generado por sí mismo puede ser código de programa que formará parte de la aplicación.
 
-## <a name="creating-a-design-time-t4-text-template"></a>Crear una plantilla de texto T4 en tiempo de diseño
+## <a name="create-a-design-time-t4-text-template"></a>Crear una plantilla de texto T4 en tiempo de diseño
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Para crear una plantilla T4 en tiempo de diseño en Visual Studio
-
-1. Crear un proyecto de Visual Studio, o abrir uno existente.
-
-    Por ejemplo, en el **archivo** menú, elija **New** > **proyecto**.
+1. Cree un nuevo proyecto de Visual Studio o abrir uno existente.
 
 2. Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre que tenga la extensión **.tt**.
 
@@ -70,10 +66,11 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 6. En **el Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo que tiene la extensión **.txt**. El archivo contiene el texto generado a partir de la plantilla.
 
    > [!NOTE]
-   >  Si el proyecto es un proyecto de Visual Basic, debe hacer clic en **mostrar todos los archivos** con el fin de ver el archivo de salida.
+   > Si el proyecto es un proyecto de Visual Basic, debe hacer clic en **mostrar todos los archivos** con el fin de ver el archivo de salida.
 
-### <a name="regenerating-the-code"></a>Volver a generar el código
- Se ejecutará una plantilla, que generará el archivo subsidiario, en cualquiera de los siguientes casos:
+### <a name="regenerate-the-code"></a>Volver a generar el código
+
+Se ejecutará una plantilla, que generará el archivo subsidiario, en cualquiera de los siguientes casos:
 
 - Edite la plantilla y, a continuación, cambiar el foco a otra ventana de Visual Studio.
 
@@ -83,12 +80,11 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 
 - En **el Explorador de soluciones**, en el menú contextual de cualquier archivo, elija **ejecutar herramienta personalizada**. Utilice este método para transformar un subconjunto seleccionado de plantillas.
 
-  También puede configurar un proyecto de Visual Studio para que las plantillas se ejecuten cuando han cambiado los archivos de datos que leen. Para obtener más información, consulte [automáticamente volver a generar el código](#Regenerating).
+También puede configurar un proyecto de Visual Studio para que las plantillas se ejecuten cuando han cambiado los archivos de datos que leen. Para obtener más información, consulte [automáticamente volver a generar el código](#Regenerating).
 
-## <a name="generating-variable-text"></a>Generar texto variable
- Las plantillas de texto permiten utilizar código de programa para modificar el contenido del archivo generado.
+## <a name="generate-variable-text"></a>Generar texto Variable
 
-#### <a name="to-generate-text-by-using-program-code"></a>Para generar texto utilizando código de programa
+Las plantillas de texto permiten utilizar código de programa para modificar el contenido del archivo generado.
 
 1. Cambie el contenido del archivo `.tt`:
 
