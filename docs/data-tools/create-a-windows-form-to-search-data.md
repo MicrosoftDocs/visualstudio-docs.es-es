@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c73ab24cd2b50efd26f9a5b3ac1105325345033
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945082"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268783"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Crear Windows Forms para buscar en datos
 
@@ -31,27 +31,25 @@ Puede agregar consultas parametrizadas a cualquier TableAdapter (y controles par
 
 Las tareas ilustradas en este tutorial incluyen:
 
--   Crear un proyecto nuevo de **aplicación de Windows Forms**.
+- Crear y configurar el origen de datos en la aplicación con el **configuración origen de datos** asistente.
 
--   Crear y configurar el origen de datos en la aplicación con el **configuración origen de datos** asistente.
+- Establecer el tipo de colocación de los elementos de la **orígenes de datos** ventana.
 
--   Establecer el tipo de colocación de los elementos de la **orígenes de datos** ventana.
+- Crear controles que muestran datos arrastrando elementos desde la ventana **Orígenes de datos** hasta un formulario.
 
--   Crear controles que muestran datos arrastrando elementos desde la ventana **Orígenes de datos** hasta un formulario.
+- Agregar controles para mostrar los datos en el formulario.
 
--   Agregar controles para mostrar los datos en el formulario.
+- Completar la **generador de criterios de búsqueda** cuadro de diálogo.
 
--   Completar la **generador de criterios de búsqueda** cuadro de diálogo.
-
--   Escribir parámetros en el formulario y ejecutar la consulta con parámetros.
+- Escribir parámetros en el formulario y ejecutar la consulta con parámetros.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
-1.  Si no tiene SQL Server Express LocalDB, instálelo de desde el [página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o a través del **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la **procesamiento y almacenamiento de datos** carga de trabajo, o como un componente individual.
+1. Si no tiene SQL Server Express LocalDB, instálelo de desde el [página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o a través del **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la **procesamiento y almacenamiento de datos** carga de trabajo, o como un componente individual.
 
-2.  Instalar la base de datos de ejemplo Northwind, siga estos pasos:
+2. Instalar la base de datos de ejemplo Northwind, siga estos pasos:
 
     1. En Visual Studio, abra el **Explorador de objetos de SQL Server** ventana. (Explorador de objetos de SQL Server se instala como parte de la **procesamiento y almacenamiento de datos** carga de trabajo en el **instalador de Visual Studio**.) Expanda el **SQL Server** nodo. Haga doble clic en la instancia de LocalDB y seleccione **nueva consulta**.
 
@@ -65,17 +63,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 ## <a name="create-the-windows-forms-application"></a>Crear la aplicación de Windows Forms
 
-El primer paso es crear una aplicación de Windows Forms. Asignar un nombre al proyecto es opcional en este paso, pero daremos aquí un nombre dado que se guardará el proyecto más adelante:
-
-1. En Visual Studio, en el **archivo** menú, seleccione **New** > **proyecto**.
-
-2. Expanda el **Visual C#** o **Visual Basic** en el panel izquierdo, seleccione **Windows Desktop**.
-
-3. En el panel central, seleccione la **aplicación de Windows Forms** tipo de proyecto.
-
-4. Denomine el proyecto **WindowsSearchForm**y, a continuación, elija **Aceptar**.
-
-     El proyecto **WindowsSearchForm** se crea y se agrega al **Explorador de soluciones**.
+Cree un nuevo **aplicación de Windows Forms** proyecto para cualquiera C# o Visual Basic. Asigne al proyecto el nombre **WindowsSearchForm**.
 
 ## <a name="create-the-data-source"></a>Crear el origen de datos
 
@@ -89,9 +77,9 @@ Este paso crea un origen de datos a partir de una base de datos utilizando el as
 
 4.  En la página **Elegir la conexión de datos** realice una de las siguientes operaciones:
 
-    -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
+    - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-    -   Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.
+    - Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.
 
 5.  Si su base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y haga clic en **Siguiente**.
 
@@ -153,9 +141,9 @@ Ejecutar la aplicación abre el formulario y prepara tomar el parámetro como en
 
 Dependiendo de los requisitos de la aplicación, existen varios pasos que se pueden realizar después de crear un formulario parametrizado. Entre las mejoras que podría realizar se incluyen:
 
--   Agregar controles que muestran datos relacionados. Para obtener más información, consulte [relaciones en conjuntos de datos](relationships-in-datasets.md).
+- Agregar controles que muestran datos relacionados. Para obtener más información, consulte [relaciones en conjuntos de datos](relationships-in-datasets.md).
 
--   Modificar el conjunto de datos agregando o quitando objetos de la base de datos. Para obtener más información, vea [Crear y configurar conjuntos de datos](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Modificar el conjunto de datos agregando o quitando objetos de la base de datos. Para obtener más información, vea [Crear y configurar conjuntos de datos](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vea también
 
