@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a42396236c88bdc574a10a7557963dfc39922a1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631138"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355622"
 ---
 # <a name="msbuild-properties"></a>propiedades de MSBuild
 Las propiedades son pares nombre-valor que se pueden utilizar para configurar compilaciones. Las propiedades son útiles para pasar valores a tareas, evaluar condiciones y almacenar valores a los que se hará referencia en el archivo del proyecto.
@@ -118,7 +118,6 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
  Las propiedades pueden contener código XML arbitrario, que puede ayudar a pasar valores a las tareas o a mostrar información de registro. En el ejemplo siguiente se muestra la propiedad `ConfigTemplate`, que tiene un valor que contiene código XML y referencias a otras propiedades. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] reemplaza dichas referencias con los respectivos valores de propiedad. Los valores de propiedad se asignan en el orden en que aparecen. Por consiguiente, en este ejemplo, `$(MySupportedVersion)`, `$(MyRequiredVersion)`y `$(MySafeMode)` ya deben haberse definido.
 
 ```xml
-
 <PropertyGroup>
     <ConfigTemplate>
         <Configuration>

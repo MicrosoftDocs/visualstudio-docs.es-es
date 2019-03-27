@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925415"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324739"
 ---
 # <a name="warnings-and-errors"></a>Advertencias y errores
 
@@ -27,26 +27,26 @@ ms.locfileid: "55925415"
   * [MaxCalls superado](#maxcalls-exceeded)
   * [MaxStack superado](#maxstack-exceeded)
   * [MaxRuns superado](#maxruns-exceeded)
-  * [MaxRunsWithoutNewTests superado](#maxrunswithoutnewtests-exceeded)<p />
+  * [MaxRunsWithoutNewTests superado](#maxrunswithoutnewtests-exceeded)
 
 * **Solución de restricciones**
-  * [No se puede concretizar la solución](#cannot-concretize-solution)<p />
+  * [No se puede concretizar la solución](#cannot-concretize-solution)
 
 * **Dominios**
   * [Se necesita ayuda para construir el objeto](#help-construct)
   * [Se necesita ayuda para buscar tipos](#help-types)
-  * [Tipo utilizable estimado](#usable-type-guessed)<p />
+  * [Tipo utilizable estimado](#usable-type-guessed)
 
 * **Ejecución**
   * [Error inesperado durante la exploración](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **Instrumentación**
   * [Método no instrumentado llamado](#uninstrumented-method-called)
   * [Método externo llamado](#external-method-called)
   * [Método sin capacidad de instrumentación llamado](#uninstrumentable-method-called)
   * [Problema de capacidad de prueba](#testability-issue)
-  * [Limitación](#limitation)<p />
+  * [Limitación](#limitation)
 
 * **Intérprete**
   * [Error de coincidencia de llamadas observado](#observed-call-mismatch)

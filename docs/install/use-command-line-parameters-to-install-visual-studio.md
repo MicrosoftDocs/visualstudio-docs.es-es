@@ -15,12 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371574ad6c49d4601b571c2378c57fd399e6e715
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: e8d0fd308d7a5dcdea926cbd710f1a7a362738f1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983080"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325323"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parámetros de la línea de comandos para instalar Visual Studio
 
