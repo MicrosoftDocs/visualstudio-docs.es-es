@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee70d3cf580caaea4207f1d830ef1500f18942ff
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221400"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325219"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
 
@@ -37,7 +37,7 @@ Estas características están disponibles en una instalación de Visual Studio.
 
 ## <a name="enable-predictive-intellisense"></a>Habilitar IntelliSense predictivo
 
-IntelliSense predictivo limita el número de resultados que se muestran en la lista desplegable de IntelliSense para que vea únicamente los resultados que son relevantes en el contexto. Por ejemplo, si escribe <code>int x =</code> e invoca la lista desplegable de IntelliSense, solo verá números enteros o funciones que devuelven enteros. IntelliSense predictivo está desactivado de forma predeterminada.
+IntelliSense predictivo limita el número de resultados que se muestran en la lista desplegable de IntelliSense para que vea únicamente los resultados que son relevantes en el contexto. Por ejemplo, si escribe `int x =` e invoca la lista desplegable de IntelliSense, solo verá números enteros o funciones que devuelven enteros. IntelliSense predictivo está desactivado de forma predeterminada.
 
 ::: moniker range="vs-2017"
 

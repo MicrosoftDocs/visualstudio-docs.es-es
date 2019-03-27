@@ -13,17 +13,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5b994e14dc63d9fabe0c02b70f5df584c03067e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fbe28f56b5dfd64b90bef52437b6bd6c2e15922f
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752414"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355462"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Tasa muy alta de contenciones de bloqueo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [DA0039: Muy alta frecuencia de contenciones de bloqueo](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [DA0039: muy alta frecuencia de contenciones de bloqueo](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions) en docs.microsoft.com.  
   
 |||  
 |-|-|  

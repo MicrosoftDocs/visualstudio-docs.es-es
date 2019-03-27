@@ -11,27 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 5ebc7c3c172502198f56a8e35107f37d51ef2509
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194210"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355729"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuración remota de ASP.NET en un equipo remoto de IIS
 Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y ejecutar las herramientas remotas en el equipo donde ha implementado la aplicación y, a continuación, adjunte a su aplicación en ejecución desde Visual Studio.
 
 ![Componentes del depurador remoto](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Esta guía explica cómo configurar y configurar una aplicación de Visual Studio 2017 MVC de ASP.NET 4.5.2, implementarla en IIS y asociar al depurador remoto de Visual Studio.
+Esta guía explica cómo configurar y configurar una aplicación de Visual Studio ASP.NET MVC 4.5.2, implementarla en IIS y asociar al depurador remoto de Visual Studio.
 
 > [!NOTE]
 > En equipo remoto, depurar en su lugar, ASP.NET Core, vea [remoto depurar ASP.NET Core en un equipo de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Para Azure App Service, fácilmente puede implementar y depurar en una instancia preconfigurada de IIS mediante el [Snapshot Debugger](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 necesario) o por [asociar el depurador del explorador de servidores](../debugger/remote-debugging-azure.md).
 
+## <a name="prerequisites"></a>Requisitos previos
+
+::: moniker range=">=vs-2019"
+2019 de Visual Studio es necesario seguir los pasos mostrados en este artículo.
+::: moniker-end
+::: moniker range="vs-2017"
+Se requiere Visual Studio 2017 para seguir los pasos que se muestra en este artículo.
+::: moniker-end
+
 Estos procedimientos se han probado en estas configuraciones de servidor:
 * Windows Server 2012 R2 e IIS 8 (para Windows Server 2008 R2, los pasos del servidor son diferentes)
 
-## <a name="requirements"></a>Requisitos
+## <a name="network-requirements"></a>Requisitos de red
 
 El depurador remoto se admite en Windows Server a partir de Windows Server 2008 Service Pack 2. Para obtener una lista completa de requisitos, consulte [requisitos](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -48,7 +57,14 @@ En este artículo incluye pasos sobre cómo configurar una configuración básic
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Creación de ASP.NET 4.5.2 aplicación en el equipo de Visual Studio
 
-1. Cree una nueva aplicación de MVC ASP.NET (**Archivo > Nuevo > proyecto**, a continuación, seleccione <strong>Visual C# > Web > aplicación Web ASP.NET. En el **ASP.NET 4.5.2</strong> sección plantillas, seleccione **MVC**. Asegúrese de que **habilitar la compatibilidad con Docker** no está seleccionada y que **autenticación** está establecido en **sin autenticación**. Denomine el proyecto **MyASPApp**.)
+1. Cree una nueva aplicación de MVC ASP.NET
+
+    ::: moniker range=">=vs-2019"
+    En Visual Studio 2019, escriba **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **asp.net**, elija **plantillas**, a continuación, elija **crear nuevo ASP.NET Web Application (.NET Marco de trabajo)**. En el cuadro de diálogo que aparece, denomine el proyecto **MyASPApp**y, a continuación, elija **crear**. Seleccione **MVC** y elija **crear**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Para hacer esto en Visual Studio 2017, elija **archivo > Nuevo > proyecto**, a continuación, seleccione **Visual C# > Web > aplicación Web ASP.NET**. En la sección de plantillas **ASP.NET 4.5.2** , seleccione **MVC**. Asegúrese de que **habilitar la compatibilidad con Docker** no está seleccionada y que **autenticación** está establecido en **sin autenticación**. Denomine el proyecto **MyASPApp**.)
+    ::: moniker-end
 
 2. Abra el archivo HomeController.cs y establezca un punto de interrupción en el método `About()` .
 
@@ -165,7 +181,7 @@ También puede publicar y distribuir la aplicación mediante el sistema de archi
 
 ## <a name="BKMK_msvsmon"></a> Descargue e instale las herramientas remotas en Windows Server
 
-En este tutorial, estamos usando Visual Studio 2017.
+Descargue la versión de las herramientas remotas que coincida con su versión de Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -186,7 +202,14 @@ Para obtener información acerca de cómo ejecutar el depurador remoto como un s
     > [!TIP]
     > En Visual Studio 2017 y versiones posteriores, puede volver a adjuntar al mismo proceso adjuntado previamente, utilizando **Depurar > adjuntar al proceso...** Mayús+Alt+P
 
-3. Establezca el campo Calificador en **\<nombre de equipo remoto>:4022**.
+3. Establezca el campo calificador en  **\<nombre del equipo remoto >: puerto**.
+
+    ::: moniker range=">=vs-2019"
+    **\<nombre del equipo remoto >: 4024** 2019 de Visual Studio
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<nombre del equipo remoto >: 4022** en Visual Studio 2017
+    ::: moniker-end
 4. Haga clic en **Actualizar**.
     Debería ver que algunos procesos aparecen en la ventana **Procesos disponibles** .
 
@@ -215,10 +238,14 @@ En la mayoría de las instalaciones, se abren los puertos requeridos por la inst
 
 Puertos necesarios:
 
-- 80 - necesarias para IIS
-- 8172: (opcional) necesario para que Web Deploy implementar la aplicación desde Visual Studio
-- 4022 - necesarios para la depuración remota desde Visual Studio 2017 (consulte [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) para obtener información detallada.
-- UDP 3702 - puerto de detección (opcional) permite la **buscar** botón al asociar el depurador remoto en Visual Studio.
+* 80 - necesarias para IIS
+::: moniker range=">=vs-2019"
+* 4024: necesario para la depuración remota de Visual Studio de 2019 (consulte [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) para obtener más información).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 - necesarios para la depuración remota desde Visual Studio 2017 (consulte [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) para obtener más información).
+::: moniker-end
+* UDP 3702 - puerto de detección (opcional) permite la **buscar** botón al asociar el depurador remoto en Visual Studio.
 
 1. Para abrir un puerto en Windows Server, abra el **iniciar** menú, busque **Firewall de Windows con seguridad avanzada**.
 

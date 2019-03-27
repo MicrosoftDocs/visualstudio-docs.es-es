@@ -15,12 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fcaab3c02524584df5349d481e59067a7253aa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 4cd62e73d3a10eded5d74eaffc5486e237ca02ca
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982667"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324966"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio
 

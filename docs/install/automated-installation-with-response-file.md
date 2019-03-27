@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7547a6bb4670640733a64e7a60bfc92076df1460
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0fdd1560f4b32f6c0b555e1786a766d034184f91
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982979"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415643"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Definición de la configuración en un archivo de respuesta
 
@@ -48,6 +50,8 @@ Puede actualizar el archivo `response.json` que se crea en una carpeta de diseñ
 
 El archivo `response.json` base de un diseño debe tener un aspecto similar al ejemplo siguiente, salvo por el hecho de que incluiría el valor del producto y el canal que quiere instalar:
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -58,11 +62,29 @@ El archivo `response.json` base de un diseño debe tener un aspecto similar al e
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 Cuando crea o actualiza un diseño, también se crea un archivo response.template.json.  Este archivo contiene todos los identificadores de idioma, componentes y carga de trabajo que pueden usarse.  Este archivo se proporciona como una plantilla para todo lo que podría incluirse en una instalación personalizada.  Los administradores pueden usar este archivo como un punto inicial para un archivo de respuesta personalizado.  Simplemente quite los identificadores de lo que no quiere instalar y guárdelo en su propio archivo de respuesta.  No personalice el archivo response.template.json o sus cambios se perderán cuando se actualice el diseño.
 
 ## <a name="example-layout-response-file-content"></a>Ejemplo de contenido del archivo de respuesta de diseño
 
 En el siguiente ejemplo se instala Visual Studio Enterprise con seis cargas de trabajo y componentes comunes, con los idiomas inglés y francés para la interfaz de usuario. Puede usar este ejemplo como una plantilla; simplemente cambie las cargas de trabajo y los componentes que quiere instalar:
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -94,6 +116,43 @@ En el siguiente ejemplo se instala Visual Studio Enterprise con seis cargas de t
     ]
 }
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

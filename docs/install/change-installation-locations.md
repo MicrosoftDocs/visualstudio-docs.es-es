@@ -14,16 +14,28 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 842fed287a6035684534c3d735d146e1b9a0fbfb
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983902"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324979"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Selección de las ubicaciones de instalación en Visual Studio
 
+::: moniker range="vs-2017"
+
 **Novedades de la versión 15.7**: Puede reducir la huella de instalación de Visual Studio en la unidad del sistema si cambia la ubicación de algunos de sus archivos. En concreto, puede usar otra ubicación para la caché de descarga, los componentes compartidos, los SDK y los archivos de herramientas.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Puede reducir la huella de instalación de Visual Studio en la unidad del sistema si cambia la ubicación de algunos de sus archivos. En concreto, puede usar otra ubicación para la caché de descarga, los componentes compartidos, los SDK y los archivos de herramientas.
+
+::: moniker-end
 
    > [!NOTE]
    > Hay algunas herramientas y SDK que tienen diferentes reglas sobre dónde se pueden instalar. Estas herramientas y SDK se instalan en la unidad del sistema aunque elija otra ubicación.

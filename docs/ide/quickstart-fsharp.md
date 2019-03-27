@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b4b6a9bcc9828d0fdeb76f3f74732d8d5496e59c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f0fab988185efef6baf7e39c0b4250ada88b5fbd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069767"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322249"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Inicio rápido: Usar Visual Studio para crear el primer servicio web de ASP.NET Core en F\#
 
