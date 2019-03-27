@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671af69cf31ad1b8b5adafa413e4f20a8761d5ce
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e6d72edaf889aaf682f40a36278ea1fdf05ff989
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526043"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475999"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Empezar a depurar aplicaciones multiproceso (C#, Visual Basic, C++)
 
@@ -38,21 +38,33 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
 
 ## <a name="create-a-multithreaded-app-project"></a>Crear un proyecto de aplicación multiproceso
 
-1.  En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. Abra Visual Studio y cree un nuevo proyecto.
 
-     Aparecerá el cuadro de diálogo **Nuevo proyecto** .
+    ::: moniker range=">=vs-2019"
+    Tipo **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola** (o **c ++**), elija **plantillas**y, a continuación:
+    
+    - Para C# o Visual Basic, elija **crear nuevo proyecto de aplicación de consola (.NET Framework)** cualquiera C# o Visual Basic. En el cuadro de diálogo que aparece, elija **crear**.
+    - Para C++, elija **crear nuevo proyecto de aplicación de consola** para C++. En el cuadro de diálogo que aparece, elija **crear**.
 
-2.  Seleccione un idioma: **Visual C#** , **Visual C++**, o **Visual Basic**.
+    A continuación, escriba un nombre como **MyThreadWalkthroughApp** y haga clic en **crear**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo de la **nuevo proyecto** cuadro de diálogo, seleccione lo siguiente:
 
-3.  En **Windows Desktop**, elija **aplicación de consola**.
+    - Para un C# aplicación, en **Visual C#** , elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)**.
+    - Para una aplicación de Visual Basic, en **Visual Basic**, elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)**.
+    - Para una aplicación de C++, en **Visual C++**, elija **Windows Desktop**,, y, a continuación, elija **aplicación de consola Windows**.
 
-4.  En el **nombre** , introduzca MyThreadWalkthroughApp.
+    A continuación, escriba un nombre como **MyThreadWalkthroughApp** y haga clic en **Aceptar**.
+    ::: moniker-end
 
-5.  Seleccione **Aceptar**.
+    Si no ve el **aplicación de consola** plantilla de proyecto, vaya a **herramientas** > **obtener herramientas y características...** , que abre el instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
-     Aparecerá un nuevo proyecto de consola. Una vez creado el proyecto, aparecerá un archivo de origen. Dependiendo del lenguaje que ha elegido, el archivo de código fuente podría denominarse *Program.cs*, *MyThreadWalkthroughApp.cpp*, o *Module1.vb*.
+1. Seleccione **Aceptar**.
 
-6.  Elimine el código que aparece en el archivo de origen y reemplácelo por la lista debajo del código de ejemplo correspondiente.
+    Aparecerá un nuevo proyecto de consola. Una vez creado el proyecto, aparecerá un archivo de origen. Dependiendo del lenguaje que ha elegido, el archivo de código fuente podría denominarse *Program.cs*, *MyThreadWalkthroughApp.cpp*, o *Module1.vb*.
+
+1. Elimine el código que aparece en el archivo de origen y reemplácelo por la lista debajo del código de ejemplo correspondiente.
 
     ```csharp
     using System;
@@ -187,9 +199,9 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
     End Class
     ```
 
-7.  En el menú **Archivo**, seleccione **Guardar todo**.
+1. En el menú **Archivo**, seleccione **Guardar todo**.
 
-8. (Sólo Visual Basic) En el Explorador de soluciones (panel derecho), haga clic en el nodo del proyecto, elija **propiedades**. En el **aplicación** , modifique la **objeto Startup** a **Simple**.
+1. (Sólo Visual Basic) En el Explorador de soluciones (panel derecho), haga clic en el nodo del proyecto, elija **propiedades**. En el **aplicación** , modifique la **objeto Startup** a **Simple**.
 
 ## <a name="debug-the-multithreaded-app"></a>Depurar la aplicación multiproceso
 

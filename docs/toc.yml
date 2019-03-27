@@ -229,7 +229,7 @@ items:
           href: ide/how-to-manually-create-web-templates.md
         - name: Solucionar problemas de plantillas
           href: ide/how-to-troubleshoot-templates.md
-      - name: Buscar y organizar plantillas de proyecto y elemento
+      - name: Búsqueda de plantillas de proyectos y elementos
         href: ide/how-to-locate-and-organize-project-and-item-templates.md
       - name: Personalización de plantillas de proyectos y elementos
         href: ide/customizing-project-and-item-templates.md
@@ -382,7 +382,7 @@ items:
             href: ide/reference/convert-var-to-explicit-type.md
           - name: Usar expresión lambda o cuerpo de bloques
             href: ide/reference/use-block-body-lambda.md
-          - name: Parámetros y valores no usados
+          - name: Asignaciones, variables y parámetros de valores sin usar
             href: ide/reference/unused-values-parameters.md
           - name: Encapsulado, sangría y alineación de parámetros
             href: ide/reference/wrap-align-indent-parameters.md
@@ -1195,9 +1195,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 9df9ac7c4440ae6d968f0925a086921bf49a309d
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8fc8123e3c9b2a77ba4bd05dc3a7efa8bcfa652c
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324044"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416406"

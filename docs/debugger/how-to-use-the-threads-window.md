@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b205a92607d55b9999a846c860235c7deb5b13ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 80ef787bb9293bb26ba9ab706abf805005153752
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680222"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476038"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Tutorial: Depurar una aplicación multiproceso mediante la ventana de subprocesos (C#, Visual Basic, C++)
 
@@ -34,15 +34,27 @@ Completar este tutorial dura sólo unos minutos y le ayuda a familiarizarse con 
 
 Cree el siguiente proyecto de aplicación multiproceso para utilizarla en este tutorial:
 
-1. En Visual Studio, seleccione **Archivo** > **Nuevo** > **Proyecto**.
+1. Abra Visual Studio y cree un nuevo proyecto.
 
-1. En el **nuevo proyecto** cuadro de diálogo:
-   - Para un C# aplicación, seleccione **Visual C#**    >  **aplicación de consola (.NET Framework)**.
-   - Para una aplicación de C++, seleccione **Visual C++** > **aplicación de consola Windows**.
+    ::: moniker range=">=vs-2019"
+    Tipo **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola** (o **c ++**), elija **plantillas**y, a continuación:
+    
+    - Para C#, elija **crear nuevo proyecto de aplicación de consola (.NET Framework)** para C#. En el cuadro de diálogo que aparece, elija **crear**.
+    - Para C++, elija **crear nuevo proyecto de aplicación de consola**. En el cuadro de diálogo que aparece, elija **crear**.
 
-1. Nombre de la aplicación MyThreadWalkthroughApp y, a continuación, seleccione **Aceptar**.
+    A continuación, escriba un nombre como **MyThreadWalkthroughApp** y haga clic en **crear**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo de la **nuevo proyecto** cuadro de diálogo, seleccione lo siguiente:
+    - Para un C# aplicación, en **Visual C#** , elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)**.
+    - Para una aplicación de C++, en **Visual C++**, elija **Windows Desktop**,, y, a continuación, elija **aplicación de consola Windows**.
 
-   Aparece el nuevo proyecto en **el Explorador de soluciones**, y un archivo de origen denominado *Program.cs* o *MyThreadWalkthroughApp.cpp* se abre en la ventana de código fuente.
+    A continuación, escriba un nombre como **MyThreadWalkthroughApp** y haga clic en **Aceptar**.
+    ::: moniker-end
+
+    Si no ve el **aplicación de consola** plantilla de proyecto, vaya a **herramientas** > **obtener herramientas y características...** , que abre el instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+
+    Aparece el nuevo proyecto en **el Explorador de soluciones**, y un archivo de origen denominado *Program.cs* o *MyThreadWalkthroughApp.cpp* se abre en la ventana de código fuente.
 
 1. Reemplace el código en el archivo de origen con la C# o código de ejemplo de C++ desde [empezar a depurar aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md).
 
