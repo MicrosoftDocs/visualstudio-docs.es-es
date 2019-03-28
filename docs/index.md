@@ -864,7 +864,7 @@ Aplicación web con ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Desarrollo móvil con JavaScript</h3>
-                                                    <p>Cree aplicaciones multiplataforma para iOS, Android o mediante el marco Apache Cordova.</p>
+                                                    <p>(Solo Visual Studio 2017 y Visual Studio 2015) Cree aplicaciones multiplataforma para iOS, Android o Windows mediante el marco Apache Cordova.</p>
                                                 </div>
                                             </div>
                                         </div>
