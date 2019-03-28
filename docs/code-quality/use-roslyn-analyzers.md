@@ -1,6 +1,6 @@
 ---
 title: Supresión y la gravedad de regla de analizador
-ms.date: 03/26/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873507"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515342"
 ---
 # <a name="use-roslyn-analyzers"></a>Usar analizadores de Roslyn
 
@@ -46,12 +46,17 @@ Los iconos junto a cada diagnóstico en **el Explorador de soluciones** correspo
 
 ## <a name="rule-sets"></a>Conjuntos de reglas
 
-Un [conjunto de reglas](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) es un archivo XML que almacena el estado de gravedad y la supresión para el diagnóstico individual. Conjuntos de reglas se aplican a un proyecto único y un proyecto puede tener varios conjuntos de reglas. Para ver el conjunto en el editor de reglas activas, haga doble clic en el **analizadores** nodo **el Explorador de soluciones** y seleccione **Abrir conjunto de reglas activo**. Si se trata de establecer la primera vez que se tiene acceso a la regla, un archivo denominado  *\<NombreDelProyecto > .ruleset* se agrega al proyecto y aparece en **el Explorador de soluciones**.
+Un [conjunto de reglas](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) es un archivo XML que almacena el estado de gravedad y la supresión para el diagnóstico individual.
 
 > [!NOTE]
-> Conjuntos de reglas incluyen análisis estático de código (binario) y las reglas del analizador de Roslyn.
+> Conjuntos de reglas pueden incluir reglas de análisis estático de código (binario) y los analizadores de Roslyn.
 
-Puede cambiar la regla activa establecida para un proyecto en el **análisis de código** ficha de propiedades de un proyecto. Seleccione el conjunto de reglas en el **ejecutar este conjunto de reglas** lista desplegable. También puede abrir el conjunto de reglas de la **análisis de código** página de propiedades seleccionando **abrir**.
+Para editar la regla activa establecida en el editor de conjunto de reglas, haga doble clic en el **referencias** > **analizadores** nodo **el Explorador de soluciones** y seleccione **Abrir el conjunto de reglas activo**. Si es la primera vez que se está editando el conjunto de reglas, Visual Studio realiza una copia de la regla predeterminada de archivo de conjunto, lo denomina  *\<NombreDelProyecto > .ruleset*y lo agrega al proyecto. Esta regla personalizada conjunto también se convierte en la regla activa establecida para el proyecto.
+
+Para cambiar la regla activa establecida para un proyecto, vaya a la **análisis de código** ficha de propiedades de un proyecto. Seleccione el conjunto de reglas de la lista bajo **ejecutar este conjunto de reglas**. Para abrir el conjunto de reglas, seleccione **abrir**.
+
+> [!NOTE]
+> Los proyectos de .NET core y .NET Standard no admiten los comandos de menú para conjuntos de reglas **el Explorador de soluciones**, por ejemplo, **Abrir conjunto de reglas activo**. Para especificar una regla no predeterminado establecida para un proyecto .NET Core o .NET Standard, manualmente [agregar el **CodeAnalysisRuleSet** propiedad al archivo de proyecto](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Puede configurar las reglas incluidas en el conjunto de reglas en Visual Studio UI del editor de conjunto de reglas.
 
 ## <a name="rule-severity"></a>Gravedad de las reglas
 
@@ -79,7 +84,7 @@ Puede cambiar la gravedad de una regla de **el Explorador de soluciones**, o den
 
 ![Archivo de conjunto de reglas en el Explorador de soluciones](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>Para establecer la gravedad de regla desde el Explorador de soluciones
+### <a name="set-rule-severity-from-solution-explorer"></a>Gravedad del conjunto de reglas desde el Explorador de soluciones
 
 1. En **el Explorador de soluciones**, expanda **referencias** > **analizadores** (**dependencias**  >  **Analizadores** para proyectos de .NET Core).
 
@@ -89,7 +94,7 @@ Puede cambiar la gravedad de una regla de **el Explorador de soluciones**, o den
 
    La gravedad de la regla se guarda en el archivo de conjunto de reglas activo.
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Para establecer la regla de archivo de conjunto de gravedad de la regla
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Gravedad del conjunto de reglas en el archivo de conjunto de reglas
 
 1. Abrir el [conjunto de reglas](analyzer-rule-sets.md) archivo haciendo doble clic en él en **el Explorador de soluciones**, seleccione **Abrir conjunto de reglas activo** en el menú contextual de la **analizadores** nodo, o bien seleccionando **abierto** en el **análisis de código** página de propiedades del proyecto.
 
