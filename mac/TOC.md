@@ -1,7 +1,7 @@
 # [Visual Studio para Mac](index.yml)
-# [Paseo por el IDE](/visualstudio/mac/ide-tour/)
+# [Paseo por el IDE](ide-tour.md)
 
-# [Instalación](/visualstudio/mac/installation/)
+# [Instalación](installation.md)
 ## [Instalar y usar detrás de un firewall o proxy](install-behind-a-firewall-or-proxy-server.md)
 ## [Instalar una versión preliminar](install-preview.md)
 ## [Actualizar](update.md)
