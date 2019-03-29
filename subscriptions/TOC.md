@@ -68,6 +68,7 @@
 #### [Búsqueda de una suscripción](search-license.md)
 #### [Exportación de suscripciones](exporting-subscriptions.md)
 #### [Sobreasignaciones](handle-overclaimed-license.md)
+#### [Uso máximo](maximum-usage.md)
 #### [Suscripciones expiradas](handle-expired-license.md)
 #### [Suscriptores con inicios de sesión con el correo electrónico personal](personal-email-sign-ins.md)
 ## Adquisición de suscripciones de Visual Studio
