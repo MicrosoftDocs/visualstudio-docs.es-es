@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194423"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790165"
 ---
 # <a name="create-an-options-page"></a>Crear una página de opciones
 
@@ -101,7 +101,7 @@ Este tutorial crea una página Herramientas/Opciones sencilla que usa una cuadr�
 
      En el panel izquierdo, verá **My Category**. (Categorías de las opciones se enumeran en orden alfabético, por lo que debe aparecer sobre mitad abajo en la lista.) Abra **My Category** y, a continuación, haga clic en **mi página de cuadrícula**. La cuadrícula de opciones aparece en el panel derecho. La categoría de propiedad es **Mis opciones**, y es el nombre de propiedad **mi opción entero**. La descripción de la propiedad **mi opción entero**, aparece en la parte inferior del panel. Cambie el valor de su valor inicial de 256 a otra cosa. Haga clic en **Aceptar**y, a continuación, vuelva a abrir **mi página de cuadrícula**. Puede ver que el nuevo valor se conserva.
 
-     La página de opciones también está disponible a través de inicio rápido de Visual Studio. En la ventana de inicio rápido en la esquina superior derecha del IDE, escriba **My Category** y verá **My Category -> Mi página de cuadrícula** aparece en la lista desplegable.
+     La página de opciones también está disponible a través del cuadro de búsqueda de Visual Studio. En el cuadro de búsqueda en la parte superior del IDE, escriba **My Category** y verá **My Category -> Mi página de cuadrícula** enumerados en los resultados.
 
 ## <a name="create-a-tools-options-custom-page"></a>Crear una página personalizada de opciones de herramientas
 

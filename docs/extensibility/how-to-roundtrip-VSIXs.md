@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323820"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790425"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Filtrar Crear extensiones compatibles con Visual Studio 2017 y Visual Studio 2015
 
@@ -95,7 +95,7 @@ Es necesario indicar a Visual Studio qué versiones de destino para la creación
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Agregar requisitos previos para la *extension.vsixmanifest* archivo
 
-Requisitos previos son una característica nueva con Visual Studio 2017. En este caso, el Editor de núcleo de Visual Studio es necesario como requisito previo. Puesto que el Diseñador de Visual Studio 2015 VSIX no controla el nuevo `Prerequisites` sección, deberá modificar esta parte manualmente en el código XML. Como alternativa, puede abrir Visual Studio 2017 y utilizar el Diseñador de manifiestos actualizado para insertar los requisitos previos.
+El Editor de núcleo de Visual Studio es necesario como requisito previo. Abra Visual Studio y utilizar el Diseñador de manifiestos actualizado para insertar los requisitos previos.
 
 Para hacerlo manualmente:
 
@@ -112,7 +112,7 @@ Para hacerlo manualmente:
 * Guarde y cierre el archivo.
 
 > [!NOTE]
-> Si decide realizar esto con el diseñador VSIX en Visual Studio 2017, deberá editar manualmente la versión de requisitos previos para asegurarse de que es compatible con todas las versiones de Visual Studio 2017. Esto es porque el diseñador, inserta la versión mínima como la versión actual de Visual Studio (por ejemplo, 15.0.26208.0). Sin embargo, dado que otros usuarios tengan una versión anterior, le interesará editar manualmente este 15.0.
+> Deberá editar manualmente la versión de requisitos previos para asegurarse de que es compatible con todas las versiones de Visual Studio 2017. Esto es porque el diseñador, inserta la versión mínima como la versión actual de Visual Studio (por ejemplo, 15.0.26208.0). Sin embargo, dado que otros usuarios tengan una versión anterior, le interesará editar manualmente este 15.0.
 
 En este momento, el archivo de manifiesto debe tener un aspecto similar al siguiente:
 
