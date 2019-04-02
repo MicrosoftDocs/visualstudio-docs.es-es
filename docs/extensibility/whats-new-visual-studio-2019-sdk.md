@@ -1,6 +1,6 @@
 ---
 title: Novedades en el SDK de Visual Studio 2019 | Microsoft Docs
-ms.date: 02/19/2019
+ms.date: 03/29/2019
 ms.topic: conceptual
 ms.assetid: 4a07607b-0c87-4866-acd8-6d68358d6a47
 author: gregvanl
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8534a142177bdd27bf15f2fe4c0e62cbe60384e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: daa4203ccdcbce89f1eb09efdd9433210bcbc987
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844545"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856650"
 ---
 # <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Novedades en el SDK de Visual Studio de 2019
 
@@ -26,3 +26,41 @@ Los usuarios verán ahora una advertencia si alguno de sus extensiones instalada
 ## <a name="single-unified-visual-studio-sdk"></a>Única y unificada SDK de Visual Studio
 
 Ahora puede obtener todos los recursos del SDK de Visual Studio a través de un único paquete NuGet [Microsoft.VisualStudio.SDK](https://www.nuget.org/packages/microsoft.visualstudio.sdk).
+
+## <a name="editor-registration-enhancements"></a>Mejoras en el registro del Editor
+
+Desde su creación, Visual Studio admite el registro del editor personalizado donde un editor puede declarar su afinidad para extensiones específicas (por ejemplo, .xaml y .rc), o que es adecuado para cualquier extensión (. *). A partir de Visual Studio 2019 versión 16.1, se puede ampliar la compatibilidad para el registro del editor.
+
+### <a name="filenames"></a>Nombres de archivo
+
+Además, o bien, en lugar de, registrar la compatibilidad para una extensión de archivo determinado, un editor puede registrar que admite nombres de archivo específico mediante la aplicación de la nueva `ProvideEditorFilename` al paquete del editor de atributos.
+
+Por ejemplo, un editor que admite todos los archivos .json se aplicaría esta `ProvideEditorExtension` a su paquete de atributo:
+
+```cs
+[ProvideEditorExtension(typeof(MyEditor), ".json", MyEditor.Priority)]
+```
+
+A partir 16.1, si MyEditor solo admite un par de archivos .json conocido, lo puede en su lugar aplicarlas `ProvideEditorFilename` atributos a su paquete:
+
+```cs
+[ProvideEditorFilename(typeof(MyEditor), "particular.json", MyEditor.Priority)]
+[ProvideEditorFilename(typeof(MyEditor), "special.json",    MyEditor.Priority)]
+```
+
+### <a name="uicontexts"></a>UIContexts
+
+Un editor puede registrar uno o varios UIContexts que representan cuando está habilitada. Se registran UIContexts aplicando una o varias instancias de `ProvideEditorUIContextAttribute` al paquete que se registra en el editor.
+
+Si un editor tiene UIContexts registrados:
+
+- Si al menos uno de sus UIContexts registrado está activo cuando se abre un archivo con la extensión especificada, el editor se incluye en la búsqueda del editor.
+- Si ninguno de los UIContexts registrado está activo, el editor no está incluido en la búsqueda del editor.
+
+Si un editor no registra ningún UIContexts, siempre se incluye en la búsqueda del editor de esa extensión.
+
+Por ejemplo, si un editor solo está disponible cuando un C# proyecto está abierto, puede declarar esta afinidad aplicando un `ProvideEditorUIContext` atributo:
+
+```cs
+[ProvideEditorUIContext(typeof(MyEditor), KnownUIContexts.CSharpProjectContext)]
+```
