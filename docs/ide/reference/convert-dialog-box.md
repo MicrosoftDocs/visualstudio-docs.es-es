@@ -1,5 +1,5 @@
 ---
-title: Convertir (cuadro de diálogo)
+title: Convertidores de proyectos
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,24 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beabf926eb0f6496857d7fc552fe4924202647de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f720e842bb1f13aa726773af0dec499d32bfcc2d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927599"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416076"
 ---
 # <a name="convert-dialog-box"></a>Convertir (cuadro de diálogo)
 
-El cuadro de diálogo **Convertir** le permite seleccionar una herramienta de conversión para crear un proyecto a partir de uno anterior, como cuando se crea un proyecto de [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] a partir de un proyecto de Visual Basic 6. También puede usar el [Convertidor de proyectos de Visual Studio](https://github.com/ssvaidya/VSProjectConverter) para actualizar los proyectos creados en versiones anteriores de Visual Studio.
-
-## <a name="open-the-convert-dialog-box"></a>Abrir el cuadro de diálogo Convertir
-
-1.  En la barra de menús, elija **Archivo**, **Abrir**y **Convertir**.
-
-     Verá una lista de las herramientas de conversión de código disponibles.
-
-2.  Seleccione la herramienta que sea adecuada para su aplicación.
+El cuadro de diálogo **Convertir** se utilizaba en versiones anteriores de Visual Studio y ahora está en desuso.
 
 ## <a name="see-also"></a>Vea también
 

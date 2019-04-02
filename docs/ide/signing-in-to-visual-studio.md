@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840836"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325112"
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
@@ -44,7 +44,7 @@ Esta es una lista completa de lo que puede esperar y lo que puede hacer después
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Cómo iniciar sesión en Visual Studio
 
-La primera vez que inicia Visual Studio, se le pide que inicie sesión y que proporcione información de registro básica. Debe elegir una cuenta Microsoft o una cuenta profesional o educativa que mejor le represente. Si no dispone de ninguna, puede crear una cuenta de Microsoft de forma gratuita. Vea [¿Cómo suscribirse para obtener una cuenta Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+La primera vez que abre Visual Studio, se le pide que inicie sesión y que proporcione información de registro básica. Debe elegir una cuenta Microsoft o una cuenta profesional o educativa que mejor le represente. Si no dispone de ninguna, puede crear una cuenta de Microsoft de forma gratuita. Vea [¿Cómo suscribirse para obtener una cuenta Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
 A continuación, elija la configuración de UI y el tema de color que desea usar en Visual Studio. Visual Studio recordará la configuración y la sincronizará en todos los entornos de Visual Studio en los que ha iniciado sesión. Para obtener una lista de las configuraciones sincronizadas, vea [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). Puede cambiar la configuración más adelante si abre el menú **Herramientas** > **Opciones** en Visual Studio.
 

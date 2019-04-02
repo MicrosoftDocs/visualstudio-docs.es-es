@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b704386f1a1c26530cd24fc4bc2d3e355c9d7e03
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151250"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475960"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Inicio rápido: Depurar con C++ mediante el depurador de Visual Studio
 
@@ -25,13 +25,13 @@ El depurador de Visual Studio proporciona muchas características de gran eficac
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
-1. En Visual Studio, elija **Archivo > Nuevo > Proyecto**.
+1. Abra Visual Studio y cree un proyecto.
 
     ::: moniker range=">=vs-2019"
-    Aparece el cuadro de diálogo **Crear un proyecto nuevo**. Escriba **asp.net** en el cuadro de búsqueda para filtrar los resultados, elija **Aplicación web ASP.NET Core** y haga clic en **Siguiente**. Luego escriba un nombre como **MyDbgApp** y elija **Crear**.
+    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **c++**, elija **Plantillas** y luego, **Crear proyecto de aplicación de consola**. En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Aparece el cuadro de diálogo **Nuevo proyecto**. Bajo **Visual C++**, seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola Windows** en el panel central. Luego escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C++**, elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola Windows**. Luego escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
     ::: moniker-end
 
     Si no ve la plantilla de proyecto **Aplicación de consola Windows**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.

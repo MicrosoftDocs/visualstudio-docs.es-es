@@ -1,5 +1,5 @@
 ---
-title: Filtrar Especificación de eventos de compilación (Visual Basic)
+title: Procedimiento Especificación de eventos de compilación (Visual Basic)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07081d8b02e4f884ae7ec983e4c97dcb8bfe672
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938740"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324726"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Filtrar Especificación de eventos de compilación (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Procedimiento Especificación de eventos de compilación (Visual Basic)
 
 Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts, macros u otras acciones como parte del proceso de compilación. Los eventos anteriores a la compilación se producen antes de la compilación; los eventos posteriores a la compilación se producen después de la compilación.
 
@@ -115,7 +115,7 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
    End Sub
    ```
 
-   El comando toma dos argumentos. El primero es la ruta al manifiesto de aplicación (es decir, la carpeta en la que el proceso de compilación crea el manifiesto, normalmente *<Projectname>.publish*). El segundo es la nueva versión del sistema operativo.
+   El comando toma dos argumentos. El primero es la ruta al manifiesto de aplicación (es decir, la carpeta en la que el proceso de compilación crea el manifiesto, normalmente *\<NombreDelProyecto>.publish*). El segundo es la nueva versión del sistema operativo.
 
 5. En el menú **Compilar** , haga clic en **Compilar solución**.
 

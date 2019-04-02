@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943043"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355635"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Tutorial: Desarrollo basado en pruebas previas con la característica de generación a partir del uso
 
@@ -34,15 +34,19 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Crear un proyecto de biblioteca de clases de Windows y un proyecto de prueba
 
-1. En [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], cree un proyecto de **biblioteca de clases de Windows**. Asígnele el nombre `GFUDemo_VB` o `GFUDemo_CS`, en función de qué lenguaje use.
+1. En C# o Visual Basic, cree un proyecto de **biblioteca de clases de Windows**. Asígnele el nombre `GFUDemo_VB` o `GFUDemo_CS`, en función de qué lenguaje use.
 
-2. En el **Explorador de soluciones**, haga clic con el botón derecho en el icono de la solución en la parte superior, elija **Agregar** y **Nuevo proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, elija **Prueba**.
+2. En el **Explorador de soluciones**, haga clic con el botón derecho en el icono de la solución de la parte superior y haga clic en **Agregar** > **Nuevo proyecto**.
 
-3. En el panel central, elija **Proyecto de prueba unitaria** y acepte el nombre predeterminado, `UnitTestProject1`. En la siguiente ilustración se muestra el cuadro de diálogo cuando aparece en [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. En [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], el cuadro de diálogo es similar.
+3. Cree un proyecto **Proyecto de prueba unitaria (.NET Framework)**.
 
-    ![Cuadro de diálogo Nuevo proyecto de prueba](../ide/media/newproject_test.png)
+   ::: moniker range="vs-2017"
 
-4. Elija **Aceptar** para cerrar el cuadro de diálogo **Nuevo proyecto**.
+   La siguiente ilustración muestra el cuadro de diálogo **Nuevo proyecto** de las plantillas de C#.
+
+   ![Plantilla Proyecto de prueba unitaria](../ide/media/newproject_test.png)
+
+   ::: moniker-end
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Agregar una referencia al proyecto de biblioteca de clases
 

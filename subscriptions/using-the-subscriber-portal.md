@@ -7,14 +7,14 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: Obtenga información sobre toda la gama de ventajas disponibles en el portal de suscripciones de Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fcf8d9c9ddd88fd6f00c0b59c92c5e51af7a6ca1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867602"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323404"
 ---
-# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Uso del Portal de suscriptor: my.<span></span>visualstudio<span></span>.com
+# <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del Portal de suscriptor: my.visualstudio.com
 
 El Portal de suscripciones de Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), es el recurso que incluye todas las opciones para sacar partido del amplio abanico de ventajas que ofrece su suscripción a Visual Studio.
 

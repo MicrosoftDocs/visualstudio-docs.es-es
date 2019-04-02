@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194955"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323664"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desarrollo de código en Visual Studio sin proyectos o soluciones
 
@@ -37,7 +37,7 @@ Puede abrir el código en Visual Studio de una de las maneras siguientes:
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-- Haga clic en el vínculo **Abrir carpeta** de la ventana Inicio.
+- Haga clic en el vínculo **Abrir carpeta** de la ventana de inicio.
 ::: moniker-end
 
 - Si es usuario de teclado, presione **Ctrl**+**Mayús**+**Alt**+**O** en Visual Studio.

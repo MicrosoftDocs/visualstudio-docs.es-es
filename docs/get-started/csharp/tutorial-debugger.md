@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 187fe0e75ffa084f95265adf5ca3061f29f11ca7
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 8ba9ff86db64c59d8be581dc778db5ffa6d56f4a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156116"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355664"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de C# con Visual Studio
 
@@ -38,25 +38,37 @@ En este tutorial va a:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Debe tener instalados Visual Studio 2017 y la carga de trabajo **Desarrollo de escritorio de .NET**.
+::: moniker range=">=vs-2019"
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  para instalarlo de forma gratuita.
+Debe tener instalados Visual Studio 2019 y la carga de trabajo **Desarrollo de escritorio de .NET**.
 
-    Si necesita instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto** (seleccione **Archivo** > **Nuevo** > **Proyecto**). Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
+::: moniker-end
+::: moniker range="vs-2017"
+
+Debe tener instalados Visual Studio 2017 y la carga de trabajo **Desarrollo de escritorio de .NET**.
+
+::: moniker-end
+
+Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
+
+Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
-1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
+1. Abra Visual Studio.
 
-2. En **Visual C#**, seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola** en el panel central.
+    ::: moniker range=">=vs-2019"
+    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y luego, **Create new Console App (.NET Framework) project** (Crear proyecto de aplicación de consola [.NET Framework]). En el cuadro de diálogo que se abre, escriba un nombre como **get-started-debugging** y luego elija **Crear**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#**, elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola (.NET Framework)**. Luego, escriba un nombre como **get-started-debugging** y haga clic en **Aceptar**.
+    ::: moniker-end
 
-    Si no ve la plantilla de proyecto **Aplicación de consola**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo *Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
-
-3. Escriba un nombre como **get-started-debugging** y haga clic en **Aceptar**.
+    Si no ve la plantilla de proyecto **Aplicación de consola (.NET Framework)**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
     Visual Studio crea el proyecto.
 
-4. En *Program.cs*, reemplace el código siguiente
+1. En *Program.cs*, reemplace el código siguiente
 
     ```csharp
     using System;

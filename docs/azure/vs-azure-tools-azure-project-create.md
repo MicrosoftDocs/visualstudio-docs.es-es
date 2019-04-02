@@ -7,24 +7,26 @@ assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 03/21/2017
+ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 2ef17bab90ae1f2c9df66a85a6a78b1494bd5c3d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 900e677ce670c49036ea6d76596ff509129ce979
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926985"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323823"
 ---
-# <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Creación de un proyecto de servicio en la nube de Azure con Visual Studio
+# <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Creación de un proyecto de servicio en la nube de Azure con Visual Studio
+
 Azure Tools para Visual Studio proporciona una plantilla de proyecto que le permite crear un [servicio en la nube de Azure](/azure/cloud-services/cloud-services-choose-me), que constituye un servicio sencillo con fines generales de Azure. Una vez creado el proyecto, Visual Studio le permite configurar, depurar e implementar el servicio en la nube en Azure.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Pasos para crear un proyecto de servicio en la nube de Azure en Visual Studio
 En esta sección se le enseñará cómo crear un proyecto de servicio en la nube de Azure en Visual Studio con uno o más roles web.
 
-1. Inicie Visual Studio como administrador.
+::: moniker range="vs-2017"
+1. Abra Visual Studio como administrador.
 
-1. En el menú principal, seleccione **Archivo** > **Nuevo** > **Proyecto**.
+1. En el menú principal, seleccione **Archivo**>**Nuevo**>**Proyecto**.
 
 1. Seleccione **Nube** en los nodos de plantillas de proyectos de Visual C# o Visual Basic y, luego, seleccione **Servicio en la nube de Azure** en la lista de plantillas.
 
@@ -35,6 +37,18 @@ En esta sección se le enseñará cómo crear un proyecto de servicio en la nube
 1. Escriba un nombre y una ubicación para el proyecto y un nombre para la solución.
 
 1. Seleccione **Aceptar**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. En la ventana de inicio, elija **Crear un proyecto**.
+
+1. En el cuadro de búsqueda, escriba *Nube* y luego elija **Azure Cloud Service**.
+
+   ![Nuevo servicio en la nube de Azure](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service.png)
+
+1. Asigne un nombre al proyecto y elija **Crear**.
+
+   ![Asignación de un nombre al proyecto](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service-2.png)
+::: moniker-end
 
 1. En el cuadro de diálogo **Nuevo servicio en la nube de Microsoft Azure**, seleccione los roles que desea agregar y elija el botón de flecha a la derecha para agregarlos a la solución.
 

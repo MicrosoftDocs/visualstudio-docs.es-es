@@ -1,5 +1,5 @@
 ---
-title: Filtrar para crear un adaptador de datos de diagnóstico
+title: Procedimiento para crear un adaptador de datos de diagnóstico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,14 +8,14 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914024"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416337"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>Filtrar Crear un adaptador de datos de diagnóstico
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedimiento Crear un adaptador de datos de diagnóstico
 
 Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de clases mediante Visual Studio y, luego, agregar a la biblioteca de clases las API del adaptador de datos de diagnóstico proporcionadas por Visual Studio Enterprise. Al administrar los eventos que se generan durante la ejecución de pruebas, envíe la información que quiera como una secuencia o un archivo al elemento <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> proporcionado por el marco de trabajo. Las secuencias o los archivos enviados a <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> se almacenan como datos adjuntos a los resultados de pruebas cuando una prueba finaliza. Si crea un error a partir de estos resultados de pruebas o al usar [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], los archivos también se vinculan al error.
 
@@ -48,21 +48,9 @@ Utilice el siguiente procedimiento para crear un adaptador de datos de diagnóst
 
 Para obtener un proyecto de adaptador de datos de diagnóstico de ejemplo completo que incluya un editor de configuración personalizado, vea [Proyecto de ejemplo para crear un adaptador de datos de diagnóstico](../test/quickstart-create-a-load-test-project.md).
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Crear e instalar un adaptador de datos de diagnóstico
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Crear e instalar un adaptador de datos de diagnóstico
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Par crear e instalar un adaptador de datos de diagnóstico
-
-1. Cree una nueva biblioteca de clases.
-
-   1.  En el menú **Archivo**, elija **Nuevo** y, luego, seleccione **Nuevo proyecto**.
-
-   2.  En **Tipos de proyecto**, seleccione el idioma que quiere usar.
-
-   3.  En **Plantillas instaladas de Visual Studio**, seleccione **Biblioteca de clases**.
-
-   4.  Escriba un nombre para el adaptador de datos de diagnóstico.
-
-   5.  Elija **Aceptar**.
+1. Cree un proyecto de **Biblioteca de clases**.
 
 2. Agregue el ensamblado **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 603920aac4a7ba6d91996f3717927112ec8e5ec5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933865"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415959"
 ---
 # <a name="project-and-item-templates"></a>Plantillas de proyecto y elemento
 
@@ -23,11 +23,11 @@ Las plantillas de proyectos y elementos proporcionan códigos auxiliares reutili
 
 ## <a name="visual-studio-templates"></a>plantillas de Visual Studio
 
-Al instalar Visual Studio, se instalan una serie de plantillas de proyecto y elemento predefinidas. Por ejemplo, las plantillas de Visual Basic y C# **Aplicación de Windows Forms** y **Biblioteca de clases** que se muestran en el cuadro de diálogo **Nuevo proyecto** son plantillas de proyecto. Las plantillas de elemento se muestran en el cuadro de diálogo **Agregar nuevo elemento** e incluyen elementos tales como archivos de código, archivos XML, páginas HTML y hojas de estilo.
+Al instalar Visual Studio, se instalan una serie de plantillas de proyecto y elemento predefinidas. Estas plantillas, como las plantillas **Aplicación web ASP.NET** y **Biblioteca de clases**, están disponibles para que se elijan al crear un proyecto. Las plantillas de elemento tales como archivos de código, archivos XML, páginas HTML y hojas de estilo se muestran en la ventana **Agregar nuevo elemento**.
 
 Estas plantillas proporcionan a los usuarios un punto de partida para empezar a crear proyectos o ampliar proyectos actuales. Las plantillas de proyecto proporcionan los archivos necesarios para un tipo de proyecto determinado, incluyen referencias de ensamblado estándar y establecen propiedades de proyecto y opciones de compilador predeterminadas. Las plantillas de elemento pueden abarcar desde un único archivo vacío con una determinada extensión de archivo hasta varios archivos de código fuente con código auxiliar, archivos de información de diseñador y recursos incrustados.
 
-Puede usar las plantillas instaladas en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**, crear sus propias plantillas o descargar y utilizar plantillas creadas por la comunidad. Para obtener más información, vea [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md) y [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md).
+Puede usar las plantillas instaladas, crear sus propias plantillas personalizadas o descargar y utilizar plantillas creadas por la comunidad. Para obtener más información, vea [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md) y [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Contenido de una plantilla
 
@@ -35,13 +35,35 @@ Todas las plantillas de proyecto y elemento, ya estén instaladas en Visual Stud
 
 - Los archivos que se van a crear al usar la plantilla. Estos archivos incluyen archivos de código fuente, recursos incrustados, archivos de proyecto, etc.
 
-- Un archivo *.vstemplate* que contiene los metadatos que necesita para mostrar la plantilla en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento** y crear un proyecto o elemento a partir de la plantilla. Para obtener más información sobre los archivos *.vstemplate*, vea [Parámetros de plantilla](../ide/template-parameters.md).
+::: moniker range="vs-2017"
+
+- Un archivo *.vstemplate* que contiene los metadatos necesarios para crear un proyecto o un elemento a partir de la plantilla y para mostrar la plantilla en las ventanas **Nuevo proyecto** y **Agregar nuevo elemento**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Un archivo *.vstemplate* que contiene los metadatos necesarios para crear un proyecto o un elemento a partir de la plantilla y para mostrar la plantilla en la página **Crear un proyecto** y en el cuadro de diálogo **Agregar nuevo elemento**.
+
+::: moniker-end
+
+   Para obtener más información sobre los archivos *.vstemplate*, vea [Parámetros de plantilla](../ide/template-parameters.md).
 
 Cuando estos archivos se comprimen en un archivo *.zip* y se colocan en la carpeta correcta, Visual Studio los muestra de forma automática en estas ubicaciones:
 
-- Las plantillas de proyecto aparecen en el cuadro de diálogo **Nuevo proyecto**.
+::: moniker range="vs-2017"
 
-- Las plantillas de elementos aparecen en el cuadro de diálogo **Agregar nuevo elemento**.
+- Las plantillas de proyecto aparecen en la ventana **Nuevo proyecto**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Las plantillas de proyecto aparecen en la página **Crear un proyecto**.
+
+::: moniker-end
+
+- Las plantillas de elementos aparecen en la ventana **Agregar nuevo elemento**.
 
 Para obtener más información sobre las carpetas de plantillas, vea [Cómo: Localizar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 

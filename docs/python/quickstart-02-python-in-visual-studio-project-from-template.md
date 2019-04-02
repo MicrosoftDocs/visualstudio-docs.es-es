@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3878c3817ef7df66f4e8d31562598389fd07bc29
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1a26f3bc5e47f0aac7385bb9b1197da0a72396d
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927038"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355414"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Inicio rápido: Creación de un proyecto de Python desde una plantilla en Visual Studio
 
-Después de [instalar la compatibilidad con Python en Visual Studio 2017](installing-python-support-in-visual-studio.md), resulta fácil crear un nuevo proyecto de Python con una variedad de plantillas. En este inicio rápido, creará una aplicación sencilla de Flask mediante una plantilla. El proyecto resultante es similar al proyecto que crea manualmente a través de [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md).
+Después de [instalar la compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md), resulta fácil crear un nuevo proyecto de Python con diversas plantillas. En este inicio rápido, creará una aplicación sencilla de Flask mediante una plantilla. El proyecto resultante es similar al proyecto que crea manualmente a través de [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md).
 
-1. Inicie Visual Studio 2017.
+1. Inicie Visual Studio.
 
 1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. Luego, en el cuadro de diálogo **Nuevo proyecto**, busque "flask en blanco", seleccione la plantilla **Proyecto web de Flask en blanco** en la lista del medio, asigne un nombre al proyecto y seleccione **Aceptar**:
 

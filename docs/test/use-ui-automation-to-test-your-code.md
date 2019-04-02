@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145231"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416271"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar la automatización de la interfaz de usuario para probar el código
 
@@ -62,9 +62,13 @@ Para acceder a las plantillas y herramientas de pruebas automatizadas de IU, ins
 
 1. Cree un proyecto de prueba de IU codificada.
 
-   Las pruebas de IU codificadas deben incluirse en un proyecto de prueba de IU codificada. Si aún no tiene un proyecto de este tipo, cree uno. Elija **Archivo** > **Nuevo** > **Proyecto** para abrir el cuadro de diálogo **Nuevo proyecto**. En el panel de categorías de la izquierda, expanda **Instalado** > **Visual Basic***o***Visual C#** > **Prueba**. Seleccione la plantilla **Proyecto de prueba de IU codificada** y luego elija **Aceptar**.
+   Las pruebas de IU codificadas deben incluirse en un proyecto de prueba de IU codificada. Si aún no tiene un proyecto de este tipo, cree uno. Elija **Archivo** > **Nuevo** > **Proyecto**. Busque la plantilla de proyecto **Proyecto de prueba automatizada de IU** y selecciónela.
+
+   ::: moniker range="vs-2017"
 
    ![Plantilla Proyecto de prueba de IU codificada en el cuadro de diálogo Nuevo proyecto](media/coded-ui-test-project-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Si no ve la plantilla **Proyecto de prueba automatizada de IU**, necesitará [instalar el componente de prueba automatizada de IU](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).

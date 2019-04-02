@@ -2,8 +2,9 @@
 title: 'Tutorial: Creación de una aplicación de consola de C# sencilla'
 description: Aprenda a crear una aplicación de consola de C# en Visual Studio mediante un procedimiento paso a paso.
 ms.custom: seodec18, get-started
-ms.date: 03/12/2019
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,22 +15,34 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: ccd5ff0f0e77a2f59135b2bf7950c4c6ddf58e02
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736914"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416181"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
 
 En este tutorial para C#, usará Visual Studio para crear y ejecutar una aplicación de consola y explorar algunas características del entorno de desarrollo integrado (IDE) de Visual Studio mientras lo hace.
 
+::: moniker range="vs-2017"
+
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) para instalarlo de forma gratuita.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
 Para empezar, crearemos un proyecto de aplicación de C#. En el tipo de proyecto se incluyen todos los archivos de plantilla que vamos a necesitar, sin necesidad de agregar nada más.
+
+::: moniker range="vs-2017"
 
 1. Abra Visual Studio 2017.
 
@@ -56,13 +69,48 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, puede 
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opción 2: Uso de la barra del menú Herramientas
 
-1. Cancele para salir del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, seleccione **Herramientas** > **Obtener herramientas y características...**.
+1. Cancele para salir del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, seleccione **Herramientas**>**Obtener herramientas y características...**
 
 1. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Abra Visual Studio 2019.
+
+1. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+   ![Visualización de la ventana "Crear un proyecto"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *consola*. Seguidamente, elija **C#** en la lista de lenguajes y luego, **Windows** en la lista de plataformas. 
+
+   Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola (.NET Core)** y luego, **Siguiente**.
+
+   ![Elija la plantilla C# para Aplicación de consola (.NET Framework).](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Si no ve la plantilla **Aplicación de consola (.NET Core)**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?**, elija el vínculo **Instalar más herramientas y características**.
+   >
+   > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Luego, en el Instalador de Visual Studio, elija la carga de trabajo **Desarrollo multiplataforma de .NET Core**.
+   >
+   > ![Carga de trabajo Desarrollo multiplataforma de .NET Core en el instalador de Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Después, elija el botón **Modificar** en el Instalador de Visual Studio. Es posible que se le pida que guarde su trabajo; si es así, hágalo. Seguidamente, elija **Continuar** para instalar la carga de trabajo. Luego, vuelva al paso 2 de este procedimiento "[Crear un proyecto](#create-a-project)".
+
+1. En la ventana **Configurar el nuevo proyecto**, escriba *Calculator* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
+
+   ![En la ventana "Configurar el nuevo proyecto", asigne al proyecto el nombre "Calculator".](./media/vs-2019/csharp-name-your-calculator-project.png)
+
+   Visual Studio abre el nuevo proyecto, que incluye código predeterminado de "Hola mundo".
+   
+::: moniker-end
+
 ## <a name="create-the-app"></a>Creación de la aplicación
 
-En primer lugar, exploraremos algunos cálculos de enteros básicos en C#. Después, agregaremos código para crear una calculadora básica. Siguiente, . Después de eso, depuraremos la aplicación para buscar y corregir errores. Por último, perfeccionaremos el código para que sea más eficaz.
+En primer lugar, exploraremos algunos cálculos de enteros básicos en C#. Después, agregaremos código para crear una calculadora básica. Después de eso, depuraremos la aplicación para buscar y corregir errores. Por último, perfeccionaremos el código para que sea más eficaz.
 
 ### <a name="explore-integer-math"></a>Análisis de las operaciones matemáticas con enteros
 
@@ -182,7 +230,7 @@ Vamos a retocar el código para agregarle más funcionalidad.
 
 ### <a name="add-decimals"></a>Agregar decimales
 
-En este momento, la aplicación Calculator acepta y devuelve números enteros, pero será más precisa si agregamos código que permita incluir decimales.
+En este momento, la aplicación Calculator acepta y devuelve números enteros, Pero será más precisa si agregamos código que permita incluir decimales.
 
 Como se muestra en la siguiente captura de pantalla, si ejecutamos la aplicación y dividimos el número 42 entre el número 119, el resultado es 0 (cero), lo cual no es correcto.
 
@@ -404,7 +452,7 @@ Comencemos.
 
 1. Elija **Calculator** para ejecutar el programa, o bien presione **F5**.
 
-1. Siga las indicaciones y divida el número **42** entre el número **119**. La aplicación debe ser similar a la siguiente:
+1. Siga las indicaciones y divida el número **42** entre el número **119**. La ventana de consola debe ser similar a la de la siguiente captura de pantalla:
 
     ![Ventana de consola en la que se muestra la aplicación Calculator refactorizada, que incluye mensajes sobre las acciones que se deben realizar y control de errores de entrada incorrecta](./media/csharp-console-calculator-refactored.png)
 

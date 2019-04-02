@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 472cd590627a84ea0a11b9de8b533bba3a88a253
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869368"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355440"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalación de símbolos de depuración para intérpretes de Python
 
 Para proporcionar una experiencia de depuración completa, el [depurador en modo mixto de Python](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) en Visual Studio necesita depurar símbolos para el intérprete de Python que se está usando y así analizar numerosas estructuras de datos internas. Para *python27.dll*, por ejemplo, el archivo de símbolos correspondiente es *python27.pdb*; para *python36.dll*, el archivo de símbolos es *python36.pdb*. Cada versión del intérprete también proporciona archivos de símbolos para diferentes módulos.
 
-Con Visual Studio 2017, los intérpretes Python 3 y Anaconda 3 instalan automáticamente sus símbolos respectivos y Visual Studio los encontrará automáticamente. Para Visual Studio 2015 y versiones anteriores, o al usar otros intérpretes, es necesario descargar los símbolos por separado y, después, apuntar Visual Studio a ellos a través del cuadro de diálogo **Herramientas** > **Opciones** en la pestaña **Depuración** > **Símbolos**. Estos pasos se detallan en las secciones siguientes.
+Con Visual Studio 2017 y versiones posteriores, los intérpretes Python 3 y Anaconda 3 instalan automáticamente sus símbolos respectivos y Visual Studio los buscará automáticamente. Para Visual Studio 2015 y versiones anteriores, o al usar otros intérpretes, es necesario descargar los símbolos por separado y, después, apuntar Visual Studio a ellos a través del cuadro de diálogo **Herramientas** > **Opciones** en la pestaña **Depuración** > **Símbolos**. Estos pasos se detallan en las secciones siguientes.
 
 Es posible que Visual Studio le solicite los símbolos cuando los necesite, normalmente al iniciar una sesión de depuración en modo mixto. En este caso, muestra un cuadro de diálogo con dos opciones:
 

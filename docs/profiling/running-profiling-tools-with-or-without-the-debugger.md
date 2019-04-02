@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4cf1cce3ba677b5232c86b7abb1386d4d1dc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597538"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323729"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 
@@ -67,7 +67,7 @@ Para más información, consulte [Búsqueda y filtrado de la pestaña Eventos de
 
 ## <a name="collect-profiling-data-without-debugging"></a>Recopilar datos de generación de perfiles sin depurar
 
-Para recopilar datos de rendimiento sin depuración, puede ejecutar las herramientas de **Generador de perfiles de rendimiento**. Algunas de las herramientas de generación de perfiles requieren privilegios de administrador para ejecutarse. Puede ejecutar Visual Studio como administrador o puede ejecutar las herramientas como administrador al iniciar la sesión de diagnóstico.
+Para recopilar datos de rendimiento sin depuración, puede ejecutar las herramientas de **Generador de perfiles de rendimiento**. Algunas de las herramientas de generación de perfiles requieren privilegios de administrador para ejecutarse. Puede abrir Visual Studio como administrador o ejecutar las herramientas como administrador al iniciar la sesión de diagnóstico.
 
 1. Con un proyecto abierto en Visual Studio, seleccione **Depurar** > **Generador de perfiles de rendimiento** o presione **Alt**+**F2**.
 

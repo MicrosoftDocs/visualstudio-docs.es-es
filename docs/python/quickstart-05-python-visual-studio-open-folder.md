@@ -11,23 +11,23 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6cf4e15ec464b1d438245cd7bfe254d9464ad2a6
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57987153"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354913"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Inicio rápido: Apertura y ejecución de código de Python en una carpeta
 
 Una vez que haya [instalado la compatibilidad con Python en Visual Studio 2019](installing-python-support-in-visual-studio.md), es fácil ejecutar el código de Python existente en Visual Studio 2019 sin crear un proyecto de Visual Studio.
 
 > [!Note]
-> Visual Studio 2017 y las versiones anteriores requerían crear un proyecto de Visual Studio para ejecutar el código de Python, lo que se puede hacer fácilmente mediante una plantilla de proyecto integrada. Consulte [Inicio rápido: Creación de un proyecto de Python a partir del código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+> Visual Studio 2017 y las versiones anteriores requieren la creación de un proyecto de Visual Studio para ejecutar el código de Python, lo que se puede hacer fácilmente mediante una plantilla de proyecto integrada. Consulte [Inicio rápido: Creación de un proyecto de Python a partir del código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 
 1. En este tutorial, puede usar cualquier carpeta con código de Python que quiera. Para seguir con el ejemplo que se muestra aquí, clone el repositorio gregmalcolm/python_koans de GitHub en su equipo mediante el comando `git clone https://github.com/gregmalcolm/python_koans` en una carpeta adecuada.
 
-1. Inicie Visual Studio 2019 y en la pantalla Inicio, seleccione **Abrir** en la parte inferior de la columna **Get started** (Empezar). De manera alternativa, si ya ejecuta Visual Studio, seleccione en su lugar el comando **Archivo** > **Abrir** > **Carpeta**.
+1. Inicie Visual Studio 2019 y, en la ventana de inicio, seleccione **Abrir** en la parte inferior de la columna **Get started** (Empezar). De manera alternativa, si ya ejecuta Visual Studio, seleccione en su lugar el comando **Archivo** > **Abrir** > **Carpeta**.
 
     ![La pantalla Inicio de Visual Studio](media/quickstart-open-folder/01-open-local-folder.png)
 

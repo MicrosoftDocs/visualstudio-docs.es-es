@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956862"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324245"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Crear y configurar miembros de tipo en el Diseñador de clases
 
@@ -205,7 +205,7 @@ Las filas de parámetros contienen los elementos siguientes:
 
 - **\<agregar parámetro>**
 
-     La última fila de parámetros de un miembro contiene el texto **<add parameter>** en la celda **Nombre**. Haga clic en esta celda para crear un nuevo parámetro. Para obtener más información, vea [Para agregar un parámetro a un método](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     La última fila de parámetros de un miembro contiene el texto **<agregar parámetro\>** en la celda **Nombre**. Haga clic en esta celda para crear un nuevo parámetro. Para obtener más información, vea [Para agregar un parámetro a un método](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 La ventana **Propiedades** muestra las mismas propiedades de parámetro que la ventana **Detalles de clase**: **Nombre**, **Tipo**, **Modificador** y **Resumen**, así como la propiedad **Valor predeterminado opcional**. Al cambiar una propiedad en una ubicación, se actualiza globalmente el valor de la propiedad, incluida la presentación de su valor en la otra ubicación.
 

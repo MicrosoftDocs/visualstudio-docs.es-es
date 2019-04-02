@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867818"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355479"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Página Proyectos y soluciones, Cuadro de diálogo Opciones
 
@@ -91,11 +91,11 @@ Especifica la ubicación predeterminada donde Visual Studio crea las nuevas carp
 
 ### <a name="user-project-templates-location"></a>Ubicación de plantillas de proyecto de usuario
 
-Especifica la ubicación predeterminada que usa el cuadro de diálogo **Nuevo proyecto** para crear la lista de **Mis plantillas**. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica la ubicación predeterminada que se usa para buscar plantillas de proyecto creadas por el usuario. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Ubicación de plantillas de elemento de usuario
 
-Especifica la ubicación predeterminada que usa el cuadro de diálogo **Agregar nuevo elemento** para crear la lista de **Mis plantillas**. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica la ubicación predeterminada que se usa para buscar plantillas de elemento creadas por el usuario. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vea también
 

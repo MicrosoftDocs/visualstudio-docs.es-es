@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8815e4cf58703efa0ab092f6030f6eeb22a813cd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983395"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268546"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Búsqueda y uso de extensiones de Visual Studio
 
@@ -141,7 +141,7 @@ Cuando aparezcan estas notificaciones, puede ignorarlas o realizar una de las ac
 
 Cuando se instala un ejemplo en línea, la solución se almacena en dos ubicaciones:
 
-- Se almacena una copia de trabajo en la ubicación especificada en el cuadro de diálogo **Nuevo proyecto** .
+- Se almacena una copia de trabajo en la ubicación especificada al crear el proyecto.
 
 - Se almacena una copia maestra independiente en el equipo.
 
@@ -163,7 +163,7 @@ Puede usar la ventana **Administrar extensiones** para realizar estas tareas rel
 
 - Instalar paquetes de ejemplo, que son colecciones de ejemplos relacionados con una tecnología o una característica.
 
-- Instalar ejemplos en línea individuales. (También puede hacerlo en el cuadro de diálogo **Nuevo proyecto** ).
+- Instalar ejemplos en línea individuales.
 
 - Ver notificaciones de actualización cuando se publiquen cambios en el código fuente de los ejemplos instalados.
 

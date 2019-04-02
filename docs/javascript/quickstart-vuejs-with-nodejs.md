@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a3bd2c65ccca172eca46eb5d935ef7735734a608
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: cbf0c97371270ef6c9443c7abd755bf956a465f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069598"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355265"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación Vue.js
 
@@ -56,15 +56,13 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 
 1. Abra Visual Studio.
 
-1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
-
 1. Cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    En el cuadro de diálogo **Crear un nuevo proyecto**, escriba **javascript** o **typescript** en el cuadro de búsqueda para filtrar los resultados, elija **Aplicación web de Vue.js básico** y haga clic en **Siguiente**. Luego, elija **Crear**.
+    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Vue.js**, elija **Aplicación web de Vue.js básico** (JavaScript o TypeScript). En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y después seleccione **Node.js**. En el panel central, elija **Aplicación web de Vue.js básico** y elija **Aceptar**.
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** o **TypeScript** y elija **Node.js**. En el panel central, elija **Aplicación web de Vue.js básico** y elija **Aceptar**.
     ::: moniker-end
     Si no ve la plantilla de proyecto **Aplicación web de Vue.js básico**, debe agregar la carga de trabajo **Desarrollo de Node.js**. Para instrucciones detalladas, consulte los [Requisitos previos](#prerequisites).
 

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335277"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324752"
 ---
 # <a name="find-references-in-your-code"></a>Búsqueda de referencias en el código
 
 Puede usar el comando **Buscar todas las referencias** para buscar dónde se hace referencia a elementos de código específicos en todo el código base. El comando **Buscar todas las referencias** está disponible en el menú contextual (clic en el botón derecho) del elemento del que quiere buscar referencias. O bien, si prefiere usar el teclado, presione **MAYÚS+F12**.
 
-Los resultados aparecen en una ventana de herramientas denominada **<element> references**, donde *element* es el nombre del elemento que está buscando. Una barra de herramientas en esta ventana **Referencias** le permite hacer lo siguiente:
+Los resultados aparecen en una ventana de herramientas denominada **\<element> references**, donde *element* es el nombre del elemento que busca. Una barra de herramientas en esta ventana **Referencias** le permite hacer lo siguiente:
 - Cambiar el ámbito de la búsqueda en una lista desplegable. Puede buscar solo en los documentos modificados o en toda la solución.
 - Copiar el elemento seleccionado al que se hace referencia mediante el botón **Copiar**.
 - Seleccionar botones para ir a la ubicación siguiente o anterior en la lista, o presionar las teclas **F8** y **Mayús + F8** para hacerlo.

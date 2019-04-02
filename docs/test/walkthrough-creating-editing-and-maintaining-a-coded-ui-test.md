@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955068"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416414"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Tutorial: Crear, editar y mantener una prueba automatizada de IU
 
@@ -22,41 +22,27 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 ## <a name="create-a-wpf-app"></a>Crear una aplicación WPF
 
-1.  En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.
+1. Cree un proyecto **Aplicación de WPF (.NET Framework)** y asígnele el nombre **SimpleWPFApp**.
 
-     Aparecerá el cuadro de diálogo **Nuevo proyecto** .
+     Se abre **WPF Designer** y se muestra la MainWindow del proyecto.
 
-2.  En el panel **Instalado**, expanda **Visual C#** y después seleccione **Escritorio de Windows**.
+2. Abra el cuadro de herramientas, si aún no está abierto. Elija el menú **Ver** y después **Cuadro de herramientas**.
 
-3.  Encima del panel central, compruebe que la lista desplegable de plataforma de destino se establece en **.NET Framework 4.5**.
+3. Bajo la sección **Todos los controles de WPF**, arrastre un control **Botón**, **Casilla** y **Barra de progreso** hacia MainWindow en la superficie de diseño.
 
-4.  En el panel central, seleccione la plantilla **Aplicación WPF**.
+4. Seleccione el control **Botón**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a button1. A continuación, cambie el valor de la propiedad **Contenido** de Botón a Inicio.
 
-5.  En el cuadro de texto **Nombre**, escriba **SimpleWPFApp**.
+5. Seleccione el control **ProgressBar**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a progressBar1. A continuación, cambie el valor de la propiedad **Máxima** de **100** a **10000**.
 
-6.  Elija la carpeta donde guardará el proyecto. En el cuadro de texto **Ubicación**, escriba el nombre de la carpeta.
-
-7.  Elija **Aceptar**.
-
-     Se abre **WPF Designer para Visual Studio** y se muestra MainWindow del proyecto.
-
-8.  Abra el cuadro de herramientas, si aún no está abierto. Elija el menú **Ver** y después **Cuadro de herramientas**.
-
-9. Bajo la sección **Todos los controles de WPF**, arrastre un control **Botón**, **Casilla** y **Barra de progreso** hacia MainWindow en la superficie de diseño.
-
-10. Seleccione el control **Botón**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a button1. A continuación, cambie el valor de la propiedad **Contenido** de Botón a Inicio.
-
-11. Seleccione el control **ProgressBar**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a progressBar1. A continuación, cambie el valor de la propiedad **Máxima** de **100** a **10000**.
-
-12. Seleccione el control **Checkbox**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a checkBox1 y desactive la propiedad **IsEnabled**.
+6. Seleccione el control **Checkbox**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a checkBox1 y desactive la propiedad **IsEnabled**.
 
      ![Aplicación de WPF sencilla](../test/media/codedui_wpfapp.png)
 
-13. Haga doble clic en el control de botón para agregar un controlador de evento Click.
+7. Haga doble clic en el control de botón para agregar un controlador de evento Click.
 
      *MainWindow.xmal.cs* se muestra en el Editor de código con el cursor en el nuevo método button1_Click.
 
-14. En la parte superior de la clase MainWindow, agregue un delegado. El delegado se utilizará para la barra de progreso. Para agregar el delegado, agregue el código siguiente:
+8. En la parte superior de la clase MainWindow, agregue un delegado. El delegado se utilizará para la barra de progreso. Para agregar el delegado, agregue el código siguiente:
 
     ```csharp
     public partial class MainWindow : Window
@@ -70,7 +56,7 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
         }
     ```
 
-15. En el método button1_Click, agregue el siguiente código:
+9. En el método button1_Click, agregue el siguiente código:
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -95,7 +81,7 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
     }
     ```
 
-16. Guarde el archivo.
+10. Guarde el archivo.
 
 ### <a name="run-the-wpf-app"></a>Ejecutar la aplicación WPF
 
@@ -120,22 +106,14 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Crear una prueba automatizada de IU para SimpleWPFApp
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, elija **Agregar** y, después, seleccione **Nuevo proyecto**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución y elija **Agregar** > **Nuevo proyecto**.
 
-     Aparece el cuadro de diálogo **Agregar nuevo proyecto** .
-
-1. En el panel **Instalado**, expanda **Visual C#** y, a continuación, seleccione **Prueba**.
-
-1. En el panel central, seleccione la plantilla **Proyecto de prueba de IU codificada**.
+2. Busque la plantilla de proyecto **Proyecto de prueba automatizada de IU**, selecciónela y siga los pasos hasta que se cree el proyecto.
 
    > [!NOTE]
    > Si no ve la plantilla **Proyecto de prueba automatizada de IU**, necesitará [instalar el componente de prueba automatizada de IU](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-1. Elija **Aceptar**.
-
-     El nuevo proyecto de prueba automatizada de IU llamado **CodedUITestProject1** se agregará a la solución.
-
-     Aparece el cuadro de diálogo **Generar código para prueba de IU codificada**.
+     El nuevo proyecto de prueba automatizada de IU, **CodedUITestProject1**, se agrega a la solución y se abre el cuadro de diálogo **Generar código para prueba automatizada de IU**.
 
 1. Seleccione la opción **Grabar acciones, editar asignación de IU o agregar aserciones** y elija **Aceptar**.
 

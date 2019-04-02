@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9434ac138f848442a32986d85ae816bb8d78e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946956"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416362"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Filtrar para crear un complemento de Visual Studio para el Visor de resultados de pruebas de rendimiento web
+# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedimiento para crear un complemento de Visual Studio para el Visor de resultados de pruebas de rendimiento web
 
 Puede extender la interfaz de usuario para el **Visor de resultados de pruebas de rendimiento web** utilizando los siguientes espacios de nombres:
 
@@ -24,7 +24,7 @@ Puede extender la interfaz de usuario para el **Visor de resultados de pruebas d
 
 -   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-Además, necesita agregar una referencia al archivo DLL LoadTestPackage que se encuentra en la carpeta *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
+Además, necesita agregar una referencia al archivo DLL LoadTestPackage que se encuentra en la carpeta *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies*.
 
 Para extender la interfaz de usuario del **Visor de resultados de pruebas de rendimiento web**, debe crear un control de usuario y un complemento de Visual Studio. Los siguientes procedimientos explican cómo crear el complemento y el control de usuario, y cómo implementar las clases necesarias para extender la interfaz de usuario del **Visor de resultados de pruebas de rendimiento web**.
 
@@ -51,46 +51,38 @@ Un complemento es un archivo DLL compilado que se ejecuta dentro del entorno de 
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, elija **Agregar** y luego seleccione **Nuevo proyecto**.
 
-    Aparecerá el cuadro de diálogo **Nuevo proyecto**.
-
-2. En **Plantillas instaladas**, expanda **Otros tipos de proyectos** y seleccione **Extensibilidad**.
-
-3. En la lista de plantillas, seleccione **Complemento de Visual Studio**.
-
-4. En **Nombre**, escriba el nombre del complemento. Por ejemplo, **WebPerfTestResultsViewerAddin**.
-
-5. Elija **Aceptar**.
+2. Cree un proyecto **Complemento de Visual Studio**.
 
     Se inicia el **Asistente para complementos** de Visual Studio.
 
-6. Seleccione **Siguiente**.
+3. Seleccione **Siguiente**.
 
-7. En la página **Seleccione un lenguaje de programación**, seleccione el lenguaje de programación que quiera usar para escribir el complemento.
+4. En la página **Seleccione un lenguaje de programación**, seleccione el lenguaje de programación que quiera usar para escribir el complemento.
 
    > [!NOTE]
    > En este tema se utiliza Visual C# para el código muestra.
 
-8. En la página **Seleccione una aplicación host**, seleccione **Visual Studio** y desactive **Macros de Visual Studio**.
+5. En la página **Seleccione una aplicación host**, seleccione **Visual Studio** y desactive **Macros de Visual Studio**.
 
-9. Seleccione **Siguiente**.
+6. Seleccione **Siguiente**.
 
-10. Especifique un nombre y una descripción del complemento en la página **Especifique un nombre y una descripción**.
+7. Especifique un nombre y una descripción del complemento en la página **Especifique un nombre y una descripción**.
 
      Una vez creado el complemento, su nombre y descripción se muestran en la lista **Complementos disponibles** del **Administrador de complementos**. Agregue bastantes detalles a la descripción del complemento para que los usuarios sepan lo que hace el complemento, cómo funciona, etc.
 
-11. Seleccione **Siguiente**.
+8. Seleccione **Siguiente**.
 
-12. En la página **Elija las opciones del complemento**, seleccione **Me gustaría que se cargue al iniciar la aplicación host**.
+9. En la página **Elija las opciones del complemento**, seleccione **Me gustaría que se cargue al iniciar la aplicación host**.
 
-13. Desactive las casillas restantes.
+10. Desactive las casillas restantes.
 
-14. En la página **Elección de información para Ayuda - Acerca de**, especifique si quiere que la información del complemento se muestre en el cuadro de diálogo **Acerca de**. Si quiere mostrar la información, active la casilla **Sí, me gustaría que mi complemento ofreciera información en el cuadro Acerca de**.
+11. En la página **Elección de información para Ayuda - Acerca de**, especifique si quiere que la información del complemento se muestre en el cuadro de diálogo **Acerca de**. Si quiere mostrar la información, active la casilla **Sí, me gustaría que mi complemento ofreciera información en el cuadro Acerca de**.
 
      La información que se puede agregar al cuadro de diálogo **Acerca de** de Visual Studio incluye número de versión, detalles de compatibilidad, datos de la licencia, etc.
 
-15. Seleccione **Siguiente**.
+12. Seleccione **Siguiente**.
 
-16. Use la página **Resumen** para revisar las opciones seleccionadas en el asistente. Si está de acuerdo, elija **Finalizar** para crear el complemento. Si quiere cambiar algo, elija el botón **Atrás**.
+13. Use la página **Resumen** para revisar las opciones seleccionadas en el asistente. Si está de acuerdo, elija **Finalizar** para crear el complemento. Si quiere cambiar algo, elija el botón **Atrás**.
 
      Se crean el nuevo proyecto y la solución, y se muestra el archivo *Connect.cs* del nuevo complemento en el **Editor de código**.
 
@@ -119,24 +111,11 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
 1.  En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, elija **Agregar** y luego seleccione **Nuevo proyecto**.
 
-     Aparecerá el cuadro de diálogo **Nuevo proyecto**.
+2. Cree un proyecto **Biblioteca de controles de Windows Forms**.
 
-2.  En **Plantillas instaladas**, expanda **Visual Basic** o **Visual C#** y seleccione **Windows**.
+3.  Desde el **cuadro de herramientas**, arrastre <xref:System.Windows.Forms.DataGridView> a la superficie de userControl1.
 
-    > [!NOTE]
-    > En este tema se utiliza Visual C# para el código muestra.
-
-3.  En la lista de plantillas, seleccione **Biblioteca de controles de Windows Forms**.
-
-4.  En **Nombre**, escriba el nombre del complemento. Por ejemplo, **WebPerfTestResultsViewerControl**.
-
-5.  Elija **Aceptar**.
-
-     Se agrega el proyecto de biblioteca de controles de Windows Forms WebPerfTestResultsViewerControl al **Explorador de soluciones** y se muestra *UserControl1.cs* en modo de diseño.
-
-6.  Desde el **cuadro de herramientas**, arrastre <xref:System.Windows.Forms.DataGridView> a la superficie de userControl1.
-
-7.  Haga clic en el glifo de etiqueta de acción (![Glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif)) situado en la esquina superior derecha de <xref:System.Windows.Forms.DataGridView> y siga estos pasos:
+4. Haga clic en el glifo de etiqueta de acción (![Glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif)) situado en la esquina superior derecha de <xref:System.Windows.Forms.DataGridView> y siga estos pasos:
 
     1.  Elija **Acoplar en contenedor primario**.
 
@@ -154,13 +133,13 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
     7.  Elija **Cerrar**.
 
-8.  En la ventana **Propiedades**, cambie la propiedad **(Nombre)** de <xref:System.Windows.Forms.DataGridView> por **resultControlDataGridView**.
+5.  En la ventana **Propiedades**, cambie la propiedad **(Nombre)** de <xref:System.Windows.Forms.DataGridView> por **resultControlDataGridView**.
 
-9. En la superficie de diseño, haga clic con el botón derecho y seleccione **Ver código**.
+6. En la superficie de diseño, haga clic con el botón derecho y seleccione **Ver código**.
 
      El archivo *UserControl1.cs* se abre en el **Editor de código**.
 
-10. Cambie el nombre de clase <xref:System.Windows.Forms.UserControl> con instancias de UserContro1 a resultControl:
+7. Cambie el nombre de clase <xref:System.Windows.Forms.UserControl> con instancias de UserContro1 a resultControl:
 
     ```csharp
     namespace WebPerfTestResultsViewerControl
@@ -178,8 +157,6 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
      Después se agrega código adicional al archivo *Connect.cs*.
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Agregar código a WebPerfTestResultsViewerAddin
-
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>Para agregar código al complemento de Visual Studio para extender el visor de resultados de pruebas web
 
 1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **Referencias** en el proyecto WebPerfTestResultsViewerAddin y seleccione **Agregar referencia**.
 
@@ -276,8 +253,6 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
      Ahora que el código se ha completado para el complemento de Visual Studio, necesita agregar el método Update a resultControl en el proyecto WebPerfTestResultsViewerControl.
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Agregar código a WebPerfTestResultsViewerControl
-
-### <a name="to-add-code-to-the-user-control"></a>Para agregar código al control de usuario
 
 1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto WebPerfTestResultsViewerControl y seleccione **Propiedades**.
 

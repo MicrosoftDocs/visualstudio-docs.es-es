@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4d194ab0b308f436692be5dd0e7d1bc3315725
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867831"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354755"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Inicio rápido: Primer vistazo al IDE de Visual Studio
 
@@ -41,7 +41,7 @@ Si cierra la **página de inicio** y quiere verla de nuevo, puede volver a abrir
 
 Lo primero que se ve al abrir Visual Studio es la ventana de inicio. La ventana de inicio está concebida para ayudar a "obtener código" más rápido. Tiene opciones para clonar o desproteger código, abrir una solución o un proyecto existente, crear un nuevo proyecto o simplemente abrir una carpeta que contiene algunos archivos de código.
 
-[![](media/vs-2019/start-window-labeled.png "Ventana de inicio de Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+[![](media/vs-2019/start-window-labeled.png "Ventana de inicio de Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
 
 Si es la primera vez que se usa Visual Studio, la lista de proyectos recientes está vacía.
 
@@ -71,7 +71,7 @@ Para seguir examinando las características de Visual Studio, se va a crear un n
 
 1. En la ventana de inicio, elija **Crear un proyecto nuevo**.
 
-   Se abre una ventana que indica **Crear un proyecto nuevo**. A menudo, esta ventana se conoce como el cuadro de diálogo **Nuevo proyecto** y es aquí donde puede examinar y elegir una plantilla de proyecto. También tiene una lista de las plantillas de proyecto recientemente usadas.
+   Se abre un cuadro de diálogo de nombre **Crear un proyecto**. Aquí, puede buscar, filtrar y seleccionar una plantilla de proyecto. También muestra una lista de las plantillas de proyecto recientemente usadas.
 
 1. En el cuadro de búsqueda superior, escriba **consola** para filtrar la lista de tipos de proyecto a solo los que incluyen "consola" en el nombre. Para refinar los resultados de la búsqueda, elija **C#** (u otro lenguaje que prefiera) en el selector de **Lenguaje**.
 

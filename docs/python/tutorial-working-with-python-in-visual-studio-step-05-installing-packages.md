@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 786b116d153eeea2ddb1c495f88ae0cd6ce135c6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194903"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354774"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Paso 5: Instalación de paquetes en el entorno de Python
 
@@ -46,7 +46,7 @@ La comunidad de desarrolladores de Python ha generado miles de paquetes útiles 
 
    Una barra de progreso pequeña podría aparecer debajo del entorno par indicar que Visual Studio está compilando la base de datos de IntelliSense para el paquete recién instalado. La pestaña **IntelliSense** también muestra información más detallada. Tenga en cuenta que hasta que se complete dicha base de datos, las características de IntelliSense, como la finalización automática y la comprobación de sintaxis, no estarán activas en el editor de ese paquete.
 
-   Tenga en cuenta que **Visual Studio 2017, versión 15.6** y posteriores, utiliza un método diferente y más rápido para trabajar con IntelliSense, y muestra un mensaje a tal efecto en la pestaña **IntelliSense**.
+   Tenga en cuenta que Visual Studio 2017, versión 15.6 y versiones posteriores, utiliza otro método más rápido para trabajar con IntelliSense y muestra un mensaje a tal efecto en la pestaña **IntelliSense**.
 
 7. Cree un proyecto con **Archivo** > **Nuevo** > **Proyecto** y seleccione la plantilla **Aplicación Python**. En el archivo de código que aparece, pegue el código siguiente, que crea una onda de coseno como en los pasos del tutorial anteriores, pero esta vez trazada en un gráfico:
 

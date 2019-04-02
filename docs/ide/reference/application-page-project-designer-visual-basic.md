@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223278"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355207"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -59,7 +59,7 @@ Para obtener información sobre cómo tener acceso a esta propiedad mediante pro
 
 Especifica la versión de .NET Framework a la que se destina la aplicación. Esta opción puede tener valores diferentes dependiendo de qué versiones de .NET Framework están instaladas en el equipo.
 
-El valor predeterminado coincide con la plataforma de destino que ha especificado en el cuadro de diálogo **Nuevo proyecto**.
+El valor predeterminado coincide con la plataforma de destino especificada al crear el proyecto.
 
 > [!NOTE]
 > Los paquetes de requisitos previos que se muestran en el [cuadro de diálogo Requisitos previos](../../ide/reference/prerequisites-dialog-box.md) se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, debe especificar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.

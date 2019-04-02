@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: e2df347edfa2ea6672449dfbaa5f3740e94cd11c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153020"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354848"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Inicio rápido: Depurar ASP.NET con el depurador de Visual Studio
 
@@ -25,13 +25,13 @@ El depurador de Visual Studio proporciona muchas características de gran eficac
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
-1. En Visual Studio, elija **Archivo > Nuevo > Proyecto**.
+1. Abra Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Aparece el cuadro de diálogo **Crear un proyecto nuevo**. Escriba **asp.net** en el cuadro de búsqueda para filtrar los resultados, elija **Aplicación web ASP.NET Core** y haga clic en **Siguiente**. Luego escriba un nombre como **MyDbgApp** y elija **Crear**.
+    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **asp.net**, elija **Plantillas** y luego, **Crear una aplicación web ASP.NET Core**. En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Aparece el cuadro de diálogo **Nuevo proyecto**. En **Visual C#**, elija **Web** y, luego, en el panel central, **Aplicación web ASP.NET Core**. Escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#**, elija **Web** y luego, en el panel central, **Aplicación web ASP.NET Core**. Escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
 
     En el cuadro de diálogo que aparece, elija **Aplicación web** en el panel central y luego haga clic en **Aceptar**.
 

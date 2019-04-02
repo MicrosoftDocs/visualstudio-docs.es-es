@@ -2,7 +2,7 @@
 title: Actualizar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo actualizar Visual Studio a la versión más reciente, paso a paso.
-ms.date: 03/09/2019
+ms.date: 03/21/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 945250660e80353ea536986e5149f8814d1fe563
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983980"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323599"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Actualización de Visual Studio a la versión más reciente
 
@@ -172,9 +172,9 @@ Le recomendamos que actualice a la [versión más reciente](/visualstudio/releas
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Actualización de Visual Studio para Mac](/visualstudio/mac/update).
 
-## <a name="update-visual-studio-2019"></a>Actualización a Visual Studio 2019
+Aquí se explica cómo actualizar Visual&nbsp;Studio&nbsp;2019&nbsp;Preview o Visual&nbsp;Studio&nbsp;2019&nbsp;RC.
 
-A continuación le mostramos cómo usar el Instalador de Visual Studio para actualizar a la versión preliminar de Visual&nbsp;Studio&nbsp;2019&nbsp;o a la versión candidata para lanzamiento de Visual&nbsp;Studio&nbsp;2019&nbsp;.
+## <a name="use-the-visual-studio-installer"></a>Uso del instalador de Visual Studio
 
 1. Abra el instalador.
 
@@ -188,13 +188,37 @@ A continuación le mostramos cómo usar el Instalador de Visual Studio para actu
 
      ![Selección de la edición de Visual Studio 2019 para actualizar](media/vs2019-update-visual-studio-community-rc.png "Selección de la edición de Visual Studio 2019 para actualizar")
 
-1. Haga clic en el botón **Actualizar** para instalar las actualizaciones.
+1. Elija **Actualizar** para instalar las actualizaciones.
 
     ![Selección del botón Actualizar para instalar las actualizaciones](media/vs2019-choose-update-visual-studio-community-rc.png "Selección del botón Actualizar para instalar las actualizaciones")
 
-1. Una vez completada la actualización, seleccione **Iniciar** para abrir Visual Studio.
+1. Una vez completada la actualización, elija **Iniciar** para abrir Visual Studio.
 
     ![Selección del botón Iniciar para abrir Visual Studio](media/vs2019-choose-launch-visual-studio-community-rc.png "Selección del botón Iniciar para abrir Visual Studio")
+
+## <a name="use-the-ide"></a>Uso del IDE
+
+1. Abra Visual Studio. 
+ 
+    ![Apertura de Visual Studio 2019 RC](media/vs2019-visual-studio-rc.png "Apertura de Visual Studio 2019 desde Windows")
+
+1. En **Introducción**, elija cualquier opción para abrir el IDE.
+
+    ![Apertura del Instalador de Visual Studio](media/vs2019-choose-option-from-get-started.png "Apertura del Instalador de Visual Studio")
+
+    Se abre Visual Studio. En el IDE, aparece un mensaje **Actualización de Visual Studio 2019**.
+
+    ![Mensaje "Actualización de Visual Studio 2019" en el IDE](media/vs2019-update-visual-studio-ide-message.png "Mensaje \"Actualización de Visual Studio 2019\" en el IDE")
+ 
+1. En el mensaje **Actualización de Visual Studio 2019**, elija **Ver detalles**.
+
+   ![Elección del botón Ver detalles en el mensaje de actualización del IDE de Visual Studio 2019](media/vs2019-update-visual-studio-ide-view-details.png "Elección del botón Ver detalles en el mensaje de actualización de Visual Studio 2019")
+
+1. En el cuadro de diálogo **La actualización se ha descargado y está lista para instalarse**, elija **Actualizar**.
+
+     ![Elección del botón Actualizar en el cuadro de diálogo "La actualización se ha descargado y está lista para instalarse"](media/vs2019-update-visual-studio-community-rc-from-ide.png "Elección del botón Actualizar en el cuadro de diálogo \"La actualización se ha descargado y está lista para instalarse\"")
+
+   Visual Studio se cierra y vuelve a abrirse.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
