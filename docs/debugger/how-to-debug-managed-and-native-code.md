@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 055e7d106611d23254f317bdbe29a1ac1e3d9ec9
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953867"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476012"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depuración de C# y C++ en la misma sesión de depuración
 
@@ -52,7 +52,18 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 
 **Para crear los archivos del proyecto de DLL:**
 
-1. En Visual Studio, seleccione **Archivo** > **Nuevo** > **Proyecto**.
+1. Abra Visual Studio y cree un proyecto.
+
+    ::: moniker range=">=vs-2019"
+    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Proyecto vacío**, elija **Plantillas** y luego, **Create new Empty Project project** (Crear proyecto vacío) para C++. En el cuadro de diálogo que se abre, elija **Crear**. Luego, escriba un nombre como **Mixed_Mode_Debugging** y haga clic en **Crear**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C++**, elija **Otros** y luego, en el panel central, **Proyecto vacío**. Luego, escriba un nombre como **Mixed_Mode_Debugging** y haga clic en **Aceptar**.
+    ::: moniker-end
+
+    Si no ve la plantilla de proyecto **Proyecto vacío**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+
+    Visual Studio crea el proyecto.
 
 1. En el cuadro de diálogo **Nuevo proyecto**, en **Visual C++**, seleccione **Otro** y luego **Proyecto vacío** en el panel central.
 
@@ -71,6 +82,7 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
     ```cpp
     #include "Mixed_Mode.h"
     ```
+
 1. En el **Explorador de soluciones**, seleccione **Archivos de encabezado** y luego **Proyecto** > **Agregar nuevo elemento**. O bien, haga clic con el botón derecho en **Archivos de encabezado** y seleccione **Agregar** > **Nuevo elemento**.
 
 1. En el cuadro de diálogo **Nuevo elemento**, seleccione **Archivo de encabezado (.h)**. En el campo **Nombre**, escriba **Mixed_Mode.h** y seleccione **Agregar**.
@@ -117,18 +129,23 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 
 ## <a name="create-a-simple-managed-app-to-call-the-dll"></a>Crear una aplicación administrada simple para llamar a la DLL
 
-1. En Visual Studio, elija **Archivo** > **Nuevo** > **Proyecto**.
+1. Abra Visual Studio y cree un nuevo proyecto.
 
-   > [!NOTE]
-   > Aunque también podría agregar el nuevo proyecto administrado a la solución existente de C++, al crear una nueva solución se admiten más escenarios de depuración.
+    ::: moniker range=">=vs-2019"
+    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y luego, **Create new Console App (.NET Framework) project** (Crear proyecto de aplicación de consola [.NET Framework]) para C#. En el cuadro de diálogo que se abre, elija **Crear**.
 
-1. En el cuadro de diálogo **Nuevo proyecto**, seleccione **Visual C#** y, en el panel central:
+    Luego, escriba un nombre como **Mixed_Mode_Calling_App** y haga clic en **Crear**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#**, elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola (.NET Framework)** o **Aplicación de consola (.NET Core)**.
 
-   - Para una aplicación .NET Framework, seleccione **Aplicación de consola (.NET Framework)**.
+    Luego, escriba un nombre como **Mixed_Mode_Calling_App** y haga clic en **Aceptar**.
+    ::: moniker-end
 
-   - Para una aplicación .NET Core, seleccione **Aplicación de consola (.NET Core)**.
+    Si no ve la plantilla de proyecto **Aplicación de consola**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
-1. En el campo **Nombre**, escriba **Mixed_Mode_Calling_App** y seleccione **Aceptar**.
+    > [!NOTE]
+    > Aunque también podría agregar el nuevo proyecto administrado a la solución existente de C++, al crear una nueva solución se admiten más escenarios de depuración.
 
    Visual Studio crea el proyecto vacío y lo muestra en el **Explorador de soluciones**.
 

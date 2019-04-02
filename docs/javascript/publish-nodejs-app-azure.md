@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 20df5476a2ca6cf8fb0ffbf22e8106e51d17128d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d4fbe922512194c6dd87ffc72e27cfcf9c7631f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070313"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355755"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar una aplicación de Node.js en Azure (App Service de Linux)
 
@@ -59,15 +59,13 @@ En este tutorial aprenderá a:
 
 1. Abra Visual Studio.
 
-1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
-
 1. Cree una aplicación de Express de TypeScript.
 
     ::: moniker range=">=vs-2019"
-    En el cuadro de diálogo **Crear un nuevo proyecto**, escriba **javascript** en el cuadro de búsqueda para filtrar los resultados, elija **Aplicación básica de Azure Node.js Express 4** y seleccione **Siguiente**. Luego, elija **Crear**.
+    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Create a new Basic Azure Node.js Express 4 application** (Crear una aplicación básica de Azure Node.js Express 4) (TypeScript). En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y después seleccione **Node.js**. En el panel central, elija **Aplicación básica de Azure Node.js Express 4** y después haga clic en **Aceptar**.
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **TypeScript** y elija **Node.js**. En el panel central, elija **Aplicación básica de Azure Node.js Express 4** y después haga clic en **Aceptar**.
 
     ![Creación de una aplicación de Express de TypeScript](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end

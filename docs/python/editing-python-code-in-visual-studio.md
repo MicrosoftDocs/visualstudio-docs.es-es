@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155529"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355557"
 ---
 # <a name="edit-python-code"></a>Editar código de Python
 
@@ -31,9 +31,9 @@ También puede usar el **Examinador de objetos** de Visual Studio (**Ver** > **O
 
 IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring). Visual Studio 2017 versión 15.7 y posteriores también admite [sugerencias de tipo](#type-hints).
 
-Para mejorar el rendimiento, IntelliSense en **Visual Studio 2017, versión 15.5** y anteriores, depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del **Explorador de soluciones**) en la pestaña **IntelliSense** (vea [Referencia de pestañas de la ventana Entorno de Python](python-environments-window-tab-reference.md#intellisense-tab)).
+Para mejorar el rendimiento, IntelliSense en Visual Studio 2017, versión 15.5 y versiones anteriores, depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del **Explorador de soluciones**) en la pestaña **IntelliSense** (vea [Referencia de pestañas de la ventana Entorno de Python](python-environments-window-tab-reference.md#intellisense-tab)).
 
-**Visual Studio 2017, versión 15.6** y posteriores utiliza un medio diferente para proporcionar finalizaciones de IntelliSense que no dependen de la base de datos.
+Visual Studio 2017, versión 15.6 y posteriores, se utiliza un medio diferente para proporcionar finalizaciones de IntelliSense que no dependen de la base de datos.
 
 ### <a name="completions"></a>Finalizaciones
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58d8cba033fd3e43b8e54afdc7651a45df17a59a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f8fb7c864f484208eaa647131ac7a32c8da665f8
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069988"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355492"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -82,15 +82,13 @@ En primer lugar, cree un proyecto de aplicación web de Node.js.
 
 1. Abra Visual Studio.
 
-1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
-
 1. Cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    En el cuadro de diálogo **Crear un nuevo proyecto**, escriba **javascript** en el cuadro de búsqueda para filtrar los resultados, elija **Aplicación web en blanco de Node.js** y haga clic en **Siguiente**. Luego, elija **Crear**.
+    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Aplicación web en blanco de Node.js** (JavaScript). En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y después seleccione **Node.js**. En el panel central, elija **Aplicación web en blanco de Node.js**, escriba el nombre **NodejsWebAppBlank** y haga clic en **Aceptar**.
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y elija **Node.js**. En el panel central, elija **Aplicación web en blanco de Node.js**, escriba el nombre **NodejsWebAppBlank** y haga clic en **Aceptar**.
     ::: moniker-end
     Si no ve la plantilla de proyecto **Aplicación web en blanco de Node.js**, debe agregar la carga de trabajo **Desarrollo de Node.js**. Para instrucciones detalladas, consulte los [Requisitos previos](#prerequisites).
 

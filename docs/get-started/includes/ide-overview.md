@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: c411df964d0f0ffb6a96484f6ad4d245d561410c
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070339"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58342656"
 ---
 El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio creativo que se puede usar para editar, depurar y compilar código y, después, publicar una aplicación. Un entorno de desarrollo integrado (IDE) es un programa con numerosas características que se pueden usar para muchos aspectos del desarrollo de software. Más allá del editor estándar y el depurador que proporcionan la mayoría de IDE, Visual Studio incluye compiladores, herramientas de finalización de código, diseñadores gráficos y muchas más características para facilitar el proceso de desarrollo de software.
 
@@ -232,11 +232,11 @@ Vamos a profundizar y crear un programa sencillo.
 
 1. Abra Visual Studio.
 
-   La ventana de inicio aparece con varias opciones para clonar un repositorio, abrir un proyecto reciente o crear un proyecto nuevo.
+   La ventana de inicio aparece con varias opciones para clonar un repositorio, abrir un proyecto reciente o crear un proyecto.
 
 1. Elija **Crear un nuevo proyecto**.
 
-   ![Ventana de inicio Crear un nuevo proyecto de Visual Studio](../media/vs-2019/start-window-create-new-project.png)
+   ![Opción Crear un proyecto en la ventana de inicio de Visual Studio](../media/vs-2019/start-window-create-new-project.png)
 
    La ventana **Crear un nuevo proyecto** se abre y muestra varias *plantillas* de proyecto. Una plantilla contiene los archivos básicos y la configuración necesaria para un tipo de proyecto concreto.
 

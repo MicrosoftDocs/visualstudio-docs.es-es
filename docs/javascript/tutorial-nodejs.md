@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48fe46b8f46c9ea3f6c14ebe44315eafa1c56d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070326"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355570"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y Express en Visual Studio
 
@@ -75,15 +75,13 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
 
 1. Abra Visual Studio.
 
-1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
-
 1. Cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    En el cuadro de diálogo **Crear un nuevo proyecto**, escriba **javascript** en el cuadro de búsqueda para filtrar los resultados, elija **Aplicación básica de Azure Node.js Express 4** y seleccione **Siguiente**. Luego, elija **Crear**.
+    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Create a new Basic Azure Node.js Express 4 application** (Crear una aplicación básica de Azure Node.js Express 4) (JavaScript). En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y después seleccione **Node.js**. En el panel central, elija **Aplicación básica de Azure Node.js Express 4** y después haga clic en **Aceptar**.
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y elija **Node.js**. En el panel central, elija **Aplicación básica de Azure Node.js Express 4** y después haga clic en **Aceptar**.
     ::: moniker-end
     Si no ve la plantilla de proyecto **Aplicación básica de Azure Node.js Express 4**, debe agregar la carga de trabajo **Desarrollo de Node.js**. Para instrucciones detalladas, consulte los [Requisitos previos](#prerequisites).
 

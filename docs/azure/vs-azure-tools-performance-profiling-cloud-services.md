@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 12fcc2813b36968270e0eeba968a5572f904fc1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd436a6b7e38c8f76de5d113c326e194e4011155
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946953"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323206"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Probar el rendimiento de un servicio en la nube
 ## <a name="overview"></a>Información general
@@ -101,7 +101,7 @@ Se crea una sesión de generación de perfiles para cada instancia de un rol en 
 2. Elija el nodo de Azure Compute y, a continuación, elija el nodo de implementación de Azure para el servicio en la nube que seleccionó para generar perfiles cuando publicó desde Visual Studio.
 3. Para ver los informes de generación de perfiles para una instancia, elija el rol en el servicio, abra el menú contextual para una instancia específica y, a continuación, elija **Ver el informe de generación de perfiles**.
 
-    El informe, un archivo .vsp, se descarga desde Azure y el estado de la descarga aparece en el registro de actividades de Azure. Al completarse la descarga, el informe de generación de perfiles aparece en una pestaña en el editor de Visual Studio denominada <Role name>*<Instance Number>*<identifier>.vsp. Aparecen datos de resumen del informe.
+    El informe, un archivo .vsp, se descarga desde Azure y el estado de la descarga aparece en el registro de actividades de Azure. Al completarse la descarga, el informe de generación de perfiles aparece en una pestaña en el editor de Visual Studio denominada <nombre de rol\>*<número de instancia\>*<identificador\>.vsp. Aparecen datos de resumen del informe.
 4. Para mostrar diferentes vistas del informe, en la lista Vista actual, elija el tipo de vista que desee. Para obtener más información, consulte [Vistas de informes de las herramientas de generación de perfiles](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Pasos siguientes

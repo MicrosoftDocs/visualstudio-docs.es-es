@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708334"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355609"
 ---
 # <a name="options-page-environment-node-properties"></a>Página de opciones, Propiedades de nodo Entorno
 
@@ -120,7 +120,7 @@ En este artículo se describen las páginas (o colecciones de propiedades) asoci
 |Nombre de elemento de propiedad|Valor|Descripción|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (String)|Determina si el IDE guarda todo antes de obtener una vista previa o ejecutar un proyecto compilado.|
-|ProjectsLocation|Get/Set (String)|Determina el directorio predeterminado donde guarda los proyectos nuevos el cuadro de diálogo **Agregar proyecto**.|
+|ProjectsLocation|Get/Set (String)|Determina el directorio predeterminado donde se guardan los nuevos proyectos.|
 |ShowOutputWindowBeforeBuild|Get/Set (Boolean)|Determina si al iniciar una compilación se muestra la ventana **Salida**.|
 |ShowTaskListAfterBuild|Get/Set (Boolean)|Determina si, al producirse una operación de compilación incorrecta, se muestra la **Lista de tareas** cuando se completa la compilación.|
 |TrackFileSelectionInExplorer|Get/Set (Boolean)|Determina si se realiza un seguimiento del elemento actual en el **Explorador de soluciones**.|

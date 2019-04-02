@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba118f9b0b08b5e092fa85ccc3940cd41a7ff9c8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222537"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355346"
 ---
 # <a name="application-page-project-designer-c"></a>Página de aplicación, Diseñador de proyectos (C#)
 
@@ -52,7 +52,7 @@ Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangPro
 
 Especifica la versión de .NET Framework a la que se destina la aplicación. Esta opción puede tener valores diferentes dependiendo de qué versiones de .NET Framework están instaladas en el equipo.
 
-El valor predeterminado es el del marco de destino que ha seleccionado en el cuadro de diálogo **Nuevo proyecto**.
+El valor predeterminado corresponde a la plataforma de destino seleccionada al crear el proyecto.
 
 > [!NOTE]
 > Los paquetes de requisitos previos incluidos en el [cuadro de diálogo Requisitos previos](../../ide/reference/prerequisites-dialog-box.md) se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, debe seleccionar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.

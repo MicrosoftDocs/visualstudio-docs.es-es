@@ -1,34 +1,66 @@
 ---
-title: Organización de plantillas
+title: Ubicación de plantillas
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-- Visual Studio templates, organizing
-- templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a228c882ff573b9e319d5fdbeb1ba6472cc5e3d5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221659"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415465"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedimiento Buscar y organizar plantillas de proyecto y elemento
 
-Los archivos de plantilla se deben colocar en una ubicación que Visual Studio reconozca de forma que estas aparezcan en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**. También puede crear subcategorías personalizadas en la ubicación de la plantilla de usuario, y las categorías se muestran en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**.
+Los archivos de plantilla se deben colocar en una ubicación conocida para que se muestren en los cuadros de diálogo de nuevo proyecto y de nuevo elemento.
+
+::: moniker range="vs-2017"
+
+También puede crear subcategorías personalizadas en la ubicación de la plantilla de usuario, y las categorías se muestran en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**.
+
+::: moniker-end
 
 ## <a name="locate-templates"></a>Ubicación de plantillas
 
 Las plantillas instaladas y las plantillas de usuario se almacenan en dos ubicaciones distintas.
 
+### <a name="installed-templates"></a>Plantillas instaladas
+
+De manera predeterminada, las plantillas que se instalan con Visual Studio se encuentran en:
+
+::: moniker range="vs-2017"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\\Common7\IDE\ProjectTemplates\\<Language\>\\<Locale ID\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+
+Por ejemplo, el directorio siguiente contiene las plantillas de elemento de Visual Basic para inglés (LCID 1033):
+
+*C:\\Archivos de programa (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\\Common7\IDE\ProjectTemplates\\<Language\>\\<Locale ID\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+
+Por ejemplo, el directorio siguiente contiene las plantillas de elemento de Visual Basic para inglés (LCID 1033):
+
+*C:\\Archivos de programa (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
 ### <a name="user-templates"></a>Plantillas de usuario
 
-Si agrega un archivo comprimido (*.zip*) que incluye un archivo *.vstemplate* al directorio de plantillas de usuario, la plantilla aparece en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**. De manera predeterminada, las plantillas de usuario se encuentran en:
+Si agrega un archivo comprimido (*.zip*) que incluye un archivo *.vstemplate* al directorio de plantillas de usuario, la plantilla aparece en los cuadros de diálogo de nuevo proyecto y de nuevo elemento. De manera predeterminada, las plantillas de usuario se encuentran en:
 
 ::: moniker range="vs-2017"
 
@@ -55,19 +87,9 @@ Por ejemplo, el siguiente directorio contiene las plantillas de proyecto de usua
 ::: moniker-end
 
 > [!TIP]
-> Puede establecer la ubicación de las plantillas de usuario en **Herramientas** > **Opciones** > **Proyectos y soluciones** > **Ubicaciones**.
+> Puede cambiar la ubicación conocida de las plantillas de usuario en **Herramientas** > **Opciones** > **Proyectos y soluciones** > **Ubicaciones**.
 
-### <a name="installed-templates"></a>Plantillas instaladas
-
-De manera predeterminada, las plantillas que se instalan con Visual Studio se encuentran en:
-
-- *\\< directorioDeInstalaciónDeVisualStudio\>\Common7\IDE\ItemTemplates\\<Lenguade de programación\>\\<Locale ID>*
-
-- *\\< directorioDeInstalaciónDeVisualStudio\>\Common7\IDE\ProjectTemplates\\<Lenguade de programación\>\\<Locale ID>*
-
-Por ejemplo, el directorio siguiente contiene las plantillas de elemento de Visual Basic para inglés (LCID 1033):
-
-- *C:\\< directorioDeInstalaciónDeVisualStudio\>\Common7\IDE\ItemTemplates\VisualBasic\1033*
+::: moniker range="vs-2017"
 
 ## <a name="organize-templates"></a>Organización de plantillas
 
@@ -76,7 +98,7 @@ Las categorías de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo 
 > [!NOTE]
 > No puede crear una nueva categoría en el nivel del lenguaje de programación. Solo se pueden crear categorías nuevas dentro de cada lenguaje.
 
-### <a name="to-create-new-user-project-template-categories"></a>Para crear nuevas categorías de plantillas de proyecto de usuario
+### <a name="create-new-user-project-template-categories"></a>Creación de categorías de plantillas de proyecto de usuario
 
 1. Cree una carpeta en la carpeta del lenguaje de programación del directorio de plantillas de proyecto de usuario. Por ejemplo, para establecer una categoría **HolaMundo** para plantillas de proyecto de C#, cree el siguiente directorio:
 
@@ -84,11 +106,11 @@ Las categorías de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo 
 
 1. Coloque todas las plantillas de esta categoría en la nueva carpeta.
 
-1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. En el menú **Archivo**, elija **Nuevo** > **Proyecto**.
 
-   La categoría **HolaMundo** aparecerá en el cuadro de diálogo **Nuevo proyecto**, en **Instalado** > **Visual C#**.
+   La categoría **HelloWorld** aparecerá en el cuadro de diálogo **Nuevo proyecto**, en **Instalado** > **Visual C#**.
 
-### <a name="to-create-new-user-item-template-categories"></a>Para crear nuevas categorías de plantillas de elemento de usuario
+### <a name="create-new-user-item-template-categories"></a>Creación de categorías de plantillas de elemento de usuario
 
 1. Cree una carpeta en la carpeta del lenguaje de programación del directorio de plantillas de elemento de usuario. Por ejemplo, para establecer una categoría **HolaMundo** para plantillas de elemento de C#, cree el siguiente directorio:
 
@@ -98,13 +120,11 @@ Las categorías de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo 
 
 1. Cree un proyecto o abra uno existente. En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
 
-   La categoría **HolaMundo** aparecerá en el cuadro de diálogo **Agregar nuevo elemento**, en **Instalado** > **Elementos de Visual C#**.
+   La categoría **HelloWorld** aparecerá en el cuadro de diálogo **Agregar nuevo elemento**, en **Instalado**>**Elementos de Visual C#**.
 
 ### <a name="display-templates-in-parent-categories"></a>Visualización de plantillas en categorías primarias
 
 Puede permitir que las plantillas contenidas en subcategorías se muestren en sus categorías primarias utilizando el elemento `NumberOfParentCategoriesToRollUp` en el archivo *.vstemplate*. Estos pasos son idénticos para plantillas de proyecto y plantillas de elemento.
-
-#### <a name="to-display-templates-in-parent-categories"></a>Para mostrar las plantillas en categorías primarias
 
 1. Busque el archivo *.zip* que contiene la plantilla.
 
@@ -133,6 +153,8 @@ Puede permitir que las plantillas contenidas en subcategorías se muestren en su
 1. Elimine los archivos de plantilla extraídos y el archivo *.zip* de plantilla antiguo.
 
 1. Coloque el nuevo archivo *.zip* en el directorio que contenía el archivo *.zip* eliminado.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 

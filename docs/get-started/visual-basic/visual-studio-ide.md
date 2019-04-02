@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c1273c5475fe6090648b61ca351ae3b507702708
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873264"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324086"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Le damos la bienvenida al IDE de Visual Studio | Visual Basic
 
@@ -227,7 +227,7 @@ Para cambiar al tema **Oscuro**:
 
 1. Abra Visual Studio. En la ventana de inicio, elija **Continuar sin código**.
 
-   ![Ventana de inicio de Visual Studio 2019](media/vs-2019/continue-without-code.png)
+   ![Ventana de inicio de Visual Studio 2019](media/vs-2019/continue-without-code.png)
 
    Se abre el IDE.
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907690"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355677"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 
@@ -54,11 +54,11 @@ En la tabla siguiente se muestran los parámetros de plantilla reservados que se
 |guid[1-10]|GUID utilizado para reemplazar el GUID del proyecto en un archivo de proyecto. Puede especificar hasta 10 GUID únicos (por ejemplo, `guid1`).|
 |itemname|Nombre proporcionado por el usuario en el cuadro de diálogo **Agregar nuevo elemento**.|
 |machinename|Nombre del equipo actual (por ejemplo, Equipo01).|
-|projectname|Nombre proporcionado por el usuario en el cuadro de diálogo **Nuevo proyecto**.|
+|projectname|Nombre especificado por el usuario al crear el proyecto.|
 |registeredorganization|Valor de la clave del Registro de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Espacio de nombres raíz del proyecto actual. Este parámetro solo se aplica a las plantillas de elementos.|
 |safeitemname|Nombre proporcionado por el usuario en el cuadro de diálogo **Agregar nuevo elemento**, tras quitar todos los caracteres no seguros y los espacios.|
-|safeprojectname|Nombre proporcionado por el usuario en el cuadro de diálogo **Nuevo proyecto**, tras quitar todos los caracteres no seguros y los espacios.|
+|safeprojectname|Nombre especificado por el usuario al crear el proyecto, tras quitar todos los caracteres no seguros y los espacios.|
 |hora|Hora actual en el formato DD/MM/AAAA 00:00:00.|
 |SpecificSolutionName|Nombre de la solución. Cuando se activa "Crear directorio para la solución", `SpecificSolutionName` tiene el nombre de la solución. Cuando no se activa "Crear directorio para la solución", `SpecificSolutionName` está en blanco.|
 |userdomain|Dominio del usuario actual.|

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949439"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416141"
 ---
 # <a name="create-a-unit-test-project"></a>Crear un proyecto de prueba unitaria
 
@@ -23,11 +23,23 @@ Las pruebas unitarias a menudo reflejan la estructura del código sometido a pru
 
 ## <a name="to-create-a-unit-test-project"></a>Para crear un proyecto de prueba unitaria
 
-1. En el menú **Archivo**, elija **Nuevo** y después **Proyecto**. O bien, presione **Ctrl**+**Mayús**+**N**.
+1. En el menú **Archivo**, elija **Nuevo** > **Proyecto** o presiones **Ctrl**+**Mayús**+**N**.
+
+::: moniker range="vs-2017"
 
 2. En el cuadro de diálogo **Nuevo proyecto**, expanda el nodo **Instalado**, elija el lenguaje que quiere usar para el proyecto de prueba y, después, elija **Probar**.
 
 3. Para usar uno de los marcos de pruebas unitarias de Microsoft, elija **Proyecto de prueba unitaria** en la lista de plantillas de proyecto. De lo contrario, elija la plantilla de proyecto del marco de pruebas unitarias que desea usar. Asigne un nombre al proyecto y, después, haga clic en **Aceptar**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. En el cuadro de búsqueda de la página **Crear un proyecto**, escriba **prueba unitaria**. Seleccione la plantilla de proyecto **Proyecto de prueba unitaria (.NET Framework)** y haga clic en **Siguiente**.
+
+3. En la página **Configurar el nuevo proyecto**, escriba un nombre para el proyecto y haga clic en **Crear**.
+
+::: moniker-end
 
 4. En el proyecto de prueba unitaria, agregue una referencia al código en pruebas. Para agregar una referencia a un proyecto de código de la misma solución:
 

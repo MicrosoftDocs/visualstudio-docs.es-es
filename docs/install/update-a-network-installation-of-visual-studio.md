@@ -13,12 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983837"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475986"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Actualización de una instalación basada en red de Visual Studio
 
@@ -100,6 +102,9 @@ vs_enterprise.exe puede invocarse dentro de layoutDir.
 > Algunos archivos de metadatos importantes que la opción `--verify` necesita deben estar en la caché de diseño sin conexión. Si faltan estos archivos de metadatos, "--verify" no puede ejecutarse y la instalación genera un error. Si experimenta este error, vuelva a crear un nuevo diseño sin conexión en una carpeta diferente (o en la misma carpeta de la caché sin conexión). Para hacer esto, ejecute el mismo comando de diseño que ha usado para crear el diseño sin conexión inicial. Por ejemplo: `Vs_enterprise.exe --layout <layoutDir>`.
 
 Microsoft publica actualizaciones de Visual Studio periódicamente, por lo que el diseño que cree puede que no pertenezca a la misma versión que el diseño inicial.
+
+> [!NOTE]
+> La comprobación solo funciona para la versión más reciente de una versión secundaria específica de Visual Studio. En cuanto se lance una nueva versión, no funcionará la comprobación de anteriores versiones de nivel de revisión de la misma versión secundaria.
 
 ## <a name="how-to-fix-a-layout"></a>Cómo corregir un diseño
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 61d37adfdc74a5b2a9c22ba9f3e5a92622cbbab6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194346"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355531"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
@@ -75,7 +75,7 @@ Visual Studio ofrece varias maneras de configurar un proyecto de Python, desde c
 
 ![Cuadro de diálogo Nuevo proyecto con plantillas de Python](media/projects-new-project-dialog.png)
 
-En la tabla siguiente se muestra un resumen de las plantillas disponibles en Visual Studio 2017 (no todas las plantillas están disponibles en todas las versiones anteriores):
+En la tabla siguiente se muestra un resumen de las plantillas disponibles en Visual Studio 2017 y versiones posteriores (no todas las plantillas están disponibles en todas las versiones anteriores):
 
 | Plantilla | Descripción |
 | --- | --- |
@@ -88,7 +88,7 @@ En la tabla siguiente se muestra un resumen de las plantillas disponibles en Vis
 | **Página de IronPython y Silverlight** | Proyecto de IronPython que se ejecuta en un explorador mediante Silverlight. El código Python de la aplicación se incluye en la página web como un script. Una etiqueta de script reutilizable extrae código de JavaScript que inicializa IronPython ejecutándose dentro de Silverlight, desde donde el código Python puede interactuar con DOM. |
 | **Aplicación de Windows Forms de IronPython** | Estructura de proyecto que usa IronPython con la interfaz de usuario creada mediante código con Windows Forms. La aplicación se ejecuta sin mostrar una consola. |
 | **Aplicación en segundo plano (IoT)** | Admite la implementación de proyectos de Python para que se ejecuten como servicios en segundo plano en dispositivos. Visite el [Centro de desarrollo de Windows IoT](https://dev.windows.com/en-us/iot) para más información. |
-| **Módulo de extensión de Python** | Esta plantilla aparece en Visual C++ si ha instalado las **herramientas de desarrollo nativo de Python** con la carga de trabajo de Python en Visual Studio 2017 (consulte [Instalación](installing-python-support-in-visual-studio.md)). Proporciona la estructura básica de un archivo DLL de extensión de C++, similar a lo que se describe en [Creación de una extensión de C++ para Python](working-with-c-cpp-python-in-visual-studio.md). |
+| **Módulo de extensión de Python** | Esta plantilla aparece en Visual C++ si ha instalado las **herramientas de desarrollo nativo Python** con la carga de trabajo de Python en Visual Studio 2017 o versiones posteriores (vea [Instalación](installing-python-support-in-visual-studio.md)). Proporciona la estructura básica de un archivo DLL de extensión de C++, similar a lo que se describe en [Creación de una extensión de C++ para Python](working-with-c-cpp-python-in-visual-studio.md). |
 
 > [!Note]
 > Dado que Python es un lenguaje interpretado, los proyectos de Python en Visual Studio no producen un archivo ejecutable independiente al igual que otros proyectos de lenguaje compilado (C#, por ejemplo). Para obtener más información, consulte [Preguntas y respuestas](overview-of-python-tools-for-visual-studio.md#questions-and-answers).

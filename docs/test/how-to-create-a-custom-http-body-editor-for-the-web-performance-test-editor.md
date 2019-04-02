@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069897"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415075"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedimiento para crear un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
 
@@ -31,49 +31,35 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
 
 ## <a name="create-a-windows-control-library-project"></a>Crear un proyecto de Biblioteca de controles de Windows
 
-1. En Visual Studio, en el menú **Archivo**, elija **Nuevo** > **Proyecto**.
+1. En Visual Studio, cree un proyecto **Biblioteca de controles de Windows Forms**. Asigne al proyecto el nombre **MessageEditors**.
 
-    Aparecerá el cuadro de diálogo **Nuevo proyecto**.
+   El proyecto se agregará a la nueva solución y aparecerá un <xref:System.Windows.Forms.UserControl> denominado *UserControl1.cs* en el diseñador.
 
-2. En **Plantillas instaladas**, seleccione **Visual Basic** o **Visual C#** dependiendo de su preferencia de programación y, después, seleccione **Windows**.
+1. En el **Cuadro de herramientas**, bajo la categoría **Controles comunes**, arrastre un <xref:System.Windows.Forms.RichTextBox> hasta la superficie de UserControl1.
 
-   > [!NOTE]
-   > En este ejemplo se usa Visual C#.
+1. Elija el glifo de la etiqueta de acción (![Glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif)) situado en la esquina superior derecha del control <xref:System.Windows.Forms.RichTextBox> y seleccione **Acoplar en contenedor primario**.
 
-3. En la lista de plantillas, seleccione **Biblioteca de controles de Windows Forms**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto Biblioteca de controles de Windows Forms y seleccione **Propiedades**.
 
-4. En el cuadro de texto **Nombre**, escriba un nombre (por ejemplo, `MessageEditors`) y elija **Aceptar**.
+1. En **Propiedades**, seleccione la pestaña **Aplicación**.
 
-   > [!NOTE]
-   > En este ejemplo se usa MessageEditors.
+1. En la lista desplegable **Plataforma de destino**, seleccione **.NET Framework 4**.
 
-    El proyecto se agregará a la nueva solución y aparecerá un <xref:System.Windows.Forms.UserControl> denominado *UserControl1.cs* en el diseñador.
+1. Aparecerá el cuadro de diálogo **Cambio de plataforma de destino**.
 
-5. En el **Cuadro de herramientas**, bajo la categoría **Controles comunes**, arrastre un <xref:System.Windows.Forms.RichTextBox> hasta la superficie de UserControl1.
+1. Elija **Sí**.
 
-6. Elija el glifo de la etiqueta de acción (![Glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif)) situado en la esquina superior derecha del control <xref:System.Windows.Forms.RichTextBox> y seleccione **Acoplar en contenedor primario**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **Referencias** y seleccione **Agregar referencia**.
 
-7. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto Biblioteca de controles de Windows Forms y seleccione **Propiedades**.
+1. Aparecerá el cuadro de diálogo **Agregar referencia**.
 
-8. En **Propiedades**, seleccione la pestaña **Aplicación**.
+1. Elija la pestaña .**NET**, desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
 
-9. En la lista desplegable **Plataforma de destino**, seleccione **.NET Framework 4**.
+1. Si el **Diseñador de vistas** todavía no está abierto, en el **Explorador de soluciones**, haga clic con el botón derecho en **UserControl1.cs** y, luego, seleccione **Diseñador de vistas**.
 
-10. Aparecerá el cuadro de diálogo **Cambio de plataforma de destino**.
+1. En la superficie de diseño, haga clic con el botón derecho y seleccione **Ver código**.
 
-11. Elija **Sí**.
-
-12. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **Referencias** y seleccione **Agregar referencia**.
-
-13. Aparecerá el cuadro de diálogo **Agregar referencia**.
-
-14. Elija la pestaña .**NET**, desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
-
-15. Si el **Diseñador de vistas** todavía no está abierto, en el **Explorador de soluciones**, haga clic con el botón derecho en **UserControl1.cs** y, luego, seleccione **Diseñador de vistas**.
-
-16. En la superficie de diseño, haga clic con el botón derecho y seleccione **Ver código**.
-
-17. (Opcional) Cambie el nombre de la clase y el constructor de UserControl1 a un nombre significativo, por ejemplo MessageEditorControl:
+1. (Opcional) Cambie el nombre de la clase y el constructor de UserControl1 a un nombre significativo, por ejemplo MessageEditorControl:
 
     > [!NOTE]
     > En el ejemplo se usa MessageEditorControl.
@@ -91,7 +77,7 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
     }
     ```
 
-18. Agregue las siguientes propiedades para habilitar la obtención y el establecimiento del texto en RichTextBox1. La interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> usará EditString y <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> usará EditByteArray:
+1. Agregue las siguientes propiedades para habilitar la obtención y el establecimiento del texto en RichTextBox1. La interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> usará EditString y <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> usará EditByteArray:
 
     ```csharp
     public String EditString
@@ -285,7 +271,7 @@ Cuando se completa la edición del texto de la cadena y el usuario hace clic en 
    > [!NOTE]
    > Al cerrarse Visual Studio, se garantiza que el archivo *.dll* no esté bloqueado antes de intentar copiarlo.
 
-3. Copie el archivo *.dll* de la carpeta *bin\debug* del proyecto (por ejemplo, *MessageEditors.dll*) en *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+3. Copie el archivo *.dll* de la carpeta *bin\debug* del proyecto (por ejemplo, *MessageEditors.dll*) en *%ProgramFiles%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4. Abra Visual Studio.
 

@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970522"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416349"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Filtrar Crear plantillas de elemento de varios archivos
+# <a name="how-to-create-multi-file-item-templates"></a>Procedimiento Crear plantillas de elemento de varios archivos
 
 Puede que las plantillas de elementos solo especifiquen un elemento, pero a veces el elemento se compone de varios archivos. Por ejemplo, una plantilla de elemento de Windows Forms requiere los tres archivos siguientes:
 
@@ -28,11 +28,11 @@ Puede que las plantillas de elementos solo especifiquen un elemento, pero a vece
 
 Las plantillas de elementos de varios archivos requieren parámetros para garantizar que se usan las extensiones de archivo correctas cuando se crea el elemento. Si crea una plantilla de elemento de varios archivos mediante el **Asistente para exportar plantillas**, estos parámetros se generan automáticamente y no se requiere ninguna otra edición.
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Para crear una plantilla de elemento de varios archivos mediante el Asistente para exportar plantillas
+## <a name="use-the-export-template-wizard"></a>Uso del Asistente para exportar plantillas
 
 Puede crear una plantilla de elementos de varios archivos igual que una plantilla de elemento de archivo único. Vea [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md). En la página **Seleccionar elemento para exportar** del asistente, seleccione el archivo que tiene archivos dependientes (por ejemplo, un archivo de formulario de Windows Forms). El asistente incluye automáticamente en la plantilla los archivos dependientes, como el diseñador y los archivos de recursos.
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>Para crear manualmente una plantilla de elemento de varios archivos
+## <a name="manually-create-a-multi-file-item-template"></a>Creación manual de una plantilla de elemento de varios archivos
 
 1. Cree la plantilla de elemento igual que lo haría para crear una plantilla de elemento de archivo único, pero incluya cada archivo que compone el elemento de varios archivos.
 

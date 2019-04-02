@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428666"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325297"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Primer vistazo al IDE de Visual Studio
 
@@ -27,7 +27,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 Lo primero que se ve al iniciar Visual Studio es la ventana de inicio. La ventana de inicio está concebida para ayudar a "obtener código" más rápido. Tiene opciones para cerrar o desproteger código, abrir una solución o un proyecto existente, crear un nuevo proyecto o simplemente abrir una carpeta que contiene algunos archivos de código.
 
-[![](media/vs-2019/start-window.png "Ventana de inicio de Visual Studio 2019")](media/vs-2019/start-window.png)
+[![](media/vs-2019/start-window.png "Ventana de inicio de Visual Studio 2019")](media/vs-2019/start-window.png)
 
 Si es la primera vez que se usa Visual Studio, la lista de proyectos recientes está vacía.
 
@@ -57,13 +57,13 @@ Para seguir examinando las características de Visual Studio, se va a crear un n
 
 ::: moniker range=">=vs-2019"
 
-1. En la **ventana de inicio**, seleccione **Crear un nuevo proyecto** y, en el cuadro de búsqueda, escriba **javascript** para filtrar la lista de tipos de proyecto por los que contienen "javascript" en el nombre o tipo de lenguaje.
+1. En la ventana de inicio, seleccione **Crear un proyecto** y, en el cuadro de búsqueda, escriba **javascript** para filtrar la lista de tipos de proyecto por los que contienen "javascript" en el nombre o tipo de lenguaje.
 
    Visual Studio proporciona varios tipos de plantillas de proyecto que ayudan a comenzar a codificar rápidamente. (Como alternativa, si es un desarrollador de TypeScript, tiene libertad para crear un proyecto en ese lenguaje. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
 
    ![Búsqueda de plantillas de proyecto en la ventana de inicio de Visual Studio](media/vs-2019/create-new-project.png)
 
-1. Elija una plantilla de proyecto **Aplicación web en blanco de Node.js** y haga clic en **Siguiente**. 
+1. Elija una plantilla de proyecto **Aplicación web en blanco de Node.js** y haga clic en **Siguiente**.
 
 1. En el cuadro de diálogo **Configurar el nuevo proyecto** que aparece, acepte el nombre de proyecto predeterminado y elila **Crear**.
 

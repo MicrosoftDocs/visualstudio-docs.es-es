@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323979"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323469"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedimiento Supresión de advertencias del compilador
 
@@ -63,7 +63,7 @@ En este ejemplo se muestra cómo modificar el archivo *.vbproj* para suprimir ad
 
 1. En la barra de menús, elija **Proyecto** > **Descargar proyecto**.
 
-1. En el **Explorador de soluciones**, abra el menú contextual del proyecto haciendo clic con el botón derecho y, después, elija **Editar <ProjectName>.vbproj**.
+1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y luego elija **Editar \<NombreDelProyecto>.vbproj**.
 
     El archivo del proyecto XML se abre en el editor de código.
 

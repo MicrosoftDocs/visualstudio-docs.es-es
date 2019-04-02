@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796834"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416375"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -38,7 +38,7 @@ Para obtener una introducción a las pruebas unitarias que le guíe directamente
 
 ## <a name="the-mybank-solution-example"></a>Ejemplo de la solución MyBank
 
-En este tema, usamos el desarrollo de una aplicación ficticia denominada `MyBank` como ejemplo. No es necesario el código real para seguir las explicaciones de este tema. Los métodos de prueba se escriben en C# y presentan mediante el Marco de pruebas unitarias de Microsoft para código administrado. Sin embargo, los conceptos se transfieren fácilmente a otros lenguajes y marcos de trabajo.
+En este artículo, se utiliza el desarrollo de una aplicación ficticia denominada `MyBank` como ejemplo. No es necesario el código real para seguir las explicaciones de este tema. Los métodos de prueba se escriben en C# y presentan mediante el Marco de pruebas unitarias de Microsoft para código administrado. Sin embargo, los conceptos se transfieren fácilmente a otros lenguajes y marcos de trabajo.
 
 ![Solución MyBank](../test/media/ute_mybanksolution.png)
 
@@ -102,14 +102,26 @@ Un proyecto de prueba unitaria suele reflejar la estructura de un solo proyecto 
 
 **Para agregar un proyecto de prueba unitaria a una solución:**
 
-1. En el menú **Archivo**, elija **Nuevo** y, después, **Proyecto** (teclado **Ctrl**+**Mayús**+**N**).
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución y elija **Agregar** > **Nuevo** **proyecto**.
+
+::: moniker range="vs-2017"
 
 2. En el cuadro de diálogo **Nuevo proyecto**, expanda el nodo **Instalado**, elija el lenguaje que quiere usar para el proyecto de prueba y, después, elija **Probar**.
 
 3. Para usar uno de los marcos de pruebas unitarias de Microsoft, elija **Proyecto de prueba unitaria** en la lista de plantillas de proyecto. De lo contrario, elija la plantilla de proyecto del marco de pruebas unitarias que desea usar. Para probar el proyecto `Accounts` del ejemplo, el proyecto se denominaría `AccountsTests`.
 
-   > [!WARNING]
+   > [!NOTE]
    > No todos los marcos de pruebas unitarias de terceros y de código abierto proporcionan una plantilla de proyecto de Visual Studio. Consulte el documento del marco para obtener información sobre cómo crear un proyecto.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Use el cuadro de búsqueda de plantillas de proyecto para encontrar una plantilla de proyecto de prueba unitaria para el marco de pruebas que quiere utilizar.
+
+3. En la página siguiente, asigne un nombre al proyecto. Para probar el proyecto `Accounts` del ejemplo, podría asignarle el nombre `AccountsTests`.
+
+::: moniker-end
 
 4. En el proyecto de prueba unitaria, agregue una referencia al proyecto de código en pruebas, en el ejemplo para el proyecto Accounts.
 

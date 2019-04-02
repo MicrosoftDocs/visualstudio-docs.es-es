@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ec12b302fd51b42e99df5838206bbbf497a03e8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 173f2320b0117d31cbd3d0b999f2e24c40a5860b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145192"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325193"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Crear una aplicación sencilla con C\#
 
@@ -35,7 +35,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 ::: moniker range="vs-2017"
 
-Cuando inicie Visual Studio por primera vez, se le pedirá que inicie sesión. Este paso es opcional en este tutorial. Después, probablemente aparezca un cuadro de diálogo que le pide que elija la configuración de desarrollo y el tema de color. Mantenga los valores predeterminados y elija **Iniciar Visual Studio**.
+Cuando abra Visual Studio por primera vez, se le pedirá que inicie sesión. Este paso es opcional en este tutorial. Después, probablemente aparezca un cuadro de diálogo que le pide que elija la configuración de desarrollo y el tema de color. Mantenga los valores predeterminados y elija **Iniciar Visual Studio**.
 
 ![Cuadro de diálogo Elegir configuración](../media/exploreide-settings.png)
 
@@ -47,7 +47,7 @@ Una vez que se haya iniciado Visual Studio, verá las ventanas de herramientas, 
 
 ::: moniker range=">=vs-2019"
 
-Cuando se inicia Visual Studio, la primera ventana que se abre es la de **Inicio**. Haga clic en **Continuar sin código** para abrir el entorno de desarrollo. Se mostrarán las ventanas de herramientas, los menús, las barras de herramientas y el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio central de la ventana de la aplicación. Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.
+Al iniciar Visual Studio, la primera ventana que se abre es la de inicio. Haga clic en **Continuar sin código** para abrir el entorno de desarrollo. Se mostrarán las ventanas de herramientas, los menús, las barras de herramientas y el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio central de la ventana de la aplicación. Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.
 
 ::: moniker-end
 

@@ -20,16 +20,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7e8468041e000f245bbc6678c67e4e6e825610
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: c115b345dbc1ddd3b13b2e0e7a9363229d971ea2
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982875"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322722"
 ---
 # <a name="remove-visual-studio"></a>Quitar Visual Studio
 
-Si se produce un error grave y no se puede reparar o desinstalar Visual Studio, puede ejecutar la herramienta `InstallCleanup.exe` para quitar los archivos de instalación y la información de producto de todas las instancias instaladas de Visual Studio 2017 y versiones más recientes. La ejecución de esta herramienta debe hacerse como último recurso si se produce un error en la reparación o desinstalación, y puede desinstalar características de otras instalaciones de Visual Studio u otros productos que sea necesario reparar.
+Si se produce un error grave y no se puede reparar ni desinstalar Visual Studio, puede ejecutar la herramienta `InstallCleanup.exe` para quitar los archivos de instalación y la información de producto de todas las instancias instaladas de Visual Studio 2017 y versiones posteriores. La ejecución de esta herramienta debe hacerse como último recurso si se produce un error en la reparación o desinstalación, y puede desinstalar características de otras instalaciones de Visual Studio u otros productos que sea necesario reparar.
 
 En las instrucciones siguientes, puede ejecutar la herramienta con distintos modificadores de línea de comandos con el comportamiento siguiente:
 

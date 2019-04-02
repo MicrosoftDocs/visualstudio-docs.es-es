@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681756"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415219"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Herramientas para detectar y administrar instancias de Visual Studio
 
@@ -37,25 +39,31 @@ Además, la [API de configuración de la instalación](<xref:Microsoft.VisualStu
 
 ## <a name="using-vswhereexe"></a>Uso de vswhere.exe
 
-`vswhere.exe` se incluye automáticamente en Visual Studio 2017 versión 15.2 o posterior, o bien puede descargarlo en [la página de versiones](https://github.com/Microsoft/vswhere/releases). Use `vswhere -?` para obtener información de ayuda sobre la herramienta. Por ejemplo, este comando muestra todas las versiones de Visual Studio, incluidas las versiones anteriores del producto y versiones preliminares, y muestra los resultados en formato JSON:
+`vswhere.exe` se incluye automáticamente en Visual Studio (a partir de Visual Studio 2017 versión 15.2 y versiones posteriores) o puede descargarlo desde la [página de versiones de VSWhere](https://github.com/Microsoft/vswhere/releases). Use `vswhere -?` para obtener información de ayuda sobre la herramienta. Por ejemplo, este comando muestra todas las versiones de Visual Studio, incluidas las versiones anteriores del producto y versiones preliminares, y muestra los resultados en formato JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+::: moniker range="vs-2017"
 
->[!TIP]
->Para obtener más información sobre la instalación de Visual Studio 2017, vea [Visual Studio Setup Archives](https://devblogs.microsoft.com/setup/tag/vs2017/) (Archivos de instalación de Visual Studio).
+> [!TIP]
+> Para obtener más información sobre la instalación de Visual Studio 2017, vea [Visual Studio Setup Archives](https://devblogs.microsoft.com/setup/tag/vs2017/) (Archivos de instalación de Visual Studio).
+
+::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Edición del Registro para una instancia de Visual Studio
 
-En Visual Studio de 2017, configuración del Registro se almacena en una ubicación privada, lo que permite varias instancias en paralelo de la misma versión de Visual Studio en la misma máquina.
+En Visual Studio, la configuración del Registro se almacena en una ubicación privada, lo que permite varias instancias en paralelo de la misma versión de Visual Studio en la misma máquina.
 
 Como estas entradas no se almacenan en el Registro global, hay instrucciones especiales para usar el Editor del Registro para realizar cambios en su configuración:
 
-1. Si tiene abierta una instancia de Visual Studio 2017, ciérrela.
-2. Inicie `regedit.exe`.
-3. Seleccione el nodo `HKEY_LOCAL_MACHINE`.
-4. En el menú principal de Regedit, seleccione **Archivo -> Cargar subárbol ...** y luego seleccione el archivo de Registro privado, que se encuentra almacenado en la carpeta **AppData\Local**. Por ejemplo:
+1. Si tiene abierta una instancia de Visual Studio, ciérrela.
+
+1. Inicie `regedit.exe`.
+
+1. Seleccione el nodo `HKEY_LOCAL_MACHINE`.
+
+1. En el menú principal de Regedit, seleccione **Archivo** > **Cargar subárbol...** y luego seleccione el archivo de Registro privado, que se encuentra almacenado en la carpeta **AppData\Local**. Por ejemplo:
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
@@ -66,7 +74,7 @@ Como estas entradas no se almacenan en el Registro global, hay instrucciones esp
 Se le pedirá que proporcione un nombre de subárbol, que se convertirá en el nombre de su subárbol aislado. Después de haber hecho esto, debería poder examinar el Registro bajo el subárbol aislado que creó.
 
 > [!IMPORTANT]
-> Antes de iniciar de nuevo Visual Studio, debe descargar el subárbol aislado que creó. Para ello, seleccione Archivo -> Descargar subárbol desde el menú principal de Regedit. (Si no lo hace, el archivo permanece bloqueado y Visual Studio no se podrá iniciar).
+> Antes de iniciar de nuevo Visual Studio, debe descargar el subárbol aislado que creó. Para ello, seleccione **Archivo** > **Descargar subárbol** desde el menú principal de Regedit. (Si no lo hace, el archivo permanece bloqueado y Visual Studio no se podrá iniciar).
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

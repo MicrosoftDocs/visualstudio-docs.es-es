@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 86900b525489c5f1ae487e89fdb6d848c4fc425a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428783"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355596"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de C++ con Visual Studio
 
@@ -37,32 +37,35 @@ En este tutorial va a:
 
 ::: moniker range=">=vs-2019"
 
-* Debe tener instalados Visual Studio 2019 y la carga de trabajo **Desarrollo para el escritorio con C++**.
+Debe tener instalados Visual Studio 2019 y la carga de trabajo **Desarrollo para el escritorio con C++**.
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-* Debe tener instalados Visual Studio 2017 y la carga de trabajo **Desarrollo para el escritorio con C++**.
+Debe tener instalados Visual Studio 2017 y la carga de trabajo **Desarrollo para el escritorio con C++**.
 
 ::: moniker-end
 
-Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
 
-Si necesita instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto** (seleccione **Archivo** > **Nuevo** > **Proyecto**). Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
-1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
+1. Abra Visual Studio.
 
-2. Bajo **Visual C++**, seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola Windows** en el panel central.
+    ::: moniker range=">=vs-2019"
+    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **c++**, elija **Plantillas** y luego, **Crear proyecto de aplicación de consola**. En el cuadro de diálogo que se abre, escriba un nombre como **get-started-debugging** y luego elija **Crear**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C++**, elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola Windows**. Luego escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
+    ::: moniker-end
 
-    Si no ve la plantilla de proyecto **Aplicación de consola Windows**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
-
-3. Escriba un nombre como **get-started-debugging** y haga clic en **Aceptar**.
+    Si no ve la plantilla de proyecto **Aplicación de consola Windows**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
     Visual Studio crea el proyecto.
 
-4. En *get-started-debugging.cpp*, reemplace el código siguiente
+1. En *get-started-debugging.cpp*, reemplace el código siguiente
 
     ```c++
     int main()

@@ -7,18 +7,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222092"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416410"
 ---
 # <a name="how-to-create-item-templates"></a>Procedimiento Crear plantillas de elemento
 
 En este tema se muestra cómo crear una plantilla de elemento con el **Asistente para exportar plantillas**. Si la plantilla consta de varios archivos, vea [Cómo: Crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md).
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Para agregar una plantilla de elemento de usuario al cuadro de diálogo Agregar nuevo elemento
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Incorporación de una plantilla de elemento al cuadro de diálogo Agregar nuevo elemento
 
 1. Cree o abra un proyecto en Visual Studio.
 
@@ -46,7 +46,7 @@ En este tema se muestra cómo crear una plantilla de elemento con el **Asistente
 
    La plantilla de elemento aparece en el cuadro de diálogo **Agregar nuevo elemento**. Si ha agregado una descripción en el **Asistente para exportar plantillas**, la descripción aparecerá en la parte derecha del cuadro de diálogo.
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Para permitir que se use la plantilla de elemento en un proyecto de Aplicación universal de Windows
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Habilitación del uso de plantillas de elemento en un proyecto de aplicación Windows universal
 
 El asistente hace gran parte del trabajo de creación de una plantilla básica, pero en muchos casos deberá modificar manualmente el archivo *.vstemplate* después de haber exportado la plantilla. Por ejemplo, si quiere que el elemento aparezca en el cuadro de diálogo **Agregar nuevo elemento** de un proyecto de Aplicación universal de Windows, tendrá que efectuar unos pasos adicionales.
 
@@ -68,7 +68,7 @@ El asistente hace gran parte del trabajo de creación de una plantilla básica, 
 
 Ahora puede agregar un elemento basado en esta plantilla a un proyecto de Windows universal desde el cuadro de diálogo **Agregar nuevo elemento**.
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>Para habilitar las plantillas para subtipos de proyecto específicos
+## <a name="enable-templates-for-specific-project-subtypes"></a>Habilitación de plantillas para subtipos de proyecto específicos
 
 Puede especificar que la plantilla solo debería aparecer para determinados subtipos de proyecto, como Windows, Office, base de datos o web.
 
@@ -103,7 +103,7 @@ En el ejemplo siguiente se muestra una plantilla de elementos para los proyectos
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Para crear manualmente una plantilla de elementos sin usar el Asistente para exportar plantillas
+## <a name="manually-create-an-item-template"></a>Creación manual de una plantilla de elemento
 
 En algunos casos es posible que quiera crear una plantilla de elementos manualmente desde cero.
 

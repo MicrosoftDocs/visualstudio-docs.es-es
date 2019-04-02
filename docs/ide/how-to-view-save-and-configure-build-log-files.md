@@ -1,5 +1,5 @@
 ---
-title: Filtrar Visualización, guardado y configuración de archivos de registro de compilación | Microsoft Docs
+title: Procedimiento Visualización, guardado y configuración de archivos de registro de compilación | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f50117a4101fd3c76e431891ca9a9fe20fa3959
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925233"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323875"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Filtrar Visualización, guardado y configuración de archivos de registro de compilación
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Procedimiento Visualización, guardado y configuración de archivos de registro de compilación
 
 Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre la compilación en la ventana **Salida**. Con esta información puede, por ejemplo, solucionar un error de compilación. En el caso de los proyectos de C++, también puede ver la misma información en un archivo *.txt* que se crea y se guarda automáticamente. Si se trata de proyectos de código administrado, puede copiar y pegar la información de la ventana **Salida** en un archivo *.txt* y guardarlo donde quiera. También puede usar el IDE para especificar qué tipo de información quiere ver para cada compilación.
 
@@ -53,7 +53,7 @@ Si compila un proyecto mediante MSBuild, puede crear un archivo *.txt* para guar
      Para obtener más información, vea [Cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) y <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
     > [!IMPORTANT]
-    > Debe recompilar el proyecto para que los cambios surtan efecto en la ventana **Salida** (todos los proyectos) y el archivo *<ProjectName>.txt* (solo para proyectos de C++).
+    > Debe recompilar el proyecto para que los cambios surtan efecto en la ventana **Salida** (todos los proyectos) y el archivo *\<NombreDelProyecto>.txt*.txt (solo para proyectos de C++).
 
 ## <a name="see-also"></a>Vea también
 

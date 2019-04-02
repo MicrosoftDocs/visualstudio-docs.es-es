@@ -11,14 +11,14 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29f6cfe21537cd74ffa135edc3f93b9d8548aab7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946670"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414975"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Filtrar para enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedimiento para enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
 
 Si un equipo que tiene instalado el controlador de prueba o el software del agente de pruebas tiene varios adaptadores de red, debe especificar la dirección IP en lugar del nombre del equipo para identificar ese controlador de pruebas o agente de prueba.
 
@@ -55,7 +55,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
      `net stop vsttcontroller`
 
-3.  Abra el archivo de configuración XML *QTCcontroller.exe.config* ubicado en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Abra el archivo de configuración XML *QTCcontroller.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4.  busque la etiqueta `<appSettings>`.
 
@@ -101,7 +101,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
      **net stop vsttagent**
 
-3.  Abra el archivo de configuración XML *QTAgentService.exe.config* ubicado en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Abra el archivo de configuración XML *QTAgentService.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4.  busque la etiqueta `<appSettings>`.
 
@@ -133,5 +133,4 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 - [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md)
 - [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar los puertos para los controladores de prueba y los agentes de prueba](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Cómo: Especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
