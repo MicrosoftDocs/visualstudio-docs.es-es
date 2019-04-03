@@ -1,5 +1,5 @@
 ---
-title: Se esperaba ' @' | Microsoft Docs
+title: Se esperaba '@' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript

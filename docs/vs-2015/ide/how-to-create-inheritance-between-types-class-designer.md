@@ -30,7 +30,7 @@ Para crear una relación de herencia entre dos tipos de un diagrama de clases me
   
 1.  Desde el proyecto, en el Explorador de soluciones, abra un archivo de diagrama de clases (.cd).  
   
-     Si no tiene un diagrama de clases, créelo. Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
+     Si no tiene un diagrama de clases, créelo. Vea [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
 2.  En el **Cuadro de herramientas**, en **Diseñador de clases**, haga clic en **Herencia**.  
   
