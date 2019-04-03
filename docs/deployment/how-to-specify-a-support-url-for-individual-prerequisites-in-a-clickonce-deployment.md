@@ -76,7 +76,7 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede proba
    </compatibleFrameworks>
    ```
 
-7. Una vez que se ha modificado manualmente el manifiesto de aplicación, debe volver a firmar el manifiesto de aplicación mediante su certificado digital, a continuación, actualizar y volver a firmar el manifiesto de implementación también. Use la *Mage.exe* o *MageUI.exe* herramientas del SDK para realizar esta tarea, como volver a generar estos archivos mediante [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] borra los cambios manuales. Para obtener más información sobre el uso de Mage.exe para volver a firmar los manifiestos, consulte [How to: RE-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+7. Una vez que se ha modificado manualmente el manifiesto de aplicación, debe volver a firmar el manifiesto de aplicación mediante su certificado digital, a continuación, actualizar y volver a firmar el manifiesto de implementación también. Use la *Mage.exe* o *MageUI.exe* herramientas del SDK para realizar esta tarea, como volver a generar estos archivos mediante [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] borra los cambios manuales. Para obtener más información sobre el uso de Mage.exe para volver a firmar los manifiestos, consulte [Cómo: Volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="net-framework-security"></a>seguridad en .NET Framework
  La dirección URL de soporte técnico no se muestra en el cuadro de diálogo si la aplicación está marcada para ejecutarse en confianza parcial.

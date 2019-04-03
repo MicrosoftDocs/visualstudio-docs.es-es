@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576a6d219a27ad51c096ee3ddb177b656b0552e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636962"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567846"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Compilación de aplicaciones ClickOnce desde la línea de comandos
 En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], puede compilar proyectos desde la línea de comandos, incluso si se crean en el entorno de desarrollo integrado (IDE). De hecho, puede volver a generar un proyecto creado con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] en otro equipo que tenga solo el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalado. Esto le permite reproducir una compilación mediante un proceso automatizado, por ejemplo, en una compilación central laboratorio o uso de técnicas avanzadas de scripting fuera del ámbito de compilar el proyecto en Sí.
@@ -41,21 +41,21 @@ En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Para crear y publicar un proyecto de ClickOnce
 
-1. Haga clic en **nuevo proyecto** desde el **archivo** menú. Aparecerá el cuadro de diálogo **Nuevo proyecto** .
+1. Abra Visual Studio y cree un nuevo proyecto.
 
-2. Seleccione **aplicación Windows** y asígnele el nombre `CmdLineDemo`.
+    Elija la **aplicación de escritorio de Windows** plantilla de proyecto y denomine al proyecto `CmdLineDemo`.
 
-3. Desde el **compilar** menú, haga clic en el **publicar** comando.
+1. Desde el **compilar** menú, haga clic en el **publicar** comando.
 
     Este paso garantiza que el proyecto está configurado correctamente para generar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de la aplicación.
 
     Aparece el Asistente para publicación.
 
-4. En el Asistente para publicación, haga clic en **finalizar**.
+1. En el Asistente para publicación, haga clic en **finalizar**.
 
     Visual Studio genera y muestra la página Web predeterminada, denominada *Publish.htm*.
 
-5. Guarde el proyecto y anote la ubicación de la carpeta donde se almacena.
+1. Guarde el proyecto y anote la ubicación de la carpeta donde se almacena.
 
    Los pasos anteriores crean un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] proyecto que se publicó por primera vez. Ahora puede reproducir la compilación fuera del IDE.
 

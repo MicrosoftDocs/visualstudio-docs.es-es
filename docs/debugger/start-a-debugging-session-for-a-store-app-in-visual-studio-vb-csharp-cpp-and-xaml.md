@@ -35,16 +35,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 28a35f37e298533fe3181f9325241bbef116f2d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699475"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790516"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Iniciar una sesión de depuración para una aplicación de UWP
 
-En este artículo se describe cómo iniciar una sesión de depuración de Visual Studio para una aplicación de plataforma Universal de Windows (UWP). Se pueden escribir aplicaciones para UWP en XAML y C++, XAML y C#o, o HTML y JavaScript. Para iniciar la depuración de una aplicación para UWP, configure la sesión de depuración y elija la manera de iniciar la aplicación.
+En este artículo se describe cómo iniciar una sesión de depuración de Visual Studio para una aplicación de plataforma Universal de Windows (UWP). Se pueden escribir aplicaciones para UWP en XAML y C++, XAML y C#o. Para iniciar la depuración de una aplicación para UWP, configure la sesión de depuración y elija la manera de iniciar la aplicación.
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> A partir de Visual Studio de 2019, ya no se admiten aplicaciones UWP para HTML y JavaScript.
+::: moniker-end
+::: moniker range="vs-2017"
+En Visual Studio 2017, la mayoría de los comandos y opciones que se muestran en este artículo también se aplica a las aplicaciones para UWP para HTML y JavaScript. Cuando los comandos son diferentes entre administrado y aplicaciones de C++, JavaScript, normalmente son los mismos que los comandos para aplicaciones UWP de C++.
+::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Iniciar la depuración desde la barra de herramientas de Visual Studio
 
@@ -90,7 +98,7 @@ Para configurar otras opciones de depuración, use la página de propiedades de 
 
      ![C#y la página de propiedades de depuración de proyecto de Visual Basic](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - Para las aplicaciones de C++ y JavaScript, seleccione **propiedades de configuración** > **depuración**.
+   - Para las aplicaciones de C++, seleccione **propiedades de configuración** > **depuración**.
 
      ![Página de propiedades de depuración de la aplicación de UWP de C++](../debugger/media/dbg_cpp_debugpropertypage.png)
 
@@ -98,13 +106,13 @@ Para configurar otras opciones de depuración, use la página de propiedades de 
 
 Para C# y las aplicaciones de Visual Basic, Visual Studio depura código administrado de forma predeterminada. Puede depurar código adicionales u otros tipos. También puede establecer **el tipo de depurador** valores para las tareas en segundo plano que forman parte del proyecto.
 
-En las aplicaciones de C++, Visual Studio depura código nativo de forma predeterminada. En las aplicaciones de JavaScript, Visual Studio depura el script de forma predeterminada. Puede depurar determinados tipos de código en lugar de, o además de código nativo.
+En las aplicaciones de C++, Visual Studio depura código nativo de forma predeterminada. Puede depurar determinados tipos de código en lugar de, o además de código nativo.
 
 **Para especificar los tipos de código para depurar:**
 
 - Para C# y las aplicaciones de Visual Basic, seleccione uno de los depuradores siguientes en el **tipo de aplicación** y **tipo de proceso en segundo plano** listas desplegables en **el tipo de depurador** en el **depurar** página de propiedades.
 
-- Para C++ / c++ / aplicaciones de JavaScript, seleccione uno de los depuradores siguientes desde el **tipo de depurador** lista desplegable en el **depuración** página de propiedades.
+- Para las aplicaciones de C++, seleccione uno de los depuradores siguientes desde el **tipo de depurador** lista desplegable en el **depuración** página de propiedades.
 
 |||
 |-|-|
@@ -124,10 +132,10 @@ En las aplicaciones de C++, Visual Studio depura código nativo de forma predete
 
 -   Para C# y anule la selección de las aplicaciones de Visual Basic, el **permitir bucle invertido de red local** casilla de verificación bajo **opciones de inicio** en el **depurar** página de propiedades.
 
--   Para las aplicaciones de Visual C++ y JavaScript, seleccione **No** desde el **permitir bucle invertido de red Local** lista desplegable en el **depuración** página de propiedades.
+-   Para las aplicaciones de Visual C++, seleccione **No** desde el **permitir bucle invertido de red Local** lista desplegable en el **depuración** página de propiedades.
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Vuelva a instalar la aplicación al iniciar la depuración (opcional)
- Para diagnosticar problemas de instalación con un C# o aplicación de Visual Basic, seleccione **desinstalar y reinstalar mi paquete** en el **depurar** página de propiedades. Esta opción vuelve a crear la instalación original al iniciar la depuración. Esta opción no está disponible para los proyectos de C++ y JavaScript.
+ Para diagnosticar problemas de instalación con un C# o aplicación de Visual Basic, seleccione **desinstalar y reinstalar mi paquete** en el **depurar** página de propiedades. Esta opción vuelve a crear la instalación original al iniciar la depuración. Esta opción no está disponible para proyectos de C++.
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Establecer las opciones de autenticación para la depuración remota
 
@@ -139,7 +147,7 @@ El **Universal (protocolo sin cifrar)** es el modo de autenticación para dispos
 
 - Para C# y las aplicaciones de Visual Basic, en el **depurar** página de propiedades, seleccione **máquina remota** como el **dispositivo de destino**. A continuación, seleccione **ninguno** o **Universal (protocolo sin cifrar)** para **modo de autenticación**.
 
-- Para las aplicaciones de C++ y JavaScript, seleccione **máquina remota** en **depurador para iniciar** en el **depuración** página de propiedades. A continuación, seleccione **sin autenticación** o **Universal (protocolo sin cifrar)** para **tipo de autenticación**.
+- Para las aplicaciones de C++, seleccione **máquina remota** en **depurador para iniciar** en el **depuración** página de propiedades. A continuación, seleccione **sin autenticación** o **Universal (protocolo sin cifrar)** para **tipo de autenticación**.
 
 > [!CAUTION]
 > No hay ninguna seguridad de red al ejecutar el depurador remoto en **ninguno** o **Universal (protocolo sin cifrar)** modos. Elija estos modos solo en redes de confianza que se está seguro de que no son expuestos a código malintencionado o tráfico hostil.
@@ -156,7 +164,7 @@ De forma predeterminada, Visual Studio inicia la aplicación inmediatamente al i
 
 - Para C# y aplicaciones de Visual Basic, seleccionadas **no iniciar, pero depurar mi código al empezar** en **opciones de inicio** en el **depurar** página de propiedades.
 
-- Para las aplicaciones de C++ y JavaScript, seleccione **No** desde el **Iniciar aplicación** lista desplegable en el **depuración** página de propiedades.
+- Para las aplicaciones de C++, seleccione **No** desde el **Iniciar aplicación** lista desplegable en el **depuración** página de propiedades.
 
 Para obtener más información sobre la depuración de tareas en segundo plano, vea [desencadenador suspender, reanudar y en segundo plano de los eventos de aplicaciones para UWP](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
@@ -202,10 +210,12 @@ Si quieres asociar el depurador a una aplicación de la [!INCLUDE[win8_appname_l
 
  Visual Studio asocia el depurador al proceso. La ejecución continúa hasta que se alcanza un punto de interrupción, se suspende manualmente la ejecución, se produce una excepción no controlada o la aplicación finaliza.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Las aplicaciones de JavaScript se ejecutan en una instancia del proceso *wwahost.exe*. Si se ejecuta más de una aplicación de JavaScript, deberá conocer el identificador numérico del proceso (PID) de la aplicación *wwahost.exe* proceso se asocie a ella.
 >
 > Es la manera más fácil asociar a la aplicación de JavaScript cerrar todas las demás aplicaciones de JavaScript. O bien, puede anotar los PID de la ejecución *wwahost.exe* procesos en Windows Task Manager antes de iniciar la aplicación. Cuando se inicia la aplicación, su *wwahost.exe* PID será lo que es diferente de los que anotó anteriormente.
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 - [Depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

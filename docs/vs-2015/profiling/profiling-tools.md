@@ -25,7 +25,7 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
   
  Revise el resumen en la parte inferior para ver qué herramientas están disponibles para su tipo de proyecto (por ejemplo, escritorio, UWP, ASP.NET).  
   
- Puede obtener acceso a las herramientas de generación de perfiles mediante **Depurar/Windows/Mostrar herramientas de diagnóstico** para usar las herramientas durante la sesión de depuración, o mediante **Depurar/Generador de perfiles de rendimiento...** para realizar un análisis de rendimiento preciso.  Consulte [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) para obtener más información sobre los diferentes enfoques.  
+ Puede obtener acceso a las herramientas de generación de perfiles mediante **Depurar/Windows/Mostrar herramientas de diagnóstico** para usar las herramientas durante la sesión de depuración, o mediante **Depurar/Generador de perfiles de rendimiento...** para realizar un análisis de rendimiento preciso.  Consulte [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md) para obtener más información sobre los diferentes enfoques.  
   
  ![DebugDiagnosticsToolsMenu](../profiling/media/debugdiagnosticstoolsmenu.png "DebugDiagnosticsToolsMenu")  
   

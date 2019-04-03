@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cba7cf4a402b92f05f12faa39b88ab03cd5bd03b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943017"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790868"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Crear y configurar conjuntos de datos en Visual Studio
 
@@ -70,7 +70,7 @@ Este procedimiento muestra cómo agregar una tabla de la misma base de datos que
 
 1. Haga clic en el nodo de conjunto de datos **el Explorador de soluciones** para poner el **Diseñador de DataSet** en foco.
 
-2. Haga clic en el **orígenes de datos** ficha en el margen izquierdo de Visual Studio o tipo **orígenes de datos** en el **inicio rápido** cuadro.
+2. Haga clic en el **orígenes de datos** ficha en el margen izquierdo de Visual Studio o tipo **orígenes de datos** en el cuadro de búsqueda.
 
 3. Haga clic en el nodo de conjunto de datos y seleccione **Configurar origen de datos con el asistente**.
 

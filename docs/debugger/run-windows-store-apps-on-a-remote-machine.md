@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0fa9749a06c568f7fab55cd6c7a862fa616ecf6d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708710"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789905"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Depurar aplicaciones para UWP en equipos remotos desde Visual Studio
 
@@ -55,9 +55,9 @@ Para depurar una aplicación para UWP en un dispositivo remoto desde Visual Stud
 
     ![Administra las propiedades del proyecto para la depuración remota](../debugger/media/vsrun_managed_projprop_remote.png "administrados depurar las propiedades del proyecto")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurar un proyecto de JavaScript o C++ para la depuración remota
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurar un proyecto de C++ para la depuración remota
 
-1.  Seleccione el proyecto de C++ o JavaScript en Visual Studio **el Explorador de soluciones** y seleccione el **propiedades** icono, presione **Alt**+**ENTRAR** , o bien haga clic en y elija **propiedades**.
+1.  Seleccione el proyecto de C++ en Visual Studio **el Explorador de soluciones** y seleccione el **propiedades** icono, presione **Alt**+**ENTRAR**, o bien haga clic en y elija **propiedades**.
 
 1.  Seleccione el **depuración** ficha.
 

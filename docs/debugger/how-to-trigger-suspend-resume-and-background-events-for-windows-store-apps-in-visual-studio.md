@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ea8b7f378562d31cfcfde786664e227a3fec6b0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708867"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790360"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Cómo desencadenar suspender, reanudar y en segundo plano de los eventos durante la depuración de aplicaciones para UWP en Visual Studio
 Cuando no estás depurando, la **Administración de la duración de los procesos** (PLM) de Windows controla el estado de ejecución de la aplicación, es decir, inicia, suspende, reanuda y finaliza la aplicación en respuesta a las acciones del usuario y al estado del dispositivo. Mientras depuras, Windows deshabilita estos eventos de activación. En este tema se describe cómo activar estos eventos en el depurador.
@@ -72,7 +72,7 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 
 2.  Abre la página de propiedades de depuración del proyecto de inicio. En el Explorador de soluciones, seleccione el proyecto. En el menú **Depurar** , elige **Propiedades**.
 
-     Para los proyectos de C++ y JavaScript, expanda **propiedades de configuración** y, a continuación, elija **depuración**.
+     Para los proyectos de C++, expanda **propiedades de configuración** y, a continuación, elija **depuración**.
 
 3.  Realice una de las siguientes acciones:
 
@@ -80,7 +80,7 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 
          ![C&#35;&#47;propiedad de aplicación de inicio de depuración VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   Para los proyectos de JavaScript y Visual C++, elige **No** en la lista **Iniciar aplicación** .
+    -   Para proyectos de Visual C++, elige **No** desde el **Iniciar aplicación** lista.
 
          ![C&#43;&#43;&#47;propiedad de depuración de aplicaciones de VB iniciar](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
