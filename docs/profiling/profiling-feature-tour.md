@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873183"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790815"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
 
@@ -119,6 +119,7 @@ Si elige un período de tiempo en los gráficos y selecciona **Ver detalles**, a
 
 También puede usar los gráficos para determinar si hay cuellos de botella de rendimiento relacionados con la CPU o con la GPU.
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>Análisis de rendimiento (JavaScript UWP)
 
 En el caso de las aplicaciones UWP, puede usar la herramienta Memoria de JavaScript y la herramienta Capacidad de respuesta de la IU HTML.
@@ -130,6 +131,7 @@ La herramienta Memoria de JavaScript es similar a la herramienta Uso de memoria 
 Para diagnosticar la capacidad de respuesta de la interfaz de usuario, el tiempo de carga lento y las actualizaciones visuales lentas en aplicaciones UWP, use la herramienta Capacidad de respuesta de la IU HTML. El uso es similar al de la herramienta Escala de tiempo de la aplicación para otros tipos de aplicaciones. Para obtener más información, vea [HTML UI responsiveness](../profiling/html-ui-responsiveness.md) (Capacidad de respuesta de IU HTML).
 
 ![Herramienta de generación de perfiles de respuesta de UI de HTML](../profiling/media/diaghtmlresp.png "Diagnóstico de respuesta de HTML")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>Análisis del uso de la red (UWP)
 

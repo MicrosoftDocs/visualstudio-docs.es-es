@@ -8,15 +8,15 @@ dev_langs:
 - C++
 - jsharp
 author: mikeblome
-ms.author: Michael.Blome
+ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c7cc3490735dbd9ac43cd43555ec673cc3afccd
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 7bdad856a6ea0ec6cca8292bc3095f51c500bcb1
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070505"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515273"
 ---
 # <a name="vctooltask-base-class"></a>Clase base VCToolTask
 

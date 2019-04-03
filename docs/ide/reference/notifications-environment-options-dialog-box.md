@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68b3ea123ceec9628ee77b855e53ebe436d21c5b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+monikerRange: vs-2017
+ms.openlocfilehash: 702e1dfa14874691b72ce42e21cf6057f56d8394
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937791"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789436"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Notificaciones, Entorno, Opciones (cuadro de diálogo)
 

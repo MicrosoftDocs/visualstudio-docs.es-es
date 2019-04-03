@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CustomBuild task
 - CustomBuild task (MSBuild (Visual C++))
 author: mikeblome
-ms.author: Michael.Blome
+ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 183cdefbca29db486b84cb61f90501507e298838
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 197128fadb660ab06686d13ec304a5d9d1698070
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070475"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515433"
 ---
 # <a name="custombuild-task"></a>Tarea CustomBuild
 

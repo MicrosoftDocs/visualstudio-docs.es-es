@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070261"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647471"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 
-La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Para acceder a este cuadro de diálogo, haga clic en **Herramientas** > **Opciones** y seleccione **Entorno** > **Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.
+La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Para acceder a este cuadro de diálogo, haga clic en **Herramientas** > **Opciones** y seleccione **Entorno** > **Fuentes y colores**.
 
 Los cambios de combinaciones de colores no surten efecto durante la sesión en la que se realizan. Puede evaluar los cambios de color abriendo otra instancia de Visual Studio y creando las condiciones en las que espera aplicar los cambios.
 
