@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622bf6f34b2644c028886184cf42e8f994a43f71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596933"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568106"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Cómo: Crear un manifiesto de producto
 Para implementar los requisitos previos para la aplicación, puede crear un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único, pero un manifiesto del paquete para cada configuración regional. El manifiesto del paquete contiene aspectos específicos de la localización del paquete. Esto incluye cadenas, contratos de licencia del usuario final y los paquetes de idioma.
 
- Para obtener más información acerca de los manifiestos de producto, consulte [Cómo: crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).
+ Para obtener más información acerca de los manifiestos de paquete, consulte [Cómo: crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).
 
 ## <a name="create-the-product-manifest"></a>Crear el manifiesto del producto
 

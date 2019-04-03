@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476064"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790711"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Tutorial: Depurar una aplicación paralela en Visual Studio (C#, Visual Basic, C++)
 
@@ -65,10 +65,10 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 1. Abra Visual Studio y cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Tipo **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola** (o **c ++**), elija **plantillas**y, a continuación:
-    
-    - Para C# o Visual Basic, elija **crear nuevo proyecto de aplicación de consola (.NET Framework)** cualquiera C# o Visual Basic. En el cuadro de diálogo que aparece, elija **crear**.
-    - Para C++, elija **crear nuevo proyecto de aplicación de consola** para C++. En el cuadro de diálogo que aparece, elija **crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Tipo **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola** (o **c ++**), elija **plantillas**y, a continuación:
+
+    - Para C# o Visual Basic, elija **crear nuevo proyecto de aplicación de consola (.NET Framework)** cualquiera C# o Visual Basic. En el cuadro de diálogo que se abre, elija **Crear**.
+    - Para C++, elija **crear nuevo proyecto de aplicación de consola** para C++. En el cuadro de diálogo que se abre, elija **Crear**.
 
     A continuación, escriba un nombre o utilice el nombre predeterminado y haga clic en **crear**.
     ::: moniker-end
@@ -82,7 +82,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
     A continuación, escriba un nombre o utilice el nombre predeterminado y haga clic en **Aceptar**.
     ::: moniker-end
 
-    Si no ve el **aplicación de consola** plantilla de proyecto, vaya a **herramientas** > **obtener herramientas y características...** , que abre el instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+    Si no ve la plantilla de proyecto **Aplicación de consola**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
 1. Abra el archivo de código .cpp, .cs o .vb del proyecto. Elimine su contenido para crear un archivo de código vacío.
 

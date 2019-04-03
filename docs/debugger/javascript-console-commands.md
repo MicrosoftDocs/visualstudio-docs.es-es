@@ -1,7 +1,7 @@
 ---
 title: Comandos de la consola de JavaScript | Microsoft Docs
-ms.custom: seodec18
-ms.date: 07/17/2017
+ms.custom: ''
+ms.date: 03/28/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -13,21 +13,28 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701958"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790776"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos de la consola de JavaScript en Visual Studio
 
-La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo usar esa ventana, consulte [inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). La información de este tema se aplica a las aplicaciones para UWP y aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para obtener información acerca sobre los comandos de consola compatibles en las aplicaciones de Cordova, vea [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Para obtener información sobre el uso de la consola con herramientas de F12 de Internet Explorer, consulte [este tema](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).
+::: moniker range=">=vs-2019"
+La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. La información de este tema se aplica a las aplicaciones de Node.js que se creó con Visual Studio con el **desarrollo de Node.js** carga de trabajo instalada.
+::: moniker-end
+::: moniker range="vs-2017"
+La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo usar esta ventana, consulte [inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). La información de este tema se aplica a la aplicación de Node.js, UWP apps y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para obtener información acerca sobre los comandos de consola compatibles en las aplicaciones de Cordova, vea [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
+::: moniker-end
 
 Si la ventana Consola JavaScript está cerrada, puedes abrirla durante la depuración en Visual Studio si eliges **Depurar** > **Ventanas** > **Consola JavaScript**.
 
 > [!NOTE]
 > Si la ventana no está disponible durante una sesión de depuración, asegúrese de que el tipo de depurador está establecido en **Script** en las propiedades de depuración del proyecto.
+
+Para obtener información sobre el uso de la consola en herramientas de desarrollo de Microsoft Edge, consulte [en este tema](/microsoft-edge/devtools-guide).
 
 ## <a name="console-object-commands"></a>Comandos del objeto console
 En esta tabla se muestra la sintaxis de los comandos del objeto `console` que puedes usar en la ventana Consola JavaScript o para enviar mensajes a la consola desde el código. Este objeto tiene varias formas que te permiten diferenciar, si quieres, los mensajes informativos de los mensajes de error.
@@ -123,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
-- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

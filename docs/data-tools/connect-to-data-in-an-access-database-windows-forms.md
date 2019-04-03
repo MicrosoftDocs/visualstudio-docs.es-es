@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227649"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647354"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Conectar a los datos en una base de datos de Access (Windows Forms)
 
@@ -95,7 +95,7 @@ Cree el conjunto de datos ejecutando el **Asistente para la configuración de or
 
 8. En el **nombre de archivo de base de datos**, especifique la ruta de acceso y el nombre de la *.mdb* archivo que desea conectarse a y, a continuación, seleccione **Aceptar**.
 
-   ![Agregar archivo de base de datos de acceso a la conexión](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![Agregar archivo de base de datos de acceso a la conexión](../data-tools/media/add-connection-access-db.png)
 
 9. Seleccione **siguiente** en el **elegir la conexión de datos** página.
 

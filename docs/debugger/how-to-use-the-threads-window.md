@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ef787bb9293bb26ba9ab706abf805005153752
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476038"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790802"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Tutorial: Depurar una aplicación multiproceso mediante la ventana de subprocesos (C#, Visual Basic, C++)
 
@@ -37,10 +37,10 @@ Cree el siguiente proyecto de aplicación multiproceso para utilizarla en este t
 1. Abra Visual Studio y cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Tipo **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola** (o **c ++**), elija **plantillas**y, a continuación:
-    
-    - Para C#, elija **crear nuevo proyecto de aplicación de consola (.NET Framework)** para C#. En el cuadro de diálogo que aparece, elija **crear**.
-    - Para C++, elija **crear nuevo proyecto de aplicación de consola**. En el cuadro de diálogo que aparece, elija **crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Tipo **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola** (o **c ++**), elija **plantillas**y, a continuación:
+
+    - Para C#, elija **crear nuevo proyecto de aplicación de consola (.NET Framework)** para C#. En el cuadro de diálogo que se abre, elija **Crear**.
+    - Para C++, elija **crear nuevo proyecto de aplicación de consola**. En el cuadro de diálogo que se abre, elija **Crear**.
 
     A continuación, escriba un nombre como **MyThreadWalkthroughApp** y haga clic en **crear**.
     ::: moniker-end
@@ -52,7 +52,7 @@ Cree el siguiente proyecto de aplicación multiproceso para utilizarla en este t
     A continuación, escriba un nombre como **MyThreadWalkthroughApp** y haga clic en **Aceptar**.
     ::: moniker-end
 
-    Si no ve el **aplicación de consola** plantilla de proyecto, vaya a **herramientas** > **obtener herramientas y características...** , que abre el instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+    Si no ve la plantilla de proyecto **Aplicación de consola**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
     Aparece el nuevo proyecto en **el Explorador de soluciones**, y un archivo de origen denominado *Program.cs* o *MyThreadWalkthroughApp.cpp* se abre en la ventana de código fuente.
 

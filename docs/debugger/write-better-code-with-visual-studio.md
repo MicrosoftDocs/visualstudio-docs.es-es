@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961720"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790334"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Herramientas para ayudarle a escribir código mejor y técnicas de depuración
 
@@ -42,7 +42,7 @@ El código siguiente tiene algunos errores que pueden corregir mediante el IDE d
 
 Para crear la aplicación:
 
-1. Abra Visual Studio y elija **archivo > Nuevo proyecto**. En **Visual C#** , elija **Windows Desktop** o **.NET Core**y, a continuación, en el panel central, elija un **aplicación de consola**.
+1. Abra Visual Studio y elija **archivo** > **New** > **proyecto**. En **Visual C#** , elija **Windows Desktop** o **.NET Core**y, a continuación, en el panel central, elija un **aplicación de consola**.
 
     > [!NOTE]
     > Si no ve la plantilla de proyecto **Aplicación de consola**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** o la carga de trabajo **Desarrollo multiplataforma de .NET Core**, y después elija **Modificar**.

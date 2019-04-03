@@ -41,7 +41,7 @@ ms.locfileid: "56633049"
 
    - `progid`: Una cadena que identifica el tipo de archivo, para marcarlo en el registro.
 
-   - `defaultIcon`: Un icono que se utilizará para este tipo de archivo. El icono debe agregarse como un recurso de archivo en el manifiesto de aplicación. Para obtener más información, consulta [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+   - `defaultIcon`: Un icono que se utilizará para este tipo de archivo. El icono debe agregarse como un recurso de archivo en el manifiesto de aplicación. Para obtener más información, consulta [Cómo: Incluir un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
      Para obtener un ejemplo de la `file` y `fileAssociation` elementos, vea [ \<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md).
 
