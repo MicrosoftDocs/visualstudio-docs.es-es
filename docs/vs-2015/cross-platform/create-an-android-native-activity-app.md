@@ -29,7 +29,7 @@ Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataform
  [Compilar y ejecutar la aplicación predeterminada Native Activity de Android](#BuildHello)  
   
 ##  <a name="req"></a> Requisitos  
- Antes de crear una aplicación de Android Native Activity, asegúrese de que cumple todos los requisitos del sistema y de que tiene instalada la opción Visual C++ para el desarrollo móvil multiplataforma en Visual Studio 2015. Para obtener más información, consulta [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Asegúrese de que las herramientas de terceros y SDK necesarios estén incluidos en la instalación y que está instalado el emulador de Microsoft Visual Studio para Android.  
+ Antes de crear una aplicación de Android Native Activity, asegúrese de que cumple todos los requisitos del sistema y de que tiene instalada la opción Visual C++ para el desarrollo móvil multiplataforma en Visual Studio 2015. Para obtener más información, consulta [Instalar Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Asegúrese de que las herramientas de terceros y SDK necesarios estén incluidos en la instalación y que está instalado el emulador de Microsoft Visual Studio para Android.  
   
 ##  <a name="Create"></a> Crear un nuevo proyecto de Native Activity  
  En este tutorial, primero debe crear un nuevo proyecto de Android Native Activity y, a continuación, compilar y ejecutar la aplicación predeterminada en el emulador de Visual Studio para Android.  
