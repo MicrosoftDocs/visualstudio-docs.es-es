@@ -2,7 +2,7 @@
 title: Guía del administrador de Visual Studio
 titleSuffix: ''
 description: Obtenga más información sobre cómo implementar Visual Studio en un entorno empresarial.
-ms.date: 05/29/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c9dbd7c3687596df0ccb0397cc5d52ff7888f9ff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324940"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790100"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guía del administrador de Visual Studio
 
@@ -30,7 +30,17 @@ En entornos empresariales, es habitual que los administradores del sistema imple
 
 ## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Implementación de Visual Studio en un entorno empresarial
 
-Puede implementar Visual Studio en estaciones de trabajo cliente siempre y cuando cada equipo de destino cumpla los [requisitos mínimos de instalación](/visualstudio/productinfo/vs2017-system-requirements-vs). Tanto si va a realizar la implementación a través de software como System Center o mediante un archivo por lotes, normalmente deberá seguir los pasos siguientes:
+::: moniker range="vs-2017"
+
+Puede implementar Visual Studio en estaciones de trabajo cliente siempre y cuando cada equipo de destino cumpla los [requisitos mínimos de instalación](/visualstudio/productinfo/vs2017-system-requirements-vs/). Tanto si va a realizar la implementación a través de software como System Center o mediante un archivo por lotes, normalmente deberá seguir los pasos siguientes:
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Puede implementar Visual Studio en estaciones de trabajo cliente siempre y cuando cada equipo de destino cumpla los [requisitos mínimos de instalación](/visualstudio/releases/2019/system-requirements/). Tanto si va a realizar la implementación a través de software como System Center o mediante un archivo por lotes, normalmente deberá seguir los pasos siguientes:
+
+::: moniker-end
 
 1. [Crear un recurso compartido de red que contenga los archivos de producto de Visual Studio](create-a-network-installation-of-visual-studio.md) en una ubicación de red.
 

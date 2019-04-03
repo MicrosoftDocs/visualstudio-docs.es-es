@@ -8,15 +8,15 @@ dev_langs:
 - C++
 - jsharp
 author: mikeblome
-ms.author: Michael.Blome
+ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d12e08f374efd306589d9d50f840a8d36f5b5a
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 4a4044416131a27ca313d10d02404094c5f5e219
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070517"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515446"
 ---
 # <a name="trackedvctooltask-base-class"></a>Clase base TrackedVCToolTask
 
