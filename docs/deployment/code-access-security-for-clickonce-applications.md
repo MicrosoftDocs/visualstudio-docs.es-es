@@ -67,7 +67,7 @@ Las aplicaciones ClickOnce se basan en .NET Framework y están sujetas a restric
 
  Además, cuando escribe código, la característica IntelliSense del Editor de código deshabilitará cualquier miembro que no esté incluido en los permisos de seguridad que haya configurado.
 
- Para obtener más información, consulta [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).
+ Para obtener más información, consulta [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).
 
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Permisos de seguridad para las aplicaciones hospedadas en explorador
  Visual Studio proporciona los siguientes tipos de proyecto para las aplicaciones de Windows Presentation Foundation (WPF):
