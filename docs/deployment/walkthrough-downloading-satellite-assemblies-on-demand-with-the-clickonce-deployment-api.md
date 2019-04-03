@@ -50,7 +50,7 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 
 2. Genere los ensamblados satélite para la aplicación mediante [Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator) o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-3. Genere un manifiesto de aplicación o abra el manifiesto de aplicación existente mediante *MageUI.exe*. Para obtener más información sobre esta herramienta, consulte [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).
+3. Genere un manifiesto de aplicación o abra el manifiesto de aplicación existente mediante *MageUI.exe*. Para obtener más información sobre esta herramienta, consulte [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).
 
 4. Haga clic en la ficha **Archivos** .
 
