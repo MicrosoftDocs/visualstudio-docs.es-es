@@ -1,25 +1,22 @@
 ---
 title: Definir un personalizado en un elemento de cuadro de herramientas de modelado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994928"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir un elemento personalizado en un cuadro de herramientas de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +161,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
   
 4.  Agregue las definiciones del cuadro de herramientas al proyecto. Incluir el **.tbxinfo** de archivos, los archivos de diagrama, los archivos de mapa de bits y los archivos de recursos y asegúrese de que se incluyen en el archivo VSIX.  
   
-    -   En el Explorador de soluciones, en el menú contextual del proyecto VSIX, elija **agregar**, **elemento existente**. En el cuadro de diálogo, establezca **objetos de tipo: todos los archivos**. Busque los archivos, selecciónelos todos y, a continuación, elija **agregar**.  
+    -   En el Explorador de soluciones, en el menú contextual del proyecto VSIX, elija **agregar**, **elemento existente**. En el cuadro de diálogo, establezca **objetos de tipo: Todos los archivos**. Busque los archivos, selecciónelos todos y, a continuación, elija **agregar**.  
   
         > [!NOTE]
         >  En este proyecto, los archivos de diagrama no se pueden abrir en el editor de modelos.  
@@ -200,7 +197,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
   
      En la instancia experimental, cree o abra un diagrama de UML del tipo pertinente. Compruebe que la nueva herramienta aparece en el cuadro de herramientas y que crea elementos correctamente.  
   
-10. **Para obtener un archivo VSIX para la implementación:** en el Explorador de Windows, abra la carpeta **.\bin\Debug** o **.\bin\Release** para encontrar el **.vsix** archivo. Es un archivo de la extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Puede instalarse en el equipo y también enviarse a otros usuarios de Visual Studio.  
+10. **Para obtener un archivo VSIX para la implementación:** En el Explorador de Windows, abra la carpeta **.\bin\Debug** o **.\bin\Release** para encontrar el **.vsix** archivo. Es un archivo de la extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Puede instalarse en el equipo y también enviarse a otros usuarios de Visual Studio.  
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Para instalar herramientas personalizadas desde una extensión de Visual Studio  
   
@@ -241,6 +238,3 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
  [Definir un perfil para ampliar UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

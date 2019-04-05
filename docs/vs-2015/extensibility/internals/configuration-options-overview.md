@@ -1,27 +1,22 @@
 ---
 title: Información general sobre las opciones de configuración | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44c5f424ec36d3c04403f62547920f59622208a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747986"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996551"
 ---
 # <a name="configuration-options-overview"></a>Información general de opciones de configuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Los proyectos de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] puede admitir v
 |Nombre de configuración|Plataforma: Win32|Plataforma: Win64|  
 |------------------------|----------------------|----------------------|  
 |Depuración|\<Configuración de Win32 de depuración >|\<Depurar opciones Win64 >|  
-|Versión|\<Configuración de Win32 de versión >|\<Configuración de Win64 versión >|  
+|Release|\<Configuración de Win32 de versión >|\<Configuración de Win64 versión >|  
 |MyConfig|N/D|\<Configuración de MyConfig Win64 >|  
   
 > [!NOTE]
@@ -80,4 +75,3 @@ Interfaces de configuración
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   
  [Configuración del proyecto para la compilación](../../extensibility/internals/project-configuration-for-building.md)   
  [Configuración de soluciones](../../extensibility/internals/solution-configuration.md)
-

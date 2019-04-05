@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: iniciar la depuración XSLT | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Iniciar la depuración XSLT | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 8358335a-fcb0-45e0-a37e-45b43e49ec0a
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 22a2ad1a37b67b2ac2120bfef9975e2a780d737f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246628"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994942"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Cómo: Iniciar la depuración de XSLT
+# <a name="how-to-start-debugging-xslt"></a>Filtrar Comenzar a depurar XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El depurador de XSLT se puede utilizar para depurar una hoja de estilos XSLT o una aplicación XSLT. Durante la depuración, puede ejecutar código de línea en línea yendo al código, recorriéndolo o saliendo de él. Los comandos para utilizar la funcionalidad de paso de código en el depurador de XSLT son los mismos que en los demás depuradores de Visual Studio. Una vez se haya iniciado la depuración, el depurador XSLT abre unas ventanas para mostrar el documento de entrada y la salida XSLT.  
@@ -94,5 +89,4 @@ namespace ConsoleApplication
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
- [Información general de ejecución paso a paso el código](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)
-
+ [Información general de ejecución paso a paso el código](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

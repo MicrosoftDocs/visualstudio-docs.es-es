@@ -1,14 +1,9 @@
 ---
-title: 'Error: No tiene permiso para inspeccionar el proceso&#39;identidad s | Microsoft Docs'
-ms.custom: ''
+title: 'Error: No tiene permiso para inspeccionar el proceso&#39;identidad s | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 6233d060-85b8-42be-ae5f-bde7e1d0f241
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0974e38f9a0a901c97ca5dc3c9473d027095d67c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f173be87987cbc8bcfb3390dfdaaf5eab7501bb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995839"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Error: No tiene permiso para inspeccionar el proceso&#39;identidad s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,19 +30,19 @@ No tiene permiso para inspeccionar la identidad del proceso. Probablemente se de
   
 ### <a name="to-enable-terminal-services"></a>Para habilitar Terminal Services  
   
-1.  Haga clic en **iniciar** y, a continuación, elija **Panel de Control**.  
+1.  Haga clic en **Inicio** y después elija **Panel de control**.  
   
-2.  En el Panel de Control, elija **cambiar a vista clásica**, si es necesario y, a continuación, haga doble clic en **herramientas administrativas**.  
+2.  En el Panel de control, elija **Cambiar a Vista clásica** si es necesario y, a continuación, haga doble clic en **Herramientas administrativas**.  
   
-3.  En el **herramientas administrativas** ventana, haga doble clic en **administración de equipos**.  
+3.  En la ventana **Herramientas administrativas**, haga doble clic en **Administración de equipos**.  
   
-4.  En la ventana Administración de equipos, expanda el **servicios y aplicaciones** nodo.  
+4.  En la ventana Administración de equipos, expanda el nodo **Servicios y Aplicaciones**.  
   
-5.  En el **servicios y aplicaciones**, haga clic en **servicios**.  
+5.  En **Servicios y Aplicaciones**, haga clic en **Servicios**.  
   
      Se mostrará una lista de servicios en el panel derecho.  
   
-6.  En el **servicios** lista, haga clic en **servicios de Terminal Server** y, a continuación, elija **propiedades**.  
+6.  En la lista **Servicios**, haga clic con el botón derecho en **Terminal Services** y después elija **Propiedades**.  
   
 7.  En el **propiedades de Terminal Services** ventana, vaya a la **General** pestaña y establezca **tipo de inicio** a **Manual**.  
   
@@ -59,20 +54,17 @@ No tiene permiso para inspeccionar la identidad del proceso. Probablemente se de
   
 ### <a name="to-enable-remote-desktop"></a>Para habilitar Escritorio remoto  
   
-1.  Haga clic en **iniciar** y, a continuación, haga clic en **Mi PC**.  
+1.  Haga clic en **Inicio** y, a continuación, haga clic con el botón derecho en **Mi PC**.  
   
 2.  Elija **Propiedades**.  
   
-     El **las propiedades del sistema** se muestra la ventana.  
+     Se mostrará la ventana **Propiedades del sistema**.  
   
-3.  Haga clic en **remoto**.  
+3.  Haga clic en **Remoto**.  
   
-4.  En **escritorio remoto**, seleccione **permiten a los usuarios conectarse remotamente a este equipo**.  
+4.  En **Escritorio remoto**, seleccione **Permitir que los usuarios se conecten de manera remota a este equipo**.  
   
 5.  Haga clic en **Aceptar**.  
   
 ## <a name="see-also"></a>Vea también  
  [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

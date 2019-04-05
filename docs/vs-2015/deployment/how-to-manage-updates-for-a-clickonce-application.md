@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: administrar actualizaciones de una aplicación ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Administrar actualizaciones de una aplicación ClickOnce | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
 dev_langs:
@@ -24,15 +19,15 @@ ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: adf0a6df54c3e6bd758896ac8a836b6174e767b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9781745af5d65d497652002c9afcd8132058ffb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272472"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997971"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Cómo: Administrar actualizaciones de aplicaciones ClickOnce
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Filtrar Administrar actualizaciones de aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] las aplicaciones pueden buscar actualizaciones automáticamente o mediante programación. Como desarrollador, tiene mucha flexibilidad para especificar cuándo y cómo se realizan comprobaciones de actualización, si éstas son obligatorias y donde la aplicación debe buscar actualizaciones.  
@@ -51,7 +46,7 @@ ms.locfileid: "49272472"
   
 1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en el **publicar** ficha.  
+2.  Haga clic en la pestaña **Publicar**.  
   
 3.  Haga clic en el **actualizaciones** botón para abrir el **actualizaciones de la aplicación** cuadro de diálogo.  
   
@@ -59,11 +54,11 @@ ms.locfileid: "49272472"
   
 5.  En el **Elija cuándo debe buscar actualizaciones la aplicación** sección, seleccione **antes de iniciar la aplicación**. Esto garantiza que los usuarios conectados a la red siempre ejecutan la aplicación con las últimas actualizaciones.  
   
-### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Para comprobar las actualizaciones en segundo plano una vez iniciada la aplicación  
+### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Buscar actualizaciones en segundo plano después de iniciar la aplicación  
   
 1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en el **publicar** ficha.  
+2.  Haga clic en la pestaña **Publicar**.  
   
 3.  Haga clic en el **actualizaciones** botón para abrir el **actualizaciones de la aplicación** cuadro de diálogo.  
   
@@ -77,7 +72,7 @@ ms.locfileid: "49272472"
   
 1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en el **publicar** ficha.  
+2.  Haga clic en la pestaña **Publicar**.  
   
 3.  Haga clic en el **actualizaciones** botón para abrir el **actualizaciones de la aplicación** cuadro de diálogo.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "49272472"
   
 1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en el **publicar** ficha.  
+2.  Haga clic en la pestaña **Publicar**.  
   
 3.  Haga clic en el **actualizaciones** botón para abrir el **actualizaciones de la aplicación** cuadro de diálogo.  
   
@@ -101,7 +96,7 @@ ms.locfileid: "49272472"
   
 1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en el **publicar** ficha.  
+2.  Haga clic en la pestaña **Publicar**.  
   
 3.  Haga clic en el **actualizaciones** botón para abrir el **actualizaciones de la aplicación** cuadro de diálogo.  
   
@@ -109,17 +104,14 @@ ms.locfileid: "49272472"
   
 5.  En el **Actualizar ubicación** , introduzca la ubicación de actualización con una dirección URL completa, con el formato http://Hostname/ApplicationName, o una ruta UNC con el formato \\\Server\ApplicationName o haga clic en el **examinar** botón para buscar la ubicación de actualización. La ubicación de actualización es donde la aplicación buscará una versión actualizada de sí mismo.  
   
-6.  Crear un botón, el elemento de menú o el otro elemento de interfaz de usuario en un formulario de Windows que se seleccionarán los usuarios para comprobar si hay actualizaciones. Desde el controlador de eventos de ese elemento, llame a un método para buscar e instalar las actualizaciones. Puede encontrar un ejemplo de código de Visual Basic y Visual C# para este tipo de método en [Cómo: comprobar las actualizaciones de aplicaciones mediante programación con la API de implementación ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
+6.  Crear un botón, el elemento de menú o el otro elemento de interfaz de usuario en un formulario de Windows que se seleccionarán los usuarios para comprobar si hay actualizaciones. Desde el controlador de eventos de ese elemento, llame a un método para buscar e instalar las actualizaciones. Puede encontrar un ejemplo de código de Visual Basic y Visual C# para este tipo de método en [Cómo: Buscar actualizaciones de aplicaciones mediante programación con la API de implementación ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   
 7.  Compile la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [Cuadro de diálogo de las actualizaciones de aplicación](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [Cuadro de diálogo de las actualizaciones de aplicación](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [Elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Cómo: Publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Como: Buscar actualizaciones de aplicaciones mediante programación a través de la API de implementación ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
-
-
-
+ [Cómo: Búsqueda de actualizaciones de aplicaciones mediante programación utilizando la API de implementación de ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

@@ -1,25 +1,22 @@
 ---
-title: 'Cómo: crear una biblioteca de diseñadores de actividad | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear una biblioteca de diseñadores de actividad | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 5b62e092-63b3-462d-9d77-fb112482f45d
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6802f92f349d15d48935f4e7c3db85abf7c12535
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 69d68fdc0a34ffa680ec2306a087cd29002eb185
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258276"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998669"
 ---
-# <a name="how-to-create-an-activity-designer-library"></a>Crear una biblioteca de diseñadores de actividades
+# <a name="how-to-create-an-activity-designer-library"></a>Filtrar Crear una biblioteca de diseñadores de actividades
 Los diseñadores de actividades personalizados permiten crear una interfaz de usuario para una actividad estándar o personalizada. El usuario controla la complejidad de la interfaz de usuario y tiene la capacidad de crear más de un diseñador de actividad para una actividad. Este escenario permite crear diseñadores que se adaptan a múltiples audiencias.  
   
 ### <a name="to-create-an-activity-designer-library"></a>Para crear una biblioteca de diseñadores de actividades  
@@ -43,7 +40,7 @@ Los diseñadores de actividades personalizados permiten crear una interfaz de us
   
 8.  La plantilla de proyecto crea una definición del diseñador de actividad en código XAML y el archivo de implementación subyacente está en código fuente. [!INCLUDE[wfd1](../includes/wfd1-md.md)] se abre y muestra el lienzo para su diseñador de actividades.  
   
-9. Arrastre [!INCLUDE[avalon1](../includes/avalon1-md.md)] controla desde el **cuadro de herramientas** hasta la superficie de diseño para usarlos en el Diseñador de actividad personalizado.  Para obtener un ejemplo de cómo implementar un diseñador de actividad personalizado, consulte [Cómo: crear un diseñador de actividad personalizado](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
+9. Arrastre [!INCLUDE[avalon1](../includes/avalon1-md.md)] controla desde el **cuadro de herramientas** hasta la superficie de diseño para usarlos en el Diseñador de actividad personalizado.  Para obtener un ejemplo de cómo implementar un diseñador de actividad personalizado, vea [Cómo: Crear un diseñador de actividad personalizado](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
     >  Diseñadores de actividad personalizados se pueden usar para actividades personalizadas, así como para predeterminada [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]actividades.  

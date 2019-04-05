@@ -1,14 +1,9 @@
 ---
-title: DEBUG_REFERENCE_INFO | Documentos de Microsoft
-ms.custom: ''
+title: DEBUG_REFERENCE_INFO | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - DEBUG_REFERENCE_INFO
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 33a3f2a394ec46b92989d43b5efbd672fef05dc3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 675373ae1728bbca2cc7a89fdaa8014e6286d8b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796641"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996332"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -62,10 +57,10 @@ public struct DEBUG_REFERENCE_INFO { 
  bstrName  
  El nombre especificado por el usuario de la [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto.  
   
- bstrType parámetro  
+ bstrType  
  El tipo de referencia como una cadena con formato.  
   
- bstrValue parámetro  
+ bstrValue  
  El valor de referencia como una cadena con formato  
   
  dwAttrib  
@@ -83,7 +78,7 @@ public struct DEBUG_REFERENCE_INFO { 
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -96,4 +91,3 @@ public struct DEBUG_REFERENCE_INFO { 
  [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)   
  [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)
-
