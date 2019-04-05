@@ -1,12 +1,9 @@
 ---
-title: 'Tutorial: Conectar un Host a un procesador de directivas personalizadas | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Conectar un Host a un procesador de directivas personalizadas | Documentos de Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
@@ -14,23 +11,23 @@ ms.assetid: 254540d9-90d6-42de-8c1c-068affd56e83
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817878"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58999826"
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas personalizadas
+# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un Host a un procesador de directivas personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede escribir su propio host que procesa las plantillas de texto. Un host personalizado básico se muestra en [Tutorial: crear un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Puede ampliar ese host para agregar funciones como la generación de varios archivos de salida.  
+Puede escribir su propio host que procesa las plantillas de texto. Un host personalizado básico se muestra en [Tutorial: Creación de un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Puede ampliar ese host para agregar funciones como la generación de varios archivos de salida.  
   
  En este tutorial, expanda el host personalizado para que admita plantillas de texto que llamen a procesadores de directivas. Cuando se define un lenguaje específico de dominio, genera un *procesador de directivas* para el modelo de dominio. El procesador de directivas facilita a los usuarios escribir plantillas que obtener acceso al modelo, lo que reduce la necesidad de escribir el ensamblado e importar directivas en las plantillas.  
   
 > [!WARNING]
->  En este tutorial se basa en [Tutorial: crear un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Realice primero ese tutorial.  
+>  En este tutorial se basa en [Tutorial: Creación de un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Realice primero ese tutorial.  
   
  En este tutorial se incluyen las tareas siguientes:  
   
@@ -49,7 +46,7 @@ Puede escribir su propio host que procesa las plantillas de texto. Un host perso
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |SDK de Visual Studio de visualización y modelado|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|  
   
- Además, debe tener la transformación de plantilla de texto personalizado creada en [Tutorial: crear un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
+ Además, debe tener la transformación de plantilla de texto personalizado creada en [Tutorial: Creación de un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
   
 ## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>Uso de herramientas de lenguajes específicos de dominio para generar un procesador de directivas  
  En este tutorial, usará al Asistente del Diseñador de lenguaje específico de dominio para crear un lenguaje específico de dominio para la solución DSLMinimalTest.  
@@ -60,13 +57,13 @@ Puede escribir su propio host que procesa las plantillas de texto. Un host perso
   
    - Nombre: DSLMinimalTest  
   
-   - Plantilla de solución: lenguaje mínimo  
+   - Plantilla de solución: Lenguaje mínimo  
   
    - Extensión de archivo: min  
   
-   - Nombre de la compañía: Fabrikam  
+   - Nombre de la empresa: Fabrikam  
   
-     Para obtener más información acerca de cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+     Para obtener más información acerca de cómo crear una solución de lenguaje específico de dominio, vea [Cómo: Crear una solución de lenguaje específico de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 2. En el menú **Compilar** , haga clic en **Compilar solución**.  
   
@@ -86,7 +83,7 @@ Puede escribir su propio host que procesa las plantillas de texto. Un host perso
 6. Guarde la solución y, a continuación, cierre el Diseñador de lenguaje específico de dominio.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Conectar un Host de plantilla de texto personalizado a un procesador de directivas  
- Después de generar el procesador de directivas, conecte el procesador de directivas y el host de plantilla de texto personalizado que creó en [Tutorial: crear un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
+ Después de generar el procesador de directivas, conecte el procesador de directivas y el host de plantilla de texto personalizado que creó en [Tutorial: Creación de un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
   
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>Para conectarse a un host de plantillas de texto personalizado para el procesador de directivas personalizadas  
   
@@ -230,7 +227,7 @@ Puede escribir su propio host que procesa las plantillas de texto. Un host perso
             }  
     ```  
   
-7.  En el **archivo** menú, haga clic en **guardar todo**.  
+7.  En el menú **Archivo**, haga clic en **Guardar todo**.  
   
 8.  En el menú **Compilar** , haga clic en **Compilar solución**.  
   
@@ -362,7 +359,4 @@ Puede escribir su propio host que procesa las plantillas de texto. Un host perso
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Crear un host de plantillas de texto personalizadas](../modeling/walkthrough-creating-a-custom-text-template-host.md)
-
-
-
+ [Tutorial: Crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md)

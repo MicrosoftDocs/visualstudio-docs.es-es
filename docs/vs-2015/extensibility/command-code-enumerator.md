@@ -1,27 +1,22 @@
 ---
 title: Enumerador de código de comandos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - command code enumerator
 - source control plug-ins, command code enumeration
 ms.assetid: 5d2c360c-59e4-4da8-bcb4-dd07c7441e40
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bcdba2dd1f6629a3e92c3b07d998b27b83f221a3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 06f1a3f7146125e59d02efc72a4d4fc9ab33be39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994972"
 ---
 # <a name="command-code-enumerator"></a>Enumerador de código de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,4 +79,3 @@ enum SCCCOMMAND {
  [Complementos de Control de código fuente](../extensibility/source-control-plug-ins.md)   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)
-

@@ -1,26 +1,21 @@
 ---
 title: En el Editor básico | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61484c9d01022b9f3b860f0c7b78dd3aedc045f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998558"
 ---
 # <a name="inside-the-core-editor"></a>En el Editor básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +65,7 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor básico es un conjunto de
  Describe la creación de instancias de un servicio de lenguaje decoraciones del código de control.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Tutorial: Crear un editor principal y registrar un tipo de archivo del editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Tutorial: Crear un Editor de núcleo y registrar un tipo de archivo del Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Proporciona instrucciones paso a paso sobre cómo iniciar el editor básico desde el código administrado.  
   
  [Barra desplegable](../extensibility/drop-down-bar.md)  
@@ -82,6 +77,5 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor básico es un conjunto de
  [Cómo: Agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)  
  Proporciona instrucciones paso a paso sobre cómo crear un marcador de texto y cómo agregar un comando personalizado a un menú contextual.  
   
- [Cómo: Crear marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)  
+ [Cómo: Crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)  
  Proporciona instrucciones paso a paso sobre cómo crear un marcador de texto personalizado y cómo proporcionar el tipo de marcador como un servicio.
-

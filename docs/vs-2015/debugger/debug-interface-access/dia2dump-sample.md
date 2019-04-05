@@ -1,14 +1,9 @@
 ---
 title: Ejemplo Dia2dump | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 727d7a4a97bc0aa55d370a45549941ab286930f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd52c635d5ade1bef73176601d6957ba5859723b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998107"
 ---
 # <a name="dia2dump-sample"></a>Ejemplo Dia2dump
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ El ejemplo Dia2dump se instala con Visual Studio y contiene el archivo de origen
   
 2.  En las páginas de propiedades del proyecto, en el **C o C++** &#124; **General** &#124; **directorios de inclusión adicionales** propiedad, especifique el `..\DIA SDK\include` directory. Esto garantiza que el compilador puede encontrar el archivo dia2.h.  
   
-3.  En el **compilar** menú, haga clic en **recompilar solución**.  
+3.  En el menú **Compilar**, haga clic en **Recompilar solución**.  
   
 4.  Cierre Visual Studio.  
   
@@ -58,6 +53,3 @@ El ejemplo Dia2dump se instala con Visual Studio y contiene el archivo de origen
 ## <a name="see-also"></a>Vea también  
  [Origen Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
  [Cómo: Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
-
-
-

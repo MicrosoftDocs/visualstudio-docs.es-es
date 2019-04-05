@@ -1,27 +1,22 @@
 ---
 title: Subprocesos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], threads
 - threading [Debugging SDK]
 ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fdb69d6d489d72bea7611c807337e7429fd94ad9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c59ef3bdbbd96db82c8e865379907d95227628ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998083"
 ---
 # <a name="threads"></a>Subprocesos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,4 +35,3 @@ En cuanto a la arquitectura de depurador, un **subproceso**:
  [Motor de depuración](../../extensibility/debugger/debug-engine.md)   
  [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)   
  [Administrador de depuración de sesión](../../extensibility/debugger/session-debug-manager.md)
-

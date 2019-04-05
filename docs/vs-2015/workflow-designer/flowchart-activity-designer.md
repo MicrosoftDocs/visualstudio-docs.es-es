@@ -1,11 +1,8 @@
 ---
 title: Diseñador de actividades flowchart | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Flowchart.UI
@@ -15,13 +12,13 @@ ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 67bebeec9c2d88ba1912bc50b27e38f8278e7e3f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997063"
 ---
 # <a name="flowchart-activity-designer"></a>Diseñador de actividades Flowchart
 La actividad <xref:System.Activities.Statements.Flowchart> se utiliza para crear flujos de trabajo que definen y administran los controles de flujo complejos. Una clase <xref:System.Activities.Statements.Flowchart> se puede crear en código o mediante [!INCLUDE[wfd2](../includes/wfd2-md.md)]. En este tema se documenta la experiencia de uso con [!INCLUDE[wfd2](../includes/wfd2-md.md)]. El diseñador de actividades de flujos de trabajo de [!INCLUDE[wfd1](../includes/wfd1-md.md)] permite a los desarrolladores de software crear flujos de trabajo de forma natural.  
@@ -47,6 +44,6 @@ La actividad <xref:System.Activities.Statements.Flowchart> se utiliza para crear
 |<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Contiene la colección de objetos <xref:System.Activities.Statements.FlowNode> en la clase <xref:System.Activities.Statements.Flowchart>.|  
   
 ## <a name="see-also"></a>Vea también  
- [Diagrama de flujo](../workflow-designer/flowchart-activity-designers.md)   
+ [Flowchart](../workflow-designer/flowchart-activity-designers.md)   
  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+ [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

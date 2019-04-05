@@ -1,27 +1,22 @@
 ---
 title: Ejemplo de implementación de las variables locales | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], local variables
 - expression evaluation, local variables
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ca64ed08060df3a03dbb178fc636ca243e1e48d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af718d5fe5038a2baa62093078aaed9a3cccb14b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996219"
 ---
 # <a name="sample-implementation-of-locals"></a>Implementación de ejemplo de variables locales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,9 +66,8 @@ ms.locfileid: "51756812"
  [Contexto de evaluación](../../extensibility/debugger/evaluation-context.md)  
  Proporciona los argumentos que se pasan cuando llama a la del evaluador de expresiones (EE).  
   
- [Ejemplo de MyCEE](http://msdn.microsoft.com/en-us/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ [Ejemplo de MyCEE](http://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
  Se muestra un enfoque de implementación a la creación de un evaluador de expresiones del lenguaje MyC.  
   
 ## <a name="see-also"></a>Vea también  
  [Visualización de variables locales](../../extensibility/debugger/displaying-locals.md)
-
