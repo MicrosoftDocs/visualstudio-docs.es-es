@@ -1,14 +1,9 @@
 ---
 title: 'Tutorial: Configurar y usar un personalizado en un conjunto de reglas | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996457"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Tutorial: Configurar y utilizar un conjunto de reglas personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +72,7 @@ En este tutorial se muestra cómo usar las herramientas de análisis de código 
    > [!TIP]
    >  En una situación real, una buena práctica que se usará para dar prioridad a qué problemas desea dirigir con análisis de código es comenzar con la **reglas mínimas recomendadas** conjunto de reglas y corregir los problemas deseados y, a continuación, agregar de forma incremental más reglas o la regla se establece para encontrar y corregir los problemas adicionales.  
   
-   A continuación, agregará código a la biblioteca de clases que se usará para mostrar las infracciones de la CA1704 "Los identificadores deberían tener la ortografía correcta" regla de análisis de código. Para obtener más información, consulte [CA1704: los identificadores deben estar escritos correctamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
+   A continuación, agregará código a la biblioteca de clases que se usará para mostrar las infracciones de la CA1704 "Los identificadores deberían tener la ortografía correcta" regla de análisis de código. Para obtener más información, consulte [CA1704: Deben escribir correctamente los identificadores](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
 #### <a name="add-your-own-code"></a>Agregar su propio código  
   
@@ -115,7 +110,7 @@ En este tutorial se muestra cómo usar las herramientas de análisis de código 
   
 2. En la ventana Lista de errores, haga clic en **advertencias** y, a continuación, haga clic en el **descripción** encabezado de columna para ordenar las advertencias en orden alfanumérico.  
   
-    En una aplicación real, podría corregir cualquier infracción de regla que vale la pena corregir en este momento, o si lo desea desactivar o suprimir una regla si determinó que no era merece la pena corregir. Para obtener más información, consulte [suprimir las advertencias por uso de atributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+    En una aplicación real, podría corregir cualquier infracción de regla que vale la pena corregir en este momento, o si lo desea desactivar o suprimir una regla si determinó que no era merece la pena corregir. Para más información, vea [Suprimir advertencias mediante el atributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
   
 3. Tenga en cuenta las advertencias CA1704. Las infracciones de esta regla indican que debe "considerar proporcionar un nombre más significativo para los parámetros." Puede corregir el problema en el código o puede deshabilitar la regla, como se explica en el procedimiento siguiente.  
   
@@ -158,8 +153,5 @@ En este tutorial se muestra cómo usar las herramientas de análisis de código 
 2.  En la ventana Lista de errores, tenga en cuenta que al hacer clic en **advertencias**, ya no verá las infracciones de la advertencia CA1704 para la regla "Los identificadores deberían tener la ortografía correcta".  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: configurar el análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Cómo: Configurar análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Referencia del conjunto de reglas Análisis de código](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

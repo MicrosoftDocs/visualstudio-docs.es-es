@@ -1,12 +1,9 @@
 ---
 title: Propiedades de las asociaciones de UML de diagramas de clases | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.association.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: f82bcd34-7903-4c00-8da1-613efa07d223
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b132ee2aa0f67662fcfcad92b8ae945c2d66c680
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a322ea68053012a2e8f53993f06768b966cb61d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995595"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Propiedades de las asociaciones de diagramas de clases de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,11 +66,8 @@ En un diagrama de clases UML, puede dibujar *asociaciones* entre cualquier par d
 |    **Visibilidad**    |            Public             |                                                                                                                                                                                                                                 Public: es visible globalmente.<br /><br /> Private: no es visible fuera del tipo propietario.<br /><br /> Protected: es visible para los tipos derivados del propietario.<br /><br /> Package: es visible para otros tipos del mismo paquete.                                                                                                                                                                                                                                  |
 
 ## <a name="see-also"></a>Vea también  
- [Diagramas de clases UML: referencia](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrama de clases de UML: Referencia](../modeling/uml-class-diagrams-reference.md)   
  [Propiedades de tipos en diagramas de clases UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Propiedades de atributos en diagramas de clases UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Propiedades de las operaciones de diagramas de clases UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [Diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Diagrama de clases de UML: directrices](../modeling/uml-class-diagrams-guidelines.md)

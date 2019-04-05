@@ -1,14 +1,9 @@
 ---
-title: 'CA2204: Los literales deben estar escritos correctamente | Microsoft Docs'
-ms.custom: ''
+title: 'CA2204: Los literales deben estar escritos correctamente | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - Literals should be spelled correctly
 - CA2204
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9fb00f8a0986d5ead81e36888a9b714244d1230c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a08cb7cee2af51ade4b94dbf675ff83d7da456e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928449"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997404"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Debe escribir correctamente los literales
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Los literales deben estar escritos correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -49,12 +44,12 @@ ms.locfileid: "49928449"
 
 - El nombre del parámetro de cadena que se pasa a un método Console.Write o Console.WriteLine es "value" o "format".
 
-  Esta regla analiza la cadena literal en palabras, dividir en tokens las palabras compuestas y comprueba la ortografía de cada palabra o token. Para obtener información sobre el algoritmo de análisis, vea [CA1704: los identificadores deben estar escritos correctamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+  Esta regla analiza la cadena literal en palabras, dividir en tokens las palabras compuestas y comprueba la ortografía de cada palabra o token. Para obtener información sobre el algoritmo de análisis, consulte [CA1704: Deben escribir correctamente los identificadores](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
   De forma predeterminada, se utiliza la versión inglesa (en) del corrector ortográfico.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, corrija la ortografía de la palabra o agregar la palabra a un diccionario personalizado. Para obtener información sobre cómo usar los diccionarios personalizados, vea [Cómo: personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+ Para corregir una infracción de esta regla, corrija la ortografía de la palabra o agregar la palabra a un diccionario personalizado. Para obtener información sobre cómo usar los diccionarios personalizados, vea [Cómo: Personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla. Palabras escritas correctamente reducen la curva de aprendizaje necesaria para las nuevas bibliotecas de software.
@@ -62,7 +57,4 @@ ms.locfileid: "49928449"
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-
-
-
+ [CA1703: Cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

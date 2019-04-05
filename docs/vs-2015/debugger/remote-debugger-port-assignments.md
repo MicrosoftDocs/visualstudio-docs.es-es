@@ -1,25 +1,20 @@
 ---
 title: Las asignaciones de puerto del depurador remoto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 47a2b212ce3e98588a5dcf6ee75a479b01b5b302
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c1e70ec3ba50e5be1ed532bb4a88cbdd500af09c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817865"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994822"
 ---
 # <a name="remote-debugger-port-assignments"></a>Asignaciones de puertos del depurador remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
   
  En la ventana del depurador remoto, haga clic en **Herramientas / opciones**y establezca el número de puerto TCP/IP.  
   
- En la línea de comandos, inicie el depurador remoto con el **/puerto** cambiar: **msvsmon /port \<número de puerto >**.  
+ En la línea de comandos, inicie el depurador remoto con el conmutador **/port**: **msvsmon /port\< número de puerto>**.  
   
  Puede encontrar información sobre todos los conmutadores de la línea de comandos del depurador remoto en la ayuda de depuración remota (presione **F1** o haga clic en **Ayuda / Uso** en la ventana del depurador remoto).  
   
@@ -65,6 +60,3 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
   
 ## <a name="see-also"></a>Vea también  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

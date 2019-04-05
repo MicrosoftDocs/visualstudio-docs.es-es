@@ -1,27 +1,22 @@
 ---
 title: Pila de llamadas de eventos de gráficos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.callstack
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7c6ac7860fe846c86d846fd668c4647cd4145756
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997164"
 ---
 # <a name="graphics-event-call-stack"></a>Pila de llamadas de eventos de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +42,7 @@ La pila de llamadas de eventos gráficos del Analizador de gráficos de Visual S
 |**Ubicación**|El número de línea del sitio de llamada.|  
   
 ### <a name="links-to-graphics-objects"></a>Vínculos a objetos gráficos  
- Para entender el evento de gráficos seleccionado, puede que necesite información sobre el objeto de Direct3D al que está asociado. El **pila de llamadas de eventos de gráficos** ventana proporciona vínculos a esta información.  
+ Para entender el evento de gráficos seleccionado, puede que necesite información sobre el objeto de Direct3D al que está asociado. La ventana **Pila de llamadas de eventos gráficos** proporciona vínculos a esta información.  
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Objetos ausentes debido al sombreado de vértices](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)
-
-
-

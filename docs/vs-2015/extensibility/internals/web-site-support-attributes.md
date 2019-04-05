@@ -1,26 +1,21 @@
 ---
 title: Atributos de compatibilidad del sitio Web | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - web site projects, registration
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 312d8a760cc7005afc4308b637b12a292bd20329
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 75401eb0d5acd5d363d05aec57909eef5b9855e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756679"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996291"
 ---
 # <a name="web-site-support-attributes"></a>Atributos de compatibilidad del sitio web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,4 +59,3 @@ ms.locfileid: "51756679"
   
 ## <a name="see-also"></a>Vea también  
  [Compatibilidad con sitios web](../../extensibility/internals/web-site-support.md)
-

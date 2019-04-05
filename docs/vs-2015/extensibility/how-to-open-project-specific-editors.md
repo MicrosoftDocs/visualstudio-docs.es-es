@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: abrir editores específicos del proyecto | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Apertura de editores específicos del proyecto | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
 - editors [Visual Studio SDK], opening project-specific editors
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52d1fda1c3a1c2e8aac116c52afc8bf6738e23ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbafb5938f26b4cdb702168ee2f3500def7ac9c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817677"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997988"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Cómo: abrir editores específicos del proyecto
+# <a name="how-to-open-project-specific-editors"></a>Filtrar Abrir editores específicos de proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si el editor de ese proyecto concreto intrínsecamente depende de un archivo de elemento que se va a abrir un proyecto, el proyecto debe abrir el archivo con un editor específico del proyecto. El archivo no se puede delegar hasta el mecanismo de IDE para seleccionar un editor. Por ejemplo, en lugar de usar un editor de mapa de bits estándar, puede usar esta opción de editor específica del proyecto para especificar un editor específico del mapa de bits que reconoce la información en el archivo que es único para el proyecto.  
@@ -60,6 +55,5 @@ Si el editor de ese proyecto concreto intrínsecamente depende de un archivo de 
   
 ## <a name="see-also"></a>Vea también  
  [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Cómo: abrir editores estándar](../extensibility/how-to-open-standard-editors.md)   
- [Apertura de editores para documentos abiertos](../extensibility/how-to-open-editors-for-open-documents.md)
-
+ [Cómo: Abrir editores estándar](../extensibility/how-to-open-standard-editors.md)   
+ [Cómo: Abrir editores para documentos abiertos](../extensibility/how-to-open-editors-for-open-documents.md)

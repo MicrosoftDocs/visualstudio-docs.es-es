@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Analizar código administrado en previsión de defectos de código | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Analizar código administrado en previsión de defectos de código | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - managed code, analyzing
@@ -18,14 +13,14 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ee957d6be2cfc75a0ecdd780862c34eb5a1c540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912895"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998106"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Tutorial: Analizar código administrado en previsión de defectos de código
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Tutorial: Analizar código administrado en busca de defectos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial, analizar un proyecto administrado en previsión de defectos de código mediante la herramienta de análisis de código.  
@@ -98,7 +93,7 @@ En este tutorial, analizar un proyecto administrado en previsión de defectos de
   
 4.  Use lo siguiente para corregir advertencias:  
   
-- [CA1014: Marcar los ensamblados con CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 'demo' debe marcarse con el atributo CLSCompliantAttribute y su valor debe ser true.  
+- [CA1014: Marque los ensamblados con CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 'demo' debe marcarse con el atributo CLSCompliantAttribute y su valor debe ser true.  
   
   -   Agregue el código `using``System;` al archivo AssemblyInfo.cs.  
   
@@ -106,15 +101,15 @@ En este tutorial, analizar un proyecto administrado en previsión de defectos de
   
        Recompile el proyecto.  
   
-- [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: agregue el siguiente constructor a esta clase: public demo (String)  
+- [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Agregue el siguiente constructor a esta clase: public demo (String)  
   
   -   Agregue el constructor `public demo (String s) : base(s) { }` a la clase `demo`.  
   
-- [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: agregue el siguiente constructor a esta clase: public demo (String, Exception)  
+- [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Agregue el siguiente constructor a esta clase: public demo (String, Exception)  
   
   -   Agregue el constructor `public demo (String s, Exception e) : base(s, e) { }` a la clase `demo`.  
   
-- [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: agregue el siguiente constructor a esta clase: protected demo (SerializationInfo, StreamingContext)  
+- [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Agregue el siguiente constructor a esta clase: protected demo (SerializationInfo, StreamingContext)  
   
   -   Agregue el código `using System.Runtime.Serialization;` al principio del archivo Class1.cs.  
   
@@ -122,29 +117,29 @@ En este tutorial, analizar un proyecto administrado en previsión de defectos de
   
        Recompile el proyecto.  
   
-- [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: agregue el siguiente constructor a esta clase: public demo()  
+- [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Agregue el siguiente constructor a esta clase: public demo()  
   
   -   Agregue el constructor `public demo () : base() { }` a la clase `demo` **.**  
   
        Recompile el proyecto.  
   
-- [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: corrija el uso de mayúsculas y minúsculas del nombre de espacio de nombres 'testCode' cambiándolo a 'TestCode'.  
+- [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija el uso de mayúsculas y minúsculas del nombre de espacio de nombres 'testCode' cambiándolo a 'TestCode'.  
   
   -   Cambiar las mayúsculas y minúsculas del espacio de nombres `testCode` a `TestCode`.  
   
-- [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: corrija el uso de mayúsculas y minúsculas de demostración' nombre de tipo' cambiándolo a 'Demo'.  
+- [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija el uso de mayúsculas y minúsculas de demostración' nombre de tipo' cambiándolo a 'Demo'.  
   
   -   Cambiar el nombre del miembro que `Demo`.  
   
-- [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: corrija el uso de mayúsculas y minúsculas del miembro nombre 'item' cambiándolo a 'Item'.  
+- [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija el uso de mayúsculas y minúsculas del miembro nombre 'item' cambiándolo a 'Item'.  
   
   -   Cambiar el nombre del miembro que `Item`.  
   
-- [CA1710: Los identificadores deberían tener el sufijo correcto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: cambiar el nombre 'testCode.demo' para que termine en 'Exception'.  
+- [CA1710: Los identificadores deberían tener el sufijo correcto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Cambie el nombre 'testCode.demo' final 'Excepción'.  
   
   -   Cambiar el nombre de la clase y sus constructores para `DemoException`.  
   
-- [CA2210: Los ensamblados deben tener nombres seguros válidos](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): firme 'ManagedDemo' con una clave de nombre seguro.  
+- [CA2210: Los ensamblados deben tener nombres seguros válidos](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Firme 'ManagedDemo' con una clave de nombre seguro.  
   
   -   En el **proyecto** menú, haga clic en **ManagedDemo propiedades**.  
   
@@ -166,7 +161,7 @@ En este tutorial, analizar un proyecto administrado en previsión de defectos de
   
        Recompile el proyecto.  
   
-- [CA2237: Marcar los tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: agregar un atributo [Serializable] al tipo 'demo' ya que este tipo implementa ISerializable.  
+- [CA2237: Marcar los tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Agregue un atributo [Serializable] al tipo 'demo' ya que este tipo implementa ISerializable.  
   
   -   Agregar el `[Serializable ()]` a la clase `demo`.  
   
@@ -213,6 +208,3 @@ namespace TestCode
 2. Recompile el proyecto.  
   
     El proyecto se compila sin errores ni advertencias.
-
-
-

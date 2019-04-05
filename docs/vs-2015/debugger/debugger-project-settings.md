@@ -1,14 +1,9 @@
 ---
 title: Configuración del proyecto del depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed31c4490738d007375d1a73728a00ac17c20897
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995918"
 ---
 # <a name="debugger-project-settings"></a>Configuración del proyecto para el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +35,10 @@ Ciertos valores de configuración del proyecto también afectan a la depuración
  En esta sección se describen las opciones disponibles y cómo establecerlas.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Cómo: Especificar la configuración del depurador](../debugger/how-to-specify-debugger-settings.md)  
+ [Cómo: Especificación de la configuración del depurador](../debugger/how-to-specify-debugger-settings.md)  
  Describe la configuración del depurador en el cuadro de diálogo **Opciones** .  
   
- [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md)  
+ [Cómo: Establecimiento de configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md)  
  Describe las configuraciones **Debug** y **Release** y cómo cambiar de una a otra.  
   
  [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -70,6 +65,3 @@ Ciertos valores de configuración del proyecto también afectan a la depuración
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: IEEVisualizerDataProvider | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEEVisualizerDataProvider
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 844f591055eb309be3ff14171d937b2998d47c71
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 99444b2fab222b5a098a36ea4d07e6ae4f35ac04
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997354"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,9 +52,9 @@ IEEVisualizerDataProvider : IUnknown
  El servicio del visualizador (tal como está representada por la [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interfaz y devuelto por [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) mantiene una referencia al objeto que implementa el `IEEVisualizerDataProvider` interfaz . Como resultado, el `IEEVisualizerDataProvider` interfaz no debe implementarse en el mismo objeto que implementa el [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) si ese objeto mantiene una referencia a la `IEEVisualizerService` objeto: resultados de una referencia circular y un interbloqueo se produce cuando los objetos se destruyen. El enfoque recomendado consiste en implementar `IEEVisualizerDataProvider` en un objeto independiente para que el `IDebugProperty2` objeto delegados sin llamar a `IUnknown::AddRef` en él.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: ee.h  
+ Header: ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -69,4 +64,3 @@ IEEVisualizerDataProvider : IUnknown
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   
  [Visualización de datos](../../../extensibility/debugger/visualizing-and-viewing-data.md)
-

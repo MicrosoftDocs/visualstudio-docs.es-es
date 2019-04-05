@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: usar el Diseñador de esquemas XML con literales XML | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Usar el Diseñador de esquemas XML con literales XML | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 592886a1cfe9d0ffc9c7165729cede3340bc65c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 630505b317d5d8671a8214701cd2af13bfa40482
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218379"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998531"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Cómo: Usar el Diseñador de esquemas XML con literales XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Filtrar Usar el Diseñador de esquemas XML con literales XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -79,6 +74,3 @@ En este tema se explica cómo ver un esquema asociado a un literal XML en un pro
 2.  Haga clic en cualquier nodo XML en un literal XML o una importación de espacio de nombres XML y seleccione **mostrar en el Explorador de esquema**.  
   
      El Explorador de esquema XML se muestra en paralelo con un archivo Visual Basic que tiene asociado el literal XML con el conjunto de esquemas XML.
-
-
-

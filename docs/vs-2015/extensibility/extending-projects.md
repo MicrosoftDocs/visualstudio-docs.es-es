@@ -1,34 +1,29 @@
 ---
 title: Extender proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8ad4218447e6cc910ff98970d14a53d83ccc8497
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 72841d1f0bbc812d80528858384b14ced2048857
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796576"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995458"
 ---
 # <a name="extending-projects"></a>Ampliación de proyectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Proyectos y soluciones son las formas en que Visual Studio organiza los archivos de código y recursos en unidades de compilación e implementación. Puede encontrar más información sobre los proyectos en [proyectos (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Puede crear sus propios tipos de proyecto con el SDK de Visual Studio y Managed Package Framework para los proyectos, que puede descargarse en [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Para comprender cómo se implementan proyectos personalizados, vea [nueva generación de proyectos: Under the Hood, parte uno](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyectos: Under the Hood, segunda parte](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Puede crear sus propios tipos de proyecto con el SDK de Visual Studio y Managed Package Framework para los proyectos, que puede descargarse en [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Para comprender cómo se implementan proyectos personalizados, vea [nueva generación de proyectos: Internamente, la primera parte](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyectos: Internamente, la segunda parte](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Los temas de esta sección describen cómo crear proyectos personalizados y cómo administrar distintos tipos de solución de Visual Studio.  
   
@@ -58,4 +53,3 @@ Proyectos y soluciones son las formas en que Visual Studio organiza los archivos
  Explica cómo administrar proyectos universales.  
   
 ## <a name="related-sections"></a>Secciones relacionadas
-

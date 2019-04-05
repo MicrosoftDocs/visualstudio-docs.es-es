@@ -1,12 +1,9 @@
 ---
 title: Validar código con diagramas de capas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, validating
 - validation, layer diagrams
@@ -23,13 +20,13 @@ ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792169"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998307"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Validar código con diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
   
   Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-  Puede validar código manualmente desde un diagrama de capas abierto en Visual Studio o desde un símbolo del sistema. También puede validar código automáticamente al ejecutar compilaciones locales o Team Foundation Build. Consulte [vídeo de Channel 9: diseño y validar la arquitectura mediante diagramas de capas](http://go.microsoft.com/fwlink/?LinkID=252073).  
+  Puede validar código manualmente desde un diagrama de capas abierto en Visual Studio o desde un símbolo del sistema. También puede validar código automáticamente al ejecutar compilaciones locales o Team Foundation Build. Consulte [vídeo de Channel 9: Diseñar y validar la arquitectura mediante diagramas de capas](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
 >  Si desea ejecutar la validación de capa con Team Foundation Build, debe instalar también la misma versión de Visual Studio en el servidor de compilación.  
@@ -164,7 +161,7 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
 |Ocultar todos los errores suprimidos desde el **lista de errores** ventana|Haga clic en cualquier lugar en el **lista de errores** ventana, seleccione **administrar errores de validación**y, a continuación, haga clic en **Ocultar errores suprimidos**.|  
   
 ##  <a name="ValidateAuto"></a> Validar código automáticamente  
- Puede realizar la validación de capas cada vez que ejecute una compilación local. Si el equipo usa Team Foundation Build, podrá realizar la validación de capas con protecciones controladas, que se pueden especificar creando una tarea MSBuild personalizada, y usar informes de compilación para recopilar los errores de validación. Para crear compilaciones de protección controladas, consulte [utilizar un proceso de compilación de protección controlada para validar cambios](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
+ Puede realizar la validación de capas cada vez que ejecute una compilación local. Si el equipo usa Team Foundation Build, podrá realizar la validación de capas con inserciones en el repositorio validadas, que se pueden especificar creando una tarea MSBuild personalizada, y usar informes de compilación para recopilar los errores de validación. Para crear compilaciones de protección controladas, consulte [utilizar un proceso de compilación de protección controlada para validar cambios](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Para validar código automáticamente durante una compilación local  
   
@@ -237,17 +234,14 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
   
 |**Error de sintaxis**|**Descripción del error**|  
 |----------------------|---------------------------|  
-|AV0001: Dependencia no válida: *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> Capas: *LayerName1*, *LayerName2* &#124; dependencias: *DependencyType*|*Artifact1* en *LayerName1* no debe tener una dependencia en *Artifact2* en *LayerName2* porque *LayerName1* no tiene una dependencia directa en *LayerName2*.|  
-|AV1001: No válido Namespace: *artefacto*<br /><br /> Capa: *LayerName* &#124; necesario Namespace: *NamespaceName1* &#124; Namespace actual: *NamespaceName2*|*LayerName* requiere que los artefactos asociados deben pertenecer a *NamespaceName1*. *Artefacto* en *NamespaceName2*, no *NamespaceName1*.|  
+|AV0001: Dependencia no válida: *Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> Capas: *LayerName1*, *LayerName2* &#124; dependencias: *DependencyType*|*Artifact1* en *LayerName1* no debe tener una dependencia en *Artifact2* en *LayerName2* porque *LayerName1* no tiene una dependencia directa en *LayerName2*.|  
+|AV1001: Namespace no válido: *Artefacto*<br /><br /> Capa: *LayerName* &#124; necesario Namespace: *NamespaceName1* &#124; Namespace actual: *NamespaceName2*|*LayerName* requiere que los artefactos asociados deben pertenecer a *NamespaceName1*. *Artefacto* en *NamespaceName2*, no *NamespaceName1*.|  
 |AV1002: Depende de Namespace prohibido: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Capa: *LayerName* &#124; Forbidden Namespace: *NamespaceName* &#124; dependencias: *DependencyType*|*LayerName* requiere que los artefactos asociados no dependan *NamespaceName*. *Artifact1* no puede depender de *Artifact2* porque *Artifact2* en *NamespaceName*.|  
-|AV1003: En Namespace prohibido: *artefacto*(*ArtifactType*)<br /><br /> Capa: *LayerName* &#124; Forbidden Namespace: *NamespaceName*|*LayerName* requiere que los artefactos asociados no pertenezcan a *NamespaceName*. *Artefacto* pertenece a *NamespaceName*.|  
-|AV3001: falta vínculo: capa '*LayerName*'vincula a'*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado?|*LayerName* vinculada a un artefacto que no se encuentra. Por ejemplo, es posible que falte un vínculo a una clase porque en el proyecto de modelado falta una referencia al ensamblado que contiene la clase.|  
-|AV9001: El análisis de arquitectura encontró errores internos. Puede que los resultados no estén completos. Vea el registro detallado de eventos de compilación o la ventana de salida para obtener más información.|Vea el registro de eventos de compilación o la ventana de salida para obtener más información.|  
+|AV1003: En Namespace prohibido: *Artifact*(*ArtifactType*)<br /><br /> Capa: *LayerName* &#124; Forbidden Namespace: *NamespaceName*|*LayerName* requiere que los artefactos asociados no pertenezcan a *NamespaceName*. *Artefacto* pertenece a *NamespaceName*.|  
+|AV3001: Falta un vínculo: Capa '*LayerName*'vincula a'*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado?|*LayerName* vinculada a un artefacto que no se encuentra. Por ejemplo, es posible que falte un vínculo a una clase porque en el proyecto de modelado falta una referencia al ensamblado que contiene la clase.|  
+|AV9001: Análisis de arquitectura encontró errores internos. Puede que los resultados no estén completos. Vea el registro detallado de eventos de compilación o la ventana de salida para obtener más información.|Vea el registro de eventos de compilación o la ventana de salida para obtener más información.|  
   
 ## <a name="security"></a>Seguridad  
   
 ## <a name="see-also"></a>Vea también  
  [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)
-
-
-

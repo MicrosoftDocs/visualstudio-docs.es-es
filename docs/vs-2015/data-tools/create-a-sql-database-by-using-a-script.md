@@ -1,12 +1,9 @@
 ---
 title: Crear una base de datos SQL mediante una secuencia de comandos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995504"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Crear una base de datos SQL mediante una secuencia de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,7 +220,7 @@ En este tutorial, use Visual Studio para crear una base de datos pequeño que co
   
 6.  En el **nombre de archivo** , escriba `SampleImportScript.sql`, tenga en cuenta la ubicación donde podrá guardar el archivo y, a continuación, seleccione el **guardar** botón.  
   
-7.  En la barra de menús, seleccione **archivo** > **Cerrar solución**.  
+7.  En la barra de menús, seleccione **Archivo** > **Cerrar solución**.  
   
      A continuación, cree un proyecto de base de datos y, a continuación, importar el esquema de la secuencia de comandos que ha creado.  
   
@@ -276,4 +273,3 @@ En este tutorial, use Visual Studio para crear una base de datos pequeño que co
   
 ##  <a name="DeployDatabase"></a> Implementar la base de datos  
  Cuando presiona el **F5** clave, implementar (o publicar) la base de datos a una base de datos LocalDB de forma predeterminada. Puede implementar la base de datos a una ubicación diferente, abra la página de propiedades para el proyecto, seleccionando la **depurar** ficha y, a continuación, cambiar la cadena de conexión.
-
