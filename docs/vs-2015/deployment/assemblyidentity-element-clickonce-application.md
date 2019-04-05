@@ -1,14 +1,9 @@
 ---
 title: '&lt;assemblyIdentity&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assemblyIdentity
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d16fdf182845eb2ae916da95b7677112b968b60f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5bde22809af69071f5484e25717a5aea7d78a603
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998724"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; elemento (aplicación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +47,11 @@ Identifica la aplicación implementada en un [!INCLUDE[ndptecclick](../includes/
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. Identifica el nombre de la aplicación.<br /><br /> Si `Name` contiene caracteres especiales, como las comillas simples o dobles, es posible que no activa la aplicación.|  
-|`Version`|Requerido. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|  
+|`Name`|Obligatorio. Identifica el nombre de la aplicación.<br /><br /> Si `Name` contiene caracteres especiales, como las comillas simples o dobles, es posible que no activa la aplicación.|  
+|`Version`|Obligatorio. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|  
 |`publicKeyToken`|Opcional. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes de la `SHA-1` valor hash de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública que se usa para firmar el catálogo debe ser 2048 bits o superior.<br /><br /> Aunque al firmar un ensamblado es opcional pero recomendado, este atributo es necesario. Si un ensamblado está firmado, debe copiar un valor de un ensamblado autofirmado o usar un valor "ficticio" de todos los ceros.|  
-|`processorArchitecture`|Requerido. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para Windows de 32 bits, `IA64` para Windows de 64 bits, y `Itanium` para procesadores Itanium de Intel de 64 bits.|  
-|`language`|Requerido. Identifica los códigos de idioma de dos partes (por ejemplo, `en-US`) del ensamblado. Este elemento está en el `asmv2` espacio de nombres. Si no se especifica, el valor predeterminado es `neutral`.|  
+|`processorArchitecture`|Obligatorio. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para Windows de 32 bits, `IA64` para Windows de 64 bits, y `Itanium` para procesadores Itanium de Intel de 64 bits.|  
+|`language`|Obligatorio. Identifica los códigos de idioma de dos partes (por ejemplo, `en-US`) del ensamblado. Este elemento está en el `asmv2` espacio de nombres. Si no se especifica, el valor predeterminado es `neutral`.|  
   
 ## <a name="examples"></a>Ejemplos  
   
@@ -77,7 +72,4 @@ Identifica la aplicación implementada en un [!INCLUDE[ndptecclick](../includes/
   
 ## <a name="see-also"></a>Vea también  
  [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)
-
-
-
+ [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-deployment.md)

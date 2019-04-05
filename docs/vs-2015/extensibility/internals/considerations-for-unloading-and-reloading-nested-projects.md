@@ -1,27 +1,22 @@
 ---
 title: Consideraciones para descargar y recargar anidados proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, unloading and reloading
 - projects [Visual Studio SDK], unloading and reloading nested
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 28c5ba7dffecd73556a5f963c471910bb190f1db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 65145530c8cd6b68b82391a09b395bb8c9a61117
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756972"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999470"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Consideraciones para descargar y volver a cargar proyectos anidados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,4 +35,3 @@ Al implementar los tipos de proyecto anidado, debe realizar pasos adicionales al
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   
  [Anidamiento de proyectos](../../extensibility/internals/nesting-projects.md)
-

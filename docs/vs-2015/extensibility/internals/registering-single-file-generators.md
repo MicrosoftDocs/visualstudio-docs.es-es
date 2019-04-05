@@ -1,27 +1,22 @@
 ---
 title: Registrar generadores de un único archivo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e601b3fcf8bd702c1bc6cde427766d0f107e6bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780989"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999710"
 ---
 # <a name="registering-single-file-generators"></a>Registro de generadores de un solo archivo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,11 +46,11 @@ Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](.
   
     -   CLSID  
   
-         Requerido. Especifica el identificador de la biblioteca de clases del componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
+         Obligatorio. Especifica el identificador de la biblioteca de clases del componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
     -   GeneratesDesignTimeSource  
   
-         Requerido. Indica si los tipos de los archivos generados por esta herramienta personalizada están disponibles para los diseñadores visuales. El valor de este parámetro debe ser (cero) 0 para tipos no están disponibles para los diseñadores visuales o 1 (uno) para los tipos disponibles para los diseñadores visuales.  
+         Obligatorio. Indica si los tipos de los archivos generados por esta herramienta personalizada están disponibles para los diseñadores visuales. El valor de este parámetro debe ser (cero) 0 para tipos no están disponibles para los diseñadores visuales o 1 (uno) para los tipos disponibles para los diseñadores visuales.  
   
     > [!NOTE]
     >  Debe registrar la herramienta personalizada por separado para cada idioma para el que desea que la herramienta personalizada esté disponible.  
@@ -84,5 +79,4 @@ Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](.
  [Implementar generadores de un solo archivo](../../extensibility/internals/implementing-single-file-generators.md)   
  [Determinar el Namespace predeterminado de un proyecto](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Exposición de tipos a los diseñadores visuales](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Introducción al objeto BuildManager](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
-
+ [Introducción al objeto BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

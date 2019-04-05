@@ -1,26 +1,21 @@
 ---
 title: Plantillas de sitio Web soporte técnico | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eebacb3006826a90320cbc61edf7d56467e688ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760218"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999483"
 ---
 # <a name="web-site-support-templates"></a>Plantillas de compatibilidad del sitio web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -87,7 +82,7 @@ ms.locfileid: "51760218"
   
      La página HTML para el nuevo servicio Web. El atributo Language especifica el lenguaje de código subyacente y el atributo de código subyacente especifica el archivo dependiente que contiene el código de código subyacente asociado con este servicio.  
   
--   Servicio. *Extensión*  
+-   Servicio. *extension*  
   
      El archivo dependiente que implementa la clase de servicio. El lenguaje de código subyacente determina el *extensión* de este archivo.  
   
@@ -120,7 +115,7 @@ ms.locfileid: "51760218"
 ### <a name="new-class"></a>Nueva clase  
  Esta plantilla crea un nuevo archivo de origen que define una clase vacía en respuesta a la **agregar nueva clase** comando.  
   
--   Clase. *Extensión*  
+-   Clase. *extension*  
   
      El archivo de código fuente que implementa la clase vacía. El lenguaje de código subyacente determina el *extensión* de este archivo.  
   
@@ -154,7 +149,7 @@ ms.locfileid: "51760218"
   
      El contenido inicial de la página Web. Esta página Web tiene un archivo de código subyacente asociado dependientes.  
   
--   Código subyacente. *Extensión*  
+-   Código subyacente. *extension*  
   
      El archivo dependiente que implementa la clase de formularios Web Forms. El lenguaje de código subyacente determina el *extensión* de este archivo.  
   
@@ -193,4 +188,3 @@ ms.locfileid: "51760218"
   
 ## <a name="see-also"></a>Vea también  
  [Compatibilidad con sitios web](../../extensibility/internals/web-site-support.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 'Inicio rápido: Depurar JavaScript mediante la consola | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61f36594b4158c95621ec240fd7a883accd259a8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bce2eae7c9df527c9b40e8d7f68bda68033449f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802608"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999092"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Inicio rápido: Depurar JavaScript mediante la consola
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > [!TIP]
 >  Si la ventana Consola JavaScript está cerrada, elija **Depurar**>**Ventanas** > **Consola de JavaScript** para abrirla de nuevo. La ventana únicamente aparece durante las sesiones de depuración de script.  
   
- La ventana Consola JavaScript le permite interactuar con su aplicación sin tener que detener y reiniciar el depurador. Para obtener más información, consulte [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obtener información sobre otras características, como el explorador DOM y establecer puntos de interrupción, la depuración de JavaScript consulte [inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md) y [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ La ventana Consola JavaScript le permite interactuar con su aplicación sin tener que detener y reiniciar el depurador. Para obtener más información, consulte [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obtener información sobre otras características, como el explorador DOM y establecer puntos de interrupción, la depuración de JavaScript consulte [inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md) y [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InteractiveConsole"></a> Depuración mediante la ventana Consola JavaScript  
  Los siguientes pasos sirven para crear una aplicación `FlipView` y demostrar cómo depurar interactivamente un error de codificación de JavaScript.  
@@ -166,7 +161,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
      La aplicación se ejecuta pero faltan las imágenes. Los errores APPHOST de la ventana Consola JavaScript indican que faltan imágenes.  
   
-9. Mientras la aplicación `FlipView` se está ejecutando en el simulador o en el emulador de Windows Phone, escriba `Data.items` en el indicador de entrada de la ventana de la consola (junto al símbolo ">>") y presione Entrar.  
+9. Con el `FlipView` aplicación que se ejecuta en el simulador o el emulador de teléfono, escriba `Data.items` en el símbolo del sistema de entrada de la ventana de consola (junto a la ">>" símbolos) y presione ENTRAR.  
   
      Aparece un visualizador para el objeto `items` en la ventana de consola. Esto indica que se ha creado una instancia del objeto `items` y está disponible en el contexto de script actual. En la ventana de consola, puedes hacer clic para recorrer los nodos de un objeto para ver sus valores de propiedad (o usar las teclas de dirección). Si hacemos clic para bajar en el objeto `items._data` , como se ve en esta ilustración, veremos que las referencias al origen de las imágenes son incorrectas, como era de esperar. Las imágenes predeterminadas (logo.png) siguen presentes en el objeto, y hay imágenes que faltan entremezcladas con las imágenes esperadas.  
   
@@ -212,7 +207,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 18. Detenga la depuración eligiendo **Depurar** > **Detener depuración** o presionando Mayús+F5. Luego, corrija el código fuente.  
   
-     Para la página default.html completa que contiene el código de ejemplo corregido, consulte [depurar HTML, CSS y JavaScript, código de ejemplo](../debugger/debug-html-css-and-javascript-sample-code.md).  
+     Para obtener la página default.html completa que contiene el código de ejemplo corregido, consulte [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> Depuración interactiva y modo de interrupción  
  Puedes utilizar puntos de interrupción y depurar el código paso a paso por instrucciones mientras utilizas herramientas de depuración de JavaScript, como la ventana Consola JavaScript. Cuando un programa que se ejecuta en el depurador encuentra un punto de interrupción, el depurador suspende temporalmente la ejecución de ese programa. Cuando se suspende la ejecución, el programa cambia del modo de ejecución al modo de interrupción. Puedes reanudar la ejecución en cualquier momento.  
@@ -274,7 +269,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ##  <a name="BrowserSupport"></a> Compatibilidad con explorador y plataforma  
  La ventana Consola JavaScript es compatible con las siguientes plataformas:  
   
--   Aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] y la Tienda de Windows Phone con JavaScript y HTML  
+-   Aplicaciones de la[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] y la Tienda de Windows Phone con JavaScript y HTML  
   
 -   Internet Explorer 11 que se ejecute en [!INCLUDE[win81](../includes/win81-md.md)]  
   
@@ -283,12 +278,9 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ## <a name="see-also"></a>Vea también  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)   
+ [Actualización de una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Depurar un control WebView](../debugger/debug-a-webview-control.md)   
+ [Depuración de código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Inicio rápido: Depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Depuración de un control WebView](../debugger/debug-a-webview-control.md)   
  [Compatibilidad de productos y accesibilidad](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

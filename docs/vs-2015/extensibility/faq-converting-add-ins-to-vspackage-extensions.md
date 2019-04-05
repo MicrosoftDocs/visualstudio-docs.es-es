@@ -1,26 +1,21 @@
 ---
-title: 'Preguntas más frecuentes: Convertir complementos en extensiones de VSPackage | Microsoft Docs'
-ms.custom: ''
+title: P+F Conversión de complementos en extensiones de VSPackage | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2318ff719f51660b4cec0eec6b7a051ea54aa67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817352"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998753"
 ---
-# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Preguntas más frecuentes: Convertir complementos en extensiones de VSPackage
+# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>P+F Conversión de complementos en extensiones de VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los complementos están desusados. Para realizar una nueva extensión de Visual Studio, deberá crear una extensión VSIX. Estas son las respuestas a algunas preguntas frecuentes acerca de cómo convertir un complemento de Visual Studio en una extensión VSIX.  
@@ -57,7 +52,7 @@ Los complementos están desusados. Para realizar una nueva extensión de Visual 
   
      Se muestra una segunda instancia de Visual Studio. Esta segunda instancia se llama instancia experimental, y puede que no tenga la misma configuración que la instancia de Visual Studio que está usando para escribir código. La primera vez que ejecute la instancia experimental se le pedirá que inicie sesión en VS Online y especifique el tema y el perfil.  
   
-     En el **herramientas** menú (en la instancia experimental) debería ver un botón denominado **My Command name**. Al elegir este botón, debería aparecer un mensaje: **dentro de Testvspackagepackage.MenuItemCallback**.  
+     En el **herramientas** menú (en la instancia experimental) debería ver un botón denominado **My Command name**. Cuando seleccione este botón, aparecerá un mensaje: **Inside TestVSPackagePackage.MenuItemCallback()**.  
   
 ##  <a name="BKMK_RunAddin"></a> ¿Cómo se puede ejecutar código de mi complemento en un VSPackage?  
  Normalmente, el código de complemento normalmente se ejecuta de una de dos maneras:  
@@ -272,4 +267,3 @@ public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)
     string s = "[Event] Renamed " + oldName + " to " + Path.GetFileName(projItem.get_FileNames(1) + " in project " + projItem.ContainingProject.Name;   
 }  
 ```
-

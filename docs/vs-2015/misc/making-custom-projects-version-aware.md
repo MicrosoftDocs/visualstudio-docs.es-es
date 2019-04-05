@@ -1,26 +1,21 @@
 ---
 title: Crear proyectos personalizados con identificación de versión | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989263"
 ---
 # <a name="making-custom-projects-version-aware"></a>Crear proyectos personalizados con identificación de versión
-En un sistema de proyecto personalizado, puede permitir que los proyectos de ese tipo se carguen en varias versiones de Visual Studio. También puede evitar que los proyectos de ese tipo se carguen en una versión anterior de Visual Studio. Además, puede permitir que ese proyecto se identifique en una versión posterior en caso de que el proyecto necesite reparación, conversión o degradación.  
+En el sistema del proyecto personalizado, puede permitir que los proyectos de ese tipo se carguen en varias versiones de Visual Studio. También puede evitar que los proyectos de ese tipo se carguen en una versión anterior de Visual Studio. Además, puede permitir que ese proyecto se identifique en una versión posterior en caso de que el proyecto necesite reparación, conversión o degradación.  
   
 ## <a name="allowing-projects-to-load-in-multiple-versions"></a>Permitir cargar proyectos en varias versiones  
  Puede modificar la mayoría de los proyectos que se crearon en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] con SP1 o posterior para que funcionen en varias versiones.  
@@ -29,17 +24,17 @@ En un sistema de proyecto personalizado, puede permitir que los proyectos de ese
   
  Como autor de un sistema de proyecto, implemente `UpgradeProject_CheckOnly` (desde la interfaz `IVsProjectUpgradeViaFactory4` ) para proporcionar a los usuarios de su sistema de proyecto una comprobación de actualizaciones. Cuando los usuarios abren un proyecto, se llama a este método para determinar si un proyecto se debe reparar antes de cargarse. Los posibles requisitos de actualización se enumeran en `VSPUVF_REPAIRFLAGS`, e incluyen las siguientes posibilidades:  
   
-1.  `SPUVF_PROJECT_NOREPAIR`: no necesita ninguna reparación.  
+1.  `SPUVF_PROJECT_NOREPAIR`: No necesita ninguna reparación.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: hace que el proyecto sea compatible con una versión anterior sin los problemas que pueda haber encontrado con las versiones anteriores del producto.  
+2.  `VSPUVF_PROJECT_SAFEREPAIR`: Hace que el proyecto que sea compatible con una versión anterior sin los problemas que pueda haber encontrado con las versiones anteriores del producto.  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: hace que el proyecto sea compatible con versiones anteriores, pero con algún riesgo de que se produzcan los problemas que pueda haber encontrado con las versiones anteriores del producto. Por ejemplo, el proyecto no será compatible si dependía de distintas versiones de SDK.  
+3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Hace que el proyecto compatible con versiones anteriores, pero con algún riesgo de los problemas que pueden haber encontrado con las versiones anteriores del producto. Por ejemplo, el proyecto no será compatible si dependía de distintas versiones de SDK.  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: hace que el proyecto sea incompatible con una versión anterior.  
+4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Hace que el proyecto sea incompatible con una versión anterior.  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`: indica que la versión actual no es compatible con este proyecto.  
+5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Indica que la versión actual no es compatible con este proyecto.  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`: indica que ya no se admite este proyecto.  
+6.  `VSPUVF_PROJECT_DEPRECATED`: Indica que ya no se admite este proyecto.  
   
 > [!NOTE]
 >  Para evitar confusiones, no combine marcas de actualización cuando las establezca. Por ejemplo, no cree un estado de actualización ambiguo como `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
@@ -125,11 +120,11 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Si este método establece `pUpgradeRequired` en TRUE y devuelve `S_OK`, el resultado se trata como "Actualización" y como si el método hubiera establecido una marca de actualización en el valor `VSPUVF_PROJECT_ONEWAYUPGRADE`, que se describe más adelante en este tema. Los siguientes valores devueltos son compatibles usando este método anterior, pero solo cuando `pUpgradeRequired` se establece en TRUE:  
   
-1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Este valor devuelto convierte el valor de `pUpgradeRequired` en TRUE como equivalente a `VSPUVF_PROJECT_SAFEREPAIR`, que se describe más adelante en este tema.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Este valor devuelto traduce el valor de `pUpgradeRequired` a TRUE como equivalente a `VSPUVF_PROJECT_SAFEREPAIR`, que se describe más adelante en este tema.  
   
-2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Este valor devuelto convierte el valor de `pUpgradeRequired` en TRUE como equivalente a `VSPUVF_PROJECT_UNSAFEREPAIR`, que se describe más adelante en este tema.  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Este valor devuelto traduce el valor de `pUpgradeRequired` a TRUE como equivalente a `VSPUVF_PROJECT_UNSAFEREPAIR`, que se describe más adelante en este tema.  
   
-3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Este valor devuelto convierte el valor de `pUpgradeRequired` en TRUE como equivalente a `VSPUVF_PROJECT_ONEWAYUPGRADE`, que se describe más adelante en este tema.  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Este valor devuelto traduce el valor de `pUpgradeRequired` a TRUE como equivalente a `VSPUVF_PROJECT_ONEWAYUPGRADE`, que se describe más adelante en este tema.  
   
    Las nuevas implementaciones en `IVsProjectUpgradeViaFactory4` y `IVsProjectFlavorUpgradeViaFactory2` permiten especificar el tipo de migración con más precisión.  
   

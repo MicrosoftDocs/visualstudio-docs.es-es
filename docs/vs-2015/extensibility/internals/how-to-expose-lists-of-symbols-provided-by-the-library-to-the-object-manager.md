@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: exponer listas de símbolos proporcionadas por la biblioteca en el Administrador de objetos | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Exposición de listas de símbolos proporcionadas por la biblioteca en el Administrador de objetos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
 - IVsLibrary2 interface, lists of symbols
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 32adc26be31ebb090916f5f0f4b038bd20ab2ea2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 269c26d1b2caa56ba3306d151cff1a7607ac837c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722162"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999381"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Cómo: exponer listas de símbolos proporcionadas por la biblioteca en el Administrador de objetos
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Filtrar Exponer listas de símbolos proporcionadas por la biblioteca al Administrador de objetos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Las herramientas de exploración de símbolos, **vista de clases**, **Examinador de objetos**, **Examinador de llamadas** y **resultados de la búsqueda de símbolos**, pasa las solicitudes de nuevos datos el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el Administrador de objetos. El Administrador de objetos busca las bibliotecas adecuadas y las solicitudes nuevas listas de símbolos. Las bibliotecas de responden, ya que proporciona los datos solicitados para la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el Administrador de objetos a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaz. El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el Administrador de objetos llama a los métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> para obtener los datos de la interfaz y se utiliza para rellenar o actualizar las vistas de las herramientas de exploración de símbolos.  
@@ -475,7 +470,6 @@ Las herramientas de exploración de símbolos, **vista de clases**, **Examinador
   
 ## <a name="see-also"></a>Vea también  
  [Herramientas de exploración de símbolos de compatibilidad](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Cómo: registrar una biblioteca con el Administrador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Cómo: identificar los símbolos en una biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [Cómo: Registrar una biblioteca con el Administrador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Cómo: Identificación de símbolos en una biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
  [Extensibilidad de servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-extensibility.md)
-

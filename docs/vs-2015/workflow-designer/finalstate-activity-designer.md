@@ -1,23 +1,20 @@
 ---
 title: Diseñador de actividad FinalState | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 48c44dc585ce1c9cf4e7b29970b4014f128b873d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0a969b81e3291191cf42df4e1775c4212f54e4cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209175"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999606"
 ---
 # <a name="finalstate-activity-designer"></a>Diseñador de actividad FinalState
 El diseñador de <xref:System.Activities.Core.Presentation.FinalState> se usa para crear un <xref:System.Activities.Statements.State> que finaliza una instancia de la máquina de estados.  
@@ -34,6 +31,6 @@ El diseñador de <xref:System.Activities.Core.Presentation.FinalState> se usa pa
 |<xref:System.Activities.Statements.State.Entry%2A>|False|Especifica la acción que se produce cuando se entra en este estado. Este valor se puede establecer arrastrando una actividad desde la **cuadro de herramientas** y colocándola sobre la <xref:System.Activities.Statements.State.Entry%2A> sección del estado.|  
   
 ## <a name="see-also"></a>Vea también  
- [Máquina de Estados](../workflow-designer/statemachine-activity-designer.md)   
+ [StateMachine](../workflow-designer/statemachine-activity-designer.md)   
  [Estado](../workflow-designer/state-activity-designer.md)   
  [Transition](../workflow-designer/transition-activity-designer.md)

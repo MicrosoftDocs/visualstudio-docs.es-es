@@ -1,11 +1,8 @@
 ---
-title: 'Cómo: establecer puntos de interrupción en flujos de trabajo (heredado) | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Establecer puntos de interrupción en flujos de trabajo (heredado) | Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - breakpoints, setting in workflows
@@ -16,20 +13,20 @@ ms.assetid: 78e0be39-3e99-487c-bfef-19db0daf6f42
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 158592ccef331c541bf27494856cfa1314b21f88
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1e3f7e4ffefcd6dc8509cf4c787af67c9a03305f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999597"
 ---
-# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Cómo: Establecer puntos de interrupción en los flujos de trabajo (Heredado)
+# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Filtrar Establecer puntos de interrupción en los flujos de trabajo (heredado)
 En este tema se describe cómo establecer puntos de interrupción en aplicaciones [!INCLUDE[wf](../includes/wf-md.md)] compiladas usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando la aplicación [!INCLUDE[wf2](../includes/wf2-md.md)] deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Cuando use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado de [!INCLUDE[vs2010](../includes/vs2010-md.md)] para compilar una aplicación [!INCLUDE[wf2](../includes/wf2-md.md)], puede establecer puntos de interrupción en código C# y Visual Basic de la misma manera que en Visual Studio. Como es de esperar, la ejecución del flujo de trabajo se detiene en cada punto de interrupción que se establece.  
   
- Un punto de interrupción tiene tres estados: *pendiente*, *enlazados*, y *Error*. Cuando se establece un punto de interrupción, está En espera y se representa mediante un icono rojo vacío. Cuando el tiempo de ejecución ha cargado el tipo de flujo de trabajo, cambia a Enlazado y se representa mediante un icono rojo sólido. Si se especifica un formato incorrecto para el punto de interrupción, como con un nombre de actividad que no es válido, aparece una ventana de error. El punto de interrupción, de todas formas, se agrega a la ventana de punto de interrupción, pero se marca con una "x" pequeña.  
+ Un punto de interrupción tiene tres estados: *Pendiente*, *enlazados*, y *Error*. Cuando se establece un punto de interrupción, está En espera y se representa mediante un icono rojo vacío. Cuando el tiempo de ejecución ha cargado el tipo de flujo de trabajo, cambia a Enlazado y se representa mediante un icono rojo sólido. Si se especifica un formato incorrecto para el punto de interrupción, como con un nombre de actividad que no es válido, aparece una ventana de error. El punto de interrupción, de todas formas, se agrega a la ventana de punto de interrupción, pero se marca con una "x" pequeña.  
   
  Puede establecer puntos de interrupción en una actividad de la superficie de diseño de flujo de trabajo de las maneras siguientes:  
   

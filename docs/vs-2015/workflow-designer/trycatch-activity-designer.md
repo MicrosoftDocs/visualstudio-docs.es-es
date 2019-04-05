@@ -1,11 +1,8 @@
 ---
 title: Diseñador de actividades TryCatch | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.TryCatch.UI
@@ -14,13 +11,13 @@ ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 74b54ef6b82e4f98ab94972b5d9b0155c16060a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e9d8c539d91c95b03f4946e256de7a825a6df7ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240999"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999604"
 ---
 # <a name="trycatch-activity-designer"></a>Diseñador de actividades TryCatch
 El **TryCatch** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.TryCatch> actividad.  

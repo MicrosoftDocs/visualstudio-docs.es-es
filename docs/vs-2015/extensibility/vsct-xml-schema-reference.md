@@ -1,27 +1,22 @@
 ---
 title: Referencia del esquema XML de VSCT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bff3fb766c11987b84ba88b5c86ab3c8d24dbc94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755866"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998869"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referencia del esquema XML de VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Proporciona una tabla de elementos de esquema del compilador de tabla de comando
 >  El compilador VSCT puede ejecutar un preprocesador en el archivo .vsct. Dado que normalmente es el preprocesador, que puede definir C++ incluye y macros que tienen la misma sintaxis que se usa en los archivos de C++. En el archivo .vsct se proporcionan ejemplos de este archivo que el **nuevo proyecto** asistente crea para un proyecto de VSPackage.  
   
 ## <a name="optional-elements"></a>Elementos opcionales  
- Algunos elementos VSCT son opcionales. Si un `Parent` argumento no se especifica, se implicarse Group_Undefined:0. Si un `Icon` argumento no se especifica, se implicarse guidOfficeIcon:msotcidNoIcon. Cuando se define una tecla de método abreviado, la emulación, que no se utiliza normalmente, es opcional.  
+ Algunos elementos VSCT son opcionales. Si un `Parent` no se especifica el argumento, Group_Undefined:0 se pueden implícita. Si un `Icon` argumento no se especifica, se implicarse guidOfficeIcon:msotcidNoIcon. Cuando se define una tecla de método abreviado, la emulación, que no se utiliza normalmente, es opcional.  
   
  Se puede incrustar elementos de mapa de bits en tiempo de compilación especificando la ubicación de la franja de mapa de bits en el `href` argumento. La Tira de mapa de bits se copian durante la combinación en lugar de extraídos de los recursos del archivo DLL. Cuando un `href` se proporciona un argumento, el `usedList` argumento se convierte en opcional y se consideran todas las ranuras en la Tira de mapa de bits utilizado.  
   
@@ -42,7 +37,7 @@ Proporciona una tabla de elementos de esquema del compilador de tabla de comando
   
 - {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
-- {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0 x 14, 0x5c, 0 x 93, 0 x 62, 0xc8}}  
+- { 0x6d484634, 0xe53d, 0x4a2c, { 0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8 } }  
   
   Se pueden usar los comentarios XML, pero las herramientas de ida y vuelta gráfica de usuario (GUI) de la interfaz podrían descartarlos. El contenido de \<anotación > se garantiza que los elementos se mantiene independientemente del formato.  
   
@@ -82,4 +77,3 @@ Proporciona una tabla de elementos de esquema del compilador de tabla de comando
 ## <a name="see-also"></a>Vea también  
  [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Enrutamiento de comandos en VSPackages](../extensibility/internals/command-routing-in-vspackages.md)
-

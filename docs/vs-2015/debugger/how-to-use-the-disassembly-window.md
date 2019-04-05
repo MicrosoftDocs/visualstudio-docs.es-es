@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: usar la ventana Desensamblado | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Utilice la ventana Desensamblado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -29,22 +24,22 @@ ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67f9307f2f5fece64ee2ee11dd48863b9a951180
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999576"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>Cómo: Utilizar la ventana Desensamblado
+# <a name="how-to-use-the-disassembly-window"></a>Filtrar Utilice la ventana Desensamblado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Esta característica solo está disponible si está habilitada la depuración de nivel de dirección la **opciones** cuadro de diálogo, **depuración** nodo. No está disponible para la depuración de script ni de SQL.  
   
- El **desensamblado** ventana muestra el código de ensamblado correspondiente a las instrucciones creadas por el compilador. Si depura código administrado, estas instrucciones de ensamblado corresponden al código nativo creado por el compilador JIT, y no al lenguaje intermedio de Microsoft (MSIL) que genera el compilador de Visual Studio.  
+ En la ventana **Desensamblado** se muestra el código de ensamblado correspondiente a las instrucciones creadas por el compilador. Si depura código administrado, estas instrucciones de ensamblado corresponden al código nativo creado por el compilador JIT, y no al lenguaje intermedio de Microsoft (MSIL) que genera el compilador de Visual Studio.  
   
- Además de las instrucciones de ensamblado, el **desensamblado** ventana puede mostrar la siguiente información opcional:  
+ Además de las instrucciones de ensamblado, la ventana **Desensamblado** puede mostrar la siguiente información opcional:  
   
 - Dirección de memoria donde se encuentra cada instrucción máquina. Para aplicaciones nativas, ésta es la dirección de memoria real. Para Visual Basic, C# o código administrado, es un desplazamiento desde el inicio de la función.  
   
@@ -65,7 +60,7 @@ Esta característica solo está disponible si está habilitada la depuración de
   Probablemente, nunca sentirá el deseo de ver las instrucciones de código máquina con su formato puro, numérico, en lugar del lenguaje de ensamblado. Sin embargo, si así lo desea, puede usar la ventana Memoria con este fin, o elegir Bytes de código en el menú contextual de la ventana Desensamblado.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Para mostrar la ventana Desensamblado  
   
@@ -82,10 +77,5 @@ Esta característica solo está disponible si está habilitada la depuración de
      Para obtener más información, consulte [retroceder o avanzar en la memoria](../debugger/how-to-page-up-or-down-in-memory.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Cómo: Usar la ventana Registros](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-
+ [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)

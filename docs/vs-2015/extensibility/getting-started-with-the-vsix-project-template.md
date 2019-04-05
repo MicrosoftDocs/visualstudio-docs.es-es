@@ -1,26 +1,21 @@
 ---
 title: Introducción a la plantilla de proyecto VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, VSIX project template
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1f7230bce49342ad8e31baeb3f46c72f1c45d776
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 9f5db7f20cf77df72a8c103eea68b3e64cc148b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787736"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998965"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Introducción a la plantilla de proyecto de VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,4 +86,3 @@ Puede usar la plantilla de proyecto de VSIX para crear una extensión o para una
 6.  Abra el manifiesto VSIX.  
   
 7.  En el manifiesto de VSIX, actualice el **activos** ruta de acceso de la plantilla de forma que apunte a la raíz del árbol del directorio que contiene el archivo de plantilla. Por ejemplo, si la plantilla está en \CSharp\Windows, la referencia debe apuntar a \CSharp.
-

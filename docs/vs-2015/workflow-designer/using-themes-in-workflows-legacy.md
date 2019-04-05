@@ -1,11 +1,8 @@
 ---
 title: Uso de los temas en los flujos de trabajo (heredado) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, themes
@@ -15,13 +12,13 @@ ms.assetid: 10225f34-aced-432a-846c-82cf6137d7c0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b69913605e57ed0ef4b4a2b025287821f679369d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 79dc06eb352c3196418d5ebe274b10c6740f5e75
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233023"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999532"
 ---
 # <a name="using-themes-in-workflows-legacy"></a>Utilizar los temas en los flujos de trabajo (Heredado)
 En este tema se describe cómo usar los temas de [!INCLUDE[wf](../includes/wf-md.md)] cuando se use [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado que tiene como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

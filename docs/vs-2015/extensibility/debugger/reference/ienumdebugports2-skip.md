@@ -1,14 +1,9 @@
 ---
 title: IEnumDebugPorts2::Skip | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPorts2::Skip
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a837383f-7b39-4e06-b336-f1715b073dbe
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d81e7e3edcc229b9b73ddc110dee0b09bb342e0f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 96bf6bd5277e6683bf793de17e608802c6c01034
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999142"
 ---
 # <a name="ienumdebugports2skip"></a>IEnumDebugPorts2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,11 +43,10 @@ int Skip(
  [in] Número de elementos que se van a omitir.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si `celt` es mayor que el número de elementos restantes; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si `celt` es mayor que el número de elementos restantes; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Si `celt` especifica un valor mayor que el número de elementos restantes, la enumeración se establece en el extremo y `S_FALSE` se devuelve.  
   
 ## <a name="see-also"></a>Vea también  
  [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Cambiar la apariencia de un comando | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, changing appearance
 - menu commands, changing appearance
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 463a9f20b84fdceeeb1165fce2d672263fec30f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b028250c53ccf0d5af09671bca82848a626d3129
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770670"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999535"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Cambio de la apariencia de un comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,4 +91,3 @@ Puede proporcionar comentarios al usuario cambiar la apariencia de un comando. P
  [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)   
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: crear una. Archivo de Vsct desde una existente. Archivos de CTC | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear una. Archivo de Vsct desde una existente. Archivos de CTC | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating based on a .ctc file
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
-manager: douge
-ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998858"
 ---
-# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Cómo: Crear un archivo .Vsct a partir de un archivo .Ctc existente
+# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Filtrar Crear una. Archivo de Vsct desde una existente. Archivos de CTC
 Puede crear un archivo de vsct basado en XML de un archivo de origen de comando tabla .ctc existente. Al hacerlo, puede aprovechar las ventajas del nuevo basado formato del compilador de la tabla de comandos (VSCT) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Para crear un archivo .vsct a partir de un archivo .ctc existente  
@@ -50,5 +45,5 @@ Puede crear un archivo de vsct basado en XML de un archivo de origen de comando 
     >  Puede mejorar la legibilidad del archivo .vsct volviendo a asignar formato a los comentarios XML.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: crear una. Archivo de Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
+ [Cómo: Crear una. Archivo de Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

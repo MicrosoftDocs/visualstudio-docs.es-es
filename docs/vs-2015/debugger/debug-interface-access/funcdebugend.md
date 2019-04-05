@@ -1,14 +1,9 @@
 ---
-title: FuncDebugEnd | Documentos de Microsoft
-ms.custom: ''
+title: FuncDebugEnd | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 68f84fff-7cd3-4636-b929-7063a45009f8
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 52f3d5ce1e083a67c2a72907095f8ebf52ee4578
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e9e2a15d1c94664fe951d64d48a9d7ead300f099
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999686"
 ---
 # <a name="funcdebugend"></a>FuncDebugEnd
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,8 +52,5 @@ Si una función tiene un punto definido en el que la depuración consiste en Fin
   
 ## <a name="see-also"></a>Vea también  
  [Jerarquía léxica de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
- [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md)   
+ [Enumeración LocationType](../../debugger/debug-interface-access/locationtype.md)   
  [Ubicaciones de símbolos](../../debugger/debug-interface-access/symbol-locations.md)
-
-
-

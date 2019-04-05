@@ -1,29 +1,24 @@
 ---
-title: 'Cómo: buscar una ventana de Windows Vista | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Buscar una ventana de Windows Vista | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - windows, searching in Windows view
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60eb467a24c85d176dae7727a476cc45dac6c876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 435f189d22abed9697953fc8b946deac64f86740
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782978"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998911"
 ---
-# <a name="how-to-search-for-a-window-in-windows-view"></a>Cómo: Buscar una ventana en la vista Ventanas
+# <a name="how-to-search-for-a-window-in-windows-view"></a>Filtrar Buscar una ventana en la vista Ventanas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede buscar una ventana concreta en la vista de Windows mediante su identificador, título, clase o una combinación de su título y la clase como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. Los campos en el cuadro de diálogo mostrará los atributos de la ventana seleccionada en el árbol de la ventana.  
@@ -56,6 +51,3 @@ Puede buscar una ventana concreta en la vista de Windows mediante su identificad
 5.  Haga clic en **Aceptar**.  
   
      Si se encuentra una ventana coincidente, se resalta en el [Windows Vista](../debugger/windows-view.md) ventana.
-
-
-

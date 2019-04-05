@@ -1,27 +1,22 @@
 ---
 title: Modo de interrupción | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - break mode
 - debugging [Debugging SDK], entering break mode
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 852f9104b2a510d033ab07a854e0c7bcbf4bf8f8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6ce6c5ca93e8d75908b55efaaee034ab2df77906
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788282"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999107"
 ---
 # <a name="entering-break-mode"></a>Especificación de modo de interrupción
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,4 +45,3 @@ El siguiente describe el proceso que se produce cuando se encuentra un punto de 
   
 ## <a name="see-also"></a>Vea también  
  [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
-

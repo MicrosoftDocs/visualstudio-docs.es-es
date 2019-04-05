@@ -1,12 +1,9 @@
 ---
 title: Las reglas propagan los cambios en el modelo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
@@ -14,13 +11,13 @@ ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 265d04306b4747a4e5bc04b879b9635e81ed8102
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831203"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999356"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Las reglas propagan los cambios dentro del modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +137,7 @@ namespace ExampleNamespace
   |                             Clase base                              |                                                                                                                                                                                                                                                                                                                                                                              Desencadenador                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        Se agrega un elemento, un vínculo o una forma.<br /><br /> Utilícelo para detectar nuevas relaciones, además de los nuevos elementos.                                                                                                                                                                                                                                                                                                                        |
-  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Se cambia un valor de propiedad de dominio. El argumento del método proporciona los valores antiguos y nuevos.<br /><br /> Para las formas, esta regla se desencadena cuando la integrada `AbsoluteBounds` cambios de propiedad, si se mueve la forma.<br /><br /> En muchos casos, resulta más cómodo invalidar `OnValueChanged` o `OnValueChanging` en el controlador de propiedad. Estos métodos se llama inmediatamente antes y después del cambio. Por el contrario, la regla se ejecuta normalmente al final de la transacción. Para obtener más información, consulte [controladores de cambio de valor de propiedad de dominio](../modeling/domain-property-value-change-handlers.md). **Nota:** esta regla no se desencadena cuando se crea o elimina un vínculo. En su lugar, escribir un `AddRule` y un `DeleteRule` para la relación de dominio. |
+  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Se cambia un valor de propiedad de dominio. El argumento del método proporciona los valores antiguos y nuevos.<br /><br /> Para las formas, esta regla se desencadena cuando la integrada `AbsoluteBounds` cambios de propiedad, si se mueve la forma.<br /><br /> En muchos casos, resulta más cómodo invalidar `OnValueChanged` o `OnValueChanging` en el controlador de propiedad. Estos métodos se llama inmediatamente antes y después del cambio. Por el contrario, la regla se ejecuta normalmente al final de la transacción. Para obtener más información, consulte [controladores de cambio de valor de propiedad de dominio](../modeling/domain-property-value-change-handlers.md). **Nota:**  Esta regla no se desencadena cuando se crea o elimina un vínculo. En su lugar, escribir un `AddRule` y un `DeleteRule` para la relación de dominio. |
   |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             Se desencadena cuando un elemento o vínculo está a punto de eliminarse. La propiedad ModelElement.IsDeleting es true hasta el final de la transacción.                                                                                                                                                                                                                                                                                                              |
   |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       Puede realizar cuando se ha eliminado un elemento o vínculo. La regla se ejecuta después de que se han ejecutado todas las demás reglas, incluyendo DeletingRules. ModelElement.IsDeleting es false, y ModelElement.IsDeleted es true. Para permitir una operación de deshacer posteriores, el elemento no se quita de la memoria, pero se quita del Store.ElementDirectory.                                                                                                                                                                                                       |
   |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           Un elemento se mueve desde un almacén de partición a otra.<br /><br /> (Tenga en cuenta que esto no está relacionado con la posición de una forma gráfica).                                                                                                                                                                                                                                                                                                            |
@@ -221,6 +218,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>Vea también  
  [Controladores de eventos propagan cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [Ubicación y tamaño de las reglas de restricción de formas BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md)
-
-
-

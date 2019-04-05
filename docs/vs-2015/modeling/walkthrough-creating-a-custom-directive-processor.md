@@ -1,12 +1,9 @@
 ---
-title: 'Tutorial: Crear un procesador de directivas personalizado | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Creación de un procesador de directivas personalizado | Documentos de Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
@@ -14,15 +11,15 @@ ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
 caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 321dd514e0690997cd0aab4ba2b05a7fe0898b6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e10c489ee8bd14599220429c9d74821986f8b915
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999169"
 ---
-# <a name="walkthrough-creating-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizadas
+# <a name="walkthrough-creating-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La directiva procesadores * funcionan agregando código a la *clase de transformación generada*. Si se llama a un *directiva* desde un *plantilla de texto*, el resto del código que se escribe en la plantilla de texto puede basarse en la funcionalidad que proporciona la directiva.  
@@ -611,7 +608,7 @@ End Property
 
 4.  Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] sólo, abra el **proyecto** menú y haga clic en **propiedades de CustomDP**. En el **aplicación** ficha **espacio de nombres raíz**, elimine el valor predeterminado, `CustomDP`.  
 
-5.  En el **archivo** menú, haga clic en **guardar todo**.  
+5.  En el menú **Archivo**, haga clic en **Guardar todo**.  
 
 6.  En el menú **Compilar** , haga clic en **Compilar solución**.  
 
@@ -663,7 +660,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     La clave del Registro debe tener los siguientes valores:  
 
 
-   |   nombre    |  Tipo  |                                   Datos                                   |
+   |   Name    |  Tipo  |                                   Datos                                   |
    |-----------|--------|--------------------------------------------------------------------------|
    | (Predeterminado) | REG_SZ |                             (valor no establecido)                              |
    |   Clase   | REG_SZ |                    CustomDP.CustomDirectiveProcessor                     |
@@ -672,7 +669,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     Si ha colocado el ensamblado en la GAC, los valores deberían ser similares a los siguientes:  
 
 
-   |   nombre    |  Tipo  |               Datos                |
+   |   Name    |  Tipo  |               Datos                |
    |-----------|--------|-----------------------------------|
    | (Predeterminado) | REG_SZ |          (valor no establecido)          |
    |   Clase   | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -838,7 +835,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  En este ejemplo, el valor del parámetro `Processor` es `CustomDirectiveProcessor`. El valor del parámetro `Processor` debe coincidir con el nombre de la clave del Registro del procesador.  
 
-5.  En el **archivo** menú, haga clic en **guardar todo**.  
+5.  En el menú **Archivo**, haga clic en **Guardar todo**.  
 
 #### <a name="to-test-the-directive-processor"></a>Para probar el procesador de directivas  
 
@@ -975,6 +972,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  Para ver la salida en un explorador, en **el Explorador de soluciones**, haga clic en TestDP.htm y haga clic en **ver en el explorador**.  
 
      El resultado debe ser igual que el texto original pero con el formato HTML aplicado. Todos los nombres de elemento deben aparecer en negrita.
-
-
-

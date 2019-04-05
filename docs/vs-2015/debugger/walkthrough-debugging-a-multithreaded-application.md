@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Depurar una aplicación multiproceso | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Depurar una aplicación multiproceso | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8fead0386d1ba820be21e65009c78791c7368bcd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999420"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Tutorial: Depurar una aplicación multiproceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "51798648"
   
 6.  Elimine el código que aparece en el archivo de origen y reemplazarlo por el código de ejemplo que aparece en la sección "Crear un subproceso" del tema [crear subprocesos y pasar datos en tiempo de inicio](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
-7.  En el **archivo** menú, haga clic en **guardar todo**.  
+7.  En el menú **Archivo**, haga clic en **Guardar todo**.  
   
 #### <a name="to-begin-the-walkthrough"></a>Para comenzar el tutorial  
   
@@ -129,7 +124,7 @@ Thread::Sleep(3000);
 2.  Vaya a la **ubicación de depuración** barra de herramientas y haga clic en el **subprocesos** lista.  
   
     > [!NOTE]
-    >  Puede reconocer esta barra de herramientas mediante tres listas destacadas: **proceso**, **subprocesos**, y **marco de pila**.  
+    >  Puede reconocer esta barra de herramientas mediante tres listas destacadas: **Proceso**, **subprocesos**, y **marco de pila**.  
   
 3.  Observe cuántos subprocesos aparecen en la lista.  
   
@@ -143,7 +138,7 @@ Thread::Sleep(3000);
   
 7.  Desplace el puntero sobre el icono de marcador.  
   
-     Aparecerá un elemento emergente. Este elemento indica qué modo la **subprocesos** lista se encuentra en: **mostrar sólo subprocesos marcados**.  
+     Aparecerá un elemento emergente. Este elemento indica qué modo la **subprocesos** lista se encuentra en: **Mostrar sólo subprocesos marcados**.  
   
 8.  Haga clic en el botón de marcador para volver al **mostrar todos los subprocesos** modo.  
   
@@ -151,7 +146,7 @@ Thread::Sleep(3000);
   
 10. Haga clic en el botón de marcador para volver al **mostrar sólo subprocesos marcados**.  
   
-11. En el **depurar** menú, elija **Windows** y, a continuación, haga clic en **subprocesos**.  
+11. En el menú **Depurar**, elija **Ventanas** y, a continuación, haga clic en **Subprocesos**.  
   
      El **subprocesos** aparecerá la ventana. Un subproceso tendrá asociado un icono de marcador destacado.  
   
@@ -245,7 +240,7 @@ Thread::Sleep(3000);
   
      Ahora ha visto tres maneras de cambiar el subproceso activo: utilizando el **subprocesos** ventana, el **subproceso** cuadro el **ubicación de depuración** barra de herramientas y el indicador de subproceso en el ventana de código fuente.  
   
-     Con el indicador de subproceso, sólo puede cambiar a subprocesos que se detienen en esa ubicación concreta. Mediante el uso de la **subprocesos** ventana y **ubicación de depuración** barra de herramientas, puede cambiar a cualquier subproceso.  
+     Con el indicador de subproceso, sólo puede cambiar a subprocesos que se detienen en esa ubicación concreta. Utilizando la ventana **Subprocesos** y la barra de herramientas **Ubicación de depuración**, puede cambiar a cualquier subproceso.  
   
 ## <a name="freezing-and-thawing-thread-execution"></a>Inmovilizar y reanudar ejecuciones de subprocesos  
   
@@ -262,8 +257,5 @@ Thread::Sleep(3000);
      La columna de subproceso activo y el **Suspend** cambio de columna.  
   
 ## <a name="see-also"></a>Vea también  
- [Depurar aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Cómo: Cambiar a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-
-
-
+ [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Cómo: Cambio a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)

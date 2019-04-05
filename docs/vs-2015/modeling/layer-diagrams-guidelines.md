@@ -1,12 +1,9 @@
 ---
-title: 'Diagramas de capas: Instrucciones | Microsoft Docs'
-ms.custom: ''
+title: 'Diagramas de capas: Instrucciones | Documentos de Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,18 +13,18 @@ ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
 caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa7483a000b5abd59b846edceead3af93f41dbc4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad85ccb9e58b45b1e6354c7abf0cb5651aa6d92e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999598"
 ---
-# <a name="layer-diagrams-guidelines"></a>Diagrama de capas: Instrucciones
+# <a name="layer-diagrams-guidelines"></a>Diagramas de capas: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Describe la arquitectura de la aplicación en un nivel alto mediante la creación de *diagramas de capas* en Visual Studio. Para asegurarse de que el código mantiene la coherencia con este diseño, valide el código con un diagrama de capas. También puede incluir la validación de capas en el proceso de compilación. Consulte [vídeo de Channel 9: diseño y validar la arquitectura mediante diagramas de capas](http://go.microsoft.com/fwlink/?LinkID=252073).  
+Describe la arquitectura de la aplicación en un nivel alto mediante la creación de *diagramas de capas* en Visual Studio. Para asegurarse de que el código mantiene la coherencia con este diseño, valide el código con un diagrama de capas. También puede incluir la validación de capas en el proceso de compilación. Consulte [vídeo de Channel 9: Diseñar y validar la arquitectura mediante diagramas de capas](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -118,7 +115,7 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
 ##  <a name="NewAreas"></a> Diseñe nuevas áreas de la aplicación  
  Cuando comience el desarrollo de un nuevo proyecto, o una nueva área de un nuevo proyecto, puede dibujar capas y dependencias que le ayuden a identificar los componentes primarios antes de empezar a desarrollar el código.  
   
--   **Muestre modelos arquitectónicos identificables** en los diagramas de capas, si es posible. Por ejemplo, un diagrama de capas en el que se describa una aplicación de escritorio puede incluir capas como Presentación, Lógica del dominio y Almacén de datos. Un diagrama de capas que abarque una única característica de una aplicación puede tener las capas Modelo, Ver y Controlador. Para obtener más información acerca de estos patrones, consulte [Patterns & Practices: arquitectura de la aplicación](http://go.microsoft.com/fwlink/?LinkId=145794).  
+-   **Muestre modelos arquitectónicos identificables** en los diagramas de capas, si es posible. Por ejemplo, un diagrama de capas en el que se describa una aplicación de escritorio puede incluir capas como Presentación, Lógica del dominio y Almacén de datos. Un diagrama de capas que abarque una única característica de una aplicación puede tener las capas Modelo, Ver y Controlador. Para obtener más información acerca de estos patrones, consulte [Patterns & Practices: Arquitectura de la aplicación](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
      Si genera a menudo modelos similares, cree una herramienta personalizada. Consulte [definir personalizado en un elemento de cuadro de herramientas de modelado](../modeling/define-a-custom-modeling-toolbox-item.md).  
   
@@ -166,8 +163,5 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
  Para asegurarse de que los futuros cambios que se hagan en el código cumplen los requisitos de los diagramas de capas, incluya la validación de capas en el proceso de compilación estándar de la solución. Cuando otros miembros del equipo compilen la solución, cualquier diferencia entre las dependencias del código y el diagrama de capas se notificará como un error de compilación. Para obtener más información sobre cómo incluir la validación de capas en el proceso de compilación, véase [validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)   
+ [Diagramas de capas: Referencia](../modeling/layer-diagrams-reference.md)   
  [Crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
-
-
-

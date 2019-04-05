@@ -1,14 +1,9 @@
 ---
 title: IDebugPortRequest2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPortRequest2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fbb78b45189252ad45e729778fddace1784e8dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fa72ae9d2cfbe399c3507406875e9c692d18b678
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768325"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999465"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -54,12 +49,11 @@ IDebugPortRequest2 : IUnknown
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Vea también  
  [Interfaces del núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
- [Agregar puerto](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)   
+ [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)   
  [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)
-
