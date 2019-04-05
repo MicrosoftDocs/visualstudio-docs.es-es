@@ -1,28 +1,23 @@
 ---
-title: 'Cómo: agregar marcadores de texto estándar | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Agregar marcadores de texto estándar | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
 ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 54dcfc9a1952dc0cd816c2ce7ad83cd8355f0066
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7e771acfa44c1b32dfcc33b2ef1cbcaef879b9f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779481"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58995242"
 ---
-# <a name="how-to-add-standard-text-markers"></a>Cómo: agregar marcadores de texto estándar
+# <a name="how-to-add-standard-text-markers"></a>Filtrar Agregar marcadores de texto estándar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Use el procedimiento siguiente para crear uno de los tipos de marcador de texto predeterminados proporcionados con la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor básico.  
@@ -55,7 +50,6 @@ Use el procedimiento siguiente para crear uno de los tipos de marcador de texto 
   
 ## <a name="see-also"></a>Vea también  
  [Uso de marcadores de texto con la API heredada](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Cómo: implementar los marcadores de Error](../extensibility/how-to-implement-error-markers.md)   
- [Cómo: crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
- [Cómo: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md)
-
+ [Cómo: Implementar los marcadores de Error](../extensibility/how-to-implement-error-markers.md)   
+ [Cómo: Crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
+ [Cómo: Utilizar marcadores de texto](../extensibility/how-to-use-text-markers.md)

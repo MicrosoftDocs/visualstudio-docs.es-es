@@ -1,23 +1,20 @@
 ---
 title: Diseñadores de actividad de máquina de estado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: fff12b5d3ba67f01a210d708081a010c4c20eea1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5efc22f6254ec0040dc4d767d7ac2831b4bd96f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998313"
 ---
 # <a name="state-machine-activity-designers"></a>Diseñadores de actividad de equipo de estado
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] incluye varios diseñadores de actividades que puede usar cuando cree flujos de trabajo. Esta sección contiene los diseñadores de actividad proporcionados por el sistema que se usan para crear y administrar flujos de trabajo de máquina de estados. Los siguientes temas describen estos diseñadores y ofrecen orientación sobre cómo usarlas.  

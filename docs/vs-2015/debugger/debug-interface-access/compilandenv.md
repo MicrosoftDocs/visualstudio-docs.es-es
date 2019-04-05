@@ -1,14 +1,9 @@
 ---
-title: CompilandEnv | Documentos de Microsoft
-ms.custom: ''
+title: CompilandEnv | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 808404bb-ece1-47f1-b9ea-c76d4d86ddd9
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 157a8e4a483c5c8ef57eaa6adbdb54b74fa82178
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9dfa9f1efa266a95e0580717b06cee4b9d2a7725
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757632"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995318"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,8 +38,5 @@ El compilador puede incluir variables de entorno adicionales con los símbolos. 
 |[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|`VARIANT`|Valor de cadena de contenido de la variable (`VT_BSTR`).|  
   
 ## <a name="see-also"></a>Vea también  
- [Operación de compilación](../../debugger/debug-interface-access/compiland.md)   
+ [Compiland](../../debugger/debug-interface-access/compiland.md)   
  [Jerarquía léxica de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
-
-
-

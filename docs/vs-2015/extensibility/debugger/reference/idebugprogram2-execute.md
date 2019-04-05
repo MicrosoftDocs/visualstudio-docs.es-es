@@ -1,14 +1,9 @@
 ---
 title: IDebugProgram2::Execute | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::Execute
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ddbab3802a983bdd802379389c4ebf8bd171d58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 00dac8c76a290adf877640a5fe3465d24826ec2e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756870"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998008"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51756870"
 Continúa ejecutando este programa desde un estado detenido. Se borra cualquier estado de ejecución anterior (por ejemplo, un paso), y el programa comienza a ejecutarse de nuevo.  
   
 > [!NOTE]
->  Este método está en desuso. Use la [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) método en su lugar.  
+>  Este método está obsoleto. Use la [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) método en su lugar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -57,4 +52,3 @@ int Execute();
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
-

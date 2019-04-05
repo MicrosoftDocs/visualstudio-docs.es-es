@@ -1,11 +1,8 @@
 ---
 title: Diseñador de actividades CancellationScope | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CancellationScope.UI
@@ -13,13 +10,13 @@ ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 125e9fd934ce40d2a6633daa62b817628306daa3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6207d1fcd2e920de979a13624e5cf1b442c2703c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229897"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989108"
 ---
 # <a name="cancellationscope-activity-designer"></a>Diseñador de actividades CancellationScope
 El **CancellationScope** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.CancellationScope> actividad.  

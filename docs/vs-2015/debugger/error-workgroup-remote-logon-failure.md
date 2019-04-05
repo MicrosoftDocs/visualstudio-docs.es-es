@@ -1,14 +1,9 @@
 ---
-title: 'Error: Error de inicio de sesión remoto del grupo de trabajo | Microsoft Docs'
-ms.custom: ''
+title: 'Error: Error de inicio de sesión remoto del grupo de trabajo | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.workgroup_remote_logon_failure
 dev_langs:
@@ -27,15 +22,15 @@ ms.assetid: 7be2c5bb-40fe-48d6-8cfc-c231fbd3d64e
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b13531d3a9dd5249b0c96ddc4e8f736c20696303
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d0157b18c0b0dfce2ba69482dc1c61e1ddf3a996
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998046"
 ---
-# <a name="error-workgroup-remote-logon-failure"></a>Error: El grupo de trabajo no ha podido iniciar una sesión remota
+# <a name="error-workgroup-remote-logon-failure"></a>Error: Error de inicio de sesión del grupo de trabajo de forma remota
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este error reza como sigue:  
@@ -48,48 +43,45 @@ Este error reza como sigue:
   
 -   No existe ninguna cuenta que coincida con el nombre y la contraseña en el equipo remoto.  
   
--   Si el equipo de Visual Studio y la máquina remota están en grupos de trabajo, este error puede deberse a que el valor predeterminado **directiva de seguridad Local** establecer en el equipo remoto. La configuración predeterminada para el **directiva de seguridad Local** configuración es **sólo invitado: usuarios locales autenticados como invitados**. Para depurar en esta configuración, debe cambiar la configuración en el equipo remoto a **clásico: usuarios locales autenticados como ellos mismos**.  
+-   Si el equipo de Visual Studio y la máquina remota están en grupos de trabajo, el error se podría producir debido a la configuración predeterminada de la **Directiva de seguridad local** de la máquina remota. La configuración predeterminada de la **Directiva de seguridad local** es **Solo invitado: los usuarios locales se autentican como invitados**. Para depurar en esta configuración, es necesario cambiar la configuración del equipo remoto a **Clásico: usuarios locales autenticados como ellos mismos**.  
   
 > [!NOTE]
 >  Debe ser administrador para llevar a cabo las tareas siguientes.  
   
 ### <a name="to-open-the-local-security-policy-window"></a>Para abrir la ventana Directiva de seguridad local  
   
-1.  Iniciar el **secpol.msc** complemento Microsoft Management Console. Escriba secpol.msc en la búsqueda de Windows, el cuadro Ejecutar de Windows o en un símbolo del sistema.  
+1.  Inicie el complemento **secpol.msc** en Microsoft Management Console. Escriba secpol.msc en la búsqueda de Windows, el cuadro Ejecutar de Windows o en un símbolo del sistema.  
   
 ### <a name="to-add-user-rights-assignments"></a>Para agregar asignaciones de derechos de usuario  
   
 1.  1  
   
-2.  Abra el **directiva de seguridad Local** ventana.  
+2.  Abra la ventana **Directiva de seguridad local**.  
   
-3.  Expanda el **directivas locales** carpeta.  
+3.  Expanda la carpeta **Directivas locales**.  
   
-4.  Haga clic en **asignación de derechos de usuario**.  
+4.  Haga clic en **Asignación de derechos de usuario**.  
   
-5.  En el **directiva** columna, haga doble clic en **depurar programas** para ver las asignaciones de directivas de grupo local actual en el **configuración de directiva de seguridad Local** cuadro de diálogo.  
+5.  En la columna **Directiva**, haga doble clic en **Depurar programas** para ver las asignaciones actuales de la directiva de grupo local en el cuadro de diálogo **Configuración de directiva de seguridad local**.  
   
      ![Derechos de usuario de directiva de seguridad local](../debugger/media/dbg-err-localsecuritypolicy-userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
-6.  Para agregar nuevos usuarios, haga clic en el **Agregar usuario o grupo** botón.  
+6.  Para agregar nuevos usuarios, haga clic en el botón **Agregar usuario o grupo**.  
   
 ### <a name="to-change-the-sharing-and-security-model"></a>Para cambiar el modelo de seguridad y recursos compartidos  
   
-1.  Abra el **directiva de seguridad Local** ventana.  
+1.  Abra la ventana **Directiva de seguridad local**.  
   
-2.  Expanda el **directivas locales** carpeta.  
+2.  Expanda la carpeta **Directivas locales**.  
   
-3.  Haga clic en **las opciones de seguridad**.  
+3.  Haga clic en **Opciones de seguridad**.  
   
-4.  En el **directiva** columna, haga doble clic en **acceso de red: modelo de seguridad y recursos compartidos para cuentas locales**.  
+4.  En el **directiva** columna, haga doble clic en **acceso de red: Modelo de seguridad y recursos compartidos para cuentas locales**.  
   
-5.  En el **acceso de red: modelo de seguridad y recursos compartidos para cuentas locales** cuadro de diálogo, cambie el valor a **clásico: usuarios locales autenticados como ellos mismos** y haga clic en el **aplicar**botón.  
+5.  En el **acceso de red: Modelo de seguridad y recursos compartidos para cuentas locales** diálogo cuadro, cambie el valor a **clásico: usuarios locales autenticados como ellos mismos** y haga clic en el **aplicar** botón.  
   
      ![Opciones de seguridad de directiva de seguridad local](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
 ## <a name="see-also"></a>Vea también  
- [Errores de depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

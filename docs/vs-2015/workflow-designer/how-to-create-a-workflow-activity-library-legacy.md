@@ -1,11 +1,8 @@
 ---
-title: 'Cómo: crear una biblioteca de actividades de flujo de trabajo (heredado) | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear una biblioteca de actividades de flujo de trabajo (heredado) | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activity library projects
@@ -15,15 +12,15 @@ ms.assetid: fb5aa940-2ae8-4b52-b52c-51c20861a7b4
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: daed51a1cb5ba6eb3d4e0d7748993027686d5b7e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 622b4376ef90863697e13ae32005a9ad890ce2a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989116"
 ---
-# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Cómo: Crear una biblioteca de actividades de flujo de trabajo (Heredado)
+# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Filtrar Crear una biblioteca de actividades de flujo de trabajo (heredado)
 Siga estos pasos para crear un proyecto de biblioteca de actividades de flujo de trabajo mediante el uso de [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado proporcionado por [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-workflow-activity-library-project"></a>Para crear un proyecto de biblioteca de actividades de flujo de trabajo  
@@ -55,5 +52,5 @@ Siga estos pasos para crear un proyecto de biblioteca de actividades de flujo de
  [Crear proyectos de flujo de trabajo heredados](../workflow-designer/creating-legacy-workflow-projects.md)   
  [Usar el Diseñador de actividad Legacy](../workflow-designer/using-the-legacy-activity-designer.md)   
  [Actividades de flujo de trabajo heredado](../workflow-designer/legacy-workflow-activities.md)   
- [Desarrollar actividades de flujo de trabajo](http://msdn.microsoft.com/en-us/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Actividades de Windows Workflow Foundation](http://msdn.microsoft.com/en-us/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+ [Desarrollar actividades de flujo de trabajo](http://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
+ [Actividades de Windows Workflow Foundation](http://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
