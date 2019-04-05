@@ -1,30 +1,27 @@
 ---
-title: 'Cómo: agregar actividades al cuadro de herramientas | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Agregar actividades al cuadro de herramientas | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7fc523cd032863498cdefac1e12f0653a57ab7cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 52f9fabec46fb04f2cc936c7bf76d67bd2dabcd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299863"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999317"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Cómo agregar actividades al cuadro de herramientas
+# <a name="how-to-add-activities-to-the-toolbox"></a>Filtrar Agregar actividades al cuadro de herramientas
 Se pueden agregar actividades a la **cuadro de herramientas** en la solución de varias maneras diferentes. Puede agregarlas desde dentro de su proyecto actual y hacer referencia a las misas desde un proyecto diferente o desde un ensamblado diferente.  
   
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>Para agregar una actividad desde su proyecto actual  
   
-1.  Agregue una nueva actividad personalizada al proyecto de flujo de trabajo actual. [!INCLUDE[crabout](../includes/crabout-md.md)] Agregar una nueva actividad personalizada al proyecto, vea [Cómo: agregar un nuevo elemento a un proyecto de flujo de trabajo](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
+1.  Agregue una nueva actividad personalizada al proyecto de flujo de trabajo actual. [!INCLUDE[crabout](../includes/crabout-md.md)] Agregar una nueva actividad personalizada al proyecto, vea [Cómo: Agregar un nuevo elemento a un proyecto de flujo de trabajo](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
   
 2.  Agregue lógica personalizada a su actividad.  
   

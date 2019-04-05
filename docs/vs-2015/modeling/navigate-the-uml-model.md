@@ -1,25 +1,22 @@
 ---
 title: Navegar por el modelo UML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995599"
 ---
 # <a name="navigate-the-uml-model"></a>Navegar por el modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ En este tema se presentan los principales tipos del modelo UML.
   
  Si elimina un elemento del modelo, se elimina automáticamente cualquier relación de la que forme parte y se actualiza la propiedad situada en el otro extremo.  
   
- Si la especificación de UML asigna una multiplicidad de 0..1 a una propiedad, puede tener el valor `null`. Una multiplicidad con máximo mayor que 1 significa que la propiedad .NET tiene el tipo: `IEnumerable<` *tipo*`>`.  
+ Si la especificación de UML asigna una multiplicidad de 0..1 a una propiedad, puede tener el valor `null`. Una multiplicidad con un valor máximo mayor que 1 significa que la propiedad .NET tiene el tipo: `IEnumerable<`*Tipo*`>`.  
   
  Para obtener más información sobre cómo atravesar relaciones, vea [navegar por las relaciones con la API de UML](../modeling/navigate-relationships-with-the-uml-api.md).  
   
@@ -61,7 +58,7 @@ En este tema se presentan los principales tipos del modelo UML.
   
  Cada elemento del modelo se crea con un propietario. Para obtener más información, consulte [crear elementos y relaciones en modelos UML](../modeling/create-elements-and-relationships-in-uml-models.md).  
   
- ![Diagrama de clases: modelo, diagrama, forma y elemento](../modeling/media/uml-mm1.png "UML_MM1")  
+ ![Diagrama de clases: Modelo, diagrama, forma y elemento](../modeling/media/uml-mm1.png "UML_MM1")  
   
 ## <a name="shapes-and-diagrams"></a>Formas y diagramas  
  Los elementos del modelo UML se pueden representar en diagramas. Pueden aparecer diferentes subtipos de IElement en distintos tipos de diagramas.  
@@ -134,6 +131,3 @@ foreach (IShape<IInterface> in
 ## <a name="see-also"></a>Vea también  
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Programar con la API de UML](../modeling/programming-with-the-uml-api.md)
-
-
-

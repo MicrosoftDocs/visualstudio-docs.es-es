@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: especificar una dirección URL de soporte para requisitos previos individuales en una implementación de ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Especifique una dirección URL de soporte para requisitos previos individuales en una implementación de ClickOnce | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831580"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995282"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Cómo: Especificar una dirección URL de soporte para requisitos previos individuales en una implementación de ClickOnce
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Filtrar Especifique una dirección URL de soporte para requisitos previos individuales en una implementación de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede probar la implementación de una serie de requisitos previos que deben estar disponibles en el equipo cliente para el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación se ejecute. Estos incluyen la versión mínima necesaria de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], la versión del sistema operativo y los ensamblados que deben estar preinstalados en la caché global de ensamblados (GAC). [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], sin embargo, no se puede instalar cualquiera de estos requisitos previos. Si no se encuentra un requisito previo, simplemente detiene la instalación y muestra un cuadro de diálogo que explica el motivo del error de la instalación.  
@@ -67,7 +62,7 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede probar la implem
   
     ```  
       <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
           <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
         </dependentAssembly>  
       </dependency>  
@@ -84,7 +79,7 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede probar la implem
     </compatibleFrameworks>  
     ```  
   
-7.  Una vez que se ha modificado manualmente el manifiesto de aplicación, debe volver a firmar el manifiesto de aplicación mediante su certificado digital, a continuación, actualizar y volver a firmar el manifiesto de implementación también. Debe utilizar Mage.exe o MageUI.exe SDK de las herramientas para realizar esta tarea, como volver a generar estos archivos mediante [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] borra los cambios manuales. Para obtener más información sobre el uso de Mage.exe para volver a firmar los manifiestos, consulte [How to: RE-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7.  Una vez que se ha modificado manualmente el manifiesto de aplicación, debe volver a firmar el manifiesto de aplicación mediante su certificado digital, a continuación, actualizar y volver a firmar el manifiesto de implementación también. Debe utilizar Mage.exe o MageUI.exe SDK de las herramientas para realizar esta tarea, como volver a generar estos archivos mediante [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] borra los cambios manuales. Para obtener más información sobre el uso de Mage.exe para volver a firmar los manifiestos, consulte [Cómo: Volver a firmar aplicaciones y manifiestos de implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>Seguridad de .NET Framework  
  La dirección URL de soporte técnico no se muestra en el cuadro de diálogo si la aplicación está marcada para ejecutarse en confianza parcial.  
@@ -95,6 +90,3 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede probar la implem
  [\<compatibleFrameworks > elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)
-
-
-
