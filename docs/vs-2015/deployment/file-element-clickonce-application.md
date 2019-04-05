@@ -1,14 +1,9 @@
 ---
 title: '&lt;archivo&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -27,13 +22,13 @@ ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16c301d55738519f3e097138f08b6b2c2fe2b4c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 88fce548d5adbd6d4dc930db767fd3e52690490b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998077"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;archivo&gt; elemento (aplicación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,33 +87,33 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos y atributos  
- El elemento `file` es opcional. El elemento tiene los siguientes atributos.  
+ El elemento `file` es opcional. El elemento tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Requerido. Identifica el nombre del archivo.|  
-|`size`|Requerido. Especifica el tamaño, en bytes, del archivo.|  
+|`name`|Obligatorio. Identifica el nombre del archivo.|  
+|`size`|Obligatorio. Especifica el tamaño, en bytes, del archivo.|  
 |`group`|Opcional, si la `optional` atributo no se especifica o se establece en `false`; es necesario si `optional` es `true`. El nombre del grupo al que pertenece este archivo. El nombre puede ser cualquier valor de cadena Unicode elegido por el desarrollador y se usa para descargar archivos a petición con la <xref:System.Deployment.Application.ApplicationDeployment> clase.|  
 |`optional`|Opcional. Especifica si este archivo debe descargar cuando la aplicación es la primera ejecución, o si el archivo debe residir únicamente en el servidor hasta que la aplicación lo solicita a petición. Si `false` o undefined, el archivo se descarga cuando la aplicación se ejecuta o se instala en primer lugar. Si `true`, un `group` debe especificarse para que el manifiesto de aplicación sea válido. `optional` no puede ser true si `writeableType` se especifica con el valor `applicationData`.|  
-|`writeableType`|Opcional. Especifica que este archivo es un archivo de datos. Actualmente, el único valor válido es `applicationData`.|  
+|`writeableType`|Opcional. Especifica que este archivo es un archivo de datos. Actualmente, el único valor válido es: `applicationData`.|  
   
-## <a name="typelib"></a>biblioteca de tipos  
- El `typelib` elemento es un elemento secundario opcional del elemento file. El elemento describe la biblioteca de tipos al que pertenece el componente COM. El elemento tiene los siguientes atributos.  
+## <a name="typelib"></a>typelib  
+ El `typelib` elemento es un elemento secundario opcional del elemento file. El elemento describe la biblioteca de tipos al que pertenece el componente COM. El elemento tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`tlbid`|Requerido. El GUID asignado a la biblioteca de tipos.|  
-|`version`|Requerido. El número de versión de la biblioteca de tipos.|  
-|`helpdir`|Requerido. El directorio que contiene los archivos de ayuda para el componente. Puede ser de longitud cero.|  
+|`tlbid`|Obligatorio. El GUID asignado a la biblioteca de tipos.|  
+|`version`|Obligatorio. El número de versión de la biblioteca de tipos.|  
+|`helpdir`|Obligatorio. El directorio que contiene los archivos de ayuda para el componente. Puede ser de longitud cero.|  
 |`resourceid`|Opcional. La representación de cadena hexadecimal del identificador de configuración regional (LCID). Es uno a cuatro dígitos hexadecimales sin un prefijo 0 x y sin ceros iniciales. El LCID puede tener un identificador de subidioma neutro.|  
 |`flags`|Opcional. La representación de cadena de los marcadores de biblioteca de tipos para esta biblioteca de tipos. En concreto, debe ser uno de "RESTRICTED", "CONTROL", "HIDDEN" y "HASDISKIMAGE".|  
   
 ## <a name="comclass"></a>comClass  
- El `comClass` elemento es un elemento secundario opcional de la `file` elemento, pero es necesario si la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación contiene un componente COM intenta implementar mediante COM sin registro. El elemento tiene los siguientes atributos.  
+ El `comClass` elemento es un elemento secundario opcional de la `file` elemento, pero es necesario si la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación contiene un componente COM intenta implementar mediante COM sin registro. El elemento tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`clsid`|Requerido. El identificador de clase del componente COM expresado como un GUID.|  
+|`clsid`|Obligatorio. El identificador de clase del componente COM expresado como un GUID.|  
 |`description`|Opcional. Nombre de la clase.|  
 |`threadingModel`|Opcional. El modelo de subprocesos utilizado por las clases de COM en proceso. Si esta propiedad es null, no se utiliza ningún modelo de subprocesos. El componente se crea en el subproceso principal del cliente y las llamadas de otros subprocesos se calculan las referencias a este subproceso. La siguiente lista muestra los valores válidos:<br /><br /> `Apartment`, `Free`, `Both`y `Neutral`.|  
 |`tlbid`|Opcional. GUID de la biblioteca de tipos para este componente COM.|  
@@ -134,7 +129,7 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`iid`|Requerido. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
+|`iid`|Obligatorio. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
 |`baseInterface`|Opcional. El IID de la interfaz desde la que hace referencia la interfaz `iid` derivada.|  
 |`numMethods`|Opcional. El número de métodos implementados por la interfaz.|  
 |`name`|Opcional. El nombre de la interfaz tal y como aparecerá en el código.|  
@@ -146,7 +141,7 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`iid`|Requerido. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
+|`iid`|Obligatorio. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
 |`baseInterface`|Opcional. El IID de la interfaz desde la que hace referencia la interfaz `iid` derivada.|  
 |`numMethods`|Opcional. El número de métodos implementados por la interfaz.|  
 |`Name`|Opcional. El nombre de la interfaz tal y como aparecerá en el código.|  
@@ -168,7 +163,7 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
   
  Si un manifiesto contiene un archivo que no está en hash, ese manifiesto no puede ser digitalmente firmado, ya que los usuarios no pueden comprobar el contenido de un archivo de este tipo.  
   
-## <a name="dsigtransforms"></a>dsig: TRANSFORMS  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  El `dsig:Transforms` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:Transforms` no tiene atributos.  
   
 ## <a name="dsigtransform"></a>dsig: Transform  
@@ -185,7 +180,7 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 |---------------|-----------------|  
 |`Algorithm`|El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-## <a name="dsigdigestvalue"></a>dsig: DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  El `dsig:DigestValue` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:DigestValue` no tiene atributos. Su valor de texto es el hash calculado para el archivo especificado.  
   
 ## <a name="remarks"></a>Comentarios  
@@ -208,6 +203,3 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
   
 ## <a name="see-also"></a>Vea también  
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

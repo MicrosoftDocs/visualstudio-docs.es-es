@@ -1,25 +1,22 @@
 ---
 title: El archivo DslDefinition.dsl | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937658"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999361"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>El archivo DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +41,7 @@ Este tema describe la estructura del archivo DslDefinition.dsl en el proyecto Ds
  Tipos  
  En esta sección se define cada tipo y su espacio de nombres. Las propiedades de dominio tienen dos tipos. `DomainEnumerations` se definen en el modelo y generan tipos en DomainModel.cs. `ExternalTypes` hacen referencia a los tipos que se definen en otras partes (como `String` o `Int32`) y no generan nada.  
   
- Shapes  
+ Formas  
  En esta sección se definen las formas que describen cómo aparece el modelo en un diseñador. Estas formas geométricas se corresponden con las clases del modelo en la sección Diagrama.  
   
  Conectores  
@@ -65,7 +62,7 @@ Este tema describe la estructura del archivo DslDefinition.dsl en el proyecto Ds
  Diseñador  
  Esta sección define un diseñador (editor), que reúne un **cuadro de herramientas**, configuración de la validación, un diagrama y un esquema de serialización. En la sección Designer también se define la clase raíz del modelo, que normalmente es también la clase raíz del diagrama.  
   
- Explorador  
+ Explorer  
  Esta sección se identifican los **DSL Explorer** comportamiento (definido en la sección XmlSerializationBehavior).  
   
 ## <a name="monikers-in-the-dsldefinitiondsl-file"></a>Monikers en el archivo DslDefinition.dsl  
@@ -90,7 +87,7 @@ Este tema describe la estructura del archivo DslDefinition.dsl en el proyecto Ds
   
  El sistema de moniker requiere que los elementos del mismo nivel en el árbol XML tengan nombres distintos. Por este motivo, se producen errores de validación si intenta guardar una definición específica de dominio que tenga, por ejemplo, dos clases con el mismo nombre. Debe corregir siempre estos errores de nombres duplicados antes de guardar el archivo DslDefinition.dsl para que pueda volver a cargarlo correctamente más adelante.  
   
- Cada tipo tiene su propio tipo de moniker: DomainClassMoniker, DomainRelationshipMoniker, y así sucesivamente.  
+ Cada tipo tiene su propio tipo de moniker: DomainClassMoniker, DomainRelationshipMoniker, etc.  
   
 ## <a name="types"></a>Tipos  
  En la sección Types se especifican todos los tipos que el archivo DslDefinition.dsl contiene como tipos de propiedades. Estos tipos se dividen en dos tipos: tipos externos, como System.String y los tipos enumerados.  
@@ -214,7 +211,7 @@ Este tema describe la estructura del archivo DslDefinition.dsl en el proyecto Ds
 ### <a name="source-and-target-roles"></a>Roles de origen y destino  
  Cada relación contiene roles de origen y de destino que tienen los siguientes atributos:  
   
--   El `RolePlayer` atributo hace referencia a la clase de dominio de las instancias vinculadas: OutPort para el origen, InPort para el destino.  
+-   El atributo `RolePlayer` hace referencia a la clase de dominio de las instancias vinculadas: OutPort para el origen, InPort para el destino.  
   
 -   El atributo `Multiplicity` tiene cuatro valores posibles (ZeroMany, ZeroOne, One y OneMany). Este atributo hace referencia al número de vínculos de esta relación que se pueden asociar con un encargado de rol.  
   
@@ -261,7 +258,7 @@ Este tema describe la estructura del archivo DslDefinition.dsl en el proyecto Ds
   
  Ninguno de los tipos de herramienta construye directamente formas o conectores. Cada uno crea una instancia de una clase de dominio o una relación de dominio; después, las asignaciones de formas y conectores determinan cómo se muestra esa relación de dominio o clase de dominio.  
   
-## <a name="paths"></a>Rutas  
+## <a name="paths"></a>Rutas de acceso  
  Las rutas de dominio aparecen en varios lugares del archivo DslDefinition.dsl. Estas rutas especifican una serie de vínculos desde un elemento del modelo (es decir, una instancia del lenguaje específico de dominio) a otro. La sintaxis de la ruta es simple pero detallada.  
   
  Las rutas aparecen en el archivo DslDefinition.dsl en las etiquetas `<DomainPath>…</DomainPath>`. Aunque las rutas pueden navegar por varios vínculos, en la mayoría de los ejemplos solo atraviesan un vínculo.  
@@ -281,7 +278,7 @@ Este tema describe la estructura del archivo DslDefinition.dsl en el proyecto Ds
  Al escribir C# en este modelo, puede acceder directamente a través de un vínculo en un solo paso mediante el uso de la propiedad que la relación genera en cada una de las clases que se relación:  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  Sin embargo, debe hacer ambos saltos explícitamente en la sintaxis de la ruta. Este requisito permite acceder al vínculo intermedio más fácilmente. El código siguiente completa el salto desde el vínculo al Component:  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Las asignaciones de conectores también pueden contener asignaciones de elementos Decorator.  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de las herramientas de lenguajes específicos de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

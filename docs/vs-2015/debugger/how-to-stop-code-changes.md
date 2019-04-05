@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: detener cambios en el código | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Detener cambios en el código | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 906c115342661ddbe90c0ffbf24bf58da6ae1413
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787541"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999245"
 ---
-# <a name="how-to-stop-code-changes"></a>Cómo: Detener cambios en el código
+# <a name="how-to-stop-code-changes"></a>Filtrar Detención de los cambios en el código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del código, puede detener la operación.  
@@ -42,7 +37,7 @@ Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del c
   
 ### <a name="to-stop-applying-code-changes"></a>Para detener la aplicación de los cambios en el código  
   
-- Elija **dejar de aplicar los cambios de código** desde el **depurar** menú.  
+- Elija **Detener la aplicación de cambios en el código** en el menú **Depurar**.  
   
   Este elemento de menú sólo es visible cuando se están aplicando los cambios del código.  
   
@@ -51,6 +46,3 @@ Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del c
 ## <a name="see-also"></a>Vea también  
  [Editar y continuar](../debugger/edit-and-continue.md)   
  [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
-
-
-

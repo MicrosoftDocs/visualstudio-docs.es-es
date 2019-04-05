@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Depurar en tiempo de diseño | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Depuración en tiempo de diseño | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,15 +22,15 @@ ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4b6660bc4d9cf0073f1e18b0960c3fa9c0ae9c13
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 392e50b9494d2de17f2d1ac2b0f3c23f1e872fa6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998624"
 ---
-# <a name="walkthrough-debugging-at-design-time"></a>Tutorial: Depurar en tiempo de diseño
+# <a name="walkthrough-debugging-at-design-time"></a>Tutorial: Depuración en tiempo de diseño
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar Visual Studio **inmediato** ventana para ejecutar una función o subrutina mientras la aplicación no se está ejecutando. Si la función o subrutina contiene un punto de interrupción, Visual Studio interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Esta característica se denomina depuración en tiempo de diseño.  
@@ -89,6 +84,3 @@ Puede usar Visual Studio **inmediato** ventana para ejecutar una función o subr
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)
-
-
-
