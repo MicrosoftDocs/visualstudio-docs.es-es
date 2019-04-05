@@ -1,40 +1,35 @@
 ---
 title: Principales de Interfaces | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea9a80bf469d0555b07d48ca48b158027c90abb7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 68ab00c03f435ce479c1fe41074509a67a458061
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764798"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996985"
 ---
 # <a name="core-interfaces"></a>Interfaces básicas
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Las interfaces siguientes son las interfaces principales para ampliar el depurador mediante el uso de la [!INCLUDE[vsipsdk](../../../includes/vsipsdk-md.md)].  
   
-## <a name="discussion"></a>Explicación  
+## <a name="discussion"></a>Discusión  
  Estas interfaces se utilizan principalmente para crear el motor de depuración (DE). Aquí están organizados por categorías:  
   
 - [Puntos de interrupción](#Breakpoints)  
   
 - [Contextos](#Contexts)  
   
-- [Server Core](#CoreServer)  
+- [Core Server](#CoreServer)  
   
 - [Motores de depuración](#DebugEngines)  
   
@@ -313,4 +308,3 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 ## <a name="see-also"></a>Vea también  
  [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [Creación de un motor de depuración personalizado](../../../extensibility/debugger/creating-a-custom-debug-engine.md)
-

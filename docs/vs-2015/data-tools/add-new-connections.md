@@ -1,24 +1,22 @@
 ---
 title: Agregar nuevas conexiones | Documentos de Microsoft
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8a93c287-2834-4a83-a590-bdc3fe8d293f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03407962b4ea8160d492971367f121835fa39aae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a5c7d4bda59b8ff9bdedb775ecc6376a23a2db7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218515"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994886"
 ---
-# <a name="add-new-connections"></a>Agregar nuevas conexiones
+# <a name="add-new-connections"></a>Adición de nuevas conexiones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -47,7 +45,7 @@ Puede probar la conexión a una base de datos o un servicio y explorar el conten
   
  ![Cambiar el proveedor de datos de AD0.NET](../data-tools/media/raddata-change-ad0-net-data-provider.png "raddata proveedor de datos de cambio AD0.NET")  
   
-## <a name="test-the-connection"></a>Probar la conexión  
+## <a name="test-the-connection"></a>Prueba de la conexión  
  Una vez que haya elegido el origen de datos, haga clic en **Probar conexión**. Si no tiene éxito, deberá solucionar según la documentación del fabricante.  
   
  ![Probar conexión](../data-tools/media/raddata-test-connection.png "raddata Probar conexión")  
@@ -56,4 +54,3 @@ Puede probar la conexión a una base de datos o un servicio y explorar el conten
   
 ## <a name="see-also"></a>Vea también  
  [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

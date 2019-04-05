@@ -1,26 +1,21 @@
 ---
 title: Elegir una estrategia de implementación del motor de depuración | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9d2f4d4f907dcabb2aff5457abbbe215507d7601
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80e9e34547580560e79d408935fd10f17b577037
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995103"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Elección de una estrategia de implementación del motor de depuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,4 +35,3 @@ Use la arquitectura en tiempo de ejecución para determinar la estrategia de imp
   
 ## <a name="see-also"></a>Vea también  
  [Extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

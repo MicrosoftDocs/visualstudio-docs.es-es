@@ -1,27 +1,22 @@
 ---
 title: Ampliación y personalización de la herramienta Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7aac774f64d79d2d28cc690550abb7a84b7d3674
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b232fa1275bce453e3b32cea6a5ff37fdd501c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778753"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998971"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Ampliación y personalización de ventanas de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +38,9 @@ Visual Studio proporciona varios tipos diferentes de windows, por ejemplo las ve
   
  Los paneles de la ventana de herramientas pueden hospedar controles de usuario WPF y admiten barras de herramientas. Puede invalidar la propiedad <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> para devolver el identificador del control hospedado.  
   
- Puede agregar muchas características distintas a las ventanas de herramientas. Por ejemplo, puede agregar una barra de herramientas: [agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) o un menú contextual: [adición de un menú contextual en una ventana de herramientas](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Puede agregar un control de búsqueda que le permite buscar elementos dentro de la ventana de herramientas: [adición de búsqueda a una ventana de herramientas](../extensibility/adding-search-to-a-tool-window.md).  
+ Puede agregar muchas características distintas a las ventanas de herramientas. Por ejemplo, puede agregar una barra de herramientas: [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) o un menú contextual: [Adición de un menú contextual en una ventana de herramientas](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Puede agregar un control de búsqueda que le permite buscar elementos dentro de la ventana de herramientas: [Adición de búsqueda a una ventana de herramientas](../extensibility/adding-search-to-a-tool-window.md).  
   
- Puede suscribirse a eventos de ventana de herramienta: [suscripción a un evento](../extensibility/subscribing-to-an-event.md).  
+ Puede suscribirse a eventos de ventana de herramienta: [Suscripción a un evento](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extending-existing-tool-windows"></a>Ampliación de Windows existentes de herramienta  
  Puede agregar información acerca de la ventana de herramientas a un nuevo **opciones** página y una nueva configuración en el **propiedades** página, escribir en el **lista de tareas** y **salida**  windows. Para obtener más información, consulte [extender las propiedades, lista de tareas, salida y las opciones de Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) y [extender las propiedades, lista de tareas, salida y las opciones de Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
@@ -55,4 +50,3 @@ Visual Studio proporciona varios tipos diferentes de windows, por ejemplo las ve
   
 ## <a name="see-also"></a>Vea también  
  [Creación de una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)
-

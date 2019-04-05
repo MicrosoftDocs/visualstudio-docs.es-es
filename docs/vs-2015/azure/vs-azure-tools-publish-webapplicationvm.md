@@ -1,8 +1,8 @@
 ---
 title: Publish-WebApplicationVM | Microsoft Docs
-description: Obtenga información sobre cómo implementar una aplicación web en una máquina virtual. Este script crea los recursos necesarios en su suscripción de Azure si no existen.
+description: Obtenga información para implementar una aplicación web en una máquina virtual. Este script crea los recursos necesarios en su suscripción de Azure si no existen.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,15 +11,15 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: c2383e6d7b14d801a391a725f0482736fb926cd1
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e35f5decee2a908a9d1075ff3f6365a1d358c7b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995069"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (script de Windows PowerShell)
-Implementa una aplicación web a una máquina virtual. El script crea los recursos necesarios en su suscripción de Azure si no existen.
+Implementa una aplicación web en una máquina virtual. El script crea los recursos necesarios en su suscripción de Azure si no existen.
 
 ```
 Publish-WebApplicationVM
@@ -40,79 +40,79 @@ La ruta de acceso al archivo de configuración JSON que describe los detalles de
 | ¿Obligatorio? |true |
 | Posición |con nombre |
 | Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de canalización? |False |
+| ¿Aceptar la entrada de la canalización? |False |
 | ¿Aceptar caracteres comodín? |False |
 
 ### <a name="subscriptionname"></a>SubscriptionName
-El nombre de la suscripción de Azure en el que desea crear la máquina virtual.
+Nombre de la suscripción de Azure en la que desea crear la máquina virtual.
 
 | Alias | ninguna |
 | --- | --- |
 | ¿Obligatorio? |False |
 | Posición |con nombre |
-| Valor predeterminado |Usa la primera suscripción en el archivo de suscripción |
-| ¿Aceptar la entrada de canalización? |False |
+| Valor predeterminado |Utiliza la primera suscripción en el archivo de suscripción |
+| ¿Aceptar la entrada de la canalización? |False |
 | ¿Aceptar caracteres comodín? |False |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-La ruta de acceso al paquete de implementación web para publicar en la máquina virtual. Puede crear este paquete utilizando el Asistente para publicación Web en Visual Studio. Consulte [Cómo: crear un paquete de implementación Web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
+Ruta de acceso al paquete de implementación web para publicar en la máquina virtual. Puede crear este paquete mediante el Asistente de publicación web en Visual Studio. Vea [Cómo: Creación de un paquete de implementación web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
 
 | Alias | ninguna |
 | --- | --- |
 | ¿Obligatorio? |False |
 | Posición |con nombre |
 | Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de canalización? |False |
+| ¿Aceptar la entrada de la canalización? |False |
 | ¿Aceptar caracteres comodín? |False |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
-Si es true, permite el uso de certificados que no están firmados por una entidad emisora raíz de confianza.
+Si es true, permite el uso de certificados que no están firmados por una entidad de certificación raíz de confianza.
 
 | Alias | ninguna |
 | --- | --- |
 | ¿Obligatorio? |False |
 | Posición |con nombre |
 | Valor predeterminado |False |
-| ¿Aceptar la entrada de canalización? |False |
+| ¿Aceptar la entrada de la canalización? |False |
 | ¿Aceptar caracteres comodín? |False |
 
 ### <a name="vmpassword"></a>VMPassword
-Las credenciales para la cuenta de máquina virtual. Ejemplo: - VMPassword @{nombre = "admin"; Contraseña = "contraseña"}
+Credenciales de la cuenta para la máquina virtual. Ejemplo: -VMPassword @{Name = "admin"; Password = "contraseña"}
 
 | Alias | ninguna |
 | --- | --- |
 | ¿Obligatorio? |False |
 | Posición |con nombre |
 | Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de canalización? |False |
+| ¿Aceptar la entrada de la canalización? |False |
 | ¿Aceptar caracteres comodín? |False |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
-Las credenciales para la base de datos de SQL Azure. Ejemplo: - DatabaseServerPassword @{nombre = "admin"; Contraseña = "contraseña"}
+Credenciales para la base de datos SQL en Azure. Ejemplo: -DatabaseServerPassword @{Name = "admin"; Password = "contraseña"}
 
 | Alias | ninguna |
 | --- | --- |
 | ¿Obligatorio? |False |
 | Posición |con nombre |
 | Valor predeterminado |ninguna |
-| ¿Aceptar la entrada de canalización? |False |
+| ¿Aceptar la entrada de la canalización? |False |
 | ¿Aceptar caracteres comodín? |False |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
-Si es true, imprimir mensajes de la secuencia de comandos al flujo de salida.
+Si es true, imprimir mensajes del script a la secuencia de salida.
 
 | Alias | ninguna |
 | --- | --- |
 | ¿Obligatorio? |False |
 | Posición |con nombre |
 | Valor predeterminado |False |
-| ¿Aceptar la entrada de canalización? |False |
+| ¿Aceptar la entrada de la canalización? |False |
 | ¿Aceptar caracteres comodín? |False |
 
 ## <a name="remarks"></a>Comentarios
-Para obtener una explicación completa de cómo usar la secuencia de comandos para crear entornos de desarrollo y pruebas, vea [utilizando Scripts de PowerShell de Windows para publicar en entornos de prueba y desarrollo](vs-azure-tools-publishing-using-powershell-scripts.md).
+Para obtener una explicación completa de cómo usar el script para crear entornos de desarrollo y pruebas, consulte [Usar scripts de Windows PowerShell para la publicación en entornos de desarrollo y pruebas](vs-azure-tools-publishing-using-powershell-scripts.md).
 
-El archivo de configuración JSON especifica los detalles de lo que va a implementarse. Incluye la información que especificó cuando creó el proyecto, como el nombre, grupo de afinidad, imagen de VHD y el tamaño de la máquina virtual. También incluye los puntos de conexión en la máquina virtual, las bases de datos para aprovisionar, si procede y parámetros de implementación web. El código siguiente muestra un archivo de configuración de JSON de ejemplo:
+El archivo de configuración JSON especifica los detalles de lo que va a implementarse. Incluye la información que especificó cuando creó el proyecto, como el nombre, el grupo de afinidad, la imagen VHD y el tamaño de la máquina virtual. También incluye los extremos de la máquina virtual, las bases de datos para aprovisionar, si existen, y parámetros de implementación web. El código siguiente muestra un archivo de configuración de JSON de ejemplo:
 
 ```
 {
@@ -181,5 +181,4 @@ El archivo de configuración JSON especifica los detalles de lo que va a impleme
 }
 ```
 
-Puede editar el archivo de configuración JSON para cambiar lo que se aprovisiona. Se requiere una máquina virtual y un servicio en la nube, pero la sección de la base de datos es opcional.
-
+Puede editar el archivo de configuración de JSON para cambiar lo que se aprovisiona. Se necesitan una máquina virtual y un servicio en la nube, pero la sección de la base de datos es opcional.

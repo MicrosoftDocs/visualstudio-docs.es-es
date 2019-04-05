@@ -1,13 +1,8 @@
 ---
 title: Desplazarse por el código con el depurador | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -25,13 +20,13 @@ ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750579"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995038"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Desplazarse por el código con el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Familiarícese con los comandos y métodos abreviados para navegar por el códig
   
  La flecha verde también inicia el depurador (igual que **F5**).  
   
- ![DBG&#95;Fundamentos&#95;iniciar&#95;depuración](../debugger/media/dbg-basics-start-debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Fundamentos de&#95;inicio de&#95;depuración](../debugger/media/dbg-basics-start-debugging.png "DBG_Basics_Start_Debugging")  
   
  Incluyen otras formas de que puede iniciar la aplicación con el depurador adjunto **F11** ([ir a código](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([paso a través de código](#BKMK_Step_over_Step_out)), o mediante uso de **ejecutar hasta el Cursor**.  Vea las otras secciones de este tema para obtener información sobre lo que hacer estas opciones.  
   
@@ -111,7 +106,7 @@ Familiarícese con los comandos y métodos abreviados para navegar por el códig
   
 -   **Interrumpir el código manualmente**  
   
-     Para interrumpir en la siguiente línea de código disponible de una aplicación en ejecución, elija **Depurar**, **Interrumpir todos** (teclado: **Ctrl+Alt+Break**).  
+     Para interrumpir en la siguiente línea de código en una aplicación en ejecución disponible, elija **depurar**, **interrumpir todos** (teclado: **Ctrl + Alt + Inter**).  
   
      Si interrumpe el código mientras se está ejecutando sin los archivos de código fuente o de símbolos (archivos .pdb) correspondientes, el depurador mostrará una página con el mensaje **No se encontraron archivos de código fuente** o **No se encontraron símbolos** que le permitirá encontrar los archivos adecuados. Consulte [Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Si no puede obtener acceso a los archivos de compatibilidad, aún puede depurar las instrucciones de ensamblado en la ventana Desensamblado.  
   
@@ -134,7 +129,7 @@ Familiarícese con los comandos y métodos abreviados para navegar por el códig
 ##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Mueva el puntero para cambiar el flujo de ejecución  
  Cuando el depurador está pausado, puede mover el puntero de instrucción para establecer la siguiente instrucción de código que se ejecutará. Una flecha amarilla en el margen de una ventana de código fuente o de la ventana Desensamblado indica la ubicación de la siguiente instrucción que se debe ejecutar. Moviendo esta flecha, puede saltarse una parte del código o volver a una línea previamente ejecutada. Puede utilizar esto en situaciones como la omisión de una sección de código que contiene un error conocido.  
   
- ![Ejemplo2](../debugger/media/dbg-basics-example2.png "DBG_Basics_Example2")  
+ ![Example2](../debugger/media/dbg-basics-example2.png "DBG_Basics_Example2")  
   
  Para establecer la siguiente instrucción que se debe ejecutar, siga uno de estos procedimientos:  
   
@@ -191,8 +186,3 @@ Familiarícese con los comandos y métodos abreviados para navegar por el códig
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Ir a propiedades y operadores en código administrado  
  El depurador se salta las propiedades y los operadores en código administrado de forma predeterminada. En la mayoría de los casos, esto proporciona una mejor experiencia de depuración. Para habilitar la ejecución paso a paso en las propiedades o los operadores, elija **depurar** / **opciones**. En la página **Depuración** / **General** , desactive la casilla **Saltar propiedades y operadores (solo administrado)** .
-
-
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Inspección e inspección rápida Windows | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b171352475b6c0b3bc916d27ab4ba351e84be42b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6fa22e93a767df599815c87e5809faddb674854b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999028"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Ventanas Inspección e Inspección rápida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,7 +97,7 @@ static void Main(string[] args)
   
 5. Continúe la depuración.  
   
-   Debería ver los cambios en los valores de variable durante la iteración en el bucle `for`.  
+   Debería ver los cambios en los valores de variable durante la iteración en el bucle `for` .  
   
    Si está programando en código nativo, a veces puede ser necesario calificar el contexto de un nombre de variable o una expresión que contiene un nombre de variable. El contexto es la función, el archivo de código fuente y el módulo donde se encuentra una variable. Para ello, puede utilizar la sintaxis del operador de contexto. Para más información, vea Expresiones en C++.  
   
@@ -246,8 +241,3 @@ public class Program
   
 ## <a name="see-also"></a>Vea también  
  [Ventanas del depurador](../debugger/debugger-windows.md)
-
-
-
-
-
