@@ -1,14 +1,9 @@
 ---
 title: PublicSymbol | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: f8d33007-302d-4549-9dad-47fb33ea60b7
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 619fc9e855694ef129535772780680b74f67cdc9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8f36480dc8ddaac3d9977155f2b1a7741ebe3ba1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772734"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997065"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,8 +51,5 @@ Cuando se crea el archivo .exe, cada símbolos públicos (en un símbolo (funci�
   
 ## <a name="see-also"></a>Vea también  
  [Jerarquía léxica de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
- [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md)   
+ [Enumeración LocationType](../../debugger/debug-interface-access/locationtype.md)   
  [Ubicaciones de símbolos](../../debugger/debug-interface-access/symbol-locations.md)
-
-
-

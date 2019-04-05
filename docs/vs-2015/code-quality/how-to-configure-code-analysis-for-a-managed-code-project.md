@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: configurar el análisis de código para un proyecto de código administrado | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Configurar análisis de código para un proyecto de código administrado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
 helpviewer_keywords:
@@ -19,20 +14,20 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 98f3d14b73b0219d0fcec4312648bf613f37378e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239192"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998034"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Cómo: Configurar el análisis de código para un proyecto de código administrado
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Filtrar Configurar el análisis de código de un proyecto de código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] y [!INCLUDE[vsPro](../includes/vspro-md.md)], puede elegir entre una lista de análisis de código *conjuntos de reglas* para aplicar a un proyecto de código administrado. El conjunto de reglas predeterminado es Reglas mínimas recomendadas de Microsoft. Puede aplicar otro conjunto de reglas a un proyecto o a todos los proyectos de una solución.  
   
 > [!NOTE]
->  Para obtener información sobre cómo configurar un conjunto de reglas para aplicaciones Web ASP.NET, vea [Cómo: configurar el análisis de código para una aplicación Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
+>  Para obtener información sobre cómo configurar un conjunto de reglas para aplicaciones Web ASP.NET, vea [Cómo: Configurar el análisis de código para una aplicación Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Para configurar un conjunto de reglas para un proyecto de .NET Framework  
   
@@ -60,7 +55,4 @@ En [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../i
          Para obtener más información, consulte [crear conjuntos de reglas personalizadas](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Configurar y usar un conjunto de reglas personalizado](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
-
-
-
+ [Tutorial: Establecen configuración y el uso de una regla personalizada](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

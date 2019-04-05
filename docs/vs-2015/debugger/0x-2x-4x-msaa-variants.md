@@ -1,25 +1,20 @@
 ---
 title: 0 MSAA de x-4 x-2 (variantes) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8e661823a07945c22679832dc716ad2f25f4f6aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793781"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997613"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA (Variantes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ Reemplaza el suavizado de contorno de muestras múltiples (MSAA) en todos los ob
   
   Estas variantes también reemplazan la configuración de MSAA en todas las cadenas de intercambio utilizando `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` y `ID3D11CreateDeviceAndSwapChain`.  
   
-  El siguiente efecto de estos cambios es que todas las presentaciones se realizan en un objetivo de presentación de MSAA, pero si su aplicación utiliza uno de estos objetivos de presentación o búferes de cadena de intercambio como vista de recurso de sombreador o de acceso no ordenado, se realiza un muestreo de los datos a partir de la copia sin MSAA resuelta del objetivo de presentación.  
+  El siguiente efecto de estos cambios es que todas las presentaciones se realizan en un objetivo de presentación de MSAA, pero si su aplicación utiliza uno de estos objetivos de presentación o búferes de cadena de intercambio como vista de recursos del sombreador o de acceso desordenado, se realiza un muestreo de los datos a partir de la copia sin MSAA resuelta del objetivo de presentación.  
   
 ## <a name="restrictions-and-limitations"></a>Restricciones y limitaciones  
  En Direct3D 11, las texturas MSAA están más restringidas que las texturas sin MSAA. Por ejemplo, no puede llamar a `ID3D11DeviceContext::UpdateSubresource` en una textura MSAA y se produce un error en la llamada a `ID3D11DeviceContext::CopySubresourceRegion` si el recuento y la calidad de muestra del recurso y la destinación de origen no coinciden, lo que puede ocurrir cuando esta variante reemplaza la configuración de MSAA de un recurso pero no del otro.  
@@ -83,6 +78,3 @@ chain_description.SampleDesc.Quality = 0;
   
 // Call IDXGISwapChain::CreateSwapChain or D3D11CreateDeviceAndSwapChain, etc.  
 ```
-
-
-

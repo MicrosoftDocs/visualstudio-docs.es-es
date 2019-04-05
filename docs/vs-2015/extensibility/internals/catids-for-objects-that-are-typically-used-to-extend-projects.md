@@ -1,14 +1,9 @@
 ---
 title: CATID para los objetos que se suelen usar para ampliar proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, CATIDs
 - GUIDs, VSPackages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 57af657c888963dc9f33fc729678c0d8c82e0f0a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1cf5bd504bb5f7090dc07bea32e73333c0f182d0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798513"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997735"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID para los objetos que se usan normalmente para ampliar proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ En la tabla siguiente se enumera CATID que se utiliza para extender `Project` y 
   
 ## <a name="listing-of-catids"></a>Lista de CATID  
   
-|nombre|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProject>|{610D4614-D0D5-11D2-8599-006097C68E81}|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|  
@@ -39,7 +34,7 @@ En la tabla siguiente se enumera CATID que se utiliza para extender `Project` y 
 ## <a name="visual-basic-catids"></a>CATID de Visual Basic  
  En la tabla siguiente se enumera CATID que se utiliza para extender [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] examinar objetos. Todos se definen en VSLangProj.olb.  
   
-|nombre|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectBrowseObject>|{E0FDC879-C32A-4751-A3D3-0B3824BD575F}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectConfigBrowseObject>|{67F8DD11-14EB-489b-87F0-F01C52AF3870}|  
@@ -50,7 +45,7 @@ En la tabla siguiente se enumera CATID que se utiliza para extender `Project` y 
 ## <a name="visual-c-catids"></a>CATID de Visual C#  
  El CATID siguiente puede usarse para ampliar [!INCLUDE[csprcs](../../includes/csprcs-md.md)] examinar objetos. Todos se definen en VSLangProj.olb.  
   
-|nombre|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectBrowseObject>|{4EF9F003-DE95-4d60-96B0-212979F2A857}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectConfigBrowseObject>|{A12CE10A-227F-4963-ADB6-3A43388513CA}|  
@@ -61,7 +56,7 @@ En la tabla siguiente se enumera CATID que se utiliza para extender `Project` y 
 ## <a name="c-catids"></a>CATID de C++  
  La siguiente [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] CATID no se expone en las bibliotecas de tipos en el sistema de proyectos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 y debe incluirse en el código cada vez que desee ampliar estos objetos de proyecto. Estos CATID se incluirán en las bibliotecas de tipos en las versiones posteriores de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-|nombre|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |`CVCProjectNode`|{EE8299CB-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCFolderNode`|{EE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|  
@@ -77,7 +72,7 @@ const LPOLESTR CVCFileNode::s_wszCATID = L"{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683
   
  La siguiente [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] CATID no también se expone en las bibliotecas de tipos en el sistema de proyectos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 y debe incluirse en el código cada vez que desee ampliar estos objetos de proyecto. Estos CATID solo está disponibles en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 y no estará disponible en las versiones posteriores de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-|nombre|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |`CVCAssemblyReferenceNode` **:**|{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCProjectReferenceNode`|{593DCFCE-20A7-48e4-ACA1-49ADE9049887}|  
@@ -103,4 +98,3 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 ## <a name="see-also"></a>Vea también  
  [Adición de proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Registro de plantillas para proyectos y elementos](../../extensibility/internals/registering-project-and-item-templates.md)
-

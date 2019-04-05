@@ -1,22 +1,20 @@
 ---
 title: Consultar conjuntos de datos | Documentos de Microsoft
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890574"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995077"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +61,7 @@ Para buscar registros específicos de un conjunto de datos, utilice el método F
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
      [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
   
-## <a name="accessrelated-records"></a>Registros de Accessrelated  
+## <a name="access-related-records"></a>Acceso a registros relacionados  
  Cuando están relacionadas las tablas en un conjunto de datos, un <xref:System.Data.DataRelation> objeto puede disponer de los registros relacionados en otra tabla. Por ejemplo, un conjunto de datos que contiene `Customers` y `Orders` tablas pueden estar disponibles.  
   
  Puede usar un <xref:System.Data.DataRelation> objeto para buscar registros relacionados mediante una llamada a la <xref:System.Data.DataRow.GetChildRows%2A> método de un <xref:System.Data.DataRow> en la tabla primaria. Este método devuelve una matriz de registros secundarios relacionados. O bien puede llamar el <xref:System.Data.DataRow.GetParentRow%2A> método de un <xref:System.Data.DataRow> en la tabla secundaria. Este método devuelve un único <xref:System.Data.DataRow> de la tabla primaria.  
@@ -71,7 +69,7 @@ Para buscar registros específicos de un conjunto de datos, utilice el método F
  Esta página ofrece ejemplos de uso de conjuntos de datos con tipo. Para obtener información sobre la navegación por relaciones en conjuntos de datos sin tipo, vea [navegar por objetos DataRelation](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
->  Si está trabajando en una aplicación de Windows Forms y con las características de enlace de datos para mostrar los datos, el formulario generado por el diseñador puede proporcionar suficiente funcionalidad para la aplicación. Para obtener más información, consulte [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). En concreto, consulte[Cómo: mostrar datos relacionados en una aplicación de Windows Forms](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md) y [Tutorial: mostrar datos relacionados en un formulario Windows Forms](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md).  
+> Si está trabajando en una aplicación de Windows Forms y con las características de enlace de datos para mostrar los datos, el formulario generado por el diseñador puede proporcionar suficiente funcionalidad para la aplicación. Para obtener más información, consulte [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
  Ejemplos de código siguientes muestran cómo desplazarse arriba y abajo de las relaciones en conjuntos de datos con tipo. El uso de ejemplos de código escrito <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) y el generado `FindBy` *PrimaryKey* (`FindByCustomerID`) métodos para buscar una fila deseada y devolver los registros relacionados. Los ejemplos de compilación y ejecutan correctamente solo si tiene:  
   
@@ -81,7 +79,7 @@ Para buscar registros específicos de un conjunto de datos, utilice el método F
   
 - Una relación llamada `FK_Orders_Customers`relacionados con las dos tablas disponibles en el ámbito del código  
   
-  Además, ambas tablas deben rellenarse con datos de cualquier registro que se va a devolver.  
+Además, ambas tablas deben rellenarse con datos de cualquier registro que se va a devolver.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Para devolver los registros de un registro primario seleccionado  
   
@@ -96,4 +94,3 @@ Para buscar registros específicos de un conjunto de datos, utilice el método F
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]
-

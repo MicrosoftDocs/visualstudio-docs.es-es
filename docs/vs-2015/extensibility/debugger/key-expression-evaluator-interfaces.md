@@ -1,27 +1,22 @@
 ---
 title: La clave de las Interfaces de evaluador de expresiones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, interfaces
 ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 616b86ed8a4976ef55437dbe21c044df32b4767a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39dc13c1cc1960b0b5cad6c88b2617ea326e7875
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996512"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>Interfaces de evaluador de expresiones de clave
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,4 +60,3 @@ ms.locfileid: "51739929"
   
 ## <a name="see-also"></a>Vea también  
  [Contexto de evaluación](../../extensibility/debugger/evaluation-context.md)
-

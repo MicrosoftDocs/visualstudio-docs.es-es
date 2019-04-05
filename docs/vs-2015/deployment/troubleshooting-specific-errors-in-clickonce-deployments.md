@@ -1,14 +1,9 @@
 ---
 title: Solución de problemas de errores específicos en las implementaciones de ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: troubleshooting
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -24,13 +19,13 @@ ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d0b7e53eba21372641bad683c442e796648a4765
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213647"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994843"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Solucionar problemas de errores específicos de las implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Este tema enumeran los siguientes errores comunes que pueden producirse al imple
   
  También se deben establecer los tipos de contenido (también conocido como tipos MIME) adecuadamente para .application, .manifest y archivos. deploy. Para obtener más información, consulte la documentación del servidor Web.  
   
- Para obtener más información, vea "Windows Server 2003: tipos de contenido bloqueados" en [Server y problemas de configuración de cliente en implementaciones ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Para obtener más información, vea "Windows Server 2003: Bloqueado tipos de contenido" [Server y problemas de configuración de cliente en implementaciones ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Mensaje de error: "Aplicación de formato no es correcto;" Archivo de registro contiene "la firma XML es válido"  
  Asegúrese de que ha actualizado el archivo de manifiesto y se vuelve a estar firmada. Volver a publicar la aplicación mediante el uso de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o usar Mage para firmar la aplicación de nuevo.  
@@ -78,13 +73,13 @@ Este tema enumeran los siguientes errores comunes que pueden producirse al imple
   
 -   Pruebe a iniciar la aplicación de nuevo en el menú Inicio. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es posible que haya detectado la actualización en segundo plano, pero se le solicitará que instale los bits en la siguiente activación.  
   
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante la actualización se recibe un error que tiene la siguiente entrada del registro: "la referencia en la implementación no coincide con la identidad definida en el manifiesto de aplicación"  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante la actualización, recibirá un error que tiene la siguiente entrada del registro: "La referencia en la implementación no coincide con la identidad definida en el manifiesto de aplicación"  
  Este error puede producirse porque se han editado manualmente los manifiestos de aplicación e implementación y haber causado la descripción de la identidad de un ensamblado en un manifiesto para que dejen de estar sincronizados con las demás. La identidad de un ensamblado consta de su nombre, versión, referencia cultural y token de clave pública. Examine las descripciones de identidad en los manifiestos y corrija cualquier diferencia.  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Activación desde el disco local o CD-ROM de primera vez que se realiza correctamente, pero no se realiza correctamente la activación posterior desde el menú Inicio  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usa la dirección URL del proveedor de implementación para recibir las actualizaciones de la aplicación. Compruebe que la ubicación en la que apunta a la dirección URL es correcta.  
   
-#### <a name="error-cannot-start-the-application"></a>Error: "no se puede iniciar la aplicación"  
+#### <a name="error-cannot-start-the-application"></a>Error: "No se puede iniciar la aplicación"  
  Este mensaje de error suele indica que hay un problema al instalar esta aplicación en el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] almacenar. La aplicación tiene un error o el almacén está dañado. El archivo de registro puede indicarle que se produjo el error.  
   
  Debe hacer lo siguiente:  
@@ -113,7 +108,7 @@ Este tema enumeran los siguientes errores comunes que pueden producirse al imple
  Asegúrese de que tiene Microsoft Visual Studio Web Authoring componente instalado en la máquina que va a publicar en. Para los usuarios de Express, este componente no está instalado de forma predeterminada. Para obtener más información, vea [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensaje de error: No se pudo encontrar el archivo ' Microsoft.Windows.Common-controles, Version = 6.0.0.0, referencia cultural = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, tipo = win32'  
- Este mensaje de error aparece cuando se intenta publicar una aplicación WPF con estilos visuales habilitados. Para resolver este problema, consulte [Cómo: publicar una aplicación de WPF con estilos Visual habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
+ Este mensaje de error aparece cuando se intenta publicar una aplicación WPF con estilos visuales habilitados. Para resolver este problema, consulte [Cómo: Publicar una aplicación de WPF con estilos visuales habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
 ## <a name="using-mage"></a>Utilizar Mage  
   
@@ -147,6 +142,3 @@ Este tema enumeran los siguientes errores comunes que pueden producirse al imple
 ## <a name="see-also"></a>Vea también  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Solucionar problemas en implementaciones ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
-
-
-

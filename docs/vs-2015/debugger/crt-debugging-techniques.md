@@ -1,14 +1,9 @@
 ---
 title: Técnicas de depuración de CRT | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6745a31dcb7c37d12551248473b072d440116501
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a69defe75b80ef1f395931017dfc942398ca2710
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997203"
 ---
 # <a name="crt-debugging-techniques"></a>Técnicas de depuración de CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Si está depurando un programa que utiliza la biblioteca en tiempo de ejecución
  Describe las capacidades de depuración suministradas por la biblioteca en tiempo de ejecución de C y proporciona instrucciones para obtener acceso a las herramientas.  
   
  [Macros para los informes](../debugger/macros-for-reporting.md)  
- Proporciona información sobre la **_RPTn** y **_RPTFn** macros (definidas en CRTDBG. (H), que reemplaza el uso de `printf` instrucciones para la depuración.  
+ Proporciona información sobre las macros **_RPTn** y **_RPTFn** (definidas en CRTDBG.H), que reemplazan el uso de instrucciones `printf` para la depuración.  
   
  [Versiones de depuración de las funciones de asignación del montón](../debugger/debug-versions-of-heap-allocation-functions.md)  
  Analiza las versiones especiales de depuración de las funciones de asignación del montón: cómo asigna CRT las llamadas, las ventajas de llamarlas explícitamente, cómo evitar la conversión, el seguimiento de los tipos independientes de asignaciones en bloques cliente, y el resultado de no definir _DEBUG.  
@@ -63,6 +58,3 @@ Si está depurando un programa que utiliza la biblioteca en tiempo de ejecución
   
  [Seguridad del depurador](../debugger/debugger-security.md)  
  Proporciona recomendaciones para una depuración más segura.
-
-
-

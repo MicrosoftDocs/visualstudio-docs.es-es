@@ -1,26 +1,21 @@
 ---
-title: DisplayKind | Documentos de Microsoft
-ms.custom: ''
+title: DisplayKind | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: afe6f0d4a77b841a1c0d696bf90502df8cb0fee1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 10bed6b3398b93b0776876491d812ec36c9e9e04
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773670"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996622"
 ---
 # <a name="displaykind"></a>DisplayKind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -61,11 +56,10 @@ public enum enum_DisplayKind
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)
-

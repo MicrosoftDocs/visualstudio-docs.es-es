@@ -1,26 +1,21 @@
 ---
 title: Control de ejecución | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f4fe5259d49424fa1d46ea1ef33c0808dfc7b7be
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d3ce9f3fc810a1f2fd37166d4272b7c57c07927c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989147"
 ---
 # <a name="control-of-execution"></a>Control de ejecución
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,11 +41,11 @@ El motor de depuración (DE) normalmente envía a uno de los siguientes eventos 
   
 5. Si el usuario elige paso a paso, otra vez, o fuera de una función, el IDE le solicita la sesión de depuración para llamar al programa `Step` método y pásele la unidad de paso (instrucción, instrucción o línea) y el tipo de paso, es decir, si el paso a paso, más , o fuera de la función. Cuando se completa el paso, la DE envía un evento de finalización de paso a la sesión de depuración, que es un evento de detención.  
   
-    O bien  
+    -o bien-  
   
     Si el usuario decide seguir ejecutándose desde el puntero de instrucción actual, el IDE le solicita la sesión de depuración para llamar al programa **Execute** método. El programa reanuda la ejecución hasta que encuentra la siguiente condición de detención.  
   
-    O bien  
+    -o bien-  
   
     Si la sesión de depuración que se va a omitir un evento de detención determinada, llama a la sesión de depuración del programa **continuar** método. Si el programa se ejecución paso a paso en o a través o fuera de una función cuando se ha encontrado la condición de detención, continúa el paso.  
   
@@ -68,4 +63,3 @@ El motor de depuración (DE) normalmente envía a uno de los siguientes eventos 
   
 ## <a name="see-also"></a>Vea también  
  [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)
-

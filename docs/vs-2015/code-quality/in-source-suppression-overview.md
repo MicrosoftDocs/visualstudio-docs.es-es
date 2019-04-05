@@ -1,14 +1,9 @@
 ---
 title: En información general sobre supresiones de origen | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998392"
 ---
 # <a name="in-source-suppression-overview"></a>Información general sobre supresiones en código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Supresión en el código fuente es la capacidad para suprimir o pasar por alto i
  No debe utilizar supresiones en código fuente en las compilaciones de versión para evitar que los metadatos de supresión en el origen de trasvase de registros por accidente. Debido al costo de procesamiento de supresión en el código fuente, también puede disminuir el rendimiento de la aplicación mediante la inclusión de los metadatos de supresión en el código fuente.  
   
 > [!NOTE]
->  No tiene a mano código estos atributos por sí mismo. Para obtener más información, consulte [Cómo: Suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). El elemento de menú no está disponible para código C++.  
+>  No tiene a mano código estos atributos por sí mismo. Para obtener más información, vea [Cómo: Suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). El elemento de menú no está disponible para código C++.  
   
 ## <a name="suppressmessage-attribute"></a>Atributo SuppressMessage  
  Cuando haga clic en una advertencia de análisis de código en el **lista de errores** y, a continuación, haga clic en **Suprimir mensajes**, un **SuppressMessage** se agrega un atributo en el código o en el archivo de supresiones globales del proyecto.  
@@ -126,10 +121,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 >  Destino siempre contiene el nombre del elemento completo.  
   
 ## <a name="global-suppression-file"></a>Archivo de supresión global  
- El archivo de supresión global mantiene supresiones de nivel global o supresiones que no especifican un destino. Por ejemplo, las supresiones de las infracciones de nivel de ensamblado se almacenan en este archivo. Además, algunas supresiones de ASP.NET se almacenan en este archivo porque la configuración del nivel de proyecto no está disponibles para el código detrás de un formulario. Se crea y se agrega al proyecto la primera vez que seleccione una supresión global la **en el archivo de supresión del proyecto** opción de la **Suprimir mensajes** comando en la ventana Lista de errores. Para obtener más información, consulte [Cómo: Suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
+ El archivo de supresión global mantiene supresiones de nivel global o supresiones que no especifican un destino. Por ejemplo, las supresiones de las infracciones de nivel de ensamblado se almacenan en este archivo. Además, algunas supresiones de ASP.NET se almacenan en este archivo porque la configuración del nivel de proyecto no está disponibles para el código detrás de un formulario. Se crea y se agrega al proyecto la primera vez que seleccione una supresión global la **en el archivo de supresión del proyecto** opción de la **Suprimir mensajes** comando en la ventana Lista de errores. Para obtener más información, vea [Cómo: Suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Diagnostics.CodeAnalysis>
-
-
-

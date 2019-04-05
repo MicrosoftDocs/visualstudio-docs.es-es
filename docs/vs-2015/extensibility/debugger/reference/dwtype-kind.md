@@ -1,14 +1,9 @@
 ---
-title: dwTYPE_KIND | Documentos de Microsoft
-ms.custom: ''
+title: dwTYPE_KIND | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - dwTYPE_KIND
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62f4f404838a3d22dfd25a8c9846257930a45118
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f37fb773a07291a883f5cb65e4cb4ac840a87a14
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794834"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58996747"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ public enum enum_dwTYPE_KIND {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -76,4 +71,3 @@ public enum enum_dwTYPE_KIND {
  [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)   
  [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)   
  [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)
-

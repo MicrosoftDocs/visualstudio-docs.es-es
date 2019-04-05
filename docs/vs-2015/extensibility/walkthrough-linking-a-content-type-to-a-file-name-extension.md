@@ -1,28 +1,23 @@
 ---
-title: 'Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f543992ba23e08be25d5c8206d2b5b0565d33948
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739875"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997747"
 ---
-# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Tutorial: Vinculación de un tipo de contenido con una extensión de nombre de archivo
+# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Tutorial: Vincular un tipo de contenido con una extensión de nombre de archivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede definir su propio tipo de contenido y una extensión de nombre de archivo un vínculo a él mediante el uso de extensiones de editor de Managed Extensibility Framework (MEF). En algunos casos, la extensión de nombre de archivo ya está definida por un servicio de lenguaje; No obstante, para usarlo con MEF que todavía debe vincularlo a un tipo de contenido.  
@@ -97,7 +92,7 @@ Puede definir su propio tipo de contenido y una extensión de nombre de archivo 
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>Agregar el tipo de contenido a una exportación de Editor  
   
-1.  Crear una extensión del editor. Por ejemplo, puede usar la extensión de glifo de margen que se describe en [Tutorial: creación de un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Crear una extensión del editor. Por ejemplo, puede usar la extensión de glifo de margen que se describe en [Tutorial: Creación de un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Agregue la clase definida en este procedimiento.  
   
@@ -110,4 +105,3 @@ Puede definir su propio tipo de contenido y una extensión de nombre de archivo 
   
 ## <a name="see-also"></a>Vea también  
  [Servicio de lenguaje y puntos de extensión del editor](../extensibility/language-service-and-editor-extension-points.md)
-

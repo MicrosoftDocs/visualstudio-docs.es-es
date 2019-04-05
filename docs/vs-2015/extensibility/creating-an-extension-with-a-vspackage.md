@@ -1,24 +1,19 @@
 ---
 title: Creación de una extensión con un VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 945ae5b3cf6cd8769795c31a10a4f51e1f7eccb6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0077c891a300d81f05aec32930cb1ffda82c8d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995538"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Creación de una extensión con un VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ En este tutorial se muestra cómo crear un proyecto de VSIX y agregar un element
     public sealed class FirstPackage : Package  
     ```  
   
-2.  Vamos a agregar un mensaje que nos permite saber que ha cargado el VSPackage. Método Initialize() de VSPackage se usa para hacer esto, ya que puede obtener los servicios de Visual Studio después de que se ha ubicado el VSPackage. (Para obtener más información sobre cómo obtener los servicios, consulte [Cómo: obtener un servicio](../extensibility/how-to-get-a-service.md).) Reemplace el método Initialize() del FirstPackage con el código que obtiene el <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> de servicio, obtiene el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaz y llama a su <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> método.  
+2.  Vamos a agregar un mensaje que nos permite saber que ha cargado el VSPackage. Método Initialize() de VSPackage se usa para hacer esto, ya que puede obtener los servicios de Visual Studio después de que se ha ubicado el VSPackage. (Para obtener más información sobre cómo obtener los servicios, vea [Cómo: Obtener un servicio](../extensibility/how-to-get-a-service.md).) Reemplace el método Initialize() del FirstPackage con el código que obtiene el <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> de servicio, obtiene el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaz y llama a su <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> método.  
   
     ```csharp  
     protected override void Initialize()  
@@ -81,4 +76,3 @@ En este tutorial se muestra cómo crear un proyecto de VSIX y agregar un element
 3.  Compile la solución y comience la depuración. Aparece la instancia experimental.  
   
 4.  Abra una solución en la instancia experimental. Debería ver un cuadro de mensaje que dice **primer paquete dentro de Initialize()**.
-
