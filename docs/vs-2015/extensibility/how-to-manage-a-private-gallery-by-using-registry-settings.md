@@ -1,29 +1,24 @@
 ---
-title: 'Cómo: administrar una galería privada mediante la configuración del registro | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Administrar una galería privada mediante la configuración del registro | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fea42e1e59907c08d0a7e51a56875c1b73537
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a55b7aa486edfd3775b12dca9d143c2e5f280884
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744455"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58999817"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Cómo: administrar una galería privada mediante la configuración del registro
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Filtrar Administrar una galería privada mediante la configuración del Registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si es un administrador o el desarrollador de una extensión de Shell aislado, puede controlar el acceso a los controles, plantillas y herramientas en la Galería de Visual Studio, la Galería de ejemplos o galerías privadas. Para hacer una galería disponibles o no, cree un archivo .pkgdef que describe las claves del registro modificada y sus valores.  
@@ -76,4 +71,3 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ## <a name="see-also"></a>Vea también  
  [Galerías privadas](../extensibility/private-galleries.md)
-

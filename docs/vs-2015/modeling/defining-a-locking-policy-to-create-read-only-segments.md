@@ -1,23 +1,20 @@
 ---
 title: Definir una directiva de bloqueo para crear segmentos de solo lectura | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa549c71-2bf6-4b08-b7b2-7756dd6f1dc8
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893837"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995336"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,11 +81,11 @@ partition.SetLocks(Locks.Delete);
 |-----------|------------------------------------------|  
 |Ninguna|Sin restricción.|  
 |Property|No se puede cambiar las propiedades de dominio de elementos. Esto no es aplicable a las propiedades que se generan mediante la función de una clase de dominio en una relación.|  
-|Add|No se puede crear nuevos elementos y vínculos en una partición o almacenar.<br /><br /> No se aplica a `ModelElement`.|  
+|Agregar|No se puede crear nuevos elementos y vínculos en una partición o almacenar.<br /><br /> No se aplica a `ModelElement`.|  
 |Mover|Elemento no puede moverse entre las particiones si `element.IsLocked(Move)` es true, o si `targetPartition.IsLocked(Move)` es true.|  
 |Eliminar|No se puede eliminar un elemento si este bloqueo se establece en el propio elemento, o en cualquiera de los elementos a la que podría propagar la eliminación, como las formas y elementos incrustados.<br /><br /> Puede usar `element.CanDelete()` para detectar si se puede eliminar un elemento.|  
 |Volver a ordenar|No se puede cambiar el orden de vínculos en un encargado de rol.|  
-|Encargado de rol|No se puede cambiar el conjunto de vínculos que se obtienen en este elemento. Por ejemplo, no se puede incrustar elementos nuevos en este elemento. Esto no afecta a los vínculos para que este elemento es el destino.<br /><br /> Si este elemento es un vínculo, su origen y destino no se ven afectados.|  
+|RolePlayer|No se puede cambiar el conjunto de vínculos que se obtienen en este elemento. Por ejemplo, no se puede incrustar elementos nuevos en este elemento. Esto no afecta a los vínculos para que este elemento es el destino.<br /><br /> Si este elemento es un vínculo, su origen y destino no se ven afectados.|  
 |Todas|Operación OR bit a bit de los demás valores.|  
   
 ## <a name="locking-policies"></a>Directivas de bloqueos  
@@ -193,6 +190,3 @@ namespace Company.YourDsl.DslPackage // Change
     }  
 }  
 ```
-
-
-

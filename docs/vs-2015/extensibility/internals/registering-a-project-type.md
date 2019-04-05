@@ -1,14 +1,9 @@
 ---
 title: Registrar un tipo de proyecto | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785331"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995551"
 ---
 # <a name="registering-a-project-type"></a>Registro de un tipo de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    @="devenv.exe \"%1\""  
 ```  
   
-|nombre|Tipo|Datos|Descripción|  
+|Name|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrjFile`|Nombre y descripción de los archivos de tipo de proyecto que tienen la extensión .figp.|  
 |`Content Type`|REG_SZ|`Text/plain`|Tipo de contenido para los archivos del proyecto.|  
@@ -86,7 +81,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
-|nombre|Tipo|Datos|Descripción|  
+|Name|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@` (Valor predeterminado)|REG_SZ|`FigPrj Project VSPackage`|Nombre localizable del esto había registrado VSPackage (tipo de proyecto).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Ruta de acceso del tipo de proyecto DLL. El IDE carga este archivo DLL y pasa el CLSID VSPackage para `DllGetClassObject` obtener <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> para construir el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> objeto.|  
@@ -137,7 +132,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "SortPriority"=dword:00000064  
 ```  
   
-|nombre|Tipo|Datos|Descripción|  
+|Name|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrj Project`|Nombre predeterminado de los proyectos de este tipo.|  
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Id. de recurso del nombre que deben recuperarse de la DLL satélite registrados en los paquetes.|  
@@ -177,7 +172,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|nombre|Tipo|Datos|Descripción|  
+|Name|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|Identificador de recurso para las plantillas de proyecto nuevo.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Ruta de acceso para los proyectos del tipo de proyecto registrados de forma predeterminada.|  
@@ -198,7 +193,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "SortPriority"=dword:00000064  
 ```  
   
-|nombre|Tipo|Datos|Descripción|  
+|Name|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|Ninguna|Valor predeterminado que indica que las entradas siguientes son para las entradas de los proyectos de archivos varios.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valor de identificador de recurso para los archivos de plantilla de agregar nuevos elementos.|  
@@ -227,9 +222,9 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
   
   El último campo identifica el número de versión para el recurso CTMENU. Puede combinar el menú nuevo, cambie el número de versión.  
   
-|nombre|Tipo|Datos|Descripción|  
+|Name|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
-|% CLSID_Package %|REG_SZ|`,1000,1`|El recurso para recuperar la información de menú.|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|El recurso para recuperar la información de menú.|  
   
  Los siguientes ejemplos se encuentran en el registro bajo la clave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].  
   
@@ -241,7 +236,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|nombre|Tipo|Datos|Descripción|  
+|Name|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Valor de identificador de recurso para las plantillas de proyecto nuevo proyecto de figuras.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Ruta de acceso predeterminada del directorio de los proyectos nuevos. Los elementos de este directorio se mostrará en el **Asistente para nuevo proyecto** cuadro de diálogo.|  
@@ -256,7 +251,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "UseInterface"=dword:00000001  
 ```  
   
-|nombre|Tipo|Datos|Descripción|  
+|Name|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`Package`|REG_SZ|`%CLSID_Package%`|Id. de clase de VSPackage registrado.|  
 |`UseInterface`|REG_DWORD|`1`|1 indica que se utilizará la interfaz de usuario para interactuar con este proyecto. 0 indica que no hay ninguna interfaz de la interfaz de usuario.|  
@@ -275,4 +270,3 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
  [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md)   
  [Creación de instancias de proyecto mediante generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

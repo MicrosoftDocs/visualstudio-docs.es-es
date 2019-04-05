@@ -1,11 +1,8 @@
 ---
-title: 'Cómo: crear una condición de regla declarativa (heredado) | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear una condición de regla declarativa (heredado) | Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - declarative rule conditions
@@ -15,15 +12,15 @@ ms.assetid: 804b6129-c433-408f-a424-46987967730c
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 2508404840db81f03ba4865a3e5d5af91e5c653b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ba2db8f1accafab1bdb20eacab73b2a963391075
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187417"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987560"
 ---
-# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Cómo: Crear una condición de regla declarativa (Heredado)
+# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Filtrar Crear una condición de regla declarativa (heredado)
 En este tema se describe cómo declarar una condición de regla usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado que tiene como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Una declaración de condición se evalúa como **True** o **False**. Una condición de regla declarativa es una instrucción de condición que se crea mediante la [cuadro de diálogo de Editor de condición de regla (heredado)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) y almacenados como XML con el flujo de trabajo. Puede incluir predicados que comparan el estado del flujo de trabajo y álgebra booleana que combina varios predicados.  

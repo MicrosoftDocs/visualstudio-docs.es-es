@@ -1,27 +1,22 @@
 ---
 title: Análisis de fotogramas de gráficos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 59cd0006f375335d9cf3e714689bead6615b395d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996501"
 ---
 # <a name="graphics-frame-analysis"></a>Análisis de fotograma de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +42,14 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
   Para ver una demostración de lo que puede hacer el análisis de fotogramas de la aplicación, puede ver el [análisis de fotogramas de gráficos de Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vídeo de Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Uso de Análisis de fotogramas  
- Antes de usar el Análisis de fotogramas, debe capturar la información de gráficos de su aplicación mientras se ejecuta, al igual que haría al usar cualquiera de las demás herramientas del Analizador de gráficos. A continuación, en la ventana de documento (.vsglog) del registro de gráficos, elija el **análisis de fotogramas** ficha.  
+ Antes de usar el Análisis de fotogramas, debe capturar la información de gráficos de su aplicación mientras se ejecuta, al igual que haría al usar cualquiera de las demás herramientas del Analizador de gráficos. Luego, en la ventana del documento de registro de gráficos (.vsglog), seleccione la pestaña **Análisis de fotogramas**.  
   
  ![Seleccione la pestaña análisis de fotogramas.](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab")  
   
  Al completarse el análisis, se muestran los resultados. La parte superior de la pestaña de análisis de fotogramas muestra la escala de tiempo y la tabla de resumen. La parte inferior muestra las tablas de detalles. Si se generan errores o advertencias durante la reproducción, se resumen encima de la escala de tiempo. Desde allí, puede seguir los vínculos para obtener más información sobre los errores y las advertencias.  
   
 ### <a name="interpreting-results"></a>Interpretación de los resultados  
- Al interpretar los resultados de cada variante, puede deducir información útil sobre el rendimiento de la representación y el comportamiento de la aplicación. Para obtener más información sobre variantes de interpretación, vea [variantes](#Variants) más adelante en este artículo.  
+ Al interpretar los resultados de cada variante, puede deducir información útil sobre el rendimiento de la representación y el comportamiento de la aplicación. Para obtener más información sobre variantes de interpretación, vea [Variantes](#Variants) más adelante en este artículo.  
   
  Algunos resultados indican directamente cómo la variante afecta al rendimiento de la representación:  
   
@@ -74,7 +69,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
   
 - Si la variante Half/Quarter Texture Dimensions muestra un aumento significativo del rendimiento, es probable que las texturas ocupen demasiada memoria, consuman demasiado ancho de banda o utilicen la caché de texturas de forma ineficaz. Si esta variante no muestra cambios en el rendimiento, es probable que pueda usar texturas más grandes y detalladas sin que ello perjudique al rendimiento.  
   
-  Si hay disponibles contadores de hardware, puede usarlos para recopilar información muy detallada sobre por qué el rendimiento de la representación de la aplicación puede verse afectado. Todos los dispositivos de nivel de características 9.2 y superiores admiten las consultas de oclusión de profundidad (**píxeles ocluidos** contador) y las marcas de tiempo. Puede que estén disponibles otros contadores de hardware, en función de si el fabricante de la GPU implementó los contadores de hardware y los expuso en el controlador. Puede usar estos contadores para confirmar la causa precisa de los resultados que se muestran en la tabla de resumen, por ejemplo, puede determinar si el sobredibujo es un factor examinando el porcentaje de píxeles que se ocluyeron en la prueba de profundidad.  
+  Si hay disponibles contadores de hardware, puede usarlos para recopilar información muy detallada sobre por qué el rendimiento de la representación de la aplicación puede verse afectado. Todos los dispositivos de nivel de características 9.2 y superiores admiten las consultas de oclusión de profundidad (contador de **píxeles ocluidos**) y las marcas de tiempo. Puede que estén disponibles otros contadores de hardware, en función de si el fabricante de la GPU implementó los contadores de hardware y los expuso en el controlador. Puede usar estos contadores para confirmar la causa precisa de los resultados que se muestran en la tabla de resumen, por ejemplo, puede determinar si el sobredibujo es un factor examinando el porcentaje de píxeles que se ocluyeron en la prueba de profundidad.  
   
 ### <a name="timeline-and-summary-table"></a>Escala de tiempo y Tabla de resumen  
  De manera predeterminada, la Escala de tiempo y la Tabla de resumen se muestran, pero las otras secciones están contraídas.  
@@ -108,7 +103,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
  Para determinar la importancia estadística, análisis de fotogramas usa la [prueba t de Student](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   
 ### <a name="details-table"></a>Tabla de detalles  
- Debajo de la Tabla de resumen está la Tabla de detalles, que está contraída de manera predeterminada. El contenido de la Tabla de detalles depende de la plataforma de hardware de la máquina de reproducción. Para obtener información sobre las plataformas de hardware compatibles, consulte [compatibilidad de Hardware](#HardwareSupport).  
+ Debajo de la Tabla de resumen está la Tabla de detalles, que está contraída de manera predeterminada. El contenido de la Tabla de detalles depende de la plataforma de hardware de la máquina de reproducción. Para obtener información sobre las plataformas de hardware admitidas, vea [Compatibilidad de hardware](#HardwareSupport).  
   
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plataformas que no admiten contadores de hardware  
  La mayoría de plataformas no admiten completamente contadores GPU de hardware, entre los que se incluyen todas las GPU ofrecidas actualmente por Intel, AMD y nVidia. Cuando no se pueden recopilar contadores de hardware, solo se muestra la Tabla de detalles, que contiene el control de tiempo absoluto promedio de todas las variantes.  
@@ -128,7 +123,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 ### <a name="marker-regions-and-events"></a>Regiones de marcadores y eventos  
  El Análisis de fotogramas admite marcadores y grupos de eventos definidos por el usuario. Se muestran en la tabla de resumen y en las tablas de detalles.  
   
- Puede usar las API ID3DUserDefinedAnnotation o la familia de API D3DPERF_ heredada para crear marcadores y grupos. Al usar la familia de API D3DPERF_, puede asignar a cada marcador y grupo un color que el Análisis de fotogramas muestra como una banda coloreada en las filas que contienen el marcador de evento o los marcadores de inicio/fin de grupo de evento y sus contenidos. Esta función le puede ayudar a identificar rápidamente eventos de representación o grupos de eventos importantes.  
+ Puede usar las API ID3DUserDefinedAnnotation o la familia de API D3DPERF_ heredada para crear marcadores y grupos. Al usar la familia de API D3DPERF_, puede asignar a cada marcador y grupo un color que el Análisis de fotogramas muestra como una banda coloreada en las filas que contienen el marcador de evento o los marcadores de inicio/fin de grupo de evento y sus contenidos. Esta característica le puede ayudar a identificar rápidamente eventos de representación o grupos de eventos importantes.  
   
 ### <a name="warnings-and-errors"></a>Advertencias y errores  
  En ocasiones, el análisis de fotogramas finaliza con advertencias o errores, que se resumen encima de la escala de tiempo y se detallan al final de la pestaña Análisis de fotogramas.  
@@ -188,25 +183,22 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 >  Esto se aplica solo a las llamadas de la API Direct3D que utilice, no a los niveles de características. Mientras utilice la API Direct3D 11, Direct3D 11.1 o Direct3D 11.2, puede usar el nivel de características que quiera y el Análisis de fotogramas funcionará.  
   
 ##  <a name="Variants"></a> Variantes  
- Cada cambio que realiza el análisis de fotogramas en la forma en que se representa un fotograma durante la reproducción se conoce como un *variante*. Las variantes que el Análisis de fotogramas examina corresponden a cambios comunes relativamente fáciles que puede realizar para mejorar el rendimiento de la representación o la calidad visual de la aplicación, por ejemplo, reducir el tamaño de las texturas, usar compresión de textura o permitir diferentes tipos de suavizado de contorno. Las variantes reemplazan el contexto de representación y los parámetros habituales de la aplicación. A continuación, se muestra un resumen:  
+ Cada cambio que el Análisis de fotogramas realiza en la manera en que se representa un fotograma durante la reproducción se conoce como *variante*. Las variantes que el Análisis de fotogramas examina corresponden a cambios comunes relativamente fáciles que puede realizar para mejorar el rendimiento de la representación o la calidad visual de la aplicación, por ejemplo, reducir el tamaño de las texturas, usar compresión de textura o permitir diferentes tipos de suavizado de contorno. Las variantes reemplazan el contexto de representación y los parámetros habituales de la aplicación. A continuación, se muestra un resumen:  
   
 |Variante|Descripción|  
 |-------------|-----------------|  
-|**Tamaño de la ventanilla 1 x 1**|Reduce las dimensiones de la ventanilla de todos los objetivos de presentación a 1x1 píxeles.<br /><br /> Para obtener más información, consulte [variante de tamaño de ventanilla 1 x 1](../debugger/1x1-viewport-size-variant.md)|  
-|**0 x MSAA**|Deshabilita el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, consulte [x 0 / 2 x / 4 x MSAA variantes](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**2 x MSAA**|Habilita dos veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, consulte [x 0 / 2 x / 4 x MSAA variantes](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**4 x MSAA**|Habilita cuatro veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, consulte [x 0 / 2 x / 4 x MSAA variantes](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**Filtrado de textura de punto**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtro de textura de punto) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y anisotrópico variantes de filtrado de textura](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrado bilineal de textura**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtro de textura bilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y anisotrópico variantes de filtrado de textura](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrado trilineal de textura**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtro de textura trilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y anisotrópico variantes de filtrado de textura](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrado anisotrópico de textura**|Establece el modo de filtrado `DXD11_FILTER_ANISOTROPIC` y `MaxAnisotropy` a `16` (16 x filtrado anisotrópico de textura) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y anisotrópico variantes de filtrado de textura](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Formato de destino de representación de 16 BPP**|Establece el formato de píxeles en `DXGI_FORMAT_B5G6R5_UNORM` (16 bpp, formato 565) para todos los objetivos de representación y superficies del búfer.<br /><br /> Para obtener más información, consulte [representar 16 BPP variante de formato de destino](../debugger/16bpp-render-target-format-variant.md)|  
-|**Generación de asignación de MIP**|Habilita la asignación de MIP en todas las texturas que no son objetivos de representación.<br /><br /> Para obtener más información, consulte [variante de generación Mip-map](../debugger/mip-map-generation-variant.md).|  
-|**Dimensiones de textura mitad**|Reduce las dimensiones de la textura en todas las texturas que no son objetivos de representación a la mitad del tamaño original de cada dimensión. Por ejemplo, una textura de 256x128 se reduce a 128x64 elementos de textura.<br /><br /> Para obtener más información, consulte [variante de dimensiones Half/Quarter Texture](../debugger/half-quarter-texture-dimensions-variant.md).|  
-|**Dimensiones de textura trimestre**|Reduce las dimensiones de la textura en todas las texturas que no son objetivos de representación a un cuarto del tamaño original de cada dimensión. Por ejemplo, una textura de 256x128 se reduce a 64x32 elementos de textura.<br /><br /> Para obtener más información, consulte [variante de dimensiones Half/Quarter Texture](../debugger/half-quarter-texture-dimensions-variant.md).|  
-|**Compresión de textura BC**|Habilita la compresión de bloque en todas las texturas que tengan una variante de formato de píxel de B8G8R8X8, B8G8R8A8 o R8G8B8A8. Las variantes de formato B8G8R8X8 se comprimen mediante BC1; las variantes de formato B8G8R8A8 y R8G8B8A8 se comprimen mediante BC3.<br /><br /> Para obtener más información, consulte [variante BC Texture Compression](../debugger/bc-texture-compression-variant.md).|  
+|**Tamaño de ventanilla 1x1**|Reduce las dimensiones de la ventanilla de todos los objetivos de representación a 1x1 píxeles.<br /><br /> Para más información, vea [1x1 Viewport Size Variant](../debugger/1x1-viewport-size-variant.md) (Variante de tamaño de ventanilla 1x1).|  
+|**0x MSAA**|Deshabilita el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para más información, vea [0x/2x/4x MSAA Variants](../debugger/0x-2x-4x-msaa-variants.md) (Variantes de MSAA 0x/2x/4x).|  
+|**2x MSAA**|Habilita dos veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para más información, vea [0x/2x/4x MSAA Variants](../debugger/0x-2x-4x-msaa-variants.md) (Variantes de MSAA 0x/2x/4x).|  
+|**4x MSAA**|Habilita cuatro veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para más información, vea [0x/2x/4x MSAA Variants](../debugger/0x-2x-4x-msaa-variants.md) (Variantes de MSAA 0x/2x/4x).|  
+|**Filtro de textura de punto**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtro de textura de punto) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y anisotrópico variantes de filtrado de textura](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtro de textura bilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtro de textura bilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y anisotrópico variantes de filtrado de textura](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtro de textura trilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtro de textura trilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y anisotrópico variantes de filtrado de textura](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtro de textura anisotrópico**|Establece el modo de filtro en `DXD11_FILTER_ANISOTROPIC` y `MaxAnisotropy` en `16` (16 veces el filtro de textura anisotrópico) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y anisotrópico variantes de filtrado de textura](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Formato de destino de presentación 16bpp**|Establece el formato de píxeles en `DXGI_FORMAT_B5G6R5_UNORM` (16 bpp, formato 565) para todos los objetivos de representación y superficies del búfer.<br /><br /> Para obtener más información, vea [16bpp Render Target Format Variant](../debugger/16bpp-render-target-format-variant.md) (Variante de formato de destino de representación 16bpp).|  
+|**Generación de asignación de MIP**|Habilita la asignación de MIP en todas las texturas que no son objetivos de representación.<br /><br /> Para obtener más información, vea [Mip-map Generation Variant](../debugger/mip-map-generation-variant.md) (Variante Generación de asignación de MIP).|  
+|**Dimensiones de textura media**|Reduce las dimensiones de la textura en todas las texturas que no son objetivos de representación a la mitad del tamaño original de cada dimensión. Por ejemplo, una textura de 256x128 se reduce a 128x64 elementos de textura.<br /><br /> Para obtener más información, vea [Half/Quarter Texture Dimensions Variant](../debugger/half-quarter-texture-dimensions-variant.md) (Variante de dimensiones de textura media o un cuarto).|  
+|**Dimensiones de textura un cuarto**|Reduce las dimensiones de la textura en todas las texturas que no son objetivos de representación a un cuarto del tamaño original de cada dimensión. Por ejemplo, una textura de 256x128 se reduce a 64x32 elementos de textura.<br /><br /> Para obtener más información, vea [Half/Quarter Texture Dimensions Variant](../debugger/half-quarter-texture-dimensions-variant.md) (Variante de dimensiones de textura media o un cuarto).|  
+|**Compresión de textura BC**|Habilita la compresión de bloque en todas las texturas que tengan una variante de formato de píxel de B8G8R8X8, B8G8R8A8 o R8G8B8A8. Las variantes de formato B8G8R8X8 se comprimen mediante BC1; las variantes de formato B8G8R8A8 y R8G8B8A8 se comprimen mediante BC3.<br /><br /> Para obtener más información, vea [BC Texture Compression Variant](../debugger/bc-texture-compression-variant.md) (Variante de compresión de textura BC).|  
   
- El resultado de la mayoría de las variantes es prescriptivo: “reducir el tamaño de la textura a la mitad es un 25 por ciento más rápido” o “habilitar dos veces la MSAA es solo un 2 por ciento más lento”. Otras variantes pueden requerir más interpretación, por ejemplo, si la variante que cambia las dimensiones de la ventanilla a 1x1 muestra un gran aumento del rendimiento, puede indicar que la representación tiene un cuello de botella por una tasa de relleno de texturas baja; si no hay un cambio importante en el rendimiento, puede indicar que la representación tiene un cuello de botella por un procesamiento de vértice.
-
-
-
+ El resultado de la mayoría de las variantes es descriptivo: "reducir el tamaño de la textura a la mitad es un 25 por ciento más rápido" o "habilitar dos veces el MSAA es solo un 2 por ciento más lento". Otras variantes pueden requerir más interpretación, por ejemplo, si la variante que cambia las dimensiones de la ventanilla a 1x1 muestra un gran aumento del rendimiento, puede indicar que la representación tiene un cuello de botella por una tasa de relleno de texturas baja; si no hay un cambio importante en el rendimiento, puede indicar que la representación tiene un cuello de botella por un procesamiento de vértice.
