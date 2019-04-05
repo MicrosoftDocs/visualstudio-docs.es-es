@@ -1,27 +1,22 @@
 ---
 title: Registrar controladores de comandos de ensamblado de interoperabilidad | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a087b5952b930145cd9f620a0eebeeee5d947149
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5d768a8024755fcee10413495c48da9e20456751
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778597"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998804"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registro de controladores de comandos de ensamblado de interoperabilidad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Debe registrar un VSPackage con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 
   
  Managed Package Framework (MPF) proporciona esta funcionalidad a través de la <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> clase.  
   
- [Referencia de formato de tabla del comando](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) los recursos se encuentran en archivos DLL de interfaz de usuario de satélite no administrado.  
+ [Referencia de formato de tabla del comando](http://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) los recursos se encuentran en archivos DLL de interfaz de usuario de satélite no administrado.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Registro del controlador de comando de un paquete VSPackage  
  Un VSPackage que actúa como un controlador para la interfaz de usuario (UI)-en función de comandos requiere una entrada del registro con el nombre del VSPackage `GUID`. Esta entrada del registro especifica la ubicación del archivo de recursos de la interfaz de usuario de VSPackage y el recurso de menú dentro de ese archivo. La entrada del registro en sí se encuentra en HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<versión >* \Menus, donde  *\<versión >* es la versión de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], por ejemplo 9.0.  
@@ -76,4 +71,3 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
 ## <a name="see-also"></a>Vea también  
  [Cómo VSPackages agregar elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Comandos y menús que utilizan ensamblados de interoperabilidad](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
-

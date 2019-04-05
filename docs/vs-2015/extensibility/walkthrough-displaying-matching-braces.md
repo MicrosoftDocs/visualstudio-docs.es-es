@@ -1,28 +1,23 @@
 ---
-title: 'Tutorial: Mostrar las llaves coincidentes | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Mostrar las llaves coincidentes | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745886"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998662"
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>Tutorial: Visualización de llaves coincidentes
+# <a name="walkthrough-displaying-matching-braces"></a>Tutorial: Mostrar llaves que coincidan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede implementar características basadas en lenguaje como definiendo las llaves que desee hacer coincidir y, a continuación, agregar una etiqueta de marcador de texto a las llaves coincidentes cuando el símbolo de intercalación está en una de las llaves la coincidencia de llaves. Puede definir las llaves en el contexto de un lenguaje, o puede definir su propio tipo de contenido y la extensión de nombre de archivo y aplicar las etiquetas a sólo ese tipo, o puede aplicar las etiquetas a un tipo de contenido existente (por ejemplo, "text"). El siguiente tutorial muestra cómo aplicar etiquetas para el tipo de contenido "text" la coincidencia de llaves.  
@@ -130,5 +125,4 @@ Puede implementar características basadas en lenguaje como definiendo las llave
 4.  Al colocar el símbolo de intercalación antes de una llave de apertura, debe aparecer resaltada dicha llave y la llave de cierre correspondiente. Al colocar el cursor justo después de la llave de cierre, debe aparecer resaltada dicha llave y la llave de apertura correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

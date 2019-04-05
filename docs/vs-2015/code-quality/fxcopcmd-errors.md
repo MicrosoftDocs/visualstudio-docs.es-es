@@ -8,15 +8,15 @@ helpviewer_keywords:
 - FxCopCmd errors
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71e2a39b792dcc5a01eb28611664736f6620bb1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d723065e224058b7e269299aad2900f97a1425d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997412"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Errores de la herramienta de FxCopCmd
 
@@ -28,15 +28,15 @@ En la tabla siguiente se describe los códigos de error devueltos por FxCopCmd:
 |-----------|-------------------|
 |Sin errores|0x0|
 |Error de análisis|0x1|
-|Excepciones de reglas|0 x 2|
+|Excepciones de reglas|0x2|
 |Error al cargar proyecto|0x4|
 |Error al cargar ensamblado|0x8|
-|Error de carga de biblioteca de regla|0 x 10|
-|Error de carga del informe de importación|0 x 20|
+|Error de carga de biblioteca de regla|0x10|
+|Error de carga del informe de importación|0x20|
 |Error de salida|0x40|
 |Error del conmutador de línea de comandos|0x80|
-|Error de inicialización|0 x 100|
-|Error de las referencias de ensamblado|0 x 200|
+|Error de inicialización|0x100|
+|Error de las referencias de ensamblado|0x200|
 |BuildBreakingMessage|0x400|
 |Error desconocido|0x1000000|
 

@@ -1,11 +1,8 @@
 ---
 title: Asignar dependencias en sus soluciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998219"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Asignar dependencias de sus soluciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +54,9 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
 ##  <a name="GetStarted"></a> Introducción a los mapas de código  
  **Para poder usar mapas de código necesitará una de las soluciones siguientes**:  
   
--   Visual Studio Enterprise: permite crear mapas de código desde el editor de código, el explorador de soluciones, la vista de clases o el examinador de objetos.  
+-   Visual Studio Enterprise: Cree mapas de código desde el editor de código, el Explorador de soluciones, vista de clases o Examinador de objetos.  
   
--   Visual Studio Professional: permite abrir mapas de código, realizar ediciones limitadas y navegar por código.  
+-   Visual Studio Professional: Abrir mapas de código, realizar ediciones limitadas y navegar por el código.  
   
 > [!WARNING]
 >  Antes de compartir los mapas creados en Visual Studio Enterprise con otros usuarios que usen Visual Studio Professional, asegúrese de que todos los elementos del mapa son visibles (por ejemplo, los elementos ocultos, los grupos expandidos y los vínculos entre grupos).  
@@ -72,7 +69,7 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
   
 - Proyectos y ensamblados de X++ creados desde módulos de .NET para Microsoft Dynamics AX  
   
-  **Nota:** para los proyectos que no sean de C# o Visual Basic. NET, no hay tantas opciones para iniciar un mapa de código o agregar elementos a un mapa de código existente. Por ejemplo, no podrá hacer clic con el botón secundario en un objeto en el editor de texto de un proyecto de C++ y agregarlo a un mapa de código. Sin embargo, puede arrastrar y colocar elementos de código individuales o archivos desde el Explorador de soluciones, la Vista de clases y el Examinador de objetos.  
+  **Nota:** Para los proyectos que no sea C# o Visual Basic. NET, hay menos opciones para iniciar un mapa de código o agregar elementos a un mapa de código existente. Por ejemplo, no podrá hacer clic con el botón secundario en un objeto en el editor de texto de un proyecto de C++ y agregarlo a un mapa de código. Sin embargo, puede arrastrar y colocar elementos de código individuales o archivos desde el Explorador de soluciones, la Vista de clases y el Examinador de objetos.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Para ver las dependencias generales de la solución  
   
@@ -289,7 +286,7 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
 ##  <a name="SeeSourceHeader"></a> Ver las dependencias entre los archivos de código fuente de C y C++ y los archivos de encabezado  
  Si desea crear mapas más completos para proyectos de C++, establezca en dichos proyectos la opción del compilador de información de examen (**/FR**). Vea [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Si no, aparece un mensaje que le solicita establecer esta opción. Si selecciona **Aceptar**, la opción se establece solamente en el mapa actual. Si lo desea, puede ocultar el mensaje para todos los mapas posteriores. Si oculta este mensaje, puede hacer que aparezca de nuevo. Establezca la siguiente clave del registro en `0` o elimine la clave:  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Al abrir una solución que contiene proyectos de Visual C++, podría llevar algún tiempo la actualización de la base de datos de IntelliSense. Durante este tiempo, quizás no pueda crear mapas de código para los archivos de encabezado (.h o `#include`) hasta que la base de datos de IntelliSense finalice la actualización. Puede supervisar el progreso de actualización en la barra de estado de Visual Studio. Para resolver los problemas o los mensajes que aparecen porque ciertas opciones de IntelliSense están deshabilitadas, vea el artículo sobre [solución de problemas de mapas de código C y C++](#Troubleshooting).  
   
@@ -347,7 +344,7 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Compartir el mapa con otros usuarios de Visual Studio  
  Guarde el mapa desde el menú **Archivo** .  
   
- O bien  
+ -o bien-  
   
  Para guardar el mapa como parte de un proyecto específico, en la barra de herramientas del mapa elija **Compartir**, **Mover** \<*CodeMapName*>**.dgml en**y, después, elija el proyecto donde desea guardar el mapa.  
   
@@ -389,6 +386,3 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
 -   [Examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-

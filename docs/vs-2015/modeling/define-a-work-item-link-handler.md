@@ -1,25 +1,22 @@
 ---
 title: Definir un controlador de vínculo de elemento de trabajo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733068"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989252"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definir un controlador de vínculos de elementos de trabajo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +69,7 @@ Puede crear una extensión de integración de Visual Studio que responda cuando 
 ## <a name="defining-the-work-item-link-handler"></a>Definir el controlador de vínculos de elementos de trabajo  
  Realice todas las tareas siguientes en el proyecto de biblioteca de clases.  
   
-### <a name="project-references"></a>Referencias de proyecto  
+### <a name="project-references"></a>Referencias del proyecto  
  Agregue los siguientes ensamblados [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] a las referencias del proyecto:  
   
  `Microsoft.TeamFoundation.WorkItemTracking.Client.dll`  
@@ -163,7 +160,7 @@ namespace WorkItems
   
      Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Solución de problemas**: si un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no se inicia, asegúrese de que el proyecto VSIX está establecido como proyecto de inicio de la solución.  
+     **Solución de problemas de**: Si un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no se inicia, asegúrese de que el proyecto VSIX está establecido como proyecto de inicio de la solución.  
   
 2.  En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra o cree un proyecto de modelado, y abra o cree un diagrama de modelado.  
   
@@ -183,7 +180,7 @@ namespace WorkItems
   
 7.  Compruebe que el elemento de trabajo es ahora de color rojo. Esto muestra `OnWorkItemLinked()` en el código de ejemplo.  
   
-     **Solución de problemas**: si no se han ejecutado los métodos de controlador, compruebe que:  
+     **Solución de problemas de**: Si no se han ejecutado los métodos de controlador, compruebe lo siguiente:  
   
     -   El proyecto de biblioteca de clase aparece como un componente MEF en la **contenido** lista **source.extensions.manifest** en el proyecto VSIX.  
   
@@ -304,6 +301,3 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [Adjuntar cadenas de referencia a elementos del modelo UML](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [Definir e instalar una extensión de modelado](../modeling/define-and-install-a-modeling-extension.md)   
  [Programar con la API de UML](../modeling/programming-with-the-uml-api.md)
-
-
-

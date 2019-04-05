@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: crear un conjunto de reglas personalizado | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear un conjunto de reglas personalizado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -18,14 +13,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d21ad2edd01ee5b7a939c6c0ddfdaa882e38754
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997484"
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>Cómo: Crear un conjunto de reglas personalizadas
+# <a name="how-to-create-a-custom-rule-set"></a>Filtrar Crear un conjunto de reglas personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], y [!INCLUDE[vsPro](../includes/vspro-md.md)], puede crear y modificar una personalizada *conjunto de reglas* para satisfacer las necesidades concretas del proyecto asociadas con el análisis de código. Para crear un conjunto de reglas personalizado, se abren uno o más conjuntos de reglas estándar en el editor del conjuntos de reglas. Se pueden agregar o quitar reglas concretas y cambiar la acción que se realiza cuando el análisis de código determina que se ha infringido una regla.  
@@ -117,8 +112,5 @@ En [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 -   Para agregar o quitar conjuntos de reglas predeterminados para el conjunto de reglas actual de Microsoft, haga clic en **agregar o quitar conjuntos de reglas secundarios**.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: configurar el análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Cómo: Configurar análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Referencia del conjunto de reglas Análisis de código](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

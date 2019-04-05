@@ -1,14 +1,9 @@
 ---
 title: Depurar estilos de CSS mediante el explorador DOM | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2dfef7c6-7db2-4550-b694-783b0e535cea
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996430"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Depurar estilos de CSS mediante el Explorador DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +95,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 5.  Presiona F5 para ejecutar la aplicación en modo de depuración.  
   
-     Cuando la aplicación finalice la carga, mire los encabezados de los elementos de lista, como **Título de grupo: 1**. El color no ha cambiado, por lo que el intento de aplicar un color naranja a los títulos no ha funcionado. Averiguaremos qué ha salido mal y lo corregiremos usando las pestañas CSS en el Explorador DOM.  
+     Cuando la aplicación finalice la carga, mire los encabezados de los elementos de lista, como **título de grupo: 1**. El color no ha cambiado, por lo que el intento de aplicar un color naranja a los títulos no ha funcionado. Averiguaremos qué ha salido mal y lo corregiremos usando las pestañas CSS en el Explorador DOM.  
   
     > [!TIP]
     >  Cuando la aplicación aparezca en el simulador, colóquelo junto a la ventana de Visual Studio para que pueda ver inmediatamente los resultados de sus selecciones y los cambios realizados en los estilos CSS.  
@@ -108,9 +103,9 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 6.  Cambie a Visual Studio y haga clic en **Seleccionar elemento** en el Explorador DOM (o presione Ctrl+B). El modo de selección se modifica para que pueda seleccionar un elemento haciendo clic en él. Además, la aplicación se sitúa en primer plano. El modo se revierte al original al hacer clic. Aquí está el botón **Seleccionar elemento** . ![Botón Seleccionar elemento en el explorador DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  También puede seleccionar elementos HTML directamente en el Explorador DOM. Para obtener más información sobre la selección de elementos, vea [inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  También puede seleccionar elementos HTML directamente en el Explorador DOM. Para obtener más información sobre la selección de elementos, vea [inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).  
   
-7.  En el simulador, mantén el mouse sobre el título del primer elemento de la lista, **Título de grupo: 1**, en el panel izquierdo de la página principal. Se resalta el título, como se muestra aquí:  
+7.  En el simulador, mantenga el puntero sobre el título del primer elemento en la lista, **título de grupo: 1**, en el panel izquierdo de la página principal. Se resalta el título, como se muestra aquí:  
   
      ![Con el botón Seleccionar elemento](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
@@ -162,10 +157,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 16. Para realizar cambios en el archivo CSS de origen, haga clic en el vínculo **items.css** de la pestaña **Estilos** . De este modo se abre items.css, donde puede cambiar el valor de estilo de `color` en el código de la aplicación. Para actualizar la aplicación sin detener y reiniciar el depurador, haga clic en el ![botón de actualización de Windows app](../debugger/media/js-refresh.png "JS_Refresh") (**actualizar Windows app**) en el botón**Depurar** barra de herramientas.  
   
 ## <a name="see-also"></a>Vea también  
- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Inicio rápido: Depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depurar el diseño mediante el explorador DOM](../debugger/debug-layout-using-dom-explorer.md)   
  [Ver agentes de escucha de eventos de DOM](../debugger/view-dom-event-listeners.md)   
  [Compatibilidad de productos y accesibilidad](http://go.microsoft.com/fwlink/?LinkId=253502)
-
-
-

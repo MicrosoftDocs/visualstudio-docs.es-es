@@ -1,14 +1,9 @@
 ---
 title: ShowByDefault (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault
 helpviewer_keywords:
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6cd368d33e218d0f240a8f6272cfbfba846f04e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98779743f1e7c68f579334d74d3651357c6ee0b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781808"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997256"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si `false`, especifica que solo se mostrará la plantilla en especificado [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<ShowByDefault >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ShowByDefault>  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -95,4 +90,3 @@ Si `false`, especifica que solo se mostrará la plantilla en especificado [Templ
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [TemplateGroupID (Elemento, Plantillas de Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)
-

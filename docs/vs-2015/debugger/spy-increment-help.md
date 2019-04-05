@@ -1,27 +1,22 @@
 ---
 title: Ayuda de Spy ++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++ Help contents
 ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 38afcac385a846e169f0fbf601fc759fbec62304
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f07ca424bdf3b9f34439058c9a06364516ca0c02
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999455"
 ---
 # <a name="spy-help"></a>Ayuda de Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ La documentación de la herramienta Spy ++ incluye dos grupos de temas generales
  [Comandos de menú](../debugger/menu-commands.md)  
  Describe los comandos disponibles en cada menú de Spy ++.  
   
- [Cuadro de diálogo fuente](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
+ [Cuadro de diálogo Fuente](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
  Se usa para configurar la fuente de caracteres que se usa en una ventana de vistas de Spy ++.  
   
  [Herramientas de búsqueda para las vistas de Spy++](../debugger/search-tools-for-spy-increment-views.md)  
@@ -62,6 +57,3 @@ La documentación de la herramienta Spy ++ incluye dos grupos de temas generales
   
  [Otros cuadros de diálogo](../debugger/other-dialog-boxes.md)  
  Se usa para mostrar información acerca del programa de Spy ++.
-
-
-

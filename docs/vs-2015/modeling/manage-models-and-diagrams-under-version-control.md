@@ -1,25 +1,22 @@
 ---
 title: Administrar modelos y diagramas con control de versiones | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, version control
 ms.assetid: ca6443e3-6d11-4da8-aae7-ca7dcc410076
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20cb2e89a85f00782a172245dcdd8f47025ddd12
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c8ad8861e2c838de283b7971d7e985fe8a4c591a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738047"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998437"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Administrar modelos y diagramas con control de versiones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,6 +110,3 @@ Administre distintas versiones de los diagramas y proyectos de modelado, incluid
 ## <a name="see-also"></a>Vea también  
  [Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)   
  [Compartir modelos y exportar diagramas](../modeling/share-models-and-exporting-diagrams.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: depurar un archivo ejecutable que no es parte de una solución de Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Depurar un archivo ejecutable que no es parte de una solución de Visual Studio | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,15 +21,15 @@ ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a7fb9b0a31f078ce197851bccb1f4c85f24408a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798669"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995920"
 ---
-# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Cómo: Depurar un archivo ejecutable que no es parte de una solución de Visual Studio
+# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Filtrar Depurar un archivo ejecutable que no es parte de una solución de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es posible que haya ocasiones en las que desee depurar un archivo ejecutable que no forme parte de un proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Puede tratarse de un archivo ejecutable que se haya creado fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o de un archivo ejecutable que haya recibido de otra persona.  
@@ -73,7 +68,4 @@ Es posible que haya ocasiones en las que desee depurar un archivo ejecutable que
 ## <a name="see-also"></a>Vea también  
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [DBG (archivos)](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)
-
-
-
+ [DBG (archivos)](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)
