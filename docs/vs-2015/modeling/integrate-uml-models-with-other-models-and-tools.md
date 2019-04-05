@@ -1,25 +1,22 @@
 ---
 title: Integrar modelos UML con otros modelos y herramientas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, references to models
 ms.assetid: 9e75e7d1-93cf-4196-baa3-bd10b9af16d3
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1cc5a26a9c2febb0dd1dff3c0d14ba3786dde9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764142"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998654"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrar modelos UML con otros modelos y herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +40,7 @@ Los modelos UML pueden integrarse con otros modelos y con lenguajes específicos
   
    Para obtener más información, consulte [definir un perfil para ampliar UML](../modeling/define-a-profile-to-extend-uml.md).  
   
-   Para un proyecto de ejemplo en el que se implementa un perfil junto con los comandos de menú y controladores de gestos, vea [ejemplo: perfiles UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
+   Para un proyecto de ejemplo en el que se implementa un perfil junto con los comandos de menú y controladores de gestos, vea [ejemplo: Los perfiles UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
   
 - **Referencias.** Un conjunto de cadenas se puede adjuntar a cualquier elemento UML. Se puede escribir código que almacene la información como un nombre de archivo o el GUID de otro elemento. Para ello no es necesario proporcionar definiciones adicionales. El usuario no puede ver directamente las referencias.  
   
@@ -68,12 +65,12 @@ Los modelos UML pueden integrarse con otros modelos y con lenguajes específicos
   
 2. **Eventos VMSDK** puede usarse para propagar los cambios fuera del modelo — por ejemplo, para cambiar el nombre de archivo de un documento vinculado o para cambiar un elemento de otro modelo.  
   
-   Para obtener información sobre estos dos mecanismos, vea [Cómo: responder a los cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+   Para obtener información sobre estos dos mecanismos, vea [Cómo: Responder a los cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
    Arrastre elementos para copiarlos de un modelo a otro.  
    Puede dejar que el usuario cree elementos arrastrándolos hasta un diagrama UML. El elemento creado no tiene por qué ser una copia del original. Por ejemplo, puede permitir que el usuario arrastre un diagrama de actividades desde el Explorador de soluciones hasta otro diagrama de actividades con el fin de crear una nueva acción.  
   
-   Para obtener más información, consulte [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) y [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+   Para obtener más información, consulte [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) y [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="samples"></a>Muestras  
  Vea el ejemplo de código [vinculan elementos UML a diagramas u otros archivos](http://go.microsoft.com/fwlink/?LinkId=213813). El ejemplo permite a los usuarios arrastrar un archivo a cualquier elemento UML y después abrir el archivo haciendo doble clic en el elemento. Por ejemplo, se puede vincular un diagrama de actividades a un elemento de casos de uso. Un icono muestra los elementos que tienen vínculos.  
@@ -88,7 +85,7 @@ Los modelos UML pueden integrarse con otros modelos y con lenguajes específicos
   
    En el ejemplo se agrega un decorador de imagen a las formas UML.  
   
-- [Cómo: Responder a cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
+- [Cómo: Responder a los cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
   
    En el ejemplo se muestra cómo definir una regla que responde a las nuevas formas que aparecen en un diagrama.  
   
@@ -98,15 +95,12 @@ Los modelos UML pueden integrarse con otros modelos y con lenguajes específicos
   
    En el ejemplo se muestra cómo controlar los elementos arrastrados desde el Explorador de Windows (o el Explorador de archivos), el Explorador de soluciones y otros elementos UML.  
   
-  Para un DSL leer un ejemplo en el que es un modelo UML, vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+  Para un DSL leer un ejemplo en el que es un modelo UML, vea [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)   
- [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Cómo: responder a los cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
+ [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Cómo: Responder a los cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
  [Ejemplo: Perfiles UML](http://go.microsoft.com/fwlink/?LinkID=213811)   
  [Vinculan elementos UML a diagramas u otros archivos](http://go.microsoft.com/fwlink/?LinkId=213813)
-
-
-

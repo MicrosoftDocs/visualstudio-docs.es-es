@@ -14,14 +14,14 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05842c274c27165a7065cb90fda60dd75da2a659
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: da8eb2f21cbe7ef611aaba863e853a2fe7a71753
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840343"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018316"
 ---
-# <a name="expected-"></a>Se esperaba '@'
+# <a name="expected-"></a>Se esperaba '\@'
 Se intentó crear una variable para su uso con instrucciones de compilación condicional mediante el `@set` instrucción, pero no realizó una arroba "**@**" antes del nombre de variable.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  

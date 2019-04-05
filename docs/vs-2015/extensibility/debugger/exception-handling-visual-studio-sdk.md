@@ -1,26 +1,21 @@
 ---
 title: (Visual Studio SDK) de control de excepciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], exception handling
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2640641a4cb02c34255cbd0b0016c31a0dd14638
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d17c9222eaa69e3f1a33fac8432557dc3c30baab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732958"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998499"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Control de excepciones (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ El siguiente describe el proceso que se produce cuando se produzcan excepciones.
   
     -   Si el método devuelve S_OK, llama a [IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).  
   
-         O bien  
+         -o bien-  
   
          Si el método devuelve S_FALSE, el programa que se está depurando se proporciona una segunda oportunidad para controlar la excepción.  
   
@@ -57,4 +52,3 @@ El siguiente describe el proceso que se produce cuando se produzcan excepciones.
   
 ## <a name="see-also"></a>Vea también  
  [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
-

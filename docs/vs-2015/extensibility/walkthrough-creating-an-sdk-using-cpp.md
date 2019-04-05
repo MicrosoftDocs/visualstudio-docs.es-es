@@ -1,26 +1,21 @@
 ---
-title: 'Tutorial: Crear un SDK con C++ | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Creación de un SDK con C++ | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0932759213d064c3df717b7b6735c1201e62ce14
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 85af1b15fe6f2b87fbe1f7668fd1610c8595b90c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998454"
 ---
-# <a name="walkthrough-creating-an-sdk-using-c"></a>Tutorial: Creación de un SDK con C++
+# <a name="walkthrough-creating-an-sdk-using-c"></a>Tutorial: Crear un SDK con C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tutorial muestra cómo crear una biblioteca nativa de C++ matemáticas SDK, el SDK como una extensión de Visual de Studio (VSIX), paquete y, a continuación, usarla para crear una aplicación. El tutorial está dividido en estos pasos:  
@@ -120,7 +115,7 @@ Este tutorial muestra cómo crear una biblioteca nativa de C++ matemáticas SDK,
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-13. En la barra de menús, elija **vista**, **Other Windows**, **ventana propiedades** (teclado: presione la tecla F4).  
+13. En la barra de menús, elija **vista**, **Other Windows**, **ventana propiedades** (teclado: Presione la tecla F4).  
   
 14. En **el Explorador de soluciones**, seleccione el **NativeMathWRT.winmd** archivo. En el **propiedades** ventana, cambie el **acción de compilación** propiedad **contenido**y, a continuación, cambie el **incluir en VSIX** propiedad  **True**.  
   
@@ -187,4 +182,3 @@ Este tutorial muestra cómo crear una biblioteca nativa de C++ matemáticas SDK,
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Crear un SDK usando C# o Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [Creación de un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)
-
