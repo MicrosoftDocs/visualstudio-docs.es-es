@@ -1,14 +1,9 @@
 ---
 title: Adición de modificadores de línea de comandos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line switches, adding
 - command-line switches, retrieving
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5034e6bcb5aa878c16dbf9dadf478d68276c4fac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e28a3f303849458a407b212d3aad1a8c198f6d25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996510"
 ---
 # <a name="adding-command-line-switches"></a>Adición de modificadores de la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Puede agregar modificadores de línea de comandos que se aplican a su VSPackage,
  HelpString  
  La Ayuda de cadena o identificador de recurso de la cadena para mostrar con **devenv /?**.  
   
- nombre  
+ Name  
  El conmutador.  
   
  PackageGuid  
@@ -87,4 +82,3 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)   
  [Utilidad CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
  [Archivos .Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
-

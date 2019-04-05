@@ -1,12 +1,9 @@
 ---
-title: 'Diagramas de actividades UML: Instrucciones | Microsoft Docs'
-ms.custom: ''
+title: 'Diagramas de actividades UML: Instrucciones | Documentos de Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, activity
 - diagrams - modeling, activity
@@ -17,18 +14,18 @@ ms.assetid: fe5dbe96-79ab-483a-b9bc-44d0d1d3efc2
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a13db375305e96c4657e007f9cd8bfffbf34f990
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66ca625d0c9c6f2442576e997928b7b42760936a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722682"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997039"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramas de actividades UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio, puede dibujar un diagrama de actividades para describir un proceso de negocio o un algoritmo de software como un flujo de trabajo a través de una serie de acciones. Las personas, los componentes de software o los dispositivos pueden realizar estas acciones. Para una demostración en vídeo, consulte: [capturar flujos de trabajo empresariales mediante el uso de diagramas de actividades](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
+En Visual Studio, puede dibujar un diagrama de actividades para describir un proceso de negocio o un algoritmo de software como un flujo de trabajo a través de una serie de acciones. Las personas, los componentes de software o los dispositivos pueden realizar estas acciones. Para una demostración en vídeo, consulte: [Capturar flujos de trabajo empresariales mediante diagramas de actividades](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
   
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -38,7 +35,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
   
 - Para describir un proceso de negocio o un flujo de trabajo entre los usuarios y el sistema. Para obtener más información, consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).  
   
-- Para describir los pasos que se realizan en un caso de uso. Para obtener más información, consulte [diagramas de casos de uso de UML: instrucciones](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Para describir los pasos que se realizan en un caso de uso. Para obtener más información, consulte [diagramas de casos de uso de UML: Directrices](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 - Para describir un método, una función o una operación en el software. Para obtener más información, consulte [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md).  
   
@@ -57,7 +54,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
   
   También puede dibujar un diagrama de actividades para describir el diseño detallado de una operación de software.  
   
-  En un diagrama de actividades, puede mostrar el flujo de datos que se pasan entre las acciones. Consulte la sección sobre [describir el flujo de datos](#DataFlows). Sin embargo, un diagrama de actividades no describe la estructura de los datos. Para ello, puede dibujar un diagrama de clases UML. Para obtener información, consulte [diagramas de clases UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md).  
+  En un diagrama de actividades, puede mostrar el flujo de datos que se pasan entre las acciones. Consulte la sección sobre [describir el flujo de datos](#DataFlows). Sin embargo, un diagrama de actividades no describe la estructura de los datos. Para ello, puede dibujar un diagrama de clases UML. Para obtener información, consulte [diagramas de clases UML: Directrices](../modeling/uml-class-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Pasos básicos para dibujar diagramas de actividades  
  Se describen los pasos detallados para crear cualquiera de los diagramas de modelado en [modelos y diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
@@ -185,7 +182,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 -   Use un **Output Pin** y un **clavija de entrada**. Este método permite describir por separado las salidas de una acción y las entradas en otra. Los terminales son como los parámetros de un programa. Los terminales representan puertos donde pueden entrar los objetos y dejar una acción.  
   
     > [!NOTE]
-    >  Para obtener información general de los elementos usados en esta sección, vea la sección flujos de datos del tema [diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md).  
+    >  Para obtener información general de los elementos usados en esta sección, consulte la sección flujos de datos del tema consulte [diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Describir el flujo de datos con nodos de objeto  
  La mayoría de los flujos de control transportan datos. Por ejemplo, el flujo de salida de la acción "El cliente proporciona detalles" lleva una referencia a la dirección de envío.  
@@ -198,7 +195,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
   
  Asigne al nodo de objeto un nombre que refleje el rol del nodo como canalización o búfer de los objetos que fluyen entre las acciones.  
   
- Puede establecer el **tipo** del nodo de objeto en la ventana Propiedades. El tipo puede ser un tipo primitivo, como un entero, o una clase, interfaz o enumeración que definiese en un diagrama de clases. Por ejemplo, podría crear una clase Dirección de envío, con atributos como Dirección, Ciudad, etcétera, junto con una asociación con otra clase denominada Cliente. Para obtener más información, consulte [diagramas de clases UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md).  
+ Puede establecer el **tipo** del nodo de objeto en la ventana Propiedades. El tipo puede ser un tipo primitivo, como un entero, o una clase, interfaz o enumeración que definiese en un diagrama de clases. Por ejemplo, podría crear una clase Dirección de envío, con atributos como Dirección, Ciudad, etcétera, junto con una asociación con otra clase denominada Cliente. Para más información, vea [Diagramas de clases de UML: Directrices](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
 >  Si escribe el nombre de un tipo que aún no se han definido, se agregará un elemento en **tipos sin especificar** en el Explorador de modelos UML. Si posteriormente define un tipo con ese nombre en un diagrama de clases, deberá restablecer el tipo del nodo de objeto para que haga referencia al nuevo tipo.  
@@ -363,7 +360,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
   
  ![Flujos de objeto en paralelo](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")  
   
- Cuando se completa la acción "El cliente proporciona detalles", se generan dos objetos: "Dirección de envío" y "Detalles de la tarjeta de crédito". Los dos objetos avanzan en el procesamiento mediante acciones diferentes.  
+ Cuando se completa la acción "El cliente proporciona detalles", genera dos objetos: "Dirección de envío" y "detalles de la tarjeta de crédito". Los dos objetos avanzan en el procesamiento mediante acciones diferentes.  
   
  Dado que una acción requiere que todas sus entradas estén disponibles antes de iniciarse, la última acción no se inicia hasta que se completen todas las acciones anteriores.  
   
@@ -431,12 +428,9 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
   
 ## <a name="see-also"></a>Vea también  
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramas de componentes UML: referencia](../modeling/uml-component-diagrams-reference.md)   
- [Diagramas de casos de uso UML: referencia](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramas de clases UML: referencia](../modeling/uml-class-diagrams-reference.md)   
- [Diagramas de componentes UML: referencia](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramas de secuencia de UML: Referencia](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramas de componentes UML: Referencia](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramas de casos de uso UML: Referencia](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrama de clases de UML: Referencia](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramas de componentes UML: Referencia](../modeling/uml-component-diagrams-reference.md)   
  [Vídeo: Capturar flujos de trabajo empresariales mediante diagramas de actividades](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
-
-
-

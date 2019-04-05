@@ -1,14 +1,9 @@
 ---
-title: 'CA1303: No pasar literales parámetros como localizados | Microsoft Docs'
-ms.custom: ''
+title: 'CA1303: No pasar literales como localizados parámetros | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - Do not pass literals as localized parameters
 - DoNotPassLiteralsAsLocalizedParameters
@@ -21,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d900abe23dab4d950b5790798916fe728a44af4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ef9eaa8e0921d8ff463478a42eca688d4b952b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886570"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997225"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: No pasar literales como parámetros localizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +64,3 @@ ms.locfileid: "49886570"
 
 ## <a name="see-also"></a>Vea también
  [Recursos de aplicaciones de escritorio](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-

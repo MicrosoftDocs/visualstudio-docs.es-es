@@ -1,21 +1,17 @@
 ---
 title: Manifiesto a código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758226"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997606"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,22 +29,22 @@ El manifiesto de la herramienta de código es una aplicación de consola que tom
 |-|-|-|  
 |**Nombre del conmutador**|**Notas**|**Obligatorio u opcional**|  
 |/ manifest|La ruta de acceso al manifiesto de la imagen se utiliza para crear o actualizar el contenedor de código.|Obligatorio|  
-|/ Language|El idioma en que se va a generar el contenedor de código.<br /><br /> Los valores válidos: CPP, C++, CS, CSharp, C#, VB o VSCT los valores distinguen mayúsculas de minúsculas.<br /><br /> Para el idioma VSCT se omiten las opciones de opción, /monikerClass, /classAccess y/Namespace.|Obligatorio|  
-|/imageIdClass|El nombre de la imageIdClass y el archivo asociado creado por la herramienta. La opción de lenguaje C++, solo los archivos .h se generan.<br /><br /> Valor predeterminado: \<ruta de acceso de manifiesto > \MyImageIds.\< Lang Ext >|Optional|  
-|/monikerClass|El nombre de la monikerClass y el archivo asociado creado por la herramienta. La opción de lenguaje C++, solo los archivos .h se generan. Esto se omite para el lenguaje VSCT.<br /><br /> Valor predeterminado: \<ruta de acceso de manifiesto > \MyMonikers.\< Lang Ext >|Optional|  
-|/classAccess|El modificador de acceso para el imageIdClass y el monikerClass. Asegúrese de que el modificador de acceso es válido para el idioma especificado. Se omite para la opción de idioma VSCT.<br /><br /> Predeterminado: público|Optional|  
-|/ Namespace|El espacio de nombres definido en el contenedor de código. Se omite para la opción de idioma VSCT. Cualquier '.' o '::' son los separadores de espacio de nombres válido, independientemente de la opción de lenguaje elegido.<br /><br /> Predeterminado: MyImages|Optional|  
+|/ Language|El idioma en que se va a generar el contenedor de código.<br /><br /> Valores válidos: CPP, C++, CS, CSharp, C#, VB o VSCT los valores distinguen mayúsculas de minúsculas.<br /><br /> Para el idioma VSCT se omiten las opciones de opción, /monikerClass, /classAccess y/Namespace.|Obligatorio|  
+|/imageIdClass|El nombre de la imageIdClass y el archivo asociado creado por la herramienta. La opción de lenguaje C++, solo los archivos .h se generan.<br /><br /> Predeterminado: \<Ruta de acceso de manifiesto > \MyImageIds. \<Lang Ext >|Optional|  
+|/monikerClass|El nombre de la monikerClass y el archivo asociado creado por la herramienta. La opción de lenguaje C++, solo los archivos .h se generan. Esto se omite para el lenguaje VSCT.<br /><br /> Predeterminado: \<Ruta de acceso de manifiesto > \MyMonikers. \<Lang Ext >|Optional|  
+|/classAccess|El modificador de acceso para el imageIdClass y el monikerClass. Asegúrese de que el modificador de acceso es válido para el idioma especificado. Se omite para la opción de idioma VSCT.<br /><br /> Predeterminado: Public|Optional|  
+|/namespace|El espacio de nombres definido en el contenedor de código. Se omite para la opción de idioma VSCT. Cualquier '.' o '::' son los separadores de espacio de nombres válido, independientemente de la opción de lenguaje elegido.<br /><br /> Predeterminado: MyImages|Optional|  
 |/noLogo|Al establecer esta marca detiene la información de producto y copyright de impresión.|Optional|  
 |/?|Imprimir información de ayuda.|Optional|  
 |/help|Imprimir información de ayuda.|Optional|  
   
  **Ejemplos**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest/Language: CSharp  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ Namespace/namespace: mi:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Notas  
   
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

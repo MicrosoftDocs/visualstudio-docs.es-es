@@ -1,27 +1,22 @@
 ---
 title: Obtención de información de fuente y Color para la coloración de texto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - text, coloring
 - font and color control [Visual Studio SDK], coloring
 ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 41fc6ac7ba20bc552ebdfde2cab69dd28867ee7f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 96e5bc47a12e838fb11aa82c18981805abc4ae7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997980"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Obtención de información de fuente y Color para la coloración de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,5 +48,4 @@ El proceso que se representa o muestra el texto con colores de elementos de inte
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
  [Utilizar fuentes y texto](http://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
  [Trabajar con colores](http://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
- [GDI (interfaz de dispositivo gráfico)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)
-
+ [GDI (interfaz de dispositivo gráfico)](http://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)

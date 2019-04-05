@@ -1,14 +1,9 @@
 ---
-title: 'CA2105: Los campos de matriz deben no ser de solo lectura | Microsoft Docs'
-ms.custom: ''
+title: 'CA2105: Campos de matriz deben no ser de solo lectura | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2105
 - ArrayFieldsShouldNotBeReadOnly
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 51878d18deb56c77ebbef0d0aa84b399ef2fa722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4741b30d1429a1a179328c8fb4b150fc4f920612
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997232"
 ---
-# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Los campos de matrices no deberían ser de solo lectura
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Los campos de matrices no deben ser de solo lectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,7 +38,7 @@ ms.locfileid: "49894981"
 ## <a name="rule-description"></a>Descripción de la regla
  Al aplicar el `readonly` (`ReadOnly` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) no se puede cambiar el modificador en un campo que contiene una matriz, el campo para hacer referencia a una matriz distinta. Sin embargo, se pueden cambiar los elementos de la matriz almacenados en un campo de solo lectura. Código que toma decisiones o realiza operaciones que se basan en los elementos de una matriz de solo lectura que se puede acceder públicamente podría contener una vulnerabilidad de seguridad explotable.
 
- Tenga en cuenta que también tiene un campo público infringe la regla de diseño [CA1051: no declarar campos de instancia visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+ Tenga en cuenta que también tiene un campo público infringe la regla de diseño [CA1051: No declarar campos de instancia visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir la vulnerabilidad de seguridad identificada por esta regla, no confíe en el contenido de una matriz de solo lectura que se puede acceder públicamente. Se recomienda encarecidamente que utilice uno de los procedimientos siguientes:
@@ -52,7 +47,7 @@ ms.locfileid: "49894981"
 
 - Reemplace el campo público con un método que devuelve un clon de una matriz privada. Dado que el código no se basa en el clon, no hay ningún riesgo si se modifican los elementos.
 
-  Si eligió el segundo enfoque, no debe reemplazar el campo de una propiedad; las propiedades que devuelven matrices afectan negativamente al rendimiento. Para obtener más información, consulte [CA1819: las propiedades no deberían devolver matrices](../code-quality/ca1819-properties-should-not-return-arrays.md).
+  Si eligió el segundo enfoque, no debe reemplazar el campo de una propiedad; las propiedades que devuelven matrices afectan negativamente al rendimiento. Para obtener más información, consulte [CA1819: Las propiedades no deberían devolver matrices](../code-quality/ca1819-properties-should-not-return-arrays.md).
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Exclusión de una advertencia de esta regla no es recomendable. Se producen casi no hay escenarios donde el contenido de un campo de solo lectura no es importante. Si este es el caso con su escenario, quite el `readonly` modificador en lugar de excluir el mensaje.
@@ -71,10 +66,7 @@ ms.locfileid: "49894981"
 
  El resultado de este ejemplo es:
 
- **Antes de manipulación: calificaciones: 90, 90, 90 grados privada: 90, 90, 90 grados seguros, 90, 90, 90**
-**después de manipulación: calificaciones: 90, 555, 90 grados privada: 90, 555, 90 grados seguros, 90, 90, 90**
+ **Antes de manipulación: Notas: 90, 90, 90 grados privada: 90, 90, 90 grados seguros, 90, 90, 90**
+**después de manipulación: Notas: 90, 555, 90 grados privada: 90, 555, 90 secure calificaciones, 90, 90, 90**
 ## <a name="see-also"></a>Vea también
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
-
-

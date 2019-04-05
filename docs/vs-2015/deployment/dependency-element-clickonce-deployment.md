@@ -1,14 +1,9 @@
 ---
 title: '&lt;dependencia&gt; elemento (implementación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -30,13 +25,13 @@ ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995646"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependencia&gt; elemento (implementación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,25 +79,25 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
  El `dependency` elemento normalmente expresa las dependencias de la aplicación principal en los ensamblados contenidos dentro de un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Si su aplicación Main.exe utiliza un ensamblado denominado DotNetAssembly.dll, dicho ensamblado debe estar incluido en una sección de dependencia. Dependencia, sin embargo, también puede expresar otros tipos de dependencias, como las dependencias de una versión específica de common language runtime, en un ensamblado en la caché de ensamblados global (GAC) o en un objeto COM. Porque es una tecnología de implementación "no-touch" [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] no se iniciará la descarga e instalación de estos tipos de dependencias, pero ¿evita que la aplicación se ejecute si no existen una o varias de las dependencias especificadas.  
   
 ## <a name="dependentassembly"></a>dependentAssembly  
- Requerido. Este elemento contiene el `assemblyIdentity` elemento. En la tabla siguiente se muestra los atributos del `dependentAssembly` admite.  
+ Obligatorio. Este elemento contiene el `assemblyIdentity` elemento. En la tabla siguiente se muestra los atributos del `dependentAssembly` admite.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
 |`preRequisite`|Opcional. Especifica que este ensamblado debe existir en la GAC. Los valores válidos son `true` y `false`. Si `true`y el ensamblado especificado no existe en la GAC, no se puede ejecutar la aplicación.|  
 |`visible`|Opcional. Identifica la identidad de aplicación de nivel superior, incluidas sus dependencias. Utilizado internamente por [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] para administrar el almacenamiento de aplicaciones y activación.|  
-|`dependencyType`|Requerido. La relación entre esta dependencia y la aplicación. Los valores válidos son:<br /><br /> -   `install`. Componente representa una instalación independiente de la aplicación actual.<br />-   `preRequisite`. Componente es necesario para la aplicación actual.|  
+|`dependencyType`|Obligatorio. La relación entre esta dependencia y la aplicación. Los valores válidos son:<br /><br /> -   `install`. Componente representa una instalación independiente de la aplicación actual.<br />-   `preRequisite`. Componente es necesario para la aplicación actual.|  
 |`codebase`|Opcional. La ruta de acceso completa al manifiesto de aplicación.|  
 |`size`|Opcional. El tamaño del manifiesto de aplicación, en bytes.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Requerido. Este elemento es un elemento secundario del elemento `dependentAssembly` . El contenido de `assemblyIdentity` debe ser el mismo como se describe en el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de aplicación. En la tabla siguiente se muestra los atributos de la `assemblyIdentity` elemento.  
+ Obligatorio. Este elemento es un elemento secundario del elemento `dependentAssembly` . El contenido de `assemblyIdentity` debe ser el mismo como se describe en el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de aplicación. En la tabla siguiente se muestra los atributos de la `assemblyIdentity` elemento.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. Identifica el nombre de la aplicación.|  
-|`Version`|Requerido. Especifica el número de versión de la aplicación, en el formato siguiente: `major.minor.build.revision`|  
-|`publicKeyToken`|Requerido. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública utilizada para iniciar sesión debe ser 2048 bits o superior.|  
-|`processorArchitecture`|Requerido. Especifica el microprocesador. Los valores válidos son `x86` para Windows de 32 bits y `IA64` para Windows de 64 bits.|  
+|`Name`|Obligatorio. Identifica el nombre de la aplicación.|  
+|`Version`|Obligatorio. Especifica el número de versión de la aplicación, en el formato siguiente: `major.minor.build.revision`|  
+|`publicKeyToken`|Obligatorio. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública utilizada para iniciar sesión debe ser 2048 bits o superior.|  
+|`processorArchitecture`|Obligatorio. Especifica el microprocesador. Los valores válidos son `x86` para Windows de 32 bits y `IA64` para Windows de 64 bits.|  
 |`Language`|Opcional. Identifica los códigos de idioma de dos partes del ensamblado. Por ejemplo, EN-US, lo que significa para inglés (Estados Unidos). De manera predeterminada, es `neutral`. Este elemento está en el `asmv2` espacio de nombres.|  
 |`type`|Opcional. Por razones de compatibilidad con Windows side-by-side instalación tecnología. El único valor permitido es `win32`.|  
   
@@ -111,7 +106,7 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] utiliza un valor hash algorítmico de todos los archivos en una aplicación como una comprobación de seguridad para asegurarse de que ninguno de los archivos se han modificado después de la implementación. Si el `hash` elemento no se incluye, no se realizará esta comprobación. Por lo tanto, si se omite el `hash` elemento no se recomienda.  
   
-## <a name="dsigtransforms"></a>dsig: TRANSFORMS  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  El `dsig:Transforms` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:Transforms` no tiene atributos.  
   
 ## <a name="dsigtransform"></a>dsig: Transform  
@@ -128,7 +123,7 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
 |---------------|-----------------|  
 |`Algorithm`|El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-## <a name="dsigdigestvalue"></a>dsig: DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  El `dsig:DigestValue` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:DigestValue` no tiene atributos. Su valor de texto es el hash calculado para el archivo especificado.  
   
 ## <a name="remarks"></a>Comentarios  
@@ -190,7 +185,4 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
   
 ## <a name="see-also"></a>Vea también  
  [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<dependencia > elemento](../deployment/dependency-element-clickonce-application.md)
-
-
-
+ [\<dependency> Element](../deployment/dependency-element-clickonce-application.md)

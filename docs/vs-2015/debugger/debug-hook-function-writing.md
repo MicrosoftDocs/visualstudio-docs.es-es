@@ -1,14 +1,9 @@
 ---
 title: Función de enlace de depuración | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vc.hooks
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 5510635f-cf69-4907-b72d-ae27af1f19af
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 47cd3d42639785290f26d7acbbad15cd948b4f51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0554c1494bec757d1baecd78cdc302608e5b6b3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735521"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996424"
 ---
 # <a name="debug-hook-function-writing"></a>Creación de funciones de enlace de depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Esta sección describe varias funciones de enlace de depuración personalizadas 
  Define una función de asociación de asignación, explora sus diferentes usos, señala sus restricciones y proporciona un prototipo.  
   
  [Enlaces de asignación y asignaciones de memoria CRT](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
- Describe la restricción de las funciones de enlace de asignación consistente en omitir explícitamente los bloques `_CRT_BLOCK` si realizan alguna llamada a funciones de la biblioteca en tiempo de ejecución de C que asignan memoria interna. Este tema también enumeran las consecuencias si el enlace de asignación no omite `_CRT_BLOCK` bloques (con ejemplos) y cómo cambiar la asignación predeterminada de la función, de enlace **CrtDefaultAllocHook**.  
+ Describe la restricción de las funciones de enlace de asignación consistente en omitir explícitamente los bloques `_CRT_BLOCK` si realizan alguna llamada a funciones de la biblioteca en tiempo de ejecución de C que asignan memoria interna. Este tema trata también las consecuencias que se producen si la función de enlace de asignación no omite los bloques `_CRT_BLOCK` (con ejemplos) y cómo cambiar la función de enlace de asignación predeterminada, **CrtDefaultAllocHook**.  
   
  [Funciones de enlace de informe](../debugger/report-hook-functions.md)  
  Analiza `_CrtSetReportHook`, que se puede utilizar para filtrar informes de modo que éstos se concentren en determinados tipos de asignaciones. Este tema también proporciona un prototipo.  
@@ -56,6 +51,3 @@ Esta sección describe varias funciones de enlace de depuración personalizadas 
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Técnicas de depuración de CRT](../debugger/crt-debugging-techniques.md)  
  Proporciona vínculos a técnicas de depuración para la biblioteca en tiempo de ejecución de C, tales como: uso de la Biblioteca de depuración de CRT, macros para informes, diferencias entre `malloc` y `_malloc_dbg`, creación de funciones de enlace de depuración, y la pila de depuración de CRT.
-
-
-

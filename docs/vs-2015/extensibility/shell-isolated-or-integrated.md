@@ -1,14 +1,9 @@
 ---
 title: Shell (aislado o integrado) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell
 - Visual Studio, Shell
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755880"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998251"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (aislado o integrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Puede crear su propia aplicación basada en Visual Studio en modo integrado o ai
  Con el fin de distribuir la aplicación de shell integrado o aislado, deberá incluir la aplicación, un especial shell integrado o aislado redistribuible y un programa de instalación. Para obtener más información acerca de la distribución e instalación, consulte [distribuir aplicaciones de Shell aislado](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
->  El [contrato de licencia de usuario final (CLUF)](https://www.visualstudio.com/en-us/support/legal/mt171552) integrado y aislado de Visual Studio shells incluye una sección acerca de la recopilación de datos (**sección 3. Datos**).  Describe los datos de uso de cliente que se pueden recopilar mediante Microsoft de los usuarios de que el software de shell integrado o aislado que se genera en la aplicación. Para obtener más información, consulte [Microsoft Visual Studio declaración familia de productos privacidad](https://www.visualstudio.com/en-us/dn948229).  
+>  El [contrato de licencia de usuario final (CLUF)](https://www.visualstudio.com/support/legal/mt171552) integrado y aislado de Visual Studio shells incluye una sección acerca de la recopilación de datos (**sección 3. Datos**).  Describe los datos de uso de cliente que se pueden recopilar mediante Microsoft de los usuarios de que el software de shell integrado o aislado que se genera en la aplicación. Para obtener más información, consulte [Microsoft Visual Studio declaración familia de productos privacidad](https://www.visualstudio.com/dn948229).  
 > 
 >  Si recopila datos de uso independiente de sus clientes a través de la aplicación, debe proporcionar aviso adecuado a los usuarios de la aplicación de lo que recopila.  Al distribuir el software de shell aislado o integrado como parte de la aplicación, según la licencia del Kit de desarrollo de Software de Visual Studio, debe incluir uno de los siguientes:  
 > 
@@ -64,4 +59,3 @@ Puede crear su propia aplicación basada en Visual Studio en modo integrado o ai
   
 ## <a name="see-also"></a>Vea también  
  [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-
