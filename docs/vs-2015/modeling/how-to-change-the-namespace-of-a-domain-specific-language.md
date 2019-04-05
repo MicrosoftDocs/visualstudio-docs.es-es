@@ -1,27 +1,24 @@
 ---
-title: 'Cómo: cambiar el Namespace de un lenguaje específico de dominio | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Cambiar el Namespace de un lenguaje específico de dominio | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, namespace
 ms.assetid: f20c47e5-230d-4f0e-812f-5c6edb86866c
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 19b756fb6957a22959614f63b93123f5cde817b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2a48c0692dcdcc93d58b5909b03b151ed7e1aae2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209032"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987833"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Cómo: Cambiar el espacio de nombres de los lenguajes específicos de dominio
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Filtrar Cambiar el espacio de nombres de un lenguaje específico de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede cambiar el espacio de nombres de un lenguaje específico de dominio. Debe realizar el cambio en el **DSL Explorer**, en las propiedades del proyecto de paquete de Dsl y en la información de ensamblado.  
@@ -59,7 +56,4 @@ Puede cambiar el espacio de nombres de un lenguaje específico de dominio. Debe 
 11. En el **compilar** menú, elija **recompilar solución**.  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de las herramientas de lenguajes específicos de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

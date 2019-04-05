@@ -1,12 +1,9 @@
 ---
 title: Crear proyectos de modelado UML y diagramas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.addnewdiagramdialog
 - vs.teamarch.createnewmodelingprojectdialog
@@ -27,13 +24,13 @@ ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988542"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Crear proyectos y diagramas de modelado UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,12 +152,9 @@ Los modelos UML ayudan a entender, analizar y diseñar sistemas de software. Vis
   
 |**Problema**|**Causas**|**Resolución**|  
 |---------------|----------------|--------------------|  
-|El proyecto de modelado no se puede abrir o cargar en la solución.<br /><br /> Se mostrará el mensaje siguiente:<br /><br /> "Uno o varios proyectos de la solución no se cargaron correctamente. Consulte la ventana de salida para obtener más información".<br /><br /> La ventana de salida muestra el siguiente mensaje:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: error: formato de Guid no reconocido."|Un proyecto de modelado contiene referencias a proyectos que tienen el mismo nombre y están en la misma solución.<br /><br /> Por ejemplo, una capa está vinculada a proyectos que tienen el mismo nombre y están en la misma solución.|Utilice un editor de texto para abrir el archivo del proyecto de modelado, quite las referencias y, a continuación, intente abrir de nuevo el proyecto de modelado.<br /><br /> Para evitar este problema, no agregue referencias a proyectos que tengan el mismo nombre. Asegúrese de que los proyectos tienen nombres únicos.|  
-|Faltan elementos en los diagramas que se agregan, copian o arrastran a otros proyectos de modelado o a otras ubicaciones de la solución.<br /><br /> o bien<br /><br /> Cuando intenta abrir un diagrama, se muestran los mensajes siguientes:<br /><br /> -"Algunas formas o conectores en el diagrama faltan porque no existen sus definiciones en este proyecto. Puede que las definiciones se eliminaran del modelo mientras se cerraba el diagrama o que se copiara el diagrama en un proyecto que no contiene esas definiciones".<br /><br /> O bien<br /><br /> -"Este documento está abierto en otro proyecto".|El archivo de diagrama se agregó, arrastró o copió desde un proyecto de modelado a otro proyecto de modelado o a otra ubicación de la solución.|Para copiar un archivo de diagrama, cree un diagrama nuevo y, a continuación, copie los elementos del diagrama de origen en el nuevo diagrama.|  
+|El proyecto de modelado no se puede abrir o cargar en la solución.<br /><br /> Se mostrará el mensaje siguiente:<br /><br /> "Uno o varios proyectos de la solución no se cargaron correctamente. Consulte la ventana de salida para obtener más información".<br /><br /> La ventana de salida muestra el siguiente mensaje:<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: error: Formato de Guid no reconocido".|Un proyecto de modelado contiene referencias a proyectos que tienen el mismo nombre y están en la misma solución.<br /><br /> Por ejemplo, una capa está vinculada a proyectos que tienen el mismo nombre y están en la misma solución.|Utilice un editor de texto para abrir el archivo del proyecto de modelado, quite las referencias y, a continuación, intente abrir de nuevo el proyecto de modelado.<br /><br /> Para evitar este problema, no agregue referencias a proyectos que tengan el mismo nombre. Asegúrese de que los proyectos tienen nombres únicos.|  
+|Faltan elementos en los diagramas que se agregan, copian o arrastran a otros proyectos de modelado o a otras ubicaciones de la solución.<br /><br /> o bien<br /><br /> Cuando intenta abrir un diagrama, se muestran los mensajes siguientes:<br /><br /> -"Algunas formas o conectores en el diagrama faltan porque no existen sus definiciones en este proyecto. Puede que las definiciones se eliminaran del modelo mientras se cerraba el diagrama o que se copiara el diagrama en un proyecto que no contiene esas definiciones".<br /><br /> o bien<br /><br /> -"Este documento está abierto en otro proyecto".|El archivo de diagrama se agregó, arrastró o copió desde un proyecto de modelado a otro proyecto de modelado o a otra ubicación de la solución.|Para copiar un archivo de diagrama, cree un diagrama nuevo y, a continuación, copie los elementos del diagrama de origen en el nuevo diagrama.|  
   
 ## <a name="see-also"></a>Vea también  
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Estructurar la solución de modelado](../modeling/structure-your-modeling-solution.md)
-
-
-

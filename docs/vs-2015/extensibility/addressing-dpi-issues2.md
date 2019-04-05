@@ -1,21 +1,17 @@
 ---
 title: Direccionamiento PPP problemas2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 542676de0efabcfa58945fc1572fc5539f52c209
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752530"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987702"
 ---
 # <a name="addressing-dpi-issues"></a>Solución de problemas de PPP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +96,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
 - espacio de int = DpiHelper.LogicalToDeviceUnitsX (10);  
   
-- alto de int = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- int height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
   Hay sobrecargas LogicalToDeviceUnits para permitir el escalado de objetos como Rect, punto y tamaño.  
   
@@ -151,7 +147,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 - Para los elementos de menú y las imágenes de iconografía, el <xref:System.Windows.Media.BitmapScalingMode> debe usarse cuando no hace que otros artefactos distorsión eliminar la tolerancia (en % de 200 y 300%).  
   
-- • Para zoom grande niveles no múltiplos de 100% (por ejemplo, 250% o % de 350), escala de imágenes de iconografía con bicúbica resultados en la interfaz de usuario aproximada, decoloración. Primera escala de la imagen con NearestNeighbor al múltiplo más grande del 100% (por ejemplo, 200% o 300%) y escalado en bicúbica desde allí se obtienen mejores resultados. Consulte el caso especial: prescaling imágenes WPF para PPP grande niveles para obtener más información.  
+- • Para zoom grande niveles no múltiplos de 100% (por ejemplo, 250% o % de 350), escala de imágenes de iconografía con bicúbica resultados en la interfaz de usuario aproximada, decoloración. Un mejor resultado se obtiene mediante la primera escala de la imagen con NearestNeighbor al múltiplo más grande del 100% (por ejemplo, 200% o 300%) y el escalado con bicúbica desde allí. Consulte el caso especial: prescaling imágenes WPF para PPP grande niveles para obtener más información.  
   
   La clase DpiHelper en el espacio de nombres Microsoft.VisualStudio.PlatformUI proporciona un miembro <xref:System.Windows.Media.BitmapScalingMode> que puede utilizarse para el enlace. Permitirá que el shell de Visual Studio controlar el modo de escalado en todo el producto de manera uniforme, según el factor de escala de PPP de mapa de bits.  
   
@@ -169,7 +165,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
  Alguna interfaz de usuario puede escalar independientemente del nivel de zoom de PPP de conjunto del sistema, como el editor de texto de Visual Studio y diseñadores de WPF (escritorio de WPF y Windows Store). En estos casos, no debe usarse DpiHelper.BitmapScalingMode. Para corregir este problema en el editor, el equipo del IDE creado una propiedad personalizada denominada RenderOptions.BitmapScalingMode. Establecer ese valor de propiedad en apoyen o NearestNeighbor según el nivel de zoom combinada del sistema y la interfaz de usuario.  
   
 ## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Caso especial: prescaling imágenes WPF para los grandes niveles de PPP  
- Para los niveles de zoom muy grandes que no sean múltiplos de 100% (por ejemplo, 250%, % de 350 etc.), escala de imágenes iconografía con bicúbica resultados en la interfaz de usuario aproximada, decoloración. La impresión de estas imágenes junto con texto claro es casi similar a la de una ilusión óptica. Las imágenes aparecerán a acercarse más al ojo y desenfocadas en relación con el texto. El resultado de escalado en este tamaño ampliada se puede mejorar mediante la primera escala de la imagen con NearestNeighbor al múltiplo más grande del 100% (por ejemplo, 200% o 300%) y escalado en bicúbica al resto (% de 50 adicional).  
+ Para los niveles de zoom muy grandes que no sean múltiplos de 100% (por ejemplo, 250%, % de 350 etc.), escala de imágenes iconografía con bicúbica resultados en la interfaz de usuario aproximada, decoloración. La impresión de estas imágenes junto con texto claro es casi similar a la de una ilusión óptica. Las imágenes aparecerán a acercarse más al ojo y desenfocadas en relación con el texto. Se puede mejorar el resultado de escalado en este tamaño ampliada por la primera escala de la imagen con NearestNeighbor al múltiplo más grande del 100% (por ejemplo, 200% o 300%) y el escalado con bicúbica al resto (% de 50 adicional).  
   
  El siguiente es un ejemplo de las diferencias en los resultados, donde se escala la primera imagen con el algoritmo de ajuste de escala doble mejorado -> 100% 200% -> 250% y la segunda se acaba con bicúbica 100% -> 250%.  
   
@@ -177,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Para habilitar la interfaz de usuario usar este ajuste de escala doble, el marcado XAML para mostrar cada elemento de imagen debe modificarse. Los ejemplos siguientes muestran cómo usar el ajuste de escala doble en WPF en Visual Studio mediante la biblioteca de DpiHelper y Shell.12/14.  
   
- Paso 1: Prescale la imagen a 200%, 300% y así sucesivamente con NearestNeighbor.  
+ Paso 1: Prescale la imagen de 200%, 300% y así sucesivamente con NearestNeighbor.  
   
  Prescale la imagen mediante cualquier un convertidor que se aplica en un enlace o con una extensión de marcado XAML. Por ejemplo:  
   
@@ -207,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- Paso 2: Asegurarse que el tamaño final es correcto para el valor de PPP actual.  
+ Paso 2: Asegúrese de que el tamaño final es correcto para el valor de PPP actual.  
   
  Dado que WPF escalará la interfaz de usuario para el valor de PPP actual mediante la propiedad BitmapScalingMode establecido en el UIElement, un control de imagen con una imagen prescaled como su origen tendrá un aspecto dos o tres veces mayor que la debería. Los siguientes son un par de formas para contrarrestar este efecto:  
   
@@ -366,4 +362,3 @@ public int GetHostInfo(DOCHOSTUIINFO info)
                        ref commandOutput);  
     }  
     ```
-

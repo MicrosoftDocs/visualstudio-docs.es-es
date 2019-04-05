@@ -1,33 +1,28 @@
 ---
 title: BuildProjectOnload (elemento) (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0b349ff80532bd8e724070fcc65183ac6897145f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 464c427008c739f23431c58bd647aaa3b1f5609d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742962"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986978"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Al crear y agregarlos a una solución se basa solo nuevos proyectos. No se compila la solución completa.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<BuildProjectOnLoad >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -89,4 +84,3 @@ Al crear y agregarlos a una solución se basa solo nuevos proyectos. No se compi
 ## <a name="see-also"></a>Vea también  
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-

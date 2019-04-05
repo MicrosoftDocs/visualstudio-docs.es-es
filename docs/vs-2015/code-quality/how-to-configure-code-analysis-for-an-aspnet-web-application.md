@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: configurar el análisis de código para una aplicación Web ASP.NET | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Configurar el análisis de código para una aplicación Web ASP.NET | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
 ms.assetid: b3000b31-fd9d-489e-81a2-a4bee49453ba
@@ -16,14 +11,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bf7450341dd166977d67639f4f3762fae6ef89c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cfc63c74755b10d7b3d274c0925d83b9a2d24c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283912"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988397"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Cómo: Configurar el análisis de código para una aplicación web ASP.NET
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Filtrar Configurar el análisis de código para una aplicación web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] puede seleccionar entre una lista de análisis de código *conjuntos de reglas* para aplicar a [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicación Web. El conjunto de reglas predeterminado es la reglas recomendadas de Microsoft Mininimum. Puede seleccionar otro conjunto de reglas para aplicar al sitio Web.  
@@ -51,6 +46,3 @@ En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](
     -   Seleccione  **\<examinar >** especificar una regla personalizada existente conjunto que no está en la lista.  
   
     -   Defina un conjunto de reglas personalizado. Para obtener más información, consulte [crear conjuntos de reglas personalizadas](../code-quality/creating-custom-code-analysis-rule-sets.md).
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Depurar el diseño mediante el explorador DOM | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988347"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Depurar el diseño mediante el Explorador DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > [!TIP]
 >  Los cambios que realizas en la pestaña **Diseño** no son permanentes. Puede hacer cambios permanentes en el código fuente y, después, actualizar la aplicación con el botón **Actualizar aplicación de Windows** (solo aplicaciones de la Tienda Windows y de la Tienda de Windows Phone) de la barra de herramientas Depurar. De esta manera, puedes evitar tener que reiniciar el depurador.  
   
- Para usar el explorador DOM para modificar aspectos del diseño que no se muestran en el modelo de cuadro, consulte [inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md) y [estilos CSS depurar mediante el explorador DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Para usar el explorador DOM para modificar aspectos del diseño que no se muestran en el modelo de cuadro, vea [inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md) y [estilos CSS depurar mediante el explorador DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Ejemplo de corrección de un problema de diseño  
  En este ejemplo, vemos cómo seleccionar un elemento de lista en la plantilla Hub/Pivot, interpretaremos los valores del modelo de cuadros que aparecen en la pestaña **Diseño** y, luego, cambiaremos uno de los valores de propiedad para solucionar un problema de diseño.  
@@ -88,7 +83,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 8.  Cambie a Visual Studio y haga clic en **Seleccionar elemento** en el Explorador DOM (o presione Ctrl+B). El modo de selección se modifica para que pueda seleccionar un elemento haciendo clic en él. Además, la aplicación se sitúa en primer plano. El modo se revierte al original al hacer clic.  
   
     > [!TIP]
-    >  También puede usar las teclas de dirección u otros métodos para seleccionar elementos HTML directamente en el Explorador DOM. Para obtener más información sobre la selección de elementos, vea [inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  También puede usar las teclas de dirección u otros métodos para seleccionar elementos HTML directamente en el Explorador DOM. Para obtener más información sobre la selección de elementos, vea [inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. En el emulador de Windows Phone o en el simulador, seleccione la parte derecha de color gris de una de las imágenes cortadas por la mitad. Aparecerá el resaltado alrededor del elemento seleccionado, tal como se muestra en el emulador de Windows Phone:  
   
@@ -132,9 +127,6 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 15. Cambie al emulador o al simulador de Windows Phone. Los valores margin-left actualizados se han aplicado a las imágenes de la sección 4. Estos valores también se han actualizado en la pestaña **Calculado** bajo la regla margin-left.  
   
 ## <a name="see-also"></a>Vea también  
- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Inicio rápido: Depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depurar estilos de CSS mediante el explorador DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Ver agentes de escucha de eventos DOM](../debugger/view-dom-event-listeners.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Depurador de código de ejemplo de navegación (JavaScript) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 4e2d1346-91d6-4935-9e70-130e369a4cb7
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6a1300d023ac7fbcf3007400c6c7dcb1caa8a750
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6102fd8eace3db19e44a0214ce7ce98278b53eea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764302"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988343"
 ---
 # <a name="debugger-navigation-sample-code-javascript"></a>Código de ejemplo de navegación del depurador (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,9 +108,9 @@ El código de este tema es el archivo de ejemplo para el [controlar la ejecució
         var b = 4;  
         var a = example4_a(2);  
         callTrack += "->example4";  
-        var multilpyByA = multiClosure(a);  
+        var multiplyByA = multiClosure(a);  
         a = 20;  
-        var x = multilpyByA(b);  
+        var x = multiplyByA(b);  
         return x;  
     }  
   
@@ -126,11 +121,11 @@ El código de este tema es el archivo de ejemplo para el [controlar la ejecució
   
     function multiClosure(num) {  
         var a = num;  
-        function mulitplyXby(b) {  
-            callTrack += "->mulitplyXby";  
+        function multiplyXby(b) {  
+            callTrack += "->multiplyXby";  
             return a * b;  
         }  
-        return mulitplyXby;  
+        return multiplyXby;  
     }  
   
     function example5() {  
@@ -177,6 +172,3 @@ El código de este tema es el archivo de ejemplo para el [controlar la ejecució
  })();  
   
 ```
-
-
-

@@ -1,29 +1,24 @@
 ---
-title: 'Cómo: crear un Control de cuadro de herramientas que usa Windows Forms | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear un Control de cuadro de herramientas que usa Windows Forms | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox control
 - winforms
 - toolbox
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7bb327ff7cd3909e4d860203322a9b72aa71fbf3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263723"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002533"
 ---
-# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Cómo: Crear un control Toolbox que use formularios Windows Forms
+# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Filtrar Crear un Control de cuadro de herramientas que usa Windows Forms
 La plantilla del control Toolbox de Windows Forms que se incluye en [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] le permite crear controles de formularios Windows Forms que se agregan automáticamente a **Toolbox** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un control **Toolbox** , que se puede distribuir a otros usuarios.  
   
 > [!NOTE]
@@ -92,7 +87,7 @@ La plantilla del control Toolbox de Windows Forms que se incluye en [!INCLUDE[vs
   
 2.  Cargue el archivo .vsix en una red o en un sitio web.  
   
-     Si va a cargar el archivo en el sitio web de la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) , otros usuarios pueden usar **Administrador de extensiones** en Visual Studio para buscar el control e instalarlo.  
+     Si va a cargar el archivo a la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sitio Web, otros usuarios pueden usar **Administrador de extensiones** en Visual Studio para buscar el control e instalarlo.  
   
 ## <a name="see-also"></a>Vea también  
  [Creación de un control de cuadro de herramientas de WPF](../extensibility/creating-a-wpf-toolbox-control.md)

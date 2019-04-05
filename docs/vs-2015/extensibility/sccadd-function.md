@@ -1,14 +1,9 @@
 ---
 title: SccAdd (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 29703be15369649df2208c1521a6636e5ccbefb9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6bcf8979f0240f60de1a6af9d7f6f4163ecf0af9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765841"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988829"
 ---
 # <a name="sccadd-function"></a>SccAdd (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ SCCRTN SccAdd(
  hWnd  
  [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
   
- n  
+ nFiles  
  [in] Número de archivos que se van a agregarse al proyecto actual como se indica en la `lpFileNames` matriz.  
   
  lpFileNames  
@@ -91,15 +86,14 @@ SCCRTN SccAdd(
   
 |Opción|Valor|Significado|  
 |------------|-----------|-------------|  
-|SCC_FILETYPE_AUTO|0 x 00|El complemento de control de origen debe detectar el tipo de archivo.|  
-|SCC_FILETYPE_TEXT|0 x 01|Indica un archivo de texto ASCII.|  
-|SCC_FILETYPE_BINARY|0 x 02|Indica un tipo de archivo que no sea texto ASCII.|  
+|SCC_FILETYPE_AUTO|0x00|El complemento de control de origen debe detectar el tipo de archivo.|  
+|SCC_FILETYPE_TEXT|0x01|Indica un archivo de texto ASCII.|  
+|SCC_FILETYPE_BINARY|0x02|Indica un tipo de archivo que no sea texto ASCII.|  
 |SCC_ADD_STORELATEST|0x04|Almacena sólo la última copia del archivo, no hay diferencias.|  
-|SCC_FILETYPE_TEXT_ANSI|0 x 08|Trata el archivo como texto ANSI.|  
-|SCC_FILETYPE_UTF8|0 x 10|Trata el archivo como texto Unicode en formato UTF8.|  
-|SCC_FILETYPE_UTF16LE|0 x 20|Trata el archivo como texto Unicode en UTF16 Little Endian formato.|  
+|SCC_FILETYPE_TEXT_ANSI|0x08|Trata el archivo como texto ANSI.|  
+|SCC_FILETYPE_UTF8|0x10|Trata el archivo como texto Unicode en formato UTF8.|  
+|SCC_FILETYPE_UTF16LE|0x20|Trata el archivo como texto Unicode en UTF16 Little Endian formato.|  
 |SCC_FILETYPE_UTF16BE|0x40|Trata el archivo como texto Unicode en UTF16 Big Endian de formato.|  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
-

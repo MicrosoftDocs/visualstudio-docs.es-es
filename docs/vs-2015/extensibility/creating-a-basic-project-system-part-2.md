@@ -1,14 +1,9 @@
 ---
 title: Creación de un sistema de proyectos básico, parte 2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753973"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987139"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Creación de un sistema de proyectos básico, parte 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -191,9 +186,9 @@ ZipProjects:
   
 1. Restablecer la instancia experimental de Visual Studio SDK.  
   
-    En [!INCLUDE[win7](../includes/win7-md.md)]: en el menú Inicio, busque el **Microsoft Visual Studio o Microsoft Visual Studio SDK/herramientas** carpeta y, a continuación, seleccione **restablecer la instancia de Microsoft Visual Studio Experimental**.  
+    En [!INCLUDE[win7](../includes/win7-md.md)]: En el menú Inicio, busque el **Microsoft Visual Studio o Microsoft Visual Studio SDK/herramientas** carpeta y, a continuación, seleccione **restablecer la instancia de Microsoft Visual Studio Experimental**.  
   
-    En versiones posteriores de Windows: en la pantalla Inicio, escriba **restablecer Microsoft Visual Studio \<versión > instancia Experimental**.  
+    En versiones posteriores de Windows: En la pantalla Inicio, escriba **restablecer Microsoft Visual Studio \<versión > instancia Experimental**.  
   
 2. Aparecerá una ventana de símbolo del sistema. Cuando vea las palabras `Press any key to continue`, haga clic en ENTRAR. Después de cerrar la ventana, abra Visual Studio.  
   
@@ -286,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ es el nombre proporcionado por el usuario en el **nuevo proyecto** cuadro de diálogo, puede modificado para quitar todos los caracteres no seguros y espacios.  
   
-  Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../ide/template-parameters.md).  Si desea crear su propio parámetro de plantilla personalizada, vea [NIB: Cómo: pasar parámetros personalizados a plantillas](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../ide/template-parameters.md).  Si desea crear su propio parámetro de plantilla personalizada, vea [NIB: Filtrar Pasar parámetros personalizados a plantillas](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Sustituir los parámetros de plantilla de proyecto  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. Cierre la instancia experimental de Visual Studio.  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

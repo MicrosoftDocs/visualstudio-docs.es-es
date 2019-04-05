@@ -1,11 +1,8 @@
 ---
-title: 'Cómo: crear aplicaciones de consola de flujo de trabajo de máquina de Estados (heredado) | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear aplicaciones de consola de flujo de trabajo de máquina de Estados (heredado) | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - console applications, state machine workflows
@@ -15,15 +12,15 @@ ms.assetid: d6170b5d-5d4f-48e1-8257-c78604f27eac
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a879838cceecc5229abf2c09b76208e4f42c5db8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bb6026def60be27535843a51d78c4c05657d385f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211502"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989192"
 ---
-# <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Cómo: Crear aplicaciones de consola de flujos de trabajo de equipo de estado (Heredado)
+# <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Filtrar Crear aplicaciones de consola de flujos de trabajo de máquina de estados (heredado)
 Siga estos pasos para crear un proyecto de aplicación de consola de flujos de trabajo de equipo de estado mediante el uso de [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado proporcionado por [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-state-machine-application-project"></a>Para crear un proyecto de aplicación de equipo de estado  

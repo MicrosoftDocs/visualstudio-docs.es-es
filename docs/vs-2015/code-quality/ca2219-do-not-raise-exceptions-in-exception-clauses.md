@@ -1,14 +1,9 @@
 ---
-title: 'CA2219: No producir excepciones en cláusulas de excepción | Microsoft Docs'
-ms.custom: ''
+title: 'CA2219: No producir excepciones en cláusulas de excepción | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotRaiseExceptionsInExceptionClauses
 - CA2219
@@ -20,12 +15,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2b5f08043985b6a2eb2b5fe0267fefb58ad00587
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 506b9d243ef83242b7e17c295dfc13ef9039d1f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891185"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986791"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: No producir excepciones en cláusulas de excepción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ ms.locfileid: "49891185"
 
 ## <a name="see-also"></a>Vea también
  [Advertencias de diseño](../code-quality/design-warnings.md)
-
-
-

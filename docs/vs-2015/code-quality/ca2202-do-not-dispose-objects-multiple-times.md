@@ -1,14 +1,9 @@
 ---
-title: 'CA2202: No desechar objetos varias veces | Microsoft Docs'
-ms.custom: ''
+title: 'CA2202: No desechar objetos varias veces | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2202
 - Do not dispose objects multiple times
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: de3bc29e6d843532e4c15db1e33673d4f63c5179
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b5968c0ba577893bae87e67dee3aa0e8a178e41
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830722"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988507"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: No aplicar Dispose a los objetos varias veces
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: No usar Dispose varias veces en objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -44,7 +39,7 @@ ms.locfileid: "49830722"
  Una correcta ejecución <xref:System.IDisposable.Dispose%2A> método puede llamarse varias veces sin producir una excepción. Sin embargo, esto no está garantizado y para evitar que se generen un <xref:System.ObjectDisposedException?displayProperty=fullName> no debe llamar a <xref:System.IDisposable.Dispose%2A> más de una vez en un objeto.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2000: Desechar (Dispose) objetos antes de perder el ámbito](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+ [CA2000: Eliminar objetos antes de perder el ámbito](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, cambie la implementación hasta que independientemente de la ruta de acceso del código, <xref:System.IDisposable.Dispose%2A> se llama solo una vez para el objeto.
@@ -90,6 +85,3 @@ finally
 
 ## <a name="see-also"></a>Vea también
  <xref:System.IDisposable?displayProperty=fullName> [Patrón de Dispose](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-

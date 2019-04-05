@@ -1,24 +1,19 @@
 ---
 title: Directrices de experiencia de usuario de Visual Studio | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0042fd8ef7aee9431a3268a33eece0ed2c3dbcad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02b01c2c1262d6c48f51f9c1867094913b8cd715
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802439"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002677"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Instrucciones para la experiencia de usuario de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,6 @@ Las instrucciones para la experiencia de usuario de Visual Studio están pensado
   
 - Estas directrices de Visual Studio, que son directrices específicas de la plataforma que sustituyen a las directrices generales de Windows siempre que sea apropiado para nuestro entorno.  
   
-- El [patrones y guías para las aplicaciones de Windows Store](https://dev.windows.com/design/interaction-ux) son una referencia para detectar patrones emergentes que puede usarse en algunas instancias dentro de Visual Studio.  
+- El [controles y patrones para aplicaciones UWP](/windows/uwp/design/controls-and-patterns) son una referencia para detectar patrones emergentes que puede usarse en algunas instancias dentro de Visual Studio.  
   
   Estas instrucciones le proporcionan información sobre qué hacer cuando se diseña para Visual Studio y, en algunos casos también se incluye información sobre cómo hacerlo. Para obtener más información de implementación y para obtener información sobre interfaces de programación (API que le permiten escribir código para soluciones que integran en el entorno de desarrollo integrado (IDE) de Visual Studio) de aplicación específica, use el [Kit de desarrollo de Software (SDK) de visual Studio](https://msdn.microsoft.com/library/bb166441.aspx).
-

@@ -1,12 +1,9 @@
 ---
 title: Agregar controles personalizados a la ventana de orígenes de datos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 dev_langs:
@@ -25,13 +22,13 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a7dbfb1b0636418971b2dffb6ff67ca2de5e211d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183643"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988764"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Agregar controles personalizados a la ventana de orígenes de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,14 +39,14 @@ Cuando se arrastra un elemento desde el **orígenes de datos** ventana a una sup
  Para obtener más información acerca de cómo seleccionar los controles enlazados a datos para crear elementos en el **orígenes de datos** ventana, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
->  Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, en el **herramientas** menú, seleccione **importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, en el **herramientas** menú, seleccione **importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="customizinglist"></a> Personalizar la lista de controles enlazables para un tipo de datos  
  Para agregar o quitar controles de la lista de controles disponibles para los elementos de la **orígenes de datos** ventana que tiene un tipo de datos específico, realice los pasos siguientes.  
   
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Para seleccionar los controles que se va a aparecer en un tipo de datos  
   
-1.  Asegúrese de que WPF Designer o el Diseñador de Windows Forms está abierto.  
+1.  Asegúrese de que el Diseñador de Windows Forms o de WPF está abierto.  
   
 2.  En el **orígenes de datos** , haga clic en un elemento que forma parte de un origen de datos agrega a la ventana y, a continuación, haga clic en el menú desplegable para el elemento.  
   
@@ -102,4 +99,3 @@ Cuando se arrastra un elemento desde el **orígenes de datos** ventana a una sup
   
 ## <a name="see-also"></a>Vea también  
  [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-

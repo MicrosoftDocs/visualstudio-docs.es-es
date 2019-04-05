@@ -1,13 +1,8 @@
 ---
 title: Usar puntos de interrupción | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -45,13 +40,13 @@ ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ff5858482f64e8e73844c433febe8033b7ab1d70
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765953"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58988088"
 ---
 # <a name="using-breakpoints"></a>Usar puntos de interrupción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
   
  En este punto, el valor de `testInt` sigue siendo 1.  
   
- Puede consultar el estado actual de la aplicación, incluidos los valores de variable y la pila de llamadas. Para más información sobre la pila de llamadas, vea [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md).  
+ Puede consultar el estado actual de la aplicación, incluidos los valores de variable y la pila de llamadas. Para obtener más información acerca de la pila de llamadas, vea [Cómo: usar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).  
   
  Los puntos de interrupción pueden establecerse en cualquier línea de código ejecutable. Por ejemplo, en el código de C# anterior se puede establecer un punto de interrupción en la declaración de variable, en el bucle `for` o en cualquier código incluido dentro del bucle `for` , pero no en las declaraciones de clase o espacio de nombres ni en la signatura del método.  
   
@@ -76,7 +71,7 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
  También se pueden establecer puntos de interrupción en la pila de llamadas, en la ventana Desensamblado y, en código de C++ nativo, en una condición de datos o dirección de memoria.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Establecer un punto de interrupción en la ventana Pila de llamadas  
- Puede interrumpir la ejecución en la instrucción o línea que devuelve una función de llamada para establecer un punto de interrupción en la ventana **Pila de llamadas** . Para más información sobre la pila de llamadas, vea [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md). El depurador debe estar detenido.  
+ Puede interrumpir la ejecución en la instrucción o línea que devuelve una función de llamada para establecer un punto de interrupción en la ventana **Pila de llamadas** . Para obtener más información acerca de la pila de llamadas, vea [Cómo: usar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md). El depurador debe estar detenido.  
   
 1. Empiece a depurar la aplicación y espere a que se detenga la ejecución (por ejemplo, en un punto de interrupción). Abra la ventana **Pila de llamadas** (**Depurar/Ventanas/Pila de llamadas**o **CTRL+ALT+C**).  
   
@@ -155,7 +150,7 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
   
    Al activar la casilla **Condiciones** , la ventana se expande para mostrar los diferentes tipos de condiciones.  
   
-   **Expresión condicional:** si se selecciona “Expresión condicional”, se pueden elegir dos condiciones, **Es true** y **Cuando cambie**. Elija **Es true** si desea interrumpir cuando la expresión se cumple o elija **Cuando cambie** si desea interrumpir cuando el valor de la expresión cambie.  
+   **Expresión condicional:** Cuando se selecciona la expresión condicional, a continuación, puede elegir dos condiciones: **Es true** y **cuando cambia**. Elija **Es true** si desea interrumpir cuando la expresión se cumple o elija **Cuando cambie** si desea interrumpir cuando el valor de la expresión cambie.  
   
    En el siguiente ejemplo, el punto de interrupción se alcanza únicamente cuando el valor de `testInt` es **4**:  
   
@@ -259,6 +254,3 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
   
 ## <a name="see-also"></a>Vea también  
  [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md)
-
-
-

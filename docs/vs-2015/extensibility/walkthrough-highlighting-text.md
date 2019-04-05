@@ -1,28 +1,23 @@
 ---
-title: 'Tutorial: Resaltar texto | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Resaltar texto | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d4fad243b109cb8522f15e30d628d5eb27c09c07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5600f30df21e73fb4474839aee3bc6ab1eced761
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986674"
 ---
-# <a name="walkthrough-highlighting-text"></a>Tutorial: Resaltado de texto
+# <a name="walkthrough-highlighting-text"></a>Tutorial: Resaltar texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede agregar distintos efectos visuales en el editor mediante la creación de componentes de Managed Extensibility Framework (MEF). Este tutorial muestra cómo resaltar todas las apariciones de la palabra actual en un archivo de texto. Si una palabra que aparezca más de una vez en un archivo de texto y coloca el símbolo de intercalación de una ocurrencia, se resaltan todas las apariciones.  
@@ -413,5 +408,4 @@ Puede agregar distintos efectos visuales en el editor mediante la creación de c
 4.  Coloque el cursor en una de las apariciones de "hello". Todas las apariciones deben aparecer resaltadas en color azul.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
