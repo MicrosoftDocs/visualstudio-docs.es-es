@@ -1,25 +1,22 @@
 ---
 title: Implementar un procesador de directivas personalizado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998650"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
  A continuación se indican los métodos que puede usar:  
   
-- [Extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Proporciona una manera de instalar y desinstalar el procesador de directivas tanto en el propio equipo como en otros equipos. Por lo general, puede empaquetar otras características en la misma extensión VSIX.  
+- [Extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Proporciona una manera de instalar y desinstalar el procesador de directivas tanto en el propio equipo como en otros equipos. Por lo general, puede empaquetar otras características en la misma extensión VSIX.  
   
 - [VSPackage](../extensibility/internals/vspackages.md). Si define un paquete de VS que contiene otras características además del procesador de directivas, este constituye un método práctico para registrar el procesador de directivas.  
   
@@ -37,7 +34,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   Solamente debe usar uno de estos métodos si desea transformar la plantilla de texto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Si utiliza un host personalizado en su propia aplicación, el host personalizado es el responsable de localizar los procesadores de directivas para cada directiva.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Implementar un procesador de directivas en una extensión VSIX  
- Puede agregar un procesador de directivas personalizado a un [extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ Puede agregar un procesador de directivas personalizado a un [extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Debe asegurarse de que los dos elementos siguientes están incluidos en el archivo .vsix:  
   
@@ -189,7 +186,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
    Si el procesador de directivas personalizado no se encuentra en la GAC, las subclaves del Registro deben ser similares a las que aparecen en la siguiente tabla:  
   
-|nombre|Tipo|Datos|  
+|Name|Tipo|Datos|  
 |----------|----------|----------|  
 |(Predeterminado)|REG_SZ|(valor no establecido)|  
 |Clase|REG_SZ|**\<Nombre de Namespace >. \<Nombre de clase >**|  
@@ -197,7 +194,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
  Si el ensamblado se encuentra en la GAC, las subclaves del Registro deben ser similares a las que se muestran en la siguiente tabla:  
   
-|nombre|Tipo|Datos|  
+|Name|Tipo|Datos|  
 |----------|----------|----------|  
 |(Predeterminado)|REG_SZ|(valor no establecido)|  
 |Clase|REG_SZ|\<**El nombre de clase completo**>|  
@@ -205,6 +202,3 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
 ## <a name="see-also"></a>Vea también  
  [Crear procesadores de directivas personalizadas para las plantillas de texto T4](../modeling/creating-custom-t4-text-template-directive-processors.md)
-
-
-
