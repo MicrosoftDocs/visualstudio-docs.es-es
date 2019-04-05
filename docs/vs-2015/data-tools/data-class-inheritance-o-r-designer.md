@@ -1,23 +1,20 @@
 ---
 title: (Object Relational Designer) de la herencia de clases de datos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ae36d6aac3ea9a4ff4de73dea57207b6f03abc72
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cb78a5c1962d855a2e191d16487a52d5f94c9567
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995431"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Herencia de clases de datos (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,12 +24,12 @@ Al igual que otros objetos, las clases de [!INCLUDE[vbtecdlinq](../includes/vbte
   
  En la herencia de tabla única, hay una tabla de base de datos única que contiene columnas para las clases base y las derivadas. En el caso de datos relacionales, una columna discriminadora contiene el valor que determina la clase a la que pertenece un registro determinado. Por ejemplo, consideremos una tabla Persons que contiene todas las personas que trabajan en una compañía. Algunas personas son los empleados y otras son los directores. La tabla Persons contiene una columna denominada Type que tiene el valor 1 para directores y el valor 2 para empleados. La columna Type es la columna discriminadora. En este escenario, puede crear una subclase de empleados y rellenar la clase únicamente con los registros cuyo Type tiene el valor 2.  
   
- Al configurar la herencia de clases de entidad mediante el uso de la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], arrastre la tabla única que contiene los datos de la herencia en el Diseñador de dos veces: una vez para cada clase en la jerarquía de herencia. Después de agregar las tablas al diseñador, conéctelas con un elemento de la herencia de la **Object Relational Designer** del cuadro de herramientas y, a continuación, establezca las cuatro propiedades de herencia en el **propiedades** ventana.  
+ Al configurar la herencia en clases de entidad mediante el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], arrastre dos veces la tabla única que contiene los datos de la herencia hacia el diseñador: una vez por cada clase en la jerarquía de herencia. Después de agregar las tablas al diseñador, conéctelas con un elemento Herencia del cuadro de herramientas **Object Relational Designer** y después establezca las cuatro propiedades de herencia en la ventana **Propiedades**.  
   
 ## <a name="inheritance-properties"></a>Propiedades de herencia  
  En la tabla siguiente se muestran las propiedades de herencia y sus descripciones:  
   
-|Propiedad|Descripción|  
+|Property|Descripción|  
 |--------------|-----------------|  
 |Propiedad Discriminator|La propiedad (asignada a la columna) que determina a qué clase pertenece el registro actual.|  
 |Valor de discriminador de clase base|El valor (en la columna designada como la propiedad Discriminator) que determina que un registro es de la clase base.|  
@@ -51,4 +48,3 @@ Al igual que otros objetos, las clases de [!INCLUDE[vbtecdlinq](../includes/vbte
  [Tutorial: Crear clases LINQ to SQL (Object Relational Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [Tutorial: Crear clases LINQ to SQL con herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
  [Introducción](http://msdn.microsoft.com/library/db8a557a-fef8-4f4f-bb91-8cff7250ee25)
-

@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: aplicar tareas de edición en modo de interrupción con Editar y continuar | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Aplicar tareas de edición en modo de interrupción con Editar y continuar | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -28,15 +23,15 @@ ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5f6024d0c00e492110d7d34172cf225e4712f213
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd247cd50566130504110bd37c4b87f9e4783ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807509"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998490"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Cómo: Aplicar tareas de edición en modo de interrupción con Editar y continuar
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Filtrar Aplicar tareas de edición en modo de interrupción con Editar y continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede utilizar la opción Editar y continuar para modificar el código en modo de interrupción y, posteriormente, continuar sin detener ni reiniciar la ejecución.  
@@ -47,7 +42,7 @@ Puede utilizar la opción Editar y continuar para modificar el código en modo d
   
 -   Depuración de SQL.  
   
--   Depuración de un volcado de Dr. Volcado de memoria de Watson.  
+-   Depuración de un volcado de Dr. Watson.  
   
 -   Edición de código tras una excepción no controlada, cuando no se ha seleccionado la opción **Desenredar la pila de llamadas de las excepciones no controladas** .  
   
@@ -65,11 +60,11 @@ Puede utilizar la opción Editar y continuar para modificar el código en modo d
   
 1.  Entre en el modo de interrupción siguiendo uno de estos pasos:  
   
-    -   Establezca un punto de interrupción en el código y luego elija **Iniciar depuración** desde el **depurar** menú y espere a que la aplicación en el punto de interrupción.  
+    -   Establezca un punto de interrupción en el código y, a continuación, elija **Iniciar depuración** en el menú **Depurar**. Luego, espere a que la aplicación llegue al punto de interrupción.  
   
          -O bien-  
   
-    -   Inicie la depuración y, a continuación, seleccione **interrumpir todos** desde el **depurar** menú.  
+    -   Inicie la depuración y, a continuación, seleccione **Interrumpir todo** en el menú **Depurar**.  
   
          -O bien-  
   
@@ -82,13 +77,10 @@ Puede utilizar la opción Editar y continuar para modificar el código en modo d
     > [!NOTE]
     >  Si intenta realizar un cambio en el código no permitido por Editar y continuar, el cambio quedará subrayado con una línea ondulada de color púrpura y aparecerá una tarea en la Lista de tareas. No podrá reanudar la ejecución del código hasta que deshaga este cambio no válido en el código.  
   
-3.  En el **depurar** menú, haga clic en **continuar** para reanudar la ejecución.  
+3.  En el menú **Depurar**, haga clic en **Continuar** para reanudar la ejecución.  
   
      El código se ejecutará con los cambios aplicados incorporados al proyecto.  
   
 ## <a name="see-also"></a>Vea también  
  [Ediciones no compatibles en Visual Basic, edición y continuar](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
  [Editar y continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
-title: 'Cómo: crear LINQ to SQL asignadas a tablas y vistas (Object Relational Designer) que las clases | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Creación de LINQ to SQL asignadas a tablas y vistas (Object Relational Designer) que las clases | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 550fc362cf1652df48e029461a4d5fbdc6f04006
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c2be46e61438c555fc7ee7d523b3ff9b758c0a15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996808"
 ---
-# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Cómo: crear LINQ clases to SQL asignadas a tablas y vistas (Object Relational Designer)
+# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Filtrar Creación de clases de LINQ to SQL asignadas a tablas y vistas (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Clases LINQ to SQL que se asignan a tablas de base de datos y vistas se denominan *las clases de entidad*. La clase de entidad se asigna a un registro, mientras que las propiedades individuales de una clase de entidad se asignan a las columnas individuales que forman un registro. Crear clases de entidad que se basan en las tablas de base de datos o vistas arrastrando tablas o vistas desde **Explorador de servidores**/**Database Explorer** hasta la [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). El [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] genera las clases y aplica las específicas [! LINQ para atributos de SQL para habilitar [! LINQ a la funcionalidad SQL (la comunicación de datos y editar las capacidades de la <xref:System.Data.Linq.DataContext>). Para obtener información detallada acerca de [! Clases LINQ to SQL, vea [el modelo LINQ to SQL objeto](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
 
@@ -29,7 +26,7 @@ Clases LINQ to SQL que se asignan a tablas de base de datos y vistas se denomina
 ## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Crear clases de LINQ to SQL asignadas a tablas o vistas de base de datos
  Al arrastrar tablas o vistas desde **Explorador de servidores**/**Database Explorer** hasta la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] crea clases de entidad además el <xref:System.Data.Linq.DataContext> métodos que se usan para realizar actualizaciones.
 
- De forma predeterminada, el [! LINQ to SQL en tiempo de ejecución crea lógica para guardar los cambios en la base de datos de una clase de entidad actualizable. Esta lógica se basa en el esquema de la tabla (las definiciones de columna e información de la clave principal). Si no desea este comportamiento, puede configurar una clase de entidad para usar los procedimientos almacenados para realizar inserciones, actualizaciones y eliminaciones en lugar de usar el valor predeterminado [! LINQ al comportamiento en tiempo de ejecución SQL. Para obtener más información, consulte [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+ De forma predeterminada, el [! LINQ to SQL en tiempo de ejecución crea lógica para guardar los cambios en la base de datos de una clase de entidad actualizable. Esta lógica se basa en el esquema de la tabla (las definiciones de columna e información de la clave principal). Si no desea este comportamiento, puede configurar una clase de entidad para usar los procedimientos almacenados para realizar inserciones, actualizaciones y eliminaciones en lugar de usar el valor predeterminado [! LINQ al comportamiento en tiempo de ejecución SQL. Para obtener más información, vea [Cómo: Asignación de procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -46,22 +43,22 @@ Clases LINQ to SQL que se asignan a tablas de base de datos y vistas se denomina
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Para crear un origen de datos de objeto basándose en las clases de entidad de LINQ to SQL
 
-1.  En el **compilar** menú, haga clic en **compilar solución** para compilar el proyecto.
+1.  Para compilar el proyecto, en el menú **Compilar**, haga clic en **Compilar solución**.
 
 2.  En el menú **Datos** , haga clic en **Mostrar orígenes de datos**.
 
 3.  En la ventana **Orígenes de datos** , seleccione **Agregar nuevo origen de datos**.
 
-4.  Haga clic en **objeto** en el **elegir un tipo de origen de datos** página y, a continuación, haga clic en **siguiente**.
+4.  Haga clic en **Objeto** en la página **Elegir un tipo de origen de datos** y después haga clic en **Siguiente**.
 
 5.  Expanda los nodos y, a continuación, busque y seleccione la clase.
 
     > [!NOTE]
-    > Si el **cliente** clase no está disponible, cancele el asistente, compile el proyecto y vuelva a ejecutar el asistente.
+    > Si la clase **Customer** no está disponible, cierre el asistente, compile el proyecto y vuelva a ejecutar el asistente.
 
-6.  Haga clic en **finalizar** para crear el origen de datos y agregar el **cliente** clase de entidad para el **orígenes de datos** ventana.
+6.  Haga clic en **Finalizar** para crear el origen de datos y agregar la clase de entidad **Customer** a la ventana **Orígenes de datos**.
 
-7.  Arrastre elementos desde el **orígenes de datos** ventana en un formulario.
+7.  Arrastre los elementos desde la ventana **Orígenes de datos** a un formulario.
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +67,6 @@ Clases LINQ to SQL que se asignan a tablas de base de datos y vistas se denomina
 - [Métodos DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Cómo: Crear métodos DataContext asignados a funciones y procedimientos almacenados (Object Relational Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [Modelo de objetos de LINQ to SQL](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)
-- [Tutorial: Personalizar el comportamiento de inserción, actualización y eliminación de las clases de entidad](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
+- [Tutorial: Personalizar el comportamiento de inserción, actualización y eliminación de clases de entidad](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
 - [Tutorial: Agregar validación a clases de entidad](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
 - [Cómo: Crear una asociación (relación) entre clases de LINQ to SQL (Object Relational Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

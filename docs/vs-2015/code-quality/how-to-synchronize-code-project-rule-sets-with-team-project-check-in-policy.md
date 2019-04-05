@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: sincronizar conjuntos de reglas del proyecto de código con la directiva de comprobación del proyecto de equipo | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Sincronizar conjuntos de reglas del proyecto de código con la directiva de comprobación del proyecto de equipo | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -16,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f79b8baf3740fdbd57828552a192746e839578c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263125"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995140"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Cómo: Sincronizar conjuntos de reglas del proyecto de código con la directiva de protección del proyecto de equipo
+# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Filtrar Sincronizar conjuntos de reglas del proyecto de código con la directiva de protección del proyecto de equipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sincronizar la configuración de análisis de código para proyectos de código a la directiva de protección del proyecto de equipo mediante la especificación de un conjunto de reglas que contenga al menos las reglas que se especifican en el conjunto de reglas para la directiva de protección. El responsable de desarrollo puede informar a los que el nombre y la ubicación de la regla establecida para la directiva de protección. Puede usar una de las opciones siguientes para asegurarse de que el análisis de código para el proyecto usa el conjunto correcto de reglas:  
@@ -60,7 +55,7 @@ Sincronizar la configuración de análisis de código para proyectos de código 
   
 1.  Siga uno de los procedimientos anteriores de este tema para seleccionar la directiva de protección del proyecto de equipo en la página de análisis de código del cuadro de diálogo de configuración de proyecto.  
   
-2.  Haga clic en **abierto**.  
+2.  Haga clic en **Abrir**.  
   
 3.  Agregar o quitar reglas mediante el editor de conjunto de reglas.  
   
@@ -73,6 +68,3 @@ Sincronizar la configuración de análisis de código para proyectos de código 
 6.  En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >**.  
   
 7.  En el **abierto** diálogo cuadro, especifique el archivo de conjunto de la regla.
-
-
-

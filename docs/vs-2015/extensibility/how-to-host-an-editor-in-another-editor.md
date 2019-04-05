@@ -1,28 +1,23 @@
 ---
-title: 'Cómo: hospedar un Editor en otro Editor | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Hospedar un Editor en otro Editor | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - host a nested editor
 ms.assetid: 2b0eb705-fe94-4ca8-93e0-9dbd8ce61a44
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fead1aa7b1094fe5bcd1cac989b6853d3564b00b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 38e47e918683d375f6a6baded2bf946a60020e64
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995872"
 ---
-# <a name="how-to-host-an-editor-in-another-editor"></a>Cómo: hospedar un Editor en otro Editor
+# <a name="how-to-host-an-editor-in-another-editor"></a>Filtrar Hospedar un Editor en otro Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En Visual Studio puede alojar un editor dentro de otra mediante la especificación de la ventana de hospedaje como una ventana primaria. Para ello, establezca los parámetros <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> y <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> en el marco de ventana secundaria.  
@@ -45,4 +40,3 @@ En Visual Studio puede alojar un editor dentro de otra mediante la especificaci�
   
 ## <a name="robust-programming"></a>Programación sólida  
  El **Application Designer** en Visual Studio Team Edition para Architects es un ejemplo de un marco de ventana del editor hospeda otro editor. El **Application Designer** hospeda otros diseñadores en el panel derecho. Un panel del diseñador (o **propiedades** página) para cada uno de los diseñadores contenidos se agrega en el marco de ventana que lo contiene.
-
