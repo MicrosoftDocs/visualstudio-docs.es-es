@@ -1,11 +1,8 @@
 ---
 title: Cuadro de diálogo Editor de condiciones de regla (heredado) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleConditionDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8237c8e29007d010cd99e4323bf8e88a23b7e9fb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838548"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58988055"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Editor de condiciones de reglas (Cuadro de diálogo) (Heredado)
 Este tema se describe cómo usar el **Editor de condiciones de regla** cuadro de diálogo heredado [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -47,7 +44,7 @@ Este tema se describe cómo usar el **Editor de condiciones de regla** cuadro de
 |Elemento de la interfaz de usuario|Descripción|  
 |----------------|-----------------|  
 |**Condición:**|Escriba la expresión para la condición de la regla.|  
-|**VALE**|Haga clic en esta opción para guardar la condición de la regla.|  
+|**OK**|Haga clic en esta opción para guardar la condición de la regla.|  
   
 ## <a name="entering-condition-expressions"></a>Escribir expresiones de condiciones  
  Las expresiones de condiciones se escriben como texto. Puede escribir **esto.** en el editor para hacer referencia a campos, propiedades y métodos utilizados en el flujo de trabajo, mediante un menú tipo IntelliSense. También puede escribir directamente un nombre de miembro del flujo de trabajo. Puede agregar operadores lógicos a la condición, por ejemplo AND, OR y NOT. También puede agregar predicados. Un predicado es un operador binario y dos operandos. Los operadores binarios admitidos son **==**, **>**, **\<**, **>=**, y **<=**. Los operandos admitidos son valor constante, función aritmética y miembros con ámbito público.  
@@ -62,7 +59,7 @@ Este tema se describe cómo usar el **Editor de condiciones de regla** cuadro de
   
 - Operadores aritméticos: +, - , *, /, MOD  
   
-- Operadores lógicos: Y, & &, OR, &#124; &#124;, NOT,!  
+- Operadores lógicos: Y, &AMP; &AMP;, OR, &AMP;#124; &AMP;#124;, NOT,!  
   
 - Operadores bit a bit: &,&#124;  
   
@@ -85,7 +82,7 @@ Este tema se describe cómo usar el **Editor de condiciones de regla** cuadro de
   Para obtener más información acerca de las condiciones, consulte [usar condiciones en flujos de trabajo](http://go.microsoft.com/fwlink?LinkID=65009).  
   
 ## <a name="see-also"></a>Vea también  
- [Actividad IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   
+ [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   
  [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)   
  [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)   
  [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)   

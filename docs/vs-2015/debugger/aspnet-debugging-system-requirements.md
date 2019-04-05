@@ -1,14 +1,9 @@
 ---
-title: 'Depuración ASP.NET: Requisitos del sistema | Microsoft Docs'
-ms.custom: ''
+title: 'Depuración ASP.NET: Requisitos del sistema | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 7810b9b2-debf-4271-8fc7-1df031123255
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 16fcebe8ecb5fff974d5df6e2405acca546ea007
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793807"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987601"
 ---
-# <a name="aspnet-debugging-system-requirements"></a>Depuración ASP.NET: requisitos del sistema
+# <a name="aspnet-debugging-system-requirements"></a>Depuración ASP.NET: Requisitos del sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describen los requisitos de software y seguridad de los escenarios de depuración de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
@@ -47,9 +42,9 @@ En este tema se describen los requisitos de software y seguridad de los escenari
   
  Para depurar el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , debe tener permiso para depurar dicho proceso. De forma predeterminada, las aplicaciones de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se ejecutan como el usuario **ASPNET** . Si el proceso de trabajo se ejecuta con la cuenta **ASPNET**o **NETWORK SERVICE**, deberá tener privilegios de administrador para depurarlo.  
   
- El nombre del proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varía en función del escenario de depuración y de la versión de IIS. Para obtener más información, consulta [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
+ El nombre del proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varía en función del escenario de depuración y de la versión de IIS. Para obtener más información, vea [Cómo: Búsqueda del nombre de un proceso de ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
- Puede cambiar la cuenta de usuario en la que se ejecuta el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] editando el archivo machine.config en el servidor que ejecuta IIS. La mejor manera de hacerlo es mediante el **Administrador de Internet Information Services (IIS)**. Para obtener más información, consulte [Cómo: ejecutar el trabajo proceso bajo una cuenta de usuario](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
+ Puede cambiar la cuenta de usuario en la que se ejecuta el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] editando el archivo machine.config en el servidor que ejecuta IIS. La mejor manera de hacerlo es mediante el **Administrador de Internet Information Services (IIS)**. Para obtener más información, vea [Cómo: Ejecución de un proceso de trabajo en una cuenta de usuario](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
  Si cambia el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para que se ejecute en su propia cuenta de usuario, no tiene porqué ser administrador en el servidor que esté ejecutando IIS.  
   
@@ -57,8 +52,5 @@ En este tema se describen los requisitos de software y seguridad de los escenari
 >  Antes de cambiar el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para que se ejecute en una cuenta diferente, tenga en cuenta las posibles consecuencias de que el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pudiera sufrir intrusiones mientras se ejecute en dicha cuenta. Las cuentas de usuario ASPNET y NETWORK SERVICE se ejecutan con permisos mínimos, lo que reduce los posibles daños si el proceso sufre alguna intrusión. Si debe cambiar el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para que se ejecute en una cuenta que tenga permisos superiores, el daño puede ser mayor.  
   
 ## <a name="see-also"></a>Vea también  
- [Depuración de aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Cómo: Ejecutar el proceso de trabajo en una cuenta de usuario](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
-
-
-
+ [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [Cómo: Ejecución de un proceso de trabajo en una cuenta de usuario](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

@@ -1,27 +1,22 @@
 ---
 title: Soporte técnico de servicio de lenguaje para la depuración | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger, language support
 - language services, debugging support
 ms.assetid: 7a44067f-a410-4a6a-84d2-bda5184140bc
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7141c7a6b3845edda6888e1ed33abfbf8af37988
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7be41a5078e9f8dc009dda0d34394092234cd7e6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809693"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989039"
 ---
 # <a name="language-service-support-for-debugging"></a>Compatibilidad del servicio de lenguaje con la depuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,4 +33,3 @@ Un servicio de lenguaje puede proporcionar características que admiten un depur
  El tipo de compilador determina lo que necesita hacer para implementar la depuración para su idioma. Si el compilador tiene como destino el sistema operativo de Windows y escribe un archivo .pdb, puede depurar programas con el motor que está integrado en Visual Studio de depuración de código nativo. Si el compilador genera el lenguaje intermedio de Microsoft (MSIL), puede depurar programas con el motor, que también está integrada en Visual Studio de depuración de código administrado. Si el compilador tiene como destino un sistema operativo de propietario o un entorno de tiempo de ejecución diferente, deberá escribir su propio motor de depuración.  
   
  Para obtener más información sobre la implementación de depuración para su idioma, consulte [Introducción](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) en el SDK de depuración de Visual Studio.
-

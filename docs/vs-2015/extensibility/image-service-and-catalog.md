@@ -1,21 +1,17 @@
 ---
 title: Servicio y el catálogo de imágenes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0e01d60bd7fab0b435f1b10ae744c3454aa0e44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774372"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59002276"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +107,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |**Subelemento**|**Definición**|  
 |Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual|  
 |GUID|El símbolo representa un GUID y debe coincidir con el formato de GUID|  
-|Id.|El símbolo representa un identificador y debe ser un entero no negativo|  
+|ID|El símbolo representa un identificador y debe ser un entero no negativo|  
 |String|El símbolo representa un valor de cadena arbitrario|  
 
  Los símbolos son distingue mayúsculas de minúsculas y que se hace referencia mediante la sintaxis $(symbol-name):  
@@ -130,7 +126,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |CommonProgramFiles|El valor de la variable de entorno % CommonProgramFiles %|  
 |LocalAppData|El valor de la variable de entorno % LocalAppData %|  
 |ManifestFolder|La carpeta que contiene el archivo de manifiesto|  
-|Mis documentos|La ruta de acceso completa de la carpeta Mis documentos del usuario actual|  
+|MyDocuments|La ruta de acceso completa de la carpeta Mis documentos del usuario actual|  
 |ProgramFiles|El valor de la variable de entorno % ProgramFiles %|  
 |Sistema|La carpeta Windows\System32|  
 |WinDir|El valor de la variable de entorno % WinDir %|  
@@ -152,7 +148,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |-|-|  
 |**Attribute**|**Definición**|  
 |GUID|[Obligatorio] La parte GUID del moniker de imagen|  
-|Id.|[Obligatorio] La parte del identificador de moniker de la imagen|  
+|ID|[Obligatorio] La parte del identificador de moniker de la imagen|  
 |AllowColorInversion|[Opcional, true de forma predeterminada] Indica si la imagen puede tener sus colores invertidos mediante programación cuando se utiliza en un fondo oscuro.|  
 
  **Origen**  
@@ -170,7 +166,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Attribute** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definición**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |      URI      |                                                                                                                                                                                                                                                                                                               [Obligatorio] Un URI que define dónde se puede cargar la imagen desde. Puede ser uno de los siguientes:<br /><br /> -A [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mediante la aplicación: / / / entidad<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo                                                                                                                                                                                                                                                                                                               |
-|  Fondo   | [Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> *Luz:* se puede usar el origen en un fondo claro.<br /><br /> <em>Oscuro:</em>se puede usar el origen en un fondo oscuro.<br /><br /> *Contraste alto:* el origen se puede usar en cualquier en segundo plano en modo de contraste alto.<br /><br /> *HighContrastLight:* se puede usar el origen en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* se puede usar el origen en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo en segundo plano, el origen puede usarse en cualquier en segundo plano.<br /><br /> Si está en segundo plano *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, nunca se invierten los colores de origen. Si se omite o se establece en fondo *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo. |
+|  Fondo   | [Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> *Luz:* El origen puede utilizarse en un fondo claro.<br /><br /> <em>Oscuro:</em>se puede usar el origen en un fondo oscuro.<br /><br /> *Contraste alto:* El origen puede utilizarse en cualquier en segundo plano en modo de contraste alto.<br /><br /> *HighContrastLight:* El origen puede utilizarse en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* El origen puede utilizarse en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo en segundo plano, el origen puede usarse en cualquier en segundo plano.<br /><br /> Si está en segundo plano *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, nunca se invierten los colores de origen. Si se omite o se establece en fondo *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Un \<origen > elemento puede tener exactamente uno de los siguientes subelementos opcionales:  
@@ -179,9 +175,9 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |-|-|-|  
 |**Element**|**Atributos (todas requeridas)**|**Definición**|  
 |\<Tamaño >|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|  
-|\<SizeRange >|MinSize, MaxSize|El origen se usará para las imágenes de MinSize con tamaño máximo (en unidades de dispositivo), ambos inclusive. La imagen será cuadrada.|  
+|\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize con tamaño máximo (en unidades de dispositivo), ambos inclusive. La imagen será cuadrada.|  
 |\<Dimensiones >|Ancho, alto|El origen se usará para las imágenes del ancho y alto (en unidades de dispositivo).|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho y alto mínimo para el máximo ancho/alto (en unidades de dispositivo), ambos inclusive.|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho y alto mínimo para el máximo ancho/alto (en unidades de dispositivo), ambos inclusive.|  
 
  Un \<origen > elemento también puede tener un elemento opcional \<NativeResource > subelemento, que define un \<origen > que se carga desde un ensamblado nativo en lugar de un ensamblado administrado.  
 
@@ -193,7 +189,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |-|-|  
 |**Attribute**|**Definición**|  
 |Tipo|[Obligatorio] El tipo del recurso nativo, XAML o PNG|  
-|Id.|[Obligatorio] La parte de identificador entero del recurso nativo|  
+|ID|[Obligatorio] La parte de identificador entero del recurso nativo|  
 
  **ImageList**  
 
@@ -210,7 +206,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |-|-|  
 |**Attribute**|**Definición**|  
 |GUID|[Obligatorio] La parte GUID del moniker de imagen|  
-|Id.|[Obligatorio] La parte del identificador de moniker de la imagen|  
+|ID|[Obligatorio] La parte del identificador de moniker de la imagen|  
 |Externo|[Opcional, valor predeterminado es false] Indica si el moniker de imagen hace referencia a una imagen en el manifiesto actual.|  
 
  El moniker de la imagen independiente no tiene que hacer referencia a una imagen que se definen en el manifiesto actual. Si no se encuentra la imagen contenida en la biblioteca de imágenes, se utilizará una imagen de marcador de posición en blanco en su lugar.  
@@ -244,7 +240,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 
     -   Obligatorio si se usa el **BrushToColorConverter** para el ImageThemingUtilities. **ImageBackgroundColor** en la interfaz de usuario de WPF  
 
--   **Microsoft.VisualStudio.Shell. \<VSVersion >.0**  
+-   **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
     -   Obligatorio si se usa el **IVsUIObject** tipo  
 
@@ -655,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Actualice el código para usar el servicio de imágenes para solicitar los monikers a través de la asignación actualizada. (Esto quizá signifique actualizar a **CrispImages** para código administrado, o solicitar HBITMAP o los elementos HICON desde el servicio de imágenes y pasarlos en torno a código nativo.)  
 
 ## <a name="testing-your-images"></a>Las pruebas de sus imágenes  
- Puede usar la herramienta Visor del archivo de imagen para probar los manifiestos de imagen para asegurarse de que todo lo que se creó correctamente. Puede encontrar la herramienta en el [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Puede encontrar la documentación de esta herramienta y otras [aquí](http://aka.ms/VSImageThemeTools).  
+ Puede usar la herramienta Visor del archivo de imagen para probar los manifiestos de imagen para asegurarse de que todo lo que se creó correctamente. Puede encontrar la herramienta en el [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Puede encontrar la documentación de esta herramienta y otras [aquí](https://aka.ms/VSImageThemeTools).  
 
 ## <a name="additional-resources"></a>Recursos adicionales  
 
@@ -919,7 +915,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupIntrinsic|GlyphItemInternal|ObjectInternal|  
         |GlyphGroupIntrinsic|GlyphItemFriend|ObjectInternal|  
         |GlyphGroupIntrinsic|GlyphItemProtected|ObjectProtected|  
-        |GlyphGroupIntrinsic|GlyphItemPrivate|Objeto empresarialprivate|  
+        |GlyphGroupIntrinsic|GlyphItemPrivate|ObjectPrivate|  
         |GlyphGroupIntrinsic|GlyphItemShortcut|ObjectShortcut|  
         |GlyphGroupJSharpMethod|GlyphItemPublic|MethodPublic|  
         |GlyphGroupJSharpMethod|GlyphItemInternal|MethodInternal|  
@@ -995,4 +991,3 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlDescendantQuestion||XmlDescendantLowConfidence|  
         |GlyphXmlDescendantCheck||XmlDescendantHighConfidence|  
         |GlyphCompletionWarning||IntellisenseWarning|
-

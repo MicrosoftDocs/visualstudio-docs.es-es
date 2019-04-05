@@ -1,14 +1,9 @@
 ---
 title: IDebugBinder | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBinder
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30f4ae83134ae1ac2dceea991fe65b0d1ae191f2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7f5d1e6786d0d774b658484cf833eee269a1453
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788269"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988719"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -59,9 +54,9 @@ IDebugBinder : IUnknown
  Esta interfaz devuelve objetos que se usan por el evaluador de expresiones en árboles de análisis. El evaluador de expresiones analiza una expresión utilizando el proveedor de símbolos para convertir los símbolos de la expresión a las instancias de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md), que describen cada símbolo en cuanto a su tipo y la ubicación en el código fuente. El [enlazar](../../../extensibility/debugger/reference/idebugbinder-bind.md) método convierte `IDebugField` objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que se conectan o enlazar un símbolo de tipo a un valor real en la memoria. Estos `IDebugObject` objetos, a continuación, se almacenan en un árbol de análisis para evaluarlos posteriormente.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: ee.h  
+ Header: ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -70,4 +65,3 @@ IDebugBinder : IUnknown
  [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
-

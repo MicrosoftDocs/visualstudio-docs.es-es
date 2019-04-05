@@ -1,14 +1,9 @@
 ---
-title: 'CA2116: Los métodos APTCA deben llamar solo a métodos APTCA | Microsoft Docs'
-ms.custom: ''
+title: 'CA2116: LOS métodos APTCA deben llamar solo a métodos APTCA | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
@@ -20,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766de62f4781dc7ce164155a2090ffabac913a22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819555"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987985"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Los métodos APTCA deben llamar solo a métodos APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "49819555"
   Un llamador de confianza parcial `X` puede llamar al método `M1`, haciendo que `M1` para llamar a `M2`. Dado que `M2` no tiene el atributo APTCA, su llamador inmediato (`M1`) debe satisfacer una petición de vínculo de plena confianza; `M1` es de plena confianza y, por tanto, supera esta comprobación. El riesgo de seguridad es porque `X` no participa en el cumplimiento de la petición de vínculo que protege `M2` es de confianza. Por lo tanto, los métodos con el atributo APTCA no deben llamar a métodos que no tienen el atributo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Si el atributo APCTA es necesario, use una petición para proteger el método que llama en el ensamblado de plena confianza. Los permisos exactos demanda dependerá de la funcionalidad expuesta por el método. Si es posible, proteja el método con una petición de plena confianza para asegurarse de que la funcionalidad subyacente no se expone a llamadores de confianza parcial. Si esto no es posible, seleccione un conjunto de permisos que protege eficazmente la funcionalidad expuesta. Para obtener más información acerca de las peticiones, consulte [demandas](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
+ Si el atributo APCTA es necesario, use una petición para proteger el método que llama en el ensamblado de plena confianza. Los permisos exactos demanda dependerá de la funcionalidad expuesta por el método. Si es posible, proteja el método con una petición de plena confianza para asegurarse de que la funcionalidad subyacente no se expone a llamadores de confianza parcial. Si esto no es posible, seleccione un conjunto de permisos que protege eficazmente la funcionalidad expuesta. Para obtener más información acerca de las peticiones, consulte [demandas](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Para suprimir una advertencia de esta regla de forma segura, debe asegurarse de que la funcionalidad expuesta por el método no directa o indirectamente permiten que los llamadores tener acceso a información confidencial, operaciones o los recursos que se pueden usar de forma destructiva.
@@ -82,7 +77,4 @@ ms.locfileid: "49819555"
  [CA2117: Los tipos APTCA solo amplían tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Vea también
- [Instrucciones de codificación segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [ensamblados de .NET Framework invocables por código de confianza parcial](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [utilizar parcialmente bibliotecas de código de confianza](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandas](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Peticiones de vínculos](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [datos y modelado](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-
+ [Instrucciones de codificación segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [ensamblados de .NET Framework invocables por código de confianza parcial](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [utilizar parcialmente bibliotecas de código de confianza](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandas](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Peticiones de vínculos](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [datos y modelado](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

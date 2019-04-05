@@ -1,27 +1,22 @@
 ---
 title: Cambiar el valor de una variable Local | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, changing values programmatically
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 166b4d22ec24f3137044ab19255abb15b109fbe0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29a2145199629b9a1a02928b5a4a888a5824c339
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807226"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989016"
 ---
 # <a name="changing-the-value-of-a-local"></a>Cambio del valor de una variable local
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,4 +51,3 @@ ms.locfileid: "51807226"
 ## <a name="see-also"></a>Vea también  
  [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Visualización de variables locales](../../extensibility/debugger/displaying-locals.md)
-

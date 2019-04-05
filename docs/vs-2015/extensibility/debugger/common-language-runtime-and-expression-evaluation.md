@@ -1,27 +1,22 @@
 ---
 title: Common Language Runtime y la evaluación de expresiones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 85cf4d2029dc25dc993fcc32b89fdc60bd91171d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0fb29119fd0598547925cad5ca82ab40ab693a07
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995109"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common Language Runtime y evaluación de expresiones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51779351"
   
  Los compiladores, como Visual Basic y C# (pronunciado C-sharp), que tienen como destino Common Language Runtime (CLR), generan Microsoft Intermediate Language (MSIL), que es una versión posterior se compilan en código nativo. CLR proporciona un motor de depuración (DE) para depurar el código resultante. Si va a integrar el lenguaje de programación de propietario en el IDE de Visual Studio, puede elegir compilar en MSIL y, por tanto, no tendrá que escribir su propio DE. Sin embargo, tendrá que escribir un evaluador de expresiones (EE) que es capaz de evaluación de expresiones dentro del contexto de su lenguaje de programación.  
   
-## <a name="discussion"></a>Explicación  
+## <a name="discussion"></a>Discusión  
  Por lo general se analizan las expresiones de lenguaje del equipo para generar un conjunto de objetos de datos y un conjunto de operadores utilizados para manipularlos. Por ejemplo, la expresión "A + B" es posible que se puede analizar para aplicar el operador de suma (+) a los datos de objetos "A" y "B", lo que puede que otro objeto de datos. El conjunto total de objetos de datos, operadores y sus asociaciones con mayor frecuencia se representan en un programa como un árbol, con los operadores en los nodos del árbol y los objetos de datos en las sucursales. Una expresión que se ha dividido en forma de árbol se suele denominar un árbol analizado.  
   
  Una vez que una expresión que se ha analizado, un proveedor de símbolos (SP) se llama para evaluar cada objeto de datos. Por ejemplo, si se define "A" tanto en más de un método y, a continuación, la pregunta "¿qué un signo?" se deben responder antes de que se puede comprobar el valor de A. La respuesta devuelta por el SP es algo parecido a "El tercer elemento en el marco de pila quinto" o ""la A la que está más allá del principio de la memoria estática de 50 bytes asignado a este método.  
@@ -44,4 +39,3 @@ ms.locfileid: "51779351"
   
 ## <a name="see-also"></a>Vea también  
  [Escritura de un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-
