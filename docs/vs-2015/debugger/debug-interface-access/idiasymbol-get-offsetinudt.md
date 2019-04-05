@@ -1,14 +1,9 @@
 ---
-title: Get_offsetinudt | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_offsetInUdt | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 442f20d9-9d6a-44a1-83fb-c3f8c14b6c97
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c7feeacdb4a892a0c54df3e8a0e6d2ff8f3792bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b4ac345f3a6004bf4632d376c66ca87950e3bd44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802023"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997760"
 ---
 # <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,10 +51,7 @@ HRESULT get_offsetInUdt( 
   
  Biblioteca: diaguids.lib  
   
- Archivo DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

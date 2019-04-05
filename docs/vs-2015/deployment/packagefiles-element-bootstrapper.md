@@ -1,14 +1,9 @@
 ---
 title: '&lt;PackageFiles&gt; (elemento, arranque) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b4cddd6752872cf03ef5f5d55b0cbbb88aa1e66a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 382689dada13adce1ee530e66fef6ba78452efaa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302788"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996941"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; (elemento, arranque)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ El `PackageFiles` contiene elemento `PackageFile` elementos, que definen los paq
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. El nombre del archivo del paquete. Este es el nombre que el `Command` elemento hará referencia al define las condiciones en las que se instala un paquete. Este valor también se utiliza como clave en el `Strings` tabla para recuperar el nombre traducido que herramientas como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizará para describir el paquete.|  
+|`Name`|Obligatorio. El nombre del archivo del paquete. Este es el nombre que el `Command` elemento hará referencia al define las condiciones en las que se instala un paquete. Este valor también se utiliza como clave en el `Strings` tabla para recuperar el nombre traducido que herramientas como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizará para describir el paquete.|  
 |`HomeSite`|Opcional. La ubicación del paquete en el servidor remoto, si no se incluye con el programa de instalación.|  
 |`CopyOnBuild`|Opcional. Especifica si el programa previo debe copiar el archivo de paquete en el disco en tiempo de compilación. El valor predeterminado es true.|  
 |`PublicKey`|Cifrado clave pública del firmante del certificado del paquete. Es necesario si `HomeSite` se usa; en caso contrario, opcional.|  
@@ -85,6 +80,3 @@ El `PackageFiles` contiene elemento `PackageFile` elementos, que definen los paq
  [\<Producto > elemento](../deployment/product-element-bootstrapper.md)   
  [\<Paquete > elemento](../deployment/package-element-bootstrapper.md)   
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
-
-
-

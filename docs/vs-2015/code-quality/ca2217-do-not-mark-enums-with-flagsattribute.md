@@ -1,14 +1,9 @@
 ---
-title: 'CA2217: No marcar enumeraciones con FlagsAttribute | Microsoft Docs'
-ms.custom: ''
+title: 'CA2217: No marcar enumeraciones con FlagsAttribute | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
 - CA2217
@@ -20,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 57e49dcfe0d6aa09ba97d48b5b10411850b4a3f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70078d89f2de8038e4a1143679d0614a5479a2b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996440"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: No marcar enumeraciones con FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,6 +63,3 @@ ms.locfileid: "49853407"
 
 ## <a name="see-also"></a>Vea también
  <xref:System.FlagsAttribute?displayProperty=fullName>
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: Personalización de la ventana Propiedades | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 ms.assetid: b6658de5-4e85-4628-93b2-5cc12f63d25b
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845750"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996679"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizar la ventana Propiedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -323,6 +320,3 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   
 ## <a name="see-also"></a>Vea también  
  [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
-
-
-

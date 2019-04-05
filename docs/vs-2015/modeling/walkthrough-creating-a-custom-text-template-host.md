@@ -1,12 +1,9 @@
 ---
-title: 'Tutorial: Crear un Host de plantilla de texto personalizado | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Creación de un Host de plantilla de texto personalizado | Documentos de Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -14,15 +11,15 @@ ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817280"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996835"
 ---
-# <a name="walkthrough-creating-a-custom-text-template-host"></a>Tutorial: Crear un host de plantillas de texto personalizadas
+# <a name="walkthrough-creating-a-custom-text-template-host"></a>Tutorial: Crear un host de plantilla de texto personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *motor de transformación de plantillas de texto* para ejecutar. El host es responsable de administrar la interacción del motor con el sistema de archivos. El motor o *procesador de directivas* que necesita un archivo o un ensamblado puede solicitar un recurso desde el host. Este puede entonces buscar en los directorios y en la memoria caché global de ensamblados el recurso solicitado. Para obtener más información, consulte [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).  
@@ -719,7 +716,7 @@ Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *moto
   
 4.  Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] sólo, abra el **proyecto** menú y haga clic en **propiedades de CustomHost**. En el **objeto Startup** lista, haga clic en **CustomHost.Program**.  
   
-5.  En el **archivo** menú, haga clic en **guardar todo**.  
+5.  En el menú **Archivo**, haga clic en **Guardar todo**.  
   
 6.  En el menú **Compilar** , haga clic en **Compilar solución**.  
   
@@ -820,10 +817,7 @@ Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *moto
     ```  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- En este tutorial, creó un host de transformación de plantillas de texto que admite la funcionalidad de transformación básica. Puede expandir el host para admitir plantillas de texto que llamen a procesadores de directivas personalizados o generados. Para obtener más información, consulte [Tutorial: conectar un Host a un procesador de directivas generados](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
+ En este tutorial, creó un host de transformación de plantillas de texto que admite la funcionalidad de transformación básica. Puede expandir el host para admitir plantillas de texto que llamen a procesadores de directivas personalizados o generados. Para obtener más información, vea [Tutorial: Conectar un Host a un procesador de directivas personalizadas](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
-
-
-

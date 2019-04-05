@@ -1,12 +1,9 @@
 ---
 title: Crear una aplicación de datos sencilla mediante ADO.NET | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +13,15 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824287"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58995247"
 ---
-# <a name="create-a-simple-data-application-by-using-adonet"></a>Crear una aplicación de datos sencilla mediante ADO.NET
+# <a name="create-a-simple-data-application-by-using-adonet"></a>Creación de una aplicación de datos sencilla mediante ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -71,7 +68,7 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
   
     Visual Studio crea el proyecto y varios archivos, incluido un formulario de Windows Forms vacío denominado Form1.  
   
-2. Agregue dos formularios de Windows para el proyecto para que tenga tres formularios y, a continuación, asígneles los nombres siguientes:  
+2. Agregue dos formularios de Windows al proyecto para que tenga tres formularios y, a continuación, asígneles los siguientes nombres:  
   
    -   Navegación  
   
@@ -227,7 +224,7 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
  Esta sección contiene información general breve de lo que hace cada formulario y muestra el código que crean los formularios. Los comentarios numerados identifican las secciones del código.  
   
 ### <a name="navigation-form"></a>Formulario Navigation  
- El formulario Navigation se abre cuando se ejecuta la aplicación. El **agregar una cuenta** botón abre el formulario NewCustomer. El **rellenar o cancelar pedidos** botón abre el formulario FillOrCancel. El **Exit** botón cierra la aplicación.  
+ El formulario Navigation se abre cuando se ejecuta la aplicación. El botón **Agregar una cuenta** abre el formulario NewCustomer. El botón **Rellenar o cancelar órdenes** abre el formulario FillOrCancel. El botón **Salir** cierra la aplicación.  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>Hacer que el formulario Navigation sea el formulario de inicio  
  Si usa C#, en **el Explorador de soluciones**, abra Program.cs y, a continuación, cambie la `Application.Run` línea a este: `Application.Run(new Navigation());`  
@@ -734,7 +731,7 @@ End Namespace
 |NC-16|Defina un método para comprobar que un nombre de cliente está presente.<br /><br /> -Si el cuadro de texto está vacío, mostrar un mensaje y devolver `false`, porque se requiere un nombre para crear la cuenta.<br />-Si el cuadro de texto no está vacío, devuelve `true`.|  
 |NC-17|Agregue código al controlador de eventos Click para el botón `btnPlaceOrder`.|  
 |NC-18|Incluya la llamada a `isPlaceOrderReady` alrededor del código de evento `btnPlaceOrder_Click`, de modo que `uspPlaceNewOrder` no se ejecute si la entrada no está presente.|  
-|De NC-19 a NC-25|Estas secciones de código son similares al código que se ha agregado para el controlador de eventos `btnCreateAccount_Click`.<br /><br /> -NC-19. Cree el objeto `SqlCommand`, `cmdNewOrder` y especifique `Sales.uspPlaceOrder` como el procedimiento almacenado.<br />-NC-20 a NC-23 son los parámetros de entrada para el procedimiento almacenado.<br />-NC-24. `@RC` contendrá un valor devuelto que es el identificador de pedido generado a partir de la base de datos. Esta dirección del parámetro se especifica como `ReturnValue`.<br />-NC-25. Almacene el valor del identificador de pedido en la variable `orderID` que declaró en NC-2 y muestre el valor en un cuadro de mensaje.|  
+|De NC-19 a NC-25|Estas secciones de código son similares al código que se ha agregado para el controlador de eventos `btnCreateAccount_Click`.<br /><br /> -   NC-19. Cree el objeto `SqlCommand`, `cmdNewOrder` y especifique `Sales.uspPlaceOrder` como el procedimiento almacenado.<br />-NC-20 a NC-23 son los parámetros de entrada para el procedimiento almacenado.<br />-   NC-24. `@RC` contendrá un valor devuelto que es el identificador de pedido generado a partir de la base de datos. Esta dirección del parámetro se especifica como `ReturnValue`.<br />-   NC-25. Almacene el valor del identificador de pedido en la variable `orderID` que declaró en NC-2 y muestre el valor en un cuadro de mensaje.|  
 |NC-26|Defina un método para comprobar que existe un identificador de cliente y que se ha especificado una cantidad en `numOrderAmount`.|  
 |NC-27|Llame al método `ClearForm` en el controlador de eventos Click `btnAddAnotherAccount`.|  
 |NC-28|Cree el método `ClearForm` para borrar valores del formulario si desea agregar otro cliente.|  
@@ -1145,4 +1142,3 @@ End Namespace
   
 ##  <a name="BKMK_testyourapplication"></a> Probar la aplicación  
  Seleccione la tecla F5 para compilar y probar su aplicación después del código de cada controlador de eventos Click y, a continuación, después de terminar la codificación.
-

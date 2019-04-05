@@ -1,22 +1,20 @@
 ---
 title: Con tipo frente a los conjuntos de datos sin tipo | Documentos de Microsoft
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 71761826611c490a3fb43413acaa29eb6520138f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283795"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998021"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Conjuntos de datos con tipo frente a conjuntos de datos sin tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +40,3 @@ Un conjunto de datos con tipo es un conjunto de datos que primero se deriva de l
  Aunque los conjuntos de datos con tipo tienen muchas ventajas, un conjunto de datos sin tipo resulta útil en una variedad de circunstancias. El escenario más evidente es cuando no hay ningún esquema disponible para el conjunto de datos. Esto puede ocurrir, por ejemplo, si la aplicación está interactuando con un componente que devuelve un conjunto de datos, pero no saber de antemano cuál es su estructura. De forma similar, hay veces cuando se trabaja con datos que no tienen una estructura estática y predecible. En ese caso, es práctico utilizar un conjunto de datos con tipo, ya que tendría que volver a generar la clase dataset con tipo con cada cambio realizado en la estructura de datos.  
   
  Por lo general, hay muchas veces que se podría crear un conjunto de datos dinámicamente sin disponer de un esquema. En ese caso, el conjunto de datos es simplemente una estructura práctica en el que puede mantener información, como los datos se pueden representar de forma relacional. Al mismo tiempo, puede aprovechar las capacidades del conjunto de datos, como la capacidad de serializar la información para pasar a otro proceso o para escribir un archivo XML.
-

@@ -1,12 +1,9 @@
 ---
 title: Describir el flujo de control con fragmentos de diagramas de secuencia UML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.interactionoperand
 - vs.teamarch.sequencediagram.combinedfragment
@@ -19,13 +16,13 @@ ms.assetid: efcc0949-be7e-4cf4-99ef-47c36b3803ae
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4ab4c65e554e9eef75a1761719ce19f3312e07ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727649"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996680"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Describir el flujo de control con fragmentos de diagramas de secuencia de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
  Un fragmento combinado se compone de uno o varios *operandos de interacción*, y cada uno de ellos incluye uno o varios mensajes, usos de interacción o fragmentos combinados.  
   
 > [!NOTE]
->  Este tema trata sobre los fragmentos en los diagramas de secuencia. Para obtener más información sobre cómo leer diagramas de secuencia UML, vea [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md). Si quiere más información sobre cómo diseñar diagramas de secuencia UML, vea [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  Este tema trata sobre los fragmentos en los diagramas de secuencia. Para obtener más información sobre cómo leer diagramas de secuencia UML, vea [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md). Para obtener más información sobre cómo dibujar diagramas de secuencia UML, vea [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![El fragmento con dos operandos de interacción combinado](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -112,7 +109,7 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
   
 |Tipo de fragmento|Descripción|  
 |-------------------|-----------------|  
-|**participar**|Opcional. Contiene una secuencia que puede puede producirse o no. En la restricción, puede especificar la condición en la que se produce.|  
+|**Opt**|Opcional. Contiene una secuencia que puede puede producirse o no. En la restricción, puede especificar la condición en la que se produce.|  
 |**Alt**|Contiene una lista de fragmentos que incluyen secuencias de mensajes alternativas. Solo se produce una secuencia de cada vez.<br /><br /> Puede incluir una restricción en cada fragmento para indicar en qué circunstancias puede ejecutarse. Una restricción **else** indica un fragmento que debe ejecutarse si ninguna otra restricción es true. Si todas las restricciones son false y no hay ningún valor **else**, no se ejecuta ninguno de los fragmentos.|  
 |**Loop**|El fragmento se repite cierto número de veces. En la restricción, puede indicar la condición en la que debe repetirse.<br /><br /> Los fragmentos combinados de bucle tienen las propiedades **Min** y **Max**, que indican el número mínimo y máximo de veces que el fragmento se puede repetir. El valor predeterminado es sin restricciones.|  
 |**Break**|Si se ejecuta este fragmento, se abandona el resto de la secuencia. Puede usar la restricción para indicar la condición en la que se producirá la interrupción.|  
@@ -129,14 +126,11 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
 |Tipo de fragmento|Descripción|  
 |-------------------|-----------------|  
 |**Considere la posibilidad de**|Especifica una lista de los mensajes que se describen en este fragmento. Pueden aparecer otros mensajes en el sistema que se está ejecutando, pero no son significativos para los propósitos de esta descripción.<br /><br /> Escriba la lista en la propiedad **Messages** .|  
-|**Pasar por alto**|Lista de los mensajes que no se describen en este fragmento. Pueden aparecer en el sistema que se está ejecutando, pero no son significativos para los propósitos de esta descripción.<br /><br /> Escriba la lista en la propiedad **Messages** .|  
+|**Ignorar**|Lista de los mensajes que no se describen en este fragmento. Pueden aparecer en el sistema que se está ejecutando, pero no son significativos para los propósitos de esta descripción.<br /><br /> Escriba la lista en la propiedad **Messages** .|  
 |**Assert**|El fragmento de operando especifica las únicas secuencias válidas. Suele usarse dentro de un fragmento Consider o Ignore.|  
-|**neg**|La secuencia que se muestra en este fragmento no debe producirse. Suele usarse dentro de un fragmento Consider o Ignore.|  
+|**Neg**|La secuencia que se muestra en este fragmento no debe producirse. Suele usarse dentro de un fragmento Consider o Ignore.|  
   
 ## <a name="see-also"></a>Vea también  
- [Diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)   
- [Diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramas de secuencia de UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagramas de secuencia de UML: Referencia](../modeling/uml-sequence-diagrams-reference.md)   
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md)
-
-
-

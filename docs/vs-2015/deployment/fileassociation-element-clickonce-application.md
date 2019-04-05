@@ -1,14 +1,9 @@
 ---
 title: '&lt;fileAssociation&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e827f0829cfe0436f491196b7f1dab99ac87c4fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234462"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995518"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; elemento (aplicación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +41,14 @@ Identifica una extensión de archivo que se asociará con la aplicación.
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos y atributos  
- El elemento `fileAssociation` es opcional. El elemento tiene los siguientes atributos.  
+ El elemento `fileAssociation` es opcional. El elemento tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`extension`|Requerido. La extensión de archivo que se asociará con la aplicación.|  
-|`description`|Requerido. Una descripción del tipo de archivo para su uso por el shell.|  
-|`progid`|Requerido. Un nombre que identifica el tipo de archivo.|  
-|`defaultIcon`|Requerido. Especifica el icono que se utiliza para los archivos con esta extensión. El archivo de icono debe especificarse utilizando la [ \<archivo > elemento](../deployment/file-element-clickonce-application.md) dentro de la [ \<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md) que contiene este elemento.|  
+|`extension`|Obligatorio. La extensión de archivo que se asociará con la aplicación.|  
+|`description`|Obligatorio. Una descripción del tipo de archivo para su uso por el shell.|  
+|`progid`|Obligatorio. Un nombre que identifica el tipo de archivo.|  
+|`defaultIcon`|Obligatorio. Especifica el icono que se utiliza para los archivos con esta extensión. El archivo de icono debe especificarse utilizando la [ \<archivo > elemento](../deployment/file-element-clickonce-application.md) dentro de la [ \<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md) que contiene este elemento.|  
   
 ## <a name="remarks"></a>Comentarios  
  Este elemento debe incluir una referencia de espacio de nombres XML para "urn: schemas-microsoft-v1". Si el `<fileAssociation>` se usa el elemento, debe ir detrás del `<application>` elemento en su elemento primario [ \<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md).  
@@ -88,6 +83,3 @@ Identifica una extensión de archivo que se asociará con la aplicación.
   
 ## <a name="see-also"></a>Vea también  
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-
