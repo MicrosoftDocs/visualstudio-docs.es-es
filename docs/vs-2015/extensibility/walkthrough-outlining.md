@@ -1,28 +1,23 @@
 ---
 title: 'Tutorial: Esquematización | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 897ff6a39716f424c40fa587d905847a0dbb3682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a5d54bdd3d2b7fad348df195560ad5b3cc461f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805273"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999080"
 ---
-# <a name="walkthrough-outlining"></a>Tutorial: Esquematización
+# <a name="walkthrough-outlining"></a>Tutorial: esquematizar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede implementar características basadas en lenguaje como mediante la definición de los tipos de regiones de texto que desea expandir o contraer la esquematización. Puede definir regiones en el contexto de un servicio de lenguaje, o puede definir su propio tipo de contenido y la extensión de nombre de archivo y la definición de la región se aplican sólo a ese tipo, o puede aplicar las definiciones de la región a un tipo de contenido existente (por ejemplo, "text"). En este tutorial se muestra cómo definir y mostrar las regiones de esquematización.  
@@ -139,5 +134,4 @@ Puede implementar características basadas en lenguaje como mediante la definici
 4.  Debe haber una región de esquematización que incluye dos llaves. Debe ser capaz de hacer clic en el signo menos a la izquierda de la llave de apertura para contraer la región de esquematización. Cuando la región se contrae, el símbolo de puntos suspensivos (...) debe aparecer a la izquierda de la región contraída y un menú emergente que contiene el texto **mantenga el puntero de texto** debe aparecer al mover el puntero sobre los puntos suspensivos.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

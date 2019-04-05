@@ -1,27 +1,22 @@
 ---
 title: Creación de carpetas contenedoras primarias para soluciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0a65595b7dabc28a6851820141a71460d84a4b73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b756da118943dd94bfd3bc5220dfc398c60e2a9e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762543"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58996737"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Creación de carpetas contenedoras primarias para soluciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,22 +50,21 @@ En la API de complemento de Control de origen de la versión 1.2, un usuario pue
 |Característica|tSource API versión 1.1 de complemento de Control|Versión 1.2 de la API de complemento de Control de código fuente|  
 |-------------|----------------------------------------------|---------------------------------------------|  
 |Agregar solución al control de código fuente|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Agregar a solución controlados por código fuente|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Nota:** Visual Studio, se da por supuesto que una solución es un elemento secundario directo del SUR.|  
+|Agregar a solución controlados por código fuente|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Note:**  Visual Studio, se da por supuesto que una solución es un elemento secundario directo del SUR.|  
   
 ## <a name="examples"></a>Ejemplos  
  En la tabla siguiente se muestra dos ejemplos. En ambos casos, el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usuario se le solicitará una ubicación de destino para la solución bajo control de código fuente hasta el *user_choice* se especifica como un destino. Cuando se especifica la user_choice, la solución y dos proyectos se agregan sin preguntar al usuario para destinos de control de código fuente.  
   
 |Contiene la solución|En las ubicaciones de disco|Estructura de base de datos predeterminada|  
 |-----------------------|-----------------------|--------------------------------|  
-|sln1.sln<br /><br /> Web1<br /><br /> WEB2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\Web2|$/*user_choice*/sln1<br /><br /> $/*user_choice*  /C/Web1<br /><br /> $/*user_choice*/Web2|  
-|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*  /D/web1<br /><br /> $/*user_choice*  /sln1/win1|  
+|sln1.sln<br /><br /> Web1<br /><br /> Web2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*user_choice*/sln1<br /><br /> $/*user_choice*/C/Web1<br /><br /> $/*user_choice*/Web2|  
+|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*/D/web1<br /><br /> $/*user_choice*/sln1/win1|  
   
  La carpeta SUR y subcarpetas se crean independientemente de si la operación se cancela o falla debido a un error. No se quitan automáticamente en las condiciones de error o cancelación.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el valor predeterminado es el comportamiento de versión 1.1 si el complemento de control de código fuente no devuelve `SCC_CAP_CREATESUBPROJECT` y `SCC_CAP_GETPARENTPROJECT` marcadores de capacidad. Además, los usuarios de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] puede revertir al comportamiento de la versión 1.1 mediante el valor de la siguiente clave DWORD: 00000001:  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001  
+ [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001  
   
 ## <a name="see-also"></a>Vea también  
  [Novedades de la API del complemento de control de código fuente, versión 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

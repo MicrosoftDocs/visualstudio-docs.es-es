@@ -1,14 +1,9 @@
 ---
-title: 'CA1001: Los tipos que poseen campos descartables deben ser descartables | Microsoft Docs'
-ms.custom: ''
+title: 'CA1001: Los tipos que poseen campos descartables deben ser descartables | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1001
 - TypesThatOwnDisposableFieldsShouldBeDisposable
@@ -20,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a4bde7f20d1e7c93aec7a4a1a3abf44c21659b6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 98be3bafb582e4d48560108625be911e53acf664
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176454"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997200"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: Los tipos que poseen campos descartables deben ser descartables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,11 +51,10 @@ ms.locfileid: "49176454"
  [!code-vb[FxCop.Design.DisposableFields#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.DisposableFields/vb/FxCop.Design.DisposableFields.vb#1)]  
   
 ## <a name="related-rules"></a>Reglas relacionadas  
- [CA2213: Aplique Dispose a los campos a los que se pueda](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
+ [CA2213: los campos descartables deben ser descartables](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
  [CA2216: Los tipos descartables deben declarar el finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
- [CA2215: Los métodos Dispose deben llamar al método Dispose de la clase base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
+ [CA2215: Los métodos Dispose deben llamar al método dispose de clase base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
   
  [CA1049: Los tipos que poseen recursos nativos deben ser descartables](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
-

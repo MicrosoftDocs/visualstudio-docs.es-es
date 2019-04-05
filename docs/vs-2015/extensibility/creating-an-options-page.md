@@ -1,26 +1,21 @@
 ---
 title: Creación de una página de opciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9c65a91135c9346e0dfcabbe7422501ed4f02704
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b22fb5dafb350f967829b3c7ab953d74f6dda60
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751367"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58995227"
 ---
 # <a name="creating-an-options-page"></a>Creación de una página de opciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -270,4 +265,3 @@ Este tutorial crea una página Herramientas/Opciones sencilla que usa una cuadr�
   
 ## <a name="see-also"></a>Vea también  
  [Opciones y páginas de opciones](../extensibility/internals/options-and-options-pages.md)
-
