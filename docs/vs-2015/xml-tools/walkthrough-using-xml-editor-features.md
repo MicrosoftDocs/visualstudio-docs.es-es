@@ -1,27 +1,22 @@
 ---
-title: 'Tutorial: Uso de las características del Editor XML | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Uso de características del Editor XML | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996100"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Tutorial: Usar las características del Editor XML
+# <a name="walkthrough-using-xml-editor-features"></a>Tutorial: Uso de características del Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial se indican los pasos para crear un nuevo documento XML. El tutorial también utiliza algunas de las características del Editor XML que lo convierten en una valiosa herramienta para la creación de XML.  
@@ -93,7 +88,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
   
 10. Vuelva al archivo XML y sustituya el **abc** texto con **123**.  
   
-     El subrayado ondulado y la información sobre herramientas desaparecen bajo el valor del elemento ID. La información sobre herramientas la etiqueta de cierre del empleado ahora muestra el mensaje: El contenido del elemento 'empleado' está incompleto. Se esperaba 'fecha-contratación'.  
+     El subrayado ondulado y la información sobre herramientas desaparecen bajo el valor del elemento ID. La información sobre herramientas de la etiqueta de cierre de empleado muestra ahora el mensaje: El contenido del elemento 'empleado' está incompleto. Se esperaba 'fecha-contratación'.  
   
 11. Coloque el cursor después de la etiqueta de cierre de ID, escriba `<`, seleccione fecha-contratación en la lista de miembros y, a continuación, escriba `>`.  
   
@@ -136,4 +131,3 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
   
 ## <a name="see-also"></a>Vea también  
  [Editor XML](../xml-tools/xml-editor.md)
-

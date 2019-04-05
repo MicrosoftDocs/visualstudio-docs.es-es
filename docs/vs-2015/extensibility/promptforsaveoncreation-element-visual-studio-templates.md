@@ -1,14 +1,9 @@
 ---
 title: PromptForSaveOnCreation (elemento) (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
 helpviewer_keywords:
@@ -16,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6d6480df4d51e91f6953fcbb5c5c00542dac2d8e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9e9e6ece0d683d08521a76286671c944e57206c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996402"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica si se pide al usuario para un proyecto de la ubicación a través de almacenamiento la **nuevo proyecto** cuadro de diálogo al crear un proyecto. Si este elemento está establecido en `true`, a continuación, se solicitará al usuario una operación de guardar ubicación; si `false`, a continuación, se les pide no. (Es decir, se crea un proyecto temporal).  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<PromptForSaveOnCreation >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -62,7 +57,7 @@ Especifica si se pide al usuario para un proyecto de la ubicación a través de 
 ## <a name="remarks"></a>Comentarios  
  `PromptForSaveOnCreation` es un elemento opcional. El valor predeterminado es `false`.  
   
- Proyectos temporales son proyectos que puede crear y modificar sin guardar el contenido de ese proyecto en el disco. Para obtener más información, consulte [proyectos temporales NIB](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Proyectos temporales son proyectos que puede crear y modificar sin guardar el contenido de ese proyecto en el disco. Para obtener más información, consulte [proyectos temporales NIB](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se establece el valor de `PromptForSaveOnCreation` igual a `false`, lo que especifica que el proyecto se deben crear como un proyecto temporal.  
@@ -95,4 +90,3 @@ Especifica si se pide al usuario para un proyecto de la ubicación a través de 
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
-

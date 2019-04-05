@@ -1,12 +1,8 @@
 ---
 title: Suspensión de la característica automática | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 - performance
@@ -16,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c8aee8f4ef46d3621bf569b260d943180abd7ad5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997887"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensión automática de la característica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +39,7 @@ Si la memoria disponible del sistema cae a 200MB o menos, Visual Studio muestra 
  Para sugerencias y trucos sobre cómo mejorar el rendimiento de Visual Studio cuando se trabaja con soluciones de gran tamaño o las condiciones de poca memoria, vea [consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 ## <a name="full-solution-analysis-suspended"></a>Análisis de la solución completa suspendido
- De forma predeterminada, análisis de la solución completa está habilitado para Visual Basic y deshabilitado para Visual C#. Sin embargo, en una condición de memoria insuficiente, análisis de la solución completa se deshabilita automáticamente para Visual Basic y Visual C#, independientemente de su configuración en el cuadro de diálogo Opciones. Sin embargo, puede volver a habilitar análisis de la solución completa eligiendo el **rehabilitar** botón en la información de la barra cuando aparezca, seleccionando la **Habilitar análisis de la solución completa** casilla de verificación en el cuadro de diálogo Opciones, o bien reiniciar Visual Studio. El cuadro de diálogo Opciones siempre muestra la solución completa actual configuración de análisis. Para obtener más información, consulte [Cómo: habilitar y deshabilitar el análisis de la solución completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+ De forma predeterminada, análisis de la solución completa está habilitado para Visual Basic y deshabilitado para Visual C#. Sin embargo, en una condición de memoria insuficiente, análisis de la solución completa se deshabilita automáticamente para Visual Basic y Visual C#, independientemente de su configuración en el cuadro de diálogo Opciones. Sin embargo, puede volver a habilitar análisis de la solución completa eligiendo el **rehabilitar** botón en la información de la barra cuando aparezca, seleccionando la **Habilitar análisis de la solución completa** casilla de verificación en el cuadro de diálogo Opciones, o bien reiniciar Visual Studio. El cuadro de diálogo Opciones siempre muestra la solución completa actual configuración de análisis. Para obtener más información, vea [Cómo: Habilitar y deshabilitar el análisis de la solución completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>GC baja latencia deshabilitada
  Para volver a habilitar el modo de latencia baja de GC, reinicie Visual Studio.  De forma predeterminada, Visual Studio habilita el modo de latencia baja de GC cada vez que escribe para asegurarse de que lo que ha escrito no bloquea las operaciones de catálogo global. Sin embargo, si una condición de poca memoria hace que Visual Studio mostrar la advertencia suspensión automática, el modo de latencia baja de GC está deshabilitado para esa sesión. Reiniciar Visual Studio se rehabilitar el comportamiento de GC de forma predeterminada. Para obtener más información, consulta <xref:System.Runtime.GCLatencyMode>.
@@ -65,6 +61,6 @@ Además, también se borran las memorias caché que se utiliza para operaciones 
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Habilitar y deshabilitar el análisis completo de la solución](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Cómo: Habilitar y deshabilitar el análisis de la solución completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Fundamentos de la recolección de elementos no utilizados](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

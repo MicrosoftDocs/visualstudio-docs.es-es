@@ -1,31 +1,26 @@
 ---
-title: 'Tutorial: Guardar configuración de usuario en una página de inicio | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Guardando la configuración de usuario en una página de inicio | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bdba9506b15b0d11f2c741c8651af2098b2f9da4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dc913e3a456e46e1f9e19102dadddb1092358e0b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763292"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999183"
 ---
-# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Tutorial: Guardado de la configuración de usuario en una página de inicio
+# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Tutorial: Guardar la configuración de usuario en una página de inicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede conservar la configuración del usuario para la página de inicio. Siguiendo este tutorial, puede crear un control que se guarda una configuración en el registro cuando el usuario hace clic en un botón y, a continuación, recupera ese valor cada vez que se carga la página de inicio. Dado que la plantilla de proyecto de la página de inicio incluye un control de usuario personalizable, y el XAML de página de inicio predeterminado llama a ese control, no es necesario modificar la página de inicio de sí mismo.  
   
- El almacén de configuración que se crea una instancia en este tutorial es una instancia de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaz, que lee y escribe en la siguiente ubicación del registro cuando se llama: HKCU\Software\Microsoft\VisualStudio\14.0\\  *CollectionName*  
+ El almacén de configuración que se crea una instancia en este tutorial es una instancia de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaz, que lee y escribe en la siguiente ubicación del registro cuando se llama: HKCU\Software\Microsoft\VisualStudio\14.0\\*CollectionName*  
   
  Cuando se ejecuta en la instancia experimental de Visual Studio, el almacén de configuración lee y escribe en HKCU\Software\Microsoft\VisualStudio\14.0Exp\\*CollectionName.*  
   
@@ -210,4 +205,3 @@ Puede conservar la configuración del usuario para la página de inicio. Siguien
  <xref:EnvDTE80.DTE2?displayProperty=fullName>   
  [Crear su propia página de inicio](../misc/creating-your-own-start-page.md)   
  [Adición de comandos de Visual Studio a una página de inicio](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
-

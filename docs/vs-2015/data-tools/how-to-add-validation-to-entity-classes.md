@@ -1,29 +1,26 @@
 ---
-title: 'Cómo: agregar validación a clases de entidad | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Agregar validación a clases de entidad | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 91600821b3d68c04382028e469a4e1a54a5d191c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995226"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>Cómo: agregar validación a clases de entidad
+# <a name="how-to-add-validation-to-entity-classes"></a>Filtrar Agregar validación a clases de entidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-*Validando* las clases de entidad es el proceso de confirmar que los valores especificados en los objetos de datos cumplen con las restricciones en el esquema del objeto así como las reglas establecidas para la aplicación. Se recomienda validar los datos antes de enviar las actualizaciones a la base de datos subyacente para reducir los errores. De este modo, también se reduce el número de viajes de ida y vuelta entre una aplicación y la base de datos.  
+*Validar* las clases de entidad es el proceso de confirmar que los valores especificados en los objetos de datos cumplen las restricciones en el esquema de un objeto, además de las reglas establecidas para la aplicación. Se recomienda validar los datos antes de enviar las actualizaciones a la base de datos subyacente para reducir los errores. De este modo, también se reduce el número de viajes de ida y vuelta entre una aplicación y la base de datos.  
   
  El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) proporciona métodos parciales que permiten a los usuarios extender el código generado por el diseñador que se ejecuta durante las inserciones, actualizaciones y eliminaciones de entidades completas y también durante y después de la columna individual cambios.  
   
@@ -37,7 +34,7 @@ ms.locfileid: "49812767"
   
 #### <a name="to-validate-data-during-a-columns-value-change"></a>Para validar los datos mientras se modifican los valores de una columna  
   
-1. Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Haga doble clic en el **.dbml** archivo **el Explorador de soluciones**.)  
+1. Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).  
   
 2. En Object Relational Designer, haga clic en la clase para el que desea agregar la validación y, a continuación, haga clic en **ver código**.  
   
@@ -47,7 +44,7 @@ ms.locfileid: "49812767"
   
 4. Para proyectos de Visual Basic:  
   
-   1. Expanda el **nombre del método** lista.  
+   1. Expanda la lista **Nombre de método**.  
   
    2. Busque el **en**_COLUMNNAME_**Changing** método para la columna que desea agregar la validación.  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49812767"
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Para validar datos durante la actualización de una clase de entidad  
   
-1. Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Haga doble clic en el **.dbml** archivo **el Explorador de soluciones**.)  
+1. Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).  
   
 2. Haga clic en un área vacía en el Object Relational Designer y haga clic en **ver código**.  
   
@@ -96,7 +93,7 @@ ms.locfileid: "49812767"
   
 4. Para proyectos de Visual Basic:  
   
-   1. Expanda el **nombre del método** lista.  
+   1. Expanda la lista **Nombre de método**.  
   
    2. Haga clic en **actualización**_NOMBREDECLASEDEENTIDAD_.  
   
@@ -131,5 +128,4 @@ ms.locfileid: "49812767"
 ## <a name="see-also"></a>Vea también  
  [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Validación de datos](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)
-
+ [Validar datos](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)

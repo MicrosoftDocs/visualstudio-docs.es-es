@@ -1,25 +1,20 @@
 ---
 title: Herramienta de línea de comandos de captura | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998208"
 ---
 # <a name="command-line-capture-tool"></a>Herramienta de captura de línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,10 +137,10 @@ DXCap.exe –file regression_test_12.vsglog –c BasicHLSL11.exe
 DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- El comando en el ejemplo anterior captura la información de gráficos desde la versión de escritorio de Internet Explorer durante la visualización de la página Web ubicada en www.fishgl.com que usa la API WebGL para representar contenido 3D.  
+ El comando del ejemplo anterior captura la información de los gráficos de la versión de escritorio de Internet Explorer mientras se ve la página web ubicada en www.fishgl.com, que utiliza la API WebGL para representar contenido en 3D.  
   
 > [!NOTE]
->  Dado que se pasan los argumentos de línea de comandos que aparecen después de la aplicación, debe especificar los argumentos destinados a DXCap.exe antes de usar el `–c` opción.  
+>  Dado que se le pasan los argumentos de línea de comandos que aparecen después de la aplicación, debe especificar los argumentos destinados a DXCap.exe antes de utilizar la opción `–c`.  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Capturar información de gráficos de una aplicación de la Tienda Windows.  
  Puede capturar información de gráficos de una aplicación de la Tienda Windows.  
@@ -170,15 +165,15 @@ DXCap.exe –e map
   
  **Paquete "Microsoft.BingMaps":**  
  **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Nombre: Microsoft.BingMaps**  
+ **Nombre completo: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **Name             : Microsoft.BingMaps**  
  **Publicador: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
- **Versión: 2.1.2914.1734**  
- **Aplicaciones que se pueda iniciar:**  
+ **Versión          : 2.1.2914.1734**  
+ **Aplicaciones disponibles:**  
  **Id.: AppexMaps**  
  **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA: N**  
+ **IsWWA: No**  
  **AppSpec (para iniciar): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** la última línea de salida para cada aplicación enumerada muestra el comando puede utilizar para capturar información de gráficos.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Capturar fotogramas específicos o fotogramas entre momentos específicos.  
@@ -302,6 +297,3 @@ DXCap.exe –p regression_test_12.vsglog –toXML temp.xml
 ```  
   
 ## <a name="requirements"></a>Requisitos
-
-
-
