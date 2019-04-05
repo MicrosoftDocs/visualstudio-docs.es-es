@@ -1,11 +1,8 @@
 ---
 title: Conmutador&lt;T&gt; Diseñador de actividad | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.ModelItemKeyValuePair.UI
@@ -14,13 +11,13 @@ ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7e2baacdfb35e2360a0e9dcc56891cadbe7d3ff3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844713"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997628"
 ---
 # <a name="switchlttgt-activity-designer"></a>Conmutador&lt;T&gt; Diseñador de actividad
 La actividad <xref:System.Activities.Statements.Switch%601> evalúa una expresión especificada y ejecuta la actividad desde una colección de actividades cuya clave asociada se corresponde con el valor que se ha obtenido a partir de la evaluación.  

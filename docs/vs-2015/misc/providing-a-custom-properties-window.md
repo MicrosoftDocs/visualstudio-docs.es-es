@@ -1,26 +1,21 @@
 ---
 title: Proporcionar una ventana de propiedades personalizadas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - property browsers, providing
 - Properties window, providing your own
 ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 8b3aeae11e087b6a6bd662ed32564d93062426df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 31c33bfafeba1210e6cd70db48643a6329c21a45
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186282"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989340"
 ---
 # <a name="providing-a-custom-properties-window"></a>Proporcionar una ventana de propiedades personalizadas
 Es posible proporcionar su propia **propiedades** ventana para un sistema de proyecto dada, en lugar de ampliación del **propiedades** ventana proporcionada por el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE). El escenario se ha encontrado con mayor frecuencia es cuando usted implementa el objeto situado en el marco de ventana.  

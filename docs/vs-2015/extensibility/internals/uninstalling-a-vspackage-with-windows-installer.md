@@ -1,14 +1,9 @@
 ---
 title: Desinstalar un paquete VSPackage con Windows Installer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - packages, uninstalling
 - VSPackages, uninstalling
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0082e86389620881c3879fe6dc79936b540d557f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 695b25ddb676f78a439d704e07344326e70b1fff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994695"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Desinstalación de un VSPackage con Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,6 +41,5 @@ En su mayor parte, Windows Installer puede desinstalar el paquete de VS simpleme
 >  `Installed` es la propiedad de que Windows Installer se establece cuando detecta que el VSPackage se ha instalado en el sistema.  
   
 ## <a name="see-also"></a>Vea también  
- [Windows Installer](http://msdn.microsoft.com/en-us/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
+ [Windows Installer](http://msdn.microsoft.com/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
  [Detección de requisitos del sistema](../../extensibility/internals/detecting-system-requirements.md)
-

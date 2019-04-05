@@ -1,12 +1,9 @@
 ---
 title: Personalizar las herramientas y el cuadro de herramientas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -17,13 +14,13 @@ ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93cc5fdef5c3d91281f01db8d4946dee17394170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847817"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997948"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizar las herramientas y el cuadro de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +84,11 @@ Editor
   
 3.  Establecer el **icono cuadro de herramientas** propiedad para hacer referencia a un mapa de bits de 16 x 16.  
   
-     Si desea definir un icono nuevo, cree un archivo de mapa de bits en el Explorador de soluciones en la **Dsl\Resources** carpeta. El archivo debe tener los siguientes valores de propiedad: **acción de compilación** = **contenido**; **Copy to Output Directory** = **no copie**.  
+     Si desea definir un icono nuevo, cree un archivo de mapa de bits en el Explorador de soluciones en la **Dsl\Resources** carpeta. El archivo debe tener los siguientes valores de propiedad: **Acción de compilación** = **contenido**; **Copy to Output Directory** = **no copie**.  
   
-4.  **Para una herramienta de elemento:** establecer el **clase** propiedad de la herramienta para hacer referencia a una clase de dominio concreto que se asigna a una forma.  
+4.  **Para una herramienta de elemento:** Establecer el **clase** propiedad de la herramienta para hacer referencia a una clase de dominio concreto que se asigna a una forma.  
   
-     **Para una herramienta de conector:** establecer el **generador de conexiones** propiedad de la herramienta para uno de los elementos que se ofrecen en la lista desplegable. Los generadores de conexiones se crean automáticamente cuando se asigna un conector a una relación de dominio. Si ha creado un conector recientemente, normalmente seleccionaría el generador de conexiones asociado.  
+     **Para una herramienta de conector:** Establecer el **generador de conexiones** propiedad de la herramienta para uno de los elementos que se ofrecen en la lista desplegable. Los generadores de conexiones se crean automáticamente cuando se asigna un conector a una relación de dominio. Si ha creado un conector recientemente, normalmente seleccionaría el generador de conexiones asociado.  
   
 5.  Para probar el DSL, presione F5 o CTRL+F5 y, en la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra un archivo de modelo de muestra. La nueva herramienta debería aparecer en el cuadro de herramientas. Arrástrela al diagrama para comprobar que crea un nuevo elemento.  
   
@@ -233,7 +230,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     /// <summary>  
     /// Only if source is on parent of target.  
     /// </summary>  
-    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
+    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
     {  
       return sourceInPort.Component == targetInPort.Component.Parent;  
     }  
@@ -254,9 +251,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="see-also"></a>Vea también  
  [Personalizar la creación de elemento y movimiento](../modeling/customizing-element-creation-and-movement.md)   
  [Personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md)   
- [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Ejemplo de diagramas de circuitos DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

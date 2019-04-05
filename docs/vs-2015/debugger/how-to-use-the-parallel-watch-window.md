@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: utilizar la ventana Inspección paralela | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Utilice la ventana Inspección paralela | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
 dev_langs:
@@ -22,18 +17,18 @@ ms.assetid: 28004d9b-420c-48f7-b80e-ab1519802558
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43783ad2b7d0f08aace55ff3b974d64301a38db2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753125"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996385"
 ---
-# <a name="how-to-use-the-parallel-watch-window"></a>Cómo: Utilizar la Ventana Inspección paralela
+# <a name="how-to-use-the-parallel-watch-window"></a>Filtrar Utilice la ventana Inspección paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En la ventana Inspección paralela, puede mostrar simultáneamente los valores que contiene una expresión en varios subprocesos. Cada fila representa un subproceso que se ejecuta en una aplicación, pero un subproceso puede representarse en varias filas. Para ser más exactos, cada fila representa una llamada de función cuya signatura de función coincide con la función en el marco de pila actual. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos. Las columnas siguientes se muestran en el **inspección paralela** ventana:  
+En la ventana Inspección paralela, puede mostrar simultáneamente los valores que contiene una expresión en varios subprocesos. Cada fila representa un subproceso que se ejecuta en una aplicación, pero un subproceso puede representarse en varias filas. Para ser más exactos, cada fila representa una llamada de función cuya signatura de función coincide con la función en el marco de pila actual. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos. Las siguientes columnas se muestran en la ventana **Inspección paralela**:  
   
 - La columna de marcas, en la que puede marcar un subproceso al que desee prestar especial atención.  
   
@@ -54,7 +49,7 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
   
 2.  En la barra de menús, seleccione **Depurar**, **Iniciar depuración**. Espere hasta que la aplicación llegue al punto de interrupción.  
   
-3.  En la barra de menús, elija **depurar**, **Windows**, **inspección paralela**y, a continuación, elija una ventana Inspección. Puede abrir hasta cuatro ventanas.  
+3.  En la barra de menús, elija **Depurar**, **Ventanas**, **Inspección paralela** y después elija una ventana de inspección. Puede abrir hasta cuatro ventanas.  
   
 ### <a name="to-add-a-watch-expression"></a>Para agregar una expresión de inspección  
   
@@ -70,7 +65,7 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
   
 ### <a name="to-switch-frames"></a>Para cambiar los marcos  
   
--   Haga doble clic en la columna del marco. (Teclado: seleccione la fila y presione Entrar).  
+-   Haga doble clic en la columna del marco. (Teclado: Seleccione la fila y presione ENTRAR).  
   
 ### <a name="to-sort-a-column"></a>Para ordenar una columna  
   
@@ -78,24 +73,21 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
   
 ### <a name="to-group-threads"></a>Para agrupar subprocesos  
   
--   Abra el menú contextual de la ventana Inspección paralela, elija **Group By**y, a continuación, elija el elemento de submenú adecuado.  
+-   Abra el menú contextual de la ventana Inspección paralela, elija **Agrupar por** y después seleccione el elemento del submenú adecuado.  
   
 ### <a name="to-freeze-or-thaw-threads"></a>Para inmovilizar o reanudar los subprocesos  
   
--   Abra el menú contextual de la fila y elija **inmovilizar** o **reanudar**.  
+-   Abra el menú contextual de la fila y elija **Inmovilizar** o **Reanudar**.  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Para exportar los datos de la ventana Inspección paralela  
   
--   Elija la **abrir en Excel** botón y, a continuación, elija **abrir en Excel** o **exportar a CSV**.  
+-   Elija el botón **Abrir en Excel** y después seleccione **Abrir en Excel** o **Exportar a CSV**.  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>Para filtrar por una expresión booleana  
   
--   Escriba una expresión booleana en el **filtrar por expresión booleana** cuadro. El depurador evalúa la expresión para cada contexto del subproceso. Solo se muestran las filas con el valor `true`.  
+-   Escriba una expresión booleana en el cuadro **Filtrar por expresión booleana**. El depurador evalúa la expresión para cada contexto del subproceso. Solo se muestran las filas con el valor `true`.  
   
 ## <a name="see-also"></a>Vea también  
- [Depurar aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Cómo: utilizar la ventana de subprocesos GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
+ [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Cómo: Uso de la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
  [Tutorial: Depurar una aplicación de C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
-
-
-

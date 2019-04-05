@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: crear un esquema XML de un documento XML | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear un esquema XML de un documento XML | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 84e09b4f7dcdcb21c2928ba0d80fb6ae27e90dc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 50e601d03901484ed6e759fb336b1effa5b37841
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889573"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995350"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Cómo: Crear un esquema XML a partir de un documento XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Filtrar Crear un esquema XML a partir de un documento XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -52,6 +47,3 @@ El Editor XML permite crear un esquema de lenguaje de definición de esquemas XM
   
 ## <a name="see-also"></a>Vea también  
  [Editor XML](../xml-tools/xml-editor.md)
-
-
-

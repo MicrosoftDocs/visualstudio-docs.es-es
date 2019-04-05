@@ -1,14 +1,9 @@
 ---
-title: 'Solucionar problemas de excepciones: System.ServiceModel.Security.MessageSecurityException | Microsoft Docs'
-ms.custom: ''
+title: 'Solucionar problemas de excepciones: System.ServiceModel.Security.MessageSecurityException | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: troubleshooting
 helpviewer_keywords:
 - System.ServiceModel.Security.MessageSecurityException exception
 - MessageSecurityException exception
@@ -16,15 +11,15 @@ ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d13f5cc282026b1590f59180ed7f25312bb926
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742476"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998427"
 ---
-# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Solución de problemas de excepciones: System.ServiceModel.Security.MessageSecurityException
+# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Solucionar problemas de excepciones: System.ServiceModel.Security.MessageSecurityException
 Un <xref:System.ServiceModel.Security.MessageSecurityException> excepción se produce cuando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] determina que un mensaje no se ha protegido correctamente o ha sido alterado. El error se produce con más frecuencia cuando se cumplen todas las condiciones siguientes:  
   
 -   Se usa una referencia de servicio WCF sobre una conexión remota, como Conexión a Escritorio remoto o Terminal Services, para comunicarse con un servicio WCF (.svc) en un sitio web o proyecto de aplicación web.  
@@ -35,7 +30,7 @@ Un <xref:System.ServiceModel.Security.MessageSecurityException> excepción se pr
   
 ## <a name="associated-tips"></a>Sugerencias asociadas  
  **Resuelva los problemas de autenticación de NTLM cuando use el servidor de desarrollo de ASP.Net.**  
- El servidor de desarrollo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] suele tener desactivada la seguridad de Desafío/Respuesta de Windows NT (NTLM), lo que permite el acceso anónimo. De forma predeterminada, al ejecutar una sesión de Terminal Services o utilizar una conexión remota, la seguridad NTLM está habilitada. Cuando NTLM está habilitada, todas las solicitudes al host local se validan con las credenciales del usuario o proceso que inició el servidor de desarrollo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Esto reduce las amenazas de seguridad. Sin embargo, WCF también realiza su propia autenticación y no permite que una cuenta que no sea de administrador utilice servicios WCF.  
+ El servidor de desarrollo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] suele tener desactivada la seguridad de Desafío/Respuesta de Windows NT (NTLM), lo que permite el acceso anónimo. De forma predeterminada, al ejecutar una sesión de Terminal Services o utilizar una conexión remota, la seguridad NTLM está habilitada. Cuando NTLM está habilitada, todas las solicitudes al host local se validan con las credenciales del usuario o proceso que inició el servidor de desarrollo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Esto reduce las amenazas de seguridad. Sin embargo, WCF también realiza su propia autenticación y no permite que una cuenta que no sea de administrador utilice servicios WCF.  
   
  Si un usuario remoto ejecutara el sitio web mediante el servidor de desarrollo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] y, además, trabajara con un servicio Web o un servicio WCF, puede crear un enlace de servicio personalizado o bien desactivar la seguridad NTLM.  
   
