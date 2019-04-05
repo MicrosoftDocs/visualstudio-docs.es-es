@@ -1,12 +1,9 @@
 ---
 title: Solucionar problemas de referencias de servicio | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223969"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999675"
 ---
 # <a name="troubleshooting-service-references"></a>Solucionar problemas de referencias de servicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ En este tema se enumera los problemas comunes que pueden producirse cuando se tr
 -   En **el Explorador de soluciones**, haga clic en el proyecto de biblioteca de servicios WCF y haga clic en **compilar**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Error al acceder a un servicio a través de un escritorio remoto
- Cuando un usuario accede a un servicio WCF hospedado en Web a través de una conexión a escritorio remota y el usuario no tiene permisos administrativos, se usa la autenticación NTLM. Si el usuario no tiene permisos administrativos, el usuario puede recibir el siguiente mensaje de error: "la solicitud HTTP no está autorizada con el esquema de autenticación de cliente 'Anónimo'. El encabezado de autenticación recibido del servidor era 'NTLM'."
+ Cuando un usuario accede a un servicio WCF hospedado en Web a través de una conexión a escritorio remota y el usuario no tiene permisos administrativos, se usa la autenticación NTLM. Si el usuario no tiene permisos administrativos, el usuario puede recibir el mensaje de error siguiente: "La solicitud HTTP no está autorizada con el esquema de autenticación de cliente 'Anónimo'. El encabezado de autenticación recibido del servidor era 'NTLM'."
 
  Para corregir este error:
 
@@ -79,9 +76,9 @@ En este tema se enumera los problemas comunes que pueden producirse cuando se tr
 
 3.  Asegúrese de que el **avanzada de mostrar configuraciones de compilación** casilla de verificación está seleccionada y, a continuación, haga clic en **Aceptar**.
 
-4.  Cargue el proyecto de servicio WCF. Para obtener más información, consulte [Cómo: crear soluciones de varios proyectos](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4.  Cargue el proyecto de servicio WCF. Para obtener más información, vea [Cómo: Crear soluciones de varios proyectos](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5.  En el **Configuration Manager** cuadro de diálogo, establezca el **configuración de soluciones activas** a **depurar**. Para obtener más información, consulte [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).
+5.  En el **Configuration Manager** cuadro de diálogo, establezca el **configuración de soluciones activas** a **depurar**. Para obtener más información, vea [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).
 
 6.  En **el Explorador de soluciones**, seleccione el proyecto de servicio WCF.
 
@@ -92,13 +89,13 @@ En este tema se enumera los problemas comunes que pueden producirse cuando se tr
 
  Para corregir este error, deshabilite las fuentes RSS:
 
-1.  En Internet Explorer, en el **herramientas** menú, haga clic en **opciones de Internet**.
+1.  En Internet Explorer, en el menú **Herramientas**, haga clic en **Opciones de Internet**.
 
 2.  En el **contenido** ficha la **fuentes** sección, haga clic en **configuración**.
 
 3.  En el **configuración de fuente** cuadro de diálogo, desactive la **activar la vista de lectura de fuentes** casilla de verificación y, a continuación, haga clic en **Aceptar**.
 
-4.  Haga clic en **Aceptar** para cerrar el **opciones de Internet** cuadro de diálogo.
+4.  Elija **Aceptar** para cerrar el cuadro de diálogo **Opciones de Internet**.
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,27 +1,22 @@
 ---
 title: Guía básica para ampliar el depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], roadmap
 - Debugging SDK, roadmap
 ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 806a5ebb4bf27f4d46bbe5b81a5dba6b319ee02e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f8c5995de05d5861ff407006d5926081a5b76c8b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995281"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Guía básica para ampliar el depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Esta documentación proporciona información de referencia y la guía para exten
   
      [Creación de un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [Tutorial: Crear un motor de depuración mediante ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+     [Tutorial: Creación de un motor de depuración mediante ATL COM](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
      [Implementación de un proveedor de puerto](../../extensibility/debugger/implementing-a-port-supplier.md)  
   
@@ -58,4 +53,3 @@ Esta documentación proporciona información de referencia y la guía para exten
   
 ## <a name="see-also"></a>Vea también  
  [Introducción](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
-

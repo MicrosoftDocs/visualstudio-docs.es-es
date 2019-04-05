@@ -1,34 +1,29 @@
 ---
 title: Elemento de símbolos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b9bccb3874d5b85a8a69288e2bf44adb14b5b3f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997049"
 ---
 # <a name="symbols-element"></a>Symbols (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Define los GUID e identificadores usados por otros elementos VSCT. Para código no administrado, esta información normalmente procede de los archivos de encabezado que se especifican mediante [Extern elemento](../extensibility/extern-element.md). El código administrado utiliza los elementos secundarios del elemento para definir esta información de símbolos.  
   
- Si crea un archivo .vsct desde un archivo .cto existente, se generarán los símbolos como elementos secundarios del elemento de símbolos. Para obtener más información, vea [Cómo: crear una. Archivo de Vsct desde una existente. Archivo CTO](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+ Si crea un archivo .vsct desde un archivo .cto existente, se generarán los símbolos como elementos secundarios del elemento de símbolos. Para obtener más información, vea [Cómo: Crear una. Archivo de Vsct desde una existente. Archivo CTO](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
  El elemento de símbolos no debe confundirse con el [definir elemento](../extensibility/define-element.md), que define los pares nombre / valor para su uso por el preprocesador.  
   
@@ -78,4 +73,3 @@ Define los GUID e identificadores usados por otros elementos VSCT. Para código 
   
 ## <a name="see-also"></a>Vea también  
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

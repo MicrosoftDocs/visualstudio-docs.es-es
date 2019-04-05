@@ -1,14 +1,9 @@
 ---
 title: Ediciones no compatibles en Visual Basic, editar y continuar | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787905"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58999825"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Ediciones no compatibles en Editar y continuar de Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ La característica Editar y continuar permite detener la ejecución del programa
  Si necesita realizar un cambio no compatible, debe detener la depuración, hacer el cambio e iniciar una nueva sesión de depuración.  
   
 ###  <a name="BKMK_MethodandPropertyBodyEdits"></a> Ediciones de cuerpo de la propiedad y método  
- **Cambios no admitidos en Variables locales estáticas**: agregar o actualizar una variable local o quitar una variable local estática si provocara un error de compilación.  
+ **Cambios no admitidos en Variables locales estáticas**: Agregar o actualizar una variable local o quitar una variable local estática si eso provocara un error de compilación.  
   
- **Cambios no admitidos en los genéricos**: no se admiten cambios en el propio método genérico o el cuerpo de método genérico. Se puede agregar, eliminar o cambiar la creación de instancias de un tipo genérico o de llamadas a los métodos genéricos existentes.  
+ **Cambios no admitidos en los genéricos**: No se admiten cambios en el propio método genérico o en el cuerpo del método genérico. Se puede agregar, eliminar o cambiar la creación de instancias de un tipo genérico o de llamadas a los métodos genéricos existentes.  
   
  **Otros cambios no admitidos**  
   
@@ -223,8 +218,5 @@ La característica Editar y continuar permite detener la ejecución del programa
 -   Cambiar el tipo de un campo.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: aplicar tareas de edición en modo de interrupción con Editar y continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [Cómo: Aplicar tareas de edición en modo de interrupción con Editar y continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Editar y continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

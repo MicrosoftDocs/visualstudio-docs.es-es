@@ -1,11 +1,8 @@
 ---
 title: Las actividades de flujo de trabajo heredado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activities
@@ -15,13 +12,13 @@ ms.assetid: 4af7a06b-1e82-43c8-aec8-0dc5fb63d08a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999509"
 ---
 # <a name="legacy-workflow-activities"></a>Actividades de flujo de trabajo heredadas
 [!INCLUDE[wf](../includes/wf-md.md)] contiene un conjunto predeterminado de actividades que proporcionan la funcionalidad para el flujo de control, las condiciones, el control de eventos, la administración de estados, así como la comunicación con aplicaciones y servicios. Al diseñar flujos de trabajo, puede usar las actividades proporcionadas por el sistema que proporciona [!INCLUDE[wfd1](../includes/wfd1-md.md)] o crear sus propias actividades personalizadas.  
@@ -39,17 +36,17 @@ ms.locfileid: "49205422"
 |[CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053)|Un contenedor para una o varias actividades que realizan la compensación para una actividad TransactionScopeActivity completada [!INCLUDE[crdefault](../includes/crdefault-md.md)] [mediante la actividad CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65065).|  
 |[ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)|Ejecuta actividades secundarias según una condición que se aplica a la [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017) propia actividad y según las condiciones que se aplican independientemente a cada elemento secundario. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066).|  
 |[DelayActivity](http://go.microsoft.com/fwlink?LinkID=65028)|Le permite compilar retrasos en el flujo de trabajo, basados en un intervalo de tiempo de espera. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad DelayActivity](http://go.microsoft.com/fwlink?LinkID=65067).|  
-|[Actividad EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Ajusta una o varias actividades que se ejecutan cuando se produce un evento especificado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Usar la actividad EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068).|  
+|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Ajusta una o varias actividades que se ejecutan cuando se produce un evento especificado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Usar la actividad EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068).|  
 |[EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018)|Proporciona un marco de trabajo para asociar eventos a una actividad. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65069).|  
 |[EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030)|Ejecuta su actividad secundaria simultáneamente con una [EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018). [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65070).|  
 |[FaultHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65054)|Se usa para controlar una excepción del tipo especificado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad FaultHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65071).|  
-|[Actividad FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055)|Representa una actividad compuesta que posee una lista ordenada de actividades secundarias de tipo [FaultHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65054). [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65072).|  
+|[FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055)|Representa una actividad compuesta que posee una lista ordenada de actividades secundarias de tipo [FaultHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65054). [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65072).|  
 |[HandleExternalEventActivity](http://go.microsoft.com/fwlink?LinkID=65031)|Usar junto con el [CallExternalMethodActivity](http://go.microsoft.com/fwlink?LinkID=65025) actividad para las comunicaciones de entrada y salidas con un servicio local. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad HandleExternalEventActivity](http://go.microsoft.com/fwlink?LinkID=65073).|  
-|[Actividad IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)|Comprueba una condición en cada bifurcación y realiza actividades en la primera bifurcación para el que es igual la condición **true**. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65074).|  
+|[IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)|Comprueba una condición en cada bifurcación y realiza actividades en la primera bifurcación para el que es igual la condición **true**. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65074).|  
 |[IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)|Representa una bifurcación de un [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033). [!INCLUDE[crdefault](../includes/crdefault-md.md)][Usar la actividad IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075).|  
 |[InvokeWebServiceActivity](http://go.microsoft.com/fwlink?LinkID=65035)|Permite que el flujo de trabajo invoque un servicio Web. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad InvokeWebServiceActivity](http://go.microsoft.com/fwlink?LinkID=65076).|  
 |[InvokeWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65036)|Permite que el flujo de trabajo invoque otro flujo de trabajo. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad InvokeWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65077).|  
-|[Actividad ListenActivity](http://go.microsoft.com/fwlink?LinkID=65037)|Una actividad compuesta que contiene solo [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029) actividades secundarias. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad ListenActivity](http://go.microsoft.com/fwlink?LinkID=65078).|  
+|[ListenActivity](http://go.microsoft.com/fwlink?LinkID=65037)|Una actividad compuesta que contiene solo [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029) actividades secundarias. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad ListenActivity](http://go.microsoft.com/fwlink?LinkID=65078).|  
 |[ParallelActivity](http://go.microsoft.com/fwlink?LinkID=65038)|Proporciona una manera de programar dos o más secundarios **SequenceActivity** bifurcaciones de actividades para el procesamiento al mismo tiempo. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad ParallelActivity](http://go.microsoft.com/fwlink?LinkID=65079).|  
 |[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)|Se usa para representar una colección de reglas. Regla formada por condiciones y las acciones resultantes. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Uso de la actividad PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).|  
 |[ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)|Crea varias instancias de una única actividad secundaria. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Usar la actividad ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65080).|  
@@ -80,7 +77,7 @@ ms.locfileid: "49205422"
  [Cómo: Crear una condición de regla declarativa (heredado)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)  
  Muestra los pasos para crear una condición de regla declarativa.  
   
- [Cómo: Crear un conjunto de reglas para PolicyActivity (heredado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
+ [Cómo: Crear un conjunto de reglas de PolicyActivity (heredado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
  Muestra los pasos para crear un conjunto de reglas de PolicyActivity.  
   
  [Cómo: Implementar una operación de contrato WCF (heredado)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  

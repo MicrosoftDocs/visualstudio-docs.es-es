@@ -1,26 +1,21 @@
 ---
 title: Administración de las opciones de configuración | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5f7407a4c75321899498f2f4fa9e555f32198c0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d88cd0c20a8bbb29fee6b35d65813fd81f2eeb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748730"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996519"
 ---
 # <a name="managing-configuration-options"></a>Administración de opciones de configuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,4 +47,3 @@ Cuando se crea un nuevo tipo de proyecto, debe administrar opciones de configura
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Tipos de proyecto](../../extensibility/internals/project-types.md)  
  Proporciona información general de los proyectos como bloques de creación básicos de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE). Se proporcionan vínculos a temas adicionales que explican cómo proyectos de control de generar y compilar código.
-

@@ -11,7 +11,7 @@ ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
 ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/22/2019
 ms.locfileid: "56678870"
@@ -61,7 +61,7 @@ Los siguientes recursos le ayudarán a empezar:
 
 - [Guía de instalación](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [Introducción y vídeos Deep Dive cortos](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- Demostración de instalación y características (27 minutos)])https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- Demostración de instalación y características (27 minutos)]( https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Documentación](https://github.com/Microsoft/PTVS/wiki)  
 
 

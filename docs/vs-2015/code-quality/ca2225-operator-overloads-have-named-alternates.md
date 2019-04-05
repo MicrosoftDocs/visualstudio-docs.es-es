@@ -1,14 +1,9 @@
 ---
-title: 'CA2225: Las sobrecargas del operador tienen alternativas con nombre | Microsoft Docs'
-ms.custom: ''
+title: 'CA2225: Las sobrecargas del operador tienen alternativas con nombre | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
 - CA2225
@@ -20,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 427bd7756e1bf7a9e1b7056a84dd90c29bf504fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860258"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997407"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Las sobrecargas del operador tienen alternativas con nombre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +42,9 @@ ms.locfileid: "49860258"
 
 |C#|Visual Basic|C++|Nombre alternativo|
 |---------|------------------|-----------|--------------------|
-|+ (binario)|+|+ (binario)|Add|
-|+=|+=|+=|Add|
-|&|Y|&|BitwiseAnd|
+|+ (binario)|+|+ (binario)|Agregar|
+|+=|+=|+=|Agregar|
+|&|y|&|BitwiseAnd|
 |&=|Y =|&=|BitwiseAnd|
 |&#124;|O bien|&#124;|BitwiseOr|
 |&#124;=|O =|&#124;=|BitwiseOr|
@@ -58,7 +53,7 @@ ms.locfileid: "49860258"
 |/=|/=|/=|Dividir|
 |==|=|==|Es igual a|
 |^|Xor|^|Xor|
-|^=|Xor =|^=|Xor|
+|^=|Xor=|^=|Xor|
 |>|>|>|Comparar|
 |>=|>=|>=|Comparar|
 |++|N/D|++|Incremento|
@@ -67,14 +62,14 @@ ms.locfileid: "49860258"
 |<<=|<<=|<<=|Izq|
 |<|<|<|Comparar|
 |<=|<=|\<=|Comparar|
-|&&|N/D|&&|AND lógico|
+|&&|N/D|&&|LogicalAnd|
 |&#124;&#124;|N/D|&#124;&#124;|LogicalOr|
 |!|N/D|!|LogicalNot|
 |%|Mod|%|Mod o resto|
 |%=|N/D|%=|Mod|
 |* (binario)|*|*|Multiplicar|
 |*=|N/D|*=|Multiplicar|
-|~|no|~|OnesComplement|
+|~|not|~|OnesComplement|
 |>>|>>|>>|DER|
 =|N/D|>>=|DER|
 |-(binario)|-(binario)|-(binario)|Restar|
@@ -106,11 +101,8 @@ ms.locfileid: "49860258"
 
  [CA2226: Los operadores deben tener sobrecargar simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Invalidar Equals al sobrecargar operadores de igualdad](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Invalidar equals al sobrecargar operadores de igualdad](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: Invalidar el método GetHashCode al invalidar el método Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Invalidar el método GetHashCode al invalidar Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
- [CA2231: Sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-
+ [CA2231: sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

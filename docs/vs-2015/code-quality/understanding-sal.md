@@ -1,25 +1,20 @@
 ---
 title: Comprender SAL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999679"
 ---
 # <a name="understanding-sal"></a>Introducción a SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ void * memcpy(
  ¿Se puede saber lo que hace esta función? Cuando se implementa o se llama a una función, se deben mantener ciertas propiedades para garantizar la corrección del programa. Si se examina una declaración como la mostrada en el ejemplo, no sabe qué son. Sin anotaciones de SAL, tendría que depender de documentación o los comentarios de código. Aquí es lo que la documentación de MSDN para `memcpy` dice:  
   
 > "Bytes de src en el destino del recuento de copias. Si el origen y destino se superponen, el comportamiento de memcpy es indefinido. Use memmove para controlar las áreas superpuestas.   
-> **Nota de seguridad:** Asegúrese de que el búfer de destino es el mismo tamaño o mayor que el búfer de origen. Para obtener más información, consulte evitar saturaciones del búfer."  
+> **Nota sobre la seguridad:** Asegúrese de que el búfer de destino sea del mismo tamaño o mayor que el búfer de origen. Para obtener más información, consulte evitar saturaciones del búfer."  
   
  La documentación contiene un par de bits de información que sugieren que el código tiene que mantener ciertas propiedades para garantizar la exactitud del programa:  
   
@@ -424,6 +419,3 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Anotar comportamiento de bloqueo](../code-quality/annotating-locking-behavior.md)   
  [Especificar cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Procedimientos recomendados y ejemplos](../code-quality/best-practices-and-examples-sal.md)
-
-
-

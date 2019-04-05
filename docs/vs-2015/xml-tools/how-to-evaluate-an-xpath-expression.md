@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: evaluar una expresión XPath | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Evaluar una expresión XPath | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 05758034c0228f0efd7fb3ae63bd3b7e0d5e3095
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210436"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999647"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Cómo: Evaluar una expresión XPath
+# <a name="how-to-evaluate-an-xpath-expression"></a>Filtrar Evaluar una expresión XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede evaluar expresiones XPath con el **Inspección rápida** cuadro de diálogo. La expresión XPath debe ser válida de acuerdo con la recomendación XPath 1.0 de W3C. El contexto XSLT actual, es decir, el `self::node()` nodo en el **variables locales** ventana, proporciona el contexto de evaluación para la expresión XPath.  
@@ -35,7 +30,7 @@ Puede evaluar expresiones XPath con el **Inspección rápida** cuadro de diálog
 -   No se admiten funciones definidas por el usuario.  
   
 > [!NOTE]
->  El siguiente procedimiento utiliza los archivos belowAvg.xsl y books.xml desde el [Tutorial: depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tema.  
+>  El siguiente procedimiento utiliza los archivos belowAvg.xsl y books.xml desde el [Tutorial: Depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tema.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Para evaluar una expresión XPath  
   
@@ -59,4 +54,3 @@ Puede evaluar expresiones XPath con el **Inspección rápida** cuadro de diálog
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de XSLT](../xml-tools/debugging-xslt.md)
-
