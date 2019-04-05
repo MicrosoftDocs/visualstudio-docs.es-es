@@ -1,23 +1,20 @@
 ---
 title: Crear una aplicación de datos sencilla con WPF y Entity Framework 6 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922203"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002700"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Crear una aplicación de datos sencilla con WPF y Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +27,9 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
 ## <a name="install-and-connect-to-northwind"></a>Instalar y conectar a Northwind  
  En este ejemplo se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind. Debería funcionar con otros productos de base de datos SQL igual de bien si el proveedor de datos ADO.NET para ese producto es compatible con Entity Framework.  
   
-1.  Si no lo ha hecho ya, instale SQL Server 2014 LocalDB Express de 32 bits desde el [página de descarga de las ediciones de SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Si no lo ha hecho ya, instale SQL Server 2014 LocalDB Express de 32 bits desde el [página de descarga de las ediciones de SQL Server](https://www.microsoft.com/sql-server/sql-server-editions-express).  
   
-2.  Instalar la base de datos de ejemplo Northwind, siga estas instrucciones: [bases de datos de ejemplo de instalación de SQL Server](../data-tools/install-sql-server-sample-databases.md).  
+2.  Instale la base de datos de ejemplo Northwind siguiendo estas instrucciones: [Instalar bases de datos de ejemplo de SQL Server](../data-tools/install-sql-server-sample-databases.md).  
   
 3.  [Agregar nuevas conexiones](../data-tools/add-new-connections.md) para Northwind.  
   
@@ -709,4 +706,3 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
   
 ## <a name="see-also"></a>Vea también  
  [Visual Studio data tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [documentación de Entity Framework](https://msdn.microsoft.com/data/ee712907.aspx)
-

@@ -1,12 +1,9 @@
 ---
 title: Personalizar mapas de código mediante la edición de los archivos DGML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -24,13 +21,13 @@ ms.assetid: a2e141f4-4fd8-4611-b236-6b9e7bc54fc1
 caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e370e805df8e3a6ee253e3560738e882a247d2de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98d754bfc5f68acf693f37f98347c8c60075beaa
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817464"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59003028"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizar mapas de código mediante la edición de los archivos DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ Para personalizar un mapa de código, puede editar el archivo .dgml (Directed Gr
  Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el mapa forma parte de la solución de Visual Studio, selecciónelo en **el Explorador de soluciones**, abra el menú contextual y elija **abrir con**, **Editor XML (texto)**.  
   
 > [!NOTE]
->  Para crear mapas de código, es necesario tener Visual Studio Enterprise. Cuando se edita el mapa de código en Visual Studio, los atributos y elementos de DGML que no se usan se eliminan al guardar el archivo .dgml. Visual Studio también crea automáticamente elementos de código cuando se agregan nuevos vínculos manualmente.  Al guardar el archivo .dgml, los atributos que agregara a un elemento se podrían reorganizar en orden alfabético.  
+>  Para crear mapas de código, debe tener Visual Studio Enterprise. Cuando se edita el mapa de código en Visual Studio, los atributos y elementos de DGML que no se usan se eliminan al guardar el archivo .dgml. Visual Studio también crea automáticamente elementos de código cuando se agregan nuevos vínculos manualmente.  Al guardar el archivo .dgml, los atributos que agregara a un elemento se podrían reorganizar en orden alfabético.  
   
 ##  <a name="OrganizeNodes"></a> Agrupar elementos de código  
  Puede agregar nuevos grupos o convertir los nodos existentes en un grupo.  
@@ -137,7 +134,7 @@ Para personalizar un mapa de código, puede editar el archivo .dgml (Directed Gr
     Background="ColorNameOrHexadecimalValue"  
     ```  
   
-     Esquema  
+     Contorno  
   
     ```xml  
     Stroke="ColorNameOrHexadecimalValue"  
@@ -155,7 +152,7 @@ Para personalizar un mapa de código, puede editar el archivo .dgml (Directed Gr
     Foreground="ColorNameOrHexadecimalValue"  
     ```  
   
-     Icono  
+     Iconos  
   
     ```xml  
     Icon="IconFilePathLocation"  
@@ -292,29 +289,29 @@ Para personalizar un mapa de código, puede editar el archivo .dgml (Directed Gr
   
     Esta expresión usa la sintaxis de la forma de Backus-Naur (BNF) siguiente:  
   
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
+    \<Expresión >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "("\<expresión > "")"" &#124; \<MemberBindings > &#124; \<Literal > &#124; \<Número >  
   
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>  
+    \<BinaryExpression >:: = \<expresión > \<operador > \<expresión >  
   
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
+    \<UnaryExpression >:: = "!" \<Expresión > &#124; "+" \<expresión > &#124; "-" \<expresión >  
   
-    <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "o" &#124; "y" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+    \<Operador >:: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "o" &#124; "y" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
+    \<MemberBindings> ::= \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding>  
   
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
+    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>  
   
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
+    \<MethodCall >:: = \<identificador > "(" \<MethodArgs > "")""  
   
-    <PropertyGet> :: = Identificador  
+    \<PropertyGet >:: = identificador  
   
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
+    \<MethodArgs >:: = \<expresión > &#124; \<expresión > "," \<MethodArgs > &#124; \<vacía >  
   
-    <Identifier> ::= [^. ]*  
+    \<Identificador >:: = [^. ]*  
   
-    <Literal> :: = literal de cadena único o entre comillas dobles  
+    \<Literal >:: = literal de cadena único o entre comillas dobles  
   
-    <Number> :: = cadena de dígitos con separador decimal opcional  
+    \<Número >:: = cadena de dígitos con separador decimal opcional  
   
     Puede especificar varios `<Condition/>` elementos, que deben ser true para aplicar el estilo.  
   
@@ -379,9 +376,9 @@ Para personalizar un mapa de código, puede editar el archivo .dgml (Directed Gr
   
  En este ejemplo:  
   
-1.  Si `Coverage` es > 80, la propiedad `Background` se establece en verde.  
+1.  Si `Coverage` es > 80, a continuación, establezca el `Background` propiedad a verde.  
   
-2.  En cambio, si `Coverage` es > 50, la propiedad `Background` se establece en una sombra naranja en función del valor de la propiedad `Coverage`.  
+2.  Else if `Coverage` es > 50, a continuación, establezca el `Background` en función del valor de propiedad en una sombra naranja el `Coverage` propiedad.  
   
 3.  Por otro lado, la propiedad `Background` se establece en una sombra roja en función de la propiedad `Coverage`.  
   

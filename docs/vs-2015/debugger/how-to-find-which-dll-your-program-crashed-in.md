@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: buscar el archivo DLL que se bloqueó en el programa | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Busque el archivo DLL que se bloqueó en el programa | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dll
 dev_langs:
@@ -30,41 +25,36 @@ ms.assetid: ecf62568-8b65-4a41-b8a4-e962ff2dfb71
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b7af6940de5bd4e39451f44176f5c15d2e8b4548
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994821"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Cómo: Averiguar en qué archivo DLL se bloqueó el programa
+# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Filtrar Busque el archivo DLL que se bloqueó en el programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- Si la aplicación se bloquea durante una llamada a un archivo DLL del sistema o el código de un tercero, es necesario que encuentre qué archivo DLL estaba activo cuando ocurrió el bloqueo. Si experimenta un bloqueo en un archivo DLL fuera de su propio programa, puede identificar la ubicación mediante el **módulos** ventana.  
+ Si la aplicación se bloquea durante una llamada a un archivo DLL del sistema o el código de un tercero, es necesario que encuentre qué archivo DLL estaba activo cuando ocurrió el bloqueo. Si se produce un bloqueo de un archivo DLL fuera de su programa, puede identificar la ubicación mediante la ventana **Módulos**.  
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Para averiguar dónde se produjo un bloqueo mediante la ventana Módulos  
   
 1.  Anote la dirección donde se produjo el bloqueo.  
   
-2.  En el **depurar** menú, elija **Windows**y haga clic en **módulos**.  
+2.  En el menú **Depurar**, elija **Ventanas** y haga clic en **Módulos**.  
   
-3.  En el **módulos** ventana, busque la **dirección** columna. Es posible que necesite utilizar la barra de desplazamiento para verla.  
+3.  En la ventana **Módulos**, busque la columna **Dirección**. Es posible que necesite utilizar la barra de desplazamiento para verla.  
   
-4.  Haga clic en el **dirección** situado en la parte superior de la columna para ordenar los archivos DLL por dirección.  
+4.  Haga clic en el botón **Dirección** en la parte superior de la columna para ordenar los archivos DLL por dirección.  
   
 5.  Busque en la lista ordenada el archivo DLL cuyo intervalo de direcciones contiene la ubicación del bloqueo.  
   
-6.  Examine el **nombre** y **ruta** columnas para ver el nombre del archivo DLL y la ruta de acceso.  
+6.  Consulte las columnas **Nombre** y **Ruta de acceso** para ver el nombre y la ruta del archivo DLL.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: depurar DLL nativas](../debugger/how-to-debug-native-dlls.md)   
- [Cómo: Usar la ventana Módulos](../debugger/how-to-use-the-modules-window.md)
-
-
-
-
-
+ [Cómo: Depurar archivos DLL nativos](../debugger/how-to-debug-native-dlls.md)   
+ [Cómo: Uso de la ventana Módulos](../debugger/how-to-use-the-modules-window.md)

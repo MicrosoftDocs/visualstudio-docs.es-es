@@ -1,12 +1,9 @@
 ---
 title: Generación de código en un proceso de compilación | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -14,13 +11,13 @@ ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281815"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002452"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generación de código en un proceso de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Esto significa que no puede tener acceso a elementos como nombres de archivo de 
 
 ##  <a name="buildserver"></a> Configurar las máquinas
 
-Para habilitar las tareas de compilación en el equipo de desarrollo, instale [SDK de modelado para Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754).
+Para habilitar las tareas de compilación en el equipo de desarrollo, instale [SDK de modelado para Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Si [el servidor de compilación](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) se ejecuta en un equipo en el que no está instalado Visual Studio, copie los archivos siguientes en el equipo de compilación desde el equipo de desarrollo. Reemplace los números de versión más recientes por ‘*’.
 
@@ -133,7 +130,7 @@ Puede utilizar caracteres comodín en TransformFile:
 
 ## <a name="source-control"></a>Control de código fuente
 
-No hay ninguna integración específica con un sistema de control de código fuente. Sin embargo, puede agregar sus propias extensiones, por ejemplo para desproteger y proteger un archivo generado. De forma predeterminada, la tarea de transformación de texto evita sobrescribir un archivo marcado como solo lectura; cuando se encuentra un archivo de este tipo, se registra un error en la lista de errores de Visual Studio y se produce un error en la tarea.
+No hay ninguna integración específica con un sistema de control de código fuente. Sin embargo, puede agregar sus propias extensiones, por ejemplo para extraer e insertar en el repositorio un archivo generado. De forma predeterminada, la tarea de transformación de texto evita sobrescribir un archivo marcado como solo lectura; cuando se encuentra un archivo de este tipo, se registra un error en la lista de errores de Visual Studio y se produce un error en la tarea.
 
 Para especificar que los archivos de solo lectura se deben sobrescribir, inserte esta propiedad:
 
@@ -164,7 +161,7 @@ En `AfterTransform`, se puede hacer referencia a listas de archivos:
 
 - NonGeneratedFiles: lista de archivos de solo lectura que no se sobrescribieron.
 
-  Por ejemplo, defina una tarea para desproteger GeneratedFiles.
+  Por ejemplo, defina una tarea para extraer del repositorio GeneratedFiles.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath y OutputFileName
 
@@ -288,4 +285,4 @@ Hay una buena guía en la plantilla de T4 MSbuild, $(VSToolsPath)\TextTemplating
 
 - [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)
 - [Visualización de Visual Studio y SDK de modelado](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Oleg Sych: Descripción de T4: integración de](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [Oleg Sych: Descripción de la integración de T4](https://github.com/olegsych/T4Toolbox)

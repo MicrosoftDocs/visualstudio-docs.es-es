@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Analizar código de C/C ++ en previsión de defectos | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Análisis de código de C/C ++ en previsión de defectos | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -18,15 +13,15 @@ ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782315"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987080"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en previsión de defectos
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en busca de defectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tutorial muestra cómo analizar el código de C/C ++ en previsión de defectos de código posible mediante el uso de la herramienta de análisis de código para código de C o C++.  
@@ -57,7 +52,7 @@ Este tutorial muestra cómo analizar el código de C/C ++ en previsión de defec
   
      La solución de demostración se rellena ahora **el Explorador de soluciones**.  
   
-2.  En el **compilar** menú, haga clic en **recompilar solución**.  
+2.  En el menú **Compilar**, haga clic en **Recompilar solución**.  
   
      La solución se compila sin errores ni advertencias.  
   
@@ -83,7 +78,7 @@ Este tutorial muestra cómo analizar el código de C/C ++ en previsión de defec
   
 2.  En el **lista de errores**, haga doble clic en la siguiente advertencia:  
   
-     Advertencia C6230: conversión implícita entre tipos semánticamente diferentes: usando HRESULT en un contexto booleano.  
+     warning C6230: Conversión implícita entre tipos semánticamente diferentes: usando HRESULT en un contexto booleano.  
   
      El editor de código muestra la línea que produjo la advertencia en la función `bool``ProcessDomain()`. Esta advertencia indica que se está utilizando un valor de HRESULT en una instrucción 'if' donde se espera un resultado booleano.  
   
@@ -95,7 +90,7 @@ Este tutorial muestra cómo analizar el código de C/C ++ en previsión de defec
   
 4.  En el **lista de errores**, haga doble clic en la siguiente advertencia:  
   
-     Advertencia C6282: Operador incorrecto: asignación de constante en el contexto de la prueba. ¿Pretendía indicar ==?  
+     warning C6282: Operador incorrecto: asignación de constante en el contexto de la prueba. ¿Pretendía indicar ==?  
   
 5.  Corregir esta advertencia mediante la comprobación de igualdad. El código debe ser similar al código siguiente:  
   
@@ -200,7 +195,4 @@ Este tutorial muestra cómo analizar el código de C/C ++ en previsión de defec
      El proyecto se compila sin errores ni advertencias.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Analizar código administrado en previsión de defectos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [Tutorial: Análisis de código administrado en previsión de defectos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

@@ -1,11 +1,8 @@
 ---
-title: 'Cómo: crear un conjunto de reglas para PolicyActivity (heredado) | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear un conjunto de reglas para PolicyActivity (heredado) | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - PolicyActivity activity, creating rule sets
@@ -17,15 +14,15 @@ ms.assetid: f272489d-3342-4511-8b59-6a0fd7a42d70
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7ab49957d830bf558a9dddf55cdc5e8c2f3f75d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5e7528e8a589cb64e4debc8c1e119f8f59a6244c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194628"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988852"
 ---
-# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Cómo: Crear un conjunto de reglas para PolicyActivity (Heredado)
+# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Filtrar Crear un conjunto de reglas de PolicyActivity (heredado)
 En este tema se describe cómo crear un conjunto de reglas de actividades de directiva mediante [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado que tiene como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Una vez que haya arrastrado un **directiva** elemento de la actividad desde la **cuadro de herramientas** a la superficie de diseño de flujo de trabajo, deseará seleccionar una regla existente o cree un nuevo conjunto de reglas para la [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) actividad. Seleccione una regla existente establecida mediante el uso de la [seleccione Establecer cuadro de diálogo regla (heredado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) y crear conjuntos de reglas mediante el [cuadro de diálogo de Editor de conjunto de reglas (heredado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
@@ -43,11 +40,11 @@ En este tema se describe cómo crear un conjunto de reglas de actividades de dir
   
     -   Haga clic en el **RuleSetReference** elipses **[...]** y, a continuación, seleccione una regla existente establecida el [seleccione Establecer cuadro de diálogo regla (heredado)](../workflow-designer/select-rule-set-dialog-box-legacy.md). A continuación, vaya al paso 10.  
   
-         o bien  
+         -o bien-  
   
     -   Escriba un nombre para un conjunto de reglas. Haga clic en el **RuleSetReference** elipses **[...]** y, a continuación, seleccione **editar** en el [seleccione Establecer cuadro de diálogo regla (heredado)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
   
-         O bien  
+         -o bien-  
   
     -   Escriba un nombre para un conjunto de reglas. Expanda el **RuleSetReference** propiedad y seleccione el botón de puntos suspensivos **[...]**  en el **RuleSet Definition** propiedad.  
   

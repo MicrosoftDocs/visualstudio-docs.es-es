@@ -1,37 +1,32 @@
 ---
-title: 'Nueva generación de proyectos: Aspectos técnicos, segunda parte | Microsoft Docs'
-ms.custom: ''
+title: 'Generación de nuevos proyectos: Internamente, la segunda parte | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a5732db4ab36a7e198ee6ebdce185294d3b5bc31
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722479"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988451"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Nueva generación de proyectos: aspectos técnicos, segunda parte
+# <a name="new-project-generation-under-the-hood-part-two"></a>Generación de nuevos proyectos: Aspectos técnicos (parte 2)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En [nueva generación de proyectos: Under the Hood, parte uno](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos cómo **nuevo proyecto** se rellena el cuadro de diálogo. Supongamos que ha seleccionado un **aplicación de Windows de Visual C#**, se han rellenado los **nombre** y **ubicación** cuadros de texto y hace clic en Aceptar.  
+En [nueva generación de proyectos: Internamente, una parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos cómo **nuevo proyecto** se rellena el cuadro de diálogo. Supongamos que ha seleccionado un **aplicación de Windows de Visual C#**, se han rellenado los **nombre** y **ubicación** cuadros de texto y hace clic en Aceptar.  
   
 ## <a name="generating-the-solution-files"></a>Generar los archivos de solución  
  Elegir una plantilla de aplicación dirige [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] descomprimir y abrir el archivo .vstemplate correspondiente y para iniciar una plantilla para interpretar los comandos XML de este archivo. Estos comandos crean proyectos y elementos de proyecto en la solución nueva o existente.  
   
- La plantilla desempaqueta los archivos de origen, llama a las plantillas de elemento de la misma carpeta zip que contiene el archivo .vstemplate. La plantilla copia estos archivos en el nuevo proyecto, personalizarlos según corresponda. Para obtener información general de plantillas de proyecto y elemento, vea [NIB: plantillas de Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ La plantilla desempaqueta los archivos de origen, llama a las plantillas de elemento de la misma carpeta zip que contiene el archivo .vstemplate. La plantilla copia estos archivos en el nuevo proyecto, personalizarlos según corresponda. Para obtener información general de plantillas de proyecto y elemento, vea [NIB: Plantillas de Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Reemplazo de parámetros de plantilla  
  Cuando la plantilla copia una plantilla de elementos a un nuevo proyecto, sustituye los parámetros de plantilla con cadenas para personalizar el archivo. Un parámetro de plantilla es un símbolo (token) especial que se va precedido y seguido por un signo de dólar, por ejemplo, $date$.  
@@ -82,7 +77,7 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- Analizamos la \<TemplateData > sección la [nueva generación de proyectos: Under the Hood, parte uno](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Las etiquetas en esta sección se utilizan para controlar la apariencia de la **nuevo proyecto** cuadro de diálogo.  
+ Analizamos la \<TemplateData > sección la [nueva generación de proyectos: Internamente, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Las etiquetas en esta sección se utilizan para controlar la apariencia de la **nuevo proyecto** cuadro de diálogo.  
   
  Las etiquetas en el \<TemplateContent > sección control de la generación de nuevos proyectos y elementos de proyecto. Este es el \<TemplateContent > sección del archivo en la carpeta \Archivos 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip de Visual Studio \Program Files\Microsoft cswindowsapplication.vstemplate.  
   
@@ -161,7 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Nueva generación de proyectos: aspectos técnicos, primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Nueva generación de proyectos: Internamente, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)
-
-

@@ -1,12 +1,9 @@
 ﻿---
 title: Crear una base de datos SQL mediante un diseñador | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,14 +23,14 @@ ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 caps.latest.revision: 54
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860336"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988689"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Crear una base de datos SQL mediante un diseñador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +86,7 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
   
 2.  Abra el menú contextual para **tablas**y, a continuación, seleccione **Agregar nueva tabla**.  
   
-     El **Diseñador de tablas** se abre y muestra una cuadrícula con una fila predeterminada, que representa una sola columna en la tabla que se va a crear. Al agregar filas a la cuadrícula, agregará columnas en la tabla.  
+     El **Diseñador de tablas** se abre y muestra una cuadrícula con una fila predeterminada que representa una columna única de la tabla que está creando. Al agregar filas a la cuadrícula, agregará columnas en la tabla.  
   
 3.  En la cuadrícula, agregue una fila para cada una de las entradas siguientes:  
   
@@ -195,4 +192,3 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
   
 ## <a name="next-steps"></a>Pasos siguientes  
  Ahora que tiene un archivo de base de datos local con algunos datos de ejemplo, puede completar cualquiera de los tutoriales que muestran las tareas de base de datos.
-

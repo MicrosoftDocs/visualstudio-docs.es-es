@@ -1,14 +1,9 @@
 ---
 title: Comentarios para el usuario | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user model feedback
 - environment, context
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 509dffa0d2a474059277dbb3df2ba984fa35fe42
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7773c611733ccec525fc25264311e72c1dfe36e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751159"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987164"
 ---
 # <a name="feedback-to-the-user"></a>Comentarios para el usuario
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,4 +63,3 @@ En el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entorno de desarrollo inte
  [Selección y moneda en el IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md)   
  [Jerarquías y selección](../../extensibility/internals/hierarchies-and-selection.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Localizar aplicaciones ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,13 +21,13 @@ ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987130"
 ---
 # <a name="localizing-clickonce-applications"></a>Localizar aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,23 +54,23 @@ La localización es el proceso de adaptar una aplicación a una referencia cultu
  La ventaja de este enfoque es que crea una sola implementación y simplifica el proceso de implementación localizada. En tiempo de ejecución se usará el ensamblado satélite apropiado para la referencia cultural predeterminada del sistema operativo Windows del usuario. El inconveniente de este enfoque es que se descargan todos los ensamblados satélite cada vez que la aplicación se instala o actualiza en un equipo cliente. Si la aplicación tiene un gran número de cadenas o los clientes tienen una conexión de red lenta, este proceso puede afectar al rendimiento durante la actualización de la aplicación.  
   
 > [!NOTE]
->  En este enfoque se presupone que la aplicación ajusta automáticamente el alto, el ancho y la posición de los controles para adaptarse a los diferentes tamaños de texto de las distintas referencias culturales. Windows Forms contiene diversos controles y tecnologías que le permiten diseñar el formulario de forma que se facilite la localización, incluidos los controles <xref:System.Windows.Forms.FlowLayoutPanel> y <xref:System.Windows.Forms.TableLayoutPanel> y la propiedad <xref:System.Windows.Forms.Control.AutoSize%2A>.  Consulte también [Cómo: admitir la localización en Windows Forms mediante AutoSize y el TableLayoutPanel Control](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+>  En este enfoque se presupone que la aplicación ajusta automáticamente el alto, el ancho y la posición de los controles para adaptarse a los diferentes tamaños de texto de las distintas referencias culturales. Windows Forms contiene diversos controles y tecnologías que le permiten diseñar el formulario de forma que se facilite la localización, incluidos los controles <xref:System.Windows.Forms.FlowLayoutPanel> y <xref:System.Windows.Forms.TableLayoutPanel> y la propiedad <xref:System.Windows.Forms.Control.AutoSize%2A>.  Consulte también [Cómo: Admitir la localización en formularios de Windows Forms mediante AutoSize y el Control TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Generar una implementación para cada referencia cultural  
  En esta estrategia de implementación se generan varias implementaciones. En cada una de ellas se incluye únicamente el ensamblado satélite necesario para una referencia cultural concreta y se marca la implementación como específica de esa referencia cultural.  
   
- Para usar este método en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], establezca el **Publish Language** propiedad en el **publicar** pestaña en la región deseada. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] incluirá automáticamente el ensamblado satélite necesario para la región que seleccione y excluirá de la implementación los demás ensamblados satélite.  
+ Para usar este método en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], establezca la propiedad **Idioma de publicación** de la pestaña **Publicar** en la región deseada. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] incluirá automáticamente el ensamblado satélite necesario para la región que seleccione y excluirá de la implementación los demás ensamblados satélite.  
   
  Puede conseguir lo mismo mediante la herramienta MageUI.exe de Microsoft [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Use la **rellenar** situado en la **archivos** ficha de su manifiesto de aplicación para excluir todos los demás ensamblados satélite del directorio de la aplicación y, a continuación, establezca el **referencia cultural**campo el **nombre** pestaña para el manifiesto de implementación en MageUI.exe. Estos pasos no solo incluyen el ensamblado satélite adecuado, sino que también establecen el atributo `language` en el elemento `assemblyIdentity` del manifiesto de su implementación en la referencia cultural correspondiente.  
   
- Después de publicar la aplicación, repita este paso con cada referencia cultural adicional que admita su aplicación. Debe asegurarse de que publique en un directorio diferente del servidor Web o el directorio del recurso compartido de archivos cada vez, porque cada manifiesto de aplicación hará referencia a un ensamblado satélite diferente y cada manifiesto de implementación tendrá un valor diferente para el `language`atributo.  
+ Después de publicar la aplicación, repita este paso con cada referencia cultural adicional que admita su aplicación. Asegúrese de que cada vez que publica, lo hace en un directorio de servidor web diferente o en un directorio de recurso compartido de archivos distinto, ya que cada manifiesto de aplicación hará referencia a un ensamblado satélite diferente y cada manifiesto de implementación tendrá un valor diferente para el atributo `language`.  
   
 ## <a name="downloading-satellite-assemblies-on-demand"></a>Descargar ensamblados satélite a petición  
  Si decide incluir todos los ensamblados satélite en una sola implementación, puede mejorar el rendimiento mediante la descarga a petición, que le permite marcar los ensamblados como opcionales. Los ensamblados marcados no se descargarán cuando se instala o actualiza la aplicación. Puede instalar los ensamblados cuando los necesite llamando al método <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> en la clase <xref:System.Deployment.Application.ApplicationDeployment>.  
   
- La descarga de ensamblados satélite a petición difiere ligeramente de la descarga de otros tipos de ensamblados a petición. Para obtener más información y ejemplos de código sobre cómo habilitar este escenario mediante la [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] herramientas para [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consulte [Tutorial: descargar ensamblados satélite a petición con la API de implementación ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
+ La descarga de ensamblados satélite a petición difiere ligeramente de la descarga de otros tipos de ensamblados a petición. Para obtener más información y ejemplos de código sobre cómo habilitar este escenario mediante la [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] herramientas para [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consulte [Tutorial: Descargar ensamblados satélite a petición con la API de implementación ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- También puede habilitar este escenario en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Consulte también los tutoriales sobre [descarga de ensamblados satélite a petición con la API de implementación de ClickOnce mediante el diseñador](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) o [descarga de ensamblados satélite a petición con la API de implementación de ClickOnce mediante el diseñador](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ También puede habilitar este escenario en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Consulte también [Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) o [Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Probar aplicaciones ClickOnce localizadas antes de la implementación  
  Únicamente se usará un ensamblado para una aplicación de Windows Forms si la propiedad <xref:System.Threading.Thread.CurrentUICulture%2A> del subproceso principal de la aplicación está establecida en la referencia cultural del ensamblado satélite. Es probable que los clientes de los mercados locales ya tengan una versión localizada de Windows con su referencia cultural establecida en el valor predeterminado adecuado.  
@@ -90,6 +85,3 @@ La localización es el proceso de adaptar una aplicación a una referencia cultu
  [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Globalizar Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)
-
-
-

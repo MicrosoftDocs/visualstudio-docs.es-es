@@ -1,14 +1,9 @@
 ---
 title: SDK de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSSDK.v90.StartPage
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64506ca544dd3811864358f9c928f6893dc8448
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8184ae3085c6366256f37b3e5a034b70fcc3cd7a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758972"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002637"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
   
 - Agregar un tipo de proyecto personalizado  
   
-- Llegue a millones de desarrolladores a través de la Galería de Visual Studio  
+- Llegue a millones de desarrolladores a través de Visual Studio Marketplace  
   
   Si nunca ha escrito una extensión de Visual Studio antes, se debe encontrar más información sobre estas características y en [comenzar a desarrollar extensiones de Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
@@ -61,7 +56,7 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
  Aproveche la [catálogo y servicio de imágenes](../extensibility/image-service-and-catalog.md) para la administración de imágenes grandes y compatibilidad con valores altos de PPP y temas.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Búsqueda e instalación de extensiones de Visual Studio existente  
- Puede encontrar extensiones de Visual Studio en el **extensiones y actualizaciones** cuadro de diálogo en el **herramientas** menú. Para más información, vea [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). También puede encontrar extensiones en la [Galería de Visual Studio](https://visualstudiogallery.msdn.microsoft.com/)  
+ Puede encontrar extensiones de Visual Studio en el **extensiones y actualizaciones** cuadro de diálogo en el **herramientas** menú. Para más información, vea [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). También puede encontrar extensiones en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Referencia de Visual Studio SDK  
  Puede encontrar la referencia de API de SDK de Visual Studio en [referencia de SDK de Visual Studio](../extensibility/visual-studio-sdk-reference.md).  
@@ -82,8 +77,8 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
   
 ## <a name="see-also"></a>Vea también  
  [Creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Cómo: migrar proyectos de extensibilidad a Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
- [Preguntas más frecuentes: Convertir complementos en extensiones de VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [Cómo: Migrar proyectos de extensibilidad a Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
+ [PREGUNTAS MÁS FRECUENTES: Conversión de complementos en extensiones de VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Administración de varios subprocesos en código administrado](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)   
  [Agregar comandos a barras de herramientas](../extensibility/adding-commands-to-toolbars.md)   
@@ -103,4 +98,3 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
  [Compatibilidad con el SDK de Visual Studio](../extensibility/support-for-the-visual-studio-sdk.md)   
  [Archive](../extensibility/archive.md)   
  [Referencia de Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)
-

@@ -1,23 +1,20 @@
 ---
 title: Instrucciones para escribir plantillas de texto T4 | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 04dd3fc4-10e8-488a-bdea-4d615f50f063
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3ed1415572dc00509abf36e7cb84311f95e4805
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f88666d15293e6900ae99cecdc39853cda8e2f9e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812762"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59002284"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instrucciones para escribir plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ Estas directrices generales que pueden resultar útiles si va a generar código 
   Mueva material común a los archivos de inclusión o plantillas en tiempo de ejecución  
   Para evitar repetir similar bloques de texto y código en varias plantillas, use el `<#@ include #>` directiva. Para obtener más información, consulte [directiva Include de T4](../modeling/t4-include-directive.md).  
   
-  Puede también crear plantillas de texto en tiempo de ejecución en un proyecto independiente y, a continuación, llame a partir de la plantilla en tiempo de diseño. Para ello, use el `<#@ assembly #>` directiva de acceso al proyecto independiente. Para obtener ejemplos, vea ["Herencia en plantillas de texto" en el Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).  
+  Puede también crear plantillas de texto en tiempo de ejecución en un proyecto independiente y, a continuación, llame a partir de la plantilla en tiempo de diseño. Para ello, use el `<#@ assembly #>` directiva de acceso al proyecto independiente.
   
   Considere la posibilidad de mover grandes cantidades de código en un ensamblado independiente.  
   Si dispone de los bloques de código de gran tamaño y bloques de características de clase, podría ser útil mover parte de este código en métodos que se compilación en un proyecto independiente. Puede usar el `<#@ assembly #>` directiva tener acceso al código en la plantilla. Para obtener más información, consulte [directiva de ensamblado T4](../modeling/t4-assembly-directive.md).  
@@ -160,6 +157,3 @@ Team Members:
 ## <a name="see-also"></a>Vea también  
  [Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)
-
-
-

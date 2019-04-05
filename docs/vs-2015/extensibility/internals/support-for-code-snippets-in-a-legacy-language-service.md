@@ -1,14 +1,9 @@
 ---
 title: Compatibilidad con fragmentos de código en un servicio de lenguaje heredado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
 - code snippets, supporting in language services [managed package framework]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bf26d48c541806a1dd65a0ffb4a8e3e974b11db4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d0ca68c9d95f0b2b511ece0ecafbd9bdcacf328d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987709"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Compatibilidad con fragmentos de código en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
   
  El fragmento de código se inserta en un modo de edición especial que permite a los campos del fragmento de código para navegar mediante la tecla TAB. Los campos pueden admitir los menús desplegables de estilo de IntelliSense. El usuario confirma el fragmento de código en el archivo de origen escribiendo el ENTRAR o la tecla ESC. Para más información acerca de los fragmentos, vea [fragmentos de código](../../ide/code-snippets.md).  
   
- Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [Tutorial: implementación de fragmentos de código](../../extensibility/walkthrough-implementing-code-snippets.md).  
+ Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [Tutorial: Implementación de fragmentos de código](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
 >  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
@@ -55,7 +50,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
 ### <a name="installing-the-snippet-files"></a>Instalación de los archivos de fragmento de código  
  Todos los fragmentos de código para un idioma se almacenan como plantillas en archivos XML, normalmente una plantilla de fragmento de código por archivo. Para obtener más información sobre el esquema XML que se usa para las plantillas de fragmento de código, vea [referencia de esquemas de fragmentos de código](../../ide/code-snippets-schema-reference.md). Cada plantilla de fragmento de código se identifica con un identificador de idioma. Este lenguaje de identificador se especifica en el registro y se coloca en el `Language` atributo de la \<código > etiqueta en la plantilla.  
   
- Normalmente, hay dos ubicaciones donde se almacenan los archivos de plantilla de fragmento de código: 1) donde se ha instalado el idioma y (2) en la carpeta del usuario. Estas ubicaciones se agregan en el registro hasta que el de Visual Studio **Administrador de fragmentos de código** puede encontrar los fragmentos de código. La carpeta del usuario es donde se almacenan los fragmentos de código creados por el usuario.  
+ Normalmente, hay dos ubicaciones donde se almacenan los archivos de plantilla de fragmento de código: (1) donde se instaló el idioma y 2) en la carpeta del usuario. Estas ubicaciones se agregan en el registro hasta que el de Visual Studio **Administrador de fragmentos de código** puede encontrar los fragmentos de código. La carpeta del usuario es donde se almacenan los fragmentos de código creados por el usuario.  
   
  El diseño de carpeta habitual para los archivos de plantilla de fragmento de código instalados tiene este aspecto: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
@@ -93,10 +88,10 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
 |Elemento|Descripción|  
 |-------------|-----------------|  
 |% LCID %|Identificador de configuración regional.|  
-|% InstallRoot %|Carpeta de instalación raíz para Visual Studio, por ejemplo, C:\Program Files\Microsoft Visual Studio 8.|  
-|% ProjDir %|Carpeta que contiene el proyecto actual.|  
-|% ProjItem %|Carpeta que contiene el elemento de proyecto actual.|  
-|% TestDocs %|Carpeta en la carpeta de configuración del usuario, por ejemplo, C:\Documents and Settings\\ *[username]* \My Studio\8.|  
+|%InstallRoot%|Carpeta de instalación raíz para Visual Studio, por ejemplo, C:\Program Files\Microsoft Visual Studio 8.|  
+|%ProjDir%|Carpeta que contiene el proyecto actual.|  
+|%ProjItem%|Carpeta que contiene el elemento de proyecto actual.|  
+|%TestDocs%|Carpeta en la carpeta de configuración del usuario, por ejemplo, C:\Documents and Settings\\ *[username]* \My Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Habilitación de fragmentos de código para el servicio de lenguaje  
  Puede habilitar los fragmentos de código para el servicio de lenguaje agregando el <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> atributo para el VSPackage (consulte [registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md) para obtener más información). El <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> y <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parámetros son opcionales, pero debe incluir el `SearchPaths` con el nombre de parámetro con el fin de informar a la **Administrador de fragmentos de código** de la ubicación de los fragmentos de código.  
@@ -122,7 +117,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Insertar un fragmento de código mediante un comando de menú  
  Para usar un comando de menú para mostrar el Explorador de fragmento de código, agregue un comando de menú y, a continuación, llame a la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método en el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interfaz en respuesta a ese comando de menú.  
   
-1.  En el archivo .vsct, agregue un comando y un botón. Puede encontrar instrucciones para realizar en [Tutorial: crear un comando al menú mediante la plantilla de paquete de Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1.  En el archivo .vsct, agregue un comando y un botón. Puede encontrar instrucciones para realizar en [Tutorial: Creación de un comando de menú mediante la plantilla de paquete de Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2.  Derive una clase de la <xref:Microsoft.VisualStudio.Package.ViewFilter> clase e invalidar el <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> método para indicar la compatibilidad con el nuevo comando de menú. Este ejemplo siempre habilita el comando de menú.  
   
@@ -227,7 +222,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Insertar un fragmento de código mediante un acceso directo  
  Implementación de un acceso directo desde una lista de finalización es mucho más complejo que implementar un comando de menú. En primer lugar debe agregar accesos directos de fragmento de código a la lista de finalización de palabras de IntelliSense. A continuación, debe detectar cuando un nombre de método abreviado de fragmento de código se ha insertado como resultado de la finalización. Por último, debe obtener el título del fragmento de código y la ruta de acceso con el nombre de método abreviado y pasar esa información a la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> método en el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> método.  
   
- Para agregar accesos directos de fragmento de código a la lista de finalización de palabras, agréguelos a la <xref:Microsoft.VisualStudio.Package.Declarations> objeto en su <xref:Microsoft.VisualStudio.Package.AuthoringScope> clase. Debe asegurarse de que puede identificar el acceso directo como un nombre de fragmento de código. Para obtener un ejemplo, vea [Tutorial: obtener una lista de instalado fragmentos de código (implementación heredada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+ Para agregar accesos directos de fragmento de código a la lista de finalización de palabras, agréguelos a la <xref:Microsoft.VisualStudio.Package.Declarations> objeto en su <xref:Microsoft.VisualStudio.Package.AuthoringScope> clase. Debe asegurarse de que puede identificar el acceso directo como un nombre de fragmento de código. Para obtener un ejemplo, vea [Tutorial: Obtener una lista de fragmentos de código (implementación heredada) de instalado](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
  Puede detectar la inserción de método abreviado de fragmento de código en el <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> método de la <xref:Microsoft.VisualStudio.Package.Declarations> clase. Dado que el nombre del fragmento de código ya se ha insertado en el archivo de origen, debe quitarse cuando se inserta la expansión. El <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> método toma un intervalo que describe el punto de inserción del fragmento de código; si el intervalo incluye el nombre completo del fragmento de código en el archivo de origen, ese nombre se reemplaza por el fragmento de código.  
   
@@ -343,7 +338,7 @@ namespace TestLanguagePackage
   
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-   Para obtener más información sobre cómo obtener una lista de fragmentos de código instalados el servicio de lenguaje, consulte [Tutorial: obtener una lista de instalado fragmentos de código (implementación heredada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Para obtener más información sobre cómo obtener una lista de fragmentos de código instalados el servicio de lenguaje, consulte [Tutorial: Obtener una lista de fragmentos de código (implementación heredada) de instalado](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Implementación de la clase ExpansionFunction  
  Una función de expansión es una función con nombre que se incrusta en una plantilla de fragmento de código y devuelve uno o más valores que se colocarán en un campo. Para admitir las funciones de expansión en el servicio de lenguaje, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> clase e implemente el <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> método. Debe reemplazar el <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase para devolver una instancia nueva de la versión de la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> clase para cada función de expansión admiten. Si admite una lista de valores posibles de una función de expansión, también debe invalidar el <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> método en el <xref:Microsoft.VisualStudio.Package.ExpansionFunction> clase para devolver una lista de esos valores.  
@@ -400,5 +395,4 @@ namespace TestLanguagePackage
  [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)   
  [Registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Fragmentos de código](../../ide/code-snippets.md)   
- [Tutorial: obtención de una lista de fragmentos de código instalados (implementación heredada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
-
+ [Tutorial: Obtener una lista de fragmentos de código instalados (implementación heredada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

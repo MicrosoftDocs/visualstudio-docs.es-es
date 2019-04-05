@@ -1,14 +1,9 @@
 ---
 title: Selección y moneda en el IDE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45fc57bf2d5763527f9f8c2c6d8d22ca1d6369f8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ca6993d8d8d56f1ea2ccf8b4b6c41909606e8755
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988736"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selección y moneda en el IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,4 +67,3 @@ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo inte
 ## <a name="see-also"></a>Vea también  
  [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md)   
  [Comentarios para el usuario](../../extensibility/internals/feedback-to-the-user.md)
-

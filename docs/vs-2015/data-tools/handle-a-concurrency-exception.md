@@ -1,12 +1,9 @@
 ---
 title: Controlar una excepción de simultaneidad | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987525"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar las excepciones de simultaneidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
 4.  Llenar un conjunto de datos con datos de la tabla `Customers` de la base de datos Northwind.  
   
-5.  Use la [Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) en Visual Studio para tener acceso directamente a la `Customers` tabla de datos y cambiar un registro.  
+5.  Use la [Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) en Visual Studio para tener acceso directamente a la `Customers` tabla de datos y cambiar un registro.  
   
 6.  Cambiar el mismo registro en un valor diferente, actualizar el conjunto de datos e intenta escribir los cambios en la base de datos, lo que resulta en que se produzca un error de simultaneidad.  
   
@@ -56,10 +53,10 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
 ## <a name="prerequisites"></a>Requisitos previos  
  Para completar las tareas de este tutorial, necesitará:  
   
--   Acceso a la base de datos de ejemplo Northwind con permiso para realizar actualizaciones. Para obtener más información, consulte [Cómo: instalar bases de datos de ejemplo](../data-tools/how-to-install-sample-databases.md).  
+-   Acceso a la base de datos de ejemplo Northwind con permiso para realizar actualizaciones.
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la ayuda según la configuración activa o la edición que esté usando. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la ayuda según la configuración activa o la edición que esté usando. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo  
  El primer paso del tutorial es crear una nueva aplicación para Windows.  
@@ -83,7 +80,7 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
 1.  En el **datos** menú, elija **Agregar nuevo origen de datos**.  
   
-     El [Asistente para configuración de origen de datos](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) se abre.  
+     Se abrirá el [Asistente para configuración de orígenes de datos](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 2.  En el **elegir un tipo de origen de datos**pantalla, seleccione **base de datos**.  
   
@@ -129,13 +126,13 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
  El usuario con las tres versiones del registro applicationpresents:  
   
-- El registro actual en la base de datos  
+- El registro actual en la base de datos.  
   
 - El registro original cargado en el conjunto de datos  
   
 - Los cambios propuestos en el conjunto de datos  
   
-  El usuario, a continuación, es capaz de sobrescribir la base de datos con la versión propuesta, o cancelar la actualización y actualizar el conjunto de datos con los nuevos valores de la base de datos.  
+  Entonces, el usuario puede sobrescribir la base de datos con la versión propuesta o cancelar la actualización y actualizar el conjunto de datos con los nuevos valores de la base de datos.  
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>Para habilitar el control de errores de simultaneidad  
   
@@ -172,7 +169,7 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
 ##### <a name="to-create-the-message-to-display-to-the-user"></a>Para crear el mensaje que se mostrará al usuario  
   
--   Crear el mensaje agregando el código siguiente a la **Editor de código**. Escriba este código debajo del método `UpdateDatabase`.  
+-   Cree el mensaje agregando el código siguiente en el **Editor de código**. Escriba este código debajo del método `UpdateDatabase`.  
   
      [!code-csharp[VbRaddataConcurrency#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConcurrency/CS/Form1.cs#4)]
      [!code-vb[VbRaddataConcurrency#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConcurrency/VB/Form1.vb#4)]  
@@ -198,7 +195,7 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
 3.  En el **vista** menú, elija **Explorador de servidores**.  
   
-4.  En **Explorador de servidores**, expanda la conexión de la aplicación está utilizando y, a continuación, expanda el **tablas** nodo.  
+4.  En el **Explorador de servidores**, expanda la conexión que utiliza la aplicación y, a continuación, expanda el nodo **Tablas**.  
   
 5.  Haga clic en el **clientes** de tabla y, a continuación, seleccione **mostrar datos de tabla**.  
   
@@ -211,7 +208,7 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
 8.  En el primer registro en el formulario (`ALFKI`), cambiar`ContactName` a `Maria Anders1`.  
   
-9. Seleccione el **guardar** botón.  
+9. Seleccione el botón **Guardar**.  
   
      Se produce el error de simultaneidad y aparece el cuadro de mensaje.  
   

@@ -1,11 +1,8 @@
 ---
 title: Diseñador de actividad FlowDecision | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
@@ -13,13 +10,13 @@ ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7109b779cf33d226f44853e3f67c8609bd42fc1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 46ff7dc7ae79ae8bf269a7a3d3cad780ad7654bb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212893"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987847"
 ---
 # <a name="flowdecision-activity-designer"></a>Diseñador de actividades FlowDecision
 El nodo <xref:System.Activities.Statements.FlowDecision> es un nodo condicional que proporciona una bifurcación para el flujo de control en una alternativa entre dos, en función de si se ha satisfecho una condición especificada. Si el flujo requiere más de dos bifurcaciones, utilice <xref:System.Activities.Statements.FlowSwitch%601> en su lugar.  
@@ -46,6 +43,6 @@ El nodo <xref:System.Activities.Statements.FlowDecision> es un nodo condicional 
 |<xref:System.Activities.Statements.FlowDecision.False%2A>|False|La ruta de acceso que toma el control de flujo si no se satisface <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|  
   
 ## <a name="see-also"></a>Vea también  
- [Diagrama de flujo](../workflow-designer/flowchart-activity-designers.md)   
- [Diagrama de flujo](../workflow-designer/flowchart-activity-designer.md)   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+ [Flowchart](../workflow-designer/flowchart-activity-designers.md)   
+ [Flowchart](../workflow-designer/flowchart-activity-designer.md)   
+ [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

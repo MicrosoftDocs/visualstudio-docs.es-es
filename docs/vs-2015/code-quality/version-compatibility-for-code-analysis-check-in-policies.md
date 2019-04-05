@@ -1,14 +1,9 @@
 ---
 title: Compatibilidad de versiones de directivas de protección de análisis de código | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
 - check-in policies, version compatibility for code analysis
@@ -17,14 +12,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 840a12e7f4c0e3853e885a803dea5a92e05a5a27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1cd449446c66b2f37df9993786477734a78e10a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261487"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987250"
 ---
-# <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Compatibilidad de versiones para las directivas de inserción en el repositorio de análisis de código
+# <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Compatibilidad de versiones para las directivas de protección de análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si se debe evaluar y crear con versiones diferentes de las directivas de protección de análisis de código [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], debe conocer las diferencias en cómo [!INCLUDE[vstsTfsOrcasLong](../includes/vststfsorcaslong-md.md)] y [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] evaluar las directivas de protección.  
@@ -48,6 +43,3 @@ Si se debe evaluar y crear con versiones diferentes de las directivas de protecc
 -   Para crear una directiva de protección de análisis de código con la configuración de las reglas que se aplica a ambos [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] y [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], debe crear la directiva en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], realizar todos los cambios necesarios y guardar la directiva. Si los cambios en las reglas solo existen en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], modifique y guarde la directiva en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].  
   
      Después de guardar la directiva en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], ya no puede cambiar la configuración de reglas que existen en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] solo.
-
-
-

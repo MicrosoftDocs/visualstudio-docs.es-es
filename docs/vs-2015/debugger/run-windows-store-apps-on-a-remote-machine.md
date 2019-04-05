@@ -1,14 +1,9 @@
 ---
 title: Ejecución de Windows Store apps en un equipo remoto | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987381"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Ejecutar aplicaciones de la Tienda Windows en un equipo remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,10 +88,10 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
   
  Para ejecutar o guardar el programa de instalación para las herramientas remotas, elija uno de los vínculos de esta tabla que coincida con su versión de Visual Studio:  
   
-|Versión|Vínculo|Notas|
+|Versión|Link|Notas|
 |-|-|-|
 |Visual Studio 2015 Update 3|[Herramientas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Si se le solicite, unirse al grupo de Visual Studio Dev Essentials gratuita o solo tiene que iniciar sesión con una suscripción válida de Visual Studio. A continuación, vuelva a abrir el vínculo si es necesario. Descargar siempre la versión que coincida con el sistema operativo del dispositivo (x 86, x64 o versión ARM)|
-|Visual Studio 2015 (antigua)|[Herramientas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Si se le solicite, unirse al grupo de Visual Studio Dev Essentials gratuita o solo tiene que iniciar sesión con una suscripción válida de Visual Studio. A continuación, vuelva a abrir el vínculo si es necesario. Descargar siempre la versión que coincida con el sistema operativo del dispositivo (x 86, x64 o versión ARM)|
+|Visual Studio 2015 (older)|[Herramientas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Si se le solicite, unirse al grupo de Visual Studio Dev Essentials gratuita o solo tiene que iniciar sesión con una suscripción válida de Visual Studio. A continuación, vuelva a abrir el vínculo si es necesario. Descargar siempre la versión que coincida con el sistema operativo del dispositivo (x 86, x64 o versión ARM)|
 |Visual Studio 2013|[Herramientas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Descargar página de documentación de Visual Studio 2013|
   
  Puedes elegir descargar el programa de instalación o puedes ejecutarlo inmediatamente. Si ejecutas el programa de instalación, acepta el acuerdo de usuario, y elige **Instalar**.  
@@ -173,11 +168,8 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
 ##  <a name="BKMK_RunRemoteDebug"></a> Ejecutar una sesión de depuración remota  
  Una sesión de depuración remota se inicia, se detiene y se navega por ella de la misma forma que una sesión local. Antes de iniciar la depuración, asegúrate de que el Monitor de depuración remota se ejecute en el dispositivo remoto.  
   
- A continuación, elige **Iniciar depuración** en el menú **Depurar** (teclado: F5). El proyecto se recompila. Luego, se implementa e inicia en el dispositivo remoto. El depurador suspende la ejecución en los puntos de interrupción. Puedes depurar paso a paso por instrucciones o por procedimientos y hasta salir del código. Elige **Detener depuración** para finalizar la sesión de depuración y cerrar la aplicación remota. Para obtener más información, consulte [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ A continuación, elija **Iniciar depuración** en el **depurar** menú (teclado: F5). El proyecto se recompila. Luego, se implementa e inicia en el dispositivo remoto. El depurador suspende la ejecución en los puntos de interrupción. Puedes depurar paso a paso por instrucciones o por procedimientos y hasta salir del código. Elige **Detener depuración** para finalizar la sesión de depuración y cerrar la aplicación remota. Para obtener más información, consulte [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Probar aplicaciones de la Tienda con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
-
-
-

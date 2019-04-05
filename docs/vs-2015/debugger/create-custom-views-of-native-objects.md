@@ -1,14 +1,9 @@
 ---
 title: Crear vistas personalizadas de los objetos nativos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987323"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Crear vistas personalizadas de los objetos nativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +348,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 -   Si se especifica un nodo `Expand` sin nodos secundarios, el tipo no se podrá expandir en las ventanas del depurador.  
 
 ####  <a name="BKMK_Item_expansion"></a> Expansión de Item  
- El elemento `Item` es el elemento más básico y más común que se usará en un nodo `Expand` . `Item` define un único elemento secundario. Por ejemplo, suponga que tiene una clase `CRect` con `top`, `left`, `right` y `bottom` como campos y la siguiente entrada de visualización:  
+ El elemento `Item` es el elemento más básico y más común que se usará en un nodo `Expand` . `Item` define un único elemento secundario. Por ejemplo, suponga que tiene una clase `CRect` con `top`, `left`, `right`y `bottom` como campos y la siguiente entrada de visualización:  
 
 ```xml  
 <Type Name="CRect">  
@@ -432,7 +427,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
  ![Matriz bidimensional con expansión de ArrayItems](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
 
 ####  <a name="BKMK_IndexListItems_expansion"></a> Expansión de IndexListItems  
- Puede usar la expansión `ArrayItems` solo si los elementos de matriz están dispuestos de forma contigua en la memoria. El depurador obtiene el elemento siguiente al incrementar simplemente el puntero al elemento actual. Para admitir casos donde es necesario manipular el índice al nodo de valor, se pueden usar nodos `IndexListItems`. Esta es una visualización del uso del nodo `IndexListItems` :  
+ Puede usar la expansión `ArrayItems` solo si los elementos de matriz están dispuestos de forma contigua en la memoria. El depurador obtiene el elemento siguiente al incrementar simplemente el puntero al elemento actual. Para admitir casos donde es necesario manipular el índice al nodo de valor, se pueden usar nodos `IndexListItems` . Esta es una visualización del uso del nodo `IndexListItems` :  
 
 ```xml  
 <Type Name="Concurrency::multi_link_registry&lt;*&gt;">  
@@ -532,7 +527,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
 ```  
 
- La sintaxis es muy similar a la del nodo `LinkedListItems`. Los objetos`LeftPointer`, `RightPointer`y `ValueNode` are evaluated under the context of the tree node classy `ValueNode` puede dejarse vacío o incluir el objeto `this` para hacer referencia al propio nodo de árbol.  
+ La sintaxis es muy similar a la del nodo `LinkedListItems` . Los objetos`LeftPointer`, `RightPointer`y `ValueNode` are evaluated under the context of the tree node classy `ValueNode` puede dejarse vacío o incluir el objeto `this` para hacer referencia al propio nodo de árbol.  
 
 ####  <a name="BKMK_ExpandedItem_expansion"></a> Expansión de ExpandedItem  
  El elemento `ExpandedItem` se puede utilizar para generar una vista secundaria agregada que muestre las propiedades de las clases base o los miembros de datos como si fueran elementos secundarios del tipo visualizado. Se evalúa la expresión especificada y se anexan los nodos secundarios del resultado a la lista secundaria del tipo visualizado. Por ejemplo, suponga que tenemos un tipo de puntero inteligente `auto_ptr<vector<int>>` que suele mostrarse como:  
@@ -638,6 +633,3 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
  `CustomVisualizer` es un punto de extensibilidad que especifica una extensión VSIX que puede escribir para controlar la visualización en un código que se ejecuta en Visual Studio. Para obtener más información sobre cómo escribir extensiones VSIX, vea [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Escribir un visualizador personalizado comporta mucho más trabajo que escribir una definición de natvis XML, pero le libera de las restricciones de compatibilidad con natvis. Los visualizadores personalizados tienen acceso a todo el conjunto de API de extensibilidad del depurador, que se pueden usar para consultar y modificar el proceso de depurado o para comunicarse con otras partes de Visual Studio.  
 
  Puede usar los atributos `Condition`, `IncludeView`y `ExcludeView` en los elementos CustomVisualizer.
-
-
-

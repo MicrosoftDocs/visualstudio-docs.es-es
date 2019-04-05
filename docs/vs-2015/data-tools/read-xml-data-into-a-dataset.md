@@ -1,12 +1,9 @@
 ---
 title: Leer datos XML en un conjunto de datos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219736"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987090"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leer datos XML en un conjunto de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tuto
 5.  Agregar código para mostrar el esquema XML basado en el archivo XML en un <xref:System.Windows.Forms.TextBox> control  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda en función de la configuración activa o la edición que está usando. Para cambiar la configuración, en el **herramientas** menú, seleccione**importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda en función de la configuración activa o la edición que está usando. Para cambiar la configuración, en el **herramientas** menú, seleccione**importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo  
  En este paso, creará un proyecto de Visual Basic o Visual C# que contiene este tutorial.  
@@ -172,7 +169,7 @@ ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tuto
     |Control|Property|Parámetro|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
-    ||**Barras de desplazamiento**|**Vertical**|  
+    ||**ScrollBars**|**Vertical**|  
     |`Button1`|**Name**|`ReadXmlButton`|  
     ||**Texto**|`Read XML`|  
     |`Button2`|**Name**|`ShowSchemaButton`|  
@@ -228,9 +225,8 @@ ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tuto
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
   
 ## <a name="test-the-form"></a>Comprobar el formulario  
- Puede comprobar el formulario para asegurarse de que se comporta de la forma prevista.  
-  
-#### <a name="to-test-the-form"></a>Para comprobar el formulario  
+
+Puede comprobar el formulario para asegurarse de que se comporta de la forma prevista.
   
 1.  Seleccione **F5** para ejecutar la aplicación.  
   
@@ -243,15 +239,15 @@ ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tuto
      El cuadro de texto muestra el esquema XML para el archivo XML.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- En este tutorial le enseña los aspectos básicos de lectura de un archivo XML en un conjunto de datos, así como la creación de un esquema basado en el contenido del archivo XML. Estas son algunas tareas que se pueden realizar a continuación:  
+
+En este tutorial le enseña los aspectos básicos de lectura de un archivo XML en un conjunto de datos, así como la creación de un esquema basado en el contenido del archivo XML. Estas son algunas tareas que se pueden realizar a continuación:  
   
 -   Editar los datos en el conjunto de datos y reescribirlos como XML. Para obtener más información, consulta <xref:System.Data.DataSet.WriteXml%2A>.  
   
--   Editar los datos del conjunto de datos y escribirlos en una base de datos. Para obtener más información, consulte [guardar datos](../data-tools/saving-data.md).  
+-   Editar los datos del conjunto de datos y escribirlos en una base de datos.
   
 ## <a name="see-also"></a>Vea también  
- [Tutoriales de datos](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Tutoriales sobre datos](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [Preparar su aplicación para recibir datos](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Preparara la aplicación para recibir datos](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Herramientas XML en Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-

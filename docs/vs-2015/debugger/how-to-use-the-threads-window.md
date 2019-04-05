@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: utilizar la ventana subprocesos | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Utilice la ventana subprocesos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
 dev_langs:
@@ -28,22 +23,22 @@ ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cc137465e89dd283cb4536965faf54aee44b2e00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791704"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987435"
 ---
-# <a name="how-to-use-the-threads-window"></a>Cómo: Utilizar la ventana Subprocesos
+# <a name="how-to-use-the-threads-window"></a>Filtrar Utilice la ventana subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en la aplicación que está depurando.  
   
  El **subprocesos** ventana contiene una tabla donde cada fila representa un subproceso de la aplicación. De forma predeterminada, la tabla hace una lista de todos los subprocesos, pero puede filtrar la lista para mostrar solo los que le interesan. Cada columna contiene un tipo diferente de información. También puede ocultar algunas columnas. Si muestra todas las columnas, la siguiente información aparece de izquierda a derecha:  
   
--   La columna de marcas, donde puede marcar un subproceso al que desea prestar atención especial. Para obtener información acerca de cómo marcar un subproceso, vea [Cómo: quitar marcadores de subprocesos y marca](../debugger/how-to-flag-and-unflag-threads.md).  
+-   La columna de marcas, donde puede marcar un subproceso al que desea prestar atención especial. Para obtener información acerca de cómo marcar un subproceso, vea [Cómo: Marcar y desmarcar subprocesos](../debugger/how-to-flag-and-unflag-threads.md).  
   
 -   La columna del subproceso activo, donde una flecha amarilla indica un subproceso activo. El contorno de una flecha indica el subproceso donde la ejecución interrumpió el depurador.  
   
@@ -119,7 +114,7 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
   
 #### <a name="to-search-for-specific-threads"></a>Para buscar subprocesos concretos  
   
--   En la barra de herramientas en la parte superior de la **subprocesos** ventana, vaya a la **búsqueda** cuadro y, o bien:  
+-   En la barra de herramientas de la parte superior de la ventana **Subprocesos**, vaya al cuadro **Buscar** y:  
   
     -   Escriba una cadena de búsqueda y, a continuación, presione ENTRAR.  
   
@@ -127,7 +122,7 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
   
     -   Haga clic en la lista desplegable situada junto a la **búsqueda** cuadro y seleccione una cadena de búsqueda de una búsqueda anterior.  
   
--   (Opcional) Para incluir la pila de llamadas completa en la búsqueda, seleccione **pila de llamadas de búsqueda**.  
+-   (Opcional) Para incluir la pila de llamadas completa en la búsqueda, seleccione **Buscar en pila de llamadas**.  
   
 ## <a name="freezing-and-thawing-threads"></a>Inmovilizar y reanudar subprocesos  
  Cuando se inmoviliza un subproceso, el sistema no iniciará su ejecución aunque haya recursos disponibles.  
@@ -143,17 +138,17 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
   
 -   En la barra de herramientas en la parte superior de la **subprocesos** ventana, haga clic en **inmovilizar subprocesos** o **reanudar subprocesos**.  
   
-     Esta acción afecta solo a los subprocesos que están seleccionados en el **subprocesos** ventana.  
+     Esta acción solo afecta a los subprocesos que están seleccionados en la ventana **Subprocesos**.  
   
 ## <a name="displaying-flagged-threads"></a>Mostrar los subprocesos marcados  
- Puede marcar un subproceso que desea prestar atención especial con un icono en el **subprocesos** ventana. Para obtener más información, consulte [Cómo: quitar marcadores de subprocesos y marca](../debugger/how-to-flag-and-unflag-threads.md). En la ventana Subprocesos puede decidir si desea mostrar todos los subprocesos o solo los subprocesos marcados.  
+ Puede marcar un subproceso al que quiera prestar atención especial con un icono en la ventana **Subprocesos**. Para obtener más información, vea [Cómo: Marcar y desmarcar subprocesos](../debugger/how-to-flag-and-unflag-threads.md). En la ventana Subprocesos puede decidir si desea mostrar todos los subprocesos o solo los subprocesos marcados.  
   
 #### <a name="to-display-only-flagged-threads"></a>Para mostrar solo los subprocesos marcados  
   
 -   Elija el botón de marca en la esquina superior izquierda de la **subprocesos** ventana.  
   
 ## <a name="displaying-thread-call-stacks-and-switching-between-frames"></a>Mostrar pilas de llamadas de subprocesos y cambiar entre marcos  
- En un programa multiproceso, cada subproceso tiene su propia pila de llamadas. El **subprocesos** ventana proporciona una manera cómoda de ver estas pilas.  
+ En un programa multiproceso, cada subproceso tiene su propia pila de llamadas. La ventana **Subprocesos** proporciona un medio cómodo para ver estas pilas.  
   
 #### <a name="to-view-the-call-stack-of-a-thread"></a>Para ver la pila de llamadas de un subproceso  
   
@@ -166,8 +161,5 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
 -   En la barra de herramientas en la parte superior de la **subprocesos** ventana, haga clic en **Expandir pilas de llamadas** o **Contraer pilas de llamadas**.  
   
 ## <a name="see-also"></a>Vea también  
- [Depurar aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Tutorial: Depurar una aplicación multiproceso](../debugger/walkthrough-debugging-a-multithreaded-application.md)
-
-
-
+ [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Tutorial: Depuración de una aplicación multiproceso](../debugger/walkthrough-debugging-a-multithreaded-application.md)

@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: depurar código insertado | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Depurar código insertado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.injected
 dev_langs:
@@ -30,33 +25,33 @@ ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7ff81b082c877098acec78e56ef9ef211cae8854
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5a38b84c5b45ba8111977701d9026f22f90abf50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987960"
 ---
-# <a name="how-to-debug-injected-code"></a>Cómo: Depurar código insertado
+# <a name="how-to-debug-injected-code"></a>Filtrar Depuración de código insertado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  El uso de atributos puede simplificar enormemente la programación en C++. Para obtener más información, consulte [conceptos](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). El compilador se encarga de interpretar directamente algunos atributos. Otros atributos insertan código en el archivo de código fuente del programa, que el compilador se encarga entonces de compilar. Este código insertado facilita la programación al reducir la cantidad de código que se debe escribir. Sin embargo, a veces un error puede hacer que la aplicación no funcione correctamente mientras se ejecuta el código insertado. En estos casos, debería examinarse el código insertado. Visual Studio proporciona dos modos de examinar el código insertado.  
   
-- Puede ver código insertado en el **desensamblado** ventana.  
+- Puede ver el código insertado en la ventana **Desensamblado**.  
   
-- Uso de [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), puede crear un archivo de código fuente combinado que contiene código original e insertado.  
+- Mediante [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), se puede crear un archivo de código fuente combinado que contiene código original e insertado.  
   
-  El **desensamblado** ventana muestra instrucciones de lenguaje de ensamblado que se corresponden con el código fuente y el código insertado por los atributos. Además, el **desensamblado** ventana puede mostrar la anotación del código fuente.  
+  La ventana **Desensamblado** muestra instrucciones en lenguaje de ensamblado que corresponden al código fuente y al código insertado por los atributos. Además, la ventana **Desensamblado** puede mostrar la anotación del código fuente.  
   
 ### <a name="to-turn-on-source-annotation"></a>Para activar la anotación del código fuente  
   
--   Haga clic en el **desensamblado** ventana y elija **mostrar código fuente** en el menú contextual.  
+-   Haga clic con el botón derecho en la ventana **Desensamblado** y elija **Mostrar código fuente** en el menú contextual.  
   
-     Si conoce la ubicación de un atributo en una ventana de código fuente, puede usar el menú contextual para buscar el código insertado en el **desensamblado** ventana.  
+     Si conoce la ubicación de un atributo en una ventana de código fuente, puede utilizar el menú contextual para buscar el código insertado en la ventana **Desensamblado**.  
   
 ### <a name="to-view-injected-code"></a>Para ver el código insertado  
   
@@ -64,19 +59,16 @@ NOTA]
   
 2.  En una ventana de código fuente, coloque el cursor delante de los atributos cuyo código insertado desea ver.  
   
-3.  Haga clic en y seleccione **ir al desensamblado** en el menú contextual.  
+3.  Haga clic con el botón derecho y seleccione **Ir al desensamblado** en el menú contextual.  
   
-     Si la ubicación del atributo está cerca del punto de ejecución actual, puede seleccionar la **desensamblado** ventana desde el **depurar** menú.  
+     Si la ubicación del atributo está cerca del punto de ejecución actual, puede seleccionar la ventana **Desensamblado** en el menú **Depurar**.  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Para ver el código de desensamblado en el punto de ejecución actual  
   
 1.  El depurador debe hallarse en modo de interrupción.  
   
-2.  Desde el **depurar** menú, elija **Windows**y haga clic en **desensamblado**.  
+2.  En el menú **Depurar**, elija **Ventanas** y después haga clic en **Desensamblado**.  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)
-
-
-

@@ -1,28 +1,23 @@
 ---
-title: 'Cómo: proporcionar el contexto para los editores | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Proporcionar contexto para los editores | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
 ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 60ce6535375e79f7fef7fe25ef6a8381a02b0ad5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8a74acbcf3da16d7b8e2ac68e761719a6192a2b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778389"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988103"
 ---
-# <a name="how-to-provide-context-for-editors"></a>Cómo: proporcionar el contexto para los editores
+# <a name="how-to-provide-context-for-editors"></a>Filtrar Proporcionar contexto para los editores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para un editor, el contexto está activo sólo cuando el editor tiene el foco o tenía el foco antes de que el foco se ha movido a una ventana de herramientas. Puede proporcionar contexto para un editor haciendo lo siguiente:  
@@ -98,4 +93,3 @@ Para un editor, el contexto está activo sólo cuando el editor tiene el foco o 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx>
-

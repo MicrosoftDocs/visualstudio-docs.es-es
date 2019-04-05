@@ -1,26 +1,21 @@
 ---
-title: FxCopCmd (errores) | Documentos de Microsoft
-ms.custom: ''
+title: FxCopCmd Errors | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 828805e0746fb985ea310b755cdaaa252e215a07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b5c7b62ce9e117b348daaa54da3d397346b6eab0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751718"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989127"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd (errores)
 FxCopCmd no tiene en cuenta todos los errores sea grave. Si FxCopCmd tiene suficiente información para realizar un análisis parcial, realiza los errores de análisis e informes que se ha producido. El código de error, que es un entero de 32 bits, contiene una combinación bit a bit de valores numéricos que se corresponden con errores.  
@@ -31,15 +26,15 @@ FxCopCmd no tiene en cuenta todos los errores sea grave. Si FxCopCmd tiene sufic
 |-----------|-------------------|  
 |Sin errores|0x0|  
 |Error de análisis|0x1|  
-|Excepciones de reglas|0 x 2|  
+|Excepciones de reglas|0x2|  
 |Error al cargar proyecto|0x4|  
 |Error al cargar ensamblado|0x8|  
-|Error de carga de biblioteca de regla|0 x 10|  
-|Error de carga del informe de importación|0 x 20|  
+|Error de carga de biblioteca de regla|0x10|  
+|Error de carga del informe de importación|0x20|  
 |Error de salida|0x40|  
 |Error del conmutador de línea de comandos|0x80|  
-|Error de inicialización|0 x 100|  
-|Error de las referencias de ensamblado|0 x 200|  
+|Error de inicialización|0x100|  
+|Error de las referencias de ensamblado|0x200|  
 |BuildBreakingMessage|0x400|  
 |Error desconocido|0x1000000|  
   

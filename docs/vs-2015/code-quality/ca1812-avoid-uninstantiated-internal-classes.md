@@ -1,14 +1,9 @@
 ---
-title: 'CA1812: Evitar las clases internas sin instancia | Microsoft Docs'
-ms.custom: ''
+title: 'CA1812: Evitar las clases internas sin instancia | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1812
 - AvoidUninstantiatedInternalClasses
@@ -20,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5236fd2dd4635b88ce82b993ebbc15a25e767df1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c2066e1c3ae3975536735290c34932f347c15693
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988260"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar las clases internas sin instancia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,11 +94,8 @@ ms.locfileid: "49899791"
   En estas situaciones, se recomienda que suprimir esta advertencia.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1811: Evitar código privado al que no se llama](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Evitar código privado fuera de lugar](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
  [CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Quitar variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)
-
-
-
+ [CA1804: Quitar a variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)

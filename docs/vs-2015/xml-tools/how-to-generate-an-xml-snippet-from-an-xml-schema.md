@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: generar un fragmento XML desde un esquema XML | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Generar un fragmento XML desde un esquema XML | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ec2d14a03649b63a068d2e0a95877ccd03ddf97a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986880"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Cómo: Generar un fragmento XML a partir de un esquema XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Filtrar Generar un fragmento de código XML a partir de un esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -161,7 +156,4 @@ Con el Editor XML es posible generar fragmentos de código XML a partir de un es
   
 ## <a name="see-also"></a>Vea también  
  [Fragmentos XML](../xml-tools/xml-snippets.md)   
- [Cómo: Usar fragmentos XML](../xml-tools/how-to-use-xml-snippets.md)
-
-
-
+ [Cómo: Uso de fragmentos de código XML](../xml-tools/how-to-use-xml-snippets.md)

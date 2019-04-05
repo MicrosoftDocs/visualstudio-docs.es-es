@@ -1,14 +1,9 @@
 ---
 title: Ejemplo de implementación de evaluación de expresiones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a79f61351363ba14b9993181c77e1a9be88515d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb36540aaf6fa30cdcd069fd96a18124daafe2b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735168"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988664"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Implementación de ejemplo de la evaluación de expresiones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,4 +112,3 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 ## <a name="see-also"></a>Vea también  
  [Evaluar una expresión de la ventana Inspección](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [Evaluación de una expresión de inspección](../../extensibility/debugger/evaluating-a-watch-expression.md)
-

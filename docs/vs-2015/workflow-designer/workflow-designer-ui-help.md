@@ -1,11 +1,8 @@
 ---
 title: Ayuda de la UI del Diseñador de flujo de trabajo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio 2010 Workflow Designer [WFD], user interface help
@@ -14,13 +11,13 @@ ms.assetid: f7afc443-7c7f-4b0f-9517-c58070a640de
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 1eee870558ee62e43a55e98fc539308f4ae52dd6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b19a301f7c170ee28d774ea0d96397dc2cfef312
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988044"
 ---
 # <a name="workflow-designer-ui-help"></a>Ayuda de la interfaz de usuario del Diseñador de flujo de trabajo
 Esta sección contiene temas de Ayuda contextual para [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Cuando se trabaja en [!INCLUDE[vs2010](../includes/vs2010-md.md)], puede obtener acceso a estos temas desde la interfaz de usuario presionando **F1** cuando un [!INCLUDE[wfd2](../includes/wfd2-md.md)] cuadro de diálogo está abierto.  

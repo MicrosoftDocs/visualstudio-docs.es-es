@@ -1,27 +1,22 @@
 ---
 title: Elemento primario | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62096a713e84353ab79206c5edc7003ab443adbb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2086473bc484fed4e8e351f0c3838074557586c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765873"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988304"
 ---
 # <a name="parent-element"></a>Elemento Parent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,8 +36,8 @@ El elemento primario de un cuadro combinado o botón sólo puede ser un grupo. E
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Requerido. Identificador de comando de GUID o identificador de GUID.|  
-|id|Requerido. Id. de GUID/ID el identificador de comando.|  
+|guid|Obligatorio. Identificador de comando de GUID o identificador de GUID.|  
+|id|Obligatorio. Id. de GUID/ID el identificador de comando.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguna  
@@ -58,4 +53,3 @@ El elemento primario de un cuadro combinado o botón sólo puede ser un grupo. E
   
 ## <a name="see-also"></a>Vea también  
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: Suprimir advertencias de análisis de código para código generado | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Suprimir advertencias de análisis de código para código generado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 07858183af427e2b67e1e0f63d1f8889caf72fbe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c39ee1113d04cdd3212deccee626a96dd1e3dae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293753"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987703"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Cómo: Suprimir advertencias de análisis de código en código generado
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Filtrar Suprimir advertencias de análisis de código para código generado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Compiladores de código administrado a menudo generan código que se agrega a un proyecto para facilitar el desarrollo rápido de código. Además, los desarrolladores suelen utilizar herramientas de terceros para ayudar a desarrollar aplicaciones rápidamente. Estas herramientas también generan código que se agrega al proyecto.  
@@ -40,6 +35,3 @@ Compiladores de código administrado a menudo generan código que se agrega a un
 2.  Haga clic en **análisis de código**.  
   
 3.  Seleccione el **Suprimir resultados del código generado** casilla de verificación.
-
-
-

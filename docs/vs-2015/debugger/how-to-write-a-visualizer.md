@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: escribir un visualizador | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Escribir un visualizador | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,15 +20,15 @@ ms.assetid: 625a0d4f-abcc-43f2-9f8c-31c131a4378e
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2c7f1fa96bba40e5e56ca7f054b683b3243de65b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2421121e343fabbe3f2ec7d88ec087c6b84c8709
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724896"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988836"
 ---
-# <a name="how-to-write-a-visualizer"></a>Cómo: Escribir un visualizador
+# <a name="how-to-write-a-visualizer"></a>Filtrar Escribir un visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede escribir un visualizador personalizado para un objeto de cualquier clase administrada, excepto <xref:System.Object> o <xref:System.Array>.  
@@ -45,7 +40,7 @@ Puede escribir un visualizador personalizado para un objeto de cualquier clase a
   
 - El *lado depurador* se ejecuta dentro del depurador de Visual Studio. El código del lado depurador crea y muestra la interfaz de usuario para el visualizador.  
   
-- El *lado depurado* se ejecuta dentro del proceso de Visual Studio está depurando (el *depurado*).  
+- El *lado depurado* se ejecuta dentro del proceso que Visual Studio depura (el *depurado*).  
   
   El objeto de datos que desea visualizar (un objeto String, por ejemplo) existe en el proceso depurado. Por lo tanto, el lado depurado tiene que enviar el objeto de datos al lado depurador, que después puede mostrarlo mediante la interfaz de usuario creada.  
   
@@ -63,7 +58,7 @@ Puede escribir un visualizador personalizado para un objeto de cualquier clase a
   
   Los visualizadores personalizados pueden tener consideraciones de seguridad. Consulte [consideraciones de seguridad del visualizador](../debugger/visualizer-security-considerations.md).  
   
-  Los siguientes procedimientos proporcionan una visión de alto nivel de los pasos necesarios para crear un visualizador. Para obtener una explicación más detallada, consulte [Tutorial: escribir un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Los siguientes procedimientos proporcionan una visión de alto nivel de los pasos necesarios para crear un visualizador. Para obtener una explicación más detallada, consulte [Tutorial: Escribir un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Para crear el lado depurador  
   
@@ -82,10 +77,7 @@ Puede escribir un visualizador personalizado para un objeto de cualquier clase a
 2.  Si desea que el visualizador pueda editar y mostrar objetos de datos, además de mostrarlos, será necesario invalidar los métodos `TransferData` o `CreateReplacementObject` de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.  
   
 ## <a name="see-also"></a>Vea también  
- [Crear visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md)   
- [Cómo: comprobar y depurar un visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)   
+ [Creación de visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
+ [Cómo: Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md)   
+ [Cómo: Probar y depurar un visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)   
  [Consideraciones de seguridad del visualizador](../debugger/visualizer-security-considerations.md)
-
-
-

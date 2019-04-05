@@ -1,11 +1,8 @@
 ---
-title: 'Cómo: crear una biblioteca de flujos de trabajo secuenciales (heredado) | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear una biblioteca de flujos de trabajo secuenciales (heredado) | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - sequential workflows, creating library
@@ -16,15 +13,15 @@ ms.assetid: 9433ccf3-1eab-4d53-90ff-2e7b2341676c
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 1a2f1801392c1edecec2fa26ec35c9d1728bc1c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1f70fc8e9e1c139226dd90ce9d63abae38b9397e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987731"
 ---
-# <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Cómo: Crear una biblioteca de flujos de trabajo secuenciales (Heredado)
+# <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Filtrar Crear una biblioteca de flujos de trabajo secuenciales (heredado)
 Siga estos pasos para crear un proyecto de biblioteca de flujos de trabajo secuenciales mediante el uso de [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado proporcionado por [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-sequential-workflow-library-project"></a>Para crear un proyecto de biblioteca de flujos de trabajo secuenciales  
@@ -54,4 +51,4 @@ Siga estos pasos para crear un proyecto de biblioteca de flujos de trabajo secue
   
 ## <a name="see-also"></a>Vea también  
  [Crear proyectos de flujo de trabajo heredados](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Estilos de creación de flujo de trabajo](http://msdn.microsoft.com/en-us/aacf4ec6-da05-4974-958a-974769dda739)
+ [Estilos de creación de flujo de trabajo](http://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)

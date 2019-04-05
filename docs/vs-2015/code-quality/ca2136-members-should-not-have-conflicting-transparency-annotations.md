@@ -1,14 +1,9 @@
 ---
-title: 'CA2136: Los miembros no deben tener anotaciones de transparencia en conflicto | Microsoft Docs'
-ms.custom: ''
+title: 'CA2136: Los miembros no deben tener anotaciones de transparencia en conflicto | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2127
 - SecurityTransparentAssembliesShouldNotContainSecurityCriticalCode
@@ -21,12 +16,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f524197fe647e148283e351924701ce7b11c4722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b18ee5c048b0214779cdbe2635f5b7a14db8c28e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987986"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Los miembros no deben tener anotaciones de transparencia en conflicto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,6 +49,3 @@ ms.locfileid: "49894890"
  En el ejemplo siguiente, un método está marcado con el <xref:System.Security.SecuritySafeCriticalAttribute> atributo y es un miembro de una clase marcada con el <xref:System.Security.SecurityCriticalAttribute> atributo. El atributo de prueba de errores de seguridad se debe quitar.
 
  [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2136.transparencyannotationsshouldnotconflict/cs/ca2136 - transparencyannotationsshouldnotconflict.cs#1)]
-
-
-

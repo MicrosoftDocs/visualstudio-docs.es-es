@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: cambiar entre las vistas y el Editor XML | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Cambiar entre las vistas y el Editor XML | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03edf2ba9d2e9c5042328a62606d9bbae47bb0f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 55481b5f91e0bb83241a04d61d1bfa91657b5c0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986634"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Cómo: Para pasar de las vistas al Editor XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Filtrar Cambiar entre las vistas y el Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -29,7 +24,7 @@ En este tema se muestra cómo pasar de las vistas del Diseñador de esquemas XML
   
 ### <a name="to-switch-between-the-views-and-the-xml-editor"></a>Para pasar de las vistas al Editor XML  
   
-1.  Para crear y editar un nuevo archivo de esquema XML, siga los pasos de [Cómo: crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1.  Para crear y editar un nuevo archivo de esquema XML, siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
 2.  Para cambiar al diseñador de esquemas XML desde el Editor XML, haga clic en cualquier lugar en el Editor XML y seleccione **Diseñador de vistas**.  
   
@@ -44,6 +39,3 @@ En este tema se muestra cómo pasar de las vistas del Diseñador de esquemas XML
 6.  Para pasar de una vista a otra utilizando las teclas de acceso rápido, presione CTRL+1 para la vista Inicio, CTRL+2 para la vista Gráfico, y CTRL+3 para la vista Modelo de contenido.  
   
 7.  Para ir al Editor XML desde la vista de modelo de contenido, haga clic en el nodo y seleccione **ver código** en el menú contextual.
-
-
-

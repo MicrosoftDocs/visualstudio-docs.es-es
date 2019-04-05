@@ -1,12 +1,9 @@
 ---
 title: Actualizar archivos .mdf | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812639"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988466"
 ---
 # <a name="upgrade-mdf-files"></a>Actualizar archivos .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,9 +79,9 @@ En este tema se describe las opciones para actualizar el archivo de base de dato
   
        -   Para usar una versión específica: `(localdb)\ProjectsV12` o `(localdb)\ProjectsV13`, donde V12 es LocalDB 2014 y V13 es LocalDB 2016.  
   
-   -   **Adjuntar un archivo de base de datos**: la ruta de acceso física del archivo .mdf principal.  
+   -   **Adjuntar un archivo de base de datos**: Ruta de acceso física del archivo .mdf principal.  
   
-   -   **Nombre lógico**: el nombre que desea usar con el archivo.  
+   -   **Nombre lógico**: El nombre que desea usar con el archivo.  
   
 3. Seleccione el botón **Aceptar**.  
   
@@ -123,8 +120,3 @@ En este tema se describe las opciones para actualizar el archivo de base de dato
 4. Seleccione el botón **Aceptar**.  
   
    SQL Server Express, será el motor de base de datos predeterminado para las aplicaciones.  
-  
-## <a name="see-also"></a>Vea también  
- [Información general de datos locales](../data-tools/local-data-overview.md)   
- [Tutorial: Conectar con los datos de un archivo de base de datos local (Windows Forms)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)
-

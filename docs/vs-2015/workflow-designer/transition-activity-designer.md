@@ -1,11 +1,8 @@
 ---
 title: Diseñador de actividad de transición | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Transition.UI
@@ -13,13 +10,13 @@ ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
 caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4f699cb378ceb8ee9b236c2d2e8b47b3d7f40944
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 69e918eae56d35d134b9b7c3093d5f0599a12c5e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987778"
 ---
 # <a name="transition-activity-designer"></a>Diseñadores de actividad de transición
 <xref:System.Activities.Statements.Transition> representa la transición entre dos estados.  
@@ -33,7 +30,7 @@ ms.locfileid: "49284523"
 |Nombre de la propiedad|Obligatorio|Uso|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|False|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.Transition>. El valor predeterminado es **T1**. El valor se puede editar en la cuadrícula de propiedades, en el encabezado del diseñador expandido de la transición y en el encabezado de la sección de acción desde el diseñador expandido de la transición. <xref:System.Activities.Activity.DisplayName%2A> se usa en la ruta de navegación que se muestra en la parte superior del diseñador de flujo de trabajo.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|  
-|<xref:System.Activities.Statements.Transition.Condition%2A>|False|Si está presente, especifica una expresión que se debe evaluar como **True** antes de que el control pasa al estado de destino. Esta condición se puede editar en la cuadrícula de propiedades y en el diseñador expandido de transición. Varias condiciones en una transición compartida se evalúan en el orden en que aparecen en el diseñador de la transición. **Nota:** tenga en cuenta que si el <xref:System.Activities.Statements.Transition.Condition%2A> de una transición se evalúa en **False** (o todas las condiciones de una transición de desencadenador compartido se evalúan como **False**), no se realizará la transición y se reprogramarán todos los desencadenadores para todas las transiciones del estado. En este tutorial, no puede suceder esta situación debido a la forma en que están configuradas las condiciones (tenemos acciones específicas para determinar si el supuesto es correcto o incorrecto).|  
+|<xref:System.Activities.Statements.Transition.Condition%2A>|False|Si está presente, especifica una expresión que se debe evaluar como **True** antes de que el control pasa al estado de destino. Esta condición se puede editar en la cuadrícula de propiedades y en el diseñador expandido de transición. Varias condiciones en una transición compartida se evalúan en el orden en que aparecen en el diseñador de la transición. **Nota:**  Observe que si el <xref:System.Activities.Statements.Transition.Condition%2A> de una transición se evalúa en **False** (o todas las condiciones de una transición de desencadenador compartido se evalúan como **False**), no se realizará la transición y todos los desencadenadores para todas las transiciones desde el estado volverá a programar. En este tutorial, no puede suceder esta situación debido a la forma en que están configuradas las condiciones (tenemos acciones específicas para determinar si el supuesto es correcto o incorrecto).|  
 |**Origen**|True|Indica el estado del que esta transición se origina. Al hacer clic en el nombre del estado de origen se cambia la vista de diseñador a una vista expandida de ese estado. Se establece este valor cuando la transición se crea y no se puede cambiar.|  
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|False|Especifica la actividad cuya finalización inicia la transición. Para establecer esta actividad, arrastre una actividad desde la **cuadro de herramientas** y colóquela en la **desencadenador** sección de la transición.|  
 |<xref:System.Activities.Statements.Transition.Action%2A>|False|Especifica la actividad que se ejecuta cuando la actividad desencadenadora se completa y el <xref:System.Activities.Statements.Transition.Condition%2A>, si existe, se evalúa como **true**. Se ejecuta esta actividad en la transición al estado de destino, después de que la actividad <xref:System.Activities.Statements.State.Exit%2A> para el estado de origen, si existe, se ejecute. Cuando el Diseñador de transición se expande, este valor se puede establecer arrastrando una actividad desde la **cuadro de herramientas** y colocándola sobre la **acción** sección de la transición. Puede haber varias acciones para una única transición. Las acciones individuales se pueden expandir y contraer, y se pueden ordenar haciendo clic en la flecha arriba o abajo que aparece en la acción cuando hay varias acciones en una transición.|  
@@ -48,6 +45,6 @@ ms.locfileid: "49284523"
  Las transiciones compartidas de desencadenador son el conjunto de transiciones que comparten el mismo evento desencadenador. Un desencadenador compartido permite la progresión condicional a un estado de destino basándose en la evaluación de expresiones configuradas para varias transiciones que comparten un evento desencadenador de común. Para agregar acciones adicionales a una transición y crear una transición compartida, haga clic en el círculo que indica el inicio de la transición deseada y arrástrelo hasta el estado deseado. La nueva transición compartirá un mismo desencadenador que la transición inicial, pero tendrá una condición y una acción únicas. Las transiciones compartidas también pueden crearse desde dentro del Diseñador de transición haciendo **Agregar transición de desencadenador compartida** en la parte inferior del diseñador transición y, a continuación, seleccione el estado de destino deseado el  **Estados disponibles para conectar** lista desplegable.  
   
 ## <a name="see-also"></a>Vea también  
- [Máquina de Estados](../workflow-designer/statemachine-activity-designer.md)   
+ [StateMachine](../workflow-designer/statemachine-activity-designer.md)   
  [FinalState](../workflow-designer/finalstate-activity-designer.md)   
  [Estado](../workflow-designer/state-activity-designer.md)

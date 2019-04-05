@@ -1,27 +1,22 @@
 ---
 title: Suscripción a un evento | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - running document table (RDT), responding to events
 - running document table (RDT), subscribing to events
 ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2e01d10f68436cacdb3a662540723335743b9f10
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ec19e71685fc2a866f23d5050861e5733ef6cb39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776582"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989044"
 ---
 # <a name="subscribing-to-an-event"></a>Suscripción a un evento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,4 +138,3 @@ En este tutorial se explica cómo crear una ventana de herramientas que responde
 13. Abra o cree una solución.  
   
      Como `OnBeforeLastDocument` y `OnAfterFirstDocument` se activan los eventos, notificación de cada evento aparece en el evento de lista.
-

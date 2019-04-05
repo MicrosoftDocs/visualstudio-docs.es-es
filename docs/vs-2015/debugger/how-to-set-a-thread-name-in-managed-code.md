@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: establecer un nombre de subproceso en código administrado | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Establecer un nombre de subproceso en código administrado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,18 +18,18 @@ ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 585c372a5ffcb71fcc8a2f7e56bb95380b3c41ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b800fbd2f39d75f110a059c70b87a203eb72e7d6
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729523"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58988083"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Cómo: Establecer un nombre de subproceso en código administrado
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Filtrar Establecimiento de un nombre de subproceso en código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La denominación de los subprocesos es posible en cualquier edición de Visual Studio. Denominación de los subprocesos es útil para realizar el seguimiento de subprocesos en el **subprocesos** ventana. Dado que el **subprocesos** ventana no está disponible en las ediciones Express de Visual Studio, la denominación tiene poca utilidad en las ediciones Express.  
+La denominación de los subprocesos es posible en cualquier edición de Visual Studio. La denominación de los subprocesos es útil para hacer el seguimiento en la ventana **Subprocesos**. Dado que el **subprocesos** ventana no está disponible en las ediciones Express de Visual Studio, la denominación tiene poca utilidad en las ediciones Express.  
   
  Para establecer un nombre de subproceso en código administrado, utilice la propiedad <xref:System.Threading.Thread.Name%2A>.  
   
@@ -61,8 +56,5 @@ End Sub
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Depurar aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Cómo: Establecer un nombre de subproceso en código nativo](../debugger/how-to-set-a-thread-name-in-native-code.md)
-
-
-
+ [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Cómo: Establecimiento de un nombre de subproceso en código nativo](../debugger/how-to-set-a-thread-name-in-native-code.md)

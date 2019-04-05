@@ -1,14 +1,9 @@
 ---
 title: Creación de un archivo de motor de depuración | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
 - debug engines, custom
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 516fda63a1a36e407a71cd6711ecdfabdc1e5e58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a0617d23b49af182504406417023b0d907cadf27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784706"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987699"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Creación de un motor de depuración personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,9 +60,8 @@ Un motor de depuración (DE) es un componente que permite la depuración de las 
  [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)  
  Documenta el orden de llamada de los eventos que se producen en una sesión de depuración.  
   
- [Depuración de un motor de depuración personalizado](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [Cómo: Depurar un motor de depuración personalizado](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  Explica cómo depurar una personalizada DE.  
   
 ## <a name="see-also"></a>Vea también  
  [Extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Format Specifiers in C# | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -31,13 +26,13 @@ ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 330a32b20eeab172ebf36e49f16e79aa936a1bdc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3521f39227b5abcb51a4db6b61e6bf0d853e5afe
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754161"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59002301"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato en C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +46,9 @@ Puede cambiar el formato en el que se muestra un valor en la ventana **Inspecci�
   
 ```  
 {  
-        int my_var1 = 0x0065;  
-        int my_var2 = 0x0066;  
-        int my_var3 = 0x0067;  
+    int my_var1 = 0x0065;  
+    int my_var2 = 0x0066;  
+    int my_var3 = 0x0067;  
 }  
 ```  
   
@@ -66,7 +61,7 @@ Puede cambiar el formato en el que se muestra un valor en la ventana **Inspecci�
   
 |Especificador|Formato|Valor de inspección original|Muestra|  
 |---------------|------------|--------------------------|--------------|  
-|ac|Fuerza la evaluación de una expresión. Esto puede resultar útil si se desactiva la evaluación implícita de propiedades y las llamadas a funciones implícitas. Vea [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Mensaje “El usuario ha desactivado la evaluación de funciones implícita”|\<valor >|  
+|ac|Fuerza la evaluación de una expresión. Esto puede resultar útil si se desactiva la evaluación implícita de propiedades y las llamadas a funciones implícitas. Vea [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Mensaje “El usuario ha desactivado la evaluación de funciones implícita”|\<value>|  
 |d|Entero decimal|0x0065|101|  
 |dynamic|Muestra el objeto especificado mediante un vista dinámica|Muestra todos los miembros del objeto, incluida la vista dinámica|Muestra solo la vista dinámica|  
 |h|Entero hexadecimal|61541|0x0000F065|  
@@ -76,10 +71,5 @@ Puede cambiar el formato en el que se muestra un valor en la ventana **Inspecci�
 |results|Puede usar con una variable de un tipo que implementa IEnumerable o IEnumerable\<T >, normalmente es el resultado de una expresión de consulta. Solo muestra los miembros que contienen el resultado de la consulta.|Muestra todos los miembros.|Muestra los miembros que cumplan las condiciones de la consulta.|  
   
 ## <a name="see-also"></a>Vea también  
- [Inspección e inspección rápida Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Windows variable](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
-
-
-
-
+ [Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)   
+ [Ventanas de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

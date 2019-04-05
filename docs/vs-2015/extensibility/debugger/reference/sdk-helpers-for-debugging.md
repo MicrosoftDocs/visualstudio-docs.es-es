@@ -1,14 +1,9 @@
 ---
 title: Aplicaciones auxiliares de SDK para depurar | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 904ac14433bf6b7b839a4fe634175a7f583e27ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772188"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988487"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Asistentes de SDK para la depuración
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -183,7 +178,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|Establezca en distinto de cero para indicar la compatibilidad con la configuración de puntos de interrupción en los cambios en los datos.|  
 |metricDisassembly|Establezca a distinto de cero para indicar la compatibilidad para la producción de una lista de desensamblado.|  
 |metricDumpWriting|Establezca en distinto de cero para indicar la compatibilidad para escribir (el volcado de memoria para un dispositivo de salida) de volcado de memoria.|  
-|metricENC|Establezca a distinto de cero para indicar la compatibilidad para editar y continuar. **Nota:** nunca debe establecer esto de un motor de depuración o siempre debe establecer en 0.|  
+|metricENC|Establezca a distinto de cero para indicar la compatibilidad para editar y continuar. **Nota:**  Un motor de depuración nunca debe establecer esto o siempre debe establecer en 0.|  
 |metricExceptions|Establezca en distinto de cero para indicar la compatibilidad para las excepciones.|  
 |metricFunctionBP|Establezca en distinto de cero para indicar la compatibilidad con los puntos de interrupción con nombre (los puntos de interrupción que se interrumpan cuando se llama a un nombre de función determinado).|  
 |metricHitCountBP|Establezca en distinto de cero para indicar la compatibilidad con la configuración de puntos de interrupción "de aciertos de punto" (puntos de interrupción que se desencadenan después de que se vea afectado a un número determinado de veces).|  
@@ -198,7 +193,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|Establezca esta opción a distinto de cero para indicar que el proveedor del programa siempre se debe cargar localmente.|  
 |metricEngineCanWatchProcess|Establezca esta opción en distinto de cero para indicar que el motor de depuración inspeccionará para procesar eventos en lugar del proveedor del programa.|  
 |metricRemoteDebugging|Establezca esta opción en distinto de cero para indicar la compatibilidad para la depuración remota.|  
-|metricEncUseNativeBuilder|Establezca esta opción a distinto de cero para indicar que el editar y continuar con el administrador deben usar encbuild.dll del motor de depuración para crear aplicaciones para editar y continuar. **Nota:** nunca debe establecer esto de un motor de depuración o siempre debe establecer en 0.|  
+|metricEncUseNativeBuilder|Establezca esta opción a distinto de cero para indicar que el editar y continuar con el administrador deben usar encbuild.dll del motor de depuración para crear aplicaciones para editar y continuar. **Nota:**  Un motor de depuración nunca debe establecer esto o siempre debe establecer en 0.|  
 |metricLoadUnderWOW64|Establezca esta opción en distinto de cero para indicar que el motor de depuración se debe cargar en el proceso depurado bajo WOW cuando se depura un proceso de 64 bits; en caso contrario, el motor de depuración se cargarán en el proceso de Visual Studio (que se ejecuta bajo WOW64).|  
 |metricLoadProgramProviderUnderWOW64|Establezca esta opción en distinto de cero para indicar que el proveedor del programa debe cargarse en el proceso depurado al depurar un proceso de 64 bits en WOW; en caso contrario, se cargarán en el proceso de Visual Studio.|  
 |metricStopOnExceptionCrossingManagedBoundary|Establezca esta opción en distinto de cero para indicar que el proceso debe detenerse si se produce una excepción no controlada en los límites de código administrado y no administrado.|  
@@ -237,7 +232,7 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|Establezca esta opción en distinto de cero para mostrar el código no es de usuario.|  
 |metricJustMyCodeStepping|Establezca esta opción en distinto de cero para indicar que la ejecución paso a paso pueden producirse solo en el código de usuario.|  
 |metricCLSID|CLSID de un objeto de un tipo específico de métrica.|  
-|MetricName|Nombre descriptivo para un objeto de un tipo específico de métrica.|  
+|metricName|Nombre descriptivo para un objeto de un tipo específico de métrica.|  
 |metricLanguage|Nombre del idioma.|  
   
 ## <a name="registry-locations"></a>Ubicaciones del registro  
@@ -268,9 +263,9 @@ HRESULT EnumMetricSections(
   
 |Marcador de posición|Descripción|  
 |-----------------|-----------------|  
-|*[clave del registro]*|`HKEY_CURRENT_USER` o `HKEY_LOCAL_MACHINE`.|  
+|*[registry key]*|`HKEY_CURRENT_USER` o `HKEY_LOCAL_MACHINE`.|  
 |*[raíz de la versión]*|La versión de Visual Studio (por ejemplo, `7.0`, `7.1`, o `8.0`). Sin embargo, esta raíz también se puede modificar mediante la **/rootsuffix** cambie a **devenv.exe**. VSIP, este modificador es normalmente **Exp**, por lo que podría ser la raíz de la versión, por ejemplo, 8.0Exp.|  
-|*[raíz métrica]*|Puede ser `AD7Metrics` o `AD7Metrics(Debug)`, dependiendo de si se usa la versión de depuración de dbgmetric.lib. **Nota:** si se utiliza dbgmetric.lib, esta convención de nomenclatura debe cumplir si dispone de las diferencias entre depuración y lanzamiento de versiones que deben reflejarse en el registro.|  
+|*[raíz métrica]*|Puede ser `AD7Metrics` o `AD7Metrics(Debug)`, dependiendo de si se usa la versión de depuración de dbgmetric.lib. **Nota:**  Si se utiliza dbgmetric.lib, esta convención de nomenclatura debe cumplir si dispone de las diferencias entre depuración y lanzamiento de versiones que deben reflejarse en el registro.|  
 |*[tipo de métrica]*|El tipo de métrica se escriban: `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etcetera. Todas ellas se definen como en dbgmetric.h como `metricTypeXXXX`, donde `XXXX` es el nombre de tipo específico.|  
 |*[metric]*|El nombre de una entrada que se asignará un valor con el fin de establecer la métrica. La organización de las métricas depende del tipo de métrica.|  
 |*[valor de métrica]*|El valor asignado a la métrica. El tipo que el valor debe tener (cadena), números, etc. depende de la métrica.|  
@@ -429,8 +424,7 @@ HRESULT EnumMetricSections(
   
  Encabezado: includes\dbgmetric.h  
   
- Biblioteca: libs\ad2de.lib, libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-

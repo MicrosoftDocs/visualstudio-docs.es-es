@@ -1,36 +1,31 @@
 ---
-title: 'Lista de comprobación: Creación de nuevos tipos de proyecto | Microsoft Docs'
-ms.custom: ''
+title: 'Lista de comprobación: Creación de nuevos tipos de proyecto | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90b48f5969a422ab9d211bb56900cf1b3b41a78b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f3a6a091e5574721b93cbff23f873fe1a845ef6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737354"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002940"
 ---
-# <a name="checklist-creating-new-project-types"></a>Lista de comprobación: creación de nuevos tipos de proyecto
+# <a name="checklist-creating-new-project-types"></a>Lista de comprobación: Creación de nuevos tipos de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Debe completar varias tareas para crear un nuevo tipo de proyecto. La siguiente lista de comprobación proporciona a una guía para esas tareas.  
   
 1.  Diseñe la funcionalidad para el tipo de proyecto nuevo. Para obtener más información, consulte [decisiones de diseño de tipo de proyecto](../../extensibility/internals/project-type-design-decisions.md).  
   
-2.  Determinar qué editores se utilizan para código y otros elementos de proyecto. Puede usar el núcleo o editores estándar, o puede crear y usar los editores específicos del proyecto. Para obtener más información, consulte [crear editores personalizados y diseñadores](../../extensibility/creating-custom-editors-and-designers.md) y [Cómo: abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md).  
+2.  Determinar qué editores se utilizan para código y otros elementos de proyecto. Puede usar el núcleo o editores estándar, o puede crear y usar los editores específicos del proyecto. Para obtener más información, consulte [crear editores personalizados y diseñadores](../../extensibility/creating-custom-editors-and-designers.md) y [Cómo: Apertura de editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md).  
   
 3.  Determinar el nivel de participación que tendrán los elementos de proyecto en el **vista de clases** y **Examinador de objetos**. Para obtener más información, consulte [herramientas de exploración de símbolos que admiten](../../extensibility/internals/supporting-symbol-browsing-tools.md).  
   
@@ -40,11 +35,11 @@ Debe completar varias tareas para crear un nuevo tipo de proyecto. La siguiente 
   
     -   Generador de proyectos para administrar la creación de nuevos proyectos y abrir proyectos existentes. Para obtener más información, consulte [crear proyecto instancias por usar generadores de proyectos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
-    -   Jerarquía del proyecto y gestión de comandos. Para obtener más información, consulte [no en la compilación: uso de las clases de proyecto HierUtil7 para implementar un tipo de proyecto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346), [elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md), [componentes principales del modelo proyecto](../../extensibility/internals/project-model-core-components.md)y [MenuCommands frente a. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
+    -   Jerarquía del proyecto y gestión de comandos. Para obtener más información, consulte [no en la compilación: Uso de HierUtil7 proyecto clases para implementar un tipo de proyecto (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346), [elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md), [componentes principales del modelo de proyecto](../../extensibility/internals/project-model-core-components.md) y [MenuCommands frente a. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   
     -   Administración de elementos de proyecto, incluida la adición de su proyecto a la **nuevo proyecto** cuadro de diálogo. Para obtener más información, consulte [Agregar proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md) y [registrar plantillas de proyecto y elemento](../../extensibility/internals/registering-project-and-item-templates.md).  
   
-    -   Persistencia de estado del proyecto y elementos individuales. Para obtener más información, consulte [abriendo y guardando elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md). Para la persistencia de la información de la solución, consulte [soluciones](../../extensibility/internals/solutions.md).  
+    -   Persistencia de estado del proyecto y elementos individuales. Para obtener más información, consulte [abriendo y guardando elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md). Para la persistencia de la información de la solución, consulte [soluciones](../../extensibility/internals/solutions-overview.md).  
   
     -   Propiedades independientes de configuración que se muestra en la ventana Propiedades. Para obtener más información, consulte [extender propiedades](../../extensibility/internals/extending-properties.md).  
   
@@ -68,4 +63,3 @@ Debe completar varias tareas para crear un nuevo tipo de proyecto. La siguiente 
  [Jerarquías en Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [Cuándo se debe crear tipos de proyecto](../../extensibility/internals/when-to-create-project-types.md)   
  [Creación de tipos de proyecto](../../extensibility/internals/creating-project-types.md)
-

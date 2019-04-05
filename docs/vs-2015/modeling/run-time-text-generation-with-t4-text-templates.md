@@ -1,12 +1,9 @@
 ---
 title: Generación de texto en tiempo de ejecución con plantillas de texto T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920136"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002445"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>Herencia entre plantillas de texto de tiempo de ejecución  
  Puede compartir contenido entre las plantillas de tiempo de ejecución mediante la escritura de una plantilla de clase base, que puede ser abstracta. Use la `inherits` parámetro de la `<@#template#>` directiva para hacer referencia a otra clase de plantilla en tiempo de ejecución.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Patrón de herencia: fragmentos de métodos Base  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Patrón de herencia: Fragmentos de métodos Base  
  En el patrón utilizado en el ejemplo siguiente, tenga en cuenta los siguientes puntos:  
   
 - La clase base `SharedFragments` define los métodos dentro de bloques de características de clase `<#+ ... #>`.  
@@ -431,7 +428,4 @@ End material for DerivedTemplate1.
 ## <a name="see-also"></a>Vea también  
  [Generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md)   
  [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)   
- [Descripción de T4: Plantillas de texto preprocesada por Oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [Descripción T4: Plantillas de texto preprocesada por Oleg Sych](https://github.com/olegsych/T4Toolbox)

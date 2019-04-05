@@ -1,29 +1,24 @@
 ---
-title: 'Cómo: expandir y contraer árboles de Spy ++ | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Expandir y contraer árboles de Spy ++ | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ab7b31dcfbaaf7ba101d7dea426fd95bb6f397de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 037d6100c7137784de3896771dd62c766b4505e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754841"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988282"
 ---
-# <a name="how-to-expand-and-collapse-spy-trees"></a>Cómo: Expandir y contraer árboles de Spy++
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Filtrar Expansión y contracción de árboles de Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede expandir y contraer las vistas de Windows, procesos y subprocesos utilizando dos métodos: haciendo clic en los iconos en la ventana o mediante el **árbol** menú. El + y – iconos en el árbol de actúan como lo hacen en la ventana de proyecto de Visual C++.  
@@ -47,9 +42,6 @@ Puede expandir y contraer las vistas de Windows, procesos y subprocesos utilizan
 2.  Desde el **árbol** menú, elija uno de la expandir o contraer los comandos.  
   
 ## <a name="see-also"></a>Vea también  
- [Usar Spy ++](../debugger/using-spy-increment.md)   
- [Vistas de Spy ++](../debugger/spy-increment-views.md)   
+ [Usar Spy++](../debugger/using-spy-increment.md)   
+ [Vistas de Spy++](../debugger/spy-increment-views.md)   
  [Referencia de Spy++](../debugger/spy-increment-reference.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: Invalidar y ampliar las clases generadas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 ms.assetid: 30baa60d-a8ea-4611-96c1-8fcc3317cf21
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933435"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988193"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Invalidar y ampliar clases generadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +88,6 @@ La definición de DSL es una plataforma en la que puede crear un conjunto eficaz
 ### <a name="net-events"></a>Eventos de .NET  
  Puede suscribirse a algunos eventos en las formas. Por ejemplo, puede escuchar la clics del mouse en una forma. Tendrá que escribir código que se suscribe al evento para cada objeto. Este código se puede escribir en un reemplazo de InitializeInstanceResources().  
   
- Algunos eventos se generan en ShapeFields, que se usan para dibujar los elementos Decorator de una forma. Para obtener un ejemplo, vea [Cómo: interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+ Algunos eventos se generan en ShapeFields, que se usan para dibujar los elementos Decorator de una forma. Como ejemplo, vea [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
  Normalmente, estos eventos no se producen dentro de una transacción. Debe crear una transacción si desea realizar cambios en el almacén.
-
-
-

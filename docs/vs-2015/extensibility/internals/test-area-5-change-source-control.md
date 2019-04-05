@@ -1,29 +1,24 @@
 ---
 title: 'Área de prueba 5: Cambiar Control de código fuente | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d117d3ad85d46bfeeb896892508ba90efb33e702
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d79281e2fef6a7ae77a2ba6c8375f47dc6520b3a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746594"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987716"
 ---
-# <a name="test-area-5-change-source-control"></a>Área de prueba 5: cambiar control de código fuente
+# <a name="test-area-5-change-source-control"></a>Área de prueba 5: Cambio del control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Esta área de prueba de complemento de control de código fuente trata el cambio del control de código fuente a través de la **cambiar Control de código fuente** comando.  
@@ -40,7 +35,7 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
   
 - **Conectar o desconectar acceso:**  
   
-  Cambia el estado conectado o desconectado de la solución controlada, que se explica en la zona 3. Para obtener más información, consulte [3 del área de prueba: desproteger o deshacer desprotección](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Cambia el estado conectado o desconectado de la solución controlada, que se explica en la zona 3. Para obtener más información, consulte [3 del área de prueba: Desproteger o deshacer desprotección](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Acceso al menú de comandos  
  La siguiente [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ruta de acceso del menú de entorno de desarrollo integrado se usa en los casos de prueba.  
@@ -50,7 +45,7 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
 ## <a name="test-cases"></a>Casos de prueba  
  Los siguientes son casos de prueba concretos para el **cambiar Control de código fuente** comando área de prueba.  
   
-### <a name="case-5a-bind"></a>Caso 5a: enlazar  
+### <a name="case-5a-bind"></a>Case 5a: Enlazar  
  Enlace permite al usuario agregar información de control de código de origen a las soluciones y proyectos seleccionados. Normalmente se solicita el usuario para identificar un proyecto de control de código fuente a la que se trata de agregarse. El usuario no puede crear un nuevo proyecto de control de código fuente como parte de esta operación (oposición a agregar al Control de código fuente).  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
@@ -59,17 +54,17 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
 |Enlazar a la ubicación que está sincronizada con el cliente|1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Crear un duplicado de la solución y proyecto en el almacén de versiones (compartir y bifurcar si usa [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />4.  Abra **cambiar Control de código fuente** cuadro de diálogo (**archivo**, **Control de código fuente**, **cambiar Control de código fuente**).<br />5.  Desenlace todos.<br />6.  Haga clic en **Aceptar** para cerrar **cambiar Control de código fuente** cuadro de diálogo.<br />7.  Vuelva a abrir **cambiar Control de código fuente** cuadro de diálogo.<br />8.  Seleccionar todo.<br />9. Haga clic en **enlazar**.<br />10. Vaya a la ubicación de la solución y proyecto bifurcada (del paso 3)<br />11. Haga clic en **Aceptar** para cerrar el **cambiar Control de código fuente** cuadro de diálogo.<br />12. Obtener todos los elementos más recientes de forma recursiva.|Contenido del archivo después de la operación get es igual que antes de la operación get.|  
 |Enlazar a la ubicación que no está sincronizado con el cliente|1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Crear un duplicado de la solución y proyecto en el almacén de versiones (compartir y bifurcar si usa [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />4.  Modificar los archivos del proyecto en el almacén de versiones bifurcado.<br />5.  Abra **cambiar Control de código fuente** cuadro de diálogo (**archivo**, **Control de código fuente**, **cambiar Control de código fuente**).<br />6.  Desenlace todos.<br />7.  Haga clic en **Aceptar** para cerrar **cambiar Control de código fuente** cuadro de diálogo.<br />8.  Vuelva a abrir **cambiar Control de código fuente** cuadro de diálogo.<br />9. Seleccionar todo.<br />10. Haga clic en **enlazar**.<br />11. Vaya a ramas de ubicación para la solución y proyecto.<br />12. Haga clic en **Aceptar** para cerrar el **cambiar Control de código fuente** cuadro de diálogo.<br />13. Si aparece, acepte el cuadro de diálogo de advertencia.<br />14, Obtener recursiva más reciente para todos los elementos.|También se modifican localmente los archivos que se han modificado en el paso 4.|  
 |Enlazar la solución que se encontraba nunca bajo control de código fuente|1.  Cree una carpeta vacía en control de código fuente.<br />2.  Cree un proyecto de cliente.<br />3.  Abra **cambiar Control de código fuente** cuadro de diálogo (**archivo**, **Control de código fuente**, **cambiar Control de código fuente**).<br />4.  Enlazar la solución a una ubicación vacía en control de código fuente.<br />5.  Haga clic en **Aceptar** para cerrar el **cambiar Control de código fuente** cuadro de diálogo.<br />6.  Haga clic en **continuar con estos enlaces** en el cuadro de diálogo de confirmación.<br />7.  Haga clic en **Aceptar** en el cuadro de diálogo de advertencia si aparece.|Solución se agrega al control de código fuente.<br /><br /> Solución y proyecto se desprotegen.|  
-|Cancelar el enlace|1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Abra el cuadro de diálogo Cambiar Control de código fuente.<br />4.  Desenlace todos.<br />5.  Haga clic en **Aceptar** botón para cerrar el cuadro de diálogo. Si este paso se realiza correctamente, vaya al paso siguiente.<br />6.  Vuelva a abrir el **cambiar Control de código fuente** cuadro de diálogo.<br />7.  Enlazar a una ubicación no relacionada.<br />8.  Haga clic en **cancelar**.|`Result from Step 5:`<br /><br /> La solución ya no está bajo control de código fuente<br /><br /> `Result from Step 8:`<br /><br /> Solución está todavía no bajo control de código fuente.|  
+|Cancelar el enlace|1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Abra el cuadro de diálogo Cambiar Control de código fuente.<br />4.  Desenlace todos.<br />5.  Haga clic en **Aceptar** botón para cerrar el cuadro de diálogo. Si este paso se realiza correctamente, vaya al paso siguiente.<br />6.  Vuelva a abrir el **cambiar Control de código fuente** cuadro de diálogo.<br />7.  Enlazar a una ubicación no relacionada.<br />8.  Haga clic en **Cancelar**.|`Result from Step 5:`<br /><br /> La solución ya no está bajo control de código fuente<br /><br /> `Result from Step 8:`<br /><br /> Solución está todavía no bajo control de código fuente.|  
   
-### <a name="case-5b-unbind"></a>Caso 5b: desenlazar  
+### <a name="case-5b-unbind"></a>Case 5b: Desenlazar  
  Desenlazar quita información de control de código de origen de sus soluciones y proyectos. La solución y proyectos afectados se basan en una combinación de selección del usuario y cómo se agregaron los elementos de control de código fuente.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Desenlazar la solución que contiene un sistema de archivos o un proyecto Web de IIS local y el proyecto de un cliente|1.  Crear un sistema de archivos o un proyecto Web de IIS local.<br />2.  Agregue la solución al control de código fuente.<br />3.  Agregue un nuevo proyecto de cliente a la solución.<br />4.  Si se le solicite, acepte comprobar fuera de la solución.<br />5.  Abra el **cambiar Control de código fuente** cuadro de diálogo.<br />6.  Haga clic en **desenlazar**.<br />7.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo.<br />8.  Intenta desproteger la solución, proyecto, elementos de la solución, los elementos de proyecto.|Soluciones y proyectos no están bajo control de código fuente.<br /><br /> Comandos de menú de Control de código fuente no aparecen.|  
-|Desenlazar Cancelar|1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Abra el **cambiar Control de código fuente** cuadro de diálogo.<br />4.  Haga clic en **desenlazar todos**.<br />5.  Haga clic en **cancelar**.|Solución está bajo control de código fuente.|  
+|Desenlazar Cancelar|1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Abra el **cambiar Control de código fuente** cuadro de diálogo.<br />4.  Haga clic en **desenlazar todos**.<br />5.  Haga clic en **Cancelar**.|Solución está bajo control de código fuente.|  
   
-### <a name="case-5c-rebind"></a>Caso c de 5: volver a enlazar  
+### <a name="case-5c-rebind"></a>Mayúsculas y minúsculas 5c: volver a enlazar  
  Volver a vincular es simplemente una combinación de desenlazar y enlazar: el proceso de volver a enlazar una proyecto o solución que estaba bajo control de código fuente y no está enlazado.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
@@ -81,4 +76,3 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
   
 ## <a name="see-also"></a>Vea también  
  [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

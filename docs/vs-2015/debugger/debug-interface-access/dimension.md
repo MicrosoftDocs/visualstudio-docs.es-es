@@ -1,14 +1,9 @@
 ---
 title: Dimensión | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 94f791da-bfea-454f-8a14-da31e8e1596a
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 854db8bc8d51284c4a6ea75e7091f1fa8dabdd28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b760d6a7808154b8daabe43d4cf6399c3b91977
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988141"
 ---
 # <a name="dimension"></a>Dimensión
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ Cada matriz de FORTRAN tiene una dimensión que se identifica mediante un `SymTa
 ## <a name="see-also"></a>Vea también  
  [ArrayType](../../debugger/debug-interface-access/arraytype.md)   
  [Jerarquía de clases de tipos de símbolos](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
-
-
-

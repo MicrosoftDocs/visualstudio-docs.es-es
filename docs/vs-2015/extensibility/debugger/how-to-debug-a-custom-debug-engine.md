@@ -1,35 +1,30 @@
 ---
-title: 'Cómo: Depurar un motor de depuración | Microsoft Docs'
-ms.custom: ''
+title: Cómo Depurar un motor de depuración | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d293011a3865b4fb9c31349240c520e56f5a9e39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5292d2cde8a75a239f7a905d8cf5d80b09a8f61e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986909"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>Cómo: Depurar un motor de depuración personalizado
+# <a name="how-to-debug-a-custom-debug-engine"></a>Cómo Depurar un motor de depuración personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método. Esto significa que se ha iniciado la DE bajo el control de la instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] controlar el tipo de proyecto. Sin embargo, esa instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] no se puede depurar la DE. Las siguientes son los pasos para que pueda depurar su personalizada DE.  
   
 > [!NOTE]
->  : En el procedimiento de "Depuración de un motor de depuración de personalizado", debe esperar la DE iniciarse antes de que pueden asociarse a ella. Si coloca al principio de la DE que aparece cuando se inicia la DE un cuadro de mensaje, puede adjuntar en ese momento y, a continuación, desactive el cuadro de mensaje para continuar. De este modo, puede detectar todos los eventos DE.  
+>  :     En el procedimiento "Depuración de un motor de depuración de personalizado", debe esperar la DE iniciarse antes de que pueden asociarse a ella. Si coloca al principio de la DE que aparece cuando se inicia la DE un cuadro de mensaje, puede adjuntar en ese momento y, a continuación, desactive el cuadro de mensaje para continuar. De este modo, puede detectar todos los eventos DE.  
   
 > [!WARNING]
 >  Debe tener instalado antes de intentar los siguientes procedimientos de depuración remota. Consulte [depuración remota](../../debugger/remote-debugging.md) para obtener más información.  
@@ -82,4 +77,3 @@ Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft
   
 ## <a name="see-also"></a>Vea también  
  [Creación de un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)
-

@@ -1,12 +1,9 @@
 ---
 title: Crear diagramas de capas desde el código | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,13 +13,13 @@ ms.assetid: 58c3ea71-2dbc-4963-bf82-40f1924cf973
 caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0a1c5af9394f36f7f89a20b711657a3ca76e8d1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727271"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988197"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Crear diagramas de capas a partir del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +48,7 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
   
 4.  En **agregar a proyecto de modelado**, busque y seleccione un proyecto de modelado existente de la solución.  
   
-     O bien  
+     -o bien-  
   
      Elija **crear un nuevo proyecto de modelado** para agregar un nuevo proyecto de modelado a la solución.  
   
@@ -69,12 +66,12 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
   
 |**En**|**Siga estos pasos**|  
 |------------|----------------------------|  
-|Crear una capa para un único artefacto|<ol><li>Arrastre el elemento hasta el diagrama de capas desde estos orígenes:<br /><br /> <ul><li>**Explorador de soluciones**<br /><br />         Por ejemplo, puede arrastrar archivos o proyectos.</li><li>Mapas de código<br /><br />         Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md) y [usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Vista de clases** o **Examinador de objetos**</li></ul><br />     Aparecerá una capa en el diagrama que estará vinculada al artefacto.</li><li>Cambie el nombre de la capa para que refleje las responsabilidades del código asociado u otros artefactos.</li></ol> **Importante:** arrastrar archivos binarios al diagrama de capas no agrega automáticamente sus referencias al proyecto de modelado. Debe agregar manualmente los archivos binarios que desee validar al proyecto de modelado. **Para agregar archivos binarios al proyecto de modelado** <ol><li>En **el Explorador de soluciones**, abra el menú contextual del proyecto de modelado y, a continuación, elija **Agregar elemento existente**.</li><li>En el **Agregar elemento existente** cuadro de diálogo, busque los archivos binarios, selecciónelos y, a continuación, elija **Aceptar**.     Los archivos binarios aparecen en el proyecto de modelado.</li><li>En **el Explorador de soluciones**, elija un archivo binario que ha agregado y, a continuación, presione **F4** para abrir el **propiedades** ventana.</li><li>En cada archivo binario, establezca el **acción de compilación** propiedad **validar**.</li></ol>|  
+|Crear una capa para un único artefacto|<ol><li>Arrastre el elemento hasta el diagrama de capas desde estos orígenes:<br /><br /> <ul><li>**Explorador de soluciones**<br /><br />         Por ejemplo, puede arrastrar archivos o proyectos.</li><li>Mapas de código<br /><br />         Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md) y [usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Vista de clases** o **Examinador de objetos**</li></ul><br />     Aparecerá una capa en el diagrama que estará vinculada al artefacto.</li><li>Cambie el nombre de la capa para que refleje las responsabilidades del código asociado u otros artefactos.</li></ol> **Importante:**  Al arrastrar los archivos binarios al diagrama de capas no se agregan automáticamente sus referencias al proyecto de modelado. Debe agregar manualmente los archivos binarios que desee validar al proyecto de modelado. **Para agregar archivos binarios al proyecto de modelado** <ol><li>En **el Explorador de soluciones**, abra el menú contextual del proyecto de modelado y, a continuación, elija **Agregar elemento existente**.</li><li>En el **Agregar elemento existente** cuadro de diálogo, busque los archivos binarios, selecciónelos y, a continuación, elija **Aceptar**.     Los archivos binarios aparecen en el proyecto de modelado.</li><li>En **el Explorador de soluciones**, elija un archivo binario que ha agregado y, a continuación, presione **F4** para abrir el **propiedades** ventana.</li><li>En cada archivo binario, establezca el **acción de compilación** propiedad **validar**.</li></ol>|  
 |Crear una única capa para todos los artefactos seleccionados|Arrastre todos los artefactos hasta el diagrama de capas al mismo tiempo.<br /><br /> Aparecerá una capa en el diagrama que estará vinculada a todos los artefactos.|  
-|Crear una capa para cada artefacto seleccionado|Presione y mantenga presionada la **MAYÚS** clave mientras arrastra al mismo tiempo todos los artefactos al diagrama de capas. **Nota:** si usas el **MAYÚS** clave para seleccionar un intervalo de elementos, suelte la tecla después de seleccionar los artefactos. Cuando arrastre los artefactos al diagrama, vuelva a mantener la tecla presionada. <br /><br /> Aparecerá una capa para cada artefacto y cada capa estará vinculada a cada uno de los artefactos.|  
+|Crear una capa para cada artefacto seleccionado|Presione y mantenga presionada la **MAYÚS** clave mientras arrastra al mismo tiempo todos los artefactos al diagrama de capas. **Nota:**  Si usas el **MAYÚS** clave para seleccionar un intervalo de elementos, suelte la tecla después de seleccionar los artefactos. Cuando arrastre los artefactos al diagrama, vuelva a mantener la tecla presionada. <br /><br /> Aparecerá una capa para cada artefacto y cada capa estará vinculada a cada uno de los artefactos.|  
 |Agregar un artefacto a una capa|Arrastre el artefacto hasta la capa.|  
-|Crear una nueva capa que no tenga vínculos|En el **cuadro de herramientas**, expanda el **diagrama de capas** sección y, a continuación, arrastre un **capa** al diagrama de capas.<br /><br /> Para agregar varias capas, haga doble clic en la herramienta. Cuando haya terminado, elija el **puntero** herramientas o presione la **ESC** clave.<br /><br /> O bien<br /><br /> Abra el menú contextual para el diagrama de capas, elija **agregar**y, a continuación, elija **capa**.|  
-|Crear capas anidadas|Arrastre una capa existente a otro nivel.<br /><br /> O bien<br /><br /> Abra el menú contextual de una capa, elija **agregar**y, a continuación, elija **capa**.|  
+|Crear una nueva capa que no tenga vínculos|En el **cuadro de herramientas**, expanda el **diagrama de capas** sección y, a continuación, arrastre un **capa** al diagrama de capas.<br /><br /> Para agregar varias capas, haga doble clic en la herramienta. Cuando haya terminado, elija el **puntero** herramientas o presione la **ESC** clave.<br /><br /> o bien<br /><br /> Abra el menú contextual para el diagrama de capas, elija **agregar**y, a continuación, elija **capa**.|  
+|Crear capas anidadas|Arrastre una capa existente a otro nivel.<br /><br /> o bien<br /><br /> Abra el menú contextual de una capa, elija **agregar**y, a continuación, elija **capa**.|  
 |Crear una nueva capa que contenga dos o más capas existentes|Seleccione las capas, abra el menú contextual de la selección y, a continuación, elija **grupo**.|  
 |Cambiar el color de una capa|Establezca su **Color** propiedad para el color que desee.|  
 |Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
@@ -100,7 +97,7 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
 |**En**|**En el Explorador de capas**|  
 |------------|---------------------------|  
 |Eliminar el vínculo entre la capa y un artefacto|Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **eliminar**.|  
-|Mover el vínculo de una capa a otra|Arrastre el vínculo del artefacto a una capa del diagrama.<br /><br /> O bien<br /><br /> 1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **cortar**.<br />2.  En el diagrama de capas, abra el menú contextual para la capa y, a continuación, elija **pegar**.|  
+|Mover el vínculo de una capa a otra|Arrastre el vínculo del artefacto a una capa del diagrama.<br /><br /> o bien<br /><br /> 1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **cortar**.<br />2.  En el diagrama de capas, abra el menú contextual para la capa y, a continuación, elija **pegar**.|  
 |Copiar el vínculo de una capa a otra|1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **copia**.<br />2.  En el diagrama de capas, abra el menú contextual para la capa y, a continuación, elija **pegar**.|  
 |Crear una nueva capa a partir del vínculo de un artefacto existente|Arrastre el vínculo del artefacto a un espacio en blanco del diagrama.|  
 |Compruebe que el artefacto vinculado admite la validación con el diagrama de capas.|Examine el **admite validación** columna para el vínculo del artefacto.|  
@@ -140,7 +137,7 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
   
 ## <a name="see-also"></a>Vea también  
  [Vídeo de Channel 9: Diseñar y validar la arquitectura mediante diagramas de capas](http://go.microsoft.com/fwlink/?LinkID=252073)   
- [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)   
- [Diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramas de capas: Referencia](../modeling/layer-diagrams-reference.md)   
+ [Diagramas de capas: Directrices](../modeling/layer-diagrams-guidelines.md)   
  [Validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)   
  [Visualizar el código](../modeling/visualize-code.md)

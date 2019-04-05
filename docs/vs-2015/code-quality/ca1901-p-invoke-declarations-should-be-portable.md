@@ -1,14 +1,9 @@
 ---
-title: 'CA1901: Las declaraciones P / Invoke deben ser portátiles | Microsoft Docs'
-ms.custom: ''
+title: 'CA1901: Las declaraciones P / Invoke deben ser portátiles | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1901
 - PInvokeDeclarationsShouldBePortable
@@ -20,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a44e439ecafaa2e89df8cc93c131dbf2abe2dc30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed1385ee914fa8b0df31b360f4a1d8fdc8931332
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987245"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Las declaraciones P/Invoke deben ser portátiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,6 +80,3 @@ internal class NativeMethods{
 
 ## <a name="see-also"></a>Vea también
  [Portability Warnings](../code-quality/portability-warnings.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
-title: 'Tutorial: Usar IntelliTrace | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Uso de IntelliTrace | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc1e2b40e16a14da505243aeb11542df3adfb18d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987861"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Tutorial: Uso de IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
   
 1.  Active el evento de IntelliTrace para el acceso de archivo. Vaya a la página **Herramientas / Opciones / IntelliTrace / Eventos de IntelliTrace** y expanda la categoría **Archivo** . Compruebe la categoría de eventos **Archivo** . Esto hace que se comprueben todos los eventos de archivo (acceso, cierre y eliminación).  
   
-2.  Cree una aplicación de consola de C#. En el archivo Program.cs, agregue la siguiente declaración de `using`:  
+2.  Cree una aplicación de consola de C#. En el archivo Program.cs, agregue la siguiente declaración de `using` :  
   
     ```csharp  
     using System.IO;  
@@ -68,13 +63,13 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
   
      La siguiente captura de pantalla es de Visual Studio 2015 Update 1.  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "Update1 de IntelliTrace")  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
 7.  Selecciónelo para expandir los detalles.  
   
      La siguiente captura de pantalla es de Visual Studio 2015 Update 1.  
   
-     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1 SingleEvent")  
+     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")  
   
      Puede elegir el vínculo de la ruta de acceso para abrirlo. Si la ruta de acceso completa no está disponible, aparece el cuadro de diálogo **Abrir archivo** .  
   
@@ -82,7 +77,7 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
   
      La siguiente captura de pantalla es de Visual Studio 2015 Update 1.  
   
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging Update1")  
+     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
 8.  Si no encontró el error, intente examinar otros eventos que conduzcan al error. También puede hacer que IntelliTrace registre la información de llamadas de forma que pueda examinar las llamadas a función una por una.  
   
@@ -106,9 +101,3 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
     >  Algunas llamadas pueden mostrarse atenuadas. Se debe a que IntelliTrace no registró datos de los módulos correspondientes. Para ver estos datos, haga que IntelliTrace recopile datos de esos módulos. Para obtener información sobre cómo especificar módulos, consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Pasos siguientes
-
-
-
-
-
-

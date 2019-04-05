@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: deshabilitar la activación de direcciones URL de aplicaciones ClickOnce mediante el diseñador | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce mediante el diseñador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,22 +16,22 @@ ms.assetid: a337a582-e67c-409a-b52e-607cd1a8fc57
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 37049ab5c3d696c992cb1d7deca857706f98df92
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3d797b0881ef06d8934df52473ae8178e520f96f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307623"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986888"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Cómo: Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce mediante el diseñador
+# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Filtrar Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce mediante el diseñador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Normalmente, un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación se iniciará automáticamente inmediatamente después de instalarlo desde un servidor Web. Por motivos de seguridad, puede decidir deshabilitar este comportamiento e indicar a los usuarios para iniciar la aplicación desde el **iniciar** menú en su lugar. En el procedimiento siguiente, se describe cómo deshabilitar la activación de URL.  
   
  Esta técnica se puede utilizar solo para las aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instaladas en el equipo del usuario desde un servidor web. No se puede usar para las aplicaciones sólo en línea, que se pueden iniciar utilizando su dirección URL. Para obtener más información sobre la diferencia entre las aplicaciones sólo en línea e instaladas, consulte [elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- Este procedimiento utiliza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. También puede realizar esta tarea mediante el uso de la [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Para obtener más información, consulte [Cómo: deshabilitar la dirección URL de activación de las aplicaciones ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md).  
+ Este procedimiento utiliza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. También puede realizar esta tarea mediante el uso de la [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Para obtener más información, vea [Cómo: Desactivación de la activación de URL de aplicaciones ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md).  
   
 ## <a name="procedure"></a>Procedimiento  
   
@@ -56,6 +51,3 @@ Normalmente, un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicaci�
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
-
-
-

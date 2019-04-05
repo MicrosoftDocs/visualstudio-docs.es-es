@@ -1,27 +1,22 @@
 ---
 title: Cadenas de elemento | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Strings element (VSCT XML schema)
 - VSCT XML schema elements, Strings
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5cc9adc4d13718fc9b0379c73b1892ba14e61d47
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0eae2fd7490269d713beb9950163071dd3ba32f5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789803"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987350"
 ---
 # <a name="strings-element"></a>Strings (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,4 +64,3 @@ El elemento de cadenas debe contener al menos un **ButtonText** elemento secunda
   
 ## <a name="see-also"></a>Vea también  
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

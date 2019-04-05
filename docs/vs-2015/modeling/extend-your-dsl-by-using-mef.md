@@ -1,23 +1,20 @@
 ---
 title: Ampliar DSL mediante MEF | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 3e7be79a-53ab-4d79-863a-bef8d27839bd
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 87b48a1cd5dc791609a2a15d1fcb657b41e9dcc8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987547"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Ampliar DSL mediante MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -250,7 +247,7 @@ namespace MyMefExtension
 ### <a name="gesture-handlers"></a>Controladores de gestos  
  Un controlador de gestos puede tratar con objetos que se arrastran al diagrama desde cualquier lugar dentro o fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En el siguiente ejemplo permite al usuario arrastrar archivos desde el Explorador de Windows al diagrama. Crea los elementos que contienen los nombres de archivo.  
   
- Puede escribir controladores para tratar con arrastra desde otros modelos DSL y modelos UML. Para obtener más información, consulte [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ Puede escribir controladores para tratar con arrastra desde otros modelos DSL y modelos UML. Para obtener más información, vea [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ```  
   
@@ -380,8 +377,5 @@ namespace MefExtension
 ## <a name="see-also"></a>Vea también  
  [Extensiones de Visual Studio de trasvase de registros](../extensibility/shipping-visual-studio-extensions.md)   
  [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
- [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [La validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md)
-
-
-

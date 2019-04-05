@@ -1,25 +1,22 @@
 ---
 title: Personalizar y ampliar lenguajes específicos de dominio | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 ms.assetid: b155eb79-4e0a-4a99-a6f2-ca4f811fb5ca
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dfa174ca228adcd404edb3e91733731f975ed732
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989255"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizar y ampliar lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,14 +58,14 @@ Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios nivele
 |Eliminar, cambiar el valor primario o volver a vincular los elementos relacionados cuando se elimina un elemento.|Establecer el **propaga eliminar** valor de un rol de relación. Para efectos más complejos, invalidar `ShouldVisitRelationship` y `ShouldVisitRolePlayer` métodos en el `MyDslDeleteClosure` (clase), definido en **DomainModel.cs**<br /><br /> Consulte [personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md)|  
 |Conservar el diseño de la forma y la apariencia en la copia y arrastrar y colocar.|Agregar las formas y conectores a copiado `ElementGroupPrototype`. Es el método más cómodo para invalidar `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consulte [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|  
 |Pegar formas en la ubicación elegida, como la posición actual del cursor.|Invalidar `ClipboardCommandSet.ProcessOnCopy()` para usar la versión específica de la ubicación de `ElementOperations.Merge().` vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|  
-|Crear vínculos adicionales al pegar|Invalidar ClipboardCommandSet.ProcessOnPasteCommand()|  
-|Habilitar arrastrar y colocar en este diagrama, otros lenguajes DSL o UML diagramas y elementos de Windows|Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
+|Crear vínculos adicionales al pegar|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
+|Habilitar arrastrar y colocar en este diagrama, otros lenguajes DSL o UML diagramas y elementos de Windows|Vea [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Permitir que una forma o la herramienta y se puedan arrastrar una forma secundaria, como un puerto, como si se arrastró el elemento primario.|Definir una directiva de mezcla de elementos en la clase de objeto de destino, para reenviar el objeto colocado con el elemento primario. Consulte [personalizar la creación de elemento y movimiento](../modeling/customizing-element-creation-and-movement.md).|  
 |Permiten una forma o una herramienta que se puedan arrastrar una forma y hacer que los vínculos adicionales o los objetos creados. Por ejemplo, para permitir un comentario que se pueden colocar en un elemento al que está vinculado.|Definir una directiva de mezcla de elementos en la clase de dominio de destino y definir los vínculos que se genere. En casos complejos, puede agregar código personalizado. Consulte [personalizar la creación de elemento y movimiento](../modeling/customizing-element-creation-and-movement.md).|  
 |Cree un grupo de elementos con una herramienta. Por ejemplo, un componente con un conjunto fijo de puertos.|Invalide el método de inicialización del cuadro de herramientas de ToolboxHelper.cs. Crear un prototipo de grupo del elemento (EGP) que contiene los elementos y sus vínculos de relación. Consulte [personalizar las herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Incluya las formas de entidad de seguridad y el puertos en el EGP o definir elemento BoundsRules para colocar las formas de puerto cuando se crea una instancia de EGP. Consulte [de formas Boundsrules ubicación y tamaño](../modeling/boundsrules-constrain-shape-location-and-size.md).|  
 |Usar una herramienta de conexión para crear instancias de varios tipos de relación.|Agregar directivas de conectar vínculo (LCD) a la que se invoca mediante la herramienta Generador de conexiones. Los paneles LCD determinan el tipo de la relación entre los tipos de los dos elementos. Para facilitar esta dependen de los Estados de los elementos, puede agregar código personalizado. Consulte [personalizar las herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md).|  
 |Herramientas rápidas: el usuario hacer doble clic en cualquier herramienta para crear muchas formas o conectores en sucesión.|En el Explorador de DSL, seleccione el `Editor` nodo. En la ventana Propiedades, establezca **usa elementos de cuadro de herramientas rápidas**.|  
-|Definir comandos de menú|Vea [Cómo: modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
+|Definir comandos de menú|Vea [Cómo: Modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
 |Restringir el modelo con las reglas de validación|Consulte [validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md)|  
 |Generar código, archivos de configuración o documentos desde un DSL.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Personalizar cómo los modelos se guardan en el archivo.|Consulte [personalizar el almacenamiento de archivo y la serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
@@ -81,6 +78,3 @@ Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios nivele
  [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Modelar el SDK de Visual Studio: lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-
-

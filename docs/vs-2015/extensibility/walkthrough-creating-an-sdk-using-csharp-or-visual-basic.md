@@ -1,26 +1,21 @@
 ---
-title: 'Tutorial: Crear un SDK usando C# o Visual Basic | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Crear un SDK usando C# o Visual Basic | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0bc88c8581b29f43e7efc55ee86019e1f1c3fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736761"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002980"
 ---
-# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Tutorial: Creación de un SDK con C# o Visual Basic
+# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Tutorial: Crear un SDK con C# o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca matemática simple mediante Visual C# y, a continuación, incluir el SDK como una extensión de Visual Studio (VSIX). Deberá completar los siguientes procedimientos:  
@@ -120,7 +115,7 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
   
 22. En **el Explorador de soluciones**, elija **SimpleMath.winmd**.  
   
-23. En la barra de menús, elija **vista**, **propiedades** (teclado: presione la tecla F4).  
+23. En la barra de menús, elija **vista**, **propiedades** (teclado: Presione la tecla F4).  
   
 24. En el **propiedades** ventana, cambie el **acción de compilación** propiedad **contenido**y, a continuación, cambie el **incluir en VSIX** propiedad  **True**.  
   
@@ -179,7 +174,6 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
     Ha creado y utilizado un SDK de extensión.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Crear un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Tutorial: Crear un SDK con JavaScript](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [Tutorial: Creación de un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [Tutorial: Creación de un SDK con JavaScript](walkthrough-creating-an-sdk-using-javascript.md)   
  [Creación de un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)
-

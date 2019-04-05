@@ -1,26 +1,23 @@
 ---
 title: Diseñadores de actividades primitivas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 8fe81e57ed9eff699cf70f2e4fa613b0a0683f2f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ed26f1522913c0a8b395a0c058f73f66843eb1df
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197722"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "59002165"
 ---
 # <a name="primitives-activity-designers"></a>Diseñadores de actividades primitivas
-Los diseñadores de actividades de tipos primitivos se usan para crear y configurar diversas actividades en el espacio de nombres <xref:System.Activities>, como por ejemplo, Assign y Delay. Los temas en esta sección ofrecen orientación sobre cómo utilizar los diseñadores de actividades y de plantillas de [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
+Los diseñadores de actividades de tipos primitivos se usan para crear y configurar diversas actividades en el espacio de nombres <xref:System.Activities.Statements>, como por ejemplo, Assign y Delay. Los temas en esta sección ofrecen orientación sobre cómo utilizar los diseñadores de actividades y de plantillas de [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Assign](../workflow-designer/assign-activity-designer.md)  
@@ -52,5 +49,6 @@ Los diseñadores de actividades de tipos primitivos se usan para crear y configu
   
  [Control de errores](../workflow-designer/error-handling-activity-designers.md)  
   
-## <a name="see-also"></a>Vea también  
- [Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
+## <a name="see-also"></a>Vea también
+
+-[Mediante los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)

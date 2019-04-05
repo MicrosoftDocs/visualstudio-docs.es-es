@@ -1,27 +1,22 @@
 ---
 title: Solucionar problemas de VSPackages | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16988915c9e8353cfc26f32e7d83c556c7f4957d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764008"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002613"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
   
 3.  Compruebe las entradas del registro de VSPackage.  
   
-     Para obtener más información, consulte [registrar VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) y [administrar VSPackages](../extensibility/managing-vspackages.md).  
+     Para obtener más información, consulte [registrar VSPackages](internals/registering-vspackages.md) y [administrar VSPackages](../extensibility/managing-vspackages.md).  
   
 4.  Abra el **salida** ventana de la instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que no se puede cargar el VSPackage. Información sobre por qué se puede cargar el VSPackage puede mostrarse en esa ventana.  
   
@@ -57,7 +52,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
   
 5.  Examine el registro de actividad.  
   
-     Para obtener más información, consulte [Cómo: usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
+     Para obtener más información, vea [Cómo: Usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
   
 6.  Para obtener más información acerca de las excepciones producidas por el IDE, haga clic en **excepciones** en el **depurar** menú para habilitar las excepciones. En el **excepciones** cuadro de diálogo Seleccionar los tipos de excepciones sobre la que desea obtener más información.  
   
@@ -73,7 +68,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
   
     1.  Buscar el CLSID del VSPackage en la sección de paquetes del registro:  
   
-         Studio HKLM\Software\Microsoft\Visual\\*\<versión >* \Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages  
   
     2.  Compruebe que la ruta de acceso proporcionado por la subclave SatelliteDll es correcta.  
   
@@ -96,7 +91,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
   
 2.  Utilice el registro de actividad.  
   
-     Seguimiento VSPackage comportamiento escribiendo información en el registro de actividad en los puntos clave. Esta técnica es especialmente útil cuando se ejecuta un paquete VSPackage en un entorno minorista. Para obtener más información, consulte [Cómo: usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
+     Seguimiento VSPackage comportamiento escribiendo información en el registro de actividad en los puntos clave. Esta técnica es especialmente útil cuando se ejecuta un paquete VSPackage en un entorno minorista. Para obtener más información, vea [Cómo: Usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Usar símbolos públicos.  
   
@@ -126,10 +121,9 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
   
 2. Para código no administrado, busque el CLSID del VSPackage en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nodo de registro CLSID:  
   
-    Studio HKLM\Software\Microsoft\Visual\\*\<versión >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
   
    Asegúrese de que la entrada InprocServer32 tiene la ruta de acceso correcta del archivo dll de VSPackage.  
   
 ## <a name="see-also"></a>Vea también  
  [VSPackages](../extensibility/internals/vspackages.md)
-

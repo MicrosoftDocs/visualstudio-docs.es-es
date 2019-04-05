@@ -1,11 +1,8 @@
 ---
 title: Cuadro de diálogo de definición de CorrelatesOn | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - CorrelatesOnDefinition.UI
@@ -13,13 +10,13 @@ ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 3171efb985eec54d0e935d2e8499c69631c6dfc8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fd03e1a8615e75d3f00f79eb10b7a7ff97f0eb33
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285823"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002804"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Definición CorrelatesOn (cuadro de diálogo)
 El **CorrelatesOn** cuadro de diálogo se usa en [!INCLUDE[wfd1](../includes/wfd1-md.md)] para editar el <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> propiedad de un <xref:System.ServiceModel.Activities.Receive> actividad. [!INCLUDE[crdefault](../includes/crdefault-md.md)] el [recepción](../workflow-designer/receive-activity-designer.md) tema.  
@@ -39,5 +36,4 @@ El **CorrelatesOn** cuadro de diálogo se usa en [!INCLUDE[wfd1](../includes/wfd
 ## <a name="see-also"></a>Vea también  
  <xref:System.ServiceModel.Activities.Receive>   
  [Agregar cuadro de diálogo CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md)   
- [Agregar cuadro de diálogo de correlación](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)   
  [Cuadro de diálogo Inicializar correlación](../workflow-designer/initialize-correlation-dialog-box.md)

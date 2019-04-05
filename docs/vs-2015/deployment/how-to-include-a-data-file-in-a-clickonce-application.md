@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: incluir un archivo de datos en una aplicación ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Incluir un archivo de datos en una aplicación ClickOnce | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8868ef00c9d7ffee7687970c5a09b6a044c85455
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884919"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987859"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Cómo: Incluir un archivo de datos en una aplicación ClickOnce
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Filtrar Incluir un archivo de datos en una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cada [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que se instala se asigna a un directorio de datos en el disco local del equipo de destino donde la aplicación puede administrar sus propios datos. Los archivos de datos pueden incluir cualquier tipo de archivo: archivos de texto, archivos XML o incluso archivos de base de datos (.mdb) de Microsoft Access. Los procedimientos siguientes muestran cómo agregar un archivo de datos de cualquier tipo en su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación.  
@@ -42,7 +37,7 @@ Cada [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que se i
   
 2. Actualice el manifiesto de aplicación a la lista el archivo de datos.  
   
-    **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
+    **mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0**  
   
     Llevar a cabo esta tarea vuelve a crea la lista de archivos en el manifiesto de aplicación y también genera automáticamente las firmas hash.  
   
@@ -60,11 +55,11 @@ Cada [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que se i
   
     Deberá volver a firmar el manifiesto de implementación porque ha cambiado su hash del manifiesto de aplicación.  
   
-    **manifiesto de aplicación de -s de Mage cf - cert_file pwd - contraseña**  
+    **mage -s app manifest -cf cert_file -pwd password**  
   
-    **manifiesto de la aplicación de appm - manifiesto de implementación Mage -u**  
+    **mage -u deployment manifest -appm app manifest**  
   
-    **manifiesto de implementación de -s de Mage cf - certfile pwd - contraseña**  
+    **mage -s deployment manifest -cf certfile -pwd password**  
   
 6. 
   
@@ -94,6 +89,3 @@ Cada [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que se i
   
 ## <a name="see-also"></a>Vea también  
  [Obtener acceso local o remoto a los datos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
-
-
-

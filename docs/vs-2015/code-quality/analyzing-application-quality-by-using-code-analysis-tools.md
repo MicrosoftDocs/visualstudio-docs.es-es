@@ -1,14 +1,9 @@
 ---
 title: Analizar la calidad de la aplicación mediante herramientas de análisis de código | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.analysisresults
 helpviewer_keywords:
@@ -20,12 +15,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e2dd66668efcba5264cc3a3646b627ec9be99e63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83fbe8b372d021e0cec4faccfd0b22fcaa8af30d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216703"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002429"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analizar la calidad de la aplicación mediante herramientas de análisis del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +39,13 @@ En esta sección
  Corrija errores en la funcionalidad de análisis de código.  
   
  [Mejorar la calidad del código con directivas de protección del proyecto de equipo](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)  
- Al usar el control de versiones de Team Foundation (TFVC), pueden crearse directivas de inserción en el repositorio para los proyectos de equipo que apliquen procedimientos que mejoren tanto el código como la eficacia de desarrollo del grupo. Las directivas de protección son reglas que se establecen en el nivel del proyecto de equipo y cuya implantación es obligatoria en los equipos de los desarrolladores antes de que el código pueda protegerse.  
+ Al usar el control de versiones de Team Foundation (TFVC), pueden crearse directivas de protección para los proyectos de equipo que apliquen procedimientos que mejoren tanto el código como la eficacia de desarrollo del grupo. Las directivas de protección son reglas que se establecen en el nivel del proyecto de equipo y cuya implantación es obligatoria en los equipos de los desarrolladores antes de que el código pueda protegerse.  
   
 ### <a name="code-analysis-for-drivers"></a>Análisis de código para controladores  
  Las herramientas de análisis de código pueden ayudar a mejorar la estabilidad y confiabilidad del controlador analizando sistemáticamente el código fuente del controlador.  
   
- [Analizar la calidad del controlador mediante herramientas de análisis de código](http://go.microsoft.com/fwlink/?LinkId=227618)  
- El análisis de código para controladores (Code Analysis for Drivers) es una herramienta de comprobación estática en tiempo de compilación que detecta errores básicos de codificación en programas de C y C++ e incluye un módulo especializado diseñado para detectar errores en el código del controlador en modo kernel (principalmente). El comprobador de controladores estático (Static Driver Verifier, SDV) es una herramienta de comprobación estática que analiza sistemáticamente el código fuente de los controladores en modo kernel de Windows. El SDV determina si el controlador interactúa correctamente con el kernel del sistema operativo de Windows.  
+ [Analizar la calidad del controlador mediante herramientas de análisis de código](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)  
+ Análisis de código para controladores es una herramienta de comprobación estática en tiempo de compilación que detecta errores en programas de C y C++ básico de codificación e incluye un módulo especializado que está diseñado para detectar errores en el código del controlador modo kernel (principalmente). El comprobador de controladores estático (Static Driver Verifier, SDV) es una herramienta de comprobación estática que analiza sistemáticamente el código fuente de los controladores en modo kernel de Windows. El SDV determina si el controlador interactúa correctamente con el kernel del sistema operativo de Windows.  
   
  [Análisis de código para advertencias de controladores](http://go.microsoft.com/fwlink/?LinkId=225920)  
  Describe las advertencias que Code Analysis for Drivers notifica cuando detecta un posible error en el código del controlador.  
@@ -61,6 +56,3 @@ En esta sección
   
  [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)  
  Inserte la descripción aquí.
-
-
-

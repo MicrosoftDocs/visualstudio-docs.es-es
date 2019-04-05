@@ -1,27 +1,22 @@
 ---
 title: Parámetro de ensamblado de interoperabilidad de Visual Studio el cálculo de referencias | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195024"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987107"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Serialización de parámetros de ensamblado de interoperabilidad de Visual Studio
 Los VSPackages que están escritos en código administrado que tenga que llamar o llamar a código COM no administrado. Normalmente, argumentos de método se transforman o serializar automáticamente por el serializador de interoperabilidad. Sin embargo, en ocasiones, no se puede transformar los argumentos de una manera sencilla. En esos casos, se usan los parámetros del prototipo de método de ensamblado de interoperabilidad para que coincida con los parámetros de función COM lo máximo posible. Para obtener más información, consulte [interoperativo](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -128,7 +123,7 @@ else
  Métodos administrados que llaman a las interfaces de este tipo deben extraer el primer elemento de la matriz [out]. Este elemento se puede tratar como si fuese un `retval` devolver valor de la interfaz COM correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
- [Serialización de interoperabilidad](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Serialización de interoperabilidad](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Serialización de interoperabilidad](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [Solucionar problemas de interoperabilidad](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [VSPackages administrado](../misc/managed-vspackages.md)

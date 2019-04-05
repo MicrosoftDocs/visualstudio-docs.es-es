@@ -1,14 +1,9 @@
 ---
 title: Admite los cambios de código (C++) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,23 +13,23 @@ helpviewer_keywords:
 - Edit and Continue, limitations
 - supported code changes
 - object files, limitations of Edit and Continue
-- C# language, supported code changes
+- C++ language, supported code changes
 - coding, supported code changes
 - resource files, limitations of Edit and Continue
 - code changes, handling in Edit and Continue
-- what's new [C#], supported code changes
+- what's new [C++], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a68ad4add5f8c08e00067c903d5ba3946ca14538
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7dce0cd8d527f165c91c9133c6cb8025b8f4fd44
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797980"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002796"
 ---
 # <a name="supported-code-changes-c"></a>Cambios admitidos en el código (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,8 @@ Con Visual C++, Editar y continuar controla la mayoría de los tipos de cambios 
  Consulte [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) para obtener información sobre el uso de Editar y continuar para C++ en Visual Studio.  
   
 ##  <a name="BKMK_Unsupported_changes"></a> Cambios no admitidos  
- Los cambios siguientes en C/C++ no se pueden aplicar durante una sesión de depuración:  
+
+Los cambios siguientes en C/C++ no se pueden aplicar durante una sesión de depuración:  
   
 - La mayoría de los cambios en datos globales o estáticos.  
   
@@ -68,7 +64,7 @@ Con Visual C++, Editar y continuar controla la mayoría de los tipos de cambios 
   
 - Cambios en código que no tiene un archivo de objeto.  
   
-  Si realiza alguno de estos cambios y, a continuación, intenta aplicarlos, aparecerá un mensaje de error o advertencia en la **Ventana de salida** .  
+Si realiza alguno de estos cambios y, a continuación, intenta aplicarlos, aparecerá un mensaje de error o advertencia en la **Ventana de salida** .  
   
 - Editar y continuar no vuelve a actualizar las bibliotecas estáticas. Si realiza un cambio en una biblioteca estática, la ejecución continuará con la versión anterior y no se emitirá ninguna advertencia.  
   
@@ -149,6 +145,3 @@ Con Visual C++, Editar y continuar controla la mayoría de los tipos de cambios 
   
 ## <a name="see-also"></a>Vea también  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
-
-
-

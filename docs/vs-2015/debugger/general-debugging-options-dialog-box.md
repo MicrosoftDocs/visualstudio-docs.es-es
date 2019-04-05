@@ -1,14 +1,9 @@
 ---
 title: General, depuración, cuadro de diálogo Opciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.options.General
 - VS.ToolsOptionsPages.Debugger.General
@@ -26,13 +21,13 @@ ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e3a9e0b8008da5b648ae156235a20964fc0952b1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742778"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59001919"
 ---
 # <a name="general-debugging-options-dialog-box"></a>General, Depuración, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51742778"
 El**herramientas / opciones / depuración / General** página permite establecer las siguientes opciones:  
   
  **Preguntar antes de eliminar todos los puntos de interrupción**  
- Requiere una confirmación antes de completar la **eliminar todos los puntos de interrupción** comando.  
+ Requiere confirmación antes de ejecutar el comando **Eliminar todos los puntos de interrupción**.  
   
  **Interrumpir todos los procesos cuando se interrumpa uno**  
  Interrumpe simultáneamente todos los procesos a los que está asociado el depurador cuando se produce una interrupción.  
@@ -50,14 +45,14 @@ El**herramientas / opciones / depuración / General** página permite establecer
   
  1\) cuando código nativo llama a código administrado mediante la interoperabilidad COM y el código administrado produce una excepción. Consulte [Introducción a la interoperabilidad COM](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) al código administrado que se ejecuta en el dominio de aplicación 1 llama a código administrado en el dominio de aplicación 2 y el código en el dominio de aplicación 2 produce una excepción. Consulte [programar con dominios de aplicación](http://msdn.microsoft.com/en-us/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2\) al código administrado que se ejecuta en el dominio de aplicación 1 llama a código administrado en el dominio de aplicación 2 y el código en el dominio de aplicación 2 produce una excepción. Consulte [programar con dominios de aplicación](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
  3\) al código llama a una función mediante la reflexión y la función produce una excepción. Consulte [reflexión](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  En los casos 2) y 3), el código administrado de `mscorlib` a veces detecta la excepción, en lugar de Common Language Runtime. Esta opción no afecta a la interrupción en excepciones detectadas por `mscorlib`.  
   
  **Habilitar la depuración de nivel de dirección**  
- Habilita las características avanzadas para la depuración en el nivel de dirección (el **desensamblado** ventana, el **registra** ventana y los puntos de interrupción de dirección).  
+ Habilita las características avanzadas para la depuración en el nivel de dirección (ventana **Desensamblado**, ventana **Registros** y puntos de interrupción de dirección).  
   
  **Mostrar desensamblado si el origen no está disponible**  
  Muestra automáticamente el **desensamblado** ventana cuando se intenta depurar código cuyo código fuente no está disponible.  
@@ -69,7 +64,7 @@ El**herramientas / opciones / depuración / General** página permite establecer
  Solo para código administrado. Las excepciones administradas abren el cuadro de diálogo Asistente de excepciones.  Consulte [Asistente de excepciones](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
   
  **Desenredar la pila de llamadas en las excepciones no controladas**  
- Hace que el **pila de llamadas** ventana para revertir la pila de llamadas al punto antes de que se produjo la excepción no controlada.  
+ Hace que la ventana **Pila de llamadas** revierta la pila de llamadas hasta el punto anterior en el que se produjo la excepción no controlada.  
   
  **Habilite Solo mi código**  
  El depurador solo muestra y accede al código de usuario ("Mi código"), y pasa por alto el código de sistema u otro código optimizado o que no tenga símbolos de depuración.  
@@ -87,7 +82,7 @@ El**herramientas / opciones / depuración / General** página permite establecer
  Impide que el depurador ejecute paso a paso las propiedades y operadores en código administrado.  
   
  **Habilitar evaluación de propiedades y otras llamadas a función implícitas**  
- Llama activa la evaluación automática de propiedades y funciones implícitas en ventanas de variables y **Inspección rápida** cuadro de diálogo.  
+ Activa la evaluación automática de propiedades y de llamadas a funciones implícitas en ventanas de variables y en el cuadro de diálogo **Inspección rápida**.  
   
  **Llamar a la función de conversión de cadenas en objetos en ventanas de variables (C# y JavaScript solo)**  
  Ejecuta una llamada de conversión de cadena implícita al evaluar objetos en ventanas de variables. Por lo tanto, el resultado se muestra como una cadena en lugar del nombre de tipo. Solo se aplica mientras se lleva a cabo la depuración en código C#. Este valor puede reemplazarse por el atributo DebuggerDisplay (consulte [utilizando el atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
@@ -111,7 +106,7 @@ El**herramientas / opciones / depuración / General** página permite establecer
  Indica al depurador que compruebe que un archivo de código fuente coincide con la versión del código fuente utilizada para compilar el archivo ejecutable que se está depurando. Si la versión no coincide, se solicitará que busque el archivo de código fuente correspondiente. Si no se encuentra este archivo, el código fuente no se mostrará durante la depuración.  
   
  **Redirigir el texto de la ventana de salida a la ventana Inmediato**  
- Envía todos los mensajes del depurador que normalmente la **salida** ventana a la **inmediato** ventana en su lugar.  
+ Envía a la ventana **Inmediato** todos los mensajes del depurador que normalmente irían a la ventana **Salida**.  
   
  **Mostrar la estructura de los objetos en ventanas de variables**  
  Desactiva todas las personalizaciones de vistas de estructuras de objetos. Para obtener más información acerca de las personalizaciones de vistas, consulte [crear vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-dot-managed-objects.md).  
@@ -128,10 +123,10 @@ El**herramientas / opciones / depuración / General** página permite establecer
  **Cargar exportaciones de dll**  
  Carga las tablas de exportación de archivos DLL. La información de símbolos de las tablas de exportación de archivos DLL puede resultar útil si se trabaja con mensajes de Windows, procedimientos de Windows (WindowProc), objetos COM, cálculo de referencias o cualquier archivo DLL para el que no disponga de símbolos. La lectura de la información de exportación de archivos DLL implica cierta sobrecarga. Por lo tanto, esta funcionalidad está desactivada de forma predeterminada.  
   
- Para ver los símbolos que están disponibles en la tabla de exportación de un archivo DLL, utilice `dumpbin /exports`. Los símbolos están disponibles para cualquier archivo DLL de sistema de 32 bits. Si lee el resultado de `dumpbin /exports`, podrá ver el nombre exacto de la función, incluidos los caracteres no alfanuméricos. Esto resulta útil para establecer un punto de interrupción en una función. Los nombres de función procedentes de tablas de exportación de archivos DLL pueden aparecer truncados en otras partes del depurador. Las llamadas se muestran en una lista según el orden de llamada, y la función actual (la que está anidada a mayor profundidad) aparece en la parte superior. Para obtener más información, vea [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Para ver los símbolos que están disponibles en la tabla de exportación de un archivo DLL, utilice `dumpbin /exports`. Los símbolos están disponibles para cualquier archivo DLL de sistema de 32 bits. Si lee el resultado de `dumpbin /exports` , podrá ver el nombre exacto de la función, incluidos los caracteres no alfanuméricos. Esto resulta útil para establecer un punto de interrupción en una función. Los nombres de función procedentes de tablas de exportación de archivos DLL pueden aparecer truncados en otras partes del depurador. Las llamadas se muestran en una lista según el orden de llamada, y la función actual (la que está anidada a mayor profundidad) aparece en la parte superior. Para obtener más información, vea [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Mostrar diagrama de pilas paralelas abajo a arriba**  
- Controla la dirección en que se muestran las pilas en la **pilas paralelas** ventana.  
+ Controla la dirección en la que las pilas se muestran en la ventana **Pilas paralelas**.  
   
  **Omitir las excepciones de acceso de memoria GPU si los datos escritos no modificaron el valor**  
  Omite las condiciones de carrera que se detectaron durante la depuración si los datos no cambiaron. Para obtener más información, consulte [depurar código de GPU](../debugger/debugging-gpu-code.md).  
@@ -163,13 +158,13 @@ El**herramientas / opciones / depuración / General** página permite establecer
   Aparecerán las ventanas Árbol visual dinámico y Explorador de propiedades dinámico al iniciar la depuración (F5) de un tipo de proyecto compatible. Para obtener más información, consulte [propiedades XAML inspeccionar durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md).  
   
   **Obtener una vista previa de los elementos seleccionados en el árbol Visual dinámico**  
-  También se selecciona el elemento XAML cuyo contexto está seleccionado en el **Live Visual Tree** ventana.  
+  También se selecciona en el **árbol visual dinámico** el elemento XAML cuyo contexto está seleccionado.  
   
   **Mostrar herramientas de tiempo de ejecución de aplicación**  
   Muestra el **Live Visual Tree** comandos en una barra de herramientas en la ventana principal de la aplicación XAML que se está depurando. Esta opción se introdujo en Visual Studio 2015 Update 2.  
   
   **Habilitar herramientas de diagnóstico durante la depuración**  
-  El **herramientas de diagnóstico** ventana aparece durante la depuración. Para obtener más información, consulte [integradas del depurador de generación de perfiles](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  Durante la depuración, se abre la ventana de **Herramientas de diagnóstico**. Para obtener más información, consulte [integradas del depurador de generación de perfiles](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
   **Mostrar PerfTip de tiempo transcurrido durante la depuración**  
   La ventana de código muestra el tiempo transcurrido de una determinada llamada de método durante la depuración.  
@@ -183,7 +178,7 @@ El**herramientas / opciones / depuración / General** página permite establecer
   **Aplicar cambios al continuar (solo nativo)**  
   Al continuar el proceso desde un estado de interrupción, Visual Studio compila y aplica los cambios de código pendientes realizados automáticamente. Si no está seleccionada, puede aplicar los cambios con el elemento "Aplicar cambios en el código" en el menú Depurar.  
   
-  **Advertir sobre código obsoleto (solo nativo)**  
+  **Advertir sobre el código obsoleto (solo nativo)**  
   Obtenga advertencias sobre código obsoleto.  
   
   **Permitir precompilación (solo nativo)**  
@@ -191,6 +186,3 @@ El**herramientas / opciones / depuración / General** página permite establecer
   
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

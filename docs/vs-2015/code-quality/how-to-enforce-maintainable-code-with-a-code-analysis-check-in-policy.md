@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: exigir código mantenible con una directiva de protección de análisis de código | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Exigir código mantenible con una directiva de protección de análisis de código | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
@@ -16,14 +11,14 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3ef282bf1b19cb2d72075619539921cdb88d08f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5676bfaabb20ebf6dabea7bae66527d17891b362
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174856"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986751"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Cómo: Exigir código mantenible con una directiva de protección de los análisis de código
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Filtrar Exigir código de mantenimiento con una directiva de protección de análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los desarrolladores pueden usar la herramienta de métricas de código para medir la complejidad y el mantenimiento de su código, pero las métricas del código no pueden invocar como parte de una directiva de protección. Sin embargo, un equipo puede habilitar las reglas de análisis de código que comprueban el cumplimiento de su código con los estándares de las métricas del código y aplican las reglas mediante las directivas de protección. Para obtener más información acerca de las métricas de código, vea el [valores de las métricas de código](../code-quality/code-metrics-values.md).  
@@ -52,13 +47,13 @@ Los desarrolladores pueden usar la herramienta de métricas de código para medi
   
 2.  Seleccione las casillas de las reglas siguientes:  
   
-    -   Profundidad de herencia: **CA1501 AvoidExcessiveInheritance** -umbral: advertencia en más de 5 niveles de profundidad  
+    -   Profundidad de herencia: **CA1501 AvoidExcessiveInheritance** -umbral: Advertencia en más de 5 niveles de profundidad  
   
-    -   Complejidad: **AvoidExcessiveComplexity CA1502** -umbral: advertencia en más de 25  
+    -   Complejidad: **CA1502 AvoidExcessiveComplexity** -umbral: Advertencia en más de 25  
   
-    -   Índice de mantenimiento: **AvoidUnmaintainableCode CA1505** -umbral: advertencia a menos de 20  
+    -   Índice de mantenimiento: **CA1505 AvoidUnmaintainableCode** -umbral: Advertencia a menos de 20  
   
-    -   El acoplamiento de clases: **AvoidExcessiveClassCoupling CA1506** -umbral: advertencia en más de 80 para una clase y más de 30 para un método  
+    -   Acoplamiento de clases: **CA1506 AvoidExcessiveClassCoupling** -umbral: Advertencia en más de 80 para una clase y más de 30 para un método  
   
     -   Además, si desea que una infracción de regla para evitar que una compilación, seleccione el **Tratar advertencia como un Error** casilla de verificación situada junto a la descripción de la regla.  
   
@@ -67,6 +62,3 @@ Los desarrolladores pueden usar la herramienta de métricas de código para medi
 ## <a name="see-also"></a>Vea también  
  [Valores de las métricas de código](../code-quality/code-metrics-values.md)   
  [Crear y usar directivas de protección del análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
-
-
-

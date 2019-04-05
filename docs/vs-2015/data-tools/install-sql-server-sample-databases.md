@@ -1,22 +1,20 @@
 ---
 title: Instalar bases de datos de ejemplo de SQL Server | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 38840167-c3f8-4cb3-8d15-8af04a0a20a1
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f6cd9260f29d8e46f66e54fec8cb24ae6857eb05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 2fc172e9ed91a354918fd536060f97fcbb259a94
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217868"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988701"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalar bases de datos de ejemplo de SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,4 +64,3 @@ Las bases de datos son útiles para experimentar con consultas SQL y LINQ, enlac
 2.  En SSMS **Explorador de objetos** ventana, haga clic en el **bases de datos** nodo, seleccione**Restore Database**y proporcionar la ubicación del archivo .bak.  
   
      ![Restaurar base de datos SSMS](../data-tools/media/raddata-ssms-restore-database.png "raddata SSMS Restaurar base de datos")
-

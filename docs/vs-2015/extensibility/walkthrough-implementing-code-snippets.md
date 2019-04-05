@@ -1,26 +1,21 @@
 ---
-title: 'Tutorial: Implementación de fragmentos de código | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Implementación de fragmentos de código | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84ac1787e4905859eb3539c04dee3125a14e0617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752062"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988245"
 ---
-# <a name="walkthrough-implementing-code-snippets"></a>Tutorial: Implementación de fragmentos de código
+# <a name="walkthrough-implementing-code-snippets"></a>Tutorial: Implementar fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede crear fragmentos de código e incluirlos en una extensión del editor para que los usuarios de la extensión pueden agregarlas a su propio código.  
@@ -37,7 +32,7 @@ Puede crear fragmentos de código e incluirlos en una extensión del editor para
   
 3. Implementar la expansión del fragmento de código.  
   
-   En este tutorial se basa en [Tutorial: mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md).  
+   En este tutorial se basa en [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -49,7 +44,7 @@ Puede crear fragmentos de código e incluirlos en una extensión del editor para
   
 1. Cree la siguiente estructura de directorios:  
   
-    **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
+    **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
     donde *% InstallDir %* es la carpeta de instalación de Visual Studio. (Aunque esta ruta de acceso se utiliza normalmente para instalar fragmentos de código, puede especificar cualquier ruta de acceso).  
   
@@ -116,7 +111,7 @@ Puede crear fragmentos de código e incluirlos en una extensión del editor para
   
 #### <a name="to-register-code-snippets-for-a-specific-guid"></a>Para registrar los fragmentos de código para un GUID específico  
   
-1.  Abra el **CompletionTest** proyecto. Para obtener información sobre cómo crear este proyecto, vea [Tutorial: mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Abra el **CompletionTest** proyecto. Para obtener información sobre cómo crear este proyecto, vea [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  En el proyecto, agregue referencias a los ensamblados siguientes:  
   
@@ -124,7 +119,7 @@ Puede crear fragmentos de código e incluirlos en una extensión del editor para
   
     -   Microsoft.VisualStudio.TextManager.Interop.8.0  
   
-    -   Microsoft.MSXML  
+    -   microsoft.msxml  
   
 3.  En el proyecto, abra el archivo source.extension.vsixmanifest.  
   
@@ -254,4 +249,3 @@ Puede crear fragmentos de código e incluirlos en una extensión del editor para
 7.  En una parte distinta del texto, escriba "test" y, a continuación, presione la tecla TAB. Debido a "test" es el método abreviado de fragmento de código, se debe insertar el fragmento de código nuevo.  
   
 ## <a name="next-steps"></a>Pasos siguientes
-

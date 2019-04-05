@@ -1,45 +1,38 @@
 ---
 title: Depuración de XSLT | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4d33096e1c76172622fc080dc23bc80d3a01d3cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3e190af751e125a65e4e6e3ed56166aa39f631c1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198749"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002861"
 ---
-# <a name="debugging-xslt"></a>Depuración de XSLT
+# <a name="debug-xslt"></a>Depurar XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede utilizar el depurador de Visual Studio para depurar XSLT. El depurador admite la definición de puntos de interrupción, la visualización de los estados de ejecución de XSLT, etc. La depuración de XSLT se encuentra disponible en Visual Studio Team System y Professional Edition.  
+Puede utilizar el depurador de Visual Studio para depurar XSLT. El depurador admite la definición de puntos de interrupción, la visualización de los estados de ejecución de XSLT, etc. Depuración XSLT está disponible en las ediciones de Visual Studio Professional.  
   
-## <a name="in-this-section"></a>En esta sección  
- [Novedades del depurador XSLT](../xml-tools/what-s-new-in-the-xslt-debugger.md)  
- Describe las nuevas características del producto incluidas en esta versión del depurador XSLT.  
+## <a name="in-this-section"></a>En esta sección
   
- [Cómo: Iniciar la depuración de XSLT](../xml-tools/how-to-start-debugging-xslt.md)  
+ [Cómo: Inicio de la depuración de XSLT](../xml-tools/how-to-start-debugging-xslt.md)  
  Describe cómo iniciar el depurador de XSLT.  
   
- [Cómo: Usar puntos de interrupción con XSLT](../xml-tools/how-to-use-breakpoints-with-xslt.md)  
+ [Cómo: Uso de puntos de interrupción con XSLT](../xml-tools/how-to-use-breakpoints-with-xslt.md)  
  Describe cómo utilizar puntos de interrupción en una hoja de estilos.  
   
- [Cómo: Evaluar una expresión XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
+ [Cómo: Evaluación de una expresión XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
  Describe cómo evaluar una expresión XPath que utiliza el **Inspección rápida** cuadro de diálogo.  
   
- [Tutorial: Depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
+ [Tutorial: Depuración de una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
  Demuestra cómo depurar una hoja de estilos XSLT.  
   
  [Plantillas predeterminadas XSLT](../xml-tools/xslt-default-templates.md)  
@@ -61,6 +54,5 @@ Puede utilizar el depurador de Visual Studio para depurar XSLT. El depurador adm
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)  
  Presenta el depurador de Visual Studio.  
   
- [Referencia de XSLT](http://msdn.microsoft.com/en-us/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [Referencia de XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  Proporciona material de referencia para elementos y funciones XSLT.
-

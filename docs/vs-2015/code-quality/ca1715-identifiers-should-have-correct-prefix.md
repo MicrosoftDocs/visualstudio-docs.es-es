@@ -1,14 +1,9 @@
 ---
-title: 'CA1715: Los identificadores deberían tener el prefijo correcto | Microsoft Docs'
-ms.custom: ''
+title: 'CA1715: Los identificadores deberían tener el prefijo correcto | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1715
 - IdentifiersShouldHaveCorrectPrefix
@@ -20,17 +15,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e0e3d1290f95872c176447fb834c09bef036e784
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cece70c942b62390e0ba3e96c57c1c46c4dd46fa
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205912"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003068"
 ---
-# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Los identificadores deberían tener el prefijo correcto
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Los identificadores deben tener el prefijo correcto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA1715: los identificadores deberían tener el prefijo correcto](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [CA1715: Los identificadores deberían tener el prefijo correcto](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) en docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -42,7 +37,7 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA
 ## <a name="cause"></a>Motivo  
  El nombre de una interfaz visible externamente no empieza por una mayúscula 'I'.  
   
- O bien  
+ -o bien-  
   
  El nombre de un parámetro de tipo genérico en un tipo visible externamente o el método no inicia con una mayúscula ' t '.  
   
@@ -91,4 +86,3 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA
   
 ## <a name="related-rules"></a>Reglas relacionadas  
  [CA1722: Los identificadores no deberían tener el prefijo incorrecto](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
-

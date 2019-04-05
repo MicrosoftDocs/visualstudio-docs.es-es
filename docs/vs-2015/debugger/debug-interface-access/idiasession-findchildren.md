@@ -1,14 +1,9 @@
 ---
-title: Findchildren | Documentos de Microsoft
-ms.custom: ''
+title: IDiaSession::findChildren | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5d19046f-f668-4aa9-8788-95cda9a98997
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71a200d04da6ff79406f54feee05b73be4e6f689
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cf274bb0f572da11a9aa43248da7eaa72a2e73c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782822"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988529"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -74,8 +69,5 @@ pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [NameSearchOptions (enumeración)](../../debugger/debug-interface-access/namesearchoptions.md)   
+ [Enumeración NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)   
  [Enumeración SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

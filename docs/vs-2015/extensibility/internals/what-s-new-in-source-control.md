@@ -1,29 +1,25 @@
 ---
-title: ¿Qué&#39;s de Control de código fuente | Documentos de Microsoft
-ms.custom: ''
+title: Novedades del control de código fuente
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a108acb2ae32b64292cd819c75de4726f067a00
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27623c22664e9d3c6b651615465e6abe812ea408
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752467"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002605"
 ---
-# <a name="what39s-new-in-source-control"></a>¿Qué&#39;s de Control de código fuente
+# <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>¿Qué&#39;s de Control de código fuente en Visual Studio 2015
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 En [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] puede proporcionar una solución de control de código fuente está profundamente integrado mediante la implementación de un VSPackage de control de código fuente. En esta sección se describe las características de control de código fuente VSPackages y proporciona información general sobre los pasos de implementación.  
@@ -56,4 +52,3 @@ En [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] puede proporcionar una solu
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
  [Información general](../../extensibility/internals/source-control-integration-overview.md)   
  [Creación de un VSPackage de control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

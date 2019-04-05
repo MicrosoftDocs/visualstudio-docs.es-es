@@ -1,26 +1,21 @@
 ---
 title: Proyectos Web | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - web projects
 ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b3388d1e39ad4ad8e52339ab837cd04493481f16
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2994c219dd1aadf7f5b9bc833eb7867baede9a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796654"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988558"
 ---
 # <a name="web-projects"></a>Proyectos web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,4 +32,3 @@ Un sistema de proyectos Web es un sistema de proyecto que crea proyectos Web. Lo
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Proyectos](../../extensibility/internals/projects.md)  
  Describe cómo extender el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sistema de proyectos.
-

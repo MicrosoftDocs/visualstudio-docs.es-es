@@ -1,25 +1,22 @@
 ---
 title: Propiedades de los decoradores | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, decorators
 ms.assetid: f6322fe5-dc08-4d32-a6b3-0bd18879136d
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2d7d6aec514cab53777840730dee6bafac51512e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 288e0e4d017302a41b3267a3ae751573ab849b64
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987843"
 ---
 # <a name="properties-of-decorators"></a>Propiedades de los decoradores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +30,8 @@ Los elementos Decorator son iconos, texto o expandir o contraer comillas angular
 |Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |DisplayName|El nombre del elemento decorator que se mostrará en el diseñador generado.|Expanda el elemento Decorator de contraer|  
-|nombre|El nombre del elemento decorator.|ExpandCollapseDecorator|  
-|Notas|Notas informales que están asociadas con este elemento decorator.|\<Ninguno >|  
+|Name|El nombre del elemento decorator.|ExpandCollapseDecorator|  
+|Notas|Notas informales que están asociadas con este elemento decorator.|\<none>|  
 |HorizontalOffset|El desplazamiento horizontal, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|  
 |VerticalOffset|El desplazamiento vertical, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|  
 |OffsetFromLine|El desplazamiento del elemento decorator desde la línea, en relación con su posición predeterminada, en pulgadas. (En los conectores solo.)|0|  
@@ -45,10 +42,10 @@ Los elementos Decorator son iconos, texto o expandir o contraer comillas angular
   
 |Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
-|DefaultIcon|La ruta de acceso del archivo de icono o imagen que se mostrará.|\<Ninguno >|  
+|DefaultIcon|La ruta de acceso del archivo de icono o imagen que se mostrará.|\<none>|  
 |DisplayName|El nombre del elemento decorator que se mostrará en el diseñador generado.|Elemento Decorator de icono|  
-|nombre|El nombre del elemento decorator.|IconDecorator|  
-|Notas|Notas informales que están asociadas con el elemento decorator.|\<Ninguno >|  
+|Name|El nombre del elemento decorator.|IconDecorator|  
+|Notas|Notas informales que están asociadas con el elemento decorator.|\<none>|  
 |HorizontalOffset|El desplazamiento horizontal, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|  
 |VerticalOffset|El desplazamiento vertical, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|  
 |OffsetFromLine|El desplazamiento del elemento decorator desde la línea, en relación con su posición predeterminada, en pulgadas. (En los conectores solo.)|0|  
@@ -63,8 +60,8 @@ Los elementos Decorator son iconos, texto o expandir o contraer comillas angular
 |DisplayName|El nombre del elemento decorator que se mostrará en el diseñador generado.|Etiqueta|  
 |FontSize|El tamaño de fuente del texto que se muestra en el elemento decorator.|8|  
 |FontStyle|El estilo de fuente del texto que se muestra en el elemento decorator.|Estándar|  
-|nombre|El nombre del elemento decorator.|Etiqueta|  
-|Notas|Notas informales que están asociadas con el elemento decorator.|\<Ninguno >|  
+|Name|El nombre del elemento decorator.|Etiqueta|  
+|Notas|Notas informales que están asociadas con el elemento decorator.|\<none>|  
 |HorizontalOffset|El desplazamiento horizontal, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|  
 |VerticalOffset|El desplazamiento vertical, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|  
 |OffsetFromLine|El desplazamiento del elemento decorator desde la línea, en relación con su posición predeterminada, en pulgadas. (En los conectores solo.)|0|  
@@ -72,7 +69,4 @@ Los elementos Decorator son iconos, texto o expandir o contraer comillas angular
 |Posición|La posición predeterminada del decorador.|TargetBottom|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de las herramientas de lenguajes específicos de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,14 +1,9 @@
 ---
-title: 'CA2234: Pase objetos System.Uri en lugar de cadenas | Microsoft Docs'
-ms.custom: ''
+title: 'CA2234: Pase objetos System.Uri en lugar de cadenas | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - PassSystemUriObjectsInsteadOfStrings
 - CA2234
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83490f93368da777f35544ba09e40bdb5a929f99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce0ed8a2600d52d3a8f6649a528b6c809895f3fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813978"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988210"
 ---
-# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Pase objetos System.Uri en lugar de cadenas
+# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Pasar objetos System.Uri en lugar de cadenas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -63,7 +58,4 @@ ms.locfileid: "49813978"
 
  [CA1054: Los parámetros de URI no deben ser cadenas](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
- [CA1055: Los valores devueltos URI no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-
-
-
+ [CA1055: URI devuelven valores no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

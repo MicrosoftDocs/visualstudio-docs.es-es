@@ -1,14 +1,9 @@
 ---
 title: Depurar varios procesos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -24,13 +19,13 @@ ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56982a3b5c0a0d8a5cb0b682ab67b6f5eb133dd1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1d0986e1780cb9fea061132b5985972cf9635c8b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793053"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986679"
 ---
 # <a name="debug-multiple-processes"></a>Depurar varios procesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,10 +52,10 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
   
    ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Buscar el origen y símbolos (archivos .pdb)  
+##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Buscar archivos de origen y de símbolos (.pdb)  
  Para navegar por el código fuente de un proceso, el depurador necesita acceso a los archivos de código fuente y los archivos de símbolos del proceso. Consulte [Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
- Si no puede tener acceso a los archivos de un proceso, puede navegar utilizando la ventana Desensamblado. Vea [Cómo: usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)  
+ Si no puede tener acceso a los archivos de un proceso, puede navegar utilizando la ventana Desensamblado. Vea [Cómo: Uso de la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)  
   
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
@@ -73,7 +68,7 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
 > 
 > - Realice la asociación al proceso secundario una vez iniciado.  
 > 
->   O bien  
+>   -o bien-  
 >   -   Configure Windows para iniciar automáticamente el proceso secundario en una nueva instancia del depurador.  
   
 ###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> Empezar a depurar varios procesos en una solución de Visual Studio  
@@ -168,7 +163,7 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
   
   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-###  <a name="BKMK_Break__step__and_continue_commands"></a> Interrumpir, paso y continuar con los comandos  
+###  <a name="BKMK_Break__step__and_continue_commands"></a> Comandos de interrupción, paso y continuación  
   
 > [!NOTE]
 >  De forma predeterminada, los comandos de interrupción, continuación y paso del depurador afectan a todos los procesos que se depuran. Para cambiar este comportamiento, consulte [configurar el comportamiento de ejecución de varios procesos](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
@@ -218,18 +213,15 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
 |**Depurar** menú:<br /><br /> -   **Desasociar todo**|El depurador se desasocia de todos los procesos.|  
 |**Procesos** menú contextual de ventana:<br /><br /> -   **Desasociar proceso**|El depurador se desasocia del proceso seleccionado.<br /><br /> Otros procesos mantienen su estado existente (suspendido o en ejecución).|  
 |**Procesos** menú contextual de ventana:<br /><br /> -   **Terminar proceso**|Finaliza el proceso seleccionado.<br /><br /> Otros procesos mantienen su estado existente (suspendido o en ejecución).|  
-|**Procesos** menú contextual de ventana:<br /><br /> -   **Desasociar cuando se detiene la depuración**|Activa o desactiva el comportamiento de **depurar**, **Detener depuración** para el proceso seleccionado:<br /><br /> -Checked: El depurador se desasocia del proceso.<br />-Desactivado: Finaliza el proceso.|  
+|**Procesos** menú contextual de ventana:<br /><br /> -   **Desasociar cuando se detiene la depuración**|Activa o desactiva el comportamiento de **depurar**, **Detener depuración** para el proceso seleccionado:<br /><br /> -Checked: El depurador se desasocia del proceso.<br />-Desactivada: El proceso ha finalizando.|  
   
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [detener la depuración, terminar o desasociar procesos](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Vea también  
- [Especificar símbolos (.pdb) y los archivos de origen](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Asociar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md)   
  [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

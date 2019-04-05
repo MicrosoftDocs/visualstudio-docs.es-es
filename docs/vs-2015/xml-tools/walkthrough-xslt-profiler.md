@@ -1,25 +1,20 @@
 ---
 title: 'Tutorial: XSLT Profiler | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229455"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987429"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Tutorial: Generador de perfiles XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,11 +77,11 @@ El generador de perfiles XSLT crea informes de rendimiento de XSLT detallados qu
   
 2.  El **llamador y destinatario** vista tiene las siguientes tres partes distintas:  
   
-    -   **Funciones que llamaron a**: todas las funciones que llamaron a una función determinada se muestran en la parte superior de la vista.  
+    -   **Funciones que llamaron a**: Todas las funciones que llamaron a una función determinada se muestran en la parte superior de la vista.  
   
-    -   **Función actual**: la función concreta que se llamó se muestra en la parte central de la vista.  
+    -   **Función actual**: La función concreta que se llamó se muestra en la parte central de la vista.  
   
-    -   **Las funciones llamadas por** : se enumeran todas las funciones a las que llamó la función concreta en la parte inferior de la vista.  
+    -   **Las funciones llamadas por** : Se muestran todas las funciones a las que llamó la función concreta en la parte inferior de la vista.  
   
 3.  Si una función denominada `SyncToNavigator` aparece en la parte central de la vista, todas las funciones que han llamado a la función `SyncToNavigator` aparecen en la parte superior de la vista, y todas las funciones a las que ha llamado `SyncToNavigator` aparecen en la parte inferior de la vista.  
   
@@ -115,7 +110,4 @@ El generador de perfiles XSLT crea informes de rendimiento de XSLT detallados qu
 4.  La vista proceso muestra una tabla que incluye la **Id. de proceso**, **nombre del proceso**, **hora de inicio**y el **hora de finalización**. Puede ordenar los datos haciendo clic en los nombres de las columnas.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Usar la herramienta Jerarquía XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
-
-
-
+ [Tutorial: Uso de la jerarquía XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

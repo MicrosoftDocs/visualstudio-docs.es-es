@@ -1,26 +1,21 @@
 ---
 title: Creación. Archivos Vsct | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 50dc50aee377a4685527e57dc2af5d9946639946
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf3d9acd493cd10a8d014b4479684a0107cb8740
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772175"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59002317"
 ---
 # <a name="authoring-vsct-files"></a>Creación. Archivos Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,14 +25,14 @@ Este documento muestra cómo crear un archivo .vsct para agregar elementos de me
  Para proyectos nuevos, se recomienda usar la plantilla de paquete de Visual Studio porque genera un archivo .vsct que, dependiendo de las selecciones, ya tiene los elementos necesarios para un comando de menú, una ventana de herramientas o un editor personalizado. Puede modificar este archivo .vsct para cumplir los requisitos del paquete VSPackage. Para obtener más información sobre cómo modificar un archivo .vsct, vea los ejemplos de [ampliación de menús y comandos](../../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="authoring-the-file"></a>Crea el archivo  
- Crear un archivo .vsct en estas fases: crear la estructura de archivos y recursos, declare los elementos de interfaz de usuario, coloque los elementos de interfaz de usuario en el IDE y agregue cualquier comportamiento especializado.  
+ Crear un archivo .vsct en estas fases: Crear la estructura de archivos y recursos, declare los elementos de interfaz de usuario, coloque los elementos de interfaz de usuario en el IDE y agregue cualquier comportamiento especializado.  
   
 ### <a name="file-structure"></a>Estructura de archivos  
  La estructura básica de un archivo .vsct es un [CommandTable](../../extensibility/commandtable-element.md) elemento raíz que contiene un [comandos](../../extensibility/commands-element.md) elemento y un [símbolos](../../extensibility/symbols-element.md) elemento.  
   
 ##### <a name="to-create-the-file-structure"></a>Para crear la estructura de archivos  
   
-1.  Agregar un archivo .vsct a su proyecto siguiendo los pasos descritos en [Cómo: crear una. Archivo de Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1.  Agregar un archivo .vsct a su proyecto siguiendo los pasos descritos en [Cómo: Crear una. Archivo de Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
 2.  Agregar los espacios de nombres necesarios para la `CommandTable` elemento, como se muestra en el ejemplo siguiente.  
   
@@ -244,4 +239,3 @@ Este documento muestra cómo crear un archivo .vsct para agregar elementos de me
  [Ampliación de menús y comandos](../../extensibility/extending-menus-and-commands.md)   
  [Tabla de comandos de Visual Studio (. Archivos Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)
-

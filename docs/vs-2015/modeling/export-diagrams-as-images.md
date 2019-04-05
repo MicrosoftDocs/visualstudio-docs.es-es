@@ -1,12 +1,9 @@
 ---
 title: Exportar diagramas como imágenes | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
@@ -15,13 +12,13 @@ ms.assetid: 0df68943-4c60-4f00-b1e8-b1cdee13762e
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 31b7527484bf377433a7fd80b6ccb8e87722c40d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3554941ea4fc0d0d95d36cc99224f270cdc23fe9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794433"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986615"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,6 +52,3 @@ En Visual Studio, puede guardar diagramas de modelado en formatos de solo lectur
 ## <a name="see-also"></a>Vea también  
  [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)   
  [Compartir modelos y exportar diagramas](../modeling/share-models-and-exporting-diagrams.md)
-
-
-

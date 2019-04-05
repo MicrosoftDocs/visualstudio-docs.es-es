@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,15 +20,15 @@ ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 5ca86e2ed1a05c8e325a99686281db3a7cf8f56e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: aef8c537c81c1432796b1b387f7d4ea24d7bca3e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306233"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59002027"
 ---
-# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: Descargar ensamblados satélite a petición con la API de implementación de ClickOnce mediante el diseñador
+# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las aplicaciones de Windows Forms pueden configurarse para varias referencias culturales utilizando ensamblados satélite. Un *ensamblado satélite* es un ensamblado que contiene los recursos de aplicación para una referencia cultural que no sea la referencia cultural predeterminada de la aplicación.  
@@ -49,21 +44,21 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
   
 1.  Compilar el proyecto. Esto generará los ensamblados satélite para todas las referencias culturales a las que vaya a realizar la localización.  
   
-2.  Haga doble clic en el nombre del proyecto en el Explorador de soluciones y haga clic en **propiedades**.  
+2.  Haga clic con el botón derecho en el nombre del proyecto en el Explorador de soluciones y, a continuación, haga clic en **Propiedades**.  
   
-3.  Haga clic en el **publicar** pestaña y, a continuación, haga clic en **archivos de la aplicación**.  
+3.  Haga clic en la pestaña **Publicar** y, a continuación, haga clic en **Archivos de aplicación**.  
   
-4.  Seleccione el **mostrar todos los archivos** casilla de verificación para mostrar los ensamblados satélite. De forma predeterminada, todos los ensamblados satélite se incluirán en la implementación y estarán visibles en este cuadro de diálogo.  
+4.  Seleccione la casilla **Mostrar todos los archivos** para que se muestren los ensamblados satélite. De forma predeterminada, todos los ensamblados satélite se incluirán en la implementación y estarán visibles en este cuadro de diálogo.  
   
      Un ensamblado satélite tendrá un nombre en el formulario *isoCode*\ApplicationName.resources.dll, donde *isoCode* es un identificador de idioma en formato RFC 1766.  
   
 5.  Haga clic en **nuevo...**  en el **grupo de descarga** lista para cada identificador de idioma. Cuando se le pida un nombre de grupo de descarga, escriba el identificador de idioma. Por ejemplo, para un ensamblado satélite japonés, especificaría el nombre del grupo de descarga `ja-JP`.  
   
-6.  Cerrar la **archivos de la aplicación** cuadro de diálogo.  
+6.  Cierre el cuadro de diálogo **Archivos de aplicación**.  
   
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Para descargar ensamblados satélite a petición en C#  
   
-1.  Abra el archivo Program.cs. Si no ve este archivo en el Explorador de soluciones, seleccione el proyecto y en el **proyecto** menú, haga clic en **mostrar todos los archivos**.  
+1.  Abra el archivo Program.cs. Si no ve este archivo en el Explorador de soluciones, seleccione el proyecto y en el menú **Proyecto** haga clic en **Mostrar todos los archivos**.  
   
 2.  Utilice el código siguiente para descargar el ensamblado satélite adecuado e iniciar la aplicación.  
   
@@ -71,9 +66,9 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
   
 ### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>Para descargar ensamblados satélite a petición en Visual Basic  
   
-1.  En el **propiedades** ventana de la aplicación, haga clic en el **aplicación** ficha.  
+1.  En la ventana **Propiedades** de la aplicación haga clic en la pestaña **Aplicación**.  
   
-2.  En la parte inferior de la página de ficha, haga clic en **ver eventos de aplicación**.  
+2.  En la parte inferior de la ficha, haga clic en **Ver eventos de aplicaciones**.  
   
 3.  Agregue las siguientes importaciones al principio del archivo ApplicationEvents.VB.  
   
@@ -89,6 +84,3 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Descargar ensamblados satélite a petición con la API de implementación de ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)   
  [Localizar aplicaciones ClickOnce](../deployment/localizing-clickonce-applications.md)
-
-
-

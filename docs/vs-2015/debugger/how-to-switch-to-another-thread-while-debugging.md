@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: cambiar a otro subproceso durante la depuración | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Cambiar a otro subproceso durante la depuración | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: 5cd76c52-76fa-4fcc-b37e-e9f0ecac0e9e
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ad13c81afc82ac69055ae117c862a1cf73b51478
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5fa84d46d64db048b58d0fcdb1c433b4830a5f45
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737713"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58988058"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging"></a>Cómo: Cambiar a otro subproceso durante la depuración
+# <a name="how-to-switch-to-another-thread-while-debugging"></a>Filtrar Cambiar a otro subproceso durante la depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Al depurar una aplicación multithreading, puede utilizar uno de los métodos existentes para intercambiar entre el contexto del subproceso en el que ha estado trabajando y otro subproceso.  
@@ -51,6 +46,3 @@ Al depurar una aplicación multithreading, puede utilizar uno de los métodos ex
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

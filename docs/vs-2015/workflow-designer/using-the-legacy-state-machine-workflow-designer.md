@@ -1,11 +1,8 @@
 ---
 title: Mediante el Diseñador de flujo de trabajo de máquina de Estados heredado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - StateFinalizationActivity activity
@@ -20,16 +17,16 @@ ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231691"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986671"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Usar el diseñador de flujo de trabajo de máquina de estados heredado
-Cuando crea un nuevo proyecto de flujo de trabajo de equipo de estado en [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tiene como destino el [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], puede usar cualquiera el **aplicación de consola de flujo de trabajo de equipo de estado** o el  **Biblioteca de flujo de trabajo de equipo de estado** plantilla de proyecto heredadas. Si elige una de estas plantillas de proyecto de máquina de estados, el diseñador de máquina de estados se presenta como la interfaz de usuario del diseñador de flujo de trabajo heredada. Para obtener información acerca de las plantillas de proyecto de la máquina de Estados heredados, vea [Cómo: crear estado de flujo de trabajo de aplicaciones de consola equipo (heredado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) y [Cómo: crear una biblioteca de flujo de trabajo de equipo de estado (heredado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
+Cuando crea un nuevo proyecto de flujo de trabajo de equipo de estado en [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tiene como destino el [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], puede usar cualquiera el **aplicación de consola de flujo de trabajo de equipo de estado** o el  **Biblioteca de flujo de trabajo de equipo de estado** plantilla de proyecto heredadas. Si elige una de estas plantillas de proyecto de máquina de estados, el diseñador de máquina de estados se presenta como la interfaz de usuario del diseñador de flujo de trabajo heredada. Para obtener información acerca de las plantillas de proyecto de la máquina de Estados heredados, vea [Cómo: Crear aplicaciones de consola de flujo de trabajo de máquina de Estados (heredado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) y [Cómo: Crear una biblioteca de flujo de trabajo de máquina de Estados (heredado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
   
  Un flujo de trabajo de equipo de estado está compuesto por un conjunto de estados. Se designa un estado como estado inicial. Cada estado puede recibir un conjunto de eventos determinado. En función de un evento, se puede realizar una transición a otro estado. El flujo de trabajo de equipo de estado puede tener un estado final. Cuando se realiza una transición al estado final, el flujo de trabajo termina.  
   
@@ -49,7 +46,7 @@ Cuando crea un nuevo proyecto de flujo de trabajo de equipo de estado en [!INCLU
 |**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|Especifica una transición a un nuevo estado. Para obtener más información, consulte [mediante la actividad SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082).|  
 |**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|Se ejecuta cuando se entra en un estado; puede contener otras actividades. Para obtener más información, consulte [mediante la actividad StateInitialization](http://go.microsoft.com/fwlink?LinkID=65006).|  
 |**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|Ejecuta actividades contenidas al abandonar una [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) actividad. Para obtener más información, consulte [mediante la actividad StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008).|  
-|**EventDriven**|[Actividad EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Se utiliza para los estados que dependen de un evento externo para empezar a ejecutarse. El **EventDrivenActivity** actividad debe tener una actividad que implemente la [IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032) interfaz como la primera actividad secundaria. Para obtener más información, consulte [mediante la actividad EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068).|  
+|**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Se utiliza para los estados que dependen de un evento externo para empezar a ejecutarse. El **EventDrivenActivity** actividad debe tener una actividad que implemente la [IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032) interfaz como la primera actividad secundaria. Para obtener más información, consulte [mediante la actividad EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068).|  
   
  El componente principal en un flujo de trabajo de equipo de estado es el [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) actividad. Al capturarse eventos en diversos puntos en un flujo de trabajo de equipo de estado, se entra en estados diferentes para administrar las tareas asociadas a los eventos. Durante la duración del flujo de trabajo, éste puede entrar en y salir de varios estados diferentes. Estos estados se conectan entre sí mediante el uso de la [SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041) actividad.  
   
@@ -61,8 +58,8 @@ Cuando crea un nuevo proyecto de flujo de trabajo de equipo de estado en [!INCLU
 >  Para abrir el **esquema del documento** ventana, en el **vista** menú, elija **Other Windows**y, a continuación, seleccione **esquema del documento**.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: crear aplicaciones de consola de flujo de trabajo de máquina de Estados (heredado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
- [Cómo: crear una biblioteca de flujo de trabajo de máquina de Estados (heredado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
+ [Cómo: Crear aplicaciones de consola de flujo de trabajo de máquina de Estados (heredado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
+ [Cómo: Crear una biblioteca de flujo de trabajo de máquina de Estados (heredado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
  [Flujos de trabajo de equipo de estado](http://go.microsoft.com/fwlink?LinkID=65016)   
  [Uso de la actividad StateActivity](http://go.microsoft.com/fwlink?LinkID=65083)   
  [Uso de la actividad StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006)   

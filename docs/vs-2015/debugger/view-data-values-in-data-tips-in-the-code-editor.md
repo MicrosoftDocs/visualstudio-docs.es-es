@@ -1,14 +1,9 @@
 ---
 title: Ver los valores de datos en sugerencias de datos en el editor de código | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37fc58a68f8cf482ac6a2bbab3ecb47c28d60904
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799449"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986889"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Ver valores de datos en sugerencias de datos en el editor de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +107,7 @@ La Información sobre datos es una manera útil de ver información sobre las va
   
 -   Haga clic en el icono de lupa para seleccionar el visualizador predeterminado del tipo de datos.  
   
-     O bien  
+     -o bien-  
   
      Haga clic en la flecha emergente junto al visualizador para seleccionar una lista emergente de visualizadores adecuados para el tipo de datos.  
   
@@ -147,10 +142,7 @@ La Información sobre datos es una manera útil de ver información sobre las va
 2.  Utilice el cuadro de diálogo para buscar el archivo XML que desea abrir y haga clic en **Aceptar**.  
   
 ## <a name="see-also"></a>Vea también  
- [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Cómo: usar el cuadro de diálogo Inspección rápida](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
- [Crear visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Cómo: cambiar el formato numérico de Windows del depurador](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
-
-
-
+ [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Cómo: Utilice el cuadro de diálogo Inspección rápida](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Creación de visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
+ [Cómo: Cambiar el formato numérico de Windows del depurador](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

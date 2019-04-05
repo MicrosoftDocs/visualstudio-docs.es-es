@@ -1,14 +1,9 @@
 ---
-title: 'CA1726: Utilizar términos preferidos | Microsoft Docs'
-ms.custom: ''
+title: 'CA1726: Utilizar términos preferidos | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220524"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003077"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizar términos preferidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA1726: utilizar términos preferidos](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [CA1726: Utilizar términos preferidos](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) en docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -46,28 +41,28 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA
   
 |Término obsoleto|Término preferido|  
 |-------------------|--------------------|  
-|no es|No van|  
+|no es|AreNot|  
 |Cancelado|Cancelado|  
 |No se puede|No se puede|  
 |ComPlus|EnterpriseServices|  
 |No se pueden|CouldNot|  
 |Didnt|DidNot|  
-|Doesnt|No|  
-|No|No conectar|  
+|Doesnt|DoesNot|  
+|No|DoNot|  
 |Marca o indicadores|No hay ningún término de reemplazo. No utilizar.|  
-|no se habían|HadNot|  
+|Hadnt|HadNot|  
 |No se ha|HasNot|  
 |todavía no|HaveNot|  
 |Índices|Índices|  
-|no es|IsNot|  
-|Inicio de sesión|Inicio de sesión|  
-|Cierre de sesión|Cierre de sesión|  
+|Isnt|IsNot|  
+|LogIn|LogOn|  
+|LogOut|LogOff|  
 |Shouldnt|ShouldNot|  
-|Inicio de sesión|Inicio de sesión|  
-|Aprobación|Cierre de sesión|  
+|SignOn|SignIn|  
+|SignOff|SignOut|  
 |Wasnt|WasNot|  
-|no estaban|No están|  
-|No|No|  
+|no estaban|WereNot|  
+|No|WillNot|  
 |Wouldnt|WouldNot|  
 |Puede escribir|Puede escribir|  
   
@@ -79,4 +74,3 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA
   
 ## <a name="related-rules"></a>Reglas relacionadas  
  [Advertencias sobre nomenclatura](../code-quality/naming-warnings.md)
-
