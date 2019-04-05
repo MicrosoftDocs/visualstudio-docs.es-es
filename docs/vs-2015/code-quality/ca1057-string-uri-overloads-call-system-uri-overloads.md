@@ -1,14 +1,9 @@
 ---
-title: 'CA1057: Cadena las sobrecargas URI llaman a sobrecargas System.Uri | Microsoft Docs'
-ms.custom: ''
+title: 'CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1057
 - StringUriOverloadsCallSystemUriOverloads
@@ -20,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e948e91a0559034e688e029eb5ba227a8dd343c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cf50ca225544b06409415320c73e7824a10843a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920513"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996263"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +58,4 @@ ms.locfileid: "49920513"
 
  [CA1054: Los parámetros de URI no deben ser cadenas](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
- [CA1055: Los valores devueltos URI no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-
-
-
+ [CA1055: URI devuelven valores no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

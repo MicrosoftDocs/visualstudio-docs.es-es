@@ -1,14 +1,9 @@
 ---
 title: Enlazar métodos abreviados de teclado a elementos de menú | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
 - keyboards
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5fd5ab9b09956c41620947ad1bcf529550db4aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c799d2733c4deca07cdcbe087b1b694f9d1725e6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752901"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998013"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Enlace de métodos abreviados de teclado a elementos de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,4 +109,3 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
   
 ## <a name="see-also"></a>Vea también  
  [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)
-

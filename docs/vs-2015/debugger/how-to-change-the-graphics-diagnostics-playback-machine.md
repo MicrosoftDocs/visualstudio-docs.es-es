@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: cambiar la máquina de reproducción de diagnóstico de gráficos | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Cambiar la máquina de reproducción de diagnóstico de gráficos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a2d5d56d37bbed4180d1231cac54da6beff3418d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1f5f25bf9b0dc03afc7cb2ba334d85bd697b7dc5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737601"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994820"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Cómo: Cambiar la máquina de reproducción de diagnóstico de gráficos
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Filtrar Cambio de la máquina de reproducción de Diagnóstico de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede reproducir información de gráficos mediante el uso de la máquina local, o mediante el uso de un dispositivo o equipo remoto.  
@@ -37,7 +32,7 @@ Puede reproducir información de gráficos mediante el uso de la máquina local,
   
 3.  Establecer el **modo de autenticación** propiedad **ninguno**.  
   
-4.  Elija la **seleccione** botón.  
+4.  Elija el botón **Seleccionar**.  
   
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>Para utilizar un equipo remoto para reproducir información de gráficos  
   
@@ -51,13 +46,10 @@ Puede reproducir información de gráficos mediante el uso de la máquina local,
   
     -   Sin autenticación, establezca el **modo de autenticación** propiedad **ninguno**.  
   
-4.  Elija la **seleccione** botón.  
+4.  Elija el botón **Seleccionar**.  
   
 > [!NOTE]
 >  El **conexiones del depurador remoto** cuadro de diálogo también podría mostrar destinos de depuración remota que están conectados directamente a la máquina de desarrollo o están en la misma subred. Puede usar uno de estos destinos de depuración remota como máquina de reproducción de diagnóstico de gráficos sin configurarlo manualmente. En el **conexiones del depurador remoto** cuadro de diálogo, seleccione el destino que desee y, a continuación, elija el **seleccione** botón.  
   
 ## <a name="see-also"></a>Vea también  
  [Documento de registro de gráficos](../debugger/graphics-log-document.md)
-
-
-

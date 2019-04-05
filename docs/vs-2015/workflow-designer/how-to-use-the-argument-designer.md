@@ -1,11 +1,8 @@
 ---
-title: 'Cómo: usar el Diseñador de argumentos | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Utilice el Diseñador de argumentos | Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
@@ -14,15 +11,15 @@ ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 81b24b8c0344cc6a8cf1559126a4faf0bc2b6f4e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9844745951be9c29bc9dd624db47991ab2437692
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997943"
 ---
-# <a name="how-to-use-the-argument-designer"></a>Utilizar el diseñador de argumentos
+# <a name="how-to-use-the-argument-designer"></a>Filtrar Usar el diseñador de argumentos
 Si se compara con las versiones anteriores de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], el diseñador de argumentos hace más fácil permitir el flujo de datos dentro y fuera de una actividad. El diseñador se tiene acceso haciendo clic en el **argumentos** situado en la esquina inferior izquierda del lienzo de diseño. El diseñador contiene una lista de argumentos que aparecen en un formato tabular y se pueden ordenar por cada uno de los encabezados de columna, excepto para el **valor predeterminado** columna. Cada argumento contiene un nombre, dirección IN/OUT/IN-OUT/PROPERTY, tipo y valor de la expresión predeterminado (en su caso). El nombre y el valor de la expresión predeterminado son campos de texto editable y el tipo y la dirección son listas desplegables. [!INCLUDE[crabout](../includes/crabout-md.md)] los argumentos, vea [Variables y argumentos](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
   
 ### <a name="to-create-a-new-argument"></a>Para crear un argumento nuevo  

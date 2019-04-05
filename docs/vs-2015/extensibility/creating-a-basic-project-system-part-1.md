@@ -1,14 +1,9 @@
 ---
 title: Creación de un sistema de proyectos básico, parte 1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9bc0be22f0a5f975f616bfcce942d59399a36ad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ed2f8975f24404c00f81d86d0d1d6a6933b3d8ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998090"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Creación de un sistema de proyectos básico, parte 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
   
 3. Hacer que el icono distintivo. Este icono aparecerá en el **nuevo proyecto** cuadro de diálogo más adelante en el tutorial.  
   
-    ![Icono de proyecto simple](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+    ![Simple Project Icon](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
 4. El icono Guardar y cerrar el editor de iconos.  
   
@@ -462,7 +457,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
   
 #### <a name="to-test-the-project-node-class"></a>Para probar la clase de nodo de proyecto  
   
-1.  Presione F5 para iniciar la depuración. En la instancia experimental, cree un nuevo SimpleProject.  
+1.  Presiona F5 para iniciar la depuración. En la instancia experimental, cree un nuevo SimpleProject.  
   
 2.  Visual Studio debe llamar a la factoría de proyecto para crear un proyecto.  
   
@@ -477,7 +472,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
   
 2. En el **propiedades** windows, reduzca el mapa de bits a 16 por 16 píxeles. Asegúrese de distintivo el mapa de bits.  
   
-    ![Comando de proyecto simple](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3. En el **propiedades** ventana, cambie el **acción de compilación** del mapa de bits a **recurso incrustado**.  
   
@@ -577,7 +572,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
      Tenga en cuenta que los parámetros de plantilla $nameSpace$ y $className$ no tienen valores nuevos. Obtendrá información sobre cómo implementar la sustitución de parámetros de plantilla en la sección siguiente.  
   
 ## <a name="substituting-template-parameters"></a>Sustitución de parámetros de plantilla  
- En una sección anterior, se registra la plantilla de proyecto con Visual Studio mediante el `ProvideProjectFactory` atributo. Registro de la ruta de acceso de una carpeta de plantillas de esta manera le permite habilitar la sustitución de parámetros de plantilla básica reemplazando y expandir el `ProjectNode.AddFileFromTemplate` clase. Para obtener más información, consulte [nueva generación de proyectos: Under the Hood, segunda parte](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ En una sección anterior, se registra la plantilla de proyecto con Visual Studio mediante el `ProvideProjectFactory` atributo. Registro de la ruta de acceso de una carpeta de plantillas de esta manera le permite habilitar la sustitución de parámetros de plantilla básica reemplazando y expandir el `ProjectNode.AddFileFromTemplate` clase. Para obtener más información, consulte [nueva generación de proyectos: Internamente, la segunda parte](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Ahora, agregue código de reemplazo para el `AddFileFromTemplate` clase.  
   
@@ -655,7 +650,6 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
   
 6. Empiece a depurar el proyecto. El nuevo proyecto debe compilar, ejecutar y mostrar "Hola VSX!!!" en la ventana de la consola.  
   
-    ![Comando de proyecto simple](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
+    ![Simple Project Command](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
    ¡Enhorabuena! Ha implementado un sistema de proyectos administrados básico.
-
