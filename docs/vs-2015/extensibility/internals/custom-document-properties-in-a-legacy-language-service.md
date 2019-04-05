@@ -1,14 +1,9 @@
 ---
 title: Propiedades personalizadas del documento en un servicio de lenguaje heredado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom document properties, language services [managed package framework]
 - document properties, custom
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9760ba82c7f40a3fc7768e56111352eb384456fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a2062932f5c9b0c1d51b0503742f7387b7da3dec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997856"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Propiedades de documento personalizadas en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Se pueden mostrar las propiedades del documento en el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **propiedades** ventana. Por lo general los lenguajes de programación no tienen propiedades asociadas a los archivos de origen individuales. Sin embargo, XML admite las propiedades de documento que afectan a la codificación, el esquema y la hoja de estilos.  
   
-## <a name="discussion"></a>Explicación  
+## <a name="discussion"></a>Discusión  
  Si su lenguaje necesita propiedades personalizadas del documento, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase e implementar las propiedades necesarias en su clase derivada.  
   
  Además, las propiedades de documento normalmente se almacenan en el propio archivo de origen. Esto requiere el servicio de lenguaje para analizar la información de propiedad del archivo de origen que se muestra en el **propiedades** ventana y actualizar el archivo de origen cuando se realiza un cambio en las propiedades del documento en el  **Propiedades** ventana.  
@@ -406,4 +401,3 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>Vea también  
  [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)
-

@@ -1,8 +1,8 @@
 ---
-title: Construcción de cadenas de filtro para el Diseñador de tablas | Microsoft Docs
+title: Construcción de cadenas de filtro para el diseñador de tablas | Microsoft Docs
 description: Construcción de cadenas de filtro para el Diseñador de tablas
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,84 +11,84 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ff8c3dd927e81b9e131242a9a6631a8297046a6e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ab38ffd1f94e6c8c432d25d8408a0209e4f96e30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002875"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996364"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construcción de cadenas de filtro para el Diseñador de tablas
 ## <a name="overview"></a>Información general
-Para filtrar los datos en una tabla de Azure que se muestra en Visual Studio **Diseñador de tablas**, construir una cadena de filtro y escríbalo en el campo de filtro. La sintaxis de la cadena de filtro se define mediante WCF Data Services y es similar a una cláusula WHERE de SQL, pero se envía a Table service a través de una solicitud HTTP. El **Diseñador de tablas** administra la codificación adecuada para usted, por lo que para filtrar según un valor de propiedad deseada, sólo necesita escribir el valor booleano nombre de propiedad, operador de comparación, valores de los criterios y si lo desea, operador en el campo de filtro. No es necesario incluir la opción de consulta $filter como lo haría si estuviese creando una dirección URL para consultar la tabla a través de la [referencia de API de REST de servicios de almacenamiento](http://go.microsoft.com/fwlink/p/?LinkId=400447).
+Para filtrar los datos de una tabla de Azure que se muestra en el **Diseñador de tablas**de Visual Studio, es preciso construir una cadena de filtro y especificar en el campo de filtro. La sintaxis de la cadena de filtro la define servicios de datos de WCF y es similar a una cláusula WHERE de SQL, pero se envía a Table service a través de una solicitud HTTP. El **Diseñador de tablas** administra la codificación adecuada para el usuario, por lo que para filtrar por un valor de propiedad deseado, solo necesita escribir el nombre de la propiedad, el operador de comparación, los valores de los criterios y opcionalmente, el operador booleano en el campo de filtro. No es preciso incluir la opción de consulta $filter como lo haría si fuera a construir una dirección URL para realizar consultas en la tabla a través de la [referencia de la API REST de servicios de almacenamiento](http://go.microsoft.com/fwlink/p/?LinkId=400447).
 
-WCF Data Services se basan en el [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Para obtener más información sobre la opción de consulta de filtro del sistema (**$filter**), consulte el [especificación OData URI Conventions](http://go.microsoft.com/fwlink/p/?LinkId=214806).
+WCF Data Services se basa en [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Para obtener más información sobre la opción de consulta del sistema de filtro (**$filter**), consulte las [especificaciones de las convenciones del URI de OData](http://go.microsoft.com/fwlink/p/?LinkId=214806).
 
 ## <a name="comparison-operators"></a>Operadores de comparación
-Se admiten los siguientes operadores lógicos para todos los tipos de propiedad:
+Los siguientes operadores lógicos se admiten para todos los tipos de propiedades:
 
-| Operador lógico | Descripción | Ejemplo de cadena de filtro |
+| Operador lógico | DESCRIPCIÓN | Ejemplo de cadena de filtro |
 | --- | --- | --- |
 | eq |Igual |Ciudad eq "Redmond" |
 | gt |Mayor que |Precio gt 20 |
-| GE |Mayor o igual que |Precio ge 10 |
+| ge |Mayor o igual que |Precio ge 10 |
 | lt |Menor que |Precio lt 20 |
 | le |Menor o igual que |Precio le 100 |
 | ne |No igual |Ciudad ne 'Londres' |
-| y |Y |Precio le 200 and precio gt 3,5 |
-| o |O bien |Precio 3,5 or precio gt 200 |
-| not |no |no isAvailable |
+| y |y |Precio le 200 and Precio gt 3,5 |
+| o |O bien |Precio 3,5 or Precio gt 200 |
+| not |not |not isAvailable |
 
-Al construir una cadena de filtro, son importantes las siguientes reglas:
+Al construir una cadena de filtro, las siguientes reglas son importantes:
 
-* Utilice los operadores lógicos para comparar una propiedad con un valor. Tenga en cuenta que no es posible comparar una propiedad con un valor dinámico; una parte de la expresión debe ser una constante.
+* Use los operadores lógicos para comparar una propiedad con un valor. Tenga en cuenta que no es posible comparar una propiedad con un valor dinámico; uno de los lados de la expresión debe ser una constante.
 * Todas las partes de la cadena de filtro distinguen mayúsculas de minúsculas.
-* El valor constante debe ser del mismo tipo de datos como la propiedad en orden para el filtro devuelva resultados válidos. Para obtener más información acerca de los tipos de propiedad admitidos, consulte [Introducción al modelo de datos del servicio tabla](http://go.microsoft.com/fwlink/p/?LinkId=400448).
+* Para que el filtro devuelva resultados válidos, el valor constante debe ser del mismo tipo de datos que la propiedad. Para obtener más información sobre los tipos de propiedades que se admiten, consulte [Introducción al modelo de datos del servicio Tabla](http://go.microsoft.com/fwlink/p/?LinkId=400448).
 
-## <a name="filtering-on-string-properties"></a>Filtrar según propiedades de cadena
-Cuando se filtra según las propiedades de cadena, encierre la constante de cadena entre comillas simples.
+## <a name="filtering-on-string-properties"></a>Filtro por propiedades de cadena
+Al filtrar por propiedades de cadena, la constante de la cadena se escribe entre comillas simples.
 
-En el ejemplo siguiente se filtra según la **PartitionKey** y **RowKey** propiedades; adicional que no son clave también se pueden agregar propiedades a la cadena de filtro:
+En el ejemplo siguiente se filtra por las propiedades **PartitionKey** y **RowKey**; también se pueden agregar a la cadena de filtro otras propiedades que no sean de clave:
 
     PartitionKey eq 'Partition1' and RowKey eq '00001'
 
-Cada expresión de filtro puede incluir entre paréntesis, aunque no es necesario:
+Las expresiones de filtro se pueden escribir entre paréntesis, aunque no es obligatorio:
 
     (PartitionKey eq 'Partition1') and (RowKey eq '00001')
 
-Tenga en cuenta que Table service no admite consultas con caracteres comodín y no se admiten en el Diseñador de tablas o bien. Sin embargo, puede realizar los prefijos coincidan mediante el uso de operadores de comparación en el prefijo deseado. El ejemplo siguiente devuelve las entidades cuya propiedad LastName empieza con la letra "A":
+Tenga en cuenta que Table service no admite consultas con caracteres comodín y que tampoco se admiten en el Diseñador de tablas. Sin embargo, puede realizar que los prefijos coincidan mediante el uso de operadores de comparación en el prefijo deseado. El ejemplo siguiente devuelve las entidades cuya propiedad LastName empieza por la letra "A":
 
     LastName ge 'A' and LastName lt 'B'
 
 ## <a name="filtering-on-numeric-properties"></a>Filtro por propiedades numéricas
-Para filtrar por un entero o número de punto flotante, especifique el número sin comillas.
+Para filtrar por un entero o un número de punto flotante, especifique el número sin comillas.
 
-En este ejemplo devuelve todas las entidades con una propiedad Age cuyo valor es mayor que 30:
+Este ejemplo devuelve todas las entidades con una propiedad Age cuyo valor es mayor que 30:
 
     Age gt 30
 
-En este ejemplo devuelve todas las entidades con una propiedad AmountDue cuyo valor es menor o igual que 100,25:
+Este ejemplo devuelve todas las entidades con una propiedad AmountDue cuyo valor es menor o igual que 100,25:
 
     AmountDue le 100.25
 
 ## <a name="filtering-on-boolean-properties"></a>Filtro por propiedades booleanas
-Para filtrar según un valor booleano, especifique **true** o **false** sin comillas.
+Para filtrar po un valo booleano, especifique **true** o **false** sin comillas.
 
-El ejemplo siguiente devuelve todas las entidades donde se establece la propiedad IsActive en **true**:
+El ejemplo siguiente devuelve todas las entidades en las que la propiedad IsActive está establecida en **true**:
 
     IsActive eq true
 
-También puede escribir esta expresión de filtro sin el operador lógico. En el ejemplo siguiente, Table service también devolverá todas las entidades donde IsActive sea **true**:
+Esta expresión de filtro también se puede escribir sin el operador lógico. En el ejemplo siguiente, Table service también devolverá todas las entidades en las que el valor de IsActive sea **true**:
 
     IsActive
 
-Para devolver todas las entidades donde IsActive sea false, puede usar el no operador:
+Para devolver todas las entidades en las que el valor de IsActive sea false, puede usar el no operador:
 
     not IsActive
 
-## <a name="filtering-on-datetime-properties"></a>Filtrar según propiedades de fecha y hora
-Para filtrar según un valor de fecha y hora, especifique el **datetime** palabra clave, seguida de la constante de fecha y hora entre comillas simples. La constante de fecha y hora debe estar en formato UTC combinado, tal como se describe en [dar formato a valores de propiedad de fecha y hora](http://go.microsoft.com/fwlink/p/?LinkId=400449).
+## <a name="filtering-on-datetime-properties"></a>Filtro por propiedades de fecha y hora
+Para filtrar por un valor de fecha y hora, especifique la palabra clave **datetime** , seguida de la constante de fecha y hora, entre comillas simples. La constante de fecha y hora debe estar en formato UTC combinado, como se describe en [Formato de los valores de la propiedad DateTime](http://go.microsoft.com/fwlink/p/?LinkId=400449).
 
-El ejemplo siguiente devuelve las entidades donde la propiedad CustomerSince es igual a 10 de julio de 2008:
+El siguiente ejemplo devuelve las entidades en las que la propiedad CustomerSince es igual a 10 de julio de 2008:
 
     CustomerSince eq datetime'2008-07-10T00:00:00Z'

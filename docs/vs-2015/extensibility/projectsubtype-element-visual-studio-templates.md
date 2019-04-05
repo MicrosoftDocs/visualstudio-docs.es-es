@@ -1,14 +1,9 @@
 ---
 title: ProjectSubType (elemento) (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType
 helpviewer_keywords:
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bfc64d4f5a1de6223178321eecb3050478ed9960
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d07a62027b494242d3c25aba00fbd5f4d75df78b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997265"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Clasifica la plantilla en una subcategoría del valor especificado en el `ProjectType` elemento.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<ProjectSubType >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProjectSubType>  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -107,4 +102,3 @@ Clasifica la plantilla en una subcategoría del valor especificado en el `Projec
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [ProjectType (Elemento, Plantillas de Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)
-

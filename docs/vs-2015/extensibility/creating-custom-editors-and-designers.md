@@ -1,27 +1,22 @@
 ---
 title: Creación de diseñadores y editores personalizados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 324284a6cac44c995d652cce2f2e82a4c13702c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8dd9b637571bfd7d2480992c7a2fef74a0d5b393
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753252"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996066"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Creación de diseñadores y editores personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,10 +72,10 @@ El entorno de desarrollo integrado (IDE) de Visual Studio puede hospedar diferen
      Si se puede incrustar, debe crear una ventana de host para el editor externo y, a continuación, llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> método y establezca el <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valor de enumeración para `DP_External`. Si no se puede incrustar el editor, el IDE creará automáticamente una ventana independiente para él.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Tutorial: creación de un editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [Tutorial: Crear un Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Explica cómo crear un editor personalizado.  
   
- [Tutorial: adición de características a un editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Tutorial: Agregar características a un Editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Explica cómo agregar características a un editor personalizado.  
   
  [Inicialización de diseñador y configuración de metadatos](../extensibility/designer-initialization-and-metadata-configuration.md)  
@@ -107,4 +102,3 @@ El entorno de desarrollo integrado (IDE) de Visual Studio puede hospedar diferen
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>
-

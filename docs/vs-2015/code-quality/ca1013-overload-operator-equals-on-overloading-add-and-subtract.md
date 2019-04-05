@@ -1,14 +1,9 @@
 ---
-title: 'CA1013: El operador de sobrecarga es igual al sobrecargar suma y resta | Microsoft Docs'
-ms.custom: ''
+title: 'CA1013: Operador de sobrecarga es igual al sobrecargar la suma y resta | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OverrideOperatorEqualsOnOverridingAddAndSubtract
 - OverrideOperatorEqualsOnOverloadingAddAndSubtract
@@ -24,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 277f0c880ba9a3043744cf1c558ea8487062bd12
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da909b6c9917793ef958ec88f208054e6499577b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997004"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: El operador de sobrecarga es igual que la suma y resta de sobrecarga
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,6 +83,3 @@ return left.Equals(right);
 **tipo buena: {3,3} {9,9} son ==?   No**
 ## <a name="see-also"></a>Vea también
  [Operadores de igualdad](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
-
-
-

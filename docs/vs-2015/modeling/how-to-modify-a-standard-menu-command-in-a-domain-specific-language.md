@@ -1,12 +1,9 @@
 ---
-title: 'Cómo: modificar comandos de menú estándar en un lenguaje específico de dominio | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Modificar un comando de menú estándar en un lenguaje específico de dominio | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
@@ -14,15 +11,15 @@ ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837574"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995807"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Cómo: Modificar comandos de menú estándar en lenguajes específicos de dominio
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Filtrar Modificar un comando de menú estándar en un lenguaje específico de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede modificar el comportamiento de algunos de los comandos estándar que se definen automáticamente en su DSL. Por ejemplo, podría modificar **cortar** para que excluya información confidencial. Para ello, se invalidan los métodos en una clase de conjunto de comandos. Estas clases se definen en el archivo CommandSet.cs, en el proyecto DslPackage, y derivan de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -38,7 +35,7 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
    En este tema se explica el procedimiento.  
   
 > [!NOTE]
->  Si desea crear sus propios comandos de menú, vea [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+>  Si desea crear sus propios comandos de menú, vea [Cómo: Agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ##  <a name="what"></a> ¿Qué comandos puede modificar?  
   
@@ -83,7 +80,7 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
      **Tenga en cuenta** si usó la plantilla de archivo de clase para crear el nuevo archivo, debe corregir el espacio de nombres y el nombre de clase.  
   
 ##  <a name="override"></a> Invalide los métodos de comando  
- Mayoría de los comandos tiene dos métodos asociados: el método con un nombre como `ProcessOnStatus`... determina si el comando debe estar visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... se llama cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.  
+ La mayoría de los comandos tienen dos métodos asociados: El método con un nombre como `ProcessOnStatus`... determina si el comando debe estar visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... se llama cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Para cambiar cuándo aparece el comando en un menú  
  Invalide el método ProcessOnStatus... método. Este método debe establecer las propiedades Visible y Enabled de su parámetro MenuCommand. Normalmente, el comando busca en this.CurrentSelection para determinar si se aplica a los elementos seleccionados, y también podría buscar en sus propiedades para determinar si se puede aplicar en el estado actual de las mismas.  
@@ -156,13 +153,10 @@ protected override void ProcessOnMenuDeleteCommand()
 ## <a name="see-also"></a>Vea también  
  <xref:System.ComponentModel.Design.MenuCommand>   
  [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
- [Tutorial: Obtener información de un vínculo seleccionado](../misc/walkthrough-getting-information-from-a-selected-link.md)   
+ [Cómo: Agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
+ [Tutorial: Obtención de información de un vínculo seleccionado](../misc/walkthrough-getting-information-from-a-selected-link.md)   
  [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Tabla de comandos de Visual Studio (. Archivos Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)   
  [VMSDK: diagramas de circuitos. Personalización extensa DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
- [Código de ejemplo: diagramas de circuitos](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [Código de ejemplo: Diagramas de circuitos](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

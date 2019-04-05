@@ -1,29 +1,24 @@
 ---
-title: 'Área de prueba 4: Comprobar | Microsoft Docs'
-ms.custom: ''
+title: 'Área de prueba 4: Compruebe | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 97a610325a5165a1de2cc50fede5bbabf182ef5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 130d1b6b783a07261b9825c37e21fa2eeb008954
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995018"
 ---
-# <a name="test-area-4-check-in"></a>Área de prueba 4: insertar en el repositorio
+# <a name="test-area-4-check-in"></a>Área de prueba 4: Inserción en el repositorio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Esta área de prueba de complemento de control de código fuente trata de enviar los elementos actualizados en el almacén de versiones a través de la **proteger** comando.  
@@ -49,7 +44,7 @@ Esta área de prueba de complemento de control de código fuente trata de enviar
 ## <a name="test-cases"></a>Casos de prueba  
  Los siguientes son casos de prueba concretos para el área de prueba de inserción en el repositorio.  
   
-### <a name="case-4a-modified-items"></a>Caso 4a: modificar elementos  
+### <a name="case-4a-modified-items"></a>Escenario 4a: Elementos modificados  
  Describe cómo usar la verificación en acción para actualizar un archivo bajo control de código fuente que se ha modificado.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
@@ -57,7 +52,7 @@ Esta área de prueba de complemento de control de código fuente trata de enviar
 |Modificar un archivo de texto que se ha desprotegido, compruebe en el archivo solo (**proteger** cuadro de diálogo)|1.  Cree un nuevo proyecto con un archivo de texto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Desproteger y modificar el archivo de texto.<br />4.  Proteger a través del cuadro de diálogo Insertar en el repositorio (**archivo**, **Control de código fuente**, **proteger**).|Comportamiento esperado común.|  
 |Modificar un archivo de texto que se ha desprotegido, compruebe en el archivo solo (**protecciones pendientes** ventana)|1.  Cree un nuevo proyecto con un archivo de texto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Desproteger y modificar el archivo de texto.<br />4.  Proteger a través de la **protecciones pendientes** ventana.|Comportamiento esperado común.|  
   
-### <a name="case-4b-adding-files"></a>Caso 4b: adición de archivos  
+### <a name="case-4b-adding-files"></a>Escenario 4b: Agregar archivos  
  Al agregar un archivo a un proyecto o un elemento a una solución, debe cambiar también el proyecto o solución. Por lo tanto, el archivo primario también está desprotegido y debe protegerse para completar la incorporación.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
@@ -65,7 +60,7 @@ Esta área de prueba de complemento de control de código fuente trata de enviar
 |Agregar un archivo de texto y proteger todo (**proteger** cuadro de diálogo)|1.  Cree un nuevo proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Agregue un archivo de texto al proyecto.<br />4.  Si se le solicite, acepte desprotección del proyecto.<br />5.  Seleccione la solución en **el Explorador de soluciones**.<br />6.  Proteger desde el **proteger** cuadro de diálogo.|Comportamiento esperado común.|  
 |Agregar un archivo de texto y proteger todo (**protecciones pendientes** ventana)|1.  Cree un nuevo proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Agregue un archivo de texto al proyecto.<br />4.  Si se le solicite, acepte desprotección del proyecto.<br />5.  Proteja la solución de **protecciones pendientes** ventana.|Comportamiento esperado comunes|  
   
-### <a name="case-4c-adding-projects"></a>Caso 4c: agregar proyectos  
+### <a name="case-4c-adding-projects"></a>Caso 4 núcleos: Agregar proyectos  
  Al agregar un proyecto a una solución, debe cambiar también la solución. Por lo tanto, el archivo de solución también está desprotegido y debe protegerse para completar la incorporación.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
@@ -75,4 +70,3 @@ Esta área de prueba de complemento de control de código fuente trata de enviar
   
 ## <a name="see-also"></a>Vea también  
  [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

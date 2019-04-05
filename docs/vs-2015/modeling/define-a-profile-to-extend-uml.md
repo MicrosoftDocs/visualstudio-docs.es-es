@@ -1,12 +1,9 @@
 ---
 title: Definir un perfil para ampliar UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - profiles, UML
 - stereotypes, UML
@@ -18,13 +15,13 @@ ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730318"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994927"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definir un perfil para ampliar UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +125,7 @@ Puede definir un *perfil UML* para personalizar los elementos del modelo estánd
   
    2.  Para instalar la extensión:  
   
-       1.  Haga doble clic en el archivo `.vsix`. Se iniciará el Instalador de extensiones de Visual Studio.  
+       1.  Haga doble clic en el archivo `.vsix`. Se iniciará el Instalador de extensión de Visual Studio.  
   
        2.  Reinicie todas las instancias de Visual Studio que estén en ejecución.  
   
@@ -223,9 +220,9 @@ Puede definir un *perfil UML* para personalizar los elementos del modelo estánd
 7.  Para compilar la extensión de Visual Studio, compile el proyecto de extensión o comprima todos los archivos, tal y como se describe en las secciones anteriores.  
   
 ##  <a name="Schema"></a> La estructura de un perfil  
- El archivo XSD para los perfiles UML puede encontrarse en el ejemplo siguiente: [establecer XSD de perfiles y estereotipos](http://go.microsoft.com/fwlink/?LinkID=213811). Como ayuda para modificar los archivos de perfil, instale el archivo `.xsd` en:  
+ El archivo XSD para los perfiles UML puede encontrarse en el ejemplo siguiente: [Establecer XSD de perfiles y estereotipos](http://go.microsoft.com/fwlink/?LinkID=213811). Como ayuda para modificar los archivos de perfil, instale el archivo `.xsd` en:  
   
- **%ProgramFiles%\Microsoft visual Studio [versión] \Xml\Schemas**  
+ **%ProgramFiles%\Microsoft Visual Studio [version]\Xml\Schemas**  
   
  En esta sección se utiliza el perfil de C# como ejemplo. La definición completa del perfil puede verse en:  
   
@@ -345,7 +342,7 @@ Puede definir un *perfil UML* para personalizar los elementos del modelo estánd
  Los estereotipos no aparecen en los modelos UML.  
  Tiene que seleccionar el perfil en un paquete o modelo. A continuación, los estereotipos aparecerán en elementos dentro del paquete o modelo. Para obtener más información, consulte [elementos del modelo agregar estereotipos a UML](../modeling/add-stereotypes-to-uml-model-elements.md).  
   
- Aparece el siguiente error al abrir un modelo UML: **VS1707: no se puede cargar los siguientes perfiles porque se produjo un error de serialización: MyProfile.profile**  
+ Al abrir un modelo UML, aparece el siguiente error: **VS1707: No se puede cargar los siguientes perfiles porque se produjo un error de serialización: MyProfile.profile**  
  1.  Compruebe que la sintaxis XML básica de .profile es correcta.  
   
 2. Asegúrese de que cada nombre del Moniker tiene el formato /profileName/nodeName. ProfileName es el valor del atributo de nombre en el nodo de perfil raíz. NodeName es el valor del atributo de nombre de una metaclase, externalType o enumerationType.  
@@ -358,7 +355,7 @@ Puede definir un *perfil UML* para personalizar los elementos del modelo estánd
   
 5. Recompile el archivo VSIX y ábralo en el Explorador de Windows para reinstalarlo. Reinicie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-   La extensión no aparece en el Administrador de extensiones, pero al intentar volver a instalarlo, aparece el siguiente mensaje: **la extensión ya está instalada en todos los productos aplicables.**  
+   La extensión no aparece en el Administrador de extensiones, pero al intentar volver a instalarlo, aparece el mensaje siguiente: **La extensión ya está instalada en todos los productos aplicables.**  
    1.  Quite el archivo de extensión de una subcarpeta de *LocalAppData*\Microsoft\VisualStudio\\\Extensions\ [versión]  
   
    -   Para ver *LocalAppData*, debe establecer mostrar archivos y carpetas ocultos en la pestaña de vista de las opciones de carpeta del explorador de Windows.  
@@ -371,8 +368,5 @@ Puede definir un *perfil UML* para personalizar los elementos del modelo estánd
  [Agregar estereotipos a elementos del modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Personalizar el modelo con perfiles y estereotipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Estereotipos estándar para modelos UML](../modeling/standard-stereotypes-for-uml-models.md)   
- [Ejemplo: Elementos UML de Color por estereotipo](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [Ejemplo: Elementos UML de color por estereotipo](http://go.microsoft.com/fwlink/?LinkID=213841)   
  [Ejemplo: Definir estereotipos, XSD de perfiles](http://go.microsoft.com/fwlink/?LinkID=213811)
-
-
-

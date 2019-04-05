@@ -1,27 +1,22 @@
 ---
-title: 'Tutorial: Capturar información de gráficos mediante programación | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Capturar información de gráficos mediante programación | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a5adeff9-afaf-4047-b5ce-ef0aefe710eb
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feff1af744bd9f42d2fe8af67a72ec4856a09acc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747676"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996393"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Capturar información de gráficos mediante programación
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Captura de información de gráficos mediante programación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para capturar mediante programación información de gráficos desde la aplicación Direct3D.  
@@ -204,9 +199,6 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
 -   Aprender cómo analizar la información de gráficos capturada utilizando la herramienta Diagnóstico de gráficos. Consulte [Introducción](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Capturar información de gráficos](../debugger/walkthrough-capturing-graphics-information.md)   
+ [Tutorial: Captura de información de gráficos](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Herramienta de captura de línea de comandos](../debugger/command-line-capture-tool.md)
-
-
-

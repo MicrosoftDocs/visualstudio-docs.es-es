@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: volver a firmar aplicaciones y manifiestos de implementación | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Volver a firmar aplicaciones y manifiestos de implementación | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,23 +18,23 @@ ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 734258871e72e6272abcd61c4efa1a00765f8a32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185723"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997077"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Cómo: Volver a firmar manifiestos de aplicación e implementación
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Filtrar Volver a firmar manifiestos de implementación y aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Después de realizar cambios en las propiedades de implementación en el manifiesto de aplicación para aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation (xbap) o las soluciones de Office, debe volver a firmar la aplicación y los manifiestos de implementación con un certificado. Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de usuario final.  
+Después de realizar cambios en las propiedades de implementación en el manifiesto de aplicación para aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation (xbap) o las soluciones de Office, debe volver a firmar la aplicación y los manifiestos de implementación con un certificado. Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.  
   
  Otro escenario donde se podrían volver a firmar los manifiestos es cuando los clientes desean firmar la aplicación y los manifiestos de implementación con su propio certificado.  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>Volver a firmar la aplicación y la implementación de manifiestos  
- Este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de aplicación (.manifest). Para obtener más información, consulte [Cómo: cambiar las propiedades de implementación](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de aplicación (.manifest). Para obtener más información, vea [Cómo: Cambiar propiedades de implementación](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para volver a firmar la aplicación e implementación de manifiestos con Mage.exe  
   
@@ -125,12 +120,9 @@ Después de realizar cambios en las propiedades de implementación en el manifie
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)   
- [Cómo: Habilitar la configuración de seguridad de ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Cómo: Habilitar a la configuración de seguridad de ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
  [Cómo: Establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Cómo: Agregar un publicador de confianza a un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [Cómo: Configurar el comportamiento del mensaje relativo a la confianza de ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
-
-
-
+ [Cómo: Agregar un publicador de confianza en un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Cómo: Configuración del comportamiento del mensaje relativo a la confianza de ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

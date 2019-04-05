@@ -1,14 +1,9 @@
 ---
 title: Características de depuración más | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: a41166d7-e03e-42ef-862e-dd025ef600b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9b3375e97aa356b9c22f29bcf7bf696607cd30de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2e6140b10b9f0c9a540144ca70bb081ac2d3e7a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729317"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995932"
 ---
 # <a name="more-debugging-features"></a>Más características de depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Esta sección contiene características adicionales que puede usar con el depura
  [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Explica la depuración Just-In-Time, que inicia el depurador automáticamente cuando se bloquea un programa que se ejecuta fuera de Visual Studio.  
   
- [Tutorial: Depurar en tiempo de diseño](../debugger/walkthrough-debugging-at-design-time.md)  
+ [Tutorial: Depuración en tiempo de diseño](../debugger/walkthrough-debugging-at-design-time.md)  
  Muestra cómo utilizar la ventana Inmediato de Visual Studio para ejecutar una función o subrutina mientras la aplicación no se está ejecutando. 
   
  [Editar y continuar](../debugger/edit-and-continue.md)  
@@ -54,8 +49,5 @@ Esta sección contiene características adicionales que puede usar con el depura
   
  [Uso de archivos de volcado de memoria](../debugger/using-dump-files.md) describe archivos de volcado, incluidas las instrucciones para guardarlos y abrirlos. Los archivos de volcado de memoria contienen una instantánea del estado de su programa en algún momento determinado, normalmente después de un bloqueo. Si prueba el programa en un equipo que no tiene instalados los archivos de código fuente o PDB, puede guardar un archivo de volcado de memoria cuando se produzca un bloqueo y utilizarlo para depurar el bloqueo en el equipo de compilación que contiene los archivos de código fuente y PDB. 
   
- [Cómo: Restaurar los comandos ocultos del depurador](../debugger/how-to-restore-hidden-debugger-commands.md)  
+ [Cómo: Restablecimiento de comandos ocultos del depurador](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Describe cómo hacer que estén visibles los comandos del depurador que la configuración predeterminada del IDE ha ocultado.
-
-
-

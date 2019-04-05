@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: crear un paquete de arranque localizado | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear un paquete de arranque localizado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
@@ -17,15 +12,15 @@ ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b47b1b1a776d27c2a75c9303c34255aff8622eb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998071"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Cómo: Crear un paquete de arranque localizado
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Filtrar Crear un paquete de arranque localizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Después de crear un paquete de arranque, puede crear versiones localizadas del paquete de programa previo creando dos archivos más para cada configuración regional: archivo (como CLUF.rtf) y un manifiesto del paquete (package.xml) de los términos de una licencia de software.  
@@ -39,7 +34,7 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
 3.  Cree un manifiesto del paquete llamado package.xml, actualice las cadenas y la referencia cultural, y coloque el archivo en la nueva carpeta. Si ya ha creado un programa previo de Visual Studio en el idioma de destino, puede copiar el archivo package.xml de Visual Studio y modificarlo en este paso.  
   
 > [!NOTE]
->  Si usas un proyecto de instalación para implementar aplicaciones, puede localizar la aplicación cambiando el **localización** propiedad.  
+>  Si usa un proyecto de instalación para implementar aplicaciones, puede localizar la aplicación cambiando la propiedad **Localización**.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -72,7 +67,7 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
   
 2.  Cree un archivo que contenga los términos de licencia de software para el paquete de programa previo y colóquelo en la nueva carpeta.  
   
-3.  Cree un manifiesto del paquete con el nombre package.xml y colóquelo en la nueva carpeta. Para obtener más información, consulte [Cómo: crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).  
+3.  Cree un manifiesto del paquete con el nombre package.xml y colóquelo en la nueva carpeta. Para obtener más información, vea [Cómo: Crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).  
   
 4.  Actualice la sección `<Strings>` del manifiesto del paquete para que las cadenas estén en el idioma correcto de la configuración regional.  
   
@@ -101,7 +96,4 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
 ## <a name="see-also"></a>Vea también  
  [Crear paquetes de arranque](../deployment/creating-bootstrapper-packages.md)   
  [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)   
- [Cómo: Crear un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md)
-
-
-
+ [Cómo: Creación de un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md)

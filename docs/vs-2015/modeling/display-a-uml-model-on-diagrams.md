@@ -1,25 +1,22 @@
 ---
 title: Mostrar un modelo UML en diagramas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994921"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Mostrar un modelo UML en diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +41,7 @@ En el código de programa de una extensión de Visual Studio puede controlar el 
   
 |Tipo de elemento|Por ejemplo|Requisitos del código para su visualización|  
 |---------------------|-----------------|-------------------------------------|  
-|Clasificador|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Cree formas asociadas en diagramas especificados. Puede crear todas las formas que desee para cada clasificador.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Establezca `parentShape` en `null` para una forma en el nivel superior del diagrama.<br /><br /> Para mostrar una forma dentro de otra:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Nota:** si ejecuta una operación Display dentro de un **ILinkedUndo** transacción, el método devuelve a veces no `IShape`. Sin embargo, la forma se crea correctamente y puede obtenerse acceso a ella mediante `IElement.Shapes().`|  
+|Clasificador|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Cree formas asociadas en diagramas especificados. Puede crear todas las formas que desee para cada clasificador.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Establezca `parentShape` en `null` para una forma en el nivel superior del diagrama.<br /><br /> Para mostrar una forma dentro de otra:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Nota:**  Si ejecuta una operación Display dentro de un **ILinkedUndo** transacción, el método devuelve a veces no `IShape`. Sin embargo, la forma se crea correctamente y puede obtenerse acceso a ella mediante `IElement.Shapes().`|  
 |Elemento secundario del clasificador|Atributo, operación,<br /><br /> Elemento, puerto|Automático: no es necesario código.<br /><br /> Se muestra como parte del elemento primario.|  
 |Comportamiento|Interacción (secuencia)<br /><br /> Actividad|Enlace el comportamiento a un diagrama adecuado.<br /><br /> Un comportamiento no puede enlazarse a más de un diagrama a la vez.<br /><br /> Por ejemplo:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
 |Elemento secundario del comportamiento|Líneas de vida, mensajes, acciones, nodos de objeto|Automático: no es necesario código.<br /><br /> Se muestra si el elemento primario está enlazado a un diagrama.|  
@@ -386,6 +383,3 @@ namespace AlignCommand
  [Navegar por el modelo UML](../modeling/navigate-the-uml-model.md)   
  [Ejemplo: Alinear formas en un comando de menú de diagrama](http://go.microsoft.com/fwlink/?LinkId=213809)   
  [Ejemplo: Creación de elementos, formas y estereotipos](http://go.microsoft.com/fwlink/?LinkId=213811)
-
-
-
