@@ -1,29 +1,24 @@
 ---
-title: 'Cómo: proporcionar automatización para Windows | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Provisión de automatización para Windows | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
 - tool windows, automation
 ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d1c16b0688cd5fa07fee8be0296958b23aa8c0ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 38e15c19ad5f9b0596240f473e078ebb6452c22b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742335"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995357"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>Cómo: proporcionar automatización para Windows
+# <a name="how-to-provide-automation-for-windows"></a>Filtrar Provisión de automatización para Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Puede proporcionar automatización para ventanas de herramientas y documentos. Proporcionar automatización es aconsejable cada vez que se desea disponer de los objetos de automatización en una ventana, y el entorno no proporciona un objeto de automatización listos para su uso, ya que lo hace con una lista de tareas.  
@@ -48,4 +43,3 @@ Puede proporcionar automatización para ventanas de herramientas y documentos. P
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>
-

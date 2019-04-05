@@ -1,25 +1,20 @@
 ---
 title: Trabajar con datos XML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 465cd132-2e36-435d-920b-50b767c2217c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6a67caa1b7c2246671d4e5a8e456a246b3662acd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997569"
 ---
 # <a name="working-with-xml-data"></a>Trabajo con datos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,17 +59,11 @@ XML y sus tecnologías relacionadas desempeñan un papel muy importante en la fo
  [Depuración de XSLT](../xml-tools/debugging-xslt.md)  
  Describe cómo depurar hojas de estilos con el depurador de Visual Studio.  
   
- [Referencia de los estándares XML](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
- Proporciona información sobre las tecnologías XML, como XML, DTD (definición de tipo de documento), XSD (lenguaje de definición de esquema XML) y XSLT.  
+ [Referencia de los estándares XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ Proporciona información sobre las tecnologías XML, como XML, DTD (definición de tipo de documento), XSD (lenguaje de definición de esquema XML) y XSLT.
   
- [Crear y editar conjuntos de datos con tipo](../data-tools/creating-and-editing-typed-datasets.md)  
- Ofrece una explicación de las herramientas de tiempo de diseño para la creación de conjuntos de datos.  
-  
- [Servicios Web XML en código administrado](http://msdn.microsoft.com/en-us/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ [Servicios Web XML en código administrado](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  Describe cómo crear e implementar servicios Web XML y cómo tener acceso a los mismos.  
   
 ## <a name="see-also"></a>Vea también  
  [Herramientas XML en Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

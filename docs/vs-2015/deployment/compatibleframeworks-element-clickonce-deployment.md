@@ -1,14 +1,9 @@
 ---
 title: '&lt;compatibleFrameworks&gt; elemento (implementación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +14,13 @@ ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 051fd3eea0ffab2a7c5f088538d7208c8286d1d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: af927086261f5472e0a71182b8c03b7d750827ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176599"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995511"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; elemento (implementación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +34,12 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
   
 ```  
 <compatibleFrameworks  
-      SupportUrl>   
+      SupportUrl>   
    <framework  
       targetVersion  
       profile  
       supportedRuntime  
-   />   
+   />   
 </ compatibleFrameworks>  
 ```  
   
@@ -58,13 +53,13 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
 |`S` `upportUrl`|Opcional. Especifica una dirección URL donde se puede descargar la versión de .NET Framework compatible preferida.|  
   
 ## <a name="framework"></a>marco de trabajo  
- Requerido. En la tabla siguiente se enumera los atributos que el `framework` admite el elemento.  
+ Obligatorio. En la tabla siguiente se enumera los atributos que el `framework` admite el elemento.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`targetVersion`|Requerido. Especifica el número de versión de .NET Framework de destino.|  
-|`profile`|Requerido. Especifica el perfil de .NET Framework de destino.|  
-|`supportedRuntime`|Requerido. Especifica el número de versión del tiempo de ejecución asociada con el destino es .NET Framework.|  
+|`targetVersion`|Obligatorio. Especifica el número de versión de .NET Framework de destino.|  
+|`profile`|Obligatorio. Especifica el perfil de .NET Framework de destino.|  
+|`supportedRuntime`|Obligatorio. Especifica el número de versión del tiempo de ejecución asociada con el destino es .NET Framework.|  
   
 ## <a name="remarks"></a>Comentarios  
   
@@ -82,6 +77,3 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
   
 ## <a name="see-also"></a>Vea también  
  [Manifiesto de la implementación ClickOnce](../deployment/clickonce-deployment-manifest.md)
-
-
-
