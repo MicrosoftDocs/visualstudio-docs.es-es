@@ -1,32 +1,27 @@
 ---
 title: Combo (elemento) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0ab350133813f32b87570ea17df50060f93bc300
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: daa89266d653743a743f42e5f0b8e11c954adc1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788943"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998315"
 ---
 # <a name="combo-element"></a>Combo (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Define los comandos que aparecen en un cuadro combinado. Hay cuatro tipos de cuadros combinados, como sigue: cuadro combinado desplegable, DynamicCombo, IndexCombo y MRUCombo.  
+Define los comandos que aparecen en un cuadro combinado. Hay cuatro tipos de cuadros combinados, como sigue: Cuadro combinado desplegable, DynamicCombo, IndexCombo y MRUCombo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -45,21 +40,21 @@ Define los comandos que aparecen en un cuadro combinado. Hay cuatro tipos de cua
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Requerido. GUID del identificador de comando/identificador de GUID.|  
-|id|Requerido. Id. del identificador de comando/identificador de GUID.|  
-|defaultWidth|Requerido. Un entero que especifica un ancho de píxel del cuadro combinado.|  
-|idCommandList|Requerido. Un identificador que se envía al destino de comando activo para recuperar la lista de elementos que se mostrará en el cuadro combinado. El identificador estará en el mismo ámbito GUID que el control.|  
+|guid|Obligatorio. GUID del identificador de comando/identificador de GUID.|  
+|id|Obligatorio. Id. del identificador de comando/identificador de GUID.|  
+|defaultWidth|Obligatorio. Un entero que especifica un ancho de píxel del cuadro combinado.|  
+|idCommandList|Obligatorio. Un identificador que se envía al destino de comando activo para recuperar la lista de elementos que se mostrará en el cuadro combinado. El identificador estará en el mismo ámbito GUID que el control.|  
 |priority|Opcional. Un valor numérico que especifica la prioridad.|  
-|type|Opcional. Un valor enumerado que especifica el tipo de botón.<br /><br /> Si no se especifica, utiliza el botón.<br /><br /> Cuadro combinado desplegable<br /> El VSPackage es responsable de rellenar el contenido de este cuadro combinado. El usuario no puede escribir nada en el cuadro de texto de esta lista desplegable.<br /><br /> DynamicCombo<br /> El VSPackage es responsable de rellenar el contenido de este cuadro combinado. El usuario puede editar a este cuadro combinado y también seleccionar elementos en él.<br /><br /> IndexCombo<br /> Igual que DynamicCombo excepto en que genera el índice del elemento en lugar de su texto.<br /><br /> MRUCombo<br /> Rellenado por el entorno de desarrollo integrado (IDE) en nombre de VSPackage.  El usuario puede editar en este cuadro combinado. El IDE recuerda hasta las últimas 16 entradas por cuadro combinado.<br /><br /> Cuando el usuario selecciona algo en el cuadro combinado o entra en algo nuevo, el IDE notifica a VSPackage adecuado.|  
+|type|Opcional. Un valor enumerado que especifica el tipo de botón.<br /><br /> Si no se especifica, utiliza el botón.<br /><br /> DropDownCombo<br /> El VSPackage es responsable de rellenar el contenido de este cuadro combinado. El usuario no puede escribir nada en el cuadro de texto de esta lista desplegable.<br /><br /> DynamicCombo<br /> El VSPackage es responsable de rellenar el contenido de este cuadro combinado. El usuario puede editar a este cuadro combinado y también seleccionar elementos en él.<br /><br /> IndexCombo<br /> Igual que DynamicCombo excepto en que genera el índice del elemento en lugar de su texto.<br /><br /> MRUCombo<br /> Rellenado por el entorno de desarrollo integrado (IDE) en nombre de VSPackage.  El usuario puede editar en este cuadro combinado. El IDE recuerda hasta las últimas 16 entradas por cuadro combinado.<br /><br /> Cuando el usuario selecciona algo en el cuadro combinado o entra en algo nuevo, el IDE notifica a VSPackage adecuado.|  
 |Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|Elemento primario|Opcional. El elemento primario del botón.|  
-|CommandFlag|Requerido. Consulte [Command Flag (elemento)](../extensibility/command-flag-element.md). Los valores válidos de CommandFlag para un botón son los siguientes.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -FilterKeys<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
-|Cadenas|Requerido. Consulte [cadenas elemento](../extensibility/strings-element.md). Se debe definir el elemento ButtonText secundario.|  
+|Primario|Opcional. El elemento primario del botón.|  
+|CommandFlag|Obligatorio. Consulte [Command Flag (elemento)](../extensibility/command-flag-element.md). Los valores válidos de CommandFlag para un botón son los siguientes.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -FilterKeys<br /><br /> - IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|Cadenas|Obligatorio. Consulte [cadenas elemento](../extensibility/strings-element.md). Se debe definir el elemento ButtonText secundario.|  
 |Anotación|Comentario opcional.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
@@ -92,4 +87,3 @@ Define los comandos que aparecen en un cuadro combinado. Hay cuatro tipos de cua
   
 ## <a name="see-also"></a>Vea también  
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

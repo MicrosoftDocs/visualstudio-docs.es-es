@@ -1,13 +1,8 @@
 ---
 title: Automático y variables locales Windows | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -25,13 +20,13 @@ ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 51e62df0fb98a9c7b04b09b3e58fb52828e1bd5a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782484"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995786"
 ---
 # <a name="autos-and-locals-windows"></a>Ventanas de variables locales y automáticas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ La ventana **Automático** (durante la depuración, **CTRL+ALT+V, A**o **Depurar
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examinar objetos en las ventanas de variables locales y automáticas  
  Las matrices y los objetos se muestran en las ventanas Automático y Variables locales como controles de árbol. Haga clic en la flecha situada a la izquierda del nombre de la variable para expandir la vista y mostrar los campos y las propiedades. Este es un ejemplo de un <xref:System.IO.FileStream> objeto en el **variables locales** ventana:  
   
- ![Variables locales&#45;FileStream](../debugger/media/locals-filestream.png "FileStream de variables locales")  
+ ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>¿Qué variables se muestran en la ventana Automático?  
  Se puede usar la ventana **Automático** en código C#, Visual Basic y C++. La ventana **Automático** no admite F# ni JavaScript.  
@@ -153,8 +148,3 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>Vea también  
  [Ventanas del depurador](../debugger/debugger-windows.md)
-
-
-
-
-

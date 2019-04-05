@@ -1,26 +1,21 @@
 ---
 title: Administrar la carga de proyectos en una solución | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 041c5ab52a7a0e8be89ef1abe6db4d1aed51ecfc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ce2f80aa50c3222797d925a888e5c004b21512d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994956"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Administración de la carga de proyectos en una solución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +84,7 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Esto se desencadena después de la solución se haya cargado, pero antes en segundo plano carga del proyecto comienza de nuevo. Por ejemplo, un usuario podría haber accedido a un proyecto cuya prioridad de carga es LoadIfNeeded o el Administrador de carga de solución puede haber cambiado una prioridad de la carga de proyecto a BackgroundLoad, que se iniciaría una carga en segundo plano de ese proyecto.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Si hay un administrador de carga de solución Esto se desencadena después de una solución está inicialmente totalmente cargada. También se desencadena después de carga en segundo plano o la demanda de carga siempre que se carguen por completo la solución. Al mismo tiempo, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> se vuelve a activar.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Esto se desencadena después de carga inicialmente completamente una solución, si hay un administrador de carga de solución. También se desencadena después de carga en segundo plano o la demanda de carga siempre que se carguen por completo la solución. Al mismo tiempo, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> se vuelve a activar.  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Esto se desencadena antes de la carga de un proyecto (o proyectos). Para asegurarse de que otros procesos en segundo plano se completan antes de que se cargan los proyectos, establezca `pfShouldDelayLoadToNextIdle` a **true**.  
   
@@ -120,4 +115,3 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
   
 > [!NOTE]
 >  . De forma predeterminada sólo los proyectos que tienen la demanda de cargan y se cargan las prioridades de carga en segundo plano, pero si el <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> marca se pasa al método, se cargarán todos los proyectos excepto las que se marcan para cargar explícitamente.
-

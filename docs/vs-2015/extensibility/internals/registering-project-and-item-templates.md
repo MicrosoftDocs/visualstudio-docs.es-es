@@ -1,14 +1,9 @@
 ---
 title: Registro de plantillas de proyecto y elemento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995015"
 ---
 # <a name="registering-project-and-item-templates"></a>Registro de plantillas para proyectos y elementos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,11 +39,11 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|nombre|Tipo|Descripción|  
+|Name|Tipo|Descripción|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Nombre predeterminado de los proyectos de este tipo.|  
 |DisplayName|REG_SZ|Id. de recurso del nombre que deben recuperarse de la DLL satélite registrados en los paquetes.|  
-|Package|REG_SZ|Id. de clase del paquete se registra en los paquetes.|  
+|Paquete|REG_SZ|Id. de clase del paquete se registra en los paquetes.|  
 |ProjectTemplatesDir|REG_SZ|Ruta de acceso predeterminada de los archivos de plantilla de proyecto. Los archivos de plantilla de proyecto se muestran mediante el **nuevo proyecto** plantilla.|  
   
 ### <a name="registering-item-templates"></a>Registrar las plantillas de elemento  
@@ -62,7 +57,7 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "SortPriority"=dword:00000064  
 ```  
   
-|nombre|Tipo|Descripción|  
+|Name|Tipo|Descripción|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Identificador de recurso para las plantillas Agregar elemento.|  
 |TemplatesDir|REG_SZ|Ruta de acceso de los elementos de proyecto que se muestra en el cuadro de diálogo para la **Agregar nuevo elemento** asistente.|  
@@ -89,7 +84,7 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "SortPriority"=dword:00000064  
 ```  
   
-|nombre|Tipo|Descripción|  
+|Name|Tipo|Descripción|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **buscar en archivos** cuadro de diálogo. Los filtros comunes se muestran en la lista de filtros antes de los filtros de marcado no tan comunes.|  
 |CommonOpenFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **abrir archivo** cuadro de diálogo. Los filtros comunes se muestran en la lista de filtros antes de los filtros de marcado no tan comunes.|  
@@ -128,4 +123,3 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
  [Asistentes](../../extensibility/internals/wizards.md)   
  [Localizar aplicaciones](../../ide/localizing-applications.md)   
  [CATID para los objetos que se utilizan normalmente para ampliar proyectos](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-

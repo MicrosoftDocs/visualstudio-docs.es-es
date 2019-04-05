@@ -1,26 +1,21 @@
 ---
-title: IDebugExpressionEvaluator3 | Documentos de Microsoft
-ms.custom: ''
+title: IDebugExpressionEvaluator3 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3 interface
 ms.assetid: c27c2a14-300b-4535-be22-767c83602f69
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9b74189477452a86f99f31eaeb3aa800c3098429
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbf159adf4dc475add95ff79d075718b4f5345b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998366"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -49,7 +44,6 @@ IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
-

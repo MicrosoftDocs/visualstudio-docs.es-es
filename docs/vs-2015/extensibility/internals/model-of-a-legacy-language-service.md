@@ -1,26 +1,21 @@
 ---
 title: Modelo de un servicio de lenguaje heredado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 76838d6beb5d24f7586ddd44f7bd5400dec4f355
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27d51df6dd11509b86e6648d59978b87d9cd8a02
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795192"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998672"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,4 +52,3 @@ Un servicio de lenguaje define los elementos y características para un idioma e
   
 ## <a name="see-also"></a>Vea también  
  [Datos de documento y vista de documento en editores personalizados](../../extensibility/document-data-and-document-view-in-custom-editors.md)
-

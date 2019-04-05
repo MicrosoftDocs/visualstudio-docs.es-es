@@ -1,26 +1,21 @@
 ---
 title: Adición de búsqueda a una ventana de herramientas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding search
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cd5331e433c4790a51dfb7c42b5b0b50eb26c1a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cee22438dfd33f25e154b6584ddc768989a92cd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995724"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Adición de búsqueda a una ventana de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -558,4 +553,3 @@ Al crear o actualizar una ventana de herramientas en la extensión, puede agrega
 8.  Elija la X en el lado derecho del cuadro de búsqueda.  
   
      La búsqueda está desactivada, y se mostrará el contenido original. Sin embargo, el **Coincidir mayúsculas y minúsculas** aún está seleccionada la casilla de verificación.
-

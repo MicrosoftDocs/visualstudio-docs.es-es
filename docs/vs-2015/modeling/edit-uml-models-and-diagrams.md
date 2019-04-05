@@ -1,12 +1,9 @@
 ---
 title: Editar modelos y diagramas UML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.modelingproject
 - vs.teamarch.UMLModelExplorer
@@ -23,13 +20,13 @@ ms.assetid: 87affd40-8127-4ee9-9d3a-ad977abe2ed6
 caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92d2be3abfb849b0b5cf5c1c820040b658e2240c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cc16133911cf4b49af983aabb4b7b60405c956c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803440"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996054"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Editar modelos y diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +190,7 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
   
  **Cada proyecto de modelado contiene un único bloque de cambios.** Todos los cambios que realiza en el modelo y los diagramas se mantienen en esta pila. La pila también incluye cambios de foco de un diagrama a otro. El comando Deshacer revierte los cambios de esta pila.  
   
- Por ejemplo, supongamos que realiza las siguientes operaciones: realizar un cambio en Diagrama1, cambiar el foco en Diagrama 2, cambiar Diagrama2. Al deshacer los cambios, la primera vez se revertirá el último cambio, la siguiente vez se volverá a cambiar el foco a Diagrama 1 y la tercera vez se revertirá el cambio en Diagrama1.  
+ Por ejemplo, supongamos que realizar estas operaciones: Realice un cambio en Diagrama1; cambiar el foco al diagrama 2. cambiar diagrama2. Al deshacer los cambios, la primera vez se revertirá el último cambio, la siguiente vez se volverá a cambiar el foco a Diagrama 1 y la tercera vez se revertirá el cambio en Diagrama1.  
   
  **Al cerrar un diagrama, trunca la pila de cambios.** Si cierra un diagrama, no podrá deshacer los cambios que realizó en dicho diagrama y no podrá deshacer los cambios anteriores en el modelo o cualquiera de sus diagramas.  
   
@@ -219,7 +216,7 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
      Aparece una forma que proporciona una vista del elemento del modelo, además de las vistas en otros diagramas o en el mismo diagrama.  
   
     > [!NOTE]
-    >  El efecto es diferente cuando arrastra una clase o un componente a un diagrama de secuencia. En ese caso, se crea una nueva línea de vida cuyo tipo sea esa clase o componente. Para obtener más información, consulte [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md).  
+    >  El efecto es diferente cuando arrastra una clase o un componente a un diagrama de secuencia. En ese caso, se crea una nueva línea de vida cuyo tipo sea esa clase o componente. Para obtener más información, consulte [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Para agregar una nueva vista de un elemento de modelo mediante Pegar referencia  
   
@@ -274,7 +271,7 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
    No se puede replicar un diagrama copiando y pegando en el Explorador de soluciones.  
   
 ##  <a name="Deleting"></a> Eliminación de un elemento de modelo o sus vistas  
- Algunos tipos de elementos, especialmente los clasificadores, se pueden quitar de un diagrama sin eliminarlos del modelo. Los clasificadores son los elementos principales que se muestran en los diagramas de clases, diagramas de componentes y diagramas de casos de uso. Pueden aparecer en más de un diagrama. Para estos tipos de elementos, hay dos comandos independientes: **quitar del diagrama** y **eliminar del modelo**.  
+ Algunos tipos de elementos, especialmente los clasificadores, se pueden quitar de un diagrama sin eliminarlos del modelo. Los clasificadores son los elementos principales que se muestran en los diagramas de clases, diagramas de componentes y diagramas de casos de uso. Pueden aparecer en más de un diagrama. Para estos tipos de elementos, hay dos comandos independientes: **Quitar del diagrama** y **eliminar del modelo**.  
   
  Por el contrario, cuando se elimina una relación de un diagrama, siempre se elimina del modelo.  
   
@@ -323,7 +320,7 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
   
 -   Para agregar notas y explicaciones a los elementos del modelo, puede crear comentarios y, a continuación, vincularlos a los elementos.  
   
--   Para alinear perfectamente las formas de una columna o fila en el diagrama, puede instalar el comando Alinear formas. Esto está disponible como una extensión UML de ejemplo: [UML: comando para alinear formas](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
+-   Para alinear perfectamente las formas de una columna o fila en el diagrama, puede instalar el comando Alinear formas. Esto está disponible como una extensión UML de ejemplo:  [UML: Comando para alinear formas](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
   
 ### <a name="to-export-a-diagram-as-an-image"></a>Para exportar un diagrama como imagen  
  Para obtener más información, consulte [exportar diagramas como imágenes](../modeling/export-diagrams-as-images.md).  
@@ -345,6 +342,3 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
  [Crear diagramas y proyectos de modelado UML](../modeling/create-uml-modeling-projects-and-diagrams.md)   
  [Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)   
  [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
-
-
-

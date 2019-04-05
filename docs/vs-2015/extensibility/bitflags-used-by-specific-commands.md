@@ -1,26 +1,21 @@
 ---
 title: Marcadores de bits utilizados por comandos específicos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e8ea658e62ca2bcd3ca4d423f00a94f83f2a2086
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798188"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996503"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Marcas de bits usadas por comandos específicos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +27,17 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
   
 |Marcar|Valor|Descripción|  
 |----------|-----------|-----------------|  
-|`SCC_KEEP_CHECKEDOUT`|0 x 1000|Mantener el archivo desprotegido.|  
+|`SCC_KEEP_CHECKEDOUT`|0x1000|Mantener el archivo desprotegido.|  
   
 ## <a name="add-flags"></a>Agregue marcadores  
  Estas marcas se usan por el [SccAdd](../extensibility/sccadd-function.md).  
   
 |Marcar|Valor|Descripción|  
 |----------|-----------|-----------------|  
-|`SCC_FILETYPE_AUTO`|0 x 00|Se espera el complemento de control de código fuente para detectar automáticamente si el archivo es texto o binario.|  
-|`SCC_FILETYPE_TEXT`|0 x 01|Tipo de archivo es texto.|  
+|`SCC_FILETYPE_AUTO`|0x00|Se espera el complemento de control de código fuente para detectar automáticamente si el archivo es texto o binario.|  
+|`SCC_FILETYPE_TEXT`|0x01|Tipo de archivo es texto.|  
 |`SCC_FILETYPE_BINARY`|0x04|Tipo de archivo es binario. **Nota:** `SCC_FILETYPE_TEXT` y `SCC_FILETYPE_BINARY` marcas son mutuamente excluyentes. Establecer exactamente uno o ninguno.|  
-|`SCC_ADD_STORELATEST`|0 x 02|Store solo la última versión (no hay diferencias).|  
+|`SCC_ADD_STORELATEST`|0x02|Store solo la última versión (no hay diferencias).|  
   
 ## <a name="diff-flags"></a>Marcas de comparación  
  El [SccDiff](../extensibility/sccdiff-function.md) estas marcas se utiliza para definir el ámbito de una operación de comparación. El `SCC_DIFF_QD_xxx` marcas son mutuamente excluyentes. Si se especifica uno de ellos, no hay comentarios visuales son que se asignará. En "diff rápido" (PC), el complemento no determina cómo el archivo es diferente, sólo si es diferente. Si ninguna de estas marcas se especifica, que se realiza una "diferencia visual"; se calcula y se muestran las diferencias de archivo detallada. Si no se admite el PC solicitado, el complemento se mueve a la siguiente mejor. Por ejemplo, si el IDE solicita una suma de comprobación y el complemento no lo admite, el complemento no un contenido completo Compruebe (todavía mucho más rápido que una presentación visual).  
@@ -50,7 +45,7 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 |Marcar|Valor|Descripción|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Omitir las diferencias de caja.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Omitir las diferencias de espacio en blanco. **Nota:** el `SCC_DIFF_IGNORECASE` y `SCC_DIFF_IGNORESPACE` marcas son marcadores de bits opcional.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Omitir las diferencias de espacio en blanco. **Nota:**  El `SCC_DIFF_IGNORECASE` y `SCC_DIFF_IGNORESPACE` marcas son marcadores de bits opcional.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD comparando el contenido completo del archivo.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|PC mediante la suma de comprobación.|  
 |`SCC_DIFF_QD_TIME`|0x0040|PC con la marca de fecha y hora de archivo.|  
@@ -69,7 +64,7 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 |Valor de opción|Valor|Descripción|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Examinar solo un nivel de directorios para los directorios (es decir, el valor predeterminado).|  
-|SCC_PDL_RECURSIVE|0 x 0001|Recursivamente examine todos los directorios en cada directorio determinado.|  
+|SCC_PDL_RECURSIVE|0x0001|Recursivamente examine todos los directorios en cada directorio determinado.|  
 |SCC_PDL_INCLUDEFILES|0x0002|Incluir nombres de archivo en el proceso de examen.|  
   
 ## <a name="openproject-flags"></a>Marcas de OpenProject  
@@ -85,8 +80,8 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
   
 |Marcar|Valor|Descripción|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|El IDE está pasando los directorios, no archivos: obtener todos los archivos en estos directorios.|  
-|`SCC_GET_RECURSIVE`|0x00000002L|El IDE está pasando directorios: obtener estos directorios y todos sus subdirectorios.|  
+|`SCC_GET_ALL`|0x00000001L|El IDE está pasando los directorios, no archivos: Obtener todos los archivos en estos directorios.|  
+|`SCC_GET_RECURSIVE`|0x00000002L|El IDE está pasando directorios: Obtenga estos directorios y todos sus subdirectorios.|  
   
 ## <a name="noption-values"></a>Valores de nOption  
  Estas marcas se usan por el [SccSetOption](../extensibility/sccsetoption-function.md) en el `nOption` parámetro.  
@@ -100,7 +95,7 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 |`SCC_OPT_SCCCHECKOUTONLY`|0x00000005L|Deshabilitar la desprotección de interfaz de usuario del complemento de control de origen y no se establece el directorio de trabajo.|  
 |`SCC_OPT_SHARESUBPROJ`|0x00000006L|Agregar desde el sistema de control de código fuente para especificar un directorio de trabajo. Intente compartir en el proyecto asociado, si es un descendiente directo.|  
   
-## <a name="dwval-bitflags"></a>dwVal marcadores de bits  
+## <a name="dwval-bitflags"></a>dwVal Bitflags  
  Estas marcas se usan por el [SccSetOption](../extensibility/sccsetoption-function.md) en el `dwVal` parámetro.  
   
 |Marcar|Valor|Descripción|Utilizado por `nOption` valor|  
@@ -114,4 +109,3 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
   
 ## <a name="see-also"></a>Vea también  
  [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
-

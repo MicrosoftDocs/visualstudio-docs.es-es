@@ -1,28 +1,23 @@
 ---
-title: 'Tutorial: Mostrar información rápida | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Mostrar información rápida | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9cd0e331536c194acdde95bdd74e5f41668a23e1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79ce531d36b21ab26cf4c6e6dc76e8c4d98d8763
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806287"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997582"
 ---
-# <a name="walkthrough-displaying-quickinfo-tooltips"></a>Tutorial: Visualización de información rápida sobre herramientas
+# <a name="walkthrough-displaying-quickinfo-tooltips"></a>Tutorial: Mostrar información sobre herramientas de QuickInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Información rápida es una característica de IntelliSense que muestra las firmas de método y descripciones cuando un usuario mueve el puntero sobre un nombre de método. Puede implementar las características de lenguaje como QuickInfo definiendo los identificadores para el que desea proporcionar descripciones de QuickInfo y, a continuación, crear una información sobre herramientas en el que se va a mostrar el contenido. Puede definir información rápida en el contexto de un servicio de lenguaje, o puede definir su propio tipo de contenido y la extensión de nombre de archivo y mostrar la información rápida para solo ese tipo, o puede mostrar información rápida para un tipo de contenido existente (por ejemplo, "text"). En este tutorial se muestra cómo mostrar información rápida para el tipo de contenido "text".  
@@ -182,5 +177,4 @@ Información rápida es una característica de IntelliSense que muestra las firm
 4.  Mueva el puntero sobre una de las apariciones de "Agregar". La firma y la descripción de la `add` método se debe mostrar.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

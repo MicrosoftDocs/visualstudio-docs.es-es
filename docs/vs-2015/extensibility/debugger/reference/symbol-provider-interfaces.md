@@ -1,14 +1,9 @@
 ---
 title: Interfaces del proveedor de símbolos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - interfaces, symbol handler
 - symbol handler, interfaces
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a37e27f6d7d1a9435f9519d3cecf359eb65fe204
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c409175fb39207bc0e83a521577ad6d641731691
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790778"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995142"
 ---
 # <a name="symbol-provider-interfaces"></a>Interfaces de proveedor de símbolos
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Los siguientes son las Interfaces de control de símbolos para el [!INCLUDE[vsipsdk](../../../includes/vsipsdk-md.md)].  
   
-## <a name="discussion"></a>Explicación  
+## <a name="discussion"></a>Discusión  
  Estas interfaces se usan para evaluar las variables en una pila de llamadas durante el modo de interrupción. Se implementan solo para proveedores de símbolos en tiempo de ejecución de common language (SP).  
   
 |Interfaz|Implementado por|Descripción|  
@@ -47,7 +42,7 @@ Los siguientes son las Interfaces de control de símbolos para el [!INCLUDE[vsip
 |[IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)|SP|La interfaz base para cualquier tipo que se puede determinar en tiempo de ejecución.|  
 |[IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)|SP|Representa un campo dinámico para un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objeto.|  
 |[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)|SP|Representa un tipo de enumeración.|  
-|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|SP|Amplía los tipos de campos disponibles para admitir tipos genéricos de código administrado.|  
+|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|Sp|Amplía los tipos de campos disponibles para admitir tipos genéricos de código administrado.|  
 |[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)|SP|La clase base para todos los campos; Representa una descripción de un símbolo o el tipo.|  
 |[IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)|SP|Representa la definición de un campo para un tipo genérico de código administrado.|  
 |[IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)|SP|Representa una instancia de un campo para un tipo genérico de código administrado.|  
@@ -67,4 +62,3 @@ Los siguientes son las Interfaces de control de símbolos para el [!INCLUDE[vsip
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-
