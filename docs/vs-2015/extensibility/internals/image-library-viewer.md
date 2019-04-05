@@ -1,21 +1,17 @@
 ---
 title: Visor del archivo de imagen | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c0e277a123fe24da9824fae94b13eee686f5663
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997591"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,7 +73,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |**Subelemento**|**Definición**|  
 |Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|  
 |GUID|El símbolo representa un GUID y debe coincidir con el formato de GUID.|  
-|Id.|El símbolo representa un identificador y debe ser un entero no negativo.|  
+|ID|El símbolo representa un identificador y debe ser un entero no negativo.|  
 |String|El símbolo representa un valor de cadena arbitrario.|  
   
  Los símbolos son distingue mayúsculas de minúsculas y que se hace referencia mediante la sintaxis $(symbol-name):  
@@ -96,7 +92,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |CommonProgramFiles|El valor de la variable de entorno % CommonProgramFiles %|  
 |LocalAppData|El valor de la variable de entorno % LocalAppData %|  
 |ManifestFolder|La carpeta que contiene el archivo de manifiesto|  
-|Mis documentos|La ruta de acceso completa de la carpeta Mis documentos del usuario actual|  
+|MyDocuments|La ruta de acceso completa de la carpeta Mis documentos del usuario actual|  
 |ProgramFiles|El valor de la variable de entorno % ProgramFiles %|  
 |Sistema|La carpeta Windows\System32|  
 |WinDir|El valor de la variable de entorno % WinDir %|  
@@ -118,7 +114,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |-|-|  
 |**Attribute**|**Definición**|  
 |GUID|[Obligatorio] La parte GUID del moniker de imagen|  
-|Id.|[Obligatorio] La parte del identificador de moniker de la imagen|  
+|ID|[Obligatorio] La parte del identificador de moniker de la imagen|  
 |AllowColorInversion|[Opcional, true de forma predeterminada] Indica si la imagen puede tener sus colores invertidos mediante programación cuando se utiliza en un fondo oscuro.|  
   
  **Origen**  
@@ -135,7 +131,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |-|-|  
 |**Attribute**|**Definición**|  
 |URI|[Obligatorio] Un URI que define dónde se puede cargar la imagen desde. Puede ser uno de los siguientes:<br /><br /> -A [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mediante la aplicación: / / / entidad<br /><br /> -Una referencia de recurso de componente absoluta<br /><br /> -Una ruta de acceso a un archivo que contiene un recurso nativo|  
-|Fondo|[Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> - *Luz*: el origen se puede usar en un fondo claro.<br /><br /> - *Oscuro*: el origen se puede usar en un fondo oscuro.<br /><br /> - *Contraste alto*: el origen se puede usar en cualquier en segundo plano en modo de contraste alto.<br /><br /> - *HighContrastLight*: el origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: el origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si el **en segundo plano** se omite el atributo, el origen se puede usar en cualquier en segundo plano.<br /><br /> Si **en segundo plano** es *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, el nunca se invierten los colores de origen. Si **en segundo plano** se omite o se establece en *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo.|  
+|Fondo|[Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> - *Luz*: El origen puede utilizarse en un fondo claro.<br /><br /> - *Oscuro*: El origen puede utilizarse en un fondo oscuro.<br /><br /> - *Contraste alto*: El origen puede utilizarse en cualquier en segundo plano en modo de contraste alto.<br /><br /> - *HighContrastLight*: El origen puede utilizarse en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: El origen puede utilizarse en un fondo oscuro en modo de contraste alto.<br /><br /> Si el **en segundo plano** se omite el atributo, el origen se puede usar en cualquier en segundo plano.<br /><br /> Si **en segundo plano** es *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, el nunca se invierten los colores de origen. Si **en segundo plano** se omite o se establece en *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo.|  
   
  Un \<origen > elemento puede tener exactamente uno de los siguientes subelementos opcionales:  
   
@@ -143,9 +139,9 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |-|-|-|  
 |**Element**|**Atributos (todas requeridas)**|**Definición**|  
 |\<Tamaño >|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|  
-|\<SizeRange >|MinSize, MaxSize|El origen se usará para las imágenes de MinSize con tamaño máximo (en unidades de dispositivo), ambos inclusive. La imagen será cuadrada.|  
+|\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize con tamaño máximo (en unidades de dispositivo), ambos inclusive. La imagen será cuadrada.|  
 |\<Dimensiones >|Ancho, alto|El origen se usará para las imágenes del ancho y alto (en unidades de dispositivo).|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho y alto mínimo para el máximo ancho/alto (en unidades de dispositivo), ambos inclusive.|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho y alto mínimo para el máximo ancho/alto (en unidades de dispositivo), ambos inclusive.|  
   
  Un \<origen > elemento también puede tener un elemento opcional \<NativeResource > subelemento, que define un \<origen > que se carga desde un ensamblado nativo en lugar de un ensamblado administrado.  
   
@@ -157,7 +153,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |-|-|  
 |**Attribute**|**Definición**|  
 |Tipo|[Obligatorio] El tipo del recurso nativo, XAML o PNG|  
-|Id.|[Obligatorio] La parte de identificador entero del recurso nativo|  
+|ID|[Obligatorio] La parte de identificador entero del recurso nativo|  
   
  **ImageList**  
   
@@ -174,7 +170,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |-|-|  
 |**Attribute**|**Definición**|  
 |GUID|[Obligatorio] La parte GUID del moniker de imagen|  
-|Id.|[Obligatorio] La parte del identificador de moniker de la imagen|  
+|ID|[Obligatorio] La parte del identificador de moniker de la imagen|  
 |Externo|[Opcional, valor predeterminado es false] Indica si el moniker de imagen hace referencia a una imagen en el manifiesto actual.|  
   
  El moniker de la imagen independiente no tiene que hacer referencia a una imagen que se definen en el manifiesto actual. Si no se encuentra la imagen contenida en la biblioteca de imágenes, se utilizará una imagen de marcador de posición en blanco en su lugar.  
@@ -234,4 +230,3 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
   
 ## <a name="sample-output"></a>Resultados del ejemplo  
  Esta herramienta no genera ningún resultado.
-

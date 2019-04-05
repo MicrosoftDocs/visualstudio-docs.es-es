@@ -1,27 +1,22 @@
 ---
 title: Procesar el Administrador de depuración | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - machine debug manager
 - debugging [Debugging SDK], Machine Debug Manager
 ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 83947d7dc1253cbc343ba50abf46cab53d2e4070
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 186b9601b0146b64edba07ec8470bd86fd0a0a56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996331"
 ---
 # <a name="process-debug-manager"></a>Administrador de depuración del proceso
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,4 +31,3 @@ El Administrador de depuración del proceso (PDM) es un componente de Visual Stu
  [Puertos](../../extensibility/debugger/ports.md)   
  [Programas](../../extensibility/debugger/programs.md)   
  [Componentes del depurador](../../extensibility/debugger/debugger-components.md)
-

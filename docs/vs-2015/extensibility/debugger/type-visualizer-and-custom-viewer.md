@@ -1,27 +1,22 @@
 ---
 title: Escriba el visualizador y el visor personalizado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5319721d57212f4fc853ca99c1544a51d4af878c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a85be2978abe35e91096b55fba5ec5281be25fbe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732130"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997831"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualizador de tipo y visor personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ Un visualizador de tipo es un componente que se muestra un fragmento de datos en
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)   
  [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
-

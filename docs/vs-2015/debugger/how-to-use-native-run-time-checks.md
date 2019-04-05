@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: utilizar comprobaciones nativas en tiempo de ejecución | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Utilizar comprobaciones nativas en tiempo de ejecución | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -45,15 +40,15 @@ ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4efbb4e151ea47f655f0b28e19d2811d5541e944
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8f6fc8c2019e8798411a10cd61272c2f6c1684c0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798760"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998495"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Cómo: Utilizar comprobaciones nativas en tiempo de ejecución
+# <a name="how-to-use-native-run-time-checks"></a>Filtrar Uso de comprobaciones nativas en tiempo de ejecución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En Visual C++, puede realizar [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) nativas para detectar errores en tiempo de ejecución, tales como:  
@@ -92,8 +87,3 @@ En Visual C++, puede realizar [runtime_checks](http://msdn.microsoft.com/library
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
  [Comprobar errores en tiempo de ejecución](http://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)
-
-
-
-
-
