@@ -1,14 +1,9 @@
 ---
-title: FIELD_INFO_FIELDS | Documentos de Microsoft
-ms.custom: ''
+title: FIELD_INFO_FIELDS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - FIELD_INFO_FIELDS
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ceebad12604fc788cabeef770052409ffb7bb2b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e3f947db7606d6f7495cb1d88591aafa9e9933b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761619"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986893"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -77,7 +72,7 @@ public enum enum_FIELD_INFO_FIELDS {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -86,4 +81,3 @@ public enum enum_FIELD_INFO_FIELDS {
  [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
-

@@ -1,26 +1,21 @@
 ---
 title: Cuándo se debe crear tipos de proyecto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 021a4d5e527ca7a22ecd984805b9fbec547531ee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801672"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987184"
 ---
 # <a name="when-to-create-project-types"></a>Momento para la creación de tipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Crear un nuevo tipo de proyecto proporciona una base para personalizar [!INCLUDE
 |Tarea|Descripción|  
 |----------|-----------------|  
 |Control de comandos|Cualquier VSPackage puede controlar los comandos.|  
-|Creación de un editor|Editores personalizados se pueden registrar. Para obtener más información, consulte [editores y documentos Windows](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Creación de un editor|Editores personalizados se pueden registrar. Para obtener más información, consulte [editores y documentos Windows](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Propietario de windows|Puede crear ventanas de herramientas y documentos sin agregar un nuevo tipo de proyecto.|  
 |Expone las propiedades en la ventana Propiedades|Todos los objetos pueden exponer propiedades.|  
   
@@ -65,7 +60,6 @@ Crear un nuevo tipo de proyecto proporciona una base para personalizar [!INCLUDE
  Subtipos de proyecto se pueden usar para extender un tipo de proyecto administrado sin tener que crear un nuevo tipo de proyecto. Subtipos de proyecto usar agregación COM para ampliar proyectos administrados, escritos en Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Con la agregación de COM, puede reutilizar gran parte de la implementación de sistema de proyecto administrado y personalizar para un escenario determinado mediante la agregación y el uso de interfaces admitidas. Para obtener más información acerca de subtipos de proyecto, vea [subtipos de proyecto](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Editores y documentos Windows](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Editores y documentos Windows](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
  [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Jerarquías en Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
-

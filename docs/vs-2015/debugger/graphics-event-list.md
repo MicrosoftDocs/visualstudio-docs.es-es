@@ -1,27 +1,22 @@
 ---
 title: Lista de eventos gráficos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 497ee3fe1c588c84195a544179d0d2955b1932b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766212"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "59002125"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,17 +83,17 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
 ### <a name="user-defined-events-in-direct3d-12"></a>Eventos definidos por el usuario en Direct3D 12  
  Para crear grupos y marcadores en Direct3D 12, use las API descritas en esta sección. En la tabla siguiente se resumen las API que puede usar según si está marcando eventos en una cola de comandos o en una lista de comandos.  
   
-|Descripción de la API|[ID3D12CommandQueue](https://msdn.microsoft.com/library/dn788627.aspx)|[ID3D12GraphicsCommandList](https://msdn.microsoft.com/library/dn903537.aspx)|  
+|Descripción de la API|[ID3D12CommandQueue](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)|[ID3D12GraphicsCommandList](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)|  
 |---------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
-|Comprobar la disponibilidad de evento definido por el usuario|[PIXGetStatus](http://msdn.microsoft.com/en-us/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/en-us/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
-|Empezar un grupo de eventos|[PIXBeginEvent](http://msdn.microsoft.com/en-us/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/en-us/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
-|Finalizar un grupo de eventos|[PIXEndEvent](http://msdn.microsoft.com/en-us/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/en-us/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
-|Crear un marcador de eventos|[PIXSetMarker](http://msdn.microsoft.com/en-us/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/en-us/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
+|Comprobar la disponibilidad de evento definido por el usuario|[PIXGetStatus](http://msdn.microsoft.com/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
+|Empezar un grupo de eventos|[PIXBeginEvent](http://msdn.microsoft.com/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
+|Finalizar un grupo de eventos|[PIXEndEvent](http://msdn.microsoft.com/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
+|Crear un marcador de eventos|[PIXSetMarker](http://msdn.microsoft.com/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
   
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Eventos definidos por el usuario en Direct3D 11 y versiones anteriores  
  Para crear grupos y marcadores en Direct3D 11 o versiones anteriores, use las API descritas en esta sección. En la tabla siguiente se resumen las API que puede usar para las distintas versiones de Direct3D 11 y versiones anteriores de Direct3D.  
   
-|Descripción de la API|[ID3D11DeviceContext2](http://msdn.microsoft.com/library/windows/desktop/dn280498.aspx) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Familia D3DPerf_API (Direct3D 11.0 y versiones anteriores)|  
+|Descripción de la API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Familia D3DPerf_API (Direct3D 11.0 y versiones anteriores)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |Empezar un grupo de eventos|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |Finalizar un grupo de eventos|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  
@@ -108,6 +103,3 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Objetos ausentes debido al estado del dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Editar y continuar (Visual C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6e1dc97af70f575632629a13ea67e905f2ad0815
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1f82c9e79957b12dba36eaa70a94cb6fff84ff7
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748351"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58988082"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar y continuar (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +34,9 @@ Puede usar Editar y continuar en proyectos de Visual C++. Consulte [cambios de c
   
  Otras mejoras de la actualización 1 incluyen un cuadro de diálogo de espera nuevo que se puede cancelar y una notificación cuando un archivo no admite Editar y continuar. Para obtener más información acerca de las mejoras de Update 1, consulte [mejoras para C++ editar y continuar de Visual Studio 2015 Update 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
   
- El [/Zo (mejorar la depuración optimizada)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) opción del compilador que se introdujo en Visual Studio 2013 Update 3 agrega información adicional a los archivos .pdb (símbolo) para los archivos binarios compilan sin la [/Od (deshabilitar (depurar)) ](http://msdn.microsoft.com/library/aafb762y.aspx) opción.  
+ La opción de compilador [/Zo (Mejorar la depuración optimizada)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) que se introdujo en Visual Studio 2013 actualización 3 agrega información adicional a los archivos .pdb (símbolo) para los archivos binarios que se compilan sin la opción [/Od (Deshabilitar (Depurar))](http://msdn.microsoft.com/library/aafb762y.aspx).  
   
- **/ Zo** deshabilita Editar y continuar. Consulte [Cómo: depurar código optimizado](../debugger/how-to-debug-optimized-code.md).  
+ **/ Zo** deshabilita Editar y continuar. Vea [Cómo: Depuración de código optimizado](../debugger/how-to-debug-optimized-code.md).  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Habilitar o deshabilitar Editar y continuar  
  Quizá quiera deshabilitar la invocación automática de Editar y continuar si realiza modificaciones en el código que no quiere aplicar durante la sesión de depuración actual. También puede volver a habilitar la invocación automática de Editar y continuar.  
@@ -84,6 +79,3 @@ Puede usar Editar y continuar en proyectos de Visual C++. Consulte [cambios de c
   
 ## <a name="see-also"></a>Vea también  
  [Cambios admitidos en el código (C++)](../debugger/supported-code-changes-cpp.md)
-
-
-

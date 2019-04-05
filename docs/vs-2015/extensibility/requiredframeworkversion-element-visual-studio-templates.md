@@ -1,36 +1,31 @@
 ---
 title: Elemento RequiredFrameworkVersion (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e40d52b4b5f194c04b9b46326a7d4d302c871cb5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ce312d7951f4c1be720604c006f9afcd63f364d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755737"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988737"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica la versión mínima de .NET Framework que requiere la plantilla. Jerarquía del esquema.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<RequiredFrameworkVersion >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<RequiredFrameworkVersion>  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -65,4 +60,3 @@ Especifica la versión mínima de .NET Framework que requiere la plantilla. Jera
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
-

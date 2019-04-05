@@ -1,12 +1,9 @@
 ---
 title: Las relaciones en conjuntos de datos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -23,13 +20,13 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987128"
 ---
 # <a name="relationships-in-datasets"></a>Relaciones en conjuntos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +67,7 @@ Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:Syste
 |Regla de restricción de clave externa|Acción|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule>|También se realiza el cambio realizado en el registro primario (update o delete) en los registros relacionados en la tabla secundaria.|  
-|<xref:System.Data.Rule>|No se eliminan los registros secundarios, pero la clave externa en los registros secundarios se establece en <xref:System.DBNull>. Con esta configuración, los registros secundarios pueden dejarse como "huérfanos", es decir, no tienen ninguna relación con los registros primarios. **Nota:** mediante esta regla puede dar lugar a datos no válidos en la tabla secundaria.|  
+|<xref:System.Data.Rule>|No se eliminan los registros secundarios, pero la clave externa en los registros secundarios se establece en <xref:System.DBNull>. Con esta configuración, los registros secundarios pueden dejarse como "huérfanos", es decir, no tienen ninguna relación con los registros primarios. **Nota:**  Mediante esta regla puede dar lugar a que los datos no válidos en la tabla secundaria.|  
 |<xref:System.Data.Rule>|La clave externa en los registros secundarios relacionados se establece en su valor predeterminado (según lo establecido por la columna <xref:System.Data.DataColumn.DefaultValue%2A> propiedad).|  
 |<xref:System.Data.Rule>|No se realiza ningún cambio en los registros secundarios relacionados. Con esta configuración, los registros secundarios pueden contener referencias a los registros primarios no válido.|  
   
@@ -88,7 +85,7 @@ Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:Syste
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Para crear una relación entre dos tablas de datos  
   
-1.  Abra el conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, consulte [Cómo: abrir un conjunto de datos en el Diseñador de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Cómo: Abrir un conjunto de datos en el Diseñador de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Arrastre un **relación** objeto desde el **DataSet** cuadro de herramientas a la tabla de datos secundaria en la relación.  
   
@@ -112,7 +109,6 @@ Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:Syste
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Para mostrar el nombre de una relación en el Diseñador de Dataset  
   
-1.  Abra el conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, consulte [Cómo: abrir un conjunto de datos en el Diseñador de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Cómo: Abrir un conjunto de datos en el Diseñador de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Desde el **datos** menú, seleccione el **Mostrar etiquetas de relación** comando para mostrar el nombre de relación. Borrar ese comando para ocultar el nombre de relación.
-

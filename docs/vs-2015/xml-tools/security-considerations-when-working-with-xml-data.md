@@ -1,25 +1,20 @@
 ---
 title: Consideraciones de seguridad al trabajar con datos XML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 87f1fad820cbc7387779862c0c010b01cab0303e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 804bc90e48a666c3eb4ea38abb01d7be0a50290e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302476"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988554"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Consideraciones de seguridad al trabajar con datos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,4 @@ En este tema se describen los aspectos de seguridad que debe conocer al trabajar
 -   El evaluador de expresiones XSLT se carga mediante el motor de depuración administrado. Este motor asume que todo el código se ejecuta desde el equipo local del usuario. En consecuencia, la clase <xref:System.Xml.Xsl.XslCompiledTransform> descarga el archivo XSLT en el equipo local del usuario. La posibilidad de que ocurra un aumento en los privilegios de ejecución se mitiga con la ejecución de todas las transformaciones XSLT en un nuevo dominio de aplicación con permisos restringidos  
   
 ## <a name="see-also"></a>Vea también  
- [Dominios de aplicación](http://msdn.microsoft.com/en-us/39e57d07-a740-4cd4-ae82-e119ea3856c1)
-
-
-
+ [Dominios de aplicación](http://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)

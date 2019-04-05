@@ -1,25 +1,20 @@
 ---
 title: Migrar aplicaciones a la plataforma Universal de Windows (UWP) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791753"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988831"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrar aplicaciones a la Plataforma universal de Windows (UWP)
 Haga los cambios manuales necesarios en los archivos de proyecto existentes para las aplicaciones de la Tienda Windows 8.1, las aplicaciones de Windows Phone 8.1 o las aplicaciones universales de Windows creadas con Visual Studio 2015 RC, de modo que se puedan usar con Visual Studio 2015 RTM. (Si tiene una aplicación universal para Windows 8.1 con un proyecto de aplicación de Windows y un proyecto de Windows Phone, deberá seguir los pasos indicados a continuación para migrar cada proyecto).  
@@ -273,7 +268,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     2.  Actualice el valor del elemento ApplicationTypeRevision de 8.1 a 10.0.  
   
-    3.  Cambie el valor de la \<MinimumVisualStudioVersion > elemento para: 14.  
+    3.  Cambie el valor de la \<MinimumVisualStudioVersion > elemento para: 14,  
   
     4.  Agregar un \<EnableDotNetNativeCompatibleProfile > elemento y establezca su valor en: true.  
   
@@ -337,7 +332,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
 2. Deberá actualizar el \<paquete > elemento con los nuevos esquemas según el tipo de proyecto existente. Primero quite los esquemas siguientes en función de si tiene un proyecto de Windows Phone o la Tienda Windows.  
   
-    **ANTIGUO para proyecto de Windows Store:** su \<paquete > tendrá un aspecto similar a este elemento.  
+    **ANTIGUO para proyecto de Windows Store:** Su \<paquete > tendrá un aspecto similar a este elemento.  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
    ```  
   
-    **ANTIGUO para proyecto de Windows Phone:** su \<paquete > tendrá un aspecto similar a este elemento.  
+    **ANTIGUO para proyecto de Windows Phone:** Su \<paquete > tendrá un aspecto similar a este elemento.  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **Novedades de la plataforma Universal de Windows:** agregue los siguientes esquemas para su \<paquete > elemento. Quite todos los prefijos de identificador de espacio de nombres asociados de los elementos para los esquemas que acaba de quitar. Actualice la propiedad IgnorableNamespaces a: uap mp. La nueva \<paquete > elemento debe ser similar a ésta.  
+    **Novedades de la plataforma Universal de Windows:** Agregue los siguientes esquemas para su \<paquete > elemento. Quite todos los prefijos de identificador de espacio de nombres asociados de los elementos para los esquemas que acaba de quitar. Actualice la propiedad IgnorableNamespaces a: uap mp. La nueva \<paquete > elemento debe ser similar a ésta.  
   
    ```xml  
    <Package  
@@ -375,7 +370,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
    </Dependencies>  
    ```  
   
-4. **Para Windows Store solo:** deberá agregar un \<mp:PhoneIdentity > elemento secundario para el \<paquete > elemento. Agregue un atributo PhoneProductId y un atributo PhonePublisherId. Establezca el atributo PhoneProductId para tener el mismo valor que el atributo Name en el \<identidad > elemento. Establezca el valor de PhonePublishedId en: 00000000-0000-0000-0000-000000000000. Así:  
+4. **Para Windows Store solo:** Deberá agregar un \<mp:PhoneIdentity > elemento secundario para el \<paquete > elemento. Agregue un atributo PhoneProductId y un atributo PhonePublisherId. Establezca el atributo PhoneProductId para tener el mismo valor que el atributo Name en el \<identidad > elemento. Establezca el valor de PhonePublishedId en: 00000000-0000-0000-0000-000000000000. Así:  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -419,7 +414,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
    ```  
   
-    **Solo se aplica a la Tienda Windows:** los nombres de tamaño de mosaico han cambiado. Cambie los atributos en el \<VisualElements > elemento para reflejar la nueva convergente tamaños de mosaico. 70 x 70 se convierte en 71 x 71, y 30 x 30 se convierte en 44 x 44.  
+    **Solo se aplica a Windows Store:** Los nombres de tamaño de mosaico han cambiado. Cambie los atributos en el \<VisualElements > elemento para reflejar la nueva convergente tamaños de mosaico. 70 x 70 se convierte en 71 x 71, y 30 x 30 se convierte en 44 x 44.  
   
     **ANTIGUO:** nombres de tamaño de mosaico  
   
@@ -487,7 +482,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
 12. Cambie las dependencias del marco. Agregar un nombre de publicador a todos los \<PackageDependency > elementos, y especifique un atributo MinVersion si aún no se especifica.  
   
-     **ANTIGUO:** \<PackageDependency > elemento  
+     **ANTERIOR:** \<PackageDependency > elemento  
   
     ```xml  
     <Dependencies>  
@@ -523,7 +518,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
     </Extension>  
     ```  
   
-     **NUEVO:** con tarea de tipo Bluetooth.  
+     **NUEVO:** Con la tarea de tipo Bluetooth.  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -552,7 +547,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
     </Capabilities>  
     ```  
   
-     **NUEVO:** reemplazado por una funcionalidad de Bluetooth genérica.  
+     **NUEVO:** Reemplazar por una funcionalidad de Bluetooth genérica.  
   
     ```xml  
     <Capabilities>  

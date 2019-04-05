@@ -1,27 +1,22 @@
 ---
 title: Configuración para la compilación de proyecto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ef43fe505e859cb32f7c0fbe407bcc73c4f4e0e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 99d9e20799f3747def12be6a40ae3b1f8269e666
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725517"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987916"
 ---
 # <a name="project-configuration-for-building"></a>Configuración del proyecto para la compilación
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Varias configuraciones
   
  Dependencias del proyecto y el orden de compilación sean independientes de la configuración de solución: es decir, solo puede establecer árbol una dependencia para todos los proyectos de la solución. Con el botón secundario en la solución o proyecto y seleccionando el **dependencias del proyecto** o **orden de compilación de proyecto** opción abre el **dependencias del proyecto** cuadro de diálogo. También se puede abrir desde el **proyecto** menú.  
   
- ![Dependencias del proyecto](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
+ ![Project Dependencies](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
 Dependencias del proyecto  
   
  Dependencias del proyecto determinan el orden en que se generan los proyectos. Utilice la pestaña de orden de compilación en el cuadro de diálogo para ver el orden exacto en el que compilar proyectos dentro de una solución y use la ficha dependencias para modificar el orden de compilación.  
@@ -68,4 +63,3 @@ Dependencias del proyecto
  [Administración de las opciones de configuración](../../extensibility/internals/managing-configuration-options.md)   
  [Configuración del proyecto para administrar la implementación](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
  [Configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md)
-

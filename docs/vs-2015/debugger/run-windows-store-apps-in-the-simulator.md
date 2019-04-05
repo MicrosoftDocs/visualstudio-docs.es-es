@@ -1,14 +1,9 @@
 ---
 title: Aplicaciones de la ejecución de Windows Store en el simulador | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 504a63d0f99a1a96d1192a1666d45dafde037253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9ceda4b04d5a029066d5594cac7e0a0701b1b4ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775113"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988841"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Ejecutar aplicaciones de la Tienda Windows en el simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
 ## <a name="pinch-and-zoom"></a>Modo táctil de acercar y alejar  
  Establece el modo de interacción en gestos táctiles de acercar y alejar utilizando dos dedos.  
   
--   ![Destino del dedo Siimulator dos](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+-   ![Destino de simulador dos dedos](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
   
      El icono de destino doble indica la ubicación de los dos dedos en la pantalla del dispositivo.  
   
@@ -117,7 +112,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
      ![Menú de contexto de configuración de captura de pantalla](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simular propiedades de conexión de red  
- Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en roaming o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) le permiten responder a los eventos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) y [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) que firman. Vea [Inicio rápido: administrar los límites de costos de red de uso medido](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en roaming o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) le permiten responder a los eventos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) y [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) que firman. Consulte [Inicio rápido: Administrar las restricciones de costo de red de uso medido](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Para depurar o probar el código con reconocimiento de costos de red, el simulador puede imitar las propiedades de una red que se exponen a través del objeto [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) devuelto por [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx).  
   
@@ -141,7 +136,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
   
    **Más información sobre la administración de conexiones de red**  
   
-   [Inicio rápido: administrar los límites de costos de red de uso medido](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Inicio rápido: Administración de las restricciones de costo de red de uso medido](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [Ejemplo de información de red](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
@@ -149,7 +144,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [Cómo responder a eventos del sistema con tareas en segundo plano](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Cómo responder a eventos del sistema con tareas en segundo plano](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
    [Desencadenar eventos de suspensión, reanudación y en segundo plano en aplicaciones de la Tienda Windows](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
@@ -160,6 +155,3 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
   
 ## <a name="see-also"></a>Vea también  
  [Ejecutar aplicaciones desde Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
-
-
-

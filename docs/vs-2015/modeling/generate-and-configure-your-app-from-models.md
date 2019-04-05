@@ -1,23 +1,20 @@
 ---
 title: Generar y configurar su aplicación a partir de modelos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 58d7112048aba7d0c3b75e83e2b10249b200e6d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6664bf9ed0e77b99b7d5482907fe07f155fe6162
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987545"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generar y configurar la aplicación a partir de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,8 +82,5 @@ Puede generar o configurar partes de la aplicación a partir de un modelo. El mo
  [Generar archivos a partir de un modelo UML](../modeling/generate-files-from-a-uml-model.md)   
  [Leer un modelo UML en código de programa](../modeling/read-a-uml-model-in-program-code.md)   
  [Generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Cómo: abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
+ [Cómo: Abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
-
-
-

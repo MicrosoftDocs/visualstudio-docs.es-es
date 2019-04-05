@@ -1,14 +1,9 @@
 ---
 title: Agregar Control de usuario a la página de inicio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
 - custom start page
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 01510eabcb4d2d3605f38b8bb574ed3e21efebac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ccef9678cbdec3ea048c556434d80ef9b0196e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987876"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Adición de control de usuario a la página de inicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -192,6 +187,5 @@ Este tutorial muestra cómo agregar una referencia de archivo DLL a una página 
      Debe mostrarse la página de inicio personalizada. Si desea cambiar todos los archivos, debe cerrar la instancia experimental, realice los cambios, copie y pegue los archivos modificados y, a continuación, vuelva a abrir la instancia experimental para ver los cambios.  
   
 ## <a name="see-also"></a>Vea también  
- [Controles de contenedor WPF](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)   
- [Tutorial: adición de XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
-
+ [Controles de contenedor WPF](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
+ [Tutorial: Adición de XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

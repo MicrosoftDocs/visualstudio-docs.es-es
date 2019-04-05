@@ -1,13 +1,8 @@
 ---
 title: Depuración remota | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -23,13 +18,13 @@ ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799280"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002765"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,10 +40,10 @@ Puede descargar las herramientas remotas directamente en el dispositivo o el ser
   
 1.  En el dispositivo o servidor máquina que desea depurar (en lugar de la máquina que ejecuta Visual Studio), obtenga la versión correcta de las herramientas remotas.
 
-    |Versión|Vínculo|Notas|
+    |Versión|Link|Notas|
     |-|-|-|
     |Visual Studio 2015 Update 3|[Herramientas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Si se le solicite, unirse al grupo de Visual Studio Dev Essentials gratuita o solo tiene que iniciar sesión con una suscripción válida de Visual Studio. A continuación, vuelva a abrir el vínculo si es necesario. Descargar siempre la versión que coincida con el sistema operativo del dispositivo (x 86, x64 o versión ARM)|
-    |Visual Studio 2015 (antigua)|[Herramientas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Si se le solicite, unirse al grupo de Visual Studio Dev Essentials gratuita o solo tiene que iniciar sesión con una suscripción válida de Visual Studio. A continuación, vuelva a abrir el vínculo si es necesario.|
+    |Visual Studio 2015 (older)|[Herramientas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Si se le solicite, unirse al grupo de Visual Studio Dev Essentials gratuita o solo tiene que iniciar sesión con una suscripción válida de Visual Studio. A continuación, vuelva a abrir el vínculo si es necesario.|
     |Visual Studio 2013|[Herramientas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Descargar página de documentación de Visual Studio 2013|
     |Visual Studio 2012|[Herramientas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Descargar página de documentación de Visual Studio 2012|
   
@@ -158,7 +153,7 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
   
  Si desea configurar al depurador remoto como un servicio, siga estos pasos.  
   
-1. Busque el **Asistente para configuración del depurador remoto** (rdbgwiz.exe). (Esta es una aplicación independiente del Depurador remoto). Está disponible solo cuando se instalan las herramientas remotas. No se instala con Visual Studio.  
+1. Busque el **Asistente para configuración del depurador remoto** (rdbgwiz.exe). (Esta es una aplicación independiente del Depurador remoto). Está disponible solo cuando se instalan las herramientas remotas. No se instala con Visual Studio.  
   
 2. Inicie el asistente para la configuración. Cuando aparezca la primera página, haga clic en **Siguiente**.  
   
@@ -186,13 +181,13 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
 ## <a name="remote-debug-a-visual-c-project"></a>Depuración remota de un proyecto de Visual C++  
  En el siguiente procedimiento, el nombre y ruta de acceso del proyecto es C:\remotetemp\MyMfc y el nombre del equipo remoto es **MJO DL**.  
   
-1. Crear una aplicación MFC denominada **mymfc.**  
+1. Cree una aplicación MFC denominada **mymfc**.  
   
-2. Establecer un punto de interrupción en alguna parte de la aplicación que esté fácilmente accesible, por ejemplo en **MainFrm.cpp**, al principio de `CMainFrame::OnCreate`.  
+2. Establezca un punto de interrupción en alguna parte de la aplicación que esté fácilmente accesible como, por ejemplo, en **MainFrm.cpp**, al principio de `CMainFrame::OnCreate`.  
   
-3. En el Explorador de soluciones, haga doble clic en el proyecto y seleccione **propiedades**. Abra el **depuración** ficha.  
+3. En el Explorador de soluciones, haga doble clic en el proyecto y seleccione **propiedades**. Abra la pestaña **Depuración**.  
   
-4. Establecer el **depurador para iniciar** a **depurador remoto de Windows**.  
+4. Establezca el **Depurador para iniciar** en **Depurador remoto de Windows**.  
   
     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
@@ -202,7 +197,7 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
    |-|-|  
    |Comando remoto|C:\remotetemp\mymfc.exe|  
    |Directorio de trabajo|C:\remotetemp|  
-   |Nombre de servidor remoto|Lista de distribución MJO:*númeroDePuerto*|  
+   |Nombre de servidor remoto|MJO-DL:*portnumber*|  
    |Conexión|Remoto con autenticación de Windows|  
    |Tipo de depurador|Solo nativo|  
    |Directorio de implementación|C:\remotetemp.|  
@@ -212,7 +207,7 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
   
 6. En el Explorador de soluciones, haga clic en la solución y elija **Configuration Manager**.  
   
-7. Para el **depurar** configuración, seleccione el **implementar** casilla de verificación.  
+7. Para la configuración de **Depurar**, active la casilla **Implementar**.  
   
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
@@ -227,9 +222,9 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
 11. En el equipo de Visual Studio, verá que la ejecución se detiene en el punto de interrupción.  
   
     > [!TIP]
-    >  De manera alternativa, puede implementar los archivos como un paso independiente. En el **el Explorador de soluciones,** haga clic en el **mymfc** nodo y, a continuación, elija **implementar**.  
+    >  De manera alternativa, puede implementar los archivos como un paso independiente. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **mymfc** y después elija **Implementar**.  
   
-    Si tiene archivos de código que debe usar la aplicación, deberá incluirlos en el proyecto de Visual Studio. Cree una carpeta de proyecto para los archivos adicionales (en el **el Explorador de soluciones**, haga clic en **agregar / nueva carpeta**.) A continuación, agregue los archivos a la carpeta (en el **el Explorador de soluciones**, haga clic en **Add / existente elemento**, a continuación, seleccione los archivos.). En el **propiedades** para cada archivo, establezca **Copy to Output Directory** a **copiar siempre**.  
+    Si tiene archivos de código que debe usar la aplicación, deberá incluirlos en el proyecto de Visual Studio. Cree una carpeta de proyecto para los archivos adicionales (en el **el Explorador de soluciones**, haga clic en **agregar / nueva carpeta**.) A continuación, agregue los archivos a la carpeta (en el **el Explorador de soluciones**, haga clic en **Add / existente elemento**, a continuación, seleccione los archivos.). En la página **Propiedades** de cada archivo, establezca **Copiar en el directorio de resultado** en **Copiar siempre**.  
   
 ## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Depuración remota de un proyecto de Visual C# o Visual Basic  
  El depurador no puede implementar aplicaciones de escritorio de Visual C# o Visual Basic en un equipo remoto, pero se pueden depurar de manera remota como se describe a continuación. El siguiente procedimiento se da por supuesto que desea depurar en un equipo denominado **MJO DL**, tal y como se muestra en la ilustración anterior.
@@ -242,19 +237,19 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
   
 3. En el Explorador de soluciones, haga clic en el proyecto y elija **propiedades**.  
   
-4. En el **propiedades** página, elija el **depurar** ficha.  
+4. En la página **Propiedades**, elija la pestaña **Depurar**.  
   
     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5. Asegúrese de que el **directorio de trabajo** cuadro de texto está vacío.  
+5. Asegúrese de que el cuadro de texto **Directorio de trabajo** está vacío.  
   
 6. Elija **usar equipo remoto**y el tipo **MJO-DL:4020** en el cuadro de texto. (4020 es el número de puerto que se muestra en la ventana del depurador remoto).  
   
-7. Asegúrese de que **Habilitar depuración de código nativo** no está seleccionada.  
+7. Asegúrese de que la opción **Habilitar la depuración de código nativo** no está seleccionada.  
   
 8. Compile el proyecto.  
   
-9. Cree una carpeta en el equipo remoto que es la misma ruta que el **depurar** carpeta del equipo de Visual Studio:  **\<ruta de acceso de origen > \MyWPF\MyWPF\bin\Debug**.  
+9. Cree una carpeta en el equipo remoto en la misma ruta de acceso que la carpeta **Depurar** del equipo de Visual Studio: **\<ruta de acceso de origen>\MyWPF\MyWPF\bin\Debug**.  
   
 10. Copie el archivo ejecutable que acaba de compilar desde el equipo de Visual Studio a la carpeta recién creada en el equipo remoto.
   
@@ -279,21 +274,21 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
   
 15. En la máquina de Visual Studio, verá que la ejecución se detiene en el punto de interrupción.
   
-    Si tiene archivos de código que debe usar la aplicación, deberá incluirlos en el proyecto de Visual Studio. Cree una carpeta de proyecto para los archivos adicionales (en el **el Explorador de soluciones**, haga clic en **agregar / nueva carpeta**.) A continuación, agregue los archivos a la carpeta (en el **el Explorador de soluciones**, haga clic en **Add / existente elemento**, a continuación, seleccione los archivos.). En el **propiedades** para cada archivo, establezca **Copy to Output Directory** a **copiar siempre**.
+    Si tiene archivos de código que debe usar la aplicación, deberá incluirlos en el proyecto de Visual Studio. Cree una carpeta de proyecto para los archivos adicionales (en el **el Explorador de soluciones**, haga clic en **agregar / nueva carpeta**.) A continuación, agregue los archivos a la carpeta (en el **el Explorador de soluciones**, haga clic en **Add / existente elemento**, a continuación, seleccione los archivos.). En la página **Propiedades** de cada archivo, establezca **Copiar en el directorio de resultado** en **Copiar siempre**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurar la depuración con símbolos remotos  
  Puede depurar su código con los símbolos que se generan en el equipo de Visual Studio. El rendimiento del depurador remoto es mucho mejor cuando se usan símbolos locales.  Si debe usar símbolos remotos, deberá indicar al monitor de depuración remota que busque símbolos en el equipo remoto.  
   
  A partir de Visual Studio 2013 Update 2, puede usar el siguiente modificador de línea de comandos de msvsmon para usar símbolos remotos para el código administrado: `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
- Para obtener más información, consulte la Ayuda de depuración remota (presione **F1** en la ventana del depurador remoto, o haga clic en **ayuda / uso**). Puede encontrar más información en [remoto cargar cambios de símbolos .NET en Visual Studio 2012 y 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
+ Para obtener más información, consulte la Ayuda de depuración remota (presione **F1** en la ventana del depurador remoto, o haga clic en **ayuda / uso**). Encontrará más información en [Cambios en la carga remota de símbolos .NET en Visual Studio 2012 y 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx).  
   
 ##  <a name="bkmk_winstoreAzure"></a> Depuración remota en aplicaciones de Windows Store y Azure  
  Para obtener información sobre la depuración remota con las aplicaciones de Windows Store, consulte [depurar y probar aplicaciones de Windows Store en un dispositivo remoto desde Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Para obtener información sobre la depuración en Azure, consulte uno de estos temas:  
   
--   [Depurar un servicio en la nube o una máquina Virtual en Visual Studio](http://msdn.microsoft.com/library/azure/ff683670.aspx)  
+-   [Depurar un servicio en la nube o una máquina Virtual en Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
 -   [Depurar el back-end de .NET en Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
@@ -305,6 +300,3 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Depuración remota de ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

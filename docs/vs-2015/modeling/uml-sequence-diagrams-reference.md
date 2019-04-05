@@ -1,12 +1,9 @@
 ---
-title: 'Diagramas de secuencia UML: Referencia | Microsoft Docs'
-ms.custom: ''
+title: 'Diagramas de secuencia UML: Referencia de | Documentos de Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.diagram
 - vs.teamarch.UMLModelExplorer.sequencediagram
@@ -21,13 +18,13 @@ ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797031"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987114"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>Diagramas de secuencia UML: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,10 +40,10 @@ En Visual Studio, un *diagrama de secuencia* muestra una interacción, que repre
   
  ![Partes de un diagrama de secuencia](../modeling/media/uml-sequence.png "UML_Sequence")  
   
-|**Forma**|**Element**|**Descripción**|  
+|**Shape**|**Element**|**Descripción**|  
 |---------------|-----------------|---------------------|  
-|1|**Línea de vida**|Línea vertical que representa la secuencia de eventos que se producen en un participante durante una interacción, mientras el tiempo avanza por la línea. Este participante puede ser una instancia de una clase, un componente o un actor.|  
-|2|**actor**|Participante externo al sistema que está desarrollando.<br /><br /> Puede realizar un símbolo de actor que aparecen en la parte superior de una línea de vida estableciendo su **Actor** propiedad.|  
+|1|**Lifeline**|Línea vertical que representa la secuencia de eventos que se producen en un participante durante una interacción, mientras el tiempo avanza por la línea. Este participante puede ser una instancia de una clase, un componente o un actor.|  
+|2|**Actor**|Participante externo al sistema que está desarrollando.<br /><br /> Puede realizar un símbolo de actor que aparecen en la parte superior de una línea de vida estableciendo su **Actor** propiedad.|  
 |3|**Mensaje sincrónico**|El remitente espera una respuesta a un mensaje sincrónico antes de continuar. El diagrama muestra la llamada y la devolución. Los mensajes sincrónicos se usan para representar llamadas de función ordinarias dentro de un programa, así como otros tipos de mensaje que se comportan de la misma manera.|  
 |4|**Mensaje asincrónico**|Mensaje que no requiere una respuesta para que el remitente continúe. Un mensaje asincrónico muestra solo una llamada del remitente. Se usa para representar la comunicación entre subprocesos diferentes o la creación de un nuevo subproceso.|  
 |5|**Ocurrencia de ejecución**|Rectángulo sombreado vertical que aparece en la línea de vida de un participante y representa el período en el que el participante ejecuta una operación.<br /><br /> La ejecución empieza cuando el participante recibe un mensaje. Si el mensaje de inicio es un mensaje sincrónico, la ejecución finalizará con una flecha de retorno al remitente.|  
@@ -61,15 +58,12 @@ En Visual Studio, un *diagrama de secuencia* muestra una interacción, que repre
 |14|**Restricción de fragmentos**|Se puede usar para indicar una condición sobre si tendrá lugar el fragmento.<br /><br /> Para establecer la restricción, seleccione un fragmento y, después, seleccione la restricción y escriba un valor.|  
 |**X**|**Evento de destrucción**|Representa el punto en el que el objeto se ha eliminado o ya no es accesible. Aparece en la parte inferior de cada línea de vida.|  
 ||**Interacción**|Colección de mensajes y líneas de vida que se muestra en el diagrama de secuencia. Para ver las propiedades de una interacción, debe seleccionarla en **Explorador de modelos UML**.|  
-||**Diagrama de secuencia**|Diagrama que muestra una interacción. Para ver sus propiedades, haga clic en una parte vacía del diagrama. **Nota:** los nombres del diagrama de secuencia, la interacción que muestra y el archivo que contiene el diagrama puede ser diferente.|  
+||**Diagrama de secuencia**|Diagrama que muestra una interacción. Para ver sus propiedades, haga clic en una parte vacía del diagrama. **Nota:**  Los nombres del diagrama de secuencia, la interacción que muestra y el archivo que incluye el diagrama pueden ser diferentes.|  
   
 ## <a name="see-also"></a>Vea también  
- [Diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagramas de secuencia de UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramas de casos de uso UML: referencia](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramas de clases UML: referencia](../modeling/uml-class-diagrams-reference.md)   
- [Diagramas de componentes UML: referencia](../modeling/uml-component-diagrams-reference.md)   
- [Diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [Diagramas de casos de uso UML: Referencia](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrama de clases de UML: Referencia](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramas de componentes UML: Referencia](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramas de componentes UML: referencia](../modeling/uml-component-diagrams-reference.md)

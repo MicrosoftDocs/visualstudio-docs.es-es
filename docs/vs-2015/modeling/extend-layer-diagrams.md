@@ -1,14 +1,9 @@
 ---
 title: Ampliar diagramas de capas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, creating extensions
 - layer models
@@ -16,13 +11,13 @@ ms.assetid: 83fca301-b008-485a-87eb-218050e71451
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20d84c91ef30ae549b8fa59893d439a06467ed33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766917"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59002252"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Puede escribir código para crear y actualizar diagramas de capas y para validar
   
 -   [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)  
   
--   [Diagrama de capas: instrucciones](../modeling/layer-diagrams-guidelines.md)  
+-   [Diagramas de capas: directrices](../modeling/layer-diagrams-guidelines.md)  
   
 -   [Crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)  
   
@@ -67,12 +62,9 @@ Puede escribir código para crear y actualizar diagramas de capas y para validar
   
 ## <a name="see-also"></a>Vea también  
  [Definir e instalar una extensión de modelado](../modeling/define-and-install-a-modeling-extension.md)   
- [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)   
- [Diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramas de capas: Referencia](../modeling/layer-diagrams-reference.md)   
+ [Diagramas de capas: Directrices](../modeling/layer-diagrams-guidelines.md)   
  [Crear diagramas de capas desde el código](../modeling/create-layer-diagrams-from-your-code.md)   
  [Validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)   
  [Generar archivos a partir de un modelo UML](../modeling/generate-files-from-a-uml-model.md)   
  [Abrir un modelo UML mediante la API de Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
-
-
-

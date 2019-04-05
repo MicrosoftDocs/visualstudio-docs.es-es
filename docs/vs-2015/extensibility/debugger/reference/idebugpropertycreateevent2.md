@@ -1,14 +1,9 @@
 ---
 title: IDebugPropertyCreateEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPropertyCreateEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 48d440e92bda8dae1e1b37d0bb82718bcf0e1966
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3b31882f89d8fbf723af8f2a7d52f39c3a1d6c4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757998"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987009"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -63,4 +58,3 @@ IDebugPropertyCreateEvent2 : IUnknown
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
-

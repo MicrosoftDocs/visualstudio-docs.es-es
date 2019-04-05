@@ -1,26 +1,21 @@
 ---
 title: Mediante la configuración de Store | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 421ae479d2c25fc6b01ae63083f18c2b1c55c69d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8de2772f4281616837ca96b5911409f6316d5bb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988550"
 ---
 # <a name="using-the-settings-store"></a>Uso del almacén de configuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,4 +87,3 @@ Hay dos tipos de almacenes de configuración:
     >  Asegúrese de que está mirando la clave que contiene \14.0Exp_Config\ y no \14.0_Config\\. Cuando se ejecuta la instancia experimental de Visual Studio, opciones de configuración están en el subárbol del registro "14.0Exp_Config".  
   
 3.  Expanda el nodo \Installed Products\. Si el mensaje en los pasos anteriores es **Microsoft Windows Phone Developer Tools instalado: True**, \Installed Products\ debe contener un nodo de Microsoft Windows Phone Developer Tools. Si el mensaje es **Microsoft Windows Phone Developer Tools instalado: False**, \Installed Products\ no debe contener un nodo de Microsoft Windows Phone Developer Tools.
-

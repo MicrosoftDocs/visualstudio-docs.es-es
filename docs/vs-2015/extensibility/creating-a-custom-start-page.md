@@ -1,24 +1,19 @@
 ---
 title: Creación de un archivo de página de inicio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 87f653a6ac745253ae86eb6bf8dfab92169ac4db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7fbc9f18a668cbe3738ab3c8dd734ddadd8ce08
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806066"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987600"
 ---
 # <a name="creating-a-custom-start-page"></a>Creación de una página de inicio personalizada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +86,8 @@ Si no se puede crear una página de inicio personalizada mediante el uso de la p
 -   Después de haber probado su página de inicio y ha determinado que es estable, utilice el **Personalizar página principal** opción el **opciones** cuadro de diálogo para seleccionarla como la página de inicio en la instancia principal de Visual Studio  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Agregar XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
+ [Tutorial: Adición de XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
  [Agregar Control de usuario a la página de inicio](../extensibility/adding-user-control-to-the-start-page.md)   
  [Adición de comandos de Visual Studio a una página de inicio](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
- [Tutorial: Guardar configuración de usuario en una página de inicio](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
+ [Tutorial: Guardando la configuración de usuario en una página de inicio](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
  [Implementación de páginas de inicio personalizadas](../extensibility/deploying-custom-start-pages.md)
-

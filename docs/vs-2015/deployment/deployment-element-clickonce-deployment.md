@@ -1,14 +1,9 @@
 ---
 title: '&lt;implementación&gt; elemento (implementación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
 - urn:schemas-microsoft-com:asm.v2#beforeApplicationStartup
@@ -26,13 +21,13 @@ ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a55b5519d5abb7b40aeca23fed1bc2f8ea2cc33d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986890"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;implementación&gt; elemento (implementación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,38 +38,38 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
   
 ```  
   
-      <deployment   
+      <deployment   
    install  
    minimumRequiredVersion  
    mapFileExtensions  
    disallowUrlActivation  
    trustUrlParameters  
->   
-   <subscription>   
-         <update>   
-            <beforeApplicationStartup/>   
+>   
+   <subscription>   
+         <update>   
+            <beforeApplicationStartup/>   
             <expiration  
                maximumAge  
                unit  
             />  
-         </update>    
-   </subscription>   
-   <deploymentProvider   
-      codebase   
-   />   
+         </update>    
+   </subscription>   
+   <deploymentProvider   
+      codebase   
+   />   
 </deployment>  
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos y atributos  
- El elemento `deployment` es obligatorio y se encuentra en el espacio de nombres `urn:schemas-microsoft-com:asm.v1` . El elemento tiene los siguientes atributos.  
+ El elemento `deployment` es obligatorio y se encuentra en el espacio de nombres `urn:schemas-microsoft-com:asm.v1` . El elemento tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`install`|Requerido. Especifica si esta aplicación define una presencia en el Windows **iniciar** menú y, en el Panel de Control **agregar o quitar programas** aplicación. Los valores válidos son `true` y `false`. Si `false`, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] siempre se ejecutará la versión más reciente de esta aplicación desde la red y no reconocerá el `subscription` elemento.|  
+|`install`|Obligatorio. Especifica si esta aplicación define una presencia en el Windows **iniciar** menú y, en el Panel de Control **agregar o quitar programas** aplicación. Los valores válidos son `true` y `false`. Si `false`, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] siempre se ejecutará la versión más reciente de esta aplicación desde la red y no reconocerá el `subscription` elemento.|  
 |`minimumRequiredVersion`|Opcional. Especifica la versión mínima de la aplicación que se puede ejecutar en el cliente. Si el número de versión de la aplicación es menor que el número de versión proporcionado en el manifiesto de implementación, no se ejecutará la aplicación. Números de versión deben especificarse en el formato `N.N.N.N`, donde `N` es un entero sin signo. Si el `install` atributo es `false`, `minimumRequiredVersion` no debe establecerse.|  
 |`mapFileExtensions`|Opcional. Tiene como valor predeterminado `false`. Si `true`, todos los archivos de la implementación deben tener una extensión. deploy. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] eliminará esta extensión de estos archivos, en cuanto descarga desde el servidor Web. Si publica la aplicación mediante el uso de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], esta extensión se agregará automáticamente a todos los archivos. Este parámetro permite que todos los archivos dentro de un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación se descarguen desde un servidor Web que bloquea la transmisión de archivos que terminan en "unsafe" extensiones como .exe.|  
 |`disallowUrlActivation`|Opcional. Tiene como valor predeterminado `false`. Si `true`, impide que una aplicación instalada desde la que se inicia al hacer clic en la dirección URL o escribiendo la dirección URL en Internet Explorer. Si el `install` atributo no está presente, se omite este atributo.|  
-|`trustURLParameters`|Opcional. Tiene como valor predeterminado `false`. Si `true`, permite que la dirección URL para que contenga los parámetros de cadena de consulta que se pasan a la aplicación, tanto como argumentos de línea de comandos se pasan a una aplicación de línea de comandos. Para obtener más información, consulte [Cómo: recuperar información de cadena de consulta en una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Si el `disallowUrlActivation` atributo es `true`, `trustUrlParameters` debe ser excluidos del manifiesto o establecida explícitamente en `false`.|  
+|`trustURLParameters`|Opcional. Tiene como valor predeterminado `false`. Si `true`, permite que la dirección URL para que contenga los parámetros de cadena de consulta que se pasan a la aplicación, tanto como argumentos de línea de comandos se pasan a una aplicación de línea de comandos. Para obtener más información, vea [Cómo: Recuperación de información de la cadena de consulta de una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Si el `disallowUrlActivation` atributo es `true`, `trustUrlParameters` debe ser excluidos del manifiesto o establecida explícitamente en `false`.|  
   
  El `deployment` elemento también contiene los siguientes elementos secundarios.  
   
@@ -82,7 +77,7 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
  Opcional. Contiene el `update` elemento. El elemento `subscription` no tiene atributos. Si el `subscription` elemento no existe, el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación no buscará actualizaciones. Si el `install` atributo de la `deployment` es elemento `false`, el `subscription` se omite el elemento, porque un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que se inicia desde la red siempre utiliza la versión más reciente.  
   
 ## <a name="update"></a>actualizar  
- Requerido. Este es un elemento secundario de la `subscription` elemento y contiene el `beforeApplicationStartup` o `expiration` elemento. `beforeApplicationStartup` y `expiration` no se especifican en el mismo manifiesto de implementación.  
+ Obligatorio. Este es un elemento secundario de la `subscription` elemento y contiene el `beforeApplicationStartup` o `expiration` elemento. `beforeApplicationStartup` y `expiration` no se especifican en el mismo manifiesto de implementación.  
   
  El elemento `update` no tiene atributos.  
   
@@ -96,8 +91,8 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`maximumAge`|Requerido. Identifica la antigüedad debe ser la actualización actual antes de que la aplicación realice una comprobación de actualizaciones. La unidad de tiempo viene determinada por la `unit` atributo.|  
-|`unit`|Requerido. Identifica la unidad de tiempo para `maximumAge`. Las unidades válidas son `hours`, `days`, y `weeks`.|  
+|`maximumAge`|Obligatorio. Identifica la antigüedad debe ser la actualización actual antes de que la aplicación realice una comprobación de actualizaciones. La unidad de tiempo viene determinada por la `unit` atributo.|  
+|`unit`|Obligatorio. Identifica la unidad de tiempo para `maximumAge`. Las unidades válidas son `hours`, `days`, y `weeks`.|  
   
 ## <a name="deploymentprovider"></a>deploymentProvider  
  Para .NET Framework 2.0, este elemento es necesario si el manifiesto de implementación contiene un `subscription` sección. Para .NET Framework 3.5 y versiones posteriores, este elemento es opcional y se usará de forma predeterminada el servidor y la ruta de acceso de archivo en el que se ha detectado el manifiesto de implementación.  
@@ -106,7 +101,7 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`codebase`|Requerido. Identifica la ubicación, como un identificador uniforme de recursos (URI), del manifiesto de implementación que se usa para actualizar el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Este elemento también permite reenviar las ubicaciones de actualización para las instalaciones basadas en CD. Debe ser un URI válido.|  
+|`codebase`|Obligatorio. Identifica la ubicación, como un identificador uniforme de recursos (URI), del manifiesto de implementación que se usa para actualizar el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Este elemento también permite reenviar las ubicaciones de actualización para las instalaciones basadas en CD. Debe ser un URI válido.|  
   
 ## <a name="remarks"></a>Comentarios  
  Puede configurar su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación para buscar actualizaciones durante el inicio, busque actualizaciones después del inicio, o no buscar nunca actualizaciones. Para buscar actualizaciones en el inicio, asegúrese de que el `beforeApplicationStartup` elemento existe en el `update` elemento. Para buscar actualizaciones después del inicio, asegúrese de que el `expiration` elemento existe en el `update` elemento y que se proporcionan los intervalos de actualización.  
@@ -131,6 +126,3 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
   
 ## <a name="see-also"></a>Vea también  
  [Manifiesto de la implementación ClickOnce](../deployment/clickonce-deployment-manifest.md)
-
-
-

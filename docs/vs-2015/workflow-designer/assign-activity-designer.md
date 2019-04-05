@@ -1,11 +1,8 @@
 ---
 title: Diseñador de actividades Assign | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Assign.UI
@@ -13,13 +10,13 @@ ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: c27d70f7dbff9d7f9d30d7dda34c5c2c98bfe891
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 111f53ec5b427207a6bde5d590cf8f1c908ff130
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281273"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988808"
 ---
 # <a name="assign-activity-designer"></a>Diseñador de actividades Assign
 El **asignar** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.Assign> actividad.  

@@ -1,14 +1,9 @@
 ---
 title: Crear un Windows Forms Control Toolbox | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781717"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002468"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Creación de un control de cuadro de herramientas de Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
 5.  En el **propiedades** ventana, establezca los siguientes valores para los controles en la superficie de diseño.  
   
-    |Control|Propiedad|Valor|  
+    |Control|Property|Valor|  
     |-------------|--------------|-----------|  
     |`Label1`|**Texto**|""|  
     |`Button1`|**Name**|btnReset|  
@@ -213,11 +208,10 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
      El contador se restablece a **0**.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- Cuando se crea un control del **Cuadro de herramientas** , Visual Studio crea un archivo denominado *NombreDelProyecto*.vsix en la carpeta \bin\debug\ del proyecto. Para implementar el control, puede cargar el archivo .vsix en una red o un sitio web. Cuando un usuario abre el archivo .vsix, el control está instalado y se agrega a la de Visual Studio **cuadro de herramientas** en el equipo del usuario. Como alternativa, puede cargar el archivo .vsix en el [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) del sitio Web para que los usuarios pueden buscarlo en el **herramientas / extensiones y actualizaciones** cuadro de diálogo.  
+ Cuando se crea un control del **Cuadro de herramientas** , Visual Studio crea un archivo denominado *NombreDelProyecto*.vsix en la carpeta \bin\debug\ del proyecto. Para implementar el control, puede cargar el archivo .vsix en una red o un sitio web. Cuando un usuario abre el archivo .vsix, el control está instalado y se agrega a la de Visual Studio **cuadro de herramientas** en el equipo del usuario. Como alternativa, puede cargar el archivo .vsix en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) del sitio Web para que los usuarios pueden buscarlo en el **herramientas / extensiones y actualizaciones** cuadro de diálogo.  
   
 ## <a name="see-also"></a>Vea también  
  [Ampliar el cuadro de herramientas](../misc/extending-the-toolbox.md)   
  [Crear un Control de cuadro de herramientas WPF](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Ampliación de otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Fundamentos de desarrollo de controles de Windows Forms](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
-

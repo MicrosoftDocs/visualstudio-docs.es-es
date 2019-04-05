@@ -1,12 +1,9 @@
 ---
 title: Extender la funcionalidad de un TableAdapter | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +17,13 @@ ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 58f92f082ec4e7934e8eb7597832a6a58d23a1ca
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: bbba71e6c1e636abe160036f10c1de1d11004a65
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219749"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988782"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Ampliar la funcionalidad de un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,4 +55,3 @@ Puede ampliar la funcionalidad de un TableAdapter agregando código al archivo d
   
 ## <a name="see-also"></a>Vea también  
  [Llenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
-

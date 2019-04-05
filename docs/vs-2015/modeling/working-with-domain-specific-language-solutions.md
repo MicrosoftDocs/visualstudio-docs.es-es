@@ -1,23 +1,20 @@
 ---
 title: Trabajar con soluciones de lenguajes específicos de dominio | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 3db02722-5fd5-437f-a789-9acaaa809de8
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f511ee44b983c388fb3a51c01d5e9424127036b2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: eab5a1b645023537ffee182804554f483d81f727
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988809"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Trabajar con soluciones de lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +34,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante un [!INCLUDE[vsprvs](.
  [Elegir una plantilla de soluciones para lenguajes específicos de dominio](../modeling/choosing-a-domain-specific-language-solution-template.md)  
  Explica cómo elegir una plantilla para iniciar el proyecto DSL.  
   
- [Cómo: Crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md)  
+ [Cómo: Crear una solución de lenguaje específico de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md)  
  Describe los pasos para configurar un DSL.  
   
  [Trabajar con diagramas de definición DSL](../modeling/working-with-the-dsl-definition-diagram.md)  
@@ -46,14 +43,11 @@ Un lenguaje específico de dominio (DSL) se crea mediante un [!INCLUDE[vsprvs](.
  [Trabajar con el Explorador de lenguajes específicos de dominio](../modeling/working-with-the-domain-specific-language-explorer.md)  
  Explica el contenido del explorador  
   
- [Cómo: Cambiar el espacio de nombres de los lenguajes específicos de dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)  
+ [Cómo: Cambiar el espacio de nombres de un lenguaje específico de dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)  
  El código que se genera desde un DSL tiene un espacio de nombres que se establece cuando se inicia la solución, pero puede cambiarlo posteriormente.  
   
- [Cómo: Ampliar el diseñador de lenguajes específicos de dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
+ [Cómo: Ampliar Diseñador de lenguaje específico de dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  Puede personalizar el Diseñador de DSL con comandos de menú.  
   
- [Cómo automatizar la transformación todas las plantillas](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Cómo automatizar la transformación todas las plantillas](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Para evitar hacer clic en Transformar todas las plantillas, puede hacerla una parte de la compilación automática.
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Componentes principales del modelo de proyecto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 70cb00e6d2ecae8ba5fb8abefb76f7061406f0fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 30ec67e1e58e0c546c70ecb87841293161463b1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988732"
 ---
 # <a name="project-model-core-components"></a>Componentes principales del modelo de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -109,7 +104,6 @@ Las siguientes tablas se expanden en el modelo de proyecto. Las tablas ofrecen d
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [En la compilación: usar las clases de proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [No está en la compilación: Uso de clases del proyecto de HierUtil7 para implementar un tipo de proyecto (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Herramientas de exploración de símbolos de compatibilidad](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md)
-

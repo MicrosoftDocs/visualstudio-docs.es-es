@@ -1,14 +1,9 @@
 ---
-title: 'CA2224: Reemplazar equals al sobrecargar operadores de igualdad | Microsoft Docs'
-ms.custom: ''
+title: 'CA2224: Invalidar equals al sobrecargar operadores de igualdad | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2224
 - OverrideEqualsOnOverloadingOperatorEquals
@@ -21,14 +16,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 66f4b4bcc7c2c1d359f5d8fa91227fb51a27adc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987988"
 ---
-# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Reemplazar Equals al sobrecargar operadores de igualdad
+# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Invalidar Equals al sobrecargar operadores de igualdad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -67,8 +62,8 @@ ms.locfileid: "49815239"
 
  Este ejemplo produce el siguiente resultado:
 
- **¿a = a (1,1 [0]) y b = (2,2 [1]) son iguales? ¿No**
-**un == b? ¿No**
+ **¿a = a (1,1 [0]) y b = (2,2 [1]) son iguales? No**
+**a == b ? ¿No**
 **a1 y a son iguales? ¿Sí**
 **a1 == una? ¿Sí**
 **b y bcopy son iguales? ¿No**
@@ -85,8 +80,8 @@ ms.locfileid: "49815239"
 
  Este ejemplo produce el siguiente resultado:
 
- **¿a = a (1,1) y b = (2,2) son iguales? ¿No**
-**un == b? ¿No**
+ **¿a = a (1,1) y b = (2,2) son iguales? No**
+**a == b ? ¿No**
 **a1 y a son iguales? ¿Sí**
 **a1 == una? ¿Sí**
 **b y bcopy son iguales? ¿Sí**
@@ -124,9 +119,6 @@ ms.locfileid: "49815239"
 
  [CA2226: Los operadores deben tener sobrecargar simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2218: Invalidar el método GetHashCode al invalidar el método Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Invalidar el método GetHashCode al invalidar Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
- [CA2231: Sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-
+ [CA2231: sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

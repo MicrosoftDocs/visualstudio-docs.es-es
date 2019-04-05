@@ -1,25 +1,20 @@
 ---
-title: 'Tutorial: Depurar una hoja de estilos XSLT | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Depurar una hoja de estilos XSLT | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1f211e2f13f710b66e33691dbc318349eddf15ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887704"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986819"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: Depurar una hoja de estilos XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos
   
 2.  Copie los dos archivos de ejemplo en el equipo local.  
   
-## <a name="start-debugging"></a>Inicie la depuración  
+## <a name="start-debugging"></a>Iniciar depuración  
   
 #### <a name="to-start-debugging"></a>Para iniciar la depuración  
   
@@ -161,4 +156,3 @@ En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de XSLT](../xml-tools/debugging-xslt.md)
-

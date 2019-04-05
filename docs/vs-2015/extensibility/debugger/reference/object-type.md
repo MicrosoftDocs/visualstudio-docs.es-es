@@ -1,14 +1,9 @@
 ---
-title: OBJECT_TYPE | Documentos de Microsoft
-ms.custom: ''
+title: OBJECT_TYPE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - OBJECT_TYPE
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a80f6533ccdc2a31ad9eac94e6c389a0e2abf254
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc23045fa70554133eba3a7f1326681bf31ea379
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797369"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986849"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -122,9 +117,9 @@ public enum enum_OBJECT_TYPE { 
  Se pasa como argumento a la [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) y [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) métodos.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: ee.h  
+ Header: ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -132,4 +127,3 @@ public enum enum_OBJECT_TYPE { 
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)   
  [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)
-

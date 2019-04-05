@@ -1,14 +1,9 @@
 ---
 title: CANSTOP_REASON | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - CANSTOP_REASON
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 586876131afdb83f7bf9b32e3f565ba95c8a52b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 277164ea3dfcdabbe24622bb5148ebd75d54f8c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744388"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986608"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -59,11 +54,10 @@ public enum enum_CANSTOP_REASON { 
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
-

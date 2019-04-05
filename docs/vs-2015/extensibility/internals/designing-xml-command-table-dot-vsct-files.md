@@ -1,26 +1,21 @@
 ---
 title: Diseñar la tabla de comandos XML (. Archivos Vsct) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988381"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Diseñar la tabla de comandos XML (. Archivos Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Un archivo de tabla (.vsct) del comando XML describe el diseño y la apariencia 
   
  Cuando crea un nuevo VSPackage mediante la ejecución de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plantilla de paquete, la plantilla genera un archivo .vsct con los elementos necesarios para un comando de menú, una ventana de herramientas o un editor personalizado, dependiendo de las selecciones. Este archivo .vsct, a continuación, se puede modificar para cumplir los requisitos de un VSPackage concreto. Para obtener ejemplos de cómo modificar un archivo .vsct, vea los ejemplos de [ampliación de menús y comandos](../../extensibility/extending-menus-and-commands.md).  
   
- Para crear un archivo .vsct en blanco, vea [Cómo: crear una. Archivo de Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Una vez creado, agregue elementos, atributos y valores XML al archivo para describir el diseño del elemento de comando. Para un esquema XML detallado, consulte el [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
+ Para crear un archivo .vsct en blanco, vea [Cómo: Crear una. Archivo de Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Una vez creado, agregue elementos, atributos y valores XML al archivo para describir el diseño del elemento de comando. Para un esquema XML detallado, consulte el [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>Diferencias entre los archivos de CTC y .vsct  
  Aunque el significado de las etiquetas XML en un archivo .vsct es los mismos, como los de ahora en desuso de formato de archivo .ctc, su implementación es un poco diferente.  
@@ -71,7 +66,7 @@ Un archivo de tabla (.vsct) del comando XML describe el diseño y la apariencia 
   
   El nuevo compilador, vsct.exe, compila los archivos de CTC y .vsct. El compilador ctc.exe antiguo, sin embargo, no reconoce ni compilar archivos .vsct.  
   
-  Puede usar el compilador vsct.exe para convertir un archivo .cto existente en un archivo .vsct. Para obtener más información, vea [Cómo: crear una. Archivo de Vsct desde una existente. Archivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Puede usar el compilador vsct.exe para convertir un archivo .cto existente en un archivo .vsct. Para obtener más información, vea [Cómo: Crear una. Archivo de Vsct desde una existente. Archivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Los elementos del archivo .vsct  
  La tabla de comandos tiene la jerarquía y los elementos siguientes:  
@@ -130,4 +125,3 @@ Un archivo de tabla (.vsct) del comando XML describe el diseño y la apariencia 
   
 ## <a name="see-also"></a>Vea también  
  [Ampliación de menús y comandos](../../extensibility/extending-menus-and-commands.md)
-

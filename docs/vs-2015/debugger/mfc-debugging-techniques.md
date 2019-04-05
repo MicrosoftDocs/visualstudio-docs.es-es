@@ -1,14 +1,9 @@
 ---
 title: Técnicas de depuración de MFC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -31,13 +26,13 @@ ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f1e7a1ea69da1cafa38ae2a7bfa4551d3d40a8d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4ed7d3a9db7a6bc486ad70236d9e39834c851dd2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745121"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002948"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +102,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
   
- La macro TRACE controla correctamente char * y wchar_t\* parámetros. En los ejemplos siguientes se muestra el uso de la macro TRACE junto con diferentes tipos de parámetros de cadena.  
+ La macro TRACE controla correctamente los parámetros char* y wchar_t\*. En los ejemplos siguientes se muestra el uso de la macro TRACE junto con diferentes tipos de parámetros de cadena.  
   
 ```  
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -167,7 +162,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Tomar instantáneas de la memoria  
   
-1. Cree un objeto [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) y llame a la función miembro [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) . Esto crea la primera instantánea de memoria.  
+1. Cree un objeto [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) y llame a la función miembro [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) . Esto crea la primera instantánea de memoria.  
   
 2. Después de que el programa realiza sus operaciones de asignación y desasignación de memoria, cree otro objeto `CMemoryState` y llame a `Checkpoint` para ese objeto. Esto hace que se tome una segunda instantánea del uso de memoria.  
   
@@ -241,7 +236,7 @@ Total allocations: 67 bytes
  En un programa MFC, puede usar [CMemoryState:: DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) para volcar una descripción de todos los objetos del montón que no se han desasignado. `DumpAllObjectsSince` vuelca todos los objetos asignados desde el último [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Si no se realizó ninguna llamada a `Checkpoint` , `DumpAllObjectsSince` produce un volcado de memoria de todos los objetos y elementos que no sean objetos actualmente en memoria.  
   
 > [!NOTE]
->  Para poder utilizar el volcado de objetos MFC, debe [habilitar el seguimiento de diagnóstico](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics).  
+>  Para poder utilizar el volcado de objetos MFC, debe [habilitar el seguimiento de diagnóstico](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
   
 > [!NOTE]
 >  MFC produce automáticamente un volcado de memoria de todos los objetos no desasignados (pérdidas) cuando el programa termina, de modo que no es necesario crear código para volcar objetos en ese punto.  
@@ -441,11 +436,11 @@ pMyPerson->Dump( afxDump );
   
 3. Primero, se creará la configuración para un nuevo proyecto.  
   
-   1.  En el  **\<proyecto > páginas de propiedades** cuadro de diálogo, haga clic en el **Configuration Manager** botón.  
+   1.  En el cuadro de diálogo **\<Proyecto> Páginas de propiedades**, haga clic en el botón **Administrador de configuración**.  
   
-   2.  En el [cuadro de diálogo Administrador de configuración](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), localice el proyecto en la cuadrícula. En el **configuración** columna, seleccione  **\<nuevo... >**.  
+   2.  En el [cuadro de diálogo Administrador de configuración](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), localice el proyecto en la cuadrícula. En la columna **Configuración**, seleccione **\<Nueva...>**.  
   
-   3.  En el [cuadro de diálogo Nueva configuración del proyecto](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), escriba un nombre para la nueva configuración, como "Depuración parcial", en el cuadro **Nombre de configuración del proyecto** .  
+   3.  En el [cuadro de diálogo Nueva configuración del proyecto](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), escriba un nombre para la nueva configuración, como "Depuración parcial", en el cuadro **Nombre de configuración del proyecto** .  
   
    4.  En la lista **Copiar configuración de** , elija **Liberar**.  
   
@@ -483,7 +478,7 @@ pMyPerson->Dump( afxDump );
   
    6.  Haga clic en los valores de **Formato de la información de depuración** y seleccione la opción deseada (normalmente **/ZI**) para la información de depuración.  
   
-   7.  Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Puede desactivar los encabezados precompilados, cambie el **crear o usar encabezados precompilados** en el  **\<proyecto > propiedades** cuadro de diálogo (**propiedades de configuración**  carpeta, **C o C++** subcarpeta, **encabezados precompilados** categoría).  
+   7.  Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie el valor de la opción **Crear o usar encabezados precompilados** en el cuadro de diálogo **\<Proyecto> Propiedades** (carpeta **Propiedades de configuración**, subcarpeta **C/C++**, categoría **Encabezados precompilados**).  
   
 7. En el menú **Compilar** , seleccione **Compilar** para recompilar los archivos del proyecto que no estén actualizados.  
   
@@ -493,6 +488,3 @@ pMyPerson->Dump( afxDump );
   
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual C++](../debugger/debugging-native-code.md)
-
-
-

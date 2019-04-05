@@ -1,27 +1,22 @@
 ---
 title: Tabla de comandos de Visual Studio (. Archivos Vsct) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, overview
 - Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7a68d9f5dac293cc9048cb4b84aaa487c5079250
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98b3892d10b003d6236ae9ccfbebb83a602a5877
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748847"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987696"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Archivos de tabla de comandos de Visual Studio (.Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,14 +29,14 @@ Un archivo de configuración de la tabla de comandos es un archivo de texto que 
  [Diseño de archivos de tabla de comandos XML (.Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  Describe cómo diseñar .vsct (archivos).  
   
- [Creación de un archivo .Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ [Cómo: Crear una. Archivo de Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
  Compara los métodos para crear un archivo .vsct. Describe el proceso para crear manualmente un nuevo archivo de vsct.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)  
  Proporciona detalles sobre cada sección del archivo de configuración XML de tabla de comandos.  
   
- [Configuración de la tabla de comandos (. Archivos de CTC)](http://msdn.microsoft.com/en-us/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [Configuración de la tabla de comandos (. Archivos de CTC)](http://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  Presenta información general sobre el formato de archivo .ctc en desuso.  
   
  [Adición de elementos de la interfaz de usuario por VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
@@ -52,4 +47,3 @@ Un archivo de configuración de la tabla de comandos es un archivo de texto que 
   
  [Comandos, menús y barras de herramientas](../../extensibility/internals/commands-menus-and-toolbars.md)  
  Explica cómo crear una interfaz de usuario que incluya menús, barras de herramientas y cuadros combinados de comandos.
-

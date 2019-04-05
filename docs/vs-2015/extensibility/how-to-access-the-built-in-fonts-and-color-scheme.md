@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: obtener acceso a la combinación de colores y fuentes integradas | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Obtener acceso a la combinación de colores y fuentes integradas | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
 - font and color control [Visual Studio SDK], categories
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b96cb16182447ca636ee363a2cf62a33dcd6823
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986868"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Cómo: obtener acceso a la combinación de colores y fuentes integradas
+# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Filtrar Obtener acceso a la combinación de colores y fuentes integradas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fuentes y colores que está asociado a la ventana del editor. Puede tener acceso a este esquema a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz.  
@@ -56,17 +51,17 @@ El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fu
   
 1.  Construir un tipo especial de entrada de registro de la categoría en la siguiente ubicación:  
   
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >* \FontAndColors\\*\<categoría >*]  
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]  
   
      *\<Categoría >* es el nombre no traducido de la categoría.  
   
 2.  Rellenar el registro para usar la combinación de colores y fuentes estándar con cuatro valores:  
   
-    |nombre|Tipo|Datos|Descripción|  
+    |Name|Tipo|Datos|Descripción|  
     |----------|----------|----------|-----------------|  
     |Categoría|REG_SZ|GUID|Un GUID arbitrario que identifica una categoría que contiene el esquema de color y fuente de cotizaciones.|  
-    |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Este GUID se usa por todos los VSPackages que usan las configuraciones predeterminadas de fuente y color.|  
-    |NameID|REG_DWORD|Id.|El identificador de recurso de un nombre de categoría traducible en el VSPackage.|  
+    |Paquete|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Este GUID se usa por todos los VSPackages que usan las configuraciones predeterminadas de fuente y color.|  
+    |NameID|REG_DWORD|ID|El identificador de recurso de un nombre de categoría traducible en el VSPackage.|  
     |ToolWindowPackage|REG_SZ|GUID|El GUID del VSPackage que implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz.|  
   
 3.  
@@ -107,4 +102,3 @@ if (spPropCatContainer != NULL){
  [Obtención de información de fuente y Color para la coloración de texto](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [Obtener acceso a la configuración de Color y fuente almacenado](../extensibility/accessing-stored-font-and-color-settings.md)   
  [Información general sobre fuentes y colores](../extensibility/font-and-color-overview.md)
-

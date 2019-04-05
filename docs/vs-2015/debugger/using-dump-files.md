@@ -1,14 +1,9 @@
 ---
 title: Uso de archivos de volcado de memoria | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c117e0aa7922c70f919a7b16fa6d40a447f2ce2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761134"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002564"
 ---
 # <a name="using-dump-files"></a>Uso de archivos de volcado de memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,13 +78,13 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
 - Para depurar [modo kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) volcar los archivos en Visual Studio 2013, descargue el [Windows 8.1 versión de depuración de las herramientas para Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Consulte [depuración del Kernel en Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
-- Visual Studio no puede depurar archivos de volcado guardados en el formato de volcado anterior conocido como un [volcado completo en modo usuario](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Tenga en cuenta que un volcado de memoria completo en modo usuario no es igual que un volcado de memoria con montón.  
+- Visual Studio no puede depurar archivos de volcado guardados en el formato de volcado anterior conocido como un [volcado completo en modo usuario](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Tenga en cuenta que un volcado de memoria completo en modo usuario no es igual que un volcado de memoria con montón.  
   
-- Para depurar con el [SOS.dll (extensión de depuración de SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) en Visual Studio, debe instalar la depuración de las herramientas de Windows que forma parte del Windows Driver Kit (WDK). Consulte [versión preliminar de Windows 8.1: descargar kits, bits y herramientas](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Para depurar con el [SOS.dll (extensión de depuración de SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) en Visual Studio, debe instalar la depuración de las herramientas de Windows que forma parte del Windows Driver Kit (WDK). Consulte [Windows 8.1 Preview: Descargue kits, bits y herramientas](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_a_dump_file"></a> Cree un archivo de volcado de memoria  
+##  <a name="BKMK_Create_a_dump_file"></a> Crear un archivo de volcado de memoria  
  Para crear un archivo de volcado de memoria con Visual Studio:  
   
 - Mientras depura un proceso en Visual Studio, puede guardar un archivo de volcado de memoria cuando el depurador se ha detenido en una excepción o en un punto de interrupción. Elija **Guardar volcado como**, **depurar**. En el **Guardar volcado como** cuadro de diálogo el **Guardar como tipo** lista, puede seleccionar **minivolcado** o **minivolcado con montón** (predeterminado).  
@@ -104,7 +99,7 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
 1.  En Visual Studio, elija **archivo**, **abierto**, **archivo**.  
   
-2.  En el **abrir archivo** diálogo cuadro, busque y seleccione el archivo de volcado. Normalmente, tendrá la extensión .dmp. A continuación, elija **Aceptar**.  
+2.  En el cuadro de diálogo **Abrir archivo**, busque y seleccione el archivo de volcado de memoria. Normalmente, tendrá la extensión .dmp. A continuación, elija **Aceptar**.  
   
 3.  El **resumen del archivo de volcado de memoria** aparecerá la ventana. En esta ventana, puede ver información de resumen de depuración para el archivo de volcado de memoria, establecer la ruta de acceso de símbolos, iniciar la depuración y copiar la información de resumen en el portapapeles.  
   
@@ -145,6 +140,5 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
 ## <a name="see-also"></a>Vea también  
  [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Especificar símbolos (.pdb) y los archivos de origen](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)
-

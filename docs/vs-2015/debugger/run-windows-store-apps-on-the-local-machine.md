@@ -1,14 +1,9 @@
 ---
 title: Aplicaciones de ejecución de Windows Store en el equipo local | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 40fafcbdacac8a63a4aba70526a473d091b35de8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766842"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986885"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Ejecutar aplicaciones de la Tienda Windows en el equipo local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,6 +58,3 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
  **Para cambiar de una instancia en ejecución de una aplicación de Windows Store para Visual Studio**  
   
  Cuando ejecute una aplicación de la Tienda Windows en un equipo local y use un solo monitor, le recomendamos que vuelva a usar Visual Studio mientras se ejecute la aplicación. Por ejemplo, es posible que ningún punto de interrupción pueda llegar a la aplicación debido a que, por ejemplo, esté esperando un evento o se haya quedado bloqueada en un bucle infinito. Para cambiar a Visual Studio (presione Alt+Tab).
-
-
-

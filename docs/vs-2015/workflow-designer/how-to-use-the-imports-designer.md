@@ -1,11 +1,8 @@
 ---
-title: 'Cómo: usar el Diseñador de importaciones | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Utilice el Diseñador de importaciones | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
@@ -13,15 +10,15 @@ ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: cf0ece10310b82cd958ff528fc06f36ed1b709d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c6eed27b9bfef272035f299af1a68a3788587f3c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875507"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987729"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Utilizar el diseñador de importaciones
+# <a name="how-to-use-the-imports-designer"></a>Filtrar Usar el diseñador de importaciones
 El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. De forma similar a la **importa** o **mediante** habilitar palabras clave en Visual Basic .NET y C#, la especificación de espacios de nombres en el Diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre completo nombre del tipo de versión.  
   
  El diseñador de importaciones reacciona tanto a los cambios en la interfaz de usuario como a los cambios que se efectúan cuando se guarda el flujo de trabajo. Cuando el flujo de trabajo está guardado, los espacios de nombres se pueden agregar automáticamente al diseñador de importaciones. Entre ellas se incluyen las siguientes:  

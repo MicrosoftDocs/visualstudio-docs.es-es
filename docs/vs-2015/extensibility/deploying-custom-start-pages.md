@@ -1,27 +1,22 @@
 ---
 title: Implementación de las páginas de inicio personalizada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795120"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002436"
 ---
 # <a name="deploying-custom-start-pages"></a>Implementación de páginas de inicio personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Puede implementar páginas principales personalizadas mediante la implementació
   
 - Puede colocar el archivo .vsix en un recurso compartido de red o en un sitio Web público. Cuando el archivo se abre la página de inicio se instala automáticamente.  
   
-- Puede cargar el archivo .vsix en el [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) del sitio Web para que los usuarios pueden instalar mediante el uso de **Administrador de extensiones**.  
+- Puede cargar el archivo .vsix en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) del sitio Web para que los usuarios pueden instalar mediante el uso de **Administrador de extensiones**.  
   
   La plantilla de proyecto de la página de inicio crea una copia de la página de inicio de Visual Studio de forma predeterminada para que pueda modificar la copia y conservar el original.  
   
@@ -46,7 +41,7 @@ Puede implementar páginas principales personalizadas mediante la implementació
   
 - Mediante la adición de los archivos de la página de inicio personalizados a un proyecto de VSIX vacío. Para obtener más información, consulte [plantilla de proyecto VSIX](../extensibility/vsix-project-template.md).  
   
-- Al crear manualmente un archivo .vsix. Para obtener más información, consulte [Cómo: empaquetar manualmente una extensión (implementación VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Al crear manualmente un archivo .vsix. Para obtener más información, vea [Cómo: Empaquetar manualmente una extensión (implementación VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
   Para Visual Studio reconocer una página de inicio, la `Content Element` de manifiesto de VSIX debe contener un `CustomExtension Element` que tiene el `Type` atributo establecido en `"StartPage"`. Aparece una extensión de la página de inicio que se ha instalado mediante la implementación de VSIX en el **Personalizar página principal** lista el **inicio** opciones de página como **[instalado la extensión]** *Nombre de la extensión*.  
   
@@ -76,7 +71,7 @@ Puede implementar páginas principales personalizadas mediante la implementació
   
 4.  Modificar el .pkgdef para establecer la página de inicio predeterminado en HKLM agregando lo siguiente, donde *MyStartPage.xaml* es el nombre del archivo .xaml que contiene la página de inicio.  
   
-     [$RootKey$ \StartPage\Default]  
+     [$RootKey$\StartPage\Default]  
   
      "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
   
@@ -98,4 +93,3 @@ Puede implementar páginas principales personalizadas mediante la implementació
 ## <a name="see-also"></a>Vea también  
  [Personalizar la página principal](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Adición de control de usuario a la página de inicio](../extensibility/adding-user-control-to-the-start-page.md)
-

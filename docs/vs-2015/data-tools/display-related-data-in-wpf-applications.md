@@ -1,12 +1,9 @@
 ---
 title: Mostrar datos relacionados en aplicaciones WPF | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174154"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988174"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Mostrar datos relacionados en aplicaciones WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +39,9 @@ En algunas aplicaciones, es posible que desea trabajar con datos procedentes de 
   
 ## <a name="to-create-controls-that-display-related-records"></a>Para crear controles que muestren los registros relacionados  
   
-1.  En el **datos** menú, haga clic en **Mostrar orígenes de datos** para abrir el **orígenes de datos** ventana.  
+1.  En el menú **Datos**, haga clic en **Mostrar orígenes de datos** para abrir la ventana **Orígenes de datos**.  
   
-2.  Haga clic en **Agregar nuevo origen de datos**y complete el **configuración origen de datos** asistente.  
+2.  Haga clic en **Agregar nuevo origen de datos** y complete el **Asistente para configuración de orígenes de datos**.  
   
 3.  Abra el diseñador WPF y asegúrese de que el diseñador contiene un contenedor que sea un destino válido para los elementos de la **orígenes de datos** ventana.  
   
@@ -71,4 +68,3 @@ En algunas aplicaciones, es posible que desea trabajar con datos procedentes de 
  [Enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Crear tablas de búsqueda en aplicaciones WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)   
  [Tutorial: Mostrar datos relacionados en una aplicación WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-

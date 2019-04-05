@@ -1,27 +1,22 @@
 ---
 title: CommandPlacement (elemento) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53a60949cdda6d026525dcc8be5bab8f82a0fb73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741545"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987603"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,16 +40,16 @@ CommandPlacement (elemento) permite a los botones, grupos y los menús que se in
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Requerido. El guid del conjunto de comandos, tal como se define en el [Symbols (elemento)](../extensibility/symbols-element.md).|  
-|id|Requerido. El identificador del menú, grupo o comando colocarse, tal como se define en el `Symbols Element`.|  
-|priority|Requerido. Determina la posición del elemento visual en su elemento primario.|  
+|guid|Obligatorio. El guid del conjunto de comandos, tal como se define en el [Symbols (elemento)](../extensibility/symbols-element.md).|  
+|id|Obligatorio. El identificador del menú, grupo o comando colocarse, tal como se define en el `Symbols Element`.|  
+|priority|Obligatorio. Determina la posición del elemento visual en su elemento primario.|  
 |Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|Elemento primario|Requerido. El menú o el grupo que hospeda el elemento que se va a colocar.|  
+|Primario|Obligatorio. El menú o el grupo que hospeda el elemento que se va a colocar.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
@@ -76,4 +71,3 @@ CommandPlacement (elemento) permite a los botones, grupos y los menús que se in
 ## <a name="see-also"></a>Vea también  
  [CommandPlacements (elemento)](../extensibility/commandplacements-element.md)   
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

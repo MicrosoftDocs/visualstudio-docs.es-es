@@ -1,14 +1,9 @@
 ---
 title: Crear paquetes de arranque | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910932"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002548"
 ---
 # <a name="creating-bootstrapper-packages"></a>Crear paquetes de arranque
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ El programa de instalación es un instalador genérico que se puede configurar p
  El programa previo detecta primero si los requisitos previos están ya instalados. Si no lo están, el programa previo muestra el contrato de licencia. Después de que el usuario acepta los contratos de licencia, comienza la instalación de los requisitos previos. Si se detectan todos los requisitos previos, el programa previo inicia el instalador de la aplicación.  
   
 ## <a name="creating-custom-packages"></a>Crear paquetes personalizados  
- Puede generar los manifiestos con el editor XML de Visual Studio. Para obtener más información, vea [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) y [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Para obtener un ejemplo de cómo crear un paquete de programa previo, vea [Tutorial: Crear un arranque personalizado para mostrar un aviso de privacidad](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Puede generar los manifiestos con el editor XML de Visual Studio. Para obtener más información, vea [Cómo: Crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md) y [Cómo: Crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md). Para ver un ejemplo de cómo crear un paquete de arranque, consulte [Tutorial: Crear un arranque personalizado para mostrar un Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Para crear un paquete de programa previo, debe suministrar el redistribuible en forma de archivo EXE o MSI al generador de manifiestos de programa previo. Después, el generador de manifiestos de programa previo crea los siguientes archivos:  
   
@@ -75,7 +70,7 @@ El programa de instalación es un instalador genérico que se puede configurar p
   
   `package.xml`  
   
-  Por último, copie los archivos redistribuibles en la ubicación de la carpeta del programa previo. Para obtener más información, consulta [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Por último, copie los archivos redistribuibles en la ubicación de la carpeta del programa previo. Para obtener más información, vea [Cómo: Crear un paquete de arranque localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -105,22 +100,22 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  La tabla siguiente muestra las propiedades que el programa previo rellena automáticamente.  
   
-|Propiedad|Descripción|  
+|Property|Descripción|  
 |--------------|-----------------|  
 |ApplicationName|El nombre de la aplicación.|  
-|ProcessorArchitecture|El procesador y los bits por palabra de la plataforma de destino de un ejecutable. Los valores son los siguientes:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
+|ProcessorArchitecture|El procesador y los bits por palabra de la plataforma de destino de un ejecutable. Los valores son los siguientes:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Número de versión de los sistemas operativos Microsoft Windows 95, Windows 98 o Windows ME. La sintaxis de la versión es Principal.Secundaria.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/library/aa372495\(v=vs.140\).xaspx)|Número de versión de los sistemas operativos Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintaxis de la versión es Principal.Secundaria.ServicePack.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Número de versión de los sistemas operativos Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintaxis de la versión es Principal.Secundaria.ServicePack.|  
 |[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|La versión del ensamblado de Windows Installer (msi.dll) que se ejecuta durante la instalación.|  
 |[AdminUser](https://msdn.microsoft.com/library/aa367545\(v=vs.140\).aspx)|Esta propiedad se establece si el usuario tiene privilegios administrativos. Los valores son true o false.|  
-|InstallMode|El modo de instalación indica desde dónde debe instalarse el componente. Los valores son los siguientes:<br /><br /> -HomeSite: los requisitos previos se instalan desde el sitio Web del proveedor.<br />-SpecificSite: los requisitos previos se instalan desde la ubicación que seleccione.<br />-SameSite: los requisitos previos se instalan desde la misma ubicación que la aplicación.|  
+|InstallMode|El modo de instalación indica desde dónde debe instalarse el componente. Los valores son los siguientes:<br /><br /> -   HomeSite: los requisitos previos se instalan desde el sitio web del proveedor.<br />-   SpecificSite: los requisitos previos se instalan desde la ubicación que seleccione.<br />-   SameSite: los requisitos previos se instalan desde la misma ubicación que la aplicación.|  
   
 ## <a name="separating-redistributables-from-application-installations"></a>Separar los redistribuibles de las instalaciones de las aplicaciones  
  Puede evitar que los archivos redistribuibles se implementen en proyectos de instalación. Para ello, cree una lista de redistribuibles en la carpeta RedistList de su directorio de .NET Framework:  
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- La lista de redistribuibles es un archivo XML cuyo nombre debe seguir el formato siguiente: *Nombre de la compañía*.*Nombre del componente*.RedistList.xml. Por ejemplo, si el componente se llama Datawidgets y ha sido creado por Acme, use Acme.DataWidgets.RedistList.xml. El siguiente podría ser un ejemplo del contenido de la lista de redistribuibles:  
+ La lista de redistribuibles es un archivo XML cuyo nombre debe seguir el formato siguiente: *Nombre de la empresa*. *Nombre del componente*. RedistList.xml. Por ejemplo, si el componente se llama Datawidgets y ha sido creado por Acme, use Acme.DataWidgets.RedistList.xml. El siguiente podría ser un ejemplo del contenido de la lista de redistribuibles:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -134,6 +129,3 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
  [Cuadro de diálogo Requisitos previos](../ide/reference/prerequisites-dialog-box.md)   
  [Referencia de esquemas de paquete y producto](../deployment/product-and-package-schema-reference.md)   
  [Usar el programa previo de Visual Studio 2005 para poner en marcha su instalación](http://go.microsoft.com/fwlink/?LinkId=107537)
-
-
-

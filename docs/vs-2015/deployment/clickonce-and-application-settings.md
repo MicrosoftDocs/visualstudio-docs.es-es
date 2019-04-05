@@ -1,14 +1,9 @@
 ---
 title: ClickOnce y configuración de la aplicación | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +14,13 @@ ms.assetid: 891caba6-faef-4a3c-8f71-60e6fadb60eb
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 29f51960ad953318c8d9de749f28f684128e52ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 07be583099627bbff4f67a4c040f4c44ddbc6224
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177001"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58988116"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce y configuración de la aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,8 +58,5 @@ Configuración de la aplicación para Windows Forms facilita crear, almacenar y 
 ## <a name="see-also"></a>Vea también  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Introducción a la configuración de la aplicación](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)   
- [Información general de la memoria caché de ClickOnce](../deployment/clickonce-cache-overview.md)   
+ [ClickOnce Cache Overview](../deployment/clickonce-cache-overview.md)   
  [Obtener acceso local o remoto a los datos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
-
-
-

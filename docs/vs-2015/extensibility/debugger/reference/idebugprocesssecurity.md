@@ -1,26 +1,21 @@
 ---
 title: IDebugProcessSecurity | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessSecurity interface
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 69efa5cf6f9a71e4d66ef03907645644a644413c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 836b971963587aa89440c6e023ee255612d2a087
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988365"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ IDebugProcessSecurity : IUnknown
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -56,4 +51,3 @@ IDebugProcessSecurity : IUnknown
  [Proveedores de puertos](../../../extensibility/debugger/port-suppliers.md)   
  [Interfaces del núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
-

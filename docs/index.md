@@ -3,9 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Documentación de Visual Studio | Microsoft Docs
 titleSuffix: ''
-description: 'Aprenda a usar Visual Studio para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas.'
+description: Aprenda a usar Visual Studio para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas.
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515329"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">

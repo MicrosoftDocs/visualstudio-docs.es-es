@@ -1,14 +1,9 @@
 ---
-title: 'CA2239: Proporcionar métodos de deserialización para campos opcionales | Microsoft Docs'
-ms.custom: ''
+title: 'CA2239: Proporcionar métodos de deserialización para campos opcionales | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2239
 - ProvideDeserializationMethodsForOptionalFields
@@ -20,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d3054e12261701702c25d6164d2a2d85ead3a202
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5bfb682e3b2220a6eb68e7f225e147b8106c3e7c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877275"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986796"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Proporcionar métodos de deserialización para campos opcionales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ ms.locfileid: "49877275"
 
  [CA2240: Implementar ISerializable correctamente](../code-quality/ca2240-implement-iserializable-correctly.md)
 
- [CA2229: Implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
+ [CA2229: implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
 
  [CA2238: Implementar métodos de serialización correctamente](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
@@ -68,7 +63,4 @@ ms.locfileid: "49877275"
 
  [CA2237: Marcar los tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2120: Proteger los constructores de serializaciones](../code-quality/ca2120-secure-serialization-constructors.md)
-
-
-
+ [CA2120: Proteger los constructores de serialización](../code-quality/ca2120-secure-serialization-constructors.md)

@@ -1,14 +1,9 @@
 ---
-title: 'CA1712: No utilizar prefijos en valores de enumeración con el nombre de tipo | Microsoft Docs'
-ms.custom: ''
+title: 'CA1712: No utilizar prefijos en valores de enumeración con el nombre de tipo | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1712
 - DoNotPrefixEnumValuesWithTypeName
@@ -20,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eba81742eefd4e5a89e98417c8530f3146133916
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 19b64c0d7c45bb2425ca3e59bd56f5c251feef50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916730"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987243"
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: No utilizar prefijos en valores de enumeración con el nombre del tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,6 +62,3 @@ ms.locfileid: "49916730"
 
 ## <a name="see-also"></a>Vea también
  <xref:System.Enum?displayProperty=fullName>
-
-
-

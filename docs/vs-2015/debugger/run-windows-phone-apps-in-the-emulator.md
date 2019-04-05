@@ -1,14 +1,9 @@
 ---
 title: Ejecutar aplicaciones de Windows Phone en el emulador | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739985"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988115"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Ejecutar aplicaciones de Windows Phone en el simulador 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El emulador de Windows Phone proporciona un entorno virtual en el que puede depurar y probar aplicaciones de Windows Phone en el equipo sin un dispositivo físico. Puede simular eventos táctiles y rotaciones, y elegir el tamaño y la resolución de la pantalla física que desee emular. También puede probar muchas características usadas habitualmente como, por ejemplo, la ubicación, las redes, las notificaciones, los sensores, el acelerómetro y la tarjeta SD opcional.  
   
- Para obtener más información sobre las características que puede probar en el emulador, consulte [probar características de la aplicación en el emulador de Windows Phone](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Para obtener más información sobre las características que puede probar en el emulador, consulte [probar características de la aplicación en el emulador de Windows Phone](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Junto con Visual Studio, el emulador proporciona un entorno completo donde puede diseñar, desarrollar, depurar y probar aplicaciones de Windows Phone.  
   
@@ -113,7 +108,7 @@ El emulador de Windows Phone proporciona un entorno virtual en el que puede depu
 ##  <a name="BKMK_toolbar"></a> Configurar el emulador de Windows Phone con la barra de herramientas del emulador  
  En esta table se muestran los botones de configuración disponibles en la barra de herramientas del emulador.  
   
-|Botones de barra de herramientas|Opciones de configuración|  
+|Botones de la barra de herramientas|Opciones de configuración|  
 |---------------------|---------------------------|  
 |![Las opciones en la barra de herramientas del emulador de Windows Phone de entrada](../debugger/media/wp-emulator.png "WP_Emulator_")|**Configurar entrada único punto o multipunto**<br /><br /> Al habilitar una entrada de multipunto, puede hacer clic con el botón derecho para mover los puntos táctiles sin tocar la pantalla. A continuación, puedeshacer clic con el botón izquierdo para mover ambos puntos táctiles simultáneamente.|  
 |![Orientación de la barra de herramientas del emulador de Windows Phone](../debugger/media/wp-emulator-rotation.png "WP_Emulator_rotation")|**Configurar la orientación del emulador**<br /><br /> Puede cambiar la orientación en Windows Phone Emulator por una de las tres orientaciones posibles: vertical, horizontal a la izquierda u horizontal a la derecha. El tamaño del emulador no cambia al cambiar la orientación.<br /><br /> Para cambiar la orientación, haga clic en el **Girar a la izquierda** botón o la **Girar a la derecha** botón.|  
@@ -225,6 +220,3 @@ El emulador de Windows Phone proporciona un entorno virtual en el que puede depu
 -   Especifique una compilación de versión en Visual Studio. Después de especificar una versión de lanzamiento, inicie la aplicación seleccionando el **implementar _[nombre de la aplicación]_**  vincular en el **compilar** menú.  
   
 -   Como alternativa, puede convertir en comentario la línea de código en el archivo app.xaml.cs o app.xaml.vb que establece el valor de `EnableFrameRateCounter` como `true`.
-
-
-

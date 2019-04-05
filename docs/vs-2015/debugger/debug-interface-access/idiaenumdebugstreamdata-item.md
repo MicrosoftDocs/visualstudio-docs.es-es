@@ -1,14 +1,9 @@
 ---
-title: Idiaenumdebugstreamdata | Microsoft Docs
-ms.custom: ''
+title: IDiaEnumDebugStreamData::Item | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 761e61a5-44a6-4d5d-a98e-c2e9b89d2343
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b13277b748a364c60dd764dc5deac3bdd86aa02f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b80f71b2ca5d718f2de834389b4caab728e1f1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987523"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ HRESULT Item ( 
  pcbData  
  [out] Devuelve el número de bytes devueltos. Si `data` es `NULL`, a continuación, `pcbData` contiene el número total de bytes de datos disponibles en el registro especificado.  
   
- datos]  
+ data[]  
  [out] Un búfer que se rellena con los datos de registro de flujo de depuración.  
   
 ## <a name="return-value"></a>Valor devuelto  
@@ -59,10 +54,7 @@ HRESULT Item ( 
   
 ## <a name="see-also"></a>Vea también  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [Idiaenumdebugstreamdata](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
- [Idiaenumdebugstreams](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
- [Idiaenumdebugstreamdata](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
+ [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
+ [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
+ [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
  [IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)
-
-
-

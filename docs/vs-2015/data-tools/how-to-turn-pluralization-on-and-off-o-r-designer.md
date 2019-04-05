@@ -1,25 +1,22 @@
 ---
-title: 'Cómo: activar y desactivar (Object Relational Designer) la pluralización | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Activar y desactivar (Object Relational Designer) la pluralización | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4491f25a861b8556ae5018e526349d6a17187a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ff3f206f57a544053498def16318e0ed65b64ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279115"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987274"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Cómo: activar y desactivar (Object Relational Designer) la pluralización
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Filtrar Activación y desactivación de la pluralización (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -34,10 +31,10 @@ De forma predeterminada, al arrastrar objetos de base de datos con nombres que t
   
 1.  En el menú **Herramientas** , haga clic en **Opciones**.  
   
-2.  En el **opciones** cuadro de diálogo, expanda **herramientas de base de datos**.  
+2.  En el cuadro de diálogo **Opciones**, expanda **Herramientas para bases de datos**.  
   
 > [!NOTE]
->  Seleccione **mostrar todas las configuraciones** si el **herramientas de base de datos** nodo no está visible.  
+>  Seleccione **Mostrar todas las configuraciones** si el nodo **Herramientas para bases de datos** no está visible.  
   
 1.  Haga clic en **Object Relational Designer**.  
   
@@ -49,4 +46,3 @@ De forma predeterminada, al arrastrar objetos de base de datos con nombres que t
  [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-

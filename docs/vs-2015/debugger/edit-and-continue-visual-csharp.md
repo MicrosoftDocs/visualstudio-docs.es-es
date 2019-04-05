@@ -1,14 +1,9 @@
 ---
 title: Editar y continuar (Visual C#) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 591bd1b7-ef10-4d10-817b-3f92ca4be006
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fff791d948d12d88b5e4813d106baa21740b0269
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 027e713ccb966528d0468050df30e4265b574198
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751129"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986625"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar y continuar (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +35,10 @@ Con Editar y continuar para C#, puede realizar cambios en el código en modo de 
   
  Editar y continuar se admite para proyectos 64 bits destinados a .NET Framework 4.5.1.  
   
- Cuando la opción Editar y continuar está habilitada, los cambios admitidos se aplican automáticamente cuando se usa un comando de ejecución del depurador, como **continuar**, **paso**, **Establecer instrucción siguiente**, o para realizar una evaluación de función en una ventana del depurador.  
+ Si se habilita Editar y continuar, los cambios admitidos se aplican automáticamente cuando se utiliza un comando de ejecución del depurador, como **Continuar**, **Paso**, **Establecer instrucción siguiente**, o cuando se realiza una evaluación de función en una ventana del depurador.  
   
- Para obtener más información, consulte [Cómo: utilizar editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
+ Para obtener más información, vea [Cómo: Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: utilizar editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
+ [Cómo: Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
  [Cambios admitidos en el código (C#)](../debugger/supported-code-changes-csharp.md)
-
-
-

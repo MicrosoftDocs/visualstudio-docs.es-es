@@ -1,24 +1,19 @@
 ---
 title: SDK del Visor de Ayuda de Microsoft | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d56d71dd8c8e144c8a2267ed4571b661cca378c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794704"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988510"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,13 +61,13 @@ En este artículo contiene las siguientes tareas para los integradores del Visor
 
   Cadenas de idioma compatible (no distingue mayúsculas de minúsculas):
 
-- JavaScript
+- javascript
 
 - CSharp o c#
 
 - cplusplus o Visual c++ o c ++
 
-- JScript
+- jscript
 
 - VisualBasic o vb
 
@@ -145,7 +140,7 @@ En este artículo contiene las siguientes tareas para los integradores del Visor
 
 4.  Agregue un fragmento de código:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Agregar texto específico del lenguaje de código: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` tenga en cuenta que devLangnu = permite introducir otros lenguajes. Por ejemplo, devLangnu = "Fortran" mostrará Fortran cuando el fragmento de código DisplayLanguage = Fortran
+5.  Agregue texto específico del lenguaje de código:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Tenga en cuenta que devLangnu = permite introducir otros lenguajes. Por ejemplo, devLangnu = "Fortran" mostrará Fortran cuando el fragmento de código DisplayLanguage = Fortran
 
 6.  Agregar vínculos de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -289,11 +284,11 @@ some F# code
 
 - Características de Visual Studio asociado (VSP) emiten un valor a la bolsa de F1 (prefix.keyword de bolsa de propiedades y la dirección URL en línea para el prefijo que se encuentra en el registro): F1 envía una dirección URL de VSP + parámetros al explorador.
 
-- Las características de Visual Studio (editor de idiomas, los elementos de menú específico de Visual Studio, etc.): F1 envía una URL de Visual Studio en el explorador.
+- Características de Visual Studio (editor de idiomas, los elementos de menú específico de Visual Studio, etcetera):  F1 envía una URL de Visual Studio en el explorador.
 
   Cuando el origen de contenido de Ayuda de Visor de Ayuda predeterminado se establece en la Ayuda local (lanzamiento en el Visor de Ayuda):
 
-- Características VSP donde coincide con la palabra clave entre F1 bolsa de propiedades y el índice de almacén local (es decir, el prefix.keyword del contenedor de propiedad = el valor se encuentra en el índice de almacén local): F1 representa el tema en el Visor de ayuda.
+- Características VSP donde coincide con la palabra clave entre F1 bolsa de propiedades y el índice de almacén local (es decir, el prefix.keyword del contenedor de propiedad = el valor se encuentra en el índice de almacén local):  F1 representa el tema en el Visor de ayuda.
 
 - Características de Visual Studio (ninguna opción para el archivo VSP invalidar la bolsa de propiedades que se emiten desde las características de Visual Studio): F1 representa un tema de Visual Studio en el Visor de ayuda.
 
@@ -305,31 +300,31 @@ some F# code
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-        "VendorContent" = dword: 00000001
+        "VendorContent"=dword:00000001
 
    -   Para los sistemas operativos de 64 bits:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-        "VendorContent" = dword: 00000001
+        "VendorContent"=dword:00000001
 
 2. Registrar el espacio de nombres asociado bajo la clave de ayuda 2.1:
 
    - Para sistemas operativos de 32 bits:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\< espacio de nombres\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "ubicación"="sin conexión"
 
    - Para los sistemas operativos de 64 bits:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< espacio de nombres\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "ubicación"="sin conexión"
 
    **Base de análisis nativo Namespace**
 
-   Para activar el análisis de espacio de nombres base nativo, en el registro de agregar un nuevo valor DWORD con el nombre de: BaseNativeNamespaces y establezca su valor en 1 (bajo la clave de catálogo que desean admitir).  Por ejemplo, si desea usar el catálogo de Visual Studio, puede agregar la clave para la ruta de acceso:
+   Para activar el espacio de nombres base nativa de análisis, en el registro de agregar un nuevo valor DWORD con el nombre de: BaseNativeNamespaces y establezca su valor en 1 (bajo la clave de catálogo que desean admitir).  Por ejemplo, si desea usar el catálogo de Visual Studio, puede agregar la clave para la ruta de acceso:
 
    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
@@ -347,7 +342,7 @@ some F# code
 
   Agregue la siguiente clave del registro y el valor:
 
-  Clave de ayuda HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic: mostrar los resultados de depuración en el valor de venta: Sí
+  Clave de la Ayuda de HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic: Mostrar resultados de depuración en el valor de venta: SÍ
 
   En el IDE, bajo el elemento de menú Ayuda, seleccione "Depurar contexto de ayuda"
 
@@ -368,7 +363,7 @@ some F# code
 |\< contenido de meta name="Microsoft.Help.TocOrder" = "[entero]" / >|Especifica dónde en la tabla de contenido en este tema aparece en relación con sus temas del mismo nivel. Esta etiqueta es necesaria y se debe usar una sola vez en un tema. El valor es un entero. Un tema que especifica un entero menor valor aparece por encima de un tema que especifica un entero de mayor valor.|
 |\< contenido de meta name="Microsoft.Help.Product" = "[product code]" / >|Especifica el producto que se describe en este tema. Si esta etiqueta se usa en un tema, se debe usar una sola vez. Esta información también se puede proporcionar como un parámetro que se pasa al indizador de ayuda.|
 |\< contenido de meta name="Microsoft.Help.ProductVersion" = "[número de versión]" / >|Especifica la versión del producto que se describe en este tema. Si esta etiqueta se usa en un tema, se debe usar una sola vez. Esta información también se puede proporcionar como un parámetro que se pasa al indizador de ayuda.|
-|\< contenido de meta name="Microsoft.Help.Category" = "[string]" / >|Usa productos para identificar las subsecciones de contenido. Puede identificar varias subsecciones para un tema o puede omitir esta etiqueta si no desea que los vínculos para identificar cualquier subsecciones. Esta etiqueta se utiliza para almacenar los atributos para TargetOS y TargetFrameworkMoniker cuando se convierte un tema desde una versión anterior de la Ayuda. El formato del contenido es AttributeName:AttributeValue.|
+|\< meta name="Microsoft.Help.Category" content="[string]"/>|Usa productos para identificar las subsecciones de contenido. Puede identificar varias subsecciones para un tema o puede omitir esta etiqueta si no desea que los vínculos para identificar cualquier subsecciones. Esta etiqueta se utiliza para almacenar los atributos para TargetOS y TargetFrameworkMoniker cuando se convierte un tema desde una versión anterior de la Ayuda. El formato del contenido es AttributeName:AttributeValue.|
 |\< el contenido de meta name="Microsoft.Help.TopicVersion ="[número de versión de tema]"/ >|Especifica esta versión del tema cuando existen varias versiones de un catálogo. Porque Microsoft.Help.Id no está garantizado que sea único, esta etiqueta es necesaria cuando más de una versión de un tema no existe en un catálogo, por ejemplo, cuando un catálogo contiene un tema de .NET Framework 3.5 y un tema para .NET Framework 4 y ambos tienen el mismo Micro suave. Help.Id.|
 |\< nombre de la meta = "SelfBranded" content = "[TRUE o FALSE]" / >|Especifica si en este tema usa el paquete de personalización de marca de inicio de administrador de bibliotecas de ayuda o un paquete de personalización de marca específica del tema. Esta etiqueta debe ser TRUE o FALSE. Si es TRUE, el paquete de personalización de marca para el tema asociado reemplaza el paquete de personalización de marca que se establece cuando se inicia el Administrador de bibliotecas de ayuda para que el tema se presenta como se espera incluso si es diferente de la representación de otro tipo de contenido. Si es FALSE, el tema actual se representa según el paquete de personalización de marca que se establece cuando se inicia el Administrador de bibliotecas de ayuda. De forma predeterminada, se supone una personalización de marca automáticamente a ser false a menos que se declara la variable SelfBranded como TRUE; Administrador de bibliotecas de ayuda por lo tanto, no es necesario declarar \<nombre meta = "SelfBranded" content = "FALSE" / >.|
 
@@ -377,7 +372,7 @@ some F# code
 
  Personalización de marca de los paquetes se instalan por el producto que contiene el Visor de ayuda.  Productos de Visual Studio:
 
-- Un paquete de personalización de marca de reserva (Branding_\<configuración regional > MSHC) se instala en la raíz de la aplicación Visor de ayuda 2.1 (ejemplo: C:\Program Files (x86) \Microsoft Help Viewer\v2.1) por el paquete de idioma del Visor de ayuda.  Esto se usa para los casos donde no está instalado el producto de cualquier paquete de personalización de marca (no se ha instalado contenido) o daños en el paquete de personalización de marca instalado.  Cuando se usa el paquete de personalización de marca reserva de la raíz de aplicación, se omiten los elementos de Visual Studio (logotipo y comentarios).
+- Un paquete de personalización de marca de reserva (Branding_\<configuración regional > MSHC) se instala en la raíz de la aplicación Visor de ayuda 2.1 (ejemplo: C:\Program archivos (x86) \Microsoft Help Viewer\v2.1) por el paquete de idioma del Visor de ayuda.  Esto se usa para los casos donde no está instalado el producto de cualquier paquete de personalización de marca (no se ha instalado contenido) o daños en el paquete de personalización de marca instalado.  Cuando se usa el paquete de personalización de marca reserva de la raíz de aplicación, se omiten los elementos de Visual Studio (logotipo y comentarios).
 
 - Cuando se instala el contenido de Visual Studio desde el servicio de paquete de contenido, también se instala un paquete de personalización de marca (para el primer escenario de instalación del contenido de tiempo).  Si hay una actualización para el paquete de personalización de marca, la actualización se instala cuando se produce la siguiente actualización de contenido o la acción de instalación del paquete adicional.
 
@@ -437,7 +432,7 @@ some F# code
 
   Nota: las variables que se ha indicado por "{n}" tienen dependencias de código, quitar o cambiar estos valores hará que los errores y, posiblemente, el bloqueo de la aplicación. Los identificadores de localización (ejemplo _locID="codesnippet.n") se incluyen en el paquete de personalización de marca de Visual Studio.
 
-  **Branding.Xml**
+  **Branding.xml**
 
 |||
 |-|-|
@@ -447,7 +442,7 @@ some F# code
 |ExpandText|Expand|
 |CollapseText|Contraer|
 |Característica:|**CodeSnippet**|
-|Usar:|Texto del control de fragmento de código.  Nota: El contenido de fragmento de código con el espacio "Indivisible" cambiará a espacio.|
+|Usar:|Texto del control de fragmento de código.  Nota: Contenido de fragmento de código con el espacio "Indivisible" se cambiará a espacio.|
 |**Element**|**Valor**|
 |CopyToClipboard|Copiar en el Portapapeles|
 |ViewColorizedText|Ver texto coloreado|
@@ -515,23 +510,23 @@ some F# code
 |HomePageNoBooksInstalled|No se encontró ningún contenido en el equipo.|
 |HomePageHelpSettings|Configuración de contenido de ayuda|
 |HomePageHelpSettingsText|\<p > es la configuración actual de la Ayuda local. El Visor de Ayuda muestra contenido que ha instalado en el equipo. \<br / > para cambiar el origen de contenido de ayuda, en la barra de menús de Visual Studio, elija \<span style = "{0}" > Ayuda, establecer preferencias de la Ayuda\</span >.\< br / >\</p >|
-|Megabytes|MB|
+|MegaByte|MB|
 
- **Branding.js**
+ **branding.js**
 
  El archivo branding.js contiene JavaScript que usa los elementos de personalización de marca del Visor de Ayuda de Visual Studio.  A continuación es una lista de los elementos de personalización de marca y la función auxiliar de JavaScript.  Todas las cadenas se localicen para este archivo se definen en la sección "Cadenas localizables" en la parte superior de este archivo.  Se ha creado el archivo ICL para cadenas loc dentro del archivo branding.js.
 
 ||||
 |-|-|-|
 |**Característica de personalización de marca**|**Función de JavaScript**|**Descripción**|
-|Var...||Definir variables|
+|Var …||Definir variables|
 |Obtiene el lenguaje de código de usuario|setUserPreferenceLang|asigna un índice # para el lenguaje de código|
 |Establecer y obtener los valores de cookie|getCookie, setCookie||
 |Miembro heredado|changeMembersLabel|Expandir o contraer miembro heredado|
 |Cuando SelfBranded = False|onLoad|Leer la cadena de consulta para comprobar si es una solicitud de impresión.  Establecer todas las codesnippets para centrarse en la pestaña preferido del usuario.  Si es una solicitud de impresión, a continuación, establezca isPrinterFriendly en true. Compruebe si el modo de contraste alto.|
 |Fragmento de código|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
-||Ficha cambiar se||
+||ChangeTab||
 ||setCodesnippetLang||
 ||setCurrentLang||
 ||CopyToClipboard||
@@ -544,13 +539,13 @@ some F# code
 ||addToLanSpecTextIdSet(id)||
 ||updateLST(currentLang)||
 ||getDevLangFromCodeSnippet(lang)||
-|Funcionalidad multiMedia|título (comenzar, final, texto, estilo)||
+|Funcionalidad multiMedia|caption(begin, end, text, style)||
 ||findAllMediaControls(normalizedId)||
 ||getActivePlayer(normalizedId)||
 ||captionsOnOff(id)||
 ||toSeconds(t)||
 ||getAllComments(node)||
-||styleRectify (nombre de estilo, styleValue)||
+||styleRectify(styleName, styleValue)||
 ||showCC(id)||
 ||Subtitle(ID)||
 
@@ -562,22 +557,22 @@ some F# code
 |-|-|-|
 |**Archivo**|**Use**|**Muestra el origen de contenido**|
 |homepage.htm|Se trata de una página que muestra el contenido instalado actualmente y cualquier otro mensaje adecuada para presentar al usuario sobre su contenido.  Este archivo tiene el contenido de "Microsoft.Help.Id" del atributo de datos de metadatos adicional = "-1" que coloca este contenido en la parte superior de la tabla de contenido de contenido local.||
-||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, etiqueta \<HomePageTitle >|
-||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, etiqueta \<HomePageIntroduction >|
-||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, etiqueta \<HomePageContentInstallText >|
-||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Encabezado de sección Branding.xml etiqueta\<HomePageInstalledBooks >, los datos generados a partir de la aplicación, \<HomePageNoBooksInstalled > cuando no se instalan los libros en pantalla.|
-||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Encabezado de sección Branding.xml etiqueta \<HomePageHelpSettings >, sección texto \<HomePageHelpSettingsText >.|
+||<META_HOME_PAGE_TITLE_ADD />|Branding.XML, etiqueta \<HomePageTitle >|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.XML, etiqueta \<HomePageIntroduction >|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.XML, etiqueta \<HomePageContentInstallText >|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|Encabezado de sección Branding.xml etiqueta\<HomePageInstalledBooks >, los datos generados a partir de la aplicación, \<HomePageNoBooksInstalled > cuando no se instalan los libros en pantalla.|
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|Encabezado de sección Branding.xml etiqueta \<HomePageHelpSettings >, sección texto \<HomePageHelpSettingsText >.|
 |topiccorrupted.htm|Cuando existe un tema en el conjunto local, pero por alguna razón no se puede mostrar (dañado contenido).||
-||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, etiqueta \<TopicCorruptedTitle >|
-||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, etiqueta \<TopicCorruptedViewOnlineText >|
+||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.XML, etiqueta \<TopicCorruptedTitle >|
+||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.XML, etiqueta \<TopicCorruptedViewOnlineText >|
 |topicnotfound.htm|Cuando un tema no se encuentra en el contenido local establecida, ni está disponible en línea||
-||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, etiqueta \<TopicNotFoundTitle >|
-||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.XML, etiqueta \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
-||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, etiqueta \<TopicNotFoundText >|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.XML, etiqueta \<TopicNotFoundTitle >|
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.XML, etiqueta \<TopicNotFoundText >|
 |contentnotinstalled.htm|Cuando no hay ningún contenido local instalado para el producto.||
-||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.XML, etiqueta \<ContentNotInstalledTitle >|
-||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.XML, etiqueta \<ContentNotInstalledDownloadContentText >|
-||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.XML, etiqueta \<ContentNotInstalledText >|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.XML, etiqueta \<ContentNotInstalledTitle >|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.XML, etiqueta \<ContentNotInstalledDownloadContentText >|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.XML, etiqueta \<ContentNotInstalledText >|
 
  **Archivos CSS**
 
@@ -617,7 +612,7 @@ some F# code
 
  Nota: en el siguiente ejemplo de implementación, hemos incluido el paquete de personalización de marca. Esto es importante incluir con el fin de obtener los elementos necesarios de representación de contenido de Visual Studio y los comportamientos del contenido.
 
- Ejemplo de archivo HelpContentSetup.msha: (reemplace "1 nombre de conjunto de contenido" y "contenido de conjunto de nombre 2", etc. con los nombres de archivo.)
+ Ejemplo de archivo HelpContentSetup.msha: (Reemplace "1 nombre de conjunto de contenido" y "nombre de conjunto 2", etc. con los nombres de archivo de contenido.)
 
 ```
 <html>
@@ -728,11 +723,11 @@ some F# code
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-   Clave: Valor de cadena LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\
+   Explicación: Valor de cadena LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-US
 
-   Clave: Valor de cadena CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] documentación
+   Explicación: Valor de cadena CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Documentación
 
   **Crear el proyecto**
 
@@ -807,9 +802,9 @@ some F# code
 
      [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Shell integrado:
 
-     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-EE. UU.
+     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-US
 
-     Clave: Valor de cadena CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] documentación. Para el Shell de ISO, este es el nombre del catálogo.
+     Explicación: Valor de cadena CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Documentación. Para el Shell de ISO, este es el nombre del catálogo.
 
 15. Copie el contenido (MSHA y MSHC o .cab) en una carpeta local.
 

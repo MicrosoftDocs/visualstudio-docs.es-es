@@ -1,14 +1,9 @@
 ---
 title: VSTextView (objeto) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSTextView
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5815adbdc05685999d7dcd64139ebfd29b8776b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e8ed14761b77e3469b2c19d0e9fd2ff3732bb72d
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765085"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "59002109"
 ---
 # <a name="vstextview-object"></a>VSTextView (Objeto)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ La vista de texto es una ventana que permite a los usuarios ver y editar el text
   
 |Interfaz|Descripción|  
 |---------------|-----------------|  
-|[IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071)|Interfaz OLE estándar.|  
+|[IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|Interfaz OLE estándar.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|Interfaz OLE estándar.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|Interfaz OLE estándar.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Interfaz OLE estándar.|  
@@ -45,7 +40,6 @@ La vista de texto es una ventana que permite a los usuarios ver y editar el text
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Realiza operaciones en la vista desde un subproceso diferente.|  
   
 ## <a name="see-also"></a>Vea también  
- [Edición de cifras](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
+ [Edición de cifras](http://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
  [VSTextBuffer (objeto)](../extensibility/vstextbuffer-object.md)   
  [Acceso a la vista de texto mediante la API heredada](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
-

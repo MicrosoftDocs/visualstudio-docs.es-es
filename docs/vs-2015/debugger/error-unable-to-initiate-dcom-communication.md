@@ -1,14 +1,9 @@
 ---
-title: 'Error: No se puede iniciar la comunicación DCOM | Microsoft Docs'
-ms.custom: ''
+title: 'Error: No se puede iniciar la comunicación DCOM | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.unmarshal_server_failed
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2a7b27e6-2526-4f32-bc4d-eaee447f24ec
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 69fc98b18b89e3720340298500b44e62b621f0c4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 514f4e3de9bd5b79387a17dffe0e016dc92ea91e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987952"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>Error: No se puede iniciar la comunicación con DCOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ Se ha producido un error de DCOM cuando el equipo local ha intentado comunicarse
   
 ## <a name="see-also"></a>Vea también  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

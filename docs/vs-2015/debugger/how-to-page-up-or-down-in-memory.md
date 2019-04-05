@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: retroceder o avanzar en la memoria | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Retroceder o avanzar en la memoria | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,18 +22,18 @@ ms.assetid: 50b30a68-66f6-43f8-a48b-59ce12c95471
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d20c22e366736711f16fc17f56b2e81eea558948
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8859bac6f2cfe992c3c0d8005830985598934b88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769157"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986626"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Cómo: Retroceder o avanzar en la memoria
+# <a name="how-to-page-up-or-down-in-memory"></a>Filtrar Retroceso o avance en la memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Al ver el contenido de la memoria en un **memoria** ventana o el **desensamblado** ventana, puede usar la barra de desplazamiento vertical para moverse hacia arriba o hacia abajo en el espacio de memoria.  
+Mientras consulta el contenido de la memoria en una ventana **Memoria** o en la ventana **Desensamblado**, puede utilizar la barra de desplazamiento vertical para moverse hacia arriba o abajo en el espacio de memoria.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>Para retroceder o avanzar en la memoria  
   
@@ -57,11 +52,6 @@ Al ver el contenido de la memoria en un **memoria** ventana o el **desensamblado
 -   Haga clic en la flecha situada en la parte superior o inferior de la barra de desplazamiento vertical.  
   
 ## <a name="see-also"></a>Vea también  
- [Windows de memoria](../debugger/memory-windows.md)   
- [Cómo: usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)   
+ [Ventana Memoria](../debugger/memory-windows.md)   
+ [Cómo: Uso de la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)   
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-

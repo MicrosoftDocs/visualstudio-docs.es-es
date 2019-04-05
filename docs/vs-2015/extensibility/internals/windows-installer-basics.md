@@ -1,34 +1,29 @@
 ---
 title: Conceptos básicos de Windows Installer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b3756f8e9c8b22b9e6a7da52e076364024fe49d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747650"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002589"
 ---
 # <a name="windows-installer-basics"></a>Datos básicos de Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 El instalador de Windows se instala y desinstala las aplicaciones o productos de software en el equipo del usuario, realizar estas tareas en unidades denominadas componentes del instalador de Windows (a veces denominados WICs o simplemente componentes). Un GUID identifica cada WIC, que es la unidad básica de la instalación y el recuento de referencias para configuraciones mediante Windows Installer.  
   
- Para obtener documentación completa de Windows Installer, vea el tema de Platform SDK, [Windows Installer](http://msdn.microsoft.com/library/aa372866.aspx).  
+ Para obtener documentación completa de Windows Installer, vea el tema de Platform SDK, [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).  
   
 ## <a name="authoring-a-vspackage"></a>Creación de un VSPackage  
  Windows Installer utiliza paquetes de instalación, que contienen información que Windows Installer necesita para instalar, desinstalar o reparar un producto y para ejecutar la interfaz de usuario (UI) de programa de instalación. Cada paquete de instalación incluye un archivo .msi, que contiene una base de datos de la instalación, un flujo de información de resumen y los flujos de datos para las distintas partes de la instalación. Para usar el programa de instalación, debe crear una instalación. Dado que el instalador organiza las instalaciones en torno al concepto de componentes y almacena información sobre la instalación en una base de datos relacional, el proceso de creación de un paquete de instalación ampliamente implica los pasos siguientes:  
@@ -57,7 +52,7 @@ El instalador de Windows se instala y desinstala las aplicaciones o productos de
  Paquete (paquete redistribuible)  
  Una unidad de implementación que consta de un archivo .msi y archivos de origen externo a la que puede indicar este archivo. Un paquete contiene toda la información que necesita Windows Installer para ejecutar la interfaz de usuario y para instalar o desinstalar la aplicación.  
   
- archivo .msi  
+ .msi File  
  Un archivo de almacenamiento estructurado COM que contiene las instrucciones y los datos necesarios para instalar una aplicación. Cada paquete contiene al menos un archivo MSI. El archivo .msi contiene la base de datos de instalador, una secuencia de información de resumen y posiblemente una o varias transformaciones y los archivos de origen interno. Que se instalen archivos pueden se comprimen en un archivador y almacenarse en una secuencia en el archivo .msi o almacenados, comprimidos o sin comprimir, fuera del archivo .msi en el medio de origen. Para obtener más información, consulte [extensiones de archivo de Windows Installer](http://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
   
 ## <a name="windows-installer-rules-enforcement"></a>Cumplimiento de las reglas de Windows Installer  
@@ -80,4 +75,3 @@ El instalador de Windows se instala y desinstala las aplicaciones o productos de
   
 ## <a name="see-also"></a>Vea también  
  [¿Qué ocurre si se interrumpen las reglas de componente?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
-

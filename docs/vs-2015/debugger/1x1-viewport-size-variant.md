@@ -1,30 +1,25 @@
 ---
 title: Variante de tamaño de la ventanilla 1 x 1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3dbc3247-00f5-4644-8ff9-72e9febcf09a
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5280ed07d1799346b173ccac0f0186cd2bdca992
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 74e3bc706cb2df12aacddf9fbb77dec598bfc17a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777609"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987519"
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 Viewport (Variante de tamaño)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Reduce las dimensiones de la ventanilla de todos los objetivos de presentación a 1x1 píxeles.  
+Reduce las dimensiones de la ventanilla de todos los objetivos de representación a 1x1 píxeles.  
   
 ## <a name="interpretation"></a>Interpretación  
  Una ventanilla más pequeña reduce el número de píxeles que deben sombrearse, pero no reduce el número de vértices que deben procesarse. Establecer las dimensiones de la ventanilla a 1x1 píxeles elimina eficazmente el sombreado de píxeles de la aplicación.  
@@ -45,6 +40,3 @@ viewport.Width = 1;
 viewport.Height = 1;  
 d3d_context->RSSetViewports(1, &viewport);  
 ```
-
-
-

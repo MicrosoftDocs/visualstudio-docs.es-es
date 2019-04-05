@@ -1,29 +1,24 @@
 ---
-title: 'Lista de comprobación: Creación de un servicio de lenguaje heredado | Microsoft Docs'
-ms.custom: ''
+title: 'Lista de comprobación: Creación de un servicio de lenguaje heredado | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782991"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987418"
 ---
-# <a name="checklist-creating-a-legacy-language-service"></a>Lista de comprobación: creación de un servicio de lenguaje heredado
+# <a name="checklist-creating-a-legacy-language-service"></a>Lista de comprobación: Creación de un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 La siguiente lista de comprobación resume los pasos básicos que debe seguir para crear un servicio de lenguaje para el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor básico. Integrar el servicio de lenguaje en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], debe crear un evaluador de expresiones de depuración. Para obtener más información, consulte [escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) en el [extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
@@ -70,7 +65,7 @@ La siguiente lista de comprobación resume los pasos básicos que debe seguir pa
   > [!NOTE]
   >  El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interfaz debe implementarse en el mismo objeto que el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.  
   
-- Finalización de instrucciones  
+- Instrucciones completadas  
   
    Implementar la interfaz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>.  
   
@@ -116,7 +111,7 @@ La siguiente lista de comprobación resume los pasos básicos que debe seguir pa
   
 - esquematizar  
   
-   Hay varias opciones para admitir la esquematización. Por ejemplo, puede admitir el **contraer a definiciones** comando, proporcionan regiones de esquema controlado por el editor o admite regiones controlado por el cliente. Para obtener más información, consulte [Cómo: proporcionar expandido la compatibilidad de esquematización en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+   Hay varias opciones para admitir la esquematización. Por ejemplo, puede admitir el **contraer a definiciones** comando, proporcionan regiones de esquema controlado por el editor o admite regiones controlado por el cliente. Para obtener más información, vea [Cómo: Proporcionar compatibilidad con esquematización ampliada en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 - Registro del servicio de lenguaje  
   
@@ -133,4 +128,3 @@ La siguiente lista de comprobación resume los pasos básicos que debe seguir pa
 ## <a name="see-also"></a>Vea también  
  [Desarrollar un servicio de lenguaje heredado](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Escritura de un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

@@ -1,23 +1,20 @@
 ---
 title: Mensajes de Object Relational Designer | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c055321c3936f92c21d5bff6ac63ecbeb7c982e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7c43a8c6c306fd33dd7cb975dee9a7d89128d7cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217653"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988472"
 ---
 # <a name="or-designer-messages"></a>Mensajes de Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +23,13 @@ ms.locfileid: "49217653"
 En este tema se enumeran los mensajes que pueden aparecer cuando se trabaja con Object Relational Designer.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [No se puede crear una asociación \<nombre de asociación >-propiedad aparece dos veces](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
+ [No se puede crear una asociación \<nombre de asociación>; la propiedad aparece dos veces](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
- [No se puede crear una asociación \<nombre de asociación >-no coinciden con los tipos de propiedad](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
+ [No se puede crear una asociación \<nombre de asociación>; los tipos de propiedad no coinciden](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
   
  [El cambio del tipo devuelto de un método DataContext no se puede deshacer](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
   
- [No se pudo recuperar la información de esquema para el objeto de base de datos \<nombre de objeto >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
+ [No se ha podido recuperar información de esquema del objeto de base de datos \<nombre de objeto>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
   
  [Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de datos de destino](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
   
@@ -44,9 +41,9 @@ En este tema se enumeran los mensajes que pueden aparecer cuando se trabaja con 
   
  [Los objetos que va a agregar al diseñador usan una conexión de datos diferente a la que está usando el diseñador](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
   
- [La propiedad \<nombre de propiedad > no se puede eliminar](../data-tools/the-property-property-name-cannot-be-deleted.md)  
+ [No se puede eliminar la propiedad \<nombre de propiedad](../data-tools/the-property-property-name-cannot-be-deleted.md)  
   
- [La propiedad \<nombre de propiedad > no se puede eliminar porque participa en la asociación \<nombre de asociación >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
+ [No se puede eliminar la propiedad \<nombre de propiedad> porque participa en la asociación \<nombre de asociación>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
   
  [No se puede eliminar la clase seleccionada porque se usa como tipo devuelto de uno o varios métodos DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
   
@@ -65,4 +62,3 @@ En este tema se enumeran los mensajes que pueden aparecer cuando se trabaja con 
  [Herramientas LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
-

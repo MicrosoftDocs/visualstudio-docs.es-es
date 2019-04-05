@@ -1,12 +1,9 @@
 ---
 title: Agregar nuevos orígenes de datos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 dev_langs:
@@ -21,13 +18,13 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279154"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988138"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +85,7 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
 -   Servicios Web.  
   
     > [!NOTE]
-    >  Los elementos que aparecen en la **orígenes de datos** ventana dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para el **Asistente para configuración de origen de datos** para crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecerán en el **orígenes de datos** ventana cuando se complete el asistente. Esto es porque los datasets no escritos no proporcionan un esquema y, por lo tanto, el asistente no tiene información suficiente para crear el origen de datos.  
+    >  Los elementos que aparecen en la **orígenes de datos** ventana dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecerán en el **orígenes de datos** ventana cuando se complete el asistente. Esto es porque los datasets no escritos no proporcionan un esquema y, por lo tanto, el asistente no tiene información suficiente para crear el origen de datos.  
   
 ## <a name="data-source-for-an-object"></a>Origen de datos para un objeto  
  Puede crear un origen de datos de cualquier objeto que expone una o más propiedades públicas ejecutando el **Asistente para configuración de origen de datos** y, a continuación, seleccionando la **objeto** tipo de origen de datos. Se muestran todas las propiedades públicas de un objeto en el **orígenes de datos** ventana.   Si usa Entity Framework y ha generado un modelo, esto es donde encontrará las clases de entidad que serán los orígenes de datos para la aplicación.  
@@ -108,4 +105,3 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
   
 ## <a name="see-also"></a>Vea también  
  [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

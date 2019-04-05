@@ -1,11 +1,8 @@
 ---
 title: Depurar flujos de trabajo heredado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, debugging
@@ -15,13 +12,13 @@ ms.assetid: e6097b47-760a-4b30-a92c-ae70cdbda49f
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5d835ddc84fae24130035f0664d446a73b7ac3f4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7585d824ea6abf7df0aab5dc07c88abe9ff97081
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897713"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988767"
 ---
 # <a name="debugging-legacy-workflows"></a>Depurar flujos de trabajo heredados
 Si usa el [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado en [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] para compilar aplicaciones [!INCLUDE[wf](../includes/wf-md.md)] que tienen como destino .NET Framework 3.0 o 3.5, puede depurar los flujos de trabajo como cualquier otro programa: establecer puntos de interrupción, adjuntar a procesos y examinar los subprocesos y la pila de llamadas. También tiene la opción de realizar la depuración de forma remota.  
@@ -38,11 +35,11 @@ Si usa el [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado en [!INCLUDE[vs_curr
   
  [!INCLUDE[wf2](../includes/wf2-md.md)] se integra con las siguientes ventanas de depuración de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estándar:  
   
-- **Punto de interrupción**: funciona según lo previsto, pero puede especifica una actividad para el nombre de función.  
+- **Punto de interrupción**: Funciona según lo previsto, pero puede especifica una actividad para el nombre de función.  
   
-- **Pila de llamadas**: modificado para proporcionar una descripción de las actividades que se han ejecutado en una instancia de flujo de trabajo. Las entradas de la **pila de llamadas** son una búsqueda en profundidad de la ejecución de actividades. Puede hacer doble clic en una entrada para situar el foco en la actividad seleccionada.  
+- **Pila de llamadas**: Modificado para proporcionar una descripción de las actividades que se han ejecutado en una instancia de flujo de trabajo. Las entradas de la **pila de llamadas** son una búsqueda en profundidad de la ejecución de actividades. Puede hacer doble clic en una entrada para situar el foco en la actividad seleccionada.  
   
-- **Subprocesos**: proporciona el identificador de instancia de la instancia de flujo de trabajo que se está depurando.  
+- **Subprocesos**: Proporciona el identificador de instancia de la instancia de flujo de trabajo que se está depurando.  
   
   Visual Studio Extensions for Windows Workflow Foundation no admite las siguientes características de depuración:  
   

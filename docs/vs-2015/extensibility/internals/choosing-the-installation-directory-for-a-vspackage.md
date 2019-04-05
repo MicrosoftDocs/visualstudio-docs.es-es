@@ -1,26 +1,21 @@
 ---
 title: Elegir el directorio de instalación de un paquete VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 385877b8a682574946bfd43e1e51acd771d00a2b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: d8812ce6eef882f4f1b4effe97320492a34e0f2d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775178"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987151"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Selección del directorio de instalación de un VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +25,17 @@ Un VSPackage y sus archivos auxiliares deben estar en el sistema de archivos de 
 ## <a name="unmanaged-vspackages"></a>VSPackages no administrados  
  Un VSPackage no administrado es un servidor COM que se puede instalar en cualquier ubicación. La información de registro debe refleja con exactitud su ubicación. La interfaz de usuario (UI) de installer debe proporcionar una ubicación predeterminada como un subdirectorio de la propiedad ProgramFilesFolder Windows Installer. Por ejemplo:  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\  
   
  El usuario debería poder cambiar el directorio predeterminado para dar cabida a los usuarios que tenga una partición de arranque pequeño y prefiera instalar aplicaciones y herramientas en otro volumen.  
   
  Si el esquema de side-by-side usa un VSPackage con control de versiones, puede usar los subdirectorios para almacenar versiones diferentes. Por ejemplo:  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2002\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2002\  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2003\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2003\  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2005\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2005\  
   
 ## <a name="managed-vspackages"></a>VSPackages administrado  
  VSPackages administrado también puede instalarse en cualquier ubicación. Sin embargo, debe considerar siempre su instalación en la caché global de ensamblados (GAC) para reducir los tiempos de carga de ensamblado. Dado que los paquetes VSPackage administrados siempre son ensamblados con nombre seguro, su instalación en la GAC significa que toma su comprobación de firma de nombre seguro solo durante la instalación. Ensamblados con nombre seguro instalados en otro lugar en el sistema de archivos deben tener sus firmas comprueba cada vez que se cargan. Al instalar los paquetes VSPackage administrados en la GAC, use la herramienta regpkg **/assembly** conmutador para escribir entradas del registro que apunte al nombre seguro del ensamblado.  
@@ -69,5 +64,4 @@ Un VSPackage y sus archivos auxiliares deben estar en el sistema de archivos de 
 ## <a name="see-also"></a>Vea también  
  [Elección entre VSPackages compartidos y con control de versiones](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Administración de VSPackages](../../extensibility/managing-vspackages.md)   
- [Registro de paquetes administrados](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
-
+ [Registro de paquetes administrados](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
