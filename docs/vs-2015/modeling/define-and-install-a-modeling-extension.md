@@ -1,12 +1,9 @@
 ---
 title: Definir e instalar una extensión de modelado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f7895916cc4ee877c53b056f703d8e46b64b409
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 415d63717e5702b0faa1b49d1d0d18ebbf773b8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805572"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994924"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definir e instalar una extensión de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,8 +76,8 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
         |-|-|  
         |**Tipo** =|**Microsoft.VisualStudio.MefComponent**|  
         |**Source** =|**Un proyecto de la solución actual**|  
-        |**proyecto** =|*El proyecto de biblioteca de clases*|  
-        |**Incrustar en esta carpeta** =|*(vacío)*|  
+        |**Project** =|*El proyecto de biblioteca de clases*|  
+        |**Incrustar en esta carpeta** =|*(empty)*|  
   
          Para otros tipos de componentes, vea los vínculos de la sección siguiente.  
   
@@ -148,6 +145,3 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
  [Definir un personalizado en un elemento de cuadro de herramientas de modelado](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

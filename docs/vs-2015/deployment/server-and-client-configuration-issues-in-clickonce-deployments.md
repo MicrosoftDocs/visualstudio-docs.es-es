@@ -1,14 +1,9 @@
 ---
 title: Servidor y problemas de configuración de cliente en implementaciones ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948946"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995868"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
   
 - .deploy  
   
-  Sin embargo, puede deshabilitar esta opción si desactiva la **usar extensión de archivo ".deploy"** opción el [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), en cuyo caso debe configurar el servidor Web para desbloquear todas las extensiones de archivo se usa en la aplicación.  
+  Sin embargo, puede deshabilitar esta opción si desactiva la **usar extensión de archivo ".deploy"** opción el [Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), en cuyo caso debe configurar el servidor Web para desbloquear todas las extensiones de archivo se usa en la aplicación.  
   
   Tendrá que configurar .manifest, .application y .deploy, por ejemplo, si está utilizando IIS donde no haya instalado el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o si usa otro servidor Web (por ejemplo, Apache).  
   
@@ -104,12 +99,12 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
   
 |Tipo de dirección URL|Descripción|  
 |--------------|-----------------|  
-|FTP: / /|Puede publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación mediante este protocolo.|  
+|ftp://|Puede publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación mediante este protocolo.|  
 |http://|Puede instalar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación mediante este protocolo.|  
 |https://|Puede instalar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación mediante este protocolo.|  
-|File://|Puede instalar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación mediante este protocolo.|  
+|file://|Puede instalar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación mediante este protocolo.|  
   
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Firewall de Windows  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: firewall de Windows  
  De forma predeterminada, Windows XP Service Pack 2 habilita el Firewall de Windows. Si está desarrollando su aplicación en un equipo que tiene instalado de Windows XP, están todavía puede publicar y ejecutar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicaciones desde el servidor local que ejecuta IIS. Sin embargo, no se puede acceder al servidor que ejecuta IIS desde otro equipo a menos que abra el Firewall de Windows. Para obtener instrucciones acerca de cómo administrar el Firewall de Windows, consulte la Ayuda de Windows.  
   
 ## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Habilitar extensiones de servidor  
@@ -144,6 +139,3 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
  [Solucionar problemas en implementaciones ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)
-
-
-

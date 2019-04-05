@@ -1,29 +1,24 @@
 ---
-title: 'Área de prueba 7: Compartir | Microsoft Docs'
-ms.custom: ''
+title: 'Área de prueba 7: Recurso compartido de | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e9389d03da7c4e4b763e979a721a22639ecb9fbe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47bf73d60d71a7b1c2e1c80e58c5900c870599ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995029"
 ---
-# <a name="test-area-7-share"></a>Área de prueba 7: compartir
+# <a name="test-area-7-share"></a>Área de prueba 7: Compartir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Esta área de prueba trata para compartir elementos entre las ubicaciones a través de la **Share** comando.  
@@ -43,7 +38,7 @@ Esta área de prueba trata para compartir elementos entre las ubicaciones a trav
 ## <a name="command-menu-access"></a>Acceso al menú de comandos  
  La siguiente [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rutas de menú del entorno de desarrollo integrado que se usan en los casos de prueba.  
   
- Recurso compartido: **archivo**->**Control de código fuente**->**Share**.  
+ Compartir: **Archivo**->**Control de código fuente**->**Share**.  
   
 ## <a name="expected-behavior"></a>Comportamiento esperado  
   
@@ -67,4 +62,3 @@ Esta área de prueba trata para compartir elementos entre las ubicaciones a trav
   
 ## <a name="see-also"></a>Vea también  
  [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: habilitar AutoStart para instalaciones con CD | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Habilitar AutoStart para instalaciones con CD | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: caaec619-900c-4790-90e3-8c91f5347635
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2fde610731ca5ec315b94d2e46f58edb2a7b56fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6266f487e2e0c66e532297c3fdae3fd3e5498052
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996134"
 ---
-# <a name="how-to-enable-autostart-for-cd-installations"></a>Cómo: Habilitar AutoStart para instalaciones con CD
+# <a name="how-to-enable-autostart-for-cd-installations"></a>Filtrar Habilitar AutoStart para instalaciones con CD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Al implementar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación mediante medios extraíbles, como CD-ROM o DVD-ROM, puede habilitar `AutoStart` para que el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación se inicia automáticamente cuando se inserta el disco.  
@@ -40,9 +35,9 @@ Al implementar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicac
   
 1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en el **publicar** ficha.  
+2.  Haga clic en la pestaña **Publicar**.  
   
-3.  Haga clic en el **opciones** botón.  
+3.  Haga clic en el botón **Opciones**.  
   
      El **opciones de publicación** aparece el cuadro de diálogo.  
   
@@ -54,7 +49,4 @@ Al implementar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicac
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Cómo: Publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-
+ [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

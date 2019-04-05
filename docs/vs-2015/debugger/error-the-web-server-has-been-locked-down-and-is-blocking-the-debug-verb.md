@@ -1,14 +1,9 @@
 ---
-title: 'Error: El servidor Web se ha bloqueado y está bloqueando el verbo DEBUG | Microsoft Docs'
-ms.custom: ''
+title: 'Error: El servidor Web se ha bloqueado y está bloqueando el verbo DEBUG | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 9c8c4812-17db-484d-9c1b-ffd9e3bfef5a
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60fffd146516bca57497bfdaaabe0f51407063b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995094"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Error: El servidor Web se ha bloqueado y está bloqueando el verbo DEBUG
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Error: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No se pudo recorrer paso a paso por instrucciones una aplicación Web o un servicio Web XML porque se ha ejecutado la herramienta de cierre de IIS y se ha instalado y activado URLScan. Esta condición bloquea IIS para que no reciba el verbo DEBUG.  
@@ -45,7 +40,7 @@ No se pudo recorrer paso a paso por instrucciones una aplicación Web o un servi
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  Crear una copia del archivo y asígnele el nombre **Urlscan.old**.  
+2.  Cree una copia del archivo y asígnele el nombre **Urlscan.old**.  
   
 3.  Abra la copia original del archivo Urlscan.ini en el Bloc de notas o el editor de texto que prefiera.  
   
@@ -58,8 +53,5 @@ No se pudo recorrer paso a paso por instrucciones una aplicación Web o un servi
 7.  Reinicie el servidor o reinicie IIS.  
   
 ## <a name="see-also"></a>Vea también  
- [Depuración de aplicaciones Web: Errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Depurar aplicaciones web: Errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Error: El servidor web no pudo encontrar el recurso solicitado](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
-
-
-

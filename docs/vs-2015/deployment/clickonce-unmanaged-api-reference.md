@@ -1,14 +1,9 @@
 ---
 title: Referencia de API no administrada de ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6175ae0b51e017d9f06c1e185ba1da7295d69657
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 714d7b18995bf1ad51b07e02227e440879f73c9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237561"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998065"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Referencia de la API no administrada de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,6 +84,3 @@ ms.locfileid: "49237561"
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>
-
-
-

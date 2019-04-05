@@ -1,14 +1,9 @@
 ---
 title: Los comandos y menús que utilizan ensamblados de interoperabilidad | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus, using interop assemblies
 - interop assemblies, using in commands and menus
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1a1c7d0e3acde1ca412d7bfaba0cfa3606ee54a4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad6b324953914df7103d0dec7371199e3cbbd937
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753684"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994772"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Comandos y menús que usan ensamblados de interoperabilidad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ Un VSPackage que implemente los comandos de menú y barra de herramientas median
   
  [Enrutamiento de comandos en VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)  
  Información general sobre el proceso que se utiliza para relacionar un objeto con la solicitud de comando correcto.
-

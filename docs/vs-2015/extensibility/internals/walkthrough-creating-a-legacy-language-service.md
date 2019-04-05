@@ -1,26 +1,21 @@
 ---
-title: 'Tutorial: Crear un servicio de lenguaje heredado | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Creación de un servicio de lenguaje heredado | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d80b40aa1db779c233dea846b49dbbc66084015
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 044e9d1102ac5e7415eafdead35c834296621bcb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783888"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997758"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Tutorial: Creación de un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -139,4 +134,3 @@ Mediante las clases de lenguaje de framework (MPF) paquete administrado para imp
   
 ## <a name="see-also"></a>Vea también  
  [Implementación de un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service1.md)
-

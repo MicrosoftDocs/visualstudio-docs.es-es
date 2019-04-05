@@ -1,14 +1,9 @@
 ---
 title: '&lt;ensamblado&gt; elemento (implementación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 5fa45d64956fe1347477abb533e45565f27996f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3b77cfacf3dca2c2cc20d674f79929e9958a16d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259953"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988871"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;ensamblado&gt; elemento (implementación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ El elemento de nivel superior para el manifiesto de implementación.
   
 ```  
   
-      <assembly    
+      <assembly    
    manifestVersion  
 />  
 ```  
@@ -50,7 +45,7 @@ El elemento de nivel superior para el manifiesto de implementación.
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`manifestVersion`|Requerido. Este atributo debe establecerse en `1.0`.|  
+|`manifestVersion`|Obligatorio. Este atributo debe establecerse en `1.0`.|  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se ilustra un `assembly` elemento en un manifiesto de implementación para una aplicación implementada mediante [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso proporcionado para el [del manifiesto de implementación ClickOnce](../deployment/clickonce-deployment-manifest.md) tema.  
@@ -72,7 +67,4 @@ El elemento de nivel superior para el manifiesto de implementación.
   
 ## <a name="see-also"></a>Vea también  
  [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md)
-
-
-
+ [\<assembly> Element](../deployment/assembly-element-clickonce-application.md)

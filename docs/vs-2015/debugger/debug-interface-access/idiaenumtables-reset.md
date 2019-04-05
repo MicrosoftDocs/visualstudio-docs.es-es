@@ -1,14 +1,9 @@
 ---
-title: Idiaenumtables | Microsoft Docs
-ms.custom: ''
+title: IDiaEnumTables::Reset | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 033039f4-5132-48c4-ba46-376243e3519f
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2b80be6352d20036fd7b924d3615007d71c19f34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 833a6d1cd7ac3f2ea0bead255d8da9e69ee9c150
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775618"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995404"
 ---
 # <a name="idiaenumtablesreset"></a>IDiaEnumTables::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ HRESULT Reset ();
   
 ## <a name="see-also"></a>Vea también  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
-
-
-
