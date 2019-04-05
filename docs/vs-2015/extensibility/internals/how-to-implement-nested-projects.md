@@ -1,29 +1,24 @@
 ---
-title: 'Cómo: implementar proyectos anidados | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Implementación de proyectos anidados | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8a392b8b336c57c47055357147075f29ba173d8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810135"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998206"
 ---
-# <a name="how-to-implement-nested-projects"></a>Cómo: implementar proyectos anidados
+# <a name="how-to-implement-nested-projects"></a>Filtrar Implementar proyectos anidados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Cuando se crea un tipo de proyecto anidado no existe es un varios pasos adicionales que deben implementarse. Un proyecto principal que se tarda en algunas de las mismas responsabilidades que tiene la solución para sus proyectos anidados (secundarios). El proyecto principal es un contenedor de proyectos similares a una solución. En concreto, hay varios eventos que se deben generar la solución y los proyectos primario para crear la jerarquía de proyectos anidados. Estos eventos se describen en el siguiente proceso para la creación de proyectos anidados.  
@@ -99,4 +94,3 @@ Cuando se crea un tipo de proyecto anidado no existe es un varios pasos adiciona
  [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Parámetros de contexto](../../extensibility/internals/context-parameters.md)   
  [Archivos de asistentes (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

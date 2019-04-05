@@ -1,26 +1,21 @@
 ---
 title: Objetos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - objects, interfaces
 ms.assetid: 8a5ab7a4-3668-4f78-9c08-04c5af7090f2
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6efd183962412e73ca5bc4938833c0a219cdfa96
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 903c9fef18990be0aee78309fcdfadb80a95f384
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809212"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997715"
 ---
 # <a name="objects"></a>de la empresa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ La siguiente información de referencia explica los objetos que se usan para cre
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Referencia de Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)  
  Presenta una lista de temas de referencia.
-

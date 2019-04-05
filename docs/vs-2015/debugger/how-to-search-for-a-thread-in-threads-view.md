@@ -1,29 +1,24 @@
 ---
-title: 'Cómo: buscar un subproceso en la vista subprocesos | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Buscar un subproceso en la vista subprocesos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threads, searching
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fb1c3979b0505305fd4f6a600e3352c0d08955de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7987b4da158572d22d609b095877f6d125512c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766899"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995841"
 ---
-# <a name="how-to-search-for-a-thread-in-threads-view"></a>Cómo: Buscar un subproceso en la vista de subprocesos
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Filtrar Búsqueda de un subproceso en la vista Subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede buscar un subproceso concreto en la vista de subprocesos mediante el uso de su cadena de identificador o el módulo del subproceso como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. Los campos en el cuadro de diálogo mostrará los atributos del subproceso seleccionado en el árbol de subproceso.  
@@ -48,6 +43,3 @@ Puede buscar un subproceso concreto en la vista de subprocesos mediante el uso d
 6. Haga clic en **Aceptar**.  
   
    Si se encuentra un subproceso coincidente, éste se resalta en la ventana de vista de subprocesos.
-
-
-

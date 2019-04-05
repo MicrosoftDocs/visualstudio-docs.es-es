@@ -1,25 +1,20 @@
 ---
-title: 'Tutorial: Capturar información de gráficos | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Captura de información de gráficos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2f419e80cec27807ba3bd7ac98f7fb7108a49377
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5ad2f63bdbbad7d4427454e69806b06937b259b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995639"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Tutorial: Capturar información de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ En este tutorial se muestra cómo utilizar el Diagnóstico de gráficos de [!INC
   
 - En la barra de herramientas Diagnóstico de gráficos, elija el botón **Capturar** . ![Icono de botón de captura de gráficos](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-   O bien  
+   -o bien-  
   
    Con el foco en la aplicación, presione **Imprimir pantalla**.  
   
@@ -68,6 +63,3 @@ En este tutorial se muestra cómo utilizar el Diagnóstico de gráficos de [!INC
   
 ## <a name="see-also"></a>Vea también  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)
-
-
-

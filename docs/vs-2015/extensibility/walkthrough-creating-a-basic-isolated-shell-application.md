@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Crear un Basic aislado aplicación del Shell | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Creando un Basic aislado la aplicación de Shell | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, walkthroughs
 - Shell [Visual Studio], walkthroughs
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 901bbf12c9c1d153b84b3ed74f6ae8e97ebb2c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777323"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995823"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Tutorial: Crear una aplicación básica de Shell aislado
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Tutorial: Creación de una aplicación básica de Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tutorial muestra cómo crear una solución de shell aislado, personalizar la ventana de herramientas Ayuda-acerca y crear un programa de instalación que instala el shell aislado.  
@@ -120,7 +115,7 @@ Este tutorial muestra cómo crear una solución de shell aislado, personalizar l
   
 2.  Elimine la línea siguiente:  
   
-     [$RootKey$ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3.  Recompile la solución e iniciar la depuración del shell aislado. Abra un archivo XML, por ejemplo, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Compruebe que no se colorean las palabras clave XML en el archivo y que escriba "<" en una línea no revele información sobre herramientas XML.  
   
@@ -265,4 +260,3 @@ Este tutorial muestra cómo crear una solución de shell aislado, personalizar l
   
 ## <a name="testing-the-installation-program"></a>Probar el programa de instalación  
  Para probar el programa de instalación, copie el archivo setup.exe en un equipo diferente y ejecute el ejecutable del programa de instalación. Debe ser capaz de ejecutar la aplicación de shell aislado.
-

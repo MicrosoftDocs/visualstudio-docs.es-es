@@ -1,25 +1,20 @@
 ---
 title: Variante de compresión de textura BC | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 818998511a4ef8b7f10b8225e71b414edafd9769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2b164933b3d695e1a680e26629b093b59009b502
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996170"
 ---
 # <a name="bc-texture-compression-variant"></a>BC (Variante de compresión de textura)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,13 +58,10 @@ Habilita la compresión de bloque en todas las texturas que tengan una variante 
  Si su textura tiene un formato que no aparece en la lista, la textura no se modifica.  
   
 ## <a name="restrictions-and-limitations"></a>Restricciones y limitaciones  
- A veces, las texturas que están creadas con una variación de los formatos de imagen B8G8R8A8 o R8G8B8A8 realmente no utilizan el canal alfa, pero la variante no tiene forma alguna de saber si se utiliza o no. Para mantener la corrección en el caso que se utilice el canal alfa, la variante siempre codifica estos formatos en el formato BC3 menos eficaz. Puede ayudar a que el Análisis de Fotograma Gráfico entienda mejor el rendimiento de presentación potencial de la aplicación con esta variante utilizando una variación del formato de imagen B8G8R8X8 cuando no utiliza el canal alfa, para que la variante pueda utilizar el formato BC1 más eficaz.  
+ A veces, las texturas que están creadas con una variación de los formatos de imagen B8G8R8A8 o R8G8B8A8 realmente no utilizan el canal alfa, pero la variante no tiene forma alguna de saber si se utiliza o no. Para mantener la corrección en el caso que se utilice el canal alfa, la variante siempre codifica estos formatos en el formato BC3 menos eficaz. Puede ayudar a que el Análisis de Fotograma Gráficos entienda mejor el rendimiento de presentación potencial de la aplicación con esta variante utilizando una variación del formato de imagen B8G8R8X8 cuando no utiliza el canal alfa, para que la variante pueda utilizar el formato BC1 más eficaz.  
   
 ## <a name="example"></a>Ejemplo  
  Esta variante comprime las texturas en bloque en tiempo de ejecución antes de llamar a `CreateTexture2D`. No recomendamos este procedimiento para el código de producción, porque las texturas sin comprimir consumen más espacio de disco y porque el paso adicional puede aumentar significativamente los tiempos de carga en la aplicación, ya que la compresión basada en bloque requiere una gran cantidad de recursos técnicos para codificar. En su lugar, recomendamos que comprima las texturas sin conexión utilizando un editor o un procesador de imágenes que forme parte de la canalización integrada. Estos procedimientos reducen los requisitos de espacio en disco, eliminan la sobrecarga del tiempo de ejecución en la aplicación y proporcionan más tiempo de procesamiento para que pueda mantener la mejor calidad de imagen.  
   
 ## <a name="see-also"></a>Vea también  
  [Variante de dimensiones de textura Mitad/cuarto](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

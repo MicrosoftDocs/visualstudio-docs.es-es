@@ -1,26 +1,21 @@
 ---
 title: El Editor básico de creación de instancias mediante la API heredada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
 ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d092994ad66d96a3fe7141cb898c7ef9b811eaf5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994715"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>El Editor básico de creación de instancias mediante la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,10 +64,9 @@ El editor es responsable de las funciones como inserción, eliminación, copiar 
   
  Si el <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método devuelve el mismo comando GUID como el editor de texto, la instancia del editor de núcleo obtiene automáticamente el valor predeterminado teclas de método abreviado.  
   
- Para obtener información general, consulte [Tutorial: crear un Editor de núcleo y registrar un tipo de archivo del Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Para obtener información general, consulte [Tutorial: Crear un Editor de núcleo y registrar un tipo de archivo del Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
 ## <a name="see-also"></a>Vea también  
  [En el Editor básico](../extensibility/inside-the-core-editor.md)   
  [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Tutorial: Crear un editor principal y registrar un tipo de archivo del editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
-
+ [Tutorial: Crear un Editor de núcleo y registrar un tipo de archivo del Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

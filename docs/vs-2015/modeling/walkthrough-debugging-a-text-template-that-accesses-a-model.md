@@ -1,23 +1,20 @@
 ---
-title: 'Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo | Documentos de Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924894"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998201"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,20 +22,20 @@ ms.locfileid: "49924894"
 Al modificar o agregar las plantillas de texto en una solución de lenguaje específico de dominio, es posible que obtenga errores cuando el motor transforma la plantilla al código fuente, o bien cuando se compila el código generado. El siguiente tutorial muestra algunas de las cosas que puede hacer para depurar una plantilla de texto.  
   
 > [!NOTE]
->  Para obtener más información sobre el texto de las plantillas en general, vea [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obtener más información sobre la depuración de plantillas de texto, consulte [Tutorial: depurar una plantilla de texto](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+>  Para obtener más información sobre el texto de las plantillas en general, vea [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obtener más información sobre la depuración de plantillas de texto, consulte [Tutorial: Depurar una plantilla de texto](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Creación de una solución de lenguaje específico de dominio  
  En este procedimiento, creará una solución de lenguaje específico de dominio que tiene las siguientes características:  
   
 - Nombre: DebuggingTestLanguage  
   
-- Plantilla de solución: lenguaje mínimo  
+- Plantilla de solución: Lenguaje mínimo  
   
 - Extensión de archivo: .ddd  
   
-- Nombre de la compañía: Fabrikam  
+- Nombre de la empresa: Fabrikam  
   
-  Para obtener más información acerca de cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Para obtener más información acerca de cómo crear una solución de lenguaje específico de dominio, vea [Cómo: Crear una solución de lenguaje específico de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Creación de una plantilla de texto  
  Agregar una plantilla de texto a la solución.  
@@ -164,7 +161,7 @@ Al modificar o agregar las plantillas de texto en una solución de lenguaje espe
   
      (C#)  
   
-     **Compilando transformación: Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation' no contiene una definición para 'ExampleModel'**  
+     **Compilando transformación: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation' no contiene una definición para 'ExampleModel'**  
   
      (Visual Basic)  
   
@@ -216,6 +213,3 @@ Al modificar o agregar las plantillas de texto en una solución de lenguaje espe
 5.  En **el Explorador de soluciones**, haga clic en DebugTest.tt y, a continuación, haga clic en **ejecutar herramienta personalizada**.  
   
      Ahora el sistema transforma la plantilla de texto y genera el archivo de salida correspondiente. No verá los errores en el **lista de errores** ventana.
-
-
-

@@ -1,34 +1,29 @@
 ---
 title: Analizador del servicio de lenguaje heredado y el analizador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995888"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Escáner y analizador del servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 El analizador es el corazón del servicio de lenguaje. Las clases de lenguaje de Managed Package Framework (MPF) requieren un analizador de lenguaje para seleccionar la información sobre el código que se va a mostrar. Un analizador separa el texto en tokens léxicos y, a continuación, identifica esos tokens por tipo y funcionalidad.  
   
-## <a name="discussion"></a>Explicación  
+## <a name="discussion"></a>Discusión  
  El siguiente es un método de C#.  
   
 ```csharp  
@@ -55,7 +50,7 @@ namespace MyNamespace
 |MyNamespace|namespace|  
 |MyClass|clase|  
 |MyFunction|método|  
-|Arg1|parámetro|  
+|arg1|parámetro|  
 |var1|variable local|  
   
  El rol del analizador es identificar los tokens. Algunos tokens pueden tener más de un tipo. Después de que el analizador ha identificado los tokens, el servicio de lenguaje puede usar la información para proporcionar características útiles, como resaltado de sintaxis, coincidencia de llaves y las operaciones de IntelliSense.  
@@ -120,7 +115,7 @@ namespace MyNamespace
 12. Lleva a cabo.  
   
 ### <a name="summary"></a>Resumen  
- La operación de llaves coincidentes se suele limitarse a simple pares de elementos del lenguaje. Los elementos más complejos, como coincidencia triples ("`if(…)`","`{`"y"`}`", o "`else`","`{`"y"`}`"), puede aparecer resaltado como parte de una operación de finalización de palabras. Por ejemplo, cuando se termina la palabra "else", la coincidencia de "`if`" puede aparecer resaltada la instrucción. Si hubiera una serie de `if` / `else if` podrían resaltarse instrucciones, todos ellos usando el mismo mecanismo como coincidencia de llaves. El <xref:Microsoft.VisualStudio.Package.Source> clase base ya es compatible con esto, como sigue: el analizador debe devolver el valor del token de desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> combinado con el valor desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> para el token que está antes de la posición del cursor.  
+ La operación de llaves coincidentes se suele limitarse a simple pares de elementos del lenguaje. Los elementos más complejos, como coincidencia triples ("`if(…)`","`{`"y"`}`", o "`else`","`{`"y"`}`"), puede aparecer resaltado como parte de una operación de finalización de palabras. Por ejemplo, cuando se termina la palabra "else", la coincidencia de "`if`" puede aparecer resaltada la instrucción. Si hubiera una serie de `if` / `else if` podrían resaltarse instrucciones, todos ellos usando el mismo mecanismo como coincidencia de llaves. La <xref:Microsoft.VisualStudio.Package.Source> clase base ya es compatible con esto, como sigue: El analizador debe devolver el valor del token de desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> combinado con el valor desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> para el token que está antes de la posición del cursor.  
   
  Para obtener más información, consulte [coincidencia de llaves en un servicio de lenguaje heredado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   
@@ -143,4 +138,3 @@ namespace MyNamespace
  [Información general del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-overview.md)   
  [Coloreado de sintaxis en un servicio de lenguaje heredado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [Coincidencia de llaves en un servicio de lenguaje heredado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-

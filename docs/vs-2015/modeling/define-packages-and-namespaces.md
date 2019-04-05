@@ -1,12 +1,9 @@
 ---
 title: Definir paquetes y espacios de nombres | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, namespaces
 - UML, namespaces
@@ -16,13 +13,13 @@ ms.assetid: 79147068-02d5-4b70-933d-f647c1da3829
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b9295b5af83270069df11e6460ee85dfe0fd9c73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a949d72783f3d8ac1c2f0338e4ad7057f74653aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741906"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988830"
 ---
 # <a name="define-packages-and-namespaces"></a>Definir espacios de nombres y paquetes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -227,9 +224,6 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
   
 ## <a name="see-also"></a>Vea también  
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramas de clases UML: referencia](../modeling/uml-class-diagrams-reference.md)   
- [Diagramas de clases UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagrama de clases de UML: Referencia](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrama de clases de UML: Directrices](../modeling/uml-class-diagrams-guidelines.md)   
  [Administrar modelos y diagramas con control de versiones](../modeling/manage-models-and-diagrams-under-version-control.md)
-
-
-
