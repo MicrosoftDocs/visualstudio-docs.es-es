@@ -1,32 +1,27 @@
 ---
-title: 'Cómo: utilizar puntos de interrupción con XSLT | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Utilizar puntos de interrupción con XSLT | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bf7bbc2c-71dc-4cac-a6fc-add6b27d92ed
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b01553075115ce953b499f722a254b5a2b9f20ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5590d9f33d2c34b7d3d86aaf00307419685ca8da
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995355"
 ---
-# <a name="how-to-use-breakpoints-with-xslt"></a>Cómo: Utilizar puntos de interrupción con XSLT
+# <a name="how-to-use-breakpoints-with-xslt"></a>Filtrar Utilizar puntos de interrupción con XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede establecer los puntos de interrupción en una hoja de estilos XSLT o en el documento de origen XML. Si establece un punto de interrupción en una etiqueta, cuando comienza la ejecución el punto de interrupción se traslada a la siguiente instrucción que tiene información de línea de código fuente.  
   
- Para obtener más información, consulte [Fundamentos de depuración: puntos de interrupción](http://msdn.microsoft.com/en-us/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
+ Para obtener más información, consulte [Fundamentos de depuración: Los puntos de interrupción](http://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
   
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Establecer un punto de interrupción en una hoja de estilos  
  Se pueden establecer los puntos de interrupción en las etiquetas de apertura y de cierre, y en los nodos de texto de una hoja de estilos XSLT. También pueden establecerse en el código de un bloque de scripts.  
@@ -63,5 +58,4 @@ Puede establecer los puntos de interrupción en una hoja de estilos XSLT o en el
 5.  Haga clic en el **Depurar XSL** en la barra de herramientas del Editor XML.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-
+ [Tutorial: Depuración de una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

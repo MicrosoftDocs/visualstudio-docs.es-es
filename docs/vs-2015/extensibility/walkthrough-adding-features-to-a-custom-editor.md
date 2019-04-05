@@ -1,28 +1,23 @@
 ---
 title: 'Tutorial: Agregar características a un Editor personalizado | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2379a488d042ab8905844c9c536f79ecb4b03268
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8e6395f279af8b48d9f74981f61cceb431a1d00a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737039"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999754"
 ---
-# <a name="walkthrough-adding-features-to-a-custom-editor"></a>Tutorial: Adición de características a un editor personalizado
+# <a name="walkthrough-adding-features-to-a-custom-editor"></a>Tutorial: Agregar características a un editor personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Después de crear un editor personalizado, puede agregar más características en él.  
@@ -31,7 +26,7 @@ Después de crear un editor personalizado, puede agregar más características e
   
 1.  Crear un editor personalizado mediante la plantilla de proyecto de paquete de Visual Studio.  
   
-     Para obtener más información, consulte [Tutorial: crear un Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).  
+     Para obtener más información, vea [Tutorial: Crear un Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 2.  Decida si desea que el editor para admitir una vista única o varias vistas.  
   
@@ -122,7 +117,7 @@ Después de crear un editor personalizado, puede agregar más características e
   
 12. Implementar la compatibilidad con la Ayuda contextual.  
   
-     Esto le permite ofrecer soporte ventana Ayuda dinámica y la Ayuda F1 para los elementos en el editor. Para obtener más información, consulte [Cómo: proporcionar contexto para los editores](../extensibility/how-to-provide-context-for-editors.md).  
+     Esto le permite ofrecer soporte ventana Ayuda dinámica y la Ayuda F1 para los elementos en el editor. Para obtener más información, vea [Cómo: Proporcionar contexto para los editores](../extensibility/how-to-provide-context-for-editors.md).  
   
 13. Exponer un modelo de objetos de automatización desde el editor mediante la implementación de la `IDispatch` interfaz.  
   
@@ -161,5 +156,4 @@ Después de crear un editor personalizado, puede agregar más características e
   
 ## <a name="see-also"></a>Vea también  
  [Contribución al modelo de automatización](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Cómo: Proporcionar el contexto para los editores](../extensibility/how-to-provide-context-for-editors.md)
-
+ [Cómo: Proporcionar contexto para los editores](../extensibility/how-to-provide-context-for-editors.md)

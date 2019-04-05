@@ -1,12 +1,9 @@
 ---
 title: Vincular elementos de modelo y los elementos de trabajo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.removeworkitemsdialog
 - vs.teamarch.common.linkworkitemsdialog
@@ -21,13 +18,13 @@ ms.assetid: e687a490-0f93-412c-a1ff-eea83cf7ba07
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 55dfd83f3c9324b08bbb88c8404350c2aebf129f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2ca7b4254ac359158b9cf42600b28ef533372813
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752068"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996053"
 ---
 # <a name="link-model-elements-and-work-items"></a>Vincular elementos de modelo con elementos de trabajo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -179,6 +176,3 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
 ## <a name="see-also"></a>Vea también  
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
-
-
-

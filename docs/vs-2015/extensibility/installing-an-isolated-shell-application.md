@@ -1,27 +1,22 @@
 ---
 title: Instalar una aplicación de Shell aislado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], deploying shell-based applications
 - Visual Studio shell, deploying shell-based applications
 ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ecec7963b66c20ef08d1e5f3f0917a66f885aa0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995884"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalar una aplicación de Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +159,7 @@ Debe realizar los pasos siguientes para instalar una aplicación de Shell.
         ```  
   
     > [!NOTE]
-    >  Necesarios son las dependencias de aplicaciones de Shell (aislado): DebuggerProxy, MasterPkgDef, recursos (especialmente el archivo .winprf), aplicación y PkgDefs.  
+    >  Son dependencias necesarias para las aplicaciones de Shell (aislado): DebuggerProxy, MasterPkgDef, recursos (especialmente el archivo .winprf), aplicación y PkgDefs.  
   
 ### <a name="registry-entries"></a>Entradas del Registro  
  La plantilla de proyecto de Shell (aislado) incluye un *ProjectName*archivo .reg para las claves del registro fusionar mediante combinación en la instalación. Estas entradas del registro deben formar parte de MSI para la instalación y con fines de limpieza. También debe crear bloques de registro coincidente en ApplicationRegistry.wxs.  
@@ -183,8 +178,8 @@ Debe realizar los pasos siguientes para instalar una aplicación de Shell.
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= "Objeto DTE PhotoStudio"|\<Id. de RegistryKey = raíz 'DteClsidRegKey' = 'HKCR' clave =' $(var.) DteClsidRegKey)' acción = 'createAndRemoveOnUninstall' ><br /><br /> \<Tipo RegistryValue = 'string' nombre =' @' valor =' $(var.) Objeto ShortProductName) DTE "/ ><br /><br /> \</ RegistryKey >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\\LocalServer32 {bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= "$RootFolder$\PhotoStudio.exe"|\<Id. de RegistryKey = raíz 'DteLocSrv32RegKey' = 'HKCR' clave =' $(var.) \LocalServer32 DteClsidRegKey)' acción = 'createAndRemoveOnUninstall' ><br /><br /> \<Tipo RegistryValue = 'string' nombre =' @' valor ='[INSTALLDIR] $(var.) ShortProductName) .exe "/ ><br /><br /> \</ RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= "Objeto DTE PhotoStudio"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
   
      En este ejemplo, Var.DteClsidRegKey se resuelve como la clave del registro en la fila superior. Se resuelve como Var.ShortProductName `PhotoStudio`.  
   
@@ -374,5 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: creación una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [Tutorial: Creación de una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

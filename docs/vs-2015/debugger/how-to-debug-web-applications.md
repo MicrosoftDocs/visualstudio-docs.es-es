@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: depurar aplicaciones Web | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Depurar aplicaciones Web | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,15 +18,15 @@ ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d2a5110a6801aafb6eaf98cb4fb4164b045b2408
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793638"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999726"
 ---
-# <a name="how-to-debug-web-applications"></a>Cómo: Depurar aplicaciones web
+# <a name="how-to-debug-web-applications"></a>Filtrar Depurar aplicaciones Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] es la tecnología principal para desarrollar aplicaciones Web en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. El depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporciona herramientas muy eficaces para depurar aplicaciones web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] localmente o en un servidor remoto. Este tema describe cómo depurar un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] proyecto durante el desarrollo. Para obtener información sobre cómo depurar un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ya implementada en un servidor de producción de aplicaciones Web, consulte [depurar aplicaciones Web implementadas](../debugger/debugging-deployed-web-applications.md).  
@@ -44,7 +39,7 @@ ms.locfileid: "51793638"
   
 -   El archivo de configuración de la aplicación (Web.config) se debe establecer en modo de depuración. El modo de depuración hace que [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] genere símbolos para los archivos generados dinámicamente y permite al depurador asociarse a la aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] establece esto automáticamente al empezar a depurar si se creó el proyecto a partir de la plantilla de proyectos web.  
   
--   Para obtener más información, consulte [Cómo: habilitar la depuración de aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+-   Para obtener más información, vea [Cómo: Habilitar la depuración de aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
 ### <a name="to-debug-a-web-application-during-development"></a>Para depurar una aplicación Web durante la fase de desarrollo  
   
@@ -60,8 +55,5 @@ ms.locfileid: "51793638"
   
 ## <a name="see-also"></a>Vea también  
  [Depurar script y aplicaciones web](../debugger/debugging-web-applications-and-script.md)   
- [Depuración de aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Cómo: Habilitar la depuración de aplicaciones de ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-
-
-
+ [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [Cómo: Habilitación de la depuración de aplicaciones de ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
