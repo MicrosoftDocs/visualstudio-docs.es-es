@@ -1,26 +1,21 @@
 ---
-title: IDebugProgram3::ExecuteOnThread | Documentos de Microsoft
-ms.custom: ''
+title: IDebugProgram3::ExecuteOnThread | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4e183d9d55c8527cdead0d7108c12ac3fd527e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cfc64f8ae928b4bb0057a16b8a74c6ddbff588c0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788633"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995952"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,13 +47,12 @@ int ExecuteOnThread(
   
 - Ejecute: Cancelar cualquier paso anterior y ejecutar hasta el siguiente punto de interrupción y así sucesivamente.  
   
-- Paso: Cancelar un paso anterior y ejecutar hasta que se complete el paso nuevo.  
+- Paso: Cancelar cualquier paso anterior y ejecutar hasta que se complete el paso nuevo.  
   
-- Continuar: Vuelva a ejecutar y dejar activa la cualquier paso anterior.  
+- Continuar: Ejecute de nuevo y dejar activa cualquier paso anterior.  
   
   El subproceso pasa a `ExecuteOnThread` es útil al decidir qué paso para cancelar. Si no conoce el subproceso, que se ejecuta ejecutar cancela todos los pasos. Con el conocimiento del subproceso, solo deberá cancelar el paso en el subproceso activo.  
   
 ## <a name="see-also"></a>Vea también  
  [Ejecutar](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   
  [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Fundamentos de la integración de Control de origen | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9893d5525bf66b167dea170c0c5fae8285aa40af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b9189b647baa29d72975f84172696ecb54cd7f87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998464"
 ---
 # <a name="source-control-integration-essentials"></a>Conceptos básicos de la integración del control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51780976"
   
 1. Crear un archivo DLL que implementa las funciones especificadas en [de complementos de Control de código fuente](../../extensibility/source-control-plug-ins.md).  
   
-2. Registrar la DLL mediante la realización de las entradas del Registro adecuados, como se describe en [Cómo: instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
+2. Registrar la DLL mediante la realización de las entradas del Registro adecuados, como se describe en [Cómo: Instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
   
 3. Crear una aplicación auxiliar de la interfaz de usuario y mostrarlo cuando se lo solicite el paquete de adaptador de Control de código fuente (el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] componente que controla la funcionalidad de control de código fuente a través de los complementos de control de código fuente).  
   
@@ -61,4 +56,3 @@ ms.locfileid: "51780976"
  [Información general](../../extensibility/internals/source-control-integration-overview.md)   
  [Creación de un Control de código fuente complemento](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Creación de un VSPackage de control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Predeterminado de comando, grupo y la ubicación de la barra de herramientas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], default groups
 - toolbars [Visual Studio], default
@@ -19,23 +14,23 @@ helpviewer_keywords:
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e91d535697d0e5b9402a7b7eb3bbd4559821c68a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7fc877332f7db7b27c4a30c23f1ac395a4fc22e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773644"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997103"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Ubicación predeterminada de comando, grupo y barra de herramientas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Para obtener uniformidad de producto y estabilidad, la interfaz de usuario muestra determinados grupos de comandos de forma predeterminada, y [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporciona definiciones para los comandos y los grupos de comandos. Los VSPackages también puede usar los comandos estándar y los grupos de comandos.  
   
- Los grupos de comandos predeterminados se dividen en tres categorías: IDE comandos, comandos de producto y los comandos del editor.  
+ Los grupos de comandos predeterminados se dividen en tres categorías: Comandos IDE, comandos de producto y los comandos del editor.  
   
 ## <a name="default-ide-commands"></a>Comandos IDE predeterminados  
- La barra de herramientas IDE predeterminada incluye comandos compartidos por todos los productos incluidos en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Incluye comandos relacionados con operaciones de proyectos genérico, como el **guardar** comando y el **Agregar elemento** comando. Los VSPackages no debe sumar o restar de esta barra de herramientas, con una excepción: si el producto o VSPackage agrega una nueva ventana de herramientas, la ventana se agregan a la lista de ventanas de herramientas disponibles en el **vista** menú. Nuevos productos o los paquetes VSPackage pueden agregar su propia barra de herramientas.  
+ La barra de herramientas IDE predeterminada incluye comandos compartidos por todos los productos incluidos en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Incluye comandos relacionados con operaciones de proyectos genérico, como el **guardar** comando y el **Agregar elemento** comando. Los VSPackages no debe sumar o restar de esta barra de herramientas, con una excepción: Si el producto o VSPackage agrega una nueva ventana de herramientas, la ventana se agregan a la lista de ventanas de herramientas disponibles en el **vista** menú. Nuevos productos o los paquetes VSPackage pueden agregar su propia barra de herramientas.  
   
 ## <a name="default-product-commands"></a>Comandos de producto de forma predeterminada  
  Cada producto puede proporcionar el IDE con su propia barra de herramientas predeterminada que contiene importantes y comandos usados con frecuencia. Sin embargo, es mejor, usar los menús y barras de herramientas siempre que sea posible existentes y complementarlas con otras barras de herramientas específicas de las tareas según sea necesario.  
@@ -50,4 +45,3 @@ Para obtener uniformidad de producto y estabilidad, la interfaz de usuario muest
 ## <a name="see-also"></a>Vea también  
  [Grupos, menús y comandos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
  [Adición de elementos de la interfaz de usuario por VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

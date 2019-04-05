@@ -1,27 +1,22 @@
 ---
 title: Ampliar el filtro del explorador de soluciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d218744a4fcfcb498054105e48019bf2b0ce66b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27812d10c720d0507309513bd908498d9abcf92a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750186"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998368"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Ampliación del filtro del Explorador de soluciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -200,4 +195,3 @@ Puede extender **el Explorador de soluciones** filtrar funcionalidad para mostra
 3.  Busque el botón que agregó en la barra de herramientas del explorador de soluciones. Debe ser el cuarto botón desde la izquierda.  
   
 4.  Al hacer clic en el botón, se deben filtrar todos los archivos, y debería ver "todos los elementos se han filtrado de la vista." en el Explorador de soluciones.
-

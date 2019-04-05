@@ -1,11 +1,8 @@
 ---
 title: Mediante los diseñadores de actividad | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer [WFD], activity designer
@@ -14,13 +11,13 @@ ms.assetid: 3c2725c3-091b-49ab-81e7-d4c7028d47a2
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b7601f4e42c7dbc2bee63719986760bedd1c8589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ce8d963d56a6ad79562db22ab0e59885730c24b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224242"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997057"
 ---
 # <a name="using-the-activity-designers"></a>Utilizar los diseñadores de actividades
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] incluye varias actividades proporcionadas por el sistema que puede utilizar cuando cree actividades y flujos de trabajo. En esta sección se describen las categorías de las actividades proporcionadas por el sistema y los diseñadores correspondientes que están disponibles. Los temas de las actividades individuales y sus diseñadores respectivos dentro de cada una de estas categorías describen lo que hacen estas actividades y proporcionan orientación sobre cómo utilizarlas.  
