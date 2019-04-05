@@ -1,14 +1,9 @@
 ---
 title: Páginas de propiedades | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 74da0df2939b08615f3a659dfca70b1cea0e495d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a45e4a98326fe829b8f87a4ecfce669118cd9d0e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997750"
 ---
 # <a name="property-pages"></a>Páginas de propiedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -91,4 +86,3 @@ Cuadro de diálogo páginas de propiedades de proyecto con la estructura de árb
  [Administración de las opciones de configuración](../../extensibility/internals/managing-configuration-options.md)   
  [Objeto de configuración de proyecto](../../extensibility/internals/project-configuration-object.md)   
  [Configuración de soluciones](../../extensibility/internals/solution-configuration.md)
-

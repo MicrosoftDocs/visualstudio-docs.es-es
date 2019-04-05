@@ -1,27 +1,22 @@
 ---
 title: Extensibilidad del depurador de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Debugging SDK
 - Debugging SDK
 ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b5e9e7a3db38b5138f6392ff89f3a3bb4a13303
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 528716c4ea354ab63dc7fcab2b3f90fe2860b655
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995134"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilidad del depurador de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Visual Studio incluye a un depurador de código fuente totalmente interactivas, 
   
  El [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] incluye una referencia completa a todos los [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] elementos necesarios para crear un DE nuevo. Además, hay ejemplos y tutoriales que le ayudarán a comenzar.  
   
- Para obtener un ejemplo extremo a otro de un sistema de proyectos de lenguaje con compatibilidad con la depuración, vea el [ejemplo de IronPython](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Para obtener un ejemplo extremo a otro de un sistema de proyectos de lenguaje con compatibilidad con la depuración, vea el [ejemplo de IronPython](http://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
   
  Las secciones siguientes describen cómo ampliar el depurador mediante el [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
@@ -54,4 +49,3 @@ Visual Studio incluye a un depurador de código fuente totalmente interactivas, 
   
  [Muestras](../../extensibility/debugger/visual-studio-debugging-samples.md)  
  Contiene vínculos a un ejemplo de common language runtime expresión del evaluador de expresiones y un ejemplo de motor de depuración.
-

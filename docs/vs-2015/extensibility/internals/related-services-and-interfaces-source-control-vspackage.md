@@ -1,27 +1,22 @@
 ---
 title: Interfaces (VSPackage de Control de código fuente) y servicios relacionados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f308c0d8669bc8950578ffc615ebe64b91a4ea7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5497c74c75c9c5a97672152ab521e1ccf141b540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989259"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfaces y servicios relacionados (VSPackage de control de código fuente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +32,13 @@ Esta sección enumeran todas las interfaces de VSPackage de control de origen al
   
  Las interfaces son:  
   
--   Requerido: La entidad adecuada (control de código fuente VSPackage, código auxiliar de Control de código fuente, project) debe implementar la interfaz.  
+-   Obligatorio: La entidad adecuada (control de código fuente VSPackage, código auxiliar de Control de código fuente, project) debe implementar la interfaz.  
   
 -   Recomendado: La entidad debe implementar esta interfaz; en caso contrario, la funcionalidad de control de código fuente puede ser limitada.  
   
 -   Opcional: la entidad puede implementar esta interfaz para proporcionar un conjunto de características más completo.  
   
-|Interfaz|Propósito|Implementado por|¿Implementar?|  
+|Interfaz|Finalidad|Implementado por|¿Implementar?|  
 |---------------|-------------|--------------------|----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Editores de llamar a esta interfaz antes de modificar o guardar un archivo. El control de código fuente VSPackage puede desproteger el archivo o denegar la operación si se produce un error en la desprotección.|VSPackage de control de código fuente|Se recomienda|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Esta interfaz proporciona funcionalidad de control de código fuente básicos para los proyectos, como registrar y anular el registro de los proyectos con control de código fuente y proporcionar soporte técnico para los glifos de control de código fuente básicos.|VSPackage de control de código fuente|Obligatorio|  
@@ -70,4 +65,3 @@ Esta sección enumeran todas las interfaces de VSPackage de control de origen al
   
 ## <a name="see-also"></a>Vea también  
  [Elementos de diseño](../../extensibility/internals/source-control-vspackage-design-elements.md)
-

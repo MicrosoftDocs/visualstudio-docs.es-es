@@ -1,14 +1,9 @@
 ---
-title: 'Inicio rápido: Análisis de código para C/C ++ | Microsoft Docs'
-ms.custom: ''
+title: 'Inicio rápido: Análisis de código para C/C ++ | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
@@ -16,18 +11,18 @@ ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
 caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 83b793f694c1965f5ded6b0fd136d672280d59cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758195"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997891"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Inicio rápido: Análisis de código para C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se puede mejorar la calidad de la aplicación si se analiza con regularidad el código de C o C++. Esto ayuda a descubrir problemas comunes, infracciones de los procedimientos recomendados de programación o defectos que son difíciles de detectar con pruebas. Las advertencias de análisis de código difieren de los errores y las advertencias del compilador porque el análisis de código busca patrones de código específicos que, a pesar de ser válidos, podrían crearle problemas a usted o a otras personas que usen el código.  
+Se puede mejorar la calidad de la aplicación si se analiza con regularidad el código de C o C++. Esto ayuda a descubrir problemas comunes, infracciones de los procedimientos recomendados de programación o defectos que son difíciles de detectar con pruebas. Las advertencias del análisis de código son distintas de los errores y advertencias del compilador, porque el análisis de código busca patrones de código concretos que, aunque son válidos, pueden crear problemas para ti o para otros usuarios del código.  
   
 ## <a name="in-this-topic"></a>En este tema  
   
@@ -96,7 +91,7 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
   
  Cuando se expande una advertencia, la línea de código que la causó se resalta en el editor de código de Visual Studio.  
   
- Una vez comprendido el problema, puede resolverlo en el código. A continuación vuelva a ejecutar el análisis de código para asegurarse de que la advertencia ya no aparece en la ventana de análisis de código y que la corrección no genera nuevas advertencias.  
+ Cuando haya entendido el problema, podrá resolverlo en el código. A continuación vuelva a ejecutar el análisis de código para asegurarse de que la advertencia ya no aparece en la ventana de análisis de código y que la corrección no genera nuevas advertencias.  
   
 > [!TIP]
 >  Puedes repetir el análisis de código desde la ventana Análisis de código. Elija la **analizar** botón y elija el ámbito del análisis. Puedes repetir el análisis en toda la solución o en el proyecto seleccionado.  
@@ -130,11 +125,8 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
 ##  <a name="BKMK_Search"></a> Buscar y filtrar resultados del análisis de código  
  Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.  
   
-1.  **Para filtrar las advertencias por título o identificador de advertencia**: escriba la palabra clave en el **filtro** cuadro de texto.  
+1.  **Para filtrar las advertencias por título o identificador de advertencia**: Escriba la palabra clave en el **filtro** cuadro de texto.  
   
-2.  **Para filtrar las advertencias por proyecto**: en una solución multiproyecto, elija uno o varios proyectos en la lista en la parte superior derecha de la ventana de análisis de código. Elija el nombre de la solución para mostrar todas las advertencias.  
+2.  **Para filtrar las advertencias por proyecto**: En una solución multiproyecto, elija uno o varios proyectos en la lista en la parte superior derecha de la ventana de análisis de código. Elija el nombre de la solución para mostrar todas las advertencias.  
   
-3.  **Para filtrar las advertencias por gravedad**: de forma predeterminada, los mensajes de análisis de código tienen asignados una gravedad de **advertencia**. Puede asignar la gravedad de uno o más mensajes como **Error** en una regla personalizada establecido. Elija **advertencia** o **Error** para mostrar solo los mensajes que están asignados a la correspondiente gravedad. Elija **todas** para mostrar todos los mensajes.
-
-
-
+3.  **Para filtrar las advertencias por gravedad**: De forma predeterminada, los mensajes de análisis de código tienen asignados una gravedad de **advertencia**. Puede asignar la gravedad de uno o más mensajes como **Error** en una regla personalizada establecido. Elija **advertencia** o **Error** para mostrar solo los mensajes que están asignados a la correspondiente gravedad. Elija **todas** para mostrar todos los mensajes.

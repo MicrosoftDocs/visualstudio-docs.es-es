@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: crear un manifiesto de producto | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Crear un manifiesto de producto | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,20 +18,20 @@ ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: fc5662763e7932cc024169969801c9c321343e32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997684"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Cómo: Crear un manifiesto de producto
+# <a name="how-to-create-a-product-manifest"></a>Filtrar Crear un manifiesto de producto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para implementar los requisitos previos para la aplicación, puede crear un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único, pero un manifiesto del paquete para cada configuración regional. El manifiesto del paquete contiene aspectos específicos de la localización del paquete. Esto incluye cadenas, contratos de licencia del usuario final y los paquetes de idioma.  
   
- Para obtener más información acerca de los manifiestos de producto, consulte [Cómo: crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).  
+ Para obtener más información acerca de los manifiestos de producto, consulte [Cómo: Crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).  
   
 ## <a name="creating-the-product-manifest"></a>Crear el manifiesto del producto  
   
@@ -168,6 +163,3 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
-
-
-

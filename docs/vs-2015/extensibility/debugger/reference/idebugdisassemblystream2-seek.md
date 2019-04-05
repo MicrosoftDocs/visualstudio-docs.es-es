@@ -1,14 +1,9 @@
 ---
 title: IDebugDisassemblyStream2::Seek | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDisassemblyStream2::Seek
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bf5387d7ee5620d97e2ba20a155c277460158530
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d774cc0bf6bca1278423249960bbc5233aa6ad37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808337"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994768"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ int Seek( 
  [in] El número de instrucciones para mover en relación con la posición especificada en `dwSeekStart`. Este valor puede ser negativo para moverse hacia atrás.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si fue la posición de búsqueda a un punto más allá de la lista de instrucciones disponibles. De lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si fue la posición de búsqueda a un punto más allá de la lista de instrucciones disponibles. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Si la búsqueda se realizó a una posición antes del comienzo de la lista, se establece la posición de lectura a la primera instrucción en la lista. Si la consulte consistía en una posición después del final de la lista, la posición de lectura se establece a la última instrucción en la lista.  
@@ -73,4 +68,3 @@ int Seek( 
  [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)
-
