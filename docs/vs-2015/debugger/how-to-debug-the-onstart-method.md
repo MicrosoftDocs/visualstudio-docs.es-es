@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: depurar el método OnStart | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Depurar el método OnStart | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,18 +19,18 @@ ms.assetid: b06b5d65-424b-490f-bf58-97583cd7006a
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37ea2118c11eaebd0619a3845fc0177741cf34de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d77d06e720ebe9146f907d8868c46c94addd5d99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744153"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995927"
 ---
-# <a name="how-to-debug-the-onstart-method"></a>Cómo: Depurar el método OnStart
+# <a name="how-to-debug-the-onstart-method"></a>Filtrar Depuración del método OnStart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se puede depurar un servicio de Windows si se inicia el servicio y se asocia el depurador al proceso del servicio. Para obtener más información, consulta [How to: Debug Windows Service Applications](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2). Sin embargo, para depurar el método <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> de un servicio de Windows, debe iniciar el depurador desde dentro del método.  
+Se puede depurar un servicio de Windows si se inicia el servicio y se asocia el depurador al proceso del servicio. Para obtener más información, vea [Cómo: Depurar aplicaciones de servicios de Windows](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2). Sin embargo, para depurar el método <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> de un servicio de Windows, debe iniciar el depurador desde dentro del método.  
   
 1.  Agregue una llamada a <xref:System.Diagnostics.Debugger.Launch%2A> al principio del método `OnStart()`.  
   
@@ -52,7 +47,7 @@ Se puede depurar un servicio de Windows si se inicia el servicio y se asocia el 
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3.  Seleccione **Sí, depurar \<nombre del servicio >.**  
+3.  Seleccione **Sí, depurar \<nombre del servicio**.  
   
 4.  En la ventana del depurador Just-In-Time, seleccione la versión de Visual Studio que quiere usar para la depuración.  
   
@@ -63,6 +58,3 @@ Se puede depurar un servicio de Windows si se inicia el servicio y se asocia el 
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depurar código administrado](../debugger/debugging-managed-code.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Solo mi código | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3b016c8565b3c501c5cc41802512f02b1c10d615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84f0b3b10ba64a820b1088c381787dd1f7c71b8e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798656"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996194"
 ---
 # <a name="just-my-code"></a>Solo mi código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizados con la característica del depurador Solo mi código que salta las llamadas del sistema, del marco de trabajo y otras llamadas que no son de usuario, y las contrae en las ventanas Pila de llamadas. Solo mi código se amplió a los lenguajes C++ y JavaScript. En este tema se describen los detalles del uso de Solo mi código en proyectos de .NET Framework, C++ nativo y JavaScript.  
   
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Habilitar o deshabilitar solo mi código  
+##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Habilitar o deshabilitar Solo mi código  
  Para habilitar o deshabilitar solo mi código, elija **opciones y configuración** en el **depurar** menú. En el **depuración** / **General** nodo, elija o borre **habilitar solo mi código**.  
   
  ![Habilitar Solo mi código en el cuadro de diálogo Opciones](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
@@ -61,7 +56,7 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   El código restante se considera código de usuario.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Comportamiento de ejecución paso a paso  
- Cuando se **paso a paso** (método abreviado de teclado: F11) código de no usuario, el depurador salta el código a la siguiente instrucción del usuario. Cuando se **paso a paso fuera** (teclado: MAYÚS + F11), el depurador ejecuta hasta la siguiente línea de código de usuario. Si no se encuentra ningún código de usuario, la ejecución continúa hasta que se cierra la aplicación, se visita un punto de interrupción o se produce una excepción.  
+ Cuando se **paso a paso** (método abreviado de teclado: Código de no usuario F11), el depurador salta el código a la siguiente instrucción del usuario. Cuando se **paso a paso fuera** (teclado: MAYÚS + F11), el depurador ejecuta hasta la siguiente línea de código de usuario. Si no se encuentra ningún código de usuario, la ejecución continúa hasta que se cierra la aplicación, se visita un punto de interrupción o se produce una excepción.  
   
 ###  <a name="BKMK_NET_Breakpoint_behavior"></a> Comportamiento de punto de interrupción  
  Cuando está habilitado solo mi código, puede elegir **interrumpir todos** (teclado: Ctrl + Alt + Inter) y detener la ejecución en una ubicación donde no hay ningún código de usuario para mostrar. Cuando esto sucede, se muestra la ventana No hay código fuente. Si se elige un comando Paso, el depurador le lleva a la línea siguiente de código de usuario.  
@@ -93,7 +88,7 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   Puede crear sus propios archivos `.natstepfilter` y `.natjmc` para personalizar el comportamiento de ejecución paso a paso y de la ventana Pila de llamadas en `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportamiento de ejecución paso a paso  
- Cuando se **paso a paso** (método abreviado de teclado: F11) código de no usuario desde el código de usuario, el depurador salta el código hasta la siguiente línea de código de usuario. Cuando se **paso a paso fuera** (teclado: MAYÚS + F11), el depurador ejecuta hasta la siguiente línea de código de usuario. Si no se encuentra ningún código de usuario, la ejecución continúa hasta que se cierra la aplicación, se visita un punto de interrupción o se produce una excepción.  
+ Cuando se **paso a paso** (método abreviado de teclado: Código de no usuario F11) desde el código de usuario, el depurador salta el código hasta la siguiente línea de código de usuario. Cuando se **paso a paso fuera** (teclado: MAYÚS + F11), el depurador ejecuta hasta la siguiente línea de código de usuario. Si no se encuentra ningún código de usuario, la ejecución continúa hasta que se cierra la aplicación, se visita un punto de interrupción o se produce una excepción.  
   
  Si el depurador interrumpe la ejecución en código que no es de usuario (por ejemplo, si un comando Interrumpir todos se detiene en código que no es de usuario), la ejecución paso a paso continúa en el código que no es de usuario.  
   
@@ -127,10 +122,10 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|Función|Requerido. Especifica una o más funciones como funciones que no son de usuario.|  
-|`Name`|Requerido. Expresión regular con formato ECMA-262 que especifica el nombre de función completo que debe coincidir. Por ejemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al depurador que todos los métodos de `MyNS::MyClass` deben considerarse código que no es de usuario. La coincidencia distingue mayúsculas de minúsculas.|  
+|Función|Obligatorio. Especifica una o más funciones como funciones que no son de usuario.|  
+|`Name`|Obligatorio. Expresión regular con formato ECMA-262 que especifica el nombre de función completo que debe coincidir. Por ejemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al depurador que todos los métodos de `MyNS::MyClass` deben considerarse código que no es de usuario. La coincidencia distingue mayúsculas de minúsculas.|  
 |`Module`|Opcional. Expresión regular con formato ECMA-262 que especifica la ruta de acceso completa al módulo que contiene la función. La búsqueda no distingue entre mayúsculas y minúsculas.|  
-|`Action`|Requerido. Uno de estos valores que distingue mayúsculas y minúsculas:<br /><br /> -   `NoStepInto`  : indica al depurador que omita la función coincidente.<br />-   `StepInto`  : indica al depurador paso a paso por las funciones coincidentes, invalidando cualquier otro `NoStepInto` para las funciones coincidentes.|  
+|`Action`|Obligatorio. Uno de estos valores que distingue mayúsculas y minúsculas:<br /><br /> -   `NoStepInto`  : indica al depurador que omita la función coincidente.<br />-   `StepInto`  : indica al depurador paso a paso por las funciones coincidentes, invalidando cualquier otro `NoStepInto` para las funciones coincidentes.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizar el comportamiento de la pila de llamadas  
  Se puede especificar que se trate como código que no es de usuario módulos, archivos de código fuente y funciones en las pilas de llamadas; para ello, hay que especificarlos en archivos `*.natjmc`.  
@@ -165,20 +160,20 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. Ruta de acceso completa al módulo o los módulos. Puede usar los caracteres comodín `?` (cero o un carácter) y `*` (cero o más caracteres) de Windows. Por ejemplo,<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> indica al depurador que trate como código externo todos los módulos de `\3rdParty\UtilLibs` en cualquier unidad.|  
+|`Name`|Obligatorio. Ruta de acceso completa al módulo o los módulos. Puede usar los caracteres comodín `?` (cero o un carácter) y `*` (cero o más caracteres) de Windows. Por ejemplo,<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> indica al depurador que trate como código externo todos los módulos de `\3rdParty\UtilLibs` en cualquier unidad.|  
 |`Company`|Opcional. Nombre de la compañía que publica el módulo que está incrustado en el archivo ejecutable. Puede utilizar este atributo para eliminar la ambigüedad de los módulos.|  
   
  **Atributos del elemento File**  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. Ruta de acceso completa del archivo o archivos de código fuente que se van a tratar como código externo. Puede usar los caracteres comodín `?` y `*` de Windows para especificar la ruta de acceso.|  
+|`Name`|Obligatorio. Ruta de acceso completa del archivo o archivos de código fuente que se van a tratar como código externo. Puede usar los caracteres comodín `?` y `*` de Windows para especificar la ruta de acceso.|  
   
  **Atributos del elemento Function**  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. Nombre completo de la función que se va a tratar como código externo.|  
+|`Name`|Obligatorio. Nombre completo de la función que se va a tratar como código externo.|  
 |`Module`|Opcional. Nombre o ruta de acceso completa al módulo que contiene la función. Puede utilizar este atributo para eliminar la ambigüedad de funciones que tienen el mismo nombre.|  
 |`ExceptionImplementation`|Cuando se establece en `true`, la pila de llamadas muestra la función que produjo la excepción en lugar de esta función.|  
   
@@ -209,7 +204,7 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   
   Es posible modificar las clasificaciones predeterminadas y clasificar determinados archivos y direcciones URL si se agrega un archivo .json denominado `mycode.json` a la carpeta raíz de un proyecto.  
   
-  El código restante se clasifica como **MyCode**.  
+  Todo el código restante se clasifica como **MyCode**.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Comportamiento de ejecución paso a paso  
   
@@ -219,7 +214,7 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   
 -   Cuando un paso en código de usuario hace que se salga del contexto de ejecución actual (como un paso en la última línea de un controlador de eventos), el depurador se detiene en la siguiente línea de código de usuario ejecutada. Por ejemplo, si se ejecuta en una devolución de llamada **LibraryCode** código el depurador continúa hasta que se ejecuta la siguiente línea de código de usuario.  
   
--   **Paso a paso fuera** (teclado: MAYÚS + F11) se detiene en la siguiente línea de código de usuario. Si no se encuentra ningún código de usuario, la ejecución continúa hasta que se cierra la aplicación, se visita un punto de interrupción o se produce una excepción.  
+-   **Salir** (teclado: MAYÚS + F11) se detiene en la siguiente línea de código de usuario. Si no se encuentra ningún código de usuario, la ejecución continúa hasta que se cierra la aplicación, se visita un punto de interrupción o se produce una excepción.  
   
 ###  <a name="BKMK_JS_Breakpoint_behavior"></a> Comportamiento de punto de interrupción  
   
@@ -291,15 +286,15 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
 |-|-|  
 |**Eval**|Script que se ejecuta pasando una cadena a la función `eval` proporcionada por el host. De forma predeterminada, el script Eval se clasifica como **MyCode**.|  
 |**Function**|Script que se ejecuta pasando una cadena al constructor de `Function`. De forma predeterminada, el script Function se clasifica como **LibraryCode**.|  
-|**Bloque de script**|Script que se ejecuta pasando una cadena a las funciones `setTimeout`, `setImmediate` o `setInterval`. De forma predeterminada, el script ScriptBlock se clasifica como **UnrelatedCode**.|  
+|**ScriptBlock**|Script que se ejecuta pasando una cadena a las funciones `setTimeout`, `setImmediate` o `setInterval`. De forma predeterminada, el script ScriptBlock se clasifica como **UnrelatedCode**.|  
   
  Puede cambiar el valor a una de estas palabras clave:  
   
-- `MyCode`  clasifica el script como **MyCode**.  
+- `MyCode` clasifica el script como **MyCode**.  
   
-- `Library`  clasifica el script como **LibraryCode**.  
+- `Library` clasifica el script como **LibraryCode**.  
   
-- `Unrelated`  clasifica el script como **UnrelatedCode**.  
+- `Unrelated` clasifica el script como **UnrelatedCode**.  
   
   **MyCode, Libraries y Unrelated**  
   
@@ -309,11 +304,6 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
 |-|-|  
 |**MyCode**|Una matriz de direcciones URL o archivos que se clasifican como **MyCode**.|  
 |**Bibliotecas**|Una matriz de direcciones URL o archivos que se clasifican como **LibraryCode**.|  
-|**No relacionados**|Una matriz de direcciones URL o archivos que se clasifican como **UnrelatedCode**.|  
+|**Unrelated**|Una matriz de direcciones URL o archivos que se clasifican como **UnrelatedCode**.|  
   
  La dirección URL o la cadena de archivo puede contener uno o más caracteres `*`, que coinciden con cero o más caracteres. `*` es el equivalente de la expresión regular `.*`.
-
-
-
-
-

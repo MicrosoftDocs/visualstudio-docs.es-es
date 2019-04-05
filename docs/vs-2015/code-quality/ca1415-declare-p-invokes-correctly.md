@@ -1,14 +1,9 @@
 ---
-title: 'CA1415: Declare los elementos P / Invoke correctamente | Microsoft Docs'
-ms.custom: ''
+title: 'CA1415: Declare los elementos P / Invoke correctamente | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1415
 - DeclarePInvokesCorrectly
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2a945029652f67fe7332a336e62523bba8175f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5fa1473d96d8b74b07497ef72a0a92bcf80e1fe3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994901"
 ---
-# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Declare los elementos P/Invoke correctamente
+# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Declarar elementos P/Invoke correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,6 +51,3 @@ ms.locfileid: "49857294"
 
 ## <a name="see-also"></a>Vea también
  [Interoperating with Unmanaged Code](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) (Interoperar con código no administrado)
-
-
-

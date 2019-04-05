@@ -1,14 +1,9 @@
 ---
-title: 'Preparación de la depuración: Proyectos de consola | Microsoft Docs'
-ms.custom: ''
+title: 'Preparación de la depuración: Proyectos de consola | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,18 +17,18 @@ ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 78cdf137f4804b2cdad26a21daf2dc34592ed774
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 438e619be3e7650961709ef8fce8d69304d5c6ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722919"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998339"
 ---
-# <a name="debugging-preparation-console-projects"></a>Preparación de la depuración: proyectos de consola
+# <a name="debugging-preparation-console-projects"></a>Preparación de la depuración: Proyectos de consola
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Preparar la depuración de un proyecto de consola es similar a preparar la depuración de un proyecto para Windows, con algunas consideraciones adicionales. Para obtener más información, consulte [aplicaciones de Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), y [preparar la depuración: aplicaciones de Windows Forms (. NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Debido a la similitud de todas las aplicaciones de consola, este tema cubre los tipos de proyecto siguientes:  
+Preparar la depuración de un proyecto de consola es similar a preparar la depuración de un proyecto para Windows, con algunas consideraciones adicionales. Para obtener más información, consulte [Windows Forms Applications](../debugger/debugging-preparation-windows-forms-applications.md), y [preparación de la depuración: Aplicaciones (. NET) de formularios Windows Forms](http://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Debido a la similitud de todas las aplicaciones de consola, este tema cubre los tipos de proyecto siguientes:  
   
 - Aplicación de consola de C#  
   
@@ -45,9 +40,9 @@ Preparar la depuración de un proyecto de consola es similar a preparar la depur
   
   Es posible que necesite especificar argumentos de línea de comandos para la aplicación de consola. Para obtener más información, consulte [configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), o [configuración del proyecto para configuraciones de depuración de C# ](../debugger/project-settings-for-csharp-debug-configurations.md).  
   
-  Al igual que todas las propiedades del proyecto, estos argumentos se conservan entre sesiones de depuración y entre sesiones de Visual Studio. Por lo tanto, si la aplicación de consola es una que ya ha depurado anteriormente, recuerde que puede haber argumentos de sesiones anteriores escritos en el  **\<proyecto > páginas de propiedades** cuadro de diálogo.  
+  Al igual que todas las propiedades del proyecto, estos argumentos se conservan entre sesiones de depuración y entre sesiones de Visual Studio. Por lo tanto, si la aplicación de consola es una aplicación que ya ha depurado anteriormente, recuerde que puede haber argumentos de sesiones anteriores escritos en el cuadro de diálogo **\<Proyecto > Páginas de propiedades**.  
   
-  Una aplicación de consola utiliza la **consola** ventana para aceptar la entrada y mostrar mensajes de salida. Para escribir en el **consola** ventana, la aplicación debe utilizar el **consola** objeto en lugar del objeto Debug. Para escribir en el **salida de Visual Studio** ventana, utilice el objeto de depuración, como de costumbre. Asegúrese de que conoce la ubicación en la que la aplicación escribe los datos; de lo contrario, podría buscar mensajes en el lugar incorrecto. Para obtener más información, consulte [clase Console](https://msdn.microsoft.com/library/system.console.aspx), [clase Debug](https://msdn.microsoft.com/library/system.diagnostics.debug.aspx), y [ventana de salida](../ide/reference/output-window.md).  
+  Una aplicación de consola utiliza la ventana **Consola** para aceptar entradas y mostrar mensajes de salida. Para escribir en el **consola** ventana, la aplicación debe utilizar el **consola** objeto en lugar del objeto Debug. Para escribir en la ventana **Salida de Visual Studio**, utilice el objeto Debug de la manera habitual. Asegúrese de que conoce la ubicación en la que la aplicación escribe los datos; de lo contrario, podría buscar mensajes en el lugar incorrecto. Para obtener más información, vea [Console (clase)](https://msdn.microsoft.com/library/system.console.aspx), [Debug (clase)](https://msdn.microsoft.com/library/system.diagnostics.debug.aspx) y [Salida (Ventana)](../ide/reference/output-window.md).  
   
 ## <a name="starting-the-application"></a>Iniciar la aplicación  
  Cuando se inician algunas aplicaciones de consola, se ejecutan hasta su finalización y después salen. Este comportamiento podría no proporcionar suficiente tiempo para interrumpir la ejecución y la depuración. Para poder depurar una aplicación, utilice uno de los siguientes procedimientos para iniciar la aplicación:  
@@ -62,7 +57,7 @@ Preparar la depuración de un proyecto de consola es similar a preparar la depur
   
   Al depurar una aplicación de consola, tal vez desee iniciar la aplicación desde el símbolo del sistema en vez de hacerlo desde Visual Studio. En ese caso, puede iniciar la aplicación desde el símbolo del sistema y asociar a la misma el depurador de Visual Studio. Para obtener más información, consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-  Cuando se inicia una aplicación de consola desde Visual Studio, el **consola** ventana a veces aparece detrás de la ventana de Visual Studio. Si intenta iniciar la aplicación de consola desde Visual Studio pero no ocurre nada, intente mover la ventana de Visual Studio.  
+  Cuando inicia una aplicación de consola desde Visual Studio, la ventana **Consola** a veces aparece detrás de la ventana de Visual Studio. Si intenta iniciar la aplicación de consola desde Visual Studio pero no ocurre nada, intente mover la ventana de Visual Studio.  
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de código nativo](../debugger/debugging-native-code.md)   
@@ -71,6 +66,3 @@ Preparar la depuración de un proyecto de consola es similar a preparar la depur
  [Tipos de proyectos de C#, F# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)
-
-
-

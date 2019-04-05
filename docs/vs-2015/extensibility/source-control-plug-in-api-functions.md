@@ -1,26 +1,21 @@
 ---
 title: Las funciones de API de complemento de Control de origen | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, functions
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5dcb07c3c49b132cdf12c1a4973af3ebf04dfa74
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02e2c7ee92ab138de7bee0d58835898f3bd0a58b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796784"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998682"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funciones de API de complemento de control de código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,4 +90,3 @@ La API de complemento de Control de código fuente proporciona las siguientes fu
 ## <a name="see-also"></a>Vea también  
  [Complementos de Control de código fuente](../extensibility/source-control-plug-ins.md)   
  [Creación de un complemento de control de código fuente](../extensibility/internals/creating-a-source-control-plug-in.md)
-
