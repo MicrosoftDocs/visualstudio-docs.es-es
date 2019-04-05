@@ -1,12 +1,9 @@
 ---
 title: Propiedades de tipos de UML de diagramas de clases | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750113"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999590"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Propiedades de los tipos de diagramas de clases de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +28,9 @@ En un diagrama de clases UML, un *tipo* es una clase, una interfaz o enumeració
 > [!NOTE]
 >  Este tema es sobre las propiedades de los tipos de diagramas de clases de UML. Para obtener más información, vea los temas siguientes:  
   
--   [Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)  
+-   [Diagrama de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)  
+-   [Diagrama de clases de UML: directrices](../modeling/uml-class-diagrams-guidelines.md)  
   
 -   [Propiedades de los atributos de diagramas de clases de UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
@@ -49,7 +46,7 @@ En un diagrama de clases UML, un *tipo* es una clase, una interfaz o enumeració
 |**Property**|**Predetermiado**|Aparece en|Descripción|  
 |------------------|-----------------|----------------|-----------------|  
 |**Name**|Nombre predeterminado|Todos los elementos|Identifica el elemento.|  
-|**Nombre completo**|Paquete contenedor :: Nombre del tipo|Todos los elementos|Identifica de forma única el elemento. Prefijo con el nombre completo del paquete que lo contiene.|  
+|**Nombre completo**|Paquete contenedor:: Nombre de tipo|Todos los elementos|Identifica de forma única el elemento. Prefijo con el nombre completo del paquete que lo contiene.|  
 |**Color**|Valor predeterminado para la clase de tipo|Todos los elementos|Color de esta forma. A diferencia de otras propiedades, esta no es una propiedad del elemento del modelo subyacente. Las vistas diferentes del mismo tipo pueden tener diferentes colores.|  
 |**Es abstracto**|False|Clase|Si es true, no se pueden crear instancias de la clase y está pensada para usarse como clase base.|  
 |**Es la hoja**|False|Clase, interfaz|Si es true, el tipo no pretende tener tipos derivados.|  
@@ -64,7 +61,4 @@ En un diagrama de clases UML, un *tipo* es una clase, una interfaz o enumeració
  [Propiedades de atributos en diagramas de clases UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Propiedades de las operaciones de diagramas de clases UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Propiedades de las asociaciones de diagramas de clases UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [Diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Diagrama de clases de UML: directrices](../modeling/uml-class-diagrams-guidelines.md)

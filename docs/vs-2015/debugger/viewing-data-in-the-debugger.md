@@ -1,14 +1,9 @@
 ---
 title: Visualización de datos en el depurador | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 13e1105f-f987-402e-9108-ec6ac12be042
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b5409f74a3e6be8f075155a2f87a35006209ea24
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1ade6c38a8edd73c181a3f135dd5e967901bf63f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793105"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999185"
 ---
 # <a name="viewing-data-in-the-debugger"></a>Ver datos en el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +45,3 @@ El depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporciona una gra
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)   
  [Ventana Comandos](../ide/reference/command-window.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)
-
-
-

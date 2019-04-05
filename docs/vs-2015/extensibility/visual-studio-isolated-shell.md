@@ -1,14 +1,9 @@
 ---
 title: Visual Studio Shell (aislado) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], shell-based applications%2C isolated mode
 - Visual Studio shell, isolated mode
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d7fcb0a838f2849ab74d202785709164ec5af6d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740655"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997058"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Shell (aislado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ El shell aislado de Visual Studio le permite crear aplicaciones independientes q
 >  Para tener acceso el paquete redistribuible de shell aislado, se le pedirá que rellene una breve encuesta de cliente.  Después de completar la encuesta, se le dirigirá a una página de Visual Studio Connect con vínculos de descarga del paquete redistribuible.  Puede encontrar los vínculos de descarga en visitas posteriores al sitio de Visual Studio Connect en el **programas &#124; VISUAL STUDIO 2015 integrado y aislado SHELL** ficha.  
   
 > [!NOTE]
->  Para obtener más información sobre cómo implementar una aplicación basada en shell aislada, consulte [Tutorial: crear una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+>  Para obtener más información sobre cómo implementar una aplicación basada en shell aislada, consulte [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="working-with-the-isolated-shell"></a>Trabajar con el shell aislado  
  Una aplicación de shell aislado de Visual Studio tiene acceso completo a los servicios de Visual Studio y admite la personalización de marca y personalización especial. Hay varias maneras de personalizar una aplicación de shell aislado:  
@@ -61,8 +56,8 @@ El shell aislado de Visual Studio le permite crear aplicaciones independientes q
   
 |Categoría de característica|Característica|  
 |----------------------|-------------|  
-|Características del IDE|Importar/exportar configuraciones<br /><br /> Instalador de controles de cuadro de herramientas<br /><br /> Lista de tareas & lista de errores<br /><br /> Resultados (Ventana)<br /><br /> Página de inicio<br /><br /> Ventana Propiedades<br /><br /> Cuadro de herramientas<br /><br /> Explorador de soluciones<br /><br /> Ventana Marcador<br /><br /> Vista de clases<br /><br /> Examinador de objetos<br /><br /> Ventana Comandos<br /><br /> Esquema del documento<br /><br /> Vista de recursos<br /><br /> Herramienta externa<br /><br /> Windows Communication Foundation (WCF) Agregar referencia de servicio<br /><br /> Compatibilidad con consultas (LINQ) integrada del lenguaje|  
-|Diseñador/editor|Exploración de las herramientas (búsqueda unificada, definición de origen, herencia) de código<br /><br /> IntelliSense<br /><br /> Etiquetas inteligentes<br /><br /> Administrador de fragmentos de código<br /><br /> Fragmentos de código<br /><br /> Refactorización<br /><br /> Lista descriptiva<br /><br /> Filtrado de IntelliSense<br /><br /> Ventana Definición de código<br /><br /> Diseñador de aplicaciones<br /><br /> Diseñador de Windows Forms<br /><br /> Diseñador de Windows Presentation Foundation (WPF)|  
+|Características del IDE|Importar/exportar configuraciones<br /><br /> Instalador de controles de cuadro de herramientas<br /><br /> Lista de tareas & lista de errores<br /><br /> Resultados (Ventana)<br /><br /> Página de inicio<br /><br /> Ventana Propiedades<br /><br /> Cuadro de herramientas<br /><br /> Explorador de soluciones<br /><br /> Marcador (Ventana)<br /><br /> Vista de clases<br /><br /> Examinador de objetos<br /><br /> Ventana Comandos<br /><br /> Esquema del documento<br /><br /> Vista de recursos<br /><br /> Herramienta externa<br /><br /> Windows Communication Foundation (WCF) Agregar referencia de servicio<br /><br /> Compatibilidad con consultas (LINQ) integrada del lenguaje|  
+|Diseñador/editor|Exploración de las herramientas (búsqueda unificada, definición de origen, herencia) de código<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Administrador de fragmentos de código<br /><br /> Fragmentos de código<br /><br /> Refactorización<br /><br /> Lista descriptiva<br /><br /> Filtrado de IntelliSense<br /><br /> Definición de código (Ventana)<br /><br /> Diseñador de aplicaciones<br /><br /> Diseñador de Windows Forms<br /><br /> Diseñador de Windows Presentation Foundation (WPF)|  
 |Depuración|Evaluador de expresiones de C#<br /><br /> Depuración local<br /><br /> Depuración administrada<br /><br /> Editar y continuar<br /><br /> Depuración entre subprocesos<br /><br /> Visualizaciones<br /><br /> Información sobre datos<br /><br /> Depuración nativa<br /><br /> Depuración de scripts<br /><br /> Depuración de interoperabilidad<br /><br /> Depuración Just-in-time (JIT)<br /><br /> Depuración de varios procesos<br /><br /> Depuración de XSLT<br /><br /> Asociar al proceso local<br /><br /> Puntos de seguimiento<br /><br /> Restricciones de punto de interrupción|  
 |Datos|Explorador de servidores (simplificado - sólo los datos)<br /><br /> Enlazar datos a los datos locales (. MDF o. MDB)<br /><br /> Enlace de datos al objeto<br /><br /> Enlace de datos al servicio Web<br /><br /> Conjunto completo de controles de datos<br /><br /> Editor XML<br /><br /> Enlazar datos al servidor de base de datos local<br /><br /> Ventana de orígenes de datos|  
 |Web|Editor de HTML<br /><br /> Explorador web<br /><br /> Diseñador de formularios Web Forms<br /><br /> Proyecto de sitio Web<br /><br /> Proyecto de aplicación Web|  
@@ -70,4 +65,3 @@ El shell aislado de Visual Studio le permite crear aplicaciones independientes q
   
 ## <a name="see-also"></a>Vea también  
  [Shell (aislado o integrado)](../extensibility/shell-isolated-or-integrated.md)
-

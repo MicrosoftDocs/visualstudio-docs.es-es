@@ -1,25 +1,20 @@
 ---
 title: Iniciar vista | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8f3ae39fa1b90140794b7dd4c571dabed2c12d95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 733d72f9fdf0d172e5d61d44120f212787d70050
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234252"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999045"
 ---
 # <a name="start-view"></a>Vista Inicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ La vista Inicio es el punto de lanzamiento del Diseñador de esquemas XML (XSD).
  ![Vista de inicio del Diseñador de esquemas XML](../xml-tools/media/xsddesigner-startview.gif "XSDDesigner_StartView")  
   
 ## <a name="watermark"></a>Marca de agua  
- El panel de marca de agua contiene una lista con los vínculos a todas las vistas del Diseñador XSD, el Editor XML y el Explorador de esquemas XML. Si el conjunto de esquemas tiene errores, se muestra el texto siguiente al final de la lista: "Use la lista de errores para ver y corregir los errores en el conjunto de esquemas".  
+ El panel de marca de agua contiene una lista con los vínculos a todas las vistas del Diseñador XSD, el Editor XML y el Explorador de esquemas XML. Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".  
   
 ## <a name="schema-set-details"></a>Detalles del conjunto de esquemas  
  El **detalles del conjunto de esquemas** panel se enumeran los tipos de nodo de esquema globales y muestra el número de instancias de cada tipo hay en el esquema. Puede usar el **agregar** vínculos junto a los tipos de nodo para agregar nuevos nodos al área de trabajo.  
@@ -55,6 +50,3 @@ La vista Inicio es el punto de lanzamiento del Diseñador de esquemas XML (XSD).
  [Vista de gráfico](../xml-tools/graph-view.md)   
  [Vista modelo de contenido](../xml-tools/content-model-view.md)   
  [Editor XML](../xml-tools/xml-editor.md)
-
-
-

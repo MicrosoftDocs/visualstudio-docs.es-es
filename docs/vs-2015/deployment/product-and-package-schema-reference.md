@@ -1,14 +1,9 @@
 ---
 title: Referencia de esquemas de paquete y producto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -30,13 +25,13 @@ ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995716"
 ---
 # <a name="product-and-package-schema-reference"></a>Referencia de esquemas de productos y paquetes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +42,13 @@ Un *archivo producto* es un manifiesto XML que describe todas las dependencias e
   
 |Elemento|Descripción|Atributos|  
 |-------------|-----------------|----------------|  
-|[\<Producto > elemento](../deployment/product-element-bootstrapper.md)|Elemento de nivel superior se requiere para los archivos de producto.|Ninguna|  
-|[\<Paquete > elemento](../deployment/package-element-bootstrapper.md)|Elemento de nivel superior se requiere para los archivos de paquete.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > elemento](../deployment/relatedproducts-element-bootstrapper.md)|Elemento opcional para los archivos de producto. Otros productos que instala o depende de este producto.|Ninguna|  
-|[\<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md)|Elemento necesario. Las listas de las comprobaciones de dependencia para llevar a cabo en el equipo local durante la instalación.|Ninguna|  
-|[\<Comandos > elemento](../deployment/commands-element-bootstrapper.md)|Elemento necesario.  Ejecuta una o más comprobaciones de instalación como se describe en `InstallChecks`e indica qué paquete de instalación debe la comprobación de errores.|Ninguna|  
-|[\<PackageFiles > elemento](../deployment/packagefiles-element-bootstrapper.md)|Elemento necesario. Enumera los paquetes que podrían instalarse por este proceso de instalación.|Ninguna|  
-|[\<Cadenas > elemento](../deployment/strings-element-bootstrapper.md)|Elemento necesario. Almacenes de versiones localizadas de las cadenas de error y de nombre de producto.|Ninguna|  
+|[\<Product> Element](../deployment/product-element-bootstrapper.md)|Elemento de nivel superior se requiere para los archivos de producto.|Ninguna|  
+|[\<Package> Element](../deployment/package-element-bootstrapper.md)|Elemento de nivel superior se requiere para los archivos de paquete.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts> Element](../deployment/relatedproducts-element-bootstrapper.md)|Elemento opcional para los archivos de producto. Otros productos que instala o depende de este producto.|Ninguna|  
+|[\<InstallChecks> Element](../deployment/installchecks-element-bootstrapper.md)|Elemento necesario. Las listas de las comprobaciones de dependencia para llevar a cabo en el equipo local durante la instalación.|Ninguna|  
+|[\<Commands> Element](../deployment/commands-element-bootstrapper.md)|Elemento necesario.  Ejecuta una o más comprobaciones de instalación como se describe en `InstallChecks`e indica qué paquete de instalación debe la comprobación de errores.|Ninguna|  
+|[\<PackageFiles> Element](../deployment/packagefiles-element-bootstrapper.md)|Elemento necesario. Enumera los paquetes que podrían instalarse por este proceso de instalación.|Ninguna|  
+|[\<Strings> Element](../deployment/strings-element-bootstrapper.md)|Elemento necesario. Almacenes de versiones localizadas de las cadenas de error y de nombre de producto.|Ninguna|  
   
 ## <a name="remarks"></a>Comentarios  
  El esquema del paquete es consumido por Setup.exe, un programa de código auxiliar generado por la tarea de arranque de MS Build que contiene poca lógica codificada de forma rígida de su propio. El esquema controla todos los aspectos del proceso de instalación.  
@@ -168,6 +163,3 @@ Un *archivo producto* es un manifiesto XML que describe todas las dependencias e
 ## <a name="see-also"></a>Vea también  
  [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

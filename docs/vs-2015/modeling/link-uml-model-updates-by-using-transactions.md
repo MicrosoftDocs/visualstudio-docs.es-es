@@ -1,25 +1,22 @@
 ---
 title: Vincular actualizaciones del modelo UML mediante transacciones | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, transactions
 ms.assetid: a1df6c38-a3d1-4a3f-82bc-c8f363ab916e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb8bb5dfd5238871324b786f120d618d70f14b43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999589"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Vincular actualizaciones del modelo UML mediante transacciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Al definir una extensión para los diseñadores de UML en Visual Studio, puede a
 ## <a name="to-group-changes-into-a-single-transaction"></a>Para agrupar los cambios en una única transacción  
  Asegúrese de que en las referencias del proyecto se incluye este ensamblado .NET:  
   
- **Microsoft.VisualStudio.Modeling.Sdk. [version] .dll**  
+ **Microsoft.VisualStudio.Modeling.Sdk.[version].dll**  
   
  En la clase, declare una propiedad importada que tenga el tipo <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext>:  
   
@@ -115,6 +112,3 @@ Al definir una extensión para los diseñadores de UML en Visual Studio, puede a
  [Programación con la API de UML](../modeling/programming-with-the-uml-api.md)   
  [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

@@ -1,11 +1,8 @@
 ---
 title: Windows de flujo de trabajo de Visual Studio (heredado) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, designer windows
@@ -13,13 +10,13 @@ ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 32e8b4cf8fcfbaddfa891ab881f25f89ca0285d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0036c861638c4a0d5d2b7de4500eb00368efe447
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273174"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999411"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Ventanas de flujo de trabajo de Visual Studio (Heredado)
 El [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado proporcionado por [!INCLUDE[vs2010](../includes/vs2010-md.md)] se puede usar para tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. El diseñador heredado es un diseñador visual que puede usar para crear un flujo de trabajo. Puede arrastrar las actividades desde el **cuadro de herramientas** al diseño de la superficie y, a continuación, configurarlas. Como ventana del editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ocupa el área de la ventana principal usada por otras ventanas del editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. El nombre del flujo de trabajo se muestra en la barra de título de la ventana de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

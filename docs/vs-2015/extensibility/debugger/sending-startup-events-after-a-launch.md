@@ -1,26 +1,21 @@
 ---
 title: Envío de eventos de inicio después de un lanzamiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0cc0642c085510e69fe7cd16abe195095c993219
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: eeb378b09ffc3e12de8996d7feabbd20a4b40068
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769133"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996779"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Envío de eventos de inicio después de un inicio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ Una vez que el motor de depuración (DE) está asociado al programa, envía una 
 ## <a name="see-also"></a>Vea también  
  [Control de ejecución](../../extensibility/debugger/control-of-execution.md)   
  [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)
-

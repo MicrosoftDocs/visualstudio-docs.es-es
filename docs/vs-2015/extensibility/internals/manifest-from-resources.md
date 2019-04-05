@@ -1,21 +1,17 @@
 ---
 title: Manifiesto desde recursos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d442686ab588932cac077a0b5fdc09a1a746c3d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771875"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999064"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +28,11 @@ El manifiesto de la herramienta de recursos es una aplicación de consola que to
 ||||  
 |-|-|-|  
 |**Nombre del conmutador**|**Notas**|**Obligatorio u opcional**|  
-|Resources|Una lista delimitada por punto y coma de las imágenes o directorios. Esta lista debería contener siempre la lista completa de las imágenes que se incluirán en el manifiesto. Si solo se proporciona una lista parcial, se perderán las entradas no incluidas.<br /><br /> Si un archivo de recursos determinado es una tira de imagen, la herramienta dividirla en imágenes independientes antes de agregar cada subimagen en el manifiesto.<br /><br /> Si la imagen es un archivo .png, se recomienda formatear el nombre de esta manera para que la herramienta puede rellenar los atributos de la imagen adecuados: \<nombre >.\< Ancho >. \<Alto >. png.|Obligatorio|  
+|/resources|Una lista delimitada por punto y coma de las imágenes o directorios. Esta lista debería contener siempre la lista completa de las imágenes que se incluirán en el manifiesto. Si solo se proporciona una lista parcial, se perderán las entradas no incluidas.<br /><br /> Si un archivo de recursos determinado es una tira de imagen, la herramienta dividirla en imágenes independientes antes de agregar cada subimagen en el manifiesto.<br /><br /> Si la imagen es un archivo .png, se recomienda que formatear el nombre de esta manera para que la herramienta puede rellenar los atributos de la imagen adecuados: \<Nombre >. \<Ancho >. \<Alto >. png.|Obligatorio|  
 |/Assembly|El nombre del ensamblado administrado (sin incluir la extensión) o la ruta de acceso en tiempo de ejecución del ensamblado nativo que hospeda los recursos (con respecto a la ubicación de tiempo de ejecución del manifiesto).|Obligatorio|  
-|/ manifest|El nombre que asigne al archivo .imagemanifest generado. Esto también puede incluir una ruta de acceso absoluta o relativa para crear el archivo en una ubicación diferente. El nombre predeterminado coincide con el nombre del ensamblado.<br /><br /> Valor predeterminado: \<directorio actual >\\< ensamblado\>.imagemanifest|Optional|  
+|/ manifest|El nombre que asigne al archivo .imagemanifest generado. Esto también puede incluir una ruta de acceso absoluta o relativa para crear el archivo en una ubicación diferente. El nombre predeterminado coincide con el nombre del ensamblado.<br /><br /> Predeterminado: \<Directorio actual >\\< ensamblado\>.imagemanifest|Optional|  
 |/guidName|El nombre para el símbolo GUID para todas las imágenes en el manifiesto generado.<br /><br /> Predeterminado: AssetsGuid|Optional|  
-|/rootPath|La ruta de acceso raíz que debe eliminarse antes de crear los URI de recurso administrado. (Esta marca es ayudar con los casos donde la herramienta obtiene la ruta de acceso relativa de URI incorrecto, por lo que los recursos no pueda cargarse).<br /><br /> Valor predeterminado: \<directorio actual >|Optional|  
+|/rootPath|La ruta de acceso raíz que debe eliminarse antes de crear los URI de recurso administrado. (Esta marca es ayudar con los casos donde la herramienta obtiene la ruta de acceso relativa de URI incorrecto, por lo que los recursos no pueda cargarse).<br /><br /> Predeterminado: \<Directorio actual >|Optional|  
 |/recursive|Al establecer esta marca indica a la herramienta de forma recursiva todos los directorios de búsqueda en el argumento Resources. Si se omite esta marca dará como resultado una búsqueda top-multinivel sólo de directorios.|Optional|  
 |/isNative|Establezca esta marca cuando el argumento de ensamblado es una ruta de acceso para un ensamblado nativo. Esta marca se omite cuando el argumento de ensamblado es el nombre de un ensamblado administrado. (Consulte la sección Notas para obtener más información acerca de esta marca).|Optional|  
 |/newGuids|Al establecer esta marca indica a la herramienta para crear un nuevo valor para el símbolo GUID de las imágenes en lugar de combinar el uno del manifiesto existente.|Optional|  
@@ -47,9 +43,9 @@ El manifiesto de la herramienta de recursos es una aplicación de consola que to
   
  **Ejemplos**  
   
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
+-   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
 -   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
@@ -163,4 +159,3 @@ El manifiesto de la herramienta de recursos es una aplicación de consola que to
   <ImageLists />  
 </ImageManifest>  
 ```
-

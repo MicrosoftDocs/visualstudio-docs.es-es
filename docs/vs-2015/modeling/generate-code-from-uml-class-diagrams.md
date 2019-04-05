@@ -1,12 +1,9 @@
 ---
 title: Generar código a partir de diagramas de clases UML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates.TextTransformationDataCollectionEditor
@@ -18,13 +15,13 @@ ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a8108a552f21504714fea84bcb29194db4d947cf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999498"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generar código a partir de diagramas de clases UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +36,9 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
 
  Para más información sobre los diagramas de clases UML en Visual Studio, vea los temas siguientes:  
 
-- [Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)  
+- [Diagrama de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)  
 
-- [Diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagrama de clases de UML: directrices](../modeling/uml-class-diagrams-guidelines.md)  
 
   Para ver qué versiones de Visual Studio admiten diagramas de clases UML, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
@@ -93,9 +90,9 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
 |---------------------------------|----------------------------|-------------------------------|  
 |Clase|Clase|\<None > o<br /><br /> Clase de C#|  
 |Interfaz|Interfaz|\<None > o<br /><br /> Interfaz de C#|  
-|Enumeración|Enumeración|\<None > o<br /><br /> Enumeración de C#|  
-|Delegate|Clase|Delegado de C#|  
-|Struct|Clase|C# struct|  
+|Enumeración|Enumeración|\<None > o<br /><br /> C# enum|  
+|delegado|Clase|Delegado de C#|  
+|Struct|Clase|Struct de C#|  
 
 #### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Para establecer un estereotipo en un tipo u otro elemento  
 
@@ -170,7 +167,7 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
 
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Descripción**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |        nombre        |                                                                                                                                                                                                                                                  Nombre correspondiente a este enlace. Para invalidar un enlace heredado de un paquete contenedor o modelo, use el mismo nombre que el enlace que desea invalidar.                                                                                                                                                                                                                                                  |
+   |        Name        |                                                                                                                                                                                                                                                  Nombre correspondiente a este enlace. Para invalidar un enlace heredado de un paquete contenedor o modelo, use el mismo nombre que el enlace que desea invalidar.                                                                                                                                                                                                                                                  |
    |     Overwrite      |                                                                                                                                                                                                                                                                                                      Si es true, se sobrescribe cualquier código existente.                                                                                                                                                                                                                                                                                                       |
    |    Nombre de destino     | Nombre del archivo que se generó.<br /><br /> Puede insertar las expresiones en esta cadena como `{Name}` o `{Owner.Name}`. Por ejemplo, podría escribir: `{Owner.Name}_{Name}`. La expresión se evalúa en el elemento del modelo. Puede usar las propiedades de los elementos, pero no los métodos. Para buscar qué propiedades se pueden usar, examine las propiedades de tipos en **Microsoft.VisualStudio.Uml.\\ ***. \*\*Importante:* \* `{Name}` o `{Owner.Name}` puede usarse únicamente en el **nombre de destino** propiedad. Para cambiar el nombre de la clase generada, tiene que modificar la plantilla. Para obtener más información, consulte [escribir una plantilla de texto](#writing). |
    |    Ruta de acceso del proyecto    |                                                                      Especifica la ruta de acceso al proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contendrá los archivos de salida de la transformación. Use valores con tipo para crear un nuevo proyecto. Elija el botón de puntos suspensivos (**[...]** ) para seleccionar un proyecto existente.<br /><br /> Se creará un nuevo proyecto si no existe uno. Será un proyecto de biblioteca de clases de C#.<br /><br /> Para ello, debe escribir directamente el proyecto. Puede incluir macros de variable de entorno como %ProgramFiles% o %LocalAppData%.                                                                       |
@@ -240,9 +237,6 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
 - `<#= Expressions #>` se evalúa y se convierte en cadenas.  
 
 ## <a name="see-also"></a>Vea también  
- [Diagramas de clases UML: referencia](../modeling/uml-class-diagrams-reference.md)   
- [Diagramas de clases UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagrama de clases de UML: Referencia](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrama de clases de UML: Directrices](../modeling/uml-class-diagrams-guidelines.md)   
  [Generar archivos a partir de un modelo UML](../modeling/generate-files-from-a-uml-model.md)
-
-
-

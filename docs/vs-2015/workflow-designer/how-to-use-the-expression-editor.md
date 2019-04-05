@@ -1,11 +1,8 @@
 ---
-title: 'Cómo: usar el Editor de expresiones | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Utilice el Editor de expresiones | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
@@ -13,15 +10,15 @@ ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0c41de63b4163f1fd259ffa4adcef63cad92e351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181725"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999353"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Cómo: Utilizar el Editor de expresiones
+# <a name="how-to-use-the-expression-editor"></a>Filtrar Usar el Editor de expresiones
 El Editor de expresiones es un control de [!INCLUDE[wfd1](../includes/wfd1-md.md)] que se utiliza en muchas actividades de flujo de trabajo como un medio para especificar y evaluar estas expresiones. El Editor de expresiones proporciona una experiencia de edición IDE completa, que incluye IntelliSense, el uso de distintos colores, ParamInfo y subrayados ondulados de errores, entre otras características. El compilador valida la expresión una vez se ha escrito. Si la expresión no es válida, se muestra un icono de error. También se puede abrir el editor como un **Editor de expresiones** cuadro de diálogo.  
   
  Las expresiones son valores literales o de código de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] enlazadas a argumentos o propiedades. Contienen elementos de valor (p. ej. variables, constantes, literales, propiedades) que se combinan con operaciones para proporcionar un nuevo valor. Las expresiones se escriben con la sintaxis de VB.NET aunque la aplicación esté en un programa que use C#. Esto significa que la capitalización no importa, la comparación se realiza mediante un único signo ("=") en lugar de ("=="), los operadores booleanos son las palabras "y" y "o" en lugar de los símbolos "& &" y "&#124;&#124;", y **nada**  se utiliza en lugar de **null**. Para obtener más información sobre las expresiones y operadores en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] y ver algunos ejemplos, consulte [operadores y expresiones en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).  

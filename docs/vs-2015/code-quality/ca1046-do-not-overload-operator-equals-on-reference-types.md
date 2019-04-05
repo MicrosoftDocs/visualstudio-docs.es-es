@@ -1,14 +1,9 @@
 ---
-title: 'CA1046: No sobrecargar el operador de igualdad en los tipos de referencia | Microsoft Docs'
-ms.custom: ''
+title: 'CA1046: No sobrecargar el operador de igualdad en los tipos de referencia | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotOverloadOperatorEqualsOnReferenceTypes
 - CA1046
@@ -20,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ea32811cfd695e6d55ec635e2e4ea5b4feded05a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b5543b2d968e96cbd5bf8c9f6dd015b2acf31b4c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919382"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997214"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: No sobrecargar el operador de igualdad en los tipos de referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,10 +61,7 @@ ms.locfileid: "49919382"
 **b y a son ==? ¿No**
 **c y a son ==? Sí**
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1013: El operador de sobrecarga es igual que la suma y resta de sobrecarga](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+ [CA1013: Operador de sobrecarga es igual al sobrecargar la suma y resta](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Vea también
  <xref:System.Object.Equals%2A?displayProperty=fullName> [Operadores de igualdad](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
-
-
-

@@ -1,32 +1,29 @@
 ---
-title: 'Cómo: abrir un modelo desde un archivo de código de programa | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Abrir un modelo desde un archivo de código de programa | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: d7d68697-5418-4263-bdb2-48401924ea71
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d40becc02333a95801794bd20f2b2abd45043c08
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940871"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999630"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Cómo: Abrir un modelo desde un archivo en el código del programa
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Filtrar Abrir un modelo desde un archivo en el código del programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede abrir los modelos DSL en cualquier aplicación.  
   
  Desde un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión, puede usar ModelBus para este propósito. ModelBus proporciona un mecanismo estándar para hacer referencia a un modelo o elementos en un modelo y para buscar el modelo si se ha movido. Para obtener más información, consulte [integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
   
-## <a name="target-framework"></a>Plataforma de destino  
+## <a name="target-framework"></a>Versión de .NET Framework de destino  
  Establecer el **.NET framework de destino** de su proyecto de aplicación para **.NET Framework 4**.  
   
 #### <a name="to-set-the-target-framework"></a>Para establecer la plataforma de destino  
@@ -47,7 +44,7 @@ Puede abrir los modelos DSL en cualquier aplicación.
   
     -   Si no ve esto en el **.NET** pestaña en el **agregar referencias** cuadro de diálogo, haga clic en el **examinar** pestaña y vaya a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
--   El ensamblado DSL, que encontrará en la carpeta bin del proyecto DSL. Su nombre suele tener el formato: *suempresa*. *Convertirá*`.Dsl.dll`.  
+-   El ensamblado DSL, que encontrará en la carpeta bin del proyecto DSL. Su nombre es normalmente del formulario: *Suempresa*. *Convertirá*`.Dsl.dll`.  
   
 ## <a name="important-classes-in-the-dsl"></a>Clases importantes en el DSL  
  Antes de poder escribir el código que lee su DSL, debe saber los nombres de algunas de las clases generadas por su DSL. En la solución DSL, abra el **Dsl** del proyecto y busque en el **GeneratedCode** carpeta. Como alternativa, haga doble clic en el ensamblado del DSL en el proyecto **referencias**y abra el espacio de nombres DSL **Examinador de objetos**.  
@@ -141,6 +138,3 @@ try
 catch (System.IO.IOException ex)  
 { ... }  
 ```
-
-
-

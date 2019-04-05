@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 7731526b09ab3014b9f3256ee1f4e4d0dd653a34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ec809e8733542e2e3c00ec11c15666d0d1c34b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999614"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Cómo: Usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Filtrar Usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede implementar una aplicación que tenga como destino varias versiones de .NET Framework mediante el uso de la tecnología de implementación de ClickOnce. Esto requiere que generar y actualizar los manifiestos de aplicación e implementación.  
@@ -53,7 +48,7 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Para generar los manifiestos de aplicación e implementación  
   
--   Usar el Asistente para publicación o en la página Publicar del Diseñador de proyectos para publicar la aplicación y generar la aplicación y los archivos de manifiesto de implementación. Para obtener más información, consulte [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) o [publicar Page, Project Designer](../ide/reference/publish-page-project-designer.md).  
+-   Usar el Asistente para publicación o en la página Publicar del Diseñador de proyectos para publicar la aplicación y generar la aplicación y los archivos de manifiesto de implementación. Para obtener más información, vea [Cómo: Publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) o [publicar Page, Project Designer](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Para cambiar el manifiesto de implementación para obtener una lista de las varias versiones de .NET Framework  
   
@@ -65,11 +60,11 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
   
     |Versión de .NET Framework|XML|  
     |----------------------------|---------|  
-    |Cliente 4|\<Framework targetVersion = "4.0" profile = supportedRuntime "Cliente" = "4.0.30319" / >|  
-    |4 completo|\<Framework targetVersion = "4.0" profile = supportedRuntime "Full" = "4.0.30319" / >|  
-    |3.5 cliente|\<Framework targetVersion = "3.5" profile = supportedRuntime "Cliente" = "2.0.50727" / >|  
-    |3.5 completa|\<Framework targetVersion = "3.5" profile = supportedRuntime "Full" = "2.0.50727" / >|  
-    |3.0|\<Framework targetVersion = supportedRuntime "3.0" = "2.0.50727" / >|  
+    |4, cliente|\<Framework targetVersion = "4.0" profile = supportedRuntime "Cliente" = "4.0.30319" / >|  
+    |4, completa|\<Framework targetVersion = "4.0" profile = supportedRuntime "Full" = "4.0.30319" / >|  
+    |3.5, cliente|\<Framework targetVersion = "3.5" profile = supportedRuntime "Cliente" = "2.0.50727" / >|  
+    |3.5, completa|\<Framework targetVersion = "3.5" profile = supportedRuntime "Full" = "2.0.50727" / >|  
+    |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|  
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Para cambiar el archivo app.config para obtener una lista de versiones compatibles del runtime de .NET Framework  
   
@@ -81,10 +76,10 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
   
     |Versión del runtime de .NET framework|XML|  
     |------------------------------------|---------|  
-    |Cliente 4|\<supportedRuntime versión = "v4.0.30319" sku = ". NETFramework, Version = v4.0, perfil = Client "/ >|  
-    |4 completo|\<supportedRuntime versión = "v4.0.30319" sku = ". NETFramework, Version = v4.0 "/ >|  
-    |3.5 completa|\<version="v2.0.50727"/ supportedRuntime >|  
-    |3.5 cliente|\<supportedRuntime versión = "v2.0.50727" sku = "Client" / >|  
+    |4, cliente|\<supportedRuntime versión = "v4.0.30319" sku = ". NETFramework, Version = v4.0, perfil = Client "/ >|  
+    |4, completa|\<supportedRuntime versión = "v4.0.30319" sku = ". NETFramework, Version = v4.0 "/ >|  
+    |3.5, completa|\<version="v2.0.50727"/ supportedRuntime >|  
+    |3.5, cliente|\<supportedRuntime versión = "v2.0.50727" sku = "Client" / >|  
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Para cambiar el manifiesto de aplicación para marcar los ensamblados dependientes como ensamblados de .NET Framework  
   
@@ -108,7 +103,7 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Para actualizar y volver a firmar la aplicación y la implementación de manifiestos  
   
--   Actualizar y volver a firmar los manifiestos de aplicación e implementación. Para obtener más información, consulta [Cómo: Volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Actualizar y volver a firmar los manifiestos de aplicación e implementación. Para obtener más información, vea [Cómo: Volver a firmar aplicaciones y manifiestos de implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
@@ -116,6 +111,3 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
  [\<dependencia > elemento](../deployment/dependency-element-clickonce-application.md)   
  [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [Esquema de los archivos de configuración](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)
-
-
-

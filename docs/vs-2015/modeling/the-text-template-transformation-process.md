@@ -1,25 +1,22 @@
 ---
 title: El proceso de transformación de plantillas de texto | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203780"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998851"
 ---
 # <a name="the-text-template-transformation-process"></a>El proceso de transformación de las plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +38,7 @@ El proceso de transformación de plantillas de texto toma un archivo de plantill
 ## <a name="the-engine"></a>El motor de  
  El motor recibe la plantilla como una cadena desde el host, que controla todos los archivos que se usan en el proceso de transformación. El motor de pregunta, a continuación, el host para localizar los procesadores de directivas personalizadas y otros aspectos del entorno. El motor, a continuación, compila y ejecuta la clase de transformación generada. El motor devuelve el texto generado para el host, que normalmente se guarda el texto en un archivo.  
   
-## <a name="the-host"></a>El Host  
+## <a name="the-host"></a>El host  
  El host es responsable de todo lo que se relaciona con el entorno fuera del proceso de transformación, incluidos los siguientes:  
   
 -   Buscar archivos de texto y binarios solicitados por el motor o un procesador de directivas. El host puede buscar los directorios y la caché global de ensamblados para buscar ensamblados. El host puede localizar el código de procesador de directivas personalizadas para el motor. El host también puede buscar y leer archivos de texto y devolver su contenido como cadenas.  
@@ -68,6 +65,3 @@ El proceso de transformación de plantillas de texto toma un archivo de plantill
  `<#@ import namespace="System.Text" #>`  
   
  El procesador de directivas estándar convierte esto a un `using` instrucción en la clase de transformación generada. A continuación, puede usar el `StringBuilder` clase en el resto del código de plantilla sin calificar como `System.Text.StringBuilder`.
-
-
-

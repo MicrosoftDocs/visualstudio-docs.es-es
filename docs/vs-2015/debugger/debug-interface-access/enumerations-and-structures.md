@@ -1,14 +1,9 @@
 ---
 title: Estructuras y enumeraciones | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: d17eed2d-d8fd-4a47-82d3-8125c0624010
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3bc1f7adf58e4218c823d359e93b624b8328ac0a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 466b04d87c9493c2c73677a0b96245211157e896
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998395"
 ---
 # <a name="enumerations-and-structures"></a>Enumeraciones y estructuras
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -91,6 +86,3 @@ Estas son las enumeraciones y estructuras utilizadas por el SDK de DIA.
   
 ## <a name="see-also"></a>Vea también  
  [Referencia](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
-
-
-

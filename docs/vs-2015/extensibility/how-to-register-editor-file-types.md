@@ -1,28 +1,23 @@
 ---
-title: 'Cómo: registrar tipos de archivo del Editor | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Registrar tipos de archivo del Editor | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
 ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 39b1cde8dec71df9cb85bf737c23c883fbdcd615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777271"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999467"
 ---
-# <a name="how-to-register-editor-file-types"></a>Cómo: registrar tipos de archivo del Editor
+# <a name="how-to-register-editor-file-types"></a>Filtrar Registrar tipos de archivo del Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es la manera más fácil para registrar los tipos de archivo del editor mediante el uso de los atributos de registro proporcionados como parte de la [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] clases de managed package framework (MPF). Si está implementando el paquete en el modo nativo [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], también puede escribir un script de registro que registra el editor y las extensiones asociadas.  
@@ -133,4 +128,3 @@ Es la manera más fácil para registrar los tipos de archivo del editor mediante
     ```  
   
      Las cadenas del GUID se definen en el archivo Resource.h del proyecto BscEdit.
-

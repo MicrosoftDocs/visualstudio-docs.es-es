@@ -1,28 +1,23 @@
 ---
-title: 'Tutorial: Mostrar etiquetas inteligentes | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Mostrar etiquetas inteligentes | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996846"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Tutorial: Mostrar etiquetas inteligentes
-Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [Tutorial: Mostrar sugerencias de bombilla](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Las etiquetas inteligentes son etiquetas de texto que se expanden para mostrar un conjunto de acciones. Por ejemplo, en un proyecto de Visual Basic o Visual C#, aparece una línea roja debajo de una palabra cuando cambia el nombre de un identificador como un nombre de variable. Cuando mueve el puntero sobre el subrayado, se muestra un botón junto al puntero. Si hace clic en el botón, se muestra una acción sugerida, por ejemplo, **Cambiar nombre de IsRead a IsReady**. Si hace clic en la acción, todas las referencias a **IsRead** en el proyecto cambian su nombre a **IsReady**.  
   
@@ -31,7 +26,7 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [
 > [!NOTE]
 >  Otros tipos de etiquetas pueden implementarse de forma similar.  
   
- El siguiente tutorial muestra cómo crear una etiqueta inteligente que aparece en la palabra actual y le sugiere dos acciones: **Convertir a mayúsculas** y **Convertir a minúsculas**.  
+ El siguiente tutorial muestra cómo crear una etiqueta inteligente que aparece en la palabra actual y tiene dos acciones sugeridas: **Convertir a mayúsculas** y **convertir a minúsculas**.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para seguir este tutorial, debe instalar el SDK de Visual Studio. Para obtener más información, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
@@ -90,7 +85,7 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  Implemente <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> para que la etiqueta se cree para la palabra actual. (Este método también llama a un método privado `GetSmartTagActions`, que se explica más adelante).  
+8.  Implemente <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> para que la etiqueta se cree para la palabra actual. (Este método también llama a un método privado `GetSmartTagActions` , que se explica más adelante).  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -100,7 +95,7 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [
      [!code-csharp[VSSDKSmartTagTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#8)]
      [!code-vb[VSSDKSmartTagTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#8)]  
   
-10. Declare el evento `SmartTagsChanged`.  
+10. Declare el evento `SmartTagsChanged` .  
   
      [!code-csharp[VSSDKSmartTagTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#9)]
      [!code-vb[VSSDKSmartTagTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#9)]  
@@ -185,7 +180,7 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [
   
      Debe aparecer un botón junto al puntero.  
   
-5.  Al hacer clic en el botón, deben aparecer dos acciones sugeridas: **Convertir a mayúsculas** y **Convertir a minúsculas**. Si hace clic en la primera acción, todo el texto de la palabra actual se debe convertir a mayúsculas. Si hace clic en la segunda acción, todo el texto de la palabra actual se debe convertir a minúsculas.  
+5.  Al hacer clic en el botón, se deben mostrar dos acciones sugeridas: **Convertir a mayúsculas** y **convertir a minúsculas**. Si hace clic en la primera acción, todo el texto de la palabra actual se debe convertir a mayúsculas. Si hace clic en la segunda acción, todo el texto de la palabra actual se debe convertir a minúsculas.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
