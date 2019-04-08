@@ -5,6 +5,12 @@ title: Productos de Visual Studio | Microsoft Docs
 description: Explore la familia de productos de Visual Studio.
 ms.topic: landing-page
 searchScope: []
+ms.openlocfilehash: 77d03ae304886be2e6c588ccea1c6e8be97efb15
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59017997"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -18,13 +24,13 @@ searchScope: []
                         <a href="#products1"></a>
                         <ul id="products1" class="cardsC cols cols3">
                             <li>
-                                <a href="/visualstudio/" title="Visual Studio">
+                                <a href="/visualstudio/" title="Programa para la mejora">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-ide.svg" src="./images/vs-ide.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-ide-2019.svg" src="./images/vs-ide-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,12 +49,12 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac-2019.svg" src="./images/vs-mac-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio para Mac</h3>
-                                                    <p>Compile aplicaciones y juegos con Mac para la nube, iOS, Android, macOS y dispositivos portables</p>
+                                                    <p>Desarrolle aplicaciones y juegos para iOS, Android, equipos de escritorio y la Web con .NET.</p>
                                                 </div>
                                             </div>
                                         </div>

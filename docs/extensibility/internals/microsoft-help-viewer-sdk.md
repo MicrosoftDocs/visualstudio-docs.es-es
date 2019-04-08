@@ -63,7 +63,7 @@ Cadenas de idioma compatible (no distingue mayúsculas de minúsculas):
 
 -   javascript
 
--   CSharp o c#
+-   CSharp o C#
 
 -   cplusplus o Visual c++ o c ++
 

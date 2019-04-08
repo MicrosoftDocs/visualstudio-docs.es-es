@@ -1,25 +1,22 @@
 ---
 title: Modelar la aplicación&#39;arquitectura s | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 ms.assetid: aedce746-9df5-49e1-9662-67eb1b83d313
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 770f93c0ede93201ee873820d6701356837f4ea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803856"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999357"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar la aplicación&#39;arquitectura s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +79,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
   El nivel de detalle que debe usarse en los requisitos o en un modelo arquitectónico dependerá de la escala del proyecto y del tamaño y distribución del equipo. Un equipo reducido que trabaje en un proyecto pequeño podría simplemente trazar un diagrama de clases de los conceptos de negocio y algunos modelos de diseño; un proyecto grande distribuido en varias regiones necesitaría mucho más detalle.  
   
 ##  <a name="BigDecisions"></a> Patrones de arquitectura  
- En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:  
+  En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:  
   
 - Las tecnologías de base; por ejemplo, la elección entre una base de datos y un sistema de archivos, la elección entre una aplicación de red y un cliente web, etc.  
   
@@ -161,7 +158,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
 ### <a name="decomposing-a-component-into-parts"></a>Descomponer un componente en elementos  
  Puede aplicar el procedimiento que se describe en las secciones anteriores a cada componente.  
   
- Dentro de cada componente, puede mostrar sus componentes secundarios como elementos. Un elemento es en realidad un atributo de su componente primario, que es un tipo de clase. Cada elemento tiene su propio tipo, que puede ser un componente. Puede colocar este componente en un diagrama y mostrar sus elementos. Para obtener más información, consulte [diagramas de componentes UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md).  
+ Dentro de cada componente, puede mostrar sus componentes secundarios como elementos. Un elemento es en realidad un atributo de su componente primario, que es un tipo de clase. Cada elemento tiene su propio tipo, que puede ser un componente. Puede colocar este componente en un diagrama y mostrar sus elementos. Para obtener más información, consulte [diagramas de componentes UML: Directrices](../modeling/uml-component-diagrams-guidelines.md).  
   
  Es útil aplicar esta técnica a todo el sistema. Dibújelo como un componente único y muestre sus componentes principales como elementos. Esto le ayudará a identificar claramente las interfaces de su sistema en el mundo externo.  
   
@@ -197,9 +194,9 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
   Por ejemplo, en un sistema de ventas basado en web, el modelo de requisitos podría definir la compra de un cliente como un caso de uso. Puede crear un diagrama de secuencia para mostrar las interacciones que el cliente tiene con los componentes en la capa de la presentación y para mostrar las interacciones que tiene con los componentes de contabilidad y almacenamiento.  
   
 ### <a name="identifying-the-initiating-events"></a>Identificar los eventos de iniciación  
- El trabajo realizado por la mayor parte de los sistemas de software puede dividirse cómodamente en las respuestas que da a diferentes entradas o eventos. El evento de iniciación puede ser uno de los eventos siguientes:  
+  El trabajo realizado por la mayor parte de los sistemas de software puede dividirse cómodamente en las respuestas que da a diferentes entradas o eventos. El evento de iniciación puede ser uno de los eventos siguientes:  
   
--   La primera acción de un caso de uso. Podría aparecer en el modelo de requisitos como un paso de un caso de uso o una acción de un diagrama de actividades. Para obtener más información, [diagramas de casos de uso de UML: instrucciones](../modeling/uml-use-case-diagrams-guidelines.md) y [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md).  
+-   La primera acción de un caso de uso. Podría aparecer en el modelo de requisitos como un paso de un caso de uso o una acción de un diagrama de actividades. Para obtener más información, [diagramas de casos de uso de UML: Directrices](../modeling/uml-use-case-diagrams-guidelines.md) y [diagramas de actividades UML: Directrices](../modeling/uml-activity-diagrams-guidelines.md).  
   
 -   Un mensaje en una interfaz programática. Si el sistema que está desarrollando es un componente de un sistema mayor, debería describirse como una operación de una de las interfaces del componente. Consulte [componentes y sus Interfaces](#Components).  
   
@@ -210,9 +207,9 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
   
  Dibuje una línea de vida para cada instancia del componente que tome parte en una secuencia normal. En algunos casos, podría haber varias instancias de cada tipo. Si ha descrito todo su sistema como un único componente, deberá haber una línea de vida por cada elemento que contenga.  
   
- Para obtener más información, consulte [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Para obtener más información, consulte [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).  
   
- Los diagramas de actividades también resultan útiles en algunos casos. Por ejemplo, si los componentes tienen un flujo de datos continuo, puede describirlo como un flujo de objeto. Si el componente tiene un algoritmo complejo, puede describirlo como un flujo de control. Asegúrese de dejar claro qué componente realiza cada acción, por ejemplo, mediante comentarios. Para obtener más información, consulte [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md).  
+ Los diagramas de actividades también resultan útiles en algunos casos. Por ejemplo, si los componentes tienen un flujo de datos continuo, puede describirlo como un flujo de objeto. Si el componente tiene un algoritmo complejo, puede describirlo como un flujo de control. Asegúrese de dejar claro qué componente realiza cada acción, por ejemplo, mediante comentarios. Para obtener más información, consulte [diagramas de actividades UML: Directrices](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ### <a name="specify-the-operations"></a>Especificar las operaciones  
  En los diagramas se muestran las operaciones que realiza cada componente; estas operaciones se representan como mensajes en un diagrama de secuencia o como acciones en un diagrama de actividades.  
@@ -265,6 +262,3 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
  [Requisitos de usuario del modelo](../modeling/model-user-requirements.md)   
  [Desarrollar pruebas en un modelo](../modeling/develop-tests-from-a-model.md)   
  [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)
-
-
-

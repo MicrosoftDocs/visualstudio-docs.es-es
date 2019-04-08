@@ -152,7 +152,7 @@ Puede obtener la posición de un punto de seguimiento o el intervalo de un inter
 
 #### <a name="content-types"></a>Tipos de contenido
 
-Tipos de contenido son un mecanismo para definir los distintos tipos de contenido. Un tipo de contenido puede ser un tipo de archivo, como "text", "code" o "binary" o un tipo de tecnología, como "xml", "vb" o "c#". Por ejemplo, la palabra "using" es una palabra clave en C# y Visual Basic, pero no en otros lenguajes de programación. Por lo tanto, la definición de esta palabra clave estaría limitada a los tipos de contenido de "c#" y "vb".
+Tipos de contenido son un mecanismo para definir los distintos tipos de contenido. Un tipo de contenido puede ser un tipo de archivo, como "text", "code" o "binary" o un tipo de tecnología, como "xml", "vb" o "C#". Por ejemplo, la palabra "using" es una palabra clave en C# y Visual Basic, pero no en otros lenguajes de programación. Por lo tanto, la definición de esta palabra clave estaría limitada a los tipos de contenido de "C#" y "vb".
 
 Tipos de contenido se usan como un filtro para los elementos gráficos y otros elementos del editor. Muchas de las características del editor y puntos de extensión se definen por cada tipo de contenido. Por ejemplo, color de texto es diferente para los archivos de texto sin formato, archivos XML y archivos de código fuente de Visual Basic. Los búferes de texto normalmente se asignan a un tipo de contenido cuando se crean y se puede cambiar el tipo de contenido de un búfer de texto.
 
