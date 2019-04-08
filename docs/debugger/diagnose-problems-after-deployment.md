@@ -1,5 +1,5 @@
 ---
-title: Diagnosticar problemas después de la implementación | Microsoft Docs
+title: Diagnóstico de problemas tras la implementación | Microsoft Docs
 ms.date: 04/10/2018
 ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
@@ -8,20 +8,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.openlocfilehash: 4f78cffeb5cc538cfa8fa80edf35ca1390ebbc65
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316892"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857780"
 ---
-# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnosticar problemas después de la implementación con IntelliTrace (C#, Visual Basic)
+# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnóstico de problemas después de la implementación con IntelliTrace (C# y Visual Basic)
 
 Para diagnosticar problemas en la aplicación web ASP.NET después de la implementación con IntelliTrace, incluya la información de compilación en su versión para que Visual Studio pueda encontrar automáticamente los archivos de código fuente y archivos de símbolos correctos que se necesitan para depurar el registro de IntelliTrace.
 
  Si usa Microsoft Monitoring Agent para controlar IntelliTrace, también necesitará configurar la supervisión de rendimiento de la aplicación en el servidor web. Esto registra eventos de diagnóstico mientras se ejecuta la aplicación y guarda los eventos en un archivo de registro de IntelliTrace. Después, puede consultar los eventos en Visual Studio Enterprise (pero no en las versiones Professional ni Community), ir al código donde se produjo un evento, ver los valores registrados en ese momento y avanzar o retroceder en el código ejecutado. Después de identificar y corregir el problema, repita el ciclo para compilar, lanzar y supervisar la aplicación con el objetivo de solucionar posibles problemas futuros con mayor rapidez.
 
- ![Código, compilar, liberar, supervisar, diagnosticar, corregir](../debugger/media/ffr_cycle.png "FFR_Cycle")
+ ![Codificación, compilación, publicación, supervisión, diagnóstico y corrección](../debugger/media/ffr_cycle.png "FFR_Cycle")
 
  **Necesitará:**
 
@@ -40,29 +40,29 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
 ####  <a name="TFS2017"></a> Azure DevOps y Team Foundation Server 2017
 
-Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado y, a continuación, se quitan. Para depurar aplicaciones web ASP.NET después de la implementación, use uno de los métodos siguientes:
+Visual Studio 2017 y las versiones posteriores no incluyen el archivo *BuildInfo.config*, ya que quedó en desuso y, por tanto, se eliminó. Para depurar aplicaciones web ASP.NET después de la implementación, use uno de los métodos siguientes:
 
 * Para la implementación en Azure, use [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
-* Si necesita usar IntelliTrace, abra el proyecto en Visual Studio y cargar los archivos de símbolos de la compilación correspondiente. Puede cargar los archivos de símbolos desde la **módulos** ventana o mediante la configuración de símbolos en **herramientas** > **opciones** > **depuración**   >  **Símbolos**.
+* Si necesita usar IntelliTrace, abra el proyecto en Visual Studio y cargue los archivos de símbolos desde la compilación correspondiente. Puede cargar los archivos de símbolos desde la ventana **Módulos** o mediante la configuración de los símbolos en **Herramientas** > **Opciones** > **Depuración**   >  **Símbolos**.
 
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
- Configure su canalización de compilación para agregar las ubicaciones de su origen, compilación y símbolos para el manifiesto de compilación (archivo BuildInfo.config). Team Foundation Build crea automáticamente el archivo y lo copia en la carpeta de salida del proyecto.
+ Configure la canalización de compilación para agregar las ubicaciones del código fuente, la compilación y los símbolos al manifiesto de compilación (archivo BuildInfo.config). Team Foundation Build crea automáticamente el archivo y lo copia en la carpeta de salida del proyecto.
 
-1.  [La canalización de compilación de editar o crear una nueva canalización de compilación.](/azure/devops/pipelines/get-started-designer?view=vsts)
+1.  [Edite la canalización de compilación o cree una.](/azure/devops/pipelines/get-started-designer?view=vsts)
 
-     ![Creación de vista de canalización en TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+     ![Visualización de la canalización de compilación en TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
 2.  Elija la plantilla predeterminada (TfvcTemplate.12.xaml) o su propia plantilla personalizada.
 
-     ![Elija la plantilla de proceso de compilación &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
+     ![Elección de la plantilla de proceso de compilación &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
 
 3.  Especifique dónde guardar el archivo de símbolos (PDB) para indizar el origen automáticamente.
 
      Si usa una plantilla personalizada, asegúrese de que la plantilla tiene una actividad para indizar el origen. Posteriormente, podrá agregar un argumento de MSBuild para especificar dónde quiere guardar los archivos de símbolos.
 
-     ![Configurar la ruta de acceso de símbolos en la canalización de compilación TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
+     ![Configuración de la ruta de acceso a símbolos en la canalización de compilación en TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
      Para obtener más información sobre los símbolos, vea [Publicar datos de símbolos](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
 
@@ -76,7 +76,7 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
 
      **/p:BuildSymbolStorePath=**\<*ruta a símbolos*>
 
-     ![Incluir información del servidor de compilación en la definición de compilación TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
+     ![Incorporación de la información del servidor de compilación en la definición de compilación en TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
 
      Y agregue estas líneas al archivo de proyecto web (.csproj, .vbproj):
 
@@ -90,14 +90,14 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
 
 6.  Ejecute una nueva compilación.
 
-    Vaya a [paso 2: publicar la aplicación](#DeployRelease)
+    Vaya al [Paso 2: Lanzamiento de la aplicación](#DeployRelease).
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 o 2010
  Haga lo siguiente para crear automáticamente el manifiesto de compilación (archivo BuildInfo.config) para el proyecto y copiar el archivo en la carpeta de salida del proyecto. El archivo aparece como "*NombreDelProyecto*.BuildInfo.config" en la carpeta de salida, pero tendrá el nombre "BuildInfo.config" en la carpeta de implementación después de publicar la aplicación.
 
 1.  Instale Visual Studio 2013 (cualquier edición) en el servidor de Team Foundation Build.
 
-2.  En la canalización de compilación, especifique dónde guardar los símbolos para indizar el origen automáticamente.
+2.  En la canalización de compilación, especifique dónde guardar los símbolos para indexar el origen automáticamente.
 
      Si usa una plantilla personalizada, asegúrese de que la plantilla tiene una actividad para indizar el origen.
 
@@ -115,7 +115,7 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
 
 4.  Ejecute una nueva compilación.
 
-    Vaya a [paso 2: publicar la aplicación](#DeployRelease)
+    Vaya al [Paso 2: Lanzamiento de la aplicación](#DeployRelease).
 
 ###  <a name="ManualBuild"></a> Crear el manifiesto de compilación para una compilación manual con Visual Studio
  Haga lo siguiente para crear automáticamente el manifiesto de compilación (archivo BuildInfo.config) para el proyecto y copiar el archivo en la carpeta de salida del proyecto. El archivo aparece como "*NombreDelProyecto*.BuildInfo.config" en la carpeta de salida, pero tendrá el nombre "BuildInfo.config" en la carpeta de implementación después de publicar la aplicación.
@@ -138,11 +138,11 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
     <!-- **************************************************** -->
     ```
 
-3.  Proteja el archivo de proyecto actualizado.
+3.  Inserte en el repositorio el archivo de proyecto actualizado.
 
 4.  Ejecute una nueva compilación.
 
-    Vaya a [paso 2: publicar la aplicación](#DeployRelease)
+    Vaya al [Paso 2: Lanzamiento de la aplicación](#DeployRelease).
 
 ###  <a name="MSBuild"></a> Crear el manifiesto de compilación para una compilación manual con MSBuild.exe
  Agregue estos argumentos de compilación cuando ejecute una compilación:
@@ -174,15 +174,15 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
 
      Antes de realizar cambios, confirme que tiene el código fuente correcto. Si usa bifurcaciones, podría estar trabajando en una bifurcación distinta de donde Visual Studio encuentra el código fuente correspondiente, como su bifurcación de versión.
 
-     ![Abrir solución desde el registro de IntelliTrace](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
+     ![Apertura de la solución desde el registro de IntelliTrace](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
 
      Si tiene un área de trabajo asignada a esta solución o proyecto, Visual Studio seleccionará dicha área de trabajo para colocar el código fuente encontrado.
 
-     ![Abrir desde el control de código fuente para el área de trabajo asignada](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
+     ![Apertura del control de código fuente para el área de trabajo asignada](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
 
      De lo contrario, elija otra área de trabajo o cree una nueva. Visual Studio asignará la bifurcación completa a esta área de trabajo.
 
-     ![Abrir desde el control de código fuente &#45; crear nueva área de trabajo](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
+     ![Apertura del control de código fuente &#45; creación del área de trabajo](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
 
      Para crear un área de trabajo con asignaciones específicas o un nombre distinto al del equipo, elija **Administrar**.
 
@@ -194,7 +194,7 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
 
 1.  En **Infracciones de rendimiento**, consulte los eventos de rendimiento registrados, el tiempo de ejecución total y otra información del evento. A continuación, profundice más en los métodos que se llamaron durante un evento de rendimiento específico.
 
-     ![Ver detalles de eventos de rendimiento](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
+     ![Visualización de los detalles del evento de rendimiento](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
      También puede hacer doble clic en el evento.
 
@@ -204,13 +204,13 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
 
      Expanda esa llamada para revisar todas las llamadas anidadas y los valores que se registraron en ese punto en el tiempo. Después, inicie la depuración desde esa llamada.
 
-     ![Iniciar la depuración desde la llamada al método](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
+     ![Inicio de la depuración desde una llamada al método](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
 
      También puede hacer simplemente doble clic en la llamada.
 
      Si el método está en el código de aplicación, Visual Studio va a ese método.
 
-     ![Vaya al código de aplicación de eventos de rendimiento](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
+     ![Consulta del código de la aplicación a partir del evento de rendimiento](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
 
      Ahora puede revisar otros valores registrados, la pila de llamadas, recorrer el código o utilizar la ventana **IntelliTrace** para [moverse hacia atrás o hacia delante “en el tiempo” por otros métodos](../debugger/intellitrace.md) a los que se llamó durante este evento de rendimiento.
 
@@ -222,13 +222,13 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
 
 1.  En **Datos de excepción**, revise los eventos de excepciones registrados, sus tipos, mensajes y cuándo se produjeron las excepciones. Para profundizar en el código, inicie la depuración desde el evento más reciente de un grupo de excepciones.
 
-     ![Iniciar la depuración desde eventos de excepción](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
+     ![Inicio de la depuración a partir del evento de excepción](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
      También puede hacer doble clic en el evento.
 
      Si se produjo una excepción en el código de la aplicación, Visual Studio va al lugar donde se ha producido la excepción.
 
-     ![Vaya a código de la aplicación desde un evento de excepción](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
+     ![Consulta del código de la aplicación desde un evento de excepción](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
 
      Ahora puede revisar otros valores registrados, la pila de llamadas o utilizar la ventana **IntelliTrace** para [moverse hacia atrás o hacia delante “en el tiempo” por otros eventos registrados](../debugger/intellitrace.md), código relacionado y los valores registrados en esos puntos en el tiempo.
 
@@ -238,13 +238,13 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
 
 -   [Más información sobre este código](../ide/find-code-changes-and-other-history-with-codelens.md). Para buscar referencias a este código, su historial de cambios, errores relacionados, elementos de trabajo, revisiones de código o pruebas unitarias (todo ello sin salir del editor de código), use los indicadores de CodeLens en el editor.
 
-     ![CodeLens &#45; ver referencias a este código](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
+     ![CodeLens &#45; Visualización de las referencias a este código](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
 
-     ![CodeLens &#45; Ver historial para este código de cambios](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
+     ![CodeLens &#45; Visualización del historial de cambios de este código](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
 
 -   [Asignar su lugar en el código durante la depuración.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Para realizar un seguimiento visual de los métodos llamados durante la sesión de depuración, asigne la pila de llamadas.
 
-     ![Asignar la pila de llamadas durante la depuración](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
+     ![Asignación de la pila de llamadas mientras se realiza la depuración](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
 
 ###  <a name="FAQ"></a> Preguntas y respuestas
 
@@ -262,7 +262,7 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
 
 3.  Compruebe que el archivo contenga la información necesaria:
 
-- **ProjectName**
+- **NombreDelProyecto**
 
    El nombre del proyecto en Visual Studio. Por ejemplo:
 
@@ -316,7 +316,7 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
     </SourceControl>
     ```
 
-- **Compilación**
+- **Compilar**
 
    Información sobre el sistema de compilación, ya sea `"TeamBuild"` o `"MSBuild"`, y las siguientes propiedades obligatorias:
 
@@ -360,14 +360,14 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
 ####  <a name="IneligibleWorkspace"></a> P: ¿Por qué dice Visual Studio que el área de trabajo seleccionada no es válida?
  **R:** El área de trabajo seleccionada no tiene ninguna asignación entre la carpeta de control de código fuente y una carpeta local. Para crear una asignación para esta área de trabajo, elija **Administrar**. De lo contrario, elija un área de trabajo ya asignada o cree una nueva.
 
- ![Abrir desde el control de código fuente con ninguna área de trabajo asignada](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
+ ![Apertura del control de código fuente sin área de trabajo asignada](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
 ####  <a name="ChooseTeamProject"></a> P: ¿Por qué no se puede continuar hasta elegir una colección de equipo o una colección distinta?
  **R:** Esto puede ocurrir por cualquiera de las siguientes razones:
 
 -   Visual Studio no está conectado a TFS.
 
-     ![Abrir desde el control de código fuente &#45; no conectado](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
+     ![Apertura del control de código fuente &#45; sin conexión](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
 
 -   Visual Studio no encontró la solución o el proyecto en la colección de equipo actual.
 
@@ -377,12 +377,12 @@ Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado 
 
      Puede que el servidor TFS especificado ya no tenga el código fuente coincidente o que este ni siquiera exista, quizá porque se migró a un nuevo servidor TFS. Si el servidor TFS especificado no existe, puede que Visual Studio agote el tiempo de espera tras un minuto aproximadamente y después le pida que se conecte a otra colección. Para continuar, conéctese al servidor TFS correcto.
 
-     ![Abrir desde el control de código fuente &#45; migrado](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
+     ![Apertura del control de código fuente &#45; migrado](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> P: ¿Qué es un área de trabajo?
  **R:** El [área de trabajo almacena una copia del código fuente](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) para poder desarrollarlo y probarlo por separado antes de proteger el trabajo. Si aún no tiene un área de trabajo asignada específicamente a la solución o proyecto encontrados, Visual Studio le pedirá que elija un área de trabajo disponible o que cree una nueva área de trabajo con el nombre del equipo como nombre predeterminado del área.
 
 ####  <a name="UntrustedSymbols"></a> P: ¿Por qué aparece un mensaje sobre símbolos que no son de confianza?
- ![¿Depurar con la ruta de acceso de símbolos de confianza? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
+ ![¿Depurar con una ruta de acceso a símbolos que no son de confianza?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
  **R:** este mensaje aparece cuando la ruta de acceso a los símbolos en el archivo de manifiesto de compilación (\<*nombreDelProyecto*>.BuildInfo.config) no se incluye en la lista de rutas de acceso de símbolos de confianza. Puede agregar la ruta de acceso a dicha lista en las opciones del depurador.

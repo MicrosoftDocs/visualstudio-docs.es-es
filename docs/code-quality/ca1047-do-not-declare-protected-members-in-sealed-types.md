@@ -34,7 +34,7 @@ ms.locfileid: "55921554"
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Es un tipo público `sealed` (`NotInheritable` en Visual basic) y declara un miembro protegido o un tipo anidado protegido. Esta regla no informa de las infracciones de <xref:System.Object.Finalize%2A> métodos, que deben seguir este patrón.
+ Es un tipo público `sealed` (`NotInheritable` en Visual Basic) y declara un miembro protegido o un tipo anidado protegido. Esta regla no informa de las infracciones de <xref:System.Object.Finalize%2A> métodos, que deben seguir este patrón.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Los tipos declaran miembros protegidos para que los tipos heredados puedan obtener acceso o reemplazar el miembro. Por definición, no puede heredar de un tipo sealed, lo que significa que los métodos protegidos en tipos sellados no se puede llamar.

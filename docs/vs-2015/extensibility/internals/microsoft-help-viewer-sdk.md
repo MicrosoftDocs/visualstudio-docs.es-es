@@ -63,7 +63,7 @@ En este artículo contiene las siguientes tareas para los integradores del Visor
 
 - javascript
 
-- CSharp o c#
+- CSharp o C#
 
 - cplusplus o Visual c++ o c ++
 

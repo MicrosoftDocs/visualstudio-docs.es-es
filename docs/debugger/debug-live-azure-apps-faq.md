@@ -1,5 +1,5 @@
 ---
-title: Preguntas más frecuentes sobre depuración de instantáneas | Microsoft Docs
+title: Preguntas frecuentes sobre depuración de instantáneas | Microsoft Docs
 ms.date: 11/07/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -10,53 +10,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5b6315ba3cc99b60c97e70621f42cf13f6397c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630722"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857079"
 ---
-# <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Preguntas más frecuentes sobre depuración de instantáneas en Visual Studio
+# <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Preguntas frecuentes sobre depuración de instantáneas en Visual Studio
 
-Esta es una lista de preguntas que es posible que surgen al depurar aplicaciones de Azure en vivo mediante el depurador de instantáneas.
+Aquí se muestra una lista de preguntas que pueden surgir al depurar aplicaciones de Azure en vivo con Snapshot Debugger.
 
-#### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>¿Qué es el costo de rendimiento de tomar una instantánea?
+#### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>¿Cuál es el costo de rendimiento de la realización de una instantánea?
 
-Cuando el depurador de instantáneas se captura una instantánea de la aplicación, es el proceso de la aplicación de bifurcación y suspender la copia bifurcada. Cuando se depura una instantánea, que está depurando en la copia del proceso bifurcada. Este proceso tarda sólo 10-20 milisegundos, pero no copia el montón completo de la aplicación. En su lugar, solo la tabla de páginas de copia y establece las páginas de copia en escritura. Si algunos de los objetos de la aplicación en el cambio de montón, a continuación, se copian sus respectivas páginas. Por lo tanto, cada instantánea tiene un pequeño costo en memoria (del orden de cientos de kilobytes para la mayoría de las aplicaciones).
+Cuando Snapshot Debugger captura una instantánea de la aplicación, bifurca el proceso de la aplicación y suspende la copia bifurcada. Al depurar una instantánea, realmente se realiza la depuración de la copia bifurcada del proceso. Este proceso tarda solo entre 10 y 20 milisegundos, pero no copia el montón completo de la aplicación. En su lugar, copia solo la tabla de páginas y establece las páginas para la copia en escritura. Si algunos de los objetos del montón de la aplicación cambian, entonces se copian sus páginas correspondientes. De esa forma, cada instantánea tiene un costo reducido en memoria (del orden de cientos de kilobytes para la mayoría de las aplicaciones).
 
-#### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>¿Qué ocurre si tengo una escalada Azure App Service (varias instancias de mi aplicación)?
+#### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>¿Qué ocurre si tengo una instancia de Azure App Service de escalabilidad horizontal (varias instancias de mi aplicación)?
 
-Cuando tiene varias instancias de la aplicación, los puntos de acoplamiento se aplican a cada instancia única. Solo el primer punto de acoplamiento a acertar con las condiciones especificadas, crea una instantánea. Si tiene varios puntos de acoplamiento, instantáneas siguientes proceden de la misma instancia que creó la primera instantánea. Puntos de registro enviados a la ventana de salida sólo mostrará los mensajes de una instancia, mientras los puntos de registro enviados en registros de aplicaciones envían mensajes desde todas las instancias.
+Si tiene varias instancias de la aplicación, los puntos de instantánea se aplican a cada instancia de forma individual. Solo el primer punto de instantánea que se alcanza con las condiciones especificadas crea una instantánea. Si tiene varios puntos de instantánea, las instantáneas posteriores proceden de la misma instancia que creó la primera instantánea. Los puntos de registro enviados a la ventana de salida solo mostrarán los mensajes de una instancia, mientras que los puntos de registro enviados a los registros de aplicaciones envían mensajes desde cada instancia.
 
-#### <a name="how-does-the-snapshot-debugger-load-symbols"></a>¿Cómo el depurador de instantáneas cargar símbolos?
+#### <a name="how-does-the-snapshot-debugger-load-symbols"></a>¿Cómo Snapshot Debugger carga los símbolos?
 
-El depurador de instantáneas requiere que haya los símbolos coincidentes para la aplicación local o implementada a Azure App Service. (Los archivos PDB incrustados no admiten actualmente.) El depurador de instantáneas se descarga automáticamente los símbolos de Azure App Service. A partir de Visual Studio 2017 versión 15.2, implementar en Azure App Service también implementa los símbolos de la aplicación.
+Snapshot Debugger requiere disponer de los símbolos correspondientes para la aplicación ya sea en el entorno local o implementados en Azure App Service. (Los archivos PDB insertados no son compatibles actualmente). Snapshot Debugger descarga los símbolos automáticamente de Azure App Service. A partir de Visual Studio 2017, versión 15.2, la implementación en Azure App Service también supone la implementación de los símbolos de la aplicación.
 
-#### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>¿Funciona el depurador de instantáneas en las compilaciones de versión de mi aplicación?
+#### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>¿Snapshot Debugger funciona con las compilaciones de versión de mi aplicación?
 
-Sí: el depurador de instantáneas está diseñado para trabajar con las versiones de lanzamiento. Cuando un punto de acoplamiento se coloca en una función, se vuelve a compilar la función a una versión de depuración, lo que va a depurar. Cuando se detiene el depurador de instantáneas, se devuelven las funciones a su versión de lanzamiento.
+Sí; Snapshot Debugger está diseñado para funcionar con las compilaciones de versión. Cuando se coloca un punto de instantánea en una función, esta se vuelve a recompilar en una versión de depuración, de tal forma que se convierte en depurable. Al detener Snapshot Debugger, las funciones se devuelven a la versión de la compilación de versión.
 
-#### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>¿Puntos de registro pueden provocar efectos secundarios en mi aplicación de producción?
+#### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>¿Los puntos de registro pueden causar efectos secundarios en mi aplicación de producción?
 
-No; se evalúa de prácticamente cualquier mensaje de registro que se agrega a la aplicación. No produzcan efectos secundarios en la aplicación. Sin embargo, algunas propiedades nativas no esté accesibles con puntos de registro.
+No; los mensajes de registro agregados a la aplicación se evalúan de forma práctica. No pueden causar ningún efecto secundario en la aplicación. Sin embargo, algunas propiedades nativas pueden no estar accesibles para los puntos de registro.
 
-#### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>¿Funciona el depurador de instantáneas si mi servidor está bajo carga?
+#### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>¿Snapshot Debugger funciona si mi servidor está cargado?
 
-Sí, la depuración de instantáneas puede funcionar en servidores con carga. El depurador de instantáneas limita y no captura las instantáneas en situaciones donde hay una cantidad baja de memoria libre en el servidor.
+Sí, la depuración de instantáneas puede funcionar en los servidores con carga. Snapshot Debugger limita y no captura las instantáneas en situaciones en las que hay una baja cantidad de memoria disponible en el servidor.
 
-#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>¿Cómo se puede desinstalar el depurador de instantáneas?
+#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>¿Cómo se puede desinstalar Snapshot Debugger?
 
-Puede desinstalar la extensión del sitio Snapshot Debugger en App Service con los pasos siguientes:
+Puede desinstalar la extensión de sitio de Snapshot Debugger en la instancia de App Service con estos pasos:
 
-1. Desactivar la aplicación de servicio a través de Cloud Explorer en Visual Studio o Azure portal.
-1. Navegue al sitio de Kudu de App Service (es decir, yourappservice. **SCM**. azurewebsites.net) y vaya a **extensiones de sitio**.
-1. Haga clic en la X de la extensión del sitio Snapshot Debugger para quitarlo.
+1. Desactive la instancia de App Service en Cloud Explorer en Visual Studio o en Azure Portal.
+1. Vaya al sitio de Kudu en App Service, es decir, yourappservice.**scm**.azurewebsites.net, y acceda a **Extensiones de sitio**.
+1. Haga clic en la X de la extensión de sitio de Snapshot Debugger para quitarla.
+
+#### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>¿Por qué hay puertos abiertos durante una sesión de Snapshot Debugger?
+
+Snapshot Debugger necesita abrir un conjunto de puertos para depurar las instantáneas realizadas en Azure; se trata de los mismos puertos necesarios para la depuración remota. [Puede encontrar la lista de puertos aquí](../debugger/remote-debugger-port-assignments.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Depurar en Visual Studio](../debugger/index.md)
-- [Depurar aplicaciones ASP.NET activas con el depurador de instantáneas](../debugger/debug-live-azure-applications.md)
-- [Depuración en directo ASP.NET Azure Virtual Machines\Virtual máquinas conjuntos de escalado mediante el depurador de instantáneas](../debugger/debug-live-azure-virtual-machines.md)
-- [Depuración en directo ASP.NET Azure Kubernetes con el depurador de instantáneas](../debugger/debug-live-azure-kubernetes.md)
-- [Problemas conocidos y solución de problemas de depuración de instantáneas](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Depuración de aplicaciones ASP.NET en vivo con Snapshot Debugger](../debugger/debug-live-azure-applications.md)
+- [Depuración de aplicaciones ASP.NET en vivo en Azure Virtual Machines\Virtual Machines Scale Sets con Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
+- [Depuración de Azure Kubernetes de ASP.NET en vivo con Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
+- [Solución de problemas y problemas conocidos de depuración de instantáneas](../debugger/debug-live-azure-apps-troubleshooting.md)

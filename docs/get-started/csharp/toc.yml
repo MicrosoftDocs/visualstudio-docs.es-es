@@ -22,6 +22,18 @@ items:
       href: tutorial-uwp.md
     - name: Crear una aplicación WPF
       href: tutorial-wpf.md
+    - name: 'Tutorial en vídeo: Creación de una aplicación web de ASP.NET Core'
+      items:
+      - name: 1. Instalación de Visual Studio
+        href: tutorial-aspnet-core-ef-step-01.md
+      - name: 2. Creación de la primera aplicación web de ASP.NET Core
+        href: tutorial-aspnet-core-ef-step-02.md
+      - name: 3. Trabajo con datos
+        href: tutorial-aspnet-core-ef-step-03.md
+      - name: 4. Exposición de una API web
+        href: tutorial-aspnet-core-ef-step-04.md
+      - name: 5. Implementación de la aplicación de ASP.NET Core en Azure
+        href: tutorial-aspnet-core-ef-step-05.md
     expanded: true
   - name: Conocer Visual Studio
     items:
@@ -40,9 +52,9 @@ items:
     - name: Acceder a datos
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     expanded: true
-ms.openlocfilehash: 4e759c9b344f71b3c4c47170a23854b41ad8c23a
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cb9f6575183977a63224f7333c95fef18a0fd779
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323625"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018134"

@@ -1,5 +1,5 @@
 ---
-title: Administrar herramientas externas | Microsoft Docs
+title: Administración de herramientas externas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763328"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866771"
 ---
 # <a name="managing-external-tools"></a>Administrar herramientas externas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,11 +78,11 @@ Se puede llamar a herramientas externas desde Visual Studio. Algunas herramienta
   
 3.  Herramienta de seguimiento de ATL/MFC: muestra mensajes de seguimiento de depuración en los orígenes ATL y MFC.  
   
-4.  PreEmptive Dotfuscator y Analytics: Protege los programas de .NET frente a ingeniería inversa.  
+4.  PreEmptive Protection - Dotfuscator: protege los programas de .NET frente a técnicas de ingeniería inversa.  
   
-5.  SPY++ Muestra gráficamente los procesos, subprocesos, windows y los mensajes de ventana.  
+5.  SPY++: muestra procesos, subprocesos, ventanas y mensajes de ventana de forma gráfica.  
   
-6.  Editor de configuración de servicios &WCF Permite crear y modificar la configuración para los servicios WCF.  
+6.  Editor de configuración de servicios WCF: permite crear y modificar opciones de configuración para servicios WCF.  
   
 > [!WARNING]
 >  Puede que aparezca una lista diferente de herramientas externas, según la edición de Visual Studio que tenga instalada y el perfil de configuración que haya aplicado. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
