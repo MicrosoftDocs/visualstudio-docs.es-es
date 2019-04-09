@@ -1,12 +1,9 @@
 ---
 title: Procesar las plantillas de texto mediante un Host personalizado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, in application or VS extension
 - text templates, custom directive hosts
@@ -14,13 +11,13 @@ ms.assetid: affa3296-854d-47d6-9685-285f6d9ba5dc
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5fa54f6b7ea57b6374e8fef291c64f0e5369ffea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f2f10b239b4307b94c1f3b62b8e0a29767b22aaf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303464"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998825"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Procesar las plantillas de texto mediante un host personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ string output = engine.ProcessTemplate(templateString, host);
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> se define en **Microsoft.VisualStudio.TextTemplating.\*. 0.log dll**, y <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> se define en **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0.log dll**.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Tutorial: Crear un host de plantillas de texto personalizadas](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
+ [Tutorial: Crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
  Muestra cómo crear un host de plantilla de texto personalizado que permita disponer de la funcionalidad de plantilla de texto fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="reference"></a>Referencia  
@@ -68,6 +65,3 @@ string output = engine.ProcessTemplate(templateString, host);
   
  [Crear procesadores de directivas personalizadas para las plantillas de texto T4](../modeling/creating-custom-t4-text-template-directive-processors.md)  
  Proporciona información general sobre los procesadores de directivas de plantilla de texto.
-
-
-
