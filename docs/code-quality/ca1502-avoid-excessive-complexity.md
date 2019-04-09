@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916770"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232322"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitar una complejidad excesiva
 
@@ -44,11 +44,11 @@ Un método tiene una complejidad ciclomática excesiva.
 
 complejidad ciclomática = número de bordes - el número de nodos + 1
 
-donde un nodo representa un punto de bifurcación lógica y un borde representa una línea entre los nodos.
+Un *nodo* representa un punto de bifurcación de la lógica y una *edge* representa una línea entre los nodos.
 
 La regla emite una infracción cuando la complejidad ciclomática es más de 25.
 
-Puede aprender más acerca de las métricas de código en [medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md),
+Puede aprender más acerca de las métricas de código en [medir la complejidad del código administrado](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
@@ -102,7 +102,7 @@ Los ejemplos siguientes muestran los métodos que tienen diferentes complejidad 
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-[CA1501: Evite una herencia excesiva](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501: Evitar una herencia excesiva](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: incluir requisitos previos mediante una aplicación ClickOnce | Microsoft Docs'
+title: Filtrar Incluir requisitos previos mediante una aplicación ClickOnce | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a31058893e09de2c945cc253374a55c53f277110
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620011"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232858"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Cómo: Incluir requisitos previos mediante una aplicación ClickOnce
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Filtrar Inclusión de requisitos previos con una aplicación ClickOnce
 Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], primero debe descargar los paquetes del instalador para esos requisitos previos en el equipo de desarrollo. Si publica una aplicación y elige **Descargar los requisitos previos desde la misma ubicación que mi aplicación**, se producirá un error si los paquetes del instalador no están en la carpeta **Packages**.
 
 > [!NOTE]
@@ -25,7 +25,7 @@ Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptec
 
 1. En el Explorador de archivos, abra la carpeta **Packages**.
 
-    De forma predeterminada, la ruta de acceso es *C:\Archivos de programa\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* en un sistema de 32 bits y *C:\Archivos de programa (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* en un sistema de 64 bits.
+    De forma predeterminada, la ruta de acceso es `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`.
 
 2. Abra la carpeta del requisito previo que desea agregar y, después, abra la carpeta de idioma para la versión instalada de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (por ejemplo, **es** para español).
 
@@ -50,4 +50,4 @@ Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptec
     Ahora puede distribuir el paquete del instalador con la aplicación.
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Filtrar Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
