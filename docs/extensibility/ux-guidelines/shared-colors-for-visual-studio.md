@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31912d5528c38374aafd1212767bfb850a8b976
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723583"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232819"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
 Cuando diseña la interfaz de usuario que utiliza elementos comunes de shell de Visual Studio, o desea que el elemento de la interfaz para que sea coherente con características similares, utilice nombres de token existentes en archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.
@@ -22,11 +22,11 @@ En este artículo se describen los elementos de interfaz de usuario comunes y lo
 
 Asegúrese de usar correctamente los nombres de token:
 
--   **Usar nombres de token en función de la función, no en el color en Sí.** Los colores comunes compartidos están asociados a elementos específicos de la interfaz y solo están destinados para características iguales o similares. Por ejemplo, no vuelva a usar el color de un cuadro combinado presionado para una animación de progreso de giro solo porque le gusta el color. Las funciones del cuadro combinado y de la animación son diferentes, y si el color asociado con los cambios de cuadro combinado, ya no es posible un color adecuado para el elemento de animación. Un uso coherente del color ayuda a orientar a los usuarios y evitar confusiones.
+-   **Usar nombres de token basados en función, no en el color en sí.** Los colores comunes compartidos están asociados a elementos específicos de la interfaz y solo están destinados para características iguales o similares. Por ejemplo, no vuelva a usar el color de un cuadro combinado presionado para una animación de progreso de giro solo porque le gusta el color. Las funciones del cuadro combinado y de la animación son diferentes, y si el color asociado con los cambios de cuadro combinado, ya no es posible un color adecuado para el elemento de animación. Un uso coherente del color ayuda a orientar a los usuarios y evitar confusiones.
 
--   **Usar colores de fondo y texto en la combinación correcta.** Los colores de fondo destinados para usarse con texto tendrán un color de texto asociado. No use colores de texto que no sean los que se especifican para el fondo. Si no hay un color de texto asociado, no use ese color de fondo para cualquier superficie en la que tiene pensado mostrar texto. Otras combinaciones de colores de texto y en segundo plano pueden dar lugar a una interfaz ilegible.
+-   **Usar colores de fondo y de texto en la combinación correcta.** Los colores de fondo destinados para usarse con texto tendrán un color de texto asociado. No use colores de texto que no sean los que se especifican para el fondo. Si no hay un color de texto asociado, no use ese color de fondo para cualquier superficie en la que tiene pensado mostrar texto. Otras combinaciones de colores de texto y en segundo plano pueden dar lugar a una interfaz ilegible.
 
--   **Usar colores de control que son adecuados para su ubicación.** En determinados Estados, algunos controles de Visual Studio no tienen borde independiente y los colores de fondo. En su lugar, toman los colores de las superficies que están detrás de ellos. Procure usar siempre los nombres de token que sean adecuados para la ubicación donde coloca el control.
+-   **Usar colores de control adecuados para su ubicación.** En determinados Estados, algunos controles de Visual Studio no tienen borde independiente y los colores de fondo. En su lugar, toman los colores de las superficies que están detrás de ellos. Procure usar siempre los nombres de token que sean adecuados para la ubicación donde coloca el control.
 
 > [!IMPORTANT]
 > No use los tokens que se encuentran en las categorías "Página de inicio" o "Cider".
@@ -985,7 +985,7 @@ Para los fondos del área de comandos se usan dos conjuntos de nombres de token:
 | --- | --- |
 | Fondo | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
-** Comando del estante comando barra **
+**Barra de comandos del estante de comandos**
 
 > Los delimitadores de degradado se establecen en el mismo valor de color en los temas claro y oscuro de Visual Studio 2013.
 
@@ -2090,7 +2090,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 | Borde | `Environment.TitleBarActiveBorder`<br />(Establecer en el mismo color como fondo). |
 | Controlador de arrastre | `Environment.TitleBarDragHandleActive` |
 
-**Barra de título no enfocado**
+**Barra de título sin foco**
 
 ![Barra de título no enfocado](../../extensibility/ux-guidelines/media/0303-094_titlebarunfocused.png "0303 094_TitleBarUnfocused")<br />Barra de título sin foco
 

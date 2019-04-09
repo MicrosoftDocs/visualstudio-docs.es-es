@@ -11,20 +11,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223733"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232754"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Procedimiento Generar datos de métricas de código
+# <a name="how-to-generate-code-metrics-data"></a>Filtrar Generar datos de métricas de código
 
-Puede generar resultados de métricas de código para una solución completa o uno o varios proyectos. Las métricas del código está disponible dentro del entorno de desarrollo interactivo (IDE) de Visual Studio y, para C# y proyectos de Visual Basic, en la línea de comandos.
+Puede generar datos de métricas de código de tres maneras:
 
-Además, puede instalar un [paquete NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) que incluye cuatro métricas del código [analizador](roslyn-analyzers-overview.md) reglas: CA1501, CA1502, CA1505 y CA1506. Estas reglas están deshabilitadas de forma predeterminada, pero puede habilitarlas desde **el Explorador de soluciones** o en un [conjunto de reglas](using-rule-sets-to-group-code-analysis-rules.md) archivo.
+- Instalando [analizadores de FxCop](#fxcop-analyzers-code-metrics-rules) y habilitar las reglas de métricas (mantenimiento) cuatro del código contiene.
 
-## <a name="visual-studio-ide-code-metrics"></a>Métricas de código de Visual Studio IDE
+- Si elige la [ **analizar** > **calcular métricas del código** ](#calculate-code-metrics-menu-command) comando de menú dentro de Visual Studio.
+
+- Desde el [línea de comandos](#command-line-code-metrics) para C# y proyectos de Visual Basic.
+
+## <a name="fxcop-analyzers-code-metrics-rules"></a>Reglas de métricas de código de analizadores de FxCop
+
+El [paquete FxCopAnalyzers NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) incluye varias métricas del código [analizador](roslyn-analyzers-overview.md) reglas:
+
+- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1505](ca1505-avoid-unmaintainable-code.md)
+- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+
+Estas reglas están deshabilitadas de forma predeterminada, pero puede habilitarlas desde [ **el Explorador de soluciones** ](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) o en un [conjunto de reglas](using-rule-sets-to-group-code-analysis-rules.md) archivo. Por ejemplo, para habilitar la regla CA1502 como una advertencia, el archivo .ruleset contendría la siguiente entrada:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1502" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+### <a name="configuration"></a>Configuración
+
+Puede configurar los umbrales en el que las reglas de métricas de código en los analizadores de FxCop fire del paquete.
+
+1. Crear un archivo de texto Por ejemplo, puede asignarle el nombre *CodeMetricsConfig.txt*.
+
+2. Agregue los umbrales deseados al archivo de texto en el formato siguiente:
+
+   ```txt
+   CA1502: 10
+   ```
+
+   En este ejemplo, la regla [CA1502](ca1502-avoid-excessive-complexity.md) está configurado para desencadenar cuando la complejidad ciclomática de un método es mayor que 10.
+
+3. En el **propiedades** ventana de Visual Studio o en el archivo de proyecto, marque la acción de compilación del archivo de configuración como [ **AdditionalFiles**](../ide/build-actions.md#build-action-values). Por ejemplo:
+
+   ```xml
+   <ItemGroup>
+     <AdditionalFiles Include="CodeMetricsConfig.txt" />
+   </ItemGroup>
+   ```
+
+## <a name="calculate-code-metrics-menu-command"></a>Calcular el comando de menú de las métricas del código
 
 Generar métricas de código para uno o todos los proyectos abiertos en el IDE mediante el **analizar** > **calcular métricas del código** menú.
 
@@ -54,7 +100,8 @@ Los resultados se generan y **resultados de métrica del código** se muestra la
 > El **calcular métricas del código** comando no funciona para los proyectos .NET Core y .NET Standard. Para calcular métricas del código para un proyecto .NET Core o .NET Standard, hacer lo siguiente:
 >
 > - calcular métricas del código desde el [línea de comandos](#command-line-code-metrics) en su lugar
-> - actualizar a Visual Studio de 2019
+>
+> - Actualización a [2019 de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ::: moniker-end
 
