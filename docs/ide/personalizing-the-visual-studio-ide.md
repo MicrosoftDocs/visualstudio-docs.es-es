@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e5e8f59474a9a2fcbfef7a1c6b3d75febe3086
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708776"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790243"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar el IDE de Visual Studio
 
@@ -31,20 +31,20 @@ Muchas opciones de personalización se exponen en el cuadro de diálogo [Opcione
 
 - En la barra de menús, elija **Herramientas** > **Opciones** y, si todavía no está expandido, expanda el nodo **Entorno**.
 
-- Escriba `environment` en el cuadro **Inicio rápido** y elija **Entorno --> General** en la lista de resultados.
+- Presione **Ctrl**+**Q**, escriba **entorno** en el cuadro de búsqueda y elija **Entorno --> General** en los resultados.
 
-   > [!TIP]
-   > Cuando aparezca el cuadro de diálogo, puede presionar **F1** para obtener ayuda sobre las distintas opciones en esa página.
+> [!TIP]
+> Cuando aparezca el cuadro de diálogo Opciones, puede presionar **F1** para obtener ayuda sobre las distintas opciones en esa página.
 
 ## <a name="environment-color-themes"></a>Temas de color de entorno
 
-Para cambiar el tema de color entre claro, oscuro y azul, escriba `environment` en el cuadro **Inicio rápido** y, luego, elija **Entorno --> General**. En el cuadro de diálogo **Opciones**, cambie la opción **Tema de color**.
+Para cambiar el tema de color entre claro, oscuro y azul, escriba **entorno** en el cuadro de búsqueda y elija **Entorno --> General**. En el cuadro de diálogo **Opciones**, cambie la opción **Tema de color**.
 
-Para cambiar las opciones de color en el editor, escriba `environment` en el cuadro **Inicio rápido** y, luego, elija **Entorno --> Fuentes y colores**. Vea [Cómo: Cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Para cambiar las opciones de color en el editor, escriba **entorno** en el cuadro de búsqueda y elija **Entorno --> Fuentes y colores**. Vea [Cómo: Cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Mayúsculas y minúsculas en el menú principal
 
-Puede cambiar el uso de mayúsculas en el menú principal y alternar entre **tipo título** ("Archivo") y **Todo mayúsculas** ("ARCHIVO"). Escriba `environment` en el cuadro **Inicio rápido**, seleccione **Entorno --> General** y, luego, cambie la opción **Aplicar tipografía de título a la barra de menús**.
+Puede cambiar el uso de mayúsculas en el menú principal y alternar entre **tipo título** ("Archivo") y **Todo mayúsculas** ("ARCHIVO"). Escriba **entorno** en el cuadro de búsqueda, seleccione **Entorno --> General** y cambie la opción **Aplicar tipografía de título a la barra de menús**.
 
 ### <a name="customize-menus-and-toolbars"></a>Personalización de menús y barras de herramientas
 

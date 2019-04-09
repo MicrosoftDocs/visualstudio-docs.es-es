@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d369bae532fae40c2856cce88169137146d826d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e95520c526c1d26f0122d9631dfb8196077853
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934645"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647120"
 ---
-# <a name="keyboard-environment-options-dialog-box"></a>Teclado, Entorno, Opciones (cuadro de diálogo)
+# <a name="options-dialog-box-environment--keyboard"></a>Cuadro de diálogo Opciones: Entorno \> Teclado
+
 Utilice esta página para establecer las asignaciones de teclado. Para obtener más información sobre las asignaciones, vea [Identificar y personalizar métodos abreviados de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vea también

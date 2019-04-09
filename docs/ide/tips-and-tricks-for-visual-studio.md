@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223369"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790373"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Métodos abreviados de teclado de Visual Studio
 
@@ -51,8 +51,8 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |-|-|
 |Búsqueda en el Explorador de soluciones|**Ctrl**+**;**|
 |Colocar el foco en el cuadro de búsqueda de cualquier ventana de herramientas|**Alt**+**`** cuando la ventana de herramientas tiene el foco|
-|Inicio rápido|**Ctrl**+**Q**|
-|Acotar resultados de Inicio rápido|- @opt Opciones<br />- @cmd Comandos<br />- @mru Usados más recientemente<br />- @doc Documentos abiertos|
+|Cuadro de búsqueda|**Ctrl**+**Q**|
+|Resultados del ámbito del cuadro de búsqueda|- @opt Opciones<br />- @cmd Comandos<br />- @mru Usados más recientemente<br />- @doc Documentos abiertos|
 |Buscar en opciones de herramientas|**Ctrl**+**E**|
 
 ## <a name="editor-find"></a>Búsqueda en el editor

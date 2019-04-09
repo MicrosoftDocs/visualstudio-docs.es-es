@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700020"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647289"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Explorador web, Entorno, Opciones (Cuadro de diálogo)
+# <a name="options-dialog-box-environment--web-browser"></a>Cuadro de diálogo Opciones: Entorno \> Explorador web
 
 Establece opciones para el explorador web interno e Internet Explorer. Para acceder a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Entorno** y seleccione **Explorador web**.
 
@@ -50,11 +50,11 @@ Le permite designar una página de búsqueda para el explorador web interno. Est
 
 Establece el editor que se usa para abrir una página web cuando se elige **Ver código fuente** en la página del explorador web interno.
 
--   **Editor de código fuente** Seleccione esta opción para ver código fuente en el [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
+- **Editor de código fuente** Seleccione esta opción para ver código fuente en el [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de entre dos vistas: Vista de diseño o vista estándar de código fuente basada en texto.
+- **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de entre dos vistas: Vista de diseño o vista estándar de código fuente basada en texto.
 
--   **Editor externo** Seleccione esta opción para ver código fuente en otro editor. Especifique la ruta de acceso al editor que elija, por ejemplo, Notepad.exe.
+- **Editor externo** Seleccione esta opción para ver código fuente en otro editor. Especifique la ruta de acceso al editor que elija, por ejemplo, Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Opciones de Internet Explorer
 

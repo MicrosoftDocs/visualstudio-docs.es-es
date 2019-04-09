@@ -1,6 +1,6 @@
 ---
 title: General, Entorno, Opciones (Cuadro de diálogo)
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
@@ -24,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faae6f061da675efdecdea5f8c4a0e606d486b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710843"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647276"
 ---
-# <a name="general-environment-options-dialog-box"></a>General, Entorno, Opciones (Cuadro de diálogo)
+# <a name="options-dialog-box-environment--general"></a>Cuadro de diálogo Opciones: Entorno \> General
 
 Use esta página para cambiar, entre otras opciones, los temas de color, la configuración de la barra de estado y las asociaciones de las extensiones de archivo del entorno de desarrollo integrado (IDE). Para acceder al cuadro de diálogo **Opciones**, abra el menú **Herramientas**, pulse **Opciones**, abra la carpeta **Entorno** y pulse la página **General**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione la casilla **Mostrar todas las configuraciones**.
 
@@ -39,13 +39,21 @@ Use esta página para cambiar, entre otras opciones, los temas de color, la conf
 
 **Tema de color**
 
-Pulse el tema de color **Azul**, **Claro** u **Oscuro** para el IDE.
+Elija el tema de color **Azul**, **Claro**, **Oscuro** o **Azul (contraste adicional)** para el IDE.
 
-Puede instalar temas predefinidos adicionales y crear temas personalizados si descarga e instala **Visual Studio Color Theme Editor** desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Después de instalar esta herramienta, aparecerán temas de color adicionales en el cuadro de lista Tema de color.
+Puede instalar temas predefinidos adicionales y crear temas personalizados si descarga e instala **Visual Studio Color Theme Editor** desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Después de instalar esta herramienta, aparecerán temas de color adicionales en el cuadro de lista **Tema de color**.
 
-**Aplicar el tipo título en la barra de menús**
+**Aplicar tipografía de título a la barra de menús**
 
-Los menús están en **Tipo título** de manera predeterminada. Desactive esta opción para establecerlos en **MAYÚSCULAS**.
+De manera predeterminada, los menús usan la tipografía de título. Desactive esta opción para usar solo mayúsculas.
+
+::: moniker range=">=vs-2019"
+
+**Optimizar la representación de las pantallas con densidades de píxeles distintas (requiere reiniciar)**
+
+Esta opción habilita o deshabilita la distinción de puntos por pulgada (ppp) por monitor (o *PMA*). Cuando se habilita PMA, la interfaz de usuario de Visual Studio aparece nítida en la configuración de ppp y factor de escala de cualquier monitor, incluso en varios monitores. Para habilitar PMA, necesita la actualización de abril de 2018 de Windows 10 o posterior y .NET Framework 4.8 o posterior. (Esta opción aparece atenuada si no se cumplen estos dos requisitos previos).
+
+::: moniker-end
 
 **Ajustar automáticamente la experiencia visual según rendimiento del cliente**
 
@@ -61,13 +69,13 @@ Usa la aceleración de gráficos mediante hardware si está disponible, en lugar
 
 ## <a name="other"></a>Otros
 
-**Elementos mostrados en el menú Ventana**
+**Elementos para mostrar en el menú Ventana**
 
-Personaliza el número de ventanas que aparecen en la lista Ventanas del menú **Ventana**. Escriba un número comprendido entre 1 y 24. De forma predeterminada, el número es 10.
+Personaliza el número de ventanas que aparecen en la lista Ventanas del menú **Ventana**. Especifique un número comprendido entre 1 y 24. El valor predeterminado es 10.
 
 **Elementos mostrados en las listas de los usados recientemente**
 
-Personaliza el número de proyectos y archivos usados más recientemente que aparecen en el menú **Archivo**. Escriba un número comprendido entre 1 y 24. De forma predeterminada, el número es 10. Se trata de una manera fácil de recuperar los proyectos y archivos usados recientemente.
+Personaliza el número de proyectos y archivos usados más recientemente que aparecen en el menú **Archivo**. Especifique un número comprendido entre 1 y 24. El valor predeterminado es 10. Se trata de una manera fácil de recuperar los proyectos y archivos usados recientemente.
 
 **Mostrar barra de estado**
 

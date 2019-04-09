@@ -10,31 +10,53 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a478e8d3575e70a11ec776d59337ae93e7a677
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 689bdb62d5a4bc9aea21da67e8e5e844660756d6
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873365"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647315"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 
-Para establecer las preferencias de estilo del código de los proyectos de C# y Visual Basic, abra el cuadro de diálogo **Opciones** desde el menú **Herramientas**. En el cuadro de diálogo **Opciones**, seleccione **Editor de texto** > [**C#** o **Básica**] > **Estilo de código** > **General**. Cada elemento de la lista muestra una vista previa de la preferencia cuando se selecciona:
+Para establecer las preferencias de estilo del código de los proyectos de C# y Visual Basic, abra el cuadro de diálogo **Opciones** desde el menú **Herramientas**. En el cuadro de diálogo **Opciones**, seleccione **Editor de texto** > [**C#** o **Básica**] > **Estilo de código** > **General**.
+
+Cada elemento de la lista muestra una vista previa de la preferencia cuando se selecciona:
+
+::: moniker range="vs-2017"
 
 ![Opciones de estilo de código](media/code-style-quick-actions-dialog.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Opciones de estilo de código](media/vs-2019/code-style-quick-actions-dialog.png)
+
+::: moniker-end
 
 Las opciones que se establecen en esta ventana se aplican a la cuenta de personalización de Visual Studio y no están asociadas con un proyecto o código base determinado. Además, no se aplican en tiempo de compilación, lo que incluye las compilaciones de integración continua (CI). Si quiere asociar las preferencias de estilo de código con el proyecto y aplicar los estilos durante la compilación, especifique las preferencias en un [archivo .editorconfig](#editorconfig-files).
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Comportamiento del editor en Visual Studio para Mac](/visualstudio/mac/editor-behavior).
 
-## <a name="preference-and-severity"></a>Preferencia y gravedad
-
-Para cada elemento, puede establecer el valor de **Preferencia** y **Gravedad** usando las listas desplegables de cada línea. La gravedad se puede establecer en **Ninguno**, **Sugerencia**, **Advertencia** o **Error**. Si desea habilitar las [Acciones rápidas](../ide/quick-actions.md) para un estilo de código, asegúrese de que el valor **Gravedad** se establece en un valor distinto de **Ninguno**. El icono de bombilla ![Bombilla](media/light-bulb-dropdown.png), de bombilla de error ![Bombilla de error](media/error-bulb.png) o de destornillador ![Destornillador](media/screwdriver.png) de **Acciones rápidas** aparece cuando se usa un estilo no preferido, y puede elegir una opción en la lista **Acciones rápidas** para volver a escribir código de forma automática para el estilo preferido.
-
 ## <a name="editorconfig-files"></a>Archivos EditorConfig
 
-La configuración del estilo del código para .NET también se puede especificar mediante la incorporación de un archivo [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) al proyecto. Estos archivos están asociados con un código base en lugar de una cuenta de personalización de Visual Studio. La configuración del archivo EditorConfig tiene prioridad sobre las opciones seleccionadas en el cuadro de diálogo **Opciones**. Use un archivo EditorConfig cuando quiera aplicar los estilos de codificación para todos los colaboradores en el repositorio o proyecto.
+La configuración del estilo del código para .NET también se puede especificar mediante la incorporación de un archivo [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) al proyecto.
+
+::: moniker range=">=vs-2019"
+
+Haga clic en **Generar archivo .editorconfig desde la configuración** para generar automáticamente un archivo .editorconfig de estilo de codificación basado en las opciones que estableció en esta página **Opciones**.
+
+![Generación del archivo .editorconfig desde la configuración en VS 2019](media/vs-2019/generate-editorconfig-file-small.png)
+
+::: moniker-end
+
+Los archivos EditorConfig están asociados con un código base en lugar de una cuenta de personalización de Visual Studio. La configuración de un archivo EditorConfig tiene prioridad sobre las opciones seleccionadas en el cuadro de diálogo **Opciones**. Use un archivo EditorConfig cuando quiera aplicar los estilos de codificación para todos los colaboradores en el repositorio o proyecto.
+
+## <a name="preference-and-severity"></a>Preferencia y gravedad
+
+Para cada configuración de estilo de código de esta página, puede establecer los valores de **Preferencia** y **Gravedad** con las listas desplegables de cada línea. La gravedad se puede establecer en **Ninguno**, **Sugerencia**, **Advertencia** o **Error**. Si desea habilitar las [Acciones rápidas](../ide/quick-actions.md) para un estilo de código, asegúrese de que el valor **Gravedad** se establece en un valor distinto de **Ninguno**. El icono de bombilla ![Bombilla](media/light-bulb-dropdown.png), de bombilla de error ![Bombilla de error](media/error-bulb.png) o de destornillador ![Destornillador](media/screwdriver.png) de **Acciones rápidas** aparece cuando se usa un estilo no preferido, y puede elegir una opción en la lista **Acciones rápidas** para volver a escribir código de forma automática para el estilo preferido.
 
 ## <a name="format-document-command"></a>Comando Dar formato al documento
 
