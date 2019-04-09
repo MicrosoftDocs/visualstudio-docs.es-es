@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354755"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790906"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Inicio rápido: Primer vistazo al IDE de Visual Studio
 
@@ -125,15 +125,15 @@ Vamos a compilar el proyecto para ver algún resultado de compilación. En el me
 
 ![Ventana Resultados en Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Inicio rápido
+## <a name="search-box"></a>Cuadro de búsqueda
 
-El cuadro de búsqueda **Inicio rápido** es una manera rápida y sencilla de navegar prácticamente por todo en Visual Studio. Puede especificar algún texto relacionado con lo que quiere hacer, y se mostrará una lista de opciones que pertenecen al texto. Por ejemplo, supongamos que se quiere aumentar el detalle de los resultados de compilación para mostrar más detalles sobre lo que está haciendo exactamente la compilación. Así es como se haría:
+El cuadro de búsqueda es una manera rápida y sencilla de navegar prácticamente por todo en Visual Studio. Puede especificar algún texto relacionado con lo que quiere hacer, y se mostrará una lista de opciones que pertenecen al texto. Por ejemplo, supongamos que se quiere aumentar el detalle de los resultados de compilación para mostrar más detalles sobre lo que está haciendo exactamente la compilación. Así es como se haría:
 
 ::: moniker range="vs-2017"
 
 1. Localice el cuadro de búsqueda **Inicio rápido** en la esquina superior derecha del IDE. (Como alternativa, presione **Ctrl**+**Q** para acceder a él).
 
-2. Escriba **verbosity** en el cuadro de búsqueda **Inicio rápido**. En los resultados que aparecen, elija **Proyectos y soluciones --> Compilar y ejecutar** en la categoría **Opciones**.
+2. Escriba **detalle** en el cuadro de búsqueda. En los resultados que aparecen, elija **Proyectos y soluciones --> Compilar y ejecutar** en la categoría **Opciones**.
 
    ![Cuadro de búsqueda Inicio rápido en Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
@@ -143,11 +143,11 @@ El cuadro de búsqueda **Inicio rápido** es una manera rápida y sencilla de na
 
 ::: moniker range=">=vs-2019"
 
-1. Ubique el cuadro de búsqueda **Inicio rápido** en la parte superior del IDE, justo a la derecha de los menús. (Como alternativa, presione **Ctrl**+**Q** para acceder a él).
+1. Presione **Ctrl**+**Q** para activar el cuadro de búsqueda en la parte superior del IDE.
 
-2. Escriba **verbosity** en el cuadro de búsqueda **Inicio rápido**. En los resultados que se muestran, elija **Change MSBuild verbosity** (Cambiar el nivel de detalle de MSBuild).
+2. Escriba **detalle** en el cuadro de búsqueda. En los resultados que se muestran, elija **Change MSBuild verbosity** (Cambiar el nivel de detalle de MSBuild).
 
-   ![Cuadro de búsqueda Inicio rápido en Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
+   ![Cuadro de búsqueda de Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
 
    El cuadro de diálogo **Opciones** se abre en la página **Compilar y ejecutar**.
 
@@ -163,7 +163,7 @@ El cuadro de búsqueda **Inicio rápido** es una manera rápida y sencilla de na
 
 ## <a name="send-feedback-menu"></a>Menú Enviar comentarios
 
-Si encuentra algún problema mientras usa Visual Studio o si tiene sugerencias para mejorar el producto, puede usar el menú **Enviar comentarios** de la parte superior de la ventana de Visual Studio, junto al cuadro **Inicio rápido**.
+Si encuentra algún problema mientras usa Visual Studio o si tiene sugerencias para mejorar el producto, puede usar el menú **Enviar comentarios** de la parte superior de la ventana de Visual Studio.
 
 ::: moniker range="vs-2017"
 

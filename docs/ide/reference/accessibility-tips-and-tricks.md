@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680937"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789697"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de accesibilidad de Visual Studio
 
@@ -50,9 +50,9 @@ El IDE de Visual Studio tiene barras de herramientas igual que muchas ventanas d
 
 |Característica|Descripción|Combinación de teclas|
 |-------------|-----------------| - |
-|Barras de herramientas del IDE|Seleccionar el primer botón de la barra de herramientas Estándar.|**ALT**, **CTRL** + **TAB**|
-|Ventana de herramientas (barras de herramientas)|Mover el foco a las barras de herramientas en una ventana de herramientas. <br> <br> **NOTA:** Esto funciona para la mayoría de ventanas de herramientas, pero solo cuando el foco está en una ventana de herramientas. Además, debe pulsar la tecla MAYÚS antes que la tecla ALT. En algunas ventanas de herramientas, como Team Explorer, debe mantener pulsada la tecla MAYÚS un momento antes de pulsar la tecla ALT.|**MAYÚS** + **ALT**|
-|Barras de herramientas|Ir al primer elemento en la siguiente barra de herramientas (cuando una barra de herramientas tiene el foco).|**CTRL** + **TAB**|
+|Barras de herramientas del IDE|Seleccionar el primer botón de la barra de herramientas Estándar.|**Alt**, **Ctrl** + **TAB**|
+|Ventana de herramientas (barras de herramientas)|Mover el foco a las barras de herramientas en una ventana de herramientas. <br> <br> **NOTA:** Esto funciona para la mayoría de ventanas de herramientas, pero solo cuando el foco está en una ventana de herramientas. Además, debe pulsar la tecla MAYÚS antes que la tecla ALT. En algunas ventanas de herramientas, como Team Explorer, debe mantener pulsada la tecla MAYÚS un momento antes de pulsar la tecla ALT.|**Mayús** + **Alt**|
+|Barras de herramientas|Ir al primer elemento en la siguiente barra de herramientas (cuando una barra de herramientas tiene el foco).|**Ctrl** + **Tab**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>Otras combinaciones útiles de teclas de método abreviado
 
@@ -60,14 +60,14 @@ Otras combinaciones útiles de teclas de método abreviado son las siguientes.
 
 |Característica|Descripción|Combinación de teclas|
 |-------------|-----------------| - |
-|IDE|Activar y desactivar el contraste alto. <br> <br> **NOTA:** Acceso directo estándar de Windows|**ALT izquierda + MAYÚS izquierda + IMPR PANT**|
+|IDE|Activar y desactivar el contraste alto. <br> <br> **NOTA:** Acceso directo estándar de Windows|**ALT izquierda + Mayús izquierda + Impr Pant**|
 |Cuadro de diálogo|Activar o desactivar la opción de la casilla de un cuadro de diálogo. <br> <br> **NOTA:** Acceso directo estándar de Windows|**BARRA ESPACIADORA**|
-|Menús contextuales|Abrir un menú contextual (clic con el botón derecho). <br> <br> **NOTA:** Acceso directo estándar de Windows|**MAYÚS** + **F10**|
-|Menús|Obtener acceso rápidamente a un elemento de menú con sus teclas de aceleración. Pulse la tecla **ALT** seguida de letras subrayadas en un menú para activar el comando. Por ejemplo, para ver el cuadro de diálogo Abrir proyecto en Visual Studio, pulsaría **ALT** + **F** + **O** + **P**.  <br><br> **NOTA:** Acceso directo estándar de Windows|**ALT** + **[letra]**|
-|Cuadro de búsqueda de inicio rápido| Usar la característica de búsqueda de Visual Studio.|**Ctrl** + **Q**|
+|Menús contextuales|Abrir un menú contextual (clic con el botón derecho). <br> <br> **NOTA:** Acceso directo estándar de Windows|**Mayús** + **F10**|
+|Menús|Obtener acceso rápidamente a un elemento de menú con sus teclas de aceleración. Pulse la tecla **Alt** seguida de letras subrayadas en un menú para activar el comando. Por ejemplo, para ver el cuadro de diálogo Abrir proyecto en Visual Studio, pulsaría **Alt** + **F** + **O** + **P**.  <br><br> **NOTA:** Acceso directo estándar de Windows|**Alt** + **[letra]**|
+|Cuadro de búsqueda|Usar la característica de búsqueda de Visual Studio.|**Ctrl** + **Q**|
 |Ventana Cuadro de herramientas|Desplazarse por las pestañas del cuadro de herramientas.|**CTRL** + **FLECHA ARRIBA**<br /><br /> y<br /><br /> **CTRL** + **FLECHA ABAJO**|
-|Ventana Cuadro de herramientas|Agregar un control del cuadro de herramientas a un formulario o diseñador.|**ENTRAR**|
-|Teclado, Entorno, Opciones (cuadro de diálogo)|Eliminar una combinación de teclas especificada en la opción **Presionar teclas de método abreviado**.|**RETROCESO**|
+|Ventana Cuadro de herramientas|Agregar un control del cuadro de herramientas a un formulario o diseñador.|**Entrar**|
+|Cuadro de diálogo Opciones: Entorno > Teclado|Eliminar una combinación de teclas especificada en la opción **Presionar teclas de método abreviado**.|**Retroceso**|
 
 > [!NOTE]
 > Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos.
@@ -76,12 +76,12 @@ Otras combinaciones útiles de teclas de método abreviado son las siguientes.
 
 Puede usar el applet Sonido en Windows para asignar un sonido a los eventos de programa de Visual Studio. En concreto, puede asignar sonidos a los siguientes eventos de programa:
 
- * Punto de interrupción alcanzado
- * Compilación cancelada
- * Error de compilación
- * Compilación correcta
+* Punto de interrupción alcanzado
+* Compilación cancelada
+* Error de compilación
+* Compilación correcta
 
-Esta es la manera de hacerlo.
+Esta es la manera de hacerlo:
 
 1. En el cuadro **Búsqueda** de un equipo con Windows 10, escriba **Cambiar sonidos del sistema**.
 

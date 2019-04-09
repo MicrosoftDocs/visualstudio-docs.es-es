@@ -2,18 +2,20 @@
 title: 'Paso 1: Crear un proyecto y agregar una tabla a un formulario'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940664"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647497"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Paso 1: Crear un proyecto y agregar una tabla a un formulario
 
@@ -21,7 +23,23 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Para crear un proyecto y agregar una tabla al formulario
 
+::: moniker range="vs-2017"
+
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+1. En el cuadro de búsqueda, escriba "WPF", elija **Aplicación de WPF (.NET Framework)** y, luego, **Siguiente**.
+
+   (Si no ve la plantilla **Aplicación de WPF (.NET Framework)**, use el Instalador de Visual Studio para instalar la carga de trabajo **Desarrollo de escritorio de .NET**).
+
+1. Asigne un nombre al proyecto, **MatchingGame**, y elija **Crear**.
+
+::: moniker-end
 
 2. Si no usa Visual Studio Express, primero debe seleccionar un lenguaje de programación. En la lista **Plantillas instaladas**, pulse **Visual C#** o **Visual Basic**.
 

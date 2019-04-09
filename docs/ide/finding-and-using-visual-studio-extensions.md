@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268546"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790763"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Búsqueda y uso de extensiones de Visual Studio
 
@@ -33,7 +33,7 @@ Use el cuadro de diálogo **Extensiones y actualizaciones** para instalar y admi
 
 ::: moniker range=">=vs-2019"
 
-Use el cuadro de diálogo **Administrar extensiones** para instalar y administrar extensiones de Visual Studio. Para abrir el cuadro de diálogo **Administrar extensiones**, elija **Extensiones** > **Administrar extensiones**. O bien escriba **Extensiones** en el cuadro de búsqueda **Inicio rápido** y elija **Administrar extensiones**.
+Use el cuadro de diálogo **Administrar extensiones** para instalar y administrar extensiones de Visual Studio. Para abrir el cuadro de diálogo **Administrar extensiones**, elija **Extensiones** > **Administrar extensiones**. O bien escriba **Extensiones** en el cuadro de búsqueda y elija **Administrar extensiones**.
 
 ::: moniker-end
 

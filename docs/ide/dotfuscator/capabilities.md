@@ -1,48 +1,49 @@
 ---
 title: Funcionalidades de Dotfuscator
-ms.date: 10/10/2017
+ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
-keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protección, community edition, ofuscación, .NET, gratuito, Visual Studio 2017
+keywords: Dotfuscator, Dotfuscator Community, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protección, community edition, ofuscación, .NET, gratuito, Visual Studio 2017, Visual Studio 2019, Visual Studio
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
+- Dotfuscator Community
 - Dotfuscator CE
 - Dotfuscator
 - obfuscation
 - protection
-description: Obtenga información sobre las funcionalidades del producto gratuito Dotfuscator Community Edition incluido en Visual Studio 2017.
+description: Obtenga información sobre las funcionalidades de la copia gratuita de Dotfuscator Community incluida en Visual Studio
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9182593e16be2a8e09331a49427623e5c81a9a9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925363"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866642"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funcionalidades de Dotfuscator
 
-Esta página se centra en las funcionalidades de Dotfuscator Community Edition (Dotfuscator CE) con algunas referencias a las opciones avanzadas disponibles a través de [actualizaciones][upgrades].
+Esta página se centra en las funcionalidades de Dotfuscator Community con algunas referencias a las opciones avanzadas disponibles a través de [actualizaciones][upgrades].
 
-Dotfuscator es un sistema *posterior a la compilación* para aplicaciones .NET.
-Con Dotfuscator CE, los usuarios de Visual Studio pueden [ofuscar ensamblados][obfuscation] e insertar [medidas defensa activa][checks] en la aplicación, todo ello sin que Dotfuscator necesite acceder al código fuente original.
+Dotfuscator Community es un sistema *posterior a la compilación* para aplicaciones .NET.
+Con él, los usuarios de Visual Studio pueden [ofuscar ensamblados][obfuscation] e insertar [medidas de defensa activa][checks] en la aplicación, todo ello sin que Dotfuscator necesite acceder al código fuente original.
 Dotfuscator protege la aplicación de varias formas, creando una estrategia de protección por capas.
 
-Dotfuscator CE admite una gran variedad de tipos de aplicaciones y ensamblados de .NET, incluidos la [Plataforma universal de Windows (UWP)][uwp] y [Xamarin][xamarin].
+Dotfuscator Community admite una gran variedad de tipos de aplicaciones y ensamblados de .NET, incluidos la [Plataforma universal de Windows (UWP)][uwp] y [Xamarin][xamarin].
 
 ## <a name="intellectual-property-protection"></a>Protección de la propiedad intelectual
 
 El diseño, el comportamiento y la implementación de la aplicación son formas de propiedad intelectual (PI).
 En cambio, las aplicaciones creadas para .NET Framework son prácticamente libros abiertos; es muy fácil usar técnicas de ingeniería inversa en los ensamblados de .NET, [ya que contienen metadatos de alto nivel y código intermedio][assemblies].
 
-Dotfuscator CE incluye [ofuscación de .NET][obfuscation] básica en forma de [cambio de nombre][renaming].
+Dotfuscator Community incluye [ofuscación de .NET][obfuscation] básica en forma de [cambio de nombre][renaming].
 Ofuscar el código con Dotfuscator reduce el riesgo de acceso no autorizado al código fuente a través de técnicas de ingeniería inversa, ya que la información importante de nomenclatura ya no será pública.
 La ofuscación también muestra esfuerzo por su parte para proteger el código de exámenes, un paso valioso para establecer que la PI está protegida legalmente como secreto comercial.
 
-Muchas de las [características de protección de integridad de aplicación](#application-integrity-protection) de Dotfuscator CE dificultan aún más el uso de técnicas de ingeniería inversa.
+Muchas de las [características de protección de integridad de aplicación](#application-integrity-protection) de Dotfuscator Community dificultan aún más el uso de técnicas de ingeniería inversa.
 Por ejemplo, un actor perjudicial puede intentar adjuntar un depurador a una instancia en ejecución de la aplicación para comprender la lógica del programa.
 Dotfuscator puede insertar un [comportamiento contra depuración][debug] en la aplicación para impedirlo.
 
@@ -51,7 +52,7 @@ Dotfuscator puede insertar un [comportamiento contra depuración][debug] en la a
 Además de proteger el código fuente, también es importante asegurarse de que la aplicación se usa como se ha diseñado.
 Los atacantes pueden intentar atacar la aplicación para evitar directivas de licencia (es decir, piratería de software), robar o manipular datos confidenciales controlados por la aplicación, o para cambiar su comportamiento.
 
-Dotfuscator CE puede insertar [código de validación de aplicación][checks] en los ensamblados, incluidas medidas [contra alteraciones][tamper], [contra depuración][debug] y [contra dispositivos con rooting][root].
+Dotfuscator Community puede insertar [código de validación de aplicación][checks] en los ensamblados, incluidas medidas [contra alteraciones][tamper], [contra depuración][debug] y [contra dispositivos con rooting][root].
 Cuando se detecta un estado de la aplicación no válido, el código de validación puede [llamar al código de aplicación para que se haga cargo de la situación de forma adecuada][check-app].
 O bien, si prefiere no escribir código para tratar el uso no válido de la aplicación, Dotfuscator también puede insertar comportamientos de [respuesta][check-action], sin requerir ninguna modificación en el código fuente.
 
@@ -59,9 +60,9 @@ Muchos de estos métodos también se pueden usar para exigir [fechas límite de 
 
 ## <a name="see-also"></a>Vea también
 
-[Este tema en la guía de usuario completa de Dotfuscator CE][full]
+[Este tema en la guía de usuario completa de Dotfuscator Community][full]
 
-<!-- Copyright © 2017 PreEmptive Solutions, LLC -->
+<!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
 [assemblies]:  https://docs.microsoft.com/dotnet/standard/assembly-format
 [uwp]:  https://www.preemptive.com/blog/article/856-uwp-applications-in-dotfuscator-ce/91-dotfuscator-ce

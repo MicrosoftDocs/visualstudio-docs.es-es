@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fcc961a478d3e23c7a8dcf06805505b6c437ed9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 339f6477395bf8d91618298bc1618132d76b3794
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924674"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647185"
 ---
-# <a name="tabs-and-windows-environment-options-dialog-box"></a>Pestañas y ventanas, Entorno, Opciones (Cuadro de diálogo)
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>Cuadro de diálogo Opciones: Entorno \> Pestañas y ventanas
 
-Utilice esta página para establecer opciones sobre cómo se comportan las ventanas con pestañas en el panel del editor y cómo se comportan las ventanas de herramientas. Para obtener más información, vea [Personalizar los diseños de ventana de Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md).
+Use esta página para establecer opciones sobre cómo se comportan las ventanas con pestañas en el panel del editor y cómo se comportan las ventanas de herramientas. Para obtener más información, vea [Personalizar los diseños de ventana de Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md).
 
 ### <a name="see-also"></a>Vea también
 

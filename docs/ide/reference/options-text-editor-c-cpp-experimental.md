@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325219"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789996"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
 
@@ -28,7 +28,7 @@ En este artículo se describen las opciones de Visual Studio 2017. En Visual Stu
 
 ::: moniker-end
 
-Para acceder a esta página de propiedades, presione **Control** + **Q** para activar `Quick Launch` y luego escriba "experimental". Inicio rápido encuentra la página después de las primeras letras. También puede acceder a ella si elige **Herramientas** > **Opciones** y expande **Editor de texto**, luego **C/C++** y elige **Experimental**.
+Para acceder a esta página de propiedades, presione **Ctrl**+**Q** para activar el cuadro de búsqueda y luego escriba **experimental**. La búsqueda encuentra la página después de las primeras letras. También puede acceder a ella si elige **Herramientas** > **Opciones** y expande **Editor de texto**, luego **C/C++** y elige **Experimental**.
 
 Estas características están disponibles en una instalación de Visual Studio.
 

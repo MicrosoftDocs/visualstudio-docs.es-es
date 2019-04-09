@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb32a3b71a6868e763b9ad77c49f5cb06a4039fc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928041"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789710"
 ---
 # <a name="manage-project-and-solution-properties"></a>Administrar propiedades de soluciones y proyectos
 
-Los proyectos tienen propiedades que controlan muchos aspectos de la compilación, la depuración, las pruebas y la implementación. Algunas propiedades están presentes en todos los tipos de proyecto, mientras que otras son exclusivas de plataformas o idiomas específicos. Para acceder a las propiedades del proyecto, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y elija **Propiedades**, o bien escriba "propiedades" en el cuadro de búsqueda **Inicio rápido** de la barra de menús.
+Los proyectos tienen propiedades que controlan muchos aspectos de la compilación, la depuración, las pruebas y la implementación. Algunas propiedades están presentes en todos los tipos de proyecto, mientras que otras son exclusivas de plataformas o idiomas específicos. Para acceder a las propiedades del proyecto, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y elija **Propiedades** o escriba **propiedades** en el cuadro de búsqueda de la barra de menús y elija **Ventana de propiedades** en los resultados.
 
 ![Menú contextual del proyecto](../ide/media/vs2015_proj_prop_menu.gif)
 
@@ -31,9 +31,9 @@ Los proyectos de .NET también pueden tener un nodo de propiedades en el propio 
 
 Las propiedades del proyecto se organizan en grupos y cada grupo tiene su propia página de propiedades. Es posible que las páginas varíen para lenguajes y tipos de proyecto diferentes.
 
-### <a name="c-visual-basic-and-f-projects"></a>Proyectos de C#, Visual Basic y F#
+### <a name="c-visual-basic-and-f-projects"></a>Proyectos de C#, Visual Basic y F#
 
-En los proyectos de C#, F# y Visual Basic, las propiedades se exponen en el **Diseñador de proyectos**. En la siguiente ilustración se muestra la página **Propiedad de compilación** de un proyecto de WPF en C#:
+En los proyectos de C#, Visual Basic y F#, las propiedades se exponen en el **Diseñador de proyectos**. En la siguiente ilustración se muestra la página **Propiedad de compilación** de un proyecto de WPF en C#:
 
 ![Diseñador de proyectos de Visual Studio](../ide/media/vs2015_proppage_build.png)
 
