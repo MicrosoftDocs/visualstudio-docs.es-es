@@ -3,19 +3,19 @@ title: Aplicar formato a código de Python
 description: Visual Studio puede volver a formatear código de Python de forma automática incluidos los comentarios, las instrucciones, el ajuste y el espaciado.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4049576d18befb71cc71fdb85a19bcc3b0234401
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160672"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365484"
 ---
 # <a name="format-python-code"></a>Aplicar formato a código de Python
 
@@ -55,7 +55,7 @@ En las tablas siguientes se proporcionan ejemplos de las distintas opciones:
 | **Insertar espacio entre el nombre de una declaración de función y la lista de parámetros** | `def X (): pass` | `def X(): pass` |
 | **Insertar espacio en paréntesis de lista de parámetros** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **Insertar espacio en paréntesis de lista de parámetros vacía** | `def X( ): pass` | `def X(): pass` |
-| **Insertar espacios alrededor de "=" en valores de parámetro predeterminados** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **Insertar espacios alrededor de '=' en valores de parámetro predeterminados** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
 | **Insertar espacio antes y después de los operadores de anotación de valor devuelto** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>

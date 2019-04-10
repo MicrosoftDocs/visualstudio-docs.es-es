@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610351"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897691"
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
 En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento es una referencia con nombre a uno o varios archivos. Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión. Todos los tipos de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen varios elementos en común. Estos elementos se definen en el archivo *Microsoft.Build.CommonTypes.xsd*.
@@ -46,9 +46,9 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Nombre de metadatos de elementos|Descripción|
 |---------------|-----------------|
 |nombre|Cadena opcional. El nombre para mostrar del componente.|
-|GUID|Cadena opcional. GUID del componente, con el formato {12345678-1234-1234-1234-1234567891234}.|
-|VersionMajor|Cadena opcional. Parte principal del número de versión del componente. Por ejemplo, "5" si el número de versión completo es "5.46".|
-|VersionMinor|Cadena opcional. Parte secundaria del número de versión del componente. Por ejemplo, "46" si el número de versión completo es "5.46".|
+|GUID|Cadena necesaria. GUID del componente, con el formato {12345678-1234-1234-1234-1234567891234}.|
+|VersionMajor|Cadena necesaria. Parte principal del número de versión del componente. Por ejemplo, "5" si el número de versión completo es "5.46".|
+|VersionMinor|Cadena necesaria. Parte secundaria del número de versión del componente. Por ejemplo, "46" si el número de versión completo es "5.46".|
 |LCID|Cadena opcional. LocaleID del componente.|
 |WrapperTool|Cadena opcional. Nombre de la herramienta contenedor que se usa en el componente, por ejemplo, "tlbimp".|
 |Isolated|Booleano opcional. Especifica si se trata de un componente sin registro.|
@@ -76,7 +76,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |nombre|Cadena opcional. Nombre para mostrar de la referencia.|
 |Proyecto|Cadena opcional. GUID de la referencia, con el formato {12345678-1234-1234-1234-1234567891234}.|
 |Package|Cadena opcional. Ruta de acceso del archivo de proyecto al que se hace referencia.|
-|ReferenceOutputAssembly|Booleano opcional. Si se establece en `false`, no incluye la salida del proyecto al que se hace referencia como una [Referencia](#Reference) de este proyecto, pero garantiza que el otro proyecto realice compilaciones antes que este. Tiene como valor predeterminado `true`.|
+|ReferenceOutputAssembly|Booleano opcional. Si se establece en `false`, no incluye la salida del proyecto al que se hace referencia como una [Referencia](#reference) de este proyecto, pero garantiza que el otro proyecto realice compilaciones antes que este. Tiene como valor predeterminado `true`.|
 
 ### <a name="compile"></a>Compile
  Representa los archivos de código fuente para el compilador.

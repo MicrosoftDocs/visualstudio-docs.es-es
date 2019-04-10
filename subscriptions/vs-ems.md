@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja Enterprise Mobility + Security que se incluye con la suscripción de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917f4e6c2b80c2cb0b154d58effd8016f54740c3
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841200"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232663"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Beneficio de Enterprise Mobility + Security (EMS) en suscripciones de Visual Studio
 
@@ -73,6 +73,6 @@ Para usar EMS, deberá configurar una cuenta o iniciar sesión con una existente
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con EMS?  Consulte la [documentación de EMS](/enterprise-mobility-security/) en línea.
--  Para obtener soporte técnico con cualquier componente de EMS, visite las [preguntas más frecuentes de soporte de EMS](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq) para buscar el soporte adecuado para la pregunta.
+-  Para obtener soporte técnico con cualquier componente de EMS, visite las [preguntas más frecuentes de soporte de EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) para buscar el soporte adecuado para la pregunta.
 -  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 -  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

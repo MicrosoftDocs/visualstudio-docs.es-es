@@ -3,19 +3,19 @@ title: Refactorización del código de Python
 description: Visual Studio facilita la refactorización de código de Python mediante el cambio de nombre de los identificadores, la extracción de métodos, la adición de importaciones y la eliminación de las importaciones que no se usen.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5444db5b79310399fb058dc6712d5c1f8c39a3af
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: db1a551e20c597f98052471910bcb696c878675f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149450"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365217"
 ---
 # <a name="refactor-python-code"></a>Refactorización del código de Python
 

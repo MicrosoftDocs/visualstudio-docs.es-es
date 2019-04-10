@@ -12,17 +12,18 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 22276c844da259600770862327bc316243c9c239
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476077"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857819"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -31,7 +32,7 @@ ms.locfileid: "58476077"
 ¿Quiere actualizar desde una versión anterior de Visual Studio? Esto es lo que Visual Studio 2017 puede ofrecerle: Productividad incomparable para cualquier desarrollador, aplicación y plataforma. Use Visual Studio 2017 para desarrollar aplicaciones para Android, iOS, Windows, Linux, la Web y la nube. Escriba código con rapidez, depure y emita diagnósticos con facilidad, ejecute pruebas con frecuencia y publique con confianza. También puede ampliar y personalizar Visual Studio si crea sus propias extensiones. Use el control de versiones, actúe con agilidad y colabore de manera eficiente con esta versión.
 
 >[!div class="button"]
->[Descarga de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[Descargue Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 Este es un resumen general de los cambios que hemos realizado desde la versión anterior, Visual Studio 2015:
 
@@ -382,10 +383,10 @@ Si quiere realizar sugerencias sobre cómo podemos mejorar Visual Studio u obten
 
 ## <a name="see-also"></a>Vea también
 
-* [Notas de la versión de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
+* [Notas de la versión de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
 * [Novedades de Visual Studio 2017 SDK](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
-* [Novedades de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+* [Novedades de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novedades de C#](/dotnet/csharp/whats-new)
-* [Novedades de Team Foundation Server](/tfs/server/whats-new?view=vsts)
-* [Novedades de Visual Studio para Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+* [Novedades de Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Novedades de Visual Studio para Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Novedades de Visual Studio 2019](whats-new-visual-studio-2019.md)
