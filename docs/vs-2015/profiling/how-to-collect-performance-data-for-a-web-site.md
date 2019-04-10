@@ -1,5 +1,5 @@
 ---
-title: Recopilación de datos de rendimiento de un sitio web | Microsoft Docs
+title: Filtrar para recopilar datos de rendimiento de un sitio web | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,17 +19,17 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766157"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366736"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Cómo recopilar datos de rendimiento de un sitio web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Filtrar Recopilar datos de rendimiento para un sitio Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento de una aplicación web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Puede generar perfiles de una aplicación web que esté abierta en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o de un sitio web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que se encuentre en su equipo local y que no esté abierto en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento de una aplicación web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Puede generar perfiles de una aplicación web que esté abierta en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o de un sitio web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que se encuentre en su equipo local y que no esté abierto en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
 >  Con el **Asistente de rendimiento** puede agregar datos de generación de perfiles de interacción de capa (TIP), datos de rendimiento de JScript o ambos tipos de datos a los datos de generación de perfiles recopilados. La opción TIP recopila datos de los procesos del servidor. La generación de perfiles de JScript recopila datos de los scripts que se ejecutan en un sitio web local o remoto. En la mayoría de los casos, debe elegir solo una de las opciones.  
@@ -84,7 +84,7 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
   
    - Para un sitio web basado en un archivo, escriba una ruta de acceso como ///**c:\WebSites\MySite\default.aspx**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ubicada en c:\webSites\MySite y que la página http://localhost:nnnn/MySite/default.aspx se inicie en Internet Explorer para iniciar la sesión.  
   
-   - Para los sitios externos en los que quiera recopilar datos de JavaScript, escriba la dirección URL (por ejemplo, http://www.contoso.com).  
+   - Para los sitios externos que desea recopilar datos de JavaScript, escriba la dirección URL, por ejemplo, http:\//www.contoso.com.  
   
      Para obtener más información, consulte las páginas de propiedades de un binario de destino de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
@@ -105,5 +105,5 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
 ## <a name="see-also"></a>Vea también  
  [Temas de introducción](../profiling/overviews-performance-tools.md)   
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Introducción a los valores de datos de instrumentación en las herramientas de generación de perfiles](../profiling/understanding-instrumentation-data-values.md)   
+ [Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)   
  [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)

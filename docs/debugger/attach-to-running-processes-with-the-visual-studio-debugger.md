@@ -1,7 +1,7 @@
 ---
 title: Adjuntar a procesos en ejecución con el depurador | Microsoft Docs
 ms.custom: seodec18
-ms.date: 09/27/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,19 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323099"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366411"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
 Puede asociar el depurador de Visual Studio a un proceso en ejecución en un equipo local o remoto. Una vez que se ejecuta el proceso, seleccione **depurar** > **asociar al proceso** o presione **Ctrl**+**Alt** + **P** en Visual Studio y usan el **asociar al proceso** cuadro de diálogo para asociar el depurador al proceso.
 
 Puede usar **asociar al proceso** para depurar aplicaciones en ejecución en equipos locales o remotos, depurar varios procesos simultáneamente, depurar aplicaciones que no se crearon en Visual Studio o depurar cualquier aplicación que no se inició desde Visual Studio con el depurador asociado. Por ejemplo, si está ejecutando una aplicación sin el depurador y encuentra una excepción, a continuación, puede asociar al depurador al proceso que ejecuta la aplicación y comenzar la depuración.
-
-Para obtener información sobre la depuración básica en Visual Studio, consulte [primero analicemos el depurador](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > ¿No está seguro de si se debe usar **asociar al proceso** para su escenario de depuración? Consulte [comunes en escenarios de depuración](#BKMK_Scenarios).
@@ -94,19 +92,20 @@ Para obtener instrucciones más completas para depurar aplicaciones de ASP.NET q
 2. **Tipo de conexión** debe ser **predeterminado** para la mayoría de los casos. En el **destino de la conexión** , seleccione el equipo remoto, utilizando uno de los métodos siguientes:
 
    - Seleccione la flecha desplegable situada junto a **destino de la conexión**y seleccione el nombre del equipo en la lista desplegable.
-   - Escriba el nombre del equipo en el **destino de la conexión** cuadro.
-   
-     ::: moniker range="vs-2017"
+   - Escriba el nombre del equipo en el **destino de la conexión** cuadro y presione **ENTRAR**.
 
-     > [!NOTE]
-     > Si no se puede conectar con el nombre del equipo remoto, pruebe a utilizar la dirección IP y dirección de puerto (por ejemplo, `123.45.678.9:4022`). 4022 es el puerto predeterminado para el depurador remoto de Visual Studio 2017 x64. Para otras asignaciones de puerto del depurador remoto, consulte [las asignaciones de puerto del depurador remoto](remote-debugger-port-assignments.md).
-
-     ::: moniker-end
+     Compruebe que Visual Studio agrega el puerto requerido para el nombre del equipo que aparece en el formato:  **\<nombre del equipo remoto >: puerto**
 
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]
      > Si no se puede conectar con el nombre del equipo remoto, pruebe a utilizar la dirección IP y dirección de puerto (por ejemplo, `123.45.678.9:4022`). 4024 es el puerto predeterminado para el depurador remoto de Visual Studio 2019 x64. Para otras asignaciones de puerto del depurador remoto, consulte [las asignaciones de puerto del depurador remoto](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
+     ::: moniker range="vs-2017"
+
+     > [!NOTE]
+     > Si no se puede conectar con el nombre del equipo remoto, pruebe a utilizar la dirección IP y dirección de puerto (por ejemplo, `123.45.678.9:4022`). 4022 es el puerto predeterminado para el depurador remoto de Visual Studio 2017 x64. Para otras asignaciones de puerto del depurador remoto, consulte [las asignaciones de puerto del depurador remoto](remote-debugger-port-assignments.md).
 
      ::: moniker-end
 
@@ -129,7 +128,7 @@ Para obtener instrucciones más completas para depurar aplicaciones de ASP.NET q
    - Para buscar procesos que se ejecutan en todas las cuentas de usuario, seleccione el **mostrar los procesos de todos los usuarios** casilla de verificación.
 
      >[!NOTE]
-     >Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: adjuntar a un proceso que pertenezca a un usuario de confianza puede ser peligroso. Si la información siguiente le resulta sospechosa o no está seguro de su procedencia, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+     >Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: Adjuntar a un proceso que pertenezca a un usuario que no sea de confianza puede ser peligroso. Si la información siguiente parece sospechosa o no está seguro, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
 
 5. En el **adjuntar a** campo, asegúrese de que se muestra el tipo de código que se va a depurar. El valor predeterminado **automática** establecimiento funciona para la mayoría de los tipos de aplicación.
 
@@ -163,7 +162,7 @@ Para algunos tipos de aplicación, como las aplicaciones de la aplicación Unive
 
 Para que el depurador se asocie al código escrito en C++, el código debe emitir `DebuggableAttribute`. Puede agregar este atributo automáticamente al código vinculando con la opción [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) del vinculador.
 
-Para la depuración de scripts del lado cliente, la depuración de scripts debe habilitarse en el explorador. Para la depuración de script de cliente en Chrome, elija **Webkit** como el tipo de código y según el tipo de aplicación, es posible que deba cerrar todas las instancias de Chrome e iniciar el explorador en modo de depuración (tipo `chrome.exe --remote-debugging-port=9222` desde una línea de comandos).
+Para la depuración de scripts del lado cliente, la depuración de scripts debe habilitarse en el explorador. Para la depuración de script de cliente en Chrome, elija **kit Web** como el tipo de código y según el tipo de aplicación, es posible que deba cerrar todas las instancias de Chrome e iniciar el explorador en modo de depuración (tipo `chrome.exe --remote-debugging-port=9222` desde una línea de comandos).
 
 Para seleccionar rápidamente un proceso en ejecución para adjuntar a, en Visual Studio, escriba **Ctrl**+**Alt**+**P**y, a continuación, escriba la primera letra de la nombre del proceso.
 
@@ -172,7 +171,7 @@ Para seleccionar rápidamente un proceso en ejecución para adjuntar a, en Visua
 |Depuración remota de ASP.NET 4 o 4.5 en un servidor IIS|Utilizar las herramientas remotas y **asociar al proceso**|*w3wp.exe*|Consulte [ASP.NET en un equipo remoto de IIS de la depuración remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Depuración remota de ASP.NET Core en un servidor IIS|Utilizar las herramientas remotas y **asociar al proceso**|*dotnet.exe*|Implementación de aplicaciones, consulte [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, vea [remoto depuración ASP.NET Core en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Depurar script de cliente en un servidor IIS local, para los tipos de aplicación admitidos |Use **asociar al proceso**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, o *iexplore.exe*|Debe estar habilitada la depuración de scripts. Para Chrome, también debe ejecutar Chrome en modo de depuración y seleccione **código Webkit** en el **adjuntar a** campo.|
-|Depurar una aplicación de C#, Visual Basic o C++ en el equipo local|Usar [depuración estándar](../debugger/debugger-feature-tour.md) o **asociar al proceso**|*\<nombre_de_la_aplicación>.exe*|En la mayoría de los escenarios, use la depuración estándar y no **asociar al proceso**.|
+|Depurar una aplicación de C#, Visual Basic o C++ en el equipo local|Utilice cualquier depuración estándar (**F5**) o **asociar al proceso**|*\<appname>.exe*|En la mayoría de los escenarios, use la depuración estándar y no **asociar al proceso**.|
 |Depuración remota de una aplicación de escritorio de Windows|Herramientas remotas|N/D| Consulte [remoto depurar una aplicación de C# o Visual Basic](../debugger/remote-debugging-csharp.md) o [depuración remota de una aplicación de C++](../debugger/remote-debugging-cpp.md)|
 |Depurar una aplicación ASP.NET en el equipo local después de iniciar la aplicación sin el depurador|Use **asociar al proceso**|*iiexpress.exe*|Esto puede resultar útil para realizar la aplicación carga más rápida, por ejemplo, (por ejemplo) al generar perfiles. |
 |Depurar otros tipos de aplicaciones compatibles en un proceso de servidor|Si el servidor remoto, use las herramientas remotas, y **asociar al proceso**|*Chrome.exe*, *iexplore.exe*, u otros procesos|Si es necesario, utilice al Monitor de recursos para ayudar a identificar el proceso. Vea [Depuración remota](../debugger/remote-debugging.md).|
@@ -198,7 +197,7 @@ En algunos escenarios de depuración locales, puede depurar en Visual Studio sin
 
  Si desea información más específica sobre por qué el depurador no se pudo conectar a un tipo de código, intente volver a adjuntar a sólo ese tipo de código.
 
- **Para obtener información específica sobre la causa por la que no se ha asociado correctamente un tipo de código:**
+ **Para obtener información específica acerca de por qué un tipo de código no se pudo conectar:**
 
 1.  Desasocie el proceso. En el **depurar** menú, seleccione **Desasociar todo**.
 
@@ -218,6 +217,6 @@ En algunos escenarios de depuración locales, puede depurar en Visual Studio sin
 
 ## <a name="see-also"></a>Vea también
 
-- [Depuración de varios procesos](../debugger/debug-multiple-processes.md)
-- [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [Depurar varios procesos](../debugger/debug-multiple-processes.md)
+- [depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Depuración remota](../debugger/remote-debugging.md)

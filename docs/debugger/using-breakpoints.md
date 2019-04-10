@@ -34,22 +34,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea096ce0880ff3126e7aff98e037c75dc457997
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719605"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366710"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizar puntos de interrupción en el depurador de Visual Studio
 Los puntos de interrupción son una de las técnicas de depuración más importantes en el cuadro de herramientas de desarrollador. Establecer puntos de interrupción donde desee pausar la ejecución del depurador. Por ejemplo, es posible que desee ver el estado de las variables del código o examine la pila de llamadas en un determinado punto de interrupción. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Depuración para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) antes de continuar con este artículo.
 
 ##  <a name="BKMK_Overview"></a> Establezca puntos de interrupción en el código fuente
- Los puntos de interrupción pueden establecerse en cualquier línea de código ejecutable. Por ejemplo, en la siguiente C# código, puede establecer un punto de interrupción en la declaración de variable, el `for` bucle o cualquier código dentro de la `for` bucle. No se puede establecer un punto de interrupción en las declaraciones de espacio de nombres o clase, o en la firma del método.
+ Los puntos de interrupción pueden establecerse en cualquier línea de código ejecutable. Por ejemplo, en el siguiente código de C#, podría establecer un punto de interrupción en la declaración de variable, el `for` bucle o cualquier código dentro de la `for` bucle. No se puede establecer un punto de interrupción en las declaraciones de espacio de nombres o clase, o en la firma del método.
 
  Para establecer un punto de interrupción en el código fuente, haga clic en el margen izquierdo junto a una línea de código. También puede seleccionar la línea y presione **F9**, seleccione **depurar** > **Alternar puntos de interrupción**, o haga clic en y seleccione **delpuntodeinterrupción**  >  **Insertar punto de interrupción**. El punto de interrupción aparece como un punto rojo en el margen izquierdo.
 
-En C# automáticamente se resaltan el código, el punto de interrupción y líneas de ejecución actual. Para el código de C++, puede activar el resaltado de punto de interrupción y líneas actuales seleccionando **herramientas** (o **depurar**) > **opciones**  >   **Depuración** >  **resaltar la línea de código fuente completo para los puntos de interrupción y la instrucción actual (solo C++)**.
+En C# automáticamente se resaltan el código, el punto de interrupción y líneas de ejecución actual. Para C++ código, puede activar el resaltado de punto de interrupción y líneas actuales seleccionando **herramientas** (o **depurar**) > **opciones**  >  **Depuración** >  **resaltar la línea de código fuente completo para los puntos de interrupción y la instrucción actual (C++ sólo)**.
 
  ![Establezca un punto de interrupción](../debugger/media/basicbreakpoint.png "punto de interrupción básica")
 
@@ -59,7 +59,7 @@ En C# automáticamente se resaltan el código, el punto de interrupción y líne
 
  ![Ejecución de punto de interrupción detenida](../debugger/media/breakpointexecution.png "ejecución de punto de interrupción")
 
- Cuando el depurador se detiene en el punto de interrupción, puede mirar el estado actual de la aplicación, incluidos los valores de variable y la pila de llamadas. Para obtener más información sobre la pila de llamadas, vea [Ver la pila de llamadas y usar la ventana Pila de llamadas en el depurador](../debugger/how-to-use-the-call-stack-window.md).
+ Cuando el depurador se detiene en el punto de interrupción, puede mirar el estado actual de la aplicación, incluidos los valores de variable y la pila de llamadas. Para obtener más información acerca de la pila de llamadas, vea [Cómo: Utilice la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).
 
 - El punto de interrupción es un botón de alternancia. Puede hacer clic en él y presione **F9**, o bien usar **depurar** > **Alternar puntos de interrupción** para eliminar o volver a insertarlo.
 
@@ -87,7 +87,7 @@ El punto de interrupción de la pila de llamadas aparece en el **puntos de inter
 
 El depurador se interrumpe en la instrucción.
 
-Para obtener más información sobre la pila de llamadas, vea [Ver la pila de llamadas y usar la ventana Pila de llamadas en el depurador](../debugger/how-to-use-the-call-stack-window.md).
+Para obtener más información acerca de la pila de llamadas, vea [Cómo: Utilice la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).
 
 Visualmente traza puntos de interrupción durante la ejecución de código, vea [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
@@ -148,7 +148,7 @@ Visualmente traza puntos de interrupción durante la ejecución de código, vea 
     ((my_class *) 0xcccccccc)->my_method
     ```
 
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Establecer puntos de interrupción de datos (solo C++ nativo)
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Establecer puntos de interrupción de datos (solo C++ nativo)
 
  Los puntos de interrupción de datos interrumpen la ejecución cuando un valor almacenado en cambia una dirección de memoria especificada. Si el valor se lee pero no cambia, la ejecución no se interrumpe.
 
@@ -218,7 +218,7 @@ Puntos de interrupción con el conjunto de condiciones aparecen con un **+** sí
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Expresión condicional
 
-Al seleccionar **expresión condicional**, puede elegir entre dos condiciones: **es true** o **cuando cambia**. Elija **es true** para interrumpir cuando se cumple la expresión, o **cuando cambia** para interrumpir cuando el valor de la expresión ha cambiado.
+Al seleccionar **expresión condicional**, puede elegir entre dos condiciones: **Es true** o **cuando cambia**. Elija **es true** para interrumpir cuando se cumple la expresión, o **cuando cambia** para interrumpir cuando el valor de la expresión ha cambiado.
 
  En el ejemplo siguiente, se alcanza el punto de interrupción solo cuando el valor de `testInt` es **4**:
 
@@ -286,7 +286,7 @@ Incluya los valores de cadena entre comillas dobles. Puede combinar las cláusul
 
 1. Haga clic en un punto de interrupción y seleccione **acciones**. O bien, en el **configuración de punto de interrupción** ventana, mantenga el puntero sobre el punto de interrupción, seleccione el **configuración** icono y, a continuación, seleccione **acciones**.
 
-1. Escriba un mensaje en el **registrar un mensaje en la ventana de salida** campo. El mensaje puede incluir cadenas de texto genérico, los valores de variables o expresiones entre llaves y especificadores de formato ([ C# ](../debugger/format-specifiers-in-csharp.md) y [C++](../debugger/format-specifiers-in-cpp.md)) para los valores.
+1. Escriba un mensaje en el **registrar un mensaje en la ventana de salida** campo. El mensaje puede incluir cadenas de texto genérico, los valores de variables o expresiones entre llaves y especificadores de formato ([C#](../debugger/format-specifiers-in-csharp.md) y [C++](../debugger/format-specifiers-in-cpp.md)) para los valores.
 
    También puede usar las siguientes palabras clave especiales en el mensaje:
 

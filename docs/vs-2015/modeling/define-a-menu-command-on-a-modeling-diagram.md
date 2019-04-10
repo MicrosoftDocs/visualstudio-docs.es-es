@@ -1,25 +1,22 @@
 ---
 title: Definir un comando de menú en un diagrama de modelado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809108"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986820"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir un comando de menú en un diagrama de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,7 +220,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
 
-     **Solución de problemas**: si no se inicia un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
+     **Solución de problemas de**: Si un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no se inicia:  
 
     -   Si tiene más de un proyecto, asegúrese de que el proyecto VSIX está configurado como proyecto de inicio de la solución.  
 
@@ -235,7 +232,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3.  Abra el menú contextual en cualquier parte del diagrama. El comando debería aparecer en el menú.  
 
-     **Solución de problemas**: si el comando no aparece en el menú, asegúrese de que:  
+     **Solución de problemas de**: Si el comando no aparece en el menú, asegúrese de:  
 
     -   El proyecto de comando de menú aparece como componente MEF en la pestaña **Activos** de **source.extensions.manifest** en el proyecto VSIX.  
 
@@ -375,7 +372,4 @@ namespace SwapClassNames
  [Definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Editar diagramas de secuencia UML mediante la API de UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [Programación con la API de UML](../modeling/programming-with-the-uml-api.md)   
- [Ejemplo de Comando para alinear formas en un diagrama de UML](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-
+ [Ejemplo: Comando para alinear formas en un diagrama de UML](http://go.microsoft.com/fwlink/?LinkID=213809)

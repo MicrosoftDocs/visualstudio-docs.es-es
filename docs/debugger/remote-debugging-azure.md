@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 694a9f7ba6bd5870a54b6b10e028c463d47ababf
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355807"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365919"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Depuración remota de ASP.NET Core en IIS en Azure en Visual Studio
 
@@ -211,16 +211,19 @@ Descargue la versión de las herramientas remotas que coincida con su versión d
 2. En Visual Studio, haga clic en **Depurar > asociar al proceso** (Ctrl + Alt + P).
 
     > [!TIP]
-    > En Visual Studio 2017 y versiones posteriores, puede volver a adjuntar al mismo proceso adjuntado previamente, utilizando **Depurar > adjuntar al proceso...** Mayús+Alt+P
+    > En Visual Studio 2017 y versiones posteriores, puede volver a adjuntar al mismo proceso adjuntado previamente, utilizando **Depurar > adjuntar al proceso...** (Mayús + Alt + P).
 
-3. Establezca el campo calificador en  **\<nombre del equipo remoto >: puerto**.
+3. Establezca el campo calificador en  **\<nombre del equipo remoto >** y presione **ENTRAR**.
+
+    Compruebe que Visual Studio agrega el puerto requerido para el nombre del equipo que aparece en el formato:  **\<nombre del equipo remoto >: puerto**
 
     ::: moniker range=">=vs-2019"
-    **\<nombre del equipo remoto >: 4024** 2019 de Visual Studio
+    En Visual Studio 2019, debería ver  **\<nombre del equipo remoto >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<nombre del equipo remoto >: 4022** en Visual Studio 2017
+    En Visual Studio 2017, debería ver  **\<nombre del equipo remoto >: 4022**
     ::: moniker-end
+    El puerto es obligatorio. Si no ve el número de puerto, debe agregarla manualmente.
 
 4. Haga clic en **Actualizar**.
     Debería ver que algunos procesos aparecen en la ventana **Procesos disponibles** .
@@ -231,11 +234,20 @@ Descargue la versión de las herramientas remotas que coincida con su versión d
 
 5. Active  **Mostrar los procesos de todos los usuarios**.
 
-6. Escriba la primera letra de un nombre de proceso para encontrar rápidamente *dotnet.exe* (para ASP.NET Core).
+6. Escriba la primera letra del nombre de proceso para encontrar rápidamente la aplicación.
 
-   Para una aplicación ASP.NET Core, el nombre de proceso anterior era *dnx.exe*.
+    * Seleccione **dotnet.exe** (para .NET Core)
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
+      Si tiene varios procesos que muestra **dotnet.exe**, compruebe la **nombre de usuario** columna. En algunos escenarios, la **nombre de usuario** columna muestra el nombre del grupo de aplicaciones, tales como **IIS APPPOOL\DefaultAppPool**. Si ve el grupo de aplicaciones, una manera fácil de identificar el proceso correcto consiste en crear una nueva con el nombre de grupo de aplicaciones para la instancia de la aplicación que desea depurar y, a continuación, puede encontrarla fácilmente en el **nombre de usuario** columna.
+
+    * En algunos escenarios IIS, puede encontrar el nombre de la aplicación en la lista de procesos, como **MyASPApp.exe**. Puede adjuntar a este proceso en su lugar.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Haga clic en **Adjuntar**.
 
@@ -246,7 +258,7 @@ Descargue la versión de las herramientas remotas que coincida con su versión d
 
     Se alcanzará el punto de interrupción en Visual Studio.
 
-### <a name="bkmk_openports"></a> Solución de problemas Abra los puertos necesarios en Windows Server
+### <a name="bkmk_openports"></a> Solución de problemas: Abra los puertos necesarios en Windows Server
 
 En la mayoría de las instalaciones, se abren los puertos requeridos por la instalación de ASP.NET y el depurador remoto. Sin embargo, si está solucionando problemas de implementación y la aplicación se hospeda detrás de un firewall, es posible que deba comprobar que están abiertos los puertos correctos.
 
