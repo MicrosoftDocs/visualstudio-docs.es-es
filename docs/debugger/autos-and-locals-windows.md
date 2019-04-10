@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636910"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366554"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspeccionar las variables en las ventanas automático y variables locales
 
@@ -59,6 +59,19 @@ En el código C++ nativo, se debe calificar el contexto de un nombre de variable
 >-   La evaluación de algunas expresiones puede cambiar el valor de una variable o afectar de otra forma al estado del programa. Por ejemplo, evaluar `var1 = ++var2` cambia el valor de ambos `var1` y `var2`. Estas expresiones se dice que tienen [efectos](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efectos secundarios pueden producir resultados inesperados si no es consciente de ellos.
 >
 >-   La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inofensiva puede causar cambios en alguno de los bits de la variable de punto flotante.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-autos-or-locals-window"></a>Buscar en la ventana automático o variables locales
+
+Puede buscar palabras clave en las columnas Nombre, valor y tipo de la **automático** o **variables locales** ventana mediante la barra de búsqueda encima de cada ventana. Presione ENTRAR o seleccione una de las flechas para ejecutar una búsqueda. Para cancelar una búsqueda en curso, seleccione el icono "x" en la barra de búsqueda.
+
+Utilice las flechas izquierdas y derecha (MAYÚS + F3 y F3, respectivamente) navegar entre encuentra coincidencias.
+
+![Búsqueda en la ventana variables locales](../debugger/media/ee-search-locals.png "búsqueda en la ventana variables locales")
+
+Para realizar la búsqueda exhaustiva de más o menos, use el **búsqueda más profunda** lista desplegable en la parte superior de la **automático** o **variables locales** ventana Seleccionar cuántos niveles de profundidad desea buscar en objetos anidados. 
+
+::: moniker-end
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Cambiar el contexto de la ventana automático o variables locales
 

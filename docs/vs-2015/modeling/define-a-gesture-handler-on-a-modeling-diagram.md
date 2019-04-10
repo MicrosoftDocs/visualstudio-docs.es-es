@@ -1,12 +1,9 @@
 ---
 title: Definir un controlador de gestos en un diagrama de modelado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, double-click
 - UML - extending, drag and drop
@@ -14,13 +11,13 @@ ms.assetid: e5e1d70a-3539-4321-a3b1-89e86e4d6430
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3e448b14a2a24994b9f03a569b0bb568d538bc69
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722173"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996280"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definir un controlador de gestos en un diagrama de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +239,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
   
     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-    **Solución de problemas**: si no se inicia un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
+    **Solución de problemas de**: Si un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no se inicia:  
   
    -   Si tiene más de un proyecto, asegúrese de que el proyecto VSIX está configurado como proyecto de inicio de la solución.  
   
@@ -256,7 +253,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
   
 4. Arrastre un elemento desde el Explorador de UML al diagrama. Se debe llamar al controlador de arrastre.  
   
-   **Solución de problemas**: si el controlador de gestos no funciona, asegúrese de lo siguiente:  
+   **Solución de problemas de**: Si el controlador de gestos no funciona, asegúrese de:  
   
 -   El proyecto de controlador de gestos se muestra como un componente MEF en la pestaña **Activos** de **source.extensions.manifest** en el proyecto VSIX.  
   
@@ -528,6 +525,3 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
  [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Programar con la API de UML](../modeling/programming-with-the-uml-api.md)
-
-
-

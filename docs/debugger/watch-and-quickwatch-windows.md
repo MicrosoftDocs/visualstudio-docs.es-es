@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723258"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366818"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Variables de inspección con ventanas Inspección e Inspección rápida
 
@@ -91,6 +91,19 @@ Las reglas de evaluación de expresiones en el **inspección** ventana generalme
 ![Vea el error de expresión](../debugger/media/watchexpressionerror.png "Ver error de expresión")
 
 Puede aparecer un círculo con icono de dos líneas onduladas en los **inspección** ventana. Este icono significa que el depurador no evalúa la expresión debido a la dependencia potencial entre subprocesos. Evaluar el código requiere otros subprocesos en la aplicación se ejecute temporalmente, pero dado que está en modo de interrupción, normalmente se detienen todos los subprocesos de la aplicación. Permitir que otros subprocesos se ejecuten temporalmente puede tener efectos inesperados en el estado de la aplicación y del depurador que omita algunos eventos, como los puntos de interrupción y excepciones en esos subprocesos.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-watch-window"></a>Buscar en la ventana Inspección
+
+Puede buscar palabras clave en las columnas Nombre, valor y tipo de la **inspección** ventana mediante la barra de búsqueda encima de cada ventana. Presione ENTRAR o seleccione una de las flechas para ejecutar una búsqueda. Para cancelar una búsqueda en curso, seleccione el icono "x" en la barra de búsqueda.
+
+Utilice las flechas izquierdas y derecha (MAYÚS + F3 y F3, respectivamente) navegar entre encuentra coincidencias.
+
+![Búsqueda en la ventana Inspección](../debugger/media/ee-search-watch.png "búsqueda en la ventana Inspección")
+
+Para realizar la búsqueda exhaustiva de más o menos, use el **búsqueda más profunda** lista desplegable en la parte superior de la **inspección** anidadas de ventana para seleccionar cuántos niveles de profundidad desea buscar en los objetos. 
+
+::: moniker-end
 
 ### <a name="bkmk_refreshWatch"></a> Actualizar valores de comprobación
 
@@ -219,7 +232,7 @@ Para actualizar **vista dinámica** valores, seleccionados el [icono de actualiz
 Para mostrar solamente el **vista dinámica** para un objeto, agregue un **dinámica** especificador de formato después del nombre del objeto dinámico en el **inspección** ventana:
 
 - Para C#: `ObjectName, dynamic`
-- Visual Basic: `$dynamic, ObjectName`
+- En Visual Basic: `$dynamic, ObjectName`
 
 >[!NOTE]
 >- El C# depurador no vuelve a evaluar los valores de forma automática el **vista dinámica** cuando se pasa a la siguiente línea de código.
