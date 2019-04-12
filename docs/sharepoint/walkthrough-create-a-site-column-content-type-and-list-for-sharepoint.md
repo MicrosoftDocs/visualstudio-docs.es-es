@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870404"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504268"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint
   Los procedimientos siguientes muestran cómo crear columnas de sitio de SharePoint personalizadas, o *campos*, así como un tipo de contenido que usa las columnas de sitio. También muestra cómo crear una lista que usa el nuevo tipo de contenido.
@@ -46,7 +46,7 @@ ms.locfileid: "57870404"
 
 -   Ediciones compatibles de Windows y SharePoint.
 
--   Visual Studio.
+-   [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>Crear columnas de sitio personalizada
  En este ejemplo se crea una lista para la administración de los pacientes en un hospital. En primer lugar, debe crear un proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y agregar columnas de sitio, como se indica a continuación.
@@ -67,7 +67,7 @@ ms.locfileid: "57870404"
 
      Para obtener más información acerca de espacio aislado y soluciones de granja, vea [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
 
-6.  Elija la **finalizar** botón. El proyecto debe aparecer ahora en **el Explorador de soluciones**.
+6.  Elija la **finalizar** botón. El proyecto aparece ahora en **el Explorador de soluciones**.
 
 #### <a name="to-add-site-columns"></a>Para agregar columnas de sitio
 
@@ -222,6 +222,6 @@ ms.locfileid: "57870404"
 ## <a name="see-also"></a>Vea también
 - [Crear listas, tipos de contenido y columnas de sitio para SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Cómo: Crear un tipo de campo personalizado](http://go.microsoft.com/fwlink/?LinkId=192079)
+- [Filtrar Crear un tipo de campo personalizado](http://go.microsoft.com/fwlink/?LinkId=192079)
 - [Tipos de contenido](http://go.microsoft.com/fwlink/?LinkId=192080)
 - [Columnas](http://go.microsoft.com/fwlink/?LinkId=192081)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863934"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504437"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Implementar una solución de Office mediante ClickOnce
   Puede implementar su solución de Office en menos pasos si usa ClickOnce. Si publica actualizaciones, la solución las detectará e instalará automáticamente. Sin embargo, ClickOnce requiere que instale la solución por separado para cada usuario de un equipo. Por lo tanto, debe considerar el uso de Windows Installer (*.msi*) si más de un usuario ejecutará la solución en el mismo equipo.
@@ -35,7 +35,7 @@ ms.locfileid: "54863934"
 
 - [Colocar el documento de una solución en un servidor que ejecute SharePoint (solo para personalizaciones de nivel de documento)](#SharePoint)
 
-- [Crear a un instalador personalizado](#Custom)
+- [Crear un instalador personalizado](#Custom)
 
 - [Publicar una actualización](#Update)
 
@@ -92,8 +92,8 @@ ms.locfileid: "54863934"
     |Opción|Descripción|
     |------------|-----------------|
     |**Descargar los requisitos previos del sitio web del proveedor de los componentes**|Se pedirá al usuario que descargue e instale estos requisitos previos del proveedor.|
-    |**Descargar los requisitos previos de la misma ubicación que mi aplicación**|El software necesario se instala con la solución. Si elige esta opción, Visual Studio copia automáticamente todos los paquetes de requisitos previos en la ubicación de publicación. Para que esta opción funcione, los paquetes se deben encontrar en el equipo de desarrollo.|
-    |**Descargar los requisitos previos de la siguiente ubicación**|Visual Studio copia todos los paquetes de requisitos previos en la ubicación especificada y los instala con la solución.|
+    |**Descargar los requisitos previos desde la misma ubicación que mi aplicación**|El software necesario se instala con la solución. Si elige esta opción, Visual Studio copia automáticamente todos los paquetes de requisitos previos en la ubicación de publicación. Para que esta opción funcione, los paquetes se deben encontrar en el equipo de desarrollo.|
+    |**Descargar requisitos previos de la siguiente ubicación**|Visual Studio copia todos los paquetes de requisitos previos en la ubicación especificada y los instala con la solución.|
 
      Consulte [cuadro de diálogo de requisitos previos](../ide/reference/prerequisites-dialog-box.md).
 
@@ -139,7 +139,7 @@ ms.locfileid: "54863934"
  Si va a implementar una personalización de nivel de documento y desea colocar el documento en una carpeta en el equipo del usuario o que el documento esté disponible en un sitio de SharePoint, asegúrese de que Office confíe en la ubicación del documento. Consulte [conceder confianza a los documentos](../vsto/granting-trust-to-documents.md).
 
 ##  <a name="Helping"></a> Ayudar a los usuarios a instalar la solución
- Los usuarios pueden instalar la solución ejecutando el programa de instalación, abriendo el manifiesto de implementación o, en el caso de una personalización de nivel de documento, abriendo el documento directamente. El procedimiento recomendado es que los usuarios instalen la solución mediante el programa de instalación. Los otros dos enfoques no garantizan que el software necesario está instalado. Si los usuarios desean abrir el documento desde la ubicación de instalación, deben agregarlo a la lista de ubicaciones de confianza en el Centro de confianza de la aplicación de Office.
+ Los usuarios pueden instalar la solución, ejecute el programa de instalación, abriendo el manifiesto de implementación o durante la personalización de nivel de documento, abriendo el documento directamente. El procedimiento recomendado es que los usuarios instalen la solución mediante el programa de instalación. Los otros dos enfoques no garantizan que el software necesario está instalado. Si los usuarios desean abrir el documento desde la ubicación de instalación, deben agregarlo a la lista de ubicaciones de confianza en el Centro de confianza de la aplicación de Office.
 
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Abrir el documento de una personalización de nivel de documento
  Los usuarios pueden abrir el documento de una personalización de nivel de documento directamente desde la ubicación de instalación o copiando el documento en el equipo local y después abriendo la copia.
@@ -190,7 +190,7 @@ ms.locfileid: "54863934"
 ##  <a name="Put"></a> Colocar el documento de una solución en el equipo del usuario final (solo para personalizaciones de nivel de documento)
  Puede copiar el documento de la solución en el equipo del usuario final para ellos mediante la creación de una acción posterior a la implementación. De este modo, el usuario no tiene que copiar manualmente el documento desde la ubicación de instalación en su equipo después de instalar la solución. Tendrá que crear una clase que define la acción posterior a la implementación, compilar y publicar la solución, modificar el manifiesto de aplicación y volver a firmar el manifiesto de aplicación e implementación.
 
- Los procedimientos siguientes se supone que es el nombre del proyecto **ExcelWorkbook** y que publique la solución en el **C:\publish** directorio en el equipo.
+ Los procedimientos siguientes se supone que es el nombre del proyecto **ExcelWorkbook** y publicar la solución en una carpeta creada denominada **C:\publish** en el equipo.
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Crear una clase que defina la acción posterior a la implementación
 
@@ -253,7 +253,7 @@ ms.locfileid: "54863934"
 
 ### <a name="modify-the-application-manifest"></a>Modificar el manifiesto de aplicación
 
-1.  Abra el **c:\publish** directorio mediante el uso de **Explorador de archivos**.
+1.  Abra el directorio de la solución, **c:\publish**, mediante el uso de **Explorador de archivos**.
 
 2.  Abra el **archivos de la aplicación** carpeta y, a continuación, abra la carpeta que corresponde a la más reciente publican la versión de la solución.
 
@@ -336,18 +336,18 @@ ms.locfileid: "54863934"
              Cuando los usuarios abran el documento desde el sitio de SharePoint, se abrirá el documento y se instalará la personalización. Los usuarios pueden copiar el documento en el escritorio. La personalización se ejecutará igualmente porque las propiedades del documento apuntan a la ubicación de red del documento.
 
 ##  <a name="Custom"></a> Crear a un instalador personalizado
- Puede crear a un instalador personalizado para la solución de Office, en lugar de usar el programa de instalación que se crea automáticamente al publicar la solución. Por ejemplo, podría usar un script de inicio de sesión para iniciar la instalación o podría usar un archivo por lotes para instalar la solución sin interacción del usuario. Estos escenarios funcionan mejor si los requisitos previos ya están instalados en los equipos de los usuarios finales.
+ Puede crear a un instalador personalizado para la solución de Office, en lugar de usar el programa de instalación que se crea automáticamente al publicar la solución. Por ejemplo, podría utilizar un inicio de sesión en la secuencia de comandos para iniciar la instalación, o podría usar un archivo por lotes para instalar la solución sin interacción del usuario. Estos escenarios funcionan mejor si los requisitos previos ya están instalados en los equipos de los usuarios finales.
 
  Como parte del proceso de instalación personalizada, llame a la herramienta de instalación para las soluciones de Office (*VSTOInstaller.exe*), que se instala en la siguiente ubicación predeterminada:
 
- *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*
+ *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
  Si la herramienta no se encuentra en esa ubicación, puede usar el **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** o **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** clave del registro para buscar la ruta de acceso a esa herramienta.
 
  Puede usar los siguientes parámetros con *VSTOinstaller.exe*.
 
 
-| Parámetro | Definición |
+| Parámetro | de esquema JSON |
 |------------------| - |
 | /Install o /I | Instala la solución. Esta opción debe ir seguida de la ruta de acceso de un manifiesto de implementación. Puede especificar una ruta de acceso en el equipo local —un recurso compartido de archivos de convención de nomenclatura universal (UNC)—. Puede especificar una ruta de acceso local (*C:\FolderName\PublishFolder*), una ruta de acceso relativa (*publicar\\*), o una ubicación completa (*\\\ServerName\ NombreDeCarpeta* o http://<em>nombreDeServidor/nombreDeCarpeta</em>). |
 | /Uninstall o /U | Desinstala la solución. Esta opción debe ir seguida de la ruta de acceso de un manifiesto de implementación. Puede especificar que una ruta de acceso puede estar en el equipo local, en un recurso compartido de archivos UNC. Puede especificar una ruta de acceso local (*c:\FolderName\PublishFolder*), una ruta de acceso relativa (*publicar\\*), o una ubicación completa (*\\\ServerName\ NombreDeCarpeta* o http://<em>nombreDeServidor/nombreDeCarpeta</em>). |
@@ -356,11 +356,11 @@ ms.locfileid: "54863934"
 
  Al ejecutar *VSTOinstaller.exe*, es posible que aparezcan los siguientes códigos de error.
 
-|Código de error|Definición|
+|Código de error|de esquema JSON|
 |----------------|----------------|
 |0|La solución se instaló o desinstaló correctamente o se mostró la Ayuda de VSTOInstaller.|
-|-100|Una o más opciones de la línea de comandos no son válidas o se establecieron más de una vez. Para obtener más información, escriba "¿vstoinstaller /?" o bien consulte [crear un instalador personalizado para una solución de ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
-|-101|Una o varias opciones de línea de comandos no es válido. Para obtener más información, escriba “vstoinstaller/?”.|
+|-100|Una o varias opciones de línea de comandos no son válidas o se ha configurado más de una vez. Para obtener más información, escriba "¿vstoinstaller /?" o bien consulte [crear un instalador personalizado para una solución de ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
+|-101|Una o varias opciones de línea de comandos no son válidas. Para obtener más información, escriba “vstoinstaller/?”.|
 |-200|El URI del manifiesto de implementación no es válido. Para obtener más información, escriba “vstoinstaller/?”.|
 |-201|No se pudo instalar la solución porque el manifiesto de implementación no es válido. Consulte [manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md).|
 |-202|No se pudo instalar la solución porque Visual Studio Tools para la sección de Office del manifiesto de aplicación no es válido. Consulte [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).|
@@ -461,7 +461,7 @@ ms.locfileid: "54863934"
 
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)
 - [Publicar soluciones de Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Cómo: Publicar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Cómo: Instalar una solución de ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [Cómo: Publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
+- [Filtrar Publicar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Filtrar Instalar una solución de ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
+- [Filtrar Publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
 - [Crear a un instalador personalizado para una solución de office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)
