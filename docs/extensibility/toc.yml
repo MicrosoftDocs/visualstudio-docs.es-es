@@ -424,6 +424,8 @@ items:
     href: ux-guidelines/animations-for-visual-studio.md
   - name: Herramientas de evaluación
     href: ux-guidelines/evaluation-tools-for-visual-studio.md
+  - name: Compatibilidad con reconocimiento de monitor
+    href: ux-guidelines/per-monitor-awareness-extenders.md
 - name: Solución de problemas de PPP
   href: addressing-dpi-issues2.md
 - name: Catálogo y servicio de imágenes
@@ -786,9 +788,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Referencia de versión del paquete de Roslyn
     href: roslyn-version-support.md
-ms.openlocfilehash: 5b59d25db51cf7c159d54a821aaa6afa048e2228
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: b9d3039ea1d7d56081f1d1a6680124d4c7ed3d16
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841823"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477624"
