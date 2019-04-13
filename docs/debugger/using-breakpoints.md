@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504333"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537603"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizar puntos de interrupción en el depurador de Visual Studio
 Los puntos de interrupción son una de las técnicas de depuración más importantes en el cuadro de herramientas de desarrollador. Establecer puntos de interrupción donde desee pausar la ejecución del depurador. Por ejemplo, es posible que desee ver el estado de las variables del código o examine la pila de llamadas en un determinado punto de interrupción. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Depuración para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) antes de continuar con este artículo.
@@ -176,13 +176,13 @@ Los puntos de interrupción de datos en .NET Core no funcionarán para:
 
 **Para establecer un punto de interrupción de datos:**
 
-1.  En un proyecto de C++, iniciar la depuración y espere hasta que se alcanza un punto de interrupción. En el **depurar** menú, elija **nuevo punto de interrupción** > **punto de interrupción de datos**
+1. En un proyecto de C++, iniciar la depuración y espere hasta que se alcanza un punto de interrupción. En el **depurar** menú, elija **nuevo punto de interrupción** > **punto de interrupción de datos**
 
     También puede seleccionar **New** > **punto de interrupción de datos** en el **puntos de interrupción** ventana o haga clic en un elemento en el **automático**, **Inspección**, o **variables locales** ventana y seleccione **interrumpir cuando cambia el valor de**en el menú contextual.
 
-2.  En el cuadro **Dirección**, escriba una dirección de la memoria o una expresión que se evalúe como una dirección de memoria. Por ejemplo, escriba `&avar` para que se produzca una interrupción cuando cambie el contenido de la variable `avar` .
+2. En el cuadro **Dirección**, escriba una dirección de la memoria o una expresión que se evalúe como una dirección de memoria. Por ejemplo, escriba `&avar` para que se produzca una interrupción cuando cambie el contenido de la variable `avar` .
 
-3.  En el desplegable **Recuento de bytes** , seleccione el número de bytes que desea que el depurador inspeccione. Por ejemplo, si selecciona **4**, el depurador inspeccionará cuatro bytes a partir de `&avar` e interrumpirá la ejecución si alguno de esos bytes cambia de valor.
+3. En el desplegable **Recuento de bytes** , seleccione el número de bytes que desea que el depurador inspeccione. Por ejemplo, si selecciona **4**, el depurador inspeccionará cuatro bytes a partir de `&avar` e interrumpirá la ejecución si alguno de esos bytes cambia de valor.
 
 Los puntos de interrupción de datos no funcionan en las siguientes condiciones:
 -   Si un proceso que no se está depurando escribe en la ubicación de la memoria.

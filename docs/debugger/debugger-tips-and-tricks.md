@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366307"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537565"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias de productividad y trucos del depurador de Visual Studio
 
@@ -52,6 +52,10 @@ Si es difícil o requiere tiempo volver a crear un estado determinado en la apli
     ![Punto de interrupción condicional](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
 3. Si está interesado en otro tipo de condición, seleccione **filtro** en lugar de **expresión condicional** en el **configuración de punto de interrupción** cuadro de diálogo y, después, siga las sugerencias de filtro.
+
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Configurar los datos que se va a mostrar en el depurador
+
+Para C#, Visual Basic, y C++ (C++solo código /CLI), puede indicar al depurador qué información se va a mostrar con el [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) atributo. Para C++ código, puede hacer el misma uso [visualizaciones de Natvis](create-custom-views-of-native-objects.md).
 
 ## <a name="change-the-execution-flow"></a>Cambio del flujo de ejecución
 
