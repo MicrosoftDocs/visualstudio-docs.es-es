@@ -1,5 +1,5 @@
 ---
-title: Crear vistas personalizadas de objetos nativos
+title: Crear vistas personalizadas de C++ objetos
 description: Usar el marco Natvis para personalizar la forma en que Visual Studio muestra los tipos nativos en el depurador
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428809"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537582"
 ---
-# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Creación de vistas personalizadas de objetos nativos en el depurador
+# <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Crear vistas personalizadas de C++ objetos en el depurador
 
 Visual Studio *Natvis* framework personaliza la forma en que los tipos nativos aparecen en ventanas de variables del depurador, como la **variables locales** y **inspección** windows y en **DataTips**. Las visualizaciones de Natvis pueden ayudar a los tipos creados más visible durante la depuración.
 
@@ -165,7 +165,7 @@ Cuando el depurador detecta errores en una entrada de visualización, omite. Mue
 
 **Para activar los diagnósticos de Natvis:**
 
-- En **herramientas** > **opciones** (o **depurar** > **opciones**) > **depuración**  >  **Ventana de salida**, establezca **mensajes de diagnóstico de Natvis (solo C++)** a **Error**, **advertencia**, o  **Detallado**y, a continuación, seleccione **Aceptar**.
+- En **herramientas** > **opciones** (o **depurar** > **opciones**) > **depuración**  >  **Ventana de salida**, establezca **mensajes de diagnóstico de Natvis (C++ sólo)** a **Error**, **advertencia** , o **detallado**y, a continuación, seleccione **Aceptar**.
 
 Los errores aparecen en la **salida** ventana.
 

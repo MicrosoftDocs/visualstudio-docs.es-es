@@ -1,5 +1,5 @@
 ---
-title: Usar el atributo DebuggerDisplay | Microsoft Docs
+title: Mostrar información personalizada con DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680196"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537642"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Usar el atributo DebuggerDisplay (C#, Visual Basic, F#, C++ / c++ / CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué muestra el uso del atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.
 
 El atributo `DebuggerDisplay` tiene un argumento único, que es una cadena que se va a mostrar en la columna de valor de las instancias del tipo. Esta cadena puede contener llaves (`{` y `}`). El texto encerrado entre llaves se evalúa como un campo, una propiedad o un método.
@@ -32,7 +32,7 @@ La evaluación de esta llamada implícita a `ToString()` por parte del depurador
 > Si la casilla **Mostrar la estructura de los objetos en ventanas de variables** está seleccionada en el cuadro de diálogo **Herramientas / Opciones/ Depuración** , se omite el atributo `DebuggerDisplay` .
 
 > [!NOTE]
-> Para código nativo, este atributo solo se admite en C++ / c++ / código de la CLI.
+> Para código nativo, este atributo solo se admite en C++código /CLI.
 
 En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDisplay` y resultados de ejemplo.
 
@@ -43,7 +43,7 @@ En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDi
 
 `DebuggerDisplay` también puede aceptar parámetros con nombre.
 
-|Parámetros|Propósito|
+|Parámetros|Finalidad|
 |----------------|-------------|
 |`Name`, `Type`|Estos parámetros afectan a las columnas **Nombre** y **Tipo** de las ventanas de variables. (Se pueden establecer en cadenas mediante la misma sintaxis que el constructor). El uso excesivo o incorrecto de estos parámetros puede generar resultados confusos.|
 |`Target`, `TargetTypeName`|Especifica el tipo de destino cuando se utiliza el atributo en el nivel de ensamblado.|
