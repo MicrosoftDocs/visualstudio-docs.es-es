@@ -3,25 +3,35 @@ items:
   href: index.yml
   items:
   - name: Información general
-    href: visual-studio-tools-for-docker.md
-  - name: 'Inicio rápido: Docker en Visual Studio'
-    href: docker-tools.md
-  - name: 'Tutorial: Aplicación de varios contenedor con Docker Compose'
-    href: tutorial-multicontainer.md
-  - name: 'Tutorial: Kubernetes en Visual Studio'
-    href: tutorial-kubernetes-tools.md
-  - name: Depuración de aplicaciones en un contenedor de Docker local
-    href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: Implementación en un registro de contenedor
-    href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: Implementación en Azure App Service
-    href: docker-deploy-app-service.md
-  - name: Solución de problemas de desarrollo de Visual Studio con Docker
-    href: vs-azure-tools-docker-troubleshooting-docker-errors.md
+    href: overview.md
+  - name: Inicio rápido
+    items:
+    - name: Herramientas de contenedor en Visual Studio
+      href: container-tools.md
+    expanded: true
+  - name: Tutoriales
+    items:
+    - name: 'Tutorial: Aplicación de varios contenedor con Docker Compose'
+      href: tutorial-multicontainer.md
+    - name: 'Tutorial: Kubernetes en Visual Studio'
+      href: tutorial-kubernetes-tools.md
+    expanded: true
+  - name: Cómo
+    items:
+    - name: Depuración de aplicaciones en un contenedor de Docker local
+      href: edit-and-refresh.md
+    - name: Implementación en un registro de contenedor
+      href: hosting-web-apps-in-docker.md
+    - name: Implementación en Azure App Service
+      href: deploy-app-service.md
+    - name: Configuración de las herramientas de contenedor
+      href: container-tools-configure.md
+  - name: Solución de problemas
+    href: troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 75905587ed44c64495610bd76c8dab63664c2bb2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e667c577f9cf618139246145ff08edc9233903f3
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354822"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537694"
