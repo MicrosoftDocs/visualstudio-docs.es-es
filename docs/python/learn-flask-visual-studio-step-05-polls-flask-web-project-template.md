@@ -4,23 +4,23 @@ titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Flask en el contexto de los proyectos de Visual Studio, en particular las características de las plantillas Proyecto web de Flask de sondeos y Proyecto web de Flask/Jade de sondeos.
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77c33bc24162af0aacba9e86108a4301cdb882e6
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 734a192a00ee0c509ed16e71a8629837155888ae
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195195"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366151"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Paso 5: Uso de la plantilla de proyecto web de sondeos de Flask
 
-**Paso anterior: [Uso de la plantilla de proyecto web completa de Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Paso anterior: [Usar la plantilla de proyecto web completa de Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Ahora que conoce la plantilla "Proyecto web de Flask" de Visual Studio, podemos analizar la tercera plantilla de Flask, "Proyecto web de Flask de sondeos", que se basa en el mismo código base.
 

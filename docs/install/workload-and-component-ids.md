@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b96088a2107ae826067287aee9f306aa0f590329
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 02229fd346ec1ead65e778fcce3ab6cb307e2656
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324044"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018303"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Identificadores de cargas de trabajo y componentes de Visual Studio
 
@@ -40,7 +40,7 @@ Haga clic en los nombres de edición de la tabla siguiente para ver los identifi
 | [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md?vs-2017) | Microsoft.VisualStudio.Product.WDExpress | Cree aplicaciones nativas y administradas como WPF, WinForms y Win32 con edición de código compatible con la sintaxis, control de código fuente y administración de elementos de trabajo. Incluye compatibilidad con C#, Visual Basic y Visual C++. |
 | [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md?vs-2017) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools le permite compilar aplicaciones administradas y nativas basadas en MSBuild sin necesitar el IDE de Visual Studio. Hay opciones para instalar bibliotecas y compiladores de Visual C++, MFC, ATL y compatibilidad con C++ o CLI. |
 | [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md?vs-2017)  | Microsoft.VisualStudio.Product.TestAgent | Admite la ejecución de pruebas automatizadas y la carga de pruebas de manera remota |
-| [Visual&nbsp;Studio Test&nbsp;Controller 2017 ](workload-component-id-vs-test-controller.md?vs-2017) | Microsoft.VisualStudio.Product.TestController | Distribuye las pruebas automatizadas en varias máquinas |
+| [Visual&nbsp;Studio Test&nbsp;Controller 2017](workload-component-id-vs-test-controller.md?vs-2017) | Microsoft.VisualStudio.Product.TestController | Distribuye las pruebas automatizadas en varias máquinas |
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
 | [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 
@@ -63,6 +63,9 @@ Para obtener más información sobre cómo usar estos identificadores, vea [Uso 
 | [Visual&nbsp;Studio Load&nbsp;Test&nbsp;Controller 2019](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | Distribuye las pruebas automatizadas en varias máquinas |
 
 Para obtener más información sobre cómo usar estas listas, vea las páginas [Uso de parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) y [Cómo: Migrar proyectos de extensibilidad a Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019).
+
+> [!NOTE]
+> Para obtener una lista de los identificadores de componente y carga de trabajo para la versión anterior, vea [Identificadores de cargas de trabajo y componentes de Visual Studio 2017](workload-and-component-ids.md?view=vs-2017).
 
 ::: moniker-end
 

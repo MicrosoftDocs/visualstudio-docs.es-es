@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Paso 2 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, entre otras, la edición de código y la ejecución de un proyecto.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843096"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366437"
 ---
 # <a name="step-2-write-and-run-code"></a>Paso 2: Escritura y ejecución de código
 
@@ -89,11 +89,11 @@ Aunque el **Explorador de soluciones** es donde se administran los archivos del 
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Usar la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+> [Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Editar código](editing-python-code-in-visual-studio.md)
 - [Código de formato](formatting-python-code.md)
-- [Refactorización de código](refactoring-python-code.md)
+- [Refactorizar código](refactoring-python-code.md)
 - [Usar PyLint](linting-python-code.md)

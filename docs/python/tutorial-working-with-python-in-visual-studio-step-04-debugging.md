@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Paso 4 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, que trata cómo ejecutar código de Python en el depurador.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716511"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366801"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 
@@ -101,7 +101,7 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Instalar paquetes en un entorno de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+> [Instalación de paquetes en el entorno de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 

@@ -2,7 +2,7 @@
 title: Novedades de Visual Studio 2019
 titleSuffix: ''
 description: Obtenga más información sobre las nuevas características de Visual Studio 2019.
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f75f1172e96e3dc2576a199949fdbb0c32f68
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866749"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018160"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
@@ -166,7 +166,7 @@ Obtenga una instantánea de la ejecución de la aplicación en la nube para ver 
 
 Agregamos compatibilidad con las aplicaciones de ASP.NET (escritorio y core) que se ejecutan en máquinas virtuales (VM) de Azure. Además, agregamos compatibilidad con las aplicaciones que se ejecutan en Azure Kubernetes Service. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
 
-Para más información, consulte la página sobre la [depuración de aplicaciones Azure de ASP.NET activas con Snapshot Debugger](../debugger/debug-live-azure-applications.md).
+Para más información, vea la página [Depuración de aplicaciones de Azure de ASP.NET en vivo con Snapshot Debugger](../debugger/debug-live-azure-applications.md) y la entrada de blog [Introducing Time Travel Debugging for Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) (Presentación de la depuración de viaje en el tiempo para Visual Studio Enterprise 2019).
 
 ## <a name="give-us-feedback"></a>Envíenos sus comentarios.
 

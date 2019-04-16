@@ -11,18 +11,18 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a25c7aa9404cf0a10b6c55313016c30577eef504
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151172"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365803"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opciones de Python en Visual Studio
 
@@ -47,7 +47,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 | Opción | Default | Descripción |
 | --- | --- | --- |
 | **Mostrar la Ventana de salida al crear entornos virtuales**| Activado | Desactívela para evitar que aparezca la ventana de **salida**. |
-| **Mostrar la ventana de salida al instalar o desinstalar paquetes** | Activado | Desactívela para evitar que aparezca la ventana de **salida**. |
+| **Mostrar la Ventana de salida al instalar o desinstalar paquetes** | Activado | Desactívela para evitar que aparezca la ventana de **salida**. |
 | **Mostrar barra de notificaciones para crear entornos** | Activado | *Solo Visual Studio 2019.* Cuando se establece esta opción y el usuario abre un proyecto que contiene un archivo *requirements.txt* o *environment.yml*, Visual Studio muestra una barra de información con sugerencias para crear un entorno virtual o un entorno de Conda, respectivamente, en lugar de usar el entorno global predeterminado. |
 | **Mostrar barra de notificaciones para instalar paquetes** | Activado | *Solo Visual Studio 2019.* Cuando se establece esta opción y el usuario abre un proyecto que contiene un archivo *requirements.txt* (y no usa el entorno global predeterminado), Visual Studio compara esos requisitos con los paquetes instalados en el entorno actual. Si falta algún paquete, Visual Studio pide instalar esas dependencias. |
 | **Ejecutar siempre los administradores de paquetes como administrador** | Desactivado | Siempre eleva `pip install` y operaciones de administrador de paquetes similares de todos los entornos. Al instalar paquetes, Visual Studio solicita privilegios de administrador si el entorno está situado en un área protegida del sistema de archivos como *c:\Program Files*. En esa solicitud, puede elegir elevar siempre el comando de instalación solo para ese entorno. Consulte la [pestaña Paquetes](python-environments-window-tab-reference.md#packages-tab). |
@@ -87,7 +87,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 | --- | --- | --- |
 | **Preguntar antes de ejecutar si hay errores** | Activado | Cuando se establece, le pide que confirme que quiere ejecutar código que contiene errores. Desactive esta opción para deshabilitar la advertencia. |
 | **Esperar a la entrada cuando el proceso termine de forma anómala**<br/><br/>**Esperar a la entrada cuando el proceso termine de manera correcta** | Activado (para ambos) | Un programa de Python iniciado desde Visual Studio se ejecuta en su propia ventana de consola. De manera predeterminada, la ventana espera a que presione una tecla antes de cerrarla independientemente de cómo finaliza el programa. Para quitar ese mensaje y cerrar la ventana automáticamente, desactive una o ambas opciones. |
-| **Resultado del programa tee en la ventana de salida de depuración** | Activado | **Muestra el resultado del programa en una ventana de consola independiente y en la ventana de salida de Visual Studio**. Desactive esta opción para mostrar el resultado solo en la ventana de consola independiente. |
+| **Resultado del programa tee en la Ventana de salida de depuración** | Activado | **Muestra el resultado del programa en una ventana de consola independiente y en la ventana de salida de Visual Studio**. Desactive esta opción para mostrar el resultado solo en la ventana de consola independiente. |
 | **Interrumpir en la excepción SystemExit con el código de salida de cero** | Desactivado | Si se establece, detiene el depurador en esta excepción. Cuando se desactiva, el depurador se cierra sin interrupción. |
 | **Habilitar el depurado de la biblioteca estándar de Python** | Desactivado | Hace posible la depuración paso a paso por instrucciones del código fuente de biblioteca estándar durante la depuración, pero aumenta el tiempo que tarda el depurador en comenzar.|
 | **Mostrar el valor devuelto de la función** | Activado | *Solo Visual Studio 2019.* Muestra los valores devueltos de función en la ventana **Locals** (Variables locales) y luego pasa por encima de una llamada de función en el depurador (F10). |
@@ -106,7 +106,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 | Opción | Default | Descripción |
 | --- | --- | --- |
-| **Incluir registros de análisis** | Activado | Incluye registros detallados relacionados con el análisis de los entornos de Python instalados al guardar el diagnóstico en un archivo o copiarlo en el Portapapeles mediante los botones. Esta opción puede aumentar significativamente el tamaño del archivo generado, pero a menudo es necesaria para diagnosticar problemas de IntelliSense. |
+| **Incluye registros de análisis** | Activado | Incluye registros detallados relacionados con el análisis de los entornos de Python instalados al guardar el diagnóstico en un archivo o copiarlo en el Portapapeles mediante los botones. Esta opción puede aumentar significativamente el tamaño del archivo generado, pero a menudo es necesaria para diagnosticar problemas de IntelliSense. |
 | **Guardar diagnóstico en archivo** (botón) | N/D | Solicita un nombre de archivo y, a continuación, guarda el registro en un archivo de texto. |
 | **Copiar diagnóstico en Portapapeles** (botón) | N/D | Coloca la totalidad del registro en el Portapapeles; esta operación puede tardar algún tiempo según el tamaño del registro. |
 
@@ -157,7 +157,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 | --- | --- | --- |
 | **Confirmado escribiendo los siguientes caracteres** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Normalmente, estos caracteres siguen un identificador que puede seleccionarse de una lista de finalización, por lo que es conveniente confirmar la finalización simplemente escribiendo un carácter. Puede quitar o agregar caracteres específicos a la lista según se quiera.  |
 | **Entrar confirma la finalización actual** | Activado | Cuando se establece, la tecla **Entrar** selecciona y aplica la finalización seleccionada actualmente como sucede con los caracteres anteriores (pero, por supuesto, no existe un carácter para **Entrar** por lo que no puede estar en esa lista directamente). |
-| **Agregar nueva línea con Entrar al final de palabras completas** | Desactivado | De manera predeterminada, si escribe la palabra completa que aparece en el elemento emergente de finalización y presiona **Entrar**, confirma esa finalización. Al establecer esta opción, las finalizaciones se confirman de manera eficaz al dejar de escribir el identificador, de manera que **Entrar** inserta una línea nueva. |
+| **Agregar nueva línea al presionar Entrar al final de una palabra** | Desactivado | De manera predeterminada, si escribe la palabra completa que aparece en el elemento emergente de finalización y presiona **Entrar**, confirma esa finalización. Al establecer esta opción, las finalizaciones se confirman de manera eficaz al dejar de escribir el identificador, de manera que **Entrar** inserta una línea nueva. |
 
 ### <a name="miscellaneous-options"></a>Otras opciones
 

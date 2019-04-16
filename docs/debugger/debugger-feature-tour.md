@@ -1,8 +1,8 @@
 ---
-title: Depuración de aplicaciones con Visual Studio
+title: Primer vistazo al depurador
 description: Empiece a depurar aplicaciones mediante el depurador de Visual Studio
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428692"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366775"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -188,7 +188,7 @@ En este ejemplo, la llamada a `DirectoryInfo` ha producido el error en la cadena
 El Asistente de excepciones es una característica excelente que puede ayudar a depurar errores. También se pueden hacer cosas como ver detalles de errores y agregar una inspección desde el Asistente de excepciones. O bien, si fuera necesario, se pueden cambiar las condiciones para producir la excepción concreta. Para más información sobre cómo controlar las excepciones en el código, vea [Técnicas y herramientas de depuración](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> El Asistente de excepciones ha reemplazado al de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> El Asistente de excepciones ha reemplazado al Asistente de excepciones a partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda el nodo **Configuración de excepciones** para ver más opciones para controlar este tipo de excepción sin necesidad de cambiar nada de este paseo.
 

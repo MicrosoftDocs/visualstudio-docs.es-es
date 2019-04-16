@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio,en particular los pasos para crear una aplicación y utilizar vistas y plantillas.
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 696bb664cb7dd63e6b6964fca5d999652723d240
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955666"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366918"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2: Creación de una aplicación de Django con vistas y plantillas de página
 
@@ -51,8 +51,8 @@ Con cualquiera de estos métodos, cree una aplicación con el nombre "HelloDjang
 | Elemento | Descripción |
 | --- | --- |
 | **\_\_init\_\_.py** | El archivo que identifica la aplicación como un paquete. |
-| **migrations** | Una carpeta en la que Django almacena los scripts que actualizan la base de datos para adaptarlos a los cambios de los modelos. Las herramientas de migración de Django aplican entonces los cambios necesarios a cualquier versión anterior de la base de datos para que coincida con los modelos actuales. Con las migraciones, mantiene el foco en los modelos y permite que Django controle el esquema de base de datos subyacente. Las migraciones se tratan en el paso 6; por ahora, la carpeta contiene simplemente un archivo *\_\_init\_\_.py* (que indica que la carpeta define su propio paquete de Python). |
-| **templates** | Carpeta para las plantillas de página de Django que contienen un único archivo *index.html* dentro de una carpeta que coincide con el nombre de la aplicación. (En Visual Studio 2017 15.7 y versiones anteriores, el archivo se encuentra directamente en *Plantillas* y en los pasos del 2 al 4 se insta al usuario a crear la subcarpeta). Las plantillas son bloques de HTML en las que las vistas pueden agregar información para representar una página de forma dinámica. Las "variables" de la plantilla de la página, como `{{ content }}` en *index.html*, son marcadores de posición para valores dinámicos, como se explica más adelante en este artículo (paso 2). Las aplicaciones de Django normalmente crean un espacio de nombres colocándolas en una subcarpeta que coincida con el nombre de la aplicación. |
+| **Migraciones** | Una carpeta en la que Django almacena los scripts que actualizan la base de datos para adaptarlos a los cambios de los modelos. Las herramientas de migración de Django aplican entonces los cambios necesarios a cualquier versión anterior de la base de datos para que coincida con los modelos actuales. Con las migraciones, mantiene el foco en los modelos y permite que Django controle el esquema de base de datos subyacente. Las migraciones se tratan en el paso 6; por ahora, la carpeta contiene simplemente un archivo *\_\_init\_\_.py* (que indica que la carpeta define su propio paquete de Python). |
+| **Python** | Carpeta para las plantillas de página de Django que contienen un único archivo *index.html* dentro de una carpeta que coincide con el nombre de la aplicación. (En Visual Studio 2017 15.7 y versiones anteriores, el archivo se encuentra directamente en *Plantillas* y en los pasos del 2 al 4 se insta al usuario a crear la subcarpeta). Las plantillas son bloques de HTML en las que las vistas pueden agregar información para representar una página de forma dinámica. Las "variables" de la plantilla de la página, como `{{ content }}` en *index.html*, son marcadores de posición para valores dinámicos, como se explica más adelante en este artículo (paso 2). Las aplicaciones de Django normalmente crean un espacio de nombres colocándolas en una subcarpeta que coincida con el nombre de la aplicación. |
 | **admin.py** | El archivo de Python en el que amplía la interfaz administrativa de la aplicación (vea el paso 6), que se usa para inicializar y editar datos en una base de datos. Inicialmente, este archivo contiene solo la instrucción, `from django.contrib import admin`. De forma predeterminada, Django incluye una interfaz de administración estándar a través de entradas en el archivo *settings.py* del proyecto de Django, que puede activar quitando las marcas de comentario de las entradas existentes en *urls.py*. |
 | **apps.py** | Un archivo de Python que define una clase de configuración para la aplicación (vea a continuación, después de esta tabla). |
 | **models.py** | Los modelos son objetos de datos, identificados por funciones, a través de los cuales las vistas interactúan con la base de datos subyacente de la aplicación (vea el paso 6). Django proporciona el nivel de conexión de base de datos para que las aplicaciones no tengan que preocuparse por estos detalles. El archivo *models.py* es una ubicación predeterminada para crear los modelos, e inicialmente contiene solo la instrucción, `from django.db import models`. |
@@ -272,7 +272,7 @@ Respuesta: Cuando Django busca una plantilla a la que se hace referencia en la f
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Atender archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
+> [Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 

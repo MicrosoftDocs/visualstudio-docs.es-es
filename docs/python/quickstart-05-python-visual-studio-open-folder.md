@@ -3,20 +3,20 @@ title: 'Inicio rápido: Apertura de una carpeta de código de Python'
 description: En este inicio rápido, abrirá y ejecutará código de Python desde una carpeta sin usar un proyecto de Visual Studio (solo Visual Studio 2019).
 ms.date: 03/12/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354913"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366125"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Inicio rápido: Apertura y ejecución de código de Python en una carpeta
 
@@ -113,4 +113,4 @@ En tales casos, también debe agregar una línea al archivo JSON de configuraci�
 
 - [Inicio rápido: Creación de un proyecto de Python a partir del código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 - [Inicio rápido: Creación de un proyecto de Python a partir de un repositorio](quickstart-03-python-in-visual-studio-project-from-repository.md)
-- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente)
+- [Identificación manual de un intérprete de Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

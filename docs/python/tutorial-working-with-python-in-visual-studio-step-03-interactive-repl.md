@@ -4,23 +4,23 @@ titleSuffix: ''
 description: Paso 3 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, que trata sobre la ventana interactiva REPL de Python.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a1e4d87f86610fd009e3f8c07e8fd935e76abba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909679"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366827"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Paso 3: Uso de la ventana interactiva de REPL
 
-**Paso anterior: [Escritura y ejecución de código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Paso anterior: [Escribir y ejecutar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 La ventana **interactiva** de Visual Studio para Python proporciona una experiencia de lectura-evaluación-impresión-repetición (REPL) que reduce considerablemente el ciclo habitual de edición-compilación-depuración. La ventana **interactiva** proporciona todas las funciones de la experiencia de REPL de la línea de comandos de Python. También resulta muy fácil intercambiar el código con archivos de código fuente en el editor de Visual Studio, que en otros casos es complicado con la línea de comandos.
 
@@ -93,9 +93,9 @@ La ventana **interactiva** de Visual Studio para Python proporciona una experien
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Ejecutar código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+> [Ejecución de código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Uso de la ventana interactiva](python-interactive-repl-in-visual-studio.md)
-- [Uso de IPython en la ventana interactiva](interactive-repl-ipython.md)
+- [Uso de IPython en la ventana interactiva (REPL)](interactive-repl-ipython.md)

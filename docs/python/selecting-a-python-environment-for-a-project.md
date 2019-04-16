@@ -3,19 +3,19 @@ title: Seleccionar un entorno y un intérprete de Python para un proyecto
 description: En concreto, puede seleccionar un entorno de Python, incluido Anaconda y entornos virtuales, para aplicarlo a un proyecto específico.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bf1937c92f5da234ab72934c5acd52bc9cd0a6b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 9d7736365e8e2bb371a71580492401bb2660fcc3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194968"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366190"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Cómo seleccionar un entorno de Python para un proyecto
 

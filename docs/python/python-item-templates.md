@@ -3,19 +3,19 @@ title: Plantillas de elementos para proyectos de Python
 description: Una lista de referencia de las plantillas de elementos para un proyecto de Python que están disponibles a través del cuadro de diálogo Agregar > Nuevo elemento en Visual Studio.
 ms.date: 12/06/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 119ce4b4221995bdbe3225c895defd5d471377d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924700"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366463"
 ---
 # <a name="python-item-templates"></a>Plantillas de elementos de Python
 
@@ -48,6 +48,6 @@ En la tabla siguiente se explica brevemente el efecto de cada plantilla de eleme
 
 ## <a name="see-also"></a>Vea también
 
-- [Proyectos de Python - Plantillas de proyecto](managing-python-projects-in-visual-studio.md#project-templates)
+- [Proyectos de Python: plantillas de proyecto](managing-python-projects-in-visual-studio.md#project-templates)
 - [Plantillas de proyecto web de Python](python-web-application-project-templates.md)
 - [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

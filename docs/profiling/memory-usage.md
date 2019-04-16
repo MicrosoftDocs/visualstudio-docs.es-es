@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868996"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232780"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medición del uso de memoria en Visual Studio
 
@@ -54,13 +54,13 @@ En este tutorial va a:
 
 4.  Elija **Uso de memoria** con la opción **Seleccionar herramientas** en la barra de herramientas.
 
-     ![Mostrar herramientas de diagnóstico](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Mostrar herramientas de diagnóstico](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5.  Haga clic en **Depurar / Iniciar depuración** (o **Inicio** en la barra de herramientas o **F5**).
 
      Cuando la aplicación finaliza la carga, se muestra la vista Resumen de las herramientas de diagnóstico.
 
-     ![Pestaña Resumen de herramientas de diagnóstico](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Pestaña Resumen de herramientas de diagnóstico](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      >  Dado que la recopilación de datos de memoria puede afectar al rendimiento de depuración de las aplicaciones nativas o de modo mixto, las instantáneas de memoria están deshabilitadas de forma predeterminada. Para habilitar las instantáneas en aplicaciones nativas o de modo mixto, inicie una sesión de depuración (tecla de método abreviado: **F5**). Cuando aparezca la ventana **Herramientas de diagnóstico**, seleccione la pestaña **Uso de memoria** y luego elija **Generación de perfiles de montón**.
@@ -150,7 +150,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
 
 - Elija el vínculo de cambio en una celda de la tabla de resumen de la pestaña **Uso de memoria** en la ventana **Herramientas de diagnóstico** .
 
-   ![Elegir un informe de cambio &#40;dif&#41;f](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![Elegir un informe de cambio &#40;diff&#41;](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - Elija una instantánea de la lista **Comparar con** en un informe administrado o nativo.
 
@@ -162,13 +162,13 @@ El informe de cambios agrega columnas (marcadas con **(Dif.)**) al informe base,
 
 ## <a name="blogs-and-videos"></a>Blogs y vídeos
 
-[Analyze CPU and Memory While Debugging](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/) (Análisis de la CPU y la memoria durante la depuración)
+[Analyze CPU and Memory While Debugging (Análisis de la CPU y la memoria durante la depuración)](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Blog de Visual C++: Generación de perfiles de memoria en Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
+[Visual C++ Blog: Memory Profiling in Visual C++ 2015 (Blog de Visual C++: Generación de perfiles de memoria en Visual C++ 2015)](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 En este tutorial, ha aprendido cómo recopilar y analizar los datos de uso de la memoria. Si ha completado el [paseo por el generador de perfiles](../profiling/profiling-feature-tour.md), puede que desee obtener una visión rápida de cómo analizar el uso de la CPU en las aplicaciones.
 
 > [!div class="nextstepaction"]
-> [Análisis del uso de la CPU](../profiling/beginners-guide-to-performance-profiling.md)
+> [Analizar el uso de CPU](../profiling/beginners-guide-to-performance-profiling.md)

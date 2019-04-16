@@ -3,19 +3,19 @@ title: Definición de comandos de menú personalizados para proyectos de Python
 description: Mediante la edición del proyecto y los archivos de destinos, se pueden agregar comandos personalizados al menú contextual del proyecto Python en Visual Studio para invocar programas ejecutables, scripts, módulos, fragmentos de código insertados y pip.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943095"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366723"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definir comandos personalizados para proyectos de Python
 
@@ -379,7 +379,7 @@ Indica que el contenido de los elementos `<Target>` o `<CreatePythonCommandItem>
 - El atributo `Target` necesario está vacío.
 - El atributo `TargetType` necesario está vacío o contiene un valor no reconocido.
 - El atributo `ExecuteIn` necesario está vacío o contiene un valor no reconocido.
-- Se ha especificado `ErrorRegex` o `WarningRegex` sin definir `ExecuteIn="output"`.
+- `ErrorRegex` o `WarningRegex` se han especificado sin configurar `ExecuteIn="output"`.
 - Existen atributos no reconocidos en el elemento. Por ejemplo, puede que haya usado `Argumnets` (mal escrito) en lugar de `Arguments`.
 
 Los valores de atributo pueden estar vacíos si se hace referencia a una propiedad que no está definida. Por ejemplo, si usa el token `$(StartupFile)`, pero no ha definido ningún archivo de inicio en el proyecto, el token se resuelve como una cadena vacía. En tales casos, conviene definir un valor predeterminado. Por ejemplo, los comandos **Iniciar servidor** e **Iniciar el servidor de depuración** definidos en las plantillas de proyecto de Bottle, Flask y Django se establecen de forma predeterminada en *manage.py* si no se ha especificado un archivo de inicio del servidor en las propiedades del proyecto.

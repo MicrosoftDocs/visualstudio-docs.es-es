@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Flask en el contexto de los proyectos de Visual Studio, en particular los pasos para crear una aplicación y usar vistas y plantillas.
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b3a333482590e284c5cbbc1ec44093a835c76db0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2526a6bcf6dc03379c22e38fb646acba450a9ec5
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912809"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366606"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Paso 2: Creación de una aplicación de Flask con vistas y plantillas de página
 
@@ -215,7 +215,7 @@ Respuesta: Sí, se pueden usar subcarpetas y luego hacer referencia a la ruta de
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Atender archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
+> [Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 

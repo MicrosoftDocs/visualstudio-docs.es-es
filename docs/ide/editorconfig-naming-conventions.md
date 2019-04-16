@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983279"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232598"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura .NET para EditorConfig
 
@@ -76,8 +76,21 @@ En la lista siguiente se muestran los valores permitidos y puede especificar var
 - private\_protected
 - locales
 
-> [!NOTE]
-> No especifique un nivel de accesibilidad como parte de la convención de nomenclatura si la accesibilidad no es aplicable al tipo de símbolo que ha tomado como destino. Por ejemplo, los parámetros no tienen niveles de accesibilidad. Si especifica un nivel de accesibilidad para una convención de nomenclatura de parámetros, la regla de nomenclatura no funcionará correctamente.
+   El nivel de accesibilidad `local` se aplica a los símbolos definidos dentro de un método. Es útil para definir las convenciones de nomenclatura de los símbolos cuya accesibilidad no puede especificarse en el código. Por ejemplo, si especifica `applicable_accessibilities = local` en una convención de nomenclatura para las constantes (`required_modifiers = const`), la regla se aplica únicamente a las constantes definidas dentro de un método y no a las definidas en un tipo.
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>Modificadores de símbolo (opcionales)
 
@@ -198,4 +211,4 @@ Si cierra y vuelve a abrir el archivo de código, en lugar de ver la sugerencia 
 
 - [Lenguaje .NET y convenciones de formato](../ide/editorconfig-code-style-settings-reference.md)
 - [Crear opciones del editor personalizadas y portátiles](../ide/create-portable-custom-editor-options.md)
-- [Archivo .editorconfig de la plataforma de compilación .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [Archivo .editorconfig de .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
