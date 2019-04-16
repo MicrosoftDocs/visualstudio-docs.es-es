@@ -9,21 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867860"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232715"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Buscar cambios en el código y otro historial con CodeLens
 
 CodeLens le permite averiguar qué ocurrió con el código mientras sigue centrado en su trabajo sin dejar el editor. Puede buscar referencias de una parte del código, cambios de código, errores vinculados, elementos de trabajo, revisiones de código y pruebas unitarias.
 
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Los indicadores de CodeLens del control de código fuente no están disponibles en la edición Visual Studio Community.
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> CodeLens solo está disponible en las ediciones Visual Studio Enterprise y Visual Studio Professional. No está disponible en la edición Visual Studio Community.
+> CodeLens solo está disponible en las ediciones Visual Studio Enterprise y Professional. No está disponible en la edición Visual Studio Community.
 
 ::: moniker-end
 
@@ -41,7 +48,7 @@ Para elegir qué indicadores desea ver, o para activar o desactivar CodeLens, va
 
 Puede buscar referencias en código de C# o de Visual Basic.
 
-1. Elija el indicador **referencias** o pulse**Alt**+**2**.
+1. Elija el indicador **referencias** o presione **Alt**+**2**.
 
    ![Referencias de CodeLens](../ide/media/codelens-view-references.png)
 
@@ -60,15 +67,15 @@ Para ver las relaciones entre este código y sus referencias, [cree un mapa de c
 
 ![CodeLens - Referencias en el mapa de código](../ide/media/codelensmappedreferences.png)
 
-## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Buscar cambios en el código
+## <a name="find-changes-in-your-code"></a>Buscar cambios en el código
 
 Inspeccione el historial del código para averiguar qué ocurrió. O bien, revise esos cambios antes de combinarlos con su código para saber cómo los cambios de otras bifurcaciones podrían afectarlo.
 
 Es necesario:
 
-- Visual Studio 2019 (o la edición Enterprise o Professional de Visual Studio 2017)
+- Edición Visual Studio Enterprise o Professional
 
-- Team Foundation Server 2013 o versiones posteriores, Azure DevOps Services o Git.
+- Azure DevOps Services, Team Foundation Server 2013 o posterior o Git
 
 - [Skype Empresarial](/skypeforbusiness/) para ponerse en contacto con su equipo desde el editor de código.
 
@@ -82,7 +89,7 @@ Para otros tipos de archivos que no son *.cs* o *.vb*, los detalles de CodeLens 
 
 ### <a name="code-element-level-indicators"></a>Indicadores de nivel de elemento del código
 
-Los indicadores de nivel de elemento le permiten ver quién cambió el código y qué cambios de código se realizaron. Los indicadores de nivel de elemento de código están disponibles para el código de C# y Visual Basic.
+Los indicadores de nivel de elemento de código permiten ver quién cambió el código y qué cambios se realizaron. Los indicadores de nivel de elemento de código están disponibles para el código de C# y Visual Basic.
 
 Esto es lo que se ve cuando se usa el Control de versiones de Team Foundation (TFVC) en Team Foundation Server o Azure DevOps Services.
 
@@ -228,7 +235,7 @@ Puede buscar qué pruebas unitarias existen para el código de C# o Visual Basic
 
      ![CodeLens - Ver resultado de la prueba unitaria](../ide/media/codelens-unit-test-result.png)
 
-7. Para ver cuántas personas cambiaron esta prueba, quién la cambió o cuántos cambios se realizaron, [busque el historial del código](#find-code-history) y los elementos vinculados.
+7. Para ver cuántas personas cambiaron esta prueba, quién la cambió o cuántos cambios se realizaron, [busque el historial del código](#find-changes-in-your-code) y los elementos vinculados.
 
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
 
@@ -264,6 +271,20 @@ Active o desactive los indicadores de nivel de archivo de CodeLens con los icono
 - Los indicadores relacionados con DevOps aparecen solo cuando los elementos de trabajo se vinculan al código y cuando tiene permisos para abrir los elementos de trabajo vinculados. Confirme que tiene [permisos de miembro del equipo](/azure/devops/organizations/security/view-permissions?view=vsts).
 
 - Los indicadores de pruebas unitarias no aparecen cuando el código de la aplicación no tiene pruebas unitarias. Dichos indicadores aparecen automáticamente en los proyectos de prueba. Si sabe que el código de la aplicación tiene pruebas unitarias, pero los indicadores de prueba no aparecen, pruebe a compilar la solución (**CTRL**+**Mayús**+**B**).
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Los indicadores del control de código fuente no están disponibles en la edición Visual Studio Community.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> CodeLens no está disponible en la edición Visual Studio Community.
+
+::: moniker-end
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>P: ¿Por qué no veo los detalles de los elementos de trabajo de una confirmación?
 
@@ -313,11 +334,11 @@ Para usar el teclado:
 
 - **Referencias**: Este indicador se actualiza automáticamente cuando cambia el código. Si el indicador **Referencias** está acoplado como una ventana independiente, actualice el indicador seleccionando **Actualizar**:
 
-     ![Botón de actualización de referencias de CodeLens](../ide/media/codelensviewreferencesdocked.png)
+   ![Botón de actualización de referencias de CodeLens](../ide/media/codelensviewreferencesdocked.png)
 
 - **Equipo**: Actualice estos indicadores al seleccionar **Actualizar indicadores de equipo CodeLens** desde el menú contextual:
 
-     ![Elemento de menú Actualizar indicadores de equipo CodeLens](../ide/media/codelensrefreshindicatorsfromcode.png)
+   ![Elemento de menú Actualizar indicadores de equipo CodeLens](../ide/media/codelensrefreshindicatorsfromcode.png)
 
 - **Prueba**: [Buscar pruebas unitarias para el código](#associated-unit-tests) para actualizar el indicador **Prueba**.
 

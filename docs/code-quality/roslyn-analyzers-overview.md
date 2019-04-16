@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36985ab7a0ee94cb735b1954a9e5ea9c2e0d2bbf
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869101"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232572"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Introducción a los analizadores de .NET Compiler Platform
 
@@ -38,17 +38,27 @@ Al igual que las infracciones de reglas de análisis de código estático, las i
 
 Los analizadores de Roslyn analizan el código en tiempo de compilación, al igual que el análisis de código estático si está habilitado, pero también en vivo a medida que se escribe. Si se habilita el [análisis de la solución completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), los analizadores de Roslyn también proporcionan análisis en tiempo de diseño de los archivos de código que no están abiertos en el editor.
 
-> [!NOTE]
+> [!TIP]
 > Los errores y las advertencias de tiempo de compilación de los analizadores de Roslyn se muestran solo si los analizadores están instalados como paquetes NuGet.
 
 Los analizadores de Roslyn no solo notifican los mismos tipos de problemas que el análisis de código estático, sino que también facilitan la corrección de una o todas las repeticiones de la infracción en el archivo o proyecto. Estas acciones se denominan *correcciones de código*. Las correcciones de código son específicas del IDE; en Visual Studio, se implementan como [Acciones rápidas](../ide/quick-actions.md). No todos los diagnósticos de los analizadores tienen una corrección de código asociada.
 
 > [!NOTE]
-> La opción de menú **Analizar** > **Ejecutar análisis de código** solo se aplica al análisis de código estático. Además, en la página de propiedades **Análisis de código** de un proyecto, las casillas **Habilitar análisis de código en la compilación** y **Suprimir resultados del código generado** solo se aplican al análisis de código estático. No tienen ningún efecto en los analizadores de Roslyn.
+> Las siguientes opciones de la interfaz de usuario se aplican solo a análisis de código estático:
+>
+> - La opción de menú **Analizar** > **Ejecutar análisis de código**.
+> - Las casillas **Habilitar análisis de código en la compilación** y **Suprimir resultados del código generado** de la pestaña **Análisis de código** de las páginas de propiedades de un proyecto (estas opciones no tienen ningún efecto en los analizadores de Roslyn).
 
 Para diferenciar entre las infracciones de los analizadores de Roslyn y del análisis de código estático en la **Lista de errores**, examine la columna **Herramienta**. Si el valor Herramienta coincide con uno de los ensamblados del analizador del **Explorador de soluciones**, por ejemplo **Microsoft.CodeQuality.Analyzers**, la infracción procede de un analizador de Roslyn. De lo contrario, la infracción se origina en el análisis de código estático.
 
 ![Columna Herramienta de Lista de errores](media/code-analysis-tool-in-error-list.png)
+
+> [!TIP]
+> La propiedad **RunCodeAnalysis** de msbuild de un archivo del proyecto se aplica solo a análisis de código estático. Si instala los analizadores, establezca **RunCodeAnalysis** en **false** en el archivo del proyecto para evitar que el análisis de código estático se ejecute después de la compilación.
+>
+> ```xml
+> <RunCodeAnalysis>false</RunCodeAnalysis>
+> ```
 
 ## <a name="nuget-package-versus-vsix-extension"></a>Paquete NuGet frente a extensión VSIX
 
@@ -82,4 +92,4 @@ No se puede establecer la gravedad de las reglas de los analizadores que se han 
 
 - [Preguntas más frecuentes sobre analizadores](analyzers-faq.md)
 - [Introducción a los analizadores de Roslyn](../extensibility/getting-started-with-roslyn-analyzers.md)
-- [SDK de .NET Compiler Platform](/dotnet/csharp/roslyn-sdk/)
+- [SDK de la plataforma del compilador de .NET](/dotnet/csharp/roslyn-sdk/)

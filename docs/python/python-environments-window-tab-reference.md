@@ -3,19 +3,19 @@ title: Referencia de ventana Entornos de Python
 description: Detalles de cada una de las pestañas que aparecen en la ventana Entornos de Python en Visual Studio.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355781"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366528"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referencia de pestañas de la ventana Entorno de Python
 
@@ -60,7 +60,7 @@ A medida que usa las ventanas interactivas en su flujo de trabajo diario, probab
 
 Los scripts de inicio contienen código que la ventana **interactiva** carga y ejecuta automáticamente, como importaciones, definiciones de función y literalmente cualquier otra cosa. Hay dos maneras de hacer referencia a dichos scripts:
 
-1. Cuando instala un entorno, Visual Studio crea una carpeta *Documents\Visual Studio <version>\Python Scripts\\environment>\< donde* version&lt; &gt; corresponde a la versión de Visual Studio (como 2017 o 2019) y &lt;environment&gt; coincide con el nombre del entorno. Puede navegar fácilmente a la carpeta específica del entorno con el comando **Explorar scripts interactivos**. Cuando inicie la ventana **interactiva** para ese entorno, se cargan y ejecutan los archivos de *.py* que se encuentran aquí en orden alfabético.
+1. Cuando instala un entorno, Visual Studio crea una carpeta *Documents\Visual Studio \<version>\Python Scripts\\\<environment>*, donde &lt;version&gt; corresponde a la versión de Visual Studio (como 2017 o 2019) y &lt;environment&gt; coincide con el nombre del entorno. Puede navegar fácilmente a la carpeta específica del entorno con el comando **Explorar scripts interactivos**. Cuando inicie la ventana **interactiva** para ese entorno, se cargan y ejecutan los archivos de *.py* que se encuentran aquí en orden alfabético.
 
 1. El control **Scripts** de la pestaña **Herramientas** > **Opciones** > **Python** > **Ventanas interactivas** (consulte [Opciones de las ventanas interactivas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) pretende especificar una carpeta adicional para los scripts de inicio que se cargan y ejecutan en todos los entornos. No obstante, esta característica no funciona actualmente.
 
@@ -78,17 +78,17 @@ Si está disponible, la pestaña **Configurar** contiene detalles como se descri
 | Campo | Descripción |
 | --- | --- |
 | **Descripción** | Nombre que se va a dar al entorno. |
-| **Prefix path** (Ruta de acceso de prefijo) | Ubicación de la carpeta base del intérprete. Si rellena este valor y hace clic en **Detección automática**, Visual Studio intentará rellenar los demás campos automáticamente. |
-| **Interpreter path** (Ruta de acceso del intérprete) | Ruta de acceso al ejecutable del intérprete, normalmente la ruta de acceso de prefijo seguida de **python.exe**. |
-| **Windowed interpreter** (Intérprete en ventanas) | Ruta de acceso al ejecutable que no es de consola, normalmente la ruta de acceso de prefijo seguida de **pythonw.exe**. |
-| **Library path** (Ruta de acceso a la biblioteca)<br/>(si está disponible) | Especifica la raíz de la biblioteca estándar, pero este valor se puede omitir si Visual Studio es capaz de solicitar una ruta de acceso más precisa desde el intérprete. |
+| **Ruta de acceso de prefijo** | Ubicación de la carpeta base del intérprete. Si rellena este valor y hace clic en **Detección automática**, Visual Studio intentará rellenar los demás campos automáticamente. |
+| **Ruta del intérprete** | Ruta de acceso al ejecutable del intérprete, normalmente la ruta de acceso de prefijo seguida de **python.exe**. |
+| **Intérprete en ventana** | Ruta de acceso al ejecutable que no es de consola, normalmente la ruta de acceso de prefijo seguida de **pythonw.exe**. |
+| **Ruta de acceso a la biblioteca**<br/>(si está disponible) | Especifica la raíz de la biblioteca estándar, pero este valor se puede omitir si Visual Studio es capaz de solicitar una ruta de acceso más precisa desde el intérprete. |
 | **Versión de lenguaje** | Se selecciona en el menú desplegable. |
 | **Arquitectura** | Normalmente se detecta y rellena automáticamente; de lo contrario especifica **32** o **64 bits**. |
-| **Path environment variable** (Variable de entorno de ruta de acceso) | Variable de entorno que el intérprete usa para encontrar rutas de acceso de búsqueda. Visual Studio cambia el valor de la variable al iniciar Python para que contenga las rutas de búsqueda del proyecto. Normalmente, esta propiedad se debe establecer en **PYTHONPATH**, pero algunos intérpretes utilizan un valor diferente. |
+| **Variable de entorno de ruta de acceso** | Variable de entorno que el intérprete usa para encontrar rutas de acceso de búsqueda. Visual Studio cambia el valor de la variable al iniciar Python para que contenga las rutas de búsqueda del proyecto. Normalmente, esta propiedad se debe establecer en **PYTHONPATH**, pero algunos intérpretes utilizan un valor diferente. |
 
 ## <a name="packages-tab"></a>Pestaña Paquetes
 
-*También se etiqueta como "pip" en versiones anteriores*
+*También se etiqueta como "pip" en versiones anteriores.*
 
 Administra los paquetes instalados en el entorno con pip (la pestaña **Paquetes (PyPI)**) o conda (la pestaña **Paquetes (Conda)** para entornos en la versión 15.7 y posteriores de Visual Studio 2017). En esta pestaña también se pueden buscar e instalar paquetes nuevos, incluidas sus dependencias.
 

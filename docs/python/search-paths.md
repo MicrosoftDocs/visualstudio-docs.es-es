@@ -3,19 +3,19 @@ title: Aplicación de las rutas de acceso de búsqueda de Python
 description: Visual Studio proporciona un medio más concreto para especificar rutas de búsqueda para entornos y proyectos con el fin de evitar el uso de variables para todo el sistema.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 55995d53f763bcc3f13338e52b255135bbefa15b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147740"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365345"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Cómo usa Visual Studio las rutas de acceso de búsqueda de Python
 

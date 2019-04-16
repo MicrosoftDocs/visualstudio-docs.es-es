@@ -3,18 +3,18 @@ title: Administración de entornos e intérpretes de Python
 description: Use la ventana Entornos de Python para administrar entornos globales, virtuales y de conda, instalar paquetes e intérpretes de Python y asignar entornos a proyectos de Visual Studio.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 496ca9b5a0c7501cd9493e06233b1473e8526ed6
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355690"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366572"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 
@@ -42,7 +42,7 @@ Si no está familiarizado con Python en Visual Studio, los siguientes artículos
 
 Los entornos que Visual Studio conoce aparecen en la ventana **Entornos de Python**. Para abrir la ventana, use uno de los métodos siguientes:
 
-- Seleccione el comando de menú **Vista** > **Otras ventanas** > **Entornos de Python** .
+- Seleccione el comando de menú **Vista** > **Otras ventanas** > **Entornos de Python**.
 - Haga clic con el botón derecho en el nodo **Entornos de Python** de un proyecto en el **Explorador de soluciones** y seleccione **View All Python Environments** (Ver todos los entornos de Python):
 
     ::: moniker range="vs-2017"

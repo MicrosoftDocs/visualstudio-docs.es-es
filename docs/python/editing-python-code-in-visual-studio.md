@@ -3,19 +3,19 @@ title: Editar código de Python
 description: Para Python, Visual Studio proporciona IntelliSense enriquecido, fragmentos de código y características de navegación, además de formato, detección de errores y refactorización.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355557"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366281"
 ---
 # <a name="edit-python-code"></a>Editar código de Python
 
@@ -76,7 +76,7 @@ Al escribir @ se inicia un decorador y se muestran todos los posibles decoradore
 
 ### <a name="type-hints"></a>Sugerencias de escritura
 
-*Visual Studio 2017, versión 15.7 y posteriores*
+*Visual Studio 2017 versión 15.7 y posteriores.*
 
 "Sugerencias de escritura" en Python 3.5 + ([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org) es una sintaxis de anotación de funciones y clases que indica los tipos de argumentos, valores devueltos y atributos de clase. IntelliSense muestra sugerencias de tipo cuando mantiene el mouse sobre las llamadas a funciones, argumentos y variables que tengan dichas anotaciones.
 

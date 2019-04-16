@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Obtenga información sobre cómo incorporar correctamente su organización para suscripciones de Visual Studio después de migrar al portal de administración.
 searchscope: VS Subscription
-ms.openlocfilehash: 188842272f7e4ee102829f961b29b4d5ffbf70dc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154184"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897613"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Incorporación al Portal de administración de suscripciones de Visual Studio después de migrar la organización
 
@@ -26,7 +26,7 @@ Se pueden dar varios casos:
 
 1. [El contacto principal no completó el proceso de incorporación.](#onboarding-not-completed-by-primary-contact)
 2. [El contacto principal completó la incorporación, pero no lo agregó como administrador. Las credenciales se mostraron en VLSC.](#primary-contact-did-not-provide-you-administrator-access)
-3. [El contacto principal completó la incorporación, pero no lo agregó como administrador. Las credenciales no se mostraron en VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
+3. [El contacto principal completó la incorporación, pero no lo agregó como administrador. Las credenciales no se mostraron en VLSC.](#your-credentials-were-not-listed-in-vlsc-prior-to-migration)
 
 <sup>1</sup> Si usted es el contacto principal o el contacto para notificaciones y no completó el proceso de incorporación, deberá seguir los pasos del escenario 1 para configurar su organización.
 
@@ -54,4 +54,4 @@ Si su contacto principal completó el proceso de incorporación y las credencial
 
 Si el contacto principal completó la incorporación, pero no lo agregó como usuario y sus credenciales no aparecían anteriormente en el VLSC, verá la siguiente notificación. Llegue a su [contacto principal](find-primary-contact.md) para tener acceso al portal.
 > [!div class="mx-imgBorder"]
-> ![Captura de pantalla del Portal de administración de suscripciones de Visual Studio, con la notificación "no podemos encontrarle"](_img/post-migration-onboarding/cant-find-you.png)
+> ![Captura de pantalla del Portal de administración de suscripciones de Visual Studio, con la notificación "No le encontramos"](_img/post-migration-onboarding/cant-find-you.png)

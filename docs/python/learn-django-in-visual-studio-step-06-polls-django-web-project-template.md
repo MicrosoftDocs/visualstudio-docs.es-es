@@ -4,23 +4,23 @@ titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio, en particular las características de la plantilla Proyecto web de Django de sondeos, como la personalización administrativa.
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a8169dc759091bcc89da64a9676589e473bccf1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 93771033dd83ae988340ed355066992990f22f50
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957797"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366840"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Paso 6: Uso de la plantilla de proyecto web de Django de sondeos
 
-**Paso anterior: [Autenticación de usuarios en Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
+**Paso anterior: [Autenticación de los usuarios en Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
 Ahora que conoce la plantilla "Proyecto web de Django" de Visual Studio, podemos analizar la tercera plantilla de Django, "Proyecto web de Django de sondeos", que se basa en el mismo código base y demuestra el trabajo con una base de datos.
 

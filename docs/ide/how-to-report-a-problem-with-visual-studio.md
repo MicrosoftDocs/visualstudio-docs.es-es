@@ -1,50 +1,41 @@
 ---
 title: Cómo notificar un problema con Visual Studio
-titleSuffix: ''
-description: Obtenga información sobre cómo notificar un problema con Visual Studio a Microsoft, para que podamos diagnosticarlo y corregirlo.
+description: Obtenga información sobre cómo notificar un problema con Visual Studio.
 ms.date: 03/11/2018
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-author: TerryGLee
-ms.author: tglee
+ms.author: seiyer
+author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9bfa7c772b2c194430273f8af0ac640c05171d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953673"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232546"
 ---
-# <a name="how-to-report-a-problem-with-visual-studio"></a>Cómo notificar un problema con Visual Studio
-
-Si experimenta un problema con Visual Studio, nos gustaría que nos lo comunicara. Aquí le mostramos cómo notificar un problema a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/) para que podamos diagnosticarlo y corregirlo.
+# <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Cómo notificar un problema con Visual Studio o con el Instalador de Visual Studio
 
 > [!NOTE]
-> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Cómo notificar un problema en Visual Studio para Mac](/visualstudio/mac/report-a-problem).
+> En el caso de Visual Studio para Mac, vea [Cómo notificar un problema en Visual Studio para Mac](/visualstudio/mac/report-a-problem).
 
-## <a name="report-a-problem-by-using-visual-studio"></a>Notificación de un problema con Visual Studio
+Puede notificar un problema desde Visual Studio o desde su instalador con la Herramienta para enviar comentarios incluida en ellos. La Herramienta para enviar comentarios permite incluir fácilmente la información de diagnóstico en el comentario y ayuda a los equipos de Visual Studio a diagnosticar y corregir problemas con mucha más eficacia. Estos son los pasos necesarios para notificar un problema.
 
-Para notificar un problema de Visual Studio, debe iniciar el informe en Visual Studio o el instalador de Visual Studio. No podrá hacerlo directamente a través del sitio web de la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/). La generación de informes mediante Visual Studio permite incluir información de diagnóstico automáticamente en el informe.
+1. **En Visual Studio**, seleccione el icono de comentarios en la esquina superior derecha y seleccione Notificar un problema. También puede acceder a la Herramienta para enviar comentarios desde el menú **Ayuda** > **Enviar comentarios** > **Notificar un problema**.
+![Ventana emergente Notificar un problema en la Comunidad de desarrolladores de Visual Studio](media/vsfeedbackentry.png) Como alternativa, notifique un problema en el **Instalador de Visual Studio** si no puede instalar Visual Studio o si no puede acceder a la Herramienta para enviar comentarios en Visual Studio.  En el instalador, seleccione el icono de comentarios en la esquina superior derecha y seleccione Notificar un problema.
+![Menú emergente para notificar un problema en la Comunidad de desarrolladores de Visual Studio](media/installer.png)
 
-![Menú emergente para notificar un problema en la Comunidad de desarrolladores de Visual Studio](media/report-an-issue.png)
-
-1. En Visual Studio, seleccione **Ayuda** > **Enviar comentarios** > **Notificar un problema**.
-
-   > [!TIP]
-   > Si no puede completar la instalación de Visual Studio o no puede tener acceso a la herramienta de comentarios dentro de Visual Studio, puede notificar un problema mediante el **Instalador de Visual Studio**. Para ello, haga clic en el icono de comentario en la esquina superior derecha del **Instalador de Visual Studio**.
-
-1. Si no ha iniciado sesión, seleccione **Iniciar sesión**; se encuentra en la parte derecha de la herramienta, tal y como se muestra en la siguiente captura de pantalla. Siga las instrucciones en pantalla para iniciar sesión.
+1. Si no ha iniciado sesión, seleccione **Iniciar sesión** tal como se muestra en la captura de pantalla siguiente. Siga las instrucciones en pantalla para iniciar sesión.
 
    ![Inicie sesión para notificar un problema](../ide/media/sign-in-new-ux.png)
 
-   Para notificar un problema que esté experimentando, inicie sesión. También puede votar por otros problemas publicados o agregar comentarios.
+   Cuando inicia sesión, no solo puede notificar un problema, sino también votar y reseñar los comentarios existentes.
 
 1. Cuando haya iniciado sesión, podrá ver sus **Problemas** y **Actividad** en la pantalla **Elementos que sigo**.
 
-    ![Elementos que sigo](../ide/media/items-i-follow.png)
+   ![Elementos que sigo](../ide/media/items-i-follow.png)
 
 1. Visual Studio proporciona una interfaz que permite buscar el problema y ver si otros usuarios lo han notificado. Si alguien lo ha notificado, "vótelo" para indicárnoslo.
    > [!NOTE]

@@ -3,26 +3,26 @@ title: Información general de Visual Studio para desarrolladores de Python
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354783"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365735"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenida al IDE de Visual Studio | Python
 
 El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio creativo para Python (y otros lenguajes) que se puede usar para editar, depurar y probar código y, después, publicar una aplicación. Un entorno de desarrollo integrado (IDE) es un programa con numerosas características que se pueden usar para muchos aspectos del desarrollo de software. Más allá del editor estándar y el depurador que proporcionan la mayoría de IDE, Visual Studio incluye herramientas de finalización de código, entornos de REPL interactivos y otras características para facilitar el proceso de desarrollo de software.
 
-[![Visual Studio con un proyecto de Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![VVisual Studio con un proyecto de Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 En esta imagen se muestra Visual Studio con un proyecto de Python abierto y varias ventanas de herramientas clave que probablemente usará:
 
@@ -68,11 +68,11 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
 
    ![Comando PyLint en el menú contextual para proyectos de Python](media/code-pylint-command.png)
 
-- [Inicio rápido](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Cuadro de búsqueda
 
-   Visual Studio puede parecer abrumador a veces con tantas propiedades, opciones y menús. El cuadro de búsqueda **Inicio rápido** supone una excelente manera de encontrar rápidamente lo que necesita en Visual Studio. Al empezar a escribir el nombre de lo que está buscando, Visual Studio muestra resultados que llevan exactamente a donde necesita ir. Si necesita agregar funcionalidad a Visual Studio, por ejemplo, agregar compatibilidad con otro lenguaje de programación, **Inicio rápido** proporciona resultados que abren el Instalador de Visual Studio para instalar un componente individual o una carga de trabajo.
+   Visual Studio puede parecer abrumador a veces con tantas propiedades, opciones y menús. El cuadro de búsqueda supone una excelente manera de encontrar rápidamente lo que necesita en Visual Studio. Al empezar a escribir el nombre de lo que está buscando, Visual Studio muestra resultados que llevan exactamente a donde necesita ir. Si necesita agregar funcionalidad a Visual Studio, por ejemplo, agregar compatibilidad con otro lenguaje de programación, el cuadro de búsqueda proporciona resultados que abren el Instalador de Visual Studio para instalar un componente individual o una carga de trabajo.
 
-   ![Cuadro de búsqueda Inicio rápido en Visual Studio](media/tour-ide-quick-launch.png)
+   ![Cuadro de búsqueda de Visual Studio](media/tour-ide-quick-launch.png)
 
 - Subrayados ondulados y [Acciones rápidas](../ide/quick-actions.md)
 
@@ -94,7 +94,7 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
     A partir de Visual Studio 2019, puede abrir una carpeta que contiene código de Python para disfrutar de características como IntelliSense y depuración sin tener que crear un proyecto de Visual Studio para el código.
 ::: moniker-end
 
-- [Ventana de REPL interactiva](python-interactive-repl-in-visual-studio.md)
+- [Ventana interactiva (REPL) de Python](python-interactive-repl-in-visual-studio.md)
 
     Visual Studio proporciona una ventana interactiva read-evaluate-print loop (REPL) para cada entorno de Python, que ofrece mejoras con respecto al REPL obtenido con *python.exe* en la línea de comandos. En la ventana **Interactiva** puede escribir código de Python arbitrario y ver resultados inmediatos.
 
@@ -129,7 +129,7 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
 Continúe explorando Python en Visual Studio siguiendo uno de los siguientes tutoriales o inicios rápidos:
 
 > [!div class="nextstepaction"]
-> [Inicio rápido: Crear una aplicación web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Inicio rápido: Creación de una aplicación web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
 > [Uso de Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

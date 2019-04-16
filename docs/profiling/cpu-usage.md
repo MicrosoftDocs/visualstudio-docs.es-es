@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbad30fca5dd3ffbaa09c270f6a0b0400d9ea22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640797"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366762"
 ---
 # <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 
@@ -56,13 +56,17 @@ Por lo general, el equipo local replica mejor la ejecución de aplicaciones inst
 
 El informe de diagnóstico se ordena por el **Total de CPU**, de mayor a menor. Puede cambiar el criterio de ordenación o la columna de ordenación seleccionando los encabezados de columna. Use la lista desplegable **Filtro** para seleccionar o anular la selección de subprocesos para mostrar, y use el cuadro **Búsqueda** para buscar un subproceso o un nodo concreto.
 
+::: moniker range=">=vs-2019"
+A partir de Visual Studio 2019, puede hacer clic en los botones **Expandir ruta de acceso activa** y **Mostrar ruta de acceso activa** para ver las llamadas de función que usan el porcentaje más alto de CPU en la vista de árbol de las llamadas.
+::: moniker-end
+
 ###  <a name="BKMK_Call_tree_data_columns"></a> Columnas de datos de uso de CPU
 
 |||
 |-|-|
 |**Total de CPU [unidad, porcentaje]**|![% total de ecuación de datos](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Los milisegundos y el porcentaje de CPU que usaron las llamadas a la función y las funciones llamadas por la función en el intervalo de tiempo seleccionado. Esto no es lo mismo que el gráfico de línea cronológica **Utilización de CPU**, que compara la actividad total de CPU en un intervalo de tiempo con el total de CPU disponible.|
 |**CPU propia [unidad, porcentaje]**|![% de autoecuación](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Los milisegundos y el porcentaje de CPU que usaron las llamadas a la función en el intervalo de tiempo seleccionado, sin incluir las funciones llamadas por la función.|
-|**Módulo**|El nombre del módulo que contiene la función.
+|**Module**|El nombre del módulo que contiene la función.
 
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Árbol de llamadas de Uso de CPU
 
@@ -70,7 +74,12 @@ Para ver el árbol de llamadas, seleccione el nodo primario en el informe. La p�
 
 ####  <a name="BKMK_Call_tree_structure"></a> Estructura del árbol de llamadas
 
- ![Estructura del árbol de llamadas](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Call tree structure")
+::: moniker range=">=vs-2019"
+![Estructura del árbol de llamadas](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Call tree structure")
+::: moniker-end
+::: moniker range="vs-2017"
+![Estructura del árbol de llamadas](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Call tree structure")
+::: moniker-end
 
 |||
 |-|-|
@@ -81,19 +90,24 @@ Para ver el árbol de llamadas, seleccione el nodo primario en el informe. La p�
 
 ####  <a name="BKMK_External_Code"></a> Código externo
 
- Las funciones del sistema y del marco que ejecuta el código se llaman *código externo*. Las funciones de código externo inician y detienen la aplicación, dibujan la interfaz de usuario, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos no le interesará el código externo, por lo que el árbol de llamadas de Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]**.
+Las funciones del sistema y del marco que ejecuta el código se llaman *código externo*. Las funciones de código externo inician y detienen la aplicación, dibujan la interfaz de usuario, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos no le interesará el código externo, por lo que el árbol de llamadas de Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]**.
 
- Para ver las rutas de llamada de código externo, en la página de informe de diagnóstico principal (panel derecho), seleccione **Mostrar código externo** en la lista desplegable **Filtro** y después haga clic en **Aplicar**. Después, la vista **Árbol de llamadas** de la página **Uso de CPU** expande las llamadas a código externo. (La lista desplegable **Filtro** está disponible en la página principal de diagnóstico, no en las vistas detalladas).
+Para ver las rutas de llamada de código externo, en la página de informe de diagnóstico principal (panel derecho), seleccione **Mostrar código externo** en la lista desplegable **Filtro** y después haga clic en **Aplicar**. Después, la vista **Árbol de llamadas** de la página **Uso de CPU** expande las llamadas a código externo. (La lista desplegable **Filtro** está disponible en la página principal de diagnóstico, no en las vistas detalladas).
 
- ![Mostrar código externo](../profiling/media/cpu_use_wt_filterview.png "Show External Code")
+![Mostrar código externo](../profiling/media/cpu_use_wt_filterview.png "Show External Code")
 
- Muchas cadenas de llamadas de código externo están profundamente anidadas, así que el ancho de la cadena puede superar el ancho de pantalla de la columna **Nombre de la función**. Los nombres de función aparecen como **...**.
+Muchas cadenas de llamadas de código externo están profundamente anidadas, así que el ancho de la cadena puede superar el ancho de pantalla de la columna **Nombre de la función**. Los nombres de función aparecen como **...**.
 
- ![Código externo anidado en el árbol de llamadas](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Nested external code in the call tree")
+![Código externo anidado en el árbol de llamadas](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Nested external code in the call tree")
 
- Para encontrar un nombre de función que está buscando, use el cuadro de búsqueda. Mantenga el mouse sobre la línea seleccionada o use la barra de desplazamiento horizontal para ver los datos.
+Para encontrar un nombre de función que está buscando, use el cuadro de búsqueda. Mantenga el mouse sobre la línea seleccionada o use la barra de desplazamiento horizontal para ver los datos.
 
- ![Buscar código externo anidado](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Search for nested external code")
+::: moniker range=">=vs-2019"
+![Buscar código externo anidado](../profiling/media/vs-2019/cpu-use-wt-showexternalcodetoowide-found.png "Search for nested external code")
+::: moniker-end
+::: moniker range="vs-2017"
+![Buscar código externo anidado](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Search for nested external code")
+::: moniker-end
 
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funciones asincrónicas en el árbol de llamadas de Uso de CPU
 

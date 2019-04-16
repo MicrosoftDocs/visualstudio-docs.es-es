@@ -1,7 +1,7 @@
 ---
 title: Registro de cambios (Visual Studio Tools para Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/28/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,139 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803745"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232767"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 Registro de cambios de Visual Studio Tools para Unity.
+
+## <a name="4005"></a>4.0.0.5
+ Publicada el 27 de febrero de 2019
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Integración:**
+
+    -   Se ha corregido la detección de la versión de Visual Studio con el paquete de instalación.
+
+    -   Se han quitado los ensamblados sin utilizar del paquete de instalación.
+
+## <a name="4004"></a>4.0.0.4
+ Publicada el 13 de febrero de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+-   **Integración:**
+
+    -   Se ha agregado compatibilidad para detectar correctamente procesos de Unity durante la instalación y permitir que el motor de instalación administre mejor los bloqueos de archivo.
+    
+    -   Se actualizado la API ScriptableObject.
+
+## <a name="4003"></a>4.0.0.3
+ Publicada el 31 de enero de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+-   **Generación de proyectos:**
+
+    -   Los campos públicos y serializados ya no generarán advertencias. Hemos suprimido automáticamente las advertencias del compilador CS0649 y IDE0051 en los proyectos de Unity que crearon estos mensajes.
+
+-   **Integración:**
+
+    -   Ha mejorado la experiencia del usuario para mostrar las instancias del reproductor y el editor de Unity (ahora se puede cambiar el tamaño de las ventanas, se pueden usar márgenes uniformes y se puede mostrar un control de ajuste de tamaño). Se ha agregado información del identificador del proceso para editores de Unity.
+    
+    -   Se ha actualizado la API MonoBehaviour.
+    
+-   **Evaluación:**
+
+    -   Se ha agregado compatibilidad con las funciones locales.
+    
+    -   Se ha agregado compatibilidad con las pseudovariables (identificadores de excepción y objetos).
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Integración:**
+
+    -   Se ha corregido un problema con los temas y las imágenes de moniker.
+
+    -   Solo se escribe en la Ventana de salida durante la depuración, cuando se realiza la actualización automática de la base de datos de recursos.
+
+    -   Se han corregido los retrasos de la UI con el filtrado del asistente MonoBehaviour.
+    
+-   **Depurador:**
+
+    -   Se ha corregido la lectura de atributos personalizados de los argumentos con nombre al usar versiones de protocolo anteriores.
+
+## <a name="4002"></a>4.0.0.2
+ Publicada el 23 de enero de 2019
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Integración:**
+
+    -   Se ha corregido la generación de la compilación experimental.
+
+    -   Se ha corregido el control de eventos de archivos de proyecto para minimizar la presión del subproceso de la interfaz de usuario.
+
+    -   Se ha corregido el proveedor de finalización con cambios de texto por lotes.
+    
+-   **Depurador:**
+
+    -   Se ha corregido la presentación de mensajes de depuración de usuario en el depurador asociado.
+
+## <a name="4001"></a>4.0.0.1
+ Publicada el 10 de diciembre de 2018
+
+### <a name="new-features"></a>Características nuevas
+
+-   **Evaluación:**
+
+    -   Se ha reemplazado NRefactory a favor de Roslyn para la evaluación de expresiones.
+
+    -   Se ha agregado compatibilidad con los punteros: desreferencia, conversión y aritmética de puntero (tanto Unity 2018.2+ y el nuevo tiempo de ejecución son necesarios para esto).
+
+    -   Se ha agregado compatibilidad con la vista del puntero de matrices (como en C++). Adopte una expresión de puntero y, a continuación, anexe una coma y el número de elementos que desea ver.
+
+    -   Se ha agregado compatibilidad con las construcciones asincrónicas.
+
+-   **Integración:**
+    
+    -   Se ha agregado compatibilidad con la actualización automática de la base de datos de recursos de Unity al guardarla. Esta característica está habilitada de forma predeterminada y desencadenará una recompilación en el lado de Unity al guardar un script en Visual Studio. Puede deshabilitar esta característica en la base de datos de recursos ubicada en Tools\Options\Tools for Unity\Refresh al guardarla.
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Integración:**
+
+    -   Se ha corregido la activación del puente cuando Visual Studio no está seleccionado como el editor externo preferido.
+
+    -   Se ha corregido la evaluación de expresiones con expresiones con un formato incorrecto o no admitidas.
+
+## <a name="4000"></a>4.0.0.0
+ Publicada el 4 de diciembre de 2018
+
+### <a name="new-features"></a>Características nuevas
+
+-   **Integración:**
+
+    -   Se ha agregado compatibilidad con Visual Studio 2019.
+
+    -   Se ha adoptado el catálogo y el servicio de imágenes de Visual Studio, con compatibilidad total con los temas, las imágenes de píxeles perfectos y el escalado de HDPI.
+
+### <a name="deprecated-features"></a>Características en desuso
+
+-   **Integración:**
+
+    -   A partir de ahora, Visual Studio Tools para Unity solo admitirá Unity 5.2 + (con la integración de Visual Studio incorporada en Unity).
+
+    -   A partir de ahora, Visual Studio Tools para Unity solo admitirá Visual Studio 2015 +.
+
+    -   Se han quitado la barra de estado, la lista de errores y el servicio de lenguaje heredado.
+    
+    -   Se ha quitado el asistente de Monobehaviour rápido (en favor de la compatibilidad con IntelliSense dedicada).
 
 ## <a name="3903"></a>3.9.0.3
  Publicado el 28 de noviembre de 2018
@@ -123,7 +247,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ### <a name="new-features"></a>Características nuevas
 
--   **Debugging:** (Depuración)
+-   **Depuración:**
 
     -   Se agregó compatibilidad para los comandos UserLog y UserBreak.
 
@@ -140,7 +264,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ### <a name="new-features"></a>Características nuevas
 
--   **Debugging:** (Depuración)
+-   **Depuración:**
 
     -   Se agregó compatibilidad para mostrar variables en construcciones asincrónicas.
 
@@ -170,7 +294,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ### <a name="new-features"></a>Características nuevas
 
--   **Debugging:** (Depuración)
+-   **Depuración:**
 
     -   Se ha agregado compatibilidad con la depuración orquestada (depuración de varios reproductores/editor en la misma sesión de Visual Studio).
 
@@ -411,7 +535,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
     -   Se corrigieron los problemas al agregar elementos a la inspección de Visual Studio.
 
--   **Project Generation:**
+-   **Generación de proyectos:**
 
     -   Se corrigieron las referencias al nombre de ensamblado con archivos mcs.rsp.
 

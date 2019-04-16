@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647276"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018199"
 ---
 # <a name="options-dialog-box-environment--general"></a>Cuadro de diálogo Opciones: Entorno \> General
 
@@ -53,11 +53,22 @@ De manera predeterminada, los menús usan la tipografía de título. Desactive e
 
 Esta opción habilita o deshabilita la distinción de puntos por pulgada (ppp) por monitor (o *PMA*). Cuando se habilita PMA, la interfaz de usuario de Visual Studio aparece nítida en la configuración de ppp y factor de escala de cualquier monitor, incluso en varios monitores. Para habilitar PMA, necesita la actualización de abril de 2018 de Windows 10 o posterior y .NET Framework 4.8 o posterior. (Esta opción aparece atenuada si no se cumplen estos dos requisitos previos).
 
+> [!TIP]
+> - Windows 10 tiene una opción que dice **Permitir que Windows intente corregir las aplicaciones para que no se vean borrosas**. La **activación** de esa configuración de Windows tiene un efecto insignificante si la opción **Optimizar la representación de las pantallas con densidades de píxeles distintas** está marcada.
+> - Windows 10 también incluye un **Solucionador de problemas de compatibilidad de programas**. No se recomienda intentar corregir la apariencia de Visual Studio con dicho solucionador.
+
 ::: moniker-end
 
 **Ajustar automáticamente la experiencia visual según rendimiento del cliente**
 
 Especifica si Visual Studio establece el ajuste de forma automática en la experiencia visual o si dicho ajuste debe establecerse explícitamente. Este ajuste puede cambiar la presentación de los colores de degradados a colores planos o restringir el uso de animaciones en los menús o ventanas emergentes.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Windows 10 tiene una opción que dice **Permitir que Windows intente corregir las aplicaciones para que no se vean borrosas**. Se recomienda **activar** dicha configuración si Visual Studio aparece borroso en el monitor. Considere la posibilidad de actualizar a [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), que ha mejorado significativamente la claridad de presentación, porque se trata de una aplicación que reconoce los puntos por pulgada por monitor.
+
+::: moniker-end
 
 **Habilitar la experiencia mejorada del cliente**
 

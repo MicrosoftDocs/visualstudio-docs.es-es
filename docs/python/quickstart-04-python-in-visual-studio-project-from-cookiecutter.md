@@ -3,19 +3,19 @@ title: 'Inicio rápido: Crear un proyecto de Python mediante Cookiecutter'
 description: En este inicio rápido, creará un proyecto de Visual Studio para Python utilizando una plantilla de Cookiecutter.
 ms.date: 02/25/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8aaa1c3d4164946c43dbd40264838d84e4fd2dcb
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 3f3e7f56f4a36a7958cba9bd7092f38d735123d4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355136"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365302"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Inicio rápido: Creación de un proyecto a partir de una plantilla de Cookiecutter
 
@@ -49,6 +49,6 @@ Cuando se ha [instalado la compatibilidad con Python en Visual Studio](installi
 ## <a name="see-also"></a>Vea también
 
 - [Uso de la extensión Cookiecutter](using-python-cookiecutter-templates.md)
-- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente)
+- [Identificación manual de un intérprete de Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md)
 - [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations)

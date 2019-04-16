@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cbf0c97371270ef6c9443c7abd755bf956a465f0
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355265"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897600"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación Vue.js
 
@@ -59,14 +59,16 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 1. Cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Vue.js**, elija **Aplicación web de Vue.js básico** (JavaScript o TypeScript). En el cuadro de diálogo que se abre, elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Vue.js básico**, elija **Aplicación web de Vue.js básico** (JavaScript o TypeScript). En el cuadro de diálogo que se abre, elija **Crear**.
+
+    ![Plantilla Vue.js](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
     En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** o **TypeScript** y elija **Node.js**. En el panel central, elija **Aplicación web de Vue.js básico** y elija **Aceptar**.
-    ::: moniker-end
-    Si no ve la plantilla de proyecto **Aplicación web de Vue.js básico**, debe agregar la carga de trabajo **Desarrollo de Node.js**. Para instrucciones detalladas, consulte los [Requisitos previos](#prerequisites).
 
     ![Plantilla Vue.js](../javascript/media/vuejs-template.png)
+    ::: moniker-end
+    Si no ve la plantilla de proyecto **Aplicación web de Vue.js básico**, debe agregar la carga de trabajo **Desarrollo de Node.js**. Para instrucciones detalladas, consulte los [Requisitos previos](#prerequisites).
 
     Visual Studio crea el nuevo proyecto. El nuevo proyecto se abre en el Explorador de soluciones (panel derecho).
 
@@ -128,4 +130,4 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 
 - Repasar el [Tutorial para Node.js y Express](../nodejs/tutorial-nodejs.md)
 - Repasar el [Tutorial para Node.js y React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
-- [Deploy the app to Linux App Service](../javascript/publish-nodejs-app-azure.md) (Implementar la aplicación en App Service de Linux)
+- [Implementación de una aplicación de App Service en Linux](../javascript/publish-nodejs-app-azure.md)

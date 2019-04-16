@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Preguntas más frecuentes sobre la migración de la administración del Centro de servicios de licencias por volumen
 searchscope: VS Subscription
-ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145270"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897665"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migración de la administración de suscripciones de Visual Studio
 
@@ -36,7 +36,7 @@ Esto es una transición masiva y se llevará a cabo en fases hasta que todos los
 No es necesario que su organización se suscriba a Azure AD, pero puede hacerlo en cualquier momento. Si decide incorporarse a Azure AD, puede hacerlo sin coste alguno mediante el nivel gratuito de Azure AD. Con Azure Active Directory, va a proteger a su organización con mayor seguridad, control y fiabilidad a largo plazo. Sin embargo, si no está listo para Azure AD, podrá seguir usando sus cuentas de Microsoft (MSA), tal como hace hoy en día.
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>¿Cómo puedo saber cuándo habrá migrado mi organización?
-Los contactos principales y los encargados de los avisos recibirán un correo electrónico nuestro para invitarlos a completar el proceso de incorporación una semana antes de que su organización migre. Los administradores de suscripciones también recibirán un correo electrónico para informarlos de que nos hemos puesto en contacto con los contactos principales y los encargados de los avisos y de que hemos proporcionado información sobre cómo ayudar a garantizar una incorporación correcta. Obtenga información sobre cómo [buscar los contactos principales y los encargados de los avisos de su organización](#how-do-i-find-out-who-my-primary-or-notices-contact-is?).
+Los contactos principales y los encargados de los avisos recibirán un correo electrónico nuestro para invitarlos a completar el proceso de incorporación una semana antes de que su organización migre. Los administradores de suscripciones también recibirán un correo electrónico para informarlos de que nos hemos puesto en contacto con los contactos principales y los encargados de los avisos y de que hemos proporcionado información sobre cómo ayudar a garantizar una incorporación correcta. Obtenga información sobre cómo [buscar los contactos principales y los encargados de los avisos de su organización](#how-do-i-find-out-who-my-primary-or-notices-contact-is).
 
 ### <a name="is-onboarding-different-from-migration"></a>¿Es diferente la incorporación de la migración?
 Sí.  Hay dos fases en este proceso. Configurar (o incorporar) su organización antes de la migración garantiza que no se produzca ninguna interrupción en su trabajo como administrador. Una vez que migremos la información de su organización, podrá administrar las suscripciones de Visual Studio en el portal nuevo. Si los contactos principales o los encargados de los avisos no se incorporan antes de la migración, los administradores de suscripciones quedarán bloqueados y no podrán administrar las suscripciones hasta que complete el proceso de incorporación.

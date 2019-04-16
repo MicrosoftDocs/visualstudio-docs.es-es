@@ -4,23 +4,23 @@ titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Flask en el contexto de los proyectos de Visual Studio, en particular las características que ofrecen las plantillas Proyecto web de Flask y Proyecto web de Flask/Jade.
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908925"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366450"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Paso 4: Uso de la plantilla de proyecto web completa de Flask
 
-**Paso anterior: [Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Paso anterior: [Atender archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 Ahora que ha explorado los conceptos básicos de Flask mediante la creación de una aplicación a partir de la plantilla "Proyecto web de Flask en blanco" en Visual Studio, podrá comprender fácilmente la aplicación más completa que se genera mediante la plantilla "Proyecto web de Flask".
 
@@ -72,7 +72,7 @@ La plantilla de "Proyecto web de Flask" crea la estructura siguiente. El conteni
   - *\_\_init.py\_\_* marca el código de la aplicación como un módulo de Python, crea el objeto de Flask e importa las vistas de la aplicación.
   - *views.py* contiene el código para representar páginas.
   - La carpeta *static* contiene subcarpetas denominadas *content* (archivos CSS), *fonts* (archivos de fuentes) y *scripts* (archivos de JavaScript).
-  - La carpeta *templates* contiene una plantilla base *layout.html* junto con *about.html*, *contact.html* e  *index.HTML* para páginas específicas que amplían *layout.html*.
+  - La carpeta *templates* contiene una plantilla base *layout.html* junto con *about.html*, *contact.html* e *index.HTML* para páginas específicas que amplían *layout.html*.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Es posible compartir un entorno virtual entre los proyectos de Visual Studio?
 

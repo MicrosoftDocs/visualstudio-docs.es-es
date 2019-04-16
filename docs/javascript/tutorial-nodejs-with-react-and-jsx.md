@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f8fb7c864f484208eaa647131ac7a32c8da665f8
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355492"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897769"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -85,7 +85,7 @@ En primer lugar, cree un proyecto de aplicación web de Node.js.
 1. Cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Aplicación web en blanco de Node.js** (JavaScript). En el cuadro de diálogo que se abre, elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Aplicación web en blanco de Node.js** (JavaScript). En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y elija **Node.js**. En el panel central, elija **Aplicación web en blanco de Node.js**, escriba el nombre **NodejsWebAppBlank** y haga clic en **Aceptar**.
@@ -324,7 +324,12 @@ Cada vez que realice cambios en *app.tsx*, debe volver a ejecutar el comando web
 
 1. Seleccione Chrome como el destino de depuración actual.
 
+    ::: moniker range=">=vs-2019"
+    ![Seleccionar Chrome como destino de depuración](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Seleccionar Chrome como destino de depuración](../javascript/media/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
 
     Si Chrome está disponible en la máquina, pero no aparece como opción, elija **Explorar con** en la lista desplegable de destino de depuración y seleccione Chrome como el destino de explorador predeterminado (elija **Establecer como predeterminado**).
 
@@ -370,6 +375,11 @@ En la sección anterior se asoció el depurador al código Node.jse del lado ser
 
     Chrome se inicia con la depuración habilitada.
 
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > También puede establecer la marca `--remote-debugging-port` al iniciar el explorador si selecciona **Explorar con...** > en la barra de herramientas **Depurar**, elige **Agregar** y, después, configura la marca en el campo **Argumentos**. Use un nombre descriptivo distinto para el explorador, como **Chrome con depuración**. Para obtener información detallada, vea las [notas de la versión](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    ::: moniker-end
+
 3. Cambie a Visual Studio y establezca un punto de interrupción en el código *app-bundle.js* en la función `render()`, tal como se muestra en la siguiente ilustración:
 
     ![Establecer un punto de interrupción](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
@@ -411,4 +421,4 @@ En la sección anterior se asoció el depurador al código Node.jse del lado ser
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Deploy the app to Linux App Service](../javascript/publish-nodejs-app-azure.md) (Implementar la aplicación en App Service de Linux)
+> [Implementación de una aplicación de App Service en Linux](../javascript/publish-nodejs-app-azure.md)

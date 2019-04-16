@@ -3,19 +3,19 @@ title: Uso de plantillas de CookieCutter con Python
 description: Visual Studio admite la extensión gráfica Cookiecutter para detectar plantillas del código de Python y crear proyectos a partir de ellas.
 ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a5b090c1e833a791593e5332b632d64b832b5cb1
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354778"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366320"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Uso de la extensión Cookiecutter
 
@@ -38,9 +38,9 @@ La página de inicio de Cookiecutter muestra una lista de plantillas para elegir
 | Agrupar | Descripción |
 | --- | --- |
 | **Instalado** | Plantillas que se han instalado en el equipo local. Cuando se usa una plantilla en línea, su repositorio se clona automáticamente en una subcarpeta de *~/.cookiecutters*. Puede eliminar una plantilla instalada seleccionada presionando **Suprimir**. |
-| **Recomendado** | Plantillas cargadas desde la fuente recomendada. Microsoft mantiene la fuente predeterminada. Consulte [Opciones de Cookiecutter](#cookiecutter-options) a continuación para más información sobre cómo personalizar la fuente. |
+| **Se recomienda** | Plantillas cargadas desde la fuente recomendada. Microsoft mantiene la fuente predeterminada. Consulte [Opciones de Cookiecutter](#cookiecutter-options) a continuación para más información sobre cómo personalizar la fuente. |
 | **GitHub** | Resultados de búsqueda de GitHub de la palabra clave cookiecutter. Los resultados de GitHub vuelven paginados; si hay más resultados disponibles, aparece **Load More** (Cargar más) al final de la lista. |
-| **Custom** | Cuando se especifica una ubicación personalizada en el cuadro de búsqueda, aparece en este grupo. Puede escribir una ruta de acceso completa al repositorio de GitHub, o la ruta de acceso completa a una carpeta de su disco local. |
+| **Personalizados** | Cuando se especifica una ubicación personalizada en el cuadro de búsqueda, aparece en este grupo. Puede escribir una ruta de acceso completa al repositorio de GitHub, o la ruta de acceso completa a una carpeta de su disco local. |
 
 ### <a name="cloning"></a>Clonación
 
@@ -81,8 +81,8 @@ Las opciones de Cookiecutter están disponibles en **Tools** > **Options** > **C
 
 | Opción | Descripción |
 | --- | --- |
-| **Recommended Feed URL** (URL de fuente recomendada) | La ubicación de la fuente de plantillas recomendadas. Puede ser una dirección URL o una ruta de acceso a un archivo local. Deje en blanco la dirección URL para usar la fuente protegida por Microsoft predeterminada. La fuente proporciona una sencilla lista de ubicaciones de plantillas, separadas por nuevas líneas. Para solicitar cambios en la fuente protegida, realice una solicitud de extracción contra [el origen de GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
-| **Show Help** (Mostrar ayuda) | Controla la visibilidad de la barra de información de ayuda en la parte superior de la ventana de Cookiecutter. |
+| **URL de fuente recomendada** | La ubicación de la fuente de plantillas recomendadas. Puede ser una dirección URL o una ruta de acceso a un archivo local. Deje en blanco la dirección URL para usar la fuente protegida por Microsoft predeterminada. La fuente proporciona una sencilla lista de ubicaciones de plantillas, separadas por nuevas líneas. Para solicitar cambios en la fuente protegida, realice una solicitud de extracción contra [el origen de GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
+| **Show Help (Mostrar ayuda)** | Controla la visibilidad de la barra de información de ayuda en la parte superior de la ventana de Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Optimización de plantillas de Cookiecutter para Visual Studio
 
