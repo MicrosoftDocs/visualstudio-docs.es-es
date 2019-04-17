@@ -77,3 +77,4 @@
 # [Solución de problemas](/visualstudio/mac/troubleshooting)
 ## [Programa para la mejora de la experiencia del usuario de Visual Studio](/visualstudio/mac/visual-studio-experience-improvement-program)
 ## [Notificar un problema](/visualstudio/mac/report-a-problem)
+## [Solución de problemas: Se producen errores en el actualizador al recuperar información](updater-troubleshooting.md)

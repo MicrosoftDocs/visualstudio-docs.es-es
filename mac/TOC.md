@@ -77,3 +77,5 @@
 # [Solución de problemas](troubleshooting.md)
 ## [Programa para la mejora de la experiencia del usuario de Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Notificar un problema](report-a-problem.md)
+## [Solución de problemas: ¿Por qué no puedo ver todas las plantillas?](troubleshooting-no-templates.md)
+## [Solución de problemas: Se producen errores en el actualizador al recuperar información](updater-troubleshooting.md)

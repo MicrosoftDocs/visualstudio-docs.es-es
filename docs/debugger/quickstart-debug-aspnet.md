@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e011d564af02bf6370536086ad0c95b5432cfa04
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354848"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504229"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Inicio rápido: Depurar ASP.NET con el depurador de Visual Studio
 
@@ -28,7 +28,7 @@ El depurador de Visual Studio proporciona muchas características de gran eficac
 1. Abra Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **asp.net**, elija **Plantillas** y luego, **Crear una aplicación web ASP.NET Core**. En el cuadro de diálogo que se abre, elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **asp.net**, elija **Plantillas** y luego, **Crear una aplicación web ASP.NET Core**. En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#**, elija **Web** y luego, en el panel central, **Aplicación web ASP.NET Core**. Escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
@@ -138,4 +138,4 @@ Para obtener más información sobre el uso de Editar y continuar y las limitaci
 En este tutorial, ha aprendido a iniciar el depurador, a ejecutar el código paso a paso y a inspeccionar variables. Puede ser que le interese analizar las características del depurador con más detenimiento, así como consultar los vínculos disponibles con más información.
 
 > [!div class="nextstepaction"]
-> [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+> [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

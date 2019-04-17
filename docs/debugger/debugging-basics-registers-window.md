@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fafd202fd89666cedb1132d9647f2f1d95f4b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685058"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584524"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Acerca de la ventana de registros en Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -47,8 +47,24 @@ La ventana **Registros** solo está disponible si está habilitada la depuració
  La ventana **Registros** permite algo más que simplemente ver el contenido de un registro. Cuando el programa está en modo de interrupción en el código nativo, puede hacer clic en el contenido de un registro y modificar el valor. Esto no es algo que deba hacerse a la ligera. Si no comprende la función del registro que modifica y los datos que contiene, el resultado del cambio será probablemente el bloqueo del programa, u otra consecuencia no deseada. Desgraciadamente, una explicación detallada de los conjuntos de registros de los diversos procesadores Intel y compatibles queda muy lejos del alcance de esta breve introducción.
 
 ## <a name="register-groups"></a>Grupos de registros
- Por motivos de claridad, los registros se organizan en grupos en la ventana **Registros**. Si hace clic con el botón derecho en la ventana **Registros**, aparecerá un menú contextual con una lista de grupos que puede mostrar u ocultar según su conveniencia.
+
+Por motivos de claridad, los registros se organizan en grupos en la ventana **Registros**. Si hace clic con el botón derecho en la ventana **Registros**, aparecerá un menú contextual con una lista de grupos que puede mostrar u ocultar según su conveniencia.
+
+## <a name="register-flags"></a>Indicadores de registro
+
+Para los procesadores de Intel x86, es posible que vea los siguientes indicadores en el **registra** ventana. Durante una sesión de depuración, también puede editar estas marcas.
+
+|Marcar|Valor establecido|
+|-|-|
+|Desbordamiento|OV = 1|
+|Dirección|UP = 1|
+|interrupción|EI = 1|
+|Signo|PL = 1|
+|Cero|ZR = 1|
+|Arrastre auxiliar|AC = 1|
+|Paridad|PE = 1|
+|Llevar|CY = 1|
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Usar la ventana Registros](../debugger/how-to-use-the-registers-window.md)
+- [Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

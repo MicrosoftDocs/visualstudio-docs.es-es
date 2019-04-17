@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d4fbe922512194c6dd87ffc72e27cfcf9c7631f0
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: a06f2e530472756e2620c84cd872895dfc6fa453
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355755"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790282"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar una aplicación de Node.js en Azure (App Service de Linux)
 
@@ -38,7 +38,7 @@ En este tutorial aprenderá a:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Debe tener instalado Visual Studio y la carga de trabajo de desarrollo de Node.js. 
+* Debe tener instalado Visual Studio y la carga de trabajo de desarrollo de Node.js.
 
     ::: moniker range=">=vs-2019"
     Si todavía no ha instalado Visual Studio 2019, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
@@ -62,7 +62,7 @@ En este tutorial aprenderá a:
 1. Cree una aplicación de Express de TypeScript.
 
     ::: moniker range=">=vs-2019"
-    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Create a new Basic Azure Node.js Express 4 application** (Crear una aplicación básica de Azure Node.js Express 4) (TypeScript). En el cuadro de diálogo que se abre, elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Create a new Basic Azure Node.js Express 4 application** (Crear una aplicación básica de Azure Node.js Express 4) (TypeScript). En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **TypeScript** y elija **Node.js**. En el panel central, elija **Aplicación básica de Azure Node.js Express 4** y después haga clic en **Aceptar**.

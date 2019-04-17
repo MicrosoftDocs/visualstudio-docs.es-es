@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: a5e39778a2d503470629f6c8b7c9243b9dc69cf3
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475973"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504086"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Inicio rápido: Depurar con C# o Visual Basic mediante el depurador de Visual Studio
 
@@ -28,7 +28,7 @@ El depurador de Visual Studio proporciona muchas características de gran eficac
 1. Abra Visual Studio y cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y luego, **Create new Console App (.NET Core) project** (Crear proyecto de aplicación de consola [.NET Core]). En el cuadro de diálogo que se abre, elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y luego, **Create new Console App (.NET Core) project** (Crear proyecto de aplicación de consola [.NET Core]). En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#**, elija **.NET Core** y luego, en el panel central, **Aplicación de consola (.NET Core)**. Luego escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
@@ -186,4 +186,4 @@ Para obtener más información sobre el uso de Editar y continuar y las limitaci
 En este tutorial, ha aprendido a iniciar el depurador, a ejecutar el código paso a paso y a inspeccionar variables. Puede ser que le interese analizar las características del depurador con más detenimiento, así como consultar los vínculos disponibles con más información.
 
 > [!div class="nextstepaction"]
-> [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+> [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
