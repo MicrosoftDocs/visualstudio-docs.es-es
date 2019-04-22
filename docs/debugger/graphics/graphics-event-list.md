@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683686"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649997"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos gráficos
 Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio para explorar los eventos Direct3D que se registraron mientras se presentaba un fotograma de su juego o aplicación.
@@ -104,7 +104,6 @@ Visual Studio 2017 y versiones posteriores contienen la **historial de recursos*
 ![Historial de recursos](media/gfx_diag_resource_history.png)
 
 Esta ventana le permite ver el historial del elemento seleccionado en la lista de eventos.  Sirve para seleccionar otros elementos para ver el historial de la lista desplegable en la parte superior.  La mitad superior de la ventana contiene los **eventos de configuración de marco**.  Estos son los eventos que pertenecen a la *crear* categoría de tipos y son las llamadas que suelen inicializaron y creación el recurso.  La parte inferior de la ventana de la mitad contiene el **eventos de fotogramas** sección.  Estos son la lectura normal y escriben los eventos que se producen durante el uso del recurso.
-
 
 | Columna | Descripción |
 |-----------| - |

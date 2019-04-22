@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796821"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652116"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referencia de C++ Core Guidelines Comprobador
 
@@ -107,12 +107,9 @@ Expresión "% expr %": Ninguna matriz de decadencia de puntero. Consulte [C++ Co
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) función '% símbolo %' debe especificar exactamente uno de 'virtual', 'override' o 'final'. Consulte [C.128: Funciones virtuales deben especificar exactamente uno de virtual, invalidación, o final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) el tipo '% símbolo %' con una función virtual necesita cualquier destructor no virtual público virtual o protegido. Consulte [C++ Core Guidelines C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
-
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) no debe utilizar el destructor de invalidación explícita 'override' o 'virtuales' especificadores. Consulte [C.128: Funciones virtuales deben especificar exactamente uno de virtual, invalidación, o final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
-
 
 ## <a name="type-group"></a>TIPO de grupo
 
@@ -205,7 +202,6 @@ Consulte [C++ Core Guidelines GSL.view: Vistas](https://github.com/isocpp/CppCor
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` o `std::string_view` creado a partir de un archivo temporal se consideran no válidos cuando se invalida temporal. Consulte [directrices principales de C++: GSL.view: Vistas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
-
 
 ## <a name="deprecated-warnings"></a>Advertencias en desuso
 

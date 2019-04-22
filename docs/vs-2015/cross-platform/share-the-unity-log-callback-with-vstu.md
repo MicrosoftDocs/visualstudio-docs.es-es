@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 5e4fcfdc35e9329429421fd03a941e611e6b5b8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b58d693980ffc55ccfe613d52e868bccca9908b8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789174"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649906"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Compartir la devolución de llamada de registro de Unity con VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio Tools para Unity registra una devolución de llamada de registro con Unity para poder transmitir su consola a Visual Studio. Si las secuencias de comandos del editor también registran una devolución de llamada de registro con Unity, la devolución de llamada de VSTU puede interferir con la devolución de llamada. Para evitar esta posibilidad, use el evento `VisualStudioIntegration.LogCallback` para cooperar con VSTU.  
   
 ## <a name="demonstrates"></a>Demostraciones  
@@ -49,4 +48,4 @@ public class LogCallbackHook
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Ejemplo: Generación de archivo de proyecto](../cross-platform/customize-project-files-created-by-vstu.md)
+ [Ejemplo: Generación del archivo de proyecto](../cross-platform/customize-project-files-created-by-vstu.md)

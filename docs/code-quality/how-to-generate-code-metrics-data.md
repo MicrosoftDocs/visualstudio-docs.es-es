@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232754"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Filtrar Generar datos de métricas de código
+# <a name="how-to-generate-code-metrics-data"></a>Procedimiento Generar datos de métricas de código
 
 Puede generar datos de métricas de código de tres maneras:
 

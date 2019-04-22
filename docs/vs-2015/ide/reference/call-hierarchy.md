@@ -13,17 +13,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4846d00172c3d71be1f8a8dbdf68cf4e7fd1f065
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774779"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649412"
 ---
 # <a name="call-hierarchy"></a>Jerarquía de llamadas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La jerarquía de llamadas le permite navegar por el código al mostrar todas las llamadas a y desde un constructor, una propiedad o un método seleccionados. Esto le permite comprender mejor cómo fluye el código y evaluar los efectos de los cambios en el código. Puede examinar varios niveles de código para ver cadenas complejas de llamadas de métodos y puntos de entrada adicionales al código, lo que le permite explorar todas las posibles rutas de acceso de ejecución.  
   
  La jerarquía de llamadas está disponible en tiempo de diseño, a diferencia de la pila de llamadas mostrada por el depurador.  

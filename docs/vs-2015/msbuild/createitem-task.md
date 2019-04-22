@@ -19,17 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 936ab49a07da5065b14b4a56325607001352f747
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce88cb875a008b806aa882dafe186af7d8f29f29
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802165"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649564"
 ---
 # <a name="createitem-task"></a>CreateItem (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Rellena las colecciones de elementos con los elementos de entrada. Esto permite copiar los elementos de una lista en otra.  
   
 > [!NOTE]
@@ -40,8 +39,8 @@ Rellena las colecciones de elementos con los elementos de entrada. Esto permite 
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|`AdditionalMetadata`|Parámetro de matriz `String` opcional.<br /><br /> Especifica los metadatos adicionales que se adjuntarán a los elementos de salida.  Especifique el nombre y valor de los metadatos para el elemento empleando la siguiente sintaxis:<br /><br /> *nombreDeMetadatos*  `=` *valorDeMetadatos*<br /><br /> En caso de múltiples pares de nombre/valor de metadatos, se deberán separar con un punto y coma. Si el nombre o el valor contiene un punto y coma o cualquier otro carácter especial, deben ser de escape. Para obtener más información, vea [Cómo: Utilizar caracteres de escape especiales en MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
-|`Exclude`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los elementos que se excluirán de la colección de elementos de salida. Este parámetro puede contener las especificaciones del comodín. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md) y [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).|  
+|`AdditionalMetadata`|Parámetro de matriz `String` opcional.<br /><br /> Especifica los metadatos adicionales que se adjuntarán a los elementos de salida.  Especifique el nombre y valor de los metadatos para el elemento empleando la siguiente sintaxis:<br /><br /> *nombreDeMetadatos*  `=` *valorDeMetadatos*<br /><br /> En caso de múltiples pares de nombre/valor de metadatos, se deberán separar con un punto y coma. Si el nombre o el valor contiene un punto y coma o cualquier otro carácter especial, deben ser de escape. Para obtener más información, vea [Cómo: Escape de caracteres especiales en MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
+|`Exclude`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los elementos que se excluirán de la colección de elementos de salida. Este parámetro puede contener las especificaciones del comodín. Para obtener más información, vea [Elementos](../msbuild/msbuild-items.md) y [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).|  
 |`Include`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]`obligatorio.<br /><br /> Especifica los elementos que se incluirán en la colección de elementos de salida. Este parámetro puede contener las especificaciones del comodín.|  
 |`PreserveExistingMetadata`|Parámetro `Boolean` opcional.<br /><br /> Si es `True`, solo se aplican los metadatos adicionales si no existen ya.|  
   

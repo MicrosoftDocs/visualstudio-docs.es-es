@@ -1,5 +1,5 @@
 ---
-title: Filtrar Ampliar código generado por el Object Relational Designer | Documentos de Microsoft
+title: Procedimiento Ampliar código generado por el Object Relational Designer | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6aedac18548112335da49012d471fb98eef2ef2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a5fc9bb7b6e2d6813c4c571633ef46d4b9e1f48
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997511"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651739"
 ---
-# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Filtrar Ampliar código generado por Object Relational Designer
+# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Procedimiento Ampliar código generado por Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El código generado por el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] se vuelve a generar cuando se realizan cambios en las clases de entidad y en otros objetos de la superficie del diseñador. Debido a esta regeneración del código, cualquier código que se agregue al código generado se suele sobrescribir cuando el diseñador vuelve a generar el código. El [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] permite generar archivos de clases parciales en los que se puede agregar código que no se sobrescribirá. Un ejemplo de cómo agregar código propio al código generado por el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] sería agregar validación de datos a las clases (de entidad) de LINQ to SQL. Para obtener información, vea [Cómo: Agregar validación a clases de entidad](../data-tools/how-to-add-validation-to-entity-classes.md).  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

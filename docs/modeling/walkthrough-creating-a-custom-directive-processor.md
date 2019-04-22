@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195130"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649113"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Tutorial: Creación de un procesador de directivas personalizado
 
@@ -654,8 +654,7 @@ En esta sección, agregará una clave para el procesador de directivas personali
 
      La clave del Registro debe tener los siguientes valores:
 
-
-   | nombre | Tipo | Datos |
+   | Name | Tipo | Datos |
    |-|-|-|
    | (Predeterminado) | REG_SZ | (valor no establecido) |
    | Clase | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -663,13 +662,11 @@ En esta sección, agregará una clave para el procesador de directivas personali
 
      Si ha colocado el ensamblado en la GAC, los valores deberían ser similares a los siguientes:
 
-
-   | nombre | Tipo | Datos |
+   | Name | Tipo | Datos |
    |-|-|-|
    | (Predeterminado) | REG_SZ | (valor no establecido) |
    | Clase | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Ensamblado | REG_SZ | CustomDP.dll |
-
 
 6. Reinicie Visual Studio.
 

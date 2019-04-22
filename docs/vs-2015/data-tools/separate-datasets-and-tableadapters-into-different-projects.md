@@ -17,17 +17,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f4b470bab1bc3a017edeb1c686a53baf2293495
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987127"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647477"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separar conjuntos de datos y TableAdapters en proyectos diferentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Objetos DataSet con tipo se han mejorado para que la [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) y clases de conjunto de datos se pueden generar en proyectos independientes. Esto permite separar rápidamente los niveles de la aplicación y generar aplicaciones de datos con n niveles.  
   
  El siguiente procedimiento describe cómo usar el Diseñador de Dataset para generar código de conjunto de datos en un proyecto que es independiente del proyecto que contiene el texto generado `TableAdapter` código.  

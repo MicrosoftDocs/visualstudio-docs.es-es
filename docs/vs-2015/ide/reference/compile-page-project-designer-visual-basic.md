@@ -19,17 +19,16 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 928d3c4fe3e90c731f56eba4e7275772fdcd76c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd58013cb26e8533a5b898a0e5cd1df3be1b262
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778917"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649061"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página Compilación, Diseñador de proyectos (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use la página **Compilación** del Diseñador de proyectos para especificar las instrucciones de compilación. En esta página también puede especificar opciones avanzadas del compilador o eventos anteriores o posteriores a la compilación.  
   
  Para acceder a la página **Compilación**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando se muestre el Diseñador de proyectos, haga clic en la pestaña **Compilar**.  

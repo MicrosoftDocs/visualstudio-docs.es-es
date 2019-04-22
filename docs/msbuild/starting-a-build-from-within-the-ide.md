@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 641dd7485e97a7833c2483d73271a8169dbc2054
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae3478aef733d106fa075a51edce4af91b404149
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617748"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584342"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Iniciar una compilación desde el IDE
 Los sistemas de proyectos personalizados deben utilizar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar las compilaciones. En este artículo se describen las razones de este requisito y se examina el procedimiento.
 
 ## <a name="parallel-builds-and-threads"></a>Compilaciones y subprocesos paralelos
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite compilaciones paralelas, que requieren mediación para tener acceso a los recursos comunes. Los sistemas de proyectos pueden ejecutar compilaciones de forma asincrónica, pero tales sistemas no deben llamar a las funciones de compilación desde dentro de las devoluciones de llamadas proporcionadas al administrador de la compilación.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite compilaciones paralelas, que requieren mediación para tener acceso a los recursos comunes. Los sistemas de proyectos pueden ejecutar compilaciones de forma asincrónica, pero tales sistemas no deben llamar a las funciones de compilación desde dentro de las devoluciones de llamadas.
 
  Si el sistema de proyectos modifica las variables de entorno, debe establecer el valor de NodeAffinity de la compilación en OutOfProc. Este requisito significa que no se pueden utilizar objetos host, puesto que requieren el nodo in-proc.
 

@@ -11,17 +11,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0ebbf8a0492537ee40062fb17bb338d46c228a9a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775893"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652870"
 ---
 # <a name="toolbox-components-tab"></a>Cuadro de herramientas, Componentes (Pestaña)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Muestra los componentes que puede agregar a diseñadores de [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] y [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Además de los componentes de [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] que se incluyen con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], como los componentes <xref:System.Messaging.MessageQueue> y <xref:System.Diagnostics.EventLog>, puede agregar sus propios componentes o unos de terceros a esta pestaña. Para obtener más información, consulte [Cómo: Manipular las fichas del cuadro de herramientas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  Para mostrar esta pestaña, en el menú **Ver** seleccione **Cuadro de herramientas**. En el **Cuadro de herramientas**, seleccione la pestaña **Componentes**.  

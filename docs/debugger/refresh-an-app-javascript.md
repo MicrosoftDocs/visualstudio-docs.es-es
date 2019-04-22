@@ -1,5 +1,5 @@
 ---
-title: Actualizar una aplicación para UWP | Microsoft Docs
+title: Actualizar una aplicación para UWP | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790295"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Actualizar una aplicación para UWP en Visual Studio
@@ -57,9 +57,9 @@ ms.locfileid: "58790295"
 
 5.  En la página principal de la aplicación para UWP, editar algunas de HTML.
 
-7.  Haga clic en el **actualizar Windows app** button, que tiene el siguiente aspecto: ![botón de actualización de Windows app](../debugger/media/js_refresh.png "JS_Refresh"). (O bien, presiona F4).
+7.  Haga clic en el **actualizar Windows app** button, que tiene el siguiente aspecto: ![Botón de la aplicación de Windows actualizar](../debugger/media/js_refresh.png "JS_Refresh"). (O bien, presiona F4).
 
 8.  Cambia a la aplicación. Se vuelve a cargar la aplicación y el HTML actualizado se usa para representar la aplicación.
 
 ## <a name="see-also"></a>Vea también
-- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)

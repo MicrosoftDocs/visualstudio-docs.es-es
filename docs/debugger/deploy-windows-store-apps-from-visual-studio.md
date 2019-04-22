@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790386"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implementar aplicaciones para UWP desde Visual Studio
@@ -28,7 +28,7 @@ La funcionalidad de implementación de Visual Studio genera y registra aplicacio
 
 - Cuando el destino es un dispositivo remoto, Visual Studio copia los archivos necesarios en el equipo remoto y registra la aplicación en ese dispositivo.
 
-La implementación es automática cuando se depura la aplicación desde Visual Studio mediante la opción **Iniciar depuración** (teclado: F5) o la opción **Iniciar sin depurar** (teclado: CTRL + F5). También puede implementar la aplicación manualmente. La implementación manual es útil en los siguientes casos:
+Implementación es automática cuando se depura la aplicación desde Visual Studio mediante el uso de la **Iniciar depuración** opción (teclado: F5) o el **iniciar sin depurar** opción (teclado: CTRL + F5). También puede implementar la aplicación manualmente. La implementación manual es útil en los siguientes casos:
 
 - Pruebas ad hoc en un equipo local o remoto.
 
@@ -76,7 +76,7 @@ En la implementación se usa el canal de la red del depurador remoto para enviar
 
     El **conexión remota** cuadro de diálogo muestra los dispositivos en la subred local y cualquier dispositivo que está conectado directamente al equipo de Visual Studio mediante un cable Ethernet.
 
-   **Especificar el dispositivo remoto en una página de proyecto de Visual C++**
+   **Cómo especificar el dispositivo remoto en un objeto Visual C++ página del proyecto**
 
    ![C&#43; &#43; propiedades para la depuración remota del proyecto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,7 +104,7 @@ Para quitar la exención de bucle invertido de red en la aplicación:
 
 - En el C# y depuración de Visual Basic página de propiedades, desactive la **permitir bucle invertido de red** casilla de verificación.
 
-- En la página de propiedades de depuración de C++, establezca el **permitir bucle invertido de red** valor **No**.
+- En el C++ depurar la página de propiedades, establezca la **permitir bucle invertido de red** valor **No**.
 
 **No iniciar, pero depurar mi código al empezar (C# y Visual Basic) o iniciar aplicación (C++)**
 
@@ -112,7 +112,7 @@ Para configurar el inicio automático de una sesión de depuración en la implem
 
 - En el C# y página de propiedades Depurar de Visual Basic, compruebe el **no iniciar, pero depurar mi código al empezar** casilla de verificación.
 
-- En la página de propiedades de depuración de C++, establezca el **Iniciar aplicación** valor **Sí**.
+- En el C++ depurar la página de propiedades, establezca la **Iniciar aplicación** valor **Sí**.
 
 ## <a name="see-also"></a>Vea también
 

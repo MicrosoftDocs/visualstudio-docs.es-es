@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857858"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
@@ -104,7 +104,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 
 |||
 |-|-|
-|**Subelemento**|**de esquema JSON**|
+|**Subelemento**|**Definición**|
 |Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual|
 |GUID|El símbolo representa un GUID y debe coincidir con el formato de GUID|
 |ID|El símbolo representa un identificador y debe ser un entero no negativo|
@@ -131,7 +131,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |Sistema|El *Windows\System32* carpeta|
 |WinDir|El valor de la variable de entorno % WinDir %|
 
- **Imagen**
+ **Image**
 
  El \<imagen > elemento define una imagen que se puede hacer referencia mediante un moniker. El GUID y el Id. de juntas forman el moniker de imagen. El moniker de la imagen debe ser único en la biblioteca de imágenes completo. Si más de una imagen tiene un moniker especificado, la primera de ellas al compilar la biblioteca es lo que se conserva.
 
@@ -146,7 +146,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 
 |||
 |-|-|
-|**Atributo**|**de esquema JSON**|
+|**Attribute**|**Definición**|
 |GUID|[Obligatorio] La parte GUID del moniker de imagen|
 |ID|[Obligatorio] La parte del identificador de moniker de la imagen|
 |AllowColorInversion|[Opcional, true de forma predeterminada] Indica si la imagen puede tener sus colores invertidos mediante programación cuando se utiliza en un fondo oscuro.|
@@ -163,7 +163,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 
 |||
 |-|-|
-|**Atributo**|**de esquema JSON**|
+|**Attribute**|**Definición**|
 |URI|[Obligatorio] Un URI que define dónde se puede cargar la imagen desde. Puede ser uno de los siguientes:<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mediante la aplicación: / / / entidad<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo|
 |Fondo|[Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> *Luz:* El origen puede utilizarse en un fondo claro.<br /><br /> *Oscuro:* El origen puede utilizarse en un fondo oscuro.<br /><br /> *Contraste alto:* El origen puede utilizarse en cualquier en segundo plano en modo de contraste alto.<br /><br /> *HighContrastLight:* El origen puede utilizarse en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* El origen puede utilizarse en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo en segundo plano, el origen puede usarse en cualquier en segundo plano.<br /><br /> Si está en segundo plano *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, nunca se invierten los colores de origen. Si se omite o se establece en fondo *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo.|
 
@@ -173,7 +173,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 
 ||||
 |-|-|-|
-|**Elemento**|**Atributos (todas requeridas)**|**de esquema JSON**|
+|**Element**|**Atributos (todas requeridas)**|**Definición**|
 |\<Tamaño >|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|
 |\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize con tamaño máximo (en unidades de dispositivo), ambos inclusive. La imagen será cuadrada.|
 |\<Dimensiones >|Ancho, alto|El origen se usará para las imágenes del ancho y alto (en unidades de dispositivo).|
@@ -187,7 +187,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 
 |||
 |-|-|
-|**Atributo**|**de esquema JSON**|
+|**Attribute**|**Definición**|
 |Tipo|[Obligatorio] El tipo del recurso nativo, XAML o PNG|
 |ID|[Obligatorio] La parte de identificador entero del recurso nativo|
 
@@ -204,7 +204,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 
 |||
 |-|-|
-|**Atributo**|**de esquema JSON**|
+|**Attribute**|**Definición**|
 |GUID|[Obligatorio] La parte GUID del moniker de imagen|
 |ID|[Obligatorio] La parte del identificador de moniker de la imagen|
 |Externo|[Opcional, valor predeterminado es false] Indica si el moniker de imagen hace referencia a una imagen en el manifiesto actual.|

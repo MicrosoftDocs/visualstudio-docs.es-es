@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232702"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
@@ -54,7 +54,7 @@ Puede usar IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Pr
 |---------------------| - |
 | **Compatibilidad total con** | - Aplicaciones de Visual Basic y Visual C# que usan .NET Framework 2.0 o versiones posteriores.<br/>Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br/>Para depurar aplicaciones de SharePoint con IntelliTrace, consulte [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar aplicaciones de Microsoft Azure con IntelliTrace, vea [depurar con IntelliTrace y Visual Studio un servicio de nube publicado](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Compatibilidad limitada** | - C++ aplicaciones destinadas a Windows admiten la visualización de instantáneas mediante step-back de IntelliTrace. Se admiten solo eventos de depurador y la excepción.<br />-.NET core y aplicaciones de ASP.NET Core admiten para ciertos sólo eventos (eventos de controlador de MVC, ADO.NET y HTTPClient) en la depuración local. No se admite el recopilador independiente para las aplicaciones .NET Core o ASP.NET Core.<br />- Aplicaciones de F# en modo experimental<br />-Las aplicaciones UWP compatibles solo para eventos |
-| **No compatibles** | -Otros lenguajes y script<br />-Aplicaciones móviles de Windows, Silverlight, Xbox o servicios de Windows |
+| **No se admite** | -Otros lenguajes y script<br />-Aplicaciones móviles de Windows, Silverlight, Xbox o servicios de Windows |
 
 > [!NOTE]
 > Si desea depurar un proceso que ya se está ejecutando, puede recopilar eventos de IntelliTrace solo (ninguna información de llamadas). Puede adjuntar a un proceso de 32 bits o 64 bits en el equipo local únicamente. No se recopilan los eventos que se producen antes de asociar al proceso.
@@ -103,7 +103,7 @@ A continuación se muestran algunos ejemplos de cómo IntelliTrace puede servir 
 
 De forma predeterminada, IntelliTrace únicamente registra eventos de IntelliTrace: eventos del depurador, excepciones, eventos de .NET Framework y otros eventos del sistema que pueden ayudarle con la depuración. Puede elegir las clases de eventos de IntelliTrace que desee recopilar, salvo los eventos del depurador y las excepciones, que siempre se recopilan. Consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).
 
-- **Eventos de depurador**
+- **Eventos del depurador**
 
      IntelliTrace registra siempre los eventos que se producen en el depurador de Visual Studio. Por ejemplo, iniciar la aplicación es un evento del depurador. Otros eventos del depurador son los eventos de parada, que hacen que la aplicación interrumpa la ejecución. Por ejemplo, el programa encuentra un punto de interrupción, alcanza un punto de seguimiento o se ejecuta un comando **Paso**.
 
@@ -137,9 +137,9 @@ De forma predeterminada, IntelliTrace únicamente registra eventos de IntelliTra
 
      Vea:
 
-    - [Usar el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
+    - [Uso del recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
-    - [Use los datos de IntelliTrace guardado](../debugger/using-saved-intellitrace-data.md)
+    - [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)
 
     - [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
 

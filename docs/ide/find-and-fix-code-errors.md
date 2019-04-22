@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790529"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504463"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Hacer que el código funcione en Visual Studio
 
@@ -156,6 +156,6 @@ Para obtener más información sobre las pruebas unitarias en Visual Studio y c�
 
 ## <a name="see-also"></a>Vea también
 
-- [Guía de características del depurador](../debugger/debugger-feature-tour.md)
-- [Más información sobre cómo usar el depurador](../debugger/debugger-feature-tour.md)
+- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
+- [Más información sobre cómo usar el depurador](../debugger/index.md)
 - [Generación y corrección del código](../ide/code-generation-in-visual-studio.md)

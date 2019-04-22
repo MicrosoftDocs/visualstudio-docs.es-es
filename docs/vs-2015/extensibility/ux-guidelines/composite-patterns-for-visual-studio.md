@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f65c3fb08932c62bce094b15d698f6bef3da8e86
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: afb127d695f6cc7e1e3999c159b7735d965f66b9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59002094"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653273"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Patrones compuestos para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -395,7 +395,6 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apariencia de la selección de objeto gráfico
  Los controladores de selección son cuadrados dibujadas en un patrón rectangular alrededor del rectángulo del objeto. El gráfico siguiente muestra ejemplos de los diferentes Estados que puede tener un objeto gráfico con el identificador, ajuste de tamaño y apariencia de edición en contexto. El tamaño de los identificadores debe asociarse al borde de ventana y el uso de las métricas de edge el **GetSystemMetrics** API.
 
-
 |          Estado          |  Apariencia   |                                                                  Detalles de Visual                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **No seleccionado**      |    Default    |                 ![Estado del botón predeterminado](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713 10_DefaultState")                 |
@@ -437,7 +436,6 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 >  **Enfoque** y **selección** son conceptos diferentes. *Enfoque* es una indicación de que la interfaz de usuario del elemento que se destina para recibir entrada dirigido no explícitamente a otro objeto, mientras que *selección* se refiere al estado de inclusión de un objeto en un conjunto de objetos de los cuales posteriores las operaciones pueden tener lugar.
 
  Las selecciones en las listas pueden ser contiguas, separado, o la región. Cuando selecciones múltiples se permiten, contiguos y siempre debe ser compatible selección separado al soporte técnico para las selecciones de región (cuadro) son opcional. Las selecciones de región se inician y arrastrándola en el espacio en blanco del cuerpo de la lista.
-
 
 | Object | Selección  |
 |--------|------------|

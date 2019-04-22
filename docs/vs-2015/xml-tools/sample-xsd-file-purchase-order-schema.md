@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6680c9ca768dcb551d98cc9c393f8e5c59500794
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d3a699ed1eecfbd41e40a84d185e4d1d7d45fa59
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986648"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650751"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Archivo XSD de muestra: Esquema de pedido de compra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El archivo XSD siguiente se usa en numerosos ejemplos de la documentación del Diseñador de esquemas XSD. Este archivo es un esquema de pedido de compra.  
   
 ```xml  

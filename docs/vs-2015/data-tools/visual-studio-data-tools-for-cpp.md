@@ -10,17 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999507"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653065"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools para C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 C++ nativo a menudo pueden proporcionar el rendimiento más rápido cuando se tiene acceso a orígenes de datos. Sin embargo, no están tan enriquecidos como para aplicaciones .NET datos herramientas para aplicaciones de C++ en Visual Studio. Por ejemplo, no se puede usar las ventanas de orígenes de datos para arrastrar y colocar los orígenes de datos a una superficie de diseño de C++. Si necesita una capa de objeto-relacional, tendrá que escribir el suyo propio, o utilizar un producto de terceros.  Lo mismo puede decirse de funcionalidad de enlace de datos, aunque las aplicaciones que usan la biblioteca Microsoft Foundation Class pueden utilizar algunas clases de base de datos, junto con los documentos y vistas, para almacenar datos en memoria y mostrarla al usuario. Para obtener más información, consulte [acceso a datos en Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   
  Para conectarse a bases de datos SQL, aplicaciones nativas de C++ pueden utilizar los controladores ODBC y OLE DB y el proveedor de ADO que se incluyen con Windows.     Estos pueden conectarse a cualquier base de datos que es compatible con esas interfaces. El controlador ODBC es el estándar. OLE DB se proporciona por compatibilidad con versiones anteriores. Para obtener más información sobre estas tecnologías de datos, vea [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  

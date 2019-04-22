@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b655609548d3de293abe2adc0ec3fb5c6fcf297b
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232488"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitar el acoplamiento excesivo de clases
@@ -50,5 +50,5 @@ Excluir esta advertencia cuando el tipo o método se considera fácil de mantene
 
 ## <a name="see-also"></a>Vea también
 
-- [advertencias de mantenimiento](../code-quality/maintainability-warnings.md)
+- [Advertencias de mantenimiento](../code-quality/maintainability-warnings.md)
 - [Medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md)

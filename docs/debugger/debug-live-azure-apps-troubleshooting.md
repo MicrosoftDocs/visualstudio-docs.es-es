@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857767"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solución de problemas y problemas conocidos de depuración de instantáneas en Visual Studio
 
 Si los pasos descritos en este artículo no resuelven el problema, póngase en contacto con snaphelp@microsoft.com.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Problema: Punto de instantánea no activo
+## <a name="issue-snappoint-does-not-turn-on"></a>Problema: Punto de acoplamiento no activa
 
 Si ve un icono de advertencia ![icono de advertencia de punto de instantánea](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "icono de advertencia de punto de instantánea") con el punto de instantánea en lugar del icono de punto de instantánea habitual, significa que el punto de instantánea no está activo.
 
@@ -32,7 +32,7 @@ Siga estos pasos:
 
 1. Asegúrese de que tiene la misma versión de código fuente que se usó para crear e implementar su app.isua1. Asegúrese de que va a cargar los símbolos correctos para su implementación. Para ello, vea la ventana **Módulos** mientras se lleva a cabo la depuración de instantáneas y verifique si la columna Archivo de símbolo muestra un archivo .pdb cargado para el módulo que va a depurar. Snapshot Debugger intentará descargar automáticamente y usar los símbolos para la implementación.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: Los símbolos no se cargan al abrir una instantánea
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: No se cargan los símbolos al abrir una instantánea
 
 Si ve la siguiente ventana, significa que los símbolos no se cargan.
 
@@ -48,7 +48,7 @@ Siga estos pasos:
 
 - Como alternativa, si la organización usa un servidor de símbolos o cambia los símbolos a una ruta de acceso distinta, use la configuración de símbolos para cargar los símbolos correctos para su implementación.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: No puedo ver la opción "Asociar Snapshot Debugger" en Cloud Explorer
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: No puedo ver la opción de "Adjuntar depurador de instantáneas" en el explorador en la nube
 
 Siga estos pasos:
 
@@ -67,7 +67,7 @@ Siga estos pasos:
   - Azure Kubernetes Service: aplicaciones ASP.NET Core que se ejecutan en .NET Core 2.2 o posteriores en Ubuntu 18.04.
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: Solo veo instantáneas limitadas en las herramientas de diagnóstico
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: Sólo se ve limitado instantáneas en las herramientas de diagnóstico
 
 ![Punto de instantánea limitado](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Punto de instantánea limitado")
 
@@ -75,7 +75,7 @@ Siga estos pasos:
 
 - Las instantáneas ocupan poco memoria pero tienen una carga de confirmación. Si Snapshot Debugger detecta que el servidor soporta una carga de memoria pesada, no realizará instantáneas. Puede eliminar las instantáneas que ya están capturadas; para ello, detenga la sesión de Snapshot Debugger y vuelva a intentarlo.
 
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problema: La depuración de instantáneas con varias versiones de Visual Studio genera errores
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problema: Depuración de instantáneas con varias versiones de Visual Studio genera errores
 
 VS 2019 requiere una versión más reciente de la extensión de sitio de Snapshot Debugger en la instancia de Azure App Service.  Esta versión no es compatible con la versión anterior de la extensión de sitio de Snapshot Debugger que usa VS 2017.  Obtendrá el siguiente error si intenta adjuntar Snapshot Debugger en VS 2019 a una instancia de Azure App Service que se depuró anteriormente con Snapshot Debugger en VS 2017:
 
@@ -90,7 +90,7 @@ Para solucionar este problema, elimine la siguiente configuración de la aplicac
 - INSTRUMENTATIONENGINE_EXTENSION_VERSION
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problema: Tengo problemas con la depuración de instantáneas y necesito habilitar más registros
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problema: Tengo problemas de depuración de instantáneas y tengo que habilitar el registro más
 
 ### <a name="enable-agent-logs"></a>Habilitar los registros del agente
 
@@ -100,9 +100,9 @@ Los registros del agente se pueden encontrar en las ubicaciones siguientes:
 
 - App Services:
   - Vaya al sitio de Kudu en App Service, es decir, yourappservice.**scm**.azurewebsites.net, y acceda a la consola de depuración.
-  - Los registros del agente se almacenan en el siguiente directorio: D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+  - Registros del agente se almacenan en el directorio siguiente:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS:
-  - Inicie sesión en la máquina virtual; los registros del agente se almacenan en la siguiente ubicación: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - Inicie sesión en la máquina virtual, el agente de los registros se almacenan como sigue:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS
   - Vaya al siguiente directorio: /tmp/diag/AgentLogs/*
 
@@ -114,7 +114,7 @@ Los registros de instrumentación pueden encontrarse en las siguientes ubicacion
   - Los registros de errores se envían automáticamente a D:\Home\LogFiles\eventlog.xml, los eventos se marcan como <<Nombre de proveedor="Motor de instrumentación" //>> o "Puntos de interrupción de producción"
 - VM/VMSS:
   - Inicie sesión en la máquina virtual y abra el Visor de eventos.
-  - Abra la siguiente vista: *Registros de Windows>Aplicación*.
+  - Abra la vista siguiente: *Los registros de Windows > aplicación*.
   - *Filtre el registro actual* por *Origen del evento* con las opciones *Puntos de interrupción de producción* o *Motor de instrumentación*.
 - AKS
   - Registros del motor de instrumentación en /tmp/diag/log.txt (defina MicrosoftInstrumentationEngine_FileLogPath en DockerFile)
@@ -142,7 +142,7 @@ La depuración de instantáneas y Application Insights dependen de ICorProfiler,
 ## <a name="see-also"></a>Vea también
 
 - [Depurar en Visual Studio](../debugger/index.md)
-- [Depuración de aplicaciones ASP.NET en vivo con Snapshot Debugger](../debugger/debug-live-azure-applications.md)
-- [Depuración de aplicaciones ASP.NET en vivo en Azure Virtual Machines\Virtual Machines Scale Sets con Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
-- [Depuración de Azure Kubernetes de ASP.NET en vivo con Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
-- [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)
+- [Depurar aplicaciones ASP.NET activas con el depurador de instantáneas](../debugger/debug-live-azure-applications.md)
+- [Depuración en directo ASP.NET Azure Virtual Machines\Virtual máquinas conjuntos de escalado mediante el depurador de instantáneas](../debugger/debug-live-azure-virtual-machines.md)
+- [Depuración en directo ASP.NET Azure Kubernetes con el depurador de instantáneas](../debugger/debug-live-azure-kubernetes.md)
+- [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)

@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be51445940816f0feffcbc7ba0e542e94d0f0648
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 26ab9d7f19e56e35b5524472b4a7179b33d09cf0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791607"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651302"
 ---
 # <a name="log-command-window-output-command"></a>Registrar resultados de la ventana de comandos (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Copia en un archivo todas las entradas y salidas de la ventana **Comandos**.  
   
 ## <a name="syntax"></a>Sintaxis  

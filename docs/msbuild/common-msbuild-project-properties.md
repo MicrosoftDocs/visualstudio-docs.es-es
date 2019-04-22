@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610611"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584563"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 En la tabla siguiente se enumeran las propiedades usadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en archivos *.targets* que proporciona MSBuild.
@@ -54,7 +54,7 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | CscToolPath | Ruta de acceso de *csc.exe*, el compilador de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | Nombre de un archivo de proyecto o archivo de destinos que se importará automáticamente antes de importar los destinos comunes. |
 | DebugSymbols | Valor booleano que indica si la compilación genera símbolos.<br /><br /> Si se establece **-p:DebugSymbols=false** en la línea de comandos, se deshabilita la generación de archivos de símbolos (*.pdb*) de la base de datos del programa. |
-| DebugType | Define el nivel de información de depuración que desea generar. Los valores válidos son "full", "pdbonly" y "none". |
+| DebugType | Define el nivel de información de depuración que desea generar. Los valores válidos son "full," "pdbonly," "portable", "embedded" y "none". |
 | DefineConstants | Permite definir constantes condicionales para el compilador. Los pares símbolo-valor van separados por punto y coma, y se especifican con la siguiente sintaxis:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> Esta propiedad es equivalente al modificador `/define` de compilador. |
 | DefineDebug | Valor booleano que indica si desea definir la constante DEBUG. |
 | DefineTrace | Valor booleano que indica si desea definir la constante TRACE. |

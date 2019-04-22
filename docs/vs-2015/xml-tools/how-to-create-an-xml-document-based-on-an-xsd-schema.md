@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear un documento XML basado en un esquema XSD | Documentos de Microsoft
+title: Procedimiento Crear un documento XML basado en un esquema XSD | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e857befa71095572661ff2c2e1a2ba074444f231
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 70b42db031c200f16a9189c4d750c9011e739029
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999223"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647578"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Filtrar Crear un documento XML basado en un esquema XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedimiento Crear un documento XML basado en un esquema XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El **generar XML de ejemplo** característica genera un archivo XML de ejemplo basado en el archivo de esquema XML (XSD).  
   
  Puede usar esta opción en los escenarios siguientes:  

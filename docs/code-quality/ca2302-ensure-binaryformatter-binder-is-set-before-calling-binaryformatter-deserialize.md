@@ -1,5 +1,5 @@
 ---
-title: 'CA2302: Asegúrese de que se establece BinaryFormatter.Binder antes de llamar a BinaryFormatter.Deserialize'
+title: 'CA2302: Asegurarse de que BinaryFormatter.Binder está establecido antes de llamar a BinaryFormatter.Deserialize'
 ms.date: 04/05/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: fb997d8184ea9459b46eee95bfe2863e8c1c6ed0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59367293"
 ---
-# <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302: Asegúrese de que se establece BinaryFormatter.Binder antes de llamar a BinaryFormatter.Deserialize
+# <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302: Asegurarse de que BinaryFormatter.Binder está establecido antes de llamar a BinaryFormatter.Deserialize
 
 |||
 |-|-|

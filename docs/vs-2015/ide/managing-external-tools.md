@@ -58,10 +58,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866771"
 ---
 # <a name="managing-external-tools"></a>Administrar herramientas externas
@@ -78,11 +78,11 @@ Se puede llamar a herramientas externas desde Visual Studio. Algunas herramienta
   
 3.  Herramienta de seguimiento de ATL/MFC: muestra mensajes de seguimiento de depuración en los orígenes ATL y MFC.  
   
-4.  PreEmptive Protection - Dotfuscator: protege los programas de .NET frente a técnicas de ingeniería inversa.  
+4.  PreEmptive Protection - Dotfuscator: Protege los programas de .NET frente a ingeniería inversa.  
   
-5.  SPY++: muestra procesos, subprocesos, ventanas y mensajes de ventana de forma gráfica.  
+5.  SPY ++: Muestra gráficamente los procesos, subprocesos, windows y los mensajes de ventana.  
   
-6.  Editor de configuración de servicios WCF: permite crear y modificar opciones de configuración para servicios WCF.  
+6.  Editor de configuración del servicio WCF: Permite crear y modificar la configuración para los servicios WCF.  
   
 > [!WARNING]
 >  Puede que aparezca una lista diferente de herramientas externas, según la edición de Visual Studio que tenga instalada y el perfil de configuración que haya aplicado. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -102,7 +102,7 @@ Se puede llamar a herramientas externas desde Visual Studio. Algunas herramienta
 > [!NOTE]
 >  La barra de estado del IDE muestra las variables Línea actual y Columna actual para indicar dónde se encuentra el punto de inserción en el Editor de código activo. La variable Texto actual devuelve el texto o el código seleccionado en dicha ubicación.  
   
-|nombre|Argumento|Descripción|  
+|Name|Argumento|Descripción|  
 |----------|--------------|-----------------|  
 |Ruta de acceso del elemento|$(ItemPath)|Nombre de archivo completo del archivo actual (unidad + ruta de acceso + nombre de archivo).|  
 |Directorio del elemento|$(ItemDir)|Directorio del archivo actual (unidad + ruta de acceso).|  

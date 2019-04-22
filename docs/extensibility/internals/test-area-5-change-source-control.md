@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab37b3766c61c63ce99c13bb375d1bdd90d237d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599654"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649256"
 ---
-# <a name="test-area-5-change-source-control"></a>Área de prueba 5: Control de código fuente de cambios
+# <a name="test-area-5-change-source-control"></a>Área de prueba 5: Cambio del control de código fuente
 Esta área de prueba de complemento de control de código fuente trata el cambio del control de código fuente a través de la **cambiar Control de código fuente** comando.
 
  **Cambiar Control de código fuente** comando proporciona cuatro funciones básicas para el usuario:
@@ -45,7 +45,6 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
 
 ### <a name="case-5a-bind"></a>Case 5a: Enlazar
  Enlace permite al usuario agregar información de control de código de origen a las soluciones y proyectos seleccionados. Normalmente se solicita el usuario para identificar un proyecto de control de código fuente a la que se trata de agregarse. El usuario no puede crear un nuevo proyecto de control de código fuente como parte de esta operación (oposición a agregar al Control de código fuente).
-
 
 | Acción | Pasos de prueba | Resultados esperados para comprobar |
 | - | - | - |

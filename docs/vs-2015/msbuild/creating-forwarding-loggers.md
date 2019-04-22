@@ -12,17 +12,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0fbdfb1af767bfc49d373fedd81598e29ef6918
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804632"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648226"
 ---
 # <a name="creating-forwarding-loggers"></a>Crear registradores de reenvío
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Los registradores de reenvío mejoran la eficacia del registro, ya que le permiten elegir los eventos que quiere supervisar al compilar proyectos en un sistema de varios procesadores. Al habilitar los registradores de reenvío, puede evitar que eventos no deseados sobrecarguen el registrador central, ralenticen el tiempo de compilación y saturen el registro.  
   
  Para crear un registrador de reenvío, puede implementar la interfaz <xref:Microsoft.Build.Framework.IForwardingLogger> y después implementar manualmente sus métodos, o bien usar la clase <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> y sus métodos preconfigurados. (Esto último será suficiente para la mayoría de las aplicaciones).  

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Conectarse a datos en un servicio | Documentos de Microsoft
+title: Procedimiento Conectarse a datos en un servicio | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -22,17 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 741200100e705777520ea585ce02439a3a3c26c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a13d0c8ff1383e27f9401f6549c422a8fef96e99
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997542"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650049"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Filtrar Conexión a los datos en un servicio
+# <a name="how-to-connect-to-data-in-a-service"></a>Procedimiento Conexión a los datos en un servicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Conectar la aplicación a los datos devueltos desde un servicio mediante la ejecución de la [Asistente para configuración de origen de datos](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) y seleccionando **servicio** en el **elegir un tipo de origen de datos**página.  
   
  Tras la finalización del asistente, se agrega al proyecto una referencia de servicio y esté disponible inmediatamente en el [ventana Orígenes de datos](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  

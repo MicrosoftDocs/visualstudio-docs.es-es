@@ -15,17 +15,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 328ed2afe4c942c2db16ebca214b7a3dfa631138
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789844"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648840"
 ---
 # <a name="code-snippet-picker"></a>Selector de fragmentos de código
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 El Editor de código de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporciona un **selector de fragmentos de código** que permite, con unos pocos clics de mouse, insertar bloques de código predefinidos en el documento activo.  
   
  El procedimiento para mostrar el **selector de fragmentos de código** varía según el idioma que esté usando.  
@@ -46,7 +45,7 @@ El Editor de código de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporci
   
 - SQL - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código**.  
   
-  En la mayoría de los lenguajes de desarrollo de Visual Studio, puede usar el **Administrador de fragmentos de código** para agregar carpetas a la **lista de carpetas** donde el **selector de fragmentos de código** busca archivos de fragmento de código XML. También puede crear sus propios fragmentos de código para agregarlos a la lista. Para obtener más información, vea [Tutorial: Crear un fragmento de código](../../ide/walkthrough-creating-a-code-snippet.md).  
+  En la mayoría de los lenguajes de desarrollo de Visual Studio, puede usar el **Administrador de fragmentos de código** para agregar carpetas a la **lista de carpetas** donde el **selector de fragmentos de código** busca archivos de fragmento de código XML. También puede crear sus propios fragmentos de código para agregarlos a la lista. Para obtener más información, vea [Tutorial: Creación de un fragmento de código](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>Lista de UIElement  
  Nombre del elemento  

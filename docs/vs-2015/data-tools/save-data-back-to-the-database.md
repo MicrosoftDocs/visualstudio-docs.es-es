@@ -26,17 +26,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 413a92f2e42b6bacfeb62deb3bae0e50d5ef908b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b2358e177f049d9eda17bcb54baf6a547605419c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999380"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653104"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El conjunto de datos es una copia en memoria de datos. Si modifica datos, es una buena práctica para guardar los cambios en la base de datos. Para ello en uno de tres maneras:  
   
 - Llamando a uno de los `Update` métodos de un TableAdapter  

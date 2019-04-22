@@ -9,17 +9,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44ca85ad785c0a2ef634a989ca5289ab368f0316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1a550b4a6634604594da0893e3f420fd9c38ca3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796616"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650738"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Plataforma de destino de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un proyecto se puede compilar para su ejecución en una *plataforma de destino*, que es una versión determinada de .NET Framework, y en una *plataforma de destino*, que es una arquitectura de software determinada.  Por ejemplo, puede diseñar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits compatible con la familia de procesadores 802x86 (“x86”). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*.  
   
 ## <a name="target-framework-and-profile"></a>Plataforma de destino y perfil objetivo  

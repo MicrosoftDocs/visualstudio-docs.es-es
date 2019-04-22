@@ -21,21 +21,20 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e81a2168516974fef40dad5cf46b3aff77fc54a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788105"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649074"
 ---
 # <a name="text-editor-options-dialog-box"></a>Opciones del editor de texto (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Las opciones del editor indicadas en el cuadro de diálogo **Opciones** proporcionan maneras de personalizar la apariencia y el comportamiento del editor.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Cómo: Cambiar las fuentes y los colores del editor](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [Cómo: Cambio de fuentes y colores del editor](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Explica cómo cambiar las fuentes y los colores del editor.  
   
  [Cómo: Administrar el ajuste de línea en el editor](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  

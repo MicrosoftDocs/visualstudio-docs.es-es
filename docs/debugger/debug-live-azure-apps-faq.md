@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857079"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Preguntas frecuentes sobre depuración de instantáneas en Visual Studio
@@ -60,7 +60,7 @@ Snapshot Debugger necesita abrir un conjunto de puertos para depurar las instant
 ## <a name="see-also"></a>Vea también
 
 - [Depurar en Visual Studio](../debugger/index.md)
-- [Depuración de aplicaciones ASP.NET en vivo con Snapshot Debugger](../debugger/debug-live-azure-applications.md)
-- [Depuración de aplicaciones ASP.NET en vivo en Azure Virtual Machines\Virtual Machines Scale Sets con Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
-- [Depuración de Azure Kubernetes de ASP.NET en vivo con Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
-- [Solución de problemas y problemas conocidos de depuración de instantáneas](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Depurar aplicaciones ASP.NET activas con el depurador de instantáneas](../debugger/debug-live-azure-applications.md)
+- [Depuración en directo ASP.NET Azure Virtual Machines\Virtual máquinas conjuntos de escalado mediante el depurador de instantáneas](../debugger/debug-live-azure-virtual-machines.md)
+- [Depuración en directo ASP.NET Azure Kubernetes con el depurador de instantáneas](../debugger/debug-live-azure-kubernetes.md)
+- [Problemas conocidos y solución de problemas de depuración de instantáneas](../debugger/debug-live-azure-apps-troubleshooting.md)

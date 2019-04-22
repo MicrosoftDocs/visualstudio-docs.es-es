@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6731f91544235c3011e458aea7c4c5b90f89908
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e71615e90a23ad8ca6de6e01495de1ea8538a644
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907560"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650456"
 ---
 # <a name="sendandreceivereply-template-designer"></a>Diseñador de plantillas SendAndReceiveReply
 
@@ -41,7 +41,6 @@ Para obtener más información sobre el uso de la **enviar** diseñador para con
 ### <a name="properties-of-receivereply"></a>Propiedades ReceiveReply
 
 La tabla siguiente muestra la <xref:System.ServiceModel.Activities.ReceiveReply> propiedades y se describe cómo se usan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades y algunas de ellas en la superficie del Diseñador de flujo de trabajo.
-
 
 | Nombre de la propiedad | Obligatorio | Uso |
 |-|----------|-|

@@ -17,17 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d048edd60d41c3f08a8bd0b731beddb3619a1887
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bbb215efc6ddeabda860b3f0cc218f388f8eaeee
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776074"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652454"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Identifica un único proyecto dentro de la configuración de la solución especificada para compilar, limpiar, recompilar o implementar.  
   
 ## <a name="syntax"></a>Sintaxis  
