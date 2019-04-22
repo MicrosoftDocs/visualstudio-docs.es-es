@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002aa5cf9e1324eb81996a5a14f7a1933a26ba9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605177"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659506"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Área de prueba 8: Cambio de complementos
+# <a name="test-area-8-plug-in-switching"></a>Área de prueba 8: Cambio de los complementos
 El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) tiene la interfaz de usuario (UI) para cambiar el complemento de control de código fuente actual. Esta área de prueba proporciona los casos de prueba para el proceso de seleccionar qué complemento que se usará para el control de código fuente de la solución.
 
 ## <a name="command-menu-access"></a>Acceso al menú de comandos
@@ -39,7 +39,6 @@ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de de
 #### <a name="expected-behavior"></a>Comportamiento esperado
  Cuando un usuario carga una solución que está bajo control de código fuente, la solución se carga automáticamente y el complemento de control de origen correspondiente se selecciona como actual.
 
-
 | Acción | Pasos de prueba | Resultados esperados para comprobar |
 | - | - | - |
 | Cambio de complemento de control de origen automática | 1.  Seleccione complemento bajo prueba como actual (**herramientas** -> **opciones** -> **Control de código fuente** -> **complemento Selección**.)<br />2.  Cree un nuevo proyecto.<br />3.  Agregue la solución al control de código fuente.<br />4.  Seleccione otro complemento (por ejemplo, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Acepte Descargando mensaje de solución.<br />6.  Vuelva a abrir la solución desde el disco. | Se abre la solución.<br /><br /> Complemento sometida a prueba es el complemento de control de código fuente actual. |
@@ -48,7 +47,6 @@ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de de
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
  La solución puede tener su complemento de control de código fuente asociado puede cambiar.
-
 
 | Acción | Pasos de prueba | Resultados esperados para comprobar |
 |----------------------------------| - | - |

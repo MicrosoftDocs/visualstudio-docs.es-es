@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43648fb87202e3f61342bcabfc3acb55541a9985
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627979"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654326"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Solución de problemas de errores específicos de implementaciones de ClickOnce
 Este artículo enumeran los siguientes errores comunes que pueden producirse al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y proporciona los pasos para solucionar cada problema.
@@ -56,7 +56,7 @@ Este artículo enumeran los siguientes errores comunes que pueden producirse al 
 
  También se deben establecer los tipos de contenido (también conocido como tipos MIME) adecuadamente para .application, .manifest y archivos. deploy. Para obtener más información, consulte la documentación del servidor Web.
 
- Para obtener más información, vea "Windows Server 2003: tipos de contenido bloqueados" en [problemas de configuración de servidor y cliente en implementaciones ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).
+ Para obtener más información, vea "Windows Server 2003: Bloqueado tipos de contenido" [problemas de configuración de servidor y cliente en implementaciones ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).
 
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Mensaje de error: "Aplicación de formato no es correcto;" Archivo de registro contiene "la firma XML es válido"
  Asegúrese de que ha actualizado el archivo de manifiesto y se vuelve a estar firmada. Volver a publicar la aplicación mediante el uso de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o usar Mage para firmar la aplicación de nuevo.
@@ -70,13 +70,13 @@ Este artículo enumeran los siguientes errores comunes que pueden producirse al 
 
 - Pruebe a iniciar la aplicación de nuevo en el menú Inicio. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es posible que haya detectado la actualización en segundo plano, pero se le solicitará que instale los bits en la siguiente activación.
 
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante la actualización se recibe un error que tiene la siguiente entrada del registro: "la referencia en la implementación no coincide con la identidad definida en el manifiesto de aplicación"
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante la actualización, recibirá un error que tiene la siguiente entrada del registro: "La referencia en la implementación no coincide con la identidad definida en el manifiesto de aplicación"
  Este error puede producirse porque se han editado manualmente los manifiestos de aplicación e implementación y haber causado la descripción de la identidad de un ensamblado en un manifiesto para que dejen de estar sincronizados con las demás. La identidad de un ensamblado consta de su nombre, versión, referencia cultural y token de clave pública. Examine las descripciones de identidad en los manifiestos y corrija cualquier diferencia.
 
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Activación desde el disco local o CD-ROM de primera vez que se realiza correctamente, pero no se realiza correctamente la activación posterior desde el menú Inicio
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usa la dirección URL del proveedor de implementación para recibir las actualizaciones de la aplicación. Compruebe que la ubicación en la que apunta a la dirección URL es correcta.
 
-#### <a name="error-cannot-start-the-application"></a>Error: "no se puede iniciar la aplicación"
+#### <a name="error-cannot-start-the-application"></a>Error: "No se puede iniciar la aplicación"
  Este mensaje de error suele indica que hay un problema al instalar esta aplicación en el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] almacenar. La aplicación tiene un error o el almacén está dañado. El archivo de registro puede indicarle que se produjo el error.
 
  Debe hacer lo siguiente:
@@ -101,11 +101,11 @@ Este artículo enumeran los siguientes errores comunes que pueden producirse al 
 
  Si va a publicar con una dirección URL, asegúrese de que el equipo de destino tiene habilitadas las extensiones de servidor de FrontPage.
 
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensaje de error: no se puede crear el sitio Web '\<sitio >'. No se instalan los componentes para comunicarse con extensiones de servidor.
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensaje de error: No se puede crear el sitio Web '\<sitio >'. No se instalan los componentes para comunicarse con extensiones de servidor.
  Asegúrese de que tiene Microsoft Visual Studio Web Authoring componente instalado en la máquina que va a publicar en. Para los usuarios de Express, este componente no está instalado de forma predeterminada. Para obtener más información, vea [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).
 
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensaje de error: no se pudo encontrar el archivo ' Microsoft.Windows.Common-controles, Version = 6.0.0.0, referencia cultural = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, tipo = win32'
- Este mensaje de error aparece cuando se intenta publicar una aplicación WPF con estilos visuales habilitados. Para resolver este problema, consulte [Cómo: publicar una aplicación de WPF con estilos Visual habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensaje de error: No se pudo encontrar el archivo ' Microsoft.Windows.Common-controles, Version = 6.0.0.0, referencia cultural = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, tipo = win32'
+ Este mensaje de error aparece cuando se intenta publicar una aplicación WPF con estilos visuales habilitados. Para resolver este problema, consulte [Cómo: Publicar una aplicación de WPF con estilos visuales habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).
 
 ## <a name="using-mage"></a>Utilizar Mage
 
@@ -121,7 +121,6 @@ Este artículo enumeran los siguientes errores comunes que pueden producirse al 
 
 ## <a name="additional-errors"></a>Otros errores
  La siguiente tabla muestra algunos mensajes de error comunes que puede recibir un equipo cliente cuando el usuario instala una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Cada mensaje de error aparece junto con una descripción de la causa más probable del error.
-
 
 | Mensaje de error | Descripción |
 | - | - |

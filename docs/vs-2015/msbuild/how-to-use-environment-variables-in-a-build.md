@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Utilizar variables de entorno en una compilación | Microsoft Docs'
+title: Procedimiento Usar variables de entorno en una compilación | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf043fbaac2e718b108920a61026378545fa5a95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78cdc8f95c5a48e8ce0491926b27f0521705e3bb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780978"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655890"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Cómo: Utilizar variables de entorno al compilar
+# <a name="how-to-use-environment-variables-in-a-build"></a>Procedimiento Usar variables de entorno al compilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Al compilar proyectos, a menudo es necesario establecer las opciones de compilación mediante información que no está en el archivo del proyecto o en los archivos que componen el proyecto. Normalmente, esta información se almacena en variables de entorno.  
   
 ## <a name="referencing-environment-variables"></a>Hacer referencia a variables de entorno  
@@ -72,4 +71,4 @@ Al compilar proyectos, a menudo es necesario establecer las opciones de compilac
 
 [Propiedades de MSBuild](../msbuild/msbuild-properties1.md)
 
-[Cómo: Compilar los mismos archivos de código fuente con diferentes opciones](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[Cómo: Compilar los mismos archivos de origen con diferentes opciones](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

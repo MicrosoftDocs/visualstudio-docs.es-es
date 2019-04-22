@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951519"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658714"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje específico de dominio (DSL), en lugar de usar un diagrama DSL. Este tema le guiará a través de enlazar un formulario de Windows a un DSL, mediante el SDK de modelado y visualización de Visual Studio.
@@ -28,12 +28,10 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
     En este tutorial, se supone que los nombres siguientes:
 
-
    | | |
    |-|-|
    | Nombre de la solución y DSL | FarmApp |
    | Espacio de nombres | Company.FarmApp |
-
 
 2. Experimentar con el ejemplo inicial que proporciona la plantilla:
 

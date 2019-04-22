@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80a4c78da4c2aaffcc35fb436dbd8219c2c6fde6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999163"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656991"
 ---
 # <a name="uml-component-diagrams-reference"></a>Diagramas de componentes UML: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,6 @@ En Visual Studio, un *diagrama de componentes* muestra las partes de un diseño 
  En la tabla siguiente se describen los elementos que puede usar en un diagrama de componentes, junto con sus propiedades principales. Para obtener una lista completa de las propiedades de los elementos, vea [propiedades de elementos en diagramas de componentes UML](../modeling/properties-of-elements-on-uml-component-diagrams.md).  
 
  ![Elementos que se usan en los diagramas de componentes](../modeling/media/uml-compovreading.png "UML_CompOvReading")  
-
 
 |  **Shape**  |         **Element**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         **Descripción y propiedades principales**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |-------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

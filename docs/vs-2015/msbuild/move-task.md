@@ -17,17 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2919d139e48f6e08845dc3990b0df5a8591283c0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ab75ccebd618946454c3386f564e3f6199409935
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791386"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657121"
 ---
 # <a name="move-task"></a>Move (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Mueve los archivos a una nueva ubicación.  
   
 ## <a name="parameters"></a>Parámetros  

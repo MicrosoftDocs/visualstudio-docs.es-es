@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65312776f56fc2c96f2da7b528cc8cc9d339fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986818"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656549"
 ---
 # <a name="xml-schema-designer-workspace"></a>Área de trabajo del Diseñador de esquemas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El Diseñador de esquemas XML (Diseñador XSD) es una herramienta gráfica que le ayuda a explorar los esquemas XML. Además el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), lo que permite examinar y navegar por el árbol de esquema XML y realizar búsquedas, el diseñador XSD proporciona tres vistas que permiten explorar el esquema XSD con más detalle. La vista Inicio es el punto de lanzamiento para el Diseñador XSD; desde esta vista, puede navegar a otras vistas del Diseñador XSD y ver los detalles del conjunto de esquemas. La vista Gráfico le permite ver información general sobre un conjunto de esquemas. así como las relaciones entre los nodos del esquema. La vista Modelo de contenido proporciona una representación gráfica de los detalles de los nodos de esquema globales y locales, incluyendo tipos simples y complejos, elementos, grupos, atributos y grupos de atributos.  
   
  Para empezar a explorar los nodos que son de su interés, debe agregarlos al área de trabajo. El área de trabajo la comparten todas las vistas.  

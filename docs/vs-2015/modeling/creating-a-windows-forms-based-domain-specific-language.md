@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1faa3b8a7b57ddae646b55a8a17226894a5ed5d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2caee9a39df18bfed0dc48a9c0266721500ddeca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996288"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654946"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,12 +33,10 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 
     En este tutorial, se supone que los nombres siguientes:  
 
-
    |                       |                 |
    |-----------------------|-----------------|
    | Nombre de la solución y DSL |     FarmApp     |
    |       Espacio de nombres       | Company.FarmApp |
-
 
 2. Experimentar con el ejemplo inicial que proporciona la plantilla:  
 

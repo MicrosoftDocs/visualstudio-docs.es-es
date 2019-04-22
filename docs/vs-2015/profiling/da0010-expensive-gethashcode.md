@@ -1,5 +1,5 @@
 ---
-title: 'DA0010: GetHashCode consume muchos recursos | Microsoft Docs'
+title: 'DA0010: GetHashCode que consume muchos recursos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 111e3204224f1124476ab2a324df7be2b6ef2525
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354835"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659038"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode consume muchos recursos
+# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode que consume muchos recursos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio, consulte [DA0010: GetHashCode consume muchos recursos](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode) en docs.microsoft.com.  
-
-  
+Para obtener la documentación más reciente de Visual Studio, consulte [DA0010: GetHashCode consume muchos recursos](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode).  
 
 |||  
 |-|-|  
@@ -40,7 +38,7 @@ Para obtener la documentación más reciente de Visual Studio, consulte [DA0010:
  Las llamadas al método GetHashCode del tipo constituyen una proporción considerable de los datos de generación de perfiles o el método asigna memoria.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
- La técnica de hash permite localizar rápidamente un elemento determinado en una colección grande. Dado que las tablas hash pueden ser muy grandes y tienen que admitir velocidades de acceso muy altas, deben ser extremadamente eficaces. Una implicación de este requisito es que los métodos GetHashCode en .NET Framework no deben asignar memoria. La asignación de memoria aumenta la carga en el recolector de elementos no utilizados y expone al método a posibles retrasos si es necesario ejecutar la recopilación de elementos no utilizados como resultado de la solicitud de asignación.  
+ La técnica de hash permite localizar rápidamente un elemento determinado en una colección grande. Dado que las tablas hash pueden ser muy grandes y tienen que admitir tasas altas de acceso, las tablas hash deben ser extremadamente eficaces. Una implicación de este requisito es que los métodos GetHashCode en .NET Framework no deben asignar memoria. La asignación de memoria aumenta la carga en el recolector de elementos no utilizados y expone al método a posibles retrasos si es necesario ejecutar la recopilación de elementos no utilizados como resultado de la solicitud de asignación.  
   
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Reduzca la complejidad del método.

@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802679"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660299"
 ---
 # <a name="immediate-window"></a>Inmediato (ventana)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar instrucciones, imprimir valores de variables, etc. Permite escribir expresiones para evaluarlas o ejecutarlas mediante el lenguaje de desarrollo durante la depuración. Para mostrar la ventana **Inmediato**, abra un proyecto para editarlo, elija **Ventanas** en el menú **Depurar** y seleccione **Inmediato**, o bien presione CTRL+ALT+I.  
   
  Puede usar esta ventana para emitir comandos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] individuales. Entre los comandos disponibles se incluye `EvaluateStatement`, que puede usarse para asignar valores a variables. La ventana **Inmediato** también admite IntelliSense.  
@@ -75,7 +74,7 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
   
     La ventana **Inmediato** ejecutará `MyFunction` y mostrará `4`.  
   
-   Si la función o la subrutina contienen un punto de interrupción, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Para más información, vea [Tutorial: Depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Si la función o la subrutina contienen un punto de interrupción, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Para más información, vea [Tutorial: Depuración en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).  
   
    No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de proyectos que requieren que se inicie un entorno de ejecución, incluidos los proyectos de [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], proyectos web, proyectos de Smart Device y proyectos de SQL.  
   

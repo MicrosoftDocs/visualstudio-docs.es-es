@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f2d4fda2fe7981863d65b17fc6dba53355dbeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 30f51715cd26c9d61e355115db6f4ca4b9831ef0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702283"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660793"
 ---
 # <a name="core-interfaces"></a>Interfaces básicas
 Las interfaces siguientes son las interfaces principales para ampliar el depurador mediante el uso de la [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
@@ -138,7 +138,6 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 ##  <a name="Events"></a> Eventos
  Estas interfaces representan todos los eventos que se envían entre la DE y el Administrador de depuración de la sesión (SDM).
 
-
 | Interfaz | Implementado por | Descripción |
 | - |----------------| - |
 | [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) | DE | Enviado por la DE para solicitar un documento que se abrirá. |
@@ -211,7 +210,6 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 
 ##  <a name="Ports"></a> Puertos
  Estas interfaces representan los puertos y los proveedores de puertos.
-
 
 | Interfaz | Implementado por | Descripción |
 | - |----------------| - |

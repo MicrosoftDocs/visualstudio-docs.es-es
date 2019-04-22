@@ -17,16 +17,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0f277ca35552da9deb476d56c15a7b2434463e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763414"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654378"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la ventana **Comando** acortando el texto necesario para ejecutar el comando. Por ejemplo, en lugar de escribir `>File.OpenFile` para mostrar el cuadro de diálogo **Abrir archivo**, se puede usar el alias predefinido `>of`.
 
@@ -42,7 +41,7 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |[Inspección rápida (Comando)](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |Agregar nuevo proyecto|AddProj|File.AddNewProject|
 |[Alias (Comando)](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
-|Ventana Automático|Automático|Debug.Autos|
+|Ventana Automático|Autos|Debug.Autos|
 |ventana Puntos de interrupción|bl|Debug.Breakpoints|
 |Alternar punto de interrupción|bp|Debug.ToggleBreakPoint|
 |Ventana Pila de llamadas|CallStack|Debug.CallStack|
@@ -72,7 +71,7 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |[Iniciar (Comando)](../../ide/reference/start-command.md)|e|Debug.Start|
 |[Ir a (Comando)](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Ir a llave|GotoBrace|Edit.GotoBrace|
-|F1Help|Ayuda|Help.F1Help|
+|F1Help|Help|Help.F1Help|
 |Modo Inmediato|immed|Tools.ImmediateMode|
 |Insertar archivo como texto|InsertFile|Edit.InsertFileAsText|
 |[Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -118,10 +117,10 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |Mosaico horizontal|TileH|Window.TileHorizontally|
 |Mosaico vertical|TileV|Window.TileVertically|
 |Alternar marcador|ToggleBook|Edit.ToggleBookmark|
-|Ventana Cuadro de herramientas|toolbox|View.Toolbox|
+|Ventana Cuadro de herramientas|cuadro de herramientas|View.Toolbox|
 |[Mostrar desensamblador (comando)](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |Poner en mayúsculas|Ucase|Edit.MakeUppercase|
-|Deshacer|undo|Edit.Undo|
+|Undo|undo|Edit.Undo|
 |Quitar tabulación a la selección|Untabify|Edit.UntabifySelection|
 |Ventana Inspección|Watch|Debug.WatchN|
 |Alternar ajuste de línea|WordWrap|Edit.ToggleWordWrap|

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b834ce2b76d9c73fc5247da3402003b766dd9d87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597803"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654092"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones de ClickOnce
 Si usa Internet Information Services (IIS) en Windows Server y la implementación contiene un tipo de archivo que Windows no reconocen, como un archivo de Microsoft Word, IIS no transmitirá dicho archivo y no se realizará correctamente la implementación.
@@ -49,7 +49,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 ## <a name="clickonce-and-proxy-authentication"></a>Autenticación de proxy y ClickOnce
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] proporciona compatibilidad para la autenticación integrada de Windows de proxy a partir de .NET Framework 3.5. No se requiere ninguna directiva machine.config concreta. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] no proporciona soporte técnico para otros protocolos de autenticación como básica o implícita.
 
- También puede aplicar una revisión para .NET Framework 2.0 para habilitar esta característica. Para obtener más información, vea http://go.microsoft.com/fwlink/?LinkId=158730.
+ También puede aplicar una revisión para .NET Framework 2.0 para habilitar esta característica. Para obtener más información, consulta http://go.microsoft.com/fwlink/?LinkId=158730.
 
  Para obtener más información, consulte [ \<defaultProxy > (configuración de red) del elemento](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 
@@ -94,7 +94,6 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protocolo FTP no es compatible para la instalación de aplicaciones
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] admite la instalación de aplicaciones desde cualquier servidor Web HTTP 1.1 o un servidor de archivos. FTP, el protocolo de transferencia de archivos, no se admite para la instalación de aplicaciones. Puede usar FTP para publicar solo las aplicaciones. En la tabla siguiente se resume estas diferencias:
 
-
 | Tipo de dirección URL | Descripción |
 |----------| - |
 | ftp:// | Puede publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante este protocolo. |
@@ -102,7 +101,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 | https:// | Puede instalar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante este protocolo. |
 | file:// | Puede instalar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante este protocolo. |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Firewall de Windows
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: firewall de Windows
  De forma predeterminada, Windows XP Service Pack 2 habilita el Firewall de Windows. Si está desarrollando su aplicación en un equipo que tiene instalado de Windows XP, están todavía puede publicar y ejecutar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones desde el servidor local que ejecuta IIS. Sin embargo, no se puede acceder al servidor que ejecuta IIS desde otro equipo a menos que abra el Firewall de Windows. Para obtener instrucciones acerca de cómo administrar el Firewall de Windows, consulte la Ayuda de Windows.
 
 ## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Habilitar extensiones de servidor

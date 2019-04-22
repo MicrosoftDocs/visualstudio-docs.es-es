@@ -11,17 +11,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac7b9d079f2f7c3e50733f5718bde63b42e27b34
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c34b3b4459616cf9a15ce7d5d5710513fad1f284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767320"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656315"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Notificaciones, Entorno, Opciones (cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Utilice esta opción para dejar de omitir las notificaciones que eligió anteriormente que se omitiesen mediante el cuadro de diálogo de notificaciones. Para más información, vea [Notificaciones](../../ide/visual-studio-notifications.md).  
   
 ## <a name="see-also"></a>Vea también  

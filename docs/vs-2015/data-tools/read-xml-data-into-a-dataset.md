@@ -23,17 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1b384ad0dd8c121a03f8ee8840f55352d435218c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987090"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653211"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leer datos XML en un conjunto de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tutorial, creará una aplicación de Windows que carga datos XML en un conjunto de datos. A continuación, se muestra el conjunto de datos en un <xref:System.Windows.Forms.DataGridView> control. Por último, se muestra un esquema XML según el contenido del archivo XML en un cuadro de texto.  
   
  En este tutorial consta de cinco pasos principales:  
@@ -166,7 +165,7 @@ ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tuto
   
 3.  Establezca las siguientes propiedades:  
   
-    |Control|Property|Parámetro|  
+    |Control|Propiedad|Parámetro|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
     ||**ScrollBars**|**Vertical**|  

@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 43305d7b9353bd34e98a3dcfd31205cb9159a2f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526625"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659931"
 ---
-# <a name="how-to-create-xml-snippets"></a>Procedimiento Crear fragmentos XML
+# <a name="how-to-create-xml-snippets"></a>Procedimiento Creación de fragmentos XML
 
 El editor XML se puede usar para crear nuevos fragmentos XML. El editor incluye un fragmento XML, llamado "Fragmento", que es un fragmento reutilizable que permite la creación de nuevos fragmentos XML.
 
@@ -64,7 +64,6 @@ El editor XML se puede usar para crear nuevos fragmentos XML. El editor incluye 
 
 > [!NOTE]
 > El texto del fragmento XML se debe incluir en una sección `<![CDATA[...]]>`.
-
 
  Este es el elemento `Code` que crea el fragmento reutilizable.
 

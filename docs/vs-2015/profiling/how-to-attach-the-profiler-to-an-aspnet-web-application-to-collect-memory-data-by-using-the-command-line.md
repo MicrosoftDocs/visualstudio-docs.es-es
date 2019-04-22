@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Adjuntar el Profiler a una aplicación Web ASP.NET para recopilar datos de memoria mediante la línea de comandos | Microsoft Docs
+title: Procedimiento Adjuntar el Profiler a una aplicación Web ASP.NET para recopilar datos de memoria mediante la línea de comandos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783477"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653286"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de memoria mediante la línea de comandos
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Adjuntar al Profiler a una aplicación Web ASP.NET para recopilar datos de memoria mediante la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describe cómo utilizar las herramientas de la línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para adjuntar el generador de perfiles a una aplicación web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] y recopilar datos sobre el número y tamaño de asignaciones de memoria de .NET Framework. También puede recopilar datos sobre la duración de los objetos de memoria de .NET Framework.  
@@ -77,7 +77,6 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo (.etl) independiente.                                                                                          |
 
-
 6. Inicie la aplicación web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] de la manera habitual.  
 
 7. Adjunte el generador de perfiles al proceso de trabajo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Tipo:  
@@ -110,7 +109,7 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
 
    - Escriba **VSPerfCmd** [/detach](../profiling/detach.md)  
 
-      o bien  
+      -o bien-  
 
    - Cierre el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Tipo:  
 

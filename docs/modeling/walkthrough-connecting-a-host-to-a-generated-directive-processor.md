@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a84b24dff387e0a93058c07e9f6d7b6cfe503d49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: b255f521d45d1e827a3bfb9bc9bc5129f090bcaa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935594"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655717"
 ---
-# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un Host a un procesador de directivas personalizadas
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Tutorial: Conexión de un host a un procesador de directivas generadas
 
 Puede escribir su propio host que procesa las plantillas de texto. Un host personalizado básico se muestra en [Tutorial: Creación de un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Puede ampliar ese host para agregar funciones como la generación de varios archivos de salida.
 
@@ -40,7 +40,6 @@ En este tutorial se incluyen las tareas siguientes:
 ## <a name="prerequisites"></a>Requisitos previos
 
 Para definir un DSL, debe tener instalados los siguientes componentes:
-
 
 | | |
 |-|-|
@@ -363,4 +362,4 @@ Para probar el host de plantilla de texto personalizado, primero debe escribir u
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Creación de un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+- [Tutorial: Crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md)

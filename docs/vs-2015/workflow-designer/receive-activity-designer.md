@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16b0f414c87fd1d9dea7305e43e23a59b7dc53b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 05dc1643ecd05277baeba50bb00320d2f3a89abe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999722"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658506"
 ---
 # <a name="receive-activity-designer"></a>Diseñador de actividades Receive
 El **recepción** Diseñador de actividad se usa para crear y configurar un <xref:System.ServiceModel.Activities.Receive> actividad. Una actividad <xref:System.ServiceModel.Activities.Receive> es una actividad que recibe un mensaje que puede ser de tipo integrado como <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> o <xref:System.Xml.Linq.XElement> o bien, un contrato de datos definido por la aplicación, contrato de mensaje o clase XML que se pueden serializar.  
@@ -35,7 +35,6 @@ El **recepción** Diseñador de actividad se usa para crear y configurar un <xre
 
 ### <a name="the-receive-activity-properties"></a>Propiedades de la actividad Receive  
  En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.Receive> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en la cuadrícula de propiedades o en la superficie de [!INCLUDE[wfd2](../includes/wfd2-md.md)]. La única propiedad obligatoria es <xref:System.ServiceModel.Activities.Receive.OperationName%2A>.  
-
 
 |                              Nombre de la propiedad                               | Obligatorio |                                                                                                                                                                                                                                                                                                                                                                                         Uso                                                                                                                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

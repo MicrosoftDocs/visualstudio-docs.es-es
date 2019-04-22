@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868306"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660724"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 
@@ -63,7 +63,7 @@ Cadenas de idioma compatible (no distingue mayúsculas de minúsculas):
 
 -   javascript
 
--   CSharp o C#
+-   CSharp o c#
 
 -   cplusplus o Visual c++ o c ++
 
@@ -359,7 +359,6 @@ En el IDE, bajo el elemento de menú Ayuda, seleccione **depurar contexto de Ayu
 **Metadatos de contenido**
 
 En la siguiente tabla, cualquier cadena que aparece entre corchetes es un marcador de posición que se debe reemplazar por un valor reconocido. Por ejemplo, en \<name="Microsoft.Help.Locale meta" contenido = "[código de idioma]" / >, "[código de idioma]" debe reemplazarse por un valor como "en-us".
-
 
 | Propiedad (representación de HTML) | Descripción |
 | - | - |

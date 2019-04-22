@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857481"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656445"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depuración de aplicaciones de Azure de ASP.NET en vivo con Snapshot Debugger
 
@@ -34,9 +34,14 @@ En este tutorial va a:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Snapshot Debugger solo está disponible para Visual Studio 2017 Enterprise, versión 15.5 o posteriores, con la **carga de trabajo de desarrollo de Azure**. (En la pestaña **Componentes individuales**, puede encontrarlo en **Depuración y pruebas** > **Snapshot Debugger**).
+* Depurador de instantáneas solo está disponible a partir de Visual Studio Enterprise 2017 versión 15.5 o posterior con el **carga de trabajo de desarrollo de Azure**. (En la pestaña **Componentes individuales**, puede encontrarlo en **Depuración y pruebas** > **Snapshot Debugger**).
 
-    Si aún no está instalado, instale [Visual Studio 2017 Enterprise, versión 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) o posterior. Si realiza la actualización desde una instalación anterior de Visual Studio 2017, ejecute el Instalador de Visual Studio y compruebe el componente de Snapshot Debugger en la **carga de trabajo de desarrollo de ASP.NET y web**.
+    ::: moniker range=">=vs-2019"
+    Si aún no está instalado, instale [2019 de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Si está actualizando desde una instalación anterior de Visual Studio, ejecute el instalador de Visual Studio y compruebe el componente del depurador de instantáneas el **carga de trabajo de desarrollo de ASP.NET y web**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Si aún no está instalado, instale [Visual Studio 2017 Enterprise, versión 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) o posterior. Si realiza la actualización desde una instalación anterior de Visual Studio 2017, ejecute el Instalador de Visual Studio y compruebe el componente de Snapshot Debugger en la **carga de trabajo de desarrollo de ASP.NET y web**.
+    ::: moniker-end
 
 * Plan de Azure App Service básico o superior.
 
@@ -73,7 +78,7 @@ En este tutorial va a:
   > La extensión de sitio de Application Insights también admite la depuración de instantáneas. Si aparece un mensaje de error "la extensión de sitio no está actualizada", vea las [sugerencias de solución de problemas y los problemas conocidos con la depuración de instantáneas](../debugger/debug-live-azure-apps-troubleshooting.md) para actualizar los detalles.
 
    Visual Studio ahora está en modo de depuración de instantáneas.
-   ![Modo de depuración de instantáneas](../debugger/media/snapshot-message.png)
+   ![Modo de depuración instantánea](../debugger/media/snapshot-message.png)
 
    En la ventana **Módulos** se muestra cuándo se han cargado todos los módulos para Azure App Service (elija **Depurar > Windows > Módulos** para abrir esta ventana).
 
@@ -132,7 +137,7 @@ Si es difícil volver a crear un estado determinado en la aplicación, considere
 
 ## <a name="set-a-logpoint"></a>Establecer un punto de registro
 
-Además de realizar una instantánea cuando se alcanza un punto de instantánea, también puede configurar un punto de instantánea para registrar un mensaje (es decir, crear un punto de registro). Puede establecer puntos de registro sin tener que volver a implementar la aplicación. Los puntos de registro se ejecutan de forma virtual y no causan ningún impacto o efecto secundario en la aplicación en ejecución.
+Además de realizar una instantánea cuando se alcanza un punto de instantánea, también puede configurar un punto de instantánea para registrar un mensaje (es decir, crear un punto de registro). Puede establecer puntos de registro sin tener que volver a implementar la aplicación. Los puntos de registro se ejecutan de forma práctica y no causan ningún impacto o efecto secundario en la aplicación en ejecución.
 
 #### <a name="to-create-a-logpoint"></a>Para crear un punto de registro
 
@@ -155,4 +160,4 @@ Además de realizar una instantánea cuando se alcanza un punto de instantánea,
 En este tutorial, ha aprendido cómo utilizar Snapshot Debugger para App Services. Es posible que desee obtener más información sobre esta característica.
 
 > [!div class="nextstepaction"]
-> [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)
+> [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)

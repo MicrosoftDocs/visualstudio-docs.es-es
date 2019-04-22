@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e1a1561bef1ae99db2b6bf338b083c57d0c8d7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f1b4137a6f024a9a4f752af7c9e19fd946a1c282
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621518"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653897"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de un documento utilizando controles CheckBox
   Este tutorial muestra cómo usar controles de formularios Windows Forms en una personalización de nivel de documento para Microsoft Office Word para cambiar el formato de texto.
@@ -67,7 +67,7 @@ ms.locfileid: "56621518"
 
 3.  En la ventana **Propiedades** , cambie las siguientes propiedades:
 
-    |Property|Valor|
+    |Propiedad|Valor|
     |--------------|-----------|
     |**Name**|**applyBoldFont**|
     |**Texto**|**Negrita**|
@@ -76,7 +76,7 @@ ms.locfileid: "56621518"
 
 5.  Agregar una segunda casilla al documento aparece a continuación el `ApplyBoldFont` casilla de verificación y cambiar las propiedades siguientes.
 
-    |Property|Valor|
+    |Propiedad|Valor|
     |--------------|-----------|
     |**Name**|**applyItalicFont**|
     |**Texto**|**Cursiva**|
@@ -85,7 +85,7 @@ ms.locfileid: "56621518"
 
 7.  Agregue una tercera casilla de verificación para el documento siguiente el `ApplyItalicFont` casilla de verificación y cambiar las propiedades siguientes.
 
-    |Property|Valor|
+    |Propiedad|Valor|
     |--------------|-----------|
     |**Name**|**applyUnderlineFont**|
     |**Texto**|**Underline**|
@@ -155,7 +155,6 @@ ms.locfileid: "56621518"
 -   Usar un botón para rellenar un cuadro de texto. Para obtener más información, vea [Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
 -   Usar botones de radio para seleccionar estilos de gráfico. Para obtener más información, vea [Tutorial: Actualizar un gráfico en un documento utilizando botones de radio](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
-
 
 ## <a name="see-also"></a>Vea también
 - [Tutoriales para Word](../vsto/walkthroughs-using-word.md)

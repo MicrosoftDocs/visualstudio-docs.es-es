@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5398cea07863e17a8e430e7f827aac0b4e217355
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d6c14a268ef58dec31f65fe73e176eac8f690d9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987370"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653963"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menús contextuales (Explorador de esquemas XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Los elementos de menú contextual siguientes se usan para realizar búsquedas específicas del esquema y otras operaciones.  
   
 ## <a name="node-type-schema-set"></a>Tipo de nodo: Conjunto de esquemas  

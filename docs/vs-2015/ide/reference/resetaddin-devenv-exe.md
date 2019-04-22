@@ -13,17 +13,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1400e61487a7ad052d5a516019e76149e8e3d31e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 241d97dd7b2b939ff49656e2cef2c93e4cb9b57b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755059"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656051"
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Quita comandos y la interfaz de usuario de comandos asociados al complemento especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
