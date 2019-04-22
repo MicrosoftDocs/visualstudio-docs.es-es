@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790711"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Tutorial: Depurar una aplicación paralela en Visual Studio (C#, Visual Basic, C++)
@@ -77,7 +77,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 
     - Para un C# aplicación, en **Visual C#** , elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)**.
     - Para una aplicación de Visual Basic, en **Visual Basic**, elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)**.
-    - Para una aplicación de C++, en **Visual C++**, elija **Windows Desktop**,, y, a continuación, elija **aplicación de consola Windows**.
+    - Para un C++ aplicación, en **Visual C++** , elija **Windows Desktop**,, y, a continuación, elija **aplicación de consola Windows**.
 
     A continuación, escriba un nombre o utilice el nombre predeterminado y haga clic en **Aceptar**.
     ::: moniker-end
@@ -98,7 +98,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 
     Observe que hay cuatro llamadas a `Debugger.Break` (`DebugBreak` en el ejemplo de C++). Por tanto, no tiene que insertar puntos de interrupción; simplemente ejecutando la aplicación, el depurador se interrumpirá cuatro veces.
 
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Utilizar la ventana Pilas paralelas: vista de subprocesos
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Uso de la ventana Pilas paralelas: Vista de subprocesos
  En el menú **Depurar**, haga clic en **Iniciar depuración**. Espere a que se alcance el primer punto de interrupción.
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Para ver la pila de llamadas de un subproceso

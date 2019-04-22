@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de4fc349a25719a0494b095e5a37c218b87cb0f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600725"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648239"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependencia&gt; elemento (implementación ClickOnce)
 Identifica la versión de la aplicación que desea instalar y la ubicación del manifiesto de aplicación.
@@ -78,7 +78,6 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
 ## <a name="dependentassembly"></a>dependentAssembly
  Obligatorio. Este elemento contiene el `assemblyIdentity` elemento. En la tabla siguiente se muestra los atributos del `dependentAssembly` admite.
 
-
 | Atributo | Descripción |
 |------------------| - |
 | `preRequisite` | Opcional. Especifica que este ensamblado debe existir en la GAC. Los valores válidos son `true` y `false`. Si `true`y el ensamblado especificado no existe en la GAC, no se puede ejecutar la aplicación. |
@@ -110,14 +109,12 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
 ## <a name="dsigtransform"></a>dsig: Transform
  El `dsig:Transform` elemento es un elemento secundario necesario de la `dsig:Transforms` elemento. En la tabla siguiente se muestra los atributos de la `dsig:Transform` elemento.
 
-
 | Atributo | Descripción |
 |-------------| - |
 | `Algorithm` | El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod
  El `dsig:DigestMethod` elemento es un elemento secundario necesario de la `hash` elemento. En la tabla siguiente se muestra los atributos de la `dsig:DigestMethod` elemento.
-
 
 | Atributo | Descripción |
 |-------------| - |

@@ -16,17 +16,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804181"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649568"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] proporciona un conjunto de propiedades predefinidas que almacenan información sobre el archivo de proyecto y los archivos binarios de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Estas propiedades se evalúan igual que otras propiedades de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Por ejemplo, para utilizar la propiedad `MSBuildProjectFile` escribiría `$(MSBuildProjectFile)`.  
   
  MSBuild utiliza los valores de la tabla siguiente para predefinir propiedades reservadas y conocidas. Las propiedades reservadas no se pueden invalidar, pero las propiedades conocidas se pueden invalidar con propiedades del entorno, propiedades globales o propiedades que se declaran en el archivo de proyecto con el mismo nombre.  

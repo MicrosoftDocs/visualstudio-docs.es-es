@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d38657e1885ed84d5bd5e0e574968ae2009c19d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645880"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648555"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Tutorial: Agregar controles a un documento en tiempo de ejecución en un complemento de VSTO
   Puede agregar controles a cualquier documento abierto de Microsoft Office Word mediante el uso de un complemento de VSTO. Este tutorial muestra cómo usar la cinta de opciones para permitir que los usuarios agregar un <xref:Microsoft.Office.Tools.Word.Controls.Button> o un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.
@@ -78,21 +78,17 @@ ms.locfileid: "56645880"
 
 8. En la ventana **Propiedades** , cambie las siguientes propiedades:
 
-
-   | Property | Valor |
+   | Propiedad | Valor |
    |-----------|-----------------------|
    | **Name** | **addButtonCheckBox** |
    | **Etiqueta** | **Botón Agregar** |
 
-
 9. Agregue una segunda casilla a **group1**, y, a continuación, cambie las siguientes propiedades.
-
 
    | Property | Valor |
    |-----------|---------------------------|
    | **Name** | **addRichTextCheckBox** |
    | **Label** | **Agregar control de texto enriquecido** |
-
 
 10. En el diseñador de la cinta, haga doble clic en **Agregar botón**.
 

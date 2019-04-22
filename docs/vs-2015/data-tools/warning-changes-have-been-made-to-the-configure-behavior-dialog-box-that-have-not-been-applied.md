@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4a0ef367be3fd2bbe79472a04437230c0b51180
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5846fe9db2d7ea02259f949697f5cb164d1c081
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995967"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651765"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Advertencia. Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se han aplicado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Advertencia. Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se han aplicado. ¿Desea aplicar los cambios?  
   
  El **configurar comportamiento** cuadro de diálogo le permite configurar el comportamiento de inserción, actualización y eliminación de todas las clases disponibles. Este mensaje aparece al seleccionar una nueva combinación de **Clase** y **Comportamiento** cuando todavía no se ha aplicado el cambio anterior.  

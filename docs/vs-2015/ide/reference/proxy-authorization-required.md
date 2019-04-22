@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b55dba438280fc4579fe15bd2a423d323c38abf6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b0c197a15962d12e101e0d3ab164d706375620d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767294"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648252"
 ---
 # <a name="proxy-authorization-required"></a>Se necesita autorización de proxy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Por lo general, este error se produce cuando los usuarios están conectados a Visual Studio Online a través de un servidor proxy y el servidor proxy bloquea las llamadas. Visual Studio Online se usa para mantener la sesión del usuario iniciada en el IDE.  
   
 ## <a name="to-correct-this-error"></a>Para corregir este error  

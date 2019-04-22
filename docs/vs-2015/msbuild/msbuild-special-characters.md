@@ -13,20 +13,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a96831650e09b1018c6cffc8149a9a0020edc90b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a54f446cb82b3181ee057d4887b37940868a5920
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793105"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650803"
 ---
 # <a name="msbuild-special-characters"></a>Caracteres especiales de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] reserva algunos caracteres para usos especiales en contextos concretos. Para usar dichos caracteres literalmente en el contexto en el que están reservados, debe aplicarles secuencias de escape. Por ejemplo, un asterisco tiene un significado especial solo en los atributos `Include` y `Exclude` de una definición de elemento y en las llamadas a `CreateItem`. Si quiere que aparezca como un asterisco en uno de estos contextos, debe aplicarle una secuencia de escape. En todos los demás contextos, simplemente escriba el asterisco donde quiera que aparezca.  
   
- Para aplicar una secuencia de escape a un carácter especial, use la sintaxis %*xx*, donde *xx* representa el valor hexadecimal ASCII del carácter. Para obtener más información, vea [Cómo: Utilizar caracteres de escape especiales en MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
+ Para aplicar una secuencia de escape a un carácter especial, use la sintaxis %*xx*, donde *xx* representa el valor hexadecimal ASCII del carácter. Para obtener más información, vea [Cómo: Escape de caracteres especiales en MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
   
 ## <a name="special-characters"></a>Caracteres especiales  
  En la tabla siguiente se muestran los caracteres especiales de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]:  

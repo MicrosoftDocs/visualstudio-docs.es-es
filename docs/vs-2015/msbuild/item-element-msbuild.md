@@ -17,17 +17,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b45d0e9494700d03c0e96ccd0708e2754b4f7a2b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54797030"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650771"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Contiene un elemento definido por el usuario y sus metadatos. Cada elemento que se utiliza en un proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] debe especificarse como elemento secundario de un elemento `ItemGroup`.  
   
  \<Project>  

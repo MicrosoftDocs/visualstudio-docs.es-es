@@ -13,17 +13,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868890"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649373"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte el [Guía del Administrador de Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
+Para obtener la documentación más reciente de Visual Studio, consulte el [Guía del Administrador de Visual Studio](/visualstudio/install/visual-studio-administrator-guide).
 
 Puede implementar Visual Studio 2015 en una red siempre que cada equipo de destino cumpla los [requisitos mínimos de instalación](https://visualstudio.microsoft.com/vs/older-downloads/). Para crear un recurso compartido de red, puede ejecutar el archivo de instalación con el modificador -layout (como se describe en la página [Crear una instalación sin conexión de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)) y, después, copiarlo desde el equipo al recurso compartido de red. Si usa una imagen ISO, montar la imagen ISO y compartirla o copiarla en un recurso compartido de red.  
   
@@ -54,15 +54,16 @@ Puede implementar Visual Studio 2015 en una red siempre que cada equipo de desti
 ## <a name="controlling-what-is-installed"></a>Controlar lo que se instala  
  Si quiere controlar lo que el usuario final puede instalar, hay dos opciones: la instalación de archivos de administrador y las opciones de línea de comandos. Si su objetivo es restringir lo que el usuario final puede elegir en su experiencia de Visual Studio, seleccione la instalación de archivos de administrador. Si quiere crear una configuración inicial y permitir que el usuario final elija su propia experiencia de Visual Studio, seleccione los parámetros de línea de comandos.  
   
- Para más información sobre la experiencia de archivo del administrador, vea [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) y [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Para obtener más información sobre los controles de línea de comandos, consulte el [usar parámetros de línea de comandos para instalar Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) página.  
+ Para obtener más información sobre la experiencia de archivo del administrador, vea [Cómo: Crear y ejecutar una instalación desatendida de Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) y [Cómo: Aplicar automáticamente las claves de producto durante la implementación de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Para obtener más información sobre los controles de línea de comandos, consulte el [usar parámetros de línea de comandos para instalar Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) página.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Especificar valores de comentarios de clientes  
- De manera predeterminada, la instalación de Visual Studio permite recibir comentarios de los clientes. Puede configurar Visual Studio para deshabilitar los comentarios de los clientes en los equipos individuales si cambia el valor de la siguiente clave del Registro a la cadena "0":  
+
+De manera predeterminada, la instalación de Visual Studio permite recibir comentarios de los clientes. Puede configurar Visual Studio para deshabilitar los comentarios de los clientes en los equipos individuales si cambia el valor de la siguiente clave del Registro a la cadena "0":  
   
- **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
 **OptIn**  
   
- (Por ejemplo, cámbielo a HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn = "0")  
+(Por ejemplo, cámbielo a HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn = "0")  
   
 ## <a name="related-topics"></a>Temas relacionados  
   

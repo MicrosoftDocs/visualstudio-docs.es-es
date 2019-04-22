@@ -17,17 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7ec3911496c5106d53f90a281452df2c8a128f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3c83ebc4b2a58976f8848f4576d8b30ad7778db2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788352"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650439"
 ---
 # <a name="command-window"></a>Ventana Comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Puede ejecutar comandos de menú y comandos que no aparecen en ningún menú. Para mostrar la ventana **Comandos**, pulse **Otras ventanas** desde el menú **Ver** y seleccione **Ventana Comandos**.  
   
 ## <a name="displaying-the-values-of-variables"></a>Mostrar los valores de las variables  

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790802"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Tutorial: Depurar una aplicación multiproceso mediante la ventana de subprocesos (C#, Visual Basic, C++)
@@ -47,7 +47,7 @@ Cree el siguiente proyecto de aplicación multiproceso para utilizarla en este t
     ::: moniker range="vs-2017"
     En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo de la **nuevo proyecto** cuadro de diálogo, seleccione lo siguiente:
     - Para un C# aplicación, en **Visual C#** , elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)**.
-    - Para una aplicación de C++, en **Visual C++**, elija **Windows Desktop**,, y, a continuación, elija **aplicación de consola Windows**.
+    - Para un C++ aplicación, en **Visual C++** , elija **Windows Desktop**,, y, a continuación, elija **aplicación de consola Windows**.
 
     A continuación, escriba un nombre como **MyThreadWalkthroughApp** y haga clic en **Aceptar**.
     ::: moniker-end
@@ -56,7 +56,7 @@ Cree el siguiente proyecto de aplicación multiproceso para utilizarla en este t
 
     Aparece el nuevo proyecto en **el Explorador de soluciones**, y un archivo de origen denominado *Program.cs* o *MyThreadWalkthroughApp.cpp* se abre en la ventana de código fuente.
 
-1. Reemplace el código en el archivo de origen con la C# o código de ejemplo de C++ desde [empezar a depurar aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md).
+1. Reemplace el código en el archivo de origen con la C# o C++ código de ejemplo de [empezar a depurar aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md).
 
 1. Seleccione **archivo** > **guardar todo**.
 
@@ -109,7 +109,7 @@ Marcar y desmarcar subprocesos desde el editor de código fuente o desde el **su
 
 1. Abra el **ubicación de depuración** barra de herramientas seleccionando **vista** > **las barras de herramientas** > **ubicación de depuración**. También puede haga clic en el área de barra de herramientas y seleccione **ubicación de depuración**.
 
-1. El **ubicación de depuración** barra de herramientas tiene tres campos: **proceso**, **subprocesos**, y **marco de pila**. Lista desplegable el **subprocesos** lista y tenga en cuenta cuántos subprocesos no existe. En el **subproceso** lista, el subproceso actualmente en ejecución se ha marcado por un **>** símbolos.
+1. El **ubicación de depuración** barra de herramientas tiene tres campos: **Proceso**, **subprocesos**, y **marco de pila**. Lista desplegable el **subprocesos** lista y tenga en cuenta cuántos subprocesos no existe. En el **subproceso** lista, el subproceso actualmente en ejecución se ha marcado por un **>** símbolos.
 
 1. En la ventana de código fuente, mantenga el mouse sobre un icono de marcador de subproceso en el margen interno y seleccione el icono de marca (o uno de los iconos de indicador vacío) en la información sobre datos. El icono de marca cambia a rojo.
 
@@ -198,4 +198,4 @@ Ahora que ha aprendido los conceptos básicos de depurar aplicaciones multiproce
 
 ## <a name="see-also"></a>Vea también
 - [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Cambio a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [Cómo: cambiar a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)

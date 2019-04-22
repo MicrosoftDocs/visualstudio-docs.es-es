@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7661de324e2d2872491988c7b0fa637d0c318545
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920579"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653013"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 Para evitar errores de simultaneidad en el programa multiproceso, siempre que siga una disciplina de bloqueo apropiada y utilizar anotaciones SAL.
@@ -104,7 +104,6 @@ Para evitar errores de simultaneidad en el programa multiproceso, siempre que si
 |`_Interlocked_`|Anota una variable y es equivalente a `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|El parámetro de función anotado es el operando de destino de una de las distintas funciones Interlocked.  Los operandos deben tener propiedades adicionales específicas.|
 |`_Write_guarded_by_(expr)`|Anota una variable e indica que cada vez que la variable se modifica, el recuento de bloqueos del objeto de bloqueo que se denomina por `expr` como mínimo.|
-
 
 ## <a name="smart-lock-and-raii-annotations"></a>Smart Lock y RAII anotaciones
  Cerraduras inteligentes suelen incluir bloqueos nativos y administran su duración. La siguiente tabla enumera las anotaciones que pueden utilizarse con cerraduras inteligentes y RAII patrones con compatibilidad para de codificación `move` semántica.

@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: dbd276751d8052f21d92e38a0e337f9c133edf2c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790035"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depurar HTML y CSS en aplicaciones para UWP en Visual Studio
@@ -30,7 +30,7 @@ Para las aplicaciones de JavaScript, Visual Studio ofrece una experiencia de dep
 
 Con el modelo de depuración interactivo ofrecido por las herramientas de inspección de DOM, puede ver y modificar el código HTML y CSS presentado, y todo ello sin detener y reiniciar el depurador.
 
-Para obtener información sobre otras características, como el uso de la ventana Consola JavaScript y establecer puntos de interrupción, la depuración de JavaScript consulte [inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+Para obtener información sobre otras características, como el uso de la ventana Consola JavaScript y establecer puntos de interrupción, la depuración de JavaScript consulte [inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
 
 ## <a name="InspectingDOM"></a> Inspeccionar el DOM activo
 El Explorador DOM muestra una vista de la página presentada. Puedes utilizarlo para cambiar valores y ver inmediatamente los resultados. Eso permite probar los cambios sin necesidad de detener y reiniciar el depurador. El código fuente del proyecto no cambia cuando se interactúa con la página mediante este método. Así pues, cuando encuentre las correcciones de código deseadas, realice los cambios en el código fuente.
@@ -46,7 +46,7 @@ Puedes utilizar el Explorador DOM para:
 
 - Inspeccionar la aplicación de los estilos CSS a los elementos de la página y realizar el seguimiento de las reglas que se han aplicado.
 
-  Al depurar aplicaciones, con frecuencia tienes que seleccionar elementos en el Explorador DOM. Cuando se selecciona un elemento, los valores que aparecen en las pestañas del lado derecho del Explorador DOM se actualizan automáticamente para reflejar el elemento seleccionado en este. Estas son las pestañas: **Estilos**, **Calculado**y **Diseño**. Las aplicaciones UWP también admiten la **eventos** y **cambios** pestañas. Para obtener más información sobre la selección de elementos, consulte [Selecting elements](#SelectingElements).
+  Al depurar aplicaciones, con frecuencia tienes que seleccionar elementos en el Explorador DOM. Cuando se selecciona un elemento, los valores que aparecen en las pestañas del lado derecho del Explorador DOM se actualizan automáticamente para reflejar el elemento seleccionado en este. Estas son las pestañas: **Estilos**, **calcula**, **diseño**. Las aplicaciones UWP también admiten la **eventos** y **cambios** pestañas. Para obtener más información sobre la selección de elementos, consulte [Selecting elements](#SelectingElements).
 
 > [!TIP]
 > Si la ventana del Explorador DOM está cerrada, elija **Depurar**>**Ventanas** > **Explorador DOM** para abrirla de nuevo. La ventana únicamente aparece durante las sesiones de depuración de script.
@@ -224,7 +224,7 @@ En el procedimiento siguiente, analizaremos el proceso de depurar de forma inter
 
 2. Abre default.html y modifica tu código fuente cambiando el alto y ancho del elemento DIV `"fView"` al 100 %.
 
-3. Elige el botón **Actualizar aplicación de Windows** situado en la barra de herramientas Depurar (o presiona F4). El botón tiene este aspecto: ![botón de actualización de Windows app](../debugger/media/js_refresh.png "JS_Refresh").
+3. Elige el botón **Actualizar aplicación de Windows** situado en la barra de herramientas Depurar (o presiona F4). El botón tiene este aspecto: ![Botón de la aplicación de Windows actualizar](../debugger/media/js_refresh.png "JS_Refresh").
 
     Se recargan las páginas de la aplicación y el simulador o el emulador de Windows Phone vuelven al primer plano.
 

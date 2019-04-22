@@ -1,5 +1,5 @@
 ---
-title: Filtrar Examinar el modelo de contenido de los nodos mediante la vista de modelo de contenido | Documentos de Microsoft
+title: Procedimiento Examinar el modelo de contenido de los nodos mediante la vista de modelo de contenido | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 283378be55db059983d92f3581f6186f59102cb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9d8471eb0f3f1ecfe35490988fd05eb15dbedbdd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999315"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648372"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Filtrar Examinar el modelo de contenido de los nodos mediante la vista Modelo de contenido
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedimiento Examinar el modelo de contenido de los nodos mediante la vista Modelo de contenido
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En este tema se describe cómo explorar los nodos mediante el [vista modelo de contenido](../xml-tools/content-model-view.md).  
   
 ### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Para crear un nuevo archivo XSD y mostrar el elemento raíz en el vista Modelo de contenido  

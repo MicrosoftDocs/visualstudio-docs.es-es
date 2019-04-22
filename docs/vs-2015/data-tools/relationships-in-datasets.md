@@ -21,17 +21,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9d2c2c6f178c952a5516533c2722bc451be2e3bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987128"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649672"
 ---
 # <a name="relationships-in-datasets"></a>Relaciones en conjuntos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:System.Data.DataRelation> objetos para representar una relación primaria-secundaria entre las tablas y devolver los registros relacionados entre sí. Agregar tablas relacionadas a conjuntos de datos mediante el **Asistente para configuración de origen de datos**, o el **Diseñador de Dataset**, crea y configura el <xref:System.Data.DataRelation> objeto automáticamente.  
   
  La <xref:System.Data.DataRelation> objeto desempeña dos funciones:  

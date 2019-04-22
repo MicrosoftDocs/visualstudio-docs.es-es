@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: eadad8fdbec990607450b374a32758547194f734
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 18c5b01aed925bf458e1c8779a2f41ea1a2d98a4
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160279"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504073"
 ---
 # <a name="convert-foreach-loop-to-linq"></a>Convertir bucle foreach en LINQ
 
@@ -46,6 +46,34 @@ Esta refactorización se aplica a lo siguiente:
    ![Resultado de consulta LINQ](media/convert-foreach-to-LINQ-result.png)
    
    ![Resultado de formulario de llamada LINQ](media/convert-foreach-to-LINQ-callform-result.png)
+   
+### <a name="sample-code"></a>Código de ejemplo
+
+```csharp
+using System.Collections.Generic;
+
+public class Class1
+{
+    public void MyMethod()
+    {
+        var greetings = new List<string>()
+            { "hi", "yo", "hello", "howdy" };
+
+        IEnumerable<string> enumerable()
+        {
+            foreach (var greet in greetings)
+            {
+                if (greet.Length < 3)
+                {
+                    yield return greet;
+                }
+            }
+
+            yield break;
+        }
+    }
+}
+```
 
 ## <a name="see-also"></a>Vea también
 

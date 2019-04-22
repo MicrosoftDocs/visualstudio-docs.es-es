@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8887f4cd6b4dcd7f08e808f1271f5d546d6a224c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f24fa988cf14bbf48fe157e2b9ee538d3eff2f35
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159184"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537535"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Generar un deconstructor en Visual Studio
 
@@ -28,19 +28,19 @@ Esta generación de código se aplica a:
 
 **Por qué:** Puede escribir manualmente un deconstructor, aunque esta característica genera el código auxiliar automáticamente con los parámetros de salida correctos.
 
-## <a name="generate-deconstructor"></a>Generar deconstructor
+## <a name="generate-a-deconstructor"></a>Generar un deconstructor
 
-1. Declare un nuevo tipo con los parámetros de salida deseados especificados. Esta declaración produce un error si no hay ninguna instancia de deconstrucción coincidente con la declaración.
+1. Declare un nuevo tipo con los parámetros de salida deseados especificados. Esta declaración produce un error si no se encuentra ninguna instancia de deconstrucción coincidente con la declaración.
 
    ![Error de deconstructor ausente](media/deconstruct.png)
 
-2. Luego realice alguno de los siguientes procedimientos en el:
+2. Elija uno de los siguientes pasos:
 
    - **Teclado**
-      - Con el cursor en la declaración, presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+      - Con el cursor en la declaración, seleccione Ctrl+. para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
       - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-      - Haga clic en el botón ![icono de destornillador](media/screwdriver.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea vacía de la clase.
+      - Seleccione el ![icono de destornillador](media/screwdriver.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea vacía de la clase.
 
       ![Generar corrección del código de deconstructor](media/deconstruct-codefix.png)
 

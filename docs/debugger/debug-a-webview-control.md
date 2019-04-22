@@ -1,5 +1,5 @@
 ---
-title: Depurar un control WebView (UWP) | Microsoft Docs
+title: Depurar un control WebView (UWP) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: d55023b97397fa7d1b134c246c25b0d0b37a4d18
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790113"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Depurar un control WebView en una aplicación para UWP
@@ -81,8 +81,8 @@ ms.locfileid: "58790113"
     > [!NOTE]
     >  Con la consola, puede interactuar con un único `WebView`, `iFrame`, contrato de participación o trabajo web a la vez. Cada elemento necesita una instancia independiente del host de plataforma web (WWAHost.exe). Puede interactuar con un host a la vez.
 
-6.  Ver y modificar las variables de la aplicación o usar los comandos de consola, como se describe en [inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [JavaScript Console commands](../debugger/javascript-console-commands.md).
+6.  Ver y modificar las variables de la aplicación o usar los comandos de consola, como se describe en [inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [JavaScript Console commands](../debugger/javascript-console-commands.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)

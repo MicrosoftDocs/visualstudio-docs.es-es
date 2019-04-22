@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a80f1aa49f214c43a772a48c88fdad6f0d0db7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cc746e66bc08d980c11a9e582ccc9db23690d59
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995816"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650844"
 ---
 # <a name="sample-xsd-files"></a>Archivos XSD de muestra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Los archivos de muestra siguientes se usan en la documentación del Diseñador de esquemas XSD.  
   
 > [!NOTE]

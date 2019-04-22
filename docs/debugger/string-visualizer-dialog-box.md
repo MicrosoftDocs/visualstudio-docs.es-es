@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 982db296fd17fb86b4a139e02a9418eeb507cd91
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366788"
 ---
-# <a name="string-visualizer-dialog-box"></a>Cuadro de diálogo del visualizador de cadenas
+# <a name="string-visualizer-dialog-box"></a>Visualizador de cadenas (cuadro de diálogo)
 
 Durante la depuración en Visual Studio, puede ver las cadenas con el visualizador de cadenas integrada. El visualizador de cadenas muestra las cadenas que son demasiado grandes para una ventana de sugerencia o depurador de datos. También puede ayudarle a identificar cadenas con formato incorrecto.
 

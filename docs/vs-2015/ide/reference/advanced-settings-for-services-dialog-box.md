@@ -13,17 +13,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a7affd12dceeb8802740b7d0cd502ede051f5ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2565b3b8fd84714693661fcf0cf04961a70d10f9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779141"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652948"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Configuración avanzada de servicios (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Los servicios de aplicaciones cliente proporcionan acceso simplificado al inicio de sesión, los roles y los servicios de perfiles de [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] desde aplicaciones de Windows Forms y Windows Presentation Foundation (WPF). Puede usar la página **Servicios** del **Diseñador de proyectos** para configurar los servicios de aplicación cliente. Para obtener más información sobre la página **Servicios**, consulte [Página Servicios, Diseñador de proyectos](../../ide/reference/services-page-project-designer.md).  
   
  Use el cuadro de diálogo **Configuración avanzada de servicios** de la página **Servicios** en el **Diseñador de proyectos** para configurar opciones avanzadas de servicios de aplicación cliente. Al usar estas opciones, puede invalidar algunos comportamientos de servicio de aplicación predeterminados para habilitar escenarios menos comunes. Para obtener más información, consulte [Servicios de aplicación cliente](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e).  
@@ -48,7 +47,7 @@ Los servicios de aplicaciones cliente proporcionan acceso simplificado al inicio
  Cuando se llama al método <xref:System.Web.Security.RolePrincipal.IsInRole%2A>, el proveedor de roles accede a los valores de rol almacenados en caché o al servicio de roles. Para borrar la caché y forzar este método para tener acceso al servicio remoto mediante programación, llame al método <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A>.  
   
  **Usar cadena de conexión personalizada**  
- Especifica si los proveedores de servicios de cliente usarán un almacén de datos personalizado para la caché local. De manera predeterminada, los proveedores de servicios usarán el sistema de archivos local para la caché. Al seleccionar esta opción se rellenará de forma automática el cuadro de texto con una cadena de conexión predeterminada. Puede hacer que la cadena de conexión predeterminada genere y use de forma automática una base de datos de SQL Server Compact Edition, o puede especificar una cadena de conexión a una base de datos de SQL Server existente. Para obtener más información, consulte [Cómo: Configurar servicios de aplicaciones cliente](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8). Esta opción se encuentra desactivada de forma predeterminada.  
+ Especifica si los proveedores de servicios de cliente usarán un almacén de datos personalizado para la caché local. De manera predeterminada, los proveedores de servicios usarán el sistema de archivos local para la caché. Al seleccionar esta opción se rellenará de forma automática el cuadro de texto con una cadena de conexión predeterminada. Puede hacer que la cadena de conexión predeterminada genere y use de forma automática una base de datos de SQL Server Compact Edition, o puede especificar una cadena de conexión a una base de datos de SQL Server existente. Para obtener más información, vea [Cómo: Configurar servicios de aplicaciones cliente](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8). Esta opción se encuentra desactivada de forma predeterminada.  
   
 ## <a name="see-also"></a>Vea también  
  [Servicios de aplicación cliente](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   

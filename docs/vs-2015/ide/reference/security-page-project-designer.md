@@ -19,17 +19,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 79900957453464ea5f5dcf338f447dbe01399d11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760101"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647942"
 ---
 # <a name="security-page-project-designer"></a>Página Seguridad, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La página **Seguridad** del **Diseñador de proyectos** se usa para configurar las opciones de seguridad de acceso del código para las aplicaciones que se implementan con la implementación de [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)]. Para obtener más información, vea [Code Access Security for ClickOnce Applications](../../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).  
   
  Para obtener acceso a la página **Seguridad**, haga clic en un nodo de proyecto en el **Explorador de soluciones** y, después, en el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Seguridad**.  
@@ -41,7 +40,7 @@ La página **Seguridad** del **Diseñador de proyectos** se usa para configurar 
 > [!NOTE]
 >  Al publicar una aplicación mediante el uso del asistente para **Publicar**, esta opción se habilita automáticamente.  
   
- Cuando se selecciona esta opción, puede elegir uno de dos botones de radio: **Aplicación de plena confianza** o **Aplicación de confianza parcial**.  
+ Cuando se selecciona esta opción, existe la opción de seleccionar uno de los dos botones de radio: **Aplicación de plena confianza** o **Esta es una aplicación de confianza parcial**.  
   
  De forma predeterminada, para los proyectos de aplicación de explorador web de WPF, esta opción está activada.  
   
@@ -75,7 +74,7 @@ La página **Seguridad** del **Diseñador de proyectos** se usa para configurar 
  <xref:System.Security.Permissions.WebBrowserPermission>   
  <xref:System.Security.Permissions.MediaPermission>   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)   
- [Cómo: Habilitar la configuración de seguridad de ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Cómo: Habilitar a la configuración de seguridad de ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)   
  [Cómo: Establecer una zona de seguridad para una aplicación ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   

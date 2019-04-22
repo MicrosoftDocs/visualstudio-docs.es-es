@@ -15,24 +15,24 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e0382ab59745fccde53d09f88222b64d36a9bd6d
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003052"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647160"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar solo API de la versión de .NET Framework de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio, consulte [CA1903: Usar solo API de .NET framework de destino](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [CA1903: Usar solo API de .NET framework de destino](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).  
   
 |||  
 |-|-|  
 |TypeName|UseOnlyApiFromTargetedFramework|  
 |Identificador de comprobación|CA1903|  
 |Categoría|Microsoft.Portability|  
-|Cambio problemático|Problemático: cuando se produce en la firma de un tipo o miembro visible externamente.<br /><br /> No problemático: cuando se desencadena en el cuerpo de un método.|  
+|Cambio problemático|Problemático: cuando se produce en la firma de un tipo o miembro visible externamente.<br /><br /> Indivisible - cuando se desencadena en el cuerpo de un método.|  
   
 ## <a name="cause"></a>Motivo  
  Un miembro o tipo utiliza un miembro o tipo que se introdujo en un service pack que no se incluyó en .NET framework de destino del proyecto.  

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504112"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Obtener Introducción (desarrollo de SharePoint en Visual Studio)
@@ -47,7 +47,7 @@ ms.locfileid: "59504112"
 |[Crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Describe cómo diseñar páginas de aplicación utilizando un diseñador.|
 |[Crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Describe cómo crear controles personalizados y reutilizables para las páginas de aplicación y los elementos web en SharePoint.|
 |[Examinar las conexiones de SharePoint mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Describe cómo navegar por los componentes de un sitio de SharePoint en una ventana de herramientas de Visual Studio.|
-|[Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)|Describe cómo crear y las soluciones de SharePoint de depuración.|
+|[Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)|Describe cómo crear y las soluciones de SharePoint de depuración.|
 |[Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Describe cómo empaquetar e implementar soluciones de SharePoint.|
 |[Extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Describe cómo extender las herramientas de SharePoint para crear las características que se necesiten.|
 
@@ -55,5 +55,5 @@ ms.locfileid: "59504112"
 
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Examinar las conexiones de SharePoint mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
-- [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)
 - [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366853"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables en el depurador de Visual Studio
@@ -36,7 +36,7 @@ Las pseudovariables son términos que se utilizan para mostrar determinada infor
 
 |Pseudovariable|Función|
 |--------------------|--------------|
-|`$err`|Muestra el último valor de error establecido con la función SetLastError. El valor que se muestra representa lo que devolvería la función GetLastError.<br /><br /> Use `$err,hr` para ver el formato descodificado de este valor. Por ejemplo, si el último error fue 3, el `$err,hr` mostraría `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
+|`$err`|Muestra el último valor de error establecido con la función SetLastError. El valor que se muestra representa lo que devolvería la función GetLastError.<br /><br /> Use `$err,hr` para ver el formato descodificado de este valor. Por ejemplo, si el último error fue 3, `$err,hr` mostraría `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
 |`$handles`|Muestra el número de identificadores asignados en la aplicación.|
 |`$vframe`|Muestra la dirección del marco de pila actual.|
 |`$tid`|Muestra el identificador del subproceso actual.|

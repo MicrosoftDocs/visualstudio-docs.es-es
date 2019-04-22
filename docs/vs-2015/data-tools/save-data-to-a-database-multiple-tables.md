@@ -19,17 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84b4ee6cba98e18379dc0e0e4fd81d8c10e37d7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 979c476068afb3f76d4561c4d93a8c02ce4e4187
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988482"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648307"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Guardar datos en una base de datos (varias tablas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en mostrar los datos en un formulario de una aplicación Windows, editar los datos y devolverlos actualizados a la base de datos. Este tutorial crea un formulario en el que aparecen datos de dos tablas relacionadas y muestra cómo editar los registros y volver a guardar los cambios en la base de datos. En este ejemplo se utilizan las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind.  
   
  Puede guardar los datos de su aplicación en la base de datos llamando al método `Update` de un TableAdapter. Al arrastrar las tablas de la **orígenes de datos** ventana en un formulario, el código necesario para guardar los datos se agrega automáticamente. Cualquier tabla adicional que se agrega a un formulario requiere la adición manual de este código. Este tutorial muestra cómo agregar código para guardar las actualizaciones de varias tablas.  

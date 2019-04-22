@@ -19,17 +19,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 31de2c146accd71ae1606be62ab06fa368e7fb89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 137ab6c54176c7c95c13c4b3e4defb3924937bc7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758553"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650322"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Resuelve las referencias nativas. Implementa la clase <xref:Microsoft.Build.Tasks.ResolveNativeReference>. Esta clase es compatible con la infraestructura de .NET Framework que no está diseñada para utilizarse directamente desde el código.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
@@ -37,7 +36,7 @@ Resuelve las referencias nativas. Implementa la clase <xref:Microsoft.Build.Task
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|`AdditionalSearchPaths`|Parámetro obligatorio de tipo [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]`.<br /><br /> Obtiene o establece las rutas de acceso de búsqueda para resolver identidades de ensamblado de las referencias nativas.|  
+|`AdditionalSearchPaths`|(Requiere [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]` parámetro.<br /><br /> Obtiene o establece las rutas de acceso de búsqueda para resolver identidades de ensamblado de las referencias nativas.|  
 |`ContainedComComponents`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtiene o establece los componentes COM del ensamblado nativo.|  
 |`ContainedLooseEtcFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtiene o establece los archivos Etc dinámicos que figuran en el manifiesto nativo.|  
 |`ContainedLooseTlbFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtiene o establece los archivos .tlb dinámicos del ensamblado nativo.|  

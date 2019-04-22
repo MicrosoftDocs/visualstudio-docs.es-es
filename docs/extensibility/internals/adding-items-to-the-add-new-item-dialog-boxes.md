@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e392947f86a1adab92289934632dd393f4ff24ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620998"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651310"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Agregar elementos al cuadro de diálogo Agregar nuevo elemento
 El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuadro de diálogo con las claves del registro. Como se muestra en las siguientes entradas del registro, el **AddItemTemplates** sección contiene la ruta de acceso y el nombre del directorio en los elementos que ponen a disposición de los **Agregar nuevo elemento** se colocan el cuadro de diálogo.
@@ -35,8 +35,7 @@ El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuad
 
  **SortPriority** = dword:00000064
 
-
-| nombre | Tipo | Datos (desde *.rgs* archivo) | Descripción |
+| Name | Tipo | Datos (desde *.rgs* archivo) | Descripción |
 |------------------|-----------| - | - |
 | @ (Valor predeterminado) | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | Identificador de recurso para **Agregar elemento** plantillas. |
 | Val TemplatesDir | REG_SZ | %TEMPLATE_PATH%\\&lt;SomeProjectItems&gt; | Ruta de acceso de los elementos de proyecto que se muestra en el cuadro de diálogo para la **Agregar nuevo elemento** asistente. |

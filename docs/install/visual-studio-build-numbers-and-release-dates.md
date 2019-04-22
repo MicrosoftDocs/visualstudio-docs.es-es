@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/03/2019
+ms.date: 04/11/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3b1be29663bacee5719749746f6275aba4381f99
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 6246291a00a86a3cde0e3a9cf134724d9dc470ed
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018251"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537655"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,7 +29,7 @@ ms.locfileid: "59018251"
 
 En la tabla siguiente se enumeran los números de compilación y las fechas de lanzamiento de Visual Studio 2017, hasta la fecha.
 
-| **Versión**| **Canal** | **Fecha de publicación** | **Versión de compilación** |
+| **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.11 | Release | 2 de abril de 2019 | 15.9.28307.586 |
 | 15.9.10 | Release | 25 de marzo de 2019 | 15.9.28307.557 |
@@ -191,8 +191,11 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 En la tabla siguiente se enumeran los números de compilación y las fechas de versión de Visual Studio 2019 hasta la fecha.
 
-| **Versión**| **Canal** | **Fecha de publicación** | **Versión de compilación** |
+| **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Versión preliminar 1 | 10 de abril de 2019 | 16.1.28809.33 |
+| 16.0.1 | Release | 9 de abril de 2019 | 16.0.28803.156 |
+| 16.0.1 | Versión preliminar 1 | 9 de abril de 2019 | 16.0.28803.156 |
 | 16.0.0 | Release | 2 de abril de 2019 | 16.0.28729.10 |
 | 16.0.0 | Preview 5 | 2 de abril de 2019 | 16.0.28729.10 |
 | 16.0.0 | Versión candidata para lanzamiento 4 (RC.4) | 26 de marzo de 2019 | 16.0.28721.148 |

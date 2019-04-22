@@ -29,12 +29,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e130bac0a20d2f1e4421b6c8bd34ac2b211c55f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5aa51fdf7d0c2537de3c301efa7efb7fe6ce96f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996596"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650114"
 ---
 # <a name="cc-assertions"></a>Aserciones de C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +109,6 @@ VERIFY ( myFnctn(0)==1 ) // safe
 
 ##  <a name="BKMK_CRT_assertions"></a> Aserciones de CRT  
  El archivo de encabezado CRTDBG.H define las [macros _ASSERT y _ASSERTE](http://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) para la comprobación de aserciones.  
-
 
 |   Macro    |                                             Resultado                                              |
 |------------|-------------------------------------------------------------------------------------------------|

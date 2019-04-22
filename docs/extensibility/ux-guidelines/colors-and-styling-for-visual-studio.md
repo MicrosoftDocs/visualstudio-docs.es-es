@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027716"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650637"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 En el archivo vsshell80.idl, la enumeración del explorador `__VSSYSCOLOREX` tiene shell color constantes. Para ello, pase como el valor de índice cualquiera de los valores de la `enum __VSSYSCOLOREX` documentadas en MSDN o un índice normal número que el sistema de Windows API, `GetSysColor`, acepta. Esto recibe el valor RGB del color que debe usarse en el segundo parámetro.
 
 Si almacena un lápiz o un pincel con un nuevo color, deberá `AdviseBroadcastMessages` (fuera de Visual Studio shell) y escuchar `WM_SYSCOLORCHANGE` y `WM_THEMECHANGED` mensajes.
-
 
 Para acceder al servicio de color en código nativo, podrá realizar una llamada similar a esta:
 
@@ -359,7 +358,7 @@ Construir un tipo especial de entrada de registro de la categoría bajo `[HKLM\S
 
 Llenar el registro con dos valores:
 
-| nombre | Tipo | Datos | Descripción |
+| Name | Tipo | Datos | Descripción |
 | --- | --- | --- | --- |
 | Categoría | REG_SZ | GUID | Crea un GUID para identificar la categoría |
 | Paquete | REG_SZ | GUID | El GUID del servicio de VSPackage que admite la categoría |
@@ -372,7 +371,7 @@ Construir un tipo especial de entrada de registro de la categoría bajo `[HKLM\S
 
 Llenar el registro con dos valores:
 
-| nombre | Tipo | Datos | Descripción |
+| Name | Tipo | Datos | Descripción |
 |--- | --- | --- | --- |
 | Categoría | REG_SZ | GUID | Crea un GUID para identificar la categoría |
 | Paquete | REG_SZ | GUID | El GUID del servicio de VSPackage que admite la categoría |

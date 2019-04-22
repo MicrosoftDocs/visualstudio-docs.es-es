@@ -19,10 +19,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232322"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitar una complejidad excesiva
@@ -102,7 +102,7 @@ Los ejemplos siguientes muestran los métodos que tienen diferentes complejidad 
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-[CA1501: Evitar una herencia excesiva](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501: Evite una herencia excesiva](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Vea también
 

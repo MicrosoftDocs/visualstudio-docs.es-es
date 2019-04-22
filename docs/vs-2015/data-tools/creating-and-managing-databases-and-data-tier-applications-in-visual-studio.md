@@ -14,16 +14,15 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c3a8a1f4b0c6e242e3999d870fdfcdc764d8336
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988951"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651388"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Creación y administración de bases de datos y aplicaciones de capa de datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 IMPORTANTE]
 >  Los proyectos de base de datos que se incluyeron en versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ahora se ofrecen en [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] herramientas. Para obtener más información, consulte [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).

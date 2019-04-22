@@ -1,5 +1,5 @@
 ---
-title: Filtrar Ejecutar una transformación XSLT desde el Editor XML | Documentos de Microsoft
+title: Procedimiento Ejecutar una transformación XSLT desde el Editor XML | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4b9adf7d453ba1ecb0d3c0e3dc494c2e6b24fbc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: cf4696827f0c94e9eb9dfbd88a5e814298f823e1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58999036"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649529"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Filtrar Ejecutar una transformación XSLT desde el Editor XML
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedimiento Ejecutar una transformación XSLT desde el Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El Editor XML permite asociar una hoja de estilos XSLT con un documento XML, realizar la transformación y ver el resultado. El resultado de la transformación XSLT se muestra en una nueva ventana de documento.  
   
  El **salida** propiedad especifica el nombre de archivo para la salida. Si el **salida** propiedad está en blanco, se genera un nombre de archivo en el directorio temporal. La extensión de archivo se basa en el elemento `xsl:output` de la hoja de estilos y puede ser .xml, .txt o .htm.  

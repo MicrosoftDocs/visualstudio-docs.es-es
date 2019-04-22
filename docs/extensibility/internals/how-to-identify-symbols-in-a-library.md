@@ -1,5 +1,5 @@
 ---
-title: Filtrar Identificación de símbolos en una biblioteca | Documentos de Microsoft
+title: Procedimiento Identificación de símbolos en una biblioteca | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183a0774bf507fcf8bdf9abeea688bb1ea75b1bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b74eaab3edb205b5218cad5a61556f4803614d94
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628720"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651976"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Filtrar Identificación de símbolos en una biblioteca
+# <a name="how-to-identify-symbols-in-a-library"></a>Procedimiento Identificación de símbolos en una biblioteca
 Herramientas de exploración de símbolos muestran las vistas jerárquicas de símbolos. Los símbolos representan espacios de nombres, objetos, clases, miembros de clase y otros elementos de lenguaje.
 
  Cada símbolo en la jerarquía puede identificarse por la información de navegación pasada por la biblioteca de símbolos para el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos a través de las interfaces siguientes:
@@ -49,7 +49,6 @@ N1
  La ruta de acceso canónica de la clase C2, en este ejemplo, es N1 + C2. La ruta de acceso de presentación de C2 incluye nodos C1 y "Bases y las Interfaces": N1 + C1 + "Bases e Interfaces" + C2.
 
  Para obtener la información del formulario de presentación, el Administrador de objetos llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> método.
-
 
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Para obtener canónico y presentación de información de formularios
 

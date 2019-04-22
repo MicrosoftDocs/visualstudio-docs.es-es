@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790542"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504307"
 ---
 # <a name="features-of-visual-studio"></a>Características de Visual Studio
 
@@ -100,7 +100,7 @@ El **Explorador de objetos de SQL Server** de Visual Studio ofrece una vista de 
 
 ## <a name="debug-test-and-improve-your-code"></a>Depure, pruebe y mejore su código
 
-Cuando se escribe código, debe ejecutarlo y probarlo para comprobar su rendimiento y ver si tiene errores. El innovador sistema de depuración de Visual Studio permite depurar el código que se ejecuta en el proyecto local, en un dispositivo remoto o en un [emulador de dispositivo](../cross-platform/visual-studio-emulator-for-android.md). Puede ejecutar el código mediante una instrucción a la vez e inspeccionar las variables a medida que avanza. Puede establecer puntos de interrupción que solo se alcanzan cuando una condición especificada es verdadera. Las opciones de depuración se pueden administrar en el propio editor de código para que no tenga que salir del código. Para obtener más detalles sobre el proceso de depuración de Visual Studio, consulte [Paseo por las características del depurador](../debugger/debugger-feature-tour.md).
+Cuando se escribe código, debe ejecutarlo y probarlo para comprobar su rendimiento y ver si tiene errores. El innovador sistema de depuración de Visual Studio permite depurar el código que se ejecuta en el proyecto local, en un dispositivo remoto o en un [emulador de dispositivo](../cross-platform/visual-studio-emulator-for-android.md). Puede ejecutar el código mediante una instrucción a la vez e inspeccionar las variables a medida que avanza. Puede establecer puntos de interrupción que solo se alcanzan cuando una condición especificada es verdadera. Las opciones de depuración se pueden administrar en el propio editor de código para que no tenga que salir del código. Para obtener más detalles sobre la depuración en Visual Studio, consulte [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
 
 Para obtener más información sobre cómo mejorar el rendimiento de las aplicaciones, consulte la característica de [generación de perfiles](../profiling/profiling-feature-tour.md) de Visual Studio.
 

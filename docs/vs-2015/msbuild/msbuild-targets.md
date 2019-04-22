@@ -11,17 +11,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06b49a8fda448707540d5bfe65d0499c6c2dde96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767368"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652363"
 ---
 # <a name="msbuild-targets"></a>Objetivos de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Los destinos agrupan tareas en un orden concreto y permiten que el proceso de compilación se factorice en unidades más pequeñas. Por ejemplo, un destino podría eliminar todos los archivos del directorio de salida para prepararlo para la compilación, mientras que otro compila las entradas para el proyecto y las coloca en el directorio vacío. Para más información sobre las tareas, consulte [Tareas](../msbuild/msbuild-tasks.md).  
   
 ## <a name="declaring-targets-in-the-project-file"></a>Declaración de destinos en el archivo del proyecto  

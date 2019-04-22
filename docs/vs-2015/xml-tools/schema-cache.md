@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998666"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648970"
 ---
 # <a name="schema-cache"></a>Caché de esquema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 El Editor XML proporciona una caché de esquema que está ubicada en el directorio %InstallRoot%\Xml\Schemas. La caché de esquema es global para todos los usuarios de un equipo e incluye esquemas XML estándar que se utilizan en IntelliSense y en la validación de documentos XML.  
 
  El editor XML también puede encontrar los esquemas ubicados en la solución, los esquemas especificados en el **esquemas** campo del documento **propiedades** ventana y los esquemas identificados por el `xsi:schemaLocation` y `xsi:noNamespaceSchemaLocation`atributos.  
 
  En la siguiente tabla se describen los esquemas que están instalados con el Editor XML.  
-
 
 |     Filename      |                                                      Descripción                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|

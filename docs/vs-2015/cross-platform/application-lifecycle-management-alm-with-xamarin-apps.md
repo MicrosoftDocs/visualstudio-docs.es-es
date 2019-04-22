@@ -8,17 +8,16 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 6f8d2a776b8867230bb618dfb0ce8b558c69619e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d524319eb31d3c51613894ad51470c718c9008e3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793816"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652765"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Android, iOS y Windows con C#, .NET y Visual Studio. Xamarin permite compartir entre plataformas gran parte del código. Solo es necesario que un pequeño porcentaje sea específico de la plataforma. Para más información sobre Xamarin, vea [Visual Studio y Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
   
  El desarrollo de aplicaciones para plataformas modernas implica muchas otras actividades, además de escribir código. Estas actividades, denominadas DevOps (desarrollo + operaciones), abarcan el ciclo de vida completo de la aplicación e incluyen la planeación y el seguimiento del trabajo, el diseño y la implementación del código, la administración de un repositorio de código fuente, las compilaciones, la administración de integraciones e implementaciones continuas, las pruebas (incluidas las pruebas unitarias y las pruebas de la interfaz de usuario), la ejecución de diversas formas de diagnóstico tanto en entornos de desarrollo como de producción y la supervisión del rendimiento de la aplicación y del comportamiento de los usuarios en tiempo real mediante telemetría y análisis.  
@@ -69,7 +68,7 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |[Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)|Sí||  
   
 ## <a name="build"></a>Compilar  
- Vínculo de referencia: **[Compilar](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Vínculo de referencia: **[Compilación](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Característica|Compatible con Xamarin|Comentarios adicionales|  
 |-------------|----------------------------|-------------------------|  
@@ -80,7 +79,7 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |Integración continua, incluidas entradas validadas|Sí|Entradas validadas para TFVC solo cuando GIT funciona en un modelo de solicitud de extracción en lugar de entradas.|  
   
 ## <a name="testing"></a>Pruebas  
- Vínculo de referencia: **[Testing the application (Probar la aplicación)](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Vínculo de referencia: **[Probar la aplicación](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Característica|Compatible con Xamarin|Comentarios adicionales|  
 |-------------|----------------------------|-------------------------|  
@@ -103,7 +102,7 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |[Analizar problemas de memoria de .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono para la generación de perfiles.|  
   
 ## <a name="release-management"></a>Administración de versiones  
- Vínculo de referencia: **[Automate deployments with Release Management (Automatizar implementaciones con Release Management)](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ Vínculo de referencia: **[Automatizar implementaciones con Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Característica|Compatible con Xamarin|Comentarios adicionales|  
 |-------------|----------------------------|-------------------------|  

@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366411"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
@@ -171,7 +171,7 @@ Para seleccionar rápidamente un proceso en ejecución para adjuntar a, en Visua
 |Depuración remota de ASP.NET 4 o 4.5 en un servidor IIS|Utilizar las herramientas remotas y **asociar al proceso**|*w3wp.exe*|Consulte [ASP.NET en un equipo remoto de IIS de la depuración remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Depuración remota de ASP.NET Core en un servidor IIS|Utilizar las herramientas remotas y **asociar al proceso**|*dotnet.exe*|Implementación de aplicaciones, consulte [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, vea [remoto depuración ASP.NET Core en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Depurar script de cliente en un servidor IIS local, para los tipos de aplicación admitidos |Use **asociar al proceso**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, o *iexplore.exe*|Debe estar habilitada la depuración de scripts. Para Chrome, también debe ejecutar Chrome en modo de depuración y seleccione **código Webkit** en el **adjuntar a** campo.|
-|Depurar una aplicación de C#, Visual Basic o C++ en el equipo local|Utilice cualquier depuración estándar (**F5**) o **asociar al proceso**|*\<appname>.exe*|En la mayoría de los escenarios, use la depuración estándar y no **asociar al proceso**.|
+|Depurar una aplicación de C#, Visual Basic o C++ en el equipo local|Utilice cualquier depuración estándar (**F5**) o **asociar al proceso**|*\<nombre_de_la_aplicación>.exe*|En la mayoría de los escenarios, use la depuración estándar y no **asociar al proceso**.|
 |Depuración remota de una aplicación de escritorio de Windows|Herramientas remotas|N/D| Consulte [remoto depurar una aplicación de C# o Visual Basic](../debugger/remote-debugging-csharp.md) o [depuración remota de una aplicación de C++](../debugger/remote-debugging-cpp.md)|
 |Depurar una aplicación ASP.NET en el equipo local después de iniciar la aplicación sin el depurador|Use **asociar al proceso**|*iiexpress.exe*|Esto puede resultar útil para realizar la aplicación carga más rápida, por ejemplo, (por ejemplo) al generar perfiles. |
 |Depurar otros tipos de aplicaciones compatibles en un proceso de servidor|Si el servidor remoto, use las herramientas remotas, y **asociar al proceso**|*Chrome.exe*, *iexplore.exe*, u otros procesos|Si es necesario, utilice al Monitor de recursos para ayudar a identificar el proceso. Vea [Depuración remota](../debugger/remote-debugging.md).|
@@ -197,7 +197,7 @@ En algunos escenarios de depuración locales, puede depurar en Visual Studio sin
 
  Si desea información más específica sobre por qué el depurador no se pudo conectar a un tipo de código, intente volver a adjuntar a sólo ese tipo de código.
 
- **Para obtener información específica acerca de por qué un tipo de código no se pudo conectar:**
+ **Para obtener información específica sobre la causa por la que no se ha asociado correctamente un tipo de código:**
 
 1.  Desasocie el proceso. En el **depurar** menú, seleccione **Desasociar todo**.
 
@@ -217,6 +217,6 @@ En algunos escenarios de depuración locales, puede depurar en Visual Studio sin
 
 ## <a name="see-also"></a>Vea también
 
-- [Depurar varios procesos](../debugger/debug-multiple-processes.md)
-- [depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [Depuración de varios procesos](../debugger/debug-multiple-processes.md)
+- [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Depuración remota](../debugger/remote-debugging.md)

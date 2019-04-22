@@ -15,17 +15,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 919e3ed3f372a2f6614553974f5f47cfba24e3ff
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8398f07cf6fa6bd2702b2d84ab0d29dcd614ed32
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798537"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652312"
 ---
 # <a name="replace-in-files-command"></a>Reemplazar en archivos (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Reemplaza texto de los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.  
   
 ## <a name="syntax"></a>Sintaxis  

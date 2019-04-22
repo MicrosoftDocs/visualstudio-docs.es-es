@@ -12,10 +12,10 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59003148"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrado)
@@ -79,4 +79,4 @@ El shell integrado de Visual Studio incluye el entorno de desarrollo integrado (
 -   Ningún idioma de Visual Studio o sus plantillas de proyecto asociado o plantillas de elemento de proyecto, se incluyen en el shell integrado. Implementaciones específicas de idioma de otras características no se incluyen, para fragmentos de código de Visual Basic de ejemplo.  
   
 ## <a name="see-also"></a>Vea también  
- [Información general sobre la extensión de Visual Studio](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+ [Ampliación de introducción a Visual Studio](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9fa8837a45939da3dcda16864b3cad697e659da
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232527"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>Referencia de versión de paquete de .NET del compilador plataforma
@@ -42,5 +42,5 @@ Por ejemplo, para asegurarse de que el analizador personalizado funciona en toda
 
 ## <a name="see-also"></a>Vea también
 
-- [SDK de la plataforma del compilador de .NET](/dotnet/csharp/roslyn-sdk/)
+- [SDK de .NET Compiler Platform](/dotnet/csharp/roslyn-sdk/)
 - [Introducción a los analizadores de Roslyn](getting-started-with-roslyn-analyzers.md)

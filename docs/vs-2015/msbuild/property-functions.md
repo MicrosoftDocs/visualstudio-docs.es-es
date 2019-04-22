@@ -11,17 +11,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ed61d1b65d03053859b5463b574432e0396449a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758366"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649243"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En .NET Framework versiones 4 y 4.5, se pueden usar funciones de propiedad para evaluar los scripts de MSBuild. Las funciones de propiedad se pueden usar siempre que aparezcan propiedades. A diferencia de las tareas, las funciones de propiedad se pueden usar fuera de los destinos, y se evalúan antes de que se ejecute ningún destino.  
   
  Se puede leer la hora del sistema, comparar cadenas, buscar coincidencias de expresiones regulares y realizar otras acciones en el script de compilación sin usar tareas de MSBuild. MSBuild intentará convertir la cadena en números y los números en cadena, y realizar otras conversiones que sean necesarias.  
@@ -266,7 +265,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  Están disponibles las siguientes vistas del Registro:  
   
-|Vista del Registro|de esquema JSON|  
+|Vista del Registro|Definición|  
 |-------------------|----------------|  
 |RegistryView.Registry32|La vista del Registro para aplicaciones de 32 bits.|  
 |RegistryView.Registry64|La vista del Registro para aplicaciones de 64 bits.|  

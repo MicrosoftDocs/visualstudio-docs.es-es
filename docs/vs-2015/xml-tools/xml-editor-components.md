@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d2e9ce63ed19d1a920fa4e337d6ba398417a16a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ea5433fc1dd12c759faa31599be029f1ba569db1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996690"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648957"
 ---
 # <a name="xml-editor-components"></a>Componentes del Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En esta sección se describen las ventanas y los cuadros de diálogo del Editor XML. Como el Editor XML se basa en el Editor de texto, parte del entorno de desarrollo integrado (IDE) está configurado con las opciones generales del Editor de texto.  
   
 ## <a name="in-this-section"></a>En esta sección  

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366047"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de seguridad para código administrado
@@ -63,9 +63,9 @@ Debe incluir el conjunto de reglas reglas de seguridad de Microsoft a maximizar 
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Los métodos transparentes no pueden usar aserciones de seguridad|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Los métodos transparentes no deben llamar a código nativo|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Los ensamblados deben tener nombres seguros válidos|
-|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|No use deserializador inseguro BinaryFormatter|
-|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|No llame a BinaryFormatter.Deserialize sin establecer primero BinaryFormatter.Binder|
-|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Asegúrese de que se establece BinaryFormatter.Binder antes de llamar a BinaryFormatter.Deserialize|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|No usar el deserializador no seguro BinaryFormatter|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|No llamar a BinaryFormatter.Deserialize sin establecer primero BinaryFormatter.Binder|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Asegurarse de que BinaryFormatter.Binder está establecido antes de llamar a BinaryFormatter.Deserialize|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de SQL|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de XSS|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de rutas de acceso a archivos|

@@ -17,17 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 423975825e74b7dab29f19697e1e17fb00430f9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988682"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651924"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Agregar código a TableAdapters en aplicaciones de n niveles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede ampliar la funcionalidad de un `TableAdapter` mediante la creación de un archivo de clase parcial para el `TableAdapter` y agregarle código (en lugar de agregar código a la *DatasetName*. Archivo DataSet.Designer). Las clases parciales permiten código para una clase específica que va a dividir entre varios archivos físicos. Para obtener más información, consulte [parcial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) o [partial (tipos)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
   
  El código que define un `TableAdapter` se genera cada vez que se realizan cambios en el `TableAdapter`. Este código también se genera cuando se realizan cambios durante la ejecución de cualquier asistente que modifica la configuración de la `TableAdapter`. Para evitar que el código que se eliminen durante la regeneración de un `TableAdapter`, agregue código al archivo de clase parcial de la `TableAdapter`.  

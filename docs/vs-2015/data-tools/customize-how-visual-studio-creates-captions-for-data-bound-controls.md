@@ -20,16 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 379911793f85cedcee708716782e6ef38203867b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58998997"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647964"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Cuando se arrastran elementos desde la [ventana Orígenes de datos](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) en el Diseñador de Windows Forms, una consideración especial entra en juego: se cambian los nombres de columna en las etiquetas de leyenda en una cadena más legible cuando dos o más palabras están se encontró que se concatenan juntos. Puede personalizar la manera en que se crean estas etiquetas, estableciendo el **SmartCaptionExpression**, **SmartCaptionReplacement**, y **SmartCaptionSuffix** valores en el **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data diseñadores** clave del registro.
 

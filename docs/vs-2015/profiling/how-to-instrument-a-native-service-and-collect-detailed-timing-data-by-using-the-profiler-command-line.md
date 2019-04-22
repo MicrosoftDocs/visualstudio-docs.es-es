@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Instrumentar un servicio nativo y recopilar datos detallados de control de tiempo utilizando la línea de comandos del generador de perfiles | Microsoft Docs'
+title: Procedimiento Instrumentar un servicio nativo y recopilar datos detallados de control de tiempo utilizando la línea de comandos del generador de perfiles | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0e1007ce9119d12282b4ee7f6b85f22257af659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2663049a818782e8af11f9c85454152e5e5d83db
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781408"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649009"
 ---
-# <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Cómo: Instrumentar un servicio nativo y recopilar datos detallados de control de tiempo utilizando la línea de comandos del generador de perfiles
+# <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumenta un nativo servicio y recopilar datos detallados mediante la línea de comandos de Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para instrumentar un servicio nativo (C/C++) y recopilar datos de control de tiempo detallados.  
@@ -65,7 +65,6 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                    Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles.                                                                                                                     |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms.                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo (.etl) independiente.                                                                                     |
-
 
 5. Inicie el servicio en el Administrador de control de servicios.  
 

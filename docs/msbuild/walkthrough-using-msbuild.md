@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897743"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584407"
 ---
 # <a name="walkthrough-use-msbuild"></a>Tutorial: Usar MSBuild
 
@@ -33,7 +33,7 @@ Puede ejecutar MSBuild desde Visual Studio o en la **ventana de comandos**. En e
 
  El sistema de proyectos de Visual Studio se basa en MSBuild. Esto facilita la creación de un nuevo archivo del proyecto con Visual Studio. En esta sección, creará un archivo del proyecto de Visual C#. En su lugar, puede crear un archivo del proyecto de Visual Basic. En el contexto de este tutorial, la diferencia entre los dos archivos del proyecto es secundaria.
 
-**Para crear un archivo del proyecto**
+**Para crear un archivo de proyecto**
 
 1. Abra Visual Studio y cree un proyecto.
 
@@ -54,7 +54,7 @@ Puede ejecutar MSBuild desde Visual Studio o en la **ventana de comandos**. En e
 
  En la sección anterior, utilizó Visual Studio para crear un archivo del proyecto de Visual C#. El archivo del proyecto se representa en el **Explorador de soluciones** por el nodo de proyecto denominado BuildApp. Puede utilizar el editor de código de Visual Studio para examinar el archivo del proyecto.
 
-**Para examinar el archivo del proyecto**
+**Para examinar el archivo de proyecto**
 
 1.  En el **Explorador de soluciones**, haga clic en el nodo de proyecto **BuildApp**.
 
@@ -416,7 +416,7 @@ Cambie la tarea Message para utilizar retornos de carro y saltos de línea (% 0A
  agrega todos los archivos con la extensión *.jpeg* de la carpeta *images* al tipo de elemento Photos, mientras que
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  agrega todos los archivos con la extensión *.jpeg* de la carpeta *images*, y todas sus subcarpetas, al tipo de elemento Photos. Para obtener más ejemplos, vea [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).
@@ -600,5 +600,5 @@ Observe que los metadatos expresados en esta sintaxis no producen el procesamien
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción a MSBuild](../msbuild/msbuild.md)
+- [Información general sobre MSBuild](../msbuild/msbuild.md)
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)

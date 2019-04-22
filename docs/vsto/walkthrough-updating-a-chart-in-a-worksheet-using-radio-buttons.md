@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602070"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651895"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Tutorial: Actualizar un gráfico en una hoja de cálculo mediante botones de radio
   En este tutorial se muestra los aspectos básicos del uso de botones de radio en una hoja de cálculo de Microsoft Office Excel para proporcionar al usuario una manera de cambiar rápidamente entre las opciones. En este caso, las opciones de cambian el estilo de un gráfico.
@@ -108,7 +108,7 @@ ms.locfileid: "56602070"
 
 1.  Seleccione el <xref:Microsoft.Office.Tools.Excel.Chart> control en el diseñador y cambie las siguientes propiedades en el **propiedades** ventana.
 
-    |Property|Valor|
+    |Propiedad|Valor|
     |--------------|-----------|
     |**Name**|**dataChart**|
     |**HasLegend**|**false**|
@@ -132,34 +132,28 @@ ms.locfileid: "56602070"
 
 2. Desde el **controles comunes** pestaña de la **cuadro de herramientas**, arrastre un **botón de Radio** controlar al control de usuario y cambie las siguientes propiedades.
 
-
-   | Property | Valor |
+   | Propiedad | Valor |
    |----------|------------------|
    | **Name** | **columnChart** |
    | **Texto** | **Gráfico de columnas** |
 
-
 3. Agregue un segundo botón de radio al control de usuario y cambie las siguientes propiedades.
 
-
-   | Property | Valor |
+   | Propiedad | Valor |
    |----------|---------------|
    | **Name** | **barChart** |
    | **Texto** | **Gráfico de barras** |
 
-
 4. Agregue un tercer botón de radio al control de usuario y cambie las siguientes propiedades.
 
-
-   | Property | Valor |
+   | Propiedad | Valor |
    |----------|----------------|
    | **Name** | **lineChart** |
    | **Texto** | **Gráfico de líneas** |
 
-
 5. Agregar un cuarto botón de radio al control de usuario y cambie las siguientes propiedades.
 
-   |Property|Valor|
+   |Propiedad|Valor|
    |--------------|-----------|
    |**Name**|**areaBlockChart**|
    |**Texto**|**Gráfico de áreas bloque**|

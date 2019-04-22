@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988238"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647939"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Propiedades de los atributos de diagramas de clases de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,6 @@ En un diagrama de clases de lenguaje unificado de modelado (UML), se pueden agre
  Para ver las propiedades de un atributo, haga clic con el botón derecho en el atributo de la clase o la interfaz del diagrama y después haga clic en **Propiedades**. Las propiedades aparecen en la ventana Propiedades.  
 
  Para ver las propiedades de un atributo, haga clic en él con el botón derecho y luego haga clic en **Propiedades**.  
-
 
 |   **Property**    | **Predetermiado**  |                                                                                                                                                                                                         Descripción                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -1,5 +1,5 @@
 ---
-title: Introducción a Python | Microsoft Docs
+title: Introducción a Python | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678870"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648461"
 ---
 # <a name="getting-started-with-python"></a>Introducción a Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,7 @@ Como un lenguaje de programación Python es:
 Para obtener más información sobre el lenguaje, empiece con [Python para principiantes](https://www.python.org/about/gettingstarted/) en python.org.
 
 Para instalar Python en sí mismo, visite [ https://www.python.org/download/ ](https://www.python.org/download/).
- 
-  
+
 ## <a name="python-tools-for-visual-studio"></a>Python Tools para Visual Studio
   
 Las herramientas de Python para Visual Studio, que puede instalar desde [visualstudio.com](https://www.visualstudio.com/explore/python-vs), proporcionan las siguientes características:  
@@ -63,7 +62,6 @@ Los siguientes recursos le ayudarán a empezar:
 - [Introducción y vídeos Deep Dive cortos](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
 - Demostración de instalación y características (27 minutos)]( https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Documentación](https://github.com/Microsoft/PTVS/wiki)  
-
 
 Tenga en cuenta que Visual Studio no en la actualidad proporciona los medios para crear un archivo ejecutable independiente con Python, lo que significa básicamente un programa con un intérprete de Python incrustado. Pero hay varias formas dentro de la comunidad de Python para hacerlo, como se describe en [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython también se puede insertar en una aplicación nativa, como se describe en la entrada de blog [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Uso del archivo Zip insertable de CPython).
   
@@ -93,9 +91,9 @@ Se recomienda obtener IPython y las bibliotecas informáticas científicas (matp
   
 ## <a name="see-also"></a>Vea también  
 
-[Introducción a PTVS: configuración de Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[Introducción a PTVS: comenzar a codificar (proyectos)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[Introducción a PTVS: editar código](../python/getting-started-with-ptvs-editing-code.md)
-[Introducción a PTVS: depurar](../python/getting-started-with-ptvs-debugging.md)
+[Introducción a PTVS: Configuración de Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[Introducción a PTVS: Comenzar a codificar (proyectos)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[Introducción a PTVS: Edición de código](../python/getting-started-with-ptvs-editing-code.md)
+[Introducción a PTVS: Depuración](../python/getting-started-with-ptvs-debugging.md)
 [Introducción a PTVS: Python interactivo](../python/getting-started-with-ptvs-interactive-python.md)
-[Introducción a PTVS: compilar un sitio web en Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[Introducción a PTVS: Creación de un sitio Web en Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
