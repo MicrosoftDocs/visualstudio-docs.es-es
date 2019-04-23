@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 15a07796278faad43f95b33c020b167f07daa009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59002125"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105635"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
   
 ##### <a name="to-change-the-event-list-view-mode"></a>Cambio de la vista de la lista de eventos  
   
--   En la ventana **Lista de eventos gráficos** , encima de la lista de eventos, busque el cuadro desplegable **Vista** y elija entre la vista de **Escala de tiempo** o la de **Llamadas de dibujo** .  
+- En la ventana **Lista de eventos gráficos** , encima de la lista de eventos, busque el cuadro desplegable **Vista** y elija entre la vista de **Escala de tiempo** o la de **Llamadas de dibujo** .  
   
 ### <a name="filtering-events"></a>Filtrado de eventos  
  Puede utilizar el Cuadro de búsqueda, situado en la esquina superior derecha de la ventana **Lista de eventos gráficos** , para filtrar la lista de eventos de modo que incluya solo los eventos cuyo nombre contenga determinadas palabras clave. Puede especificar una palabra clave, como `Vertex`(como se muestra en la ilustración anterior), o varias palabras clave separadas por un punto y coma, como `Draw;Primitive`, lo que mostrará eventos que tengan tanto `Draw` como `Primitive` en sus nombres. Las búsquedas distinguen los espacios (por ejemplo, `VSSet` y `VS Set` son búsquedas diferentes, de modo que debe efectuarlas con cuidado).  

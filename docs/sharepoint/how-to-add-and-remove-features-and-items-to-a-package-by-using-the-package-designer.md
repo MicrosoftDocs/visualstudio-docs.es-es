@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76abaaa1210320c14175be2bb47828b7bd06aa9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094325"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Filtrar Agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Procedimiento Agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes
   Cuando se crea una solución de SharePoint, Visual Studio agrega las características de SharePoint predeterminado para el paquete de la solución. Antes de la implementación final, puede agregar y quitar elementos de proyecto de SharePoint y las características para modificar el paquete de SharePoint.
 
  Como alternativa, puede usar el Explorador de empaquetado para agregar y quitar elementos de proyecto de SharePoint. También puede ver y cambiar la jerarquía de los elementos de proyecto de SharePoint y características que se colocan en el paquete (.wsp). Para obtener más información, vea [Cómo: Agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
@@ -52,7 +52,7 @@ ms.locfileid: "56608102"
 
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Para quitar las características de SharePoint con el Diseñador de paquetes
 
-1.  En el **elementos en el paquete** lista, elija un elemento que desea quitar y, a continuación, elija el **quitar** (<) botón o elija el **quitar todo** botón (<<) para quitar todos los elementos.
+1. En el **elementos en el paquete** lista, elija un elemento que desea quitar y, a continuación, elija el **quitar** (<) botón o elija el **quitar todo** botón (<<) para quitar todos los elementos.
 
      Los elementos de SharePoint aparecen en la **elementos de la solución** lista.
 

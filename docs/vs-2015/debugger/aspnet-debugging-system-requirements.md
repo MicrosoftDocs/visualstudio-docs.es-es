@@ -17,25 +17,25 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097133"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Depuración ASP.NET: Requisitos del sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describen los requisitos de software y seguridad de los escenarios de depuración de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
   
--   Depuración local, en la que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y la aplicación web se ejecutan en el mismo equipo. Existen dos versiones de este escenario:  
+- Depuración local, en la que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y la aplicación web se ejecutan en el mismo equipo. Existen dos versiones de este escenario:  
   
-    -   El código de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside en el sistema de archivos.  
+    - El código de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside en el sistema de archivos.  
   
-    -   El código de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside en un sitio web de IIS.  
+    - El código de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside en un sitio web de IIS.  
   
--   La depuración remota, en la que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se ejecuta en un equipo cliente y depura una aplicación web que se está ejecutando en un equipo servidor remoto.  
+- La depuración remota, en la que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se ejecuta en un equipo cliente y depura una aplicación web que se está ejecutando en un equipo servidor remoto.  
   
 ## <a name="security-requirements"></a>Requisitos de seguridad  
  Para la depuración remota, los equipos locales y remotos deben estar en una configuración de dominio o una configuración de grupo de trabajo.  

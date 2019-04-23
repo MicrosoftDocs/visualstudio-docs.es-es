@@ -12,19 +12,19 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce0d1f2fd5c4ea8549f638f97846fdf7a1726b90
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 629683131b93534350439867e41b97ca3bbf3b5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106883"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Opciones de IntelliSense específicas de Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El editor de código fuente de Visual Basic ofrece las siguientes características de IntelliSense:  
   
--   Sugerencias de sintaxis  
+- Sugerencias de sintaxis  
   
      Las sugerencias de sintaxis muestran la sintaxis de la instrucción que está escribiendo. Es útil para instrucciones como [Declare](http://msdn.microsoft.com/library/d3f21fb0-b804-4c99-97ed-583b23894cf1).  
   

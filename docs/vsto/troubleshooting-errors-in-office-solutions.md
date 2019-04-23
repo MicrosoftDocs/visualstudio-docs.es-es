@@ -20,27 +20,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d805333bd8a2cce43340e61573b082dfdff7db0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cdfa5724b25a551a65318fea3ebcaf52d7f397ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084577"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solución de problemas de errores en las soluciones de Office
   Pueden surgir problemas al realizar las siguientes tareas mientras desarrolla soluciones de Office en Visual Studio:
 
--   [Crear, actualizar y abrir proyectos](#creating)
+- [Crear, actualizar y abrir proyectos](#creating)
 
--   [Utilizar los diseñadores](#designers)
+- [Utilizar los diseñadores](#designers)
 
--   [Escribir código](#code)
+- [Escribir código](#code)
 
--   [Compilar proyectos](#building)
+- [Compilar proyectos](#building)
 
--   [Depurar proyectos](#debugging)
+- [Depurar proyectos](#debugging)
 
-##  <a name="creating"></a> Crear, actualizar y abrir proyectos
+## <a name="creating"></a> Crear, actualizar y abrir proyectos
  Pueden producirse los siguientes errores al crear o abrir proyectos de Office.
 
 ### <a name="the-project-cannot-be-created"></a>No se puede crear el proyecto
@@ -60,13 +60,13 @@ ms.locfileid: "56610922"
 
  Estos errores pueden producirse al intentar crear un proyecto basado en un libro cuya información personal se quitó mediante el Inspector de documento. Para evitar este error, lleve a cabo los pasos siguientes antes de crear el proyecto.
 
-1.  Abra el libro en Excel.
+1. Abra el libro en Excel.
 
-2.  En Excel, abra el Centro de confianza.
+2. En Excel, abra el Centro de confianza.
 
-3.  En el **opciones de privacidad** ficha desactive el **quitar información personal de las propiedades del archivo al guardarlo** casilla de verificación.
+3. En el **opciones de privacidad** ficha desactive el **quitar información personal de las propiedades del archivo al guardarlo** casilla de verificación.
 
-4.  Guarde el libro y cierre Excel.
+4. Guarde el libro y cierre Excel.
 
 ### <a name="cannot-open-a-project-after-migration"></a>No se puede abrir un proyecto después de la migración
  Después de migrar una solución de Office a Microsoft Office 2010, el proyecto no se puede abrir en un equipo de desarrollo que solo tiene instalado 2007 Microsoft Office System. Es posible que vea los siguientes errores.
@@ -84,17 +84,17 @@ ms.locfileid: "56610922"
 
  Cuando termine de actualizar el proyecto, puede desinstalar Visual Studio 2005 Tools para Office Second Edition Runtime en el equipo de desarrollo si no lo usa ninguna otra solución de Office.
 
-##  <a name="designers"></a> Utilizar los diseñadores
+## <a name="designers"></a> Utilizar los diseñadores
  Podría encontrar los siguientes errores al trabajar con el documento, el libro o el diseñador de hojas de cálculo en proyectos de nivel de documento.
 
 ### <a name="designer-failed-to-load-correctly"></a>No se pudo cargar correctamente el diseñador
  Visual Studio no puede abrir el diseñador en los casos siguientes:
 
--   Excel o Word ya están abiertos y muestran un cuadro de diálogo modal. Para abrir el diseñador, compruebe si Excel o Word tienen abierto un cuadro de diálogo modal y cierre todos los cuadros de diálogo modales que estén abiertos. Si no hay ningún cuadro de diálogo modal abierto, podría ser necesaria otra acción para que Excel o Word respondan.
+- Excel o Word ya están abiertos y muestran un cuadro de diálogo modal. Para abrir el diseñador, compruebe si Excel o Word tienen abierto un cuadro de diálogo modal y cierre todos los cuadros de diálogo modales que estén abiertos. Si no hay ningún cuadro de diálogo modal abierto, podría ser necesaria otra acción para que Excel o Word respondan.
 
--   El proyecto se está depurando. Para abrir el diseñador, detenga o finalice la depuración.
+- El proyecto se está depurando. Para abrir el diseñador, detenga o finalice la depuración.
 
--   Un complemento de VSTO de Excel que está instalado en el equipo de desarrollo muestra un cuadro de diálogo cuando se inicia Excel. Para crear un proyecto de nivel de documento de Excel, primero debe deshabilitar el complemento de VSTO.
+- Un complemento de VSTO de Excel que está instalado en el equipo de desarrollo muestra un cuadro de diálogo cuando se inicia Excel. Para crear un proyecto de nivel de documento de Excel, primero debe deshabilitar el complemento de VSTO.
 
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>Los controles aparecen como rectángulos negros en el documento u hoja de cálculo
  Si agrupa los controles en un documento o una hoja de cálculo, Visual Studio ya no los reconoce. No se puede acceder a los controles agrupados en el **propiedades** ventana y aparecen como rectángulos negros en el documento u hoja de cálculo. Debe desagrupar los controles para restaurar su funcionalidad.
@@ -105,10 +105,10 @@ ms.locfileid: "56610922"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Comando Insertar imagen prediseñada no hace nada en el Diseñador de Visual Studio
  Cuando Excel o Word está abierto en el Diseñador de Visual Studio, haga clic en el **imágenes prediseñadas** situado en la **ilustraciones** ficha en la cinta de opciones no se abre el **imágenes prediseñadas** panel de tareas. Para agregar imágenes prediseñadas, debe abrir la copia del libro o documento que se encuentra en la carpeta principal del proyecto (no la copia que se encuentra en la *\bin* carpeta) fuera de Visual Studio, agregar las imágenes prediseñadas y, a continuación, guarde el documento o libro.
 
-##  <a name="code"></a> Escribir código
+## <a name="code"></a> Escribir código
  Pueden producirse los siguientes errores al escribir código en proyectos de Office.
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Algunos eventos de objetos de Office no son accesibles al usar C#
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Algunos eventos de objetos de Office no son accesibles cuando se usa C\#
  En algunos casos, podría ver un error del compilador similar al siguiente al intentar acceder a un evento determinado de una instancia de un tipo de ensamblado de interoperabilidad primario (PIA) de Office en un proyecto de Visual C#.
 
  "Ambigüedad entre 'Microsoft.Office.Interop.Excel._Application.NewWorkbook' y 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook'"
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Aunque haya importado el espacio de nombres de Word o Excel y tener acceso a todas las clases dentro de él, debe calificar totalmente todos los tipos con Word o Excel para eliminar la ambigüedad del espacio de nombres.
 
-##  <a name="building"></a> Compilar proyectos
+## <a name="building"></a> Compilar proyectos
  Pueden producirse los siguientes errores al compilar proyectos de Office.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>No se puede compilar un proyecto de nivel de documento que se basa en un documento con permisos restringidos
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Se producen errores del compilador después de elimina un control NamedRange
  Si elimina un control <xref:Microsoft.Office.Tools.Excel.NamedRange> de una hoja de cálculo que no es la hoja de cálculo activa en el diseñador, el código generado automáticamente podría no quitarse del proyecto y podrían producirse errores del compilador. Para asegurarse de que se quita el código, siempre debe seleccionar la hoja de cálculo que contiene el control <xref:Microsoft.Office.Tools.Excel.NamedRange> para convertirla en la hoja de cálculo activa antes de eliminar el control. Si el código generado automáticamente no se elimina cuando se elimina el control, puede hacer que el diseñador elimine el código activando la hoja de cálculo y realizando un cambio de modo que la hoja quede marcada como modificada. Cuando vuelva a compilar el proyecto, el código se quita.
 
-##  <a name="debugging"></a> Depurar proyectos
+## <a name="debugging"></a> Depurar proyectos
  Pueden producirse los siguientes errores al depurar proyectos de Office.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Aparece un mensaje para desinstalar al publicar e instalar una solución en el equipo de desarrollo

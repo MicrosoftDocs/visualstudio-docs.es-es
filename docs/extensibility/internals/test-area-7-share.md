@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca75f06a72cf3da9dcbbd97ad6559772928152d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107793"
 ---
 # <a name="test-area-7-share"></a>Área de prueba 7: Compartir
 Esta área de prueba trata para compartir elementos entre las ubicaciones a través de la **Share** comando.
@@ -25,13 +25,13 @@ Esta área de prueba trata para compartir elementos entre las ubicaciones a trav
 
  Uso compartido de carpetas funciona si selecciona una carpeta con al menos un archivo bajo control de código fuente en ella. El comando compartir está deshabilitado en las siguientes condiciones:
 
--   Si la carpeta seleccionada es una carpeta vacía.
+- Si la carpeta seleccionada es una carpeta vacía.
 
--   Si hay una carpeta real, pero no contiene ningún archivo de control de código fuente.
+- Si hay una carpeta real, pero no contiene ningún archivo de control de código fuente.
 
--   Si hay una carpeta virtual, si los archivos bajo control de código fuente están en él o no.
+- Si hay una carpeta virtual, si los archivos bajo control de código fuente están en él o no.
 
--   Si hay un proyecto Web de sitio remoto.
+- Si hay un proyecto Web de sitio remoto.
 
 ## <a name="command-menu-access"></a>Acceso al menú de comandos
  La siguiente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rutas de menú del entorno de desarrollo integrado que se usan en los casos de prueba.
@@ -40,11 +40,11 @@ Esta área de prueba trata para compartir elementos entre las ubicaciones a trav
 
 ## <a name="expected-behavior"></a>Comportamiento esperado
 
--   Archivo compartido aparece en la ubicación compartida.
+- Archivo compartido aparece en la ubicación compartida.
 
--   Ver el código fuente control versión almacén historial muestra que se comparten los archivos.
+- Ver el código fuente control versión almacén historial muestra que se comparten los archivos.
 
--   Editar un archivo compartido edita las ubicaciones del archivo.
+- Editar un archivo compartido edita las ubicaciones del archivo.
 
 ## <a name="test-cases"></a>Casos de prueba
  Los siguientes son casos de prueba concretos para el área de prueba de recurso compartido.

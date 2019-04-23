@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8d5191d78d8eb543edb12146398687216027eece
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c6ea3c9a5ecb0fa10c6b020f3af8a51a65952c9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082079"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Usar Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,56 +30,56 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
  Antes de empezar, compruebe que tiene el código fuente y los símbolos correspondientes para el código compilado e implementado. Esto le ayudará a ir directamente al código de la aplicación al iniciar la depuración y examinar los eventos de diagnóstico en el registro de IntelliTrace. [Configure las compilaciones](../debugger/diagnose-problems-after-deployment.md) para que Visual Studio puede encontrar y abrir automáticamente el código fuente correspondiente para el código implementado.  
   
-1.  [Paso 1: Configuración de Microsoft Monitoring Agent](#SetUpMonitoring)  
+1. [Paso 1: Configuración de Microsoft Monitoring Agent](#SetUpMonitoring)  
   
-2.  [Paso 2: Inicio de la supervisión de la aplicación](#MonitorEvents)  
+2. [Paso 2: Inicio de la supervisión de la aplicación](#MonitorEvents)  
   
-3.  [Paso 3: Guardar eventos grabados](#SaveEvents)  
+3. [Paso 3: Guardar eventos grabados](#SaveEvents)  
   
-##  <a name="SetUpMonitoring"></a> Paso 1: Configuración de Microsoft Monitoring Agent  
+## <a name="SetUpMonitoring"></a> Paso 1: Configuración de Microsoft Monitoring Agent  
  Configure el agente independiente en el servidor web para realizar la supervisión local sin modificar la aplicación. Si usa System Center 2012, vea [Instalar Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465156.aspx).  
   
-###  <a name="SetUpStandaloneMMA"></a> Configurar el agente independiente  
+### <a name="SetUpStandaloneMMA"></a> Configurar el agente independiente  
   
-1.  Asegúrese de que:  
+1. Asegúrese de que:  
   
-    -   El servidor web ejecuta [versiones compatibles de Internet Information Services (IIS)](http://technet.microsoft.com/library/dn465154.aspx).  
+    - El servidor web ejecuta [versiones compatibles de Internet Information Services (IIS)](http://technet.microsoft.com/library/dn465154.aspx).  
   
-    -   El servidor web tiene .NET Framework 3.5, 4 o 4.5.  
+    - El servidor web tiene .NET Framework 3.5, 4 o 4.5.  
   
-    -   El servidor web está ejecutando Windows PowerShell 3.0 o posterior. [P: ¿Qué ocurre si uso Windows PowerShell 2.0?](#PowerShell2)  
+    - El servidor web está ejecutando Windows PowerShell 3.0 o posterior. [P: ¿Qué ocurre si uso Windows PowerShell 2.0?](#PowerShell2)  
   
-    -   Tiene permisos administrativos en el servidor web para ejecutar comandos de PowerShell y para reciclar el grupo de aplicaciones al iniciar la supervisión.  
+    - Tiene permisos administrativos en el servidor web para ejecutar comandos de PowerShell y para reciclar el grupo de aplicaciones al iniciar la supervisión.  
   
-    -   Ha desinstalado cualquier versión anterior de Microsoft Monitoring Agent.  
+    - Ha desinstalado cualquier versión anterior de Microsoft Monitoring Agent.  
   
-2.  [Descargue la aplicación gratuita Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384), bien la versión de 32 bits **MMASetup-i386.exe** o la de 64 bits **MMASetup-AMD64.exe**, del Centro de descarga de Microsoft al servidor web.  
+2. [Descargue la aplicación gratuita Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384), bien la versión de 32 bits **MMASetup-i386.exe** o la de 64 bits **MMASetup-AMD64.exe**, del Centro de descarga de Microsoft al servidor web.  
   
-3.  Ejecute el ejecutable descargado para iniciar el asistente para la instalación.  
+3. Ejecute el ejecutable descargado para iniciar el asistente para la instalación.  
   
-4.  Cree un directorio seguro en el servidor web para almacenar los registros de IntelliTrace, por ejemplo, **C:\IntelliTraceLogs**.  
+4. Cree un directorio seguro en el servidor web para almacenar los registros de IntelliTrace, por ejemplo, **C:\IntelliTraceLogs**.  
   
      Asegúrese de crear este directorio antes de iniciar la supervisión. Para evitar ralentizar la aplicación, elija una ubicación en un disco de alta velocidad local que no sea muy activo.  
   
     > [!IMPORTANT]
     >  Los registros de IntelliTrace podrían contener datos personales y confidenciales. Restrinja el acceso a este directorio a las identidades que deben usar los archivos. Compruebe las directivas de privacidad de su compañía.  
   
-5.  Para ejecutar una supervisión detallada en el nivel de función o supervisar las aplicaciones de SharePoint, asigne al grupo de aplicaciones que hospeda la aplicación web o la aplicación de SharePoint permisos de lectura y escritura al directorio del registro de IntelliTrace. [P: ¿Cómo configuro permisos para el grupo de aplicaciones?](#FullPermissionsITLog)  
+5. Para ejecutar una supervisión detallada en el nivel de función o supervisar las aplicaciones de SharePoint, asigne al grupo de aplicaciones que hospeda la aplicación web o la aplicación de SharePoint permisos de lectura y escritura al directorio del registro de IntelliTrace. [P: ¿Cómo configuro permisos para el grupo de aplicaciones?](#FullPermissionsITLog)  
   
 ### <a name="q--a"></a>Preguntas y respuestas  
   
-####  <a name="PowerShell2"></a> P: ¿Qué ocurre si uso Windows PowerShell 2.0?  
+#### <a name="PowerShell2"></a> P: ¿Qué ocurre si uso Windows PowerShell 2.0?  
  **R:** Recomendamos encarecidamente el uso de PowerShell 3.0. De lo contrario, tendrá que importar los cmdlets de PowerShell de Microsoft Monitoring Agent cada vez que ejecute PowerShell. Tampoco tendrá acceso al contenido de la Ayuda descargable.  
   
-1.  Abra una ventana de símbolo del sistema de **Windows PowerShell** o **Windows PowerShell ISE** como administrador.  
+1. Abra una ventana de símbolo del sistema de **Windows PowerShell** o **Windows PowerShell ISE** como administrador.  
   
-2.  Importe el módulo de PowerShell de Microsoft Monitoring Agent desde la ubicación de instalación predeterminada:  
+2. Importe el módulo de PowerShell de Microsoft Monitoring Agent desde la ubicación de instalación predeterminada:  
   
      **PS C: > Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**  
   
-3.  [Para obtener el contenido de Ayuda más reciente, visite TechNet](http://technet.microsoft.com/systemcenter/default) .  
+3. [Para obtener el contenido de Ayuda más reciente, visite TechNet](http://technet.microsoft.com/systemcenter/default) .  
   
-####  <a name="FullPermissionsITLog"></a> P: ¿Cómo configuro permisos para el grupo de aplicaciones?  
+#### <a name="FullPermissionsITLog"></a> P: ¿Cómo configuro permisos para el grupo de aplicaciones?  
  **R:** Use el comando **icacls** de Windows o el Explorador de Windows (o Explorador de archivos). Por ejemplo:  
   
 - Para configurar permisos con el comando **icacls** de Windows:  
@@ -96,28 +96,28 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
 - Para configurar permisos con el Explorador de Windows (o el Explorador de archivos):  
   
-  1.  Abra **Propiedades** para el directorio del registro de IntelliTrace.  
+  1. Abra **Propiedades** para el directorio del registro de IntelliTrace.  
   
-  2.  En la pestaña **Seguridad** , elija **Editar** **Agregar**.  
+  2. En la pestaña **Seguridad** , elija **Editar** **Agregar**.  
   
-  3.  Asegúrese de que **Entidades de seguridad integradas** aparezca en el cuadro **Seleccionar este tipo de objeto** . Si no está allí, elija **Tipos de objeto** para agregarlo.  
+  3. Asegúrese de que **Entidades de seguridad integradas** aparezca en el cuadro **Seleccionar este tipo de objeto** . Si no está allí, elija **Tipos de objeto** para agregarlo.  
   
-  4.  Asegúrese de que el equipo local aparece en el cuadro **Desde esta ubicación** . Si no está allí, elija **Ubicaciones** para cambiarlo.  
+  4. Asegúrese de que el equipo local aparece en el cuadro **Desde esta ubicación** . Si no está allí, elija **Ubicaciones** para cambiarlo.  
   
-  5.  En el cuadro **Escriba los nombres de objeto que desea seleccionar** , agregue el grupo de aplicaciones para la aplicación web o la aplicación de SharePoint.  
+  5. En el cuadro **Escriba los nombres de objeto que desea seleccionar** , agregue el grupo de aplicaciones para la aplicación web o la aplicación de SharePoint.  
   
-  6.  Elija **Comprobar nombres** para resolver el nombre. Elija **Aceptar**.  
+  6. Elija **Comprobar nombres** para resolver el nombre. Elija **Aceptar**.  
   
-  7.  Asegúrese de que el grupo de aplicaciones tenga permisos de **lectura y ejecución**.  
+  7. Asegúrese de que el grupo de aplicaciones tenga permisos de **lectura y ejecución**.  
   
-##  <a name="MonitorEvents"></a> Paso 2: Inicio de la supervisión de la aplicación  
+## <a name="MonitorEvents"></a> Paso 2: Inicio de la supervisión de la aplicación  
  Use el comando [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) de Windows PowerShell para iniciar la supervisión de la aplicación. Si usa System Center 2012, vea la página [Supervisión con el Agente de Microsoft Monitoring](http://technet.microsoft.com/library/dn465157.aspx).  
   
-1.  En el servidor web, abra una ventana de símbolo del sistema de **Windows PowerShell** o **Windows PowerShell ISE** como administrador.  
+1. En el servidor web, abra una ventana de símbolo del sistema de **Windows PowerShell** o **Windows PowerShell ISE** como administrador.  
   
      ![Abra Windows PowerShell como administrador](../debugger/media/ffr-powershellrunadmin.png "FFR_PowerShellRunAdmin")  
   
-2.  Ejecute el comando [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) para empezar a supervisar la aplicación. Esto reiniciará todas las aplicaciones web del servidor web.  
+2. Ejecute el comando [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) para empezar a supervisar la aplicación. Esto reiniciará todas las aplicaciones web del servidor web.  
   
      Esta es la sintaxis abreviada:  
   
@@ -145,11 +145,11 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
      Para obtener más información sobre la sintaxis completa y otros ejemplos, ejecute el comando **get-help Start-WebApplicationMonitoring –detailed** o **get-help Start-WebApplicationMonitoring –examples** .  
   
-3.  Para comprobar el estado de todas las aplicaciones web supervisadas, ejecute el comando [Get-WebApplicationMonitoringStatus](http://go.microsoft.com/fwlink/?LinkID=313685) .  
+3. Para comprobar el estado de todas las aplicaciones web supervisadas, ejecute el comando [Get-WebApplicationMonitoringStatus](http://go.microsoft.com/fwlink/?LinkID=313685) .  
   
 ### <a name="q--a"></a>Preguntas y respuestas  
   
-####  <a name="Minimizing"></a> P: ¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?  
+#### <a name="Minimizing"></a> P: ¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?  
  **R:** Microsoft Monitoring Agent puede recopilar grandes cantidades de datos y el efecto que tendrá en el rendimiento de la aplicación dependerá de los datos que decida recopilar y de cómo se recopilen. A continuación, se muestran algunas maneras de obtener la mayoría de los datos sin ralentizar la aplicación:  
   
 - En las aplicaciones web y de SharePoint, el agente registra los datos para cada aplicación web que comparte el grupo de aplicaciones especificado. Esto puede ralentizar cualquier aplicación que comparte el mismo grupo de aplicaciones, aunque puede restringir la recopilación únicamente a los módulos para una sola aplicación. Para evitar ralentizar otras aplicaciones, hospede cada aplicación en su propio grupo de aplicaciones.  
@@ -164,9 +164,9 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
    Por ejemplo:  
   
-  -   Deshabilite los eventos de Windows Workflow en las aplicaciones que no usan Windows Workflow.  
+  - Deshabilite los eventos de Windows Workflow en las aplicaciones que no usan Windows Workflow.  
   
-  -   Deshabilite los eventos de registro en aplicaciones que tienen acceso al registro pero no interfieren con la configuración de este.  
+  - Deshabilite los eventos de registro en aplicaciones que tienen acceso al registro pero no interfieren con la configuración de este.  
   
 - Revise los módulos para los que el agente recopila datos en el plan de recolección. Edite el plan de colección para incluir solo los módulos que le interesen.  
   
@@ -230,7 +230,7 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
   El agente registra los valores de `id`, `Employee.Id`, `Employee.Name` y el objeto `Employee` devuelto del método `AlterEmployee` . Sin embargo, el agente únicamente registra información sobre si es null o no el objeto `Address` . El agente tampoco registra datos sobre variables locales del método `AlterEmployee` a menos que otros métodos utilicen esas variables locales como parámetros en el punto en el que se registran como parámetros de método.  
   
-##  <a name="SaveEvents"></a> Paso 3: Guardar eventos grabados  
+## <a name="SaveEvents"></a> Paso 3: Guardar eventos grabados  
  Si encuentra un error o un problema de rendimiento, guarde los eventos registrados en un registro de IntelliTrace. El agente crea el registro solo si se registró algún evento. Si usa System Center 2012, vea la página [Supervisión con el Agente de Microsoft Monitoring](http://technet.microsoft.com/library/dn465157.aspx).  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Guardar los eventos registrados pero seguir supervisando  

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: incluir un archivo de datos en una aplicación ClickOnce | Microsoft Docs'
+title: Procedimiento Incluir un archivo de datos en una aplicación ClickOnce | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 470ee530a61ecba5c1acd40be88c469fee6d4f5e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596274"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093883"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Cómo: Incluir un archivo de datos en una aplicación ClickOnce
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedimiento Inclusión de un archivo de datos en una aplicación ClickOnce
 Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación que se instala se asigna a un directorio de datos en el disco local del equipo de destino donde la aplicación puede administrar sus propios datos. Los archivos de datos pueden incluir cualquier tipo de archivo: archivos de texto, archivos XML o incluso bases de datos de Microsoft Access (*.mdb*) los archivos. Los procedimientos siguientes muestran cómo agregar un archivo de datos de cualquier tipo en su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Para incluir un archivo de datos mediante Mage.exe
@@ -60,25 +60,25 @@ Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaci�
 
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Para incluir un archivo de datos mediante MageUI.exe
 
-1.  Agregue el archivo de datos en el directorio de aplicación con el resto de los archivos de la aplicación.
+1. Agregue el archivo de datos en el directorio de aplicación con el resto de los archivos de la aplicación.
 
-2.  Normalmente, será el directorio de la aplicación a un directorio etiquetado con la versión actual de la implementación, por ejemplo, v1.0.0.0.
+2. Normalmente, será el directorio de la aplicación a un directorio etiquetado con la versión actual de la implementación, por ejemplo, v1.0.0.0.
 
-3.  En el **archivo** menú, haga clic en **abrir** para abrir el manifiesto de aplicación.
+3. En el **archivo** menú, haga clic en **abrir** para abrir el manifiesto de aplicación.
 
-4.  Seleccione el **archivos** ficha.
+4. Seleccione el **archivos** ficha.
 
-5.  En el cuadro de texto en la parte superior de la ficha, escriba el directorio que contiene los archivos de la aplicación y, a continuación, haga clic en **rellenar**.
+5. En el cuadro de texto en la parte superior de la ficha, escriba el directorio que contiene los archivos de la aplicación y, a continuación, haga clic en **rellenar**.
 
      El archivo de datos aparecerá en la cuadrícula.
 
-6.  Establecer el **tipo de archivo** valor del archivo de datos a **datos**.
+6. Establecer el **tipo de archivo** valor del archivo de datos a **datos**.
 
-7.  Guarde el manifiesto de aplicación y, a continuación, volver a firmar el archivo.
+7. Guarde el manifiesto de aplicación y, a continuación, volver a firmar el archivo.
 
      *MageUI.exe* le solicitará que vuelva a firmar el archivo.
 
-8.  Volver a firmar el manifiesto de implementación
+8. Volver a firmar el manifiesto de implementación
 
      Deberá volver a firmar el manifiesto de implementación porque ha cambiado su hash del manifiesto de aplicación.
 

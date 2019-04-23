@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110549"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,11 +115,11 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 ## <a name="undoredo"></a>Deshacer/rehacer  
  La función de deshacer/rehacer está habilitada en la vista Gráfico para las siguientes acciones:  
   
--   Agregar un nodo único arrastrándolo y colocándolo.  
+- Agregar un nodo único arrastrándolo y colocándolo.  
   
--   Agregar varios nodos de la ventana de resultados de la búsqueda de las consultas del Explorador de esquemas o de la vista Inicio.  
+- Agregar varios nodos de la ventana de resultados de la búsqueda de las consultas del Explorador de esquemas o de la vista Inicio.  
   
--   Eliminar uno o varios nodos.  
+- Eliminar uno o varios nodos.  
   
 ## <a name="zoom"></a>Zoom  
  El zoom está disponible en la esquina inferior derecha de la vista Gráfico.  

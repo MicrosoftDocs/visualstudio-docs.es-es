@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114800"
 ---
 # <a name="threads-view-parallel-performance"></a>Vista de subprocesos (rendimiento paralelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ Vista de subprocesos es la vista más detallada y con más características del 
 ## <a name="usage"></a>Uso  
  Estas son algunas de las maneras en las que puede usar la vista de subprocesos:  
   
--   Identificar las razones por las que la interfaz de usuario (UI) de una aplicación no responde durante ciertas fases de ejecución.  
+- Identificar las razones por las que la interfaz de usuario (UI) de una aplicación no responde durante ciertas fases de ejecución.  
   
--   Identificar la cantidad de tiempo dedicado al bloqueo de sincronización, E/S, errores de página y otros eventos.  
+- Identificar la cantidad de tiempo dedicado al bloqueo de sincronización, E/S, errores de página y otros eventos.  
   
--   Identificar el grado de interferencias de otros procesos que se ejecutan en el sistema.  
+- Identificar el grado de interferencias de otros procesos que se ejecutan en el sistema.  
   
--   Identificar problemas de equilibrio de carga para la ejecución en paralelo.  
+- Identificar problemas de equilibrio de carga para la ejecución en paralelo.  
   
--   Identificar los motivos por los que la escalabilidad es poco óptima o no existe (por ejemplo, por qué no mejora el rendimiento de una aplicación paralela cuando están disponibles más núcleos lógicos).  
+- Identificar los motivos por los que la escalabilidad es poco óptima o no existe (por ejemplo, por qué no mejora el rendimiento de una aplicación paralela cuando están disponibles más núcleos lógicos).  
   
--   Entender el grado de simultaneidad en la aplicación, para ayudar en la ejecución en paralelo.  
+- Entender el grado de simultaneidad en la aplicación, para ayudar en la ejecución en paralelo.  
   
--   Comprender las dependencias entre los subprocesos de trabajo y las rutas críticas de ejecución.  
+- Comprender las dependencias entre los subprocesos de trabajo y las rutas críticas de ejecución.  
   
 ## <a name="examining-specific-time-intervals-and-threads"></a>Examinando los subprocesos y los intervalos de tiempo específicos  
  La vista de subprocesos muestra una escala de tiempo. Puede hacer zoom y desplazarse dentro de la escala de tiempo para examinar intervalos específicos y subprocesos de la aplicación. En el eje x está el tiempo y en el eje y están varios canales:  

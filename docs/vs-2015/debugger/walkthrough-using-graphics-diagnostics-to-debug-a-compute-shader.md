@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59002117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080351"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Tutorial: Uso de Diagnóstico de gráficos para depurar un sombreador de cálculo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
   
  En el tutorial se muestran las tareas siguientes:  
   
--   Uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.  
+- Uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.  
   
--   Uso de la **Pila de llamadas de eventos gráficos** para determinar qué sombreador de cálculo se ejecuta mediante un evento `Dispatch` de DirectCompute.  
+- Uso de la **Pila de llamadas de eventos gráficos** para determinar qué sombreador de cálculo se ejecuta mediante un evento `Dispatch` de DirectCompute.  
   
--   Uso de la ventana **Etapas de canalización de gráficos** y del depurador HSLS para examinar el sombreador de cálculo en el que se origina el problema.  
+- Uso de la ventana **Etapas de canalización de gráficos** y del depurador HSLS para examinar el sombreador de cálculo en el que se origina el problema.  
   
 ## <a name="scenario"></a>Escenario  
  En este escenario se ha escrito una simulación de dinámica de fluidos en la que se usa DirectCompute para realizar el trabajo de cálculo más intensivo en la actualización de la simulación. Cuando se ejecuta la aplicación, la representación del conjunto de datos y de la interfaz de usuario parece correcta, pero la simulación no se comporta de la manera esperada. Con el diagnóstico de gráficos puede capturar el problema en un registro de gráficos de modo que pueda depurar la aplicación. El problema tiene este aspecto en la aplicación:  

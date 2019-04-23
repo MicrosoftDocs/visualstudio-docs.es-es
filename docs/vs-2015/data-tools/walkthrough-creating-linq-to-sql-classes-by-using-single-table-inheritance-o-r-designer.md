@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61509b7427a9c1a95fe15bba93d231f0dc37d136
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665002"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111979"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Tutorial: Crear clases LINQ to SQL con herencia de tabla única (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,31 +23,31 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
   
  Durante este tutorial realizará las tareas siguientes:  
   
--   Crear una tabla de base de datos y agregar datos a la tabla.  
+- Crear una tabla de base de datos y agregar datos a la tabla.  
   
--   Crear una aplicación de Windows Forms.  
+- Crear una aplicación de Windows Forms.  
   
--   Agregar un archivo de [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] a un proyecto.  
+- Agregar un archivo de [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] a un proyecto.  
   
--   Crear nuevas clases de entidad.  
+- Crear nuevas clases de entidad.  
   
--   Configurar las clases de entidad de modo que usen la herencia.  
+- Configurar las clases de entidad de modo que usen la herencia.  
   
--   Consultar la clase heredada.  
+- Consultar la clase heredada.  
   
--   Mostrar los datos en un Windows Form  
+- Mostrar los datos en un Windows Form  
   
 ## <a name="create-a-table-to-inherit-from"></a>Crear una tabla de la que se va a heredar  
  Para ver cómo funciona la herencia, va a crear una pequeña tabla Person, que usará como clase base y, a continuación, va a crear un objeto Employee, que heredará de ella.  
   
 #### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Para crear una tabla base con el fin de mostrar la herencia  
   
-1.  En **Explorador de servidores**/**Database Explorer**, haga clic en el **tablas** nodo y haga clic en **agregar nueva tabla**.  
+1. En **Explorador de servidores**/**Database Explorer**, haga clic en el **tablas** nodo y haga clic en **agregar nueva tabla**.  
   
     > [!NOTE]
     >  Puede usar la base de datos Northwind o cualquier otra base de datos a la que pueda agregar una tabla.  
   
-2.  En el Diseñador de tablas, agregue las siguientes columnas a la tabla:  
+2. En el Diseñador de tablas, agregue las siguientes columnas a la tabla:  
   
     |Nombre de columna|Tipo de datos|Permitir valores nulos|  
     |-----------------|---------------|-----------------|  
@@ -57,18 +57,18 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
     |**LastName**|**nvarchar(200)**|**False**|  
     |**Manager**|**int**|**True**|  
   
-3.  Establezca la columna Id. como clave principal.  
+3. Establezca la columna Id. como clave principal.  
   
-4.  Guarde la tabla y asígnele el nombre **Person**.  
+4. Guarde la tabla y asígnele el nombre **Person**.  
   
 ## <a name="add-data-to-the-table"></a>Agregar datos a la tabla  
  Para poder comprobar que la herencia está correctamente configurada, la tabla necesita algunos datos por cada clase en la herencia de tabla única.  
   
 #### <a name="to-add-data-to-the-table"></a>Para agregar datos a la tabla  
   
-1.  Abra la tabla en la vista de datos. (Haga clic en el **persona** tabla **Explorador de servidores**/**Database Explorer** y haga clic en **mostrar datos de tabla**.)  
+1. Abra la tabla en la vista de datos. (Haga clic en el **persona** tabla **Explorador de servidores**/**Database Explorer** y haga clic en **mostrar datos de tabla**.)  
   
-2.  Copie los datos siguientes en la tabla. (Puede copiarlo y pegarlo en la tabla seleccionando toda la fila en el panel de resultados.)  
+2. Copie los datos siguientes en la tabla. (Puede copiarlo y pegarlo en la tabla seleccionando toda la fila en el panel de resultados.)  
   
     ||||||  
     |-|-|-|-|-|  
@@ -91,24 +91,24 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
   
 #### <a name="to-create-the-new-windows-application"></a>Para crear una nueva aplicación para Windows  
   
-1.  Desde el **archivo** menú, cree un nuevo proyecto.  
+1. Desde el **archivo** menú, cree un nuevo proyecto.  
   
-2.  Denomine el proyecto **InheritanceWalkthrough**.  
+2. Denomine el proyecto **InheritanceWalkthrough**.  
   
     > [!NOTE]
     >  El [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] se admite en proyectos de Visual Basic y de C#. Cree el nuevo proyecto en uno de estos lenguajes.  
   
-3.  Haga clic en el **aplicación de Windows Forms** plantilla y, a continuación, haga clic en **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Haga clic en el **aplicación de Windows Forms** plantilla y, a continuación, haga clic en **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
-4.  Se crea el proyecto InheritanceWalkthrough y se agrega a **el Explorador de soluciones**.  
+4. Se crea el proyecto InheritanceWalkthrough y se agrega a **el Explorador de soluciones**.  
   
 ## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>Agregar un archivo de clases de LINQ to SQL al proyecto  
   
 #### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>Para agregar un archivo de LINQ to SQL al proyecto  
   
-1.  En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.  
+1. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.  
   
-2.  Haga clic en la plantilla **Clases de LINQ to SQL** y, a continuación, haga clic en **Agregar**.  
+2. Haga clic en la plantilla **Clases de LINQ to SQL** y, a continuación, haga clic en **Agregar**.  
   
      El archivo .dbml se agrega al proyecto y se abre el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
@@ -117,21 +117,21 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
   
 #### <a name="to-create-the-inheritance"></a>Para crear la herencia  
   
-1.  En **Explorador de servidores**/**Database Explorer**, navegue hasta la **persona** tabla que creó anteriormente.  
+1. En **Explorador de servidores**/**Database Explorer**, navegue hasta la **persona** tabla que creó anteriormente.  
   
-2.  Arrastre el **persona** tabla hasta la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] superficie de diseño.  
+2. Arrastre el **persona** tabla hasta la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] superficie de diseño.  
   
-3.  Arrastre una segunda **persona** de tabla en la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] y cambie su nombre a **empleado**.  
+3. Arrastre una segunda **persona** de tabla en la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] y cambie su nombre a **empleado**.  
   
-4.  Elimine la propiedad **Administrador** del objeto **Person**.  
+4. Elimine la propiedad **Administrador** del objeto **Person**.  
   
-5.  Elimine las propiedades **Tipo**, **Id.**, **Nombre** y **Apellido** del objeto **Employee**. Es decir, elimine todas las propiedades menos **Administrador**.  
+5. Elimine las propiedades **Tipo**, **Id.**, **Nombre** y **Apellido** del objeto **Employee**. Es decir, elimine todas las propiedades menos **Administrador**.  
   
-6.  Desde la pestaña **Object Relational Designer** del **Cuadro de herramientas**, cree una **Herencia** entre los objetos **Person** y **Employee**. Para ello, haga clic en el elemento **Herencia** del **Cuadro de herramientas** y suelte el botón del mouse. A continuación, haga clic en el **empleado** objeto y, a continuación, el **persona** objeto en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. La flecha situada en la línea de herencia apuntará a la **persona** objeto.  
+6. Desde la pestaña **Object Relational Designer** del **Cuadro de herramientas**, cree una **Herencia** entre los objetos **Person** y **Employee**. Para ello, haga clic en el elemento **Herencia** del **Cuadro de herramientas** y suelte el botón del mouse. A continuación, haga clic en el **empleado** objeto y, a continuación, el **persona** objeto en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. La flecha situada en la línea de herencia apuntará a la **persona** objeto.  
   
-7.  Haga clic en la línea **Herencia** en la superficie de diseño.  
+7. Haga clic en la línea **Herencia** en la superficie de diseño.  
   
-8.  Establezca la propiedad **Discriminator** en **Tipo**.  
+8. Establezca la propiedad **Discriminator** en **Tipo**.  
   
 9. Establezca la propiedad **Valor de discriminador de clase derivada** en **2**.  
   
@@ -146,11 +146,11 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
   
 #### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>Para crear una consulta LINQ y mostrar los resultados en el formulario  
   
-1.  Arrastre un **ListBox** hasta Form1.  
+1. Arrastre un **ListBox** hasta Form1.  
   
-2.  Haga doble clic en el formulario para crear un controlador de eventos `Form1_Load`.  
+2. Haga doble clic en el formulario para crear un controlador de eventos `Form1_Load`.  
   
-3.  Agregue el código siguiente al controlador de eventos `Form1_Load` :  
+3. Agregue el código siguiente al controlador de eventos `Form1_Load` :  
   
     ```vb  
     Dim dc As New DataClasses1DataContext  
@@ -180,11 +180,11 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
   
 #### <a name="to-test-the-application"></a>Para probar la aplicación  
   
-1.  Presione F5.  
+1. Presione F5.  
   
-2.  Compruebe que se muestran únicamente los registros con el valor 2 en la columna Tipo.  
+2. Compruebe que se muestran únicamente los registros con el valor 2 en la columna Tipo.  
   
-3.  Cierre el formulario. En el menú **Depurar**, haga clic en **Detener depuración**.  
+3. Cierre el formulario. En el menú **Depurar**, haga clic en **Detener depuración**.  
   
 ## <a name="see-also"></a>Vea también  
  [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

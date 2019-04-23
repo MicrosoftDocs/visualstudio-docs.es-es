@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097419"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
   
 #### <a name="to-change-the-content-installation-source"></a>Para cambiar el origen de instalación del contenido  
   
-1.  En la pestaña **Administrar contenido**, pulse el botón de opción **Disco**.  
+1. En la pestaña **Administrar contenido**, pulse el botón de opción **Disco**.  
   
     > [!NOTE]
     >  La opción **Disco** no estará disponible si el administrador impide modificar el origen de instalación del contenido. Para obtener más información, vea la [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md).  
   
-2.  Realice uno de estos pasos:  
+2. Realice uno de estos pasos:  
   
-    -   Escriba la ruta de un archivo MSHA o la URL de un punto de conexión de servicio.  
+    - Escriba la ruta de un archivo MSHA o la URL de un punto de conexión de servicio.  
   
-    -   Haga clic en el botón Examinar (**...**) para desplazarse hasta un archivo .msha.  
+    - Haga clic en el botón Examinar (**...**) para desplazarse hasta un archivo .msha.  
   
-    -   En la lista, seleccione la entrada que se usó más recientemente.  
+    - En la lista, seleccione la entrada que se usó más recientemente.  
   
 ## <a name="download-and-install-content-locally"></a>Descargar e instalar contenido localmente  
  Puede ver temas sin conexión a Internet si descarga e instala el contenido en el equipo local.  
@@ -66,13 +66,13 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
   
 #### <a name="to-download-and-install-content"></a>Para descargar e instalar contenido  
   
-1.  Pulse la pestaña **Administrar contenido**.  
+1. Pulse la pestaña **Administrar contenido**.  
   
-2.  En la lista de contenido, pulse el vínculo **Agregar** junto al libro o libros que quiere descargar e instalar.  
+2. En la lista de contenido, pulse el vínculo **Agregar** junto al libro o libros que quiere descargar e instalar.  
   
      El libro se agrega a la lista **Cambios pendientes** y el tamaño estimado del libro o libros que ha especificado aparece debajo de esa lista. Dado que algunos libros comparten temas, el tamaño total de la descarga de varios libros podría ser menor que el resultado de la suma de los tamaños de todos los libros que especificó.  
   
-3.  Pulse el botón **Actualizar**.  
+3. Pulse el botón **Actualizar**.  
   
      El libro o libros que especificó se instalan junto con todas las actualizaciones de los libros que ya existen en el equipo. Los tiempos de instalación varían, pero puede ver el progreso en la barra de estado.  
   
@@ -86,13 +86,13 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
   
 #### <a name="to-remove-content"></a>Para quitar contenido  
   
-1.  Pulse la pestaña **Administrar contenido**.  
+1. Pulse la pestaña **Administrar contenido**.  
   
-2.  En la lista de contenido, pulse el vínculo **Quitar** junto al libro o libros que quiere quitar.  
+2. En la lista de contenido, pulse el vínculo **Quitar** junto al libro o libros que quiere quitar.  
   
      El libro se agrega a la lista de **Cambios pendientes**.  
   
-3.  Pulse el botón **Actualizar**.  
+3. Pulse el botón **Actualizar**.  
   
      El libro o libros que especificó se quitan de su equipo.  
   
@@ -116,13 +116,13 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
   
 #### <a name="to-move-local-content"></a>Para mover contenido local  
   
-1.  En la pestaña **Administrar contenido**, pulse el botón **Mover** en **Ruta de acceso del almacén local**.  
+1. En la pestaña **Administrar contenido**, pulse el botón **Mover** en **Ruta de acceso del almacén local**.  
   
      Se abre el cuadro de diálogo **Mover contenido**.  
   
-2.  En el cuadro de texto **Para**, escriba una ubicación diferente para el contenido y, después, pulse el botón **Aceptar**.  
+2. En el cuadro de texto **Para**, escriba una ubicación diferente para el contenido y, después, pulse el botón **Aceptar**.  
   
-3.  Pulse el botón **Cerrar** cuando el contenido se termine de mover.  
+3. Pulse el botón **Cerrar** cuando el contenido se termine de mover.  
   
 ## <a name="see-also"></a>Vea también  
  [Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)

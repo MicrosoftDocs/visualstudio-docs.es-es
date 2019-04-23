@@ -9,14 +9,14 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 403dda0aa915e2a969b5bc9eef2be82ba58b2e33
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 318caec1f96bc0b69a6fe9540231608a8636e107
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804661"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099506"
 ---
-# <a name="step-2-create-a-random-addition-problem"></a>Paso 2: Crear un problema de suma aleatoria
+# <a name="step-2-create-a-random-addition-problem"></a>Paso 2: creación de un problema de suma aleatoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En la segunda parte del tutorial, agregará problemas de matemáticas basados en números aleatorios para crear una prueba desafiante. También puede crear un método denominado `StartTheQuiz()` que establezca los problemas e inicie el temporizador de cuenta atrás. Más adelante en este tutorial, agregará los problemas de resta, multiplicación y división.  
@@ -26,13 +26,13 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
   
 ### <a name="to-create-a-random-addition-problem"></a>Para crear un problema de suma aleatoria  
   
-1.  En el diseñador de formularios, elija el formulario (Form1).  
+1. En el diseñador de formularios, elija el formulario (Form1).  
   
-2.  En la barra de menús, elija **Ver**, **Código**.  
+2. En la barra de menús, elija **Ver**, **Código**.  
   
      Aparecerá Form1.cs o Form1.vb, según el lenguaje de programación que esté utilizando, de modo que podrá ver el código subyacente del formulario.  
   
-3.  Cree un objeto `Random` agregando una instrucción `new` cerca de la parte superior del código, tal y como se muestra a continuación.  
+3. Cree un objeto `Random` agregando una instrucción `new` cerca de la parte superior del código, tal y como se muestra a continuación.  
   
      [!code-csharp[VbExpressTutorial3Step2#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial3Step2#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#1)]  
@@ -43,7 +43,7 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
   
      Pronto compilaremos un método para comprobar las respuestas, de modo que la prueba debe utilizar variables para almacenar los números aleatorios que genera para cada problema. Vea [Variables en Visual Basic](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) o [Tipos (Guía de programación de C#)](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Para utilizar correctamente las variables, debe declararlas, lo que significa que debe enumerar sus nombres y tipos de datos.  
   
-4.  Agregue dos variables de entero al formulario y asígneles los nombres **addend1** y **addend2**.  
+4. Agregue dos variables de entero al formulario y asígneles los nombres **addend1** y **addend2**.  
   
     > [!NOTE]
     >  Una variable de entero se conoce como int en C# o integer en Visual Basic. Este tipo de variable almacena un número positivo o negativo comprendido entre -2147483648 y 2147483647, y solo puede almacenar números enteros, no decimales.  
@@ -53,7 +53,7 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
      [!code-csharp[VbExpressTutorial3Step2#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial3Step2#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#2)]  
   
-5.  Agregue un método denominado `StartTheQuiz()` que utilice el método `Random` del objeto `Next()` para mostrar números aleatorios en las etiquetas. `StartTheQuiz()` irá rellenando gradualmente todos los problemas e iniciará el temporizador, así que debe agregar un comentario. La función debería tener un aspecto parecido al siguiente.  
+5. Agregue un método denominado `StartTheQuiz()` que utilice el método `Random` del objeto `Next()` para mostrar números aleatorios en las etiquetas. `StartTheQuiz()` irá rellenando gradualmente todos los problemas e iniciará el temporizador, así que debe agregar un comentario. La función debería tener un aspecto parecido al siguiente.  
   
      [!code-csharp[VbExpressTutorial3Step2#3](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#3)]
      [!code-vb[VbExpressTutorial3Step2#3](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#3)]  
@@ -75,18 +75,18 @@ Método Next
   
      Las instrucciones establecen las propiedades **Text** de **plusLeftLabel** y **plusRightLabel** para que muestren los dos números aleatorios. Debe utilizar el método `ToString()` del entero para convertir los números en texto. (En programación, cadena significa texto). Los controles de etiqueta muestran únicamente texto, no números.  
   
-6.  En la ventana de diseño, haga doble clic en el botón **Iniciar**, o púlselo y presione la tecla Entrar.  
+6. En la ventana de diseño, haga doble clic en el botón **Iniciar**, o púlselo y presione la tecla Entrar.  
   
      Cuando un jugador elija este botón, la prueba deberá iniciarse. Por este motivo, acaba de agregar un controlador de eventos Click, para implementar este comportamiento.  
   
-7.  Agregue las dos instrucciones siguientes.  
+7. Agregue las dos instrucciones siguientes.  
   
      [!code-csharp[VbExpressTutorial3Step2#4](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#4)]
      [!code-vb[VbExpressTutorial3Step2#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#4)]  
   
      La primera instrucción llama al nuevo método `StartTheQuiz()`. La segunda instrucción establece la propiedad **Enabled** del control **startButton** en **False**, de modo que el usuario de la prueba no pueda pulsar el botón durante esta.  
   
-8.  Guarde el código, ejecútelo y, después, pulse el botón **Iniciar**.  
+8. Guarde el código, ejecútelo y, después, pulse el botón **Iniciar**.  
   
      Aparece un problema de suma aleatoria, tal y como se muestra en la ilustración siguiente.  
   
@@ -97,6 +97,6 @@ Problema de sumas aleatorias
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  
   
--   Para ir al siguiente paso del tutorial, vea [Paso 3: Agregar un temporizador de cuenta atrás](../ide/step-3-add-a-countdown-timer.md).  
+- Para ir al siguiente paso del tutorial, vea [Paso 3: Agregar un temporizador](../ide/step-3-add-a-countdown-timer.md).  
   
--   Para volver al paso anterior del tutorial, vea [Paso 1: Crear un proyecto y agregar etiquetas al formulario](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+- Para volver al paso anterior del tutorial, vea [Paso 1: Crear un proyecto y agregar etiquetas al formulario](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

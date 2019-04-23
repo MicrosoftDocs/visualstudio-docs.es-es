@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5177add88897a838b95b6ca2aff94e03bc9e3509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 85df0daced767311692213e0a0fb0b9c4cbd5836
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108040"
 ---
 # <a name="perftips"></a>Sugerencias de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,24 +35,24 @@ Los *PerfTips* del depurador de Visual Studio y las **Herramientas de diagnósti
   
  ![DiagnosticTools Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
--   La escala de tiempo **Eventos de interrupción** marca los puntos de interrupción que se alcanzaron en la sesión de depuración. Haga clic en un evento para seleccionarlo en la lista de detalles del **Depurador** .  
+- La escala de tiempo **Eventos de interrupción** marca los puntos de interrupción que se alcanzaron en la sesión de depuración. Haga clic en un evento para seleccionarlo en la lista de detalles del **Depurador** .  
   
--   El gráfico **Uso de CPU** muestra el cambio en el uso de CPU en todos los núcleos de procesador en la sesión de depuración.  
+- El gráfico **Uso de CPU** muestra el cambio en el uso de CPU en todos los núcleos de procesador en la sesión de depuración.  
   
--   La lista **Eventos** del panel de detalles **Depurador** incluye elementos para cada evento de interrupción.  
+- La lista **Eventos** del panel de detalles **Depurador** incluye elementos para cada evento de interrupción.  
   
--   La columna **Duración** de un evento de interrupción muestra el tiempo transcurrido entre el evento y el punto de interrupción anterior.  
+- La columna **Duración** de un evento de interrupción muestra el tiempo transcurrido entre el evento y el punto de interrupción anterior.  
   
 ## <a name="turn-perftips-on-or-off"></a>Activar o desactivar las sugerencias de rendimiento  
  Para habilitar o deshabilitar las sugerencias de rendimiento:  
   
-1.  En el menú **Depurar** , elija **Opciones**.  
+1. En el menú **Depurar** , elija **Opciones**.  
   
-2.  Active o desactive **Mostrar la sugerencia de rendimiento transcurrida durante la depuración**.  
+2. Active o desactive **Mostrar la sugerencia de rendimiento transcurrida durante la depuración**.  
   
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Activar o desactivar la ventana Herramientas de diagnóstico  
  Para habilitar o deshabilitar la ventana Herramientas de diagnóstico:  
   
-1.  En el menú **Depurar** , elija **Opciones**.  
+1. En el menú **Depurar** , elija **Opciones**.  
   
-2.  Active o desactive **Habilitar herramientas de diagnóstico durante la depuración**.
+2. Active o desactive **Habilitar herramientas de diagnóstico durante la depuración**.

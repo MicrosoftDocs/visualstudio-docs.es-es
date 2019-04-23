@@ -11,12 +11,12 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117687"
 ---
 # <a name="evaluating-locals"></a>Evaluación de variables locales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "58998936"
   
  Esta funcionalidad de recuperar el valor de una variable local se encapsula en una función auxiliar que realiza las tareas siguientes:  
   
-1.  Enlaza el `IDebugField` objeto a la memoria para obtener un `IDebugObject` objeto.  
+1. Enlaza el `IDebugField` objeto a la memoria para obtener un `IDebugObject` objeto.  
   
-2.  Obtiene el valor de la memoria. Este valor se representa como una serie de bytes.  
+2. Obtiene el valor de la memoria. Este valor se representa como una serie de bytes.  
   
-3.  Da formato en el valor según el tipo de la variable local.  
+3. Da formato en el valor según el tipo de la variable local.  
   
-4.  Devuelve un objeto genérico que contiene el valor de la variable local. En C#, esto es un `object`, y en C++, se trata de un `VARIANT`.  
+4. Devuelve un objeto genérico que contiene el valor de la variable local. En C#, esto es un `object`, y en C++, se trata de un `VARIANT`.  
   
 ## <a name="managed-code"></a>Código administrado  
  Se trata de una implementación de una función que recupera el valor de una variable local en el código administrado.  

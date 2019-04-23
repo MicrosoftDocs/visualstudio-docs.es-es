@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebbb10f0c317e79e22c8eb49b59e4e58a82b9d77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd93ddb6e1d574460593f992f880ccd53d800842
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097341"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapas de canalización de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etap
   
 ##### <a name="to-view-a-shaders-source-code"></a>Para ver el código fuente de un sombreador  
   
--   En la ventana **Etapas de canalización de gráficos**, busque la etapa del sombreador que se corresponde con el sombreador que desea examinar. A continuación, debajo de la imagen de vista previa, siga el vínculo del título de la etapa del sombreador. Por ejemplo, siga el vínculo **Sombreador de vértices obj:30** para ver el código fuente del sombreador de vértices.  
+- En la ventana **Etapas de canalización de gráficos**, busque la etapa del sombreador que se corresponde con el sombreador que desea examinar. A continuación, debajo de la imagen de vista previa, siga el vínculo del título de la etapa del sombreador. Por ejemplo, siga el vínculo **Sombreador de vértices obj:30** para ver el código fuente del sombreador de vértices.  
   
     > [!TIP]
     >  El número de objeto, **obj:30**, identifica este sombreador en toda la interfaz del Analizador de gráficos, tal como se muestra en la ventana del historial de píxeles y la tabla de objetos.  
   
 ##### <a name="to-debug-a-shader"></a>Para depurar un sombreador  
   
--   En la ventana **Etapas de canalización de gráficos**, busque la etapa del sombreador que se corresponde con el sombreador que desea depurar. A continuación, debajo de la imagen de vista previa, elija **Iniciar depuración**. Este punto de entrada en el depurador HLSL tiene como valor predeterminado la primera invocación del sombreador para la etapa correspondiente, es decir, el primer píxel, vértice o primitiva que procesa el sombreador durante esta llamada a draw. Es posible acceder a las invocaciones de este sombreador para un vértice o píxel concreto a través del **Historial de píxeles de gráfico**.  
+- En la ventana **Etapas de canalización de gráficos**, busque la etapa del sombreador que se corresponde con el sombreador que desea depurar. A continuación, debajo de la imagen de vista previa, elija **Iniciar depuración**. Este punto de entrada en el depurador HLSL tiene como valor predeterminado la primera invocación del sombreador para la etapa correspondiente, es decir, el primer píxel, vértice o primitiva que procesa el sombreador durante esta llamada a draw. Es posible acceder a las invocaciones de este sombreador para un vértice o píxel concreto a través del **Historial de píxeles de gráfico**.  
   
 ### <a name="the-pipeline-stages"></a>Etapas de canalización  
  La ventana Etapas de canalización muestra solamente las etapas de canalización que estaban activas durante la llamada a draw. Cada etapa de canalización de gráficos transforma la entrada de la etapa anterior y pasa el resultado a la etapa siguiente. La primera etapa (el ensamblador de entrada) toma como entrada los datos del índice y del vértice de la aplicación; la última etapa (la fusión de salida) combina los píxeles recién representados con el contenido actual del búfer de fotogramas o destino de representación como salida para generar la imagen final que se ve en pantalla.  

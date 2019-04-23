@@ -8,12 +8,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 827f7b136fb5b9c8de96145e1d8edba7b46b3f72
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114670"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Probar aplicaciones para UWP y de la Tienda Windows 8.1 con pruebas automatizadas de IU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
   
 ## <a name="create-a-simple-windows-store-app"></a>Crear una aplicación simple de la Tienda Windows  
   
-1.  Si desea ejecutar pruebas de IU codificadas para la aplicación de la Tienda Windows basada en XAML, debe [establecer una propiedad única de automatización que identifique cada control](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
+1. Si desea ejecutar pruebas de IU codificadas para la aplicación de la Tienda Windows basada en XAML, debe [establecer una propiedad única de automatización que identifique cada control](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
   
      En el menú **Herramientas** , señale **Opciones** y después elija **Editor de texto**, **XAML**y, por último **Varios**.  
   
@@ -30,15 +30,15 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
   
      ![Otras opciones de XAML](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
-2.  Cree un nuevo proyecto para una aplicación de la Tienda Windows basada en XAML en blanco mediante una plantilla de Visual C# o Visual Basic.  
+2. Cree un nuevo proyecto para una aplicación de la Tienda Windows basada en XAML en blanco mediante una plantilla de Visual C# o Visual Basic.  
   
      ![Cree una aplicación de la Tienda Windows vacía (XAML)](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
   
-3.  En el Explorador de soluciones, abra el archivo MainPage.xaml. Desde el Cuadro de herramientas, arrastre un control de botón y un control de cuadro de texto a la superficie de diseño.  
+3. En el Explorador de soluciones, abra el archivo MainPage.xaml. Desde el Cuadro de herramientas, arrastre un control de botón y un control de cuadro de texto a la superficie de diseño.  
   
      ![Diseñe la aplicación de la Tienda Windows](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")  
   
-4.  Haga doble clic en el control de botón y agregue el código siguiente:  
+4. Haga doble clic en el control de botón y agregue el código siguiente:  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,7 +58,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
     End Class  
     ```  
   
-5.  Presione F5 para ejecutar la aplicación de la Tienda Windows.  
+5. Presione F5 para ejecutar la aplicación de la Tienda Windows.  
   
 ## <a name="create-and-run-a-coded-ui-test-for-the-windows-store-app"></a>Crear y ejecutar una prueba de IU codificada para la aplicación de la Tienda Windows  
 
@@ -294,22 +294,22 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
   
 ## <a name="q--a"></a>Preguntas y respuestas  
   
--   **P: ¿Por qué no veo la opción para registrar la prueba de IU codificada en la opción Generar código de un cuadro de diálogo Prueba de IU codificada?**  
+- **P: ¿Por qué no ve la opción para registrar mi prueba de IU codificada en generar código para un cuadro de diálogo prueba de IU codificada?**  
   
-     **R**: La opción para registrar no se admite en las aplicaciones de la Tienda Windows.  
+     **R**: La opción para registrar no se admite en aplicaciones de la Tienda Windows.  
   
--   **P: ¿Puedo crear una prueba de IU codificada para las aplicaciones de la Tienda Windows basadas en WinJS?**  
+- **P: ¿Puedo crear una prueba de IU codificada para mis aplicaciones de Windows Store basadas en WinJS?**  
   
      **R**: No. Solo se admiten aplicaciones basadas en XAML.  
   
--   **P: ¿Puedo crear pruebas de IU codificadas para las aplicaciones de la Tienda Windows en un sistema que no ejecute Windows 8.1 ni Windows 10?**  
+- **P: ¿Puedo crear pruebas de IU codificadas para las aplicaciones de Windows Store en un sistema que no se está ejecutando Windows 8.1 o Windows 10?**  
   
      **R**: No, las plantillas de proyecto de prueba de IU codificada solo están disponibles en Windows 8.1 y Windows 10. Para crear la automatización para las aplicaciones de la Plataforma universal de Windows (UWP), necesitará Windows 10.  
 
 <a name="uwpapps"></a>
-- **P: ¿Cómo puedo crear pruebas de IU codificadas para las aplicaciones de la Plataforma universal de Windows (UWP)?**  
+- **P: ¿Cómo se puede crear pruebas de IU codificadas para las aplicaciones de la plataforma Universal de Windows (UWP)?**  
   
-   **R**: Según la plataforma en la que vaya a probar su aplicación para UWP, cree el proyecto de prueba de IU codificada de una de estas maneras:  
+   **R**: Según la plataforma donde se está probando su aplicación para UWP, cree el proyecto de prueba de IU codificada en una de estas maneras:  
   
   - Una aplicación para UWP que se ejecuta en el equipo local se ejecutará como una aplicación de la Tienda. Para probarlo, debe usar la plantilla **Proyecto de prueba de IU codificada (Windows)** . Para encontrar esta plantilla cuando cree un nuevo proyecto, vaya al nodo **Windows**, **Universal** . O vaya al nodo **Windows**, **Windows 8**, **Windows** .  
   
@@ -319,7 +319,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
   
 - **P: ¿Por qué no puedo modificar el código en el archivo UIMap.Designer?**  
   
-   **R:** Cualquier cambio que se efectúe en el código del archivo UIMapDesigner.cs se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. Si tiene que modificar un método grabado, debe copiarlo en el archivo UIMap.cs y cambiar el nombre. El archivo UIMap.cs se puede utilizar para invalidar métodos y propiedades en el archivo UIMapDesigner.cs. Debe quitar la referencia al método original en el archivo UITest.cs el Codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.  
+   **R**: Cualquier cambio que se realice en el código del archivo UIMapDesigner.cs se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. Si tiene que modificar un método grabado, debe copiarlo en el archivo UIMap.cs y cambiar el nombre. El archivo UIMap.cs se puede utilizar para invalidar métodos y propiedades en el archivo UIMapDesigner.cs. Debe quitar la referencia al método original en el archivo UITest.cs el Codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.  
   
 ## <a name="see-also"></a>Vea también  
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   

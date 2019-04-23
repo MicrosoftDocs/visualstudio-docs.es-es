@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Recopilar datos de contadores de CPU | Microsoft Docs'
+title: Procedimiento Recopilar datos de contadores de CPU | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,14 +14,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a774ce8b36ceddb4d4b53f90c63bec30acc0273
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b197bbc434ecf01ad5b6df332530ad719575aede
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762937"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104088"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Cómo: Recopilar datos de contadores de CPU
+# <a name="how-to-collect-cpu-counter-data"></a>Procedimiento Recopilar datos de contadores de CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un contador de eventos de CPU se utiliza para recopilar datos de rendimiento específicos de hardware. En este tema se muestra cómo recopilar datos de contador de eventos cuando se utiliza el método de generación de perfiles de instrumentación.  
@@ -50,17 +50,17 @@ Un contador de eventos de CPU se utiliza para recopilar datos de rendimiento esp
   
 - Recopilar datos de uno o más contadores al generar perfiles mediante la instrumentación.  
   
-- Especificar un evento de contador como el intervalo de muestreo al generar perfiles mediante el muestreo. Para obtener más información, consulte [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md).  
+- Especificar un evento de contador como el intervalo de muestreo al generar perfiles mediante el muestreo. Para obtener más información, vea [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Para recopilar datos del contador de rendimiento de CPU al generar perfiles mediante la instrumentación  
   
-1.  En las **Páginas de propiedades** de la sesión de rendimiento, haga clic en **Contadores de CPU**.  
+1. En las **Páginas de propiedades** de la sesión de rendimiento, haga clic en **Contadores de CPU**.  
   
-2.  Seleccione la casilla **Recopilar contadores de CPU**.  
+2. Seleccione la casilla **Recopilar contadores de CPU**.  
   
-3.  Expanda el árbol **Contadores de rendimiento disponibles** hasta que encuentre los eventos de ejemplo que se van a recopilar.  
+3. Expanda el árbol **Contadores de rendimiento disponibles** hasta que encuentre los eventos de ejemplo que se van a recopilar.  
   
-4.  Para cada evento que se va a recopilar, seleccione el evento y, a continuación, haga clic en la flecha derecha para agregar el evento a la lista **Contadores seleccionados**.  
+4. Para cada evento que se va a recopilar, seleccione el evento y, a continuación, haga clic en la flecha derecha para agregar el evento a la lista **Contadores seleccionados**.  
   
     > [!NOTE]
     >  **Contadores de rendimiento disponibles** está habilitado solo si selecciona la casilla **Recopilar contadores de CPU**.  
@@ -69,4 +69,4 @@ Un contador de eventos de CPU se utiliza para recopilar datos de rendimiento esp
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)   
  [Contadores de CPU y de Windows](../profiling/cpu-and-windows-counters.md)   
- [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)
+ [Cómo: Elección de eventos de muestreo](../profiling/how-to-choose-sampling-events.md)

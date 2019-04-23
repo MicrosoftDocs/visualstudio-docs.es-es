@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ebff9b9e41212fcb1d33b7672e87aae8103571b7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103299"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ El emulador de Visual Studio para Android se ejecuta como una máquina virtual e
 
  Este tema contiene las siguientes secciones:
 
--   [Lista de comprobación rápida](#Checklist)
+- [Lista de comprobación rápida](#Checklist)
 
--   [Requisitos del sistema](#System)
+- [Requisitos del sistema](#System)
 
--   [Requisitos de red](#Network)
+- [Requisitos de red](#Network)
 
--   [Requisitos de Hyper-V](#HyperV)
+- [Requisitos de Hyper-V](#HyperV)
 
--   [No se admite la ejecución del emulador desde un VHD de arranque](#BootableVHD)
+- [No se admite la ejecución del emulador desde un VHD de arranque](#BootableVHD)
 
--   [Hyper-V requiere archivos no cifrados y sin comprimir](#Files)
+- [Hyper-V requiere archivos no cifrados y sin comprimir](#Files)
 
-##  <a name="Checklist"></a> Lista de comprobación rápida
+## <a name="Checklist"></a> Lista de comprobación rápida
  Esta lista de comprobación rápida muestra los requisitos para la ejecución del emulador de Visual Studio para Android. Para obtener información más detallada, vea las secciones posteriores de este tema.
 
  Requisitos del sistema
@@ -62,17 +62,17 @@ El emulador de Visual Studio para Android se ejecuta como una máquina virtual e
 
 - En el BIOS, deben admitirse las siguientes características:
 
-  -   Virtualización asistida por hardware
+  - Virtualización asistida por hardware
 
-  -   Traducción de direcciones de segundo nivel (SLAT)
+  - Traducción de direcciones de segundo nivel (SLAT)
 
-  -   Prevención de ejecución de datos (DEP) basada en hardware
+  - Prevención de ejecución de datos (DEP) basada en hardware
 
 - En Windows, Hyper-V debe estar habilitado y en ejecución.
 
 - Debe ser miembro del grupo local Administradores de Hyper-V.
 
-##  <a name="System"></a> Requisitos del sistema
+## <a name="System"></a> Requisitos del sistema
  Su equipo debe cumplir los siguientes requisitos:
 
 - Compatibilidad con Hyper-V (vea [Requisitos de Hyper-V](#HyperV))
@@ -85,7 +85,7 @@ El emulador de Visual Studio para Android se ejecuta como una máquina virtual e
 
   ![Comprobar los requisitos del sistema](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")
 
-##  <a name="Network"></a> Requisitos de red
+## <a name="Network"></a> Requisitos de red
  La red debe cumplir los siguientes requisitos:
 
 - DHCP
@@ -100,7 +100,7 @@ El emulador de Visual Studio para Android se ejecuta como una máquina virtual e
 
 - [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
-##  <a name="HyperV"></a> Requisitos de Hyper-V
+## <a name="HyperV"></a> Requisitos de Hyper-V
  Requisitos de Hyper-V en el BIOS
 
  El BIOS del equipo debe admitir y tener habilitadas las siguientes características:
@@ -133,12 +133,12 @@ El emulador de Visual Studio para Android se ejecuta como una máquina virtual e
 
  Para agregarse a un grupo manualmente, abra el complemento Grupos y usuarios locales.
 
-##  <a name="BootableVHD"></a> No se admite la ejecución del emulador desde un VHD de arranque
+## <a name="BootableVHD"></a> No se admite la ejecución del emulador desde un VHD de arranque
  Si intenta ejecutar una aplicación en el emulador de Visual Studio para Android mientras se ejecuta Windows desde un VHD de arranque, el emulador tardará varios minutos en iniciarse o no se iniciará. Si el emulador no se puede iniciar, verá el mensaje siguiente:  Error al implementar la aplicación. Vuelva a intentarlo.
 
  Esta configuración no se admite. Para obtener información acerca de problemas relacionados, vea [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
-##  <a name="Files"></a> Hyper-V requiere archivos no cifrados y sin comprimir
+## <a name="Files"></a> Hyper-V requiere archivos no cifrados y sin comprimir
  En un disco duro configurado con el sistema de archivos NTFS, los archivos de disco duro virtual que usa Hyper-V no deben estar comprimidos ni cifrados. Asegúrese de que los siguientes directorios no están comprimidos ni cifrados:
 
 - %localappdata%\Microsoft\XDE

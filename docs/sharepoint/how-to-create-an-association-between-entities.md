@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear una asociación entre entidades | Documentos de Microsoft
+title: Procedimiento Crear una asociación entre entidades | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,43 +21,43 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d8558745de7539350bde4f00673c99d23cd1def
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ce6d0bad9da4f11b5fae1daf93657c6908cf5e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645126"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092570"
 ---
-# <a name="how-to-create-an-association-between-entities"></a>Filtrar Crear una asociación entre entidades
+# <a name="how-to-create-an-association-between-entities"></a>Procedimiento Crear una asociación entre entidades
   Puede definir las relaciones entre entidades en el modelo de conectividad de datos profesionales (BDC) mediante la creación de asociaciones. Visual Studio genera los métodos que proporcionan información sobre cada asociación de los consumidores del modelo. Estos métodos pueden usarse en aplicaciones personalizadas para mostrar las relaciones de datos en una interfaz de usuario (UI), listas o elementos web de SharePoint.
 
  Puede crear dos tipos de asociaciones en el Diseñador de BDC: asociaciones basada en claves externas y las asociaciones sin clave externa. Para obtener más información, consulte [crear una asociación entre entidades](../sharepoint/creating-an-association-between-entities.md).
 
 ### <a name="to-create-an-association-between-entities"></a>Para crear una asociación entre entidades
 
-1.  En el **BusinessDataConnectivity** pestaña de la **cuadro de herramientas**, elija el **asociación** elemento.
+1. En el **BusinessDataConnectivity** pestaña de la **cuadro de herramientas**, elija el **asociación** elemento.
 
-2.  En el Diseñador de BDC, elija la entidad de origen y, a continuación, elija la entidad de destino.
+2. En el Diseñador de BDC, elija la entidad de origen y, a continuación, elija la entidad de destino.
 
      El **Editor de asociaciones** aparece.
 
-3.  Si desea crear una asociación basada en claves externa, seleccione el **es una asociación de clave externa** casilla de verificación.
+3. Si desea crear una asociación basada en claves externa, seleccione el **es una asociación de clave externa** casilla de verificación.
 
-    1.  En el **Id. de origen** columna de la **asignación identificador** de tabla, elija el identificador situado junto a cada descriptor de tipos coincidentes que aparece en el **campo** columna.
+    1. En el **Id. de origen** columna de la **asignación identificador** de tabla, elija el identificador situado junto a cada descriptor de tipos coincidentes que aparece en el **campo** columna.
 
          Por ejemplo, en el **Id. de origen** columna, seleccione `ContactID` junto a la `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` descriptor de tipo y el `ReadItem.salesOrder.SalesOrder.ContactID` descriptor de tipos.
 
-4.  Si desea crear una asociación sin clave externa, desactive la **es una asociación de clave externa** casilla de verificación.
+4. Si desea crear una asociación sin clave externa, desactive la **es una asociación de clave externa** casilla de verificación.
 
-5.  Elija el botón **Aceptar** .
+5. Elija el botón **Aceptar** .
 
-6.  En el Diseñador de BDC se aparece una línea que representa la asociación entre la entidad de origen y la entidad de destino.
+6. En el Diseñador de BDC se aparece una línea que representa la asociación entre la entidad de origen y la entidad de destino.
 
      Visual Studio agrega un método de navegador de asociación a la clase de servicio de la entidad de destino y la clase de servicio de la entidad de origen. Para obtener más información acerca de los métodos de navegación de la asociación, vea [admite operaciones](http://go.microsoft.com/fwlink/?LinkId=169286).
 
-7.  En el método de navegación de la asociación de la entidad de origen, agregue código que devuelve una colección de entidades de destino.
+7. En el método de navegación de la asociación de la entidad de origen, agregue código que devuelve una colección de entidades de destino.
 
-8.  En el método de navegación de la asociación de la entidad de destino, agregue código que devuelve la entidad de origen relacionados.
+8. En el método de navegación de la asociación de la entidad de destino, agregue código que devuelve la entidad de origen relacionados.
 
      Para obtener ejemplos de métodos de navegación de la asociación, vea [crear una asociación entre entidades](../sharepoint/creating-an-association-between-entities.md).
 

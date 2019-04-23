@@ -17,23 +17,25 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e0fd75d45d42fb4216e96c29d1403e89eb44353
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51a8e43268718421a90d051f0d4d9b6afa96980e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092375"
 ---
-# <a name="debugging-f"></a>Depurar F# #
+# <a name="debugging-f"></a>Depurar F\#
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La depuración de F# es similar a la depuración de cualquier lenguaje administrado, con algunas excepciones:  
-  
--   La ventana **Automático** no muestra variables de F#.  
-  
--   El modo Editar y Continuar no se admite en F#. Es posible editar código de F# durante una sesión de depuración pero se debería evitar. Dado que los cambios de código no se aplican durante la sesión de depuración, si se realizan cambios en el código de F# durante la depuración, el código fuente no se corresponderá con el código objeto de la depuración.  
-  
--   El depurador no reconoce expresiones de F#. Para escribir una expresión en una ventana de depurador o un cuadro de diálogo durante la depuración de F#, se debe convertir la expresión en la sintaxis de C#. Al convertir una expresión de F# en C#, no olvide que C# usa == como operador de comparación de igualdad y que F# utiliza =.  
-  
-## <a name="see-also"></a>Vea también  
- [Depurar código administrado](../debugger/debugging-managed-code.md)
+La depuración de F# es similar a la depuración de cualquier lenguaje administrado, con algunas excepciones:
+
+- La ventana **Automático** no muestra variables de F#.
+
+- El modo Editar y Continuar no se admite en F#. Es posible editar código de F# durante una sesión de depuración pero se debería evitar. Dado que los cambios de código no se aplican durante la sesión de depuración, si se realizan cambios en el código de F# durante la depuración, el código fuente no se corresponderá con el código objeto de la depuración.
+
+- El depurador no reconoce expresiones de F#. Para escribir una expresión en una ventana de depurador o un cuadro de diálogo durante la depuración de F#, se debe convertir la expresión en la sintaxis de C#. Al convertir una expresión de F# en C#, no olvide que C# usa == como operador de comparación de igualdad y que F# utiliza =.
+
+## <a name="see-also"></a>Vea también
+
+- [Depurar código administrado](../debugger/debugging-managed-code.md)

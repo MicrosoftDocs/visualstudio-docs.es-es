@@ -12,32 +12,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324687"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096548"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualizar las personalizaciones de cinta de opciones en proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5
   Si el proyecto contiene una personalización de cinta que se creó mediante la **cinta (diseñador Visual)** de elemento de proyecto, debe realizar los siguientes cambios en el código del proyecto si se cambia la plataforma de destino a la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o más adelante.
 
--   Modifique el código generado de la cinta.
+- Modifique el código generado de la cinta.
 
--   Modifique cualquier código que cree instancias de controles de la cinta en tiempo de ejecución, controle eventos de la cinta o establezca la posición de un componente de la cinta mediante programación.
+- Modifique cualquier código que cree instancias de controles de la cinta en tiempo de ejecución, controle eventos de la cinta o establezca la posición de un componente de la cinta mediante programación.
 
 ## <a name="update-the-generated-ribbon-code"></a>Actualizar el código generado de la cinta de opciones
  Si se cambia el marco de trabajo de destino del proyecto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, debe cambiar el código generado para el elemento de la cinta llevando a cabo los siguientes pasos. Los archivos de código que debe actualizar dependerán del lenguaje de programación y de cómo haya creado el proyecto:
 
--   En proyectos de Visual Basic o en proyectos de Visual C# que haya creado en [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] realizar todos los pasos en el archivo de código subyacente de la cinta de opciones (*suElementoDeCinta*. Designer.cs o *suElementoDeCinta*. Designer.vb). Para ver el archivo de código subyacente en proyectos de Visual Basic, haga clic en el **mostrar todos los archivos** botón **el Explorador de soluciones**.
+- En proyectos de Visual Basic o en proyectos de Visual C# que haya creado en [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] realizar todos los pasos en el archivo de código subyacente de la cinta de opciones (*suElementoDeCinta*. Designer.cs o *suElementoDeCinta*. Designer.vb). Para ver el archivo de código subyacente en proyectos de Visual Basic, haga clic en el **mostrar todos los archivos** botón **el Explorador de soluciones**.
 
--   En proyectos de Visual C# que ha creado en Visual Studio 2008 y, a continuación, actualiza a [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], realice los dos primeros pasos en el archivo de código de cinta (*suElementoDeCinta*.cs o *suElementoDeCinta*.vb), y Realice los pasos restantes en el archivo de código subyacente de la cinta de opciones.
+- En proyectos de Visual C# que ha creado en Visual Studio 2008 y, a continuación, actualiza a [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], realice los dos primeros pasos en el archivo de código de cinta (*suElementoDeCinta*.cs o *suElementoDeCinta*.vb), y Realice los pasos restantes en el archivo de código subyacente de la cinta de opciones.
 
 ### <a name="to-change-the-generated-ribbon-code"></a>Para cambiar el código generado de la cinta
 
-1.  Modifique la declaración de la clase Ribbon para que se derive a partir de <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> en lugar de a partir de `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.
+1. Modifique la declaración de la clase Ribbon para que se derive a partir de <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> en lugar de a partir de `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.
 
-2.  Modifique el constructor de la clase Ribbon tal como se muestra a continuación. Si ha agregado código propio al constructor, no cambie el código. En los proyectos de Visual Basic, modifique únicamente el constructor sin parámetros. Ignore el otro constructor.
+2. Modifique el constructor de la clase Ribbon tal como se muestra a continuación. Si ha agregado código propio al constructor, no cambie el código. En los proyectos de Visual Basic, modifique únicamente el constructor sin parámetros. Ignore el otro constructor.
 
      En el siguiente ejemplo de código se muestra el constructor predeterminado de una clase Ribbon en un proyecto que tiene como destino .NET Framework 3.5.
 
@@ -72,7 +72,7 @@ ms.locfileid: "58324687"
     }
     ```
 
-3.  En el método `InitializeComponent`, modifique cualquier código que construya un control de la cinta para que el código use en su lugar uno de los métodos del asistente del objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.
+3. En el método `InitializeComponent`, modifique cualquier código que construya un control de la cinta para que el código use en su lugar uno de los métodos del asistente del objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.
 
     > [!NOTE]
     >  En los proyectos de Visual C#, debe expandir el área denominada `Component Designer generated code` para ver el método `InitializeComponent`.
@@ -99,7 +99,7 @@ ms.locfileid: "58324687"
 
      Para obtener una lista completa de los métodos auxiliares para los controles de cinta de opciones, consulte [crear una instancia de la cinta de opciones controla](#ribboncontrols).
 
-4.  En los proyectos de Visual C#, modifique cualquier línea de código en el método `InitializeComponent` que use un delegado de <xref:System.EventHandler%601> para que use un delegado de la cinta concreto en su lugar.
+4. En los proyectos de Visual C#, modifique cualquier línea de código en el método `InitializeComponent` que use un delegado de <xref:System.EventHandler%601> para que use un delegado de la cinta concreto en su lugar.
 
      Por ejemplo, suponga que su archivo contiene la siguiente línea de código que controla el evento <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> en un proyecto que tenga como destino .NET Framework 3.5.
 
@@ -107,9 +107,9 @@ ms.locfileid: "58324687"
 
     \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> para obtener una lista completa de los delegados de la cinta de opciones, consulte [los eventos de Ribbon controlar](#ribbonevents).
 
-5.  En los proyectos de Visual Basic, busque la clase `ThisRibbonCollection` al final del archivo. Modifique la declaración de esta clase para que deje de heredar de `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
+5. En los proyectos de Visual Basic, busque la clase `ThisRibbonCollection` al final del archivo. Modifique la declaración de esta clase para que deje de heredar de `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
-##  <a name="ribboncontrols"></a> Crear instancias de controles de cinta de opciones
+## <a name="ribboncontrols"></a> Crear instancias de controles de cinta de opciones
  Debe modificar todo el código que cree instancias de forma dinámica de controles de la cinta. En proyectos que tengan como destino .NET Framework 3.5, los controles de la cinta son clases de las que se pueden crear instancias directamente en determinados escenarios. En los proyectos que tengan como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, estas clases son interfaces de las que no se pueden crear instancias directamente. Debe crear los controles mediante métodos proporcionados por el objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.
 
  Hay dos maneras de acceder al objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>:
@@ -142,7 +142,7 @@ ms.locfileid: "58324687"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|
 
-##  <a name="ribbonevents"></a> Controlar los eventos de Ribbon
+## <a name="ribbonevents"></a> Controlar los eventos de Ribbon
  Debe modificar cualquier código que controle los eventos de los controles Ribbon. En los proyectos que tengan como destino la versión .NET Framework 3.5, el delegado de <xref:System.EventHandler%601> genérico controla estos eventos. Ahora, en los proyectos que tengan como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, otros delegados controlan estos eventos.
 
  En la siguiente tabla se enumeran los eventos de Ribbon y los delegados que se asocian a ellos en proyectos que tengan como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior.

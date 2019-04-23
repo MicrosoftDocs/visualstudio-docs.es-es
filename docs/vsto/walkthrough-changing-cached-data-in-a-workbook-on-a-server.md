@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c762e715be9b7b210b17d5ff297b090b684400f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 3cb1793407b7baa3d290d43b0c0ef5a815cb8c40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116971"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Tutorial: Cambiar los datos almacenados en caché en un libro en un servidor
   Este tutorial muestra cómo modificar un conjunto de datos que se almacena en caché en un libro de Microsoft Office Excel sin iniciar Excel, mediante el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase.
@@ -48,36 +48,36 @@ ms.locfileid: "54866014"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Acceso a una instancia en ejecución de Microsoft SQL Server o Microsoft SQL Server Express que tiene la base de datos de ejemplo AdventureWorksLT conectada a ella. Puede descargar la base de datos AdventureWorksLT el [sitio Web de CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Para obtener más información sobre cómo asociar una base de datos, vea los siguientes temas:
+- Acceso a una instancia en ejecución de Microsoft SQL Server o Microsoft SQL Server Express que tiene la base de datos de ejemplo AdventureWorksLT conectada a ella. Puede descargar la base de datos AdventureWorksLT el [sitio Web de CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Para obtener más información sobre cómo asociar una base de datos, vea los siguientes temas:
 
-    -   Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, vea [Cómo: Adjuntar una base de datos (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    - Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, vea [Cómo: Adjuntar una base de datos (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Para adjuntar una base de datos mediante el uso de la línea de comandos, vea [Cómo: Adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).
+    - Para adjuntar una base de datos mediante el uso de la línea de comandos, vea [Cómo: Adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Cree un proyecto de biblioteca de clases que define un conjunto de datos
  Para usar el mismo conjunto de datos en un proyecto de libro de Excel y una aplicación de consola, debe definir el conjunto de datos en un ensamblado independiente que se hace referencia por ambos proyectos. En este tutorial, defina el conjunto de datos en un proyecto de biblioteca de clases.
 
 ### <a name="to-create-the-class-library-project"></a>Para crear el proyecto de biblioteca de clases
 
-1.  Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
+2. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
 
-3.  En el panel Plantillas, expanda **Visual C#** o **Visual Basic**y, a continuación, haga clic en **Windows**.
+3. En el panel Plantillas, expanda **Visual C#** o **Visual Basic**y, a continuación, haga clic en **Windows**.
 
-4.  En la lista de plantillas de proyecto, seleccione **biblioteca de clases**.
+4. En la lista de plantillas de proyecto, seleccione **biblioteca de clases**.
 
-5.  En el **nombre** , escriba **AdventureWorksDataSet**.
+5. En el **nombre** , escriba **AdventureWorksDataSet**.
 
-6.  Haga clic en **examinar**, vaya a su *%UserProfile%\My documentos* (para Windows XP y versiones anteriores) o *%UserProfile%\Documents* (para Windows Vista) carpeta y, a continuación, haga clic en **Seleccionar carpeta**.
+6. Haga clic en **examinar**, vaya a su *%UserProfile%\My documentos* (para Windows XP y versiones anteriores) o *%UserProfile%\Documents* (para Windows Vista) carpeta y, a continuación, haga clic en **Seleccionar carpeta**.
 
-7.  En el **nuevo proyecto** diálogo cuadro, asegúrese de que el **crear directorio para la solución** casilla de verificación no está seleccionada.
+7. En el **nuevo proyecto** diálogo cuadro, asegúrese de que el **crear directorio para la solución** casilla de verificación no está seleccionada.
 
-8.  Haga clic en **Aceptar**.
+8. Haga clic en **Aceptar**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **AdventureWorksDataSet** proyecto a **el Explorador de soluciones** y abre el **Class1.cs** o **Class1.vb** archivo de código.
 
@@ -125,21 +125,21 @@ ms.locfileid: "54866014"
 
 ### <a name="to-create-the-excel-workbook-project"></a>Para crear el proyecto de libro de Excel
 
-1.  En **el Explorador de soluciones**, haga clic en el **AdventureWorksDataSet** solución, seleccione **agregar**y, a continuación, haga clic en **nuevo proyecto**.
+1. En **el Explorador de soluciones**, haga clic en el **AdventureWorksDataSet** solución, seleccione **agregar**y, a continuación, haga clic en **nuevo proyecto**.
 
-2.  En el panel Plantillas, expanda **Visual C#** o **Visual Basic**y, a continuación, expanda **Office**.
+2. En el panel Plantillas, expanda **Visual C#** o **Visual Basic**y, a continuación, expanda **Office**.
 
-3.  En el modo expandido **Office** nodo, seleccione el **2010** nodo.
+3. En el modo expandido **Office** nodo, seleccione el **2010** nodo.
 
-4.  En la lista de plantillas de proyecto, seleccione el proyecto de libro de Excel.
+4. En la lista de plantillas de proyecto, seleccione el proyecto de libro de Excel.
 
-5.  En el **nombre** , escriba **AdventureWorksReport**. No modifique la ubicación.
+5. En el **nombre** , escriba **AdventureWorksReport**. No modifique la ubicación.
 
-6.  Haga clic en **Aceptar**.
+6. Haga clic en **Aceptar**.
 
      Se abre el **Asistente para proyectos de Visual Studio Tools para Office** .
 
-7.  Asegúrese de que **crear un nuevo documento** está seleccionada y haga clic en **Aceptar**.
+7. Asegúrese de que **crear un nuevo documento** está seleccionada y haga clic en **Aceptar**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] se abre el **AdventureWorksReport** libro en el diseñador y agrega el **AdventureWorksReport** proyecto a **el Explorador de soluciones**.
 
@@ -148,21 +148,21 @@ ms.locfileid: "54866014"
 
 ### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Para agregar el conjunto de datos a los orígenes de datos en el proyecto de libro de Excel
 
-1.  En **el Explorador de soluciones**, haga doble clic en **Sheet1.cs** o **Sheet1.vb** bajo el **AdventureWorksReport** proyecto.
+1. En **el Explorador de soluciones**, haga doble clic en **Sheet1.cs** o **Sheet1.vb** bajo el **AdventureWorksReport** proyecto.
 
      El libro se abre en el diseñador.
 
-2.  En el menú **Datos** , haga clic en **Agregar nuevo elemento**.
+2. En el menú **Datos** , haga clic en **Agregar nuevo elemento**.
 
      Se abrirá el **Asistente para configuración de orígenes de datos**.
 
-3.  Haga clic en **objeto**y, a continuación, haga clic en **siguiente**.
+3. Haga clic en **objeto**y, a continuación, haga clic en **siguiente**.
 
-4.  En el **seleccione el objeto que desee enlazar a** página, haga clic en **Agregar referencia**.
+4. En el **seleccione el objeto que desee enlazar a** página, haga clic en **Agregar referencia**.
 
-5.  En el **proyectos** , haga clic **AdventureWorksDataSet** y, a continuación, haga clic en **Aceptar**.
+5. En el **proyectos** , haga clic **AdventureWorksDataSet** y, a continuación, haga clic en **Aceptar**.
 
-6.  En el **AdventureWorksDataSet** espacio de nombres de los **AdventureWorksDataSet** ensamblado, haga clic en **AdventureWorksLTDataSet** y, a continuación, haga clic en **finalizar** .
+6. En el **AdventureWorksDataSet** espacio de nombres de los **AdventureWorksDataSet** ensamblado, haga clic en **AdventureWorksLTDataSet** y, a continuación, haga clic en **finalizar** .
 
      El **orígenes de datos** abre la ventana, y **AdventureWorksLTDataSet** se agrega a la lista de orígenes de datos.
 
@@ -171,13 +171,13 @@ ms.locfileid: "54866014"
 
 ### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Para crear un control ListObject enlazado a una instancia del conjunto de datos
 
-1.  En el **orígenes de datos** ventana, expanda el **AdventureWorksLTDataSet** nodo bajo **AdventureWorksDataSet**.
+1. En el **orígenes de datos** ventana, expanda el **AdventureWorksLTDataSet** nodo bajo **AdventureWorksDataSet**.
 
-2.  Seleccione el **producto** nodo, haga clic en la flecha de lista desplegable que aparece y seleccione **ListObject** en la lista desplegable.
+2. Seleccione el **producto** nodo, haga clic en la flecha de lista desplegable que aparece y seleccione **ListObject** en la lista desplegable.
 
      Si no aparece la flecha de lista desplegable, confirme que el libro está abierto en el diseñador.
 
-3.  Arrastre el **producto** tabla a la celda A1.
+3. Arrastre el **producto** tabla a la celda A1.
 
      Un <xref:Microsoft.Office.Tools.Excel.ListObject> control denominado `productListObject` se crea en la hoja de cálculo, comenzando en la celda A1. Al mismo tiempo, se agregan al proyecto un objeto de conjunto de datos denominado `adventureWorksLTDataSet` y una <xref:System.Windows.Forms.BindingSource> denominada `productBindingSource` . El <xref:Microsoft.Office.Tools.Excel.ListObject> se enlaza a <xref:System.Windows.Forms.BindingSource>, que a su vez se enlaza al objeto de conjunto de datos.
 
@@ -186,20 +186,20 @@ ms.locfileid: "54866014"
 
 ### <a name="to-add-the-dataset-to-the-data-cache"></a>Para agregar el conjunto de datos a la caché de datos
 
-1.  En el diseñador, haga clic en **adventureWorksLTDataSet**.
+1. En el diseñador, haga clic en **adventureWorksLTDataSet**.
 
-2.  En el **propiedades** ventana, establezca el **modificadores** propiedad **pública**.
+2. En el **propiedades** ventana, establezca el **modificadores** propiedad **pública**.
 
-3.  Establecer el **CacheInDocument** propiedad **True**.
+3. Establecer el **CacheInDocument** propiedad **True**.
 
 ## <a name="initialize-the-dataset-in-the-workbook"></a>Inicializar el conjunto de datos en el libro
  Para poder recuperar los datos del conjunto de datos en caché mediante el uso de la aplicación de consola, primero debe rellenar el conjunto de datos en caché con los datos.
 
 ### <a name="to-initialize-the-dataset-in-the-workbook"></a>Para inicializar el conjunto de datos en el libro
 
-1.  En **el Explorador de soluciones**, haga clic en el **Sheet1.cs** o **Sheet1.vb** de archivo y haga clic en **ver código**.
+1. En **el Explorador de soluciones**, haga clic en el **Sheet1.cs** o **Sheet1.vb** de archivo y haga clic en **ver código**.
 
-2.  Reemplace el controlador de eventos `Sheet1_Startup` por el siguiente código: Este código utiliza una instancia de la `ProductTableAdapter` clase que se define en el **AdventureWorksDataSet** proyecto para rellenar el conjunto de datos en caché con los datos, si está vacía actualmente.
+2. Reemplace el controlador de eventos `Sheet1_Startup` por el siguiente código: Este código utiliza una instancia de la `ProductTableAdapter` clase que se define en el **AdventureWorksDataSet** proyecto para rellenar el conjunto de datos en caché con los datos, si está vacía actualmente.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
      [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]
@@ -209,32 +209,32 @@ ms.locfileid: "54866014"
 
 ### <a name="to-build-and-run-the-project"></a>Para compilar y ejecutar el proyecto
 
-1.  En **el Explorador de soluciones**, haga clic en el **AdventureWorksReport** del proyecto, elija **depurar**y, a continuación, haga clic en **Iniciar nueva instancia**.
+1. En **el Explorador de soluciones**, haga clic en el **AdventureWorksReport** del proyecto, elija **depurar**y, a continuación, haga clic en **Iniciar nueva instancia**.
 
      El proyecto se compila y se abre el libro en Excel. Compruebe lo siguiente:
 
-    -   El <xref:Microsoft.Office.Tools.Excel.ListObject> rellena con datos.
+    - El <xref:Microsoft.Office.Tools.Excel.ListObject> rellena con datos.
 
-    -   El valor de la **ListPrice** columna para la primera fila de la <xref:Microsoft.Office.Tools.Excel.ListObject> es 1431.5. Más adelante en este tutorial, usará una aplicación de consola para modificar los valores en el **ListPrice** columna.
+    - El valor de la **ListPrice** columna para la primera fila de la <xref:Microsoft.Office.Tools.Excel.ListObject> es 1431.5. Más adelante en este tutorial, usará una aplicación de consola para modificar los valores en el **ListPrice** columna.
 
-2.  Guarde el libro. No modifique el nombre de archivo o la ubicación del libro.
+2. Guarde el libro. No modifique el nombre de archivo o la ubicación del libro.
 
-3.  Cierre Excel.
+3. Cierre Excel.
 
 ## <a name="create-a-console-application-project"></a>Cree un proyecto de aplicación de consola
  Cree un proyecto de aplicación de consola a usar para modificar los datos del conjunto de datos en caché en el libro.
 
 ### <a name="to-create-the-console-application-project"></a>Para crear el proyecto de aplicación de consola
 
-1.  En **el Explorador de soluciones**, haga clic en el **AdventureWorksDataSet** solución, seleccione **agregar**y, a continuación, haga clic en **nuevo proyecto**.
+1. En **el Explorador de soluciones**, haga clic en el **AdventureWorksDataSet** solución, seleccione **agregar**y, a continuación, haga clic en **nuevo proyecto**.
 
-2.  En el **tipos de proyecto** panel, expanda **Visual C#** o **Visual Basic**y, a continuación, haga clic en **Windows**.
+2. En el **tipos de proyecto** panel, expanda **Visual C#** o **Visual Basic**y, a continuación, haga clic en **Windows**.
 
-3.  En el **plantillas** panel, seleccione **aplicación de consola**.
+3. En el **plantillas** panel, seleccione **aplicación de consola**.
 
-4.  En el **nombre** , escriba **DataWriter**. No modifique la ubicación.
+4. En el **nombre** , escriba **DataWriter**. No modifique la ubicación.
 
-5.  Haga clic en **Aceptar**.
+5. Haga clic en **Aceptar**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **DataWriter** proyecto a **el Explorador de soluciones** y abre el **Program.cs** o **Module1.vb** archivo de código.
 
@@ -296,17 +296,17 @@ ms.locfileid: "54866014"
 
 ### <a name="to-test-the-workbook"></a>Para probar el libro
 
-1.  Cierre el libro AdventureWorksReport en el Diseñador de Visual Studio, si aún está abierta.
+1. Cierre el libro AdventureWorksReport en el Diseñador de Visual Studio, si aún está abierta.
 
-2.  Abra el libro AdventureWorksReport que se encuentra en la carpeta de compilación de la **AdventureWorksReport** proyecto. De forma predeterminada, la carpeta de compilación está en una de las siguientes ubicaciones:
+2. Abra el libro AdventureWorksReport que se encuentra en la carpeta de compilación de la **AdventureWorksReport** proyecto. De forma predeterminada, la carpeta de compilación está en una de las siguientes ubicaciones:
 
-    -   *%USERPROFILE%\My documentos\AdventureWorksReport\bin\Debug* (para Windows XP y versiones anteriores)
+    - *%USERPROFILE%\My documentos\AdventureWorksReport\bin\Debug* (para Windows XP y versiones anteriores)
 
-    -   *%UserProfile%\Documents\AdventureWorksReport\bin\Debug* (para Windows Vista)
+    - *%UserProfile%\Documents\AdventureWorksReport\bin\Debug* (para Windows Vista)
 
-3.  Compruebe que el valor de la **ListPrice** columna para la primera fila de la <xref:Microsoft.Office.Tools.Excel.ListObject> es ahora 1574.65.
+3. Compruebe que el valor de la **ListPrice** columna para la primera fila de la <xref:Microsoft.Office.Tools.Excel.ListObject> es ahora 1574.65.
 
-4.  Cierre el libro.
+4. Cierre el libro.
 
 ## <a name="see-also"></a>Vea también
 

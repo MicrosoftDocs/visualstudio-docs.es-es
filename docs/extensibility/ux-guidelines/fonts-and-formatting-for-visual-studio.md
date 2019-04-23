@@ -8,37 +8,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: c0f451ed2ddb6b619e896a664e5592496e4af4de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796756"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096262"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fuentes y formato de Visual Studio
-##  <a name="BKMK_TheEnvironmentFont"></a> La fuente del entorno
+## <a name="BKMK_TheEnvironmentFont"></a> La fuente del entorno
  Todas las fuentes dentro de Visual Studio se deben exponer al usuario para la personalización. Esto se realiza principalmente mediante la **fuentes y colores** página en el **Herramientas > opciones** cuadro de diálogo. Las tres categorías principales de configuración de fuente son:
 
--   **Fuente del entorno** -la fuente principal para el IDE (entorno de desarrollo integrado), utilizada para todos los elementos de interfaz, incluidos los cuadros de diálogo, menús, ventanas de herramientas y ventanas de documento. De forma predeterminada, la fuente del entorno está asociada a una fuente del sistema que aparece como 9 pt Segoe UI en las versiones actuales de Windows. Uso de fuentes para todos los elementos de la interfaz ayuda a garantizar una apariencia coherente de fuente en todo el IDE.
+- **Fuente del entorno** -la fuente principal para el IDE (entorno de desarrollo integrado), utilizada para todos los elementos de interfaz, incluidos los cuadros de diálogo, menús, ventanas de herramientas y ventanas de documento. De forma predeterminada, la fuente del entorno está asociada a una fuente del sistema que aparece como 9 pt Segoe UI en las versiones actuales de Windows. Uso de fuentes para todos los elementos de la interfaz ayuda a garantizar una apariencia coherente de fuente en todo el IDE.
 
--   **Editor de texto** -página de elementos que expuesta en el código y otros editores basados en texto se pueden personalizar en el Editor de texto en **Herramientas > opciones**.
+- **Editor de texto** -página de elementos que expuesta en el código y otros editores basados en texto se pueden personalizar en el Editor de texto en **Herramientas > opciones**.
 
--   **Colecciones específicas** -ventanas del diseñador que ofrecen la personalización de sus elementos de interfaz de usuario puede exponer fuentes específicas de su diseño de surface en su propia página de configuración de **Herramientas > opciones**.
+- **Colecciones específicas** -ventanas del diseñador que ofrecen la personalización de sus elementos de interfaz de usuario puede exponer fuentes específicas de su diseño de surface en su propia página de configuración de **Herramientas > opciones**.
 
 ### <a name="editor-font-customization-and-resizing"></a>Personalización de fuente del Editor y el cambio de tamaño
  Los usuarios a menudo se ampliar o ampliar el tamaño o color del texto en el editor según sus preferencias, independientemente de la interfaz de usuario general. Dado que la fuente del entorno se usa en los elementos que pueden aparecer dentro de o como parte de un editor o diseñador, es importante tener en cuenta el comportamiento esperado cuando se cambia una de estas clasificaciones de la fuente.
 
  Al crear los elementos de interfaz de usuario que aparecen en el editor pero son no forma parte de la *contenido*, es importante usar la fuente del entorno y no la fuente del texto para que cambie el tamaño de los elementos de una manera predecible.
 
-1.  Para el texto del código en el editor, cambiar el tamaño con la configuración de fuente del texto de código y responder a nivel de zoom del texto del editor.
+1. Para el texto del código en el editor, cambiar el tamaño con la configuración de fuente del texto de código y responder a nivel de zoom del texto del editor.
 
-2.  Todos los demás elementos de la interfaz deben estar vinculados a la configuración de fuente del entorno y responden a los cambios en el entorno globales. Esto incluye (aunque no se limita a):
+2. Todos los demás elementos de la interfaz deben estar vinculados a la configuración de fuente del entorno y responden a los cambios en el entorno globales. Esto incluye (aunque no se limita a):
 
-    -   Texto en los menús contextuales
+    - Texto en los menús contextuales
 
-    -   Texto en un elemento de gráfico del editor, como texto de menú de bombilla, panel del editor de la búsqueda rápida y vaya al panel
+    - Texto en un elemento de gráfico del editor, como texto de menú de bombilla, panel del editor de la búsqueda rápida y vaya al panel
 
-    -   Etiqueta de texto en cuadros de diálogo, como **buscar en archivos** o **refactorizar**
+    - Etiqueta de texto en cuadros de diálogo, como **buscar en archivos** o **refactorizar**
 
 ### <a name="accessing-the-environment-font"></a>Obtener acceso a la fuente del entorno
  En código nativo o de formularios Windows Forms, se puede tener acceso a la fuente del entorno llamando al método `IUIHostLocale::GetDialogFont` después de consultar la interfaz desde el `SID_SUIHostLocale` service.
@@ -87,7 +87,7 @@ window.ShowModal()
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-###  <a name="BKMK_Formatting"></a> Formato de referencia (escalado o poner en negrita)
+### <a name="BKMK_Formatting"></a> Formato de referencia (escalado o poner en negrita)
  Algunos cuadros de diálogo requieren determinado texto esté en negrita o un tamaño distinto de la fuente del entorno. Anteriormente, las fuentes mayores que la fuente del entorno se codificaron como "`environment font +2`" o similar. Uso de los fragmentos de código proporcionado admitirá valores altos de PPP monitores y asegúrese de que el texto para mostrar aparece siempre en el tamaño correcto y peso (como la luz o Semilight).
 
 > **Nota: Antes de aplicar formato, asegúrese de que está siguiendo las directrices recogidas en [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
@@ -300,7 +300,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Para restablecer la fuente, haga clic en "Usar valores predeterminados" bajo **Herramientas > Opciones > entorno > fuentes y colores**.
 
-##  <a name="BKMK_TextStyle"></a> Estilo de texto
+## <a name="BKMK_TextStyle"></a> Estilo de texto
  Estilo de texto hace referencia a mayúsculas y minúsculas, el peso y tamaño de fuente. Para obtener instrucciones sobre la implementación, consulte [la fuente del entorno](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Mayúsculas y minúsculas del texto
@@ -359,9 +359,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Tipo oración
  Oración es el método estándar de mayúsculas y minúsculas para escribir en el que aparece con mayúsculas solo la primera palabra de la oración, junto con los nombres propios y los pronombres "I". En general, el tipo oración es más fácil para un público internacional leer, especialmente cuando el contenido se traducirá en una máquina. Caso de uso oración:
 
-1.  **Mensajes de la barra de estado.** Estos son sencillos, resumen y facilitar solo información de estado. Ejemplo: "Cargando el archivo de proyecto"
+1. **Mensajes de la barra de estado.** Estos son sencillos, resumen y facilitar solo información de estado. Ejemplo: "Cargando el archivo de proyecto"
 
-2.  **Todos los demás elementos de interfaz de usuario**, incluidas las etiquetas, las casillas de verificación, botones de radio y los elementos del cuadro de lista. Ejemplo: "Seleccionar todos los elementos de lista"
+2. **Todos los demás elementos de interfaz de usuario**, incluidas las etiquetas, las casillas de verificación, botones de radio y los elementos del cuadro de lista. Ejemplo: "Seleccionar todos los elementos de lista"
 
 ### <a name="text-formatting"></a>Formato de texto
  Texto predeterminado de formato en Visual Studio 2013 se controla mediante [la fuente del entorno](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Este servicio ayuda a garantizar una apariencia coherente de fuente en todo el IDE (entorno de desarrollo integrado), y se debe usar para garantizar una experiencia coherente para los usuarios.
@@ -373,36 +373,36 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="bold-text"></a>Texto en negrita
  Texto en negrita se usa con moderación en Visual Studio y se debe reservar para:
 
--   etiquetas de pregunta en los asistentes
+- etiquetas de pregunta en los asistentes
 
--   que designa el proyecto activo en el Explorador de soluciones
+- que designa el proyecto activo en el Explorador de soluciones
 
--   invalida los valores en la ventana de herramientas de propiedades
+- invalida los valores en la ventana de herramientas de propiedades
 
--   determinados eventos en las listas desplegables de editor de Visual Basic
+- determinados eventos en las listas desplegables de editor de Visual Basic
 
--   contenido generado por el servidor en el esquema del documento para páginas web
+- contenido generado por el servidor en el esquema del documento para páginas web
 
--   encabezados de sección en el cuadro de diálogo complejo o el Diseñador de interfaz de usuario
+- encabezados de sección en el cuadro de diálogo complejo o el Diseñador de interfaz de usuario
 
 #### <a name="italics"></a>Cursiva
  Visual Studio no utiliza el texto en cursiva o en negrita cursiva.
 
 #### <a name="color"></a>Color
 
--   Azul está reservado para los hipervínculos (navegación y comandos) y nunca debe utilizarse para la orientación.
+- Azul está reservado para los hipervínculos (navegación y comandos) y nunca debe utilizarse para la orientación.
 
--   Los encabezados de mayor tamaño (fuente del entorno x 155% o superior) se pueden colorear para estos propósitos:
+- Los encabezados de mayor tamaño (fuente del entorno x 155% o superior) se pueden colorear para estos propósitos:
 
-    -   Para proporcionar el atractivo visual a la firma de la interfaz de usuario de Visual Studio
+    - Para proporcionar el atractivo visual a la firma de la interfaz de usuario de Visual Studio
 
-    -   Para llamar la atención sobre un área específica
+    - Para llamar la atención sobre un área específica
 
-    -   Para ofrecer un alivio de color del texto de entorno oscuro de gris o negro estándar
+    - Para ofrecer un alivio de color del texto de entorno oscuro de gris o negro estándar
 
--   Color en los encabezados debe aprovechar existente Visual Studio marca colores, principalmente el principal púrpura, FF68217A #.
+- Color en los encabezados debe aprovechar existente Visual Studio marca colores, principalmente el principal púrpura, FF68217A #.
 
--   Cuando se usa el color en títulos, debe cumplir la [directrices de color de Windows](/windows/desktop/uxguide/vis-color), incluida la relación de contraste y otras consideraciones de accesibilidad.
+- Cuando se usa el color en títulos, debe cumplir la [directrices de color de Windows](/windows/desktop/uxguide/vis-color), incluida la relación de contraste y otras consideraciones de accesibilidad.
 
 ### <a name="font-size"></a>Tamaño de fuente
  Diseño de Visual Studio la interfaz de usuario presenta un aspecto más claro con más espacio en blanco. Siempre que sea posible, barras de título y chrome se han reducido o eliminado. Mientras la densidad de la información es un requisito en Visual Studio, tipografía sigue siendo importante, con énfasis en interlineado más abierto y una variación de ponderaciones y los tamaños de fuente.
@@ -474,11 +474,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="padding-and-spacing"></a>Relleno y espaciado
  Encabezados requieren espacio alrededor de ellas para darles el énfasis adecuado. Este espacio varía según el tamaño de punto y lo está cerca del encabezado, por ejemplo, una regla horizontal o una línea de texto en la fuente del entorno.
 
--   El relleno ideal para un encabezado de por sí solo debe ser 90% del espacio de capital del carácter alto. Por ejemplo, un encabezado de Segoe UI Light de 28 pt tiene un alto de límite de 26 pt, y la cantidad de relleno debe ser aproximadamente 23 pt, o aproximadamente 31 píxeles.
+- El relleno ideal para un encabezado de por sí solo debe ser 90% del espacio de capital del carácter alto. Por ejemplo, un encabezado de Segoe UI Light de 28 pt tiene un alto de límite de 26 pt, y la cantidad de relleno debe ser aproximadamente 23 pt, o aproximadamente 31 píxeles.
 
--   El espacio mínimo en torno a un encabezado debe ser un 50% del alto del carácter de capital. Cuando un encabezado está acompañado por una regla u otro elemento de ajuste estrecha, se puede usar menos espacio.
+- El espacio mínimo en torno a un encabezado debe ser un 50% del alto del carácter de capital. Cuando un encabezado está acompañado por una regla u otro elemento de ajuste estrecha, se puede usar menos espacio.
 
--   Texto en negrita de la fuente de entorno debe seguir relleno y espaciado de alto de línea predeterminado.
+- Texto en negrita de la fuente de entorno debe seguir relleno y espaciado de alto de línea predeterminado.
 
 ## <a name="see-also"></a>Vea también
 

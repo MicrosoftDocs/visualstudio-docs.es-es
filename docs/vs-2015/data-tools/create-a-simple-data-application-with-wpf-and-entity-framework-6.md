@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62e1a6c317752dc5513a51d3e8018d15c9598b93
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: decb17be7caa4ea0a300ddb4378ac0ad11520109
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098810"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Crear una aplicación de datos sencilla con WPF y Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,25 +26,25 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
 ## <a name="install-and-connect-to-northwind"></a>Instalar y conectar a Northwind  
  En este ejemplo se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind. Debería funcionar con otros productos de base de datos SQL igual de bien si el proveedor de datos ADO.NET para ese producto es compatible con Entity Framework.  
   
-1.  Si no lo ha hecho ya, instale SQL Server 2014 LocalDB Express de 32 bits desde el [página de descarga de las ediciones de SQL Server](https://www.microsoft.com/sql-server/sql-server-editions-express).  
+1. Si no lo ha hecho ya, instale SQL Server 2014 LocalDB Express de 32 bits desde el [página de descarga de las ediciones de SQL Server](https://www.microsoft.com/sql-server/sql-server-editions-express).  
   
-2.  Instale la base de datos de ejemplo Northwind siguiendo estas instrucciones: [Instalar bases de datos de ejemplo de SQL Server](../data-tools/install-sql-server-sample-databases.md).  
+2. Instale la base de datos de ejemplo Northwind siguiendo estas instrucciones: [Instalar bases de datos de ejemplo de SQL Server](../data-tools/install-sql-server-sample-databases.md).  
   
-3.  [Agregar nuevas conexiones](../data-tools/add-new-connections.md) para Northwind.  
+3. [Agregar nuevas conexiones](../data-tools/add-new-connections.md) para Northwind.  
   
 ## <a name="configure-the-project"></a>Configuración del proyecto  
   
-1.  En Visual Studio, elija **archivo &#124; nuevo proyecto** y, a continuación, cree una nueva aplicación de WPF de C#.  
+1. En Visual Studio, elija **archivo &#124; nuevo proyecto** y, a continuación, cree una nueva aplicación de WPF de C#.  
   
-2.  A continuación, agregaremos el paquete NuGet de Entity Framework 6. En el Explorador de soluciones, seleccione el nodo del proyecto. En el menú principal, elija **proyecto &#124; administrar paquetes NuGet...**  
+2. A continuación, agregaremos el paquete NuGet de Entity Framework 6. En el Explorador de soluciones, seleccione el nodo del proyecto. En el menú principal, elija **proyecto &#124; administrar paquetes NuGet...**  
   
      ![Administrar paquetes de NuGet elemento de menú](../data-tools/media/raddata-vs2015-manage-nuget-packages.png "raddata_vs2015_manage_nuget_packages")  
   
-3.  En el Administrador de paquetes de NuGet, haga clic en el **examinar** vínculo. Entity Framework es probablemente el paquete en la lista superior. Haga clic en **instalar** en el panel derecho y siga las indicaciones. La ventana de salida indicará cuando finalice la instalación.  
+3. En el Administrador de paquetes de NuGet, haga clic en el **examinar** vínculo. Entity Framework es probablemente el paquete en la lista superior. Haga clic en **instalar** en el panel derecho y siga las indicaciones. La ventana de salida indicará cuando finalice la instalación.  
   
      ![Paquete de NuGet de Entity Framework](../data-tools/media/raddata-vs2015-nuget-ef.png "raddata_vs2015_Nuget_EF")  
   
-4.  Ahora podemos usar Visual Studio para crear un modelo basado en la base de datos Northwind.  
+4. Ahora podemos usar Visual Studio para crear un modelo basado en la base de datos Northwind.  
   
 ## <a name="create-the-model"></a>Creación del modelo  
   
@@ -70,11 +70,11 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
   
 6. Los archivos .tt son de uso general y es necesario ajustar uno de ellos para que funcione con el enlace de datos WPF, lo que requiere ObservableCollections.  En el Explorador de soluciones, expanda el nodo Northwind_model hasta que encuentre Northwind_model.tt. (Asegúrese de que están **no** en el *. Contexto archivo .tt que está directamente bajo el archivo .edmx).  
   
-   -   Reemplace las dos repeticiones de <xref:System.Collections.ICollection> con <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
+   - Reemplace las dos repeticiones de <xref:System.Collections.ICollection> con <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
   
-   -   Reemplace la primera aparición de <xref:System.Collections.Generic.HashSet%601> con <xref:System.Collections.ObjectModel.ObservableCollection%601> alrededor de la línea 51. No reemplazar la segunda aparición de HashSet  
+   - Reemplace la primera aparición de <xref:System.Collections.Generic.HashSet%601> con <xref:System.Collections.ObjectModel.ObservableCollection%601> alrededor de la línea 51. No reemplazar la segunda aparición de HashSet  
   
-   -   Reemplazar la aparición única de <xref:System.Collections.Generic> (alrededor de la línea 334) con <xref:System.Collections.ObjectModel>.  
+   - Reemplazar la aparición única de <xref:System.Collections.Generic> (alrededor de la línea 334) con <xref:System.Collections.ObjectModel>.  
   
 7. Presione **Ctrl + Mayús + B** para compilar el proyecto. Cuando finalice la compilación, las clases del modelo son visibles para el Asistente para orígenes de datos.  
   
@@ -83,17 +83,17 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
 ## <a name="databind-the-model-to-the-xaml-page"></a>Enlazar datos en el modelo a la página XAML  
  Es posible escribir su propio código de enlace de datos, pero resulta mucho más fácil permitir que Visual Studio lo haga por usted.  
   
-1.  En el menú principal, elija **proyecto &#124; Agregar nuevo origen de datos** para que aparezca el **Asistente para configuración de origen de datos**. Elija **objeto** porque estamos enlazando a las clases de modelo, no a la base de datos:  
+1. En el menú principal, elija **proyecto &#124; Agregar nuevo origen de datos** para que aparezca el **Asistente para configuración de origen de datos**. Elija **objeto** porque estamos enlazando a las clases de modelo, no a la base de datos:  
   
      ![Asistente para configuración de origen de datos con objeto de origen](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png "raddata Asistente para configuración de origen de datos con objeto de origen")  
   
-2.  Seleccione un cliente.  (Los orígenes para los pedidos se generará automáticamente desde la propiedad de navegación de pedidos de cliente.)  
+2. Seleccione un cliente.  (Los orígenes para los pedidos se generará automáticamente desde la propiedad de navegación de pedidos de cliente.)  
   
      ![Agregar clases de entidad como orígenes de datos](../data-tools/media/raddata-add-entity-classes-as-data-sources.png "raddata Agregar entidad clases como orígenes de datos")  
   
-3.  Haga clic en **finalizar**  
+3. Haga clic en **finalizar**  
   
-4.  Vaya a MainWindow.xaml en la vista código. Vamos a mantener el XAML muy sencillo para los fines de este ejemplo. Cambiar el título de MainWindow a algo más descriptivo y aumentar el alto y ancho a 800 x 600 por ahora. Siempre puede cambiar más adelante. Ahora, agregue estas definiciones de tres filas a la cuadrícula principal, una fila para los botones de navegación, uno de los detalles del cliente, uno para la cuadrícula que muestra los pedidos:  
+4. Vaya a MainWindow.xaml en la vista código. Vamos a mantener el XAML muy sencillo para los fines de este ejemplo. Cambiar el título de MainWindow a algo más descriptivo y aumentar el alto y ancho a 800 x 600 por ahora. Siempre puede cambiar más adelante. Ahora, agregue estas definiciones de tres filas a la cuadrícula principal, una fila para los botones de navegación, uno de los detalles del cliente, uno para la cuadrícula que muestra los pedidos:  
   
     ```xaml  
     <Grid.RowDefinitions>  
@@ -103,7 +103,7 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
            </Grid.RowDefinitions>  
     ```  
   
-5.  Ahora abra MainWindow.xaml por lo que está viendo en el diseñador. Esto hará que la ventana de orígenes de datos que aparezca como una opción en el margen de la ventana de Visual Studio junto al cuadro de herramientas. Haga clic en la pestaña para abrir la ventana, o presione else **Mayús + Alt + D** o elija **vista &#124; Other Windows &#124; orígenes de datos**. Vamos a mostrar cada propiedad de la clase de los clientes en su propio cuadro de texto individuales. En primer lugar, haga clic en la flecha en el cuadro combinado de clientes y elija **detalles**. A continuación, arrastre el nodo a la parte central de la superficie de diseño para que sepa que el diseñador que desee que aparezca en la fila central.  Si se pierde, puede especificar la fila manualmente más adelante en el XAML. De forma predeterminada, los controles se colocan verticalmente en un elemento de cuadrícula, pero en este momento puede organizarlos como desee en el formulario.  Por ejemplo, tendría sentido para colocar el cuadro de texto Nombre de la parte superior, por encima de la dirección. La aplicación de ejemplo para este artículo reordena los campos y ellos reorganiza en dos columnas.  
+5. Ahora abra MainWindow.xaml por lo que está viendo en el diseñador. Esto hará que la ventana de orígenes de datos que aparezca como una opción en el margen de la ventana de Visual Studio junto al cuadro de herramientas. Haga clic en la pestaña para abrir la ventana, o presione else **Mayús + Alt + D** o elija **vista &#124; Other Windows &#124; orígenes de datos**. Vamos a mostrar cada propiedad de la clase de los clientes en su propio cuadro de texto individuales. En primer lugar, haga clic en la flecha en el cuadro combinado de clientes y elija **detalles**. A continuación, arrastre el nodo a la parte central de la superficie de diseño para que sepa que el diseñador que desee que aparezca en la fila central.  Si se pierde, puede especificar la fila manualmente más adelante en el XAML. De forma predeterminada, los controles se colocan verticalmente en un elemento de cuadrícula, pero en este momento puede organizarlos como desee en el formulario.  Por ejemplo, tendría sentido para colocar el cuadro de texto Nombre de la parte superior, por encima de la dirección. La aplicación de ejemplo para este artículo reordena los campos y ellos reorganiza en dos columnas.  
   
      ![Enlace de origen de datos de los clientes a controles individuales](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "raddata enlace de origen de datos de los clientes a controles individuales")  
   
@@ -113,11 +113,11 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
     <Grid DataContext="{StaticResource customerViewSource}">  
     ```  
   
-6.  Cuando un cliente está visible en la mitad superior de la ventana, queremos ver mitad sus pedidos en la parte inferior. Le mostraremos los pedidos en un control de vista de cuadrícula único. Para que el enlace de datos principal-detalle funcione según lo esperado, es importante que enlazamos a la propiedad Orders en la clase de los clientes, no para el nodo de pedidos independiente. Preste atención a la siguiente ilustración. Arrastre la propiedad Orders de la clase de los clientes a la mitad inferior del formulario, para que el diseñador lo coloca en la fila 2:  
+6. Cuando un cliente está visible en la mitad superior de la ventana, queremos ver mitad sus pedidos en la parte inferior. Le mostraremos los pedidos en un control de vista de cuadrícula único. Para que el enlace de datos principal-detalle funcione según lo esperado, es importante que enlazamos a la propiedad Orders en la clase de los clientes, no para el nodo de pedidos independiente. Preste atención a la siguiente ilustración. Arrastre la propiedad Orders de la clase de los clientes a la mitad inferior del formulario, para que el diseñador lo coloca en la fila 2:  
   
      ![Arrastre las clases de pedidos como cuadrícula](../data-tools/media/raddata-drag-orders-classes-as-grid.png "raddata pedidos arrastrar clases como cuadrícula")  
   
-7.  Visual Studio ha generado todo el código de enlace que se conecta a los controles de interfaz de usuario a los eventos en el modelo. Todo lo que necesitamos hacer para ver algunos datos, consiste en escribir código para rellenar el modelo. Primero vamos a navegar a MainWindow.xaml.cs y agregue un miembro de datos a la clase MainWindow para el contexto de datos. Este objeto, que se ha generado para nosotros, actúa algo parecido a un control que realiza el seguimiento de cambios y eventos en el modelo. Mientras estamos aquí, vamos a agregar a dos miembros que se usará más adelante para agregar un nuevo cliente o un pedido nuevo. También vamos a agregar la lógica de inicialización del constructor. La parte superior de la clase debe tener este aspecto:  
+7. Visual Studio ha generado todo el código de enlace que se conecta a los controles de interfaz de usuario a los eventos en el modelo. Todo lo que necesitamos hacer para ver algunos datos, consiste en escribir código para rellenar el modelo. Primero vamos a navegar a MainWindow.xaml.cs y agregue un miembro de datos a la clase MainWindow para el contexto de datos. Este objeto, que se ha generado para nosotros, actúa algo parecido a un control que realiza el seguimiento de cambios y eventos en el modelo. Mientras estamos aquí, vamos a agregar a dos miembros que se usará más adelante para agregar un nuevo cliente o un pedido nuevo. También vamos a agregar la lógica de inicialización del constructor. La parte superior de la clase debe tener este aspecto:  
   
     ```csharp  
     public partial class MainWindow : Window  
@@ -167,7 +167,7 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
         }  
     ```  
   
-8.  Presione **F5**. Debería ver los detalles para el primer cliente que se recuperó en CollectionViewSource y sus pedidos en la cuadrícula de datos. El formato no es excelente, así que vamos a corregir que. crear una forma de ver los demás registros y realizar operaciones CRUD básicas.  
+8. Presione **F5**. Debería ver los detalles para el primer cliente que se recuperó en CollectionViewSource y sus pedidos en la cuadrícula de datos. El formato no es excelente, así que vamos a corregir que. crear una forma de ver los demás registros y realizar operaciones CRUD básicas.  
   
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Ajustar el diseño de página y agregue las cuadrículas para clientes y pedidos nuevos  
  La organización predeterminada generada por Visual Studio no es ideal para nuestra aplicación, por lo que haremos algunos cambios manualmente en el XAML. También necesitamos algunas "forms" (que son realmente las cuadrículas) para permitir al usuario agregar un nuevo cliente o un pedido nuevo.    Para poder agregar un nuevo cliente y un pedido, necesitamos un conjunto independiente de los cuadros de texto que no están enlazados a datos a la `CollectionViewSource`. Se deberá controlar qué ve el usuario en cualquier momento estableciendo la propiedad Visible en los métodos de control de cuadrícula.  
@@ -393,7 +393,7 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
   
 #### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Agregar comandos, enlaces y los botones en XAML  
   
-1.  En primer lugar, vamos a agregar los comandos de nuestro archivo MainWindow.XAML dentro del elemento Windows.Resources:  
+1. En primer lugar, vamos a agregar los comandos de nuestro archivo MainWindow.XAML dentro del elemento Windows.Resources:  
   
     ```xaml  
   
@@ -408,7 +408,7 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
     <RoutedUICommand x:Key="CancelCommand" Text="Cancel"/>  
     ```  
   
-2.  Un elemento CommandBinding asigna un evento RoutedUICommand a un método en el código subyacente. Agregue este elemento CommandBindings después de la etiqueta de cierre de Windows.Resources:  
+2. Un elemento CommandBinding asigna un evento RoutedUICommand a un método en el código subyacente. Agregue este elemento CommandBindings después de la etiqueta de cierre de Windows.Resources:  
   
     ```xaml  
   
@@ -425,7 +425,7 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
     </Window.CommandBindings>  
     ```  
   
-3.  Ahora vamos a agregar el elemento StackPanel con el panel de navegación, agregar, eliminar y actualizar los botones. En primer lugar, agregue este estilo a Windows.Resources:  
+3. Ahora vamos a agregar el elemento StackPanel con el panel de navegación, agregar, eliminar y actualizar los botones. En primer lugar, agregue este estilo a Windows.Resources:  
   
     ```xaml  
     <Style x:Key="NavButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">  
@@ -455,9 +455,9 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
   
 #### <a name="add-command-handlers-to-the-mainwindow-class"></a>Agregar controladores de comandos a la clase MainWindow  
   
-1.  El código subyacente es mínimo, excepto los métodos add y delete. Tenga en cuenta que el panel de navegación se realiza llamando a métodos en la propiedad de la vista de CollectionViewSource. La DeleteOrderCommandHandler muestra cómo realizar una eliminación en cascada de un pedido. Se debe eliminar primero el Order_Details que están asociados con ella. El UpdateCommandHandler agrega a un nuevo cliente a la colección, o bien actualiza solo el objeto existente con lo que los cambios realizados en los cuadros de texto por el usuario.  
+1. El código subyacente es mínimo, excepto los métodos add y delete. Tenga en cuenta que el panel de navegación se realiza llamando a métodos en la propiedad de la vista de CollectionViewSource. La DeleteOrderCommandHandler muestra cómo realizar una eliminación en cascada de un pedido. Se debe eliminar primero el Order_Details que están asociados con ella. El UpdateCommandHandler agrega a un nuevo cliente a la colección, o bien actualiza solo el objeto existente con lo que los cambios realizados en los cuadros de texto por el usuario.  
   
-2.  Agregue estos métodos de controlador a la clase MainWindow de MainWindow.xaml.cs, si su CollectionViewSource para la tabla Customers tiene un nombre diferente, será necesario ajustar el nombre de cada uno de estos métodos:  
+2. Agregue estos métodos de controlador a la clase MainWindow de MainWindow.xaml.cs, si su CollectionViewSource para la tabla Customers tiene un nombre diferente, será necesario ajustar el nombre de cada uno de estos métodos:  
   
     ```csharp  
        private void LastCommandHandler(object sender, ExecutedRoutedEventArgs e)  
@@ -701,7 +701,7 @@ Este tutorial muestra cómo crear una aplicación básica "formularios sobre dat
     }  
     ```  
   
-3.  Presione **F5**. Debería ver los datos y los botones de navegación deberían funcionar según lo previsto. Haga clic en "Confirmar" para agregar un nuevo cliente o un pedido para el modelo después de escribir los datos.  Haga clic en "Cancelar" para volver atrás en un nuevo formulario de cliente o un pedido nuevo sin guardar los cambios. Puede realizar modificaciones a los clientes y pedidos directamente en los cuadros de texto existentes, y esos cambios se escribirán en el modelo automáticamente.  
+3. Presione **F5**. Debería ver los datos y los botones de navegación deberían funcionar según lo previsto. Haga clic en "Confirmar" para agregar un nuevo cliente o un pedido para el modelo después de escribir los datos.  Haga clic en "Cancelar" para volver atrás en un nuevo formulario de cliente o un pedido nuevo sin guardar los cambios. Puede realizar modificaciones a los clientes y pedidos directamente en los cuadros de texto existentes, y esos cambios se escribirán en el modelo automáticamente.  
   
 ## <a name="see-also"></a>Vea también  
  [Visual Studio data tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [documentación de Entity Framework](https://msdn.microsoft.com/data/ee712907.aspx)

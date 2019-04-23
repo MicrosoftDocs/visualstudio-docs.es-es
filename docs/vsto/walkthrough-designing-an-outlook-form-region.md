@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e6ad8a11e736595912b1b6c8757bd75dca1e53e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097432"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Tutorial: Diseñar un formulario de Outlook
   Las áreas de formulario personalizadas extienden los formularios estándar o personalizados de Microsoft Office Outlook. En este tutorial diseñará un área de formulario personalizada que aparece como una nueva página en la ventana del inspector de un elemento de contacto. Esta área de formulario muestra una asignación de cada dirección incluida para el contacto, enviando la información de la dirección al sitio web de búsqueda local de Windows Live. Para obtener información acerca de las áreas de formulario, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).
@@ -26,15 +26,15 @@ ms.locfileid: "58355583"
 
  En este tutorial se muestran las tareas siguientes:
 
--   Crear un proyecto de complemento de VSTO de Outlook
+- Crear un proyecto de complemento de VSTO de Outlook
 
--   Agregar un área de formulario al proyecto de complemento de VSTO.
+- Agregar un área de formulario al proyecto de complemento de VSTO.
 
--   Definir el diseño del área de formulario.
+- Definir el diseño del área de formulario.
 
--   Personalizar el comportamiento del área de formulario.
+- Personalizar el comportamiento del área de formulario.
 
--   Probar el área de formulario de Outlook.
+- Probar el área de formulario de Outlook.
 
 > [!NOTE]
 >  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -53,11 +53,11 @@ ms.locfileid: "58355583"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Para crear un proyecto de complemento de VSTO de Outlook
 
-1.  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de complemento VSTO de Outlook con el nombre **MapItAddIn**.
+1. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de complemento VSTO de Outlook con el nombre **MapItAddIn**.
 
-2.  En el cuadro de diálogo **Nuevo proyecto** , seleccione **Crear directorio para la solución**.
+2. En el cuadro de diálogo **Nuevo proyecto** , seleccione **Crear directorio para la solución**.
 
-3.  Guarde el proyecto en cualquier directorio.
+3. Guarde el proyecto en cualquier directorio.
 
      Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -66,27 +66,27 @@ ms.locfileid: "58355583"
 
 ### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Para agregar un área de formulario al proyecto de complemento de VSTO de Outlook
 
-1.  En **el Explorador de soluciones**, seleccione el **MapItAddIn** proyecto.
+1. En **el Explorador de soluciones**, seleccione el **MapItAddIn** proyecto.
 
-2.  En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
+2. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-3.  En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **formulario de Outlook**, asigne el nombre **MapIt**y, a continuación, haga clic en **agregar**.
+3. En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **formulario de Outlook**, asigne el nombre **MapIt**y, a continuación, haga clic en **agregar**.
 
      El **área de formulario NewOutlook** se inicia el asistente.
 
-4.  En el **Seleccione cómo desea crear el área de formulario** página, haga clic en **diseñar una nueva área de formulario**y, a continuación, haga clic en **siguiente**.
+4. En el **Seleccione cómo desea crear el área de formulario** página, haga clic en **diseñar una nueva área de formulario**y, a continuación, haga clic en **siguiente**.
 
-5.  En el **seleccione el tipo de área de formulario que desea crear** página, haga clic en **independiente**y, a continuación, haga clic en **siguiente**.
+5. En el **seleccione el tipo de área de formulario que desea crear** página, haga clic en **independiente**y, a continuación, haga clic en **siguiente**.
 
      Un *independiente* área de formulario agrega una nueva página a un formulario de Outlook. Para obtener más información sobre los tipos de región de formulario, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).
 
-6.  En el **proporcione texto descriptivo y seleccione sus preferencias de presentación** , escriba **Map It** en el **nombre** cuadro.
+6. En el **proporcione texto descriptivo y seleccione sus preferencias de presentación** , escriba **Map It** en el **nombre** cuadro.
 
      Este nombre aparece en la cinta de opciones de la ventana del inspector cuando se abre el elemento de contacto.
 
-7.  Seleccione **inspectores que están en modo de redacción** y **inspectores que están en modo de lectura**y, a continuación, haga clic en **siguiente**.
+7. Seleccione **inspectores que están en modo de redacción** y **inspectores que están en modo de lectura**y, a continuación, haga clic en **siguiente**.
 
-8.  En el **identifique las clases de mensaje que mostrarán esta área de formulario** página, desactive **mensaje de correo**, seleccione **póngase en contacto con**y, a continuación, haga clic en **finalizar**.
+8. En el **identifique las clases de mensaje que mostrarán esta área de formulario** página, desactive **mensaje de correo**, seleccione **póngase en contacto con**y, a continuación, haga clic en **finalizar**.
 
      Un *MapIt.cs* o *MapIt.vb* archivo se agrega al proyecto.
 
@@ -95,17 +95,17 @@ ms.locfileid: "58355583"
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>Para definir el diseño del área de formulario
 
-1.  En **el Explorador de soluciones**, expanda el **MapItAddIn** del proyecto y, a continuación, haga doble clic en *MapIt.cs* o *MapIt.vb* para abrir el área de formulario Diseñador.
+1. En **el Explorador de soluciones**, expanda el **MapItAddIn** del proyecto y, a continuación, haga doble clic en *MapIt.cs* o *MapIt.vb* para abrir el área de formulario Diseñador.
 
-2.  Haga clic en el diseñador y, a continuación, haga clic en **propiedades**.
+2. Haga clic en el diseñador y, a continuación, haga clic en **propiedades**.
 
-3.  En el **propiedades** ventana, establezca **tamaño** a **664, 469**.
+3. En el **propiedades** ventana, establezca **tamaño** a **664, 469**.
 
      De esta forma se garantiza que el área de formulario sea suficientemente grande para mostrar una asignación.
 
-4.  En el menú **Ver** , haga clic en **Cuadro de herramientas**.
+4. En el menú **Ver** , haga clic en **Cuadro de herramientas**.
 
-5.  Desde el **controles comunes** pestaña de la **cuadro de herramientas**, agregue un **WebBrowser** al área de formulario.
+5. Desde el **controles comunes** pestaña de la **cuadro de herramientas**, agregue un **WebBrowser** al área de formulario.
 
      El **WebBrowser** mostrará un mapa de cada dirección enumerada para el contacto.
 
@@ -143,13 +143,13 @@ ms.locfileid: "58355583"
 
 ### <a name="to-test-the-map-it-form-region"></a>Para comprobar el área de formulario Map It
 
-1.  Presione **F5** para ejecutar el proyecto.
+1. Presione **F5** para ejecutar el proyecto.
 
      Se abre Outlook.
 
-2.  En Outlook, en el **inicio** , haga clic **nuevos elementos**y, a continuación, haga clic en **póngase en contacto con**.
+2. En Outlook, en el **inicio** , haga clic **nuevos elementos**y, a continuación, haga clic en **póngase en contacto con**.
 
-3.  En el formulario de contacto, escriba **Ann Beebe** como el póngase en contacto con el nombre y, a continuación, especifique las tres direcciones siguientes.
+3. En el formulario de contacto, escriba **Ann Beebe** como el póngase en contacto con el nombre y, a continuación, especifique las tres direcciones siguientes.
 
     |Tipo de dirección|Dirección|
     |------------------|-------------|
@@ -157,20 +157,20 @@ ms.locfileid: "58355583"
     |**Página principal**|**1234 North St. Buffalo, NY**|
     |**Otros problemas**|**3456 Main St. Seattle, WA**|
 
-4.  Guarde y cierre el elemento de contacto.
+4. Guarde y cierre el elemento de contacto.
 
-5.  Vuelva a abrir el **Ann Beebe** elemento de contacto.
+5. Vuelva a abrir el **Ann Beebe** elemento de contacto.
 
     En Outlook, esto puede hacerse el **buscar** agrupe por abrir la libreta de direcciones para los contactos o escribiendo Ann Beebe en **buscar personas**.
 
-6.  En el **mostrar** grupo de cinta de opciones del elemento, haga clic en **Map It** para abrir el área de formulario Map It.
+6. En el **mostrar** grupo de cinta de opciones del elemento, haga clic en **Map It** para abrir el área de formulario Map It.
 
      Aparece el área de formulario Map It y muestra el sitio web de búsqueda local. El **Business**, **inicio**, y **otros** direcciones aparecen en el Bloc de notas. En dicho bloc, seleccione la dirección que desea asignar.
 
 ## <a name="next-steps"></a>Pasos siguientes
  Puede obtener más información sobre cómo personalizar la interfaz de usuario de una aplicación de Outlook en estos temas:
 
--   Para obtener información sobre cómo personalizar la cinta de opciones de un elemento de Outlook, consulte [personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Para obtener información sobre cómo personalizar la cinta de opciones de un elemento de Outlook, consulte [personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
 ## <a name="see-also"></a>Vea también
 - [Obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md)

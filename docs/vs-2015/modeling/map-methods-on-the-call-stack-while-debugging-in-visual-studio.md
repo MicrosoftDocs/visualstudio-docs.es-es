@@ -30,12 +30,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5afe8934d2172958407a1b2db867f2049e4cdee3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 572e9f913824ca5f981d139bda6eac2634dbba18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080896"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Asignar métodos en la pila de llamadas durante la depuración en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
   Para obtener detalles de los comandos y las acciones que puede utilizar cuando se trabaja con mapas de código, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 
-##  <a name="MapStack"></a> Asignar la pila de llamadas
+## <a name="MapStack"></a> Asignar la pila de llamadas
 
-1.  Inicie la depuración. (Teclado: **F5**)
+1. Inicie la depuración. (Teclado: **F5**)
 
-2.  Después de la aplicación entra en modo de interrupción o entra en una función, elija **mapa de código**. (Teclado: **CTRL** + **MAYÚS** + **`**)
+2. Después de la aplicación entra en modo de interrupción o entra en una función, elija **mapa de código**. (Teclado: **CTRL** + **MAYÚS** + **`**)
 
      ![Elegir mapa de código para iniciar la pila de llamadas de asignación](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
@@ -68,17 +68,17 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
      El mapa se actualiza automáticamente a la vez que continúa depurando. Consulte [actualizar el mapa con la siguiente pila de llamadas](#UpdateMap).
 
-##  <a name="MakeNotes"></a> Hacer notas sobre el código
+## <a name="MakeNotes"></a> Hacer notas sobre el código
  Agregue comentarios para el hacer seguimiento de lo que pasa en el código. Para agregar una nueva línea en un comentario, presione **MAYÚS + ENTRAR**.
 
  ![Agregar comentario a la pila de llamadas en mapa de código](../debugger/media/debuggermap-addcomment.png "DebuggerMap_AddComment")
 
-##  <a name="UpdateMap"></a> Actualizar el mapa con la siguiente pila de llamadas
+## <a name="UpdateMap"></a> Actualizar el mapa con la siguiente pila de llamadas
  Ejecute la aplicación hasta el siguiente punto de interrupción o entre en una función. El mapa agrega una nueva pila de llamadas.
 
  ![Actualizar el mapa de código con la siguiente pila de llamadas](../debugger/media/debuggermap-addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-##  <a name="AddRelatedCode"></a> Agregar código relacionado al mapa
+## <a name="AddRelatedCode"></a> Agregar código relacionado al mapa
  Ahora ya tiene un mapa, ¿qué viene después? Si trabaja con Visual C# .NET o Visual Basic .NET, agregue elementos, como campos, propiedades y otros métodos, para hacer el seguimiento de lo que pasa en el código.
 
  Haga doble clic en un método para ver su definición de código, o bien use el menú contextual para el método. (Teclado: Seleccione el método en el mapa y presione **F12**)
@@ -102,7 +102,7 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
  ![Los métodos que usan un campo en el mapa de código de pila de llamadas](../debugger/media/debuggermap-foundallreferences.png "DebuggerMap_FoundAllReferences")
 
-##  <a name="FindBugs"></a> Buscar errores usando el mapa
+## <a name="FindBugs"></a> Buscar errores usando el mapa
  La visualización del código puede ayudarle a encontrar errores con mayor rapidez. Por ejemplo, suponga que está investigando un error en un programa de dibujo. Cuando dibuja una línea e intenta deshacerla, no sucede nada hasta que dibuja otra línea.
 
  Por tanto, establece los puntos de interrupción en los métodos  `clear`, `undo` y `Repaint`, inicia la depuración y compila un mapa como este:
@@ -115,7 +115,7 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
  ![Agregar nueva pila de llamada a método en el mapa de código](../debugger/media/debuggermap-addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
 
-##  <a name="QA"></a> Preguntas y respuestas
+## <a name="QA"></a> Preguntas y respuestas
 
 - **No todas las llamadas aparecen en el mapa. ¿Por qué?**
 
@@ -139,11 +139,11 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
    Abra el **diseño** menú en la barra de herramientas del mapa:
 
-  -   Cambie el diseño predeterminado.
+  - Cambie el diseño predeterminado.
 
-  -   Para detener reorganizar el mapa automáticamente, desactive la opción **diseñar automáticamente al depurar**.
+  - Para detener reorganizar el mapa automáticamente, desactive la opción **diseñar automáticamente al depurar**.
 
-  -   Para reorganizar el mapa lo mínimo posible al agregar elementos, desactive la opción **diseño Incremental**.
+  - Para reorganizar el mapa lo mínimo posible al agregar elementos, desactive la opción **diseño Incremental**.
 
 - **¿Puedo compartir el mapa con otros usuarios?**
 

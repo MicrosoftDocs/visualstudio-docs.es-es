@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116178"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Depuración Just-In-Time en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Las acciones que debe realizar cuando ve el Visual Studio Just-in-Time cuadro de
 
 - Debe tener [instalado Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) para ver la información detallada sobre el error y se intenta depurarla. Consulte [JIT utilizando](#BKMK_Using_JIT) para obtener instrucciones detalladas. Si no se puede resolver el error y corregir la aplicación, póngase en contacto con el propietario de la aplicación para resolver el error.
 
-##  <a name="BKMK_Enabling"></a> Habilitar o deshabilitar Just-In-Time la depuración
+## <a name="BKMK_Enabling"></a> Habilitar o deshabilitar Just-In-Time la depuración
  Puede habilitar o deshabilitar la depuración de Visual Studio Just-In-Time **herramientas / opciones** cuadro de diálogo.
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Para habilitar o deshabilitar la depuración Just-In-Time
@@ -73,36 +73,36 @@ Las acciones que debe realizar cuando ve el Visual Studio Just-in-Time cuadro de
 
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Para deshabilitar la depuración Just-In-Time editando el Registro
 
-1.  En el **iniciar** menú, busque y ejecute `regedit.exe`
+1. En el **iniciar** menú, busque y ejecute `regedit.exe`
 
-2.  En el **Editor del registro** ventana, busque y elimine las entradas del registro de seguimiento:
+2. En el **Editor del registro** ventana, busque y elimine las entradas del registro de seguimiento:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
 
-3.  Si el equipo se está ejecutando un sistema operativo de 64 bits, elimine también las siguientes entradas del registro:
+3. Si el equipo se está ejecutando un sistema operativo de 64 bits, elimine también las siguientes entradas del registro:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
 
-4.  Tenga cuidado de no eliminar ni cambiar accidentalmente ninguna otra clave del Registro.
+4. Tenga cuidado de no eliminar ni cambiar accidentalmente ninguna otra clave del Registro.
 
-5.  Cerrar la **Editor del registro** ventana.
+5. Cerrar la **Editor del registro** ventana.
 
 > [!NOTE]
 >  Si desea deshabilitar la depuración para una aplicación de servidor Just-In-Time y estos pasos no resuelven el problema, desactive la depuración del lado servidor en la configuración de la aplicación de IIS y vuelva a intentar.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Para habilitar la depuración Just-In-Time para un Windows Form
 
-1.  De forma predeterminada, las aplicaciones de Windows Forms tienen un controlador de excepciones de nivel superior que permite que el programa continúe ejecutándose si puede recuperar. Por ejemplo, si la aplicación de Windows Forms produce una excepción no controlada, verá un cuadro de diálogo similar al siguiente:
+1. De forma predeterminada, las aplicaciones de Windows Forms tienen un controlador de excepciones de nivel superior que permite que el programa continúe ejecutándose si puede recuperar. Por ejemplo, si la aplicación de Windows Forms produce una excepción no controlada, verá un cuadro de diálogo similar al siguiente:
 
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
 
      Para habilitar Just-In-Time la depuración de una aplicación de Windows Forms, debe realizar los siguientes pasos adicionales:
 
-2.  Establecer el `jitDebugging` valor `true` en el `system.windows.form` sección del archivo machine.config o  *\<nombre de aplicación >*. archivo exe.config:
+2. Establecer el `jitDebugging` valor `true` en el `system.windows.form` sección del archivo machine.config o  *\<nombre de aplicación >*. archivo exe.config:
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ Las acciones que debe realizar cuando ve el Visual Studio Just-in-Time cuadro de
     </configuration>
     ```
 
-3.  En una aplicación de Windows Forms de C++, también debe establecer `DebuggableAttribute` en un archivo .config o en el código. Si compila con la opción [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) y sin la opción [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), el compilador establece este atributo automáticamente. Sin embargo, si desea depurar una compilación de versión no optimizada, deberá establecerlo personalmente. Puede hacerlo agregando la siguiente línea al archivo AssemblyInfo.cpp de la aplicación:
+3. En una aplicación de Windows Forms de C++, también debe establecer `DebuggableAttribute` en un archivo .config o en el código. Si compila con la opción [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) y sin la opción [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), el compilador establece este atributo automáticamente. Sin embargo, si desea depurar una compilación de versión no optimizada, deberá establecerlo personalmente. Puede hacerlo agregando la siguiente línea al archivo AssemblyInfo.cpp de la aplicación:
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -178,19 +178,19 @@ static void Main(string[] args)
 
  Es posible que aparezcan los siguientes mensajes de error asociados a la depuración Just-In-Time.
 
--   **No se puede adjuntar al proceso de bloqueo. El programa especificado no es un programa para Windows o MS-DOS.**
+- **No se puede adjuntar al proceso de bloqueo. El programa especificado no es un programa para Windows o MS-DOS.**
 
      Este error se produce al intentar adjuntar a un proceso que se ejecuta como otro usuario.
 
      Para solucionar este problema, inicie Visual Studio, abra el **asociar al proceso** cuadro de diálogo desde el **depurar** menú y busque el proceso que desee depurar en el **procesos disponibles**lista. Si no conoce el nombre del proceso, examine el **Just In Time de Visual Studio Debugger** cuadro de diálogo y anote el identificador de proceso. Seleccione el proceso en el **procesos disponibles** lista y haga clic en **adjuntar**. En el **depurador Just In Time de Visual Studio** cuadro de diálogo, haga clic en **No** para descartar el cuadro de diálogo.
 
--   **No se pudo iniciar el depurador porque no hay usuarios conectados.**
+- **No se pudo iniciar el depurador porque no hay usuarios conectados.**
 
      Este error se produce cuando la depuración Just-In-Time intenta iniciar Visual Studio en un equipo en el que no hay ningún usuario que haya iniciado sesión en la consola. Como no ha iniciado sesión ningún usuario, no hay ninguna sesión de usuario que se pueda mostrar el cuadro de diálogo de depuración Just-In-Time.
 
      Para solucionar este problema, inicie una sesión en el equipo.
 
--   **No se ha registrado la clase.**
+- **No se ha registrado la clase.**
 
      Este error indica que el depurador intentó crear una clase COM que no está registrada, probablemente debido a un problema de instalación.
 

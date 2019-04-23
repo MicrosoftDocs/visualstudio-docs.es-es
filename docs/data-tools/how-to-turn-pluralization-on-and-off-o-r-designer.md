@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para activar y desactivar la pluralización (O-R Designer)
+title: Procedimiento Activación y desactivación de la pluralización (Object Relational Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51ca5704bae6d52bf6957b97ac01d2b587c05970
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 34b25be50cee681ee9c45e446d86a6054099926b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943563"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103750"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedimiento para activar y desactivar la pluralización (Object Relational Designer)
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedimiento Activación y desactivación de la pluralización (Object Relational Designer)
 De forma predeterminada, al arrastrar objetos de base de datos con nombres que terminan en s o es desde **Explorador de servidores** o **Database Explorer** hasta la [de LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), el nombres de las clases de entidad generadas cambian de plural a singular. Este cambio se produce para representar con mayor precisión la asignación de la clase de entidad con instancias a un solo registro de datos. Por ejemplo, agregando un `Customers` la tabla a la **Object Relational Designer** da como resultado una clase de entidad denominada `Customer` porque la clase contendrá datos para un solo cliente.
 
 > [!NOTE]
@@ -25,18 +25,18 @@ De forma predeterminada, al arrastrar objetos de base de datos con nombres que t
 
 ### <a name="to-turn-pluralization-on-and-off"></a>Para activar y desactivar la pluralización
 
-1.  En el menú **Herramientas** , haga clic en **Opciones**.
+1. En el menú **Herramientas** , haga clic en **Opciones**.
 
-2.  En el cuadro de diálogo **Opciones**, expanda **Herramientas para bases de datos**.
+2. En el cuadro de diálogo **Opciones**, expanda **Herramientas para bases de datos**.
 
     > [!NOTE]
     >  Seleccione **Mostrar todas las configuraciones** si el nodo **Herramientas para bases de datos** no está visible.
 
-3.  Haga clic en **Object Relational Designer**.
+3. Haga clic en **Object Relational Designer**.
 
-4.  Establecer **Pluralización de nombres** a **habilitado** = **False** para establecer el **Object Relational Designer** para que no cambia los nombres de clase .
+4. Establecer **Pluralización de nombres** a **habilitado** = **False** para establecer el **Object Relational Designer** para que no cambia los nombres de clase .
 
-5.  Establecer **Pluralización de nombres** a **habilitado** = **True** para aplicar las reglas de pluralización a los nombres de clase de los objetos agregados a la **Relational Diseñador**.
+5. Establecer **Pluralización de nombres** a **habilitado** = **True** para aplicar las reglas de pluralización a los nombres de clase de los objetos agregados a la **Relational Diseñador**.
 
 ## <a name="see-also"></a>Vea también
 

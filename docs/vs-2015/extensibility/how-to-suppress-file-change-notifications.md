@@ -1,5 +1,5 @@
 ---
-title: Filtrar Suprimir notificaciones de cambio de archivo | Documentos de Microsoft
+title: Procedimiento Suprimir notificaciones de cambio de archivo | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,14 +10,14 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 108910c52033af3574a004cf314be2628fd54122
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088956"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Filtrar Suprimir notificaciones de cambio de archivo
+# <a name="how-to-suppress-file-change-notifications"></a>Procedimiento Suprimir notificaciones de cambio de archivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cuando se ha cambiado el archivo físico que representa el búfer de texto, muestra un cuadro de diálogo con el mensaje **¿desea guardar los cambios en los siguientes elementos?** Esto se conoce como notificación de cambio de archivo. Si muchos cambios se van a estar en el archivo, sin embargo, este cuadro de diálogo muestra una y otra vez puede volverse rápidamente molesto.  
@@ -26,19 +26,19 @@ Cuando se ha cambiado el archivo físico que representa el búfer de texto, mues
   
 ### <a name="to-suppress-file-change-notification"></a>Para suprimir la notificación de cambio de archivo  
   
-1.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> método para determinar qué objeto de búfer de texto está asociado con el archivo abierto.  
+1. Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> método para determinar qué objeto de búfer de texto está asociado con el archivo abierto.  
   
-2.  Directo el <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto que está en la memoria para pasar por alto supervisando los cambios del archivo mediante la obtención de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> de la interfaz de la <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto (datos del documento) y, a continuación, implementar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> método con el `fIgnore` parámetro establecido en `true`.  
+2. Directo el <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto que está en la memoria para pasar por alto supervisando los cambios del archivo mediante la obtención de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> de la interfaz de la <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto (datos del documento) y, a continuación, implementar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> método con el `fIgnore` parámetro establecido en `true`.  
   
-3.  Llamar a los métodos en el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfaces para actualizar la memoria <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto con los cambios del archivo (por ejemplo, cuando se agrega un campo a su componente).  
+3. Llamar a los métodos en el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfaces para actualizar la memoria <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto con los cambios del archivo (por ejemplo, cuando se agrega un campo a su componente).  
   
-4.  Actualice el archivo en el disco con los cambios sin tener en cuenta cualquiera podría tener el usuario en curso de las ediciones pendientes.  
+4. Actualice el archivo en el disco con los cambios sin tener en cuenta cualquiera podría tener el usuario en curso de las ediciones pendientes.  
   
      De este modo, cuando se dirigen el <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> notificaciones de cambio de objeto que se va a reanudar la supervisión de archivos, el búfer de texto en la memoria refleja los cambios que ha generado, así como todas las demás ediciones pendientes. El archivo en disco refleja el código más reciente generado por el usuario y cualquier previamente guardado los cambios realizados por el usuario en el código editado por el usuario.  
   
-5.  Llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> método para notificar el <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto que se va a reanudar la supervisión para las notificaciones de cambio estableciendo el `fIgnore` parámetro `false`.  
+5. Llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> método para notificar el <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto que se va a reanudar la supervisión para las notificaciones de cambio estableciendo el `fIgnore` parámetro `false`.  
   
-6.  Si tiene previsto realizar varios cambios en el archivo, como en el caso del control de código fuente (SCC), a continuación, debe indicar el servicio de cambio de archivo global para suspender temporalmente las notificaciones de cambio.  
+6. Si tiene previsto realizar varios cambios en el archivo, como en el caso del control de código fuente (SCC), a continuación, debe indicar el servicio de cambio de archivo global para suspender temporalmente las notificaciones de cambio.  
   
      Por ejemplo, si se vuelva a escribir el archivo y, a continuación, cambie la marca de tiempo, debe suspender las notificaciones de cambio de archivo, como las operaciones de reescritura y timestample cada recuento como evento de cambio de un archivo independiente. Para habilitar la notificación de cambio de archivo global en su lugar, debe llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> método.  
   

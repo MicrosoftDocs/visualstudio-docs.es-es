@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar y quitar elementos de las características de SharePoint | Documentos de Microsoft
+title: Procedimiento Agregar y quitar elementos de las características de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 949014204f67f16e22d25cd604585a229c8967e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099382"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Filtrar Agregar y quitar elementos de las características de SharePoint
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Procedimiento Agregar y quitar elementos de las características de SharePoint
   Cuando se crea una solución de SharePoint, Visual Studio agrega los elementos de proyecto de SharePoint de forma predeterminada a la característica. Antes de la implementación, puede agregar y quitar elementos de proyecto de SharePoint para modificar la funcionalidad de SharePoint.
 
 ## <a name="add-sharepoint-project-items-to-a-feature"></a>Agregar elementos de proyecto de SharePoint a una característica
@@ -46,9 +46,9 @@ ms.locfileid: "56619230"
 
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Para quitar elementos de SharePoint con el Diseñador de características
 
-1.  Elija uno o más elementos en el **elementos de la característica** lista.
+1. Elija uno o más elementos en el **elementos de la característica** lista.
 
-2.  Elija la **quitar** botón (<) para quitar un elemento a la vez, o elija el **quitar todo** botón (<<) para quitar todos los elementos.
+2. Elija la **quitar** botón (<) para quitar un elemento a la vez, o elija el **quitar todo** botón (<<) para quitar todos los elementos.
 
      Los elementos de proyecto de SharePoint aparecen en la **elementos de la solución** lista.
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fe1fdfc8b16988505ef30773cf1ec2e98d58edd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e45fb303c840ec66655e3900dcea3d57b75c7da7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100968"
 ---
 # <a name="contained-languages"></a>Lenguajes contenidos
 
@@ -25,16 +25,16 @@ ms.locfileid: "55039649"
 
 La interfaz más importante que debe implementar para los lenguajes contenidos es la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfaz. Esta interfaz se implementa mediante cualquier lenguaje que se puede hospedar dentro de un idioma principal. Proporciona acceso a Coloreador del servicio de lenguaje, filtro de vista de texto e Id. de servicio de idioma principal. El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> le permite crear un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfaz. Los pasos siguientes muestran cómo implementar un lenguaje contenido:
 
-1.  Use `QueryService()` para obtener el idioma de Id. de servicio y el identificador de interfaz de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>.
+1. Use `QueryService()` para obtener el idioma de Id. de servicio y el identificador de interfaz de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>.
 
-2.  Para crear un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfaz, llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> método. Pasar un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaz, uno o varios [identificadores de elemento](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>)y un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> interfaz.
+2. Para crear un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfaz, llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> método. Pasar un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaz, uno o varios [identificadores de elemento](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>)y un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> interfaz.
 
-3.  El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> interfaz, que es el objeto de coordinador del búfer de texto, proporciona los servicios básicos que se necesitan para asignar ubicaciones en un archivo principal en el búfer del lenguaje secundario.
+3. El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> interfaz, que es el objeto de coordinador del búfer de texto, proporciona los servicios básicos que se necesitan para asignar ubicaciones en un archivo principal en el búfer del lenguaje secundario.
 
      Por ejemplo, en una sola *.aspx* archivo, el archivo principal incluye el ASP, HTML y todo el código que se encuentra. Sin embargo, el búfer secundario incluye sólo el código incluido junto con las definiciones de clase, para hacer que el búfer secundario de un archivo de código válido. El Coordinador de búfer controla el trabajo de coordinación de las ediciones de un búfer a otro.
 
-4.  El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> método, que es el idioma principal, indica que el Coordinador de búfer dentro de su búfer de texto se asigna al texto correspondiente en el búfer secundario.
+4. El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> método, que es el idioma principal, indica que el Coordinador de búfer dentro de su búfer de texto se asigna al texto correspondiente en el búfer secundario.
 
      El idioma que se pasa en una matriz de los <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> estructura, que actualmente solo incluye un elemento principal y un intervalo secundario.
 
-5.  El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> método y el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> método proporciona la asignación de principal a un búfer secundario y viceversa.
+5. El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> método y el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> método proporciona la asignación de principal a un búfer secundario y viceversa.

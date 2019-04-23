@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d37ef5efcdc7e559e19fcce396e8c87875bdf59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092323"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Cómo VSPackages agregar elementos de la interfaz de usuario
 Un VSPackage puede agregar elementos de interfaz de usuario, por ejemplo, menús, barras de herramientas y las ventanas en Visual Studio por medio de la *.vsct* archivo.
@@ -27,11 +27,11 @@ Un VSPackage puede agregar elementos de interfaz de usuario, por ejemplo, menús
 ## <a name="the-visual-studio-command-table-architecture"></a>La arquitectura de tabla de comandos de Visual Studio
  Como se mencionó, la arquitectura de la tabla de comandos es compatible con los principios de arquitectura anteriores. Los principios detrás de las abstracciones, estructuras de datos y herramientas de la arquitectura de la tabla de comandos son los siguientes:
 
--   Hay tres tipos básicos de elementos: menús, comandos y grupos. Los menús pueden exponerse en la interfaz de usuario como menús, submenús, barras de herramientas o ventanas de herramientas. Los comandos son procedimientos que el usuario puede ejecutar en el IDE, y pueden exponerse como elementos de menú, botones, cuadros de lista u otros controles. Los grupos son contenedores para los menús y comandos.
+- Hay tres tipos básicos de elementos: menús, comandos y grupos. Los menús pueden exponerse en la interfaz de usuario como menús, submenús, barras de herramientas o ventanas de herramientas. Los comandos son procedimientos que el usuario puede ejecutar en el IDE, y pueden exponerse como elementos de menú, botones, cuadros de lista u otros controles. Los grupos son contenedores para los menús y comandos.
 
--   Cada elemento viene especificada por una definición que describe el elemento, su prioridad relativa respecto a otros elementos y las marcas que modifican su comportamiento.
+- Cada elemento viene especificada por una definición que describe el elemento, su prioridad relativa respecto a otros elementos y las marcas que modifican su comportamiento.
 
--   Cada elemento tiene una selección de ubicación que describe al elemento primario del elemento. Un elemento puede tener varios elementos primarios, por lo que puede aparecer en varias ubicaciones de la interfaz de usuario.
+- Cada elemento tiene una selección de ubicación que describe al elemento primario del elemento. Un elemento puede tener varios elementos primarios, por lo que puede aparecer en varias ubicaciones de la interfaz de usuario.
 
      Cada comando debe tener un grupo como su elemento primario, incluso si es el único elemento secundario de ese grupo. Cada menú estándar también debe tener un grupo primario. Las barras de herramientas y ventanas de herramientas actúan como sus propios elementos primarios. Un grupo puede tener como su elemento primario de la barra de menús de Visual Studio principal, o cualquier menú, barra de herramientas o ventana de herramientas.
 
@@ -74,15 +74,15 @@ Un VSPackage puede agregar elementos de interfaz de usuario, por ejemplo, menús
 ### <a name="menus-groups-and-commands"></a>Menús, grupos y comandos
  Cuando un menú, grupo o comando tiene un GUID y un identificador, se puede agregar al IDE. Cada elemento de interfaz de usuario debe tener lo siguiente:
 
--   Un `guid` atributo que coincida con el nombre de la `GuidSymbol` elemento definido en el elemento de interfaz de usuario.
+- Un `guid` atributo que coincida con el nombre de la `GuidSymbol` elemento definido en el elemento de interfaz de usuario.
 
--   Un `id` atributo que coincida con el nombre del asociado `IDSymbol` elemento.
+- Un `id` atributo que coincida con el nombre del asociado `IDSymbol` elemento.
 
      Juntos, el `guid` y `id` atributos componen el *firma* del elemento de interfaz de usuario.
 
--   Un `priority` atributo que determina la posición del elemento de interfaz de usuario en su menú primario o un grupo.
+- Un `priority` atributo que determina la posición del elemento de interfaz de usuario en su menú primario o un grupo.
 
--   Un [elemento primario](../../extensibility/parent-element.md) cuya `guid` y `id` atributos que especifican la firma del menú primario o del grupo.
+- Un [elemento primario](../../extensibility/parent-element.md) cuya `guid` y `id` atributos que especifican la firma del menú primario o del grupo.
 
 #### <a name="menus"></a>Menús
  Cada menú se define como un [el elemento de menú](../../extensibility/menu-element.md) en la `Menus` sección. Deben tener los menús `guid`, `id`, y `priority` atributos y un `Parent` elemento y también los siguientes atributos adicionales y elementos secundarios:
@@ -263,17 +263,17 @@ priority="0x0100" type="Menu">
 #### <a name="general-requirements"></a>Requisitos generales
  El comando debe pasar a la siguiente serie de pruebas antes de mostrarse y habilitado:
 
--   El comando se coloca correctamente.
+- El comando se coloca correctamente.
 
--   El `DefaultInvisible` no se establece la marca.
+- El `DefaultInvisible` no se establece la marca.
 
--   El menú primario o la barra de herramientas está visible.
+- El menú primario o la barra de herramientas está visible.
 
--   El comando no es invisible debido a una entrada de contexto en el [VisibilityConstraints (elemento)](../../extensibility/visibilityconstraints-element.md) sección.
+- El comando no es invisible debido a una entrada de contexto en el [VisibilityConstraints (elemento)](../../extensibility/visibilityconstraints-element.md) sección.
 
--   Código de VSPackage que implemente la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz muestra y permite que el comando. No hay código de la interfaz interceptado y ha actuado sobre él.
+- Código de VSPackage que implemente la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz muestra y permite que el comando. No hay código de la interfaz interceptado y ha actuado sobre él.
 
--   Cuando un usuario hace clic en el comando, se convierte en sujeto al procedimiento que se describe en [algoritmo de enrutamiento](../../extensibility/internals/command-routing-algorithm.md).
+- Cuando un usuario hace clic en el comando, se convierte en sujeto al procedimiento que se describe en [algoritmo de enrutamiento](../../extensibility/internals/command-routing-algorithm.md).
 
 ## <a name="call-pre-defined-commands"></a>Llamar a comandos predefinidos
  El [UsedCommands (elemento)](../../extensibility/usedcommands-element.md) habilita a VSPackages para acceder a los comandos que se proporcionan por otros VSPackages o por el IDE. Para ello, cree un [UsedCommand (elemento)](../../extensibility/usedcommand-element.md) que tiene el GUID y el identificador del comando que se va a usar. Esto garantiza que el comando se cargarán por Visual Studio, incluso si no es parte de la configuración actual de Visual Studio. Para obtener más información, consulte [UsedCommand (elemento)](../../extensibility/usedcommand-element.md).

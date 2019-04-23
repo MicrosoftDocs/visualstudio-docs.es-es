@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108732"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Introducción a los modelos, las clases y las relaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
   
  Para reorganizar el diagrama de definición de DSL, hacer lo siguiente:  
   
--   Intercambiar principal y hacer referencia a vistas mediante el **Traer árbol aquí** y **dividir árbol** comandos. Haga clic en una clase de dominio único para ver estos comandos.  
+- Intercambiar principal y hacer referencia a vistas mediante el **Traer árbol aquí** y **dividir árbol** comandos. Haga clic en una clase de dominio único para ver estos comandos.  
   
--   Cambiar el orden de las clases de dominio y las clases de formas presionando Ctrl + arriba y Ctrl+flecha abajo.  
+- Cambiar el orden de las clases de dominio y las clases de formas presionando Ctrl + arriba y Ctrl+flecha abajo.  
   
--   Contraer o expandir las clases mediante el icono en la superior derecha de cada forma.  
+- Contraer o expandir las clases mediante el icono en la superior derecha de cada forma.  
   
--   Contraer partes del árbol, haga clic en el signo menos (-) en la parte inferior de una clase de dominio.  
+- Contraer partes del árbol, haga clic en el signo menos (-) en la parte inferior de una clase de dominio.  
   
 ## <a name="inheritance"></a>Herencia  
  Clases de dominio se pueden definir mediante herencia. Para crear una derivación de herencia, haga clic en la herramienta de herencia, haga clic en la clase derivada y, a continuación, haga clic en la clase base. Un elemento de modelo tiene todas las propiedades que se definen en su propia clase de dominio, junto con todas las propiedades heredadas de la clase base. También hereda sus roles en las relaciones.  

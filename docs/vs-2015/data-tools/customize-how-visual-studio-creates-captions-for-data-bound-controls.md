@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079492"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ Cuando se arrastran elementos desde la [ventana Orígenes de datos](http://msdn.
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Para modificar el comportamiento inteligente subtítulos (CC) de la ventana de orígenes de datos
 
-1.  Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
+1. Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
 
-2.  Tipo `regedit` en el **ejecutar** cuadro de diálogo y haga clic en **Aceptar**.
+2. Tipo `regedit` en el **ejecutar** cuadro de diálogo y haga clic en **Aceptar**.
 
-3.  Expanda el **HKEY_CURRENT_USER** nodo.
+3. Expanda el **HKEY_CURRENT_USER** nodo.
 
-4.  Expanda el **Software** nodo.
+4. Expanda el **Software** nodo.
 
-5.  Expanda el **Microsoft** nodo.
+5. Expanda el **Microsoft** nodo.
 
-6.  Expanda el **VisualStudio** nodo.
+6. Expanda el **VisualStudio** nodo.
 
-7.  Haga clic en el **10.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+7. Haga clic en el **10.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
 
-8.  Haga clic en el **diseñadores de datos** nodo y crear un nuevo **valor de cadena** denominado `SmartCaptionExpression`.
+8. Haga clic en el **diseñadores de datos** nodo y crear un nuevo **valor de cadena** denominado `SmartCaptionExpression`.
 
 9. Haga clic en el **diseñadores de datos** nodo y crear un nuevo **valor de cadena** denominado `SmartCaptionReplacement`.
 
@@ -96,21 +96,21 @@ Cuando se arrastran elementos desde la [ventana Orígenes de datos](http://msdn.
 
 ### <a name="to-turn-off-the-smart-captioning-feature"></a>Para desactivar la característica smart subtítulos (CC)
 
-1.  Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
+1. Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
 
-2.  Tipo `regedit` en el **ejecutar** cuadro de diálogo y haga clic en **Aceptar**.
+2. Tipo `regedit` en el **ejecutar** cuadro de diálogo y haga clic en **Aceptar**.
 
-3.  Expanda el **HKEY_CURRENT_USER** nodo.
+3. Expanda el **HKEY_CURRENT_USER** nodo.
 
-4.  Expanda el **Software** nodo.
+4. Expanda el **Software** nodo.
 
-5.  Expanda el **Microsoft** nodo.
+5. Expanda el **Microsoft** nodo.
 
-6.  Expanda el **VisualStudio** nodo.
+6. Expanda el **VisualStudio** nodo.
 
-7.  Haga clic en el **10.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+7. Haga clic en el **10.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
 
-8.  Haga clic en el **diseñadores de datos** nodo y crear un nuevo **valor de cadena** denominado `SmartCaptionExpression`.
+8. Haga clic en el **diseñadores de datos** nodo y crear un nuevo **valor de cadena** denominado `SmartCaptionExpression`.
 
 9. Haga clic en el **diseñadores de datos** nodo y crear un nuevo **valor de cadena** denominado `SmartCaptionReplacement`.
 

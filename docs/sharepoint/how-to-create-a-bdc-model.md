@@ -13,32 +13,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d82678df0da5932dd33c08a6e3066462df204f6e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596508"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106662"
 ---
-# <a name="how-to-create-a-bdc-model"></a>Filtrar Crear un modelo BDC
+# <a name="how-to-create-a-bdc-model"></a>Procedimiento Crear un modelo BDC
   Puede crear un modelo de conectividad de datos profesionales (BDC) mediante la plantilla para ese tipo de elemento y, a continuación, agregar el modelo a un proyecto de SharePoint. Para obtener más información, consulte [crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md). Para obtener más información sobre cómo diseñar el modelo, vea [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-bdc-project"></a>Para crear un proyecto BDC
 
-1.  En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
     > [!NOTE]
     >  Si el IDE está establecido para usar la configuración de desarrollo de Visual Basic, elija **archivo** > **nuevo proyecto**.
 
      Aparece el cuadro de diálogo **Nuevo proyecto** .
 
-2.  Bajo **Visual Basic** o **Visual C#**, elija **Office/SharePoint**, **soluciones de SharePoint**.
+2. Bajo **Visual Basic** o **Visual C#**, elija **Office/SharePoint**, **soluciones de SharePoint**.
 
-3.  En el **plantillas** panel, elija el **SharePoint 2013 - proyecto vacío** elemento y, a continuación, elija el **Aceptar** botón.
+3. En el **plantillas** panel, elija el **SharePoint 2013 - proyecto vacío** elemento y, a continuación, elija el **Aceptar** botón.
 
      El **Asistente de personalización de SharePoint** se abre.
 
-4.  En el **especificar el nivel de sitio y de seguridad para la depuración** página, especifique la dirección URL de un sitio de SharePoint en el equipo local, elija el **implementar como solución de granja de servidores** botón de opción y, a continuación, elija el **Finalizar** botón.
+4. En el **especificar el nivel de sitio y de seguridad para la depuración** página, especifique la dirección URL de un sitio de SharePoint en el equipo local, elija el **implementar como solución de granja de servidores** botón de opción y, a continuación, elija el **Finalizar** botón.
 
      Probará el modelo en el sitio de SharePoint que ha especificado.
 
@@ -47,13 +47,13 @@ ms.locfileid: "56596508"
 
      Se crea un proyecto de SharePoint vacío.
 
-5.  En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
+5. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
-6.  En el **Agregar nuevo elemento** diálogo cuadro, elija el **Office/SharePoint** nodo.
+6. En el **Agregar nuevo elemento** diálogo cuadro, elija el **Office/SharePoint** nodo.
 
-7.  En la lista de plantillas de SharePoint, elija **(solución de granja de servidores únicamente) modelo de conectividad a datos empresariales**.
+7. En la lista de plantillas de SharePoint, elija **(solución de granja de servidores únicamente) modelo de conectividad a datos empresariales**.
 
-8.  En el **nombre** cuadro, especifique un nombre para el modelo BDC y, a continuación, elija el **agregar** botón.
+8. En el **nombre** cuadro, especifique un nombre para el modelo BDC y, a continuación, elija el **agregar** botón.
 
      Un **modelo de conectividad a datos empresariales** elemento se agrega al proyecto. De forma predeterminada, el modelo aparece en el diseñador BDC. Para obtener más información, consulte [crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md).
 

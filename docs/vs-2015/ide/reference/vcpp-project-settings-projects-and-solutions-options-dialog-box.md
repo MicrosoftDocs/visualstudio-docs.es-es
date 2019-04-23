@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67a35b8987cc9f4f06cc93df2462a4dee326d7e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66110f6544bc19476bb4ecdfd6929fb4e26f0b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082439"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Este cuadro de diálogo permite definir la configuración del proyecto de [!INCL
   
 ### <a name="to-access-this-dialog-box"></a>Para obtener acceso a este cuadro de diálogo  
   
-1.  En el menú **Herramientas** , haga clic en **Opciones**.  
+1. En el menú **Herramientas** , haga clic en **Opciones**.  
   
-2.  Seleccione **Proyectos y soluciones** y **Configuración de proyecto de VC++**.  
+2. Seleccione **Proyectos y soluciones** y **Configuración de proyecto de VC++**.  
   
 ## <a name="build-customization-search-path"></a>Ruta de búsqueda de personalizaciones de compilación  
  Especifica la lista de directorios que contienen archivos .rules, que ayudan a definir reglas de compilación para los proyectos.  

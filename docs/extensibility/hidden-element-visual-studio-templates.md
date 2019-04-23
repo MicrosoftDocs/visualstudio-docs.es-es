@@ -1,6 +1,6 @@
 ---
 title: Oculta el elemento (plantillas de Visual Studio) | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -13,32 +13,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a7a70b59d08da09f6a06c3d5c38d330def11b86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c3fdeebabbb3f7a95886fed0a7e2c5eafa4d495b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721399"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104439"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Elemento oculto (plantillas de Visual Studio)
-Especifica si la plantilla aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.
 
- \<VSTemplate> \<TemplateData> \<Hidden>
+Especifica si la plantilla aparece en el el nuevo proyecto o **Agregar nuevo elemento** cuadros de diálogo.
+
+```xml
+<VSTemplate>
+    <TemplateData>
+        <Hidden>
+```
 
 ## <a name="syntax"></a>Sintaxis
 
-```
-<Hidden> true/false </Hidden>
+```xml
+<Hidden>true</Hidden>
+<Hidden>false</Hidden>
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
- En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
+
+En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
- Ninguno.
+
+Ninguno.
 
 ### <a name="child-elements"></a>Elementos secundarios
- Ninguno.
+
+Ninguno.
 
 ### <a name="parent-elements"></a>Elementos primarios
 
@@ -47,19 +56,22 @@ Especifica si la plantilla aparece en el el **nuevo proyecto** o **Agregar nuevo
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|
 
 ## <a name="text-value"></a>Valor de texto
- Se requiere un valor de texto.
 
- El texto debe ser `true` o `false`, lo que indica si la plantilla aparecerá en el **nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo.
+Se requiere un valor de texto.
+
+El texto debe ser `true` o `false`, lo que indica si la plantilla aparecerá en el **nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo.
 
 ## <a name="remarks"></a>Comentarios
- `Hidden` es un elemento opcional.
 
- Si no se especifica ningún otro elemento secundario de la `TemplateData` elemento son necesarios.
+`Hidden` es un elemento opcional.
+
+Si no se especifica ningún otro elemento secundario de la `TemplateData` elemento son necesarios.
 
 ## <a name="example"></a>Ejemplo
- En el siguiente ejemplo se muestran los metadatos de una plantilla de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]:
 
-```
+El ejemplo siguiente muestra los metadatos de un C# plantilla.
+
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +97,6 @@ Especifica si la plantilla aparece en el el **nuevo proyecto** o **Agregar nuevo
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+
+- [Referencia de esquema de plantillas](../extensibility/visual-studio-template-schema-reference.md)
 - [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

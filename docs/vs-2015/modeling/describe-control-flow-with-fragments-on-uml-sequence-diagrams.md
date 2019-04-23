@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996680"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107091"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Describir el flujo de control con fragmentos de diagramas de secuencia de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
   
  Los elementos que aparecen en la ilustración son los siguientes.  
   
-1.  Un fragmento combinado. Hay varios tipos de fragmentos combinados. En este ejemplo es un fragmento combinado alternativo, que puede usar para mostrar que pueden producirse secuencias de mensajes alternativas.  
+1. Un fragmento combinado. Hay varios tipos de fragmentos combinados. En este ejemplo es un fragmento combinado alternativo, que puede usar para mostrar que pueden producirse secuencias de mensajes alternativas.  
   
-2.  Operandos de interacción. Cada fragmento combinado contiene al menos un operando de interacción, que puede contener mensajes, usos de interacción y fragmentos combinados más pequeños. En este ejemplo, el fragmento combinado alternativo tiene dos operaciones de interacción, que muestran dos secuencias de mensajes alternativas.  
+2. Operandos de interacción. Cada fragmento combinado contiene al menos un operando de interacción, que puede contener mensajes, usos de interacción y fragmentos combinados más pequeños. En este ejemplo, el fragmento combinado alternativo tiene dos operaciones de interacción, que muestran dos secuencias de mensajes alternativas.  
   
-3.  Puede seleccionar cada operando de interacción por separado haciendo dentro. En este ejemplo está seleccionado el operando de interacción superior, por lo que puede verse su límite. Normalmente, solo está visible la línea divisoria entre los operandos de interacción.  
+3. Puede seleccionar cada operando de interacción por separado haciendo dentro. En este ejemplo está seleccionado el operando de interacción superior, por lo que puede verse su límite. Normalmente, solo está visible la línea divisoria entre los operandos de interacción.  
   
     > [!NOTE]
     >  Para seleccionar el operando de interacción superior, no debe pulsar demasiado cerca de la parte superior del fragmento combinado.  
   
-4.  Restricciones. Puede asignarle a cada operando de interacción una restricción. Esta describe la condición bajo la que se llevarán a cabo los mensajes incluidos en el operando de interacción.  
+4. Restricciones. Puede asignarle a cada operando de interacción una restricción. Esta describe la condición bajo la que se llevarán a cabo los mensajes incluidos en el operando de interacción.  
   
 ## <a name="creating-combined-fragments"></a>Crear fragmentos combinados  
  Para obtener una lista de los tipos de fragmento que puede crear, vea [Tipos de fragmentos combinados](#KindsOfFragment).  
@@ -97,12 +97,12 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Para establecer o ver las propiedades de un fragmento combinado  
   
--   Haga clic con el botón derecho en el título del fragmento combinado y, a continuación, haga clic en **Propiedades**.  
+- Haga clic con el botón derecho en el título del fragmento combinado y, a continuación, haga clic en **Propiedades**.  
   
     > [!NOTE]
     >  Los diferentes tipos de fragmentos combinados tienen propiedades diferentes.  
   
-##  <a name="KindsOfFragment"></a> Tipos de fragmentos combinados  
+## <a name="KindsOfFragment"></a> Tipos de fragmentos combinados  
   
 ### <a name="fragments-describing-control-flow"></a>Fragmentos que describen el flujo de control  
  Un diagrama de secuencia sencillo muestra solo una secuencia típica. Puede usar los siguientes tipos de fragmentos combinados para describir las variaciones que pueden producirse en distintas ocasiones.  

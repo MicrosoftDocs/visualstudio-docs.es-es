@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Crear un informe de seguimiento de llamadas de las Herramientas de generación de perfiles | Microsoft Docs'
+title: Procedimiento Crear un informe de seguimiento de llamadas de las Herramientas de generación de perfiles | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3669803bd87cbe04117246afad4d5d61866af896
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c92f5cd8f268b249e8f29ddd706860ff18b2f87c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774906"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117829"
 ---
-# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Cómo: Crear un informe de seguimiento de llamadas de las Herramientas de generación de perfiles
+# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedimiento Crear un informe de seguimiento de llamada de generación de perfiles de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El *informe de seguimiento de llamadas* de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muestra información de intervalos de cada punto de entrada y salida de las funciones de la aplicación y cada llamada a otras funciones realizadas por su función. Los informes de seguimiento de llamadas solo están disponibles para los datos de generación de perfiles si se recopilaron con el método de instrumentación.  
@@ -29,9 +29,9 @@ El *informe de seguimiento de llamadas* de las herramientas de generación de pe
   
 ### <a name="to-create-a-call-trace-report"></a>Para crear un informe de seguimiento de llamadas  
   
-1.  Abra una ventana del **símbolo del sistema**.  
+1. Abra una ventana del **símbolo del sistema**.  
   
-2.  En el símbolo del sistema, escriba el siguiente comando:  
+2. En el símbolo del sistema, escriba el siguiente comando:  
   
      *ToolsPath* **VSPerfReport** *VSPFile* **/CallTrace [/Xml]**  
   
@@ -42,5 +42,5 @@ El *informe de seguimiento de llamadas* de las herramientas de generación de pe
     |Xml|Genera un informe con formato XML.|  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Recopilar datos de seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
+ [Cómo: Recopilar el seguimiento de eventos para Windows (ETW) datos](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
  [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md)

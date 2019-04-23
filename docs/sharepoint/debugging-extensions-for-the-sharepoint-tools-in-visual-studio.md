@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324505"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094403"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Depurar extensiones para las herramientas de SharePoint en Visual Studio
   Puede depurar las extensiones de las herramientas de SharePoint en la instancia experimental o en la instancia normal de Visual Studio. Si necesita solucionar problemas relacionados con el comportamiento de una extensión, también puede modificar los valores del Registro para mostrar información adicional sobre los errores y configurar el modo en que Visual Studio ejecuta los comandos de SharePoint.
@@ -29,50 +29,50 @@ ms.locfileid: "58324505"
 
  Para obtener ejemplos en los que se muestra cómo depurar diversos tipos de extensiones en la instancia experimental de Visual Studio, vea los siguientes tutoriales:
 
--   [Tutorial: Extender un tipo de elemento de proyecto de SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+- [Tutorial: Extender un tipo de elemento de proyecto de SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
 
--   [Tutorial: Crear elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+- [Tutorial: Crear elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 
--   [Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
+- [Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [Tutorial: Llamar al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+- [Tutorial: Llamar al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>Depurar extensiones en la instancia normal de Visual Studio
  Si desea depurar el proyecto de extensión en la instancia normal de Visual Studio, instale primero la extensión en la instancia normal. A continuación, adjunte el depurador a un segundo proceso de Visual Studio. Una vez finalizados, puede quitar la extensión para que no vuelva a cargarse en el equipo de desarrollo.
 
 #### <a name="to-install-the-extension"></a>Para instalar la extensión
 
-1.  Cierre todas las instancias de Visual Studio.
+1. Cierre todas las instancias de Visual Studio.
 
-2.  En la carpeta de salida de compilación para el proyecto de extensión, abra el *.vsix* archivo haciendo doble clic en él o abriendo su menú contextual y, a continuación, eligiendo **abrir**:
+2. En la carpeta de salida de compilación para el proyecto de extensión, abra el *.vsix* archivo haciendo doble clic en él o abriendo su menú contextual y, a continuación, eligiendo **abrir**:
 
-3.  En el **instalador de extensiones de Visual Studio** diálogo cuadro, elija la edición de Visual Studio a la que desea instalar la extensión y, a continuación, elija el **instalar** botón.
+3. En el **instalador de extensiones de Visual Studio** diálogo cuadro, elija la edición de Visual Studio a la que desea instalar la extensión y, a continuación, elija el **instalar** botón.
 
      Visual Studio instala los archivos de extensión en %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*nombre del autor*\\*nombre de la extensión* \\ *versión*. Las tres últimas carpetas en esta ruta de acceso se construyen a partir del `Author`, `Name`, y `Version` elementos en el *extension.vsixmanifest* archivo para la extensión.
 
-4.  Después de que Visual Studio instala la extensión, elija el **cerrar** botón.
+4. Después de que Visual Studio instala la extensión, elija el **cerrar** botón.
 
 #### <a name="to-debug-the-extension"></a>Para depurar la extensión
 
-1.  Abra Visual Studio con privilegios de administrador y abra el proyecto de extensión. Los pasos siguientes hacen referencia a esta instancia de Visual Studio como el *primero la instancia*.
+1. Abra Visual Studio con privilegios de administrador y abra el proyecto de extensión. Los pasos siguientes hacen referencia a esta instancia de Visual Studio como el *primero la instancia*.
 
-2.  Inicie otra instancia de Visual Studio con privilegios de administrador. Los pasos siguientes hacen referencia a esta instancia de Visual Studio como el *segunda instancia*.
+2. Inicie otra instancia de Visual Studio con privilegios de administrador. Los pasos siguientes hacen referencia a esta instancia de Visual Studio como el *segunda instancia*.
 
-3.  Cambie a la primera instancia de Visual Studio.
+3. Cambie a la primera instancia de Visual Studio.
 
-4.  En la barra de menús, elija **depurar**, **asociar al proceso**.
+4. En la barra de menús, elija **depurar**, **asociar al proceso**.
 
-5.  En el **procesos disponibles** elija *devenv.exe*. Esta entrada hace referencia a la segunda instancia de Visual Studio; esta es la instancia en la que desea depurar la extensión del proyecto.
+5. En el **procesos disponibles** elija *devenv.exe*. Esta entrada hace referencia a la segunda instancia de Visual Studio; esta es la instancia en la que desea depurar la extensión del proyecto.
 
-6.  Elija la **adjuntar** botón.
+6. Elija la **adjuntar** botón.
 
      Visual Studio ejecuta el proyecto de extensión en modo de depuración.
 
-7.  Cambie a la segunda instancia de Visual Studio.
+7. Cambie a la segunda instancia de Visual Studio.
 
-8.  Cree un nuevo proyecto de SharePoint que cargue la extensión. Por ejemplo, si está depurando una extensión para los elementos de proyecto de definición de lista, cree un **definición de lista** proyecto.
+8. Cree un nuevo proyecto de SharePoint que cargue la extensión. Por ejemplo, si está depurando una extensión para los elementos de proyecto de definición de lista, cree un **definición de lista** proyecto.
 
 9. Realice los pasos que sean necesarios para probar el código de la extensión.
 
@@ -80,33 +80,33 @@ ms.locfileid: "58324505"
 
 #### <a name="to-remove-the-extension"></a>Para quitar la extensión
 
-1.  En Visual Studio, en la barra de menús, elija **herramientas**, **extensiones y actualizaciones**.
+1. En Visual Studio, en la barra de menús, elija **herramientas**, **extensiones y actualizaciones**.
 
      Se abre el cuadro de diálogo **Extensiones y actualizaciones**.
 
-2.  En la lista de extensiones, elija el nombre de la extensión y, a continuación, elija el **desinstalar** botón.
+2. En la lista de extensiones, elija el nombre de la extensión y, a continuación, elija el **desinstalar** botón.
 
-3.  En el cuadro de diálogo que aparece, elija el **Sí** botón para confirmar que desea desinstalar la extensión.
+3. En el cuadro de diálogo que aparece, elija el **Sí** botón para confirmar que desea desinstalar la extensión.
 
-4.  Elija la **reiniciar ahora** botón para completar la desinstalación.
+4. Elija la **reiniciar ahora** botón para completar la desinstalación.
 
 ## <a name="debug-sharepoint-commands"></a>Depurar comandos de SharePoint
  Si desea depurar un comando de SharePoint que forma parte de una extensión de herramientas de SharePoint, debe asociar el depurador el *vssphost4.exe* proceso. Se trata del proceso del host de 64 bits que ejecuta los comandos de SharePoint. Para obtener más información acerca de los comandos de SharePoint y *vssphost4.exe*, consulte [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>Para asociar el depurador al proceso vssphost4.exe
 
-1.  Inicie la depuración de la extensión en la instancia experimental de Visual Studio o en la instancia normal de Visual Studio; siga las instrucciones mencionadas anteriormente.
+1. Inicie la depuración de la extensión en la instancia experimental de Visual Studio o en la instancia normal de Visual Studio; siga las instrucciones mencionadas anteriormente.
 
-2.  En la instancia de Visual Studio en el que está ejecutando el depurador, en la barra de menús, elija **depurar**, **asociar al proceso**.
+2. En la instancia de Visual Studio en el que está ejecutando el depurador, en la barra de menús, elija **depurar**, **asociar al proceso**.
 
-3.  En el **procesos disponibles** elija *vssphost.exe*.
+3. En el **procesos disponibles** elija *vssphost.exe*.
 
     > [!NOTE]
     >  Si vssphost.exe no aparece en la lista, debe iniciar el *vssphost4.exe* procesos en la instancia de Visual Studio en el que está ejecutando la extensión. Normalmente, para ello, realizara una acción que haga que Visual Studio se conecte al sitio de SharePoint del equipo de desarrollo. Por ejemplo, Visual Studio inicia *vssphost4.exe* al expandir un nodo de conexión de sitio (es decir, un nodo que se muestra una dirección URL del sitio) bajo el **conexiones de SharePoint** nodo en el **Explorador de servidores**  ventana, o cuando se agregan ciertos elementos de proyecto de SharePoint, como **instancia de lista** o **receptor de eventos** elementos a un proyecto de SharePoint.
 
-4.  Elija la **adjuntar** botón.
+4. Elija la **adjuntar** botón.
 
-5.  En la instancia de Visual Studio que se está depurando, siga los pasos necesarios para ejecutar el comando.
+5. En la instancia de Visual Studio que se está depurando, siga los pasos necesarios para ejecutar el comando.
 
 ## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Modificar los valores del registro para ayudar a depurar las extensiones de herramientas de SharePoint
  Cuando depure una extensión de herramientas de SharePoint en Visual Studio, puede modificar los valores del Registro para que le resulte más fácil solucionar los problemas relacionados con la extensión. Los valores se encuentran en el **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** clave. Estos valores no existen de forma predeterminada.

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 150621514f9153b1e9d67f8e9c85a00275c27b15
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 5519328ef69f98737a7744f0162bdc0951433a60
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082898"
 ---
 # <a name="extend-dependency-diagrams"></a>Ampliar diagramas de dependencia
 
@@ -23,23 +23,23 @@ Puede escribir código para crear y actualizar diagramas de dependencia y para v
 
  Para obtener más información acerca de los diagramas de dependencia, consulte:
 
--   [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
 
--   [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)
 
--   [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
+- [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
+- [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
 
-##  <a name="prereqs"></a> Requisitos
+## <a name="prereqs"></a> Requisitos
 
 Necesita tener instalado lo siguiente en el equipo donde desea desarrollar las extensiones de capa:
 
--   Programa para la mejora
+- Programa para la mejora
 
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
--   SDK de modelado para Visual Studio
+- SDK de modelado para Visual Studio
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

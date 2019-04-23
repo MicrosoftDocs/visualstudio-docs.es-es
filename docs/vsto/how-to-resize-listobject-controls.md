@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: af494a87b2feea10d121e59931e51ef3dd344f67
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 1ff4080b7b658af5911a0372562954899628bb92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102684"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Procedimiento Cambiar el tamaño de los controles ListObject
   Aunque se puede establecer el tamaño de un control <xref:Microsoft.Office.Tools.Excel.ListObject> al agregarlo a un libro de Microsoft Office Excel, podrían ser necesarios cambios posteriores. Por ejemplo, conviene cambiar una lista de columnas de dos a tres columnas.
@@ -39,47 +39,47 @@ ms.locfileid: "59669307"
 
   ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: ¿Agregar columnas a un objeto de lista enlazado a datos en tiempo de ejecución? ](http://go.microsoft.com/fwlink/?LinkID=130318).
 
-##  <a name="designtime"></a> Cambiar el tamaño de un control ListObject en tiempo de diseño
+## <a name="designtime"></a> Cambiar el tamaño de un control ListObject en tiempo de diseño
  Para cambiar el tamaño de una lista, puede hacer clic y arrastrar uno de los controladores de tamaño, o puede volver a definir su tamaño en el cuadro de diálogo **Cambiar el tamaño de la lista** .
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Para cambiar el tamaño de una lista mediante el cuadro de diálogo Cambiar el tamaño de la lista
 
-1.  Haga clic en el <xref:Microsoft.Office.Tools.Excel.ListObject> tabla. El **herramientas de tabla** > **diseño** aparecerá en la cinta de opciones.
+1. Haga clic en el <xref:Microsoft.Office.Tools.Excel.ListObject> tabla. El **herramientas de tabla** > **diseño** aparecerá en la cinta de opciones.
 
-2.  En la sección Propiedades, haga clic en **cambiar el tamaño de tabla**.
+2. En la sección Propiedades, haga clic en **cambiar el tamaño de tabla**.
 
     ![VSTO_ResizeTable](../vsto/media/vsto-resizetable.png)
 
-3.  Seleccione el nuevo rango de datos para la tabla.
+3. Seleccione el nuevo rango de datos para la tabla.
 
-4.  Haga clic en **Aceptar**.
+4. Haga clic en **Aceptar**.
 
-##  <a name="runtimedoclevel"></a> Cambiar el tamaño de un control ListObject en tiempo de ejecución en un proyecto de nivel de documento
+## <a name="runtimedoclevel"></a> Cambiar el tamaño de un control ListObject en tiempo de ejecución en un proyecto de nivel de documento
  Puede cambiar el tamaño de un <xref:Microsoft.Office.Tools.Excel.ListObject> control en tiempo de ejecución mediante el uso de la <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> método. No puede usar este método para mover el control <xref:Microsoft.Office.Tools.Excel.ListObject> a una nueva ubicación en la hoja de cálculo. Los encabezados deben permanecer en la misma fila y el cambio de tamaño del control <xref:Microsoft.Office.Tools.Excel.ListObject> debe superponerse sobre el objeto de lista original. El control <xref:Microsoft.Office.Tools.Excel.ListObject> con el tamaño cambiado debe contener una fila de encabezado y al menos una fila de datos.
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Para cambiar el tamaño de un objeto de lista mediante programación
 
-1.  Cree un control <xref:Microsoft.Office.Tools.Excel.ListObject> que abarque de la celda **A1** a la **B3** en `Sheet1`.
+1. Cree un control <xref:Microsoft.Office.Tools.Excel.ListObject> que abarque de la celda **A1** a la **B3** en `Sheet1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#6)]
 
-2.  Cambie el tamaño de la lista para incluir las celdas de la **A1** a la **C5**.
+2. Cambie el tamaño de la lista para incluir las celdas de la **A1** a la **C5**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
 
-##  <a name="runtimeaddin"></a> Cambiar el tamaño de ListObject en tiempo de ejecución en un proyecto de complemento VSTO
+## <a name="runtimeaddin"></a> Cambiar el tamaño de ListObject en tiempo de ejecución en un proyecto de complemento VSTO
  Puede cambiar el tamaño de un <xref:Microsoft.Office.Tools.Excel.ListObject> control en cualquier hoja de cálculo abierta en tiempo de ejecución. Para obtener más información sobre cómo agregar un <xref:Microsoft.Office.Tools.Excel.ListObject> el control a una hoja de cálculo mediante el uso de un complemento de VSTO, consulte [Cómo: Agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Para cambiar el tamaño de un objeto de lista mediante programación
 
-1.  Cree un control <xref:Microsoft.Office.Tools.Excel.ListObject> que abarque de la celda **A1** a la **B3** en `Sheet1`.
+1. Cree un control <xref:Microsoft.Office.Tools.Excel.ListObject> que abarque de la celda **A1** a la **B3** en `Sheet1`.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#12)]
      [!code-vb[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#12)]
 
-2.  Cambie el tamaño de la lista para incluir las celdas de la **A1** a la **C5**.
+2. Cambie el tamaño de la lista para incluir las celdas de la **A1** a la **C5**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
      [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]

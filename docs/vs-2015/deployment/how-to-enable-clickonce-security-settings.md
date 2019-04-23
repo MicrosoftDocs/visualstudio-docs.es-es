@@ -1,5 +1,5 @@
 ---
-title: Filtrar Habilitar la configuración de seguridad de ClickOnce | Documentos de Microsoft
+title: Procedimiento Habilitar la configuración de seguridad de ClickOnce | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b852a83c16920e3e8a4b036a1b7bf37e63fe9cfb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 768bfc5de11f8b7fa6c3cd8988dbcc70633dde89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082835"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>Filtrar Habilitar la configuración de seguridad ClickOnce
+# <a name="how-to-enable-clickonce-security-settings"></a>Procedimiento Habilitar la configuración de seguridad ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Debe estar habilitada la seguridad de acceso del código para aplicaciones ClickOnce para publicar la aplicación. Esto se realiza automáticamente al publicar una aplicación mediante el Asistente para publicación.  
@@ -35,11 +35,11 @@ Debe estar habilitada la seguridad de acceso del código para aplicaciones Click
   
 ### <a name="to-enable-clickonce-security-settings"></a>Para habilitar a la configuración de seguridad de ClickOnce  
   
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la pestaña **Seguridad** .  
+2. Haga clic en la pestaña **Seguridad** .  
   
-3.  Active la casilla **Habilitar configuración de seguridad de ClickOnce** .  
+3. Active la casilla **Habilitar configuración de seguridad de ClickOnce** .  
   
      Ahora puede personalizar la configuración de seguridad de la aplicación en la página de seguridad.  
   
@@ -48,11 +48,11 @@ Debe estar habilitada la seguridad de acceso del código para aplicaciones Click
   
 ### <a name="to-disable-clickonce-security-settings"></a>Para deshabilitar la configuración de seguridad de ClickOnce  
   
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la pestaña **Seguridad** .  
+2. Haga clic en la pestaña **Seguridad** .  
   
-3.  Desactive el **Enable ClickOnce Security Settings** casilla de verificación.  
+3. Desactive el **Enable ClickOnce Security Settings** casilla de verificación.  
   
      La aplicación se ejecutará con la configuración de seguridad de plena confianza; cualquier configuración de la **seguridad** se omitirá la página.  
   

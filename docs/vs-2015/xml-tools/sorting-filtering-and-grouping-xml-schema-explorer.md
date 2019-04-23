@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8faed52971bacdcd08fb8d8769d5b49bd9bf90bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 86c13f7c710e462e1edd45acbf68fa4642d3d422
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099447"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Ordenar, filtrar y agrupar (Explorador de esquemas XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,52 +24,52 @@ En este tema se describe las opciones que están disponibles a través de la **o
 ## <a name="filter-options"></a>Opciones de filtro:  
  Están disponibles las opciones de filtro siguientes: De forma predeterminada, el **mostrar espacios de nombres** y **mostrar archivos de esquema** opciones están seleccionadas.  
   
--   **Mostrar espacios de nombres**.  
+- **Mostrar espacios de nombres**.  
   
--   **Mostrar archivos de esquema**.  
+- **Mostrar archivos de esquema**.  
   
--   **Mostrar compositores (secuencia/choice/all)**.  
+- **Mostrar compositores (secuencia/choice/all)**.  
   
 ## <a name="sorting-options"></a>Opciones de ordenación  
  Están disponibles las opciones de ordenación siguientes: El valor predeterminado es **ordenar por tipo**. Las opciones de ordenación no se aplican a archivos ni espacios de nombres.  
   
--   **Ordenar por tipo**.  
+- **Ordenar por tipo**.  
   
--   **Ordenar por nombre**.  
+- **Ordenar por nombre**.  
   
--   **Orden de documento**.  
+- **Orden de documento**.  
   
 ### <a name="sort-by-type"></a>Ordenar por tipo  
  Cuando el **ordenar por tipo** está seleccionada, los nodos globales se ordenan en el orden siguiente. Después, los nodos se ordenan alfabéticamente en cada grupo.  
   
-1.  nodos `import`.  
+1. nodos `import`.  
   
-2.  nodos `include`.  
+2. nodos `include`.  
   
-3.  nodos `redefine`.  
+3. nodos `redefine`.  
   
-4.  nodos `attribute`.  
+4. nodos `attribute`.  
   
-5.  nodos `attributeGroup`.  
+5. nodos `attributeGroup`.  
   
-6.  nodos `complexType`.  
+6. nodos `complexType`.  
   
-7.  nodos `simpleType`.  
+7. nodos `simpleType`.  
   
-8.  nodos `element`.  
+8. nodos `element`.  
   
 9. nodos `group`.  
   
 ### <a name="sort-by-name"></a>Ordenar por Nombre  
  Cuando el **ordenar por nombre** está seleccionada, los nodos globales se ordenan en el orden siguiente:  
   
-1.  nodos `import` (por orden alfabético de espacios de nombres).  
+1. nodos `import` (por orden alfabético de espacios de nombres).  
   
-2.  nodos `include` (por orden alfabético de atributos `schemaLocation`).  
+2. nodos `include` (por orden alfabético de atributos `schemaLocation`).  
   
-3.  nodos `redefine` (por orden alfabético de atributos `schemaLocation`).  
+3. nodos `redefine` (por orden alfabético de atributos `schemaLocation`).  
   
-4.  Otros nodos globales por orden alfabético.  
+4. Otros nodos globales por orden alfabético.  
   
 ### <a name="document-order"></a>Orden del documento  
  El **orden del documento** opción está disponible cuando el **mostrar archivos de esquema** está seleccionada. Cuando **orden del documento** está activada, los nodos globales se muestran en el orden en que aparecen en el archivo de esquema.  

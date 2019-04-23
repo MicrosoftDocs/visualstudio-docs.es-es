@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especificar eventos de compilación (C#) | Microsoft Docs
+title: Procedimiento Especificar eventos de compilación (C#) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4f54d10bb366ced70347db8d154b0a132253c97
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113864"
 ---
-# <a name="how-to-specify-build-events-c"></a>Cómo: Especificar eventos de compilación (C#)
+# <a name="how-to-specify-build-events-c"></a>Procedimiento Especificar eventos de compilación (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Use eventos de compilación para especificar comandos que se ejecutan antes de que se inicie la compilación o después de que esta finalice. Los eventos de compilación se ejecutan solo si se alcanzan correctamente esos puntos en el proceso de compilación.  
@@ -35,23 +35,23 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
   
 #### <a name="to-specify-a-build-event"></a>Para especificar un evento de compilación  
   
-1.  En el **Explorador de soluciones**, seleccione el proyecto para el que quiere especificar el evento de compilación.  
+1. En el **Explorador de soluciones**, seleccione el proyecto para el que quiere especificar el evento de compilación.  
   
-2.  En el menú **Proyecto**, haga clic en **Propiedades**.  
+2. En el menú **Proyecto**, haga clic en **Propiedades**.  
   
-3.  Seleccione la pestaña **Eventos de compilación**.  
+3. Seleccione la pestaña **Eventos de compilación**.  
   
-4.  En el cuadro **Línea de comandos del evento anterior a la compilación**, especifique la sintaxis del evento de compilación.  
+4. En el cuadro **Línea de comandos del evento anterior a la compilación**, especifique la sintaxis del evento de compilación.  
   
     > [!NOTE]
     >  Los eventos anteriores a la compilación no se ejecutan si el proyecto está actualizado y no se desencadena ninguna compilación.  
   
-5.  En el cuadro **Línea de comandos del evento posterior a la compilación**, especifique la sintaxis del evento de compilación.  
+5. En el cuadro **Línea de comandos del evento posterior a la compilación**, especifique la sintaxis del evento de compilación.  
   
     > [!NOTE]
     >  Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
-6.  En el cuadro **Ejecutar el evento posterior a la compilación**, especifique en qué condiciones se ejecuta el evento posterior a la compilación.  
+6. En el cuadro **Ejecutar el evento posterior a la compilación**, especifique en qué condiciones se ejecuta el evento posterior a la compilación.  
   
     > [!NOTE]
     >  Para agregar una sintaxis más larga o para seleccionar cualquier macro de compilación desde el [cuadro de diálogo Línea de comandos del evento anterior/posterior a la compilación](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), haga clic en el botón de puntos suspensivos (**...**) para mostrar un cuadro de edición.  
@@ -145,15 +145,15 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
   
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Para invocar un evento posterior a la compilación para modificar el manifiesto de aplicación  
   
-1.  Cree una aplicación Windows para que se publique el proyecto. Desde el menú **Archivo**, pulse **Nuevo** y, después, haga clic en **Proyecto**.  
+1. Cree una aplicación Windows para que se publique el proyecto. Desde el menú **Archivo**, pulse **Nuevo** y, después, haga clic en **Proyecto**.  
   
-2.  En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#**, haga clic en **Windows** y, después, haga clic en la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `CSWinApp`.  
+2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#**, haga clic en **Windows** y, después, haga clic en la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `CSWinApp`.  
   
-3.  Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Propiedades**.  
+3. Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Propiedades**.  
   
-4.  En el Diseñador de proyectos, busque la página **Publicar** y establezca **Ubicación de publicación** en `C:\TEMP\`.  
+4. En el Diseñador de proyectos, busque la página **Publicar** y establezca **Ubicación de publicación** en `C:\TEMP\`.  
   
-5.  Publique el proyecto haciendo clic en **Publicar ahora**.  
+5. Publique el proyecto haciendo clic en **Publicar ahora**.  
   
      El archivo de manifiesto se compilará y se colocará en `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. Para ver el manifiesto, haga clic con el botón derecho en el archivo, haga clic en **Abrir con**, seleccione **Seleccionar el programa de la lista** y, después, haga clic en **Bloc de notas**.  
   
@@ -163,9 +163,9 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  En el Diseñador de proyectos, haga clic en la pestaña **Eventos de compilación** y haga clic en el botón **Edición posterior a la compilación**.  
+6. En el Diseñador de proyectos, haga clic en la pestaña **Eventos de compilación** y haga clic en el botón **Edición posterior a la compilación**.  
   
-7.  En el cuadro **Línea de comandos del evento posterior a la compilación**, escriba el comando siguiente:  
+7. En el cuadro **Línea de comandos del evento posterior a la compilación**, escriba el comando siguiente:  
   
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -173,7 +173,7 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
   
      Como la macro `$(TargetPath)` expresa la ruta de acceso completa del archivo ejecutable que se crea, el manifiesto `$(TargetPath)` especificará el manifiesto de aplicación que se ha creado en el directorio bin. La publicación copiará este manifiesto en la ubicación de publicación que ha establecido anteriormente.  
   
-8.  Vuelva a publicar el proyecto. Vaya a la página **Publicar** y haga clic en **Publicar ahora**.  
+8. Vuelva a publicar el proyecto. Vaya a la página **Publicar** y haga clic en **Publicar ahora**.  
   
      Vea el manifiesto de nuevo. Para ver el manifiesto, abra el directorio de publicación, haga clic con el botón derecho en el archivo, haga clic en **Abrir con**, seleccione **Seleccionar el programa de la lista** y, después, haga clic en **Bloc de notas**.  
   

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 46926113393542f590b78f3bfa2c4cc5f25e10a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086746"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 
@@ -54,90 +54,90 @@ Antes de empezar este tutorial, primero debe instalar estos componentes:
 
 ## <a name="create-the-project"></a>Crear el proyecto
 
-1.  Cree un proyecto de diseñador de lenguaje específico de dominio. Denomínelo `TrackingPropertyDSL`.
+1. Cree un proyecto de diseñador de lenguaje específico de dominio. Denomínelo `TrackingPropertyDSL`.
 
-2.  En el **Asistente del Diseñador de lenguaje específico de dominio**, establezca las siguientes opciones:
+2. En el **Asistente del Diseñador de lenguaje específico de dominio**, establezca las siguientes opciones:
 
-    1.  Seleccione el **MinimalLanguage** plantilla.
+    1. Seleccione el **MinimalLanguage** plantilla.
 
-    2.  Use el nombre predeterminado para el lenguaje específico de dominio, `TrackingPropertyDSL`.
+    2. Use el nombre predeterminado para el lenguaje específico de dominio, `TrackingPropertyDSL`.
 
-    3.  Establecer la extensión para los archivos de modelo para `trackingPropertyDsl`.
+    3. Establecer la extensión para los archivos de modelo para `trackingPropertyDsl`.
 
-    4.  Utilice el icono de la plantilla predeterminada para los archivos de modelo.
+    4. Utilice el icono de la plantilla predeterminada para los archivos de modelo.
 
-    5.  Establezca el nombre del producto para `Product Name`.
+    5. Establezca el nombre del producto para `Product Name`.
 
-    6.  Establezca el nombre de la compañía a `Company Name`.
+    6. Establezca el nombre de la compañía a `Company Name`.
 
-    7.  Use el valor predeterminado para el espacio de nombres raíz para los proyectos de la solución, `CompanyName.ProductName.TrackingPropertyDSL`.
+    7. Use el valor predeterminado para el espacio de nombres raíz para los proyectos de la solución, `CompanyName.ProductName.TrackingPropertyDSL`.
 
-    8.  Permitir que el Asistente para crear un archivo de clave de nombre seguro para los ensamblados.
+    8. Permitir que el Asistente para crear un archivo de clave de nombre seguro para los ensamblados.
 
     9. Revise los detalles de la solución y, a continuación, haga clic en **finalizar** para crear el proyecto de definición de DSL.
 
 ## <a name="customize-the-default-dsl-definition"></a>Personalizar la definición de DSL de forma predeterminada
  En esta sección, personalizar la definición de DSL para contener los siguientes elementos:
 
--   Una propiedad para cada elemento del modelo de seguimiento de Namespace.
+- Una propiedad para cada elemento del modelo de seguimiento de Namespace.
 
--   Una propiedad booleana IsNamespaceTracking para todos los elementos del modelo. Esta propiedad indicará si la propiedad de seguimiento está en el estado de seguimiento o en la sección actualizada por estado de usuario.
+- Una propiedad booleana IsNamespaceTracking para todos los elementos del modelo. Esta propiedad indicará si la propiedad de seguimiento está en el estado de seguimiento o en la sección actualizada por estado de usuario.
 
--   Una propiedad Namespace predeterminado para el modelo. Esta propiedad se usará para calcular el valor predeterminado de la propiedad de seguimiento de Namespace.
+- Una propiedad Namespace predeterminado para el modelo. Esta propiedad se usará para calcular el valor predeterminado de la propiedad de seguimiento de Namespace.
 
--   Una propiedad CustomElements calcula para el modelo. Esta propiedad indicará la proporción de los elementos que tienen un espacio de nombres personalizado.
+- Una propiedad CustomElements calcula para el modelo. Esta propiedad indicará la proporción de los elementos que tienen un espacio de nombres personalizado.
 
 ### <a name="to-add-the-domain-properties"></a>Para agregar las propiedades de dominio
 
-1.  En el Diseñador de DSL, haga clic en el **ExampleModel** la clase de dominio, seleccione **agregar**y, a continuación, haga clic en **DomainProperty**.
+1. En el Diseñador de DSL, haga clic en el **ExampleModel** la clase de dominio, seleccione **agregar**y, a continuación, haga clic en **DomainProperty**.
 
-    1.  Nombre de la nueva propiedad `DefaultNamespace`.
+    1. Nombre de la nueva propiedad `DefaultNamespace`.
 
-    2.  En el **propiedades** ventana para la nueva propiedad, establezca **Default Value** a `DefaultNamespace`y establezca **tipo** a **cadena**.
+    2. En el **propiedades** ventana para la nueva propiedad, establezca **Default Value** a `DefaultNamespace`y establezca **tipo** a **cadena**.
 
-2.  Para el **ExampleModel** dominio clase, agregue una propiedad de dominio denominada `CustomElements`.
+2. Para el **ExampleModel** dominio clase, agregue una propiedad de dominio denominada `CustomElements`.
 
      En el **propiedades** ventana para la nueva propiedad, establezca **tipo** a **Calculated**.
 
-3.  Para el **ExampleElement** dominio clase, agregue una propiedad de dominio denominada `Namespace`.
+3. Para el **ExampleElement** dominio clase, agregue una propiedad de dominio denominada `Namespace`.
 
      En el **propiedades** ventana para la nueva propiedad, establezca **es examinable** a **False**y establezca **tipo** a **CustomStorage** .
 
-4.  Para el **ExampleElement** dominio clase, agregue una propiedad de dominio denominada `IsNamespaceTracking`.
+4. Para el **ExampleElement** dominio clase, agregue una propiedad de dominio denominada `IsNamespaceTracking`.
 
      En el **propiedades** ventana para la nueva propiedad, establezca **es examinable** a **False**, establezca **Default Value** a `true`y establezca **Tipo** a **booleano**.
 
 ### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Para actualizar los elementos del diagrama y los detalles de DSL
 
-1.  En el Diseñador de DSL, haga clic en el **ExampleShape** forma geométrica, seleccione **agregar**y, a continuación, haga clic en **elemento Decorator de texto**.
+1. En el Diseñador de DSL, haga clic en el **ExampleShape** forma geométrica, seleccione **agregar**y, a continuación, haga clic en **elemento Decorator de texto**.
 
-    1.  Nombre del nuevo elemento decorator de texto `NamespaceDecorator`.
+    1. Nombre del nuevo elemento decorator de texto `NamespaceDecorator`.
 
-    2.  En el **propiedades** ventana para el elemento decorator de texto, establezca **posición** a **InnerBottomLeft**.
+    2. En el **propiedades** ventana para el elemento decorator de texto, establezca **posición** a **InnerBottomLeft**.
 
-2.  En el diseñador DSL, seleccione la línea que conecta el **ExampleElement** clase a la **ExampleShape** forma.
+2. En el diseñador DSL, seleccione la línea que conecta el **ExampleElement** clase a la **ExampleShape** forma.
 
-    1.  En el **detalles de DSL** ventana, seleccione el **asignaciones del elemento Decorator** ficha.
+    1. En el **detalles de DSL** ventana, seleccione el **asignaciones del elemento Decorator** ficha.
 
-    2.  En el **decoradores** lista, seleccione **NamespaceDecorator**, active su casilla de verificación y, a continuación, en el **Mostrar propiedad** lista, seleccione **Namespace**.
+    2. En el **decoradores** lista, seleccione **NamespaceDecorator**, active su casilla de verificación y, a continuación, en el **Mostrar propiedad** lista, seleccione **Namespace**.
 
-3.  En **DSL Explorer**, expanda el **clases de dominio** carpeta, haga clic en el **ExampleElement** nodo y, a continuación, haga clic en **Agregar nuevo dominio Descriptor de tipo**.
+3. En **DSL Explorer**, expanda el **clases de dominio** carpeta, haga clic en el **ExampleElement** nodo y, a continuación, haga clic en **Agregar nuevo dominio Descriptor de tipo**.
 
-    1.  Expanda el **ExampleElement** nodo y seleccione el **Descriptor de tipo personalizado (Descriptor de tipos de dominio)** nodo.
+    1. Expanda el **ExampleElement** nodo y seleccione el **Descriptor de tipo personalizado (Descriptor de tipos de dominio)** nodo.
 
-    2.  En el **propiedades** ventana para el descriptor de tipo de dominio, establezca **personalizado codificadas** a **True**.
+    2. En el **propiedades** ventana para el descriptor de tipo de dominio, establezca **personalizado codificadas** a **True**.
 
-4.  En **DSL Explorer**, seleccione el **comportamiento de serialización Xml** nodo.
+4. En **DSL Explorer**, seleccione el **comportamiento de serialización Xml** nodo.
 
-    1.  En el **propiedades** ventana, establezca **personalizado Postcarga** a **True**.
+    1. En el **propiedades** ventana, establezca **personalizado Postcarga** a **True**.
 
 ## <a name="transform-templates"></a>Transformar plantillas
 
 Ahora que ha definido las propiedades y clases de dominio para su DSL, puede comprobar que puede transformarse correctamente la definición de DSL para volver a generar el código para el proyecto.
 
-1.  En el **el Explorador de soluciones** barra de herramientas, haga clic en **Transformar todas las plantillas**.
+1. En el **el Explorador de soluciones** barra de herramientas, haga clic en **Transformar todas las plantillas**.
 
-2.  El sistema vuelve a generar el código de la solución y guarda DslDefinition.dsl. Para obtener información sobre el formato XML de los archivos de definición, consulte [el archivo DslDefinition.dsl](../modeling/the-dsldefinition-dsl-file.md).
+2. El sistema vuelve a generar el código de la solución y guarda DslDefinition.dsl. Para obtener información sobre el formato XML de los archivos de definición, consulte [el archivo DslDefinition.dsl](../modeling/the-dsldefinition-dsl-file.md).
 
 ## <a name="create-files-for-custom-code"></a>Crear archivos de código personalizado
 
@@ -145,23 +145,23 @@ Al transformar todas las plantillas, el sistema genera el código fuente que def
 
 Debe proporcionar código para mantener el valor y el estado de la propiedad de seguimiento. Para ayudar a distinguir el código personalizado desde el código generado y para evitar conflictos de nomenclatura de archivos, coloque los archivos de código personalizado en una subcarpeta independiente.
 
-1.  En **el Explorador de soluciones**, haga clic en el **DSL** , seleccione **agregar**y, a continuación, haga clic en **nueva carpeta**. Nombre de la nueva carpeta `CustomCode`.
+1. En **el Explorador de soluciones**, haga clic en el **DSL** , seleccione **agregar**y, a continuación, haga clic en **nueva carpeta**. Nombre de la nueva carpeta `CustomCode`.
 
-2.  Haga clic en el nuevo **un valor CustomCode** carpeta, seleccione **agregar**y, a continuación, haga clic en **nuevo elemento**.
+2. Haga clic en el nuevo **un valor CustomCode** carpeta, seleccione **agregar**y, a continuación, haga clic en **nuevo elemento**.
 
-3.  Seleccione el **archivo de código** plantilla, establezca el **nombre** a `NamespaceTrackingProperty.cs`y, a continuación, haga clic en **Aceptar**.
+3. Seleccione el **archivo de código** plantilla, establezca el **nombre** a `NamespaceTrackingProperty.cs`y, a continuación, haga clic en **Aceptar**.
 
      El archivo NamespaceTrackingProperty.cs se creó y se abre para su edición.
 
-4.  En la carpeta, cree los archivos de código siguiente: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`, y `TypeDescriptor.cs`.
+4. En la carpeta, cree los archivos de código siguiente: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`, y `TypeDescriptor.cs`.
 
-5.  En el **DslPackage** del proyecto, cree también un `CustomCode` carpeta y agregarle un `Package.cs` archivo de código.
+5. En el **DslPackage** del proyecto, cree también un `CustomCode` carpeta y agregarle un `Package.cs` archivo de código.
 
 ## <a name="add-helper-classes-to-support-tracking-properties"></a>Agregar clases auxiliares para admitir las propiedades de seguimiento
 
 En el archivo HelperClasses.cs, agregue el `TrackingHelper` y `CriticalException` clases como sigue. Se hará referencia a estas clases más adelante en este tutorial.
 
-1.  Agregue el código siguiente al archivo HelperClasses.cs.
+1. Agregue el código siguiente al archivo HelperClasses.cs.
 
     ```csharp
     using System;
@@ -247,7 +247,7 @@ Definir este método, crea el seguimiento de descriptor de propiedad para la pro
 
 ### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Para modificar el descriptor de tipos para la clase de dominio ExampleModel
 
-1.  Agregue el código siguiente al archivo TypeDescriptor.cs.
+1. Agregue el código siguiente al archivo TypeDescriptor.cs.
 
     ```csharp
     using System;
@@ -309,7 +309,7 @@ Definir este método, crea el seguimiento de descriptor de propiedad para la pro
 
 El código generado define un proveedor de descripción de tipos para la clase de dominio ExampleElement; Sin embargo, debe agregar código para indicar el DSL para usar este proveedor de descripción de tipos.
 
-1.  Agregue el código siguiente al archivo Package.cs.
+1. Agregue el código siguiente al archivo Package.cs.
 
     ```csharp
     using System.ComponentModel;
@@ -347,7 +347,7 @@ Dado que la propiedad DefaultNamespace se usa para calcular la propiedad, de seg
 
 ### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>Para modificar el controlador de propiedad para la propiedad sometidas a seguimiento
 
-1.  Agregue el código siguiente al archivo ExampleModel.cs.
+1. Agregue el código siguiente al archivo ExampleModel.cs.
 
     ```csharp
     using System.Linq;
@@ -423,7 +423,7 @@ Además, agregue el almacenamiento y métodos para obtener y establecer la propi
 
 ### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Para agregar el método de descriptor de tipos personalizado
 
-1.  Agregue el código siguiente al archivo NamespaceTrackingProperty.cs.
+1. Agregue el código siguiente al archivo NamespaceTrackingProperty.cs.
 
     ```csharp
     using System;
@@ -590,7 +590,7 @@ Agregue código para admitir el comportamiento posterior a la carga personalizad
 
 ### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Para agregar código para admitir el comportamiento posterior a la carga personalizado
 
-1.  Agregue el código siguiente al archivo Serialization.cs.
+1. Agregue el código siguiente al archivo Serialization.cs.
 
     ```csharp
     using System;

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: especificar archivos de registro detallados para las implementaciones de ClickOnce | Microsoft Docs'
+title: Procedimiento Especificar archivos de registro detallados para las implementaciones de ClickOnce | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc7fbdace660a894352623a3ff8765a165b5556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 70c83c31ba8c415de9c2a7be8f60c9c6ee8ba9ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619503"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111537"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Cómo: Especificar archivos de registro detallados para las implementaciones ClickOnce
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Procedimiento Especificación de archivos de registro detallados para implementaciones de ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantiene los archivos de registro de actividad para todas las implementaciones. Estos registros documentan los detalles relativos a la instalación, inicializando, actualización y desinstalación de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación. Para aumentar el detalle que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] escrituras en estos archivos de registro, use el Editor del registro (*regedit.exe*) para especificar el nivel de detalle.
 
 > [!CAUTION]
@@ -32,13 +32,13 @@ ms.locfileid: "56619503"
 
 ### <a name="to-specify-verbose-log-files"></a>Para especificar archivos de registro detallados
 
-1.  Abra *Regedit.exe*.
+1. Abra *Regedit.exe*.
 
-2.  Desplácese hasta el nodo **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.
+2. Desplácese hasta el nodo **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.
 
-3.  Si es necesario, cree un nuevo valor de cadena denominado `LogVerbosityLevel`.
+3. Si es necesario, cree un nuevo valor de cadena denominado `LogVerbosityLevel`.
 
-4.  Establezca el valor `LogVerbosityLevel` en `1`.
+4. Establezca el valor `LogVerbosityLevel` en `1`.
 
 ## <a name="see-also"></a>Vea también
 - [Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

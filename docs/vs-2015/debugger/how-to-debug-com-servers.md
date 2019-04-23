@@ -1,5 +1,5 @@
 ---
-title: Filtrar Depurar servidores COM | Documentos de Microsoft
+title: Procedimiento Depurar servidores COM | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,14 +23,14 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997280"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088319"
 ---
-# <a name="how-to-debug-com-servers"></a>Filtrar Depuración de servidores COM
+# <a name="how-to-debug-com-servers"></a>Procedimiento Depuración de servidores COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La depuración de aplicaciones de servidor COM presenta un conjunto de problemas únicos que no siempre son fáciles de resolver.  
@@ -39,11 +39,11 @@ La depuración de aplicaciones de servidor COM presenta un conjunto de problemas
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>Para depurar una aplicación de servidor sin información del contenedor  
   
-1.  Comience a depurar el servidor como si se tratara de una aplicación normal.  
+1. Comience a depurar el servidor como si se tratara de una aplicación normal.  
   
-2.  Establezca puntos de interrupción donde desee.  
+2. Establezca puntos de interrupción donde desee.  
   
-3.  Inicie la aplicación contenedora.  
+3. Inicie la aplicación contenedora.  
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de COM y ActiveX](../debugger/com-and-activex-debugging.md)   

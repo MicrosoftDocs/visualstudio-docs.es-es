@@ -1,5 +1,5 @@
 ---
-title: 'Error: Error en una comprobación de seguridad porque el servicio de administración IIS no respondió | Microsoft Docs'
+title: 'Error: Error en una comprobación de seguridad porque el servicio de administración IIS no respondió | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,29 +16,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe294bd375f4896286b32d0d2c638fa8b467061b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ae97ae0594b06e9b35ac3bdd61eacf852968889
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080156"
 ---
-# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Error: Una comprobación de seguridad produjo un error porque el servicio de administración de IIS no respondió
+# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Error: Error de una comprobación de seguridad debido a la falta de respuesta del servicio de administración de IIS
 Este error se produce cuando el servicio de administración de IIS no responde. En general, esto indica que hay un problema relacionado con la instalación de IIS. Lo primero que debe hacer es comprobar que el servicio se está ejecutando mediante la herramienta **Servicios** de **Herramientas administrativas**.
 
 ### <a name="to-correct-this-error"></a>Para corregir este error
 
--   Reinstale IIS mediante el subprograma **Agregar o quitar programas** del Panel de control.
+- Reinstale IIS mediante el subprograma **Agregar o quitar programas** del Panel de control.
 
--   o bien
+- -o bien-
 
--   Quite IIS del equipo mediante el subprograma Agregar o quitar programas del Panel de control. Si el problema persiste tras quitar IIS, compruebe el Registro y asegúrese de que la siguiente clave ya no existe:
+- Quite IIS del equipo mediante el subprograma Agregar o quitar programas del Panel de control. Si el problema persiste tras quitar IIS, compruebe el Registro y asegúrese de que la siguiente clave ya no existe:
 
     `HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}`
 
-     o bien
+     -o bien-
 
--   Deshabilite el servicio de administración de IIS mediante el subprograma Herramientas administrativas del Panel de control. Esto deshabilitará IIS en el equipo.
+- Deshabilite el servicio de administración de IIS mediante el subprograma Herramientas administrativas del Panel de control. Esto deshabilitará IIS en el equipo.
 
      Tras la conclusión de cualquiera de estos tres pasos, reinicie el equipo.
 

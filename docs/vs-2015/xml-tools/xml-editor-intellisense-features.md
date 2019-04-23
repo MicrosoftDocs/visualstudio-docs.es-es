@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094674"
 ---
 # <a name="xml-editor-intellisense-features"></a>Características de IntelliSense del Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,19 +85,19 @@ El Editor XML proporciona completas características IntelliSense comparables a 
   
  El Editor XML realiza esta acción en los siguientes elementos:  
   
--   Etiquetas de apertura y cierre coincidentes.  
+- Etiquetas de apertura y cierre coincidentes.  
   
--   Cualquier par de "\<" o ">" entre corchetes angulares.  
+- Cualquier par de "\<" o ">" entre corchetes angulares.  
   
--   Inicio y fin de comentarios.  
+- Inicio y fin de comentarios.  
   
--   Inicio y fin de instrucciones de procesamiento.  
+- Inicio y fin de instrucciones de procesamiento.  
   
--   Inicio y fin de bloques CDATA.  
+- Inicio y fin de bloques CDATA.  
   
--   Inicio y fin de declaraciones DTD.  
+- Inicio y fin de declaraciones DTD.  
   
--   Comillas de apertura y cierre en atributos.  
+- Comillas de apertura y cierre en atributos.  
   
 ## <a name="modifying-the-intellisense-options"></a>Modificación de las opciones IntelliSense  
  Las características IntelliSense y finalización automática están habilitadas de forma predeterminada. Sin embargo, puede cambiar esto si modifica la configuración de las opciones y herramientas.  
@@ -112,11 +112,11 @@ El Editor XML proporciona completas características IntelliSense comparables a 
   
 #### <a name="to-change-the-auto-completion-behavior"></a>Para cambiar el comportamiento de finalización automática  
   
-1.  Seleccione **Opciones** en el menú **Herramientas**.  
+1. Seleccione **Opciones** en el menú **Herramientas**.  
   
-2.  Expanda **Editor de texto**, expanda **XML**y seleccione **varios**.  
+2. Expanda **Editor de texto**, expanda **XML**y seleccione **varios**.  
   
-3.  Realice cambios en el **autoinsertar** sección y haga clic en **Aceptar**.  
+3. Realice cambios en el **autoinsertar** sección y haga clic en **Aceptar**.  
   
 ## <a name="see-also"></a>Vea también  
  [Editor XML](../xml-tools/xml-editor.md)   

@@ -10,14 +10,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b943322fe6172eaaf196cc3f842da9ec0838d8cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 681564b2148fb9554e80105c2e18b1d220bb37ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702400"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111654"
 ---
-# <a name="how-to-troubleshoot-services"></a>Filtrar Solucionar problemas de servicios
+# <a name="how-to-troubleshoot-services"></a>Procedimiento Solucionar problemas de servicios
 Hay varios problemas comunes que pueden producirse al intentar obtener un servicio:
 
 - El servicio no está registrado con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -52,9 +52,9 @@ if (log == null) return;
 
 2. Utilice el tipo de servicio y no el tipo de interfaz al llamar a GetService. Cuando se solicita un servicio de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:Microsoft.VisualStudio.Shell.Package> extrae el GUID del tipo. No se encontrará un servicio si se cumplen las condiciones siguientes:
 
-   1.  Un tipo de interfaz se pasa a GetService en lugar del tipo de servicio.
+   1. Un tipo de interfaz se pasa a GetService en lugar del tipo de servicio.
 
-   2.  Ningún GUID se asigna explícitamente a la interfaz. Por lo tanto, el sistema crea una GUID de forma predeterminada para un objeto según sea necesario.
+   2. Ningún GUID se asigna explícitamente a la interfaz. Por lo tanto, el sistema crea una GUID de forma predeterminada para un objeto según sea necesario.
 
 3. Asegúrese de que se ha ubicado el VSPackage que solicita el servicio. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Después de crear y antes de llamar a los sitios un VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 

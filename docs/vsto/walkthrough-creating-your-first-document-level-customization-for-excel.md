@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1289f6eeb802aa53db5f9e43dc3725b8c65f884
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622883"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104504"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Tutorial: Crear la primera personalización en el nivel de documento para Excel
   Este tutorial introductorio muestra cómo crear una personalización de nivel de documento para Microsoft Office Excel. Las características que se crean en este tipo de solución solo están disponibles cuando se abre un libro concreto. No se puede usar una personalización de nivel de documento para realizar cambios en toda la aplicación, por ejemplo para mostrar una nueva pestaña de la cinta de opciones cuando se abre un libro.
@@ -43,9 +43,9 @@ ms.locfileid: "56622883"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Crear el proyecto
 
@@ -88,9 +88,9 @@ ms.locfileid: "56622883"
 
 ### <a name="to-close-and-reopen-a-worksheet-in-the-designer"></a>Para cerrar y volver a abrir una hoja de cálculo en el diseñador
 
-1.  Cierre el libro, haga clic en el **cerrar** botón (X) de la ventana del diseñador.
+1. Cierre el libro, haga clic en el **cerrar** botón (X) de la ventana del diseñador.
 
-2.  En **el Explorador de soluciones**, haga clic en el **Sheet1** archivo de código y haga clic en **Diseñador de vistas**.
+2. En **el Explorador de soluciones**, haga clic en el **Sheet1** archivo de código y haga clic en **Diseñador de vistas**.
 
      \- o -
 
@@ -101,7 +101,7 @@ ms.locfileid: "56622883"
 
 ### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>Para agregar texto a la hoja de cálculo mediante el diseñador
 
-1.  En la hoja de cálculo que está abierto en el diseñador, seleccione la celda **A1**y, a continuación, escriba el texto siguiente.
+1. En la hoja de cálculo que está abierto en el diseñador, seleccione la celda **A1**y, a continuación, escriba el texto siguiente.
 
      **Este texto se agregó mediante el diseñador.**
 
@@ -111,17 +111,17 @@ ms.locfileid: "56622883"
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Agregar texto a una hoja de cálculo mediante programación
  A continuación, agregue código al archivo de código Sheet1. El nuevo código usa el modelo de objetos de Excel para agregar una segunda línea de texto al libro. De forma predeterminada, el archivo de código Sheet1 contiene el siguiente código generado:
 
--   Una definición parcial de la clase `Sheet1`, que representa el modelo de programación de la hoja de cálculo y proporciona acceso al modelo de objetos de Excel. Para obtener más información, [elemento host Worksheet](../vsto/worksheet-host-item.md) y [información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md). El resto de la clase `Sheet1` se define en un archivo de código oculto que no se debe modificar.
+- Una definición parcial de la clase `Sheet1`, que representa el modelo de programación de la hoja de cálculo y proporciona acceso al modelo de objetos de Excel. Para obtener más información, [elemento host Worksheet](../vsto/worksheet-host-item.md) y [información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md). El resto de la clase `Sheet1` se define en un archivo de código oculto que no se debe modificar.
 
--   Los controladores de eventos `Sheet1_Startup` y `Sheet1_Shutdown` . Se llama a estos controladores de eventos cuando Excel carga y descarga la personalización. Use estos controladores de eventos para inicializar la personalización cuando se cargue y para limpiar los recursos que usa la personalización cuando se descargue. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).
+- Los controladores de eventos `Sheet1_Startup` y `Sheet1_Shutdown` . Se llama a estos controladores de eventos cuando Excel carga y descarga la personalización. Use estos controladores de eventos para inicializar la personalización cuando se cargue y para limpiar los recursos que usa la personalización cuando se descargue. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Para agregar una segunda línea de texto a la hoja de cálculo mediante código
 
-1.  En **el Explorador de soluciones**, haga clic en **Sheet1**y, a continuación, haga clic en **ver código**.
+1. En **el Explorador de soluciones**, haga clic en **Sheet1**y, a continuación, haga clic en **ver código**.
 
      El archivo de código se abre en Visual Studio.
 
-2.  Reemplace el controlador de eventos `Sheet1_Startup` por el siguiente código: Cuando se abre Sheet1, este código agrega una segunda línea de texto a la hoja de cálculo.
+2. Reemplace el controlador de eventos `Sheet1_Startup` por el siguiente código: Cuando se abre Sheet1, este código agrega una segunda línea de texto a la hoja de cálculo.
 
      [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
      [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]
@@ -130,41 +130,41 @@ ms.locfileid: "56622883"
 
 ### <a name="to-test-your-workbook"></a>Para probar el libro
 
-1.  Presione **F5** para compilar y ejecutar el proyecto.
+1. Presione **F5** para compilar y ejecutar el proyecto.
 
      Al compilar el proyecto, el código se compila en un ensamblado que está asociado al libro. Visual Studio coloca una copia del libro y el ensamblado en la carpeta de resultados de compilación del proyecto y establece la configuración de seguridad en el equipo de desarrollo para permitir que se ejecute la personalización. Para obtener más información, consulte [soluciones de Office de compilación](../vsto/building-office-solutions.md).
 
-2.  En el libro, compruebe que ve el texto siguiente.
+2. En el libro, compruebe que ve el texto siguiente.
 
      **Este texto se agregó mediante el diseñador.**
 
      **Este texto se agregó mediante código.**
 
-3.  Cierre el libro.
+3. Cierre el libro.
 
 ## <a name="clean-up-the-project"></a>Limpiar el proyecto
  Cuando termine de desarrollar un proyecto, debe quitar los archivos de la carpeta de resultados de compilación y la configuración de seguridad creada por el proceso de compilación.
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Para limpiar el proyecto completado en el equipo de desarrollo
 
-1.  En el menú **Crear** de Visual Studio, haga clic en **Limpiar solución**.
+1. En el menú **Crear** de Visual Studio, haga clic en **Limpiar solución**.
 
 ## <a name="next-steps"></a>Pasos siguientes
  Ahora que ha creado una personalización de nivel de documento básico para Excel, en los siguientes temas obtendrá más información sobre cómo desarrollar personalizaciones:
 
--   Tareas de programación generales que puede realizar en las personalizaciones de nivel de documento: [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md).
+- Tareas de programación generales que puede realizar en las personalizaciones de nivel de documento: [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md).
 
--   Tareas de programación que son específicas de las personalizaciones de nivel de documento para Excel: [Soluciones de Excel](../vsto/excel-solutions.md).
+- Tareas de programación que son específicas de las personalizaciones de nivel de documento para Excel: [Soluciones de Excel](../vsto/excel-solutions.md).
 
--   Mediante el modelo de objetos de Excel: [Información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md).
+- Mediante el modelo de objetos de Excel: [Información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md).
 
--   Personalizar la interfaz de usuario de Excel, por ejemplo, agregando una pestaña personalizada a la cinta de opciones o creando su propio panel de acciones: [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md).
+- Personalizar la interfaz de usuario de Excel, por ejemplo, agregando una pestaña personalizada a la cinta de opciones o creando su propio panel de acciones: [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md).
 
--   Usar objetos de Excel extendidos proporcionados por las herramientas de desarrollo de Office en Visual Studio para realizar tareas que no son posibles con el modelo de objetos de Excel (por ejemplo, hospedar controles administrados en documentos y enlazar controles de Excel a datos mediante el uso de los formularios de Windows modelo de enlace de datos): [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md).
+- Usar objetos de Excel extendidos proporcionados por las herramientas de desarrollo de Office en Visual Studio para realizar tareas que no son posibles con el modelo de objetos de Excel (por ejemplo, hospedar controles administrados en documentos y enlazar controles de Excel a datos mediante el uso de los formularios de Windows modelo de enlace de datos): [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md).
 
--   Compilar y depurar personalizaciones de nivel de documento para Excel: [Compilar soluciones de Office](../vsto/building-office-solutions.md).
+- Compilar y depurar personalizaciones de nivel de documento para Excel: [Compilar soluciones de Office](../vsto/building-office-solutions.md).
 
--   Implementar personalizaciones de nivel de documento para Excel: [Implementar una solución de Office](../vsto/deploying-an-office-solution.md).
+- Implementar personalizaciones de nivel de documento para Excel: [Implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Vea también
 - [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

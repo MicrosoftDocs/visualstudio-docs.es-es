@@ -1,5 +1,5 @@
 ---
-title: Filtrar Acceso mediante programación a los contactos de Outlook
+title: Procedimiento Acceso mediante programación a los contactos de Outlook
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c46df4218a12c0f9a155567aeee0c007d0a19c53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598211"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104231"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Procedimiento Acceso mediante programación a los contactos de Outlook
   Este ejemplo busca todos los contactos cuyos apellidos contengan una cadena de búsqueda especificado.
@@ -32,7 +32,7 @@ ms.locfileid: "56598211"
 ## <a name="compile-the-code"></a>Compilar el código
  Para este ejemplo se necesita:
 
--   Contactos cuyos apellidos contengan la cadena "**Na"** (por ejemplo, Tzipi Butnaru) en el **contactos** carpeta.
+- Contactos cuyos apellidos contengan la cadena "**Na"** (por ejemplo, Tzipi Butnaru) en el **contactos** carpeta.
 
 ## <a name="see-also"></a>Vea también
 - [Trabajar con elementos de contacto](../vsto/working-with-contact-items.md)

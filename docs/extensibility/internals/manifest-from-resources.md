@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35f8486ae85f0933d30b9587f2fc59652071a85
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110536"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 El manifiesto de la herramienta de recursos es una aplicación de consola que toma una lista de recursos de imagen (.png o .xaml archivos) y genera un archivo .imagemanifest que permite que esas imágenes para su uso con el servicio de imágenes de Visual Studio. Además, esta herramienta puede usarse para agregar imágenes a un .imagemanifest existente. Esta herramienta es útil para agregar compatibilidad con valores altos de PPP y temas para las imágenes a una extensión de Visual Studio. El archivo generado .imagemanifest debe incluido en e implementarse como parte de una extensión de Visual Studio (VSIX).
@@ -43,25 +43,25 @@ El manifiesto de la herramienta de recursos es una aplicación de consola que to
 
  **Ejemplos**
 
--   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative
+- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
 
 ## <a name="notes"></a>Notas
 
--   La herramienta solo admite archivos .png y XAML. Se omitirá cualquier otro tipo de imagen o un archivo. Se genera una advertencia para todos los tipos no compatibles que encuentra durante el análisis de los recursos. Si no se admite las imágenes se encuentran cuando finalice la herramienta de análisis de los recursos, se generará un error
+- La herramienta solo admite archivos .png y XAML. Se omitirá cualquier otro tipo de imagen o un archivo. Se genera una advertencia para todos los tipos no compatibles que encuentra durante el análisis de los recursos. Si no se admite las imágenes se encuentran cuando finalice la herramienta de análisis de los recursos, se generará un error
 
--   Siguiendo el formato sugerido para imágenes PNG, la herramienta establecerá el valor de tamaño y la dimensión para el .png al tamaño especificado de formato, incluso si es diferente del tamaño real de la imagen.
+- Siguiendo el formato sugerido para imágenes PNG, la herramienta establecerá el valor de tamaño y la dimensión para el .png al tamaño especificado de formato, incluso si es diferente del tamaño real de la imagen.
 
--   Se puede omitir el formato de ancho y alto para las imágenes PNG, pero la herramienta leerá real ancho/alto de la imagen y úselos para el valor de tamaño y la dimensión de la imagen.
+- Se puede omitir el formato de ancho y alto para las imágenes PNG, pero la herramienta leerá real ancho/alto de la imagen y úselos para el valor de tamaño y la dimensión de la imagen.
 
--   Ejecutar esta herramienta en la franja de imágenes mismo varias veces para el mismo .imagemanifest producirá las entradas duplicadas del manifiesto, porque la herramienta intenta dividir la franja de imágenes en imágenes independientes y agregarlos al manifiesto existente.
+- Ejecutar esta herramienta en la franja de imágenes mismo varias veces para el mismo .imagemanifest producirá las entradas duplicadas del manifiesto, porque la herramienta intenta dividir la franja de imágenes en imágenes independientes y agregarlos al manifiesto existente.
 
--   Combinar (omitiendo /newGuids o /newIds) solo debe realizarse para los manifiestos generados por la herramienta. Los manifiestos que se hayan adaptado o generados por otros medios no se pueden combinar correctamente.
+- Combinar (omitiendo /newGuids o /newIds) solo debe realizarse para los manifiestos generados por la herramienta. Los manifiestos que se hayan adaptado o generados por otros medios no se pueden combinar correctamente.
 
--   Los manifiestos que se generan para los ensamblados nativos puede que tenga que editar manualmente después de la generación para que los símbolos de Id. coincida con los identificadores de archivo .rc del ensamblado nativo de recursos.
+- Los manifiestos que se generan para los ensamblados nativos puede que tenga que editar manualmente después de la generación para que los símbolos de Id. coincida con los identificadores de archivo .rc del ensamblado nativo de recursos.
 
 ## <a name="sample-output"></a>Resultados del ejemplo
  **Manifiesto de imagen simple**

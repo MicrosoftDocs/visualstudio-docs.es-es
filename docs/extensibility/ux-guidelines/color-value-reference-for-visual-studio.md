@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428835"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118089"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referencia de valor de color para Visual Studio
 
@@ -26,13 +26,13 @@ Para que los tokens de color usar con la interfaz de usuario existente, consulte
 
 Al usar a esta guía de referencia, recuerde:
 
--   **Copiar siempre los matices de primer plano y fondo juntos.** No elija un primer plano de un elemento de interfaz de usuario y un fondo de otro solo porque le gusta los matices.
+- **Copiar siempre los matices de primer plano y fondo juntos.** No elija un primer plano de un elemento de interfaz de usuario y un fondo de otro solo porque le gusta los matices.
 
--   **Estos son los códigos hexadecimales, no los tokens de color.** No se puede usar los nombres de token de color real de estos elementos de interfaz de usuario porque no se puede controlar cómo se puede cambiar los tokens en el futuro. En su lugar, cree tokens dentro de su categoría y use los valores de matiz que se muestra en las tablas. Los tokens de color de la interfaz de usuario existente se puede encontrar en [compartido colores para Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
+- **Estos son los códigos hexadecimales, no los tokens de color.** No se puede usar los nombres de token de color real de estos elementos de interfaz de usuario porque no se puede controlar cómo se puede cambiar los tokens en el futuro. En su lugar, cree tokens dentro de su categoría y use los valores de matiz que se muestra en las tablas. Los tokens de color de la interfaz de usuario existente se puede encontrar en [compartido colores para Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
 - **Muestras de contraste altos se muestran para la comparación solo.** Use el nombre del color del sistema para la interfaz de usuario de contraste alto y no use un selector de color o Cuentagotas en estas muestras. Muestras de contraste altos en este tema reflejan el tema de alto contraste #1 en Windows. Los colores tendrá un aspecto diferentes en otros temas de contraste alto.
 
--   **Para obtener mejores resultados, el color de par establece con la interfaz de usuario similar del ejemplo.**
+- **Para obtener mejores resultados, el color de par establece con la interfaz de usuario similar del ejemplo.**
 
 ## <a name="properties-window"></a>Propiedades (ventana)
 
@@ -96,7 +96,7 @@ Al usar a esta guía de referencia, recuerde:
 | Primer plano: al mantener el mouse | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText muestrario")<br />`HighlightText` |
 | Fondo | ![#FFEEEEF2 muestrario](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 muestrario")<br />`#FFEEEEF2` | ![#FF292929 muestrario](../../extensibility/ux-guidelines/media/292929.png "#FF292929 muestrario")<br />`#FF292929` | ![#FFEEEEF2 muestrario](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 muestrario")<br />`#FFEEEEF2` | ![Muestras de control](../../extensibility/ux-guidelines/media/HCControl.png "muestrario de Control")<br />`Control` |
 | En segundo plano: al mantener el mouse | ![#FFC9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 muestrario")<br />`#FFC9DEF5` | ![#FF3E3E40 muestrario](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 muestrario")<br />`#FF3E3E40` | ![#FFFFFCF4 muestrario](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 muestrario")<br />`#FFFFFCF4` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
-| Borde | Ninguna | Ninguno | Ninguno | Ninguna |
+| Borde | Ninguna | Ninguna | Ninguna | Ninguna |
 | Borde: al mantener el mouse | ![#FFC9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 muestrario")<br />`#FFC9DEF5` | ![#FF3E3E40 muestrario](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 muestrario")<br />`#FF3E3E40` | ![#FFE5C365 muestrario](../../extensibility/ux-guidelines/media/E5C365.png "FFE5C365 ## muestrario")<br />`#FFE5C365` | ![Muestrario WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame muestrario")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Grupo de categorías

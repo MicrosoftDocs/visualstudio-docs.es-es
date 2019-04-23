@@ -1,5 +1,5 @@
 ---
-title: Filtrar Mover elementos en Outlook mediante programación
+title: Procedimiento Mover elementos en Outlook mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10b0f05e758f71830d5377c738ff9dee683022b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108976"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>Filtrar Mover elementos en Outlook mediante programación
+# <a name="how-to-programmatically-move-items-in-outlook"></a>Procedimiento Mover elementos en Outlook mediante programación
   Este ejemplo mueve los mensajes de correo electrónico no leídos desde el **Bandeja de entrada** en una carpeta denominada **prueba**. El ejemplo mueve sólo los mensajes que tienen la palabra **prueba** en el `Subject` campo.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "56641629"
 ## <a name="compile-the-code"></a>Compilar el código
  Para este ejemplo se necesita:
 
--   Una carpeta de correo electrónico de Outlook denominada **prueba**.
+- Una carpeta de correo electrónico de Outlook denominada **prueba**.
 
--   Un mensaje de correo electrónico que llega con la palabra **prueba** en el `Subject` campo.
+- Un mensaje de correo electrónico que llega con la palabra **prueba** en el `Subject` campo.
 
 ## <a name="see-also"></a>Vea también
 - [Trabajar con carpetas](../vsto/working-with-folders.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14569a915dc1da4d8628283dfa1aae5338502de1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996399"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080584"
 ---
 # <a name="messages-view"></a>Vista Mensajes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Vista de mensajes de Spy++
   
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Para abrir una vista de mensajes de ventana, proceso o subproceso  
   
-1.  Mover el foco a un [Windows Vista](../debugger/windows-view.md), [vista procesos](../debugger/processes-view.md), o [vista de subprocesos](../debugger/threads-view.md) ventana.  
+1. Mover el foco a un [Windows Vista](../debugger/windows-view.md), [vista procesos](../debugger/processes-view.md), o [vista de subprocesos](../debugger/threads-view.md) ventana.  
   
-2.  Busque el nodo para el elemento cuyos mensajes que desea examinar y selecciónelo.  
+2. Busque el nodo para el elemento cuyos mensajes que desea examinar y selecciónelo.  
   
-3.  Desde el **Spy** menú, elija **los mensajes de registro**.  
+3. Desde el **Spy** menú, elija **los mensajes de registro**.  
   
      El [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md) se abre.  
   
-4.  Seleccione las opciones para el mensaje que desea mostrar.  
+4. Seleccione las opciones para el mensaje que desea mostrar.  
   
-5.  Presione **Aceptar** para empezar a mensajes de registro.  
+5. Presione **Aceptar** para empezar a mensajes de registro.  
   
      Una mensajes que se abre la ventana de vista y un **mensajes** menú se agrega a la barra de herramientas de Spy ++. Dependiendo de las opciones seleccionadas, los mensajes comenzará a transmitir en la ventana activa de la vista de mensajes.  
   
-6.  Cuando tenga suficientes mensajes, elija **detener el registro** desde el **mensajes** menú.  
+6. Cuando tenga suficientes mensajes, elija **detener el registro** desde el **mensajes** menú.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Controlar la vista mensajes](../debugger/how-to-control-messages-view.md)  

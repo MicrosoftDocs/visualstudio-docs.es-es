@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2959707048cb3223b6866c3c8aa4c04cc146077
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117934"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>Esquemas y datos en las personalizaciones de nivel de documento XML
   **Importante** la información en este tema con respecto a Microsoft Word se presenta exclusivamente para el uso y disfrute de individuos y organizaciones que se encuentran fuera de Estados Unidos y sus territorios o quién está usando o desarrollo programas que se ejecutan en, los productos de Microsoft Word que se licencia de Microsoft antes de enero de 2010, cuando Microsoft quita una implementación de la funcionalidad concreta relacionadas con XML personalizado de Microsoft Word. Esta información con respecto a Microsoft Word no puede ser leída o utilizada por personas u organizaciones en Estados Unidos o en sus territorios que utiliza, o desarrollar programas que se ejecutan en los productos de Microsoft Word que se licencia de Microsoft después de 10 de enero de 2010 ; los productos no comportarán igual que los productos con licencia antes de esa fecha o adquirido y con licencia para su uso fuera de Estados Unidos.
@@ -40,16 +40,16 @@ ms.locfileid: "54875463"
 
  Hay dos objetos principales:
 
--   Esquema XML (archivo XSD). Para cada esquema en el libro, Visual Studio agrega un esquema al proyecto. Esto aparece como un elemento de proyecto con una extensión XSD en **el Explorador de soluciones**.
+- Esquema XML (archivo XSD). Para cada esquema en el libro, Visual Studio agrega un esquema al proyecto. Esto aparece como un elemento de proyecto con una extensión XSD en **el Explorador de soluciones**.
 
--   Clase <xref:System.Data.DataSet> con tipo. Esta clase se crea basándose en el esquema. Esta clase de conjunto de datos está visible en **vista de clases**.
+- Clase <xref:System.Data.DataSet> con tipo. Esta clase se crea basándose en el esquema. Esta clase de conjunto de datos está visible en **vista de clases**.
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Objetos creados cuando se asignan elementos de esquema a hojas de cálculo de Excel
  Cuando se asigna un elemento de esquema desde el **origen XML** panel de tareas a una hoja de cálculo, Visual Studio automáticamente crea varios objetos y las agrega al proyecto:
 
--   Controles. Para cada objeto asignado en el libro, un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control (para los elementos de esquema no es de repetición) o un <xref:Microsoft.Office.Tools.Excel.ListObject> control (para elementos de esquema que se repiten) se crea en el modelo de programación. El <xref:Microsoft.Office.Tools.Excel.ListObject> control puede eliminarse mediante la eliminación de las asignaciones y los objetos asignados desde el libro. Para obtener más información acerca de los controles, vea [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md).
+- Controles. Para cada objeto asignado en el libro, un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control (para los elementos de esquema no es de repetición) o un <xref:Microsoft.Office.Tools.Excel.ListObject> control (para elementos de esquema que se repiten) se crea en el modelo de programación. El <xref:Microsoft.Office.Tools.Excel.ListObject> control puede eliminarse mediante la eliminación de las asignaciones y los objetos asignados desde el libro. Para obtener más información acerca de los controles, vea [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md).
 
--   BindingSource. Cuando creas un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> asignando un elemento de esquema no repetitivo a la hoja de cálculo, un <xref:System.Windows.Forms.BindingSource> se crea y el <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> está enlazado el <xref:System.Windows.Forms.BindingSource>. Se debe enlazar la <xref:System.Windows.Forms.BindingSource> a una instancia del origen de datos que coincida con el esquema que se asigna al documento, como una instancia de con tipo <xref:System.Data.DataSet> clase que se creó. Crear el enlace estableciendo el <xref:System.Windows.Forms.BindingSource.DataSource%2A> y <xref:System.Windows.Forms.BindingSource.DataMember%2A> propiedades, que se exponen en el **propiedades** ventana.
+- BindingSource. Cuando creas un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> asignando un elemento de esquema no repetitivo a la hoja de cálculo, un <xref:System.Windows.Forms.BindingSource> se crea y el <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> está enlazado el <xref:System.Windows.Forms.BindingSource>. Se debe enlazar la <xref:System.Windows.Forms.BindingSource> a una instancia del origen de datos que coincida con el esquema que se asigna al documento, como una instancia de con tipo <xref:System.Data.DataSet> clase que se creó. Crear el enlace estableciendo el <xref:System.Windows.Forms.BindingSource.DataSource%2A> y <xref:System.Windows.Forms.BindingSource.DataMember%2A> propiedades, que se exponen en el **propiedades** ventana.
 
     > [!NOTE]
     >  El <xref:System.Windows.Forms.BindingSource> no se creó para <xref:Microsoft.Office.Tools.Excel.ListObject> objetos. Debe enlazar manualmente el <xref:Microsoft.Office.Tools.Excel.ListObject> al origen de datos estableciendo el <xref:System.Windows.Forms.BindingSource.DataSource%2A> y <xref:System.Windows.Forms.BindingSource.DataMember%2A> propiedades en el **propiedades** ventana.

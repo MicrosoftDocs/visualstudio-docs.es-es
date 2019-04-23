@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 532781a2e816120dabfe2bec61059955cd0c82a6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082183"
 ---
 # <a name="n-tier-data-applications-overview"></a>Información general sobre aplicaciones de datos con n capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ N-aplicaciones de datos de nivel * son aplicaciones de datos que se dividen en v
   
  Visual Studio contiene varias características que ayudan a los programadores a crear aplicaciones con n niveles:  
   
--   El Diseñador de DataSet proporciona un **DataSet Project** propiedad que permite separar el conjunto de datos (capa de entidad de datos) y `TableAdapter`s (capa de acceso a datos) en proyectos discretos.  
+- El Diseñador de DataSet proporciona un **DataSet Project** propiedad que permite separar el conjunto de datos (capa de entidad de datos) y `TableAdapter`s (capa de acceso a datos) en proyectos discretos.  
   
--   El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) proporciona opciones para generar las clases DataContext y datos en espacios de nombres independientes. Con ello se habilita la separación lógica del acceso a datos y los niveles de entidad de datos.  
+- El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) proporciona opciones para generar las clases DataContext y datos en espacios de nombres independientes. Con ello se habilita la separación lógica del acceso a datos y los niveles de entidad de datos.  
   
--   [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) proporciona el <xref:System.Data.Linq.Table%601.Attach%2A> método que permite reunir el contexto de diferentes niveles en una aplicación. Para obtener más información, consulte [de N niveles y las aplicaciones remotas con LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) proporciona el <xref:System.Data.Linq.Table%601.Attach%2A> método que permite reunir el contexto de diferentes niveles en una aplicación. Para obtener más información, consulte [de N niveles y las aplicaciones remotas con LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
 ## <a name="presentation-tier"></a>Nivel de presentación  
  El *nivel de presentación* es el nivel en el que los usuarios interactúan con una aplicación. Normalmente, contiene también la lógica adicional de la aplicación. Los componentes típicos del nivel de presentación son los siguientes:  
@@ -57,11 +57,11 @@ N-aplicaciones de datos de nivel * son aplicaciones de datos que se dividen en v
   
 - La lógica y los componentes de acceso a datos, como los siguientes:  
   
-  -   [Los TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) y [objetos DataAdapter y DataReader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  - [Los TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) y [objetos DataAdapter y DataReader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-  -   Representaciones de objeto de datos, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) las clases de entidad.  
+  - Representaciones de objeto de datos, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) las clases de entidad.  
   
-  -   Los servicios de aplicación comunes, como autenticación, autorización y personalización.  
+  - Los servicios de aplicación comunes, como autenticación, autorización y personalización.  
   
   Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en el nivel intermedio de una aplicación con n niveles.  
   

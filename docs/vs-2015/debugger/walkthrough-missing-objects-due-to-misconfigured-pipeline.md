@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 800fa29682460991ca28a0dacb6d5b5a4a9838d4
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 01366bfd0f32f9cbf731613339f2c592873e2623
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58988087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114111"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Tutorial: Objetos ausentes debido a una canalización mal configurada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
   
  En el tutorial se muestran las tareas siguientes:  
   
--   Uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.  
+- Uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.  
   
--   Uso de la ventana **Etapas de canalización de gráficos** para examinar el efecto de la llamada API de Direct3D `DrawIndexed` .  
+- Uso de la ventana **Etapas de canalización de gráficos** para examinar el efecto de la llamada API de Direct3D `DrawIndexed` .  
   
--   Inspección del contexto del dispositivo para confirmar que no se estableció una etapa de sombreador.  
+- Inspección del contexto del dispositivo para confirmar que no se estableció una etapa de sombreador.  
   
--   Uso de la ventana **Etapas de canalización de gráficos** junto con la **Pila de llamadas de eventos gráficos** para ayudar a encontrar el origen del sombreador de píxeles sin establecer.  
+- Uso de la ventana **Etapas de canalización de gráficos** junto con la **Pila de llamadas de eventos gráficos** para ayudar a encontrar el origen del sombreador de píxeles sin establecer.  
   
 ## <a name="scenario"></a>Escenario  
  Cuando falta un objeto en una aplicación 3D, a veces se debe a que no se establece una de las etapas del sombreador antes de que se represente el objeto. En el caso de las aplicaciones que tienen necesidades de representación sencillas, el origen de este error se encuentra normalmente en algún lugar de la pila de llamadas de la llamada a draw del objeto. Sin embargo, como optimización, algunas aplicaciones procesan juntos objetos con programas de sombreador, texturas u otros datos en común para minimizar la sobrecarga del cambio de estado. En estas aplicaciones, el origen del error se podría incluir en el sistema de procesamiento por lotes, en lugar de encontrarse en la pila de llamadas de la llamada a draw. En el escenario de este tutorial se muestra una aplicación con necesidades de representación sencillas y, por tanto, el origen del error se puede encontrar en la pila de llamadas.  

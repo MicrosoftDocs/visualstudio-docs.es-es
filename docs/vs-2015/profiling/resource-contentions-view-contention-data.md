@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108723"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Vista Contenciones del recurso: datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ La vista Contenciones del recurso muestra datos de contención de recursos que s
 ### <a name="function-values"></a>Valores de función  
  Los valores de función se basan en las instancias de la función que se produjeron en la ruta de acceso de ejecución representada en el árbol de llamadas.  
   
--   Los valores exclusivos se basan en los eventos que se produjeron cuando la función estaba ejecutando instrucciones en el cuerpo de la función. Los eventos que se produjeron en funciones a las que llamó la función no se incluyen en los valores exclusivos.  
+- Los valores exclusivos se basan en los eventos que se produjeron cuando la función estaba ejecutando instrucciones en el cuerpo de la función. Los eventos que se produjeron en funciones a las que llamó la función no se incluyen en los valores exclusivos.  
   
--   Los valores inclusivos se basan en los eventos que se produjeron cuando la función o una función a la que llamó la función se estaba ejecutando.  
+- Los valores inclusivos se basan en los eventos que se produjeron cuando la función o una función a la que llamó la función se estaba ejecutando.  
   
 ### <a name="percentage-values"></a>Valores de porcentaje  
  Los valores de porcentaje se basan en los eventos de contención o el tiempo total de los datos de generación de perfiles. Si se filtra el informe o la vista de la generación de perfiles, solo se usa el tiempo bloqueado y las contenciones de los datos filtrados como valor total.  

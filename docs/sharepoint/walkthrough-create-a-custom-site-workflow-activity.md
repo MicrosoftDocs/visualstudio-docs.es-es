@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dfed62c493473c48704061fac00427f40d828520
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f717345689de9be640e03e9c7d81726a57d494b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615837"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084328"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Tutorial: Crear una actividad de flujo de trabajo de sitio personalizada
   En este tutorial se muestra cómo crear una actividad personalizada para un flujo de trabajo de nivel de sitio mediante [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Los flujos de trabajo de nivel de sitio se aplican a todo el sitio, no solo en una lista en el sitio). La actividad personalizada crea una lista de anuncios de copia de seguridad y, a continuación, copia el contenido de la lista de anuncios en él.
@@ -43,34 +43,34 @@ ms.locfileid: "56615837"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   Ediciones compatibles de [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] y SharePoint.
+- Ediciones compatibles de [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] y SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="create-a-site-workflow-custom-activity-project"></a>Crear un proyecto de actividad personalizada de flujo de trabajo de sitio
  En primer lugar, cree un proyecto para hospedar y probar la actividad de flujo de trabajo personalizado.
 
 #### <a name="to-create-a-site-workflow-custom-activity-project"></a>Para crear un proyecto de actividad personalizada de flujo de trabajo de sitio
 
-1.  En la barra de menús, elija **archivo** > **New** > **proyecto** para mostrar el **nuevo proyecto** cuadro de diálogo.
+1. En la barra de menús, elija **archivo** > **New** > **proyecto** para mostrar el **nuevo proyecto** cuadro de diálogo.
 
-2.  Expanda el **SharePoint** nodo bajo **Visual C#** o **Visual Basic**y, a continuación, elija el **2010** nodo.
+2. Expanda el **SharePoint** nodo bajo **Visual C#** o **Visual Basic**y, a continuación, elija el **2010** nodo.
 
-3.  En el **plantillas** panel, elija el **proyecto de SharePoint 2010** plantilla.
+3. En el **plantillas** panel, elija el **proyecto de SharePoint 2010** plantilla.
 
-4.  En el **nombre** , escriba **AnnouncementBackup**y, a continuación, elija el **Aceptar** botón.
+4. En el **nombre** , escriba **AnnouncementBackup**y, a continuación, elija el **Aceptar** botón.
 
      El **Asistente de personalización de SharePoint** aparece.
 
-5.  En el **especificar el nivel de sitio y de seguridad para la depuración** página, elija el **implementar como solución de granja de servidores** botón de opción y, a continuación, elija el **finalizar** botón para aceptar el sitio predeterminado y de nivel de confianza.
+5. En el **especificar el nivel de sitio y de seguridad para la depuración** página, elija el **implementar como solución de granja de servidores** botón de opción y, a continuación, elija el **finalizar** botón para aceptar el sitio predeterminado y de nivel de confianza.
 
      Este paso establece el nivel de confianza para la solución como solución de granja, la única opción disponible para los proyectos de flujo de trabajo.
 
-6.  En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto** > **Agregar nuevo elemento**.
+6. En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto** > **Agregar nuevo elemento**.
 
-7.  Bajo **Visual C#** o **Visual Basic**, expanda el **SharePoint** nodo y, a continuación, elija el **2010** nodo.
+7. Bajo **Visual C#** o **Visual Basic**, expanda el **SharePoint** nodo y, a continuación, elija el **2010** nodo.
 
-8.  En el **plantillas** panel, elija el **flujo de trabajo secuencial (solución de granja de servidores únicamente)** plantilla y, a continuación, elija el **agregar** botón.
+8. En el **plantillas** panel, elija el **flujo de trabajo secuencial (solución de granja de servidores únicamente)** plantilla y, a continuación, elija el **agregar** botón.
 
      El **Asistente de personalización de SharePoint** aparece.
 
@@ -83,16 +83,16 @@ ms.locfileid: "56615837"
 
 #### <a name="to-add-a-custom-workflow-activity-class"></a>Para agregar una clase de actividad de flujo de trabajo personalizado
 
-1.  En la barra de menús, elija **proyecto** > **Agregar nuevo elemento** para mostrar el **Agregar nuevo elemento** cuadro de diálogo.
+1. En la barra de menús, elija **proyecto** > **Agregar nuevo elemento** para mostrar el **Agregar nuevo elemento** cuadro de diálogo.
 
-2.  En el **plantillas instaladas** vista de árbol, elija el **código** nodo y, a continuación, elija el **clase** plantilla en la lista de plantillas de elemento de proyecto. Utilice el nombre predeterminado Class1. Elija el botón de **Agregar** .
+2. En el **plantillas instaladas** vista de árbol, elija el **código** nodo y, a continuación, elija el **clase** plantilla en la lista de plantillas de elemento de proyecto. Utilice el nombre predeterminado Class1. Elija el botón de **Agregar** .
 
-3.  Reemplace todo el código de Class1 con lo siguiente:
+3. Reemplace todo el código de Class1 con lo siguiente:
 
      [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
      [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
 
-4.  Guarde el proyecto y, a continuación, en la barra de menús, elija **compilar** > **compilar solución**.
+4. Guarde el proyecto y, a continuación, en la barra de menús, elija **compilar** > **compilar solución**.
 
      Class1 aparece como una acción personalizada en el **cuadro de herramientas** en el **AnnouncementBackup componentes** ficha.
 
@@ -101,26 +101,26 @@ ms.locfileid: "56615837"
 
 #### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>Para agregar una actividad personalizada al flujo de trabajo de sitio
 
-1.  Abra Workflow1 en el Diseñador de flujo de trabajo en la vista Diseño.
+1. Abra Workflow1 en el Diseñador de flujo de trabajo en la vista Diseño.
 
-2.  Arrastre Class1 desde el **cuadro de herramientas** para que aparezca bajo el `onWorkflowActivated1` actividad, o abra el menú contextual para Class1, elija **copia**, abra el menú contextual de la línea bajo el `onWorkflowActivated1` actividad y, a continuación, elija **pegar**.
+2. Arrastre Class1 desde el **cuadro de herramientas** para que aparezca bajo el `onWorkflowActivated1` actividad, o abra el menú contextual para Class1, elija **copia**, abra el menú contextual de la línea bajo el `onWorkflowActivated1` actividad y, a continuación, elija **pegar**.
 
-3.  Guarde el proyecto.
+3. Guarde el proyecto.
 
 ## <a name="test-the-site-workflow-custom-activity"></a>Probar la actividad personalizada de flujo de trabajo de sitio
  A continuación, ejecute el proyecto e iniciar el flujo de trabajo del sitio. La actividad personalizada crea una lista de anuncios de copia de seguridad y copia el contenido de la lista actual de anuncios en él. El código también comprueba si ya existe una lista de copia de seguridad antes de crear uno. Si ya existe una lista de copia de seguridad, se elimina. El código también agrega un vínculo a la nueva lista en la barra de inicio rápido del sitio de SharePoint.
 
 #### <a name="to-test-the-site-workflow-custom-activity"></a>Para probar la actividad personalizada de flujo de trabajo de sitio
 
-1.  Elija la **F5** clave para ejecutar el proyecto e implementarlo en SharePoint.
+1. Elija la **F5** clave para ejecutar el proyecto e implementarlo en SharePoint.
 
-2.  En la barra Inicio rápido, elija el **enumera** vínculo para mostrar todas las listas que están disponibles en el sitio de SharePoint. Observe que hay solo una lista de anuncios denominado **anuncios**.
+2. En la barra Inicio rápido, elija el **enumera** vínculo para mostrar todas las listas que están disponibles en el sitio de SharePoint. Observe que hay solo una lista de anuncios denominado **anuncios**.
 
-3.  En la parte superior de la página Web de SharePoint, elija el **flujos de trabajo sitio** vínculo.
+3. En la parte superior de la página Web de SharePoint, elija el **flujos de trabajo sitio** vínculo.
 
-4.  En el inicio de una sección del nuevo flujo de trabajo, elija la **AnnouncementBackup - Workflow1** vínculo. Esto inicia el flujo de trabajo del sitio y ejecuta el código de la acción personalizada.
+4. En el inicio de una sección del nuevo flujo de trabajo, elija la **AnnouncementBackup - Workflow1** vínculo. Esto inicia el flujo de trabajo del sitio y ejecuta el código de la acción personalizada.
 
-5.  En la barra Inicio rápido, elija el **copia de seguridad de los anuncios** vínculo. Tenga en cuenta que todos los anuncios que se encuentran en el **anuncios** lista se han copiado a esta lista nueva.
+5. En la barra Inicio rápido, elija el **copia de seguridad de los anuncios** vínculo. Tenga en cuenta que todos los anuncios que se encuentran en el **anuncios** lista se han copiado a esta lista nueva.
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)

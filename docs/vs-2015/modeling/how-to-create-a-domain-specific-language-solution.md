@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear una solución de lenguaje específico de dominio | Documentos de Microsoft
+title: Procedimiento Crear una solución de lenguaje específico de dominio | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -15,14 +15,14 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f675b40f250505e654b287fcaa86e70aca4cdd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998814"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099577"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Filtrar Crear una solución de lenguajes específicos de dominio
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Procedimiento Crear una solución de lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un lenguaje específico de dominio (DSL) se crea mediante un especializada [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solución.  
@@ -67,9 +67,9 @@ Un lenguaje específico de dominio (DSL) se crea mediante un especializada [!INC
   
 3. Escriba una extensión de nombre de archivo el **extensión de archivo** página. Debe ser único en el equipo y en los equipos en los que desea instalar el DSL. Debería ver el mensaje **editores de Visual Studio ni las aplicaciones usan esta extensión**.  
   
-   -   Si ha utilizado la extensión de nombre de archivo anterior DSL experimental que no se han instalado completamente, puede desactivarlas alejar usando la **restablecer la instancia Experimental** herramienta, que puede encontrarse en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menú SDK.  
+   - Si ha utilizado la extensión de nombre de archivo anterior DSL experimental que no se han instalado completamente, puede desactivarlas alejar usando la **restablecer la instancia Experimental** herramienta, que puede encontrarse en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menú SDK.  
   
-   -   Si otro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión que usa esta extensión de archivo se instaló por completo en el equipo, considere la posibilidad de desinstalarlo. En el **herramientas** menú, haga clic en **Administrador de extensiones**.  
+   - Si otro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión que usa esta extensión de archivo se instaló por completo en el equipo, considere la posibilidad de desinstalarlo. En el **herramientas** menú, haga clic en **Administrador de extensiones**.  
   
 4. Inspeccione y, si es necesario ajustar, los campos en las páginas restantes del asistente. Cuando esté satisfecho con la configuración, haga clic en **finalizar**. Para obtener más información acerca de la configuración, consulte [páginas de asistente del Diseñador de DSL](#settings).  
   
@@ -78,7 +78,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante un especializada [!INC
    > [!NOTE]
    >  Si ve un mensaje que no le avisa para ejecutar las plantillas de texto de fuentes no confiables, haga clic en **Aceptar**. Puede establecer este mensaje no se mostrarán de nuevo.  
   
-##  <a name="settings"></a> Las páginas del Asistente para el Diseñador de DSL  
+## <a name="settings"></a> Las páginas del Asistente para el Diseñador de DSL  
  Puede dejar algunos de los campos que no ha cambiado desde sus valores predeterminados. Sin embargo, asegúrese de establecer el campo de extensión de archivo.  
   
 ### <a name="solution-settings-page"></a>Página de configuración de la solución  
@@ -98,15 +98,15 @@ Un lenguaje específico de dominio (DSL) se crea mediante un especializada [!INC
   
  Si ve una lista de herramientas o paquetes, debe realizar una de las siguientes acciones:  
   
--   Escriba una extensión de archivo diferente.  
+- Escriba una extensión de archivo diferente.  
   
      \- o -  
   
--   Restablecer el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instancia Experimental. Se eliminarán todos los DSL que se hayan creado anteriormente. En el **iniciar** menú, haga clic en **todos los programas**, **Microsoft Visual Studio 2010 SDK**, **herramientas**y, a continuación, **restablecer el Instancia de Microsoft Visual Studio 2010 Experimental**. Puede volver a generar los lenguajes DSL que desee volver a usar.  
+- Restablecer el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instancia Experimental. Se eliminarán todos los DSL que se hayan creado anteriormente. En el **iniciar** menú, haga clic en **todos los programas**, **Microsoft Visual Studio 2010 SDK**, **herramientas**y, a continuación, **restablecer el Instancia de Microsoft Visual Studio 2010 Experimental**. Puede volver a generar los lenguajes DSL que desee volver a usar.  
   
      \- o -  
   
--   Si un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión que usa esta extensión de archivo se instaló por completo en el equipo, desinstálelo. En el **herramientas** menú, haga clic en **Administrador de extensiones**.  
+- Si un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión que usa esta extensión de archivo se instaló por completo en el equipo, desinstálelo. En el **herramientas** menú, haga clic en **Administrador de extensiones**.  
   
 ### <a name="product-settings-page"></a>Página de configuración del producto  
  **¿Qué es el nombre del producto al que pertenece el nuevo lenguaje específico de dominio?**  

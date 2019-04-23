@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662977"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092180"
 ---
 # <a name="working-with-xml-data"></a>Trabajo con datos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ XML y sus tecnologías relacionadas desempeñan un papel muy importante en la fo
   
  Otras características son:  
   
--   Compatibilidad con fragmentos XML, que incluye fragmentos generados por esquema.  
+- Compatibilidad con fragmentos XML, que incluye fragmentos generados por esquema.  
   
--   Esquematización de documentos, así los elementos se pueden expandir y contraer.  
+- Esquematización de documentos, así los elementos se pueden expandir y contraer.  
   
--   La capacidad de ejecutar transformaciones XSLT y ver los resultados en formato de texto, XML o HTML.  
+- La capacidad de ejecutar transformaciones XSLT y ver los resultados en formato de texto, XML o HTML.  
   
--   La capacidad de generar esquemas de lenguaje de definición de esquemas XML (XSD) a partir del documento de instancia XML.  
+- La capacidad de generar esquemas de lenguaje de definición de esquemas XML (XSD) a partir del documento de instancia XML.  
   
--   Compatibilidad con la edición de hojas de estilos XSLT, que incluye compatibilidad con IntelliSense.  
+- Compatibilidad con la edición de hojas de estilos XSLT, que incluye compatibilidad con IntelliSense.  
   
--   Explorador de esquemas XML  
+- Explorador de esquemas XML  
   
 ## <a name="xml-schema-designer"></a>Diseñador de esquemas XML  
  El Diseñador de esquemas XML está integrado en Microsoft Visual Studio 2010 y en el Editor XML para permitirle trabajar con los esquemas del lenguaje de definición de esquemas XML (XSD).  

@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096340"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procedimiento Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ A veces, Visual Studio no puede convertir totalmente un proyecto de una versión
 
 #### <a name="to-resolve-incorrect-file-paths"></a>Para resolver rutas de archivo incorrectas
 
-1.  Abra el archivo del proyecto en un editor de texto.
+1. Abra el archivo del proyecto en un editor de texto.
 
-2.  Examine las rutas de acceso que puedan ser incorrectas, sobre todo aquellas que contienen un número de versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+2. Examine las rutas de acceso que puedan ser incorrectas, sobre todo aquellas que contienen un número de versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-3.  Modifique las rutas de archivo incorrectas para que apunten a los nuevos destinos.
+3. Modifique las rutas de archivo incorrectas para que apunten a los nuevos destinos.
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>El proyecto no se compila porque las referencias no son válidas
  Al actualizar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], también podría estar actualizando la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Si el proyecto contiene referencias desudadas en la versión más reciente de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], quizá no se resuelvan correctamente. Esto es especialmente probable en el caso de referencias que incluyen números de versión, por ejemplo, `Microsoft.VisualStudio.Shell.Interop.8.0`.

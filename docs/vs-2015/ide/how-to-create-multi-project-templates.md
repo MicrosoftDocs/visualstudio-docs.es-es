@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear plantillas de varios proyectos | Microsoft Docs
+title: Procedimiento Crear plantillas de varios proyectos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755344"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096457"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Cómo: Crear plantillas de varios proyectos
+# <a name="how-to-create-multi-project-templates"></a>Procedimiento Crear plantillas de varios proyectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. Cuando se crea un proyecto basado en una plantilla de varios proyectos a partir del cuadro de diálogo **Nuevo proyecto**, todos los proyectos de la plantilla se agregan a la solución.  
@@ -79,15 +79,15 @@ Las plantillas de varios proyectos actúan como contenedores de dos o más proye
   
 ### <a name="to-create-a-multi-project-template"></a>Para crear una plantilla de varios proyectos  
   
-1.  Cree los proyectos que se incluirán en la plantilla de varios proyectos.  
+1. Cree los proyectos que se incluirán en la plantilla de varios proyectos.  
   
-2.  Cree los archivos .vstemplate de cada proyecto. Para más información, vea [Cómo: Crear plantillas de proyectos](../ide/how-to-create-project-templates.md).  
+2. Cree los archivos .vstemplate de cada proyecto. Para obtener más información, vea [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md).  
   
-3.  Cree un archivo raíz .vstemplate que contenga los metadatos de la plantilla de varios proyectos. Para más información, vea el primer ejemplo de la sección siguiente.  
+3. Cree un archivo raíz .vstemplate que contenga los metadatos de la plantilla de varios proyectos. Para más información, vea el primer ejemplo de la sección siguiente.  
   
-4.  Seleccione los archivos y las carpetas que se incluirán en la plantilla, haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpeta comprimida (en zip)**. Los archivos y las carpetas se comprimen en un archivo .zip.  
+4. Seleccione los archivos y las carpetas que se incluirán en la plantilla, haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpeta comprimida (en zip)**. Los archivos y las carpetas se comprimen en un archivo .zip.  
   
-5.  Coloque el archivo de plantilla .zip en el directorio de plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. De forma predeterminada, este directorio es \Mis documentos\Visual Studio *Versión*\Templates\ProjectTemplates\\.  
+5. Coloque el archivo de plantilla .zip en el directorio de plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. De forma predeterminada, este directorio es \Mis documentos\Visual Studio *Versión*\Templates\ProjectTemplates\\.  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo, se muestra un archivo raíz .vstemplate básico de varios proyectos. En este ejemplo, la plantilla contiene dos proyectos, `My Windows Application` y `My Class Library`. El atributo `ProjectName` del elemento `ProjectTemplateLink` establece el nombre que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debe asignar a este proyecto. Si el atributo `ProjectName` no existe, se utiliza el nombre del archivo .vstemplate como nombre del proyecto.  

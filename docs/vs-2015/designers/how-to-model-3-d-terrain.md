@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Modelar un terreno en 3D | Microsoft Docs
+title: Procedimiento Modelar un terreno en 3D | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097484"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Procedimiento Modelo terreno en 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ En este documento se muestra cómo usar el Editor de modelos para crear un model
   
  Este documento muestra estas actividades:  
   
--   Agregar objetos a una escena  
+- Agregar objetos a una escena  
   
--   Selección de caras y puntos  
+- Selección de caras y puntos  
   
--   Trasladar selecciones  
+- Trasladar selecciones  
   
--   Usar la herramienta **Subdividir cara**  
+- Usar la herramienta **Subdividir cara**  
   
--   Enmarcar un objeto en la superficie de diseño  
+- Enmarcar un objeto en la superficie de diseño  
   
 ## <a name="creating-a-3-d-terrain-model"></a>Crear un modelo de terreno en 3D  
  Puede crear un terreno en 3D subdividiendo un plano para crear caras adicionales y después manipulando los vértices para crear características de terreno interesantes.  

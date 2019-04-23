@@ -8,27 +8,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bcdae3da81fe028fb3ec1c9bd6ba79f348961f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: ad76a2606d5e6fedec162cea4a89505efbb8b39f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526404"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111667"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procedimiento Agregar nodos al área de trabajo desde la vista inicio
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procedimiento Adición de nodos al área de trabajo desde la vista Inicio
 
 En este tema se describe cómo agregar nodos globales al [área de trabajo del Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md) desde el [vista inicio](../xml-tools/start-view.md).
 
 ## <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>Para agregar nodos al área de trabajo desde la vista Inicio
 
-1.  Siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Haga clic en el editor XML y seleccione **Diseñador de vistas**.
+2. Haga clic en el editor XML y seleccione **Diseñador de vistas**.
 
      Aparecerá la vista Inicio.
 
      En el **detalles del conjunto de esquemas** sección, tenga en cuenta que hay dos (**2**) **tipos complejos globales**.
 
-3.  Haga clic en el **agregar** vínculo a la derecha de la **tipos complejos globales** encabezado.
+3. Haga clic en el **agregar** vínculo a la derecha de la **tipos complejos globales** encabezado.
 
      Los nodos de tipo complejo `USAddress` y `PurchaseOrderType` aparecerán en la superficie de diseño de la vista Gráfico.

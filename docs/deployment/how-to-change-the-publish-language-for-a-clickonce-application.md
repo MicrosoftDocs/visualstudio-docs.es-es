@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Cambiar el idioma de publicación de una aplicación ClickOnce | Microsoft Docs
+title: Procedimiento Cambiar el idioma de publicación de una aplicación ClickOnce | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67ac7693d4332c4dc5d6eae3fb89cf3e9a9c2384
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 7e5bf51fd416fd9ccbb2343c17412984858429da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953036"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115294"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procedimiento Cambio del idioma de publicación de una aplicación ClickOnce
 
@@ -34,15 +34,15 @@ El `Publish language` propiedad puede establecerse el **opciones de publicación
 
 ## <a name="to-change-the-publish-language"></a>Para cambiar el idioma de publicación
 
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
-2.  Haga clic en la pestaña **Publicar**.
+2. Haga clic en la pestaña **Publicar**.
 
-3.  Haga clic en el **opciones** botón para abrir el **opciones de publicación** cuadro de diálogo.
+3. Haga clic en el **opciones** botón para abrir el **opciones de publicación** cuadro de diálogo.
 
-4.  Haga clic en **descripción**.
+4. Haga clic en **descripción**.
 
-5.  En el **opciones de publicación** diálogo cuadro, seleccione un idioma y referencia cultural de la **idioma de publicación** lista desplegable y, a continuación, haga clic en **Aceptar**.
+5. En el **opciones de publicación** diálogo cuadro, seleccione un idioma y referencia cultural de la **idioma de publicación** lista desplegable y, a continuación, haga clic en **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
 

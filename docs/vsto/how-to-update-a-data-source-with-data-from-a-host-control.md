@@ -1,5 +1,5 @@
 ---
-title: Filtrar Actualizar un origen de datos con datos de un control host
+title: Procedimiento Actualizar un origen de datos con datos de un control host
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67e98f7d9f8e1e8914508d8a2e3c63c5dc55b8a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097497"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedimiento Actualizar un origen de datos con datos de un control host
   Puede enlazar un control host a un origen de datos y actualizar el origen de datos con los cambios que se realicen en los datos del control. Hay dos pasos principales en este proceso:
@@ -42,7 +42,7 @@ ms.locfileid: "56637599"
 
 ### <a name="to-update-the-in-memory-data-source-at-runtime"></a>Para actualizar el origen de datos en memoria en tiempo de ejecución
 
--   Llame al método <xref:System.Windows.Forms.Binding.WriteValue%2A> del objeto <xref:System.Windows.Forms.Binding> que enlaza el control al origen de datos.
+- Llame al método <xref:System.Windows.Forms.Binding.WriteValue%2A> del objeto <xref:System.Windows.Forms.Binding> que enlaza el control al origen de datos.
 
      En el ejemplo siguiente se guardan los cambios realizados a un control <xref:Microsoft.Office.Tools.Excel.NamedRange> en una hoja de cálculo de Excel en el origen de datos. En este ejemplo se supone que tiene un control <xref:Microsoft.Office.Tools.Excel.NamedRange> denominado `namedRange1` con su propiedad <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> enlazada a un campo de un origen de datos.
 
@@ -70,31 +70,31 @@ ms.locfileid: "56637599"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Para establecer un control a fin de que actualice automáticamente el origen de datos en memoria mediante el diseñador
 
-1.  En Visual Studio, abra el documento de Word o el libro de Excel en el diseñador.
+1. En Visual Studio, abra el documento de Word o el libro de Excel en el diseñador.
 
-2.  Haga clic en el control que desea que actualice automáticamente el origen de datos.
+2. Haga clic en el control que desea que actualice automáticamente el origen de datos.
 
-3.  En la ventana **Propiedades** , expanda la propiedad **(DataBindings)** .
+3. En la ventana **Propiedades** , expanda la propiedad **(DataBindings)** .
 
-4.  Junto a la **(avanzado)** propiedad, haga clic en el botón de puntos suspensivos (![de pantalla de VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "de pantalla de VisualStudioEllipsesButton")).
+4. Junto a la **(avanzado)** propiedad, haga clic en el botón de puntos suspensivos (![de pantalla de VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "de pantalla de VisualStudioEllipsesButton")).
 
-5.  En el cuadro de diálogo **Formato y enlace de datos avanzado** , haga clic en la lista desplegable **Modo de actualización del origen de datos** y seleccione uno de los siguientes valores:
+5. En el cuadro de diálogo **Formato y enlace de datos avanzado** , haga clic en la lista desplegable **Modo de actualización del origen de datos** y seleccione uno de los siguientes valores:
 
-    -   Para actualizar el origen de datos cuando se valida el control, seleccione **OnValidation**.
+    - Para actualizar el origen de datos cuando se valida el control, seleccione **OnValidation**.
 
-    -   Para actualizar el origen de datos cuando cambia el valor de la propiedad enlazada a datos del control, seleccione **OnPropertyChanged**.
+    - Para actualizar el origen de datos cuando cambia el valor de la propiedad enlazada a datos del control, seleccione **OnPropertyChanged**.
 
         > [!NOTE]
         >  La opción **OnPropertyChanged** no se aplica a los controles host de Word porque Word no ofrece notificaciones de cambios de documento o de control. Sin embargo, esta opción puede utilizarse para los controles de Windows Forms en documentos de Word.
 
-6.  Cierre el cuadro de diálogo **Formato y enlace de datos avanzado** .
+6. Cierre el cuadro de diálogo **Formato y enlace de datos avanzado** .
 
 ## <a name="update-the-database"></a>Actualizar la base de datos
  Si el origen de datos en memoria está asociado a una base de datos, debe actualizar la base de datos con los cambios en el origen de datos. Para obtener más información acerca de cómo actualizar una base de datos, vea [guardar los datos en la base de datos](../data-tools/save-data-back-to-the-database.md) y [actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>Para actualizar la base de datos
 
-1.  Llame al método <xref:System.Windows.Forms.BindingSource.EndEdit%2A> del elemento <xref:System.Windows.Forms.BindingSource> para el control.
+1. Llame al método <xref:System.Windows.Forms.BindingSource.EndEdit%2A> del elemento <xref:System.Windows.Forms.BindingSource> para el control.
 
      El elemento <xref:System.Windows.Forms.BindingSource> se genera automáticamente cuando agrega un control enlazado a datos a un documento o un libro en tiempo de diseño. El elemento <xref:System.Windows.Forms.BindingSource> conecta el control al conjunto de datos con tipo en el proyecto. Para obtener más información, consulte [información general del componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
@@ -103,7 +103,7 @@ ms.locfileid: "56637599"
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2.  Llame a la `Update` método del TableAdapter generado en el proyecto.
+2. Llame a la `Update` método del TableAdapter generado en el proyecto.
 
      El TableAdapter se genera automáticamente al agregar un control enlazado a datos a un documento o libro en tiempo de diseño. El TableAdapter conecta el conjunto de datos con tipo en el proyecto a la base de datos. Para obtener más información, consulte [información general sobre TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 

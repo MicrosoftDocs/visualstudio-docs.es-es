@@ -14,12 +14,12 @@ ms.assetid: d4286315-814b-4966-b4c4-1ee19d796eff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2b21c585bb48b55929a78554d686477e0fa5649
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 5bf7c570c832fb5db5489a2a9f9bec459f26f0a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842453"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101281"
 ---
 # <a name="unterminated-comment"></a>Comentario sin terminar
 Se inició un bloque de comentario de varias líneas, pero no correctamente finalizó. Comentarios de varias líneas que comienzan por un "/\*" combinación y terminan con la inversa "\*/" combinación. A continuación se muestra un ejemplo:  
@@ -31,7 +31,7 @@ This is another part of the same comment.*/
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese de terminar los comentarios de varias líneas con "*/".  
+- Asegúrese de terminar los comentarios de varias líneas con "*/".  
   
 ## <a name="see-also"></a>Vea también  
  [Comment (Instrucciones)](../../javascript/reference/comment-statements-javascript.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994135458fb7bc76ef2ab7f4a76ac184e1b6426e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc97aad2d3a056a61ae925816ac6d2457918db65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100786"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Procedimiento Generar información del registro para un instalador
 
@@ -28,7 +28,7 @@ El *RegPkg.exe* utilidad puede utilizarse para generar un manifiesto de registro
 
 ## <a name="to-create-a-registration-manifest"></a>Para crear un manifiesto de registro
 
--   Ejecute RegPkg con el **/regfile** cambie. Proporcionar ningún otro modificador, el nombre del archivo de salida y la ruta de acceso del VSPackage.
+- Ejecute RegPkg con el **/regfile** cambie. Proporcionar ningún otro modificador, el nombre del archivo de salida y la ruta de acceso del VSPackage.
 
      Por ejemplo, en el símbolo del sistema, escribiría algo parecido a lo siguiente:
 
@@ -38,7 +38,7 @@ El *RegPkg.exe* utilidad puede utilizarse para generar un manifiesto de registro
 
 ## <a name="to-view-a-registration-manifest"></a>Para ver un manifiesto de registro
 
--   Abra el manifiesto de registro en cualquier editor de texto.
+- Abra el manifiesto de registro en cualquier editor de texto.
 
      El ejemplo siguiente es el manifiesto de registro que crea el servicio de lenguaje de IronPython RegPkg:
 
@@ -99,7 +99,7 @@ El *RegPkg.exe* utilidad puede utilizarse para generar un manifiesto de registro
 
 ## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Para crear un Windows Installer XML toolset incluir archivo
 
--   Ejecute RegPkg con el **/wixfile** cambie. Proporcionar ningún otro modificador, el nombre del archivo de salida y la ruta de acceso del VSPackage.
+- Ejecute RegPkg con el **/wixfile** cambie. Proporcionar ningún otro modificador, el nombre del archivo de salida y la ruta de acceso del VSPackage.
 
      Por ejemplo, en el símbolo del sistema, escribiría algo parecido a lo siguiente:
 
@@ -109,7 +109,7 @@ El *RegPkg.exe* utilidad puede utilizarse para generar un manifiesto de registro
 
 ## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Para ver un Windows Installer XML toolset incluir archivo
 
--   Abra el conjunto de herramientas de Windows Installer XML incluir el archivo en cualquier editor de texto.
+- Abra el conjunto de herramientas de Windows Installer XML incluir el archivo en cualquier editor de texto.
 
      El ejemplo siguiente es el archivo de inclusión RegPkg crea para el servicio de lenguaje de IronPython:
 

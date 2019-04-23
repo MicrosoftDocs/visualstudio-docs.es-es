@@ -8,12 +8,12 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dc913e3a456e46e1f9e19102dadddb1092358e0b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 510d0c2144b2640f720bea004cdc44026f749310
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999183"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111160"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Tutorial: Guardar la configuración de usuario en una página de inicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,35 +37,35 @@ Puede conservar la configuración del usuario para la página de inicio. Siguien
   
 #### <a name="to-configure-the-project-for-this-walkthrough"></a>Para configurar el proyecto para este tutorial  
   
-1.  Crear un proyecto de la página de inicio mediante la plantilla de proyecto de la página de inicio, como se describe en [crear su propia página de inicio de](../misc/creating-your-own-start-page.md). Denomine el proyecto **SaveMySettings**.  
+1. Crear un proyecto de la página de inicio mediante la plantilla de proyecto de la página de inicio, como se describe en [crear su propia página de inicio de](../misc/creating-your-own-start-page.md). Denomine el proyecto **SaveMySettings**.  
   
-2.  En **el Explorador de soluciones**, agregue las siguientes referencias de ensamblado al proyecto StartPageControl:  
+2. En **el Explorador de soluciones**, agregue las siguientes referencias de ensamblado al proyecto StartPageControl:  
   
-    -   EnvDTE  
+    - EnvDTE  
   
-    -   EnvDTE80  
+    - EnvDTE80  
   
-    -   Microsoft.VisualStudio.OLE.Interop  
+    - Microsoft.VisualStudio.OLE.Interop  
   
-    -   Microsoft.VisualStudio.Shell.Interop.11.0  
+    - Microsoft.VisualStudio.Shell.Interop.11.0  
   
-3.  Abra MyControl.xaml.  
+3. Abra MyControl.xaml.  
   
-4.  En el panel XAML, en el nivel superior <xref:System.Windows.Controls.UserControl> definición de elemento, agregue la siguiente declaración de evento después de las declaraciones de espacio de nombres.  
+4. En el panel XAML, en el nivel superior <xref:System.Windows.Controls.UserControl> definición de elemento, agregue la siguiente declaración de evento después de las declaraciones de espacio de nombres.  
   
     ```  
     Loaded="OnLoaded"  
     ```  
   
-5.  En el panel de diseño, haga clic en el área del control principal y, a continuación, presione SUPR.  
+5. En el panel de diseño, haga clic en el área del control principal y, a continuación, presione SUPR.  
   
      Esto quita el <xref:System.Windows.Controls.Border> elemento y todos los elementos de la base de datos y deja solo el nivel superior <xref:System.Windows.Controls.Grid> elemento.  
   
-6.  Desde el **cuadro de herramientas**, arrastre un <xref:System.Windows.Controls.StackPanel> control a la cuadrícula.  
+6. Desde el **cuadro de herramientas**, arrastre un <xref:System.Windows.Controls.StackPanel> control a la cuadrícula.  
   
-7.  Ahora, arrastre un <xref:System.Windows.Controls.TextBlock>, un <xref:System.Windows.Controls.TextBox>y un botón para el <xref:System.Windows.Controls.StackPanel>.  
+7. Ahora, arrastre un <xref:System.Windows.Controls.TextBlock>, un <xref:System.Windows.Controls.TextBox>y un botón para el <xref:System.Windows.Controls.StackPanel>.  
   
-8.  Agregar un **x: Name** atributo para el <xref:System.Windows.Controls.TextBox>y un `Click` eventos para el <xref:System.Windows.Controls.Button>, como se muestra en el ejemplo siguiente.  
+8. Agregar un **x: Name** atributo para el <xref:System.Windows.Controls.TextBox>y un `Click` eventos para el <xref:System.Windows.Controls.Button>, como se muestra en el ejemplo siguiente.  
   
     ```xml  
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">  
@@ -79,15 +79,15 @@ Puede conservar la configuración del usuario para la página de inicio. Siguien
   
 #### <a name="to-implement-the-user-control"></a>Para implementar el control de usuario  
   
-1.  En el panel de XAML, haga clic en el `Click` atributo de la <xref:System.Windows.Controls.Button> elemento y, a continuación, haga clic en **navegar al controlador de eventos**.  
+1. En el panel de XAML, haga clic en el `Click` atributo de la <xref:System.Windows.Controls.Button> elemento y, a continuación, haga clic en **navegar al controlador de eventos**.  
   
      Esto abre MyControl.xaml.cs y crea un controlador de código auxiliar para el `Button_Click` eventos.  
   
-2.  Agregue las siguientes `using` instrucciones a la parte superior del archivo.  
+2. Agregue las siguientes `using` instrucciones a la parte superior del archivo.  
   
      [!code-csharp[StartPageDTE#11](../snippets/csharp/VS_Snippets_VSSDK/startpagedte/cs/startpagecontrol/mycontrol.xaml.cs#11)]  
   
-3.  Agregar una privada `SettingsStore` propiedad, como se muestra en el ejemplo siguiente.  
+3. Agregar una privada `SettingsStore` propiedad, como se muestra en el ejemplo siguiente.  
   
     ```csharp  
     private IVsWritableSettingsStore _settingsStore = null;  
@@ -121,7 +121,7 @@ Puede conservar la configuración del usuario para la página de inicio. Siguien
   
      En primer lugar, esta propiedad obtiene una referencia a la <xref:EnvDTE80.DTE2> interfaz, que contiene el modelo de objetos de automatización de la <xref:System.Windows.FrameworkElement.DataContext%2A> del control de usuario y, a continuación, usa el objeto DTE para obtener una instancia de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> interfaz. A continuación, utiliza esa instancia para devolver la configuración del usuario actual.  
   
-4.  Rellene el `Button_Click` evento como se indica a continuación.  
+4. Rellene el `Button_Click` evento como se indica a continuación.  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -138,7 +138,7 @@ Puede conservar la configuración del usuario para la página de inicio. Siguien
   
      Escribe el contenido del cuadro de texto a un campo de "MySetting" en una colección de "MySettings" en el registro. Si la colección no existe, se crea.  
   
-5.  Agregue el siguiente controlador para el `OnLoaded` eventos del control de usuario.  
+5. Agregue el siguiente controlador para el `OnLoaded` eventos del control de usuario.  
   
     ```csharp  
     private void OnLoaded(Object sender, RoutedEventArgs e)  
@@ -152,11 +152,11 @@ Puede conservar la configuración del usuario para la página de inicio. Siguien
   
      Esto establece el texto del cuadro de texto para el valor actual de "MySetting".  
   
-6.  Compilar el control de usuario.  
+6. Compilar el control de usuario.  
   
-7.  En **el Explorador de soluciones**, abra source.extension.vsixmanifest.  
+7. En **el Explorador de soluciones**, abra source.extension.vsixmanifest.  
   
-8.  En el editor de manifiestos, establezca **Product Name** a **Guardar página de inicio de la configuración de mi**.  
+8. En el editor de manifiestos, establezca **Product Name** a **Guardar página de inicio de la configuración de mi**.  
   
      Esto establece el nombre de la página de inicio que va a aparecer en el **Personalizar página principal** lista en el **opciones** cuadro de diálogo.  
   
@@ -166,27 +166,27 @@ Puede conservar la configuración del usuario para la página de inicio. Siguien
   
 #### <a name="to-test-the-user-control"></a>Para probar el control de usuario  
   
-1.  Presione F5.  
+1. Presione F5.  
   
      Se abre la instancia experimental de Visual Studio.  
   
-2.  En la instancia experimental, en el **herramientas** menú, haga clic en **opciones**.  
+2. En la instancia experimental, en el **herramientas** menú, haga clic en **opciones**.  
   
-3.  En el **entorno** nodo, haga clic en **inicio**y, a continuación, en el **Personalizar página principal** lista, seleccione **[extensión instalada] guardar mi configuración de página de inicio** .  
+3. En el **entorno** nodo, haga clic en **inicio**y, a continuación, en el **Personalizar página principal** lista, seleccione **[extensión instalada] guardar mi configuración de página de inicio** .  
   
      Haga clic en **Aceptar**.  
   
-4.  Cierre la página de inicio si está abierto y, a continuación, en el **vista** menú, haga clic en **página de inicio**.  
+4. Cierre la página de inicio si está abierto y, a continuación, en el **vista** menú, haga clic en **página de inicio**.  
   
-5.  En la página de inicio, haga clic en el **MyControl** ficha.  
+5. En la página de inicio, haga clic en el **MyControl** ficha.  
   
-6.  En el cuadro de texto, escriba **Cat**y, a continuación, haga clic en **guardar mi configuración**.  
+6. En el cuadro de texto, escriba **Cat**y, a continuación, haga clic en **guardar mi configuración**.  
   
-7.  Cierre la página de inicio y, a continuación, vuelva a abrirlo.  
+7. Cierre la página de inicio y, a continuación, vuelva a abrirlo.  
   
      La palabra "Cat" se debe mostrar en el cuadro de texto.  
   
-8.  Reemplace la palabra "Cat" con la palabra "Dog". No se hace clic en el botón.  
+8. Reemplace la palabra "Cat" con la palabra "Dog". No se hace clic en el botón.  
   
 9. Cierre la página de inicio y, a continuación, vuelva a abrirlo.  
   

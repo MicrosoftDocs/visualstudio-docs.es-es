@@ -1,5 +1,5 @@
 ---
-title: Filtrar Depurar un Control ActiveX | Documentos de Microsoft
+title: Procedimiento Depurar un Control ActiveX | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,14 +25,14 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b822ed97b2f31b6838fcfc9ee2b6ea32760c54d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8dea98b05f5350f581128f18f38ec5f095505a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987971"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105676"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Filtrar Depuración de un control ActiveX
+# <a name="how-to-debug-an-activex-control"></a>Procedimiento Depuración de un control ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
@@ -42,19 +42,19 @@ NOTA]
   
 ### <a name="to-specify-a-container-for-the-debug-session"></a>Para especificar un contenedor para la sesión de depuración  
   
-1.  En el Explorador de soluciones, seleccione el proyecto.  
+1. En el Explorador de soluciones, seleccione el proyecto.  
   
-2.  Desde el **vista** menú, elija **páginas de propiedades**.  
+2. Desde el **vista** menú, elija **páginas de propiedades**.  
   
-3.  En el cuadro de diálogo **Páginas de propiedades del proyecto**, abra la carpeta **Propiedades de configuración** y seleccione **Depuración**.  
+3. En el cuadro de diálogo **Páginas de propiedades del proyecto**, abra la carpeta **Propiedades de configuración** y seleccione **Depuración**.  
   
-4.  Debajo de la categoría **Depuración**, busque la propiedad **Comando**.  
+4. Debajo de la categoría **Depuración**, busque la propiedad **Comando**.  
   
-5.  Especifique el nombre de ruta de acceso para el contenedor. Por ejemplo, C:\Archivos de programa\Internet Explorer\IEXPLORE.EXE.  
+5. Especifique el nombre de ruta de acceso para el contenedor. Por ejemplo, C:\Archivos de programa\Internet Explorer\IEXPLORE.EXE.  
   
-6.  Si especifica Internet Explorer como el contenedor y está utilizando Active Desktop, escriba `/new` en el cuadro **Argumentos del comando**.  
+6. Si especifica Internet Explorer como el contenedor y está utilizando Active Desktop, escriba `/new` en el cuadro **Argumentos del comando**.  
   
-7.  Haga clic en **Aceptar**.  
+7. Haga clic en **Aceptar**.  
   
      Si no especifica ningún contenedor en el cuadro de diálogo **Páginas de propiedades del proyecto**, puede especificarlo al iniciar la depuración. Cuando se selecciona un comando de ejecución para iniciar la depuración, aparece el [cuadro de diálogo Archivo ejecutable para sesión de depuración](../debugger/executable-for-debugging-session-dialog-box.md). Especifique el nombre de la ruta de acceso del contenedor en el cuadro de diálogo.  
   

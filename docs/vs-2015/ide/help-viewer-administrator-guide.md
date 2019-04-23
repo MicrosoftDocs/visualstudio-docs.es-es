@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799710"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086603"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guía del administrador del Visor de Ayuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
   
  Para obtener más información sobre la sintaxis de la línea de comandos de HlpCtntMgr.exe, vea [Argumentos de línea de comandos para Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).  
   
- Para obtener más información sobre la creación de contenido, la creación de un punto de conexión de servicio de intranet y otros tipos similares de actividades, consulte el SDK del Visor de Ayuda.  
+ Para obtener más información sobre la creación de contenido, la creación de un extremo de servicio de intranet y otros tipos similares de actividades, consulte el SDK del Visor de Ayuda.  
   
 ## <a name="deploying-local-help-content-from-the-internet"></a>Implementación de contenido de Ayuda local desde Internet  
  Puede utilizar el servicio de paquete de contenido de MSDN para distribuir el contenido de la Ayuda local desde Internet a los equipos cliente. Utilice la sintaxis siguiente:  
@@ -60,13 +60,13 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
   
 ##### <a name="to-install-english-content-from-the-internet"></a>Para instalar contenido en inglés desde Internet  
   
-1.  Seleccione **Inicio** y **Ejecutar**.  
+1. Seleccione **Inicio** y **Ejecutar**.  
   
-2.  Escriba lo siguiente:  
+2. Escriba lo siguiente:  
   
-     C:\Archivos de programa (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale es-es  
+     C:\Archivos de programa (x86)\Visor de Ayuda de Microsoft\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale es-es  
   
-3.  Presione ENTRAR.  
+3. Presione ENTRAR.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Implementación de contenido de Ayuda local preinstalado en los equipos cliente  
  Puede instalar un conjunto de contenido en línea en un equipo y después copiar ese conjunto de contenido instalado en otros equipos.  
@@ -117,15 +117,15 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
   
 ##### <a name="to-package-the-content"></a>Para empaquetar el contenido  
   
-1.  Cree una carpeta para copiar el contenido para su posterior implementación.  
+1. Cree una carpeta para copiar el contenido para su posterior implementación.  
   
      Por ejemplo: c:\VS12Help.  
   
-2.  Abra cmd.exe con permisos de administrador.  
+2. Abra cmd.exe con permisos de administrador.  
   
-3.  Navegue hasta la carpeta que creó en el paso 1.  
+3. Navegue hasta la carpeta que creó en el paso 1.  
   
-4.  Escriba lo siguiente:  
+4. Escriba lo siguiente:  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nombre_de_carpeta*>\ /y /e /k /o  
   
@@ -135,11 +135,11 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
   
 ##### <a name="to-deploy-the-content"></a>Para implementar el contenido  
   
-1.  Cree un recurso compartido de red y copie el contenido de Ayuda a esa ubicación.  
+1. Cree un recurso compartido de red y copie el contenido de Ayuda a esa ubicación.  
   
      Por ejemplo, copie el contenido de c:\VS12Help a \\\myserver\VS12Help.  
   
-2.  Cree un archivo .bat que contendrá el script de implementación para el contenido de Ayuda. Puesto que el cliente podría tener un bloqueo de lectura en cualquiera de los archivos que se estén eliminando como parte de la inserción, debe cerrar el cliente antes de insertar las actualizaciones.  
+2. Cree un archivo .bat que contendrá el script de implementación para el contenido de Ayuda. Puesto que el cliente podría tener un bloqueo de lectura en cualquiera de los archivos que se estén eliminando como parte de la inserción, debe cerrar el cliente antes de insertar las actualizaciones.  
   
      Por ejemplo:  
   
@@ -199,7 +199,7 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
     :CONTINUE  
     ```  
   
-3.  Ejecute el archivo bat en los equipos locales en los que desee instalar el contenido de Ayuda.  
+3. Ejecute el archivo bat en los equipos locales en los que desee instalar el contenido de Ayuda.  
   
 ## <a name="see-also"></a>Vea también  
  [Argumentos de línea de comandos para Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md)   

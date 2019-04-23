@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101235"
 ---
 # <a name="how-to-sign-office-solutions"></a>Procedimiento Firmar soluciones de Office
   Si inicia sesión una solución, puede conceder confianza a la solución utilizando el certificado como prueba. Puede usar el mismo certificado para varias soluciones y todas las soluciones serán de confianza sin actualizaciones de directiva de seguridad adicional.
@@ -35,15 +35,15 @@ ms.locfileid: "54871668"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Para iniciar sesión con un certificado de una solución de Office
 
-1.  En el **proyecto** menú, haga clic en _SolutionName_**propiedades**.
+1. En el **proyecto** menú, haga clic en _SolutionName_**propiedades**.
 
-2.  Haga clic en la pestaña **Firma**.
+2. Haga clic en la pestaña **Firma**.
 
-3.  Seleccione **firmar los manifiestos de ClickOnce**.
+3. Seleccione **firmar los manifiestos de ClickOnce**.
 
-4.  Busque el certificado, haga clic en **seleccione de Store** o **seleccionar del archivo** y navegar hasta el certificado.
+4. Busque el certificado, haga clic en **seleccione de Store** o **seleccionar del archivo** y navegar hasta el certificado.
 
-5.  Para comprobar que se está utilizando el certificado correcto, haga clic en **más detalles** para ver la información del certificado.
+5. Para comprobar que se está utilizando el certificado correcto, haga clic en **más detalles** para ver la información del certificado.
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Establecer opciones de búsqueda en Word mediante programación
+title: Procedimiento Establecer opciones de búsqueda en Word mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7443a4789008f3bb5992695761dff228bd32298
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6e3b66bfd7f3f5d0ef0f4893efeb81c80df5d4ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093519"
 ---
-# <a name="how-to-programmatically-set-search-options-in-word"></a>Filtrar Establecer opciones de búsqueda en Word mediante programación
+# <a name="how-to-programmatically-set-search-options-in-word"></a>Procedimiento Establecer opciones de búsqueda en Word mediante programación
   Hay dos maneras de establecer opciones de búsqueda para las selecciones en documentos de Microsoft Office Word:
 
 - Establezca las propiedades individuales de un <xref:Microsoft.Office.Interop.Word.Find> objeto.
@@ -38,7 +38,7 @@ ms.locfileid: "56601413"
 
 ### <a name="to-set-search-options-using-a-find-object"></a>Para establecer opciones de búsqueda con un objeto de búsqueda
 
-1.  Establecer las propiedades de un <xref:Microsoft.Office.Interop.Word.Find> objeto para buscar hacia delante a través de una selección para el texto **encontrarme**.
+1. Establecer las propiedades de un <xref:Microsoft.Office.Interop.Word.Find> objeto para buscar hacia delante a través de una selección para el texto **encontrarme**.
 
      [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
 
@@ -47,7 +47,7 @@ ms.locfileid: "56601413"
 
 ### <a name="to-set-search-options-using-execute-method-arguments"></a>Para establecer opciones de búsqueda con los argumentos del método Execute
 
-1.  Pasar los criterios de búsqueda como parámetros de la <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método para buscar hacia delante a través de una selección para el texto **encontrarme**.
+1. Pasar los criterios de búsqueda como parámetros de la <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método para buscar hacia delante a través de una selección para el texto **encontrarme**.
 
      [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]

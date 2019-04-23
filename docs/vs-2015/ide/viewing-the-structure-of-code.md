@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801217"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115073"
 ---
 # <a name="viewing-the-structure-of-code"></a>Ver la estructura del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Puede examinar los objetos y miembros de proyectos de Visual Studio y los objeto
 > [!NOTE]
 >  La edición de Visual Studio y la configuración que use pueden afectar a las características en el IDE. Podrían ser diferentes de las descritas en este tema.  
   
-##  <a name="BKMK_ClassView"></a>Vista de clases (Visual Basic, C#, C++)  
+## <a name="BKMK_ClassView"></a>Vista de clases (Visual Basic, C#, C++)  
  La **Vista de clases** se muestra como parte del **Explorador de soluciones**, así como en una ventana independiente. La ventana **Vista de clases** muestra los elementos de una aplicación. En el panel superior se muestran los espacios de nombres, los tipos, las interfaces, las enumeraciones y las clases, y en el panel inferior se muestran los miembros que pertenecen al tipo que se haya seleccionado en el panel superior. Al usar esta ventana, puede navegar hasta las definiciones de miembros en el código fuente (o en el **Examinador de objetos** si el elemento se define fuera de la solución).  
   
  No es necesario compilar un proyecto para ver sus elementos en la **Vista de clases**. A medida que se modifica el código en el proyecto, se actualiza la ventana.  
@@ -110,7 +110,7 @@ Puede examinar los objetos y miembros de proyectos de Visual Studio y los objeto
 |**Ir a referencia**|Muestra una referencia al tipo o miembro en el código fuente si es que está disponible.|  
 |**Ver jerarquía de llamadas**|Muestra el método seleccionado en la ventana **Jerarquía de llamadas**.|  
   
-##  <a name="BKMK_CallHierarchy"></a>Jerarquía de llamadas (Visual Basic, C#, C++)  
+## <a name="BKMK_CallHierarchy"></a>Jerarquía de llamadas (Visual Basic, C#, C++)  
  La ventana **Jerarquía de llamadas** muestra dónde se llama a un determinado método (o propiedad o constructor) y enumera los métodos que se llaman desde ese método. Puede ver varios niveles del gráfico de llamada, que muestra las relaciones llamador/destinatario entre los métodos en un ámbito especificado.  
   
  Para mostrar la ventana **Jerarquía de llamadas**, puede seleccionar un método (o propiedad o constructor) y, después, elegir **Ver jerarquía de clases** en el menú contextual. La visualización debería tener un aspecto similar al de la siguiente imagen.  
@@ -135,7 +135,7 @@ Ventana Jerarquía de llamadas
 |**Copiar**|Copia el nodo seleccionado (pero no sus subnodos).|  
 |**Actualizar**|Actualiza la información.|  
   
-##  <a name="BKMK_ObjectBrowser"></a> Examinador de objetos  
+## <a name="BKMK_ObjectBrowser"></a> Examinador de objetos  
  El **Examinador de objetos** muestra descripciones del código en sus proyectos.  
   
  Puede filtrar lo que quiere ver en el **Examinador de objetos**. Mediante la lista desplegable situada en la parte superior de la ventana, puede elegir una de las siguientes opciones:  
@@ -194,7 +194,7 @@ Ventana Jerarquía de llamadas
 |**Ir a referencia**|Muestra una referencia al tipo o miembro en el código fuente si es que está disponible.|  
 |**Ver jerarquía de llamadas**|Muestra el método seleccionado en la ventana **Jerarquía de llamadas**.|  
   
-##  <a name="BKMK_CodeDefinition"></a>Ventana Definición de código (C#, C++)  
+## <a name="BKMK_CodeDefinition"></a>Ventana Definición de código (C#, C++)  
  La ventana **Definición de código** muestra la definición de un tipo o miembro seleccionado del proyecto activo. El tipo o miembro se puede seleccionar en el editor de código o en una ventana de vista de código.  
   
  Aunque esta ventana es de solo lectura, puede establecer puntos de interrupción o marcadores en ella. Para modificar la definición mostrada, pulse **Editar definición** en el menú contextual. Esto abre el archivo de origen en el editor de código y mueve el punto de inserción a la línea en la que comienza la definición.  

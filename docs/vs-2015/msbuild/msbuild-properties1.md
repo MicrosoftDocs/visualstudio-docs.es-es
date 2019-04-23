@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 662cd662e8fe18c5a2a8c05a7f5da21c064743b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101189"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,11 +111,11 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 ## <a name="creating-properties-during-execution"></a>Crear propiedades durante la ejecución  
  A las propiedades ubicadas fuera de los elementos `Target` se les asignan valores durante la fase de evaluación de una compilación. En la siguiente fase de la ejecución, se pueden crear o modificar propiedades como se indica a continuación:  
   
--   Cualquier tarea puede emitir una propiedad. Para emitir una propiedad, el elemento [Task](../msbuild/task-element-msbuild.md) debe tener un elemento [Output](../msbuild/output-element-msbuild.md) secundario que tenga un atributo `PropertyName`.  
+- Cualquier tarea puede emitir una propiedad. Para emitir una propiedad, el elemento [Task](../msbuild/task-element-msbuild.md) debe tener un elemento [Output](../msbuild/output-element-msbuild.md) secundario que tenga un atributo `PropertyName`.  
   
--   La tarea [CreateProperty](../msbuild/createproperty-task.md) puede emitir una propiedad. (en desuso).  
+- La tarea [CreateProperty](../msbuild/createproperty-task.md) puede emitir una propiedad. (en desuso).  
   
--   A partir de .NET Framework 3.5, los elementos `Target` pueden contener elementos `PropertyGroup` que pueden contener declaraciones de propiedad.  
+- A partir de .NET Framework 3.5, los elementos `Target` pueden contener elementos `PropertyGroup` que pueden contener declaraciones de propiedad.  
   
 ## <a name="storing-xml-in-properties"></a>Almacenar código XML en las propiedades  
  Las propiedades pueden contener código XML arbitrario, que puede ayudar a pasar valores a las tareas o a mostrar información de registro. En el ejemplo siguiente se muestra la propiedad `ConfigTemplate`, que tiene un valor que contiene código XML y referencias a otras propiedades. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] reemplaza dichas referencias con los respectivos valores de propiedad. Los valores de propiedad se asignan en el orden en que aparecen. Por consiguiente, en este ejemplo, `$(MySupportedVersion)`, `$(MyRequiredVersion)`y `$(MySafeMode)` ya deben haberse definido.  

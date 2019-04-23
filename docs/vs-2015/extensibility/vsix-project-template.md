@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002813"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096144"
 ---
 # <a name="vsix-project-template"></a>Plantilla de proyecto de VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,37 +48,37 @@ Puede usar la plantilla de proyecto de VSIX para ajustar una o varias extensione
   
 #### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Para empaquetar una extensión mediante el uso de un proyecto de VSIX  
   
-1.  Compile los proyectos que componen la extensión.  
+1. Compile los proyectos que componen la extensión.  
   
-2.  Crear un proyecto de VSIX con el **proyecto VSIX** plantilla.  
+2. Crear un proyecto de VSIX con el **proyecto VSIX** plantilla.  
   
      Se abre Source.Extension.vsixmanifest en **Diseñador de manifiestos**.  
   
-3.  En el **activos** ficha, elija la **New** botón.  
+3. En el **activos** ficha, elija la **New** botón.  
   
      El **Agregar nuevo activo** aparece el cuadro de diálogo.  
   
-4.  En el **tipo** lista, elija el tipo de extensión que se va a agregar.  
+4. En el **tipo** lista, elija el tipo de extensión que se va a agregar.  
   
-5.  Para agregar un elemento de extensión o contenido que se incluye en la solución actual (por ejemplo, una plantilla de elemento o un ensamblado compilado), realice los pasos siguientes:  
+5. Para agregar un elemento de extensión o contenido que se incluye en la solución actual (por ejemplo, una plantilla de elemento o un ensamblado compilado), realice los pasos siguientes:  
   
-    1.  En el **origen** elija **un proyecto de la solución actual**.  
+    1. En el **origen** elija **un proyecto de la solución actual**.  
   
-    2.  En el **proyecto** lista, elija el nombre de la extensión.  
+    2. En el **proyecto** lista, elija el nombre de la extensión.  
   
-    3.  En el **insertar en esta carpeta** , escriba el nombre de una carpeta en la que se va a incrustar el recurso y, a continuación, elija el **Aceptar** botón.  
+    3. En el **insertar en esta carpeta** , escriba el nombre de una carpeta en la que se va a incrustar el recurso y, a continuación, elija el **Aceptar** botón.  
   
-6.  Para agregar una extensión o un elemento de contenido que no se incluye en la solución actual, realice los pasos siguientes:  
+6. Para agregar una extensión o un elemento de contenido que no se incluye en la solución actual, realice los pasos siguientes:  
   
-    1.  En el **origen** cuadro de lista, elija **archivo en filesystem**.  
+    1. En el **origen** cuadro de lista, elija **archivo en filesystem**.  
   
-    2.  En el **ruta** campo, escriba la ruta de acceso completa al archivo de extensión compilado o comprimidos o usar el **examinar** botón para examinar el archivo.  
+    2. En el **ruta** campo, escriba la ruta de acceso completa al archivo de extensión compilado o comprimidos o usar el **examinar** botón para examinar el archivo.  
   
-    3.  En el **insertar en esta carpeta** , escriba el nombre de una carpeta en la que se va a incrustar el recurso y, a continuación, elija el **Aceptar** botón.  
+    3. En el **insertar en esta carpeta** , escriba el nombre de una carpeta en la que se va a incrustar el recurso y, a continuación, elija el **Aceptar** botón.  
   
-7.  Si desea que el paquete para incluir extensiones adicionales, agregue de la misma manera.  
+7. Si desea que el paquete para incluir extensiones adicionales, agregue de la misma manera.  
   
-8.  Compile la solución.  
+8. Compile la solución.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compila un archivo .vsix que contenga un archivo de manifiesto de VSIX, un archivo [Content_Types] .xml y todos los recursos de extensión que ha agregado al proyecto.  
   

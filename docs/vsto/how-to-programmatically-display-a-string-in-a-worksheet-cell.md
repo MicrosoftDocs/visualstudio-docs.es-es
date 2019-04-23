@@ -1,5 +1,5 @@
 ---
-title: Filtrar Mostrar una cadena en una celda de la hoja de cálculo mediante programación
+title: Procedimiento Mostrar una cadena en una celda de la hoja de cálculo mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d391022e9ce86b2866d941d8c0b56e2e35e3776
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9760d019fa80d4ecae63633c38ac9df60932202
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101202"
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Filtrar Mostrar una cadena en una celda de la hoja de cálculo mediante programación
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Procedimiento Mostrar una cadena en una celda de la hoja de cálculo mediante programación
   En este ejemplo se muestra cómo mostrar texto en una celda mediante programación. Para mostrar texto en la celda, use un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto nativo de rango de Excel.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "56629448"
 
 ### <a name="to-display-text-in-a-namedrange-control"></a>Para mostrar texto en un control NamedRange
 
-1.  Establezca el valor de la <xref:Microsoft.Office.Tools.Excel.NamedRange> control **Hello World**.
+1. Establezca el valor de la <xref:Microsoft.Office.Tools.Excel.NamedRange> control **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
      [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
@@ -40,7 +40,7 @@ ms.locfileid: "56629448"
 
 ### <a name="to-display-text-in-an-excel-range"></a>Para mostrar texto en un rango de Excel
 
-1.  Recuperar el rango en la celda **A1** en `Sheet1` y establezca el valor en **Hello World**.
+1. Recuperar el rango en la celda **A1** en `Sheet1` y establezca el valor en **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]

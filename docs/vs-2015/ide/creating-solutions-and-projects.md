@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109821"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Los proyectos son los contenedores lógicos de todo lo necesario para compilar l
 ## <a name="adding-single-files-at-the-solution-level"></a>Agregar archivos individuales al nivel de solución  
  A veces, puede tener un archivo al que hagan referencia varios proyectos, o que contenga texto o datos varios que, lógicamente, pertenezcan al nivel de solución en lugar de a un proyecto determinado.  Para agregar un solo elemento a una solución:  
   
-1.  Haga clic con el botón derecho en el nodo de solución en **Explorador de soluciones** y pulse **Agregar &#124; Nuevo elemento** o **Agregar &#124; Elemento existente**.  
+1. Haga clic con el botón derecho en el nodo de solución en **Explorador de soluciones** y pulse **Agregar &#124; Nuevo elemento** o **Agregar &#124; Elemento existente**.  
   
 ## <a name="creating-empty-solutions"></a>Crear soluciones vacías  
  Aunque un proyecto debe residir en una solución, puede crear una solución que no tenga proyectos.  
@@ -87,11 +87,11 @@ Los proyectos son los contenedores lógicos de todo lo necesario para compilar l
   
 ##### <a name="to-delete-a-solution"></a>Para eliminar una solución  
   
-1.  En el **Explorador de soluciones**, haga clic con el botón secundario en la solución que desea eliminar y seleccione **Abrir carpeta en el Explorador de archivos**.  
+1. En el **Explorador de soluciones**, haga clic con el botón secundario en la solución que desea eliminar y seleccione **Abrir carpeta en el Explorador de archivos**.  
   
-2.  Suba un nivel en el Explorador de archivos.  
+2. Suba un nivel en el Explorador de archivos.  
   
-3.  Seleccione el directorio que contiene la solución y presione Supr.  
+3. Seleccione el directorio que contiene la solución y presione Supr.  
   
 ## <a name="see-also"></a>Vea también  
  [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)   

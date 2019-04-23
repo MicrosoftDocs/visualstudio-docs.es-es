@@ -15,30 +15,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 611accb591b63f31ffe6a14535d470f2807f0e99
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 653a9b589e68c326fc40a94ed0fa3ab7e49acb8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093804"
 ---
 # <a name="create-relationships-between-datasets"></a>Crear relaciones entre conjuntos de datos
 Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:System.Data.DataRelation> objetos para representar una relación primaria-secundaria entre las tablas y devolver los registros relacionados entre sí. Agregar tablas relacionadas a conjuntos de datos mediante el **Asistente para configuración de origen de datos**, o el **Diseñador de Dataset**, crea y configura el <xref:System.Data.DataRelation> objeto automáticamente.
 
 La <xref:System.Data.DataRelation> objeto desempeña dos funciones:
 
--   Pueden disponer de los registros relacionados con un registro que está trabajando. Proporciona registros secundarios si se encuentra en un registro primario (<xref:System.Data.DataRow.GetChildRows%2A>) y un registro primario si está trabajando con un registro secundario (<xref:System.Data.DataRow.GetParentRow%2A>).
+- Pueden disponer de los registros relacionados con un registro que está trabajando. Proporciona registros secundarios si se encuentra en un registro primario (<xref:System.Data.DataRow.GetChildRows%2A>) y un registro primario si está trabajando con un registro secundario (<xref:System.Data.DataRow.GetParentRow%2A>).
 
--   Puede aplicar restricciones de integridad referencial, como la eliminación de registros secundarios relacionados cuando se elimina un registro primario.
+- Puede aplicar restricciones de integridad referencial, como la eliminación de registros secundarios relacionados cuando se elimina un registro primario.
 
 Es importante comprender la diferencia entre una combinación es true y la función de un <xref:System.Data.DataRelation> objeto. En una combinación es true, se toman de las tablas primarias y secundarias registros y se colocan en un único conjunto de registros sin formato. Cuando se usa un <xref:System.Data.DataRelation> de objeto, no se crea ningún conjunto de registros nuevos. En su lugar, DataRelation realiza un seguimiento de la relación entre las tablas y los mantiene sincronizados los registros primarios y secundarios.
 
 ## <a name="datarelation-objects-and-constraints"></a>Las restricciones y los objetos DataRelation
 Un <xref:System.Data.DataRelation> objeto también se usa para crear y aplicar las siguientes restricciones:
 
--   Una restricción unique, lo que garantiza que una columna en la tabla no contiene duplicados.
+- Una restricción unique, lo que garantiza que una columna en la tabla no contiene duplicados.
 
--   Una restricción foreign key, que puede usarse para mantener la integridad referencial entre una tabla primaria y secundaria de un conjunto de datos.
+- Una restricción foreign key, que puede usarse para mantener la integridad referencial entre una tabla primaria y secundaria de un conjunto de datos.
 
 Las restricciones que se especifican en un <xref:System.Data.DataRelation> objeto se implementan automáticamente creando objetos adecuados o establecer las propiedades. Si creas una restricción foreign key mediante el <xref:System.Data.DataRelation> (objeto), las instancias de la <xref:System.Data.ForeignKeyConstraint> clase se agregan a la <xref:System.Data.DataRelation> del objeto <xref:System.Data.DataRelation.ChildKeyConstraint%2A> propiedad.
 
@@ -47,18 +47,18 @@ Se implementa una restricción unique, simplemente establezca el <xref:System.Da
 ### <a name="referential-integrity-rules"></a>Reglas de integridad referencial
 Como parte de la restricción foreign key, puede especificar reglas de integridad referencial que se aplican en tres puntos:
 
--   Cuando se actualiza un registro primario
+- Cuando se actualiza un registro primario
 
--   Cuando se elimina un registro primario
+- Cuando se elimina un registro primario
 
--   Cuando se acepta o se rechaza un cambio
+- Cuando se acepta o se rechaza un cambio
 
 Se especifican las reglas que se pueden realizar en el <xref:System.Data.Rule> enumeración y se muestran en la tabla siguiente.
 
 |Regla de restricción de clave externa|Acción|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|También se realiza el cambio realizado en el registro primario (update o delete) en los registros relacionados en la tabla secundaria.|
-|<xref:System.Data.Rule.SetNull>|No se eliminan los registros secundarios, pero la clave externa en los registros secundarios se establece en <xref:System.DBNull>. Con esta configuración, los registros secundarios pueden dejarse como "huérfanos", es decir, no tienen ninguna relación con los registros primarios. **Nota:** mediante esta regla puede dar lugar a datos no válidos en la tabla secundaria.|
+|<xref:System.Data.Rule.SetNull>|No se eliminan los registros secundarios, pero la clave externa en los registros secundarios se establece en <xref:System.DBNull>. Con esta configuración, los registros secundarios pueden dejarse como "huérfanos", es decir, no tienen ninguna relación con los registros primarios. **Nota:** Mediante esta regla puede dar lugar a que los datos no válidos en la tabla secundaria.|
 |<xref:System.Data.Rule.SetDefault>|La clave externa en los registros secundarios relacionados se establece en su valor predeterminado (según lo establecido por la columna <xref:System.Data.DataColumn.DefaultValue%2A> propiedad).|
 |<xref:System.Data.Rule.None>|No se realiza ningún cambio en los registros secundarios relacionados. Con esta configuración, los registros secundarios pueden contener referencias a los registros primarios no válido.|
 
@@ -76,33 +76,33 @@ Las relaciones entre tablas de datos aparecen como líneas en el **Diseñador de
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Para crear una relación entre dos tablas de datos
 
-1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, consulte [Tutorial: crear un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Tutorial: Creación de un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Arrastre un **relación** objeto desde el **DataSet** cuadro de herramientas a la tabla de datos secundaria en la relación.
+2. Arrastre un **relación** objeto desde el **DataSet** cuadro de herramientas a la tabla de datos secundaria en la relación.
 
      El **relación** abre el cuadro de diálogo, rellenar el **tabla secundaria** cuadro con la tabla que se arrastró el **relación** objeto a.
 
-3.  Seleccione la tabla primaria desde la **tabla primaria** cuadro. La tabla primaria contiene los registros en el lado "uno" de una relación uno a varios.
+3. Seleccione la tabla primaria desde la **tabla primaria** cuadro. La tabla primaria contiene los registros en el lado "uno" de una relación uno a varios.
 
-4.  Compruebe que la tabla secundaria correcta se muestra en el **tabla secundaria** cuadro. La tabla secundaria contiene los registros en el lado "varios" de una relación uno a varios.
+4. Compruebe que la tabla secundaria correcta se muestra en el **tabla secundaria** cuadro. La tabla secundaria contiene los registros en el lado "varios" de una relación uno a varios.
 
-5.  Escriba un nombre para la relación en el **nombre** cuadro o deje el nombre predeterminado basándose en las tablas seleccionadas. Éste es el nombre de los datos reales <xref:System.Data.DataRelation> objeto en el código.
+5. Escriba un nombre para la relación en el **nombre** cuadro o deje el nombre predeterminado basándose en las tablas seleccionadas. Éste es el nombre de los datos reales <xref:System.Data.DataRelation> objeto en el código.
 
-6.  Seleccione las columnas que se unen las tablas en el **columnas de clave** y **columnas de clave externa** enumera.
+6. Seleccione las columnas que se unen las tablas en el **columnas de clave** y **columnas de clave externa** enumera.
 
-7.  Seleccione si desea crear una relación, la restricción o ambas.
+7. Seleccione si desea crear una relación, la restricción o ambas.
 
-8.  Active o desactive el **relación anidada** cuadro. Seleccione esta opción establece la <xref:System.Data.DataRelation.Nested%2A> propiedad `true`, y hace que el elemento secundario filas de la relación se anidan dentro de la columna primaria cuando se escribe como datos XML o sincronizadas con esas filas <xref:System.Xml.XmlDataDocument>. Para obtener más información, consulte [anidar objetos DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
+8. Active o desactive el **relación anidada** cuadro. Seleccione esta opción establece la <xref:System.Data.DataRelation.Nested%2A> propiedad `true`, y hace que el elemento secundario filas de la relación se anidan dentro de la columna primaria cuando se escribe como datos XML o sincronizadas con esas filas <xref:System.Xml.XmlDataDocument>. Para obtener más información, consulte [anidar objetos DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
 
-9. Establezca las reglas que se aplicará cuando se va a realizar cambios en los registros en estas tablas. Para obtener más información, vea <xref:System.Data.Rule>.
+9. Establezca las reglas que se aplicará cuando se va a realizar cambios en los registros en estas tablas. Para obtener más información, consulta <xref:System.Data.Rule>.
 
 10. Haga clic en **Aceptar** para crear la relación. Aparece una línea de relación en el diseñador entre las dos tablas.
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Para mostrar el nombre de una relación en el Diseñador de Dataset
 
-1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, consulte [Tutorial: crear un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Tutorial: Creación de un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Desde el **datos** menú, seleccione el **Mostrar etiquetas de relación** comando para mostrar el nombre de relación. Borrar ese comando para ocultar el nombre de relación.
+2. Desde el **datos** menú, seleccione el **Mostrar etiquetas de relación** comando para mostrar el nombre de relación. Borrar ese comando para ocultar el nombre de relación.
 
 ## <a name="see-also"></a>Vea también
 

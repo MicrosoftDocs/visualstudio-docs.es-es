@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9353b4c3f5f5f073a0658d2cf506a46e13d3662c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108348"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de Visual Basic y C# en las aplicaciones de las aplicaciones de la Tienda con el análisis de código estático de Visual Studio
 
@@ -42,7 +42,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
  [Advertencias de análisis de código de Visual Basic y C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
 
-##  <a name="BKMK_Run"></a> Ejecutar análisis de código
+## <a name="BKMK_Run"></a> Ejecutar análisis de código
  Para ejecutar un análisis de código en la solución de Visual Studio:
 
 - En el menú **Compilar**, elija **Ejecutar análisis de código en la solución**.
@@ -57,12 +57,12 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    ![Ventana Análisis de código](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Analizar y resolver advertencias del análisis de código
+## <a name="BKMK_Analyze"></a> Analizar y resolver advertencias del análisis de código
  Para analizar una advertencia concreta, haz clic en su título en la ventana Análisis de código. La advertencia se expande para mostrar información detallada sobre el problema.
 
  ![Advertencia de análisis de código expandida](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
- Cuando se expande una advertencia, la línea de código que ha causado la advertencia se resalta en el editor de código de Visual Studio.
+ Cuando se expande una advertencia, la línea de código que la causó se resalta en el editor de código de Visual Studio.
 
  ![Resaltado de texto de análisis de código](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
@@ -71,7 +71,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > [!TIP]
 >  Puedes repetir el análisis de código desde la ventana Análisis de código. Haga clic en el botón **Analizar** y seleccione el ámbito de análisis. Puedes repetir el análisis en toda la solución o en el proyecto seleccionado.
 
-##  <a name="BKMK_Suppress"></a> Suprimir las advertencias de análisis de código
+## <a name="BKMK_Suppress"></a> Suprimir las advertencias de análisis de código
  A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puedes suprimir advertencias individuales de modo que ya no aparezcan en la ventana Análisis de código.
 
  Para suprimir una advertencia:
@@ -88,14 +88,14 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
      La decisión de suprimir la advertencia en el archivo de origen o en el archivo de supresión depende de tu estilo y tus necesidades de codificación.
 
-##  <a name="BKMK_Search"></a> Buscar y filtrar resultados del análisis de código
+## <a name="BKMK_Search"></a> Buscar y filtrar resultados del análisis de código
  Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.
 
  ![Buscar y filtrar la ventana de análisis de código](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  En [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)], todas las advertencias de análisis de código tienen el nivel de gravedad de advertencia.
 
-##  <a name="BKMK_Warnings"></a> Advertencias de análisis de código de Visual Basic y C#
+## <a name="BKMK_Warnings"></a> Advertencias de análisis de código de Visual Basic y C#
  El análisis de código produce las advertencias siguientes:
 
  [CA1001: los tipos que poseen campos descartables deben ser descartables](http://msdn.microsoft.com/library/ms182172.aspx)

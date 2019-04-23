@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2caee9a39df18bfed0dc48a9c0266721500ddeca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ba23da85e24dd7c1020b19b66852cad86f79a03b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084783"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 
 2. Experimentar con el ejemplo inicial que proporciona la plantilla:  
 
-   1.  Transformar todas las plantillas.  
+   1. Transformar todas las plantillas.  
 
-   2.  Compilar y ejecutar el ejemplo (**CTRL+F5**).  
+   2. Compilar y ejecutar el ejemplo (**CTRL+F5**).  
 
-   3.  En la instancia experimental de Visual Studio, abra el `Sample` archivo del proyecto de depuración.  
+   3. En la instancia experimental de Visual Studio, abra el `Sample` archivo del proyecto de depuración.  
 
         Tenga en cuenta que se muestra en un control Windows Forms.  
 
@@ -54,17 +54,17 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 
    En la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], tenga en cuenta los siguientes puntos acerca de la solución de DSL:  
 
--   `DslDefinition.dsl` no contiene ningún elemento del diagrama. Esto es porque no usará los diagramas DSL para ver los modelos de la instancia de este DSL. En su lugar, se enlazará un formulario de Windows para el modelo y los elementos en el formulario mostrará el modelo.  
+- `DslDefinition.dsl` no contiene ningún elemento del diagrama. Esto es porque no usará los diagramas DSL para ver los modelos de la instancia de este DSL. En su lugar, se enlazará un formulario de Windows para el modelo y los elementos en el formulario mostrará el modelo.  
 
--   Además el `Dsl` y `DslPackage` proyectos, la solución contiene un tercer proyecto denominado `UI.` **UI** proyecto contiene la definición de un control Windows Forms. `DslPackage` depende de `UI`, y `UI` depende `Dsl`.  
+- Además el `Dsl` y `DslPackage` proyectos, la solución contiene un tercer proyecto denominado `UI.` **UI** proyecto contiene la definición de un control Windows Forms. `DslPackage` depende de `UI`, y `UI` depende `Dsl`.  
 
--   En el `DslPackage` proyecto, `UI\DocView.cs` contiene el código que muestra el control de Windows Forms que se define en el `UI` proyecto.  
+- En el `DslPackage` proyecto, `UI\DocView.cs` contiene el código que muestra el control de Windows Forms que se define en el `UI` proyecto.  
 
--   El `UI` proyecto contiene un ejemplo funcional de un control de formulario enlazado a la línea ADSL. Sin embargo, no funcionará cuando han cambiado la definición de DSL. El `UI` contiene el proyecto:  
+- El `UI` proyecto contiene un ejemplo funcional de un control de formulario enlazado a la línea ADSL. Sin embargo, no funcionará cuando han cambiado la definición de DSL. El `UI` contiene el proyecto:  
 
-    -   Una clase de Windows Forms denominada `ModelViewControl`.  
+    - Una clase de Windows Forms denominada `ModelViewControl`.  
 
-    -   Un archivo denominado `DataBinding.cs` que contiene una definición parcial adicional de `ModelViewControl`. Para ver su contenido, en **el Explorador de soluciones**, abra el menú contextual para el archivo y elija **ver código**.  
+    - Un archivo denominado `DataBinding.cs` que contiene una definición parcial adicional de `ModelViewControl`. Para ver su contenido, en **el Explorador de soluciones**, abra el menú contextual para el archivo y elija **ver código**.  
 
 ### <a name="about-the-ui-project"></a>Acerca del proyecto de interfaz de usuario  
  Cuando se actualiza el archivo de definición de DSL para definir su propio DSL, tendrá que actualizar el control en el `UI` proyecto para mostrar su DSL. A diferencia de la `Dsl` y `DslPackage` proyectos, el ejemplo `UI` proyecto no se genera desde `DslDefinitionl.dsl`. Puede agregar archivos .tt para generar el código si lo desea, aunque no se trata en este tutorial.  
@@ -76,34 +76,34 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 
 #### <a name="to-update-the-dsl-definition"></a>Para actualizar la definición de DSL  
 
-1.  Abra DslDefinition.dsl en el diseñador DSL.  
+1. Abra DslDefinition.dsl en el diseñador DSL.  
 
-2.  Eliminar **ExampleElement**  
+2. Eliminar **ExampleElement**  
 
-3.  Cambiar el nombre de la **ExampleModel** clase de dominio `Farm`.  
+3. Cambiar el nombre de la **ExampleModel** clase de dominio `Farm`.  
 
      Asígnele propiedades de dominio adicional denominadas `Size` de tipo **Int32**, y `IsOrganic` de tipo **booleano**.  
 
     > [!NOTE]
     >  Si elimina la clase de dominio raíz y, a continuación, crear una nueva raíz, tendrá que restablecer la propiedad de la clase raíz del Editor. En **DSL Explorer**, seleccione **Editor**. A continuación, en la ventana Propiedades, establezca **clase raíz** a `Farm`.  
 
-4.  Use la **la clase de dominio denominado** herramienta para crear las clases de dominio siguientes:  
+4. Use la **la clase de dominio denominado** herramienta para crear las clases de dominio siguientes:  
 
-    -   `Field` – A darle una propiedad de dominio adicional denominada `Size`.  
+    - `Field` – A darle una propiedad de dominio adicional denominada `Size`.  
 
-    -   `Animal` En la ventana Propiedades, establezca **modificador de herencia** a **abstracta**.  
+    - `Animal` En la ventana Propiedades, establezca **modificador de herencia** a **abstracta**.  
 
-5.  Use la **la clase de dominio** herramienta para crear las clases siguientes:  
+5. Use la **la clase de dominio** herramienta para crear las clases siguientes:  
 
-    -   `Sheep`  
+    - `Sheep`  
 
-    -   `Goat`  
+    - `Goat`  
 
-6.  Use la **herencia** herramienta para realizar `Goat` y `Sheep` heredar `Animal`.  
+6. Use la **herencia** herramienta para realizar `Goat` y `Sheep` heredar `Animal`.  
 
-7.  Use la **Embedding** herramienta incrustar `Field` y `Animal` en `Farm`.  
+7. Use la **Embedding** herramienta incrustar `Field` y `Animal` en `Farm`.  
 
-8.  Es posible que desee ordenar el diagrama. Para reducir el número de elementos duplicados, use el **poner aquí subárbol** comando en el menú contextual de elementos hoja.  
+8. Es posible que desee ordenar el diagrama. Para reducir el número de elementos duplicados, use el **poner aquí subárbol** comando en el menú contextual de elementos hoja.  
 
 9. **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones.  
 
@@ -117,13 +117,13 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 
 #### <a name="to-define-your-dsl-model-as-a-data-source"></a>Para definir el modelo DSL como un origen de datos  
 
-1.  En el **datos** menú, elija **Mostrar orígenes de datos**.  
+1. En el **datos** menú, elija **Mostrar orígenes de datos**.  
 
      Se abre la ventana **Orígenes de datos**.  
 
      Elija **Agregar nuevo origen de datos**. Se abrirá el **Asistente para configuración de orígenes de datos**.  
 
-2.  Elija **objeto**, **siguiente**.  
+2. Elija **objeto**, **siguiente**.  
 
      Expanda **Dsl**, **Company.FarmApp**y seleccione **granja**, que es la clase raíz del modelo. Elija **Finalizar**.  
 
@@ -181,7 +181,7 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Para completar los enlaces para el DSL  
 
-1.  Agregue el código siguiente en un archivo de código independiente en el **UI** proyecto:  
+1. Agregue el código siguiente en un archivo de código independiente en el **UI** proyecto:  
 
     ```csharp  
     using System.ComponentModel;  
@@ -207,7 +207,7 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
     }  
     ```  
 
-2.  En el **DslPackage** del proyecto, edite **DslPackage\DocView.tt** para actualizar la definición de variable siguiente:  
+2. En el **DslPackage** del proyecto, edite **DslPackage\DocView.tt** para actualizar la definición de variable siguiente:  
 
     ```csharp  
     string viewControlTypeName = "FarmControl";  
@@ -218,18 +218,18 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 
 #### <a name="to-test-the-dsl"></a>Para probar el DSL  
 
-1.  Compile y ejecute la solución.  
+1. Compile y ejecute la solución.  
 
-2.  En la instancia experimental de Visual Studio, abra el **ejemplo** archivo.  
+2. En la instancia experimental de Visual Studio, abra el **ejemplo** archivo.  
 
-3.  En el **FarmApp Explorer**, abra el menú contextual en el **granja** nodo raíz y elija **agregar nueva cabras**.  
+3. En el **FarmApp Explorer**, abra el menú contextual en el **granja** nodo raíz y elija **agregar nueva cabras**.  
 
      `Goat1` aparece en el **animales** vista.  
 
     > [!WARNING]
     >  Debe usar el menú contextual en el **granja** nodo, no el **animales** nodo.  
 
-4.  Seleccione el **granja** nodo raíz y ver sus propiedades.  
+4. Seleccione el **granja** nodo raíz y ver sus propiedades.  
 
      En la vista de formulario, cambie el **nombre** o **tamaño** de la granja de servidores.  
 
@@ -239,13 +239,13 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 
 #### <a name="to-make-the-properties-update-immediately"></a>Para hacer que las propiedades se actualice inmediatamente  
 
-1.  En la vista de diseño de FarmControl.cs, seleccione un campo sencillo como nombre, tamaño o IsOrganic.  
+1. En la vista de diseño de FarmControl.cs, seleccione un campo sencillo como nombre, tamaño o IsOrganic.  
 
-2.  En la ventana Propiedades, expanda **DataBindings** y abra **(avanzado)**.  
+2. En la ventana Propiedades, expanda **DataBindings** y abra **(avanzado)**.  
 
      En el **formato y enlace de datos avanzado** cuadro de diálogo, en **modo de actualización del origen de datos**, elija **OnPropertyChanged**.  
 
-3.  Compile y ejecute la solución.  
+3. Compile y ejecute la solución.  
 
      Compruebe que al cambiar el contenido del campo, la propiedad correspondiente del inmediatamente los cambios del modelo de conjunto de servidores.  
 

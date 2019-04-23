@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366554"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103100"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspeccionar las variables en las ventanas automático y variables locales
 
@@ -56,9 +56,9 @@ En el código C++ nativo, se debe calificar el contexto de un nombre de variable
 >[!CAUTION]
 >Asegúrese de que comprende las consecuencias antes de cambiar los valores y expresiones. Algunas causas posibles son:
 >
->-   La evaluación de algunas expresiones puede cambiar el valor de una variable o afectar de otra forma al estado del programa. Por ejemplo, evaluar `var1 = ++var2` cambia el valor de ambos `var1` y `var2`. Estas expresiones se dice que tienen [efectos](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efectos secundarios pueden producir resultados inesperados si no es consciente de ellos.
+>- La evaluación de algunas expresiones puede cambiar el valor de una variable o afectar de otra forma al estado del programa. Por ejemplo, evaluar `var1 = ++var2` cambia el valor de ambos `var1` y `var2`. Estas expresiones se dice que tienen [efectos](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efectos secundarios pueden producir resultados inesperados si no es consciente de ellos.
 >
->-   La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inofensiva puede causar cambios en alguno de los bits de la variable de punto flotante.
+>- La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inofensiva puede causar cambios en alguno de los bits de la variable de punto flotante.
 
 ::: moniker range=">= vs-2019" 
 ## <a name="search-in-the-autos-or-locals-window"></a>Buscar en la ventana automático o variables locales
@@ -85,9 +85,9 @@ Establezca un punto de interrupción e inicie la depuración. Cuando se alcanza 
 
 ## <a name="bkmk_whatvariables"></a> Las variables en la ventana automático (C#, C++, Visual Basic, Python)
 
- Diferentes lenguajes de código muestran distintas variables en el **automático** ventana.
+Diferentes lenguajes de código muestran distintas variables en el **automático** ventana.
 
- - En C# y Visual Basic, la ventana **Automático** muestra cualquier variable que se usa en la línea actual o anterior. Por ejemplo, en C# o Visual Basic de código, declare las variables de cuatro siguientes:
+- En C# y Visual Basic, la ventana **Automático** muestra cualquier variable que se usa en la línea actual o anterior. Por ejemplo, en C# o Visual Basic de código, declare las variables de cuatro siguientes:
 
    ```csharp
        public static void Main()
@@ -106,7 +106,7 @@ Establezca un punto de interrupción e inicie la depuración. Cuando se alcanza 
 
    El valor de `c` es 0, porque la línea `c = 3` aún no se ha ejecutado.
 
- - En C++, el **automático** ventana muestra las variables utilizadas en al menos tres líneas anteriores a la línea actual donde se pausa la ejecución. Por ejemplo, en el código de C++, declara seis variables:
+- En C++, el **automático** ventana muestra las variables utilizadas en al menos tres líneas anteriores a la línea actual donde se pausa la ejecución. Por ejemplo, en el código de C++, declara seis variables:
 
    ```C++
        void main() {
@@ -126,7 +126,7 @@ Establezca un punto de interrupción e inicie la depuración. Cuando se alcanza 
 
     La variable `e` no está inicializada, porque la línea `e = 5` aún no se ha ejecutado.
 
-##  <a name="bkmk_returnValue"></a> View return values of method calls
+## <a name="bkmk_returnValue"></a> View return values of method calls
  En el código de .NET y C++, puede examinar los valores devueltos en la **automático** ventana paso a paso a través o fuera de una llamada al método. Llamada al método de visualización, se devuelven los valores pueden ser útiles cuando no se almacenan en variables locales. Un método podría utilizarse como un parámetro o como el valor devuelto de otro método.
 
  Por ejemplo, la siguiente C# código agrega los valores devueltos de dos funciones:

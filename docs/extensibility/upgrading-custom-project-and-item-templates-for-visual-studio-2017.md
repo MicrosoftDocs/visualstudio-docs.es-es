@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102632"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Actualizar proyectos personalizados y plantillas de elemento para Visual Studio 2017
 
@@ -32,36 +32,36 @@ Para otras ubicaciones (no de usuario), debe incluir un archivo manifest(.vstman
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Cómo actualizar una extensión VSIX con plantillas de elemento o proyecto
 
-1.  Abra la solución en Visual Studio 2017. Se le pedirá que actualice el código. Haga clic en **Aceptar**.
+1. Abra la solución en Visual Studio 2017. Se le pedirá que actualice el código. Haga clic en **Aceptar**.
 
-2.  Una vez finalizada la actualización, deberá cambiar la versión de destino de la instalación. En el proyecto VSIX, abra el archivo source.extension.vsixmanifest y seleccione el **destinos de instalación** ficha. Si el **intervalo de versiones** campo es **[14.0]**, haga clic en **editar** y cámbielo para incluir Visual Studio 2017. Por ejemplo, puede establecer en **[14.0,15.0]** para instalar la extensión para Visual Studio 2015 o Visual Studio 2017, o para **[15.0]** para instalarlo solo Visual Studio 2017.
+2. Una vez finalizada la actualización, deberá cambiar la versión de destino de la instalación. En el proyecto VSIX, abra el archivo source.extension.vsixmanifest y seleccione el **destinos de instalación** ficha. Si el **intervalo de versiones** campo es **[14.0]**, haga clic en **editar** y cámbielo para incluir Visual Studio 2017. Por ejemplo, puede establecer en **[14.0,15.0]** para instalar la extensión para Visual Studio 2015 o Visual Studio 2017, o para **[15.0]** para instalarlo solo Visual Studio 2017.
 
-3.  Vuelva a compilar el código.
+3. Vuelva a compilar el código.
 
-4.  Cierre Visual Studio.
+4. Cierre Visual Studio.
 
-5.  Instale la extensión VSIX.
+5. Instale la extensión VSIX.
 
-6.  Puede probar la actualización haciendo lo siguiente:
+6. Puede probar la actualización haciendo lo siguiente:
 
-    1.  El archivo de examen de cambio se activa por la clave del registro siguiente:
+    1. El archivo de examen de cambio se activa por la clave del registro siguiente:
 
          **reg agregar hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**
 
-    2.  Después de haber agregado la clave, ejecute **devenv /installvstemplates**.
+    2. Después de haber agregado la clave, ejecute **devenv /installvstemplates**.
 
-    3.  Vuelva a abrir Visual Studio. Debería encontrar una plantilla en la ubicación esperada.
+    3. Vuelva a abrir Visual Studio. Debería encontrar una plantilla en la ubicación esperada.
 
     > [!NOTE]
     >  Las plantillas de proyecto de extensibilidad de Visual Studio no están disponibles cuando la clave del registro está presente. Debe eliminar la clave del registro (y vuelva a ejecutar **devenv /installvstemplates**) para usarlos.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Otras recomendaciones para la implementación de plantillas de proyecto y elemento
 
--   Evite el uso de archivos de plantilla comprimido. Comprimir archivos deben estar sin comprimir con el fin de recuperar los recursos y el contenido de plantilla, por lo que estarán más costosas serán a usar. En su lugar, debe implementar las plantillas de proyectos y elementos como archivos individuales en su propio directorio para acelerar la inicialización de la plantilla. Para las extensiones VSIX, las tareas de compilación SDK lo descomprimirá automáticamente cualquier plantilla comprimido al crear el archivo VSIX.
+- Evite el uso de archivos de plantilla comprimido. Comprimir archivos deben estar sin comprimir con el fin de recuperar los recursos y el contenido de plantilla, por lo que estarán más costosas serán a usar. En su lugar, debe implementar las plantillas de proyectos y elementos como archivos individuales en su propio directorio para acelerar la inicialización de la plantilla. Para las extensiones VSIX, las tareas de compilación SDK lo descomprimirá automáticamente cualquier plantilla comprimido al crear el archivo VSIX.
 
--   Evite el uso de las entradas de identificador de recurso del paquete para el nombre de la plantilla, descripción, icono u obtener una vista previa con el fin de evitar las cargas de ensamblado de recursos innecesarios durante la detección de plantillas. En su lugar, puede usar manifiestos localizados para crear una entrada de plantilla para cada configuración regional, que utiliza nombres localizados o propiedades.
+- Evite el uso de las entradas de identificador de recurso del paquete para el nombre de la plantilla, descripción, icono u obtener una vista previa con el fin de evitar las cargas de ensamblado de recursos innecesarios durante la detección de plantillas. En su lugar, puede usar manifiestos localizados para crear una entrada de plantilla para cada configuración regional, que utiliza nombres localizados o propiedades.
 
--   Si va a incluir plantillas de elementos de archivo, la generación de manifiestos no es posible que produzca los resultados esperados. En ese caso, tendrá que agregar un manifiesto generado manualmente al proyecto de VSIX.
+- Si va a incluir plantillas de elementos de archivo, la generación de manifiestos no es posible que produzca los resultados esperados. En ese caso, tendrá que agregar un manifiesto generado manualmente al proyecto de VSIX.
 
 ## <a name="file-changes-in-project-and-item-templates"></a>Cambios del archivo de proyecto y plantillas de elementos
 Se muestran los puntos de diferencia entre las versiones de Visual Studio 2017 de los archivos de plantilla y Visual Studio 2015 para que pueda crear los nuevos archivos correctamente.

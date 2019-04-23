@@ -22,12 +22,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d499cbf20fe60540329b51fb5b0f8565022b199b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092986"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Tutorial: Depurar una aplicación paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
   
  Se enseñan estas tareas:  
   
--   Cómo ver las pilas de llamadas de todos los subprocesos en una vista.  
+- Cómo ver las pilas de llamadas de todos los subprocesos en una vista.  
   
--   Cómo ver la lista de instancias de `System.Threading.Tasks.Task` que se crean en la aplicación.  
+- Cómo ver la lista de instancias de `System.Threading.Tasks.Task` que se crean en la aplicación.  
   
--   Cómo ver las pilas de llamadas reales de las tareas en lugar de los subprocesos.  
+- Cómo ver las pilas de llamadas reales de las tareas en lugar de los subprocesos.  
   
--   Cómo navegar al código desde las ventanas **Tareas paralelas** y **Pilas paralelas**.  
+- Cómo navegar al código desde las ventanas **Tareas paralelas** y **Pilas paralelas**.  
   
--   Cómo trabajan las ventanas con la escala de tamaño mediante la agrupación, el zoom y otras características relacionadas.  
+- Cómo trabajan las ventanas con la escala de tamaño mediante la agrupación, el zoom y otras características relacionadas.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  En este tutorial se da por supuesto que **solo mi código** está habilitado. En el menú **Herramientas**, haga clic en **Opciones**, expanda el nodo **Depuración**, seleccione **General** y, a continuación, seleccione **Habilitar Solo mi código (solo administrado)**. Si no configura esta característica, puede utilizar este tutorial, pero los resultados pueden diferir de las ilustraciones.  
@@ -88,15 +88,15 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Para ver la pila de llamadas de un subproceso  
   
-1.  En el menú **Depurar**, elija **Ventanas** y, a continuación, haga clic en **Subprocesos**. Acople la ventana **Subprocesos** a la parte inferior de Visual Studio.  
+1. En el menú **Depurar**, elija **Ventanas** y, a continuación, haga clic en **Subprocesos**. Acople la ventana **Subprocesos** a la parte inferior de Visual Studio.  
   
-2.  En el menú **Depurar**, seleccione **Ventanas** y, a continuación, haga clic en **Pila de llamadas**. Acople la ventana **Pila de llamadas** a la parte inferior de Visual Studio.  
+2. En el menú **Depurar**, seleccione **Ventanas** y, a continuación, haga clic en **Pila de llamadas**. Acople la ventana **Pila de llamadas** a la parte inferior de Visual Studio.  
   
-3.  Haga doble clic en un subproceso en la ventana **Subprocesos** para que sea el actual. Los subprocesos actuales tienen una flecha amarilla. Al cambiar el subproceso actual, la pila de llamadas se muestra en la ventana **Pila de llamadas**.  
+3. Haga doble clic en un subproceso en la ventana **Subprocesos** para que sea el actual. Los subprocesos actuales tienen una flecha amarilla. Al cambiar el subproceso actual, la pila de llamadas se muestra en la ventana **Pila de llamadas**.  
   
 #### <a name="to-examine-the-parallel-stacks-window"></a>Para examinar la ventana Pilas paralelas  
   
-1.  En el menú **Depurar**, seleccione **Ventanas** y, a continuación, haga clic en **Pilas paralelas**. Asegúrese de que **Subprocesos** está seleccionado en el cuadro de la esquina superior izquierda.  
+1. En el menú **Depurar**, seleccione **Ventanas** y, a continuación, haga clic en **Pilas paralelas**. Asegúrese de que **Subprocesos** está seleccionado en el cuadro de la esquina superior izquierda.  
   
      Mediante el uso de la **pilas paralelas** ventana, puede ver varias pilas de llamadas al mismo tiempo en una vista. La siguiente ilustración muestra el **pilas paralelas** ventana anterior el **pila de llamadas** ventana.  
   
@@ -118,7 +118,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
   
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>Para reanudar la ejecución hasta el segundo punto de interrupción  
   
-1.  Para reanudar la ejecución hasta llegar al segundo punto de interrupción, haga clic en **Continuar**, en el menú **Depurar**. La siguiente ilustración muestra el árbol de subproceso en el segundo punto de interrupción.  
+1. Para reanudar la ejecución hasta llegar al segundo punto de interrupción, haga clic en **Continuar**, en el menú **Depurar**. La siguiente ilustración muestra el árbol de subproceso en el segundo punto de interrupción.  
   
      ![Ventana Pilas paralelas muchas bifurcaciones](../debugger/media/pdb-walkthrough-2.png "PDB_Walkthrough_2")  
   
@@ -178,7 +178,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Para reanudar la ejecución hasta el cuarto punto de interrupción  
   
-1.  Para reanudar la ejecución hasta llegar al cuarto punto de interrupción, haga clic en **Continuar** en el menú **Depurar**.  
+1. Para reanudar la ejecución hasta llegar al cuarto punto de interrupción, haga clic en **Continuar** en el menú **Depurar**.  
   
      Observe cómo la vista se desplaza automáticamente para ocupar su lugar. Alterne los subprocesos en la ventana **Subprocesos** o alterne los marcos de pila en la ventana **Pila de llamadas** y observe cómo la vista siempre se desplaza automáticamente hasta el marco correcto. Desactive la opción **Desplazar automáticamente a marco de herramienta actual** y vea la diferencia.  
   
@@ -196,22 +196,22 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
   
      También puede ver las pilas en dirección descendente en lugar de ascendente haciendo clic en el menú **Herramientas**, en **Opciones**, y seleccionando o borrando la opción bajo el nodo **Depuración**.  
   
-2.  Antes de continuar, en el menú **Depurar**, haga clic en **Detener depuración** para finalizar la ejecución.  
+2. Antes de continuar, en el menú **Depurar**, haga clic en **Detener depuración** para finalizar la ejecución.  
   
 ## <a name="using-the-parallel-tasks-window-and-the-tasks-view-of-the-parallel-stacks-window"></a>Utilizar la ventana Tareas paralelas y la vista Tareas de la ventana Pilas paralelas  
  Recomendamos completar los procedimientos anteriores antes de continuar.  
   
 #### <a name="to-restart-the-application-until-the-first-breakpoint-is-hit"></a>Para reiniciar la aplicación hasta que alcance el primer punto de interrupción  
   
-1.  En el menú **Depurar**, haga clic en **Iniciar depuración** y espere hasta alcanzar el primer punto de interrupción.  
+1. En el menú **Depurar**, haga clic en **Iniciar depuración** y espere hasta alcanzar el primer punto de interrupción.  
   
-2.  En el menú **Depurar**, elija **Ventanas** y, a continuación, haga clic en **Subprocesos**. Acople la ventana **Subprocesos** a la parte inferior de Visual Studio.  
+2. En el menú **Depurar**, elija **Ventanas** y, a continuación, haga clic en **Subprocesos**. Acople la ventana **Subprocesos** a la parte inferior de Visual Studio.  
   
-3.  En el menú **Depurar**, seleccione **Ventanas** y, a continuación, haga clic en **Pila de llamadas**. Acople la ventana **Pila de llamadas** a la parte inferior de Visual Studio.  
+3. En el menú **Depurar**, seleccione **Ventanas** y, a continuación, haga clic en **Pila de llamadas**. Acople la ventana **Pila de llamadas** a la parte inferior de Visual Studio.  
   
-4.  Haga doble clic en un subproceso de la ventana **Subprocesos** para que sea el actual. Los subprocesos actuales tienen la flecha amarilla. Al cambiar el subproceso actual, las otras ventanas se actualizan. A continuación, examinaremos las tareas.  
+4. Haga doble clic en un subproceso de la ventana **Subprocesos** para que sea el actual. Los subprocesos actuales tienen la flecha amarilla. Al cambiar el subproceso actual, las otras ventanas se actualizan. A continuación, examinaremos las tareas.  
   
-5.  En el **depurar** menú, elija **Windows** y, a continuación, haga clic en **tareas paralelas**. La siguiente ilustración muestra el **tareas paralelas** ventana.  
+5. En el **depurar** menú, elija **Windows** y, a continuación, haga clic en **tareas paralelas**. La siguiente ilustración muestra el **tareas paralelas** ventana.  
   
      ![Cuatro ejecuta las tareas en la ventana Tareas paralelas](../debugger/media/pdw-walkthrough-6.png "PDW_Walkthrough_6")  
   
@@ -225,7 +225,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
   
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>Para reanudar la ejecución hasta el segundo punto de interrupción  
   
-1.  Para reanudar la ejecución hasta llegar al segundo punto de interrupción, haga clic en **Continuar**, en el menú **Depurar**.  
+1. Para reanudar la ejecución hasta llegar al segundo punto de interrupción, haga clic en **Continuar**, en el menú **Depurar**.  
   
      Anteriormente, el **estado** columna mostraba todas las tareas como en ejecución, pero ahora dos de las tareas están esperando. Las tareas se pueden bloquear por muchas razones diferentes. En la columna **Estado**, desplace el puntero del mouse sobre una tarea en espera para saber por qué está bloqueada. Por ejemplo, en la siguiente ilustración, la tarea 3 está esperando a la tarea 4.  
   
@@ -253,7 +253,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Para reanudar la ejecución hasta el tercer punto de interrupción  
   
-1.  Para reanudar la ejecución hasta llegar al tercer punto de interrupción, haga clic en **Continuar**, en el menú **Depurar**.  
+1. Para reanudar la ejecución hasta llegar al tercer punto de interrupción, haga clic en **Continuar**, en el menú **Depurar**.  
   
      Ahora se está ejecutando una nueva tarea, la tarea 5, y la tarea 4 está en espera. Puede ver por qué desplazando el puntero del mouse sobre la tarea en espera de la ventana **Estado**. En el **primario** columna, observe que tarea 4 es el elemento primario de la tarea 5.  
   
@@ -273,7 +273,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Para reanudar la ejecución hasta el cuarto punto de interrupción  
   
-1.  Para reanudar la ejecución hasta llegar al tercer punto de interrupción, haga clic en **Continuar**, en el menú **Depurar**. Haga clic en el encabezado de columna **Id.** para ordenar por identificador. Vea la ilustración siguiente:  
+1. Para reanudar la ejecución hasta llegar al tercer punto de interrupción, haga clic en **Continuar**, en el menú **Depurar**. Haga clic en el encabezado de columna **Id.** para ordenar por identificador. Vea la ilustración siguiente:  
   
      ![Cuatro estados de tarea en la ventana Pilas paralelas](../debugger/media/pdb-walkthrough-10.png "PDB_Walkthrough_10")  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f0db19d3dfb92658f2aa15e457659b5d4d34ec3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105435"
 ---
 # <a name="cores-view-zoom-tool"></a>Herramienta de zoom de vista de núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ El control de zoom es un control deslizante que le permite acercar y alejar la e
   
 ## <a name="other-ways-to-zoom"></a>Otras maneras de hacer zoom  
   
--   Acercar: arrastre para seleccionar un área en la vista de escala de tiempo. Al soltar el botón del mouse, la vista de escala de tiempo acerca el rango seleccionado.  
+- Acercar: Arrastre para seleccionar un área en la vista de escala de tiempo. Al soltar el botón del mouse, la vista de escala de tiempo acerca el rango seleccionado.  
   
--   Acercar y alejar: mueva el puntero sobre la escala de tiempo y presione CTRL mientras mueve la rueda del mouse.  
+- Acercar y alejar: Mantenga el mouse sobre la escala de tiempo y, a continuación, presione la tecla CTRL mientras mueve la rueda del mouse.  
   
 ## <a name="see-also"></a>Vea también  
  [Vista Núcleos](../profiling/cores-view.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Error: La depuración&#39;t posible porque un depurador del Kernel está habilitado en el sistema | Microsoft Docs'
+title: 'Error: Depuración&#39;t posible porque un depurador del Kernel está habilitado en el sistema | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d876298fd202b96fc6519e5056ca7dd297e386ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 63666302bcbf9f8f44c6121b583f0cf7b259f3ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709673"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096977"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Error: La depuración&#39;t posible porque un depurador del Kernel está habilitado en el sistema
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Error: Depuración&#39;t posible porque un depurador del Kernel está habilitado en el sistema
 Al depurar código administrado, podría aparecer el siguiente mensaje de error:
 
 ```cmd
@@ -56,7 +56,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Para deshabilitar la depuración del kernel en la sesión actual
 
--   En el símbolo del sistema, escriba:
+- En el símbolo del sistema, escriba:
 
     ```cmd
     Kdbgctrl.exe -d
@@ -64,23 +64,23 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Para deshabilitar la depuración del kernel para todas las sesiones (Windows Vista y Windows 7)
 
-1.  En el símbolo del sistema, escriba:
+1. En el símbolo del sistema, escriba:
 
     ```cmd
     bcdedit /debug off
     ```
 
-2.  Reinicie el equipo.
+2. Reinicie el equipo.
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Para deshabilitar la depuración del kernel para todas las sesiones (otros sistemas operativos Windows)
 
-1.  Busque el archivo boot.ini en la unidad del sistema (normalmente, C:\\). El archivo boot.ini podría estar oculto y ser de solo lectura. Por tanto, tendrá que utilizar el siguiente comando para verlo:
+1. Busque el archivo boot.ini en la unidad del sistema (normalmente, C:\\). El archivo boot.ini podría estar oculto y ser de solo lectura. Por tanto, tendrá que utilizar el siguiente comando para verlo:
 
     ```cmd
     dir /ASH
     ```
 
-2.  Abra el archivo boot.ini en el Bloc de notas y quite las siguientes opciones:
+2. Abra el archivo boot.ini en el Bloc de notas y quite las siguientes opciones:
 
     ```cmd
     /debug
@@ -88,13 +88,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3.  Reinicie el equipo.
+3. Reinicie el equipo.
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>Para depurar con el depurador del kernel
 
-1.  Si el depurador del kernel está enlazado, aparecerá un mensaje que le preguntará si desea continuar la depuración. Haga clic en el botón para continuar.
+1. Si el depurador del kernel está enlazado, aparecerá un mensaje que le preguntará si desea continuar la depuración. Haga clic en el botón para continuar.
 
-2.  Podría aparecer un mensaje `User break exception(Int 3).` En tal caso, escriba el siguiente comando de depurador del kernel para seguir depurando:
+2. Podría aparecer un mensaje `User break exception(Int 3).` En tal caso, escriba el siguiente comando de depurador del kernel para seguir depurando:
 
      `gn`
 

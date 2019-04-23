@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 887f71f5aabf7acfdeb822bb4e05c1b0debf63ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110081"
 ---
 # <a name="component-management"></a>Administración de componentes
 Unidades de tareas en el instalador de Windows se conocen como componentes de Windows Installer (a veces denominados WICs o simplemente componentes). Un GUID identifica cada WIC, que es la unidad básica de la instalación y el recuento de referencias para las configuraciones que usan a Windows Installer.
@@ -27,23 +27,23 @@ Unidades de tareas en el instalador de Windows se conocen como componentes de Wi
 
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Instrucciones de instalación en paralelo de creación
 
--   Archivos de autor y las claves del registro que se comparten entre las versiones en sus propios componentes.
+- Archivos de autor y las claves del registro que se comparten entre las versiones en sus propios componentes.
 
      Si lo hace, podrá usarlos fácilmente en la próxima versión. Por ejemplo, las bibliotecas de tipos que se registran de forma global, las extensiones de archivo, otros elementos registrados en **HKEY_CLASSES_ROOT**, y así sucesivamente.
 
--   Agrupar los componentes compartidos en los módulos de combinación independiente.
+- Agrupar los componentes compartidos en los módulos de combinación independiente.
 
      Esta estrategia ayuda a autor correctamente para la instalación en paralelo más adelante.
 
--   Instalar los archivos compartidos y las claves del registro mediante los mismos componentes de Windows Installer a través de versiones.
+- Instalar los archivos compartidos y las claves del registro mediante los mismos componentes de Windows Installer a través de versiones.
 
      Si usa un componente diferente, se desinstalan los archivos y las entradas del registro cuando se desinstala un paquete VSPackage con control de versiones, pero todavía se instala otro VSPackage.
 
--   No mezcle los elementos con control de versiones y compartidos en el mismo componente.
+- No mezcle los elementos con control de versiones y compartidos en el mismo componente.
 
      Esto hace imposible instalar los elementos compartidos en una ubicación global y elementos con control de versiones a ubicaciones aisladas.
 
--   No tiene claves de registro compartido que apuntan a archivos con control de versiones.
+- No tiene claves de registro compartido que apuntan a archivos con control de versiones.
 
      Si lo hace, las claves compartidas se sobrescribirán cuando se instala otro paquete VSPackage con control de versiones. Después de quitar la segunda versión, el archivo a la que señala la clave ha desaparecido.
 

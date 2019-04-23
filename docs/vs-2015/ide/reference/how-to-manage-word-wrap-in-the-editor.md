@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088046"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedimiento Administrar el ajuste en el Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuand
   
 #### <a name="to-set-word-wrap-preferences"></a>Para establecer las preferencias de ajuste automático de línea  
   
-1.  En el menú **Herramientas**, seleccione **Opciones**.  
+1. En el menú **Herramientas**, seleccione **Opciones**.  
   
-2.  En la carpeta **Editor de texto**, pulse las opciones **General** en la subcarpeta **Todos los lenguajes** para establecer esta opción globalmente.  
+2. En la carpeta **Editor de texto**, pulse las opciones **General** en la subcarpeta **Todos los lenguajes** para establecer esta opción globalmente.  
   
      o  
   
      Pulse las opciones **General** en la subcarpeta del lenguaje en el que está programando.  
   
-3.  En **Configuración**, seleccione o desactive la opción **Ajuste automático de línea**.  
+3. En **Configuración**, seleccione o desactive la opción **Ajuste automático de línea**.  
   
      Cuando la opción **Ajuste automático de línea** está seleccionada, la opción **Mostrar glifos visuales para ajuste de línea** está habilitada.  
   
-4.  Seleccione la opción **Mostrar glifos visuales para ajuste de línea** si prefiere mostrar un indicador de flecha de retorno donde una línea larga se ajusta en una segunda línea. Desactive esta opción si prefiere no mostrar indicadores de flecha.  
+4. Seleccione la opción **Mostrar glifos visuales para ajuste de línea** si prefiere mostrar un indicador de flecha de retorno donde una línea larga se ajusta en una segunda línea. Desactive esta opción si prefiere no mostrar indicadores de flecha.  
   
     > [!NOTE]
     >  Estas flechas de aviso no se agregan a su código: solo para fines de visualización.  

@@ -13,25 +13,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa12fdc3eea5c353071fb4a80e2c99f2f9e060c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087188"
 ---
-# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Filtrar Agregar un selector de cuadro de diálogo a un grupo de cinta de opciones
+# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Procedimiento Agregar un selector de cuadro de diálogo a un grupo de cinta de opciones
   Puede agregar un selector de cuadro de diálogo a cualquier grupo de una cinta. Un selector de cuadro de diálogo es un pequeño icono que aparece en un grupo. Los usuarios, haga clic en este icono para abrir cuadros de diálogo relacionados o paneles de tareas que proporcionan más opciones que se relacionan con el grupo.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Para agregar un selector de cuadro de diálogo a un grupo de cinta de opciones
 
-1.  Seleccione el archivo de código de la cinta de opciones (*.vb* o *.cs* archivo) en **el Explorador de soluciones**.
+1. Seleccione el archivo de código de la cinta de opciones (*.vb* o *.cs* archivo) en **el Explorador de soluciones**.
 
-2.  En el **vista** menú, haga clic en **diseñador**.
+2. En el **vista** menú, haga clic en **diseñador**.
 
-3.  En el Diseñador de cinta de opciones, haga clic en cualquier grupo y, a continuación, haga clic en **agregar DialogBoxLauncher**.
+3. En el Diseñador de cinta de opciones, haga clic en cualquier grupo y, a continuación, haga clic en **agregar DialogBoxLauncher**.
 
      Agregue código a la <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> eventos del grupo para abrir un cuadro de diálogo integrado o personalizado.
 

@@ -11,12 +11,12 @@ ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4eb1ee2048a5e5580cbeb8320ba573c85b92183
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eed1a1b3da59d6d5e76c9157fc0a2cb37420c797
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994837"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104361"
 ---
 # <a name="evaluating-a-watch-expression"></a>Evaluación de una expresión de inspección
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "58994837"
   
  En esta implementación de `IDebugParsedExpression::EvaluateSync`, la expresión se analiza y evalúa al mismo tiempo. Esta implementación realiza las siguientes tareas:  
   
-1.  Analiza y evalúa la expresión para generar un objeto genérico que contiene el valor y su tipo. En C#, esto se representa como un `object` mientras que en C++ se representa como un `VARIANT`.  
+1. Analiza y evalúa la expresión para generar un objeto genérico que contiene el valor y su tipo. En C#, esto se representa como un `object` mientras que en C++ se representa como un `VARIANT`.  
   
-2.  Crea una instancia de una clase (llamado `CValueProperty` en este ejemplo) que implementa el `IDebugProperty2` interfaz y la almacena en la clase, el valor que se va a devolver.  
+2. Crea una instancia de una clase (llamado `CValueProperty` en este ejemplo) que implementa el `IDebugProperty2` interfaz y la almacena en la clase, el valor que se va a devolver.  
   
-3.  Devuelve el `IDebugProperty2` interfaz desde el `CValueProperty` objeto.  
+3. Devuelve el `IDebugProperty2` interfaz desde el `CValueProperty` objeto.  
   
 ## <a name="managed-code"></a>Código administrado  
  Se trata de una implementación de la `IDebugParsedExpression::EvaluateSync` en código administrado. El método auxiliar `Tokenize` analiza la expresión en un árbol de análisis. La función auxiliar `EvalToken` convierte el token en un valor. La función auxiliar `FindTerm` recursivamente recorre el árbol de análisis, una llamada a `EvalToken` para cada nodo que representa un valor y la aplicación de cualquier operación (suma o resta) en la expresión.  

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c970fe4cd1bbd87f54e10be85adf37554c10675
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ed5b0f84ea19e465a9d820d9f25c4fc19546c639
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103386"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar datos con los métodos DBDirect de un TableAdapter
 
@@ -29,15 +29,15 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
 
 Durante este tutorial aprenderá a:
 
--   Crear una nueva **aplicación de Windows Forms**.
+- Crear una nueva **aplicación de Windows Forms**.
 
--   Crear y configurar un conjunto de datos con el [Asistente para configuración de origen de datos](../data-tools/media/data-source-configuration-wizard.png).
+- Crear y configurar un conjunto de datos con el [Asistente para configuración de origen de datos](../data-tools/media/data-source-configuration-wizard.png).
 
--   Seleccionar el control que se va a crear en el formulario al arrastrar elementos desde la ventana **Orígenes de datos**. Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Seleccionar el control que se va a crear en el formulario al arrastrar elementos desde la ventana **Orígenes de datos**. Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Cree un formulario enlazado a datos arrastrando elementos desde la ventana **Orígenes de datos** hasta el formulario.
+- Cree un formulario enlazado a datos arrastrando elementos desde la ventana **Orígenes de datos** hasta el formulario.
 
--   Agregar métodos para tener acceso a la base de datos y realizar inserciones, actualizaciones y eliminaciones directamente.
+- Agregar métodos para tener acceso a la base de datos y realizar inserciones, actualizaciones y eliminaciones directamente.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -73,7 +73,7 @@ El primer paso es crear un **aplicación de Windows Forms**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Crear un origen de datos de la base de datos
 
-En este paso se usa el **Asistente para configuración de orígenes de datos** para crear un origen de datos basado en la tabla `Region` de la base de datos de ejemplo Northwind. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+En este paso se usa el **Asistente para configuración de orígenes de datos** para crear un origen de datos basado en la tabla `Region` de la base de datos de ejemplo Northwind. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: Instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-data-source"></a>Para crear el origen de datos
 
@@ -87,11 +87,11 @@ En este paso se usa el **Asistente para configuración de orígenes de datos** p
 
 4. En el **elegir la conexión de datos** pantalla, realice una de las siguientes acciones:
 
-    -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
+    - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         o bien
+         -o bien-
 
-    -   Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.
+    - Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.
 
 5. Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione **siguiente**.
 
@@ -117,7 +117,7 @@ En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y 
 
 2. Establezca las propiedades **Nombre** y **Texto** en cada botón.
 
-    |nombre|Texto|
+    |Name|Texto|
     |----------|----------|
     |`InsertButton`|**Insertar**|
     |`UpdateButton`|**Actualizar**|
@@ -152,21 +152,21 @@ En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y 
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 
--   Seleccione **F5** para ejecutar la aplicación.
+- Seleccione **F5** para ejecutar la aplicación.
 
--   Seleccione el **insertar** botón y compruebe que el nuevo registro aparece en la cuadrícula.
+- Seleccione el **insertar** botón y compruebe que el nuevo registro aparece en la cuadrícula.
 
--   Seleccione el **actualización** botón y compruebe que el registro se actualiza en la cuadrícula.
+- Seleccione el **actualización** botón y compruebe que el registro se actualiza en la cuadrícula.
 
--   Seleccione el **eliminar** botón y compruebe que el registro se quita de la cuadrícula.
+- Seleccione el **eliminar** botón y compruebe que el registro se quita de la cuadrícula.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 Dependiendo de los requisitos de la aplicación, hay varios pasos que se desea realizar después de crear un formulario enlazado a datos. Entre las mejoras que podría realizar se incluyen:
 
--   Agregar funcionalidad de búsqueda al formulario.
+- Agregar funcionalidad de búsqueda al formulario.
 
--   Agregar otras tablas al conjunto de datos seleccionando **Configurar DataSet con el asistente** en la ventana **Orígenes de datos**. Puede agregar controles que muestren los datos relacionados arrastrando los nodos relacionados al formulario. Para obtener más información, consulte [relaciones en conjuntos de datos](relationships-in-datasets.md).
+- Agregar otras tablas al conjunto de datos seleccionando **Configurar DataSet con el asistente** en la ventana **Orígenes de datos**. Puede agregar controles que muestren los datos relacionados arrastrando los nodos relacionados al formulario. Para obtener más información, consulte [relaciones en conjuntos de datos](relationships-in-datasets.md).
 
 ## <a name="see-also"></a>Vea también
 

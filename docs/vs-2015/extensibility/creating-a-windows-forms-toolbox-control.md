@@ -12,12 +12,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 769a2243cd43eb085db081b7087731a8135f839b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082222"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Creación de un control de cuadro de herramientas de Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,28 +32,28 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
 #### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Crear una extensión con un Control de cuadro de herramientas de Windows Forms  
   
-1.  Cree un proyecto VSIX denominado `MyWinFormsControl`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C# / extensibilidad**.  
+1. Cree un proyecto VSIX denominado `MyWinFormsControl`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C# / extensibilidad**.  
   
-2.  Cuando se abra el proyecto, agregue un **Control Toolbox de Windows Forms** plantilla de elemento denominado `Counter`. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C# / extensibilidad** y seleccione **Control Toolbox de Windows Forms**  
+2. Cuando se abra el proyecto, agregue un **Control Toolbox de Windows Forms** plantilla de elemento denominado `Counter`. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C# / extensibilidad** y seleccione **Control Toolbox de Windows Forms**  
   
-3.  Esto agrega un control de usuario, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> para colocar el control en el **cuadro de herramientas**y un **Microsoft.VisualStudio.ToolboxControl** entrada del activo en el manifiesto VSIX para la implementación.  
+3. Esto agrega un control de usuario, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> para colocar el control en el **cuadro de herramientas**y un **Microsoft.VisualStudio.ToolboxControl** entrada del activo en el manifiesto VSIX para la implementación.  
   
 ### <a name="building-a-user-interface-for-the-control"></a>Crear una interfaz de usuario para el control  
  El `Counter` control requiere dos controles secundarios: una <xref:System.Windows.Forms.Label> para mostrar el recuento actual y un <xref:System.Windows.Forms.Button> para restablecer el recuento a 0. No hay más controles secundarios son necesarios porque los autores de llamadas incrementarán el contador mediante programación.  
   
 ##### <a name="to-build-the-user-interface"></a>Para crear la interfaz de usuario  
   
-1.  En **el Explorador de soluciones**, haga doble clic en Counter.cs para abrirlo en el diseñador.  
+1. En **el Explorador de soluciones**, haga doble clic en Counter.cs para abrirlo en el diseñador.  
   
-2.  Quitar el "haga clic aquí!" **Botón** que se incluye de forma predeterminada cuando se agrega la plantilla de elemento de Control de cuadro de herramientas de Windows Forms.  
+2. Quitar el "haga clic aquí!" **Botón** que se incluye de forma predeterminada cuando se agrega la plantilla de elemento de Control de cuadro de herramientas de Windows Forms.  
   
-3.  Desde el **cuadro de herramientas**, arrastre un `Label` control y, a continuación, un `Button` control debajo de él en la superficie de diseño.  
+3. Desde el **cuadro de herramientas**, arrastre un `Label` control y, a continuación, un `Button` control debajo de él en la superficie de diseño.  
   
-4.  El tamaño del control de usuario general a 150, 50 píxeles y el botón de cambio de tamaño el control a 50, 20 píxeles.  
+4. El tamaño del control de usuario general a 150, 50 píxeles y el botón de cambio de tamaño el control a 50, 20 píxeles.  
   
-5.  En el **propiedades** ventana, establezca los siguientes valores para los controles en la superficie de diseño.  
+5. En el **propiedades** ventana, establezca los siguientes valores para los controles en la superficie de diseño.  
   
-    |Control|Property|Valor|  
+    |Control|Propiedad|Valor|  
     |-------------|--------------|-----------|  
     |`Label1`|**Texto**|""|  
     |`Button1`|**Name**|btnReset|  
@@ -64,16 +64,16 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
 ##### <a name="to-code-the-user-control"></a>Para codificar el control de usuario  
   
-1.  Haga doble clic en el formulario para abrir su controlador de eventos de carga en la ventana de código.  
+1. Haga doble clic en el formulario para abrir su controlador de eventos de carga en la ventana de código.  
   
-2.  Por encima del método de controlador de eventos, en la clase del control crear un número entero para almacenar el valor del contador y una cadena para almacenar el texto para mostrar, como se muestra en el ejemplo siguiente.  
+2. Por encima del método de controlador de eventos, en la clase del control crear un número entero para almacenar el valor del contador y una cadena para almacenar el texto para mostrar, como se muestra en el ejemplo siguiente.  
   
     ```csharp  
     int currentValue;  
     string displayText;  
     ```  
   
-3.  Cree las siguientes declaraciones de propiedad pública.  
+3. Cree las siguientes declaraciones de propiedad pública.  
   
     ```csharp  
     public int Value {  
@@ -94,7 +94,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
      Los autores de llamadas pueden tener acceso a estas propiedades para obtener y establecer el texto para mostrar del contador y para mostrar u ocultar el `Reset` botón. Los autores de llamadas pueden obtener el valor actual de solo lectura `Value` propiedad, pero no se puede establecer el valor directamente.  
   
-4.  Coloque el siguiente código el `Load` eventos para el control.  
+4. Coloque el siguiente código el `Load` eventos para el control.  
   
     ```csharp  
     private void Counter_Load(object sender, EventArgs e)  
@@ -107,7 +107,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
      Establecer el **etiqueta** texto en el <xref:System.Windows.Forms.UserControl.Load> evento permite cargar antes de que sus valores se aplican las propiedades de destino. Establecer el **etiqueta** texto en el constructor daría como resultado un valor vacío **etiqueta**.  
   
-5.  Cree el siguiente método público para incrementar el contador.  
+5. Cree el siguiente método público para incrementar el contador.  
   
     ```csharp  
     public void Increment()  
@@ -119,7 +119,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
     ```  
   
-6.  Agregue una declaración para el `Incremented` eventos a la clase de control.  
+6. Agregue una declaración para el `Incremented` eventos a la clase de control.  
   
     ```csharp  
     public event EventHandler Incremented;  
@@ -127,7 +127,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
      Los autores de llamadas pueden agregar controladores a este evento para responder a cambios en el valor del contador.  
   
-7.  Vuelva a la vista Diseño y haga doble clic en el `Reset` botón para generar el `btnReset_Click` controlador de eventos y, a continuación, rellene en como se muestra en el ejemplo siguiente.  
+7. Vuelva a la vista Diseño y haga doble clic en el `Reset` botón para generar el `btnReset_Click` controlador de eventos y, a continuación, rellene en como se muestra en el ejemplo siguiente.  
   
     ```csharp  
     private void btnReset_Click(object sender, EventArgs e)  
@@ -138,7 +138,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
     ```  
   
-8.  Justo encima de la definición de clase en la declaración de atributos de `ProvideToolboxControl` , cambie el valor del primer parámetro de `"MyWinFormsControl.Counter"` a `"General"`. Se establece el nombre del grupo de elementos que va a hospedar el control en el **Cuadro de herramientas**.  
+8. Justo encima de la definición de clase en la declaración de atributos de `ProvideToolboxControl` , cambie el valor del primer parámetro de `"MyWinFormsControl.Counter"` a `"General"`. Se establece el nombre del grupo de elementos que va a hospedar el control en el **Cuadro de herramientas**.  
   
      En el ejemplo siguiente se muestra el atributo `ProvideToolboxControl` y la definición de clase ajustada.  
   
@@ -152,23 +152,23 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
 ##### <a name="to-test-the-control"></a>Para probar el control  
   
-1.  Presione F5.  
+1. Presione F5.  
   
      Esto compila el proyecto y abre una segunda instancia Experimental de Visual Studio que tiene instalado el control.  
   
-2.  En la instancia Experimental de Visual Studio, cree un **aplicación de Windows Forms** proyecto.  
+2. En la instancia Experimental de Visual Studio, cree un **aplicación de Windows Forms** proyecto.  
   
-3.  En **el Explorador de soluciones**, haga doble clic en Form1.cs para abrirlo en el diseñador si no está ya abierto.  
+3. En **el Explorador de soluciones**, haga doble clic en Form1.cs para abrirlo en el diseñador si no está ya abierto.  
   
-4.  En el **cuadro de herramientas**, `Counter` control debe mostrarse en el **General** sección.  
+4. En el **cuadro de herramientas**, `Counter` control debe mostrarse en el **General** sección.  
   
-5.  Arrastre un `Counter` control al formulario y, a continuación, selecciónelo. El `Value`, `Message`, y `ShowReset` propiedades se mostrarán en el **propiedades** ventana, junto con las propiedades que se heredan de <xref:System.Windows.Forms.UserControl>.  
+5. Arrastre un `Counter` control al formulario y, a continuación, selecciónelo. El `Value`, `Message`, y `ShowReset` propiedades se mostrarán en el **propiedades** ventana, junto con las propiedades que se heredan de <xref:System.Windows.Forms.UserControl>.  
   
-6.  Establezca la propiedad `Message` en `Count:`.  
+6. Establezca la propiedad `Message` en `Count:`.  
   
-7.  Arrastre un <xref:System.Windows.Forms.Button> control al formulario y, a continuación, establezca las propiedades de nombre y el texto del botón en `Test`.  
+7. Arrastre un <xref:System.Windows.Forms.Button> control al formulario y, a continuación, establezca las propiedades de nombre y el texto del botón en `Test`.  
   
-8.  Haga doble clic en el botón para abrir Form1.cs en la vista de código y crear un controlador de clic.  
+8. Haga doble clic en el botón para abrir Form1.cs en la vista de código y crear un controlador de clic.  
   
 9. En el controlador de clics, llame a `counter1.Increment()`.  
   

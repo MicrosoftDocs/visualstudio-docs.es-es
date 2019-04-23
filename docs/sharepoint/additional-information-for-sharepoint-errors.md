@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099733"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Información adicional para errores de SharePoint
   Puede encontrar ayuda para solucionar problemas de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errores y advertencias en los temas y los foros públicos de la solución de problemas de herramientas de SharePoint.
@@ -29,16 +29,16 @@ ms.locfileid: "56628915"
 ## <a name="troubleshoot-errors-and-issues"></a>Solucionar problemas y errores
  Para obtener ayuda con algunos errores comunes y otros problemas en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] herramientas de SharePoint, vea los temas siguientes:
 
--   [Solucionar problemas de soluciones de SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
+- [Solucionar problemas de soluciones de SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
--   [Depurar soluciones de SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
+- [Depurar soluciones de SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 
--   [Solucionar problemas de implementación y empaquetado de SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [Solucionar problemas de implementación y empaquetado de SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>Otros recursos
  La siguiente tabla se enumeran los [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] foros y otros recursos disponibles de herramientas de SharePoint.
 
-|Término|de esquema JSON|
+|Término|Definición|
 |----------|----------------|
 |[Desarrollo de SharePoint](http://go.microsoft.com/fwlink/?LinkId=179593)|Proporciona un foro para preguntas sobre desarrollo de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Foros de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=150452)|Proporciona un foro para preguntas sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|

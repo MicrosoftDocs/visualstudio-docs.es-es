@@ -20,12 +20,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999587"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087149"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagramas de actividades UML: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Un *diagrama de actividades* muestra un proceso empresarial o un proceso de soft
 |13|**Enviar acción de señal**|Acción que envía un mensaje o una señal a otra actividad o a un subproceso simultáneo de la misma actividad. El tipo y el contenido del mensaje están implícitos en el título de la acción o se especifican en los comentarios adicionales.<br /><br /> La acción puede enviar datos de la señal, que se pueden pasar a la acción de un flujo de objeto o terminal de entrada (16).|  
 |14|**Acepte la acción de evento**|Acción que espera un mensaje o una señal antes de continuar con la acción. El tipo de mensaje que la acción puede recibir está implícito en el título o se especifica en los comentarios adicionales.<br /><br /> Si la acción no tiene ningún flujo de control entrante, genera un token cada vez que recibe un mensaje.<br /><br /> La acción puede recibir datos de la señal, que se pueden pasar a un flujo de objeto o terminal de salida (17).<br /><br /> -   **IsUnmarshall** : si es true, puede haber varios output PIN tipados y datos se deserializan en ellos. Si es false, todos los datos aparecen en un terminal.|  
   
-###  <a name="DataFlow"></a> Flujos de datos  
+### <a name="DataFlow"></a> Flujos de datos  
  Puede describir el flujo de datos de una acción a otra. Para más información sobre los elementos que se usan en esta sección, vea la sección Dibujar flujos de datos del tema Instrucciones para dibujar un diagrama de actividades.  
   
  ![Diagrama de actividades mostrando flujo de datos](../modeling/media/uml-actovdata.png "UML_ActOvData")  

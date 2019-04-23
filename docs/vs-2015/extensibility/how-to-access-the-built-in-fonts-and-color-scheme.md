@@ -1,5 +1,5 @@
 ---
-title: Filtrar Obtener acceso a la combinación de colores y fuentes integradas | Documentos de Microsoft
+title: Procedimiento Obtener acceso a la combinación de colores y fuentes integradas | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,14 +12,14 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986868"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091530"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Filtrar Obtener acceso a la combinación de colores y fuentes integradas
+# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Procedimiento Obtener acceso a la combinación de colores y fuentes integradas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fuentes y colores que está asociado a la ventana del editor. Puede tener acceso a este esquema a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz.  
@@ -49,13 +49,13 @@ El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fu
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Para registrar una categoría de uso de colores y fuentes integradas  
   
-1.  Construir un tipo especial de entrada de registro de la categoría en la siguiente ubicación:  
+1. Construir un tipo especial de entrada de registro de la categoría en la siguiente ubicación:  
   
      [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]  
   
      *\<Categoría >* es el nombre no traducido de la categoría.  
   
-2.  Rellenar el registro para usar la combinación de colores y fuentes estándar con cuatro valores:  
+2. Rellenar el registro para usar la combinación de colores y fuentes estándar con cuatro valores:  
   
     |Name|Tipo|Datos|Descripción|  
     |----------|----------|----------|-----------------|  
@@ -64,7 +64,7 @@ El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fu
     |NameID|REG_DWORD|ID|El identificador de recurso de un nombre de categoría traducible en el VSPackage.|  
     |ToolWindowPackage|REG_SZ|GUID|El GUID del VSPackage que implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz.|  
   
-3.  
+3. 
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Para iniciar el uso de colores y fuentes proporcionados por el sistema  
   

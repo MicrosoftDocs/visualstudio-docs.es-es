@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f50d72990ec0fb47ec880e3c267ef4e52225837d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 550008a0bf77ee11feb047b953798ed6a8276396
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113721"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procedimiento Depurar en un clúster de alto rendimiento (C#, Visual Basic, C++)
 
@@ -37,31 +37,31 @@ La depuración de un programa multiproceso en un clúster de alto rendimiento es
 
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Para abrir el cuadro de diálogo Filtro del punto de interrupción
 
-1.  Haga clic con el botón derecho del mouse en un glifo de punto de interrupción en la ventana Código fuente, **Desensamblado**, **Pila de llamadas** o **Puntos de interrupción**.
+1. Haga clic con el botón derecho del mouse en un glifo de punto de interrupción en la ventana Código fuente, **Desensamblado**, **Pila de llamadas** o **Puntos de interrupción**.
 
-2.  En el menú contextual, haga clic en **Filtro**. Esta opción puede aparecer en el nivel superior o en el submenú de **Puntos de interrupción**.
+2. En el menú contextual, haga clic en **Filtro**. Esta opción puede aparecer en el nivel superior o en el submenú de **Puntos de interrupción**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>Para establecer un punto de interrupción en un equipo concreto
 
-1.  Obtenga el nombre del equipo en la ventana **Procesos**.
+1. Obtenga el nombre del equipo en la ventana **Procesos**.
 
-2.  Seleccione un punto de interrupción y abra el cuadro de diálogo **Filtro del punto de interrupción** como se describió en el procedimiento anterior.
+2. Seleccione un punto de interrupción y abra el cuadro de diálogo **Filtro del punto de interrupción** como se describió en el procedimiento anterior.
 
-3.  En el cuadro de diálogo **Filtro del punto de interrupción**, escriba:
+3. En el cuadro de diálogo **Filtro del punto de interrupción**, escriba:
 
      MachineName =*nombreDelEquipo*
 
      Para crear un filtro más complejo, puede combinar cláusulas con `&`, el operador AND, `||`, el operador OR, `!`, el operador NOT y paréntesis.
 
-4.  Haga clic en **Aceptar**.
+4. Haga clic en **Aceptar**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Para establecer un punto de interrupción en un proceso concreto
 
-1.  Obtenga el nombre o el número de id. del proceso en la ventana **Procesos**.
+1. Obtenga el nombre o el número de id. del proceso en la ventana **Procesos**.
 
-2.  Seleccione un punto de interrupción y abra el cuadro de diálogo **Filtro del punto de interrupción** tal como se describió en el primer procedimiento.
+2. Seleccione un punto de interrupción y abra el cuadro de diálogo **Filtro del punto de interrupción** tal como se describió en el primer procedimiento.
 
-3.  En el cuadro de diálogo **Filtro del punto de interrupción**, escriba:
+3. En el cuadro de diálogo **Filtro del punto de interrupción**, escriba:
 
      `ProcessName =`  *nombreDelProceso*
 
@@ -71,15 +71,15 @@ La depuración de un programa multiproceso en un clúster de alto rendimiento es
 
      Para crear un filtro más complejo, puede combinar cláusulas con `&`, el operador AND, `||`, el operador OR, `!`, el operador NOT y paréntesis.
 
-4.  Haga clic en **Aceptar**.
+4. Haga clic en **Aceptar**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Para establecer un punto de interrupción en un subproceso concreto
 
-1.  Obtenga el nombre o el número de id. del subproceso en la ventana **Subprocesos**.
+1. Obtenga el nombre o el número de id. del subproceso en la ventana **Subprocesos**.
 
-2.  Seleccione un punto de interrupción y abra el cuadro de diálogo **Filtro del punto de interrupción** tal como se describió en el primer procedimiento.
+2. Seleccione un punto de interrupción y abra el cuadro de diálogo **Filtro del punto de interrupción** tal como se describió en el primer procedimiento.
 
-3.  En el cuadro de diálogo **Filtro del punto de interrupción**, escriba:
+3. En el cuadro de diálogo **Filtro del punto de interrupción**, escriba:
 
      `ThreadName =` *nombreDelSubproceso*
 
@@ -89,7 +89,7 @@ La depuración de un programa multiproceso en un clúster de alto rendimiento es
 
      Para crear un filtro más complejo, puede combinar cláusulas con `&`, el operador AND, `||`, el operador OR, `!`, el operador NOT y paréntesis.
 
-4.  Haga clic en **Aceptar**.
+4. Haga clic en **Aceptar**.
 
 ## <a name="example"></a>Ejemplo
  En el ejemplo siguiente se muestra cómo crear un filtro para un punto de interrupción en un equipo denominado `marvin` y un subproceso denominado `fourier1`.

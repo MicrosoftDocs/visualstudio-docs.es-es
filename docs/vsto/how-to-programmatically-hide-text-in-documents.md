@@ -1,5 +1,5 @@
 ---
-title: Filtrar Ocultar texto en documentos mediante programación
+title: Procedimiento Ocultar texto en documentos mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c39a82a6b381296c47dcbf059b22e351dba3afc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1da471ff1911cdda4a62ef9c150236b3a225342f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646088"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110172"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>Filtrar Ocultar texto en documentos mediante programación
+# <a name="how-to-programmatically-hide-text-in-documents"></a>Procedimiento Ocultar texto en documentos mediante programación
   Puede ocultar texto en un documento si establece la propiedad <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> de <xref:Microsoft.Office.Interop.Word.Range.Font%2A> para un determinado rango de texto.
 
  Por ejemplo, puede ocultar temporalmente el texto dentro de un <xref:Microsoft.Office.Tools.Word.Bookmark> (en una personalización de nivel de documento) o un <xref:Microsoft.Office.Interop.Word.Bookmark> (en un complemento de VSTO) antes de enviar un documento a una impresora.
@@ -29,17 +29,17 @@ ms.locfileid: "56646088"
 
 ## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Para ocultar el texto de un control Bookmark al imprimir el documento
 
-1.  Cree un procedimiento que oculte todo el texto del rango especificado.
+1. Cree un procedimiento que oculte todo el texto del rango especificado.
 
      [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]
      [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]
 
-2.  Cree un procedimiento que muestre todo el texto del rango especificado.
+2. Cree un procedimiento que muestre todo el texto del rango especificado.
 
      [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]
      [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]
 
-3.  Pase el rango de un marcador al método `HideText` , imprima el documento y luego pase el mismo rango al método `UnhideText` .
+3. Pase el rango de un marcador al método `HideText` , imprima el documento y luego pase el mismo rango al método `UnhideText` .
 
      El siguiente ejemplo de código se puede usar en una personalización de nivel de documento. Para usar este ejemplo, ejecútelo desde la clase `ThisDocument` del proyecto.
 

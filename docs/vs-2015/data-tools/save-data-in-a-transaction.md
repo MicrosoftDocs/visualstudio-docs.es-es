@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07bd9e469d090ffb97e166ce943397b51aedd497
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647680"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105024"
 ---
 # <a name="save-data-in-a-transaction"></a>Guardar datos en una transacción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
 #### <a name="to-create-the-new-windows-project"></a>Para crear el nuevo proyecto de Windows  
   
-1.  En Visual Studio, en el **archivo** menú, cree un nuevo **proyecto**.  
+1. En Visual Studio, en el **archivo** menú, cree un nuevo **proyecto**.  
   
-2.  Denomine el proyecto **SavingDataInATransactionWalkthrough**.  
+2. Denomine el proyecto **SavingDataInATransactionWalkthrough**.  
   
-3.  Seleccione **aplicación Windows**y, a continuación, seleccione **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seleccione **aplicación Windows**y, a continuación, seleccione **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Se crea el proyecto **SavingDataInATransactionWalkthrough** y se agrega al **Explorador de soluciones**.  
   
@@ -53,27 +53,27 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
 #### <a name="to-create-the-data-source"></a>Para crear el origen de datos  
   
-1.  En el **datos** menú, seleccione**Mostrar orígenes de datos**.  
+1. En el **datos** menú, seleccione**Mostrar orígenes de datos**.  
   
-2.  En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
+2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
   
-3.  En el **elegir un tipo de origen de datos**pantalla, seleccione **base de datos**y, a continuación, seleccione **siguiente**.  
+3. En el **elegir un tipo de origen de datos**pantalla, seleccione **base de datos**y, a continuación, seleccione **siguiente**.  
   
-4.  En el **elegir la conexión de datos**realice pantalla uno de los siguientes:  
+4. En el **elegir la conexión de datos**realice pantalla uno de los siguientes:  
   
-    -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.  
+    - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.  
   
          -o bien-  
   
-    -   Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión** y cree una conexión con la base de datos Northwind.  
+    - Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión** y cree una conexión con la base de datos Northwind.  
   
-5.  Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione **siguiente**.  
+5. Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione **siguiente**.  
   
-6.  En el **Guardar cadena de conexión en el archivo de configuración de la aplicación** pantalla, seleccione **siguiente**.  
+6. En el **Guardar cadena de conexión en el archivo de configuración de la aplicación** pantalla, seleccione **siguiente**.  
   
-7.  En el **elija los objetos de base de datos** pantalla, expanda el **tablas** nodo.  
+7. En el **elija los objetos de base de datos** pantalla, expanda el **tablas** nodo.  
   
-8.  Seleccione el `Customers` y `Orders` tablas y, a continuación, seleccione **finalizar**.  
+8. Seleccione el `Customers` y `Orders` tablas y, a continuación, seleccione **finalizar**.  
   
      **NorthwindDataSet** se agrega al proyecto y las tablas `Customers` y `Orders` aparecen en la ventana **Orígenes de datos**.  
   
@@ -82,13 +82,13 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Para crear datos enlazados a los controles del formulario de Windows  
   
--   En el **orígenes de datos** ventana, expanda el **clientes** nodo.  
+- En el **orígenes de datos** ventana, expanda el **clientes** nodo.  
   
--   Arrastre el nodo principal **Customers** desde la ventana **Orígenes de datos** hasta **Form1**.  
+- Arrastre el nodo principal **Customers** desde la ventana **Orígenes de datos** hasta **Form1**.  
   
      En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.  
   
--   Arrastre relacionado **pedidos** nodo (no principal **pedidos** nodo, pero el nodo de tabla secundaria relacionado siguiente el **Fax** columna) en el formulario debajo del  **CustomersDataGridView**.  
+- Arrastre relacionado **pedidos** nodo (no principal **pedidos** nodo, pero el nodo de tabla secundaria relacionado siguiente el **Fax** columna) en el formulario debajo del  **CustomersDataGridView**.  
   
      En el formulario aparece una <xref:System.Windows.Forms.DataGridView>. Un OrdersTableAdapter y <xref:System.Windows.Forms.BindingSource> aparecen en la Bandeja de componentes.  
   
@@ -97,9 +97,9 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Para agregar una referencia al archivo DLL System.Transactions  
   
-1.  En el **proyecto** menú, seleccione**Agregar referencia**.  
+1. En el **proyecto** menú, seleccione**Agregar referencia**.  
   
-2.  Seleccione **System.Transactions**(en el **.NET** pestaña) y, a continuación, seleccione **Aceptar**.  
+2. Seleccione **System.Transactions**(en el **.NET** pestaña) y, a continuación, seleccione **Aceptar**.  
   
      Se agrega una referencia a **System.Transactions** al proyecto.  
   
@@ -117,38 +117,38 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
    El orden para conciliar los cambios a los datos relacionados es el siguiente:  
   
--   Eliminar los registros secundarios. (En este caso, eliminar los registros de la `Orders` tabla.)  
+- Eliminar los registros secundarios. (En este caso, eliminar los registros de la `Orders` tabla.)  
   
--   Eliminar los registros primarios. (En este caso, eliminar los registros de la `Customers` tabla.)  
+- Eliminar los registros primarios. (En este caso, eliminar los registros de la `Customers` tabla.)  
   
--   Insertar registros primarios. (En este caso, insertar registros en el `Customers` tabla.)  
+- Insertar registros primarios. (En este caso, insertar registros en el `Customers` tabla.)  
   
--   Insertar registros secundarios. (En este caso, insertar registros en el `Orders` tabla.)  
+- Insertar registros secundarios. (En este caso, insertar registros en el `Orders` tabla.)  
   
 #### <a name="to-delete-existing-orders"></a>Para eliminar pedidos existentes  
   
--   Agregue el siguiente método `DeleteOrders` a **Form1**:  
+- Agregue el siguiente método `DeleteOrders` a **Form1**:  
   
      [!code-csharp[VbRaddataSaving#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#5)]
      [!code-vb[VbRaddataSaving#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#5)]  
   
 #### <a name="to-delete-existing-customers"></a>Para eliminar clientes existentes  
   
--   Agregue el siguiente método `DeleteCustomers` a **Form1**:  
+- Agregue el siguiente método `DeleteCustomers` a **Form1**:  
   
      [!code-csharp[VbRaddataSaving#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#6)]
      [!code-vb[VbRaddataSaving#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#6)]  
   
 #### <a name="to-add-new-customers"></a>Para agregar nuevos clientes  
   
--   Agregue el siguiente método `AddNewCustomers` a **Form1**:  
+- Agregue el siguiente método `AddNewCustomers` a **Form1**:  
   
      [!code-csharp[VbRaddataSaving#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#7)]
      [!code-vb[VbRaddataSaving#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#7)]  
   
 #### <a name="to-add-new-orders"></a>Para agregar nuevos pedidos  
   
--   Agregue el siguiente método `AddNewOrders` a **Form1**:  
+- Agregue el siguiente método `AddNewOrders` a **Form1**:  
   
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]  
@@ -157,7 +157,7 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
 #### <a name="to-run-the-application"></a>Para ejecutar la aplicación  
   
--   Seleccione **F5** para ejecutar la aplicación.  
+- Seleccione **F5** para ejecutar la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

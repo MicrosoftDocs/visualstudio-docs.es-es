@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103646"
 ---
 # <a name="ribbon-designer"></a>Diseñador de la cinta de opciones
   El Diseñador de cinta es un lienzo de diseño visual. Usar el Diseñador de cinta de opciones para agregar pestañas personalizadas, grupos y controles a la cinta de opciones de una aplicación de Microsoft Office.
@@ -40,11 +40,11 @@ ms.locfileid: "54867265"
 
  Para abrir el Diseñador de cinta, agregue un **cinta (diseñador Visual)** a su proyecto. A continuación, puede usar las herramientas de diseño para las siguientes tareas:
 
--   [Diseño de la cinta de opciones](#DesigningRibbonLayout)
+- [Diseño de la cinta de opciones](#DesigningRibbonLayout)
 
--   [Controlar eventos y establecer las propiedades del control](#HandleEventsSetProperties)
+- [Controlar eventos y establecer las propiedades del control](#HandleEventsSetProperties)
 
--   [Agregar controles a la vista Backstage](#CustomizingMicrosoftOfficeButton)
+- [Agregar controles a la vista Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
 >  Hay algunas tareas que no se puede realizar mediante el Diseñador de cinta de opciones. Para obtener más información sobre estas tareas y cómo puede llevarlas a cabo, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).
@@ -64,7 +64,7 @@ ms.locfileid: "54867265"
 
   Si ya tiene un **cinta (diseñador Visual)** elemento de otro proyecto, puede reutilizarlo en su proyecto actual mediante el uso de la **Agregar elemento existente** cuadro de diálogo.
 
-##  <a name="DesigningRibbonLayout"></a> Diseñar una cinta de opciones
+## <a name="DesigningRibbonLayout"></a> Diseñar una cinta de opciones
  Hay tres maneras de abrir el Diseñador de cinta:
 
 - En **el Explorador de soluciones**, haga doble clic en el archivo de código de la cinta de opciones.
@@ -98,7 +98,7 @@ ms.locfileid: "54867265"
 
    No se puede arrastrar controles de una pestaña a otra en la cinta de opciones. Si desea mover un control a otra ficha, debe usar el **cortar** comando para quitar el control de una ficha y, a continuación, pegarlo en otra pestaña. Si corta el control y lo pega, el controlador de eventos deja de funcionar. Puede volver a conectar el controlador de eventos en el **propiedades** ventana. Para obtener más información, consulte [ventana propiedades](../ide/reference/properties-window.md).
 
-###  <a name="AddTabToRibbon"></a> Agregar pestañas personalizadas a la cinta de opciones
+### <a name="AddTabToRibbon"></a> Agregar pestañas personalizadas a la cinta de opciones
  Hay tres maneras de agregar una pestaña personalizada a la cinta de opciones:
 
 - Agregar una pestaña de la **cuadro de herramientas**.
@@ -114,11 +114,11 @@ ms.locfileid: "54867265"
 #### <a name="remove-custom-tabs-from-the-ribbon"></a>Quitar pestañas personalizadas de la cinta de opciones
  Hay tres formas de quitar una pestaña personalizada de la cinta de opciones:
 
--   Haga clic en el diseñador y, a continuación, haga clic en **Quitar ficha de cinta**.
+- Haga clic en el diseñador y, a continuación, haga clic en **Quitar ficha de cinta**.
 
--   En el **comandos** panel de la **propiedades** ventana, haga clic en **Quitar ficha de cinta**.
+- En el **comandos** panel de la **propiedades** ventana, haga clic en **Quitar ficha de cinta**.
 
--   Abra el **pestaña Editor de la colección**, seleccione la ficha y, a continuación, haga clic en **quitar**.
+- Abra el **pestaña Editor de la colección**, seleccione la ficha y, a continuación, haga clic en **quitar**.
 
 #### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Cambiar la posición de una pestaña en la cinta de opciones
  Puede cambiar el orden de las pestañas personalizadas en una cinta de opciones. También puede colocar las pestañas personalizadas antes o después de una pestaña integrada en la cinta de opciones. Para obtener más información, vea [Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
@@ -132,10 +132,10 @@ ms.locfileid: "54867265"
 
  Para obtener más información sobre cómo personalizar una pestaña integrada, vea [Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md).
 
-###  <a name="AddGroupsToTab"></a> Agregar grupos a una ficha
+### <a name="AddGroupsToTab"></a> Agregar grupos a una ficha
  Los grupos organizan lógicamente los controles en la cinta de opciones. Agregar grupos de pestañas. Agregar todos los demás controles al grupo.
 
-###  <a name="AddControlsToGroups"></a> Agregar controles a grupos
+### <a name="AddControlsToGroups"></a> Agregar controles a grupos
  Agregue uno o más controles a un grupo. En la tabla siguiente se describe cada control.
 
 |Control|Descripción|
@@ -154,7 +154,7 @@ ms.locfileid: "54867265"
 |**SplitButton**|Un botón con un menú asociado. Un botón de expansión puede contener ninguno de los siguientes controles:<br /><br /> : Botón<br />: Casilla de verificación<br />-Galería<br />-Menú<br />: Botón de expansión<br />: Botón de alternancia<br />: Separador<br /><br /> Al igual que el menú, el botón de expansión tiene su propia superficie de diseño. Sin embargo, a diferencia de un menú, puede actualizar solo los elementos de un botón de expansión antes de carga la cinta de opciones en la aplicación de Office. Para obtener información acerca de cómo actualizar los elementos de un botón de expansión, vea [información general sobre el modelo de objetos de cinta de opciones](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Un botón que aparece o no presionado.|
 
-##  <a name="HandleEventsSetProperties"></a> Controlar eventos y establecer las propiedades
+## <a name="HandleEventsSetProperties"></a> Controlar eventos y establecer las propiedades
  El Diseñador de cinta de opciones le permite establecer las propiedades del control en tiempo de diseño mediante el **propiedades** ventana. Además, la cinta de opciones expone un modelo de objetos fuertemente tipados que puede usar para obtener y establecer las propiedades de controles de cinta de opciones en tiempo de ejecución.
 
  Hacer doble clic en cualquier control en el diseñador para abrir un controlador de eventos para el evento predeterminado del control. Puede crear controladores de eventos para todos los demás eventos de control mediante la **propiedades** ventana.
@@ -163,7 +163,7 @@ ms.locfileid: "54867265"
 
  Para obtener información sobre cómo controlar eventos de la cinta de opciones y establecer las propiedades de controles de cinta de opciones en tiempo de ejecución, vea [información general sobre el modelo de objetos de cinta de opciones](../vsto/ribbon-object-model-overview.md).
 
-##  <a name="CustomizingMicrosoftOfficeButton"></a> Personalizar la vista Backstage
+## <a name="CustomizingMicrosoftOfficeButton"></a> Personalizar la vista Backstage
  Puede usar el Diseñador de cinta para agregar controles al menú que se abre al hacer clic en el **archivo** ficha. Este menú se llama a la vista Backstage.
 
  No se puede colocar controles antes o después de los controles integrados usando el Diseñador de cinta de opciones. Un control integrado es un control que ya aparece en la vista Backstage. Si desea colocar controles antes o después de los controles integrados, debe usar XML de cinta de opciones. Para obtener más información acerca de **cinta (XML)**, consulte [Ribbon XML](../vsto/ribbon-xml.md). Para obtener más información acerca de cómo personalizar la vista Backstage, consulte [Introducción a la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182189) y [personalizar la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182188).
@@ -172,7 +172,7 @@ ms.locfileid: "54867265"
 
  Para obtener información sobre cómo agregar controles a la vista Backstage, vea [Cómo: Agregar controles a la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).
 
-##  <a name="Accessibility"></a> Accesibilidad en el Diseñador de cinta
+## <a name="Accessibility"></a> Accesibilidad en el Diseñador de cinta
  Puede usar métodos abreviados de teclado para mover controles en el Diseñador de cinta. Algunos métodos abreviados de teclado se aplican a todos los controles y algunas se aplican sólo a los controles que tienen menús.
 
  Métodos abreviados de teclado que se aplican a todos los controles se muestran en la tabla siguiente.

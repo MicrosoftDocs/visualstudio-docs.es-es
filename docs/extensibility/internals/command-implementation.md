@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089758"
 ---
 # <a name="command-implementation"></a>Implementación de comandos
 Para implementar un comando en un VSPackage, debe realizar las siguientes tareas:
 
-1.  En el *.vsct* de archivos, configurar un grupo de comandos y, a continuación, agregue el comando a él. Para obtener más información, consulte [archivos de tabla (.vsct) de comandos de Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+1. En el *.vsct* de archivos, configurar un grupo de comandos y, a continuación, agregue el comando a él. Para obtener más información, consulte [archivos de tabla (.vsct) de comandos de Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-2.  Registrar el comando con Visual Studio.
+2. Registrar el comando con Visual Studio.
 
-3.  Implementar el comando.
+3. Implementar el comando.
 
 Las siguientes secciones explican cómo registrar e implementar los comandos.
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>Métodos QueryStatus
  Si va a implementar ya sea el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método o la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> método, busque el GUID del comando conjunto al que pertenece el comando y el identificador del comando. Siga estas instrucciones:
 
--   Si no se reconoce el GUID, la implementación de cualquiera de estos métodos debe devolver <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
+- Si no se reconoce el GUID, la implementación de cualquiera de estos métodos debe devolver <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
 
--   Si su implementación de cualquiera de estos métodos reconoce el GUID pero no ha implementado el comando, el método debe devolver <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+- Si su implementación de cualquiera de estos métodos reconoce el GUID pero no ha implementado el comando, el método debe devolver <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
 
--   Si su implementación de cualquiera de estos métodos reconoce el GUID y el comando y, después, el método debe establecer el campo de marcadores de comando de todos los comandos (en el `prgCmds` parámetro) mediante el siguiente <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> indicadores:
+- Si su implementación de cualquiera de estos métodos reconoce el GUID y el comando y, después, el método debe establecer el campo de marcadores de comando de todos los comandos (en el `prgCmds` parámetro) mediante el siguiente <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> indicadores:
 
-    -   `OLECMDF_SUPPORTED`: Se admite el comando.
+    - `OLECMDF_SUPPORTED`: Se admite el comando.
 
-    -   `OLECMDF_INVISIBLE`: El comando no debe ser visible.
+    - `OLECMDF_INVISIBLE`: El comando no debe ser visible.
 
-    -   `OLECMDF_LATCHED`: El comando se alterna y parece que se han comprobado.
+    - `OLECMDF_LATCHED`: El comando se alterna y parece que se han comprobado.
 
-    -   `OLECMDF_ENABLED`: El comando está habilitado.
+    - `OLECMDF_ENABLED`: El comando está habilitado.
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: El comando debe ocultarse si ésta aparece en un menú contextual.
+    - `OLECMDF_DEFHIDEONCTXTMENU`: El comando debe ocultarse si ésta aparece en un menú contextual.
 
-    -   `OLECMDF_NINCHED`: El comando es un controlador de menú y no está habilitado, pero su lista del menú desplegable no está vacía y sigue estando disponible. (Rara vez se usa esta marca).
+    - `OLECMDF_NINCHED`: El comando es un controlador de menú y no está habilitado, pero su lista del menú desplegable no está vacía y sigue estando disponible. (Rara vez se usa esta marca).
 
--   Si el comando se ha definido en el *.vsct* archivo con el `TextChanges` marca, establezca los parámetros siguientes:
+- Si el comando se ha definido en el *.vsct* archivo con el `TextChanges` marca, establezca los parámetros siguientes:
 
-    -   Establecer el `rgwz` elemento de la `pCmdText` parámetro para el nuevo texto del comando.
+    - Establecer el `rgwz` elemento de la `pCmdText` parámetro para el nuevo texto del comando.
 
-    -   Establecer el `cwActual` elemento de la `pCmdText` parámetro para el tamaño de la cadena de comandos.
+    - Establecer el `cwActual` elemento de la `pCmdText` parámetro para el tamaño de la cadena de comandos.
 
 Además, asegúrese de que el contexto actual no es una función de automatización, a menos que el comando está diseñado específicamente para controlar las funciones de automatización.
 

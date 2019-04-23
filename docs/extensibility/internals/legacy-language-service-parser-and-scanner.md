@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd16fa286c4e6343e69644caa60525a988e180e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092310"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Escáner y analizador del servicio de lenguaje heredado
 El analizador es el corazón del servicio de lenguaje. Las clases de lenguaje de Managed Package Framework (MPF) requieren un analizador de lenguaje para seleccionar la información sobre el código que se va a mostrar. Un analizador separa el texto en tokens léxicos y, a continuación, identifica esos tokens por tipo y funcionalidad.
@@ -80,29 +80,29 @@ namespace MyNamespace
 
  Se supone que el servicio de lenguaje es compatible con las llaves coincidentes.
 
-1.  El usuario escribe una llave de cierre (}).
+1. El usuario escribe una llave de cierre (}).
 
-2.  La llave de cierre se inserta en la posición del cursor en el archivo de origen y avanza el cursor por uno.
+2. La llave de cierre se inserta en la posición del cursor en el archivo de origen y avanza el cursor por uno.
 
-3.  El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> clase se denomina con la llave de cierre con tipo.
+3. El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> clase se denomina con la llave de cierre con tipo.
 
-4.  El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> llamadas al método el <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> clase para obtener el token en la posición justo antes de la posición actual del cursor. Este token se corresponde con la llave de cierre con tipo).
+4. El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> llamadas al método el <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> clase para obtener el token en la posición justo antes de la posición actual del cursor. Este token se corresponde con la llave de cierre con tipo).
 
-    1.  El <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> llamadas al método el <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método en el <xref:Microsoft.VisualStudio.Package.Colorizer> objeto para obtener todos los tokens en la línea actual.
+    1. El <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> llamadas al método el <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método en el <xref:Microsoft.VisualStudio.Package.Colorizer> objeto para obtener todos los tokens en la línea actual.
 
-    2.  El <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> llamadas al método el <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> método en el <xref:Microsoft.VisualStudio.Package.IScanner> objeto con el texto de la línea actual.
+    2. El <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> llamadas al método el <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> método en el <xref:Microsoft.VisualStudio.Package.IScanner> objeto con el texto de la línea actual.
 
-    3.  El <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método se llama repetidamente el <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> método en el <xref:Microsoft.VisualStudio.Package.IScanner> objeto para recopilar todos los tokens de la línea actual.
+    3. El <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método se llama repetidamente el <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> método en el <xref:Microsoft.VisualStudio.Package.IScanner> objeto para recopilar todos los tokens de la línea actual.
 
-    4.  El <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método llama a un método privado el <xref:Microsoft.VisualStudio.Package.Source> clase para obtener el token que contiene la posición deseada y pasadas en la lista de los tokens obtienen de la <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método.
+    4. El <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método llama a un método privado el <xref:Microsoft.VisualStudio.Package.Source> clase para obtener el token que contiene la posición deseada y pasadas en la lista de los tokens obtienen de la <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método.
 
-5.  El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método busca un indicador de token de desencadenador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> en el símbolo (token) que se devuelve desde el <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método; es decir, el token que representa la llave de cierre).
+5. El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método busca un indicador de token de desencadenador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> en el símbolo (token) que se devuelve desde el <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método; es decir, el token que representa la llave de cierre).
 
-6.  Si marca el desencadenador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> se encuentra, el <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> se llama a la clase.
+6. Si marca el desencadenador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> se encuentra, el <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> se llama a la clase.
 
-7.  El <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método inicia una operación de análisis con el valor de la razón de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>. Esta operación finalmente llama a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase. Si está habilitado el análisis asincrónico, esta llamada a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método se produce en un subproceso en segundo plano.
+7. El <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método inicia una operación de análisis con el valor de la razón de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>. Esta operación finalmente llama a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase. Si está habilitado el análisis asincrónico, esta llamada a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método se produce en un subproceso en segundo plano.
 
-8.  Cuando finalice la operación de análisis, un controlador de finalización interno (también conocido como un método de devolución de llamada) denominado `HandleMatchBracesResponse` se llama en el <xref:Microsoft.VisualStudio.Package.Source> clase. Esta llamada se realiza de forma automática el <xref:Microsoft.VisualStudio.Package.LanguageService> no por el analizador de la clase base.
+8. Cuando finalice la operación de análisis, un controlador de finalización interno (también conocido como un método de devolución de llamada) denominado `HandleMatchBracesResponse` se llama en el <xref:Microsoft.VisualStudio.Package.Source> clase. Esta llamada se realiza de forma automática el <xref:Microsoft.VisualStudio.Package.LanguageService> no por el analizador de la clase base.
 
 9. El `HandleMatchBracesResponse` método obtiene una lista de intervalos desde el <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto que se almacena en la <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto. (Un intervalo es un <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> estructura que especifica un intervalo de líneas y caracteres en el archivo de origen.) Esta lista de intervalos normalmente contiene dos intervalos, uno para la apertura y llaves de cierre.
 

@@ -27,33 +27,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c2cee0e0b823e5fe17fbc5720137163dcb300b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b1c8bb5e7f6ea8e0c68ec444bc5a1995bac4277
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083080"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurar las aplicaciones Web: errores y solución de problemas
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurar aplicaciones web: errores y solución de problemas
 Al intentar depurar aplicaciones web pueden producirse los siguientes errores.
 
--   [Solución de problemas](../debugger/debugging-web-applications-troubleshooting.md)
+- [Solución de problemas](../debugger/debugging-web-applications-troubleshooting.md)
 
--   [Error: Site Uses IP Address (El sitio usa una dirección IP)](../debugger/error-site-uses-ip-address.md)
+- [Error: El sitio usa una dirección IP](../debugger/error-site-uses-ip-address.md)
 
--   [Error: Una comprobación de seguridad produjo un error porque el servicio de administración de IIS no respondió](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
+- [Error: Una comprobación de seguridad produjo un error porque el servicio de administración de IIS no respondió](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
 
--   [Error: ASP.NET no está instalado](../debugger/error-aspnet-not-installed.md)
+- [Error: ASP.NET no está instalado](../debugger/error-aspnet-not-installed.md)
 
--   [Error: No se pudo realizar la depuración porque no está habilitada la autenticación integrada de Windows](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
+- [Error: No se pudo realizar la depuración porque no está habilitada la autenticación integrada de Windows](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
 
--   [Error: El servidor web no se ha configurado correctamente](../debugger/error-the-web-server-is-not-configured-correctly.md)
+- [Error: El servidor web no está configurado correctamente](../debugger/error-the-web-server-is-not-configured-correctly.md)
 
--   [Error: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+- [Error: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
 
--   [Error: Timeout While Debugging Web Services (Se excedió el tiempo de espera de depuración de servicios web)](../debugger/error-timeout-while-debugging-web-services.md)
+- [Error: Se excedió el tiempo de espera de depuración de servicios web](../debugger/error-timeout-while-debugging-web-services.md)
 
--   [Error: No se puede iniciar la depuración en el servidor web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
+- [Error: No es posible iniciar la depuración en el servidor web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
 
 ## <a name="see-also"></a>Vea también
 - [Seguridad del depurador](../debugger/debugger-security.md)

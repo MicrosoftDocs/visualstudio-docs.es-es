@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9adab2cbf429860840e60b88065cf445c882fd2c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099681"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño mediante herramientas de visualización y modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)  
   
-##  <a name="ScenarioOverview"></a> Información general del escenario  
+## <a name="ScenarioOverview"></a> Información general del escenario  
  Este escenario describe capítulos de los ciclos de vida de desarrollo de software de dos empresas ficticias: Dinner Now y Lucerne Publishing. Dinner Now, con sede en Seattle, proporciona un servicio de comida a domicilio basado en web. A través de él, los clientes pueden pedir comida y pagarla en el sitio web de Dinner Now. Los pedidos se envían entonces al restaurante local que corresponda para que realice la entrega. Lucerne Publishing es una empresa de Nueva York con varios negocios tanto en Internet como fuera de ella. Entre esos negocios, Lucerne cuenta con un sitio web donde los clientes pueden publicar opiniones sobre restaurantes.  
   
  Lucerne adquirió recientemente Dinner Now y quiere realizar los siguientes cambios:  
@@ -78,7 +78,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
 - [Pruebas, validación y protección de código actualizado](#TestValidateCheckInCode)  
   
-##  <a name="ModelingDiagramsTools"></a> Roles de arquitectura y diagramas de modelado en el desarrollo de software  
+## <a name="ModelingDiagramsTools"></a> Roles de arquitectura y diagramas de modelado en el desarrollo de software  
  En la tabla siguiente se describen las funciones que estas herramientas pueden desempeñar durante múltiples y diversas fases del ciclo de vida de desarrollo de software:  
   
 ||**Modelado de requisitos de usuarios**|**Modelado de procesos de negocio**|**Diseño y arquitectura de sistemas**|**Visualización y exploración de código**|**Comprobación**|  
@@ -122,7 +122,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   > [!NOTE]
   >  Algunas versiones de Visual Studio admiten validación de capas, versiones de solo lectura de mapas de código y diagramas de UML para visualización y modelado. Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-##  <a name="UnderstandingCommunicating"></a> Comprensión y comunicación de información sobre el sistema  
+## <a name="UnderstandingCommunicating"></a> Comprensión y comunicación de información sobre el sistema  
  No hay ningún orden establecido para usar los diagramas de modelado de Visual Studio, por lo que puede usarlos como mejor se adapten a sus necesidades o enfoque. Normalmente, los equipos revisan sus modelos de forma iterativa y con frecuencia a lo largo de un proyecto. Cada diagrama ofrece determinados puntos fuertes para ayudarle a entender, describir y comunicar diferentes aspectos del sistema en desarrollo.  
   
  Dinner Now y Lucerne se comunican entre sí y con los participantes del proyecto mediante el uso de diagramas como su lenguaje común. Por ejemplo, Dinner Now usa diagramas para realizar estas tareas:  
@@ -165,7 +165,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
 - [Pruebas, validación y protección de código actualizado](#TestValidateCheckInCode)  
   
-###  <a name="UnderstandingBPMandSystemDesign"></a> Descripción del rol del sistema en el proceso empresarial  
+### <a name="UnderstandingBPMandSystemDesign"></a> Descripción del rol del sistema en el proceso empresarial  
  Lucerne desea obtener más información acerca del proceso de negocio de Dinner Now. Para ello crean los diagramas siguientes con el fin de mejorar su entendimiento con Dinner Now:  
   
 |**Diagram**|**Qué describe**|  
@@ -192,7 +192,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
  **Diagrama de clases UML**  
   
-###  <a name="DescribingURM"></a> Descripción de los requisitos de usuario nuevos o actualizados  
+### <a name="DescribingURM"></a> Descripción de los requisitos de usuario nuevos o actualizados  
  Lucerne desea agregar funcionalidad al sistema de Dinner Now para que los clientes puedan leer opiniones sobre restaurantes y aportar las suyas propias. Para ello, actualizan los diagramas siguientes, para que sean capaces de describir y analizar este nuevo requisito con Dinner Now:  
   
 |**Diagram**|**Qué describe**|  
@@ -219,7 +219,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
  **Diagrama de clases UML**  
   
-###  <a name="CreatingTests"></a> Crear pruebas de modelos  
+### <a name="CreatingTests"></a> Crear pruebas de modelos  
  Ambos equipos acuerdan que necesitan llevar a cabo un completo conjunto de pruebas en el sistema y sus componentes antes de realizar cualquier cambio. Lucerne tiene un equipo especializado que realiza las pruebas en los componentes y el sistema. Reutilizan las pruebas creadas por Dinner Now y las estructuran mediante los diagramas de UML:  
   
 - Cada caso de uso está representado por una o varias pruebas. Los elementos del diagrama de caso de uso se vinculan a los elementos de trabajo del caso de prueba en Team Foundation Server.  
@@ -236,7 +236,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
 - [Validar el modelo UML](../modeling/validate-your-uml-model.md)  
   
-###  <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
+### <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
  Dinner Now debe estimar el costo de satisfacer el requisito nuevo. Esto depende en parte de en qué medida afectará este cambio a las otras partes del sistema. Para ayudarles a comprender esto, uno de los desarrolladores de Dinner Now crea estos mapas y diagramas a partir del código existente:  
   
 |**Mapa o diagrama**|**Qué muestra**|  
@@ -280,7 +280,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
  **Diagrama de secuencia UML**  
   
-###  <a name="ValidatingCode"></a> Coherencia entre código y diseño  
+### <a name="ValidatingCode"></a> Coherencia entre código y diseño  
  Dinner Now debe asegurarse de que el código actualizado mantiene la coherencia con el diseño. Crea diagramas de capas en los que se describen las capas de funcionalidad del sistema, se especifican las dependencias permitidas entre ellas y se asocian artefactos de la solución a esas capas.  
   
 |**Diagram**|**Qué describe**|  
@@ -297,13 +297,13 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
  Vea:  
   
--   [Definir el proceso de compilación](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [Definir el proceso de compilación](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
--   [Utilizar un proceso de compilación de protección controlada para validar cambios](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [Utilizar un proceso de compilación de protección controlada para validar cambios](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
--   [Personalizar la plantilla de proceso de compilación](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Personalizar la plantilla de proceso de compilación](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-###  <a name="GeneralTips"></a> General Tips for Creating and Using Models  
+### <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
 - La mayoría de los diagramas constan de nodos que están conectados mediante líneas. Para cada tipo de diagrama, el cuadro de herramientas proporciona distintas clases de nodos y líneas.  
   
@@ -323,7 +323,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
   Consulte [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).  
   
-###  <a name="PlanningTracking"></a> Planning and Tracking Work  
+### <a name="PlanningTracking"></a> Planning and Tracking Work  
  Los diagramas de modelado de Visual Studio se integran con Team Foundation Server para que pueda planear, administrar y realizar un seguimiento del trabajo más fácilmente. Ambos equipos usan modelos para identificar los casos de prueba y las tareas de desarrollo, y para calcular su trabajo. Lucerne crea elementos de trabajo de Team Foundation Server y los vincula a elementos de modelo, como casos de uso o componentes. Esto les ayuda a supervisar sus progresos y a realizar un seguimiento de su trabajo hasta los requisitos de los usuarios. Así se aseguran de que sus cambios continúan cumpliendo dichos requisitos.  
   
  A medida que avanza su trabajo, los equipos actualizan los elementos de trabajo para que reflejen el tiempo que invierten en sus tareas. También supervisan y registran el estado de su trabajo con las siguientes características de Team Foundation Server:  
@@ -344,7 +344,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
 - [Crear un registro de trabajo pendiente y tareas mediante Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
-###  <a name="TestValidateCheckInCode"></a> Pruebas, validación y protección de código  
+### <a name="TestValidateCheckInCode"></a> Pruebas, validación y protección de código  
  Cuando los equipos completan una tarea, comprueban su código en el control de versiones de Team Foundation y reciben un aviso de Team Foundation Server si se olvidan de hacerlo. Antes de que Team Foundation Server acepte las protecciones, los equipos ejecutan pruebas unitarias y validación de capas para comprobar el código comparándolo con sus casos de prueba y el diseño. Usan Team Foundation Server para ejecutar con regularidad compilaciones, pruebas unitarias automatizadas y validación de capas. Con esto se aseguran de que el código cumple los criterios siguientes:  
   
 - Funciona.  
@@ -367,7 +367,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
 - [Compilar la aplicación](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-##  <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
+## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne y Dinner Now deben integrar sus sistemas de pago. En las secciones siguientes se muestra cómo los diagramas de modelado de Visual Studio les ayudan con esta tarea:  
   
 - [Comprender los requisitos del usuario: Diagramas de casos de uso](#UnderstandUseCases)  
@@ -396,7 +396,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
 - [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)  
   
-###  <a name="UnderstandUseCases"></a> Comprender los requisitos del usuario: Diagramas de casos de uso  
+### <a name="UnderstandUseCases"></a> Comprender los requisitos del usuario: Diagramas de casos de uso  
  Los diagramas de casos de uso resumen las actividades que admite un sistema e indican quién lleva a cabo dichas actividades. Lucerne usa un diagrama de casos de uso para obtener la información siguiente sobre el sistema de Dinner Now:  
   
 - Los clientes realizan pedidos.  
@@ -447,13 +447,13 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 #### <a name="summary-strengths-of-use-case-diagrams"></a>Resumen: Puntos fuertes de diagramas de casos de uso  
  Los diagramas de casos de uso le ayudan a visualizar:  
   
--   Las actividades que un sistema admite o no admite  
+- Las actividades que un sistema admite o no admite  
   
--   Las personas y los sistemas externos que realizan esas actividades  
+- Las personas y los sistemas externos que realizan esas actividades  
   
--   Los principales componentes del sistema que admiten cada actividad y que puede representar como subsistemas anidados dentro del sistema principal  
+- Los principales componentes del sistema que admiten cada actividad y que puede representar como subsistemas anidados dentro del sistema principal  
   
--   Cómo se puede dividir un caso de uso en casos de uso más pequeños o en variaciones del mismo  
+- Cómo se puede dividir un caso de uso en casos de uso más pequeños o en variaciones del mismo  
   
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas  
   
@@ -463,7 +463,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 |Diagrama de secuencia|La secuencia de interacciones entre los participantes en un caso de uso.<br /><br /> Vea:<br /><br /> -   [Diagramas de secuencia UML: Referencia](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Diagramas de secuencia UML: directrices](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |Diagrama de clases (UML)|Las entidades o tipos que participan en el caso de uso.<br /><br /> Vea:<br /><br /> -   [Diagramas de clases UML: Referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramas de clases UML: directrices](../modeling/uml-class-diagrams-guidelines.md)|  
   
-###  <a name="UnderstandActivities"></a> Comprender el proceso empresarial: Diagramas de actividades  
+### <a name="UnderstandActivities"></a> Comprender el proceso empresarial: Diagramas de actividades  
  Los diagramas de actividades describen el flujo de pasos de un proceso de negocio y proporcionan una manera sencilla para la comunicación de flujo de trabajo. Un proyecto de desarrollo puede tener varios diagramas de actividades. Normalmente, una actividad abarca todas las acciones resultantes de una acción externa, por ejemplo, pedir una comida, actualizar un menú o agregar un nuevo restaurante al negocio. Una actividad también puede describir los detalles de una acción compleja.  
   
  Lucerne actualiza el siguiente diagrama de actividad para mostrar que procesa el pago y paga al restaurante. Reemplazan el sistema de pago (Payment System) de Dinner Now por el sistema de pago de Lucerne, como se muestra con el resaltado:  
@@ -480,9 +480,9 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
  Vea:  
   
--   [Diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md)  
+- [Diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md)  
   
--   [Diagramas de actividades UML: directrices](../modeling/uml-activity-diagrams-guidelines.md)  
+- [Diagramas de actividades UML: directrices](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="drawing-an-activity-diagram"></a>Dibujo de un diagrama de actividades  
  Un diagrama de actividades tiene las siguientes características principales:  
@@ -519,7 +519,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 |Diagrama de casos de uso|Resumen de las actividades que realiza cada actor.<br /><br /> Vea:<br /><br /> -   [Diagramas de casos de uso UML: Referencia](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramas de casos de uso UML: directrices](../modeling/uml-use-case-diagrams-guidelines.md)|  
 |Diagrama de componentes|Visualización del sistema como una colección de elementos reutilizables que proporcionan o usan el comportamiento a través de un conjunto de interfaces bien definido.<br /><br /> Vea:<br /><br /> -   [Diagramas de componentes UML: Referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramas de componentes UML: directrices](../modeling/uml-component-diagrams-guidelines.md)|  
   
-###  <a name="DescribeComponents"></a> Describe la estructura del sistema: Diagrama de componentes  
+### <a name="DescribeComponents"></a> Describe la estructura del sistema: Diagrama de componentes  
  Los diagramas de componentes describen un sistema como una colección de elementos separables que proporcionan o usan el comportamiento a través de un conjunto de interfaces bien definido. Los elementos pueden tener cualquier escala y estar conectados de cualquier modo.  
   
  Para ayudar a Lucerne y a Dinner Now a visualizar y analizar los componentes del sistema y sus interfaces, se crean los siguientes diagramas de componentes:  
@@ -582,9 +582,9 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 #### <a name="summary-strengths-of-component-diagrams"></a>Resumen: Puntos fuertes de diagramas de componentes  
  Los diagramas de componentes le ayudan a visualizar:  
   
--   El sistema como una colección de elementos separables independientemente de su lenguaje de implementación o estilo.  
+- El sistema como una colección de elementos separables independientemente de su lenguaje de implementación o estilo.  
   
--   Componentes con interfaces bien definidas, que facilitan la comprensión del diseño y su actualización cuando cambian los requisitos.  
+- Componentes con interfaces bien definidas, que facilitan la comprensión del diseño y su actualización cuando cambian los requisitos.  
   
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas  
   
@@ -596,7 +596,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 |Diagrama de capas|Descripción de la arquitectura lógica del sistema en lo referente a los componentes. Mediante la validación de capas, asegúrese de que el código mantiene la coherencia con el diseño.<br /><br /> Vea:<br /><br /> -   [Crear diagramas de capas desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramas de capas: Referencia](../modeling/layer-diagrams-reference.md)<br />-   [Diagramas de capas: directrices](../modeling/layer-diagrams-guidelines.md)<br />-   [Validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|  
 |Diagrama de actividades|Visualización del procesamiento interno efectuado por los componentes en respuesta a los mensajes entrantes.<br /><br /> Vea:<br /><br /> -   [Diagramas de actividades UML: Referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramas de actividades UML: directrices](../modeling/uml-activity-diagrams-guidelines.md)|  
   
-###  <a name="VisualizeCode"></a> Visualización del código existente: Mapas de código  
+### <a name="VisualizeCode"></a> Visualización del código existente: Mapas de código  
  Los mapas de código muestran la organización y las relaciones actuales del código. Los elementos se representan mediante *nodos* en el mapa y las relaciones mediante *vínculos*. Los mapas de código le ayudan a realizar los siguientes tipos de tareas:  
   
 - Examinar código desconocido.  
@@ -637,26 +637,26 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
 #### <a name="creating-a-code-map"></a>Creación de un mapa de código  
   
--   Para obtener una visión general rápida del código fuente, siga estos pasos para generar un mapa de código:  
+- Para obtener una visión general rápida del código fuente, siga estos pasos para generar un mapa de código:  
   
      En el menú **Arquitectura** , haga clic en **Generar mapa de código para solución**.  
   
      Para obtener una visión general rápida del código compilado, cree un mapa de código en blanco y, después, arrastre los archivos de ensamblado o los archivos binarios a la superficie del mapa.  
   
--   Para explorar código específico o elementos de la solución, use el Explorador de soluciones para seleccionar los elementos y las relaciones que quiere visualizar. A continuación puede generar un mapa nuevo o agregar elementos seleccionados a un mapa existente. Vea [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
+- Para explorar código específico o elementos de la solución, use el Explorador de soluciones para seleccionar los elementos y las relaciones que quiere visualizar. A continuación puede generar un mapa nuevo o agregar elementos seleccionados a un mapa existente. Vea [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
--   Para que le sea más fácil explorar el mapa, reorganice el diseño para que se adapte a los tipos de tareas que quiere realizar.  
+- Para que le sea más fácil explorar el mapa, reorganice el diseño para que se adapte a los tipos de tareas que quiere realizar.  
   
      Por ejemplo, para visualizar la distribución en capas del código, seleccione un diseño de árbol. Consulte [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).  
   
 #### <a name="summary-strengths-of-code-maps"></a>Resumen: Puntos fuertes de mapas de código  
  Los mapas de código le ayudan en las siguientes tareas:  
   
--   Obtener información acerca de la organización y las relaciones en el código existente.  
+- Obtener información acerca de la organización y las relaciones en el código existente.  
   
--   Identificar áreas que podrían verse afectadas por un cambio propuesto.  
+- Identificar áreas que podrían verse afectadas por un cambio propuesto.  
   
--   Buscar áreas de complejidad, patrones, capas u otras áreas que se podrían mejorar para que el código sea más fácil de mantener, modificar y reutilizar.  
+- Buscar áreas de complejidad, patrones, capas u otras áreas que se podrían mejorar para que el código sea más fácil de mantener, modificar y reutilizar.  
   
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas  
   
@@ -667,7 +667,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 |Diagrama de clases (UML)|Las clases, sus atributos y operaciones, y sus relaciones.<br /><br /> Para ayudarle a identificar estos elementos, cree un diagrama de clases UML que muestre esos elementos.<br /><br /> Vea:<br /><br /> -   [Diagramas de clases UML: Referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramas de clases UML: directrices](../modeling/uml-class-diagrams-guidelines.md)|  
 |Diagrama de clases (basado en código)|Las clases existentes en el código de un proyecto específico.<br /><br /> Para visualizar y modificar una clase existente en el código, use el Diseñador de clases.<br /><br /> Vea [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
   
-###  <a name="DescribeSequence"></a> Describe las interacciones: Diagramas de secuencia  
+### <a name="DescribeSequence"></a> Describe las interacciones: Diagramas de secuencia  
  Los diagramas de secuencia describen una serie de interacciones entre los elementos de un sistema. Los elementos pueden ser de cualquier escala, desde objetos individuales de un programa a grandes subsistemas o actores externos. Las interacciones pueden ser de cualquier escala y tipo, desde mensajes individuales a transacciones extendidas, y pueden ser llamadas a funciones o mensajes del servicio web.  
   
  Para poder describir y analizar los pasos del caso de uso del proceso de pago, Lucerne y Dinner Now crean el siguiente diagrama de secuencia a partir del diagrama de componentes. Las líneas de vida reflejan el componente de sitio web de Dinner Now y sus elementos. Los mensajes que aparecen entre las líneas de vida siguen las conexiones en los diagramas de componentes:  
@@ -682,11 +682,11 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
  Vea:  
   
--   [Diagramas de secuencia de UML: referencia](../modeling/uml-sequence-diagrams-reference.md)  
+- [Diagramas de secuencia de UML: referencia](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [Diagramas de secuencia de UML: directrices](../modeling/uml-sequence-diagrams-guidelines.md)  
+- [Diagramas de secuencia de UML: directrices](../modeling/uml-sequence-diagrams-guidelines.md)  
   
--   [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)  
+- [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)  
   
 #### <a name="drawing-a-sequence-diagram"></a>Dibujo de un diagrama de secuencia  
  Un diagrama de secuencia tiene las siguientes características principales:  
@@ -710,9 +710,9 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 #### <a name="summary-strengths-of-sequence-diagrams"></a>Resumen: Puntos fuertes de diagramas de secuencia  
  Los diagramas de secuencia le ayudan a visualizar:  
   
--   El flujo de control que se transfiere entre actores u objetos durante la ejecución de un caso de uso.  
+- El flujo de control que se transfiere entre actores u objetos durante la ejecución de un caso de uso.  
   
--   La implementación de un mensaje o una llamada a método.  
+- La implementación de un mensaje o una llamada a método.  
   
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas  
   
@@ -722,7 +722,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 |Diagrama de componentes|Descripción de los componentes que las líneas de vida representan y las interfaces que proporcionan y usan el comportamiento representado por los mensajes.<br /><br /> Para crear una línea de vida a partir de un diagrama de componentes, haga clic con el botón derecho en el componente y, después, haga clic en **Crear línea de vida**.<br /><br /> Vea:<br /><br /> -   [Diagramas de componentes UML: Referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramas de componentes UML: directrices](../modeling/uml-component-diagrams-guidelines.md)|  
 |Diagrama de casos de uso|Resumen de las interacciones entre los usuarios y los componentes en un diagrama de secuencia como un caso de uso, que representa el objetivo de un usuario.<br /><br /> Vea:<br /><br /> -   [Diagramas de casos de uso UML: Referencia](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramas de casos de uso UML: directrices](../modeling/uml-use-case-diagrams-guidelines.md)|  
   
-###  <a name="DefineClasses"></a> Definir un glosario de tipos: Diagramas de clases  
+### <a name="DefineClasses"></a> Definir un glosario de tipos: Diagramas de clases  
  Los diagramas de clases definen las entidades, términos o conceptos que participan en el sistema y sus relaciones entre sí. Por ejemplo, estos diagramas se pueden usar durante el desarrollo para describir los atributos y las operaciones de cada clase, independientemente del lenguaje de implementación o el estilo.  
   
  Para describir y analizar las entidades que participan en el caso de uso del proceso de pago, en Lucerne dibujan el diagrama de clases siguiente:  
@@ -741,20 +741,20 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
  Vea:  
   
--   [Diagrama de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)  
+- [Diagrama de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagrama de clases de UML: directrices](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagrama de clases de UML: directrices](../modeling/uml-class-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-class-diagram"></a>Dibujo de un diagrama de clases  
  Un diagrama de clases tiene las siguientes características principales:  
   
 - Tipos como clases, interfaces y enumeraciones:  
   
-  -   Una *clase* es la definición de objetos que comparten determinadas características estructurales y de comportamiento.  
+  - Una *clase* es la definición de objetos que comparten determinadas características estructurales y de comportamiento.  
   
-  -   Una *interfaz* define una parte del comportamiento externamente visible de un objeto.  
+  - Una *interfaz* define una parte del comportamiento externamente visible de un objeto.  
   
-  -   Una *enumeración* es un clasificador que contiene una lista de valores literales.  
+  - Una *enumeración* es un clasificador que contiene una lista de valores literales.  
   
 - Los*atributos* son valores de un tipo determinado que describen cada instancia de un *clasificador*. Un clasificador es un nombre general para tipos, componentes, casos de uso e incluso actores.  
   
@@ -789,11 +789,11 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 #### <a name="summary-strengths-of-class-diagrams"></a>Resumen: Puntos fuertes de diagramas de clases  
  Los diagramas de clases le ayudan a definir lo siguiente:  
   
--   Un glosario común de términos que se usan al analizar las necesidades de los usuarios y las entidades que participan en el sistema. Consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).  
+- Un glosario común de términos que se usan al analizar las necesidades de los usuarios y las entidades que participan en el sistema. Consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).  
   
--   Tipos usados por partes del sistema, como los componentes, independientemente de su implementación. Consulte [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md).  
+- Tipos usados por partes del sistema, como los componentes, independientemente de su implementación. Consulte [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md).  
   
--   Relaciones entre tipos, como dependencias. Por ejemplo, puede mostrar un tipo que se puede asociar con varias instancias de otro tipo.  
+- Relaciones entre tipos, como dependencias. Por ejemplo, puede mostrar un tipo que se puede asociar con varias instancias de otro tipo.  
   
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas  
   
@@ -806,7 +806,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 |Diagrama de secuencia|Definición de los tipos de líneas de vida y las operaciones, parámetros y valores devueltos para todos los mensajes que puede recibir la línea de vida.<br /><br /> Para crear una línea de vida a partir de un tipo en un diagrama de clases, haga clic con el botón derecho en el tipo y, después, elija **Crear línea de vida**.<br /><br /> Vea:<br /><br /> -   [Diagramas de secuencia UML: Referencia](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Diagramas de secuencia UML: directrices](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |Mapa de código|Visualización de la organización y las relaciones en el código existente.<br /><br /> Para identificar las clases, sus relaciones y sus métodos, cree un mapa de código que muestre esos elementos.<br /><br /> Vea:<br /><br /> -   [Asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md)|  
   
-###  <a name="DescribeLayers"></a> Describe la arquitectura lógica: Diagramas de capas  
+### <a name="DescribeLayers"></a> Describe la arquitectura lógica: Diagramas de capas  
  Los diagramas de capas organizan los artefactos de la solución en grupos abstractos, o *capas*, con los que describen la arquitectura lógica de un sistema. Estos artefactos pueden ser muchas cosas: espacios de nombres, proyectos, clases, métodos, etcétera. En las capas se representan y describen los roles o las tareas que realizan los artefactos en el sistema. También puede incluir la validación de capas en la compilación y las operaciones de protección para asegurarse de que el código sigue siendo coherente con el diseño.  
   
  Para mantener la coherencia entre el código y el diseño, Dinner Now y Lucerne usan el siguiente diagrama de capas para validar el código a medida que evoluciona:  
@@ -867,9 +867,9 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 #### <a name="summary-strengths-of-layer-diagrams"></a>Resumen: Puntos fuertes de diagramas de capas  
  Los diagramas de capas le permiten hacer lo siguiente:  
   
--   Describir la arquitectura lógica de un sistema conforme a la funcionalidad de sus artefactos.  
+- Describir la arquitectura lógica de un sistema conforme a la funcionalidad de sus artefactos.  
   
--   Asegurarse de que el código en desarrollo se ajusta al diseño especificado.  
+- Asegurarse de que el código en desarrollo se ajusta al diseño especificado.  
   
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas  
   

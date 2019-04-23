@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear la herencia entre tipos (Diseñador de clases) | Microsoft Docs
+title: Procedimiento Crear la herencia entre tipos (Diseñador de clases) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,35 +14,35 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d1c5b5d75dedf45988291459ed55b31bf80fc583
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2c0e8594014848bee103c65127b5edb7ad969284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760243"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104703"
 ---
-# <a name="how-to-create-inheritance-between-types-class-designer"></a>Cómo: Crear la herencia entre tipos (Diseñador de clases) 
+# <a name="how-to-create-inheritance-between-types-class-designer"></a>Procedimiento Crear la herencia entre tipos en el Diseñador de clases 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para crear una relación de herencia entre dos tipos de un diagrama de clases mediante el Diseñador de clases, conecte el tipo base con el tipo o los tipos derivados. Puede haber una relación de herencia entre dos clases, entre una clase y una interfaz o entre dos interfaces.  
   
 ### <a name="to-create-an-inheritance-between-types"></a>Para crear una herencia entre tipos  
   
-1.  Desde el proyecto, en el Explorador de soluciones, abra un archivo de diagrama de clases (.cd).  
+1. Desde el proyecto, en el Explorador de soluciones, abra un archivo de diagrama de clases (.cd).  
   
-     Si no tiene un diagrama de clases, créelo. Vea [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
+     Si no tiene un diagrama de clases, créelo. Vea [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
-2.  En el **Cuadro de herramientas**, en **Diseñador de clases**, haga clic en **Herencia**.  
+2. En el **Cuadro de herramientas**, en **Diseñador de clases**, haga clic en **Herencia**.  
   
-3.  En el diagrama de clases, dibuje una línea de herencia entre los tipos que desee, desde:  
+3. En el diagrama de clases, dibuje una línea de herencia entre los tipos que desee, desde:  
   
-    -   Una clase derivada a la clase base  
+    - Una clase derivada a la clase base  
   
-    -   Una clase de implementación a la interfaz implementada  
+    - Una clase de implementación a la interfaz implementada  
   
-    -   Una interfaz de extensión a la interfaz extendida  
+    - Una interfaz de extensión a la interfaz extendida  
   
-4.  Opcionalmente, cuando tenga un tipo derivado de un tipo genérico, haga clic en la línea de herencia. En la ventana **Propiedades**, establezca la propiedad **Argumentos de tipo** para que coincida con el tipo que quiera para el tipo genérico.  
+4. Opcionalmente, cuando tenga un tipo derivado de un tipo genérico, haga clic en la línea de herencia. En la ventana **Propiedades**, establezca la propiedad **Argumentos de tipo** para que coincida con el tipo que quiera para el tipo genérico.  
   
     > [!NOTE]
     >  Si una clase abstracta principal contiene como mínimo un miembro abstracto, todos los miembros abstractos se implementan como clases de herencia no abstractas.   
@@ -52,5 +52,5 @@ Para crear una relación de herencia entre dos tipos de un diagrama de clases me
 ## <a name="see-also"></a>Vea también  
  [Herencia](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
  [Fundamentos de la herencia](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
- [Cómo: Ver la herencia entre tipos (Diseñador de clases)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
+ [Cómo: Visualización de la herencia entre tipos (Diseñador de clases)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [Clases de Visual C++ en el Diseñador de clases](../ide/visual-cpp-classes-in-class-designer.md)

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645152"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082586"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importar elementos de un sitio de SharePoint existente
   La plantilla de proyecto Importar paquete de solución de SharePoint permite reutilizar elementos, como tipos de contenido y campos de sitios de SharePoint existentes en una nueva [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solución de SharePoint. Aunque puede ejecutar la mayoría de las soluciones importadas sin modificaciones, hay algunas restricciones y aspectos a tener en cuenta, sobre todo si se modifican los elementos después de importarlos.
@@ -119,9 +119,9 @@ ms.locfileid: "56645152"
 
  Cuando se obtiene este error, no se crea el elemento. Este problema se produce con más frecuencia con los módulos importados. Para evitar este problema, haga lo siguiente:
 
--   Use nombres cortos para el proyecto cuando los escriba en el cuadro de diálogo **Agregar nuevo proyecto** .
+- Use nombres cortos para el proyecto cuando los escriba en el cuadro de diálogo **Agregar nuevo proyecto** .
 
--   Cree el proyecto en una ubicación lo más cercana posible a la carpeta raíz, con el fin de acortar la ruta de acceso.
+- Cree el proyecto en una ubicación lo más cercana posible a la carpeta raíz, con el fin de acortar la ruta de acceso.
 
 ## <a name="the-sharepointproductversion-attribute"></a>El atributo SharePointProductVersion
  Si importa una solución creada en una versión anterior de SharePoint como [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] o [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], cambie el valor del atributo SharePointProductVersion en el manifiesto del paquete a 12.0, o bien inserte un control de administrador de script en todas las páginas web importadas y deje SharePointProductVersion establecido en 14.0. De lo contrario, los formularios web importados no se mostrarán en SharePoint.

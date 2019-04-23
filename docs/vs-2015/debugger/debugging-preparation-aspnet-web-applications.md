@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092427"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Preparación de la depuración: Aplicaciones Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ El [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]plantilla de sitio Web crea u
   
 ### <a name="to-create-a-web-forms-application"></a>Para crear una aplicación de formularios Web Forms  
   
-1.  En el **archivo** menú, elija **nuevo sitio Web**.  
+1. En el **archivo** menú, elija **nuevo sitio Web**.  
   
-2.  En el **nuevo sitio Web** cuadro de diálogo, seleccione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **sitio Web**.  
+2. En el **nuevo sitio Web** cuadro de diálogo, seleccione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **sitio Web**.  
   
-3.  Haga clic en **Aceptar**.  
+3. Haga clic en **Aceptar**.  
   
 ### <a name="to-debug-your-web-form"></a>Para depurar el formulario Web Forms  
   
-1.  Establezca uno o varios puntos de interrupción en los controladores de funciones y eventos.  
+1. Establezca uno o varios puntos de interrupción en los controladores de funciones y eventos.  
   
      Para obtener más información, consulta [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2.  Cuando se alcance un punto de interrupción, ejecute paso a paso el código en la función. Fíjese en la ejecución del código hasta que aísle el problema.  
+2. Cuando se alcance un punto de interrupción, ejecute paso a paso el código en la función. Fíjese en la ejecución del código hasta que aísle el problema.  
   
      Para obtener más información, consulte [ejecución paso a paso](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) y [depurar aplicaciones Web y en Script](../debugger/debugging-web-applications-and-script.md).  
   
@@ -54,13 +54,13 @@ El [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]plantilla de sitio Web crea u
   
 #### <a name="to-change-the-default-debug-configuration"></a>Para cambiar la configuración Debug predeterminada  
   
-1.  En **el Explorador de soluciones**, haga clic en el sitio Web y seleccione **páginas de propiedades** para abrir el **páginas de propiedades** cuadro de diálogo.  
+1. En **el Explorador de soluciones**, haga clic en el sitio Web y seleccione **páginas de propiedades** para abrir el **páginas de propiedades** cuadro de diálogo.  
   
-2.  Haga clic en **opciones de inicio**.  
+2. Haga clic en **opciones de inicio**.  
   
-3.  Establecer **acción de inicio** a la página Web que se debe mostrar en primer lugar.  
+3. Establecer **acción de inicio** a la página Web que se debe mostrar en primer lugar.  
   
-4.  En **depuradores**, asegúrese de que **depuración ASP.NET** está seleccionada.  
+4. En **depuradores**, asegúrese de que **depuración ASP.NET** está seleccionada.  
   
      Para obtener más información, consulte [configuración de las páginas de propiedades para proyectos Web](../debugger/property-pages-settings-for-web-projects.md).  
   

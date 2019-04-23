@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6ea971705b164a27fc7f65c3ac2d681b1569177
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109015"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Configuración sincronizada en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,27 +26,27 @@ Al usar la misma cuenta de personalización para iniciar sesión en Visual Studi
 ## <a name="synchronized-settings"></a>Configuración sincronizada
  De forma predeterminada, se sincroniza la siguiente configuración.
 
--   La configuración de desarrollo (Deberá seleccionar un conjunto de opciones la primera vez que ejecute Visual Studio, aunque puede cambiar la selección en cualquier momento. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)).
+- La configuración de desarrollo (Deberá seleccionar un conjunto de opciones la primera vez que ejecute Visual Studio, aunque puede cambiar la selección en cualquier momento. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)).
 
--   Las siguientes opciones de las páginas **Herramientas &#124; Opciones**:
+- Las siguientes opciones de las páginas **Herramientas &#124; Opciones**:
 
-    -   La configuración de uso de mayúsculas y minúsculas de la barra de menús y de **Tema**, en la página de opciones **Entorno**, **General**
+    - La configuración de uso de mayúsculas y minúsculas de la barra de menús y de **Tema**, en la página de opciones **Entorno**, **General**
 
-    -   Todos los valores de la página de opciones **Entorno**, **Fuentes y colores**
+    - Todos los valores de la página de opciones **Entorno**, **Fuentes y colores**
 
-    -   Todos los métodos abreviados de teclado, en la página de opciones **Entorno**, **Teclado**
+    - Todos los métodos abreviados de teclado, en la página de opciones **Entorno**, **Teclado**
 
-    -   Todos los valores de la página de opciones **Entorno, Pestañas y ventanas**
+    - Todos los valores de la página de opciones **Entorno, Pestañas y ventanas**
 
-    -   Todos los valores de la página de opciones **Entorno**, **Inicio**
+    - Todos los valores de la página de opciones **Entorno**, **Inicio**
 
-    -   Todos los valores de las páginas de opciones **Editor de texto**
+    - Todos los valores de las páginas de opciones **Editor de texto**
 
--   Todos los valores de las páginas de opciones Diseñador XAML
+- Todos los valores de las páginas de opciones Diseñador XAML
 
--   Los alias de comandos definidos por el usuario. Para obtener más información sobre cómo se definen los alias de comandos, consulte [Alias de comandos de Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+- Los alias de comandos definidos por el usuario. Para obtener más información sobre cómo se definen los alias de comandos, consulte [Alias de comandos de Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
--   Diseños de ventana definidos por el usuario en la página **Ventana &#124; Administrar diseños de ventana**
+- Diseños de ventana definidos por el usuario en la página **Ventana &#124; Administrar diseños de ventana**
 
 ## <a name="turning-synchronized-settings-off-for-a-particular-computer"></a>Desactivar la configuración sincronizada para un equipo concreto
  La configuración sincronizada de Visual Studio está activada de forma predeterminada. Para desactivarla en un equipo, vaya a la página **Herramientas &#124; Opciones &#124; Entorno &#124; Configuración sincronizada** y desactive la casilla.  Por ejemplo, si decide no sincronizar la configuración de Visual Studio en el equipo A, los cambios de configuración efectuados en dicho equipo no aparecerán en el equipo B ni en el equipo C. Los equipos B y C se seguirán sincronizando entre ellos, pero no lo harán con el equipo A.

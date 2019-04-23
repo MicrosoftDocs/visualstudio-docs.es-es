@@ -1,5 +1,5 @@
 ---
-title: Filtrar Especifique la ubicación donde se instalarán los usuarios finales desde | Documentos de Microsoft
+title: Procedimiento Especifique la ubicación donde se instalarán los usuarios finales desde | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5dd42c4753bdea11c32f6de06c6386320aa2a2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108508"
 ---
-# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Filtrar Especificar la ubicación desde la que instalarán los usuarios finales
+# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Procedimiento Especificar la ubicación desde la que instalarán los usuarios finales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación, la ubicación donde los usuarios van a descargar e instalar la aplicación no es necesariamente la ubicación donde se publica inicialmente la aplicación. Por ejemplo, en algunas organizaciones, un desarrollador puede publicar una aplicación en un servidor de ensayo y, a continuación, un administrador podría mover la aplicación a un servidor Web.  
@@ -38,11 +38,11 @@ Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicació
   
 ### <a name="to-specify-an-installation-url"></a>Para especificar una dirección URL de instalación  
   
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la pestaña **Publicar**.  
+2. Haga clic en la pestaña **Publicar**.  
   
-3.  En el campo de dirección URL de instalación, escriba la ubicación de instalación mediante una dirección URL completa con el formato http://www.microsoft.com/ApplicationName, o una ruta UNC con el formato \\\Server\ApplicationName.  
+3. En el campo de dirección URL de instalación, escriba la ubicación de instalación mediante una dirección URL completa con el formato http://www.microsoft.com/ApplicationName, o una ruta UNC con el formato \\\Server\ApplicationName.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Especificar dónde Visual Studio copia los archivos](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

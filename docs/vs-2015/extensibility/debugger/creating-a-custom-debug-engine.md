@@ -12,12 +12,12 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0617d23b49af182504406417023b0d907cadf27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e484ffe4968cdb89ff04e4e7f145decd07c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111524"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Creación de un motor de depuración personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Un motor de depuración (DE) es un componente que permite la depuración de las 
   
  Creación de una DE consta de los pasos siguientes:  
   
-1.  Registrar un DE con Visual Studio  
+1. Registrar un DE con Visual Studio  
   
-2.  Habilitación de un programa que se desea depurar  
+2. Habilitación de un programa que se desea depurar  
   
-3.  Evaluación de control y el estado de ejecución  
+3. Evaluación de control y el estado de ejecución  
   
-4.  Envío de eventos  
+4. Envío de eventos  
   
-5.  Terminación y separado  
+5. Terminación y separado  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Registro de un motor de depuración personalizado](../../extensibility/debugger/registering-a-custom-debug-engine.md)  

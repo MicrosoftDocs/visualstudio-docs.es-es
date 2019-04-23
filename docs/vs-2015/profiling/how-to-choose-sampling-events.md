@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Elegir eventos de muestreo | Microsoft Docs'
+title: Procedimiento Elegir eventos de muestreo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,47 +19,47 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 78d5e8bbc024009ad6515bdf08c5219253b42d12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 50b9fcb98b64e36d37ec2153588dcbb388ea960b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784517"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105505"
 ---
-# <a name="how-to-choose-sampling-events"></a>Cómo: Elegir eventos de muestreo
+# <a name="how-to-choose-sampling-events"></a>Procedimiento Elegir eventos de muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] recopilan datos de rendimiento en un intervalo especificado como un número de ciclos de procesador que utiliza el proceso del que se genera el perfil. El número predeterminado de ciclos en un intervalo es de 10 000 000, que es aproximadamente 0,01 segundos en un equipo de 1 GH. Puede cambiar el número de ciclos en un intervalo, así como el evento de muestras. Los siguientes eventos de muestras están disponibles:  
   
--   Ciclos de reloj: para problemas relacionados con la CPU.  
+- Ciclos de reloj: para problemas relacionados con la CPU.  
   
--   Errores de página: para problemas relacionados con la memoria.  
+- Errores de página: para problemas relacionados con la memoria.  
   
--   Llamadas del sistema: para problemas relacionados con E/S.  
+- Llamadas del sistema: para problemas relacionados con E/S.  
   
--   Contador de rendimiento: contadores de CPU para problemas de rendimiento de bajo nivel.  
+- Contador de rendimiento: contadores de CPU para problemas de rendimiento de bajo nivel.  
   
 > [!IMPORTANT]
 >  Si recopila datos de memoria de .NET (asignaciones, duraciones de objeto o ambos) mediante el método de muestreo, se omiten todos los eventos de muestreo especificados por el usuario y se utilizan los eventos de asignación de memoria o de recolección de elementos no utilizados apropiados, o ambos, para recopilar datos.  
   
 ### <a name="to-select-a-sample-event"></a>Para seleccionar un evento de muestras  
   
-1.  En el **Explorador de rendimiento**, haga clic con el botón derecho del mouse en la sesión de rendimiento y, después, haga clic en **Propiedades**.  
+1. En el **Explorador de rendimiento**, haga clic con el botón derecho del mouse en la sesión de rendimiento y, después, haga clic en **Propiedades**.  
   
-2.  En las **Páginas de propiedades**, haga clic en las propiedades de **Muestreo** .  
+2. En las **Páginas de propiedades**, haga clic en las propiedades de **Muestreo** .  
   
-3.  En la lista desplegable **Evento de muestras**, seleccione el evento de muestras que quiere utilizar para generar perfiles de la aplicación.  
+3. En la lista desplegable **Evento de muestras**, seleccione el evento de muestras que quiere utilizar para generar perfiles de la aplicación.  
   
     > [!NOTE]
     >  Los **Contadores de rendimiento disponibles** solo están habilitados si selecciona **Contador de rendimiento** en la lista desplegable **Evento de muestras**.  
   
-4.  Si selecciona **Contador de rendimiento**, seleccione un contador de CPU específico en el control de vista de árbol **Contadores de rendimiento disponibles**.  
+4. Si selecciona **Contador de rendimiento**, seleccione un contador de CPU específico en el control de vista de árbol **Contadores de rendimiento disponibles**.  
   
-    -   Los contadores en el nodo **Eventos portátiles** están disponibles en todos los tipos de procesadores.  
+    - Los contadores en el nodo **Eventos portátiles** están disponibles en todos los tipos de procesadores.  
   
-    -   Los contadores en el nodo **Eventos de plataforma** son específicos del procesador en el equipo actual y podrían no estar disponibles en otros tipos de procesadores.  
+    - Los contadores en el nodo **Eventos de plataforma** son específicos del procesador en el equipo actual y podrían no estar disponibles en otros tipos de procesadores.  
   
-5.  Al seleccionar un evento de muestras, el valor del intervalo de muestreo predeterminado se muestra en el cuadro de texto **Intervalo de muestreo**. Si es necesario, puede escribir el valor que quiera en el cuadro de texto.  
+5. Al seleccionar un evento de muestras, el valor del intervalo de muestreo predeterminado se muestra en el cuadro de texto **Intervalo de muestreo**. Si es necesario, puede escribir el valor que quiera en el cuadro de texto.  
   
 ## <a name="see-also"></a>Vea también  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   

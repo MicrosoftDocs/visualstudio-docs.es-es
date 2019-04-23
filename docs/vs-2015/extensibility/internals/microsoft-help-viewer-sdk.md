@@ -8,27 +8,27 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099017"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 En este artículo contiene las siguientes tareas para los integradores del Visor de Ayuda de Visual Studio:
 
--   Creación de un tema (soporte de F1)
+- Creación de un tema (soporte de F1)
 
--   Creación de un paquete de personalización de marca de contenido del Visor de ayuda
+- Creación de un paquete de personalización de marca de contenido del Visor de ayuda
 
--   Implementación de un conjunto de artículos
+- Implementación de un conjunto de artículos
 
--   Agregar ayuda a Visual Studio shell (integrado o aislado)
+- Agregar ayuda a Visual Studio shell (integrado o aislado)
 
--   Recursos adicionales
+- Recursos adicionales
 
 ### <a name="creating-a-topic-f1-support"></a>Creación de un tema (soporte de F1)
  En esta sección se proporciona información general de los componentes de un tema presentado, los requisitos del tema, una breve descripción de cómo crear un tema (incluidos los requisitos de soporte técnico de F1) y, finalmente, un tema de ejemplo con el resultado representado.
@@ -63,7 +63,7 @@ En este artículo contiene las siguientes tareas para los integradores del Visor
 
 - javascript
 
-- CSharp o C#
+- CSharp o c#
 
 - cplusplus o Visual c++ o c ++
 
@@ -132,17 +132,17 @@ En este artículo contiene las siguientes tareas para los integradores del Visor
 
  El cuerpo (sin incluir el encabezado y pie de página) del tema contendrá vínculos de página, una sección de la nota, un área contraíble, un fragmento de código y una sección de texto específico del idioma.  Consulte la sección personalización de marca para obtener información acerca de esas áreas del tema presentado.
 
-1.  Agregar una etiqueta de título de tema:  `<div class="title">Contoso Topic 4</div>`
+1. Agregar una etiqueta de título de tema:  `<div class="title">Contoso Topic 4</div>`
 
-2.  Agregue una nota de sección: `<div class="alert"> add your table tag and text </div>`
+2. Agregue una nota de sección: `<div class="alert"> add your table tag and text </div>`
 
-3.  Agregar un área contraíble:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Agregar un área contraíble:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  Agregue un fragmento de código:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Agregue un fragmento de código:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Agregue texto específico del lenguaje de código:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Tenga en cuenta que devLangnu = permite introducir otros lenguajes. Por ejemplo, devLangnu = "Fortran" mostrará Fortran cuando el fragmento de código DisplayLanguage = Fortran
+5. Agregue texto específico del lenguaje de código:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Tenga en cuenta que devLangnu = permite introducir otros lenguajes. Por ejemplo, devLangnu = "Fortran" mostrará Fortran cuando el fragmento de código DisplayLanguage = Fortran
 
-6.  Agregar vínculos de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Agregar vínculos de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 >  Nota: para que no es compatible con nuevos "Idioma" (ejemplo, F#, Cobol, Fortran) el código en colores en el fragmento de código será monocromo.
@@ -296,13 +296,13 @@ some F# code
 
 1. Establecer el **VendorContent** valor bajo la clave de ayuda 2.1:
 
-   -   Para sistemas operativos de 32 bits:
+   - Para sistemas operativos de 32 bits:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
         "VendorContent"=dword:00000001
 
-   -   Para los sistemas operativos de 64 bits:
+   - Para los sistemas operativos de 64 bits:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 

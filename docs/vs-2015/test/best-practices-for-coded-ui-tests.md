@@ -10,12 +10,12 @@ ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 192d97d8d2096b37d2dd52d2ed942ccb595456d0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081260"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedimientos recomendados para las pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ En este tema se describen los procedimientos recomendados para desarrollar prueb
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="best-practices"></a>Procedimientos recomendados  
  Utilice las siguientes directrices para crear una prueba de IU codificada flexible.  
@@ -64,11 +64,11 @@ En este tema se describen los procedimientos recomendados para desarrollar prueb
   
 - Si un control tiene una aserción que ya no es válida:  
   
-  -   Elimine el método que contiene la aserción.  
+  - Elimine el método que contiene la aserción.  
   
-  -   Quite la llamada a este método desde el método de prueba.  
+  - Quite la llamada a este método desde el método de prueba.  
   
-  -   Agregue una aserción nueva arrastrando el botón de cruz hasta el control de la IU, abra la asignación de IU y agregue la nueva aserción.  
+  - Agregue una aserción nueva arrastrando el botón de cruz hasta el control de la IU, abra la asignación de IU y agregue la nueva aserción.  
   
   Para más información sobre cómo registrar pruebas automatizadas de IU, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).  
   

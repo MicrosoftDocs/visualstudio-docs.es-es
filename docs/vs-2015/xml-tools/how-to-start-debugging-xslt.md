@@ -1,5 +1,5 @@
 ---
-title: Filtrar Iniciar la depuración XSLT | Documentos de Microsoft
+title: Procedimiento Iniciar la depuración XSLT | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,14 +9,14 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104101"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Filtrar Comenzar a depurar XSLT
+# <a name="how-to-start-debugging-xslt"></a>Procedimiento Comenzar a depurar XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El depurador de XSLT se puede utilizar para depurar una hoja de estilos XSLT o una aplicación XSLT. Durante la depuración, puede ejecutar código de línea en línea yendo al código, recorriéndolo o saliendo de él. Los comandos para utilizar la funcionalidad de paso de código en el depurador de XSLT son los mismos que en los demás depuradores de Visual Studio. Una vez se haya iniciado la depuración, el depurador XSLT abre unas ventanas para mostrar el documento de entrada y la salida XSLT.  
@@ -26,15 +26,15 @@ El depurador de XSLT se puede utilizar para depurar una hoja de estilos XSLT o u
   
 #### <a name="to-start-debugging-from-a-style-sheet"></a>Para iniciar la depuración desde una hoja de estilos  
   
-1.  Abra la hoja de estilos en el Editor XML.  
+1. Abra la hoja de estilos en el Editor XML.  
   
-2.  Seleccione **Depurar XSL** desde el **XML** menú.  
+2. Seleccione **Depurar XSL** desde el **XML** menú.  
   
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>Para iniciar la depuración desde un documento de entrada XML  
   
-1.  Abra el documento XML en el Editor XML.  
+1. Abra el documento XML en el Editor XML.  
   
-2.  Seleccione **Depurar XSL** desde el **XML** menú.  
+2. Seleccione **Depurar XSL** desde el **XML** menú.  
   
 ## <a name="xslt-from-other-languages"></a>XSLT desde otros lenguajes  
  También puede ir al código XSLT mientras depura una aplicación. Cuando presiona F11 en una llamada <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName>, el depurador puede ir al código XSLT.  
@@ -44,11 +44,11 @@ El depurador de XSLT se puede utilizar para depurar una hoja de estilos XSLT o u
   
 #### <a name="to-start-debugging-an-xslt-application"></a>Para iniciar la depuración de una aplicación XSLT  
   
-1.  Al crear una instancia del objeto <xref:System.Xml.Xsl.XslCompiledTransform>, establezca el parámetro `enableDebug` a `true` en el código.  
+1. Al crear una instancia del objeto <xref:System.Xml.Xsl.XslCompiledTransform>, establezca el parámetro `enableDebug` a `true` en el código.  
   
      Esto indica al procesador XSLT que cree información de depuración al compilar el código.  
   
-2.  Presione F11 para ir al código XSLT.  
+2. Presione F11 para ir al código XSLT.  
   
      La hoja de estilos XSLT se carga en una nueva ventana de documento y se inicia el depurador de XSLT.  
   

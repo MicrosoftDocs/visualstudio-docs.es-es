@@ -1,5 +1,5 @@
 ---
-title: Estado de los gráficos | Microsoft Docs
+title: Estado de los gráficos | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d451f7e59774dae37d781f60812003f16120b98a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: f7f4dbeb378f0ac921f42f2ad71d3b5cae8d10ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088384"
 ---
 # <a name="graphics-state"></a>Estado de gráficos
 La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece información sobre el estado activo de los gráficos en el momento del evento actual (por ejemplo, durante una llamada a draw).
@@ -34,13 +34,13 @@ La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece inform
 
 ##### <a name="to-change-the-state-view"></a>Para cambiar la vista de estado:
 
--   En la ventana de estado, vaya a la esquina superior izquierda, justo debajo de la barra de título, y elija el botón correspondiente al estilo de vista de estado que desea usar.
+- En la ventana de estado, vaya a la esquina superior izquierda, justo debajo de la barra de título, y elija el botón correspondiente al estilo de vista de estado que desea usar.
 
-    -   **Mostrar la vista del estado de entrada de la API**
+    - **Mostrar la vista del estado de entrada de la API**
 
-    -   **Vista Mostrar estado lógico**
+    - **Vista Mostrar estado lógico**
 
-    -   **Vista Mostrar estado anclado**
+    - **Vista Mostrar estado anclado**
 
 > [!IMPORTANT]
 >  Debe anclar el estado en las vistas **Mostrar estado de entrada de la API** o **Mostrar estado lógico** para que se muestre en la **Vista Mostrar estado anclado**.
@@ -50,7 +50,7 @@ La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece inform
 
 |Columna|Descripción|
 |------------|-----------------|
-|nombre|El nombre del elemento de estado. Si este elemento representa una agrupación de estado, puede expandirse para mostrarla.<br /><br /> En los estados de la **vista de estado de entrada de la API** y la **vista de estado lógico**, se aplica sangría a los nombres para mostrar la relación jerárquica entre los estados.<br /><br /> En el estado de la **vista de estado anclado**, se muestran los nombres completos en una lista plana.|
+|Name|El nombre del elemento de estado. Si este elemento representa una agrupación de estado, puede expandirse para mostrarla.<br /><br /> En los estados de la **vista de estado de entrada de la API** y la **vista de estado lógico**, se aplica sangría a los nombres para mostrar la relación jerárquica entre los estados.<br /><br /> En el estado de la **vista de estado anclado**, se muestran los nombres completos en una lista plana.|
 |Valor|El valor del elemento de estado.|
 |Tipo|El tipo del elemento de estado.|
 
@@ -64,8 +64,8 @@ La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece inform
 
 ##### <a name="to-pin-state-in-place"></a>Para anclar el estado en su lugar:
 
-1.  En la ventana de estado, busque el estado que le interesa. Posiblemente deberá expandir el estado de alto nivel para localizar los detalles que le interesan.
+1. En la ventana de estado, busque el estado que le interesa. Posiblemente deberá expandir el estado de alto nivel para localizar los detalles que le interesan.
 
-2.  Sitúe el cursor sobre el estado que le interesa. Aparecerá un icono de pin a la izquierda del elemento de estado.
+2. Sitúe el cursor sobre el estado que le interesa. Aparecerá un icono de pin a la izquierda del elemento de estado.
 
-3.  Para anclar el elemento de estado en su lugar, elija el icono de pin.
+3. Para anclar el elemento de estado en su lugar, elija el icono de pin.

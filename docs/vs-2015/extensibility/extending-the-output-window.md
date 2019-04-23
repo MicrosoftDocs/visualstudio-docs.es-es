@@ -10,12 +10,12 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0e4fe3b07a2a076218fd004328ad87e4d5e3bab7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105414"
 ---
 # <a name="extending-the-output-window"></a>Ampliación de la ventana de salida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,22 +27,22 @@ El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. V
 ## <a name="creating-an-extension-that-uses-the-output-pane"></a>Crear una extensión que utiliza el panel de resultados  
  Puede realizar una extensión que ejerce distintos aspectos del panel de salida.  
   
-1.  Cree un proyecto VSIX denominado `TestOutput` con un comando de menú denominado **TestOutput**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Cree un proyecto VSIX denominado `TestOutput` con un comando de menú denominado **TestOutput**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Agregue las siguientes referencias:  
+2. Agregue las siguientes referencias:  
   
-    1.  EnvDTE  
+    1. EnvDTE  
   
-    2.  EnvDTE80  
+    2. EnvDTE80  
   
-3.  En TestOutput.cs, agregue la siguiente instrucción using:  
+3. En TestOutput.cs, agregue la siguiente instrucción using:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  En TestOutput.cs, elimine el método ShowMessageBox. Agregue el código auxiliar del método siguiente:  
+4. En TestOutput.cs, elimine el método ShowMessageBox. Agregue el código auxiliar del método siguiente:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -50,7 +50,7 @@ El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. V
     }  
     ```  
   
-5.  En el constructor TestOutput, cambie el controlador de comandos a OutputCommandHandler. Aquí está lo que agrega los comandos:  
+5. En el constructor TestOutput, cambie el controlador de comandos a OutputCommandHandler. Aquí está lo que agrega los comandos:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -63,7 +63,7 @@ El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. V
     }  
     ```  
   
-6.  Las secciones siguientes tienen métodos diferentes que muestran distintas formas de trabajar con el panel de salida. Puede llamar a estos métodos al cuerpo del método OutputCommandHandler(). Por ejemplo, el código siguiente agrega el método de CreatePane() indicado en la sección siguiente.  
+6. Las secciones siguientes tienen métodos diferentes que muestran distintas formas de trabajar con el panel de salida. Puede llamar a estos métodos al cuerpo del método OutputCommandHandler(). Por ejemplo, el código siguiente agrega el método de CreatePane() indicado en la sección siguiente.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  

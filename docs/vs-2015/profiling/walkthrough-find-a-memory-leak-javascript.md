@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Buscar pérdidas de memoria (JavaScript) | Microsoft Docs'
+title: 'Tutorial: Buscar pérdidas de memoria (JavaScript) | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100461"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar pérdidas de memoria (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Ejecutar la aplicación de prueba del analizador de memoria de JavaScript  
   
-1.  En Visual Studio, elige **Archivo**, **Nuevo**, **Proyecto**.  
+1. En Visual Studio, elige **Archivo**, **Nuevo**, **Proyecto**.  
   
-2.  Elija **JavaScript** en el panel izquierdo. A continuación, elija **Windows**, **Windows 8**y luego **Universal** o **Aplicaciones Windows Phone**.  
+2. Elija **JavaScript** en el panel izquierdo. A continuación, elija **Windows**, **Windows 8**y luego **Universal** o **Aplicaciones Windows Phone**.  
   
     > [!IMPORTANT]
     >  Los resultados del uso de memoria que se muestran en este tema se prueban con una aplicación de Windows 8.  
   
-3.  Elija la plantilla de proyecto **Aplicación vacía** en el panel central.  
+3. Elija la plantilla de proyecto **Aplicación vacía** en el panel central.  
   
-4.  En el cuadro **Nombre** , especifique un nombre como `JS_Mem_Tester`y elija **Aceptar**.  
+4. En el cuadro **Nombre** , especifique un nombre como `JS_Mem_Tester`y elija **Aceptar**.  
   
-5.  En el **Explorador de soluciones**, abre default.html y pega el siguiente código entre las etiquetas \<body>:  
+5. En el **Explorador de soluciones**, abre default.html y pega el siguiente código entre las etiquetas \<body>:  
   
     ```html  
     <div class="wrapper">  
@@ -57,7 +57,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     > [!IMPORTANT]
     >  Si usa una plantilla de la aplicación universal de Windows 8.1, deberá actualizar el código HTML y CSS en los proyectos .Windows y .WindowsPhone.  
   
-6.  Abre default.css y agrega el código CSS siguiente:  
+6. Abre default.css y agrega el código CSS siguiente:  
   
     ```css  
     .memleak {  
@@ -65,7 +65,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     }  
     ```  
   
-7.  Abre default.js y reemplaza todo el código con este código:  
+7. Abre default.js y reemplaza todo el código con este código:  
   
     ```javascript  
     (function () {  
@@ -126,7 +126,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     })();  
     ```  
   
-8.  Elija la tecla F5 para iniciar la depuración. Comprueba que el botón **Leak Memory** aparece en la página.  
+8. Elija la tecla F5 para iniciar la depuración. Comprueba que el botón **Leak Memory** aparece en la página.  
   
 9. Vuelve a Visual Studio (Alt+Tab) y presiona Mayús+F5 para detener la depuración.  
   
@@ -224,7 +224,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     > [!TIP]
     >  A veces, la ubicación de un objeto con respecto al objeto `Global` puede ayudar a identificar ese objeto. Para ello, abre el menú contextual del identificador y elige **Mostrar en vista de raíces**.  
   
-##  <a name="FixingMemory"></a> Corregir el problema de memoria  
+## <a name="FixingMemory"></a> Corregir el problema de memoria  
   
 1. Con los datos que revela el generador de perfiles, se examina el código responsable de quitar los elementos DOM cuyo id. sea "item". Esto se produce en la función `initialize()`.  
   

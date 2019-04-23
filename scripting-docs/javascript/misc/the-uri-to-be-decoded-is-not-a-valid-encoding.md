@@ -14,12 +14,12 @@ ms.assetid: 029e0790-ffd1-496d-8700-3b3dbac1b6fd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 792403a9a53f11431e87115d7a95345e316dc2ac
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fd8add72d016bc3f2e815f41c29c735505c8817
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108430"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>El URI que se desea descodificar no tiene una codificación válida
 Se intentó descodificar un identificador URI formado incorrectamente (identificador uniforme de recursos). Los identificadores URI tienen una sintaxis especial; mayoría de los caracteres no alfanuméricos debe codificarse antes de que se pueden usar en un URI. Puede usar el `encodeURI` y `encodeURIComponent` métodos para crear un URI de una normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] cadena.  
@@ -34,7 +34,7 @@ Se intentó descodificar un identificador URI formado incorrectamente (identific
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese de que intenta descodificar a identificadores URI válidos solo. No se puede descodificar normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] cadenas, ya que pueden contener caracteres no válidos.  
+- Asegúrese de que intenta descodificar a identificadores URI válidos solo. No se puede descodificar normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] cadenas, ya que pueden contener caracteres no válidos.  
   
 ## <a name="see-also"></a>Vea también  
  [decodeURI (función)](../../javascript/reference/decodeuri-function-javascript.md)   

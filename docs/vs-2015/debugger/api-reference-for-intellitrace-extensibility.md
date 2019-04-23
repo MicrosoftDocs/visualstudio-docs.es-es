@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fd1387e02b96c9a5a4781e014641a49bbb5280ba
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1e8cc2613a1fda470bd46951d0a4ffaf2d0eeedd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002437"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111511"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Referencia de la API para la extensibilidad de IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Con la información proporcionada en esta sección, podrá usar la API de extens
 ## <a name="in-this-section"></a>En esta sección  
  Esta API de extensibilidad de IntelliTrace está contenida en un espacio de nombres  
   
--   <xref:Microsoft.VisualStudio.IntelliTrace>  
+- <xref:Microsoft.VisualStudio.IntelliTrace>  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [IntelliTrace](../debugger/intellitrace.md)  

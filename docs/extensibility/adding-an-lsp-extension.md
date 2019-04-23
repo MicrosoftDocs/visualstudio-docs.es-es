@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0c170beb6bfd8a74d61e6de2398a7478567c893
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 44b8e31fea497bff928ce19e5cb165c7809883cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655639"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104569"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Agregar una extensión del protocolo de servidor de lenguaje
 
@@ -296,6 +296,7 @@ Siga estos pasos para agregar compatibilidad para la configuración a la extensi
         "foo.maxNumberOfProblems": -1
     }
     ```
+
 2. Haga doble clic en el archivo JSON y seleccione **propiedades**. Cambio la **compilar** acción para "Content" y "incluir en VSIX' propiedad en true.
 
 3. Implementar ConfigurationSections y devolver la lista de los prefijos de la configuración definida en el archivo JSON (en Visual Studio Code, se podría asignar al nombre de sección de configuración en package.json):
@@ -318,6 +319,7 @@ Siga estos pasos para agregar compatibilidad para la configuración a la extensi
     ```
 
     Ejemplo:
+
     ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"

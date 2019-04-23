@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d4f53d723ca9249386027264038df6c5895b7d03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081234"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, pue
   
 #### <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio  
   
-1.  Inicie sesión en Visual Studio 2015 con una cuenta Microsoft o una cuenta profesional. Debería ver su nombre de usuario reflejado en la esquina superior derecha de la ventana, tal como se muestra:  
+1. Inicie sesión en Visual Studio 2015 con una cuenta Microsoft o una cuenta profesional. Debería ver su nombre de usuario reflejado en la esquina superior derecha de la ventana, tal como se muestra:  
   
      ![Usuario registrado actualmente](../ide/media/vs2015-username.png "VS2015_UserName")  
   
@@ -44,14 +44,14 @@ Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, pue
   
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Obtener acceso a su cuenta de Azure a través del cuadro de diálogo Agregar servicio conectado  
   
-1.  Cree un proyecto de aplicación universal en C#.  
+1. Cree un proyecto de aplicación universal en C#.  
   
-2.  Haga clic con el botón derecho en el nodo de proyecto en el Explorador de soluciones y seleccione **Agregar > Servicio conectado**. El asistente Agregar servicio conectado aparece y muestra la lista de los servicios de la cuenta de Azure que está asociada con su id. de inicio de sesión de Visual Studio. No tiene que iniciar sesión por separado en Azure. Sin embargo, deberá iniciar sesión en las otras cuentas la primera vez que intente acceder a sus recursos desde un equipo determinado.  
+2. Haga clic con el botón derecho en el nodo de proyecto en el Explorador de soluciones y seleccione **Agregar > Servicio conectado**. El asistente Agregar servicio conectado aparece y muestra la lista de los servicios de la cuenta de Azure que está asociada con su id. de inicio de sesión de Visual Studio. No tiene que iniciar sesión por separado en Azure. Sin embargo, deberá iniciar sesión en las otras cuentas la primera vez que intente acceder a sus recursos desde un equipo determinado.  
   
     > [!WARNING]
-    >  Si es la primera vez que va a crear una aplicación para la Tienda en Visual Studio 2015 en un equipo específico, se le pedirá que habilite el dispositivo para el modo de desarrollo yendo a Configuración | . **Actualizaciones y seguridad &#124; para desarrolladores** en el equipo. Para obtener más información, vea [Habilitar el dispositivo para el desarrollo](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
+    >  Si se trata de la primera vez que va a crear una aplicación de Store en Visual Studio 2015 en un equipo específico, se le pedirá que habilite el dispositivo para el modo de desarrollo yendo a **configuración &#124; . Actualizaciones y seguridad &#124; para desarrolladores** en el equipo. Para obtener más información, vea [Habilitar el dispositivo para el desarrollo](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
   
-###  <a name="access_azure"></a> Obtener acceso a Azure Active Directory en un proyecto web  
+### <a name="access_azure"></a> Obtener acceso a Azure Active Directory en un proyecto web  
  Azure AD ofrece compatibilidad para el inicio de sesión único de usuario final en las aplicaciones web ASP.NET MVC o autenticación AD en los servicios web de API. La autenticación de dominio es diferente de la autenticación de cuentas de usuario individuales; los usuarios que tienen acceso a su dominio de Active Directory pueden usar sus cuentas de Azure AD existentes para conectarse a sus aplicaciones web. Las aplicaciones de Office 365 también pueden utilizar la autenticación de dominio. Para ver esto en funcionamiento, cree una aplicación web (**Archivo > Nuevo proyecto > C# > Nube > Aplicación web ASP.NET**). En el cuadro de diálogo Nuevo proyecto ASP.NET, elija **Cambiar autenticación**. El Asistente para autenticación aparece y le permite elegir qué tipo de autenticación se utilizará en la aplicación.  
   
  ![Cuadro de diálogo Cambiar autenticación para ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  
