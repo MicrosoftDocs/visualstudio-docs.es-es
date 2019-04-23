@@ -1,5 +1,5 @@
 ---
-title: Filtrar Migrar un lenguaje específico de dominio a una nueva versión
+title: Procedimiento Migrar un lenguaje específico de dominio a una nueva versión
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dae9c7728de35c92c973c9fca097595b56aabaf5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 46fa0dbcc5ab80ce567d4e0afd64d8990006204b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869249"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663250"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Filtrar Migrar un lenguaje específico de dominio a una nueva versión
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedimiento Migrar un lenguaje específico de dominio a una nueva versión
 Puede migrar los proyectos que definen y usar los lenguajes específicos de dominio a [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] desde la versión de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que se distribuyó con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
 
  Se proporciona una herramienta de migración como parte de [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. La herramienta convierte los proyectos de Visual Studio y las soluciones que usan o definen herramientas de DSL.
@@ -81,7 +81,6 @@ Puede migrar los proyectos que definen y usar los lenguajes específicos de domi
    -   Intentar compilar los proyectos e investigue los errores.
 
    -   Pruebe su diseñador.
-
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

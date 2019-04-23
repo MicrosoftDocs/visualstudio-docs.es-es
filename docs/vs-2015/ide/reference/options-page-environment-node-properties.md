@@ -12,17 +12,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae1dc5c7eb8b1f10771afacfe1398e17b2bf8ed8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a5c6a2314fe1673efba27d829c1141dcfd5be1cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753521"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666824"
 ---
 # <a name="options-page-environment-node-properties"></a>Página de opciones, Propiedades de nodo Entorno
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 En este documento se describen las páginas (o colecciones de propiedades) asociadas a la categoría **Entorno**, `DTE.Properties("Environment", <Property Page>)`, del cuadro de diálogo **Opciones**. El título de cada subsección es la llamada que se usa para acceder a la colección Propiedades y, en la tabla de cada subsección, se muestran las propiedades que se encuentran en la colección.  
   
 ## <a name="general"></a>General  

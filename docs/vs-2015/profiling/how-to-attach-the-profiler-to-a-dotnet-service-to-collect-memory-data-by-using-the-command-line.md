@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Adjuntar el Profiler a un servicio .NET para recopilar datos de memoria mediante la línea de comandos | Microsoft Docs
+title: Procedimiento Adjuntar el Profiler a un servicio .NET para recopilar datos de memoria mediante la línea de comandos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2568b04e999a1b887e918a07ff8233ea9bf289a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b6d205a3a8abddadc714aea4aa913ff064518920
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802383"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663484"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a un servicio .NET para recopilar datos de memoria utilizando la línea de comandos
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Adjuntar al Profiler a un servicio .NET para recopilar datos de memoria mediante la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describe cómo usar las herramientas de la línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para adjuntar el generador de perfiles a un servicio de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y recopilar datos de memoria. Puede recopilar datos sobre el número y tamaño de asignaciones de memoria, así como recopilar datos sobre la duración de objetos de memoria.  
@@ -84,7 +84,6 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms.                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo (.etl) independiente.                                                                                     |
 
-
 8. Adjunte el generador de perfiles al servicio. Tipo:  
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
@@ -115,7 +114,7 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
 
     -   Detenga el servicio.  
 
-         o bien  
+         -o bien-  
 
     -   Escriba **VSPerfCmd /detach**  
 

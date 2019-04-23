@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: f97c86bd274d8fe6a75e8731165c5189e27cf08f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416427"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664493"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Cómo: Definir lenguajes específicos de dominio
 Para definir un lenguaje específico de dominio (DSL), crea una solución de Visual Studio desde una plantilla. La parte clave de la solución es el diagrama DSL Definition (Definición de DSL), que se almacena en DslDefinition.dsl. DSL Definition (Definición de DSL) define las clases y las formas del DSL. Después de modificar y agregar estos elementos, puede agregar código de programa para personalizar el DSL con más detalle.
@@ -608,7 +608,6 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
 
 ## <a name="trouble"></a> Solución de problemas
  En la tabla siguiente se enumeran algunos de los problemas más comunes que se encuentran al diseñar un DSL, además de sugerencias para solucionarlos. Encontrará más consejos está disponible en el [foro de extensibilidad de herramientas de visualización](http://go.microsoft.com/fwlink/?LinkId=186074).
-
 
 | Problema | Sugerencia |
 |-|-|

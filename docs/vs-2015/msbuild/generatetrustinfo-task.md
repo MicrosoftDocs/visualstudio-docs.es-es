@@ -17,17 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f1cf52286de97980eb269c3b52055be4455c38d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ccbe11cefa730264e523390a0844086d6fb03ec1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790157"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667617"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Genera la información de confianza de la aplicación a partir del manifiesto base y de los parámetros `TargetZone` y `ExcludedPermissions`.  
   
 ## <a name="parameters"></a>Parámetros  

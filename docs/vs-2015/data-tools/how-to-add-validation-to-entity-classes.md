@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar validación a clases de entidad | Documentos de Microsoft
+title: Procedimiento Agregar validación a clases de entidad | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995226"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668358"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>Filtrar Agregar validación a clases de entidad
+# <a name="how-to-add-validation-to-entity-classes"></a>Procedimiento Agregar validación a clases de entidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 *Validar* las clases de entidad es el proceso de confirmar que los valores especificados en los objetos de datos cumplen las restricciones en el esquema de un objeto, además de las reglas establecidas para la aplicación. Se recomienda validar los datos antes de enviar las actualizaciones a la base de datos subyacente para reducir los errores. De este modo, también se reduce el número de viajes de ida y vuelta entre una aplicación y la base de datos.  
   
  El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) proporciona métodos parciales que permiten a los usuarios extender el código generado por el diseñador que se ejecuta durante las inserciones, actualizaciones y eliminaciones de entidades completas y también durante y después de la columna individual cambios.  

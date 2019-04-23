@@ -11,16 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47f95231c0c7bb955271203792bdd795772b50c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c22ab65ac849fdf8bc004c10b246584f0e511cf8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612379"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664234"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Especificación de la ubicación del archivo de VSPackage en el Shell de VS
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe ser capaz de encontrar la DLL para cargar el VSPackage del ensamblado. Puede encontrarlo de varias maneras, como se describe en la tabla siguiente.
-
 
 | Método | Descripción |
 | - | - |

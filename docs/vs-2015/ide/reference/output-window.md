@@ -17,17 +17,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26b826b19a14731ba4fbbb11eccee5fc4337c4ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784824"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668917"
 ---
 # <a name="output-window"></a>Resultados (Ventana)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La Ventana de **salida** puede mostrar mensajes de estado de diversas características del entorno de desarrollo integrado (IDE). Para abrir la ventana de **Salida**, en la barra de menús, elija **View/Output** (Vista/Salida) (o haga clic en CTRL + ALT + O).  
   
 > [!WARNING]
@@ -69,7 +68,7 @@ La Ventana de **salida** puede mostrar mensajes de estado de diversas caracterí
   
 ## <a name="see-also"></a>Vea también  
  [Mensajes de diagnóstico en la ventana de resultados](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Cómo: Controlar la ventana Resultados](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [Cómo: Control de la ventana de salida](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Compilar y generar](../../ide/compiling-and-building-in-visual-studio.md)   
  [Descripción de las configuraciones de compilación](../../ide/understanding-build-configurations.md)   
  [Información general de la biblioteca de clases](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

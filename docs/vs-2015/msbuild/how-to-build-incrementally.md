@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Compilar de forma incremental | Microsoft Docs'
+title: Procedimiento Compilar de forma incremental | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803915"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662262"
 ---
-# <a name="how-to-build-incrementally"></a>Cómo: Compilar versiones incrementalmente
+# <a name="how-to-build-incrementally"></a>Procedimiento Compilar de forma incremental
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cuando se compila un proyecto grande, es importante que los componentes que se compilaron previamente y que aún están actualizados no se recompilen. Si todos los destinos se compilan cada vez, llevará más tiempo finalizar la compilación. Para habilitar las compilaciones incrementales (aquellas en las que solo se compilan los destinos no compilados con anterioridad o no actualizados), [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En cambio, debe haber una asignación unívoca entre las entradas y resultados. Se pueden usar las transformaciones para permitir que los destinos identifiquen esta asignación directa. Para obtener más información sobre transformaciones, vea [Transformaciones](../msbuild/msbuild-transforms.md).  
   
 ## <a name="specifying-inputs-and-outputs"></a>Especificar entradas y resultados  
@@ -64,7 +63,7 @@ Cuando se compila un proyecto grande, es importante que los componentes que se c
   
 - `GenerateContentFiles`: Convierte archivos .txt en archivos .content.  
   
-- `BuildHelp`: Combina archivos .content y archivos XML de metadatos para compilar el archivo .help final.  
+- `BuildHelp`: Combina archivos .content y archivos XML de metadatos para generar el archivo .help final.  
   
   El proyecto usa transformaciones para crear una asignación unívoca entre las entradas y los resultados en la tarea `GenerateContentFiles`. Para obtener más información, consulte [Transformaciones](../msbuild/msbuild-transforms.md). Además, el elemento `Output` se establece para que use automáticamente los resultados de la tarea `GenerateContentFiles` como entradas para la tarea `BuildHelp`.  
   

@@ -21,17 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c21c14b8c84246545d9ffb3e3dc59210b56fe84e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 05290bed3fe51c69e29d8bafef927c91c63b5249
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777157"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667266"
 ---
 # <a name="bscmake-task"></a>BscMake (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 IMPORTANTE]
 >  El IDE de Visual Studio ya no utiliza bscmake. Desde Visual Studio Desde Visual Studio 2008, la información de examen y de símbolos se almacena automáticamente en un archivo .sdf en la carpeta de soluciones.  
   

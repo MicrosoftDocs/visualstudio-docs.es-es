@@ -17,17 +17,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e35384af02ad2fb5f3c15d1851cdc716bc29445b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 68e80da01a0ab1ad59bbb5bdb06c92c1a11a8ac1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787177"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666239"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Inicia un contexto de seguimiento con un archivo de respuesta que especifica un marcador raíz.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -47,10 +46,10 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
  El nombre de ruta de acceso de un archivo de respuesta que contiene un marcador raíz. El nombre de raíz se usa para agrupar todo el seguimiento de un contexto conjuntamente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Un elemento [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con el conjunto de bits [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) si se ha creado el contexto de seguimiento.  
+ Una ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con el ([correcto]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) conjunto de bits si se creó el contexto de seguimiento.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** FileTracker.h  
+ **Encabezado**: FileTracker.h  
   
 ## <a name="see-also"></a>Vea también  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526095"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665680"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Crear un mapa visual de la pila de llamadas durante la depuración (C#, Visual Basic, C++, JavaScript)
 
@@ -45,7 +45,7 @@ Para ver un tutorial, vea este vídeo: [Vídeo: Depurar visualmente con la integ
 Para obtener detalles de los comandos y acciones que puede utilizar con mapas de código, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->Puede crear únicamente en los mapas de código [edition de Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/).
+>Puede crear únicamente en los mapas de código [edition de Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
 
 Este es un vistazo rápido a un mapa de código:
 
@@ -53,7 +53,7 @@ Este es un vistazo rápido a un mapa de código:
 
 ##  <a name="MapStack"></a> Asignar la pila de llamadas
 
-1. En un Visual Studio Enterprise C#, Visual Basic, C++ o JavaScript del proyecto, iniciar la depuración seleccionando **depurar** > **Iniciar depuración** o presionando **F5**.
+1. En un Visual Studio Enterprise C#, Visual Basic, C++, o JavaScript del proyecto, iniciar la depuración seleccionando **depurar** > **Iniciar depuración** o presionando **F5** .
 
 1. Después de la aplicación entra en modo de interrupción o entra en una función, seleccione **depurar** > **mapa de código**, o bien presione **Ctrl**+**MAYÚS** +**`**.
 

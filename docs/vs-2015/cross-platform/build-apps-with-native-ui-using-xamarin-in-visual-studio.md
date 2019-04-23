@@ -8,16 +8,15 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9ad50aea8da784d05f3852860186bb029e67a54
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 2352f32b36ab7b2973897599be1fd29859fafc17
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954113"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665693"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup-and-install.md) y [Comprobar el entorno de Xamarin](../cross-platform/verify-your-xamarin-environment.md), este tutorial le muestra cómo compilar una aplicación de Xamarin básica (mostrada a continuación) con capas de interfaz de usuario nativa. Con la interfaz de usuario nativa, el código compartido reside en una biblioteca de clases portable (PCL) y los proyectos de plataforma individuales contienen las definiciones de interfaz de usuario.
 
@@ -248,7 +247,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 7.  En la ventana **Propiedades**, establezca estas propiedades (puede ordenar la lista alfabéticamente con el botón de ordenación de la barra de herramientas de la ventana Propiedades):
 
-    |Propiedad.|Valor|
+    |Propiedad|Valor|
     |--------------|-----------|
     |**text**|**Buscar por código postal**|
     |**identificador**|`@+id/ZipCodeSearchLabel`|
@@ -302,7 +301,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 10. Desde el **Cuadro de herramientas**, arrastre un control **Number** hasta **RelativeLayout** y colóquelo debajo de la etiqueta **Código postal**. Después, establezca las siguientes propiedades:
 
-    |Propiedad.|Valor|
+    |Propiedad|Valor|
     |--------------|-----------|
     |**identificador**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -325,7 +324,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 11. Desde el **Cuadro de herramientas**, arrastre un **Botón** hasta el control **RelativeLayout** y colóquelo a la derecha del control zipCodeEntry. Después, establezca estas propiedades:
 
-    |Propiedad.|Valor|
+    |Propiedad|Valor|
     |--------------|-----------|
     |**identificador**|`@+id/weatherBtn`|
     |**texto**|**Obtener el tiempo**|
@@ -519,7 +518,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 2.  Seleccione un destino de emulador o un dispositivo adecuado y después presione la tecla F5 para iniciar la aplicación.
 
-3.  En el dispositivo o el emulador, escriba un código postal válido de los Estados Unidos en el cuadro de edición (por ejemplo, 60601) y presione **Obtener el tiempo**. Los datos meteorológicos de esa región aparecerán en los controles.
+3.  En el dispositivo o en el emulador, escriba un código postal de Estados Unidos válido en el cuadro de edición (por ejemplo: 60601) y presione **obtener tiempo**. Los datos meteorológicos de esa región aparecerán en los controles.
 
      ![Aplicación meteorológica para Android y Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +624,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 2.  Inicie la aplicación al presionar la tecla F5.
 
-3.  En el emulador de Windows Phone, escriba un código postal válido de los Estados Unidos en el cuadro de edición (por ejemplo, 60601) y presione **Obtener el tiempo**. Los datos meteorológicos de esa región aparecerán en los controles.
+3.  En el emulador de Windows Phone, escriba un código postal de Estados Unidos válido en el cuadro de edición (por ejemplo: 60601) y presione **obtener tiempo**. Los datos meteorológicos de esa región aparecerán en los controles.
 
      ![Versión de Windows de la aplicación en ejecución](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 

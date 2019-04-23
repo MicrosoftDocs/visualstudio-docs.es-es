@@ -1,5 +1,5 @@
 ---
-title: Filtrar Cambiar entre las vistas y el Editor XML | Documentos de Microsoft
+title: Procedimiento Cambiar entre las vistas y el Editor XML | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55481b5f91e0bb83241a04d61d1bfa91657b5c0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0bdc530656ef7e7a57b8e637aeca562eb483e0d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986634"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667630"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Filtrar Cambiar entre las vistas y el Editor XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procedimiento Cambiar entre las vistas y el Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En este tema se muestra cómo pasar de las vistas del Diseñador de esquemas XML (Diseñador XSD) al Editor XML. Este ejemplo se usa el [esquema de pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md).  
   
 ### <a name="to-switch-between-the-views-and-the-xml-editor"></a>Para pasar de las vistas al Editor XML  

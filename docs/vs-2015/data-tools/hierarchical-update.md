@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996272"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663302"
 ---
 # <a name="hierarchical-update"></a>Actualización jerárquica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Actualización jerárquica * se refiere al proceso de guardar los datos actualizados (de un conjunto de datos con dos o más tablas relacionadas) a una base de datos manteniendo las reglas de integridad referencial. *La integridad referencial* hace referencia a las reglas de coherencia proporcionadas por las restricciones en una base de datos que controlan el comportamiento de insertar, actualizar y eliminar registros relacionados. Por ejemplo, es integridad referencial que exige la creación de un registro de cliente antes de permitir crear pedidos para ese cliente.  Para obtener más información acerca de las relaciones en conjuntos de datos, vea [relaciones en conjuntos de datos](../data-tools/relationships-in-datasets.md)  
   
  La característica de actualización jerárquica usa un `TableAdapterManager` para administrar el `TableAdapter`s en un dataset con tipo. El `TableAdapterManager` componente es un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-generado (clase), por lo que no forma parte de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Cuando se arrastra una tabla desde la ventana de orígenes de datos a un formulario de Windows o la página de WPF, Visual Studio agrega una variable de tipo TableAdapterManager al formulario o página y verlo en el diseñador en la Bandeja de componentes. Para obtener información detallada sobre la `TableAdapterManager` de clases, vea la sección de referencia de TableAdapterManager de [información general sobre TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  

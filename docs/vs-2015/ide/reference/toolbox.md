@@ -16,17 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0a7c2320f7943798a336e52ba2043f430cdb9231
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799803"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661352"
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 El **Cuadro de herramientas** muestra iconos para controles y otros elementos que puede agregar a proyectos de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para abrir el **Cuadro de herramientas**, vaya al menú **Ver** y haga clic en **Cuadro de herramientas**. Puede acoplar el **Cuadro de herramientas** y anclarlo abierto o establecerlo en **Ocultar automáticamente**.  
   
  Los iconos del **Cuadro de herramientas** se pueden arrastrar a la vista de diseño o pegar en un editor de código. Cualquier acción agrega el código básico para crear una instancia del elemento **Cuadro de herramientas** en el archivo de proyecto activo.  

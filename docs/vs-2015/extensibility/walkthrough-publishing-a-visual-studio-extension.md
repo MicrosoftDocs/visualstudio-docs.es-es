@@ -11,18 +11,17 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0d32428c7a7b1f481771aacaf3e2b0dadfde5db6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: f8cec34f5eb814dfd236aa5fab46bcc811c8c88f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002428"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669710"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Tutorial: Publicar una extensión de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Nota**: La Galería de Visual Studio se está reemplazando por Visual Studio Marketplace. Consulte la versión más reciente de este tema para obtener más información.
-
 
 En este tutorial se muestra cómo publicar una extensión de Visual Studio en la Galería de Visual Studio. Cuando se agrega la extensión a la galería, los desarrolladores pueden usar **extensiones y actualizaciones** para buscar allí extensiones nuevas y actualizadas.
 

@@ -17,17 +17,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fdaa4937e0053c36e6ba53db9e93ffed9d8a38e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002892"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664792"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Instalación de sistemas de base de datos, herramientas y ejemplos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio no incluye los sistemas de bases de datos distintos a los que se usa internamente. Para desarrollar una aplicación conectada a datos en Visual Studio, normalmente se instala el sistema de base de datos en el equipo de desarrollo local y, a continuación, implementar la aplicación y la base de datos en un entorno de producción cuando estén listas. Para que el sistema de base de datos sean accesibles desde aplicaciones .NET y a ser visibles en las ventanas de herramientas de datos de Visual Studio, debe tener un proveedor de datos ADO.NET. Un proveedor debe admitir específicamente Entity Framework si va a usar Entity data Model en la aplicación. NET.     Muchos proveedores se ofrecen a través del Administrador de paquetes de NuGet o a través de la Galería de Visual Studio.  
   
  Para el desarrollo de SQL, asegúrese de que tiene SQL Server Data Tools instalado en Visual Studio. Haga clic en el **vista** menú. Si no ve el Explorador de objetos de SQL Server, vaya al Panel de Control y cambie a Visual Studio. En el instalador, seleccione **Microsoft SQL Server Data Tools**.  

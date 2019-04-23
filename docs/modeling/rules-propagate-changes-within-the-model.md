@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: c84402fcccd289b7e4c80ffeaa988411e0c77baf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416218"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669958"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Las reglas propagan los cambios dentro del modelo
 Puede crear una regla de almacén para propagar un cambio de un elemento a otro en la visualización y el SDK de modelado (VMSDK). Cuando se produce un cambio a cualquier elemento en el Store, las reglas se programan para ejecutarse, normalmente, cuando se confirma la transacción más externa. Hay diferentes tipos de reglas para los diferentes tipos de eventos, como agregar un elemento, o eliminarlo. Puede asociar reglas a tipos específicos de elementos, formas y diagramas. Muchas características integradas se definen mediante reglas: por ejemplo, reglas garantizan que un diagrama se actualiza cuando cambia el modelo. Puede personalizar su lenguaje específico de dominio mediante la adición de sus propias reglas.
@@ -128,7 +128,6 @@ namespace ExampleNamespace
 
 - Derivar la clase de regla de una de las siguientes clases base:
 
-
   | Clase base | Desencadenador |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Se agrega un elemento, un vínculo o una forma.<br /><br /> Utilícelo para detectar nuevas relaciones, además de los nuevos elementos. |
@@ -141,7 +140,6 @@ namespace ExampleNamespace
   | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Se ejecuta cuando se crea una transacción. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Se ejecuta cuando la transacción está a punto de confirmarse. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Se ejecuta cuando la transacción se revertirá a. |
-
 
 - Cada clase tiene un método que reemplazar. Tipo `override` en su clase para detectarlo. El parámetro de este método identifica el elemento que se va a cambiar.
 

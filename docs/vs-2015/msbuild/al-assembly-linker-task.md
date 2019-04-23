@@ -19,17 +19,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6113bbcb271aa7774bca538858b02edb9f5e3583
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758657"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662236"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker, Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La tarea AL contiene AL.exe, una herramienta que se distribuye con [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. La herramienta Assembly Linker se utiliza para crear un ensamblado con un manifiesto a partir de uno o varios archivos que pueden ser módulos o archivos de recursos. Los compiladores y los entornos de desarrollo pueden proporcionar estas capacidades, por lo que a menudo no hace falta utilizar esta tarea directamente. Assembly Linker resulta de más utilidad para los programadores que necesitan crear un único ensamblado a partir de varios archivos de componentes, como los que se pueden producir en desarrollos de lenguajes combinados. Esta tarea no combina los módulos en un único archivo de ensamblado; los módulos individuales deben distribuirse y estar disponibles para que el ensamblado resultante se cargue correctamente. Para obtener más información sobre AL.exe, vea [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).  
   
 ## <a name="parameters"></a>Parámetros  

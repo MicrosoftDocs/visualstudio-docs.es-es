@@ -1,5 +1,5 @@
 ---
-title: Filtrar Cambiar el tipo de valor devuelto de un método DataContext (Object Relational Designer) | Documentos de Microsoft
+title: Procedimiento Cambiar el tipo de valor devuelto de un método DataContext (Object Relational Designer) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2002b79b156ff3eaf537d71b6131da6832fabdb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: be57c5d8a298f37f9cffc7cc4b363651efbc9c2b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995270"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665654"
 ---
-# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Filtrar Cambio del tipo de valor devuelto de un método DataContext (Object Relational Designer)
+# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Procedimiento Cambio del tipo de valor devuelto de un método DataContext (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> (creado a partir de un procedimiento almacenado o una función) difiere según la ubicación donde se coloque el procedimiento almacenado o la función en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Si se coloca un elemento directamente en una clase de entidad existente, se crea un método de <xref:System.Data.Linq.DataContext> que tiene el tipo de valor devuelto de la clase de entidad (si el esquema de los datos devueltos por el procedimiento almacenado o la función coincide con la forma de la clase de entidad). Si se coloca un elemento en un área vacía del [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], se crea un método de <xref:System.Data.Linq.DataContext> que devuelve un tipo generado automáticamente. Se puede cambiar el tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> después de agregarlo al panel de métodos. Para examinar o cambiar el tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext>, selecciónelo y haga clic en la propiedad **Tipo devuelto** en la ventana **Propiedades**.  
   
 > [!NOTE]

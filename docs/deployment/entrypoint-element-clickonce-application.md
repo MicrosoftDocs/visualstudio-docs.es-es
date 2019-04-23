@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3002fa5c015d80304a9de5aaf3b7f7aa1d2d85f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629045"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665264"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt; elemento (aplicación ClickOnce)
 Identifica el ensamblado que se debe ejecutar cuando esto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se ejecuta en un equipo cliente.
@@ -68,7 +68,6 @@ Identifica el ensamblado que se debe ejecutar cuando esto [!INCLUDE[ndptecclick]
 ## <a name="commandline"></a>commandLine
  Obligatorio. Debe ser un elemento secundario de la `entryPoint` elemento. No tiene elementos secundarios y tiene los siguientes atributos.
 
-
 | Atributo | Descripción |
 |--------------| - |
 | `file` | Obligatorio. Una referencia local al ensamblado de inicio para el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Este valor no puede contener la barra diagonal (/) o barra diagonal inversa (\\) separadores de ruta de acceso. |
@@ -88,12 +87,12 @@ Identifica el ensamblado que se debe ejecutar cuando esto [!INCLUDE[ndptecclick]
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />
 ```
 
- Una aplicación que incluye el elemento customUX debe proporcionar un instalador personalizado que utiliza el <xref:System.Deployment.Application.InPlaceHostingManager> clase para realizar operaciones de instalación. Una aplicación con este elemento no se puede instalar haciendo doble clic en su manifiesto o setup.exe de arranque de requisitos previos. El instalador personalizado puede crear entradas de agregar o quitar programas, accesos directos y entradas de menú de inicio. Si el instalador personalizado no crea una entrada en Agregar o quitar programas, debe almacenar el identificador de suscripción proporcionado por el <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> propiedad y habilitar al usuario que desinstale la aplicación más adelante mediante una llamada a la <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> método. Para obtener más información, consulte [Tutorial: crear un instalador personalizado para una aplicación ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).
+ Una aplicación que incluye el elemento customUX debe proporcionar un instalador personalizado que utiliza el <xref:System.Deployment.Application.InPlaceHostingManager> clase para realizar operaciones de instalación. Una aplicación con este elemento no se puede instalar haciendo doble clic en su manifiesto o setup.exe de arranque de requisitos previos. El instalador personalizado puede crear entradas de agregar o quitar programas, accesos directos y entradas de menú de inicio. Si el instalador personalizado no crea una entrada en Agregar o quitar programas, debe almacenar el identificador de suscripción proporcionado por el <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> propiedad y habilitar al usuario que desinstale la aplicación más adelante mediante una llamada a la <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> método. Para obtener más información, vea [Tutorial: Creación de un instalador personalizado para una aplicación ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).
 
 ## <a name="remarks"></a>Comentarios
  Este elemento identifica el ensamblado y punto de entrada para el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
 
- No puede usar `commandLine` para pasar parámetros a la aplicación en tiempo de ejecución. Puede tener acceso a los parámetros de cadena de consulta para un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de la aplicación <xref:System.AppDomain>. Para obtener más información, consulte [Cómo: recuperar información de cadena de consulta en una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).
+ No puede usar `commandLine` para pasar parámetros a la aplicación en tiempo de ejecución. Puede tener acceso a los parámetros de cadena de consulta para un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de la aplicación <xref:System.AppDomain>. Para obtener más información, vea [Cómo: Recuperación de información de la cadena de consulta de una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).
 
 ## <a name="example"></a>Ejemplo
  En el ejemplo de código siguiente se ilustra un `entryPoint` elemento en un manifiesto de aplicación para un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Este ejemplo de código forma parte de un ejemplo más extenso proporcionado para el [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md) tema.

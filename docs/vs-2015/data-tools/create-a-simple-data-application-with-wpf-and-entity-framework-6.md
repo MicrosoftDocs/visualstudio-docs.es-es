@@ -9,17 +9,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 62e1a6c317752dc5513a51d3e8018d15c9598b93
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002700"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664805"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Crear una aplicación de datos sencilla con WPF y Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Este tutorial muestra cómo crear una aplicación básica "formularios sobre datos" en Visual Studio con SQL Server LocalDB, la base de datos de Northwind, Entity Framework 6 y Windows Presentation Foundation. Muestra cómo realizar el enlace de datos básica con una vista principal-detallada y también tiene un personalizado "enlace navegador" con botones para "Mover siguiente", "Mover anterior," "Mover al principio," "mover al final," "Actualizar" y "Eliminar".  
   
  En este artículo se centra en usar las herramientas de datos en Visual Studio y no intenta explicar las tecnologías subyacentes en cualquier profundidad. Se supone que tiene un conocimiento básico con XAML, Entity Framework y SQL. También en este ejemplo no muestra la arquitectura MVVM, que es el estándar para las aplicaciones de WPF. Sin embargo, puede copiar este código en su propia aplicación de MVVM con muy pocas modificaciones.  

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Cambiar fuentes y colores en el Editor | Microsoft Docs
+title: Procedimiento Cambiar fuentes y colores en el Editor | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799113"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661872"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Cómo: Cambiar las fuentes y los colores del editor
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Procedimiento Cambiar fuentes y colores en el Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Puede cambiar el nombre de fuente predeterminado, ajustar el tamaño de fuente y cambiar los colores de primer plano y de fondo para el texto diverso de **Mostrar los elementos** en el editor de código. Al cambiar la configuración de fuente, tenga en cuenta la información siguiente:  
   
 -   La configuración de **Fuente** y **Tamaño** es global para todos los elementos de texto en todos los editores de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -58,4 +57,4 @@ Puede cambiar el nombre de fuente predeterminado, ajustar el tamaño de fuente y
  [Personalizar el editor](../../ide/customizing-the-editor.md)   
  [Editor de texto, Opciones (cuadro de diálogo)](../../ide/reference/text-editor-options-dialog-box.md)   
  [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Cómo: Cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Cómo: cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

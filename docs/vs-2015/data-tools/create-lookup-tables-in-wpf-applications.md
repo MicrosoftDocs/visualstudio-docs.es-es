@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: b25a86617fdead402a2bcc3e6d901868caad840e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58999001"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663787"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creación de tablas de búsqueda en aplicaciones WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El término *tabla de búsqueda* (a veces denominado un *enlace búsqueda*) describe un control que muestra información de una tabla de datos en función del valor de un campo de clave externa de otra tabla. Puede crear una tabla de búsqueda arrastrando el nodo principal de una tabla primaria o de objeto en el **orígenes de datos** ventana a un control que ya está enlazado a una columna o propiedad en una tabla secundaria relacionada.  
   
  Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. Cada registro de la `Orders` tabla incluye una `CustomerID` que indica qué cliente realizó el pedido. El `CustomerID` es una clave externa que señala a un registro de cliente en el `Customers` tabla. Al mostrar una lista de pedidos desde el `Orders` tabla, es posible que desee mostrar el nombre real del cliente en lugar de la `CustomerID`. Dado que es el nombre del cliente en el `Customers` tabla, deberá crear una tabla de búsqueda para mostrar el nombre del cliente. Los usos de la tabla de búsqueda el `CustomerID` valor en el `Orders` grabar para navegar por la relación y devolver el nombre del cliente.  
@@ -89,7 +88,7 @@ El término *tabla de búsqueda* (a veces denominado un *enlace búsqueda*) desc
   
      Visual Studio establece algunas propiedades en el control para configurar el enlace de búsqueda. En la tabla siguiente se enumera las propiedades que Visual Studio modifica. Si es necesario, puede cambiar estas propiedades en el XAML o en el **propiedades** ventana.  
   
-    |Property|Explicación del parámetro|  
+    |Propiedad|Explicación del parámetro|  
     |--------------|----------------------------|  
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Esta propiedad especifica la colección o enlace que se usa para obtener los datos que se muestran en el control. Visual Studio establece esta propiedad en el <xref:System.Windows.Data.CollectionViewSource> para los datos primarios que se ha arrastrado al control.|  
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Esta propiedad especifica la ruta de acceso del elemento de datos que se muestra en el control. Visual Studio establece esta propiedad en la primera columna o propiedad en los datos primarios y, después de la clave principal, que tiene un tipo de datos de cadena.<br /><br /> Si desea mostrar una columna o propiedad diferente en los datos primarios, puede cambiar esta propiedad a la ruta de acceso de una propiedad diferente.|  

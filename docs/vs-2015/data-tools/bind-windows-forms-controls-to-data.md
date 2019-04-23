@@ -19,17 +19,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996853"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668995"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Enlazar controles de Windows Forms a datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede enlazar orígenes de datos a controles, arrastre objetos desde el **orígenes de datos** ventana en un formulario de Windows o en un control existente en un formulario. Antes de arrastrar elementos, puede establecer el tipo de control que desea enlazar. Aparecen valores diferentes dependiendo de si elige la tabla propiamente dicho o una columna individual.  También puede establecer valores personalizados. Para una tabla, "Detalles" significa que cada columna se enlaza a un control independiente.  
   
  ![Enlazar el origen de datos a DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata origen de datos de enlace a DataGridView")  

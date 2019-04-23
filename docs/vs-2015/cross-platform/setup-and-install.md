@@ -6,17 +6,16 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 26733c576a8bfd260368697ba0791a665afa46ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f0282e94d252040f05091ddb25c17857c3a74b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781714"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663864"
 ---
 # <a name="setup-and-install"></a>Configuración e instalación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Para compilar aplicaciones nativas para iOS, Android y Windows a partir de una base de código común de C#/.NET con Xamarin, necesita lo siguiente:  
   
 - Para trabajar con aplicaciones Windows y Android: un equipo de desarrollo de Windows con Visual Studio 2015 y Xamarin 4 instalado (vea la nota a continuación). (También puede usar Visual Studio 2013 si sigue las instrucciones para la [instalación directa de Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) en xamarin.com).   
@@ -73,7 +72,7 @@ Si tiene problemas con Xamarin después de realizar esta configuración e instal
   
         ![Seleccionar la opción Xamarin en Desarrollo móvil multiplataforma](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
   
-   2.  En Windows: **Desarrollo móvil multiplataforma > emulador de Microsoft Visual Studio para Android**. Nota: si usa un equipo con Windows 7 o anterior, o ejecuta Windows en un Mac, asegúrese de que esta opción esté *desactivada*. Vea "Nota sobre los emuladores en equipos Windows" después del paso 5. También puede dejar esta opción desactivada si piensa depurar únicamente en dispositivos Android físicos.  
+   2.  Para Windows 8 y versiones posteriores: **Desarrollo móvil multiplataforma > emulador de Microsoft Visual Studio para Android**. Nota: si usa un equipo con Windows 7 o anterior, o ejecuta Windows en un Mac, asegúrese de que esta opción esté *desactivada*. Vea "Nota sobre los emuladores en equipos Windows" después del paso 5. También puede dejar esta opción desactivada si piensa depurar únicamente en dispositivos Android físicos.  
   
    3.  (Opcional) Si tiene previsto usar como destino dispositivos Windows, active también **Desarrollo de Web y de Windows > Herramientas de desarrollo de aplicaciones universales de Windows** y/o **Herramientas de Windows 8.1 y Windows Phone 8.0/8.1**. Se incluyen opciones para instalar imágenes de emuladores que tardarán más tiempo en descargarse; siempre puede volver al instalador de Visual Studio para agregarlos más adelante.  
   

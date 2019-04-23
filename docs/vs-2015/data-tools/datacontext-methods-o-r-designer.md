@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05acf62d30a1ac272003c0883b4a8c927e13e659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a57f94758d4289981740ed9c1a8a463a8a97887d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997917"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661599"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext (Métodos) (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & autoUpgrade = True) métodos (en el contexto de la [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) son métodos de la <xref:System.Data.Linq.DataContext> clase que se ejecutan almacenado procedimientos y funciones en una base de datos.  
   
  La clase <xref:System.Data.Linq.DataContext> es una clase de [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] que actúa como una vía entre una base de datos de SQL Server y las clases de entidad de [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] asignadas a esa base de datos. La clase <xref:System.Data.Linq.DataContext> contiene la información de la cadena de conexión y los métodos para realizar la conexión a una base de datos y manipular los datos de la base de datos. De forma predeterminada, la clase <xref:System.Data.Linq.DataContext> contiene varios métodos a los que se puede llamar, como el método <xref:System.Data.Linq.DataContext.SubmitChanges%2A> que envía los datos actualizados de las clases de [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] a la base de datos. También se pueden crear métodos <xref:System.Data.Linq.DataContext> adicionales que se asignan a los procedimientos almacenados y funciones. Es decir, al llamar a estos métodos personalizados, se ejecutará el procedimiento almacenado o la función en la base de datos a la que está asignado el método de <xref:System.Data.Linq.DataContext>. Se pueden agregar métodos nuevos a la clase <xref:System.Data.Linq.DataContext> de la misma forma que se agregarían métodos para extender cualquier clase. Sin embargo, en las discusiones sobre <xref:System.Data.Linq.DataContext> métodos en el contexto de la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], es el <xref:System.Data.Linq.DataContext> métodos que se asignan a los procedimientos almacenados y funciones que se analizan.  

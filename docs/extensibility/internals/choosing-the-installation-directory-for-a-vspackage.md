@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a5016c528e754e452ee1248e85b705c41a44ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621076"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662402"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Elija el directorio de instalación de un VSPackage
 Un VSPackage y sus archivos auxiliares deben estar en el sistema de archivos de un usuario. La ubicación depende de si VSPackage está administrado o no administrados, el esquema de versiones en paralelo y la elección del usuario.
@@ -56,7 +56,6 @@ Un VSPackage y sus archivos auxiliares deben estar en el sistema de archivos de 
 4.  Sistema LCID predeterminado con el subidioma de forma predeterminada.
 
 5.  EE. UU. Inglés (*. \1033* o *. \0x409*).
-
 
 Si la DLL de VSPackage incluye los recursos y la **SatelliteDll\DllName** entrada del Registro apunta a ella, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] intenta cargarlos en el orden anterior.
 

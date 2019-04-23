@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999498"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663997"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generar código a partir de diagramas de clases UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,6 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
 
 4. En el cuadro de diálogo, establezca las propiedades del enlace de plantilla de texto.  
 
-
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Descripción**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        Name        |                                                                                                                                                                                                                                                  Nombre correspondiente a este enlace. Para invalidar un enlace heredado de un paquete contenedor o modelo, use el mismo nombre que el enlace que desea invalidar.                                                                                                                                                                                                                                                  |
@@ -173,7 +172,6 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
    |    Ruta de acceso del proyecto    |                                                                      Especifica la ruta de acceso al proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contendrá los archivos de salida de la transformación. Use valores con tipo para crear un nuevo proyecto. Elija el botón de puntos suspensivos (**[...]** ) para seleccionar un proyecto existente.<br /><br /> Se creará un nuevo proyecto si no existe uno. Será un proyecto de biblioteca de clases de C#.<br /><br /> Para ello, debe escribir directamente el proyecto. Puede incluir macros de variable de entorno como %ProgramFiles% o %LocalAppData%.                                                                       |
    |  Directorio de destino  |                                                                                          Carpeta en la que se genera el archivo de destino. La ruta de acceso es relativa a la carpeta de proyecto.<br /><br /> Puede usar la expresión `{PackageStructure}` para insertar una ruta de acceso que corresponda a los nombres de los paquetes contenedores. El valor predeterminado es `\GeneratedCode\{PackageStructure}`. También puede incluir variables de entorno como %TEMP% o %HomePath%. **Importante:** `{PackageStructure}` puede usarse únicamente en el **directorio de destino** propiedad.                                                                                          |
    | Ruta de acceso del archivo de plantilla |                                                                                                                                                           Plantilla que realizará la transformación.<br /><br /> Puede usar las plantillas proporcionadas o crear otras propias. Puede buscar las plantillas proporcionadas en la siguiente ubicación:<br /><br /> …\Archivos de programa\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
-
 
 5. Puede adjuntar tantos enlaces a un elemento como desee.  
 

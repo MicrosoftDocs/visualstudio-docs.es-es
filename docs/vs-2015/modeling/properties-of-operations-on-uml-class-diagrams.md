@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d53c44a70818739e02c34071fd81b8bdfdec87f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f98a3211bebf832009b84fac0fc1305a4162c610
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997942"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668449"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Propiedades de las operaciones de diagramas de clases de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,8 +49,7 @@ En un diagrama de clases UML, puede agregar *operaciones* a clases e interfaces.
 
  Para ver las propiedades de una operación, haga clic en la operación en la clase o interfaz en el diagrama y, a continuación, haga clic en **propiedades**. Las propiedades aparecen en la **propiedades** ventana.  
 
-
-|      Property       |   Default    |                                                                                                                                                                                 Descripción                                                                                                                                                                                 |
+|      Propiedad       |   Default    |                                                                                                                                                                                 Descripción                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      **Name**       | (un nombre nuevo) |                                                                                                                                                                Debe ser único dentro del tipo contenedor.                                                                                                                                                                 |
 |   **Parámetros**    |    (ninguno)    |      Una lista que tiene el formato <em>nombre</em>**:**<em>tipo</em>**,** <em>nombre</em>**:**  <em>Tipo</em>**,...** Haga clic en **[...]**  para editar la lista.<br /><br /> Los tipos pueden ser tipos primitivos o tipos que se definen en el modelo. Si escribe un nombre para un nuevo tipo en esta propiedad, se agregará un tipo a la sección **Tipos sin especificar** del Explorador de modelos UML.      |

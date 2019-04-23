@@ -1,5 +1,5 @@
 ---
-title: Filtrar Configurar la herencia utilizando el Object Relational Designer | Documentos de Microsoft
+title: Procedimiento Configurar la herencia utilizando el Object Relational Designer | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4dfa0f5eb59b055b2dd16e9f8ac1554247c85a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995625"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662275"
 ---
-# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Filtrar Configurar herencia mediante Object Relational Designer
+# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedimiento Configurar herencia mediante Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) admite el concepto de la herencia de tabla única normalmente implementada en los sistemas relacionales. En la herencia de tabla única, hay una sola tabla de base de datos que contiene campos tanto para la información de elementos primarios como para la información de elementos secundarios. En el caso de datos relacionales, una columna discriminadora contiene el valor que determina la clase a la que pertenece un registro cualquiera.  
   
  Por ejemplo, consideremos una tabla Persons que contiene todas las personas que trabajan en una compañía. Algunas personas son los empleados y otras son los directores. La tabla Persons contiene una columna denominada `EmployeeType` que tiene el valor 1 para los directores y el valor 2 para los empleados; ésta es la columna discriminadora. En este escenario, puede crear una subclase de empleados y rellenar la clase únicamente con los registros cuyo `EmployeeType` tiene el valor 2. Puede eliminar también columnas que no se aplican desde cada una de las clases.  

@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6d996cfcfb9dd8c63cf31b203905b486b3a1c82
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: af494a87b2feea10d121e59931e51ef3dd344f67
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598471"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669307"
 ---
-# <a name="how-to-resize-listobject-controls"></a>Filtrar Cambiar el tamaño de los controles ListObject
+# <a name="how-to-resize-listobject-controls"></a>Procedimiento Cambiar el tamaño de los controles ListObject
   Aunque se puede establecer el tamaño de un control <xref:Microsoft.Office.Tools.Excel.ListObject> al agregarlo a un libro de Microsoft Office Excel, podrían ser necesarios cambios posteriores. Por ejemplo, conviene cambiar una lista de columnas de dos a tres columnas.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -43,7 +43,6 @@ ms.locfileid: "56598471"
  Para cambiar el tamaño de una lista, puede hacer clic y arrastrar uno de los controladores de tamaño, o puede volver a definir su tamaño en el cuadro de diálogo **Cambiar el tamaño de la lista** .
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Para cambiar el tamaño de una lista mediante el cuadro de diálogo Cambiar el tamaño de la lista
-
 
 1.  Haga clic en el <xref:Microsoft.Office.Tools.Excel.ListObject> tabla. El **herramientas de tabla** > **diseño** aparecerá en la cinta de opciones.
 

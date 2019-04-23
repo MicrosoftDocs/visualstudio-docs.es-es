@@ -16,24 +16,24 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MT
+ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003069"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662613"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Revisar parámetros sin utilizar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio, consulte [CA1801: Revisar parámetros sin utilizar](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [CA1801: Revisar parámetros sin utilizar](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |Identificador de comprobación|CA1801|  
 |Categoría|Microsoft.Usage|  
-|Cambio problemático|No problemático: si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: si cambia el miembro para usar el parámetro dentro del cuerpo.<br /><br /> Problemático: Si quita el parámetro y está visible fuera del ensamblado.|  
+|Cambio problemático|No problemático: si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> Non-problemático: si cambia el miembro para usar el parámetro dentro del cuerpo.<br /><br /> Problemático: Si quita el parámetro y está visible fuera del ensamblado.|  
   
 ## <a name="cause"></a>Motivo  
  Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método. Esta regla no examina los métodos siguientes:  

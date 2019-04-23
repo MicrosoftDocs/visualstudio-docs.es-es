@@ -15,17 +15,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc374d536997c05aed644a80fe3826283d208569
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 974aceecd7c95d5a7b3f8a46d5dcbdfb15f37961
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758187"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661769"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Buscar y reemplazar, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use esta página del cuadro de diálogo **Opciones** para controlar los cuadros de mensaje y otros aspectos de una operación de buscar y reemplazar. Puede tener acceso a este cuadro de diálogo desde el menú **Herramientas** haciendo clic en **Opciones**, expandiendo **Entorno** y, después, haciendo clic en **Buscar y reemplazar**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.  
   
 > [!NOTE]

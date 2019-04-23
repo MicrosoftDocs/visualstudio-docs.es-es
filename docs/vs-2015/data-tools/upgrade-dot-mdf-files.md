@@ -22,17 +22,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6cdbb5d092f431f628e76c7ab629d5ed70429cee
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988466"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661508"
 ---
 # <a name="upgrade-mdf-files"></a>Actualizar archivos .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En este tema se describe las opciones para actualizar el archivo de base de datos (.mdf) después de instalar una versión más reciente de Visual Studio. Incluye instrucciones para las tareas siguientes:  
   
 - Actualizar un archivo de base de datos para utilizar una versión más reciente de SQL Server Express LocalDB  

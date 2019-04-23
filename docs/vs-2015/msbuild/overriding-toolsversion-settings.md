@@ -12,17 +12,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e4cd6d3199d09ffa56c0ac6d2d29fcba613fd280
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4402abed4fe7e588355614adaf5f1c689af75ad2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770715"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668241"
 ---
 # <a name="overriding-toolsversion-settings"></a>Invalidar el valor de la versión de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede cambiar el conjunto de herramientas para los proyectos y soluciones de tres maneras:  
   
 1.  con el modificador `/ToolsVersion` (o `/tv`, para abreviar) cuando compile el proyecto o la solución desde la línea de comandos  

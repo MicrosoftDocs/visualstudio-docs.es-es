@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e10c489ee8bd14599220429c9d74821986f8b915
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 665c59e6881ec2e5924845dfc8dcc130b5044095
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999169"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663393"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -659,7 +659,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
     La clave del Registro debe tener los siguientes valores:  
 
-
    |   Name    |  Tipo  |                                   Datos                                   |
    |-----------|--------|--------------------------------------------------------------------------|
    | (Predeterminado) | REG_SZ |                             (valor no establecido)                              |
@@ -668,13 +667,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
     Si ha colocado el ensamblado en la GAC, los valores deberían ser similares a los siguientes:  
 
-
    |   Name    |  Tipo  |               Datos                |
    |-----------|--------|-----------------------------------|
    | (Predeterminado) | REG_SZ |          (valor no establecido)          |
    |   Clase   | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Ensamblado  | REG_SZ |           CustomDP.dll            |
-
 
 6. Reinicie Visual Studio.  
 

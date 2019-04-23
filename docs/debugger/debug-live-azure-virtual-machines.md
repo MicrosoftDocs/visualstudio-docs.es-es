@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856961"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663199"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Depuración de aplicaciones de ASP.NET en vivo en Azure Virtual Machines y Azure Virtual Machines Scale Sets con Snapshot Debugger
 
@@ -35,11 +35,11 @@ En este tutorial va a:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Snapshot Debugger para Azure Virtual Machines (VM) y Azure Virtual Machine Scale Sets (VMSS) solo está disponible para Visual Studio 2019 Enterprise en versión preliminar o posterior con la **carga de trabajo de desarrollo de Azure**. (En la pestaña **Componentes individuales**, puede encontrarlo en **Depuración y pruebas** > **Snapshot Debugger**).
+* Depurador de instantáneas para las máquinas virtuales (VM) de Azure y Azure Virtual Machine Scale Sets solo está disponible para Visual Studio 2019 Enterprise o posterior con el **carga de trabajo de desarrollo de Azure**. (En la pestaña **Componentes individuales**, puede encontrarlo en **Depuración y pruebas** > **Snapshot Debugger**).
 
-    Si aún no está instalado, instale [Visual Studio 2019 Enterprise (versión preliminar)](https://visualstudio.microsoft.com/vs/preview/).
+    Si aún no está instalado, instale [Visual Studio Enterprise de 2019](https://visualstudio.microsoft.com/vs/).
 
-* La colección de instantáneas está disponible para las siguientes aplicaciones web de Azure VM/VMSS:
+* Recopilación de instantáneas está disponible para las siguientes aplicaciones web de Azure Virtual Machines\Virtual Machine Scale Sets:
   * Aplicaciones ASP.NET que se ejecutan en .NET Framework 4.6.1 o versiones posteriores.
   * Aplicaciones ASP.NET Core que se ejecutan en .NET Core 2.0 o posteriores en Windows.
 
@@ -48,9 +48,9 @@ En este tutorial va a:
 1. Abra el proyecto de cuya depuración desea realizar una instantánea.
 
     > [!IMPORTANT]
-    > Para realizar una instantánea de la depuración, abra la *misma versión del código fuente* publicada en el servicio Azure VM/VMSS.
+    > Depuración de instantáneas, deberá abrir el *misma versión de código fuente* que se publica en el servicio de Azure Virtual Machine\Virtual equipo conjunto de escalado.
 
-1. Elija **Depurar > Asociar Snapshot Debugger...** Seleccione la instancia de Azure VM/VMSS donde se implementó la aplicación web y una cuenta de Azure Storage y, a continuación, haga clic en **Adjuntar**.
+1. Elija **Depurar > Asociar Snapshot Debugger...** Seleccione una cuenta de almacenamiento de Azure y el Virtual Machine\Virtual equipo conjunto de escalado Azure se implementa la aplicación web en y, a continuación, haga clic en **adjuntar**.
 
       ![Inicio de Snapshot Debugger desde el menú Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,7 +58,7 @@ En este tutorial va a:
 
     > [!IMPORTANT]
     > La primera vez que selecciona **Asociar Snapshot Debugger** para la máquina virtual, IIS se reinicia automáticamente.
-    > La primera vez que selecciona **Asociar Snapshot Debugger** para la instancia de VMSS, se requiere la actualización manual de cada instancia de VMSS.
+    > La primera vez que selecciona **asociar Snapshot Debugger** para los conjuntos de escalado de máquinas virtuales, requiere la actualización manual de cada instancia de los conjuntos de escalado de máquinas virtuales.
 
     Los metadatos de los **módulos** no se activarán inicialmente; vaya a la aplicación web y el botón **Iniciar colección** se activará. Visual Studio ahora está en modo de depuración de instantáneas.
 
@@ -66,9 +66,9 @@ En este tutorial va a:
 
     > [!NOTE]
     > La extensión de sitio de Application Insights también admite la depuración de instantáneas. Si aparece un mensaje de error "la extensión de sitio no está actualizada", vea las [sugerencias de solución de problemas y los problemas conocidos con la depuración de instantáneas](../debugger/debug-live-azure-apps-troubleshooting.md) para actualizar los detalles.
-    > Si se trata de VMSS, el usuario debe actualizar manualmente las instancias de VMSS después de adjuntar Snapshot Debugger por primera vez.
+    > Para VMSS es necesario actualizar manualmente las instancias de sus conjuntos de escalado de máquinas virtuales después de adjuntar al depurador de instantáneas por primera vez el usuario.
 
-   En la ventana **Módulos** se muestra cuándo se han cargado todos los módulos para Azure VM/VMSS (elija **Depurar > Windows > Módulos** para abrir esta ventana).
+   El **módulos** ventana muestra cuando todos los módulos han cargado para la Azure Virtual Machine\Virtual equipo conjunto de escalado (elija **Depurar > Windows > módulos** para abrir esta ventana).
 
    ![Comprobación de la ventana Módulos](../debugger/media/snapshot-modules.png)
 
@@ -148,4 +148,4 @@ Además de realizar una instantánea cuando se alcanza un punto de instantánea,
 En este tutorial, ha aprendido cómo utilizar Snapshot Debugger para Azure Virtual Machines y Azure Virtual Machine Scale Sets. Es posible que desee obtener más información sobre esta característica.
 
 > [!div class="nextstepaction"]
-> [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)
+> [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)

@@ -13,17 +13,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b854ef07804af884e4486d2fbeb54b5ff9ebd455
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 85fb8c1349590858391051b8df395c8e6a781a75
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755258"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669801"
 ---
 # <a name="setting-language-specific-editor-options"></a>Opciones del editor específicas del lenguaje
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporciona una serie de opciones del Editor de texto que se aplican a lenguajes de programación concretos.  
   
 ## <a name="in-this-section"></a>En esta sección  

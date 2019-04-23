@@ -18,17 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b47950ea00f8ea7a6ec55476157a54dcd0aa9c75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e22a606c720f7d6b3304f6afb297ed76390f7ea
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999230"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668397"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Trabajar con un modelo conceptual (Servicios de datos de WCF)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cuando se usa un modelo conceptual para describir los datos de una base de datos, se pueden consultar los datos a través de objetos en lugar de tener que traducirlos en ambos sentidos entre un esquema de base de datos y un modelo de objetos.  
   
  Puede usar los modelos conceptuales con aplicaciones de Data Services de WCF. En los temas siguientes se muestra cómo consultar los datos a través de un modelo conceptual.  

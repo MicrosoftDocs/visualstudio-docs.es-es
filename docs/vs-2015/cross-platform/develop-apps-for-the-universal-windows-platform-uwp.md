@@ -9,17 +9,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 949cbbc7146fc744f549201a98f61d82a80185e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787023"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666772"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Desarrollar aplicaciones para la Plataforma universal de Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Con la Plataforma universal de Windows y nuestro núcleo de Windows, puede ejecutar la misma aplicación de Windows 10 en cualquier dispositivo, desde teléfonos a equipos de escritorio. Cree estas aplicaciones con Visual Studio 2015 y las herramientas de desarrollo de aplicaciones Windows universales.  
   
  ![Plataforma universal de Windows](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")  
@@ -49,7 +48,7 @@ Con la Plataforma universal de Windows y nuestro núcleo de Windows, puede ejecu
   
   Si decide desarrollar aplicaciones Windows universales con Visual Studio de 2015 en una plataforma distinta de Windows 10, estas son las restricciones:  
   
-- Windows 8.1 No se puede ejecutar la aplicación localmente (solo en un dispositivo remoto de Windows 10). Puede utilizar los emuladores de Visual Studio, pero no el simulador.  
+- Windows 8.1: No se puede ejecutar la aplicación localmente (solo en un dispositivo remoto de Windows 10). Puede utilizar los emuladores de Visual Studio, pero no el simulador.  
   
 - Windows 7: No se puede ejecutar la aplicación localmente (solo en un dispositivo remoto de Windows 10). No puede utilizar ni los emuladores ni el simulador de Visual Studio.  
   

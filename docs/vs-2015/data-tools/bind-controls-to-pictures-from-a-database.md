@@ -23,17 +23,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb1bdb99db405962f487bc9ec13de961f352ec48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7c2dce31d5d2d2564c4a277b479dbf1e463b4632
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995496"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666151"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Enlazar controles a imágenes desde una base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede utilizar la ventana **Orígenes de datos** para enlazar una imagen de una base de datos a un control de su aplicación. Por ejemplo, puede enlazar una imagen a un control <xref:System.Windows.Controls.Image> de una aplicación WPF o a un control <xref:System.Windows.Forms.PictureBox> de una aplicación de Windows Forms.  
   
  Las imágenes de una base de datos están almacenadas normalmente como matrices de bytes. Los elementos de la ventana **Orígenes de datos** que están almacenados como matrices de bytes tienen su tipo de control establecido de forma predeterminada en **Ninguno**, porque las matrices de bytes pueden contener cualquier cosa, desde una matriz simple de bytes hasta el archivo ejecutable de una aplicación grande. Para crear un control enlazado a datos para un elemento de matriz de bytes en la ventana **Orígenes de datos** que represente una imagen, debe seleccionar el control.  

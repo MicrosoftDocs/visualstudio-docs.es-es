@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7c43a8c6c306fd33dd7cb975dee9a7d89128d7cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcde97691a2a3cec0e7b2452cfcac9b335a170f6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988472"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665485"
 ---
 # <a name="or-designer-messages"></a>Mensajes de Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En este tema se enumeran los mensajes que pueden aparecer cuando se trabaja con Object Relational Designer.  
   
 ## <a name="in-this-section"></a>En esta sección  

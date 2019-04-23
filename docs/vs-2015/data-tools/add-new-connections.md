@@ -9,17 +9,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5c7d4bda59b8ff9bdedb775ecc6376a23a2db7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff1ec43d6faec329db6138598d84e47db009113e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994886"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665329"
 ---
 # <a name="add-new-connections"></a>Adición de nuevas conexiones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede probar la conexión a una base de datos o un servicio y explorar el contenido de la base de datos y esquemas, mediante el uso de **Explorador de servidores**, **Cloud Explorer**, o **Explorador de objetos de SQL Server**. La funcionalidad de estas ventanas se superpone en cierta medida. Las diferencias básicas son:  
   
  Explorador de servidores  

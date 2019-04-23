@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85ea10b956069415198feb74be8c9e546ecc7ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769228"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668124"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Proporciona una forma automatizada de detectar, descargar e instalar una aplicación y sus requisitos previos. Actúa como instalador único que integra los instaladores independientes de todos los componentes que forman una aplicación.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
@@ -96,11 +95,11 @@ Proporciona una forma automatizada de detectar, descargar e instalar una aplicac
   
    Especifica una ubicación en que el programa previo va a buscar los requisitos previos de instalación que se deben instalar. Este parámetro puede tener los valores siguientes:  
   
-  - `HomeSite`: indica que el proveedor del componente hospeda el requisito previo.  
+  - `HomeSite`: Indica que el proveedor del componente hospeda el requisito previo.  
   
-  - `Relative`: indica que el requisito previo está en la misma ubicación de la aplicación.  
+  - `Relative`: Indica que el requisito previo está en la misma ubicación de la aplicación.  
   
-  - `Absolute`: indica que todos los componentes deben encontrarse en una dirección URL centralizada. Este valor debe utilizarse junto con el parámetro de entrada `ComponentsUrl`.  
+  - `Absolute`: Indica que todos los componentes deben encontrarse en una dirección URL centralizada. Este valor debe utilizarse junto con el parámetro de entrada `ComponentsUrl`.  
   
     Si `ComponentsLocation` no se especifica, `HomeSite` se utiliza de forma predeterminada.  
   

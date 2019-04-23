@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87ac827dff2920924bee3a2730fee0ae44f411fa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 12c5e65f45200947c57a4d831611faa4443a0d55
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989216"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666711"
 ---
 # <a name="xml-schema-designer-tasks"></a>Tareas del Diseñador de esquemas XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En esta sección se explica cómo completar las tareas comunes con las herramientas del Diseñador de esquemas XML.  
   
 ## <a name="in-this-section"></a>En esta sección  

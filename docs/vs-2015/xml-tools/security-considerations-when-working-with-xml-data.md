@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 804bc90e48a666c3eb4ea38abb01d7be0a50290e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d443057578c781ef94a4a7c3579765d181bb9849
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988554"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665446"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Consideraciones de seguridad al trabajar con datos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En este tema se describen los aspectos de seguridad que debe conocer al trabajar con el Editor XML o el depurador de XSLT.  
   
 ## <a name="xml-editor"></a>Editor XML  

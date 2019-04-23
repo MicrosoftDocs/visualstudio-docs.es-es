@@ -11,17 +11,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e54cd8962a5aa42b4562b0a407912d582feacf37
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 8caf9dcabe46c0d68fabf9e620818f52316e484b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833889"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662509"
 ---
 # <a name="logging-in-msbuild"></a>Registro de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El registro proporciona una manera de supervisar el progreso de una compilación. El registro captura los eventos, los mensajes, las advertencias y los errores de compilación en un archivo de registro.  
   
 ## <a name="in-this-section"></a>En esta sección  

@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 003b4ed6407126c7b1b6992c9c99eb30d36379b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987429"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665394"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Tutorial: Generador de perfiles XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El generador de perfiles XSLT crea informes de rendimiento de XSLT detallados que ayudan a medir, evaluar y solucionar problemas relacionados con el rendimiento en el código XSLT. El generador de perfiles XSLT incluye sugerencias útiles para la optimización de hojas de estilos XSL y XSLT. Para las aplicaciones XSLT que exigen el máximo rendimiento, esta herramienta puede ser esencial.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
