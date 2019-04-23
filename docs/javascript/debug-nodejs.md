@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223395"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856598"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depuración de una aplicación JavaScript o TypeScript en Visual Studio
 
 Puede depurar código JavaScript y TypeScript con Visual Studio. Puede establecer y alcanzar puntos de interrupción, asociar el depurador, inspeccionar variables, ver la pila de llamadas y usar otras características de depuración.
 
 > [!TIP]
-> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita. Según la forma en que vaya a desarrollar la aplicación, es posible que tenga que instalar la **carga de trabajo de desarrollo Node.js** con Visual Studio.
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita. Según la forma en que vaya a desarrollar la aplicación, es posible que tenga que instalar la **carga de trabajo de desarrollo Node.js** con Visual Studio.
 
 ## <a name="debug-server-side-script"></a>Depurar scripts del servidor
 
@@ -60,6 +60,11 @@ Para asociar el depurador desde Visual Studio y alcanzar puntos de interrupción
     `chrome.exe --remote-debugging-port=9222`
 
     Este comando inicia Chrome con la depuración habilitada.
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > También puede establecer la marca `--remote-debugging-port` al iniciar el explorador si selecciona **Explorar con...** > en la barra de herramientas **Depurar**, elige **Agregar** y, después, configura la marca en el campo **Argumentos**. Use un nombre descriptivo distinto para el explorador, como **Chrome con depuración**. Para obtener información detallada, vea las [notas de la versión](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    ::: moniker-end
 
 3. Cambie a Visual Studio y establezca un punto de interrupción en el código fuente (establezca el punto de interrupción en una línea de código que permita los puntos de interrupción, como una instrucción `return` o una declaración `var`).
 
@@ -101,7 +106,7 @@ Para asociar el depurador desde Visual Studio y alcanzar puntos de interrupción
     * Si tiene que interrumpir el código en un archivo JavaScript transcompilado (por ejemplo, *app-bundle.js*) y no puede hacerlo, quite el archivo de mapa de origen, *nombreDeArchivo.js.map*.
 
      > [!TIP]
-     > Una vez que se asocia al proceso la primera vez siguiendo estos pasos, puede volver a asociar rápidamente al mismo proceso en Visual Studio 2017 si selecciona **Depurar** > **Reasociar al proceso**.
+     > Una vez que se asocia al proceso la primera vez siguiendo estos pasos, puede volver a asociar rápidamente al mismo proceso si selecciona **Depurar** > **Reasociar al proceso**.
 
 ## <a name="generate_sourcemaps"></a> Generar mapas de origen para la depuración
 
