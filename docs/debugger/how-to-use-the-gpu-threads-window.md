@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c878bcc3b0ed2f37f5bb8700b463ac5c1308981
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071361"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>Cómo: utilizar la ventana de subprocesos GPU (C++)
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Procedimiento Utilice la ventana de subprocesos GPU (C++)
 Desde la ventana Subprocesos de GPU, puede examinar y trabajar con los subprocesos que se ejecutan en la GPU de la aplicación que esté depurando. Para obtener más información acerca de las aplicaciones que se ejecutan en la GPU, vea [Introducción a C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
 
  La ventana Subprocesos de GPU contiene una tabla en la que cada fila representa un grupo de subprocesos de la GPU que tienen los mismos valores en todas las columnas. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos desde la ventana Subprocesos de GPU. Las columnas siguientes se muestran en la ventana Subprocesos de GPU:
@@ -52,57 +52,57 @@ Desde la ventana Subprocesos de GPU, puede examinar y trabajar con los subproces
 
 ### <a name="to-display-the-gpu-threads-window"></a>Para mostrar la ventana Subprocesos de GPU
 
-1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto y, a continuación, elija **Propiedades**.
+1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y, a continuación, elija **Propiedades**.
 
-2.  En la ventana **Páginas de propiedades** del proyecto, en **Propiedades de configuración**, elija **Depuración**.
+2. En la ventana **Páginas de propiedades** del proyecto, en **Propiedades de configuración**, elija **Depuración**.
 
-3.  En la lista **Depurador para iniciar**, seleccione **Depurador local de Windows**. En la lista **Tipo de depurador**, seleccione **Solo GPU**. Debe elegir este depurador para interrumpir en los puntos de interrupción del código que se ejecuta en la GPU.
+3. En la lista **Depurador para iniciar**, seleccione **Depurador local de Windows**. En la lista **Tipo de depurador**, seleccione **Solo GPU**. Debe elegir este depurador para interrumpir en los puntos de interrupción del código que se ejecuta en la GPU.
 
-4.  Elija el botón **Aceptar** .
+4. Elija el botón **Aceptar** .
 
-5.  Establezca un punto de interrupción en el código de GPU.
+5. Establezca un punto de interrupción en el código de GPU.
 
-6.  En la barra de menús, seleccione **Depurar**, **Iniciar depuración**. Espere hasta que la aplicación llegue al punto de interrupción.
+6. En la barra de menús, seleccione **Depurar**, **Iniciar depuración**. Espere hasta que la aplicación llegue al punto de interrupción.
 
-7.  En la barra de menús, elija **Depurar**, **Ventanas**, **Subprocesos de GPU**.
+7. En la barra de menús, elija **Depurar**, **Ventanas**, **Subprocesos de GPU**.
 
 ### <a name="to-switch-to-a-different-thread"></a>Para cambiar a un subproceso diferente
 
--   Haga doble clic en la columna. (Teclado: seleccione la fila y elija Entrar).
+- Haga doble clic en la columna. (Teclado: Seleccione la fila y elija ENTRAR).
 
 ### <a name="to-display-a-particular-tile-and-thread"></a>Para mostrar un mosaico y un subproceso determinados
 
-1.  Elija el botón **Expandir selector de subprocesos** en la ventana Subprocesos de GPU.
+1. Elija el botón **Expandir selector de subprocesos** en la ventana Subprocesos de GPU.
 
-2.  Escriba los valores para el mosaico y el subproceso en los cuadros de texto.
+2. Escriba los valores para el mosaico y el subproceso en los cuadros de texto.
 
-3.  Elija el botón que tiene una flecha.
+3. Elija el botón que tiene una flecha.
 
 ### <a name="to-display-or-hide-a-column"></a>Mostrar u ocultar columnas
 
--   Abra el menú contextual de la ventana Subprocesos de GPU, elija **Columnas** y después elija la columna que desea mostrar u ocultar.
+- Abra el menú contextual de la ventana Subprocesos de GPU, elija **Columnas** y después elija la columna que desea mostrar u ocultar.
 
 ### <a name="to-sort-by-a-column"></a>Para ordenar por una columna
 
--   Seleccione el encabezado de la columna.
+- Seleccione el encabezado de la columna.
 
 ### <a name="to-group-threads"></a>Para agrupar subprocesos
 
--   Abra el menú contextual de la ventana Subprocesos de GPU, elija **Agrupar por** y después elija uno de los nombres de columna que aparecen. Elija **Ninguno** para desagrupar los subprocesos.
+- Abra el menú contextual de la ventana Subprocesos de GPU, elija **Agrupar por** y después elija uno de los nombres de columna que aparecen. Elija **Ninguno** para desagrupar los subprocesos.
 
 ### <a name="to-freeze-or-thaw-a-row-of-threads"></a>Para inmovilizar o reanudar una fila de subprocesos
 
--   Abra el menú contextual de la fila y elija **Inmovilizar** o **Reanudar**.
+- Abra el menú contextual de la fila y elija **Inmovilizar** o **Reanudar**.
 
 ### <a name="to-flag-or-unflag-a-row-of-threads"></a>Para marcar o quitar el marcador de una fila de subprocesos
 
--   Seleccione la columna de marcas del subproceso, o abra el menú contextual del subproceso y elija **Marcar** o **Quitar marcador**.
+- Seleccione la columna de marcas del subproceso, o abra el menú contextual del subproceso y elija **Marcar** o **Quitar marcador**.
 
 ### <a name="to-display-only-flagged-threads"></a>Para mostrar solo los subprocesos marcados
 
--   Elija el botón de marcador en la ventana Subprocesos de GPU.
+- Elija el botón de marcador en la ventana Subprocesos de GPU.
 
 ## <a name="see-also"></a>Vea también
 - [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Cómo: Usar la ventana Inspección paralela](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Cómo: Uso de la ventana Inspección paralela](../debugger/how-to-use-the-parallel-watch-window.md)
 - [Tutorial: Depurar una aplicación de C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

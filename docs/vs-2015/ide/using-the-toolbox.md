@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8498397e45aad889d575c4ec337d107755b2dba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 207beb085046748a4eaabdff025cd461c5ddba26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788270"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073369"
 ---
 # <a name="using-the-toolbox"></a>Usar el Cuadro de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,23 +48,23 @@ Puede usar el cuadro de herramientas para agregar controles y otros elementos al
   
  Puede reorganizar los elementos de una pestaña del cuadro de herramientas o agregar pestañas y elementos personalizados por medio de los siguientes comandos del menú contextual:  
   
--   **Cambiar nombre de elemento**: permite cambiar el nombre del elemento seleccionado.  
+- **Cambiar nombre de elemento**: permite cambiar el nombre del elemento seleccionado.  
   
--   **Mostrar todo**: muestra todos los controles posibles (no solo los correspondientes al diseñador actual).  
+- **Mostrar todo**: muestra todos los controles posibles (no solo los correspondientes al diseñador actual).  
   
--   **Vista de lista**: muestra los controles en una lista vertical. Si se deja sin marcar, los controles aparecen horizontalmente.  
+- **Vista de lista**: muestra los controles en una lista vertical. Si se deja sin marcar, los controles aparecen horizontalmente.  
   
--   **Elegir elementos**: abre el cuadro de diálogo **Elegir elementos del cuadro de herramientas** para que pueda especificar los elementos que aparecen en el **Cuadro de herramientas**. Para mostrar u ocultar un elemento, active o desactive su casilla.  
+- **Elegir elementos**: abre el cuadro de diálogo **Elegir elementos del cuadro de herramientas** para que pueda especificar los elementos que aparecen en el **Cuadro de herramientas**. Para mostrar u ocultar un elemento, active o desactive su casilla.  
   
--   **Ordenar elementos alfabéticamente**: ordena los elementos por el nombre.  
+- **Ordenar elementos alfabéticamente**: ordena los elementos por el nombre.  
   
--   **Restablecer barra de herramientas**: restaura la configuración y los elementos predeterminados del cuadro de herramientas.  
+- **Restablecer barra de herramientas**: restaura la configuración y los elementos predeterminados del cuadro de herramientas.  
   
--   **Agregar pestaña**: agrega una nueva pestaña del cuadro de herramientas.  
+- **Agregar pestaña**: agrega una nueva pestaña del cuadro de herramientas.  
   
--   **Subir**: mueve el elemento seleccionado hacia arriba.  
+- **Subir**: mueve el elemento seleccionado hacia arriba.  
   
--   **Bajar**: mueve el elemento seleccionado hacia abajo.  
+- **Bajar**: mueve el elemento seleccionado hacia abajo.  
   
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Crear y distribuir controles personalizados del cuadro de herramientas  
  Puede crear un control personalizado del cuadro de herramientas en Visual Basic o Visual C#, y puede partir de una plantilla de proyecto basada en [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) o [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Después, puede distribuir el control a sus compañeros de equipo o publicarlo en la web con el [Instalador de controles del cuadro de herramientas](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).

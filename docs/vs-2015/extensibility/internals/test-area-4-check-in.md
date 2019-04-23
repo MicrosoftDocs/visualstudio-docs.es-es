@@ -11,12 +11,12 @@ ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 130d1b6b783a07261b9825c37e21fa2eeb008954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068735"
 ---
 # <a name="test-area-4-check-in"></a>Área de prueba 4: Inserción en el repositorio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Esta área de prueba de complemento de control de código fuente trata de enviar
   
 ## <a name="common-expected-behavior"></a>Comportamiento esperado comunes  
   
--   Proyectos y archivos agregados a una solución o proyecto bajo control de código fuente aparecen en la **proteger** cuadro de diálogo y el **protecciones pendientes** ventana.  
+- Proyectos y archivos agregados a una solución o proyecto bajo control de código fuente aparecen en la **proteger** cuadro de diálogo y el **protecciones pendientes** ventana.  
   
--   Después de la comprobación en, los elementos agregados aparecen en el control de código fuente.  
+- Después de la comprobación en, los elementos agregados aparecen en el control de código fuente.  
   
--   Después de la comprobación en, los elementos actualizados son versiones correctas en el almacén.  
+- Después de la comprobación en, los elementos actualizados son versiones correctas en el almacén.  
   
 ## <a name="test-cases"></a>Casos de prueba  
  Los siguientes son casos de prueba concretos para el área de prueba de inserción en el repositorio.  

@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0b0587f6c1c5d7577d8fddffb73db31f09248fae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784792"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075654"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ De manera predeterminada, todas las opciones de configuración de compilación a
   
 #### <a name="to-enable-advanced-build-configurations"></a>Para habilitar las configuraciones de compilación avanzadas  
   
-1.  En el menú **Herramientas** , haga clic en **Opciones**.  
+1. En el menú **Herramientas** , haga clic en **Opciones**.  
   
-2.  Expanda **Proyectos y soluciones** y haga clic en **General**.  
+2. Expanda **Proyectos y soluciones** y haga clic en **General**.  
   
     > [!NOTE]
     >  El nodo **General** es visible incluso si la opción **Mostrar todas las configuraciones** no está activada. Si quiere ver cada opción disponible, haga clic en **Mostrar todas las configuraciones**.  
   
-3.  Haga clic en **Mostrar configuraciones de compilación avanzadas**.  
+3. Haga clic en **Mostrar configuraciones de compilación avanzadas**.  
   
-4.  Haga clic en **Aceptar**.  
+4. Haga clic en **Aceptar**.  
   
      En el menú **Compilar**, **Administrador de configuración** ahora está disponible y las listas **Configuración** y **Plataforma** están visibles en el Diseñador de proyectos.  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066603"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Implementar aplicaciones ClickOnce para los servidores de pruebas y producción sin nueva firma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ En este tema se describe una nueva característica de introducidas en .NET Frame
   
  Los desarrolladores de terceros y los ISV pueden participar en esta característica, facilitando la tarea para sus clientes actualizar sus aplicaciones. Esta característica puede usarse en las situaciones siguientes:  
   
--   Al actualizar una aplicación, no en la primera instalación de una aplicación.  
+- Al actualizar una aplicación, no en la primera instalación de una aplicación.  
   
--   Cuando hay solo una configuración de la aplicación en un equipo. Por ejemplo, si una aplicación está configurada para que apunte a dos bases de datos, no puede usar esta característica.  
+- Cuando hay solo una configuración de la aplicación en un equipo. Por ejemplo, si una aplicación está configurada para que apunte a dos bases de datos, no puede usar esta característica.  
   
 ## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>Exclusión de deploymentProvider de manifiestos de implementación  
  En .NET Framework 2.0 y .NET Framework 3.0, deben especificar las aplicaciones ClickOnce que se instalación en el sistema para la disponibilidad sin conexión un `deploymentProvider` en su manifiesto de implementación. El `deploymentProvider` a menudo se conoce como la ubicación de actualización es la ubicación en la que se comprobará ClickOnce actualizaciones de la aplicación. Este requisito, junto con la necesidad de los editores de aplicaciones firmar sus implementaciones, era difícil para una empresa actualizar una aplicación ClickOnce de un proveedor u otras aplicaciones de terceros. También resulta más difícil de implementar la misma aplicación desde varias ubicaciones en la misma red.  

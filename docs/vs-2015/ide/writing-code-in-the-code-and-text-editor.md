@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665755"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077828"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Escribir código en el editor de código y texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,45 +188,45 @@ Esta característica es especialmente útil si el código tiene nombres largos.
 
  Para obtener información acerca de las opciones del editor específicas de los lenguajes, consulte:  
 
--   [Configuración de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Configuración de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Usar el entorno de desarrollo de Visual C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [Usar el entorno de desarrollo de Visual C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Opciones, editor de texto, JavaScript, formato](../ide/reference/options-text-editor-javascript-formatting.md)  
+- [Opciones, editor de texto, JavaScript, formato](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>En esta sección  
 
--   [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)  
+- [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)  
 
--   [Codificaciones y saltos de línea](../ide/encodings-and-line-breaks.md)  
+- [Codificaciones y saltos de línea](../ide/encodings-and-line-breaks.md)  
 
--   [Esquematización](../ide/outlining.md)  
+- [Esquematización](../ide/outlining.md)  
 
--   [Refactorización](../ide/refactoring-in-visual-studio.md)  
+- [Refactorización](../ide/refactoring-in-visual-studio.md)  
 
--   [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)  
+- [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Usar IntelliSense](../ide/using-intellisense.md)  
+- [Usar IntelliSense](../ide/using-intellisense.md)  
 
--   [Personalizar el editor](../ide/customizing-the-editor.md)  
+- [Personalizar el editor](../ide/customizing-the-editor.md)  
 
--   [Cómo: Seguimiento del código personalizando la barra de desplazamiento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [Cómo: Seguimiento del código personalizando la barra de desplazamiento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Cómo: Ver y editar código mediante Ver la definición (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [Cómo: Ver y editar código mediante Ver la definición (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [Realizar acciones rápidas con las bombillas](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [Realizar acciones rápidas con las bombillas](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [Fragmentos de código](../ide/code-snippets.md)  
+- [Fragmentos de código](../ide/code-snippets.md)  
 
--   [Usar el cuadro de herramientas](../ide/using-the-toolbox.md)  
+- [Usar el cuadro de herramientas](../ide/using-the-toolbox.md)  
 
--   [Ver la estructura del código](../ide/viewing-the-structure-of-code.md)  
+- [Ver la estructura del código](../ide/viewing-the-structure-of-code.md)  
 
--   [Establecer marcadores en el código](../ide/setting-bookmarks-in-code.md)  
+- [Establecer marcadores en el código](../ide/setting-bookmarks-in-code.md)  
 
--   [Usar la Lista de tareas](../ide/using-the-task-list.md)  
+- [Usar la Lista de tareas](../ide/using-the-task-list.md)  
 
--   [Buscar cambios en el código y otro historial](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [Buscar cambios en el código y otro historial](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Vea también  
  [IDE de Visual Studio](../ide/visual-studio-ide.md)

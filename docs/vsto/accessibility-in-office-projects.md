@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070048"
 ---
 # <a name="accessibility-in-office-projects"></a>Accesibilidad en proyectos de Office
 
@@ -40,21 +40,21 @@ En la mayoría de los casos, los proyectos de Office en Visual Studio cumplen ac
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Para ver las teclas de método abreviado para las fichas y controles Ribbon en el diseñador
 
-1.  En Visual Studio, en el **herramientas** menú, haga clic en **opciones**.
+1. En Visual Studio, en el **herramientas** menú, haga clic en **opciones**.
 
-2.  Expanda el **Office Tools** nodo y seleccione **teclado de Microsoft Office Excel** o **teclado de Microsoft Office Word**, según corresponda.
+2. Expanda el **Office Tools** nodo y seleccione **teclado de Microsoft Office Excel** o **teclado de Microsoft Office Word**, según corresponda.
 
-3.  Seleccione **combinación de teclado dinámico**.
+3. Seleccione **combinación de teclado dinámico**.
 
      Aparece un mensaje que indica que debe reiniciar Visual Studio para que el cambio surta efecto.
 
-4.  Haga clic en **Aceptar**.
+4. Haga clic en **Aceptar**.
 
-5.  Reinicie Visual Studio y vuelva a abrir el proyecto.
+5. Reinicie Visual Studio y vuelva a abrir el proyecto.
 
-6.  Abra el diseñador para el proyecto de documento o libro.
+6. Abra el diseñador para el proyecto de documento o libro.
 
-7.  Presione **F6** para mostrar las teclas de método abreviado de la cinta de opciones.
+7. Presione **F6** para mostrar las teclas de método abreviado de la cinta de opciones.
 
 ## <a name="accessibility-at-runtime"></a>Accesibilidad en tiempo de ejecución
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeaa87cf55b9429904286817b043dcba92d2bfcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03b9d4fb6a92694df55d6732ac80d75645209a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335225"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071283"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Estructura de VSPackage (VSPackage de control de código fuente)
 
@@ -28,23 +28,23 @@ Un VSPackage declara sus elementos de menú y establece el estado de un elemento
 
 Un VSPackage de control de código fuente está muy integrado en Visual Studio. La semántica de VSPackage incluye:
 
--   Interfaz que se implementa en virtud de ser un paquete VSPackage (el `IVsPackage` interfaz)
+- Interfaz que se implementa en virtud de ser un paquete VSPackage (el `IVsPackage` interfaz)
 
--   Implementación de comandos de la interfaz de usuario (archivo .vsct y la implementación de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz)
+- Implementación de comandos de la interfaz de usuario (archivo .vsct y la implementación de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz)
 
--   Registro del VSPackage con Visual Studio.
+- Registro del VSPackage con Visual Studio.
 
 El control de código fuente VSPackage debe comunicarse con estas otras entidades de Visual Studio:
 
--   Proyectos
+- Proyectos
 
--   Editores
+- Editores
 
--   Soluciones
+- Soluciones
 
--   Windows
+- Windows
 
--   La tabla de documentos en ejecución
+- La tabla de documentos en ejecución
 
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Servicios del entorno de Visual Studio que pueden consumir
 

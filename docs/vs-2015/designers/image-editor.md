@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077386"
 ---
 # <a name="image-editor"></a>Editor de imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
   
 |Nombre de formato|Extensión de nombre de archivo|  
 |-----------------|-------------------------|  
-|Formato PNG (Portable Network Graphics)|.png|  
+|Portable Network Graphics (PNG)|.png|  
 |JPEG|.jpg, .jpeg, .jpe, .jfif|  
 |DirectDraw Surface|.dds|  
-|Formato de intercambio de gráficos|.gif|  
+|formato de intercambio de gráficos (GIF)|.gif|  
 |Bitmap|.bmp, .dib|  
 |Tagged Image File Format|.tif, .tiff|  
 |TGA (Targa)|.tga|  
@@ -44,13 +44,13 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
   
 #### <a name="to-add-an-image-to-your-project"></a>Para agregar una imagen al proyecto  
   
-1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto al que quiere agregar la imagen y, después, elija **Agregar**, **Nuevo elemento**.  
+1. En el **Explorador de soluciones**, abra el menú contextual del proyecto al que quiere agregar la imagen y, después, elija **Agregar**, **Nuevo elemento**.  
   
-2.  En el cuadro de diálogo **Agregar nuevo elemento**, en **Instalado**, seleccione **Gráficos** y, después, seleccione un formato de archivo apropiado para la imagen. Para obtener información sobre cómo elegir un formato de archivo según sus requisitos, consulte la sección siguiente.  
+2. En el cuadro de diálogo **Agregar nuevo elemento**, en **Instalado**, seleccione **Gráficos** y, después, seleccione un formato de archivo apropiado para la imagen. Para obtener información sobre cómo elegir un formato de archivo según sus requisitos, consulte la sección siguiente.  
   
-3.  Especifique el **Nombre** del archivo de imagen y la **Ubicación** en la que quiera que se cree.  
+3. Especifique el **Nombre** del archivo de imagen y la **Ubicación** en la que quiera que se cree.  
   
-4.  Elija el botón de **Agregar** .  
+4. Elija el botón de **Agregar** .  
   
 ### <a name="choosing-the-image-format"></a>Elección del formato de imagen  
  Según cómo piense utilizar la imagen, determinados formatos de archivo pueden ser más adecuados que otros. Por ejemplo, es posible que algunos formatos no admitan una característica que necesita, como una transparencia o un formato de color concreto, o no proporcionen una compresión adecuada para el tipo de contenido de la imagen que ha planeado.  
@@ -111,10 +111,10 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
 |**Grid**|Habilita o deshabilita la cuadrícula que muestra los límites de píxeles. Es posible que la cuadrícula no aparezca hasta que haga zoom en la imagen.|  
 |**Ver el nivel de MIP siguiente**|Activa el siguiente nivel de MIP más grande en una cadena de asignación de MIP. El nivel de MIP activo se muestra en la superficie de diseño. Este elemento solo está disponible para las texturas que tienen niveles de MIP.|  
 |**Ver el nivel de MIP anterior**|Activa el siguiente nivel de MIP más pequeño en una cadena de asignación de MIP. El nivel de MIP activo se muestra en la superficie de diseño. Este elemento solo está disponible para las texturas que tienen niveles de MIP.|  
-|**Canal rojo**<br /><br /> **Canal verde**<br /><br /> **Canal azul**<br /><br /> **Canal alfa**|Habilita o deshabilita el canal de colores concreto. **Nota**: Al habilitar o deshabilitar sistemáticamente los canales de color, puede aislar los problemas que están relacionados con uno o varios de ellos. Por ejemplo, puede identificar una transparencia alfa incorrecta.|  
+|**Canal rojo**<br /><br /> **Canal verde**<br /><br /> **Canal azul**<br /><br /> **Canal alfa**|Habilita o deshabilita el canal de colores concreto. **Nota:**  Al habilitar o deshabilitar sistemáticamente los canales de color, puede aislar los problemas que están relacionados con uno o varios de ellos. Por ejemplo, puede identificar una transparencia alfa incorrecta.|  
 |**Fondo**|Habilita o deshabilita la presentación del fondo a través de las partes transparentes de la imagen. Puede elegir entre estas opciones para configurar cómo se muestra el fondo:<br /><br /> **Tablero**<br /> Utiliza un color verde junto con el color de fondo especificado para mostrar el fondo como un patrón de tablero. Puede usar esta opción para que las partes transparentes de la imagen sean más evidentes.<br /><br /> Fondo blanco<br /> Utiliza el color blanco para mostrar el fondo.<br /><br /> Fondo negro<br /> Utiliza el color negro para mostrar el fondo.<br /><br /> Fondo animado<br /> Gira lentamente el patrón de tablero. Puede usar esta opción para que las partes transparentes de la imagen sean más evidentes.|  
 |**Propiedades**|Abre o cierra alternativamente la ventana **Propiedades**.|  
-|**Avanzadas**|Contiene comandos y opciones adicionales.<br /><br /> **Filtros**<br /><br /> Proporciona varios filtros de imágenes habituales: **Blanco y negro**, **Desenfoque**, **Brillar**, **Oscurecer**, **Detección de bordes**, **Relieve**, **Invertir colores**, **Ripple**, **Tono sepia** y **Dar nitidez**.<br /><br /> **Motores gráficos**<br /><br /> **Representar con D3D11**<br /> Utiliza Direct3D 11 para representar la superficie de diseño del Editor de imágenes.<br /><br /> **Representar con D3D11WARP**<br /> Utiliza Windows Advanced Rasterization Platform (WARP) de Direct3D 11 para representar la superficie de diseño del Editor de imágenes.<br /><br /> **Herramientas**<br /><br /> **Voltear horizontalmente**<br /> Transpone la imagen alrededor de su eje horizontal, o x.<br /><br /> **Voltear verticalmente**<br /> Transpone la imagen alrededor de su eje vertical, o y.<br /><br /> **Generar MIP**<br /> Genera los niveles de MIP para una imagen. Si ya existen niveles de MIP, se vuelven a crear desde el nivel de MIP más grande. Se perderán los cambios realizados en los niveles de MIP más pequeños. Para guardar los niveles de MIP que ha generado, debe usar el formato .dds para guardar la imagen.<br /><br /> **Vista**<br /><br /> **Velocidad de fotogramas**<br /> Cuando esta opción está habilitada, muestra la velocidad de fotogramas en la esquina superior derecha de la superficie de diseño. La velocidad de fotogramas es el número de fotogramas dibujados por segundo. **Consejo**: Puede elegir el botón **Avanzado** para volver a ejecutar el último comando.|  
+|**Avanzadas**|Contiene comandos y opciones adicionales.<br /><br /> **Filtros**<br /><br /> Proporciona varios filtros de imagen comunes: **Blanco y negro**, **Desenfoque**, **Brighten**, **Oscurecer**, **Detección de bordes**, **Relieve**, **Invertir colores**, **Ondas**, **Tono sepia** y **Dar nitidez**.<br /><br /> **Motores gráficos**<br /><br /> **Representar con D3D11**<br /> Utiliza Direct3D 11 para representar la superficie de diseño del Editor de imágenes.<br /><br /> **Representar con D3D11WARP**<br /> Utiliza Windows Advanced Rasterization Platform (WARP) de Direct3D 11 para representar la superficie de diseño del Editor de imágenes.<br /><br /> **Herramientas**<br /><br /> **Voltear horizontalmente**<br /> Transpone la imagen alrededor de su eje horizontal, o x.<br /><br /> **Voltear verticalmente**<br /> Transpone la imagen alrededor de su eje vertical, o y.<br /><br /> **Generar MIP**<br /> Genera los niveles de MIP para una imagen. Si ya existen niveles de MIP, se vuelven a crear desde el nivel de MIP más grande. Se perderán los cambios realizados en los niveles de MIP más pequeños. Para guardar los niveles de MIP que ha generado, debe usar el formato .dds para guardar la imagen.<br /><br /> **Vista**<br /><br /> **Velocidad de fotogramas**<br /> Cuando esta opción está habilitada, muestra la velocidad de fotogramas en la esquina superior derecha de la superficie de diseño. La velocidad de fotogramas es el número de fotogramas dibujados por segundo. **Sugerencia:**  Puede hacer clic en el botón **Avanzadas** para volver a ejecutar el último comando.|  
   
  A continuación, se muestra la barra de herramientas **Editor de imágenes**.  
   
@@ -136,7 +136,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
 |**Recortar**|Recorta la imagen al tamaño de la selección activa.|  
   
 ### <a name="working-with-mip-levels"></a>Trabajar con niveles de MIP  
- Algunos formatos de imagen, como DirectDraw Surface (.dds), admiten niveles de MIP con nivel de detalle (LOD) del espacio de textura. Para obtener información sobre cómo generar y trabajar con niveles de MIP, consulte [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md).  
+ Algunos formatos de imagen, como DirectDraw Surface (.dds), admiten niveles de MIP con nivel de detalle (LOD) del espacio de textura. Para obtener información sobre cómo generar y trabajar con niveles de MIP, vea [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Trabajar con transparencia  
  Algunos formatos de imagen, como DirectDraw Surface (.dds), admiten la transparencia. La transparencia se puede utilizar de varias maneras, según la herramienta que use. Para especificar el nivel de transparencia de una selección de color, en la ventana **Propiedades**, establezca el componente **A** (alfa) de la selección de color. Le mostramos la manera en la que diferentes tipos de herramientas controlan cómo se aplica la transparencia:  
@@ -146,12 +146,12 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
 |**Lápiz**, **Pincel**, **Aerógrafo**, **Línea**, **Rectángulo**, **Rectángulo redondeado**, **Elipse**, **Texto**|Para combinar la selección de color activa con la imagen, en la ventana **Propiedades**, expanda el grupo de propiedades **Canales**, establezca la casilla de verificación **Dibujar** en el canal  **Alfa** y, a continuación, dibuje normalmente.<br /><br /> Para dibujar con la selección de color activa y dejar el valor alfa de la imagen en su lugar, desactive la casilla de verificación **Dibujar** del canal **Alfa** y, después, dibuje normalmente.|  
 |**Relleno**|Para combinar la selección de color activa con la imagen, elija el área que se deba rellenar.<br /><br /> Para utilizar la selección de color activa, incluido el valor del canal alfa, para sobrescribir la imagen, mantenga presionada la tecla Mayús y, a continuación, elija el área que se deba rellenar.|  
   
-###  <a name="ImageProperties"></a> Propiedades de la imagen  
+### <a name="ImageProperties"></a> Propiedades de la imagen  
  Puede utilizar la ventana **Propiedades** para especificar distintas propiedades de la imagen. Por ejemplo, puede establecer las propiedades de ancho y alto para cambiar el tamaño de la imagen.  
   
  En la tabla siguiente se describen las propiedades de la imagen.  
   
-|Propiedad.|Descripción|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
 |Ancho|El ancho de la imagen.|  
 |Alto|El alto de la imagen.|  
@@ -171,9 +171,9 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
 #### <a name="resizing-images"></a>Cambio del tamaño de las imágenes  
  Hay dos formas de cambiar el tamaño de una imagen. En ambos casos, el Editor de imágenes utiliza la interpolación bilineal para crear un nuevo muestreo de la imagen.  
   
--   En la ventana **Propiedades**, especifique nuevos valores para las propiedades **Ancho** y **Alto**.  
+- En la ventana **Propiedades**, especifique nuevos valores para las propiedades **Ancho** y **Alto**.  
   
--   Seleccione toda la imagen y utilice los marcadores de borde para cambiar el tamaño de la imagen.  
+- Seleccione toda la imagen y utilice los marcadores de borde para cambiar el tamaño de la imagen.  
   
 ### <a name="working-with-tools"></a>Trabajo con herramientas  
   
@@ -207,7 +207,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
 |Ctrl|||Copia y después cambia el tamaño del contenido de la región seleccionada.|  
 |Ctrl|Shift||Copia y después cambia proporcionalmente el tamaño del contenido de la región seleccionada.|  
   
-####  <a name="ToolProperties"></a> Propiedades de la herramienta  
+#### <a name="ToolProperties"></a> Propiedades de la herramienta  
  Cuando está seleccionada una herramienta, puede utilizar la ventana **Propiedades** para especificar los detalles de cómo afecta a la imagen. Por ejemplo, puede establecer el grosor de la herramienta **Lápiz** o el color de la herramienta **Pincel**.  
   
  Puede establecer un color de primer plano y un color de fondo. Ambos admiten un canal alfa para proporcionar opacidad definida por el usuario. La configuración se aplica a todas las herramientas. Si utiliza un mouse, el botón izquierdo se corresponde con el color de primer plano, mientras que el botón derecho se corresponde con el color de fondo.  
@@ -269,7 +269,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Title|Descripción|  
+|Título|Descripción|  
 |-----------|-----------------|  
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas que puede utilizar en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con recursos gráficos, como texturas e imágenes, modelos 3D y efectos de sombreador.|  
 |[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con modelos 3D.|  

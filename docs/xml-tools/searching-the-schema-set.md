@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbc41b24dd0e58dd24e0af99afe458d27f8ade6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070908"
 ---
-# <a name="search-the-schema-set"></a>Buscar el conjunto de esquemas
+# <a name="search-the-schema-set"></a>Búsqueda en el conjunto de esquemas
 
 El **Explorador de esquemas XML** permite buscar el esquema especificado en las siguientes maneras:
 
--   Búsqueda de palabra clave.
+- Búsqueda de palabra clave.
 
--   Búsqueda específica del esquema.
+- Búsqueda específica del esquema.
 
 ## <a name="keyword-search"></a>Búsqueda de palabra clave
 
@@ -31,11 +31,11 @@ El **Explorador de esquemas XML** permite buscar el esquema especificado en las 
 
  El **Explorador de esquemas XML** busca el esquema especificado para los siguientes atributos:
 
--   Cualquier atributo `name` o `ref` que coincida con la palabra clave especificada. Puede buscar elementos, atributos, tipos etc. por nombre.
+- Cualquier atributo `name` o `ref` que coincida con la palabra clave especificada. Puede buscar elementos, atributos, tipos etc. por nombre.
 
--   Los atributos `schemaLocation` de las instrucciones include.
+- Los atributos `schemaLocation` de las instrucciones include.
 
--   Los atributos `namespace` de las instrucciones import.
+- Los atributos `namespace` de las instrucciones import.
 
 ## <a name="schema-specific-search"></a>Búsqueda específica del esquema
 

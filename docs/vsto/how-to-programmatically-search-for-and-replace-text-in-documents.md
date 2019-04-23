@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01e3254c3716cd1c3aaeaa6ca76b33c95f525186
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9799e958903c56f5a3423f86736668a2affd87da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610637"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071452"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Filtrar Buscar y reemplazar texto en documentos mediante programación
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Procedimiento Buscar y reemplazar texto en documentos mediante programación
   El objeto <xref:Microsoft.Office.Interop.Word.Find> es miembro de los objetos <xref:Microsoft.Office.Interop.Word.Selection> y <xref:Microsoft.Office.Interop.Word.Range> y puede usar cualquiera de ellos para buscar texto en documentos de Microsoft Office Word. El comando replace es una extensión del comando find.
 
  Use un objeto <xref:Microsoft.Office.Interop.Word.Find> para recorrer un documento de Microsoft Office Word y buscar un determinado texto, formato o estilo y use la propiedad <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> para reemplazar cualquiera de los elementos encontrados.
@@ -101,20 +101,20 @@ ms.locfileid: "56610637"
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>Para buscar y reemplazar texto en documentos
 
-1.  Agregue el siguiente código de ejemplo a la clase `ThisDocument` o `ThisAddIn` del proyecto.
+1. Agregue el siguiente código de ejemplo a la clase `ThisDocument` o `ThisAddIn` del proyecto.
 
      [!code-vb[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#75)]
      [!code-csharp[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#75)]
 
      La clase <xref:Microsoft.Office.Interop.Word.Find> tiene un método <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> y la clase <xref:Microsoft.Office.Interop.Word.Replacement> también tiene su propio método <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A>. Al realizar operaciones de búsqueda y reemplazo, debe usar el método ClearFormatting de ambos objetos. Si solo lo usa en el objeto <xref:Microsoft.Office.Interop.Word.Find>, podría obtener resultados imprevistos en el texto de reemplazo.
 
-2.  Use el método <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> del objeto <xref:Microsoft.Office.Interop.Word.Find> para reemplazar los elementos encontrados. Para especificar los elementos que desea reemplazar, use el *reemplazar* parámetro. Este parámetro puede ser uno de los siguientes valores <xref:Microsoft.Office.Interop.Word.WdReplace>:
+2. Use el método <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> del objeto <xref:Microsoft.Office.Interop.Word.Find> para reemplazar los elementos encontrados. Para especificar los elementos que desea reemplazar, use el *reemplazar* parámetro. Este parámetro puede ser uno de los siguientes valores <xref:Microsoft.Office.Interop.Word.WdReplace>:
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> reemplaza todos los elementos encontrados.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> reemplaza todos los elementos encontrados.
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> no reemplaza ninguno de los elementos encontrados.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> no reemplaza ninguno de los elementos encontrados.
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> reemplaza el primer elemento encontrado.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> reemplaza el primer elemento encontrado.
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Establecer opciones de búsqueda en Word mediante programación](../vsto/how-to-programmatically-set-search-options-in-word.md)

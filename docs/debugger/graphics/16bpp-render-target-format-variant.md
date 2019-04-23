@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fd601b48489e7334013e1e9438c1b6a580457d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075797"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp representar variante del formato de destino
 Establece el formato de píxeles en DXGI_FORMAT_B5G6R5_UNORM para todos los objetivos de presentación y búferes de reserva.
@@ -48,11 +48,11 @@ Las aplicaciones que forman parte de una cadena de intercambio tienen un formato
 ## <a name="remarks"></a>Comentarios
  El formato de objetivo de presentación se restablece a DXGI_FORMAT_B5G6R5_UNORM en cada llamada a `ID3D11Device::CreateTexture2D` que crea un objetivo de presentación. En concreto, el formato se reemplaza cuando el objeto D3D11_TEXTURE2D_DESC pasado a pDesc describe un objetivo de presentación, que es:
 
--   El miembro BindFlags tiene el conjunto de marcadores D3D11_BIND_REDNER_TARGET.
+- El miembro BindFlags tiene el conjunto de marcadores D3D11_BIND_REDNER_TARGET.
 
--   El miembro BindFlags tiene el conjunto de marcadores D3D11_BIND_DEPTH_STENCIL borrado.
+- El miembro BindFlags tiene el conjunto de marcadores D3D11_BIND_DEPTH_STENCIL borrado.
 
--   El miembro Usage está establecido en D3D11_USAGE_DEFAULT.
+- El miembro Usage está establecido en D3D11_USAGE_DEFAULT.
 
 ## <a name="restrictions-and-limitations"></a>Restricciones y limitaciones
  Como el formato B5G6R5 no tiene ningún canal alfa, el contenido alfa no se conserva con esta variante. Si la presentación de su aplicación requiere un canal alfa en el objetivo de presentación, no puede simplemente cambiar al formato B5G6R5.

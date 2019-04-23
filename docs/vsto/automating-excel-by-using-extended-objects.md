@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03ea220bf886352a05cc67bdd44a9504dcd86964
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8a08b58871652cea6332f4239e9da98b28f28e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070061"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatizar Excel usando objetos extendidos
   Al desarrollar soluciones de Excel en Visual Studio, puede usar *elementos host* y *controles host*en sus soluciones. Estos son objetos que extienden algunos objetos muy usados en el modelo de objetos de Excel (es decir, el modelo de objetos expuesto por el ensamblado de interoperabilidad primario para Excel), como son los objetos <xref:Microsoft.Office.Interop.Excel.Worksheet> y <xref:Microsoft.Office.Interop.Excel.Range> . Los objetos extendidos se comportan como los objetos de Excel en los que se basan, pero agregan características adicionales, como nuevas capacidades de enlace de eventos y datos a los objetos.
@@ -37,11 +37,11 @@ ms.locfileid: "56600859"
 ## <a name="excel-host-items"></a>Elementos host de Excel
  Los proyectos de Excel le proporcionan acceso a varios elementos host:
 
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Este elemento host contiene y representa una hoja de cálculo en el proyecto. También actúa como contenedor de controles administrados, incluyendo controles host y controles de Windows Forms, y mantiene información acerca de los controles en su superficie. Para obtener más información, consulte [elemento host Worksheet](../vsto/worksheet-host-item.md).
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>. Este elemento host contiene y representa una hoja de cálculo en el proyecto. También actúa como contenedor de controles administrados, incluyendo controles host y controles de Windows Forms, y mantiene información acerca de los controles en su superficie. Para obtener más información, consulte [elemento host Worksheet](../vsto/worksheet-host-item.md).
 
--   <xref:Microsoft.Office.Tools.Excel.Workbook>. Este elemento host representa el libro en el proyecto y actúa como contenedor de componentes compartidos por todas las hojas de cálculo del libro. Para obtener más información, consulte [elemento host Workbook](../vsto/workbook-host-item.md).
+- <xref:Microsoft.Office.Tools.Excel.Workbook>. Este elemento host representa el libro en el proyecto y actúa como contenedor de componentes compartidos por todas las hojas de cálculo del libro. Para obtener más información, consulte [elemento host Workbook](../vsto/workbook-host-item.md).
 
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Este elemento host representa una hoja de cálculo de Excel que solo contiene un gráfico y expone eventos.
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Este elemento host representa una hoja de cálculo de Excel que solo contiene un gráfico y expone eventos.
 
      Cuando se agrega una hoja de gráfico en tiempo de diseño como una nueva hoja en el proyecto de personalización de nivel de documento de Microsoft Office Excel, Visual Studio crea automáticamente un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet> .
 
@@ -52,13 +52,13 @@ ms.locfileid: "56600859"
 
  Para obtener más información acerca de los controles host que puede usar en proyectos de Excel, consulte los siguientes temas:
 
--   [Control de gráfico](../vsto/chart-control.md)
+- [Control de gráfico](../vsto/chart-control.md)
 
--   [ListObject (control)](../vsto/listobject-control.md)
+- [ListObject (control)](../vsto/listobject-control.md)
 
--   [NamedRange (control)](../vsto/namedrange-control.md)
+- [NamedRange (control)](../vsto/namedrange-control.md)
 
--   [XmlMappedRange (control)](../vsto/xmlmappedrange-control.md)
+- [XmlMappedRange (control)](../vsto/xmlmappedrange-control.md)
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Rellenar los controles ListObject con datos](../vsto/how-to-fill-listobject-controls-with-data.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Especificar runtime de .NET Framework | Microsoft Docs'
+title: Procedimiento Especificar el runtime de .NET Framework | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,44 +12,44 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ce968e53dc00cd46d27154f4c6217fcc815ade1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2f631e8639c1004fa2cb005da3b6c8bcb27f1a9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076516"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Cómo: Especificar runtime de .NET Framework
+# <a name="how-to-specify-the-net-framework-runtime"></a>Procedimiento Especifique el tiempo de ejecución de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Con el lanzamiento de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], las aplicaciones se pueden componer de módulos que se compilaron con versiones diferentes del runtime de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. De forma predeterminada, las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generan perfiles del primer runtime cargado por la aplicación. Puede especificar el runtime del que se deben generar perfiles cuando se inicia una aplicación con el generador de perfiles y al adjuntar el generador de perfiles a una aplicación que ya se está ejecutando.  
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>Para especificar el runtime de .NET Framework del que generar perfiles al iniciar una aplicación con el generador de perfiles  
   
-1.  En el **Explorador de rendimiento**, haga clic con el botón derecho en la sesión de rendimiento, haga clic en **Propiedades** y después haga clic en **Avanzadas**.  
+1. En el **Explorador de rendimiento**, haga clic con el botón derecho en la sesión de rendimiento, haga clic en **Propiedades** y después haga clic en **Avanzadas**.  
   
      El cuadro de lista **Versión de CLR de destino** muestra **Automática** y las versiones del runtime de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que están instaladas en el equipo.  
   
-2.  Realice uno de estos pasos:  
+2. Realice uno de estos pasos:  
   
-    -   Haga clic en la versión de CLR de la que desea generar perfiles.  
+    - Haga clic en la versión de CLR de la que desea generar perfiles.  
   
-    -   Haga clic en **Automático** para generar perfiles de la primera versión que carga la aplicación.  
+    - Haga clic en **Automático** para generar perfiles de la primera versión que carga la aplicación.  
   
 ### <a name="to-specify-the-net-framework-run-time-to-profile-when-attaching-the-profiler-to-an-application"></a>Para especificar el runtime de .NET Framework del que generar perfiles al adjuntar el generador de perfiles a una aplicación  
   
-1.  En el menú Analizar, seleccione Generador de perfiles y después haga clic en Asociar/desasociar.  
+1. En el menú Analizar, seleccione Generador de perfiles y después haga clic en Asociar/desasociar.  
   
-2.  En el cuadro de diálogo Adjuntar generador de perfiles al proceso, haga clic en el proceso del que desea generar perfiles.  
+2. En el cuadro de diálogo Adjuntar generador de perfiles al proceso, haga clic en el proceso del que desea generar perfiles.  
   
      El cuadro de lista **Versión de CLR de destino** muestra **Automático** y las versiones del runtime de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que están instaladas en el equipo.  
   
-3.  Realice uno de estos pasos:  
+3. Realice uno de estos pasos:  
   
-    -   Haga clic en la versión de CLR de la que desea generar perfiles.  
+    - Haga clic en la versión de CLR de la que desea generar perfiles.  
   
-    -   Haga clic en **Automático** para generar perfiles de la versión que se carga cuando el generador de perfiles se adjunta a la aplicación.
+    - Haga clic en **Automático** para generar perfiles de la versión que se carga cuando el generador de perfiles se adjunta a la aplicación.

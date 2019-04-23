@@ -13,12 +13,12 @@ ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f0fa6e59b8baa32fefffea7aa4810d688340467
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab4389c936b71ba8ccbb21b22d0a5e533282026d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067448"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de prueba 3: Desproteger o deshacer desprotección
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Esta área de prueba de complemento de control de código fuente trata los eleme
   
 ##### <a name="check-out"></a>Check-out:  
   
--   **Archivo**, **Control de código fuente**, **desproteger**.  
+- **Archivo**, **Control de código fuente**, **desproteger**.  
   
--   **Archivo**, **desproteger**.  
+- **Archivo**, **desproteger**.  
   
--   Menú contextual, **desproteger**.  
+- Menú contextual, **desproteger**.  
   
--   Deshacer desprotección: **Archivo**, **Control de código fuente**, **Deshacer desprotección**.  
+- Deshacer desprotección: **Archivo**, **Control de código fuente**, **Deshacer desprotección**.  
   
 ## <a name="common-expected-behavior"></a>Comportamiento esperado comunes  
   
--   Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.  
+- Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.  
   
--   El almacén de versiones de la desprotección atributos para el usuario correcto.  
+- El almacén de versiones de la desprotección atributos para el usuario correcto.  
   
--   La fecha y hora de la desprotección son correctos (según la configuración del usuario).  
+- La fecha y hora de la desprotección son correctos (según la configuración del usuario).  
   
 ## <a name="test-cases"></a>Casos de prueba  
  Los siguientes son casos de prueba concretos para el área de prueba de desprotección y la desprotección.  
@@ -72,11 +72,11 @@ Esta área de prueba de complemento de control de código fuente trata los eleme
   
 #### <a name="expected-behavior"></a>Comportamiento esperado  
   
--   No se puede usar **comprobar exclusivamente** comando mientras está desconectado del almacén de versiones.  
+- No se puede usar **comprobar exclusivamente** comando mientras está desconectado del almacén de versiones.  
   
--   No se puede usar **Deshacer desprotección** comando mientras está desconectado del almacén de versiones.  
+- No se puede usar **Deshacer desprotección** comando mientras está desconectado del almacén de versiones.  
   
--   **Compartido desproteger** comando funciona.  
+- **Compartido desproteger** comando funciona.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
@@ -87,13 +87,13 @@ Esta área de prueba de complemento de control de código fuente trata los eleme
   
 #### <a name="expected-behavior"></a>Comportamiento esperado  
   
--   Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.  
+- Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.  
   
--   El almacén de versiones de la desprotección atributos para el usuario correcto.  
+- El almacén de versiones de la desprotección atributos para el usuario correcto.  
   
--   La fecha y hora de la desprotección son correctos (según la configuración del usuario).  
+- La fecha y hora de la desprotección son correctos (según la configuración del usuario).  
   
--   La copia local de la carpeta o archivo de destino es grabable.  
+- La copia local de la carpeta o archivo de destino es grabable.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
@@ -106,13 +106,13 @@ Esta área de prueba de complemento de control de código fuente trata los eleme
   
 #### <a name="expected-behavior"></a>Comportamiento esperado  
   
--   Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.  
+- Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.  
   
--   El almacén de versiones de la desprotección atributos para el usuario correcto.  
+- El almacén de versiones de la desprotección atributos para el usuario correcto.  
   
--   La fecha y hora de la desprotección es correcto (según la configuración del usuario).  
+- La fecha y hora de la desprotección es correcto (según la configuración del usuario).  
   
--   La copia local de la carpeta o archivo de destino es grabable.  
+- La copia local de la carpeta o archivo de destino es grabable.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
@@ -124,9 +124,9 @@ Esta área de prueba de complemento de control de código fuente trata los eleme
   
 #### <a name="expected-behavior"></a>Comportamiento esperado  
   
--   El valor predeterminado se basa en el usuario **Desproteger versión Local** configuración. Si el usuario ha elegido Desproteger versión local, el valor predeterminado de la desprotección es siempre volverá a la versión que desprotegió.  
+- El valor predeterminado se basa en el usuario **Desproteger versión Local** configuración. Si el usuario ha elegido Desproteger versión local, el valor predeterminado de la desprotección es siempre volverá a la versión que desprotegió.  
   
--   Tras la aceptación de la fase de reversión, los iconos de **el Explorador de soluciones** se actualizan para afectados los archivos y el elemento se quita de la **protecciones pendientes** ventana.  
+- Tras la aceptación de la fase de reversión, los iconos de **el Explorador de soluciones** se actualizan para afectados los archivos y el elemento se quita de la **protecciones pendientes** ventana.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  

@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995786"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072856"
 ---
 # <a name="autos-and-locals-windows"></a>Ventanas de variables locales y automáticas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ void main() {
   
  También se pueden ver los valores devueltos de funciones y métodos en determinadas circunstancias. Consulte [View return values of method calls](#bkmk_returnValue) a continuación.  
   
-##  <a name="bkmk_returnValue"></a> View return values of method calls  
+## <a name="bkmk_returnValue"></a> View return values of method calls  
  En el código .NET y C++ se pueden examinar los valores devueltos cuando una llamada al método se ejecuta paso a paso por procedimientos o paso a paso para salir. Esta funcionalidad resulta útil cuando el resultado de una llamada al método no se almacena en una variable local; por ejemplo, cuando se usa un método como parámetro o valor devuelto de otro método.  
   
  El siguiente código C# agrega los valores devueltos de dos funciones:  
@@ -133,11 +133,11 @@ private static int subtractVars(int i, int j)
   
  Sin embargo, se debe tener cuidado al cambiar los valores. Estas son algunas causas posibles:  
   
--   La evaluación de algunas expresiones puede cambiar el valor de una variable o afectar de otra forma al estado del programa. Por ejemplo, evaluar `var1 = ++var2` cambia el valor de `var1` y `var2`.  
+- La evaluación de algunas expresiones puede cambiar el valor de una variable o afectar de otra forma al estado del programa. Por ejemplo, evaluar `var1 = ++var2` cambia el valor de `var1` y `var2`.  
   
      Las expresiones que cambian datos podrían tener [efectos secundarios](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), que pueden generar resultados inesperados si no se tienen en cuenta. Asegúrese de que comprende las consecuencias de este cambio antes de efectuarlo.  
   
--   La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inofensiva puede causar cambios en alguno de los bits menos significativos de la variable de punto flotante.  
+- La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inofensiva puede causar cambios en alguno de los bits menos significativos de la variable de punto flotante.  
   
 ## <a name="debug-location-toolbar"></a>Barra de herramientas Ubicación de depuración  
  Puede usar la barra de herramientas **Ubicación de depuración** para seleccionar la función, el subproceso o el programa que desee. Establezca un punto de interrupción e inicie la depuración. (Si no ve esta barra de herramientas, puede habilitarla haciendo clic en una parte vacía del área de la barra de herramientas. Se mostrará una lista de barras de herramientas. Seleccione **Ubicación de depuración**). Cuando se alcanza el punto de interrupción, se detiene la ejecución y se puede ver la barra de herramientas de ubicación de depuración, situada en la fila inferior de la ilustración siguiente:  

@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630878"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067188"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Área de prueba 2: Obtener de Control de código fuente
+# <a name="test-area-2-get-from-source-control"></a>Área de prueba 2: Obtención desde el control de código fuente
 Esta área de prueba trata los casos de prueba para recuperar los elementos del almacén de versiones mediante el comando Get. Estos casos de prueba se pueden aplicar a ambos local y a los proyectos Web.
 
 ## <a name="command-menu-access"></a>Acceso al menú de comandos
@@ -26,13 +26,13 @@ Esta área de prueba trata los casos de prueba para recuperar los elementos del 
 
 ##### <a name="get-latest-version"></a>Obtener la versión más reciente:
 
--   **Archivo**, **Control de código fuente**, **obtener última versión**.
+- **Archivo**, **Control de código fuente**, **obtener última versión**.
 
--   **Archivo**, **obtener última versión**.
+- **Archivo**, **obtener última versión**.
 
--   Menú contextual, **obtener última versión**.
+- Menú contextual, **obtener última versión**.
 
--   Obtener: **Archivo**, **Control de código fuente**, **obtener**.
+- Obtener: **Archivo**, **Control de código fuente**, **obtener**.
 
 ## <a name="expected-behavior"></a>Comportamiento esperado
 

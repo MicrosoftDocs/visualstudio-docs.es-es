@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067357"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilar y generar en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensambla
 
  Desde el IDE se pueden realizar las siguientes tareas adicionales:
 
--   [Cambiar el directorio de salida de la compilación](../ide/how-to-change-the-build-output-directory.md).
+- [Cambiar el directorio de salida de la compilación](../ide/how-to-change-the-build-output-directory.md).
 
--   [Identificar los proyectos que dependen de la salida de otro proyecto para que se compilen correctamente](../ide/how-to-create-and-remove-project-dependencies.md).
+- [Identificar los proyectos que dependen de la salida de otro proyecto para que se compilen correctamente](../ide/how-to-create-and-remove-project-dependencies.md).
 
--   [Cambiar el volumen de información incluida en el registro de compilación o en la ventana de salida para las compilaciones](../ide/how-to-view-save-and-configure-build-log-files.md).
+- [Cambiar el volumen de información incluida en el registro de compilación o en la ventana de salida para las compilaciones](../ide/how-to-view-save-and-configure-build-log-files.md).
 
--   [Ocultar determinadas advertencias del compilador para Visual C#, Visual C++ o Visual Basic](../ide/how-to-suppress-compiler-warnings.md).
+- [Ocultar determinadas advertencias del compilador para Visual C#, Visual C++ o Visual Basic](../ide/how-to-suppress-compiler-warnings.md).
 
--   [Especificar acciones previas y posteriores a la compilación personalizadas para una compilación](../ide/specifying-custom-build-events-in-visual-studio.md).
+- [Especificar acciones previas y posteriores a la compilación personalizadas para una compilación](../ide/specifying-custom-build-events-in-visual-studio.md).
 
--   Mejorar el rendimiento de la compilación mediante compilaciones paralelas. Para obtener más información, vea [Compilar varios proyectos en paralelo con MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) o la publicación del blog [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Ajustar el paralelismo de compilación de C++).
+- Mejorar el rendimiento de la compilación mediante compilaciones paralelas. Para obtener más información, vea [Compilar varios proyectos en paralelo con MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) o la publicación del blog [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Ajustar el paralelismo de compilación de C++).
 
 ## <a name="see-also"></a>Vea también
  [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md) [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) [compilar proyectos de sitio Web (compilación)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Cómo: Creación y eliminación de dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md)

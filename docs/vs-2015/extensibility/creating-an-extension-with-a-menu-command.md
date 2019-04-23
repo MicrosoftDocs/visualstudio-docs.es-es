@@ -13,12 +13,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076696"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Creación de una extensión con un comando de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ Este tutorial muestra cómo crear una extensión con un comando de menú que se 
   
 ## <a name="creating-a-menu-command"></a>Creación de un comando de menú  
   
-1.  Cree un proyecto VSIX denominado **FirstMenuCommand**. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C# / extensibilidad**.  
+1. Cree un proyecto VSIX denominado **FirstMenuCommand**. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C# / extensibilidad**.  
   
-2.  Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizado denominada **FirstCommand**. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C# / extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para **FirstCommand.cs**.  
+2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizado denominada **FirstCommand**. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C# / extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para **FirstCommand.cs**.  
   
-3.  Compile la solución y comience la depuración.  
+3. Compile la solución y comience la depuración.  
   
      Aparece la instancia experimental de Visual Studio. Para obtener más información acerca de la instancia experimental, consulte [la instancia Experimental](../extensibility/the-experimental-instance.md).  
   
-4.  En la instancia experimental, abra el **herramientas / extensiones y actualizaciones** ventana. Debería ver el **FirstMenuCommand** extensión aquí. (Si abre **extensiones y actualizaciones** en su instancia de trabajo de Visual Studio, no verá **FirstMenuCommand**).  
+4. En la instancia experimental, abra el **herramientas / extensiones y actualizaciones** ventana. Debería ver el **FirstMenuCommand** extensión aquí. (Si abre **extensiones y actualizaciones** en su instancia de trabajo de Visual Studio, no verá **FirstMenuCommand**).  
   
      Ahora, vaya a la **herramientas** menú en la instancia experimental. Debería ver **FirstCommand invocar** comando. En este momento, aparecerá un cuadro de mensaje que dice "FirstCommandPackage dentro de FirstMenuCommand.FirstCommand.MenuItemCallback()". Veremos cómo se inicia realmente el Bloc de notas desde este comando en la sección siguiente.  
   
 ## <a name="changing-the-menu-command-handler"></a>Cambiar el controlador de comandos de menú  
  Ahora vamos a actualizar el controlador de comandos para iniciar el Bloc de notas.  
   
-1.  Detener la depuración y vuelva a su instancia de trabajo de Visual Studio. Abra el archivo FirstCommand.cs y agregue la siguiente instrucción using:  
+1. Detener la depuración y vuelva a su instancia de trabajo de Visual Studio. Abra el archivo FirstCommand.cs y agregue la siguiente instrucción using:  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2.  Busque el constructor FirstCommand privado. Aquí es donde el comando está enlazado al servicio de comandos y se especifica el controlador de comandos. Cambiar el nombre del controlador de comandos para StartNotepad, como se indica a continuación:  
+2. Busque el constructor FirstCommand privado. Aquí es donde el comando está enlazado al servicio de comandos y se especifica el controlador de comandos. Cambiar el nombre del controlador de comandos para StartNotepad, como se indica a continuación:  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -74,7 +74,7 @@ Este tutorial muestra cómo crear una extensión con un comando de menú que se 
     }  
     ```  
   
-3.  Quite el método MenuItemCallback y agregue un método StartNotepad que solo se iniciará el Bloc de notas:  
+3. Quite el método MenuItemCallback y agregue un método StartNotepad que solo se iniciará el Bloc de notas:  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -85,7 +85,7 @@ Este tutorial muestra cómo crear una extensión con un comando de menú que se 
     }  
     ```  
   
-4.  Ahora, pruébela. Cuando empiece a depurar el proyecto y haga clic en **herramientas / invocar FirstCommand**, debería ver una instancia del Bloc de notas que aparezcan.  
+4. Ahora, pruébela. Cuando empiece a depurar el proyecto y haga clic en **herramientas / invocar FirstCommand**, debería ver una instancia del Bloc de notas que aparezcan.  
   
      Puede usar una instancia de la <xref:System.Diagnostics.Process> clase para ejecutar cualquier archivo ejecutable, no solo el Bloc de notas. Pruébelo con calc.exe, por ejemplo.  
   
@@ -94,9 +94,9 @@ Este tutorial muestra cómo crear una extensión con un comando de menú que se 
   
  Puede tener acceso a esta secuencia de comandos de dos maneras:  
   
-1.  Desde el escritorio, busque **restablecer la instancia Experimental de Visual Studio 2015**.  
+1. Desde el escritorio, busque **restablecer la instancia Experimental de Visual Studio 2015**.  
   
-2.  Ejecute lo siguiente desde la línea de comandos:  
+2. Ejecute lo siguiente desde la línea de comandos:  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
@@ -119,11 +119,11 @@ Este tutorial muestra cómo crear una extensión con un comando de menú que se 
   
 1. Puede hacer muchas más cosas con un comando de menú simple:  
   
-   1.  Agregue su propio icono: [Adición de iconos a comandos de menú](../extensibility/adding-icons-to-menu-commands.md)  
+   1. Agregue su propio icono: [Adición de iconos a comandos de menú](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Cambiar el texto del comando de menú: [Cambio del texto de un comando de menú](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. Cambiar el texto del comando de menú: [Cambio del texto de un comando de menú](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Agregar un menú contextual a un comando: [Enlace de métodos abreviados de teclado a elementos de menú](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. Agregar un menú contextual a un comando: [Enlace de métodos abreviados de teclado a elementos de menú](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2. Agregar distintos tipos de comandos, menús y barras de herramientas: [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)  
   

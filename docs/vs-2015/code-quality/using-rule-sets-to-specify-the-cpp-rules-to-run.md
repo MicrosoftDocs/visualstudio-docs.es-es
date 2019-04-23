@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 55ce3ac93f280d5b5cd29fdc533035dc32cbaa8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068644"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de reglas para especificar las reglas C++ que se van a ejecutar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Para modificar un conjunto de reglas en el editor de conjuntos de reglas  
   
--   Para cambiar el nombre para mostrar del conjunto de reglas, en el **vista** menú, elija **ventana propiedades**. Escriba el nombre para mostrar en el **nombre** cuadro. Observe que el nombre para mostrar puede diferir del nombre de archivo.  
+- Para cambiar el nombre para mostrar del conjunto de reglas, en el **vista** menú, elija **ventana propiedades**. Escriba el nombre para mostrar en el **nombre** cuadro. Observe que el nombre para mostrar puede diferir del nombre de archivo.  
   
--   Para agregar todas las reglas del grupo a un conjunto de reglas personalizado, active la casilla del grupo. Para quitar todas las reglas del grupo, desactive la casilla.  
+- Para agregar todas las reglas del grupo a un conjunto de reglas personalizado, active la casilla del grupo. Para quitar todas las reglas del grupo, desactive la casilla.  
   
--   Para agregar una regla concreta al conjunto de reglas personalizado, active la casilla de la regla. Para quitar la regla del conjunto de reglas, desactive la casilla.  
+- Para agregar una regla concreta al conjunto de reglas personalizado, active la casilla de la regla. Para quitar la regla del conjunto de reglas, desactive la casilla.  
   
--   Para cambiar la acción realizada cuando se infringe una regla en un análisis de código, elija el **acción** por la regla de campo y, a continuación, elija uno de los valores siguientes:  
+- Para cambiar la acción realizada cuando se infringe una regla en un análisis de código, elija el **acción** por la regla de campo y, a continuación, elija uno de los valores siguientes:  
   
      **Advertir** -genera una advertencia.  
   
@@ -59,20 +59,20 @@ En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](
   
 #### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Para agrupar, filtrar o cambiar los campos del editor de conjuntos de reglas mediante la barra de herramientas del editor  
   
--   Para expandir las reglas en todos los grupos, elija **Expandir todo**.  
+- Para expandir las reglas en todos los grupos, elija **Expandir todo**.  
   
--   Para contraer las reglas en todos los grupos, elija **Contraer todo**.  
+- Para contraer las reglas en todos los grupos, elija **Contraer todo**.  
   
--   Para cambiar el campo que las reglas se agrupan por, elija el campo desde el **Group By** lista. Para mostrar las reglas desagrupadas, seleccione  **\<None >**.  
+- Para cambiar el campo que las reglas se agrupan por, elija el campo desde el **Group By** lista. Para mostrar las reglas desagrupadas, seleccione  **\<None >**.  
   
--   Para agregar o quitar campos en las columnas de la regla, elija **opciones de columna**.  
+- Para agregar o quitar campos en las columnas de la regla, elija **opciones de columna**.  
   
--   Para ocultar reglas que no se aplican a la solución actual, elija **ocultar reglas que no se aplican a la solución actual**.  
+- Para ocultar reglas que no se aplican a la solución actual, elija **ocultar reglas que no se aplican a la solución actual**.  
   
--   Para alternar entre mostrar y ocultar reglas que tienen asignada la acción de Error, elija **Mostrar reglas que pueden generar errores de análisis de código**.  
+- Para alternar entre mostrar y ocultar reglas que tienen asignada la acción de Error, elija **Mostrar reglas que pueden generar errores de análisis de código**.  
   
--   Para alternar entre mostrar y ocultar reglas que tienen asignadas la acción advertencia, elija **Mostrar reglas que pueden generar advertencias de análisis de código**.  
+- Para alternar entre mostrar y ocultar reglas que tienen asignadas la acción advertencia, elija **Mostrar reglas que pueden generar advertencias de análisis de código**.  
   
--   Para alternar entre mostrar y ocultar reglas que tienen asignada la **ninguno** acción, elija **Mostrar reglas no habilitadas**.  
+- Para alternar entre mostrar y ocultar reglas que tienen asignada la **ninguno** acción, elija **Mostrar reglas no habilitadas**.  
   
--   Para agregar o quitar conjuntos de reglas predeterminados para el conjunto de reglas actual de Microsoft, elija **agregar o quitar conjuntos de reglas secundarios**.
+- Para agregar o quitar conjuntos de reglas predeterminados para el conjunto de reglas actual de Microsoft, elija **agregar o quitar conjuntos de reglas secundarios**.

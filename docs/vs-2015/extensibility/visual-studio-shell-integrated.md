@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59003148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074130"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,15 +68,15 @@ El shell integrado de Visual Studio incluye el entorno de desarrollo integrado (
 ## <a name="features-not-included-in-the-integrated-shell"></a>Características no incluidas en el Shell integrado  
  La siguiente es una lista de características que no están incluidos en el shell integrado:  
   
--   Diseñador de clases  
+- Diseñador de clases  
   
--   PreEmptive Protection - Dotfuscator  
+- PreEmptive Protection - Dotfuscator  
   
--   Características del lenguaje  
+- Características del lenguaje  
   
--   VSHost  
+- VSHost  
   
--   Ningún idioma de Visual Studio o sus plantillas de proyecto asociado o plantillas de elemento de proyecto, se incluyen en el shell integrado. Implementaciones específicas de idioma de otras características no se incluyen, para fragmentos de código de Visual Basic de ejemplo.  
+- Ningún idioma de Visual Studio o sus plantillas de proyecto asociado o plantillas de elemento de proyecto, se incluyen en el shell integrado. Implementaciones específicas de idioma de otras características no se incluyen, para fragmentos de código de Visual Basic de ejemplo.  
   
 ## <a name="see-also"></a>Vea también  
  [Ampliación de introducción a Visual Studio](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

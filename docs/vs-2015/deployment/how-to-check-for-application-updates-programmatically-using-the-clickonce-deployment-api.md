@@ -1,5 +1,5 @@
 ---
-title: Filtrar Buscar actualizaciones de aplicaciones mediante programación con la API de implementación ClickOnce | Documentos de Microsoft
+title: Procedimiento Buscar actualizaciones de aplicaciones mediante programación con la API de implementación ClickOnce | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,14 +16,14 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac7a5665b287f51e59d99d21802acc252a55a99a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0c2b544a72f8a50000b48092658254c6b978a1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074354"
 ---
-# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Filtrar Comprobación de actualizaciones de aplicaciones mediante programación utilizando la API de implementación de ClickOnce
+# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Procedimiento Comprobación de actualizaciones de aplicaciones mediante programación utilizando la API de implementación de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ClickOnce ofrece dos maneras de actualizar una aplicación una vez que se implementa. En el primer método, puede configurar la implementación de ClickOnce para buscar automáticamente actualizaciones en determinados intervalos. En el segundo método, puede escribir código que usa el <xref:System.Deployment.Application.ApplicationDeployment> clase para comprobar si hay actualizaciones en función de un evento, como una solicitud de usuario.  
@@ -37,19 +37,19 @@ ClickOnce ofrece dos maneras de actualizar una aplicación una vez que se implem
   
 ### <a name="to-check-for-updates-programmatically"></a>Para comprobar las actualizaciones mediante programación  
   
-1.  Cree una nueva aplicación de Windows Forms mediante sus herramientas preferidas de la línea de comandos o visuales.  
+1. Cree una nueva aplicación de Windows Forms mediante sus herramientas preferidas de la línea de comandos o visuales.  
   
-2.  Cree cualquier botón, el elemento de menú u otro elemento de interfaz de usuario desea que los usuarios para que se seleccione esta opción para comprobar si hay actualizaciones. Desde el controlador de eventos de ese elemento, llame al método siguiente para buscar e instalar las actualizaciones.  
+2. Cree cualquier botón, el elemento de menú u otro elemento de interfaz de usuario desea que los usuarios para que se seleccione esta opción para comprobar si hay actualizaciones. Desde el controlador de eventos de ese elemento, llame al método siguiente para buscar e instalar las actualizaciones.  
   
      [!code-cpp[ClickOnceAPI#6](../snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#6)]
      [!code-csharp[ClickOnceAPI#6](../snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#6)]
      [!code-vb[ClickOnceAPI#6](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#6)]  
   
-3.  Compile la aplicación.  
+3. Compile la aplicación.  
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Utilizar Mage.exe para implementar una aplicación que busca actualizaciones mediante programación  
   
--   Siga las instrucciones para implementar su aplicación mediante Mage.exe como se explica en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Al llamar a Mage.exe para generar el manifiesto de implementación, asegúrese de usar el modificador de línea de comandos `providerUrl`así como para especificar la dirección URL donde ClickOnce debe comprobar las actualizaciones. Si la aplicación se actualizará desde [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), por ejemplo, la llamada para generar el manifiesto de implementación podría ser similar al siguiente:  
+- Siga las instrucciones para implementar su aplicación mediante Mage.exe como se explica en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Al llamar a Mage.exe para generar el manifiesto de implementación, asegúrese de usar el modificador de línea de comandos `providerUrl`así como para especificar la dirección URL donde ClickOnce debe comprobar las actualizaciones. Si la aplicación se actualizará desde [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), por ejemplo, la llamada para generar el manifiesto de implementación podría ser similar al siguiente:  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -57,7 +57,7 @@ ClickOnce ofrece dos maneras de actualizar una aplicación una vez que se implem
   
 ### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Mediante MageUI.exe para implementar una aplicación que busca actualizaciones mediante programación  
   
--   Siga las instrucciones para implementar su aplicación mediante Mage.exe como se explica en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). En el **opciones de implementación** pestaña, establezca el **iniciar ubicación** campo al manifiesto de aplicación ClickOnce debe comprobar las actualizaciones. En el **opciones de actualización** ficha, desactive la **esta aplicación debe buscar actualizaciones** casilla de verificación.  
+- Siga las instrucciones para implementar su aplicación mediante Mage.exe como se explica en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). En el **opciones de implementación** pestaña, establezca el **iniciar ubicación** campo al manifiesto de aplicación ClickOnce debe comprobar las actualizaciones. En el **opciones de actualización** ficha, desactive la **esta aplicación debe buscar actualizaciones** casilla de verificación.  
   
 ## <a name="net-framework-security"></a>Seguridad de .NET Framework  
  La aplicación debe tener permisos de plena confianza para utilizar la actualización mediante programación.  

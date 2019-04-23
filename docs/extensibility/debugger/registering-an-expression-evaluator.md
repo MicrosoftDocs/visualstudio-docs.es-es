@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2b30a3b1ee02a6ac64c66aa7d80a35dc45a683a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715315"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073376"
 ---
 # <a name="register-an-expression-evaluator"></a>Registrar un evaluador de expresiones
 > [!IMPORTANT]
@@ -106,9 +106,9 @@ namespace EEMC
 ### <a name="dll-server-process"></a>Proceso de servidor DLL
  Al registrar el EE, el servidor DLL:
 
-1.  Registra el generador de clases `CLSID` según las convenciones de COM normales.
+1. Registra el generador de clases `CLSID` según las convenciones de COM normales.
 
-2.  Llama a la función auxiliar `SetEEMetric` para registrar con Visual Studio, las métricas EE se muestra en la tabla siguiente. La función `SetEEMetric` y las métricas que se especifica como sigue forman parte de la *dbgmetric.lib* biblioteca. Consulte [aplicaciones auxiliares de SDK para la depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) para obtener más información.
+2. Llama a la función auxiliar `SetEEMetric` para registrar con Visual Studio, las métricas EE se muestra en la tabla siguiente. La función `SetEEMetric` y las métricas que se especifica como sigue forman parte de la *dbgmetric.lib* biblioteca. Consulte [aplicaciones auxiliares de SDK para la depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) para obtener más información.
 
     |Métrica|Descripción|
     |------------|-----------------|
@@ -120,7 +120,7 @@ namespace EEMC
     > [!NOTE]
     >  El `metricLanguage``GUID` identifica el idioma por nombre, pero es el `guidLang` argumento `SetEEMetric` que selecciona el idioma. Cuando el compilador genera el archivo de información de depuración, debe escribir adecuado `guidLang` para que la DE sepa qué EE para usar. La DE pide normalmente el proveedor de símbolos para este idioma `GUID`, que está almacenado en el archivo de información de depuración.
 
-3.  Se registra con Visual Studio mediante la creación de claves en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, donde *X.Y* es la versión de Visual Studio para registrarse.
+3. Se registra con Visual Studio mediante la creación de claves en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, donde *X.Y* es la versión de Visual Studio para registrarse.
 
 ### <a name="example"></a>Ejemplo
  La siguiente función muestra cómo un código no administrado (C++) EE registra y anula su propio registro con Visual Studio.

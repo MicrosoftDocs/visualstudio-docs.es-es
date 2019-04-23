@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068553"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implementar extensiones para las herramientas de SharePoint en Visual Studio
 
@@ -33,9 +33,9 @@ Para obtener más información sobre cómo crear paquetes VSIX y su implementaci
 
 Puede usar el **proyecto VSIX** plantilla proporcionada por el SDK de Visual Studio para crear paquetes VSIX para extensiones de herramientas de SharePoint. Uso de un proyecto de VSIX ofrece varias ventajas sobre creación manual de un paquete VSIX:
 
--   Al compilar el proyecto, Visual Studio genera automáticamente el paquete VSIX. Las tareas como agregar los archivos de implementación para el paquete y crear el archivo de [Content_Types] .xml para el paquete se realizan automáticamente.
+- Al compilar el proyecto, Visual Studio genera automáticamente el paquete VSIX. Las tareas como agregar los archivos de implementación para el paquete y crear el archivo de [Content_Types] .xml para el paquete se realizan automáticamente.
 
--   Puede configurar el proyecto VSIX para incluir la salida de compilación de su proyecto de extensión y otros archivos, como plantillas de proyecto y plantillas de elementos, en el paquete VSIX.
+- Puede configurar el proyecto VSIX para incluir la salida de compilación de su proyecto de extensión y otros archivos, como plantillas de proyecto y plantillas de elementos, en el paquete VSIX.
 
 Para obtener más información sobre el uso de un proyecto de VSIX, vea [plantilla de proyecto VSIX](../extensibility/vsix-project-template.md).
 
@@ -43,17 +43,17 @@ Para obtener más información sobre el uso de un proyecto de VSIX, vea [plantil
 
 De forma predeterminada, los proyectos de VSIX solo generan paquetes VSIX, no los ensamblados. Por lo tanto, normalmente no se implementa una extensión de herramientas de SharePoint en un proyecto de VSIX. Suele funcionar con al menos dos proyectos:
 
--   Un proyecto VSIX.
+- Un proyecto VSIX.
 
--   Un proyecto de biblioteca de clases que implementa la extensión.
+- Un proyecto de biblioteca de clases que implementa la extensión.
 
 También puede trabajar con proyectos adicionales para determinados tipos de extensiones:
 
--   Un proyecto de biblioteca de clases que implementa los comandos de SharePoint que utilizan la extensión. Para ver un tutorial que muestra este escenario, consulte [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+- Un proyecto de biblioteca de clases que implementa los comandos de SharePoint que utilizan la extensión. Para ver un tutorial que muestra este escenario, consulte [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Un proyecto de plantilla de elemento o la plantilla de proyecto que crea una plantilla de elemento o una plantilla de proyecto, si la extensión define un nuevo tipo de elemento de proyecto de SharePoint. Para ver un tutorial que muestra este escenario, consulte [Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
+- Un proyecto de plantilla de elemento o la plantilla de proyecto que crea una plantilla de elemento o una plantilla de proyecto, si la extensión define un nuevo tipo de elemento de proyecto de SharePoint. Para ver un tutorial que muestra este escenario, consulte [Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
 
--   Un proyecto de biblioteca de clases que implementa a un asistente personalizado para una plantilla de elemento o una plantilla de proyecto, si la extensión incluye una plantilla. Para ver un tutorial que muestra este escenario, consulte [Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+- Un proyecto de biblioteca de clases que implementa a un asistente personalizado para una plantilla de elemento o una plantilla de proyecto, si la extensión incluye una plantilla. Para ver un tutorial que muestra este escenario, consulte [Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 Si incluye todos los proyectos en la misma solución de Visual Studio, puede modificar el archivo source.extension.vsixmanifest del proyecto VSIX para incluir el resultado de compilación de los proyectos de biblioteca de clases.
 
@@ -63,77 +63,77 @@ Debe editar el archivo source.extension.vsixmanifest del proyecto VSIX para incl
 
 Debe agregar entradas en el archivo source.extension.vsixmanifest para los siguientes elementos:
 
--   El ensamblado de extensión.
+- El ensamblado de extensión.
 
--   El ensamblado que implementa los comandos de SharePoint que utilizan la extensión.
+- El ensamblado que implementa los comandos de SharePoint que utilizan la extensión.
 
--   Las plantillas de proyecto o plantillas de elementos que están asociadas con la extensión.
+- Las plantillas de proyecto o plantillas de elementos que están asociadas con la extensión.
 
--   Un asistente personalizado para una plantilla que está asociado con la extensión.
+- Un asistente personalizado para una plantilla que está asociado con la extensión.
 
 Los procedimientos siguientes describen cómo agregar entradas al archivo .vsixmanifest para cada uno de estos elementos.
 
 #### <a name="to-include-the-extension-assembly"></a>Para incluir el ensamblado de extensión
 
-1.  En el proyecto VSIX, abra el menú contextual para el archivo source.extension.vsixmanifest y, a continuación, elija **abrir**.
+1. En el proyecto VSIX, abra el menú contextual para el archivo source.extension.vsixmanifest y, a continuación, elija **abrir**.
 
      El archivo se abre en el diseñador
 
-2.  En el **activos** pestaña del editor, elija la **New** botón.
+2. En el **activos** pestaña del editor, elija la **New** botón.
 
      El **Agregar nuevo activo** abre el cuadro de diálogo.
 
-3.  En el **tipo** elija **Microsoft.VisualStudio.MefComponent**.
+3. En el **tipo** elija **Microsoft.VisualStudio.MefComponent**.
 
-4.  En el **origen** lista, lleve a cabo uno de los pasos siguientes:
+4. En el **origen** lista, lleve a cabo uno de los pasos siguientes:
 
-    -   Si se compila el ensamblado de extensión desde un proyecto que se encuentra en la misma solución que el proyecto VSIX, elija **un proyecto de la solución actual**. En el **proyecto** lista, elija el nombre del proyecto.
+    - Si se compila el ensamblado de extensión desde un proyecto que se encuentra en la misma solución que el proyecto VSIX, elija **un proyecto de la solución actual**. En el **proyecto** lista, elija el nombre del proyecto.
 
-    -   Si el ensamblado de extensión se incluye como un archivo en el proyecto, elija **archivo en filesystem**. En el **ruta** lista, escriba la ruta de acceso completa al archivo de ensamblado de extensión o use el **examinar** botón para buscar y seleccione el archivo de ensamblado.
+    - Si el ensamblado de extensión se incluye como un archivo en el proyecto, elija **archivo en filesystem**. En el **ruta** lista, escriba la ruta de acceso completa al archivo de ensamblado de extensión o use el **examinar** botón para buscar y seleccione el archivo de ensamblado.
 
-5.  Elija el botón **Aceptar** .
+5. Elija el botón **Aceptar** .
 
 #### <a name="to-include-a-sharepoint-command-assembly"></a>Para incluir un ensamblado de comando de SharePoint
 
-1.  En el proyecto VSIX, abra el menú contextual para el archivo source.extension.vsixmanifest y, a continuación, elija el **abrir** botón.
+1. En el proyecto VSIX, abra el menú contextual para el archivo source.extension.vsixmanifest y, a continuación, elija el **abrir** botón.
 
      El archivo se abre en el diseñador.
 
-2.  En el **activos** sección del editor, elija la **New** botón.
+2. En el **activos** sección del editor, elija la **New** botón.
 
      El **Agregar nuevo activo** abre el cuadro de diálogo.
 
-3.  En el **tipo** , escriba **SharePoint.Commands.v4**.
+3. En el **tipo** , escriba **SharePoint.Commands.v4**.
 
-4.  En el **origen** lista, lleve a cabo uno de los pasos siguientes:
+4. En el **origen** lista, lleve a cabo uno de los pasos siguientes:
 
-    -   Si se compila el ensamblado de comando desde un proyecto que se encuentra en la misma solución que el proyecto VSIX, elija **un proyecto de la solución actual**. En el **proyecto** lista, elija el nombre del proyecto.
+    - Si se compila el ensamblado de comando desde un proyecto que se encuentra en la misma solución que el proyecto VSIX, elija **un proyecto de la solución actual**. En el **proyecto** lista, elija el nombre del proyecto.
 
-    -   Si el ensamblado de comando se incluye como un archivo en el proyecto, elija **archivo en filesystem**. En el **ruta** lista, escriba la ruta de acceso completa al archivo de ensamblado de extensión o use el **examinar** botón para buscar y seleccione el archivo de ensamblado.
+    - Si el ensamblado de comando se incluye como un archivo en el proyecto, elija **archivo en filesystem**. En el **ruta** lista, escriba la ruta de acceso completa al archivo de ensamblado de extensión o use el **examinar** botón para buscar y seleccione el archivo de ensamblado.
 
-5.  Elija el botón **Aceptar** .
+5. Elija el botón **Aceptar** .
 
 #### <a name="to-include-a-template-that-you-create"></a>Para incluir una plantilla que cree
 
-1.  En el proyecto VSIX, abra el menú contextual para el archivo source.extension.vsixmanifest y, a continuación, elija el **abrir** botón.
+1. En el proyecto VSIX, abra el menú contextual para el archivo source.extension.vsixmanifest y, a continuación, elija el **abrir** botón.
 
      El archivo se abre en el diseñador.
 
-2.  En el **activos** sección del editor, elija la **New** botón.
+2. En el **activos** sección del editor, elija la **New** botón.
 
      El **Agregar nuevo activo** abre el cuadro de diálogo.
 
-3.  En el **tipo** elija **Microsoft.VisualStudio.ProjectTemplate** o **Microsoft.VisualStudio.ItemTemplate**.
+3. En el **tipo** elija **Microsoft.VisualStudio.ProjectTemplate** o **Microsoft.VisualStudio.ItemTemplate**.
 
-4.  En el **origen** elija **un proyecto de la solución actual**.
+4. En el **origen** elija **un proyecto de la solución actual**.
 
-5.  En el **proyecto** lista, elija el nombre del proyecto y, a continuación, elija el **Aceptar** botón.
+5. En el **proyecto** lista, elija el nombre del proyecto y, a continuación, elija el **Aceptar** botón.
 
-6.  En **el Explorador de soluciones**, abra el menú contextual para el proyecto de plantilla de proyecto o la plantilla de elemento y, a continuación, elija **descargar el proyecto**.
+6. En **el Explorador de soluciones**, abra el menú contextual para el proyecto de plantilla de proyecto o la plantilla de elemento y, a continuación, elija **descargar el proyecto**.
 
-7.  Vuelva a abrir el menú contextual del nodo de proyecto y, a continuación, elija **editar**_YourTemplateProjectName_**.csproj** o **editar**  _YourTemplateProjectName_**.vbproj**.
+7. Vuelva a abrir el menú contextual del nodo de proyecto y, a continuación, elija **editar**_YourTemplateProjectName_**.csproj** o **editar**  _YourTemplateProjectName_**.vbproj**.
 
-8.  Busque el elemento `VSTemplate` siguiente en el archivo del proyecto.
+8. Busque el elemento `VSTemplate` siguiente en el archivo del proyecto.
 
     ```xml
     <VSTemplate Include="YourTemplateName.vstemplate">
@@ -155,9 +155,9 @@ Los procedimientos siguientes describen cómo agregar entradas al archivo .vsixm
 
 #### <a name="to-include-a-template-that-you-create-manually"></a>Para incluir una plantilla que crea manualmente
 
-1.  En el proyecto VSIX, agregue una nueva carpeta para el proyecto para que contenga la plantilla.
+1. En el proyecto VSIX, agregue una nueva carpeta para el proyecto para que contenga la plantilla.
 
-2.  En esta nueva carpeta, cree las siguientes subcarpetas y, a continuación, agregue el archivo de plantilla (.zip) a la *Id. de configuración regional* carpeta.
+2. En esta nueva carpeta, cree las siguientes subcarpetas y, a continuación, agregue el archivo de plantilla (.zip) a la *Id. de configuración regional* carpeta.
 
      *YourTemplateFolder*
 
@@ -171,43 +171,43 @@ Los procedimientos siguientes describen cómo agregar entradas al archivo .vsixm
 
      Por ejemplo, si tiene una plantilla de elementos denominada ContosoCustomAction.zip compatible con la configuración regional Inglés (Estados Unidos), la ruta de acceso completa podría ser *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.
 
-3.  En **el Explorador de soluciones**, elija el archivo de plantilla (*YourTemplateName*.zip).
+3. En **el Explorador de soluciones**, elija el archivo de plantilla (*YourTemplateName*.zip).
 
-4.  En el **propiedades** ventana, establezca el **acción de compilación** propiedad **contenido**.
+4. En el **propiedades** ventana, establezca el **acción de compilación** propiedad **contenido**.
 
-5.  Abra el menú contextual para el archivo source.extension.vsixmanifest y, a continuación, elija **abierto**.
+5. Abra el menú contextual para el archivo source.extension.vsixmanifest y, a continuación, elija **abierto**.
 
      El archivo se abre en el diseñador.
 
-6.  En el **activos** sección del editor, elija la **New** botón.
+6. En el **activos** sección del editor, elija la **New** botón.
 
      El **Agregar nuevo activo** abre el cuadro de diálogo.
 
-7.  En el **tipo** elija **Microsoft.VisualStudio.ItemTemplate** o **Microsoft.VisualStudio.ProjectTemplate**.
+7. En el **tipo** elija **Microsoft.VisualStudio.ItemTemplate** o **Microsoft.VisualStudio.ProjectTemplate**.
 
-8.  En el **origen** elija **archivo en filesystem**.
+8. En el **origen** elija **archivo en filesystem**.
 
 9. En el **ruta** , escriba la ruta de acceso completa al ensamblado (por ejemplo, *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*, o usar el **examinar**botón para buscar y seleccionar el ensamblado y, a continuación, elija el **Aceptar** botón.
 
 #### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Para incluir a un Asistente para una plantilla de proyecto o elemento
 
-1.  En el proyecto VSIX, abra el menú contextual para el archivo source.extension.vsixmanifest y, a continuación, elija **abrir**.
+1. En el proyecto VSIX, abra el menú contextual para el archivo source.extension.vsixmanifest y, a continuación, elija **abrir**.
 
      El archivo se abre en el diseñador.
 
-2.  En el **activos** sección del editor, elija la **New** botón.
+2. En el **activos** sección del editor, elija la **New** botón.
 
      El **Agregar nuevo activo** abre el cuadro de diálogo.
 
-3.  En el **tipo** elija **Microsoft.VisualStudio.Assembly**.
+3. En el **tipo** elija **Microsoft.VisualStudio.Assembly**.
 
-4.  En el **origen** lista, lleve a cabo uno de los pasos siguientes:
+4. En el **origen** lista, lleve a cabo uno de los pasos siguientes:
 
-    -   Si se compila el ensamblado del asistente desde un proyecto que se encuentra en la misma solución que el proyecto VSIX, elija **un proyecto de la solución actual**. En el **proyecto** lista, elija el nombre del proyecto.
+    - Si se compila el ensamblado del asistente desde un proyecto que se encuentra en la misma solución que el proyecto VSIX, elija **un proyecto de la solución actual**. En el **proyecto** lista, elija el nombre del proyecto.
 
-    -   Si el ensamblado del asistente se incluye como un archivo en el proyecto, elija **archivo en filesystem**. En el **ruta** campo, escriba la ruta de acceso completa al archivo de ensamblado o usar el **examinar** botón para buscar y seleccionar el ensamblado.
+    - Si el ensamblado del asistente se incluye como un archivo en el proyecto, elija **archivo en filesystem**. En el **ruta** campo, escriba la ruta de acceso completa al archivo de ensamblado o usar el **examinar** botón para buscar y seleccionar el ensamblado.
 
-5.  Elija el botón **Aceptar** .
+5. Elija el botón **Aceptar** .
 
 ### <a name="related-walkthroughs"></a>Tutoriales relacionados
 
@@ -224,21 +224,21 @@ En la tabla siguiente se enumera los tutoriales que muestran cómo usar un proye
 
 Si desea crear manualmente el paquete VSIX para la extensión de herramientas de SharePoint, realice los pasos siguientes:
 
-1.  Cree el archivo extension.vsixmanifest y el archivo [Content_Types] .xml en una carpeta nueva. Para obtener más información, consulte [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+1. Cree el archivo extension.vsixmanifest y el archivo [Content_Types] .xml en una carpeta nueva. Para obtener más información, consulte [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-2.  En el Explorador de Windows, haga clic en la carpeta que contiene los dos archivos XML, haga clic en Enviar a y, a continuación, haga clic en la carpeta comprimida (zip). Cambie el nombre del archivo .zip resultante a Filename.vsix, donde nombreArchivo es el nombre del archivo redistribuible que instala el paquete.
+2. En el Explorador de Windows, haga clic en la carpeta que contiene los dos archivos XML, haga clic en Enviar a y, a continuación, haga clic en la carpeta comprimida (zip). Cambie el nombre del archivo .zip resultante a Filename.vsix, donde nombreArchivo es el nombre del archivo redistribuible que instala el paquete.
 
-3.  Agregue el ensamblado de extensión para el paquete VSIX. Si la extensión contiene un comando de SharePoint, agregue también el ensamblado que implementa el comando de SharePoint para el paquete VSIX.
+3. Agregue el ensamblado de extensión para el paquete VSIX. Si la extensión contiene un comando de SharePoint, agregue también el ensamblado que implementa el comando de SharePoint para el paquete VSIX.
 
-4.  Modifique el archivo extension.vsixmanifest:
+4. Modifique el archivo extension.vsixmanifest:
 
-    -   Agregar un `Microsoft.VisualStudio.MefComponent` elemento bajo el `Assets` elemento y, después, establezca el valor del nuevo elemento a la ruta de acceso relativa del ensamblado que implementa la extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    - Agregar un `Microsoft.VisualStudio.MefComponent` elemento bajo el `Assets` elemento y, después, establezca el valor del nuevo elemento a la ruta de acceso relativa del ensamblado que implementa la extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    -   Si la extensión incluye un comando de SharePoint que llama al modelo de objetos de servidor de SharePoint, agregue un `Microsoft.VisualStudio.Assembly` elemento bajo el `Assets` elemento. Establezca el valor del nuevo elemento en la ruta de acceso relativa del ensamblado que implementa el comando de SharePoint en el paquete VSIX. Para obtener más información, consulte [elemento activo (Esquema VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    - Si la extensión incluye un comando de SharePoint que llama al modelo de objetos de servidor de SharePoint, agregue un `Microsoft.VisualStudio.Assembly` elemento bajo el `Assets` elemento. Establezca el valor del nuevo elemento en la ruta de acceso relativa del ensamblado que implementa el comando de SharePoint en el paquete VSIX. Para obtener más información, consulte [elemento activo (Esquema VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
-    -   Si la extensión incluye una plantilla de proyecto o elemento, agregue un `ProjectTemplate` o `ItemTemplate` elemento bajo el `Assets` elemento. Establezca el valor del nuevo elemento en la ruta de acceso relativa de la carpeta que contiene la plantilla en el paquete VSIX. Para obtener más información, consulte [elemento ProjectTemplate (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) y [elemento ItemTemplate (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
+    - Si la extensión incluye una plantilla de proyecto o elemento, agregue un `ProjectTemplate` o `ItemTemplate` elemento bajo el `Assets` elemento. Establezca el valor del nuevo elemento en la ruta de acceso relativa de la carpeta que contiene la plantilla en el paquete VSIX. Para obtener más información, consulte [elemento ProjectTemplate (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) y [elemento ItemTemplate (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    -   Si la extensión incluye un asistente personalizado para una plantilla de proyecto o elemento, agregue un `Assembly` elemento bajo el `Assets` elemento. Establezca el valor del nuevo elemento en la ruta de acceso relativa del ensamblado en el paquete VSIX y, a continuación, establezca el `AssemblyName` atributo por el nombre completo del ensamblado (incluida la versión, referencia cultural y token de clave pública). Para obtener más información, consulte [elemento Dependency (Esquema VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    - Si la extensión incluye un asistente personalizado para una plantilla de proyecto o elemento, agregue un `Assembly` elemento bajo el `Assets` elemento. Establezca el valor del nuevo elemento en la ruta de acceso relativa del ensamblado en el paquete VSIX y, a continuación, establezca el `AssemblyName` atributo por el nombre completo del ensamblado (incluida la versión, referencia cultural y token de clave pública). Para obtener más información, consulte [elemento Dependency (Esquema VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
 
 ### <a name="example"></a>Ejemplo
 

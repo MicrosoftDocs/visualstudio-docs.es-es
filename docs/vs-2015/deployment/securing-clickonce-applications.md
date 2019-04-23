@@ -1,5 +1,5 @@
 ---
-title: Proteger las aplicaciones ClickOnce | Microsoft Docs
+title: Protección de aplicaciones ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2266cae99336b1ab56131feee9aa96852746b73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076203"
 ---
 # <a name="securing-clickonce-applications"></a>Proteger las aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Las aplicaciones[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] están su
  Los permisos predeterminados se basan en la ubicación desde la cual fue implementada la versión original de la aplicación; las actualizaciones de la aplicación heredarán esos permisos. Si la aplicación se configura para que compruebe las actualizaciones desde una ubicación web o una ubicación de red y se encuentra disponible una versión más reciente, la instalación original puede recibir permisos para Internet o para la zona Intranet en lugar de permisos de plena confianza. Para evitar que el programa pida a los usuarios que concedan los permisos, el administrador del sistema puede especificar una directiva de implementación ClickOnce que defina un editor de aplicación concreto como origen de confianza. Para aquellos equipos en los que se implemente esta directiva, los permisos se concederán automáticamente y no se preguntará al usuario. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Para configurar la implementación de aplicaciones de confianza, el certificado puede instalarse en el equipo o en el nivel de empresa. Para obtener más información, vea [Cómo: Adición de un publicador de confianza a un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
 ## <a name="code-access-security-policies"></a>Directivas de seguridad de acceso del código  
- Se determinan los permisos para una aplicación mediante la configuración de la [ \<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md) elemento del manifiesto de aplicación. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera automáticamente esta información según la configuración de la página de propiedades **Seguridad** del proyecto. A una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] solo se le conceden los permisos específicos que solicita. Por ejemplo, cuando el acceso a archivos requiere permisos de plena confianza, si la aplicación solicita permiso de acceso al archivo, sólo se le concederá permiso de acceso al archivo, pero no permisos de plena confianza. Al desarrollar la aplicación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , debe asegurarse de solicitar solo los permisos específicos que la aplicación necesita. En la mayoría de los casos, puede usar zonas de Internet o intranet local para limitar la aplicación a confianza parcial. Para obtener más información, vea [Cómo: Establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Si la aplicación requiere permisos personalizados, puede crear una zona personalizada. Para obtener más información, vea [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ La configuración del [elemento \<trustInfo>](../deployment/trustinfo-element-clickonce-application.md) del manifiesto de aplicación determina los permisos de una aplicación. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera automáticamente esta información según la configuración de la página de propiedades **Seguridad** del proyecto. A una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] solo se le conceden los permisos específicos que solicita. Por ejemplo, cuando el acceso a archivos requiere permisos de plena confianza, si la aplicación solicita permiso de acceso al archivo, sólo se le concederá permiso de acceso al archivo, pero no permisos de plena confianza. Al desarrollar la aplicación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , debe asegurarse de solicitar solo los permisos específicos que la aplicación necesita. En la mayoría de los casos, puede usar zonas de Internet o intranet local para limitar la aplicación a confianza parcial. Para obtener más información, vea [Cómo: Establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Si la aplicación requiere permisos personalizados, puede crear una zona personalizada. Para obtener más información, vea [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  Incluso un permiso que no forma parte del conjunto de permisos predeterminado para la zona desde la que se implementa la aplicación hará que al usuario final se le solicite conceder el permiso en el momento de la instalación o actualización. Para evitar que el programa pida a los usuarios que concedan los permisos, el administrador del sistema puede especificar una directiva de implementación ClickOnce que defina un editor de aplicación concreto como origen de confianza. En aquellos equipos en los que se implemente esta directiva, los permisos se concederán automáticamente y no se preguntará al usuario.  
   
@@ -79,11 +79,11 @@ Las aplicaciones[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] están su
 ## <a name="deploying-obfuscated-assemblies"></a>Implementar ensamblados protegidos  
  Es posible que desee proteger su aplicación mediante Dotfuscator para impedir el uso de técnicas de ingeniería inversa en el código por parte de otras personas. Sin embargo, la protección de ensamblados no está integrada en el IDE de Visual Studio ni en el proceso de implementación ClickOnce. Por lo tanto, tendrá que encargarse de la protección fuera del proceso de implementación, posiblemente utilizando un paso posterior a la compilación. Una vez compilado el proyecto, tendría que llevar a cabo los siguientes pasos manualmente, fuera de Visual Studio:  
   
-1.  Encargarse de la protección mediante Dotfuscator.  
+1. Encargarse de la protección mediante Dotfuscator.  
   
-2.  Utilizar Mage.exe o MageUI.exe para generar los manifiestos de ClickOnce y firmarlos. Para obtener más información, consulte [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) y [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+2. Utilizar Mage.exe o MageUI.exe para generar los manifiestos de ClickOnce y firmarlos. Para obtener más información, consulte [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) y [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
-3.  Publicar manualmente (copiar) los archivos en la ubicación de implementación de origen (servidor Web, recurso compartido UNC o CD-ROM).  
+3. Publicar manualmente (copiar) los archivos en la ubicación de implementación de origen (servidor Web, recurso compartido UNC o CD-ROM).  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar comandos a menús contextuales
+title: Procedimiento Agregar comandos a menús contextuales
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dac53bc06cb06200dd61adca27fa4894c3c4d8dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598185"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074497"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Procedimiento Agregar comandos a menús contextuales
   En este tema se muestra cómo agregar comandos a un menú contextual en una aplicación de Office mediante el uso de un complemento de VSTO.
@@ -27,26 +27,26 @@ ms.locfileid: "56598185"
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Para agregar comandos a los menús contextuales de Office
 
-1.  Agregue un elemento **XML de cinta** a un proyecto de nivel de documento o de complemento de VSTO. Para obtener más información, vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md). En
+1. Agregue un elemento **XML de cinta** a un proyecto de nivel de documento o de complemento de VSTO. Para obtener más información, vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md). En
 
-2.  el**Exploado de soluciones**, seleccione **ThisAddIn.cs** o **ThisAddIn.vb**.
+2. el**Exploado de soluciones**, seleccione **ThisAddIn.cs** o **ThisAddIn.vb**.
 
-3.  En la barra de menús, elija **Ver** > **Código**.
+3. En la barra de menús, elija **Ver** > **Código**.
 
      El archivo de clase **ThisAddin** se abrirá en el Editor de código.
 
-4.  Agregue el siguiente código a la clase **ThisAddin** . Este código invalida el método `CreateRibbonExtensibilityObject` y devuelve la clase XML Ribbon a la aplicación de Office.
+4. Agregue el siguiente código a la clase **ThisAddin** . Este código invalida el método `CreateRibbonExtensibilityObject` y devuelve la clase XML Ribbon a la aplicación de Office.
 
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5.  En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de cinta se denomina *Ribbon1.xml*.
+5. En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de cinta se denomina *Ribbon1.xml*.
 
-6.  En la barra de menús, elija **Ver** > **Código**.
+6. En la barra de menús, elija **Ver** > **Código**.
 
      Se abrirá el archivo de código XML de cinta de opciones en el Editor de código.
 
-7.  En el Editor de código, agregue el código XML que describe el menú contextual y el control que quiere agregar al menú contextual.
+7. En el Editor de código, agregue el código XML que describe el menú contextual y el control que quiere agregar al menú contextual.
 
      En el ejemplo siguiente se agrega un botón, un menú y un control de galería al menú contextual de un documento de Word. El id. del control de este menú contextual es ContextMenuText. Para obtener una lista completa de control de acceso directo de Office 2010 identificadores, vea [los archivos de Ayuda de Office 2010: Identificadores de control de interfaz de usuario fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).
 
@@ -70,7 +70,7 @@ ms.locfileid: "56598185"
     </customUI>
     ```
 
-8.  En el **Explorador de soluciones**, elija **MyRibbon.cs** o **MyRibbon.vb**.
+8. En el **Explorador de soluciones**, elija **MyRibbon.cs** o **MyRibbon.vb**.
 
 9. Agregue un método de devolución de llamada a la `Ribbon1` clase para cada control que desea administrar.
 

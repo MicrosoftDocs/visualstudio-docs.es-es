@@ -9,29 +9,29 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076804"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Cómo: Crear una textura básica
+# <a name="how-to-create-a-basic-texture"></a>Procedimiento Crear una textura básica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Editor de imágenes para crear una textura básica.  
   
  Este documento muestra estas actividades:  
   
--   Establecer el tamaño de la textura  
+- Establecer el tamaño de la textura  
   
--   Establecer el color de primer plano y el color de fondo  
+- Establecer el color de primer plano y el color de fondo  
   
--   Usar el canal alfa (transparencia)  
+- Usar el canal alfa (transparencia)  
   
--   Usar las herramientas **Rellenar** y **Elipse**  
+- Usar las herramientas **Rellenar** y **Elipse**  
   
--   Establecer propiedades de herramientas  
+- Establecer propiedades de herramientas  
   
 ## <a name="creating-a-basic-texture"></a>Crear una textura básica  
  Puede usar el Editor de imágenes para crear y modificar imágenes y texturas para su juego o aplicación.  

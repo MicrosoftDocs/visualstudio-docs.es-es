@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47860775a6351cab83cd43975e94373c3558305a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 143cea7a60fd136777943e849713ca0bdfe171fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795352"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078322"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores del Visualizador de simultaneidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ En el visualizador de simultaneidad, los marcadores son iconos que representan l
 ## <a name="kinds-of-markers"></a>Tipos de marcadores  
  El visualizador de simultaneidad utiliza tres tipos de marcadores para representar eventos de aplicación: marcas, mensajes e intervalos.  
   
-1.  Utilice una *marca* para indicar un punto interesante de tiempo en la aplicación.  Por ejemplo, podría utilizar una marca para representar que un valor variable ha alcanzado un umbral determinado o que se produjo una excepción.  
+1. Utilice una *marca* para indicar un punto interesante de tiempo en la aplicación.  Por ejemplo, podría utilizar una marca para representar que un valor variable ha alcanzado un umbral determinado o que se produjo una excepción.  
   
-2.  Un *mensaje* también marca un punto de tiempo, pero puede utilizarlo para hacer un seguimiento de estilo de registro.  Por ejemplo, lo que se podría haber volcado en un archivo de registro ahora puede encapsularlo en una llamada de mensaje para que le pueda hacer un seguimiento y verlo en el visualizador de simultaneidad. También puede utilizar el visualizador de simultaneidad para exportar estos datos a un archivo CSV.  
+2. Un *mensaje* también marca un punto de tiempo, pero puede utilizarlo para hacer un seguimiento de estilo de registro.  Por ejemplo, lo que se podría haber volcado en un archivo de registro ahora puede encapsularlo en una llamada de mensaje para que le pueda hacer un seguimiento y verlo en el visualizador de simultaneidad. También puede utilizar el visualizador de simultaneidad para exportar estos datos a un archivo CSV.  
   
-3.  Un *intervalo* representa un intervalo de tiempo en la aplicación, por ejemplo, una de sus fases.  
+3. Un *intervalo* representa un intervalo de tiempo en la aplicación, por ejemplo, una de sus fases.  
   
 ## <a name="marker-linkage-to-threads"></a>Vinculación de marcadores para los subprocesos  
  Cada subproceso que genera marcadores tiene un canal de escala de tiempo independiente.  El identificador del subproceso que es responsable de generar los eventos de marcador se muestra junto a la descripción del canal de marcador.  El identificador que se muestra en el lado izquierdo del canal de marcador coincide con el de otro subproceso en el proceso actual.  

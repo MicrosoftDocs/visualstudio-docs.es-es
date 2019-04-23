@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac7771e657b546fdfced7033067d6de26256b96
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066421"
 ---
 # <a name="project-subtypes-design"></a>Diseño de subtipos de proyecto
 
@@ -23,11 +23,11 @@ Subtipos de proyecto permiten a los VSPackages ampliar proyectos basados en Micr
 
  Los siguientes temas detallan el diseño básico y la implementación de subtipos de proyecto:
 
--   Diseño de subtipo de proyecto.
+- Diseño de subtipo de proyecto.
 
--   Agregación de varios nivel.
+- Agregación de varios nivel.
 
--   Interfaces admitidas.
+- Interfaces admitidas.
 
 ## <a name="project-subtype-design"></a>Diseño de subtipo de proyecto
 
@@ -73,11 +73,11 @@ Subtipos de proyecto pueden ampliar aún más el sistema de proyectos base al ex
 
 Una implementación de subtipo de proyecto que contiene un subtipo de proyecto de nivel inferior debe programarse de forma cooperativa para permitir que el subtipo de proyecto interno funcionar correctamente. Incluye una lista de las responsabilidades de programación:
 
--   El <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementación del subtipo de proyecto que se ajuste el subtipo interno debe delegar en el <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementación de subtipo interno del proyecto para ambos <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> métodos.
+- El <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementación del subtipo de proyecto que se ajuste el subtipo interno debe delegar en el <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementación de subtipo interno del proyecto para ambos <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> métodos.
 
--   El <xref:EnvDTE80.IInternalExtenderProvider> implementación del subtipo de proyecto de contenedor debe delegar a la de su subtipo interno del proyecto. En concreto, la implementación de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> debe obtener la cadena de nombres de subtipo interno del proyecto y, a continuación, concatenar las cadenas desea agregar como extensores.
+- El <xref:EnvDTE80.IInternalExtenderProvider> implementación del subtipo de proyecto de contenedor debe delegar a la de su subtipo interno del proyecto. En concreto, la implementación de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> debe obtener la cadena de nombres de subtipo interno del proyecto y, a continuación, concatenar las cadenas desea agregar como extensores.
 
--   El <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> debe crear una instancia de la implementación de un subtipo de proyecto contenedor la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objeto de su interior subtipo de proyecto y mantenerlo como un delegado privado, ya que sólo el objeto de configuración del proyecto del proyecto base directamente sabe que el contenedor existe el objeto de configuración del subtipo de proyecto. El subtipo de proyecto externo puede elegir inicialmente interfaces de configuración desea controlar directamente y, a continuación, delegar el resto de la implementación del subtipo interno del proyecto de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
+- El <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> debe crear una instancia de la implementación de un subtipo de proyecto contenedor la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objeto de su interior subtipo de proyecto y mantenerlo como un delegado privado, ya que sólo el objeto de configuración del proyecto del proyecto base directamente sabe que el contenedor existe el objeto de configuración del subtipo de proyecto. El subtipo de proyecto externo puede elegir inicialmente interfaces de configuración desea controlar directamente y, a continuación, delegar el resto de la implementación del subtipo interno del proyecto de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
 
 ## <a name="supporting-interfaces"></a>Interfaces admitidas
 

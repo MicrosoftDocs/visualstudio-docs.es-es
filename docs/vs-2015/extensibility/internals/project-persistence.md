@@ -11,12 +11,12 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002932"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074247"
 ---
 # <a name="project-persistence"></a>Persistencia de un proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Persistencia es una consideración de diseño clave para el proyecto. La mayorí
   
  Elementos de proyecto pueden ser basados en archivos o no basada en archivo:  
   
--   Los elementos basados en el archivo pueden ser local o remoto. En los proyectos Web en C#, por ejemplo, las conexiones a los archivos en un sistema remoto se conservan localmente, mientras que los propios archivos se conservan en el sistema remoto.  
+- Los elementos basados en el archivo pueden ser local o remoto. En los proyectos Web en C#, por ejemplo, las conexiones a los archivos en un sistema remoto se conservan localmente, mientras que los propios archivos se conservan en el sistema remoto.  
   
--   Elementos basados en archivos no pueden guardar elementos en un repositorio o una base de datos.  
+- Elementos basados en archivos no pueden guardar elementos en un repositorio o una base de datos.  
   
 ## <a name="commit-models"></a>Confirmar los modelos  
  Después de decidir dónde se encuentran los elementos de proyecto, debe elegir el modelo adecuado de confirmación. Por ejemplo, en un modelo basado en archivos con los archivos locales, cada proyecto puede guardarse forma autónoma. En un modelo de repositorio, puede guardar varios elementos en una transacción. Para obtener más información, consulte [decisiones de diseño de tipo de proyecto](../../extensibility/internals/project-type-design-decisions.md).  

@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070789"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Usar el diseñador de actividad Legacy
 En este tema se describe cómo usar el diseñador de actividad en [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado. Use el diseñador heredado cuando tenga como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -35,9 +35,9 @@ En este tema se describe cómo usar el diseñador de actividad en [!INCLUDE[wfd1
   
 2. Seleccione el **actividad** o **Activity (con separación de código)** plantilla.  
   
-   1.  Use la **actividad** plantilla para crear una actividad con la definición de actividad y el código de usuario en el mismo archivo de código.  
+   1. Use la **actividad** plantilla para crear una actividad con la definición de actividad y el código de usuario en el mismo archivo de código.  
   
-   2.  Use la **Activity (con separación de código)** plantilla para crear una actividad con la definición de actividad expresada como marcado de flujo de trabajo y el código de usuario en un archivo de código independiente.  
+   2. Use la **Activity (con separación de código)** plantilla para crear una actividad con la definición de actividad expresada como marcado de flujo de trabajo y el código de usuario en un archivo de código independiente.  
   
 3. Escriba un nombre de actividad o mantenga el nombre predeterminado y, a continuación, haga clic en **agregar**.  
   
@@ -46,7 +46,7 @@ En este tema se describe cómo usar el diseñador de actividad en [!INCLUDE[wfd1
 ## <a name="configuring-an-activity"></a>Configurar una actividad  
  Aunque el diseñador de actividades esté activo, puede utilizar el explorador de propiedades para configurar las propiedades enumeradas en la siguiente tabla.  
   
-|Property|Comentarios|  
+|Propiedad|Comentarios|  
 |--------------|--------------|  
 |**Name**|Nombre de la actividad.|  
 |**Clase base**|Clase base de la que deriva la actividad. La clase base predeterminada es [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020). En el **propiedades** ventana, haga clic en el **clase Base** elipses **[...]**  para seleccionar otra clase base en el [examinar y seleccionar un cuadro de diálogo de tipo .NET (heredado)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|  

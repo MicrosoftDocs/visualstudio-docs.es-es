@@ -25,19 +25,19 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002564"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071777"
 ---
 # <a name="using-dump-files"></a>Uso de archivos de volcado de memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Archivos de volcado de memoria con o sin montones; crear un archivo de volcado de memoria; abrir un archivo de volcado de memoria; buscar los archivos binarios, archivos pdb y el archivo de origen de un archivo de volcado de memoria. 
   
-##  <a name="BKMK_Contents"></a> Contenido  
+## <a name="BKMK_Contents"></a> Contenido  
  [¿Qué es un archivo de volcado de memoria?](#BKMK_What_is_a_dump_file_)  
   
  [Archivos de volcado de memoria, con o sin montones](#BKMK_Dump_files__with_or_without_heaps)  
@@ -50,14 +50,14 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
  [Buscar archivos binarios, archivos de símbolos (.pdb) y archivos de código fuente](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
   
-##  <a name="BKMK_What_is_a_dump_file_"></a> ¿Qué es un archivo de volcado de memoria?  
+## <a name="BKMK_What_is_a_dump_file_"></a> ¿Qué es un archivo de volcado de memoria?  
  Un *archivo de volcado* es una instantánea de una aplicación en el punto en el tiempo que se realiza el volcado de memoria. Muestra qué proceso se ejecutaba y qué módulos se cargaron. Si el volcado de memoria se guardó con información de montón, el archivo de volcado de memoria contiene una instantánea de los datos que se encontraban en la memoria de la aplicación en ese momento. Abrir un archivo de volcado de memoria con un montón en Visual Studio es como detener en un punto de interrupción en una sesión de depuración. Aunque no puede continuar la ejecución, puede examinar las pilas, los subprocesos y los valores de las variables de la aplicación cuando se produjo el volcado de memoria.  
   
  Los volcados de memoria se utilizan principalmente para problemas de depuración que suceden en equipos a los que el desarrollador no tiene acceso. Por ejemplo, puede utilizar un archivo de volcado de memoria desde el equipo de un cliente cuando no pueda reproducir el bloqueo del cliente en su equipo. Los evaluadores también crean volcados de memoria para guardar datos sobre bloqueos y, de este modo, usar la máquina de pruebas para realizar más pruebas. El depurador de Visual Studio puede guardar archivos de volcado de memoria de código administrado o nativo. El depurador puede cargar archivos de volcado de memoria que se hayan creado por Visual Studio o por otros programas que guardan archivos en el *minivolcado* formato.  
   
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Archivos de volcado de memoria, con o sin montones  
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a> Archivos de volcado de memoria, con o sin montones  
  Puede crear archivos de volcado de memoria con o sin información del montón.  
   
 - **Los archivos con montones de volcado** contienen una instantánea de memoria de la aplicación. Esto incluye los valores de las variables en el momento en que se creó el volcado de memoria. Si carga un archivo de volcado de memoria que se guardó con un montón, Visual Studio puede cargar los símbolos incluso si no se encuentra el archivo binario de la aplicación. Visual Studio también guarda los archivos binarios de los módulos nativos cargados en el archivo de volcado de memoria, lo que puede facilitar mucho más la depuración.  
@@ -66,7 +66,7 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_Requirements_and_limitations"></a> Requisitos y limitaciones  
+## <a name="BKMK_Requirements_and_limitations"></a> Requisitos y limitaciones  
   
 - La depuración de archivos de volcado de memoria de código optimizado puede resultar confusa. Por ejemplo, la inclusión en línea de funciones por parte del compilador puede dar lugar a pilas de llamadas inesperadas y otras optimizaciones podrían cambiar la duración de las variables.  
   
@@ -84,7 +84,7 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_a_dump_file"></a> Crear un archivo de volcado de memoria  
+## <a name="BKMK_Create_a_dump_file"></a> Crear un archivo de volcado de memoria  
  Para crear un archivo de volcado de memoria con Visual Studio:  
   
 - Mientras depura un proceso en Visual Studio, puede guardar un archivo de volcado de memoria cuando el depurador se ha detenido en una excepción o en un punto de interrupción. Elija **Guardar volcado como**, **depurar**. En el **Guardar volcado como** cuadro de diálogo el **Guardar como tipo** lista, puede seleccionar **minivolcado** o **minivolcado con montón** (predeterminado).  
@@ -95,19 +95,19 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_Open_a_dump_file"></a> Abrir un archivo de volcado de memoria  
+## <a name="BKMK_Open_a_dump_file"></a> Abrir un archivo de volcado de memoria  
   
-1.  En Visual Studio, elija **archivo**, **abierto**, **archivo**.  
+1. En Visual Studio, elija **archivo**, **abierto**, **archivo**.  
   
-2.  En el cuadro de diálogo **Abrir archivo**, busque y seleccione el archivo de volcado de memoria. Normalmente, tendrá la extensión .dmp. A continuación, elija **Aceptar**.  
+2. En el cuadro de diálogo **Abrir archivo**, busque y seleccione el archivo de volcado de memoria. Normalmente, tendrá la extensión .dmp. Después, elija **Aceptar**.  
   
-3.  El **resumen del archivo de volcado de memoria** aparecerá la ventana. En esta ventana, puede ver información de resumen de depuración para el archivo de volcado de memoria, establecer la ruta de acceso de símbolos, iniciar la depuración y copiar la información de resumen en el portapapeles.  
+3. El **resumen del archivo de volcado de memoria** aparecerá la ventana. En esta ventana, puede ver información de resumen de depuración para el archivo de volcado de memoria, establecer la ruta de acceso de símbolos, iniciar la depuración y copiar la información de resumen en el portapapeles.  
   
      ![Página de resumen de minivolcado](../debugger/media/dbg-dump-summarypage.png "DBG_DUMP_SummaryPage")  
   
-4.  Para iniciar la depuración, vaya a la **acciones** sección y elija **depurar con solo nativo** o **depurar con mixto**.  
+4. Para iniciar la depuración, vaya a la **acciones** sección y elija **depurar con solo nativo** o **depurar con mixto**.  
   
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Buscar archivos binarios, archivos de símbolos (.pdb) y archivos de código fuente  
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Buscar archivos binarios, archivos de símbolos (.pdb) y archivos de código fuente  
  Para utilizar todas las características de Visual Studio para depurar un archivo de volcado de memoria, necesita acceso a:  
   
 - El archivo .exe para el que se ha realizado el volcado de memoria y otros archivos binarios (archivos DLL, etc.) usados en el proceso de volcado de memoria.  

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Personalizar un paquete de solución de SharePoint | Documentos de Microsoft
+title: Procedimiento Personalizar un paquete de solución de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcc6e59f1c87cd0c3a82383ac97a80488ac1168d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074926"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Procedimiento Personalizar un paquete de solución de SharePoint
   Puede usar el Diseñador de paquetes para crear y personalizar un paquete (*.wsp*). Por ejemplo, puede agregar elementos de proyecto de SharePoint y características, especifique si el servidor Web se restablece cuando se implementa la solución y establecer el tipo de servidor de implementación.
@@ -31,20 +31,20 @@ ms.locfileid: "56602681"
 
 #### <a name="to-open-the-package-designer"></a>Para abrir el Diseñador de paquetes
 
--   En **el Explorador de soluciones**, haga doble clic en **paquete**, o elija **Diseñador de vistas** en el menú contextual de **paquete**.
+- En **el Explorador de soluciones**, haga doble clic en **paquete**, o elija **Diseñador de vistas** en el menú contextual de **paquete**.
 
 ## <a name="view-the-packaged-manifestffile"></a>Ver el manifestfFile empaquetada
  Puede usar el Diseñador de paquetes para modificar y generar el archivo de manifiesto empaquetado. A continuación, puede ver el código XML de este archivo en Visual Studio.
 
 #### <a name="to-view-the-xml-source-file"></a>Para ver el archivo de origen XML
 
-1.  En el **Diseñador de paquetes**, elija **manifiesto**.
+1. En el **Diseñador de paquetes**, elija **manifiesto**.
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Para ver el archivo de manifiesto empaquetado mediante el Explorador de soluciones
 
-1.  En el **Explorador de soluciones**, elija **Mostrar todos los archivos**.
+1. En el **Explorador de soluciones**, elija **Mostrar todos los archivos**.
 
-2.  Expanda el paquete, expanda Package.package y, a continuación, abra el *Package.Template.xml* archivo.
+2. Expanda el paquete, expanda Package.package y, a continuación, abra el *Package.Template.xml* archivo.
 
     > [!NOTE]
     >  Al abrir el archivo de manifiesto XML para la plantilla de paquete, los archivos se validan automáticamente y puede omitir las advertencias que aparecen en la ventana Lista de errores.
@@ -54,13 +54,13 @@ ms.locfileid: "56602681"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Para cambiar la plantilla de manifiesto mediante el Editor XML
 
-1.  En el **Diseñador de paquetes**, elija el **manifiesto** , expanda el **Editar opciones** nodo y, a continuación, elija el **abierto en el Editor XML** vínculo.
+1. En el **Diseñador de paquetes**, elija el **manifiesto** , expanda el **Editar opciones** nodo y, a continuación, elija el **abierto en el Editor XML** vínculo.
 
      Los cambios realizados en el código XML se combinan en el archivo de manifiesto empaquetado.
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Para cambiar la plantilla de manifiesto mediante el panel de la plantilla de manifiesto
 
-1.  En el **Diseñador de paquetes**, elija el **manifiesto** , expanda el **Editar opciones** nodo y, a continuación, cambie el código XML que aparece en el panel de la plantilla de manifiesto.
+1. En el **Diseñador de paquetes**, elija el **manifiesto** , expanda el **Editar opciones** nodo y, a continuación, cambie el código XML que aparece en el panel de la plantilla de manifiesto.
 
      Los cambios en el XML aparecen en la **vista previa del manifiesto empaquetado** panel.
 
@@ -72,9 +72,9 @@ ms.locfileid: "56602681"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Para sobrescribir el archivo de manifiesto empaquetado deshabilitando el diseñador
 
-1.  En el **Diseñador de paquetes**, elija el **manifiesto** ficha.
+1. En el **Diseñador de paquetes**, elija el **manifiesto** ficha.
 
-2.  Expanda el **Editar opciones** nodo, elija el **sobrescritura generado XML y editar el manifiesto en el editor XML** vincular y, a continuación, elija el **Sí** botón.
+2. Expanda el **Editar opciones** nodo, elija el **sobrescritura generado XML y editar el manifiesto en el editor XML** vincular y, a continuación, elija el **Sí** botón.
 
      La plantilla se actualiza con el archivo de manifiesto empaquetado actual.
 
@@ -83,7 +83,7 @@ ms.locfileid: "56602681"
 
 #### <a name="to-re-enable-the-designer"></a>Para volver a habilitar el diseñador
 
-1.  En el **Diseñador de paquetes**, elija el **descarte manifiesto modificaciones y vuelva a habilitar el diseñador** vincular y, a continuación, elija el **Sí** botón.
+1. En el **Diseñador de paquetes**, elija el **descarte manifiesto modificaciones y vuelva a habilitar el diseñador** vincular y, a continuación, elija el **Sí** botón.
 
      La plantilla se actualiza con el texto original y se pierden los cambios realizados en el código XML.
 

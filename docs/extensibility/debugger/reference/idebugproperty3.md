@@ -12,23 +12,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbce619e15006736a2f36bf1d3ab360f6b964a2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e73310d8a1cff3b640896d9bb5883cf2508bda6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705929"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069658"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Esta interfaz proporciona compatibilidad para:
 
--   Recuperar una cadena de longitud arbitraria asociada a la propiedad.
+- Recuperar una cadena de longitud arbitraria asociada a la propiedad.
 
--   Asocia un identificador único a la propiedad.
+- Asocia un identificador único a la propiedad.
 
--   Recuperar una lista de visores personalizados para la propiedad.
+- Recuperar una lista de visores personalizados para la propiedad.
 
--   Establecer el valor de una propiedad con la capacidad para notificar los errores resultantes
+- Establecer el valor de una propiedad con la capacidad para notificar los errores resultantes
 
 ## <a name="syntax"></a>Sintaxis
 

@@ -1,5 +1,5 @@
 ---
-title: 'Paso 4: Diseñar un formulario con un Control TableLayoutPanel | Microsoft Docs'
+title: 'Paso 4: Diseñar un formulario con un Control TableLayoutPanel | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,30 +9,30 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070256"
 ---
-# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Paso 4: Diseñar un formulario con un control TableLayoutPanel
+# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Paso 4: diseño del formulario con un control TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este paso, agregará un control `TableLayoutPanel` al formulario. El control TableLayoutPanel ayuda a alinear correctamente los controles del formulario que se agregarán posteriormente.  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 2)](http://go.microsoft.com/fwlink/?LinkId=205211) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 2)](http://go.microsoft.com/fwlink/?LinkId=205200). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo")para una versión en vídeo de este tema, consulte [Tutorial 1: Crear un visor de imágenes en Visual Basic - vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205211) o [Tutorial 1: Crear un visor de imágenes en C# - vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205200). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Para diseñar el formulario con un control TableLayoutPanel  
   
-1.  En el lado izquierdo del IDE de Visual Studio, busque la pestaña **Cuadro de herramientas**. Pulse la pestaña **Cuadro de herramientas** y aparecerá el cuadro de herramientas. (O bien, en la barra de menús, pulse **Ver**, **Cuadro de herramientas**).  
+1. En el lado izquierdo del IDE de Visual Studio, busque la pestaña **Cuadro de herramientas**. Pulse la pestaña **Cuadro de herramientas** y aparecerá el cuadro de herramientas. (O bien, en la barra de menús, pulse **Ver**, **Cuadro de herramientas**).  
   
-2.  Pulse el símbolo del triángulo pequeño que se encuentra junto al grupo **Contenedores** para abrirlo, tal y como se muestra en la siguiente imagen.  
+2. Pulse el símbolo del triángulo pequeño que se encuentra junto al grupo **Contenedores** para abrirlo, tal y como se muestra en la siguiente imagen.  
   
      ![Grupo de contenedores](../ide/media/express-toolbox.png "Express_Toolbox")  
 Grupo de contenedores  
   
-3.  Puede agregar controles como botones, casillas y etiquetas al formulario. Haga doble clic en el control `TableLayoutPanel` en el cuadro de herramientas. (También puede arrastrar el control desde el Cuadro de herramientas hasta el formulario). Al hacerlo, el IDE agrega un control `TableLayoutPanel` al formulario, como se muestra en la siguiente imagen.  
+3. Puede agregar controles como botones, casillas y etiquetas al formulario. Haga doble clic en el control `TableLayoutPanel` en el cuadro de herramientas. (También puede arrastrar el control desde el Cuadro de herramientas hasta el formulario). Al hacerlo, el IDE agrega un control `TableLayoutPanel` al formulario, como se muestra en la siguiente imagen.  
   
      ![Control TableLayoutPanel](../ide/media/express-formtablelayout.png "Express_FormTableLayout")  
 Control TableLayoutPanel  
@@ -45,26 +45,26 @@ Control TableLayoutPanel
      ![Icono de pin](../ide/media/express-pushpintoolbox.png "Express_PushpinToolbox")  
 Icono de pin  
   
-4.  Pulse **TableLayoutPanel** para asegurarse de que está seleccionado. Puede comprobar qué control está seleccionado examinando la lista desplegable de la parte superior de la ventana **Propiedades**, como se muestra en la siguiente imagen.  
+4. Pulse **TableLayoutPanel** para asegurarse de que está seleccionado. Puede comprobar qué control está seleccionado examinando la lista desplegable de la parte superior de la ventana **Propiedades**, como se muestra en la siguiente imagen.  
   
      ![Ventana Propiedades en la que se muestra el control TableLayoutPanel](../ide/media/express-controlspropwin.png "Express_ControlsPropWin")  
 Ventana Propiedades mostrando el control TableLayoutPanel  
   
-5.  Pulse el botón **Alfabético** en la barra de herramientas de la ventana **Propiedades**. Esto hace que la lista de propiedades de la ventana **Propiedades** aparezca en orden alfabético, lo que facilitará la localización de propiedades en este tutorial.  
+5. Pulse el botón **Alfabético** en la barra de herramientas de la ventana **Propiedades**. Esto hace que la lista de propiedades de la ventana **Propiedades** aparezca en orden alfabético, lo que facilitará la localización de propiedades en este tutorial.  
   
-6.  El selector de controles es una lista desplegable que figura en la parte superior de la ventana **Propiedades**. En este ejemplo, muestra que un control denominado `tableLayoutPanel1` está seleccionado. Puede seleccionar los controles eligiendo un área en el Diseñador de Windows Forms o eligiéndolos en el selector de controles. Ahora que `TableLayoutPanel` está seleccionado, busque la propiedad **Dock** y pulse **Dock**, que debería estar establecida en **None**. Observe que aparece una flecha de lista desplegable al lado del valor. Pulse la flecha y, después, seleccione el botón **Rellenar** (el botón grande del centro), tal y como se muestra en la siguiente imagen.  
+6. El selector de controles es una lista desplegable que figura en la parte superior de la ventana **Propiedades**. En este ejemplo, muestra que un control denominado `tableLayoutPanel1` está seleccionado. Puede seleccionar los controles eligiendo un área en el Diseñador de Windows Forms o eligiéndolos en el selector de controles. Ahora que `TableLayoutPanel` está seleccionado, busque la propiedad **Dock** y pulse **Dock**, que debería estar establecida en **None**. Observe que aparece una flecha de lista desplegable al lado del valor. Pulse la flecha y, después, seleccione el botón **Rellenar** (el botón grande del centro), tal y como se muestra en la siguiente imagen.  
   
      ![Ventana Propiedades con la opción Rellenar seleccionada](../ide/media/express-docktable.png "Express_DockTable")  
 Ventana Propiedades con la opción Rellenar seleccionada  
   
      *Acoplar* en Visual Studio hace referencia a cuando una ventana está asociada a otra ventana o área en el IDE. Por ejemplo, la ventana Propiedades puede estar desacoplada, es decir, estar desasociada y flotar libremente en Visual Studio, o puede estar acoplada en el **Explorador de soluciones**.  
   
-7.  Después de establecer la propiedad **Dock** de TableLayoutPanel en **Fill**, el panel rellena el formulario completo. Si vuelve a cambiar el tamaño del formulario, TableLayoutPanel permanecerá acoplado y cambiará de tamaño para ajustarse al formulario.  
+7. Después de establecer la propiedad **Dock** de TableLayoutPanel en **Fill**, el panel rellena el formulario completo. Si vuelve a cambiar el tamaño del formulario, TableLayoutPanel permanecerá acoplado y cambiará de tamaño para ajustarse al formulario.  
   
     > [!NOTE]
-    >  TableLayoutPanel funciona exactamente igual que una tabla de Microsoft Office Word: tiene filas y columnas, y una celda individual puede abarcar varias filas y columnas. Cada celda puede contener un control (como un botón, una casilla o una etiqueta). Este control TableLayoutPanel va a contener un control `PictureBox` que abarcará completamente su fila superior, un control `CheckBox` en la celda inferior izquierda, y cuatro controles `Button` en la celda inferior derecha.  
+    >  TableLayoutPanel funciona como una tabla de Microsoft Office Word: Tiene filas y columnas y una celda individual puede abarcar varias filas y columnas. Cada celda puede contener un control (como un botón, una casilla o una etiqueta). Este control TableLayoutPanel va a contener un control `PictureBox` que abarcará completamente su fila superior, un control `CheckBox` en la celda inferior izquierda, y cuatro controles `Button` en la celda inferior derecha.  
   
-8.  Actualmente, TableLayoutPanel tiene dos filas del mismo tamaño y dos columnas del mismo tamaño. Tenemos que cambiar su tamaño de modo que la fila superior y la columna derecha sean mucho mayores. En el Diseñador de Windows Forms, seleccione TableLayoutPanel. En la esquina superior derecha, hay un botoncito triangular de color negro, con el siguiente aspecto.  
+8. Actualmente, TableLayoutPanel tiene dos filas del mismo tamaño y dos columnas del mismo tamaño. Tenemos que cambiar su tamaño de modo que la fila superior y la columna derecha sean mucho mayores. En el Diseñador de Windows Forms, seleccione TableLayoutPanel. En la esquina superior derecha, hay un botoncito triangular de color negro, con el siguiente aspecto.  
   
      ![Botón Triángulo](../ide/media/express-iconblacktriangle.gif "Express_IconBlackTriangle")  
 Botón Triángulo  
@@ -90,6 +90,6 @@ Form1 con TableLayoutPanel cambiado de tamaño
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  
   
--   Para ir al siguiente paso del tutorial, vea [Paso 5: Agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md).  
+- Para ir al siguiente paso del tutorial, vea [Paso 5: Agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md).  
   
--   Para volver al paso anterior del tutorial, vea [Paso 3: Establecer las propiedades del formulario](../ide/step-3-set-your-form-properties.md).
+- Para volver al paso anterior del tutorial, vea [Paso 3: Establecer las propiedades del formulario](../ide/step-3-set-your-form-properties.md).

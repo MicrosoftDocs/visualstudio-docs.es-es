@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a54f319034bc22f4dfd0f61e2c4f50d6b7bf94d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ec9bb626b44365dc27d46a235a1ee4895f3eb5c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994848"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074563"
 ---
 # <a name="vspackage-registration"></a>Registro de VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ Debe aconsejar VSPackages [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que es
   
  Además de bueno en teoría, autorregistro tiene varios defectos que hacen que no son adecuados para la instalación de VSPackage:  
   
--   Admitir correctamente la instalación, desinstalación, reversión de la instalación y desinstalación rollback, deberá crear cuatro acciones personalizadas para cada VSPackage administrado que se registra automáticamente mediante una llamada a RegPkg.  
+- Admitir correctamente la instalación, desinstalación, reversión de la instalación y desinstalación rollback, deberá crear cuatro acciones personalizadas para cada VSPackage administrado que se registra automáticamente mediante una llamada a RegPkg.  
   
--   El enfoque para la compatibilidad en paralelo puede requerir que crear cuatro acciones personalizadas que invocan RegSvr32 o RegPkg para todas las versiones compatibles de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- El enfoque para la compatibilidad en paralelo puede requerir que crear cuatro acciones personalizadas que invocan RegSvr32 o RegPkg para todas las versiones compatibles de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   Una instalación con módulos registrados automáticamente no se puede revertir sin ningún riesgo porque no hay ninguna manera de indicar si se utilizan las claves autorregistrar por otra aplicación o característica.  
+- Una instalación con módulos registrados automáticamente no se puede revertir sin ningún riesgo porque no hay ninguna manera de indicar si se utilizan las claves autorregistrar por otra aplicación o característica.  
   
--   DLL autorregistrar a veces se vinculan a archivos DLL auxiliar que no están presentes o tienen una versión incorrecta. En cambio, Windows Installer puede registrar la DLL mediante las tablas de registro sin ninguna dependencia con el estado actual del sistema.  
+- DLL autorregistrar a veces se vinculan a archivos DLL auxiliar que no están presentes o tienen una versión incorrecta. En cambio, Windows Installer puede registrar la DLL mediante las tablas de registro sin ninguna dependencia con el estado actual del sistema.  
   
--   Código de registro automático se puede denegar el acceso a recursos de red, como bibliotecas de tipos, si es un componente especificado como la ejecución desde origen tanto se muestra en la tabla SelfReg. Esto puede causar la instalación del componente a un error durante una instalación administrativa.  
+- Código de registro automático se puede denegar el acceso a recursos de red, como bibliotecas de tipos, si es un componente especificado como la ejecución desde origen tanto se muestra en la tabla SelfReg. Esto puede causar la instalación del componente a un error durante una instalación administrativa.  
   
 ## <a name="see-also"></a>Vea también  
  [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   

@@ -12,12 +12,12 @@ ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dabe414fffe77d79981fa5f5b4af08b2ce32cca0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d8fd3fc01a5dd3e10e633b876b719695d6b26c18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072986"
 ---
 # <a name="changing-the-text-of-a-menu-command"></a>Cambio del texto de un comando de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Los pasos siguientes muestran cómo cambiar la etiqueta de texto de un comando d
   
 ## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>Cambiar una etiqueta de comando de menú con la interfaz  
   
-1.  Cree un proyecto VSIX denominado `MenuText` con un comando de menú denominado **ChangeMenuText**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Cree un proyecto VSIX denominado `MenuText` con un comando de menú denominado **ChangeMenuText**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  En el archivo .vstc, agregue el `TextChanges` marca para el comando de menú, como se muestra en el ejemplo siguiente.  
+2. En el archivo .vstc, agregue el `TextChanges` marca para el comando de menú, como se muestra en el ejemplo siguiente.  
   
     ```xml  
     <Button guid="guidChangeMenuTextPackageCmdSet" id="ChangeMenuTextId" priority="0x0100" type="Button">  
@@ -41,7 +41,7 @@ Los pasos siguientes muestran cómo cambiar la etiqueta de texto de un comando d
     </Button>  
     ```  
   
-3.  En el archivo ChangeMenuText.cs, cree un controlador de eventos que se llamará antes de que se muestra el comando de menú.  
+3. En el archivo ChangeMenuText.cs, cree un controlador de eventos que se llamará antes de que se muestra el comando de menú.  
   
     ```csharp  
     private void OnBeforeQueryStatus(object sender, EventArgs e)  
@@ -56,7 +56,7 @@ Los pasos siguientes muestran cómo cambiar la etiqueta de texto de un comando d
   
      También puede actualizar el estado del comando de menú en este método cambiando el <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, y <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> propiedades en el <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto.  
   
-4.  En el constructor ChangeMenuText, reemplace el código de inicialización y la colocación de comandos original con el código que crea un <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> (en lugar de un `MenuCommand`) que representa el comando de menú, se agrega el <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> controlador de eventos y ofrece el menú comando para el servicio de comandos de menú.  
+4. En el constructor ChangeMenuText, reemplace el código de inicialización y la colocación de comandos original con el código que crea un <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> (en lugar de un `MenuCommand`) que representa el comando de menú, se agrega el <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> controlador de eventos y ofrece el menú comando para el servicio de comandos de menú.  
   
      Este es el aspecto debería:  
   
@@ -83,8 +83,8 @@ Los pasos siguientes muestran cómo cambiar la etiqueta de texto de un comando d
     }  
     ```  
   
-5.  Compile la solución y comience la depuración. Aparece la instancia experimental de Visual Studio.  
+5. Compile la solución y comience la depuración. Aparece la instancia experimental de Visual Studio.  
   
-6.  En el **herramientas** menú debería ver un comando llamado **ChangeMenuText invocar**.  
+6. En el **herramientas** menú debería ver un comando llamado **ChangeMenuText invocar**.  
   
-7.  Haga clic en el comando. Debería ver el anuncio de cuadro de mensaje que se ha llamado MenuItemCallback. Al descartar el cuadro de mensaje, debería ver que ahora es el nombre del comando en el menú herramientas **nuevo texto**.
+7. Haga clic en el comando. Debería ver el anuncio de cuadro de mensaje que se ha llamado MenuItemCallback. Al descartar el cuadro de mensaje, debería ver que ahora es el nombre del comando en el menú herramientas **nuevo texto**.

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df33470ea76ac29626459c1240873068180b0860
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071764"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón
   Este tutorial muestra cómo usar los botones y cuadros de texto en una personalización de nivel de documento para Microsoft Office Word.
@@ -35,16 +35,16 @@ ms.locfileid: "56600989"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word
+- Microsoft Word
 
 ## <a name="create-the-project"></a>Crear el proyecto
  El primer paso es crear un proyecto de tipo Documento de Word.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
-1.  Cree un proyecto de documento de Word con el nombre **Mi botón de Word**. En el asistente, seleccione **crear un nuevo documento**.
+1. Cree un proyecto de documento de Word con el nombre **Mi botón de Word**. En el asistente, seleccione **crear un nuevo documento**.
 
      Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -68,7 +68,7 @@ ms.locfileid: "56600989"
 
 5. Arrastre un **botón** control al documento y cambie las siguientes propiedades.
 
-   |Property|Valor|
+   |Propiedad|Valor|
    |--------------|-----------|
    |**Name**|**insertText**|
    |**Texto**|**Insertar texto**|
@@ -80,14 +80,14 @@ ms.locfileid: "56600989"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Para escribir en el cuadro de texto cuando se haga clic en el botón
 
-1.  En **el Explorador de soluciones**, haga clic en **ThisDocument**y, a continuación, haga clic en **ver código** en el menú contextual.
+1. En **el Explorador de soluciones**, haga clic en **ThisDocument**y, a continuación, haga clic en **ver código** en el menú contextual.
 
-2.  Agregue el siguiente código al controlador de eventos <xref:System.Windows.Forms.Control.Click> del botón.
+2. Agregue el siguiente código al controlador de eventos <xref:System.Windows.Forms.Control.Click> del botón.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]
 
-3.  En C#, debe agregar un controlador de eventos para el botón al evento <xref:Microsoft.Office.Tools.Word.Document.Startup>. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. En C#, debe agregar un controlador de eventos para el botón al evento <xref:Microsoft.Office.Tools.Word.Document.Startup>. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]
 
@@ -96,18 +96,18 @@ ms.locfileid: "56600989"
 
 ### <a name="to-test-your-document"></a>Para probar el documento
 
-1.  Presione **F5** para ejecutar el proyecto.
+1. Presione **F5** para ejecutar el proyecto.
 
-2.  Haga clic en el botón.
+2. Haga clic en el botón.
 
-3.  Confirme que **Hola a todos!** aparece en el cuadro de texto.
+3. Confirme que **Hola a todos!** aparece en el cuadro de texto.
 
 ## <a name="next-steps"></a>Pasos siguientes
  Este tutorial muestra los conceptos básicos del uso de botones y cuadros de texto en documentos de Word. A continuación, podría realizar las siguientes tareas:
 
--   Usar un cuadro combinado para cambiar el formato. Para obtener más información, vea [Tutorial: Cambiar formato de documento utilizando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Usar un cuadro combinado para cambiar el formato. Para obtener más información, vea [Tutorial: Cambiar formato de documento utilizando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
--   Usar botones de radio para seleccionar estilos de gráfico. Para obtener más información, vea [Tutorial: Actualizar un gráfico en un documento utilizando botones de radio](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
+- Usar botones de radio para seleccionar estilos de gráfico. Para obtener más información, vea [Tutorial: Actualizar un gráfico en un documento utilizando botones de radio](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
 ## <a name="see-also"></a>Vea también
 - [Controles de Windows Forms en información general sobre documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

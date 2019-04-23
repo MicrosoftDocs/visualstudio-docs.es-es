@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26632961474f54a545ff0fa900fff6c50a9ec3da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 565d735e2d822d6cc7b353ffdf106b30201c22d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605944"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074380"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Tutorial: Crear una plantilla mediante controles de contenido
   Este tutorial muestra cómo crear una personalización de nivel de documento que usa controles de contenido para crear contenido estructurado y reutilizable en una plantilla de Microsoft Office Word.
@@ -47,16 +47,16 @@ ms.locfileid: "56605944"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word.
+- Microsoft Word.
 
 ## <a name="create-a-new-word-template-project"></a>Crear un nuevo proyecto de plantilla de Word
  Cree una plantilla de Word para que los usuarios pueden crear fácilmente sus propias copias.
 
 ### <a name="to-create-a-new-word-template-project"></a>Para crear un nuevo proyecto de plantilla de Word
 
-1.  Cree un proyecto de plantilla de Word con el nombre **MyBuildingBlockTemplate**. En el asistente, cree un nuevo documento en la solución. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Cree un proyecto de plantilla de Word con el nombre **MyBuildingBlockTemplate**. En el asistente, cree un nuevo documento en la solución. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] se abre la nueva plantilla de Word en el diseñador y agrega el **MyBuildingBlockTemplate** proyecto a **el Explorador de soluciones**.
 
@@ -137,14 +137,14 @@ ms.locfileid: "56605944"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Para modificar la interfaz de usuario de los controles de contenido mediante programación
 
-1.  En **el Explorador de soluciones**, haga clic en **ThisDocument.cs** o **ThisDocument.vb**y, a continuación, haga clic en **ver código**.
+1. En **el Explorador de soluciones**, haga clic en **ThisDocument.cs** o **ThisDocument.vb**y, a continuación, haga clic en **ver código**.
 
-2.  Agregue el código siguiente a la clase `ThisDocument` . Este código declara varios objetos que usará más adelante en este tutorial.
+2. Agregue el código siguiente a la clase `ThisDocument` . Este código declara varios objetos que usará más adelante en este tutorial.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]
 
-3.  Agregue el siguiente código al método `ThisDocument_Startup` de la clase `ThisDocument`. Este código agrega entradas a <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> y <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> en las tablas y establece el texto del marcador de posición que se muestra en cada uno de estos controles antes de que el usuario los edite.
+3. Agregue el siguiente código al método `ThisDocument_Startup` de la clase `ThisDocument`. Este código agrega entradas a <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> y <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> en las tablas y establece el texto del marcador de posición que se muestra en cada uno de estos controles antes de que el usuario los edite.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]
@@ -154,7 +154,7 @@ ms.locfileid: "56605944"
 
 ### <a name="to-prevent-users-from-editing-the-employee-table"></a>Para impedir que los usuarios editen la tabla de empleados
 
-1.  Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código impide que los usuarios editen la tabla de empleados al colocarla dentro del objeto <xref:Microsoft.Office.Tools.Word.GroupContentControl> que declaró anteriormente.
+1. Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código impide que los usuarios editen la tabla de empleados al colocarla dentro del objeto <xref:Microsoft.Office.Tools.Word.GroupContentControl> que declaró anteriormente.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]
@@ -164,12 +164,12 @@ ms.locfileid: "56605944"
 
 ### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>Para agregar las tablas a los bloques de creación en la plantilla
 
-1.  Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código agrega nuevos bloques de creación que contienen las tablas a la colección Microsoft.Office.Interop.Word.BuildingBlockEntries, que contiene todos los bloques de creación reutilizables de la plantilla. Los nuevos bloques de creación se definen en una nueva categoría denominada **información de empleados y clientes** y se asignan al tipo de bloque de creación `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
+1. Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código agrega nuevos bloques de creación que contienen las tablas a la colección Microsoft.Office.Interop.Word.BuildingBlockEntries, que contiene todos los bloques de creación reutilizables de la plantilla. Los nuevos bloques de creación se definen en una nueva categoría denominada **información de empleados y clientes** y se asignan al tipo de bloque de creación `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
 
-2.  Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código elimina las tablas de la plantilla. Las tablas ya no son necesarias, ya que se agregaron a la galería de bloques de creación reutilizables de la plantilla. El código sitúa primero el documento en modo de diseño para que se pueda eliminar la tabla de empleados protegida.
+2. Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código elimina las tablas de la plantilla. Las tablas ya no son necesarias, ya que se agregaron a la galería de bloques de creación reutilizables de la plantilla. El código sitúa primero el documento en modo de diseño para que se pueda eliminar la tabla de empleados protegida.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]
@@ -179,7 +179,7 @@ ms.locfileid: "56605944"
 
 ### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>Para crear un control de contenido que muestra los bloques de creación
 
-1.  Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código inicializa el objeto <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> que declaró anteriormente. El <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> muestra todos los bloques de creación que se definen en la categoría **información de empleados y clientes** y que tienen el tipo de bloque de creación `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
+1. Agregue el código siguiente al método `ThisDocument_Startup` de la clase `ThisDocument` después del código que agregó en el paso anterior. Este código inicializa el objeto <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> que declaró anteriormente. El <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> muestra todos los bloques de creación que se definen en la categoría **información de empleados y clientes** y que tienen el tipo de bloque de creación `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
@@ -189,50 +189,50 @@ ms.locfileid: "56605944"
 
 ### <a name="to-test-the-employee-table"></a>Para probar la tabla de empleados
 
-1.  Presione **F5** para ejecutar el proyecto.
+1. Presione **F5** para ejecutar el proyecto.
 
-2.  Haga clic en **elegir el primer bloque de creación** para mostrar el primer control de contenido de la Galería de bloques de creación.
+2. Haga clic en **elegir el primer bloque de creación** para mostrar el primer control de contenido de la Galería de bloques de creación.
 
-3.  Haga clic en la flecha desplegable situada junto a la **galería personalizada 1** en el control de encabezado y seleccione **tabla Employee**.
+3. Haga clic en la flecha desplegable situada junto a la **galería personalizada 1** en el control de encabezado y seleccione **tabla Employee**.
 
-4.  Haga clic en la celda situada a la derecha de la **nombre empleado** de celda y escriba un nombre.
+4. Haga clic en la celda situada a la derecha de la **nombre empleado** de celda y escriba un nombre.
 
      Compruebe que solo puede agregar texto a esta celda. <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> permite a los usuarios agregar solo texto, no otros tipos de contenido, como una imagen o una tabla.
 
-5.  Haga clic en la celda situada a la derecha de la **fecha de contratación** de celda y seleccione una fecha en el selector de fecha.
+5. Haga clic en la celda situada a la derecha de la **fecha de contratación** de celda y seleccione una fecha en el selector de fecha.
 
-6.  Haga clic en la celda situada a la derecha de la **título** de celda y seleccione uno de los puestos de trabajo en el cuadro combinado.
+6. Haga clic en la celda situada a la derecha de la **título** de celda y seleccione uno de los puestos de trabajo en el cuadro combinado.
 
      También puede escribir el nombre de un puesto de trabajo que no está en la lista. Esto es posible porque <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> permite a los usuarios seleccionar las entradas de una lista o escribir sus propias entradas.
 
-7.  Haga clic en el icono de la celda situada a la derecha de la **imagen** de celda y busque una imagen para mostrarla.
+7. Haga clic en el icono de la celda situada a la derecha de la **imagen** de celda y busque una imagen para mostrarla.
 
-8.  Intente agregar filas o columnas a la tabla e intente eliminar filas y columnas de la tabla. Compruebe que no se puede modificar la tabla. <xref:Microsoft.Office.Tools.Word.GroupContentControl> impide realizar ninguna modificación.
+8. Intente agregar filas o columnas a la tabla e intente eliminar filas y columnas de la tabla. Compruebe que no se puede modificar la tabla. <xref:Microsoft.Office.Tools.Word.GroupContentControl> impide realizar ninguna modificación.
 
 ### <a name="to-test-the-customer-feedback-table"></a>Para probar la tabla de comentarios de clientes
 
-1.  Haga clic en **elija el segundo bloque de creación** para mostrar el segundo control de contenido de la Galería de bloques de creación.
+1. Haga clic en **elija el segundo bloque de creación** para mostrar el segundo control de contenido de la Galería de bloques de creación.
 
-2.  Haga clic en la flecha desplegable situada junto a la **galería personalizada 1** en el control de encabezado y seleccione **tabla Customer**.
+2. Haga clic en la flecha desplegable situada junto a la **galería personalizada 1** en el control de encabezado y seleccione **tabla Customer**.
 
-3.  Haga clic en la celda situada a la derecha de la **Customer Name** de celda y escriba un nombre.
+3. Haga clic en la celda situada a la derecha de la **Customer Name** de celda y escriba un nombre.
 
-4.  Haga clic en la celda situada a la derecha de la **satisfacción** de celda y seleccione una de las opciones disponibles.
+4. Haga clic en la celda situada a la derecha de la **satisfacción** de celda y seleccione una de las opciones disponibles.
 
      Compruebe que no puede escribir una entrada por su cuenta. <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> permite a los usuarios seleccionar solo las entradas de una lista.
 
-5.  Haga clic en la celda situada a la derecha de la **comentarios** de celda y escriba algún comentario.
+5. Haga clic en la celda situada a la derecha de la **comentarios** de celda y escriba algún comentario.
 
      También puede agregar contenido que no sea texto, como una imagen o una tabla insertada. Esto es posible porque <xref:Microsoft.Office.Tools.Word.RichTextContentControl> permite a los usuarios agregar contenido que no sea texto.
 
-6.  Compruebe que puede agregar filas o columnas a la tabla y que puede eliminar filas y columnas de la tabla. Esto es posible porque no protegió la tabla colocándola en <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
+6. Compruebe que puede agregar filas o columnas a la tabla y que puede eliminar filas y columnas de la tabla. Esto es posible porque no protegió la tabla colocándola en <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
 
-7.  Cierre la plantilla.
+7. Cierre la plantilla.
 
 ## <a name="next-steps"></a>Pasos siguientes
  Puede obtener más información sobre cómo usar controles de contenido en este tema:
 
--   Enlazar controles de contenido a elementos XML (también llamados elementos XML personalizados) que están insertados en un documento. Para obtener más información, vea [Tutorial: Enlazar controles de contenido a elementos XML personalizados](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
+- Enlazar controles de contenido a elementos XML (también llamados elementos XML personalizados) que están insertados en un documento. Para obtener más información, vea [Tutorial: Enlazar controles de contenido a elementos XML personalizados](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
 ## <a name="see-also"></a>Vea también
 - [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)

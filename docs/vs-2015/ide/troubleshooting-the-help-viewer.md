@@ -1,5 +1,5 @@
 ---
-title: Solución de problemas del Visor de ayuda | Microsoft Docs
+title: Solución de problemas del Visor de ayuda | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer
@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774606"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067045"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Solución de problemas del Visor de Ayuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ En este tema se describen los problemas que pueden surgir con el Visor de Ayuda.
   
 #### <a name="to-activate-windows-search-service"></a>Para activar el servicio de Windows Search  
   
-1.  Inicie el Administrador del servidor.  
+1. Inicie el Administrador del servidor.  
   
-2.  En el panel de navegación izquierdo, elija **Roles**.  
+2. En el panel de navegación izquierdo, elija **Roles**.  
   
-3.  En el panel Resumen de roles, elija **Agregar rol**.  
+3. En el panel Resumen de roles, elija **Agregar rol**.  
   
-4.  Elija el rol Servicios de archivo y después elija el botón **Siguiente**.  
+4. Elija el rol Servicios de archivo y después elija el botón **Siguiente**.  
   
-5.  Elija el servicio de rol de Windows Search.  
+5. Elija el servicio de rol de Windows Search.  
   
 ## <a name="additional-resources"></a>Recursos adicionales  
  Puede obtener más información y proporcionar comentarios sobre el Visor de Ayuda mediante los siguientes recursos:  

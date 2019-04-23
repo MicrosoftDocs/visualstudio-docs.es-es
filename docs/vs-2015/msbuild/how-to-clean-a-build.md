@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f4f410656e49b1a76e74898940cbd32314fc8b4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075368"
 ---
 # <a name="how-to-clean-a-build"></a>Cómo: Limpiar los resultados de una compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
   
 #### <a name="to-create-a-directory-for-output-items"></a>Para crear un directorio para los elementos de salida  
   
-1.  Use el elemento `Property` para definir la ubicación y el nombre del directorio. Por ejemplo, cree un directorio denominado `BuiltApp` en el directorio que contiene los archivos de proyecto y de código fuente:  
+1. Use el elemento `Property` para definir la ubicación y el nombre del directorio. Por ejemplo, cree un directorio denominado `BuiltApp` en el directorio que contiene los archivos de proyecto y de código fuente:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Use la tarea [MakeDir](../msbuild/makedir-task.md) para crear el directorio, si este no existe. Por ejemplo:  
+2. Use la tarea [MakeDir](../msbuild/makedir-task.md) para crear el directorio, si este no existe. Por ejemplo:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -46,7 +46,7 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Para quitar un directorio y todos los archivos que contiene  
   
--   Use la tarea `RemoveDir` para quitar el directorio. Por ejemplo:  
+- Use la tarea `RemoveDir` para quitar el directorio. Por ejemplo:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   

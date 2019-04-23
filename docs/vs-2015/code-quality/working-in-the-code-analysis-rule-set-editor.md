@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987217"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072258"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Trabajar en el editor de conjuntos de reglas de análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ El editor de conjunto de reglas de análisis de código le permite especificar l
   
  El editor muestra las reglas en una estructura de árbol que agrupa las reglas por una regla de establece el campo especificado. Para agregar o quitar las reglas de un conjunto de reglas, realice uno o varios de los pasos siguientes:  
   
--   Active o desactive la casilla de verificación del nodo de grupo para agregar o quitar todas las reglas del grupo. Cuando se selecciona un grupo, todas las reglas se establecen en el **advertencia** acción.  
+- Active o desactive la casilla de verificación del nodo de grupo para agregar o quitar todas las reglas del grupo. Cuando se selecciona un grupo, todas las reglas se establecen en el **advertencia** acción.  
   
--   Haga clic en el **acción** campo de un grupo y, a continuación, especifique la acción que se aplican a todas las reglas del grupo.  
+- Haga clic en el **acción** campo de un grupo y, a continuación, especifique la acción que se aplican a todas las reglas del grupo.  
   
--   Active o desactive la casilla de verificación de una regla individual. Cuando se selecciona la casilla de verificación para una regla, la regla se establece en la acción de advertencia.  
+- Active o desactive la casilla de verificación de una regla individual. Cuando se selecciona la casilla de verificación para una regla, la regla se establece en la acción de advertencia.  
   
 ## <a name="rule-set-editor-toolbar"></a>Barra de herramientas del Editor de conjunto de reglas  
  Puede usar la barra de herramientas del editor de conjunto de reglas para agrupar, filtrar y buscar los datos que aparecen en la cuadrícula de conjunto de reglas.  
@@ -73,6 +73,6 @@ El editor de conjunto de reglas de análisis de código le permite especificar l
 ## <a name="sorting-and-filtering-rule-sets"></a>Ordenar y filtrar conjuntos de reglas  
  Desde los encabezados de columna de la cuadrícula de conjunto de reglas, puede ordenar y filtrar las reglas por los valores del campo.  
   
--   Para ordenar las listas de conjunto de reglas, haga clic en el encabezado de columna del campo por el que desea ordenar. Si los conjuntos de reglas se agrupan, cada grupo se ordena por separado.  
+- Para ordenar las listas de conjunto de reglas, haga clic en el encabezado de columna del campo por el que desea ordenar. Si los conjuntos de reglas se agrupan, cada grupo se ordena por separado.  
   
--   Para filtrar los conjuntos de reglas por el valor de un campo, haga clic en el botón de filtro en el encabezado de columna del campo por el que desea filtrar. Active las casillas de los valores que desea mostrar y desactive las casillas de los valores que desea ocultar.
+- Para filtrar los conjuntos de reglas por el valor de un campo, haga clic en el botón de filtro en el encabezado de columna del campo por el que desea filtrar. Active las casillas de los valores que desea mostrar y desactive las casillas de los valores que desea ocultar.

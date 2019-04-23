@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f81bdcad4f255585c2c554add59ed04dea5872d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074221"
 ---
 # <a name="t4-assembly-directive"></a>Directiva de ensamblado T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la plantilla de texto en tiempo 
   
 - El ensamblado contiene el ADSL.  
   
-##  <a name="msbuild"></a> Uso de las propiedades del proyecto de MSBuild y Visual Studio  
+## <a name="msbuild"></a> Uso de las propiedades del proyecto de MSBuild y Visual Studio  
  Las macros de Visual Studio, como $ (SolutionDir), no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.  
   
  Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. En este ejemplo se define una propiedad denominada `myLibFolder`:  

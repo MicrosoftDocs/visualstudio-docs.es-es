@@ -11,12 +11,12 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 77363b0ed4635559007680e9923575eac222fbcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fa0acb706d0b5cb6a37578ab6cb7b707850c5949
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070633"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Creación de una ventana de herramientas de varias instancias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,14 +27,14 @@ Puede programar una ventana de herramientas para que varias instancias del mismo
   
 ## <a name="creating-a-basic-single-instance-tool-window"></a>Creación de una ventana de herramientas Basic (instancia única)  
   
-1.  Cree un proyecto denominado **MultiInstanceToolWindow** con la plantilla VSIX y agrega una plantilla de elemento de ventana de herramienta personalizada denominada **MIToolWindow**.  
+1. Cree un proyecto denominado **MultiInstanceToolWindow** con la plantilla VSIX y agrega una plantilla de elemento de ventana de herramienta personalizada denominada **MIToolWindow**.  
   
     > [!NOTE]
     >  Para obtener más información acerca de cómo crear una extensión con una ventana de herramientas, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="making-a-tool-window-multi-instance"></a>Hacer que una instancia múltiple de ventana de herramienta  
   
-1.  Abra el **MIToolWindowPackage.cs** de archivo y busque el `ProvideToolWindow` atributo. y el `MultiInstances=true` parámetro, tal como se muestra en el ejemplo siguiente.  
+1. Abra el **MIToolWindowPackage.cs** de archivo y busque el `ProvideToolWindow` atributo. y el `MultiInstances=true` parámetro, tal como se muestra en el ejemplo siguiente.  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -46,15 +46,15 @@ Puede programar una ventana de herramientas para que varias instancias del mismo
     {. . .}  
     ```  
   
-2.  En el archivo MIToolWindowCommand.cs, busque el método ShowToolWindos(). En este método, llame a la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método y establezca su `create` marca a `false` para que creará una iteración a través de las instancias de la ventana de herramienta existentes hasta que esté disponible `id` se encuentra.  
+2. En el archivo MIToolWindowCommand.cs, busque el método ShowToolWindos(). En este método, llame a la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método y establezca su `create` marca a `false` para que creará una iteración a través de las instancias de la ventana de herramienta existentes hasta que esté disponible `id` se encuentra.  
   
-3.  Para crear una instancia de la ventana de herramienta, llame a la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método y establezca su `id` en un valor disponible y su `create` marca a `true`.  
+3. Para crear una instancia de la ventana de herramienta, llame a la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método y establezca su `id` en un valor disponible y su `create` marca a `true`.  
   
      De forma predeterminada, el valor de la `id` parámetro de la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método es `0`. Esto hace que una ventana de herramientas de instancia única. Para que más de una instancia hospedarse, cada instancia debe tener su propia `id`.  
   
-4.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto devuelto por la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> propiedad de la instancia de la ventana de herramienta.  
+4. Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto devuelto por la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> propiedad de la instancia de la ventana de herramienta.  
   
-5.  De forma predeterminada, el `ShowToolWindow` método que se crea mediante la plantilla de elemento de la ventana de herramienta crea una ventana de herramientas de instancia única. El ejemplo siguiente muestra cómo modificar el `ShowToolWindow` método para crear varias instancias.  
+5. De forma predeterminada, el `ShowToolWindow` método que se crea mediante la plantilla de elemento de la ventana de herramienta crea una ventana de herramientas de instancia única. El ejemplo siguiente muestra cómo modificar el `ShowToolWindow` método para crear varias instancias.  
   
     ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  

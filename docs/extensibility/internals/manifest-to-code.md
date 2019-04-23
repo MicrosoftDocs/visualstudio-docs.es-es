@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7583a25e000478e473cce61fd85e0158bad4212
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609561"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075836"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 El manifiesto de la herramienta de código es una aplicación de consola que toma un archivo .imagemanifest para el servicio de imágenes de Visual Studio y genera un archivo contenedor o archivos para hacer referencia a los valores del manifiesto de la imagen en C++, C#, VB o archivos .vsct para extensiones de Visual Studio. Esta herramienta genera archivos de contenedor que se pueden usar para solicitar las imágenes desde el servicio Visual Studio imagen directamente, o para pasar los valores del manifiesto a través de API si el código no controla cualquiera de su propia interfaz de usuario y la representación.
@@ -40,17 +40,17 @@ El manifiesto de la herramienta de código es una aplicación de consola que tom
 
  **Ejemplos**
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ Namespace/namespace: mi:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ Namespace/namespace: mi:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
 
 ## <a name="notes"></a>Notas
 
--   Se recomienda usar esta herramienta con los manifiestos de imagen que se generaron mediante el manifiesto de la herramienta de recursos.
+- Se recomienda usar esta herramienta con los manifiestos de imagen que se generaron mediante el manifiesto de la herramienta de recursos.
 
--   La herramienta solo examina las entradas de símbolo para generar los contenedores de código. Si un manifiesto de imagen no contiene ningún símbolo, los contenedores de código generado estará vacíos. Si hay una imagen o un conjunto de imágenes en el manifiesto de imagen que no usan los símbolos, se excluirán del contenedor de código.
+- La herramienta solo examina las entradas de símbolo para generar los contenedores de código. Si un manifiesto de imagen no contiene ningún símbolo, los contenedores de código generado estará vacíos. Si hay una imagen o un conjunto de imágenes en el manifiesto de imagen que no usan los símbolos, se excluirán del contenedor de código.
 
 ## <a name="sample-output"></a>Resultados de ejemplo
  **Contenedores de C#**

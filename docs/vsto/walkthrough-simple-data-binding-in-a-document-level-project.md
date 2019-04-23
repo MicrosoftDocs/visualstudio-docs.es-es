@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b6a23609f096f28d63afc952c069ef6e280f132
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640277"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066654"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Tutorial: Enlace de datos simple en un proyecto de nivel de documento
   Este tutorial muestra los aspectos básicos del enlace de datos en un proyecto de nivel de documento. Un único campo de datos en una base de datos de SQL Server está enlazado a un rango con nombre en Microsoft Office Excel. El tutorial también muestra cómo agregar controles que permiten desplazarse por todos los registros de la tabla.
@@ -41,13 +41,13 @@ ms.locfileid: "56640277"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Acceso a un servidor con la base de datos de ejemplo Northwind de SQL Server.
+- Acceso a un servidor con la base de datos de ejemplo Northwind de SQL Server.
 
--   Permisos para leer y escribir en la base de datos de SQL Server.
+- Permisos para leer y escribir en la base de datos de SQL Server.
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo
  En este paso, creará un proyecto de libro de Excel.
@@ -88,21 +88,21 @@ ms.locfileid: "56640277"
 
 ### <a name="to-add-two-named-ranges"></a>Para agregar dos rangos con nombre
 
-1.  Compruebe que la *Binding.xlsx de datos Simple mi* libro está abierto en el Diseñador de Visual Studio, con **Sheet1** muestra.
+1. Compruebe que la *Binding.xlsx de datos Simple mi* libro está abierto en el Diseñador de Visual Studio, con **Sheet1** muestra.
 
-2.  Abra el **orígenes de datos** ventana y expanda el **clientes** nodo.
+2. Abra el **orígenes de datos** ventana y expanda el **clientes** nodo.
 
-3.  Seleccione el **CompanyName** columna y, a continuación, haga clic en la flecha de lista desplegable que aparece.
+3. Seleccione el **CompanyName** columna y, a continuación, haga clic en la flecha de lista desplegable que aparece.
 
-4.  Seleccione **NamedRange** en la lista desplegable y, a continuación, arrastre el **CompanyName** columna a la celda **A1**.
+4. Seleccione **NamedRange** en la lista desplegable y, a continuación, arrastre el **CompanyName** columna a la celda **A1**.
 
      Un <xref:Microsoft.Office.Tools.Excel.NamedRange> control denominado `companyNameNamedRange` se crea en la celda **A1**. Al mismo tiempo, un <xref:System.Windows.Forms.BindingSource> denominado `customersBindingSource`, un adaptador de tabla y un <xref:System.Data.DataSet> instancia se agregan al proyecto. El control se enlaza a la <xref:System.Windows.Forms.BindingSource>, que a su vez se enlaza a la <xref:System.Data.DataSet> instancia.
 
-5.  Seleccione el **CustomerID** columna en el **orígenes de datos** ventana y, a continuación, haga clic en la flecha de lista desplegable que aparece.
+5. Seleccione el **CustomerID** columna en el **orígenes de datos** ventana y, a continuación, haga clic en la flecha de lista desplegable que aparece.
 
-6.  Haga clic en **NamedRange** en la lista desplegable y, a continuación, arrastre el **CustomerID** columna a la celda **B1**.
+6. Haga clic en **NamedRange** en la lista desplegable y, a continuación, arrastre el **CustomerID** columna a la celda **B1**.
 
-7.  Otro <xref:Microsoft.Office.Tools.Excel.NamedRange> control denominado `customerIDNamedRange` se crea en la celda **B1**y se enlaza a la <xref:System.Windows.Forms.BindingSource>.
+7. Otro <xref:Microsoft.Office.Tools.Excel.NamedRange> control denominado `customerIDNamedRange` se crea en la celda **B1**y se enlaza a la <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="to-add-four-buttons"></a>Para agregar cuatro botones
 
@@ -143,28 +143,28 @@ ms.locfileid: "56640277"
 
 ### <a name="to-move-to-the-first-record"></a>Para desplazarse al primer registro
 
-1.  Agregar un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos de la `Button1` botón y agregue el código siguiente para desplazarse al primer registro:
+1. Agregar un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos de la `Button1` botón y agregue el código siguiente para desplazarse al primer registro:
 
      [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
 
 ### <a name="to-move-to-the-previous-record"></a>Mover al registro anterior
 
-1.  Agregar un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos de la `Button2` botón y agregue el código siguiente para devolver la posición uno:
+1. Agregar un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos de la `Button2` botón y agregue el código siguiente para devolver la posición uno:
 
      [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
 
 ### <a name="to-move-to-the-next-record"></a>Para desplazarse al siguiente registro
 
-1.  Agregar un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos de la `Button3` botón y agregue el código siguiente para hacer avanzar la posición uno:
+1. Agregar un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos de la `Button3` botón y agregue el código siguiente para hacer avanzar la posición uno:
 
      [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
 
 ### <a name="to-move-to-the-last-record"></a>Para mover al último registro
 
-1.  Agregar un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos de la `Button4` botón y agregue el siguiente código para mover al último registro:
+1. Agregar un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos de la `Button4` botón y agregue el siguiente código para mover al último registro:
 
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
@@ -174,22 +174,22 @@ ms.locfileid: "56640277"
 
 ### <a name="to-test-your-workbook"></a>Para probar el libro
 
-1.  Presione **F5** para ejecutar el proyecto.
+1. Presione **F5** para ejecutar el proyecto.
 
-2.  Confirme que el primer registro aparece en las celdas **A1** y **B1**.
+2. Confirme que el primer registro aparece en las celdas **A1** y **B1**.
 
-3.  Haga clic en el **>** (`Button3`) botón y confirme que el registro siguiente aparece en la celda **A1** y **B1**.
+3. Haga clic en el **>** (`Button3`) botón y confirme que el registro siguiente aparece en la celda **A1** y **B1**.
 
-4.  Haga clic en los otros botones de desplazamiento para confirmar que el registro cambia según lo previsto.
+4. Haga clic en los otros botones de desplazamiento para confirmar que el registro cambia según lo previsto.
 
 ## <a name="next-steps"></a>Pasos siguientes
  En este tutorial se muestra los aspectos básicos del enlace de un rango con nombre a un campo en una base de datos. A continuación, podría realizar las siguientes tareas:
 
--   Almacenar en caché los datos para que se puede usar sin conexión. Para obtener más información, vea [Cómo: Almacenar en caché datos para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Almacenar en caché los datos para que se puede usar sin conexión. Para obtener más información, vea [Cómo: Almacenar en caché datos para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Enlazar celdas a varias columnas en una tabla, en lugar de a un campo. Para obtener más información, vea [Tutorial: Enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
+- Enlazar celdas a varias columnas en una tabla, en lugar de a un campo. Para obtener más información, vea [Tutorial: Enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
 
--   Use un <xref:System.Windows.Forms.BindingNavigator> control para desplazarse por los registros. Para obtener más información, vea [Cómo: Explorar datos con el control BindingNavigator de Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+- Use un <xref:System.Windows.Forms.BindingNavigator> control para desplazarse por los registros. Para obtener más información, vea [Cómo: Explorar datos con el control BindingNavigator de Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
 ## <a name="see-also"></a>Vea también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

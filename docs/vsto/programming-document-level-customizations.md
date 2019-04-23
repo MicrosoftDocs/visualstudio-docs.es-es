@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0815ccf781782a0d638fcf941a6e48edcf8ccd1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077763"
 ---
 # <a name="program-document-level-customizations"></a>Programar personalizaciones de nivel de documento
   Al ampliar Microsoft Office Word o Microsoft Office Excel mediante una personalización de nivel de documento, puede realizar las siguientes tareas:
@@ -62,13 +62,13 @@ ms.locfileid: "56624690"
 
 - En cambio, los proyectos de nivel de documento de Excel tienen creadas varias clases: una para el propio libro y una para cada hoja de cálculo. Estas clases se denominan de la siguiente manera, de forma predeterminada:
 
-  -   `ThisWorkbook`
+  - `ThisWorkbook`
 
-  -   `Sheet1`
+  - `Sheet1`
 
-  -   `Sheet2`
+  - `Sheet2`
 
-  -   `Sheet3`
+  - `Sheet3`
 
   La clase creada incluye controladores de eventos a los que se llama cuando el documento está abierto o cerrado. Para ejecutar el código cuando se abre el documento, agregue ese código al controlador de eventos `Startup` . Para ejecutar el código justo antes de cerrar el documento, agregue ese código al controlador de eventos `Shutdown` . Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).
 

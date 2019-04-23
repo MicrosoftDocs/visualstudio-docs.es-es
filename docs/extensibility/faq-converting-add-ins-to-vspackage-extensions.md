@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077425"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>P+F Conversión de complementos en extensiones de VSPackage
 Los complementos están desusados. Para realizar una nueva extensión de Visual Studio, deberá crear una extensión VSIX. Estas son las respuestas a algunas preguntas frecuentes acerca de cómo convertir un complemento de Visual Studio en una extensión VSIX.
@@ -37,7 +37,7 @@ Los complementos están desusados. Para realizar una nueva extensión de Visual 
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>¿Puedo convertir mi proyecto de complemento en un proyecto VSIX?
  Un proyecto de complemento no se puede convertir directamente a un proyecto VSIX porque los mecanismos usados en los proyectos de VSIX no son los mismos que los de proyectos de complementos. La plantilla de proyecto VSIX, además de las plantillas de elemento de proyecto correcto tienen una gran cantidad de código que hace relativamente fácil poner en marcha y ejecución como una extensión VSIX.
 
-##  <a name="BKMK_StartDeveloping"></a> ¿Cómo empezar a desarrollar extensiones VSIX?
+## <a name="BKMK_StartDeveloping"></a> ¿Cómo empezar a desarrollar extensiones VSIX?
  Le mostramos cómo realizar una extensión VSIX que tiene un comando de menú:
 
 ### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Para conseguir que una extensión VSIX tiene un comando de menú
@@ -52,7 +52,7 @@ Los complementos están desusados. Para realizar una nueva extensión de Visual 
 
    En el **herramientas** menú (en la instancia experimental) debería ver un botón denominado **My Command name**. Cuando seleccione este botón, aparecerá un mensaje: **Inside TestVSPackagePackage.MenuItemCallback()**.
 
-##  <a name="BKMK_RunAddin"></a> ¿Cómo se puede ejecutar código de mi complemento en un VSPackage?
+## <a name="BKMK_RunAddin"></a> ¿Cómo se puede ejecutar código de mi complemento en un VSPackage?
 
 Normalmente, el código de complemento normalmente se ejecuta de una de dos maneras:
 
@@ -158,24 +158,24 @@ Puede hacer las mismas cosas en un VSPackage. Aquí se indica cómo agregar cód
 
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>Para insertar código de administración de ventanas desde un complemento en un VSPackage
 
-1.  Cree un VSPackage que tenga un comando de menú, como en el [¿cómo empiezo desarrollar extensiones VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sección.
+1. Cree un VSPackage que tenga un comando de menú, como en el [¿cómo empiezo desarrollar extensiones VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sección.
 
-2.  Abra el archivo que contiene la definición del VSPackage. (En un proyecto de C#, tiene  *\<el nombre del proyecto > Package.cs*.)
+2. Abra el archivo que contiene la definición del VSPackage. (En un proyecto de C#, tiene  *\<el nombre del proyecto > Package.cs*.)
 
-3.  Agregue estas instrucciones `using`:
+3. Agregue estas instrucciones `using`:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Busque el método `MenuItemCallback`. Agregue una llamada a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> para obtener el objeto <xref:EnvDTE80.DTE2>:
+4. Busque el método `MenuItemCallback`. Agregue una llamada a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> para obtener el objeto <xref:EnvDTE80.DTE2>:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Agregue el código de su complemento. Por ejemplo, este es un código que agrega nuevas tareas a la **lista de tareas**, muestra el número de tareas y, a continuación, elimina una tarea.
+5. Agregue el código de su complemento. Por ejemplo, este es un código que agrega nuevas tareas a la **lista de tareas**, muestra el número de tareas y, a continuación, elimina una tarea.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -206,24 +206,24 @@ Puede hacer las mismas cosas en un VSPackage. Aquí se indica cómo agregar cód
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>¿Cómo administro proyectos y soluciones en un VSPackage?
  Si su complemento administra proyectos y soluciones, el código de complemento debería funcionar en un VSPackage. Por ejemplo, este procedimiento muestra cómo agregar código que obtiene el proyecto de inicio.
 
-1.  Cree un VSPackage que tenga un comando de menú, como en el [¿cómo empiezo desarrollar extensiones VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sección.
+1. Cree un VSPackage que tenga un comando de menú, como en el [¿cómo empiezo desarrollar extensiones VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sección.
 
-2.  Abra el archivo que contiene la definición del VSPackage. (En un proyecto de C#, tiene  *\<el nombre del proyecto > Package.cs*.)
+2. Abra el archivo que contiene la definición del VSPackage. (En un proyecto de C#, tiene  *\<el nombre del proyecto > Package.cs*.)
 
-3.  Agregue estas instrucciones `using`:
+3. Agregue estas instrucciones `using`:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Busque el método `MenuItemCallback`. Agregue una llamada a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> para obtener el objeto <xref:EnvDTE80.DTE2>:
+4. Busque el método `MenuItemCallback`. Agregue una llamada a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> para obtener el objeto <xref:EnvDTE80.DTE2>:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Agregue el código de su complemento. Por ejemplo, el siguiente código obtiene el nombre del proyecto de inicio en una solución. (Se debe abrir una solución multiproyecto cuando este paquete se ejecuta).
+5. Agregue el código de su complemento. Por ejemplo, el siguiente código obtiene el nombre del proyecto de inicio en una solución. (Se debe abrir una solución multiproyecto cuando este paquete se ejecuta).
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
