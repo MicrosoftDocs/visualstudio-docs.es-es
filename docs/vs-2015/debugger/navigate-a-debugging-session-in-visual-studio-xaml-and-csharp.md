@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059882"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navegar por una sesión de depuración en Visual Studio (Xaml y C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
 ## <a name="in-this-topic"></a>En este tema
  Aprenderá a realizar lo siguiente:
 
--   [Crear la aplicación de ejemplo](#BKMK_CreateTheApplication)
+- [Crear la aplicación de ejemplo](#BKMK_CreateTheApplication)
 
--   [Establecer y ejecutar hasta un punto de interrupción, depurar un método paso a paso por instrucciones y examinar los datos de programa](#BKMK_StepInto)
+- [Establecer y ejecutar hasta un punto de interrupción, depurar un método paso a paso por instrucciones y examinar los datos de programa](#BKMK_StepInto)
 
--   [Ir a un método, saltarlo o salir de este](#BKMK_StepIntoOverOut)
+- [Ir a un método, saltarlo o salir de este](#BKMK_StepIntoOverOut)
 
--   [Establecer un punto de interrupción condicional, ejecutar hasta el cursor y ver una variable](#BKMK_ConditionCursorVisualize)
+- [Establecer un punto de interrupción condicional, ejecutar hasta el cursor y ver una variable](#BKMK_ConditionCursorVisualize)
 
--   [Editar y continuar, recuperarse de una excepción](#BKMK_EditContinueRecoverExceptions)
+- [Editar y continuar, recuperarse de una excepción](#BKMK_EditContinueRecoverExceptions)
 
-##  <a name="BKMK_CreateTheApplication"></a> Crear la aplicación de ejemplo
+## <a name="BKMK_CreateTheApplication"></a> Crear la aplicación de ejemplo
  La depuración se aplica al código. Por eso, en la aplicación de ejemplo, el marco de aplicaciones de la Tienda Windows se usa solamente para crear un archivo de código fuente en el que pueda ver cómo funciona la navegación por una sesión de depuración y cómo se examina y cambia el estado de un programa. A todo el código que va a invocar se le llama desde el constructor de la página principal. No se agrega ningún control ni se controla ningún evento.
 
  **Cree una aplicación de la Tienda Windows de C# predeterminada.** Abra Visual Studio. En la página principal, seleccione el vínculo de **Nuevo proyecto** . En el cuadro de diálogo Nuevo proyecto, seleccione **Visual C#** en la lista **Instalado** y haga clic en **Tienda Windows**. En la lista de plantillas de proyecto, seleccione **Aplicación**. Visual Studio crea una solución y un proyecto nuevos. Luego, muestra el diseñador de MainPage.xaml y el editor de código XAML.
@@ -56,7 +56,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
 
  Ahora, puede seguir los ejemplos de este tema.
 
-##  <a name="BKMK_StepInto"></a> Establecer y ejecutar hasta un punto de interrupción, depurar un método paso a paso por instrucciones y examinar los datos de programa
+## <a name="BKMK_StepInto"></a> Establecer y ejecutar hasta un punto de interrupción, depurar un método paso a paso por instrucciones y examinar los datos de programa
  La manera más común que puede iniciar una sesión de depuración es elegir **Iniciar depuración** desde el **depurar** menú (teclado: F5). La ejecución comienza y continúa hasta que se alcanza un punto de interrupción, se suspende manualmente la ejecución, se produce una excepción o la aplicación finaliza.
 
  Cuando se suspende la ejecución en el depurador, se puede ver el valor de una variable activa en una sugerencia de datos que aparece si se mantiene el ratón sobre la variable. También puede abrir las ventanas Variables locales y Automático para ver las listas de las variables activas y sus valores actuales. Puede agregar una o más variables a una ventana Inspección para observar sus valores a medida que la aplicación continúa la ejecución.
@@ -112,7 +112,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
 
   Puede inspeccionar múltiples variables en una ventana Inspección. Los valores de las variables inspeccionadas, igual que los valores de las ventanas Variables locales y de sugerencias de datos, se actualizan cada vez que se suspende la ejecución. También puede agregar variables a la ventana Inspección desde el editor de código. Seleccione la variable para inspeccionar, haga clic con el botón secundario y seleccione **Agregar inspección**.
 
-##  <a name="BKMK_StepIntoOverOut"></a> Ir a un método, saltarlo o salir de este
+## <a name="BKMK_StepIntoOverOut"></a> Ir a un método, saltarlo o salir de este
  A diferencia de la depuración paso a paso por instrucciones de un método al que llamó un método primario, la depuración paso a paso por procedimientos ejecuta el método secundario y, después, suspende la ejecución del método de llamada cuando se reanuda el primario. Podrá depurar paso a paso por procedimientos un método si sabe bien cómo opera y está seguro de que el problema que investiga no está relacionado con su ejecución.
 
  Cuando se usa la depuración paso a paso por procedimientos en una línea de código que no contiene una llamada a un método, esa línea se ejecuta de igual manera que con la depuración paso a paso por instrucciones.
@@ -144,7 +144,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
 
  **Detenga la depuración.** En el menú Depurar, elija Detener depuración (teclado: MAYÚS + F5). Esto finaliza la sesión de depuración.
 
-##  <a name="BKMK_ConditionCursorVisualize"></a> Establecer un punto de interrupción condicional, ejecutar hasta el cursor y ver una variable
+## <a name="BKMK_ConditionCursorVisualize"></a> Establecer un punto de interrupción condicional, ejecutar hasta el cursor y ver una variable
  Un punto de interrupción condicional especifica una condición que hace que el depurador suspenda la ejecución. La condición se especifica mediante cualquier expresión de código que se pueda evaluar como verdadera o falsa. Por ejemplo, en un método al que se llama a menudo, podría usar un punto de interrupción condicional para que el estado del programa se examine solamente cuando una variable alcance un valor determinado.
 
  Ejecutar hasta el cursor es igual que establecer un punto de interrupción único. Cuando se suspende la ejecución, puede seleccionar una línea de código fuente y reanudar la ejecución hasta la línea seleccionada. Por ejemplo, mientras recorre paso a paso un bucle de un método, podría determinar que el código del bucle funciona correctamente. En lugar de recorrer todas las iteraciones del bucle, puede ejecutar hasta el cursor colocado que está después de la ejecución del bucle.
@@ -180,7 +180,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
 
  **Detenga la depuración.** En el menú Depurar, elija Detener depuración (teclado: MAYÚS + F5). Esto finaliza la sesión de depuración.
 
-##  <a name="BKMK_EditContinueRecoverExceptions"></a> Editar y continuar, recuperarse de una excepción
+## <a name="BKMK_EditContinueRecoverExceptions"></a> Editar y continuar, recuperarse de una excepción
  En algunas circunstancias, cuando se interrumpe el código del Depurador de Visual Studio, tiene la oportunidad de cambiar el valor de las variables e incluso la lógica de las instrucciones. Esta funcionalidad se denomina editar y continuar.
 
  Editar y continuar puede resultar especialmente útil cuando se interrumpe en una excepción. En lugar de tener que detener y reiniciar la depuración de un procedimiento largo e intrincado para evitar la excepción, puede "rebobinar" la excepción para desplazar la ejecución hasta el punto inmediatamente anterior al lugar donde se produjo la excepción y, después, cambiar la variable o la instrucción que genera el error y continuar con la sesión de depuración actual en un estado que no produzca una excepción.

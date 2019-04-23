@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e8a7bd540f5c8a99145b892d080d8cb54e57d968
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061182"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Mostrar datos relacionados en aplicaciones WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ En algunas aplicaciones, es posible que desea trabajar con datos procedentes de 
   
 ## <a name="to-create-controls-that-display-related-records"></a>Para crear controles que muestren los registros relacionados  
   
-1.  En el menú **Datos**, haga clic en **Mostrar orígenes de datos** para abrir la ventana **Orígenes de datos**.  
+1. En el menú **Datos**, haga clic en **Mostrar orígenes de datos** para abrir la ventana **Orígenes de datos**.  
   
-2.  Haga clic en **Agregar nuevo origen de datos** y complete el **Asistente para configuración de orígenes de datos**.  
+2. Haga clic en **Agregar nuevo origen de datos** y complete el **Asistente para configuración de orígenes de datos**.  
   
-3.  Abra el diseñador WPF y asegúrese de que el diseñador contiene un contenedor que sea un destino válido para los elementos de la **orígenes de datos** ventana.  
+3. Abra el diseñador WPF y asegúrese de que el diseñador contiene un contenedor que sea un destino válido para los elementos de la **orígenes de datos** ventana.  
   
      Para obtener más información acerca de los destinos de colocación válidos, vea [WPF enlazar controles a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-4.  En el **orígenes de datos** ventana, expanda el nodo que representa la tabla primaria o de objeto en la relación. La tabla primaria o el objeto se encuentra en el lado "uno" de una relación uno a varios.  
+4. En el **orígenes de datos** ventana, expanda el nodo que representa la tabla primaria o de objeto en la relación. La tabla primaria o el objeto se encuentra en el lado "uno" de una relación uno a varios.  
   
-5.  Arrastre el nodo primario (o cualquier elemento individual en el nodo primario) desde el **orígenes de datos** ventana a un destino válido en el diseñador.  
+5. Arrastre el nodo primario (o cualquier elemento individual en el nodo primario) desde el **orígenes de datos** ventana a un destino válido en el diseñador.  
   
      Visual Studio genera XAML que crea nuevos controles enlazados a datos para cada elemento que se arrastra. El XAML también agrega un nuevo <xref:System.Windows.Data.CollectionViewSource> para la tabla primaria o el objeto a los recursos de destino. Para algunos orígenes de datos, Visual Studio también genera código para cargar los datos en la tabla u objeto primario. Para obtener más información, consulte [WPF enlazar controles a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-6.  En el **orígenes de datos** ventana, busque la tabla secundaria relacionada o el objeto. Objetos y las tablas secundarias relacionadas aparecen como nodos expansibles en la parte inferior de la lista del nodo primario de los datos.  
+6. En el **orígenes de datos** ventana, busque la tabla secundaria relacionada o el objeto. Objetos y las tablas secundarias relacionadas aparecen como nodos expansibles en la parte inferior de la lista del nodo primario de los datos.  
   
-7.  Arrastre el nodo secundario (o cualquier elemento individual en el nodo secundario) desde el **orígenes de datos** ventana a un destino válido en el diseñador.  
+7. Arrastre el nodo secundario (o cualquier elemento individual en el nodo secundario) desde el **orígenes de datos** ventana a un destino válido en el diseñador.  
   
      Visual Studio genera XAML que crea nuevos controles enlazados a datos para cada uno de los elementos arrastrados. El XAML también agrega un nuevo <xref:System.Windows.Data.CollectionViewSource> para la tabla u objeto secundario a los recursos de destino. Esta nueva <xref:System.Windows.Data.CollectionViewSource> está enlazado a la propiedad de la tabla primaria o el objeto que acaba de arrastrar al diseñador. Para algunos orígenes de datos, Visual Studio también genera código para cargar los datos en la tabla u objeto secundario.  
   

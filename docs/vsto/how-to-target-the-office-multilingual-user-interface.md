@@ -1,5 +1,5 @@
 ---
-title: Filtrar Destino de la interfaz de usuario multilingüe de Office
+title: Procedimiento Destino de la interfaz de usuario multilingüe de Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9af26cae55a9a13f7aaaeb2297b19c81105f438
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635688"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063990"
 ---
-# <a name="how-to-target-the-office-multilingual-user-interface"></a>Filtrar Destino de la interfaz de usuario multilingüe de Office
+# <a name="how-to-target-the-office-multilingual-user-interface"></a>Procedimiento Destino de la interfaz de usuario multilingüe de Office
   La interfaz de usuario multilingüe (MUI) es una característica de Microsoft Office que proporciona al usuario final la capacidad de cambiar el idioma de la interfaz de usuario (UI). Por ejemplo, un usuario final, trabajando con una interfaz de usuario inglés puede cambiar el idioma de la interfaz de usuario en español.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "56635688"
 
 ## <a name="to-check-the-current-office-ui-setting"></a>Para comprobar la configuración actual de la interfaz de usuario de Office
 
-1.  Use el <xref:System.Threading.Thread.CurrentUICulture%2A> propiedad del subproceso actual. Establecer el idioma de las cadenas de interfaz de usuario para que coincida con el idioma usado por la versión de Office que actualmente se ejecuta en el equipo del usuario.
+1. Use el <xref:System.Threading.Thread.CurrentUICulture%2A> propiedad del subproceso actual. Establecer el idioma de las cadenas de interfaz de usuario para que coincida con el idioma usado por la versión de Office que actualmente se ejecuta en el equipo del usuario.
 
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]

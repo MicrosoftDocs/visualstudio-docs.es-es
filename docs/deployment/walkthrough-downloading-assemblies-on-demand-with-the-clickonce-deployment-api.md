@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Descargar ensamblados a petición con la API de implementación ClickOnce | Microsoft Docs'
+title: 'Tutorial: Descargar ensamblados a petición con la API de implementación ClickOnce | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cadba0d6afd35303fd44eb0442bb8f4eb9aa8440
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e363989094f4d4859f272423792aa32152c6de57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063886"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Tutorial: Descargar ensamblados a petición con la API de implementación de ClickOnce
 De forma predeterminada, todos los ensamblados incluyen en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se descargan cuando la aplicación se ejecuta en primer lugar. Sin embargo, puede tener partes de la aplicación que usan un conjunto pequeño de los usuarios. En tal caso, es probable que quiera descargar un ensamblado solo cuando cree uno de sus tipos. En el siguiente tutorial se muestra cómo marcar determinados ensamblados en la aplicación como “opcionales” y cómo descargarlos usando clases en el espacio de nombres <xref:System.Deployment.Application> cuando los solicita Common Language Runtime (CLR).
@@ -32,9 +32,9 @@ De forma predeterminada, todos los ensamblados incluyen en un [!INCLUDE[ndpteccl
 ## <a name="prerequisites"></a>Requisitos previos
  Necesitará uno de los componentes siguientes para completar este tutorial:
 
--   El SDK de Windows. El SDK de Windows puede descargarse desde Microsoft Download Center.
+- El SDK de Windows. El SDK de Windows puede descargarse desde Microsoft Download Center.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="create-the-projects"></a>Crear los proyectos
 
@@ -100,17 +100,17 @@ De forma predeterminada, todos los ensamblados incluyen en un [!INCLUDE[ndpteccl
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Para marcar ensamblados como opcionales en la aplicación ClickOnce con MageUI.exe
 
-1.  Uso de *MageUI.exe*, cree un manifiesto de aplicación como se describe en [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Utilice la siguiente configuración para el manifiesto de aplicación:
+1. Uso de *MageUI.exe*, cree un manifiesto de aplicación como se describe en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Utilice la siguiente configuración para el manifiesto de aplicación:
 
-    -   Nombre del manifiesto de aplicación `ClickOnceOnDemand`.
+    - Nombre del manifiesto de aplicación `ClickOnceOnDemand`.
 
-    -   En el **archivos** página, en el *ClickOnceLibrary.dll* de fila, establezca el **tipo de archivo** columna **ninguno**.
+    - En el **archivos** página, en el *ClickOnceLibrary.dll* de fila, establezca el **tipo de archivo** columna **ninguno**.
 
-    -   En el **archivos** página, en el *ClickOnceLibrary.dll* , escriba `ClickOnceLibrary.dll` en el **grupo** columna.
+    - En el **archivos** página, en el *ClickOnceLibrary.dll* , escriba `ClickOnceLibrary.dll` en el **grupo** columna.
 
-2.  Uso de *MageUI.exe*, cree un manifiesto de implementación como se describe en [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Utilice la siguiente configuración para el manifiesto de implementación:
+2. Uso de *MageUI.exe*, cree un manifiesto de implementación como se describe en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Utilice la siguiente configuración para el manifiesto de implementación:
 
-    -   Nombre del manifiesto de implementación `ClickOnceOnDemand`.
+    - Nombre del manifiesto de implementación `ClickOnceOnDemand`.
 
 ## <a name="testing-the-new-assembly"></a>Probar el nuevo ensamblado
 

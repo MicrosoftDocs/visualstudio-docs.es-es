@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066083"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Puede escribir código para crear y actualizar diagramas de capas y para validar
   
  Para obtener más información sobre los diagramas de capas, vea:  
   
--   [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)  
+- [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)  
   
--   [Diagramas de capas: directrices](../modeling/layer-diagrams-guidelines.md)  
+- [Diagramas de capas: directrices](../modeling/layer-diagrams-guidelines.md)  
   
--   [Crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)  
+- [Validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a> Requisitos  
+## <a name="prereqs"></a> Requisitos  
  Necesita tener instalado lo siguiente en el equipo donde desea desarrollar las extensiones de capa:  
   
 - Programa para la mejora  

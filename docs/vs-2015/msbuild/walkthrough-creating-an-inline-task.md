@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a8f649256c9c25f045f4417d293e7b6ff842a7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061598"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Tutorial: Crear una tarea insertada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
   
 #### <a name="to-create-and-modify-a-project-file"></a>Para crear y modificar un archivo de proyecto  
   
-1.  En el menú **Archivo** de Visual Studio, haga clic en **Nuevo** y, a continuación, **Proyecto**.  
+1. En el menú **Archivo** de Visual Studio, haga clic en **Nuevo** y, a continuación, **Proyecto**.  
   
-2.  En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de Visual C# y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, `D:\`. Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea `InlineTasks`.  
+2. En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de Visual C# y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, `D:\`. Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea `InlineTasks`.  
   
      Haga clic en **Aceptar** para crear el archivo del proyecto.  
   
-3.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de proyecto InlineTasks y, a continuación, haga clic en **Descargar el proyecto**.  
+3. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de proyecto InlineTasks y, a continuación, haga clic en **Descargar el proyecto**.  
   
-4.  Haga clic con el botón derecho de nuevo en el nodo del proyecto y, a continuación, haga clic en **Edit InlineTasks.csproj** (Editar InlineTasks.csproj).  
+4. Haga clic con el botón derecho de nuevo en el nodo del proyecto y, a continuación, haga clic en **Edit InlineTasks.csproj** (Editar InlineTasks.csproj).  
   
      El archivo del proyecto aparece en el editor de código.  
   

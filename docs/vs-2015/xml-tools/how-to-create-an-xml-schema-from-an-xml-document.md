@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43c4f50b5793933065b2f3ff4342d4aabdbd130b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066070"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedimiento Crear un esquema XML a partir de un documento XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ El Editor XML permite crear un esquema de lenguaje de definición de esquemas XM
   
 ### <a name="to-create-an-xml-schema"></a>Para crear un esquema XML  
   
-1.  Cargue un documento de instancia XML en el Editor XML.  
+1. Cargue un documento de instancia XML en el Editor XML.  
   
-2.  Haga clic en el **Create Schema** botón desde la **barra de herramientas**.  
+2. Haga clic en el **Create Schema** botón desde la **barra de herramientas**.  
   
      Se crea un documento de esquema XML, que se abre para cada espacio de nombres hallado en el documento de instancia XML. Cada esquema se abre como un archivo de varios temporal.  
   

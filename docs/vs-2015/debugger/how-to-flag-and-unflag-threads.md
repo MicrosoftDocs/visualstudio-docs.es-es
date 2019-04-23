@@ -1,5 +1,5 @@
 ---
-title: Filtrar Marcar y desmarcar subprocesos | Documentos de Microsoft
+title: Procedimiento Marcar y desmarcar subprocesos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,14 +16,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be6ebe9e2031b24442f368b626d53b15a043023c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b6d6a49dd9b90172686a90d92e6b630dd70b5cf0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986961"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048892"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Filtrar Marcado y desmarcado de subprocesos
+# <a name="how-to-flag-and-unflag-threads"></a>Procedimiento Marcado y desmarcado de subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede marcar un subproceso que desea prestar atención especial con un icono en el **subprocesos**, **pilas paralelas**, **inspección paralela**, y **GPU Subprocesos** windows. Este icono ayuda a distinguir estos subprocesos marcados de otros.  
@@ -32,33 +32,33 @@ Puede marcar un subproceso que desea prestar atención especial con un icono en 
   
 ### <a name="to-flag-or-unflag-a-thread-by-using-the-threads-window"></a>Para marcar o desmarcar un subproceso utilizando la ventana Subprocesos  
   
--   En el **subprocesos** , busque el subproceso que esté interesado y haga clic en el icono de marca para seleccionar o borrar la marca.  
+- En el **subprocesos** , busque el subproceso que esté interesado y haga clic en el icono de marca para seleccionar o borrar la marca.  
   
 ### <a name="to-unflag-all-threads"></a>Para quitar los marcadores de todos los subprocesos  
   
--   En la ventana **Subprocesos**, haga clic con el botón derecho del mouse en cualquier subproceso y, a continuación, haga clic en **Quitar marca de todos los subprocesos**.  
+- En la ventana **Subprocesos**, haga clic con el botón derecho del mouse en cualquier subproceso y, a continuación, haga clic en **Quitar marca de todos los subprocesos**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Para mostrar solo los subprocesos marcados  
   
--   Elija el botón de marcador en la ventana de depuración.  
+- Elija el botón de marcador en la ventana de depuración.  
   
 ### <a name="to-flag-just-my-code"></a>Para marcar Solo mi código  
   
-1.  En la barra de herramientas de la parte superior de la ventana **Subprocesos**, haga clic en el icono de marca.  
+1. En la barra de herramientas de la parte superior de la ventana **Subprocesos**, haga clic en el icono de marca.  
   
-2.  En la lista desplegable **Marcar solo mi código**.  
+2. En la lista desplegable **Marcar solo mi código**.  
   
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>Para marcar subprocesos que están asociados a módulos seleccionados  
   
-1.  En la barra de herramientas de la parte superior de la ventana **Subprocesos**, haga clic en el icono de marca.  
+1. En la barra de herramientas de la parte superior de la ventana **Subprocesos**, haga clic en el icono de marca.  
   
-2.  En la lista desplegable, haga clic en **Marcar selección de módulos personalizados**.  
+2. En la lista desplegable, haga clic en **Marcar selección de módulos personalizados**.  
   
-3.  En el cuadro de diálogo **Seleccionar módulos**, seleccione los módulos que desea.  
+3. En el cuadro de diálogo **Seleccionar módulos**, seleccione los módulos que desea.  
   
-4.  (Opcional) En el cuadro **Buscar**, escriba una cadena para buscar módulos concretos.  
+4. (Opcional) En el cuadro **Buscar**, escriba una cadena para buscar módulos concretos.  
   
-5.  Haga clic en **Aceptar**.  
+5. Haga clic en **Aceptar**.  
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

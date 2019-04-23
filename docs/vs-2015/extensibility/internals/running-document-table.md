@@ -14,12 +14,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044611"
 ---
 # <a name="running-document-table"></a>Tabla de documentos en ejecución
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ El IDE mantiene la lista de todos los documentos abiertos actualmente en una est
   
  El IDE usa también la RDT reaparece (Traer al frente) un documento abierto, si un usuario solicita ese documento. Para obtener más información, consulte [mostrar archivos mediante el uso del comando archivo abrir](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Para determinar si un archivo está abierto en el RDT, realice una de las siguientes.  
   
--   Consulta para el moniker del documento (es decir, la ruta de acceso completa del documento) averiguar si el elemento está abierto.  
+- Consulta para el moniker del documento (es decir, la ruta de acceso completa del documento) averiguar si el elemento está abierto.  
   
--   Use el identificador de jerarquía o el elemento para formular el sistema del proyecto para la ruta de acceso completa del documento y, a continuación, busque el elemento en el RDT.  
+- Use el identificador de jerarquía o el elemento para formular el sistema del proyecto para la ruta de acceso completa del documento y, a continuación, busque el elemento en el RDT.  
   
 ## <a name="see-also"></a>Vea también  
  [RDT_ReadLock Usage](../../extensibility/internals/rdt-readlock-usage.md)   

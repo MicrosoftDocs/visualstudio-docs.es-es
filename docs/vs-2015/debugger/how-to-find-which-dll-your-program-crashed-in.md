@@ -1,5 +1,5 @@
 ---
-title: Filtrar Busque el archivo DLL que se bloqueó en el programa | Microsoft Docs
+title: Procedimiento Busque el archivo DLL que se bloqueó en el programa | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,14 +26,14 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da5ba504c22f78ebd3c0705bd5ee903fb4a2997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060571"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Filtrar Busque el archivo DLL que se bloqueó en el programa
+# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Procedimiento Busque el archivo DLL que se bloqueó en el programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
@@ -43,17 +43,17 @@ NOTA]
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Para averiguar dónde se produjo un bloqueo mediante la ventana Módulos  
   
-1.  Anote la dirección donde se produjo el bloqueo.  
+1. Anote la dirección donde se produjo el bloqueo.  
   
-2.  En el menú **Depurar**, elija **Ventanas** y haga clic en **Módulos**.  
+2. En el menú **Depurar**, elija **Ventanas** y haga clic en **Módulos**.  
   
-3.  En la ventana **Módulos**, busque la columna **Dirección**. Es posible que necesite utilizar la barra de desplazamiento para verla.  
+3. En la ventana **Módulos**, busque la columna **Dirección**. Es posible que necesite utilizar la barra de desplazamiento para verla.  
   
-4.  Haga clic en el botón **Dirección** en la parte superior de la columna para ordenar los archivos DLL por dirección.  
+4. Haga clic en el botón **Dirección** en la parte superior de la columna para ordenar los archivos DLL por dirección.  
   
-5.  Busque en la lista ordenada el archivo DLL cuyo intervalo de direcciones contiene la ubicación del bloqueo.  
+5. Busque en la lista ordenada el archivo DLL cuyo intervalo de direcciones contiene la ubicación del bloqueo.  
   
-6.  Consulte las columnas **Nombre** y **Ruta de acceso** para ver el nombre y la ruta del archivo DLL.  
+6. Consulte las columnas **Nombre** y **Ruta de acceso** para ver el nombre y la ruta del archivo DLL.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Depurar archivos DLL nativos](../debugger/how-to-debug-native-dlls.md)   

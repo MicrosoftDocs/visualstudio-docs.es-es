@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659823"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064848"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedimiento Seleccionar los archivos que se van a compilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
 #### <a name="to-declare-items-individually"></a>Para declarar elementos individualmente  
   
--   Use atributos `Include` similares a los siguientes:  
+- Use atributos `Include` similares a los siguientes:  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -45,7 +45,7 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
 #### <a name="to-declare-multiple-items"></a>Para declarar varios elementos  
   
--   Use atributos `Include` similares a los siguientes:  
+- Use atributos `Include` similares a los siguientes:  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -66,19 +66,19 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Para incluir todos los archivos .jpg del directorio Images y subdirectorios  
   
--   Use el atributo `Include` siguiente:  
+- Use el atributo `Include` siguiente:  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Para incluir todos los archivos .jpg que comiencen con "img"  
   
--   Use el atributo `Include` siguiente:  
+- Use el atributo `Include` siguiente:  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Para incluir todos los archivos de los directorios con nombres que terminen en "jpgs"  
   
--   Use uno de los siguientes atributos `Include`:  
+- Use uno de los siguientes atributos `Include`:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -91,7 +91,7 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Para usar todos los archivos de Visual C# o Visual Basic como entradas  
   
--   Use atributos `Include` similares a los siguientes:  
+- Use atributos `Include` similares a los siguientes:  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   

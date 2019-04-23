@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Ver los tipos existentes (Diseñador de clases) | Microsoft Docs
+title: Procedimiento Ver los tipos existentes (Diseñador de clases) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,21 +15,21 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5eb3891026976c036fb48b16ed5ebfeba909100e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046505"
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>Cómo: Ver los tipos existentes (Diseñador de clases)
+# <a name="how-to-view-existing-types-class-designer"></a>Procedimiento Ver los tipos existentes (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para ver un tipo existente y sus miembros, agregue su forma a un diagrama de clases.  
   
  Puede ver los tipos locales y aquellos a los que se hace referencia. Los tipos locales existen en el proyecto que está abierto y son de lectura y escritura. Los tipos a los que se hace referencia existen en otros proyectos o en un ensamblado al que se hace referencia y son de sólo lectura.  
   
- Para diseñar nuevos tipos en los diagramas de clases, consulte [Cómo: Crear tipos con el Diseñador de clases](../ide/how-to-create-types-by-using-class-designer.md).  
+ Para diseñar nuevos tipos en diagramas de clases, vea [Cómo: Crear tipos con el Diseñador de clases](../ide/how-to-create-types-by-using-class-designer.md).  
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Para ver los tipos de un proyecto en un diagrama de clase  
   
@@ -41,9 +41,9 @@ Para ver un tipo existente y sus miembros, agregue su forma a un diagrama de cla
    >  Si la solución tiene un proyecto que comparte código en varias aplicaciones, puede arrastrar archivos o código a un diagrama de clases únicamente de estos orígenes:  
    > 
    > - El proyecto de la aplicación que contiene el diagrama  
-   >   -   Un proyecto compartido importado por el proyecto de la aplicación  
-   >   -   Un proyecto al que se hace referencia  
-   >   -   Un ensamblado  
+   >   - Un proyecto compartido importado por el proyecto de la aplicación  
+   >   - Un proyecto al que se hace referencia  
+   >   - Un ensamblado  
   
     En el diagrama, en la posición a la que arrastró el archivo, aparecen formas que representan los tipos definidos en el archivo de código fuente.  
   
@@ -61,11 +61,11 @@ Para ver un tipo existente y sus miembros, agregue su forma a un diagrama de cla
   
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Para mostrar el contenido de un proyecto en un diagrama de clases  
   
-1.  En el Explorador de soluciones o en la Vista de clases, haga clic con el botón derecho en el proyecto y elija **Vista**; después, elija **Ver diagrama de clases**.  
+1. En el Explorador de soluciones o en la Vista de clases, haga clic con el botón derecho en el proyecto y elija **Vista**; después, elija **Ver diagrama de clases**.  
   
      Se crea un diagrama de clases que se rellena automáticamente.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Ver la herencia entre tipos (Diseñador de clases)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
+ [Cómo: Visualización de la herencia entre tipos (Diseñador de clases)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [Cómo: Personalizar los diagramas de clases (Diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md)   
  [Ver tipos y relaciones (Diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md)

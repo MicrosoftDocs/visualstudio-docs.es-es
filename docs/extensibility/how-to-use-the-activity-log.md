@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b0699e3a7ad4a56f7e102ca896359290cd7dbecb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053135"
 ---
-# <a name="how-to-use-the-activity-log"></a>Filtrar Usar el registro de actividad
+# <a name="how-to-use-the-activity-log"></a>Procedimiento Usar el registro de actividad
 Los VSPackages pueden escribir mensajes en el registro de actividad. Esta característica es especialmente útil para depurar los VSPackages en establecimientos comerciales.
 
 > [!TIP]
@@ -26,7 +26,7 @@ Los VSPackages pueden escribir mensajes en el registro de actividad. Esta caract
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Para escribir una entrada en el registro de actividad
 
-1.  Inserte este código en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método o en cualquier otro método excepto en el constructor de VSPackage:
+1. Inserte este código en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método o en cualquier otro método excepto en el constructor de VSPackage:
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -40,7 +40,7 @@ Los VSPackages pueden escribir mensajes en el registro de actividad. Esta caract
 
      Este código obtiene el <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> de servicio y lo convierte a un <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaz. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> escribe una entrada informativa en el registro de actividad utilizando el contexto de la referencia cultural actual.
 
-2.  Cuando se carga el VSPackage (normalmente, cuando se invoca un comando o se abre una ventana), el texto se escribe en el registro de actividad.
+2. Cuando se carga el VSPackage (normalmente, cuando se invoca un comando o se abre una ventana), el texto se escribe en el registro de actividad.
 
 ## <a name="to-examine-the-activity-log"></a>Para examinar el registro de actividad
 

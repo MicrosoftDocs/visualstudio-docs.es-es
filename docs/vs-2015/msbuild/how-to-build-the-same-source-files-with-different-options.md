@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663150"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045608"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedimiento Compilar los mismos archivos de código fuente con diferentes opciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Al compilar proyectos, con frecuencia se compilan los mismos componentes con dis
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Para establecer un grupo de propiedades basado en otra propiedad  
   
--   Utilice un atributo `Condition` en un elemento `PropertyGroup` similar al siguiente:  
+- Utilice un atributo `Condition` en un elemento `PropertyGroup` similar al siguiente:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -44,7 +44,7 @@ Al compilar proyectos, con frecuencia se compilan los mismos componentes con dis
   
 #### <a name="to-define-a-property-based-on-another-property"></a>Para definir una propiedad basada en otra propiedad  
   
--   Use un atributo `Condition` en un elemento `Property` similar al siguiente:  
+- Use un atributo `Condition` en un elemento `Property` similar al siguiente:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -55,7 +55,7 @@ Al compilar proyectos, con frecuencia se compilan los mismos componentes con dis
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Para establecer una propiedad de proyecto en la línea de comandos  
   
--   Utilice el modificador **/property** con la propiedad y el valor de la propiedad. Por ejemplo:  
+- Utilice el modificador **/property** con la propiedad y el valor de la propiedad. Por ejemplo:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07791a02c5e84722e8193f21b7ed2fe37bdd7f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790256"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064289"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Empezar a depurar aplicaciones multiproceso (C#, Visual Basic, C++)
 
@@ -234,17 +234,17 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
 
 ### <a name="ShowThreadsInSource"></a>Detectar el marcador de subproceso  
 
-1.  En la barra de herramientas de depuración, seleccione el **Mostrar subprocesos en código fuente** botón ![Mostrar subprocesos en código fuente](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1. En la barra de herramientas de depuración, seleccione el **Mostrar subprocesos en código fuente** botón ![Mostrar subprocesos en código fuente](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Presione **F11** una vez para avanzar a la línea de un depurador de código.
 
-3.  Examine el margen interno izquierdo de la ventana. En esta línea, verá un *marcador de subproceso* icono ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker") que es similar a dos subprocesos trenzados. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
+3. Examine el margen interno izquierdo de la ventana. En esta línea, verá un *marcador de subproceso* icono ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker") que es similar a dos subprocesos trenzados. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
 
     Un marcador de subproceso es posible que se ocultan parcialmente por un punto de interrupción.
 
-4.  Desplace el puntero sobre el marcador de subproceso. Una información sobre datos aparece indicando el número de Id. de nombre y el subproceso para cada subproceso detenido. En este caso, el nombre es probablemente `<noname>`.
+4. Desplace el puntero sobre el marcador de subproceso. Una información sobre datos aparece indicando el número de Id. de nombre y el subproceso para cada subproceso detenido. En este caso, el nombre es probablemente `<noname>`.
 
-5.  Seleccione el marcador de subproceso para ver las opciones disponibles en el menú contextual.
+5. Seleccione el marcador de subproceso para ver las opciones disponibles en el menú contextual.
 
 ### <a name="ParallelStacks"></a>Ver las ubicaciones de subproceso
 
@@ -260,7 +260,7 @@ En el **pilas paralelas** ventana, puede cambiar entre una vista de subprocesos 
     - Han escrito dos subprocesos el `ServerClass.InstanceMethod`, uno de los cuales es el subproceso actual (la flecha amarilla), mientras que el otro subproceso ha detenido en `Thread.Sleep`.
     - También se está iniciando un nuevo subproceso (a la derecha), pero se ha detenido en `ThreadHelper.ThreadStart`.
 
-2.  Haga clic en las entradas de la **pilas paralelas** ventana para ver las opciones disponibles en el menú contextual.
+2. Haga clic en las entradas de la **pilas paralelas** ventana para ver las opciones disponibles en el menú contextual.
 
     Puede realizar diversas acciones de estos menús contextuales, pero para este tutorial se muestra más de estos detalles en el **inspección paralela** ventana (secciones).
 
@@ -292,14 +292,14 @@ Puede marcar los subprocesos para realizar un seguimiento de los subprocesos imp
 
     Se marcan todos los subprocesos seleccionados. Ahora, puede filtrar para mostrar sólo subprocesos marcados.
 
-3.  En el **inspección paralela** ventana, seleccione el **mostrar sólo subprocesos marcados** botón ![Mostrar subprocesos marcados](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
+3. En el **inspección paralela** ventana, seleccione el **mostrar sólo subprocesos marcados** botón ![Mostrar subprocesos marcados](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
 
     Los subprocesos marcados solo aparecen en la lista.
 
     > [!TIP]
     > Después de que algunos subprocesos marcados, puede haga clic en una línea de código en el editor de código y elija **ejecutar subprocesos marcados al Cursor**. Asegúrese de elegir llegará a todos los subprocesos marcan de código. Visual Studio pausará subprocesos en la línea seleccionada del código, lo que facilita controlar el orden de ejecución por [inmovilizar y reanudar subprocesos](#bkmk_freeze).
 
-4.  Seleccione el **mostrar sólo subprocesos marcados** botón nuevo para volver al **mostrar todos los subprocesos** modo.
+4. Seleccione el **mostrar sólo subprocesos marcados** botón nuevo para volver al **mostrar todos los subprocesos** modo.
 
 5. Para quitar marcadores de subprocesos, haga clic en uno o más subprocesos marcados en el **inspección paralela** ventana y seleccione **Quitar marcador**.
 
@@ -308,17 +308,17 @@ Puede marcar los subprocesos para realizar un seguimiento de los subprocesos imp
 > [!TIP]
 > Puede inmovilizar y descongelar (suspender y reanudar) los subprocesos para controlar el orden en que subprocesos realizan el trabajo. Esto puede ayudarle a resolver problemas de simultaneidad, como interbloqueos y condiciones de carrera.
 
-1.  En el **inspección paralela** ventana, con todas las filas seleccionadas, secundario y seleccione **inmovilizar**.
+1. En el **inspección paralela** ventana, con todas las filas seleccionadas, secundario y seleccione **inmovilizar**.
 
     En la segunda columna, aparece un icono de pausa para cada fila. El icono de pausa indica que el subproceso está inmovilizado.
 
-2.  Anule la selección de todas las demás filas seleccionando una sola fila.
+2. Anule la selección de todas las demás filas seleccionando una sola fila.
 
-3.  Haga clic en una fila y seleccione **reanudar**.
+3. Haga clic en una fila y seleccione **reanudar**.
 
     Desaparece el icono de pausa en esta fila, que indica que el subproceso ya no está inmovilizado.
 
-4.  Cambie al editor de código y presione **F11**. Se ejecuta solo el subproceso no está inmovilizado.
+4. Cambie al editor de código y presione **F11**. Se ejecuta solo el subproceso no está inmovilizado.
 
     La aplicación también puede crear instancias de algunos nuevos subprocesos. Todos los nuevos subprocesos son sin marcar y no están inmovilizados.
 

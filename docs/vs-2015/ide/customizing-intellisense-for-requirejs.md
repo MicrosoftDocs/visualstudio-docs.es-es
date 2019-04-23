@@ -1,5 +1,5 @@
 ---
-title: Personalizar IntelliSense para RequireJS | Microsoft Docs
+title: Personalizar IntelliSense para RequireJS | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce0aadf455e95895309bbae4f23eb84c75935428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049872"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Personalizar IntelliSense para RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ A partir de su versión Update 4, Visual Studio 2013 es compatible con RequireJS
   
  En este tema se describe cómo:  
   
--   Personalizar RequireJS en proyectos ASP.NET  
+- Personalizar RequireJS en proyectos ASP.NET  
   
--   Personalizar RequireJS en proyectos de JSProj, que se usan para crear aplicaciones de Apache Cordova y la Tienda Windows, y aplicaciones HTML de LightSwitch  
+- Personalizar RequireJS en proyectos de JSProj, que se usan para crear aplicaciones de Apache Cordova y la Tienda Windows, y aplicaciones HTML de LightSwitch  
   
 ## <a name="customize-requirejs-in-aspnet-projects"></a>Personalizar RequireJS en proyectos ASP.NET  
  La compatibilidad con RequireJS se habilita de forma automática cuando un archivo JavaScript hace referencia a un archivo denominado require.js (para más información, vea la sección Determinar el contexto de IntelliSense en [IntelliSense para JavaScript](../ide/javascript-intellisense.md)). En los proyectos ASP.NET, las referencias a require.js suelen realizarse mediante una directiva /// \<reference/> dentro de un archivo _references.js.  

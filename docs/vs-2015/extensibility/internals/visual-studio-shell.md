@@ -11,12 +11,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31afa6229a7eeb39c146d40992effd8969e76725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065550"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell es el agente de integra
   
 - Selección de todo el shell de seguimiento, el contexto y la moneda. El shell realiza un seguimiento de los siguientes tipos de elementos:  
   
-  -   El proyecto actual  
+  - El proyecto actual  
   
-  -   El elemento de proyecto actual o un ItemID actual <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - El elemento de proyecto actual o un ItemID actual <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   La selección actual para el **propiedades** ventana o `SelectionContainer`  
+  - La selección actual para el **propiedades** ventana o `SelectionContainer`  
   
-  -   El contexto de interfaz de usuario, identificadores o CmdUIGuids que controlan la visibilidad de comandos, menús y barras de herramientas  
+  - El contexto de interfaz de usuario, identificadores o CmdUIGuids que controlan la visibilidad de comandos, menús y barras de herramientas  
   
-  -   Los elementos actualmente activos, como la ventana activa, el documento y el Administrador de deshacer  
+  - Los elementos actualmente activos, como la ventana activa, el documento y el Administrador de deshacer  
   
-  -   Los atributos de contexto de usuario que controlan la Ayuda dinámica  
+  - Los atributos de contexto de usuario que controlan la Ayuda dinámica  
   
   El shell también Media en la comunicación entre VSPackages instalados y los servicios actuales. Admite las características principales del shell y pone a disposición de todos los VSPackages integrados en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Estas características principales incluyen los siguientes elementos:  
   

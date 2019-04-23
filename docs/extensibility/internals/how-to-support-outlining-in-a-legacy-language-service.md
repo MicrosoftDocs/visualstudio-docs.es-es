@@ -1,5 +1,5 @@
 ---
-title: Filtrar Compatibilidad de la esquematización en un servicio de lenguaje heredado | Documentos de Microsoft
+title: Procedimiento Compatibilidad de la esquematización en un servicio de lenguaje heredado | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe56b66574c535f51504e54b57db7d1659c4b1dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 85aea5bfa6ccdf5f3753a1397729671249961152
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060599"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Filtrar Compatibilidad de la esquematización en un servicio de lenguaje heredado
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procedimiento Compatibilidad de la esquematización en un servicio de lenguaje heredado
 Esquematización se utiliza para expandir o contraer las diferentes áreas de texto. Se usa el modo de esquematización pueden definirse de forma diferente a distintos idiomas. Para obtener más información, vea [Esquematización](../../ide/outlining.md).
 
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar la esquematización, vea [Tutorial: Esquematización](../../extensibility/walkthrough-outlining.md).
@@ -31,9 +31,9 @@ Esquematización se utiliza para expandir o contraer las diferentes áreas de te
 
 ## <a name="to-support-outlining"></a>Para admitir la esquematización
 
-1.  Implemente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> en el objeto de servicio de lenguaje.
+1. Implemente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> en el objeto de servicio de lenguaje.
 
-2.  Llamar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> en el objeto de sesión de esquematización actual para agregar nuevas regiones de esquema.
+2. Llamar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> en el objeto de sesión de esquematización actual para agregar nuevas regiones de esquema.
 
 ## <a name="robust-programming"></a>Programación sólida
  Cuando un usuario selecciona **contraer a definiciones** en el **esquematización** menú, las llamadas IDE <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> en su servicio de lenguaje.

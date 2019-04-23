@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 260fbaa15f7880e604985fca50e8d99ac0e0fd39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ef9439d9cebfa8b80b214e52d077ab1f770d4750
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047325"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Ampliar el filtro del explorador de soluciones
 Puede extender **el Explorador de soluciones** filtrar funcionalidad para mostrar u ocultar archivos diferentes. Por ejemplo, puede crear un filtro que solo clase factory archivos de C# se muestra el **el Explorador de soluciones**, tal y como se muestra en este tutorial.
@@ -26,13 +26,13 @@ Puede extender **el Explorador de soluciones** filtrar funcionalidad para mostra
 
 ### <a name="create-a-visual-studio-package-project"></a>Crear un proyecto de paquete de Visual Studio
 
-1.  Cree un proyecto VSIX denominado `FileFilter`. Agregar una plantilla de elemento de comando personalizado denominada **FileFilter**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Cree un proyecto VSIX denominado `FileFilter`. Agregar una plantilla de elemento de comando personalizado denominada **FileFilter**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Agregue una referencia a `System.ComponentModel.Composition` y `Microsoft.VisualStudio.Utilities`.
+2. Agregue una referencia a `System.ComponentModel.Composition` y `Microsoft.VisualStudio.Utilities`.
 
-3.  Hacer que el comando de menú aparezca en el **el Explorador de soluciones** barra de herramientas. Abra el *FileFilterPackage.vsct* archivo.
+3. Hacer que el comando de menú aparezca en el **el Explorador de soluciones** barra de herramientas. Abra el *FileFilterPackage.vsct* archivo.
 
-4.  Cambiar el `<Button>` bloque al siguiente:
+4. Cambiar el `<Button>` bloque al siguiente:
 
     ```xml
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">
@@ -46,28 +46,28 @@ Puede extender **el Explorador de soluciones** filtrar funcionalidad para mostra
 
 ### <a name="update-the-manifest-file"></a>Actualizar el archivo de manifiesto
 
-1.  En el *source.extension.vsixmanifest* , agregue un recurso que es un componente MEF.
+1. En el *source.extension.vsixmanifest* , agregue un recurso que es un componente MEF.
 
-2.  En el **activos** ficha, elija la **New** botón.
+2. En el **activos** ficha, elija la **New** botón.
 
-3.  En el **tipo** seleccione **Microsoft.VisualStudio.MefComponent**.
+3. En el **tipo** seleccione **Microsoft.VisualStudio.MefComponent**.
 
-4.  En el **origen** seleccione **un proyecto de la solución actual**.
+4. En el **origen** seleccione **un proyecto de la solución actual**.
 
-5.  En el **proyecto** seleccione **FileFilter**y, a continuación, elija el **Aceptar** botón.
+5. En el **proyecto** seleccione **FileFilter**y, a continuación, elija el **Aceptar** botón.
 
 ### <a name="add-the-filter-code"></a>Agregue el código de filtro
 
-1.  Agregar algún GUID para el *FileFilterPackageGuids.cs* archivo:
+1. Agregar algún GUID para el *FileFilterPackageGuids.cs* archivo:
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2.  Agregar un archivo de clase al proyecto FileFilter denominado *FileNameFilter.cs*.
+2. Agregar un archivo de clase al proyecto FileFilter denominado *FileNameFilter.cs*.
 
-3.  Reemplace el espacio de nombres vacío y la clase vacía con el código siguiente.
+3. Reemplace el espacio de nombres vacío y la clase vacía con el código siguiente.
 
      El `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` método toma la colección que contiene la raíz de la solución (`rootItems`) y devuelve la colección de elementos que se incluirán en el filtro.
 
@@ -158,7 +158,7 @@ Puede extender **el Explorador de soluciones** filtrar funcionalidad para mostra
 
     ```
 
-4.  En *FileFilter.cs*, quite la selección de ubicación de comando y control de código desde el constructor FileFilter. El resultado debería tener este aspecto:
+4. En *FileFilter.cs*, quite la selección de ubicación de comando y control de código desde el constructor FileFilter. El resultado debería tener este aspecto:
 
     ```csharp
     private FileFilter(Package package)
@@ -174,7 +174,7 @@ Puede extender **el Explorador de soluciones** filtrar funcionalidad para mostra
 
      Quitar el `ShowMessageBox()` método así.
 
-5.  En *FileFilterPackage.cs*, reemplace el código en el `Initialize()` método con lo siguiente:
+5. En *FileFilterPackage.cs*, reemplace el código en el `Initialize()` método con lo siguiente:
 
     ```csharp
     protected override void Initialize()
@@ -186,10 +186,10 @@ Puede extender **el Explorador de soluciones** filtrar funcionalidad para mostra
 
 ### <a name="test-your-code"></a>Probar el código
 
-1.  Compile y ejecute el proyecto. Se muestra una segunda instancia de Visual Studio. Esto se denomina la instancia experimental.
+1. Compile y ejecute el proyecto. Se muestra una segunda instancia de Visual Studio. Esto se denomina la instancia experimental.
 
-2.  En la instancia experimental de Visual Studio, abra un proyecto de C#.
+2. En la instancia experimental de Visual Studio, abra un proyecto de C#.
 
-3.  Busque el botón que agregó en el **el Explorador de soluciones** barra de herramientas. Debe ser el cuarto botón desde la izquierda.
+3. Busque el botón que agregó en el **el Explorador de soluciones** barra de herramientas. Debe ser el cuarto botón desde la izquierda.
 
-4.  Cuando haga clic en el botón, se deben filtrar todos los archivos y debería ver **todos los elementos se han filtrado de la vista.** en el **el Explorador de soluciones**.
+4. Cuando haga clic en el botón, se deben filtrar todos los archivos y debería ver **todos los elementos se han filtrado de la vista.** en el **el Explorador de soluciones**.

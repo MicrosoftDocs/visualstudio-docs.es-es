@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Exportar los diagramas de clases como imágenes (Diseñador de clases) | Microsoft Docs
+title: Procedimiento Exportar los diagramas de clases como imágenes (Diseñador de clases) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,27 +13,27 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4bfc46e4860933d57b3439f8293b0d88fc0519ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c859e4488a4e1ef6d843ffe27f5b342ea1a92e0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049963"
 ---
-# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Cómo: Exportar los diagramas de clases como imágenes (Diseñador de clases)
+# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Procedimiento Exportar los diagramas de clases como imágenes (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para exportar un diagrama de clase creado a partir de código del proyecto, guárdelo como una imagen. Si quiere exportar los diagramas de clase UML en su lugar, consulte [Exportar diagramas como imágenes](../modeling/export-diagrams-as-images.md).  
   
-1.  Abra el archivo de diagrama de clases (.cd).  
+1. Abra el archivo de diagrama de clases (.cd).  
   
-2.  En el menú **Diagrama de clase** o en el menú contextual de la superficie del diagrama, elija **Exportar diagrama como imagen**.  
+2. En el menú **Diagrama de clase** o en el menú contextual de la superficie del diagrama, elija **Exportar diagrama como imagen**.  
   
-3.  Seleccione un diagrama.  
+3. Seleccione un diagrama.  
   
-4.  Seleccione el formato que quiera.  
+4. Seleccione el formato que quiera.  
   
-5.  Elija **Exportar** para finalizar la exportación.  
+5. Elija **Exportar** para finalizar la exportación.  
   
      Para actualizar automáticamente las imágenes exportadas que están vinculadas a otros documentos, exporte de nuevo el diagrama en Visual Studio.  
   

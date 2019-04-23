@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar un nuevo elemento a un proyecto de flujo de trabajo | Documentos de Microsoft
+title: Procedimiento Agregar un nuevo elemento a un proyecto de flujo de trabajo | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995836"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063634"
 ---
-# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Filtrar Agregar un nuevo elemento a un proyecto de flujo de trabajo
+# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Procedimiento Agregar un nuevo elemento a un proyecto de flujo de trabajo
 Después de haber creado un proyecto de flujo de trabajo, puede agregar actividades, diseñadores y otros elementos conocidos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] al proyecto.  
   
  En la tabla siguiente se enumeran los elementos de [!INCLUDE[wf](../includes/wf-md.md)] que puede agregar a un proyecto de flujo de trabajo.  
@@ -30,17 +30,17 @@ Después de haber creado un proyecto de flujo de trabajo, puede agregar activida
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Para agregar un nuevo elemento a un proyecto de flujo de trabajo  
   
-1.  En el **proyecto** menú, haga clic en **Agregar nuevo elemento...** .  
+1. En el **proyecto** menú, haga clic en **Agregar nuevo elemento...** .  
   
      El **agregar un nuevo elemento** abre el cuadro de diálogo.  
   
-2.  En el **plantillas instaladas** panel, seleccione **flujo de trabajo** grupo.  
+2. En el **plantillas instaladas** panel, seleccione **flujo de trabajo** grupo.  
   
-3.  Seleccione uno de los cuatro elementos. En la tabla anterior aparecen las selecciones disponibles.  
+3. Seleccione uno de los cuatro elementos. En la tabla anterior aparecen las selecciones disponibles.  
   
-4.  Escriba un nombre adecuado para el elemento en el **nombre** cuadro en la parte inferior del cuadro de diálogo.  
+4. Escriba un nombre adecuado para el elemento en el **nombre** cuadro en la parte inferior del cuadro de diálogo.  
   
-5.  Haga clic en **agregar** para agregar el elemento al proyecto de flujo de trabajo actual.  
+5. Haga clic en **agregar** para agregar el elemento al proyecto de flujo de trabajo actual.  
   
 ## <a name="see-also"></a>Vea también  
  [Crear un proyecto de flujo de trabajo](../workflow-designer/creating-a-workflow-project.md)

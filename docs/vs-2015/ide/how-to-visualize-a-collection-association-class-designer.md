@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Visualizar una asociación de colecciones (Diseñador de clases) | Microsoft Docs
+title: Procedimiento Visualizar una asociación de colecciones (Diseñador de clases) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,25 +16,25 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fb0fc574af033f34afb3995edeaffe5e408d740
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 490ee064903a0e2d119da891681da719e237acec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799735"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049413"
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>Cómo: Visualizar una asociación de colecciones (Diseñador de clases)
+# <a name="how-to-visualize-a-collection-association-class-designer"></a>Procedimiento Visualizar una asociación de colecciones (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las propiedades y campos que son colecciones de otros tipos se pueden mostrar en el diagrama de clase como una asociación de colecciones. A diferencia de una asociación normal, que muestra un campo o propiedad como una línea que vincula la clase propietaria con el tipo de campo, una asociación de colecciones se muestra como una línea que vincula la clase propietaria con el tipo recopilado.  
   
 ### <a name="to-create-a-collection-association"></a>Para crear una colección de asociación  
   
-1.  En el código, cree una propiedad o un campo cuyo tipo sea una colección fuertemente tipada.  
+1. En el código, cree una propiedad o un campo cuyo tipo sea una colección fuertemente tipada.  
   
-2.  En el diagrama de clases, expanda la clase para que se muestren los campos y propiedades.  
+2. En el diagrama de clases, expanda la clase para que se muestren los campos y propiedades.  
   
-3.  En la clase, haga clic en el campo o la propiedad y elija **Mostrar como asociación de colecciones**.  
+3. En la clase, haga clic en el campo o la propiedad y elija **Mostrar como asociación de colecciones**.  
   
      La propiedad o el campo se muestra como una línea de asociación que se vincula al tipo recopilado.  
   

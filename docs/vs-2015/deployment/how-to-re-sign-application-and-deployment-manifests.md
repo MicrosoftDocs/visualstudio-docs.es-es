@@ -1,5 +1,5 @@
 ---
-title: Filtrar Volver a firmar aplicaciones y manifiestos de implementación | Documentos de Microsoft
+title: Procedimiento Volver a firmar aplicaciones y manifiestos de implementación | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,14 +19,14 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045790"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Filtrar Volver a firmar manifiestos de implementación y aplicación
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedimiento Volver a firmar manifiestos de implementación y aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Después de realizar cambios en las propiedades de implementación en el manifiesto de aplicación para aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation (xbap) o las soluciones de Office, debe volver a firmar la aplicación y los manifiestos de implementación con un certificado. Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.  
@@ -38,11 +38,11 @@ Después de realizar cambios en las propiedades de implementación en el manifie
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para volver a firmar la aplicación e implementación de manifiestos con Mage.exe  
   
-1.  Abra un **Visual Studio Command Prompt** ventana.  
+1. Abra un **Visual Studio Command Prompt** ventana.  
   
-2.  Cambie los directorios a la carpeta que contiene los archivos de manifiesto que se desean iniciar sesión.  
+2. Cambie los directorios a la carpeta que contiene los archivos de manifiesto que se desean iniciar sesión.  
   
-3.  Escriba el comando siguiente para firmar el archivo de manifiesto de aplicación. Reemplace ManifestFileName con el nombre de su archivo de manifiesto además de la extensión. Reemplace el certificado con la ruta de acceso completa o relativa del archivo de certificado y contraseña con la contraseña del certificado.  
+3. Escriba el comando siguiente para firmar el archivo de manifiesto de aplicación. Reemplace ManifestFileName con el nombre de su archivo de manifiesto además de la extensión. Reemplace el certificado con la ruta de acceso completa o relativa del archivo de certificado y contraseña con la contraseña del certificado.  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -56,7 +56,7 @@ Después de realizar cambios en las propiedades de implementación en el manifie
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  Escriba el siguiente comando para actualizar y firmar el archivo de manifiesto de implementación, reemplazando los nombres de marcador de posición como en el paso anterior.  
+4. Escriba el siguiente comando para actualizar y firmar el archivo de manifiesto de implementación, reemplazando los nombres de marcador de posición como en el paso anterior.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -70,20 +70,20 @@ Después de realizar cambios en las propiedades de implementación en el manifie
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Si lo desea, copie el manifiesto de implementación principal (publicar\\*appname*.application) en el directorio de implementación de la versión (publish\Application archivos\\*appname*_ *versión*).  
+5. Si lo desea, copie el manifiesto de implementación principal (publicar\\*appname*.application) en el directorio de implementación de la versión (publish\Application archivos\\*appname*_ *versión*).  
   
 ## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>Actualizar y volver a firmar la aplicación y los manifiestos de implementación  
  Este procedimiento se supone que ya hizo cambios en la aplicación (.manifest) del archivo de manifiesto, pero que hay otros archivos que se actualizaron. Cuando se actualizan los archivos, también debe actualizarse el valor hash que representa el archivo.  
   
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para actualizar y volver a firmar la aplicación e implementación de manifiestos con Mage.exe  
   
-1.  Abra un **Visual Studio Command Prompt** ventana.  
+1. Abra un **Visual Studio Command Prompt** ventana.  
   
-2.  Cambie los directorios a la carpeta que contiene los archivos de manifiesto que se desean iniciar sesión.  
+2. Cambie los directorios a la carpeta que contiene los archivos de manifiesto que se desean iniciar sesión.  
   
-3.  Quite la extensión de archivo .deploy de los archivos en la carpeta de salida de la publicación.  
+3. Quite la extensión de archivo .deploy de los archivos en la carpeta de salida de la publicación.  
   
-4.  Escriba el siguiente comando para actualizar el manifiesto de aplicación con el nuevo hash para los archivos actualizados y firmar el archivo de manifiesto de aplicación. Reemplace ManifestFileName con el nombre de su archivo de manifiesto además de la extensión. Reemplace el certificado con la ruta de acceso completa o relativa del archivo de certificado y contraseña con la contraseña del certificado.  
+4. Escriba el siguiente comando para actualizar el manifiesto de aplicación con el nuevo hash para los archivos actualizados y firmar el archivo de manifiesto de aplicación. Reemplace ManifestFileName con el nombre de su archivo de manifiesto además de la extensión. Reemplace el certificado con la ruta de acceso completa o relativa del archivo de certificado y contraseña con la contraseña del certificado.  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -97,7 +97,7 @@ Después de realizar cambios en las propiedades de implementación en el manifie
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Escriba el siguiente comando para actualizar y firmar el archivo de manifiesto de implementación, reemplazando los nombres de marcador de posición como en el paso anterior.  
+5. Escriba el siguiente comando para actualizar y firmar el archivo de manifiesto de implementación, reemplazando los nombres de marcador de posición como en el paso anterior.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -111,9 +111,9 @@ Después de realizar cambios en las propiedades de implementación en el manifie
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  Agregue la extensión de archivo .deploy a los archivos, excepto los archivos de manifiesto de la aplicación e implementación.  
+6. Agregue la extensión de archivo .deploy a los archivos, excepto los archivos de manifiesto de la aplicación e implementación.  
   
-7.  Si lo desea, copie el manifiesto de implementación principal (publicar\\*appname*.application) en el directorio de implementación de la versión (publish\Application archivos\\*appname*_ *versión*).  
+7. Si lo desea, copie el manifiesto de implementación principal (publicar\\*appname*.application) en el directorio de implementación de la versión (publish\Application archivos\\*appname*_ *versión*).  
   
 ## <a name="see-also"></a>Vea también  
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   

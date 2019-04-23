@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659506"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047885"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Área de prueba 8: Cambio de los complementos
 El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) tiene la interfaz de usuario (UI) para cambiar el complemento de control de código fuente actual. Esta área de prueba proporciona los casos de prueba para el proceso de seleccionar qué complemento que se usará para el control de código fuente de la solución.
@@ -24,9 +24,9 @@ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de de
 ## <a name="command-menu-access"></a>Acceso al menú de comandos
  La siguiente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rutas de menú del entorno de desarrollo integrado que se usan en los casos de prueba.
 
--   Control de código fuente actual complemento: **Herramientas** -> **opciones** -> **Control de código fuente** -> **selección de complemento**.
+- Control de código fuente actual complemento: **Herramientas** -> **opciones** -> **Control de código fuente** -> **selección de complemento**.
 
--   Cambiar origen de enlace de control: **Archivo** -> **Control de código fuente** -> **cambiar Control de código fuente**...
+- Cambiar origen de enlace de control: **Archivo** -> **Control de código fuente** -> **cambiar Control de código fuente**...
 
 ## <a name="common-expected-behavior"></a>Comportamiento esperado comunes
  Es posible cambiar el complemento para una solución de control de origen sin salir de Visual Studio ni volver a cargar la solución. Además, el complemento de control de código fuente actual cambia automáticamente a la utilizada por una solución cuando se carga esa solución.

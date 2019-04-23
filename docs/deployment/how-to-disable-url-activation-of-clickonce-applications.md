@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce | Microsoft Docs
+title: Procedimiento Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26fdadf92fa94efe0a08fdf090e5a295e2f65096
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 6841b8a91cec24f467f6e3f684cbb27e25c9fa63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045621"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Procedimiento Desactivación de la activación de URL de aplicaciones ClickOnce
 
@@ -35,13 +35,13 @@ Este procedimiento usa la herramienta de Kit de desarrollo de Software (SDK) de 
 
 ### <a name="to-disable-url-activation-for-your-application"></a>Deshabilitar la activación de direcciones URL para la aplicación
 
-1.  Abra el manifiesto de implementación en MageUI.exe. Si aún no ha creado uno, siga los pasos descritos en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Abra el manifiesto de implementación en MageUI.exe. Si aún no ha creado uno, siga los pasos descritos en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-2.  Seleccione la pestaña **Opciones de implementación**.
+2. Seleccione la pestaña **Opciones de implementación**.
 
-3.  Desactive la casilla de verificación **Ejecutar automáticamente la aplicación después de instalarla**.
+3. Desactive la casilla de verificación **Ejecutar automáticamente la aplicación después de instalarla**.
 
-4.  Guarde y firme el manifiesto.
+4. Guarde y firme el manifiesto.
 
 ## <a name="see-also"></a>Vea también
 

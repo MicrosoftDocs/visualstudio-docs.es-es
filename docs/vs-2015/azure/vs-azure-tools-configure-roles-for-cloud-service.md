@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8cbf01d79011f2917236f3577cf25986e4bc5b76
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59002324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059449"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configuración de los roles para un servicio de Azure con Visual Studio
 Un servicio en la nube de Azure puede tener uno o más roles web o de trabajo. Para cada rol, debe definir cómo se configura ese rol y cómo se ejecuta. Para obtener más información sobre los roles en servicios en la nube, vea el vídeo [Introducción a Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -259,7 +259,7 @@ En el código siguiente se muestra un ejemplo de cómo escribir un archivo de te
 
 Para ver el archivo creado por el código de la sección anterior, siga estos pasos:
 
-1.  En el área de notificación de Windows, haga clic con el botón derecho en el icono de Azure y, en el menú contextual, seleccione **Show Compute Emulator UI** (Mostrar la interfaz de usuario del emulador de proceso).
+1. En el área de notificación de Windows, haga clic con el botón derecho en el icono de Azure y, en el menú contextual, seleccione **Show Compute Emulator UI** (Mostrar la interfaz de usuario del emulador de proceso).
 
     ![Mostrar el emulador de proceso de Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

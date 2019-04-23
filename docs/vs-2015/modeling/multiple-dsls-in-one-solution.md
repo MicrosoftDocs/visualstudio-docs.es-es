@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76f34194381df92097e8dc2c42f1bf57a83f484b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987845"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050145"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Varios DSL en una solución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ Puede empaquetar varios DSL como parte de una única solución para que se insta
   
 1. Cree dos o más soluciones de DSL y un proyecto de VSIX, y agregue todos los proyectos a una única solución.  
   
-   -   Para crear un nuevo proyecto de VSIX: En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C#**, **extensibilidad**, **proyecto VSIX**.  
+   - Para crear un nuevo proyecto de VSIX: En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C#**, **extensibilidad**, **proyecto VSIX**.  
   
-   -   Cree dos o más soluciones de DSL en el directorio de soluciones VSIX.  
+   - Cree dos o más soluciones de DSL en el directorio de soluciones VSIX.  
   
         Por cada DSL, abra una nueva instancia de Visual Studio. Cree el nuevo DSL y especifique la misma carpeta de solución que la solución de VSIX.  
   
         Asegúrese de crear cada DSL con una extensión de nombre de archivo diferente.  
   
-   -   Cambiar los nombres de los **Dsl** y **DslPackage** proyectos para que sean todos diferentes. Por ejemplo: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.  
+   - Cambiar los nombres de los **Dsl** y **DslPackage** proyectos para que sean todos diferentes. Por ejemplo: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.  
   
-   -   En cada **DslPackage\*\source.extension.tt**, actualice esta línea con el nombre de proyecto de Dsl correcto:  
+   - En cada **DslPackage\*\source.extension.tt**, actualice esta línea con el nombre de proyecto de Dsl correcto:  
   
         `string dslProjectName = "Dsl2";`  
   
-   -   En la solución VSIX, agregue el Dsl * y DslPackage\* proyectos.  
+   - En la solución VSIX, agregue el Dsl * y DslPackage\* proyectos.  
   
         Quizás quiera coloca cada par en su propia carpeta de solución.  
   
 2. Combine los manifiestos VSIX de los DSL:  
   
-   1.  Abra _Suproyectovsix_**\source.extension.manifest**.  
+   1. Abra _Suproyectovsix_**\source.extension.manifest**.  
   
-   2.  Para cada DSL, elija **agregar contenido** y agregue:  
+   2. Para cada DSL, elija **agregar contenido** y agregue:  
   
-       -   `Dsl*` un proyecto como un **componente MEF**  
+       - `Dsl*` un proyecto como un **componente MEF**  
   
-       -   `DslPackage*` un proyecto como un **componente MEF**  
+       - `DslPackage*` un proyecto como un **componente MEF**  
   
-       -   `DslPackage*` un proyecto como un **VS Package**  
+       - `DslPackage*` un proyecto como un **VS Package**  
   
 3. Compile la solución.  
   

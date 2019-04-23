@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0941834b3153a8d56f8892ef10d9d388af6f2c6c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996172"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049568"
 ---
 # <a name="code-metrics-values"></a>Valores de métrica de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ Las métricas de código son un conjunto de medidas de software que proporcionan
 ## <a name="software-measurements"></a>Medidas de software  
  En la lista siguiente se muestra los resultados de las métricas de código que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] calcula:  
   
--   **Índice de mantenimiento** : calcula un valor de índice entre 0 y 100 que representa su relativa facilidad de mantenimiento del código. Un valor alto significa mayor facilidad de mantenimiento. Las clasificaciones de colores, pueden utilizarse para identificar rápidamente los puntos conflictivos en el código. Una clasificación en verde entre 20 y 100 e indica que el código tiene buen mantenimiento. Una calificación amarilla es entre 10 y 19 e indica que el código es moderadamente fácil de mantener. Una clasificación de color rojo es una clasificación entre 0 y 9 e indica un mantenimiento baja.  
+- **Índice de mantenimiento** : calcula un valor de índice entre 0 y 100 que representa su relativa facilidad de mantenimiento del código. Un valor alto significa mayor facilidad de mantenimiento. Las clasificaciones de colores, pueden utilizarse para identificar rápidamente los puntos conflictivos en el código. Una clasificación en verde entre 20 y 100 e indica que el código tiene buen mantenimiento. Una calificación amarilla es entre 10 y 19 e indica que el código es moderadamente fácil de mantener. Una clasificación de color rojo es una clasificación entre 0 y 9 e indica un mantenimiento baja.  
   
--   **Complejidad ciclomática** – mide la complejidad del código estructural. Se crea, calculando el número de rutas de acceso de código diferente en el flujo del programa. Un programa que tiene el flujo de control complejo requerirá más pruebas para lograr una buena cobertura de código y será más difícil de mantener.  
+- **Complejidad ciclomática** – mide la complejidad del código estructural. Se crea, calculando el número de rutas de acceso de código diferente en el flujo del programa. Un programa que tiene el flujo de control complejo requerirá más pruebas para lograr una buena cobertura de código y será más difícil de mantener.  
   
     > [!NOTE]
     >  En algunos casos, el cálculo de la complejidad ciclomática de un método en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] difiere de las versiones anteriores. Para obtener más información, consulte la "cambios en Visual Studio 2010 complejidad cálculos de sección de código" de [solución de problemas de las métricas de código](../code-quality/troubleshooting-code-metrics-issues.md).  
   
--   **Profundidad de herencia** : indica el número de definiciones de clase que se extienden a la raíz de la jerarquía de clases. La profundidad la jerarquía más difícil comprender donde se definen los campos y métodos determinados podría ser o / y ha vuelto a definir.  
+- **Profundidad de herencia** : indica el número de definiciones de clase que se extienden a la raíz de la jerarquía de clases. La profundidad la jerarquía más difícil comprender donde se definen los campos y métodos determinados podría ser o / y ha vuelto a definir.  
   
--   **Acoplamiento de clases** – mide el acoplamiento a las clases únicas a través de parámetros, variables locales, tipos de valor devuelto, llamadas a métodos, las creaciones de instancias genérica o de plantilla, clases base, implementaciones de interfaz, los campos definidos en los tipos externos, y decoración de atributo. Buen diseño de software dicta que deben tener alta cohesión y acoplamiento bajo los tipos y métodos. El significativo acoplamiento indica un diseño que es difícil reutilizar y mantener debido a sus interdependencias en otros tipos.  
+- **Acoplamiento de clases** – mide el acoplamiento a las clases únicas a través de parámetros, variables locales, tipos de valor devuelto, llamadas a métodos, las creaciones de instancias genérica o de plantilla, clases base, implementaciones de interfaz, los campos definidos en los tipos externos, y decoración de atributo. Buen diseño de software dicta que deben tener alta cohesión y acoplamiento bajo los tipos y métodos. El significativo acoplamiento indica un diseño que es difícil reutilizar y mantener debido a sus interdependencias en otros tipos.  
   
--   **Líneas de código** : indica el número aproximado de líneas del código. El recuento se basa en el código IL y, por tanto, no es el número exacto de líneas en el archivo de código fuente. Un número muy alto podría indicar que un tipo o método está intentando hacer demasiado trabajo y debe dividirse. También podría indicar que el tipo o método podría ser difícil de mantener.  
+- **Líneas de código** : indica el número aproximado de líneas del código. El recuento se basa en el código IL y, por tanto, no es el número exacto de líneas en el archivo de código fuente. Un número muy alto podría indicar que un tipo o método está intentando hacer demasiado trabajo y debe dividirse. También podría indicar que el tipo o método podría ser difícil de mantener.  
   
 ## <a name="anonymous-methods"></a>Métodos anónimos  
  Un *método anónimo* es simplemente un método que no tiene nombre. Métodos anónimos se utilizan con más frecuencia para pasar un bloque de código como parámetro delegado. Resultados de métricas para un método anónimo que se declara en un miembro, como un método o el descriptor de acceso, se asocian con el miembro que declara el método. No se asocian con el miembro que llama al método.  

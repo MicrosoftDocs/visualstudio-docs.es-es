@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691311"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044503"
 ---
 # <a name="sccget-function"></a>SccGet (función)
 Esta función recupera una copia de uno o más archivos para ver y compilar, pero no para su edición. En la mayoría de los sistemas, los archivos se etiquetan como de solo lectura.
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  Hay dos maneras de resolver esta situación donde la memoria caché local de versiones del control de código fuente no está sincronizada con la base de datos de control de código fuente:
 
-1.  No permiten cambiar el nombre de un archivo en la base de datos de control de código fuente está desprotegido actualmente.
+1. No permiten cambiar el nombre de un archivo en la base de datos de control de código fuente está desprotegido actualmente.
 
-2.  Es el equivalente de "eliminación antiguo" seguida de "Agregar nuevo". El algoritmo siguiente es una manera de lograr esto.
+2. Es el equivalente de "eliminación antiguo" seguida de "Agregar nuevo". El algoritmo siguiente es una manera de lograr esto.
 
-    1.  Llame a la [SccQueryChanges](../extensibility/sccquerychanges-function.md) función para obtener información sobre el cambio de nombre *a.txt* a *b.txt* en la base de datos de control de código fuente.
+    1. Llame a la [SccQueryChanges](../extensibility/sccquerychanges-function.md) función para obtener información sobre el cambio de nombre *a.txt* a *b.txt* en la base de datos de control de código fuente.
 
-    2.  Cambiar el nombre local *a.txt* a *b.txt*.
+    2. Cambiar el nombre local *a.txt* a *b.txt*.
 
-    3.  Llame a la `SccGet` función para ambos *a.txt* y *b.txt*.
+    3. Llame a la `SccGet` función para ambos *a.txt* y *b.txt*.
 
-    4.  Dado que *a.txt* no existe en la base de datos de control de código fuente, se purga la caché de la versión local del campo que falta *a.txt* información de versión.
+    4. Dado que *a.txt* no existe en la base de datos de control de código fuente, se purga la caché de la versión local del campo que falta *a.txt* información de versión.
 
-    5.  El *b.txt* va a desproteger el archivo se combina con el contenido de la variable local *b.txt* archivo.
+    5. El *b.txt* va a desproteger el archivo se combina con el contenido de la variable local *b.txt* archivo.
 
-    6.  La actualización *b.txt* ahora se puede comprobar el archivo.
+    6. La actualización *b.txt* ahora se puede comprobar el archivo.
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

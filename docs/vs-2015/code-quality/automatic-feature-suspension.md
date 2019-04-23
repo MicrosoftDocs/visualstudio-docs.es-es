@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045987"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensión automática de la característica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Si la memoria disponible del sistema cae a 200MB o menos, Visual Studio muestra 
 
  En una condición de memoria insuficiente, ocurre lo siguiente:
 
--   Análisis de la solución completa para Visual C# y Visual Basic está deshabilitada.
+- Análisis de la solución completa para Visual C# y Visual Basic está deshabilitada.
 
--   [Recolección de elementos](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) se deshabilitan el modo de baja latencia (GC) para Visual C# y Visual Basic.
+- [Recolección de elementos](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) se deshabilitan el modo de baja latencia (GC) para Visual C# y Visual Basic.
 
--   Se vacían las memorias caché visuales Studio.
+- Se vacían las memorias caché visuales Studio.
 
 ## <a name="improve-visual-studio-performance"></a>Mejorar el rendimiento de Visual Studio
  Para sugerencias y trucos sobre cómo mejorar el rendimiento de Visual Studio cuando se trabaja con soluciones de gran tamaño o las condiciones de poca memoria, vea [consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
@@ -48,11 +48,11 @@ Si la memoria disponible del sistema cae a 200MB o menos, Visual Studio muestra 
 
 Todas las cachés de Visual Studio se vacían inmediatamente, pero se iniciará volver a rellenar si continuar la sesión actual de desarrollo o reinicie Visual Studio. Las memorias caché vaciadas incluyen las memorias caché de las siguientes características.
 
--   Buscar todas las referencias
+- Buscar todas las referencias
 
--   Navegar a
+- Navegar a
 
--   Agregar Using
+- Agregar Using
 
 Además, también se borran las memorias caché que se utiliza para operaciones internas de Visual Studio.
 

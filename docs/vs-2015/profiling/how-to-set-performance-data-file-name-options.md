@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: establecer opciones de nombre de archivo de datos de rendimiento | Microsoft Docs'
+title: Procedimiento Establecer opciones de nombre de archivo de datos de rendimiento | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3d513010b94c61e09f8bda6a9fb3074ba949bdd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057841"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Cómo: establecer opciones de nombre de archivo de datos de rendimiento
+# <a name="how-to-set-performance-data-file-name-options"></a>Procedimiento Opciones de nombre de archivo de datos de rendimiento de conjunto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 De forma predeterminada, se guarda un archivo de generación de perfiles de datos (.vsp) mediante la siguiente sintaxis:  
@@ -27,7 +27,7 @@ De forma predeterminada, se guarda un archivo de generación de perfiles de dato
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 |||  
 |-|-|  
@@ -38,11 +38,11 @@ De forma predeterminada, se guarda un archivo de generación de perfiles de dato
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Para cambiar la sintaxis de nomenclatura de los archivos de datos de generación de perfiles de una sesión de rendimiento  
   
-1.  En el **Explorador de rendimiento**, haga clic con el botón derecho en el nombre de la sesión de rendimiento y, después, haga clic en **Propiedades**.  
+1. En el **Explorador de rendimiento**, haga clic con el botón derecho en el nombre de la sesión de rendimiento y, después, haga clic en **Propiedades**.  
   
-2.  Haga clic en **General**.  
+2. Haga clic en **General**.  
   
-3.  En **Informe**, cambie cualquiera de las siguientes opciones:  
+3. En **Informe**, cambie cualquiera de las siguientes opciones:  
   
     |||  
     |-|-|  

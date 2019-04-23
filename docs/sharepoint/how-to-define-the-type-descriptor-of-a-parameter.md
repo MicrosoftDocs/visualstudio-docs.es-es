@@ -15,67 +15,67 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f28de400b417011b127b76c8813024f9721cc375
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18c2d5396b01c238213d494c1452e8919ea9cdd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048065"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procedimiento Definir el descriptor de tipo de un parámetro
   Un descriptor de tipo contiene propiedades que describen el tipo de datos de un parámetro. Un descriptor de tipo puede definir un campo, una entidad o una colección de entidades. Para obtener más información, consulte [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Para definir el descriptor de tipo de un parámetro
 
-1.  En el **detalles del método de BDC** ventana, elija el descriptor de tipo del parámetro.
+1. En el **detalles del método de BDC** ventana, elija el descriptor de tipo del parámetro.
 
-2.  En la barra de menús, elija **vista**, **ventana propiedades**.
+2. En la barra de menús, elija **vista**, **ventana propiedades**.
 
-3.  En el **propiedades** ventana, establezca las propiedades de descriptor de tipos.
+3. En el **propiedades** ventana, establezca las propiedades de descriptor de tipos.
 
      En los procedimientos siguientes se describe cómo se define un descriptor de tipo como un campo, entidad o colección de entidades.
 
 ### <a name="to-define-a-field"></a>Para definir un campo
 
-1.  En el **propiedades** ventana, establezca el **nombre** propiedad de descriptor de tipos para el nombre de un campo en el tipo que representa la entidad (por ejemplo: **FirstName**).
+1. En el **propiedades** ventana, establezca el **nombre** propiedad de descriptor de tipos para el nombre de un campo en el tipo que representa la entidad (por ejemplo: **FirstName**).
 
-2.  En la lista junto a la **TypeName** propiedad, elija el tipo de datos adecuado (por ejemplo, **Int32**).
+2. En la lista junto a la **TypeName** propiedad, elija el tipo de datos adecuado (por ejemplo, **Int32**).
 
      Para obtener información sobre otros parámetros opcionales, vea [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-an-entity"></a>Para definir una entidad
 
-1.  En el **propiedades** ventana, establezca el **nombre** propiedad a un nombre que describa la entidad (por ejemplo: **Póngase en contacto con**).
+1. En el **propiedades** ventana, establezca el **nombre** propiedad a un nombre que describa la entidad (por ejemplo: **Póngase en contacto con**).
 
-2.  Establecer el **TypeName** propiedad en el nombre completo del tipo que representa la entidad. Este tipo puede ser una clase del proyecto, un tipo definido en un ensamblado al que se hace referencia en la solución o un tipo definido en el modelo de objetos de BDC.
+2. Establecer el **TypeName** propiedad en el nombre completo del tipo que representa la entidad. Este tipo puede ser una clase del proyecto, un tipo definido en un ensamblado al que se hace referencia en la solución o un tipo definido en el modelo de objetos de BDC.
 
-    -   Para una clase en el proyecto, elija la flecha abajo junto a la **TypeName** propiedad, elija el **proyecto actual** ficha en el cuadro de diálogo que aparece y, a continuación, elija la clase en el proyecto.
+    - Para una clase en el proyecto, elija la flecha abajo junto a la **TypeName** propiedad, elija el **proyecto actual** ficha en el cuadro de diálogo que aparece y, a continuación, elija la clase en el proyecto.
 
          El nombre completo incluye el espacio de nombres y el nombre de la clase seguidos del nombre del sistema LOB. En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a una clase en el proyecto.
 
          `MyBDCNamespace.BdcModel1.Contact, BdcModel1`
 
-    -   Si se trata de un tipo ubicado en un ensamblado de la solución, el nombre completo contiene el nombre del tipo, el nombre del ensamblado, el número de versión, la referencia cultural y el token de clave pública.
+    - Si se trata de un tipo ubicado en un ensamblado de la solución, el nombre completo contiene el nombre del tipo, el nombre del ensamblado, el número de versión, la referencia cultural y el token de clave pública.
 
          En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a un tipo definido en un ensamblado que se hace referencia en la solución.
 
          `MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
-    -   Si se trata de un tipo definido en el modelo de objetos de BDC, el nombre completo incluye el espacio de nombres y el nombre del tipo.
+    - Si se trata de un tipo definido en el modelo de objetos de BDC, el nombre completo incluye el espacio de nombres y el nombre del tipo.
 
          En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a un tipo en el modelo de objetos BDC.
 
          `Microsoft.BusinessData.Runtime.DynamicType`
 
-3.  En el **detalles del método de BDC** , abra la lista que aparece en el descriptor de tipo y, a continuación, elija **editar**.
+3. En el **detalles del método de BDC** , abra la lista que aparece en el descriptor de tipo y, a continuación, elija **editar**.
 
      El **Explorador de BDC** abre la ventana.
 
-4.  En el **Explorador de BDC**, abra el menú contextual del descriptor de tipo y, a continuación, elija **agregar Descriptor de tipo**.
+4. En el **Explorador de BDC**, abra el menú contextual del descriptor de tipo y, a continuación, elija **agregar Descriptor de tipo**.
 
      Un nuevo descriptor de tipo se agrega como elemento secundario al descriptor de tipo de entidad. Configure este descriptor de tipo como un campo.
 
-5.  Repita el paso 4 para agregar un descriptor de tipo secundario en cada campo de la entidad.
+5. Repita el paso 4 para agregar un descriptor de tipo secundario en cada campo de la entidad.
 
 ### <a name="to-define-a-collection-of-entities"></a>Para definir una colección de entidades
 

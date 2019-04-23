@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f94442e89cee6a615497376ad7baa9c85b7797
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063548"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Asociar un área de formulario a una clase de mensaje de Outlook
   Puede especificar qué elementos de Microsoft Office Outlook muestran un área de formulario al asociar el área de formulario con la clase de mensaje de cada elemento. Por ejemplo, si desea anexar un área de formulario a la parte inferior de un elemento de correo, puede asociar el área de formulario con el `IPM.Note` message (clase).
@@ -50,9 +50,9 @@ ms.locfileid: "56625535"
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Asociar un área de formulario a una clase de mensaje de Outlook
  Hay dos formas de asociar un área de formulario a una clase de mensaje:
 
--   Use la **nueva área de formulario de Outlook** asistente.
+- Use la **nueva área de formulario de Outlook** asistente.
 
--   Aplicar atributos de clase.
+- Aplicar atributos de clase.
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Use el Asistente para la nueva área de formulario de Outlook
  En la página final de la **nueva área de formulario de Outlook** asistente, puede seleccionar las clases de mensaje estándar y escriba los nombres de clases de mensaje personalizadas que desee asociar al área de formulario.

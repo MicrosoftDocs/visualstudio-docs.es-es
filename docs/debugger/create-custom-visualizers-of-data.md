@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6342b571d1116d4a67e5ae01268c636ffbba6722
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048955"
 ---
 # <a name="create-custom-data-visualizers"></a>Creación de visualizadores de datos personalizados
  Un *visualizador* forma parte de la [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfaz de usuario del depurador que muestra una variable o un objeto de forma adecuada según su tipo de datos. Por ejemplo, un visualizador HTML interpreta una cadena HTML y muestra el resultado tal como aparecería en una ventana del explorador. Un visualizador de mapa de bits interpreta una estructura de mapa de bits y muestra el gráfico que representa. Algunos visualizadores permiten modificar así como ver los datos.
@@ -58,33 +58,33 @@ Puede escribir un visualizador para un tipo genérico solo si el tipo es un tipo
 
 Los visualizadores personalizados pueden tener consideraciones de seguridad. Consulte [consideraciones de seguridad del visualizador](../debugger/visualizer-security-considerations.md).
 
-Los pasos siguientes ofrecen una descripción general de creación de visualizador. Para obtener instrucciones detalladas, consulte [Tutorial: escribir un visualizador en C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) o [Tutorial: escribir un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).
+Los pasos siguientes ofrecen una descripción general de creación de visualizador. Para obtener instrucciones detalladas, consulte [Tutorial: Escribir un visualizador en C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) o [Tutorial: Escribir un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).
 
 ### <a name="to-create-the-debugger-side"></a>Para crear el lado depurador
 
 Para crear la interfaz de usuario del visualizador en el lado depurador, crea una clase que hereda de <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>e invalidar la <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> método para mostrar la interfaz. Puede usar <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> para mostrar Windows forms, cuadros de diálogo y controles en el visualizador.
 
-1.  Utilice los métodos <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> para obtener el objeto visualizado en el lado depurador.
+1. Utilice los métodos <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> para obtener el objeto visualizado en el lado depurador.
 
-1.  Cree una clase que herede de <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.
+1. Cree una clase que herede de <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.
 
-1.  Reemplace el método <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> para mostrar su interfaz. Use <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> métodos para mostrar Windows forms, cuadros de diálogo y controles en la interfaz.
+1. Reemplace el método <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> para mostrar su interfaz. Use <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> métodos para mostrar Windows forms, cuadros de diálogo y controles en la interfaz.
 
-4.  Aplicar <xref:System.Diagnostics.DebuggerVisualizerAttribute>, dándole un visualizador para mostrar (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
+4. Aplicar <xref:System.Diagnostics.DebuggerVisualizerAttribute>, dándole un visualizador para mostrar (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
 
 ### <a name="to-create-the-debuggee-side"></a>Para crear el lado depurado
 
 Especificar el código del lado depurado mediante el <xref:System.Diagnostics.DebuggerVisualizerAttribute>.
 
-1.  Aplique <xref:System.Diagnostics.DebuggerVisualizerAttribute>, dándole un visualizador (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) y un origen de objeto (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Si se omite el origen del objeto, el visualizador utilizará un origen de objeto predeterminado.
+1. Aplique <xref:System.Diagnostics.DebuggerVisualizerAttribute>, dándole un visualizador (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) y un origen de objeto (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Si se omite el origen del objeto, el visualizador utilizará un origen de objeto predeterminado.
 
-1.  Para permitir que el visualizador de editar, así como mostrar objetos de datos, reemplace el `TransferData` o `CreateReplacementObject` métodos desde <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
+1. Para permitir que el visualizador de editar, así como mostrar objetos de datos, reemplace el `TransferData` o `CreateReplacementObject` métodos desde <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
 
 ## <a name="see-also"></a>Vea también
 
 - [Tutorial: Escritura de un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Tutorial: Escritura de un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md)
-- [Prueba y depuración de un visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)
+- [Cómo: Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md)
+- [Cómo: Prueba y depuración de un visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)
 - [Referencia de la API del visualizador](../debugger/visualizer-api-reference.md)
 - [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

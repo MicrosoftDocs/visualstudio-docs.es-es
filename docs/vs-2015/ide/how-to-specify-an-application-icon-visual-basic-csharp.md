@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especificar un icono de aplicación (Visual Basic, C#) | Microsoft Docs
+title: Procedimiento Especificar un icono de aplicación (Visual Basic, C#) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b10434f92a5d310d2f53c4a1c1ff7ab3a84bc1ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045785"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Cómo: Especificar el icono de una aplicación (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedimiento Especificar un icono de aplicación (Visual Basic, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La propiedad `Icon` de un proyecto especifica el archivo de icono (.ico) que se mostrará para la aplicación compilada en el Explorador de archivos y en la barra de tareas de Windows.  
@@ -32,13 +32,13 @@ La propiedad `Icon` de un proyecto especifica el archivo de icono (.ico) que se 
   
 ### <a name="to-specify-an-application-icon"></a>Para especificar el icono de una aplicación  
   
-1.  En el **Explorador de soluciones**, elija el nodo de proyecto (no el nodo **Solución**).  
+1. En el **Explorador de soluciones**, elija el nodo de proyecto (no el nodo **Solución**).  
   
-2.  En la barra de menús, seleccione **Proyecto**, **Propiedades**.  
+2. En la barra de menús, seleccione **Proyecto**, **Propiedades**.  
   
-3.  Cuando aparezca **Diseñador de proyectos**, elija la pestaña **Aplicación**.  
+3. Cuando aparezca **Diseñador de proyectos**, elija la pestaña **Aplicación**.  
   
-4.  **(Visual Basic)** En la lista **Icono**, elija un archivo de icono (.ico).  
+4. **(Visual Basic)** En la lista **Icono**, elija un archivo de icono (.ico).  
   
      **C#** Cerca de la lista **Icono**, elija el botón **\<Examinar... >** y, después, vaya a la ubicación del archivo de icono que quiere.  
   

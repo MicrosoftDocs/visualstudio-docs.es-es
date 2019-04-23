@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066356"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implementar componentes COM con ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
   
  Hay dos maneras que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementa los componentes COM:  
   
--   Usar al programa previo para implementar los componentes COM; Esto funciona en todas las plataformas compatibles.  
+- Usar al programa previo para implementar los componentes COM; Esto funciona en todas las plataformas compatibles.  
   
--   Utilice la implementación de aislamiento (también conocido como COM sin registro) de componente nativo. Sin embargo, esto solo funcionará en un Windows XP o en un sistema operativo posterior.  
+- Utilice la implementación de aislamiento (también conocido como COM sin registro) de componente nativo. Sin embargo, esto solo funcionará en un Windows XP o en un sistema operativo posterior.  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Ejemplo de aislamiento e implementación de un componente COM sencillo  
  Para demostrar la implementación de componentes COM sin registro, en este ejemplo creará una aplicación basada en Windows en Visual Basic que hace referencia a un componente COM nativo aislado creado con Visual Basic 6.0 e implementarla mediante [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
@@ -60,16 +60,16 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
   
 ##### <a name="to-create-a-native-com-component"></a>Para crear un componente COM nativo  
   
-1.  Con Visual Basic 6.0, desde el **archivo** menú, haga clic en **New**, a continuación, **proyecto**.  
+1. Con Visual Basic 6.0, desde el **archivo** menú, haga clic en **New**, a continuación, **proyecto**.  
   
-2.  En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione un **DLL ActiveX** proyecto. En el cuadro **Nombre** , escriba `VB6Hello`.  
+2. En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione un **DLL ActiveX** proyecto. En el cuadro **Nombre**, escriba `VB6Hello`.  
   
     > [!NOTE]
     >  Solo los tipos de proyecto DLL de ActiveX y controles ActiveX son compatibles con COM sin registro; No se admiten los tipos de proyecto EXE de ActiveX y documento ActiveX.  
   
-3.  En **el Explorador de soluciones**, haga doble clic en **Class1.vb** para abrir el editor de texto.  
+3. En **el Explorador de soluciones**, haga doble clic en **Class1.vb** para abrir el editor de texto.  
   
-4.  En Class1.vb, agregue el código siguiente después del código generado para el `New` método:  
+4. En Class1.vb, agregue el código siguiente después del código generado para el `New` método:  
   
     ```  
     Public Sub SayHello()  
@@ -77,7 +77,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
     End Sub  
     ```  
   
-5.  Genere el componente. Desde el **compilar** menú, haga clic en **compilar solución**.  
+5. Genere el componente. Desde el **compilar** menú, haga clic en **compilar solución**.  
   
 > [!NOTE]
 >  COM sin registro admite solo los archivos DLL y COM controla los tipos de proyecto. No se puede usar a archivos exe con COM sin registro.  
@@ -88,7 +88,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
   
 1. Con Visual Basic, desde el **archivo** menú, haga clic en **New**, a continuación, **proyecto**.  
   
-2. En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione **aplicación Windows**. En el cuadro **Nombre** , escriba `RegFreeComDemo`.  
+2. En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione **aplicación Windows**. En el cuadro **Nombre**, escriba `RegFreeComDemo`.  
   
 3. En **el Explorador de soluciones**, haga clic en el **mostrar todos los archivos** botón para mostrar las referencias del proyecto.  
   

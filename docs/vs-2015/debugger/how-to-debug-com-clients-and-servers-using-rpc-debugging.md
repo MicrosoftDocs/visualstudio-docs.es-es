@@ -1,5 +1,5 @@
 ---
-title: Filtrar Depurar clientes y servidores mediante la depuración RPC COM | Documentos de Microsoft
+title: Procedimiento Depurar clientes y servidores mediante la depuración RPC COM | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,27 +26,27 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1235abfc6e8a2c384b02fd1d48a859063c058d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b40e7814fb809298c71d0078e644c12bd5a9a9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988861"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064965"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Filtrar Depurar clientes y servidores COM mediante la depuración RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procedimiento Depurar clientes y servidores COM mediante la depuración RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede utilizar la depuración RPC (llamada a procedimiento remoto) para depurar aplicaciones COM cliente-servidor. Debe habilitar la depuración RPC para poder utilizarla. Con la depuración RPC habilitada, cuando entra en la llamada al servidor desde el cliente, el depurador se adjunta al servidor y le permite depurar el código. Una vez asociado el depurador, podrá utilizar todas sus características con los procesos del servidor y del cliente.  
   
 ### <a name="to-enable-rpc-debugging"></a>Para habilitar la depuración RPC  
   
-1.  En el menú **Herramientas** , haga clic en **Opciones**.  
+1. En el menú **Herramientas** , haga clic en **Opciones**.  
   
-2.  En el cuadro de diálogo **Opciones**, haga clic en la carpeta **Depuración**.  
+2. En el cuadro de diálogo **Opciones**, haga clic en la carpeta **Depuración**.  
   
-3.  Haga clic en la página **Nativo**.  
+3. Haga clic en la página **Nativo**.  
   
-4.  Active la casilla **Depuración RPC**.  
+4. Active la casilla **Depuración RPC**.  
   
     > [!NOTE]
     >  Para depurar las llamadas RPC, debe tener privilegios de Administrador o Usuario avanzado.  
