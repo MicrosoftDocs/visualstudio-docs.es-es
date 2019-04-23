@@ -19,17 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48daf4c649b5aefe67f0a7ce715a5272285883e1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ea1411925c6858bceaea3e2e190ecb1a5f2c7f89
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798880"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662171"
 ---
 # <a name="delete-task"></a>Delete (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Elimina los archivos especificados.  
   
 ## <a name="parameters"></a>Parámetros  

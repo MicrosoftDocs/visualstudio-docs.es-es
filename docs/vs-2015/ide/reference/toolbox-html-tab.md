@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d688e737593ab4eaaeddfe0edcae57c99be4f8ad
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780429"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663734"
 ---
 # <a name="toolbox-html-tab"></a>Cuadro de herramientas, HTML (Pestaña)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La pestaña **HTML** del cuadro de herramientas proporciona componentes que resultan de gran utilidad en las páginas web y los formularios Web Forms. Para ver esta pestaña, abra primero un documento para editarlo en el Diseñador HTML. En el menú **Ver**, haga clic en **Cuadro de herramientas** y después haga clic en la pestaña **HTML** del cuadro de herramientas.  
   
  Para crear una instancia de una herramienta en la pestaña **HTML**, haga doble clic en la herramienta para agregarla al documento en el punto de inserción actual o seleccione la herramienta y arrástrela hasta la posición que quiera en la superficie de edición.  
@@ -55,7 +54,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- Para obtener más información, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxis declarativa del Control de servidor HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Cómo: crear secuencias de comandos y editar controladores de eventos](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [ Mapa de contenido de controles de botón de servidor Web](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, y <xref:System.Web.UI.WebControls.Button>.  
+ Para obtener más información, consulte [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: How to: Create Scripts and Edit Event Handlers](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (Creación de scripts y edición de controladores de eventos), [Button Web Server Controls Content Map](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf) (Asignación de contenido a los controles del servidor web de botón), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> y <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Reset)**  
  ![Captura de pantalla de HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -68,7 +67,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="Reset1" type="reset" value="Reset" name="Reset1">  
 ```  
   
- Para obtener más información, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxis declarativa del Control de servidor HtmlInputReset](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, y <xref:System.Web.UI.WebControls.Button>.  
+ Para obtener más información, consulte [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputReset](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton> y <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Submit)**  
  ![Captura de pantalla de HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
@@ -81,7 +80,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="Submit1" type="submit" value="Submit" name="Submit1">  
 ```  
   
- Para obtener más información, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxis declarativa del Control de servidor HtmlInputSubmit](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, y <xref:System.Web.UI.WebControls.Button>.  
+ Para obtener más información, consulte [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputSubmit](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton> y <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Text)**  
  ![Captura de pantalla de HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
@@ -94,7 +93,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="Text1" TYPE="text" value="Text Field" name="Text1">  
 ```  
   
- Para obtener más información, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxis declarativa del Control de servidor HtmlInputText](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [información general sobre el Control de servidor Web TextBox](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>, y <xref:System.Web.UI.WebControls.TextBox>.  
+ Para obtener más información, consulte [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputText](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [TextBox Web Server Control Overview](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f) (Información general del control del servidor web TextBox), <xref:System.Web.UI.HtmlControls.HtmlInputText> y <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
 >  Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -110,7 +109,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="File1" type="file" name="File1">  
 ```  
   
- Para obtener más información, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxis declarativa del Control de servidor HtmlInputFile](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6), y <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
+ Para obtener más información, consulte [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputFile](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6) y <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
 >  Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -142,7 +141,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="Checkbox1" type="checkbox" name="Checkbox1">   
 ```  
   
- Para obtener más información, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxis declarativa del Control de servidor HtmlInputCheckBox](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [CheckBox y CheckBoxList Web Server Controls Overview](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, y <xref:System.Web.UI.WebControls.CheckBox>.  
+ Para obtener más información, consulte [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputCheckBox](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [CheckBox and CheckBoxList Web Server Controls Overview](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf) (Información general de los controles de servidor web CheckBox y CheckBoxList), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> y <xref:System.Web.UI.WebControls.CheckBox>.  
   
  **Input (Radio)**  
  ![Captura de pantalla de VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "vxRadio")  
@@ -155,7 +154,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="Radio1" type="radio" name="Radio1">  
 ```  
   
- Para obtener más información, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxis declarativa del Control de servidor HtmlInputRadioButton](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), [RadioButton y RadioButtonList Web Server Controls Overview](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, y <xref:System.Web.UI.WebControls.RadioButton>.  
+ Para obtener más información, consulte [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputRadioButton](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), [CheckBox and CheckBoxList Web Server Controls Overview](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747) (Información general de los controles de servidor web RadioButton y RadioButtonList), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> y <xref:System.Web.UI.WebControls.RadioButton>.  
   
  **Input (Hidden)**  
  ![Elemento oculto de página HTML](../../ide/reference/media/vxhidden.gif "vxhidden")  
@@ -168,7 +167,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="Hidden1" type="hidden" name="Hidden1">   
 ```  
   
- Para obtener más información, consulte [controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintaxis declarativa del Control de servidor HtmlInputHidden](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9), y <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
+ Para obtener más información, consulte [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputHidden](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9) y <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
   
  **Textarea**  
  ![Área de texto de la barra de herramientas de la página HTML](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
@@ -181,7 +180,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>   
 ```  
   
- Para obtener más información, consulte [sintaxis declarativa del Control de servidor HtmlTextArea](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>, y <xref:System.Web.UI.WebControls.TextBox>.  
+ Para obtener más información, consulte [Sintaxis declarativa del control de servidor HtmlTextArea](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea> y <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
 >  Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -197,7 +196,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>   
 ```  
   
- Para obtener más información, consulte [sintaxis declarativa del Control de servidor HtmlTable](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Table, TableRow y TableCell Web Server Control Overview](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable>, y <xref:System.Web.UI.WebControls.Table>.  
+ Para obtener más información, consulte [Sintaxis declarativa del control de servidor HtmlTable](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Table, TableRow, and TableCell Web Server Control Overview](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a) (Información general sobre los controles de servidor web Table, TableRow y TableCell), <xref:System.Web.UI.HtmlControls.HtmlTable> y <xref:System.Web.UI.WebControls.Table>.  
   
  **Image**  
  ![Elemento de imagen de página HTML](../../ide/reference/media/vximage.gif "vxImage")  
@@ -210,7 +209,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <img alt="" src="">  
 ```  
   
- Para obtener más información, consulte [sintaxis declarativa del Control de servidor HtmlImage](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [información general sobre el Control de servidor Web imagen](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, y <xref:System.Web.UI.WebControls.Image>.  
+ Para obtener más información, consulte [Sintaxis declarativa del control de servidor HtmlImage](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Image Web Server Control Overview](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9) (Información general del control de servidor web Image), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage> y <xref:System.Web.UI.WebControls.Image>.  
   
  **Seleccionar**  
  ![Cuadro de herramientas desplegable de la página HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
@@ -225,7 +224,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
   
  Para crear un elemento `select` multilínea, aumente el valor de la propiedad Size.  
   
- Para obtener más información, consulte [sintaxis declarativa del Control de servidor HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Cómo: crear secuencias de comandos y editar controladores de eventos](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [DropDownList Web Server Control Overview](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Información general sobre el Control de servidor Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, y <xref:System.Web.UI.WebControls.DropDownList>.  
+ Para obtener más información, consulte [Sintaxis declarativa del control de servidor HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: How to: Create Scripts and Edit Event Handlers](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (Creación de scripts y edición de controladores de eventos), [DropDownList Web Server Control Overview](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608) (Información general de control de servidor web DropDownList), [ListBox Web Server Control Overview](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97) (Información general de control de servidor web ListBox), <xref:System.Web.UI.HtmlControls.HtmlSelect> y <xref:System.Web.UI.WebControls.DropDownList>.  
   
  **Horizontal Rule**  
  ![Elemento de regla horizontal de página HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
@@ -251,7 +250,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>  
 ```  
   
- Para obtener más información, consulte [Div Control de HTML](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995), [información general sobre el Control de servidor Web Label](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac), y <xref:System.Web.UI.WebControls.Label>.  
+ Para obtener más información, consulte [HTML Div Control](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995) (Control de división HTML), [Label Web Server Control Overview](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac) (Información general del control de servidor web Label) y <xref:System.Web.UI.WebControls.Label>.  
   
 ## <a name="see-also"></a>Vea también  
  [Cuadro de herramientas](../../ide/reference/toolbox.md)   

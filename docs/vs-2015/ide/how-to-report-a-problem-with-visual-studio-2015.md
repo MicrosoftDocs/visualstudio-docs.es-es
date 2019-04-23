@@ -9,26 +9,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834444"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665147"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Cómo notificar un problema con Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [cómo notificar un problema en Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+Para obtener la documentación más reciente de Visual Studio, consulte [Cómo notificar un problema con Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
-Si se produce un problema con Visual Studio 2015, queremos saberlo para que podamos diagnosticarlo y corregirlo.  Mediante el uso de la herramienta **Notificar un problema** , puede recopilar información detallada acerca del problema y enviarla a Microsoft con unos pocos clics de botón.
+Si se produce un problema con Visual Studio 2015, queremos saberlo para poder diagnosticarlo y corregirlo.  Mediante el uso de la herramienta **Notificar un problema** , puede recopilar información detallada acerca del problema y enviarla a Microsoft con unos pocos clics de botón.
 
- Microsoft respeta su privacidad. Para obtener información sobre cómo se tratan los datos que nos envía, vea la [Declaración de privacidad de la familia de productos de Microsoft Visual Studio](https://www.visualstudio.com/dn948229).
+Microsoft respeta su privacidad. Para obtener información sobre cómo se tratan los datos que nos envía, vea la [Declaración de privacidad de la familia de productos de Microsoft Visual Studio](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Abrir la herramienta Notificar un problema
- Haga clic en el icono de comentarios del usuario junto a **Inicio rápido** en la barra de título o haga clic en **Ayuda &#124; Enviar comentarios &#124; Notificar un problema**.
 
- ![Elemento de menú Notificar un problema](../ide/media/report-a-problem-menu-item.png "Elemento de menú Notificar un problema")
+Haga clic en el icono de comentarios del usuario junto a **Inicio rápido** en la barra de título o bien haga clic en **Ayuda | Enviar comentarios | Notificar un problema**.
+
+![Elemento de menú Notificar un problema](../ide/media/report-a-problem-menu-item.png "Elemento de menú Notificar un problema")
 
 ## <a name="describe-the-problem"></a>Describir el problema
 
@@ -43,7 +44,8 @@ Si se produce un problema con Visual Studio 2015, queremos saberlo para que poda
    ![Cuadro de diálogo Notificar un problema](../ide/media/report-a-problem-dialog.png "Cuadro de diálogo Notificar un problema")
 
 ## <a name="provide-a-screenshot-optional"></a>Proporcione una captura de pantalla (opcional)
- Pulse **Incluir captura de pantalla** para enviar la pantalla actual a Microsoft. La herramienta le permite recortar la imagen para mostrar solo la parte de la pantalla que muestra el problema. Puede adjuntar capturas de pantalla adicionales u otros archivos. Para ello, haga clic en el botón **Adjuntar archivos adicionales**.
+
+Elija **Incluir captura de pantalla** para enviar la pantalla actual a Microsoft. La herramienta le permite recortar la imagen para mostrar solo la parte de la pantalla que muestra el problema. Puede adjuntar capturas de pantalla adicionales u otros archivos. Para ello, haga clic en el botón **Adjuntar archivos adicionales** .
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Proporcione un volcado de seguimiento y montón (opcional)
 
@@ -60,10 +62,13 @@ Si se produce un problema con Visual Studio 2015, queremos saberlo para que poda
      ![Registrar un archivo de seguimiento](../ide/media/record-a-trace-file.png "Registrar un archivo de seguimiento")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>Describir la solución alternativa, si la hay
- Si pudo solucionar el problema, describa la solución alternativa en el cuadro de edición proporcionado para ese fin. Esto nos ayuda no sólo a diagnosticar el problema, sino también a ayudar a otros usuarios que puedan encontrarse con el mismo problema.
+
+Si pudo solucionar el problema, describa la solución alternativa en el cuadro de edición proporcionado para ese fin. Esto nos ayuda no sólo a diagnosticar el problema, sino también a ayudar a otros usuarios que puedan encontrarse con el mismo problema.
 
 ## <a name="submit-the-report"></a>Enviar el informe
- Haga clic en el botón Enviar para enviar el informe junto con todas las imágenes y archivos de volcado o de seguimiento. Si el botón **Enviar** está atenuado, asegúrese de que ha proporcionado un título y una descripción.
+
+Haga clic en el botón Enviar para enviar el informe junto con todas las imágenes y archivos de volcado o de seguimiento. Si el botón **Enviar** está atenuado, asegúrese de que ha proporcionado un título y una descripción.
 
 ## <a name="see-also"></a>Vea también
- [Hable con nosotros](../ide/talk-to-us.md)
+
+- [Hable con nosotros](../ide/talk-to-us.md)

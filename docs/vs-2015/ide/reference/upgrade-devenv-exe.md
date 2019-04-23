@@ -13,17 +13,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 465c90736f5470f48d47336bc916ca3cb2c09b6a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b2ba3caf7931449e2c1657270838a45505fd5d92
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779351"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657290"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Actualiza el archivo de solución y todos sus archivos de proyecto, o el archivo de proyecto especificado, a los formatos actuales de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para estos archivos.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -44,7 +43,7 @@ devenv SolutionFile | ProjectFile /upgrade
   
  Se deben desproteger las soluciones o los proyectos bajo el control de código fuente antes de poderse actualizar.  
   
- Al utilizar el modificador `/upgrade` no se inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Los resultados de la actualización se pueden ver en el informe de actualización para el lenguaje de desarrollo de la solución o el proyecto. No se devuelve ninguna información de error o de uso. Para obtener más información sobre cómo actualizar proyectos en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], consulte [Cómo: solucionar problemas de incorrecta Visual Studio actualizaciones de proyecto](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
+ Al utilizar el modificador `/upgrade` no se inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Los resultados de la actualización se pueden ver en el informe de actualización para el lenguaje de desarrollo de la solución o el proyecto. No se devuelve ninguna información de error o de uso. Para obtener más información sobre cómo actualizar proyectos en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], vea [Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se actualiza un archivo de solución denominado "MyProject.sln" en la carpeta predeterminada para las soluciones de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
