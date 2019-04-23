@@ -1,5 +1,5 @@
 ---
-title: Filtrar Usar GetGlobalService | Microsoft Docs
+title: Procedimiento Usar GetGlobalService | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: 0161b3e44b44567166a337d94101778074561e80
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 1c1fb48e4bb354ef403b39b0f1320ead92f43967
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58995187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054372"
 ---
-# <a name="how-to-use-getglobalservice"></a>Filtrar Usar GetGlobalService
+# <a name="how-to-use-getglobalservice"></a>Procedimiento Usar GetGlobalService
 A veces es posible que necesita obtener un servicio de una ventana de herramientas o control contenedor que no se ha ubicado, o bien que se ha ubicado con un proveedor de servicios que no conoce el servicio que desee. Por ejemplo, puede escribir en el registro de actividad desde dentro de un control. Para obtener más información sobre estos y otros escenarios, consulte [Cómo: Solucionar problemas de servicios](../extensibility/how-to-troubleshoot-services.md).  
   
  Puede obtener la mayoría [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] servicios mediante una llamada a estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> método.  
@@ -25,15 +25,15 @@ A veces es posible que necesita obtener un servicio de una ventana de herramient
   
  Afortunadamente, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> funciona correctamente la mayoría del tiempo.  
   
--   Si un paquete VSPackage proporciona un servicio conocido solo a otro VSPackage, se basa en un VSPackage que solicita el servicio antes de VSPackage que proporciona que el servicio está cargado.  
+- Si un paquete VSPackage proporciona un servicio conocido solo a otro VSPackage, se basa en un VSPackage que solicita el servicio antes de VSPackage que proporciona que el servicio está cargado.  
   
--   Si una ventana de herramientas se crea un VSPackage, el VSPackage está situado antes de crea la ventana de herramientas.  
+- Si una ventana de herramientas se crea un VSPackage, el VSPackage está situado antes de crea la ventana de herramientas.  
   
--   Si un contenedor de control se hospeda en una ventana de herramienta creada por un VSPackage, el VSPackage está situado antes de crea el contenedor del control.  
+- Si un contenedor de control se hospeda en una ventana de herramienta creada por un VSPackage, el VSPackage está situado antes de crea el contenedor del control.  
   
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Para obtener un servicio desde dentro de un contenedor de control o ventana de herramienta  
   
--   Inserte este código en el constructor, la ventana de herramientas o el contenedor de controles:  
+- Inserte este código en el constructor, la ventana de herramientas o el contenedor de controles:  
   
      [!code-csharp[UseGetGlobalService#1](../snippets/csharp/VS_Snippets_VSSDK/usegetglobalservice/cs/getglobalservicepackage.cs#1)]
      [!code-vb[UseGetGlobalService#1](../snippets/visualbasic/VS_Snippets_VSSDK/usegetglobalservice/vb/getglobalservicepackage.vb#1)]  
