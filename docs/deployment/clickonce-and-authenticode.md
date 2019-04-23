@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 329f5c801fabce5f47e915fe54a885a98dda8500
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089593"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce y Authenticode
 *Authenticode* es una tecnología de Microsoft que usa una criptografía estándar del sector para firmar el código de una aplicación con certificados digitales que comprueban la autenticidad del publicador de la aplicación. Gracias al uso de Authenticode para la implementación de aplicaciones, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] reduce el riesgo de recibir un caballo de Troya. Un caballo de Troya es un virus u otro programa dañino creado por un tercero malintencionado y que aparenta ser un programa legítimo procedente de una fuente verificada y de confianza. La firma de implementaciones de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un certificado digital es un paso opcional para comprobar que los ensamblados y los archivos no se han alterado.
@@ -44,7 +44,7 @@ ms.locfileid: "56631541"
 - Generar su propio certificado mediante el cmdlet New-SelfSignedCertificate de PowerShell o mediante *MakeCert.exe*, que se incluye con el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
 
 ### <a name="how-using-certificate-authorities-helps-users"></a>Cómo ayuda a los usuarios el uso de entidades de certificación
- Un certificado generado mediante New-SelfSignedCertificate o *MakeCert.exe* utilidad se suele denominar una *SelfCert* o un *certificado de prueba*. Este tipo de certificado funciona igual que un archivo *.snk* en .NET Framework. Consta solo de un par de claves criptográficas pública y privada y no contiene información comprobable del publicador. Puede usar los certificados SelfCert para implementar aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] de gran confianza en una intranet. Pero cuando estas aplicaciones se ejecutan en un equipo cliente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las identificará como procedentes de un editor desconocido. De forma predeterminada, las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmadas con SelfCert e implementadas a través de Internet no pueden usar la implementación de aplicaciones de confianza.
+ Un certificado generado mediante New-SelfSignedCertificate o *MakeCert.exe* utilidad se suele denominar una *SelfCert* o un *certificado de prueba*. Este tipo de certificado funciona prácticamente igual que un *.snk* archivo funciona en .NET Framework. Consta solo de un par de claves criptográficas pública y privada y no contiene información comprobable del publicador. Puede usar los certificados SelfCert para implementar aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] de gran confianza en una intranet. Pero cuando estas aplicaciones se ejecutan en un equipo cliente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las identificará como procedentes de un editor desconocido. De forma predeterminada, las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmadas con SelfCert e implementadas a través de Internet no pueden usar la implementación de aplicaciones de confianza.
 
  Por el contrario, si recibe un certificado de una entidad de certificación (CA), como un proveedor de certificados o un departamento de su empresa, el certificado ofrece más seguridad a los usuarios. No solo identifica al publicador del software firmado, sino que verifica esa identidad comprobando la CA que lo firmó. Si la CA no es la entidad de certificación raíz, Authenticode también se volverá a “encadenar” a la entidad de certificación raíz para comprobar que la CA tiene autorización para emitir certificados. Para lograr una mayor seguridad, siempre que pueda debe usar un certificado emitido por una CA.
 
@@ -53,16 +53,16 @@ ms.locfileid: "56631541"
 ### <a name="timestamps"></a>Marcas de tiempo
  Los certificados usados para firmar aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] caducan una vez transcurrido un período determinado, que suele ser de doce meses. Para no tener que volver a firmar constantemente las aplicaciones con certificados nuevos, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] admite las marcas de tiempo. Al firmar una aplicación con una marca de tiempo, su certificado se seguirá aceptando incluso cuando haya caducado, siempre y cuando la marca de tiempo sea válida. De esta forma, las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que tengan certificados caducados y marcas de tiempo válidas se podrán descargar y ejecutar. Asimismo, las aplicaciones instaladas con certificados caducados podrán seguir descargando e instalando actualizaciones.
 
- Para incluir una marca de tiempo en un servidor de aplicaciones, debe haber disponible un servidor de marca de tiempo. Para obtener información sobre cómo seleccionar un servidor de marca de tiempo, consulte [How to: Sign Application and Deployment Manifests](../ide/how-to-sign-application-and-deployment-manifests.md).
+ Para incluir una marca de tiempo en un servidor de aplicaciones, debe haber disponible un servidor de marca de tiempo. Para obtener información sobre cómo seleccionar un servidor de marca de tiempo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../ide/how-to-sign-application-and-deployment-manifests.md).
 
 ### <a name="update-expired-certificates"></a>Actualizar certificados expirados
  En las versiones anteriores de .NET Framework, la actualización de una aplicación cuyo certificado ha expirado podía hacer que la aplicación dejara de funcionar. Para resolver este problema, use uno de los métodos siguientes:
 
--   Actualice .NET Framework a la versión 2.0 SP1 o a una versión posterior en Windows XP, o a la versión 3.5 o posterior en Windows Vista.
+- Actualice .NET Framework a la versión 2.0 SP1 o a una versión posterior en Windows XP, o a la versión 3.5 o posterior en Windows Vista.
 
--   Desinstale la aplicación e instale una versión nueva con un certificado válido.
+- Desinstale la aplicación e instale una versión nueva con un certificado válido.
 
--   Cree un ensamblado de línea de comandos que actualice el certificado. En el [artículo de soporte técnico de Microsoft 925521](http://go.microsoft.com/fwlink/?LinkId=179454)encontrará información detallada sobre este proceso.
+- Cree un ensamblado de línea de comandos que actualice el certificado. En el [artículo de soporte técnico de Microsoft 925521](http://go.microsoft.com/fwlink/?LinkId=179454)encontrará información detallada sobre este proceso.
 
 ### <a name="store-certificates"></a>Certificados de Store
 

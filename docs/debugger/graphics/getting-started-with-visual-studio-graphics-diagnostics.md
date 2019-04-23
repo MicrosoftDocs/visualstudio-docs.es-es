@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c77b95b05409adf7c5e4c9a81136ca9143cec03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: f7d74b90fc0bcbe67b13cffadb2793bc15213b9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688061"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094143"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Introducción al Diagnóstico de gráficos de Visual Studio
 En esta sección se explicará cómo usar el diagnóstico de gráficos por primera vez, se capturarán fotogramas en una aplicación de Direct3D y se examinarán esos fotogramas en el Analizador de gráficos.
@@ -28,7 +28,7 @@ En esta sección se explicará cómo usar el diagnóstico de gráficos por prime
 
  Para obtener información sobre cómo instalar las herramientas de gráficos, vea la sección [Instalación de las herramientas de gráficos para Windows 10](#InstallGraphicsTools).
 
-##  <a name="InstallGraphicsTools"></a> Instalación de las herramientas de gráficos para Windows 10
+## <a name="InstallGraphicsTools"></a> Instalación de las herramientas de gráficos para Windows 10
  En Windows 10, la infraestructura de diagnóstico de gráficos proporciona una característica opcional de Windows denominada *Herramientas de gráficos*. Esta característica es necesaria para capturar y reproducir información de gráficos en Windows 10 independientemente de si la aplicación capturada tiene como destino una versión anterior de Windows o de la versión de Direct3D que se use. Puede instalar previamente la característica de herramientas de gráficos o esperar e instalarla cuando se le solicite la primera vez que inicie una sesión de diagnóstico de gráficos desde Visual Studio.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Para instalar las herramientas de gráficos para Windows 10
@@ -70,7 +70,7 @@ En esta sección se explicará cómo usar el diagnóstico de gráficos por prime
 
 #### <a name="to-capture-single-frames"></a>Para capturar fotogramas individuales
 
--   En Visual Studio, elija el botón **Capturar fotograma** en la barra de herramientas de gráficos o la ventana de sesión de diagnóstico. O bien, si la aplicación tiene el foco, simplemente presione el **Impr Pant** en el teclado.
+- En Visual Studio, elija el botón **Capturar fotograma** en la barra de herramientas de gráficos o la ventana de sesión de diagnóstico. O bien, si la aplicación tiene el foco, simplemente presione el **Impr Pant** en el teclado.
 
 #### <a name="to-capture-a-sequence-of-frames"></a>Para capturar una secuencia de fotogramas
 

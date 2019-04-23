@@ -13,12 +13,12 @@ ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 73dd2fc2fade7ab779a434920846d624f9777467
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42f901fa31b3b682c7e19c98f5707adb3b4fb3f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093922"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 |SCC_I_OPERATIONCANCELED|Detener el procesamiento.|  
 |SCC_E_xxx|Cualquier error de SCC apropiado debería detener el procesamiento.|  
   
-##  <a name="LinkQUERYCHANGESDATA"></a> Estructura QUERYCHANGESDATA  
+## <a name="LinkQUERYCHANGESDATA"></a> Estructura QUERYCHANGESDATA  
  La estructura pasada en cada archivo tiene el siguiente aspecto:  
   
 ```cpp#  

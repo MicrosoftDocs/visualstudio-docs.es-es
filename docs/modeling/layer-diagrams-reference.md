@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1e592b6d5da908b71aa5af9bae7afe495944301a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093493"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependencia: referencia
 
@@ -40,13 +40,13 @@ Se pueden especificar las dependencias planeadas o existentes entre las capas. E
 
 Usar un diagrama de dependencia para ayudarle a realizar las siguientes tareas:
 
--   Comunicar la arquitectura lógica existente o planeada del sistema.
+- Comunicar la arquitectura lógica existente o planeada del sistema.
 
--   Detectar conflictos entre el código existente y la arquitectura planeada.
+- Detectar conflictos entre el código existente y la arquitectura planeada.
 
--   Visualizar el impacto de los cambios en la arquitectura planeada al refactorizar, actualizar o desarrollar el sistema.
+- Visualizar el impacto de los cambios en la arquitectura planeada al refactorizar, actualizar o desarrollar el sistema.
 
--   Reforzar la arquitectura planeada durante el desarrollo y el mantenimiento del código incluyendo la validación en las operaciones de protección y compilación.
+- Reforzar la arquitectura planeada durante el desarrollo y el mantenimiento del código incluyendo la validación en las operaciones de protección y compilación.
 
 En este tema se describe los elementos que puede usar en un diagrama de dependencia. Para obtener más información acerca de cómo crear y dibujar diagramas de dependencia, vea [diagramas de dependencia: Directrices](../modeling/layer-diagrams-guidelines.md). Para obtener más información sobre los patrones de capas, visite la [sitio Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
 
@@ -66,19 +66,19 @@ En la tabla siguiente describe los elementos que puede usar en un diagrama de de
 
 ## <a name="Explorer"></a> Explorador de capas
 
-Puede vincular cada capa a artefactos de la solución, como proyectos, clases, espacios de nombres, archivos de proyecto y otros elementos del software. El número de una capa muestra el número de artefactos vinculados a ella. Sin embargo, cuando lea el número de artefactos de una capa, recuerde lo siguiente:
+Puede vincular cada capa a artefactos de la solución, como proyectos, clases, espacios de nombres, archivos de proyecto y otros elementos del software. El número de una capa muestra la cantidad de artefactos vinculados a ella. Sin embargo, cuando lea el número de artefactos de una capa, recuerde lo siguiente:
 
--   Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.
+- Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.
 
      Por ejemplo, si una capa está vinculada a un solo espacio de nombres, el número de artefactos vinculados es 1, aunque el espacio de nombres contenga clases. Si la capa tiene también vínculos a cada clase del espacio de nombres, el número incluirá las clases vinculadas.
 
--   Si una capa contiene otras que están vinculadas a artefactos, la capa contenedora también está vinculada a esos artefactos, incluso aunque el número de la capa contenedora no los incluya.
+- Si una capa contiene otras que están vinculadas a artefactos, la capa contenedora también está vinculada a esos artefactos, incluso aunque el número de la capa contenedora no los incluya.
 
 Para obtener más información sobre cómo vincular capas y artefactos, vea:
 
--   [Diagramas de dependencia: Directrices](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)
 
--   [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
+- [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
 
 ### <a name="examine-the-linked-artifacts"></a>Examinar los artefactos vinculados
 

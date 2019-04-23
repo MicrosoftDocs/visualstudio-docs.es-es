@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988571"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116789"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Depurar aplicaciones de ASP.NET y AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Depurar las aplicaciones web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] es similar a depurar un Windows Form o cualquier otra aplicación para Windows porque ambos tipos de aplicación implican controles y eventos. No obstante, hay también diferencias básicas entre ambos tipos de aplicación:  
   
--   El seguimiento del estado es más complejo en una aplicación Web.  
+- El seguimiento del estado es más complejo en una aplicación Web.  
   
--   En una aplicación para Windows, el código que se va a depurar está principalmente en una única ubicación; en una aplicación web, el código puede estar en el cliente y en el servidor. Mientras que el código [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se encuentra por completo en el servidor, también podría haber código de JavaScript o de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] en el cliente.  
+- En una aplicación para Windows, el código que se va a depurar está principalmente en una única ubicación; en una aplicación web, el código puede estar en el cliente y en el servidor. Mientras que el código [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se encuentra por completo en el servidor, también podría haber código de JavaScript o de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] en el cliente.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Preparar la depuración en ASP.NET](../debugger/preparing-to-debug-aspnet.md)  

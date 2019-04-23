@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a557691d06c41fc3d8919be10ff22038975686a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7a51487cd074229d3f2c5fc4074fd184b22170c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117478"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Recopilar estadísticas de rendimiento mediante el muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,18 +26,18 @@ De forma predeterminada, el método de muestreo de las herramientas de generaci�
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  Puede especificar el método de muestreo mediante uno de los procedimientos siguientes:  
   
--   En la primera página del Asistente de generación de perfiles, haga clic en **Muestreo de la CPU (recomendado)**.  
+- En la primera página del Asistente de generación de perfiles, haga clic en **Muestreo de la CPU (recomendado)**.  
   
--   En la barra de herramientas **Explorador de rendimiento**, en la lista **Método**, haga clic en **Muestreo**.  
+- En la barra de herramientas **Explorador de rendimiento**, en la lista **Método**, haga clic en **Muestreo**.  
   
--   En la página **General** del cuadro de diálogo de propiedades de la sesión de rendimiento, haga clic en **Muestreo**.  
+- En la página **General** del cuadro de diálogo de propiedades de la sesión de rendimiento, haga clic en **Muestreo**.  
   
 ## <a name="common-tasks"></a>Tareas comunes  
  Puede especificar opciones adicionales en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** de la sesión de rendimiento. Para abrir este cuadro de diálogo:  

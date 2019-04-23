@@ -1,5 +1,5 @@
 ---
-title: Filtrar Adjuntar a Script | Documentos de Microsoft
+title: Procedimiento Adjuntar a Script | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,14 +19,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76418913aa725a7858f292d625cb7584b62694e5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ab9388697b4f33b0c523a6239bda911e3ba47a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118258"
 ---
-# <a name="how-to-attach-to-script"></a>Filtrar Asociación a script
+# <a name="how-to-attach-to-script"></a>Procedimiento Asociación a script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se explica cómo asociar manualmente el depurador de Visual Studio a un archivo de script para el proceso de depuración.  
@@ -37,21 +37,21 @@ En este tema se explica cómo asociar manualmente el depurador de Visual Studio 
   
 2. En el cuadro de diálogo **Asociar al proceso**, examine la lista **Procesos disponibles** y busque el proceso de script al que desea asociar. Puede identificar los procesos de script examinando la columna **Tipo**.  
   
-   1.  Si el proceso que desea depurar se está ejecutando en otro equipo, primero deberá seleccionar el equipo remoto. Para obtener más información, vea [Cómo: seleccionar un equipo remoto](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1. Si el proceso que desea depurar se está ejecutando en otro equipo, primero deberá seleccionar el equipo remoto. Para obtener más información, vea [Cómo: seleccionar un equipo remoto](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
-   2.  Si el proceso se ejecuta con una cuenta de usuario diferente, active la casilla **Mostrar los procesos de todos los usuarios** .  
+   2. Si el proceso se ejecuta con una cuenta de usuario diferente, active la casilla **Mostrar los procesos de todos los usuarios** .  
   
-   3.  Si está conectado a través de **Conexión a Escritorio remoto**, active la casilla **Mostrar los procesos de todas las sesiones**.  
+   3. Si está conectado a través de **Conexión a Escritorio remoto**, active la casilla **Mostrar los procesos de todas las sesiones**.  
   
 3. Haga clic en el proceso al que desee asociar.  
   
 4. En el **adjuntar a** cuadro, debería ver **código de Script** o **automática: Código de script**. Si ve algo más, siga estos pasos:  
   
-   1.  Haga clic en **Seleccionar**.  
+   1. Haga clic en **Seleccionar**.  
   
-   2.  En el cuadro de diálogo **Seleccionar tipo de código**, haga clic en **Depurar estos tipos de código** y seleccione **Script**.  
+   2. En el cuadro de diálogo **Seleccionar tipo de código**, haga clic en **Depurar estos tipos de código** y seleccione **Script**.  
   
-   3.  Haga clic en **Aceptar**.  
+   3. Haga clic en **Aceptar**.  
   
 5. Haga clic en **Adjuntar**.  
   

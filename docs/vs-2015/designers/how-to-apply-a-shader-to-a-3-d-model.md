@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Aplicar un sombreador a un modelo 3D | Microsoft Docs
+title: Procedimiento Aplicar un sombreador a un modelo 3D | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793470"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094782"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Procedimiento Aplicar a un sombreador a un modelo 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ En este documento se muestra cómo usar el Editor de modelos para aplicar un som
   
  Este documento muestra esta actividad:  
   
--   Aplicar un sombreador a un modelo 3D  
+- Aplicar un sombreador a un modelo 3D  
   
 ## <a name="applying-a-shader-to-a-3-d-model"></a>Aplicar un sombreador a un modelo 3D  
  Puede aplicar un efecto de sombreador a un modelo 3D para darle un aspecto interesante.  
@@ -44,6 +44,6 @@ En este documento se muestra cómo usar el Editor de modelos para aplicar un som
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Crear un modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)   
- [Cómo: Crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md)   
+ [Cómo: Crear a un sombreador de Color básico](../designers/how-to-create-a-basic-color-shader.md)   
  [Editor de modelos](../designers/model-editor.md)   
  [Diseñador de sombras](../designers/shader-designer.md)

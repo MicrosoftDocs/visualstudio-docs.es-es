@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115996"
 ---
 # <a name="schema-cache"></a>Caché de esquema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,21 +109,21 @@ El Editor XML proporciona una caché de esquema que está ubicada en el director
 
 #### <a name="to-change-the-schema-cache-location"></a>Para cambiar la ubicación de la caché de esquema  
 
-1.  Desde el **herramientas** menú, seleccione **opciones**.  
+1. Desde el **herramientas** menú, seleccione **opciones**.  
 
-2.  Expanda **Editor de texto**, expanda **XML**y, a continuación, haga clic en **varios**.  
+2. Expanda **Editor de texto**, expanda **XML**y, a continuación, haga clic en **varios**.  
 
-3.  Haga clic en el **examinar** situado en la **esquemas** campo.  
+3. Haga clic en el **examinar** situado en la **esquemas** campo.  
 
-4.  Seleccione la carpeta para la caché de esquema y haga clic en **Aceptar**.  
+4. Seleccione la carpeta para la caché de esquema y haga clic en **Aceptar**.  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>Para agregar otro directorio de esquemas comunes  
 
-1.  Edite el archivo catalog.xml del directorio de la caché de esquema del Editor XML.  
+1. Edite el archivo catalog.xml del directorio de la caché de esquema del Editor XML.  
 
-2.  Agregue un nuevo elemento `<Catalog href="…"/>` que apunte al directorio de esquemas adicionales.  
+2. Agregue un nuevo elemento `<Catalog href="…"/>` que apunte al directorio de esquemas adicionales.  
 
-3.  Guarde los cambios.  
+3. Guarde los cambios.  
 
      El catálogo se recarga automáticamente.  
 

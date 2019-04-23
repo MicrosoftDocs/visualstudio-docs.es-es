@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 07f7c91c74961fa846abb70637f358de59d0eb94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117101"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generación de código en un proceso de compilación
 
@@ -28,7 +28,7 @@ Hay algunas diferencias en cuanto a lo que las tareas de compilación pueden hac
 
 Esto significa que no tiene acceso cosas como los nombres de archivo de proyecto de la misma manera cuando se compila una plantilla de texto en MSBuild. Sin embargo, puede [pasar información del entorno a las plantillas de texto y procesadores de directivas mediante el uso de parámetros de compilación](#parameters).
 
-##  <a name="buildserver"></a> Configurar las máquinas
+## <a name="buildserver"></a> Configurar las máquinas
 
 Para habilitar las tareas de compilación en el equipo de desarrollo, instale el SDK de modelado para Visual Studio.
 
@@ -133,7 +133,7 @@ Puede utilizar caracteres comodín en TransformFile:
 
 ## <a name="source-control"></a>Control de código fuente
 
-No hay ninguna integración específica con un sistema de control de código fuente. Sin embargo, puede agregar sus propias extensiones, por ejemplo para desproteger y proteger un archivo generado. De forma predeterminada, la tarea de transformación de texto evita sobrescribir un archivo marcado como solo lectura; cuando se encuentra un archivo de este tipo, se registra un error en la lista de errores de Visual Studio y se produce un error en la tarea.
+No hay ninguna integración específica con un sistema de control de código fuente. Sin embargo, puede agregar sus propias extensiones, por ejemplo para extraer e insertar en el repositorio un archivo generado. De forma predeterminada, la tarea de transformación de texto evita sobrescribir un archivo marcado como solo lectura; cuando se encuentra un archivo de este tipo, se registra un error en la lista de errores de Visual Studio y se produce un error en la tarea.
 
 Para especificar que los archivos de solo lectura se deben sobrescribir, inserte esta propiedad:
 
@@ -164,7 +164,7 @@ En `AfterTransform`, se puede hacer referencia a listas de archivos:
 
 - NonGeneratedFiles: lista de archivos de solo lectura que no se sobrescribieron.
 
-Por ejemplo, defina una tarea para desproteger GeneratedFiles.
+Por ejemplo, defina una tarea para extraer del repositorio GeneratedFiles.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath y OutputFileName
 
@@ -216,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Pasar datos de contexto de compilación a las plantillas
+## <a name="parameters"></a> Pasar datos de contexto de compilación a las plantillas
 
 Puede establecer valores de parámetro en el archivo de proyecto. Por ejemplo, puede pasar [compilar](../msbuild/msbuild-properties.md) propiedades y [variables de entorno](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -250,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` obtiene datos de `T4ParameterValues` solo cuando se usa MSBuild. Cuando se transforma la plantilla mediante Visual Studio, los parámetros tienen sus valores predeterminados.
 
-##  <a name="msbuild"></a> Utilice las propiedades del proyecto en el ensamblado y las directivas de inclusión
+## <a name="msbuild"></a> Utilice las propiedades del proyecto en el ensamblado y las directivas de inclusión
 
 Macros de Visual Studio como **SolutionDir** no funcionan en MSBuild. En su lugar, puede utilizar las propiedades del proyecto.
 

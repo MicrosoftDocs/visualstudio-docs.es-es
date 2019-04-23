@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8c6c51e464a3c4c49d4c70e4012df47906244804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0087841e7f37d49da40817e1487b8529af1f87df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089359"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>El libro usado para crear este proyecto contiene controles ActiveX que el diseñador no puede cargar
   Este error aparece cuando se agrega un control a un documento de Word o a una hoja de cálculo de Excel, se guarda el documento o libro mediante programación y, a continuación, se crea una nueva solución en el nivel del documento basada en el documento o libro.
@@ -26,11 +26,11 @@ ms.locfileid: "56638197"
 
 ## <a name="to-correct-this-error"></a>Para corregir este error
 
-1.  Abra el documento o el libro.
+1. Abra el documento o el libro.
 
-2.  Quite los controles que se agregaron en tiempo de ejecución. Puede hacerlo seleccionándolos en el documento o libro y presionando el **eliminar** clave.
+2. Quite los controles que se agregaron en tiempo de ejecución. Puede hacerlo seleccionándolos en el documento o libro y presionando el **eliminar** clave.
 
-3.  Cree una solución en el nivel del documento basada en el documento o en el libro.
+3. Cree una solución en el nivel del documento basada en el documento o en el libro.
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)

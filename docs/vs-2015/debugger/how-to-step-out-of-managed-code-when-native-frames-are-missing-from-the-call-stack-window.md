@@ -1,5 +1,5 @@
 ---
-title: Filtrar Salir de código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas | Documentos de Microsoft
+title: Procedimiento Salir de código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,14 +25,14 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6cb3b1f0d1c21a7cde53f8b3eecf1cd25c26b394
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 684738fd2180a3c5bf269b2a30efd970bcf9ab08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092206"
 ---
-# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Filtrar Salida del código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas
+# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Procedimiento Salida del código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si el código tiene marcos nativos que no se ven en la ventana **Pila de llamadas**, salir de código administrado puede generar resultados inesperados. Como solución, puede utilizar un punto de interrupción en lugar de **Paso a paso para salir**.  
@@ -42,9 +42,9 @@ Si el código tiene marcos nativos que no se ven en la ventana **Pila de llamada
   
 ### <a name="to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Para salir de una llamada a código administrado cuando los marcos nativos no se muestran en la pila de llamadas  
   
-1.  En el código nativo, establezca un punto de interrupción de ubicación después de la llamada al código administrado.  
+1. En el código nativo, establezca un punto de interrupción de ubicación después de la llamada al código administrado.  
   
-2.  En el menú **Depurar**, elija **Continuar**.  
+2. En el menú **Depurar**, elija **Continuar**.  
   
      Cuando se complete la llamada administrada, la ejecución se interrumpirá en el punto de interrupción del código nativo.  
   

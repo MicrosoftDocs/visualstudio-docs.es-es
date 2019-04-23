@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8fead0386d1ba820be21e65009c78791c7368bcd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa74d6ca668203f7b13f11307ac59ef5270aac9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117712"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Tutorial: Depurar una aplicación multiproceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ ms.locfileid: "58999420"
   
 #### <a name="to-create-the-walkthrough-project"></a>Para crear el proyecto para el tutorial  
   
-1.  En el **archivo** menú, elija **New** y, a continuación, haga clic en **proyecto**.  
+1. En el **archivo** menú, elija **New** y, a continuación, haga clic en **proyecto**.  
   
      Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
   
-2.  En el **tipo de proyecto**s cuadro, haga clic en el idioma que prefiera: **Visual Basic**, **Visual C#**, o **Visual C++**.  
+2. En el **tipo de proyecto**s cuadro, haga clic en el idioma que prefiera: **Visual Basic**, **Visual C#**, o **Visual C++**.  
   
-3.  En el **plantillas** , seleccione **aplicación de consola** o **aplicación de consola CLR**.  
+3. En el **plantillas** , seleccione **aplicación de consola** o **aplicación de consola CLR**.  
   
-4.  En el **nombre** cuadro, escriba el nombre MyThreadWalkthroughApp.  
+4. En el **nombre** cuadro, escriba el nombre MyThreadWalkthroughApp.  
   
-5.  Haga clic en **Aceptar**.  
+5. Haga clic en **Aceptar**.  
   
      Aparecerá un nuevo proyecto de consola. Una vez creado el proyecto, aparecerá un archivo de código fuente. Dependiendo del lenguaje elegido, el archivo de código fuente podría denominarse Module1.vb, Program.cs o MyThreadWalkthroughApp.cpp.  
   
-6.  Elimine el código que aparece en el archivo de origen y reemplazarlo por el código de ejemplo que aparece en la sección "Crear un subproceso" del tema [crear subprocesos y pasar datos en tiempo de inicio](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
+6. Elimine el código que aparece en el archivo de origen y reemplazarlo por el código de ejemplo que aparece en la sección "Crear un subproceso" del tema [crear subprocesos y pasar datos en tiempo de inicio](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
-7.  En el menú **Archivo**, haga clic en **Guardar todo**.  
+7. En el menú **Archivo**, haga clic en **Guardar todo**.  
   
 #### <a name="to-begin-the-walkthrough"></a>Para comenzar el tutorial  
   
--   En la ventana de código fuente, busque el código siguiente:  
+- En la ventana de código fuente, busque el código siguiente:  
   
     ```vb  
     Thread.Sleep(3000)   
@@ -72,17 +72,17 @@ Console.WriteLine();
   
 #### <a name="to-start-debugging"></a>Para iniciar la depuración  
   
-1.  Haga clic en el `Console.WriteLine` (instrucción), seleccione **punto de interrupción** y, a continuación, haga clic en **Insertar punto de interrupción**.  
+1. Haga clic en el `Console.WriteLine` (instrucción), seleccione **punto de interrupción** y, a continuación, haga clic en **Insertar punto de interrupción**.  
   
      En el margen interno izquierdo de la ventana de código fuente, aparecerá una círculo rojo. Esto indica que ahora hay un punto de interrupción en esa ubicación.  
   
-2.  En el menú **Depurar**, haga clic en **Iniciar depuración**.  
+2. En el menú **Depurar**, haga clic en **Iniciar depuración**.  
   
      La depuración comenzará, la aplicación de consola empezará a ejecutarse y se detendrá en el punto de interrupción.  
   
-3.  Si la ventana de la aplicación de consola tiene el foco en ese punto, haga clic en la ventana de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para que el foco vuelva a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Si la ventana de la aplicación de consola tiene el foco en ese punto, haga clic en la ventana de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para que el foco vuelva a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  En la ventana de código fuente, busque la línea que contiene el código siguiente:  
+4. En la ventana de código fuente, busque la línea que contiene el código siguiente:  
   
     ```vb  
     Thread.Sleep(5000)   
@@ -96,7 +96,7 @@ Thread.Sleep(3000);
 Thread::Sleep(3000);  
 ```  
   
-1.  
+1. 
   
 #### <a name="to-discover-the-thread-marker"></a>Para detectar el marcador de subproceso  
   
@@ -117,30 +117,30 @@ Thread::Sleep(3000);
   
 #### <a name="to-flag-threads"></a>Para marcar subprocesos  
   
-1.  En **vista** menú, elija **las barras de herramientas**.  
+1. En **vista** menú, elija **las barras de herramientas**.  
   
      Asegúrese de que el **ubicación de depuración** barra de herramientas está seleccionado.  
   
-2.  Vaya a la **ubicación de depuración** barra de herramientas y haga clic en el **subprocesos** lista.  
+2. Vaya a la **ubicación de depuración** barra de herramientas y haga clic en el **subprocesos** lista.  
   
     > [!NOTE]
     >  Puede reconocer esta barra de herramientas mediante tres listas destacadas: **Proceso**, **subprocesos**, y **marco de pila**.  
   
-3.  Observe cuántos subprocesos aparecen en la lista.  
+3. Observe cuántos subprocesos aparecen en la lista.  
   
-4.  Vuelva a la ventana de código fuente y contextual el **subprocesos** marcador nuevo.  
+4. Vuelva a la ventana de código fuente y contextual el **subprocesos** marcador nuevo.  
   
-5.  En el menú contextual, elija **marca**y, a continuación, haga clic en el nombre de subproceso y el número de identificador.  
+5. En el menú contextual, elija **marca**y, a continuación, haga clic en el nombre de subproceso y el número de identificador.  
   
-6.  Vuelva a **ubicación de depuración** barra de herramientas y haga clic en el **subprocesos** vuelva a enumerar.  
+6. Vuelva a **ubicación de depuración** barra de herramientas y haga clic en el **subprocesos** vuelva a enumerar.  
   
      Sólo el subproceso marcado aparece ahora en la lista. El botón de marca inmediatamente a la derecha de la **subprocesos** lista. El icono de marcador en el botón aparecía antes atenuado. Ahora se muestra en color rojo brillante sólido.  
   
-7.  Desplace el puntero sobre el icono de marcador.  
+7. Desplace el puntero sobre el icono de marcador.  
   
      Aparecerá un elemento emergente. Este elemento indica qué modo la **subprocesos** lista se encuentra en: **Mostrar sólo subprocesos marcados**.  
   
-8.  Haga clic en el botón de marcador para volver al **mostrar todos los subprocesos** modo.  
+8. Haga clic en el botón de marcador para volver al **mostrar todos los subprocesos** modo.  
   
 9. Haga clic en el **subprocesos** vuelva a enumerar y comprobar que ahora puede ver todos los subprocesos de nuevo.  
   
@@ -158,29 +158,29 @@ Thread::Sleep(3000);
   
 #### <a name="to-unflag-threads"></a>Para quitar marcadores de subprocesos  
   
-1.  En el **subprocesos** ventana, haga clic en la línea que corresponde al subproceso marcado.  
+1. En el **subprocesos** ventana, haga clic en la línea que corresponde al subproceso marcado.  
   
      Se mostrará un menú contextual. Tiene opciones para **Quitar marcador** y **marcador de todos los**.  
   
-2.  Para quitar el marcador del subproceso, haga clic en **Quitar marcador**.  
+2. Para quitar el marcador del subproceso, haga clic en **Quitar marcador**.  
   
-3.  Haga clic en el icono de marcador rojo.  
+3. Haga clic en el icono de marcador rojo.  
   
-4.  Examine el **ubicación de depuración** vuelva a la barra de herramientas. El botón de marcador está atenuado de nuevo. Ha quitado el marcador del único subproceso marcado. Dado que no hay ningún subproceso marcado, la barra de herramientas ha regresado al **mostrar todos los subprocesos** modo. Haga clic en el **subprocesos** lista y compruebe que puede ver todos los subprocesos.  
+4. Examine el **ubicación de depuración** vuelva a la barra de herramientas. El botón de marcador está atenuado de nuevo. Ha quitado el marcador del único subproceso marcado. Dado que no hay ningún subproceso marcado, la barra de herramientas ha regresado al **mostrar todos los subprocesos** modo. Haga clic en el **subprocesos** lista y compruebe que puede ver todos los subprocesos.  
   
-5.  Vuelva a la **subprocesos** ventana y examine las columnas de información.  
+5. Vuelva a la **subprocesos** ventana y examine las columnas de información.  
   
      En la parte superior de cada columna, la mayoría de los botones tiene títulos que identifican la columna. Sin embargo, la primera columna de la izquierda no tiene ningún título. En su lugar, tiene un icono que es el contorno de un marcador. Observará el mismo contorno en cada fila de la lista de subprocesos. El contorno significa que el subproceso no está marcado.  
   
-6.  Haga clic en los contornos de marcador de dos subprocesos: el segundo y el tercero empezando por el final de la lista.  
+6. Haga clic en los contornos de marcador de dos subprocesos: el segundo y el tercero empezando por el final de la lista.  
   
      Los iconos de marcador se vuelven de color rojo sólido, en lugar de mostrarse como contornos huecos.  
   
-7.  Haga clic en el botón situado en la parte superior de la columna de marcadores.  
+7. Haga clic en el botón situado en la parte superior de la columna de marcadores.  
   
      El orden de la lista de subprocesos cambia al hacer clic en el botón. La lista de subprocesos está ordenada ahora con los subprocesos marcados al principio de la misma.  
   
-8.  Haga clic otra vez en el botón situado en la parte superior de la columna de marcadores.  
+8. Haga clic otra vez en el botón situado en la parte superior de la columna de marcadores.  
   
      El criterio de ordenación vuelve a cambiar.  
   
@@ -188,31 +188,31 @@ Thread::Sleep(3000);
   
 #### <a name="to-learn-more-about-the-threads-window"></a>Para obtener más información sobre la ventana Subprocesos  
   
-1.  En el **subprocesos** ventana, examine la tercera columna de la izquierda. El botón en la parte superior de esta columna indica **ID**.  
+1. En el **subprocesos** ventana, examine la tercera columna de la izquierda. El botón en la parte superior de esta columna indica **ID**.  
   
-2.  Haga clic en **ID**.  
+2. Haga clic en **ID**.  
   
      La lista de subprocesos estará ordenada ahora por el número de identificación.  
   
-3.  Haga clic con el botón secundario en cualquier subproceso de la lista. En el menú contextual, haga clic en **presentación Hexadecimal**.  
+3. Haga clic con el botón secundario en cualquier subproceso de la lista. En el menú contextual, haga clic en **presentación Hexadecimal**.  
   
      Cambiará el formato del número de id. de subproceso.  
   
-4.  Desplace el puntero swl mouse sobre cualquier subproceso de la lista.  
+4. Desplace el puntero swl mouse sobre cualquier subproceso de la lista.  
   
      Después de un retraso momentáneo, aparece una información sobre datos. Muestra una pila de llamadas parcial para el subproceso.  
   
-5.  Examine la cuarta columna de la izquierda, que tiene la etiqueta **categoría**. Los subprocesos están clasificados en categorías.  
+5. Examine la cuarta columna de la izquierda, que tiene la etiqueta **categoría**. Los subprocesos están clasificados en categorías.  
   
      El primer subproceso creado en un proceso se conoce como subproceso principal. Búsquelo en la lista de subprocesos.  
   
-6.  Haga clic en el subproceso principal y, a continuación, haga clic en **cambiar a subproceso**.  
+6. Haga clic en el subproceso principal y, a continuación, haga clic en **cambiar a subproceso**.  
   
      Aparecerá un cuadro de diálogo de advertencia. Indica que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no puede mostrar el código fuente del subproceso principal.  
   
      Haga clic en **Aceptar**.  
   
-7.  Examine el **pila de llamadas** ventana y la **ubicación de depuración** barra de herramientas.  
+7. Examine el **pila de llamadas** ventana y la **ubicación de depuración** barra de herramientas.  
   
      El contenido de la **pila de llamadas** ventana han cambiado.  
   
@@ -220,21 +220,21 @@ Thread::Sleep(3000);
   
 #### <a name="to-switch-threads"></a>Para cambiar subprocesos  
   
-1.  En el **subprocesos** ventana, examine la segunda columna de la izquierda. El botón situado en la parte superior de esta columna no tiene ningún texto o icono. Esta columna es el **subproceso activo** columna.  
+1. En el **subprocesos** ventana, examine la segunda columna de la izquierda. El botón situado en la parte superior de esta columna no tiene ningún texto o icono. Esta columna es el **subproceso activo** columna.  
   
-2.  Examine el **subproceso activo** columna y observa que un subproceso tiene una flecha amarilla. Se trata de la *indicador de subproceso activo*.  
+2. Examine el **subproceso activo** columna y observa que un subproceso tiene una flecha amarilla. Se trata de la *indicador de subproceso activo*.  
   
-3.  Tome nota del número de id. de subproceso donde se encuentra el indicador de subproceso activo. Mueva el indicador de subproceso activo a otro subproceso, pero tendrá que volverlo a colocar en su lugar original al finalizar.  
+3. Tome nota del número de id. de subproceso donde se encuentra el indicador de subproceso activo. Mueva el indicador de subproceso activo a otro subproceso, pero tendrá que volverlo a colocar en su lugar original al finalizar.  
   
-4.  Haga clic en otro subproceso y, a continuación, haga clic en **cambiar a subproceso**.  
+4. Haga clic en otro subproceso y, a continuación, haga clic en **cambiar a subproceso**.  
   
-5.  Examine el **pila de llamadas** ventana en la ventana de código fuente. El contenido ha cambiado.  
+5. Examine el **pila de llamadas** ventana en la ventana de código fuente. El contenido ha cambiado.  
   
-6.  Examine el **ubicación de depuración** barra de herramientas. El subproceso activo también ha cambiado ahí.  
+6. Examine el **ubicación de depuración** barra de herramientas. El subproceso activo también ha cambiado ahí.  
   
-7.  Vaya a la **ubicación de depuración** barra de herramientas. Haga clic en el **subproceso** cuadro y elija un subproceso diferente en la lista desplegable.  
+7. Vaya a la **ubicación de depuración** barra de herramientas. Haga clic en el **subproceso** cuadro y elija un subproceso diferente en la lista desplegable.  
   
-8.  Examine el **subprocesos** ventana. El indicador de subproceso activo ha cambiado.  
+8. Examine el **subprocesos** ventana. El indicador de subproceso activo ha cambiado.  
   
 9. En la ventana de código fuente, haga clic con el botón secundario en el marcador de un subproceso. En el menú contextual, elija **cambie a** y haga clic en un número de identificador/nombre de subproceso.  
   
@@ -246,13 +246,13 @@ Thread::Sleep(3000);
   
 #### <a name="to-freeze-and-unfreeze-threads"></a>Para inmovilizar y descongelar subprocesos  
   
-1.  En el **subprocesos** ventana, haga clic en cualquier subproceso y, a continuación, haga clic en **inmovilizar**.  
+1. En el **subprocesos** ventana, haga clic en cualquier subproceso y, a continuación, haga clic en **inmovilizar**.  
   
-2.  Observe la columna de subproceso activo. El par de barras verticales aparece ahora ahí. Esas dos barras azules indican que el subproceso está inmovilizado.  
+2. Observe la columna de subproceso activo. El par de barras verticales aparece ahora ahí. Esas dos barras azules indican que el subproceso está inmovilizado.  
   
-3.  Examine el **Suspend** columna. El recuento de suspensión del subproceso ahora es 1.  
+3. Examine el **Suspend** columna. El recuento de suspensión del subproceso ahora es 1.  
   
-4.  Haga clic en el subproceso inmovilizado y, a continuación, haga clic en **reanudar**.  
+4. Haga clic en el subproceso inmovilizado y, a continuación, haga clic en **reanudar**.  
   
      La columna de subproceso activo y el **Suspend** cambio de columna.  
   

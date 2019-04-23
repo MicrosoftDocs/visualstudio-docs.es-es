@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c419800a92f25ce4531c351d4131acf119633ccb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 506e39537614b50b72a515d882e5592c316cce26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080883"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>¿Qué&#39;s en el SDK Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ A partir de Visual Studio 2017, análisis de proyecto personalizado y las planti
 
  Estos temas están bajo el [utilidades VSSDK](../extensibility/internals/vssdk-utilities.md) sección:
 
--   El [herramientas de creación de temas de Color](../extensibility/internals/color-theming-tools.md) le ayudarán a crear y editar los colores personalizados para Visual Studio.
+- El [herramientas de creación de temas de Color](../extensibility/internals/color-theming-tools.md) le ayudarán a crear y editar los colores personalizados para Visual Studio.
 
--   El [herramientas de servicio de imágenes](../extensibility/internals/image-service-tools.md) le permiten trabajar con archivos de manifiesto de imagen de Visual Studio.
+- El [herramientas de servicio de imágenes](../extensibility/internals/image-service-tools.md) le permiten trabajar con archivos de manifiesto de imagen de Visual Studio.
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Nueva forma de agregar el SDK de Visual Studio a Visual Studio
  A partir de Visual Studio 2015, no es necesario descargar el SDK de Visual Studio por separado. En su lugar, puede instalarlo como parte del proceso de instalación normal, o puede elegir instalarla más adelante. Al abrir o crear una solución VSIX, Visual Studio le pedirá que instale las herramientas de extensibilidad de Visual Studio. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
@@ -42,13 +42,13 @@ A partir de Visual Studio 2017, análisis de proyecto personalizado y las planti
 ### <a name="visual-c-and-visual-basic"></a>Visual C# y Visual Basic
  Para C# y Visual Basic, hay una gama completa de plantillas de elemento de proyecto que le permiten crear paquetes VSPackage, comandos de menú, ventanas de herramientas, clasificadores de editor, elementos gráficos del editor y extensiones de editor de margen. Puede agregar alguno o todos ellos al proyecto VSIX estándar. Para obtener más información, consulte:
 
--   [Creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [Creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [Creación de una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Creación de una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [Creación de una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Creación de una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [Creación de una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [Creación de una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
      El Asistente de VSPackage ya no crea las extensiones en C# o Visual Basic.
 

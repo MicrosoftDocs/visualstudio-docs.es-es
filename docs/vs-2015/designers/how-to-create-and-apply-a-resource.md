@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fdac7018ec67250514836f22f3c297ddce5bd382
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118232"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Cómo crear y aplicar un recurso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,27 +28,27 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
   
 ### <a name="to-create-a-new-resource"></a>Para crear un recurso nuevo  
   
-1.  Con un archivo XAML abierto en el diseñador XAML, cree un elemento o elija uno en la ventana Esquema del documento.  
+1. Con un archivo XAML abierto en el diseñador XAML, cree un elemento o elija uno en la ventana Esquema del documento.  
   
-2.  En la ventana Propiedades, seleccione el marcador de propiedad (aparece como un símbolo de cuadro a la derecha de un valor de propiedad) y, después, pulse **Convertir en nuevo recurso**. Un símbolo de cuadro blanco indica un valor predeterminado y un símbolo de cuadro negro indica normalmente que se ha aplicado un recurso local.  
+2. En la ventana Propiedades, seleccione el marcador de propiedad (aparece como un símbolo de cuadro a la derecha de un valor de propiedad) y, después, pulse **Convertir en nuevo recurso**. Un símbolo de cuadro blanco indica un valor predeterminado y un símbolo de cuadro negro indica normalmente que se ha aplicado un recurso local.  
   
      Aparece el cuadro de diálogo correspondiente para crear un recurso. Este cuadro de diálogo aparece cuando se crea un recurso de pincel:  
   
      ![Cuadro de diálogo Crear recurso](../designers/media/xaml-create-resource.png "xaml_create_resource")  
   
-3.  En el cuadro **Nombre (clave)**, escriba un nombre de clave. Este es el nombre que puede usar si desea que otros elementos hagan referencia al recurso.  
+3. En el cuadro **Nombre (clave)**, escriba un nombre de clave. Este es el nombre que puede usar si desea que otros elementos hagan referencia al recurso.  
   
-4.  En **Definir en**, seleccione la opción en la que quiere definir el recurso:  
+4. En **Definir en**, seleccione la opción en la que quiere definir el recurso:  
   
-    -   Para que el recurso esté disponible en cualquier documento de la aplicación, seleccione **Aplicación**.  
+    - Para que el recurso esté disponible en cualquier documento de la aplicación, seleccione **Aplicación**.  
   
-    -   Para que el recurso esté disponible únicamente en el documento actual, seleccione **Este documento**.  
+    - Para que el recurso esté disponible únicamente en el documento actual, seleccione **Este documento**.  
   
-    -   Para que el recurso esté disponible únicamente en el elemento desde el que creó el recurso o en sus elementos secundarios, seleccione **Este documento** y, en la lista desplegable, seleccione *elemento*: *nombre*.  
+    - Para que el recurso esté disponible únicamente en el elemento desde el que creó el recurso o en sus elementos secundarios, seleccione **Este documento** y, en la lista desplegable, seleccione *elemento*: *nombre*.  
   
-    -   Para definir el recurso en un archivo de diccionario de recursos que pueda volver a usarse en otros proyectos, haga clic en **Diccionario de recursos** y luego, en la lista desplegable, seleccione un archivo de diccionario de recursos ya existente, por ejemplo, **StandardStyles.xaml**.  
+    - Para definir el recurso en un archivo de diccionario de recursos que pueda volver a usarse en otros proyectos, haga clic en **Diccionario de recursos** y luego, en la lista desplegable, seleccione un archivo de diccionario de recursos ya existente, por ejemplo, **StandardStyles.xaml**.  
   
-5.  Haga clic en el botón **Aceptar** para crear el recurso y aplicarlo al elemento a partir del cual se ha creado.  
+5. Haga clic en el botón **Aceptar** para crear el recurso y aplicarlo al elemento a partir del cual se ha creado.  
   
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Para aplicar un recurso a un elemento o propiedad  
   
@@ -58,7 +58,7 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
   
    - Aplique un recurso a una propiedad. En la ventana Propiedades, seleccione el marcador de propiedad al lado del valor de la propiedad, seleccione **Recurso local** o **Recurso del sistema**, y luego seleccione un recurso de los disponibles en la lista que aparece.  
   
-      Si no ve un recurso que espera ver, es posible que el tipo de ese recurso no coincida con el tipo de la propiedad.  
+      Si no ves un recurso que esperabas ver, es posible que sea porque el tipo del recurso no coincide con el tipo de la propiedad.  
   
    - Aplique un recurso de plantilla de control o estilo a un control. Abra el menú contextual de un control en la ventana Esquema del documento, seleccione **Editar plantilla** o **Editar plantillas adicionales**, seleccione **Aplicar recurso** y, después, seleccione el nombre de la plantilla de control en la lista que aparece.  
   
@@ -69,11 +69,11 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
   
 ### <a name="to-edit-a-resource"></a>Para editar un recurso  
   
-1.  Elija un elemento en la mesa de trabajo o en la ventana Esquema del documento.  
+1. Elija un elemento en la mesa de trabajo o en la ventana Esquema del documento.  
   
-2.  En la ventana Propiedades, seleccione el marcador de propiedad predeterminado o local y, después, seleccione **Editar recurso** para abrir el cuadro de diálogo **Editar recurso**.  
+2. En la ventana Propiedades, seleccione el marcador de propiedad predeterminado o local y, después, seleccione **Editar recurso** para abrir el cuadro de diálogo **Editar recurso**.  
   
-3.  Modifique las opciones del recurso.  
+3. Modifique las opciones del recurso.  
   
 ## <a name="see-also"></a>Vea también  
  [Crear una UI usando el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

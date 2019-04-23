@@ -10,40 +10,40 @@ ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f141fb6a29a012dbd185c258610c3e4b1d362629
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e96bb177d3cfa90b2c80304eabfd93d1bea76d5b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117322"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Tutorial: Personalizar la vista de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede personalizar una vista de texto mediante la modificación de cualquiera de las siguientes propiedades en su mapa de formato del editor:  
   
--   Margen del indicador  
+- Margen del indicador  
   
--   Símbolo de intercalación de inserción  
+- Símbolo de intercalación de inserción  
   
--   Sobrescribir el símbolo de intercalación  
+- Sobrescribir el símbolo de intercalación  
   
--   Texto seleccionado  
+- Texto seleccionado  
   
--   Texto seleccionado inactivo (es decir, texto seleccionado que se ha perdido el foco)  
+- Texto seleccionado inactivo (es decir, texto seleccionado que se ha perdido el foco)  
   
--   Espacio en blanco visible  
+- Espacio en blanco visible  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-mef-project"></a>Creación de un proyecto MEF  
   
-1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `ViewPropertyTest`.  
+1. Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `ViewPropertyTest`.  
   
-2.  Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Elimine los archivos de clase existentes.  
+3. Elimine los archivos de clase existentes.  
   
 ## <a name="defining-the-content-type"></a>Definir el tipo de contenido  
   
@@ -70,28 +70,28 @@ Puede personalizar una vista de texto mediante la modificación de cualquiera de
   
 ## <a name="changing-the-view-properties"></a>Cambiar las propiedades de vista  
   
-1.  Implemente el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método para que se cambian las propiedades de la vista cuando se abre la vista. Para realizar el cambio, primero busque el <xref:System.Windows.ResourceDictionary> que se corresponde con el aspecto de la vista que desea buscar. A continuación, cambie la propiedad adecuada en el diccionario de recursos y establecer las propiedades. Procesar por lotes las llamadas a la <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> método mediante una llamada a la <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> método antes de establecer las propiedades y, a continuación, el <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> después de establecer las propiedades.  
+1. Implemente el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método para que se cambian las propiedades de la vista cuando se abre la vista. Para realizar el cambio, primero busque el <xref:System.Windows.ResourceDictionary> que se corresponde con el aspecto de la vista que desea buscar. A continuación, cambie la propiedad adecuada en el diccionario de recursos y establecer las propiedades. Procesar por lotes las llamadas a la <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> método mediante una llamada a la <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> método antes de establecer las propiedades y, a continuación, el <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> después de establecer las propiedades.  
   
      [!code-csharp[VSSDKViewPropertyTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#4)]
      [!code-vb[VSSDKViewPropertyTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#4)]  
   
 ## <a name="building-and-testing-the-code"></a>Compilar y probar el código  
   
-1.  Compile la solución.  
+1. Compile la solución.  
   
      Al ejecutar este proyecto en el depurador, se crea una segunda instancia de Visual Studio.  
   
-2.  Cree un archivo de texto y escriba algún texto.  
+2. Cree un archivo de texto y escriba algún texto.  
   
-    -   El punto de inserción debe ser magenta y el símbolo de intercalación de sobrescritura deben turquesa.  
+    - El punto de inserción debe ser magenta y el símbolo de intercalación de sobrescritura deben turquesa.  
   
-    -   El margen del indicador (a la izquierda de la vista de texto) debe ser la luz verde.  
+    - El margen del indicador (a la izquierda de la vista de texto) debe ser la luz verde.  
   
-3.  Seleccione el texto que escribió. El color del texto seleccionado debe ser ligero rosa.  
+3. Seleccione el texto que escribió. El color del texto seleccionado debe ser ligero rosa.  
   
-4.  Mientras que el texto seleccionado, haga clic en cualquier lugar fuera de la ventana de texto. El color del texto seleccionado debe ser rosa oscuro.  
+4. Mientras que el texto seleccionado, haga clic en cualquier lugar fuera de la ventana de texto. El color del texto seleccionado debe ser rosa oscuro.  
   
-5.  Activar el espacio en blanco visible. (En el **editar** menú, elija **avanzadas** y, a continuación, haga clic en **ver espacios en blanco**). Escriba algunas de las pestañas en el texto. Se deben mostrar las flechas rojas que representan las fichas.  
+5. Activar el espacio en blanco visible. (En el **editar** menú, elija **avanzadas** y, a continuación, haga clic en **ver espacios en blanco**). Escriba algunas de las pestañas en el texto. Se deben mostrar las flechas rojas que representan las fichas.  
   
 ## <a name="see-also"></a>Vea también  
  [Servicio de lenguaje y puntos de extensión del editor](../extensibility/language-service-and-editor-extension-points.md)

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649959"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089569"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
 Cuando diseña la interfaz de usuario que utiliza elementos comunes de shell de Visual Studio, o desea que el elemento de la interfaz para que sea coherente con características similares, utilice nombres de token existentes en archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.
@@ -22,11 +22,11 @@ En este artículo se describen los elementos de interfaz de usuario comunes y lo
 
 Asegúrese de usar correctamente los nombres de token:
 
--   **Usar nombres de token en función de la función, no en el color en Sí.** Los colores comunes compartidos están asociados a elementos específicos de la interfaz y solo están destinados para características iguales o similares. Por ejemplo, no vuelva a usar el color de un cuadro combinado presionado para una animación de progreso de giro solo porque le gusta el color. Las funciones del cuadro combinado y de la animación son diferentes, y si el color asociado con los cambios de cuadro combinado, ya no es posible un color adecuado para el elemento de animación. Un uso coherente del color ayuda a orientar a los usuarios y evitar confusiones.
+- **Usar nombres de token en función de la función, no en el color en Sí.** Los colores comunes compartidos están asociados a elementos específicos de la interfaz y solo están destinados para características iguales o similares. Por ejemplo, no vuelva a usar el color de un cuadro combinado presionado para una animación de progreso de giro solo porque le gusta el color. Las funciones del cuadro combinado y de la animación son diferentes, y si el color asociado con los cambios de cuadro combinado, ya no es posible un color adecuado para el elemento de animación. Un uso coherente del color ayuda a orientar a los usuarios y evitar confusiones.
 
--   **Usar colores de fondo y texto en la combinación correcta.** Los colores de fondo destinados para usarse con texto tendrán un color de texto asociado. No use colores de texto que no sean los que se especifican para el fondo. Si no hay un color de texto asociado, no use ese color de fondo para cualquier superficie en la que tiene pensado mostrar texto. Otras combinaciones de colores de texto y en segundo plano pueden dar lugar a una interfaz ilegible.
+- **Usar colores de fondo y texto en la combinación correcta.** Los colores de fondo destinados para usarse con texto tendrán un color de texto asociado. No use colores de texto que no sean los que se especifican para el fondo. Si no hay un color de texto asociado, no use ese color de fondo para cualquier superficie en la que tiene pensado mostrar texto. Otras combinaciones de colores de texto y en segundo plano pueden dar lugar a una interfaz ilegible.
 
--   **Usar colores de control que son adecuados para su ubicación.** En determinados Estados, algunos controles de Visual Studio no tienen borde independiente y los colores de fondo. En su lugar, toman los colores de las superficies que están detrás de ellos. Procure usar siempre los nombres de token que sean adecuados para la ubicación donde coloca el control.
+- **Usar colores de control que son adecuados para su ubicación.** En determinados Estados, algunos controles de Visual Studio no tienen borde independiente y los colores de fondo. En su lugar, toman los colores de las superficies que están detrás de ellos. Procure usar siempre los nombres de token que sean adecuados para la ubicación donde coloca el control.
 
 > [!IMPORTANT]
 > No use los tokens que se encuentran en las categorías "Página de inicio" o "Cider".
@@ -623,13 +623,13 @@ Siempre que sea posible, use el control de búsqueda común proporcionado por el
 
 Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales son mutuamente excluyentes:
 
--   "Con foco" o "sin foco" se refiere a si el cursor está en el cuadro de texto.
+- "Con foco" o "sin foco" se refiere a si el cursor está en el cuadro de texto.
 
--   "Activo" o "inactivo" se refiere a si el usuario ha especificado una consulta de búsqueda en el cuadro de texto.
+- "Activo" o "inactivo" se refiere a si el usuario ha especificado una consulta de búsqueda en el cuadro de texto.
 
--   "Desplazar el puntero" significa que el usuario ha colocado el puntero sobre el cuadro de búsqueda con el mouse (este estado invalida todos los demás estados).
+- "Desplazar el puntero" significa que el usuario ha colocado el puntero sobre el cuadro de búsqueda con el mouse (este estado invalida todos los demás estados).
 
--   "Deshabilitado" significa que la función de búsqueda se ha desactivado para el contexto actual.
+- "Deshabilitado" significa que la función de búsqueda se ha desactivado para el contexto actual.
 
 ![Search box (redline)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Cuadro de búsqueda (límite)
 
@@ -854,7 +854,7 @@ El menú de lista desplegable del cuadro de búsqueda tiene el potencial para ve
 | Fondo de vínculo | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Delimitadores de degradado para este token que no se usa en la interfaz de usuario con tema.) |
 | Primer plano (texto de vínculo) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a> Vistas de árbol
+### <a name="BKMK_TreeView"></a> Vistas de árbol
 Varias ventanas de herramientas, incluido el Explorador de soluciones, el Explorador de servidores y la vista de clases, implementan un esquema organizativo jerárquico cuyos colores se controlan mediante nombres de colores en el `TreeView` categoría. Todos los elementos de una vista de árbol tienen colores de fondo y de texto. Los elementos que tienen elementos secundarios anidados también tienen glifos que indican si el elemento está expandido o contraído.
 
 ![Tree view (redline)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303-147_TreeViewRedline")<br />Vista de árbol (límite)
@@ -1037,7 +1037,7 @@ El Diseñador de manifiestos se creó para que resulte más fácil editar el arc
 
 ## <a name="command-structures"></a>Estructuras de comandos
 
-###  <a name="BKMK_CommandMenus"></a> Menús
+### <a name="BKMK_CommandMenus"></a> Menús
 Los menús pueden aparecer en varios lugares dentro de Visual Studio: la barra de menú principal, insertada en el documento o ventanas de herramientas, o en el botón derecho en diversas ubicaciones en todo el IDE. Las implementaciones de menús asociados con otros elementos de la interfaz de usuario se describen en la sección del elemento respectivo. Se debe usar siempre la implementación de menús estándar proporcionada por el entorno de Visual Studio. Sin embargo, en algunas ocasiones podría no tener acceso a los menús estándar de Visual Studio. En estos casos, use los siguientes nombres de token para asegurarse de que la interfaz de usuario sea coherente con otros menús de Visual Studio.
 
 ![Menú de Visual Studio (línea roja)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Menú de Visual Studio (límite)
@@ -1278,7 +1278,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 | Primer plano (texto) | `Environment.CommandBarTextInactive` |
 | Borde | N/D |
 
-####  <a name="BKMK_CommandComboBox"></a> Cuadros combinados de barra de comandos
+#### <a name="BKMK_CommandComboBox"></a> Cuadros combinados de barra de comandos
 
 > [!IMPORTANT]
 > Los cuadros combinados son similares a las listas desplegables, pero incluyen un área de texto editable. Si la lista desplegable no incluye un área de texto editable, use los tokens de color para [listas desplegables de la barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
@@ -1410,7 +1410,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 | Fondo | Ninguna |
 | Primer plano (glifo) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a> Barra de comandos desplegables
+#### <a name="BKMK_CommandDropDown"></a> Barra de comandos desplegables
 
 > [!IMPORTANT]
 >  Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color para [cuadros combinados de la barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
@@ -1713,9 +1713,9 @@ Las pestañas de documentos se colocan en el canal de pestañas para indicar los
 #### <a name="open-document-tabs"></a>Pestañas de documentos abiertos
 Cada documento abierto tiene una pestaña en el canal de pestañas de documentos que muestra su nombre. Los documentos pueden estar seleccionados o abiertos en segundo plano y sus pestañas reflejan los siguientes estados:
 
--   La pestaña seleccionada representa el documento que se muestra actualmente en el cuadro de documento. Una pestaña seleccionada tiene un borde de documento que se extiende por todo el borde superior del cuadro de documento.
+- La pestaña seleccionada representa el documento que se muestra actualmente en el cuadro de documento. Una pestaña seleccionada tiene un borde de documento que se extiende por todo el borde superior del cuadro de documento.
 
--   Las pestañas en segundo plano corresponden a cualquier pestaña de documento que no sea la pestaña seleccionada actualmente. Una vez que se hace clic en una de ellas, se convierte en la pestaña seleccionada y adopta todos los colores de fondo, borde y texto de los nombres de token.
+- Las pestañas en segundo plano corresponden a cualquier pestaña de documento que no sea la pestaña seleccionada actualmente. Una vez que se hace clic en una de ellas, se convierte en la pestaña seleccionada y adopta todos los colores de fondo, borde y texto de los nombres de token.
 
 ![Pestaña de documento abierto (línea roja)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")<br />Pestaña de documento abierto (límite)
 

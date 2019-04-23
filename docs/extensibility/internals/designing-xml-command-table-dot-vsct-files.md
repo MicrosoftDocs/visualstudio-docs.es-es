@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091569"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Diseñar archivos de tabla (.vsct) de comandos XML
 Una tabla de comandos XML (*.vsct*) archivo describe el diseño y la apariencia de los elementos de comando para un paquete VSPackage. Elementos de comandos incluyen botones, cuadros combinados, los menús, barras de herramientas y grupos de elementos de comando. En este artículo se describe cómo crearlos, cómo afectan a los menús y elementos de comandos y archivos de la tabla de comandos XML.
@@ -98,19 +98,19 @@ Puede usar el *vsct.exe* compilador que convierta existente *.cto* el archivo en
 ## <a name="vsct-file-design-guidelines"></a>instrucciones de diseño del archivo .vsct
  Diseño correctamente un *.vsct* , siga estas instrucciones.
 
--   Los comandos se pueden colocar solo en grupos, grupos se pueden colocar solo en los menús y menús pueden colocarse únicamente en grupos. Sólo los menús realmente se muestran en el IDE, grupos y los comandos no están.
+- Los comandos se pueden colocar solo en grupos, grupos se pueden colocar solo en los menús y menús pueden colocarse únicamente en grupos. Sólo los menús realmente se muestran en el IDE, grupos y los comandos no están.
 
--   No se puede asignar directamente a un menú submenús, pero deben asignarse a un grupo, que a su vez se asigna a un menú.
+- No se puede asignar directamente a un menú submenús, pero deben asignarse a un grupo, que a su vez se asigna a un menú.
 
--   Comandos, submenús y grupos pueden asignarse a un menú mediante el campo principal de su definición de directiva o grupo de la relación jerárquica.
+- Comandos, submenús y grupos pueden asignarse a un menú mediante el campo principal de su definición de directiva o grupo de la relación jerárquica.
 
--   Organización de una tabla de comandos únicamente a través de los campos de elemento primario en las directivas tiene una limitación importante. Las directivas que definen objetos pueden tomar el argumento de un único elemento primario.
+- Organización de una tabla de comandos únicamente a través de los campos de elemento primario en las directivas tiene una limitación importante. Las directivas que definen objetos pueden tomar el argumento de un único elemento primario.
 
--   Volver a usar los comandos, grupos o submenús requiere el uso de una directiva nueva para crear una nueva instancia del objeto con su propio `GUID:ID` par.
+- Volver a usar los comandos, grupos o submenús requiere el uso de una directiva nueva para crear una nueva instancia del objeto con su propio `GUID:ID` par.
 
--   Cada `GUID:ID` par debe ser único. Volver a usar un comando, por ejemplo, colocados en un menú, una barra de herramientas, o en un menú contextual, se controla mediante el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.
+- Cada `GUID:ID` par debe ser único. Volver a usar un comando, por ejemplo, colocados en un menú, una barra de herramientas, o en un menú contextual, se controla mediante el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.
 
--   Los comandos y submenús también pueden asignarse a varios grupos y grupos se pueden asignar a varios menús con el [elemento Commands](../../extensibility/commands-element.md).
+- Los comandos y submenús también pueden asignarse a varios grupos y grupos se pueden asignar a varios menús con el [elemento Commands](../../extensibility/commands-element.md).
 
 ## <a name="vsct-file-notes"></a>notas del archivo .vsct
  Si realiza los cambios realizados en un *.vsct* archivo después de tanto compilarlo y colocarlo en un archivo DLL nativo, debe ejecutar **devenv.exe /setup /nosetupvstemplates**. Realizar por lo que fuerza los recursos de VSPackage especificados en el registro de experimental a leer y la base de datos interna que describe [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se vuelvan a generar.

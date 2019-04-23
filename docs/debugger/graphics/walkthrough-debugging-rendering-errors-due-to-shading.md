@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Depurar errores debidos al sombreado de representación | Microsoft Docs'
+title: 'Tutorial: Depurar errores debidos al sombreado de representación | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e70fb88a9dd3c51a5e280e1e778bd18220985f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688373"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091335"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Tutorial: Depurar errores de representación debidos al sombreado
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Tutorial: Depuración de errores de representación debidos al sombreado
 Este tutorial muestra cómo usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para investigar un objeto que tiene un color incorrecto debido a un error del sombreador.
 
  En este tutorial se muestra:
 
--   Examinar el documento de registro de gráficos para identificar los píxeles que muestran el problema.
+- Examinar el documento de registro de gráficos para identificar los píxeles que muestran el problema.
 
--   Usar la ventana **Historial de píxeles de gráfico** para examinar el estado de los píxeles más en detalle.
+- Usar la ventana **Historial de píxeles de gráfico** para examinar el estado de los píxeles más en detalle.
 
--   Usar el **Depurador de HLSL** para examinar los sombreadores de vértices y píxeles.
+- Usar el **Depurador de HLSL** para examinar los sombreadores de vértices y píxeles.
 
 ## <a name="scenario"></a>Escenario
  Los colores incorrectos de los objetos normalmente se dan cuando un sombreador de vértices pasa información de sombreador de píxeles incompleta o incorrecta.
