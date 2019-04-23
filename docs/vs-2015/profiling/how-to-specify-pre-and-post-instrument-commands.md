@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Especificar comandos anteriores y posteriores a la instrumentación | Microsoft Docs'
+title: Procedimiento Especificar comandos anteriores y posteriores a la instrumentación | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,14 +15,14 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b548265959ed2be10feb1096d7dc92d95a6cfed0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1485ee6f0737363bc6ab9105b70c93acef866c82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038348"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Cómo: Especificar comandos anteriores y posteriores a la instrumentación
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedimiento Especificar comandos anteriores y posteriores a la instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede especificar los comandos que se ejecutan antes o después de que los archivos binarios en una sesión de rendimiento se instrumenten. Cualquier comando que se puede emitir desde la línea de comandos puede especificarse como un evento anterior o posterior a la instrumentación. Por ejemplo, puede especificar comandos que automaticen la nueva firma de un ensamblado con una clave de nombre seguro en un archivo por lotes que se ejecuta después de que se instrumenten los binarios.  
@@ -53,39 +53,39 @@ Puede especificar los comandos que se ejecutan antes o después de que los archi
   
 ### <a name="to-specify-pre-instrument-commands"></a>Para especificar comandos anteriores a la instrumentación  
   
-1.  Realice uno de estos pasos:  
+1. Realice uno de estos pasos:  
   
-    -   Para especificar comandos anteriores a la instrumentación para todos los binarios de una sesión de rendimiento, seleccione el nodo de la sesión de rendimiento en **Explorador de rendimiento** y después haga clic con el botón derecho y seleccione **Propiedades**.  
+    - Para especificar comandos anteriores a la instrumentación para todos los binarios de una sesión de rendimiento, seleccione el nodo de la sesión de rendimiento en **Explorador de rendimiento** y después haga clic con el botón derecho y seleccione **Propiedades**.  
   
-    -   Para especificar comandos anteriores a la instrumentación para un binario concreto, haga clic con el botón derecho en el nombre del binario en la lista **Destinos** de la sesión de rendimiento y después seleccione **Propiedades**.  
+    - Para especificar comandos anteriores a la instrumentación para un binario concreto, haga clic con el botón derecho en el nombre del binario en la lista **Destinos** de la sesión de rendimiento y después seleccione **Propiedades**.  
   
-2.  En las **Páginas de propiedades**, haga clic en **Instrumentación**.  
+2. En las **Páginas de propiedades**, haga clic en **Instrumentación**.  
   
-3.  Escriba el comando en el cuadro de texto **Línea de comandos** en **Eventos anteriores a la instrumentación**.  
+3. Escriba el comando en el cuadro de texto **Línea de comandos** en **Eventos anteriores a la instrumentación**.  
   
     > [!NOTE]
     >  Puede hacer clic en el botón de puntos suspensivos **(...)** que se muestra junto al cuadro **Línea de comandos** para buscar y seleccionar el archivo .exe, .cmd o .bat apropiado.  
   
-4.  Haga clic en **Aceptar**.  
+4. Haga clic en **Aceptar**.  
   
      Para deshabilitar la ejecución del comando sin quitarlo, seleccione la casilla **Excluir de la instrumentación**. Para modificar la configuración de vinculador o compilador, utilice las páginas de propiedades de proyecto.  
   
 ### <a name="to-specify-post-instrument-commands"></a>Para especificar comandos posteriores a la instrumentación  
   
-1.  Realice uno de estos pasos:  
+1. Realice uno de estos pasos:  
   
-    -   Para especificar comandos posteriores a la instrumentación para todos los binarios de una sesión de rendimiento, seleccione el nodo de la sesión de rendimiento en **Explorador de rendimiento** y después haga clic con el botón derecho y seleccione **Propiedades**.  
+    - Para especificar comandos posteriores a la instrumentación para todos los binarios de una sesión de rendimiento, seleccione el nodo de la sesión de rendimiento en **Explorador de rendimiento** y después haga clic con el botón derecho y seleccione **Propiedades**.  
   
-    -   Para especificar comandos posteriores a la instrumentación para un binario concreto, haga clic con el botón derecho en el nombre del binario en la lista **Destinos** de la sesión de rendimiento y después seleccione **Propiedades**.  
+    - Para especificar comandos posteriores a la instrumentación para un binario concreto, haga clic con el botón derecho en el nombre del binario en la lista **Destinos** de la sesión de rendimiento y después seleccione **Propiedades**.  
   
-2.  En las **Páginas de propiedades**, haga clic en **Instrumentación**.  
+2. En las **Páginas de propiedades**, haga clic en **Instrumentación**.  
   
-3.  Escriba el comando en el cuadro de texto **Línea de comandos** en **Eventos posteriores a la instrumentación**.  
+3. Escriba el comando en el cuadro de texto **Línea de comandos** en **Eventos posteriores a la instrumentación**.  
   
     > [!NOTE]
     >  Puede hacer clic en el botón de puntos suspensivos **(...)** que se muestra junto al cuadro **Línea de comandos** para buscar y seleccionar el archivo .exe, .cmd o .bat apropiado.  
   
-4.  Haga clic en **Aceptar**.  
+4. Haga clic en **Aceptar**.  
   
      Para deshabilitar la ejecución del comando sin quitarlo, seleccione la casilla **Excluir de la instrumentación**. Para modificar la configuración de vinculador o compilador, utilice las páginas de propiedades de proyecto.  
   

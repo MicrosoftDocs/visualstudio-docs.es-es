@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2529b22d7039101f83952b3390221af5b78922b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34d988f88787efc2f40b663ef2f22e6273055533
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038717"
 ---
-# <a name="test-area-4-check-in"></a>Área de prueba 4: Proteger
+# <a name="test-area-4-check-in"></a>Área de prueba 4: Inserción en el repositorio
 Esta área de prueba de complemento de control de código fuente trata de enviar los elementos actualizados en el almacén de versiones a través de la **proteger** comando.
 
 ## <a name="command-menu-access"></a>Acceso al menú de comandos
@@ -33,11 +33,11 @@ Esta área de prueba de complemento de control de código fuente trata de enviar
 
 ## <a name="common-expected-behavior"></a>Comportamiento esperado comunes
 
--   Proyectos y archivos agregados a una solución o proyecto bajo control de código fuente aparecen en la **proteger** cuadro de diálogo y el **protecciones pendientes** ventana.
+- Proyectos y archivos agregados a una solución o proyecto bajo control de código fuente aparecen en la **proteger** cuadro de diálogo y el **protecciones pendientes** ventana.
 
--   Después de la comprobación en, los elementos agregados aparecen en el control de código fuente.
+- Después de la comprobación en, los elementos agregados aparecen en el control de código fuente.
 
--   Después de la comprobación en, los elementos actualizados son versiones correctas en el almacén.
+- Después de la comprobación en, los elementos actualizados son versiones correctas en el almacén.
 
 ## <a name="test-cases"></a>Casos de prueba
  Los siguientes son casos de prueba concretos para el área de prueba de inserción en el repositorio.

@@ -10,25 +10,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 114537976561e72a9b1922c41d94ffa5e7ce613b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9b02d5697260a9b212029ce1db4b7edb22de34c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714550"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038924"
 ---
 # <a name="code-context"></a>Contexto de código
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuración, un **contexto del código**:
 
--   Proporciona una abstracción de una posición en el código tal y como se sabe que el motor de depuración (DE). Para la mayoría de las arquitecturas de tiempo de ejecución en la actualidad, un contexto de código puede considerarse como una dirección en la secuencia de instrucciones de un programa. Para los idiomas no tradicionales, donde no se puede representar código por instrucciones, se puede representar un contexto de código por otros medios.
+- Proporciona una abstracción de una posición en el código tal y como se sabe que el motor de depuración (DE). Para la mayoría de las arquitecturas de tiempo de ejecución en la actualidad, un contexto de código puede considerarse como una dirección en la secuencia de instrucciones de un programa. Para los idiomas no tradicionales, donde no se puede representar código por instrucciones, se puede representar un contexto de código por otros medios.
 
--   Describe la posición actual en la secuencia de ejecución del programa que está depurando.
+- Describe la posición actual en la secuencia de ejecución del programa que está depurando.
 
--   Existe solo cuando se ha detenido un programa en un punto de interrupción.
+- Existe solo cuando se ha detenido un programa en un punto de interrupción.
 
--   Tiene un contexto de documento asociado.
+- Tiene un contexto de documento asociado.
 
--   Se implementa mediante un [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interfaz.
+- Se implementa mediante un [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interfaz.
 
 ## <a name="see-also"></a>Vea también
 - [Contexto de documento](../../extensibility/debugger/document-context.md)

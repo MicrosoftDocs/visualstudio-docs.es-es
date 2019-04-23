@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: ecbdd8b9f1fb1696986672bb621567944910660f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268783"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041684"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Crear Windows Forms para buscar en datos
 
@@ -69,25 +69,25 @@ Cree un nuevo **aplicación de Windows Forms** proyecto para cualquiera C# o Vis
 
 Este paso crea un origen de datos a partir de una base de datos utilizando el asistente para la **Configuración de origen de datos**:
 
-1.  Para abrir el **orígenes de datos** ventana, en el **datos** menú, haga clic en **Mostrar orígenes de datos**.
+1. Para abrir el **orígenes de datos** ventana, en el **datos** menú, haga clic en **Mostrar orígenes de datos**.
 
-2.  En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
-3.  Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
+3. Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
 
-4.  En la página **Elegir la conexión de datos** realice una de las siguientes operaciones:
+4. En la página **Elegir la conexión de datos** realice una de las siguientes operaciones:
 
     - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
     - Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.
 
-5.  Si su base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y haga clic en **Siguiente**.
+5. Si su base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y haga clic en **Siguiente**.
 
-6.  Haga clic en **Siguiente** en la página **Guardar la cadena de conexión en el archivo de configuración de la aplicación**.
+6. Haga clic en **Siguiente** en la página **Guardar la cadena de conexión en el archivo de configuración de la aplicación**.
 
-7.  Expanda el nodo **Tablas** en la página **Elija los objetos de base de datos**.
+7. Expanda el nodo **Tablas** en la página **Elija los objetos de base de datos**.
 
-8.  Seleccione la tabla **Customers** y, a continuación, haga clic en **Finalizar**.
+8. Seleccione la tabla **Customers** y, a continuación, haga clic en **Finalizar**.
 
      Se agrega al proyecto **NorthwindDataSet** y la tabla **Customers** aparece en la ventana **Orígenes de datos**.
 
@@ -95,9 +95,9 @@ Este paso crea un origen de datos a partir de una base de datos utilizando el as
 
 Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario:
 
-1.  Expanda el nodo **Customers** en la ventana **Orígenes de datos**.
+1. Expanda el nodo **Customers** en la ventana **Orígenes de datos**.
 
-2.  Arrastre el nodo **Customers** desde la ventana **Orígenes de datos** hasta el formulario.
+2. Arrastre el nodo **Customers** desde la ventana **Orígenes de datos** hasta el formulario.
 
      En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.
 
@@ -105,11 +105,11 @@ Puede crear los controles enlazados a datos arrastrando elementos desde la venta
 
 Puede agregar una cláusula WHERE a la consulta original utilizando el **generador de criterios de búsqueda** cuadro de diálogo:
 
-1.  Seleccione el control <xref:System.Windows.Forms.DataGridView> y, a continuación, elija **Agregar consulta** en el menú **Datos**.
+1. Seleccione el control <xref:System.Windows.Forms.DataGridView> y, a continuación, elija **Agregar consulta** en el menú **Datos**.
 
-2.  Tipo **FillByCity** en el **nuevo nombre de consulta** área en la **generador de criterios de búsqueda** cuadro de diálogo.
+2. Tipo **FillByCity** en el **nuevo nombre de consulta** área en la **generador de criterios de búsqueda** cuadro de diálogo.
 
-3.  Agregue `WHERE City = @City` a la consulta en el área **Texto de la consulta**.
+3. Agregue `WHERE City = @City` a la consulta en el área **Texto de la consulta**.
 
      La consulta debe ser similar a lo siguiente:
 
@@ -123,7 +123,7 @@ Puede agregar una cláusula WHERE a la consulta original utilizando el **generad
     > [!NOTE]
     > Orígenes de datos de Access y OLE DB utilizan el signo de interrogación ("?") para denotar los parámetros, por lo que la cláusula WHERE tendría un aspecto similar al siguiente: `WHERE City = ?`.
 
-4.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Generador de criterios de búsqueda**.
+4. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Generador de criterios de búsqueda**.
 
      **FillByCityToolStrip** se agrega al formulario.
 
@@ -131,9 +131,9 @@ Puede agregar una cláusula WHERE a la consulta original utilizando el **generad
 
 Ejecutar la aplicación abre el formulario y prepara tomar el parámetro como entrada:
 
-1.  Presione **F5** para ejecutar la aplicación.
+1. Presione **F5** para ejecutar la aplicación.
 
-2.  Escriba **Londres** en el cuadro de texto **Ciudad** y haga clic en **FillByCity**.
+2. Escriba **Londres** en el cuadro de texto **Ciudad** y haga clic en **FillByCity**.
 
      La cuadrícula de datos se rellena con los clientes que cumplen los criterios. En este ejemplo, la cuadrícula de datos muestra sólo los clientes que tienen un valor de **Londres** en su columna **Ciudad**.
 

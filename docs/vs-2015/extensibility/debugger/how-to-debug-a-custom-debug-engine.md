@@ -11,12 +11,12 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5292d2cde8a75a239f7a905d8cf5d80b09a8f61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7effa937a8faa0a238f8be2505ddf47223010bc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039954"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Cómo Depurar un motor de depuración personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft
   
 ### <a name="debugging-a-custom-debug-engine"></a>Depuración de un motor de depuración personalizado  
   
-1.  Iniciar msvsmon.exe, el Monitor de depuración remota.  
+1. Iniciar msvsmon.exe, el Monitor de depuración remota.  
   
-2.  Desde el **herramientas** menú msvsmon.exe, seleccione **opciones** para abrir el **opciones** cuadro de diálogo.  
+2. Desde el **herramientas** menú msvsmon.exe, seleccione **opciones** para abrir el **opciones** cuadro de diálogo.  
   
-3.  Seleccione la opción "sin autenticación" y haga clic en **Aceptar**.  
+3. Seleccione la opción "sin autenticación" y haga clic en **Aceptar**.  
   
-4.  Iniciar una instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] y abra el proyecto DE personalizado.  
+4. Iniciar una instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] y abra el proyecto DE personalizado.  
   
-5.  Inicie una segunda instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] y abra el proyecto personalizado que se inicia la DE (para el desarrollo, esto es generalmente en el subárbol del registro experimental que se haya configurado cuando se instala VSIP).  
+5. Inicie una segunda instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] y abra el proyecto personalizado que se inicia la DE (para el desarrollo, esto es generalmente en el subárbol del registro experimental que se haya configurado cuando se instala VSIP).  
   
-6.  En esta segunda instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], cargar un archivo de origen desde el proyecto personalizado e inicie el programa que se desea depurar. Espere unos minutos para permitir que la DE cargar o espere hasta que se alcanza un punto de interrupción.  
+6. En esta segunda instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], cargar un archivo de origen desde el proyecto personalizado e inicie el programa que se desea depurar. Espere unos minutos para permitir que la DE cargar o espere hasta que se alcanza un punto de interrupción.  
   
-7.  En la primera instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (con el proyecto DE), seleccione **asociar al proceso** desde el **depurar** menú.  
+7. En la primera instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (con el proyecto DE), seleccione **asociar al proceso** desde el **depurar** menú.  
   
-8.  En el **asociar al proceso** cuadro de diálogo, cambie el **transporte** a **remoto (nativo sólo sin autenticación)**.  
+8. En el **asociar al proceso** cuadro de diálogo, cambie el **transporte** a **remoto (nativo sólo sin autenticación)**.  
   
 9. Cambiar el **calificador** al nombre de la máquina (Nota: hay un historial de entradas, por lo que deberá escribir este nombre sólo una vez).  
   
@@ -57,21 +57,21 @@ Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft
   
 ### <a name="debugging-a-custom-project-type"></a>Depuración de un tipo de proyecto personalizado  
   
-1.  Iniciar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en el subárbol del registro normal y cargar el proyecto escriba proyecto (Esto es, el origen al tipo de proyecto, no una instancia del tipo de proyecto).  
+1. Iniciar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en el subárbol del registro normal y cargar el proyecto escriba proyecto (Esto es, el origen al tipo de proyecto, no una instancia del tipo de proyecto).  
   
-2.  Abra las propiedades del proyecto y vaya a la **depurar** página. Para el **comando**, escriba la ruta de acceso a la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE (de forma predeterminada, se trata de *[unidad]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 8\Common7\IDE\devenv.exe).  
+2. Abra las propiedades del proyecto y vaya a la **depurar** página. Para el **comando**, escriba la ruta de acceso a la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE (de forma predeterminada, se trata de *[unidad]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 8\Common7\IDE\devenv.exe).  
   
-3.  Para el **argumentos de comando**, tipo `/rootsuffix exp` para el subárbol del registro experimental (creado cuando se instaló VSIP).  
+3. Para el **argumentos de comando**, tipo `/rootsuffix exp` para el subárbol del registro experimental (creado cuando se instaló VSIP).  
   
-4.  Haga clic en **Aceptar** para aceptar los cambios.  
+4. Haga clic en **Aceptar** para aceptar los cambios.  
   
-5.  Inicie el tipo de proyecto presionando F5. Esto iniciará una segunda instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+5. Inicie el tipo de proyecto presionando F5. Esto iniciará una segunda instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-6.  En este momento, puede colocar puntos de interrupción en el código de origen del tipo de proyecto.  
+6. En este momento, puede colocar puntos de interrupción en el código de origen del tipo de proyecto.  
   
-7.  En la segunda instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], cargar o crear una nueva instancia del tipo de proyecto. Durante la carga o la creación, se pueden alcanzar los puntos de interrupción.  
+7. En la segunda instancia de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], cargar o crear una nueva instancia del tipo de proyecto. Durante la carga o la creación, se pueden alcanzar los puntos de interrupción.  
   
-8.  Depurar el tipo de proyecto.  
+8. Depurar el tipo de proyecto.  
   
 9. Si elige depurar el proceso de iniciar un DE, puede realizar los pasos del procedimiento de "Depuración de un motor de depuración de personalizado" para asociar a la DE una vez que se inicie. Esto le dará tres instancias de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ejecutando: uno para el origen del tipo de proyecto, para el tipo de proyecto con instancias y una tercera conectados a la DE segundo.  
   

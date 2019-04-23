@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040721"
 ---
 # <a name="ribbon-object-model-overview"></a>Información general sobre el modelo de objetos de cinta de opciones
   La [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expone un modelo de objetos fuertemente tipados que puede usar para obtener y establecer las propiedades de controles de cinta de opciones en tiempo de ejecución. Por ejemplo, dinámicamente puede rellenar los controles de menú, o mostrar y ocultar controles contextualmente. También puede agregar pestañas, grupos y controles a una cinta de opciones, pero antes de que se carga la cinta de opciones mediante la aplicación de Office. Para obtener información, consulte [establecer las propiedades que se vuelven de solo lectura](#SettingReadOnlyProperties).
@@ -26,12 +26,12 @@ ms.locfileid: "56601041"
 
  Este modelo de objetos de la cinta de opciones consiste principalmente en el [clase Ribbon](#RibbonClass), [eventos de la cinta de opciones](#RibbonEvents), y [clases de controles de cinta de opciones](#RibbonControlClasses).
 
-##  <a name="RibbonClass"></a> Clase Ribbon
+## <a name="RibbonClass"></a> Clase Ribbon
  Cuando se agrega un nuevo **cinta (diseñador Visual)** elemento a un proyecto, Visual Studio agrega un **cinta** clase al proyecto. El **cinta** clase hereda de la <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> clase.
 
  Esta clase aparece como una clase parcial que se divide entre el archivo de código de la cinta de opciones y el archivo de código del Diseñador de cinta.
 
-##  <a name="RibbonEvents"></a> Eventos de Ribbon
+## <a name="RibbonEvents"></a> Eventos de Ribbon
  El **cinta** clase contiene los siguientes tres eventos:
 
 |evento|Descripción|
@@ -40,7 +40,7 @@ ms.locfileid: "56601041"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Permite a las imágenes de la memoria caché en la personalización de la cinta de opciones cuando se cargue la cinta de opciones. Puede obtener una ligera mejora del rendimiento si escribe código para almacenar en caché las imágenes de la cinta de opciones en este controlador de eventos. Para obtener más información, consulta <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Se genera cuando se cierra la instancia de la cinta de opciones.|
 
-##  <a name="RibbonControlClasses"></a> Controles de cinta de opciones
+## <a name="RibbonControlClasses"></a> Controles de cinta de opciones
  El <xref:Microsoft.Office.Tools.Ribbon> espacio de nombres contiene un tipo para cada control que se ve en el **controles de la cinta de Office** grupo de la **cuadro de herramientas**.
 
  En la tabla siguiente se muestra el tipo para cada `Ribbon` control. Para obtener una descripción de cada control, vea [información general de la cinta de opciones](../vsto/ribbon-overview.md).
@@ -89,7 +89,7 @@ ms.locfileid: "56601041"
 |Obtener los grupos de un <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Utilice la propiedad <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|
 |Especifique el número de filas y columnas que aparecen en un <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use la <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> y <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> propiedades.|
 
-##  <a name="SettingReadOnlyProperties"></a> Establecer las propiedades que se vuelven de solo lectura
+## <a name="SettingReadOnlyProperties"></a> Establecer las propiedades que se vuelven de solo lectura
  Algunas propiedades solo pueden establecerse antes de que cargue la cinta de opciones. Hay tres lugares para establecer estas propiedades:
 
 - En Visual Studio **propiedades** ventana.
@@ -126,13 +126,13 @@ ms.locfileid: "56601041"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> Propiedades que se vuelven de solo lectura
+### <a name="ReadOnlyProperties"></a> Propiedades que se vuelven de solo lectura
  La siguiente tabla muestra las propiedades que solo pueden establecerse antes de que cargue la cinta de opciones.
 
 > [!NOTE]
 >  Puede establecer las propiedades de los controles de menús dinámicos en cualquier momento. Esta tabla no se aplica en ese caso.
 
-|Property|Clase de control de la cinta de opciones|
+|Propiedad|Clase de control de la cinta de opciones|
 |--------------|--------------------------|
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|
 |**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|

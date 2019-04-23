@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: publicar una aplicación de WPF con estilos visuales habilitados | Microsoft Docs'
+title: Procedimiento Publicar una aplicación de WPF con estilos visuales habilitados | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ed9a9a349f2496343a9a9828cd436d8d4015aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038132"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Cómo: Publicar una aplicación WPF con estilos visuales habilitados
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedimiento Publicación de una aplicación WPF con estilos visuales habilitados
 
 Los estilos visuales permiten cambiar el aspecto de los controles comunes en función del tema elegido por el usuario. De forma predeterminada, los estilos visuales no están habilitados para las aplicaciones de Windows Presentation Foundation (WPF), por lo que es necesario habilitarlos manualmente. Sin embargo, habilitar los estilos visuales para una aplicación WPF y publicar después la solución produce un error. En este tema se describe cómo resolver este error y el proceso para publicar una aplicación WPF con estilos visuales habilitados. Para obtener más información sobre los estilos visuales, vea [información general de los estilos visuales](/windows/desktop/Controls/visual-styles-overview). Para obtener más información sobre el mensaje de error, consulte [solucionar los errores específicos en las implementaciones de ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
@@ -31,7 +31,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
 
   A continuación, podrá mover los archivos publicados a la ubicación desde la que desea que los usuarios finales instalen la aplicación.
 
-##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publicar la solución sin estilos visuales habilitados
+## <a name="publish-the-solution-without-visual-styles-enabled"></a>Publicar la solución sin estilos visuales habilitados
 
 1. Asegúrese de que el proyecto no tiene estilos visuales habilitados. En primer lugar, compruebe si existe el XML siguiente en el archivo de manifiesto del proyecto. A continuación, si el XML está presente, inclúyalo en una etiqueta de comentario.
 
@@ -72,7 +72,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
 
          Este botón muestra todos los elementos del proyecto, incluidos los que se han excluido y los que normalmente están ocultos. El archivo de manifiesto aparece como un elemento de proyecto.
 
-2. Compile y publique la solución. Para obtener más información sobre cómo publicar la solución, vea [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+2. Compile y publique la solución. Para obtener más información sobre cómo publicar la solución, vea [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ## <a name="create-a-manifest-file"></a>Crear un archivo de manifiesto
 

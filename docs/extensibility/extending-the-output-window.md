@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e7cb1a462c79f498687296afd8c64accfc1458
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706215"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041085"
 ---
 # <a name="extend-the-output-window"></a>Ampliar la ventana de salida
 El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. Visual Studio tiene estos paneles integrados: **Compilar**, en los proyectos que se comunican los mensajes sobre las compilaciones, y **General**, en el que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comunica mensajes de información sobre el IDE. Proyectos de obtención una referencia a la **compilar** automáticamente a través del panel la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> métodos de interfaz y Visual Studio ofrece acceso directo a la **General** panel a través de la <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servicio. Además de los paneles integrados, puede crear y administrar sus propios paneles personalizados.
@@ -25,22 +25,22 @@ El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. V
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>Crear una extensión que usa el panel de resultados
  Puede realizar una extensión que ejerce distintos aspectos del panel de salida.
 
-1.  Cree un proyecto VSIX denominado `TestOutput` con un comando de menú denominado **TestOutput**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Cree un proyecto VSIX denominado `TestOutput` con un comando de menú denominado **TestOutput**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Agregue las siguientes referencias:
+2. Agregue las siguientes referencias:
 
-    1.  EnvDTE
+    1. EnvDTE
 
-    2.  EnvDTE80
+    2. EnvDTE80
 
-3.  En *TestOutput.cs*, agregue la siguiente instrucción using:
+3. En *TestOutput.cs*, agregue la siguiente instrucción using:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  En *TestOutput.cs*, elimine el `ShowMessageBox` método. Agregue el código auxiliar del método siguiente:
+4. En *TestOutput.cs*, elimine el `ShowMessageBox` método. Agregue el código auxiliar del método siguiente:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. V
     }
     ```
 
-5.  En el constructor TestOutput, cambie el controlador de comandos a OutputCommandHandler. Aquí está lo que agrega los comandos:
+5. En el constructor TestOutput, cambie el controlador de comandos a OutputCommandHandler. Aquí está lo que agrega los comandos:
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. V
     }
     ```
 
-6.  Las secciones siguientes tienen métodos diferentes que muestran distintas formas de trabajar con el panel de salida. Puede llamar a estos métodos al cuerpo de la `OutputCommandHandler()` método. Por ejemplo, el código siguiente agrega el `CreatePane()` método indicado en la sección siguiente.
+6. Las secciones siguientes tienen métodos diferentes que muestran distintas formas de trabajar con el panel de salida. Puede llamar a estos métodos al cuerpo de la `OutputCommandHandler()` método. Por ejemplo, el código siguiente agrega el `CreatePane()` método indicado en la sección siguiente.
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

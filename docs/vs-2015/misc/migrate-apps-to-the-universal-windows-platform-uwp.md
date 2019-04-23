@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042579"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrar aplicaciones a la Plataforma universal de Windows (UWP)
 Haga los cambios manuales necesarios en los archivos de proyecto existentes para las aplicaciones de la Tienda Windows 8.1, las aplicaciones de Windows Phone 8.1 o las aplicaciones universales de Windows creadas con Visual Studio 2015 RC, de modo que se puedan usar con Visual Studio 2015 RTM. (Si tiene una aplicación universal para Windows 8.1 con un proyecto de aplicación de Windows y un proyecto de Windows Phone, deberá seguir los pasos indicados a continuación para migrar cada proyecto).  
@@ -31,17 +31,17 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
   Si no desea hacer todos estos cambios, obtenga información sobre cómo [migrar sus aplicaciones existentes](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) a un nuevo proyecto universal de Windows.  
   
-##  <a name="MigrateCSharp"></a> Migrar sus aplicaciones C# /VB Windows Store 8.1 o Windows Phone 8.1 para usar la plataforma Universal de Windows  
+## <a name="MigrateCSharp"></a> Migrar sus aplicaciones C# /VB Windows Store 8.1 o Windows Phone 8.1 para usar la plataforma Universal de Windows  
   
 #### <a name="migrate-your-cvb-project-files"></a>Migrar los archivos de proyecto de C#/VB  
   
-1.  Para averiguar la plataforma universal de Windows que ha instalado, abra esta carpeta: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Contiene una lista de carpetas para cada plataforma universal de Windows que está instalada. El nombre de la carpeta es la versión de la plataforma universal de Windows que ha instalado. Por ejemplo, este dispositivo Windows 10 tiene la versión 10.0.10240.0 de la Plataforma universal de Windows instalada.  
+1. Para averiguar la plataforma universal de Windows que ha instalado, abra esta carpeta: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Contiene una lista de carpetas para cada plataforma universal de Windows que está instalada. El nombre de la carpeta es la versión de la plataforma universal de Windows que ha instalado. Por ejemplo, este dispositivo Windows 10 tiene la versión 10.0.10240.0 de la Plataforma universal de Windows instalada.  
   
      ![Abra la carpeta para ver las versiones instaladas](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      Se puede instalar más de una versión de la plataforma universal de Windows. Se recomienda usar la versión más reciente de la aplicación.  
   
-2.  Con el Explorador de archivos, vaya a la carpeta en la que está almacenado su proyecto UWP. Cree un archivo .json en esta carpeta. Asigne el nombre project.json al archivo y agréguele el siguiente contenido:  
+2. Con el Explorador de archivos, vaya a la carpeta en la que está almacenado su proyecto UWP. Cree un archivo .json en esta carpeta. Asigne el nombre project.json al archivo y agréguele el siguiente contenido:  
   
     ```json  
     {  
@@ -66,7 +66,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     ```  
   
-3.  Cree un archivo llamado default.rd.xml con el siguiente contenido. Si tiene un proyecto de VB, agregue este archivo al directorio My Project para el proyecto. Si tiene un proyecto de C#, agregue este archivo al directorio Properties para el proyecto.  
+3. Cree un archivo llamado default.rd.xml con el siguiente contenido. Si tiene un proyecto de VB, agregue este archivo al directorio My Project para el proyecto. Si tiene un proyecto de C#, agregue este archivo al directorio Properties para el proyecto.  
   
     ```xml  
     <?xml version="1.0"?>  
@@ -78,23 +78,23 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
     </Application></Directives>  
     ```  
   
-4.  Abra la solución que contiene su aplicación existente de Windows Phone 8.1 o la Tienda Windows 8.1 en Visual Studio.  
+4. Abra la solución que contiene su aplicación existente de Windows Phone 8.1 o la Tienda Windows 8.1 en Visual Studio.  
   
-5.  En el Explorador de soluciones, haga clic con el botón secundario en el proyecto existente de la aplicación y, luego, seleccione **Descargar el proyecto**. Después de descargar el proyecto, haga clic en el archivo de proyecto nuevo y elija Editar el archivo .csproj o .vbproj.  
+5. En el Explorador de soluciones, haga clic con el botón secundario en el proyecto existente de la aplicación y, luego, seleccione **Descargar el proyecto**. Después de descargar el proyecto, haga clic en el archivo de proyecto nuevo y elija Editar el archivo .csproj o .vbproj.  
   
      ![A la derecha, haga clic en el proyecto y elija Editar](../misc/media/uap-editproject.png "UAP_EditProject")  
   
-6.  Buscar el \<PropertyGroup > elemento que contiene el \<TargetPlatformVersion > elemento con un valor de 8.1. Realice los pasos siguientes para este \<PropertyGroup > elemento:  
+6. Buscar el \<PropertyGroup > elemento que contiene el \<TargetPlatformVersion > elemento con un valor de 8.1. Realice los pasos siguientes para este \<PropertyGroup > elemento:  
   
-    1.  Establezca el valor de la \<plataforma > elemento para: **x86**.  
+    1. Establezca el valor de la \<plataforma > elemento para: **x86**.  
   
-    2.  Agregar un \<TargetPlatformIdentifier > elemento y establezca su valor en: **UAP**.  
+    2. Agregar un \<TargetPlatformIdentifier > elemento y establezca su valor en: **UAP**.  
   
-    3.  Cambie el valor existente de la \<TargetPlatformVersion > elemento para que sea el valor de la versión de plataforma Universal de Windows instalada. Agregue también un \<TargetPlatformMinVersion > elemento y asígnele el mismo valor.  
+    3. Cambie el valor existente de la \<TargetPlatformVersion > elemento para que sea el valor de la versión de plataforma Universal de Windows instalada. Agregue también un \<TargetPlatformMinVersion > elemento y asígnele el mismo valor.  
   
-    4.  Cambie el valor de la \<MinimumVisualStudioVersion > elemento para: **14**.  
+    4. Cambie el valor de la \<MinimumVisualStudioVersion > elemento para: **14**.  
   
-    5.  Reemplace el \<ProjectTypeGuids > elemento tal y como se muestra a continuación:  
+    5. Reemplace el \<ProjectTypeGuids > elemento tal y como se muestra a continuación:  
   
          Para C#:  
   
@@ -108,9 +108,9 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>  
         ```  
   
-    6.  Agregar un \<EnableDotNetNativeCompatibleProfile > elemento y establezca su valor en: **true**.  
+    6. Agregar un \<EnableDotNetNativeCompatibleProfile > elemento y establezca su valor en: **true**.  
   
-    7.  La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Si el proyecto incluye activos no escalados a 200, deberá agregar una \<UapDefaultAssetScale > elemento con el valor de la escala de los recursos a este PropertyGroup. Más información sobre [activos y escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
+    7. La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Si el proyecto incluye activos no escalados a 200, deberá agregar una \<UapDefaultAssetScale > elemento con el valor de la escala de los recursos a este PropertyGroup. Más información sobre [activos y escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
   
          Ahora su \<PropertyGroup > elemento debe ser similar a este ejemplo:  
   
@@ -129,7 +129,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
         </PropertyGroup>  
         ```  
   
-7.  Reemplace todas las instancias de 12.0 por 14.0 para que reflejen la versión de Visual Studio que está usando ahora. Como estas instancias:  
+7. Reemplace todas las instancias de 12.0 por 14.0 para que reflejen la versión de Visual Studio que está usando ahora. Como estas instancias:  
   
     ```xml  
     <Project Tools Version="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -140,7 +140,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
         <VisualStudioVersion>14.0</VisualStudioVersion>  
     ```  
   
-8.  Buscar \<PropertyGroup > elementos que están configurados para la plataforma AnyCPU como parte del atributo Condition. Quite estos elementos y todos sus elementos secundarios. AnyCPU no es compatible con las aplicaciones de Windows 10 en Visual Studio 2015. Por ejemplo, debe quitar \<PropertyGroup > elementos como estos:  
+8. Buscar \<PropertyGroup > elementos que están configurados para la plataforma AnyCPU como parte del atributo Condition. Quite estos elementos y todos sus elementos secundarios. AnyCPU no es compatible con las aplicaciones de Windows 10 en Visual Studio 2015. Por ejemplo, debe quitar \<PropertyGroup > elementos como estos:  
   
     ```xml  
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
@@ -246,35 +246,35 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
      Ahora tiene que seguir los pasos necesarios para [actualizar los archivos de manifiesto del paquete](#PackageManifest) de todos los proyectos de la Tienda Windows 8.1 o de Windows Phone 8.1.  
   
-##  <a name="MigrateCPlusPlus"></a> Migrar las aplicaciones de C++ Windows Store 8.1 o Windows Phone 8.1 para usar la plataforma Universal de Windows  
+## <a name="MigrateCPlusPlus"></a> Migrar las aplicaciones de C++ Windows Store 8.1 o Windows Phone 8.1 para usar la plataforma Universal de Windows  
   
 #### <a name="migrate-your-c-project-files"></a>Migrar los archivos de proyecto de C++  
   
-1.  Para averiguar la plataforma universal de Windows que ha instalado, abra esta carpeta: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Contiene una lista de carpetas para cada plataforma universal de Windows que está instalada. El nombre de la carpeta es la versión de la plataforma universal de Windows que ha instalado. Por ejemplo, este dispositivo Windows 10 tiene la versión 10.0.10240.0 de la Plataforma universal de Windows instalada.  
+1. Para averiguar la plataforma universal de Windows que ha instalado, abra esta carpeta: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Contiene una lista de carpetas para cada plataforma universal de Windows que está instalada. El nombre de la carpeta es la versión de la plataforma universal de Windows que ha instalado. Por ejemplo, este dispositivo Windows 10 tiene la versión 10.0.10240.0 de la Plataforma universal de Windows instalada.  
   
      ![Abra la carpeta para ver las versiones instaladas](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      Se puede instalar más de una versión de la plataforma universal de Windows. Se recomienda usar la versión más reciente de la aplicación.  
   
-2.  Abra la solución que contiene su aplicación existente de Windows Phone 8.1 o la Tienda Windows 8.1 C++ en Visual Studio.  
+2. Abra la solución que contiene su aplicación existente de Windows Phone 8.1 o la Tienda Windows 8.1 C++ en Visual Studio.  
   
      Haga clic con el botón secundario en el proyecto existente en el Explorador de soluciones y, a continuación, seleccione **Descargar el proyecto**. Después de descargar el proyecto, vuelva a hacer clic con el botón secundario en el archivo de proyecto y elija Editar el archivo .vbproj.  
   
      ![Derecha&#45;haga clic en el archivo de proyecto y elija Editar](../misc/media/uap-editcplusproject.png "UAP_EditCPlusProject")  
   
-3.  Buscar el \<PropertyGroup > elemento que contiene el \<ApplicationTypeRevision > elemento con un valor de 8.1. Realice los pasos siguientes para este \<PropertyGroup > elemento:  
+3. Buscar el \<PropertyGroup > elemento que contiene el \<ApplicationTypeRevision > elemento con un valor de 8.1. Realice los pasos siguientes para este \<PropertyGroup > elemento:  
   
-    1.  Agregar un \<WindowsTargetPlatformVersion > elemento y un \<WindowsTargetPlatformMinVersion > elemento y asígneles el valor de la versión de plataforma Universal de Windows instalada.  
+    1. Agregar un \<WindowsTargetPlatformVersion > elemento y un \<WindowsTargetPlatformMinVersion > elemento y asígneles el valor de la versión de plataforma Universal de Windows instalada.  
   
-    2.  Actualice el valor del elemento ApplicationTypeRevision de 8.1 a 10.0.  
+    2. Actualice el valor del elemento ApplicationTypeRevision de 8.1 a 10.0.  
   
-    3.  Cambie el valor de la \<MinimumVisualStudioVersion > elemento para: 14,  
+    3. Cambie el valor de la \<MinimumVisualStudioVersion > elemento para: 14,  
   
-    4.  Agregar un \<EnableDotNetNativeCompatibleProfile > elemento y establezca su valor en: true.  
+    4. Agregar un \<EnableDotNetNativeCompatibleProfile > elemento y establezca su valor en: true.  
   
-    5.  La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Si el proyecto incluye activos no escalados a 200, deberá agregar una \<UapDefaultAssetScale > elemento con el valor de la escala de los recursos a este PropertyGroup. Más información sobre [activos y escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
+    5. La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Si el proyecto incluye activos no escalados a 200, deberá agregar una \<UapDefaultAssetScale > elemento con el valor de la escala de los recursos a este PropertyGroup. Más información sobre [activos y escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
   
-    6.  Para Windows Phone proyectos solo, cambie el valor de \<ApplicationType > de Windows Phone para Windows Store.  
+    6. Para Windows Phone proyectos solo, cambie el valor de \<ApplicationType > de Windows Phone para Windows Store.  
   
          Ahora su \<PropertyGroup > elemento debe ser similar a este ejemplo:  
   
@@ -292,7 +292,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
         </PropertyGroup>  
         ```  
   
-4.  Cambie todas las instancias de la \<PlatformToolset > elemento tenga el valor v140. Por ejemplo:  
+4. Cambie todas las instancias de la \<PlatformToolset > elemento tenga el valor v140. Por ejemplo:  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">  
@@ -304,7 +304,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
       </PropertyGroup>  
     ```  
   
-5.  Para cada restantes \<PropertyGroup > elemento, compruebe si el elemento tiene un atributo Condition con una configuración de lanzamiento. Si es así, pero no contiene un \<UseDotNetNativeToolchain > elemento, a continuación, agregue uno. Establezca el valor de la \<UseDotNetNativeToolchain > elemento en true, similar al siguiente:  
+5. Para cada restantes \<PropertyGroup > elemento, compruebe si el elemento tiene un atributo Condition con una configuración de lanzamiento. Si es así, pero no contiene un \<UseDotNetNativeToolchain > elemento, a continuación, agregue uno. Establezca el valor de la \<UseDotNetNativeToolchain > elemento en true, similar al siguiente:  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">  
@@ -317,13 +317,13 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     ```  
   
-6.  Guarde los cambios. Después cierre el archivo de proyecto.  
+6. Guarde los cambios. Después cierre el archivo de proyecto.  
   
-7.  Haga clic con el botón secundario en el archivo de proyecto en el Explorador de soluciones y elija Volver a cargar el proyecto en el menú contextual. Todos los archivos del proyecto ahora deben aparecer en el Explorador de soluciones.  
+7. Haga clic con el botón secundario en el archivo de proyecto en el Explorador de soluciones y elija Volver a cargar el proyecto en el menú contextual. Todos los archivos del proyecto ahora deben aparecer en el Explorador de soluciones.  
   
      Ahora tiene que seguir los pasos necesarios para [actualizar los archivos de manifiesto del paquete](#PackageManifest) de todos los proyectos de la Tienda Windows 8.1 o de Windows Phone 8.1.  
   
-##  <a name="PackageManifest"></a> Actualizar el archivo de manifiesto de paquete para los proyectos de los Windows Store 8.1 y Windows Phone 8.1  
+## <a name="PackageManifest"></a> Actualizar el archivo de manifiesto de paquete para los proyectos de los Windows Store 8.1 y Windows Phone 8.1  
  Debe actualizar el archivo de manifiesto del paquete para cada proyecto de la solución.  
   
 #### <a name="update-your-package-manifest-file"></a>Actualizar el archivo de manifiesto del paquete  
@@ -585,22 +585,22 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
 17. Deberá quitar algunos archivos ocultos para poder volver a abrir la solución.  
   
-    1.  Abra el Explorador de archivos, haga clic en **Vista** en la barra de herramientas y seleccione **Elementos ocultos** y **Extensiones de nombre de archivo**. Abra esta carpeta en la máquina: \<ruta de acceso para la ubicación de la solución >\\.vs\\{nombre del proyecto} \v14. Si hay un archivo con una extensión de archivo .suo, elimínelo.  
+    1. Abra el Explorador de archivos, haga clic en **Vista** en la barra de herramientas y seleccione **Elementos ocultos** y **Extensiones de nombre de archivo**. Abra esta carpeta en la máquina: \<ruta de acceso para la ubicación de la solución >\\.vs\\{nombre del proyecto} \v14. Si hay un archivo con una extensión de archivo .suo, elimínelo.  
   
-    2.  Ahora vuelva a la carpeta donde se encuentra la solución. Abra las carpetas de los proyectos que existen en la solución. Si un archivo dentro de cualquiera de estas carpetas de proyecto tiene una extensión .csproj.user o .vbproj.user, elimínelo.  
+    2. Ahora vuelva a la carpeta donde se encuentra la solución. Abra las carpetas de los proyectos que existen en la solución. Si un archivo dentro de cualquiera de estas carpetas de proyecto tiene una extensión .csproj.user o .vbproj.user, elimínelo.  
   
          Ahora puede volver a abrir la solución en Visual Studio. Está listo para codificar, compilar y depurar la aplicación con la plataforma universal de Windows.  
   
          Aprenda a [adaptar el código](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx) para sacar el máximo partido a las novedades de la Plataforma universal de Windows.  
   
-##  <a name="PreviousVersions"></a> Cambios necesarios para las aplicaciones Windows universales existentes creadas con Visual Studio 2015 RC  
+## <a name="PreviousVersions"></a> Cambios necesarios para las aplicaciones Windows universales existentes creadas con Visual Studio 2015 RC  
  Si creó aplicaciones universales de Windows 10 con Visual Studio 2015 RC, debe redirigir el proyecto para usar la versión de la Plataforma universal de Windows instalada con la versión más reciente de Visual Studio 2015. Las versiones anteriores no son compatibles. Los cambios necesarios son diferentes según el idioma utilizado para crear la aplicación:  
   
--   [Aplicaciones de C# /VB](#RCUpdate10CSharp)  
+- [Aplicaciones de C# /VB](#RCUpdate10CSharp)  
   
--   [Aplicaciones de C++](#RCUpdate10CPlusPlus)  
+- [Aplicaciones de C++](#RCUpdate10CPlusPlus)  
   
-###  <a name="RCUpdate10CSharp"></a> Actualizar los proyectos de C# /VB para usar la plataforma Universal de Windows más reciente  
+### <a name="RCUpdate10CSharp"></a> Actualizar los proyectos de C# /VB para usar la plataforma Universal de Windows más reciente  
  Al abrir la solución de la aplicación existente, verá que la aplicación necesita una actualización:  
   
  ![Ver el proyecto en el Explorador de soluciones](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")  
@@ -731,13 +731,13 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
 13. Abra el archivo package.appxmanifest en el proyecto.  
   
-    1.  Buscar el \<TargetDeviceFamily > elemento. Cambie los atributos MinVersion y MaxVersionTested para que correspondan con la versión de Plataforma universal de Windows que tenga instalada. Así:  
+    1. Buscar el \<TargetDeviceFamily > elemento. Cambie los atributos MinVersion y MaxVersionTested para que correspondan con la versión de Plataforma universal de Windows que tenga instalada. Así:  
   
         ```xml  
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />  
         ```  
   
-    2.  Guarde los cambios.  
+    2. Guarde los cambios.  
   
 14. Use el Administrador de NuGet para agregar los paquetes que eliminó en el paso anterior. Una diferencia significativa del formato de proyecto de Windows 10 entre Visual Studio 2015 RC y Visual Studio 2015 RTM es que el formato RTM usa [NuGet](http://docs.nuget.org/) versión 3.  
   
@@ -745,19 +745,19 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     Si tiene proyectos de prueba unitaria para sus aplicaciones universales de Windows, también debe seguir [estos pasos](#MigrateUnitTest).  
   
-###  <a name="RCUpdate10CPlusPlus"></a> Actualizar los proyectos de C++ para usar la plataforma Universal de Windows más reciente  
+### <a name="RCUpdate10CPlusPlus"></a> Actualizar los proyectos de C++ para usar la plataforma Universal de Windows más reciente  
   
-1.  Para averiguar la plataforma universal de Windows que ha instalado, abra esta carpeta: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Contiene una lista de carpetas para cada plataforma universal de Windows que está instalada. El nombre de la carpeta es la versión de la plataforma universal de Windows que ha instalado. Por ejemplo, este dispositivo Windows 10 tiene la versión 10.0.10240.0 de la Plataforma universal de Windows instalada.  
+1. Para averiguar la plataforma universal de Windows que ha instalado, abra esta carpeta: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Contiene una lista de carpetas para cada plataforma universal de Windows que está instalada. El nombre de la carpeta es la versión de la plataforma universal de Windows que ha instalado. Por ejemplo, este dispositivo Windows 10 tiene la versión 10.0.10240.0 de la Plataforma universal de Windows instalada.  
   
      ![Abra la carpeta para ver las versiones instaladas](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      Se puede instalar más de una versión de la plataforma universal de Windows. Se recomienda usar la versión más reciente de la aplicación.  
   
-2.  Abra la solución que contiene la aplicación universal de Windows de C++. Haga clic con el botón secundario en el archivo .vcxproj del proyecto y elija descargar el archivo de proyecto. Después de descargar el proyecto, vuelva a hacer clic con el botón secundario en el archivo de proyecto y elija editarlo.  
+2. Abra la solución que contiene la aplicación universal de Windows de C++. Haga clic con el botón secundario en el archivo .vcxproj del proyecto y elija descargar el archivo de proyecto. Después de descargar el proyecto, vuelva a hacer clic con el botón secundario en el archivo de proyecto y elija editarlo.  
   
      ![Descargue el proyecto y, después, edite el archivo de proyecto](../misc/media/uap-editearliercplus.png "UAP_EditEarlierCPlus")  
   
-3.  Encontrar ningún \<PropertyGroup > elementos que no contienen un atributo Condition, pero sí contengan un \<ApplicationTypeRevision > elemento. Actualice el valor ApplicationTypeRevision de 8.2 a 10.0. Agregar un \<WindowsTargetPlatformVersion > y un \<WindowsTargetPlatformMinVersion > elemento y establecer sus valores como el valor de la versión de plataforma Universal de Windows que instaló.  
+3. Encontrar ningún \<PropertyGroup > elementos que no contienen un atributo Condition, pero sí contengan un \<ApplicationTypeRevision > elemento. Actualice el valor ApplicationTypeRevision de 8.2 a 10.0. Agregar un \<WindowsTargetPlatformVersion > y un \<WindowsTargetPlatformMinVersion > elemento y establecer sus valores como el valor de la versión de plataforma Universal de Windows que instaló.  
   
      Agregar un \<EnableDotNetNativeCompatibleProfile > elemento y establezca su valor en true si el elemento no existe ya.  
   
@@ -779,7 +779,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     ```  
   
-4.  Para cada restantes \<PropertyGroup > elemento, compruebe si el elemento tiene un atributo Condition con una configuración de lanzamiento. Si es así, pero no contiene un \<UseDotNetNativeToolchain > elemento, a continuación, agregue uno. Establezca el valor de la \<UseDotNetNativeToolchain > elemento en true, similar al siguiente:  
+4. Para cada restantes \<PropertyGroup > elemento, compruebe si el elemento tiene un atributo Condition con una configuración de lanzamiento. Si es así, pero no contiene un \<UseDotNetNativeToolchain > elemento, a continuación, agregue uno. Establezca el valor de la \<UseDotNetNativeToolchain > elemento en true, similar al siguiente:  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">  
@@ -792,34 +792,34 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     ```  
   
-5.  Deberá actualizar el \<EnableDotNetNativeCompatibleProfile > elemento y el \<UseDotNetNativeToolchain > elemento para habilitar .NET Native, pero .NET Native no está habilitado en las plantillas de C++.  
+5. Deberá actualizar el \<EnableDotNetNativeCompatibleProfile > elemento y el \<UseDotNetNativeToolchain > elemento para habilitar .NET Native, pero .NET Native no está habilitado en las plantillas de C++.  
   
      Guarde los cambios. Después cierre el archivo de proyecto.  
   
-6.  Haga clic con el botón secundario en el archivo de proyecto en el Explorador de soluciones y elija Volver a cargar el proyecto en el menú contextual. Todos los archivos del proyecto ahora deben aparecer en el Explorador de soluciones.  
+6. Haga clic con el botón secundario en el archivo de proyecto en el Explorador de soluciones y elija Volver a cargar el proyecto en el menú contextual. Todos los archivos del proyecto ahora deben aparecer en el Explorador de soluciones.  
   
-7.  Abra el archivo package.appxmanifest en el proyecto.  
+7. Abra el archivo package.appxmanifest en el proyecto.  
   
-    1.  Buscar el \<TargetDeviceFamily > elemento. Cambie los atributos MinVersion y MaxVersionTested para que correspondan con la versión de Plataforma universal de Windows que tenga instalada. Así:  
+    1. Buscar el \<TargetDeviceFamily > elemento. Cambie los atributos MinVersion y MaxVersionTested para que correspondan con la versión de Plataforma universal de Windows que tenga instalada. Así:  
   
         ```xml  
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />  
         ```  
   
-    2.  Guarde los cambios.  
+    2. Guarde los cambios.  
   
          Ahora puede codificar, compilar y depurar la aplicación.  
   
          Si tiene proyectos de prueba unitaria para sus aplicaciones universales de Windows, también debe seguir [estos pasos](#MigrateUnitTest).  
   
-##  <a name="MigrateUnitTest"></a> Cambios necesarios para los proyectos de prueba unitaria existente para las aplicaciones Windows universales creadas con Visual Studio 2015 RC  
+## <a name="MigrateUnitTest"></a> Cambios necesarios para los proyectos de prueba unitaria existente para las aplicaciones Windows universales creadas con Visual Studio 2015 RC  
  Si creó proyectos de prueba unitaria para aplicaciones universales de Windows 10 con Visual Studio 2015 RC, debe hacer estos cambios adicionales en los archivos de proyecto para usar dichos proyectos de prueba con la versión más reciente de Visual Studio 2015. Los cambios necesarios son diferentes según el idioma utilizado para crear la aplicación:  
   
--   [Aplicaciones de C# /VB](#UnitTestRCUpdate10CSharp)  
+- [Aplicaciones de C# /VB](#UnitTestRCUpdate10CSharp)  
   
--   [Aplicaciones de C++](#UnitTestRCUpdate10CPlusPlus)  
+- [Aplicaciones de C++](#UnitTestRCUpdate10CPlusPlus)  
   
-###  <a name="UnitTestRCUpdate10CSharp"></a> Actualizar los proyectos de prueba unitaria de C# / VB  
+### <a name="UnitTestRCUpdate10CSharp"></a> Actualizar los proyectos de prueba unitaria de C# / VB  
   
 1. Con Visual Studio, abra la solución que contiene el proyecto de prueba unitaria de C#/VB. Cambie el valor de la \<OuttputType > elemento para: AppContainerExe.  
   
@@ -992,9 +992,9 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
    Ahora puede ejecutar las pruebas unitarias.  
   
-###  <a name="UnitTestRCUpdate10CPlusPlus"></a> Actualizar los proyectos de C++ para usar la plataforma Universal de Windows más reciente  
+### <a name="UnitTestRCUpdate10CPlusPlus"></a> Actualizar los proyectos de C++ para usar la plataforma Universal de Windows más reciente  
   
-1.  Con Visual Studio, abra la solución que contiene el proyecto de prueba unitaria de C++. Quite los siguientes elementos:  
+1. Con Visual Studio, abra la solución que contiene el proyecto de prueba unitaria de C++. Quite los siguientes elementos:  
   
     ```xml  
   
@@ -1005,7 +1005,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     ```  
   
-2.  Agregue el siguiente \<ProjectConfiguration > elementos debajo de este elemento \<ItemGroup Label = "ProjectConfigurations" > Si aún no están en este archivo:  
+2. Agregue el siguiente \<ProjectConfiguration > elementos debajo de este elemento \<ItemGroup Label = "ProjectConfigurations" > Si aún no están en este archivo:  
   
     ```xml  
   
@@ -1020,7 +1020,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     ```  
   
-3.  Reemplace todas las apariciones de este elemento:  
+3. Reemplace todas las apariciones de este elemento:  
   
     ```xml  
   
@@ -1036,7 +1036,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     ```  
   
-4.  Agregue estas \<PropertyGroup > Si aún no están en el archivo de elementos:  
+4. Agregue estas \<PropertyGroup > Si aún no están en el archivo de elementos:  
   
     ```xml  
   
@@ -1055,7 +1055,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     ```  
   
-5.  Reemplace todas las apariciones de este elemento:  
+5. Reemplace todas las apariciones de este elemento:  
   
     ```xml  
   
@@ -1070,7 +1070,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     ```  
   
-6.  Reemplace todas las apariciones de este elemento:  
+6. Reemplace todas las apariciones de este elemento:  
   
     ```xml  
   
@@ -1086,7 +1086,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     ```  
   
-7.  Agregue estas \<ItemDefinitionGroup > elementos de la sección que ya contiene otros \<ItemDefinitionGroup > elementos:  
+7. Agregue estas \<ItemDefinitionGroup > elementos de la sección que ya contiene otros \<ItemDefinitionGroup > elementos:  
   
     ```xml  
   
@@ -1113,7 +1113,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     ```  
   
-8.  Eliminar los siguientes \< ItemGroup > elemento:  
+8. Eliminar los siguientes \< ItemGroup > elemento:  
   
     ```xml  
   

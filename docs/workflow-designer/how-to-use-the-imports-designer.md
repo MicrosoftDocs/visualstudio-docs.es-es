@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df041111bb452462c969995bacee97b08488d1c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11c0c959964fee21f2cdfe098907ab2dfe184f7e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038463"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Filtrar Usar el diseñador de importaciones
+# <a name="how-to-use-the-imports-designer"></a>Procedimiento Usar el diseñador de importaciones
 
 El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. De forma similar a la **importa** o **mediante** habilitar palabras clave en Visual Basic y C#, la especificación de espacios de nombres en el Diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre completo nombre del tipo de versión.
 
@@ -33,14 +33,14 @@ El diseñador de importaciones reacciona tanto a los cambios en la interfaz de u
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Para agregar un espacio de nombres a la lista de espacios de nombres importados
 
-1.  Abra una aplicación de servicio de flujo de trabajo de WCF, aplicación de consola de flujos de trabajo o proyecto de biblioteca de actividades en Visual Studio o una aplicación de flujo de trabajo rehospedado.
+1. Abra una aplicación de servicio de flujo de trabajo de WCF, aplicación de consola de flujos de trabajo o proyecto de biblioteca de actividades en Visual Studio o una aplicación de flujo de trabajo rehospedado.
 
-2.  Haga clic en **importaciones** en la parte inferior del lienzo principal. Aparecerá el diseñador de importaciones.
+2. Haga clic en **importaciones** en la parte inferior del lienzo principal. Aparecerá el diseñador de importaciones.
 
-3.  Escriba o seleccione un espacio de nombres desde el control de lista desplegable en la parte superior del diseñador de importaciones.
+3. Escriba o seleccione un espacio de nombres desde el control de lista desplegable en la parte superior del diseñador de importaciones.
 
      Cuando escriba, aparecerá una lista de espacios de nombres válidos que coinciden con los caracteres que se van escribiendo.
 
-4.  Presione **ENTRAR** para agregar el espacio de nombres a la lista.
+4. Presione **ENTRAR** para agregar el espacio de nombres a la lista.
 
-5.  Si desea quitar un espacio de nombres de la lista, seleccione el espacio de nombres y, a continuación, presione el **eliminar** en el teclado. Observe que un espacio de nombres solo se puede eliminar si el espacio de nombres no es válido por cualquier razón, por ejemplo si el proyecto ya no hace referencia al ensamblado que contiene el espacio de nombres.
+5. Si desea quitar un espacio de nombres de la lista, seleccione el espacio de nombres y, a continuación, presione el **eliminar** en el teclado. Observe que un espacio de nombres solo se puede eliminar si el espacio de nombres no es válido por cualquier razón, por ejemplo si el proyecto ya no hace referencia al ensamblado que contiene el espacio de nombres.

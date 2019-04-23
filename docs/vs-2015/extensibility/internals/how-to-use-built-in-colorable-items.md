@@ -1,5 +1,5 @@
 ---
-title: Filtrar Usar elementos coloreables integrados | Documentos de Microsoft
+title: Procedimiento Usar elementos coloreables integrados | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,23 +11,23 @@ ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2546d9e9c864772bf1a2d3063e8ce4adc1cd7605
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21a2b520111c07b6c964eae19f5a6064e926db70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039988"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>Filtrar Usar elementos coloreables integrados
+# <a name="how-to-use-built-in-colorable-items"></a>Procedimiento Usar elementos coloreables integrados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Antes de usar los elementos coloreables integrados, debe en primer lugar señalar al entorno de desarrollo integrado (IDE) que no proporcionan sus propios elementos coloreables personalizados, que en este caso sería <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> objetos. Para ello, establezca una entrada del registro del servicio de lenguaje.  
   
 ### <a name="to-use-built-in-colorable-items"></a>Para usar elementos coloreables integrados  
   
-1.  En HKEY_LOCAL_MACHINE\VisualStudio\\*X.Y*\Languages\Language servicios\\*Nombreidioma*, donde *X.Y* es una versión de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] y *Nombreidioma* es el nombre de su lenguaje, cree un valor de entrada del Registro DWORD llamado `RequestStockColors`.  
+1. En HKEY_LOCAL_MACHINE\VisualStudio\\*X.Y*\Languages\Language servicios\\*Nombreidioma*, donde *X.Y* es una versión de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] y *Nombreidioma* es el nombre de su lenguaje, cree un valor de entrada del Registro DWORD llamado `RequestStockColors`.  
   
-2.  Establecer el `RequestStockColors` valor de la entrada del registro en 1.  
+2. Establecer el `RequestStockColors` valor de la entrada del registro en 1.  
   
      Después de crear la entrada del registro, el Coloreador <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> método puede utilizar los miembros de la <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> enumeración para rellenar la matriz de atributos de color para su uso por el editor.  
   

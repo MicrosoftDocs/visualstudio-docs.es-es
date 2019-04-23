@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867879"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040344"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Proyecto de SharePoint y las plantillas de elemento de proyecto
   En las secciones siguientes se describen el proyecto de SharePoint y las plantillas de elemento de proyectos disponibles y cómo se utilizan.
@@ -41,17 +41,17 @@ ms.locfileid: "57867879"
 ### <a name="sharepoint-2010-project"></a>Proyecto de SharePoint 2010
  El contenido de un *proyecto de SharePoint 2010* se incluyen en cada plantilla de proyecto de SharePoint. Un Proyecto de SharePoint 2010 contiene:
 
--   Un archivo de proyecto.
+- Un archivo de proyecto.
 
--   Una página de propiedades del proyecto.
+- Una página de propiedades del proyecto.
 
--   Un **referencias** carpeta enumerar todas las referencias de ensamblado en el proyecto.
+- Un **referencias** carpeta enumerar todas las referencias de ensamblado en el proyecto.
 
--   Un **características** carpeta que contiene un *.feature* archivo de configuración, usado para implementar características en el servidor de SharePoint.
+- Un **características** carpeta que contiene un *.feature* archivo de configuración, usado para implementar características en el servidor de SharePoint.
 
--   Un **paquete** carpeta que contiene un *Package.package* archivo, se usa para implementar la solución en SharePoint.
+- Un **paquete** carpeta que contiene un *Package.package* archivo, se usa para implementar la solución en SharePoint.
 
--   Un archivo key.snk (clave de nombre seguro) que se usa para firmar el ensamblado con un nombre seguro, para obtener una seguridad mejorada.
+- Un archivo key.snk (clave de nombre seguro) que se usa para firmar el ensamblado con un nombre seguro, para obtener una seguridad mejorada.
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>Elemento web de Silverlight de SharePoint 2010
  *Elemento Web de Silverlight de SharePoint 2010* proyectos le permiten crear elementos de web para SharePoint que muestran aplicaciones de Silverlight. Cuando cree este proyecto, podrá especificar si desea agregar una nueva aplicación de Silverlight al proyecto o hacer referencia a una ya existente. Para obtener más información, consulte [crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) y [Tutorial: Crear un elemento web de Silverlight que muestre OData para SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).

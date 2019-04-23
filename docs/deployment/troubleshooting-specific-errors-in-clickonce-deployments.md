@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042386"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Solución de problemas de errores específicos de implementaciones de ClickOnce
 Este artículo enumeran los siguientes errores comunes que pueden producirse al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y proporciona los pasos para solucionar cada problema.
@@ -81,9 +81,9 @@ Este artículo enumeran los siguientes errores comunes que pueden producirse al 
 
  Debe hacer lo siguiente:
 
--   Compruebe que la identidad del manifiesto de implementación, la identidad del manifiesto de aplicación y la aplicación principal EXE son únicas.
+- Compruebe que la identidad del manifiesto de implementación, la identidad del manifiesto de aplicación y la aplicación principal EXE son únicas.
 
--   Compruebe que las rutas de acceso de archivo no son más de 100 caracteres. Si la aplicación contiene las rutas de acceso de archivo que son demasiado grandes, puede superar las limitaciones en la ruta de acceso máxima que puede almacenar. Intente acortar las rutas de acceso y vuelva a instalar.
+- Compruebe que las rutas de acceso de archivo no son más de 100 caracteres. Si la aplicación contiene las rutas de acceso de archivo que son demasiado grandes, puede superar las limitaciones en la ruta de acceso máxima que puede almacenar. Intente acortar las rutas de acceso y vuelva a instalar.
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>No se respeta la configuración PrivatePath en el archivo de configuración de aplicación
  Para utilizar PrivatePath (rutas de búsqueda de fusión), la aplicación debe solicitar permiso de plena confianza. Pruebe a cambiar el manifiesto de aplicación para solicitar la plena confianza y, a continuación, vuelva a intentarlo.
@@ -112,9 +112,9 @@ Este artículo enumeran los siguientes errores comunes que pueden producirse al 
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Se intentó iniciar sesión con un certificado en el almacén de certificados y un cuadro de mensaje en blanco.
  En el **firma** cuadro de diálogo, debe:
 
--   Seleccione **firmar con un certificado almacenado**, y
+- Seleccione **firmar con un certificado almacenado**, y
 
--   Seleccione un certificado de la lista. el primer certificado no es la selección predeterminada.
+- Seleccione un certificado de la lista. el primer certificado no es la selección predeterminada.
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Al hacer clic en el botón "Inicio de sesión no" produce una excepción
  Este problema es un problema conocido. Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos son debe estar firmado. Seleccione una de las opciones de firma y, a continuación, haga clic en **Aceptar**.

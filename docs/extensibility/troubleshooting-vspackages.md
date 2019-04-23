@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c04afe2d739b172e74da4ae38bd122468643e6e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039738"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 Estos son los problemas comunes que podría tener con el paquete de VS y sugerencias para solucionar los problemas.
@@ -56,7 +56,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>Para solucionar problemas de un VSPackage que no registra
 
-1.  Asegúrese de que el ensamblado de VSPackage reside en una ubicación de confianza. RegPkg no puede registrar los ensamblados en una ubicación de confianza o de confianza parcial, como un recurso compartido de red en la configuración de seguridad de .net de forma predeterminada. Aunque aparece una advertencia cada vez que un usuario crea un proyecto en una ubicación de confianza, la casilla "no mostrar este mensaje de nuevo" puede evitar esta advertencia no vuelva a producirse.
+1. Asegúrese de que el ensamblado de VSPackage reside en una ubicación de confianza. RegPkg no puede registrar los ensamblados en una ubicación de confianza o de confianza parcial, como un recurso compartido de red en la configuración de seguridad de .net de forma predeterminada. Aunque aparece una advertencia cada vez que un usuario crea un proyecto en una ubicación de confianza, la casilla "no mostrar este mensaje de nuevo" puede evitar esta advertencia no vuelva a producirse.
 
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Para solucionar problemas de un comando que no está visible o que genera un error al hacer clic en un comando
 
@@ -64,44 +64,44 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
 
 2. Asegúrese de que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] encontrará UI.dll para el VSPackage.
 
-   1.  Buscar el CLSID del VSPackage en la sección de paquetes del registro:
+   1. Buscar el CLSID del VSPackage en la sección de paquetes del registro:
 
         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages
 
-   2.  Compruebe que la ruta de acceso proporcionado por la subclave SatelliteDll es correcta.
+   2. Compruebe que la ruta de acceso proporcionado por la subclave SatelliteDll es correcta.
 
 ### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>Para solucionar problemas de un VSPackage que se comporta de forma inesperada
 
-1.  Establezca puntos de interrupción en el código.
+1. Establezca puntos de interrupción en el código.
 
      Buenos puntos de partida para la depuración son el constructor y el método de inicialización. También puede establecer puntos de interrupción en el área que va a evaluar como un comando de menú. Para habilitar los puntos de interrupción, debe ejecutar en el depurador.
 
-    1.  En el menú **Proyecto**, haga clic en **Propiedades**.
+    1. En el menú **Proyecto**, haga clic en **Propiedades**.
 
-    2.  En el **páginas de propiedades** cuadro de diálogo, seleccione el **depurar** ficha.
+    2. En el **páginas de propiedades** cuadro de diálogo, seleccione el **depurar** ficha.
 
-    3.  En el **argumentos de línea de comandos** , escriba el sufijo de la raíz del entorno de desarrollo que los destinos de VSPackage. Por ejemplo, para seleccionar la compilación experimental, escriba: **RootSuffix Exp**.
+    3. En el **argumentos de línea de comandos** , escriba el sufijo de la raíz del entorno de desarrollo que los destinos de VSPackage. Por ejemplo, para seleccionar la compilación experimental, escriba: **RootSuffix Exp**.
 
-    4.  En el **depurar** menú, haga clic en **Iniciar depuración** o presione F5.
+    4. En el **depurar** menú, haga clic en **Iniciar depuración** o presione F5.
 
         > [!NOTE]
         >  Si está depurando un proyecto, cree o cargue una instancia existente del proyecto ahora.
 
-2.  Utilice el registro de actividad.
+2. Utilice el registro de actividad.
 
      Seguimiento VSPackage comportamiento escribiendo información en el registro de actividad en los puntos clave. Esta técnica es especialmente útil cuando se ejecuta un paquete VSPackage en un entorno minorista. Para obtener más información, vea [Cómo: Usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).
 
-3.  Usar símbolos públicos.
+3. Usar símbolos públicos.
 
      Para mejorar la legibilidad durante la depuración, puede adjuntar los símbolos para el depurador.
 
-    1.  Desde el **herramientas/opciones** menú, vaya a la **depuración/símbolos** cuadro de diálogo.
+    1. Desde el **herramientas/opciones** menú, vaya a la **depuración/símbolos** cuadro de diálogo.
 
-    2.  Agregar esto **ubicación del archivo (.pdb) de símbolos**:
+    2. Agregar esto **ubicación del archivo (.pdb) de símbolos**:
 
          [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
 
-    3.  Para mejorar el rendimiento, especifique una carpeta de caché de símbolos, por ejemplo:
+    3. Para mejorar el rendimiento, especifique una carpeta de caché de símbolos, por ejemplo:
 
         ```
         C:\symbols
@@ -111,9 +111,9 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
 
 1. Para código administrado, asegúrese de que las rutas de acceso de referencia son correctos.
 
-   1.  En el menú **Proyecto**, haga clic en **Propiedades**.
+   1. En el menú **Proyecto**, haga clic en **Propiedades**.
 
-   2.  Seleccione el **referencias** pestaña en el **páginas de propiedades** cuadro de diálogo y asegúrese de que todas las rutas de acceso son correctos. Como alternativa, puede usar el **Examinador de objetos** para buscar los objetos que se hace referencia.
+   2. Seleccione el **referencias** pestaña en el **páginas de propiedades** cuadro de diálogo y asegúrese de que todas las rutas de acceso son correctos. Como alternativa, puede usar el **Examinador de objetos** para buscar los objetos que se hace referencia.
 
         Para código administrado, puede usar el [Fuslogvw.exe (Visor de registro de enlaces de ensamblados)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) para mostrar los detalles de las cargas de ensamblado con error.
 

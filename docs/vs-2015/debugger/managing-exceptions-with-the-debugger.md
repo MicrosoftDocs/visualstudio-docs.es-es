@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040969"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Administración de excepciones con el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ Una excepción es una indicación de estado de error que se produce mientras se 
   
  Cuando se produce una excepción, el depurador escribe un mensaje en la ventana Salida. La ejecución se puede interrumpir en los casos siguientes:  
   
--   Cuando se produce una excepción y no se controla.  
+- Cuando se produce una excepción y no se controla.  
   
--   Cuando el depurador está configurado para interrumpir de inmediato la ejecución cuando se produce una excepción, antes de que se invoque ningún controlador.  
+- Cuando el depurador está configurado para interrumpir de inmediato la ejecución cuando se produce una excepción, antes de que se invoque ningún controlador.  
   
--   Si se ha establecido [Just My Code](../debugger/just-my-code.md)y el depurador está configurado para interrumpir la ejecución en cualquier excepción que no esté controlada en el código del usuario.  
+- Si se ha establecido [Just My Code](../debugger/just-my-code.md)y el depurador está configurado para interrumpir la ejecución en cualquier excepción que no esté controlada en el código del usuario.  
   
 > [!NOTE]
 >  ASP.NET tiene un controlador de excepciones de nivel superior que muestra las páginas de error en un explorador. No interrumpe la ejecución a menos que **Solo mi código** esté activado. Para obtener un ejemplo, consulta [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) a continuación.  
@@ -141,7 +141,7 @@ Una excepción es una indicación de estado de error que se produce mientras se 
   
    ![Restaurar valores predeterminados en la configuración de excepciones](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> Configurar el depurador para continuar en las excepciones no controladas de usuario  
+### <a name="BKMK_UserUnhandled"></a> Configurar el depurador para continuar en las excepciones no controladas de usuario  
  Si está depurando código .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), puede indicar al depurador que no interrumpa la ejecución en excepciones que no se controlan en el código de usuario, pero que sí se controlan en otro lugar.  
   
 1. En la ventana **Configuración de excepciones** , abra el menú contextual de una ventana con el botón derecho y, a continuación, seleccione **Mostrar columnas**. (Si ha desactivado **Solo mi código**, no verá este comando).  

@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994836"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039134"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (aplicación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,28 +81,28 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
 ## <a name="permissionset"></a>PermissionSet  
  Obligatorio. Este elemento es un elemento secundario del elemento `applicationRequestMinimum` y contiene el elemento `IPermission` . Este elemento tiene los atributos siguientes.  
   
--   `ID`  
+- `ID`  
   
      Obligatorio. Identifica el conjunto de permisos. Este atributo puede ser cualquier valor. Se hace referencia al id. en los atributos `defaultAssemblyRequest` y `assemblyRequest` .  
   
--   `version`  
+- `version`  
   
      Obligatorio. Identifica la versión del permiso. Normalmente, este valor es `1`.  
   
 ## <a name="ipermission"></a>IPermission  
  Opcional. Este elemento es un elemento secundario del elemento `PermissionSet` . El elemento `IPermission` identifica totalmente una clase de permiso en el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. El elemento `IPermission` tiene los atributos siguientes, pero puede tener atributos adicionales que corresponden a las propiedades de la clase de permiso. Para obtener la sintaxis de un permiso concreto, vea los ejemplos enumerados en el archivo Security.config.  
   
--   `class`  
+- `class`  
   
      Obligatorio. Identifica la clase de permiso por nombre seguro. Por ejemplo, el siguiente código identifica el tipo `FileDialogPermission` .  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
--   `version`  
+- `version`  
   
      Obligatorio. Identifica la versión del permiso. Normalmente, este valor es `1`.  
   
--   `Unrestricted`  
+- `Unrestricted`  
   
      Obligatorio. Identifica si la aplicación necesita una concesión sin restricciones de este permiso. Si es `true`, la concesión del permiso es incondicional. Si es `false`, o si este atributo no está definido, se restringe según los atributos específicos del permiso definidos en la etiqueta `IPermission` . Seleccione los permisos siguientes:  
   
@@ -122,18 +122,18 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  Opcional. Identifica el conjunto de permisos concedido a todos los ensamblados. Este elemento es un elemento secundario del elemento `applicationRequestMinimum` y tiene el siguiente atributo.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Requerido. Identifica el identificador del conjunto de permisos que es el permiso predeterminado. El conjunto de permisos se declara en el elemento `PermissionSet` .  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  Opcional. Identifica los permisos para un ensamblado concreto. Este elemento es un elemento secundario del elemento `applicationRequestMinimum` y tiene los atributos siguientes.  
   
--   `Name`  
+- `Name`  
   
      Obligatorio. Identifica el nombre del ensamblado.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Obligatorio. Identifica el identificador del conjunto de permisos que requiere este ensamblado. El conjunto de permisos se declara en el elemento `PermissionSet` .  
   
@@ -143,7 +143,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Opcional. Identifica el nivel de seguridad en el que la aplicación solicita que se ejecute. Este elemento no tiene elementos secundarios y tiene los atributos siguientes.  
   
--   `Level`  
+- `Level`  
   
      Obligatorio. Indica el nivel de seguridad que está solicitando la aplicación. Los valores posibles son:  
   
@@ -155,7 +155,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
   
      Las aplicaciones de[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] solo se instalarán con un valor de `asInvoker`. La instalación de cualquier otro valor producirá un error.  
   
--   `uiAccess`  
+- `uiAccess`  
   
      Opcional. Indica si la aplicación requiere acceso a elementos de la interfaz de usuario protegidos. Los valores son `true` o `false`y el predeterminado es false. Solo las aplicaciones firmadas deben tener un valor true.  
   
