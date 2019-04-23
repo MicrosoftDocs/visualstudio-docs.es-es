@@ -6,12 +6,12 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998475"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063678"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de colores de VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |-|-|  
 |**Attribute**|**Definición**|  
 |Tipo|[Obligatorio] El tipo del color. Puede ser uno de los siguientes:<br /><br /> *CT_INVALID:* El color no es válida o no.<br /><br /> *CT_RAW:* Valor sin formato ARGB.<br /><br /> *CT_COLORINDEX:* NO USE.<br /><br /> *CT_SYSCOLOR:* Un color del sistema de Windows desde SysColor.<br /><br /> *CT_VSCOLOR:* Un color de Visual Studio en __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* El color automático.<br /><br /> *CT_TRACK_FOREGROUND:* NO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NO USE.|  
-|Origen|[Obligatorio] El valor del color representado en formato hexadecimal|  
+|Source|[Obligatorio] El valor del color representado en formato hexadecimal|  
   
  Todos los valores admitidos por la enumeración __VSCOLORTYPE son compatibles con el esquema en el atributo de tipo. Sin embargo, se recomienda que use solo CT_RAW y CT_SYSCOLOR.  
   
@@ -149,15 +149,15 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
   
  **Ejemplos**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   VsixColorCompiler D:\xml\colors.xml /noLogo  
+- VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Notas  
   
--   Esta herramienta requiere que se ha instalado la versión más reciente del tiempo de ejecución de VC ++.  
+- Esta herramienta requiere que se ha instalado la versión más reciente del tiempo de ejecución de VC ++.  
   
--   Solo los archivos solo se admiten. No se admite la conversión de forma masiva a través de rutas de carpeta.  
+- Solo los archivos solo se admiten. No se admite la conversión de forma masiva a través de rutas de carpeta.  
   
 ## <a name="sample-output"></a>Resultados de ejemplo  
  El archivo .pkgdef generado por la herramienta será similar a la siguiente claves:  

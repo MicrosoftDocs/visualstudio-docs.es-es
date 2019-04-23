@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060805"
 ---
 # <a name="debug-sharepoint-solutions"></a>Depurar soluciones de SharePoint
   Puede depurar las soluciones de SharePoint utilizando el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Al iniciar la depuración, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implementa los archivos de proyecto en el servidor de SharePoint y, a continuación, se abre una instancia del sitio de SharePoint en el explorador Web. En las secciones siguientes se explica cómo depurar aplicaciones de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Habilitar la depuración](#enable-debugging)
+- [Habilitar la depuración](#enable-debugging)
 
--   [Proceso de depuración e implementación de F5](#f5-debug-and-deployment-process)
+- [Proceso de depuración e implementación de F5](#f5-debug-and-deployment-process)
 
--   [Características de proyecto de SharePoint](#sharepoint-project-features)
+- [Características de proyecto de SharePoint](#sharepoint-project-features)
 
--   [Depurar flujos de trabajo](#debug-workflows)
+- [Depurar flujos de trabajo](#debug-workflows)
 
--   [Depurar receptores de eventos de característica](#debug-feature-event-receivers)
+- [Depurar receptores de eventos de característica](#debug-feature-event-receivers)
 
--   [Habilitar ehanced información de depuración](#enable-enhanced-debugging-information)
+- [Habilitar ehanced información de depuración](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Habilitar depuración
  Cuando se depura por primera vez una solución de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], un cuadro de diálogo advierte de que el archivo web.config no está configurado para habilitar la depuración. (Se crea el archivo web.config al instalar el servidor de SharePoint. Para obtener más información, consulte [trabajar con archivos Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) El cuadro de diálogo da la opción de ejecutar el proyecto sin depurar o modificar el archivo web.config para habilitar la depuración. Si elige la primera opción, el proyecto se ejecuta normalmente. Si elige la segunda opción, el archivo web.config se configura para:
@@ -77,11 +77,11 @@ ms.locfileid: "57873115"
 
  Para revertir los cambios y deshabilitar la depuración, cambie la siguiente [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] en el archivo web.config:
 
--   Desactivar la pila de llamadas (`CallStack="false"`)
+- Desactivar la pila de llamadas (`CallStack="false"`)
 
--   Habilitar errores personalizados en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
+- Habilitar errores personalizados en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
 
--   Deshabilitar la depuración de compilación (`<compilation debug="false">`)
+- Deshabilitar la depuración de compilación (`<compilation debug="false">`)
 
 ## <a name="f5-debug-and-deployment-process"></a>Proceso de depuración e implementación de F5
  Cuando se ejecuta un proyecto de SharePoint en modo de depuración, el proceso de implementación de SharePoint realiza las tareas siguientes:

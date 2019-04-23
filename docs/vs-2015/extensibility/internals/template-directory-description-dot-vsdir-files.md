@@ -12,12 +12,12 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5f6b8ef087d3e9d43aaf740a99983cf0f5c8d1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: cd224f84dd1d0be8167ee55fa7b40264d742c4f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063782"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Archivos de descripción del directorio de plantilla (.Vsdir)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,17 +52,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Cuando se crea un archivo de asistente, también debe considerar los siguientes problemas.  
 
--   Los campos opcionales para los que no existen datos significativos tienen que contener un cero (0) como marcador de posición.  
+- Los campos opcionales para los que no existen datos significativos tienen que contener un cero (0) como marcador de posición.  
 
--   Si se proporciona ningún nombre localizado, se usa el nombre de ruta de acceso relativa en el archivo del asistente.  
+- Si se proporciona ningún nombre localizado, se usa el nombre de ruta de acceso relativa en el archivo del asistente.  
 
--   DLLPath invalida clsidPackage para la ubicación del icono.  
+- DLLPath invalida clsidPackage para la ubicación del icono.  
 
--   Si se define ningún icono, el IDE sustituye el icono predeterminado para un archivo que tiene esa extensión.  
+- Si se define ningún icono, el IDE sustituye el icono predeterminado para un archivo que tiene esa extensión.  
 
--   Si no se proporciona ninguna sugerencia de nombre base, se utiliza 'Project'.  
+- Si no se proporciona ninguna sugerencia de nombre base, se utiliza 'Project'.  
 
--   Si elimina los archivos .vsz, carpetas o archivos de plantilla, debe quitar también los registros asociados desde el archivo vsdir.  
+- Si elimina los archivos .vsz, carpetas o archivos de plantilla, debe quitar también los registros asociados desde el archivo vsdir.  
 
 ## <a name="see-also"></a>Vea también  
  [Asistentes](../../extensibility/internals/wizards.md)   

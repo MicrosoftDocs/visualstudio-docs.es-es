@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8378bf0a95ca9a844de4985f7403f04978607dcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3e17e5a88b958c1361e7f8b3db70d7599f44f766
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066200"
 ---
 # <a name="source-control-design-decisions"></a>Decisiones de diseño del control de código fuente
 Las siguientes decisiones de diseño deben considerarse para los proyectos al implementar el control de código fuente.
@@ -28,11 +28,11 @@ Las siguientes decisiones de diseño deben considerarse para los proyectos al im
 ## <a name="will-the-project-include-special-files"></a>¿El proyecto incluye archivos especiales?
  Otra decisión de diseño importante es que si la estructura del proyecto usa archivos especiales. Archivos especiales están ocultos que subyacen a los archivos que son cuadros de diálogo visible en el Explorador de soluciones y en la protección y desprotección. Si usa archivos especiales, siga estas instrucciones:
 
-1.  No asocie archivos especiales con el nodo raíz del proyecto, es decir, con el proyecto propio archivo. El archivo de proyecto debe ser un único archivo.
+1. No asocie archivos especiales con el nodo raíz del proyecto, es decir, con el proyecto propio archivo. El archivo de proyecto debe ser un único archivo.
 
-2.  Cuando se agrega archivos especiales, eliminados o cambiado el nombre de un proyecto, adecuado <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> se deben activar eventos con el conjunto de marca que indica los archivos son archivos especiales. Estos eventos se lo llama el entorno en respuesta al proyecto una llamada a la correspondiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> métodos.
+2. Cuando se agrega archivos especiales, eliminados o cambiado el nombre de un proyecto, adecuado <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> se deben activar eventos con el conjunto de marca que indica los archivos son archivos especiales. Estos eventos se lo llama el entorno en respuesta al proyecto una llamada a la correspondiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> métodos.
 
-3.  Cuando llama su editor o proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> para un archivo, los archivos especiales asociados con ese archivo no se desprotege automáticamente. Pase los archivos especiales en junto con el archivo principal. El entorno se detecte la relación entre todos los archivos que se pasan y ocultar adecuadamente los archivos especiales en la interfaz de usuario de desprotección.
+3. Cuando llama su editor o proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> para un archivo, los archivos especiales asociados con ese archivo no se desprotege automáticamente. Pase los archivos especiales en junto con el archivo principal. El entorno se detecte la relación entre todos los archivos que se pasan y ocultar adecuadamente los archivos especiales en la interfaz de usuario de desprotección.
 
 ## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>

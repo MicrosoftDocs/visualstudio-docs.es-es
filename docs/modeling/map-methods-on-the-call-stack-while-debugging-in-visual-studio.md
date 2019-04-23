@@ -28,21 +28,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5866a26fdcc8bed88713bf92e1c38bfb3b04ba8f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 139e76911825866375a0f524c53dd23b8967f9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063171"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Asignar métodos en la pila de llamadas durante la depuración en Visual Studio
+
 Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas durante la depuración. Puede hacer anotaciones en el mapa para llevar a cabo el seguimiento de lo que hace el código y poder concentrarse en encontrar errores.
 
  ![Depuración con pilas de llamadas en los mapas de código](../debugger/media/debuggermap_overview.png)
 
  Necesitará:
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
+ ::: moniker range="vs-2017"
+
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+
+::: moniker-end
 
 - Código que pueda Depurar, por ejemplo, Visual C#, Visual Basic, C++, JavaScript o X ++
 
@@ -66,9 +77,9 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
 ## <a name="MapStack"></a> Asignar la pila de llamadas
 
-1.  Inicie la depuración. (Teclado: **F5**)
+1. Inicie la depuración. (Teclado: **F5**)
 
-2.  Después de la aplicación entra en modo de interrupción o entra en una función, elija **mapa de código**. (Teclado: **CTRL** + **MAYÚS** + **`**)
+2. Después de la aplicación entra en modo de interrupción o entra en una función, elija **mapa de código**. (Teclado: **CTRL** + **MAYÚS** + **`**)
 
      ![Elegir Mapa de código para empezar a asignar la pila de llamadas](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -79,16 +90,19 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
      El mapa se actualiza automáticamente a la vez que continúa depurando. Consulte [actualizar el mapa con la siguiente pila de llamadas](#UpdateMap).
 
 ## <a name="MakeNotes"></a> Hacer notas sobre el código
+
  Agregue comentarios para realizar un seguimiento de lo que sucede en el código. Para agregar una nueva línea en un comentario, presione **MAYÚS + ENTRAR**.
 
  ![Agregar comentario a la pila de llamadas en el mapa de código](../debugger/media/debuggermap_addcomment.png)
 
 ## <a name="UpdateMap"></a> Actualizar el mapa con la siguiente pila de llamadas
+
  Ejecute la aplicación hasta el siguiente punto de interrupción o entre en una función. El mapa agrega una nueva pila de llamadas.
 
  ![Actualizar mapa de código con la siguiente pila de llamadas](../debugger/media/debuggermap_addclearcallstack.png)
 
 ## <a name="AddRelatedCode"></a> Agregar código relacionado al mapa
+
  ¿Ahora ya tiene un mapa: lo que a continuación? Si trabaja con C# o Visual Basic, agregue elementos, como campos, propiedades y otros métodos para realizar un seguimiento de lo que sucede en el código.
 
  Haga doble clic en un método para ver su definición de código, o bien use el menú contextual para el método. (Teclado: Seleccione el método en el mapa y presione **F12**)
@@ -113,6 +127,7 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
  ![Métodos que usan un campo en el mapa de código de la pila de llamadas](../debugger/media/debuggermap_foundallreferences.png)
 
 ## <a name="FindBugs"></a> Buscar errores usando el mapa
+
  La visualización del código puede ayudarle a encontrar errores con mayor rapidez. Por ejemplo, suponga que está investigando un error en un programa de dibujo. Cuando dibuja una línea e intenta deshacerla, no sucede nada hasta que dibuja otra línea.
 
  Por tanto, establece los puntos de interrupción en los métodos  `clear`, `undo` y `Repaint`, inicia la depuración y compila un mapa como este:
@@ -149,11 +164,11 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
    Abra el **diseño** menú en la barra de herramientas del mapa:
 
-  -   Cambie el diseño predeterminado.
+  - Cambie el diseño predeterminado.
 
-  -   Para detener reorganizar el mapa automáticamente, desactive la opción **diseñar automáticamente al depurar**.
+  - Para detener reorganizar el mapa automáticamente, desactive la opción **diseñar automáticamente al depurar**.
 
-  -   Para reorganizar el mapa lo mínimo posible al agregar elementos, desactive la opción **diseño Incremental**.
+  - Para reorganizar el mapa lo mínimo posible al agregar elementos, desactive la opción **diseño Incremental**.
 
 - **¿Puedo compartir el mapa con otros usuarios?**
 

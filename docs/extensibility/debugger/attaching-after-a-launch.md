@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54284b9e1e55e4e3a3ba8b8237b9420cbf195089
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065589"
 ---
 # <a name="attach-after-a-launch"></a>Adjuntar después de un lanzamiento
 Una vez que inicia un programa, la sesión de depuración está lista para asociar el motor de depuración (DE) a dicho programa.
@@ -23,9 +23,9 @@ Una vez que inicia un programa, la sesión de depuración está lista para asoci
 ## <a name="design-decisions"></a>Decisiones de diseño
  Puesto que la comunicación es más fácil dentro de un espacio de direcciones compartido, debe elegir entre dos enfoques de diseño: establecer la comunicación entre la sesión de depuración y la DE. O bien, establezca la comunicación entre el programa y la DE. Elija entre lo siguiente:
 
--   Si tiene más sentido para configurar la comunicación entre la sesión de depuración y la DE, la sesión de depuración participa en la DE la creación y solicita la DE asociar al programa. Este diseño deja la sesión de depuración y DE juntos en un espacio de direcciones y el entorno de tiempo de ejecución y el programa juntos en otro.
+- Si tiene más sentido para configurar la comunicación entre la sesión de depuración y la DE, la sesión de depuración participa en la DE la creación y solicita la DE asociar al programa. Este diseño deja la sesión de depuración y DE juntos en un espacio de direcciones y el entorno de tiempo de ejecución y el programa juntos en otro.
 
--   Si tiene más sentido para configurar la comunicación entre el programa y la DE, el entorno de tiempo de ejecución crea conjuntamente la DE. Este diseño deja el SDM en un espacio de direcciones y el DE, el entorno de tiempo de ejecución y el programa juntos en otro. Este diseño es típico de una DE que se implementa con un intérprete para ejecutarse con secuencias de comandos de idiomas.
+- Si tiene más sentido para configurar la comunicación entre el programa y la DE, el entorno de tiempo de ejecución crea conjuntamente la DE. Este diseño deja el SDM en un espacio de direcciones y el DE, el entorno de tiempo de ejecución y el programa juntos en otro. Este diseño es típico de una DE que se implementa con un intérprete para ejecutarse con secuencias de comandos de idiomas.
 
     > [!NOTE]
     >  Cómo la DE se une al programa es depende de la implementación. Comunicación entre el programa y la DE es también depende de la implementación.

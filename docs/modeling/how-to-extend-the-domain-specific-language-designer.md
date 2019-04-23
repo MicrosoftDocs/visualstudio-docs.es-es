@@ -1,5 +1,5 @@
 ---
-title: Filtrar Ampliar el Diseñador de lenguaje específico de dominio
+title: Procedimiento Ampliar el Diseñador de lenguaje específico de dominio
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063158"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>Filtrar Ampliar el Diseñador de lenguaje específico de dominio
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedimiento Ampliar el Diseñador de lenguaje específico de dominio
 
 Puede crear extensiones para el diseñador que se usa para editar definiciones de DSL. Tipos de extensión que puede realizar incluyen la adición de comandos de menú, agregar controladores de arrastran y haga doble clic en los gestos y reglas que se desencadenan cuando cambian de determinados tipos de valores o relaciones. Las extensiones pueden empaquetar como una extensión de integración de Visual Studio (VSIX) y distribuirse a otros usuarios.
 
@@ -26,23 +26,23 @@ Configurar un proyecto que contiene el código de la extensión y un proyecto VS
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>Para crear una solución de extensión del Diseñador de DSL
 
-1.  Cree un nuevo proyecto con el **biblioteca de clases** plantilla de proyecto. Este proyecto contendrá el código de las extensiones.
+1. Cree un nuevo proyecto con el **biblioteca de clases** plantilla de proyecto. Este proyecto contendrá el código de las extensiones.
 
-2.  Cree un nuevo **proyecto VSIX** proyecto.
+2. Cree un nuevo **proyecto VSIX** proyecto.
 
      Seleccione **agregar a solución**.
 
      *Source.Extension.vsixmanifest* se abre en el editor de manifiestos VSIX.
 
-3.  Sobre el campo de contenido, haga clic en **agregar contenido**.
+3. Sobre el campo de contenido, haga clic en **agregar contenido**.
 
-4.  En el **agregar contenido** cuadro de diálogo, establezca **seleccione un tipo de contenido** a **componente MEF**y establezca **proyecto** a su proyecto de biblioteca de clases.
+4. En el **agregar contenido** cuadro de diálogo, establezca **seleccione un tipo de contenido** a **componente MEF**y establezca **proyecto** a su proyecto de biblioteca de clases.
 
-5.  Haga clic en **seleccionar ediciones** y asegúrese de que **Visual Studio Enterprise** está activada.
+5. Haga clic en **seleccionar ediciones** y asegúrese de que **Visual Studio Enterprise** está activada.
 
-6.  Asegúrese de que el proyecto VSIX es el proyecto de inicio de la solución.
+6. Asegúrese de que el proyecto VSIX es el proyecto de inicio de la solución.
 
-7.  En el proyecto de biblioteca de clases, agregue referencias a los ensamblados siguientes:
+7. En el proyecto de biblioteca de clases, agregue referencias a los ensamblados siguientes:
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -68,17 +68,17 @@ Para probar cualquiera de las extensiones en este tema, compile y ejecute la sol
 
 Para implementar las extensiones a la principal de Visual Studio y a otros equipos, siga estos pasos:
 
-1.  Busque el archivo de instalación de VSIX en el proyecto VSIX en bin\\*\*\\\*.vsix
+1. Busque el archivo de instalación de VSIX en el proyecto VSIX en bin\\*\*\\\*.vsix
 
-2.  Copie este archivo en el equipo de destino y, a continuación, en el Explorador de Windows (o explorador de archivos), haga doble clic en él.
+2. Copie este archivo en el equipo de destino y, a continuación, en el Explorador de Windows (o explorador de archivos), haga doble clic en él.
 
      Se abre el Administrador de extensiones de Visual Studio para confirmar que se ha instalado la extensión.
 
 Para desinstalar la extensión, siga estos pasos:
 
-1.  En Visual Studio, en el **herramientas** menú, haga clic en **Administrador de extensiones**.
+1. En Visual Studio, en el **herramientas** menú, haga clic en **Administrador de extensiones**.
 
-2.  Seleccione la extensión y elimínelo.
+2. Seleccione la extensión y elimínelo.
 
 ## <a name="add-a-shortcut-menu-command"></a>Agregar un comando de menú contextual
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066265"
 ---
 # <a name="windows-installer-basics"></a>Datos básicos de Windows Installer
 El instalador de Windows se instala y desinstala las aplicaciones o productos de software en el equipo del usuario, realizar estas tareas en unidades denominadas componentes del instalador de Windows (a veces denominados WICs o simplemente componentes). Un GUID identifica cada WIC, que es la unidad básica de la instalación y el recuento de referencias para configuraciones mediante Windows Installer.
@@ -57,15 +57,15 @@ El instalador de Windows se instala y desinstala las aplicaciones o productos de
 
 #### <a name="installer-enforced-rules"></a>Reglas exigidas por el instalador
 
--   Todos los archivos de un determinado componente deben instalarse en el mismo directorio. Por el contrario, deben pertenecer archivos instalados para separar las carpetas para separar los componentes.
+- Todos los archivos de un determinado componente deben instalarse en el mismo directorio. Por el contrario, deben pertenecer archivos instalados para separar las carpetas para separar los componentes.
 
--   Puede haber solo una ruta de acceso de clave por componente. La ruta de acceso de clave es simplemente una archivo o clave del registro que representa el componente completo.
+- Puede haber solo una ruta de acceso de clave por componente. La ruta de acceso de clave es simplemente una archivo o clave del registro que representa el componente completo.
 
 #### <a name="component-provider-responsibilities"></a>Responsabilidades del proveedor de componentes
 
--   Los dos recursos que es posible que se envían por separado en las versiones posteriores deben existir en componentes independientes. Los recursos deben estar agrupados en el mismo componente sólo cuando esté seguro de que estos recursos nunca se enviarán por separado. De hecho, se recomienda que todos los recursos principales (por ejemplo, archivos DLL) siempre se encuentran en WICs independientes. Para obtener más información, consulte [definir componentes del instalador](/windows/desktop/Msi/defining-installer-components).
+- Los dos recursos que es posible que se envían por separado en las versiones posteriores deben existir en componentes independientes. Los recursos deben estar agrupados en el mismo componente sólo cuando esté seguro de que estos recursos nunca se enviarán por separado. De hecho, se recomienda que todos los recursos principales (por ejemplo, archivos DLL) siempre se encuentran en WICs independientes. Para obtener más información, consulte [definir componentes del instalador](/windows/desktop/Msi/defining-installer-components).
 
--   Nunca debe enviar ningún recurso con control de versiones en más de un WIC.
+- Nunca debe enviar ningún recurso con control de versiones en más de un WIC.
 
 ## <a name="see-also"></a>Vea también
 - [¿Qué ocurre si se interrumpen las reglas de componente?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061999"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramas de capas: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ En Visual Studio, puede usar un *diagrama de capas* para visualizar la arquitect
 |4|**Comentario**|Use esta opción para agregar notas generales al diagrama o elementos del diagrama.|  
 |5|**Vínculo de comentario**|Se usa para vincular comentarios a elementos del diagrama.|  
   
-##  <a name="Explorer"></a> Explorador de capas  
+## <a name="Explorer"></a> Explorador de capas  
  Puede vincular cada capa a artefactos de la solución, como proyectos, clases, espacios de nombres, archivos de proyecto y otros elementos del software. El número de una capa muestra la cantidad de artefactos vinculados a ella. Sin embargo, cuando lea el número de artefactos de una capa, recuerde lo siguiente:  
   
 - Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.  
@@ -80,7 +80,7 @@ En Visual Studio, puede usar un *diagrama de capas* para visualizar la arquitect
   
 #### <a name="to-examine-the-linked-artifacts"></a>Para examinar los artefactos vinculados  
   
--   En el diagrama de capas, abra el menú contextual para uno o más capas y, a continuación, elija **ver vínculos**.  
+- En el diagrama de capas, abra el menú contextual para uno o más capas y, a continuación, elija **ver vínculos**.  
   
      **Explorador de capas** se abre y muestra los artefactos que están vinculados a las capas seleccionadas. **Explorador de capas** tiene una columna que muestra cada una de las propiedades de los vínculos de artefacto.  
   

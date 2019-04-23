@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba83cf7db6415eefcb989f678bc4149d495016e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c133bb3f8ef56378c20b985aa118e48e71109cea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658349"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065264"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Guardar datos mediante una transacción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,15 +46,15 @@ Guardar datos en una transacción mediante la <xref:System.Transactions> espacio
   
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll"></a>Para agregar una referencia al archivo dll System.Transactions  
   
-1.  En el **proyecto** menú, seleccione **Agregar referencia**.  
+1. En el **proyecto** menú, seleccione **Agregar referencia**.  
   
-2.  En el **.NET** ficha (**SQL Server** ficha para proyectos de SQL Server), seleccione **System.Transactions**y, a continuación, seleccione **Aceptar**.  
+2. En el **.NET** ficha (**SQL Server** ficha para proyectos de SQL Server), seleccione **System.Transactions**y, a continuación, seleccione **Aceptar**.  
   
      En el proyecto se agrega una referencia a System.Transactions.dll.  
   
 ### <a name="to-save-data-in-a-transaction"></a>Para guardar los datos en una transacción  
   
--   Agregar código para guardar los datos de uso de la instrucción que contiene la transacción. El código siguiente muestra cómo crear y crear una instancia de un <xref:System.Transactions.TransactionScope> objeto en un formulario mediante declaración:  
+- Agregar código para guardar los datos de uso de la instrucción que contiene la transacción. El código siguiente muestra cómo crear y crear una instancia de un <xref:System.Transactions.TransactionScope> objeto en un formulario mediante declaración:  
   
      [!code-csharp[VbRaddataSaving#11](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#11)]
      [!code-vb[VbRaddataSaving#11](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#11)]  

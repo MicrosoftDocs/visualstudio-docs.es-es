@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 826967355b26e06e5d9f0bd26f3efcf745006fe9
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 880f098d96c23236a065894629a36a746ecedce7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062734"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Tutorial: Usar XSLT IntelliSense
 
@@ -21,7 +21,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
 
 ## <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Para usar IntelliSense en el atributo de nombre de elementos xsl:with-param y xsl:call-template
 
-1.  Cree un nuevo archivo XSLT y copie en él el código siguiente:
+1. Cree un nuevo archivo XSLT y copie en él el código siguiente:
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
@@ -45,7 +45,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
     </xsl:stylesheet>
     ```
 
-2.  Coloque el cursor después `<xsl:template name="msg23" match="msg23">` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl:call-template` siguiente:
+2. Coloque el cursor después `<xsl:template name="msg23" match="msg23">` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl:call-template` siguiente:
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -54,7 +54,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
 
      La lista de nombres de plantilla aparece en el atributo `name=""` del elemento `xsl:call-template` a medida que se escribe.
 
-3.  Coloque el cursor después `<xsl:call-template name="localized-message">` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl:with-param` siguiente:
+3. Coloque el cursor después `<xsl:call-template name="localized-message">` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl:with-param` siguiente:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -64,7 +64,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
 
 ## <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Para usar IntelliSense en el atributo de modo de un elemento xsl:apply-templates
 
-1.  Cree un nuevo archivo XSLT y copie en él el código siguiente:
+1. Cree un nuevo archivo XSLT y copie en él el código siguiente:
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
@@ -111,7 +111,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
     </xsl:stylesheet>
     ```
 
-2.  Coloque el cursor después `<xsl:apply-templates select="phone" />` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl: apply-templates` siguiente:
+2. Coloque el cursor después `<xsl:apply-templates select="phone" />` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl: apply-templates` siguiente:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -121,7 +121,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
 
 ## <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Para usar IntelliSense en los atributos stylesheet-prefix y result-prefix de un elemento xsl:namespace-alias
 
-1.  Cree un nuevo archivo XSLT y copie en él el código siguiente:
+1. Cree un nuevo archivo XSLT y copie en él el código siguiente:
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"
@@ -152,7 +152,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
     </xsl:stylesheet>
     ```
 
-2.  Coloque el cursor después `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl:namespace-alias` siguiente:
+2. Coloque el cursor después `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl:namespace-alias` siguiente:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

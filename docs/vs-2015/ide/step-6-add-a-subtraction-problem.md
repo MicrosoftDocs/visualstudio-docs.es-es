@@ -1,5 +1,5 @@
 ---
-title: 'Paso 6: Agregar un problema de resta | Microsoft Docs'
+title: 'Paso 6: Agregar un problema de resta | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,29 +9,29 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 500836281c1dba10bfdfe61b2442d30fb985fe38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064225"
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>Paso 6: Agregar un problema de resta
+# <a name="step-6-add-a-subtraction-problem"></a>Paso 6: adición de un problema de resta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En la sexta parte de este tutorial, agregará un problema de resta y aprenderá a realizar las tareas siguientes:  
   
--   Almacenar los valores de resta.  
+- Almacenar los valores de resta.  
   
--   Generar números aleatorios para el problema (y asegurarse de que la respuesta esté comprendida entre 0 y 100).  
+- Generar números aleatorios para el problema (y asegurarse de que la respuesta esté comprendida entre 0 y 100).  
   
--   Actualizar el método que comprueba las respuestas para que compruebe también el nuevo problema de resta.  
+- Actualizar el método que comprueba las respuestas para que compruebe también el nuevo problema de resta.  
   
--   Actualizar el controlador eventos Tick del temporizador para que rellene la respuesta correcta cuando se agote el tiempo.  
+- Actualizar el controlador eventos Tick del temporizador para que rellene la respuesta correcta cuando se agote el tiempo.  
   
 ### <a name="to-add-a-subtraction-problem"></a>Para agregar un problema de resta  
   
-1.  Agregue al formulario dos variables de entero para el problema de resta (sitúelas entre las variables de entero del problema de suma y el temporizador). El código debe tener este aspecto.  
+1. Agregue al formulario dos variables de entero para el problema de resta (sitúelas entre las variables de entero del problema de suma y el temporizador). El código debe tener este aspecto.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#12](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#12)]
      [!code-vb[VbExpressTutorial3Step5_6#12](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#12)]  
@@ -40,7 +40,7 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
   
      A continuación, modificará el método `StartTheQuiz()` para proporcionar los valores aleatorios del problema de resta.  
   
-2.  Agregue el código siguiente después del comentario "Fill in the subtraction problem" (Rellenar el problema de resta).  
+2. Agregue el código siguiente después del comentario "Fill in the subtraction problem" (Rellenar el problema de resta).  
   
      [!code-csharp[VbExpressTutorial3Step5_6#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#13)]
      [!code-vb[VbExpressTutorial3Step5_6#13](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#13)]  
@@ -62,19 +62,19 @@ Sobrecarga del método Next() en IntelliSense
   
      En este caso, desea elegir la última sobrecarga, ya que puede especificar los valores mínimo y máximo.  
   
-3.  Modifique el método `CheckTheAnswer()` para que compruebe si la respuesta de la resta es correcta.  
+3. Modifique el método `CheckTheAnswer()` para que compruebe si la respuesta de la resta es correcta.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#14](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#14)]
      [!code-vb[VbExpressTutorial3Step5_6#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#14)]  
   
      In Visual C#, `&&` es el operador `logical and`. En Visual Basic, el operador equivalente es `AndAlso`. Estos operadores indican "Si la suma de addend1 y addend2 es igual al valor de la suma NumericUpDown, y si el minuendo menos el sustraendo es igual al valor de la diferencia NumericUpDown". El método `CheckTheAnswer()` devuelve `true` solo si las respuestas a los problemas de suma y resta son correctos.  
   
-4.  Reemplace la última parte del controlador del evento Tick del temporizador por el código siguiente para que rellene la respuesta correcta cuando se agote el tiempo.  
+4. Reemplace la última parte del controlador del evento Tick del temporizador por el código siguiente para que rellene la respuesta correcta cuando se agote el tiempo.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#22](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#22)]
      [!code-vb[VbExpressTutorial3Step5_6#22](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#22)]  
   
-5.  Guarde y ejecute el código.  
+5. Guarde y ejecute el código.  
   
      El programa incluye un problema de resta, como se muestra en la ilustración siguiente.  
   
@@ -83,6 +83,6 @@ Prueba matemática con un problema de resta
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  
   
--   Para ir al siguiente paso del tutorial, vea [Paso 7: Agregar problemas de multiplicación y división](../ide/step-7-add-multiplication-and-division-problems.md).  
+- Para ir al siguiente paso del tutorial, vea [Paso 7: Agregar problemas de multiplicación y división](../ide/step-7-add-multiplication-and-division-problems.md).  
   
--   Para volver al paso anterior del tutorial, vea [Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Para volver al paso anterior del tutorial, vea [Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

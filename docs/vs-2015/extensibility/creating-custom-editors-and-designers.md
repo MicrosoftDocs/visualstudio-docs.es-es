@@ -11,12 +11,12 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8dd9b637571bfd7d2480992c7a2fef74a0d5b393
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996066"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064393"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Creación de diseñadores y editores personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,23 +51,23 @@ El entorno de desarrollo integrado (IDE) de Visual Studio puede hospedar diferen
 ## <a name="editor-design-decisions"></a>Decisiones de diseño del Editor  
  Las siguientes preguntas de diseño le ayudará a elegir el tipo de editor procedimiento adecuado para su aplicación:  
   
--   ¿La aplicación guardará sus datos en archivos o no? ¿Si sus datos guardará en archivos, estarán en un formato estándar o personalizado?  
+- ¿La aplicación guardará sus datos en archivos o no? ¿Si sus datos guardará en archivos, estarán en un formato estándar o personalizado?  
   
      Si usa un formato de archivo estándar, otros tipos de proyecto, además de su proyecto podrá abrir y leer y escribir datos en ellos. Si usa un formato de archivo personalizado, sin embargo, solo el tipo de proyecto será capaz de abrir y leer y escribir datos en ellos.  
   
      Si el proyecto usa archivos, a continuación, debe personalizar el editor estándar. Si no usa archivos de proyecto, sino que usa elementos en una base de datos o en otro repositorio, a continuación, debe crear un editor personalizado.  
   
--   ¿Necesita su editor para hospedar controles ActiveX?  
+- ¿Necesita su editor para hospedar controles ActiveX?  
   
      Si el editor que hospeda los controles ActiveX, a continuación, implementar un editor de activación en contexto, tal como se describe en [activación en contexto](../misc/in-place-activation.md). Si no hospeda controles ActiveX, a continuación, utilice un editor de incrustación simplificado, o personalizar la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor predeterminado.  
   
--   ¿Será su editor es compatible con varias vistas? Debe admitir varias vistas si desea que las vistas del editor sea visible al mismo tiempo como editor predeterminado.  
+- ¿Será su editor es compatible con varias vistas? Debe admitir varias vistas si desea que las vistas del editor sea visible al mismo tiempo como editor predeterminado.  
   
      Si el editor debe admitir varias vistas, los datos del documento y los objetos de vista de documento para el editor deben ser objetos independientes. Para obtener más información, consulte [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
   
      Si el editor admite varias vistas, ¿tiene pensado usar la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] principales de implementación de búfer de texto del editor (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto) para el objeto de datos del documento? ¿Es decir, si desea admitir su editor vista side-by-side con el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal? La capacidad de hacer esto es la base del Diseñador de formularios...  
   
--   ¿Si necesita para hospedar un editor externo, el editor se puede incrustar dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]?  
+- ¿Si necesita para hospedar un editor externo, el editor se puede incrustar dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]?  
   
      Si se puede incrustar, debe crear una ventana de host para el editor externo y, a continuación, llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> método y establezca el <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valor de enumeración para `DP_External`. Si no se puede incrustar el editor, el IDE creará automáticamente una ventana independiente para él.  
   

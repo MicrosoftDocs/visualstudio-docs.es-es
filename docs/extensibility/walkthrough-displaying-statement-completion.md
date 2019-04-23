@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e30c48e0d7c4c7c98b533555e1b4dac8888af7c5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d4529fa9cd52c1e9e54049386d39e85ea8efcbe5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061026"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Tutorial: Mostrar la finalización de instrucciones
 Puede implementar la finalización de instrucciones en lenguaje mediante la definición de los identificadores para el que desea proporcionar finalización y, a continuación, desencadenar una sesión de finalización. Puede definir la finalización de instrucciones en el contexto de un servicio de lenguaje, definir su propia extensión de nombre de archivo y el tipo de contenido y, a continuación, Mostrar finalización para exclusivamente ese tipo. O bien, puede desencadenar la finalización de un tipo de contenido existente, por ejemplo, "texto simple". Este tutorial muestra cómo desencadenar la finalización de instrucciones para el tipo de contenido "texto simple", que es el tipo de contenido de archivos de texto. El tipo de contenido "text" es el antecesor de todos los otros tipos de contenido, incluidos archivos de código y XML.
@@ -31,13 +31,13 @@ Puede implementar la finalización de instrucciones en lenguaje mediante la defi
 
 #### <a name="to-create-a-mef-project"></a>Para crear un nuevo proyecto de MEF
 
-1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `CompletionTest`.
+1. Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `CompletionTest`.
 
-2.  Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Elimine los archivos de clase existentes.
+3. Elimine los archivos de clase existentes.
 
-4.  Agregue las siguientes referencias al proyecto y asegúrese de que **CopyLocal** está establecido en `false`:
+4. Agregue las siguientes referencias al proyecto y asegúrese de que **CopyLocal** está establecido en `false`:
 
      Microsoft.VisualStudio.Editor
 
@@ -56,39 +56,39 @@ Puede implementar la finalización de instrucciones en lenguaje mediante la defi
 
 ### <a name="to-implement-the-completion-source"></a>Para implementar el origen de finalización
 
-1.  Agregue un archivo de clase y asígnele el nombre `TestCompletionSource`.
+1. Agregue un archivo de clase y asígnele el nombre `TestCompletionSource`.
 
-2.  Agregue estas importaciones:
+2. Agregue estas importaciones:
 
      [!code-csharp[VSSDKCompletionTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_1.cs)]
      [!code-vb[VSSDKCompletionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_1.vb)]
 
-3.  Modifique la declaración de clase para `TestCompletionSource` para que implemente <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:
+3. Modifique la declaración de clase para `TestCompletionSource` para que implemente <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:
 
      [!code-csharp[VSSDKCompletionTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_2.cs)]
      [!code-vb[VSSDKCompletionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_2.vb)]
 
-4.  Agregar campos privados para el proveedor de origen, el búfer de texto y una lista de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> objetos (que se corresponden con los identificadores que participarán en la sesión de finalización):
+4. Agregar campos privados para el proveedor de origen, el búfer de texto y una lista de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> objetos (que se corresponden con los identificadores que participarán en la sesión de finalización):
 
      [!code-csharp[VSSDKCompletionTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_3.cs)]
      [!code-vb[VSSDKCompletionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_3.vb)]
 
-5.  Agregue un constructor que establece el búfer y el proveedor de código fuente. La `TestCompletionSourceProvider` clase se define en pasos posteriores:
+5. Agregue un constructor que establece el búfer y el proveedor de código fuente. La `TestCompletionSourceProvider` clase se define en pasos posteriores:
 
      [!code-csharp[VSSDKCompletionTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_4.cs)]
      [!code-vb[VSSDKCompletionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_4.vb)]
 
-6.  Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> método mediante la adición de un conjunto de finalizaciones que contiene las finalizaciones que desea proporcionar en el contexto. Cada conjunto de finalizaciones contiene un conjunto de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> finalizaciones y corresponde a una ficha de la ventana de finalización. (En proyectos de Visual Basic, las pestañas de la ventana de finalización se denominan **común** y **todas**.) El método `FindTokenSpanAtPosition` se define en el paso siguiente.
+6. Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> método mediante la adición de un conjunto de finalizaciones que contiene las finalizaciones que desea proporcionar en el contexto. Cada conjunto de finalizaciones contiene un conjunto de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> finalizaciones y corresponde a una ficha de la ventana de finalización. (En proyectos de Visual Basic, las pestañas de la ventana de finalización se denominan **común** y **todas**.) El método `FindTokenSpanAtPosition` se define en el paso siguiente.
 
      [!code-csharp[VSSDKCompletionTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_5.cs)]
      [!code-vb[VSSDKCompletionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_5.vb)]
 
-7.  El método siguiente se utiliza para buscar la palabra actual desde la posición del cursor:
+7. El método siguiente se utiliza para buscar la palabra actual desde la posición del cursor:
 
      [!code-csharp[VSSDKCompletionTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_6.cs)]
      [!code-vb[VSSDKCompletionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_6.vb)]
 
-8.  Implemente el `Dispose()` método:
+8. Implemente el `Dispose()` método:
 
      [!code-csharp[VSSDKCompletionTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_7.cs)]
      [!code-vb[VSSDKCompletionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_7.vb)]
@@ -98,17 +98,17 @@ Puede implementar la finalización de instrucciones en lenguaje mediante la defi
 
 ### <a name="to-implement-the-completion-source-provider"></a>Para implementar el proveedor de origen de finalización
 
-1.  Agregue una clase denominada `TestCompletionSourceProvider` que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Exportar a esta clase con un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "texto sin formato" y un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de "prueba de finalización".
+1. Agregue una clase denominada `TestCompletionSourceProvider` que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Exportar a esta clase con un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "texto sin formato" y un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de "prueba de finalización".
 
      [!code-csharp[VSSDKCompletionTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_8.cs)]
      [!code-vb[VSSDKCompletionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_8.vb)]
 
-2.  Importar un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, que busca la palabra actual en el origen de finalización.
+2. Importar un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, que busca la palabra actual en el origen de finalización.
 
      [!code-csharp[VSSDKCompletionTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_9.cs)]
      [!code-vb[VSSDKCompletionTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_9.vb)]
 
-3.  Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> método para crear una instancia del origen de finalización.
+3. Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> método para crear una instancia del origen de finalización.
 
      [!code-csharp[VSSDKCompletionTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_10.cs)]
      [!code-vb[VSSDKCompletionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_10.vb)]
@@ -118,24 +118,24 @@ Puede implementar la finalización de instrucciones en lenguaje mediante la defi
 
 #### <a name="to-implement-the-completion-command-handler-provider"></a>Para implementar el proveedor de controlador de comandos de finalización
 
-1.  Agregue un archivo denominado `TestCompletionCommandHandler`.
+1. Agregue un archivo denominado `TestCompletionCommandHandler`.
 
-2.  Agregue las siguientes instrucciones using:
+2. Agregue las siguientes instrucciones using:
 
      [!code-csharp[VSSDKCompletionTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_11.cs)]
      [!code-vb[VSSDKCompletionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_11.vb)]
 
-3.  Agregue una clase denominada `TestCompletionHandlerProvider` que implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Exportar a esta clase con un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de "controlador de finalización de token", un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "texto sin formato" y un <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.
+3. Agregue una clase denominada `TestCompletionHandlerProvider` que implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Exportar a esta clase con un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de "controlador de finalización de token", un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "texto sin formato" y un <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.
 
      [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
      [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]
 
-4.  Importar el <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, que permite la conversión de un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> a un <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, un <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>y un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> que habilita el acceso a los servicios de Visual Studio estándar.
+4. Importar el <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, que permite la conversión de un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> a un <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, un <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>y un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> que habilita el acceso a los servicios de Visual Studio estándar.
 
      [!code-csharp[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]
      [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]
 
-5.  Implemente el <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> método para crear una instancia del controlador de comandos.
+5. Implemente el <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> método para crear una instancia del controlador de comandos.
 
      [!code-csharp[VSSDKCompletionTest#14](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_14.cs)]
      [!code-vb[VSSDKCompletionTest#14](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_14.vb)]
@@ -193,13 +193,13 @@ Puede implementar la finalización de instrucciones en lenguaje mediante la defi
 
 #### <a name="to-build-and-test-the-completiontest-solution"></a>Para compilar y probar la solución CompletionTest
 
-1.  Compile la solución.
+1. Compile la solución.
 
-2.  Al ejecutar este proyecto en el depurador, se inicia una segunda instancia de Visual Studio.
+2. Al ejecutar este proyecto en el depurador, se inicia una segunda instancia de Visual Studio.
 
-3.  Cree un archivo de texto y escriba algún texto que incluye la palabra "Agregar".
+3. Cree un archivo de texto y escriba algún texto que incluye la palabra "Agregar".
 
-4.  A medida que escribe primero "a" y, a continuación, "d", debe aparecer una lista que contiene "suma" y "adaptación". Tenga en cuenta que está seleccionada la suma. Cuando se escribe otra "d", la lista debe contener sólo "suma", que ahora está seleccionado. Puede confirmar "suma" presionando el **barra espaciadora**, **ficha**, o **ENTRAR** clave o descartar la lista escribiendo Esc o cualquier otra clave.
+4. A medida que escribe primero "a" y, a continuación, "d", debe aparecer una lista que contiene "suma" y "adaptación". Tenga en cuenta que está seleccionada la suma. Cuando se escribe otra "d", la lista debe contener sólo "suma", que ahora está seleccionado. Puede confirmar "suma" presionando el **barra espaciadora**, **ficha**, o **ENTRAR** clave o descartar la lista escribiendo Esc o cualquier otra clave.
 
 ## <a name="see-also"></a>Vea también
 - [Tutorial: Vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

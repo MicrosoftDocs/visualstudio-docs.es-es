@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062613"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -224,9 +224,9 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
   
 ## <a name="notes"></a>Notas  
   
--   De forma predeterminada, la herramienta se extraerá en varios manifiestos de imagen presentes en el directorio de instalación de Visual Studio. Es el único que tiene los monikers públicamente la **Microsoft.VisualStudio.ImageCatalog** manifiesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (hacer **no** reemplazar este GUID en un manifiesto personalizado) tipo: KnownMonikers  
+- De forma predeterminada, la herramienta se extraerá en varios manifiestos de imagen presentes en el directorio de instalación de Visual Studio. Es el único que tiene los monikers públicamente la **Microsoft.VisualStudio.ImageCatalog** manifiesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (hacer **no** reemplazar este GUID en un manifiesto personalizado) tipo: KnownMonikers  
   
--   La herramienta intente cargar todos los manifiestos de imagen que se encuentra, por lo que puede tardar varios segundos para que aparecen en realidad la aplicación al iniciarse. También podría ser lento o no responde al cargar los manifiestos.  
+- La herramienta intente cargar todos los manifiestos de imagen que se encuentra, por lo que puede tardar varios segundos para que aparecen en realidad la aplicación al iniciarse. También podría ser lento o no responde al cargar los manifiestos.  
   
 ## <a name="sample-output"></a>Resultados del ejemplo  
  Esta herramienta no genera ningún resultado.

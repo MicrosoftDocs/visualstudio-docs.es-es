@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d614a991de46552c34ca5ab8c797f6dd92954180
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065657"
 ---
 # <a name="capturing-graphics-information"></a>Capturar información de gráficos
 Capture información de gráficos desde la aplicación basada en Direct3D para que pueda usar el Analizador de gráficos de Visual Studio con el fin de diagnosticar problemas de representación y de rendimiento.
@@ -57,9 +57,9 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
 
 #### <a name="to-configure-graphics-diagnostics-capture-options"></a>Para configurar las opciones de captura de diagnóstico de gráficos
 
-1.  En la barra de menús, elija Herramientas y Opciones. Aparecerá el cuadro de diálogo Opciones.
+1. En la barra de menús, elija Herramientas y Opciones. Aparecerá el cuadro de diálogo Opciones.
 
-2.  En la lista de categorías de las opciones de la izquierda, elija Diagnóstico de gráficos y, a continuación, configure las opciones de diagnóstico de gráficos que quiera.
+2. En la lista de categorías de las opciones de la izquierda, elija Diagnóstico de gráficos y, a continuación, configure las opciones de diagnóstico de gráficos que quiera.
 
      **Recopilar pilas de llamadas durante la captura (ralentiza la captura)** Active esta casilla para recopilar pilas de llamadas. Las pilas de llamadas no se recopilan de forma predeterminada. Para capturar las pilas de llamadas, asegúrese de que esté activada la casilla **Recopilar pilas de llamadas durante la captura (ralentiza la captura)** para habilitar la recopilación y, después, establezca la opción **para los marcadores draw, dispatch, present y perf** (valor predeterminado) para recopilar únicamente las pilas de llamadas más importantes, o la opción **para todo** para recopilar todas las pilas de llamadas. Para detener la recopilación de pilas de llamadas más adelante, desactive la casilla **Recopilar pilas de llamadas durante la captura (ralentiza la captura)**.
 
@@ -74,10 +74,10 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
 
  El modo en que configure el proyecto para la depuración remota dependerá del tipo de aplicación que esté desarrollando y del lenguaje de programación que utilice. Para obtener información acerca de cómo configurar la depuración remota para una aplicación UWP, vea [ejecutar aplicaciones para UWP en un equipo remoto](../run-windows-store-apps-on-a-remote-machine.md). Para obtener información acerca de cómo configurar la depuración remota para una aplicación de escritorio de Windows, consulte [depuración remota](../remote-debugging.md).
 
- Posteriormente, podrá utilizar un equipo o un dispositivo remoto para reproducir la información de los gráficos, independientemente del lugar donde se haya capturado la información. Para más información, vea [Procedimientos para cambiar la máquina de reproducción de Diagnóstico de gráficos](how-to-change-the-graphics-diagnostics-playback-machine.md).
+ Posteriormente, podrá utilizar un equipo o un dispositivo remoto para reproducir la información de los gráficos, independientemente del lugar donde se haya capturado la información. Para obtener más información, vea [Cómo: Cambio de la máquina de reproducción de Diagnóstico de gráficos](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Captura de información de gráficos desde la línea de comandos
  Se puede capturar información de los gráficos desde una aplicación con una herramienta de línea de comandos. Esta herramienta, DXCap.exe, puede capturar y reproducir rápidamente información de gráficos sin usar Visual Studio ni capturas de programación. En particular, puede utilizar DXCap.exe para la automatización o en un entorno de prueba. Para obtener más información sobre DXCap.exe, vea [Herramienta de captura de línea de comandos](command-line-capture-tool.md).
 
 ## <a name="see-also"></a>Vea también
-- [Tutorial: Capturar información de gráficos](walkthrough-capturing-graphics-information.md)
+- [Tutorial: Captura de información de gráficos](walkthrough-capturing-graphics-information.md)

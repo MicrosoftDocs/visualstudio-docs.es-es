@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0ce2f80aa50c3222797d925a888e5c004b21512d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065446"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Administración de la carga de proyectos en una solución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Soluciones de Visual Studio pueden contener un gran número de proyectos. El com
 ## <a name="project-loading-priorities"></a>Carga las prioridades del proyecto  
  Visual Studio define cuatro prioridades de la carga de proyecto diferente:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> (el valor predeterminado): cuando se abre una solución, los proyectos se cargan de forma asincrónica. Si esta prioridad se establece en un proyecto sin cargar después de la solución ya está abierta, el proyecto se cargará en el siguiente punto inactivo.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> (el valor predeterminado): cuando se abre una solución, los proyectos se cargan de forma asincrónica. Si esta prioridad se establece en un proyecto sin cargar después de la solución ya está abierta, el proyecto se cargará en el siguiente punto inactivo.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: cuando se abre una solución, los proyectos se cargan en segundo plano, que permite al usuario para acceder a los proyectos que se cargan sin tener que esperar hasta que se cargan todos los proyectos.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: cuando se abre una solución, los proyectos se cargan en segundo plano, que permite al usuario para acceder a los proyectos que se cargan sin tener que esperar hasta que se cargan todos los proyectos.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: los proyectos se cargan cuando se accede a estos. Se tiene acceso a un proyecto cuando el usuario expande el nodo del proyecto en el Explorador de soluciones cuando se abre un archivo que pertenecen al proyecto cuando se abre la solución porque está en la lista de documentos abiertos (guardada en el archivo de opciones de usuario de la solución), o cuando otro proyecto es decir que se está cargando tiene una dependencia en el proyecto. Este tipo de proyecto no se carga automáticamente antes de iniciar un proceso de compilación; el Administrador de carga de solución es responsable de garantizar que todos los proyectos necesarios estén cargados. También se deben cargar estos proyectos antes de iniciar una buscar y reemplazar en archivos en toda la solución.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: los proyectos se cargan cuando se accede a estos. Se tiene acceso a un proyecto cuando el usuario expande el nodo del proyecto en el Explorador de soluciones cuando se abre un archivo que pertenecen al proyecto cuando se abre la solución porque está en la lista de documentos abiertos (guardada en el archivo de opciones de usuario de la solución), o cuando otro proyecto es decir que se está cargando tiene una dependencia en el proyecto. Este tipo de proyecto no se carga automáticamente antes de iniciar un proceso de compilación; el Administrador de carga de solución es responsable de garantizar que todos los proyectos necesarios estén cargados. También se deben cargar estos proyectos antes de iniciar una buscar y reemplazar en archivos en toda la solución.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: los proyectos no son va a cargar a menos que el usuario lo solicite explícitamente. Esto sucede cuando los proyectos se descargan de forma explícita.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: los proyectos no son va a cargar a menos que el usuario lo solicite explícitamente. Esto sucede cuando los proyectos se descargan de forma explícita.  
   
 ## <a name="creating-a-solution-load-manager"></a>Creación de una carga de solución manager  
  Los desarrolladores pueden crear una carga de solución manager implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> y Visual Studio que avisa de que el Administrador de carga de solución está activo.  
@@ -80,17 +80,17 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="handling-solution-load-events"></a>Control de eventos de carga de solución  
  Para suscribirse a eventos de carga de solución, llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> al activar el Administrador de carga de solución. Si implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, puede responder a eventos relacionados con la carga las prioridades del proyecto diferentes.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Esto se desencadena antes de que se abre una solución. Puede usarlo para cambiar la carga de prioridad para los proyectos de la solución del proyecto.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Esto se desencadena antes de que se abre una solución. Puede usarlo para cambiar la carga de prioridad para los proyectos de la solución del proyecto.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Esto se desencadena después de la solución se haya cargado, pero antes en segundo plano carga del proyecto comienza de nuevo. Por ejemplo, un usuario podría haber accedido a un proyecto cuya prioridad de carga es LoadIfNeeded o el Administrador de carga de solución puede haber cambiado una prioridad de la carga de proyecto a BackgroundLoad, que se iniciaría una carga en segundo plano de ese proyecto.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Esto se desencadena después de la solución se haya cargado, pero antes en segundo plano carga del proyecto comienza de nuevo. Por ejemplo, un usuario podría haber accedido a un proyecto cuya prioridad de carga es LoadIfNeeded o el Administrador de carga de solución puede haber cambiado una prioridad de la carga de proyecto a BackgroundLoad, que se iniciaría una carga en segundo plano de ese proyecto.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Esto se desencadena después de carga inicialmente completamente una solución, si hay un administrador de carga de solución. También se desencadena después de carga en segundo plano o la demanda de carga siempre que se carguen por completo la solución. Al mismo tiempo, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> se vuelve a activar.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Esto se desencadena después de carga inicialmente completamente una solución, si hay un administrador de carga de solución. También se desencadena después de carga en segundo plano o la demanda de carga siempre que se carguen por completo la solución. Al mismo tiempo, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> se vuelve a activar.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Esto se desencadena antes de la carga de un proyecto (o proyectos). Para asegurarse de que otros procesos en segundo plano se completan antes de que se cargan los proyectos, establezca `pfShouldDelayLoadToNextIdle` a **true**.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Esto se desencadena antes de la carga de un proyecto (o proyectos). Para asegurarse de que otros procesos en segundo plano se completan antes de que se cargan los proyectos, establezca `pfShouldDelayLoadToNextIdle` a **true**.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Esto se desencadena cuando un lote de proyectos está a punto de cargarse. Si `fIsBackgroundIdleBatch` es true, los proyectos son deben cargarse en segundo plano; si `fIsBackgroundIdleBatch` es false, los proyectos que van a cargarse sincrónicamente como resultado de una solicitud de usuario, por ejemplo si el usuario expande un proyecto pendiente en el Explorador de soluciones. Puede implementar esto para hacer el trabajo costoso que de lo contrario tendría que realizarse en <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Esto se desencadena cuando un lote de proyectos está a punto de cargarse. Si `fIsBackgroundIdleBatch` es true, los proyectos son deben cargarse en segundo plano; si `fIsBackgroundIdleBatch` es false, los proyectos que van a cargarse sincrónicamente como resultado de una solicitud de usuario, por ejemplo si el usuario expande un proyecto pendiente en el Explorador de soluciones. Puede implementar esto para hacer el trabajo costoso que de lo contrario tendría que realizarse en <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Esto se desencadena después de que se ha cargado un lote de proyectos.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Esto se desencadena después de que se ha cargado un lote de proyectos.  
   
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>Detectar y administrar soluciones y la carga de proyectos  
  Para detectar el estado de carga de proyectos y soluciones, llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> con los valores siguientes:  

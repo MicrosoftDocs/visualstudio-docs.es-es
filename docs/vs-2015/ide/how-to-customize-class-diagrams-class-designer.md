@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Personalizar los diagramas de clases (Diseñador de clases) | Microsoft Docs
+title: Procedimiento Personalizar los diagramas de clases (Diseñador de clases) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,14 +14,14 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e26cbc2a4c49f09f41e16287cef75beecdf4fdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065836"
 ---
-# <a name="how-to-customize-class-diagrams-class-designer"></a>Cómo: Personalizar los diagramas de clases (Diseñador de clases)
+# <a name="how-to-customize-class-diagrams-class-designer"></a>Procedimiento Personalizar diagramas de clases (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es posible cambiar la manera en que se muestra la información en los diagramas de clases. Se puede personalizar el diagrama entero o los tipos individuales en la superficie de diseño.  
@@ -35,29 +35,29 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
   
  **En este tema**  
   
--   [Acercar y alejar el diagrama de clase](../ide/how-to-customize-class-diagrams-class-designer.md#ZoomInOut)  
+- [Acercar y alejar el diagrama de clase](../ide/how-to-customize-class-diagrams-class-designer.md#ZoomInOut)  
   
--   [Personalizar la agrupación y ordenación de los miembros de tipo](../ide/how-to-customize-class-diagrams-class-designer.md#CustomizeGroupingSorting)  
+- [Personalizar la agrupación y ordenación de los miembros de tipo](../ide/how-to-customize-class-diagrams-class-designer.md#CustomizeGroupingSorting)  
   
--   [Ocultar los compartimientos de un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#HideCompartments)  
+- [Ocultar los compartimientos de un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#HideCompartments)  
   
--   [Ocultar miembros individuales de un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#HideMembers)  
+- [Ocultar miembros individuales de un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#HideMembers)  
   
--   [Mostrar los compartimientos y miembros ocultos de un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayHiddenCompartmentsAndMemberrs)  
+- [Mostrar los compartimientos y miembros ocultos de un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayHiddenCompartmentsAndMemberrs)  
   
--   [Ocultar relaciones](../ide/how-to-customize-class-diagrams-class-designer.md#HideAssociationAndInheritance)  
+- [Ocultar relaciones](../ide/how-to-customize-class-diagrams-class-designer.md#HideAssociationAndInheritance)  
   
--   [Mostrar relaciones ocultas](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayAssociationAndInheritance)  
+- [Mostrar relaciones ocultas](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayAssociationAndInheritance)  
   
--   [Quitar una forma de un diagrama de clase](../ide/how-to-customize-class-diagrams-class-designer.md#RemoveCodeAndShape)  
+- [Quitar una forma de un diagrama de clase](../ide/how-to-customize-class-diagrams-class-designer.md#RemoveCodeAndShape)  
   
--   [Eliminar una forma de tipo y su código subyacente](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)  
+- [Eliminar una forma de tipo y su código subyacente](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)  
   
-##  <a name="ZoomInOut"></a>Acercar y alejar el diagrama de clase  
+## <a name="ZoomInOut"></a>Acercar y alejar el diagrama de clase  
   
-1.  Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
+1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
   
-2.  En la barra de herramientas del Diseñador de clases, haga clic en el botón **Acercar** o **Alejar** para cambiar el nivel de zoom de la superficie del diseñador.  
+2. En la barra de herramientas del Diseñador de clases, haga clic en el botón **Acercar** o **Alejar** para cambiar el nivel de zoom de la superficie del diseñador.  
   
      o  
   
@@ -66,63 +66,63 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
     > [!NOTE]
     >  Al cambiar el nivel de zoom, no se ve afectada la escala de la copia impresa del diagrama de clases.  
   
-##  <a name="CustomizeGroupingSorting"></a> Personalizar la agrupación y ordenación de los miembros de tipo  
+## <a name="CustomizeGroupingSorting"></a> Personalizar la agrupación y ordenación de los miembros de tipo  
   
-1.  Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
+1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
   
-2.  Haga clic con el botón secundario en un área vacía de la superficie de diseño y elija **Miembros del grupo**.  
+2. Haga clic con el botón secundario en un área vacía de la superficie de diseño y elija **Miembros del grupo**.  
   
-3.  Seleccione una de las opciones disponibles:  
+3. Seleccione una de las opciones disponibles:  
   
-    1.  **Agrupar por tipo** separa los miembros de tipo individuales en una lista agrupada de Propiedades, Métodos, Eventos y Campos. Cada grupo depende de la definición de las entidades: por ejemplo, una clase no mostrará ningún grupo de eventos si todavía no hay ningún evento definido para esa clase.  
+    1. **Agrupar por tipo** separa los miembros de tipo individuales en una lista agrupada de Propiedades, Métodos, Eventos y Campos. Cada grupo depende de la definición de las entidades: por ejemplo, una clase no mostrará ningún grupo de eventos si todavía no hay ningún evento definido para esa clase.  
   
-    2.  **Agrupar por acceso** separa los miembros de tipo individuales en una lista agrupada según los modificadores de acceso del miembro. Por ejemplo, Público y Privado.  
+    2. **Agrupar por acceso** separa los miembros de tipo individuales en una lista agrupada según los modificadores de acceso del miembro. Por ejemplo, Público y Privado.  
   
-    3.  **Ordenar alfabéticamente** muestra los elementos que constituyen una entidad como una única lista ordenada alfabéticamente. La lista se ordena de menor a mayor.  
+    3. **Ordenar alfabéticamente** muestra los elementos que constituyen una entidad como una única lista ordenada alfabéticamente. La lista se ordena de menor a mayor.  
   
-##  <a name="HideCompartments"></a> Ocultar los compartimientos de un tipo  
+## <a name="HideCompartments"></a> Ocultar los compartimientos de un tipo  
   
-1.  Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
+1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
   
-2.  Haga clic con el botón secundario en la categoría de miembro del tipo que desea personalizar (por ejemplo, seleccione el nodo **Métodos** de una clase.  
+2. Haga clic con el botón secundario en la categoría de miembro del tipo que desea personalizar (por ejemplo, seleccione el nodo **Métodos** de una clase.  
   
-3.  Haga clic en **Ocultar compartimiento**.  
+3. Haga clic en **Ocultar compartimiento**.  
   
      El compartimiento seleccionado desaparece del contenedor del tipo.  
   
-##  <a name="HideMembers"></a> Ocultar miembros individuales de un tipo  
+## <a name="HideMembers"></a> Ocultar miembros individuales de un tipo  
   
-1.  Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
+1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
   
-2.  Haga clic con el botón secundario en el miembro del tipo que desea ocultar.  
+2. Haga clic con el botón secundario en el miembro del tipo que desea ocultar.  
   
-3.  Haga clic en **Ocultar**.  
+3. Haga clic en **Ocultar**.  
   
      El miembro seleccionado desaparece del contenedor del tipo.  
   
-##  <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Mostrar los compartimientos y miembros ocultos de un tipo  
+## <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Mostrar los compartimientos y miembros ocultos de un tipo  
   
-1.  Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
+1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
   
-2.  Haga clic con el botón secundario en el nombre del tipo con el compartimiento oculto.  
+2. Haga clic con el botón secundario en el nombre del tipo con el compartimiento oculto.  
   
-3.  Haga clic en **Mostrar todos los miembros**.  
-  
-     Todos los compartimientos y miembros ocultos aparecen en el contenedor del tipo.  
-  
-##  <a name="HideAssociationAndInheritance"></a> Ocultar relaciones  
-  
-1.  Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
-  
-2.  Haga clic con el botón secundario en la línea de asociación o herencia que desea ocultar.  
-  
-3.  Haga clic en **Ocultar** para las líneas de asociación y en **Ocultar línea de herencia** para las líneas de herencia.  
-  
-4.  Haga clic en **Mostrar todos los miembros**.  
+3. Haga clic en **Mostrar todos los miembros**.  
   
      Todos los compartimientos y miembros ocultos aparecen en el contenedor del tipo.  
   
-##  <a name="DisplayAssociationAndInheritance"></a> Mostrar relaciones ocultas  
+## <a name="HideAssociationAndInheritance"></a> Ocultar relaciones  
+  
+1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
+  
+2. Haga clic con el botón secundario en la línea de asociación o herencia que desea ocultar.  
+  
+3. Haga clic en **Ocultar** para las líneas de asociación y en **Ocultar línea de herencia** para las líneas de herencia.  
+  
+4. Haga clic en **Mostrar todos los miembros**.  
+  
+     Todos los compartimientos y miembros ocultos aparecen en el contenedor del tipo.  
+  
+## <a name="DisplayAssociationAndInheritance"></a> Mostrar relaciones ocultas  
   
 1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
   
@@ -130,20 +130,20 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
   
    Haga clic en **Mostrar todos los miembros** para las líneas de asociación y en **Mostrar clase base** o **Mostrar clases derivadas** para las líneas de herencia.  
   
-##  <a name="RemoveCodeAndShape"></a> Quitar una forma de un diagrama de clase  
+## <a name="RemoveCodeAndShape"></a> Quitar una forma de un diagrama de clase  
  Se puede quitar una forma de tipo del diagrama de clase sin que ello afecte al código subyacente del tipo. Al quitar las formas de tipo de un diagrama de clases solo se ve afectado ese diagrama: no se ve afectado el código subyacente que define el tipo y otros diagramas que muestran el tipo.  
   
-1.  En el diagrama de clases, seleccione la forma de tipo que desee quitar del diagrama.  
+1. En el diagrama de clases, seleccione la forma de tipo que desee quitar del diagrama.  
   
-2.  En el menú **Edición**, elija **Quitar del diagrama**.  
+2. En el menú **Edición**, elija **Quitar del diagrama**.  
   
      La forma de tipo y cualquier línea de asociación o herencia conectada a ella dejan de aparecer en el diagrama.  
   
-##  <a name="DeleteTypeShapeAndCode"></a> Eliminar una forma de tipo y su código subyacente  
+## <a name="DeleteTypeShapeAndCode"></a> Eliminar una forma de tipo y su código subyacente  
   
-1.  Haga clic con el botón secundario del mouse en la forma, en la superficie de diseño.  
+1. Haga clic con el botón secundario del mouse en la forma, en la superficie de diseño.  
   
-2.  Seleccione **Eliminar código** en el menú contextual.  
+2. Seleccione **Eliminar código** en el menú contextual.  
   
      La forma se quita del diagrama y su código subyacente se elimina del proyecto.  
   

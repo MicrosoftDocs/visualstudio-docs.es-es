@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a35e679ebff8a0a262b329298b0f2d135eb9dc8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 794400a14cac5b85f813e7a384c650c581a719e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061624"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Usar las ventanas de memoria en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -84,7 +84,7 @@ De forma predeterminada, contenido de la memoria se muestran como enteros de 1 b
 
 **Para cambiar el formato del contenido de la memoria:**
 
--  Haga clic en el **memoria** ventana y elija los formatos que desee en el menú contextual.
+- Haga clic en el **memoria** ventana y elija los formatos que desee en el menú contextual.
 
 **Para cambiar el número de columnas de la ventana Memoria:**
 

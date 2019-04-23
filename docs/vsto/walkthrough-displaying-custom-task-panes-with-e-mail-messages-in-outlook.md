@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69c68397c8695fd0d9c3c1ef48a38e316c537641
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062562"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook
   Este tutorial muestra cómo mostrar una instancia única de cada mensaje de correo electrónico que se crea o abre un panel de tareas personalizado. Los usuarios pueden mostrar u ocultar el panel de tareas personalizado mediante un botón de la cinta de opciones de cada mensaje de correo.
@@ -35,17 +35,17 @@ ms.locfileid: "56606451"
 
  En este tutorial se muestran las tareas siguientes:
 
--   Diseñar la interfaz de usuario (UI) del panel de tareas personalizado.
+- Diseñar la interfaz de usuario (UI) del panel de tareas personalizado.
 
--   Crear una interfaz de usuario de cinta de opciones personalizada.
+- Crear una interfaz de usuario de cinta de opciones personalizada.
 
--   Mostrar la interfaz de usuario de cinta de opciones personalizada con mensajes de correo electrónico.
+- Mostrar la interfaz de usuario de cinta de opciones personalizada con mensajes de correo electrónico.
 
--   Crear una clase para administrar ventanas de inspector y paneles de tareas personalizados.
+- Crear una clase para administrar ventanas de inspector y paneles de tareas personalizados.
 
--   Inicializar y limpiar los recursos usados por el complemento de VSTO.
+- Inicializar y limpiar los recursos usados por el complemento de VSTO.
 
--   Sincronizar el botón de alternancia de la cinta de opciones con el panel de tareas personalizado.
+- Sincronizar el botón de alternancia de la cinta de opciones con el panel de tareas personalizado.
 
 > [!NOTE]
 >  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -64,7 +64,7 @@ ms.locfileid: "56606451"
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
-1.  Crear un proyecto **Complemento de Outlook** con el nombre **OutlookMailItemTaskPane**. Use la plantilla de proyecto **Complemento de Outlook** . Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Crear un proyecto **Complemento de Outlook** con el nombre **OutlookMailItemTaskPane**. Use la plantilla de proyecto **Complemento de Outlook** . Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre el archivo de código *ThisAddIn.cs* o *ThisAddIn.vb* y agrega el proyecto **OutlookMailItemTaskPane** al **Explorador de soluciones**.
 
@@ -73,47 +73,47 @@ ms.locfileid: "56606451"
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Para diseñar la interfaz de usuario del panel de tareas personalizado
 
-1.  En el **Explorador de soluciones**, haga clic en el proyecto **OutlookMailItemTaskPane** .
+1. En el **Explorador de soluciones**, haga clic en el proyecto **OutlookMailItemTaskPane** .
 
-2.  En el menú **Proyecto** , haga clic en **Agregar control de usuario**.
+2. En el menú **Proyecto** , haga clic en **Agregar control de usuario**.
 
-3.  En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre del control de usuario a **TaskPaneControl**y haga clic en **Agregar**.
+3. En el cuadro de diálogo **Agregar nuevo elemento** , cambie el nombre del control de usuario a **TaskPaneControl**y haga clic en **Agregar**.
 
      Se abre el control de usuario en el diseñador.
 
-4.  En la pestaña **Controles comunes** del **Cuadro de herramientas**, arrastre un control **TextBox** hasta el control de usuario.
+4. En la pestaña **Controles comunes** del **Cuadro de herramientas**, arrastre un control **TextBox** hasta el control de usuario.
 
 ## <a name="design-the-user-interface-of-the-ribbon"></a>Diseñar la interfaz de usuario de la cinta de opciones
  Uno de los objetivos de este complemento VSTO es proporcionar a los usuarios una manera de ocultar o mostrar el panel de tareas personalizado en la cinta de opciones de cada mensaje de correo electrónico. Para proporcionar la interfaz de usuario, cree una interfaz de usuario de cinta de opciones personalizada que muestre un botón de alternancia en el que los usuarios pueden hacer clic para mostrar u ocultar el panel de tareas personalizado.
 
 ### <a name="to-create-a-custom-ribbon-ui"></a>Para crear una interfaz de usuario de cinta de opciones personalizada
 
-1.  En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
+1. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-2.  En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)**.
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)**.
 
-3.  Cambie el nombre de la nueva cinta de opciones por **ManageTaskPaneRibbon**y haga clic en **Agregar**.
+3. Cambie el nombre de la nueva cinta de opciones por **ManageTaskPaneRibbon**y haga clic en **Agregar**.
 
      El archivo *ManageTaskPaneRibbon.cs* o *ManageTaskPaneRibbon.vb* se abre en el diseñador de la cinta de opciones y muestra una pestaña y un grupo predeterminados.
 
-4.  En el diseñador de la cinta de opciones, haga clic en **group1**para seleccionarlo.
+4. En el diseñador de la cinta de opciones, haga clic en **group1**para seleccionarlo.
 
-5.  En la ventana **Propiedades** , establezca el valor de la propiedad **Label** en **Administrador de panel de tareas**.
+5. En la ventana **Propiedades** , establezca el valor de la propiedad **Label** en **Administrador de panel de tareas**.
 
-6.  En la pestaña **Controles de la cinta de opciones de Office** del **Cuadro de herramientas**, arrastre un control ToggleButton al grupo **Administrador de panel de tareas** .
+6. En la pestaña **Controles de la cinta de opciones de Office** del **Cuadro de herramientas**, arrastre un control ToggleButton al grupo **Administrador de panel de tareas** .
 
-7.  Haga clic en **toggleButton1**.
+7. Haga clic en **toggleButton1**.
 
-8.  En la ventana **Propiedades** , establezca el valor de la propiedad **Label** en **Mostrar panel de tareas**.
+8. En la ventana **Propiedades** , establezca el valor de la propiedad **Label** en **Mostrar panel de tareas**.
 
 ## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>Mostrar la interfaz de usuario de cinta de opciones personalizada con mensajes de correo electrónico
  El panel de tareas personalizado que va a crear en este tutorial se ha diseñado para que aparezca únicamente con las ventanas de inspector que contienen mensajes de correo. Por lo tanto, debe definir las propiedades de forma que la interfaz de usuario de la cinta de opciones personalizada solo aparezca con estas ventanas.
 
 ### <a name="to-display-the-custom-ribbon-ui-with-email-messages"></a>Para mostrar la interfaz de usuario de cinta de opciones personalizada con mensajes de correo electrónico
 
-1.  En el diseñador de la cinta de opciones, haga clic en la cinta **ManageTaskPaneRibbon** .
+1. En el diseñador de la cinta de opciones, haga clic en la cinta **ManageTaskPaneRibbon** .
 
-2.  En la ventana **Propiedades** , haga clic en la lista desplegable situada junto a **RibbonType**y seleccione **Microsoft.Outlook.Mail.Compose** y **Microsoft.Outlook.Mail.Read**.
+2. En la ventana **Propiedades** , haga clic en la lista desplegable situada junto a **RibbonType**y seleccione **Microsoft.Outlook.Mail.Compose** y **Microsoft.Outlook.Mail.Read**.
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Crear una clase para administrar ventanas de inspector y paneles de tareas personalizados
  Hay varios casos en que el complemento de VSTO debe identificar qué panel de tareas personalizado está asociado con un mensaje de correo electrónico específico. Estos casos son los siguientes:
@@ -128,34 +128,34 @@ ms.locfileid: "56606451"
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Para crear una clase para administrar ventanas de inspector y paneles de tareas personalizados
 
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el archivo *ThisAddIn.vb* o *ThisAddIn.cs* y luego haga clic en **Ver código**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el archivo *ThisAddIn.vb* o *ThisAddIn.cs* y luego haga clic en **Ver código**.
 
-2.  Agregue las instrucciones siguientes en la parte superior del archivo.
+2. Agregue las instrucciones siguientes en la parte superior del archivo.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
      [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]
 
-3.  Agregue el código siguiente al archivo *ThisAddIn.cs* o *ThisAddIn.vb* , fuera la clase `ThisAddIn` (para Visual C#, agregue este código dentro del espacio de nombres `OutlookMailItemTaskPane` ). La clase `InspectorWrapper` administra un par de objetos <xref:Microsoft.Office.Interop.Outlook.Inspector> y <xref:Microsoft.Office.Tools.CustomTaskPane> . Completará la definición de esta clase en los pasos siguientes.
+3. Agregue el código siguiente al archivo *ThisAddIn.cs* o *ThisAddIn.vb* , fuera la clase `ThisAddIn` (para Visual C#, agregue este código dentro del espacio de nombres `OutlookMailItemTaskPane` ). La clase `InspectorWrapper` administra un par de objetos <xref:Microsoft.Office.Interop.Outlook.Inspector> y <xref:Microsoft.Office.Tools.CustomTaskPane> . Completará la definición de esta clase en los pasos siguientes.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
      [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]
 
-4.  Agregue el constructor siguiente después del código que agregó en el paso anterior. Este constructor crea e inicializa un nuevo panel de tareas personalizado que está asociado al objeto <xref:Microsoft.Office.Interop.Outlook.Inspector> que se pasa. En C#, el constructor asocia también controladores de eventos al evento <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> del objeto <xref:Microsoft.Office.Interop.Outlook.Inspector> y al evento <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> del objeto <xref:Microsoft.Office.Tools.CustomTaskPane> .
+4. Agregue el constructor siguiente después del código que agregó en el paso anterior. Este constructor crea e inicializa un nuevo panel de tareas personalizado que está asociado al objeto <xref:Microsoft.Office.Interop.Outlook.Inspector> que se pasa. En C#, el constructor asocia también controladores de eventos al evento <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> del objeto <xref:Microsoft.Office.Interop.Outlook.Inspector> y al evento <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> del objeto <xref:Microsoft.Office.Tools.CustomTaskPane> .
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#4)]
      [!code-vb[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#4)]
 
-5.  Agregue el método siguiente después del código que agregó en el paso anterior. Este método es un controlador de eventos para el evento <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> de objeto <xref:Microsoft.Office.Tools.CustomTaskPane> que se encuentra en la clase `InspectorWrapper` . Este código actualiza el estado del botón de alternancia cada vez que el usuario abre o cierra el panel de tareas personalizado.
+5. Agregue el método siguiente después del código que agregó en el paso anterior. Este método es un controlador de eventos para el evento <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> de objeto <xref:Microsoft.Office.Tools.CustomTaskPane> que se encuentra en la clase `InspectorWrapper` . Este código actualiza el estado del botón de alternancia cada vez que el usuario abre o cierra el panel de tareas personalizado.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6.  Agregue el método siguiente después del código que agregó en el paso anterior. Este método es un controlador de eventos para el <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> eventos de la <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto que contiene el mensaje de correo electrónico actual. El controlador de eventos libera los recursos cuando se cierra el mensaje de correo electrónico. El controlador de eventos también quita el panel de tareas personalizado actual desde la colección `CustomTaskPanes` . Esto ayuda a evitar que varias instancias del panel de tareas personalizado cuando se abre el siguiente mensaje de correo electrónico.
+6. Agregue el método siguiente después del código que agregó en el paso anterior. Este método es un controlador de eventos para el <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> eventos de la <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto que contiene el mensaje de correo electrónico actual. El controlador de eventos libera los recursos cuando se cierra el mensaje de correo electrónico. El controlador de eventos también quita el panel de tareas personalizado actual desde la colección `CustomTaskPanes` . Esto ayuda a evitar que varias instancias del panel de tareas personalizado cuando se abre el siguiente mensaje de correo electrónico.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
 
-7.  Agregue el código siguiente después del código que agregó en el paso anterior. Más adelante en este tutorial, llamará a esta propiedad desde un método de la interfaz de usuario de la cinta de opciones para mostrar u ocultar el panel de tareas personalizado.
+7. Agregue el código siguiente después del código que agregó en el paso anterior. Más adelante en este tutorial, llamará a esta propiedad desde un método de la interfaz de usuario de la cinta de opciones para mostrar u ocultar el panel de tareas personalizado.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#7)]
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
@@ -201,23 +201,23 @@ ms.locfileid: "56606451"
 
 ### <a name="to-build-your-project"></a>Para compilar el proyecto
 
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **OutlookMailItemTaskPane** y luego haga clic en **Compilar**. Compruebe que el proyecto se compila sin errores.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **OutlookMailItemTaskPane** y luego haga clic en **Compilar**. Compruebe que el proyecto se compila sin errores.
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Sincronizar el botón de alternancia de la cinta de opciones con el panel de tareas personalizado
  Cuando el panel de tareas esté visible, el botón de alternancia aparecerá presionado y cuando el panel de tareas esté oculto, aparecerá sin presionar. Para sincronizar el estado del botón con el panel de tareas personalizado, modifique el controlador de eventos <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> del botón de alternancia.
 
 ### <a name="to-synchronize-the-custom-task-pane-with-the-toggle-button"></a>Para sincronizar el panel de tareas personalizado con el botón de alternancia
 
-1.  En el diseñador de la cinta de opciones, haga doble clic en el botón de alternancia **Mostrar panel de tareas** .
+1. En el diseñador de la cinta de opciones, haga doble clic en el botón de alternancia **Mostrar panel de tareas** .
 
      Visual Studio genera automáticamente un controlador de eventos denominado `toggleButton1_Click`, que controla el evento <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> del botón de alternancia. Visual Studio también abre el archivo *ManageTaskPaneRibbon.cs* o *ManageTaskPaneRibbon.vb* en el Editor de código.
 
-2.  Agregue las instrucciones siguientes al comienzo del archivo *ManageTaskPaneRibbon.cs* o *ManageTaskPaneRibbon.vb* .
+2. Agregue las instrucciones siguientes al comienzo del archivo *ManageTaskPaneRibbon.cs* o *ManageTaskPaneRibbon.vb* .
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
      [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]
 
-3.  Reemplace el controlador de eventos `toggleButton1_Click` por el siguiente código: Cuando el usuario hace clic en el botón de alternancia, este método muestra u oculta el panel de tareas personalizado que está asociado a la ventana de inspector actual.
+3. Reemplace el controlador de eventos `toggleButton1_Click` por el siguiente código: Cuando el usuario hace clic en el botón de alternancia, este método muestra u oculta el panel de tareas personalizado que está asociado a la ventana de inspector actual.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
      [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
@@ -262,11 +262,11 @@ ms.locfileid: "56606451"
 ## <a name="next-steps"></a>Pasos siguientes
  Puede obtener más información sobre cómo crear paneles de tareas personalizados en estos temas:
 
--   Crear un panel de tareas personalizado en un complemento de VSTO para una aplicación diferente. Para obtener más información acerca de las aplicaciones que admiten paneles de tareas personalizados, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).
+- Crear un panel de tareas personalizado en un complemento de VSTO para una aplicación diferente. Para obtener más información acerca de las aplicaciones que admiten paneles de tareas personalizados, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
--   Automatizar una aplicación de Microsoft Office mediante un panel de tareas personalizado. Para obtener más información, vea [Tutorial: Automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
+- Automatizar una aplicación de Microsoft Office mediante un panel de tareas personalizado. Para obtener más información, vea [Tutorial: Automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
 
--   Crear un botón de cinta de opciones en Excel que se puede usar para ocultar o mostrar un panel de tareas personalizado. Para obtener más información, vea [Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
+- Crear un botón de cinta de opciones en Excel que se puede usar para ocultar o mostrar un panel de tareas personalizado. Para obtener más información, vea [Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
 ## <a name="see-also"></a>Vea también
 - [Paneles de tareas personalizados](../vsto/custom-task-panes.md)

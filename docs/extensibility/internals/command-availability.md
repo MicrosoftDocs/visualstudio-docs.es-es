@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae72a9f8ed20840da958c3c9314c8f25aada801f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7dfe8a6b3e4c84fd97a159f6ac43e0de47536f0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064276"
 ---
 # <a name="command-availability"></a>Disponibilidad de los comandos
 
@@ -44,11 +44,11 @@ Los siguientes contextos de comando son los más comunes:
 
 Si un contexto de comando adecuado que GUID ya no está definido, puede definir uno en el paquete de VS y, a continuación, programa que esté activo o inactivo según sea necesario para controlar la visibilidad de los comandos:
 
-1.  Registrar identificadores GUID de contexto mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> método.
+1. Registrar identificadores GUID de contexto mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> método.
 
-2.  Obtener el estado de un GUID de contexto mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método.
+2. Obtener el estado de un GUID de contexto mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método.
 
-3.  Activar y desactivar la GUID de contexto mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método.
+3. Activar y desactivar la GUID de contexto mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método.
 
 > [!CAUTION]
 > Asegúrese de que el VSPackage no afecta a ningún GUID de contexto existente porque otros VSPackages que dependen de ellos.

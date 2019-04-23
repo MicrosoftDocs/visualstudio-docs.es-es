@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988349"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065394"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Tutorial: Mostrar datos relacionados en una aplicación WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,19 +61,19 @@ En este tutorial, creará una aplicación WPF que muestra los datos de tablas de
   
 #### <a name="to-create-a-new-wpf-project"></a>Para crear un proyecto de WPF  
   
-1.  Inicie Visual Studio.  
+1. Inicie Visual Studio.  
   
-2.  En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
+2. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
   
-3.  Expanda **Visual C#** o **Visual Basic**y, a continuación, seleccione **Windows**.  
+3. Expanda **Visual C#** o **Visual Basic**y, a continuación, seleccione **Windows**.  
   
-4.  Asegúrese de que **.NET Framework 4** está seleccionado en el cuadro combinado en la parte superior del cuadro de diálogo. El <xref:System.Windows.Controls.DataGrid> control que se utiliza en este tutorial está disponible solo en .NET Framework 4.  
+4. Asegúrese de que **.NET Framework 4** está seleccionado en el cuadro combinado en la parte superior del cuadro de diálogo. El <xref:System.Windows.Controls.DataGrid> control que se utiliza en este tutorial está disponible solo en .NET Framework 4.  
   
-5.  Seleccione la plantilla de proyecto **Aplicación WPF**.  
+5. Seleccione la plantilla de proyecto **Aplicación WPF**.  
   
-6.  En el cuadro **Nombre** , escriba `AdventureWorksOrdersViewer`.  
+6. En el cuadro **Nombre**, escriba `AdventureWorksOrdersViewer`.  
   
-7.  Haga clic en **Aceptar**.  
+7. Haga clic en **Aceptar**.  
   
      Visual Studio crea el `AdventureWorksOrdersViewer` proyecto.  
   
@@ -102,9 +102,9 @@ En este tutorial, creará una aplicación WPF que muestra los datos de tablas de
   
 6. En el **elija los objetos de base de datos** , expanda **tablas**y, a continuación, seleccione las tablas siguientes:  
   
-   -   **SalesOrderDetail**  
+   - **SalesOrderDetail**  
   
-   -   **SalesOrderHeader**  
+   - **SalesOrderHeader**  
   
 7. Haga clic en **Finalizar**.  
   
@@ -192,15 +192,15 @@ En este tutorial, creará una aplicación WPF que muestra los datos de tablas de
   
 #### <a name="to-test-the-application"></a>Para probar la aplicación  
   
-1.  Presione **F5**.  
+1. Presione **F5**.  
   
      La aplicación se compila y se ejecuta. Compruebe lo siguiente:  
   
-    -   El **Id. de pedido de ventas** muestra el cuadro combinado **71774**. Este es el primer identificador de pedido en la entidad.  
+    - El **Id. de pedido de ventas** muestra el cuadro combinado **71774**. Este es el primer identificador de pedido en la entidad.  
   
-    -   Para cada pedido seleccione en la **Id. de pedido de ventas** cuadro combinado, se muestra información detallada del pedido en el <xref:System.Windows.Controls.DataGrid>.  
+    - Para cada pedido seleccione en la **Id. de pedido de ventas** cuadro combinado, se muestra información detallada del pedido en el <xref:System.Windows.Controls.DataGrid>.  
   
-2.  Cierre la aplicación.  
+2. Cierre la aplicación.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
  Después de completar este tutorial, obtenga información sobre cómo usar el **orígenes de datos** controla la ventana de Visual Studio para enlazar WPF a otros tipos de orígenes de datos. Para obtener más información, consulte [WPF enlazar controles a un servicio de datos WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) y [WPF enlazar controles a un conjunto de datos](../data-tools/bind-wpf-controls-to-a-dataset.md).  

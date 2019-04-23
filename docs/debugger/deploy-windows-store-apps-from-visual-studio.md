@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065745"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implementar aplicaciones para UWP desde Visual Studio
 
@@ -36,18 +36,18 @@ Implementación es automática cuando se depura la aplicación desde Visual Stud
 
 - Implementación de una aplicación que se depurará cuando la inicie otra aplicación u otro método.
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Cómo implementar una aplicación para UWP
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Cómo implementar una aplicación para UWP
  La implementación manual de una aplicación es un proceso simple:
 
-1.  Si implementa a un dispositivo remoto, especifique el nombre o la dirección IP del dispositivo en la página de proyecto de la propiedad del proyecto de inicio de la aplicación. Los pasos necesarios se mencionan más adelante dentro de este tema.
+1. Si implementa a un dispositivo remoto, especifique el nombre o la dirección IP del dispositivo en la página de proyecto de la propiedad del proyecto de inicio de la aplicación. Los pasos necesarios se mencionan más adelante dentro de este tema.
 
-2.  En la barra de herramientas de Visual Studio del depurador, seleccione el destino de la implementación en la lista desplegable que hay junto al botón **Iniciar depuración** .
+2. En la barra de herramientas de Visual Studio del depurador, seleccione el destino de la implementación en la lista desplegable que hay junto al botón **Iniciar depuración** .
 
      ![Ejecutar en el equipo Local](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  En el menú **Compilar** , elija **Implementar**
+3. En el menú **Compilar** , elija **Implementar**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Cómo especificar un dispositivo remoto
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Cómo especificar un dispositivo remoto
 
 **Requisitos previos**
 
@@ -92,7 +92,7 @@ En la implementación se usa el canal de la red del depurador remoto para enviar
 
 10. Escribe el nombre de red del dispositivo remoto en el cuadro **Equipo remoto** o haz clic en **Buscar** para elegir el dispositivo en el cuadro de diálogo **Seleccionar conexión del depurador remoto** .
 
-##  <a name="BKMK_Deployment_options"></a> Opciones de implementación
+## <a name="BKMK_Deployment_options"></a> Opciones de implementación
 
 Puede establecer las siguientes opciones de implementación en la página de propiedades de depuración del proyecto de inicio.
 

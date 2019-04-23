@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1522b2567c05a9c3a61091813a8b5e18315433f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4ec56ae4345405cfc704a97ec624f9c2e4d96a5b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863453"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061218"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Procedimiento Rellenar documentos con datos de una base de datos
 
@@ -36,11 +36,11 @@ En el siguiente ejemplo se muestra cómo agregar controles enlazados a datos en 
 
 ### <a name="to-populate-a-document-with-data-from-a-database"></a>Para rellenar un documento con datos de una base de datos
 
-1.  Abra un proyecto de nivel de documento de Word en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], con el documento abierto en el diseñador.
+1. Abra un proyecto de nivel de documento de Word en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], con el documento abierto en el diseñador.
 
-2.  Abra el **orígenes de datos** ventana y crear un origen de datos desde una base de datos. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).
+2. Abra el **orígenes de datos** ventana y crear un origen de datos desde una base de datos. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).
 
-3.  Arrastre el campo que desee desde la **orígenes de datos** ventana al documento.
+3. Arrastre el campo que desee desde la **orígenes de datos** ventana al documento.
 
 Se agregará un control de contenido al documento. El tipo del control de contenido depende del tipo de datos del campo que haya seleccionado. Para obtener más información, consulte [controles de contenido](../vsto/content-controls.md).
 
@@ -50,19 +50,19 @@ Puede agregar un control diferente seleccionando el campo de datos en el **oríg
 
 Además del control, se agregan automáticamente al proyecto los siguientes objetos relacionados con los datos:
 
--   Un conjunto de datos con tipo que encapsula las tablas de datos de la base de datos a las que se haya conectado. Para obtener más información, consulte [herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Un conjunto de datos con tipo que encapsula las tablas de datos de la base de datos a las que se haya conectado. Para obtener más información, consulte [herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
--   Un <xref:System.Windows.Forms.BindingSource> que conecta el control al conjunto de datos con tipo. Para obtener más información, consulte [información general del componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- Un <xref:System.Windows.Forms.BindingSource> que conecta el control al conjunto de datos con tipo. Para obtener más información, consulte [información general del componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   Un TableAdapter que se conecta el conjunto de datos con tipo a la base de datos. Para obtener más información, consulte [crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+- Un TableAdapter que se conecta el conjunto de datos con tipo a la base de datos. Para obtener más información, consulte [crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
--   TableAdapterManager, que se usa para coordinar los adaptadores de tabla en el conjunto de datos para habilitar las actualizaciones jerárquicas. Para obtener más información, consulte [actualización jerárquica](../data-tools/hierarchical-update.md) y [TableAdapterManager referencia](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- TableAdapterManager, que se usa para coordinar los adaptadores de tabla en el conjunto de datos para habilitar las actualizaciones jerárquicas. Para obtener más información, consulte [actualización jerárquica](../data-tools/hierarchical-update.md) y [TableAdapterManager referencia](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Al ejecutar el proyecto, el control muestra el primer registro del origen de datos. Puede usar el <xref:System.Windows.Forms.BindingSource> para permitir a los usuarios desplazarse por los registros.
 
 ### <a name="to-scroll-through-the-records"></a>Para desplazarse por los registros
 
--   Use métodos <xref:System.Windows.Forms.BindingSource>, como <xref:System.Windows.Forms.BindingSource.MoveNext%2A> y <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Use métodos <xref:System.Windows.Forms.BindingSource>, como <xref:System.Windows.Forms.BindingSource.MoveNext%2A> y <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Para obtener información acerca de cómo enviar las actualizaciones a la base de datos y el conjunto de datos con tipo, vea [Cómo: Actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
