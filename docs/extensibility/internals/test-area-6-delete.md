@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f62b580b72f7910f8d5a688acc8df61361286c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627927"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050765"
 ---
 # <a name="test-area-6-delete"></a>Área de prueba 6: Eliminar
 Esta área de prueba de complemento de control de código fuente trata las acciones de eliminación.
@@ -36,13 +36,13 @@ Esta área de prueba de complemento de control de código fuente trata las accio
 ## <a name="expected-behavior"></a>Comportamiento esperado
  Es el comportamiento esperado para los casos de prueba en el área de prueba de eliminación:
 
--   Elemento eliminado ya no está visible dentro de **el Explorador de soluciones**.
+- Elemento eliminado ya no está visible dentro de **el Explorador de soluciones**.
 
--   El elemento primario del proyecto eliminado o elemento está desprotegido según sea necesario (posiblemente con un símbolo del sistema.)
+- El elemento primario del proyecto eliminado o elemento está desprotegido según sea necesario (posiblemente con un símbolo del sistema.)
 
--   Después de eliminar un checked out o elemento agregado, no aparecen en la **protecciones pendientes** ventana.
+- Después de eliminar un checked out o elemento agregado, no aparecen en la **protecciones pendientes** ventana.
 
--   El elemento aún existe en el almacén de control de código fuente, incluso después de la eliminación y se debe purgar manualmente.
+- El elemento aún existe en el almacén de control de código fuente, incluso después de la eliminación y se debe purgar manualmente.
 
 |Acción|Pasos de prueba|Resultados esperados para comprobar|
 |------------|----------------|--------------------------------|

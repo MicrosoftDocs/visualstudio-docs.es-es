@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar y quitar carpetas asignadas | Documentos de Microsoft
+title: Procedimiento Agregar y quitar carpetas asignadas | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21ecf370134558d7b47faad1c215fa9a65019316
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d5d1acc40b23c979a5746c50be50a584d11112b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646218"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046986"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Cómo: agregar y quitar carpetas asignadas
   Algunas carpetas usadas habitualmente en SharePoint, como imágenes y diseños, está profundamente integrado en la jerarquía de archivos. Puede asignar estas carpetas en un proyecto de SharePoint para tener acceso a ellos más fácilmente. Carpetas asignadas son carpetas en el proyecto de SharePoint que corresponden a la ubicación física de los archivos de la instalación del servidor de SharePoint.
@@ -33,23 +33,23 @@ Puede agregar carpetas asignadas a un proyecto mediante el uso de comandos en la
 
 #### <a name="to-add-mapped-folders-to-a-project"></a>Para agregar carpetas asignadas a un proyecto
 
-1.  En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-2.  En el **nuevo proyecto** diálogo cuadro, expanda el el **Visual Basic** o **Visual C#** nodo, expanda el **Office/SharePoint** nodo y, a continuación, Elija la **soluciones de SharePoint** nodo.
+2. En el **nuevo proyecto** diálogo cuadro, expanda el el **Visual Basic** o **Visual C#** nodo, expanda el **Office/SharePoint** nodo y, a continuación, Elija la **soluciones de SharePoint** nodo.
 
-3.  En la lista de plantillas de proyecto, elija el **elemento Web de SharePoint 2013 Visual** plantilla.
+3. En la lista de plantillas de proyecto, elija el **elemento Web de SharePoint 2013 Visual** plantilla.
 
-4.  En el **nombre** , escriba **TestProject1**y, a continuación, elija el **Aceptar** botón.
+4. En el **nombre** , escriba **TestProject1**y, a continuación, elija el **Aceptar** botón.
 
-5.  En el **Asistente de personalización de SharePoint**, elija el **finalizar** botón para conservar la configuración predeterminada.
+5. En el **Asistente de personalización de SharePoint**, elija el **finalizar** botón para conservar la configuración predeterminada.
 
-6.  En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto** > **carpeta asignada de SharePoint agregar "Imágenes"**.
+6. En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto** > **carpeta asignada de SharePoint agregar "Imágenes"**.
 
      Una carpeta que se denomina **imágenes** aparece en el proyecto y contiene una subcarpeta denominada TestProject1. Esta carpeta asignada contiene imágenes para el proyecto de elemento web visual.
 
-7.  En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto** > **Agregar carpeta asignada de SharePoint** para mostrar el  **Agregar carpeta asignada de SharePoint** cuadro de diálogo.
+7. En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto** > **Agregar carpeta asignada de SharePoint** para mostrar el  **Agregar carpeta asignada de SharePoint** cuadro de diálogo.
 
-8.  En la vista de árbol de carpetas que están disponibles para la asignación, elija el **recursos** carpeta y, a continuación, elija el **Aceptar** botón.
+8. En la vista de árbol de carpetas que están disponibles para la asignación, elija el **recursos** carpeta y, a continuación, elija el **Aceptar** botón.
 
      Una carpeta que se denomina **recursos** aparece en el proyecto. Esta carpeta puede almacenar elementos como archivos de recursos de cadena. Las subcarpetas pueden ser útiles para organizar el contenido de una carpeta asignada, pero se crean automáticamente cuando agrega una carpeta asignada mediante el **Agregar carpeta asignada de SharePoint** comando. Para agregar una subcarpeta, elija el **recursos** carpeta y, a continuación, en la barra de menús, elija **proyecto** > **nueva carpeta**.
 
@@ -58,25 +58,25 @@ Puede agregar carpetas asignadas a un proyecto mediante el uso de comandos en la
 
 #### <a name="to-change-the-deployment-location-of-a-mapped-folder"></a>Para cambiar la ubicación de implementación de una carpeta asignada
 
-1.  En el proyecto que creó anteriormente, elija una carpeta asignada.
+1. En el proyecto que creó anteriormente, elija una carpeta asignada.
 
-2.  En el **propiedades** ventana, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) situado en la **implementación ubicación** propiedad.
+2. En el **propiedades** ventana, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) situado en la **implementación ubicación** propiedad.
 
-3.  En el **Agregar carpeta asignada de SharePoint** cuadro de diálogo, vaya a la carpeta a la que desea que la carpeta asignada para que señale.
+3. En el **Agregar carpeta asignada de SharePoint** cuadro de diálogo, vaya a la carpeta a la que desea que la carpeta asignada para que señale.
 
-4.  Elija el nodo y, a continuación, elija el **Aceptar** botón.
+4. Elija el nodo y, a continuación, elija el **Aceptar** botón.
 
 ## <a name="rename-or-remove-mapped-folders"></a>Cambiar el nombre o quitar carpetas asignadas
 
 #### <a name="to-rename-or-remove-a-mapped-folder"></a>Para cambiar el nombre o quitar una carpeta asignada
 
-1.  En el proyecto que creó anteriormente, elija una carpeta asignada.
+1. En el proyecto que creó anteriormente, elija una carpeta asignada.
 
-2.  Para cambiar el nombre de la carpeta asignada, abra el menú contextual, elija **cambiar el nombre**, escriba el nuevo nombre y, a continuación, elija la tecla ENTRAR.
+2. Para cambiar el nombre de la carpeta asignada, abra el menú contextual, elija **cambiar el nombre**, escriba el nuevo nombre y, a continuación, elija la tecla ENTRAR.
 
      Como alternativa, puede elegir la carpeta asignada que se desea cambiar el nombre, abra el **propiedades** ventana y, a continuación, establezca el valor de la **nombre de la carpeta** propiedad para el nuevo nombre.
 
-3.  Para quitar una carpeta asignada desde el proyecto, abra el menú contextual, elija **eliminar**y, a continuación, elija el **Aceptar** botón en el cuadro de diálogo para confirmar la eliminación.
+3. Para quitar una carpeta asignada desde el proyecto, abra el menú contextual, elija **eliminar**y, a continuación, elija el **Aceptar** botón en el cuadro de diálogo para confirmar la eliminación.
 
 ## <a name="see-also"></a>Vea también
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

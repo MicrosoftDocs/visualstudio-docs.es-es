@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e1df80c41c71b02b8dfc8d99553e2d5b22afdd8a
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: a7e89f2c7b9e834f9896ca3609fd3211e2d41862
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001925"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044075"
 ---
 # <a name="graphics-pixel-history"></a>Historial de píxeles de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
   
  Puede expandir cada primitiva para examinar cómo se combinó la salida del sombreador de píxeles con el color de píxel existente para producir el color resultante. Desde aquí, también puede examinar o depurar el código del sombreador de píxeles asociado a la primitiva, y puede expandir aún más el nodo del sombreador de vértices para examinar la entrada del sombreador de vértices.  
   
-###  <a name="exclusion"></a> Exclusión de primitivas  
+### <a name="exclusion"></a> Exclusión de primitivas  
  Si una primitiva se excluye de modo que no afecte al color del píxel, la exclusión puede producirse por varios motivos. Cada motivo está representado por un icono de los que se describen en esta tabla:  
   
 |Iconos|Motivo de exclusión|  
@@ -55,22 +55,22 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
   
 ##### <a name="to-view-a-shaders-source-code"></a>Para ver el código fuente de un sombreador  
   
-1.  En la ventana **Historial de píxeles de gráfico**, busque la llamada a draw que corresponde con el sombreador que desea examinar y expándala.  
+1. En la ventana **Historial de píxeles de gráfico**, busque la llamada a draw que corresponde con el sombreador que desea examinar y expándala.  
   
-2.  En la llamada a draw que acaba de expandir, seleccione una primitiva que muestre el problema que le interesa y expándala.  
+2. En la llamada a draw que acaba de expandir, seleccione una primitiva que muestre el problema que le interesa y expándala.  
   
-3.  En la primitiva que le interesa, siga el vínculo del título del sombreador. Por ejemplo, siga el vínculo **Sombreador de vértices obj:30** para ver el código fuente del sombreador de vértices.  
+3. En la primitiva que le interesa, siga el vínculo del título del sombreador. Por ejemplo, siga el vínculo **Sombreador de vértices obj:30** para ver el código fuente del sombreador de vértices.  
   
     > [!TIP]
     >  El número de objeto, **obj:30**, identifica este sombreador en toda la interfaz del Analizador de gráficos, tal como se muestra en la ventana de tabla de objetos y etapas de canalización.  
   
 ##### <a name="to-debug-a-shader"></a>Para depurar un sombreador  
   
-1.  En la ventana **Historial de píxeles de gráfico**, busque la llamada a draw que corresponde con el sombreador que desea examinar y expándala.  
+1. En la ventana **Historial de píxeles de gráfico**, busque la llamada a draw que corresponde con el sombreador que desea examinar y expándala.  
   
-2.  A continuación, en la llamada a draw que acaba de expandir, seleccione una primitiva que muestre el problema que le interesa y expándala.  
+2. A continuación, en la llamada a draw que acaba de expandir, seleccione una primitiva que muestre el problema que le interesa y expándala.  
   
-3.  En la primitiva que le interesa, seleccione **Iniciar depuración**. Este punto de entrada en el depurador HLSL tiene como valor predeterminado la primera invocación del sombreador para la primitiva correspondiente, es decir, el primer píxel o vértice que procesa el sombreador. Hay un único píxel asociado con la primitiva, pero hay más de una invocación del sombreador de vértices para las líneas y los triángulos.  
+3. En la primitiva que le interesa, seleccione **Iniciar depuración**. Este punto de entrada en el depurador HLSL tiene como valor predeterminado la primera invocación del sombreador para la primitiva correspondiente, es decir, el primer píxel o vértice que procesa el sombreador. Hay un único píxel asociado con la primitiva, pero hay más de una invocación del sombreador de vértices para las líneas y los triángulos.  
   
      Para depurar la invocación del sombreador de vértices de un vértice concreto, expanda el vínculo del título VertexShader y busque el vértice que le interesa; después, seleccione **Iniciar depuración** junto a él.  
   

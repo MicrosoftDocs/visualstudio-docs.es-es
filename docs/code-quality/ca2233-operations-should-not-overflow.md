@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045542"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Las operaciones no deben desbordarse
 
@@ -102,11 +102,11 @@ Si activa activado desbordamiento y subdesbordamiento aritmético en C#, es equi
 
 Para activar comprueba el desbordamiento y subdesbordamiento aritmético en C#:
 
-1.  En **el Explorador de soluciones**, haga clic en el proyecto y elija **propiedades**.
+1. En **el Explorador de soluciones**, haga clic en el proyecto y elija **propiedades**.
 
-2.  Seleccione la pestaña **Compilar** y haga clic en **Opciones avanzadas**.
+2. Seleccione la pestaña **Compilar** y haga clic en **Opciones avanzadas**.
 
-3.  Seleccione **comprobación de desbordamiento y subdesbordamiento aritmético** y haga clic en **Aceptar**.
+3. Seleccione **comprobación de desbordamiento y subdesbordamiento aritmético** y haga clic en **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
 

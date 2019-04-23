@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ca4bab90105e00f556c7595dcea622f963aef9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e41e3df54245b023a86f20921c4bfd4de74a952
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684837"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051302"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Establece una inspección en Variables en subprocesos en paralelo en Visual Studio (C#, Visual Basic, C++)
 En la ventana Inspección paralela, puede mostrar simultáneamente los valores que contiene una expresión en varios subprocesos. Cada fila representa un subproceso que se ejecuta en una aplicación, pero un subproceso puede representarse en varias filas. Para ser más exactos, cada fila representa una llamada de función cuya signatura de función coincide con la función en el marco de pila actual. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos. Las siguientes columnas se muestran en la ventana **Inspección paralela**:
@@ -42,49 +42,49 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
 
 ### <a name="to-display-the-parallel-watch-window"></a>Para mostrar la ventana Inspección paralela
 
-1.  Establezca un punto de interrupción en el código.
+1. Establezca un punto de interrupción en el código.
 
-2.  En la barra de menús, seleccione **Depurar**, **Iniciar depuración**. Espere hasta que la aplicación llegue al punto de interrupción.
+2. En la barra de menús, seleccione **Depurar**, **Iniciar depuración**. Espere hasta que la aplicación llegue al punto de interrupción.
 
-3.  En la barra de menús, elija **Depurar**, **Ventanas**, **Inspección paralela** y después elija una ventana de inspección. Puede abrir hasta cuatro ventanas.
+3. En la barra de menús, elija **Depurar**, **Ventanas**, **Inspección paralela** y después elija una ventana de inspección. Puede abrir hasta cuatro ventanas.
 
 ### <a name="to-add-a-watch-expression"></a>Para agregar una expresión de inspección
 
--   Seleccione uno del blanco *Agregar inspección* columnas y, a continuación, escriba una expresión de inspección.
+- Seleccione uno del blanco *Agregar inspección* columnas y, a continuación, escriba una expresión de inspección.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>Para marcar o quitar marcador de un subproceso
 
--   Seleccione la columna de marca de la fila (primera columna), o abra el menú contextual para el subproceso y elija **marca** o **Quitar marcador**.
+- Seleccione la columna de marca de la fila (primera columna), o abra el menú contextual para el subproceso y elija **marca** o **Quitar marcador**.
 
 ### <a name="to-display-only-flagged-threads"></a>Para mostrar solo los subprocesos marcados
 
--   Elija la **mostrar marcadas únicamente** situado en la esquina superior izquierda de la **inspección paralela** ventana.
+- Elija la **mostrar marcadas únicamente** situado en la esquina superior izquierda de la **inspección paralela** ventana.
 
 ### <a name="to-switch-to-another-thread"></a>Para cambiar a otro subproceso
 
--   Haga doble clic en la columna del subproceso actual (segunda columna). (Teclado: seleccione la fila y presione Entrar).
+- Haga doble clic en la columna del subproceso actual (segunda columna). (Teclado: Seleccione la fila y presione ENTRAR).
 
 ### <a name="to-sort-a-column"></a>Para ordenar una columna
 
--   Seleccione el encabezado de la columna.
+- Seleccione el encabezado de la columna.
 
 ### <a name="to-group-threads"></a>Para agrupar subprocesos
 
--   Abra el menú contextual de la ventana Inspección paralela, elija **Agrupar por** y después seleccione el elemento del submenú adecuado.
+- Abra el menú contextual de la ventana Inspección paralela, elija **Agrupar por** y después seleccione el elemento del submenú adecuado.
 
 ### <a name="to-freeze-or-thaw-threads"></a>Para inmovilizar o reanudar los subprocesos
 
--   Abra el menú contextual de la fila y elija **Inmovilizar** o **Reanudar**.
+- Abra el menú contextual de la fila y elija **Inmovilizar** o **Reanudar**.
 
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Para exportar los datos de la ventana Inspección paralela
 
--   Elija el botón **Abrir en Excel** y después seleccione **Abrir en Excel** o **Exportar a CSV**.
+- Elija el botón **Abrir en Excel** y después seleccione **Abrir en Excel** o **Exportar a CSV**.
 
 ### <a name="to-filter-by-a-boolean-expression"></a>Para filtrar por una expresión booleana
 
--   Escriba una expresión booleana en el cuadro **Filtrar por expresión booleana**. El depurador evalúa la expresión para cada contexto del subproceso. Solo se muestran las filas con el valor `true`.
+- Escriba una expresión booleana en el cuadro **Filtrar por expresión booleana**. El depurador evalúa la expresión para cada contexto del subproceso. Solo se muestran las filas con el valor `true`.
 
 ## <a name="see-also"></a>Vea también
 - [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Cómo: Usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)
+- [Cómo: usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)
 - [Tutorial: Depurar una aplicación de C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

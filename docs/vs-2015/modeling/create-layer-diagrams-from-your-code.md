@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050217"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Crear diagramas de capas a partir del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
   
  Un diagrama de capas permite organizar los elementos de la solución de Visual Studio en grupos lógicos abstractos, denominados *capas*. Las capas se pueden usar para describir las tareas principales que realizan estos artefactos o los componentes principales del sistema. Cada capa puede contener otras capas que describen tareas más detalladas. También puede especificar planeadas o existentes *dependencias* entre capas. Estas dependencias, que se representan como flechas, muestran qué capas pueden usar o usan actualmente la funcionalidad representada por otras capas. Para mantener el control de la arquitectura del código, muestre las dependencias previstas en el diagrama y, a continuación, valide el código con el diagrama.  
   
-##  <a name="CreateDiagram"></a> Crear un diagrama de capas  
+## <a name="CreateDiagram"></a> Crear un diagrama de capas  
  Antes de poder crear un diagrama de capas, asegúrese de que la solución tenga un proyecto de modelado. Consulte [crear modelos de proyectos y diagramas UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
@@ -40,13 +40,13 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Para agregar un nuevo diagrama de capas a un proyecto de modelado  
   
-1.  En el **arquitectura** menú, elija **nuevo UML o diagrama de capas**.  
+1. En el **arquitectura** menú, elija **nuevo UML o diagrama de capas**.  
   
-2.  En **plantillas**, elija **diagrama de capas**.  
+2. En **plantillas**, elija **diagrama de capas**.  
   
-3.  Especifique un nombre para el diagrama.  
+3. Especifique un nombre para el diagrama.  
   
-4.  En **agregar a proyecto de modelado**, busque y seleccione un proyecto de modelado existente de la solución.  
+4. En **agregar a proyecto de modelado**, busque y seleccione un proyecto de modelado existente de la solución.  
   
      -o bien-  
   
@@ -55,9 +55,9 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
     > [!NOTE]
     >  Los diagramas de capas solo pueden existir dentro de un proyecto de modelado. Sin embargo, puede vincularlos a elementos en cualquier parte de la solución.  
   
-5.  Asegúrese de guardar tanto el proyecto de modelado como el diagrama de capas.  
+5. Asegúrese de guardar tanto el proyecto de modelado como el diagrama de capas.  
   
-##  <a name="CreateLayers"></a> Creación de capas desde artefactos  
+## <a name="CreateLayers"></a> Creación de capas desde artefactos  
  Puede crear capas a partir de elementos de una solución de Visual Studio, como proyectos, archivos de código, espacios de nombres, clases y métodos. Esto crea automáticamente vínculos entre las capas y los elementos, que se incluyen en el proceso de validación de capas.  
   
  También puede vincular capas a los elementos que no admiten validación, como documentos de Word o presentaciones de PowerPoint, para poder asociar una capa con especificaciones o planes. También puede vincular capas a archivos en proyectos que se comparten entre varias aplicaciones, pero el proceso de validación no incluirá esas capas, que aparecen con nombres genéricos como “Layer1" y “Layer2".  
@@ -80,19 +80,19 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
   
  El número de una capa indica el número de artefactos vinculados a ella. Sin embargo, cuando lea este número, recuerde lo siguiente:  
   
--   Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.  
+- Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.  
   
      Por ejemplo, si una capa está vinculada a un solo espacio de nombres, el número de artefactos vinculados es 1, aunque el espacio de nombres contenga clases. Si la capa tiene también vínculos a cada clase del espacio de nombres, el número incluirá las clases vinculadas.  
   
--   Si una capa contiene otras que están vinculadas a artefactos, la capa contenedora también está vinculada a esos artefactos, incluso aunque el número de la capa contenedora no los incluya.  
+- Si una capa contiene otras que están vinculadas a artefactos, la capa contenedora también está vinculada a esos artefactos, incluso aunque el número de la capa contenedora no los incluya.  
   
-##  <a name="Managing"></a> Administrar vínculos entre capas y artefactos  
+## <a name="Managing"></a> Administrar vínculos entre capas y artefactos  
   
-1.  En el diagrama de capas, abra el menú contextual para la capa y, a continuación, elija **ver vínculos**.  
+1. En el diagrama de capas, abra el menú contextual para la capa y, a continuación, elija **ver vínculos**.  
   
      **Explorador de capas** se muestran los vínculos de artefacto de la capa seleccionada.  
   
-2.  Use las tareas siguientes para administrar estos vínculos:  
+2. Use las tareas siguientes para administrar estos vínculos:  
   
 |**En**|**En el Explorador de capas**|  
 |------------|---------------------------|  
@@ -102,7 +102,7 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
 |Crear una nueva capa a partir del vínculo de un artefacto existente|Arrastre el vínculo del artefacto a un espacio en blanco del diagrama.|  
 |Compruebe que el artefacto vinculado admite la validación con el diagrama de capas.|Examine el **admite validación** columna para el vínculo del artefacto.|  
   
-##  <a name="Discovering"></a> Técnicas de ingeniería inversa de dependencias existentes  
+## <a name="Discovering"></a> Técnicas de ingeniería inversa de dependencias existentes  
  Una dependencia existe cuando un artefacto que está asociado a una capa tiene una referencia a un artefacto que está asociado a otra capa. Por ejemplo, una clase de una capa declara una variable que tiene una clase en otra capa. Puede realizar ingeniería inversa de las dependencias existentes en los artefactos vinculados a las capas del diagrama.  
   
 > [!NOTE]
@@ -112,7 +112,7 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
   
   Normalmente, verá algunas dependencias que no deberían existir. Puede editar estas dependencias para alinearlas con el diseño buscado.  
   
-##  <a name="EditDependencies"></a> Editar capas y dependencias para mostrar el diseño previsto  
+## <a name="EditDependencies"></a> Editar capas y dependencias para mostrar el diseño previsto  
  Para describir los cambios que piensa realizar en el sistema o la arquitectura deseada, edite el diagrama de capas:  
   
 |**En**|**Siga estos pasos**|  
@@ -123,17 +123,17 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
 |Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
 |Especificar qué artefactos asociados a una capa no deben pertenecer a uno de los espacios de nombres especificados|Escriba el espacio de nombres en la capa **Required Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
   
-##  <a name="EditLayout"></a> Cambiar cómo aparecen los elementos en el diagrama  
+## <a name="EditLayout"></a> Cambiar cómo aparecen los elementos en el diagrama  
  Puede cambiar el tamaño, la forma, el color y la posición de las capas o el color de las dependencias mediante la edición de sus propiedades.  
   
-##  <a name="Codemaps"></a> Detectar patrones y dependencias en un mapa de código  
+## <a name="Codemaps"></a> Detectar patrones y dependencias en un mapa de código  
  Durante la creación de diagramas de capas, también puede crear **mapas de código**. Estos diagramas pueden ayudarle a detectar patrones y dependencias mientras explora el código. Use el Explorador de soluciones, la Vista de clases o el Examinador de objetos para explorar los ensamblados, los espacios de nombres y las clases, que a menudo corresponden a las capas existentes. Para obtener más información sobre mapas de código, vea:  
   
--   [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)  
+- [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)  
+- [Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)  
+- [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Vídeo de Channel 9: Diseñar y validar la arquitectura mediante diagramas de capas](http://go.microsoft.com/fwlink/?LinkID=252073)   

@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996506"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044192"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Especifica una expresión opcional para buscar una o varias funciones coincident
   
  La sintaxis de expresión válida se define como:  
   
--   La expresión de la función, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
+- La expresión de la función, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
--   El "&#124;" es el operador OR.  
+- El "&#124;" es el operador OR.  
   
--   El "&" y "+" caracteres son operadores AND.  
+- El "&" y "+" caracteres son operadores AND.  
   
--   El carácter “!” es el operador NOT.  
+- El carácter “!” es el operador NOT.  
   
--   Los paréntesis indican el orden de prioridad de la evaluación.  
+- Los paréntesis indican el orden de prioridad de la evaluación.  
   
--   Una expresión null o vacía se evalúa como una coincidencia.  
+- Una expresión null o vacía se evalúa como una coincidencia.  
   
--   ¿Las funciones de proyecto pueden ser cualquier carácter salvo estos caracteres reservados: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
+- ¿Las funciones de proyecto pueden ser cualquier carácter salvo estos caracteres reservados: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestran tres plantillas diferentes. `Template1` se aplica a todos los tipos de proyecto de C# o a cualquier otro tipo de proyecto que admita la función `WindowsAppContainer`. `Template2` se aplica a todos los proyectos de C# de cualquier tipo. `Template3` se aplica a los proyectos de C# que no son proyectos `WindowsAppContainer`.  

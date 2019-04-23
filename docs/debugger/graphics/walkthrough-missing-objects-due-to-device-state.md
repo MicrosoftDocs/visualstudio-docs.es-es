@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42e1ce4cc1ccc0a01905046b33e4587964f8ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047458"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Tutorial: Objetos ausentes debido al estado del dispositivo
 En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un estado de dispositivo mal configurado.
 
  En este tutorial se muestra:
 
--   El uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.
+- El uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.
 
--   El uso de la ventana **Etapas de canalización de gráficos** para comprobar el efecto de la llamada a la API de Direct3D `DrawIndexed` .
+- El uso de la ventana **Etapas de canalización de gráficos** para comprobar el efecto de la llamada a la API de Direct3D `DrawIndexed` .
 
--   El uso de la ventana **Historial de píxeles de gráfico** para localizar el problema de forma más concreta.
+- El uso de la ventana **Historial de píxeles de gráfico** para localizar el problema de forma más concreta.
 
--   Cómo inspeccionar el estado del dispositivo en busca de posibles problemas o errores de configuración.
+- Cómo inspeccionar el estado del dispositivo en busca de posibles problemas o errores de configuración.
 
 ## <a name="scenario"></a>Escenario
  Uno de los motivos por los que los objetos podrían no aparecer donde se espera en una aplicación 3D es una configuración incorrecta del dispositivo gráfico que provoque que los objetos se excluyan de la representación; por ejemplo, si el orden de generación hace que se llame por error a los triángulos o si la función de prueba de profundidad provoca que se rechacen todos los píxeles del objeto.

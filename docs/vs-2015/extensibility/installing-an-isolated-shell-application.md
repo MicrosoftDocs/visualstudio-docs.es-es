@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062833"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalar una aplicación de Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Debe realizar los pasos siguientes para instalar una aplicación de Shell.
   
 #### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>Para preparar una aplicación de Shell para la implementación de MSI  
   
-1.  Edite cada archivo .vsixmanifest en la solución.  
+1. Edite cada archivo .vsixmanifest en la solución.  
   
      En el `Identifier` elemento, agregue un `InstalledByMSI` elemento y un `SystemComponent` elemento y, a continuación, establezca sus valores en `true`.  
   
      Estos elementos impiden que el instalador de VSIX se intentar instalar los componentes y el usuario desde su desinstalación mediante el uso de la **extensiones y actualizaciones** cuadro de diálogo.  
   
-2.  Para cada proyecto que contiene un manifiesto VSIX, edite las tareas de compilación para generar el contenido a la ubicación desde la que se instalará el MSI. Incluir el manifiesto de VSIX en la salida de compilación, pero no cree un archivo. vsix.  
+2. Para cada proyecto que contiene un manifiesto VSIX, edite las tareas de compilación para generar el contenido a la ubicación desde la que se instalará el MSI. Incluir el manifiesto de VSIX en la salida de compilación, pero no cree un archivo. vsix.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Creación de un archivo MSI de Shell  
  Para crear el paquete MSI, se recomienda que use el [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720) porque ofrece mayor flexibilidad que un proyecto de instalación estándar.  
@@ -85,7 +85,7 @@ Debe realizar los pasos siguientes para instalar una aplicación de Shell.
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>Para establecer el diseño de componentes de Shell  
   
-1.  Crear una jerarquía de `Directory` elementos para representar todos los directorios para crear en el sistema de archivos en el equipo de destino, como se muestra en el ejemplo siguiente.  
+1. Crear una jerarquía de `Directory` elementos para representar todos los directorios para crear en el sistema de archivos en el equipo de destino, como se muestra en el ejemplo siguiente.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -105,7 +105,7 @@ Debe realizar los pasos siguientes para instalar una aplicación de Shell.
   
      Estos directorios se denominan mediante `Id` cuando se especifican los archivos que se deben instalar.  
   
-2.  Identificar los componentes que requieren el Shell y la aplicación de Shell, como se muestra en el ejemplo siguiente.  
+2. Identificar los componentes que requieren el Shell y la aplicación de Shell, como se muestra en el ejemplo siguiente.  
   
     > [!NOTE]
     >  Algunos elementos pueden hacer referencia a las definiciones de otros archivos wxs.  
@@ -123,7 +123,7 @@ Debe realizar los pasos siguientes para instalar una aplicación de Shell.
     </Feature>  
     ```  
   
-    1.  El `ComponentRef` elemento hace referencia a otro archivo wxs que identifica los archivos que requiere el componente actual. Por ejemplo, GeneralProfile tiene la siguiente definición en HelpAbout.wxs.  
+    1. El `ComponentRef` elemento hace referencia a otro archivo wxs que identifica los archivos que requiere el componente actual. Por ejemplo, GeneralProfile tiene la siguiente definición en HelpAbout.wxs.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -139,7 +139,7 @@ Debe realizar los pasos siguientes para instalar una aplicación de Shell.
   
          El `DirectoryRef` elemento especifica dónde estos archivos en el equipo del usuario. El `Directory` elemento especifica que se va a instalar en un subdirectorio y cada uno de ellos `File` elemento representa un archivo que se compila o que existe como parte de la solución e identifica dónde puede encontrarse ese archivo cuando se crea el archivo MSI.  
   
-    2.  El `ComponentGroupRef` elemento hace referencia a un grupo de otros componentes (o los componentes y los grupos de componentes). Por ejemplo, `ComponentGroupRef` en ApplicationGroup se define como sigue en Application.wxs.  
+    2. El `ComponentGroupRef` elemento hace referencia a un grupo de otros componentes (o los componentes y los grupos de componentes). Por ejemplo, `ComponentGroupRef` en ApplicationGroup se define como sigue en Application.wxs.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -166,15 +166,15 @@ Debe realizar los pasos siguientes para instalar una aplicación de Shell.
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>Para integrar las entradas del registro en el archivo MSI  
   
-1.  En el **Shell personalización** carpeta abierta *ProjectName*. reg.  
+1. En el **Shell personalización** carpeta abierta *ProjectName*. reg.  
   
-2.  Reemplace todas las instancias del token $ $RootFolder por la ruta de acceso del directorio de instalación de destino.  
+2. Reemplace todas las instancias del token $ $RootFolder por la ruta de acceso del directorio de instalación de destino.  
   
-3.  Agregue las entradas de registro que requiera la aplicación.  
+3. Agregue las entradas de registro que requiera la aplicación.  
   
-4.  Abra ApplicationRegistry.wxs.  
+4. Abra ApplicationRegistry.wxs.  
   
-5.  Para cada entrada del registro en *ProjectName*. reg, agregue un bloque de registro correspondiente, como los siguientes ejemplos se muestran.  
+5. Para cada entrada del registro en *ProjectName*. reg, agregue un bloque de registro correspondiente, como los siguientes ejemplos se muestran.  
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
@@ -186,24 +186,24 @@ Debe realizar los pasos siguientes para instalar una aplicación de Shell.
 ## <a name="creating-a-setup-bootstrapper"></a>Creación de un programa previo de instalación  
  El MSI completa se instalará solo si todos los requisitos previos se instalan en primer lugar. Para facilitar la experiencia del usuario final, crear un programa de instalación que se recopila e instala todos los requisitos previos antes de instalar la aplicación. Para garantizar una instalación correcta, realice estas acciones:  
   
--   Forzar la instalación de administrador.  
+- Forzar la instalación de administrador.  
   
--   Detectar si está instalado Visual Studio Shell (aislado).  
+- Detectar si está instalado Visual Studio Shell (aislado).  
   
--   Uno o ambos instaladores de Shell se ejecutan en orden.  
+- Uno o ambos instaladores de Shell se ejecutan en orden.  
   
--   Controlar las solicitudes de reinicio.  
+- Controlar las solicitudes de reinicio.  
   
--   Ejecute el MSI.  
+- Ejecute el MSI.  
   
 ### <a name="enforcing-installation-by-administrator"></a>Forzar la instalación de administrador  
  Este procedimiento es necesario para habilitar el programa de instalación tener acceso a los directorios necesarios como archivos \Program\\.  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>Para forzar la instalación de administrador  
   
-1.  Abra el menú contextual del proyecto de instalación y, a continuación, elija **propiedades**.  
+1. Abra el menú contextual del proyecto de instalación y, a continuación, elija **propiedades**.  
   
-2.  En **archivo de configuración de vinculador/propiedades/manifiesto**, establezca **nivel de ejecución de UAC** a **requireAdministrator**.  
+2. En **archivo de configuración de vinculador/propiedades/manifiesto**, establezca **nivel de ejecución de UAC** a **requireAdministrator**.  
   
      Esta propiedad coloca el atributo que requiere el programa para ejecutarse como administrador en el archivo de manifiesto incrustado.  
   
@@ -252,15 +252,15 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
   
  Para controlar los reinicios, realice estas acciones:  
   
--   Configurar el registro para reanudar la instalación cuando se inicia Windows.  
+- Configurar el registro para reanudar la instalación cuando se inicia Windows.  
   
--   Realizar un reinicio del arranque doble.  
+- Realizar un reinicio del arranque doble.  
   
--   Eliminar la clave de ResumeData del instalador de Shell.  
+- Eliminar la clave de ResumeData del instalador de Shell.  
   
--   Reinicie Windows.  
+- Reinicie Windows.  
   
--   Restablecimiento de la ruta de acceso de inicio de MSI.  
+- Restablecimiento de la ruta de acceso de inicio de MSI.  
   
 ### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Configuración del registro para reanudar la instalación cuando se inicia Windows  
  La clave del registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ ejecuta al iniciar el sistema con permisos administrativos y, a continuación, se borra. HKEY_CURRENT_USER contiene una clave similar, pero se ejecuta como un usuario normal y no es adecuada para las instalaciones. Para reanudar la instalación mediante la colocación de un valor de cadena en la que llama al instalador de la clave de RunOnce. Sin embargo, se recomienda que llame el programa de instalación mediante un **/reiniciará** o parámetro similar para notificar a la aplicación que está reanudando en lugar de iniciarse. También puede incluir parámetros para indicar dónde se encuentre en el proceso de instalación, que es especialmente útil en las instalaciones que pueden requerir varios reinicios.  

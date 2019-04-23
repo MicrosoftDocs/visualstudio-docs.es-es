@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01d73457a0b6bf6da2114a4ae967c25f9953a9a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051627"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Cómo: Establecer opciones de accesibilidad de IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "59670334"
   
 ##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Para cambiar el tamaño del texto en las ventanas de herramientas basadas en texto y en los editores  
   
-1.  En el menú **Herramientas** , elija **Opciones**.  
+1. En el menú **Herramientas** , elija **Opciones**.  
   
-2.  Pulse **Fuentes y colores** en la carpeta **Entorno**.  
+2. Pulse **Fuentes y colores** en la carpeta **Entorno**.  
   
-3.  Seleccione una opción en el menú desplegable **Mostrar configuración para**.  
+3. Seleccione una opción en el menú desplegable **Mostrar configuración para**.  
   
      Para cambiar el tamaño de fuente del texto en un editor, pulse **Editor de texto**.  
   
@@ -56,16 +56,16 @@ ms.locfileid: "59670334"
   
      Para cambiar el tamaño de fuente del texto en elementos emergentes de finalización de instrucciones, pulse **Finalización de instrucciones**.  
   
-4.  Desde **Mostrar elementos**, seleccione **Texto sin formato**.  
+4. Desde **Mostrar elementos**, seleccione **Texto sin formato**.  
   
-5.  En **Fuente**, seleccione un nuevo tipo de fuente.  
+5. En **Fuente**, seleccione un nuevo tipo de fuente.  
   
-6.  En **Tamaño**, seleccione un nuevo tamaño de fuente.  
+6. En **Tamaño**, seleccione un nuevo tamaño de fuente.  
   
     > [!NOTE]
     >  Para restablecer el tamaño de texto para las ventanas de herramientas basadas en texto y los editores, pulse **Usar valores predeterminados**.  
   
-7.  Elija **Aceptar**.  
+7. Elija **Aceptar**.  
   
 ### <a name="changing-the-colors-used-in-the-ide"></a>Cambiar los colores usados en el IDE  
  También puede decidir cambiar los colores predeterminados del texto, los indicadores de margen, el espacio en blanco y los elementos de código en el editor.  
@@ -75,40 +75,40 @@ ms.locfileid: "59670334"
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Para cambiar el color de elementos en el editor  
   
-1.  En el menú **Herramientas** , elija **Opciones**.  
+1. En el menú **Herramientas** , elija **Opciones**.  
   
-2.  Pulse **Fuentes y colores** de la carpeta **Entorno**.  
+2. Pulse **Fuentes y colores** de la carpeta **Entorno**.  
   
-3.  En **Mostrar configuración para**, seleccione **Editor de texto**.  
+3. En **Mostrar configuración para**, seleccione **Editor de texto**.  
   
-4.  Desde **Mostrar elementos**, seleccione un elemento cuya visualización necesita cambiar, como **Texto sin formato**, **Margen del indicador**, **Espacio en blanco visible**, **Nombre del atributo HTML** o **Atributo XML**.  
+4. Desde **Mostrar elementos**, seleccione un elemento cuya visualización necesita cambiar, como **Texto sin formato**, **Margen del indicador**, **Espacio en blanco visible**, **Nombre del atributo HTML** o **Atributo XML**.  
   
-5.  Seleccione la configuración de visualización desde las siguientes opciones: **Primer plano del elemento**, **Fondo del elemento** y **Negrita**.  
+5. Seleccione la configuración de visualización desde las siguientes opciones: **Primer plano del elemento**, **Fondo del elemento** y **Negrita**.  
   
-6.  Elija **Aceptar**.  
+6. Elija **Aceptar**.  
   
 ## <a name="toolbars"></a>Barras de herramientas  
  Para mejorar la accesibilidad y la facilidad de uso de la barra de herramientas, puede agregar texto a los botones de la barra de herramientas.  
   
 #### <a name="to-assign-text-to-toolbar-buttons"></a>Para asignar texto a los botones de la barra de herramientas  
   
-1.  En el menú **Herramientas**, pulse **Personalizar**.  
+1. En el menú **Herramientas**, pulse **Personalizar**.  
   
-2.  En el cuadro de diálogo **Personalizar**, seleccione la pestaña **Comandos**.  
+2. En el cuadro de diálogo **Personalizar**, seleccione la pestaña **Comandos**.  
   
-3.  Seleccione **Barra de herramientas** y, después, pulse el nombre de la barra de herramientas que contiene el botón para el que intenta mostrar el texto.  
+3. Seleccione **Barra de herramientas** y, después, pulse el nombre de la barra de herramientas que contiene el botón para el que intenta mostrar el texto.  
   
-4.  En la lista, seleccione el comando que intenta cambiar.  
+4. En la lista, seleccione el comando que intenta cambiar.  
   
-5.  Pulse **Modificar selección**.  
+5. Pulse **Modificar selección**.  
   
-6.  Pulse **Imagen y texto**.  
+6. Pulse **Imagen y texto**.  
   
 #### <a name="to-modify-the-buttons-displayed-text"></a>Para modificar el texto mostrado del botón  
   
-1.  Vuelva a seleccionar **Modificar selección**.  
+1. Vuelva a seleccionar **Modificar selección**.  
   
-2.  Junto a **Nombre**, inserte un nuevo título para el botón seleccionado.  
+2. Junto a **Nombre**, inserte un nuevo título para el botón seleccionado.  
   
 ## <a name="see-also"></a>Vea también  
  [Características de accesibilidad de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   

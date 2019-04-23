@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f59af23f25fee628ec20b77e10e0a48afdd564d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056775"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Procedimiento Crear una asociación (relación) entre clases LINQ to SQL (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Las asociaciones entre clases de entidades en [!INCLUDE[vbtecdlinq](../includes/
   
 ### <a name="to-create-an-association-between-entity-classes"></a>Para crear una asociación entre clases de entidad  
   
-1.  Haga clic con el botón derecho en la clase de entidad que represente la clase primaria de la asociación, seleccione **Agregar** y después presione **Asociación**.  
+1. Haga clic con el botón derecho en la clase de entidad que represente la clase primaria de la asociación, seleccione **Agregar** y después presione **Asociación**.  
   
-2.  Compruebe que se haya seleccionado la **Clase primaria** correcta en el cuadro de diálogo **Editor de asociaciones**.  
+2. Compruebe que se haya seleccionado la **Clase primaria** correcta en el cuadro de diálogo **Editor de asociaciones**.  
   
-3.  En el cuadro combinado, seleccione **Clase secundaria**.  
+3. En el cuadro combinado, seleccione **Clase secundaria**.  
   
-4.  Seleccione las **Propiedades de la asociación** que relacionan las clases. Por lo general, se asigna a la relación entre claves externas definida en la base de datos. Por ejemplo, en la asociación de Customers y Orders, el **propiedades de la asociación** representan el CustomerID de cada clase.  
+4. Seleccione las **Propiedades de la asociación** que relacionan las clases. Por lo general, se asigna a la relación entre claves externas definida en la base de datos. Por ejemplo, en la asociación de Customers y Orders, el **propiedades de la asociación** representan el CustomerID de cada clase.  
   
-5.  Haga clic en **Aceptar** para crear la asociación.  
+5. Haga clic en **Aceptar** para crear la asociación.  
   
 ## <a name="see-also"></a>Vea también  
  [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d2abc185d06aa74e47bb2a36bd17df12a9db5c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048693"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Tutorial: Usar una tecla de método abreviado con una extensión del editor
 Puede responder a teclas de método abreviado en la extensión del editor. El siguiente tutorial muestra cómo agregar un elemento de gráfico de vista a una vista de texto mediante una tecla de método abreviado. En este tutorial se basa en la plantilla del editor de elemento gráfico de área de visualización, y permite agregar el elemento de gráfico con el carácter +.
@@ -61,9 +61,9 @@ Antes de Visual Studio 2017 versión 15.6, la única manera de controlar los com
 
  El filtro de comandos es una implementación de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, que controla el comando al crear una instancia del elemento gráfico.
 
-1.  Agregue un archivo de clase y asígnele el nombre `KeyBindingCommandFilter`.
+1. Agregue un archivo de clase y asígnele el nombre `KeyBindingCommandFilter`.
 
-2.  Agregue las siguientes instrucciones de uso.
+2. Agregue las siguientes instrucciones de uso.
 
     ```csharp
     using System;
@@ -74,13 +74,13 @@ Antes de Visual Studio 2017 versión 15.6, la única manera de controlar los com
 
     ```
 
-3.  La clase denominada KeyBindingCommandFilter debe heredar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
+3. La clase denominada KeyBindingCommandFilter debe heredar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
 
     ```csharp
     internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
-4.  Agregue los campos privados de la vista de texto, el comando siguiente en la cadena de comandos y una marca para representar si ya se ha agregado el filtro de comandos.
+4. Agregue los campos privados de la vista de texto, el comando siguiente en la cadena de comandos y una marca para representar si ya se ha agregado el filtro de comandos.
 
     ```csharp
     private IWpfTextView m_textView;
@@ -89,7 +89,7 @@ Antes de Visual Studio 2017 versión 15.6, la única manera de controlar los com
     internal bool m_adorned;
     ```
 
-5.  Agregue un constructor que establece la vista de texto.
+5. Agregue un constructor que establece la vista de texto.
 
     ```csharp
     public KeyBindingCommandFilter(IWpfTextView textView)
@@ -99,7 +99,7 @@ Antes de Visual Studio 2017 versión 15.6, la única manera de controlar los com
     }
     ```
 
-6.  Implemente el `QueryStatus()` método tal como se indica a continuación.
+6. Implemente el `QueryStatus()` método tal como se indica a continuación.
 
     ```csharp
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -108,7 +108,7 @@ Antes de Visual Studio 2017 versión 15.6, la única manera de controlar los com
     }
     ```
 
-7.  Implemente el `Exec()` método por lo que TI agrega un cuadro de color púrpura en la vista si un signo más (**+**) se escribe el carácter.
+7. Implemente el `Exec()` método por lo que TI agrega un cuadro de color púrpura en la vista si un signo más (**+**) se escribe el carácter.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -135,7 +135,7 @@ Antes de Visual Studio 2017 versión 15.6, la única manera de controlar los com
 ## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Agregue el filtro de comando (antes Visual Studio 2017 versión 15.6)
  El proveedor del elemento gráfico debe agregar un filtro de comando a la vista de texto. En este ejemplo, el proveedor implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> para escuchar los eventos de creación de la vista de texto. Este proveedor de elemento gráfico también exporta el nivel del elemento gráfico, que define el orden Z del elemento gráfico.
 
-1.  En el archivo KeyBindingTestTextViewCreationListener, agregue las siguientes instrucciones using:
+1. En el archivo KeyBindingTestTextViewCreationListener, agregue las siguientes instrucciones using:
 
     ```csharp
     using System;
@@ -150,7 +150,7 @@ Antes de Visual Studio 2017 versión 15.6, la única manera de controlar los com
 
     ```
 
-2.  Para obtener el adaptador de vista de texto, debe importar el <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
+2. Para obtener el adaptador de vista de texto, debe importar el <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
 
     ```csharp
     [Import(typeof(IVsEditorAdaptersFactoryService))]
@@ -158,7 +158,7 @@ Antes de Visual Studio 2017 versión 15.6, la única manera de controlar los com
 
     ```
 
-3.  Cambiar el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método por lo que TI agrega el `KeyBindingCommandFilter`.
+3. Cambiar el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método por lo que TI agrega el `KeyBindingCommandFilter`.
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -167,7 +167,7 @@ Antes de Visual Studio 2017 versión 15.6, la única manera de controlar los com
     }
     ```
 
-4.  El `AddCommandFilter` controlador obtiene el adaptador de vista de texto y agrega el filtro de comandos.
+4. El `AddCommandFilter` controlador obtiene el adaptador de vista de texto y agrega el filtro de comandos.
 
     ```csharp
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)
@@ -256,6 +256,7 @@ El controlador de comandos es una implementación de <xref:Microsoft.VisualStudi
        return false;
    }
    ```
+
    7. Copie la definición de la capa de elemento gráfico de *KeyBindingTestTextViewCreationListener.cs* del archivo a la *KeyBindingCommandHandler.cs* y, a continuación, eliminar  *KeyBindingTestTextViewCreationListener.cs* archivo:
 
    ```csharp
@@ -319,8 +320,8 @@ private void CreateVisuals(ITextViewLine line)
 
 ## <a name="build-and-test-the-code"></a>Compilar y probar el código
 
-1.  Compile la solución KeyBindingTest y ejecútelo en la instancia experimental.
+1. Compile la solución KeyBindingTest y ejecútelo en la instancia experimental.
 
-2.  Cree o abra un archivo de texto. Escriba algunas palabras que contengan el carácter 'a' y, a continuación, escriba **+** en cualquier parte de la vista de texto.
+2. Cree o abra un archivo de texto. Escriba algunas palabras que contengan el carácter 'a' y, a continuación, escriba **+** en cualquier parte de la vista de texto.
 
      Debería aparecer un cuadrado de color púrpura en cada carácter 'a' en el archivo.
