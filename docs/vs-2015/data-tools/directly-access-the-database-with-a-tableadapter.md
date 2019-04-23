@@ -26,12 +26,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5226f5c235b3af10fba4fd0fab3ee44ceb72a93e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 079264d2687d382aa79e526d829687f2a60f6882
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106636"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Acceder directamente a la base de datos con un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapter
   
 #### <a name="to-insert-new-records-directly-into-a-database"></a>Para insertar nuevos registros directamente en una base de datos  
   
--   Llamar a del TableAdapter `Insert` método, pasando los valores para cada columna como parámetros. El siguiente procedimiento usa la `Region` muestra un ejemplo de tabla en la databaseas de Northwind.  
+- Llamar a del TableAdapter `Insert` método, pasando los valores para cada columna como parámetros. El siguiente procedimiento usa la `Region` muestra un ejemplo de tabla en la databaseas de Northwind.  
   
     > [!NOTE]
     >  Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
@@ -55,7 +55,7 @@ Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapter
   
 #### <a name="to-update-records-directly-in-a-database"></a>Para actualizar registros directamente en una base de datos  
   
--   Llamar a del TableAdapter `Update` método, pasando los valores nuevos y originales de cada columna como parámetros.  
+- Llamar a del TableAdapter `Update` método, pasando los valores nuevos y originales de cada columna como parámetros.  
   
     > [!NOTE]
     >  Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
@@ -65,7 +65,7 @@ Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapter
   
 #### <a name="to-delete-records-directly-from-a-database"></a>Para eliminar registros directamente desde una base de datos  
   
--   Llamar a del TableAdapter `Delete` método, pasando los valores de cada columna como parámetros de la `Delete` método. El siguiente procedimiento usa la `Region` muestra un ejemplo de tabla en la databaseas de Northwind.  
+- Llamar a del TableAdapter `Delete` método, pasando los valores de cada columna como parámetros de la `Delete` método. El siguiente procedimiento usa la `Region` muestra un ejemplo de tabla en la databaseas de Northwind.  
   
     > [!NOTE]
     >  Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  

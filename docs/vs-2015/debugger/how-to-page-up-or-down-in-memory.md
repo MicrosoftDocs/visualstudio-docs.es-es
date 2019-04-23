@@ -1,5 +1,5 @@
 ---
-title: Filtrar Retroceder o avanzar en la memoria | Documentos de Microsoft
+title: Procedimiento Retroceder o avanzar en la memoria | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,14 +23,14 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8859bac6f2cfe992c3c0d8005830985598934b88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109603"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Filtrar Retroceso o avance en la memoria
+# <a name="how-to-page-up-or-down-in-memory"></a>Procedimiento Retroceso o avance en la memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mientras consulta el contenido de la memoria en una ventana **Memoria** o en la ventana **Desensamblado**, puede utilizar la barra de desplazamiento vertical para moverse hacia arriba o abajo en el espacio de memoria.  
@@ -49,7 +49,7 @@ Mientras consulta el contenido de la memoria en una ventana **Memoria** o en la 
   
 #### <a name="to-move-up-or-down-one-instruction"></a>Para desplazarse una instrucción máquina arriba o abajo  
   
--   Haga clic en la flecha situada en la parte superior o inferior de la barra de desplazamiento vertical.  
+- Haga clic en la flecha situada en la parte superior o inferior de la barra de desplazamiento vertical.  
   
 ## <a name="see-also"></a>Vea también  
  [Ventana Memoria](../debugger/memory-windows.md)   

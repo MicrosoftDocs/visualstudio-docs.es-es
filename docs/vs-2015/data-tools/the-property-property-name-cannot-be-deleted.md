@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a212250791ececddbf2227d67d1f4652dc7de466
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 50e91c47ef848eda51fe71c9dce09cd1ea4893a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106465"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>La propiedad &lt;nombre de la propiedad&gt; no se puede eliminar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ La propiedad \<nombre de propiedad > no se puede eliminar porque se está usando
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-1.  En Object Relational Designer, seleccione la línea de herencia que conecta las clases de datos indicadas en el mensaje de error.  
+1. En Object Relational Designer, seleccione la línea de herencia que conecta las clases de datos indicadas en el mensaje de error.  
   
-2.  Establezca la **propiedad Discriminator** en otra propiedad.  
+2. Establezca la **propiedad Discriminator** en otra propiedad.  
   
-3.  Intente de nuevo eliminar la propiedad.  
+3. Intente de nuevo eliminar la propiedad.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Configurar la herencia mediante Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   

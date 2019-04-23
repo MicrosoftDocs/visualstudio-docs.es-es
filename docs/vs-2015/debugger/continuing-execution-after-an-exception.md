@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 37a285a48ec58ddeaeae55601565c155d0455402
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105479"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuar la ejecución después de una excepción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Cuando el depurador interrumpe la ejecución debido a una excepción, aparece un
 ## <a name="native-code"></a>Código nativo  
  En C/C++ nativo, tiene dos opciones:  
   
--   Puede hacer clic en **interrumpir** e intentar corregir el problema. Mientras está en modo de interrupción, puede desenredar la pila de llamadas con el botón secundario en un marco de la **pila de llamadas** ventana y seleccione **desenredar hasta este marco** en el menú contextual. Al continuar con la depuración, la **excepción** aparece el cuadro de diálogo nuevo si no se ha corregido el problema. En caso contrario, el **excepción** no volverá a aparecer el cuadro de diálogo.  
+- Puede hacer clic en **interrumpir** e intentar corregir el problema. Mientras está en modo de interrupción, puede desenredar la pila de llamadas con el botón secundario en un marco de la **pila de llamadas** ventana y seleccione **desenredar hasta este marco** en el menú contextual. Al continuar con la depuración, la **excepción** aparece el cuadro de diálogo nuevo si no se ha corregido el problema. En caso contrario, el **excepción** no volverá a aparecer el cuadro de diálogo.  
   
--   Puede hacer clic en **continuar** para continuar la ejecución sin intentar corregir el problema. El **excepción** vuelve a aparecer el cuadro de diálogo.  
+- Puede hacer clic en **continuar** para continuar la ejecución sin intentar corregir el problema. El **excepción** vuelve a aparecer el cuadro de diálogo.  
   
 ## <a name="mixed-code"></a>Código mixto  
  Si se produce una excepción no controlada durante la depuración de código mixto nativo y administrado, las restricciones de sistema operativo impedirán que se desenrede la pila de llamadas. Si intenta rebobinar la pila de llamadas mediante el menú contextual, aparecerá un mensaje de error que indica que el depurador no puede desenredar la pila de llamadas si se ha producido una excepción no controlada durante la depuración de código mixto.  

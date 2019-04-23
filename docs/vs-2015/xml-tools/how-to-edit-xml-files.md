@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92f233a036c3c0b40cbd53a298154919861b58b8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: dca65a4ec1fecd885c97ce80d9827fe78c5ce9b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110510"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedimiento Editar archivos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,45 +26,45 @@ El Editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archiv
   
 ### <a name="to-edit-an-xml-file"></a>Para editar un archivo XML  
   
-1.  Haga doble clic en el archivo que desea editar.  
+1. Haga doble clic en el archivo que desea editar.  
   
 ### <a name="to-add-a-new-xml-file-to-a-project"></a>Para agregar un nuevo archivo XML a un proyecto  
   
-1.  Desde el **proyecto** menú, seleccione **Agregar nuevo elemento**.  
+1. Desde el **proyecto** menú, seleccione **Agregar nuevo elemento**.  
   
-2.  Seleccione **archivo XML** desde el **plantillas** panel.  
+2. Seleccione **archivo XML** desde el **plantillas** panel.  
   
-3.  Escriba el nombre de archivo en el **nombre** campo y presione **agregar**.  
+3. Escriba el nombre de archivo en el **nombre** campo y presione **agregar**.  
   
      Se agrega el archivo XML al proyecto y se abre en el Editor XML. El archivo contiene la declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8" ?>`.  
   
 ### <a name="to-add-an-existing-xml-file-to-a-project"></a>Para agregar un archivo XML existente a un proyecto  
   
-1.  Desde el **proyecto** menú, seleccione **Agregar elemento existente**.  
+1. Desde el **proyecto** menú, seleccione **Agregar elemento existente**.  
   
      El **Agregar elemento existente** aparece el cuadro de diálogo.  
   
-2.  Seleccione un archivo XML y presione **agregar**.  
+2. Seleccione un archivo XML y presione **agregar**.  
   
 ### <a name="to-create-a-new-xml-or-xslt-file"></a>Para crear un nuevo archivo XML o XSLT  
   
-1.  Desde el **archivo** menú, seleccione **New**.  
+1. Desde el **archivo** menú, seleccione **New**.  
   
      El **nuevo archivo** aparece el cuadro de diálogo.  
   
-2.  Seleccione **archivo XML** para crear un nuevo archivo XML; o bien, seleccione **archivo XSLT** para crear una nueva hoja de estilos XSLT.  
+2. Seleccione **archivo XML** para crear un nuevo archivo XML; o bien, seleccione **archivo XSLT** para crear una nueva hoja de estilos XSLT.  
   
-3.  Haga clic en **Abrir**.  
+3. Haga clic en **Abrir**.  
   
 ### <a name="to-create-a-project-for-xml-files"></a>Para crear un proyecto de archivos XML  
   
-1.  Desde el **archivo** menú, seleccione **New**y, a continuación, seleccione **proyecto**.  
+1. Desde el **archivo** menú, seleccione **New**y, a continuación, seleccione **proyecto**.  
   
      Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
   
-2.  Seleccione el lenguaje de código de su elección, seleccione **proyecto vacío**y haga clic en **Aceptar**.  
+2. Seleccione el lenguaje de código de su elección, seleccione **proyecto vacío**y haga clic en **Aceptar**.  
   
-3.  Agregue archivos XML al proyecto.  
+3. Agregue archivos XML al proyecto.  
   
      El Editor XML busca los esquemas que agregue a este proyecto y los utiliza para la validación e IntelliSense en cualquier archivo XML, de esquema o XSLT que edite mientras este proyecto está abierto.  
   

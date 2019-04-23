@@ -11,12 +11,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 319d889d2763662cda92d815ce45a3becfcab8cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c2b993a6c6947adfa3b01f2947b992b23236b8f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106129"
 ---
 # <a name="creating-options-pages"></a>Creación de páginas de opciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ En el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] marco de trabajo de paquet
   
  Dado que el entorno crea una instancia del objeto que implementa un determinado **opciones de herramientas** página cuando se muestra la página determinada por el IDE:  
   
--   Un **herramientas-opciones** página debe implementarse en su propio objeto y no en el objeto que implementa un paquete VSPackage.  
+- Un **herramientas-opciones** página debe implementarse en su propio objeto y no en el objeto que implementa un paquete VSPackage.  
   
--   Un objeto no puede implementar varios **opciones de herramientas** páginas.  
+- Un objeto no puede implementar varios **opciones de herramientas** páginas.  
   
 ## <a name="registering-as-a-tools-options-page-provider"></a>Cómo registrar un proveedor de página de opciones de herramientas  
  Una configuración de usuario de apoyo de VSPackage a través de **herramientas-opciones** páginas indica los objetos proporcionándoselas **herramientas-opciones** páginas aplicando las instancias de <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> aplicado a la <xref:Microsoft.VisualStudio.Shell.Package>implementación.  

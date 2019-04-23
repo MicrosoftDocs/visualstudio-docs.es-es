@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 280b4f526bad3e0ba646058b3e2410a98ca910fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110796"
 ---
-# <a name="how-to-programmatically-send-email"></a>Filtrar Enviar correo electrónico
+# <a name="how-to-programmatically-send-email"></a>Procedimiento Enviar correo electrónico
   Este ejemplo envía un mensaje de correo electrónico a los contactos que tienen el nombre de dominio **ejemplo.com** en sus direcciones de correo electrónico.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "56646010"
 ## <a name="compile-the-code"></a>Compilar el código
  Para este ejemplo se necesita:
 
--   Contactos que tienen el nombre de dominio **ejemplo.com** en sus direcciones de correo electrónico.
+- Contactos que tienen el nombre de dominio **ejemplo.com** en sus direcciones de correo electrónico.
 
 ## <a name="robust-programming"></a>Programación sólida
  No quite el código de filtro que busca el nombre de dominio **ejemplo.com**. La solución enviará mensajes de correo electrónico a todos los contactos si quita el filtro.

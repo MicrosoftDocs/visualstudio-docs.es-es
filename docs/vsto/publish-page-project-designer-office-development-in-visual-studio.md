@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103535"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Panel publicar, Diseñador de proyectos (desarrollo de Office en Visual Studio)
   La página **Publicar** del **Diseñador de proyectos** se usa para configurar las propiedades de la implementación.
@@ -84,9 +84,9 @@ ms.locfileid: "54869676"
 
 - Comportamiento de carga del complementos de VSTO:
 
-  -   Cargar al inicio: especifica que el complemento de VSTO se carga cuando se inicia la aplicación de Office.
+  - Cargar al inicio: especifica que el complemento de VSTO se carga cuando se inicia la aplicación de Office.
 
-  -   Cargar a petición: especifica que el complemento de VSTO se carga cuando la aplicación lo requiere; por ejemplo, cuando un usuario hace clic en un elemento de la interfaz de usuario que usa funcionalidad del complemento de VSTO.
+  - Cargar a petición: especifica que el complemento de VSTO se carga cuando la aplicación lo requiere; por ejemplo, cuando un usuario hace clic en un elemento de la interfaz de usuario que usa funcionalidad del complemento de VSTO.
 
   **Idioma de publicación** esta opción establece el idioma de los términos de licencia del Software de Microsoft e incluye los paquetes de idioma en la lista de requisitos previos. No afecta al idioma de la personalización. Los idiomas instalados de Visual Studio determinan el idioma del programa de instalación.
 

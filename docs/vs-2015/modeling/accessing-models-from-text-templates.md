@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998841"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110497"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acceso a modelos a partir de plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Here is a list of elements in the model:
   
  Tenga en cuenta los siguientes puntos acerca de esta plantilla:  
   
--   La plantilla puede usar las clases de dominio, propiedades y relaciones que ha definido en la definición de DSL.  
+- La plantilla puede usar las clases de dominio, propiedades y relaciones que ha definido en la definición de DSL.  
   
--   La plantilla carga el archivo de modelo que especifique en el `requires` propiedad.  
+- La plantilla carga el archivo de modelo que especifique en el `requires` propiedad.  
   
--   Una propiedad en `this` contiene el elemento raíz. Desde allí, el código puede navegar a otros elementos del modelo. El nombre de la propiedad suele ser el mismo que la clase de dominio raíz de su DSL. En este ejemplo, es `this.ExampleModel`.  
+- Una propiedad en `this` contiene el elemento raíz. Desde allí, el código puede navegar a otros elementos del modelo. El nombre de la propiedad suele ser el mismo que la clase de dominio raíz de su DSL. En este ejemplo, es `this.ExampleModel`.  
   
--   Aunque el lenguaje en el que se escriben los fragmentos de código es C#, puede generar el texto de cualquier tipo. Como alternativa, puede escribir el código [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mediante la adición de la propiedad `language="VB"` a la `template` directiva.  
+- Aunque el lenguaje en el que se escriben los fragmentos de código es C#, puede generar el texto de cualquier tipo. Como alternativa, puede escribir el código [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mediante la adición de la propiedad `language="VB"` a la `template` directiva.  
   
--   Para depurar la plantilla, agregue `debug="true"` a la `template` directiva. La plantilla se abrirá en otra instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] si se produce una excepción. Si desea interrumpir el depurador en un momento concreto en el código, inserte la instrucción `System.Diagnostics.Debugger.Break();`  
+- Para depurar la plantilla, agregue `debug="true"` a la `template` directiva. La plantilla se abrirá en otra instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] si se produce una excepción. Si desea interrumpir el depurador en un momento concreto en el código, inserte la instrucción `System.Diagnostics.Debugger.Break();`  
   
      Para obtener más información, consulte [depurar una plantilla de texto T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -80,9 +80,9 @@ Here is a list of elements in the model:
   
  El procesador de directivas de DSL realiza dos tareas principales:  
   
--   Inserta eficazmente ensamblado e importar directivas en la plantilla que hace referencia a su DSL. Esto le permite usar las clases de dominio en el código de plantilla.  
+- Inserta eficazmente ensamblado e importar directivas en la plantilla que hace referencia a su DSL. Esto le permite usar las clases de dominio en el código de plantilla.  
   
--   Carga el archivo que especifique en el `requires` parámetro y establece una propiedad `this` que hace referencia al elemento raíz del modelo cargado.  
+- Carga el archivo que especifique en el `requires` parámetro y establece una propiedad `this` que hace referencia al elemento raíz del modelo cargado.  
   
 ## <a name="validating-the-model-before-running-the-template"></a>Validar el modelo antes de ejecutar la plantilla  
  Puede hacer que el modelo que se valida antes de ejecuta la plantilla.  
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
   
    Si se encuentra un error, se le notificará en la ventana de errores y el archivo de resultados contendrá un mensaje de error.  
   
-##  <a name="Multiple"></a> Acceso a varios modelos desde una plantilla de texto  
+## <a name="Multiple"></a> Acceso a varios modelos desde una plantilla de texto  
   
 > [!NOTE]
 >  Este método le permite leer varios modelos en la misma plantilla, pero no admite referencias de ModelBus. Para los modelos que intervinculadas por referencias de ModelBus, consulte [utilizando Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  

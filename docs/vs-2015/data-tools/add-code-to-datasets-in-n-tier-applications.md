@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4308fb0aa39120704c5537188407a9686e9b13a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106675"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Agregar código a conjuntos de datos en aplicaciones de n niveles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ De forma predeterminada, después de separar el conjunto de datos y el código d
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>Agregar código a conjuntos de datos en aplicaciones de n niveles
 
-1.  Busque el proyecto que contiene el archivo .xsd (el conjunto de datos).
+1. Busque el proyecto que contiene el archivo .xsd (el conjunto de datos).
 
-2.  Seleccione el **.xsd** archivo para abrir el conjunto de datos.
+2. Seleccione el **.xsd** archivo para abrir el conjunto de datos.
 
-3.  Haga clic en la tabla de datos a la que desea agregar el código (el nombre de tabla en la barra de título) y, a continuación, seleccione **ver código**.
+3. Haga clic en la tabla de datos a la que desea agregar el código (el nombre de tabla en la barra de título) y, a continuación, seleccione **ver código**.
 
      Una clase parcial se crea y se abre en el Editor de código.
 
-4.  Agregue el código dentro de la declaración de clase parcial.
+4. Agregue el código dentro de la declaración de clase parcial.
 
      El ejemplo siguiente muestra dónde agregar código a CustomersDataTable en NorthwindDataSet:
 

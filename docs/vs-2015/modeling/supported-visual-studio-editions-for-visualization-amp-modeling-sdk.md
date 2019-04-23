@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41f89449ab412a53d779bfc3fb4cf9ac52ded239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa8ec46036bbb9a133f2036f1c54cad87d064618
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999354"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105492"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Admite las ediciones de Visual Studio para la visualización &amp; SDK de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Los siguientes son las listas de las ediciones de Visual Studio que son compatib
 ## <a name="deployment-editions"></a>Ediciones para implementación
  [!INCLUDE[dsl](../includes/dsl-md.md)] admite las siguientes configuraciones para implementar los lenguajes específicos del dominio que compile:
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Paquete redistribuible de Visual Studio Shell (modo integrado) paquete redistribuible
+- Paquete redistribuible de Visual Studio Shell (modo integrado) paquete redistribuible
 
--   Paquete redistribuible de Visual Studio Shell (modo aislado) paquete redistribuible
+- Paquete redistribuible de Visual Studio Shell (modo aislado) paquete redistribuible
 
 > [!NOTE]
 >  Para hacer que un DSL pueda ejecutarse en un producto Shell, debe establecer el **admite VS Edition** campo en el manifiesto de la extensión. Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).

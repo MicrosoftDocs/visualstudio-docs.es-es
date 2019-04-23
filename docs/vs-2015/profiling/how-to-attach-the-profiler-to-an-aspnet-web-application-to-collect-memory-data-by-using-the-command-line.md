@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653286"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104153"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Adjuntar al Profiler a una aplicación Web ASP.NET para recopilar datos de memoria mediante la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
 
-   -   Las opciones **/globalsamplegc** y **/globalsamplegclife** especifican el tipo de datos de memoria que se van a recopilar.  
+   - Las opciones **/globalsamplegc** y **/globalsamplegclife** especifican el tipo de datos de memoria que se van a recopilar.  
 
         Especifique una y solamente una de las siguientes opciones.  
 
@@ -49,7 +49,7 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
        |**/globalsamplegc**|Habilita la recopilación de datos de asignación de memoria.|  
        |**/globalsamplegclife**|Habilita la recopilación tanto de datos de asignación de memoria como de datos de duración de objetos.|  
 
-   -   La opción **/samplelineoff** desactiva la asignación de los datos recopilados a líneas de código fuente específicas. Si se especifica esta opción, los datos se asignan al nivel de función.  
+   - La opción **/samplelineoff** desactiva la asignación de los datos recopilados a líneas de código fuente específicas. Si se especifica esta opción, los datos se asignan al nivel de función.  
 
 3. Reinicie el equipo para establecer la nueva configuración de entorno.  
 
@@ -83,16 +83,16 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   El Id. de proceso `(PID)` especifica el identificador de proceso o el nombre del proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
+   - El Id. de proceso `(PID)` especifica el identificador de proceso o el nombre del proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
 
-   -   **/targetclr:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación.  
+   - **/targetclr:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación.  
 
 ## <a name="controlling-data-collection"></a>Controlar la recolección de datos  
  Durante la ejecución de la aplicación, puede controlar la recopilación de datos iniciando o deteniendo la escritura de los datos en el archivo de datos del generador de perfiles mediante el uso de las opciones de **VSPerfCmd.exe**. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
 
--   Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
+- Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
 
     |Opción|Descripción|  
     |------------|-----------------|  

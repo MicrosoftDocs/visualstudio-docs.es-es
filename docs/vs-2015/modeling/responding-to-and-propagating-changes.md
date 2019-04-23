@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1b98875bbc7ea4fc33c342ab625be385593aab8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9838e934421e619c85f348052fbe589288391c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104725"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Responder a los cambios y propagarlos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Cuando un elemento se crea, elimina o actualiza, puede escribir código que se p
   
  Usar eventos de almacén para sincronizar el modelo con objetos fuera de Store y las reglas para mantener la coherencia en el Store.  
   
--   **Crear reglas personalizadas** crear una regla personalizada como una clase derivada de una regla de abstracta. También debe notificar al marco acerca de la regla personalizada. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
+- **Crear reglas personalizadas** crear una regla personalizada como una clase derivada de una regla de abstracta. También debe notificar al marco acerca de la regla personalizada. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
   
--   **Suscribirse a eventos** para poder suscribirse a un evento, cree un controlador de eventos y el delegado. A continuación, utilice el <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>propiedad para suscribirse al evento. Para obtener más información, consulte [controladores propagar los cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+- **Suscribirse a eventos** para poder suscribirse a un evento, cree un controlador de eventos y el delegado. A continuación, utilice el <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>propiedad para suscribirse al evento. Para obtener más información, consulte [controladores propagar los cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
--   **Deshaciendo cambios** al deshacer una transacción, se generan eventos, pero no se aplican las reglas. Si una regla cambia un valor y deshacer el cambio, el valor se restablece al valor original durante la acción de deshacer. Cuando se genera un evento, debe cambiar manualmente el valor a su valor original. Para obtener más información sobre transactons y deshacer, vea [Cómo: Usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).  
+- **Deshaciendo cambios** al deshacer una transacción, se generan eventos, pero no se aplican las reglas. Si una regla cambia un valor y deshacer el cambio, el valor se restablece al valor original durante la acción de deshacer. Cuando se genera un evento, debe cambiar manualmente el valor a su valor original. Para obtener más información sobre transactons y deshacer, vea [Cómo: Usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
--   **Pasar argumentos de evento para eventos y reglas** ambos eventos y las reglas se pasan un `EventArgs` parámetro que tiene información acerca de cómo puede cambiar el modelo.  
+- **Pasar argumentos de evento para eventos y reglas** ambos eventos y las reglas se pasan un `EventArgs` parámetro que tiene información acerca de cómo puede cambiar el modelo.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   

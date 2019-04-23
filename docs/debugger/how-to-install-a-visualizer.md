@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: instalar un visualizador | Microsoft Docs'
+title: Procedimiento Instalar un visualizador | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a552c07443e4dd38070a86b7d9513d8cfa0136
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d5b27d52c1f390e6c9f60ef10a91d9a93f903f5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104491"
 ---
-# <a name="how-to-install-a-visualizer"></a>Cómo: Instalar un visualizador
+# <a name="how-to-install-a-visualizer"></a>Procedimiento Instalación de un visualizador
 Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar un visualizador es un proceso sencillo.
 
 > [!NOTE]
@@ -32,18 +32,18 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
 
 ### <a name="to-install-a-visualizer"></a>Para instalar un visualizador
 
-1.  Busque el archivo DLL que contiene el visualizador que ha compilado.
+1. Busque el archivo DLL que contiene el visualizador que ha compilado.
 
-2.  Copie el archivo DLL a una de las siguientes ubicaciones:
+2. Copie el archivo DLL a una de las siguientes ubicaciones:
 
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`
 
-3.  Si desea utilizar un visualizador administrado para la depuración remota, copie el archivo DLL en la misma ruta de acceso en el equipo remoto.
+3. Si desea utilizar un visualizador administrado para la depuración remota, copie el archivo DLL en la misma ruta de acceso en el equipo remoto.
 
-4.  Reinicie la sesión de depuración.
+4. Reinicie la sesión de depuración.
 
 ## <a name="see-also"></a>Vea también
 - [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)
-- [Cómo: Escribir un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Cómo: Escritura de un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)

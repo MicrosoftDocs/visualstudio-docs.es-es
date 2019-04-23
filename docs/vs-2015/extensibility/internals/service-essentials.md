@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 90b16c9d7e7a762b6c1dac322ae9467b835476fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111603"
 ---
 # <a name="service-essentials"></a>Conceptos básicos del servicio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ Un servicio es un contrato entre dos VSPackages. Un VSPackage proporciona un con
   
  Los servicios no tienen ningún detectabilidad. Por lo tanto, debe conocer el identificador de servicio (SID) de un servicio que desea consumir, y debe saber qué interfaces proporciona. La documentación de referencia para el servicio proporciona esta información.  
   
--   Los VSPackages que proporcionan servicios se llama a los proveedores de servicios.  
+- Los VSPackages que proporcionan servicios se llama a los proveedores de servicios.  
   
--   Servicios que se proporcionan a otros VSPackages se denominan servicios globales.  
+- Servicios que se proporcionan a otros VSPackages se denominan servicios globales.  
   
--   Servicios que están disponibles solo para el VSPackage que implemente en ellos, o a cualquier objeto que crea, se llama a los servicios locales.  
+- Servicios que están disponibles solo para el VSPackage que implemente en ellos, o a cualquier objeto que crea, se llama a los servicios locales.  
   
--   Servicios que reemplazar servicios integrados o servicios proporcionados por otros paquetes, se denominan invalidaciones de servicio.  
+- Servicios que reemplazar servicios integrados o servicios proporcionados por otros paquetes, se denominan invalidaciones de servicio.  
   
--   Servicios o las invalidaciones de servicio, se cargan a petición, es decir, se carga el proveedor de servicios cuando se solicite el servicio que proporciona otro VSPackage.  
+- Servicios o las invalidaciones de servicio, se cargan a petición, es decir, se carga el proveedor de servicios cuando se solicite el servicio que proporciona otro VSPackage.  
   
--   Para admitir la carga a petición, un proveedor de servicios registra sus servicios globales con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obtener más información, consulte [registrar servicios](../../misc/registering-services.md).  
+- Para admitir la carga a petición, un proveedor de servicios registra sus servicios globales con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obtener más información, consulte [registrar servicios](../../misc/registering-services.md).  
   
--   Después de obtener un servicio, utilice [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (código no administrado) o conversión (código administrado) para obtener la interfaz deseada, por ejemplo:  
+- Después de obtener un servicio, utilice [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (código no administrado) o conversión (código administrado) para obtener la interfaz deseada, por ejemplo:  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -51,13 +51,13 @@ Un servicio es un contrato entre dos VSPackages. Un VSPackage proporciona un con
   
     ```  
   
--   Código administrado se refiere a un servicio por su tipo, mientras que el código no administrado se refiere a un servicio por su GUID.  
+- Código administrado se refiere a un servicio por su tipo, mientras que el código no administrado se refiere a un servicio por su GUID.  
   
--   Cuando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carga un paquete VSPackage, pasa un proveedor de servicios a VSPackage para permitir el acceso de VSPackage a servicios globales. Esto se conoce como "situación" el VSPackage.  
+- Cuando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carga un paquete VSPackage, pasa un proveedor de servicios a VSPackage para permitir el acceso de VSPackage a servicios globales. Esto se conoce como "situación" el VSPackage.  
   
--   Los VSPackages pueden proveedores de servicios para los objetos que creen. Por ejemplo, un formulario puede enviar una solicitud para un servicio de color con el marco, que podría pasar la solicitud a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Los VSPackages pueden proveedores de servicios para los objetos que creen. Por ejemplo, un formulario puede enviar una solicitud para un servicio de color con el marco, que podría pasar la solicitud a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   Pueden llamar objetos administrados que están profundamente anidados o no está ubicados en absoluto, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> para el acceso directo a los servicios globales. Para obtener más información, vea [Cómo: Usar GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
+- Pueden llamar objetos administrados que están profundamente anidados o no está ubicados en absoluto, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> para el acceso directo a los servicios globales. Para obtener más información, vea [Cómo: Usar GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Lista de servicios disponibles](../../extensibility/internals/list-of-available-services.md)   

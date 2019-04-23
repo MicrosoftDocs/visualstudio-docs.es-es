@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104933"
 ---
 # <a name="xml-schema-explorer"></a>Explorador de esquemas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ El Explorador de esquemas XML está integrado en Microsoft Visual Studio y en el
   
  Para activar un nodo, haga doble clic en él o presione **ENTRAR** cuando se selecciona el nodo.  
   
--   Al activar un nodo, se abre el archivo en el que está definido (si no está abierto ya) y se selecciona el nodo en dicho archivo.  
+- Al activar un nodo, se abre el archivo en el que está definido (si no está abierto ya) y se selecciona el nodo en dicho archivo.  
   
--   Al activar un nodo de archivo, se abre el archivo seleccionado (si no está abierto ya) y se resalta el nodo del `<schema>`.  
+- Al activar un nodo de archivo, se abre el archivo seleccionado (si no está abierto ya) y se resalta el nodo del `<schema>`.  
   
--   Al activar un nodo de espacio de nombres o de conjunto de esquemas no se realiza ninguna acción.  
+- Al activar un nodo de espacio de nombres o de conjunto de esquemas no se realiza ninguna acción.  
   
 ## <a name="draging-and-dropping-nodes"></a>Arrastrar y colocar nodos  
  Puede arrastrar y colocar nodos globales, de archivo y de espacio de nombres en una vista del Diseñador XSD. Si la vista actual es el [vista inicio](../xml-tools/start-view.md), arrastre un nodo en la vista se abrirá el [vista gráfico](../xml-tools/graph-view.md). Si la vista actual es el [vista modelo de contenido](../xml-tools/content-model-view.md) o vista de gráfico, la vista no cambiará al colocar un nodo sobre ella.  
@@ -82,13 +82,13 @@ El Explorador de esquemas XML está integrado en Microsoft Visual Studio y en el
   
 ## <a name="in-this-section"></a>En esta sección  
   
--   [Buscar en el conjunto de esquemas](../xml-tools/searching-the-schema-set.md)  
+- [Buscar en el conjunto de esquemas](../xml-tools/searching-the-schema-set.md)  
   
--   [Ordenación, filtrado y agrupación](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [Ordenación, filtrado y agrupación](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [Menús contextuales](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [Menús contextuales](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [Integración de los literales XML con el Explorador de esquemas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [Integración de los literales XML con el Explorador de esquemas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Adición de nodos al área de trabajo desde el Explorador de esquemas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

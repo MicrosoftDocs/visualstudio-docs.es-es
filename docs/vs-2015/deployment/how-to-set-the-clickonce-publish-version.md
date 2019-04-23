@@ -1,5 +1,5 @@
 ---
-title: Filtrar Establecer la publicación de ClickOnce versión | Documentos de Microsoft
+title: Procedimiento Establecer la publicación de ClickOnce versión | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b082e92ffac43e48725285bc9fa9052dd82cfd92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bca76d104550a8607de82c9092f57d43c027e63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104484"
 ---
-# <a name="how-to-set-the-clickonce-publish-version"></a>Filtrar Establecer la versión de publicación de ClickOnce
+# <a name="how-to-set-the-clickonce-publish-version"></a>Procedimiento Establecer la versión de publicación de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `Publish Version` propiedad determina si la aplicación que se está publicando se tratará como una actualización. Se incrementa cada versión del tiempo, la aplicación se publicará como una actualización.  
@@ -36,11 +36,11 @@ El [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `Publish Version` prop
   
 ### <a name="to-change-the-publish-version"></a>Para cambiar la versión de publicación  
   
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la pestaña **Publicar**.  
+2. Haga clic en la pestaña **Publicar**.  
   
-3.  En **Publicar versión** campo, se incrementa la **principales**, **menores**, **compilar**, o **revisión** versión números.  
+3. En **Publicar versión** campo, se incrementa la **principales**, **menores**, **compilar**, o **revisión** versión números.  
   
     > [!NOTE]
     >  Nunca se debe disminuir un número de versión; por lo que al hacerlo podría provocar un comportamiento impredecible de actualización.  

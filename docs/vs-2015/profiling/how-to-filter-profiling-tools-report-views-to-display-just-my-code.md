@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f57dedfecd8db92f93183fa0430de712431f83a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f47ddbadc5decaa292d34cd2becbff69e69b51a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105466"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Cómo: filtrar vistas de herramientas de generación de perfiles para mostrar Solo mi código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,19 +23,19 @@ Visual Studio 2010 Premium proporciona filtrado para informes de rendimiento con
   
 ### <a name="to-enable-just-my-code"></a>Para activar Solo mi código  
   
-1.  En el menú **Herramientas** , haga clic en **Opciones**.  
+1. En el menú **Herramientas** , haga clic en **Opciones**.  
   
-2.  En el cuadro de diálogo **Opciones**, expanda **Herramientas de rendimiento** y después seleccione el nodo **General**.  
+2. En el cuadro de diálogo **Opciones**, expanda **Herramientas de rendimiento** y después seleccione el nodo **General**.  
   
-3.  En **Configuración general**, seleccione la casilla **Activar Solo mi código**.  
+3. En **Configuración general**, seleccione la casilla **Activar Solo mi código**.  
   
 ### <a name="to-disable-just-my-code"></a>Para desactivar Solo mi código  
   
-1.  En el menú **Herramientas** , haga clic en **Opciones**.  
+1. En el menú **Herramientas** , haga clic en **Opciones**.  
   
-2.  En el cuadro de diálogo **Opciones**, expanda **Herramientas de rendimiento** y después seleccione el nodo **General**.  
+2. En el cuadro de diálogo **Opciones**, expanda **Herramientas de rendimiento** y después seleccione el nodo **General**.  
   
-3.  En **Configuración general**, desmarque la casilla **Activar Solo mi código**.  
+3. En **Configuración general**, desmarque la casilla **Activar Solo mi código**.  
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar las vistas de informes de las herramientas de rendimiento](../profiling/customizing-performance-tools-report-views.md)

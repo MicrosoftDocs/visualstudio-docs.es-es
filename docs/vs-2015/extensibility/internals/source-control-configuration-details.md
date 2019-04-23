@@ -10,23 +10,23 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 85c537d5e915324a2bd8cd858c5ff133370b62f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51fac40d0bffe570ac1f374872fb4572c1c83441
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109470"
 ---
 # <a name="source-control-configuration-details"></a>Detalles de configuración del control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Para poder implementar el control de código fuente, es preciso configurar correctamente el sistema de proyecto o el editor para hacer lo siguiente:  
   
--   Solicitar permiso para realizar la transición al estado cambiado  
+- Solicitar permiso para realizar la transición al estado cambiado  
   
--   Solicitar permiso para guardar un archivo  
+- Solicitar permiso para guardar un archivo  
   
--   Solicitar permiso para agregar, quitar o cambiar el nombre de los archivos del proyecto  
+- Solicitar permiso para agregar, quitar o cambiar el nombre de los archivos del proyecto  
   
 ## <a name="request-permission-to-transition-to-changed-state"></a>Solicitar permiso para realizar la transición al estado cambiado  
  Un editor o proyecto debe solicitar permiso para realizar la transición al estado cambiado (modificado) mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Cada editor que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> debe llamar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> y recibir la aprobación para cambiar el documento desde el entorno antes de devolver `True` para `M:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty(System.Int32@)`. Un proyecto es esencialmente un editor para un archivo de proyecto y, como resultado, tiene la misma responsabilidad para implementar el seguimiento de estado cambiado del archivo de proyecto como un editor de texto que se hace para sus archivos. El entorno controla el cambio de estado de la solución, pero debe controlar el cambio de estado de cualquier objeto que hace referencia a la solución, pero no almacene, como un archivo de proyecto o sus elementos. En general, si su editor o proyecto es responsable de administrar la persistencia para un elemento, es responsable de implementar el seguimiento de estado cambiado.  

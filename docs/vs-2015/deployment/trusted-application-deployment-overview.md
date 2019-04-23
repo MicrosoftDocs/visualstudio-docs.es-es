@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34d643d3a5966ac287773b2d01d88596d51239f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105843"
 ---
 # <a name="trusted-application-deployment-overview"></a>Información general sobre la implementación de aplicaciones de confianza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ En este tema se proporciona información general sobre cómo implementar aplicac
   
   Siga estos pasos para aprovechar las ventajas de la implementación de aplicaciones de confianza:  
   
-1.  Obtenga un certificado para el editor.  
+1. Obtenga un certificado para el editor.  
   
-2.  Agregue el editor al almacén de editores de confianza en todos los clientes.  
+2. Agregue el editor al almacén de editores de confianza en todos los clientes.  
   
-3.  Cree su aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
+3. Cree su aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
-4.  Firme el manifiesto de implementación con el certificado del editor.  
+4. Firme el manifiesto de implementación con el certificado del editor.  
   
-5.  Publique la implementación de la aplicación en los equipos cliente.  
+5. Publique la implementación de la aplicación en los equipos cliente.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Obtener un certificado para el editor  
  Los certificados digitales son un componente básico de la autenticación Microsoft Authenticode y del sistema de seguridad. Authenticode es un elemento estándar del sistema operativo Windows. Todas las aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deben firmarse con un certificado digital, independientemente de que participen en la implementación de aplicaciones de confianza. Para obtener una explicación completa del funcionamiento de Authenticode con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consulte [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md).  
@@ -78,9 +78,9 @@ En este tema se proporciona información general sobre cómo implementar aplicac
   
  Si no está implementando la aplicación en un entorno de escritorio administrado, dispone de las siguientes opciones para agregar un certificado al almacén de editores de confianza:  
   
--   El espacio de nombres <xref:System.Security.Cryptography?displayProperty=fullName> .  
+- El espacio de nombres <xref:System.Security.Cryptography?displayProperty=fullName> .  
   
--   CertMgr.exe, que es un componente de Internet Explorer y, por tanto, existe en Windows 98 y en todas las versiones posteriores. Para obtener más información, consulte [Certmgr.exe (herramienta de administrador de certificados)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- CertMgr.exe, que es un componente de Internet Explorer y, por tanto, existe en Windows 98 y en todas las versiones posteriores. Para obtener más información, consulte [Certmgr.exe (herramienta de administrador de certificados)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Crear una aplicación ClickOnce  
  Una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es una aplicación cliente [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] combinada con archivos de manifiesto que describen la aplicación y proporcionan parámetros de instalación. Puede convertir el programa en una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con el comando **Publicar** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Otra opción es generar todos los archivos necesarios para la implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] mediante las herramientas incluidas en el [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Para obtener pasos detallados sobre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación, consulte [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

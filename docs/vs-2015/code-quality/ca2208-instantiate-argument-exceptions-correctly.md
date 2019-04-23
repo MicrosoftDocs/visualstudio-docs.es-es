@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ae3bb98e91904debfd3c238e70ce0ff0127e82b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6d7020563d7bcbc794a0d2980a8dcc77c0d98d0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998388"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109982"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Crear instancias de las excepciones del argumento correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58998388"
 ## <a name="cause"></a>Motivo
  Posibles causas son las siguientes situaciones:
 
--   Se realiza una llamada al constructor predeterminado (sin parámetros) de un tipo de excepción que es o deriva de [System.ArgumentException] (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->).
+- Se realiza una llamada al constructor predeterminado (sin parámetros) de un tipo de excepción que es o deriva de ([System.ArgumentException]<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->).
 
--   Se pasa un argumento de cadena incorrecto a un constructor con parámetros de un tipo de excepción que es o deriva de [System.ArgumentException.] (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)
+- Se pasa un argumento de cadena incorrecto a un constructor con parámetros de un tipo de excepción que es o deriva de [System.ArgumentException.] (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)
 
 ## <a name="rule-description"></a>Descripción de la regla
  En lugar de llamar al constructor predeterminado, llame a una de las sobrecargas del constructor que permite que un mensaje de excepción más significativo que se proporcione. El mensaje de excepción debe dirigirse al desarrollador y explicar con claridad la condición de error y cómo corregir o evitar la excepción.

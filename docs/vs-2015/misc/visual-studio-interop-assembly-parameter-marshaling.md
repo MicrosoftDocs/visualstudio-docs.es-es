@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105077"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Serialización de parámetros de ensamblado de interoperabilidad de Visual Studio
 Los VSPackages que están escritos en código administrado que tenga que llamar o llamar a código COM no administrado. Normalmente, argumentos de método se transforman o serializar automáticamente por el serializador de interoperabilidad. Sin embargo, en ocasiones, no se puede transformar los argumentos de una manera sencilla. En esos casos, se usan los parámetros del prototipo de método de ensamblado de interoperabilidad para que coincida con los parámetros de función COM lo máximo posible. Para obtener más información, consulte [interoperativo](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -28,11 +28,11 @@ Los VSPackages que están escritos en código administrado que tenga que llamar 
   
  La documentación de referencia para cada método contiene tres secciones pertinentes:  
   
--   El [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] prototipo de función COM.  
+- El [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] prototipo de función COM.  
   
--   El prototipo de método del ensamblado de interoperabilidad.  
+- El prototipo de método del ensamblado de interoperabilidad.  
   
--   Una lista de los parámetros de COM y una breve descripción de cada uno.  
+- Una lista de los parámetros de COM y una breve descripción de cada uno.  
   
 ##### <a name="look-for-differences-between-the-two-prototypes"></a>Ver las diferencias entre los dos prototipos  
  La mayoría de los problemas de interoperabilidad se derivan de las diferencias entre la definición de un tipo determinado en una interfaz COM y la definición del mismo tipo en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ensamblados de interoperabilidad. Por ejemplo, considere la diferencia en la capacidad para pasar un `null` valor en un parámetro [out]. Debe ver las diferencias entre los dos prototipos y tenga en cuenta sus consecuencias para los datos que se pasa.  
@@ -79,17 +79,17 @@ else
 > [!NOTE]
 >  Se conocen los siguientes métodos para pasar `IUnknown` punteros de objeto como tipo <xref:System.IntPtr>. Como se describe en esta sección, controlarlos.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ### <a name="optional-out-parameters"></a>Parámetros [out] opcional  
  Buscar los parámetros que se definen como un [out] tipo de datos (`int`, `object`, etc.) en el COM interfaz, pero que se definen como matrices del mismo tipo de datos en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototipo de método del ensamblado de interoperabilidad.  

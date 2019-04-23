@@ -8,12 +8,12 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7178b2d901d22956c93145c5e780144b894970de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1cde9cf66979815a804868f481910a2d0a21efa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111056"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>Administración de varios subprocesos en código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Si tiene una extensión VSPackage administrada que llama a métodos asincrónico
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>Cambiar desde el subproceso de interfaz de usuario a un subproceso en segundo plano  
   
-1.  Si se encuentra en el subproceso de interfaz de usuario y desea hacer el trabajo asincrónico en un subproceso en segundo plano, use Task.Run():  
+1. Si se encuentra en el subproceso de interfaz de usuario y desea hacer el trabajo asincrónico en un subproceso en segundo plano, use Task.Run():  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -37,7 +37,7 @@ Si tiene una extensión VSPackage administrada que llama a métodos asincrónico
   
     ```  
   
-2.  Si se encuentra en el subproceso de interfaz de usuario y desea bloquear de forma sincrónica mientras esté realizando el trabajo en un subproceso en segundo plano, use la <xref:System.Threading.Tasks.TaskScheduler> propiedad `TaskScheduler.Default` dentro de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2. Si se encuentra en el subproceso de interfaz de usuario y desea bloquear de forma sincrónica mientras esté realizando el trabajo en un subproceso en segundo plano, use la <xref:System.Threading.Tasks.TaskScheduler> propiedad `TaskScheduler.Default` dentro de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -51,7 +51,7 @@ Si tiene una extensión VSPackage administrada que llama a métodos asincrónico
   
 ## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>Cambiar de un subproceso en segundo plano al subproceso de interfaz de usuario  
   
-1.  Si se encuentra en un subproceso en segundo plano y desea hacer algo en el subproceso de interfaz de usuario, use <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1. Si se encuentra en un subproceso en segundo plano y desea hacer algo en el subproceso de interfaz de usuario, use <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
   
     ```csharp  
     // Switch to main thread  

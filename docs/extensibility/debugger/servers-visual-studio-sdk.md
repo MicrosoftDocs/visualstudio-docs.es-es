@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2e5b50a3f2969f8f22ce938522526a6010c640a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56ec28d0d9202bfd72d31e95c53038dd1fa475e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111784"
 ---
 # <a name="servers-visual-studio-sdk"></a>Servidores (Visual Studio SDK)
 En la arquitectura de depurador, un *server*:
 
--   Es un contenedor de puertos y los proveedores de puertos y comunica los puertos y proveedores de puertos para el Administrador de depuración de la sesión (SDM) y los motores de depuración.
+- Es un contenedor de puertos y los proveedores de puertos y comunica los puertos y proveedores de puertos para el Administrador de depuración de la sesión (SDM) y los motores de depuración.
 
--   Puede identificarse por su nombre y enumerar los proveedores de puertos y sus puertos.
+- Puede identificarse por su nombre y enumerar los proveedores de puertos y sus puertos.
 
--   Se representa mediante un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interfaz, que solo se implementa mediante Visual Studio (una instancia de un servidor para cada instancia de Visual Studio en ejecución).
+- Se representa mediante un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interfaz, que solo se implementa mediante Visual Studio (una instancia de un servidor para cada instancia de Visual Studio en ejecución).
 
 ## <a name="see-also"></a>Vea también
 - [Puertos](../../extensibility/debugger/ports.md)

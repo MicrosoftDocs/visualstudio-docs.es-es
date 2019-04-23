@@ -1,5 +1,5 @@
 ---
-title: Filtrar Establecer una zona de seguridad para una aplicación ClickOnce | Documentos de Microsoft
+title: Procedimiento Establecer una zona de seguridad para una aplicación ClickOnce | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0652f8dbb1acfec111dcc587f3ce4ba2496eb4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110471"
 ---
-# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Filtrar Establecer una zona de seguridad para una aplicación ClickOnce
+# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Procedimiento Establecer una zona de seguridad para una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Al establecer permisos de seguridad de acceso del código para una aplicación ClickOnce, debe empezar con un conjunto básico de permisos en la página **Seguridad** del **Diseñador de proyectos**.  
@@ -33,17 +33,17 @@ Al establecer permisos de seguridad de acceso del código para una aplicación C
   
 ### <a name="to-set-a-security-zone"></a>Para establecer una zona de seguridad  
   
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la pestaña **Seguridad** .  
+2. Haga clic en la pestaña **Seguridad** .  
   
-3.  Active la casilla **Habilitar configuración de seguridad de ClickOnce** .  
+3. Active la casilla **Habilitar configuración de seguridad de ClickOnce** .  
   
-4.  Seleccione el botón de la opción **Aplicación de confianza parcial** .  
+4. Seleccione el botón de la opción **Aplicación de confianza parcial** .  
   
      Los controles de la sección **Permisos de seguridad de ClickOnce** están habilitados.  
   
-5.  En la lista desplegable **Zona desde la que se instalará la aplicación** , seleccione una zona de seguridad.  
+5. En la lista desplegable **Zona desde la que se instalará la aplicación** , seleccione una zona de seguridad.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffee39765d28306509ebe3a2ba30e8fabb79cf80
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08db2532cd5524dad5762bc244137ebb87939860
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042782"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107171"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Comenzar a desarrollar extensiones de Visual Studio
 
@@ -47,23 +47,23 @@ En teoría, puede ampliar cualquier parte de Visual Studio: menús, barras de he
 
 En la práctica, hemos descubierto que las características en la mayoría de las personas que desea extender son comandos, menús y barras de herramientas, windows, IntelliSense y proyectos. Estos son vínculos a las secciones correspondientes:
 
--   [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md): agregar sus propios elementos de menús de Visual Studio y las barras de herramientas. Puede usarlos para iniciar la nueva funcionalidad de Visual Studio o sus propias aplicaciones auxiliares externo. También puede proporcionar accesos directos personalizados para los elementos de menú.
+- [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md): agregar sus propios elementos de menús de Visual Studio y las barras de herramientas. Puede usarlos para iniciar la nueva funcionalidad de Visual Studio o sus propias aplicaciones auxiliares externo. También puede proporcionar accesos directos personalizados para los elementos de menú.
 
--   [Ampliación y personalización de Windows de herramienta](../extensibility/extending-and-customizing-tool-windows.md): Extender ventanas de herramientas existentes o crear sus propias ventanas de herramientas. Por ejemplo, podría agregar nuevas propiedades a la **propiedades**, o puede crear una nueva ventana de herramientas para agregar características adicionales.
+- [Ampliación y personalización de Windows de herramienta](../extensibility/extending-and-customizing-tool-windows.md): Extender ventanas de herramientas existentes o crear sus propias ventanas de herramientas. Por ejemplo, podría agregar nuevas propiedades a la **propiedades**, o puede crear una nueva ventana de herramientas para agregar características adicionales.
 
--   [Editor y extensiones de servicio de lenguaje](../extensibility/editor-and-language-service-extensions.md): agregar sus propias personalizaciones de IntelliSense que se proporciona para los lenguajes de Visual Studio, o crear compatibilidad para nuevos lenguajes de programación. Puede crear nuevas finalización de instrucciones, sugerencias y nueva información rápida. Con las bombillas, puede agregar sugerencias de refactorización y las correcciones de código para admitir nuevos lenguajes de programación.
+- [Editor y extensiones de servicio de lenguaje](../extensibility/editor-and-language-service-extensions.md): agregar sus propias personalizaciones de IntelliSense que se proporciona para los lenguajes de Visual Studio, o crear compatibilidad para nuevos lenguajes de programación. Puede crear nuevas finalización de instrucciones, sugerencias y nueva información rápida. Con las bombillas, puede agregar sugerencias de refactorización y las correcciones de código para admitir nuevos lenguajes de programación.
 
--   [Ampliación de proyectos](../extensibility/extending-projects.md)
+- [Ampliación de proyectos](../extensibility/extending-projects.md)
 
--   [Ampliación de configuración y opciones de usuario](../extensibility/extending-user-settings-and-options.md)
+- [Ampliación de configuración y opciones de usuario](../extensibility/extending-user-settings-and-options.md)
 
--   [Ampliación de propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md)
+- [Ampliación de propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md)
 
--   [Ampliación de otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Ampliación de otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Shell aislado de Visual Studio](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
+- [Shell aislado de Visual Studio](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
-##  <a name="BKMK_ProjectTemplate"></a> ¿Qué plantillas de proyecto se proporcionan por VSSDK?
+## <a name="BKMK_ProjectTemplate"></a> ¿Qué plantillas de proyecto se proporcionan por VSSDK?
  Los dos tipos principales de las extensiones son extensiones MEF y VSPackages. En general, las extensiones de VSPackage se usan para las extensiones que utilizan o amplían los comandos, ventanas de herramientas y proyectos. Se usan las extensiones MEF para ampliar o personalizar el editor de Visual Studio.
 
  Para las extensiones de Visual C# y Visual Basic, VSSDK proporciona una plantilla de proyecto VSIX vacía que puede usar junto con las nuevas plantillas de elemento que creación los comandos de menú, ventanas de herramientas y extensiones de editor. También puede usar esta plantilla para plantillas de proyecto de paquete, fragmentos de código y otros artefactos para su distribución a otros usuarios.
@@ -72,15 +72,15 @@ En la práctica, hemos descubierto que las características en la mayoría de la
 
  La plantilla de Shell aislado se usa para empaquetar una extensión en una versión de Visual Studio shell que se puede personalizar y distribuir como su propio. Los temas siguientes muestran cómo empezar a trabajar con cada tipo de extensión:
 
--   Comandos de menú: [Creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
+- Comandos de menú: [Creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   Ventanas de herramientas: [Creación de una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)
+- Ventanas de herramientas: [Creación de una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   Extensiones de editor: [Creación de una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- Extensiones de editor: [Creación de una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   VSPackages básicos: [Creación de una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- VSPackages básicos: [Creación de una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   Plantilla de proyecto VSIX: [Introducción a la plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+- Plantilla de proyecto VSIX: [Introducción a la plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>¿Cómo se puede obtener una extensión my al aspecto Visual Studio?
  Obtenga sugerencias excelente para diseñar la interfaz de usuario para la extensión en [directrices de experiencia de usuario de Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).

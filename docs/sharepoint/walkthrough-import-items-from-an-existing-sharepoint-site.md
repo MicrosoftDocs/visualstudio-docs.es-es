@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110880"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Tutorial: Importar elementos de un sitio de SharePoint existente
   Este tutorial muestra cómo importar elementos de un sitio de SharePoint existente en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de SharePoint.
@@ -36,9 +36,9 @@ ms.locfileid: "56841757"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   Ediciones compatibles de [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] y SharePoint.
+- Ediciones compatibles de [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] y SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="customize-a-sharepoint-site"></a>Personalizar un sitio de SharePoint
  En este ejemplo, creará y personalizar un subsitio de SharePoint agregando una nueva columna de sitio a él y creando otro subsitio para su uso posterior. Más adelante, exportará el primer subsitio a un archivo .wsp y, a continuación, importar la columna de sitio personalizado en el segundo subsitio usando el proyecto de importación de wsp.
@@ -79,23 +79,23 @@ ms.locfileid: "56841757"
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Para exportar un sitio de SharePoint existente
 
-1.  En el sitio de SharePoint, elija **configuración del sitio** en el **acciones del sitio** ficha para mostrar la página Configuración del sitio.
+1. En el sitio de SharePoint, elija **configuración del sitio** en el **acciones del sitio** ficha para mostrar la página Configuración del sitio.
 
-2.  En el **acciones del sitio** sección de la página Configuración del sitio, elija el **sitio Guardar como plantilla** vínculo.
+2. En el **acciones del sitio** sección de la página Configuración del sitio, elija el **sitio Guardar como plantilla** vínculo.
 
-3.  En el **nombre de archivo** , escriba **SitioEjemplo**y en el **nombre de la plantilla** , escriba **el sitio de ejemplo**.
+3. En el **nombre de archivo** , escriba **SitioEjemplo**y en el **nombre de la plantilla** , escriba **el sitio de ejemplo**.
 
-4.  En este ejemplo, deje el **incluir contenido** casilla de verificación.
+4. En este ejemplo, deje el **incluir contenido** casilla de verificación.
 
      Si activa esta casilla, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] guarda todas las listas y bibliotecas de documentos y su contenido, en el archivo WSP. Aunque esto es útil en algunas circunstancias, no es necesario para este ejemplo.
 
-5.  Cuando la operación se completa correctamente, elija el **Galería de soluciones** vínculo para ver el archivo WSP.
+5. Cuando la operación se completa correctamente, elija el **Galería de soluciones** vínculo para ver el archivo WSP.
 
      Para ver la página de la Galería de soluciones más adelante, abra el **acciones del sitio** menú, elija **configuración del sitio**, elija el **vaya a la configuración del sitio de nivel superior** vincular en el  **Administración de la colección de sitios** sección y, a continuación, elija el **soluciones** vincular en el **galerías** sección.
 
-6.  En la Galería de soluciones, elija el **SitioEjemplo** vínculo.
+6. En la Galería de soluciones, elija el **SitioEjemplo** vínculo.
 
-7.  En el **de descarga del archivo** diálogo cuadro, elija el **guardar** botón para guardar el archivo en el sistema local, de forma predeterminada, en la carpeta descargas.
+7. En el **de descarga del archivo** diálogo cuadro, elija el **guardar** botón para guardar el archivo en el sistema local, de forma predeterminada, en la carpeta descargas.
 
 ## <a name="import-the-wsp-file"></a>Importar el archivo .wsp
  Ahora que tiene un *.wsp* archivo que contiene un elemento que desea volver a usar (la columna de sitio personalizada columna prueba), importe el *.wsp* archivos para acceder a él.
@@ -130,13 +130,13 @@ ms.locfileid: "56841757"
 
 ### <a name="to-deploy-the-project"></a>Para implementar el proyecto
 
-1.  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], elija el **F5** clave para implementar y ejecutar el *.wsp* Importar proyecto.
+1. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], elija el **F5** clave para implementar y ejecutar el *.wsp* Importar proyecto.
 
-2.  En el sitio de SharePoint, abra el **acciones del sitio** menú y, a continuación, elija **configuración del sitio** para mostrar la página Configuración del sitio.
+2. En el sitio de SharePoint, abra el **acciones del sitio** menú y, a continuación, elija **configuración del sitio** para mostrar la página Configuración del sitio.
 
-3.  En el **galerías** sección, elija el **columnas de sitio** vínculo.
+3. En el **galerías** sección, elija el **columnas de sitio** vínculo.
 
-4.  Desplácese hacia abajo hasta la **columnas personalizadas** sección.
+4. Desplácese hacia abajo hasta la **columnas personalizadas** sección.
 
      Tenga en cuenta que la columna de sitio personalizada que haya importado desde el primer sitio de SharePoint aparece en la lista.
 

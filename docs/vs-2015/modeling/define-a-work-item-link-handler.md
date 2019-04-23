@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104686"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definir un controlador de vínculos de elementos de trabajo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,39 +26,39 @@ Puede crear una extensión de integración de Visual Studio que responda cuando 
 ## <a name="set-up-a-uml-extension-solution"></a>Configurar una solución de extensión UML  
  De este modo, podrá desarrollar controladores y distribuirlos posteriormente a otros usuarios. Es necesario configurar dos proyectos de Visual Studio:  
   
--   Un proyecto de biblioteca de clases que contenga el código del controlador de vínculos.  
+- Un proyecto de biblioteca de clases que contenga el código del controlador de vínculos.  
   
--   Un proyecto VSIX, que actúe como contenedor a la hora de instalar el comando. Si lo desea, puede incluir otros componentes en el mismo VSIX.  
+- Un proyecto VSIX, que actúe como contenedor a la hora de instalar el comando. Si lo desea, puede incluir otros componentes en el mismo VSIX.  
   
 #### <a name="to-set-up-the-visual-studio-solution"></a>Para configurar la solución de Visual Studio  
   
-1.  Cree un proyecto de biblioteca de clases, ya sea agregándolo a una solución VSIX existente o creando una nueva solución.  
+1. Cree un proyecto de biblioteca de clases, ya sea agregándolo a una solución VSIX existente o creando una nueva solución.  
   
-    1.  En el menú **Archivo** , elija **Nuevo**, **Proyecto**.  
+    1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.  
   
-    2.  En **plantillas instaladas**, expanda **Visual C#** o **Visual Basic**, a continuación, haga clic en la columna central **biblioteca de clases**.  
+    2. En **plantillas instaladas**, expanda **Visual C#** o **Visual Basic**, a continuación, haga clic en la columna central **biblioteca de clases**.  
   
-    3.  Establezca **Solución** para indicar si desea crear una nueva solución o agregar un componente a una solución VSIX que ya tiene abierta.  
+    3. Establezca **Solución** para indicar si desea crear una nueva solución o agregar un componente a una solución VSIX que ya tiene abierta.  
   
-    4.  Especifique el nombre y la ubicación del proyecto, y haga clic en Aceptar.  
+    4. Especifique el nombre y la ubicación del proyecto, y haga clic en Aceptar.  
   
-2.  A menos que la solución ya contenga uno, cree un proyecto VSIX.  
+2. A menos que la solución ya contenga uno, cree un proyecto VSIX.  
   
-    1.  En el **Explorador de soluciones**, en el menú contextual de la solución, elija **Agregar**, **Nuevo proyecto**.  
+    1. En el **Explorador de soluciones**, en el menú contextual de la solución, elija **Agregar**, **Nuevo proyecto**.  
   
-    2.  En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, seleccione **Extensibilidad**. En la columna central, elija **Proyecto VSIX**.  
+    2. En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, seleccione **Extensibilidad**. En la columna central, elija **Proyecto VSIX**.  
   
-3.  Establezca el proyecto VSIX como proyecto de inicio de la solución.  
+3. Establezca el proyecto VSIX como proyecto de inicio de la solución.  
   
-    -   En el Explorador de soluciones, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.  
+    - En el Explorador de soluciones, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.  
   
-4.  En **source.extension.vsixmanifest**, en **contenido**, agregue el proyecto de biblioteca de clases como componente MEF.  
+4. En **source.extension.vsixmanifest**, en **contenido**, agregue el proyecto de biblioteca de clases como componente MEF.  
   
-    1.  En la pestaña **Metadatos** , establezca un nombre para VSIX.  
+    1. En la pestaña **Metadatos** , establezca un nombre para VSIX.  
   
-    2.  En la pestaña **Destinos de instalación** , establezca las versiones de Visual Studio como destinos.  
+    2. En la pestaña **Destinos de instalación** , establezca las versiones de Visual Studio como destinos.  
   
-    3.  En la pestaña **Activos** , elija **Nuevo**y, en el cuadro de diálogo, establezca:  
+    3. En la pestaña **Activos** , elija **Nuevo**y, en el cuadro de diálogo, establezca:  
   
          **Tipo** = **Componente MEF**  
   
@@ -156,37 +156,37 @@ namespace WorkItems
   
 #### <a name="to-test-the-link-handler"></a>Para probar el controlador de vínculos  
   
-1.  Presione **F5**o, en el menú **Depurar** , elija **Iniciar depuración**.  
+1. Presione **F5**o, en el menú **Depurar** , elija **Iniciar depuración**.  
   
      Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      **Solución de problemas de**: Si un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no se inicia, asegúrese de que el proyecto VSIX está establecido como proyecto de inicio de la solución.  
   
-2.  En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra o cree un proyecto de modelado, y abra o cree un diagrama de modelado.  
+2. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra o cree un proyecto de modelado, y abra o cree un diagrama de modelado.  
   
-3.  Cree un elemento de modelo como una clase UML y establezca su nombre.  
+3. Cree un elemento de modelo como una clase UML y establezca su nombre.  
   
-4.  Haga clic en el elemento y, a continuación, haga clic en **crear elemento de trabajo**.  
+4. Haga clic en el elemento y, a continuación, haga clic en **crear elemento de trabajo**.  
   
-    -   Si el submenú muestra **Abrir conexión con Team Foundation Server**, deberá cerrar el proyecto, conectarse al TFS adecuado y reiniciar este procedimiento.  
+    - Si el submenú muestra **Abrir conexión con Team Foundation Server**, deberá cerrar el proyecto, conectarse al TFS adecuado y reiniciar este procedimiento.  
   
-    -   Si el submenú muestra una lista de tipos de elemento de trabajo, haga clic en uno de ellos.  
+    - Si el submenú muestra una lista de tipos de elemento de trabajo, haga clic en uno de ellos.  
   
          Se abrirá un formulario de nuevo elemento de trabajo.  
   
-5.  Compruebe que el título del elemento de trabajo sea igual que el elemento de modelo, si ha usado el código de ejemplo de la sección anterior. Esto indica que `OnWorkItemCreated()` ha funcionado.  
+5. Compruebe que el título del elemento de trabajo sea igual que el elemento de modelo, si ha usado el código de ejemplo de la sección anterior. Esto indica que `OnWorkItemCreated()` ha funcionado.  
   
-6.  Complete el formulario, guarde y cierre el elemento de trabajo.  
+6. Complete el formulario, guarde y cierre el elemento de trabajo.  
   
-7.  Compruebe que el elemento de trabajo es ahora de color rojo. Esto muestra `OnWorkItemLinked()` en el código de ejemplo.  
+7. Compruebe que el elemento de trabajo es ahora de color rojo. Esto muestra `OnWorkItemLinked()` en el código de ejemplo.  
   
      **Solución de problemas de**: Si no se han ejecutado los métodos de controlador, compruebe lo siguiente:  
   
-    -   El proyecto de biblioteca de clase aparece como un componente MEF en la **contenido** lista **source.extensions.manifest** en el proyecto VSIX.  
+    - El proyecto de biblioteca de clase aparece como un componente MEF en la **contenido** lista **source.extensions.manifest** en el proyecto VSIX.  
   
-    -   Se ha adjuntado el atributo `Export` correcto a la clase del controlador y la clase implementa `ILinkedWorkItemExtension`.  
+    - Se ha adjuntado el atributo `Export` correcto a la clase del controlador y la clase implementa `ILinkedWorkItemExtension`.  
   
-    -   Los parámetros de todos los atributos `Import` e `Export` son válidos.  
+    - Los parámetros de todos los atributos `Import` e `Export` son válidos.  
   
 ## <a name="about-the-work-item-handler-code"></a>Acerca del código del controlador de elementos de trabajo  
   
@@ -237,9 +237,9 @@ public void OnWorkItemRemoved
   
  Para usar el ejemplo siguiente, agregue estos ensamblados .NET a las referencias del proyecto:  
   
--   Microsoft.TeamFoundation.Client.dll  
+- Microsoft.TeamFoundation.Client.dll  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
 ```  
   

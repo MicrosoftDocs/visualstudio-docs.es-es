@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especificar eventos de compilación (Visual Basic) | Microsoft Docs
+title: Procedimiento Especificar eventos de compilación (Visual Basic) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97e69abaef4fb5066082ad2170fe25cad0a51b18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779205"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104270"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Cómo: Especificar eventos de compilación (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Procedimiento Especificar eventos de compilación (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts, macros u otras acciones como parte del proceso de compilación. Los eventos anteriores a la compilación se producen antes de la compilación; los eventos posteriores a la compilación se producen después de la compilación.  
@@ -36,13 +36,13 @@ Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts
   
 #### <a name="to-specify-a-build-event"></a>Para especificar un evento de compilación  
   
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la pestaña **Compilar**.  
+2. Haga clic en la pestaña **Compilar**.  
   
-3.  Haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.  
+3. Haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.  
   
-4.  Escriba los argumentos de línea de comandos para la acción anterior o posterior a la compilación y después haga clic en **Aceptar**.  
+4. Escriba los argumentos de línea de comandos para la acción anterior o posterior a la compilación y después haga clic en **Aceptar**.  
   
     > [!NOTE]
     >  Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.  
@@ -126,15 +126,15 @@ Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts
   
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Para invocar un evento posterior a la compilación para cambiar el manifiesto de aplicación  
   
-1.  Cree una aplicación Windows para que se publique el proyecto. En el menú **Archivo**, haga clic en **Nuevo** y después haga clic en **Proyecto**.  
+1. Cree una aplicación Windows para que se publique el proyecto. En el menú **Archivo**, haga clic en **Nuevo** y después haga clic en **Proyecto**.  
   
-2.  En el **nuevo proyecto** cuadro de diálogo el **Visual Basic** nodo, seleccione **Windows** y, a continuación, el **aplicación Windows** plantilla. Dé un nombre al proyecto `VBWinApp`.  
+2. En el **nuevo proyecto** cuadro de diálogo el **Visual Basic** nodo, seleccione **Windows** y, a continuación, el **aplicación Windows** plantilla. Dé un nombre al proyecto `VBWinApp`.  
   
-3.  Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Propiedades**.  
+3. Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Propiedades**.  
   
-4.  En el Diseñador de proyectos, vaya a la página **Publicar** y establezca **Ubicación de publicación** en `C:\TEMP\`.  
+4. En el Diseñador de proyectos, vaya a la página **Publicar** y establezca **Ubicación de publicación** en `C:\TEMP\`.  
   
-5.  Publique el proyecto haciendo clic en **Publicar ahora**.  
+5. Publique el proyecto haciendo clic en **Publicar ahora**.  
   
      El archivo de manifiesto se compilará y se colocará en `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`. Para ver el manifiesto, haga clic con el botón derecho en el archivo, haga clic en **Abrir con**, seleccione **Select the program from a list** (Seleccionar el programa de la lista) y, después, haga clic en **Bloc de notas**.  
   
@@ -144,9 +144,9 @@ Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  En el Diseñador de proyectos, vaya a la pestaña **Compilar** y haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.  
+6. En el Diseñador de proyectos, vaya a la pestaña **Compilar** y haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.  
   
-7.  En el cuadro **Línea de comandos del evento posterior a la compilación**, escriba el comando siguiente:  
+7. En el cuadro **Línea de comandos del evento posterior a la compilación**, escriba el comando siguiente:  
   
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -154,7 +154,7 @@ Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts
   
      La macro `$(TargetPath)` expresa la ruta de acceso completa del ejecutable que se está creando. Por tanto, $(TargetPath).manifest especificará el manifiesto de aplicación creado en el directorio bin. La publicación copiará este manifiesto en la ubicación de publicación que ha establecido anteriormente.  
   
-8.  Vuelva a publicar el proyecto. Vaya a la página **Publicar** y haga clic en **Publicar ahora**.  
+8. Vuelva a publicar el proyecto. Vaya a la página **Publicar** y haga clic en **Publicar ahora**.  
   
      Vea el manifiesto de nuevo. Para ver el manifiesto, vaya al directorio de publicación, haga clic con el botón derecho en el archivo, haga clic en **Abrir con**, seleccione **Select the program from a list** (Seleccionar el programa de la lista) y, después, haga clic en **Bloc de notas**.  
   

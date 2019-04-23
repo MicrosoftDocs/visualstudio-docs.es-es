@@ -1,5 +1,5 @@
 ---
-title: Filtrar Mostrar y ocultar grupos de registros | Documentos de Microsoft
+title: Procedimiento Mostrar y ocultar grupos de registros | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,14 +23,14 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 088313e4452e2606b1908430c81c69446346775c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b7408100bbbda5533a65a3a55715fc46088f6061
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988350"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106363"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Filtrar Mostrar y ocultar grupos de registros
+# <a name="how-to-display-and-hide-register-groups"></a>Procedimiento Mostrar y ocultar grupos de registros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La ventana **Registros** está disponible únicamente si la depuración del nivel de dirección está habilitada en el cuadro de diálogo **Opciones**, nodo **Depuración**, categoría **General**.  
@@ -42,9 +42,9 @@ La ventana **Registros** está disponible únicamente si la depuración del nive
   
 ### <a name="to-display-or-hide-register-groups"></a>Para mostrar u ocultar los grupos de registros  
   
-1.  Haga clic con el botón derecho del mouse en la ventana **Registros**.  
+1. Haga clic con el botón derecho del mouse en la ventana **Registros**.  
   
-2.  En el menú contextual, seleccione los grupos de registros que desea mostrar u ocultar.  
+2. En el menú contextual, seleccione los grupos de registros que desea mostrar u ocultar.  
   
      Los grupos de registros que no son compatibles con el hardware que se está depurando aparecen deshabilitados en el menú contextual y no se pueden seleccionar.  
   

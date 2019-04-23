@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106272"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Elija el directorio de instalación de un VSPackage
 Un VSPackage y sus archivos auxiliares deben estar en el sistema de archivos de un usuario. La ubicación depende de si VSPackage está administrado o no administrados, el esquema de versiones en paralelo y la elección del usuario.
@@ -47,15 +47,15 @@ Un VSPackage y sus archivos auxiliares deben estar en el sistema de archivos de 
 
  El [administrar VSPackages](../../extensibility/managing-vspackages.md) artículo indica que las entradas del registro controlan dónde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] realmente busca un VSPackage satélite DLL. Sin embargo, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] intenta cargar un archivo DLL satélite en un subdirectorio con nombre para un valor LCID, en el orden siguiente:
 
-1.  LCID de predeterminado (LCID de Visual Studio; por ejemplo, *\1033* para inglés)
+1. LCID de predeterminado (LCID de Visual Studio; por ejemplo, *\1033* para inglés)
 
-2.  LCID predeterminado con el subidioma de forma predeterminada.
+2. LCID predeterminado con el subidioma de forma predeterminada.
 
-3.  LCID predeterminado del sistema.
+3. LCID predeterminado del sistema.
 
-4.  Sistema LCID predeterminado con el subidioma de forma predeterminada.
+4. Sistema LCID predeterminado con el subidioma de forma predeterminada.
 
-5.  EE. UU. Inglés (*. \1033* o *. \0x409*).
+5. EE. UU. Inglés (*. \1033* o *. \0x409*).
 
 Si la DLL de VSPackage incluye los recursos y la **SatelliteDll\DllName** entrada del Registro apunta a ella, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] intenta cargarlos en el orden anterior.
 

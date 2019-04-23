@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d0ca68c9d95f0b2b511ece0ecafbd9bdcacf328d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104919"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Compatibilidad con fragmentos de código en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
 ## <a name="providing-support-for-code-snippets"></a>Que proporciona compatibilidad con fragmentos de código  
  Para habilitar la compatibilidad con fragmentos de código, debe proporcionar o instalar los fragmentos de código y debe proporcionar los medios para el usuario que se va a insertar los fragmentos de código. Hay tres pasos para habilitar la compatibilidad con fragmentos de código:  
   
-1.  Instalación de los archivos de fragmento de código.  
+1. Instalación de los archivos de fragmento de código.  
   
-2.  Habilitación de fragmentos de código para el servicio de lenguaje.  
+2. Habilitación de fragmentos de código para el servicio de lenguaje.  
   
-3.  Invocar el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto.  
+3. Invocar el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto.  
   
 ### <a name="installing-the-snippet-files"></a>Instalación de los archivos de fragmento de código  
  Todos los fragmentos de código para un idioma se almacenan como plantillas en archivos XML, normalmente una plantilla de fragmento de código por archivo. Para obtener más información sobre el esquema XML que se usa para las plantillas de fragmento de código, vea [referencia de esquemas de fragmentos de código](../../ide/code-snippets-schema-reference.md). Cada plantilla de fragmento de código se identifica con un identificador de idioma. Este lenguaje de identificador se especifica en el registro y se coloca en el `Language` atributo de la \<código > etiqueta en la plantilla.  
@@ -117,9 +117,9 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Insertar un fragmento de código mediante un comando de menú  
  Para usar un comando de menú para mostrar el Explorador de fragmento de código, agregue un comando de menú y, a continuación, llame a la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método en el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interfaz en respuesta a ese comando de menú.  
   
-1.  En el archivo .vsct, agregue un comando y un botón. Puede encontrar instrucciones para realizar en [Tutorial: Creación de un comando de menú mediante la plantilla de paquete de Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. En el archivo .vsct, agregue un comando y un botón. Puede encontrar instrucciones para realizar en [Tutorial: Creación de un comando de menú mediante la plantilla de paquete de Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
-2.  Derive una clase de la <xref:Microsoft.VisualStudio.Package.ViewFilter> clase e invalidar el <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> método para indicar la compatibilidad con el nuevo comando de menú. Este ejemplo siempre habilita el comando de menú.  
+2. Derive una clase de la <xref:Microsoft.VisualStudio.Package.ViewFilter> clase e invalidar el <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> método para indicar la compatibilidad con el nuevo comando de menú. Este ejemplo siempre habilita el comando de menú.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -155,7 +155,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
     }  
     ```  
   
-3.  Invalidar el <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> método en el <xref:Microsoft.VisualStudio.Package.ViewFilter> clase para obtener el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto y llamar a la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método en ese objeto.  
+3. Invalidar el <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> método en el <xref:Microsoft.VisualStudio.Package.ViewFilter> clase para obtener el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto y llamar a la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método en ese objeto.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -207,15 +207,15 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
   
      Los métodos siguientes en el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> clase se denominan por Visual Studio en el orden especificado durante el proceso de insertar el fragmento de código:  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
   
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
      Después de la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> se llama al método, se ha insertado el fragmento de código y la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto está en un modo de edición especial a usar para modificar un fragmento de código que acaba de insertar.  
   

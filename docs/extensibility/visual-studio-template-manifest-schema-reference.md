@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa5d123048b819c2b0b92951582bd9348cbdbab6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108859"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referencia de esquema del manifiesto de plantilla de Visual Studio
 Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*vstman*) los archivos que se generan para las plantillas de proyecto o elemento de Visual Studio. El esquema también describe la ubicación y otra información relevante acerca de la plantilla.
@@ -28,15 +28,15 @@ Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*
 
 ### <a name="attributes"></a>Atributos
 
--   **Versión**: Una cadena que representa la versión del manifiesto de plantilla. Obligatorio.
+- **Versión**: Una cadena que representa la versión del manifiesto de plantilla. Obligatorio.
 
--   **Locale**: Una cadena que representa la configuración regional o configuraciones regionales del manifiesto de plantilla. El valor de configuración regional se aplica a todas las plantillas. Debe usar un manifiesto independiente para cada configuración regional. Opcional.
+- **Locale**: Una cadena que representa la configuración regional o configuraciones regionales del manifiesto de plantilla. El valor de configuración regional se aplica a todas las plantillas. Debe usar un manifiesto independiente para cada configuración regional. Opcional.
 
 ### <a name="child-elements"></a>Elementos secundarios
 
--   **VSTemplateContainer** Optional.
+- **VSTemplateContainer** Optional.
 
--   **VSTemplateDir** opcional.
+- **VSTemplateDir** opcional.
 
 ### <a name="parent-element"></a>Elemento primario
  Ninguno.
@@ -49,9 +49,9 @@ Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*
 
 ### <a name="child-elements"></a>Elementos secundarios
 
--   **RelativePathOnDisk**:  La ruta de acceso relativa del archivo de plantilla en el disco. Esta ubicación también define la posición de la plantilla en el árbol de la plantilla se muestra en el **nuevo proyecto** o **nuevo elemento** cuadro de diálogo. Plantillas que se implementa como un directorio y los archivos individuales, esta ruta de acceso hace referencia al directorio que contiene los archivos de plantilla. Para implementar plantillas como un *.zip* archivo, esta ruta de acceso debe ser la ruta de acceso a la *.zip* archivo.
+- **RelativePathOnDisk**:  La ruta de acceso relativa del archivo de plantilla en el disco. Esta ubicación también define la posición de la plantilla en el árbol de la plantilla se muestra en el **nuevo proyecto** o **nuevo elemento** cuadro de diálogo. Plantillas que se implementa como un directorio y los archivos individuales, esta ruta de acceso hace referencia al directorio que contiene los archivos de plantilla. Para implementar plantillas como un *.zip* archivo, esta ruta de acceso debe ser la ruta de acceso a la *.zip* archivo.
 
--   **VSTemplateHeader: Un [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento que describe el encabezado.
+- **VSTemplateHeader: Un [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento que describe el encabezado.
 
 ### <a name="parent-element"></a>Elemento primario
  **VSTemplateManifest**
@@ -66,13 +66,13 @@ Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*
 
 ### <a name="child-elements"></a>Elementos secundarios
 
--   **RelativePath**: La ruta de acceso de la plantilla. Puede haber solo una entrada por cada ruta de acceso, por lo que tendrán prioridad en la primera de ellas para todos los manifiestos.
+- **RelativePath**: La ruta de acceso de la plantilla. Puede haber solo una entrada por cada ruta de acceso, por lo que tendrán prioridad en la primera de ellas para todos los manifiestos.
 
--   **LocalizedName**: Un **NameDescriptionIcon** elemento que especifica el nombre localizado. Opcional.
+- **LocalizedName**: Un **NameDescriptionIcon** elemento que especifica el nombre localizado. Opcional.
 
--   **SortOrder**: Una cadena que especifica el criterio de ordenación. Opcional.
+- **SortOrder**: Una cadena que especifica el criterio de ordenación. Opcional.
 
--   **ParentFolderOverrideName**: Nombre de la carpeta principal invalidado. Opcional. Este elemento tiene un **nombre** atributo, que es un valor de cadena que especifica el nombre.
+- **ParentFolderOverrideName**: Nombre de la carpeta principal invalidado. Opcional. Este elemento tiene un **nombre** atributo, que es un valor de cadena que especifica el nombre.
 
 ### <a name="parent-element"></a>Elemento primario
  **VSTemplateManifest**
@@ -82,9 +82,9 @@ Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*
 
 ### <a name="attributes"></a>Atributos
 
--   **Paquete**: Valor de cadena que especifica el paquete. Opcional.
+- **Paquete**: Valor de cadena que especifica el paquete. Opcional.
 
--   **ID**: Valor de cadena que especifica el identificador. Opcional.
+- **ID**: Valor de cadena que especifica el identificador. Opcional.
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguno.

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3de5a3f9e9c5b8f89a9c8917794247098ba12d06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665680"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111810"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Crear un mapa visual de la pila de llamadas durante la depuración (C#, Visual Basic, C++, JavaScript)
 
@@ -51,7 +51,7 @@ Este es un vistazo rápido a un mapa de código:
 
  ![Depuración con pilas de llamadas en mapas de código](../debugger/media/debuggermap_overview.png "DebuggerMap_Overview")
 
-##  <a name="MapStack"></a> Asignar la pila de llamadas
+## <a name="MapStack"></a> Asignar la pila de llamadas
 
 1. En un Visual Studio Enterprise C#, Visual Basic, C++, o JavaScript del proyecto, iniciar la depuración seleccionando **depurar** > **Iniciar depuración** o presionando **F5** .
 
@@ -89,11 +89,11 @@ Para controlar el diseño del mapa, seleccione el **diseño** menú en la barra 
 
 En el **diseño** menú, puede:
 
--   Cambie el diseño predeterminado.
--   Que deje de reorganizarse el mapa automáticamente, anulando la selección de **diseñar automáticamente al depurar**.
--   Reorganizar el mapa lo mínimo posible al agregar elementos, anulando la selección de **diseño Incremental**.
+- Cambie el diseño predeterminado.
+- Que deje de reorganizarse el mapa automáticamente, anulando la selección de **diseñar automáticamente al depurar**.
+- Reorganizar el mapa lo mínimo posible al agregar elementos, anulando la selección de **diseño Incremental**.
 
-##  <a name="MakeNotes"></a> Hacer notas sobre el código
+## <a name="MakeNotes"></a> Hacer notas sobre el código
 
 Puede agregar comentarios para realizar un seguimiento de lo que sucede en el código.
 
@@ -103,7 +103,7 @@ Para agregar una nueva línea en un comentario, presione **MAYÚS**+**ENTRAR**.
 
  ![Agregar comentario a la pila de llamadas en mapa de código](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
-##  <a name="UpdateMap"></a> Actualizar el mapa con la siguiente pila de llamadas
+## <a name="UpdateMap"></a> Actualizar el mapa con la siguiente pila de llamadas
 
 Cuando ejecute la aplicación en el siguiente punto de interrupción o el paso en una función, el mapa agrega automáticamente nuevas pilas de llamadas.
 
@@ -111,7 +111,7 @@ Cuando ejecute la aplicación en el siguiente punto de interrupción o el paso e
 
 Para detener la asignación de agregar automáticamente nuevas pilas de llamadas, seleccione ![pila de llamadas Mostrar en mapa de código automáticamente](../debugger/media/debuggermap_automaticupdateicon.gif "pila de llamadas Mostrar en mapa de código automáticamente") en la barra de herramientas del mapa de código. La asignación continúa resaltar las pilas de llamadas existentes. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl**+**MAYÚS**+**`**.
 
-##  <a name="AddRelatedCode"></a> Agregar código relacionado al mapa
+## <a name="AddRelatedCode"></a> Agregar código relacionado al mapa
 
 Ahora que tiene una asignación, en C# o Visual Basic, puede agregar elementos tales como campos, propiedades y otros métodos para realizar un seguimiento de lo que sucede en el código.
 
@@ -134,7 +134,7 @@ Continúe con la compilación del mapa para ver más código.
 
  ![Los métodos que usan un campo en el mapa de código de pila de llamadas](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")
 
-##  <a name="FindBugs"></a> Buscar errores usando el mapa
+## <a name="FindBugs"></a> Buscar errores usando el mapa
  La visualización del código puede ayudarle a encontrar errores con mayor rapidez. Por ejemplo, suponga que está investigando un error en una aplicación de dibujo. Cuando dibuja una línea e intenta deshacerla, no sucede nada hasta que dibuja otra línea.
 
  Por tanto, establece los puntos de interrupción en los métodos  `clear`, `undo` y `Repaint`, inicia la depuración y compila un mapa como este:

@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103880"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de C++ de las aplicaciones de la Tienda utilizando análisis de código estático de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > [!NOTE]
 > En Visual Studio Ultimate, Visual Studio Premium y Visual Studio Professional, puede usar la funcionalidad completa de las herramientas de análisis de código. Consulte [Analizar la calidad de la aplicación mediante herramientas de análisis del código](http://msdn.microsoft.com/library/dd264897.aspx) en la MSDN Library.
 
-##  <a name="BKMK_Run"></a> Ejecutar análisis de código
+## <a name="BKMK_Run"></a> Ejecutar análisis de código
  Para ejecutar un análisis de código en la solución de Visual Studio:
 
 - En el menú **Compilar**, elija **Ejecutar análisis de código en la solución**.
@@ -43,7 +43,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    ![Ventana de análisis de código](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Analizar y resolver advertencias del análisis de código
+## <a name="BKMK_Analyze"></a> Analizar y resolver advertencias del análisis de código
  Para analizar una advertencia concreta, elija el título en la ventana Análisis de código. La advertencia se expande para mostrar información detallada sobre el problema. Cuando sea posible, el análisis de código mostrará el número de línea y la lógica del análisis que ha provocado la advertencia.
 
  ![Advertencia de análisis de código expandido](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > [!TIP]
 >  Puedes repetir el análisis de código desde la ventana Análisis de código. Elija el botón **Analizar** y después elija el ámbito del análisis. Puedes repetir el análisis en toda la solución o en el proyecto seleccionado.
 
-##  <a name="BKMK_Suppress"></a> Suprimir las advertencias de análisis de código
+## <a name="BKMK_Suppress"></a> Suprimir las advertencias de análisis de código
  A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puedes suprimir advertencias individuales de modo que ya no aparezcan en la ventana Análisis de código.
 
  Para suprimir una advertencia:
@@ -70,12 +70,12 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    Al suprimir un mensaje se inserta un identificador `#pragma(warning:`*WarningId*`)` que suprime la advertencia en la línea de código.
 
-##  <a name="BKMK_Search"></a> Buscar y filtrar resultados del análisis de código
+## <a name="BKMK_Search"></a> Buscar y filtrar resultados del análisis de código
  Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.
 
  ![Buscar y filtrar la ventana de análisis de código](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> Advertencias de análisis de código de C++
+## <a name="Warnings"></a> Advertencias de análisis de código de C++
  El análisis de código produce las advertencias siguientes para código de C++:
 
 |                                      Regla                                      |                                                  Descripción                                                  |
