@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039869"
 ---
 # <a name="localizing-clickonce-applications"></a>Localizar aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ La localización es el proceso de adaptar una aplicación a una referencia cultu
   
  En este tema se describen tres maneras de implementar una aplicación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] para otras referencias culturales:  
   
--   Incluir todos los ensamblados satélite en una sola implementación.  
+- Incluir todos los ensamblados satélite en una sola implementación.  
   
--   Generar una implementación para cada referencia cultural que incluya un único ensamblado satélite.  
+- Generar una implementación para cada referencia cultural que incluya un único ensamblado satélite.  
   
--   Descargar ensamblados satélite a petición.  
+- Descargar ensamblados satélite a petición.  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>Incluir todos los ensamblados satélite en una implementación  
  En lugar de publicar varias implementaciones de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], puede publicar una única implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] que contenga todos los ensamblados satélite.  
@@ -77,9 +77,9 @@ La localización es el proceso de adaptar una aplicación a una referencia cultu
   
  Tiene tres opciones para probar las implementaciones localizadas antes de poner la aplicación a disposición de los clientes:  
   
--   Puede ejecutar su aplicación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] en las versiones localizadas apropiadas de Windows.  
+- Puede ejecutar su aplicación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] en las versiones localizadas apropiadas de Windows.  
   
--   Puede establecer la propiedad <xref:System.Threading.Thread.CurrentUICulture%2A> mediante programación en la aplicación. (Esta propiedad debe establecerse antes de llamar al método <xref:System.Windows.Forms.Application.Run%2A>).  
+- Puede establecer la propiedad <xref:System.Threading.Thread.CurrentUICulture%2A> mediante programación en la aplicación. (Esta propiedad debe establecerse antes de llamar al método <xref:System.Windows.Forms.Application.Run%2A>).  
   
 ## <a name="see-also"></a>Vea también  
  [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)   

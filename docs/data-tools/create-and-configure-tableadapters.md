@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4243bcedea1699ba02b3c3715cab7f61ba62281
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 026b670deb5beff42c927894ee9851ddb3ccc3ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950024"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042816"
 ---
 # <a name="create-and-configure-tableadapters"></a>Crear y configurar TableAdapters
 
@@ -80,16 +80,16 @@ El ejemplo siguiente muestra cómo llamar a una consulta adicional denominada `F
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Para iniciar al Asistente para configuración de consulta de TableAdapter con una consulta nueva
 
-1.  Abra su conjunto de datos en el **Diseñador de Dataset**.
+1. Abra su conjunto de datos en el **Diseñador de Dataset**.
 
-2.  Si va a crear una nueva consulta, arrastre un **consulta** objeto desde el **conjunto de datos** pestaña de la **cuadro de herramientas** hasta un <xref:System.Data.DataTable>, o seleccione **Add Query**desde el menú contextual del TableAdapter. También puede arrastrar un **consulta** objeto en un área vacía de la **Diseñador de Dataset**, que crea un TableAdapter sin asociado un <xref:System.Data.DataTable>. Estas consultas solo pueden devolver valores únicos de (escalares) o ejecutar UPDATE, INSERT o eliminar comandos en la base de datos.
+2. Si va a crear una nueva consulta, arrastre un **consulta** objeto desde el **conjunto de datos** pestaña de la **cuadro de herramientas** hasta un <xref:System.Data.DataTable>, o seleccione **Add Query**desde el menú contextual del TableAdapter. También puede arrastrar un **consulta** objeto en un área vacía de la **Diseñador de Dataset**, que crea un TableAdapter sin asociado un <xref:System.Data.DataTable>. Estas consultas solo pueden devolver valores únicos de (escalares) o ejecutar UPDATE, INSERT o eliminar comandos en la base de datos.
 
-3.  En el **elegir la conexión de datos** pantalla, seleccione o cree la conexión que va a usar la consulta.
+3. En el **elegir la conexión de datos** pantalla, seleccione o cree la conexión que va a usar la consulta.
 
     > [!NOTE]
     > Esta pantalla sólo aparece cuando el diseñador no puede determinar la conexión apropiada que use, o cuando no hay conexiones disponibles.
 
-4.  En el **elegir un tipo de comando** pantalla, seleccione uno de los siguientes métodos de captura de datos de la base de datos:
+4. En el **elegir un tipo de comando** pantalla, seleccione uno de los siguientes métodos de captura de datos de la base de datos:
 
     - **Usar instrucciones SQL** permite escribir una instrucción SQL para seleccionar los datos de la base de datos.
 

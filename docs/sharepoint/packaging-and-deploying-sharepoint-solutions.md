@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4c187865518c9556d63d9e5e632ec5c658fc3e0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867569"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040849"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empaquetar e implementar soluciones de SharePoint
   Normalmente, una solución de SharePoint se implementa en un servidor de SharePoint mediante un archivo de paquete (.wsp) de la solución. Puede usar Visual Studio para organizar los elementos de proyecto de SharePoint en características y crear un paquete para implementar las características de SharePoint.
 
  En este tema se proporciona la información siguiente:
 
--   [Creación de paquetes y características](#create-features-and-packages)
+- [Creación de paquetes y características](#create-features-and-packages)
 
--   [Características y compatibilidad con la herramienta de empaquetado](#feature-and-packaging-tool-support)
+- [Características y compatibilidad con la herramienta de empaquetado](#feature-and-packaging-tool-support)
 
--   [Implementar soluciones de SharePoint](#deploy-sharepoint-solutions)
+- [Implementar soluciones de SharePoint](#deploy-sharepoint-solutions)
 
--   [Implementar archivos en soluciones de SharePoint](#deploy-files-in-sharepoint-solutions)
+- [Implementar archivos en soluciones de SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Creación de paquetes y características
  Puede usar Visual Studio para agrupar elementos relacionados de SharePoint en un *característica*. Por ejemplo, una característica para una definición de lista de contactos puede incluir la instancia de lista y la definición de lista. Puede combinar estos dos elementos en una sola característica para la implementación. Para obtener más información acerca de las características, consulte [bloques de creación: Características](http://go.microsoft.com/fwlink/?LinkID=169183).
@@ -42,11 +42,11 @@ ms.locfileid: "57867569"
 ## <a name="feature-and-packaging-tool-support"></a>Características y compatibilidad con la herramienta de empaquetado
  Puede usar las herramientas de desarrollo de SharePoint en Visual Studio para organizar rápidamente los archivos de SharePoint en características y paquetes de soluciones para una implementación más sencilla. Puede usar las herramientas siguientes para configurar el paquete de características y soluciones.
 
--   Diseñador de características y el Diseñador de paquetes.
+- Diseñador de características y el Diseñador de paquetes.
 
--   Explorador de empaquetado, una ventana de herramientas.
+- Explorador de empaquetado, una ventana de herramientas.
 
--   Explorador de soluciones.
+- Explorador de soluciones.
 
 ### <a name="feature-designer-and-package-designer"></a>Diseñador de características y el Diseñador de paquetes
  Puede crear características, establecer ámbitos y marcar otras características como dependencias mediante el Diseñador de características. El diseñador también muestra el archivo XML final que se describe cada característica. Para obtener más información, consulte [las características de SharePoint crear](../sharepoint/creating-sharepoint-features.md).

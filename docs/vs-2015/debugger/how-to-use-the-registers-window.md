@@ -1,5 +1,5 @@
 ---
-title: Filtrar Utilice la ventana registros | Documentos de Microsoft
+title: Procedimiento Utilice la ventana registros | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,14 +27,14 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a0226ca619d766fdf2f06e811a608177235fc46
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f622440c5bd0f0d09967eff56479459a4a3bfbb0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042880"
 ---
-# <a name="how-to-use-the-registers-window"></a>Filtrar Utilice la ventana registros
+# <a name="how-to-use-the-registers-window"></a>Procedimiento Utilice la ventana registros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La ventana registros sólo está disponible si la depuración de nivel de dirección está habilitada en el **opciones** cuadro de diálogo, **depuración** nodo, **General** categoría.  
@@ -50,7 +50,7 @@ La ventana registros sólo está disponible si la depuración de nivel de direcc
   
 ### <a name="to-display-the-registers-window"></a>Para mostrar la ventana Registros  
   
--   En el **depurar** menú, elija **Windows**y, a continuación, elija **registra**.  
+- En el **depurar** menú, elija **Windows**y, a continuación, elija **registra**.  
   
      El depurador debe encontrarse en modo de interrupción.  
   

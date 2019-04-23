@@ -1,5 +1,5 @@
 ---
-title: Filtrar Registrar tipos de archivo del Editor | Documentos de Microsoft
+title: Procedimiento Registrar tipos de archivo del Editor | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,14 +10,14 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042046"
 ---
-# <a name="how-to-register-editor-file-types"></a>Filtrar Registrar tipos de archivo del Editor
+# <a name="how-to-register-editor-file-types"></a>Procedimiento Registrar tipos de archivo del Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es la manera más fácil para registrar los tipos de archivo del editor mediante el uso de los atributos de registro proporcionados como parte de la [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] clases de managed package framework (MPF). Si está implementando el paquete en el modo nativo [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], también puede escribir un script de registro que registra el editor y las extensiones asociadas.  
@@ -26,7 +26,7 @@ Es la manera más fácil para registrar los tipos de archivo del editor mediante
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>Para registrar los tipos de archivo del editor mediante las clases MPF  
   
-1.  Proporcione el <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> clase con los parámetros adecuados para el editor de la clase del paquete VSPackage.  
+1. Proporcione el <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> clase con los parámetros adecuados para el editor de la clase del paquete VSPackage.  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -43,7 +43,7 @@ Es la manera más fácil para registrar los tipos de archivo del editor mediante
   
      `NameResourceID` se define en el archivo Resources.h del proyecto BasicEditorUI e identifica el editor como "Mi Editor".  
   
-2.  Invalide el método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
+2. Invalide el método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
   
      En la implementación de la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método, llame a la <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> método y pase la instancia de su generador de editores como se muestra a continuación.  
   
@@ -61,7 +61,7 @@ Es la manera más fácil para registrar los tipos de archivo del editor mediante
   
      Este paso registra el generador de editores y las extensiones de archivo del editor.  
   
-3.  Anular el registro de los generadores de editores.  
+3. Anular el registro de los generadores de editores.  
   
      Generadores de editores se elimina automáticamente cuando se desecha el VSPackage. Si el objeto de generador del editor implementa la <xref:System.IDisposable> interfaz, su `Dispose` se llama al método después de que se ha registrado la fábrica con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
@@ -70,7 +70,7 @@ Es la manera más fácil para registrar los tipos de archivo del editor mediante
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>Para registrar los tipos de archivo del editor mediante un script de registro  
   
-1.  En el script del registro, definir el generador de editores y la cadena GUID del generador de editores como se muestra en la `GUID_BscEditorFactory` sección del siguiente script de registro. Asimismo, defina la extensión y la prioridad de la extensión del editor:  
+1. En el script del registro, definir el generador de editores y la cadena GUID del generador de editores como se muestra en la `GUID_BscEditorFactory` sección del siguiente script de registro. Asimismo, defina la extensión y la prioridad de la extensión del editor:  
   
     ```  
   
@@ -92,9 +92,9 @@ Es la manera más fácil para registrar los tipos de archivo del editor mediante
   
      La extensión de archivo del editor en este ejemplo se identifica como "RTF" y su prioridad es "50". Las cadenas del GUID se definen en el archivo Resource.h del proyecto de ejemplo BscEdit.  
   
-2.  Registre el VSPackage.  
+2. Registre el VSPackage.  
   
-3.  Registre el generador de editores.  
+3. Registre el generador de editores.  
   
      El generador de editores se registra en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implementación.  
   

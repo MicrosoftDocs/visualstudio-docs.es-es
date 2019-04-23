@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e040c45079c9e4b82337cbd1e4b5d7d8306e1a32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46eace1c566a2810c5914a49654f8393f425fdee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987954"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040875"
 ---
 # <a name="error-site-uses-ip-address"></a>Error: Uso de dirección IP por parte del sitio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Este error se produce cuando el depurador intenta asociarse automáticamente a u
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-1.  Utilice la asociación manual (en el menú Depurar, elija **Asociar al proceso**).  
+1. Utilice la asociación manual (en el menú Depurar, elija **Asociar al proceso**).  
   
      -O bien-  
   
-2.  Cambie el valor de configuración de **Identificación del sitio Web de IIS**.  
+2. Cambie el valor de configuración de **Identificación del sitio Web de IIS**.  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

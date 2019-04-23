@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039064"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Novedades de diseño en Visual Studio en Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Esta versión de Visual Studio incluye las siguientes mejoras para ayudarle a co
 
 - **Explorador de arquitectura**. El Explorador de arquitectura ya no se puede usar para crear diagramas. Pero se puede seguir usando el Explorador de soluciones.
 
-##  <a name="VersionSupport"></a> Compatibilidad con la edición de arquitectura y modelado de herramientas
+## <a name="VersionSupport"></a> Compatibilidad con la edición de arquitectura y modelado de herramientas
 
 Visual Studio 2015 está disponible en varias ediciones. No todas estas proporcionan compatibilidad con la arquitectura y las herramientas de modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.
 

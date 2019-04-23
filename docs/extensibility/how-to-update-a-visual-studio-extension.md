@@ -1,5 +1,5 @@
 ---
-title: Filtrar Actualizar una extensión de Visual Studio | Documentos de Microsoft
+title: Procedimiento Actualizar una extensión de Visual Studio | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5140fda673b85991d2a9247cff5bd53329944d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702465"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042124"
 ---
-# <a name="how-to-update-a-visual-studio-extension"></a>Filtrar Actualizar una extensión de Visual Studio
+# <a name="how-to-update-a-visual-studio-extension"></a>Procedimiento Actualizar una extensión de Visual Studio
 Puede actualizar una extensión de Visual Studio en el sistema mediante **extensiones y actualizaciones** para instalar la versión actualizada. Si crea una versión actualizada de una extensión, puede indicarla como actualizada al incrementar el número de versión en el manifiesto VSIX.
 
  Las actualizaciones se instalan al manifiesto de VSIX de la extensión de entrada tiene el mismo `ID` como lo instalado y una mayor `Version` número. Si el `Version` número es igual o inferior, no se puede instalar el paquete. Si el `ID` valores no coinciden, se reconoce el paquete que todavía no está instalado como una extensión independiente.
@@ -28,30 +28,30 @@ Puede actualizar una extensión de Visual Studio en el sistema mediante **extens
 
 ## <a name="to-update-an-extension-on-your-system"></a>Para actualizar una extensión en el sistema
 
-1.  En el menú **Herramientas** , haga clic en **Extensiones y actualizaciones**
+1. En el menú **Herramientas** , haga clic en **Extensiones y actualizaciones**
 
-2.  En el panel izquierdo, haga clic en **actualizaciones**.
+2. En el panel izquierdo, haga clic en **actualizaciones**.
 
-3.  En el panel central, haga clic en la actualización que desea instalar.
+3. En el panel central, haga clic en la actualización que desea instalar.
 
      El número de versión de la extensión actualizada se muestra en el panel derecho, junto con otra información.
 
-4.  En la parte inferior del panel derecho, haga clic en **actualización**.
+4. En la parte inferior del panel derecho, haga clic en **actualización**.
 
 ## <a name="to-publish-an-update-of-an-extension"></a>Para publicar una actualización de una extensión
 
-1.  En Visual Studio, abra la solución para la extensión que desea actualizar. Realice los cambios.
+1. En Visual Studio, abra la solución para la extensión que desea actualizar. Realice los cambios.
 
     > [!IMPORTANT]
     >  Sin firmar que todas las extensiones de usuario no se actualizan automáticamente. Siempre debería firmar sus extensiones.
 
-2.  En **el Explorador de soluciones**, abra *source.extension.manifest*.
+2. En **el Explorador de soluciones**, abra *source.extension.manifest*.
 
-3.  En el Diseñador de manifiestos, aumente el valor del número de la **versión** campo.
+3. En el Diseñador de manifiestos, aumente el valor del número de la **versión** campo.
 
-4.  Guarde la solución y genérelo.
+4. Guarde la solución y genérelo.
 
-5.  Cargar el nuevo *.vsix* archivo (en el * \bin\Debug\* carpeta del proyecto) para el [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) sitio Web.
+5. Cargar el nuevo *.vsix* archivo (en el * \bin\Debug\* carpeta del proyecto) para el [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) sitio Web.
 
      Cuando se abre un usuario que tenga una versión anterior de la extensión **extensiones y actualizaciones**, la nueva versión aparecerá en la **actualizaciones** enumerar, siempre que se establece la herramienta para buscar actualizaciones automáticamente.
 

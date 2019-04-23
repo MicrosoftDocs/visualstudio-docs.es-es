@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57c5516c70819f8f86d56e93f78ec5d877c72a78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 838e057fd0063df6a1c592dfefee759b56b9f89b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041200"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Información de parámetros en un servicio de lenguaje heredado
 Información de parámetros IntelliSense es el carácter (normalmente un paréntesis de apertura) para la lista de parámetros de método de inicio de una información sobre herramientas que muestra la firma de un método cuando el usuario escribe la lista de parámetros. Cuando se escribe cada parámetro y se escribe el separador de parámetro (normalmente una coma), la información sobre herramientas se actualiza para mostrar el siguiente parámetro en negrita.
@@ -111,10 +111,10 @@ testfunc("a string",3);
 
  Los pasos que toma el analizador se describen a continuación:
 
-1.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> con el texto "testfunc".
+1. Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> con el texto "testfunc".
 
-2.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.
+2. Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.
 
-3.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.
+3. Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.
 
-4.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
+4. Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.

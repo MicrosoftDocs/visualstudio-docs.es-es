@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 633ab9d446c65b9408c0e069695d22889e7943d1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d8808804c5b99918e68169e4ab5510cdb5c634a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723076"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670503"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Patrones compuestos para Visual Studio
 Patrones compuestos combinan elementos de interacción y diseño de configuraciones distintas. Algunos de los patrones compuestos más importantes en Visual Studio con respecto a la coherencia incluyen:
@@ -393,7 +393,6 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apariencia de la selección de objeto gráfico
  Los controladores de selección son cuadrados dibujadas en un patrón rectangular alrededor del rectángulo del objeto. El gráfico siguiente muestra ejemplos de los diferentes Estados que puede tener un objeto gráfico con el identificador, ajuste de tamaño y apariencia de edición en contexto. El tamaño de los identificadores debe asociarse al borde de ventana y el uso de las métricas de edge el **GetSystemMetrics** API.
 
-
 | Estado | Apariencia | Detalles de Visual |
 |-------------------------|---------------| - |
 | **No seleccionado** | Default | ![Estado del botón predeterminado](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState") |
@@ -426,7 +425,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 |Entrar (tecla)|Confirma la operación de cambio de nombre|
 |Tecla ESC|Cancela la operación de cambio de nombre|
 |Hacer clic fuera de la región de edición en contexto|Confirma la operación de cambio de nombre|
-|Deshacer|Proporcionar la fácil deshacer para cancelar la operación de cambio de nombre|
+|Undo|Proporcionar la fácil deshacer para cancelar la operación de cambio de nombre|
 
 #### <a name="selection-within-lists-and-grid-controls"></a>Selección de listas y los controles de cuadrícula
  El concepto clave en la selección de la lista es que está basado en la fila, lo que significa que cuando se realiza una selección toda la fila está seleccionada como una unidad. Por el contrario, las cuadrículas pueden permitir que determinadas celdas que se seleccionen sin que afecte a todos los demás aspectos de la fila. Las cuadrículas también podrían contener una jerarquía de filas anidadas (como en un control TreeGrid) que permiten todas ramas de la jerarquía se seleccionen y se anula la selección mediante la interacción con las filas primarias. Selección de listas se muestra mediante un color de resalte simple en toda la fila de datos. El foco se muestra un borde de puntos solo píxel alrededor de la fila actual de editable o celda (fila si todas las celdas son de solo lectura).
@@ -435,7 +434,6 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 >  **Enfoque** y **selección** son conceptos diferentes. *Enfoque* es una indicación de que la interfaz de usuario del elemento que se destina para recibir entrada dirigido no explícitamente a otro objeto, mientras que *selección* se refiere al estado de inclusión de un objeto en un conjunto de objetos de los cuales posteriores las operaciones pueden tener lugar.
 
  Las selecciones en las listas pueden ser contiguas, separado, o la región. Cuando selecciones múltiples se permiten, contiguos y siempre debe ser compatible selección separado al soporte técnico para las selecciones de región (cuadro) son opcional. Las selecciones de región se inician y arrastrándola en el espacio en blanco del cuerpo de la lista.
-
 
 | Object | Selección |
 |--------|------------|

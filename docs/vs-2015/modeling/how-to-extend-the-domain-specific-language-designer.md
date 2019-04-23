@@ -1,5 +1,5 @@
 ---
-title: Filtrar Ampliar el Diseñador de lenguaje específico de dominio | Documentos de Microsoft
+title: Procedimiento Ampliar el Diseñador de lenguaje específico de dominio | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,14 +9,14 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988811"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038911"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>Filtrar Ampliar el Diseñador de lenguaje específico de dominio
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedimiento Ampliar el Diseñador de lenguaje específico de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede crear extensiones para el diseñador que se usa para editar definiciones de DSL. Tipos de extensión que puede realizar incluyen la adición de comandos de menú, agregar controladores de arrastran y haga doble clic en los gestos y reglas que se desencadenan cuando cambian de determinados tipos de valores o relaciones. Las extensiones pueden empaquetar como una extensión de integración de Visual Studio (VSIX) y distribuirse a otros usuarios.  
@@ -28,25 +28,25 @@ Puede crear extensiones para el diseñador que se usa para editar definiciones d
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Para crear una solución de extensión del Diseñador de DSL  
   
-1.  Cree un nuevo proyecto mediante la plantilla de proyecto de biblioteca de clases. En el **nuevo proyecto** cuadro de diálogo, haga clic en **Visual C#** y en la ventana central, después, haga clic en **biblioteca de clases**.  
+1. Cree un nuevo proyecto mediante la plantilla de proyecto de biblioteca de clases. En el **nuevo proyecto** cuadro de diálogo, haga clic en **Visual C#** y en la ventana central, después, haga clic en **biblioteca de clases**.  
   
      Este proyecto contendrá el código de las extensiones.  
   
-2.  Cree un nuevo proyecto mediante la plantilla de proyecto VSIX. En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#**, haga clic en **extensibilidad**y, a continuación, en la ventana central, seleccione **proyecto VSIX**.  
+2. Cree un nuevo proyecto mediante la plantilla de proyecto VSIX. En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#**, haga clic en **extensibilidad**y, a continuación, en la ventana central, seleccione **proyecto VSIX**.  
   
      Seleccione **agregar a solución**.  
   
      Source.Extension.vsixmanifest se abre en el editor de manifiestos VSIX.  
   
-3.  Sobre el campo de contenido, haga clic en **agregar contenido**.  
+3. Sobre el campo de contenido, haga clic en **agregar contenido**.  
   
-4.  En el **agregar contenido** cuadro de diálogo, establezca **seleccione un tipo de contenido** a **componente MEF**y establezca **proyecto** a su proyecto de biblioteca de clases.  
+4. En el **agregar contenido** cuadro de diálogo, establezca **seleccione un tipo de contenido** a **componente MEF**y establezca **proyecto** a su proyecto de biblioteca de clases.  
   
-5.  Haga clic en **seleccionar ediciones** y asegúrese de que **Visual Studio Enterprise** está activada.  
+5. Haga clic en **seleccionar ediciones** y asegúrese de que **Visual Studio Enterprise** está activada.  
   
-6.  Asegúrese de que el proyecto VSIX es el proyecto de inicio de la solución.  
+6. Asegúrese de que el proyecto VSIX es el proyecto de inicio de la solución.  
   
-7.  En el proyecto de biblioteca de clases, agregue referencias a los ensamblados siguientes:  
+7. En el proyecto de biblioteca de clases, agregue referencias a los ensamblados siguientes:  
   
      Microsoft.VisualStudio.CoreUtility  
   

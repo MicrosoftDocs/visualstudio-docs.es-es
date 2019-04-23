@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 57d89fec51cf73d310e3ad2e18b3d4270bd8ff74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041986"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Procedimiento Inclusión de requisitos previos con una aplicación ClickOnce
 Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], primero debe descargar los paquetes del instalador para esos requisitos previos en el equipo de desarrollo. Si publica una aplicación y elige **Descargar los requisitos previos desde la misma ubicación que mi aplicación**, se producirá un error si los paquetes del instalador no están en la carpeta **Packages**.
@@ -21,7 +21,7 @@ Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptec
 > [!NOTE]
 >  Para agregar un paquete de instalador para .NET Framework, vea [Guía de implementación de .NET Framework para desarrolladores](/dotnet/framework/deployment/deployment-guide-for-developers).
 
-##  <a name="Package"></a> Para agregar un paquete del instalador mediante Package.xml
+## <a name="Package"></a> Para agregar un paquete del instalador mediante Package.xml
 
 1. En el Explorador de archivos, abra la carpeta **Packages**.
 

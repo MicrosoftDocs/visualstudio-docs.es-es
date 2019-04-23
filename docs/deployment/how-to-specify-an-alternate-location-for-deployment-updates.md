@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: especificar una ubicación alternativa para las actualizaciones de implementación | Microsoft Docs'
+title: Procedimiento Especificar una ubicación alternativa para las actualizaciones de implementación | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,32 +15,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d44750783ecc7253480750fce10b65e07b2f5fd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 14a1c072cb8415e8e0a20615c0c963e683f48b56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041359"
 ---
-# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Cómo: Especificar una ubicación alternativa para las actualizaciones de la implementación
+# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procedimiento Especificación de una ubicación alternativa para las actualizaciones de implementación
 Puede instalar su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación inicialmente desde un CD o un recurso compartido de archivos, pero la aplicación debe buscar actualizaciones periódicas en la Web. Puede especificar una ubicación alternativa para las actualizaciones en el manifiesto de implementación para que la aplicación pueda actualizarse desde el Web tras la instalación inicial.
 
 > [!NOTE]
->  La aplicación debe configurarse para instalar localmente para usar esta característica. Para obtener más información, consulte [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Además, si instala un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación desde la red, establecer una ubicación alternativa, se produce la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usar esa ubicación para la instalación inicial y todas las actualizaciones subsiguientes. Si instala la aplicación localmente (por ejemplo, desde un CD), la instalación inicial se realiza mediante el medio original y todas las actualizaciones subsiguientes usará la ubicación alternativa.
+>  La aplicación debe configurarse para instalar localmente para usar esta característica. Para obtener más información, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Además, si instala un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación desde la red, establecer una ubicación alternativa, se produce la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usar esa ubicación para la instalación inicial y todas las actualizaciones subsiguientes. Si instala la aplicación localmente (por ejemplo, desde un CD), la instalación inicial se realiza mediante el medio original y todas las actualizaciones subsiguientes usará la ubicación alternativa.
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Especificar una ubicación alternativa para las actualizaciones mediante MageUI.exe (Utilidad basada en formularios de Windows)
 
-1.  Abra un símbolo del sistema de .NET Framework y escriba:
+1. Abra un símbolo del sistema de .NET Framework y escriba:
 
      **mageui.exe**
 
-2.  En el **archivo** menú, elija **abrir** para abrir el manifiesto de implementación de la aplicación.
+2. En el **archivo** menú, elija **abrir** para abrir el manifiesto de implementación de la aplicación.
 
-3.  Seleccione la pestaña **Opciones de implementación**.
+3. Seleccione la pestaña **Opciones de implementación**.
 
-4.  En el cuadro de texto denominado **iniciar ubicación**, escriba la dirección URL del directorio que contendrá el manifiesto de implementación de actualizaciones de la aplicación.
+4. En el cuadro de texto denominado **iniciar ubicación**, escriba la dirección URL del directorio que contendrá el manifiesto de implementación de actualizaciones de la aplicación.
 
-5.  Guarde el manifiesto de implementación.
+5. Guarde el manifiesto de implementación.
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Especificar una ubicación alternativa para las actualizaciones mediante Mage.exe
 
@@ -53,7 +53,7 @@ Puede instalar su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 3. Guarde el archivo.
 
    > [!NOTE]
-   >  Ahora debe volver a firmar el archivo con *Mage.exe*. Para obtener más información, consulte [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+   >  Ahora debe volver a firmar el archivo con *Mage.exe*. Para obtener más información, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="net-framework-security"></a>Seguridad de .NET Framework
  Si instala la aplicación desde un medio sin conexión, como un CD, y el equipo está conectado, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] comprueba primero la dirección URL especificada por el `<deploymentProvider>` etiqueta en el manifiesto de implementación para determinar si la ubicación de actualización contiene una versión más reciente de la aplicación. Si es así, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instala la aplicación directamente desde ahí, en lugar de desde el directorio de instalación inicial, y common language runtime (CLR) determina la confianza de la aplicación con el nivel `<deploymentProvider>`. Si el equipo está sin conexión, o `<deploymentProvider>` es inaccesible, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalaciones desde el CD y CLR concede confianza según el punto de instalación; para realizar una instalación de CD, esto significa que la aplicación reciba plena confianza. Todas las actualizaciones subsiguientes heredarán ese nivel de confianza.

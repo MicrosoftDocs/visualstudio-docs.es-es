@@ -11,12 +11,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002436"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039147"
 ---
 # <a name="deploying-custom-start-pages"></a>Implementación de páginas de inicio personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Puede implementar páginas principales personalizadas mediante la implementació
   
 ##### <a name="to-create-an-all-users-deployment"></a>Para crear una implementación de todos los usuarios  
   
-1.  Abra el archivo extension.vsixmanifest en la vista código.  
+1. Abra el archivo extension.vsixmanifest en la vista código.  
   
-2.  En el `Identifier` elemento del manifiesto de vsix, agregue un `AllUsers` elemento que tiene un valor de `true`.  
+2. En el `Identifier` elemento del manifiesto de vsix, agregue un `AllUsers` elemento que tiene un valor de `true`.  
   
     ```  
     <AllUsers>true</AllUsers>  
@@ -67,9 +67,9 @@ Puede implementar páginas principales personalizadas mediante la implementació
   
      Esto hace que el instalador de vsix solicitar permisos de administrador y, a continuación, instalar los archivos en \common7\ide\extensions\.  
   
-3.  Abra el archivo .pkgdef.  
+3. Abra el archivo .pkgdef.  
   
-4.  Modificar el .pkgdef para establecer la página de inicio predeterminado en HKLM agregando lo siguiente, donde *MyStartPage.xaml* es el nombre del archivo .xaml que contiene la página de inicio.  
+4. Modificar el .pkgdef para establecer la página de inicio predeterminado en HKLM agregando lo siguiente, donde *MyStartPage.xaml* es el nombre del archivo .xaml que contiene la página de inicio.  
   
      [$RootKey$\StartPage\Default]  
   
@@ -84,11 +84,11 @@ Puede implementar páginas principales personalizadas mediante la implementació
   
 #### <a name="to-manually-install-a-custom-start-page"></a>Para instalar manualmente una página de inicio personalizada  
   
-1.  Copie el archivo .xaml que contiene el marcado de página de inicio, junto con todos los archivos auxiliares que no sean ensamblados y péguelos en la carpeta del usuario \StartPages\.  
+1. Copie el archivo .xaml que contiene el marcado de página de inicio, junto con todos los archivos auxiliares que no sean ensamblados y péguelos en la carpeta del usuario \StartPages\.  
   
-2.  Si la página de inicio requiere ensamblados, cópielos y péguelos en... \\ *Carpeta de instalación de visual Studio*\Common7\IDE\PrivateAssemblies\\.  
+2. Si la página de inicio requiere ensamblados, cópielos y péguelos en... \\ *Carpeta de instalación de visual Studio*\Common7\IDE\PrivateAssemblies\\.  
   
-3.  En el **Personalizar página principal** lista el **inicio** opciones, seleccione la nueva página de inicio. Para obtener más información, consulte [Personalizar la página de inicio](../ide/customizing-the-start-page-for-visual-studio.md).  
+3. En el **Personalizar página principal** lista el **inicio** opciones, seleccione la nueva página de inicio. Para obtener más información, consulte [Personalizar la página de inicio](../ide/customizing-the-start-page-for-visual-studio.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar la página principal](../ide/customizing-the-start-page-for-visual-studio.md)   

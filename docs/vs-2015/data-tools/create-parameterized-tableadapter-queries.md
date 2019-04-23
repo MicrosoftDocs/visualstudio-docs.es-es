@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997242"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039293"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Crear consultas parametrizadas de TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ Crear consultas parametrizadas de TableAdapter en el Diseñador de Dataset. Tamb
   
 ### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>Crear una consulta parametrizada durante el diseño de un formulario enlazado a datos  
   
-1.  Seleccione en el formulario un control que ya esté enlazado a un conjunto de datos. Para obtener más información, consulte [controla el enlace Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+1. Seleccione en el formulario un control que ya esté enlazado a un conjunto de datos. Para obtener más información, consulte [controla el enlace Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
   
-2.  En el **datos** menú, seleccione**Agregar consulta**.  
+2. En el **datos** menú, seleccione**Agregar consulta**.  
   
-3.  Complete el cuadro de diálogo **Generador de criterios de búsqueda** y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL.  
+3. Complete el cuadro de diálogo **Generador de criterios de búsqueda** y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL.  
   
 ### <a name="add-a-query-to-an-existing-data-bound-form"></a>Agregar una consulta a un formulario enlazado a datos existente  
   
@@ -91,11 +91,11 @@ Si se tratara de una consulta en un TableAdapter, podría consultar todos los pe
   
 ### <a name="enable-a-query-to-accept-null-values"></a>Habilitar una consulta que acepte valores null  
   
-1.  En el **Diseñador de Dataset**, seleccione la consulta de TableAdapter que debe aceptar los valores de parámetro null.  
+1. En el **Diseñador de Dataset**, seleccione la consulta de TableAdapter que debe aceptar los valores de parámetro null.  
   
-2.  En el **propiedades** ventana, seleccione **parámetros**. A continuación, presione el botón de puntos suspensivos (**...** ) para abrir el **Editor de la colección de parámetros**.  
+2. En el **propiedades** ventana, seleccione **parámetros**. A continuación, presione el botón de puntos suspensivos (**...** ) para abrir el **Editor de la colección de parámetros**.  
   
-3.  Seleccione el parámetro que permite valores null y establezca el **AllowDbNull** propiedad `true`.  
+3. Seleccione el parámetro que permite valores null y establezca el **AllowDbNull** propiedad `true`.  
   
 ## <a name="see-also"></a>Vea también
 

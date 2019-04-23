@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599485"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040151"
 ---
 # <a name="ribbon-overview"></a>Información general de la cinta de opciones
   La cinta de opciones es una manera de organizar comandos relacionados para que sean fáciles de encontrar. Los comandos aparecen como controles en la cinta de opciones. Los controles se organizan en *grupos* a lo largo de una franja horizontal en el borde superior de una ventana de aplicación. Los grupos relacionados se organizan en pestañas.
@@ -93,12 +93,12 @@ ms.locfileid: "56599485"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Agregar varios elementos de la cinta de opciones a un proyecto
  Puede agregar más de un elemento de cinta a un mismo proyecto. Esto resulta útil si desea realizar alguna de las dos tareas indicadas a continuación:
 
--   Crear cintas de opciones para Outlook *inspectores*. Para obtener más información, consulte [personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Crear cintas de opciones para Outlook *inspectores*. Para obtener más información, consulte [personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     >  Un Inspector es una ventana que se abre cuando los usuarios realizan ciertas tareas, como crear un mensaje de correo electrónico.
 
--   Seleccione qué cinta se mostrará en tiempo de ejecución.
+- Seleccione qué cinta se mostrará en tiempo de ejecución.
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>Seleccione qué cintas de opciones para mostrar en tiempo de ejecución
  Dado que un proyecto puede contener más de una cinta, puede seleccionar qué cinta se mostrará en tiempo de ejecución.
