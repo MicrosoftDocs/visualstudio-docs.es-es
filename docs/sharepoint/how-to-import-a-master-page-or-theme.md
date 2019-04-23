@@ -1,5 +1,5 @@
 ---
-title: Filtrar Importar un tema o página maestra | Documentos de Microsoft
+title: Procedimiento Importar un tema o página maestra | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,39 +13,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415a1021514a4d8b962e4a65a22b691edc66d9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635155"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081911"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Procedimiento Importar un tema o página maestra
   Puede dar las páginas en el sitio de SharePoint una apariencia coherente mediante la creación y uso de temas y las páginas maestras. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no proporciona plantillas para estos elementos, pero puede crearlas en SharePoint Designer y, a continuación, importarlos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [bloques de creación: Interfaz de usuario y las páginas](http://go.microsoft.com/fwlink/?LinkID=182095) en el sitio Web de Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Para importar un tema o página maestra
 
-1.  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree o abra un proyecto de SharePoint.
+1. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree o abra un proyecto de SharePoint.
 
      Para obtener información sobre cómo crear un proyecto de SharePoint, vea [SharePoint plantillas de elemento de proyecto y](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
+2. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
-3.  En el **Agregar nuevo elemento** cuadro de diálogo, expanda el **SharePoint** nodo y, a continuación, elija el **2010** nodo.
+3. En el **Agregar nuevo elemento** cuadro de diálogo, expanda el **SharePoint** nodo y, a continuación, elija el **2010** nodo.
 
-4.  En la lista de plantillas de SharePoint, elija el **módulo** plantilla y, a continuación, especifique un nombre para el módulo.
+4. En la lista de plantillas de SharePoint, elija el **módulo** plantilla y, a continuación, especifique un nombre para el módulo.
 
      Un módulo contiene archivos (por ejemplo, página maestra o archivos de tema) para su implementación en una ubicación que especifique en SharePoint.
 
-5.  En el módulo, elimine el archivo de forma predeterminada, que se denomina *Sample.txt*.
+5. En el módulo, elimine el archivo de forma predeterminada, que se denomina *Sample.txt*.
 
-6.  Elija el nodo de módulo.
+6. Elija el nodo de módulo.
 
-7.  En la barra de menús, elija **proyecto** > **Agregar elemento existente**y, a continuación, elija el archivo de tema o página maestra.
+7. En la barra de menús, elija **proyecto** > **Agregar elemento existente**y, a continuación, elija el archivo de tema o página maestra.
 
      Archivos de página maestra tienen la extensión. master, y los archivos de tema tienen la extensión .thmx.
 
-8.  Si ha agregado una página maestra, cambiar su **Deployment Conflict Resolution** si se establece en **automática** en las propiedades del módulo.
+8. Si ha agregado una página maestra, cambiar su **Deployment Conflict Resolution** si se establece en **automática** en las propiedades del módulo.
 
     > [!NOTE]
     >  Pueden producirse errores si el nombre de la página maestra es el mismo que el nombre de una página principal existente que está marcado como página maestra predeterminada o página maestra personalizada. Para obtener información sobre cómo resolver este problema, consulte [Tutorial: Importar una página maestra personalizada y la página del sitio con una imagen](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).

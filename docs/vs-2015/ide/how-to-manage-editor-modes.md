@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Administrar los modos del Editor | Microsoft Docs
+title: Procedimiento Administrar los modos del Editor | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -25,14 +25,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fde858615894967dea83239388925851f342c3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 193afeddd553dfda54de568c92b4697e3f1a2a93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095547"
 ---
-# <a name="how-to-manage-editor-modes"></a>Cómo: Administrar los modos del editor
+# <a name="how-to-manage-editor-modes"></a>Procedimiento Administrar los modos del Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede mostrar el editor de Visual Studio Code en varios modos de visualización.  
@@ -45,27 +45,27 @@ Puede mostrar el editor de Visual Studio Code en varios modos de visualización.
   
 #### <a name="to-enable-full-screen-mode"></a>Para habilitar el modo de pantalla completa  
   
--   Presione ALT+MAYÚS+ENTRAR para entrar o salir del modo **Pantalla completa**.  
+- Presione ALT+MAYÚS+ENTRAR para entrar o salir del modo **Pantalla completa**.  
   
      O bien  
   
--   Ejecute el comando `View.Fullscreen` en la ventana **Comandos**.  
+- Ejecute el comando `View.Fullscreen` en la ventana **Comandos**.  
   
 ## <a name="enabling-virtual-space-mode"></a>Habilitar el modo de espacio virtual  
  En el modo de **espacio virtual**, los espacios se insertan al final de cada línea de código. Seleccione esta opción para colocar los comentarios en una posición coherente al lado del código.  
   
 #### <a name="to-enable-virtual-space-mode"></a>Para habilitar el modo de espacio virtual  
   
-1.  Seleccione **Opciones** en el menú **Herramientas**.  
+1. Seleccione **Opciones** en el menú **Herramientas**.  
   
-2.  Expanda la carpeta **Editor de texto** y pulse **Todos los lenguajes** para establecer esta opción globalmente, o pulse una carpeta de lenguaje específica. (Por ejemplo, para activar los números de línea solo en Visual Basic, pulse las opciones Básico, Editor de texto).  
+2. Expanda la carpeta **Editor de texto** y pulse **Todos los lenguajes** para establecer esta opción globalmente, o pulse una carpeta de lenguaje específica. (Por ejemplo, para activar los números de línea solo en Visual Basic, pulse las opciones Básico, Editor de texto).  
   
-3.  Seleccione las opciones **General** y en **Configuración**, seleccione **Habilitar espacio virtual**.  
+3. Seleccione las opciones **General** y en **Configuración**, seleccione **Habilitar espacio virtual**.  
   
     > [!NOTE]
     >  **Espacio virtual** está habilitado en el modo **Selección de columnas**. Cuando el modo **Espacio virtual** no está habilitado, el punto de inserción se mueve desde el final de una línea directamente al primer carácter de la siguiente.  
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar el editor](../ide/customizing-the-editor.md)   
- [Cómo: Organizar y acoplar ventanas](../misc/how-to-arrange-and-dock-windows.md)   
+ [Cómo: Organizar y acoplar Windows](../misc/how-to-arrange-and-dock-windows.md)   
  [Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

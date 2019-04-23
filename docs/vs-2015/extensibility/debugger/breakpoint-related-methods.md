@@ -11,23 +11,23 @@ ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 06f7904a1ae38ce9a2c8103208490bc67e8dc7b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47ba1529521fdce042512a38d32ad2ca2eb3cb82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085564"
 ---
 # <a name="breakpoint-related-methods"></a>Métodos relacionados con el punto de interrupción
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Un motor de depuración (DE) debe admitir la configuración de puntos de interrupción. Depuración de Visual Studio admite los siguientes tipos de puntos de interrupción:  
   
--   Enlazado  
+- Enlazado  
   
      Solicita a través de la interfaz de usuario y enlazar correctamente a una ubicación del código especificado  
   
--   Pendiente  
+- Pendiente  
   
      Solicita a través de la interfaz de usuario pero no está enlazado a actual aún instrucciones  
   

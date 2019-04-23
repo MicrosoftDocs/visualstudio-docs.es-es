@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098589"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,11 +120,11 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Restablecer el nombre y cambiar entre los diseños de ventana
  Puede devolver el IDE al diseño de ventana original de la colección de valores de configuración mediante el comando **Restablecer diseño de ventana** . Al ejecutar este comando, se producen las siguientes acciones:
 
--   Todas las ventanas se mueven a sus posiciones predeterminadas.
+- Todas las ventanas se mueven a sus posiciones predeterminadas.
 
--   Las ventanas que estén cerradas en el diseño de ventana predeterminado se cierran.
+- Las ventanas que estén cerradas en el diseño de ventana predeterminado se cierran.
 
--   Las ventanas que estén abiertas en el diseño de ventana predeterminado se abren.
+- Las ventanas que estén abiertas en el diseño de ventana predeterminado se abren.
 
 ### <a name="create-and-save-custom-layouts"></a>Crear y guardar los diseños personalizados
  Visual Studio 2015 le permite guardar hasta 10 diseños de ventana personalizados y cambiar rápidamente de uno a otro. En los siguientes pasos le enseñamos a crear, guardar, invocar y administrar diseños personalizados que aprovechan varios monitores con ventanas de herramientas acopladas y flotantes.
@@ -133,29 +133,29 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Crear un proyecto de UI y personalizar el diseño
 
-1.  En el cuadro de diálogo **Proyecto nuevo** , cree una aplicación de escritorio WPF de Visual C# y póngale el nombre que quiera. Supongamos que este es el proyecto con el que trabajaremos en la interfaz de usuario. Queremos maximizar el espacio para la ventana del diseñador y quitar de en medio otras ventanas de herramientas.
+1. En el cuadro de diálogo **Proyecto nuevo** , cree una aplicación de escritorio WPF de Visual C# y póngale el nombre que quiera. Supongamos que este es el proyecto con el que trabajaremos en la interfaz de usuario. Queremos maximizar el espacio para la ventana del diseñador y quitar de en medio otras ventanas de herramientas.
 
-2.  Si tiene varios monitores, coloque la ventana **Explorador de soluciones** y la ventana **Propiedades** en el segundo monitor. En un solo sistema de monitor, cierre todas las ventanas menos el diseñador.
+2. Si tiene varios monitores, coloque la ventana **Explorador de soluciones** y la ventana **Propiedades** en el segundo monitor. En un solo sistema de monitor, cierre todas las ventanas menos el diseñador.
 
-3.  Presione **Ctrl + Alt + X** para mostrar el cuadro de herramientas. Si la ventana se acopla, arrástrela para que flote hasta llegar al lugar donde la quiere colocar en cualquiera de los dos monitores.
+3. Presione **Ctrl + Alt + X** para mostrar el cuadro de herramientas. Si la ventana se acopla, arrástrela para que flote hasta llegar al lugar donde la quiere colocar en cualquiera de los dos monitores.
 
-4.  Presione F5 para poner Visual Studio en el modo de depuración. Ajuste la posición de las ventanas Automático, Pila de llamadas y Salida según sus preferencias. El diseño que va a crear se aplicará al modo de edición y al de depuración.
+4. Presione F5 para poner Visual Studio en el modo de depuración. Ajuste la posición de las ventanas Automático, Pila de llamadas y Salida según sus preferencias. El diseño que va a crear se aplicará al modo de edición y al de depuración.
 
-5.  Cuando sus diseños en el modo de depuración y el modo de edición estén a su gusto, seleccione **Ventana > Guardar diseño de ventana** en el menú principal. Llame a este diseño "Diseñador".
+5. Cuando sus diseños en el modo de depuración y el modo de edición estén a su gusto, seleccione **Ventana > Guardar diseño de ventana** en el menú principal. Llame a este diseño "Diseñador".
 
      Al nuevo diseño se le asigna el método abreviado de teclado siguiente de la lista reservada de Ctrl + Alt + 1...0.
 
 ##### <a name="create-a-database-project-and-layout"></a>Crear un diseño y un proyecto de base de datos
 
-1.  Agregue un nuevo proyecto **Base de datos de SQL Server** a la solución.
+1. Agregue un nuevo proyecto **Base de datos de SQL Server** a la solución.
 
-2.  Haga clic con el botón secundario en el proyecto nuevo en el Explorador de soluciones y elija **Ver en el explorador de objetos**. Esto muestra la ventana **Explorador de objetos de SQL Server** , desde donde puede obtener acceso a tablas, vistas y otros objetos de su base de datos. Puede hacer que esta ventana flote o dejarla acoplada. Ajuste las otras ventanas de herramientas como quiera. Si quiere, puede agregar una base de datos real, pero no es necesario para este tutorial.
+2. Haga clic con el botón secundario en el proyecto nuevo en el Explorador de soluciones y elija **Ver en el explorador de objetos**. Esto muestra la ventana **Explorador de objetos de SQL Server** , desde donde puede obtener acceso a tablas, vistas y otros objetos de su base de datos. Puede hacer que esta ventana flote o dejarla acoplada. Ajuste las otras ventanas de herramientas como quiera. Si quiere, puede agregar una base de datos real, pero no es necesario para este tutorial.
 
-3.  Cuando el diseño sea de su agrado, pulse **Ventana > Guardar diseño de ventana** en el menú principal. Llame a este diseño "Proyecto de BD". (En este proyecto no pondremos un diseño de modo de depuración).
+3. Cuando el diseño sea de su agrado, pulse **Ventana > Guardar diseño de ventana** en el menú principal. Llame a este diseño "Proyecto de BD". (En este proyecto no pondremos un diseño de modo de depuración).
 
 ##### <a name="switch-between-the-layouts"></a>Cambiar entre diseños
 
-1.  Para cambiar entre diseños, use los métodos abreviados de teclado o pulse **Ventana > Aplicar diseño de ventana** en el menú principal.
+1. Para cambiar entre diseños, use los métodos abreviados de teclado o pulse **Ventana > Aplicar diseño de ventana** en el menú principal.
 
      ![Aplicar menú de diseño de ventana](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
@@ -167,7 +167,7 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 
 ##### <a name="manage-and-roam-your-layouts"></a>Administrar y transmitir los diseños
 
-1.  Puede quitar, cambiar el nombre o reordenar el diseño personalizado pulsando **Ventana > Administrar diseños de ventana**. Si mueve un diseño, el enlace de teclado se ajusta automáticamente para reflejar la nueva posición en la lista. Los enlaces no se pueden modificar de otra forma, por lo que se puede almacenar un máximo de 10 diseños a la vez.
+1. Puede quitar, cambiar el nombre o reordenar el diseño personalizado pulsando **Ventana > Administrar diseños de ventana**. Si mueve un diseño, el enlace de teclado se ajusta automáticamente para reflejar la nueva posición en la lista. Los enlaces no se pueden modificar de otra forma, por lo que se puede almacenar un máximo de 10 diseños a la vez.
 
      ![Administrar diseños de ventana](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
 
@@ -177,7 +177,7 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
 |[Tipos de ventanas](../misc/kinds-of-windows.md)|Describe las diferencias entre las ventanas de herramientas y las ventanas de documento en el IDE.|
 |[Cómo: ordenar y acoplar las ventanas](../misc/how-to-arrange-and-dock-windows.md)|Describe cómo acoplar las ventanas, ocultarlas de forma automática y disponerlas en mosaico, así como la manera de restablecer el diseño de las ventanas.|

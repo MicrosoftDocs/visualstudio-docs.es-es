@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework | Microsoft Docs'
+title: Procedimiento Usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 154e6058689d308f35fd969438d1964b9383f653
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: a98ad657fd1664a71b0b07063615923af4b9db2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096054"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedimientos para usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedimiento Uso de ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework
 Puede implementar una aplicación que tenga como destino varias versiones de .NET Framework mediante el uso de la tecnología de implementación de ClickOnce. Esto requiere que generar y actualizar los manifiestos de aplicación e implementación.
 
 > [!NOTE]
@@ -31,27 +31,27 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
 
  Este proceso requiere los siguientes pasos:
 
-1.  Generar los manifiestos de aplicación e implementación.
+1. Generar los manifiestos de aplicación e implementación.
 
-2.  Cambiar el manifiesto de implementación para obtener una lista de las varias versiones de .NET Framework.
+2. Cambiar el manifiesto de implementación para obtener una lista de las varias versiones de .NET Framework.
 
-3.  Cambiar el *app.config* archivo a la lista de versiones del runtime de .NET Framework compatibles.
+3. Cambiar el *app.config* archivo a la lista de versiones del runtime de .NET Framework compatibles.
 
-4.  Cambiar el manifiesto de aplicación para marcar los ensamblados dependientes como ensamblados de .NET Framework.
+4. Cambiar el manifiesto de aplicación para marcar los ensamblados dependientes como ensamblados de .NET Framework.
 
-5.  Inicie sesión en el manifiesto de aplicación.
+5. Inicie sesión en el manifiesto de aplicación.
 
-6.  Actualizar y firmar el manifiesto de implementación.
+6. Actualizar y firmar el manifiesto de implementación.
 
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Para generar los manifiestos de aplicación e implementación
 
--   Usar el Asistente para publicación o en la página Publicar del Diseñador de proyectos para publicar la aplicación y generar la aplicación y los archivos de manifiesto de implementación. Para obtener más información, consulte [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) o [publicar Page, Project Designer](../ide/reference/publish-page-project-designer.md).
+- Usar el Asistente para publicación o en la página Publicar del Diseñador de proyectos para publicar la aplicación y generar la aplicación y los archivos de manifiesto de implementación. Para obtener más información, vea [Cómo: Publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) o [publicar Page, Project Designer](../ide/reference/publish-page-project-designer.md).
 
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Para cambiar el manifiesto de implementación para obtener una lista de las varias versiones de .NET Framework
 
-1.  En el directorio de publicación, abra el manifiesto de implementación mediante el Editor XML en Visual Studio. El manifiesto de implementación tiene la *.application* la extensión de nombre de archivo.
+1. En el directorio de publicación, abra el manifiesto de implementación mediante el Editor XML en Visual Studio. El manifiesto de implementación tiene la *.application* la extensión de nombre de archivo.
 
-2.  Reemplace el código XML entre el `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` y `</compatibleFrameworks>` elementos con XML que se enumeran las versiones compatibles de .NET Framework para la aplicación.
+2. Reemplace el código XML entre el `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` y `</compatibleFrameworks>` elementos con XML que se enumeran las versiones compatibles de .NET Framework para la aplicación.
 
      En la tabla siguiente muestra algunas de las versiones de .NET Framework disponibles y el XML correspondiente que se puede agregar al manifiesto de implementación.
 
@@ -65,9 +65,9 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
 
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Para cambiar el archivo app.config para obtener una lista de versiones compatibles del runtime de .NET Framework
 
-1.  En el Explorador de soluciones, abra el *app.config* archivo mediante el Editor XML en Visual Studio.
+1. En el Explorador de soluciones, abra el *app.config* archivo mediante el Editor XML en Visual Studio.
 
-2.  Reemplace el código XML entre (o agregue) el `<startup>` y `</startup>` elementos con XML que se enumeran los tiempos de ejecución de .NET Framework admitidos para la aplicación.
+2. Reemplace el código XML entre (o agregue) el `<startup>` y `</startup>` elementos con XML que se enumeran los tiempos de ejecución de .NET Framework admitidos para la aplicación.
 
      En la tabla siguiente muestra algunas de las versiones de .NET Framework disponibles y el XML correspondiente que se puede agregar al manifiesto de implementación.
 
@@ -100,7 +100,7 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
 
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Para actualizar y volver a firmar la aplicación y la implementación de manifiestos
 
--   Actualizar y volver a firmar los manifiestos de aplicación e implementación. Para obtener más información, vea [Procedimientos para volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+- Actualizar y volver a firmar los manifiestos de aplicación e implementación. Para obtener más información, vea [Cómo: Repetición de la firma de manifiestos de implementación y aplicación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>Vea también
 - [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)

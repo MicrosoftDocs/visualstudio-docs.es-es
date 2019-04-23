@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cc41376905dd5bd5df5711d2de3edf1ea1d04dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988211"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085043"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Desechar objetos antes de perder el ámbito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "58988211"
   
  A continuación se indican algunas situaciones donde la instrucción using no es suficiente para proteger objetos IDisposable, lo que puede hacer que se produzca la advertencia CA2000.  
   
--   Devolver un objeto descartable requiere que el objeto se construya en un bloque try/finally fuera de un bloque using.  
+- Devolver un objeto descartable requiere que el objeto se construya en un bloque try/finally fuera de un bloque using.  
   
--   No deben inicializarse miembros de un objeto descartable en el constructor de una instrucción using.  
+- No deben inicializarse miembros de un objeto descartable en el constructor de una instrucción using.  
   
--   Anidar constructores únicamente protegidos por un controlador de excepciones. Por ejemplo,  
+- Anidar constructores únicamente protegidos por un controlador de excepciones. Por ejemplo,  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -59,7 +59,7 @@ ms.locfileid: "58988211"
   
      hace que se produzca CA2000 porque un error en la construcción del objeto StreamReader puede hacer que el objeto FileStream nunca se cierre.  
   
--   Los objetos dinámicos deben usar un objeto de sombra para implementar el patrón Dispose de los objetos IDisposable.  
+- Los objetos dinámicos deben usar un objeto de sombra para implementar el patrón Dispose de los objetos IDisposable.  
   
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  No suprima una advertencia de esta regla a menos que haya llamado a un método del objeto que llama a `Dispose`, como <xref:System.IO.Stream.Close%2A>, o si el método que generó la advertencia devuelve un objeto IDisposable que ajusta el objeto.  

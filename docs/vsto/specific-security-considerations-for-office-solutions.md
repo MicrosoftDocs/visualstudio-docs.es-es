@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a40fe9329061b457fb2038399324818ec69e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081325"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Consideraciones de seguridad específicas para soluciones de Office
   Las características de seguridad proporcionadas por Microsoft .NET Framework y Microsoft Office pueden ayudarle a proteger sus soluciones de Office contra diversas amenazas de seguridad. En este tema le daremos detalles acerca de esas amenazas y le proporcionaremos varias recomendaciones para que pueda protegerse contra ellas. Asimismo, este artículo también incluye información acerca de cómo influye la configuración de seguridad de Microsoft Office en las soluciones de Office.
@@ -39,13 +39,13 @@ ms.locfileid: "56629084"
 
 ### <a name="recommendations"></a>Recomendaciones
 
--   Valide siempre las entradas y los datos, tanto si proceden del usuario, del documento, de una base de datos, de un servicio web o de cualquier otro origen.
+- Valide siempre las entradas y los datos, tanto si proceden del usuario, del documento, de una base de datos, de un servicio web o de cualquier otro origen.
 
--   Tenga cuidado con ciertos tipos de funcionalidades, como obtener datos confidenciales en nombre del usuario y escribirlos en una hoja de cálculo no protegida.
+- Tenga cuidado con ciertos tipos de funcionalidades, como obtener datos confidenciales en nombre del usuario y escribirlos en una hoja de cálculo no protegida.
 
--   Dependiendo del tipo de aplicación que use, le será de utilidad comprobar que el documento original se está ejecutando antes de ejecutar cualquier código. Por ejemplo, compruebe que el documento que se está ejecutando está almacenado en una ubicación conocida y segura.
+- Dependiendo del tipo de aplicación que use, le será de utilidad comprobar que el documento original se está ejecutando antes de ejecutar cualquier código. Por ejemplo, compruebe que el documento que se está ejecutando está almacenado en una ubicación conocida y segura.
 
--   Además, es una buena idea permitir que se muestre una advertencia cuando el documento se abre, si la aplicación realiza acciones con privilegios. Por ejemplo, puede crear una pantalla de presentación o un cuadro de diálogo de inicio que indique que la aplicación obtendrá acceso a información personal del usuario y hacer que el usuario elija si desea continuar o cancelar. Si el usuario final recibe una advertencia de este tipo de un documento aparentemente inocente, podrá salir de la aplicación antes de poner ninguno de sus datos en peligro.
+- Además, es una buena idea permitir que se muestre una advertencia cuando el documento se abre, si la aplicación realiza acciones con privilegios. Por ejemplo, puede crear una pantalla de presentación o un cuadro de diálogo de inicio que indique que la aplicación obtendrá acceso a información personal del usuario y hacer que el usuario elija si desea continuar o cancelar. Si el usuario final recibe una advertencia de este tipo de un documento aparentemente inocente, podrá salir de la aplicación antes de poner ninguno de sus datos en peligro.
 
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>El código está bloqueado por la protección del modelo de objetos de Outlook
  Microsoft Office puede restringir el uso de ciertas propiedades, métodos y objetos en el modelo de objetos. Restringiendo el acceso a estos objetos, Outlook le ayudará a evitar que los virus y gusanos de correo electrónico utilizando el modelo de objetos para propósitos malintencionados. Esta característica de seguridad se conoce como Protección del modelo de objetos de Outlook. Si un complemento VSTO intenta usar un método o propiedad restringidos mientras esté habilitada la protección del modelo de objetos, Outlook muestra una advertencia de seguridad que permite al usuario detener la operación o permite al usuario que conceda acceso a la propiedad o método durante un período limitado de t IME. Si el usuario detiene la operación, los complementos VSTO de Outlook creados mediante soluciones de Office en Visual Studio, crearán un <xref:System.Runtime.InteropServices.COMException>.
@@ -103,17 +103,17 @@ ms.locfileid: "56629084"
 
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Deshabilitar los complementos VSTO en las aplicaciones de Microsoft Office 2010 y en Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]
 
-1.  Haga clic en la pestaña **Archivo** .
+1. Haga clic en la pestaña **Archivo** .
 
-2.  Elija la *ApplicationName* **opciones** botón.
+2. Elija la *ApplicationName* **opciones** botón.
 
-3.  En el panel de categorías, haga clic en **Centro de confianza**.
+3. En el panel de categorías, haga clic en **Centro de confianza**.
 
-4.  En el panel de detalles, haga clic en **Configuración del Centro de confianza**.
+4. En el panel de detalles, haga clic en **Configuración del Centro de confianza**.
 
-5.  En el panel de categorías, haga clic en **Complementos**.
+5. En el panel de categorías, haga clic en **Complementos**.
 
-6.  En el panel de detalles, seleccione **Solicitar que los complementos de la aplicación estén suscritos por un editor de confianza** o **Deshabilitar todos los complementos de la aplicación**.
+6. En el panel de detalles, seleccione **Solicitar que los complementos de la aplicación estén suscritos por un editor de confianza** o **Deshabilitar todos los complementos de la aplicación**.
 
 ## <a name="see-also"></a>Vea también
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)

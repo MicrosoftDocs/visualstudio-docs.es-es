@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear tipos con el Diseñador de clases | Microsoft Docs
+title: Procedimiento Crear tipos con el Diseñador de clases | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,51 +18,51 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a20a9ecf08c82589fd915fdd4bd60c6144e9d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100422"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Cómo: Crear tipos con el Diseñador de clases
+# <a name="how-to-create-types-by-using-class-designer"></a>Procedimiento Crear tipos con el Diseñador de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET, créelos en un diagrama de clases. Para ver los tipos existentes, vea [Cómo: Ver los tipos existentes (Diseñador de clases)](../ide/how-to-view-existing-types-class-designer.md).  
+Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET, créelos en un diagrama de clases. Para visualizar los tipos existentes, vea [Cómo: Ver los tipos existentes (Diseñador de clases)](../ide/how-to-view-existing-types-class-designer.md).  
   
--   [Crear un tipo nuevo](#CreateType)  
+- [Crear un tipo nuevo](#CreateType)  
   
--   [Aplicar un atributo personalizado a un tipo](#CustAttributeType)  
+- [Aplicar un atributo personalizado a un tipo](#CustAttributeType)  
   
--   [Aplicar un atributo personalizado a un miembro de tipo](#CustAttributeMember)  
+- [Aplicar un atributo personalizado a un miembro de tipo](#CustAttributeMember)  
   
-##  <a name="CreateType"></a> Crear un tipo nuevo  
+## <a name="CreateType"></a> Crear un tipo nuevo  
   
-1.  En el cuadro de herramientas, en Diseñador de clases, arrastre uno de estos a un diagrama de clase:  
+1. En el cuadro de herramientas, en Diseñador de clases, arrastre uno de estos a un diagrama de clase:  
   
-    -   **Clase** o **Clase abstracta**  
+    - **Clase** o **Clase abstracta**  
   
-    -   **Enum**  
+    - **Enum**  
   
-    -   **Interface**  
+    - **Interface**  
   
-    -   **Estructura** (VB) o **Struct** (C#)  
+    - **Estructura** (VB) o **Struct** (C#)  
   
-    -   **Delegate**  
+    - **Delegate**  
   
-    -   **Módulo** (solo en VB)  
+    - **Módulo** (solo en VB)  
   
-2.  Escriba un nombre para el tipo. Después seleccione su nivel de acceso.  
+2. Escriba un nombre para el tipo. Después seleccione su nivel de acceso.  
   
-3.  Seleccione el archivo donde desea agregar el código inicial para el tipo:  
+3. Seleccione el archivo donde desea agregar el código inicial para el tipo:  
   
-    -   Para crear un archivo nuevo y agregarlo al proyecto actual, seleccione **Crear nuevo archivo** y escriba un nombre de archivo.  
+    - Para crear un archivo nuevo y agregarlo al proyecto actual, seleccione **Crear nuevo archivo** y escriba un nombre de archivo.  
   
-    -   Para agregar código a un archivo existente, seleccione **Agregar al archivo existente**.  
+    - Para agregar código a un archivo existente, seleccione **Agregar al archivo existente**.  
   
          Si la solución tiene un proyecto que comparte código en varias aplicaciones, puede agregar un nuevo tipo a un diagrama de clases del proyecto de la aplicación, pero solo si el archivo de clases correspondiente está en el mismo proyecto de la aplicación o en el proyecto compartido.  
   
-4.  Ahora agregue otros elementos para definir el tipo:  
+4. Ahora agregue otros elementos para definir el tipo:  
   
     |||  
     |-|-|  
@@ -75,23 +75,23 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
   
      Vea [Crear miembros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
-##  <a name="CustAttributeType"></a> Aplicar un atributo personalizado a un tipo  
+## <a name="CustAttributeType"></a> Aplicar un atributo personalizado a un tipo  
   
-1.  Haga clic en la forma del tipo en un diagrama de clases.  
+1. Haga clic en la forma del tipo en un diagrama de clases.  
   
-2.  En la ventana Propiedades, junto a la propiedad **Atributos personalizados** del tipo, haga clic en el botón de puntos suspensivos (...).  
+2. En la ventana Propiedades, junto a la propiedad **Atributos personalizados** del tipo, haga clic en el botón de puntos suspensivos (...).  
   
-3.  Agregue uno o varios atributos personalizados, uno por línea. No los encierre entre corchetes.  
+3. Agregue uno o varios atributos personalizados, uno por línea. No los encierre entre corchetes.  
   
      Cuando haya acabado, los atributos personalizados se aplicarán al tipo.  
   
-##  <a name="CustAttributeMember"></a> Aplicar un atributo personalizado a un miembro de tipo  
+## <a name="CustAttributeMember"></a> Aplicar un atributo personalizado a un miembro de tipo  
   
-1.  Haga clic en el nombre del miembro, en la forma del tipo en un diagrama de clases o en la fila en la ventana Detalles de clase.  
+1. Haga clic en el nombre del miembro, en la forma del tipo en un diagrama de clases o en la fila en la ventana Detalles de clase.  
   
-2.  En la ventana Propiedades, busque la propiedad **Atributos personalizados** del miembro.  
+2. En la ventana Propiedades, busque la propiedad **Atributos personalizados** del miembro.  
   
-3.  Agregue uno o varios atributos personalizados, uno por línea. No los encierre entre corchetes.  
+3. Agregue uno o varios atributos personalizados, uno por línea. No los encierre entre corchetes.  
   
      Cuando haya acabado, los atributos personalizados se aplicarán al tipo.  
   

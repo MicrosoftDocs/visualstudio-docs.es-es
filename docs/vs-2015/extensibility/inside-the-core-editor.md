@@ -10,12 +10,12 @@ ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 61484c9d01022b9f3b860f0c7b78dd3aedc045f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083366"
 ---
 # <a name="inside-the-core-editor"></a>En el Editor básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor básico es un conjunto de
   
  Las áreas siguientes son algunos aspectos importantes del editor de núcleo:  
   
--   Búfer de texto  
+- Búfer de texto  
   
--   Vista de texto  
+- Vista de texto  
   
--   Ventana Código  
+- Ventana Código  
   
--   Marcadores de texto  
+- Marcadores de texto  
   
--   Administrador de texto  
+- Administrador de texto  
   
--   Integración con servicios de lenguaje  
+- Integración con servicios de lenguaje  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Creación de instancias del editor principal mediante la API heredada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  

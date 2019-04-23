@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686c7fbfae76d9f4006664aff9f79848eba563f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613335"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083522"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Área de prueba 1: Agregar a / abrir desde Control de código fuente
 Este complemento de control de origen de prueba área abarca la colocación de las soluciones o proyectos bajo control de código fuente y recuperarlos desde el control de código fuente.
@@ -41,15 +41,15 @@ Este complemento de control de origen de prueba área abarca la colocación de l
 
 ## <a name="expected-behavior"></a>Comportamiento esperado
 
--   Para cada tipo de proyecto compatible, un usuario debe ser capaz de "Agregar a" y "Abrir desde" Control de código fuente.
+- Para cada tipo de proyecto compatible, un usuario debe ser capaz de "Agregar a" y "Abrir desde" Control de código fuente.
 
--   Cuando se agrega un proyecto de control de código fuente, correspondiente \< *ProjectName*> se crea el archivo .SCC (archivo de indicaciones de proyecto). Contiene información de conexión y lista de archivos de exclusión. No elimine este archivo porque contiene información específica del proyecto.
+- Cuando se agrega un proyecto de control de código fuente, correspondiente \< *ProjectName*> se crea el archivo .SCC (archivo de indicaciones de proyecto). Contiene información de conexión y lista de archivos de exclusión. No elimine este archivo porque contiene información específica del proyecto.
 
--   Cuando se agrega una solución al control de código fuente correspondiente \< *SolutionName*> se crea el archivo entre otros (triple S). El archivo de texto contiene la información de conexión y una lista de archivos de exclusión, similar al archivo de sugerencia del proyecto. Este archivo es temporal y sólo existe en la base de datos de control de código fuente.
+- Cuando se agrega una solución al control de código fuente correspondiente \< *SolutionName*> se crea el archivo entre otros (triple S). El archivo de texto contiene la información de conexión y una lista de archivos de exclusión, similar al archivo de sugerencia del proyecto. Este archivo es temporal y sólo existe en la base de datos de control de código fuente.
 
--   Cuando se abre una solución de control de código fuente, un \< *SolutionName*> archivo .vsscc (doble S) que solo existe en la base de datos de control de código fuente, se crea localmente en un archivo temporal. Este archivo contiene la ruta de acceso de la carpeta de conexión de la solución para el archivo de solución. Este archivo es temporal y se elimina la copia local cuando se ha completado la operación de "Abrir desde Control de código fuente".
+- Cuando se abre una solución de control de código fuente, un \< *SolutionName*> archivo .vsscc (doble S) que solo existe en la base de datos de control de código fuente, se crea localmente en un archivo temporal. Este archivo contiene la ruta de acceso de la carpeta de conexión de la solución para el archivo de solución. Este archivo es temporal y se elimina la copia local cuando se ha completado la operación de "Abrir desde Control de código fuente".
 
--   Después de agrega un proyecto al control de origen, puede realizar las acciones de control de código fuente en ella (consulte, Get y así sucesivamente).
+- Después de agrega un proyecto al control de origen, puede realizar las acciones de control de código fuente en ella (consulte, Get y así sucesivamente).
 
 ## <a name="test-cases"></a>Casos de prueba
  Los siguientes son casos de prueba concretos para agregar a / abrir desde el área de prueba de Control de código fuente.

@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995256"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082157"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Revisar el uso de Deny y PermitOnly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "58995256"
 
  Código que se basa en estas acciones se debería evaluar cuidadosamente las vulnerabilidades de seguridad debido a su utilidad limitada y el comportamiento. Considere el siguiente caso:
 
--   [Las peticiones de vínculo](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) no se ven afectados por Deny o PermitOnly.
+- [Las peticiones de vínculo](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) no se ven afectados por Deny o PermitOnly.
 
--   Si Deny o PermitOnly se produce en el mismo marco de pila como la demanda que hace que el recorrido de pila, las acciones de seguridad tienen ningún efecto.
+- Si Deny o PermitOnly se produce en el mismo marco de pila como la demanda que hace que el recorrido de pila, las acciones de seguridad tienen ningún efecto.
 
--   Normalmente, los valores que se usan para construir los permisos basados en la ruta de acceso pueden especificarse de varias maneras. Denegar el acceso a un formulario de la ruta de acceso no deniega el acceso a todas las formas. Por ejemplo, si un recurso compartido de archivos \\\Server\Share se asigna a una unidad de red X:, para denegar el acceso a un archivo en el recurso compartido, debe denegar \\\Server\Share\File, X:\File y cualquier otra ruta que se obtiene acceso al archivo.
+- Normalmente, los valores que se usan para construir los permisos basados en la ruta de acceso pueden especificarse de varias maneras. Denegar el acceso a un formulario de la ruta de acceso no deniega el acceso a todas las formas. Por ejemplo, si un recurso compartido de archivos \\\Server\Share se asigna a una unidad de red X:, para denegar el acceso a un archivo en el recurso compartido, debe denegar \\\Server\Share\File, X:\File y cualquier otra ruta que se obtiene acceso al archivo.
 
--   Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> puede finalizar un recorrido de pila antes de alcanza Deny o PermitOnly.
+- Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> puede finalizar un recorrido de pila antes de alcanza Deny o PermitOnly.
 
--   Si una instrucción Deny tiene ningún efecto, es decir, cuando el llamador tiene un permiso que está bloqueado por Deny, el llamador puede acceder al recurso protegido directamente, omitiendo la denegación. De forma similar, si el llamador no tiene el permiso denegado, el recorrido de pila produciría un error sin Deny.
+- Si una instrucción Deny tiene ningún efecto, es decir, cuando el llamador tiene un permiso que está bloqueado por Deny, el llamador puede acceder al recurso protegido directamente, omitiendo la denegación. De forma similar, si el llamador no tiene el permiso denegado, el recorrido de pila produciría un error sin Deny.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Cualquier uso de estas acciones de seguridad provocará una infracción. Para corregir una infracción, no utilice estas acciones de seguridad.

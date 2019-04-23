@@ -27,12 +27,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987963"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080746"
 ---
 # <a name="expressions-in-the-debugger"></a>Expresiones en el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Usar funciones intrínsecas del depurador para mantener el estado  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Usar funciones intrínsecas del depurador para mantener el estado  
  Las funciones intrínsecas del depurador proporcionan una manera de llamar a determinadas funciones de C/C++ en expresiones sin cambiar el estado de la aplicación.  
   
  Funciones intrínsecas del depurador:  
@@ -118,15 +118,15 @@ int main()
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI: Expresiones no admitidas  
   
--   No se admiten las conversiones que afectan a punteros o las conversiones definidas por el usuario.  
+- No se admiten las conversiones que afectan a punteros o las conversiones definidas por el usuario.  
   
--   No se admiten las comparaciones y asignaciones de objetos  
+- No se admiten las comparaciones y asignaciones de objetos  
   
--   No se admiten los operadores y las funciones sobrecargadas.  
+- No se admiten los operadores y las funciones sobrecargadas.  
   
--   No se admiten las conversiones boxing y unboxing.  
+- No se admiten las conversiones boxing y unboxing.  
   
--   No se admite el operador`Sizeof` .  
+- No se admite el operador`Sizeof` .  
   
 ## <a name="c---unsupported-expressions"></a>C#: Expresiones no admitidas  
   
@@ -135,19 +135,19 @@ int main()
   
  No se admiten las características siguientes de los objetos dinámicos:  
   
--   Los operadores compuestos `+=`, `-=`, `%=`, `/=`y `*=`  
+- Los operadores compuestos `+=`, `-=`, `%=`, `/=`y `*=`  
   
--   Muchas conversiones, incluidas las conversiones numéricas y las conversiones de argumentos de tipos  
+- Muchas conversiones, incluidas las conversiones numéricas y las conversiones de argumentos de tipos  
   
--   Llamadas a métodos con más de dos argumentos  
+- Llamadas a métodos con más de dos argumentos  
   
--   Captadores de propiedades con más de dos argumentos  
+- Captadores de propiedades con más de dos argumentos  
   
--   Establecedores de propiedades con argumentos  
+- Establecedores de propiedades con argumentos  
   
--   Asignación a un indizador  
+- Asignación a un indizador  
   
--   Operadores booleanos `&&` y `||`  
+- Operadores booleanos `&&` y `||`  
   
 ### <a name="anonymous-methods"></a>Métodos anónimos  
  No se admite la creación de nuevos métodos anónimos.  
@@ -159,19 +159,19 @@ int main()
   
  No se admiten las características siguientes de los objetos dinámicos:  
   
--   Los operadores compuestos `+=`, `-=`, `%=`, `/=`y `*=`  
+- Los operadores compuestos `+=`, `-=`, `%=`, `/=`y `*=`  
   
--   Muchas conversiones, incluidas las conversiones numéricas y las conversiones de argumentos de tipos  
+- Muchas conversiones, incluidas las conversiones numéricas y las conversiones de argumentos de tipos  
   
--   Llamadas a métodos con más de dos argumentos  
+- Llamadas a métodos con más de dos argumentos  
   
--   Captadores de propiedades con más de dos argumentos  
+- Captadores de propiedades con más de dos argumentos  
   
--   Establecedores de propiedades con argumentos  
+- Establecedores de propiedades con argumentos  
   
--   Asignación a un indizador  
+- Asignación a un indizador  
   
--   Operadores booleanos `&&` y `||`  
+- Operadores booleanos `&&` y `||`  
   
 ### <a name="local-constants"></a>Constantes locales  
  No se admiten constantes locales.  
@@ -184,35 +184,35 @@ int main()
   
 ### <a name="unsupported-keywords"></a>Palabras clave no admitidas  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   Palabras clave de espacio de nombres o de módulo como, por ejemplo, `End Sub` o `Module`.  
+- Palabras clave de espacio de nombres o de módulo como, por ejemplo, `End Sub` o `Module`.  
   
 ## <a name="see-also"></a>Vea también  
  [Especificadores de formato en C++](../debugger/format-specifiers-in-cpp.md)   

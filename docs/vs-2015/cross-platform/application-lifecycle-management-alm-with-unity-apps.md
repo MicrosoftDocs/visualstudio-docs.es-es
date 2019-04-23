@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: c4f431dba7f9732333812f64b44db52358071996
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6c572d76389c5914f4a9b01b82677449ec1db28b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097172"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con aplicaciones de Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,11 +66,11 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
   
  Consideraciones especiales para el control de versiones con Unity:  
   
-1.  Unity hace un seguimiento de los metadatos sobre los activos de juego en una única biblioteca opaca que está oculta de forma predeterminada. Para mantener sincronizados los archivos y metadatos, es necesario hacer visibles los metadatos y almacenarlos en fragmentos más fáciles de manejar. Para más detalles, vea [Using External Version Control Systems with Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Uso de sistemas externos de control de versiones con Unity, documentación de Unity).  
+1. Unity hace un seguimiento de los metadatos sobre los activos de juego en una única biblioteca opaca que está oculta de forma predeterminada. Para mantener sincronizados los archivos y metadatos, es necesario hacer visibles los metadatos y almacenarlos en fragmentos más fáciles de manejar. Para más detalles, vea [Using External Version Control Systems with Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Uso de sistemas externos de control de versiones con Unity, documentación de Unity).  
   
-2.  No todos los archivos y carpetas de un proyecto de Unity son adecuados para el control de código fuente, tal y como se describe también en el tema anterior. Deben agregarse las carpetas Assets y ProjectSettings, pero no las carpetas Library y Temp. Para obtener una lista adicional de archivos generados que no sean adecuados para el control de código fuente, vea la explicación sobre [cómo usar Git para el control de código fuente en Unity3D](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) de StackOverflow. Muchos desarrolladores también han escrito sobre este tema de forma independiente.  
+2. No todos los archivos y carpetas de un proyecto de Unity son adecuados para el control de código fuente, tal y como se describe también en el tema anterior. Deben agregarse las carpetas Assets y ProjectSettings, pero no las carpetas Library y Temp. Para obtener una lista adicional de archivos generados que no sean adecuados para el control de código fuente, vea la explicación sobre [cómo usar Git para el control de código fuente en Unity3D](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) de StackOverflow. Muchos desarrolladores también han escrito sobre este tema de forma independiente.  
   
-3.  Los activos binarios de un proyecto de Unity, como las texturas o los archivos de audio, pueden ocupar una gran cantidad de almacenamiento. Varios sistemas de control de código fuente como Git almacenan una única copia de un archivo por cada cambio realizado, incluso si el cambio afecta solo a una pequeña parte del archivo. Esto puede hacer que el repositorio Git se infle. Para solucionar este problema, los desarrolladores de Unity a menudo optan por agregar solo los activos finales al repositorio y usar varios métodos para mantener un historial de trabajo de sus activos, como OneDrive, DropBox o git-annex. Este enfoque funciona porque normalmente no es necesario crear versiones de dichos activos conforme se realizan cambios en el código fuente. Los desarrolladores también suelen establecer el modo de serialización de activos del editor del proyecto en Forzar texto para almacenar archivos de escenas como texto en lugar de hacerlo en formato binario, lo que permite hacer combinaciones en el control de código fuente. Para más detalles, vea [Editor Settings](http://docs.unity3d.com/Manual/class-EditorManager.html) (Configuración del editor, documentación de Unity).  
+3. Los activos binarios de un proyecto de Unity, como las texturas o los archivos de audio, pueden ocupar una gran cantidad de almacenamiento. Varios sistemas de control de código fuente como Git almacenan una única copia de un archivo por cada cambio realizado, incluso si el cambio afecta solo a una pequeña parte del archivo. Esto puede hacer que el repositorio Git se infle. Para solucionar este problema, los desarrolladores de Unity a menudo optan por agregar solo los activos finales al repositorio y usar varios métodos para mantener un historial de trabajo de sus activos, como OneDrive, DropBox o git-annex. Este enfoque funciona porque normalmente no es necesario crear versiones de dichos activos conforme se realizan cambios en el código fuente. Los desarrolladores también suelen establecer el modo de serialización de activos del editor del proyecto en Forzar texto para almacenar archivos de escenas como texto en lugar de hacerlo en formato binario, lo que permite hacer combinaciones en el control de código fuente. Para más detalles, vea [Editor Settings](http://docs.unity3d.com/Manual/class-EditorManager.html) (Configuración del editor, documentación de Unity).  
   
 ## <a name="build"></a>Compilar  
  Vínculo de referencia: **[Compilación](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  

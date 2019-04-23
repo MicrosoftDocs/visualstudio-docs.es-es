@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079609"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Creación de un sistema de proyectos básico, parte 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ El primer tutorial de esta serie, [creación de un sistema de proyectos básico,
   
  En este tutorial se enseña cómo realizar estas tareas:  
   
--   Crear una plantilla de Visual Studio.  
+- Crear una plantilla de Visual Studio.  
   
--   Implementar una plantilla de Visual Studio.  
+- Implementar una plantilla de Visual Studio.  
   
--   Crear un nodo de elemento secundario de tipo de proyecto en el **nuevo proyecto** cuadro de diálogo.  
+- Crear un nodo de elemento secundario de tipo de proyecto en el **nuevo proyecto** cuadro de diálogo.  
   
--   Habilitar la sustitución de parámetros en la plantilla de Visual Studio.  
+- Habilitar la sustitución de parámetros en la plantilla de Visual Studio.  
   
--   Crear una página de propiedades del proyecto.  
+- Crear una página de propiedades del proyecto.  
   
 > [!NOTE]
 >  Los pasos descritos en este tutorial se basan en un proyecto de C#. Sin embargo, excepto para obtener información específica como extensiones de nombre de archivo y el código, puede usar los mismos pasos para un proyecto de Visual Basic.  
@@ -120,9 +120,9 @@ El primer tutorial de esta serie, [creación de un sistema de proyectos básico,
 ## <a name="adding-a-minimal-vsct-file"></a>Adición de un archivo .vsct mínimo  
  Visual Studio se debe ejecutar en modo de instalación para reconocer una plantilla de Visual Studio nueva o modificada. Modo de instalación requiere un archivo .vsct estén presentes. Por lo tanto, debe agregar un archivo .vsct mínimo al proyecto.  
   
-1.  Agregue un archivo XML denominado SimpleProject.vsct al proyecto SimpleProject.  
+1. Agregue un archivo XML denominado SimpleProject.vsct al proyecto SimpleProject.  
   
-2.  Reemplace el contenido del archivo SimpleProject.vsct con el código siguiente.  
+2. Reemplace el contenido del archivo SimpleProject.vsct con el código siguiente.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -131,25 +131,25 @@ El primer tutorial de esta serie, [creación de un sistema de proyectos básico,
     </CommandTable>  
     ```  
   
-3.  Establecer el **acción de compilación** de este archivo en **VSCTCompile**. Puede hacerlo solo en el archivo .csproj, no en el **propiedades** ventana. Asegúrese de que el **acción de compilación** de este archivo se establece en **ninguno** en este momento.  
+3. Establecer el **acción de compilación** de este archivo en **VSCTCompile**. Puede hacerlo solo en el archivo .csproj, no en el **propiedades** ventana. Asegúrese de que el **acción de compilación** de este archivo se establece en **ninguno** en este momento.  
   
-    1.  Haga clic en el nodo SimpleProject y, a continuación, haga clic en **SimpleProject.csproj editar**.  
+    1. Haga clic en el nodo SimpleProject y, a continuación, haga clic en **SimpleProject.csproj editar**.  
   
-    2.  En el archivo .csproj, busque el elemento SimpleProject.vsct.  
+    2. En el archivo .csproj, busque el elemento SimpleProject.vsct.  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3.  Cambiar la acción de compilación a **VSCTCompile**.  
+    3. Cambiar la acción de compilación a **VSCTCompile**.  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4.  el archivo de proyecto y cierre el editor.  
+    4. el archivo de proyecto y cierre el editor.  
   
-    5.  Guardar el nodo SimpleProject y, a continuación, en el **el Explorador de soluciones** haga clic en **recargar el proyecto**.  
+    5. Guardar el nodo SimpleProject y, a continuación, en el **el Explorador de soluciones** haga clic en **recargar el proyecto**.  
   
 ## <a name="examining-the-visual-studio-template-build-steps"></a>Examen de los pasos de compilación de la plantilla de Visual Studio  
  El sistema de compilación del proyecto de VSPackage normalmente ejecuta Visual Studio en modo de instalación cuando se cambia el archivo .vstemplate o se vuelve a generar el proyecto que contiene el archivo .vstemplate. Puede seguir estableciendo el nivel de detalle de MSBuild en Normal o superior.  
@@ -209,11 +209,11 @@ ZipProjects:
   
  En esta sección se muestra cómo crear un nodo secundario de consola para el tipo de proyecto SimpleProject.  
   
-1.  Cambie el nombre de la carpeta \Templates\Projects\SimpleProject\ a \Templates\Projects\ConsoleApp\\.  
+1. Cambie el nombre de la carpeta \Templates\Projects\SimpleProject\ a \Templates\Projects\ConsoleApp\\.  
   
-2.  En el **propiedades** ventana, seleccione todos los cinco archivos en la carpeta \Templates\Projects\ConsoleApp\ y asegúrese de que el **acción de compilación** está establecido en **ZipProject**.  
+2. En el **propiedades** ventana, seleccione todos los cinco archivos en la carpeta \Templates\Projects\ConsoleApp\ y asegúrese de que el **acción de compilación** está establecido en **ZipProject**.  
   
-3.  En el archivo SimpleProject.vstemplate, agregue la siguiente línea al final de la \<TemplateData > sección justo antes de la etiqueta de cierre.  
+3. En el archivo SimpleProject.vstemplate, agregue la siguiente línea al final de la \<TemplateData > sección justo antes de la etiqueta de cierre.  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -221,11 +221,11 @@ ZipProjects:
   
      Esto hace que la plantilla de aplicación de consola que aparezcan en el nodo secundario de consola y en el nodo primario SimpleProject, que es un nivel por encima del nodo secundario.  
   
-4.  Guarde el archivo SimpleProject.vstemplate.  
+4. Guarde el archivo SimpleProject.vstemplate.  
   
-5.  En el archivo .csproj, agregue \<OutputSubPath > para cada uno de los elementos ZipProject. Descargue el proyecto, como antes y edite el archivo de proyecto.  
+5. En el archivo .csproj, agregue \<OutputSubPath > para cada uno de los elementos ZipProject. Descargue el proyecto, como antes y edite el archivo de proyecto.  
   
-6.  Busque el \<ZipProject > elementos. A cada \<ZipProject > elemento, agregue un \<OutputSubPath > elemento y asígnele el valor de la consola. El ZipProject  
+6. Busque el \<ZipProject > elementos. A cada \<ZipProject > elemento, agregue un \<OutputSubPath > elemento y asígnele el valor de la consola. El ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -245,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  Agregar esto \<PropertyGroup > al archivo de proyecto:  
+7. Agregar esto \<PropertyGroup > al archivo de proyecto:  
   
     ```  
     <PropertyGroup>  
@@ -253,7 +253,7 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8.  Guarde el archivo de proyecto y recargar el proyecto.  
+8. Guarde el archivo de proyecto y recargar el proyecto.  
   
 ## <a name="testing-the-project-type-child-node"></a>Probar el nodo secundario de tipo de proyecto  
  Probar el archivo de proyecto modificado para ver si el **consola** nodo secundario aparece en el **nuevo proyecto** cuadro de diálogo.  
@@ -281,19 +281,19 @@ ZipProjects:
   
 - $safeprojectname$ es el nombre proporcionado por el usuario en el **nuevo proyecto** cuadro de diálogo, puede modificado para quitar todos los caracteres no seguros y espacios.  
   
-  Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../ide/template-parameters.md).  Si desea crear su propio parámetro de plantilla personalizada, vea [NIB: Filtrar Pasar parámetros personalizados a plantillas](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../ide/template-parameters.md).  Si desea crear su propio parámetro de plantilla personalizada, vea [NIB: Procedimiento Pasar parámetros personalizados a plantillas](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Sustituir los parámetros de plantilla de proyecto  
   
-1.  En el archivo SimpleProjectNode.cs, quite el `AddFileFromTemplate` método.  
+1. En el archivo SimpleProjectNode.cs, quite el `AddFileFromTemplate` método.  
   
-2.  En el archivo \Templates\Projects\ConsoleApp\SimpleProject.myproj, busque el \<RootNamespace > propiedad y cambie su valor a $safeprojectname$.  
+2. En el archivo \Templates\Projects\ConsoleApp\SimpleProject.myproj, busque el \<RootNamespace > propiedad y cambie su valor a $safeprojectname$.  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  En el archivo \Templates\Projects\SimpleProject\Program.cs, reemplace el contenido del archivo con el código siguiente:  
+3. En el archivo \Templates\Projects\SimpleProject\Program.cs, reemplace el contenido del archivo con el código siguiente:  
   
     ```  
     using System;  
@@ -315,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4.  Recompilar el proyecto SimpleProject e iniciar la depuración. Debería aparecer la instancia experimental.  
+4. Recompilar el proyecto SimpleProject e iniciar la depuración. Debería aparecer la instancia experimental.  
   
-5.  Cree una nueva aplicación de consola SimpleProject. (En el **tipos de proyecto** panel, seleccione **SimpleProject**. En **plantillas instaladas de Visual Studio**, seleccione **aplicación de consola**.)  
+5. Cree una nueva aplicación de consola SimpleProject. (En el **tipos de proyecto** panel, seleccione **SimpleProject**. En **plantillas instaladas de Visual Studio**, seleccione **aplicación de consola**.)  
   
-6.  En el proyecto recién creado, abra Program.cs. Debe parecerse a lo siguiente (los valores de GUID en el archivo variará.):  
+6. En el proyecto recién creado, abra Program.cs. Debe parecerse a lo siguiente (los valores de GUID en el archivo variará.):  
   
     ```  
     using System;  
@@ -348,11 +348,11 @@ ZipProjects:
   
  La página de propiedad que cree en esta sección le permite modificar y guardar estas propiedades de proyecto:  
   
--   AssemblyName  
+- AssemblyName  
   
--   OutputType  
+- OutputType  
   
--   RootNamespace.  
+- RootNamespace.  
   
 1. En el archivo SimpleProjectPackage.cs, agregue esto `ProvideObject` atributo a la `SimpleProjectPackage` clase:  
   

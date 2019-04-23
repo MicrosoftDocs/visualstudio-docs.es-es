@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63c6dfde0f4f097b4bfa595c0e594ba80020cedc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7c65662d054b8c3dd9e650fe088f7048cc3b4071
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081858"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Iniciar una sesión de depuración para una aplicación de UWP
 
@@ -54,7 +54,7 @@ En este artículo se describe cómo iniciar una sesión de depuración de Visual
 En Visual Studio 2017, la mayoría de los comandos y opciones que se muestran en este artículo también se aplica a las aplicaciones para UWP para HTML y JavaScript. Administrados donde son diferentes entre los comandos y C++ aplicaciones, las aplicaciones de JavaScript suelen ser iguales que los comandos para C++ aplicaciones para UWP.
 ::: moniker-end
 
-##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Iniciar la depuración desde la barra de herramientas de Visual Studio
+## <a name="BKMK_The_easy_way_to_start_debugging"></a>Iniciar la depuración desde la barra de herramientas de Visual Studio
 
 Es la manera más fácil de configurar e iniciar la depuración desde la barra de herramientas estándar de Visual Studio.
 
@@ -72,7 +72,7 @@ Es la manera más fácil de configurar e iniciar la depuración desde la barra d
 
 Depuración continúa hasta que se alcanza un punto de interrupción, se suspende manualmente la ejecución, se produce una excepción no controlada, o la aplicación finaliza.
 
-###  <a name="BKMK_Choose_the_deployment_target"></a> Opciones de implementación de destino
+### <a name="BKMK_Choose_the_deployment_target"></a> Opciones de implementación de destino
 
 Puede establecer el destino de depuración en la barra de herramientas de Visual Studio o el proyecto de depuración de página de propiedades. Seleccione una de las opciones siguientes:
 
@@ -84,7 +84,7 @@ Puede establecer el destino de depuración en la barra de herramientas de Visual
 |**Device**|Depurar la aplicación en un dispositivo USB conectado. El dispositivo debe estar desbloqueada de desarrollador y tiene la pantalla desbloqueada.|
 |**Emulador de dispositivos móvil**|Inicie el emulador especificado en el nombre del emulador, implemente la aplicación e iniciar la depuración. Los emuladores solo están disponibles en las máquinas de Hyper-V habilitado.|
 
-##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Configurar la depuración en la página de propiedades del proyecto
+## <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Configurar la depuración en la página de propiedades del proyecto
 
 Para configurar otras opciones de depuración, use la página de propiedades de depuración del proyecto.
 
@@ -102,7 +102,7 @@ Para configurar otras opciones de depuración, use la página de propiedades de 
 
      ![C++Página de propiedades de depuración de aplicaciones UWP](../debugger/media/dbg_cpp_debugpropertypage.png)
 
-###  <a name="BKMK_Choose_the_debugger_to_use"></a> Elegir el depurador utilizado
+### <a name="BKMK_Choose_the_debugger_to_use"></a> Elegir el depurador utilizado
 
 Para C# y las aplicaciones de Visual Basic, Visual Studio depura código administrado de forma predeterminada. Puede depurar código adicionales u otros tipos. También puede establecer **el tipo de depurador** valores para las tareas en segundo plano que forman parte del proyecto.
 
@@ -123,20 +123,20 @@ En las aplicaciones de C++, Visual Studio depura código nativo de forma predete
 |**Código nativo con script**|Depurar código de C/C ++ nativo y código de JavaScript de la aplicación. Se omite el código administrado. Disponible en C++ proyectos o en segundo plano solamente las tareas.|
 |**Solo GPU (C++ AMP)**|Depura el código de C++ nativo que se ejecuta en una unidad de procesamiento gráfico (GPU). Está disponible en los proyectos de C++.|
 
-###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> Deshabilitar bucles invertidos de red (opcional)
+### <a name="BKMK__Optional__Disable_network_loopbacks"></a> Deshabilitar bucles invertidos de red (opcional)
 
  Para la seguridad, una aplicación para UWP que se instala en la manera estándar no puede realizar en el dispositivo en que está instalado las llamadas de red. Exime Visual Studio implementa las aplicaciones de esta regla de forma predeterminada, para que pueda probar los procedimientos de comunicación en una sola máquina. Antes de publicar la aplicación, debe probarla sin la exención.
 
 **Para quitar la exención de bucle invertido de red:**
 
--   Para C# y anule la selección de las aplicaciones de Visual Basic, el **permitir bucle invertido de red local** casilla de verificación bajo **opciones de inicio** en el **depurar** página de propiedades.
+- Para C# y anule la selección de las aplicaciones de Visual Basic, el **permitir bucle invertido de red local** casilla de verificación bajo **opciones de inicio** en el **depurar** página de propiedades.
 
--   Para Visual C++ aplicaciones, seleccionadas **No** desde el **permitir bucle invertido de red Local** lista desplegable en el **depuración** página de propiedades.
+- Para Visual C++ aplicaciones, seleccionadas **No** desde el **permitir bucle invertido de red Local** lista desplegable en el **depuración** página de propiedades.
 
-###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Vuelva a instalar la aplicación al iniciar la depuración (opcional)
+### <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Vuelva a instalar la aplicación al iniciar la depuración (opcional)
  Para diagnosticar problemas de instalación con un C# o aplicación de Visual Basic, seleccione **desinstalar y reinstalar mi paquete** en el **depurar** página de propiedades. Esta opción vuelve a crear la instalación original al iniciar la depuración. Esta opción no está disponible para C++ proyectos.
 
-###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Establecer las opciones de autenticación para la depuración remota
+### <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Establecer las opciones de autenticación para la depuración remota
 
 De forma predeterminada, debe proporcionar las credenciales de Windows para ejecutar el depurador remoto cuando se selecciona **máquina remota** como el destino de implementación. Puede cambiar el requisito de autenticación.
 
@@ -151,11 +151,11 @@ El **Universal (protocolo sin cifrar)** es el modo de autenticación para dispos
 > [!CAUTION]
 > No hay ninguna seguridad de red al ejecutar el depurador remoto en **ninguno** o **Universal (protocolo sin cifrar)** modos. Elija estos modos solo en redes de confianza que se está seguro de que no son expuestos a código malintencionado o tráfico hostil.
 
-##  <a name="BKMK_Start_the_debugging_session"></a> Opciones de inicio de depuración
+## <a name="BKMK_Start_the_debugging_session"></a> Opciones de inicio de depuración
 
 Al seleccionar **depurar** > **Iniciar depuración** o presione **F5**, Visual Studio inicia la aplicación con el depurador adjunto. La ejecución continúa hasta que se alcanza un punto de interrupción, se suspende manualmente la ejecución, se produce una excepción no controlada o la aplicación finaliza.
 
-###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Iniciar la depuración pero retrasar el inicio de aplicación
+### <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Iniciar la depuración pero retrasar el inicio de aplicación
 
 De forma predeterminada, Visual Studio inicia la aplicación inmediatamente al iniciar la depuración. También puede establecer la aplicación se ejecute en modo de depuración, pero iniciar la aplicación fuera del depurador. Por ejemplo, desea depurar el inicio de la aplicación de la Windows **iniciar** menú o depurar un proceso en segundo plano en la aplicación. Si elige esta opción, se inicia la aplicación en el depurador en el inicio.
 
@@ -167,7 +167,7 @@ De forma predeterminada, Visual Studio inicia la aplicación inmediatamente al i
 
 Para obtener más información sobre la depuración de tareas en segundo plano, vea [desencadenador suspender, reanudar y en segundo plano de los eventos de aplicaciones para UWP](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
-###  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Depurar una aplicación UWP instalada o en ejecución
+### <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Depurar una aplicación UWP instalada o en ejecución
 
 Puede usar **depurar paquete de aplicaciones instalado** para depurar una aplicación para UWP que ya está instalado o está ejecutando en un dispositivo local o remoto. Pudo haber instalado la aplicación desde la Microsoft Store, o puede que no sea un proyecto de Visual Studio. Por ejemplo, la aplicación podría tener un sistema de compilación personalizada que no usa Visual Studio.
 
@@ -175,7 +175,7 @@ Puede iniciar inmediatamente la aplicación instalada, o puede establecer que se
 
 Para iniciar una aplicación para UWP instalada ni se ejecuta en el depurador, seleccione **depurar** > **otros destinos de depuración** > **depurar paquete de aplicaciones instalado**. Para obtener más instrucciones, consulte [depurar un paquete de aplicación instalados](../debugger/debug-installed-app-package.md).
 
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Asociar al depurador a una aplicación en ejecución Windows 8.x
+### <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Asociar al depurador a una aplicación en ejecución Windows 8.x
 
 Si quieres asociar el depurador a una aplicación de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] , debes utilizar el Administrador de paquetes depurables para establecer la aplicación de modo que se ejecute en modo de depuración. El Administrador de paquetes depurables se instala con las herramientas remotas para Visual Studio.
 

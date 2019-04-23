@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63538797f335cab770f3748d946b08de6b44c609
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dfea4ecc735fbf91e623f6d40b287353e17ce7a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999344"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080610"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implementar una extensión del modelo de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,40 +39,40 @@ Otros usuarios de Visual Studio pueden instalar las extensiones de modelado de c
   
 #### <a name="to-uninstall-the-extension"></a>Para desinstalar la extensión  
   
-1.  En Visual Studio, en el **herramientas** menú, haga clic en **extensiones y actualizaciones**.  
+1. En Visual Studio, en el **herramientas** menú, haga clic en **extensiones y actualizaciones**.  
   
-2.  Haga clic en el nombre de la extensión y, a continuación, haga clic en **desinstalar**.  
+2. Haga clic en el nombre de la extensión y, a continuación, haga clic en **desinstalar**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Instalar una extensión en un servidor de Team Foundation Build Server  
  Los servidores de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] no tienen normalmente Visual Studio instalado y, por lo tanto, VSIX no se puede instalar haciendo doble clic en él. La instalación de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] incluye algunos componentes que permiten ejecutar una extensión VSIX, pero esta se debe instalar manualmente.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>Para instalar la extensión por capas en un servidor de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] Server  
   
-1.  Copia el **.vsix** archivos desde el equipo de desarrollo para la [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] equipo.  
+1. Copia el **.vsix** archivos desde el equipo de desarrollo para la [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] equipo.  
   
      Coloque el archivo VSIX en una de las siguientes ubicaciones:  
   
-    -   Para instalarlo para todos los usuarios y servicios:  
+    - Para instalarlo para todos los usuarios y servicios:  
   
          %ProgramFiles%\Microsoft Visual Studio [versión]\Common7\IDE\Extensions\Microsoft  
   
-    -   Para instalarlo solo para el servicio de red que ejecuta [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
+    - Para instalarlo solo para el servicio de red que ejecuta [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
   
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
-    -   Si ha configurado [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] para ejecutarlo en modo interactivo como un usuario concreto, puede instalarlo solo para ese usuario:  
+    - Si ha configurado [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] para ejecutarlo en modo interactivo como un usuario concreto, puede instalarlo solo para ese usuario:  
   
          %LocalAppData%\Microsoft\VisualStudio\\\Extensions\Microsoft [versión]  
   
         > [!NOTE]
         >  % LocalAppData % está normalmente *DriveName*: los usuarios*UserName*AppDataLocal.  
   
-2.  Expanda cada archivo VSIX en una carpeta en la misma ubicación:  
+2. Expanda cada archivo VSIX en una carpeta en la misma ubicación:  
   
-    1.  Cambiar la extensión de nombre de archivo de **.vsix** a **.zip**.  
+    1. Cambiar la extensión de nombre de archivo de **.vsix** a **.zip**.  
   
-    2.  Extraiga el contenido del archivo .zip a una carpeta.  
+    2. Extraiga el contenido del archivo .zip a una carpeta.  
   
-    3.  Elimine el archivo .zip  
+    3. Elimine el archivo .zip  
   
-3.  Reinicie [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
+3. Reinicie [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].

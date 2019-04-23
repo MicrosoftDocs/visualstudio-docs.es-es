@@ -14,12 +14,12 @@ ms.assetid: 971e9d5a-f88a-47a8-af94-f3c7c4aed5ab
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b1e404a9df368f639530d533b8cf4bf063f8ad6
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 1cbfa4de401c2a1dc0626f8f00dbb0bd1bf24408
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842434"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079596"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Intervalo no válido en el juego de caracteres (JavaScript)
 Se intentó crear una expresión regular con un intervalo de conjunto de caracteres no válidos. Juegos de caracteres deben oscilar entre caracteres individuales, como a-z o 0-9; no se incluyen las clases de caracteres como \w en un juego de caracteres. El primer carácter del intervalo también debe ir delante del segundo carácter del intervalo. Por ejemplo:  
@@ -31,7 +31,7 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Use caracteres único solo para componer el juego de caracteres de expresión regular y asegúrese de que se encuentran en el orden correcto.  
+- Use caracteres único solo para componer el juego de caracteres de expresión regular y asegúrese de que se encuentran en el orden correcto.  
   
 ## <a name="see-also"></a>Vea también  
  [Objeto de expresión regular](../../javascript/reference/regular-expression-object-javascript.md)   

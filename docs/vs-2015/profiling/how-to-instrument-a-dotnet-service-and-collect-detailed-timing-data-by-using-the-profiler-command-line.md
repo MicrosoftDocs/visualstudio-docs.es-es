@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e1940bb3825fd610d4177b92c7147bfcd55b6174
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 36d9f2abceb7daf0d9e4be72958b2bbc1fe86204
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659363"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080545"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar un servicio .NET y recopilar información de tiempo detallada de datos mediante el uso de la línea de comandos de Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
 
--   Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
+- Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
 
     |Opción|Descripción|  
     |------------|-----------------|  
@@ -98,19 +98,19 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
 
-1.  Detenga el servicio en el Administrador de control de servicios.  
+1. Detenga el servicio en el Administrador de control de servicios.  
 
-2.  Cierre el generador de perfiles. Tipo:  
+2. Cierre el generador de perfiles. Tipo:  
 
      **VSPerfCmd /shutdown**  
 
-3.  Cuando haya finalizado la generación de perfiles, borre las variables de entorno de generación de perfiles. Tipo:  
+3. Cuando haya finalizado la generación de perfiles, borre las variables de entorno de generación de perfiles. Tipo:  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Reemplace el módulo instrumentado con el original. Si es necesario, vuelva a configurar el Tipo de inicio del servicio.  
+4. Reemplace el módulo instrumentado con el original. Si es necesario, vuelva a configurar el Tipo de inicio del servicio.  
 
-5.  Reinicie el equipo.  
+5. Reinicie el equipo.  
 
 ## <a name="see-also"></a>Vea también  
  [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)   

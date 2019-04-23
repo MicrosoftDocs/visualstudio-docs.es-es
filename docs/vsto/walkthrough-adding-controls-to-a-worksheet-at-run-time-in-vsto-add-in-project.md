@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ff27d54d14cd514c3bef1ce712fb6f2b9753e4c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04de1e652aae1de91695029c9af66c4ad331f789
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611352"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096782"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Tutorial: Agregar controles a una hoja de cálculo en tiempo de ejecución en un proyecto de complemento de VSTO
   Puede agregar controles a cualquier hoja de cálculo abierta mediante el uso de un complemento de VSTO de Excel. Este tutorial muestra cómo usar la cinta para permitir a los usuarios agregar un <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> y <xref:Microsoft.Office.Tools.Excel.ListObject> a una hoja de cálculo. Para obtener información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -40,51 +40,51 @@ ms.locfileid: "56611352"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Excel
+- Excel
 
 ## <a name="create-a-new-excel-vsto-add-in-project"></a>Cree un nuevo proyecto de complemento VSTO de Excel
  Comience creando un proyecto de complemento de VSTO de Excel.
 
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Para crear un nuevo proyecto de complemento de VSTO de Excel
 
-1.  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de complemento VSTO de Excel con el nombre **ExcelDynamicControls**. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de complemento VSTO de Excel con el nombre **ExcelDynamicControls**. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Agregue una referencia a la **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** ensamblado. Esta referencia es obligatoria para agregar mediante programación un control de Windows Forms a una hoja de cálculo más adelante en este tutorial.
+2. Agregue una referencia a la **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** ensamblado. Esta referencia es obligatoria para agregar mediante programación un control de Windows Forms a una hoja de cálculo más adelante en este tutorial.
 
 ## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>Proporcionar una interfaz de usuario para agregar controles a una hoja de cálculo
  Agregue una pestaña personalizada a la cinta de Excel. Los usuarios pueden seleccionar las casillas en la pestaña para agregar controles a una hoja de cálculo.
 
 #### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>Para proporcionar una interfaz de usuario para agregar controles a una hoja de cálculo
 
-1.  En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
+1. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-2.  En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **cinta (diseñador Visual)** y, a continuación, haga clic en **agregar**.
+2. En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **cinta (diseñador Visual)** y, a continuación, haga clic en **agregar**.
 
      Un archivo denominado **Ribbon1.cs** o **Ribbon1.vb** se abre en el Diseñador de cinta de opciones y muestra una ficha predeterminada y un grupo.
 
-3.  Desde el **controles de la cinta de Office** pestaña de la **cuadro de herramientas**, arrastre un control CheckBox **group1**.
+3. Desde el **controles de la cinta de Office** pestaña de la **cuadro de herramientas**, arrastre un control CheckBox **group1**.
 
-4.  Haga clic en **CheckBox1** para seleccionarlo.
+4. Haga clic en **CheckBox1** para seleccionarlo.
 
-5.  En la ventana **Propiedades** , cambie las siguientes propiedades:
+5. En la ventana **Propiedades** , cambie las siguientes propiedades:
 
-    |Property|Valor|
+    |Propiedad|Valor|
     |--------------|-----------|
     |**Name**|**Button**|
     |**Label**|**Button**|
 
-6.  Agregue una segunda casilla a **group1**, y, a continuación, cambie las siguientes propiedades.
+6. Agregue una segunda casilla a **group1**, y, a continuación, cambie las siguientes propiedades.
 
     |Property|Valor|
     |--------------|-----------|
     |**Name**|**NamedRange**|
     |**Label**|**NamedRange**|
 
-7.  Agregue una tercera casilla a **group1**y, a continuación, cambie las siguientes propiedades.
+7. Agregue una tercera casilla a **group1**y, a continuación, cambie las siguientes propiedades.
 
-    |Property|Valor|
+    |Propiedad|Valor|
     |--------------|-----------|
     |**Name**|**ListObject**|
     |**Label**|**ListObject**|
@@ -94,33 +94,33 @@ ms.locfileid: "56611352"
 
 ### <a name="to-add-controls-to-a-worksheet"></a>Para agregar controles a una hoja de cálculo
 
-1.  En el Diseñador de cinta de opciones, haga doble clic en **botón**.
+1. En el Diseñador de cinta de opciones, haga doble clic en **botón**.
 
      El <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> controlador de eventos de la **botón** casilla de verificación se abre en el Editor de código.
 
-2.  Reemplace el controlador de eventos `Button_Click` por el siguiente código:
+2. Reemplace el controlador de eventos `Button_Click` por el siguiente código:
 
      Este código usa el método `GetVstoObject` para obtener un elemento host que representa la primera hoja de cálculo del libro y, a continuación, agrega un control <xref:Microsoft.Office.Tools.Excel.Controls.Button> a la celda seleccionada actualmente.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
 
-3.  En **el Explorador de soluciones**, seleccione *Ribbon1.cs* o *Ribbon1.vb*.
+3. En **el Explorador de soluciones**, seleccione *Ribbon1.cs* o *Ribbon1.vb*.
 
-4.  En el **vista** menú, haga clic en **diseñador**.
+4. En el **vista** menú, haga clic en **diseñador**.
 
-5.  En el Diseñador de cinta de opciones, haga doble clic en **NamedRange**.
+5. En el Diseñador de cinta de opciones, haga doble clic en **NamedRange**.
 
-6.  Reemplace el controlador de eventos `NamedRange_Click` por el siguiente código:
+6. Reemplace el controlador de eventos `NamedRange_Click` por el siguiente código:
 
      Este código usa el método `GetVstoObject` para obtener un elemento host que representa la primera hoja de cálculo del libro y, a continuación, define un control <xref:Microsoft.Office.Tools.Excel.NamedRange> para la celda o celdas seleccionadas actualmente.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#3)]
      [!code-vb[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#3)]
 
-7.  En el Diseñador de cinta de opciones, haga doble clic en **ListObject**.
+7. En el Diseñador de cinta de opciones, haga doble clic en **ListObject**.
 
-8.  Reemplace el controlador de eventos `ListObject_Click` por el siguiente código:
+8. Reemplace el controlador de eventos `ListObject_Click` por el siguiente código:
 
      Este código usa el método `GetVstoObject` para obtener un elemento host que representa la primera hoja de cálculo del libro y, a continuación, define un <xref:Microsoft.Office.Tools.Excel.ListObject> para la celda o celdas seleccionadas actualmente.
 
@@ -137,16 +137,16 @@ ms.locfileid: "56611352"
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>Para quitar controles de la hoja de cálculo
 
-1.  En **el Explorador de soluciones**, seleccione *ThisAddIn.cs* o *ThisAddIn.vb*.
+1. En **el Explorador de soluciones**, seleccione *ThisAddIn.cs* o *ThisAddIn.vb*.
 
-2.  En el **vista** menú, haga clic en **código**.
+2. En el **vista** menú, haga clic en **código**.
 
-3.  Agregue el método siguiente a la clase `ThisAddIn`. Este código obtiene la primera hoja de cálculo del libro y, a continuación, usa el método `HasVstoObject` para comprobar si la hoja de cálculo tiene un objeto de hoja de cálculo generado. Si el objeto de hoja de cálculo generado tiene controles, el código obtiene ese objeto de hoja de cálculo y recorre en iteración la colección de controles, quitando los controles.
+3. Agregue el método siguiente a la clase `ThisAddIn`. Este código obtiene la primera hoja de cálculo del libro y, a continuación, usa el método `HasVstoObject` para comprobar si la hoja de cálculo tiene un objeto de hoja de cálculo generado. Si el objeto de hoja de cálculo generado tiene controles, el código obtiene ese objeto de hoja de cálculo y recorre en iteración la colección de controles, quitando los controles.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
 
-4.  En C# debe crear un controlador de eventos para el evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>. Puede colocar este código en el método `ThisAddIn_Startup`. Para obtener más información acerca de cómo crear controladores de eventos, vea [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md). Reemplace el método `ThisAddIn_Startup` por el código siguiente.
+4. En C# debe crear un controlador de eventos para el evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>. Puede colocar este código en el método `ThisAddIn_Startup`. Para obtener más información acerca de cómo crear controladores de eventos, vea [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md). Reemplace el método `ThisAddIn_Startup` por el código siguiente.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]
 
@@ -155,25 +155,25 @@ ms.locfileid: "56611352"
 
 ### <a name="to-test-the-solution"></a>Para probar la solución.
 
-1.  Presione **F5** para ejecutar el proyecto.
+1. Presione **F5** para ejecutar el proyecto.
 
-2.  Seleccione cualquier celda de Hoja1.
+2. Seleccione cualquier celda de Hoja1.
 
-3.  Haga clic en la pestaña **Complementos** .
+3. Haga clic en la pestaña **Complementos** .
 
-4.  En el **group1** grupo, haga clic en **botón**.
+4. En el **group1** grupo, haga clic en **botón**.
 
      Se mostrará un botón en la celda seleccionada.
 
-5.  Seleccione otra celda en Hoja1.
+5. Seleccione otra celda en Hoja1.
 
-6.  En el **group1** grupo, haga clic en **NamedRange**.
+6. En el **group1** grupo, haga clic en **NamedRange**.
 
      Se define un rango con nombre para la celda seleccionada.
 
-7.  Seleccione una serie de celdas en Hoja1.
+7. Seleccione una serie de celdas en Hoja1.
 
-8.  En el **group1** grupo, haga clic en **ListObject**.
+8. En el **group1** grupo, haga clic en **ListObject**.
 
      Se agrega un objeto de lista para las celdas seleccionadas.
 
@@ -184,7 +184,7 @@ ms.locfileid: "56611352"
 ## <a name="next-steps"></a>Pasos siguientes
  Puede obtener más información acerca de los controles en proyectos de complemento de Excel de VSTO en este tema:
 
--   Para obtener información acerca de cómo guardar controles en una hoja de cálculo, vea el VSTO de Excel complemento dinámica los controles de ejemplo en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).
+- Para obtener información acerca de cómo guardar controles en una hoja de cálculo, vea el VSTO de Excel complemento dinámica los controles de ejemplo en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).
 
 ## <a name="see-also"></a>Vea también
 - [Soluciones de Excel](../vsto/excel-solutions.md)

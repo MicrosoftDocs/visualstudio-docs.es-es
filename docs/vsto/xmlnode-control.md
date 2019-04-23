@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2102bc7f91570bf68616eb62520e5b955204c26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8bd5c4612b59f909ae623eb4092a209798f98c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085277"
 ---
 # <a name="xmlnode-control"></a>XMLNode (control)
   **Importante** la información en este tema con respecto a Microsoft Word se presenta exclusivamente para el uso y disfrute de individuos y organizaciones que se encuentran fuera de Estados Unidos y sus territorios o quién está usando o desarrollo programas que se ejecutan en, los productos de Microsoft Word que se licencia de Microsoft antes de enero de 2010, cuando Microsoft quita una implementación de la funcionalidad concreta relacionadas con XML personalizado de Microsoft Word. Esta información con respecto a Microsoft Word no puede ser leída o utilizada por personas u organizaciones en Estados Unidos o en sus territorios que utiliza, o desarrollar programas que se ejecutan en los productos de Microsoft Word que se licencia de Microsoft después de 10 de enero de 2010 ; los productos no comportarán igual que los productos con licencia antes de esa fecha o adquirido y con licencia para su uso fuera de Estados Unidos.
@@ -37,23 +37,23 @@ ms.locfileid: "56599576"
 ## <a name="events"></a>Eventos
  Los eventos siguientes están disponibles para el control <xref:Microsoft.Office.Tools.Word.XMLNode> :
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.BeforeDelete>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.BeforeDelete>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.Select>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.Select>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>
 
 ## <a name="compare-events"></a>Comparar eventos
  Puede capturar un evento cuando el usuario mueve el cursor dentro del contexto de una determinada <xref:Microsoft.Office.Tools.Word.XMLNode> control. Por ejemplo, podría tener un <xref:Microsoft.Office.Tools.Word.XMLNode> control denominado `Customer` que tiene un elemento secundario <xref:Microsoft.Office.Tools.Word.XMLNode> control denominado `Company`, y `Company` tiene dos secundarios <xref:Microsoft.Office.Tools.Word.XMLNode> controles denominados `CompanyName` y `CompanyRegion` como sigue:

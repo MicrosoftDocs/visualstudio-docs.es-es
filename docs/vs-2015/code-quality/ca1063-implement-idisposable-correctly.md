@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 52e77762900a321cf547709d98d9856088580789
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081403"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementar IDisposable correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,23 +59,23 @@ ms.locfileid: "58997239"
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Examine el código y determinar cuál de las siguientes resoluciones corregirá esta infracción.
 
--   Quite IDisposable de la lista de interfaces implementadas por {0} e invalidar la implementación de Dispose de clase base en su lugar.
+- Quite IDisposable de la lista de interfaces implementadas por {0} e invalidar la implementación de Dispose de clase base en su lugar.
 
--   Quite el finalizador del tipo {0}, invalide Dispose (bool disposing) y coloque la lógica de finalización en la ruta de acceso del código donde 'disposing' es false.
+- Quite el finalizador del tipo {0}, invalide Dispose (bool disposing) y coloque la lógica de finalización en la ruta de acceso del código donde 'disposing' es false.
 
--   Quitar {0}, invalide Dispose (bool disposing) y coloque la lógica de dispose en la ruta de acceso del código donde 'disposing' es true.
+- Quitar {0}, invalide Dispose (bool disposing) y coloque la lógica de dispose en la ruta de acceso del código donde 'disposing' es true.
 
--   Asegúrese de que {0} está declarado como público y sellado.
+- Asegúrese de que {0} está declarado como público y sellado.
 
--   Cambiar el nombre {0} a 'Dispose' y asegúrese de que se declara como public y sealed.
+- Cambiar el nombre {0} a 'Dispose' y asegúrese de que se declara como public y sealed.
 
--   Asegúrese de que {0} se declaró como protegido, virtual y no sellados.
+- Asegúrese de que {0} se declaró como protegido, virtual y no sellados.
 
--   Modificar {0} para que llame a Dispose (true), a continuación, llama a GC. SuppressFinalize en la instancia del objeto actual ('this' o 'Me' en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) y, a continuación, se devuelve.
+- Modificar {0} para que llame a Dispose (true), a continuación, llama a GC. SuppressFinalize en la instancia del objeto actual ('this' o 'Me' en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) y, a continuación, se devuelve.
 
--   Modificar {0} para que se llama a Dispose (false) y, a continuación, se devuelve.
+- Modificar {0} para que se llama a Dispose (false) y, a continuación, se devuelve.
 
--   Si está escribiendo una clase IDisposable de raíz no sellada, asegúrese de que la implementación de IDisposable sigue el patrón descrito anteriormente en esta sección.
+- Si está escribiendo una clase IDisposable de raíz no sellada, asegúrese de que la implementación de IDisposable sigue el patrón descrito anteriormente en esta sección.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.

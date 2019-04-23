@@ -1,5 +1,5 @@
 ---
-title: Filtrar Suprimir advertencias mediante el elemento de menú | Documentos de Microsoft
+title: Procedimiento Suprimir advertencias mediante el elemento de menú | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,14 +12,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83fd93d2e1e2e5d99f7ea8eca9f5de4ce1b4c7f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080909"
 ---
-# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Filtrar Suprimir advertencias mediante el elemento de menú
+# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Procedimiento Suprimir advertencias mediante el elemento de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
@@ -33,11 +33,11 @@ NOTA]
   
 ### <a name="to-suppress-a-warning-by-using-menu-item"></a>Para suprimir una advertencia mediante el uso de elemento de menú  
   
-1.  En el **analizar** menú, elija **Windows** y, a continuación, elija **análisis de código**.  
+1. En el **analizar** menú, elija **Windows** y, a continuación, elija **análisis de código**.  
   
-2.  En el **análisis de código** ventana, seleccione la supresión de advertencia.  
+2. En el **análisis de código** ventana, seleccione la supresión de advertencia.  
   
-3.  Elija las acciones y luego elija **Suprimir mensajes**y, a continuación, elija **en origen** o **en el archivo de supresión del proyecto**.  
+3. Elija las acciones y luego elija **Suprimir mensajes**y, a continuación, elija **en origen** o **en el archivo de supresión del proyecto**.  
   
      Se suprime la advertencia concreta, y la advertencia aparece en la ventana de análisis de código con un tachado.  
   

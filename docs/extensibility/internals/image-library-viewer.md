@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5457c0b4e7b355c130fedbdbba456b550a35f1ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084822"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
 La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y buscar los manifiestos de imagen, que permite al usuario manipularlos en la misma manera Visual Studio. El usuario puede modificar otras opciones, tamaños, PPP, contraste alto y en segundo plano. La herramienta también muestra información de carga para cada manifiesto de imagen y muestra información de origen para cada imagen en el manifiesto de imagen. Esta herramienta es útil para:
@@ -73,7 +73,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |**Subelemento**|**Definición**|
 |Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|
 |GUID|El símbolo representa un GUID y debe coincidir con el formato de GUID.|
-|Id.|El símbolo representa un identificador y debe ser un entero no negativo.|
+|ID|El símbolo representa un identificador y debe ser un entero no negativo.|
 |String|El símbolo representa un valor de cadena arbitrario.|
 
  Los símbolos son distingue mayúsculas de minúsculas y que se hace referencia mediante la sintaxis $(symbol-name):
@@ -114,7 +114,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |-|-|
 |**Attribute**|**Definición**|
 |GUID|[Obligatorio] La parte GUID del moniker de imagen|
-|Id.|[Obligatorio] La parte del identificador de moniker de la imagen|
+|ID|[Obligatorio] La parte del identificador de moniker de la imagen|
 |AllowColorInversion|[Opcional, true de forma predeterminada] Indica si la imagen puede tener sus colores invertidos mediante programación cuando se utiliza en un fondo oscuro.|
 
  **Origen**
@@ -153,7 +153,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |-|-|
 |**Attribute**|**Definición**|
 |Tipo|[Obligatorio] El tipo del recurso nativo, XAML o PNG|
-|Id.|[Obligatorio] La parte de identificador entero del recurso nativo|
+|ID|[Obligatorio] La parte de identificador entero del recurso nativo|
 
  **ImageList**
 
@@ -170,7 +170,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |-|-|
 |**Attribute**|**Definición**|
 |GUID|[Obligatorio] La parte GUID del moniker de imagen|
-|Id.|[Obligatorio] La parte del identificador de moniker de la imagen|
+|ID|[Obligatorio] La parte del identificador de moniker de la imagen|
 |Externo|[Opcional, valor predeterminado es false] Indica si el moniker de imagen hace referencia a una imagen en el manifiesto actual.|
 
  El moniker de la imagen independiente no tiene que hacer referencia a una imagen que se definen en el manifiesto actual. Si no se encuentra la imagen contenida en la biblioteca de imágenes, se utilizará una imagen de marcador de posición en blanco en su lugar.
@@ -224,9 +224,9 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 
 ## <a name="notes"></a>Notas
 
--   De forma predeterminada, la herramienta se extraerá en varios manifiestos de imagen presentes en el directorio de instalación de Visual Studio. Es el único que tiene los monikers públicamente la **Microsoft.VisualStudio.ImageCatalog** manifiesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (hacer **no** reemplazar este GUID en un manifiesto personalizado) tipo: KnownMonikers
+- De forma predeterminada, la herramienta se extraerá en varios manifiestos de imagen presentes en el directorio de instalación de Visual Studio. Es el único que tiene los monikers públicamente la **Microsoft.VisualStudio.ImageCatalog** manifiesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (hacer **no** reemplazar este GUID en un manifiesto personalizado) tipo: KnownMonikers
 
--   La herramienta intente cargar todos los manifiestos de imagen que se encuentra, por lo que puede tardar varios segundos para que aparecen en realidad la aplicación al iniciarse. También podría ser lento o no responde al cargar los manifiestos.
+- La herramienta intente cargar todos los manifiestos de imagen que se encuentra, por lo que puede tardar varios segundos para que aparecen en realidad la aplicación al iniciarse. También podría ser lento o no responde al cargar los manifiestos.
 
 ## <a name="sample-output"></a>Resultados del ejemplo
  Esta herramienta no genera ningún resultado.

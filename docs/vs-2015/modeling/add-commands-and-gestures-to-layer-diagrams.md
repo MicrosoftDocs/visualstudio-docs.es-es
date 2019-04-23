@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0be2860408634d78b8d25403de99e7fcb410422c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998837"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079829"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Agregar comandos y gestos a diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,30 +62,30 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>Para agregar extensiones de nivel a un VSIX independiente  
   
-1.  Cree un proyecto de biblioteca de clases en una solución de Visual Studio nueva o en una existente. En el cuadro de diálogo **Nuevo proyecto** , haga clic en **Visual C#** y haga clic en **Biblioteca de clases**. Este proyecto contendrá clases de controlador de comandos o de gestos.  
+1. Cree un proyecto de biblioteca de clases en una solución de Visual Studio nueva o en una existente. En el cuadro de diálogo **Nuevo proyecto** , haga clic en **Visual C#** y haga clic en **Biblioteca de clases**. Este proyecto contendrá clases de controlador de comandos o de gestos.  
   
     > [!NOTE]
     >  Puede definir más de una clase de controlador de comandos o de gestos en una biblioteca de clases, pero debe definir las clases de validación de capas en una biblioteca de clases independiente.  
   
-2.  Identifique o cree un proyecto de VSIX en la solución. Un proyecto de VSIX contiene un archivo denominado **source.extension.vsixmanifest**. Para agregar una clase a un proyecto de VSIX:  
+2. Identifique o cree un proyecto de VSIX en la solución. Un proyecto de VSIX contiene un archivo denominado **source.extension.vsixmanifest**. Para agregar una clase a un proyecto de VSIX:  
   
-    1.  En el cuadro de diálogo **Nuevo proyecto** , expanda **Visual C#**, haga clic en **Extensibility**(Extensibilidad) y, a continuación, en **VSIX Project**(Proyecto de VSIX).  
+    1. En el cuadro de diálogo **Nuevo proyecto** , expanda **Visual C#**, haga clic en **Extensibility**(Extensibilidad) y, a continuación, en **VSIX Project**(Proyecto de VSIX).  
   
-    2.  En el Explorador de soluciones, haga clic con el botón secundario en el proyecto de VSIX y, a continuación, haga clic en **Establecer como proyecto de inicio**.  
+    2. En el Explorador de soluciones, haga clic con el botón secundario en el proyecto de VSIX y, a continuación, haga clic en **Establecer como proyecto de inicio**.  
   
-    3.  Haga clic en **Seleccionar ediciones** y asegúrese de que **Visual Studio** está activado.  
+    3. Haga clic en **Seleccionar ediciones** y asegúrese de que **Visual Studio** está activado.  
   
-3.  En **source.extension.vsixmanifest**, en **Activos**, agregue el proyecto de controlador de comandos o de gestos como componente MEF.  
+3. En **source.extension.vsixmanifest**, en **Activos**, agregue el proyecto de controlador de comandos o de gestos como componente MEF.  
   
-    1.  En la pestaña **Activos**, elija **Nuevo**.  
+    1. En la pestaña **Activos**, elija **Nuevo**.  
   
-    2.  En **Tipo**, seleccione **Microsoft.VisualStudio.MefComponent**.  
+    2. En **Tipo**, seleccione **Microsoft.VisualStudio.MefComponent**.  
   
-    3.  En **Origen**seleccione el **proyecto de la solución actual** y seleccione el nombre del proyecto de controlador de comandos o de gestos.  
+    3. En **Origen**seleccione el **proyecto de la solución actual** y seleccione el nombre del proyecto de controlador de comandos o de gestos.  
   
-    4.  Guarde el archivo.  
+    4. Guarde el archivo.  
   
-4.  Vuelva al proyecto de controlador de comandos o de gestos, y agregue las siguientes referencias de proyecto.  
+4. Vuelva al proyecto de controlador de comandos o de gestos, y agregue las siguientes referencias de proyecto.  
   
 |**Referencia**|**Qué permite hacer**|  
 |-------------------|------------------------------------|  
@@ -96,7 +96,7 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
 |Microsoft.VisualStudio.Modeling.Sdk.[versión]|Definir las extensiones de modelado|  
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versión]|Actualizar formas y diagramas|  
   
-1.  Edite el archivo de clases en el proyecto de biblioteca de clases de C# para que contenga el código de la extensión. Para obtener más información, vea una de las secciones siguientes:  
+1. Edite el archivo de clases en el proyecto de biblioteca de clases de C# para que contenga el código de la extensión. Para obtener más información, vea una de las secciones siguientes:  
   
      [Definir un comando de menú](#command)  
   
@@ -104,13 +104,13 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
   
      Vea también [navegación y actualización de modelos en el código de programa capa](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Para probar la característica, presione CTRL+F5 o F5. Se abre una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . En esta instancia, cree o abra un diagrama de capas.  
+2. Para probar la característica, presione CTRL+F5 o F5. Se abre una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . En esta instancia, cree o abra un diagrama de capas.  
   
-3.  Para instalar VSIX en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en el directorio **bin** del proyecto de VSIX. Cópielo en el equipo donde desea instalar VSIX. Haga doble clic en el archivo VSIX en el Explorador de Windows (Explorador de archivos en Windows 8).  
+3. Para instalar VSIX en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en el directorio **bin** del proyecto de VSIX. Cópielo en el equipo donde desea instalar VSIX. Haga doble clic en el archivo VSIX en el Explorador de Windows (Explorador de archivos en Windows 8).  
   
      Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   
-##  <a name="command"></a> Definir un comando de menú  
+## <a name="command"></a> Definir un comando de menú  
  Puede agregar más definiciones de comando de menú a un proyecto de gesto o comando existente. Cada comando se define con una clase que tiene las siguientes características:  
   
 - La clase se declara de la siguiente forma:  
@@ -125,11 +125,11 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
   
 - Los métodos que implementan `ICommandExtension` son los siguientes:  
   
-  -   `string Text {get;}` - La etiqueta que aparece en el menú.  
+  - `string Text {get;}` - La etiqueta que aparece en el menú.  
   
-  -   `void QueryStatus(IMenuCommand command)` - se le llama cuando el usuario hace clic con el botón secundario en el diagrama y determina si el comando debería estar visible y habilitado para la selección actual del usuario.  
+  - `void QueryStatus(IMenuCommand command)` - se le llama cuando el usuario hace clic con el botón secundario en el diagrama y determina si el comando debería estar visible y habilitado para la selección actual del usuario.  
   
-  -   `void Execute(IMenuCommand command)` - se le llama cuando el usuario selecciona el comando.  
+  - `void Execute(IMenuCommand command)` - se le llama cuando el usuario selecciona el comando.  
   
 - Para determinar la selección actual, puede importar `IDiagramContext`:  
   
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a> Definir un controlador de gestos  
+## <a name="gesture"></a> Definir un controlador de gestos  
  Un controlador de gestos responde cuando el usuario arrastra elementos hasta el diagrama de capas y cuando hace doble clic en cualquier parte del diagrama.  
   
  En el proyecto de VSIX existente de controlador de comandos o gestos, puede agregar un archivo de código que defina un controlador de gestos:  

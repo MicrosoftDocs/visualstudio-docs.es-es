@@ -1,5 +1,5 @@
 ---
-title: Filtrar Depurar excepciones de ASP.NET | Microsoft Docs
+title: Procedimiento Depurar excepciones de ASP.NET | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,14 +18,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c34ac4fdcf50d1fde95c957de6aff4b7f004a2d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1ccd8c399bd92bd98307d44aff913c30390033c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083717"
 ---
-# <a name="how-to-debug-aspnet-exceptions"></a>Filtrar Depuración de excepciones de ASP.NET
+# <a name="how-to-debug-aspnet-exceptions"></a>Procedimiento Depuración de excepciones de ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La depuración de excepciones es una parte importante del desarrollo de una aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] sólida. Información general sobre cómo depurar excepciones es en [administrar excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).  
@@ -38,14 +38,14 @@ La depuración de excepciones es una parte importante del desarrollo de una apli
   
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>Para habilitar la depuración de las excepciones ASP.NET con Sólo mi código  
   
-1.  En el menú **Depurar**, haga clic en **Excepciones**.  
+1. En el menú **Depurar**, haga clic en **Excepciones**.  
   
      Aparecerá el cuadro de diálogo **Excepciones**.  
   
-2.  Seleccione **Producida** o **No controlada por el usuario**, en la fila **Excepciones de Common Language Runtime**.  
+2. Seleccione **Producida** o **No controlada por el usuario**, en la fila **Excepciones de Common Language Runtime**.  
   
      Para utilizar la configuración **No controlada por el usuario**, debe habilitar **Solo mi código**.  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>Para llevar a cabo los procedimientos recomendados para el control de excepciones ASP.NET  
   
--   Sitúe los bloques `try … catch` alrededor del código susceptible de producir excepciones que pueda prever y sepa cómo controlar. Por ejemplo, si la aplicación realiza llamadas a un servicio Web XML o directamente a un servidor SQL Server, que el código debe estar en **try... catch** bloquea porque hay numerosas excepciones que pueden producirse.
+- Sitúe los bloques `try … catch` alrededor del código susceptible de producir excepciones que pueda prever y sepa cómo controlar. Por ejemplo, si la aplicación realiza llamadas a un servicio Web XML o directamente a un servidor SQL Server, que el código debe estar en **try... catch** bloquea porque hay numerosas excepciones que pueden producirse.

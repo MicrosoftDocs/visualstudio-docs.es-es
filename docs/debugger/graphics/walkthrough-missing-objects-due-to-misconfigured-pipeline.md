@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Objetos ausentes debido al canalización mal configurada | Microsoft Docs'
+title: 'Tutorial: Objetos ausentes debido al canalización mal configurada | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32b76a4f063cd15d5f36db6ea8b672dbeda4d54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097614"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Tutorial: Objetos ausentes debido a una canalización mal configurada
 En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráficos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un sombreador de píxeles sin establecer.
 
  En el tutorial se muestran las tareas siguientes:
 
--   Uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.
+- Uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.
 
--   Uso de la ventana **Etapas de canalización de gráficos** para examinar el efecto de la llamada API de Direct3D `DrawIndexed` .
+- Uso de la ventana **Etapas de canalización de gráficos** para examinar el efecto de la llamada API de Direct3D `DrawIndexed` .
 
--   Inspección del contexto del dispositivo para confirmar que no se estableció una etapa de sombreador.
+- Inspección del contexto del dispositivo para confirmar que no se estableció una etapa de sombreador.
 
--   Uso de la ventana **Etapas de canalización de gráficos** junto con la **Pila de llamadas de eventos gráficos** para ayudar a encontrar el origen del sombreador de píxeles sin establecer.
+- Uso de la ventana **Etapas de canalización de gráficos** junto con la **Pila de llamadas de eventos gráficos** para ayudar a encontrar el origen del sombreador de píxeles sin establecer.
 
 ## <a name="scenario"></a>Escenario
  Cuando falta un objeto en una aplicación 3D, a veces se debe a que no se establece una de las etapas del sombreador antes de que se represente el objeto. En el caso de las aplicaciones que tienen necesidades de representación sencillas, el origen de este error se encuentra normalmente en algún lugar de la pila de llamadas de la llamada a draw del objeto. Sin embargo, como optimización, algunas aplicaciones procesan juntos objetos con programas de sombreador, texturas u otros datos en común para minimizar la sobrecarga del cambio de estado. En estas aplicaciones, el origen del error se podría incluir en el sistema de procesamiento por lotes, en lugar de encontrarse en la pila de llamadas de la llamada a draw. En el escenario de este tutorial se muestra una aplicación con necesidades de representación sencillas y, por tanto, el origen del error se puede encontrar en la pila de llamadas.

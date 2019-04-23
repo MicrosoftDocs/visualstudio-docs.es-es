@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095690"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creación de una aplicación de datos sencilla mediante ADO.NET
 
@@ -31,9 +31,9 @@ En este artículo se muestra una manera sencilla de obtener datos de una base de
 
 Para crear la aplicación, necesitará:
 
--   Visual Studio.
+- Visual Studio.
 
--   SQL Server Express LocalDB. Si no tiene SQL Server Express LocalDB, puede instalarlo desde el [página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
+- SQL Server Express LocalDB. Si no tiene SQL Server Express LocalDB, puede instalarlo desde el [página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 En este tema se da por supuesto que está familiarizado con la funcionalidad básica del IDE de Visual Studio y puede crear una aplicación de Windows Forms, agregar formularios para el proyecto, colocar botones y otros controles en los formularios, establecer las propiedades de los controles y codificar eventos simples. Si no está familiarizado con estas tareas, recomendamos que complete la [Introducción a Visual C# y Visual Basic](../ide/quickstart-visual-basic-console.md) tema antes de empezar este tutorial.
 
@@ -59,7 +59,7 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 
 7. Pegue el script de Transact-SQL en el editor de consultas y, a continuación, elija el **Execute** botón.
 
-     Después de un breve tiempo, finalice la consulta y se crean los objetos de base de datos. La base de datos contiene dos tablas: clientes y pedidos. Estas tablas no contienen datos inicialmente, pero puede agregar datos al ejecutar la aplicación que se va a crear. La base de datos también contiene cuatro procedimientos almacenados simples.
+     Después de un breve tiempo, finalice la consulta y se crean los objetos de base de datos. La base de datos contiene dos tablas: Los clientes y pedidos. Estas tablas no contienen datos inicialmente, pero puede agregar datos al ejecutar la aplicación que se va a crear. La base de datos también contiene cuatro procedimientos almacenados simples.
 
 ## <a name="create-the-forms-and-add-controls"></a>Crear los formularios y agregar controles
 
@@ -69,11 +69,11 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 
 2. Agregue dos formularios de Windows al proyecto para que tenga tres formularios y, a continuación, asígneles los siguientes nombres:
 
-   -   **Navegación**
+   - **Navegación**
 
-   -   **NewCustomer**
+   - **NewCustomer**
 
-   -   **FillOrCancel**
+   - **FillOrCancel**
 
 3. Para cada formulario, agregue los cuadros de texto, botones y otros controles que aparecen en las siguientes ilustraciones. Para cada control, establezca las propiedades que se describen en las tablas.
 
@@ -124,21 +124,21 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 
  Puede encontrar la cadena de conexión con el botón secundario en el **ventas** conexión de datos en **Explorador de servidores** y eligiendo **propiedades**. Busque el **ConnectionString** propiedad, a continuación, usar **Ctrl**+**A**, **Ctrl**+**C**  para seleccionar y copiar la cadena en el Portapapeles.
 
-1.  Si usa C#, en **el Explorador de soluciones**, expanda el **propiedades** nodo bajo el proyecto y, a continuación, abra el **Settings.settings** archivo.
+1. Si usa C#, en **el Explorador de soluciones**, expanda el **propiedades** nodo bajo el proyecto y, a continuación, abra el **Settings.settings** archivo.
     Si usa Visual Basic, en **el Explorador de soluciones**, haga clic en **mostrar todos los archivos**, expanda el **mi proyecto** nodo y, a continuación, abra el **Settings.settings** archivo.
 
-2.  En el **nombre** columna, escriba `connString`.
+2. En el **nombre** columna, escriba `connString`.
 
-3.  En el **tipo** lista, seleccione **(cadena de conexión)**.
+3. En el **tipo** lista, seleccione **(cadena de conexión)**.
 
-4.  En el **ámbito** lista, seleccione **aplicación**.
+4. En el **ámbito** lista, seleccione **aplicación**.
 
-5.  En el **valor** columna, escriba la cadena de conexión (sin ninguna fuera de las comillas) y, a continuación, guarde los cambios.
+5. En el **valor** columna, escriba la cadena de conexión (sin ninguna fuera de las comillas) y, a continuación, guarde los cambios.
 
 > [!NOTE]
 > En una aplicación real, debe almacenar de forma segura, como se describe en la cadena de conexión [las cadenas de conexión y archivos de configuración](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
 
-##  <a name="write-the-code-for-the-forms"></a>Escribir el código para los formularios
+## <a name="write-the-code-for-the-forms"></a>Escribir el código para los formularios
 
 Esta sección contiene información general breve de lo que hace cada formulario. También proporciona el código que define la lógica subyacente cuando se hace clic en un botón en el formulario.
 
@@ -180,6 +180,7 @@ Para completar la lógica del formulario NewCustomer, siga estos pasos.
      ```csharp
      using System.Data.SqlClient;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      ```
@@ -212,6 +213,7 @@ Para completar la lógica del formulario FillOrCancel, siga estos pasos.
      using System.Data.SqlClient;
      using System.Text.RegularExpressions;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      Imports System.Text.RegularExpressions

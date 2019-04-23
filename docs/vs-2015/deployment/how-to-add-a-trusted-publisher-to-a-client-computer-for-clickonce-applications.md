@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar un publicador de confianza en un equipo cliente para aplicaciones ClickOnce | Documentos de Microsoft
+title: Procedimiento Agregar un publicador de confianza en un equipo cliente para aplicaciones ClickOnce | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,14 +16,14 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7aade658b3fbc70c244e99a6537746bdd4f3c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8c2bc30814af9cdc6181d08b313df20146f855e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080961"
 ---
-# <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Filtrar Agregar un publicador de confianza en un equipo cliente para aplicaciones ClickOnce
+# <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procedimiento Agregar un publicador de confianza en un equipo cliente para aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Con la implementación de aplicaciones de confianza, puede configurar equipos cliente para que las aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] se ejecuten con un nivel superior de confianza sin preguntar al usuario. En los procedimientos siguientes se muestra cómo usar la herramienta de línea de comandos CertMgr.exe para agregar el certificado de un publicador al almacén de publicadores de confianza de un equipo cliente.  
@@ -39,21 +39,21 @@ Con la implementación de aplicaciones de confianza, puede configurar equipos cl
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>Para agregar un certificado al almacén de publicadores de confianza en la raíz de confianza  
   
-1.  Obtenga un certificado digital de una CA.  
+1. Obtenga un certificado digital de una CA.  
   
-2.  Exporte el certificado en el formato Base64 X.509 (.cer). Para obtener más información sobre los formatos de certificado, consulte [Exportar un certificado](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exporte el certificado en el formato Base64 X.509 (.cer). Para obtener más información sobre los formatos de certificado, consulte [Exportar un certificado](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  Desde el símbolo del sistema en los equipos cliente, ejecute el comando siguiente:  
+3. Desde el símbolo del sistema en los equipos cliente, ejecute el comando siguiente:  
   
      **certmgr.exe -add certificate.cer -c -s -r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>Para agregar un certificado al almacén de publicadores de confianza en una raíz diferente  
   
-1.  Obtenga un certificado digital de una CA.  
+1. Obtenga un certificado digital de una CA.  
   
-2.  Exporte el certificado en el formato Base64 X.509 (.cer). Para obtener más información sobre los formatos de certificado, consulte [Exportar un certificado](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exporte el certificado en el formato Base64 X.509 (.cer). Para obtener más información sobre los formatos de certificado, consulte [Exportar un certificado](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  Desde el símbolo del sistema en los equipos cliente, ejecute el comando siguiente:  
+3. Desde el símbolo del sistema en los equipos cliente, ejecute el comando siguiente:  
   
      **certmgr.exe -add good.cer -c -s -r localMachine Root**  
   

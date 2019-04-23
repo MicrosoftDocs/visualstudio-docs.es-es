@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37cdbc07f5defe0c6f8d5613795d2a9c6142521f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 44be83e21a5e3cd94a1db2b7edce3e8484353f88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644710"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082885"
 ---
-# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Filtrar Asignar esquemas a documentos de Word en Visual Studio
+# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Procedimiento Asignar esquemas a documentos de Word en Visual Studio
   **Importante** la información en este tema con respecto a Microsoft Word se presenta exclusivamente para el uso y disfrute de individuos y organizaciones que se encuentran fuera de Estados Unidos y sus territorios o quién está usando o desarrollo programas que se ejecutan en, los productos de Microsoft Word que se licencia de Microsoft antes de enero de 2010, cuando Microsoft quita una implementación de la funcionalidad concreta relacionadas con XML personalizado de Microsoft Word. Esta información con respecto a Microsoft Word no puede ser leída o utilizada por personas u organizaciones en Estados Unidos o en sus territorios que utiliza, o desarrollar programas que se ejecutan en los productos de Microsoft Word que se licencia de Microsoft después de 10 de enero de 2010 ; los productos no comportarán igual que los productos con licencia antes de esa fecha o adquirido y con licencia para su uso fuera de Estados Unidos.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
@@ -32,30 +32,30 @@ ms.locfileid: "56644710"
 
 ## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>Para asignar un esquema XML a un documento de Word en Visual Studio
 
-1.  Abra el proyecto de documento o plantilla de Word en Visual Studio.
+1. Abra el proyecto de documento o plantilla de Word en Visual Studio.
 
-2.  Haga clic en el documento para mover el foco al diseñador.
+2. Haga clic en el documento para mover el foco al diseñador.
 
-3.  En la cinta de opciones, haga clic en el **Developer** ficha.
+3. En la cinta de opciones, haga clic en el **Developer** ficha.
 
     > [!NOTE]
     >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  En el **XML** grupo, haga clic en **esquema**.
+4. En el **XML** grupo, haga clic en **esquema**.
 
      El **plantillas y complementos** abre el cuadro de diálogo.
 
-5.  Haga clic en el **esquema XML** ficha.
+5. Haga clic en el **esquema XML** ficha.
 
-6.  Haga clic en **Agregar esquema**.
+6. Haga clic en **Agregar esquema**.
 
      El **Agregar esquema** abre el cuadro de diálogo.
 
-7.  Busque el archivo de esquema, selecciónelo y, a continuación, haga clic en **abierto**.
+7. Busque el archivo de esquema, selecciónelo y, a continuación, haga clic en **abierto**.
 
      El **configuración del esquema** abre el cuadro de diálogo.
 
-8.  Asignar un alias o haga clic en **Aceptar** para agregar el esquema sin un alias.
+8. Asignar un alias o haga clic en **Aceptar** para agregar el esquema sin un alias.
 
 9. Haga clic en **Aceptar**.
 

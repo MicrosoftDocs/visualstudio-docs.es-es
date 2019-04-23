@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526651"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079713"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 
@@ -120,11 +120,11 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  La función de deshacer/rehacer está habilitada en la vista Gráfico para las siguientes acciones:
 
--   Agregar un nodo único arrastrándolo y colocándolo.
+- Agregar un nodo único arrastrándolo y colocándolo.
 
--   Agregar varios nodos de la ventana de resultados de la búsqueda de las consultas del Explorador de esquemas o de la vista Inicio.
+- Agregar varios nodos de la ventana de resultados de la búsqueda de las consultas del Explorador de esquemas o de la vista Inicio.
 
--   Eliminar uno o varios nodos.
+- Eliminar uno o varios nodos.
 
 ## <a name="zoom"></a>Zoom
 
@@ -132,9 +132,9 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  El zoom se puede controlar de las maneras siguientes:
 
--   Si mantiene presionada la **Ctrl** las ruedas clave y girando el mouse cuando se mantiene el mouse sobre la superficie de la vista gráfico.
+- Si mantiene presionada la **Ctrl** las ruedas clave y girando el mouse cuando se mantiene el mouse sobre la superficie de la vista gráfico.
 
--   Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.
+- Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.
 
 El control deslizante de Zoom es opaco al seleccionarla, mantenga el mouse sobre él o usar **Ctrl** con la rueda del mouse para hacer zoom; en el resto del tiempo, es transparente.
 

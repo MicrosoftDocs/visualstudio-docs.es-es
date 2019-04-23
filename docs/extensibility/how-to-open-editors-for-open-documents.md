@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89fba307b40d7e0b8ede2d437b214e3f58929c39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 654fdb6a921a0d6a25490b17f6f0ce3ffafa4ae4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702491"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085589"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Procedimiento Apertura de editores para documentos abiertos
 Antes de que un proyecto abre una ventana de documento, el proyecto en primer lugar debe determinar si el archivo ya está abierto en la ventana de documento para otro editor. El archivo puede ser cualquier abierto en un editor específico del proyecto, o uno de los editores estándares registrado con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -46,11 +46,11 @@ Antes de que un proyecto abre una ventana de documento, el proyecto en primer lu
 
 ### <a name="to-open-a-standard-editor-for-an-open-file"></a>Para abrir un editor estándar para un archivo abierto
 
-1.  Llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
+1. Llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
 
      Este método primero comprueba que el documento no está ya abierto mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Si el documento ya está abierto, a continuación, se vuelve a exponerse su ventana del editor.
 
-2.  Si el documento no está abierto, a continuación, complete los pasos de [Cómo: Apertura de editores estándar](../extensibility/how-to-open-standard-editors.md).
+2. Si el documento no está abierto, a continuación, complete los pasos de [Cómo: Apertura de editores estándar](../extensibility/how-to-open-standard-editors.md).
 
 ## <a name="see-also"></a>Vea también
 - [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)

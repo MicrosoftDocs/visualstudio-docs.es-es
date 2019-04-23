@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar controles ListObject a hojas de cálculo
+title: Procedimiento Agregar controles ListObject a hojas de cálculo
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7bfbdb2605f4db86afe3f8f2195a004ab1eea775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5e7f82f667fffec09894ab65e277cea09d137a9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084094"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Procedimiento Agregar controles ListObject a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en los proyectos de nivel de documento.
@@ -37,51 +37,51 @@ ms.locfileid: "56597457"
 
   Para obtener más información acerca de <xref:Microsoft.Office.Tools.Excel.ListObject> los controles, vea [control ListObject](../vsto/listobject-control.md).
 
-##  <a name="designtime"></a> Agregar controles ListObject en tiempo de diseño
+## <a name="designtime"></a> Agregar controles ListObject en tiempo de diseño
  Hay varias maneras de agregar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a una hoja de cálculo en un proyecto de nivel de documento en tiempo de diseño: Desde Excel, desde Visual Studio **cuadro de herramientas**y desde el **orígenes de datos** ventana.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ### <a name="to-use-the-ribbon-in-excel"></a>Usar la cinta de opciones en Excel
 
-1.  En la ficha **Insertar** , del grupo **Tablas** , haga clic en **Tabla**.
+1. En la ficha **Insertar** , del grupo **Tablas** , haga clic en **Tabla**.
 
-2.  Seleccione las celdas que desea incluir en la lista y haga clic en **Aceptar**.
+2. Seleccione las celdas que desea incluir en la lista y haga clic en **Aceptar**.
 
 #### <a name="to-use-the-toolbox"></a>Usar el cuadro de herramientas
 
-1.  Desde la ficha **Controles de Excel** del **Cuadro de herramientas**, arrastre <xref:Microsoft.Office.Tools.Excel.ListObject> hacia la hoja de cálculo.
+1. Desde la ficha **Controles de Excel** del **Cuadro de herramientas**, arrastre <xref:Microsoft.Office.Tools.Excel.ListObject> hacia la hoja de cálculo.
 
      Aparecerá el cuadro de diálogo **Agregar control ListObject** .
 
-2.  Seleccione las celdas que desea incluir en la lista y haga clic en **Aceptar**.
+2. Seleccione las celdas que desea incluir en la lista y haga clic en **Aceptar**.
 
      Si no desea conservar el nombre predeterminado, puede cambiarlo en la ventana **Propiedades** .
 
 #### <a name="to-use-the-data-sources-window"></a>Usar la ventana Orígenes de datos
 
-1.  Abra la ventana **Orígenes de datos** y cree un origen de datos para su proyecto. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).
+1. Abra la ventana **Orígenes de datos** y cree un origen de datos para su proyecto. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).
 
-2.  Arrastre una tabla desde la ventana **Orígenes de datos** hasta la hoja de cálculo.
+2. Arrastre una tabla desde la ventana **Orígenes de datos** hasta la hoja de cálculo.
 
      Un control <xref:Microsoft.Office.Tools.Excel.ListObject> enlazado a los datos se agrega a la hoja de cálculo. Para obtener más información, consulte [enlace de datos y Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-##  <a name="runtimedoclevel"></a> Agregar controles ListObject en tiempo de ejecución en un proyecto de nivel de documento
+## <a name="runtimedoclevel"></a> Agregar controles ListObject en tiempo de ejecución en un proyecto de nivel de documento
  Puede agregar el <xref:Microsoft.Office.Tools.Excel.ListObject> control dinámicamente en tiempo de ejecución. Esto le permite crear los controles host en respuesta a eventos. Los objetos de lista creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando se cierra la hoja de cálculo. Para obtener más información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Agregar un control ListObject a una hoja de cálculo mediante programación
 
-1.  En el controlador de eventos <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> de `Sheet1`, escriba el código siguiente para agregar un control <xref:Microsoft.Office.Tools.Excel.ListObject> de las celdas **A1** hasta la **A4**.
+1. En el controlador de eventos <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> de `Sheet1`, escriba el código siguiente para agregar un control <xref:Microsoft.Office.Tools.Excel.ListObject> de las celdas **A1** hasta la **A4**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-##  <a name="runtimeaddin"></a> Agregar controles ListObject en tiempo de ejecución en un proyecto de complemento VSTO
+## <a name="runtimeaddin"></a> Agregar controles ListObject en tiempo de ejecución en un proyecto de complemento VSTO
  Puede agregar un control <xref:Microsoft.Office.Tools.Excel.ListObject> mediante programación a cualquier hoja de cálculo abierta de un proyecto de complemento de VSTO. Los objetos de lista creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando esta se guarda y, a continuación, se cierra. Para obtener más información, consulte [documentos ampliar Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Agregar un control ListObject a una hoja de cálculo mediante programación
 
-1.  El siguiente código crea un elemento host de hoja de cálculo que se basa en la hoja de cálculo abierta; a continuación, agrega un control <xref:Microsoft.Office.Tools.Excel.ListObject> de las celdas **A1** hasta la **A4**.
+1. El siguiente código crea un elemento host de hoja de cálculo que se basa en la hoja de cálculo abierta; a continuación, agrega un control <xref:Microsoft.Office.Tools.Excel.ListObject> de las celdas **A1** hasta la **A4**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]

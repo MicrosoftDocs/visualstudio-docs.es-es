@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf4066a9eee47d1ffad156768287bf036aaae3cf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683054"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080922"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Extender otras partes de Visual Studio
 
@@ -29,9 +29,9 @@ Los bloques de creación básicos de extensibilidad de Visual Studio son paquete
 
 Obtenga información sobre cómo agregar nuevos controles y otros elementos al cuadro de herramientas y cómo usar la funcionalidad del cuadro de herramientas:
 
--   [Crear un Control de cuadro de herramientas WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Crear un Control de cuadro de herramientas WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Crear un Control de cuadro de herramientas de Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Crear un Control de cuadro de herramientas de Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extend-the-status-bar"></a>Ampliar la barra de estado
 

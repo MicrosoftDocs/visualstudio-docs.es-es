@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef8fd848ed1a8298cc4ea8a5ce9d2c0463a2b779
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e0b29d88387ccb2ed711f1a000bf7bb00a34dd01
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084263"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Esta interfaz permite que la sesión de depuración manager (SDM) notificar a un proceso que está adjuntando a o cuando se desasocia del proceso.
@@ -39,7 +39,7 @@ IDebugProcessEx2 : IUnknown
 
 ## <a name="notes-for-callers"></a>Notas para los llamadores
 
--   Las llamadas SDM [QueryInterface](/cpp/atl/queryinterface) en un `IDebugProcess2` interfaz para obtener esta interfaz.
+- Las llamadas SDM [QueryInterface](/cpp/atl/queryinterface) en un `IDebugProcess2` interfaz para obtener esta interfaz.
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
  La tabla siguiente muestran los métodos de `IDebugProcessEx2`.

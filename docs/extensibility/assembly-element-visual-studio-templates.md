@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9887214edae870ca79796a7a667b15f8536e8bb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5caa0804ae4d90a23ae59195d2e610653437babe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079349"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento Assembly (plantillas de Visual Studio)
 Especifica información sobre un ensamblado, que usa la plantilla para agregar una referencia de ensamblado a los proyectos.
@@ -52,7 +52,7 @@ Especifica información sobre un ensamblado, que usa la plantilla para agregar u
 
  Este texto especifica el ensamblado para agregar a un proyecto cuando se crea una instancia de la plantilla de elemento. Este nombre de ensamblado debe especificarse en una de las maneras siguientes:
 
--   Como un nombre completo del ensamblado. Por ejemplo:
+- Como un nombre completo del ensamblado. Por ejemplo:
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ Especifica información sobre un ensamblado, que usa la plantilla para agregar u
     </Assembly>
     ```
 
--   Como referencia de texto simple. Por ejemplo:
+- Como referencia de texto simple. Por ejemplo:
 
     ```
     <Assembly> System </Assembly>

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628395"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097003"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Ampliar la implementación y empaquetado de SharePoint
   El proceso de empaquetado e implementación de proyectos de SharePoint se puede ampliar.
@@ -35,9 +35,9 @@ ms.locfileid: "56628395"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Ejecute código al implementar o retirar una solución de SharePoint
  Puede controlar eventos para realizar más tareas al implementar o retirar una solución de SharePoint. Visual Studio genera eventos que puede controlar en los siguientes escenarios:
 
--   Antes y después de que cada paso de implementación se ejecute para un elemento del proyecto de SharePoint. Para obtener más información, vea [Cómo: Ejecutar código cuando se ejecutan los pasos de implementación](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
+- Antes y después de que cada paso de implementación se ejecute para un elemento del proyecto de SharePoint. Para obtener más información, vea [Cómo: Ejecutar código cuando se ejecutan los pasos de implementación](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
 
--   Antes y después de que un proyecto de SharePoint se implemente o retire Para obtener más información, vea [Cómo: Ejecutar código cuando un proyecto de SharePoint se está implementando o retirando](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
+- Antes y después de que un proyecto de SharePoint se implemente o retire Para obtener más información, vea [Cómo: Ejecutar código cuando un proyecto de SharePoint se está implementando o retirando](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
 
 ## <a name="handle-deployment-conflicts"></a>Controlar conflictos de implementación
  Algunos tipos de elementos de proyecto de SharePoint, como los módulos, los elementos web, las instancias de lista y los tipos de contenido, proporcionan una resolución integrada de conflictos de implementación. Al implementar una solución que contiene uno de estos elementos de proyecto, Visual Studio comprueba primero si ya existe un archivo en el sitio de SharePoint con el mismo nombre, dirección URL o identificador que un archivo en el elemento que se va a implementar. Si existe un conflicto, Visual Studio puede resolver el conflicto automáticamente, o bien pedirle que decida si quiere que Visual Studio resuelva el conflicto o cancele la implementación. Para obtener más información, consulta [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).

@@ -1,5 +1,5 @@
 ---
-title: Depurar el código de usuario con sólo mi código | Documentos de Microsoft
+title: Depurar el código de usuario con sólo mi código | Microsoft Docs
 ms.date: 02/13/2019
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081871"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Depurar código de usuario sólo con sólo mi código
 
@@ -81,7 +81,7 @@ Si se habilitan excepciones de primera oportunidad para la excepción, la línea
 
 ## <a name="BKMK_C___Just_My_Code"></a> Solo mi código de C++
 
-A partir de Visual Studio 2017 versión 15,8, solo mi código para el código también se admite la ejecución paso a paso. Esta característica también requiere el uso de la [/JMC (solo mi código de depuración)](/cpp/build/reference/jmc) modificador del compilador. El modificador está habilitado de forma predeterminada en los proyectos de C++. Para **pila de llamadas** ventana y llame al soporte técnico de la pila en solo mi código, no se requiere el modificador /JMC.
+A partir de Visual Studio 2017 versión 15,8, solo mi código para el código también se admite la ejecución paso a paso. Esta característica también requiere el uso de la [/JMC (solo mi código de depuración)](/cpp/build/reference/jmc) modificador del compilador. El modificador está habilitado de forma predeterminada en C++ proyectos. Para **pila de llamadas** ventana y llame al soporte técnico de la pila en solo mi código, no se requiere el modificador /JMC.
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> Para ser clasificado como código de usuario, se debe cargar el archivo PDB para el archivo binario que contiene el código de usuario por el depurador (usar la **módulos** ventana para comprobarlo).
 
@@ -97,7 +97,7 @@ Para el comportamiento de ejecución paso a paso de código, solo mi código en 
 - Funciones especificadas en  *\*.natjmc* archivos en el *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* carpeta.
 
 > [!NOTE]
-> Compatibilidad con el código paso a paso en solo mi código, se debe compilar el código de C++ mediante los compiladores MSVC en Visual Studio 15,8 Preview 3 o posterior, y debe estar habilitado el modificador del compilador /JMC (está habilitado de forma predeterminada). Para obtener más información, consulte [personalizar C++ pila de llamadas y comportamiento de ejecución paso a paso de código](#BKMK_CPP_Customize_call_stack_behavior)) y esto [entrada de blog](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Para el código compilado mediante un compilador anterior, *.natstepfilter* archivos son la única forma de personalizar el código de ejecución paso a paso, que es independiente de solo mi código. Consulte [comportamiento del avance personalizar C++](#BKMK_CPP_Customize_stepping_behavior).
+> Compatibilidad con el código paso a paso en solo mi código, C++ código debe compilarse con los compiladores MSVC en Visual Studio 15,8 Preview 3 o posterior, y debe estar habilitado el modificador del compilador /JMC (está habilitado de forma predeterminada). Para obtener más información, consulte [personalizar C++ pila de llamadas y el comportamiento de ejecución paso a paso de código](#BKMK_CPP_Customize_call_stack_behavior)) y esto [entrada de blog](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Para el código compilado mediante un compilador anterior, *.natstepfilter* archivos son la única forma de personalizar el código de ejecución paso a paso, que es independiente de solo mi código. Consulte [personalizar C++ comportamiento del avance](#BKMK_CPP_Customize_stepping_behavior).
 
 <a name="BKMK_CPP_Stepping_behavior"></a> Durante la depuración de C++:
 
@@ -110,9 +110,9 @@ Si el depurador se interrumpe en el código que no es de usuario (por ejemplo, u
 
 Si el depurador llega a una excepción, se detiene en la excepción, ya sea en el código de usuario o que no es de usuario. **No controla el usuario** opciones en el **configuración de excepciones** se pasan por alto el cuadro de diálogo.
 
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizar la pila de llamadas de C++ y el comportamiento del recorrido de código
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizar C++ pila de llamadas y el comportamiento de ejecución paso a paso de código
 
-Para los proyectos de C++, puede especificar los módulos, archivos de código fuente y las funciones del **pila de llamadas** ventana trata como código de no usuario especificándolas en  *\*.natjmc* archivos. Esta personalización también se aplica al código de ejecución paso a paso si usa el compilador más reciente (vea [C++ solo mi código](#BKMK_CPP_User_and_non_user_code)).
+Para los proyectos de C++, puede especificar los módulos, archivos de código fuente y las funciones del **pila de llamadas** ventana trata como código de no usuario especificándolas en  *\*.natjmc* archivos. Esta personalización también se aplica al código de ejecución paso a paso si usa el compilador más reciente (vea [ C++ solo mi código](#BKMK_CPP_User_and_non_user_code)).
 
 - Para especificar código que no es de usuario para todos los usuarios del equipo de Visual Studio, agregue el archivo *.natjmc* a la carpeta *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.
 - Para especificar código que no son de usuario para un usuario individual, agregue el *.natjmc* del archivo a la *%USERPROFILE%\My documentos\\< versión de Visual Studio\>\Visualizers* carpeta.
@@ -160,7 +160,7 @@ Un *.natjmc* archivo es un archivo XML con esta sintaxis:
 |`Module`|Opcional. Nombre o ruta de acceso completa al módulo que contiene la función. Puede utilizar este atributo para eliminar la ambigüedad de funciones que tienen el mismo nombre.|
 |`ExceptionImplementation`|Cuando se establece en `true`, la pila de llamadas muestra la función que produjo la excepción en lugar de esta función.|
 
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personalizar el comportamiento de ejecución paso a paso de C++ independiente de la configuración de solo mi código
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personalizar C++ comportamiento del avance independiente de la configuración de solo mi código
 
 En los proyectos de C++, puede especificar funciones salten enumera como código que no son de usuario en  *\*.natstepfilter* archivos. Funciones que se enumeran en  *\*.natstepfilter* archivos no son dependientes de la configuración de solo mi código.
 
@@ -192,7 +192,7 @@ Un *.natstepfilter* archivo es un archivo XML con esta sintaxis:
 |`Module`|Opcional. Expresión regular con formato ECMA-262 que especifica la ruta de acceso completa al módulo que contiene la función. La búsqueda no distingue entre mayúsculas y minúsculas.|
 |`Action`|Obligatorio. Uno de estos valores que distingue mayúsculas y minúsculas:<br /><br /> `NoStepInto`  -indica al depurador que omita la función.<br /> `StepInto`  -indica al depurador paso a paso por la función, invalidando cualquier otro `NoStepInto` para la función coincidente.|
 
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> Solo mi código de JavaScript
+## <a name="BKMK_JavaScript_Just_My_Code"></a> Solo mi código de JavaScript
 
 <a name="BKMK_JS_User_and_non_user_code"></a> Solo mi código de JavaScript controla la ejecución paso a paso y la presentación de la pila de llamadas categorizando el código en una de estas clasificaciones:
 
@@ -205,10 +205,10 @@ Un *.natstepfilter* archivo es un archivo XML con esta sintaxis:
 El depurador de JavaScript clasifica el código como usuario o el usuario en este orden:
 
 1. Las clasificaciones predeterminadas.
-   -   Script que se ejecuta pasando una cadena a la proporcionada por el host `eval` función es **MyCode**.
-   -   Script que se ejecuta pasando una cadena a la `Function` constructor es **LibraryCode**.
-   -   Secuencia de comandos en una referencia de framework, como WinJS o el SDK de Azure, es **LibraryCode**.
-   -   Script que se ejecuta pasando una cadena a la `setTimeout`, `setImmediate`, o `setInterval` functions es **UnrelatedCode**.
+   - Script que se ejecuta pasando una cadena a la proporcionada por el host `eval` función es **MyCode**.
+   - Script que se ejecuta pasando una cadena a la `Function` constructor es **LibraryCode**.
+   - Secuencia de comandos en una referencia de framework, como WinJS o el SDK de Azure, es **LibraryCode**.
+   - Script que se ejecuta pasando una cadena a la `setTimeout`, `setImmediate`, o `setInterval` functions es **UnrelatedCode**.
 
 2. Las clasificaciones especificadas para todos los proyectos de JavaScript de Visual Studio en el *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* archivo.
 

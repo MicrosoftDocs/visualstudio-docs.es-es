@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para guardar datos mediante una transacción
+title: Procedimiento Guardar datos mediante una transacción
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5d47cfc21b0aebef884fade422600be2beeb58
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: bf5864d25e78b6050da5c13097503b2998dda44a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081000"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Procedimiento para guardar datos mediante una transacción
+# <a name="how-to-save-data-by-using-a-transaction"></a>Procedimiento Guardar datos mediante una transacción
 
 Guardar datos en una transacción mediante la <xref:System.Transactions> espacio de nombres. Use la <xref:System.Transactions.TransactionScope> objeto participe en una transacción que se administra automáticamente.
 
@@ -37,15 +37,15 @@ Para revertir la transacción, producir una excepción antes de llamar a la <xre
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Para agregar una referencia a la System.Transactions.dll.
 
-1.  En el **proyecto** menú, seleccione **Agregar referencia**.
+1. En el **proyecto** menú, seleccione **Agregar referencia**.
 
-2.  En el **.NET** ficha (**SQL Server** ficha para proyectos de SQL Server), seleccione **System.Transactions**y, a continuación, seleccione **Aceptar**.
+2. En el **.NET** ficha (**SQL Server** ficha para proyectos de SQL Server), seleccione **System.Transactions**y, a continuación, seleccione **Aceptar**.
 
      Una referencia a *System.Transactions.dll* se agrega al proyecto.
 
 ## <a name="to-save-data-in-a-transaction"></a>Para guardar los datos en una transacción
 
--   Agregar código para guardar los datos de uso de la instrucción que contiene la transacción. El código siguiente muestra cómo crear y crear una instancia de un <xref:System.Transactions.TransactionScope> objeto en un formulario mediante declaración:
+- Agregar código para guardar los datos de uso de la instrucción que contiene la transacción. El código siguiente muestra cómo crear y crear una instancia de un <xref:System.Transactions.TransactionScope> objeto en un formulario mediante declaración:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
@@ -53,4 +53,4 @@ Para revertir la transacción, producir una excepción antes de llamar a la <xre
 ## <a name="see-also"></a>Vea también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)
-- [Tutorial: Guardado de datos en una transacción](../data-tools/save-data-in-a-transaction.md)
+- [Tutorial: Guardar datos en una transacción](../data-tools/save-data-in-a-transaction.md)

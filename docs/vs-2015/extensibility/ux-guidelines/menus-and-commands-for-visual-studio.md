@@ -8,12 +8,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b0fa441c6dc56210c11a0007eb2662b3c08910ba
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 681df08c02813e209738e629495190ad889caf31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095807"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menús y comandos para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "59002461"
 ##### <a name="do-not-create-icons-for-every-command"></a>No cree iconos para cada comando.
  Piénselo bien antes de crear un icono de comando. Iconos que se deben crear solo para los comandos que:
 
--   aparecen en una barra de herramientas predeterminada.
+- aparecen en una barra de herramientas predeterminada.
 
--   es probable que los usuarios puedan agregar a una barra de herramientas a través de la **personalizar...** cuadro de diálogo.
+- es probable que los usuarios puedan agregar a una barra de herramientas a través de la **personalizar...** cuadro de diálogo.
 
--   tienen un icono asociado con la misma acción en otro producto de Microsoft.
+- tienen un icono asociado con la misma acción en otro producto de Microsoft.
 
 ##### <a name="limit-the-addition-of-keyboard-shortcuts"></a>Limitar la adición de métodos abreviados de teclado
  La mayoría de los usuarios emplean una pequeña fracción de todos los métodos abreviados disponibles. En caso de duda, no se enlaza la característica a un método abreviado de teclado. Trabajo con el usuario experimente equipo antes de agregar nuevos métodos abreviados.
@@ -77,65 +77,65 @@ ms.locfileid: "59002461"
 
 ##### <a name="core-menus"></a>Menús principales
 
--   Archivo
+- Archivo
 
--   Editar
+- Editar
 
--   Ver
+- Ver
 
--   Herramientas
+- Herramientas
 
--   Ventana
+- Ventana
 
--   Ayuda
+- Help
 
 ##### <a name="project-specific-menus"></a>Menús específicos del proyecto
 
--   Proyecto
+- Proyecto
 
--   Compilar
+- Compilar
 
--   Depuración
+- Depuración
 
 ##### <a name="context-specific-menus"></a>Menús específicos del contexto
 
--   Equipo
+- Equipo
 
--   Datos
+- Datos
 
--   Prueba
+- Prueba
 
--   Arquitectura
+- Arquitectura
 
--   Analizar
+- Analizar
 
 ##### <a name="document-specific-menus"></a>Menús específicos del documento
 
--   Formato
+- Formato
 
--   Tabla
+- Tabla
 
 ##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Al diseñar los menús principales, debe seguir estas reglas:
 
--   No superar los 25 elementos de nivel superior en un contexto determinado
+- No superar los 25 elementos de nivel superior en un contexto determinado
 
--   Los menús nunca deben superar los 600 píxeles de alto.
+- Los menús nunca deben superar los 600 píxeles de alto.
 
--   Evaluar un menú principal en varios contextos, como en la SKU de Ultimate y el perfil General.
+- Evaluar un menú principal en varios contextos, como en la SKU de Ultimate y el perfil General.
 
--   Menús desplegables son aceptables.
+- Menús desplegables son aceptables.
 
--   Menús desplegables deben contener al menos tres elementos y no más de siete.
+- Menús desplegables deben contener al menos tres elementos y no más de siete.
 
--   Menús desplegables deben ir solo un nivel de profundidad: algunos elementos de menú de Visual Studio tienen submenús en cascada, pero no se recomienda establecer este patrón.
+- Menús desplegables deben ir solo un nivel de profundidad: algunos elementos de menú de Visual Studio tienen submenús en cascada, pero no se recomienda establecer este patrón.
 
--   Utilice los separadores no más de seis. Las agrupaciones deben cumplir la siguiente ilustración:
+- Utilice los separadores no más de seis. Las agrupaciones deben cumplir la siguiente ilustración:
 
      ![Directrices para la agrupación de menú principal](../../extensibility/ux-guidelines/media/0501-b-mainmenus.png "0501 b_MainMenus")
 
--   Aunque no es necesario tener cada agrupación en la ilustración, agregar grupos adicionales está restringido.
+- Aunque no es necesario tener cada agrupación en la ilustración, agregar grupos adicionales está restringido.
 
--   Cada agrupación debe tener entre dos y siete elementos de menú.
+- Cada agrupación debe tener entre dos y siete elementos de menú.
 
 #### <a name="main-menu-ordering"></a>Ordenación de menú principal
  Antes de agregar un nuevo elemento de nivel superior, considere la posibilidad de colocar el comando en un menú de nivel superior existente. Al agregar un nuevo menú de nivel superior, asegúrese de colocarlo en la ubicación correcta. Decidir si el menú es específico para el proyecto, el contexto o el documento. Mantenga el nombre de menú de nivel superior concisa y usar solo una palabra.
@@ -147,30 +147,30 @@ ms.locfileid: "59002461"
 
  Al diseñar los menús contextuales, cumplir las mismas reglas que para el menú principal y además:
 
--   No superar los 25 elementos de menú de nivel superior.
+- No superar los 25 elementos de menú de nivel superior.
 
--   Menús desplegables son aceptables, pero debe no superen un nivel de profundidad – no use nunca flotantes en cascada.
+- Menús desplegables son aceptables, pero debe no superen un nivel de profundidad – no use nunca flotantes en cascada.
 
--   Utilice los separadores no más de seis.
+- Utilice los separadores no más de seis.
 
 ### <a name="command-placement-in-toolbars"></a>Ubicación del comando en las barras de herramientas
 
 #### <a name="general-toolbars"></a>Barras de herramientas generales
  Al diseñar y organizar las barras de herramientas, siga estos estándares:
 
--   No utilice más de un verbo por cada botón. Un botón = una acción.
+- No utilice más de un verbo por cada botón. Un botón = una acción.
 
--   Use texto junto con el icono únicamente si necesita se verá reforzada con la etiqueta.
+- Use texto junto con el icono únicamente si necesita se verá reforzada con la etiqueta.
 
--   Utilice un cuadro combinado exclusivamente para las propiedades que se desactivará varias veces en una sesión. En caso contrario, se exponen la propiedad en otro lugar.
+- Utilice un cuadro combinado exclusivamente para las propiedades que se desactivará varias veces en una sesión. En caso contrario, se exponen la propiedad en otro lugar.
 
--   El ancho de un cuadro combinado debe coincidir con el ancho del elemento en el cuadro + 30% más largo. Por ejemplo, si el elemento más largo es de 200 píxeles, del cuadro combinado debe ser 260 píxeles de ancho.
+- El ancho de un cuadro combinado debe coincidir con el ancho del elemento en el cuadro + 30% más largo. Por ejemplo, si el elemento más largo es de 200 píxeles, del cuadro combinado debe ser 260 píxeles de ancho.
 
--   Limite el uso de separadores. El uso de un separador situado junto a una lista desplegable es un antipatrón, porque la forma de la lista desplegable propio actúa como un separador visual.
+- Limite el uso de separadores. El uso de un separador situado junto a una lista desplegable es un antipatrón, porque la forma de la lista desplegable propio actúa como un separador visual.
 
--   Deben contener grupos de icono de tres a seis iconos.
+- Deben contener grupos de icono de tres a seis iconos.
 
--   Si calificadores como resultado varios comandos útiles, use un botón de expansión que almacena el último valor:
+- Si calificadores como resultado varios comandos útiles, use un botón de expansión que almacena el último valor:
 
      ![Botones de división en Visual Studio](../../extensibility/ux-guidelines/media/0501-c-splitbuttons.png "0501 c_SplitButtons")
 
@@ -231,13 +231,13 @@ ms.locfileid: "59002461"
 
 #### <a name="when-naming-commands"></a>Nomenclatura de comandos cuando:
 
--   Construir el texto para que sea localizable fácilmente. Para obtener más información sobre cómo localizar texto, consulte [prácticas recomendadas de localización](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
+- Construir el texto para que sea localizable fácilmente. Para obtener más información sobre cómo localizar texto, consulte [prácticas recomendadas de localización](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
--   Ser conciso. Los comandos deben utilizar no más de tres palabras.
+- Ser conciso. Los comandos deben utilizar no más de tres palabras.
 
--   Utilice mayúsculas y minúsculas de título: debe escribirse en mayúsculas la primera letra de cada palabra. Para obtener más información sobre el formato de texto en Visual Studio, consulte [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Utilice mayúsculas y minúsculas de título: debe escribirse en mayúsculas la primera letra de cada palabra. Para obtener más información sobre el formato de texto en Visual Studio, consulte [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
--   Tenga en cuenta dónde se colocará el comando. ¿Está en un menú de nivel superior o un control flotante? Por ejemplo, cuando los comandos de alineación de agrupación en una ventana flotante, el comando de nivel superior deben ser "Alinear" y los comandos de control flotante debe ser "Left" "Derecha", "Center", "Justify" y así sucesivamente. Sería redundante para denominar los comandos de control flotante "Alinear a la izquierda" o "Right Align."
+- Tenga en cuenta dónde se colocará el comando. ¿Está en un menú de nivel superior o un control flotante? Por ejemplo, cuando los comandos de alineación de agrupación en una ventana flotante, el comando de nivel superior deben ser "Alinear" y los comandos de control flotante debe ser "Left" "Derecha", "Center", "Justify" y así sucesivamente. Sería redundante para denominar los comandos de control flotante "Alinear a la izquierda" o "Right Align."
 
      ![Menú de Visual Studio formato](../../extensibility/ux-guidelines/media/0502-a-formatmenu.png "0502 a_FormatMenu")
 
@@ -246,20 +246,20 @@ ms.locfileid: "59002461"
 
 #### <a name="use-an-icon-with-a-command-only-if"></a>Usar un icono con un comando sólo si:
 
--   El mismo comando tiene un icono asociado en otro producto destacado de Microsoft, como una de las aplicaciones de Microsoft Office.
+- El mismo comando tiene un icono asociado en otro producto destacado de Microsoft, como una de las aplicaciones de Microsoft Office.
 
--   El comando se colocará en una barra de herramientas predeterminada.
+- El comando se colocará en una barra de herramientas predeterminada.
 
--   El comando es un comando de especialidad que los usuarios suelen agregar a una barra de herramientas mediante el **"Personalizar..."** cuadro de diálogo.
+- El comando es un comando de especialidad que los usuarios suelen agregar a una barra de herramientas mediante el **"Personalizar..."** cuadro de diálogo.
 
 ## <a name="access-and-shortcut-keys"></a>Teclas de acceso y el acceso directo
 
 ### <a name="overview"></a>Información general
  Hay dos tipos de asignaciones de teclas del teclado:
 
--   **Las claves de acceso** (también conocido como aceleradores) permiten el acceso a través de los menús mediante el teclado para comandos y a cada etiqueta en la interfaz de usuario del cuadro de diálogo. Teclas de acceso son principalmente para fines de accesibilidad, se asignan a todos los menús y la mayoría de los controles de cuadro de diálogo, no están diseñadas para ser memorizar, afectan a solo la ventana actual y están localizadas.
+- **Las claves de acceso** (también conocido como aceleradores) permiten el acceso a través de los menús mediante el teclado para comandos y a cada etiqueta en la interfaz de usuario del cuadro de diálogo. Teclas de acceso son principalmente para fines de accesibilidad, se asignan a todos los menús y la mayoría de los controles de cuadro de diálogo, no están diseñadas para ser memorizar, afectan a solo la ventana actual y están localizadas.
 
--   **Teclas de método abreviado** principalmente, usa el Control (Ctrl) y secuencias de teclas de función (Fn). Están diseñados más para los usuarios avanzados y la Ayuda en la productividad. Que se asignan solo a los comandos usados con mayor frecuencia y permiten un acceso rápido al omitir el menú principal. Teclas de método abreviado están diseñados para ser han memorizado y para ese motivo debe asignarse coherente con el esquema de perfil. Esquemas de claves de acceso directo pueden variar para cada perfil. Un usuario puede personalizar las teclas de método abreviado a **Herramientas > Opciones > teclado**.
+- **Teclas de método abreviado** principalmente, usa el Control (Ctrl) y secuencias de teclas de función (Fn). Están diseñados más para los usuarios avanzados y la Ayuda en la productividad. Que se asignan solo a los comandos usados con mayor frecuencia y permiten un acceso rápido al omitir el menú principal. Teclas de método abreviado están diseñados para ser han memorizado y para ese motivo debe asignarse coherente con el esquema de perfil. Esquemas de claves de acceso directo pueden variar para cada perfil. Un usuario puede personalizar las teclas de método abreviado a **Herramientas > Opciones > teclado**.
 
 ### <a name="assigning-access-keys"></a>Asignar teclas de acceso
  Las claves de acceso constan de teclas Alt más alfanumérico. Asignar una tecla de acceso a cada elemento de menú sin excepciones. Siga las convenciones comunes para asignar teclas de acceso y Windows. Por ejemplo, la clave de acceso para **archivo > nuevo** siempre debe **Alt, F, N**.
@@ -287,6 +287,6 @@ ms.locfileid: "59002461"
 
   No es una manera sencilla de comprobar la disponibilidad de acceso directo. Si desea agregar un acceso directo, siga estos pasos:
 
-1.  Compruebe la lista de [accesos directos de Visual Studio 2013](http://visualstudioshortcuts.com/2013/) para determinar si hay comandos similares para agrupar la suya con.
+1. Compruebe la lista de [accesos directos de Visual Studio 2013](http://visualstudioshortcuts.com/2013/) para determinar si hay comandos similares para agrupar la suya con.
 
-2.  Vaya a **Herramientas > Opciones > entorno > teclado** y probar el acceso directo. Compruebe que cada combinación de asignación de teclado aparece en "Aplicar la siguiente combinación de asignación de teclado adicionales". Comprobar los perfiles de General, C#, VB y C++, como los que compartan métodos abreviados de únicos. El acceso directo está disponible si no está asignada en cualquiera de los lugares.
+2. Vaya a **Herramientas > Opciones > entorno > teclado** y probar el acceso directo. Compruebe que cada combinación de asignación de teclado aparece en "Aplicar la siguiente combinación de asignación de teclado adicionales". Comprobar los perfiles de General, C#, VB y C++, como los que compartan métodos abreviados de únicos. El acceso directo está disponible si no está asignada en cualquiera de los lugares.

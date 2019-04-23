@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6426572ff346debba32029024a96c9cc5af52ff4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0485b6649396239d2b6501c65e801a03767d5df1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082300"
 ---
 # <a name="add-a-toolbar"></a>Agregar una barra de herramientas
 Este tutorial muestra cómo agregar una barra de herramientas al IDE de Visual Studio.
@@ -35,7 +35,7 @@ Este tutorial muestra cómo agregar una barra de herramientas al IDE de Visual S
 
 ## <a name="create-a-toolbar-for-the-ide"></a>Crear una barra de herramientas del IDE
 
-1.  En *ToolbarTestCommandPackage.vsct*, busque la sección de símbolos. En el elemento GuidSymbol denominado guidToolbarTestCommandPackageCmdSet, agregue las declaraciones para una barra de herramientas y un grupo de la barra de herramientas, como sigue.
+1. En *ToolbarTestCommandPackage.vsct*, busque la sección de símbolos. En el elemento GuidSymbol denominado guidToolbarTestCommandPackageCmdSet, agregue las declaraciones para una barra de herramientas y un grupo de la barra de herramientas, como sigue.
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -43,7 +43,7 @@ Este tutorial muestra cómo agregar una barra de herramientas al IDE de Visual S
 
     ```
 
-2.  En la parte superior de la sección de comandos, cree una sección de menús. Agregue un elemento de menú a la sección de menús para definir la barra de herramientas.
+2. En la parte superior de la sección de comandos, cree una sección de menús. Agregue un elemento de menú a la sección de menús para definir la barra de herramientas.
 
     ```xml
     <Menus>
@@ -60,7 +60,7 @@ Este tutorial muestra cómo agregar una barra de herramientas al IDE de Visual S
 
      No se puede anidar las barras de herramientas, como los submenús. Por lo tanto, no es necesario asignar a un grupo primario. Además, no es necesario establecer una prioridad, ya que el usuario puede mover las barras de herramientas. Normalmente, la ubicación inicial de una barra de herramientas se define mediante programación, pero se conservan los cambios posteriores por el usuario.
 
-3.  En el [grupos](../extensibility/groups-element.md) sección, después de la entrada de grupo existente, defina un [grupo](../extensibility/group-element.md) elemento que se va a contener los comandos de la barra de herramientas.
+3. En el [grupos](../extensibility/groups-element.md) sección, después de la entrada de grupo existente, defina un [grupo](../extensibility/group-element.md) elemento que se va a contener los comandos de la barra de herramientas.
 
     ```xml
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"
@@ -69,7 +69,7 @@ Este tutorial muestra cómo agregar una barra de herramientas al IDE de Visual S
     </Group>
     ```
 
-4.  Hacer que el botón aparezca en la barra de herramientas. En la sección de botones, reemplace el bloque principal en el botón de la barra de herramientas. El bloque de botón resultante debe tener este aspecto:
+4. Hacer que el botón aparezca en la barra de herramientas. En la sección de botones, reemplace el bloque principal en el botón de la barra de herramientas. El bloque de botón resultante debe tener este aspecto:
 
     ```xml
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">
@@ -83,11 +83,11 @@ Este tutorial muestra cómo agregar una barra de herramientas al IDE de Visual S
 
      De forma predeterminada, si una barra de herramientas no tiene ningún comando, no aparece.
 
-5.  Compile la solución y comience la depuración. Debería aparecer la instancia experimental.
+5. Compile la solución y comience la depuración. Debería aparecer la instancia experimental.
 
-6.  Haga clic en la barra de menús de Visual Studio para obtener la lista de barras de herramientas. Seleccione **barra de herramientas de prueba**.
+6. Haga clic en la barra de menús de Visual Studio para obtener la lista de barras de herramientas. Seleccione **barra de herramientas de prueba**.
 
-7.  Ahora debería ver la barra de herramientas como un icono a la derecha del icono de búsqueda en archivos. Al hacer clic en el icono, verá un cuadro de mensaje que dice **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
+7. Ahora debería ver la barra de herramientas como un icono a la derecha del icono de búsqueda en archivos. Al hacer clic en el icono, verá un cuadro de mensaje que dice **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
 
 ## <a name="see-also"></a>Vea también
 - [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

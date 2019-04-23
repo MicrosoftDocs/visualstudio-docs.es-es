@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e6efb699d12cc58555cacede6a20c5b0091d0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 25462a99bd3e773f03af3918a9e25d11ed006c1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084718"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>Error: SQL puede&#39;t encuentra SSDEBUGPS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,9 @@ SSDEBUGPS.dll es el componente de host de depuración de SQL Server.
   
 ### <a name="to-copy-ssdebugpsdll-onto-the-sql-server-2005-machine"></a>Para copiar SSDEBUGPS.dll en el equipo con SQL Server 2005  
   
-1.  Copie el archivo al directorio con el mismo nombre y ruta de acceso en el equipo con [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)].  
+1. Copie el archivo al directorio con el mismo nombre y ruta de acceso en el equipo con [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)].  
   
-2.  Para registrarlo, abra un **Símbolo del sistema** y ejecute el comando siguiente:  
+2. Para registrarlo, abra un **Símbolo del sistema** y ejecute el comando siguiente:  
   
     ```  
     regsvr32 ssdebugps.dll  

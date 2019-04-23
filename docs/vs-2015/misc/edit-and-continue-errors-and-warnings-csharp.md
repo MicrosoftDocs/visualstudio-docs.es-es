@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58995191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085095"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Errores y advertencias de Editar y continuar (C#)
 Ha realizado una edición en una sección de código que no se permite en Editar y continuar de Visual C#.  
@@ -79,11 +79,11 @@ Ha realizado una edición en una sección de código que no se permite en Editar
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-1.  En el menú **Depurar** , elija **Deshacer** para deshacer el cambio.  
+1. En el menú **Depurar** , elija **Deshacer** para deshacer el cambio.  
   
      -o bien-  
   
-2.  Detenga la sesión de depuración, realice las tareas de edición e inicie una nueva sesión de depuración.  
+2. Detenga la sesión de depuración, realice las tareas de edición e inicie una nueva sesión de depuración.  
   
 ## <a name="see-also"></a>Vea también  
  [Editar y continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

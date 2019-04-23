@@ -14,19 +14,19 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5632d56af7b8b6ef2a07f0f0a4c7bf270875a643
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084302"
 ---
 # <a name="javascript-object-expected"></a>Se esperaba un objeto JavaScript
 Se intentó pasar una que no sean de[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objeto a una función integrada que espera un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objeto. Varias funciones integradas requieren objetos definidos en [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (a diferencia de los objetos definidos por el host o un componente externo como un control).  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese de que el objeto que se pasa como parámetro es del tipo correcto.  
+- Asegúrese de que el objeto que se pasa como parámetro es del tipo correcto.  
   
 ## <a name="see-also"></a>Vea también  
  [Objetos y matrices](../../javascript/objects-and-arrays-javascript.md)   

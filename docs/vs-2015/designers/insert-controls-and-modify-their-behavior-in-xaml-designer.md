@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219d70f1a722a19017399ab851aa2e69c44d2b28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663367"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082950"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Insertar controles y modificar su comportamiento en el Diseñador XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Los controles permiten a los usuarios interactuar con la aplicación. Puede util
   
  **En este tema:**  
   
--   [Agregar controles a la mesa de trabajo](#Insert)  
+- [Agregar controles a la mesa de trabajo](#Insert)  
   
--   [Acciones de los controles](#Modify)  
+- [Acciones de los controles](#Modify)  
   
-##  <a name="Insert"></a> Agregar controles a la mesa de trabajo  
+## <a name="Insert"></a> Agregar controles a la mesa de trabajo  
  Puede arrastrar controles desde el panel **Activos** a la **mesa de trabajo**y, a continuación, modificarlos en la ventana **Propiedades** .  
   
  ![Blend &#45; Activos &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
@@ -53,7 +53,7 @@ Los controles permiten a los usuarios interactuar con la aplicación. Puede util
   
  Para crear un control, seleccione un objeto. A continuación, en el menú **Herramientas** , haga clic en **Crear control**.  
   
-##  <a name="Modify"></a> Acciones de los controles  
+## <a name="Modify"></a> Acciones de los controles  
  Los controles pueden realizar acciones cuando los usuarios interactúan con ellos. Por ejemplo, pueden iniciar una animación, actualizar un origen de datos o reproducir un vídeo.  
   
  Utilice *desencadenadores*, *comportamientos*y *eventos* para que los controles realicen accines.  

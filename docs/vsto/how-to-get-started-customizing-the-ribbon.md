@@ -1,5 +1,5 @@
 ---
-title: Filtrar Introducción a la personalización de la cinta de opciones
+title: Procedimiento Introducción a la personalización de la cinta de opciones
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c4ff1e8bf443351f835d74d44b49bbb61e0321
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081572"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Procedimiento Introducción a la personalización de la cinta de opciones
   Para personalizar la cinta de opciones de una aplicación de Microsoft Office, agregue un **cinta (diseñador Visual)** o **cinta (XML)** a un proyecto de Office.
@@ -37,33 +37,33 @@ ms.locfileid: "56640121"
 
     Los nombres no pueden contener los caracteres siguientes:
 
-   -   Almohadilla (#)
+   - Almohadilla (#)
 
-   -   Porcentaje (%)
+   - Porcentaje (%)
 
-   -   "Y" comercial (&)
+   - "Y" comercial (&)
 
-   -   Asterisco (*)
+   - Asterisco (*)
 
-   -   Barra vertical (|)
+   - Barra vertical (|)
 
-   -   Barra diagonal inversa (\\)
+   - Barra diagonal inversa (\\)
 
-   -   Dos puntos (:)
+   - Dos puntos (:)
 
-   -   Comillas dobles (")
+   - Comillas dobles (")
 
-   -   Menor que (\<)
+   - Menor que (\<)
 
-   -   Mayor que (>)
+   - Mayor que (>)
 
-   -   Signo de interrogación (?)
+   - Signo de interrogación (?)
 
-   -   Barra diagonal (/)
+   - Barra diagonal (/)
 
-   -   Espacios iniciales o finales (' ')
+   - Espacios iniciales o finales (' ')
 
-   -   Nombres reservados para Windows o DOS como ("nul", "aux", "Configurar", "com1", "lpt1" etc.)
+   - Nombres reservados para Windows o DOS como ("nul", "aux", "Configurar", "com1", "lpt1" etc.)
 
 4. Haga clic en **Aceptar**.
 

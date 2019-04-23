@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085634"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Invalidar y ampliar las clases generadas
 
@@ -54,9 +54,9 @@ No obstante, puede invalidar estos métodos estableciendo el **genera doble deri
 
 Por ejemplo, en el ejemplo Library.dsl, el `CirculationBook` clase de dominio tiene el `Generates``Double Derived` propiedad establecida en `true`. El código generado para esa clase de dominio contiene dos clases:
 
--   `CirculationBookBase`, que es abstracta y que contiene todos los métodos y propiedades.
+- `CirculationBookBase`, que es abstracta y que contiene todos los métodos y propiedades.
 
--   `CirculationBook`, que se deriva de `CirculationBookBase`. Está vacío, salvo sus constructores.
+- `CirculationBook`, que se deriva de `CirculationBookBase`. Está vacío, salvo sus constructores.
 
 Para invalidar cualquier método, cree una definición parcial de la clase derivada como `CirculationBook`. Puede invalidar los métodos generados y los métodos heredados del marco de modelado.
 

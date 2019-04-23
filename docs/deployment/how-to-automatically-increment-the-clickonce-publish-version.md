@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Automáticamente incrementar la publicación de ClickOnce versión | Microsoft Docs
+title: Procedimiento Automáticamente incrementar la publicación de ClickOnce versión | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 174506e9ee88de385f5bbba6fe09276d9297f298
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: cce9dfe48e34d642b115c8391de73c0350ce515b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081845"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Procedimiento Incremento automático de la versión de publicación de ClickOnce
 
@@ -35,11 +35,11 @@ Puede deshabilitar este comportamiento en el **publicar** página de la **Diseñ
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>Para deshabilitar incrementar automáticamente la versión de publicación
 
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
-2.  Haga clic en la pestaña **Publicar**.
+2. Haga clic en la pestaña **Publicar**.
 
-3.  En el **Publicar versión** sección, desactive la **incrementar revisión automáticamente con cada versión** casilla de verificación.
+3. En el **Publicar versión** sección, desactive la **incrementar revisión automáticamente con cada versión** casilla de verificación.
 
 ## <a name="see-also"></a>Vea también
 

@@ -10,12 +10,12 @@ ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ae3c134fb97b7ec899dc63c2f0d23420390302d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 975e8624a6ffbfe0c5ae7544f2b978487465e34e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082781"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>Obtener acceso a las capas de texto mediante la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ Una capa de texto suele encapsula algún aspecto del diseño de texto. Por ejemp
 ## <a name="text-layer-information"></a>Información de la capa de texto  
  La lista siguiente describe cómo funcionan las capas de texto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:  
   
--   Puede adornar el texto en una capa de texto con marcadores y colorear la sintaxis.  
+- Puede adornar el texto en una capa de texto con marcadores y colorear la sintaxis.  
   
--   Actualmente no se puede implementar sus propios niveles.  
+- Actualmente no se puede implementar sus propios niveles.  
   
--   Expone una capa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, que se deriva de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>. El propio búfer de texto también se implementa como una capa, lo que permite una vista tratar de manera polimórfica con las capas subyacentes.  
+- Expone una capa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, que se deriva de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>. El propio búfer de texto también se implementa como una capa, lo que permite una vista tratar de manera polimórfica con las capas subyacentes.  
   
--   Puede haber cualquier número de capas entre la vista y el búfer. Cada capa sólo afecta a la capa debajo de él, y la vista que se trata en gran medida con la capa superior. (La vista tiene cierta información sobre el búfer).  
+- Puede haber cualquier número de capas entre la vista y el búfer. Cada capa sólo afecta a la capa debajo de él, y la vista que se trata en gran medida con la capa superior. (La vista tiene cierta información sobre el búfer).  
   
--   Una capa puede afectar a únicamente las capas que están debajo de él. No afectan a las capas por encima de él más allá de que se origina eventos estándar.  
+- Una capa puede afectar a únicamente las capas que están debajo de él. No afectan a las capas por encima de él más allá de que se origina eventos estándar.  
   
--   En el editor de texto oculto texto sintético y ajuste de línea se implementan como capas. Puede implementar el texto oculto y sintético sin interactuar directamente con las capas. Para obtener más información, consulte [esquematización en un servicio de lenguaje heredado](../extensibility/internals/outlining-in-a-legacy-language-service.md) y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
+- En el editor de texto oculto texto sintético y ajuste de línea se implementan como capas. Puede implementar el texto oculto y sintético sin interactuar directamente con las capas. Para obtener más información, consulte [esquematización en un servicio de lenguaje heredado](../extensibility/internals/outlining-in-a-legacy-language-service.md) y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
   
--   Cada capa de texto tiene su propio sistema de coordenadas local que se expone a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer> interfaz. La capa de ajuste de línea, por ejemplo, podría contener dos líneas mientras que el búfer de texto subyacente podría contener una única línea.  
+- Cada capa de texto tiene su propio sistema de coordenadas local que se expone a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer> interfaz. La capa de ajuste de línea, por ejemplo, podría contener dos líneas mientras que el búfer de texto subyacente podría contener una única línea.  
   
--   La vista se comunica con capas a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView> interfaz. Utilice esta interfaz para conciliar las coordenadas de la vista con las coordenadas de búfer.  
+- La vista se comunica con capas a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView> interfaz. Utilice esta interfaz para conciliar las coordenadas de la vista con las coordenadas de búfer.  
   
--   Cualquiera de capas, como la capa de texto sintético que origina texto debe proporcionar una implementación local de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>.  
+- Cualquiera de capas, como la capa de texto sintético que origina texto debe proporcionar una implementación local de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>.  
   
--   Además <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, debe implementar una capa de texto <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> y activar los eventos en el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> interfaz.  
+- Además <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, debe implementar una capa de texto <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> y activar los eventos en el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> interfaz.  
   
 ## <a name="see-also"></a>Vea también  
  [Colores de sintaxis en editores personalizados](../extensibility/syntax-coloring-in-custom-editors.md)   

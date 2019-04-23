@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 19191d8812d198b6a72ec8b6bdc8e75ef9d8f4ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097120"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Las listas están fuertemente tipadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "58995487"
 ## <a name="cause"></a>Motivo
  Tipo de público o protegido implementa <xref:System.Collections.IList?displayProperty=fullName> pero no proporciona un método fuertemente tipado para uno o varios de los siguientes:
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>Descripción de la regla
  Esta regla requiere <xref:System.Collections.IList> miembros de las implementaciones proporcionen fuertemente tipados para que los usuarios no deben convertir los argumentos en el <xref:System.Object?displayProperty=fullName> escriba cuando utilicen la funcionalidad proporcionada por la interfaz. El <xref:System.Collections.IList> interfaz se implementa mediante colecciones de objetos que se pueden acceder por índice. Esta regla supone que el tipo que implementa <xref:System.Collections.IList> hace esto para administrar una colección de instancias de un tipo que es más fuerte que <xref:System.Object>.

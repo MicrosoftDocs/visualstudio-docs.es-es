@@ -8,12 +8,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 02abe8858f928e5f3fb036b212e0a1ca777259a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987559"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096535"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Conceptos básicos de UX para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -22,35 +22,35 @@ ms.locfileid: "58987559"
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Ser coherente dentro del entorno de Visual Studio.
 
--   Seguir los patrones de interacción existente dentro del shell.
+- Seguir los patrones de interacción existente dentro del shell.
 
--   Diseñar características que se va a ser coherente con los requisitos de idioma y la artesanía visual del shell.
+- Diseñar características que se va a ser coherente con los requisitos de idioma y la artesanía visual del shell.
 
--   Uso compartido de comandos y controles cuando existen.
+- Uso compartido de comandos y controles cuando existen.
 
--   Comprender la jerarquía de Visual Studio y cómo se establece el contexto y las unidades de la interfaz de usuario.
+- Comprender la jerarquía de Visual Studio y cómo se establece el contexto y las unidades de la interfaz de usuario.
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Usar el servicio de entorno para las fuentes y colores.
 
--   Interfaz de usuario debe respetar la configuración de fuente del entorno actual, a menos que se expone para la personalización en la página fuentes y colores en el cuadro de diálogo Opciones.
+- Interfaz de usuario debe respetar la configuración de fuente del entorno actual, a menos que se expone para la personalización en la página fuentes y colores en el cuadro de diálogo Opciones.
 
--   Elementos de interfaz de usuario deben usar VSColor Service, mediante los tokens de entorno compartido o tokens específicos de característica.
+- Elementos de interfaz de usuario deben usar VSColor Service, mediante los tokens de entorno compartido o tokens específicos de característica.
 
 ### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Que sea coherente con el nuevo estilo frente a todas las imágenes.
 
--   Siga los principios de diseño de Visual Studio para iconos, glifos y otros gráficos.
+- Siga los principios de diseño de Visual Studio para iconos, glifos y otros gráficos.
 
--   No coloque texto en elementos gráficos.
+- No coloque texto en elementos gráficos.
 
 ### <a name="4-design-from-a-user-centric-perspective"></a>4. Diseñar desde una perspectiva centrada en el usuario.
 
--   Crear el flujo de tareas antes de las características individuales dentro de él.
+- Crear el flujo de tareas antes de las características individuales dentro de él.
 
--   Estar familiarizado con los usuarios y ponen ese conocimiento explícito en su especificación.
+- Estar familiarizado con los usuarios y ponen ese conocimiento explícito en su especificación.
 
--   Al revisar la interfaz de usuario, evaluar la experiencia completa, así como los detalles.
+- Al revisar la interfaz de usuario, evaluar la experiencia completa, así como los detalles.
 
--   Diseñar la interfaz de usuario para que permanezca funcional y atractiva, independientemente del idioma o configuración regional.
+- Diseñar la interfaz de usuario para que permanezca funcional y atractiva, independientemente del idioma o configuración regional.
 
 ## <a name="screen-resolution"></a>Resolución de pantalla
 
@@ -69,9 +69,9 @@ ms.locfileid: "58987559"
 
 #### <a name="feature-team-goals"></a>Objetivos del equipo de características
 
--   Advertir a los usuarios que se ha agregado un elemento que se debe configurar.
+- Advertir a los usuarios que se ha agregado un elemento que se debe configurar.
 
--   Llame la atención del usuario a las áreas que necesitan la entrada.
+- Llame la atención del usuario a las áreas que necesitan la entrada.
 
 #### <a name="anti-pattern-solution"></a>Antipatrón de solución
  Tan pronto como el usuario ha iniciado una acción y antes de que ha completado la tarea inmediatamente coloque iconos de parada crítica junto a las áreas que necesitan una configuración.
@@ -88,11 +88,11 @@ ms.locfileid: "58987559"
 #### <a name="alternatives"></a>Alternativas
  Una mejor solución a este problema sería:
 
--   Permitir que el usuario agregue una declaración sin previo aviso y, a continuación, mover inmediatamente establecer propiedades en el elemento.
+- Permitir que el usuario agregue una declaración sin previo aviso y, a continuación, mover inmediatamente establecer propiedades en el elemento.
 
--   Agregar el icono de advertencia (triángulo gold) al desplazar el foco desde el elemento, como agregar otra declaración a la lista o se intenta cambiar pestañas dentro del diseñador.
+- Agregar el icono de advertencia (triángulo gold) al desplazar el foco desde el elemento, como agregar otra declaración a la lista o se intenta cambiar pestañas dentro del diseñador.
 
--   Si el usuario intenta cambiar pestañas antes de establecer las propiedades en las declaraciones, mostrar un cuadro de diálogo que explica que no se compilará la aplicación (o cualquier las implicaciones) hasta que se resuelven las advertencias. Si el usuario descarte el cuadro de diálogo y cambia las tabulaciones de todos modos, a continuación, un icono (crítico o advertencia, según corresponda) se agrega a la pestaña declaraciones.
+- Si el usuario intenta cambiar pestañas antes de establecer las propiedades en las declaraciones, mostrar un cuadro de diálogo que explica que no se compilará la aplicación (o cualquier las implicaciones) hasta que se resuelven las advertencias. Si el usuario descarte el cuadro de diálogo y cambia las tabulaciones de todos modos, a continuación, un icono (crítico o advertencia, según corresponda) se agrega a la pestaña declaraciones.
 
 ### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>Hace que el usuario para leer el texto antes de descartar la interfaz de usuario
 
@@ -173,9 +173,9 @@ ms.locfileid: "58987559"
 
    **La mejor solución:** Suponer la pregunta al usuario haría que se esté preguntando si hace clic en el vínculo.
 
--   ¿Cómo funcionan los servicios de Windows Azure?
+- ¿Cómo funcionan los servicios de Windows Azure?
 
--   ¿Cuándo es necesario un proyecto de Windows Azure Mobile Services?
+- ¿Cuándo es necesario un proyecto de Windows Azure Mobile Services?
 
 #### <a name="using-click-here-for-links"></a>Uso de "Haga clic aquí" para vínculos
  Los hipervínculos deben ser autodescriptivos. Es un antipatrón para usar "Haga clic aquí" o cualquier variación similar.

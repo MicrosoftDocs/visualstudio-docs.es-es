@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar una referencia de salida del proyecto | Documentos de Microsoft
+title: Procedimiento Agregar una referencia de salida del proyecto | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,31 +14,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22b2073e63d2e6551a47469742142821391c86e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ae3965647416d7a8e11cf0ea5e24cef1e54a09b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079790"
 ---
-# <a name="how-to-add-a-project-output-reference"></a>Filtrar Agregar una referencia de salida del proyecto
+# <a name="how-to-add-a-project-output-reference"></a>Procedimiento Agregar una referencia de salida del proyecto
   Para implementar ensamblados de proyecto que no es de SharePoint (o archivos .xap en proyectos de Silverlight) en SharePoint, debe agregarlos como una referencia de salida del proyecto.
 
  Este proceso crea una dependencia de compilación de soluciones entre los dos proyectos. Antes de que se genera e implementa el proyecto de SharePoint, se compilan los proyectos asociados a referencias de salida del proyecto.
 
 ### <a name="to-add-a-project-output-reference"></a>Para agregar una referencia de salida del proyecto
 
-1.  Cargar una solución que contenga al menos un proyecto de SharePoint y un proyecto que no es de SharePoint.
+1. Cargar una solución que contenga al menos un proyecto de SharePoint y un proyecto que no es de SharePoint.
 
-2.  En **el Explorador de soluciones**, elija un elemento en el nodo de proyecto de SharePoint.
+2. En **el Explorador de soluciones**, elija un elemento en el nodo de proyecto de SharePoint.
 
-3.  En el **propiedades** ventana, elija el **Project Output References** propiedad y, a continuación, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Elipse del Diseñador de NET Mobile")) situado junto a ella.
+3. En el **propiedades** ventana, elija el **Project Output References** propiedad y, a continuación, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Elipse del Diseñador de NET Mobile")) situado junto a ella.
 
-4.  En el **Project Output References** diálogo cuadro, elija el **agregar** botón.
+4. En el **Project Output References** diálogo cuadro, elija el **agregar** botón.
 
-5.  En el panel Propiedades, elija la flecha situada junto a la **tipo de implementación** propiedad y, a continuación, elija un valor apropiado para el elemento que no es de SharePoint que se hace referencia, como **ElementFile**.
+5. En el panel Propiedades, elija la flecha situada junto a la **tipo de implementación** propiedad y, a continuación, elija un valor apropiado para el elemento que no es de SharePoint que se hace referencia, como **ElementFile**.
 
-6.  Elija la flecha situada junto a **nombre del proyecto**, elija el nombre del elemento de proyecto que no es de SharePoint y, a continuación, elija el **Aceptar** botón.
+6. Elija la flecha situada junto a **nombre del proyecto**, elija el nombre del elemento de proyecto que no es de SharePoint y, a continuación, elija el **Aceptar** botón.
 
 ## <a name="see-also"></a>Vea también
 - [Proporcionar información de empaquetado e implementación de elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

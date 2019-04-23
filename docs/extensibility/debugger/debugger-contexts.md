@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4d1dd6d8f4d64400b4b2358dd47971f3111dcf1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3fc77e24a1a9ca72d6f689247f0de6a9e0bf26cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098940"
 ---
 # <a name="debugger-contexts"></a>Contextos de depurador
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuración, el motor de depuración (DE) funciona simultáneamente en varios contextos distintos, como sigue:
 
--   El contexto del código, que describe la ubicación actual en la secuencia de ejecución de un programa.
+- El contexto del código, que describe la ubicación actual en la secuencia de ejecución de un programa.
 
--   El contexto de la documentación o la posición, que describe la posición actual dentro de un documento de origen.
+- El contexto de la documentación o la posición, que describe la posición actual dentro de un documento de origen.
 
--   El contexto de evaluación de expresión, que describe el contexto en la expresión de evaluación llevará a cabo.
+- El contexto de evaluación de expresión, que describe el contexto en la expresión de evaluación llevará a cabo.
 
 ## <a name="in-this-section"></a>En esta sección
  [Contexto de código](../../extensibility/debugger/code-context.md) trata el contexto de código como una dirección en la secuencia de instrucciones de un programa en arquitecturas de tiempo de ejecución de hoy en comparación con los lenguajes no tradicionales, donde código no puede representarse mediante las instrucciones, pero algunos otros medios.

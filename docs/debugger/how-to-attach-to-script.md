@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: adjuntar a Script | Microsoft Docs'
+title: Procedimiento Adjuntar a Script | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2402cbc4f4a1fa37c4317c6616fc02e4fa34e59d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 72ae0ff0b4958e831f96a0eb62b4a1a4a453ece7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084913"
 ---
-# <a name="how-to-attach-to-script"></a>Cómo: Adjuntar a script
+# <a name="how-to-attach-to-script"></a>Procedimiento Asociación a script
 En este tema se explica cómo asociar manualmente el depurador de Visual Studio a un archivo de script para el proceso de depuración.
 
 ### <a name="to-attach-to-a-running-process"></a>Para asociar a un proceso en ejecución
@@ -34,34 +34,34 @@ En este tema se explica cómo asociar manualmente el depurador de Visual Studio 
 
 2. En el cuadro de diálogo **Asociar al proceso**, examine la lista **Procesos disponibles** y busque el proceso de script al que desea asociar. Puede identificar los procesos de script examinando la columna **Tipo**.
 
-   1.  Si el proceso que desea depurar se está ejecutando en otro equipo, primero deberá seleccionar el equipo remoto.
+   1. Si el proceso que desea depurar se está ejecutando en otro equipo, primero deberá seleccionar el equipo remoto.
 
-   2.  Si el proceso se ejecuta con una cuenta de usuario diferente, active la casilla **Mostrar los procesos de todos los usuarios** .
+   2. Si el proceso se ejecuta con una cuenta de usuario diferente, active la casilla **Mostrar los procesos de todos los usuarios** .
 
-   3.  Si está conectado a través de **Conexión a Escritorio remoto**, active la casilla **Mostrar los procesos de todas las sesiones**.
+   3. Si está conectado a través de **Conexión a Escritorio remoto**, active la casilla **Mostrar los procesos de todas las sesiones**.
 
 3. Haga clic en el proceso al que desee asociar.
 
 4. En el **adjuntar a** cuadro, debería ver **código de Script** o **automática: Código de script**. Si ve algo más, siga estos pasos:
 
-   1.  Haga clic en **Seleccionar**.
+   1. Haga clic en **Seleccionar**.
 
-   2.  En el cuadro de diálogo **Seleccionar tipo de código**, haga clic en **Depurar estos tipos de código** y seleccione **Script**.
+   2. En el cuadro de diálogo **Seleccionar tipo de código**, haga clic en **Depurar estos tipos de código** y seleccione **Script**.
 
-   3.  Haga clic en **Aceptar**.
+   3. Haga clic en **Aceptar**.
 
 5. Haga clic en **Adjuntar**.
 
-    En este punto, podría ver una advertencia indicando que la depuración de script está deshabilitada en Internet Explorer. Si sucede esto, consulte [advertencia: depuración de scripts deshabilitada](../debugger/warning-script-debugging-disabled.md).
+    En este punto, podría ver una advertencia indicando que la depuración de script está deshabilitada en Internet Explorer. Si sucede esto, consulte [advertencia: Depuración de scripts deshabilitada](../debugger/warning-script-debugging-disabled.md).
 
    La lista **Procesos disponibles** aparecerá automáticamente al abrir el cuadro de diálogo **Procesos** . Los procesos se pueden iniciar y detener en segundo plano mientras el cuadro de diálogo está abierto. Por consiguiente, el contenido podría no estar siempre actualizado. Es posible actualizar la lista en cualquier momento presionando el botón **Actualizar** y ver los procesos en curso.
 
-   Puede tener asociados varios programas mientras realiza la depuración, pero sólo un programa estará activo en el depurador en cada momento. Para establecer el programa activo, puede usar la barra de herramientas Ubicación de depuración. Para obtener más información, consulte [Cómo: establecer el proceso actual](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).
+   Puede tener asociados varios programas mientras realiza la depuración, pero sólo un programa estará activo en el depurador en cada momento. Para establecer el programa activo, puede usar la barra de herramientas Ubicación de depuración. Para obtener más información, vea [Cómo: Establecer el proceso actual](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).
 
    Todos los comandos de ejecución del menú **Depurar** afectan al programa activo. Puede interrumpir cualquier programa depurado desde el cuadro de diálogo procesos. Consulte [usar puntos de interrupción](../debugger/using-breakpoints.md).
 
 > [!NOTE]
->  Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: adjuntar a un proceso que pertenezca a un usuario de confianza puede ser peligroso. Si la información siguiente le resulta sospechosa o no está seguro de su procedencia, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+>  Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: Adjuntar a un proceso que pertenezca a un usuario que no sea de confianza puede ser peligroso. Si la información siguiente parece sospechosa o no está seguro, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
 
  En algunos casos, al depurar en una sesión de Terminal Services (Escritorio remoto), en la lista Procesos disponibles no aparecerán todos los procesos disponibles. En [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] o versiones posteriores, si ejecuta Visual Studio como usuario limitado, la lista Procesos disponibles no mostrará los procesos que se ejecuten en la sesión 0, la cual se utiliza para los servicios y otros procesos del servidor, por ejemplo w3wp.exe. Para resolver el problema, ejecute Visual Studio con una cuenta de administrador o ejecute Visual Studio desde la consola de servidor en lugar de una sesión de Servicios de Terminal Server. Si estas soluciones no son posibles, hay una tercera opción: asociar al proceso escribiendo vsjitdebugger.exe-p ProcessId en la línea de comandos de Windows. Puede determinar el identificador de proceso utilizando tlist.exe. Para obtener tlist.exe, descargue e instale las Herramientas de depuración para Windows, disponibles en [Windows Hardware Developer Central](/windows-hardware/drivers/dashboard/).
 

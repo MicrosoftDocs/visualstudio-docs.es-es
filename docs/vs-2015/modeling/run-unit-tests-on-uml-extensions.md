@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997927"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079855"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Ejecutar pruebas unitarias en extensiones UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,20 +50,20 @@ Para ayudar a mantener estable el código durante los cambios sucesivos, recomen
   
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-##  <a name="Host"></a> Configurar una prueba unitaria para las extensiones VSIX  
+## <a name="Host"></a> Configurar una prueba unitaria para las extensiones VSIX  
  Los métodos de las extensiones de modelado suelen funcionar con un diagrama que ya está abierto. Los métodos usan importaciones MEF como **IDiagramContext** y **ILinkedUndoContext**. Su entorno de prueba debe tener este contexto configurado antes de ejecutar las pruebas.  
   
 #### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Para configurar una prueba unitaria que se ejecuta en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-1.  Cree el proyecto de extensión UML y el proyecto de prueba unitaria.  
+1. Cree el proyecto de extensión UML y el proyecto de prueba unitaria.  
   
-    1.  **Un proyecto de extensión UML.** Se suele crear mediante el comando, el gesto o las plantillas de proyecto de validación. Por ejemplo, vea [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+    1. **Un proyecto de extensión UML.** Se suele crear mediante el comando, el gesto o las plantillas de proyecto de validación. Por ejemplo, vea [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
-    2.  **Un proyecto de prueba unitaria.** Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md).  
+    2. **Un proyecto de prueba unitaria.** Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md).  
   
-2.  Cree una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contenga un proyecto de modelado UML. Usará esta solución como el estado inicial de las pruebas. Debe ser independiente de la solución en la que escribe la extensión UML y las pruebas unitarias. Para obtener más información, consulte [crear modelos de proyectos y diagramas UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
+2. Cree una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contenga un proyecto de modelado UML. Usará esta solución como el estado inicial de las pruebas. Debe ser independiente de la solución en la que escribe la extensión UML y las pruebas unitarias. Para obtener más información, consulte [crear modelos de proyectos y diagramas UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
-3.  **En el proyecto de extensión UML**, edite el archivo .csproj como texto y asegúrese de que las siguientes líneas muestran `true`:  
+3. **En el proyecto de extensión UML**, edite el archivo .csproj como texto y asegúrese de que las siguientes líneas muestran `true`:  
   
     ```  
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>  
@@ -72,33 +72,33 @@ Para ayudar a mantener estable el código durante los cambios sucesivos, recomen
   
      Para editar el archivo .csproj como texto, elija **Descargar el proyecto** en el menú contextual del proyecto, en el Explorador de soluciones. Luego, elija **Editar ….csproj**. Tras haber editado el texto, elija **Volver a cargar el proyecto**.  
   
-4.  En el proyecto de extensión UML, agregue la siguiente línea a **Properties\AssemblyInfo.cs**. Esto permite que las pruebas unitarias tengan acceso a los métodos que quiere comprobar:  
+4. En el proyecto de extensión UML, agregue la siguiente línea a **Properties\AssemblyInfo.cs**. Esto permite que las pruebas unitarias tengan acceso a los métodos que quiere comprobar:  
   
     ```csharp  
     [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
     ```  
   
-5.  **En el proyecto de prueba unitaria**, agregue las siguientes referencias de ensamblado:  
+5. **En el proyecto de prueba unitaria**, agregue las siguientes referencias de ensamblado:  
   
-    -   *El proyecto de extensión UML*  
+    - *El proyecto de extensión UML*  
   
-    -   **EnvDTE.dll**  
+    - **EnvDTE.dll**  
   
-    -   **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
   
-    -   **Microsoft.VisualStudio.ComponentModelHost.dll**  
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**  
   
-    -   **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
   
-    -   **Microsoft.VisualStudio.Uml.Interfaces.dll**  
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**  
   
-    -   **Microsoft.VSSDK.TestHostFramework.dll**  
+    - **Microsoft.VSSDK.TestHostFramework.dll**  
   
-6.  Anteponga el atributo `[HostType("VS IDE")]` a cada método de prueba, incluidos los métodos de inicialización.  
+6. Anteponga el atributo `[HostType("VS IDE")]` a cada método de prueba, incluidos los métodos de inicialización.  
   
      Esto garantizará que la prueba se ejecute en una instancia experimental de Visual Studio.  
   
-##  <a name="DTE"></a> Acceso a DTE y ModelStore  
+## <a name="DTE"></a> Acceso a DTE y ModelStore  
  Escriba un método para abrir un proyecto de modelado en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Normalmente, es conveniente abrir una solución solo una vez en cada ejecución de pruebas. Para ejecutar el método solo una vez, anteponga el atributo `[AssemblyInitialize]` en el método. No olvide que también necesita el atributo [HostType("VS IDE")] en cada método de prueba.  Por ejemplo:  
   
 ```csharp  
@@ -166,7 +166,7 @@ namespace UnitTests
   
  Si una instancia de <xref:EnvDTE.Project?displayProperty=fullName> representa un proyecto de modelado, puede convertirla en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.IModelingProject> y viceversa.  
   
-##  <a name="Opening"></a> Abrir un diagrama de modelo  
+## <a name="Opening"></a> Abrir un diagrama de modelo  
  En cada prueba o clase de pruebas probablemente le interese trabajar con un diagrama abierto. En el siguiente ejemplo se usa el atributo `[ClassInitialize]` , que ejecuta este método antes que otros métodos de esta clase de prueba. Una vez más, no olvide que también necesita el atributo [HostType("VS IDE")] en cada método de prueba:  
   
 ```csharp  
@@ -211,7 +211,7 @@ public class MyTestClass
   
 ```  
   
-##  <a name="UiThread"></a> Realizar cambios en el modelo en el subproceso de interfaz de usuario  
+## <a name="UiThread"></a> Realizar cambios en el modelo en el subproceso de interfaz de usuario  
  Si las pruebas o los métodos en pruebas realizan cambios en el almacén de modelos, deberá ejecutarlos en el subproceso de la interfaz de usuario. Si no hace esto, puede que surja una `AccessViolationException`. Inserte el código del método de prueba en una llamada a Invoke:  
   
 ```  
@@ -231,7 +231,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
     }  
 ```  
   
-##  <a name="MEF"></a> Comando de prueba, gestos y otros componentes MEF  
+## <a name="MEF"></a> Comando de prueba, gestos y otros componentes MEF  
  Los componentes MEF usan las declaraciones de propiedad que tienen el atributo `[Import]` y cuyos valores son establecidos por sus hosts. Estas propiedades suelen englobar IDiagramContext, SVsServiceProvider y ILinkedUndoContext. Cuando se prueba un método que usa alguna de estas propiedades, hay que establecer sus valores antes de ejecutar el método en cuestión. Por ejemplo, si ha escrito una extensión de comando parecida a este código:  
   
 ```  

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 850670e9d7994b754839c4fb0b1a8ccd07be5b24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082040"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procedimiento Marcar los controles como seguros
   Para la seguridad, SharePoint diferencia entre los controles Web que están protegidos contra la inyección de script y los controles Web que no están. Protegido de los controles, o *controles seguros*, pueden tener acceso a los usuarios de confianza. Puede marcar los controles como seguros en la propiedad de las entradas de Control seguro de un elemento de proyecto de SharePoint o en el **Diseñador de paquetes** cuando agrega un ensamblado para el paquete. Para obtener más información, consulte
@@ -33,47 +33,47 @@ ms.locfileid: "56646426"
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Para marcar los controles como seguros o no seguros en la propiedad de las entradas de control seguro
 
-1.  Crear una solución de SharePoint con un proyecto de elemento Web Visual.
+1. Crear una solución de SharePoint con un proyecto de elemento Web Visual.
 
-2.  Agregue dos controles para el elemento Web: un cuadro de texto y un botón. Deje los nombres de los valores predeterminados, TextBox1 y Button1, respectivamente.
+2. Agregue dos controles para el elemento Web: un cuadro de texto y un botón. Deje los nombres de los valores predeterminados, TextBox1 y Button1, respectivamente.
 
-3.  Agregue dos entradas para el elemento Web **entradas de controles seguros** propiedad. Para ello, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) situado junto a la **entradas de controles seguros** propiedad en el  **Propiedades** ventana.
+3. Agregue dos entradas para el elemento Web **entradas de controles seguros** propiedad. Para ello, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) situado junto a la **entradas de controles seguros** propiedad en el  **Propiedades** ventana.
 
      El **entradas de controles seguros** aparece el cuadro de diálogo.
 
-4.  En el **entradas de controles seguros** diálogo cuadro, elija el **agregar** dos veces para agregar dos entradas de control seguras para la **miembros** panel: uno para el botón y otro para el cuadro de texto.
+4. En el **entradas de controles seguros** diálogo cuadro, elija el **agregar** dos veces para agregar dos entradas de control seguras para la **miembros** panel: uno para el botón y otro para el cuadro de texto.
 
-5.  Elija la primera entrada de control segura y, a continuación, cambie el valor de su **seguro** propiedad **False**, sus **nombre de tipo** propiedad **Button1**y su **Safe Against Script** propiedad **False**.
+5. Elija la primera entrada de control segura y, a continuación, cambie el valor de su **seguro** propiedad **False**, sus **nombre de tipo** propiedad **Button1**y su **Safe Against Script** propiedad **False**.
 
      Este paso identifica el control de botón como un control no seguro.
 
-6.  En la lista, seleccione la segunda entrada de control segura. Deje el valor de su **seguro** propiedad como **True** y establezca su **nombre de tipo** propiedad **TextBox1** y su **seguro Frente a scripts** propiedad **True**.
+6. En la lista, seleccione la segunda entrada de control segura. Deje el valor de su **seguro** propiedad como **True** y establezca su **nombre de tipo** propiedad **TextBox1** y su **seguro Frente a scripts** propiedad **True**.
 
      El control de cuadro de texto se marca ahora como un control que es seguro contra la inyección de script.
 
-7.  Elija el botón **Aceptar** para cerrar el cuadro de diálogo.
+7. Elija el botón **Aceptar** para cerrar el cuadro de diálogo.
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>Marcar los controles seguros en el Diseñador de paquetes
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Para marcar los controles como seguros o no seguros en el Diseñador de paquetes
 
-1.  Crear una solución de SharePoint con un proyecto de elemento Web Visual.
+1. Crear una solución de SharePoint con un proyecto de elemento Web Visual.
 
-2.  Agregue dos controles para el elemento Web: un cuadro de texto y un botón. Deje los nombres de los valores predeterminados, TextBox1 y Button1, respectivamente.
+2. Agregue dos controles para el elemento Web: un cuadro de texto y un botón. Deje los nombres de los valores predeterminados, TextBox1 y Button1, respectivamente.
 
      Tome nota del espacio de nombres del control porque se utiliza más adelante.
 
-3.  En la barra de menús, elija **compilar** > **compilar solución** para compilar el proyecto.
+3. En la barra de menús, elija **compilar** > **compilar solución** para compilar el proyecto.
 
-4.  Cree otra solución de SharePoint.
+4. Cree otra solución de SharePoint.
 
-5.  En **el Explorador de soluciones**, abra el menú contextual para el *Package.Package* de archivo y, a continuación, elija **abrir** para abrir el **Diseñador de paquetes**.
+5. En **el Explorador de soluciones**, abra el menú contextual para el *Package.Package* de archivo y, a continuación, elija **abrir** para abrir el **Diseñador de paquetes**.
 
-6.  En el **Diseñador de paquetes**, elija el **avanzadas** ficha.
+6. En el **Diseñador de paquetes**, elija el **avanzadas** ficha.
 
-7.  En **ensamblados adicionales**, elija el **agregar** botón y, a continuación, elija **Agregar ensamblado existente** en la lista.
+7. En **ensamblados adicionales**, elija el **agregar** botón y, a continuación, elija **Agregar ensamblado existente** en la lista.
 
-8.  En el **Agregar ensamblado existente** diálogo cuadro, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) situado junto a  **Ruta de acceso de origen**.
+8. En el **Agregar ensamblado existente** diálogo cuadro, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) situado junto a  **Ruta de acceso de origen**.
 
 9. Elija el ensamblado de la solución de SharePoint que ha creado en el paso 1 y, a continuación, elija el **abierto** botón.
 
