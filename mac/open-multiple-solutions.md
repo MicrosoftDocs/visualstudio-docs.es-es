@@ -1,17 +1,17 @@
 ---
-title: Filtrar Apertura de soluciones múltiples en Visual Studio para Mac
+title: Procedimiento Apertura de soluciones múltiples en Visual Studio para Mac
 description: Obtenga información para abrir más de una solución en Visual Studio para Mac y para abrir más de una instancia de la aplicación.
 author: conceptdev
 ms.author: crdun
-ms.date: 07/19/2018
+ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768267"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856349"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Apertura de varias soluciones o instancias de Visual Studio para Mac
 
@@ -21,11 +21,9 @@ Además, al abrir una solución, el comportamiento predeterminado es abrirla en 
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Abrir una segunda instancia de Visual Studio para Mac
 
-Para abrir una segunda instancia del entorno de desarrollo integrado (IDE), abra la aplicación **Terminal** y escriba la siguiente línea:
+Para abrir una segunda instancia del entorno de desarrollo integrado (IDE), haga clic con el botón derecho en el icono de Visual Studio en el dock o en la carpeta **Aplicaciones** y seleccione **Nueva instancia**.
 
-```bash
-open -n "/Applications/Visual Studio.app"
-```
+![Captura de pantalla de la opción de menú Nueva instancia al hacer clic con el botón derecho en el icono de Visual Studio](media/open-new-instance.png)
 
 ## <a name="open-a-second-solution-inside-a-single-instance"></a>Apertura de una segunda solución dentro de una instancia única
 

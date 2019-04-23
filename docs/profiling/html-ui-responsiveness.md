@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: f7ab539c1e5a5e90006629850f4c0e728e2e89f4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f95daba8d1a7a8965be223ff2a9787101530edc1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868161"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790932"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP
 En este tema, se describe cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.
@@ -178,7 +179,7 @@ if (performance.mark && performance.measure) {
 
  ![Regla de sesión de diagnóstico](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")
 
- La escala de tiempo muestra cuándo se producen los eventos del ciclo de vida de la aplicación, como el evento de activación, y muestra marcas de usuario (triángulos de marca de usuario) que puedes agregar al código. Puede seleccionar los eventos para mostrar información sobre herramientas con más información. Para obtener más información sobre las marcas de usuario, consulte [Marcar código para el análisis](#ProfileMark) en este tema.
+ La escala de tiempo muestra cuándo se producen los eventos del ciclo de vida de la aplicación, como el evento de activación, y muestra marcas de usuario (triángulos de marca de usuario) que pueden agregarse al código. Puede seleccionar los eventos para mostrar información sobre herramientas con más información. Para obtener más información sobre las marcas de usuario, consulte [Marcar código para el análisis](#ProfileMark) en este tema.
 
  Los eventos del ciclo de vida de la aplicación aparecen como símbolos con forma de diamante. Estos son eventos DOM, entre los que se incluyen:
 

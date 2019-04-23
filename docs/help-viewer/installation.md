@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d61b101b4abf3829eed824ddf434af976cd4b276
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155674"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789684"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalación del Visor de Ayuda de Microsoft
 
@@ -31,11 +31,11 @@ El Visor de Ayuda es un componente de instalación opcional de Visual Studio. Pa
 
 1. Haga clic en el botón **Modificar** para iniciar la instalación del Visor de Ayuda de Microsoft.
 
-Otra manera de instalar fácilmente el Visor de Ayuda de Microsoft es a través del cuadro **Inicio rápido**:
+Otra manera de instalar fácilmente el Visor de Ayuda de Microsoft es a través del cuadro de búsqueda:
 
-1. Escriba **visor de ayuda** en el cuadro **Inicio rápido** en la barra de título de Visual Studio.
+1. Presione **Ctrl**+**Q** y, luego, escriba o especifique **Visor de Ayuda** en el cuadro de búsqueda.
 
-   ![Cuadro Inicio rápido](media/installation/quick-launch.png)
+   ![Cuadro de búsqueda](media/installation/quick-launch.png)
 
 1. Elija el resultado denominado **Visor de Ayuda (componente individual)**.
 

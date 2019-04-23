@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 94fff3c08d9bf6be7467e98a08d107b65928bd60
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325297"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790672"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Primer vistazo al IDE de Visual Studio
 
@@ -112,13 +112,13 @@ Vamos a compilar el proyecto para ver algún resultado de compilación. En el me
 
 ![Ventana Resultados en Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Inicio rápido
+## <a name="search-box"></a>Cuadro de búsqueda
 
-El cuadro **Inicio rápido** es una manera rápida y sencilla de hacer prácticamente todo en Visual Studio. Puede especificar algún texto relacionado con lo que quiere hacer, y se mostrará una lista de opciones que pertenecen al texto. Por ejemplo, supongamos que se quiere aumentar el detalle de los resultados de compilación para mostrar más detalles sobre lo que está haciendo exactamente la compilación. Así es como se haría:
+El cuadro de búsqueda es una manera rápida y sencilla de hacer prácticamente todo en Visual Studio. Puede especificar algún texto relacionado con lo que quiere hacer, y se mostrará una lista de opciones que pertenecen al texto. Por ejemplo, supongamos que se quiere aumentar el detalle de los resultados de compilación para mostrar más detalles sobre lo que está haciendo exactamente la compilación. Así es como se haría:
 
-1. Escriba **verbosity** en el cuadro **Inicio rápido**. En los resultados que aparecen, elija **Proyectos y soluciones --> Compilar y ejecutar** en la categoría **Opciones**.
+1. Escriba **nivel de detalle** en el cuadro de búsqueda. En los resultados que aparecen, elija **Proyectos y soluciones --> Compilar y ejecutar** en la categoría **Opciones**.
 
-   ![Cuadro Inicio rápido en Visual Studio](media/quickstart-IDE-quick-launch.png)
+   ![Cuadro de búsqueda de Visual Studio](media/quickstart-IDE-quick-launch.png)
 
    El cuadro de diálogo **Opciones** se abre en la página **Compilar y ejecutar**.
 
@@ -132,7 +132,7 @@ El cuadro **Inicio rápido** es una manera rápida y sencilla de hacer práctica
 
 ## <a name="send-feedback-menu"></a>Menú Enviar comentarios
 
-Si encuentra algún problema mientras usa Visual Studio o si tiene sugerencias para mejorar el producto, puede usar el menú **Enviar comentarios** de la parte superior de la ventana de Visual Studio, junto al cuadro **Inicio rápido**.
+Si encuentra algún problema mientras usa Visual Studio o si tiene sugerencias para mejorar el producto, puede usar el menú **Enviar comentarios** de la parte superior de la ventana de Visual Studio.
 
 ![Menú Enviar comentarios en Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
 

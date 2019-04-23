@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416176"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857598"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introducción a Visual Basic en Visual Studio
 
@@ -33,7 +33,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 ::: moniker range="vs-2019"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, puede 
 
    Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola (.NET Core)** y luego, **Siguiente**.
 
-   ![Seleccionar la plantilla Visual Basic para la Aplicación de consola (.NET Framework)](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   ![Elija la plantilla Visual Basic para la Aplicación de consola (.NET Framework).](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
    > Si no ve la plantilla **Aplicación de consola (.NET Core)**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?**, elija el vínculo **Instalar más herramientas y características**.
@@ -103,7 +103,7 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, puede 
 
 1. En la ventana **Configurar el nuevo proyecto**, escriba *WhatIsYourName* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
 
-   ![En la ventana "Configurar el nuevo proyecto", asigne al proyecto el nombre "WhatIsYourName"](./media/vs-2019/vb-name-your-project.-whatname.png)
+   ![En la ventana "Configurar el nuevo proyecto", asigne al proyecto el nombre "WhatIsYourName".](./media/vs-2019/vb-name-your-project-whatname.png)
 
    Visual Studio se abre en el nuevo proyecto.
 
@@ -262,10 +262,10 @@ Una aplicación de consola toma la entrada y muestra la salida en una ventana de
 Enhorabuena por completar este tutorial. Para más información, continúe con el tutorial siguiente.
 
 > [!div class="nextstepaction"]
-> [Creación de una biblioteca con Visual Basic y el SDK de .NET Core en Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [Creación de una biblioteca con Visual Basic y el SDK de .NET Core en Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Vea también
 
-* [Tutoriales del lenguaje Visual Basic](/dotnet/visual-basic/walkthroughs)
-* [Referencia del lenguaje Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [Tutoriales sobre el lenguaje Visual Basic](/dotnet/visual-basic/walkthroughs)
+* [Referencia del lenguaje Visual Basic](/dotnet/visual-basic/language-reference/index)
 * [Archivos de código de IntelliSense para Visual Basic](../../ide/visual-basic-specific-intellisense.md)

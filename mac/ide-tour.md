@@ -3,20 +3,17 @@ title: Paseo por Visual Studio para Mac
 description: Visual Studio para Mac proporciona un entorno de desarrollo integrado para compilar aplicaciones .NET en macOS, incluidos sitios web de ASP.NET Core y proyectos de Xamarin para iOS, Android, Mac y Xamarin.Forms.
 author: conceptdev
 ms.author: crdun
-ms.date: 02/07/2019
+ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 0ab7293a7b7d956778d1dbab568d609e6bf3d644
+ms.openlocfilehash: a621faece8ed0cef3dd48d46fc41857af6e62c9e
 ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857262"
+ms.locfileid: "58856319"
 ---
-# <a name="visual-studio-2017-for-mac-tour"></a>Paseo por Visual Studio 2017 para Mac
-
-> [!NOTE]
-> Visual Studio 2019 para Mac está [ya disponible](installation.md).
+# <a name="visual-studio-2019-for-mac-tour"></a>Paseo por Visual Studio 2019 para Mac
 
 Visual Studio para Mac es un _entorno de desarrollo integrado_ de .NET en Mac que se puede usar para editar, depurar y compilar código y, después, publicar una aplicación. Además de las características esperadas, como un editor estándar y un depurador, Visual Studio para Mac incluye compiladores, herramientas de finalización de código, diseñadores gráficos y control de código fuente para facilitar el proceso de desarrollo de software.
 
@@ -39,18 +36,15 @@ En este artículo se analizan varias secciones de Visual Studio para Mac y se of
 
 Visual Studio para Mac se organiza en varias secciones para administrar archivos de aplicación y configuraciones, crear código de aplicación y depurar.
 
-## <a name="welcome-screen"></a>Pantalla de inicio de sesión
+## <a name="start-window"></a>Ventana de inicio
 
-Cuando se inicia, Visual Studio para Mac muestra una *pantalla de inicio de sesión*:
+Al iniciar la versión preliminar de Visual Studio 2019 para Mac, los nuevos usuarios verán una ventana de inicio de sesión. Inicie sesión con una cuenta Microsoft para activar una licencia de pago, si tiene una, o haga clic en el vínculo para consultar las suscripciones de Azure. Puede presionar **Omitir** e iniciar sesión más adelante en el elemento de menú **Visual Studio > Iniciar sesión**:
 
-![Pantalla de inicio de sesión](media/ide-tour-image1.png)
+![Inicio de sesión en su cuenta Microsoft](media/ide-tour-2019-start-signin.png)
 
-La pantalla de inicio de sesión contiene las secciones siguientes:
+Los usuarios que hayan iniciado sesión verán la nueva _ventana de inicio_, en la que se muestra una lista de proyectos recientes y botones para abrir un proyecto existente o crear uno:
 
-- **Barra de herramientas**: proporciona acceso rápido a la barra de búsqueda. Cuando se carga una solución, la barra de herramientas se usa para establecer configuraciones de aplicación, para depurar y para mostrar errores.
-- **Introducción**: proporciona acceso rápido a temas útiles para desarrolladores que empiezan a usar Visual Studio para Mac.
-- **Soluciones recientes**: proporciona acceso rápido a soluciones abiertas recientemente, así como a cómodos botones para abrir o crear proyectos.
-- **Noticias del desarrollador**: fuente de noticias que le mantiene al día sobre la información más reciente de Microsoft Developer.
+![Elección entre proyectos recientes o creación de uno nuevo](media/ide-tour-2019-start-projects.png)
 
 ## <a name="solutions-and-projects"></a>Soluciones y proyectos
 
@@ -118,10 +112,14 @@ Los archivos con cambios sin confirmar tienen una anotación en sus iconos en el
 
 Para más información sobre el uso del control de versiones en Visual Studio, consulte el artículo [Control de versiones](/visualstudio/mac/version-control).
 
+## <a name="next-steps"></a>Pasos siguientes
+
+- [Instalación de Visual Studio para Mac](installation.md)
+- [Revisión de las cargas de trabajo disponibles](/visualstudio/mac/workloads/)
+
 ## <a name="related-video"></a>Vídeo relacionado
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
-
 
 ## <a name="see-also"></a>Vea también
 
