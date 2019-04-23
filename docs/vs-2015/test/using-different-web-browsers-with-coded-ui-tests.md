@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100409"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
   
 - Sistemas operativos:  
   
-  -   Microsoft Windows 7  
+  - Microsoft Windows 7  
   
-  -   Microsoft Windows 8  
+  - Microsoft Windows 8  
   
-  -   Microsoft Windows Server 2008 R2 SP1  
+  - Microsoft Windows Server 2008 R2 SP1  
   
 - Versiones de explorador web:  
   
-  -   Windows Internet Explorer 9  
+  - Windows Internet Explorer 9  
   
-  -   Windows Internet Explorer 10  
+  - Windows Internet Explorer 10  
   
-  -   Si quiere conocer las versiones de Mozilla Firefox y Google Chrome compatibles, vaya [aquí](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+  - Si quiere conocer las versiones de Mozilla Firefox y Google Chrome compatibles, vaya [aquí](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
 - Instale los [componentes Selenium para pruebas automatizadas de interfaz de usuario en distintos exploradores](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
@@ -83,19 +83,19 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
 ### <a name="enable-debugging"></a>Habilitar depuración  
  Para habilitar la depuración de la aplicación web, debe completar las opciones de configuración siguientes:  
   
-1.  Habilitar Solo mi código:  
+1. Habilitar Solo mi código:  
   
-    1.  En el menú **Herramientas**, seleccione **Opciones** y, después, **Depuración**.  
+    1. En el menú **Herramientas**, seleccione **Opciones** y, después, **Depuración**.  
   
-    2.  Seleccione **Habilitar Solo mi código**.  
+    2. Seleccione **Habilitar Solo mi código**.  
   
-2.  Deshabilitar excepciones de CLR:  
+2. Deshabilitar excepciones de CLR:  
   
-    1.  En el menú **Depurar**, seleccione **Excepciones**.  
+    1. En el menú **Depurar**, seleccione **Excepciones**.  
   
-    2.  Para **Common Language Runtime Exceptions** (Excepciones de Common Language Runtime), desactive **No controlada por el usuario**.  
+    2. Para **Common Language Runtime Exceptions** (Excepciones de Common Language Runtime), desactive **No controlada por el usuario**.  
   
-##  <a name="generate"></a> *No se ve la opción para cambiar BrowserWindow.CurrentBrowser en la prueba automatizada de IU.*  
+## <a name="generate"></a> *No se ve la opción para cambiar BrowserWindow.CurrentBrowser en la prueba automatizada de IU.*  
  Puede que esté usando una versión de [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] que no admite pruebas de IU codificadas en distintos exploradores web. Para usar estas pruebas de IU, debe usar Visual Studio Enterprise.  
   
  *¿Qué más debería saber?*  
@@ -141,7 +141,7 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
 ### <a name="guidance"></a>Orientación  
  [Pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
- [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ [Pruebas para entrega continua con Visual Studio 2012 – capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="faq"></a>Preguntas más frecuentes  
  [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f6ca07ebf8489dd62d6cfbe232f2522ac0f448a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099746"
 ---
 # <a name="actions-pane-overview"></a>Información general sobre el panel de acciones
   Un panel de acciones es un **acciones de documentos** panel de tareas que se adjunta a un documento específico de Microsoft Office Word o un libro de Microsoft Office Excel. El panel de acciones se hospeda en el panel de tareas de Office junto con otros paneles de tareas integrados, como el **origen XML** panel de tareas de Excel o el **estilos y formato** panel de tareas en Word. Puede utilizar controles de Windows Forms o WPF para diseñar la interfaz de usuario del panel de acciones.
@@ -61,17 +61,17 @@ ms.locfileid: "56608817"
 
  Para ocultar el panel de tareas en la solución, tiene varias opciones:
 
--   Para Word, establezca el <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> propiedad de la <xref:Microsoft.Office.Interop.Word.TaskPane> objeto que representa el panel de tareas de acciones de documentos para **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisDocument` del proyecto.
+- Para Word, establezca el <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> propiedad de la <xref:Microsoft.Office.Interop.Word.TaskPane> objeto que representa el panel de tareas de acciones de documentos para **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisDocument` del proyecto.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
--   Para Excel, establezca el <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> propiedad de la <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> objeto **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisWorkbook` del proyecto.
+- Para Excel, establezca el <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> propiedad de la <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> objeto **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisWorkbook` del proyecto.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
--   Para Word o Excel, también puede establecer el <xref:Microsoft.Office.Core.CommandBar.Visible%2A> propiedad de la barra de comandos que representa el panel de tareas para **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisDocument` o `ThisWorkbook` del proyecto.
+- Para Word o Excel, también puede establecer el <xref:Microsoft.Office.Core.CommandBar.Visible%2A> propiedad de la barra de comandos que representa el panel de tareas para **false**. El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisDocument` o `ThisWorkbook` del proyecto.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -86,9 +86,9 @@ ms.locfileid: "56608817"
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Para mostrar el panel de acciones mediante la interfaz de usuario de Word o Excel
 
-1.  En la cinta de opciones, haga clic en el **vista** ficha.
+1. En la cinta de opciones, haga clic en el **vista** ficha.
 
-2.  En el **mostrar u ocultar** grupo, haga clic en el **acciones de documentos** botón de alternancia.
+2. En el **mostrar u ocultar** grupo, haga clic en el **acciones de documentos** botón de alternancia.
 
 ## <a name="program-actions-pane-events"></a>Eventos del panel de acciones de programa
  Puede agregar varios controles de usuario al panel de acciones y, a continuación, escribir código para responder a eventos en el documento mostrando y ocultando los controles de usuario. Si asigna elementos de esquema XML a su documento, puede mostrar determinados controles de usuario en el panel de acciones siempre que el punto de inserción esté dentro de uno de los elementos XML. Para obtener más información, vea [Cómo: Asignar esquemas a documentos de Word en Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) y [Cómo: Asignar esquemas a hojas de cálculo en Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).
@@ -108,7 +108,7 @@ ms.locfileid: "56608817"
 
  La propiedad <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> puede tomar los siguientes <xref:Microsoft.Office.Tools.StackStyle> valores de enumeración.
 
-|Estilo de apilamiento|de esquema JSON|
+|Estilo de apilamiento|Definición|
 |--------------------|----------------|
 |FromBottom|Apilar desde la parte inferior del panel de acciones.|
 |FromLeft|Apilar desde la parte izquierda del panel de acciones.|

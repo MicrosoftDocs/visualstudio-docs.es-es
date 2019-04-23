@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3de20f175ae7300732cd56633aebcdc3e0aa0cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ba5603fe759f55a85425bc61da0a470aa38d636c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099616"
 ---
-# <a name="how-to-resize-namedrange-controls"></a>Filtrar Cambiar el tamaño de los controles NamedRange
+# <a name="how-to-resize-namedrange-controls"></a>Procedimiento Cambiar el tamaño de los controles NamedRange
   Aunque se puede establecer el tamaño de un control <xref:Microsoft.Office.Tools.Excel.NamedRange> al agregarlo a un documento de Microsoft Office Excel, podrían ser necesarios cambios posteriores.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -30,32 +30,32 @@ ms.locfileid: "56654040"
 
  En este tema se describen las tareas siguientes:
 
--   [Cambiar el tamaño de los controles NamedRange en tiempo de diseño](#designtime)
+- [Cambiar el tamaño de los controles NamedRange en tiempo de diseño](#designtime)
 
--   [Cambiar el tamaño de los controles NamedRange en tiempo de ejecución en un proyecto de nivel de documento](#runtimedoclevel)
+- [Cambiar el tamaño de los controles NamedRange en tiempo de ejecución en un proyecto de nivel de documento](#runtimedoclevel)
 
--   [Cambiar el tamaño de los controles NamedRange en tiempo de ejecución en un proyecto de complemento VSTO](#runtimeaddin)
+- [Cambiar el tamaño de los controles NamedRange en tiempo de ejecución en un proyecto de complemento VSTO](#runtimeaddin)
 
-##  <a name="designtime"></a> Cambiar el tamaño de los controles NamedRange en tiempo de diseño
+## <a name="designtime"></a> Cambiar el tamaño de los controles NamedRange en tiempo de diseño
  Para cambiar el tamaño de un rango con nombre, es necesario volver a definir el tamaño en el cuadro de diálogo **Definir nombre** .
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>Para cambiar el tamaño de un rango con nombre mediante el cuadro de diálogo Definir nombre
 
-1.  Haga clic en un control <xref:Microsoft.Office.Tools.Excel.NamedRange> .
+1. Haga clic en un control <xref:Microsoft.Office.Tools.Excel.NamedRange> .
 
-2.  Haga clic en **Administrar rangos con nombre** en el menú contextual.
+2. Haga clic en **Administrar rangos con nombre** en el menú contextual.
 
      Se mostrará el cuadro de diálogo **Definir nombre** .
 
-3.  Seleccione el rango con nombre cuyo tamaño quiere cambiar.
+3. Seleccione el rango con nombre cuyo tamaño quiere cambiar.
 
-4.  Desactive el cuadro **Se refiere a** .
+4. Desactive el cuadro **Se refiere a** .
 
-5.  Seleccione las celdas que quiere usar para definir el tamaño del rango con nombre.
+5. Seleccione las celdas que quiere usar para definir el tamaño del rango con nombre.
 
-6.  Haga clic en **Aceptar**.
+6. Haga clic en **Aceptar**.
 
-##  <a name="runtimedoclevel"></a> Cambiar el tamaño de los controles NamedRange en tiempo de ejecución en un proyecto de nivel de documento
+## <a name="runtimedoclevel"></a> Cambiar el tamaño de los controles NamedRange en tiempo de ejecución en un proyecto de nivel de documento
  Este tamaño se puede cambiar mediante programación, con la propiedad <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> .
 
 > [!NOTE]
@@ -63,27 +63,27 @@ ms.locfileid: "56654040"
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Para cambiar el tamaño de un rango con nombre mediante programación
 
-1.  Cree un control <xref:Microsoft.Office.Tools.Excel.NamedRange> en la celda **A1** de `Sheet1`.
+1. Cree un control <xref:Microsoft.Office.Tools.Excel.NamedRange> en la celda **A1** de `Sheet1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#4)]
 
-2.  Cambie el tamaño del rango con nombre para incluir la celda **B1**.
+2. Cambie el tamaño del rango con nombre para incluir la celda **B1**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
 
-##  <a name="runtimeaddin"></a> Cambiar el tamaño de los controles NamedRange en tiempo de ejecución en un proyecto de complemento VSTO
+## <a name="runtimeaddin"></a> Cambiar el tamaño de los controles NamedRange en tiempo de ejecución en un proyecto de complemento VSTO
  Puede cambiar el tamaño de un <xref:Microsoft.Office.Tools.Excel.NamedRange> control en cualquier hoja de cálculo abierta en tiempo de ejecución. Para obtener más información sobre cómo agregar un <xref:Microsoft.Office.Tools.Excel.NamedRange> el control a una hoja de cálculo mediante el uso de un complemento de VSTO, consulte [Cómo: Agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Para cambiar el tamaño de un rango con nombre mediante programación
 
-1.  Cree un control <xref:Microsoft.Office.Tools.Excel.NamedRange> en la celda **A1** de `Sheet1`.
+1. Cree un control <xref:Microsoft.Office.Tools.Excel.NamedRange> en la celda **A1** de `Sheet1`.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#10)]
      [!code-vb[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#10)]
 
-2.  Cambie el tamaño del rango con nombre para incluir la celda **B1**.
+2. Cambie el tamaño del rango con nombre para incluir la celda **B1**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#11)]
      [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]

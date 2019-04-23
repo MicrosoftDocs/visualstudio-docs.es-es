@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: deshabilitar la activación de direcciones URL de aplicaciones ClickOnce mediante el diseñador | Microsoft Docs'
+title: Procedimiento Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce mediante el diseñador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,35 +16,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46786b0a11c4be6614732a224b755542b637d662
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: c4da1ba726253891ef7df2ccfde8a667ac11ad8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100240"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Cómo: Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce mediante el diseñador
+# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Procedimiento Desactivación de la activación de URL de aplicaciones ClickOnce mediante el diseñador
 Normalmente, un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se iniciará automáticamente inmediatamente después de instalarlo desde un servidor Web. Por motivos de seguridad, puede decidir deshabilitar este comportamiento e indicar a los usuarios para iniciar la aplicación desde el **iniciar** menú en su lugar. En el procedimiento siguiente, se describe cómo deshabilitar la activación de URL.
 
  Esta técnica se puede utilizar solo para las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instaladas en el equipo del usuario desde un servidor web. No se puede usar para las aplicaciones sólo en línea, que se pueden iniciar utilizando su dirección URL. Para obtener más información sobre la diferencia entre las aplicaciones sólo en línea e instaladas, consulte [elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
- Este procedimiento utiliza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. También puede realizar esta tarea mediante el uso de la [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener más información, consulte [Cómo: deshabilitar la dirección URL de activación de las aplicaciones ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md).
+ Este procedimiento utiliza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. También puede realizar esta tarea mediante el uso de la [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener más información, vea [Cómo: Desactivación de la activación de URL de aplicaciones ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md).
 
 ## <a name="procedure"></a>Procedimiento
 
 #### <a name="to-disable-url-activation-for-your-application"></a>Deshabilitar la activación de direcciones URL para la aplicación
 
-1.  Haga clic en el nombre del proyecto en **el Explorador de soluciones**y haga clic en **propiedades**.
+1. Haga clic en el nombre del proyecto en **el Explorador de soluciones**y haga clic en **propiedades**.
 
-2.  En el **propiedades** página, haga clic en el **publicar** ficha.
+2. En el **propiedades** página, haga clic en el **publicar** ficha.
 
-3.  Haga clic en **Opciones**.
+3. Haga clic en **Opciones**.
 
-4.  Haga clic en **manifiestos**.
+4. Haga clic en **manifiestos**.
 
-5.  Seleccione la casilla de verificación con la etiqueta **bloquear la aplicación desde la que se activa mediante una dirección URL**.
+5. Seleccione la casilla de verificación con la etiqueta **bloquear la aplicación desde la que se activa mediante una dirección URL**.
 
-6.  Implemente su aplicación.
+6. Implemente su aplicación.
 
 ## <a name="see-also"></a>Vea también
 - [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)

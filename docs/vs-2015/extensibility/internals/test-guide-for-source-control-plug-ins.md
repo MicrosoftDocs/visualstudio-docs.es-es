@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 194c1e926ead79d5db05e530e2345aa4c722aa21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9efe5ffcd0428a11df69e3c80f28fdecaeb99aaf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100363"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guía de pruebas para los complementos de control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,55 +57,55 @@ Esta sección proporciona instrucciones para probar su complemento con control d
   
 ## <a name="test-areas-covered-in-this-section"></a>En esta sección tratadas de áreas de pruebas  
   
--   [Área de prueba 1: Agregar a / abrir desde Control de código fuente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+- [Área de prueba 1: Agregar a / abrir desde Control de código fuente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Case 1a: Agregar solución al Control de código fuente  
+    - Case 1a: Agregar solución al Control de código fuente  
   
-    -   Escenario 1b: Abrir solución desde el Control de código fuente  
+    - Escenario 1b: Abrir solución desde el Control de código fuente  
   
-    -   Caso 1C: Agregar solución desde Control de código fuente  
+    - Caso 1C: Agregar solución desde Control de código fuente  
   
--   [Área de prueba 2: Obtener de Control de código fuente](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+- [Área de prueba 2: Obtener de Control de código fuente](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Área de prueba 3: Desproteger o deshacer desprotección](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+- [Área de prueba 3: Desproteger o deshacer desprotección](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Caso 3: Desproteger o deshacer desprotección  
+    - Caso 3: Desproteger o deshacer desprotección  
   
-    -   Case 3a: Desproteger  
+    - Case 3a: Desproteger  
   
-    -   Escenario 3b: Desprotección sin conexión  
+    - Escenario 3b: Desprotección sin conexión  
   
-    -   Caso 3C: Edición de consulta o consulta guardar (QEQS)  
+    - Caso 3C: Edición de consulta o consulta guardar (QEQS)  
   
-    -   Caso 3d: Retirada silenciosa  
+    - Caso 3d: Retirada silenciosa  
   
-    -   Case 3e: Deshacer desprotección  
+    - Case 3e: Deshacer desprotección  
   
--   [Área de prueba 4: Check-in](../../extensibility/internals/test-area-4-check-in.md)  
+- [Área de prueba 4: Check-in](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Escenario 4a: Elementos modificados  
+    - Escenario 4a: Elementos modificados  
   
-    -   Escenario 4b: Agregar archivos  
+    - Escenario 4b: Agregar archivos  
   
-    -   Caso 4 núcleos: Agregar proyectos  
+    - Caso 4 núcleos: Agregar proyectos  
   
--   [Área de prueba 5: Control de código fuente de cambios](../../extensibility/internals/test-area-5-change-source-control.md)  
+- [Área de prueba 5: Control de código fuente de cambios](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Case 5a: Enlazar  
+    - Case 5a: Enlazar  
   
-    -   Case 5b: Desenlazar  
+    - Case 5b: Desenlazar  
   
-    -   Mayúsculas y minúsculas 5c: volver a enlazar  
+    - Mayúsculas y minúsculas 5c: volver a enlazar  
   
--   [Área de prueba 6: Delete](../../extensibility/internals/test-area-6-delete.md)  
+- [Área de prueba 6: Delete](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Área de prueba 7: Share](../../extensibility/internals/test-area-7-share.md)  
+- [Área de prueba 7: Share](../../extensibility/internals/test-area-7-share.md)  
   
--   [Área de prueba 8: Cambio de complementos](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+- [Área de prueba 8: Cambio de complementos](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Case 8a: Cambio automático  
+    - Case 8a: Cambio automático  
   
-    -   8b Case: Cambio de solución  
+    - 8b Case: Cambio de solución  
   
 ## <a name="see-also"></a>Vea también  
  [Complementos de control de código fuente](../../extensibility/source-control-plug-ins.md)

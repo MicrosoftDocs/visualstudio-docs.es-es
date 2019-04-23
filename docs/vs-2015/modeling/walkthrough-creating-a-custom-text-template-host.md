@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996835"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100331"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Tutorial: Crear un host de plantilla de texto personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,31 +31,31 @@ Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *moto
   
  Las tareas que se ilustran en este tutorial son las siguientes:  
   
--   Crear un host de plantilla de texto personalizado.  
+- Crear un host de plantilla de texto personalizado.  
   
--   Probar el host personalizado.  
+- Probar el host personalizado.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para completar este tutorial, hay que disponer de lo siguiente:  
   
--   Visual Studio 2010 o versiones posteriores  
+- Visual Studio 2010 o versiones posteriores  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
 ## <a name="creating-a-custom-text-template-host"></a>Crear un host de plantilla de texto personalizado  
  En este tutorial, creará un host personalizado en una aplicación ejecutable a la que se puede llamar desde la línea de comandos. La aplicación acepta un archivo de plantilla de texto como argumento, lee la plantilla, llama al motor para transformar la plantilla y muestra cualquier error que se produzca en la ventana del símbolo del sistema.  
   
 #### <a name="to-create-a-custom-host"></a>Para crear un host personalizado  
   
-1.  En Visual Studio, cree una nueva aplicación de consola de Visual Basic o C# con el nombre CustomHost.  
+1. En Visual Studio, cree una nueva aplicación de consola de Visual Basic o C# con el nombre CustomHost.  
   
-2.  Agregue referencias a los siguientes ensamblados:  
+2. Agregue referencias a los siguientes ensamblados:  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 y versiones posteriores**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 y versiones posteriores**  
   
-3.  Reemplace el código del archivo Program.cs o Module1.vb con el siguiente código:  
+3. Reemplace el código del archivo Program.cs o Module1.vb con el siguiente código:  
   
     ```csharp  
     using System;  
@@ -714,22 +714,22 @@ Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *moto
     End Namespace  
     ```  
   
-4.  Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] sólo, abra el **proyecto** menú y haga clic en **propiedades de CustomHost**. En el **objeto Startup** lista, haga clic en **CustomHost.Program**.  
+4. Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] sólo, abra el **proyecto** menú y haga clic en **propiedades de CustomHost**. En el **objeto Startup** lista, haga clic en **CustomHost.Program**.  
   
-5.  En el menú **Archivo**, haga clic en **Guardar todo**.  
+5. En el menú **Archivo**, haga clic en **Guardar todo**.  
   
-6.  En el menú **Compilar** , haga clic en **Compilar solución**.  
+6. En el menú **Compilar** , haga clic en **Compilar solución**.  
   
 ## <a name="testing-the-custom-host"></a>Probar el host personalizado  
  Para probar el host personalizado, escriba una plantilla de texto, ejecute el host personalizado, pásele el nombre de la plantilla de texto y compruebe que la plantilla se transforma.  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Para crear una plantilla de texto para probar el host personalizado  
   
-1.  Cree un archivo de texto y asígnele el nombre `TestTemplate.tt`.  
+1. Cree un archivo de texto y asígnele el nombre `TestTemplate.tt`.  
   
      Puede usar cualquier editor de texto (por ejemplo, Bloc de notas) para crear el archivo.  
   
-2.  Agregue el siguiente código al archivo:  
+2. Agregue el siguiente código al archivo:  
   
     > [!NOTE]
     >  El lenguaje de programación de la plantilla de texto no tiene que coincidir con el lenguaje del host personalizado.  
@@ -772,13 +772,13 @@ Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *moto
   
     ```  
   
-3.  Guarde y cierre el archivo.  
+3. Guarde y cierre el archivo.  
   
 #### <a name="to-test-the-custom-host"></a>Para probar el host personalizado  
   
-1.  Abra la ventana del símbolo del sistema.  
+1. Abra la ventana del símbolo del sistema.  
   
-2.  Escriba la ruta de acceso del archivo ejecutable del host personalizado, pero no presione ENTRAR todavía.  
+2. Escriba la ruta de acceso del archivo ejecutable del host personalizado, pero no presione ENTRAR todavía.  
   
      Por ejemplo, escriba:  
   
@@ -787,9 +787,9 @@ Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *moto
     > [!NOTE]
     >  En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en **Windows Explorer** y, a continuación, arrastre el archivo a la ventana de símbolo del sistema.  
   
-3.  Escriba un espacio.  
+3. Escriba un espacio.  
   
-4.  Escriba la ruta de acceso del archivo de plantilla de texto y, a continuación, presione ENTRAR.  
+4. Escriba la ruta de acceso del archivo de plantilla de texto y, a continuación, presione ENTRAR.  
   
      Por ejemplo, escriba:  
   
@@ -800,11 +800,11 @@ Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *moto
   
      La aplicación host personalizada se ejecuta y completa el proceso de transformación de la plantilla de texto.  
   
-5.  En **Windows Explorer**, vaya a la carpeta que contiene el archivo TestTemplate.tt.  
+5. En **Windows Explorer**, vaya a la carpeta que contiene el archivo TestTemplate.tt.  
   
      Esta carpeta también contiene el archivo TestTemplate1.txt.  
   
-6.  Abra este archivo para ver el resultados de la transformación de la plantilla de texto.  
+6. Abra este archivo para ver el resultados de la transformación de la plantilla de texto.  
   
      Aparece el texto de salida generado, con el siguiente aspecto:  
   
