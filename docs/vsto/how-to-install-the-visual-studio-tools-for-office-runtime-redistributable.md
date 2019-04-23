@@ -1,5 +1,5 @@
 ---
-title: Filtrar Instalar Visual Studio Tools para Office runtime redistribuible
+title: Procedimiento Instalar Visual Studio Tools para Office runtime redistribuible
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -15,36 +15,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3531fc79956b9c0f72d0dc5a333f1f9aedf5326d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 205fb184997130423072d556a60e1323a99e6ad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101462"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Filtrar Instalar Visual Studio Tools para Office runtime redistribuible
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Procedimiento Instalar Visual Studio Tools para Office runtime redistribuible
   Visual Studio 2010 Tools para Office runtime debe instalarse en cada equipo que ejecuta las soluciones que se crean mediante el uso de Microsoft Office developer tools en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. El runtime se instala de forma automática cuando se instala [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y Microsoft Office. Para obtener más información, consulte [Visual Studio Tools para escenarios de instalación de Office en tiempo de ejecución](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
  En las situaciones siguientes, deberá seguir las instrucciones de instalación manual que aparecen a continuación:
 
--   Debe instalar [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] en un servidor. Por ejemplo, desea utilizar la clase <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> para administrar las soluciones de nivel de documento en un servidor.
+- Debe instalar [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] en un servidor. Por ejemplo, desea utilizar la clase <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> para administrar las soluciones de nivel de documento en un servidor.
 
--   Debe instalar el runtime en un equipo que ya tiene todos los otros requisitos previos para las soluciones de Office instaladas.
+- Debe instalar el runtime en un equipo que ya tiene todos los otros requisitos previos para las soluciones de Office instaladas.
 
     > [!NOTE]
     >  Tiene que ser administrador del equipo de desarrollo para instalar .NET Framework y [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
 ## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Para instalar el runtime de Microsoft Visual Studio Tools para Office
 
-1.  Instale [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores.
+1. Instale [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores.
 
-    -   Para descargar el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], consulte [Microsoft .NET Framework 4 (instalador Web)](http://go.microsoft.com/fwlink/?LinkId=178957).
+    - Para descargar el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], consulte [Microsoft .NET Framework 4 (instalador Web)](http://go.microsoft.com/fwlink/?LinkId=178957).
 
-    -   Para descargar el [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)], consulte [Microsoft .NET Framework 4 Client Profile (instalador Web)](http://go.microsoft.com/fwlink/?LinkId=178958).
+    - Para descargar el [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)], consulte [Microsoft .NET Framework 4 Client Profile (instalador Web)](http://go.microsoft.com/fwlink/?LinkId=178958).
 
-    -   Para descargar el [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], consulte [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).
+    - Para descargar el [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], consulte [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).
 
-2.  Ejecute *vstor_redist.exe* para instalar el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+2. Ejecute *vstor_redist.exe* para instalar el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
      Puede descargar estos archivos de programa de instalación de [Visual Studio 2010 Tools para Office runtime](http://go.microsoft.com/fwlink/?LinkId=140384). Los requisitos previos para [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] coinciden con los requisitos previos para .NET Framework.
 

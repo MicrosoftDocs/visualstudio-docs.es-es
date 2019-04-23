@@ -1,5 +1,5 @@
 ---
-title: Variante de compresión de textura BC | Microsoft Docs
+title: Variante de compresión de textura BC | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1edc2182b475fca2cb641a2b7598ea5164db368d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a25411449c1b13b12f05819061847c252a76c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680430"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094091"
 ---
 # <a name="bc-texture-compression-variant"></a>BC (Variante de compresión de textura)
 Habilita la compresión de bloque en todas las texturas que tengan una variante de formato de píxel de B8G8R8X8, B8G8R8A8 o R8G8B8A8. 
@@ -28,13 +28,13 @@ Habilita la compresión de bloque en todas las texturas que tengan una variante 
 
 - El objeto `D3D11_TEXTURE2D_DESC` pasado en `pDesc` describe un recurso de sombreador invariable, que es:
 
-  -   El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.
+  - El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.
 
-  -   El miembro Usage se establece en D3D11_USAGE_DEFAULT o D3D11_USAGE_IMMUTABLE.
+  - El miembro Usage se establece en D3D11_USAGE_DEFAULT o D3D11_USAGE_IMMUTABLE.
 
-  -   El miembro CPUAccessFlags se establece en 0 (sin acceso a la CPU).
+  - El miembro CPUAccessFlags se establece en 0 (sin acceso a la CPU).
 
-  -   El miembro SamplerDesc tiene su miembro Count establecido en 1 (sin Suavizado de contorno de muestras múltiples [MSAA]).
+  - El miembro SamplerDesc tiene su miembro Count establecido en 1 (sin Suavizado de contorno de muestras múltiples [MSAA]).
 
 - Los datos iniciales se proporcionan a la llamada a `CreateTexture2D`.
 

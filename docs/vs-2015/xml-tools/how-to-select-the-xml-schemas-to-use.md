@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091486"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedimiento Seleccionar los esquemas XML que se van a usar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,23 +50,23 @@ El Editor XML proporciona una caché de esquemas que está ubicada en el directo
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Para agregar un esquema XML a la caché de esquema  
   
-1.  En la ventana Propiedades del documento, haga clic en el botón en el **esquemas** campo.  
+1. En la ventana Propiedades del documento, haga clic en el botón en el **esquemas** campo.  
   
-2.  Haga clic en **Agregar**.  
+2. Haga clic en **Agregar**.  
   
      Se abrirá el **Abrir esquema XSD** cuadro de diálogo.  
   
-3.  Busque y seleccione los esquemas que se van a agregar a la caché de esquema.  
+3. Busque y seleccione los esquemas que se van a agregar a la caché de esquema.  
   
-4.  Haga clic en **Abrir**.  
+4. Haga clic en **Abrir**.  
   
      El esquema se agrega al esquema en caché y es el **Use** el valor de columna se establece en **utilizar este esquema**.  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Para eliminar un esquema XML de la caché de esquema  
   
-1.  En la ventana Propiedades del documento, haga clic en el botón en el **esquemas** campo.  
+1. En la ventana Propiedades del documento, haga clic en el botón en el **esquemas** campo.  
   
-2.  Seleccione el esquema para quitar y, a continuación, haga clic en **quitar**.  
+2. Seleccione el esquema para quitar y, a continuación, haga clic en **quitar**.  
   
      El esquema se quita de la caché de esquema en memoria, pero no del sistema de archivos.  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091790"
 ---
 # <a name="graphics-state"></a>Estado de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece inform
   
 ##### <a name="to-change-the-state-view"></a>Para cambiar la vista de estado:  
   
--   En la ventana de estado, vaya a la esquina superior izquierda, justo debajo de la barra de título, y elija el botón correspondiente al estilo de vista de estado que desea usar.  
+- En la ventana de estado, vaya a la esquina superior izquierda, justo debajo de la barra de título, y elija el botón correspondiente al estilo de vista de estado que desea usar.  
   
-    -   **Mostrar la vista del estado de entrada de la API**  
+    - **Mostrar la vista del estado de entrada de la API**  
   
-    -   **Vista Mostrar estado lógico**  
+    - **Vista Mostrar estado lógico**  
   
-    -   **Vista Mostrar estado anclado**  
+    - **Vista Mostrar estado anclado**  
   
 > [!IMPORTANT]
 >  Debe anclar el estado en las vistas **Mostrar estado de entrada de la API** o **Mostrar estado lógico** para que se muestre en la **Vista Mostrar estado anclado**.  
@@ -67,8 +67,8 @@ La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece inform
   
 ##### <a name="to-pin-state-in-place"></a>Para anclar el estado en su lugar:  
   
-1.  En la ventana de estado, busque el estado que le interesa. Posiblemente deberá expandir el estado de alto nivel para localizar los detalles que le interesan.  
+1. En la ventana de estado, busque el estado que le interesa. Posiblemente deberá expandir el estado de alto nivel para localizar los detalles que le interesan.  
   
-2.  Sitúe el cursor sobre el estado que le interesa. Aparecerá un icono de pin a la izquierda del elemento de estado.  
+2. Sitúe el cursor sobre el estado que le interesa. Aparecerá un icono de pin a la izquierda del elemento de estado.  
   
-3.  Para anclar el elemento de estado en su lugar, elija el icono de pin.
+3. Para anclar el elemento de estado en su lugar, elija el icono de pin.

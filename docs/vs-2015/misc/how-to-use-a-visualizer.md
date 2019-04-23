@@ -1,5 +1,5 @@
 ---
-title: Filtrar Utilizar un visualizador | Documentos de Microsoft
+title: Procedimiento Utilizar un visualizador | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -23,14 +23,14 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100983"
 ---
-# <a name="how-to-use-a-visualizer"></a>Filtrar Utilizar un visualizador
+# <a name="how-to-use-a-visualizer"></a>Procedimiento Utilizar un visualizador
 Puede utilizar un visualizador para mostrar el contenido de una variable o un objeto de manera significativa para el tipo de datos. Puede usar los visualizadores de **DataTips**, un **inspección** ventana, el **automático** ventana, o la **variables locales** ventana.  
   
  Los visualizadores no se admiten en .NET Compact Framework.  
@@ -40,15 +40,15 @@ Puede utilizar un visualizador para mostrar el contenido de una variable o un ob
   
 ### <a name="to-open-a-visualizer"></a>Para abrir un visualizador  
   
-1.  Haga clic en el icono de lupa que aparece junto al nombre de variable en **DataTips**, un **inspección** ventana, o en el **automático**, **variables locales**, o **Inspección rápida** ventana.  
+1. Haga clic en el icono de lupa que aparece junto al nombre de variable en **DataTips**, un **inspección** ventana, o en el **automático**, **variables locales**, o **Inspección rápida** ventana.  
   
      Se mostrará una lista de visualizadores.  
   
-2.  Haga clic en el visualizador que desee usar.  
+2. Haga clic en el visualizador que desee usar.  
   
 ### <a name="to-use-a-visualizer-for-managed-code-during-remote-debugging"></a>Para utilizar un visualizador para el código administrado durante la depuración remota  
   
--   Copie el archivo DLL del visualizador en el equipo remoto antes de iniciar la sesión de depuración.  
+- Copie el archivo DLL del visualizador en el equipo remoto antes de iniciar la sesión de depuración.  
   
      La ruta de acceso al archivo DLL debe ser la misma en el equipo remoto y en el equipo local. Esta ruta de acceso puede ser cualquiera de las siguientes ubicaciones:  
   

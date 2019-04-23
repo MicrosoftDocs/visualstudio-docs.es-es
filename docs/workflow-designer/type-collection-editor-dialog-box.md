@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6754c8264b68d8884f5e8ebaea763e004c71596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093129"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Editor de colección de tipos (cuadro de diálogo)
 
@@ -31,16 +31,16 @@ La tabla siguiente describen los elementos de interfaz de usuario de la **tipo c
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Para mostrar el Editor de colección de tipos para las actividades Send y Receive
 
-1.  Seleccione el **enviar** o **recepción** actividad en la vista Diseño.
+1. Seleccione el **enviar** o **recepción** actividad en la vista Diseño.
 
-2.  Presione **F4** para que aparezca el **propiedades** ventana.
+2. Presione **F4** para que aparezca el **propiedades** ventana.
 
-3.  En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **KnownTypes** propiedad.
+3. En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **KnownTypes** propiedad.
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Para mostrar el Editor de colección de tipos para la actividad InvokeMethod
 
-1.  Seleccione el **InvokeMethod** actividad en la vista Diseño.
+1. Seleccione el **InvokeMethod** actividad en la vista Diseño.
 
-2.  Presione **F4** para que aparezca el **propiedades** ventana.
+2. Presione **F4** para que aparezca el **propiedades** ventana.
 
-3.  En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **GenericTypeArguments** propiedad.
+3. En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **GenericTypeArguments** propiedad.

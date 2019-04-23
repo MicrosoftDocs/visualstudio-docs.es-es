@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 6a7bf7d49430923652ece66fc566ee75af1884d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093356"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Tutorial: Publicar una extensión de Visual Studio
 
@@ -80,27 +80,27 @@ En este artículo usa una extensión predeterminada de VSPackage, pero los pasos
 
     * **Id. de VSIX** es el identificador único que usa Visual Studio para la extensión. Este identificador es necesario si desea que tengan la extensión que se actualiza automáticamente. Este identificador es rellena automáticamente desde el *source.extension.vsixmanifest* archivo.
 
-   * **Logotipo de** que se utiliza para la extensión. Este logotipo es rellena automáticamente desde el *source.extension.vsixmanifest* archivo si se proporciona.
+    * **Logotipo de** que se utiliza para la extensión. Este logotipo es rellena automáticamente desde el *source.extension.vsixmanifest* archivo si se proporciona.
 
-     * **Descripción breve** de lo que hace la extensión. Esta descripción es rellena automáticamente desde el *source.extension.vsixmanifest* archivo.
+    * **Descripción breve** de lo que hace la extensión. Esta descripción es rellena automáticamente desde el *source.extension.vsixmanifest* archivo.
 
-     * **Información general sobre** es un buen lugar para incluir capturas de pantalla e información detallada sobre lo que hace la extensión.
+    * **Información general sobre** es un buen lugar para incluir capturas de pantalla e información detallada sobre lo que hace la extensión.
 
-     * **Versiones compatibles de Visual Studio** permite elegir qué versiones de Visual Studio funcionará la extensión en. Solo se instala la extensión para esas versiones.
+    * **Versiones compatibles de Visual Studio** permite elegir qué versiones de Visual Studio funcionará la extensión en. Solo se instala la extensión para esas versiones.
 
-     * ** Compatible de Visual Studio edition le permite elegir qué ediciones de Visual Studio funcionará la extensión en. Solo se instala la extensión para esas ediciones.
+    * ** Compatible de Visual Studio edition le permite elegir qué ediciones de Visual Studio funcionará la extensión en. Solo se instala la extensión para esas ediciones.
 
-     * **Tipo**. El tipo más común de las extensiones son **herramientas**.
+    * **Tipo**. El tipo más común de las extensiones son **herramientas**.
 
-     * **Categorías**. Elija hasta tres son una mejor opción para la extensión.
+    * **Categorías**. Elija hasta tres son una mejor opción para la extensión.
 
-     * **Etiquetas** son palabras clave que ayudan a los usuarios encontrar la extensión. Las etiquetas pueden ayudar a aumentar la relevancia de la búsqueda de las extensiones en Marketplace.
+    * **Etiquetas** son palabras clave que ayudan a los usuarios encontrar la extensión. Las etiquetas pueden ayudar a aumentar la relevancia de la búsqueda de las extensiones en Marketplace.
 
-     * **Categoría de precios** es el costo de la extensión.
+    * **Categoría de precios** es el costo de la extensión.
 
-     * **Repositorio de código fuente** le permite compartir un vínculo al código fuente con la Comunidad.
+    * **Repositorio de código fuente** le permite compartir un vínculo al código fuente con la Comunidad.
 
-     * **Permitir preguntas y respuestas para la extensión** permite a los usuarios dejar preguntas en la página de entrada de extensión.
+    * **Permitir preguntas y respuestas para la extensión** permite a los usuarios dejar preguntas en la página de entrada de extensión.
 
 9. Haga clic en **guardar y cargar**. Esta opción se retrocede para el publicador de la página de administración. Aún no se ha publicado la extensión. Para publicar su extensión, haga doble clic en la extensión y seleccione **hacer público**. Puede ver cómo la extensión sería en Marketplace seleccionando **ver extensión**. Para los números de adquisición, haga clic en **informes**. Para realizar cambios en la extensión, haga clic en **editar**.
 

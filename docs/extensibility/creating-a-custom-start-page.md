@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 26997f81608ce8e138a2ca76d5b2a2b8c7a1bd4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4fc12744dbf979a338cbc551a715284dffdf7385
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090135"
 ---
 # <a name="creating-a-custom-start-page"></a>Creación de una página de inicio personalizada
 
@@ -24,15 +24,15 @@ Puede crear una página de inicio personalizada siguiendo los pasos descritos en
 
 En primer lugar, asegúrese de una página de inicio en blanco mediante la creación de un *.xaml* archivo que tiene una estructura de la etiqueta a la que Visual Studio reconocerá. A continuación, agregue el marcado y código subyacente para generar el aspecto y funcionalidad que desee.
 
-1.  Cree un nuevo proyecto del tipo **aplicación WPF** (**Visual C#** > **Windows Desktop**).
+1. Cree un nuevo proyecto del tipo **aplicación WPF** (**Visual C#** > **Windows Desktop**).
 
-2.  Agregue una referencia a `Microsoft.VisualStudio.Shell.14.0`.
+2. Agregue una referencia a `Microsoft.VisualStudio.Shell.14.0`.
 
-3.  Abra el archivo XAML en el editor XML y cambiar el nivel superior \<Ventana > elemento para un \<UserControl > elemento sin quitar cualquiera de las declaraciones de espacio de nombres.
+3. Abra el archivo XAML en el editor XML y cambiar el nivel superior \<Ventana > elemento para un \<UserControl > elemento sin quitar cualquiera de las declaraciones de espacio de nombres.
 
-4.  Quitar el `x:Class` declaración de elemento de nivel superior. Esto hace que el contenido XAML que sea compatible con la ventana de herramientas de Visual Studio que hospeda la página de inicio.
+4. Quitar el `x:Class` declaración de elemento de nivel superior. Esto hace que el contenido XAML que sea compatible con la ventana de herramientas de Visual Studio que hospeda la página de inicio.
 
-5.  Agregue las siguientes declaraciones de espacio de nombres a la observación inicial \<UserControl > elemento.
+5. Agregue las siguientes declaraciones de espacio de nombres a la observación inicial \<UserControl > elemento.
 
     ```vb
     xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
@@ -61,7 +61,7 @@ En primer lugar, asegúrese de una página de inicio en blanco mediante la creac
     </UserControl>
     ```
 
-6.  Agregar controles a vacío \<UserControl > elemento para rellenar la página de inicio personalizada. Para obtener información acerca de cómo agregar la funcionalidad que es específica de Visual Studio, consulte [comandos de Visual Studio agrega a una página de inicio](../extensibility/adding-visual-studio-commands-to-a-start-page.md).
+6. Agregar controles a vacío \<UserControl > elemento para rellenar la página de inicio personalizada. Para obtener información acerca de cómo agregar la funcionalidad que es específica de Visual Studio, consulte [comandos de Visual Studio agrega a una página de inicio](../extensibility/adding-visual-studio-commands-to-a-start-page.md).
 
 ## <a name="test-and-apply-the-custom-start-page"></a>Probar y aplicar la página de inicio personalizada
 
@@ -69,21 +69,21 @@ No establezca la instancia principal de Visual Studio para ejecutar la página d
 
 ### <a name="to-test-a-manually-created-custom-start-page"></a>Para probar una página de inicio de personalizado creado manualmente
 
-1.  Copie el archivo XAML y los archivos de texto o marcado auxiliares archivos, a la *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\*  carpeta.
+1. Copie el archivo XAML y los archivos de texto o marcado auxiliares archivos, a la *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\*  carpeta.
 
-2.  Si hace referencia a la página de inicio de los tipos en ensamblados que no se instalan con Visual Studio o los controles, copie los ensamblados y, a continuación, péguelos en *{carpeta de instalación de Visual Studio} \Common7\IDE\PrivateAssemblies\\* .
+2. Si hace referencia a la página de inicio de los tipos en ensamblados que no se instalan con Visual Studio o los controles, copie los ensamblados y, a continuación, péguelos en *{carpeta de instalación de Visual Studio} \Common7\IDE\PrivateAssemblies\\* .
 
-3.  En un símbolo del sistema de Visual Studio, escriba **devenv /rootsuffix Exp** para abrir una instancia experimental de Visual Studio.
+3. En un símbolo del sistema de Visual Studio, escriba **devenv /rootsuffix Exp** para abrir una instancia experimental de Visual Studio.
 
-4.  En la instancia experimental, vaya a la **herramientas** > **opciones** > **entorno** > **inicio** página y seleccione el archivo XAML desde el **Personalizar página principal** lista desplegable.
+4. En la instancia experimental, vaya a la **herramientas** > **opciones** > **entorno** > **inicio** página y seleccione el archivo XAML desde el **Personalizar página principal** lista desplegable.
 
-5.  En el menú **Vista** , haga clic en **Página de inicio**.
+5. En el menú **Vista** , haga clic en **Página de inicio**.
 
      Debe mostrarse la página de inicio personalizada. Si desea cambiar todos los archivos, debe cerrar la instancia experimental, realice los cambios, copie y pegue los archivos modificados y, a continuación, vuelva a abrir la instancia experimental para ver los cambios.
 
 ### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>Para aplicar personalizado página de inicio en la instancia principal de Visual Studio
 
--   Después de haber probado su página de inicio y ha determinado que es estable, utilice el **Personalizar página principal** opción el **opciones** cuadro de diálogo para seleccionarla como la página de inicio en la instancia principal de Visual Studio
+- Después de haber probado su página de inicio y ha determinado que es estable, utilice el **Personalizar página principal** opción el **opciones** cuadro de diálogo para seleccionarla como la página de inicio en la instancia principal de Visual Studio
 
 ## <a name="see-also"></a>Vea también
 

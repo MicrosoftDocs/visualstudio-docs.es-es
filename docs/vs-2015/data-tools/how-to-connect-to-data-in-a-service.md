@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a13d0c8ff1383e27f9401f6549c422a8fef96e99
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090386"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Procedimiento Conexión a los datos en un servicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,20 +43,20 @@ Conectar la aplicación a los datos devueltos desde un servicio mediante la ejec
   
 ### <a name="to-connect-your-application-to-a-service"></a>Para conectar su aplicación a un servicio  
   
-1.  En el menú **Datos** , haga clic en **Agregar nuevo elemento**.  
+1. En el menú **Datos** , haga clic en **Agregar nuevo elemento**.  
   
-2.  Seleccione **servicio** en el **elegir un tipo de origen de datos** página y, a continuación, haga clic en **siguiente**.  
+2. Seleccione **servicio** en el **elegir un tipo de origen de datos** página y, a continuación, haga clic en **siguiente**.  
   
-3.  Escriba la dirección del servicio que desea usar o haga clic en **Discover** para buscar servicios en la solución actual y, a continuación, haga clic en **vaya**.  
+3. Escriba la dirección del servicio que desea usar o haga clic en **Discover** para buscar servicios en la solución actual y, a continuación, haga clic en **vaya**.  
   
-4.  Opcionalmente, un nuevo **Namespace** pueden escribirse en lugar del valor predeterminado.  
+4. Opcionalmente, un nuevo **Namespace** pueden escribirse en lugar del valor predeterminado.  
   
     > [!NOTE]
     >  Haga clic en **avanzadas** para abrir el [cuadro de diálogo Configurar referencia de servicio](../data-tools/configure-service-reference-dialog-box.md).  
   
-5.  Haga clic en **Aceptar** para agregar una referencia de servicio al proyecto.  
+5. Haga clic en **Aceptar** para agregar una referencia de servicio al proyecto.  
   
-6.  Haga clic en **Finalizar**.  
+6. Haga clic en **Finalizar**.  
   
      El origen de datos se agrega a la ventana **Orígenes de datos**.  
   
@@ -64,7 +64,7 @@ Conectar la aplicación a los datos devueltos desde un servicio mediante la ejec
   
 #### <a name="to-add-functionality-to-your-application"></a>Para agregar funcionalidad a la aplicación  
   
--   Seleccione un elemento en el **orígenes de datos** ventana y arrástrelo hasta un formulario para crear controles enlazados. Para obtener más información, consulte [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+- Seleccione un elemento en el **orígenes de datos** ventana y arrástrelo hasta un formulario para crear controles enlazados. Para obtener más información, consulte [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Enlazar controles WPF a WCF data Services](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 02c6b2912d828f566236aa8f24868ae9314d743e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c7b95155db18e9aa879b11cadf21b33cb0189ff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103373"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Mejorar la calidad del código con directivas de protección de equipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear dir
   
  Puede especificar las siguientes directivas de protección del proyecto de equipo:  
   
--   **Compilaciones**: Requiere que las interrupciones de compilación creadas durante una compilación se corrijan antes de una nueva protección.  
+- **Compilaciones**: Requiere que las interrupciones de compilación creadas durante una compilación se corrijan antes de una nueva protección.  
   
--   **Comentarios del conjunto de cambios**: Requiere que los usuarios proporcionen comentarios al proteger los cambios.  
+- **Comentarios del conjunto de cambios**: Requiere que los usuarios proporcionen comentarios al proteger los cambios.  
   
--   **Análisis de código**: Requiere la ejecución del análisis de código antes de protegerlo.  
+- **Análisis de código**: Requiere la ejecución del análisis de código antes de protegerlo.  
   
--   **Los elementos de trabajo**: Requiere que uno o varios elementos de trabajo estén asociados a la comprobación.  
+- **Los elementos de trabajo**: Requiere que uno o varios elementos de trabajo estén asociados a la comprobación.  
   
 > [!IMPORTANT]
 >  Para utilizar las directivas de protección, se debe conectar a [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)].  

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 646fa57ac351fab9b2527c3527ce1864c42519ce
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a994db84762a18b4bf5201b5e1253d25d7a701b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631567"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101085"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Tutorial: Importar un área de formulario diseñada en Outlook
   En este tutorial se muestra cómo diseñar un área de formulario en Microsoft Office Outlook y cómo importarla a un proyecto de complemento de VSTO para Outlook mediante el asistente para **nueva área de formulario** . Al diseñar el área de formulario en Outlook, se pueden agregar controles nativos de Outlook a dicha área que se enlazan a datos de Outlook. Después de importar el área de formulario, puede controlar los eventos de cada control.
@@ -38,9 +38,9 @@ ms.locfileid: "56631567"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
+- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
 >  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -53,23 +53,23 @@ ms.locfileid: "56631567"
 
 ### <a name="to-design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Para diseñar un área de formulario mediante el Diseñador de áreas de formulario de Outlook
 
-1.  Inicie Microsoft Office Outlook.
+1. Inicie Microsoft Office Outlook.
 
-2.  En Outlook, en la pestaña **Desarrollador** haga clic en **Diseñar un formulario**. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+2. En Outlook, en la pestaña **Desarrollador** haga clic en **Diseñar un formulario**. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-3.  En el cuadro **Diseñar formulario** , haga clic en **Tarea**y luego en **Abrir**.
+3. En el cuadro **Diseñar formulario** , haga clic en **Tarea**y luego en **Abrir**.
 
-4.  En Outlook, en el la pestaña **Desarrollador** , del grupo **Diseño** , haga clic en **Nueva área de formulario**.
+4. En Outlook, en el la pestaña **Desarrollador** , del grupo **Diseño** , haga clic en **Nueva área de formulario**.
 
      Se abrirá una nueva área de formulario. Si no se muestra el **Selector de campos** , haga clic en **Selector de campos** en el grupo **Herramientas** .
 
-5.  Arrastre los campos **Asunto** y **% completado** del **Selector de campos** al área de formulario.
+5. Arrastre los campos **Asunto** y **% completado** del **Selector de campos** al área de formulario.
 
-6.  En el grupo **Herramientas** , haga clic en **Cuadro de controles** para abrir el **Cuadro de herramientas**.
+6. En el grupo **Herramientas** , haga clic en **Cuadro de controles** para abrir el **Cuadro de herramientas**.
 
-7.  Arrastre una etiqueta desde el **Cuadro de herramientas** al área de formulario. Coloque la etiqueta debajo de los campos **Asunto** y **% completado** .
+7. Arrastre una etiqueta desde el **Cuadro de herramientas** al área de formulario. Coloque la etiqueta debajo de los campos **Asunto** y **% completado** .
 
-8.  Haga clic con el botón derecho en la etiqueta y luego haga clic en **Propiedades avanzadas**.
+8. Haga clic con el botón derecho en la etiqueta y luego haga clic en **Propiedades avanzadas**.
 
 9. En la ventana **Propiedades** , establezca el valor de la propiedad **Caption** en **Esta tarea depende de las siguientes tareas**, establezca el valor de la propiedad **Width** en **200**y luego haga clic en **Aplicar**.
 
@@ -118,11 +118,11 @@ ms.locfileid: "56631567"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Para crear un proyecto de complemento de VSTO de Outlook
 
-1.  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de complemento de VSTO para Outlook con el nombre **TaskAddIn**.
+1. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de complemento de VSTO para Outlook con el nombre **TaskAddIn**.
 
-2.  En el cuadro de diálogo **Nuevo proyecto** , seleccione **Crear directorio para la solución**.
+2. En el cuadro de diálogo **Nuevo proyecto** , seleccione **Crear directorio para la solución**.
 
-3.  Guarde el proyecto en el directorio de proyecto predeterminado.
+3. Guarde el proyecto en el directorio de proyecto predeterminado.
 
      Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -131,23 +131,23 @@ ms.locfileid: "56631567"
 
 ### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>Para importar el área de formulario al proyecto de complemento de VSTO para Outlook
 
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **TaskAddIn** , elija **Agregar**y después haga clic en **Nuevo elemento**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **TaskAddIn** , elija **Agregar**y después haga clic en **Nuevo elemento**.
 
-2.  En el panel **Plantillas** , seleccione **Área de formulario de Outlook**, asigne el nombre **TaskFormRegion**al archivo y luego haga clic en **Agregar**.
+2. En el panel **Plantillas** , seleccione **Área de formulario de Outlook**, asigne el nombre **TaskFormRegion**al archivo y luego haga clic en **Agregar**.
 
      El **área de formulario NewOutlook** se inicia el asistente.
 
-3.  En la página **Seleccione cómo desea crear el área de formulario** , seleccione **Importar archivo de almacén de formulario de Outlook (.ofs)** y haga clic en **Examinar**.
+3. En la página **Seleccione cómo desea crear el área de formulario** , seleccione **Importar archivo de almacén de formulario de Outlook (.ofs)** y haga clic en **Examinar**.
 
-4.  En el cuadro de diálogo **Ubicación de archivo de área de formulario de Outlook existente** , vaya a la ubicación de *TaskFormRegion.ofs*, seleccione **TaskFormRegion.ofs**, haga clic en **Abrir**y, por último, haga clic en **Siguiente**.
+4. En el cuadro de diálogo **Ubicación de archivo de área de formulario de Outlook existente** , vaya a la ubicación de *TaskFormRegion.ofs*, seleccione **TaskFormRegion.ofs**, haga clic en **Abrir**y, por último, haga clic en **Siguiente**.
 
-5.  En la página **Seleccione el tipo de área de formulario que desea crear** , haga clic en **Reemplazo total**y después en **Siguiente**.
+5. En la página **Seleccione el tipo de área de formulario que desea crear** , haga clic en **Reemplazo total**y después en **Siguiente**.
 
      Un área de formulario del tipo *reemplazo total* sustituirá todo el formulario de Outlook. Para obtener más información sobre los tipos de región de formulario, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).
 
-6.  En la página **Proporcione texto descriptivo y seleccione sus preferencias de presentación** , haga clic en **Siguiente**.
+6. En la página **Proporcione texto descriptivo y seleccione sus preferencias de presentación** , haga clic en **Siguiente**.
 
-7.  En la página **Identifique las clases de mensaje que mostrarán esta área de formulario** , del campo **¿Qué clases de mensaje personalizadas mostrarán esta área de formulario?** escriba **IPM.Task.TaskFormRegion**y luego haga clic en **Finalizar**.
+7. En la página **Identifique las clases de mensaje que mostrarán esta área de formulario** , del campo **¿Qué clases de mensaje personalizadas mostrarán esta área de formulario?** escriba **IPM.Task.TaskFormRegion**y luego haga clic en **Finalizar**.
 
      Un *TaskFormRegion.cs* o *TaskFormRegion.vb* archivo se agrega al proyecto.
 
@@ -208,25 +208,25 @@ ms.locfileid: "56631567"
 
 ### <a name="to-test-the-form-region"></a>Para probar el área de formulario
 
-1.  Presione **F5** para ejecutar el proyecto.
+1. Presione **F5** para ejecutar el proyecto.
 
      Se inicia Outlook.
 
-2.  En Outlook, en la pestaña **Inicio** , haga clic en **Nuevos elementos**y en **Tarea**.
+2. En Outlook, en la pestaña **Inicio** , haga clic en **Nuevos elementos**y en **Tarea**.
 
-3.  En el formulario de tareas, escriba **Tarea dependiente** en el campo **Asunto** .
+3. En el formulario de tareas, escriba **Tarea dependiente** en el campo **Asunto** .
 
-4.  En el **tarea** pestaña de la cinta de opciones, en el **acciones** grupo, haga clic en **guardar y cerrar**.
+4. En el **tarea** pestaña de la cinta de opciones, en el **acciones** grupo, haga clic en **guardar y cerrar**.
 
-5.  En Outlook, en la pestaña **Inicio** , haga clic **Nuevos elementos**, haga clic en **Más elementos**y, por último, en **Elegir formulario**.
+5. En Outlook, en la pestaña **Inicio** , haga clic **Nuevos elementos**, haga clic en **Más elementos**y, por último, en **Elegir formulario**.
 
-6.  En el cuadro de diálogo **Elegir formulario** , haga clic en **TaskFormRegion**y luego en **Abrir**.
+6. En el cuadro de diálogo **Elegir formulario** , haga clic en **TaskFormRegion**y luego en **Abrir**.
 
      Se mostrará el formulario **TaskFormRegion** . Este formulario reemplaza el formulario de tareas completo. El cuadro combinado **Seleccionar una tarea para agregarla a la lista de tareas dependientes** se rellena con otras tareas de la carpeta de Tareas.
 
-7.  En el formulario de tareas, en el campo **Asunto** escriba **Tarea principal**.
+7. En el formulario de tareas, en el campo **Asunto** escriba **Tarea principal**.
 
-8.  En el cuadro combinado **Seleccionar una tarea para agregarla a la lista de tareas dependientes** , seleccione **Tarea dependiente**y haga clic en **Agregar tarea dependiente**.
+8. En el cuadro combinado **Seleccionar una tarea para agregarla a la lista de tareas dependientes** , seleccione **Tarea dependiente**y haga clic en **Agregar tarea dependiente**.
 
      En el cuadro de lista**Esta tarea depende de las siguientes tareas** se muestra **0 % completado: tarea dependiente** . Esto demuestra que ha controlado correctamente el evento `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` del botón.
 
@@ -245,11 +245,11 @@ ms.locfileid: "56631567"
 ## <a name="next-steps"></a>Pasos siguientes
  Puede obtener más información sobre cómo personalizar la interfaz de usuario de una aplicación de Outlook en estos temas:
 
--   Para obtener más información acerca de cómo diseñar la apariencia de un área de formulario arrastrando controles administrados a un diseñador visual, vea [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Para obtener más información acerca de cómo diseñar la apariencia de un área de formulario arrastrando controles administrados a un diseñador visual, vea [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
--   Para obtener información sobre cómo personalizar la cinta de opciones de un elemento de Outlook, consulte [personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Para obtener información sobre cómo personalizar la cinta de opciones de un elemento de Outlook, consulte [personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
--   Para obtener más información acerca de cómo agregar un panel de tareas personalizado a Outlook, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).
+- Para obtener más información acerca de cómo agregar un panel de tareas personalizado a Outlook, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Vea también
 - [Obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md)

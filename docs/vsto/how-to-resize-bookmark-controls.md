@@ -1,5 +1,5 @@
 ---
-title: Filtrar Cambiar el tamaño de los controles Bookmark
+title: Procedimiento Cambiar el tamaño de los controles Bookmark
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1769ed711c0334ef14a3567478cc5010ec4165ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090724"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>Filtrar Cambiar el tamaño de los controles Bookmark
+# <a name="how-to-resize-bookmark-controls"></a>Procedimiento Cambiar el tamaño de los controles Bookmark
   El tamaño de un control <xref:Microsoft.Office.Tools.Word.Bookmark> se establece cuando lo agrega a un documento de Microsoft Office Word. También puede cambiar su tamaño más adelante.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -47,15 +47,15 @@ ms.locfileid: "56644957"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>Cambiar el tamaño del marcador de un proyecto de nivel de documento en tiempo de diseño
 
-1.  En la ventana **Propiedades** , seleccione el marcador.
+1. En la ventana **Propiedades** , seleccione el marcador.
 
-2.  Aumente o disminuya el valor de la propiedad <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> .
+2. Aumente o disminuya el valor de la propiedad <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> .
 
-3.  Aumente o disminuya el valor de la propiedad <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> .
+3. Aumente o disminuya el valor de la propiedad <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> .
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>Para cambiar el tamaño de un marcador en un proyecto de nivel de documento en tiempo de ejecución
 
-1.  Modificar el <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> y <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> las propiedades de un <xref:Microsoft.Office.Tools.Word.Bookmark> que creó en tiempo de ejecución o en tiempo de diseño.
+1. Modificar el <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> y <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> las propiedades de un <xref:Microsoft.Office.Tools.Word.Bookmark> que creó en tiempo de ejecución o en tiempo de diseño.
 
      En el ejemplo de código siguiente se agregan cinco caracteres al inicio de un marcador denominado `SampleBookmark`. De esta manera, el código supone que hay al menos cinco caracteres de texto antes del marcador.
 
@@ -69,7 +69,7 @@ ms.locfileid: "56644957"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>Para cambiar el tamaño de un marcador en un proyecto de complemento VSTO en tiempo de ejecución
 
-1.  Modificar el <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> y <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> las propiedades de un <xref:Microsoft.Office.Tools.Word.Bookmark> que creó en tiempo de ejecución.
+1. Modificar el <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> y <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> las propiedades de un <xref:Microsoft.Office.Tools.Word.Bookmark> que creó en tiempo de ejecución.
 
      En el siguiente ejemplo de código se crea un <xref:Microsoft.Office.Tools.Word.Bookmark> que contiene el texto del primer párrafo del documento activo y, a continuación, se quitan cinco caracteres del inicio y del final del <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
@@ -81,11 +81,11 @@ ms.locfileid: "56644957"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>Volver a crear un marcador de un proyecto de nivel de documento en tiempo de diseño
 
-1.  Seleccione el texto que se incluirá en el nuevo control <xref:Microsoft.Office.Tools.Word.Bookmark> .
+1. Seleccione el texto que se incluirá en el nuevo control <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
-2.  En el menú **Insertar** , haga clic en **Marcador**.
+2. En el menú **Insertar** , haga clic en **Marcador**.
 
-3.  En el cuadro de diálogo **Marcador** , seleccione el nombre del marcador cuyo tamaño desea cambiar y haga clic en **Agregar**.
+3. En el cuadro de diálogo **Marcador** , seleccione el nombre del marcador cuyo tamaño desea cambiar y haga clic en **Agregar**.
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

@@ -19,27 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670178"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102763"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En el contexto de las herramientas de datos de .NET en Visual Studio, el término *origen de datos* hace referencia a objetos de .NET que se conectan a un almacén de datos y exponen los datos a una aplicación. NET. Los diseñadores de Visual Studio pueden consumir la salida del origen de datos para generar el código reutilizable que enlaza los datos a los formularios al arrastrar y colocar los objetos de base de datos desde el **orígenes de datos** ventana. Este tipo de origen de datos puede ser:  
   
--   Una clase en un modelo de Entity Framework que está asociado a algún tipo de base de datos.  
+- Una clase en un modelo de Entity Framework que está asociado a algún tipo de base de datos.  
   
--   Un conjunto de datos que está asociado a algún tipo de base de datos.  
+- Un conjunto de datos que está asociado a algún tipo de base de datos.  
   
--   Una clase que representa un servicio de red como un servicio de datos de Windows Communication Foundation (WCF) o un servicio REST.  
+- Una clase que representa un servicio de red como un servicio de datos de Windows Communication Foundation (WCF) o un servicio REST.  
   
--   Una clase que representa un servicio de SharePoint.  
+- Una clase que representa un servicio de SharePoint.  
   
--   Una clase o una colección de la solución.  
+- Una clase o una colección de la solución.  
   
 > [!NOTE]
 >  Si no usa características de enlace de datos, conjuntos de datos, Entity Framework, LINQ to SQL, WCF o SharePoint, el concepto de "data source" no es aplicable. Simplemente conéctese directamente a la base de datos mediante el uso de los objetos de SQLCommand y comunicarse directamente con la base de datos.  
@@ -77,11 +77,11 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
   
  Puede crear un origen de datos de los siguientes tipos de servicios:  
   
--   Data Services de WCF. Para obtener más información, consulte [Introducción](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Data Services de WCF. Para obtener más información, consulte [Introducción](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Data services de WCF. Para obtener más información, consulte [servicios Windows Communication Foundation y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+- Data services de WCF. Para obtener más información, consulte [servicios Windows Communication Foundation y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
--   Servicios Web.  
+- Servicios Web.  
   
     > [!NOTE]
     >  Los elementos que aparecen en la **orígenes de datos** ventana dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecerán en el **orígenes de datos** ventana cuando se complete el asistente. Esto es porque los datasets no escritos no proporcionan un esquema y, por lo tanto, el asistente no tiene información suficiente para crear el origen de datos.  

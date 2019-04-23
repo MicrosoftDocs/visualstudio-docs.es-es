@@ -12,25 +12,25 @@ ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c38f0a891c6ee57ad2d483e48e06624fa9bccdf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 272946c80f5df2c96d4cf2bf20ea988c71766d46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100578"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Esta interfaz proporciona compatibilidad para:  
   
--   Recuperar una cadena de longitud arbitraria asociada a la propiedad.  
+- Recuperar una cadena de longitud arbitraria asociada a la propiedad.  
   
--   Asocia un identificador único a la propiedad.  
+- Asocia un identificador único a la propiedad.  
   
--   Recuperar una lista de visores personalizados para la propiedad.  
+- Recuperar una lista de visores personalizados para la propiedad.  
   
--   Establecer el valor de una propiedad con la capacidad para notificar los errores resultantes  
+- Establecer el valor de una propiedad con la capacidad para notificar los errores resultantes  
   
 ## <a name="syntax"></a>Sintaxis  
   

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear un receptor de eventos para una instancia de la lista específica | Documentos de Microsoft
+title: Procedimiento Crear un receptor de eventos para una instancia de la lista específica | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 615b9bc4974a0483dec5e9c39727ebae50039a1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094351"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Filtrar Crear un receptor de eventos para una instancia de la lista específica
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procedimiento Crear un receptor de eventos para una instancia de la lista específica
   Un receptor de eventos de la instancia de lista responde a los eventos que ocurren en cualquier instancia de una definición de lista. Aunque la plantilla de receptor de eventos no se permite el establecimiento de destinos de una instancia de la lista específica, puede modificar un receptor de eventos que se limita a una definición de lista para responder a eventos en una instancia de la lista específica.
 
  Para tener como destino una instancia de lista específica en el *Elements.xml* para el receptor de eventos, reemplace `ListTemplateId` con `ListUrl` y agregue la dirección URL de la instancia de lista.
@@ -30,24 +30,24 @@ ms.locfileid: "56596534"
 
 #### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Para modificar un receptor de eventos para responder a una instancia de la lista específica
 
-1.  En un explorador, abra el sitio de SharePoint.
+1. En un explorador, abra el sitio de SharePoint.
 
-2.  En el panel de navegación, **enumera** vínculo.
+2. En el panel de navegación, **enumera** vínculo.
 
-3.  En el **todo el contenido del sitio** página, elija el **crear** vínculo.
+3. En el **todo el contenido del sitio** página, elija el **crear** vínculo.
 
-4.  En el **crear** diálogo cuadro, elija el **anuncios** escriba, asigne el nombre del anuncio **TestAnnouncements**y, a continuación, elija la **crear**botón.
+4. En el **crear** diálogo cuadro, elija el **anuncios** escriba, asigne el nombre del anuncio **TestAnnouncements**y, a continuación, elija la **crear**botón.
 
-5.  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de receptor de eventos.
+5. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de receptor de eventos.
 
-6.  En el **qué tipo de receptor de eventos desea?** elija **eventos del elemento de lista**.
+6. En el **qué tipo de receptor de eventos desea?** elija **eventos del elemento de lista**.
 
     > [!NOTE]
     >  También puede seleccionar cualquier otro tipo de receptor de eventos que establece el ámbito para una definición de lista, por ejemplo, **eventos de correo electrónico de lista** o **eventos de flujo de trabajo de lista**.
 
-7.  En el **qué elemento debe ser el origen del evento?** elija **anuncios**.
+7. En el **qué elemento debe ser el origen del evento?** elija **anuncios**.
 
-8.  En el **administrar los eventos siguientes** lista, seleccione el **se va a agregar un elemento** casilla de verificación y, a continuación, elija el **finalizar** botón.
+8. En el **administrar los eventos siguientes** lista, seleccione el **se va a agregar un elemento** casilla de verificación y, a continuación, elija el **finalizar** botón.
 
 9. En **el Explorador de soluciones**, bajo EventReceiver1, abra *Elements.xml*.
 

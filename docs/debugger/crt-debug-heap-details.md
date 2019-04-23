@@ -73,12 +73,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45562119158faad0d596b74faecd786668abf8dd
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.openlocfilehash: f55bd71b2174a03fb44b4512f04997e48d636d12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103282"
 ---
 # <a name="crt-debug-heap-details"></a>Detalles del montón de depuración de CRT
 Este tema proporciona un examen detallado del montón de depuración de CRT.
@@ -201,7 +201,7 @@ Todas las llamadas a funciones del montón, como `malloc`, `free`, `calloc`, `re
 
 2. Activar cualquier bit haciendo `OR`- ing (bit a bit &#124; símbolos) la variable temporal con la máscara de bits correspondiente (representada en el código de aplicación mediante constantes del manifiesto).
 
-3. Desactive los demás bits aplicando la operación `AND` (símbolo & bit a bit) a la variable con `NOT` (símbolo ~ bit a bit) de la máscara de bits apropiada.
+3. Desactive los demás bits realizando `AND`- ing (bit a bit & símbolo) la variable con un `NOT` (bit a bit ~ símbolos) de la máscara de bits apropiada.
 
 4. Llame a `_CrtSetDbgFlag` con el parámetro `newFlag` establecido en el valor almacenado en la variable temporal para crear el nuevo estado de `_crtDbgFlag`.
 
@@ -261,7 +261,7 @@ La versión de depuración del operador `delete` funciona con todos los tipos de
 
 ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Funciones que indican el estado del montón
+## <a name="BKMK_Heap_State_Reporting_Functions"></a> Funciones que indican el estado del montón
  **_CrtMemState**
 
  Para capturar una instantánea resumen del estado del montón en un instante determinado, use la estructura _CrtMemState definida en CRTDBG.H:

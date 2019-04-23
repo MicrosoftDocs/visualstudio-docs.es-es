@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63329433204af7c7fe7ae40366a376c9da16fdcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627745"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094858"
 ---
 # <a name="events-in-office-projects"></a>Eventos en proyectos de Office
   Cada plantilla de proyecto de Office genera automáticamente varios controladores de eventos. Los controladores de eventos de las personalizaciones de nivel de documento son ligeramente diferentes de los controladores de eventos de los complementos de VSTO.
@@ -52,34 +52,34 @@ ms.locfileid: "56627745"
 
  Cuando se crea un proyecto de nivel de documento, Visual Studio crea controladores de eventos para el evento **Startup** en los archivos de código generado:
 
--   En los proyectos de Microsoft Office Word, el controlador de eventos se denomina `ThisDocument_Startup`.
+- En los proyectos de Microsoft Office Word, el controlador de eventos se denomina `ThisDocument_Startup`.
 
--   En los proyectos de Microsoft Office Excel, los controladores de eventos tienen los nombres siguientes:
+- En los proyectos de Microsoft Office Excel, los controladores de eventos tienen los nombres siguientes:
 
-    -   `Sheet1_Startup`
+    - `Sheet1_Startup`
 
-    -   `Sheet2_Startup`
+    - `Sheet2_Startup`
 
-    -   `Sheet3_Startup`
+    - `Sheet3_Startup`
 
-    -   `ThisWorkbook_Startup`
+    - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown (evento)
  El evento **Shutdown** se desencadena para cada uno de los elementos host (documento u hoja de cálculo) cuando el dominio de aplicación en el que se ha cargado el código está a punto de descargarse. Es lo último a lo que se llama en la clase cuando se descarga.
 
  Cuando se crea un proyecto de nivel de documento, Visual Studio crea controladores de eventos para el evento **Shutdown** en los archivos de código generado:
 
--   En los proyectos de Microsoft Office Word, el controlador de eventos se denomina `ThisDocument_Shutdown`.
+- En los proyectos de Microsoft Office Word, el controlador de eventos se denomina `ThisDocument_Shutdown`.
 
--   En los proyectos de Microsoft Office Excel, los controladores de eventos tienen los nombres siguientes:
+- En los proyectos de Microsoft Office Excel, los controladores de eventos tienen los nombres siguientes:
 
-    -   `Sheet1_Shutdown`
+    - `Sheet1_Shutdown`
 
-    -   `Sheet2_Shutdown`
+    - `Sheet2_Shutdown`
 
-    -   `Sheet3_Shutdown`
+    - `Sheet3_Shutdown`
 
-    -   `ThisWorkbook_Shutdown`
+    - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 >  No quite controles mediante programación durante el controlador de eventos **Shutdown** del documento. Los elementos de la interfaz de usuario del documento ya no están disponibles cuando se produce el evento **Shutdown** . Si desea quitar controles antes de que se cierre la aplicación, agregue el código a otro controlador de eventos, como **BeforeClose** o **BeforeSave**.
@@ -145,9 +145,9 @@ ms.locfileid: "56627745"
 #### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Evento Shutdown en los complementos de VSTO de Outlook
  El evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> solo se desencadena cuando el usuario deshabilita el complemento de VSTO mediante el cuadro de diálogo Complementos COM de Outlook. No se desencadena cuando se cierra Outlook. Si tiene código que se debe ejecutar cuando Outlook se cierra, controle uno de los siguientes eventos:
 
--   El evento <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> del objeto <xref:Microsoft.Office.Interop.Outlook.Application> .
+- El evento <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> del objeto <xref:Microsoft.Office.Interop.Outlook.Application> .
 
--   El evento <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> del objeto <xref:Microsoft.Office.Interop.Outlook.Explorer> .
+- El evento <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> del objeto <xref:Microsoft.Office.Interop.Outlook.Explorer> .
 
 > [!NOTE]
 >  Puede modificar el Registro para forzar a Outlook a desencadenar el evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> cuando salga. Sin embargo, si un administrador cambia esta configuración, cualquier código que agregue al método `ThisAddIn_Shutdown` dejará de ejecutarse al salir de Outlook. Para obtener más información, consulte [cambia Shutdown para Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).

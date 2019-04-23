@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear una aplicación de datos con n niveles'
+title: 'Tutorial: Creación de una aplicación de datos de n niveles'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091829"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>Tutorial: Crear una aplicación de datos con n niveles
+# <a name="walkthrough-create-an-n-tier-data-application"></a>Tutorial: Crear una aplicación de datos de n niveles
 Las aplicaciones de datos con *n niveles* son aplicaciones que acceden a datos y que están separadas en varias capas lógicas o *niveles*. Al separar los componentes de la aplicación en estos niveles individuales, se aumenta la facilidad de mantenimiento y la escalabilidad de la aplicación. Esto se consigue mediante una integración más sencilla de nuevas tecnologías, que se pueden aplicar a un solo nivel sin necesidad de volver a diseñar la solución completa. Una arquitectura típica con n niveles incluye un nivel de presentación, un nivel intermedio y una capa de datos. El nivel intermedio incluye normalmente una capa de acceso a datos, una capa de la lógica empresarial y componentes compartidos, tales como autenticación y validación. La capa de datos incluye una base de datos relacional. Las aplicaciones con n niveles normalmente almacenan la información confidencial en la capa de acceso a datos del nivel intermedio para aislar esa información de los usuarios finales que obtienen acceso al nivel de presentación. Para obtener más información, consulte [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).
 
 Una manera de separar los distintos niveles de una aplicación con n niveles consiste en crear proyectos independientes para cada nivel que se desee incluir en la aplicación. Los conjuntos de datos con tipo contienen una propiedad `DataSet Project` que determina en qué proyectos deben ir el conjunto de datos y el código de `TableAdapter` generados.
@@ -30,25 +30,25 @@ Este tutorial muestra cómo separar el código de conjunto de datos y `TableAdap
 
 Durante este tutorial, realice los pasos siguientes:
 
--   Cree una nueva solución de n niveles que contiene varios proyectos.
+- Cree una nueva solución de n niveles que contiene varios proyectos.
 
--   Agregar dos proyectos de bibliotecas de clases a la solución con n niveles.
+- Agregar dos proyectos de bibliotecas de clases a la solución con n niveles.
 
--   Cree un conjunto de datos con tipo mediante el **Asistente para configuración de orígenes de datos**.
+- Cree un conjunto de datos con tipo mediante el **Asistente para configuración de orígenes de datos**.
 
--   Separar generado [TableAdapters](create-and-configure-tableadapters.md) y el código del conjunto de datos en proyectos discretos.
+- Separar generado [TableAdapters](create-and-configure-tableadapters.md) y el código del conjunto de datos en proyectos discretos.
 
--   Crear un servicio de Windows Communication Foundation (WCF) para realizar llamadas al nivel de acceso a datos.
+- Crear un servicio de Windows Communication Foundation (WCF) para realizar llamadas al nivel de acceso a datos.
 
--   Crear funciones en el servicio para recuperar datos del nivel de acceso a datos.
+- Crear funciones en el servicio para recuperar datos del nivel de acceso a datos.
 
--   Crear una aplicación de Windows Forms que actúe como nivel de presentación.
+- Crear una aplicación de Windows Forms que actúe como nivel de presentación.
 
--   Crear controles de formularios Windows Forms enlazados al origen de datos.
+- Crear controles de formularios Windows Forms enlazados al origen de datos.
 
--   Escribir código para rellenar las tablas de datos.
+- Escribir código para rellenar las tablas de datos.
 
-![vínculo a vídeo](../data-tools/media/playvideo.gif) para una versión en vídeo de este tema, consulte [vídeo sobre cómo: Crear una aplicación de datos de n niveles](http://go.microsoft.com/fwlink/?LinkId=115188).
+![vínculo a vídeo](../data-tools/media/playvideo.gif) para una versión en vídeo de este tema, consulte [vídeo sobre cómo: Crear una aplicación de datos con n niveles](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Requisitos previos
 En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
@@ -104,7 +104,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
  El paso siguiente consiste en crear un conjunto de datos con tipo. Objetos DataSet con tipo se crea con la clase de conjunto de datos (incluidos `DataTables` clases) y el `TableAdapter` clases en un solo proyecto. (Todas las clases se generan en un solo archivo.) Al separar el conjunto de datos y TableAdapters en proyectos diferentes, es la clase de conjunto de datos que se mueve a otro proyecto, dejando el `TableAdapter` clases en el proyecto original. Por lo tanto, cree el conjunto de datos en el proyecto que finalmente contendrá los TableAdapters (el proyecto DataAccessTier). Crear el conjunto de datos mediante el **Asistente para configuración de origen de datos**.
 
 > [!NOTE]
-> Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+> Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: Instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Para crear el conjunto de datos
 
@@ -122,7 +122,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
      Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-     o bien
+     -o bien-
 
      Seleccione **nueva conexión** para abrir el **Agregar conexión** cuadro de diálogo.
 
@@ -154,7 +154,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 5. En el menú **Compilar**, seleccione **Compilar solución**.
 
-   El conjunto de datos y los TableAdapters se separan en los dos proyectos de biblioteca de clases. El proyecto que originalmente contenía el conjunto de datos completa (`DataAccessTier`) contiene ahora sólo los TableAdapters. El proyecto designado en el **DataSet Project** propiedad (`DataEntityTier`) contiene el conjunto de datos con tipo: *NorthwindDataSet.Dataset.Designer.vb* (o  *NorthwindDataSet.Dataset.Designer.cs*).
+   El conjunto de datos y los TableAdapters se separan en los dos proyectos de biblioteca de clases. El proyecto que originalmente contenía el conjunto de datos completa (`DataAccessTier`) contiene ahora sólo los TableAdapters. El proyecto designado en el **DataSet Project** propiedad (`DataEntityTier`) contiene el conjunto de datos con tipo: *NorthwindDataSet.Dataset.Designer.vb* (o *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Cuando los conjuntos de datos se separan de los TableAdapters (estableciendo la propiedad **DataSet Project**), las clases de conjunto de datos parciales existentes no se trasladarán automáticamente. Las clases de conjunto de datos parciales existentes se deberán trasladar manualmente al proyecto de conjunto de datos.
@@ -284,7 +284,7 @@ Este tutorial muestra cómo obtener acceso a la capa de acceso a datos mediante 
 5. En el menú **Compilar** , haga clic en **Compilar solución**.
 
 ## <a name="create-a-presentation-tier-to-display-data-from-the-data-service"></a>Crear un nivel de presentación para mostrar los datos del servicio de datos
- Ahora que la solución contiene el servicio de datos que tiene métodos que llaman a los datos de nivel de acceso a, cree otro proyecto que llama al servicio de datos y presentar los datos a los usuarios. Para este tutorial, cree una aplicación de Windows Forms; éste es el nivel de presentación de la aplicación con n niveles.
+ Ahora que la solución contiene el servicio de datos que tiene métodos que llaman a los datos de nivel de acceso a, cree otro proyecto que llama al servicio de datos y presentar los datos a los usuarios. Para este tutorial, cree una aplicación de formularios Windows Forms; éste es el nivel de presentación de la aplicación con n niveles.
 
 ### <a name="to-create-the-presentation-tier-project"></a>Para crear el proyecto de nivel de presentación
 
@@ -301,7 +301,7 @@ También estableceremos la **PresentationTier** proyecto para que sea el proyect
 
 ### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>Para establecer el nuevo proyecto de nivel de presentación como proyecto de inicio
 
--   En el **Explorador de soluciones**, haga clic con el botón derecho en **PresentationTier** y después haga clic en **Establecer como proyecto de inicio**.
+- En el **Explorador de soluciones**, haga clic con el botón derecho en **PresentationTier** y después haga clic en **Establecer como proyecto de inicio**.
 
 ## <a name="add-references-to-the-presentation-tier"></a>Agregar referencias al nivel de presentación
  La aplicación cliente PresentationTier requiere una referencia de servicio al servicio de datos para poder acceder a los métodos del servicio. Además, se requiere una referencia al conjunto de datos para que el servicio WCF pueda compartir los tipos. Hasta que habilite el tipo de uso compartido a través del servicio de datos, código agregado a la clase parcial del conjunto de datos no está disponible para el nivel de presentación. Como normalmente se agrega código, como el código de validación para la fila y columna, cambiar los eventos de una tabla de datos, es probable que quiera obtener acceso a este código desde el cliente.
@@ -361,7 +361,7 @@ También estableceremos la **PresentationTier** proyecto para que sea el proyect
 El valor predeterminado de `maxReceivedMessageSize` no es lo suficientemente grande como para contener los datos recuperados de la `Customers` y `Orders` tablas. En los pasos siguientes, deberá aumentar el valor por 6553600. Cambiar el valor en el cliente, que actualiza automáticamente la referencia de servicio.
 
 > [!NOTE]
-> El tamaño predeterminado más bajo está pensado para limitar la exposición a ataques por denegación de servicio (DOS). Para obtener más información, vea <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> El tamaño predeterminado más bajo está pensado para limitar la exposición a ataques por denegación de servicio (DOS). Para obtener más información, consulta <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Para aumentar el valor de maxReceivedMessageSize
 
@@ -375,9 +375,9 @@ Ejecute la aplicación presionando **F5**. Los datos de la `Customers` y `Orders
 ## <a name="next-steps"></a>Pasos siguientes
  En función de los requisitos de la aplicación, hay varios pasos que es posible que desee realizar después de guardar los datos relacionados en la aplicación basada en Windows. Por ejemplo, a continuación se indican algunas de las mejoras que podría realizar en esta aplicación:
 
--   Agregar validación al conjunto de datos.
+- Agregar validación al conjunto de datos.
 
--   Agregar métodos adicionales al servicio para actualizar los datos de nuevo en la base de datos.
+- Agregar métodos adicionales al servicio para actualizar los datos de nuevo en la base de datos.
 
 ## <a name="see-also"></a>Vea también
 

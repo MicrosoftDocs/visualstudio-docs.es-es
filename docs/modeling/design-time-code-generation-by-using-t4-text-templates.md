@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657472"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090425"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 Plantillas de texto T4 de tiempo de diseño permiten generar código de programa y otros archivos en el proyecto de Visual Studio. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o una base de datos que contiene información esencial sobre los requisitos de la aplicación.
@@ -141,9 +141,9 @@ Las plantillas de texto permiten utilizar código de programa para modificar el 
 
 #### <a name="to-generate-program-code-or-resources"></a>Para generar código de programa o recursos
 
-1.  Cambie la directiva de salida para generar un archivo del tipo adecuado, como .cs, .vb, .resx o .xml.
+1. Cambie la directiva de salida para generar un archivo del tipo adecuado, como .cs, .vb, .resx o .xml.
 
-2.  Inserte el código que generará el código de solución que requiere. Por ejemplo, si desea generar tres declaraciones de campo de número entero en una clase:
+2. Inserte el código que generará el código de solución que requiere. Por ejemplo, si desea generar tres declaraciones de campo de número entero en una clase:
 
     ```csharp
 
@@ -176,7 +176,7 @@ Las plantillas de texto permiten utilizar código de programa para modificar el 
 
     ```
 
-3.  Guarde el archivo e inspeccione el archivo generado, que ahora contiene el siguiente código:
+3. Guarde el archivo e inspeccione el archivo generado, que ahora contiene el siguiente código:
 
     ```csharp
     class MyGeneratedClass {

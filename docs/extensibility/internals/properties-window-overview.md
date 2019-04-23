@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b47db7802a6e174d8efff054fe9a6454fa6ef73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06844e8723cc118d6cc10c44c5c788e48c206684
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101033"
 ---
 # <a name="properties-window-overview"></a>Información general sobre la ventana Propiedades
 El **propiedades** ventana se utiliza para mostrar las propiedades de objetos seleccionados en los dos tipos principales de windows disponibles en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). Estos dos tipos de windows son:
 
--   Ventanas como explorador de objetos, vista de clases y Explorador de soluciones
+- Ventanas como explorador de objetos, vista de clases y Explorador de soluciones
 
--   Ventanas de documento que contiene dichos editores y diseñadores como el Diseñador de formularios, el editor XML y el editor HTML
+- Ventanas de documento que contiene dichos editores y diseñadores como el Diseñador de formularios, el editor XML y el editor HTML
 
 ## <a name="using-the-properties-window"></a>Mediante la ventana Propiedades
  El **propiedades** ventana muestra las propiedades de uno o varios elementos seleccionados. Si se seleccionan varios elementos, se muestra la intersección de todas las propiedades para todos los objetos seleccionados.

@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff52925dea61916b9fa27af8cfacc044588cdb75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091621"
 ---
 # <a name="performance-report-overview"></a>Información general sobre el informe de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,19 +82,19 @@ Puede ver los datos de generación de perfiles de una sesión de rendimiento en 
 ## <a name="customizable-filter-control"></a>Control de filtro personalizable  
  El control de filtro personalizable tiene las siguientes opciones:  
   
--   **Importar filtro**: recupera una consulta personalizada guardada previamente.  
+- **Importar filtro**: recupera una consulta personalizada guardada previamente.  
   
--   **Exportar filtro**: guarda la consulta personalizada en la ubicación especificada.  
+- **Exportar filtro**: guarda la consulta personalizada en la ubicación especificada.  
   
--   **Ejecutar consulta**: ejecuta la consulta como se muestra en el control de consultas personalizadas.  
+- **Ejecutar consulta**: ejecuta la consulta como se muestra en el control de consultas personalizadas.  
   
--   **Detener consulta**: detiene la ejecución de una consulta. Este botón no está disponible si no se está ejecutando ninguna consulta.  
+- **Detener consulta**: detiene la ejecución de una consulta. Este botón no está disponible si no se está ejecutando ninguna consulta.  
   
--   **Mostrar consulta**: muestra u oculta el control de consultas personalizadas.  
+- **Mostrar consulta**: muestra u oculta el control de consultas personalizadas.  
   
--   **Guardar analizado**: guarda el informe junto con su análisis actual como un archivo .vsps.  
+- **Guardar analizado**: guarda el informe junto con su análisis actual como un archivo .vsps.  
   
--   **Exportar**: guarda el informe actual en un archivo con formato .CSV o .XML, con opciones para guardar las diferentes vistas.  
+- **Exportar**: guarda el informe actual en un archivo con formato .CSV o .XML, con opciones para guardar las diferentes vistas.  
   
 ## <a name="see-also"></a>Vea también  
  [Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)   

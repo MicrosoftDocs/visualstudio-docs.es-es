@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3142d854a3a6371983dc6c5851ad007c387f1480
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 025f5366938eb00114b035f0b7992d61433cc181
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102567"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validación de puntos de interrupción en un servicio de lenguaje heredado
 Un punto de interrupción indica que debe detenerse la ejecución del programa en un momento determinado, mientras se está ejecutando en un depurador. Un usuario puede colocar un punto de interrupción en cualquier línea en el archivo de origen, ya que el editor no tiene ningún conocimiento de lo que constituye una ubicación válida para un punto de interrupción. Cuando se inicia el depurador, todos los puntos de interrupción marcadas (denominadas puntos de interrupción pendientes) están enlazados a la ubicación adecuada en el programa en ejecución. Al mismo tiempo que los puntos de interrupción se validan para asegurarse de que marcan las ubicaciones de código válido. Por ejemplo, un punto de interrupción en un comentario no es válido, porque no hay ningún código en esa ubicación en el código fuente. El depurador deshabilita los puntos de interrupción no válidos.
@@ -25,13 +25,13 @@ Un punto de interrupción indica que debe detenerse la ejecución del programa e
 
 ## <a name="implementing-support-for-validating-breakpoints"></a>Implementar la compatibilidad para validar los puntos de interrupción
 
--   El <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método se le asigna la posición del punto de interrupción. La implementación debe decidir si la ubicación es válida e indicar esto mediante la devolución de un intervalo de texto que identifica el código asociado a la posición de línea que el punto de interrupción.
+- El <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método se le asigna la posición del punto de interrupción. La implementación debe decidir si la ubicación es válida e indicar esto mediante la devolución de un intervalo de texto que identifica el código asociado a la posición de línea que el punto de interrupción.
 
--   Devolver <xref:Microsoft.VisualStudio.VSConstants.S_OK> si la ubicación es válida, o <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> si no es válido.
+- Devolver <xref:Microsoft.VisualStudio.VSConstants.S_OK> si la ubicación es válida, o <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> si no es válido.
 
--   Si el punto de interrupción válido se resaltará el intervalo de texto junto con el punto de interrupción.
+- Si el punto de interrupción válido se resaltará el intervalo de texto junto con el punto de interrupción.
 
--   Si el punto de interrupción no es válido, aparece un mensaje de error en la barra de estado.
+- Si el punto de interrupción no es válido, aparece un mensaje de error en la barra de estado.
 
 ### <a name="example"></a>Ejemplo
  En este ejemplo se muestra una implementación de la <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método al que llama el analizador para obtener el intervalo del código (si existe) en la ubicación especificada.

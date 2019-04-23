@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663237"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102983"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Crear tablas de búsqueda en aplicaciones de Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ El término *tabla de búsqueda* describe controles enlazados con dos tablas de 
   
 ## <a name="to-databind-a-lookup-control"></a>Para enlazar con datos un control de búsqueda  
   
-1.  Abra la ventana **Orígenes de datos**.  
+1. Abra la ventana **Orígenes de datos**.  
   
     > [!NOTE]
     > Las tablas de búsqueda requieren que dos tablas u objetos relacionados estén disponibles en la ventana **Orígenes de datos**.
   
-2.  Expanda los nodos de la ventana **Orígenes de datos** hasta que pueda ver la tabla primaria y todas sus columnas y la tabla secundaria relacionada y todas sus columnas.  
+2. Expanda los nodos de la ventana **Orígenes de datos** hasta que pueda ver la tabla primaria y todas sus columnas y la tabla secundaria relacionada y todas sus columnas.  
   
     > [!NOTE]
     >  El nodo de la tabla secundaria es el nodo que aparece como un nodo secundario expandible en la tabla primaria.  
   
-3.  Cambie el tipo Drop de la tabla secundaria a **Detalles** seleccionando **Detalles** en la lista de control del nodo de la tabla secundaria. Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+3. Cambie el tipo Drop de la tabla secundaria a **Detalles** seleccionando **Detalles** en la lista de control del nodo de la tabla secundaria. Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-4.  Busque el nodo que relaciona las dos tablas (el `CustomerID` nodo en el ejemplo anterior). Cambie su tipo de colocación para un <xref:System.Windows.Forms.ComboBox> seleccionando **ComboBox** desde la lista de control.  
+4. Busque el nodo que relaciona las dos tablas (el `CustomerID` nodo en el ejemplo anterior). Cambie su tipo de colocación para un <xref:System.Windows.Forms.ComboBox> seleccionando **ComboBox** desde la lista de control.  
   
-5.  Arrastre el nodo de tabla secundaria principal de la ventana **Orígenes de datos** a su formulario.  
+5. Arrastre el nodo de tabla secundaria principal de la ventana **Orígenes de datos** a su formulario.  
   
      En el formulario aparecen controles de enlace de datos (con etiquetas descriptivas) y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>). Un [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, y <xref:System.Windows.Forms.BindingNavigator> aparecen en la Bandeja de componentes.  
   
-6.  Ahora, arrastre el nodo de tabla primario principal desde el **orígenes de datos** ventana directamente al control de búsqueda (el <xref:System.Windows.Forms.ComboBox>).  
+6. Ahora, arrastre el nodo de tabla primario principal desde el **orígenes de datos** ventana directamente al control de búsqueda (el <xref:System.Windows.Forms.ComboBox>).  
   
      En este momento se establecen los enlaces de búsqueda. Consulte en la tabla siguiente las propiedades concretas establecidas en el control.  
   

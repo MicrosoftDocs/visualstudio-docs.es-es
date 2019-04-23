@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Establecer la sesión actual | Microsoft Docs'
+title: Procedimiento Establecer la sesión actual | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,14 +17,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edb5303a283de943ed99fc43003aacdeefe729c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102697"
 ---
-# <a name="how-to-set-the-current-session"></a>Cómo: Establecer la sesión actual
+# <a name="how-to-set-the-current-session"></a>Procedimiento Establecer la sesión actual
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede abrir varias sesiones de rendimiento en el **Explorador de rendimiento** y después puede seleccionar una de las sesiones de rendimiento visibles para establecerla como la sesión actual.  
@@ -37,7 +37,7 @@ Puede abrir varias sesiones de rendimiento en el **Explorador de rendimiento** y
   
 ### <a name="to-set-current-performance-session"></a>Para configurar la sesión de rendimiento actual  
   
--   En el **Explorador de rendimiento**, haga clic con el botón derecho en la sesión de rendimiento y, después, haga clic en **Establecer como sesión actual**.  
+- En el **Explorador de rendimiento**, haga clic con el botón derecho en la sesión de rendimiento y, después, haga clic en **Establecer como sesión actual**.  
   
      El nombre de sesión aparece en negrita.  
   

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d25325eb6f0fac952cbecff13cacde2d5354762
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092765"
 ---
 # <a name="create-outlook-form-regions"></a>Crear áreas de formulario de Outlook
   Puede usar las áreas de formulario para personalizar los formularios de Microsoft Office Outlook. Visual Studio proporciona herramientas avanzadas que facilitan el diseño, el desarrollo y la depuración de las áreas de formulario.
@@ -30,23 +30,23 @@ ms.locfileid: "56621375"
 
  En este tema se proporciona la información siguiente:
 
--   [Ventajas del uso de las áreas de formulario](#Enhance)
+- [Ventajas del uso de las áreas de formulario](#Enhance)
 
--   [Agregar un área de formulario de Outlook al proyecto](#Adding)
+- [Agregar un área de formulario de Outlook al proyecto](#Adding)
 
--   [Utilice el Diseñador de áreas de formulario](#UsingFormRegionDesigner)
+- [Utilice el Diseñador de áreas de formulario](#UsingFormRegionDesigner)
 
--   [Usar un área de formulario diseñado en Outlook](#UsingFormRegionDesignedOutlook)
+- [Usar un área de formulario diseñado en Outlook](#UsingFormRegionDesignedOutlook)
 
--   [Agregar código personalizado a un área de formulario](#AddingCustomCode)
+- [Agregar código personalizado a un área de formulario](#AddingCustomCode)
 
--   [Compilar el proyecto](#Building)
+- [Compilar el proyecto](#Building)
 
--   [Depurar un área de formulario](#Debugging)
+- [Depurar un área de formulario](#Debugging)
 
--   [Implementar un área de formulario](#Deploying)
+- [Implementar un área de formulario](#Deploying)
 
-##  <a name="Enhance"></a> Ventajas del uso de las áreas de formulario
+## <a name="Enhance"></a> Ventajas del uso de las áreas de formulario
  Las áreas de formulario ofrecen muchas mejoras sobre el desarrollo tradicional de formularios de Outlook:
 
 - Personalizar la página predeterminada de cualquier formulario estándar.
@@ -59,10 +59,10 @@ ms.locfileid: "56621375"
 
   Para obtener más información, consulte [personalizar las páginas de formulario y las áreas de formulario](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).
 
-##  <a name="Adding"></a> Agregar un área de formulario de Outlook al proyecto
+## <a name="Adding"></a> Agregar un área de formulario de Outlook al proyecto
  Puede usar el **nueva área de formulario de Outlook** Asistente para diseñar un nueva área de formulario o importar un área de formulario diseñada en Outlook. Además, si tiene un área de formulario que ha usado en otro proyecto de complemento de VSTO de Outlook, puede volver a usarla.
 
-###  <a name="CreatingFormRegion"></a> Crear un nueva área de formulario mediante el Asistente
+### <a name="CreatingFormRegion"></a> Crear un nueva área de formulario mediante el Asistente
  Para crear un área de formulario, agregue un **formulario de Outlook** elemento a un proyecto de complemento VSTO de Outlook. Esto inicia el **nueva área de formulario de Outlook** asistente.
 
  Use el asistente para indicar si desea diseñar una nueva área de formulario o importar una diseñada en Outlook. Para obtener más información sobre cómo diseñar un nueva área de formulario, consulte [utilizar el Diseñador de áreas de formulario](#UsingFormRegionDesigner). Para obtener más información sobre el uso de un área de formulario diseñado en Outlook, consulte [importar un área de formulario diseñado en Outlook](#UsingFormRegionDesignedOutlook).
@@ -83,11 +83,11 @@ ms.locfileid: "56621375"
 #### <a name="form-region-files"></a>Archivos de áreas de formulario
  Cuando complete la **nueva área de formulario de Outlook** asistente, Visual Studio agrega automáticamente los siguientes archivos al proyecto:
 
--   Un archivo de código del área de formulario. Este archivo tiene el nombre que especifique para la **formulario de Outlook** de elemento en el **Agregar nuevo elemento** cuadro de diálogo. Agregue código para controlar los eventos del área de formulario en este archivo.
+- Un archivo de código del área de formulario. Este archivo tiene el nombre que especifique para la **formulario de Outlook** de elemento en el **Agregar nuevo elemento** cuadro de diálogo. Agregue código para controlar los eventos del área de formulario en este archivo.
 
--   Un archivo de código del Diseñador de áreas de formulario. Este archivo contiene código generado por el Diseñador de áreas de formulario y no debe editarse directamente.
+- Un archivo de código del Diseñador de áreas de formulario. Este archivo contiene código generado por el Diseñador de áreas de formulario y no debe editarse directamente.
 
--   Un almacén de formularios de Outlook (*.ofs*) archivo.
+- Un almacén de formularios de Outlook (*.ofs*) archivo.
 
     > [!NOTE]
     >  Este archivo solo se agrega al proyecto si se importa un área de formulario diseñada en Outlook.
@@ -101,12 +101,12 @@ ms.locfileid: "56621375"
 
  La mayor parte de la clase de generador de áreas de formulario se implementa en el archivo del Diseñador de áreas de formulario. Sin embargo, el controlador de eventos `FormRegionInitializing` se expone en el archivo de código del área de formulario. Puede usar este controlador de eventos para especificar si Outlook debe mostrar el área de formulario. Para obtener más información, consulte [controlar eventos de áreas de formulario](#HandlingFormRegionEvents).
 
-###  <a name="AddingExistingFormRegion"></a> Agregar un área de formulario existente al proyecto
+### <a name="AddingExistingFormRegion"></a> Agregar un área de formulario existente al proyecto
  Si ha usado un área de formulario de Outlook en otro proyecto de Outlook, puede volver a usarla en el proyecto de complemento de VSTO de Outlook actual mediante el cuadro de diálogo **Agregar elemento existente** .
 
  El área de formulario existente debe tener un archivo de código (*.vb* o *.cs*); no se puede agregar almacenamiento de formularios de Outlook (*.ofs*) archivos utilizando el **Agregar elemento existente** cuadro de diálogo. Sin embargo, puede crear una nueva área de formulario importando un archivo de almacén de formularios de Outlook. Para obtener más información, vea [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook en](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-##  <a name="UsingFormRegionDesigner"></a> Utilice el Diseñador de áreas de formulario
+## <a name="UsingFormRegionDesigner"></a> Utilice el Diseñador de áreas de formulario
  El Diseñador de áreas de formulario ayuda a establecer el diseño y la apariencia de un área de este tipo. Puede arrastrar controles administrados a la superficie del diseñador, haga doble clic en dichos controles para abrir los controladores de eventos y establecer propiedades en el **propiedades** ventana.
 
 > [!NOTE]
@@ -124,7 +124,7 @@ ms.locfileid: "56621375"
 
   El Diseñador de áreas de formulario solo admite controles administrados. No puede agregar controles nativos de Outlook.
 
-##  <a name="UsingFormRegionDesignedOutlook"></a> Importar un área de formulario diseñado en Outlook
+## <a name="UsingFormRegionDesignedOutlook"></a> Importar un área de formulario diseñado en Outlook
  Al diseñar en Outlook, puede agregar controles nativos de Outlook al área de formulario. Los controles nativos de Outlook permiten enlazar a datos de Outlook en tiempo de diseño. Sin embargo, después no se podrá usar el Diseñador de áreas de formulario para agregar controles administrados o cambiar el diseño del área de formulario.
 
  Puede importar áreas de formulario en un proyecto de complemento VSTO de Outlook mediante el **nueva área de formulario de Outlook** asistente. En el **Seleccione cómo desea crear el área de formulario** , seleccione **importar un archivo de almacén de formulario de Outlook (.ofs)**. A continuación, puede ir a la ubicación de un archivo de almacén de formulario de Outlook (*.ofs*) archivo. (Outlook guarda las áreas de formulario como *.ofs* archivos.)
@@ -143,12 +143,12 @@ ms.locfileid: "56621375"
 ### <a name="update-an-imported-form-regions-design"></a>Actualizar el diseño del área de formulario importada
  Puede agregar, quitar o cambiar los controles del área de formulario. Antes de hacerlo, haga una copia de seguridad del código que haya agregado al archivo de código del área de formulario. A continuación, abra el *.ofs* archivo en Outlook, modifique el área de formulario y, a continuación, guarde los cambios. Use la **nueva área de formulario de Outlook** Asistente para importar modificado *.ofs* archivo. Luego, puede pegar el código en el nuevo archivo de código del área de formulario.
 
-##  <a name="AddingCustomCode"></a> Agregar código personalizado a un área de formulario
+## <a name="AddingCustomCode"></a> Agregar código personalizado a un área de formulario
  El espacio de nombres <xref:Microsoft.Office.Tools.Outlook> proporciona acceso a las clases que representan el área de formulario, al elemento de Outlook que muestra dicha área y a otros elementos útiles. El **formulario de Outlook** elemento agrega automáticamente una referencia a este ensamblado en el proyecto e inserta adecuado **mediante** o **importaciones** instrucción en la parte superior de la archivo de código de área de formulario.
 
  Puede usar clases, métodos y propiedades en el espacio de nombres `Microsoft.Office.Interop.Outlook` para llevar a cabo la mayoría de las tareas de programación de Outlook. Para obtener más información sobre el modelo de objetos de Outlook, consulte [información general sobre el modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md). Para obtener ejemplos de las tareas habituales que utilizar el modelo de objetos de Outlook, consulte [soluciones de Outlook](../vsto/outlook-solutions.md).
 
-###  <a name="HandlingFormRegionEvents"></a> Controlar eventos de áreas de formulario
+### <a name="HandlingFormRegionEvents"></a> Controlar eventos de áreas de formulario
  El **formulario de Outlook** elemento agrega automáticamente los siguientes tres controladores de eventos para el archivo de código de área de formulario.
 
 |evento|Descripción|
@@ -157,7 +157,7 @@ ms.locfileid: "56621375"
 |FormRegionShowing|Se produce después de crear una instancia del área de formulario pero antes de que esta aparezca.|
 |FormRegionClosed|Se produce antes de cerrar el área de formulario.|
 
-##  <a name="Building"></a> Compilar el proyecto
+## <a name="Building"></a> Compilar el proyecto
  Cuando se compila un proyecto de complemento de VSTO de Outlook que contiene un área de formulario, Visual Studio agrega la siguiente información al registro:
 
 - Una clave para cada clase de mensaje asociada a una o varias áreas de formulario.
@@ -166,12 +166,12 @@ ms.locfileid: "56621375"
 
   Outlook usa esta información para cargar las áreas de formulario.
 
-##  <a name="Debugging"></a> Depurar un área de formulario
+## <a name="Debugging"></a> Depurar un área de formulario
  Puede depurar un complemento de VSTO de Outlook que contiene un área de formulario tal y como lo haría con otros proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Al iniciar el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Visual Studio inicia automáticamente Outlook.
 
  Para ver el área de formulario, debe abrir el elemento de Outlook adecuado. Por ejemplo, si un área de formulario adyacente se anexa a la parte inferior de un elemento de correo, abra un elemento de correo.
 
-##  <a name="Deploying"></a> Implementar un área de formulario
+## <a name="Deploying"></a> Implementar un área de formulario
  Las áreas de formulario se implementan automáticamente con el complemento de VSTO de Outlook asociado. Por lo tanto, no es necesario efectuar ninguna tarea especial para implementar un área de formulario. Para obtener más información sobre cómo implementar complementos de VSTO, consulte [implementar una solución de Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="related-topics"></a>Temas relacionados

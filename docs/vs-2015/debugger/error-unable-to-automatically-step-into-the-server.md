@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b12509de2e2ba536d9d54d11a41924d86bf5667
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d979b53f4bd5962a01fa5eb1b77cc7c81c68a4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102424"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Error: No se puede depurar paso a paso por instrucciones el servidor automáticamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ El error reza como sigue:
   
  Las posibles causas son:  
   
--   No se ha establecido la depuración en "true" en el archivo web.config de la aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (vea [Modo de depuración en aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
+- No se ha establecido la depuración en "true" en el archivo web.config de la aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (vea [Modo de depuración en aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
   
--   Se instaló una versión de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] después de instalar Visual Studio. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] debe instalarse antes que Visual Studio. Use el **Panel de control**de Windows, **Programas y características** para reparar su instalación de Visual Studio.  
+- Se instaló una versión de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] después de instalar Visual Studio. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] debe instalarse antes que Visual Studio. Use el **Panel de control**de Windows, **Programas y características** para reparar su instalación de Visual Studio.  
   
 ## <a name="see-also"></a>Vea también  
  [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   

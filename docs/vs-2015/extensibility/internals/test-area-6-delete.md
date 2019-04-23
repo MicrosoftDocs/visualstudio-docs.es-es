@@ -11,12 +11,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 206835d92a2fca27bed2cbb8a96b99e6b7c8a082
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094877"
 ---
 # <a name="test-area-6-delete"></a>Área de prueba 6: Eliminar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Esta área de prueba de complemento de control de código fuente trata las accio
 ## <a name="expected-behavior"></a>Comportamiento esperado  
  Es el comportamiento esperado para los casos de prueba en el área de prueba de eliminación:  
   
--   Elemento eliminado ya no está visible dentro de **el Explorador de soluciones**.  
+- Elemento eliminado ya no está visible dentro de **el Explorador de soluciones**.  
   
--   El elemento primario del proyecto eliminado o elemento está desprotegido según sea necesario (posiblemente con un símbolo del sistema.)  
+- El elemento primario del proyecto eliminado o elemento está desprotegido según sea necesario (posiblemente con un símbolo del sistema.)  
   
--   Después de eliminar un checked out o elemento agregado, no aparecen en la **protecciones pendientes** ventana.  
+- Después de eliminar un checked out o elemento agregado, no aparecen en la **protecciones pendientes** ventana.  
   
--   El elemento aún existe en el almacén de control de código fuente, incluso después de la eliminación y se debe purgar manualmente.  
+- El elemento aún existe en el almacén de control de código fuente, incluso después de la eliminación y se debe purgar manualmente.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  

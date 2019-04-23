@@ -9,12 +9,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ea13b68f65d20f48a15c155761adef6bcbd4536b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d720779019ab4106fa6c4b727e9994f168a2d8f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102294"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Adjuntar al Profiler a una aplicación Web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,16 +51,16 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 3. Escriba el siguiente comando para adjuntar el generador de perfiles al proceso de trabajo de ASP.NET: **VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]  
 
-   -   `PID` especifica el identificador o nombre del proceso de trabajo de ASP.NET. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
+   - `PID` especifica el identificador o nombre del proceso de trabajo de ASP.NET. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación. Este parámetro es opcional.  
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación. Este parámetro es opcional.  
 
 ## <a name="controlling-data-collection"></a>Controlar la recolección de datos  
  Mientras se ejecuta la aplicación, puede controlar la recolección de datos iniciando o deteniendo la escritura de los datos en el archivo con las opciones de VSPerfCmd.exe. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
 
--   Los pares de opciones de VSPerfCmd de la tabla siguiente inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
+- Los pares de opciones de VSPerfCmd de la tabla siguiente inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
 
     |Opción|Descripción|  
     |------------|-----------------|  
@@ -73,11 +73,11 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
 
-1.  Desasocie el generador de perfiles de la aplicación de destino cerrándolo o escribiendo lo siguiente en un símbolo del sistema:  
+1. Desasocie el generador de perfiles de la aplicación de destino cerrándolo o escribiendo lo siguiente en un símbolo del sistema:  
 
      **VSPerfCmd /detach**  
 
-2.  Apague el generador de perfiles escribiendo el siguiente comando en un símbolo del sistema:  
+2. Apague el generador de perfiles escribiendo el siguiente comando en un símbolo del sistema:  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
 

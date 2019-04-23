@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Capturar información de gráficos | Microsoft Docs'
+title: 'Tutorial: Captura de información de gráficos | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ddbcef7c4ebfaa61dfd225c2d1fa13a23b3344
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092258"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Tutorial: Capturar información de gráficos
 En este tutorial se muestra cómo utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar manualmente información de gráficos desde una aplicación de Direct3D.
 
  En el tutorial se muestran las tareas siguientes:
 
--   Enlazar el Diagnóstico de gráficos con la aplicación
+- Enlazar el Diagnóstico de gráficos con la aplicación
 
--   Capturar información de gráficos
+- Capturar información de gráficos
 
 ## <a name="capturing-graphics-information"></a>Capturar información de gráficos
  Para utilizar las herramientas de Diagnóstico de gráficos, antes debe capturar la información gráfica en la que se basa. Para habilitar la captura, use el comando **Iniciar diagnóstico** para enlazar el Diagnóstico de gráficos con la aplicación cuando se inicia.
@@ -47,7 +47,7 @@ En este tutorial se muestra cómo utilizar el Diagnóstico de gráficos de [!INC
 
 - En la barra de herramientas Diagnóstico de gráficos, elija el botón **Capturar** . ![Icono de botón de captura de gráficos](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
 
-   o bien
+   -o bien-
 
    Con el foco en la aplicación, presione **Imprimir pantalla**.
 
@@ -56,7 +56,7 @@ En este tutorial se muestra cómo utilizar el Diagnóstico de gráficos de [!INC
 ## <a name="next-steps"></a>Pasos siguientes
  En este tutorial se ha mostrado cómo capturar información de gráficos de forma manual. El paso siguiente puede ser:
 
--   Aprenda cómo analizar la información de gráficos capturada mediante las herramientas de Diagnóstico de gráficos. Consulte [Introducción](overview-of-visual-studio-graphics-diagnostics.md).
+- Aprenda cómo analizar la información de gráficos capturada mediante las herramientas de Diagnóstico de gráficos. Consulte [Introducción](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Vea también
 - [Capturing Graphics Information](capturing-graphics-information.md)

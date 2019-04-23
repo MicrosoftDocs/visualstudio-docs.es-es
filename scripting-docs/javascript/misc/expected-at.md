@@ -14,19 +14,19 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da8eb2f21cbe7ef611aaba863e853a2fe7a71753
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: aa2728306d9e650bf7f8b446b6af5a409a39d0e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59018316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101566"
 ---
 # <a name="expected-"></a>Se esperaba '\@'
 Se intentó crear una variable para su uso con instrucciones de compilación condicional mediante el `@set` instrucción, pero no realizó una arroba "**@**" antes del nombre de variable.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Agregue un signo "**@**" inmediatamente antes del nombre de variable. Por ejemplo:  
+- Agregue un signo "**@**" inmediatamente antes del nombre de variable. Por ejemplo:  
   
     ```JavaScript  
     @set @myvar = 1  

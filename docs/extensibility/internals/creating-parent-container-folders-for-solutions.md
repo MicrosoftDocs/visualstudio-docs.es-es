@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661066"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102723"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Crear carpetas de contenedor para las soluciones de primario
 En el origen de Control de complemento de API versión 1.2, un usuario puede especificar un destino de control de origen de raíz única para todos los proyectos web dentro de la solución. Esta raíz solo se llama a una raíz de Unified Super (SUR).
@@ -35,13 +35,13 @@ En el origen de Control de complemento de API versión 1.2, un usuario puede esp
 
  El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE casi siempre crea una carpeta Surname al agregar una solución al control de código fuente. En concreto, lo hace en los casos siguientes:
 
--   El proyecto es un proyecto web de recurso compartido de archivos.
+- El proyecto es un proyecto web de recurso compartido de archivos.
 
--   Hay distintas unidades para el proyecto y el archivo de solución.
+- Hay distintas unidades para el proyecto y el archivo de solución.
 
--   Existen diversos recursos compartidos para el proyecto y el archivo de solución.
+- Existen diversos recursos compartidos para el proyecto y el archivo de solución.
 
--   Los proyectos se agregaron por separado (en una solución controlados por código fuente).
+- Los proyectos se agregaron por separado (en una solución controlados por código fuente).
 
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], se recomienda que el nombre de la carpeta Surname ser el mismo que el nombre de la solución sin la extensión. En la tabla siguiente se resume el comportamiento en las dos versiones.
 
