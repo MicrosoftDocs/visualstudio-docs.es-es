@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9c348607c4a009a5b9b0a501e61dda443127df
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112180"
 ---
 # <a name="xml-editor"></a>Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ El Editor XML se basa en el [!INCLUDE[msCoName](../includes/msconame-md.md)] Edi
 ## <a name="express-editions"></a>Ediciones Express  
  Las siguientes características del Editor XML no se encuentran disponibles en Visual Studio Express:  
   
--   Creación de un esquema XML a partir de un documento de instancia XML.  
+- Creación de un esquema XML a partir de un documento de instancia XML.  
   
--   Visualización de resultados XSLT desde el Editor XML.  
+- Visualización de resultados XSLT desde el Editor XML.  
   
--   Validación inteligente durante la edición de hojas de estilos XSLT.  
+- Validación inteligente durante la edición de hojas de estilos XSLT.  
   
--   Explorador de esquemas XML.  
+- Explorador de esquemas XML.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Validación de documentos XML](../xml-tools/xml-document-validation.md)  
