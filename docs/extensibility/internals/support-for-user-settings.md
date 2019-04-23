@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c358f80284083625dfe8c0eb3484c95000beb63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070745"
 ---
 # <a name="support-for-user-settings"></a>Compatibilidad con la configuración de usuario
 Un VSPackage puede definir uno o más categorías de configuración, que son grupos de variables de estado que se conservan cuando un usuario elige el **importar y exportar configuraciones** comando el **herramientas** menú. Para habilitar esta persistencia, se usa las API de configuración en el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
  Una entrada del registro que se conoce como un punto de configuración personalizado y un GUID que define la categoría de configuración de un VSPackage. Un VSPackage puede admitir varias categorías de configuración, cada uno definido por un punto de configuración personalizado.
 
--   Las implementaciones de configuración que se basa en los ensamblados de interoperabilidad (mediante el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interfaz) debe crear un punto de configuración personalizado mediante la edición del registro o mediante un script de registrador (archivo .rgs). Para obtener más información, consulta [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
+- Las implementaciones de configuración que se basa en los ensamblados de interoperabilidad (mediante el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interfaz) debe crear un punto de configuración personalizado mediante la edición del registro o mediante un script de registrador (archivo .rgs). Para obtener más información, consulta [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
 
--   Código que utiliza Managed Package Framework (MPF) debe crear puntos de valores personalizados adjuntando un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a VSPackage para cada punto de configuración personalizado.
+- Código que utiliza Managed Package Framework (MPF) debe crear puntos de valores personalizados adjuntando un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a VSPackage para cada punto de configuración personalizado.
 
      Si un VSPackage solo es compatible con varios puntos de valores personalizados, cada punto de configuración personalizado se implementa mediante una clase independiente y cada uno está registrado mediante una instancia única de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> clase. Por lo tanto, una configuración de implementación de clase puede admitir más de una categoría de configuración.
 

@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068163"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Inicio rápido: Depurar HTML y CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
   Para obtener información sobre otras características, como el uso de la ventana Consola JavaScript y establecer puntos de interrupción, la depuración de JavaScript consulte [inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a> Inspeccionar el DOM activo  
+## <a name="InspectingDOM"></a> Inspeccionar el DOM activo  
  El Explorador DOM muestra una vista de la página presentada. Puedes utilizarlo para cambiar valores y ver inmediatamente los resultados. Eso permite probar los cambios sin necesidad de detener y reiniciar el depurador. El código fuente del proyecto no cambia cuando se interactúa con la página mediante este método. Así pues, cuando encuentre las correcciones de código deseadas, realice los cambios en el código fuente.  
   
 > [!TIP]
@@ -249,17 +249,17 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 #### <a name="to-refresh-your-app-while-debugging"></a>Para actualizar la aplicación durante la depuración  
   
-1.  Mientras la aplicación se está ejecutando, cambia a Visual Studio.  
+1. Mientras la aplicación se está ejecutando, cambia a Visual Studio.  
   
-2.  Abre default.html y modifica tu código fuente cambiando el alto y ancho del elemento DIV `"fView"` al 100 %.  
+2. Abre default.html y modifica tu código fuente cambiando el alto y ancho del elemento DIV `"fView"` al 100 %.  
   
-3.  Elige el botón **Actualizar aplicación de Windows** situado en la barra de herramientas Depurar (o presiona F4). El botón tiene este aspecto: ![Botón de la aplicación de Windows actualizar](../debugger/media/js-refresh.png "JS_Refresh").  
+3. Elige el botón **Actualizar aplicación de Windows** situado en la barra de herramientas Depurar (o presiona F4). El botón tiene este aspecto: ![Botón de la aplicación de Windows actualizar](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Se recargan las páginas de la aplicación y el simulador o el emulador de Windows Phone vuelven al primer plano.  
   
      Para obtener más información acerca de la característica de actualización, vea [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a> Selecting elements  
+## <a name="SelectingElements"></a> Selecting elements  
  Puedes seleccionar elementos DOM de tres maneras al depurar una aplicación:  
   
 - Haciendo clic en los elementos directamente en la ventana del Explorador DOM (o utilizando las teclas de dirección).  
@@ -285,7 +285,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
  Para obtener un ejemplo que muestra cómo seleccionar elementos mediante el **elemento Select** botón, consulte [estilos CSS depurar mediante el explorador DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
-##  <a name="BrowserSupport"></a> Compatibilidad con explorador y plataforma  
+## <a name="BrowserSupport"></a> Compatibilidad con explorador y plataforma  
  Las herramientas de Visual Studio para JavaScript, el Explorador DOM y la ventana Consola JavaScript se admiten en las plataformas siguientes:  
   
 - Aplicaciones de la[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] y la Tienda de Windows Phone con JavaScript y HTML  

@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baaa2691783562240b5e465c98aab43e6f8cd1e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068306"
 ---
 # <a name="sccget-function"></a>SccGet (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,21 +86,21 @@ SCCRTN SccGet(
   
  Hay dos maneras de resolver esta situación donde la memoria caché local de versiones del control de código fuente no está sincronizada con la base de datos de control de código fuente:  
   
-1.  No permiten cambiar el nombre de un archivo en la base de datos de control de código fuente está desprotegido actualmente.  
+1. No permiten cambiar el nombre de un archivo en la base de datos de control de código fuente está desprotegido actualmente.  
   
-2.  Es el equivalente de "eliminación antiguo" seguida de "Agregar nuevo". El algoritmo siguiente es una manera de lograr esto.  
+2. Es el equivalente de "eliminación antiguo" seguida de "Agregar nuevo". El algoritmo siguiente es una manera de lograr esto.  
   
-    1.  Llame a la [SccQueryChanges](../extensibility/sccquerychanges-function.md) función para obtener información sobre el cambio de nombre de a.txt a b.txt en la base de datos de control de código fuente.  
+    1. Llame a la [SccQueryChanges](../extensibility/sccquerychanges-function.md) función para obtener información sobre el cambio de nombre de a.txt a b.txt en la base de datos de control de código fuente.  
   
-    2.  Cambiar el nombre de la local a.txt a b.txt.  
+    2. Cambiar el nombre de la local a.txt a b.txt.  
   
-    3.  Llame a la `SccGet` función a.txt y b.txt.  
+    3. Llame a la `SccGet` función a.txt y b.txt.  
   
-    4.  Porque a.txt no existe en la base de datos de control de código fuente, se purga la caché de la versión local de la información de versión a.txt que falta.  
+    4. Porque a.txt no existe en la base de datos de control de código fuente, se purga la caché de la versión local de la información de versión a.txt que falta.  
   
-    5.  El archivo b.txt que se va a desproteger se combina con el contenido del archivo b.txt local.  
+    5. El archivo b.txt que se va a desproteger se combina con el contenido del archivo b.txt local.  
   
-    6.  Ahora se puede proteger el archivo b.txt actualizada.  
+    6. Ahora se puede proteger el archivo b.txt actualizada.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   

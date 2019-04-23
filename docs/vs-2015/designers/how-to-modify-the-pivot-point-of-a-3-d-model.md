@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Modificar el punto de pivote de un modelo 3D | Microsoft Docs
+title: Procedimiento Modificar el punto de pivote de un modelo 3D | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f63c271e096793a03616356b9eb7229e4f823fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071790"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Procedimiento Modificar el punto de pivote de un modelo 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ En este documento se muestra cómo usar el Editor de modelos para modificar el *
   
  Este documento muestra esta actividad:  
   
--   Modificar el punto de pivote de un objeto  
+- Modificar el punto de pivote de un objeto  
   
 ## <a name="modifying-the-pivot-point-of-a-3-d-model"></a>Modificar el punto de pivote de un modelo 3D  
  Puede volver a definir el origen de un modelo 3D modificando el punto de pivote.  

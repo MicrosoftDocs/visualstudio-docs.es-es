@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070074"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Tutorial: Agregar controles a un documento en tiempo de ejecución en un complemento de VSTO
   Puede agregar controles a cualquier documento abierto de Microsoft Office Word mediante el uso de un complemento de VSTO. Este tutorial muestra cómo usar la cinta de opciones para permitir que los usuarios agregar un <xref:Microsoft.Office.Tools.Word.Controls.Button> o un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.
@@ -42,18 +42,18 @@ ms.locfileid: "59648555"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
 ## <a name="create-a-new-word-add-in-project"></a>Cree un nuevo proyecto de complemento de Word
  Empiece creando un proyecto de complemento de VSTO de Word.
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>Para crear un nuevo proyecto de complemento de VSTO de Word
 
-1.  Cree un proyecto de complemento VSTO de Word con el nombre **WordDynamicControls**. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Cree un proyecto de complemento VSTO de Word con el nombre **WordDynamicControls**. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Agregue una referencia al ensamblado **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** . Esta referencia es obligatoria para agregar mediante programación un control de Windows Forms al documento más adelante en este tutorial.
+2. Agregue una referencia al ensamblado **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** . Esta referencia es obligatoria para agregar mediante programación un control de Windows Forms al documento más adelante en este tutorial.
 
 ## <a name="provide-a-ui-to-add-controls-to-a-document"></a>Proporcionar una interfaz de usuario para agregar controles a un documento
  Agregue una pestaña personalizada a la cinta en Word. Los usuarios pueden seleccionar las casillas en la pestaña para agregar controles a un documento.
@@ -107,19 +107,19 @@ ms.locfileid: "59648555"
 
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>Para agregar y quitar controles en el documento activo
 
-1.  En **el Explorador de soluciones**, haga doble clic en *ThisAddIn.cs* o *ThisAddIn.vb* para abrir el archivo en el Editor de código.
+1. En **el Explorador de soluciones**, haga doble clic en *ThisAddIn.cs* o *ThisAddIn.vb* para abrir el archivo en el Editor de código.
 
-2.  Agregue el código siguiente a la clase `ThisAddIn` . Este código declara los objetos <xref:Microsoft.Office.Tools.Word.Controls.Button> y <xref:Microsoft.Office.Tools.Word.RichTextContentControl> que representan los controles que se agregarán al documento.
+2. Agregue el código siguiente a la clase `ThisAddIn` . Este código declara los objetos <xref:Microsoft.Office.Tools.Word.Controls.Button> y <xref:Microsoft.Office.Tools.Word.RichTextContentControl> que representan los controles que se agregarán al documento.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]
 
-3.  Agregue el método siguiente a la clase `ThisAddIn`. Cuando el usuario hace clic en la casilla **Agregar botón** en la cinta, este método agrega un <xref:Microsoft.Office.Tools.Word.Controls.Button> a la selección actual en el documento si la casilla está activada, o quita el <xref:Microsoft.Office.Tools.Word.Controls.Button> si la casilla está desactivada.
+3. Agregue el método siguiente a la clase `ThisAddIn`. Cuando el usuario hace clic en la casilla **Agregar botón** en la cinta, este método agrega un <xref:Microsoft.Office.Tools.Word.Controls.Button> a la selección actual en el documento si la casilla está activada, o quita el <xref:Microsoft.Office.Tools.Word.Controls.Button> si la casilla está desactivada.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#2)]
 
-4.  Agregue el método siguiente a la clase `ThisAddIn`. Cuando el usuario hace clic en la casilla **Agregar control de texto enriquecido** en la cinta, este método agrega un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a la selección actual en el documento si la casilla está activada, o quita el <xref:Microsoft.Office.Tools.Word.RichTextContentControl> si la casilla está desactivada.
+4. Agregue el método siguiente a la clase `ThisAddIn`. Cuando el usuario hace clic en la casilla **Agregar control de texto enriquecido** en la cinta, este método agrega un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a la selección actual en el documento si la casilla está activada, o quita el <xref:Microsoft.Office.Tools.Word.RichTextContentControl> si la casilla está desactivada.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]
@@ -129,12 +129,12 @@ ms.locfileid: "59648555"
 
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>Para quitar el control Button cuando el documento se guarda
 
-1.  En el *ThisAddIn.cs* o *ThisAddIn.vb* archivo de código, agregue el método siguiente a la `ThisAddIn` clase. Este método es un controlador de eventos para el evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> . Si el documento tiene un elemento host <xref:Microsoft.Office.Tools.Word.Document> que está asociado a él, el controlador de eventos obtiene el elemento host y quita el control <xref:Microsoft.Office.Tools.Word.Controls.Button> , si existe.
+1. En el *ThisAddIn.cs* o *ThisAddIn.vb* archivo de código, agregue el método siguiente a la `ThisAddIn` clase. Este método es un controlador de eventos para el evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> . Si el documento tiene un elemento host <xref:Microsoft.Office.Tools.Word.Document> que está asociado a él, el controlador de eventos obtiene el elemento host y quita el control <xref:Microsoft.Office.Tools.Word.Controls.Button> , si existe.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#4)]
 
-2.  En C#, agregue el código siguiente al controlador de eventos `ThisAddIn_Startup` . Este código es necesario en C# para conectar el controlador de eventos `Application_DocumentBeforeSave` con el evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> .
+2. En C#, agregue el código siguiente al controlador de eventos `ThisAddIn_Startup` . Este código es necesario en C# para conectar el controlador de eventos `Application_DocumentBeforeSave` con el evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> .
 
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#5)]
 
@@ -143,7 +143,7 @@ ms.locfileid: "59648555"
 
 ### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>Para agregar o quitar controles cuando el usuario hace clic en las casillas de verificación en la cinta de opciones
 
-1.  En el *MyRibbon.cs* o *MyRibbon.vb* archivo de código, reemplace el texto generado `addButtonCheckBox_Click` y `addRichTextCheckBox_Click` controladores de eventos con el código siguiente. Este código vuelve a definir estos controladores de eventos para llamar a los métodos `ToggleButtonOnDocument` y `ToggleRichTextControlOnDocument` que ha agregado a la clase `ThisAddIn` anteriormente en este tutorial.
+1. En el *MyRibbon.cs* o *MyRibbon.vb* archivo de código, reemplace el texto generado `addButtonCheckBox_Click` y `addRichTextCheckBox_Click` controladores de eventos con el código siguiente. Este código vuelve a definir estos controladores de eventos para llamar a los métodos `ToggleButtonOnDocument` y `ToggleRichTextControlOnDocument` que ha agregado a la clase `ThisAddIn` anteriormente en este tutorial.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]
@@ -153,34 +153,34 @@ ms.locfileid: "59648555"
 
 ### <a name="to-test-the-solution"></a>Para probar la solución.
 
-1.  Presione **F5** para ejecutar el proyecto.
+1. Presione **F5** para ejecutar el proyecto.
 
-2.  En el documento activo, presione **ENTRAR** varias veces para agregar nuevos vaciar los párrafos del documento.
+2. En el documento activo, presione **ENTRAR** varias veces para agregar nuevos vaciar los párrafos del documento.
 
-3.  Seleccione el primer párrafo.
+3. Seleccione el primer párrafo.
 
-4.  Haga clic en la pestaña **Complementos** .
+4. Haga clic en la pestaña **Complementos** .
 
-5.  En el grupo **Agregar controles** , haga clic en **Agregar botón**.
+5. En el grupo **Agregar controles** , haga clic en **Agregar botón**.
 
      Se mostrará un botón en el primer párrafo.
 
-6.  Seleccione el último párrafo.
+6. Seleccione el último párrafo.
 
-7.  En el grupo **Agregar controles** , haga clic en **Agregar control de texto enriquecido**.
+7. En el grupo **Agregar controles** , haga clic en **Agregar control de texto enriquecido**.
 
      Se agregará un control de contenido de texto enriquecido al último párrafo.
 
-8.  Guarde el documento.
+8. Guarde el documento.
 
      El botón se quitará del documento.
 
 ## <a name="next-steps"></a>Pasos siguientes
  Puede obtener más información acerca de los controles en los complementos de VSTO en estos temas:
 
--   Para obtener un ejemplo que muestra cómo agregar muchos otros tipos de controles a un documento en tiempo de ejecución y vuelva a crear los controles cuando se vuelve a abrir el documento, vea el complemento dinámico controles ejemplo Word en [detutorialesyejemplosdedesarrollodeOffice](../vsto/office-development-samples-and-walkthroughs.md).
+- Para obtener un ejemplo que muestra cómo agregar muchos otros tipos de controles a un documento en tiempo de ejecución y vuelva a crear los controles cuando se vuelve a abrir el documento, vea el complemento dinámico controles ejemplo Word en [detutorialesyejemplosdedesarrollodeOffice](../vsto/office-development-samples-and-walkthroughs.md).
 
--   Para ver un tutorial que muestra cómo agregar controles a una hoja de cálculo mediante un complemento VSTO para Excel, vea [Tutorial: Agregar controles a una hoja de cálculo en tiempo de ejecución en un proyecto de complemento de VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
+- Para ver un tutorial que muestra cómo agregar controles a una hoja de cálculo mediante un complemento VSTO para Excel, vea [Tutorial: Agregar controles a una hoja de cálculo en tiempo de ejecución en un proyecto de complemento de VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
 ## <a name="see-also"></a>Vea también
 - [Soluciones de Word](../vsto/word-solutions.md)

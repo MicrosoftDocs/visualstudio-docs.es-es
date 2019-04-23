@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068436"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
   
  Le recomendamos que no edite el código generado directamente, porque las ediciones se perderán al volver a compilar la solución. En su lugar, para personalizar el DSL:  
   
--   Ajuste los numerosos parámetros de la definición de DSL.  
+- Ajuste los numerosos parámetros de la definición de DSL.  
   
--   Escriba clases parciales en archivos de código diferentes para invalidar los métodos que se definen en clases generadas o se heredan de ellas. En algunos casos, deberá establecer el **genera doble derivada** opción de una clase en la definición de DSL, para poder invalidar un método generado.  
+- Escriba clases parciales en archivos de código diferentes para invalidar los métodos que se definen en clases generadas o se heredan de ellas. En algunos casos, deberá establecer el **genera doble derivada** opción de una clase en la definición de DSL, para poder invalidar un método generado.  
   
--   Establezca las opciones de la definición de DSL que hacen que el código generado proporcione ‘ganchos’ para su propio código.  
+- Establezca las opciones de la definición de DSL que hacen que el código generado proporcione ‘ganchos’ para su propio código.  
   
      Por ejemplo, si establece la **tiene Custom Constructor** opción de una clase de dominio y, a continuación, compile la solución, verá mensajes de error. Al hacer doble clic en uno de estos mensajes de error, verá comentarios en el código generado que explican lo que su código personalizado debe proporcionar.  
   
--   Escriba sus propias plantillas de texto para generar código específico para su aplicación. Puede usar archivos de inclusión para compartir partes de las plantillas que son comunes a muchos proyectos, y puede crear plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para configurar proyectos que se inicializan con su propia estructura de archivos.  
+- Escriba sus propias plantillas de texto para generar código específico para su aplicación. Puede usar archivos de inclusión para compartir partes de las plantillas que son comunes a muchos proyectos, y puede crear plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para configurar proyectos que se inicializan con su propia estructura de archivos.  
   
 ## <a name="generated-files-in-dsl"></a>Archivos generados en DSL  
  Los siguientes archivos generados aparecen en la **Dsl** proyecto.  

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 209c2263e35bc4e6c5bfffb03b4a760e8cc15a45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7fadcff84c4b927a7718d7d4ad1311918ae0f18a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066941"
 ---
 # <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>Especificar la ruta de acceso a las herramientas de línea de comandos de Herramientas de generación de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ La ruta de acceso a las herramientas de línea de comandos de las herramientas d
 ## <a name="64-bit-computers"></a>Equipos de 64 bits  
  En los equipos de 64 bits, especifique la ruta de acceso según la plataforma de destino de la aplicación para la que se genera el perfil.  
   
--   En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
+- En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
   
      *Unidad*\Archivos de programa (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools  
   
--   En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
+- En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
   
      *Unidad*\Archivos de programa (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64

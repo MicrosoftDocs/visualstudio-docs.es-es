@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7a01a249df088d2a89e64f1c04c69e80d69b111c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1126117cb1fc26c4f61bfb0f6ed0e19e86ce9323
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072674"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Tutorial: Crear un DataTable en el Diseñador de Dataset
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Tutorial: Crear un objeto DataTable en el Diseñador de Dataset
 
 En este tutorial se explica cómo crear un <xref:System.Data.DataTable> (sin un TableAdapter) mediante el **Diseñador de Dataset**. Para obtener información sobre la creación de tablas de datos que incluyen los TableAdapters, vea [crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
@@ -37,33 +37,33 @@ En este tutorial se explica cómo crear un <xref:System.Data.DataTable> (sin un 
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Agregar un nuevo conjunto de datos a la aplicación
 
-1.  En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
+1. En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo elemento**.
 
-2.  En el panel izquierdo, seleccione **datos**, a continuación, seleccione **DataSet** en el panel central.
+2. En el panel izquierdo, seleccione **datos**, a continuación, seleccione **DataSet** en el panel central.
 
-3.  Haga clic en **Agregar**.
+3. Haga clic en **Agregar**.
 
      Visual Studio agrega un archivo denominado **DataSet1.xsd** al proyecto y lo abre en el **Diseñador de Dataset**.
 
 ## <a name="add-a-new-datatable-to-the-dataset"></a>Agregar una nueva DataTable al conjunto de datos
 
-1.  Arrastre un **DataTable** desde el **DataSet** pestaña de la **cuadro de herramientas** en el **Diseñador de Dataset**.
+1. Arrastre un **DataTable** desde el **DataSet** pestaña de la **cuadro de herramientas** en el **Diseñador de Dataset**.
 
      Una tabla denominada **DataTable1** se agrega al conjunto de datos.
 
-2.  Haga clic en la barra de título de **DataTable1** y cámbiele el nombre `Music`.
+2. Haga clic en la barra de título de **DataTable1** y cámbiele el nombre `Music`.
 
 ## <a name="add-columns-to-the-datatable"></a>Agregar columnas a la DataTable
 
-1.  Haga clic en el **música** tabla. Seleccione **Agregar** y, a continuación, haga clic en **Columna**.
+1. Haga clic en el **música** tabla. Seleccione **Agregar** y, a continuación, haga clic en **Columna**.
 
-2.  Nombre de la columna `SongID`.
+2. Nombre de la columna `SongID`.
 
-3.  En la ventana **Propiedades** , establezca la propiedad <xref:System.Data.DataColumn.DataType%2A> en <xref:System.Int16?displayProperty=fullName>.
+3. En la ventana **Propiedades** , establezca la propiedad <xref:System.Data.DataColumn.DataType%2A> en <xref:System.Int16?displayProperty=fullName>.
 
-4.  Repita este proceso y agregue las siguientes columnas:
+4. Repita este proceso y agregue las siguientes columnas:
 
      `SongTitle`: <xref:System.String?displayProperty=fullName>
 

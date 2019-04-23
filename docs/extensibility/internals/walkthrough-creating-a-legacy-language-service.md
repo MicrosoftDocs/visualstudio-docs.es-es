@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2b61569c7d1608372516fbc8a71b9bc6955775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d58234dbe503f8d086e081464c2e38f759a75e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626575"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067097"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Tutorial: Creación de un servicio de lenguaje heredado
 Mediante las clases de lenguaje de framework (MPF) paquete administrado para implementar un servicio de lenguaje en [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] es sencillo. Necesita un VSPackage para hospedar el servicio de lenguaje, el servicio de lenguaje propio y un analizador para su idioma.
@@ -26,11 +26,11 @@ Mediante las clases de lenguaje de framework (MPF) paquete administrado para imp
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Ubicaciones de las plantillas de proyecto del paquete de Visual Studio
  La plantilla de proyecto de paquete de Visual Studio puede encontrarse en tres ubicaciones diferentes de plantilla en el **nuevo proyecto** cuadro de diálogo:
 
-1.  En Extensibilidad de Visual Basic. El lenguaje predeterminado del proyecto es Visual Basic.
+1. En Extensibilidad de Visual Basic. El lenguaje predeterminado del proyecto es Visual Basic.
 
-2.  En Extensibilidad de C#. El lenguaje predeterminado del proyecto es C#.
+2. En Extensibilidad de C#. El lenguaje predeterminado del proyecto es C#.
 
-3.  En otro tipos de extensibilidad del proyecto. El lenguaje predeterminado del proyecto es C++.
+3. En otro tipos de extensibilidad del proyecto. El lenguaje predeterminado del proyecto es C++.
 
 ### <a name="create-a-vspackage"></a>Crear un VSPackage
 
@@ -56,46 +56,46 @@ Mediante las clases de lenguaje de framework (MPF) paquete administrado para imp
 
 ### <a name="create-the-language-service-class"></a>Crear la clase de servicio de lenguaje
 
-1.  En **el Explorador de soluciones**, haga doble clic en el proyecto MyLanguagePackage, elija **agregar**, **referencia**y, a continuación, elija el **agregar nueva referencia** botón.
+1. En **el Explorador de soluciones**, haga doble clic en el proyecto MyLanguagePackage, elija **agregar**, **referencia**y, a continuación, elija el **agregar nueva referencia** botón.
 
-2.  En el **Agregar referencia** cuadro de diálogo, seleccione **Microsoft.VisualStudio.Package.LanguageService** en el **.NET** ficha y haga clic en **Aceptar**.
+2. En el **Agregar referencia** cuadro de diálogo, seleccione **Microsoft.VisualStudio.Package.LanguageService** en el **.NET** ficha y haga clic en **Aceptar**.
 
      Esto debe realizarse una sola vez para el proyecto de paquete de idioma.
 
-3.  En **el Explorador de soluciones**, haga doble clic en el proyecto VSPackage y seleccione **agregar**, **clase**.
+3. En **el Explorador de soluciones**, haga doble clic en el proyecto VSPackage y seleccione **agregar**, **clase**.
 
-4.  Asegúrese de que **clase** está seleccionado en la lista de plantillas.
+4. Asegúrese de que **clase** está seleccionado en la lista de plantillas.
 
-5.  Escriba **MyLanguageService.cs** para el nombre del archivo de clase y haga clic en **agregar**.
+5. Escriba **MyLanguageService.cs** para el nombre del archivo de clase y haga clic en **agregar**.
 
      Puede utilizar cualquier nombre que desee. Estos procedimientos detallados aquí se supone `MyLanguageService` como el nombre.
 
-6.  En el archivo MyLanguageService.cs, agregue la siguiente `using` instrucciones.
+6. En el archivo MyLanguageService.cs, agregue la siguiente `using` instrucciones.
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
 
-7.  Modificar el `MyLanguageService` clase derive de la <xref:Microsoft.VisualStudio.Package.LanguageService> clase:
+7. Modificar el `MyLanguageService` clase derive de la <xref:Microsoft.VisualStudio.Package.LanguageService> clase:
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_2.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_2.vb)]
 
-8.  Coloque el cursor en "LanguageService" y desde el **editar**, **IntelliSense** menú, seleccione **implementar clase abstracta**. Esto agrega los métodos necesarios mínimos para implementar una clase de servicio de lenguaje.
+8. Coloque el cursor en "LanguageService" y desde el **editar**, **IntelliSense** menú, seleccione **implementar clase abstracta**. Esto agrega los métodos necesarios mínimos para implementar una clase de servicio de lenguaje.
 
 9. Implementar los métodos abstractos, tal como se describe en [implementar un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service2.md).
 
 ### <a name="register-the-language-service"></a>Registrar el servicio de lenguaje
 
-1.  Abra el archivo MyLanguagePackagePackage.cs y agregue las siguientes `using` instrucciones:
+1. Abra el archivo MyLanguagePackagePackage.cs y agregue las siguientes `using` instrucciones:
 
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]
 
-2.  Registrar la clase de servicio de lenguaje, como se describe en [registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md). Esto incluye los atributos de ProvideXX y secciones de "Proffering el servicio de lenguaje". Use MyLanguageService en este tema usa TestLanguageService.
+2. Registrar la clase de servicio de lenguaje, como se describe en [registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md). Esto incluye los atributos de ProvideXX y secciones de "Proffering el servicio de lenguaje". Use MyLanguageService en este tema usa TestLanguageService.
 
 ### <a name="the-parser-and-scanner"></a>El analizador y el analizador
 
-1.  Implementar un analizador y el analizador para su idioma, como se describe en [analizador del servicio de lenguaje heredado y el analizador](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
+1. Implementar un analizador y el analizador para su idioma, como se describe en [analizador del servicio de lenguaje heredado y el analizador](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
      Cómo implementar el analizador y el escáner es totalmente suya y queda fuera del ámbito de este tema.
 
@@ -104,29 +104,29 @@ Mediante las clases de lenguaje de framework (MPF) paquete administrado para imp
 
 #### <a name="deriving-from-an-mpf-class"></a>Derivar una clase MPF
 
-1.  En **el Explorador de soluciones**, haga doble clic en el proyecto VSPackage y seleccione **agregar**, **clase**.
+1. En **el Explorador de soluciones**, haga doble clic en el proyecto VSPackage y seleccione **agregar**, **clase**.
 
-2.  Asegúrese de que **clase** está seleccionado en la lista de plantillas.
+2. Asegúrese de que **clase** está seleccionado en la lista de plantillas.
 
      Escriba un nombre adecuado para el archivo de clase y haga clic en **agregar**.
 
-3.  En el nuevo archivo de clase, agregue la siguiente `using` instrucciones.
+3. En el nuevo archivo de clase, agregue la siguiente `using` instrucciones.
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_4.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_4.vb)]
 
-4.  Modifique la clase que derive de la clase MPF deseada.
+4. Modifique la clase que derive de la clase MPF deseada.
 
-5.  Agregue un constructor de clase que tiene al menos los mismos parámetros que el constructor de clase base y pasar los parámetros del constructor en el constructor de clase base.
+5. Agregue un constructor de clase que tiene al menos los mismos parámetros que el constructor de clase base y pasar los parámetros del constructor en el constructor de clase base.
 
      Por ejemplo, el constructor para una clase derivada de la <xref:Microsoft.VisualStudio.Package.Source> clase podría ser similar al siguiente:
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_5.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_5.vb)]
 
-6.  Desde el **editar**, **IntelliSense** menú, seleccione **implementar clase abstracta** si la clase base tiene todos los métodos abstractos que deben implementarse.
+6. Desde el **editar**, **IntelliSense** menú, seleccione **implementar clase abstracta** si la clase base tiene todos los métodos abstractos que deben implementarse.
 
-7.  En caso contrario, coloque el símbolo de intercalación dentro de la clase y especifique el método que se invalide.
+7. En caso contrario, coloque el símbolo de intercalación dentro de la clase y especifique el método que se invalide.
 
      Por ejemplo, escriba `public override` para ver una lista de todos los métodos que se pueden invalidar en esa clase.
 

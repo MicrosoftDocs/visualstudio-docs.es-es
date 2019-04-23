@@ -1,5 +1,5 @@
 ---
-title: Filtrar Depurar XAML con el Diseñador de flujo de trabajo | Documentos de Microsoft
+title: Procedimiento Depurar XAML con el Diseñador de flujo de trabajo | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,14 +9,14 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 053ea0c65183f57bc80b87980b100f1a76067ea8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c480ead6749a7fe747eb7f2f1cc309c4e3c0a3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995617"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071049"
 ---
-# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Filtrar Depurar XAML con el Diseñador de flujo de trabajo
+# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Procedimiento Depurar XAML con el Diseñador de flujo de trabajo
 Los flujos de trabajo se definen en términos de código XAML. La representación de la interfaz de usuario de flujo de trabajo se compila sobre el árbol XAML que define el flujo de trabajo. La experiencia de depuración es similar a la depuración de flujos de trabajo en [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Por ejemplo, mientras se depura el código XAML, la ventanas de valores locales, de inspección y de subprocesos se comportan de la misma forma que la depuración de [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Además, la vista de pila de llamadas durante la depuración de código XAML es una vista jerárquica basada en líneas del flujo de ejecución para el flujo de trabajo.  
   
 > [!NOTE]
@@ -24,15 +24,15 @@ Los flujos de trabajo se definen en términos de código XAML. La representació
   
 ### <a name="to-debug-workflow-xaml"></a>Para depurar el XAML de flujo de trabajo  
   
-1.  Abra un flujo de trabajo o proyecto de actividades en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Abra un flujo de trabajo o proyecto de actividades en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Establecer un punto de interrupción en la actividad o actividades que desea depurar tal como se describe en [Cómo: Establecer puntos de interrupción en flujos de trabajo](../workflow-designer/how-to-set-breakpoints-in-workflows.md).  
+2. Establecer un punto de interrupción en la actividad o actividades que desea depurar tal como se describe en [Cómo: Establecer puntos de interrupción en flujos de trabajo](../workflow-designer/how-to-set-breakpoints-in-workflows.md).  
   
-3.  Haga clic en el archivo .xaml que contiene la definición de flujo de trabajo y seleccione **ver código**. Verá un punto de interrupción que se muestra en la misma línea que la declaración del elemento XAML de la actividad para la que establece el punto de interrupción en la vista de diseño.  
+3. Haga clic en el archivo .xaml que contiene la definición de flujo de trabajo y seleccione **ver código**. Verá un punto de interrupción que se muestra en la misma línea que la declaración del elemento XAML de la actividad para la que establece el punto de interrupción en la vista de diseño.  
   
-4.  Invocar el depurador, como se describe en [Cómo: Invocar el depurador de flujo de trabajo](../workflow-designer/how-to-invoke-the-workflow-debugger.md).  
+4. Invocar el depurador, como se describe en [Cómo: Invocar el depurador de flujo de trabajo](../workflow-designer/how-to-invoke-the-workflow-debugger.md).  
   
-5.  Cuando la ejecución del código llegue a uno de los puntos de interrupción, se resaltará el elemento XAML asociado a ese punto de interrupción. Para mover el siguiente punto de interrupción, use la **F10** o **F11** clave.  
+5. Cuando la ejecución del código llegue a uno de los puntos de interrupción, se resaltará el elemento XAML asociado a ese punto de interrupción. Para mover el siguiente punto de interrupción, use la **F10** o **F11** clave.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Establecer puntos de interrupción en flujos de trabajo](../workflow-designer/how-to-set-breakpoints-in-workflows.md)   

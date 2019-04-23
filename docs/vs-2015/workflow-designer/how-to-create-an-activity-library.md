@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear una biblioteca de actividades | Documentos de Microsoft
+title: Procedimiento Crear una biblioteca de actividades | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,38 +9,38 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41941893162f6463595652d39547e585176a539f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce02d639f6fcd3040566a2c279713c046f9c6ead
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068104"
 ---
-# <a name="how-to-create-an-activity-library"></a>Filtrar Crear una biblioteca de actividades
+# <a name="how-to-create-an-activity-library"></a>Procedimiento Crear una biblioteca de actividades
 Las actividades personalizadas se usan para modelar los procesos de negocio concretos de un flujo de trabajo. La plantilla Biblioteca de actividad de [!INCLUDE[vs2010](../includes/vs2010-md.md)] se ha proporcionado para que pueda crear tales actividades personalizadas visualmente mediante el uso de [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
   
 ### <a name="to-create-a-workflow-activity-library"></a>Para crear una biblioteca de actividades de flujo de trabajo  
   
-1.  Inicie [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+1. Inicie [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
-2.  En el **archivo** menú, elija **New**y, a continuación, seleccione **proyecto...** .  
+2. En el **archivo** menú, elija **New**y, a continuación, seleccione **proyecto...** .  
   
      Aparece el cuadro de diálogo **Nuevo proyecto** .  
   
-3.  En el **tipos de proyecto** panel, seleccione **flujo de trabajo** desde el **Visual C#** proyectos o **Visual Basic** agrupaciones en función de su preferencia de idioma.  
+3. En el **tipos de proyecto** panel, seleccione **flujo de trabajo** desde el **Visual C#** proyectos o **Visual Basic** agrupaciones en función de su preferencia de idioma.  
   
-4.  En el **plantillas** panel, seleccione **biblioteca de actividades**.  
+4. En el **plantillas** panel, seleccione **biblioteca de actividades**.  
   
-5.  En el **nombre** cuadro, escriba un nombre descriptivo para el proyecto para que sea fácil de identificar.  
+5. En el **nombre** cuadro, escriba un nombre descriptivo para el proyecto para que sea fácil de identificar.  
   
-6.  En el **ubicación** cuadro, escriba en el directorio en el que desea guardar el proyecto o haga clic en **examinar** para desplazarse hasta él.  
+6. En el **ubicación** cuadro, escriba en el directorio en el que desea guardar el proyecto o haga clic en **examinar** para desplazarse hasta él.  
   
-7.  En el **solución** cuadro, escriba un nombre descriptivo para la solución y luego haga clic en **Aceptar**.  
+7. En el **solución** cuadro, escriba un nombre descriptivo para la solución y luego haga clic en **Aceptar**.  
   
     > [!NOTE]
     >  Si desea agregar una aplicación de consola de flujo de trabajo a una solución existente, ábrala en [!INCLUDE[vs2010](../includes/vs2010-md.md)], haga clic en la solución de **el Explorador de soluciones**y seleccione **agregar**, a continuación,  **Nuevo proyecto...** Para abrir el **nuevo proyecto** cuadro de diálogo. Continúe de la forma descrita anteriormente en este procedimiento.  
   
-8.  La plantilla de proyecto crea una definición de actividad en XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] se abre y muestra el lienzo para su actividad personalizada.  
+8. La plantilla de proyecto crea una definición de actividad en XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] se abre y muestra el lienzo para su actividad personalizada.  
   
 9. Arrastre una actividad desde la **cuadro de herramientas** hasta la superficie de diseño para incluirla en su actividad personalizada.  
   

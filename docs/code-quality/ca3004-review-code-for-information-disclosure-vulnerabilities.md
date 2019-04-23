@@ -1,5 +1,5 @@
 ---
-title: 'CA3004: Revisión de código para las vulnerabilidades de divulgación de información'
+title: 'CA3004: Revisión de código en busca de vulnerabilidades de divulgación de información'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 82f763d9a6b1ec27975aa80054456a6bbbaeaa2b
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069033"
 ---
-# <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: Revisión de código para las vulnerabilidades de divulgación de información
+# <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: Revisión de código en busca de vulnerabilidades de divulgación de información
 
 |||
 |-|-|

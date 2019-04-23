@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649997"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066785"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos gráficos
 Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio para explorar los eventos Direct3D que se registraron mientras se presentaba un fotograma de su juego o aplicación.
@@ -49,7 +49,7 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
 
 ##### <a name="to-change-the-event-list-view-mode"></a>Cambio de la vista de la lista de eventos
 
--   En el **lista de eventos gráficos** ventana, encima de la lista de eventos, busque el **vista** lista desplegable y elija entre la **escala de tiempo** vista o la **detrabajodeGPU** vista.
+- En el **lista de eventos gráficos** ventana, encima de la lista de eventos, busque el **vista** lista desplegable y elija entre la **escala de tiempo** vista o la **detrabajodeGPU** vista.
 
 ### <a name="filtering-events"></a>Filtrado de eventos
  Puede utilizar el Cuadro de búsqueda, situado en la esquina superior derecha de la ventana **Lista de eventos gráficos** , para filtrar la lista de eventos de modo que incluya solo los eventos cuyo nombre contenga determinadas palabras clave. Puede especificar una palabra clave, como `Vertex`(como se muestra en la ilustración anterior), o varias palabras clave separadas por un punto y coma, como `Draw;Primitive`, lo que mostrará eventos que tengan tanto `Draw` como `Primitive` en sus nombres. Las búsquedas distinguen los espacios (por ejemplo, `VSSet` y `VS Set` son búsquedas diferentes, de modo que debe efectuarlas con cuidado).

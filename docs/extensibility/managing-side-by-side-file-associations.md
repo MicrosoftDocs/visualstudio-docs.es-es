@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067071"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Administrar asociaciones de archivos en paralelo
 
@@ -51,7 +51,7 @@ Si desea que varios VSPackages en paralelo para usar la misma extensión, debe e
 
   **Filas de tabla CustomAction que determinan la versión más reciente de Visual Studio**
 
-  |Acción|Tipo|Origen|Destino|
+  |Acción|Tipo|Source|Destino|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -81,9 +81,9 @@ Desinstalación de un VSPackage que escribe entradas del registro para las asoci
 
 - Indique al usuario que ejecute una reparación de la versión del VSPackage que el usuario quiere ser dueño de la asociación de archivo.
 
--   Proporcionar un programa ejecutable independiente que se vuelve a escribir las entradas del registro correspondientes.
+- Proporcionar un programa ejecutable independiente que se vuelve a escribir las entradas del registro correspondientes.
 
--   Proporcione un configuración opciones página o cuadro de diálogo que permite a los usuarios elegir las asociaciones de archivo y reclamar asociaciones perdidas. Indique a los usuarios para ejecutarlo después de la desinstalación.
+- Proporcione un configuración opciones página o cuadro de diálogo que permite a los usuarios elegir las asociaciones de archivo y reclamar asociaciones perdidas. Indique a los usuarios para ejecutarlo después de la desinstalación.
 
 ## <a name="see-also"></a>Vea también
 

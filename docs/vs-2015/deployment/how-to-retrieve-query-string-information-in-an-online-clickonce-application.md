@@ -1,5 +1,5 @@
 ---
-title: Filtrar Recuperar información de la cadena de consulta en una aplicación ClickOnce en línea | Documentos de Microsoft
+title: Procedimiento Recuperar información de la cadena de consulta en una aplicación ClickOnce en línea | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,14 +16,14 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999069"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069541"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Filtrar Recuperar información de la cadena de consulta de una aplicación ClickOnce en línea
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procedimiento Recuperar información de la cadena de consulta de una aplicación ClickOnce en línea
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La *cadena de consulta* es la parte de una dirección URL que empieza con un signo de interrogación de cierre (?) y que contiene información arbitraria con el formato *nombre=valor*. Supongamos que tiene una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] denominada `WindowsApp1` que hospeda en `servername`, y quiere pasar un valor para la variable `username` cuando se inicia la aplicación. La dirección URL podría tener el aspecto siguiente:  
@@ -49,26 +49,26 @@ La *cadena de consulta* es la parte de una dirección URL que empieza con un sig
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Para obtener información de la cadena de consulta de una aplicación ClickOnce  
   
-1.  Coloque el código siguiente en su proyecto. Para que este código funcione, deberá tener una referencia a System.Web y agregar instrucciones `using` o `Imports` para System.Web, System.Collections.Specialized y System.Deployment.Application.  
+1. Coloque el código siguiente en su proyecto. Para que este código funcione, deberá tener una referencia a System.Web y agregar instrucciones `using` o `Imports` para System.Web, System.Collections.Specialized y System.Deployment.Application.  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  Llame a la función definida previamente para recuperar una propiedad <xref:System.Collections.DictionaryBase.Dictionary%2A> de los parámetros de cadena de consulta, indexados por nombre.  
+2. Llame a la función definida previamente para recuperar una propiedad <xref:System.Collections.DictionaryBase.Dictionary%2A> de los parámetros de cadena de consulta, indexados por nombre.  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Para habilitar que se pase una cadena de consulta en una aplicación ClickOnce con MageUI.exe  
   
-1.  Abra el símbolo del sistema de .NET y escriba:  
+1. Abra el símbolo del sistema de .NET y escriba:  
   
     ```  
     MageUI  
     ```  
   
-2.  En el menú **Archivo** , seleccione **Abrir**y abra el manifiesto de implementación para su aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , que es el archivo que acaba con la extensión `.application` .  
+2. En el menú **Archivo** , seleccione **Abrir**y abra el manifiesto de implementación para su aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , que es el archivo que acaba con la extensión `.application` .  
   
-3.  Seleccione el panel **Opciones de implementación** en la ventana de navegación de la izquierda y active la casilla **Permitir que se pasen los parámetros de la dirección URL a la aplicación** .  
+3. Seleccione el panel **Opciones de implementación** en la ventana de navegación de la izquierda y active la casilla **Permitir que se pasen los parámetros de la dirección URL a la aplicación** .  
   
-4.  En el menú **Archivo** , seleccione **Guardar**.  
+4. En el menú **Archivo** , seleccione **Guardar**.  
   
 > [!NOTE]
 >  También puede habilitar que se pase una cadena de consulta en [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Active la casilla **Permitir que se pasen los parámetros de la dirección URL a la aplicación** . Para ello, abra **Propiedades del proyecto**, seleccione la pestaña **Publicar** , haga clic en el botón **Opciones** y, después, seleccione **Manifiestos**.  

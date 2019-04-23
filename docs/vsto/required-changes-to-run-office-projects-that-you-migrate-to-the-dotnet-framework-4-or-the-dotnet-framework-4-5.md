@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f4add2a01a9fd26fe5479bbf6ba54f25e8b2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f24b86f51d658ea2f228f1e72d18394fcba4b47b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072824"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Cambios necesarios para ejecutar proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5
   Si se cambia la plataforma de destino de un proyecto de Office a la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior desde una versión anterior de .NET Framework, debe realizar las siguientes tareas para asegurarse de que puede ejecutar la solución en el equipo de desarrollo y en los equipos del usuario final:
@@ -39,14 +39,14 @@ ms.locfileid: "56625704"
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>Para quitar SecurityTransparentAttribute
 
-1.  Con el proyecto abierto en Visual Studio, abra el **Explorador de soluciones**.
+1. Con el proyecto abierto en Visual Studio, abra el **Explorador de soluciones**.
 
-2.  En el nodo **Propiedades** (en C#) o **Mi proyecto** (en Visual Basic), haga doble clic en el archivo de código AssemblyInfo para abrirlo en el editor de código.
+2. En el nodo **Propiedades** (en C#) o **Mi proyecto** (en Visual Basic), haga doble clic en el archivo de código AssemblyInfo para abrirlo en el editor de código.
 
     > [!NOTE]
     >  Para ver el archivo de código AssemblyInfo en los proyectos de Visual Basic, haga clic en el botón **Mostrar todos los archivos** del **Explorador de soluciones** .
 
-3.  Encuentre <xref:System.Security.SecurityTransparentAttribute> y quítelo del archivo o márquelo como comentario.
+3. Busque <xref:System.Security.SecurityTransparentAttribute> y quítelo del archivo o márquelo como comentario.
 
     ```vb
     <Assembly: SecurityTransparent()>

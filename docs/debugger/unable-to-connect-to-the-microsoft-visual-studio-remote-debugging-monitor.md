@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e5c5f6d73f3606813fd9a1954cdc10bb562baf34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070269"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio
 Este mensaje puede producirse porque el monitor de depuración remota no está correctamente configurado en el equipo remoto o el equipo remoto es accesible debido a problemas de red o la presencia de un firewall.
@@ -130,16 +130,16 @@ El depurador remoto, de forma predeterminada, sólo aceptará las conexiones del
 
 Puede resolver este problema de una de las siguientes formas:
 
--   Agregue el usuario de Visual Studio a los permisos del depurador remoto (en la ventana del depurador remoto, elija **Herramientas > permisos**).
+- Agregue el usuario de Visual Studio a los permisos del depurador remoto (en la ventana del depurador remoto, elija **Herramientas > permisos**).
 
--   En el equipo remoto, reinicie al depurador remoto con la misma cuenta de usuario y la contraseña que se usa en el equipo de Visual Studio.
+- En el equipo remoto, reinicie al depurador remoto con la misma cuenta de usuario y la contraseña que se usa en el equipo de Visual Studio.
 
     > [!NOTE]
     > Si se ejecuta el depurador remoto en un servidor remoto, haga clic en la aplicación del depurador remoto y elija **ejecutar como administrador** (o bien, puede ejecutar el depurador remoto como servicio). Si no se está ejecutando en un servidor remoto, simplemente inícielo con normalidad.
 
--   Puede iniciar el depurador remoto desde la línea de comandos con el parámetro **/allow \<username>**: `msvsmon /allow <username@computer>`.
+- Puede iniciar el depurador remoto desde la línea de comandos con el parámetro **/allow \<username>**: `msvsmon /allow <username@computer>`.
 
--   Como alternativa, puede permitir que cualquier usuario al realizar la depuración remota. En la ventana del depurador remoto, vaya al cuadro de diálogo **Herramientas > Opciones**. Al seleccionar   **Sin autenticación**, podrá activar **Permitir que cualquier usuario depure**. Sin embargo, debe probar esta opción solo si el resto de opciones fallen o si se encuentra en una red privada.
+- Como alternativa, puede permitir que cualquier usuario al realizar la depuración remota. En la ventana del depurador remoto, vaya al cuadro de diálogo **Herramientas > Opciones**. Al seleccionar   **Sin autenticación**, podrá activar **Permitir que cualquier usuario depure**. Sin embargo, debe probar esta opción solo si el resto de opciones fallen o si se encuentra en una red privada.
 
 ### <a name="firewall"></a> Falta de permisos para conexiones entrantes al depurador remoto por parte del firewall del equipo remoto
  El firewall del equipo de Visual Studio y el firewall del equipo remoto deben configurarse para permitir la comunicación entre Visual Studio y el depurador remoto. Para obtener información sobre los puertos que usa el depurador remoto, vea [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). Para obtener información sobre de cómo configurar el firewall de Windows, vea [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).

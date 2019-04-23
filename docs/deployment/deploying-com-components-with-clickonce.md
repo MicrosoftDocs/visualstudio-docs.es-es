@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13df8f9a4a360c48d25d46ba3cddb1b42d5150a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069125"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Implementar componentes COM con ClickOnce
 Implementación de componentes COM heredados ha sido tradicionalmente una tarea difícil. Los componentes deben estar registrados globalmente y, por tanto, pueden provocar efectos secundarios no deseados entre aplicaciones que se superponen. Por lo general esta situación no es un problema en las aplicaciones de .NET Framework porque los componentes están completamente aislados para una aplicación o son compatibles en paralelo. Visual Studio permite implementar los componentes COM aislados en Windows XP o en un sistema operativo posterior.
@@ -46,9 +46,9 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
 
  Hay dos maneras que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementa los componentes COM:
 
--   Usar al programa previo para implementar los componentes COM; Esto funciona en todas las plataformas compatibles.
+- Usar al programa previo para implementar los componentes COM; Esto funciona en todas las plataformas compatibles.
 
--   Utilice la implementación de aislamiento (también conocido como COM sin registro) de componente nativo. Sin embargo, esto solo funcionará en un Windows XP o en un sistema operativo posterior.
+- Utilice la implementación de aislamiento (también conocido como COM sin registro) de componente nativo. Sin embargo, esto solo funcionará en un Windows XP o en un sistema operativo posterior.
 
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Ejemplo de aislamiento e implementación de un componente COM sencillo
  Para demostrar la implementación de componentes COM sin registro, en este ejemplo creará una aplicación basada en Windows en Visual Basic que hace referencia a un componente COM nativo aislado creado con Visual Basic 6.0 e implementarla mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
@@ -57,16 +57,16 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
 
 ##### <a name="to-create-a-native-com-component"></a>Para crear un componente COM nativo
 
-1.  Con Visual Basic 6.0, desde el **archivo** menú, haga clic en **New**, a continuación, **proyecto**.
+1. Con Visual Basic 6.0, desde el **archivo** menú, haga clic en **New**, a continuación, **proyecto**.
 
-2.  En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione un **DLL ActiveX** proyecto. En el cuadro **Nombre** , escriba `VB6Hello`.
+2. En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione un **DLL ActiveX** proyecto. En el cuadro **Nombre**, escriba `VB6Hello`.
 
     > [!NOTE]
     >  Solo los tipos de proyecto DLL de ActiveX y controles ActiveX son compatibles con COM sin registro; No se admiten los tipos de proyecto EXE de ActiveX y documento ActiveX.
 
-3.  En **el Explorador de soluciones**, haga doble clic en **Class1.vb** para abrir el editor de texto.
+3. En **el Explorador de soluciones**, haga doble clic en **Class1.vb** para abrir el editor de texto.
 
-4.  En Class1.vb, agregue el código siguiente después del código generado para el `New` método:
+4. En Class1.vb, agregue el código siguiente después del código generado para el `New` método:
 
     ```vb
     Public Sub SayHello()
@@ -74,7 +74,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
     End Sub
     ```
 
-5.  Genere el componente. Desde el **compilar** menú, haga clic en **compilar solución**.
+5. Genere el componente. Desde el **compilar** menú, haga clic en **compilar solución**.
 
 > [!NOTE]
 >  COM sin registro admite solo los archivos DLL y COM controla los tipos de proyecto. No se puede usar a archivos exe con COM sin registro.
@@ -85,7 +85,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
 
 1. Con Visual Basic, desde el **archivo** menú, haga clic en **New**, a continuación, **proyecto**.
 
-2. En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione **aplicación Windows**. En el cuadro **Nombre** , escriba `RegFreeComDemo`.
+2. En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione **aplicación Windows**. En el cuadro **Nombre**, escriba `RegFreeComDemo`.
 
 3. En **el Explorador de soluciones**, haga clic en el **mostrar todos los archivos** botón para mostrar las referencias del proyecto.
 
@@ -163,7 +163,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
 
 - El componente administra un dispositivo físico o virtual para el sistema, por ejemplo, un controlador de dispositivo para una cola de impresión.
 
-- El componente es un acceso a datos redistribuible. Aplicaciones de datos generalmente requieren un acceso de datos independiente redistribuible instalarse antes de poder ejecutarlos. No debe intentar aislar componentes como el Control de datos de Microsoft ADO, OLE DB de Microsoft o Microsoft Data Access Components (MDAC). En su lugar, si la aplicación utiliza MDAC o SQL Server Express, debe establecerlos como requisitos previos; consulte [Cómo: instalar los requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
+- El componente es un acceso a datos redistribuible. Aplicaciones de datos generalmente requieren un acceso de datos independiente redistribuible instalarse antes de poder ejecutarlos. No debe intentar aislar componentes como el Control de datos de Microsoft ADO, OLE DB de Microsoft o Microsoft Data Access Components (MDAC). En su lugar, si la aplicación utiliza MDAC o SQL Server Express, debe establecerlos como requisitos previos; vea [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
   En algunos casos, es posible para el desarrollador del componente cambiar el diseño de COM sin registro. Si esto no es posible, puede generar y publicar aplicaciones que dependen de ellos a través del esquema del registro estándar mediante el programa previo. Para obtener más información, consulte [crear paquetes de programa previo](../deployment/creating-bootstrapper-packages.md).
 

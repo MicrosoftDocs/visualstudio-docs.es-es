@@ -1,5 +1,5 @@
 ---
-title: Filtrar Aplicar tareas de edición en modo de interrupción con Editar y continuar | Microsoft Docs
+title: Procedimiento Aplicar tareas de edición en modo de interrupción con Editar y continuar | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,60 +24,60 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd247cd50566130504110bd37c4b87f9e4783ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e26b293a5ac7326ca8f82250ec3d0da9fe96371c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069931"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Filtrar Aplicar tareas de edición en modo de interrupción con Editar y continuar
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Procedimiento Aplicar tareas de edición en modo de interrupción con Editar y continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede utilizar la opción Editar y continuar para modificar el código en modo de interrupción y, posteriormente, continuar sin detener ni reiniciar la ejecución.  
   
  La opción Editar y continuar no se encuentra disponible en los siguientes escenarios de depuración:  
   
--   Depuración en modo mixto (nativa o administrada).  
+- Depuración en modo mixto (nativa o administrada).  
   
--   Depuración de SQL.  
+- Depuración de SQL.  
   
--   Depuración de un volcado de Dr. Watson.  
+- Depuración de un volcado de Dr. Watson.  
   
--   Edición de código tras una excepción no controlada, cuando no se ha seleccionado la opción **Desenredar la pila de llamadas de las excepciones no controladas** .  
+- Edición de código tras una excepción no controlada, cuando no se ha seleccionado la opción **Desenredar la pila de llamadas de las excepciones no controladas** .  
   
--   Depuración de una aplicación incrustada en tiempo de ejecución.  
+- Depuración de una aplicación incrustada en tiempo de ejecución.  
   
--   Depurar una aplicación con **adjuntar a** en lugar de ejecutar la aplicación con **iniciar** desde el **depurar** menú.  
+- Depurar una aplicación con **adjuntar a** en lugar de ejecutar la aplicación con **iniciar** desde el **depurar** menú.  
   
--   Depuración de código optimizado.  
+- Depuración de código optimizado.  
   
--   Depuración de código administrado cuando el destino es una aplicación de 64 bits. Si desea utilizar la opción Editar y continuar, deberá establecer el destino en x86. (_Proyecto_**propiedades**, **compilar** ficha, **compilador avanzada** configuración.).  
+- Depuración de código administrado cuando el destino es una aplicación de 64 bits. Si desea utilizar la opción Editar y continuar, deberá establecer el destino en x86. (_Proyecto_**propiedades**, **compilar** ficha, **compilador avanzada** configuración.).  
   
--   Depuración de una versión anterior del código cuando no se haya podido generar una nueva versión debido a errores de compilación.  
+- Depuración de una versión anterior del código cuando no se haya podido generar una nueva versión debido a errores de compilación.  
   
 ### <a name="to-edit-code-in-break-mode"></a>Para editar código en modo de interrupción  
   
-1.  Entre en el modo de interrupción siguiendo uno de estos pasos:  
+1. Entre en el modo de interrupción siguiendo uno de estos pasos:  
   
-    -   Establezca un punto de interrupción en el código y, a continuación, elija **Iniciar depuración** en el menú **Depurar**. Luego, espere a que la aplicación llegue al punto de interrupción.  
-  
-         -O bien-  
-  
-    -   Inicie la depuración y, a continuación, seleccione **Interrumpir todo** en el menú **Depurar**.  
+    - Establezca un punto de interrupción en el código y, a continuación, elija **Iniciar depuración** en el menú **Depurar**. Luego, espere a que la aplicación llegue al punto de interrupción.  
   
          -O bien-  
   
-    -   Si se produce una excepción, elija **Habilitar edición** en el**Asistente de excepciones**.  
+    - Inicie la depuración y, a continuación, seleccione **Interrumpir todo** en el menú **Depurar**.  
   
-2.  Realice todos los cambios que desee en el código, siempre y cuando sean válidos.  
+         -O bien-  
+  
+    - Si se produce una excepción, elija **Habilitar edición** en el**Asistente de excepciones**.  
+  
+2. Realice todos los cambios que desee en el código, siempre y cuando sean válidos.  
   
      Para obtener más información, consulte [ediciones no compatibles en Visual Basic editar y continuar](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
   
     > [!NOTE]
     >  Si intenta realizar un cambio en el código no permitido por Editar y continuar, el cambio quedará subrayado con una línea ondulada de color púrpura y aparecerá una tarea en la Lista de tareas. No podrá reanudar la ejecución del código hasta que deshaga este cambio no válido en el código.  
   
-3.  En el menú **Depurar**, haga clic en **Continuar** para reanudar la ejecución.  
+3. En el menú **Depurar**, haga clic en **Continuar** para reanudar la ejecución.  
   
      El código se ejecutará con los cambios aplicados incorporados al proyecto.  
   

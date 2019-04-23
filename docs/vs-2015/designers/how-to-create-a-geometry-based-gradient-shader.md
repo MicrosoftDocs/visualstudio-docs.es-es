@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un sombreador de degradado basado en geometría | Microsoft Docs
+title: Procedimiento Crear un sombreador de degradado basado en geometría | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,27 +9,27 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071725"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Cómo: Crear un sombreador de gradiente basado en geometría
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedimiento Crear un sombreador de gradiente basado en geometría
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de degradado basado en geometría. Este sombreador escala un valor de color RGB constante según el alto de cada punto de un objeto en el espacio global.  
   
  Este documento muestra estas actividades:  
   
--   Agregar nodos a un gráfico de sombreador  
+- Agregar nodos a un gráfico de sombreador  
   
--   Establecer las propiedades del nodo  
+- Establecer las propiedades del nodo  
   
--   Desconectar nodos  
+- Desconectar nodos  
   
--   Conectar nodos  
+- Conectar nodos  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>Crear un sombreador de degradado basado en geometría  
  Puede implementar un sombreador basado en geometría mediante la incorporación de la posición del píxel en el sombreador. En los lenguajes de sombreado, un píxel contiene más información que solo el color y la ubicación en una pantalla 2D. Un píxel, conocido como un *fragmento* en algunos sistemas, es una colección de valores que describen la superficie que corresponde a un píxel. El sombreador que se describe en este documento usa el alto de cada píxel de un objeto 3D en el espacio global para afectar al color de salida final del fragmento.  
@@ -75,6 +75,6 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
  [Cómo: Aplicar a un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)   
  [Cómo: Modelo terreno en 3D](../designers/how-to-model-3-d-terrain.md)   
- [Cómo: Crear un sombreador de textura de escala de grises](../designers/how-to-create-a-grayscale-texture-shader.md)   
+ [Cómo: Crear a un sombreador de textura de escala de grises](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Diseñador de sombras](../designers/shader-designer.md)   
  [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

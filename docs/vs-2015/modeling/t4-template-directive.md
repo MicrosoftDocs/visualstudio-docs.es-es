@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070841"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,8 @@ Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 ## <a name="debug-attribute"></a>debug (atributo)  
  Ejemplo:  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -70,7 +71,8 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>hostspecific (atributo)  
  Ejemplo:  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
@@ -144,7 +146,8 @@ Squares of numbers:
  Por lo general, se especifica otra plantilla preprocesada como la clase base. La plantilla base proporciona bloques de texto comunes, que pueden intercalarse con texto en las plantillas derivadas. Puede utilizar bloques de característica de clase `<#+ ... #>` para definir métodos que contienen fragmentos de texto. Por ejemplo, puede colocar el marco del texto de salida en la plantilla base, proporcionando métodos virtuales que se pueden invalidar en plantillas derivadas:  
   
  Plantilla de texto (preprocesada) en tiempo de ejecución BaseTemplate.tt:  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -163,7 +166,8 @@ This is the common footer.
 ```  
   
  Plantilla de texto (preprocesada) en tiempo de ejecución DerivedTemplate1.tt:  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -188,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  Código de aplicación para invocar a DerivedTemplate1:  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  Resultado que se obtiene:  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  

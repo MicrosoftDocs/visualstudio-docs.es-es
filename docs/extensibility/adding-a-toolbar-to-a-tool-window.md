@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b2cfcc4662bff6b404e331a4329edaefd245df0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 646384f43a6196bca802998b709285c247e4c378
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069046"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Agregar una barra de herramientas a una ventana de herramientas
 Este tutorial muestra cómo agregar una barra de herramientas a una ventana de herramientas.
@@ -32,16 +32,16 @@ Este tutorial muestra cómo agregar una barra de herramientas a una ventana de h
 
 ## <a name="create-a-toolbar-for-a-tool-window"></a>Crear una barra de herramientas para una ventana de herramientas
 
-1.  Cree un proyecto VSIX denominado `TWToolbar` que tiene un comando de menú denominado **TWTestCommand** y una ventana de herramientas denominado **TestToolWindow**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md) y [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md). Deberá agregar la plantilla de elemento de comando antes de agregar la plantilla de la ventana de herramienta.
+1. Cree un proyecto VSIX denominado `TWToolbar` que tiene un comando de menú denominado **TWTestCommand** y una ventana de herramientas denominado **TestToolWindow**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md) y [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md). Deberá agregar la plantilla de elemento de comando antes de agregar la plantilla de la ventana de herramienta.
 
-2.  En *TWTestCommandPackage.vsct*, busque la sección de símbolos. En el nodo de GuidSymbol denominado guidTWTestCommandPackageCmdSet declarar una barra de herramientas y un grupo de la barra de herramientas, como se indica a continuación.
+2. En *TWTestCommandPackage.vsct*, busque la sección de símbolos. En el nodo de GuidSymbol denominado guidTWTestCommandPackageCmdSet declarar una barra de herramientas y un grupo de la barra de herramientas, como se indica a continuación.
 
     ```xml
     <IDSymbol name="TWToolbar" value="0x1000" />
     <IDSymbol name="TWToolbarGroup" value="0x1050" />
     ```
 
-3.  En la parte superior de la `Commands` , debe crearse un `Menus` sección. Agregar un `Menu` elemento para definir la barra de herramientas.
+3. En la parte superior de la `Commands` , debe crearse un `Menus` sección. Agregar un `Menu` elemento para definir la barra de herramientas.
 
     ```xml
     <Menus>
@@ -57,7 +57,7 @@ Este tutorial muestra cómo agregar una barra de herramientas a una ventana de h
 
      No se puede anidar las barras de herramientas, como los submenús. Por lo tanto, no debe asignar a un elemento primario. Además, no tienes que establecer una prioridad, porque el usuario puede mover las barras de herramientas. Normalmente, la ubicación inicial de una barra de herramientas se define mediante programación, pero se conservan los cambios posteriores por el usuario.
 
-4.  En la sección grupos, definir un grupo que contenga los comandos de la barra de herramientas.
+4. En la sección grupos, definir un grupo que contenga los comandos de la barra de herramientas.
 
     ```xml
 
@@ -66,7 +66,7 @@ Este tutorial muestra cómo agregar una barra de herramientas a una ventana de h
     </Group>
     ```
 
-5.  En la sección de botones, cambie al elemento primario del elemento Button existente para el grupo de la barra de herramientas para que se mostrará la barra de herramientas.
+5. En la sección de botones, cambie al elemento primario del elemento Button existente para el grupo de la barra de herramientas para que se mostrará la barra de herramientas.
 
     ```xml
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">
@@ -84,20 +84,20 @@ Este tutorial muestra cómo agregar una barra de herramientas a una ventana de h
 
 ## <a name="add-the-toolbar-to-the-tool-window"></a>Agregar la barra de herramientas a la ventana de herramientas
 
-1.  En *TWTestCommandPackageGuids.cs* agregue las líneas siguientes.
+1. En *TWTestCommandPackageGuids.cs* agregue las líneas siguientes.
 
     ```csharp
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
     public const int TWToolbar = 0x1000;
     ```
 
-2.  En *TestToolWindow.cs* agregue la siguiente instrucción using.
+2. En *TestToolWindow.cs* agregue la siguiente instrucción using.
 
     ```csharp
     using System.ComponentModel.Design;
     ```
 
-3.  En el constructor TestToolWindow, agregue la siguiente línea.
+3. En el constructor TestToolWindow, agregue la siguiente línea.
 
     ```csharp
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);
@@ -105,13 +105,13 @@ Este tutorial muestra cómo agregar una barra de herramientas a una ventana de h
 
 ## <a name="test-the-toolbar-in-the-tool-window"></a>Pruebe la barra de herramientas en la ventana de herramientas
 
-1.  Compile la solución y comience la depuración. Debería aparecer la instancia experimental de Visual Studio.
+1. Compile la solución y comience la depuración. Debería aparecer la instancia experimental de Visual Studio.
 
-2.  En el **vista / Windows otras** menú, haga clic en **prueba ToolWindow** para mostrar la ventana de herramientas.
+2. En el **vista / Windows otras** menú, haga clic en **prueba ToolWindow** para mostrar la ventana de herramientas.
 
      Debería ver una barra de herramientas (parece que el icono predeterminado) en la parte superior izquierda de la ventana de herramientas, justo debajo del título.
 
-3.  En la barra de herramientas, haga clic en el icono para mostrar el mensaje **TWTestCommandPackage dentro de TWToolbar.TWTestCommand.MenuItemCallback()**.
+3. En la barra de herramientas, haga clic en el icono para mostrar el mensaje **TWTestCommandPackage dentro de TWToolbar.TWTestCommand.MenuItemCallback()**.
 
 ## <a name="see-also"></a>Vea también
 - [Agregar una barra de herramientas](../extensibility/adding-a-toolbar.md)

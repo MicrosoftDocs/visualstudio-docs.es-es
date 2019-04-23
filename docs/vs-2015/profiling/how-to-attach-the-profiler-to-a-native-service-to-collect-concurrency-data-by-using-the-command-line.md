@@ -9,12 +9,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a33f43f7c12f45cfbe469b618385c64158547d71
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5b9c46631fcd3ada0946748b515366b4f1b3362a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654352"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070568"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Adjuntar al Profiler a un servicio nativo para recopilar datos de simultaneidad mediante la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
 
--   Los pares de opciones de la tabla siguiente inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
+- Los pares de opciones de la tabla siguiente inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
 
     |Opción|Descripción|  
     |------------|-----------------|  
@@ -79,10 +79,10 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
 
-1.  Desasocie el generador de perfiles de la aplicación de destino deteniendo el servicio o escribiendo el siguiente comando en un símbolo del sistema:  
+1. Desasocie el generador de perfiles de la aplicación de destino deteniendo el servicio o escribiendo el siguiente comando en un símbolo del sistema:  
 
      Escriba **VSPerfCmd /detach**  
 
-2.  Apague el generador de perfiles escribiendo el siguiente comando en un símbolo del sistema:  
+2. Apague el generador de perfiles escribiendo el siguiente comando en un símbolo del sistema:  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)

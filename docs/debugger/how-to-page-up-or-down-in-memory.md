@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: retroceder o avanzar en la memoria | Microsoft Docs'
+title: Procedimiento Retroceder o avanzar en la memoria | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b554a197afe2deef3619551af2d45d4a80708afe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715367"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072753"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Cómo: Retroceder o avanzar en la memoria
+# <a name="how-to-page-up-or-down-in-memory"></a>Procedimiento Retroceso o avance en la memoria
 
 Mientras consulta el contenido de la memoria en una ventana **Memoria** o en la ventana **Desensamblado**, puede utilizar la barra de desplazamiento vertical para moverse hacia arriba o abajo en el espacio de memoria.
 
@@ -44,9 +44,9 @@ Mientras consulta el contenido de la memoria en una ventana **Memoria** o en la 
 
 #### <a name="to-move-up-or-down-one-instruction"></a>Para desplazarse una instrucción máquina arriba o abajo
 
--   Haga clic en la flecha situada en la parte superior o inferior de la barra de desplazamiento vertical.
+- Haga clic en la flecha situada en la parte superior o inferior de la barra de desplazamiento vertical.
 
 ## <a name="see-also"></a>Vea también
 - [Ventana Memoria](../debugger/memory-windows.md)
-- [Cómo: Usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)
+- [Cómo: Uso de la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)
 - [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072643"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opciones, editor de texto, C/C++, avanzado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,19 +73,19 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
   
  Puede establecerlo con una suma de alguna de las siguientes opciones:  
   
--   0 - Ninguno  
+- 0 - Ninguno  
   
--   1 - General  
+- 1 - General  
   
--   2 - Inactivo  
+- 2 - Inactivo  
   
--   4 - WorkItem  
+- 4 - WorkItem  
   
--   8 - IntelliSense  
+- 8 - IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>Ubicación de recursos de reserva  
  La ubicación de recursos de reserva es el lugar donde se colocan los archivos auxiliares de SDF e IntelliSense (por ejemplo, iPCH) cuando la ubicación principal (mismo directorio que la solución) no se usa. Esta situación puede producirse si el usuario no tiene permisos para escribir en el directorio de la solución o este se encuentra en un dispositivo lento. La ubicación de recursos de reserva predeterminada está en el directorio temporal del usuario.  

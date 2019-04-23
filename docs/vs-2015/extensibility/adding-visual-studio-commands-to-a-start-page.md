@@ -11,12 +11,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 34336b93e8739bcba807aca72b26a47b581b7413
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072446"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Adición de comandos de Visual Studio a una página de inicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
   
 #### <a name="to-call-a-command-from-an-assembly"></a>Para llamar a un comando desde un ensamblado  
   
-1.  En la solución, agregue una referencia al ensamblado.  
+1. En la solución, agregue una referencia al ensamblado.  
   
-2.  En la parte superior del archivo StartPage.xaml, agregue una directiva de espacio de nombres para el ensamblado, tal como se muestra en el ejemplo siguiente.  
+2. En la parte superior del archivo StartPage.xaml, agregue una directiva de espacio de nombres para el ensamblado, tal como se muestra en el ejemplo siguiente.  
   
     ```xml  
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
     ```  
   
-3.  Invoque el comando estableciendo el `Command` propiedad de un objeto XAML, como se muestra en el ejemplo siguiente.  
+3. Invoque el comando estableciendo el `Command` propiedad de un objeto XAML, como se muestra en el ejemplo siguiente.  
   
      Xaml  
   

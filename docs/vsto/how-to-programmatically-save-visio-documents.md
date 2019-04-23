@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5542e1ddde595bd22b34d339fd422e003a0ef0e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 08303b672fe45db4b6ccfcb5a64be5115e660186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618606"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069445"
 ---
-# <a name="how-to-programmatically-save-visio-documents"></a>Filtrar Guardar documentos de Visio mediante programación
+# <a name="how-to-programmatically-save-visio-documents"></a>Procedimiento Guardar documentos de Visio mediante programación
   Hay varias formas de guardar documentos de Microsoft Office Visio:
 
 - Guardar cambios en un documento existente.
@@ -35,7 +35,7 @@ ms.locfileid: "56618606"
 
 ### <a name="to-save-a-document"></a>Para guardar un documento
 
--   Llame al método `Microsoft.Office.Interop.Visio.Document.Save` de la clase `Microsoft.Office.Tools.Visio.Document` de un documento que ya se ha guardado.
+- Llame al método `Microsoft.Office.Interop.Visio.Document.Save` de la clase `Microsoft.Office.Tools.Visio.Document` de un documento que ya se ha guardado.
 
      Para usar este ejemplo de código, ejecútelo desde la clase `ThisAddIn` del proyecto.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56618606"
 
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>Para guardar el documento de Visio activo con un nombre nuevo
 
--   Llame al método `Microsoft.Office.Interop.Visio.Document.SaveAs` del `Microsoft.Office.Tools.Visio.Document` que desea guardar, mediante una ruta completa que incluya un nombre de archivo. Si ya existe un archivo con ese nombre en esa carpeta, se sobrescribe en modo silencioso.
+- Llame al método `Microsoft.Office.Interop.Visio.Document.SaveAs` del `Microsoft.Office.Tools.Visio.Document` que desea guardar, mediante una ruta completa que incluya un nombre de archivo. Si ya existe un archivo con ese nombre en esa carpeta, se sobrescribe en modo silencioso.
 
      Para usar este ejemplo de código, ejecútelo desde la clase `ThisAddIn` del proyecto.
 
@@ -62,7 +62,7 @@ ms.locfileid: "56618606"
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Para guardar un documento con un nuevo nombre y argumentos especificados
 
--   Llame al método `Microsoft.Office.Interop.Visio.Document.SaveAsEx` del `Microsoft.Office.Tools.Visio.Document` que desea guardar, mediante una ruta completa que incluya un nombre de archivo. Si ya existe un archivo con ese nombre en esa carpeta, se generará una excepción.
+- Llame al método `Microsoft.Office.Interop.Visio.Document.SaveAsEx` del `Microsoft.Office.Tools.Visio.Document` que desea guardar, mediante una ruta completa que incluya un nombre de archivo. Si ya existe un archivo con ese nombre en esa carpeta, se generará una excepción.
 
      En el ejemplo de código siguiente se guarda el documento activo con un nuevo nombre, se marca el documento como de solo lectura y se muestra el documento en la lista de documentos usados más recientemente. Para usar este ejemplo de código, ejecútelo desde la clase `ThisAddIn` del proyecto.
 
@@ -72,7 +72,7 @@ ms.locfileid: "56618606"
 ## <a name="compile-the-code"></a>Compilar el código
  Para este ejemplo de código se necesita lo siguiente:
 
--   Para guardar un documento que tiene un nuevo nombre, un directorio denominado `Test` debe estar ubicado en el *Mis documentos* carpeta (para Windows XP y versiones anteriores) o la *documentos* carpeta (para Windows Vista).
+- Para guardar un documento que tiene un nuevo nombre, un directorio denominado `Test` debe estar ubicado en el *Mis documentos* carpeta (para Windows XP y versiones anteriores) o la *documentos* carpeta (para Windows Vista).
 
 ## <a name="see-also"></a>Vea también
 - [Soluciones de Visio](../vsto/visio-solutions.md)

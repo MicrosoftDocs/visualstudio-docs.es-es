@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 78cdc8f95c5a48e8ce0491926b27f0521705e3bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 40b296e33d00e6abf6730c7ec29a1fe9ed8e039b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067994"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Procedimiento Usar variables de entorno al compilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Al compilar proyectos, a menudo es necesario establecer las opciones de compilac
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>Para proporcionar un valor predeterminado a una propiedad  
   
--   Utilice un atributo `Condition` en una propiedad para establecer el valor solo si la propiedad no tiene ningún valor. Por ejemplo, el código siguiente establece la propiedad `ToolsPath` c:\tools solo si la variable de entorno `ToolsPath` no se establece:  
+- Utilice un atributo `Condition` en una propiedad para establecer el valor solo si la propiedad no tiene ningún valor. Por ejemplo, el código siguiente establece la propiedad `ToolsPath` c:\tools solo si la variable de entorno `ToolsPath` no se establece:  
   
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   

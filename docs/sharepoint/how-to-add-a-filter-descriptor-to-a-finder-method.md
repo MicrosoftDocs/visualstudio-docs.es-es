@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar un Descriptor de filtro a un método de buscador | Documentos de Microsoft
+title: Procedimiento Agregar un Descriptor de filtro a un método de buscador | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,39 +15,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee555376a2943cb29344aad2ed94da2b8ab2ae36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068670"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Filtrar Agregar un descriptor de filtro a un método Finder
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Procedimiento Agregar un descriptor de filtro a un método Finder
   Descriptores de filtro permiten a los consumidores del modelo pasar valores a los métodos antes de ejecutarlos. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
  Un escenario común es que los usuarios de SharePoint va a recuperar las instancias de un tipo de contenido externo que coincidan con ciertos criterios. Puede admitir este escenario mediante la adición de un descriptor de filtro a un método de buscador.
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Para agregar un descriptor de filtro a un método Finder
 
-1.  En el **detalles del método de BDC** ventana, expanda el nodo de un método Finder, expanda el **parámetros** nodo y, a continuación, agregue un parámetro de entrada. Para obtener más información, vea [Cómo: Agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md).
+1. En el **detalles del método de BDC** ventana, expanda el nodo de un método Finder, expanda el **parámetros** nodo y, a continuación, agregue un parámetro de entrada. Para obtener más información, vea [Cómo: Agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md).
 
-2.  En el **detalles del método** ventana, elija el descriptor de tipo del parámetro.
+2. En el **detalles del método** ventana, elija el descriptor de tipo del parámetro.
 
-3.  En la barra de menús, elija **vista** > **ventana propiedades**.
+3. En la barra de menús, elija **vista** > **ventana propiedades**.
 
-4.  En el **propiedades** ventana, establezca el **nombre de tipo** propiedad a un tipo de datos que es adecuado para el filtro.
+4. En el **propiedades** ventana, establezca el **nombre de tipo** propiedad a un tipo de datos que es adecuado para el filtro.
 
      Por ejemplo, un filtro podría usar una fecha de pedido para limitar el número de pedidos de venta devueltos por el método. Para admitir ese filtro, el **nombre de tipo** debe establecerse la propiedad de descriptor de tipos **System.DateTime**.
 
-5.  En el **detalles del método** ventana, expanda el **descriptores de filtro** nodo.
+5. En el **detalles del método** ventana, expanda el **descriptores de filtro** nodo.
 
-6.  En **agregar un Descriptor de filtro** elija **crear Descriptor de filtro**.
+6. En **agregar un Descriptor de filtro** elija **crear Descriptor de filtro**.
 
      Un nuevo descriptor de filtro aparece debajo del **descriptores de filtro** nodo.
 
-7.  En la barra de menús, elija **vista** > **ventana propiedades**.
+7. En la barra de menús, elija **vista** > **ventana propiedades**.
 
-8.  En el **propiedades** ventana, elija el **tipo** propiedad.
+8. En el **propiedades** ventana, elija el **tipo** propiedad.
 
 9. En la lista que aparece para la **tipo** propiedad, elija el modelo de filtrado que desee.
 

@@ -13,12 +13,12 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c818023d50b733a4818c87e67d0b49abde518ad2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9a6b5f86f0cfbb71f6264bdc74df72ad9209c9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988738"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070165"
 ---
 # <a name="rdtreadlock-usage"></a>Uso de RDT_ReadLock
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "58988738"
   
  Por lo general, se usaría <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> cuando uno de los siguientes es verdadera:  
   
--   Cuando desee abrir un documento de manera invisible y de solo lectura, pero todavía no se ha establecido que <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> debe es su propietario.  
+- Cuando desee abrir un documento de manera invisible y de solo lectura, pero todavía no se ha establecido que <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> debe es su propietario.  
   
--   Si desea que el usuario que se le solicite guardar un documento que se abrió de manera invisible antes de que el usuario muestra en la interfaz de usuario y, a continuación, intentó cerrarlo.  
+- Si desea que el usuario que se le solicite guardar un documento que se abrió de manera invisible antes de que el usuario muestra en la interfaz de usuario y, a continuación, intentó cerrarlo.  
   
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>Cómo administrar documentos Visible e Invisible  
  Cuando un usuario abre un documento en la interfaz de usuario, un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> se debe establecer el propietario del documento y un <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> se debe establecer la marca. Si no hay ningún <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> se puede establecer el propietario y, después, el documento no se guardarán cuando el usuario hace clic en **guardar todo** o cierra el IDE. Esto significa que si un documento está abierto invisible cuando se modifica en la memoria y el usuario se le pide que guarde el documento en el apagado o se guarda si **guardar todo** se elige una `RDT_ReadLock` no se puede usar. En su lugar, debe usar un `RDT_EditLock` y registrar un <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> cuando un <xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER> marca.  

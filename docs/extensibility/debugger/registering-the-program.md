@@ -11,25 +11,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7b07d6433bbec7e0afb871931fdf3be314c86d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070152"
 ---
 # <a name="register-the-program"></a>Registrar el programa
 Después de que el motor de depuración ha adquirido un puerto, representado por un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz, que es el paso siguiente para habilitar el programa que se desea depurar registrarlo en el puerto. Una vez registrado, el programa está disponible para la depuración en uno de los siguientes medios:
 
--   El proceso de adjuntar, lo que permite al depurador que obtenga un control total de depuración de una aplicación en ejecución.
+- El proceso de adjuntar, lo que permite al depurador que obtenga un control total de depuración de una aplicación en ejecución.
 
--   Just-in-time (JIT) de depuración, lo que permite la depuración después de los hechos de un programa que se ejecuta independientemente de un depurador. Cuando la arquitectura en tiempo de ejecución detecta un error, se notifica el depurador antes de que el sistema operativo o el entorno de tiempo de ejecución libera la memoria y los recursos del programa con errores.
+- Just-in-time (JIT) de depuración, lo que permite la depuración después de los hechos de un programa que se ejecuta independientemente de un depurador. Cuando la arquitectura en tiempo de ejecución detecta un error, se notifica el depurador antes de que el sistema operativo o el entorno de tiempo de ejecución libera la memoria y los recursos del programa con errores.
 
 ## <a name="registering-procedure"></a>Registro de procedimiento
 
 ### <a name="to-register-your-program"></a>Para registrar el programa
 
-1.  Llame a la [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método implementado por el puerto.
+1. Llame a la [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método implementado por el puerto.
 
      `IDebugPortNotify2::AddProgramNode` requiere un puntero a un [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaz.
 

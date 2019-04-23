@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfa7ed62276e63e80158a86165b59e367d7a88f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2c7a993bca55f1224661e15f9a7ecbf0a967e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066993"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Se trata de una función de devolución de llamada utilizada por el [SccQueryChanges](../extensibility/sccquerychanges-function.md) operación para enumerar una colección de nombres de archivo y determinar el estado de cada archivo.
@@ -52,7 +52,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 |SCC_I_OPERATIONCANCELED|Detener el procesamiento.|
 |SCC_E_xxx|Cualquier error de SCC apropiado debería detener el procesamiento.|
 
-##  <a name="LinkQUERYCHANGESDATA"></a> Estructura QUERYCHANGESDATA
+## <a name="LinkQUERYCHANGESDATA"></a> Estructura QUERYCHANGESDATA
  La estructura pasada en cada archivo tiene el siguiente aspecto:
 
 ```cpp

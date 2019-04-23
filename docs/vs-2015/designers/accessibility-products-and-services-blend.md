@@ -9,25 +9,25 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eca75f325557ee118cf4ab54287978dc63420ff7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 202ff45d5b69f91d9f0081c8253c11962009abaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793486"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068956"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Productos y servicios de accesibilidad (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. Las siguientes secciones proporcionan información acerca de las características, productos y servicios que permiten a Microsoft Windows ser más accesible para las personas con discapacidades:  
   
--   Características de accesibilidad de Windows  
+- Características de accesibilidad de Windows  
   
--   Documentación en formatos alternativos  
+- Documentación en formatos alternativos  
   
--   "Servicio al cliente para personas con dificultades auditivas"  
+- "Servicio al cliente para personas con dificultades auditivas"  
   
--   Para obtener más información,  
+- Para obtener más información,  
   
 > [!NOTE]
 >  La información de esta sección sólo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si adquirió este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se adjunta con el paquete de software o puede visitar el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069) para obtener una lista de los números de teléfono y las direcciones de los servicios de atención al cliente de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si el tipo de productos y servicios que se describen en esta sección están disponibles en su área. Recuerde que los productos localizados no pueden adquirirse en los Estados Unidos. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.  
