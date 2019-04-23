@@ -13,21 +13,21 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca6993d8d8d56f1ea2ccf8b4b6c41909606e8755
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988736"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112486"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selección y moneda en el IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE) mantiene información acerca de los usuarios los objetos actualmente seleccionados con selección *contexto*. Con el contexto de selección, VSPackages pueden tomar parte en la moneda de seguimiento de dos maneras:  
   
--   Mediante la propagación de información de moneda sobre los VSPackages para el IDE.  
+- Mediante la propagación de información de moneda sobre los VSPackages para el IDE.  
   
--   Mediante la supervisión de las selecciones de los usuarios actualmente activo dentro del IDE.  
+- Mediante la supervisión de las selecciones de los usuarios actualmente activo dentro del IDE.  
   
 ## <a name="selection-context"></a>Contexto de selección  
  El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE globalmente realiza un seguimiento de moneda IDE en su propio objeto de contexto de la selección global. La siguiente tabla muestra los elementos que componen el contexto de selección.  
@@ -40,9 +40,9 @@ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo inte
   
  Además, el entorno mantiene dos listas globales:  
   
--   Una lista de identificadores de comando de la interfaz de usuario activos  
+- Una lista de identificadores de comando de la interfaz de usuario activos  
   
--   Una lista de tipos de elemento activo actualmente.  
+- Una lista de tipos de elemento activo actualmente.  
   
 ### <a name="window-types-and-selection"></a>Selección y tipos de ventana  
  El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE organiza windows en dos tipos generales:  
@@ -60,9 +60,9 @@ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo inte
 ### <a name="events-and-currency"></a>Eventos y moneda  
  Podrían producirse dos tipos de eventos que afectan a la noción del entorno de moneda:  
   
--   Eventos que se propagan a nivel global y cambiar el contexto de selección del marco de ventana. Ejemplos de este tipo de evento incluyen una ventana secundaria MDI se abre una ventana de herramientas global que se abre o se abre una ventana de herramientas de tipo de proyecto.  
+- Eventos que se propagan a nivel global y cambiar el contexto de selección del marco de ventana. Ejemplos de este tipo de evento incluyen una ventana secundaria MDI se abre una ventana de herramientas global que se abre o se abre una ventana de herramientas de tipo de proyecto.  
   
--   Eventos que cambian los elementos que se realiza un seguimiento en el contexto de selección de marco de ventana. Por ejemplo, cambiar la selección dentro de DocObject o cambiar la selección en una ventana de tipo de proyecto.  
+- Eventos que cambian los elementos que se realiza un seguimiento en el contexto de selección de marco de ventana. Por ejemplo, cambiar la selección dentro de DocObject o cambiar la selección en una ventana de tipo de proyecto.  
   
 ## <a name="see-also"></a>Vea también  
  [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md)   

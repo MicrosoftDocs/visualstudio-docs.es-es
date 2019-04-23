@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa425b945b2694ed11e77116611ba45cf21cf6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112343"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de colores de VSIX
 La herramienta de compilador de Color de extensión de Visual Studio es una aplicación de consola que toma un archivo .xml que representa los colores para temas existentes de Visual Studio y la convierte a un .pkgdef de archivos para que se pueden usar esos colores en Visual Studio. Dado que es fácil de comparar las diferencias entre archivos .xml, esta herramienta es útil para administrar los colores personalizados en el control de código fuente. También puede enlazarse en entornos de compilación para que el resultado de la compilación es un archivo .pkgdef válido.
@@ -53,7 +53,7 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |||
 |-|-|
 |**Attribute**|**Definición**|
-|nombre|[Obligatorio] El nombre del tema|
+|Name|[Obligatorio] El nombre del tema|
 |GUID|[Obligatorio] GUID del tema (debe coincidir con el formato de GUID)|
 
  Al crear colores personalizados para Visual Studio, los colores deben definirse para los temas siguientes. Si ningún colores existen para un tema concreto, Visual Studio intenta cargar los colores que faltan desde el tema claro.
@@ -79,7 +79,7 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |||
 |-|-|
 |**Attribute**|**Definición**|
-|nombre|[Obligatorio] El nombre de la categoría|
+|Name|[Obligatorio] El nombre de la categoría|
 |GUID|[Obligatorio] GUID de la categoría (debe coincidir con el formato de GUID)|
 
  **Color**
@@ -96,7 +96,7 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |||
 |-|-|
 |**Attribute**|**Definición**|
-|nombre|[Obligatorio] El nombre del color|
+|Name|[Obligatorio] El nombre del color|
 
  **En segundo plano o primer plano**
 
@@ -111,7 +111,7 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |-|-|
 |**Attribute**|**Definición**|
 |Tipo|[Obligatorio] El tipo del color. Puede ser uno de los siguientes:<br /><br /> *CT_INVALID:* El color no es válida o no.<br /><br /> *CT_RAW:* Valor sin formato ARGB.<br /><br /> *CT_COLORINDEX:* NO USE.<br /><br /> *CT_SYSCOLOR:* Un color del sistema de Windows desde SysColor.<br /><br /> *CT_VSCOLOR:* Un color de Visual Studio en __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* El color automático.<br /><br /> *CT_TRACK_FOREGROUND:* NO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NO USE.|
-|Origen|[Obligatorio] El valor del color representado en formato hexadecimal|
+|Source|[Obligatorio] El valor del color representado en formato hexadecimal|
 
  Todos los valores admitidos por la enumeración __VSCOLORTYPE son compatibles con el esquema en el atributo de tipo. Sin embargo, se recomienda que use solo CT_RAW y CT_SYSCOLOR.
 
@@ -149,15 +149,15 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 
  **Ejemplos**
 
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
 
--   VsixColorCompiler D:\xml\colors.xml /noLogo
+- VsixColorCompiler D:\xml\colors.xml /noLogo
 
 ## <a name="notes"></a>Notas
 
--   Esta herramienta requiere que se ha instalado la versión más reciente del tiempo de ejecución de VC ++.
+- Esta herramienta requiere que se ha instalado la versión más reciente del tiempo de ejecución de VC ++.
 
--   Solo los archivos solo se admiten. No se admite la conversión de forma masiva a través de rutas de carpeta.
+- Solo los archivos solo se admiten. No se admite la conversión de forma masiva a través de rutas de carpeta.
 
 ## <a name="sample-output"></a>Resultados de ejemplo
  El archivo .pkgdef generado por la herramienta será similar a la siguiente claves:
