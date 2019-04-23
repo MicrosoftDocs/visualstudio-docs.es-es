@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8c081a2836c4dbb85f7d9af789deeda667a2a27
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 582006c7b9629911f9d403fdab6af0637eb9337c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616877"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661898"
 ---
 # <a name="legacy-language-service-essentials"></a>Fundamentos de servicio de lenguaje heredado
 Debe proporcionar un servicio de lenguaje para integrar un lenguaje de programación en Visual Studio. En este tema se explica las características disponibles en los servicios de lenguaje heredado.
@@ -33,7 +33,7 @@ Debe proporcionar un servicio de lenguaje para integrar un lenguaje de programac
 |Característica|Descripción|
 |-------------|-----------------|
 |Seleccionar el color de la sintaxis|Hace que la vista del editor mostrar diferentes colores y estilos de fuente para los distintos elementos de un idioma. Esta diferenciación puede hacer más fácil de leer y editar archivos.<br /><br /> Para obtener información general, consulte [colores de sintaxis en un servicio de lenguaje heredado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Para obtener información sobre esta característica en managed package framework (MPF), consulte [coloreado de sintaxis en un servicio de lenguaje heredado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
-|Finalización de instrucciones|Completa una instrucción o palabra clave que el usuario ha empezado a escribir. Finalización de instrucciones ayuda a los usuarios especificar instrucciones difíciles más fácilmente, con menos posibilidades de error y escribir menos.<br /><br /> Para obtener información general, consulte [finalización de instrucciones en un servicio de lenguaje heredado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Para obtener información sobre esta característica en MPF, vea [finalización de palabras en un servicio de lenguaje heredado](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
+|Instrucciones completadas|Completa una instrucción o palabra clave que el usuario ha empezado a escribir. Finalización de instrucciones ayuda a los usuarios especificar instrucciones difíciles más fácilmente, con menos posibilidades de error y escribir menos.<br /><br /> Para obtener información general, consulte [finalización de instrucciones en un servicio de lenguaje heredado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Para obtener información sobre esta característica en MPF, vea [finalización de palabras en un servicio de lenguaje heredado](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
 |Coincidencia de llaves|Información destacada de pares de caracteres, como las llaves. Cuando el usuario escribe un carácter de cierre, como "}", coincidencia de llaves resalta los correspondientes caracteres, de apertura, como "{". Cuando hay varios niveles de caracteres de cierre, esta característica ayuda a los usuarios confirmar que los caracteres de inclusión están emparejados correctamente.<br /><br /> Para obtener información sobre esta característica en MPF, vea [coincidencia de llaves en un servicio de lenguaje heredado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|
 |Información sobre herramientas de información de parámetro|Muestra una lista de las firmas posibles para el método sobrecargado que el usuario está escribiendo actualmente.<br /><br /> Para obtener información general, consulte [información de parámetros en un servicio de lenguaje heredado](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Para obtener información sobre esta característica en MPF, vea [información de parámetros en un servicio de lenguaje heredado](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|
 |Marcadores de error|Muestra un subrayado rojo ondulado, también conocido como un subrayado, bajo el texto que no es sintácticamente correcto. Los marcadores de error normalmente se usan para que los usuarios sea consciente de los paréntesis sin cerrar, palabras clave mal escritas, caracteres no válidos y errores similares.<br /><br /> En las clases MPF, marcadores de errores se controlan automáticamente en el <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> método de la <xref:Microsoft.VisualStudio.Package.AuthoringSink> clase.|
@@ -41,7 +41,6 @@ Debe proporcionar un servicio de lenguaje para integrar un lenguaje de programac
  Muchas de estas características requieren que el servicio de lenguaje para analizar código fuente. A menudo se pueden reutilizar el encadenamiento y el análisis de código para el compilador o intérprete.
 
  Las siguientes características están relacionadas con compatibilidad con lenguajes de programación, pero no forman parte de los servicios de lenguaje:
-
 
 | Característica | Descripción |
 |-----------------------| - |

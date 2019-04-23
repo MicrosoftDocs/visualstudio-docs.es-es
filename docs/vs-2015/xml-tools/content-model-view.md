@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997954"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668904"
 ---
 # <a name="content-model-view"></a>Vista Modelo de contenido
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La vista Modelo de contenido proporciona una representación gráfica de los nodos de esquema globales y locales con sus componentes, incluidos los tipos simples y complejos, elementos, grupos de modelo, atributos y grupos de atributos. Los comentarios y las instrucciones de procesamiento XML no se pueden ver en el vista Modelo de contenido. La vista de modelo de contenido contiene dos paneles: un **área de trabajo** panel que contiene una lista de los nodos en el [área de trabajo del Diseñador de esquemas de XML](../xml-tools/xml-schema-designer-workspace.md)y la superficie de diseño donde puede ver el modelo de contenido de esquema nodos que están seleccionados en el **área de trabajo** panel. La vista Modelo de contenido también incluye la barra de herramientas del Diseñador de esquemas XML y la barra de ruta de navegación.  
   
  En la siguiente imagen, el panel Área de trabajo contiene seis nodos de esquema. El nodo `purchaseOrder` está seleccionado en el panel Área de trabajo y se muestra en la superficie de diseño.  

@@ -11,17 +11,16 @@ caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c2ff6555be6f8189ff085e203890891f5345d3c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ec4bc799c3a808a7259e4dd39565e2e21940ca56
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778308"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665707"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ para el desarrollo móvil multiplataforma.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede compilar aplicaciones nativas de C++ para dispositivos iOS, Android y Windows, y compartir código común en bibliotecas compiladas para iOS, Android y Windows mediante Visual C++ para desarrollo móvil multiplataforma. Se trata de una opción disponible en Visual Studio de 2015 que instala los SDK y las herramientas que necesita para el desarrollo multiplataforma de bibliotecas compartidas y las aplicaciones nativas. Cuando se instala, puede usar Visual C++ para crear código que se ejecuta dispositivos y plataformas iOS y Android, además de en Windows, Windows Phone y Xbox.  
   
  Escribir código para varias plataformas puede resultar frustrante. Los principales lenguajes de desarrollo y herramientas para iOS, Android y Windows son distintos en cada plataforma. Sin embargo, todas las plataformas admiten la escritura de código en C++. Este es el denominador común que puede usar para volver a usar el código principal en las distintas plataformas. El código nativo escrito en C++ ofrece un rendimiento superior y mayor resistencia frente a la ingeniería inversa. La reutilización de código puede ahorrarle tiempo y esfuerzos en la creación de aplicaciones para varias plataformas.  

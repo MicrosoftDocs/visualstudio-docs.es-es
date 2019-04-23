@@ -1,18 +1,18 @@
 ---
-title: Filtrar Use el contexto de interfaz de usuario basada en reglas para las extensiones | Microsoft Docs
+title: Procedimiento Use el contexto de interfaz de usuario basada en reglas para las extensiones | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987712"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664325"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Filtrar Usar el contexto de interfaz de usuario basada en reglas para extensiones de Visual Studio
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procedimiento Usar el contexto de interfaz de usuario basada en reglas para extensiones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio permite la carga de VSPackages cuando lo ciertos conocido <xref:Microsoft.VisualStudio.Shell.UIContext>s se activan. Sin embargo, estos contextos de interfaz de usuario no son muy finos más preciso, no dejando a los autores de extensiones no hay ninguna opción, pero para elegir un contexto de interfaz de usuario disponibles que activa antes del punto querían el VSPackage para cargar. Para obtener una lista de contextos de interfaz de usuario conocidos, consulte <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.
@@ -137,8 +137,6 @@ Visual Studio permite la carga de VSPackages cuando lo ciertos conocido <xref:Mi
 |ActiveProjectCapability:\<expresión >|El término es true cuando las capacidades del proyecto activo coincide con la expresión proporcionada. Una expresión puede ser algo parecido a VB &#124; CSharp|
 |SolutionHasProjectCapability:\<Expression>|Es similar al anterior pero término es true cuando la solución tiene ningún proyecto cargado que coincida con la expresión.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|El término será true siempre que sea una solución tiene proyectos que es característico (agregado) y tiene un tipo de coincidencia de GUID de tipo de proyecto determinado.|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>Compatibilidad con la extensión de entre versiones
  La regla basada en contextos de interfaz de usuario es una característica nueva en Visual Studio 2015 y no se podría pasar a versiones anteriores. Esto crea un problema con las extensiones o paquetes que tienen como destino varias versiones de Visual Studio que tendría que ser cargan automáticamente en Visual Studio 2013 y versiones anteriores, pero puede beneficiarse de contextos de interfaz de usuario basada en reglas para evitar que se cargan automáticamente en Visual Studio 2015.

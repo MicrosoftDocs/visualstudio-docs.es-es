@@ -14,17 +14,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58995247"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664221"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creación de una aplicación de datos sencilla mediante ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Al crear una aplicación que manipula datos en una base de datos, se realizan tareas básicas como definir cadenas de conexión, insertar datos y ejecutar procedimientos almacenados. Siguiendo este tema, puede detectar cómo interactuar con una base de datos desde una aplicación sencilla de "formularios sobre datos" de Windows Forms utilizando Visual C# o Visual Basic y ADO.NET.  Todas las tecnologías de datos. NET, incluidos los conjuntos de datos, LINQ to SQL y Entity Framework, en última instancia, realice los pasos que son muy similares a las que se muestran en este artículo.  
   
  En este artículo se muestra una manera sencilla de obtener datos de una base de datos de una manera muy rápida. Si la aplicación necesita modificar los datos de formas no triviales y actualizar la base de datos, debe considerar con Entity Framework y el uso de enlace de datos para sincronizar automáticamente los controles de interfaz de usuario a los cambios en los datos subyacentes.  

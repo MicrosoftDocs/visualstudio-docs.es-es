@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear una asociación (relación) entre clases LINQ to SQL (Object Relational Designer) | Documentos de Microsoft
+title: Procedimiento Crear una asociación (relación) entre clases LINQ to SQL (Object Relational Designer) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a3f8071e38fabffd73e10f3ac6f23558876c2ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6f59af23f25fee628ec20b77e10e0a48afdd564d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998891"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669060"
 ---
-# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Filtrar Crear una asociación (relación) entre clases LINQ to SQL (Object Relational Designer)
+# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Procedimiento Crear una asociación (relación) entre clases LINQ to SQL (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Las asociaciones entre clases de entidades en [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] son similares a las relaciones entre tablas en una base de datos. Puede crear asociaciones entre clases de entidades mediante el cuadro de diálogo **Editor de asociaciones**.  
   
  Si utiliza el **Editor de asociaciones** para crear una asociación, deberá seleccionar una clase primaria y otra secundaria. La clase primaria es la clase de entidad que contiene la clave principal y la clase secundaria es la clase de entidad que contiene la clave externa. Por ejemplo, si se crearon clases de entidad y se asignaron a las tablas Customers y Orders de Northwind, la clase Customer sería la clase primaria y Order, la secundaria.  
@@ -29,7 +28,7 @@ Las asociaciones entre clases de entidades en [!INCLUDE[vbtecdlinq](../includes/
   
  Después de crear una asociación, al seleccionar la asociación en el Object Relational Designer, hay algunas propiedades configurables en el **propiedades** ventana. (La asociación es la línea entre las clases relacionadas). En la tabla siguiente, se proporcionan descripciones de las propiedades de una asociación.  
   
-|Property|Descripción|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
 |**Cardinalidad**|Controla si la asociación es de uno a varios o de uno a uno.|  
 |**Propiedad secundaria**|Especifica si se debe crear una propiedad en el registro primario que es una colección o se debe hacer referencia a los registros secundarios en el lado de las claves externas de la asociación. Por ejemplo, en la asociación entre Customer y Order, si la **propiedad secundaria** está establecido en **True**, se crea una propiedad denominada Orders en la clase primaria.|  

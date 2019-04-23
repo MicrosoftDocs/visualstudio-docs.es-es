@@ -6,17 +6,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781703"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662080"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Más información sobre el desarrollo móvil con Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Este tema le dirige a material de información general que le ayudará a comprender el desarrollo aplicaciones móviles multiplataforma con Xamarin. Si aún no tiene instalado Visual Studio y Xamarin, inicie primero el proceso [Setup and install](../cross-platform/setup-and-install.md) y, después, regrese aquí para trabajar con estos recursos mientras se ejecutan los instaladores.  
   
 > [!NOTE]
@@ -24,14 +23,14 @@ Este tema le dirige a material de información general que le ayudará a compren
 >   
 >  También puede consultar los temas marcados como "Conceptos básicos" y volver a los temas "En profundidad" más adelante.  
   
-## <a name="essentials-introduction-to-xamarin"></a>Conceptos básicos: introducción a Xamarin  
+## <a name="essentials-introduction-to-xamarin"></a>Conceptos básicos: Introducción a Xamarin  
  *10-20 minutos*  
   
 1.  [Aplicaciones móviles en Visual Studio con Xamarin](https://www.visualstudio.com/explore/xamarin-vs) (visualstudio.com) ofrece un breve resumen de las características principales de Xamarin.  
   
 2.  [Building Cross-Platform Mobile Apps using C# and Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Compilación de aplicaciones móviles multiplataforma con C# y Visual Studio) en Channel 9, 15 m 16 s, con el predicador de Xamarin, James Montemagno. Los primeros tres minutos son una introducción a Xamarin, seguida de demostraciones de código.  
   
-## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Conceptos básicos: información general del entorno de Visual Studio y Xamarin  
+## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Conceptos básicos: Información general del entorno de Visual Studio y Xamarin  
  *5-15 minutos*  
   
 - El equipo Windows con Visual Studio y Xamarin es donde realizará la mayor parte de su trabajo. En este equipo se compilan directamente las aplicaciones de Windows y Android, que se ejecutan y depuran en un dispositivo o un emulador. Las aplicaciones de iOS también se compilan, ejecutan y depuran de forma remota a través del Mac. Visual Studio en el equipo Windows también se puede conectar al diseñador de guiones gráficos de iOS y al simulador de iOS.  
@@ -42,7 +41,7 @@ Este tema le dirige a material de información general que le ayudará a compren
   
   ![La relación entre los equipos de desarrollo de Windows y Mac en un entorno Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
-## <a name="essentials-how-projects-are-structured"></a>Conceptos básicos ¿Cómo se estructuran los proyectos  
+## <a name="essentials-how-projects-are-structured"></a>Conceptos básicos: ¿Cómo se estructuran los proyectos  
  *10-30 minutos*  
   
 1.  [Sharing Code Options](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Opciones de uso compartido de código) en xamarin.com Se recomienda mediante la opción de bibliotecas de clases portables, en las que resulta más fácil usar solo las API de .NET compatibles con todas las plataformas de destino. La mayoría del código lógica empresarial residirá en la PCL, incluidos el acceso a las bases de datos, las llamadas a API de REST y las llamadas a componentes de Xamarin portables (vea [en profundidad: Componentes de Xamarin](#components) al final de este tema). El código de interfaz de usuario común escrito con Xamarin.Forms también puede residir en una PCL.  
@@ -52,7 +51,7 @@ Este tema le dirige a material de información general que le ayudará a compren
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Conceptos básicos: capas de la interfaz de usuario de Xamarin.Forms y Native  
  *10-40 minutos*  
   
- Xamarin ofrece dos formas de compilar excelentes aplicaciones nativas. Xamarin Native y Xamarin.Forms.  
+ Xamarin ofrece dos formas de compilar magníficas aplicaciones nativas: Xamarin Native y Xamarin.Forms.  
   
  Con Xamarin Native puede escribir código de interfaz de usuario independiente para cada plataforma de destino: iOS, Android y Windows.  Con este enfoque tiene acceso directo a API específicas de la plataforma que permiten una experiencia de interfaz de usuario personalizada para cada plataforma.  También tendrá acceso total al diseñador y los controles nativos de cada plataforma como ayuda en la creación de la interfaz de usuario correspondiente.  
   
@@ -93,7 +92,7 @@ Este tema le dirige a material de información general que le ayudará a compren
   
 2.  **Simulador de iOS de Apple.** Para más información, lea [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (Introducción al simulador de iOS) en apple.com.  
   
-3.  **Emulador de Microsoft Windows Phone.** Para más información, lea [Windows Phone Emulator for Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx) (Emulador de Windows Phone para Windows Phone 8).  
+3.  **Emulador de Microsoft Windows Phone.** Para obtener más información, lea [Windows Phone Emulator for Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx)(Emulador de Windows Phone para Windows Phone 8).  
   
 ##  <a name="components"></a> En profundidad: Componentes de Xamarin  
  *10 minutos*  

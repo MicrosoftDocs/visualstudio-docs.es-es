@@ -48,17 +48,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5ac63b183493b378fc0e1df454bc94a56722224f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d9787342709ba9b09ac533177fd6600b9e5c86a0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794462"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669008"
 ---
 # <a name="options-text-editor-general"></a>Opciones, editor de texto, general
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Este cuadro de diálogo le permite cambiar la configuración global del editor de texto y el código de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Editor de texto** y, después, haga clic en **General**.  
   
 > [!NOTE]

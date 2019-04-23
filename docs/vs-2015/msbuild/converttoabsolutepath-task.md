@@ -19,17 +19,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 825f6db04b20470bec67ed5e4a5ddfc7be7d28d8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 399ffeae65ba935e3682b54eff5ee1b0b687aa9d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803834"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667734"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Convierte una ruta de acceso relativa o una referencia en una ruta de acceso absoluta.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  

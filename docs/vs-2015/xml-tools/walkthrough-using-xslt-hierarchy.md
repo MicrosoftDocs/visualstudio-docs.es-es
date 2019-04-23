@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b72213ab2c7dd9fa15fb639b6ef2212f56aa141f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5d662a94a77dff02fd994122e5106f5bff35bac3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997327"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669450"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Tutorial: Usar la herramienta jerarquía XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La herramienta Jerarquía XSLT simplifica muchas tareas de desarrollo de XML. Una hoja de estilos XSLT usa a menudo instrucciones `includes` e `imports`. La compilación se inicia desde la hoja de estilos principal, pero cuando aparece un error como resultado de compilar una hoja de estilos XSLT, dicho error puede proceder de un origen distinto de la hoja de estilos principal. Es posible que se requiera acceso a las hojas de estilos importadas o incluidas para corregir el error o editar la hoja de estilos. Es posible que la ejecución paso a paso de la hoja de estilos en el depurador le permita abrir las hojas de estilos importadas e incluidas, y si lo desea puede agregar un punto de interrupción en algún punto en una o varias de las hojas de estilos incluidas.  
   
  Otro escenario en el que la herramienta Jerarquía XSLT puede ser de utilidad es la colocación de puntos de interrupción en las reglas de plantilla integradas. Las reglas de plantilla son plantillas especiales generadas para cada modo de la hoja de estilos y a las que llama el elemento `xsl:apply-templates` cuando ninguna otra plantilla coincide con el nodo. Para implementar la depuración en las reglas de plantilla integradas, el depurador XSLT genera el archivo con las reglas en la carpeta temporal y las compila junto con la hoja de estilos principal. Si no se ejecuta paso a paso el código desde algún elemento `xsl:apply-template`, puede resultar complicado encontrar las hojas de estilos incluidas en la hoja de estilos principal o localizar y abrir la hoja de estilos con las reglas de plantilla integradas.  

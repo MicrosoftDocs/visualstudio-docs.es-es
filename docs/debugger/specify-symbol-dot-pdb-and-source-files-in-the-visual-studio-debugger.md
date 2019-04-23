@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9997601d906ac3be7c3eaf789a0d31e19dae613
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681717"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666564"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -76,11 +76,11 @@ El depurador también busca los archivos de símbolos en las siguientes ubicacio
 
      Servidores de símbolos que podría utilizar incluyen:
 
-     **Servidores de símbolos públicos de Microsoft**: para depurar un bloqueo que se produce durante una llamada a un archivo DLL del sistema o a una biblioteca de terceros, a menudo necesita sistema *.pdb* archivos. Sistema *.pdb* archivos contienen símbolos para archivos DLL de Windows, *.exe* archivos y controladores de dispositivos. Puede obtener los símbolos para los sistemas operativos de Windows, MDAC, IIS, ISA y el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de los servidores de símbolos públicos de Microsoft.
+     **Servidores de símbolos públicos de Microsoft**: Para depurar un bloqueo que se produce durante una llamada a un archivo DLL del sistema o a una biblioteca de terceros, a menudo necesita sistema *.pdb* archivos. Sistema *.pdb* archivos contienen símbolos para archivos DLL de Windows, *.exe* archivos y controladores de dispositivos. Puede obtener los símbolos para los sistemas operativos de Windows, MDAC, IIS, ISA y el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de los servidores de símbolos públicos de Microsoft.
 
-     **En una red interna o en el equipo local de servidores de símbolos**: su equipo o empresa puede crear servidores de símbolos para sus propios productos y como una memoria caché de símbolos de orígenes externos. Podría tener un servidor de símbolos en su propio equipo.
+     **Servidores de símbolos de una red interna o del equipo local**: Su equipo o compañía puede crear servidores de símbolos para sus propios productos y como memoria caché de símbolos de orígenes externos. Podría tener un servidor de símbolos en su propio equipo.
 
-     **Servidores de símbolos de terceros**: proveedores de bibliotecas y aplicaciones de Windows pueden proporcionar acceso al servidor de símbolos en internet.
+     **Servidores de símbolos de terceros**: Los proveedores de aplicaciones Windows y bibliotecas de terceros pueden proporcionar acceso al servidor de símbolos en Internet.
 
      > [!WARNING]
      > Si usa un servidor de símbolos que no sean los servidores de símbolos públicos de Microsoft, asegúrese de que el servidor de símbolos y su ruta de acceso son de confianza. Dado que los archivos de símbolos pueden contener código ejecutable arbitrario, pueden exponerse a amenazas de seguridad.
@@ -155,7 +155,7 @@ Puede seleccionar opciones de símbolos adicionales en **herramientas** > **opci
   Puede limitar los comandos que *srcsrv.dll* puede ejecutar desde la aplicación *.pdb* archivo con una lista de los comandos permitidos en un archivo denominado *srcsrv.ini*. Colocar el *srcsrv.ini* archivo en la misma carpeta que *srcsrv.dll* y *devenv.exe*.
 
   >[!IMPORTANT]
-  >Se pueden incrustar comandos arbitrarios en una aplicación *.pdb* de archivos, así que asegúrese de colocar únicamente los comandos que desea ejecutar en un *srcsrv.ini* archivo. Todo intento de ejecutar un comando no incluido en el archivo *srcsvr.ini* provocará la aparición de un cuadro de diálogo de confirmación. Para obtener más información, consulta [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+  >Se pueden incrustar comandos arbitrarios en una aplicación *.pdb* de archivos, así que asegúrese de colocar únicamente los comandos que desea ejecutar en un *srcsrv.ini* archivo. Todo intento de ejecutar un comando no incluido en el archivo *srcsvr.ini* provocará la aparición de un cuadro de diálogo de confirmación. Para obtener más información, consulte [advertencia de seguridad: El depurador debe ejecutar un comando que no es de confianza](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
   >
   >No se realiza ninguna validación de los parámetros de comando, por lo que debe tener cuidado con los comandos de confianza. Por ejemplo, si se ha incluido *cmd.exe* en su *srcsrv.ini*, un usuario malintencionado podría especificar parámetros de *cmd.exe* que sería peligroso.
 
@@ -259,7 +259,6 @@ Puede especificar las ubicaciones que el depurador busca archivos de código fue
 1. En **no buscar estos archivos de código fuente**, escriba los nombres de archivos de origen para excluir de la búsqueda.
 
 1. Seleccione **Aceptar** o **aplicar**.
-
 
 ## <a name="see-also"></a>Vea también
 - [Comprender los archivos de símbolos y la configuración de símbolos de Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)

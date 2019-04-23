@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63c6b91ec4b93129014d1d7213d8426a4565c2c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645932"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666460"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; (elemento, arranque)
 El `InstallChecks` elemento admite el inicio de una variedad de pruebas en el equipo local para asegurarse de que se han instalado todos los requisitos previos para una aplicación.
@@ -97,7 +97,6 @@ El `InstallChecks` elemento admite el inicio de una variedad de pruebas en el eq
 
  `FileCheck` no contiene ningún elemento y tiene los siguientes atributos.
 
-
 | Atributo | Descripción |
 |-----------------| - |
 | `Property` | Obligatorio. El nombre de la propiedad para almacenar el resultado. Esta propiedad se puede hacer referencia a partir de una prueba debajo el `InstallConditions` elemento, que es un elemento secundario de la `Command` elemento. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md). |
@@ -165,7 +164,7 @@ El `InstallChecks` elemento admite el inicio de una variedad de pruebas en el eq
 ## <a name="predefined-properties"></a>Propiedades predefinidas
  La siguiente tabla se enumeran los `BypassIf` y `FailIf` elementos:
 
-|Propiedad.|Notas|Valores posibles|
+|Propiedad|Notas|Valores posibles|
 |--------------|-----------|---------------------|
 |`Version9X`|Número de versión del sistema operativo Windows 9 X.|4.10 = Windows 98|
 |`VersionNT`|Número de versión de un sistema operativo basado en Windows NT.|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Profesional SP2<br /><br /> 5.2.0 = Windows Server 2003|

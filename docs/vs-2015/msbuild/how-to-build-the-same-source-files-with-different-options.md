@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Compilar los mismos archivos de código fuente con diferentes opciones | Microsoft Docs'
+title: Procedimiento Compilar los mismos archivos de código fuente con diferentes opciones | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,17 +14,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800429"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663150"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Cómo: Compilar los mismos archivos de código fuente con diferentes opciones
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedimiento Compilar los mismos archivos de código fuente con diferentes opciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Al compilar proyectos, con frecuencia se compilan los mismos componentes con distintas opciones de compilación. Por ejemplo, puede crear una compilación de depuración con información de símbolos o una compilación de versión sin información de símbolos, pero con optimizaciones habilitadas. También puede compilar un proyecto que se ejecute en una plataforma concreta, como x86 o [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. En todos estos casos, la mayoría de las opciones de compilación permanecen iguales; solo unas cuantas opciones cambian para controlar la configuración de compilación. Con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], se utilizan propiedades y condiciones para crear configuraciones de compilación diferentes.  
   
 ## <a name="using-properties-to-modify-projects"></a>Usar propiedades para modificar proyectos  
@@ -82,7 +81,7 @@ Al compilar proyectos, con frecuencia se compilan los mismos componentes con dis
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
   ```  
   
-  Las variables de entorno también se tratan como propiedades y se incorporan automáticamente mediante [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Para obtener más información sobre el uso de variables de entorno, consulte [Cómo: Utilizar variables de entorno en una compilación](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Las variables de entorno también se tratan como propiedades y se incorporan automáticamente mediante [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Para obtener más información sobre cómo usar variables de entorno, vea [Cómo: Usar Variables de entorno en una compilación](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
   El valor de propiedad que se especifica en la línea de comandos tiene prioridad sobre cualquier valor que se establece para la misma propiedad en el archivo de proyecto, y ese valor en el archivo de proyecto tiene prioridad sobre el valor de una variable de entorno.  
   

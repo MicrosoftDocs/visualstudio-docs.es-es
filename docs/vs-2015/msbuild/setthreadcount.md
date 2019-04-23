@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a57ac0b3412c6668dea1669d14b72fe399b6ab2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 79987c77da7959c4ba37a4ae8e5b689a052cbbbc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758635"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666684"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Establece el recuento de subprocesos globales y asigna ese recuento al subproceso actual.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -41,7 +40,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  El número de subprocesos que se va a usar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Un elemento [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con el conjunto de bits [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) si se ha actualizado el recuento de subprocesos.  
+ Una ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con el ([correcto]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) conjunto de bits si se ha actualizado el número de subprocesos.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** FileTracker.h
+ **Encabezado**: FileTracker.h

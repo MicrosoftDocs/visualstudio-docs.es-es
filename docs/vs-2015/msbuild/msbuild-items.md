@@ -11,17 +11,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: deeed2ed86b07ec6f3d36f7dd4b4be02c1060155
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770855"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669814"
 ---
 # <a name="msbuild-items"></a>Elementos de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Los elementos de MSBuild son entradas del sistema de compilación y suelen representar archivos. Se agrupan en tipos de elemento de acuerdo con sus nombres de elemento. Los tipos de elemento son listas de elementos con nombre que se pueden usar como parámetros de las tareas. Las tareas utilizan los valores de los elementos para llevar a cabo los pasos del proceso de compilación.  
   
  Dado que el nombre de los elementos viene determinado por el tipo de elemento al que pertenecen, los términos "elemento" y "valor de elemento" se pueden utilizar indistintamente.  
@@ -88,9 +87,9 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
 -   A partir de .NET Framework 3.5, los elementos `Target` pueden contener elementos [ItemGroup](../msbuild/itemgroup-element-msbuild.md) que pueden contener elementos de elemento.  
   
 ##  <a name="BKMK_ReferencingItems"></a> Hacer referencia a elementos en un archivo del proyecto  
- Para hacer referencia a tipos de elemento en el archivo del proyecto, utilice la sintaxis @(`ItemType`). Por ejemplo, podría hacer referencia al tipo de elemento del ejemplo anterior utilizando `@(Compile)`. Con esta sintaxis, puede pasar elementos a las tareas especificando el tipo de elemento como un parámetro de la tarea. Para obtener más información, consulte [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).  
+ Para hacer referencia a tipos de elemento en el archivo del proyecto, utilice la sintaxis @(`ItemType`). Por ejemplo, podría hacer referencia al tipo de elemento del ejemplo anterior utilizando `@(Compile)`. Con esta sintaxis, puede pasar elementos a las tareas especificando el tipo de elemento como un parámetro de la tarea. Para obtener más información, vea [Cómo: Seleccione los archivos de compilación](../msbuild/how-to-select-the-files-to-build.md).  
   
- De manera predeterminada, los elementos de un tipo de elemento se separan con punto y coma (;) cuando se expanden. Puede utilizar la sintaxis @(*ItemType*, '*separator*') para especificar un separador distinto del predeterminado. Para obtener más información, consulte [Cómo: Mostrar una lista de elementos separados por comas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ De manera predeterminada, los elementos de un tipo de elemento se separan con punto y coma (;) cuando se expanden. Puede utilizar la sintaxis @(*ItemType*, '*separator*') para especificar un separador distinto del predeterminado. Para obtener más información, vea [Cómo: Mostrar una lista de elementos separada por comas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="BKMK_Wildcards"></a> Utilizar caracteres comodín para especificar elementos  
  Puede utilizar los caracteres comodín **, \* y ? para especificar un grupo de archivos como entradas para una compilación en lugar de enumerar cada archivo por separado.  
@@ -113,7 +112,7 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
 <VBFile Include="D:/**/*.vb"/>  
 ```  
   
- Para obtener más información sobre los caracteres comodín, consulte [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).  
+ Para obtener más información sobre los caracteres comodín, vea [Cómo: Seleccione los archivos de compilación](../msbuild/how-to-select-the-files-to-build.md).  
   
 ##  <a name="BKMK_ExcludeAttribute"></a> Utilizar el atributo Exclude  
  Los elementos de elemento pueden contener el atributo `Exclude`, que excluye elementos específicos (archivos) del tipo de elemento. El `Exclude` atributo se usa normalmente junto con caracteres comodín. Por ejemplo, el código XML siguiente agrega todos los archivos .cs del directorio al tipo de elemento CSFile, excepto el archivo `DoNotBuild.cs`.  
@@ -131,7 +130,7 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Para obtener más información, consulte [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Para obtener más información, vea [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).  
   
 ##  <a name="BKMK_ItemMetadata"></a> Metadatos de elementos  
  Los elementos pueden contener metadatos además de la información recopilada en los atributos `Include` y `Exclude`. Estos metadatos pueden ser utilizados por las tareas que requieren más información sobre los elementos o para procesar por lotes tareas y destinos. Para obtener más información, consulte [Procesamiento por lotes](../msbuild/msbuild-batching.md).  
@@ -358,9 +357,9 @@ Output:
 ## <a name="see-also"></a>Vea también  
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)   
- [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md)   
+ [Cómo: Seleccione los archivos de compilación](../msbuild/how-to-select-the-files-to-build.md)   
  [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Cómo: Mostrar una lista de elementos separados por comas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Cómo: Mostrar una lista de elementos separada por comas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definiciones de elementos](../msbuild/item-definitions.md)   
  [Procesamiento por lotes](../msbuild/msbuild-batching.md)   
  [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)

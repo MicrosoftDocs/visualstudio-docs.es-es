@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
-ms.translationtype: MT
+ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366619"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665755"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Escribir código en el editor de código y texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ El comando "Navegar a" de Visual Studio realiza una búsqueda centrada en el có
     A medida que escribe, los resultados aparecen en una lista desplegable debajo del cuadro de texto.
 1. Para ir a un elemento, púlselo en la lista.
 
-
 ### <a name="filter-your-search"></a>Filtrar la búsqueda
 
 Para limitar la búsqueda solo los símbolos de código, comience la consulta navegar a con un "\@" caracteres. Por ejemplo, si busca `@application`, Navegar a muestra, por ejemplo, solo clases que tengan la palabra "aplicación" en ellas.
@@ -189,37 +188,37 @@ Esta característica es especialmente útil si el código tiene nombres largos.
 
  Para obtener información acerca de las opciones del editor específicas de los lenguajes, consulte:  
 
--   [Valores de configuración de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+-   [Configuración de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Uso del entorno de desarrollo de Visual Studio para C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [Usar el entorno de desarrollo de Visual C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
 -   [Opciones, editor de texto, JavaScript, formato](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>En esta sección  
 
--   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
+-   [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)  
 
 -   [Codificaciones y saltos de línea](../ide/encodings-and-line-breaks.md)  
 
--   [esquematizar](../ide/outlining.md)  
+-   [Esquematización](../ide/outlining.md)  
 
 -   [Refactorización](../ide/refactoring-in-visual-studio.md)  
 
 -   [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Using IntelliSense](../ide/using-intellisense.md)  
+-   [Usar IntelliSense](../ide/using-intellisense.md)  
 
 -   [Personalizar el editor](../ide/customizing-the-editor.md)  
 
--   [Filtrar Seguimiento del código personalizando la barra de desplazamiento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+-   [Cómo: Seguimiento del código personalizando la barra de desplazamiento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Filtrar Ver y editar código mediante definición de Peek (ALT+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [Cómo: Ver y editar código mediante Ver la definición (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [Realizar acciones rápidas con las bombillas](../ide/perform-quick-actions-with-light-bulbs.md)  
 
 -   [Fragmentos de código](../ide/code-snippets.md)  
 
--   [Usar el Cuadro de herramientas](../ide/using-the-toolbox.md)  
+-   [Usar el cuadro de herramientas](../ide/using-the-toolbox.md)  
 
 -   [Ver la estructura del código](../ide/viewing-the-structure-of-code.md)  
 

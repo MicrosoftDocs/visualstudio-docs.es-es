@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723505"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667460"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Conceptos básicos de UX para Visual Studio
 ## <a name="best-practices"></a>Procedimientos recomendados
@@ -102,7 +102,6 @@ ms.locfileid: "56723505"
 
 #### <a name="example-video-links-in-team-explorer"></a>Ejemplo: vínculos a vídeos en Team Explorer
 Hace que el usuario para leer el texto explicativo antes de descartar la interfaz de usuario es un antipatrón dentro de Visual Studio. Vínculos correctamente diseñado, vídeo deben mostrar una información sobre herramientas con información adicional de mantener el mouse y haga clic en el "&times;" debe descartar el mensaje sin necesidad de intervenciones del usuario.
-
 
  ![Texto explicativo anti&#45;patrón &#45; incorrecto](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Patrón de vínculo de vídeo incorrecto
 

@@ -25,17 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988689"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661586"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Crear una base de datos SQL mediante un diseñador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede explorar tareas básicas, como agregar tablas y columnas de definición, mediante el uso de Visual Studio para crear y actualizar un archivo de base de datos local en SQL Server Express LocalDB. Después de finalizar este tutorial, puede explorar las funciones más avanzadas usando la base de datos local como punto de partida para otros tutoriales que la necesiten.  
   
  También puede crear una base de datos mediante SQL Server Management Studio (una descarga independiente) o instrucciones Transact-SQL en el **Explorador de objetos de SQL Server** ventana de herramientas de Visual Studio.  

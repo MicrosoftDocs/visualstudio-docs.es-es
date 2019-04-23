@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a7a22e683f1db05544f235308dc5ba495f74095
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 90168dd760ba5619e2d50c864f54122b01ed66fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629526"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667214"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;implementación&gt; elemento (implementación ClickOnce)
 Identifica los atributos utilizados para la implementación de actualizaciones y la exposición del sistema.
@@ -60,14 +60,13 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
 ## <a name="elements-and-attributes"></a>Elementos y atributos
  El elemento `deployment` es obligatorio y se encuentra en el espacio de nombres `urn:schemas-microsoft-com:asm.v1` . El elemento tiene los atributos siguientes.
 
-
 | Atributo | Descripción |
 |--------------------------| - |
 | `install` | Obligatorio. Especifica si esta aplicación define una presencia en el Windows **iniciar** menú y, en el Panel de Control **agregar o quitar programas** aplicación. Los valores válidos son `true` y `false`. Si `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] siempre se ejecutará la versión más reciente de esta aplicación desde la red y no reconocerá el `subscription` elemento. |
 | `minimumRequiredVersion` | Opcional. Especifica la versión mínima de la aplicación que se puede ejecutar en el cliente. Si el número de versión de la aplicación es menor que el número de versión proporcionado en el manifiesto de implementación, no se ejecutará la aplicación. Números de versión deben especificarse en el formato `N.N.N.N`, donde `N` es un entero sin signo. Si el `install` atributo es `false`, `minimumRequiredVersion` no debe establecerse. |
 | `mapFileExtensions` | Opcional. Tiene como valor predeterminado `false`. Si `true`, todos los archivos de la implementación deben tener una extensión. deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] eliminará esta extensión de estos archivos, en cuanto descarga desde el servidor Web. Si publica la aplicación mediante el uso de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], esta extensión se agregará automáticamente a todos los archivos. Este parámetro permite que todos los archivos dentro de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación se descarguen desde un servidor Web que bloquea la transmisión de archivos que terminan en "unsafe" extensiones como .exe. |
 | `disallowUrlActivation` | Opcional. Tiene como valor predeterminado `false`. Si `true`, impide que una aplicación instalada desde la que se inicia al hacer clic en la dirección URL o escribiendo la dirección URL en Internet Explorer. Si el `install` atributo no está presente, se omite este atributo. |
-| `trustURLParameters` | Opcional. Tiene como valor predeterminado `false`. Si `true`, permite que la dirección URL para que contenga los parámetros de cadena de consulta que se pasan a la aplicación, tanto como argumentos de línea de comandos se pasan a una aplicación de línea de comandos. Para obtener más información, consulte [Cómo: recuperar información de cadena de consulta en una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Si el `disallowUrlActivation` atributo es `true`, `trustUrlParameters` debe ser excluidos del manifiesto o establecida explícitamente en `false`. |
+| `trustURLParameters` | Opcional. Tiene como valor predeterminado `false`. Si `true`, permite que la dirección URL para que contenga los parámetros de cadena de consulta que se pasan a la aplicación, tanto como argumentos de línea de comandos se pasan a una aplicación de línea de comandos. Para obtener más información, vea [Cómo: Recuperación de información de la cadena de consulta de una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Si el `disallowUrlActivation` atributo es `true`, `trustUrlParameters` debe ser excluidos del manifiesto o establecida explícitamente en `false`. |
 
  El `deployment` elemento también contiene los siguientes elementos secundarios.
 
@@ -96,7 +95,6 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
  Para .NET Framework 2.0, este elemento es necesario si el manifiesto de implementación contiene un `subscription` sección. Para .NET Framework 3.5 y versiones posteriores, este elemento es opcional y se usará de forma predeterminada el servidor y la ruta de acceso de archivo en el que se ha detectado el manifiesto de implementación.
 
  Este elemento es un elemento secundario del elemento `deployment` y tiene el siguiente atributo.
-
 
 | Atributo | Descripción |
 |------------| - |

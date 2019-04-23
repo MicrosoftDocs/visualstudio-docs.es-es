@@ -10,17 +10,16 @@ ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 670c1b751e5f1023530fe1f0c73ab16d24fd5328
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 20a42d614278413e4e6ee09ecacdf842ccee878d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988874"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662252"
 ---
 # <a name="contained-languages"></a>Lenguajes contenidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
-  
 *Contenidos de lenguajes* son lenguajes contenidos en otros lenguajes. Por ejemplo, HTML en [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] páginas pueden contener [!INCLUDE[csprcs](../includes/csprcs-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] secuencias de comandos. Una arquitectura de doble lenguaje es necesaria para el editor de archivos .aspx proporcionar IntelliSense, colores y otras características de edición para el código HTML y el lenguaje de scripting.  
   
 ## <a name="implementation"></a>Implementación  

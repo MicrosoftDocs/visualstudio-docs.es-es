@@ -33,16 +33,15 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4176e01d4419dc777e8381ebcd7dcef0b2c77b14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d143bd6ea48150ec8a2515eafc016786a8d3e33e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997492"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665134"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servicios de Windows Communication Foundation y servicios de datos WCF en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual Studio proporciona herramientas para trabajar con Windows Communication Foundation (WCF) y [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], las tecnologías de Microsoft para crear aplicaciones distribuyen. Este tema proporciona una introducción a los servicios desde un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] perspectiva. Para obtener la documentación completa, consulte [WCF Data Services 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a).
 
@@ -116,7 +115,7 @@ Visual Studio proporciona herramientas para trabajar con Windows Communication F
 
  El **configurar referencia de servicio** cuadro de diálogo le permite personalizar la configuración de un servicio. Puede cambiar la dirección de un servicio, especifique el nivel de acceso, el comportamiento asincrónico y tipos de contrato de mensaje y configurar la reutilización de tipos.
 
-## <a name="how-to-select-a-service-endpoint"></a>Filtrar Seleccione un punto de conexión de servicio
+## <a name="how-to-select-a-service-endpoint"></a>Procedimiento Seleccione un punto de conexión de servicio
  Algunos servicios de Windows Communication Foundation (WCF) exponen varios puntos de conexión a través del cual un cliente puede comunicarse con el servicio. Por ejemplo, un servicio puede exponer un punto de conexión que utiliza un nombre de usuario y el enlace de HTTP / seguridad de contraseña y un segundo punto de conexión que usa la autenticación de Windows y FTP. El primer punto de conexión podría utilizarse en aplicaciones que tienen acceso el servicio desde fuera de un firewall, mientras que el segundo podría utilizarse en una intranet.
 
  En tal caso, puede especificar el `endpointConfigurationName` como un parámetro al constructor para una referencia de servicio.
@@ -159,7 +158,7 @@ Visual Studio proporciona herramientas para trabajar con Windows Communication F
 
 4.  Dentro de la `<EndPoint>` etiqueta, encontrará un `name="` *SomeService* `"` parámetro (donde *SomeService* representa un nombre de punto de conexión). Éste es el nombre para el punto de conexión que se puede pasar a la `endpointConfigurationName As String` sobrecarga de un constructor para una referencia de servicio.
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>Filtrar Llamar a un método de servicio de forma asincrónica
+## <a name="how-to-call-a-service-method-asynchronously"></a>Procedimiento Llamar a un método de servicio de forma asincrónica
  La mayoría de los métodos de servicios Windows Communication Foundation (WCF) se pueden llamar de forma sincrónica o asincrónica. Llamar a un método de forma asincrónica permite que la aplicación seguir trabajando mientras se llama el método cuando funciona con una conexión lenta.
 
  De forma predeterminada, cuando se agrega una referencia de servicio a un proyecto está configurado para llamar a métodos de forma sincrónica. Puede cambiar el comportamiento para llamar a métodos de forma asincrónica cambiando un valor en el **configurar referencia de servicio** cuadro de diálogo.
@@ -177,7 +176,7 @@ Visual Studio proporciona herramientas para trabajar con Windows Communication F
 
 3.  En el **configurar referencia de servicio** cuadro de diálogo, seleccione el **generar operaciones asincrónicas** casilla de verificación.
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>Filtrar Enlazar los datos devueltos por un servicio
+## <a name="how-to-bind-data-returned-by-a-service"></a>Procedimiento Enlazar los datos devueltos por un servicio
  Puede enlazar los datos devueltos por un servicio de Windows Communication Foundation (WCF) a un control, tal como cualquier otro origen de datos se puede enlazar a un control. Al agregar una referencia a un servicio WCF, si el servicio contiene tipos compuestos que devuelven datos, se agregan automáticamente a la **orígenes de datos** ventana.
 
 #### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>Para enlazar un control con el único campo de datos devuelto por un servicio WCF
@@ -208,7 +207,7 @@ Visual Studio proporciona herramientas para trabajar con Windows Communication F
 
 5.  Arrastre el nodo al formulario. Los controles se agregarán al formulario junto con un <xref:System.Windows.Forms.BindingSource> componente y un <xref:System.Windows.Forms.BindingNavigator> componente.
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Filtrar Configurar un servicio para volver a usar los tipos existentes
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Procedimiento Configurar un servicio para volver a usar los tipos existentes
  Cuando se agrega una referencia de servicio a un proyecto, se generan los tipos definidos en el servicio en el proyecto local. En muchos casos, esto crea tipos duplicados cuando se usa un servicio común [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] tipos o cuando se definen los tipos en una biblioteca compartida.
 
  Para evitar este problema, los tipos en ensamblados de referencia se comparten de forma predeterminada. Si desea deshabilitar el tipo de uso compartido para uno o varios ensamblados, puede hacer en el **configurar referencia de servicio** cuadro de diálogo.

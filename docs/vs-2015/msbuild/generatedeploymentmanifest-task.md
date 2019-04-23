@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a564028017e97a10ba0dda51c2e0db23dd1067a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f0c13e5ea8778ca91c30383287aaad6e965bb65
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792947"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665849"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Genera un manifiesto de implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Un manifiesto de implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] describe la implementación de una aplicación definiendo una identidad única para la implementación, identificando opciones de la implementación, como el modo de instalación o el modo en línea, especificando la configuración y la ubicación de actualización de la aplicación y señalando el manifiesto de la aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] correspondiente.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -44,7 +43,7 @@ Genera un manifiesto de implementación de [!INCLUDE[ndptecclick](../includes/nd
 |`Description`|Parámetro `String` opcional.<br /><br /> Especifica una descripción opcional para la aplicación.|  
 |`DisallowUrlActivation`|Parámetro `Boolean` opcional.<br /><br /> Especifica si la aplicación debe ejecutarse automáticamente cuando se abre mediante una dirección URL. Si este parámetro es `true`, la aplicación solo se puede iniciar desde el menú Inicio. El valor predeterminado de este parámetro es `false`. Este valor solo se aplica cuando el valor del parámetro `Install` es `true`.|  
 |`EntryPoint`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Indica el punto de entrada para el manifiesto del ensamblado generado. En un manifiesto de implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], este valor especifica el manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].<br /><br /> En [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], la [tarea GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md) requería un parámetro `EntryPoint` para generar un manifiesto de aplicación. (Los manifiestos de ensamblado o nativos no necesitan el parámetro `EntryPoint`). Este requisito se exigía con el error de compilación: "MSB3185: No se especificó EntryPoint para el manifiesto."<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] no emite este error cuando no se especifica el parámetro de tarea `EntryPoint`. En su lugar, la etiqueta \<customHostSpecified> se inserta como etiqueta secundaria de \<entryPoint>; por ejemplo:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Puede agregar dependencias de DLL al manifiesto de aplicación siguiendo estos pasos:<br /><br /> 1.  Resuelva las referencias del ensamblado con una llamada a <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Pase el resultado de la tarea anterior y el propio ensamblado a <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Pase las dependencias a través del parámetro `Dependencies` a <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
-|`ErrorReportUrl`|Parámetro [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) opcional.<br /><br /> Especifica la dirección URL de la página web que se muestra en los cuadros de diálogo durante las instalaciones ClickOnce.|  
+|`ErrorReportUrl`|(Opcional [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parámetro.<br /><br /> Especifica la dirección URL de la página web que se muestra en los cuadros de diálogo durante las instalaciones ClickOnce.|  
 |`InputManifest`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica un documento XML de entrada que sirve de base para el generador de manifiestos. De este modo, los datos estructurados, como las definiciones personalizadas del manifiesto, pueden reflejarse en el manifiesto de salida. El elemento raíz del documento XML debe ser un nodo de ensamblado en el espacio de nombres asmv1.|  
 |`Install`|Parámetro `Boolean` opcional.<br /><br /> Especifica si la aplicación es una aplicación instalada o se trata de una aplicación que únicamente está disponible en línea. Si este parámetro es `true`, la aplicación se instalará en el menú Inicio del usuario y se podrá eliminar a través del cuadro de diálogo Agregar o quitar programas. Si este parámetro es `false`, la aplicación está destinada para su uso en línea desde una página web. El valor predeterminado de este parámetro es `true`.|  
 |`MapFileExtensions`|Parámetro `Boolean` opcional.<br /><br /> Especifica si se utiliza la asignación de extensión de nombre de archivo .deploy. Si este parámetro es `true`, todos los archivos de programa se publican con la extensión de nombre de archivo .deploy. Esta opción es útil para la seguridad de los servidores web, ya que limita el número de extensiones de nombre que deben desbloquearse para habilitar la implementación de la aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. El valor predeterminado de este parámetro es `false`.|  

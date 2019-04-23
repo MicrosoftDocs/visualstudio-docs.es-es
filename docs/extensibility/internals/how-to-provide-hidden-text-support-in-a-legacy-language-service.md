@@ -1,5 +1,5 @@
 ---
-title: Filtrar Proporcionar compatibilidad con texto oculto en un servicio de lenguaje heredado | Documentos de Microsoft
+title: Procedimiento Proporcionar compatibilidad con texto oculto en un servicio de lenguaje heredado | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df34e65eda5dd871dc62132059dce0ac75e4030f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: b7dc3d84ab543c7e3fc49060d20a33738bf5a8db
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612441"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661469"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Filtrar Proporcionar compatibilidad con texto oculto en un servicio de lenguaje heredado
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procedimiento Proporcionar compatibilidad con texto oculto en un servicio de lenguaje heredado
 Puede crear áreas de texto oculto además de regiones de esquema. Regiones de texto oculto pueden ser controlado por el cliente o controlado por el editor y se utilizan para ocultar una región de texto completo. El editor muestra una región oculta como líneas horizontales. Un ejemplo de esto es el **solo Script** vista en el editor HTML.
-
 
 ## <a name="to-implement-a-hidden-text-region"></a>Para implementar una región de texto oculto
 

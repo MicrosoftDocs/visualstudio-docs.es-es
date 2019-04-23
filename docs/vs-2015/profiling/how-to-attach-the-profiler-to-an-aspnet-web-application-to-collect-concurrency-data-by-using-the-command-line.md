@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Adjuntar el Profiler a una aplicación Web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos | Microsoft Docs
+title: Procedimiento Adjuntar el Profiler a una aplicación Web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6340b30f393fc2690a76febf335883b0ebf6f6ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ea13b68f65d20f48a15c155761adef6bcbd4536b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801768"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666025"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Adjuntar al Profiler a una aplicación Web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para adjuntar el generador de perfiles a una aplicación ASP.NET y recopilar datos de simultaneidad de procesos y subprocesos.  
@@ -46,7 +46,6 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles.                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500. |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo (.etl) independiente.       |
-
 
 2. Inicie la aplicación ASP.NET de la manera habitual.  
 
