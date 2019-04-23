@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81deac9f46c03cac997f555f817bba5831409bca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 60ad63bd5a6fa3b8cca2a288e1c42b1a2ab326bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075888"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementar categorías personalizadas y mostrar los elementos
 Un VSPackage puede proporcionar control de las fuentes y colores de su texto para el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) a través de las categorías personalizadas y mostrar los elementos.
@@ -51,7 +51,7 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
 
 - Llenar el registro con dos valores:
 
-  |nombre|Tipo|Datos|Descripción|
+  |Name|Tipo|Datos|Descripción|
   |----------|----------|----------|-----------------|
   |Categoría|REG_SZ|GUID|Crea un GUID para identificar la categoría.|
   |Paquete|REG_SZ|GUID|El GUID del servicio de VSPackage que admite la categoría.|
@@ -66,7 +66,7 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
 
 - Llenar el registro con dos valores:
 
-  |nombre|Tipo|Datos|Descripción|
+  |Name|Tipo|Datos|Descripción|
   |----------|----------|----------|-----------------|
   |Categoría|REG_SZ|GUID|Crea un GUID para identificar el grupo.|
   |Paquete|REG_SZ|GUID|El GUID del servicio que admite la categoría.|
@@ -81,11 +81,11 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
 
 - Los métodos se implementan a través de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> debe proporcionar el IDE con:
 
-  -   Listas de **mostrar elementos** en el **categoría.**
+  - Listas de **mostrar elementos** en el **categoría.**
 
-  -   Nombres localizables para **mostrar elementos**.
+  - Nombres localizables para **mostrar elementos**.
 
-  -   Mostrar la información de cada miembro de **categoría**.
+  - Mostrar la información de cada miembro de **categoría**.
 
   > [!NOTE]
   >  Cada **categoría** debe contener al menos un **Mostrar artículo**.
@@ -94,11 +94,11 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
 
    Su implementación proporciona el IDE con:
 
-  -   Una lista de los **categorías** que componen un grupo determinado.
+  - Una lista de los **categorías** que componen un grupo determinado.
 
-  -   Acceso a las instancias de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> que admiten cada **categoría** dentro del grupo.
+  - Acceso a las instancias de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> que admiten cada **categoría** dentro del grupo.
 
-  -   Nombres de grupo localizable.
+  - Nombres de grupo localizable.
 
 - Actualizando el IDE:
 
@@ -109,13 +109,13 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
 ## <a name="to-handle-font-and-color-changes"></a>Para controlar los cambios de fuente y color
  Para admitir correctamente la coloración de texto que muestra un paquete VSPackage, el servicio de coloración compatible con el paquete VSPackage debe responder a los cambios iniciados por el usuario a través de la **fuentes y colores** página de propiedades. Un VSPackage para ello:
 
--   Controlar eventos generados por el IDE implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfaz.
+- Controlar eventos generados por el IDE implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfaz.
 
      El IDE llama al método apropiado siguiendo las modificaciones de usuario de la **fuentes y colores** página. Por ejemplo, llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> método si se selecciona una nueva fuente.
 
-     O bien
+     -o bien-
 
--   Sondear el IDE para que los cambios.
+- Sondear el IDE para que los cambios.
 
      Esto puede hacerse a través del sistema implementado <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz. Aunque principalmente por compatibilidad con la persistencia, el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> método puede utilizarse para obtener información de fuente y color para **mostrar elementos**. Para obtener más información, consulte [acceso a la configuración de fuente y color almacenada](../extensibility/accessing-stored-font-and-color-settings.md).
 

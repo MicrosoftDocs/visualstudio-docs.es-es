@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b5f275683309d630f147940e97f924496af79179
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525796"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074823"
 ---
 # <a name="content-model-view"></a>Vista Modelo de contenido
 
@@ -97,13 +97,13 @@ Puede desplazar la superficie de diseño mediante el uso de las barras de despla
 
 La capacidad de deshacer/rehacer está habilitada en la vista Modelo de contenido para las siguientes acciones:
 
--   Agregar un nodo único arrastrándolo y colocándolo.
+- Agregar un nodo único arrastrándolo y colocándolo.
 
--   Agregar varios nodos desde la ventana de resultados de la búsqueda del Explorador de esquemas.
+- Agregar varios nodos desde la ventana de resultados de la búsqueda del Explorador de esquemas.
 
--   Agregar nodos desde la vista Inicio.
+- Agregar nodos desde la vista Inicio.
 
--   Eliminar uno o varios nodos.
+- Eliminar uno o varios nodos.
 
 ## <a name="zoom"></a>Zoom
 
@@ -111,9 +111,9 @@ Zoom está disponible en la esquina inferior derecha de la vista de modelo de co
 
 El zoom se puede controlar de las maneras siguientes:
 
--   Si mantiene presionada la **Ctrl** las ruedas clave y girando el mouse cuando se mantiene el mouse sobre la superficie de la vista modelo de contenido.
+- Si mantiene presionada la **Ctrl** las ruedas clave y girando el mouse cuando se mantiene el mouse sobre la superficie de la vista modelo de contenido.
 
--   Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.
+- Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.
 
 El control deslizante de Zoom es opaco al seleccionarla, mantenga el mouse sobre él o usar **Ctrl** con la rueda del mouse para hacer zoom; en el resto del tiempo, es transparente.
 

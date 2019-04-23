@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b07a311123299c0df76834a4b07d3a39f79f0ce2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 11d8e3c4ad6c17b000dbf076928c4b1b2c584973
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999749"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076268"
 ---
 # <a name="writing-user-commands-and-actions"></a>Escribir acciones y comandos de usuario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,19 +23,19 @@ Puede personalizar un lenguaje específico de dominio agregando comandos al diag
   
 ## <a name="user-actions"></a>Acciones del usuario  
   
--   [Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) : puede personalizar el comportamiento de comandos, como copiar e imprimir.  
+- [Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) : puede personalizar el comportamiento de comandos, como copiar e imprimir.  
   
--   [Cómo: Agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) – crear sus propios comandos que pueden actualizar su modelo o recursos externos.  
+- [Cómo: Agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) – crear sus propios comandos que pueden actualizar su modelo o recursos externos.  
   
--   [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) : permite al usuario mover elementos de un diagrama a otro, incluidos los diagramas UML. Puede almacenar referencias a un modelo en otro.  
+- [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) : permite al usuario mover elementos de un diagrama a otro, incluidos los diagramas UML. Puede almacenar referencias a un modelo en otro.  
   
--   [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) : permitir que el usuario haga clic en a través de un elemento a otro elemento que hace referencia.  
+- [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) : permitir que el usuario haga clic en a través de un elemento a otro elemento que hace referencia.  
   
--   [Cómo: Programar el comportamiento de copiar y pegar - redirección](../misc/how-to-program-copy-and-paste-behavior-redirect.md) : cómo usar ElementOperations.  
+- [Cómo: Programar el comportamiento de copiar y pegar - redirección](../misc/how-to-program-copy-and-paste-behavior-redirect.md) : cómo usar ElementOperations.  
   
--   [Cómo: Acceder a la selección actual y restringirla](../modeling/how-to-access-and-constrain-the-current-selection.md)  
+- [Cómo: Acceder a la selección actual y restringirla](../modeling/how-to-access-and-constrain-the-current-selection.md)  
   
--   [Personalizar herramientas de elemento](../modeling/customizing-element-tools.md)  
+- [Personalizar herramientas de elemento](../modeling/customizing-element-tools.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md)

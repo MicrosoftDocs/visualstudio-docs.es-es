@@ -1,5 +1,5 @@
 ---
-title: Filtrar Utilice la ventana Desensamblado | Documentos de Microsoft
+title: Procedimiento Utilice la ventana Desensamblado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,14 +25,14 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077503"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>Filtrar Utilice la ventana Desensamblado
+# <a name="how-to-use-the-disassembly-window"></a>Procedimiento Utilice la ventana Desensamblado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Esta característica solo está disponible si está habilitada la depuración de nivel de dirección la **opciones** cuadro de diálogo, **depuración** nodo. No está disponible para la depuración de script ni de SQL.  
@@ -64,13 +64,13 @@ Esta característica solo está disponible si está habilitada la depuración de
   
 ### <a name="to-display-the-disassembly-window"></a>Para mostrar la ventana Desensamblado  
   
--   En el **depurar** menú, elija **Windows**y haga clic en **desensamblado**.  
+- En el **depurar** menú, elija **Windows**y haga clic en **desensamblado**.  
   
      El depurador debe encontrarse en modo de interrupción.  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>Para activar o desactivar la información opcional  
   
--   Haga clic en el **desensamblado** ventana y Active o desactive las opciones que desee en el menú contextual.  
+- Haga clic en el **desensamblado** ventana y Active o desactive las opciones que desee en el menú contextual.  
   
      Una flecha amarilla en el margen izquierdo indica la ubicación del punto de ejecución actual. Para el código nativo, este punto se corresponde con el contador de programas de la CPU. Esta ubicación indica la instrucción que debe ejecutarse a continuación en el programa.  
   

@@ -10,12 +10,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 68ab00c03f435ce479c1fe41074509a67a458061
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94703f13eba0c58aad24597bc65beeea862e79e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076830"
 ---
 # <a name="core-interfaces"></a>Interfaces básicas
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
   
 - Visual Studio (VS)  
   
-##  <a name="Breakpoints"></a> Puntos de interrupción  
+## <a name="Breakpoints"></a> Puntos de interrupción  
  Estas interfaces están relacionados con la implementación y realizar un seguimiento de los puntos de interrupción.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -88,7 +88,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Representa una enumeración a través de un conjunto de puntos de interrupción enlazados.|  
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Representa una enumeración a través de un conjunto de puntos de interrupción que no se pudo enlazar a una ubicación de memoria.|  
   
-##  <a name="Contexts"></a> Contextos  
+## <a name="Contexts"></a> Contextos  
  Estas interfaces representan distintos tipos de contextos dentro del programa que se está depurando.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -102,7 +102,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Representa un contexto del marco de pila en un punto de interrupción o una excepción.|  
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Representa una enumeración a través de un conjunto de contextos de código.|  
   
-##  <a name="CoreServer"></a> Server Core  
+## <a name="CoreServer"></a> Server Core  
  Estas interfaces representan la máquina en la que se está depurando un programa. Estos elementos se implementan mediante [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] , pero puede llamar en los motores de depuración.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -110,7 +110,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Proporciona acceso a los puertos y proveedores de puertos, así como información sobre el equipo.|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Representa un [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) que admite la depuración remota.|  
   
-##  <a name="DebugEngines"></a> Motores de depuración  
+## <a name="DebugEngines"></a> Motores de depuración  
  Estas interfaces representan los motores de depuración y los eventos asociados.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -122,7 +122,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Representa un nodo de programa que controla varios motores de depuración.|  
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|Proporciona una forma para el SDM obtener una interfaz para el motor de depuración desde un subproceso, el programa o el marco de pila.|  
   
-##  <a name="Documents"></a> Documentos  
+## <a name="Documents"></a> Documentos  
  Estas interfaces representan documentos (archivos de origen) y sus elementos asociados.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -137,7 +137,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|Representa un documento de texto proporcionado por la DE (derivado de [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), proporcionando el texto real.|  
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Enviado por el DE especificar cambios en un archivo de origen que está en la memoria.|  
   
-##  <a name="Events"></a> Eventos  
+## <a name="Events"></a> Eventos  
  Estas interfaces representan todos los eventos que se envían entre la DE y el Administrador de depuración de la sesión (SDM).  
   
 |Interfaz|Implementado por|Descripción|  
@@ -182,7 +182,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Enviado por la DE cuando un subproceso se ha destruido.|  
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Enviado por la DE cuando un subproceso ha cambiado su nombre.|  
   
-##  <a name="Expressions"></a> Expresiones  
+## <a name="Expressions"></a> Expresiones  
  Estas interfaces representan las expresiones se evalúan en un contexto determinado.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -191,7 +191,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Representa un contexto en el que se evalúa una expresión. Obtenida la [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) interfaz.|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Enviado por la DE una vez completada una evaluación de expresión asincrónica.|  
   
-##  <a name="Memory"></a> Memoria  
+## <a name="Memory"></a> Memoria  
  Estas interfaces representan secuencias de bytes en memoria.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -199,7 +199,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Representa una secuencia de bytes de memoria que puede leer o escribir en.|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Representa una ubicación de memoria de una secuencia de bytes.|  
   
-##  <a name="Modules"></a> Módulos  
+## <a name="Modules"></a> Módulos  
  Estas interfaces representan un módulo, que corresponde a un archivo ejecutable o. Archivo DLL.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -210,7 +210,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|Representa la información del servidor de origen que se encuentra en un archivo PDB.|  
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Representa una enumeración a través de un conjunto de módulos que se conocen por un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|  
   
-##  <a name="Ports"></a> Puertos  
+## <a name="Ports"></a> Puertos  
  Estas interfaces representan los puertos y los proveedores de puertos.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -230,7 +230,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)|VS, PS|Representa una enumeración a través de un conjunto de puertos.|  
 |[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)|VS|Representa una enumeración a través de un conjunto de proveedores de puertos.|  
   
-##  <a name="Processes"></a> Procesos  
+## <a name="Processes"></a> Procesos  
  Estas interfaces representan los procesos, un único archivo ejecutable que contiene uno o más programas.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -242,7 +242,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Representa un proceso que debe realizar un seguimiento de qué sesión está asociado a él.|  
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Representa una enumeración de un conjunto de procesos en un puerto.|  
   
-##  <a name="Programs"></a> Programas  
+## <a name="Programs"></a> Programas  
  Estas interfaces representan programas, las unidades lógicas de ejecución que no corresponden necesariamente a un archivo ejecutable físico o un módulo.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -261,7 +261,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Representa un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfaces que puede serializar a través de límites de proceso o subproceso.|  
 |[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Representa una enumeración de un conjunto de programas.|  
   
-##  <a name="Properties"></a> Propiedades  
+## <a name="Properties"></a> Propiedades  
  Estas interfaces representan las propiedades de un valor asociado a un contexto determinado, normalmente es el resultado de evaluación de una expresión.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -275,7 +275,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Representa una enumeración a través de un conjunto de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estructuras que describen las variables, registros, parámetros y expresiones.|  
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Representa una enumeración a través de un conjunto de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructuras.|  
   
-##  <a name="StackFrames"></a> Marcos de pila  
+## <a name="StackFrames"></a> Marcos de pila  
  Estas interfaces representan un marco de pila, un contexto en que se ha producido un punto de interrupción o excepción.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -285,7 +285,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|Representa una enumeración en el conjunto de [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) estructuras que especifican la función de llamar a la secuencia que se utiliza para llegar a un marco de pila determinado.|  
 |[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|Representa una enumeración a través de un conjunto de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructuras, donde se describen los marcos de pila.|  
   
-##  <a name="Threads"></a> Subprocesos  
+## <a name="Threads"></a> Subprocesos  
  Estas interfaces representan los subprocesos y los eventos asociados.  
   
 |Interfaz|Implementado por|Descripción|  
@@ -296,7 +296,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Enviado por la DE cuando un subproceso ha cambiado su nombre.|  
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Representa una enumeración a través de un conjunto de subprocesos.|  
   
-##  <a name="TypeVisualizers"></a> Visualizadores de tipo  
+## <a name="TypeVisualizers"></a> Visualizadores de tipo  
  Estas interfaces proporcionan compatibilidad con los visualizadores de tipo. Estas interfaces se implementan normalmente mediante un evaluador de expresiones.  
   
 |Interfaz|Implementado por|Descripción|  

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Usar transacciones para actualizar el modelo
+title: Procedimiento Usar transacciones para actualizar el modelo
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075030"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Filtrar Usar transacciones para actualizar el modelo
+# <a name="how-to-use-transactions-to-update-the-model"></a>Procedimiento Usar transacciones para actualizar el modelo
 Las transacciones Asegúrese de que los cambios realizados en el almacén se tratan como un grupo. Los cambios que se agrupan pueden ser confirmados o revertidos como una sola unidad.
 
  Siempre que modifica el código del programa, agrega o elimina cualquier elemento en el Store en Visual Studio SDK de visualización y modelado, debe hacerlo dentro de una transacción. Debe haber una instancia activa de <xref:Microsoft.VisualStudio.Modeling.Transaction> asociada con el Store cuando se produce el cambio. Esto se aplica a todos los elementos del modelo, las relaciones, formas, diagramas y sus propiedades.
@@ -57,9 +57,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Deshacer una transacción
  Para asegurarse de que permanece en el Store o se revierte a su estado anterior a la transacción, puede utilizar cualquiera de estas tácticas:
 
-1.  Generar una excepción que no se captura dentro del ámbito de la transacción.
+1. Generar una excepción que no se captura dentro del ámbito de la transacción.
 
-2.  Revertir explícitamente la transacción:
+2. Revertir explícitamente la transacción:
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();

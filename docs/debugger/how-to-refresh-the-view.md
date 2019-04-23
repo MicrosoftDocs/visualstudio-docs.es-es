@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: actualizar la vista | Microsoft Docs'
+title: Procedimiento Actualice la vista | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6a1b70326e2eca32c1be2c27382e55c51bc5f1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 485c9e7152b3ed533c08e3f4f48409455849c43e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075056"
 ---
-# <a name="how-to-refresh-the-view"></a>Cómo: Actualizar la vista
+# <a name="how-to-refresh-the-view"></a>Procedimiento Actualización de la vista
 Spy ++ toma una "instantánea" de las tablas del sistema y actualiza una vista basada en esta información. Es importante que actualice periódicamente las vistas del sistema. Si tiene una vista de Spy ++ abra y no se ha actualizado la vista, no verá los procesos, subprocesos y ventanas que se crean posteriormente. Además, puede ver los elementos que ya no existen. El **actualizar** comando está disponible para todas las vistas excepto en la vista de mensajes.
 
 ### <a name="to-refresh-the-currently-active-view"></a>Para actualizar la vista activa
 
--   Elija **actualizar** desde el **ventana** menú o haga clic en el **actualizar** botón en la barra de herramientas.
+- Elija **actualizar** desde el **ventana** menú o haga clic en el **actualizar** botón en la barra de herramientas.
 
 ## <a name="see-also"></a>Vea también
 - [Usar Spy++](../debugger/using-spy-increment.md)

@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d2c2c6f178c952a5516533c2722bc451be2e3bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075381"
 ---
 # <a name="relationships-in-datasets"></a>Relaciones en conjuntos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:Syste
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Para crear una relación entre dos tablas de datos  
   
-1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Cómo: Abrir un conjunto de datos en el Diseñador de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Cómo: Abrir un conjunto de datos en el Diseñador de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Arrastre un **relación** objeto desde el **DataSet** cuadro de herramientas a la tabla de datos secundaria en la relación.  
+2. Arrastre un **relación** objeto desde el **DataSet** cuadro de herramientas a la tabla de datos secundaria en la relación.  
   
      El **relación** abre el cuadro de diálogo, rellenar el **tabla secundaria** cuadro con la tabla que se arrastró el **relación** objeto a.  
   
-3.  Seleccione la tabla primaria desde la **tabla primaria** cuadro. La tabla primaria contiene los registros en el lado "uno" de una relación uno a varios.  
+3. Seleccione la tabla primaria desde la **tabla primaria** cuadro. La tabla primaria contiene los registros en el lado "uno" de una relación uno a varios.  
   
-4.  Compruebe que la tabla secundaria correcta se muestra en el **tabla secundaria** cuadro. La tabla secundaria contiene los registros en el lado "varios" de una relación uno a varios.  
+4. Compruebe que la tabla secundaria correcta se muestra en el **tabla secundaria** cuadro. La tabla secundaria contiene los registros en el lado "varios" de una relación uno a varios.  
   
-5.  Escriba un nombre para la relación en el **nombre** cuadro o deje el nombre predeterminado basándose en las tablas seleccionadas. Éste es el nombre de los datos reales <xref:System.Data.DataRelation> objeto en el código.  
+5. Escriba un nombre para la relación en el **nombre** cuadro o deje el nombre predeterminado basándose en las tablas seleccionadas. Éste es el nombre de los datos reales <xref:System.Data.DataRelation> objeto en el código.  
   
-6.  Seleccione las columnas que se unen las tablas en el **columnas de clave** y **columnas de clave externa** enumera.  
+6. Seleccione las columnas que se unen las tablas en el **columnas de clave** y **columnas de clave externa** enumera.  
   
-7.  Seleccione si desea crear una relación, la restricción o ambas. Para obtener información, consulte [Introducción a los objetos DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Seleccione si desea crear una relación, la restricción o ambas. Para obtener información, consulte [Introducción a los objetos DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8.  Active o desactive el **relación anidada** cuadro. Seleccione esta opción establece la <xref:System.Data.DataRelation.Nested%2A> propiedad `true`, y hace que el elemento secundario filas de la relación se anidan dentro de la columna primaria cuando se escribe como datos XML o sincronizadas con esas filas <xref:System.Xml.XmlDataDocument>. Para obtener más información, consulte [anidar objetos DataRelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Active o desactive el **relación anidada** cuadro. Seleccione esta opción establece la <xref:System.Data.DataRelation.Nested%2A> propiedad `true`, y hace que el elemento secundario filas de la relación se anidan dentro de la columna primaria cuando se escribe como datos XML o sincronizadas con esas filas <xref:System.Xml.XmlDataDocument>. Para obtener más información, consulte [anidar objetos DataRelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Establezca las reglas que se aplicará cuando se va a realizar cambios en los registros en estas tablas. Para obtener más información, consulta <xref:System.Data.Rule>.  
   
@@ -108,6 +108,6 @@ Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:Syste
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Para mostrar el nombre de una relación en el Diseñador de Dataset  
   
-1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Cómo: Abrir un conjunto de datos en el Diseñador de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Cómo: Abrir un conjunto de datos en el Diseñador de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Desde el **datos** menú, seleccione el **Mostrar etiquetas de relación** comando para mostrar el nombre de relación. Borrar ese comando para ocultar el nombre de relación.
+2. Desde el **datos** menú, seleccione el **Mostrar etiquetas de relación** comando para mostrar el nombre de relación. Borrar ese comando para ocultar el nombre de relación.

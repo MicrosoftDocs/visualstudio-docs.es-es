@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34914f382ded8dc7fbea4db49517c17024a8e3a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5c36e5df52d4caa34d611f7f1c26b8a5187a637a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077568"
 ---
 # <a name="bind-breakpoints"></a>Enlazar los puntos de interrupción
 Si el usuario establece un punto de interrupción, quizás presionando **F9**, el IDE se formule la solicitud y se solicita la sesión de depuración para crear el punto de interrupción.
@@ -23,15 +23,15 @@ Si el usuario establece un punto de interrupción, quizás presionando **F9**, e
 ## <a name="set-a-breakpoint"></a>Establecer un punto de interrupción
  Establecer un punto de interrupción es un proceso en dos pasos, porque el código o los datos afectados por el punto de interrupción podrían no estar disponibles. En primer lugar, se debe describir el punto de interrupción y, a continuación, tal como están disponibles el código o datos, se debe estar enlazada a ese código o datos, como se indica a continuación:
 
-1.  El punto de interrupción se solicita desde los motores de depuración relevantes (DEs) y, a continuación, se enlaza el punto de interrupción en el código o datos cuando se encuentre disponible.
+1. El punto de interrupción se solicita desde los motores de depuración relevantes (DEs) y, a continuación, se enlaza el punto de interrupción en el código o datos cuando se encuentre disponible.
 
-2.  La solicitud de punto de interrupción se envía a la sesión de depuración, que lo envía a todos los DEs pertinentes. Cualquier DE que elige para controlar el punto de interrupción crea correspondiente pendiente de punto de interrupción.
+2. La solicitud de punto de interrupción se envía a la sesión de depuración, que lo envía a todos los DEs pertinentes. Cualquier DE que elige para controlar el punto de interrupción crea correspondiente pendiente de punto de interrupción.
 
-3.  La sesión de depuración recopila los puntos de interrupción pendientes y los envía al paquete de depuración (el componente de depuración de Visual Studio).
+3. La sesión de depuración recopila los puntos de interrupción pendientes y los envía al paquete de depuración (el componente de depuración de Visual Studio).
 
-4.  El paquete de depuración solicita la sesión de depuración para enlazar el punto de interrupción pendiente al código o datos. La sesión de depuración envía esta solicitud a todos los DEs pertinentes.
+4. El paquete de depuración solicita la sesión de depuración para enlazar el punto de interrupción pendiente al código o datos. La sesión de depuración envía esta solicitud a todos los DEs pertinentes.
 
-5.  Si la DE se puede enlazar el punto de interrupción, envía que un punto de interrupción enlazado el evento a la sesión de depuración. Si no es así, envía un evento de error de punto de interrupción en su lugar.
+5. Si la DE se puede enlazar el punto de interrupción, envía que un punto de interrupción enlazado el evento a la sesión de depuración. Si no es así, envía un evento de error de punto de interrupción en su lugar.
 
 ## <a name="pending-breakpoints"></a>Puntos de interrupción pendientes
  Un punto de interrupción pendiente puede enlazar a varias ubicaciones del código. Por ejemplo, puede enlazar una línea de código fuente de una plantilla de C++ para cada secuencia de código generado a partir de la plantilla. La sesión de depuración puede usar un evento de punto de interrupción enlazado para enumerar los contextos de código enlazados a un punto de interrupción en el momento en que se envió el evento. Más contextos de código se pueden enlazar más adelante, por lo que puede enviar la DE que punto de interrupción varias enlaza eventos para cada solicitud de enlace. Sin embargo, a DE debe enviar un solo evento de error de punto de interrupción por solicitud de enlace.

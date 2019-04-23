@@ -1,5 +1,5 @@
 ---
-title: Filtrar Almacenar datos en caché en un documento protegido por contraseña
+title: Procedimiento Almacenar datos en caché en un documento protegido por contraseña
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f6e9bea3d45249d847f2dccfe522f832d6a07b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074013"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Procedimiento Almacenar datos en caché en un documento protegido por contraseña
   Si agrega datos a la caché de datos en un documento o libro que está protegido con una contraseña, no se guardan los cambios realizados en los datos en caché automáticamente. Puede guardar los cambios a los datos almacenados en caché mediante el reemplazo de dos métodos en el proyecto.
@@ -30,13 +30,13 @@ ms.locfileid: "56644528"
 
 ### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>Para almacenar datos en un documento de Word que está protegido con una contraseña
 
-1.  En el `ThisDocument` class, marcar un campo público o una propiedad en la memoria caché. Para obtener más información, consulte [almacenar en caché datos](../vsto/caching-data.md).
+1. En el `ThisDocument` class, marcar un campo público o una propiedad en la memoria caché. Para obtener más información, consulte [almacenar en caché datos](../vsto/caching-data.md).
 
-2.  Invalidar el <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> método en el `ThisDocument` clase y quitar la protección del documento.
+2. Invalidar el <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> método en el `ThisDocument` clase y quitar la protección del documento.
 
      Cuando se guarda el documento, el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] llama a este método para darle una oportunidad para desproteger el documento. Esto permite realizar cambios en los datos en caché se guarden.
 
-3.  Invalidar el <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> método en el `ThisDocument` clase y volver a aplicar la protección al documento.
+3. Invalidar el <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> método en el `ThisDocument` clase y volver a aplicar la protección al documento.
 
      Después de guardar el documento, el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] llama a este método para darle la oportunidad de volver a aplicar la protección al documento.
 
@@ -54,13 +54,13 @@ ms.locfileid: "56644528"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Para almacenar datos en un libro de Excel que está protegido con una contraseña
 
-1.  En el `ThisWorkbook` clase o una de las `Sheet` *n* clases, marcar un campo público o una propiedad en la memoria caché. Para obtener más información, consulte [almacenar en caché datos](../vsto/caching-data.md).
+1. En el `ThisWorkbook` clase o una de las `Sheet` *n* clases, marcar un campo público o una propiedad en la memoria caché. Para obtener más información, consulte [almacenar en caché datos](../vsto/caching-data.md).
 
-2.  Invalidar el <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> método en el `ThisWorkbook` clase y quitar la protección del libro.
+2. Invalidar el <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> método en el `ThisWorkbook` clase y quitar la protección del libro.
 
      Cuando se guarda el libro, el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] llama a este método para darle una oportunidad para desproteger el libro. Esto permite realizar cambios en los datos en caché se guarden.
 
-3.  Invalidar el <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> método en el `ThisWorkbook` clase y volver a aplicar la protección al documento.
+3. Invalidar el <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> método en el `ThisWorkbook` clase y volver a aplicar la protección al documento.
 
      Una vez guardado el libro, el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] llama a este método para darle la oportunidad de volver a aplicar la protección en el libro.
 

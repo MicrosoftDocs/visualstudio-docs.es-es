@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982940"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077815"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalar analizadores de .NET Compiler Platform
 
@@ -24,14 +24,14 @@ Visual Studio incluye un conjunto básico de .NET Compiler Platform (*Roslyn*) a
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Para instalar paquetes de NuGet analyzer
 
-1. Busque el paquete de analizador que desea instalar en www.nuget.org. Por ejemplo, es posible que desee [instalar los analizadores de FxCop Microsoft](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) para comprobar el código para los problemas de seguridad y rendimiento, entre otros.
+1. Busque el paquete de analizador que desea instalar en www.nuget.org.
+
+   Por ejemplo, es posible que desee [instalar los analizadores de FxCop Microsoft](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) para comprobar el código para los problemas de seguridad y rendimiento, entre otros. O bien, instale [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) para buscar problemas de estilo en el código base.
 
 2. Instale el paquete en Visual Studio, ya sea mediante el [Package Manager Console](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) o [UI del Administrador de paquetes](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > La página www.nuget.org para cada paquete del analizador muestra el comando Pegar en el **Package Manager Console**. Incluso hay un botón útil para copiar el texto en el Portapapeles.
-   >
-   > ![Página de NuGet.org que muestra comandos de consola de administrador de paquetes](media/nuget-install-command.png)
 
    Los ensamblados del analizador se instalan y aparecen en **el Explorador de soluciones** en **referencias** > **analizadores**.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076216"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Puede descargar las herramientas remotas directamente en el dispositivo o el ser
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Para descargar e instalar las herramientas remotas
   
-1.  En el dispositivo o servidor máquina que desea depurar (en lugar de la máquina que ejecuta Visual Studio), obtenga la versión correcta de las herramientas remotas.
+1. En el dispositivo o servidor máquina que desea depurar (en lugar de la máquina que ejecuta Visual Studio), obtenga la versión correcta de las herramientas remotas.
 
     |Versión|Link|Notas|
     |-|-|-|
@@ -47,14 +47,14 @@ Puede descargar las herramientas remotas directamente en el dispositivo o el ser
     |Visual Studio 2013|[Herramientas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Descargar página de documentación de Visual Studio 2013|
     |Visual Studio 2012|[Herramientas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Descargar página de documentación de Visual Studio 2012|
   
-2.  En la página de descarga, elija la versión de las herramientas que coincida con el sistema operativo (x 86, x64 o versión ARM) y descargue las herramientas remotas.
+2. En la página de descarga, elija la versión de las herramientas que coincida con el sistema operativo (x 86, x64 o versión ARM) y descargue las herramientas remotas.
   
     > [!IMPORTANT]
     >  Se recomienda que instalar la versión más reciente de las herramientas remotas que coincida con su versión de Visual Studio. No se recomiendan las versiones no coinciden.  
     >   
     >  Además, debe instalar las herramientas remotas que tienen la misma arquitectura que el sistema operativo en el que desee instalarlo. En otras palabras, si desea depurar una aplicación de 32 bits en un equipo remoto ejecuta un sistema operativo de 64 bits, debe instalar la versión de 64 bits de las herramientas remotas en el equipo remoto.  
   
-3.  Cuando haya terminado de descargar el archivo ejecutable, siga las instrucciones para instalar la aplicación en el equipo remoto. Consulte [instrucciones de instalación](#bkmk_setup)
+3. Cuando haya terminado de descargar el archivo ejecutable, siga las instrucciones para instalar la aplicación en el equipo remoto. Consulte [instrucciones de instalación](#bkmk_setup)
 
 Si intenta copiar el depurador remoto (msvsmon.exe) en el equipo remoto y ejecutarlo, tenga en cuenta que el **Asistente para configuración de Remote Debugger** (**rdbgwiz.exe**) se instala solo al descargar la herramientas y se deba usar al Asistente para configuración más adelante, especialmente si desea que el depurador remoto para ejecutarse como un servicio. Para obtener más información, consulte [(opcional) configurar el depurador remoto como un servicio](#bkmk_configureService) a continuación.
 
@@ -78,27 +78,27 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
 ## <a name="supported-operating-systems"></a>Sistemas operativos admitidos  
  El equipo remoto debe ejecutarse en uno de los siguientes sistemas operativos:  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8 u 8.1  
+- Windows 8 u 8.1  
   
--   Windows 7 Service Pack 1  
+- Windows 7 Service Pack 1  
   
--   Windows Server 2012 o Windows Server 2012 R2  
+- Windows Server 2012 o Windows Server 2012 R2  
   
--   Windows Server 2008 Service Pack 2, Windows Server 2008 R2 Service Pack 1  
+- Windows Server 2008 Service Pack 2, Windows Server 2008 R2 Service Pack 1  
   
 ## <a name="supported-hardware-configurations"></a>Configuraciones de hardware compatibles  
   
--   Procesador de 1.6 GHz o más rápido  
+- Procesador de 1.6 GHz o más rápido  
   
--   1 GB de RAM (1,5 GB si se ejecuta en una máquina virtual)  
+- 1 GB de RAM (1,5 GB si se ejecuta en una máquina virtual)  
   
--   1 GB de espacio disponible en el disco duro  
+- 1 GB de espacio disponible en el disco duro  
   
--   Unidad de disco duro de 5400 RPM  
+- Unidad de disco duro de 5400 RPM  
   
--   Tarjeta de vídeo compatible con DirectX 9 con resolución de pantalla de 1024 x 768 o superior  
+- Tarjeta de vídeo compatible con DirectX 9 con resolución de pantalla de 1024 x 768 o superior  
   
 ## <a name="network-configuration"></a>Configuración de red  
  El equipo remoto y el equipo de Visual Studio deben estar conectados a través de una red, un grupo de trabajo, un grupo en el hogar o directamente mediante un cable Ethernet. No se admite la depuración a través de Internet.  
@@ -147,7 +147,7 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
    > [!WARNING]
   >  Puede elegir ejecutar las herramientas remotas en el Modo sin autenticación, aunque se recomienda no usar este modo. No hay ninguna seguridad de red cuando se ejecuta en este modo. Elija el modo sin autenticación solo si está seguro de que la red no presenta riesgos de tráfico malintencionado u hostil.
 
-##  <a name="bkmk_configureService"></a> (Opcional) Configurar al depurador remoto como servicio
+## <a name="bkmk_configureService"></a> (Opcional) Configurar al depurador remoto como servicio
  Para la depuración en ASP.NET y otros entornos de servidor, debe ejecutar al depurador remoto como administrador o, si desea que siempre en ejecución, ejecute al depurador remoto como un servicio.
   
  Si desea configurar al depurador remoto como un servicio, siga estos pasos.  
@@ -282,16 +282,16 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
   
  Para obtener más información, consulte la Ayuda de depuración remota (presione **F1** en la ventana del depurador remoto, o haga clic en **ayuda / uso**). Encontrará más información en [Cambios en la carga remota de símbolos .NET en Visual Studio 2012 y 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx).  
   
-##  <a name="bkmk_winstoreAzure"></a> Depuración remota en aplicaciones de Windows Store y Azure  
+## <a name="bkmk_winstoreAzure"></a> Depuración remota en aplicaciones de Windows Store y Azure  
  Para obtener información sobre la depuración remota con las aplicaciones de Windows Store, consulte [depurar y probar aplicaciones de Windows Store en un dispositivo remoto desde Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Para obtener información sobre la depuración en Azure, consulte uno de estos temas:  
   
--   [Depurar un servicio en la nube o una máquina Virtual en Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
+- [Depurar un servicio en la nube o una máquina Virtual en Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
--   [Depurar el back-end de .NET en Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
+- [Depurar el back-end de .NET en Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
--   Introducción a la depuración remota en sitios Web de Azure ([parte 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [parte 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [parte 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Introducción a la depuración remota en sitios Web de Azure ([parte 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [parte 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [parte 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)   

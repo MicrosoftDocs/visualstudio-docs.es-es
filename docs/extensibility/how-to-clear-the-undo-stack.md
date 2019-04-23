@@ -1,5 +1,5 @@
 ---
-title: Filtrar Borrar la pila de deshacer | Documentos de Microsoft
+title: Procedimiento Borrar la pila de deshacer | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb1b1c1d79bab15baa8e8afcab719b3081e7265b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d6e7c2536b7c5556139ce7a9b56756e20fd3648
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072869"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Filtrar Borrar la pila de deshacer
+# <a name="how-to-clear-the-undo-stack"></a>Procedimiento Borrar la pila de deshacer
 El siguiente procedimiento a continuación explica cómo borrar la pila de deshacer.
 
 ## <a name="to-clear-the-undo-stack"></a>Para borrar la pila de deshacer
 
-1.  Para borrar el uso de la pila de deshacer la [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) método. Este es un ejemplo de esto:
+1. Para borrar el uso de la pila de deshacer la [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) método. Este es un ejemplo de esto:
 
     ```
     HRESULT CCmdWindow::ClearUndoStack()

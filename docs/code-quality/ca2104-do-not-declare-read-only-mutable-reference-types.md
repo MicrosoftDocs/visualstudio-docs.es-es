@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a033ed83d6d349ac3876a6f11a24570f3ff8f60c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077711"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: No declarar tipos de referencias mutables de solo lectura
 
@@ -35,7 +35,7 @@ ms.locfileid: "55945019"
 |Cambio problemático|Poco problemático|
 
 > [!NOTE]
-> Regla CA2104 está obsoleto y se quitará en una versión futura de Visual Studio.
+> Regla CA2104 está obsoleto y se quitará en una versión futura de Visual Studio. No se implementará como un [analizador](roslyn-analyzers-overview.md) porque el análisis complicado que se necesita para determinar la inmutabilidad de un tipo real.
 
 ## <a name="cause"></a>Motivo
 

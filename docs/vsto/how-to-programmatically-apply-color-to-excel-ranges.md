@@ -1,5 +1,5 @@
 ---
-title: Filtrar Aplicar color a rangos de Excel mediante programación
+title: Procedimiento Aplicar color a rangos de Excel mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d85803e478931022e5872ddde2746b5b90feacf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 56ecbfcdaf22132f63df1ecf5eadba97dee426af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614134"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078088"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Procedimiento Aplicar color a rangos de Excel mediante programación
   Para aplicar un color al texto de un rango de celdas, use un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto nativo de rango de Excel.
@@ -31,12 +31,12 @@ ms.locfileid: "56614134"
 
 ### <a name="to-apply-color-to-a-namedrange-control"></a>Aplicar color a un control NamedRange
 
-1.  Crear un <xref:Microsoft.Office.Tools.Excel.NamedRange> control en la celda A1.
+1. Crear un <xref:Microsoft.Office.Tools.Excel.NamedRange> control en la celda A1.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#65)]
      [!code-vb[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#65)]
 
-2.  Establecer el color del texto en el <xref:Microsoft.Office.Tools.Excel.NamedRange> control.
+2. Establecer el color del texto en el <xref:Microsoft.Office.Tools.Excel.NamedRange> control.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#66)]
      [!code-vb[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#66)]
@@ -45,7 +45,7 @@ ms.locfileid: "56614134"
 
 ### <a name="to-apply-color-to-a-native-excel-range-object"></a>Aplicar color a un objeto nativo de rango de Excel
 
-1.  Cree un rango en la celda A1 y, a continuación, establezca el color del texto.
+1. Cree un rango en la celda A1 y, a continuación, establezca el color del texto.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]

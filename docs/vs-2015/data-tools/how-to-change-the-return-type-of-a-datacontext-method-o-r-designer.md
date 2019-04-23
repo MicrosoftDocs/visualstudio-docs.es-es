@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be57c5d8a298f37f9cffc7cc4b363651efbc9c2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3e44a2c9b5fab120432f412e7c70f35c8e1ecafd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077477"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Procedimiento Cambio del tipo de valor devuelto de un método DataContext (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ El tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> (
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>Para cambiar el tipo de valor devuelto de un método de DataContext del tipo generado automáticamente a una clase de entidad  
   
-1.  Seleccione el método de <xref:System.Data.Linq.DataContext> en el panel de métodos.  
+1. Seleccione el método de <xref:System.Data.Linq.DataContext> en el panel de métodos.  
   
-2.  Seleccione **Tipo devuelto** en la ventana **Propiedades** y después seleccione una clase de entidad disponible en la lista **Tipo devuelto**. Si la clase de entidad deseada no está en la lista, agréguelo a o créela en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] para agregarlo a la lista.  
+2. Seleccione **Tipo devuelto** en la ventana **Propiedades** y después seleccione una clase de entidad disponible en la lista **Tipo devuelto**. Si la clase de entidad deseada no está en la lista, agréguelo a o créela en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] para agregarlo a la lista.  
   
-3.  Guarde el archivo .dbml.  
+3. Guarde el archivo .dbml.  
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Para volver a cambiar el tipo de valor devuelto de un método de DataContext de una clase de entidad al tipo generado automáticamente  
   
-1.  Seleccione el método de <xref:System.Data.Linq.DataContext> en el panel de métodos y elimínelo.  
+1. Seleccione el método de <xref:System.Data.Linq.DataContext> en el panel de métodos y elimínelo.  
   
-2.  Arrastre el objeto de base de datos desde **Explorador de servidores**/**Database Explorer** en un área vacía de Object Relational Designer.  
+2. Arrastre el objeto de base de datos desde **Explorador de servidores**/**Database Explorer** en un área vacía de Object Relational Designer.  
   
-3.  Guarde el archivo .dbml.  
+3. Guarde el archivo .dbml.  
   
 ## <a name="see-also"></a>Vea también  
  [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

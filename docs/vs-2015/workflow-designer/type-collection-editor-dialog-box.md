@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4817d916fdd29d36f53c6bd3fbca42abb2f7cb15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f3b536ff59c01e1be71bd0fcfb57946219cefd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073078"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Editor de colección de tipos (cuadro de diálogo)
 El **Editor de la colección de tipo** cuadro de diálogo se usa para agregar tipos conocidos para la **enviar** y **recepción** actividades. Este cuadro de diálogo también se usa para agregar argumentos de tipo genérico para el **InvokeMethod** actividad. Cuando se usa para la **enviar** y **recepción** actividades para agregar tipos conocidos, el **Editor de la colección de tipo** cuadro de diálogo requiere que se agreguen tipos únicos. Si se agrega un tipo duplicado y se confirma el cambio haciendo **Aceptar**, se devuelve un mensaje de error. Cuando se usa para la **InvokeMethod** actividad para agregar argumentos de tipo genérico, la **Editor de la colección de tipo** cuadro de diálogo permite la adición de tipos duplicados.  
@@ -34,16 +34,16 @@ El **Editor de la colección de tipo** cuadro de diálogo se usa para agregar ti
   
 #### <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Para mostrar el Editor de colección de tipos para las actividades Send y Receive  
   
-1.  Seleccione el **enviar** o **recepción** actividad en la vista Diseño.  
+1. Seleccione el **enviar** o **recepción** actividad en la vista Diseño.  
   
-2.  Presione **F4** para que aparezca el **propiedades** ventana.  
+2. Presione **F4** para que aparezca el **propiedades** ventana.  
   
-3.  En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **KnownTypes** propiedad.  
+3. En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **KnownTypes** propiedad.  
   
 #### <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Para mostrar el Editor de colección de tipos para la actividad InvokeMethod  
   
-1.  Seleccione el **InvokeMethod** actividad en la vista Diseño.  
+1. Seleccione el **InvokeMethod** actividad en la vista Diseño.  
   
-2.  Presione **F4** para que aparezca el **propiedades** ventana.  
+2. Presione **F4** para que aparezca el **propiedades** ventana.  
   
-3.  En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **GenericTypeArguments** propiedad.
+3. En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **GenericTypeArguments** propiedad.

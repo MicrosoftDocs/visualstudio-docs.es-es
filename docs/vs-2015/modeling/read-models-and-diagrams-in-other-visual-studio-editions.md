@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988812"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073533"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leer modelos y diagramas en otras ediciones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ Al abrir un modelo en una versión de Visual Studio que no es compatible con la 
   
  Para leer un diagrama UML o un diagrama de capas, necesita el siguiente conjunto mínimo de archivos:  
   
--   Los dos archivos de diagrama que desea leer, por ejemplo, de diagrama **MyDiagram.classdiagram y MyDiagram.classdiagram.layout**.  
+- Los dos archivos de diagrama que desea leer, por ejemplo, de diagrama **MyDiagram.classdiagram y MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
     >  Diagramas de capas, también debe tener el archivo que se denomina _MyDiagram_**. layerdiagram.suppressions**.  
   
--   El modelado del archivo de proyecto (**MyModel.modelproj**)  
+- El modelado del archivo de proyecto (**MyModel.modelproj**)  
   
--   El archivo de modelo raíz (**ModelDefinition\MyModel. UML**)  
+- El archivo de modelo raíz (**ModelDefinition\MyModel. UML**)  
   
--   Los archivos del paquete para los paquetes que se hace referencia en el diagrama (**ModelDefinition\MyPackage.uml**)  
+- Los archivos del paquete para los paquetes que se hace referencia en el diagrama (**ModelDefinition\MyPackage.uml**)  
   
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Cambios que puede realizar en modo de solo lectura  
  Si abre un modelo y sus diagramas en una versión de Visual Studio que no es compatible con la creación de modelos, no podrá cambiar el modelo. Es decir, no podrá cambiar los elementos y relaciones que se muestran en los diagramas o en el explorador de modelos. Sin embargo, puede realizar algunos cambios en el diseño de los diagramas:  
@@ -55,7 +55,7 @@ Al abrir un modelo en una versión de Visual Studio que no es compatible con la 
   
   Puede guardar estos cambios. Si desea que los cambios sea visible para otros usuarios, debe enviar al menos la actualización **.layout** archivos.  
   
-##  <a name="RelatedTopics"></a> Temas relacionados  
+## <a name="RelatedTopics"></a> Temas relacionados  
   
 |Título|Descripción|  
 |-----------|-----------------|  

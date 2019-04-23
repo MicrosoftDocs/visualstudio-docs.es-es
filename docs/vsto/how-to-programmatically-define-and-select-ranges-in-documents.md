@@ -1,5 +1,5 @@
 ---
-title: Filtrar Definir y seleccionar rangos en documentos mediante programación
+title: Procedimiento Definir y seleccionar rangos en documentos mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d95690af1b1712aa374a4e9717c8c3bc6ac17fed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078868"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Procedimiento Definir y seleccionar rangos en documentos mediante programación
   Puede definir un intervalo en un documento de Microsoft Office Word mediante un objeto <xref:Microsoft.Office.Interop.Word.Range>. Puede seleccionar todo el documento de varias maneras, por ejemplo, mediante el <xref:Microsoft.Office.Interop.Word.Range.Select%2A> método de la <xref:Microsoft.Office.Interop.Word.Range> de objeto, o mediante la propiedad de contenido de la <xref:Microsoft.Office.Tools.Word.Document> clase (en una personalización de nivel de documento) o la <xref:Microsoft.Office.Interop.Word.Document> clase (en un Complemento de VSTO).
@@ -33,14 +33,14 @@ ms.locfileid: "56599913"
 
 ### <a name="to-define-a-range-in-a-document-level-customization"></a>Para definir un intervalo en una personalización de nivel de documento
 
-1.  Agregue el intervalo al documento pasando un carácter inicial y final al método <xref:Microsoft.Office.Tools.Word.Document.Range%2A> de la clase <xref:Microsoft.Office.Tools.Word.Document>. Para usar este ejemplo de código, ejecútelo desde la clase `ThisDocument` del proyecto.
+1. Agregue el intervalo al documento pasando un carácter inicial y final al método <xref:Microsoft.Office.Tools.Word.Document.Range%2A> de la clase <xref:Microsoft.Office.Tools.Word.Document>. Para usar este ejemplo de código, ejecútelo desde la clase `ThisDocument` del proyecto.
 
      [!code-vb[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#18)]
 
 ### <a name="to-define-a-range-by-using-a-vsto-add-in"></a>Para definir un intervalo mediante un complemento de VSTO
 
-1.  Agregue el intervalo al documento pasando un carácter inicial y final al método <xref:Microsoft.Office.Interop.Word._Document.Range%2A> de la clase <xref:Microsoft.Office.Interop.Word.Document>. En el siguiente ejemplo de código se agrega un intervalo al documento activo. Para usar este ejemplo de código, ejecútelo desde la clase `ThisAddIn` del proyecto.
+1. Agregue el intervalo al documento pasando un carácter inicial y final al método <xref:Microsoft.Office.Interop.Word._Document.Range%2A> de la clase <xref:Microsoft.Office.Interop.Word.Document>. En el siguiente ejemplo de código se agrega un intervalo al documento activo. Para usar este ejemplo de código, ejecútelo desde la clase `ThisAddIn` del proyecto.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#18)]
@@ -50,7 +50,7 @@ ms.locfileid: "56599913"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Para seleccionar todo el documento como un intervalo mediante el método Select
 
-1.  Use el método <xref:Microsoft.Office.Interop.Word.Range.Select%2A> de un <xref:Microsoft.Office.Interop.Word.Range> que contenga todo el documento. Para usar el siguiente ejemplo de código, ejecútelo desde la clase `ThisDocument` del proyecto.
+1. Use el método <xref:Microsoft.Office.Interop.Word.Range.Select%2A> de un <xref:Microsoft.Office.Interop.Word.Range> que contenga todo el documento. Para usar el siguiente ejemplo de código, ejecútelo desde la clase `ThisDocument` del proyecto.
 
      [!code-vb[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#19)]
@@ -75,12 +75,12 @@ ms.locfileid: "56599913"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Para seleccionar una frase estableciendo manualmente los valores inicial y final
 
-1.  Cree una variable de intervalo.
+1. Cree una variable de intervalo.
 
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2.  Compruebe si hay al menos dos frases en el documento, establezca el *iniciar* y *final* argumentos de intervalo y, a continuación, seleccione el intervalo.
+2. Compruebe si hay al menos dos frases en el documento, establezca el *iniciar* y *final* argumentos de intervalo y, a continuación, seleccione el intervalo.
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
@@ -90,7 +90,7 @@ ms.locfileid: "56599913"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Para seleccionar todo el documento como un intervalo mediante el método Select
 
-1.  Use el método <xref:Microsoft.Office.Interop.Word.Range.Select%2A> de un <xref:Microsoft.Office.Interop.Word.Range> que contenga todo el documento. En el siguiente ejemplo de código se selecciona el contenido del documento activo. Para usar este ejemplo de código, ejecútelo desde la clase `ThisAddIn` del proyecto.
+1. Use el método <xref:Microsoft.Office.Interop.Word.Range.Select%2A> de un <xref:Microsoft.Office.Interop.Word.Range> que contenga todo el documento. En el siguiente ejemplo de código se selecciona el contenido del documento activo. Para usar este ejemplo de código, ejecútelo desde la clase `ThisAddIn` del proyecto.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#19)]
@@ -115,12 +115,12 @@ ms.locfileid: "56599913"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Para seleccionar una frase estableciendo manualmente los valores inicial y final
 
-1.  Cree una variable de intervalo.
+1. Cree una variable de intervalo.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2.  Compruebe si hay al menos dos frases en el documento, establezca el *iniciar* y *final* argumentos de intervalo y, a continuación, seleccione el intervalo.
+2. Compruebe si hay al menos dos frases en el documento, establezca el *iniciar* y *final* argumentos de intervalo y, a continuación, seleccione el intervalo.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]

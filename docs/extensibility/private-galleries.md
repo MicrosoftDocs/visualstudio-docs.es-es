@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 660915dd9222f4fd2f70e88665aef17dbab8e168
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 027181d16024964d5487be2b3eb0b4ca261f98e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079232"
 ---
 # <a name="private-galleries"></a>Galerías privadas
 Puede compartir los controles, plantillas y herramientas que desarrolla publicándolas en un *Galería privada* en la intranet de su organización, como se indica a continuación:
 
--   Crear una Atom (RSS) de la fuente en una ubicación central (repositorio) configurada de forma adecuada de la intranet. Para obtener más información, vea [Cómo: Crear una fuente Atom para una galería privada](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
+- Crear una Atom (RSS) de la fuente en una ubicación central (repositorio) configurada de forma adecuada de la intranet. Para obtener más información, vea [Cómo: Crear una fuente Atom para una galería privada](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
 
--   Distribuir un *.pkgdef* archivo que describe la Galería privada. Se recomienda esta configuración para los administradores que deseen conectarse una galería privada a muchos equipos al mismo tiempo.
+- Distribuir un *.pkgdef* archivo que describe la Galería privada. Se recomienda esta configuración para los administradores que deseen conectarse una galería privada a muchos equipos al mismo tiempo.
 
 ## <a name="add-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>Agregue una galería privada a extensiones y actualizaciones en Visual Studio
  Cuando una galería privada está disponible, puede agregarlo a **extensiones y actualizaciones** en Visual Studio.
@@ -32,19 +32,19 @@ Puede compartir los controles, plantillas y herramientas que desarrolla publicá
 
 ### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>Para agregar una galería privada a extensiones y actualizaciones
 
-1.  En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, elija **Herramientas** > **Opciones**.
 
-2.  En el **entorno** nodo, seleccione **extensiones y actualizaciones**.
+2. En el **entorno** nodo, seleccione **extensiones y actualizaciones**.
 
-3.  Elija el botón de **Agregar** .
+3. Elija el botón de **Agregar** .
 
-4.  En el **nombre** , escriba un nombre para la Galería privada, por ejemplo, `My Gallery`.
+4. En el **nombre** , escriba un nombre para la Galería privada, por ejemplo, `My Gallery`.
 
-5.  En el **URL** , escriba la dirección URL de la fuente Atom o un sitio de SharePoint que hospeda la Galería privada.
+5. En el **URL** , escriba la dirección URL de la fuente Atom o un sitio de SharePoint que hospeda la Galería privada.
 
-    1.  Si el host es una fuente Atom que se conecta a la Galería privada, la dirección URL sería similar a ésta: http://www.mywebsite/mygallery/atom.xml.  Esta dirección URL puede hacer referencia a un archivo o una ruta de acceso de red.
+    1. Si el host es una fuente Atom que se conecta a la Galería privada, la dirección URL sería similar a ésta: http://www.mywebsite/mygallery/atom.xml.  Esta dirección URL puede hacer referencia a un archivo o una ruta de acceso de red.
 
-    2.  Si el host es un sitio de SharePoint, la dirección URL sería similar a ésta: http://mysharepoint/sites/mygallery/forms/AllItems.aspx.
+    2. Si el host es un sitio de SharePoint, la dirección URL sería similar a ésta: http://mysharepoint/sites/mygallery/forms/AllItems.aspx.
 
 ### <a name="manage-private-galleries"></a>Administrar galerías privadas
  Un administrador puede realizar una galería privada disponible en varios equipos al mismo tiempo, modifique el registro del sistema en cada equipo. Para ello, cree un *.pkgdef* archivo que describe las nuevas claves del registro y sus valores.  El formato de este archivo es como sigue.
@@ -70,11 +70,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>Para buscar e instalar extensiones desde una galería privada
 
-1.  En la barra de menús, elija **herramientas** > **extensiones y actualizaciones**.
+1. En la barra de menús, elija **herramientas** > **extensiones y actualizaciones**.
 
-2.  En el panel izquierdo, seleccione **extensiones en línea**y, a continuación, seleccione **Mi galería**.
+2. En el panel izquierdo, seleccione **extensiones en línea**y, a continuación, seleccione **Mi galería**.
 
-3.  En el panel derecho, seleccione una extensión y, a continuación, elija el **descargar** botón.
+3. En el panel derecho, seleccione una extensión y, a continuación, elija el **descargar** botón.
 
 ## <a name="update-extensions-from-a-private-gallery"></a>Actualizar extensiones desde una galería privada
  En la Galería privada, se publican nuevas versiones de extensiones de Visual Studio, puede actualizar las extensiones que ha instalado. Los pasos siguientes utilizan una galería privada denominada `My Repository`.
@@ -83,11 +83,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>Para actualizar una extensión instalada desde una galería privada
 
-1.  En la barra de menús, elija **herramientas** > **extensiones y actualizaciones**.
+1. En la barra de menús, elija **herramientas** > **extensiones y actualizaciones**.
 
-2.  En el panel izquierdo, seleccione **actualizaciones**y, a continuación, seleccione **Mi repositorio**.
+2. En el panel izquierdo, seleccione **actualizaciones**y, a continuación, seleccione **Mi repositorio**.
 
-3.  En el panel derecho, seleccione una extensión y, a continuación, elija el **actualización** botón.
+3. En el panel derecho, seleccione una extensión y, a continuación, elija el **actualización** botón.
 
 ## <a name="see-also"></a>Vea también
 - [Búsqueda y uso de extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

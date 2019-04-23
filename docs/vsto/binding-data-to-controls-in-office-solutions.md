@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f7d80071871ebe970a9584a1ac40cead7b59ac26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605723"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073740"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Enlazar datos a controles en soluciones de Office
   Puede enlazar controles de Windows Forms y *controles host* en un documento de Microsoft Office Word o una hoja de cálculo de Microsoft Office Excel a un origen de datos, de forma que los controles de muestren automáticamente los datos. Puede enlazar datos a controles en proyectos de nivel de aplicación y de nivel de documento.
@@ -73,22 +73,22 @@ ms.locfileid: "56605723"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Enlazar datos en los proyectos de nivel de documento en tiempo de diseño
  En los temas siguientes se muestran ejemplos de enlace de datos en tiempo de diseño:
 
--   [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
--   [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
--   [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
--   [Cómo: Rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Cómo: Rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)
 
--   [Cómo: Desplazarse por los registros de base de datos en una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Cómo: Desplazarse por los registros de base de datos en una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Enlazar datos en proyectos de complemento VSTO
  En los proyectos de complemento VSTO, puede agregar controles en tiempo de ejecución. Los temas siguientes muestran ejemplos de enlace de datos en tiempo de ejecución:
 
--   [Tutorial: Enlace de datos simple en el proyecto de complemento VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [Tutorial: Enlace de datos simple en el proyecto de complemento VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
--   [Tutorial: Enlace de datos complejo en el proyecto de complemento VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [Tutorial: Enlace de datos complejo en el proyecto de complemento VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Actualizar los datos que se enlazan a los controles host
  El enlace de datos entre un origen de datos y un control host implica una actualización de datos bidireccional. En el enlace de datos simple, los cambios en el origen de datos se reflejan automáticamente en el control host, pero los cambios en el control host necesitan una llamada explícita para actualizar el origen de datos. La razón es que en algunos casos, los cambios en un campo enlazado a datos no se aceptan a menos que vayan acompañados de los cambios en otro campo enlazado a datos. Por ejemplo, podría tener dos campos, uno para la edad y otro para años de experiencia. La experiencia no puede superar la edad. Un usuario no puede actualizar la edad de 50 a 25 y, después, la experiencia de 30 a 10, a menos que realice los cambios al mismo tiempo. Para solucionar este problema, los campos con enlaces de datos simples no se actualizan hasta que las actualizaciones se envíen explícitamente mediante código.

@@ -12,12 +12,12 @@ ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fb60ec9d471c99b24e07eef11014ce82a18d50b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b5ea8cbdfa9644e103f32d49ea0964bbb90bad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075862"
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Evaluación de una expresión de la ventana Inspección
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "58996946"
   
  Presentamos una visión general de cómo se evalúa una expresión de la lista de observación:  
   
-1.  Visual Studio llama a la DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) para obtener el contexto de una expresión que se puede usar para evaluar expresiones.  
+1. Visual Studio llama a la DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) para obtener el contexto de una expresión que se puede usar para evaluar expresiones.  
   
-2.  Para cada expresión en la lista de observación, Visual Studio llama [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) para convertir el texto de expresión en una expresión analizada.  
+2. Para cada expresión en la lista de observación, Visual Studio llama [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) para convertir el texto de expresión en una expresión analizada.  
   
-3.  `IDebugExpressionContext2::ParseText` las llamadas [analizar](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) para realizar el trabajo real de analizar el texto y generan un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.  
+3. `IDebugExpressionContext2::ParseText` las llamadas [analizar](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) para realizar el trabajo real de analizar el texto y generan un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.  
   
-4.  `IDebugExpressionContext2::ParseText` crea un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objeto y lo sustituye por la `IDebugParsedExpression` objeto en él. Este se`DebugExpression2` , a continuación, se devuelve el objeto Visual Studio.  
+4. `IDebugExpressionContext2::ParseText` crea un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objeto y lo sustituye por la `IDebugParsedExpression` objeto en él. Este se`DebugExpression2` , a continuación, se devuelve el objeto Visual Studio.  
   
-5.  Llamadas visuales Studio [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) para evaluar la expresión analizada.  
+5. Llamadas visuales Studio [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) para evaluar la expresión analizada.  
   
-6.  `IDebugExpression2::EvaluateSync` pasa la llamada a [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) para realizar la evaluación real y generar un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto devuelto a Visual Studio.  
+6. `IDebugExpression2::EvaluateSync` pasa la llamada a [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) para realizar la evaluación real y generar un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto devuelto a Visual Studio.  
   
-7.  Llamadas visuales Studio [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) para obtener el valor de la expresión que se muestra a continuación, en la lista de observación.  
+7. Llamadas visuales Studio [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) para obtener el valor de la expresión que se muestra a continuación, en la lista de observación.  
   
 ## <a name="parse-then-evaluate"></a>Analizar, a continuación, evaluar  
  Puesto que al analizar una expresión compleja puede durar bastante más que la evaluación, el proceso de evaluar una expresión se divide en dos pasos: la expresión de análisis (1) y 2) evalúa la expresión analizada. De este modo, la evaluación puede producirse muchas veces, pero la expresión debe analizarse en una sola vez. Se devuelve la expresión analizada intermedia de lo EE en un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objeto que a su vez se encapsula y devueltos por la DE como un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objeto. El `IDebugExpression` objeto aplaza la evaluación de todas las `IDebugParsedExpression` objeto.  

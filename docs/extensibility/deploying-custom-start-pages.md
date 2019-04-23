@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ed8f06513b240719364539a24295a403b83265f4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 3f09f03a3404bbde346370149f210bf45e6e2306
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078257"
 ---
 # <a name="deploy-custom-start-pages"></a>Implementar páginas principales personalizadas
 
@@ -27,9 +27,9 @@ Puede implementar páginas principales personalizadas mediante la implementació
 
 Al crear una página de inicio mediante la plantilla de proyecto de la página de inicio y, a continuación, compile el proyecto, Visual Studio crea un *.vsix* archivo que se puede distribuir. Empaquetado de una página de inicio en un *.vsix* archivo le proporciona las siguientes opciones para la implementación, dependiendo de la audiencia prevista:
 
--   Puede colocar el *.vsix* archivo en un recurso compartido de red o en un sitio Web público. Cuando el archivo se abre la página de inicio se instala automáticamente.
+- Puede colocar el *.vsix* archivo en un recurso compartido de red o en un sitio Web público. Cuando el archivo se abre la página de inicio se instala automáticamente.
 
--   Puede cargar el *.vsix* del archivo a la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) del sitio Web para que los usuarios pueden instalar mediante el uso de **Administrador de extensiones**.
+- Puede cargar el *.vsix* del archivo a la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) del sitio Web para que los usuarios pueden instalar mediante el uso de **Administrador de extensiones**.
 
 La plantilla de proyecto de la página de inicio crea una copia de la página de inicio de Visual Studio de forma predeterminada para que pueda modificar la copia y conservar el original.
 
@@ -62,9 +62,9 @@ Si el paquete de la página de inicio incluye los ensamblados, debe agregar el r
 
 ### <a name="to-create-an-all-users-deployment"></a>Para crear una implementación de todos los usuarios
 
-1.  Abra el *extension.vsixmanifest* archivo en la vista código.
+1. Abra el *extension.vsixmanifest* archivo en la vista código.
 
-2.  En el `Identifier` elemento del manifiesto de vsix, agregue un `AllUsers` elemento que tiene un valor de `true`.
+2. En el `Identifier` elemento del manifiesto de vsix, agregue un `AllUsers` elemento que tiene un valor de `true`.
 
     ```
     <AllUsers>true</AllUsers>
@@ -72,9 +72,9 @@ Si el paquete de la página de inicio incluye los ensamblados, debe agregar el r
 
      Esto hace que el instalador de vsix solicitar permisos de administrador y, a continuación, instalar los archivos a *\Common7\IDE\Extensions*.
 
-3.  Abra el *.pkgdef* archivo.
+3. Abra el *.pkgdef* archivo.
 
-4.  Modificar el *.pkgdef* para establecer la página de inicio predeterminado en HKLM agregando lo siguiente, donde *MyStartPage.xaml* es el nombre de la *.xaml* archivo que contiene el inicio Página.
+4. Modificar el *.pkgdef* para establecer la página de inicio predeterminado en HKLM agregando lo siguiente, donde *MyStartPage.xaml* es el nombre de la *.xaml* archivo que contiene el inicio Página.
 
      [$RootKey$\StartPage\Default]
 
@@ -89,11 +89,11 @@ Si el paquete de la página de inicio incluye los ensamblados, debe agregar el r
 
 ### <a name="to-manually-install-a-custom-start-page"></a>Para instalar manualmente una página de inicio personalizada
 
-1.  Copia el *.xaml* archivo que contiene el marcado de página de inicio, junto con todos los archivos auxiliares que no sean ensamblados y péguelos en el usuario * \StartPages\* carpeta.
+1. Copia el *.xaml* archivo que contiene el marcado de página de inicio, junto con todos los archivos auxiliares que no sean ensamblados y péguelos en el usuario * \StartPages\* carpeta.
 
-2.  Si la página de inicio requiere ensamblados, cópielos y péguelos en *... \\{Carpeta de instalación de visual Studio} \Common7\IDE\PrivateAssemblies\\*.
+2. Si la página de inicio requiere ensamblados, cópielos y péguelos en *... \\{Carpeta de instalación de visual Studio} \Common7\IDE\PrivateAssemblies\\*.
 
-3.  En el **Personalizar página principal** lista el **inicio** opciones, seleccione la nueva página de inicio. Para obtener más información, consulte [personalizar la página de inicio](../ide/customizing-the-start-page-for-visual-studio.md).
+3. En el **Personalizar página principal** lista el **inicio** opciones, seleccione la nueva página de inicio. Para obtener más información, consulte [personalizar la página de inicio](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ## <a name="see-also"></a>Vea también
 

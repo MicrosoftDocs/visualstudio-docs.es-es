@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077880"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Agregar comandos y gestos a diagramas de dependencia
 
@@ -66,7 +66,7 @@ El método más rápido para crear una extensión consiste en usar la plantilla 
 
 Si desea crear un VSIX que contenga comandos, validadores de capas y otras extensiones, le recomendamos que cree un proyecto para definir VSIX y proyectos independientes para los controladores.
 
-1. Cree un nuevo **biblioteca de clases** proyecto. Este proyecto contendrá clases de controlador de comandos o de gestos.
+1. Cree un proyecto de **Biblioteca de clases**. Este proyecto contendrá clases de controlador de comandos o de gestos.
 
    > [!NOTE]
    > Puede definir más de una clase de controlador de comandos o de gestos en una biblioteca de clases, pero debe definir las clases de validación de capas en una biblioteca de clases independiente.
@@ -108,7 +108,7 @@ Si desea crear un VSIX que contenga comandos, validadores de capas y otras exten
 
 8. Para instalar VSIX en la instancia principal de Visual Studio o en otro equipo, busque el **.vsix** de archivos en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. Haga doble clic en el archivo VSIX en Explorador de archivos.
 
-##  <a name="command"></a> Definir un comando de menú
+## <a name="command"></a> Definir un comando de menú
 
 Puede agregar más definiciones de comando de menú a un proyecto de gesto o comando existente. Cada comando se define con una clase que tiene las siguientes características:
 
@@ -124,11 +124,11 @@ Puede agregar más definiciones de comando de menú a un proyecto de gesto o com
 
 - Los métodos que implementan `ICommandExtension` son los siguientes:
 
-  -   `string Text {get;}` - La etiqueta que aparece en el menú.
+  - `string Text {get;}` - La etiqueta que aparece en el menú.
 
-  -   `void QueryStatus(IMenuCommand command)` - se le llama cuando el usuario hace clic con el botón secundario en el diagrama y determina si el comando debería estar visible y habilitado para la selección actual del usuario.
+  - `void QueryStatus(IMenuCommand command)` - se le llama cuando el usuario hace clic con el botón secundario en el diagrama y determina si el comando debería estar visible y habilitado para la selección actual del usuario.
 
-  -   `void Execute(IMenuCommand command)` - se le llama cuando el usuario selecciona el comando.
+  - `void Execute(IMenuCommand command)` - se le llama cuando el usuario selecciona el comando.
 
 - Para determinar la selección actual, puede importar `IDiagramContext`:
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-##  <a name="gesture"></a> Definir un controlador de gestos
+## <a name="gesture"></a> Definir un controlador de gestos
 
 Un controlador de gestos responde cuando el usuario arrastra elementos hasta el diagrama de dependencia, y cuando el usuario hace doble clic en cualquier lugar en el diagrama.
 
@@ -238,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 Observe los siguientes aspectos sobre los controladores de gestos:
 
--   Los miembros de `IGestureExtension` son los siguientes:
+- Los miembros de `IGestureExtension` son los siguientes:
 
      **OnDoubleClick** : se le llama cuando el usuario hace doble clic en cualquier parte en el diagrama.
 
@@ -246,7 +246,7 @@ Observe los siguientes aspectos sobre los controladores de gestos:
 
      **OnDragDrop** : se le llama cuando el usuario coloca un elemento en el diagrama.
 
--   El primer argumento de cada método es `IShape`, a partir del cual puede obtener el elemento de capa. Por ejemplo:
+- El primer argumento de cada método es `IShape`, a partir del cual puede obtener el elemento de capa. Por ejemplo:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ Observe los siguientes aspectos sobre los controladores de gestos:
     }
     ```
 
--   Ya se han definido los controladores para algunos tipos de elemento arrastrado. Por ejemplo, el usuario puede arrastrar elementos desde el Explorador de soluciones hasta un diagrama de dependencia. No puede definir un controlador de arrastre para estos tipos de elemento. En estos casos, no se invocarán los métodos `DragDrop` .
+- Ya se han definido los controladores para algunos tipos de elemento arrastrado. Por ejemplo, el usuario puede arrastrar elementos desde el Explorador de soluciones hasta un diagrama de dependencia. No puede definir un controlador de arrastre para estos tipos de elemento. En estos casos, no se invocarán los métodos `DragDrop` .
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Mediante programación hacen referencia a rangos de hoja de cálculo en el código
+title: Procedimiento Mediante programación hacen referencia a rangos de hoja de cálculo en el código
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be71d18b7fa0b3cc9dba8a27c6c462d5ea1a2434
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e82b884965c5c7362951c7d94199f90c93fbfc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073701"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Procedimiento Mediante programación hacen referencia a rangos de hoja de cálculo en el código
   Usar un proceso similar para hacer referencia al contenido de un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto nativo de rango de Excel.
@@ -32,7 +32,7 @@ ms.locfileid: "56608450"
 
 ### <a name="to-refer-to-a-namedrange-control"></a>Para hacer referencia a un control NamedRange
 
-1.  Asignar una cadena a la <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propiedad de la <xref:Microsoft.Office.Tools.Excel.NamedRange> control. Este código se debe colocar en una clase Sheet, no en la clase `ThisWorkbook` .
+1. Asignar una cadena a la <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propiedad de la <xref:Microsoft.Office.Tools.Excel.NamedRange> control. Este código se debe colocar en una clase Sheet, no en la clase `ThisWorkbook` .
 
      [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]
      [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]
@@ -42,7 +42,7 @@ ms.locfileid: "56608450"
 
 ### <a name="to-refer-to-a-native-range-object"></a>Para hacer referencia a un objeto de rango nativo
 
-1.  Asignar una cadena a la <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> propiedad del intervalo.
+1. Asignar una cadena a la <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> propiedad del intervalo.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]
