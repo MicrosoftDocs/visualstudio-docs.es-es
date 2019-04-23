@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c4847c8b6abf44e1ac68de1f1b9c8cbb0ca0aac7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 597ed598a9d75e35f552b240f7bbfc1dcb0203e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652482"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094885"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>No se pudo recuperar la información de esquema para el objeto de base de datos &lt;nombre de objeto&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Este mensaje suele aparecer cuando un objeto en **Server Explorer/Database Explo
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Haga clic en **Aceptar** para descartar el cuadro de diálogo.  
+- Haga clic en **Aceptar** para descartar el cuadro de diálogo.  
   
 ## <a name="see-also"></a>Vea también  
  [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

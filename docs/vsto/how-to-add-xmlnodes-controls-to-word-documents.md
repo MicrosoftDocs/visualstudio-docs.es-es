@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar controles XMLNodes a documentos de Word
+title: Procedimiento Agregar controles XMLNodes a documentos de Word
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a04daa909c712a0e721597ba93a03328e8414539
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0bbfa139605a6196cf57a5a887d9cb74f54527f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090737"
 ---
-# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Filtrar Agregar controles XMLNodes a documentos de Word
+# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Procedimiento Agregar controles XMLNodes a documentos de Word
   **Importante** la información en este tema con respecto a Microsoft Word se presenta exclusivamente para el uso y disfrute de individuos y organizaciones que se encuentran fuera de Estados Unidos y sus territorios o quién está usando o desarrollo programas que se ejecutan en, los productos de Microsoft Word que se licencia de Microsoft antes de enero de 2010, cuando Microsoft quita una implementación de la funcionalidad concreta relacionadas con XML personalizado de Microsoft Word. Esta información con respecto a Microsoft Word no puede ser leída o utilizada por personas u organizaciones en Estados Unidos o en sus territorios que utiliza, o desarrollar programas que se ejecutan en los productos de Microsoft Word que se licencia de Microsoft después de 10 de enero de 2010 ; los productos no comportarán igual que los productos con licencia antes de esa fecha o adquirido y con licencia para su uso fuera de Estados Unidos.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
@@ -36,34 +36,34 @@ ms.locfileid: "56598874"
 
 ### <a name="to-add-an-xmlnodes-control-to-a-document"></a>Para agregar un control XMLNodes a un documento
 
-1.  En el documento en el Diseñador de Visual Studio, en la cinta de opciones, haga clic en el **Developer** ficha.
+1. En el documento en el Diseñador de Visual Studio, en la cinta de opciones, haga clic en el **Developer** ficha.
 
     > [!NOTE]
     >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-2.  En el **XML** grupo, haga clic en **esquema**.
+2. En el **XML** grupo, haga clic en **esquema**.
 
      El **plantillas y complementos** abre el cuadro de diálogo.
 
-3.  Haga clic en el **esquema XML** ficha.
+3. Haga clic en el **esquema XML** ficha.
 
-4.  Haga clic en **Agregar esquema**.
+4. Haga clic en **Agregar esquema**.
 
      El **Agregar esquema** abre el cuadro de diálogo.
 
-5.  Seleccione un esquema XML que contiene los elementos de esquema de repetición y haga clic en **abierto**.
+5. Seleccione un esquema XML que contiene los elementos de esquema de repetición y haga clic en **abierto**.
 
      El **configuración del esquema** aparece el cuadro de diálogo.
 
-6.  Asignar un alias o haga clic en **Aceptar** para agregar el esquema sin un alias.
+6. Asignar un alias o haga clic en **Aceptar** para agregar el esquema sin un alias.
 
      El esquema se agrega a la **Agregar esquema** cuadro de diálogo.
 
-7.  En el **Agregar esquema** cuadro de diálogo, haga clic en **Aceptar**.
+7. En el **Agregar esquema** cuadro de diálogo, haga clic en **Aceptar**.
 
      El **estructura XML** abre el panel de tareas.
 
-8.  Haga clic en el elemento de esquema repetitivo en el **estructura XML** panel de tareas para agregarlo al documento.
+8. Haga clic en el elemento de esquema repetitivo en el **estructura XML** panel de tareas para agregarlo al documento.
 
      Un <xref:Microsoft.Office.Tools.Word.XMLNodes> control se crea y se agrega al proyecto.
 

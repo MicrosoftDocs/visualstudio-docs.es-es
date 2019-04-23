@@ -10,23 +10,23 @@ ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4227bd8a82df031f04c1ab33761cf9b8520dec7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996717"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116243"
 ---
 # <a name="debugger-contexts"></a>Contextos de depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 En [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depuración, el motor de depuración (DE) funciona simultáneamente en varios contextos distintos, como sigue:  
   
--   El contexto del código, que describe la ubicación actual en la secuencia de ejecución de un programa.  
+- El contexto del código, que describe la ubicación actual en la secuencia de ejecución de un programa.  
   
--   El contexto de la documentación o la posición, que describe la posición actual dentro de un documento de origen.  
+- El contexto de la documentación o la posición, que describe la posición actual dentro de un documento de origen.  
   
--   El contexto de evaluación de expresión, que describe el contexto en la expresión de evaluación llevará a cabo.  
+- El contexto de evaluación de expresión, que describe el contexto en la expresión de evaluación llevará a cabo.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Contexto del código](../../extensibility/debugger/code-context.md)  

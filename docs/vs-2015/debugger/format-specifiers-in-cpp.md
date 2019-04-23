@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116217"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato en C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Puede cambiar el formato en el que se muestra un valor en la ventana **Inspecci�
 >  El depurador nativo de Visual Studio se ha cambiado a un motor de depuración nuevo. Como parte de este cambio, se han agregado algunos especificadores de formato nuevos y se han quitado otros más antiguos. El depurador antiguo todavía se usa cuando se realiza depuración de interoperabilidad (administrada y nativa mixta) con C++/CLI. Las secciones siguientes de este tema muestran los especificadores de formato de cada motor de depuración.  
 > 
 > - [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) describe los especificadores de formato en el nuevo motor de depuración.  
->   -   [Especificadores de formato para la depuración de interoperabilidad con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) describe los especificadores de formato en el motor de depuración antiguo.  
+>   - [Especificadores de formato para la depuración de interoperabilidad con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) describe los especificadores de formato en el motor de depuración antiguo.  
   
 ## <a name="using-format-specifiers"></a>Uso de especificadores de formato  
  Si tiene el siguiente código:  
@@ -63,7 +63,7 @@ int main() {
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Especificadores de formato  
+## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Especificadores de formato  
  Las siguientes tablas muestran los especificadores de formato que se pueden usar en Visual Studio. Los especificadores en negrita no se admiten para la depuración de interoperabilidad con C++/CLI.  
   
 |Especificador|Formato|Valor de inspección original|Valor mostrado|  
@@ -94,7 +94,7 @@ int main() {
 > [!NOTE]
 >  Cuando el especificador de formato **hv** está presente, el depurador intenta determinar la longitud del búfer y muestra el número apropiado de elementos. Dado que el depurador no siempre puede averiguar el tamaño del búfer exacto de una matriz, debe usar un especificador de tamaño de `(pBuffer,[bufferSize])` siempre que sea posible. El especificador de formato **hv** está diseñado para escenarios en los que el tamaño de búfer no está disponible  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Especificadores de tamaño para punteros como matrices  
+### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Especificadores de tamaño para punteros como matrices  
  Si tiene un puntero a un objeto que desea ver como una matriz, puede utilizar un entero o una expresión para especificar el número de elementos de matriz:  
   
 |Especificador|Formato|Valor de inspección original n|Valor mostrado|  
@@ -103,7 +103,7 @@ int main() {
 |**[exp]**|Expresión de C++ válida que se evalúa como un entero.|pBuffer,[bufferSize]|Muestra pBuffer como una matriz de `bufferSize` elementos.|  
 |**expand(n)**|Expresión de C++ válida que se evalúa como un entero|pBuffer, expand(2)|Muestra el tercer elemento de  `pBuffer`|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Especificadores de formato para la depuración de interoperabilidad con C++/CLI  
+## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Especificadores de formato para la depuración de interoperabilidad con C++/CLI  
  Los especificadores en **negrita** solo son compatibles con la depuración nativa y con el código C++/CLI.  
   
 |Especificador|Formato|Valor de inspección original|Valor mostrado|  
@@ -126,7 +126,7 @@ int main() {
 |wm|Números de mensajes de Windows|0x0010|WM_CLOSE|  
 |!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<representación personalizada>|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Ubicaciones de memoria de los especificadores de formato en la depuración de interoperabilidad con C++/CLI  
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Ubicaciones de memoria de los especificadores de formato en la depuración de interoperabilidad con C++/CLI  
  La siguiente tabla contiene símbolos de formato que se utilizan para ubicaciones de memoria. Puede utilizar un especificador de ubicación de memoria con cualquier valor o expresión que se evalúe como una ubicación.  
   
 |Símbolo|Formato|Valor de inspección original|Valor mostrado|  
@@ -139,7 +139,7 @@ int main() {
 |**mq**|2 palabras cuádruples|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|Caracteres de 2 bytes (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Especificador de tamaño para punteros como matrices en la depuración de interoperabilidad con C++/CLIt  
+### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Especificador de tamaño para punteros como matrices en la depuración de interoperabilidad con C++/CLIt  
  Si tiene un puntero a un objeto que desea ver como una matriz, puede utilizar un entero para especificar el número de elementos de matriz:  
   
 |Especificador|Formato|Expresión|Valor mostrado|  

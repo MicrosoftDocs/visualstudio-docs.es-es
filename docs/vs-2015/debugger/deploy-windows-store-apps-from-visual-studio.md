@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116399"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Implementar aplicaciones de la Tienda Windows desde Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
 - Implementación de una aplicación que se depurará cuando la inicie otra aplicación u otro método.
 
-##  <a name="BKMK_In_this_topic"></a> En este tema
+## <a name="BKMK_In_this_topic"></a> En este tema
  En este tema, puede aprender lo siguiente:
 
  [Cómo implementar una aplicación de la Tienda Windows](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,25 +49,25 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
  [Opciones de implementación](#BKMK_Deployment_options)
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Cómo implementar una aplicación de la Tienda Windows
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Cómo implementar una aplicación de la Tienda Windows
  La implementación manual de una aplicación es un proceso simple:
 
-1.  Si implementa a un dispositivo remoto, especifique el nombre o la dirección IP del dispositivo en la página de proyecto de la propiedad del proyecto de inicio de la aplicación. Los pasos necesarios se mencionan más adelante dentro de este tema.
+1. Si implementa a un dispositivo remoto, especifique el nombre o la dirección IP del dispositivo en la página de proyecto de la propiedad del proyecto de inicio de la aplicación. Los pasos necesarios se mencionan más adelante dentro de este tema.
 
-2.  En la barra de herramientas de Visual Studio del depurador, seleccione el destino de la implementación en la lista desplegable que hay junto al botón **Iniciar depuración** .
+2. En la barra de herramientas de Visual Studio del depurador, seleccione el destino de la implementación en la lista desplegable que hay junto al botón **Iniciar depuración** .
 
      ![Ejecutar en el equipo Local](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
-3.  En el menú **Compilar** , elija **Implementar**
+3. En el menú **Compilar** , elija **Implementar**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Cómo especificar un dispositivo remoto
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Cómo especificar un dispositivo remoto
  **Requisitos previos**
 
  Para implementar una aplicación en un dispositivo remoto:
 
--   Debe haber una licencia de desarrollador instalada en el dispositivo remoto.
+- Debe haber una licencia de desarrollador instalada en el dispositivo remoto.
 
--   La aplicación Herramientas remotas de Visual Studio debe estar instalada en el dispositivo remoto, y el Monitor de depuración remota debe estar en ejecución.
+- La aplicación Herramientas remotas de Visual Studio debe estar instalada en el dispositivo remoto, y el Monitor de depuración remota debe estar en ejecución.
 
      En la implementación se usa el canal de la red del depurador remoto para enviar los archivos de aplicación al dispositivo remoto.
 
@@ -101,7 +101,7 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
 
 8. Escribe el nombre de red del dispositivo remoto en el cuadro **Equipo remoto** o haz clic en **Buscar** para elegir el dispositivo en el cuadro de diálogo **Seleccionar conexión del depurador remoto** .
 
-##  <a name="BKMK_Deployment_options"></a> Opciones de implementación
+## <a name="BKMK_Deployment_options"></a> Opciones de implementación
  Puede establecer las siguientes opciones de implementación en la página de propiedades de depuración del proyecto de inicio.
 
  **Permitir bucle invertido de red** por motivos de seguridad, un [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] no se permite realizar llamadas de red en el dispositivo está instalado en aplicación que está instalada en la manera estándar. De forma predeterminada, la implementación de Visual Studio crea una exención respecto a esta regla para la aplicación implementada. Esta exención te permite probar procedimientos de comunicación en un mismo equipo. Antes de enviar su aplicación a la [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)], debe probarla sin la exención.

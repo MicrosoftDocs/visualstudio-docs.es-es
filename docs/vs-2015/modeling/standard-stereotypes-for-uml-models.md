@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994925"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116594"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Estereotipos estándar para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,37 +41,37 @@ Puede agregar estereotipos a los elementos del modelo UML para proporcionar info
   
 #### <a name="to-link-a-profile-to-a-model-or-a-package"></a>Para vincular un perfil a un modelo o un paquete  
   
-1.  Abra **Explorador de modelos UML**. En el **arquitectura** menú, elija **Windows**y, a continuación, haga clic en **Explorador de modelos UML**.  
+1. Abra **Explorador de modelos UML**. En el **arquitectura** menú, elija **Windows**y, a continuación, haga clic en **Explorador de modelos UML**.  
   
-2.  Busque un paquete o un modelo que contenga todos los elementos a los que desea aplicar los estereotipos del perfil.  
+2. Busque un paquete o un modelo que contenga todos los elementos a los que desea aplicar los estereotipos del perfil.  
   
-3.  Haga clic en el paquete o el modelo y, a continuación, haga clic en **propiedades**.  
+3. Haga clic en el paquete o el modelo y, a continuación, haga clic en **propiedades**.  
   
-4.  En el **propiedades** ventana, establezca el **perfiles** propiedad a los perfiles que desee.  
+4. En el **propiedades** ventana, establezca el **perfiles** propiedad a los perfiles que desee.  
   
 #### <a name="to-remove-the-link-between-a-profile-and-a-model-or-package"></a>Para quitar el vínculo entre un perfil y un modelo o paquete  
   
-1.  En el Explorador de modelos UML, haga clic en el modelo o paquete y, a continuación, haga clic en **propiedades**.  
+1. En el Explorador de modelos UML, haga clic en el modelo o paquete y, a continuación, haga clic en **propiedades**.  
   
-2.  En la ventana Propiedades, establezca la **perfiles** propiedad en vacío.  
+2. En la ventana Propiedades, establezca la **perfiles** propiedad en vacío.  
   
     > [!NOTE]
     >  Puede desvincular un perfil solo si ninguno de los elementos en el modelo o el paquete usan los estereotipos de ese perfil.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>Para aplicar un estereotipo a un elemento del modelo  
   
-1.  Haga clic en el elemento de modelo en un diagrama o en **Explorador de modelos UML**y, a continuación, haga clic en **propiedades**.  
+1. Haga clic en el elemento de modelo en un diagrama o en **Explorador de modelos UML**y, a continuación, haga clic en **propiedades**.  
   
-2.  Haga clic en el **estereotipos** propiedad y seleccione los estereotipos que desea aplicar.  
+2. Haga clic en el **estereotipos** propiedad y seleccione los estereotipos que desea aplicar.  
   
      Los estereotipos seleccionados aparecen entre «comillas angulares» en el elemento del modelo, para casi todos los tipos de elemento.  
   
     > [!NOTE]
     >  Si no ve el **estereotipos** propiedad, o si el estereotipo que desea no aparece, compruebe que el elemento de modelo está dentro de un paquete o modelo al que se ha vinculado el perfil adecuado.  
   
-3.  Algunos estereotipos permiten establecer los valores de las propiedades adicionales para el elemento del modelo. Para ver estas propiedades, expanda el **estereotipos** propiedad.  
+3. Algunos estereotipos permiten establecer los valores de las propiedades adicionales para el elemento del modelo. Para ver estas propiedades, expanda el **estereotipos** propiedad.  
   
-###  <a name="L2"></a> Perfil estándar UML L2  
+### <a name="L2"></a> Perfil estándar UML L2  
  Los estereotipos siguientes se pueden usar para especializar el significado de los elementos del modelo UML, a menos que el vínculo al perfil se haya quitado del modelo.  
   
  El significado exacto de estos estereotipos está determinado por las convenciones locales y por las herramientas que puede usar para procesar el modelo.  
@@ -111,7 +111,7 @@ Puede agregar estereotipos a los elementos del modelo UML para proporcionar info
 |type|Clase|Especifica el comportamiento de un objeto sin indicar cómo se implementa. Un objeto es un miembro de un tipo si se ajusta a la especificación.|  
 |utility|Clase|Una colección de funciones estáticas. La clase no tiene instancias.|  
   
-###  <a name="L3"></a> Perfil estándar UML L3  
+### <a name="L3"></a> Perfil estándar UML L3  
  Los estereotipos siguientes se pueden usar para especializar el significado de los elementos del modelo UML, a menos que el perfil se haya desvinculado del modelo.  
   
  El significado exacto de estos estereotipos está determinado por las convenciones locales y por las herramientas que puede usar para procesar el modelo.  
@@ -122,7 +122,7 @@ Puede agregar estereotipos a los elementos del modelo UML para proporcionar info
 |metaModel|Modelo|Define un lenguaje de modelos como una variante de UML o un lenguaje específico de dominio.|  
 |systemModel|Modelo|Un modelo que es una colección de modelos que se aplican al mismo sistema, por ejemplo, una especificación, una realización y relaciones de seguimiento entre ellos.|  
   
-##  <a name="NetProfile"></a> Perfil de C#  
+## <a name="NetProfile"></a> Perfil de C#  
  Los estereotipos definidos en este perfil permiten indicar que un elemento del modelo está pensado para traducción en el código del programa. Cada estereotipo define propiedades adicionales que se pueden establecer en el elemento del modelo.  
   
  Para que estos estereotipos estén disponibles, vincule un modelo o paquete al perfil de C#. A continuación, puede aplicar los estereotipos a elementos del modelo en ese modelo o paquete.  

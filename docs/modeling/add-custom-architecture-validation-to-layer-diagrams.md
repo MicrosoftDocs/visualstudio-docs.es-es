@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096912"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Agregar validación de arquitectura personalizada a diagramas de dependencia
 
@@ -75,7 +75,7 @@ Si desea crear un VSIX que contenga validadores de capas, comandos y otras exten
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Para agregar la validación de capas a un VSIX independiente
 
-1. Cree un nuevo **biblioteca de clases** proyecto. Este proyecto contendrá la clase de validación de capas.
+1. Cree un proyecto de **Biblioteca de clases**. Este proyecto contendrá la clase de validación de capas.
 
 2. Buscar o crear un **proyecto VSIX** en la solución. Un proyecto de VSIX contiene un archivo denominado **source.extension.vsixmanifest**.
 
@@ -83,9 +83,9 @@ Si desea crear un VSIX que contenga validadores de capas, comandos y otras exten
 
 4. En **source.extension.vsixmanifest**, en **Activos**, agregue el proyecto de validación de capas como componente MEF:
 
-    1.  Elija **Nuevo**.
+    1. Elija **Nuevo**.
 
-    2.  En el cuadro de diálogo **Agregar nuevo activo** , establezca:
+    2. En el cuadro de diálogo **Agregar nuevo activo** , establezca:
 
          **Tipo** = **Microsoft.VisualStudio.MefComponent**
 
@@ -95,9 +95,9 @@ Si desea crear un VSIX que contenga validadores de capas, comandos y otras exten
 
 5. También debe agregarse como validación de capas:
 
-    1.  Elija **Nuevo**.
+    1. Elija **Nuevo**.
 
-    2.  En el cuadro de diálogo **Agregar nuevo activo** , establezca:
+    2. En el cuadro de diálogo **Agregar nuevo activo** , establezca:
 
          **Tipo** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Esta no es una de las opciones de la lista desplegable. Debe escribirla desde el teclado.
 
@@ -125,7 +125,7 @@ Si desea crear un VSIX que contenga validadores de capas, comandos y otras exten
 
 9. Para instalar VSIX en la instancia principal de Visual Studio o en otro equipo, busque el **.vsix** de archivos en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX.
 
-##  <a name="programming"></a> Programar la validación
+## <a name="programming"></a> Programar la validación
 
 Para definir una extensión de validación de capas, defina una clase que tenga las siguientes características:
 
@@ -194,7 +194,7 @@ Cada nodo y cada vínculo tiene una o más categorías que especifican el tipo d
 
 Los vínculos entre las capas y los elementos del código tienen la categoría "Representa".
 
-##  <a name="debugging"></a> Depurar la validación
+## <a name="debugging"></a> Depurar la validación
 
 Para depurar la extensión de validación de capas, presione CTRL+F5. Se abre una instancia experimental de Visual Studio. En esta instancia, abra o cree un modelo de capas. Este modelo debe estar asociado a código y debe tener al menos una dependencia.
 
@@ -226,7 +226,7 @@ Inicie siempre la instancia experimental presionando CTRL+F5 (**Iniciar sin depu
 
 Para instalar la extensión de validación en un equipo en el que está instalado una versión adecuada de Visual Studio, abra el archivo VSIX en el equipo de destino.
 
-##  <a name="example"></a> Example code
+## <a name="example"></a> Example code
 
 ```csharp
 using System;

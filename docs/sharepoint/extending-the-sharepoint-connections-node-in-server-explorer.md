@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8b63b5a14319a86dc561a0c6068286cdc70a472
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092645"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Extender el nodo Conexiones de SharePoint en el Explorador de servidores
   En Visual Studio, puede conectarse a sitios de SharePoint locales en el equipo de desarrollo mediante el uso de la **conexiones de SharePoint** nodo en el **Explorador de servidores** ventana. Este nodo muestra muchos de los componentes de sitios de SharePoint local en una vista de árbol jerárquica. Por ejemplo, puede ver las listas, bibliotecas de documentos y tipos de contenido en los sitios locales. Para obtener más información sobre el uso de **Explorador de servidores** para conectarse a sitios locales de SharePoint, consulte [las conexiones de SharePoint examinar mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -36,9 +36,9 @@ ms.locfileid: "56595129"
 
  Hay dos tipos de propiedades personalizadas, que puede agregar a un nodo:
 
--   Propiedades que muestran un conjunto de datos de solo lectura desde el sitio de SharePoint. Los datos describen el componente de SharePoint que el nodo representa. Para ver un tutorial que muestra cómo hacerlo, consulte [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+- Propiedades que muestran un conjunto de datos de solo lectura desde el sitio de SharePoint. Los datos describen el componente de SharePoint que el nodo representa. Para ver un tutorial que muestra cómo hacerlo, consulte [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Propiedades que muestren los datos de lectura/escritura personalizada. Para obtener un ejemplo de código que muestra cómo hacerlo, vea [Cómo: Extender un nodo de SharePoint en el Explorador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+- Propiedades que muestren los datos de lectura/escritura personalizada. Para obtener un ejemplo de código que muestra cómo hacerlo, vea [Cómo: Extender un nodo de SharePoint en el Explorador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
 
 ## <a name="get-data-for-built-in-nodes"></a>Obtener datos para los nodos integrados
  Todos los nodos integrados proporcionados por Visual Studio incluyen algunos datos sobre el componente de SharePoint que representan. Por ejemplo, un nodo que representa una lista en el sitio de SharePoint proporciona algunos datos acerca de la lista, como el título y la dirección URL de la vista predeterminada de la lista.

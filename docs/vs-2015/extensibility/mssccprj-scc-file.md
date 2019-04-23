@@ -11,12 +11,12 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117725"
 ---
 # <a name="mssccprjscc-file"></a>Archivo MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Cuando se coloca una solución de Visual Studio o proyecto bajo control de códi
   
  Un control de código fuente complemento que admite el MSSCCPRJ. Archivo de control de código fuente debe cumplir las siguientes directrices:  
   
--   Solo puede haber un MSSCCPRJ. Archivo de control de código fuente por directorio.  
+- Solo puede haber un MSSCCPRJ. Archivo de control de código fuente por directorio.  
   
--   Un MSSCCPRJ. Archivo de control de código fuente puede contener la "AuxPath" y "Nombre_proyecto" para varios archivos que están bajo control de código fuente dentro de un directorio determinado.  
+- Un MSSCCPRJ. Archivo de control de código fuente puede contener la "AuxPath" y "Nombre_proyecto" para varios archivos que están bajo control de código fuente dentro de un directorio determinado.  
   
--   La cadena "AuxPath" no debe tener comillas dentro de él. Se le permite tener comillas como delimitadores (por ejemplo, un par de comillas dobles puede utilizarse para indicar una cadena vacía). El IDE eliminará todas las ofertas de la cadena "AuxPath" cuando se lee desde el MSSCCPRJ. Archivo de control de código fuente.  
+- La cadena "AuxPath" no debe tener comillas dentro de él. Se le permite tener comillas como delimitadores (por ejemplo, un par de comillas dobles puede utilizarse para indicar una cadena vacía). El IDE eliminará todas las ofertas de la cadena "AuxPath" cuando se lee desde el MSSCCPRJ. Archivo de control de código fuente.  
   
--   La cadena "Nombre_proyecto" en el MSSCCPRJ. Archivo de control de código fuente debe coincidir con exactamente la cadena devuelta desde el `SccGetProjPath` función. Si la cadena devuelta por la función tiene comillas alrededor de ella, la cadena en el MSSCCPRJ. Archivo de control de código fuente debe tener comillas alrededor de ella y viceversa.  
+- La cadena "Nombre_proyecto" en el MSSCCPRJ. Archivo de control de código fuente debe coincidir con exactamente la cadena devuelta desde el `SccGetProjPath` función. Si la cadena devuelta por la función tiene comillas alrededor de ella, la cadena en el MSSCCPRJ. Archivo de control de código fuente debe tener comillas alrededor de ella y viceversa.  
   
--   Un MSSCCPRJ. Archivo de control de código fuente se crea o actualiza cada vez que se coloca un archivo bajo control de código fuente.  
+- Un MSSCCPRJ. Archivo de control de código fuente se crea o actualiza cada vez que se coloca un archivo bajo control de código fuente.  
   
--   Si está un MSSCCPRJ. Se elimina el archivo de control de código fuente, un proveedor debe regenerar la próxima vez que realiza una operación de control de código fuente relativos a ese directorio.  
+- Si está un MSSCCPRJ. Se elimina el archivo de control de código fuente, un proveedor debe regenerar la próxima vez que realiza una operación de control de código fuente relativos a ese directorio.  
   
--   Un MSSCCPRJ. Archivo de SCC estrictamente debe seguir el formato definido.  
+- Un MSSCCPRJ. Archivo de SCC estrictamente debe seguir el formato definido.  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Ver una ilustración de la MSSCCPRJ. Formato de archivo de control de código fuente  
  Siguiente es un ejemplo de la MSSCCPRJ. Formato de archivo de control de código fuente (los números de línea solo se proporcionan como guía y no deben incluirse en el cuerpo del archivo):  

@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c13472fc1322701fefada53ee3e94156f35e8072
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c2d5fdd068894434c170c2525499a41c7c14b4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095846"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 r
 > [!NOTE]
 >  Las herramientas de rendimiento en otras versiones compatibles de Windows (Windows 7, Windows Server 2008 R2) no han cambiado.  
   
-##  <a name="BKMK_In_this_topic"></a> En este tema  
+## <a name="BKMK_In_this_topic"></a> En este tema  
  [Recopilar datos de aplicaciones de la Tienda Windows desde el IDE de Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 desde el IDE de Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -35,7 +35,7 @@ Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 r
   
   [Recopilar datos de interacciones de capas (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones de la Tienda Windows desde el IDE de Visual Studio  
+## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones de la Tienda Windows desde el IDE de Visual Studio  
  Cuando se generan perfiles de una aplicación de la Tienda Windows escrita en JavaScript y HTML 5, se recopilan datos de instrumentación para el código JavaScript. Cuando se generan perfiles de una aplicación o componente de la Tienda Windows escrita en Visual C++, Visual C# o Visual Basic, se recopilan datos de muestreo para el código nativo y administrado. Se pueden generar perfiles de la aplicación localmente o en un equipo remoto.  
   
  Estas características y opciones de generación de perfiles no se admiten al generar perfiles de las aplicaciones de la Tienda Windows:  
@@ -76,19 +76,19 @@ Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 r
   
   [En este tema](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 desde el IDE de Visual Studio  
+## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 desde el IDE de Visual Studio  
  La generación de perfiles mediante el método de instrumentación no ha cambiado para Windows 8.  
   
  La generación de perfiles de interacción de capas (TIP) no se admite al usar el método de muestreo.  
   
-###  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 mediante el muestreo desde el IDE de Visual Studio  
+### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 mediante el muestreo desde el IDE de Visual Studio  
  Estas características y opciones de generación de perfiles no se admiten al generar perfiles de aplicaciones de escritorio de Windows 8 o aplicaciones de Windows Server 2012 usando el método de muestreo:  
   
--   Generación de perfiles de interacción de capas (TIP). La recopilación de datos de TIP se admite mediante la instrumentación.  
+- Generación de perfiles de interacción de capas (TIP). La recopilación de datos de TIP se admite mediante la instrumentación.  
   
--   Opciones de muestreo, como establecer el intervalo de tiempo y el evento de muestreo, o recopilar datos adicionales del contador de rendimiento.  
+- Opciones de muestreo, como establecer el intervalo de tiempo y el evento de muestreo, o recopilar datos adicionales del contador de rendimiento.  
   
-##  <a name="BKMK_Profiling_from_the_command_line"></a> Generación de perfiles desde la línea de comandos  
+## <a name="BKMK_Profiling_from_the_command_line"></a> Generación de perfiles desde la línea de comandos  
  Para recopilar datos de generación de perfiles en dispositivos con Windows 8 y Windows Server 2012, incluidos los dispositivos que no tienen una instalación de Visual Studio, se usan dos herramientas de línea de comandos:  
   
 |Nombre de herramienta.|Descripción|  
@@ -100,22 +100,22 @@ Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 r
   
  Para generar perfiles de aplicaciones en dispositivos que no tienen Visual Studio instalado, realice alguno de los siguientes procedimientos:  
   
--   Descargue las herramientas como parte de las Herramientas remotas para Visual Studio desde el [sitio web de MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).  
+- Descargue las herramientas como parte de las Herramientas remotas para Visual Studio desde el [sitio web de MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).  
   
--   Copie y ejecute el programa de instalación independiente de las herramientas de generación de perfiles desde el equipo de Visual Studio. Los programas de instalación están en la carpeta *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Elija el programa de instalación para el sistema operativo (x86/x64) del equipo remoto.  
+- Copie y ejecute el programa de instalación independiente de las herramientas de generación de perfiles desde el equipo de Visual Studio. Los programas de instalación están en la carpeta *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Elija el programa de instalación para el sistema operativo (x86/x64) del equipo remoto.  
   
 > [!NOTE]
 >  Para recopilar datos de generación de perfiles TIP, debe instalar el generador de perfiles independiente del equipo de Visual Studio en el equipo remoto.  
   
  Estas características y opciones de generación de perfiles no se admiten al generar perfiles de aplicaciones de Windows 8 y Windows Server 2012 desde la línea de comandos:  
   
--   Recopilación de datos de aplicaciones web de Windows 8 y Windows Server 2012 usando el modo de muestreo con [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md).  
+- Recopilación de datos de aplicaciones web de Windows 8 y Windows Server 2012 usando el modo de muestreo con [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md).  
   
--   Recopilación de datos de muestreo usando VsPerfCmd.exe.  
+- Recopilación de datos de muestreo usando VsPerfCmd.exe.  
   
--   Opciones de muestreo, como establecer el intervalo de tiempo y el evento de muestreo, o recopilar datos adicionales del contador de rendimiento.  
+- Opciones de muestreo, como establecer el intervalo de tiempo y el evento de muestreo, o recopilar datos adicionales del contador de rendimiento.  
   
-##  <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Recopilar datos de interacciones de capas (TIP)  
+## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Recopilar datos de interacciones de capas (TIP)  
  La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución de funciones de aplicaciones de varias capas que se comunican con las bases de datos a través de servicios de ADO.NET. Los datos se recopilan solamente para las llamadas a funciones sincrónicas.  
   
  **Ediciones de Visual Studio**  

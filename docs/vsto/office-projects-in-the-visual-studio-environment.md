@@ -41,12 +41,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091023"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Proyectos de Office en el entorno de Visual Studio
   Los proyectos de Microsoft Office tienen una experiencia de desarrollo que es similar a otros tipos de proyectos en Visual Studio, como los proyectos de Windows Forms. Al crear o abrir un proyecto de Office, los elementos del proyecto aparecen en el **Explorador de soluciones**. Para los proyectos en el nivel de documento, el documento (es decir, el documento de Word o el libro de Excel) se abre en Visual Studio y se comporta como un diseñador visual.
@@ -73,7 +73,7 @@ ms.locfileid: "54865988"
 ### <a name="temporary-certificates"></a>Certificados temporales
  Los proyectos de Office también incluyen un certificado temporal denominado *NombreDeProyecto*_TemporaryKey.pfx. Este certificado se usa para firmar los manifiestos de implementación y aplicación para el proyecto durante el desarrollo. Para obtener más información, consulte [conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md) y [soluciones de Office Secure](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> Archivos de proyecto ocultos
+### <a name="hiddenfiles"></a> Archivos de proyecto ocultos
  Hay varios archivos de proyecto que están ocultos de manera predeterminada. Visual Studio genera estos archivos, que son diferentes según el tipo de proyecto. Para mostrar los archivos ocultos, haga clic en **Mostrar todos los archivos** en el **Explorador de soluciones**.
 
  No modifique los archivos de proyecto ocultos. No se permite la modificación directa de estos archivos, ya que se puede dañar el proyecto. Los archivos de proyecto ocultos vuelven a generarse por completo cuando se producen determinados cambios en el documento. Si realiza cambios manuales en un archivo de proyecto oculto, se pierden cuando se regenera el archivo.

@@ -25,25 +25,25 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f1f3b6f6ee2c5a815bfa4f3a9744b3ad2c8cc690
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b1ab0f4875dcafc14b4b9fb8d3922d26e394c22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116867"
 ---
 # <a name="debugging-options-dialog-box"></a>Depuración, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La carpeta **Depuración**, del cuadro de diálogo **Opciones** del menú **Herramientas**, proporciona las siguientes páginas, que permiten especificar opciones de herramienta del depurador.  
   
--   [General, Depuración, cuadro de diálogo Opciones](../debugger/general-debugging-options-dialog-box.md)  
+- [General, Depuración, cuadro de diálogo Opciones](../debugger/general-debugging-options-dialog-box.md)  
   
--   [Just-In-Time, Depuración, Cuadro de diálogo Opciones](../debugger/just-in-time-debugging-options-dialog-box.md)  
+- [Just-In-Time, Depuración, Cuadro de diálogo Opciones](../debugger/just-in-time-debugging-options-dialog-box.md)  
   
--   [Ventana de salida, Depuración, Opciones (Cuadro de diálogo)](../debugger/output-window-debugging-options-dialog-box.md)  
+- [Ventana de salida, Depuración, Opciones (Cuadro de diálogo)](../debugger/output-window-debugging-options-dialog-box.md)  
   
--   [Símbolos, Depuración, cuadro de diálogo Opciones](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+- [Símbolos, Depuración, cuadro de diálogo Opciones](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   

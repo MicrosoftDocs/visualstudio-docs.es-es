@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 59c7e42e005e423a27adc7676a05ebc03cd068d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116204"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Preparación de la depuración: Tipos de proyecto de Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ En esta sección se describe cómo depurar los tipos de proyectos básicos cread
   
  Tenga en cuenta que se han agrupado en esos tipos de proyecto que crean archivos DLL como resultado [depurar proyectos DLL](../debugger/debugging-dll-projects.md) debido a las características comunes que comparten.  
   
-##  <a name="BKMK_In_this_topic"></a> En este tema  
+## <a name="BKMK_In_this_topic"></a> En este tema  
  [Valores de propiedad recomendados](#BKMK_Recommended_Property_Settings)  
   
  [Proyectos Win32](#BKMK_Win32_Projects)  
@@ -45,7 +45,7 @@ En esta sección se describe cómo depurar los tipos de proyectos básicos cread
   
   [Aplicaciones de Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
-##  <a name="BKMK_Recommended_Property_Settings"></a> Valores de propiedad recomendados  
+## <a name="BKMK_Recommended_Property_Settings"></a> Valores de propiedad recomendados  
  Algunas propiedades se deben establecer de la misma forma en todos los casos de depuración no administrada. En las siguientes tablas se muestran los valores de propiedades recomendados. La configuración que no se incluye puede variar entre los diferentes tipos de proyectos no administrados. Para obtener más información, consulte [configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
   
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>Propiedades de configuración &#124; C o C++ &#124; nodo de optimización  
@@ -62,22 +62,22 @@ En esta sección se describe cómo depurar los tipos de proyectos básicos cread
   
  [En este tema](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Win32_Projects"></a> Proyectos Win32  
+## <a name="BKMK_Win32_Projects"></a> Proyectos Win32  
  Las aplicaciones Win32 son programas tradicionales de Windows escritos en C o C++. La depuración de este tipo de aplicación en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] es muy sencilla.  
   
  Entre las aplicaciones Win32 se incluyen las aplicaciones MFC y los proyectos ATL. Utilizan API de Windows y tal vez MFC o ATL, pero no utilizan Common Language Runtime (CRL). Sin embargo, pueden llamar al código administrado que utiliza el CLR.  
   
  El procedimiento siguiente explica cómo depurar un proyecto Win32 desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Otra manera de depurar una aplicación Win32 es iniciar la aplicación fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y asociarse. Para obtener más información, consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Para depurar una aplicación Win32 de C o C++  
+### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Para depurar una aplicación Win32 de C o C++  
   
-1.  Abra el proyecto en Visual Studio.  
+1. Abra el proyecto en Visual Studio.  
   
-2.  En el menú **Depurar**, elija **Iniciar**.  
+2. En el menú **Depurar**, elija **Iniciar**.  
   
-3.  Depurar con las técnicas descritas en [Fundamentos del depurador](../debugger/debugger-basics.md).  
+3. Depurar con las técnicas descritas en [Fundamentos del depurador](../debugger/debugger-basics.md).  
   
-###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Para establecer manualmente una configuración de depuración  
+### <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Para establecer manualmente una configuración de depuración  
   
 1. En el menú **Ver**, haga clic en **Páginas de propiedades**.  
   
@@ -99,7 +99,7 @@ En esta sección se describe cómo depurar los tipos de proyectos básicos cread
   
    [En este tema](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplicaciones de Windows Forms (.NET)  
+## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplicaciones de Windows Forms (.NET)  
  La plantilla **Aplicación de Windows Forms (.NET)** crea una aplicación de Windows Forms de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Para obtener más información, vea [Cómo: crear un proyecto de aplicación para Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  La depuración de este tipo de aplicación en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] es similar a la depuración en aplicaciones de Windows Forms administradas.  

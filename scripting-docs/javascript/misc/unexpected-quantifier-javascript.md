@@ -14,12 +14,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f18195f344adca16fce7403d225c42826a2af544
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 52b98875b560e4863a93849cf99c2f8756cd438a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843408"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117153"
 ---
 # <a name="unexpected-quantifier-javascript"></a>No se esperaba un cuantificador (JavaScript)
 Al redactar su patrón de búsqueda de expresión regular, crea un elemento de modelo con un factor de repetición no válido. Por ejemplo, el patrón  
@@ -45,7 +45,7 @@ Al redactar su patrón de búsqueda de expresión regular, crea un elemento de m
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese de que el elemento de modelo de búsqueda contiene solo los factores de repetición legal.  
+- Asegúrese de que el elemento de modelo de búsqueda contiene solo los factores de repetición legal.  
   
 ## <a name="see-also"></a>Vea también  
  [Objeto de expresión regular](../../javascript/reference/regular-expression-object-javascript.md)   

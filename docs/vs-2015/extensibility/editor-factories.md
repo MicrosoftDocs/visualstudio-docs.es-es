@@ -10,12 +10,12 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fbf30d1fdb4fcce1e28a3c10c9949f1a11eae529
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2de1fc8440bd33a526da62dbb4c7937800484aaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58995259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117881"
 ---
 # <a name="editor-factories"></a>Generadores de editores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Un generador de editores crea objetos de editor y los coloca en un marco de vent
 ## <a name="the-editor-factory-registration-process"></a>El proceso de registro de fábrica del Editor  
  El siguiente proceso se produce cuando el editor mediante el generador de editores de carga de Visual Studio:  
   
-1.  El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] llamadas del sistema del proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] llamadas del sistema del proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-2.  Este método devuelve el generador de editores. Retrasos visuales Studio carga el paquete del editor, sin embargo, hasta que un sistema de proyectos realmente necesita el editor.  
+2. Este método devuelve el generador de editores. Retrasos visuales Studio carga el paquete del editor, sin embargo, hasta que un sistema de proyectos realmente necesita el editor.  
   
-3.  Cuando un sistema de proyectos, necesita el editor, Visual Studio llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, un método especializado que devuelve los objetos de datos de la vista del documento y el documento.  
+3. Cuando un sistema de proyectos, necesita el editor, Visual Studio llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, un método especializado que devuelve los objetos de datos de la vista del documento y el documento.  
   
-4.  Si llama a Visual Studio en el generador de editor con <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> devuelve un objeto de datos de documento y un objeto de vista de documento, Visual Studio, a continuación, crea la ventana de documento, coloca el objeto de vista de documento en él y realiza una entrada en el documento en ejecución tabla (RDT) para el objeto de datos.  
+4. Si llama a Visual Studio en el generador de editor con <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> devuelve un objeto de datos de documento y un objeto de vista de documento, Visual Studio, a continuación, crea la ventana de documento, coloca el objeto de vista de documento en él y realiza una entrada en el documento en ejecución tabla (RDT) para el objeto de datos.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   

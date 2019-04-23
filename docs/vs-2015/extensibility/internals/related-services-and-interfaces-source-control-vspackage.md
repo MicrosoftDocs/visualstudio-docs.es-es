@@ -11,12 +11,12 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5497c74c75c9c5a97672152ab521e1ccf141b540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c5b040a8c5d0cbe2daff07f279cfd6a78cbd2b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118115"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfaces y servicios relacionados (VSPackage de control de código fuente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Esta sección enumeran todas las interfaces de VSPackage de control de origen al
   
  Las interfaces son:  
   
--   Obligatorio: La entidad adecuada (control de código fuente VSPackage, código auxiliar de Control de código fuente, project) debe implementar la interfaz.  
+- Obligatorio: La entidad adecuada (control de código fuente VSPackage, código auxiliar de Control de código fuente, project) debe implementar la interfaz.  
   
--   Recomendado: La entidad debe implementar esta interfaz; en caso contrario, la funcionalidad de control de código fuente puede ser limitada.  
+- Recomendado: La entidad debe implementar esta interfaz; en caso contrario, la funcionalidad de control de código fuente puede ser limitada.  
   
--   Opcional: la entidad puede implementar esta interfaz para proporcionar un conjunto de características más completo.  
+- Opcional: la entidad puede implementar esta interfaz para proporcionar un conjunto de características más completo.  
   
 |Interfaz|Finalidad|Implementado por|¿Implementar?|  
 |---------------|-------------|--------------------|----------------|  

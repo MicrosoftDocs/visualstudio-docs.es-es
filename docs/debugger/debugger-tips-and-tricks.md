@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537565"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097328"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias de productividad y trucos del depurador de Visual Studio
 
@@ -74,17 +74,17 @@ Es fácil ver las variables mediante las ventanas del depurador, como la **inspe
 
 #### <a name="to-create-an-object-id"></a>Para crear un identificador de objeto
 
-1.  Establezca un punto de interrupción cerca de una variable que se desea realizar un seguimiento.
+1. Establezca un punto de interrupción cerca de una variable que se desea realizar un seguimiento.
 
-2.  Iniciar el depurador (**F5**) y detenga el punto de interrupción.
+2. Iniciar el depurador (**F5**) y detenga el punto de interrupción.
 
 3. Busque la variable en el **variables locales** ventana (**Depurar > Windows > variables locales**), haga clic en la variable y seleccione **Make Object ID**.
 
     ![Crear un identificador de objeto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  Debería ver el símbolo **$** junto con un número en la ventana **Locales** . Esta variable es el identificador de objeto.
+4. Debería ver el símbolo **$** junto con un número en la ventana **Locales** . Esta variable es el identificador de objeto.
 
-5.  Haga clic en la variable de Id. de objeto y elija **Agregar inspección**.
+5. Haga clic en la variable de Id. de objeto y elija **Agregar inspección**.
 
 Para obtener más información, consulte [crear un identificador de objeto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -126,13 +126,13 @@ Si tiene que depurar los tipos de problemas que son comunes a las aplicaciones m
 
 #### <a name="to-show-threads-in-your-source-code"></a>Para mostrar los subprocesos en el código fuente
 
-1.  Durante la depuración, haga clic en el **Mostrar subprocesos en código fuente** botón ![Mostrar subprocesos en código fuente](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") en el **depurar** barra de herramientas.
+1. Durante la depuración, haga clic en el **Mostrar subprocesos en código fuente** botón ![Mostrar subprocesos en código fuente](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") en el **depurar** barra de herramientas.
 
-2.  Examine el margen interno izquierdo de la ventana. En esta línea, verá un *marcador de subproceso* icono ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker") que es similar a dos hilos. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
+2. Examine el margen interno izquierdo de la ventana. En esta línea, verá un *marcador de subproceso* icono ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker") que es similar a dos hilos. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
 
     Tenga en cuenta que un marcador de subproceso es posible que se ocultan parcialmente por un punto de interrupción.
 
-3.  Desplace el puntero sobre el marcador de subproceso. Aparece la Información sobre datos. En ella se indican el nombre y el número de id. de subproceso de cada subproceso detenido.
+3. Desplace el puntero sobre el marcador de subproceso. Aparece la Información sobre datos. En ella se indican el nombre y el número de id. de subproceso de cada subproceso detenido.
 
     También puede ver la ubicación de los subprocesos en la [ventana Pilas paralelas](../debugger/get-started-debugging-multithreaded-apps.md).
 

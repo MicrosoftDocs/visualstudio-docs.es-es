@@ -11,12 +11,12 @@ ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 caps.latest.revision: 52
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 255afb948f7a7e00f1249c332eac7234800ae980
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 64ab627d785e8b00b5159969a01dc1102df30359
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117582"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Adición de un menú a la barra de menús de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ Este tutorial muestra cómo agregar un menú en la barra de menús del entorno d
 
 ## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Crear un proyecto de VSIX que tiene una plantilla de elemento de comando personalizado
 
-1.  Cree un proyecto VSIX denominado `TopLevelMenu`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C#** / **extensibilidad**.  Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Cree un proyecto VSIX denominado `TopLevelMenu`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C#** / **extensibilidad**.  Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizado denominada **comando de prueba**. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C# / extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para **TestCommand.cs**.
+2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizado denominada **comando de prueba**. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C# / extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para **TestCommand.cs**.
 
 ## <a name="creating-a-menu-on-the-ide-menu-bar"></a>Creación de un menú en la barra de menús de IDE
 
 #### <a name="to-create-a-menu"></a>Para crear un menú
 
-1.  En **el Explorador de soluciones**, abra TestCommandPackage.vsct.
+1. En **el Explorador de soluciones**, abra TestCommandPackage.vsct.
 
      Al final del archivo, hay un \<símbolos > nodo que contenga varias \<GuidSymbol > los nodos. En el nodo denominado guidTestCommandPackageCmdSet, agregue un nuevo símbolo, como sigue:
 
@@ -50,7 +50,7 @@ Este tutorial muestra cómo agregar un menú en la barra de menús del entorno d
     <IDSymbol name="TopLevelMenu" value="0x1021"/>
     ```
 
-2.  Crear vacío \<menús > nodo en el \<comandos > nodo, justo antes \<grupos >. En el \<menús > nodo, agregue un \<menú > nodo, como se indica a continuación:
+2. Crear vacío \<menús > nodo en el \<comandos > nodo, justo antes \<grupos >. En el \<menús > nodo, agregue un \<menú > nodo, como se indica a continuación:
 
     ```xml
     <Menus>
@@ -71,7 +71,7 @@ Este tutorial muestra cómo agregar un menú en la barra de menús del entorno d
 
      El valor de la `CommandName` cadena especifica que el texto debe aparecer en el elemento de menú.
 
-3.  En el \<grupos > sección, busque la \<grupo > y cambie el \<primario > elemento para que apunte al menú que acabamos de agregar:
+3. En el \<grupos > sección, busque la \<grupo > y cambie el \<primario > elemento para que apunte al menú que acabamos de agregar:
 
     ```csharp
     <Groups>
@@ -83,15 +83,15 @@ Este tutorial muestra cómo agregar un menú en la barra de menús del entorno d
 
      Esto hace que la parte del grupo del nuevo menú.
 
-4.  Buscar el `Buttons` sección. Tenga en cuenta que el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] plantilla de paquete se ha generado un `Button` elemento que tiene a su elemento primario establecido en `MyMenuGroup`. Como resultado, este comando aparecerá en el menú.
+4. Buscar el `Buttons` sección. Tenga en cuenta que el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] plantilla de paquete se ha generado un `Button` elemento que tiene a su elemento primario establecido en `MyMenuGroup`. Como resultado, este comando aparecerá en el menú.
 
 ## <a name="building-and-testing-the-extension"></a>Compilar y probar la extensión
 
-1.  Compile la solución y comience la depuración. Debe aparecer una instancia de la instancia experimental.
+1. Compile la solución y comience la depuración. Debe aparecer una instancia de la instancia experimental.
 
-2.  La barra de menús en la instancia experimental debe contener un **TestMenu** menú.
+2. La barra de menús en la instancia experimental debe contener un **TestMenu** menú.
 
-3.  En el **TestMenu** menú, haga clic en **invocar el comando de prueba**.
+3. En el **TestMenu** menú, haga clic en **invocar el comando de prueba**.
 
      Debe aparecer un cuadro de mensaje y se mostrará el mensaje "Paquete de comando de prueba dentro de TopLevelMenu.TestCommand.MenuItemCallback()". Esto indica que funciona el nuevo comando.
 

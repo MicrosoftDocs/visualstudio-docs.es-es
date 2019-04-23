@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090035"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA (Variantes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Reemplaza el suavizado de contorno de muestras múltiples (MSAA) en todos los ob
   
 - El objeto `D3D11_TEXTURE2D_DESC` pasado en `pDesc` describe un objetivo de presentación, que es:  
   
-  -   El miembro BindFlags tiene el conjunto de marcadores marcador D3D11_BIND_TARGET o marcador D3D11_BIND_DEPTH_STENCIL.  
+  - El miembro BindFlags tiene el conjunto de marcadores marcador D3D11_BIND_TARGET o marcador D3D11_BIND_DEPTH_STENCIL.  
   
-  -   El miembro Usage está establecido en D3D11_USAGE_DEFAULT.  
+  - El miembro Usage está establecido en D3D11_USAGE_DEFAULT.  
   
-  -   El miembro CPUAccessFlags está establecido en 0.  
+  - El miembro CPUAccessFlags está establecido en 0.  
   
-  -   El miembro MipLevels está establecido en 1.  
+  - El miembro MipLevels está establecido en 1.  
   
 - El dispositivo admite el recuento de muestra solicitado (0, 2 o 4) y la calidad de muestreo (0) para el formato de objetivo de presentación solicitado (miembro D3D11_TEXTURE2D_DESC::Format), como determina `ID3D11Device::CheckMultisampleQualityLevels`.  
   

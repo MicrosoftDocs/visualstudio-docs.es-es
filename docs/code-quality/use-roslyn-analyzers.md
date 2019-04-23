@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080818"
 ---
 # <a name="use-roslyn-analyzers"></a>Usar analizadores de Roslyn
 
@@ -108,42 +108,42 @@ Puede cambiar la gravedad de una regla de **el Explorador de soluciones**, o den
 
 Hay varias maneras de suprimir las infracciones de reglas:
 
-- Para suprimir todas las infracciones actuales, seleccione **analizar** > **ejecutar análisis de código y suprimir problemas activos** en la barra de menús. Esto se conoce a veces como "línea de base".
+- Desde el **analizar** menú
 
-- Para suprimir un diagnóstico de **el Explorador de soluciones**, establece su gravedad en **ninguno**.
+   Seleccione **analizar** > **ejecutar análisis de código y suprimir problemas activos** en la barra de menús para suprimir todas las infracciones actuales. Esto se conoce a veces como "línea de base".
 
-- Para suprimir un diagnóstico desde el editor de conjunto de reglas, desactive la casilla junto a su nombre o establecer **acción** a **ninguno**.
+- Desde **el Explorador de soluciones**
 
-- Para suprimir un diagnóstico desde el editor de código, coloque el cursor en la línea de código con la infracción y presione **Ctrl**+**.** Para abrir el **acciones rápidas** menú. Seleccione **Suprimir regla** > **en origen** o **Suprimir regla** > **en archivo de supresión**.
+   Para suprimir una infracción en **el Explorador de soluciones**, Establece la gravedad de la regla en **ninguno**.
+
+- Desde el **editor de conjunto de reglas**
+
+   Para suprimir una infracción en el editor de conjunto de reglas, desactive la casilla junto a su nombre o establecer **acción** a **ninguno**.
+
+- Desde el **editor de código**
+
+   Para suprimir una infracción del editor de código, coloque el cursor en la línea de código con la infracción y presione **Ctrl**+**.** Para abrir el **acciones rápidas** menú. Seleccione **Suprimir regla** > **en origen/en el archivo de supresión**.
 
    ![Suprimir diagnóstico desde el menú Acciones rápidas](media/suppress-diagnostic-from-editor.png)
 
-- Para suprimir un diagnóstico desde el **lista de errores**, consulte [suprimir las infracciones de la lista de errores](#suppress-violations-from-the-error-list).
+- Desde el **lista de errores**
 
-### <a name="suppress-violations-from-the-error-list"></a>Suprimir las infracciones de la lista de errores
+   Puede suprimir diagnóstico uno o varios de los **lista de errores** , seleccione los que quiere suprimir, y, a continuación, con el botón secundario y seleccione **suprimir** > **Source/In en Archivo de supresión**.
 
-Puede suprimir diagnóstico uno o varios de los **lista de errores** , seleccione los que quiere suprimir, y, a continuación, con el botón secundario y seleccione **suprimir** > **en origen**  o **suprimir** > **en archivo de supresión**.
+   - Si se suprimen **en origen**, el **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de la C# [advertencia #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable advertencia](/dotnet/visual-basic/language-reference/directives/directives) directiva que se agrega al código fuente.
 
-- Si selecciona **en origen**, **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de C# [advertencia #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives) directiva que se agrega al código fuente.
+      ![Vista previa de la adición de advertencia #pragma de archivo de código](media/pragma-warning-preview.png)
 
-   ![Vista previa de la adición de advertencia #pragma de archivo de código](media/pragma-warning-preview.png)
+   - Si selecciona **en el archivo de supresión**, **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo que se agrega al archivo supresiones globales.
 
-- Si selecciona **en el archivo de supresión**, **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo que se agrega al archivo supresiones globales.
+      ![Vista previa de agregar el atributo SuppressMessage al archivo de supresión](media/preview-changes-in-suppression-file.png)
 
-   ![Vista previa de agregar el atributo SuppressMessage al archivo de supresión](media/preview-changes-in-suppression-file.png)
+   En el **vista previa de cambios** cuadro de diálogo, seleccione **aplicar**.
 
-En el **vista previa de cambios** cuadro de diálogo, seleccione **aplicar**.
-
-El **lista de errores** muestra diagnósticos o regla infracciones, tanto de análisis de código activo y compilación. Dado que los diagnósticos de compilación pueden ser obsoletos, por ejemplo, si ha editado el código para corregir la infracción, pero aún no vuelve a generar, no puede suprimir estos diagnósticos desde la **lista de errores**. Sin embargo, diagnósticos de análisis dinámico, ni IntelliSense, siempre están actualizados con orígenes actuales y se puede suprimir desde el **lista de errores**. Si se deshabilita la opción de supresión en el menú contextual o contexto, es probable porque tiene uno o más diagnósticos en la selección de compilación. Para excluir los diagnósticos de la compilación de la selección, cambie el **lista de errores** filtro de origen de **compilación + IntelliSense** a **Intellisense solo**. A continuación, seleccione los diagnósticos que desea suprimir y continuar como se describió anteriormente.
-
-![Filtro de origen de la lista de errores en Visual Studio](media/error-list-filter.png)
-
-> [!NOTE]
-> En un proyecto .NET Core, si agrega una referencia a un proyecto que tiene los analizadores de NuGet, los analizadores se agregan automáticamente al proyecto dependiente demasiado. Para deshabilitar este comportamiento, por ejemplo, si el proyecto dependiente es un proyecto de prueba unitaria, marque el paquete de NuGet como privada en el *.csproj* o *.vbproj* archivo del proyecto que se hace referencia:
->
-> ```xml
-> <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
-> ```
+   > [!NOTE]
+   > Si no ve el **suprimir** opción de menú en **el Explorador de soluciones**, la infracción es probable que procede de la compilación y el análisis dinámico no. El **lista de errores** muestra diagnósticos o regla infracciones, tanto de análisis de código activo y compilación. Dado que los diagnósticos de compilación pueden ser obsoletos, por ejemplo, si ha editado el código para corregir la infracción, pero aún no vuelve a generar, no puede suprimir estos diagnósticos desde la **lista de errores**. Diagnósticos de análisis dinámico, ni IntelliSense, siempre están actualizados con fuentes actuales y se puede suprimir desde el **lista de errores**. Para excluir *compilar* diagnósticos desde la selección, cambie el **lista de errores** filtro de origen de **compilación + IntelliSense** a **Intellisense solo**. A continuación, seleccione los diagnósticos que desea suprimir y continuar como se describió anteriormente.
+   >
+   > ![Filtro de origen de la lista de errores en Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Uso de la línea de comandos
 
@@ -169,6 +169,14 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 La siguiente imagen muestra la salida de compilación de línea de comandos desde la creación de un proyecto que contiene una infracción de regla de analizador:
 
 ![Salida de MSBuild con infracción de regla](media/command-line-build-analyzers.png)
+
+## <a name="dependent-projects"></a>Proyectos dependientes
+
+En un proyecto .NET Core, si agrega una referencia a un proyecto que tiene los analizadores de NuGet, los analizadores se agregan automáticamente al proyecto dependiente demasiado. Para deshabilitar este comportamiento, por ejemplo, si el proyecto dependiente es un proyecto de prueba unitaria, marque el paquete de NuGet como privada en el *.csproj* o *.vbproj* archivo del proyecto que se hace referencia mediante el establecimiento del **PrivateAssets** atributo:
+
+```xml
+<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+```
 
 ## <a name="see-also"></a>Vea también
 

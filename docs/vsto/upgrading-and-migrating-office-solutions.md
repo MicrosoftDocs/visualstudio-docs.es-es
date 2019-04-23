@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a23cca7e0ae333b50c06e5e4b40e0a51d626f9b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635714"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089378"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Actualizar y migrar soluciones de Office
   Si tiene un proyecto de Microsoft Office que se creó en una versión anterior de Visual Studio, deberá actualizarlo para usarlo en las versiones actuales de Visual Studio. Para ello, ábralo en una versión de Visual Studio que incluya las herramientas de desarrollo de Microsoft Office. Para obtener más información sobre las versiones de Visual Studio que incluyen Microsoft Office developer tools, consulte [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -35,22 +35,22 @@ ms.locfileid: "56635714"
 ## <a name="changes-to-upgraded-projects"></a>Cambios realizados en los proyectos actualizados
  Cuando se actualiza un proyecto de Microsoft Office, Visual Studio modifica el proyecto para tener como destino los elementos siguientes:
 
--   El Visual Studio 2010 Tools para Office runtime. Para obtener más información, consulte [Visual Studio Tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- El Visual Studio 2010 Tools para Office runtime. Para obtener más información, consulte [Visual Studio Tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Las referencias de ensamblado actual.
+- Las referencias de ensamblado actual.
 
--   Una versión de .NET Framework que es compatible con el tipo de proyecto (solo al actualizar a Visual Studio 2013).
+- Una versión de .NET Framework que es compatible con el tipo de proyecto (solo al actualizar a Visual Studio 2013).
 
--   Una versión de Microsoft Office que es compatible con el tipo de proyecto (solo al actualizar a Visual Studio 2013).
+- Una versión de Microsoft Office que es compatible con el tipo de proyecto (solo al actualizar a Visual Studio 2013).
 
 ## <a name="assembly-references"></a>Referencias de ensamblado
  Visual Studio actualiza las siguientes referencias de ensamblado en el proyecto:
 
--   Ensamblados de interoperabilidad primarios de Microsoft Office (PIA).
+- Ensamblados de interoperabilidad primarios de Microsoft Office (PIA).
 
--   Ensamblados en [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Para obtener más información sobre estos ensamblados, vea [Visual Studio Tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Ensamblados en [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Para obtener más información sobre estos ensamblados, vea [Visual Studio Tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Versiones nuevas o actualizadas de ensamblados dependientes.
+- Versiones nuevas o actualizadas de ensamblados dependientes.
 
 ## <a name="targeted-net-framework"></a>.NET Framework de destino
  Al actualizar un proyecto en Visual Studio 2013, Visual Studio modifica el proyecto para que su destino sea [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. La versión de .NET Framework que será el destino del proyecto depende de la versión de Office que está instalada en el equipo. Si está instalado [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] , Visual Studio modifica el proyecto para que el destino sea [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. De lo contrario, Visual Studio modifica el proyecto para que el destino sea [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].

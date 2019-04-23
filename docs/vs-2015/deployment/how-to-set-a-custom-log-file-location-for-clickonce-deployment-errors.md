@@ -1,5 +1,5 @@
 ---
-title: Filtrar Establecer una ubicación de archivo de registro personalizado para los errores de implementación ClickOnce | Documentos de Microsoft
+title: Procedimiento Establecer una ubicación de archivo de registro personalizado para los errores de implementación ClickOnce | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a38e453d9bfff3b2633eb98cc5d6127fa126335f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 020fdd5f3df5f0f3b53f1ca28992c2b6a40a35f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116159"
 ---
-# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Filtrar Establecer una ubicación de archivos de registro personalizada para los errores de implementaciones ClickOnce
+# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Procedimiento Establecer una ubicación de archivos de registro personalizada para los errores de implementaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] mantiene los archivos de registro de activación para todas las implementaciones. Estos registros documentan los errores que pertenecen a instalar e inicializar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación. De forma predeterminada, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] crea un archivo de registro para cada activación de la implementación. Estos archivos de registro almacena en la carpeta archivos temporales de Internet. El archivo de registro para una implementación se muestra al usuario cuando se produce un error de activación y el usuario hace clic **detalles** en el cuadro de diálogo de error resultante.  
@@ -41,11 +41,11 @@ ms.locfileid: "58999006"
   
 ### <a name="to-set-a-custom-log-file-location"></a>Para establecer una ubicación de archivo de registro personalizado  
   
-1.  Abra **Regedit.exe**.  
+1. Abra **Regedit.exe**.  
   
-2.  Desplácese hasta el nodo `HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
+2. Desplácese hasta el nodo `HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
   
-3.  Establezca el valor de cadena `LogFilePath` a la ruta de acceso completa y el nombre de la ubicación de registro personalizada que prefiera.  
+3. Establezca el valor de cadena `LogFilePath` a la ruta de acceso completa y el nombre de la ubicación de registro personalizada que prefiera.  
   
      Esta ubicación debe estar en un directorio al que el usuario tiene acceso de escritura. Por ejemplo, en Windows Vista, cree la siguiente estructura de carpetas y establecer `LogFilePath` a C:\Users\\< nombre de usuario\>\Documents\Logs\ClickOnce\installation.log.  
   

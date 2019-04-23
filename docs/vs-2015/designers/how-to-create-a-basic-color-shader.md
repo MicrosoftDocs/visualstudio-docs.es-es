@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un sombreador de Color básico | Microsoft Docs
+title: Procedimiento Crear un sombreador de Color básico | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,27 +9,27 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117764"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Cómo: Crear un sombreador de color básico
+# <a name="how-to-create-a-basic-color-shader"></a>Procedimiento Crear un sombreador de color básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de color plano. Este sombreador establece el color final en un valor de color RGB constante.  
   
  Este documento muestra estas actividades:  
   
--   Quitar nodos de un gráfico  
+- Quitar nodos de un gráfico  
   
--   Agregar nodos a un gráfico  
+- Agregar nodos a un gráfico  
   
--   Establecer las propiedades del nodo  
+- Establecer las propiedades del nodo  
   
--   Conectar nodos  
+- Conectar nodos  
   
 ## <a name="creating-a-flat-color-shader"></a>Crear a un sombreador de color plano  
  Puede implementar un sombreador de color plano escribiendo el valor de color de una constante de color RGB en el color del resultado final.  

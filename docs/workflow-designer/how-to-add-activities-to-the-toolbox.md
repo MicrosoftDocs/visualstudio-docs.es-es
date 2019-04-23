@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e334ee23a68a4fbbb481765997ea1668daede13f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b9e50736e5d9bc55eadf0aab7e7f00d26eb03249
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117244"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Filtrar Agregar actividades al cuadro de herramientas
+# <a name="how-to-add-activities-to-the-toolbox"></a>Procedimiento Agregar actividades al cuadro de herramientas
 
 Se pueden agregar actividades a la **cuadro de herramientas** en la solución de varias maneras diferentes. Puede agregarlas desde dentro de su proyecto actual y hacer referencia a las misas desde un proyecto diferente o desde un ensamblado diferente.
 
 ## <a name="to-add-an-activity-from-within-your-current-project"></a>Para agregar una actividad desde su proyecto actual
 
-1.  Agregue una nueva actividad personalizada al proyecto de flujo de trabajo actual. Para obtener más información acerca de cómo agregar una nueva actividad personalizada al proyecto, vea [Cómo: Agregar un nuevo elemento a un proyecto de flujo de trabajo](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1. Agregue una nueva actividad personalizada al proyecto de flujo de trabajo actual. Para obtener más información acerca de cómo agregar una nueva actividad personalizada al proyecto, vea [Cómo: Agregar un nuevo elemento a un proyecto de flujo de trabajo](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
-2.  Agregue lógica personalizada a su actividad.
+2. Agregue lógica personalizada a su actividad.
 
-3.  Compile el proyecto. Si la compilación se realizó correctamente, una nueva categoría en la **cuadro de herramientas** denominado "\<*nombre del proyecto*>" se muestra con la actividad personalizada incluida en esa categoría.
+3. Compile el proyecto. Si la compilación se realizó correctamente, una nueva categoría en la **cuadro de herramientas** denominado "\<*nombre del proyecto*>" se muestra con la actividad personalizada incluida en esa categoría.
 
     > [!NOTE]
     > Si se restablece el cuadro de herramientas, las actividades personalizadas se quitarán, incluso si la solución se compila de nuevo. Para volver a rellenar el cuadro de herramientas con actividades personalizadas después de que se ha restablecido, reinicie Visual Studio.
@@ -38,25 +38,25 @@ Se pueden agregar actividades a la **cuadro de herramientas** en la solución de
 
 ## <a name="to-add-an-activity-from-within-a-different-project"></a>Para agregar una actividad desde un proyecto diferente
 
-1.  Abra una solución que contenga al menos un proyecto de flujo de trabajo y un proyecto de biblioteca de actividades personalizado u otro proyecto de flujo de trabajo que defina una actividad personalizada.
+1. Abra una solución que contenga al menos un proyecto de flujo de trabajo y un proyecto de biblioteca de actividades personalizado u otro proyecto de flujo de trabajo que defina una actividad personalizada.
 
-2.  Compile ambos proyectos. Si las compilaciones se efectúan correctamente, una nueva categoría en la **cuadro de herramientas** denominado "\<*nombre del proyecto*>" se muestra con la actividad personalizada incluida en esa categoría.
+2. Compile ambos proyectos. Si las compilaciones se efectúan correctamente, una nueva categoría en la **cuadro de herramientas** denominado "\<*nombre del proyecto*>" se muestra con la actividad personalizada incluida en esa categoría.
 
 ## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Para agregar una actividad al cuadro de herramientas desde un ensamblado
 
-1.  Abra una solución de flujo de trabajo.
+1. Abra una solución de flujo de trabajo.
 
-2.  Desde el **herramientas** menú, seleccione **elegir elementos del cuadro de herramientas**.
+2. Desde el **herramientas** menú, seleccione **elegir elementos del cuadro de herramientas**.
 
-3.  En el **elegir elementos del cuadro de herramientas** cuadro de diálogo, seleccione el **componentes de System.Activities** pestaña, a continuación, haga clic en **examinar** para navegar hasta el ensamblado que contiene la personalizada actividad que desea agregar.
+3. En el **elegir elementos del cuadro de herramientas** cuadro de diálogo, seleccione el **componentes de System.Activities** pestaña, a continuación, haga clic en **examinar** para navegar hasta el ensamblado que contiene la personalizada actividad que desea agregar.
 
-4.  Seleccione el ensamblado y haga clic en **Aceptar**. El componente de actividad personalizado se agrega a la lista de componentes y se selecciona automáticamente.
+4. Seleccione el ensamblado y haga clic en **Aceptar**. El componente de actividad personalizado se agrega a la lista de componentes y se selecciona automáticamente.
 
-    1.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo.
+    1. Haga clic en **Aceptar** para cerrar el cuadro de diálogo.
 
-5.  Para mostrar el cuadro de herramientas, seleccione **cuadro de herramientas** desde el **vista** menú.
+5. Para mostrar el cuadro de herramientas, seleccione **cuadro de herramientas** desde el **vista** menú.
 
-6.  La actividad personalizada aparece en la **cuadro de herramientas** en la categoría que fue el foco antes de que se agregó el elemento. Por ejemplo, si la **General** categoría se ha seleccionado en el **cuadro de herramientas** antes de agregar el elemento de cuadro de herramientas, la actividad aparezca bajo el **General** categoría.
+6. La actividad personalizada aparece en la **cuadro de herramientas** en la categoría que fue el foco antes de que se agregó el elemento. Por ejemplo, si la **General** categoría se ha seleccionado en el **cuadro de herramientas** antes de agregar el elemento de cuadro de herramientas, la actividad aparezca bajo el **General** categoría.
 
 ## <a name="see-also"></a>Vea también
 

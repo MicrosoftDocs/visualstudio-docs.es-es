@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab40302e7b92f0cb3789c7510ba80904b45f5afe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096143"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Comandos de GUID e identificadores de Visual Studio
 Los valores GUID y el Id. de los comandos incluidos en el entorno de desarrollo integrado (IDE) de Visual Studio se definen en archivos de vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [grupos, menús y comandos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -52,11 +52,11 @@ Los valores GUID y el Id. de los comandos incluidos en el entorno de desarrollo 
 ### <a name="special-cases"></a>Casos especiales
  En los casos siguientes, el texto de menú o el texto de información sobre herramientas puede no coincidir exactamente con lo que está en la definición de comando.
 
--   Los elementos de menú que incluyen un carácter subrayado, como el **impresión** comando el **archivo** menú, en el que el *P* está subrayada.
+- Los elementos de menú que incluyen un carácter subrayado, como el **impresión** comando el **archivo** menú, en el que el *P* está subrayada.
 
      Carácter en los nombres de elemento de menú de caracteres que van precedidos por la y comercial (&) se muestran como subrayado. Sin embargo, *.vsct* archivos se escriben en XML, que usa el carácter de y comercial (&) para indicar los caracteres especiales y requiere que se debe escribir una y comercial que se mostrará como  *&amp;amp;*. Por lo tanto, en un *.vsct* archivo, el **impresión** comando aparece como  *&amp;amp; Impresión*.
 
--   Los comandos que tienen texto dinámico, como **guardar** \<nombre de archivo actual\>y genera dinámicamente elementos de menú, como los elementos en el **archivos recientes** lista.
+- Los comandos que tienen texto dinámico, como **guardar** \<nombre de archivo actual\>y genera dinámicamente elementos de menú, como los elementos en el **archivos recientes** lista.
 
      No hay ninguna forma confiable para realizar búsquedas de texto dinámico. En su lugar, buscar un grupo que hospeda el comando deseado consultando [menús GUID e identificadores de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) o [las barras de herramientas de GUID e identificadores de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)y busque el Id. de ese grupo. Si la definición de comando no tiene el grupo como su [elemento primario](../../extensibility/parent-element.md), búsqueda *SharedCmdPlace.vsct* y *ShellCmdPlace.vsct* (o  *VsDbgCmdPlace.vsct* para los comandos del depurador) para un `<CommandPlacement>` elemento que establece el elemento primario del comando. *SharedCmdPlace.vsct*, *ShellCmdPlace.vsct*, y *VsDbgCmdPlace.vsct* están en el *\<ruta de instalación de Visual Studio SDK\>\ VisualStudioIntegration\Common\Inc\\* carpeta.
 

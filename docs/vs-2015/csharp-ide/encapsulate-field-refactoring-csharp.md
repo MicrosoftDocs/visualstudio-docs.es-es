@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee56c4588bbbd3ec5cfca03bbd18c6dec1732fbf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116607"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Encapsular campo (Refactorización, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ El **encapsular campo** operación de refactorización le permite crear rápidam
   
 ### <a name="to-create-a-property-from-a-field"></a>Para crear una propiedad a partir de un campo  
   
-1.  Cree una aplicación de consola denominada `EncapsulateFieldExample` y, a continuación, reemplace `Program` por el siguiente código de ejemplo.  
+1. Cree una aplicación de consola denominada `EncapsulateFieldExample` y, a continuación, reemplace `Program` por el siguiente código de ejemplo.  
   
     ```csharp  
     class Square  
@@ -58,13 +58,13 @@ El **encapsular campo** operación de refactorización le permite crear rápidam
     }  
     ```  
   
-2.  En el [Editor de código](../ide/writing-code-in-the-code-and-text-editor.md), coloque el cursor en la declaración, en el nombre del campo que desea encapsular. En el ejemplo siguiente, coloque el cursor sobre la palabra `width`:  
+2. En el [Editor de código](../ide/writing-code-in-the-code-and-text-editor.md), coloque el cursor en la declaración, en el nombre del campo que desea encapsular. En el ejemplo siguiente, coloque el cursor sobre la palabra `width`:  
   
     ```csharp  
     public int width, height;  
     ```  
   
-3.  En el **refactorizar** menú, haga clic en **encapsular campo**.  
+3. En el **refactorizar** menú, haga clic en **encapsular campo**.  
   
      El **encapsular campo** aparece el cuadro de diálogo.  
   
@@ -72,11 +72,11 @@ El **encapsular campo** operación de refactorización le permite crear rápidam
   
      También puede haga clic en el cursor, apuntar a **refactorizar**y, a continuación, haga clic en **encapsular campo** para mostrar el **encapsular campo** cuadro de diálogo.  
   
-4.  Especifique la configuración.  
+4. Especifique la configuración.  
   
-5.  Presione ENTRAR o haga clic en el **Aceptar** botón.  
+5. Presione ENTRAR o haga clic en el **Aceptar** botón.  
   
-6.  Si ha seleccionado la **vista previa de cambios de referencia** opción, el **vista previa de cambios de referencia** abre la ventana. Haga clic en el **aplicar** botón.  
+6. Si ha seleccionado la **vista previa de cambios de referencia** opción, el **vista previa de cambios de referencia** abre la ventana. Haga clic en el **aplicar** botón.  
   
      El siguiente código de los descriptores de acceso `get` y `set` se muestra en el archivo de código fuente:  
   

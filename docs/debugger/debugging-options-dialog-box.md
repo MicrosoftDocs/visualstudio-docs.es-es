@@ -1,5 +1,5 @@
 ---
-title: Depuración, cuadro de diálogo Opciones | Microsoft Docs
+title: Depuración, cuadro de diálogo Opciones | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,23 +21,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e80504e14e6468dc4d9efa31258bdbf6150a649
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d0a6a6d8312dba4ae89e773fc2be8fa0b9984e0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690359"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094312"
 ---
 # <a name="debugging-options-dialog-box"></a>Depuración, Opciones (Cuadro de diálogo)
 La carpeta **Depuración**, del cuadro de diálogo **Opciones** del menú **Herramientas**, proporciona las siguientes páginas, que permiten especificar opciones de herramienta del depurador.
 
--   [General, Depuración, cuadro de diálogo Opciones](../debugger/general-debugging-options-dialog-box.md)
+- [General, Depuración, cuadro de diálogo Opciones](../debugger/general-debugging-options-dialog-box.md)
 
--   [Just-In-Time, Depuración, Cuadro de diálogo Opciones](../debugger/just-in-time-debugging-options-dialog-box.md)
+- [Just-In-Time, Depuración, Cuadro de diálogo Opciones](../debugger/just-in-time-debugging-options-dialog-box.md)
 
--   [Ventana de salida, Depuración, Opciones (Cuadro de diálogo)](../debugger/output-window-debugging-options-dialog-box.md)
+- [Ventana de salida, Depuración, Opciones (Cuadro de diálogo)](../debugger/output-window-debugging-options-dialog-box.md)
 
--   [Símbolos, Depuración, cuadro de diálogo Opciones](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Símbolos, Depuración, cuadro de diálogo Opciones](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 ## <a name="see-also"></a>Vea también
 - [Seguridad del depurador](../debugger/debugger-security.md)

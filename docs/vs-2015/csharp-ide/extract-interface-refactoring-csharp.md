@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995491"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116750"
 ---
 # <a name="extract-interface-refactoring-c"></a>Extraer interfaz (Refactorización, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Extraer interfaz es una operación de refactorización que proporciona una maner
   
 ### <a name="to-use-extract-interface"></a>Para utilizar Extraer interfaz  
   
-1.  Cree una aplicación de consola denominada `ExtractInterface`y, a continuación, reemplace `Program` con el código siguiente  
+1. Cree una aplicación de consola denominada `ExtractInterface`y, a continuación, reemplace `Program` con el código siguiente  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -45,7 +45,7 @@ Extraer interfaz es una operación de refactorización que proporciona una maner
     }  
     ```  
   
-2.  Con el cursor situado en `MethodB`y haga clic en **Extraer interfaz** en el **refactorizar** menú.  
+2. Con el cursor situado en `MethodB`y haga clic en **Extraer interfaz** en el **refactorizar** menú.  
   
      El **Extraer interfaz** aparece el cuadro de diálogo.  
   
@@ -53,9 +53,9 @@ Extraer interfaz es una operación de refactorización que proporciona una maner
   
      También puede haga clic en el mouse, apuntar a **refactorizar**y, a continuación, haga clic en **Extraer interfaz** para mostrar el **Extraer interfaz** cuadro de diálogo.  
   
-3.  Haga clic en **seleccionar todo**.  
+3. Haga clic en **seleccionar todo**.  
   
-4.  Haga clic en **Aceptar**.  
+4. Haga clic en **Aceptar**.  
   
      Consulte el nuevo archivo, IProtoA.cs y el código siguiente:  
   

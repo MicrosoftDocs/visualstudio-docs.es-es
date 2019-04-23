@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ad84f5a0db677ca9efa9d24b1963959010f25e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602031"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117549"
 ---
 # <a name="ribbon-xml"></a>XML de la cinta de opciones
   El elemento cinta (XML) le permite personalizar una cinta de opciones mediante XML. Use el elemento cinta (XML) si desea personalizar la cinta de opciones de forma que no es compatible con el elemento cinta (diseñador Visual). Para obtener una comparación de lo que puede hacer con cada elemento, vea [información general de la cinta de opciones](../vsto/Ribbon-overview.md).
@@ -55,9 +55,9 @@ ms.locfileid: "56602031"
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>Definir el comportamiento de la cinta de opciones personalizada
  Puede responder a las acciones del usuario, como hacer clic en un botón en la cinta de opciones, creando *métodos de devolución de llamada*. Los métodos de devolución de llamada son similares a los eventos de los controles de Windows Forms, pero se identifican con un atributo en el código XML del elemento de la interfaz de usuario. Cuando escribe métodos en la clase Ribbon, un control llama al método que tiene el mismo nombre que el valor del atributo. Por ejemplo, puede crear un método de devolución de llamada que se llama cuando un usuario hace clic en un botón en la cinta de opciones. Es necesario llevar a cabo dos pasos para crear un método de devolución de llamada:
 
--   Asigne a un control del archivo XML de la cinta de opciones un atributo que identifique un método de devolución de llamada en el código.
+- Asigne a un control del archivo XML de la cinta de opciones un atributo que identifique un método de devolución de llamada en el código.
 
--   Defina el método de devolución de llamada en la clase Ribbon.
+- Defina el método de devolución de llamada en la clase Ribbon.
 
 > [!NOTE]
 >  Outlook requiere un paso adicional. Para obtener más información, consulte [personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
@@ -77,7 +77,7 @@ ms.locfileid: "56602031"
 
  Hay muchos tipos diferentes de métodos de devolución de llamada que se pueden asignar a los controles de la cinta de opciones. Para obtener una lista completa de los métodos de devolución de llamada disponibles para cada control, consulte el artículo técnico [personalizar la interfaz de usuario de la cinta de Office (2007) para desarrolladores (parte 3 de 3)](/previous-versions/office/developer/office-2007/aa722523(v=office.12)).
 
-###  <a name="CallBackMethods"></a> Definir métodos de devolución de llamada
+### <a name="CallBackMethods"></a> Definir métodos de devolución de llamada
  Defina los métodos de devolución de llamada en la clase Ribbon en el archivo de código de la cinta de opciones. Un método de devolución de llamada tiene varios requisitos:
 
 - Debe declararse como público.
@@ -93,7 +93,7 @@ ms.locfileid: "56602031"
   [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
   [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
 
-##  <a name="RibbonDescriptorFile"></a> Referencia de archivo XML de cinta de opciones
+## <a name="RibbonDescriptorFile"></a> Referencia de archivo XML de cinta de opciones
  Puede definir su cinta de opciones personalizada agregando elementos y atributos en el archivo XML de cinta de opciones. De forma predeterminada, el archivo XML de la cinta de opciones contiene el siguiente código XML.
 
 ```xml
@@ -132,7 +132,7 @@ ms.locfileid: "56602031"
 
  Los elementos y atributos predeterminados del archivo XML de la cinta de opciones son un subconjunto pequeño de los elementos y atributos disponibles. Para obtener una lista completa de los elementos y atributos disponibles, consulte el artículo técnico [personalizar la interfaz de usuario de la cinta de Office (2007) para desarrolladores (parte 2 de 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
-##  <a name="RibbonExtensionClass"></a> Referencia de la clase Ribbon
+## <a name="RibbonExtensionClass"></a> Referencia de la clase Ribbon
  Visual Studio genera la clase Ribbon en el archivo de código de la cinta de opciones. Agregue los métodos de devolución de llamada para los controles de la cinta de opciones a esta clase. Esta clase implementa la interfaz <xref:Microsoft.Office.Core.IRibbonExtensibility> .
 
  En la siguiente tabla se describen los métodos predeterminados de esta clase.
