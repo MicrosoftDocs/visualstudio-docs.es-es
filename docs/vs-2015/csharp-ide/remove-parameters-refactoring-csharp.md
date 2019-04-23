@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8962dd95aa46ae75a2d214738e7713ae9da42534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045803"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Quitar parámetros (Refactorización, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58995683"
   
 ### <a name="to-remove-parameters"></a>Para quitar los parámetros  
   
-1.  Cree una aplicación de consola denominada `RemoveParameters`y, a continuación, reemplace `Program` con el código siguiente.  
+1. Cree una aplicación de consola denominada `RemoveParameters`y, a continuación, reemplace `Program` con el código siguiente.  
   
     ```csharp  
     class A  
@@ -55,19 +55,19 @@ ms.locfileid: "58995683"
     }  
     ```  
   
-2.  Coloque el cursor en el método `A`, ya sea en la declaración de método o la llamada al método.  
+2. Coloque el cursor en el método `A`, ya sea en la declaración de método o la llamada al método.  
   
-3.  Desde el **refactorizar** menú, seleccione **quitar parámetros** para mostrar el **quitar parámetros** cuadro de diálogo.  
+3. Desde el **refactorizar** menú, seleccione **quitar parámetros** para mostrar el **quitar parámetros** cuadro de diálogo.  
   
      También puede escribir el método abreviado de teclado CTRL + R, V para mostrar el **quitar parámetros** cuadro de diálogo.  
   
      También puede haga clic en el cursor, apuntar a **refactorizar**y, a continuación, haga clic en **quitar parámetros** para mostrar el **quitar parámetros** cuadro de diálogo.  
   
-4.  Mediante el **parámetros** , a continuación, coloque el cursor en `int i`y, a continuación, haga clic en **quitar**.  
+4. Mediante el **parámetros** , a continuación, coloque el cursor en `int i`y, a continuación, haga clic en **quitar**.  
   
-5.  Haga clic en **Aceptar**.  
+5. Haga clic en **Aceptar**.  
   
-6.  En el **vista previa de cambios: quitar parámetros** cuadro de diálogo, haga clic en **aplicar**.  
+6. En el **vista previa de cambios: quitar parámetros** cuadro de diálogo, haga clic en **aplicar**.  
   
 ## <a name="remarks"></a>Comentarios  
  Puede quitar los parámetros de una declaración de método o una llamada al método. Coloque el cursor en el nombre del delegado o de declaración de método y quitar los parámetros de invocación.  

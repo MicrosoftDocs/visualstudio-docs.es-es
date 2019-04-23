@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e50fbbc3c834fc33f77f3aecef6b51ef9037ecb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049262"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicialización de diseñador y configuración de metadatos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Manipulación de los atributos de metadatos y el filtro asociado con un diseñad
 ### <a name="customizing-initialization"></a>Personalizar la inicialización  
  Personalización de un diseñador, un componente o una superficie del diseñador, implica:  
   
-1.  Modificar los metadatos del diseñador y cambiar de forma efectiva cómo una determinada <xref:System.Type> se tiene acceso a o se convierten.  
+1. Modificar los metadatos del diseñador y cambiar de forma efectiva cómo una determinada <xref:System.Type> se tiene acceso a o se convierten.  
   
      Esto se hace normalmente a través de la <xref:System.Drawing.Design.UITypeEditor> o <xref:System.ComponentModel.TypeConverter> mecanismos.  
   
      Por ejemplo, cuando <xref:System.Windows.Forms>-se inicializan en función de los diseñadores, el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] entorno modifica el <xref:System.Drawing.Design.UITypeEditor> para <xref:System.Web.UI.WebControls.Image> los objetos utilizados con el diseñador para utilizar el Administrador de recursos para obtener los mapas de bits en lugar de con el sistema de archivos.  
   
-2.  La integración con el entorno, por ejemplo, al suscribirse a eventos o la obtención de información de configuración del proyecto. Puede obtener información de configuración de proyecto y suscribirse a eventos mediante la obtención de la <xref:System.ComponentModel.Design.ITypeResolutionService> interfaz.  
+2. La integración con el entorno, por ejemplo, al suscribirse a eventos o la obtención de información de configuración del proyecto. Puede obtener información de configuración de proyecto y suscribirse a eventos mediante la obtención de la <xref:System.ComponentModel.Design.ITypeResolutionService> interfaz.  
   
-3.  Modificación del entorno del usuario mediante la activación adecuada **cuadro de herramientas** categorías o restringiendo la aplicabilidad del diseñador mediante la aplicación de una instancia de la <xref:System.ComponentModel.ToolboxItemFilterAttribute> clase al diseñador.  
+3. Modificación del entorno del usuario mediante la activación adecuada **cuadro de herramientas** categorías o restringiendo la aplicabilidad del diseñador mediante la aplicación de una instancia de la <xref:System.ComponentModel.ToolboxItemFilterAttribute> clase al diseñador.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Inicialización de diseñador un VSPackage  
  Un VSPackage debe controlar la inicialización de diseñador por:  

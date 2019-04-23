@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 392e50b9494d2de17f2d1ac2b0f3c23f1e872fa6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046154"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>Tutorial: Depuración en tiempo de diseño
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Puede usar Visual Studio **inmediato** ventana para ejecutar una función o subr
   
 ### <a name="to-hit-breakpoints-from-the-immediate-window"></a>Para establecer los puntos de interrupción en la ventana Inmediato  
   
-1.  Pegue el siguiente código en una aplicación de consola de Visual Basic:  
+1. Pegue el siguiente código en una aplicación de consola de Visual Basic:  
   
     ```  
     Module Module1  
@@ -63,19 +63,19 @@ Puede usar Visual Studio **inmediato** ventana para ejecutar una función o subr
     End Module  
     ```  
   
-2.  Establezca un punto de interrupción en la línea `s="Add BreakPoint Here"`.  
+2. Establezca un punto de interrupción en la línea `s="Add BreakPoint Here"`.  
   
-3.  Escriba lo siguiente en el **inmediato** ventana: `?MyFunction<enter>`  
+3. Escriba lo siguiente en el **inmediato** ventana: `?MyFunction<enter>`  
   
-4.  Compruebe que se ha alcanzado el punto de interrupción, y que la pila de llamadas es exacta.  
+4. Compruebe que se ha alcanzado el punto de interrupción, y que la pila de llamadas es exacta.  
   
-5.  En el **depurar** menú, haga clic en **continuar**y compruebe que está todavía en modo de diseño.  
+5. En el **depurar** menú, haga clic en **continuar**y compruebe que está todavía en modo de diseño.  
   
-6.  Escriba lo siguiente en el **inmediato** ventana: `?MyFunction<enter>`  
+6. Escriba lo siguiente en el **inmediato** ventana: `?MyFunction<enter>`  
   
-7.  Escriba lo siguiente en el **inmediato** ventana: `?MySub<enter>`  
+7. Escriba lo siguiente en el **inmediato** ventana: `?MySub<enter>`  
   
-8.  Compruebe que el punto de interrupción y examinar el valor de la variable estática `i` en el **variables locales** ventana. Debería tener el valor de 3.  
+8. Compruebe que el punto de interrupción y examinar el valor de la variable estática `i` en el **variables locales** ventana. Debería tener el valor de 3.  
   
 9. Compruebe que la pila de llamadas es exacta.  
   

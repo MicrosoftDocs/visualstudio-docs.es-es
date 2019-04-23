@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6002ed1748a5848e43628c88ec0395a0d4053ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049027"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Introducción a las extensiones de editor y el servicio de lenguaje
 Puede usar las extensiones de editor para agregar características del servicio de lenguaje como la esquematización, coincidencia de llaves, IntelliSense y bombillas a su propio lenguaje de programación o a cualquier tipo de contenido. También puede personalizar la apariencia y comportamiento del editor de Visual Studio, por ejemplo el color, los márgenes, los elementos gráficos y otros elementos visuales de texto. También puede definir su propio tipo de contenido y especificar la apariencia y comportamiento de las vistas de texto en el que aparece su contenido.
@@ -82,9 +82,9 @@ Puede usar las extensiones de editor para agregar características del servicio 
 
  También puede crear editor de componentes de MEF de una extensión de paquete de Visual Studio. Vea los siguientes tutoriales para obtener más información:
 
--   [Tutorial: Uso de un comando de shell con una extensión del editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
+- [Tutorial: Uso de un comando de shell con una extensión del editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
 
--   [Tutorial: Uso de una tecla de método abreviado con una extensión del editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
+- [Tutorial: Uso de una tecla de método abreviado con una extensión del editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
 ## <a name="see-also"></a>Vea también
 - [Puntos de extensión de editor y el servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a00a980f5984b05bd1f77a83d4c95d4da0f3ff03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 37f84bff4802c703bb61b36e9c1933a31cd6c5e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045452"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Implementar ISerializable correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58997010"
 ## <a name="cause"></a>Motivo
  Un tipo visible externamente es asignable a la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz y una de las siguientes condiciones es true:
 
--   El tipo hereda pero no invalida el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método y el tipo declara campos de instancia que no están marcados con el <xref:System.NonSerializedAttribute?displayProperty=fullName> atributo.
+- El tipo hereda pero no invalida el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método y el tipo declara campos de instancia que no están marcados con el <xref:System.NonSerializedAttribute?displayProperty=fullName> atributo.
 
--   El tipo no está sellado y el tipo implementa un <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método que no es externamente visible y reemplazable.
+- El tipo no está sellado y el tipo implementa un <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método que no es externamente visible y reemplazable.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Los campos que se declaran en un tipo que hereda de la instancia la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz no se incluyen automáticamente en el proceso de serialización. Para incluir los campos, el tipo debe implementar la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método y el constructor de serialización. Si no se deben serializar los campos, aplicar el <xref:System.NonSerializedAttribute> a los campos para indicar explícitamente la decisión de atributo.
@@ -58,7 +58,7 @@ ms.locfileid: "58997010"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly/vb/FxCop.Usage.ImplementISerializableCorrectly.vb#1)]
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se corrige las dos anteriores infracciones proporcionando una implementación reemplazable de [ISerializable.GetObjectData] (<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) en la clase Book y proporcionando una implementación de <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> en la clase de biblioteca.
+ En el ejemplo siguiente se corrige las dos anteriores infracciones proporcionando una implementación de [ISerializable.GetObjectData] (invalidable<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) en la clase Book y proporcionando una implementación de <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> en la clase de biblioteca.
 
  [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cpp/FxCop.Usage.ImplementISerializableCorrectly2.cpp#1)]
  [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cs/FxCop.Usage.ImplementISerializableCorrectly2.cs#1)]

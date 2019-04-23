@@ -1,5 +1,5 @@
 ---
-title: Filtrar Habilitar y deshabilitar el análisis de la solución completa para código administrado | Documentos de Microsoft
+title: Procedimiento Habilitar y deshabilitar el análisis de la solución completa para código administrado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -11,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987211"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044829"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Filtrar Habilitar y deshabilitar el análisis de la solución completa para código administrado
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Procedimiento Habilitar y deshabilitar el análisis de la solución completa para código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
@@ -30,11 +30,11 @@ NOTA]
   
 #### <a name="to-toggle-full-solution-analysis"></a>Para activar o desactivar el análisis de la solución completa  
   
-1.  En el menú principal de Visual Studio, elija **herramientas** &#124; **opciones** para ver el **opciones** cuadro de diálogo.  
+1. En el menú principal de Visual Studio, elija **herramientas** &#124; **opciones** para ver el **opciones** cuadro de diálogo.  
   
-2.  En el **opciones** diálogo cuadro, elija **Editor de texto** &#124; **C#** o **básica** &#124; **avanzadas**.  
+2. En el **opciones** diálogo cuadro, elija **Editor de texto** &#124; **C#** o **básica** &#124; **avanzadas**.  
   
-3.  Seleccione el **Habilitar análisis de la solución completa** casilla de verificación para habilitar el análisis de la solución completa, o desactive la casilla para deshabilitarla. Elija la **Aceptar** cuando haya terminado.  
+3. Seleccione el **Habilitar análisis de la solución completa** casilla de verificación para habilitar el análisis de la solución completa, o desactive la casilla para deshabilitarla. Elija la **Aceptar** cuando haya terminado.  
   
      ![Habilitar la casilla de verificación de análisis de solución completa. ](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   

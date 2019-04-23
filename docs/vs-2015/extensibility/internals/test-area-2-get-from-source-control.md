@@ -11,12 +11,12 @@ ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78ecbcb50effc133487f03ffd2f2edee3cbd8d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 069c396ce4cb75c9153082fdbb352b2ba713c8a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052591"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Área de prueba 2: Obtención desde el control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Esta área de prueba trata los casos de prueba para recuperar los elementos del 
   
 ##### <a name="get-latest-version"></a>Obtener la versión más reciente:  
   
--   **Archivo**, **Control de código fuente**, **obtener última versión**.  
+- **Archivo**, **Control de código fuente**, **obtener última versión**.  
   
--   **Archivo**, **obtener última versión**.  
+- **Archivo**, **obtener última versión**.  
   
--   Menú contextual, **obtener última versión**.  
+- Menú contextual, **obtener última versión**.  
   
--   Obtener: **Archivo**, **Control de código fuente**, **obtener**.  
+- Obtener: **Archivo**, **Control de código fuente**, **obtener**.  
   
 ## <a name="expected-behavior"></a>Comportamiento esperado  
   

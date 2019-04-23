@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048210"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Tutorial: Crear un editor de núcleo y registrar un tipo de archivo del editor
 En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo cuando un archivo con el *.myext* se carga la extensión de nombre de archivo.
@@ -26,11 +26,11 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Ubicaciones de la plantilla de proyecto de paquete de Visual Studio
  La plantilla de proyecto del paquete de Visual Studio puede encontrarse en tres ubicaciones diferentes en el cuadro de diálogo **Nuevo proyecto** :
 
-1.  En **Extensibilidad de Visual Basic**. El lenguaje predeterminado del proyecto es Visual Basic.
+1. En **Extensibilidad de Visual Basic**. El lenguaje predeterminado del proyecto es Visual Basic.
 
-2.  En **Extensibilidad de C#**. El lenguaje predeterminado del proyecto es C#.
+2. En **Extensibilidad de C#**. El lenguaje predeterminado del proyecto es C#.
 
-3.  En **Extensibilidad de Otros tipos de proyectos**. El lenguaje predeterminado del proyecto es C++.
+3. En **Extensibilidad de Otros tipos de proyectos**. El lenguaje predeterminado del proyecto es C++.
 
 ### <a name="to-create-the-vspackage"></a>Para crear el VSPackage
 

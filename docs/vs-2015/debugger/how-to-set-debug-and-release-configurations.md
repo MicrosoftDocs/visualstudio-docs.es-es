@@ -1,5 +1,5 @@
 ---
-title: Filtrar Establecer configuraciones Debug y Release | Documentos de Microsoft
+title: Procedimiento Establecer configuraciones Debug y Release | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -35,14 +35,14 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987373"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048197"
 ---
-# <a name="how-to-set-debug-and-release-configurations"></a>Filtrar Conjunto de configuraciones Debug y Release
+# <a name="how-to-set-debug-and-release-configurations"></a>Procedimiento Conjunto de configuraciones Debug y Release
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los proyectos de Visual Studio tienen configuraciones independientes para el lanzamiento y la depuración del programa. Como se desprende de sus nombres, la versión de depuración se compila para depurar y la versión de lanzamiento para la distribución final.  
@@ -57,9 +57,9 @@ Los proyectos de Visual Studio tienen configuraciones independientes para el lan
   
 ### <a name="to-change-the-build-configuration"></a>Para cambiar la configuración de compilación:  
   
-1.  En el menú compilar: haga clic en **compilar / Administrador de configuración**, a continuación, seleccione **depurar** o **versión**.  
+1. En el menú compilar: haga clic en **compilar / Administrador de configuración**, a continuación, seleccione **depurar** o **versión**.  
   
-2.  En la barra de herramientas, elija **depurar** o **versión** desde el **configuraciones de soluciones** cuadro de lista.  
+2. En la barra de herramientas, elija **depurar** o **versión** desde el **configuraciones de soluciones** cuadro de lista.  
   
      ![configuración de compilación de la barra de herramientas](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   

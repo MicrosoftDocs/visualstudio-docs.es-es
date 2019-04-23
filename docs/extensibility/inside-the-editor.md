@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053200"
 ---
 # <a name="inside-the-editor"></a>Dentro del editor
 
@@ -152,7 +152,7 @@ Puede obtener la posición de un punto de seguimiento o el intervalo de un inter
 
 #### <a name="content-types"></a>Tipos de contenido
 
-Tipos de contenido son un mecanismo para definir los distintos tipos de contenido. Un tipo de contenido puede ser un tipo de archivo, como "text", "code" o "binary" o un tipo de tecnología, como "xml", "vb" o "C#". Por ejemplo, la palabra "using" es una palabra clave en C# y Visual Basic, pero no en otros lenguajes de programación. Por lo tanto, la definición de esta palabra clave estaría limitada a los tipos de contenido de "C#" y "vb".
+Tipos de contenido son un mecanismo para definir los distintos tipos de contenido. Un tipo de contenido puede ser un tipo de archivo, como "text", "code" o "binary" o un tipo de tecnología, como "xml", "vb" o "c#". Por ejemplo, la palabra "using" es una palabra clave en C# y Visual Basic, pero no en otros lenguajes de programación. Por lo tanto, la definición de esta palabra clave estaría limitada a los tipos de contenido de "c#" y "vb".
 
 Tipos de contenido se usan como un filtro para los elementos gráficos y otros elementos del editor. Muchas de las características del editor y puntos de extensión se definen por cada tipo de contenido. Por ejemplo, color de texto es diferente para los archivos de texto sin formato, archivos XML y archivos de código fuente de Visual Basic. Los búferes de texto normalmente se asignan a un tipo de contenido cuando se crean y se puede cambiar el tipo de contenido de un búfer de texto.
 
@@ -202,19 +202,19 @@ Da formato a la vista de texto uno <xref:Microsoft.VisualStudio.Text.ITextSnapsh
 
 Las características del editor están diseñadas para que la definición de la característica es independiente de su implementación. El editor incluye estas características:
 
--   Las etiquetas y clasificadores
+- Las etiquetas y clasificadores
 
--   Elementos gráficos
+- Elementos gráficos
 
--   Proyección
+- Proyección
 
--   esquematizar
+- esquematizar
 
--   Enlaces del mouse y la clave
+- Enlaces del mouse y la clave
 
--   Las operaciones y primitivas
+- Las operaciones y primitivas
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>Las etiquetas y clasificadores
 
@@ -262,7 +262,7 @@ Elementos gráficos incrustados son gráficos que forman parte de la vista de te
 
 Elementos gráficos emergentes son gráficos que aparecen en una ventana pequeña encima de la vista de texto, por ejemplo, información sobre herramientas.
 
-###  <a name="projection"></a> Proyección
+### <a name="projection"></a> Proyección
 
 Proyección es una técnica para construir un tipo de búfer de texto que no almacena realmente el texto, pero en su lugar, combina el texto de otros búferes de texto diferente. Por ejemplo, puede usarse un búfer de proyección para concatenar el texto de los otros dos búferes y presentará el resultado como si se encuentra en un solo búfer, o para ocultar partes del texto en un búfer. Un búfer de proyección puede actuar como un búfer de origen a otro búfer de proyección. Para reorganizar el texto de muchas maneras diferentes, se puede construir un conjunto de búferes que se relacionan mediante la proyección. (Un conjunto de este tipo es también se denomina un *gráfico de búfer*.) La característica de esquematización del texto de Visual Studio se implementa mediante el uso de un búfer de proyección para ocultar el texto contraído y el editor de Visual Studio para las páginas ASP.NET usa proyección para admitir incrustados lenguajes como Visual Basic y C#.
 

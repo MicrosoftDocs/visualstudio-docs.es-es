@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb765bebba4aaa3fe0cece4b64d33d2e810bdfb7
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MTE95
+ms.openlocfilehash: ffdd925b1fdddb6bddfb3704e561fac8efc84b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796717"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048988"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,26 +24,26 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="create-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos  
  En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicación Calculadora de Windows. Esta suma dos números y utiliza una aserción para validar que la suma sea correcta. A continuación, la aserción y los valores de parámetro de ambos números se codifican para que se controlen por datos y se almacenan en un archivo de valores separados por comas (.csv).  
   
 #### <a name="step-1---create-a-coded-ui-test"></a>Paso 1: crear una prueba de IU codificada  
   
-1.  Cree un proyecto.  
+1. Cree un proyecto.  
   
      ![Cree un proyecto de prueba de IU codificada](../test/media/cuit-datadriven.png "CUIT_dataDriven_")  
   
-2.  Elija la opción de grabar las acciones.  
+2. Elija la opción de grabar las acciones.  
   
      ![Elija la opción de grabar las acciones](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")  
   
-3.  Abra la aplicación Calculadora y empiece a grabar la prueba.  
+3. Abra la aplicación Calculadora y empiece a grabar la prueba.  
   
      ![Grabe las acciones](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")  
   
-4.  Sume 1 más 2, pause la grabadora y genere el método de prueba. Más adelante reemplazaremos los valores de entrada del usuario con los valores de un archivo de datos.  
+4. Sume 1 más 2, pause la grabadora y genere el método de prueba. Más adelante reemplazaremos los valores de entrada del usuario con los valores de un archivo de datos.  
   
      ![Generar método de prueba](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
@@ -59,21 +59,21 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
     }  
     ```  
   
-5.  Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: Ctrl + R, T).  
+5. Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: Ctrl + R, T).  
   
      El resultado que indica si se ha superado la prueba se muestra en la ventana del Explorador de pruebas. Para abrir la ventana del Explorador de pruebas, en el menú **PRUEBA**, elija **Windows** y después **Explorador de pruebas**.  
   
-6.  Como un origen de datos puede utilizarse también para los valores de parámetro de aserción (los cuales utiliza la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.  
+6. Como un origen de datos puede utilizarse también para los valores de parámetro de aserción (los cuales utiliza la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.  
   
      Asigne el control de texto de la calculadora que muestre la suma.  
   
      ![Asignar el control de texto de la IU](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")  
   
-7.  Agregue una aserción que valide que el valor de la suma es correcto. Elija la propiedad **DisplayText** que tiene el valor**3** y después seleccione **Agregar aserción**. Use el comparador **AreEqual** y compruebe que el valor de comparación es **3**.  
+7. Agregue una aserción que valide que el valor de la suma es correcto. Elija la propiedad **DisplayText** que tiene el valor**3** y después seleccione **Agregar aserción**. Use el comparador **AreEqual** y compruebe que el valor de comparación es **3**.  
   
      ![Configure la aserción](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")  
   
-8.  Después de configurar la aserción, vuelva a generar código en el generador. De este modo se crea un nuevo método para la validación.  
+8. Después de configurar la aserción, vuelva a generar código en el generador. De este modo se crea un nuevo método para la validación.  
   
      ![Genere el método de aserción](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")  
   
@@ -96,11 +96,11 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
 #### <a name="step-2---create-a-data-set"></a>Paso 2: crear un conjunto de datos  
   
-1.  Agregue al proyecto dataDrivenSample un archivo de texto llamado `data.csv`.  
+1. Agregue al proyecto dataDrivenSample un archivo de texto llamado `data.csv`.  
   
      ![Agregar un archivo de valores separados por comas al proyecto](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")  
   
-2.  Llene el archivo .csv con los siguientes datos:  
+2. Llene el archivo .csv con los siguientes datos:  
   
     |Num1|Num2|Sum|  
     |----------|----------|---------|  
@@ -112,9 +112,9 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
      ![Rellene el archivo .CSV con datos](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")  
   
-3.  Es importante que guarde el archivo .csv utilizando la codificación correcta. En el menú **ARCHIVO**, elija **Opciones avanzadas para guardar** y seleccione **Unicode (UTF-8 sin firma) – Página de códigos 65001** como codificación.  
+3. Es importante que guarde el archivo .csv utilizando la codificación correcta. En el menú **ARCHIVO**, elija **Opciones avanzadas para guardar** y seleccione **Unicode (UTF-8 sin firma) – Página de códigos 65001** como codificación.  
   
-4.  El archivo .csv debe copiarse en el directorio de salida; de lo contrario, no podrá ejecutarse la prueba. Utilice la ventana Propiedades para copiarlo.  
+4. El archivo .csv debe copiarse en el directorio de salida; de lo contrario, no podrá ejecutarse la prueba. Utilice la ventana Propiedades para copiarlo.  
   
      ![Implemente el archivo .CSV](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")  
   
@@ -122,7 +122,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
 #### <a name="step-3--add-data-source-binding"></a>Paso 3: agregar enlaces de origen de datos  
   
-1.  Para enlazar el origen de datos, agregue un atributo `DataSource` al atributo `[TestMethod]` existente situado inmediatamente encima del método de prueba.  
+1. Para enlazar el origen de datos, agregue un atributo `DataSource` al atributo `[TestMethod]` existente situado inmediatamente encima del método de prueba.  
   
     ```  
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]  
@@ -142,7 +142,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
     > [!TIP]
     >  Consulte los [ejemplos de atributo de origen de datos](#CreateDataDrivenCUIT_QA_DataSourceAttributes) en la sección de preguntas y respuestas. Allí encontrará ejemplos del uso de otros tipos de origen de datos, como XML, SQL Express y Excel.  
   
-2.  Ejecute la prueba.  
+2. Ejecute la prueba.  
   
      Tenga en cuenta que la prueba se ejecuta a través de tres iteraciones. Esto se debe a que el origen de datos que se enlazó contiene tres filas de datos. Sin embargo, también observará que la prueba sigue utilizando los valores de parámetro constantes y que suma 1 + 2, lo que genera cada vez un resultado de 3.  
   
@@ -150,7 +150,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
 #### <a name="step-4--use-the-data-in-the-coded-ui-test"></a>Paso 4: utilizar los datos de la prueba de IU codificada  
   
-1.  Agregue `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` al principio del archivo CodedUITest.cs:  
+1. Agregue `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` al principio del archivo CodedUITest.cs:  
   
     ```  
     using System;  
@@ -166,7 +166,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
     ```  
   
-2.  Agregue `TestContext.DataRow[]` en el método `CodedUITestMethod1()` que aplicará valores del origen de datos. Los valores del origen de datos reemplazan las constantes asignadas a los controles UIMap utilizando los controles `SearchProperties`:  
+2. Agregue `TestContext.DataRow[]` en el método `CodedUITestMethod1()` que aplicará valores del origen de datos. Los valores del origen de datos reemplazan las constantes asignadas a los controles UIMap utilizando los controles `SearchProperties`:  
   
     ```  
     public void CodedUITestMethod1()  
@@ -183,19 +183,19 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
      Para averiguar qué propiedades de búsqueda tienen datos por codificar, utilice el Editor de pruebas de IU codificadas.  
   
-    -   Abra el archivo UIMap.uitest.  
+    - Abra el archivo UIMap.uitest.  
   
          ![Abra el Editor de prueba de IU codificada](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")  
   
-    -   Elija la acción de la IU y observe la asignación de controles de IU correspondientes. Fíjese en cómo la asignación se corresponde con el código, por ejemplo, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.  
+    - Elija la acción de la IU y observe la asignación de controles de IU correspondientes. Fíjese en cómo la asignación se corresponde con el código, por ejemplo, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.  
   
          ![Utilice el editor de pruebas de la IU codificada para ayudar con el código](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")  
   
-    -   En la ventana Propiedades, abra **Propiedades de búsqueda**. El valor **Nombre** de las propiedades de búsqueda es lo que se está manipulando en el código que utiliza el origen de datos. Por ejemplo, a `SearchProperties` se le asignan los valores de la primera columna de cada fila de datos: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Para las tres iteraciones, esta prueba cambiará el valor **Nombre** de la propiedad de búsqueda a 3, 5 y, por último, 6.  
+    - En la ventana Propiedades, abra **Propiedades de búsqueda**. El valor **Nombre** de las propiedades de búsqueda es lo que se está manipulando en el código que utiliza el origen de datos. Por ejemplo, a `SearchProperties` se le asignan los valores de la primera columna de cada fila de datos: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Para las tres iteraciones, esta prueba cambiará el valor **Nombre** de la propiedad de búsqueda a 3, 5 y, por último, 6.  
   
          ![Utilice las propiedades de búsqueda para ayudar en la codificación](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")  
   
-3.  Guarde la solución.  
+3. Guarde la solución.  
   
 #### <a name="step-5--run-the-data-driven-test"></a>Paso 5: ejecutar la prueba controlada por datos  
   
@@ -205,32 +205,32 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
    **Orientación**  
   
-   Para obtener más información, consulte [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: prueba interna](http://go.microsoft.com/fwlink/?LinkID=255188) y [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   Para obtener más información, consulte [pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188) y [pruebas para entrega continua con Visual Studio 2012 – capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Preguntas y respuestas  
   
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> ¿Cuáles son los atributos de fuente de datos para otros tipos de orígenes de datos, como SQL Express o XML?  
+### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> ¿Cuáles son los atributos de fuente de datos para otros tipos de orígenes de datos, como SQL Express o XML?  
  Puede utilizar las cadenas de origen de datos de muestra de la tabla siguiente copiándolas en el código y personalizándolas en caso necesario.  
   
  **Tipos y atributos de origen de datos**  
   
--   CSV  
+- CSV  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`  
   
--   Excel  
+- Excel  
   
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`  
   
--   Caso de prueba de Team Foundation Server  
+- Caso de prueba de Team Foundation Server  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`  
   
--   XML  
+- XML  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`  
   
--   SQL Express  
+- SQL Express  
   
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`  
   
@@ -246,7 +246,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ```  
   
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: ¿Por qué no puedo modificar el código en el archivo UIMap.Designer?  
- **R:** Cualquier cambio que se efectúe en el código del archivo UIMapDesigner.cs se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. En este ejemplo, y en la mayoría de los casos, los cambios de código necesarios para habilitar una prueba para utilizar un origen de datos pueden introducirse en el archivo de código fuente de la prueba (es decir, CodedUITest1.cs).  
+ **R:** Cualquier cambio que se realice en el código del archivo UIMapDesigner.cs se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. En este ejemplo, y en la mayoría de los casos, los cambios de código necesarios para habilitar una prueba para utilizar un origen de datos pueden introducirse en el archivo de código fuente de la prueba (es decir, CodedUITest1.cs).  
   
  Si tiene que modificar un método grabado, debe copiarlo en el archivo UIMap.cs y cambiar el nombre. El archivo UIMap.cs se puede utilizar para invalidar métodos y propiedades en el archivo UIMapDesigner.cs. Debe quitar la referencia al método original en el archivo UITest.cs el Codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.  
   

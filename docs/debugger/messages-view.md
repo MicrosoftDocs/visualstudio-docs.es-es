@@ -1,5 +1,5 @@
 ---
-title: La vista mensajes | Microsoft Docs
+title: La vista mensajes | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9d64119a94e2358a6f52e6e1269fca8d726cbb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049134"
 ---
 # <a name="messages-view"></a>Vista Mensajes
 Cada ventana tiene una secuencia de mensaje asociado. Una ventana de vista de mensajes muestra esta secuencia de mensajes. Se muestran el identificador de ventana, el código de mensaje y el mensaje. Puede crear una vista de mensajes para un subproceso o proceso también. Esto le permite ver los mensajes enviados a todas las ventanas que pertenecen a un proceso o subproceso específico, que es especialmente útil para capturar mensajes de inicialización de la ventana.
@@ -30,21 +30,21 @@ Cada ventana tiene una secuencia de mensaje asociado. Una ventana de vista de me
 
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Para abrir una vista de mensajes de ventana, proceso o subproceso
 
-1.  Mover el foco a un [Windows Vista](../debugger/windows-view.md), [vista procesos](../debugger/processes-view.md), o [vista de subprocesos](../debugger/threads-view.md) ventana.
+1. Mover el foco a un [Windows Vista](../debugger/windows-view.md), [vista procesos](../debugger/processes-view.md), o [vista de subprocesos](../debugger/threads-view.md) ventana.
 
-2.  Busque el nodo para el elemento cuyos mensajes que desea examinar y selecciónelo.
+2. Busque el nodo para el elemento cuyos mensajes que desea examinar y selecciónelo.
 
-3.  Desde el **Spy** menú, elija **los mensajes de registro**.
+3. Desde el **Spy** menú, elija **los mensajes de registro**.
 
      El [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md) se abre.
 
-4.  Seleccione las opciones para el mensaje que desea mostrar.
+4. Seleccione las opciones para el mensaje que desea mostrar.
 
-5.  Presione **Aceptar** para empezar a mensajes de registro.
+5. Presione **Aceptar** para empezar a mensajes de registro.
 
      Una mensajes que se abre la ventana de vista y un **mensajes** menú se agrega a la barra de herramientas de Spy ++. Dependiendo de las opciones seleccionadas, los mensajes comenzará a transmitir en la ventana activa de la vista de mensajes.
 
-6.  Cuando tenga suficientes mensajes, elija **detener el registro** desde el **mensajes** menú.
+6. Cuando tenga suficientes mensajes, elija **detener el registro** desde el **mensajes** menú.
 
 ## <a name="in-this-section"></a>En esta sección
  [Controlar la vista mensajes](../debugger/how-to-control-messages-view.md) se explica cómo administrar la vista de mensajes.

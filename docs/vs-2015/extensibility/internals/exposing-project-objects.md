@@ -11,12 +11,12 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1c949d4668089a2cc06543169a1c3ce6619409d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f40c523c058bf215cc4574b3aa4a2e038c833beb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044675"
 ---
 # <a name="exposing-project-objects"></a>Exposición de objetos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Tipos de proyecto personalizado pueden proporcionar objetos de automatización c
   
 ### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Para contribuir a un objeto específico de VSPackage para un proyecto  
   
-1.  Agregue las claves apropiadas en el archivo .pkgdef del VSPackage.  
+1. Agregue las claves apropiadas en el archivo .pkgdef del VSPackage.  
   
      Por ejemplo, esta es la configuración de .pkgdef para el proyecto de lenguaje C++:  
   
@@ -40,7 +40,7 @@ Tipos de proyecto personalizado pueden proporcionar objetos de automatización c
     "VCProjectEngineEventsObject"=""  
     ```  
   
-2.  Implemente el código en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> método, como en el ejemplo siguiente.  
+2. Implemente el código en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> método, como en el ejemplo siguiente.  
   
     ```cpp  
     STDMETHODIMP CVsPackage::GetAutomationObject(  

@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11b4834cfe6c87f3d6093a38c7a97fe0da67aab4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73fcc686b242109a65fce6befbbca5e2a357a25e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049326"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Error: No se pudo realizar la depuración porque no está habilitada la autenticación integrada de Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ La autenticación del usuario que solicita la depuración no pudo realizarse deb
   
 ### <a name="to-enable-integrated-windows-authentication"></a>Para habilitar la autenticación de Windows integrada  
   
-1.  Inicie sesión en el servidor web con una cuenta de administrador.  
+1. Inicie sesión en el servidor web con una cuenta de administrador.  
   
-2.  Haga clic en **Inicio** y después en **Panel de control**.  
+2. Haga clic en **Inicio** y después en **Panel de control**.  
   
-3.  En el **Panel de control**, haga doble clic en **Herramientas administrativas**.  
+3. En el **Panel de control**, haga doble clic en **Herramientas administrativas**.  
   
-4.  Haga doble clic en **Internet Information Services**.  
+4. Haga doble clic en **Internet Information Services**.  
   
-5.  Haga clic en el nodo del servidor web.  
+5. Haga clic en el nodo del servidor web.  
   
      Se abre una carpeta **Sitios Web** bajo el nombre del servidor.  
   
-6.  Puede configurar la autenticación para todos los sitios Web o para sitios Web individuales. Para configurar la autenticación de todos los sitios web, haga clic con el botón derecho del mouse en la carpeta **Sitios web** y elija **Propiedades** en el menú de acceso directo. Para configurar la autenticación de un sitio web en particular, abra la carpeta **Sitios web**, haga clic con el botón derecho del mouse en el sitio web que desee y, a continuación, elija **Propiedades**.  
+6. Puede configurar la autenticación para todos los sitios Web o para sitios Web individuales. Para configurar la autenticación de todos los sitios web, haga clic con el botón derecho del mouse en la carpeta **Sitios web** y elija **Propiedades** en el menú de acceso directo. Para configurar la autenticación de un sitio web en particular, abra la carpeta **Sitios web**, haga clic con el botón derecho del mouse en el sitio web que desee y, a continuación, elija **Propiedades**.  
   
      Aparecerá el cuadro de diálogo **Propiedades**.  
   
-7.  Haga clic en la ficha **Seguridad de directorios**.  
+7. Haga clic en la ficha **Seguridad de directorios**.  
   
-8.  En la sección **Acceso anónimo y control de autenticación**, haga clic en **Editar**.  
+8. En la sección **Acceso anónimo y control de autenticación**, haga clic en **Editar**.  
   
      Aparecerá el cuadro de diálogo **Métodos de autenticación**.  
   
@@ -67,29 +67,29 @@ La autenticación del usuario que solicita la depuración no pudo realizarse deb
   
 ### <a name="to-enable-integrated-windows-authentication-in-windows-vistaiis-7"></a>Para habilitar la autenticación de Windows integrada en Windows Vista/IIS 7  
   
-1.  Inicie sesión en el servidor web con una cuenta de administrador.  
+1. Inicie sesión en el servidor web con una cuenta de administrador.  
   
-2.  Active Autenticación de Windows y Compatibilidad con la administración de II6 si no lo hizo previamente; para ello, siga estos pasos:  
+2. Active Autenticación de Windows y Compatibilidad con la administración de II6 si no lo hizo previamente; para ello, siga estos pasos:  
   
-    1.  Haga clic en **iniciar**, haga clic en **Panel de Control** y, a continuación, haga clic en **programas**.  
+    1. Haga clic en **iniciar**, haga clic en **Panel de Control** y, a continuación, haga clic en **programas**.  
   
-    2.  En **Programas y características**, haga clic en **Activar o desactivar las características de Windows**.  
+    2. En **Programas y características**, haga clic en **Activar o desactivar las características de Windows**.  
   
          Aparecerá el cuadro de diálogo Control de cuentas de usuario y se le pedirá permiso para continuar.  
   
-    3.  Haga clic en **Continuar**.  
+    3. Haga clic en **Continuar**.  
   
          Aparecerá el cuadro de diálogo Características de Windows.  
   
-    4.  En la lista de características, expanda el nodo **Internet Information Services**.  
+    4. En la lista de características, expanda el nodo **Internet Information Services**.  
   
-    5.  En **Internet Information Services**, expanda el nodo **Servicios World Wide Web**.  
+    5. En **Internet Information Services**, expanda el nodo **Servicios World Wide Web**.  
   
-    6.  En **Servicios World Wide Web**, haga clic en **Seguridad**.  
+    6. En **Servicios World Wide Web**, haga clic en **Seguridad**.  
   
-    7.  Haga clic en **Autenticación de Windows**.  
+    7. Haga clic en **Autenticación de Windows**.  
   
-    8.  En **Internet Information Services**, expanda el nodo **Herramientas de administración web**.  
+    8. En **Internet Information Services**, expanda el nodo **Herramientas de administración web**.  
   
     9. En **Herramientas de administración web**, expanda el nodo **Compatibilidad con la administración de IIS 6** y después active la casilla **Compatibilidad con la configuración de IIS 6 y metabase de IIS 6**.  
   
@@ -97,19 +97,19 @@ La autenticación del usuario que solicita la depuración no pudo realizarse deb
   
     11. Reinicie el equipo para que surtan efecto los cambios.  
   
-3.  Haga clic en **Inicio** y después en **Panel de control**.  
+3. Haga clic en **Inicio** y después en **Panel de control**.  
   
-4.  Haga clic en **Vista clásica** y, a continuación, haga doble clic en **Herramientas administrativas**.  
+4. Haga clic en **Vista clásica** y, a continuación, haga doble clic en **Herramientas administrativas**.  
   
-5.  En la columna **Nombre**, haga doble clic en **Administrador de Internet Information Services (IIS)**.  
+5. En la columna **Nombre**, haga doble clic en **Administrador de Internet Information Services (IIS)**.  
   
-6.  En la columna **Conexiones**, expanda el nodo del servidor.  
+6. En la columna **Conexiones**, expanda el nodo del servidor.  
   
      Se abre una carpeta **Sitios Web** bajo el nombre del servidor.  
   
-7.  Expanda el nodo **Sitios web** y haga clic en el sitio web en el que desea habilitar la autenticación de Windows integrada.  
+7. Expanda el nodo **Sitios web** y haga clic en el sitio web en el que desea habilitar la autenticación de Windows integrada.  
   
-8.  El nombre del panel central es reemplazado por el nombre del sitio web seleccionado. En este panel, bajo el encabezado **IIS**, haga doble clic en **Autenticación**.  
+8. El nombre del panel central es reemplazado por el nombre del sitio web seleccionado. En este panel, bajo el encabezado **IIS**, haga doble clic en **Autenticación**.  
   
      El título del panel cambia a **Autenticación**.  
   

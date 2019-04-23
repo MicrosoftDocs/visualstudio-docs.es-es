@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049547"
 ---
 # <a name="addressing-dpi-issues"></a>Solución de problemas de PPP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,15 +120,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Para obtener acceso a las funciones auxiliares de PPP desde código administrado que se ejecutará dentro del entorno de Visual Studio:  
   
--   El proyecto de consumo debe hacer referencia a la versión más reciente de MPF de Shell. Por ejemplo:  
+- El proyecto de consumo debe hacer referencia a la versión más reciente de MPF de Shell. Por ejemplo:  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
--   Asegúrese de que el proyecto tiene referencias a **System.Windows.Forms**, **PresentationCore**, y **PresentationUI**.  
+- Asegúrese de que el proyecto tiene referencias a **System.Windows.Forms**, **PresentationCore**, y **PresentationUI**.  
   
--   En el código, utilice el **Microsoft.VisualStudio.PlatformUI** espacio de nombres y llamar a funciones estáticas de la clase DpiHelper. Para los tipos compatibles (puntos, tamaños, rectángulos etc.), hay siempre escalan de las funciones de extensión que devuelven nuevos objetos. Por ejemplo:  
+- En el código, utilice el **Microsoft.VisualStudio.PlatformUI** espacio de nombres y llamar a funciones estáticas de la clase DpiHelper. Para los tipos compatibles (puntos, tamaños, rectángulos etc.), hay siempre escalan de las funciones de extensión que devuelven nuevos objetos. Por ejemplo:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -207,13 +207,13 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Dado que WPF escalará la interfaz de usuario para el valor de PPP actual mediante la propiedad BitmapScalingMode establecido en el UIElement, un control de imagen con una imagen prescaled como su origen tendrá un aspecto dos o tres veces mayor que la debería. Los siguientes son un par de formas para contrarrestar este efecto:  
   
--   Si conoce la dimensión de la imagen original al 100%, puede especificar el tamaño exacto del control Image. Estos tamaños refleja que el tamaño de la interfaz de usuario antes de escalar se aplica.  
+- Si conoce la dimensión de la imagen original al 100%, puede especificar el tamaño exacto del control Image. Estos tamaños refleja que el tamaño de la interfaz de usuario antes de escalar se aplica.  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   Si no se conoce el tamaño de la imagen original, puede utilizarse una LayoutTransform para reducir verticalmente el objeto de la imagen final. Por ejemplo:  
+- Si no se conoce el tamaño de la imagen original, puede utilizarse una LayoutTransform para reducir verticalmente el objeto de la imagen final. Por ejemplo:  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -344,9 +344,9 @@ public int GetHostInfo(DOCHOSTUIINFO info)
   
 ## <a name="tips"></a>Sugerencias  
   
-1.  Si cambia la propiedad de documento en el control WebOC, es posible que deba volver a asociar el documento con la clase IDocHostUIHandler.  
+1. Si cambia la propiedad de documento en el control WebOC, es posible que deba volver a asociar el documento con la clase IDocHostUIHandler.  
   
-2.  Si lo anterior no funciona, hay un problema conocido con WebOC no recoge el cambio en la marca de PPP. La forma más fiable de corregir esto es activar o desactivar el zoom óptico del WebOC dos llamadas de significado con dos valores diferentes para el porcentaje de zoom. Además, si se requiere esta solución alternativa, podría ser necesario lleve a cabo en cada llamada de navegar.  
+2. Si lo anterior no funciona, hay un problema conocido con WebOC no recoge el cambio en la marca de PPP. La forma más fiable de corregir esto es activar o desactivar el zoom óptico del WebOC dos llamadas de significado con dos valores diferentes para el porcentaje de zoom. Además, si se requiere esta solución alternativa, podría ser necesario lleve a cabo en cada llamada de navegar.  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  

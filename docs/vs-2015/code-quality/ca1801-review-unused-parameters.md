@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045647"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Revisar parámetros sin utilizar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Para obtener la documentación más reciente de Visual Studio, consulte [CA1801:
 ## <a name="cause"></a>Motivo  
  Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método. Esta regla no examina los métodos siguientes:  
   
--   Métodos que se hace referencia a un delegado.  
+- Métodos que se hace referencia a un delegado.  
   
--   Métodos que se usan como controladores de eventos.  
+- Métodos que se usan como controladores de eventos.  
   
--   Los métodos declarados con el `abstract` (`MustOverride` en Visual Basic) modificador.  
+- Los métodos declarados con el `abstract` (`MustOverride` en Visual Basic) modificador.  
   
--   Los métodos declarados con el `virtual` (`Overridable` en Visual Basic) modificador.  
+- Los métodos declarados con el `virtual` (`Overridable` en Visual Basic) modificador.  
   
--   Los métodos declarados con el `override` (`Overrides` en Visual Basic) modificador.  
+- Los métodos declarados con el `override` (`Overrides` en Visual Basic) modificador.  
   
--   Los métodos declarados con el `extern` (`Declare` instrucción en Visual Basic) modificador.  
+- Los métodos declarados con el `extern` (`Declare` instrucción en Visual Basic) modificador.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
  Revise los parámetros de métodos no virtuales que no se usan en el cuerpo del método para asegurarse de que no hay exactitud en torno al error para tener acceso a ellos. Parámetros sin usar conllevan un costo de mantenimiento y rendimiento.  

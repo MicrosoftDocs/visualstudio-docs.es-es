@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6a150d32fa4eb5bc162f9ce8522ddfed634253b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1fae6a503323d42d4f759a30b4db790a88079815
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782131"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048403"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactorización de clases y tipos (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,58 +39,58 @@ Al refactorizar el código, lo hace más fácil de entender y mantener, y más e
   
 |Tarea|Contenido adicional|  
 |----------|------------------------|  
-|**Refactorización de clases:** puede utilizar operaciones de refactorización para dividir una clase en clases parciales o para implementar una clase base abstracta.|-   [Cómo: Dividir una clase en clases parciales (Diseñador de clases)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|  
-|**Trabajo con interfaces:** en el Diseñador de clases, puede implementar una interfaz en el diagrama de clases conectándola a una clase que proporcione el código para los métodos de interfaz.|-   [Cómo: Implementar una interfaz (Diseñador de clases)](../ide/how-to-implement-an-interface-class-designer.md)|  
-|**Refactorización de tipos, miembros de tipos y parámetros:** con el Diseñador de clases puede cambiar el nombre de tipos, invalidar miembros de tipos o moverlos de un tipo a otro. También puede crear tipos que acepten valores NULL.|-   [Cambio de nombre de tipos y miembros de tipos](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Traslado de miembros de tipo de un tipo a otro](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Cómo: Crear un tipo que acepta valores NULL (Diseñador de clases)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
+|**Refactorización de clases:** puede utilizar operaciones de refactorización para dividir una clase en clases parciales o para implementar una clase base abstracta.|-   [Cómo: Dividir una clase en clases parciales en el Diseñador de clases](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|  
+|**Trabajo con interfaces:** En el Diseñador de clases, puede implementar una interfaz en el diagrama de clases si la conecta a una clase que proporcione el código para los métodos de interfaz.|-   [Cómo: Implementar una interfaz (Diseñador de clases)](../ide/how-to-implement-an-interface-class-designer.md)|  
+|**Refactorización de tipos, miembros de tipo y parámetros:** con el Diseñador de clases puede cambiar el nombre de tipos, invalidar miembros de tipos o moverlos de un tipo a otro. También puede crear tipos que acepten valores NULL.|-   [Cambio de nombre de tipos y miembros de tipos](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Traslado de miembros de tipo de un tipo a otro](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Cómo: Crear un tipo que acepta valores NULL en el Diseñador de clases](../ide/how-to-create-a-nullable-type-class-designer.md)|  
   
-###  <a name="RenamingTypesAndMembers"></a> Cambio de nombre de tipos y miembros de tipos  
+### <a name="RenamingTypesAndMembers"></a> Cambio de nombre de tipos y miembros de tipos  
  En el Diseñador de clases, puede cambiar el nombre de un tipo o un miembro de un tipo en el diagrama de clases o en la ventana Propiedades. En la ventana Detalles de clase, puede cambiar el nombre de un miembro, pero no un tipo. Al cambiar el nombre de un tipo o un miembro de tipo, el cambio se propagará a todas las ventanas y las ubicaciones de código donde apareciera el nombre anterior.  
   
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>Para cambiar un nombre en el Diseñador de clases  
   
-1.  En el diagrama de clases, seleccione el tipo o el miembro y haga clic en el nombre.  
+1. En el diagrama de clases, seleccione el tipo o el miembro y haga clic en el nombre.  
   
      El nombre del miembro pasará a ser editable.  
   
-2.  Escribir el nuevo nombre del tipo o el miembro de tipo  
+2. Escribir el nuevo nombre del tipo o el miembro de tipo  
   
 ##### <a name="to-rename-a-name-in-the-class-details-window"></a>Para cambiar un nombre en la ventana Detalles de clase  
   
-1.  Para mostrar la ventana Detalles de clase, haga clic con el botón secundario en el tipo o el miembro de tipo y, luego, haga clic en **Detalles de clase**.  
+1. Para mostrar la ventana Detalles de clase, haga clic con el botón secundario en el tipo o el miembro de tipo y, luego, haga clic en **Detalles de clase**.  
   
      Aparecerá la ventana Detalles de clase.  
   
-2.  En la columna **Nombre** , cambie el nombre del miembro de tipo.  
+2. En la columna **Nombre** , cambie el nombre del miembro de tipo.  
   
-3.  Para mover el foco fuera de la celda, presione la tecla **ENTRAR** o haga clic fuera de la celda.  
+3. Para mover el foco fuera de la celda, presione la tecla **ENTRAR** o haga clic fuera de la celda.  
   
     > [!NOTE]
     >  En la ventana Detalles de clase, puede cambiar el nombre de un miembro, pero no un tipo.  
   
 ##### <a name="to-rename-a-name-in-the-properties-window"></a>Para cambiar un nombre en la ventana Propiedades  
   
-1.  En el diagrama de clases o en la ventana Detalles de clase, haga clic con el botón secundario en el tipo o el miembro y, luego, haga clic en **Propiedades**.  
+1. En el diagrama de clases o en la ventana Detalles de clase, haga clic con el botón secundario en el tipo o el miembro y, luego, haga clic en **Propiedades**.  
   
      Aparecerá la ventana Propiedades, que muestra las propiedades del tipo o el miembro de tipo.  
   
-2.  En la propiedad **Nombre** , cambie el nombre del tipo o el miembro de tipo.  
+2. En la propiedad **Nombre** , cambie el nombre del tipo o el miembro de tipo.  
   
      El nuevo nombre se propagará a todas las ventanas y las ubicaciones de código del proyecto actual donde apareciera el nombre anterior.  
   
-###  <a name="MovingTypeMembers"></a> Traslado de miembros de tipo de un tipo a otro  
+### <a name="MovingTypeMembers"></a> Traslado de miembros de tipo de un tipo a otro  
  Con el **Diseñador de clases**, puede mover un miembro de tipo de un tipo a otro, si los dos se encuentran visibles en el diagrama de clases actual.  
   
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>Para mover un miembro de tipo de un tipo a otro  
   
-1.  En un tipo que esté visible en la superficie de diseño, haga clic con el botón secundario en el miembro que quiera mover a otro tipo y, después, haga clic en **Cortar**.  
+1. En un tipo que esté visible en la superficie de diseño, haga clic con el botón secundario en el miembro que quiera mover a otro tipo y, después, haga clic en **Cortar**.  
   
-2.  Haga clic con el botón secundario en el tipo de destino y, luego, haga clic en **Pegar**.  
+2. Haga clic con el botón secundario en el tipo de destino y, luego, haga clic en **Pegar**.  
   
      La propiedad se quitará del tipo de origen y aparecerá en el tipo de destino.  
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Title|Descripción|  
+|Título|Descripción|  
 |-----------|-----------------|  
 |[Ver tipos y relaciones (Diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md)||  
 |[Diseñar clases y tipos (Diseñador de clases)](../ide/designing-classes-and-types-class-designer.md)||

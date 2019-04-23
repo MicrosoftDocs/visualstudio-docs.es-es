@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997285"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043685"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemas de seguridad, versiones y manifiestos en implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ Hay una variedad de problemas con [!INCLUDE[ndptecclick](../includes/ndptecclick
   
  Si ha editado manualmente los manifiestos de implementación o aplicación, se pueden haberlos dañado involuntariamente. Un manifiesto dañado evitará una correcta [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalación. Puede depurar estos errores en tiempo de ejecución, haga clic en **detalles** en el **ClickOnce Error** cuadro de diálogo y leer el mensaje de error en el registro. El registro mostrará uno de los mensajes siguientes:  
   
--   Una descripción del error de sintaxis y el número de línea y el carácter posición donde se produjo el error.  
+- Una descripción del error de sintaxis y el número de línea y el carácter posición donde se produjo el error.  
   
--   El nombre de un elemento o atributo que se usa infringe el esquema del manifiesto. Si ha agregado manualmente XML a los manifiestos, tendrá que comparar las adiciones a los esquemas del manifiesto. Para obtener más información, consulte [del manifiesto de implementación ClickOnce](../deployment/clickonce-deployment-manifest.md) y [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).  
+- El nombre de un elemento o atributo que se usa infringe el esquema del manifiesto. Si ha agregado manualmente XML a los manifiestos, tendrá que comparar las adiciones a los esquemas del manifiesto. Para obtener más información, consulte [del manifiesto de implementación ClickOnce](../deployment/clickonce-deployment-manifest.md) y [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).  
   
--   Un conflicto de identificador. Las referencias de dependencias en los manifiestos de implementación y las aplicaciones deben ser únicas en ambos sus `name` y `publicKeyToken` atributos. Si ambos atributos coinciden entre dos elementos cualesquiera dentro de un manifiesto, análisis del manifiesto no se realizará correctamente.  
+- Un conflicto de identificador. Las referencias de dependencias en los manifiestos de implementación y las aplicaciones deben ser únicas en ambos sus `name` y `publicKeyToken` atributos. Si ambos atributos coinciden entre dos elementos cualesquiera dentro de un manifiesto, análisis del manifiesto no se realizará correctamente.  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Precauciones al cambiar manualmente los manifiestos o aplicaciones  
  Cuando se actualiza un manifiesto de aplicación, deberá volver a firmar el manifiesto de aplicación y el manifiesto de implementación. El manifiesto de implementación contiene una referencia al manifiesto de aplicación que incluye el hash de ese archivo y su firma digital.  

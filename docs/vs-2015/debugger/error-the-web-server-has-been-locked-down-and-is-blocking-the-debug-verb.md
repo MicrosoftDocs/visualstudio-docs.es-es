@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b85efc44b39485476154d0f41f3261b2aeb1ea7c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995094"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047207"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Error: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ No se pudo recorrer paso a paso por instrucciones una aplicación Web o un servi
   
 ### <a name="to-enable-debugging-on-a-web-server-with-urlscan-installed"></a>Para habilitar la depuración en un servidor Web con URLScan instalado  
   
-1.  Busque el archivo Urlscan.ini. En general se encontrará en un directorio parecido al siguiente:  
+1. Busque el archivo Urlscan.ini. En general se encontrará en un directorio parecido al siguiente:  
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  Cree una copia del archivo y asígnele el nombre **Urlscan.old**.  
+2. Cree una copia del archivo y asígnele el nombre **Urlscan.old**.  
   
-3.  Abra la copia original del archivo Urlscan.ini en el Bloc de notas o el editor de texto que prefiera.  
+3. Abra la copia original del archivo Urlscan.ini en el Bloc de notas o el editor de texto que prefiera.  
   
-4.  En Urlscan.ini, busque la sección [AllowVerbs]. Agregue DEBUG a la sección [AllowVerbs]. Si ve ;DEBUG en la sección [AllowVerbs], quite el punto y coma para no marcar el verbo como comentario.  
+4. En Urlscan.ini, busque la sección [AllowVerbs]. Agregue DEBUG a la sección [AllowVerbs]. Si ve ;DEBUG en la sección [AllowVerbs], quite el punto y coma para no marcar el verbo como comentario.  
   
-5.  Busque la sección [DenyVerbs]. Si aparece DEBUG en la sección [DenyVerbs], quítelo.  
+5. Busque la sección [DenyVerbs]. Si aparece DEBUG en la sección [DenyVerbs], quítelo.  
   
-6.  Guarde el archivo.  
+6. Guarde el archivo.  
   
-7.  Reinicie el servidor o reinicie IIS.  
+7. Reinicie el servidor o reinicie IIS.  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones web: Errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   

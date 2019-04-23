@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa788fafd7b07f1224bb4abf6bfe527109b3bc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057256"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (plantillas de proyecto de Visual Studio)
 Especifica una carpeta que se agregará al proyecto.
@@ -62,7 +62,7 @@ Especifica una carpeta que se agregará al proyecto.
 
  Puede usar cualquiera de los siguientes métodos para organizar los elementos de proyecto en carpetas en una plantilla:
 
--   Incluir las carpetas en la plantilla *.zip* de archivos y agregarlos al proyecto en el *.vstemplate* archivo especificando la ruta de acceso al archivo en el `ProjectItem` elementos, sin ningún `Folder` elementos. Este es el método recomendado. Por ejemplo:
+- Incluir las carpetas en la plantilla *.zip* de archivos y agregarlos al proyecto en el *.vstemplate* archivo especificando la ruta de acceso al archivo en el `ProjectItem` elementos, sin ningún `Folder` elementos. Este es el método recomendado. Por ejemplo:
 
      `...`
 
@@ -72,7 +72,7 @@ Especifica una carpeta que se agregará al proyecto.
 
      `...`
 
--   Incluir las carpetas en la plantilla *.zip* de archivos y agregarlos al proyecto en el *.vstemplate* de archivos con `Folder` elementos. Por ejemplo:
+- Incluir las carpetas en la plantilla *.zip* de archivos y agregarlos al proyecto en el *.vstemplate* de archivos con `Folder` elementos. Por ejemplo:
 
      `...`
 
@@ -86,7 +86,7 @@ Especifica una carpeta que se agregará al proyecto.
 
      `...`
 
--   No incluya carpetas en la plantilla *.zip* de archivo, pero agregar carpetas usando la `TargetFileName` atributo de la `ProjectItem` elemento. Por ejemplo:
+- No incluya carpetas en la plantilla *.zip* de archivo, pero agregar carpetas usando la `TargetFileName` atributo de la `ProjectItem` elemento. Por ejemplo:
 
      `...`
 

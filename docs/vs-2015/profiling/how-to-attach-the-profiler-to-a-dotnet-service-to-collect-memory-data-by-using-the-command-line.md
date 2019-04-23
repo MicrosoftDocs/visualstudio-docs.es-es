@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6d205a3a8abddadc714aea4aa913ff064518920
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 91c993697103417eb3ba39e3c6d2929baee9311a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046428"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Adjuntar al Profiler a un servicio .NET para recopilar datos de memoria mediante la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,16 +88,16 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   Especifique el identificador del proceso o el nombre del proceso del servicio. Puede ver los nombres e identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
+   - Especifique el identificador del proceso o el nombre del proceso del servicio. Puede ver los nombres e identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
 
-   -   **targetclr:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación. Opcional.  
+   - **targetclr:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación. Opcional.  
 
 ## <a name="controlling-data-collection"></a>Controlar la recolección de datos  
  Mientras se está ejecutando el servicio, puede usar las opciones de **VSPerfCmd.exe** para detener e iniciar la escritura de datos en el archivo de datos del generador de perfiles. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución del programa, como por ejemplo el inicio o el cierre de una aplicación.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
 
--   Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
+- Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
 
     |Opción|Descripción|  
     |------------|-----------------|  
@@ -110,23 +110,23 @@ En este tema se describe cómo usar las herramientas de la línea de comandos de
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
 
-1.  Siga uno de estos procedimientos para desasociar el generador de perfiles de la aplicación de destino:  
+1. Siga uno de estos procedimientos para desasociar el generador de perfiles de la aplicación de destino:  
 
-    -   Detenga el servicio.  
+    - Detenga el servicio.  
 
          -o bien-  
 
-    -   Escriba **VSPerfCmd /detach**  
+    - Escriba **VSPerfCmd /detach**  
 
-2.  Cierre el generador de perfiles. Tipo:  
+2. Cierre el generador de perfiles. Tipo:  
 
      **VSPerfCmd /shutdown**  
 
-3.  (Opcional) Borre las variables del entorno de generación de perfiles. Tipo:  
+3. (Opcional) Borre las variables del entorno de generación de perfiles. Tipo:  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Reinicie el equipo.  
+4. Reinicie el equipo.  
 
 ## <a name="see-also"></a>Vea también  
  [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)   

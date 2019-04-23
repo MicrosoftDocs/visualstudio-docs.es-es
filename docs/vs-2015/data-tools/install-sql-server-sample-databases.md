@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 056e5d1fad258d063e30cfd97e85529ff3a0c9bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654508"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059641"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalar bases de datos de ejemplo de SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Las bases de datos son útiles para experimentar con consultas SQL y LINQ, enlac
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Para restaurar una base de datos desde un archivo .bak en Visual Studio  
   
-1.  Realizar una copia de una base de datos de Microsoft SQL Server, el resultado es un archivo .bak. Para realizar la .bak archivo utilizable nuevo como un archivo de base de datos, debe ser *restaurar*. En el menú principal, seleccione **vista** > **Explorador de objetos de SQL Server**. Si no lo ve, es posible que deba instalarlo. Vaya a **Panel de Control** > **programas y características**, busque Microsoft Visual Studio 2015 y haga clic en el **cambio** botón. Cuando aparezca la lista de los componentes instalados en la ventana del instalador, seleccione el **Explorador de objetos de SQL Server** casilla de verificación y, a continuación, continúe con la instalación.  
+1. Realizar una copia de una base de datos de Microsoft SQL Server, el resultado es un archivo .bak. Para realizar la .bak archivo utilizable nuevo como un archivo de base de datos, debe ser *restaurar*. En el menú principal, seleccione **vista** > **Explorador de objetos de SQL Server**. Si no lo ve, es posible que deba instalarlo. Vaya a **Panel de Control** > **programas y características**, busque Microsoft Visual Studio 2015 y haga clic en el **cambio** botón. Cuando aparezca la lista de los componentes instalados en la ventana del instalador, seleccione el **Explorador de objetos de SQL Server** casilla de verificación y, a continuación, continúe con la instalación.  
   
-2.  En el Explorador de objetos de SQL Server, haga clic en cualquier motor de base de datos de SQL Server (por ejemplo, localdb) y seleccione**nueva consulta**.  
+2. En el Explorador de objetos de SQL Server, haga clic en cualquier motor de base de datos de SQL Server (por ejemplo, localdb) y seleccione**nueva consulta**.  
   
      ![Objeto Explorer nueva consulta de SQL Server](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata objeto Explorer nueva consulta de SQL Server")  
   
-3.  En primer lugar, necesita los nombres lógicos de los archivos de base de datos y registro dentro del archivo .bak. Para obtenerla, escriba esta consulta en el Editor de consultas SQL y, a continuación, seleccione el color verde **ejecutar** situado en la parte superior de la ventana. Si es necesario para que apunte al archivo .bak, modifique la ruta de acceso de archivo.  
+3. En primer lugar, necesita los nombres lógicos de los archivos de base de datos y registro dentro del archivo .bak. Para obtenerla, escriba esta consulta en el Editor de consultas SQL y, a continuación, seleccione el color verde **ejecutar** situado en la parte superior de la ventana. Si es necesario para que apunte al archivo .bak, modifique la ruta de acceso de archivo.  
   
     ```  
     RESTORE FILELISTONLY  
@@ -43,7 +43,7 @@ Las bases de datos son útiles para experimentar con consultas SQL y LINQ, enlac
   
      Anote los nombres lógicos que aparecen en la ventana de resultados.  Para la base de datos Northwind, los dos nombres lógicos son Northwind y Northwind_log.  
   
-4.  Ahora, ejecute esta consulta para crear la base de datos. Sustituya sus propias rutas de acceso de origen y destino, los nombres de base de datos lógica y los nombres de archivo físico para Northwind según corresponda. Mantener los archivos .mdf y .ldf extensiones de archivo.  
+4. Ahora, ejecute esta consulta para crear la base de datos. Sustituya sus propias rutas de acceso de origen y destino, los nombres de base de datos lógica y los nombres de archivo físico para Northwind según corresponda. Mantener los archivos .mdf y .ldf extensiones de archivo.  
   
     ```  
     RESTORE DATABASE Northwind  
@@ -52,14 +52,14 @@ Las bases de datos son útiles para experimentar con consultas SQL y LINQ, enlac
     MOVE 'Northwind_log' TO 'c:\nw\northwind.ldf'  
     ```  
   
-5.  En el Explorador de objetos de SQL Server, haga doble clic en el **bases de datos** nodo y debería ver el nodo de base de datos Northwind. Si no, a continuación, haga doble clic en las bases de datos y seleccione **agregar nueva base de datos**. Escriba el nombre y la ubicación del archivo .mdf que acaba de crear.  
+5. En el Explorador de objetos de SQL Server, haga doble clic en el **bases de datos** nodo y debería ver el nodo de base de datos Northwind. Si no, a continuación, haga doble clic en las bases de datos y seleccione **agregar nueva base de datos**. Escriba el nombre y la ubicación del archivo .mdf que acaba de crear.  
   
-6.  La base de datos ahora está listo para usar como origen de datos en Visual Studio.  
+6. La base de datos ahora está listo para usar como origen de datos en Visual Studio.  
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>Para restaurar una base de datos desde un archivo .bak en SQL Server Management Studio  
   
-1.  Descargar SQL Server Management Studio desde el sitio de descarga.  
+1. Descargar SQL Server Management Studio desde el sitio de descarga.  
   
-2.  En SSMS **Explorador de objetos** ventana, haga clic en el **bases de datos** nodo, seleccione**Restore Database**y proporcionar la ubicación del archivo .bak.  
+2. En SSMS **Explorador de objetos** ventana, haga clic en el **bases de datos** nodo, seleccione**Restore Database**y proporcionar la ubicación del archivo .bak.  
   
      ![Restaurar base de datos SSMS](../data-tools/media/raddata-ssms-restore-database.png "raddata SSMS Restaurar base de datos")

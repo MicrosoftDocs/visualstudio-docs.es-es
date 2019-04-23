@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2fb608acdad60f5387750045a15f8eba36e2375
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 245fb14b06b5deed5ee652ef394e241bd1191022
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048962"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Elegir una estrategia de implementación del motor de depuración
 Use la arquitectura en tiempo de ejecución para determinar la estrategia de implementación del motor DE depuración. Puede crear el motor en-proceso de depuración para el programa que está depurando. Cree la depuración motor en proceso en el Administrador de depuración de sesión de Visual Studio (SDM). O bien, cree la depuración motor fuera de proceso a ambos. Las instrucciones siguientes le ayudarán a elegir entre estas tres estrategias.
@@ -27,9 +27,9 @@ Use la arquitectura en tiempo de ejecución para determinar la estrategia de imp
 
  En caso contrario, puede crear el DE en proceso en el SDM o en proceso en el programa que está depurando. Deberá considerar si el evaluador de expresiones de la DE requiere acceso frecuente al almacén de símbolos de programa. O bien, si el almacén de símbolos se puede cargar en memoria para un acceso rápido. Además, tenga en cuenta los siguientes enfoques:
 
--   Si no hay muchas llamadas entre el evaluador de expresiones y el almacén de símbolos, o si se puede leer el almacén de símbolos en el espacio de memoria SDM, cree el DE en proceso en el SDM. Debe devolver el CLSID del motor de depuración para el SDM cuando adjunta a su programa. El SDM utiliza este CLSID para crear una instancia en curso de la DE.
+- Si no hay muchas llamadas entre el evaluador de expresiones y el almacén de símbolos, o si se puede leer el almacén de símbolos en el espacio de memoria SDM, cree el DE en proceso en el SDM. Debe devolver el CLSID del motor de depuración para el SDM cuando adjunta a su programa. El SDM utiliza este CLSID para crear una instancia en curso de la DE.
 
--   Si la DE debe llamar al programa para obtener acceso al almacén de símbolos, cree el DE proceso con el programa. En este caso, el programa crea la instancia de la DE.
+- Si la DE debe llamar al programa para obtener acceso al almacén de símbolos, cree el DE proceso con el programa. En este caso, el programa crea la instancia de la DE.
 
 ## <a name="see-also"></a>Vea también
 - [Extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

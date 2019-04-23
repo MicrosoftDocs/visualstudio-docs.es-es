@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar controles Chart a hojas de cálculo
+title: Procedimiento Agregar controles Chart a hojas de cálculo
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09301d9ebb85d12edf9c8df3d1879aad49ef8d56
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598069"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056320"
 ---
-# <a name="how-to-add-chart-controls-to-worksheets"></a>Filtrar Agregar controles Chart a hojas de cálculo
+# <a name="how-to-add-chart-controls-to-worksheets"></a>Procedimiento Agregar controles Chart a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.Chart> controles a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en las personalizaciones de nivel de documento. También puede agregar <xref:Microsoft.Office.Tools.Excel.Chart> controles en tiempo de ejecución en complementos VSTO.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "56598069"
 
   Para obtener más información acerca de <xref:Microsoft.Office.Tools.Excel.Chart> los controles, vea [control de gráfico](../vsto/chart-control.md).
 
-##  <a name="designtime"></a> Agregar controles Chart en tiempo de diseño
+## <a name="designtime"></a> Agregar controles Chart en tiempo de diseño
  Puede agregar el control <xref:Microsoft.Office.Tools.Excel.Chart> a la hoja de cálculo de la misma manera que agregaría un gráfico desde la aplicación.
 
 > [!NOTE]
@@ -43,36 +43,36 @@ ms.locfileid: "56598069"
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Para agregar un control host Chart a una hoja de cálculo de Excel
 
-1.  En el **insertar** ficha la **gráficos** grupo, haga clic en **columna**, haga clic en una categoría de gráficos y, a continuación, haga clic en el tipo de gráfico que desee.
+1. En el **insertar** ficha la **gráficos** grupo, haga clic en **columna**, haga clic en una categoría de gráficos y, a continuación, haga clic en el tipo de gráfico que desee.
 
-2.  En el **Insertar gráfico** cuadro de diálogo, haga clic en **Aceptar**.
+2. En el **Insertar gráfico** cuadro de diálogo, haga clic en **Aceptar**.
 
-3.  En el **diseño** ficha la **datos** grupo, haga clic en **seleccionar datos**.
+3. En el **diseño** ficha la **datos** grupo, haga clic en **seleccionar datos**.
 
-4.  En el **Seleccionar origen de datos** cuadro de diálogo, haga clic en el **gráfico** **rango de datos** cuadro y borre las selecciones predeterminadas.
+4. En el **Seleccionar origen de datos** cuadro de diálogo, haga clic en el **gráfico** **rango de datos** cuadro y borre las selecciones predeterminadas.
 
-5.  En el **datos de gráfico** hoja, seleccione el rango de celdas que contiene los datos del gráfico (celdas **A5** a través de **D8**).
+5. En el **datos de gráfico** hoja, seleccione el rango de celdas que contiene los datos del gráfico (celdas **A5** a través de **D8**).
 
-6.  En el **Seleccionar origen de datos** cuadro de diálogo, haga clic en **Aceptar**.
+6. En el **Seleccionar origen de datos** cuadro de diálogo, haga clic en **Aceptar**.
 
-##  <a name="runtimedoclevel"></a> Agregar controles chart en tiempo de ejecución en un proyecto de nivel de documento
+## <a name="runtimedoclevel"></a> Agregar controles chart en tiempo de ejecución en un proyecto de nivel de documento
  Puede agregar el <xref:Microsoft.Office.Tools.Excel.Chart> control dinámicamente en tiempo de ejecución. Los gráficos creados dinámicamente no se conservan en el documento como controles host cuando se cierra. Para obtener más información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Para agregar un control Chart a una hoja de cálculo mediante programación
 
-1.  En el controlador de eventos <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> de `Sheet1`, inserte el siguiente código para agregar el control <xref:Microsoft.Office.Tools.Excel.Chart>.
+1. En el controlador de eventos <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> de `Sheet1`, inserte el siguiente código para agregar el control <xref:Microsoft.Office.Tools.Excel.Chart>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]
 
-##  <a name="runtimeaddin"></a> Agregar controles chart en tiempo de ejecución en un proyecto de complemento VSTO
+## <a name="runtimeaddin"></a> Agregar controles chart en tiempo de ejecución en un proyecto de complemento VSTO
  Puede agregar un control <xref:Microsoft.Office.Tools.Excel.Chart> mediante programación a cualquier hoja de cálculo abierta de un proyecto de complemento de VSTO. Para obtener más información, consulte [documentos ampliar Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
  Los controles Chart creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando se cierra la hoja de cálculo. Para obtener más información, consulte [agregar controles a la oficina se documenta en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Para agregar un control Chart a una hoja de cálculo mediante programación
 
-1.  El siguiente código genera un elemento host de hoja de cálculo que se basa en la hoja de cálculo abierta; luego, agrega un control <xref:Microsoft.Office.Tools.Excel.Chart>.
+1. El siguiente código genera un elemento host de hoja de cálculo que se basa en la hoja de cálculo abierta; luego, agrega un control <xref:Microsoft.Office.Tools.Excel.Chart>.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#9)]
      [!code-vb[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#9)]
@@ -80,7 +80,7 @@ ms.locfileid: "56598069"
 ## <a name="compile-the-code"></a>Compilar el código
  Este ejemplo tiene los siguientes requisitos:
 
--   Datos que se deben representar gráficamente, almacenados en el rango de celdas A5 a D8 en la hoja de cálculo.
+- Datos que se deben representar gráficamente, almacenados en el rango de celdas A5 a D8 en la hoja de cálculo.
 
 ## <a name="see-also"></a>Vea también
 - [Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

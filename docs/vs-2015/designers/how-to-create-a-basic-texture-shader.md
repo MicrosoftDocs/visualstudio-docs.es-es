@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048572"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Cómo: Crear un sombreador de textura básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
   
  Este documento muestra estas actividades:  
   
--   Quitar nodos de un gráfico de sombreador  
+- Quitar nodos de un gráfico de sombreador  
   
--   Agregar nodos a un gráfico  
+- Agregar nodos a un gráfico  
   
--   Establecer los parámetros del sombreador  
+- Establecer los parámetros del sombreador  
   
--   Establecer la visibilidad del parámetro  
+- Establecer la visibilidad del parámetro  
   
--   Conectar nodos  
+- Conectar nodos  
   
 ## <a name="creating-a-basic-texture-shader"></a>Crear un sombreador de textura básico  
  Puede implementar un sombreador básico de una sola textura escribiendo los valores de color y alfa de una muestra de textura directamente en el color de salida final.  

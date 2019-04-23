@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar y eliminar comentarios en una hoja de cálculo mediante programación
+title: Procedimiento Agregar y eliminar comentarios en una hoja de cálculo mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a9d174773493546a4d9cd8d7889c39945afafe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d7251efb4c7917b67b7b6e7642c78c1cd1041997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636767"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049249"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Filtrar Agregar y eliminar comentarios en una hoja de cálculo mediante programación
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Procedimiento Agregar y eliminar comentarios en una hoja de cálculo mediante programación
   Puede agregar y eliminar comentarios en las hojas de cálculo de Microsoft Office Excel mediante programación. Los comentarios solo se pueden agregar a celdas individuales y no a intervalos de varias celdas.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -31,14 +31,14 @@ ms.locfileid: "56636767"
 
 ### <a name="to-add-a-new-comment-to-a-named-range"></a>Agregar un nuevo comentario a un intervalo con nombre
 
-1.  Llame al método <xref:Microsoft.Office.Tools.Excel.NamedRange.AddComment%2A> del control <xref:Microsoft.Office.Tools.Excel.NamedRange> y escriba el texto del comentario. Este código se debe colocar en la clase `Sheet1` .
+1. Llame al método <xref:Microsoft.Office.Tools.Excel.NamedRange.AddComment%2A> del control <xref:Microsoft.Office.Tools.Excel.NamedRange> y escriba el texto del comentario. Este código se debe colocar en la clase `Sheet1` .
 
      [!code-csharp[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#30)]
      [!code-vb[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#30)]
 
 #### <a name="to-delete-a-comment-from-a-named-range"></a>Eliminar un comentario de un intervalo con nombre
 
-1.  Compruebe si en el intervalo hay un comentario y elimínelo. Este código se debe colocar en la clase `Sheet1` .
+1. Compruebe si en el intervalo hay un comentario y elimínelo. Este código se debe colocar en la clase `Sheet1` .
 
      [!code-csharp[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#29)]
@@ -48,14 +48,14 @@ ms.locfileid: "56636767"
 
 ### <a name="to-add-a-new-comment-to-an-excel-range"></a>Agregar un nuevo comentario a un intervalo de Excel
 
-1.  Llame al método <xref:Microsoft.Office.Interop.Excel.Range.AddComment%2A> de <xref:Microsoft.Office.Interop.Excel.Range> y escriba el texto del comentario.
+1. Llame al método <xref:Microsoft.Office.Interop.Excel.Range.AddComment%2A> de <xref:Microsoft.Office.Interop.Excel.Range> y escriba el texto del comentario.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#20)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#20)]
 
 ### <a name="to-delete-a-comment-from-an-excel-range"></a>Eliminar un comentario de un intervalo de Excel
 
-1.  Compruebe si en el intervalo hay un comentario y elimínelo.
+1. Compruebe si en el intervalo hay un comentario y elimínelo.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]

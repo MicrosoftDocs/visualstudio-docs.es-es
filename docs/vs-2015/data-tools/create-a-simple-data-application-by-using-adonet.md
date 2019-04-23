@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047430"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creación de una aplicación de datos sencilla mediante ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
   
  **En este tema**  
   
--   [Configurar la base de datos de ejemplo](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [Configurar la base de datos de ejemplo](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Crear los formularios y agregar controles](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [Crear los formularios y agregar controles](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [La cadena de conexión de Store](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [La cadena de conexión de Store](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [Recuperar la cadena de conexión](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [Recuperar la cadena de conexión](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [Escribir el código para los formularios](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [Escribir el código para los formularios](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Probar la aplicación](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [Probar la aplicación](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para crear la aplicación, necesitará:  
@@ -58,10 +58,10 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
   
   En este tema se supone que está familiarizado con la funcionalidad básica del IDE de Visual Studio y puede crear una aplicación de Windows Forms, agregar formularios a ese proyecto, colocar botones y otros controles en los formularios, establecer las propiedades de estos controles y codificar eventos simples. Si no está familiarizado con estas tareas, recomendamos que complete la [Introducción a Visual C# y Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) antes de empezar este tema.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Configurar la base de datos de ejemplo  
+## <a name="BKMK_setupthesampledatabase"></a> Configurar la base de datos de ejemplo  
  La base de datos de ejemplo de este tutorial consta de las tablas Cliente y Pedidos. Las tablas no contienen datos inicialmente, pero se agregarán cuando se ejecute la aplicación que se va a crear. La base de datos también tiene cinco procedimientos almacenados simples. [Crear una base de datos SQL mediante una secuencia de comandos](../data-tools/create-a-sql-database-by-using-a-script.md) contiene un script de Transact-SQL que crea las tablas, las claves principales y externas, las restricciones y los procedimientos almacenados.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Crear los formularios y agregar controles  
+## <a name="BKMK_createtheformsandaddcontrols"></a> Crear los formularios y agregar controles  
   
 1. Cree un proyecto para una aplicación de Windows Forms y, a continuación, asígnele el nombre SimpleDataApp.  
   
@@ -69,11 +69,11 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
   
 2. Agregue dos formularios de Windows al proyecto para que tenga tres formularios y, a continuación, asígneles los siguientes nombres:  
   
-   -   Navegación  
+   - Navegación  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. Para cada formulario, agregue los cuadros de texto, botones y otros controles que aparecen en las siguientes ilustraciones. Para cada control, establezca las propiedades que se describen en las tablas.  
   
@@ -119,33 +119,33 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
 |Botón|Nombre = btnFillOrder|  
 |Botón|Nombre = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> La cadena de conexión de Store  
+## <a name="BKMK_storetheconnectionstring"></a> La cadena de conexión de Store  
  Cuando la aplicación intenta abrir una conexión a la base de datos, la aplicación debe tener acceso a la cadena de conexión. Para evitar escribir la cadena manualmente en cada formulario, almacene la cadena en el archivo app.config en el proyecto y cree un método que devuelve la cadena cuando se llama al método desde cualquier formulario de la aplicación.  
   
  Puede encontrar la cadena de conexión en **Explorador de objetos de SQL Server** haciendo clic derecho en la base de datos, seleccionando **propiedades**y, luego, busque la propiedad ConnectionString. Utilice CTRL+a para seleccionar la cadena.  
   
-1.  En **el Explorador de soluciones**, seleccione el **propiedades** nodo bajo el proyecto y, a continuación, seleccione **Settings.settings**.  
+1. En **el Explorador de soluciones**, seleccione el **propiedades** nodo bajo el proyecto y, a continuación, seleccione **Settings.settings**.  
   
-2.  En el **nombre** columna, escriba `connString`.  
+2. En el **nombre** columna, escriba `connString`.  
   
-3.  En el **tipo** lista, seleccione **(cadena de conexión)**.  
+3. En el **tipo** lista, seleccione **(cadena de conexión)**.  
   
-4.  En el **ámbito** lista, seleccione **aplicación**.  
+4. En el **ámbito** lista, seleccione **aplicación**.  
   
-5.  En el **valor** columna, escriba la cadena de conexión (sin ninguna fuera de las comillas) y, a continuación, guarde los cambios.  
+5. En el **valor** columna, escriba la cadena de conexión (sin ninguna fuera de las comillas) y, a continuación, guarde los cambios.  
   
 > [!NOTE]
 >  En una aplicación real, debe almacenar de forma segura, como se describe en la cadena de conexión [las cadenas de conexión y archivos de configuración](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> Recuperar la cadena de conexión  
+## <a name="BKMK_retrievetheconnectionstring"></a> Recuperar la cadena de conexión  
   
-1.  En la barra de menús, seleccione **proyecto** > **Agregar referencia**y, a continuación, agregue una referencia a System.Configuration.dll.  
+1. En la barra de menús, seleccione **proyecto** > **Agregar referencia**y, a continuación, agregue una referencia a System.Configuration.dll.  
   
-2.  En la barra de menús, seleccione **proyecto** > **Agregar clase** para agregar un archivo de clase al proyecto y, a continuación, el nombre del archivo `Utility`.  
+2. En la barra de menús, seleccione **proyecto** > **Agregar clase** para agregar un archivo de clase al proyecto y, a continuación, el nombre del archivo `Utility`.  
   
      Visual Studio crea el archivo y lo muestra en **el Explorador de soluciones**.  
   
-3.  En el archivo Utilidad, reemplace el código del marcador de posición por el siguiente código. Observe que los comentarios numerados (con el prefijo Util-) identifican las secciones del código. La tabla que sigue al código llama a los puntos clave.  
+3. En el archivo Utilidad, reemplace el código del marcador de posición por el siguiente código. Observe que los comentarios numerados (con el prefijo Util-) identifican las secciones del código. La tabla que sigue al código llama a los puntos clave.  
   
     ```csharp  
     using System;  
@@ -219,7 +219,7 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
     |Util-2|Defina una variable, `returnValue`, e inicialícela en `null` (C#) o en `Nothing` (Visual Basic).|  
     |Util-3|Aunque escribiera `connString` como el nombre de la cadena de conexión en el **propiedades** ventana, debe especificar `"SimpleDataApp.Properties.Settings.connString"` (C#) o `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) en el código.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> Escribir el código para los formularios  
+## <a name="BKMK_writethecodefortheforms"></a> Escribir el código para los formularios  
  Esta sección contiene información general breve de lo que hace cada formulario y muestra el código que crean los formularios. Los comentarios numerados identifican las secciones del código.  
   
 ### <a name="navigation-form"></a>Formulario Navigation  
@@ -1139,5 +1139,5 @@ End Namespace
 |FC-8|Agregue código al controlador de eventos Click para `btnFillOrder`. Este código ejecuta el procedimiento almacenado `Sales.uspFillOrder`.|  
 |FC-9|Cree un método para comprobar que `OrderID` está listo para enviar como un parámetro a la `SqlCommand` objeto.<br /><br /> -Asegúrese está seguro de que se ha especificado un identificador en `txtOrderID`.<br />-Use `Regex.IsMatch` para definir una sencilla comprobación de caracteres no enteros.<br />-Ha declarado el `parsedOrderID` variable en FC-2.<br />-Si la entrada es válida, convertir el texto en un entero y almacene el valor en el `parsedOrderID` variable.<br />-Ajuste la `isOrderID` método en torno a la `btnFindByOrderID`, `btnCancelOrder`, y `btnFillOrder` haga clic en los controladores de eventos.|  
   
-##  <a name="BKMK_testyourapplication"></a> Probar la aplicación  
+## <a name="BKMK_testyourapplication"></a> Probar la aplicación  
  Seleccione la tecla F5 para compilar y probar su aplicación después del código de cada controlador de eventos Click y, a continuación, después de terminar la codificación.

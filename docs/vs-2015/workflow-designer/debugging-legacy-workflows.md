@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7585d824ea6abf7df0aab5dc07c88abe9ff97081
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988767"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048741"
 ---
 # <a name="debugging-legacy-workflows"></a>Depurar flujos de trabajo heredados
 Si usa el [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado en [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] para compilar aplicaciones [!INCLUDE[wf](../includes/wf-md.md)] que tienen como destino .NET Framework 3.0 o 3.5, puede depurar los flujos de trabajo como cualquier otro programa: establecer puntos de interrupción, adjuntar a procesos y examinar los subprocesos y la pila de llamadas. También tiene la opción de realizar la depuración de forma remota.  
@@ -27,7 +27,7 @@ Si usa el [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado en [!INCLUDE[vs_curr
 >  Si varias versiones de Visual Studio se han instalado y desinstalado en el equipo, la depuración de WF3 puede provocar un error con una de las dos posibilidades siguientes:  
 > 
 > - No se alcanzan los puntos de interrupción.  
->   -   Se mostrará el mensaje siguiente:  
+>   - Se mostrará el mensaje siguiente:  
 > 
 >   **No se puede iniciar la depuración en el servidor web. El depurador no está instalado correctamente.  No se puede depurar el tipo de código solicitado.  Ejecute el programa de instalación para instalar o reparar al depurador.**  
 > 

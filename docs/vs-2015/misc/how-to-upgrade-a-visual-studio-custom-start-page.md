@@ -1,5 +1,5 @@
 ---
-title: Filtrar Actualizar una página de inicio personalizada | Microsoft Docs
+title: Procedimiento Actualizar una página de inicio personalizada | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: 4e17ed6ac15dbaee08c596b67a70b53f440a1e1e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 457b3baf2b291a0ef96bd8bbd748261348a2108d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045465"
 ---
-# <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Filtrar Actualizar una página de inicio personalizada de Visual Studio
+# <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Procedimiento Actualizar una página de inicio personalizada de Visual Studio
 Puede actualizar una página de inicio personalizada de Visual Studio 2010 o de Visual Studio 2012 a Visual Studio 2015 siguiendo los pasos indicados a continuación.
 
 > [!WARNING]
@@ -22,19 +22,19 @@ Puede actualizar una página de inicio personalizada de Visual Studio 2010 o de 
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Para actualizar una página de inicio personalizada a Visual Studio 2015
 
-1.  Asegúrese de que están instalados Visual Studio 2015 y el SDK de Visual Studio 2015. Puede descargar el VSSDK de [Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436).
+1. Asegúrese de que están instalados Visual Studio 2015 y el SDK de Visual Studio 2015. Puede descargar el VSSDK de [Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436).
 
-2.  Abra el proyecto de plantilla personalizada. Verá un mensaje que le notifica que el proyecto se debe actualizar. Haga clic en **Aceptar** y espere a que se complete la actualización.
+2. Abra el proyecto de plantilla personalizada. Verá un mensaje que le notifica que el proyecto se debe actualizar. Haga clic en **Aceptar** y espere a que se complete la actualización.
 
-3.  En las propiedades del proyecto para el proyecto de página de inicio y el proyecto de control, asegúrese de que el marco de trabajo de destino es al menos .NET Framework 4.5.
+3. En las propiedades del proyecto para el proyecto de página de inicio y el proyecto de control, asegúrese de que el marco de trabajo de destino es al menos .NET Framework 4.5.
 
-4.  En la categoría de depuración de las propiedades del proyecto para el proyecto de página de inicio, establezca la ruta de acceso a la versión de devenv.exe de Visual Studio 2015.
+4. En la categoría de depuración de las propiedades del proyecto para el proyecto de página de inicio, establezca la ruta de acceso a la versión de devenv.exe de Visual Studio 2015.
 
-5.  En las referencias de proyecto para ambos proyectos, quite las referencias a Microsoft.VisualStudio.Shell.11.0 y agregue referencias a Microsoft.VisualStudio.Shell.14.0.
+5. En las referencias de proyecto para ambos proyectos, quite las referencias a Microsoft.VisualStudio.Shell.11.0 y agregue referencias a Microsoft.VisualStudio.Shell.14.0.
 
-6.  Abra StartPage.xaml con el editor XML y realice los cambios siguientes:
+6. Abra StartPage.xaml con el editor XML y realice los cambios siguientes:
 
-    1.  Actualice los espacios de nombres. Cambie las siguientes líneas:
+    1. Actualice los espacios de nombres. Cambie las siguientes líneas:
 
         ```
 
@@ -52,4 +52,4 @@ Puede actualizar una página de inicio personalizada de Visual Studio 2010 o de 
         xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
         ```
 
-7.  Abra MyControl.xaml y cambie la referencia de espacio de nombres `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` a `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .
+7. Abra MyControl.xaml y cambie la referencia de espacio de nombres `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` a `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .

@@ -1,5 +1,5 @@
 ---
-title: 'Paso 9: Revisar, comentar y probar el código | Microsoft Docs'
+title: 'Paso 9: Revisar, comentar y probar el código | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b03c6c7af9cfedcf7e45a61dba826d99b300ffbe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059869"
 ---
-# <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: Revisar, comentar y probar el código
+# <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: revisión, comentario y prueba del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A continuación, se agrega un comentario al código. Un comentario es una nota que no cambia la forma de comportarse del programa. Hace que resulte más fácil entender el código a la persona que lo lee. Agregar comentarios al código es un hábito recomendable. En Visual C#, se utilizan dos barras diagonales (//) para marcar una línea como comentario. En Visual Basic, se utiliza una comilla sencilla (') para marcar una línea como comentario. Después de agregar un comentario, se prueba el programa. Es recomendable ejecutar y probar el código con frecuencia mientras trabaja en sus proyectos para que pueda detectar y corregir pronto cualquier problema, antes de que la complejidad del código aumente. Esto se denomina *prueba iterativa*.  
@@ -25,7 +25,7 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
   
 - Al hacer doble clic en el botón **Show a picture** (Mostrar una imagen) en el Diseñador de Windows Forms, el IDE agregó automáticamente un *método* al código del programa.  
   
-- Los métodos permiten organizar el código: son la manera de agrupar las partes del código.  
+- Los métodos sirven para organizar el código: Son la forma de agrupar el código.  
   
 - Casi siempre, un método realiza una cantidad reducida de acciones en un orden concreto; por ejemplo, el método `showButton_Click()` muestra un cuadro de diálogo y, a continuación, carga una imagen.  
   
@@ -45,11 +45,11 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
   
    Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No se necesita indicar el signo de punto y coma en Visual Basic.) La instrucción anterior ordena al control `PictureBox` que cargue el archivo que el usuario ha seleccionado con el componente **OpenFileDialog**.  
   
-  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo")para una versión en vídeo de este tema, consulte [Tutorial 1: crear un visor de imágenes en Visual Basic - vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205216) o [Tutorial 1: crear un visor de imágenes en C#: Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo")para una versión en vídeo de este tema, consulte [Tutorial 1: Crear un visor de imágenes en Visual Basic - vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205216) o [Tutorial 1: Crear un visor de imágenes en C# - vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### <a name="to-add-comments"></a>Para agregar comentarios  
   
-1.  Agregue el siguiente comentario al código.  
+1. Agregue el siguiente comentario al código.  
   
      [!code-csharp[VbExpressTutorial1Step9_10#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
@@ -64,7 +64,7 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
     >   
     >  Para activar un fragmento de código mientras está especificando el código, escríbalo y elija la tecla TAB. Muchos fragmentos de código aparecen en la ventana **IntelliSense**, motivo por el cual la tecla TAB se elige dos veces: la primera para seleccionar el fragmento de código en la ventana **IntelliSense** y la segunda para indicarle al IDE que lo use. (IntelliSense admite el fragmento de código `if`, pero no el fragmento de código `ifelse`.)  
   
-2.  Guarde el programa antes de ejecutarlo, para ello, elija el botón de la barra de herramientas **Guardar todo**, que se muestra a continuación.  
+2. Guarde el programa antes de ejecutarlo, para ello, elija el botón de la barra de herramientas **Guardar todo**, que se muestra a continuación.  
   
      ![Botón de la barra de herramientas Guardar todo](../ide/media/express-iconsaveall.png "Express_IconSaveAll")  
 Botón Guardar todo  
@@ -78,19 +78,19 @@ Visor de imágenes
   
 ### <a name="to-test-your-program"></a>Para probar el programa  
   
-1.  Elija la tecla F5 o el botón de la barra de herramientas **Iniciar depuración** .  
+1. Elija la tecla F5 o el botón de la barra de herramientas **Iniciar depuración** .  
   
-2.  Elija el botón **Show a picture** (Mostrar una imagen) para ejecutar el código que acaba de escribir. Primero, el programa abre un cuadro de diálogo **Abrir archivo**. Compruebe que los filtros aparecen en la lista desplegable **Tipo de archivo** en la parte inferior del cuadro de diálogo. A continuación, navegue hasta una imagen y ábrala. Normalmente, encontrará imágenes de ejemplo que se distribuyen con el sistema operativo Windows en la carpeta **Mis documentos**, dentro de la carpeta **Mis imágenes\Imágenes de muestra**.  
+2. Elija el botón **Show a picture** (Mostrar una imagen) para ejecutar el código que acaba de escribir. Primero, el programa abre un cuadro de diálogo **Abrir archivo**. Compruebe que los filtros aparecen en la lista desplegable **Tipo de archivo** en la parte inferior del cuadro de diálogo. A continuación, navegue hasta una imagen y ábrala. Normalmente, encontrará imágenes de ejemplo que se distribuyen con el sistema operativo Windows en la carpeta **Mis documentos**, dentro de la carpeta **Mis imágenes\Imágenes de muestra**.  
   
     > [!NOTE]
     >  Si no ve ninguna imagen en el cuadro de diálogo **Select a picture file** (Seleccionar un archivo de imagen), asegúrese de que el filtro "Todos los archivos (*.\*)" esté seleccionado en la lista desplegable situada en la parte inferior derecha del cuadro de diálogo.  
   
-3.  Cargue una imagen y esta aparecerá en el control PictureBox. A continuación intente cambiar el tamaño del formulario arrastrando los bordes. Como el control PictureBox está acoplado dentro de un control TableLayoutPanel, que a su vez está acoplado en el formulario, el ancho del área de imagen se ajustará al ancho del formulario y el alto ocupará el 90 por ciento superior del formulario. Por eso usan los contenedores TableLayoutPanel y FlowLayoutPanel: Mantienen el tamaño del formulario correcto cuando el usuario lo modifica.  
+3. Cargue una imagen y esta aparecerá en el control PictureBox. A continuación intente cambiar el tamaño del formulario arrastrando los bordes. Como el control PictureBox está acoplado dentro de un control TableLayoutPanel, que a su vez está acoplado en el formulario, el ancho del área de imagen se ajustará al ancho del formulario y el alto ocupará el 90 por ciento superior del formulario. Por eso usan los contenedores TableLayoutPanel y FlowLayoutPanel: Mantienen el tamaño del formulario correcto cuando el usuario lo modifica.  
   
      En este momento, las imágenes más grandes sobrepasan los bordes del visor de imágenes. En el paso siguiente, agregará código para que las imágenes se ajusten a la ventana.  
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  
   
--   Para ir al paso siguiente del tutorial, vea [Paso 10: Escribir código para botones adicionales y una casilla](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
+- Para ir al siguiente paso del tutorial, vea [Paso 10: Escribir código para botones adicionales y una casilla de verificación](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
   
--   Para volver al paso anterior del tutorial, vea [Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Para volver al paso anterior del tutorial, vea [Paso 8: Escribir código para la presentación de un controlador de eventos de botón de imagen](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

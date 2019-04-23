@@ -14,12 +14,12 @@ ms.assetid: d6ab82e6-ca64-46b4-a06c-5c6b0aa057cb
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a53ff758622cf719c2b10ea47fc516ac8684eb6a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2767ffc16b637c6b1e7bdf51cb0815d71f58edac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050523"
 ---
 # <a name="date-object-expected"></a>Se esperaba un objeto de fecha
 Se intentó invocar el **Date.prototype.toString** o **Date.prototype.valueOf** método en un objeto de un tipo distinto `Date`. El objeto de este tipo de invocación debe ser de tipo `Date`. Por ejemplo:  
@@ -32,7 +32,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Solo se invoque la **Date.prototype.toString** o **Date.prototype.valueOf** métodos en objetos de tipo `Date`.  
+- Solo se invoque la **Date.prototype.toString** o **Date.prototype.valueOf** métodos en objetos de tipo `Date`.  
   
 ## <a name="see-also"></a>Vea también  
  [Objeto Date](../../javascript/reference/date-object-javascript.md)   

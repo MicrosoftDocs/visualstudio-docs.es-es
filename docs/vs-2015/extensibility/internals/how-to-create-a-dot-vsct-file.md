@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear una. Archivo de Vsct | Documentos de Microsoft
+title: Procedimiento Crear una. Archivo de Vsct | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,14 +10,14 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2d3def90d568b77ccfd781d573b49551313d733f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2483c000bb7c9446ac51bb94ef4006a7b2ac89f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998465"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056944"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Filtrar Crear un archivo .Vsct
+# <a name="how-to-create-a-vsct-file"></a>Procedimiento Crear un archivo .Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Hay varias maneras de crear un archivo de configuración (.vsct) basado en XML y Visual Studio Command Table.  
@@ -34,32 +34,32 @@ Hay varias maneras de crear un archivo de configuración (.vsct) basado en XML y
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>Para crear manualmente un nuevo archivo de vsct  
   
-1.  Inicie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+1. Inicie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-2.  En el **archivo** menú, elija **New**y, a continuación, haga clic en **archivo**.  
+2. En el **archivo** menú, elija **New**y, a continuación, haga clic en **archivo**.  
   
-3.  En el **plantillas** panel, haga clic en **archivo XML** y, a continuación, haga clic en **abierto**.  
+3. En el **plantillas** panel, haga clic en **archivo XML** y, a continuación, haga clic en **abierto**.  
   
-4.  En el **vista** menú, haga clic en **ventana propiedades** para mostrar las propiedades del archivo XML.  
+4. En el **vista** menú, haga clic en **ventana propiedades** para mostrar las propiedades del archivo XML.  
   
-5.  En el **propiedades** ventana, haga clic en el botón Examinar (...) en la propiedad de esquemas.  
+5. En el **propiedades** ventana, haga clic en el botón Examinar (...) en la propiedad de esquemas.  
   
-6.  En la lista de esquemas XSD, seleccione el esquema vsct.xsd. Si no está en la lista, haga clic en **agregar** y, a continuación, busque el archivo en una unidad local. Haga clic en **Aceptar** cuando haya terminado.  
+6. En la lista de esquemas XSD, seleccione el esquema vsct.xsd. Si no está en la lista, haga clic en **agregar** y, a continuación, busque el archivo en una unidad local. Haga clic en **Aceptar** cuando haya terminado.  
   
-7.  En el archivo XML, escriba `<CommandTable` y, a continuación, presione la tecla TAB. Cerrar la etiqueta escribiendo `>`.  
+7. En el archivo XML, escriba `<CommandTable` y, a continuación, presione la tecla TAB. Cerrar la etiqueta escribiendo `>`.  
   
      Esto crea un archivo .vsct básica.  
   
-8.  Rellenar los elementos del archivo XML que desea agregar, de acuerdo con la [VSCT esquema](../../extensibility/vsct-xml-schema-reference.md). Para obtener más información, consulte [Authoring. Archivos Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8. Rellenar los elementos del archivo XML que desea agregar, de acuerdo con la [VSCT esquema](../../extensibility/vsct-xml-schema-reference.md). Para obtener más información, consulte [Authoring. Archivos Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 ## <a name="compiling-the-code"></a>Compilar el código  
  Basta con agregar un archivo .vsct a un proyecto no hace que se compile. Debe incorporarlo en el proceso de compilación.  
   
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>Para agregar un archivo .vsct a la compilación del proyecto  
   
-1.  Abra el archivo de proyecto en el editor. Si se carga el proyecto, primero debe descargarlo.  
+1. Abra el archivo de proyecto en el editor. Si se carga el proyecto, primero debe descargarlo.  
   
-2.  Agregar un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) que contiene un elemento VSCTCompile, tal como se muestra en el ejemplo siguiente.  
+2. Agregar un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) que contiene un elemento VSCTCompile, tal como se muestra en el ejemplo siguiente.  
   
     ```xml  
     <ItemGroup>  
@@ -72,7 +72,7 @@ Hay varias maneras de crear un archivo de configuración (.vsct) basado en XML y
   
      Siempre debe establecerse en el elemento ResourceName `Menus.ctmenu`.  
   
-3.  Si el proyecto contiene un archivo .resx, agregar un elemento EmbeddedResource que contiene un elemento MergeWithCTO, tal como se muestra en el ejemplo siguiente.  
+3. Si el proyecto contiene un archivo .resx, agregar un elemento EmbeddedResource que contiene un elemento MergeWithCTO, tal como se muestra en el ejemplo siguiente.  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.resx">  
@@ -84,9 +84,9 @@ Hay varias maneras de crear un archivo de configuración (.vsct) basado en XML y
   
      Este marcado debe ir dentro del elemento ItemGroup que contiene recursos incrustados.  
   
-4.  Abra el archivo de paquete, normalmente denominado *ProjectName*Package.cs o *ProjectName*Package.vb, en el editor.  
+4. Abra el archivo de paquete, normalmente denominado *ProjectName*Package.cs o *ProjectName*Package.vb, en el editor.  
   
-5.  Agregue un atributo ProvideMenuResource a la clase de paquete, tal como se muestra en el ejemplo siguiente.  
+5. Agregue un atributo ProvideMenuResource a la clase de paquete, tal como se muestra en el ejemplo siguiente.  
   
     ```csharp  
     [ProvideMenuResource("Menus.ctmenu", 1)]  

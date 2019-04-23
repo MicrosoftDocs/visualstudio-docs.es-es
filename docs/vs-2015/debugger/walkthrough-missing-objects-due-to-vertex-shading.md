@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998637"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046385"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Tutorial: Objetos ausentes debido al sombreado de vértices
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
   
  En el tutorial se muestran las tareas siguientes:  
   
--   Uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.  
+- Uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.  
   
--   Uso de la ventana **Etapas de canalización de gráficos** para comprobar el efecto de la llamada a la API de Direct3D `DrawIndexed` .  
+- Uso de la ventana **Etapas de canalización de gráficos** para comprobar el efecto de la llamada a la API de Direct3D `DrawIndexed` .  
   
--   Uso del **Depurador de HLSL** para examinar el sombreador de vértices.  
+- Uso del **Depurador de HLSL** para examinar el sombreador de vértices.  
   
--   Uso de la **Pila de llamadas de eventos gráficos** para ayudar a encontrar el origen de una constante de HLSL incorrecta.  
+- Uso de la **Pila de llamadas de eventos gráficos** para ayudar a encontrar el origen de una constante de HLSL incorrecta.  
   
 ## <a name="scenario"></a>Escenario  
  Una de las causas habituales por las que puede faltar un objeto en una aplicación 3D se produce cuando el sombreador de vértices transforma los vértices del objeto de un modo incorrecto o inesperado; por ejemplo, el objeto podría haberse escalado a un tamaño muy pequeño, o haberse transformado de forma que aparezca detrás de la cámara, en lugar de delante.  

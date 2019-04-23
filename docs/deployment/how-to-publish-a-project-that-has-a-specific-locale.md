@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: publicar un proyecto que tiene una configuración regional específica | Microsoft Docs'
+title: Procedimiento Publicar un proyecto que tiene una configuración regional específica | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70300e7d6090e7c8155281e771522bec08308f5b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f4b920706a6a43f52ab861d392efe4b30f28c4ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056580"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Cómo: Publicar un proyecto que tiene una configuración regional específica
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procedimiento Publicación de un proyecto con una configuración regional específica
 No es raro que una aplicación contenga componentes con diferentes configuraciones regionales. En este escenario, crearía una solución con varios proyectos para después publicar diferentes proyectos para cada configuración regional. En este procedimiento se muestra cómo usar una macro para publicar el primer proyecto en una solución usando la configuración regional 'en'. Si quiere intentar este procedimiento con una configuración regional que no sea 'en', asegúrese de establecer `localeString` de manera que coincida con la configuración regional que está usando (por ejemplo, 'de' o 'de-DE').
 
 > [!NOTE]
@@ -35,13 +35,13 @@ No es raro que una aplicación contenga componentes con diferentes configuracion
 
 ### <a name="to-create-the-publishing-macro"></a>Para crear la macro de publicación
 
-1.  Para abrir el Explorador de macros, en el menú **Herramientas**, apunte a **Macros** y, a continuación, haga clic en el **Explorador de macros**.
+1. Para abrir el Explorador de macros, en el menú **Herramientas**, apunte a **Macros** y, a continuación, haga clic en el **Explorador de macros**.
 
-2.  Crear un nuevo módulo de macros. En el Explorador de macros, seleccione **MyMacros**. En el menú **Herramientas**, apunte a **Macros** y, a continuación, haga clic en el **Nuevo módulo de macros**. Dé al módulo el nombre **PublishSpecificCulture**.
+2. Crear un nuevo módulo de macros. En el Explorador de macros, seleccione **MyMacros**. En el menú **Herramientas**, apunte a **Macros** y, a continuación, haga clic en el **Nuevo módulo de macros**. Dé al módulo el nombre **PublishSpecificCulture**.
 
-3.  En el Explorador de macros, expanda el nodo **MyMacros** y haga doble clic en el módulo **PublishAllProjects** para abrirlo (o, en el menú **Herramientas**, apunte a **Macros** y haga clic en **IDE de macros**).
+3. En el Explorador de macros, expanda el nodo **MyMacros** y haga doble clic en el módulo **PublishAllProjects** para abrirlo (o, en el menú **Herramientas**, apunte a **Macros** y haga clic en **IDE de macros**).
 
-4.  En el IDE de macros, agregue el siguiente código al módulo, después de las instrucciones `Import`:
+4. En el IDE de macros, agregue el siguiente código al módulo, después de las instrucciones `Import`:
 
     ```vb
     Module PublishSpecificCulture
@@ -135,34 +135,34 @@ No es raro que una aplicación contenga componentes con diferentes configuracion
     End Module
     ```
 
-5.  Cierre el IDE de macros. El foco volverá a Visual Studio.
+5. Cierre el IDE de macros. El foco volverá a Visual Studio.
 
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>Para publicar un proyecto para una configuración regional específica
 
-1.  Para crear un proyecto de Aplicación para Windows de Visual Basic, en el menú **Archivo**, seleccione **Nuevo** y, a continuación, haga clic en **Proyecto**.
+1. Para crear un proyecto de Aplicación para Windows de Visual Basic, en el menú **Archivo**, seleccione **Nuevo** y, a continuación, haga clic en **Proyecto**.
 
-2.  En el cuadro de diálogo **Nuevo proyecto**, seleccione **Aplicación para Windows** en el nodo **Visual Basic**. Dé al proyecto el nombre *PublishLocales*.
+2. En el cuadro de diálogo **Nuevo proyecto**, seleccione **Aplicación para Windows** en el nodo **Visual Basic**. Dé al proyecto el nombre *PublishLocales*.
 
-3.  Haga clic en Form1. En la ventana **Propiedades**, en **Diseño**, cambie la propiedad **Idioma** de **(Predeterminado)** a **Inglés**. Cambie la propiedad **Texto** del formulario a **MyForm**.
+3. Haga clic en Form1. En la ventana **Propiedades**, en **Diseño**, cambie la propiedad **Idioma** de **(Predeterminado)** a **Inglés**. Cambie la propiedad **Texto** del formulario a **MyForm**.
 
      Tenga en cuenta que los archivos DLL de recursos localizados no se crean hasta que se necesitan. Por ejemplo, se crean cuando se cambia el texto del formulario o uno de sus controles después de haber especificado la nueva configuración regional.
 
-4.  Publique *PublishLocales* usando el IDE de Visual Studio.
+4. Publique *PublishLocales* usando el IDE de Visual Studio.
 
      En el **Explorador de soluciones**, seleccione *PublishLocales*. En el menú **Proyecto**, seleccione **Propiedades**. En el Diseñador de proyectos, en el **publicar** , especifique una ubicación de publicación de **http://localhost/PublishLocales**y, a continuación, haga clic en **publicar ahora**.
 
      Cuando la página web de publicación aparezca, ciérrela. (En este paso, solo tiene que publicar el proyecto, no tiene que instalarlo).
 
-5.  Publique *PublishLocales* de nuevo invocando la macro en la ventana del símbolo del sistema de Visual Studio. Para ver la ventana de símbolo del sistema, en el **vista** menú, elija **Other Windows** y, a continuación, haga clic en **ventana de comandos**, o bien presione **Ctrl** + **Alt**+**A**. En la ventana de símbolo del sistema, escriba `macros`; Autocompletar proporcionará una lista de macros disponibles. Seleccione la macro siguiente y presione ENTRAR:
+5. Publique *PublishLocales* de nuevo invocando la macro en la ventana del símbolo del sistema de Visual Studio. Para ver la ventana de símbolo del sistema, en el **vista** menú, elija **Other Windows** y, a continuación, haga clic en **ventana de comandos**, o bien presione **Ctrl** + **Alt**+**A**. En la ventana de símbolo del sistema, escriba `macros`; Autocompletar proporcionará una lista de macros disponibles. Seleccione la macro siguiente y presione ENTRAR:
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 
-6.  Cuando el proceso de publicación se realiza correctamente, generará el mensaje que indica "Publicación realizada correctamente para *PublishLocales\PublishLocales.vbproj*. El idioma de publicación era 'en'". Haga clic en **Aceptar** en el cuadro de mensaje. Cuando la página web de publicación aparezca, haga clic en **Instalar**.
+6. Cuando el proceso de publicación se realiza correctamente, generará el mensaje que indica "Publicación realizada correctamente para *PublishLocales\PublishLocales.vbproj*. El idioma de publicación era 'en'". Haga clic en **Aceptar** en el cuadro de mensaje. Cuando la página web de publicación aparezca, haga clic en **Instalar**.
 
-7.  Mire en *C:\Inetpub\wwwroot\PublishLocales\en*. Deberá ver los archivos instalados, como los manifiestos, *setup.exe* y el archivo de la página web de publicación, además del archivo DLL de recursos localizados. De forma predeterminada ClickOnce anexa una extensión *.deploy* a los archivos EXE y DLL; puede quitar esta extensión después de la implementación.
+7. Mire en *C:\Inetpub\wwwroot\PublishLocales\en*. Deberá ver los archivos instalados, como los manifiestos, *setup.exe* y el archivo de la página web de publicación, además del archivo DLL de recursos localizados. De forma predeterminada ClickOnce anexa una extensión *.deploy* a los archivos EXE y DLL; puede quitar esta extensión después de la implementación.
 
 ## <a name="see-also"></a>Vea también
 - [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Entorno de desarrollo de macros](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
 - [Ventana Explorador de macros](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))
-- [Cómo: editar y crear macros mediante programación](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))
+- [Cómo: Editar y crear macros mediante programación](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

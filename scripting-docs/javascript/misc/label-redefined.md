@@ -14,19 +14,19 @@ ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58e313b1e47c033589e0a53c11f769cbca893047
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a5c6f44124ff49982d3821b1441eacf8dec7a666
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047987"
 ---
 # <a name="label-redefined"></a>Etiqueta redefinida
 Crea una nueva etiqueta, pero se le asignó el nombre de una etiqueta existente. Etiquetas se pueden usar para marcar los bloques de código, pero en un ámbito especificado, debe ser únicos.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese de que todas las etiquetas que utilizar en los programas sean únicas en sus respectivos ámbitos.  
+- Asegúrese de que todas las etiquetas que utilizar en los programas sean únicas en sus respectivos ámbitos.  
   
 ## <a name="see-also"></a>Vea también  
  [Instrucción con etiqueta](../../javascript/reference/labeled-statement-javascript.md)   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d05b64f2245e4710f501ed8a24f7052cc310b30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d87e4002bd920a3b189886ae29bc7cf3a6ccf61f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633088"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044510"
 ---
 # <a name="create-options-pages"></a>Crear páginas de opciones
 En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] marco de trabajo de paquetes administrados, las clases derivadas de <xref:Microsoft.VisualStudio.Shell.DialogPage> ampliar el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE mediante la adición de **opciones** páginas bajo la **herramientas** menú.
@@ -25,9 +25,9 @@ En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] marco de trab
 
  Dado que el entorno crea una instancia del objeto que implementa un determinado **opciones de herramientas** página cuando se muestra la página determinada por el IDE:
 
--   Un **herramientas-opciones** página debe implementarse en su propio objeto y no en el objeto que implementa un paquete VSPackage.
+- Un **herramientas-opciones** página debe implementarse en su propio objeto y no en el objeto que implementa un paquete VSPackage.
 
--   Un objeto no puede implementar varios **opciones de herramientas** páginas.
+- Un objeto no puede implementar varios **opciones de herramientas** páginas.
 
 ## <a name="register-as-a-tools-options-page-provider"></a>Registrar como un proveedor de la página de opciones de herramientas
  Una configuración de usuario de apoyo de VSPackage a través de **herramientas-opciones** páginas indica los objetos proporcionándoselas **herramientas-opciones** páginas aplicando las instancias de <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> aplicado a la <xref:Microsoft.VisualStudio.Shell.Package>implementación.

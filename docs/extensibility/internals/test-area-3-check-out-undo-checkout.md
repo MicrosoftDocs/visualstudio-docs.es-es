@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 772e238367f16d95fa47d661f8a4bd24091524d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eb95c5475c653e60c863ddf093d3a92e0c70cf45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048093"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de prueba 3: Desproteger o deshacer desprotección
 Esta área de prueba de complemento de control de código fuente trata los elementos de edición y revertir desde el almacén de versiones a través de la **desproteger** y **Deshacer desprotección** comandos.
@@ -33,21 +33,21 @@ La siguiente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rutas 
 
 ##### <a name="check-out"></a>Check-out:
 
--   **Archivo**, **Control de código fuente**, **desproteger**.
+- **Archivo**, **Control de código fuente**, **desproteger**.
 
--   **Archivo**, **desproteger**.
+- **Archivo**, **desproteger**.
 
--   Menú contextual, **desproteger**.
+- Menú contextual, **desproteger**.
 
--   Deshacer desprotección: **Archivo**, **Control de código fuente**, **Deshacer desprotección**.
+- Deshacer desprotección: **Archivo**, **Control de código fuente**, **Deshacer desprotección**.
 
 ## <a name="common-expected-behavior"></a>Comportamiento esperado comunes
 
--   Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.
+- Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.
 
--   El almacén de versiones de la desprotección atributos para el usuario correcto.
+- El almacén de versiones de la desprotección atributos para el usuario correcto.
 
--   La fecha y hora de la desprotección son correctos (según la configuración del usuario).
+- La fecha y hora de la desprotección son correctos (según la configuración del usuario).
 
 ## <a name="test-cases"></a>Casos de prueba
 
@@ -74,11 +74,11 @@ Cuando el usuario vuelve a conectarse a la versión de almacenar los Estados de 
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
 
--   No se puede usar **comprobar exclusivamente** comando mientras está desconectado del almacén de versiones.
+- No se puede usar **comprobar exclusivamente** comando mientras está desconectado del almacén de versiones.
 
--   No se puede usar **Deshacer desprotección** comando mientras está desconectado del almacén de versiones.
+- No se puede usar **Deshacer desprotección** comando mientras está desconectado del almacén de versiones.
 
--   **Compartido desproteger** comando funciona.
+- **Compartido desproteger** comando funciona.
 
 |Acción|Pasos de prueba|Resultados esperados para comprobar|
 |------------|----------------|--------------------------------|
@@ -89,13 +89,13 @@ Cuando el usuario vuelve a conectarse a la versión de almacenar los Estados de 
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
 
--   Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.
+- Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.
 
--   El almacén de versiones de la desprotección atributos para el usuario correcto.
+- El almacén de versiones de la desprotección atributos para el usuario correcto.
 
--   La fecha y hora de la desprotección son correctos (según la configuración del usuario).
+- La fecha y hora de la desprotección son correctos (según la configuración del usuario).
 
--   La copia local de la carpeta o archivo de destino es grabable.
+- La copia local de la carpeta o archivo de destino es grabable.
 
 |Acción|Pasos de prueba|Resultados esperados para comprobar|
 |------------|----------------|--------------------------------|
@@ -108,13 +108,13 @@ Cuando el usuario vuelve a conectarse a la versión de almacenar los Estados de 
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
 
--   Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.
+- Después de la operación de desprotección, los archivos de destino o las carpetas se marcan como desprotegidos en el almacén de versiones.
 
--   El almacén de versiones de la desprotección atributos para el usuario correcto.
+- El almacén de versiones de la desprotección atributos para el usuario correcto.
 
--   La fecha y hora de la desprotección es correcto (según la configuración del usuario).
+- La fecha y hora de la desprotección es correcto (según la configuración del usuario).
 
--   La copia local de la carpeta o archivo de destino es grabable.
+- La copia local de la carpeta o archivo de destino es grabable.
 
 |Acción|Pasos de prueba|Resultados esperados para comprobar|
 |------------|----------------|--------------------------------|
@@ -126,9 +126,9 @@ Cuando el usuario vuelve a conectarse a la versión de almacenar los Estados de 
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
 
--   El valor predeterminado se basa en el usuario **Desproteger versión Local** configuración. Si el usuario ha elegido Desproteger versión local, el valor predeterminado de la desprotección es siempre volverá a la versión que desprotegió.
+- El valor predeterminado se basa en el usuario **Desproteger versión Local** configuración. Si el usuario ha elegido Desproteger versión local, el valor predeterminado de la desprotección es siempre volverá a la versión que desprotegió.
 
--   Tras la aceptación de la fase de reversión, los iconos de **el Explorador de soluciones** se actualizan para afectados los archivos y el elemento se quita de la **protecciones pendientes** ventana.
+- Tras la aceptación de la fase de reversión, los iconos de **el Explorador de soluciones** se actualizan para afectados los archivos y el elemento se quita de la **protecciones pendientes** ventana.
 
 |Acción|Pasos de prueba|Resultados esperados para comprobar|
 |------------|----------------|--------------------------------|

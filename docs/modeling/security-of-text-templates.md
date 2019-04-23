@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9906f3b8af624e1761b73c3338bad98b263aa9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66159516c6b1360203130dedb56c0e6c192a118a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050016"
 ---
 # <a name="security-of-text-templates"></a>Seguridad de las plantillas de texto
 Las plantillas de texto tienen los siguientes problemas de seguridad:
 
--   Las plantillas de texto son vulnerables a las inserciones de código arbitrario.
+- Las plantillas de texto son vulnerables a las inserciones de código arbitrario.
 
--   Si el mecanismo que usa el host para encontrar un procesador de directivas no es seguro, se podría ejecutar un procesador de directivas malintencionado.
+- Si el mecanismo que usa el host para encontrar un procesador de directivas no es seguro, se podría ejecutar un procesador de directivas malintencionado.
 
 ## <a name="arbitrary-code"></a>Código arbitrario
  Al escribir una plantilla, puede colocar cualquier código dentro de la \<## > etiquetas. Esto permite que el código arbitrario para ejecutarse desde una plantilla de texto.

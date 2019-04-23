@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046323"
 ---
 # <a name="refactoring-c"></a>Refactorización (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ La refactorización es el proceso de mejorar el código una vez que se ha escrit
   
  Visual C# proporciona los siguientes comandos de refactorización en el **refactorización** menú:  
   
--   [Extraer refactorización de método (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Extraer refactorización de método (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Cambiar nombre de refactorización (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [Cambiar nombre de refactorización (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Encapsular refactorización de campo (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Encapsular refactorización de campo (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Extraer refactorización de interfaz (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Extraer refactorización de interfaz (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Quitar refactorización de parámetros (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Quitar refactorización de parámetros (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Reordenar refactorización de parámetros (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Reordenar refactorización de parámetros (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Refactorización de varios proyectos  
  Visual Studio admite la refactorización de varios proyectos para proyectos que se encuentran en la misma solución. Todas las operaciones de refactorización que corrigen referencias entre archivos corrigen esas referencias a todos los proyectos del mismo idioma. Esto funciona para todas las referencias de proyecto a proyecto. Por ejemplo, si tiene una aplicación de consola que se hace referencia a una biblioteca de clases, al cambiar el nombre de un tipo de biblioteca de clases (mediante el `Rename` operación de refactorización), también se actualizan las referencias al tipo de la biblioteca de clases en la aplicación de consola.  

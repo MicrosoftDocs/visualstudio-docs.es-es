@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 147bb56e0d8759ece67ea1454f496b23b770cebf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604735"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049950"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Crear paquetes de solución SharePoint
   Con el Diseñador de paquetes, puede crear y personalizar paquetes de implementación. Por ejemplo, puede agregar elementos y características de proyecto de SharePoint, restablecer el servidor IIS, establecer los ámbitos de activación de las características e identificar las dependencias de las características. El diseñador también genera un manifiesto, un archivo XML en el que se describe cada paquete.
@@ -35,7 +35,7 @@ ms.locfileid: "56604735"
 
 |Propiedad del Diseñador de paquetes|Descripción del valor predeterminado|
 |-------------------------------|------------------------------------|
-|nombre|Obligatorio. El nombre predeterminado del paquete se establece en *ProjectName*.|
+|Name|Obligatorio. El nombre predeterminado del paquete se establece en *ProjectName*.|
 |Restablecer WebServer|Opcional. Seleccione si desea reiniciar el servidor Web después de la *.wsp* archivo está instalado en el servidor de SharePoint.|
 |Tipo de servidor de implementación|Obligatorio. De forma predeterminada, el ámbito se establece en ApplicationServer.<br /><br /> ApplicationServer: Describe un servidor que hospeda servicios.<br /><br /> WebFrontEnd: Describe un servidor que hospeda sitios web.|
 |Elementos de la solución|Todos los elementos y las características de proyecto de SharePoint que se pueden agregar al paquete.|
@@ -56,17 +56,17 @@ ms.locfileid: "56604735"
 ## <a name="packaging-architecture"></a>Arquitectura de empaquetado
  Los pasos siguientes se producen cuando se crea un paquete de SharePoint (*.wsp*) en Visual Studio.
 
-1.  Los paquetes y las características se validan para asegurarse de que la estructura física y semántica del paquete es correcta.
+1. Los paquetes y las características se validan para asegurarse de que la estructura física y semántica del paquete es correcta.
 
-2.  Se enumeran las características, los elementos del proyecto y los archivos empaquetados del paquete. Los archivos de manifiesto para los paquetes y las características se transforman para incluir toda la información necesaria para la implementación y la activación. Los tokens se reemplazan con el valor completo.
+2. Se enumeran las características, los elementos del proyecto y los archivos empaquetados del paquete. Los archivos de manifiesto para los paquetes y las características se transforman para incluir toda la información necesaria para la implementación y la activación. Los tokens se reemplazan con el valor completo.
 
-3.  Se lleva a cabo el destino BeforeLayout MSBuild. Puede crear este paso para realizar modificaciones personalizadas en el paquete antes de la *.wsp* se crea el archivo.
+3. Se lleva a cabo el destino BeforeLayout MSBuild. Puede crear este paso para realizar modificaciones personalizadas en el paquete antes de la *.wsp* se crea el archivo.
 
-4.  Los archivos enumerados se copian en un directorio intermedio.
+4. Los archivos enumerados se copian en un directorio intermedio.
 
-5.  Se lleva a cabo el destino AfterLayout MSBuild personalizable. Puede crear este paso para realizar modificaciones personalizadas en el paquete antes de la *.wsp* se crea el archivo.
+5. Se lleva a cabo el destino AfterLayout MSBuild personalizable. Puede crear este paso para realizar modificaciones personalizadas en el paquete antes de la *.wsp* se crea el archivo.
 
-6.  Los archivos del directorio intermedio se agregan a la *.wsp* archivo.
+6. Los archivos del directorio intermedio se agregan a la *.wsp* archivo.
 
 ## <a name="package-folder-structure"></a>Estructura de carpetas de los paquetes
  Al empaquetar el proyecto de SharePoint, un *.wsp* archivo se crea automáticamente en el *SolutionFolder\bin\\\<BuildConfiguration >* carpeta. Por ejemplo, si la solución está en *C:\Visual Studio 2013\proyectos\listdefinition1* y la configuración de compilación se establece en la versión, la *.wsp* archivo se encuentra en *C:\Visual Studio 2013\ Projects\ListDefinition1\bin\Release*.

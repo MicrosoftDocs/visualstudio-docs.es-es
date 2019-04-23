@@ -1,5 +1,5 @@
 ---
-title: Filtrar Incluir un ensamblado personalizado en una característica de BDC | Documentos de Microsoft
+title: Procedimiento Incluir un ensamblado personalizado en una característica de BDC | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,32 +17,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efbbef540ddd7759fe0614eecccc663368bd23b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8162e44d92399a4b2031f6dc30b1f9dc56ae22e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059628"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Procedimiento Incluir un ensamblado personalizado en una característica de BDC
   El proyecto puede hacer referencia a ensamblados desde otros proyectos en la misma solución. Sin embargo, debe agregar estos ensamblados al archivo de características del proyecto mediante el **asignar al que hace referencia a LobSystems ensamblados** cuadro de diálogo.
 
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Para incluir un ensamblado personalizado en una característica de conectividad (BDC) de datos de negocio
 
-1.  En **el Explorador de soluciones**, elija la carpeta que contiene el modelo BDC.
+1. En **el Explorador de soluciones**, elija la carpeta que contiene el modelo BDC.
 
-2.  En el menú **Ver** , haga clic en la **Ventana Propiedades**.
+2. En el menú **Ver** , haga clic en la **Ventana Propiedades**.
 
-3.  En el **propiedades** ventana, elija el **ensamblados** propiedad y, a continuación, en el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Elipse del diseñador")).
+3. En el **propiedades** ventana, elija el **ensamblados** propiedad y, a continuación, en el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Elipse del diseñador")).
 
      El **asignar al que hace referencia a LobSystems ensamblados** aparece el cuadro de diálogo.
 
-4.  En el **seleccione un ensamblado** lista, elija el ensamblado personalizado.
+4. En el **seleccione un ensamblado** lista, elija el ensamblado personalizado.
 
     > [!NOTE]
     >  Los ensamblados que solo aparecen en la **asignar al que hace referencia a LobSystems ensamblados** cuadro de diálogo si se ha agregado una referencia al proyecto que contiene el ensamblado. Para obtener más información, vea [Cómo: Agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
-5.  En el **propiedades de la referencia** agrupar, abra la lista que aparece para la **ámbito de LobSystem** propiedad, elija el sistema LOB de los métodos que utilizan el ensamblado personalizado y, a continuación, elijan el **Aceptar**  botón.
+5. En el **propiedades de la referencia** agrupar, abra la lista que aparece para la **ámbito de LobSystem** propiedad, elija el sistema LOB de los métodos que utilizan el ensamblado personalizado y, a continuación, elijan el **Aceptar**  botón.
 
     > [!NOTE]
     >  Para depurar código en el ensamblado personalizado, debe agregar el ensamblado al paquete de solución. Para obtener más información, vea [Cómo: Agregar y quitar ensamblados adicionales](../sharepoint/how-to-add-and-remove-additional-assemblies.md).

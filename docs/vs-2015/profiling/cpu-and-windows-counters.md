@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046257"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ El generador de perfiles de Visual Studio le permite recopilar datos de rendimie
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -96,7 +96,7 @@ El generador de perfiles de Visual Studio le permite recopilar datos de rendimie
   
       **Nota** Haga clic en **Cancelar** para volver a la configuración de muestreo anterior.  
   
-     o bien  
+     -o bien-  
   
    - Seleccione **Contadores de CPU** y, a continuación, seleccione **Recopilar contadores de CPU**. Los contadores de CPU se enumeran en **Contadores disponibles**.  
   
@@ -104,13 +104,13 @@ El generador de perfiles de Visual Studio le permite recopilar datos de rendimie
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Para ver una lista de los contadores de Windows que se admiten en la plataforma actual  
   
-1.  En el Explorador de rendimiento, haga clic con el botón derecho en la sesión de rendimiento y, después, haga clic en **Propiedades**.  
+1. En el Explorador de rendimiento, haga clic con el botón derecho en la sesión de rendimiento y, después, haga clic en **Propiedades**.  
   
-2.  Haga clic en **Contadores de Windows**.  
+2. Haga clic en **Contadores de Windows**.  
   
-3.  Seleccione **Recopilar contadores de Windows**.  
+3. Seleccione **Recopilar contadores de Windows**.  
   
-4.  En la lista **Categoría de contador**, seleccione un grupo de contadores. El contador de Windows para el grupo se muestra en el cuadro de lista.  
+4. En la lista **Categoría de contador**, seleccione un grupo de contadores. El contador de Windows para el grupo se muestra en el cuadro de lista.  
   
      **Nota:** Haga clic en **Cancelar** para volver a la configuración de colección de contadores anterior.  
   
@@ -119,9 +119,9 @@ El generador de perfiles de Visual Studio le permite recopilar datos de rendimie
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Para enumerar los contadores de CPU que se admiten en la plataforma actual  
   
-1.  Abra una ventana de símbolo del sistema.  
+1. Abra una ventana de símbolo del sistema.  
   
-2.  Tipo  
+2. Tipo  
   
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   
@@ -133,4 +133,4 @@ El generador de perfiles de Visual Studio le permite recopilar datos de rendimie
  [Temas de introducción](../profiling/overviews-performance-tools.md)   
  [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)   
  [Cómo: Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)   
- [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)
+ [Cómo: Recopilación de datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)

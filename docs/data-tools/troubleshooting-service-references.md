@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: f0d1a9e24c965af9513b3c2645bcee35f916f436
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048598"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referencias de servicio
 
@@ -29,13 +29,13 @@ En este tema se enumera los problemas comunes que pueden producirse cuando se tr
 
 ## <a name="error-returning-data-from-a-service"></a>Error al devolver datos de un servicio
 
-Cuando vuelva un `DataSet` o `DataTable` desde un servicio, puede recibir una excepción "se superó la cuota de tamaño máximo para los mensajes entrantes". De forma predeterminada, el `MaxReceivedMessageSize` algunos enlaces de propiedad se establece en un valor relativamente pequeño para limitar la exposición a ataques por denegación de servicio. Puede aumentar este valor para evitar la excepción. Para obtener más información, vea <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
+Cuando vuelva un `DataSet` o `DataTable` desde un servicio, puede recibir una excepción "se superó la cuota de tamaño máximo para los mensajes entrantes". De forma predeterminada, el `MaxReceivedMessageSize` algunos enlaces de propiedad se establece en un valor relativamente pequeño para limitar la exposición a ataques por denegación de servicio. Puede aumentar este valor para evitar la excepción. Para obtener más información, consulta <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
 
 Para corregir este error:
 
-1.  En **el Explorador de soluciones**, haga doble clic en el *app.config* archivo para abrirlo.
+1. En **el Explorador de soluciones**, haga doble clic en el *app.config* archivo para abrirlo.
 
-2.  Busque el `MaxReceivedMessageSize` propiedad y cámbielo a un valor mayor.
+2. Busque el `MaxReceivedMessageSize` propiedad y cámbielo a un valor mayor.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>No se puede encontrar un servicio en mi solución
 
@@ -43,17 +43,17 @@ Al hacer clic en el **Discover** situado en la **agregar referencias de servicio
 
 Para corregir este error:
 
--   En **el Explorador de soluciones**, haga clic en el proyecto de biblioteca de servicios WCF y haga clic en **compilar**.
+- En **el Explorador de soluciones**, haga clic en el proyecto de biblioteca de servicios WCF y haga clic en **compilar**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Error al acceder a un servicio a través de un escritorio remoto
 
-Cuando un usuario accede a un servicio WCF hospedado en Web a través de una conexión a escritorio remota y el usuario no tiene permisos administrativos, se usa la autenticación NTLM. Si el usuario no tiene permisos administrativos, el usuario puede recibir el siguiente mensaje de error: "la solicitud HTTP no está autorizada con el esquema de autenticación de cliente 'Anónimo'. El encabezado de autenticación recibido del servidor era 'NTLM'."
+Cuando un usuario accede a un servicio WCF hospedado en Web a través de una conexión a escritorio remota y el usuario no tiene permisos administrativos, se usa la autenticación NTLM. Si el usuario no tiene permisos administrativos, el usuario puede recibir el mensaje de error siguiente: "La solicitud HTTP no está autorizada con el esquema de autenticación de cliente 'Anónimo'. El encabezado de autenticación recibido del servidor era 'NTLM'."
 
 Para corregir este error:
 
-1.  En el proyecto de sitio Web, abra el **propiedades** páginas.
+1. En el proyecto de sitio Web, abra el **propiedades** páginas.
 
-2.  En el **opciones de inicio** ficha, desactive la **la autenticación NTLM** casilla de verificación.
+2. En el **opciones de inicio** ficha, desactive la **la autenticación NTLM** casilla de verificación.
 
     > [!NOTE]
     > Debe desactivar la autenticación NTLM sólo para los sitios Web que contienen servicios WCF exclusivamente. Seguridad de los servicios WCF se administra a través de la configuración en el *web.config* archivo. Esto hace que la autenticación NTLM innecesaria.
@@ -74,19 +74,19 @@ Si el proyecto de servicio se quita de la solución, se invalida esta dependenci
 
 Para corregir este error, tendrá que volver a crear el proyecto de servicio:
 
-1.  En el menú **Herramientas** , haga clic en **Opciones**.
+1. En el menú **Herramientas** , haga clic en **Opciones**.
 
-2.  En el **opciones** cuadro de diálogo, expanda **proyectos y soluciones**y, a continuación, seleccione **General**.
+2. En el **opciones** cuadro de diálogo, expanda **proyectos y soluciones**y, a continuación, seleccione **General**.
 
-3.  Asegúrese de que el **avanzada de mostrar configuraciones de compilación** casilla de verificación está seleccionada y, a continuación, haga clic en **Aceptar**.
+3. Asegúrese de que el **avanzada de mostrar configuraciones de compilación** casilla de verificación está seleccionada y, a continuación, haga clic en **Aceptar**.
 
-4.  Cargue el proyecto de servicio WCF.
+4. Cargue el proyecto de servicio WCF.
 
-5.  En el **Configuration Manager** cuadro de diálogo, establezca el **configuración de soluciones activas** a **depurar**. Para obtener más información, consulte [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).
+5. En el **Configuration Manager** cuadro de diálogo, establezca el **configuración de soluciones activas** a **depurar**. Para obtener más información, vea [Cómo: crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).
 
-6.  En **el Explorador de soluciones**, seleccione el proyecto de servicio WCF.
+6. En **el Explorador de soluciones**, seleccione el proyecto de servicio WCF.
 
-7.  En el **compilar** menú, haga clic en **recompilar** para recompilar el proyecto de servicio WCF.
+7. En el **compilar** menú, haga clic en **recompilar** para recompilar el proyecto de servicio WCF.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services no se muestran en el explorador
 
@@ -94,13 +94,13 @@ Cuando intenta ver una representación XML de los datos en un [!INCLUDE[ss_data_
 
 Para corregir este error, deshabilite las fuentes RSS:
 
-1.  En Internet Explorer, en el menú **Herramientas**, haga clic en **Opciones de Internet**.
+1. En Internet Explorer, en el menú **Herramientas**, haga clic en **Opciones de Internet**.
 
-2.  En el **contenido** ficha la **fuentes** sección, haga clic en **configuración**.
+2. En el **contenido** ficha la **fuentes** sección, haga clic en **configuración**.
 
-3.  En el **configuración de fuente** cuadro de diálogo, desactive la **activar la vista de lectura de fuentes** casilla de verificación y, a continuación, haga clic en **Aceptar**.
+3. En el **configuración de fuente** cuadro de diálogo, desactive la **activar la vista de lectura de fuentes** casilla de verificación y, a continuación, haga clic en **Aceptar**.
 
-4.  Elija **Aceptar** para cerrar el cuadro de diálogo **Opciones de Internet**.
+4. Elija **Aceptar** para cerrar el cuadro de diálogo **Opciones de Internet**.
 
 ## <a name="see-also"></a>Vea también
 

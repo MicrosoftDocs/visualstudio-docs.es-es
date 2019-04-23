@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77795c93679bddb21a56b8c7a64a11ceb6aa1e6c
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2c619301d15654ec71c3867bb97622488aac329e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58988060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050691"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Tutorial: Descargar ensamblados satélite a petición con la API de implementación de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,24 +46,24 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Para descargar ensamblados satélite a petición  
   
-1.  Agregue el siguiente código a la aplicación para habilitar la descarga a petición de ensamblados satélite.  
+1. Agregue el siguiente código a la aplicación para habilitar la descarga a petición de ensamblados satélite.  
   
      [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/CS/Program.cs#1)]
      [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/VB/Form1.vb#1)]  
   
-2.  Genere los ensamblados satélite para la aplicación mediante [Resgen.exe (Resource File Generator)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Genere los ensamblados satélite para la aplicación mediante [Resgen.exe (Resource File Generator)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-3.  Genere un manifiesto de aplicación o abra el manifiesto de aplicación existente mediante MageUI.exe. Para obtener más información sobre esta herramienta, consulte [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+3. Genere un manifiesto de aplicación o abra el manifiesto de aplicación existente mediante MageUI.exe. Para obtener más información sobre esta herramienta, consulte [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
-4.  Haga clic en la ficha **Archivos** .  
+4. Haga clic en la ficha **Archivos** .  
   
-5.  Haga clic en el botón **puntos suspensivos** (**...**) y seleccione el directorio que contenga todos los ensamblados y archivos de la aplicación, incluidos los ensamblados satélite generados mediante Resgen.exe (el nombre de los ensamblados satélite tiene la siguiente forma: *isoCode*\ApplicationName.resources.dll, donde *isoCode* es un identificador de idioma en formato RFC 1766).  
+5. Haga clic en el botón **puntos suspensivos** (**...**) y seleccione el directorio que contenga todos los ensamblados y archivos de la aplicación, incluidos los ensamblados satélite generados mediante Resgen.exe (el nombre de los ensamblados satélite tiene la siguiente forma: *isoCode*\ApplicationName.resources.dll, donde *isoCode* es un identificador de idioma en formato RFC 1766).  
   
-6.  Haga clic en **Rellenar** para agregar los archivos a la implementación.  
+6. Haga clic en **Rellenar** para agregar los archivos a la implementación.  
   
-7.  Active la casilla **Opcional** de cada ensamblado satélite.  
+7. Active la casilla **Opcional** de cada ensamblado satélite.  
   
-8.  Establezca el campo de grupo de cada ensamblado satélite en su identificador de idioma ISO. Por ejemplo, para un ensamblado satélite japonés, debe especificar el nombre de grupo de descarga `ja-JP`. De este modo, se habilitará el código agregado en el paso 1 para descargar el ensamblado satélite adecuado, en función del valor de la propiedad <xref:System.Threading.Thread.CurrentUICulture%2A> del usuario.  
+8. Establezca el campo de grupo de cada ensamblado satélite en su identificador de idioma ISO. Por ejemplo, para un ensamblado satélite japonés, debe especificar el nombre de grupo de descarga `ja-JP`. De este modo, se habilitará el código agregado en el paso 1 para descargar el ensamblado satélite adecuado, en función del valor de la propiedad <xref:System.Threading.Thread.CurrentUICulture%2A> del usuario.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
  En un entorno de producción, probablemente tenga que quitar la línea en el ejemplo de código que establece <xref:System.Threading.Thread.CurrentUICulture%2A> en un valor específico porque los equipos cliente tendrán establecido el valor correcto de forma predeterminada. Cuando la aplicación se ejecute en un equipo cliente japonés, por ejemplo, <xref:System.Threading.Thread.CurrentUICulture%2A> será `ja-JP` de forma predeterminada. Establecer este valor mediante programación es una buena manera de probar los ensamblados satélite antes de implementar la aplicación.  

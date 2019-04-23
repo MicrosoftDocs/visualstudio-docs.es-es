@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a1a610601ff404ef9aff352e815f930b5ea5cd6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651506"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043979"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procedimiento Agregar nodos al área de trabajo desde el Explorador de esquemas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,35 +26,35 @@ En este tema se explica cómo agregar nodos a la [área de trabajo del Diseñado
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Para agregar nodos mediante el menú contextual del Explorador de esquemas XML  
   
-1.  Siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1. Siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Haga clic con el botón secundario del mouse en el nodo `PurchaseOrderType` en el Explorador XSD. Seleccione **mostrar en vista de gráfico**.  
+2. Haga clic con el botón secundario del mouse en el nodo `PurchaseOrderType` en el Explorador XSD. Seleccione **mostrar en vista de gráfico**.  
   
      El nodo `purchaseOrderType` aparece en la superficie de diseño de la vista Gráfico.  
   
 ### <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Para arrastrar y colocar un nodo en una vista  
   
-1.  Haga clic con el botón secundario del mouse en el nodo `PurchaseOrderType` de la vista Gráfico. Seleccione **mostrar en Explorador de esquemas XML**.  
+1. Haga clic con el botón secundario del mouse en el nodo `PurchaseOrderType` de la vista Gráfico. Seleccione **mostrar en Explorador de esquemas XML**.  
   
      El nodo se resalta en el Explorador de esquemas XML.  
   
-2.  Haga clic con el botón derecho en el `PurchaseOrderType` nodo en el Explorador de esquemas XML y seleccione **mostrar todas las referencias**.  
+2. Haga clic con el botón derecho en el `PurchaseOrderType` nodo en el Explorador de esquemas XML y seleccione **mostrar todas las referencias**.  
   
      Se resalta el nodo `purchaseOrder`.  
   
-3.  Arrastre el nodo `purchaseOrder` hasta la vista Gráfico.  
+3. Arrastre el nodo `purchaseOrder` hasta la vista Gráfico.  
   
      Los nodos `purchaseOrder` y `PurchaseOrderType` aparecen uno al lado del otro en la superficie de diseño de la vista Gráfico. Dado que los dos nodos están relacionados (el elemento `purchaseOrder` es del tipo `PurchaseOrderType`), se dibuja una flecha entre ellos.  
   
 ### <a name="to-add-nodes-using-the-schema-explorer-search-capability"></a>Para agregar nodos usando la capacidad de búsqueda del Explorador de esquemas  
   
-1.  Escriba "purchaseOrder" en el cuadro de texto de búsqueda de la [explorador XML](../xml-tools/xml-schema-explorer.md) barra de herramientas y haga clic en el botón de búsqueda.  
+1. Escriba "purchaseOrder" en el cuadro de texto de búsqueda de la [explorador XML](../xml-tools/xml-schema-explorer.md) barra de herramientas y haga clic en el botón de búsqueda.  
   
      ![Búsqueda de palabra clave de explorador de esquemas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
   
      Los resultados de la búsqueda se resaltan en el Explorador de esquemas XML y se marcan en la barra de desplazamiento vertical.  
   
-2.  Agregar los resultados de búsqueda al área de trabajo, haga clic en el **agregar nodos resaltados al área de trabajo** botón en el panel de resultados de resumen.  
+2. Agregar los resultados de búsqueda al área de trabajo, haga clic en el **agregar nodos resaltados al área de trabajo** botón en el panel de resultados de resumen.  
   
      ![Resultado de búsqueda de explorador de esquema XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
   

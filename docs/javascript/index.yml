@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 87d3f5c0899d13e6c8a01554c61ae7fc8eea659d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789294"
 documentType: LandingData
 title: Visual Studio | JavaScript y TypeScript
 metadata:
@@ -18,79 +12,79 @@ metadata:
   ms.date: 01/15/2019
   ms.author: mikejo
   dev_langs:
-  - JavaScript
-  - TypeScript
+    - JavaScript
+    - TypeScript
 sections:
-- title: Introducción a Visual Studio
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+  - title: Introducción a Visual Studio
     items:
-    - href: ../install/install-visual-studio.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Instalar Visual Studio
-    - href: ../javascript/quickstart-ide-orientation-js.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
-      title: Un paseo por el IDE de Visual Studio
-- title: Tutoriales
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ../install/install-visual-studio.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Instalar Visual Studio
+          - href: ../javascript/quickstart-ide-orientation-js.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
+            title: Un paseo por el IDE de Visual Studio
+  - title: Tutoriales
     items:
-    - href: tutorial-nodejs.md
-      html: <p>Crear una aplicación web con Node.js y Express</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_nodejs.svg
-    - href: tutorial-nodejs-with-react-and-jsx.md
-      html: <p>Crear una aplicación web con Node.js y React</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_React.svg
-    - href: quickstart-vuejs-with-nodejs.md
-      html: <p>Crear una aplicación web con Node.js y Vue.js</p>
-      image:
-        src: ../javascript/media/logo-vuejs.png
-    - href: publish-nodejs-app-azure.md
-      html: <p>Publicar una aplicación de Node.js en App Service de Linux</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_linux-color.svg
-- title: Desarrollar aplicaciones
-  items:
-  - type: paragraph
-    text: Aprenda a usar Visual Studio en sus tareas de desarrollo.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: tutorial-nodejs.md
+            html: <p>Crear una aplicación web con Node.js y Express</p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_nodejs.svg'
+          - href: tutorial-nodejs-with-react-and-jsx.md
+            html: <p>Crear una aplicación web con Node.js y React</p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_React.svg'
+          - href: quickstart-vuejs-with-nodejs.md
+            html: <p>Crear una aplicación web con Node.js y Vue.js</p>
+            image:
+              src: ../javascript/media/logo-vuejs.png
+          - href: publish-nodejs-app-azure.md
+            html: <p>Publicar una aplicación de Node.js en App Service de Linux</p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_linux-color.svg'
+  - title: Desarrollar aplicaciones
     items:
-    - href: write-and-edit-code.md
-      html: <p>Escribir y editar código</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-    - href: nodejs-interactive-repl.md
-      html: <p>Uso de REPL interactivo de Node.js</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_cligeneric.svg
-    - href: npm-package-management.md
-      html: <p>Administrar paquetes de npm</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_npm.svg
-    - href: debug-nodejs.md
-      html: <p>Depurar el código</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_debug.svg
-    - href: develop-javascript-code-without-solutions-projects.md
-      html: <p>Desarrollo de código sin proyectos o soluciones</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-    - href: unit-testing-javascript-with-visual-studio.md
-      html: <p>Escribir y ejecutar pruebas unitarias</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_unit-testing.svg
+      - type: paragraph
+        text: Aprenda a usar Visual Studio en sus tareas de desarrollo.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: write-and-edit-code.md
+            html: <p>Escribir y editar código</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+          - href: nodejs-interactive-repl.md
+            html: <p>Uso de REPL interactivo de Node.js</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
+          - href: npm-package-management.md
+            html: <p>Administrar paquetes de npm</p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_npm.svg'
+          - href: debug-nodejs.md
+            html: <p>Depurar el código</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
+          - href: develop-javascript-code-without-solutions-projects.md
+            html: <p>Desarrollo de código sin proyectos o soluciones</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+          - href: unit-testing-javascript-with-visual-studio.md
+            html: <p>Escribir y ejecutar pruebas unitarias</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_unit-testing.svg'

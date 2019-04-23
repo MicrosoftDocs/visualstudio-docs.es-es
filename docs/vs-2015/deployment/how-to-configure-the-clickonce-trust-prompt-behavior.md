@@ -1,5 +1,5 @@
 ---
-title: Filtrar Configurar el comportamiento mensaje de confianza de ClickOnce | Documentos de Microsoft
+title: Procedimiento Configurar el comportamiento mensaje de confianza de ClickOnce | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,14 +19,14 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "59002180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047052"
 ---
-# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Filtrar Configurar el comportamiento del mensaje relativo a la confianza de ClickOnce
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procedimiento Configurar el comportamiento del mensaje relativo a la confianza de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede configurar el aviso de confianza de ClickOnce para controlar si los usuarios finales tienen la opción de instalar las aplicaciones ClickOnce, por ejemplo, las aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation, las aplicaciones de consola, WPF en explorador las aplicaciones y soluciones de Office. Configure el aviso de confianza mediante el establecimiento de las claves del registro en cada equipo de usuario final.  
@@ -56,19 +56,19 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para habilitar el aviso de confianza de ClickOnce mediante el editor del registro  
   
-1.  Abra el Editor del Registro:  
+1. Abra el Editor del Registro:  
   
-    1.  Haga clic en **Inicio** y después en **Ejecutar**.  
+    1. Haga clic en **Inicio** y después en **Ejecutar**.  
   
-    2.  En el **abierto** , escriba `regedit` (o `regedit32` en Windows de 32 bits) y, a continuación, haga clic en **Aceptar**.  
+    2. En el **abierto** , escriba `regedit` (o `regedit32` en Windows de 32 bits) y, a continuación, haga clic en **Aceptar**.  
   
-2.  Busque la siguiente clave del registro:  
+2. Busque la siguiente clave del registro:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Si la clave no existe, créelo.  
   
-3.  Agregue las siguientes subclaves como **valor de cadena**, si no existe ya, con los valores asociados que se muestra en la tabla siguiente.  
+3. Agregue las siguientes subclaves como **valor de cadena**, si no existe ya, con los valores asociados que se muestra en la tabla siguiente.  
   
     |Subclave de valor de cadena|Valor|  
     |-------------------------|-----------|  
@@ -82,9 +82,9 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Para habilitar el aviso de confianza de ClickOnce mediante programación  
   
-1.  Crear una aplicación de consola de Visual Basic o Visual C# en Visual Studio.  
+1. Crear una aplicación de consola de Visual Basic o Visual C# en Visual Studio.  
   
-2.  Abra el archivo Program.cs o de Program.vb para su edición y agregue el código siguiente.  
+2. Abra el archivo Program.cs o de Program.vb para su edición y agregue el código siguiente.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -108,26 +108,26 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
     key.Close();  
     ```  
   
-3.  Compile y ejecute la aplicación.  
+3. Compile y ejecute la aplicación.  
   
 ## <a name="restricting-the-clickonce-trust-prompt"></a>Restringir el aviso de confianza de ClickOnce  
  Restringir el aviso de confianza para que las soluciones deben estar firmadas con certificados de Authenticode que dispongan de una identidad conocida antes de que los usuarios se le solicitará una decisión de confianza.  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para restringir el aviso de confianza de ClickOnce mediante el editor del registro  
   
-1.  Abra el Editor del Registro:  
+1. Abra el Editor del Registro:  
   
-    1.  Haga clic en **Inicio** y después en **Ejecutar**.  
+    1. Haga clic en **Inicio** y después en **Ejecutar**.  
   
-    2.  En el **abierto** , escriba `regedit` (o `regedit32` en Windows de 32 bits) y, a continuación, haga clic en **Aceptar**.  
+    2. En el **abierto** , escriba `regedit` (o `regedit32` en Windows de 32 bits) y, a continuación, haga clic en **Aceptar**.  
   
-2.  Busque la siguiente clave del registro:  
+2. Busque la siguiente clave del registro:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Si la clave no existe, créelo.  
   
-3.  Agregue las siguientes subclaves como **valor de cadena**, si no existe ya, con los valores asociados que se muestra en la tabla siguiente.  
+3. Agregue las siguientes subclaves como **valor de cadena**, si no existe ya, con los valores asociados que se muestra en la tabla siguiente.  
   
     |Subclave de valor de cadena|Valor|  
     |-------------------------|-----------|  
@@ -139,9 +139,9 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Para restringir el aviso de confianza de ClickOnce mediante programación  
   
-1.  Crear una aplicación de consola de Visual Basic o Visual C# en Visual Studio.  
+1. Crear una aplicación de consola de Visual Basic o Visual C# en Visual Studio.  
   
-2.  Abra el archivo Program.cs o de Program.vb para su edición y agregue el código siguiente.  
+2. Abra el archivo Program.cs o de Program.vb para su edición y agregue el código siguiente.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -165,26 +165,26 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
     key.Close();  
     ```  
   
-3.  Compile y ejecute la aplicación.  
+3. Compile y ejecute la aplicación.  
   
 ## <a name="disabling-the-clickonce-trust-prompt"></a>Deshabilitar el aviso de confianza de ClickOnce  
  Puede deshabilitar el aviso de confianza para que los usuarios finales no tienen la opción para instalar las soluciones que no son de confianza ya en su directiva de seguridad.  
   
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para deshabilitar el aviso de confianza de ClickOnce mediante el editor del registro  
   
-1.  Abra el Editor del Registro:  
+1. Abra el Editor del Registro:  
   
-    1.  Haga clic en **Inicio** y después en **Ejecutar**.  
+    1. Haga clic en **Inicio** y después en **Ejecutar**.  
   
-    2.  En el **abierto** , escriba `regedit` (o `regedit32` en Windows de 32 bits) y, a continuación, haga clic en **Aceptar**.  
+    2. En el **abierto** , escriba `regedit` (o `regedit32` en Windows de 32 bits) y, a continuación, haga clic en **Aceptar**.  
   
-2.  Busque la siguiente clave del registro:  
+2. Busque la siguiente clave del registro:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Si la clave no existe, créelo.  
   
-3.  Agregue las siguientes subclaves como **valor de cadena**, si no existe ya, con los valores asociados que se muestra en la tabla siguiente.  
+3. Agregue las siguientes subclaves como **valor de cadena**, si no existe ya, con los valores asociados que se muestra en la tabla siguiente.  
   
     |Subclave de valor de cadena|Valor|  
     |-------------------------|-----------|  
@@ -196,9 +196,9 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Para deshabilitar el aviso de confianza de ClickOnce mediante programación  
   
-1.  Crear una aplicación de consola de Visual Basic o Visual C# en Visual Studio.  
+1. Crear una aplicación de consola de Visual Basic o Visual C# en Visual Studio.  
   
-2.  Abra el archivo Program.cs o de Program.vb para su edición y agregue el código siguiente.  
+2. Abra el archivo Program.cs o de Program.vb para su edición y agregue el código siguiente.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -223,7 +223,7 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
   
     ```  
   
-3.  Compile y ejecute la aplicación.  
+3. Compile y ejecute la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
