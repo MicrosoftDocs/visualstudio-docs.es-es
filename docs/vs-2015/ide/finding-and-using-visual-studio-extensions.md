@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867766"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051913"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Buscar y usar extensiones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ Las extensiones de Visual Studio son paquetes de códigos que se ejecutan dentro
 
  Si desea deshabilitar las actualizaciones automáticas, puede deshabilitar la característica para todas las extensiones o solo para extensiones específicas.
 
--   Para deshabilitar las actualizaciones automáticas para todas las extensiones, haga clic en el vínculo **Cambiar la configuración de extensiones y actualizaciones** en el cuadro de diálogo **Extensiones y actualizaciones** y desactive la opción **Actualizar las extensiones automáticamente**.
+- Para deshabilitar las actualizaciones automáticas para todas las extensiones, haga clic en el vínculo **Cambiar la configuración de extensiones y actualizaciones** en el cuadro de diálogo **Extensiones y actualizaciones** y desactive la opción **Actualizar las extensiones automáticamente**.
 
--   Para deshabilitar las actualizaciones automáticas de una extensión específica, desactive la opción **Actualizar esta extensión automáticamente** en el panel de detalles de la extensión situado en el lado derecho del cuadro de diálogo **Extensiones y actualizaciones** .
+- Para deshabilitar las actualizaciones automáticas de una extensión específica, desactive la opción **Actualizar esta extensión automáticamente** en el panel de detalles de la extensión situado en el lado derecho del cuadro de diálogo **Extensiones y actualizaciones** .
 
 > [!NOTE]
 >  A partir de Visual Studio 2015 Update 2, puede especificar (en **Herramientas / Opciones / Entorno / Extensiones y actualizaciones**) si quiere actualizaciones automáticas para las extensiones por usuario, todas las extensiones de usuario o ambas (la configuración predeterminada).

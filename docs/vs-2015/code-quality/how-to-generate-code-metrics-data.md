@@ -1,5 +1,5 @@
 ---
-title: Filtrar Generar datos de métricas de código | Documentos de Microsoft
+title: Procedimiento Generar datos de métricas de código | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,14 +13,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ec6063f859333b54adaabea0c68af9fd884845b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989395"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045634"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Filtrar Generar datos de las métricas de código
+# <a name="how-to-generate-code-metrics-data"></a>Procedimiento Generar datos de las métricas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede decidir generar los resultados de las métricas de código para una solución completa o un proyecto seleccionado.  
@@ -31,15 +31,15 @@ Puede decidir generar los resultados de las métricas de código para una soluci
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>Para generar los resultados de las métricas de código para una solución completa  
   
--   Haga clic en **menú analizar**y, a continuación, haga clic en **CalculateCode métricas para la solución**.  
+- Haga clic en **menú analizar**y, a continuación, haga clic en **CalculateCode métricas para la solución**.  
   
      \- o -  
   
--   En **el Explorador de soluciones**, haga clic en la solución y, a continuación, haga clic en **CalculateCode métricas**.  
+- En **el Explorador de soluciones**, haga clic en la solución y, a continuación, haga clic en **CalculateCode métricas**.  
   
      \- o -  
   
--   En el **resultados de métrica del código** ventana, haga clic en el **CalculateCode métricas para la solución** botón.  
+- En el **resultados de métrica del código** ventana, haga clic en el **CalculateCode métricas para la solución** botón.  
   
      Los resultados se generan y **resultados de métrica del código** se muestra la ventana.  
   
@@ -57,7 +57,7 @@ Puede decidir generar los resultados de las métricas de código para una soluci
   
 ### <a name="to-view-the-results-details"></a>Para ver los detalles de resultados  
   
--   Expanda el árbol en el **jerarquía** columna.  
+- Expanda el árbol en el **jerarquía** columna.  
   
 ## <a name="see-also"></a>Vea también  
  [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce | Documentos de Microsoft
+title: Procedimiento Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22128d20bf83a8c6f2295b79653eabb3439c4b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 345e58b2c2a783bc9ffda8b915bf8baa66ad375a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998728"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046973"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Filtrar Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce
+# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Procedimiento Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Normalmente, una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] se inicia automáticamente después de que se instale desde un servidor web. Por motivos de seguridad, puede deshabilitar este comportamiento e indicar a los usuarios que, en su lugar, inicien la aplicación desde el menú **Inicio**. En el procedimiento siguiente, se describe cómo deshabilitar la activación de URL.  
@@ -37,13 +37,13 @@ Normalmente, una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.m
   
 #### <a name="to-disable-url-activation-for-your-application"></a>Deshabilitar la activación de direcciones URL para la aplicación  
   
-1.  Abra el manifiesto de implementación en MageUI.exe. Si aún no ha creado uno, siga los pasos descritos en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1. Abra el manifiesto de implementación en MageUI.exe. Si aún no ha creado uno, siga los pasos descritos en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-2.  Seleccione la pestaña **Opciones de implementación**.  
+2. Seleccione la pestaña **Opciones de implementación**.  
   
-3.  Desactive la casilla de verificación **Ejecutar automáticamente la aplicación después de instalarla**.  
+3. Desactive la casilla de verificación **Ejecutar automáticamente la aplicación después de instalarla**.  
   
-4.  Guarde y firme el manifiesto.  
+4. Guarde y firme el manifiesto.  
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)

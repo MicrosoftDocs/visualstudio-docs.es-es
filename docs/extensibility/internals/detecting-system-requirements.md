@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ced495580bd8ec16eec7e3f422e3ae1f1ccc3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050513"
 ---
 # <a name="detect-system-requirements"></a>Detectar los requisitos del sistema
 Un VSPackage no puede funcionar a menos que esté instalado Visual Studio. Cuando utiliza Microsoft Windows Installer para administrar la instalación del paquete de VS, puede configurar el instalador para detectar si está instalado Visual Studio. También puede configurar para comprobar el sistema para otros requisitos, por ejemplo, una versión concreta de Windows o una cantidad determinada de RAM.
@@ -24,11 +24,11 @@ Un VSPackage no puede funcionar a menos que esté instalado Visual Studio. Cuand
 ## <a name="detect-visual-studio-editions"></a>Detectar las ediciones de Visual Studio
  Para determinar si está instalada una edición de Visual Studio, compruebe que el valor de la **instalar** clave del registro es *(REG_DWORD) 1* en la carpeta adecuada, como se menciona en la tabla siguiente. Tenga en cuenta que hay una jerarquía de las ediciones de Visual Studio:
 
-1.  Empresa
+1. Empresa
 
-2.  Profesional
+2. Profesional
 
-3.  comunidad
+3. comunidad
 
 Cuando se instala una edición más reciente, las claves del registro para esa edición se agregan, así como para las ediciones anteriores. Es decir, si se instala la edición Enterprise, el **instalar** clave se establece en *1* para la empresa, así como para las ediciones Professional y Community. Por lo tanto, deberá comprobar solo la edición más reciente que necesita.
 

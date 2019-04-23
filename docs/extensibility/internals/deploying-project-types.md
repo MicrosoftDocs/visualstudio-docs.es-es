@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958628194e4ea768de5a47dc66476345bff6c4f3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e89f74d940182cd92fd15f726676f0979d21186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047233"
 ---
 # <a name="deploy-project-types"></a>Implementar tipos de proyecto
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] instala un nuevo agregador de tipo de proyecto (*ProjectAggregator2.dll*) y también un paquete de Windows Installer para la redistribución (*ProjectAggregator2.msi*). Debe usar el nuevo agregador para tipos de proyecto de código administrado. ProjectAggregator2 puede solventar las limitaciones en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyecto agregador que impide que los tipos de proyecto de código administrado funciona correctamente. Los pasos siguientes describen cómo cambiar el VSPackage para usar el nuevo agregador.
 
-1.  Quitar el proyecto NativeHierarchyWrapper de la solución.
+1. Quitar el proyecto NativeHierarchyWrapper de la solución.
 
-2.  Quite todos los archivos binarios de NativeHierarchyWrapper de su programa de instalación.
+2. Quite todos los archivos binarios de NativeHierarchyWrapper de su programa de instalación.
 
-3.  Agregar *ProjectAggregator2.msi* a su instalación.
+3. Agregar *ProjectAggregator2.msi* a su instalación.

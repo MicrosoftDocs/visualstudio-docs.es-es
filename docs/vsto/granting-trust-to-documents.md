@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52ff98f15afb95bda4d69770b84764db21171425
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: be8a17496788b0f4fe8abc9859b46cbfa11a6ed7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053018"
 ---
 # <a name="grant-trust-to-documents"></a>Conceder confianza a los documentos
   Un proyecto de nivel de documento tiene los mismos requisitos de seguridad que los proyectos de nivel de aplicación, esto es, firmar los manifiestos con un certificado o hacer clic en el aviso de confianza. Además, el documento o libro debe encontrarse en un directorio designado como ubicación de confianza.
@@ -35,13 +35,13 @@ ms.locfileid: "56599667"
 ## <a name="security-considerations-for-office-solutions"></a>Consideraciones de seguridad para soluciones de Office
  Hay varias cuestiones de seguridad que se deben tener en cuenta al considerar las carpetas que desea agregar a las ubicaciones de confianza:
 
--   Las carpetas locales se consideran más seguras y son de confianza de forma implícita. Las ubicaciones remotas, como recursos compartidos de archivos, deben designarse como ubicaciones de confianza.
+- Las carpetas locales se consideran más seguras y son de confianza de forma implícita. Las ubicaciones remotas, como recursos compartidos de archivos, deben designarse como ubicaciones de confianza.
 
--   Al agregar un directorio a las ubicaciones de confianza, se concede plena confianza no sólo a las soluciones de Office, sino también al código de VBA y ActiveX. Por este motivo, el directorio raíz y el *Mis documentos* carpetas no deben designarse como de confianza.
+- Al agregar un directorio a las ubicaciones de confianza, se concede plena confianza no sólo a las soluciones de Office, sino también al código de VBA y ActiveX. Por este motivo, el directorio raíz y el *Mis documentos* carpetas no deben designarse como de confianza.
 
--   Aunque al utilizar las ubicaciones de confianza, el propio documento es de confianza, se necesitan permisos adicionales para confiar en la personalización. Puede conceder plena confianza para la personalización mediante el uso de firmar los manifiestos con un certificado, haga clic en el símbolo del sistema de confianza o instalar la solución de Office para la *archivos de programa* directory.
+- Aunque al utilizar las ubicaciones de confianza, el propio documento es de confianza, se necesitan permisos adicionales para confiar en la personalización. Puede conceder plena confianza para la personalización mediante el uso de firmar los manifiestos con un certificado, haga clic en el símbolo del sistema de confianza o instalar la solución de Office para la *archivos de programa* directory.
 
--   Puede almacenar el documento o libro de una solución de nivel de documento en el mismo directorio que el ensamblado o en otro directorio. Por ejemplo, el documento podría estar ubicado en un servidor de SharePoint y el ensamblado en un recurso compartido de red. Para obtener más información, vea [Cómo: Publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- Puede almacenar el documento o libro de una solución de nivel de documento en el mismo directorio que el ensamblado o en otro directorio. Por ejemplo, el documento podría estar ubicado en un servidor de SharePoint y el ensamblado en un recurso compartido de red. Para obtener más información, vea [Cómo: Publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
 
 ## <a name="see-also"></a>Vea también
 - [Conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md)

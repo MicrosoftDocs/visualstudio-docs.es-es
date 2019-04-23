@@ -1,5 +1,5 @@
 ---
-title: Filtrar Configurar un equipo para desarrollar soluciones de Office
+title: Procedimiento Configurar un equipo para desarrollar soluciones de Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,25 +13,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ab7ffdf6e9323b3d4ee67b2bf237b271abb1a7d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b1f87b9548aceab58e1a8e1c6178a1dca759c312
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869352"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052850"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Procedimiento Configurar un equipo para desarrollar soluciones de Office
   Para configurar un equipo de desarrollo de modo que puede usar las herramientas de desarrollo de Microsoft Office en Visual Studio, siga las instrucciones de este tema. Debe tener privilegios administrativos en el equipo de desarrollo para seguir estos pasos.
 
 ### <a name="to-configure-the-development-computer"></a>Para configurar el equipo de desarrollo
 
-1.  Instala una versión de Visual Studio que incluye las herramientas para desarrolladores de Office. Office Developer Tools se instala de forma predeterminada. Si personaliza la instalación de Visual Studio y seleccionar las características que desea instalar, asegúrese de que **Microsoft Office Developer Tools** durante la instalación. Para obtener más información acerca de las versiones de Visual Studio que incluyen Office developer tools, consulte [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+1. Instala una versión de Visual Studio que incluye las herramientas para desarrolladores de Office. Office Developer Tools se instala de forma predeterminada. Si personaliza la instalación de Visual Studio y seleccionar las características que desea instalar, asegúrese de que **Microsoft Office Developer Tools** durante la instalación. Para obtener más información acerca de las versiones de Visual Studio que incluyen Office developer tools, consulte [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-2.  Instale una versión de Office que sea compatible con Office Developer Tools en Visual Studio. Para obtener más información, consulte [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+2. Instale una versión de Office que sea compatible con Office Developer Tools en Visual Studio. Para obtener más información, consulte [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
      Asegúrese de instalar también los PIA para la versión de Office que instale. De forma predeterminada, los PIA se instalan con Office. Si modifica la instalación de Office, asegúrese de que el **compatibilidad con programación de .NET** característica está seleccionada para las aplicaciones que desea establecer como destino.
 
-3.  Si tiene una versión en inglés de Visual Studio, pero usar configuración distinta del inglés para Windows, puede instalar el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] paquete de idioma para ver [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] mensajes en el mismo idioma que Windows. Las versiones de Visual Studio en otros idiomas instalan automáticamente el paquete de idioma. El paquete de idioma está disponible en el [centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkId=140386).
+3. Si tiene una versión en inglés de Visual Studio, pero usar configuración distinta del inglés para Windows, puede instalar el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] paquete de idioma para ver [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] mensajes en el mismo idioma que Windows. Las versiones de Visual Studio en otros idiomas instalan automáticamente el paquete de idioma. El paquete de idioma está disponible en el [centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkId=140386).
 
 ## <a name="see-also"></a>Vea también
 

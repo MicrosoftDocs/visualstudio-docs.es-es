@@ -1,5 +1,5 @@
 ---
-title: Filtrar Cambiar la máquina de reproducción de diagnóstico de gráficos | Documentos de Microsoft
+title: Procedimiento Cambiar la máquina de reproducción de diagnóstico de gráficos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f5f25bf9b0dc03afc7cb2ba334d85bd697b7dc5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8c846c6f17c1fde0ef57855f4a557625fba80ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994820"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045158"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Filtrar Cambio de la máquina de reproducción de Diagnóstico de gráficos
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Procedimiento Cambio de la máquina de reproducción de Diagnóstico de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede reproducir información de gráficos mediante el uso de la máquina local, o mediante el uso de un dispositivo o equipo remoto.  
@@ -26,27 +26,27 @@ Puede reproducir información de gráficos mediante el uso de la máquina local,
   
 #### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>Para utilizar el equipo local para reproducir información de gráficos  
   
-1.  En la ventana de documento de registro de gráficos, elija el **máquina de reproducción** vínculo. El **conexiones del depurador remoto** aparece el cuadro de diálogo.  
+1. En la ventana de documento de registro de gráficos, elija el **máquina de reproducción** vínculo. El **conexiones del depurador remoto** aparece el cuadro de diálogo.  
   
-2.  En **configuración Manual**, en el **dirección** propiedad, escriba `localhost`.  
+2. En **configuración Manual**, en el **dirección** propiedad, escriba `localhost`.  
   
-3.  Establecer el **modo de autenticación** propiedad **ninguno**.  
+3. Establecer el **modo de autenticación** propiedad **ninguno**.  
   
-4.  Elija el botón **Seleccionar**.  
+4. Elija el botón **Seleccionar**.  
   
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>Para utilizar un equipo remoto para reproducir información de gráficos  
   
-1.  En la ventana de documento de registro de gráficos, elija el **máquina de reproducción** vínculo. El **conexiones del depurador remoto** aparece el cuadro de diálogo.  
+1. En la ventana de documento de registro de gráficos, elija el **máquina de reproducción** vínculo. El **conexiones del depurador remoto** aparece el cuadro de diálogo.  
   
-2.  En **configuración Manual**, en el **dirección** propiedad, escriba el nombre de dominio de Windows o la dirección IP del equipo o dispositivo que desea utilizar para reproducir información de gráficos.  
+2. En **configuración Manual**, en el **dirección** propiedad, escriba el nombre de dominio de Windows o la dirección IP del equipo o dispositivo que desea utilizar para reproducir información de gráficos.  
   
-3.  Especifique el tipo de autorización que desea usar para proteger la conexión a la máquina de reproducción.  
+3. Especifique el tipo de autorización que desea usar para proteger la conexión a la máquina de reproducción.  
   
-    -   Para la autenticación de Windows, establezca el **modo de autenticación** propiedad **Windows**.  
+    - Para la autenticación de Windows, establezca el **modo de autenticación** propiedad **Windows**.  
   
-    -   Sin autenticación, establezca el **modo de autenticación** propiedad **ninguno**.  
+    - Sin autenticación, establezca el **modo de autenticación** propiedad **ninguno**.  
   
-4.  Elija el botón **Seleccionar**.  
+4. Elija el botón **Seleccionar**.  
   
 > [!NOTE]
 >  El **conexiones del depurador remoto** cuadro de diálogo también podría mostrar destinos de depuración remota que están conectados directamente a la máquina de desarrollo o están en la misma subred. Puede usar uno de estos destinos de depuración remota como máquina de reproducción de diagnóstico de gráficos sin configurarlo manualmente. En el **conexiones del depurador remoto** cuadro de diálogo, seleccione el destino que desee y, a continuación, elija el **seleccione** botón.  

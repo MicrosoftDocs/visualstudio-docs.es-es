@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5f9ffdb0f443f0c0c0f150815f03694463c0488
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8ab8e0712e5bb6f504b5b71a5ef6a3eca59167cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047769"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Abra una ventana de herramientas dinámica
 Ventanas de herramientas normalmente se abren desde un comando en un menú o un método abreviado de teclado equivalente. En ocasiones, sin embargo, puede necesitar una ventana de herramientas que se abre cada vez que se aplica un contexto específico de la interfaz de usuario y se cierra cuando ya no se aplica el contexto de interfaz de usuario. Estos tipos de ventanas de herramientas se denominan *dinámica* o *visibles automáticamente*.
@@ -32,9 +32,9 @@ Ventanas de herramientas normalmente se abren desde un comando en un menú o un 
 
 ## <a name="to-open-a-dynamic-tool-window"></a>Para abrir una ventana de herramientas dinámica
 
-1.  Cree un proyecto VSIX denominado **DynamicToolWindow** y agregar una plantilla de elemento de ventana de herramienta denominada *DynamicWindowPane.cs*. Para obtener más información, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).
+1. Cree un proyecto VSIX denominado **DynamicToolWindow** y agregar una plantilla de elemento de ventana de herramienta denominada *DynamicWindowPane.cs*. Para obtener más información, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-2.  En el *DynamicWindowPanePackage.cs* de archivos, busque la declaración de DynamicWindowPanePackage. Agregar el <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> y <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> atributos para registrar la ventana de herramientas.
+2. En el *DynamicWindowPanePackage.cs* de archivos, busque la declaración de DynamicWindowPanePackage. Agregar el <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> y <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> atributos para registrar la ventana de herramientas.
 
     ```vb
     [ProvideToolWindow(typeof(DynamicWindowPane)]
@@ -50,6 +50,6 @@ Ventanas de herramientas normalmente se abren desde un comando en un menú o un 
 
      Los atributos anteriores registrar la ventana de herramientas denominada DynamicWindowPane como una ventana transitoria que no se conserva cuando se cierra y vuelve a abrir Visual Studio. Se abre DynamicWindowPane cada vez que <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> se aplica y cerrado en caso contrario.
 
-3.  Compile la solución y comience la depuración. Debería aparecer la instancia experimental. No debería ver la ventana de herramientas.
+3. Compile la solución y comience la depuración. Debería aparecer la instancia experimental. No debería ver la ventana de herramientas.
 
-4.  Abra un proyecto en la instancia experimental. Debería aparecer la ventana de herramientas.
+4. Abra un proyecto en la instancia experimental. Debería aparecer la ventana de herramientas.

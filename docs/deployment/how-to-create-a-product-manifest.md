@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: crear un manifiesto de producto | Microsoft Docs'
+title: Procedimiento Crear un manifiesto de producto | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,27 +18,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.openlocfilehash: 68f3006104b50876f6d2716ff4eb1efe0a705284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057412"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Cómo: Crear un manifiesto de producto
+# <a name="how-to-create-a-product-manifest"></a>Procedimiento Crear un manifiesto de producto
 Para implementar los requisitos previos para la aplicación, puede crear un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único, pero un manifiesto del paquete para cada configuración regional. El manifiesto del paquete contiene aspectos específicos de la localización del paquete. Esto incluye cadenas, contratos de licencia del usuario final y los paquetes de idioma.
 
- Para obtener más información acerca de los manifiestos de paquete, consulte [Cómo: crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).
+ Para obtener más información acerca de los manifiestos de paquete, vea [Cómo: Creación de un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md).
 
 ## <a name="create-the-product-manifest"></a>Crear el manifiesto del producto
 
 #### <a name="to-create-the-product-manifest"></a>Para crear el manifiesto del producto
 
-1.  Cree un directorio para el paquete de programa previo. Este ejemplo utiliza C:\package.
+1. Cree un directorio para el paquete de programa previo. Este ejemplo utiliza C:\package.
 
-2.  En Visual Studio, cree un nuevo archivo XML denominado *product.xml*y guárdelo en el *C:\package* carpeta.
+2. En Visual Studio, cree un nuevo archivo XML denominado *product.xml*y guárdelo en el *C:\package* carpeta.
 
-3.  Agregue el siguiente código XML para describir el código de producto y el espacio de nombres XML para el paquete. Reemplace el código de producto con un identificador único para el paquete.
+3. Agregue el siguiente código XML para describir el código de producto y el espacio de nombres XML para el paquete. Reemplace el código de producto con un identificador único para el paquete.
 
     ```xml
     <Product
@@ -46,7 +46,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
     ProductCode="Custom.Bootstrapper.Package">
     ```
 
-4.  Agregue el código XML para especificar que el paquete tiene una dependencia. Este ejemplo utiliza una dependencia en Microsoft Windows Installer 3.1.
+4. Agregue el código XML para especificar que el paquete tiene una dependencia. Este ejemplo utiliza una dependencia en Microsoft Windows Installer 3.1.
 
     ```xml
     <RelatedProducts>
@@ -54,7 +54,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
       </RelatedProducts>
     ```
 
-5.  Agregue el código XML para mostrar todos los archivos que se encuentran en el paquete de arranque. Este ejemplo usa el nombre del archivo de paquete *CorePackage.msi*.
+5. Agregue el código XML para mostrar todos los archivos que se encuentran en el paquete de arranque. Este ejemplo usa el nombre del archivo de paquete *CorePackage.msi*.
 
     ```xml
     <PackageFiles>
@@ -62,16 +62,16 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
     </PackageFiles>
     ```
 
-6.  Copiar o mover el *CorePackage.msi* del archivo a la *C:\package* carpeta.
+6. Copiar o mover el *CorePackage.msi* del archivo a la *C:\package* carpeta.
 
-7.  Agregue el código XML para instalar el paquete mediante los comandos del programa previo. El programa previo se agrega automáticamente el **/qn** marca a la *.msi* archivo, que se instalará de forma silenciosa. Si el archivo es un *.exe*, se ejecuta el programa previo del *.exe* archivo mediante el shell. El siguiente XML no muestra ningún argumento *CorePackage.msi*, pero puede colocar el argumento de línea de comandos en el `Arguments` atributo.
+7. Agregue el código XML para instalar el paquete mediante los comandos del programa previo. El programa previo se agrega automáticamente el **/qn** marca a la *.msi* archivo, que se instalará de forma silenciosa. Si el archivo es un *.exe*, se ejecuta el programa previo del *.exe* archivo mediante el shell. El siguiente XML no muestra ningún argumento *CorePackage.msi*, pero puede colocar el argumento de línea de comandos en el `Arguments` atributo.
 
     ```xml
     <Commands>
         <Command PackageFile="CorePackage.msi" Arguments="">
     ```
 
-8.  Agregue el siguiente código XML para comprobar si está instalado este paquete de programa previo. Reemplace el código de producto con el GUID del componente redistribuible.
+8. Agregue el siguiente código XML para comprobar si está instalado este paquete de programa previo. Reemplace el código de producto con el GUID del componente redistribuible.
 
     ```xml
     <InstallChecks>

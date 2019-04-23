@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052888"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>Para crear el proyecto  
   
-1.  En el menú **Archivo** , haga clic en **Nuevo** y, después, haga clic en **Proyecto**.  
+1. En el menú **Archivo** , haga clic en **Nuevo** y, después, haga clic en **Proyecto**.  
   
-2.  Haga clic en el nodo **Visual C#** y, en el panel **Plantillas** , haga clic en **Aplicación de consola**.  
+2. Haga clic en el nodo **Visual C#** y, en el panel **Plantillas** , haga clic en **Aplicación de consola**.  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Agregar un archivo XML de prototipo al proyecto  
  El propósito de este archivo es proporcionar ejemplos de los tipos de nodo XML que quiere que lea su aplicación. Puede ser un archivo que se usará para probar la aplicación. La plantilla producirá una clase de C# para cada tipo de nodo de este archivo.  

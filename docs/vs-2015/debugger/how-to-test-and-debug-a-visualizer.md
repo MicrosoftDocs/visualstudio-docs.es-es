@@ -1,5 +1,5 @@
 ---
-title: Filtrar Probar y depurar un visualizador | Documentos de Microsoft
+title: Procedimiento Probar y depurar un visualizador | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,14 +18,14 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d19fa9b1859e97b115ca0799520456c102fecac9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18261d9e8c6c7d3f65dea7c72439b29f4e2e0df3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998908"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044101"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>Filtrar Prueba y depuración de un visualizador
+# <a name="how-to-test-and-debug-a-visualizer"></a>Procedimiento Prueba y depuración de un visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cuando se ha escrito un visualizador, es necesario depurarlo y comprobarlo.  
@@ -36,7 +36,7 @@ Cuando se ha escrito un visualizador, es necesario depurarlo y comprobarlo.
   
 ### <a name="to-create-a-visualizer-development-host"></a>Para crear un host de desarrollo del visualizador  
   
-1.  En la clase del depurador, incluya un método estático que cree un objeto <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> y llame al método Show:  
+1. En la clase del depurador, incluya un método estático que cree un objeto <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> y llame al método Show:  
   
     ```  
     public static void TestShowVisualizer(object objectToVisualize)  
@@ -48,7 +48,7 @@ Cuando se ha escrito un visualizador, es necesario depurarlo y comprobarlo.
   
      Los parámetros utilizados para construir el host son el objeto de datos que aparecerá en el visualizador (`objectToVisualize`) y el tipo de la clase del depurador.  
   
-2.  Agregue la instrucción siguiente para llamar a `TestShowVisualizer`. Si el visualizador se creó en una biblioteca de clases, es necesario crear un ejecutable que llame a la biblioteca de clases y coloque esta instrucción en el ejecutable:  
+2. Agregue la instrucción siguiente para llamar a `TestShowVisualizer`. Si el visualizador se creó en una biblioteca de clases, es necesario crear un ejecutable que llame a la biblioteca de clases y coloque esta instrucción en el ejecutable:  
   
     ```  
     DebuggerSide.TestShowVisualizer(myString);  

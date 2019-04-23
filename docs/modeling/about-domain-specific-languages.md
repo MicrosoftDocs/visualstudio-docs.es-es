@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d7e895f0a7e57160e10c4b6020b2bf73ae477d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4684a0256e01cafe79fc90ae1ae97dfc2be047d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046826"
 ---
 # <a name="about-domain-specific-languages"></a>Acerca de los lenguajes específicos de dominio
 
@@ -24,11 +24,11 @@ DSL Well-Known incluye expresiones regulares y SQL. Cada DSL es mucho mejor que 
 
 Su negocio y el proyecto también se encargan conjuntos especiales de los conceptos que se podrían describir con un DSL. Por ejemplo, podría definir un DSL de una de estas aplicaciones:
 
--   Plan de rutas de navegación en un sitio Web.
+- Plan de rutas de navegación en un sitio Web.
 
--   Diagramas de cableado de componentes electrónicos.
+- Diagramas de cableado de componentes electrónicos.
 
--   Redes de cintas transportadoras y equipos de un aeropuerto de control de equipaje.
+- Redes de cintas transportadoras y equipos de un aeropuerto de control de equipaje.
 
 Cuando diseñe un DSL, definirá un *la clase de dominio* para cada uno de los conceptos importantes en el dominio, por ejemplo, un mostrador de aeropuerto, lamp o página web. Define *relaciones de dominio* como hipervínculo, conexión o una cinta transportadora para vincular entre sí los conceptos.
 
@@ -114,12 +114,12 @@ Un lenguaje específico de dominio puede proporcionar las siguientes ventajas:
 
 La mayoría de los equipos de desarrollo de software que utilizan lenguajes específicos de dominio siguen estos pasos para crear y usar sus modelos:
 
--   El equipo distingue las partes variables del dominio de las partes que no cambia nunca.
+- El equipo distingue las partes variables del dominio de las partes que no cambia nunca.
 
--   Los desarrolladores escribir código para los elementos fijos y dejar los puntos de extensión para las partes variables.
+- Los desarrolladores escribir código para los elementos fijos y dejar los puntos de extensión para las partes variables.
 
--   El jefe de desarrollo de software o el arquitecto crea un lenguaje específico de dominio que incorpora los patrones de diseño de las partes del dominio y los puntos de extensión para las partes variables fijos.
+- El jefe de desarrollo de software o el arquitecto crea un lenguaje específico de dominio que incorpora los patrones de diseño de las partes del dominio y los puntos de extensión para las partes variables fijos.
 
--   El jefe de desarrollo de software o el arquitecto se implementa el lenguaje específico de dominio a los desarrolladores de las distintas aplicaciones producidos por el equipo.
+- El jefe de desarrollo de software o el arquitecto se implementa el lenguaje específico de dominio a los desarrolladores de las distintas aplicaciones producidos por el equipo.
 
--   Todos los desarrolladores, crea un modelo que se aplica a la aplicación específica.
+- Todos los desarrolladores, crea un modelo que se aplica a la aplicación específica.

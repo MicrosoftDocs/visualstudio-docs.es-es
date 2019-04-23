@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3eca61e696fea82952e3efde5cea1f6164d5bab5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054162"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Especificar eventos de compilación personalizados en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,30 +25,30 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
 
  Para obtener información específica acerca del lenguaje de programación que está usando, consulte los temas siguientes:
 
--   Visual Basic: [Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic--[Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Visual C# y F#: [Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
+- Visual C# y F#--[Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++: [Especificar eventos de compilación](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
+- Visual C++: [Especificar eventos de compilación](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
 ## <a name="syntax"></a>Sintaxis
  Los eventos de compilación siguen la misma sintaxis que los comandos de DOS, pero puede usar macros para crear eventos más fácilmente. Para obtener una lista de las macros disponibles, vea [Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
  Para obtener mejores resultados, siga estas sugerencias de formato:
 
--   Agregue una instrucción `call` antes de todos los eventos de compilación que ejecutan archivos .bat.
+- Agregue una instrucción `call` antes de todos los eventos de compilación que ejecutan archivos .bat.
 
      Ejemplo: `call C:\MyFile.bat`
 
      Ejemplo: `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   Escriba las rutas de acceso entre comillas.
+- Escriba las rutas de acceso entre comillas.
 
      Ejemplo (para [!INCLUDE[win8](../includes/win8-md.md)]): "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
 
--   Separe varios comandos mediante saltos de línea.
+- Separe varios comandos mediante saltos de línea.
 
--   Incluya caracteres comodín según sea necesario.
+- Incluya caracteres comodín según sea necesario.
 
      Ejemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 

@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef9744e5d5b66d39eee9e9332f3ed49616c6067
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616227"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052784"
 ---
 # <a name="custom-xml-parts-overview"></a>Información general sobre elementos XML personalizados
   Puede insertar datos XML en documentos para algunas aplicaciones de Microsoft Office. Al incrustar datos XML en un documento, los datos se denominan un *elemento XML personalizado*.
@@ -47,13 +47,13 @@ ms.locfileid: "56616227"
 
  Para obtener más información sobre la estructura de Open XML y elementos XML personalizados, consulte los siguientes artículos:
 
--   [Introducción a los formatos de archivo de Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
+- [Introducción a los formatos de archivo de Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
 
--   [Cómo: Manipular documentos con formatos XML abiertos](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
+- [Cómo: Manipular documentos con formatos XML abiertos](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
 
--   [Tutorial: Formato XML de Word 2007](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
+- [Tutorial: Formato XML de Word 2007](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
 
--   [Creación de documentos de Word 2007 con formatos XML abiertos](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
+- [Creación de documentos de Word 2007 con formatos XML abiertos](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
 >  Excel, Word y PowerPoint también permiten usar elementos XML personalizados en documentos guardados en los formatos de archivo binario. Sin embargo, si se guarda un documento en un formato binario, no se puede agregar o modificar elementos XML personalizados sin iniciar la aplicación de Microsoft Office.
@@ -66,9 +66,9 @@ ms.locfileid: "56616227"
 
  Para crear un elemento XML personalizado con Visual Studio, agregue un nuevo <xref:Microsoft.Office.Core.CustomXMLPart> a la colección <xref:Microsoft.Office.Core.CustomXMLParts> del documento. Para obtener más información, vea los temas siguientes:
 
--   [Cómo: Agregar elementos XML personalizados a personalizaciones de nivel de documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
+- [Cómo: Agregar elementos XML personalizados a personalizaciones de nivel de documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 
--   [Cómo: Agregar elementos XML personalizados a documentos mediante complementos de VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
+- [Cómo: Agregar elementos XML personalizados a documentos mediante complementos de VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
 
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Modificar elementos XML sin iniciar la aplicación de Office
  Puede agregar o modificar un elemento XML personalizado sin iniciar Excel, PowerPoint o Word. Esto es útil si desea trabajar con datos XML en un documento en un equipo que no tiene instaladas aplicaciones de Microsoft Office, como un servidor.

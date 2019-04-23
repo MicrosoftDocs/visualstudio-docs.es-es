@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bcd3855b5dd2fc701b78c5745a9053d19dc7fcf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 89152fcb003886087704107f2d4c2a66d3313cc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050367"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Archivos de descripción del directorio de plantilla (.Vsdir)
 Un archivo de descripción del directorio de plantilla (.vsdir) es un archivo de texto que permite que el entorno de desarrollo integrado (IDE) para mostrar las carpetas, archivos .vsz del asistente y archivos de plantilla que están asociados con el proyecto en los cuadros de diálogo. El contenido incluye un registro por cada archivo o carpeta. Se combinan todos los archivos .vsdir en una ubicación que se hace referencia, aunque generalmente se proporciona solo un archivo .vsdir para describir varias carpetas, los asistentes o los archivos de plantilla.
@@ -50,17 +50,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Cuando se crea un archivo de asistente, también debe considerar los siguientes problemas.
 
--   Los campos opcionales para los que no existen datos significativos tienen que contener un cero (0) como marcador de posición.
+- Los campos opcionales para los que no existen datos significativos tienen que contener un cero (0) como marcador de posición.
 
--   Si se proporciona ningún nombre localizado, se usa el nombre de ruta de acceso relativa en el archivo del asistente.
+- Si se proporciona ningún nombre localizado, se usa el nombre de ruta de acceso relativa en el archivo del asistente.
 
--   DLLPath invalida clsidPackage para la ubicación del icono.
+- DLLPath invalida clsidPackage para la ubicación del icono.
 
--   Si se define ningún icono, el IDE sustituye el icono predeterminado para un archivo que tiene esa extensión.
+- Si se define ningún icono, el IDE sustituye el icono predeterminado para un archivo que tiene esa extensión.
 
--   Si no se proporciona ninguna sugerencia de nombre base, se utiliza 'Project'.
+- Si no se proporciona ninguna sugerencia de nombre base, se utiliza 'Project'.
 
--   Si elimina los archivos .vsz, carpetas o archivos de plantilla, debe quitar también los registros asociados desde el archivo vsdir.
+- Si elimina los archivos .vsz, carpetas o archivos de plantilla, debe quitar también los registros asociados desde el archivo vsdir.
 
 ## <a name="see-also"></a>Vea también
 - [Asistentes](../../extensibility/internals/wizards.md)

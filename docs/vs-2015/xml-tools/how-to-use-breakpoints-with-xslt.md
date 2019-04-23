@@ -1,5 +1,5 @@
 ---
-title: Filtrar Utilizar puntos de interrupción con XSLT | Documentos de Microsoft
+title: Procedimiento Utilizar puntos de interrupción con XSLT | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,14 +9,14 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5590d9f33d2c34b7d3d86aaf00307419685ca8da
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 76729bd44d196028fd88bd13718a34518b1fbde4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995355"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052329"
 ---
-# <a name="how-to-use-breakpoints-with-xslt"></a>Filtrar Utilizar puntos de interrupción con XSLT
+# <a name="how-to-use-breakpoints-with-xslt"></a>Procedimiento Utilizar puntos de interrupción con XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede establecer los puntos de interrupción en una hoja de estilos XSLT o en el documento de origen XML. Si establece un punto de interrupción en una etiqueta, cuando comienza la ejecución el punto de interrupción se traslada a la siguiente instrucción que tiene información de línea de código fuente.  
@@ -28,34 +28,34 @@ Puede establecer los puntos de interrupción en una hoja de estilos XSLT o en el
   
 #### <a name="to-set-a-breakpoint-in-a-style-sheet"></a>Para establecer un punto de interrupción en una hoja de estilos  
   
-1.  Abra una hoja de estilos en el Editor XML.  
+1. Abra una hoja de estilos en el Editor XML.  
   
-2.  Coloque el cursor en la ubicación del punto de interrupción, haga clic en, seleccione **punto de interrupción**y haga clic en **Insertar punto de interrupción**.  
+2. Coloque el cursor en la ubicación del punto de interrupción, haga clic en, seleccione **punto de interrupción**y haga clic en **Insertar punto de interrupción**.  
   
-3.  Haga clic en el el botón Examinar (**...** ) en el **entrada** campo de la ventana de propiedades de documento.  
+3. Haga clic en el el botón Examinar (**...** ) en el **entrada** campo de la ventana de propiedades de documento.  
   
-4.  Busque el documento origen XML y haga clic en **abierto**.  
+4. Busque el documento origen XML y haga clic en **abierto**.  
   
      De esta forma se establece el archivo del documento de origen que se utilizará para la transformación XSLT.  
   
-5.  Haga clic en el **Depurar XSL** en la barra de herramientas del Editor XML.  
+5. Haga clic en el **Depurar XSL** en la barra de herramientas del Editor XML.  
   
 ## <a name="set-a-breakpoint-in-an-xml-source-document"></a>Establecer un punto de interrupción en un documento de origen XML  
  Pueden establecerse puntos de interrupción en los elementos, atributos, nodos de espacio de nombres, comentarios, instrucciones de procesamiento y nodos de texto de un documento de origen XML. No puede establecerse un punto de interrupción en el nodo de documentos ni en un nodo de espacio de nombres heredado del elemento primario.  
   
 #### <a name="to-set-a-breakpoint-in-an-xml-source-document"></a>Para establecer un punto de interrupción en un documento de origen XML  
   
-1.  Abra el documento XML en el Editor XML.  
+1. Abra el documento XML en el Editor XML.  
   
-2.  Coloque el cursor en la ubicación del punto de interrupción, haga clic en, seleccione **punto de interrupción**y haga clic en **Insertar punto de interrupción**.  
+2. Coloque el cursor en la ubicación del punto de interrupción, haga clic en, seleccione **punto de interrupción**y haga clic en **Insertar punto de interrupción**.  
   
-3.  Haga clic en el el botón Examinar (**...** ) en el **Stylesheet** campo de la ventana de propiedades de documento.  
+3. Haga clic en el el botón Examinar (**...** ) en el **Stylesheet** campo de la ventana de propiedades de documento.  
   
-4.  Busque el documento origen XML y haga clic en **abierto**.  
+4. Busque el documento origen XML y haga clic en **abierto**.  
   
      De esta forma se establece el archivo del documento de origen que se utilizará para la transformación XSLT.  
   
-5.  Haga clic en el **Depurar XSL** en la barra de herramientas del Editor XML.  
+5. Haga clic en el **Depurar XSL** en la barra de herramientas del Editor XML.  
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Depuración de una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85c5cef12ed92cbd37b303aa7bd1e23cbced76ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653871"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050717"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,24 +46,24 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
   
  Las reglas de sintaxis de los modificadores de `devenv` son similares a las de otros programas de línea de comandos de DOS. Las siguientes reglas sintácticas se aplican a todos los modificadores de `devenv` y sus argumentos:  
   
--   Los comandos comienzan por `devenv`.  
+- Los comandos comienzan por `devenv`.  
   
--   Los modificadores no distinguen mayúsculas de minúsculas.  
+- Los modificadores no distinguen mayúsculas de minúsculas.  
   
--   Cuando se especifica una solución o un proyecto, el primer argumento es el nombre del archivo de solución o del archivo de proyecto, incluida la ruta de acceso del archivo.  
+- Cuando se especifica una solución o un proyecto, el primer argumento es el nombre del archivo de solución o del archivo de proyecto, incluida la ruta de acceso del archivo.  
   
--   Si el primer argumento es un archivo que no es una solución ni un proyecto, ese archivo se abrirá en el editor adecuado, en una nueva instancia del IDE.  
+- Si el primer argumento es un archivo que no es una solución ni un proyecto, ese archivo se abrirá en el editor adecuado, en una nueva instancia del IDE.  
   
--   Cuando se indica un nombre de archivo de proyecto en lugar de un nombre de archivo de solución, un comando `devenv` buscará en la carpeta primaria del archivo de proyecto un archivo de solución que tenga el mismo nombre. Por ejemplo, el comando `devenv /build myproject1.vbproj` buscará en la carpeta primaria un archivo de solución denominado "myproject1.sln".  
+- Cuando se indica un nombre de archivo de proyecto en lugar de un nombre de archivo de solución, un comando `devenv` buscará en la carpeta primaria del archivo de proyecto un archivo de solución que tenga el mismo nombre. Por ejemplo, el comando `devenv /build myproject1.vbproj` buscará en la carpeta primaria un archivo de solución denominado "myproject1.sln".  
   
     > [!NOTE]
     >  En su carpeta primaria debe haber un archivo de solución, y solamente uno, que haga referencia a este proyecto. Si la carpeta primaria no contiene ningún archivo de solución que hace referencia a este proyecto, o si contiene dos o más archivos de solución que hacen referencia a él, se creará en ella un archivo de solución temporal con el nombre de este proyecto y que haga referencia a él.  
   
--   Si las rutas de acceso y los nombres de archivo contienen espacios en blanco, deben incluirse entre comillas dobles (""). Por ejemplo, "c:\project a\\".  
+- Si las rutas de acceso y los nombres de archivo contienen espacios en blanco, deben incluirse entre comillas dobles (""). Por ejemplo, "c:\project a\\".  
   
--   Inserte un carácter de espacio entre los modificadores y los argumentos de la misma línea. Por ejemplo, el comando **devenv /log output.txt** abre el IDE y envía toda la información de registro de esa sesión a output.txt.  
+- Inserte un carácter de espacio entre los modificadores y los argumentos de la misma línea. Por ejemplo, el comando **devenv /log output.txt** abre el IDE y envía toda la información de registro de esa sesión a output.txt.  
   
--   No se puede utilizar la sintaxis de coincidencia de patrones en los comandos de `devenv`.  
+- No se puede utilizar la sintaxis de coincidencia de patrones en los comandos de `devenv`.  
   
 ## <a name="devenv-switches"></a>Modificadores de devenv  
  Utilice los modificadores de línea de comandos siguientes para mostrar el IDE y realizar la tarea descrita.  

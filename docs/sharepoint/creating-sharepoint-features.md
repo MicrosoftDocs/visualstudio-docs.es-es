@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b77e07524b6bcabd00de1d8082261e81807a72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051327"
 ---
 # <a name="create-sharepoint-features"></a>Crear características de SharePoint
   Puede usar una característica de SharePoint para agrupar elementos relacionados del proyecto de SharePoint para una fácil implementación. Puede crear características, establecer ámbitos y marcar otras características como dependencias mediante el Diseñador de características de SharePoint. El diseñador también genera un manifiesto, que es un archivo XML que describe cada característica.
@@ -26,9 +26,9 @@ ms.locfileid: "56644463"
 ## <a name="add-features-to-the-sharepoint-solution"></a>Agregar características a la solución de SharePoint
  Puede agregar una característica a la solución de SharePoint mediante el Explorador de soluciones o el Explorador de empaquetado. Puede usar uno de los métodos siguientes para agregar una característica.
 
--   En **el Explorador de soluciones**, abra el menú contextual para **características**y, a continuación, elija **Agregar característica**.
+- En **el Explorador de soluciones**, abra el menú contextual para **características**y, a continuación, elija **Agregar característica**.
 
--   En **Explorador de empaquetado**, abra el menú contextual para el paquete y, a continuación, elija **Agregar característica**.
+- En **Explorador de empaquetado**, abra el menú contextual para el paquete y, a continuación, elija **Agregar característica**.
 
 ## <a name="using-the-feature-designer"></a>Utilizando el Diseñador de características
  Una solución de SharePoint puede contener una o varias características de SharePoint, que se agrupan bajo el nodo de función en el Explorador de soluciones. Cada característica tiene su propio **característica Diseñador** que puede usar para personalizar las propiedades de característica. Para obtener más información, vea [Cómo: Personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). Para distinguir las características entre sí, puede configurar las propiedades de características como el título, la descripción, la versión y el ámbito.
@@ -38,7 +38,7 @@ ms.locfileid: "56644463"
 
  En la tabla siguiente se describe las propiedades de características que se muestran en el Diseñador de características.
 
-|Property|Descripción|
+|Propiedad|Descripción|
 |--------------|-----------------|
 |Título|Opcional. El título predeterminado de la característica está establecido en *SolutionName* *FeatureName*.|
 |Descripción|Opcional. La descripción de la característica de SharePoint.|

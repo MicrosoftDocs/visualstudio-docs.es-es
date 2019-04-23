@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268563"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051419"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Guardar datos en una base de datos (varias tablas)
 
@@ -31,15 +31,15 @@ Puede guardar los datos de su aplicación en la base de datos llamando al métod
 
 Las tareas ilustradas en este tutorial incluyen:
 
--  Crear y configurar un origen de datos en la aplicación con el [Asistente para configuración de origen de datos](../data-tools/media/data-source-configuration-wizard.png).
+- Crear y configurar un origen de datos en la aplicación con el [Asistente para configuración de origen de datos](../data-tools/media/data-source-configuration-wizard.png).
 
--  Establecer los controles de los elementos de la [ventana Orígenes de datos](add-new-data-sources.md#data-sources-window). Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Establecer los controles de los elementos de la [ventana Orígenes de datos](add-new-data-sources.md#data-sources-window). Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--  Crear controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** hasta el formulario.
+- Crear controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** hasta el formulario.
 
--  Modificación de algunos registros de cada tabla en el conjunto de datos.
+- Modificación de algunos registros de cada tabla en el conjunto de datos.
 
--  Modificar el código para devolver los datos actualizados del conjunto de datos a la base de datos.
+- Modificar el código para devolver los datos actualizados del conjunto de datos a la base de datos.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -65,7 +65,7 @@ Cree un nuevo **aplicación de Windows Forms** proyecto para cualquiera C# o Vis
 
 ## <a name="create-the-data-source"></a>Crear el origen de datos
 
-Este paso crea un origen de datos a partir de la base de datos Northwind utilizando el **Asistente para la configuración de orígenes de datos**. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+Este paso crea un origen de datos a partir de la base de datos Northwind utilizando el **Asistente para la configuración de orígenes de datos**. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: Instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. En el **datos** menú, seleccione **Mostrar orígenes de datos**.
 
@@ -79,7 +79,7 @@ Este paso crea un origen de datos a partir de la base de datos Northwind utiliza
 
     - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         o bien
+         -o bien-
 
     - Seleccione **Nueva conexión** para abrir el cuadro de diálogo **Agregar o modificar conexión**.
 

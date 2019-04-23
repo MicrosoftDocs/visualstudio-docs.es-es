@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c4cb5e4eadafb4ce3ea7600a2a179689945b9f16
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b109be00f7b165a131244ed1ddb886739bcdce55
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051588"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Cómo: Utilizar el teclado exclusivamente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,48 +51,48 @@ ms.locfileid: "59655366"
   
 #### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Para establecer las opciones del cuadro de diálogo desde el teclado  
   
-1.  Use **TAB** o **MAYÚS + TAB** para moverse hacia arriba y hacia abajo a través de los controles del cuadro de diálogo.  
+1. Use **TAB** o **MAYÚS + TAB** para moverse hacia arriba y hacia abajo a través de los controles del cuadro de diálogo.  
   
-2.  Para cambiar la configuración de las opciones:  
+2. Para cambiar la configuración de las opciones:  
   
-    -   Para los botones de opción, use **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar la selección.  
+    - Para los botones de opción, use **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar la selección.  
   
-    -   Para las casillas, use la **BARRA ESPACIADORA** para seleccionar o anular la selección.  
+    - Para las casillas, use la **BARRA ESPACIADORA** para seleccionar o anular la selección.  
   
-    -   Para las listas desplegables, use **ALT** + **FLECHA ABAJO** para mostrar elementos y, después, use **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar el elemento seleccionado.  
+    - Para las listas desplegables, use **ALT** + **FLECHA ABAJO** para mostrar elementos y, después, use **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar el elemento seleccionado.  
   
-    -   Para los botones de opción, presione **ENTRAR** para invocarlos.  
+    - Para los botones de opción, presione **ENTRAR** para invocarlos.  
   
-    -   Para las cuadrículas, use las teclas de flecha para desplazarse. Para las listas desplegables en las cuadrículas, use **MAYÚS** + **ALT** + **FLECHA ABAJO** para mostrar elementos y, después, use **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar el elemento seleccionado.  
+    - Para las cuadrículas, use las teclas de flecha para desplazarse. Para las listas desplegables en las cuadrículas, use **MAYÚS** + **ALT** + **FLECHA ABAJO** para mostrar elementos y, después, use **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar el elemento seleccionado.  
   
 ## <a name="window-and-file-navigation"></a>Navegación de archivos y ventanas  
  El IDE le proporciona varias maneras de moverse entre las ventanas de documentos y herramientas abiertas con el teclado. También puede mover y acoplar las ventanas de herramientas en diferentes ubicaciones con el teclado.  
   
 #### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Para navegar entre las ventanas y los archivos en el IDE desde el teclado  
   
--   Para moverse entre los archivos en un editor o diseñador, pulse las teclas CTRL + TAB para mostrar el navegador del IDE con la opción **Archivos activos** seleccionada. Pulse la tecla Entrar para ir al archivo resaltado.  
+- Para moverse entre los archivos en un editor o diseñador, pulse las teclas CTRL + TAB para mostrar el navegador del IDE con la opción **Archivos activos** seleccionada. Pulse la tecla Entrar para ir al archivo resaltado.  
   
--   Para moverse entre las ventanas de herramientas acopladas, pulse Alt + F7 para mostrar el navegador del IDE con la opción **Ventanas de herramientas activas** seleccionada. Pulse la tecla Entrar para ir a la ventana resaltada.  
+- Para moverse entre las ventanas de herramientas acopladas, pulse Alt + F7 para mostrar el navegador del IDE con la opción **Ventanas de herramientas activas** seleccionada. Pulse la tecla Entrar para ir a la ventana resaltada.  
   
 #### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Para mover y acoplar ventanas de herramientas desde el teclado  
   
-1.  Vaya a la ventana de herramientas que quiere mover y asígnele el foco.  
+1. Vaya a la ventana de herramientas que quiere mover y asígnele el foco.  
   
-2.  En el menú **Ventana**, haga clic en **Acoplable**.  
+2. En el menú **Ventana**, haga clic en **Acoplable**.  
   
-3.  Presione **ALT** + **Espacio** y, después, pulse **Mover**.  
+3. Presione **ALT** + **Espacio** y, después, pulse **Mover**.  
   
      Aparece el diamante de guía de acoplamiento.  
   
-4.  Use las teclas de **flecha** para mover la ventana en una nueva ubicación.  
+4. Use las teclas de **flecha** para mover la ventana en una nueva ubicación.  
   
      El puntero del mouse se mueve con la ventana a medida que usa las teclas de **flecha**.  
   
-5.  Cuando haya llegado a la nueva ubicación, use las teclas de **flecha** para mover el puntero del mouse sobre la parte correcta del diamante de guía.  
+5. Cuando haya llegado a la nueva ubicación, use las teclas de **flecha** para mover el puntero del mouse sobre la parte correcta del diamante de guía.  
   
      Aparece un esquema de la ventana de herramientas en la nueva ubicación de acoplamiento.  
   
-6.  Presione **ENTRAR**.  
+6. Presione **ENTRAR**.  
   
      La ventana de herramientas se ajusta en la nueva ubicación de acoplamiento.  
   

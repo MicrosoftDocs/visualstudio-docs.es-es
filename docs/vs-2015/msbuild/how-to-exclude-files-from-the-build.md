@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656459"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052564"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procedimiento Excluir archivos de la compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Para incluir todos los archivos .cs o .vb excepto Form2  
   
--   Utilice uno de los siguientes atributos `Include` y `Exclude`:  
+- Utilice uno de los siguientes atributos `Include` y `Exclude`:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
@@ -53,7 +53,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Para incluir todos los archivos .cs o .vb excepto Form2 y Form3  
   
--   Utilice uno de los siguientes atributos `Include` y `Exclude`:  
+- Utilice uno de los siguientes atributos `Include` y `Exclude`:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
@@ -67,7 +67,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
   
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Para incluir todos los archivos .jpg de los subdirectorios del directorio Images, excepto los que se encuentran en el directorio Version2  
   
--   Utilice los siguientes atributos `Include` y `Exclude`:  
+- Utilice los siguientes atributos `Include` y `Exclude`:  
   
     ```  
     <JPGFile  
@@ -83,7 +83,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Para incluir el archivo Formula.vb solo en compilaciones de versión  
   
--   Utilice un atributo `Condition` similar al siguiente:  
+- Utilice un atributo `Condition` similar al siguiente:  
   
     ```  
     <Compile  

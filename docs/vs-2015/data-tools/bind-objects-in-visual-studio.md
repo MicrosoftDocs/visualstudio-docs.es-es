@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96acd1039f9293e6efb64f2726fc53a4c33cdc31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053122"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Enlazar objetos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Visual Studio proporciona herramientas de tiempo de diseño para trabajar con ob
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>Ejemplos del uso de objetos personalizados como orígenes de datos
  Aunque existen innumerables formas de implementar la lógica de aplicación cuando se trabaja con objetos como un origen de datos, para SQL, bases de datos son algunas de las operaciones estándares que se pueden simplificar mediante el uso de los objetos TableAdapter generados por Visual Studio. Esta página explica cómo implementar estos procesos estándares utilizando TableAdapters.It no está pensada como una guía para crear los objetos personalizados. Por ejemplo, normalmente, realizará las siguientes operaciones estándares, independientemente de la implementación específica de los objetos o la lógica de aplicación:
 
--   Cargar datos en objetos (normalmente de una base de datos).
+- Cargar datos en objetos (normalmente de una base de datos).
 
--   Creación de una colección de objetos con tipo.
+- Creación de una colección de objetos con tipo.
 
--   Adición de objetos a y quitar objetos de una colección.
+- Adición de objetos a y quitar objetos de una colección.
 
--   Mostrar los datos de objetos a los usuarios en un formulario.
+- Mostrar los datos de objetos a los usuarios en un formulario.
 
--   Cambiar o editar los datos en un objeto.
+- Cambiar o editar los datos en un objeto.
 
--   Guardar datos de objetos en la base de datos.
+- Guardar datos de objetos en la base de datos.
 
 > [!NOTE]
 >  Para comprender mejor y proporcionar el contexto para los ejemplos de esta página, se recomienda que haga lo siguiente: [Tutorial: Conectarse a datos en objetos (formularios Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). En este tutorial crea los objetos que se tratan aquí.

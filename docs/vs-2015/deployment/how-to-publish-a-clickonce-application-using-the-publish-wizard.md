@@ -1,5 +1,5 @@
 ---
-title: Filtrar Publicar una aplicación ClickOnce mediante el Asistente para publicación | Documentos de Microsoft
+title: Procedimiento Publicar una aplicación ClickOnce mediante el Asistente para publicación | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45ca2bd23c6da7d86b65cc05c0b0dee670e2718f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046943"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Filtrar Publicar una aplicación ClickOnce mediante el Asistente para publicación
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedimiento Publicar una aplicación ClickOnce mediante el Asistente para publicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para que una aplicación ClickOnce esté disponible para los usuarios, debe publicarla en un recurso compartido de archivos o ruta de acceso, en un servidor FTP o en un medio extraíble. Puede publicar la aplicación con el Asistente para publicación. En la página **Publicar** del **Diseñador de proyectos** hay disponibles más propiedades relativas a la publicación. Para obtener más información, consulte [publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md).  
@@ -50,11 +50,11 @@ Para que una aplicación ClickOnce esté disponible para los usuarios, debe publ
   
 4. En la página **Instalación de la aplicación**, seleccione la ubicación donde los usuarios irán para instalar la aplicación:  
   
-   -   Si los usuarios la instalarán desde un sitio web, haga clic en **Desde un sitio web** y escriba la dirección URL correspondiente a la ruta de acceso al archivo especificada en el paso anterior. Haga clic en **Siguiente**. (Esta opción se usa normalmente cuando se especifica una dirección FTP como ubicación de publicación. No se permite la descarga directa desde FTP. Por lo tanto, tiene que especificar una dirección URL aquí).  
+   - Si los usuarios la instalarán desde un sitio web, haga clic en **Desde un sitio web** y escriba la dirección URL correspondiente a la ruta de acceso al archivo especificada en el paso anterior. Haga clic en **Siguiente**. (Esta opción se usa normalmente cuando se especifica una dirección FTP como ubicación de publicación. No se permite la descarga directa desde FTP. Por lo tanto, tiene que especificar una dirección URL aquí).  
   
-   -   Si los usuarios instalarán la aplicación directamente desde el recurso compartido de archivos, haga clic en **Desde una ruta de acceso UNC o un recurso compartido de archivos** y después en **Siguiente**. (Esto es para la publicación de ubicaciones del formato c:\deploy\myapp o \\\server\myapp.)  
+   - Si los usuarios instalarán la aplicación directamente desde el recurso compartido de archivos, haga clic en **Desde una ruta de acceso UNC o un recurso compartido de archivos** y después en **Siguiente**. (Esto es para la publicación de ubicaciones del formato c:\deploy\myapp o \\\server\myapp.)  
   
-   -   Si los usuarios instalarán desde medios extraíbles, haga clic en **Desde un CD-ROM o un DVD-ROM** y después haga clic en **Siguiente**.  
+   - Si los usuarios instalarán desde medios extraíbles, haga clic en **Desde un CD-ROM o un DVD-ROM** y después haga clic en **Siguiente**.  
   
 5. En la página **¿La aplicación estará disponible sin conexión?**, haga clic en la opción apropiada:  
   

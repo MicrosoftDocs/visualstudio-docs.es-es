@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666564"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045347"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -128,9 +128,9 @@ En el **herramientas** > **opciones** > **depuración** > **símbolos** página,
 
 4. Especifique los módulos que desea que el depurador cargue desde el **ubicaciones de archivo (.pdb) de símbolos** cuando se inicia.
 
-   -  Seleccione **cargar todos los módulos, excepto los excluidos** (predeterminado) para cargar todos los símbolos para todos los módulos en la ubicación del archivo de símbolos, excepto los módulos que las excluya expresamente. Para excluir ciertos módulos, seleccione **especificar módulos excluidos**, seleccione el **+** icono, escriba los nombres de los módulos para excluir y seleccione **Aceptar**.
+   - Seleccione **cargar todos los módulos, excepto los excluidos** (predeterminado) para cargar todos los símbolos para todos los módulos en la ubicación del archivo de símbolos, excepto los módulos que las excluya expresamente. Para excluir ciertos módulos, seleccione **especificar módulos excluidos**, seleccione el **+** icono, escriba los nombres de los módulos para excluir y seleccione **Aceptar**.
 
-   -  Para cargar solo los módulos especificados a partir de las ubicaciones de archivos de símbolos, seleccione **carga solo los módulos especificados**. Seleccione **especificar módulos incluidos**, seleccione el **+** icono, escriba los nombres de los módulos para incluir y, a continuación, seleccione **Aceptar**. No se cargan los archivos de símbolos de otros módulos.
+   - Para cargar solo los módulos especificados a partir de las ubicaciones de archivos de símbolos, seleccione **carga solo los módulos especificados**. Seleccione **especificar módulos incluidos**, seleccione el **+** icono, escriba los nombres de los módulos para incluir y, a continuación, seleccione **Aceptar**. No se cargan los archivos de símbolos de otros módulos.
 
 5. Seleccione **Aceptar**.
 
@@ -199,7 +199,7 @@ Compilar con **/debug** para crear un *.pdb* archivo. Puede compilar las aplicac
 
 Establecer el *web.config* archivo de la aplicación ASP.NET en modo de depuración. El modo de depuración hace que ASP.NET genere símbolos para los archivos generados dinámicamente y permite al depurador asociarse a la aplicación ASP.NET. Visual Studio lo establece automáticamente cuando empiece a depurar, si ha creado el proyecto de la plantilla de proyectos web.
 
-##  <a name="manage-symbols-while-debugging"></a>Administrar símbolos durante la depuración
+## <a name="manage-symbols-while-debugging"></a>Administrar símbolos durante la depuración
 
 Puede usar el **módulos**, **pila de llamadas**, **variables locales**, **automático**, o cualquier **inspección** ventana para cargar los símbolos o cambiar las opciones de símbolos durante la depuración. Para obtener más información, consulte [familiarizarse más con cómo el depurador se asocia a la aplicación](../debugger/debugger-tips-and-tricks.md#modules_window).
 
@@ -224,10 +224,10 @@ Durante la depuración, la **módulos** ventana muestra los módulos de código,
 
 Hay varias maneras para que el depurador interrumpir el código que no tiene archivos de origen o de símbolos disponibles:
 
--  Ir al código.
--  Interrumpir el código desde un punto de interrupción o una excepción.
--  Cambiar a un subproceso diferente.
--  Cambiar el marco de pila haciendo doble clic en un marco en el **pila de llamadas** ventana.
+- Ir al código.
+- Interrumpir el código desde un punto de interrupción o una excepción.
+- Cambiar a un subproceso diferente.
+- Cambiar el marco de pila haciendo doble clic en un marco en el **pila de llamadas** ventana.
 
 Cuando esto sucede, el depurador muestra el **No se cargaron símbolos** o **No se cargaron orígenes** páginas que le ayudarán a encontrar y cargar el origen o los símbolos necesarios.
 
@@ -235,11 +235,11 @@ Cuando esto sucede, el depurador muestra el **No se cargaron símbolos** o **No 
 
 **Para usar la página del documento No se cargaron símbolos para ayudar a encontrar y cargar los símbolos que faltan:**
 
--   Para cambiar la ruta de acceso de búsqueda, seleccione una ruta de acceso no seleccionada o seleccione **nueva ruta de acceso** o **nueva ruta de acceso de VSTS** y escriba o seleccione una nueva ruta de acceso. Seleccione **cargar** para buscar las rutas de acceso nuevo y cargar el archivo de símbolos si se encuentra.
--   Para invalidar cualquier opción de símbolo y reintentar las rutas de búsqueda, seleccione **examinar y buscar \<ejecutable-name >**. Se carga el archivo de símbolos si se encuentra, o **Explorador de archivos** se abre para que pueda seleccionar manualmente el archivo de símbolos.
--   Para abrir el **opciones** > **depuración** > **símbolos** página, seleccione **cambiar configuración de símbolos**.
--   Para mostrar el desensamblado en una nueva ventana una vez, seleccione **ver desensamblado**, o bien seleccione **cuadro de diálogo Opciones** para establecer la opción para mostrar siempre el desensamblado cuando no se encuentran los archivos de origen o de símbolos.
--   Para mostrar las ubicaciones que busca y el resultado, expanda **información de carga de símbolos**.
+- Para cambiar la ruta de acceso de búsqueda, seleccione una ruta de acceso no seleccionada o seleccione **nueva ruta de acceso** o **nueva ruta de acceso de VSTS** y escriba o seleccione una nueva ruta de acceso. Seleccione **cargar** para buscar las rutas de acceso nuevo y cargar el archivo de símbolos si se encuentra.
+- Para invalidar cualquier opción de símbolo y reintentar las rutas de búsqueda, seleccione **examinar y buscar \<ejecutable-name >**. Se carga el archivo de símbolos si se encuentra, o **Explorador de archivos** se abre para que pueda seleccionar manualmente el archivo de símbolos.
+- Para abrir el **opciones** > **depuración** > **símbolos** página, seleccione **cambiar configuración de símbolos**.
+- Para mostrar el desensamblado en una nueva ventana una vez, seleccione **ver desensamblado**, o bien seleccione **cuadro de diálogo Opciones** para establecer la opción para mostrar siempre el desensamblado cuando no se encuentran los archivos de origen o de símbolos.
+- Para mostrar las ubicaciones que busca y el resultado, expanda **información de carga de símbolos**.
 
 Si el depurador busca la *.pdb* archivo después de ejecutar una de las opciones y puede recuperar el archivo de origen con la información de la *.pdb* archivo, muestra el origen. En caso contrario, muestra un **No se cargaron orígenes** página que describe el problema, con vínculos a las acciones que podrían resolver el problema.
 

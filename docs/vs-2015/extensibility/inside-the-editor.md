@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 034afff7b907a8f9079242e26105a46a68e8da6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056047"
 ---
 # <a name="inside-the-editor"></a>Dentro del editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ El editor se compone de una serie de diferentes subsistemas, que están diseñad
   
 - [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a> Información general de los subsistemas  
+## <a name="overview"></a> Información general de los subsistemas  
   
 ### <a name="text-model-subsystem"></a>Subsistema de modelos de texto  
  El subsistema de modelo de texto es responsable de representar texto y lo que permite su manipulación. El subsistema de modelo de texto contiene la <xref:Microsoft.VisualStudio.Text.ITextBuffer> interfaz, que describe la secuencia de caracteres que se va a mostrar el editor. Este texto se puede modificar, supervisan y manipularse en muchos sentidos. El modelo de texto también proporciona tipos para los siguientes aspectos:  
@@ -76,7 +76,7 @@ El editor se compone de una serie de diferentes subsistemas, que están diseñad
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Detenimiento el modelo de texto y la vista de texto  
   
-###  <a name="textmodel"></a> El modelo de texto  
+### <a name="textmodel"></a> El modelo de texto  
  El subsistema de modelo de texto consta de diferentes agrupaciones de tipos de texto. Estos incluyen el búfer de texto, las instantáneas de texto y los intervalos de texto.  
   
 #### <a name="text-buffers-and-text-snapshots"></a>Los búferes de texto y las instantáneas de texto  
@@ -141,7 +141,7 @@ abXefYj
  Puede obtener la posición de un punto de seguimiento o el intervalo de un intervalo de seguimiento para cualquier instantánea del búfer de texto al que pertenecen. Puntos de seguimiento y los intervalos de seguimiento pueden referenciarse de forma segura desde cualquier subproceso.  
   
 #### <a name="content-types"></a>Tipos de contenido  
- Tipos de contenido son un mecanismo para definir los distintos tipos de contenido. Un tipo de contenido puede ser un tipo de archivo, como "text", "code" o "binary" o un tipo de tecnología, como "xml", "vb" o "C#". Por ejemplo, la palabra "using" es una palabra clave en C# y Visual Basic, pero no en otros lenguajes de programación. Por lo tanto, la definición de esta palabra clave estaría limitada a los tipos de contenido de "C#" y "vb".  
+ Tipos de contenido son un mecanismo para definir los distintos tipos de contenido. Un tipo de contenido puede ser un tipo de archivo, como "text", "code" o "binary" o un tipo de tecnología, como "xml", "vb" o "c#". Por ejemplo, la palabra "using" es una palabra clave en C# y Visual Basic, pero no en otros lenguajes de programación. Por lo tanto, la definición de esta palabra clave estaría limitada a los tipos de contenido de "c#" y "vb".  
   
  Tipos de contenido se usan como un filtro para los elementos gráficos y otros elementos del editor. Muchas de las características del editor y puntos de extensión se definen por tipo de contenido; Por ejemplo, color de texto es diferente para los archivos de texto sin formato, archivos XML y archivos de código fuente de Visual Basic. Los búferes de texto normalmente se asignan a un tipo de contenido cuando se crean y se puede cambiar el tipo de contenido de un búfer de texto.  
   
@@ -149,7 +149,7 @@ abXefYj
   
  Los desarrolladores pueden definir sus propios tipos de contenido y registrarlos mediante el <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Muchas características del editor se pueden definir con respecto a un tipo de contenido específico mediante el uso de la <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Por ejemplo, se pueden definir márgenes del editor, los elementos gráficos y controladores de mouse para que se apliquen solo a los editores que se muestran los tipos de contenido concretos.  
   
-###  <a name="textview"></a> La vista de texto  
+### <a name="textview"></a> La vista de texto  
  El elemento de vista del modelo vista controlador (MVC) define la vista de texto, el formato de la vista, los elementos gráficos, como la barra de desplazamiento y el símbolo de intercalación. Todos los elementos de presentación del editor de Visual Studio se basan en WPF.  
   
 #### <a name="text-views"></a>Vistas de texto  
@@ -184,21 +184,21 @@ abXefYj
 ## <a name="editor-features"></a>Características del editor  
  Las características del editor están diseñadas para que la definición de la característica es independiente de su implementación. El editor incluye estas características:  
   
--   Las etiquetas y clasificadores  
+- Las etiquetas y clasificadores  
   
--   Elementos gráficos  
+- Elementos gráficos  
   
--   Proyección  
+- Proyección  
   
--   esquematizar  
+- esquematizar  
   
--   Enlaces del mouse y la clave  
+- Enlaces del mouse y la clave  
   
--   Las operaciones y primitivas  
+- Las operaciones y primitivas  
   
--   IntelliSense  
+- IntelliSense  
   
-###  <a name="tagsandclassifiers"></a> Las etiquetas y clasificadores  
+### <a name="tagsandclassifiers"></a> Las etiquetas y clasificadores  
  Las etiquetas son marcadores que están asociados con un intervalo de texto. Se puede presentar de maneras diferentes, por ejemplo, mediante el uso de colores de texto, subrayados, gráficos o elementos emergentes. Los clasificadores son un tipo de etiqueta.  
   
  Otros tipos de etiquetas son <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> para texto resaltado, <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> para la esquematización, y <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> para errores de compilación.  
@@ -230,14 +230,14 @@ abXefYj
   
  Un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> es un mapa de un tipo de clasificación para un conjunto de propiedades de formato de texto. La implementación de la asignación de formato en el editor controla todas las exportaciones de formatos de clasificación.  
   
-###  <a name="adornments"></a> Elementos gráficos  
+### <a name="adornments"></a> Elementos gráficos  
  Los elementos gráficos son efectos gráficos que no están directamente relacionadas con la fuente y color de los caracteres en la vista de texto. Por ejemplo, el subrayado de subrayado ondulado de color rojo que se usa para marcar el código sin compilar en muchos lenguajes de programación es un elemento de gráfico incrustado e informaciones sobre herramientas son ventanas emergentes adornos. Se derivan de los elementos gráficos <xref:System.Windows.UIElement> e implementar <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Dos tipos especializados de etiqueta del elemento gráfico son el <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, los elementos gráficos que ocupan el mismo espacio que el texto en una vista, y el <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, para el subrayado de subrayado ondulado de color.  
   
  Elementos gráficos incrustados son gráficos que forman parte de la vista de texto con formato. Están organizados en niveles diferentes de orden Z. Hay tres capas integradas, como sigue: texto, el símbolo de intercalación y la selección. Sin embargo, los desarrolladores pueden definir más capas y colocarlos en orden con respecto a ellos. Los tres tipos de elementos gráficos incrustados son elementos gráficos del texto relativo (que mover cuando el texto se mueve y se eliminan cuando se elimina el texto), relativa a la vista de los elementos gráficos, (que tienen que ver con los elementos que no sean de texto de la vista) y controlado por el propietario de los elementos gráficos (los programador debe administrar su ubicación).  
   
  Elementos gráficos emergentes son gráficos que aparecen en una ventana pequeña encima de la vista de texto, por ejemplo, información sobre herramientas.  
   
-###  <a name="projection"></a> Proyección  
+### <a name="projection"></a> Proyección  
  Proyección es una técnica para construir un tipo de búfer de texto que no almacena realmente el texto, pero en su lugar, combina el texto de otros búferes de texto diferente. Por ejemplo, puede usarse un búfer de proyección para concatenar el texto de los otros dos búferes y presentará el resultado como si se encuentra en un solo búfer, o para ocultar partes del texto en un búfer. Un búfer de proyección puede actuar como un búfer de origen a otro búfer de proyección. Para reorganizar el texto de muchas maneras diferentes, se puede construir un conjunto de búferes que se relacionan mediante la proyección. (Un conjunto de este tipo es también se denomina un *gráfico de búfer*.) La característica de esquematización del texto de Visual Studio se implementa mediante el uso de un búfer de proyección para ocultar el texto contraído y el editor de Visual Studio para las páginas ASP.NET usa proyección para admitir incrustados lenguajes como Visual Basic y C#.  
   
  Un <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> se crea mediante <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Un búfer de proyección se representa mediante una secuencia ordenada de <xref:Microsoft.VisualStudio.Text.ITrackingSpan> objetos que se conocen como *intervalos de origen*. El contenido de estos intervalos se presenta como una secuencia de caracteres. Los búferes de texto desde el que se dibujan los intervalos de origen se denominan *búferes de origen*. Los clientes de un búfer de proyección no es necesario tener en cuenta que difiere un búfer de texto normales.  
@@ -271,18 +271,18 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>Eventos y los búferes de proyección  
  Cuando se modifica un búfer de proyección, las modificaciones se envían desde el búfer de proyección a los búferes que dependen de él. Después de que todos los búferes se modifican, se generan eventos de cambio de búfer, empezando por el búfer más profundo.  
   
-###  <a name="outlining"></a> Esquematización  
+### <a name="outlining"></a> Esquematización  
  Esquematización es la capacidad para expandir o contraer diferentes bloques de texto en una vista de texto. Esquematización se define como una especie de <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, en la misma manera que se definen los elementos gráficos. Un <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> es una etiqueta que se define una región de texto que puede expandir o contraer. Para utilizar un esquema, debe importar el <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> para obtener un <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Enumera el Administrador de esquematización, se contrae y expande los bloques diferentes, que se representan como <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> objetos y genera eventos en consecuencia.  
   
-###  <a name="mousebindings"></a> Enlaces del mouse  
+### <a name="mousebindings"></a> Enlaces del mouse  
  Los enlaces del mouse vinculan movimientos del mouse a distintos comandos. Los enlaces del mouse se definen mediante un <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, y los enlaces de teclado se definen mediante un <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. El <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> automáticamente crea una instancia de todos los enlaces y los conecta a los eventos del mouse en la vista.  
   
  El <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> interfaz contiene controladores de eventos de procesamiento previo y posterior al proceso para los distintos eventos de mouse. Controlador de uno de los eventos, puede invalidar algunos de los métodos en <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.  
   
-###  <a name="editoroperations"></a> Operaciones de editor  
+### <a name="editoroperations"></a> Operaciones de editor  
  Operaciones de editor pueden utilizarse para automatizar la interacción con el editor de secuencias de comandos u otros fines. Puede importar el <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> a las operaciones de acceso en un determinado <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. A continuación, puede usar estos objetos para modificar la selección, desplazar la vista o mover el símbolo de intercalación a diferentes partes de la vista.  
   
-###  <a name="intellisense"></a> IntelliSense  
+### <a name="intellisense"></a> IntelliSense  
  IntelliSense es compatible con las bombillas, información rápida, ayuda para la firma (también conocido como información de parámetros) y finalización de instrucciones.  
   
  Finalización de instrucciones proporciona listas emergentes de finalizaciones posibles para los nombres de método, los elementos XML y otros elementos de codificación o marcado. En general, un gesto de usuario invoca una sesión de finalización. La sesión muestra la lista de finalizaciones posibles, y el usuario puede seleccionar uno o descartar la lista. El <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> es responsable de crear y desencadenar el <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. El <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> calcula el <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> de elementos de finalización de la sesión.  

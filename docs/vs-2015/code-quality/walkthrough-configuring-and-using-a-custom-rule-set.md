@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052069"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Tutorial: Configurar y utilizar un conjunto de reglas personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ En este tutorial se muestra cómo usar las herramientas de análisis de código 
   
  En este tutorial, llevará a cabo estos procesos:  
   
--   Crear una biblioteca de clases.  
+- Crear una biblioteca de clases.  
   
--   Seleccione el **reglas de directrices de diseño básicas de Microsoft** conjunto de reglas de análisis de código.  
+- Seleccione el **reglas de directrices de diseño básicas de Microsoft** conjunto de reglas de análisis de código.  
   
--   Agregue su propio código a la clase.  
+- Agregue su propio código a la clase.  
   
--   Ejecutar análisis de código.  
+- Ejecutar análisis de código.  
   
--   Personalizar el conjunto de reglas.  
+- Personalizar el conjunto de reglas.  
   
--   Ejecutar análisis de código y ver cómo funciona el comportamiento personalización ha definido la regla.  
+- Ejecutar análisis de código y ver cómo funciona el comportamiento personalización ha definido la regla.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]o [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]o [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>Usar conjuntos de reglas con análisis de código  
  En primer lugar, cree una biblioteca de clases simple.  
@@ -148,9 +148,9 @@ En este tutorial se muestra cómo usar las herramientas de análisis de código 
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Ejecutar análisis de código en el proyecto RuleSetSample por segunda vez  
   
-1.  En el **analizar** menú, haga clic en **ejecutar análisis de código en RuleSetSample**.  
+1. En el **analizar** menú, haga clic en **ejecutar análisis de código en RuleSetSample**.  
   
-2.  En la ventana Lista de errores, tenga en cuenta que al hacer clic en **advertencias**, ya no verá las infracciones de la advertencia CA1704 para la regla "Los identificadores deberían tener la ortografía correcta".  
+2. En la ventana Lista de errores, tenga en cuenta que al hacer clic en **advertencias**, ya no verá las infracciones de la advertencia CA1704 para la regla "Los identificadores deberían tener la ortografía correcta".  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Configurar análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

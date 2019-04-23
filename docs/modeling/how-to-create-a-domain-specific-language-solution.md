@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear una solución de lenguajes específicos de dominio
+title: Procedimiento Crear una solución de lenguajes específicos de dominio
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051354"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Filtrar Crear una solución de lenguajes específicos de dominio
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Procedimiento Crear una solución de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante el uso de una solución de Visual Studio especializada.
 
 ## <a name="prerequisites"></a>Requisitos previos
@@ -54,9 +54,9 @@ Puede iniciar este procedimiento, antes de instalar estos componentes:
 
 3. Escriba una extensión de nombre de archivo el **extensión de archivo** página. Debe ser único en el equipo y en los equipos en los que desea instalar el DSL. Debería ver el mensaje **editores de Visual Studio ni las aplicaciones usan esta extensión**.
 
-   -   Si ha utilizado la extensión de nombre de archivo anterior DSL experimental que no se han instalado completamente, puede desactivarlas alejar usando la **restablecer la instancia Experimental** herramienta, que puede encontrarse en el menú de Visual Studio SDK.
+   - Si ha utilizado la extensión de nombre de archivo anterior DSL experimental que no se han instalado completamente, puede desactivarlas alejar usando la **restablecer la instancia Experimental** herramienta, que puede encontrarse en el menú de Visual Studio SDK.
 
-   -   Si otra extensión de Visual Studio que usa esta extensión de archivo se ha instalado completamente en el equipo, considere la posibilidad de desinstalarlo. En el **herramientas** menú, haga clic en **Administrador de extensiones**.
+   - Si otra extensión de Visual Studio que usa esta extensión de archivo se ha instalado completamente en el equipo, considere la posibilidad de desinstalarlo. En el **herramientas** menú, haga clic en **Administrador de extensiones**.
 
 4. Inspeccione y, si es necesario ajustar, los campos en las páginas restantes del asistente. Cuando esté satisfecho con la configuración, haga clic en **finalizar**. Para obtener más información acerca de la configuración, consulte [páginas de asistente del Diseñador de DSL](#settings).
 
@@ -85,15 +85,15 @@ Escriba una nueva extensión de archivo.
 
  Si ve una lista de herramientas o paquetes, debe realizar una de las siguientes acciones:
 
--   Escriba una extensión de archivo diferente.
+- Escriba una extensión de archivo diferente.
 
      \- o -
 
--   Restablecer la instancia Experimental de Visual Studio. Se eliminarán todos los DSL que se hayan creado anteriormente. En el **iniciar** menú, haga clic en **todos los programas**, **Microsoft Visual Studio 2010 SDK**, **herramientas**y, a continuación, **restablecer el Instancia de Microsoft Visual Studio 2010 Experimental**. Puede volver a generar los lenguajes DSL que desee volver a usar.
+- Restablecer la instancia Experimental de Visual Studio. Se eliminarán todos los DSL que se hayan creado anteriormente. En el **iniciar** menú, haga clic en **todos los programas**, **Microsoft Visual Studio 2010 SDK**, **herramientas**y, a continuación, **restablecer el Instancia de Microsoft Visual Studio 2010 Experimental**. Puede volver a generar los lenguajes DSL que desee volver a usar.
 
      \- o -
 
--   Si una extensión de Visual Studio que usa esta extensión de archivo se ha instalado completamente en el equipo, desinstálelo. En el **herramientas** menú, haga clic en **Administrador de extensiones**.
+- Si una extensión de Visual Studio que usa esta extensión de archivo se ha instalado completamente en el equipo, desinstálelo. En el **herramientas** menú, haga clic en **Administrador de extensiones**.
 
 ### <a name="product-settings-page"></a>Página de configuración del producto
  **¿Qué es el nombre del producto al que pertenece el nuevo lenguaje específico de dominio?**

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba7e6a97e3ee04f43eb7509e77f2e6972042473c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047194"
 ---
 # <a name="registering-single-file-generators"></a>Registro de generadores de un solo archivo
 Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], debe registrar tan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puede inicializarla y lo asocia con un tipo de proyecto determinado.
@@ -38,15 +38,15 @@ Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](.
 
 2. Crear una clave del registro en deseado [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hive en generadores\\*GUID* donde *GUID* es el GUID definido por el sistema del proyecto o el servicio de lenguaje específico. El nombre de la clave se convierte en el nombre de programación de la herramienta personalizada. La clave de la herramienta personalizada tiene los siguientes valores:
 
-   -   (Predeterminado)
+   - (Predeterminado)
 
         Opcional. Proporciona una descripción fácil de usar de la herramienta personalizada. Este parámetro es opcional pero recomendado.
 
-   -   CLSID
+   - CLSID
 
         Obligatorio. Especifica el identificador de la biblioteca de clases del componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.
 
-   -   GeneratesDesignTimeSource
+   - GeneratesDesignTimeSource
 
         Obligatorio. Indica si los tipos de los archivos generados por esta herramienta personalizada están disponibles para los diseñadores visuales. El valor de este parámetro debe ser (cero) 0 para tipos no están disponibles para los diseñadores visuales o 1 (uno) para los tipos disponibles para los diseñadores visuales.
 

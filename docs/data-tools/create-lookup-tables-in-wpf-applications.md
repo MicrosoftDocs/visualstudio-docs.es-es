@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5fd3e7867b74c9dab923e91fd76424e88b309743
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1631f1b93f79c21914f990620f7e0047c301163f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054331"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creación de tablas de búsqueda en aplicaciones WPF
 
@@ -31,49 +31,49 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
 ## <a name="to-create-a-lookup-table"></a>Para crear una tabla de búsqueda
 
-1.  Agregue uno de los siguientes tipos de orígenes de datos con datos relacionados al proyecto:
+1. Agregue uno de los siguientes tipos de orígenes de datos con datos relacionados al proyecto:
 
-    -   Conjunto de datos o Entity Data Model.
+    - Conjunto de datos o Entity Data Model.
 
-    -   Servicio de datos de WCF, servicio WCF o servicio web. Para obtener más información, consulte [Cómo: conectarse a datos en un servicio](../data-tools/how-to-connect-to-data-in-a-service.md).
+    - Servicio de datos de WCF, servicio WCF o servicio web. Para obtener más información, vea [Cómo: Conexión a los datos en un servicio](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    -   Objetos. Para obtener más información, consulte [enlazar a objetos en Visual Studio](bind-objects-in-visual-studio.md).
+    - Objetos. Para obtener más información, consulte [enlazar a objetos en Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
     > Para poder crear una tabla de búsqueda, deben existir dos tablas u objetos relacionados como un origen de datos para el proyecto.
 
-2.  Abra el **WPF Designer**y asegúrese de que el diseñador contiene un contenedor que sea un destino válido para los elementos de la **orígenes de datos** ventana.
+2. Abra el **WPF Designer**y asegúrese de que el diseñador contiene un contenedor que sea un destino válido para los elementos de la **orígenes de datos** ventana.
 
      Para obtener más información acerca de los destinos de colocación válidos, vea [WPF enlazar controles a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3.  En el menú **Datos**, haga clic en **Mostrar orígenes de datos** para abrir la ventana **Orígenes de datos**.
+3. En el menú **Datos**, haga clic en **Mostrar orígenes de datos** para abrir la ventana **Orígenes de datos**.
 
-4.  Expanda los nodos en el **orígenes de datos** ventana hasta que pueda ver la tabla primaria o el objeto y la tabla secundaria relacionada u objeto.
+4. Expanda los nodos en el **orígenes de datos** ventana hasta que pueda ver la tabla primaria o el objeto y la tabla secundaria relacionada u objeto.
 
     > [!NOTE]
     > La tabla secundaria relacionada o el objeto es el nodo que aparece como un nodo secundario expandible en la tabla u objeto primario.
 
-5.  Haga clic en el menú desplegable del nodo secundario y seleccione **detalles**.
+5. Haga clic en el menú desplegable del nodo secundario y seleccione **detalles**.
 
-6.  Expanda el nodo secundario.
+6. Expanda el nodo secundario.
 
-7.  En el nodo secundario, haga clic en el menú desplegable para el elemento que se relaciona con los datos primarios y secundarios. (En el ejemplo anterior, se trata la **CustomerID** nodo.) Seleccione uno de los siguientes tipos de controles que admiten el enlace de búsqueda:
+7. En el nodo secundario, haga clic en el menú desplegable para el elemento que se relaciona con los datos primarios y secundarios. (En el ejemplo anterior, se trata la **CustomerID** nodo.) Seleccione uno de los siguientes tipos de controles que admiten el enlace de búsqueda:
 
-    -   **ComboBox**
+    - **ComboBox**
 
-    -   **ListBox**
+    - **ListBox**
 
-    -   **ListView**
+    - **ListView**
 
         > [!NOTE]
         > Si el **ListBox** o **ListView** control no aparece en la lista, puede agregar estos controles a la lista. Para obtener información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-    -   Cualquier control personalizado que se deriva de <xref:System.Windows.Controls.Primitives.Selector>.
+    - Cualquier control personalizado que se deriva de <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
         > Para obtener información sobre cómo agregar controles personalizados a la lista de controles puede seleccionar elementos en el **orígenes de datos** ventana, consulte [agregar controles personalizados a la ventana de orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-8.  Arrastre el nodo secundario de la **orígenes de datos** ventana a un contenedor en el diseñador WPF. (En el ejemplo anterior, el nodo secundario es el **pedidos** nodo.)
+8. Arrastre el nodo secundario de la **orígenes de datos** ventana a un contenedor en el diseñador WPF. (En el ejemplo anterior, el nodo secundario es el **pedidos** nodo.)
 
      Visual Studio genera XAML que crea nuevos controles enlazados a datos para cada uno de los elementos que arrastra. El XAML también agrega un nuevo <xref:System.Windows.Data.CollectionViewSource> para la tabla u objeto secundario a los recursos de destino. Para algunos orígenes de datos, Visual Studio también genera código para cargar datos en la tabla u objeto. Para obtener más información, consulte [WPF enlazar controles a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
@@ -81,7 +81,7 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
      Visual Studio establece algunas propiedades en el control para configurar el enlace de búsqueda. En la tabla siguiente se enumera las propiedades que Visual Studio modifica. Si es necesario, puede cambiar estas propiedades en el XAML o en el **propiedades** ventana.
 
-    |Propiedad.|Explicación del parámetro|
+    |Propiedad|Explicación del parámetro|
     |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Esta propiedad especifica la colección o enlace que se usa para obtener los datos que se muestran en el control. Visual Studio establece esta propiedad en el <xref:System.Windows.Data.CollectionViewSource> para los datos primarios que se ha arrastrado al control.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Esta propiedad especifica la ruta de acceso del elemento de datos que se muestra en el control. Visual Studio establece esta propiedad en la primera columna o propiedad en los datos primarios y, después de la clave principal, que tiene un tipo de datos de cadena.<br /><br /> Si desea mostrar una columna o propiedad diferente en los datos primarios, puede cambiar esta propiedad a la ruta de acceso de una propiedad diferente.|
@@ -92,4 +92,4 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
 - [Enlace de controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Mostrar datos relacionados en aplicaciones WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Tutorial: Mostrar datos relacionados en una aplicación WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Tutorial: Visualización de datos relacionados en una aplicación de WPF](../data-tools/display-related-data-in-wpf-applications.md)

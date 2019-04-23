@@ -1,5 +1,5 @@
 ---
-title: Filtrar Firmar archivos de instalación con SignTool.exe (ClickOnce) | Documentos de Microsoft
+title: Procedimiento Firmar archivos de instalación con SignTool.exe (ClickOnce) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,14 +19,14 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbbc745ae2d0a20ab14b3960e34182d7f4ed1865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053213"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Filtrar Firmar archivos de instalación con SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedimiento Firmar archivos de instalación con SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar SignTool.exe para firmar un programa de instalación (setup.exe). Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.  
@@ -37,23 +37,23 @@ Puede usar SignTool.exe para firmar un programa de instalación (setup.exe). Est
   
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Para generar un programa de instalación sin firmar y firmarlo más adelante  
   
-1.  En el equipo de desarrollo, instale el certificado con el que quiere firmar el manifiesto.  
+1. En el equipo de desarrollo, instale el certificado con el que quiere firmar el manifiesto.  
   
-2.  Seleccione el proyecto en el **Explorador de soluciones**.  
+2. Seleccione el proyecto en el **Explorador de soluciones**.  
   
-3.  En el menú **Proyecto**, haga clic en **Propiedades** de *NombreDelProyecto*.  
+3. En el menú **Proyecto**, haga clic en **Propiedades** de *NombreDelProyecto*.  
   
-4.  En la página **Firma**, desactive **Firmar los manifiestos de ClickOnce**.  
+4. En la página **Firma**, desactive **Firmar los manifiestos de ClickOnce**.  
   
-5.  En la página **Publicar**, haga clic en **Requisitos previos**.  
+5. En la página **Publicar**, haga clic en **Requisitos previos**.  
   
-6.  Compruebe que se han seleccionado todos los requisitos previos y haga clic en **Aceptar**.  
+6. Compruebe que se han seleccionado todos los requisitos previos y haga clic en **Aceptar**.  
   
-7.  En la página **Publicar**, compruebe la configuración de la publicación y haga clic en **Publicar ahora**.  
+7. En la página **Publicar**, compruebe la configuración de la publicación y haga clic en **Publicar ahora**.  
   
      La solución publica el manifiesto de la aplicación sin firmar, el manifiesto de implementación sin firmar, los archivos específicos de la versión y el programa de instalación sin firmar en la ubicación de la carpeta de publicación.  
   
-8.  En la página **Publicar**, haga clic en **Requisitos previos**.  
+8. En la página **Publicar**, haga clic en **Requisitos previos**.  
   
 9. En el cuadro de diálogo **Requisitos previos**, desactive **Crear programa de instalación para instalar los componentes necesarios**.  
   
