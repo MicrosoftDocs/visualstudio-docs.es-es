@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e155b33c501326be3d3dcc89fb6b73d501556be
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 2e4331b59c532e681c7e10ab8e43b953e9f72b18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059700"
 ---
 # <a name="save-a-dataset-as-xml"></a>Guardar un conjunto de datos como XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +37,14 @@ Los datos XML en un conjunto de datos pueden tener acceso mediante una llamada a
   
 ### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Para guardar los datos en un conjunto de datos como XML en una variable  
   
--   El <xref:System.Data.DataSet.GetXml%2A> método devuelve un <xref:System.String>. Esto significa que declarar una variable de tipo <xref:System.String> y asignarle los resultados de la <xref:System.Data.DataSet.GetXml%2A> método.  
+- El <xref:System.Data.DataSet.GetXml%2A> método devuelve un <xref:System.String>. Esto significa que declarar una variable de tipo <xref:System.String> y asignarle los resultados de la <xref:System.Data.DataSet.GetXml%2A> método.  
   
      [!code-csharp[VbRaddataSaving#12](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#12)]
      [!code-vb[VbRaddataSaving#12](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#12)]  
   
 ### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>Para guardar los datos en un conjunto de datos como XML en un archivo  
   
--   El <xref:System.Data.DataSet.WriteXml%2A> método tiene varias sobrecargas. El código siguiente muestra cómo guardar los datos en un archivo. Declarar una variable y asigne una ruta válida a guardar el archivo.  
+- El <xref:System.Data.DataSet.WriteXml%2A> método tiene varias sobrecargas. El código siguiente muestra cómo guardar los datos en un archivo. Declarar una variable y asigne una ruta válida a guardar el archivo.  
   
      [!code-csharp[VbRaddataSaving#13](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#13)]
      [!code-vb[VbRaddataSaving#13](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#13)]  

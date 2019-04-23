@@ -1,5 +1,5 @@
 ---
-title: Filtrar Modificar un comando de menú estándar en un lenguaje específico de dominio | Documentos de Microsoft
+title: Procedimiento Modificar un comando de menú estándar en un lenguaje específico de dominio | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058485"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Filtrar Modificar un comando de menú estándar en un lenguaje específico de dominio
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedimiento Modificar un comando de menú estándar en un lenguaje específico de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede modificar el comportamiento de algunos de los comandos estándar que se definen automáticamente en su DSL. Por ejemplo, podría modificar **cortar** para que excluya información confidencial. Para ello, se invalidan los métodos en una clase de conjunto de comandos. Estas clases se definen en el archivo CommandSet.cs, en el proyecto DslPackage, y derivan de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -37,37 +37,37 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
 > [!NOTE]
 >  Si desea crear sus propios comandos de menú, vea [Cómo: Agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a> ¿Qué comandos puede modificar?  
+## <a name="what"></a> ¿Qué comandos puede modificar?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Para averiguar qué comandos puede modificar  
   
-1.  En el `DslPackage` proyecto, abra `GeneratedCode\CommandSet.cs`. Este archivo de C# puede encontrarse en el Explorador de soluciones como subsidiario de `CommandSet.tt`.  
+1. En el `DslPackage` proyecto, abra `GeneratedCode\CommandSet.cs`. Este archivo de C# puede encontrarse en el Explorador de soluciones como subsidiario de `CommandSet.tt`.  
   
-2.  Buscar clases en este archivo cuyos nombres terminan con "`CommandSet`", por ejemplo `Language1CommandSet` y `Language1ClipboardCommandSet`.  
+2. Buscar clases en este archivo cuyos nombres terminan con "`CommandSet`", por ejemplo `Language1CommandSet` y `Language1ClipboardCommandSet`.  
   
-3.  En cada clase de conjunto de comandos, escriba "`override`" seguido de un espacio. IntelliSense mostrará una lista de los métodos que puede invalidar. Cada comando tiene un par de métodos cuyos nombres comienzan por "`ProcessOnStatus`" y "`ProcessOnMenu`".  
+3. En cada clase de conjunto de comandos, escriba "`override`" seguido de un espacio. IntelliSense mostrará una lista de los métodos que puede invalidar. Cada comando tiene un par de métodos cuyos nombres comienzan por "`ProcessOnStatus`" y "`ProcessOnMenu`".  
   
-4.  Anote qué clases de conjunto de comandos contiene el comando que quiere modificar.  
+4. Anote qué clases de conjunto de comandos contiene el comando que quiere modificar.  
   
-5.  Cierre el archivo sin guardar las ediciones.  
+5. Cierre el archivo sin guardar las ediciones.  
   
     > [!NOTE]
     >  Normalmente no debe editar los archivos que se han generado. Las ediciones se perderán la próxima vez que se generen los archivos.  
   
-##  <a name="extend"></a> Extender la clase de conjunto de comandos apropiada  
+## <a name="extend"></a> Extender la clase de conjunto de comandos apropiada  
  Cree un nuevo archivo que contiene una declaración parcial de la clase de conjunto de comandos.  
   
 #### <a name="to-extend-the-command-set-class"></a>Para extender la clase de conjunto de comandos  
   
-1.  En el Explorador de soluciones, en el proyecto DslPackage, abra la carpeta GeneratedCode, busque en CommandSet.tt y abra su archivo generado CommandSet.cs. Anote el espacio de nombres y el nombre de la primera clase que se define en él. Por ejemplo, puede que vea:  
+1. En el Explorador de soluciones, en el proyecto DslPackage, abra la carpeta GeneratedCode, busque en CommandSet.tt y abra su archivo generado CommandSet.cs. Anote el espacio de nombres y el nombre de la primera clase que se define en él. Por ejemplo, puede que vea:  
   
      `namespace Company.Language1`  
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  En **DslPackage**, cree una carpeta denominada **código personalizado**. En esta carpeta, cree un nuevo archivo de clase denominado `CommandSet.cs`.  
+2. En **DslPackage**, cree una carpeta denominada **código personalizado**. En esta carpeta, cree un nuevo archivo de clase denominado `CommandSet.cs`.  
   
-3.  En el nuevo archivo, escriba una declaración parcial que tenga el mismo espacio de nombres y nombre que la clase parcial generada. Por ejemplo:  
+3. En el nuevo archivo, escriba una declaración parcial que tenga el mismo espacio de nombres y nombre que la clase parcial generada. Por ejemplo:  
   
     ```  
     using System;  
@@ -79,7 +79,7 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
   
      **Tenga en cuenta** si usó la plantilla de archivo de clase para crear el nuevo archivo, debe corregir el espacio de nombres y el nombre de clase.  
   
-##  <a name="override"></a> Invalide los métodos de comando  
+## <a name="override"></a> Invalide los métodos de comando  
  La mayoría de los comandos tienen dos métodos asociados: El método con un nombre como `ProcessOnStatus`... determina si el comando debe estar visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... se llama cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Para cambiar cuándo aparece el comando en un menú  

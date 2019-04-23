@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58789905"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055390"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Depurar aplicaciones para UWP en equipos remotos desde Visual Studio
 
 Puede usar Visual Studio para ejecutar, depurar, generar perfiles y probar una aplicación de plataforma Universal de Windows (UWP) en otro equipo o dispositivo. Ejecutando la aplicación para UWP en un equipo remoto es especialmente útil cuando el equipo de Visual Studio no admite la funcionalidad específica de UWP como táctil, ubicación geográfica o la orientación física.
 
-##  <a name="BKMK_Prerequisites"></a> Requisitos previos
+## <a name="BKMK_Prerequisites"></a> Requisitos previos
 
 Para depurar una aplicación para UWP en un dispositivo remoto desde Visual Studio:
 
@@ -35,7 +35,7 @@ Para depurar una aplicación para UWP en un dispositivo remoto desde Visual Stud
   - Algunas versiones de Windows 10 iniciar y ejecutan automáticamente las herramientas remotas. En caso contrario, [instalar y ejecutar las herramientas remotas para Visual Studio](#BKMK_download).
   - Dispositivos móviles de Windows 10 no requiere ni admite las herramientas remotas.
 
-##  <a name="BKMK_ConnectVS"></a> Configurar un proyecto de Visual Studio para la depuración remota
+## <a name="BKMK_ConnectVS"></a> Configurar un proyecto de Visual Studio para la depuración remota
 <a name="BKMK_DirectConnect"></a> Usar el proyecto **propiedades** para especificar el dispositivo remoto al que conectarse. Las opciones varían según el lenguaje de programación.
 
 > [!CAUTION]
@@ -43,27 +43,27 @@ Para depurar una aplicación para UWP en un dispositivo remoto desde Visual Stud
 >
 >Si elige **Windows autenticación** para el **tipo de autenticación**, deberá iniciar sesión en el equipo remoto al depurar. También se debe ejecutar el depurador remoto bajo **Windows autenticación** modo con la misma cuenta de usuario como en el equipo de Visual Studio.
 
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Configurar un C# o proyecto de Visual Basic para la depuración remota
+### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Configurar un C# o proyecto de Visual Basic para la depuración remota
 
 1. Seleccione el C# o proyecto de Visual Basic en Visual Studio **el Explorador de soluciones** y seleccione el **propiedades** icono, presione **Alt** +  **Escriba**, o bien haga clic en y elija **propiedades**.
 
-1.  Seleccione la pestaña **Depurar**.
+1. Seleccione la pestaña **Depurar**.
 
-1.  En **dispositivo de destino**, seleccione **máquina remota** para un equipo remoto, o **dispositivo** para un dispositivo de Windows Mobile 10 conectados directamente.
+1. En **dispositivo de destino**, seleccione **máquina remota** para un equipo remoto, o **dispositivo** para un dispositivo de Windows Mobile 10 conectados directamente.
 
-1.  Para un equipo remoto, escriba el nombre de red o la dirección IP en el **máquina remota** campo o seleccione **buscar** para buscar el dispositivo en el [cuadro de diálogo conexiones remotas](#remote-connections).
+1. Para un equipo remoto, escriba el nombre de red o la dirección IP en el **máquina remota** campo o seleccione **buscar** para buscar el dispositivo en el [cuadro de diálogo conexiones remotas](#remote-connections).
 
     ![Administra las propiedades del proyecto para la depuración remota](../debugger/media/vsrun_managed_projprop_remote.png "administrados depurar las propiedades del proyecto")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurar un C++ proyecto para la depuración remota
+### <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurar un C++ proyecto para la depuración remota
 
-1.  Seleccione el C++ proyecto en Visual Studio **el Explorador de soluciones** y seleccione el **propiedades** icono, presione **Alt**+**ENTRAR**, o bien haga clic en y elija **propiedades**.
+1. Seleccione el C++ proyecto en Visual Studio **el Explorador de soluciones** y seleccione el **propiedades** icono, presione **Alt**+**ENTRAR**, o bien haga clic en y elija **propiedades**.
 
-1.  Seleccione el **depuración** ficha.
+1. Seleccione el **depuración** ficha.
 
-3.  En **depurador para iniciar**, seleccione **máquina remota** para un equipo remoto, o **dispositivo** para un dispositivo de Windows Mobile 10 conectados directamente.
+3. En **depurador para iniciar**, seleccione **máquina remota** para un equipo remoto, o **dispositivo** para un dispositivo de Windows Mobile 10 conectados directamente.
 
-1.  Para un equipo remoto, escriba o seleccione el nombre de red o la dirección IP en el **nombre de la máquina** campo o drop abajo y seleccione **buscar** para buscar el dispositivo en el [cuadro de diálogo conexiones remotas ](#remote-connections).
+1. Para un equipo remoto, escriba o seleccione el nombre de red o la dirección IP en el **nombre de la máquina** campo o drop abajo y seleccione **buscar** para buscar el dispositivo en el [cuadro de diálogo conexiones remotas ](#remote-connections).
 
     ![Propiedades del proyecto de C++ para la depuración remota](../debugger/media/vsrun_cpp_projprop_remote.png "propiedades del proyecto de depuración de C++")
 
@@ -92,7 +92,7 @@ Para que Visual Studio depurar aplicaciones en un equipo remoto, el equipo remot
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-##  <a name="BKMK_RunRemoteDebug"></a> Depuración remota de aplicaciones para UWP
+## <a name="BKMK_RunRemoteDebug"></a> Depuración remota de aplicaciones para UWP
 
 Depuración remota funciona igual que la depuración local.
 

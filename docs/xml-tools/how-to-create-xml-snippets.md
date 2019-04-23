@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43305d7b9353bd34e98a3dcfd31205cb9159a2f3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659931"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060844"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procedimiento Creación de fragmentos XML
 
@@ -23,23 +23,23 @@ El editor XML se puede usar para crear nuevos fragmentos XML. El editor incluye 
 
  Para crear un nuevo código XML fragmento de código, cree un nuevo archivo XML y usar el **Insertar fragmento de código** característica.
 
-1.  En el **archivo** menú, haga clic en **New** y, a continuación, haga clic en **archivo**.
+1. En el **archivo** menú, haga clic en **New** y, a continuación, haga clic en **archivo**.
 
-2.  Haga clic en **archivo XML** y, a continuación, haga clic en **abierto**.
+2. Haga clic en **archivo XML** y, a continuación, haga clic en **abierto**.
 
-3.  Haga clic en el panel del editor y seleccione **Insertar fragmento de código**.
+3. Haga clic en el panel del editor y seleccione **Insertar fragmento de código**.
 
-4.  Seleccione **fragmento** en la lista y presione **ENTRAR**.
+4. Seleccione **fragmento** en la lista y presione **ENTRAR**.
 
-5.  Realice los cambios que considere oportunos en el nuevo fragmento.
+5. Realice los cambios que considere oportunos en el nuevo fragmento.
 
-6.  Desde el **archivo** menú, seleccione **guardar archivoXml.XML**.
+6. Desde el **archivo** menú, seleccione **guardar archivoXml.XML**.
 
      El **Guardar archivo como** se muestra el cuadro de diálogo.
 
-7.  Escriba el nombre del nuevo fragmento y seleccione **archivos de fragmento** desde el **Guardar como tipo** ventana desplegable.
+7. Escriba el nombre del nuevo fragmento y seleccione **archivos de fragmento** desde el **Guardar como tipo** ventana desplegable.
 
-8.  Use la **guardar en** lista desplegable para cambiar la ubicación del archivo a la *Mis documentos\Visual Studio 2005\Code Snippets\XML\My XML Snippets* carpeta y, a continuación, presione **guardar**.
+8. Use la **guardar en** lista desplegable para cambiar la ubicación del archivo a la *Mis documentos\Visual Studio 2005\Code Snippets\XML\My XML Snippets* carpeta y, a continuación, presione **guardar**.
 
 ## <a name="snippet-description"></a>Descripción del fragmento de código
 

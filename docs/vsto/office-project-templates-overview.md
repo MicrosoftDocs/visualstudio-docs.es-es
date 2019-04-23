@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c64fac3e69a1b7678b9583f8529dd7b94201932e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054578"
 ---
 # <a name="office-project-templates-overview"></a>Introducción a las plantillas de proyecto de Office
   Las Microsoft Office Developer Tools en Visual Studio incluye plantillas de proyecto para crear los siguientes tipos de soluciones de Office:
@@ -53,7 +53,7 @@ ms.locfileid: "56614693"
 > [!NOTE]
 > Las herramientas de desarrollo de Office se incluyen con algunas ediciones de Visual Studio. Para obtener más información, consulte [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-##  <a name="DocLevel"></a> Personalizaciones de nivel de documento
+## <a name="DocLevel"></a> Personalizaciones de nivel de documento
  El nodo **Office** del cuadro de diálogo **Nuevo proyecto** proporciona las siguientes plantillas de proyecto como punto de partida para crear personalizaciones de documentos para Word y Excel:
 
 - **Documento de VSTO de Word 2013 y 2016**
@@ -81,17 +81,17 @@ ms.locfileid: "56614693"
 
  Para obtener información sobre cómo empezar en estos tipos de proyecto, vea los temas siguientes:
 
--   [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)
+- [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)
 
--   [Soluciones de Word](../vsto/word-solutions.md)
+- [Soluciones de Word](../vsto/word-solutions.md)
 
--   [Soluciones de Excel](../vsto/excel-solutions.md)
+- [Soluciones de Excel](../vsto/excel-solutions.md)
 
--   [Tutorial: Crear la primera personalización de nivel de documento para Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [Tutorial: Crear la primera personalización de nivel de documento para Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
--   [Tutorial: Crear la primera personalización en el nivel de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [Tutorial: Crear la primera personalización en el nivel de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-##  <a name="AppLevel"></a> Complementos de VSTO
+## <a name="AppLevel"></a> Complementos de VSTO
  El nodo **Office/SharePoint** del cuadro de diálogo **Nuevo proyecto** proporciona las siguientes plantillas de proyecto como punto de partida para crear complementos de VSTO.
 
 - **Complemento de VSTO de Excel 2013 y 2016**
@@ -157,7 +157,7 @@ ms.locfileid: "56614693"
 |Los usuarios pueden abrir y modificar un documento, salvo que esté configurado como de sólo lectura. Los cambios guardados se mantienen en el original.|Los usuarios pueden abrir una plantilla para crear una copia local como documento nuevo. No pueden modificar el original, salvo si tienen permisos especiales.|
 |Cuando se abre, el documento produce el evento <xref:Microsoft.Office.Tools.Word.Document.Open> .|Cuando se abre, la plantilla produce el evento <xref:Microsoft.Office.Tools.Word.Document.New> .|
 
-##  <a name="Limitations"></a> Limitaciones de las plantillas globales y complementos de Excel (archivos .xla)
+## <a name="Limitations"></a> Limitaciones de las plantillas globales y complementos de Excel (archivos .xla)
  Es posible que los documentos, los libros y las plantillas no funcionen correctamente como plantillas globales ni como complementos VSTO de Excel (archivos .xla).
 
 ## <a name="word-templates"></a>Plantillas de Word

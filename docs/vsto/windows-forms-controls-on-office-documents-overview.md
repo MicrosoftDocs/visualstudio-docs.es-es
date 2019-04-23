@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a233518f34fdafdb45822f4bc12c3edc452f50cb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598861"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055360"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Controles de Windows Forms en información general sobre documentos de Office
   Los controles de Windows Forms son objetos con los que pueden interactuar los usuarios para escribir o manipular datos. En los proyectos de nivel de documento para Microsoft Office Excel y Microsoft Office Word, puede agregar controles de formularios Windows Forms al documento o libro del proyecto en tiempo de diseño, o puede agregar estos controles mediante programación en tiempo de ejecución. Puede agregar estos controles mediante programación a cualquier documento o libro abierto en tiempo de ejecución en un complemento VSTO para Excel o Word.
@@ -42,19 +42,20 @@ ms.locfileid: "56598861"
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
 ## <a name="use-windows-forms-controls"></a>Usar controles de Windows Forms
- Puede agregar controles de Windows Forms a documentos y a elementos de interfaz de usuario (IU) personalizables, incluidos paneles de acciones, paneles de tareas personalizados y formularios de Windows Forms. Los controles de formularios de Windows Forms tienen generalmente el mismo comportamiento en documentos que en estos otros elementos de interfaz de usuario, pero existen algunas diferencias. Para obtener información, consulte [controla las limitaciones de los formularios Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- La decisión de si desea agregar controles de formularios Windows Forms a un documento o algún otro elemento de interfaz de usuario depende de varios factores. Al diseñar la interfaz de usuario de la solución, considere los usos de los controles de formularios Windows Forms, como se describe en la tabla siguiente.
+Puede agregar controles de Windows Forms a documentos y a elementos de interfaz de usuario (IU) personalizables, incluidos paneles de acciones, paneles de tareas personalizados y formularios de Windows Forms. Los controles de formularios de Windows Forms tienen generalmente el mismo comportamiento en documentos que en estos otros elementos de interfaz de usuario, pero existen algunas diferencias. Para obtener información, consulte [controla las limitaciones de los formularios Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- En un documento.
- -   Si desea mostrar los controles todo el tiempo.
+La decisión de si desea agregar controles de formularios Windows Forms a un documento o algún otro elemento de interfaz de usuario depende de varios factores. Al diseñar la interfaz de usuario de la solución, considere los usos de los controles de formularios Windows Forms, como se describe en la tabla siguiente.
+
+En un documento.
+- Si desea mostrar los controles todo el tiempo.
 
 - Si desea que los usuarios escriban datos directamente en el documento, por ejemplo, en documentos basados en formularios donde se bloquea la superficie de edición.
 
 - Si desea que los controles se muestren en consonancia con los datos del documento. Por ejemplo, si va a agregar botones a cada fila de un objeto de lista, desearía tenerlos en consonancia con cada elemento de la lista.
 
-  En el panel de acciones o en el panel de tareas personalizado.
-  -   Si desea proporcionar información contextual al usuario.
+En el panel de acciones o en el panel de tareas personalizado.
+- Si desea proporcionar información contextual al usuario.
 
 - Si desea que solo aparezcan los resultados en el documento y no los controles ni los datos de consulta .
 
@@ -62,8 +63,8 @@ ms.locfileid: "56598861"
 
 - Si desea asegurarse de que los controles no interfieren con la vista del documento.
 
-  En un formulario de Windows Form.
-  -   Si desea controlar el tamaño de la interfaz de usuario.
+En un formulario de Windows Form.
+- Si desea controlar el tamaño de la interfaz de usuario.
 
 - Si desea impedir que los usuarios oculten o eliminen los controles.
 
@@ -80,32 +81,32 @@ ms.locfileid: "56598861"
 ### <a name="create-custom-user-controls"></a>Crear controles de usuario personalizados
  Puede agregar un control de usuario al proyecto y luego agregarlo al **Cuadro de herramientas**. Luego puede arrastrar el control de usuario directamente al documento de la misma manera que agregaría un control de formularios de Windows Forms al documento. Hay algunos aspectos que tener en cuenta al crear controles de usuario:
 
--   No cree un control de usuario **sealed** . Al arrastrar el control a su documento, Visual Studio genera una clase contenedora derivada del control de usuario para extenderlo y permitir su uso en el documento. Si el control de usuario es **sealed**, Visual Studio no puede generar la clase contenedora.
+- No cree un control de usuario **sealed** . Al arrastrar el control a su documento, Visual Studio genera una clase contenedora derivada del control de usuario para extenderlo y permitir su uso en el documento. Si el control de usuario es **sealed**, Visual Studio no puede generar la clase contenedora.
 
--   Los controles de usuario deben tener el atributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> establecido en **true**. Los controles de usuario creados dentro de un proyecto de Office tienen este atributo establecido en **true** de manera predeterminada, pero los controles de usuario que forman parte de proyectos externos pueden no tener este atributo establecido en **true**.
+- Los controles de usuario deben tener el atributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> establecido en **true**. Los controles de usuario creados dentro de un proyecto de Office tienen este atributo establecido en **true** de manera predeterminada, pero los controles de usuario que forman parte de proyectos externos pueden no tener este atributo establecido en **true**.
 
--   Después de agregar un control de usuario al documento, no cambie el nombre ni elimine <xref:System.Windows.Forms.UserControl> la clase del proyecto. Si necesita cambiar el nombre de un control de usuario, debe eliminarlo primero del documento y luego agregarlo de nuevo después de cambiarle el nombre.
+- Después de agregar un control de usuario al documento, no cambie el nombre ni elimine <xref:System.Windows.Forms.UserControl> la clase del proyecto. Si necesita cambiar el nombre de un control de usuario, debe eliminarlo primero del documento y luego agregarlo de nuevo después de cambiarle el nombre.
 
 ### <a name="arrange-controls-at-design-time"></a>Organizar controles en tiempo de diseño
  Si agrega varios controles a sus documentos de Word y Excel en tiempo de diseño, puede establecer rápidamente la alineación de todos los controles seleccionados mediante las barras de herramientas de **Microsoft Office Word** y **Microsoft Office Excel** en Visual Studio. Estas barras de herramientas solo están disponibles cuando un documento o una hoja de cálculo están abiertas en el diseñador.
 
  Al seleccionar varios controles en el diseñador, puede utilizar los siguientes botones de estas barras de herramientas para organizar los controles:
 
--   **Alinear lados izquierdos**
+- **Alinear lados izquierdos**
 
--   **Alinear centros**
+- **Alinear centros**
 
--   **Alinear lados derechos**
+- **Alinear lados derechos**
 
--   **Alinear lados superiores**
+- **Alinear lados superiores**
 
--   **Alinear puntos medios**
+- **Alinear puntos medios**
 
--   **Alinear lados inferiores**
+- **Alinear lados inferiores**
 
--   **Igualar espaciado horizontal**
+- **Igualar espaciado horizontal**
 
--   **Igualar espaciado vertical**
+- **Igualar espaciado vertical**
 
 > [!NOTE]
 >  En proyectos de Word, estos botones están habilitados solo si los controles seleccionados no están en línea con el texto. De forma predeterminada, los controles que se agregan al documento en tiempo de diseño están en línea con el texto.

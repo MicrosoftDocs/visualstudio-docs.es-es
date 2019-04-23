@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0157b18c0b0dfce2ba69482dc1c61e1ddf3a996
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcca366cb06916811a66da9f168684e704c50714
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056010"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Error: Error de inicio de sesión del grupo de trabajo de forma remota
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,44 +41,44 @@ Este error reza como sigue:
   
  Este error se produce cuando se está depurando en un equipo de un grupo de trabajo y se intenta conectar con el equipo remoto. Entre las posibles causas se incluyen:  
   
--   No existe ninguna cuenta que coincida con el nombre y la contraseña en el equipo remoto.  
+- No existe ninguna cuenta que coincida con el nombre y la contraseña en el equipo remoto.  
   
--   Si el equipo de Visual Studio y la máquina remota están en grupos de trabajo, el error se podría producir debido a la configuración predeterminada de la **Directiva de seguridad local** de la máquina remota. La configuración predeterminada de la **Directiva de seguridad local** es **Solo invitado: los usuarios locales se autentican como invitados**. Para depurar en esta configuración, es necesario cambiar la configuración del equipo remoto a **Clásico: usuarios locales autenticados como ellos mismos**.  
+- Si el equipo de Visual Studio y la máquina remota están en grupos de trabajo, el error se podría producir debido a la configuración predeterminada de la **Directiva de seguridad local** de la máquina remota. La configuración predeterminada de la **Directiva de seguridad local** es **Solo invitado: los usuarios locales se autentican como invitados**. Para depurar en esta configuración, es necesario cambiar la configuración del equipo remoto a **Clásico: usuarios locales autenticados como ellos mismos**.  
   
 > [!NOTE]
 >  Debe ser administrador para llevar a cabo las tareas siguientes.  
   
 ### <a name="to-open-the-local-security-policy-window"></a>Para abrir la ventana Directiva de seguridad local  
   
-1.  Inicie el complemento **secpol.msc** en Microsoft Management Console. Escriba secpol.msc en la búsqueda de Windows, el cuadro Ejecutar de Windows o en un símbolo del sistema.  
+1. Inicie el complemento **secpol.msc** en Microsoft Management Console. Escriba secpol.msc en la búsqueda de Windows, el cuadro Ejecutar de Windows o en un símbolo del sistema.  
   
 ### <a name="to-add-user-rights-assignments"></a>Para agregar asignaciones de derechos de usuario  
   
-1.  1  
+1. 1  
   
-2.  Abra la ventana **Directiva de seguridad local**.  
+2. Abra la ventana **Directiva de seguridad local**.  
   
-3.  Expanda la carpeta **Directivas locales**.  
+3. Expanda la carpeta **Directivas locales**.  
   
-4.  Haga clic en **Asignación de derechos de usuario**.  
+4. Haga clic en **Asignación de derechos de usuario**.  
   
-5.  En la columna **Directiva**, haga doble clic en **Depurar programas** para ver las asignaciones actuales de la directiva de grupo local en el cuadro de diálogo **Configuración de directiva de seguridad local**.  
+5. En la columna **Directiva**, haga doble clic en **Depurar programas** para ver las asignaciones actuales de la directiva de grupo local en el cuadro de diálogo **Configuración de directiva de seguridad local**.  
   
      ![Derechos de usuario de directiva de seguridad local](../debugger/media/dbg-err-localsecuritypolicy-userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
-6.  Para agregar nuevos usuarios, haga clic en el botón **Agregar usuario o grupo**.  
+6. Para agregar nuevos usuarios, haga clic en el botón **Agregar usuario o grupo**.  
   
 ### <a name="to-change-the-sharing-and-security-model"></a>Para cambiar el modelo de seguridad y recursos compartidos  
   
-1.  Abra la ventana **Directiva de seguridad local**.  
+1. Abra la ventana **Directiva de seguridad local**.  
   
-2.  Expanda la carpeta **Directivas locales**.  
+2. Expanda la carpeta **Directivas locales**.  
   
-3.  Haga clic en **Opciones de seguridad**.  
+3. Haga clic en **Opciones de seguridad**.  
   
-4.  En el **directiva** columna, haga doble clic en **acceso de red: Modelo de seguridad y recursos compartidos para cuentas locales**.  
+4. En el **directiva** columna, haga doble clic en **acceso de red: Modelo de seguridad y recursos compartidos para cuentas locales**.  
   
-5.  En el **acceso de red: Modelo de seguridad y recursos compartidos para cuentas locales** diálogo cuadro, cambie el valor a **clásico: usuarios locales autenticados como ellos mismos** y haga clic en el **aplicar** botón.  
+5. En el **acceso de red: Modelo de seguridad y recursos compartidos para cuentas locales** diálogo cuadro, cambie el valor a **clásico: usuarios locales autenticados como ellos mismos** y haga clic en el **aplicar** botón.  
   
      ![Opciones de seguridad de directiva de seguridad local](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   

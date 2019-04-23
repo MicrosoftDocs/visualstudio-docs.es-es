@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a97dfc6e7f93602b50102da51127fff6169ac3dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059245"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Advertencia: la dependencia &#39;archivo&#39; proyecto &#39;proyecto&#39; no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia &#39;archivo.&#39;
 Existe un conflicto entre dependencias; para que la aplicación se ejecute se debería copiar más de un archivo de ensamblado distinto con el mismo nombre en el directorio bin. El directorio de ejecución puede resolver el conflicto, ya que una de las dependencias es una referencia principal.  
@@ -31,7 +31,7 @@ Existe un conflicto entre dependencias; para que la aplicación se ejecute se de
   
  **Para corregir este error**  
   
--   Copie un archivo de ensamblado (o ninguno) en el directorio bin, lo que se puede hacer colocando los archivos de ensamblado en la memoria caché global de ensamblados. La memoria caché global de ensamblados soluciona los conflictos de nombre de archivo. No se realizarán copias locales del archivo de ensamblado, porque Common Language Runtime sabe cómo buscar ensamblados en la memoria caché global de ensamblados. Para obtener más información, vea [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) y [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015).  
+- Copie un archivo de ensamblado (o ninguno) en el directorio bin, lo que se puede hacer colocando los archivos de ensamblado en la memoria caché global de ensamblados. La memoria caché global de ensamblados soluciona los conflictos de nombre de archivo. No se realizarán copias locales del archivo de ensamblado, porque Common Language Runtime sabe cómo buscar ensamblados en la memoria caché global de ensamblados. Para obtener más información, vea [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) y [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015).  
   
 ## <a name="see-also"></a>Vea también  
  [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)   

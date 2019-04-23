@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Cambiar mayúsculas y minúsculas en el Editor de texto | Microsoft Docs
+title: Procedimiento Cambiar mayúsculas y minúsculas en el Editor de texto | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 167e4f4b8977ed847823fb6db101f207142d6b4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799748"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060324"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Cómo: Cambiar las mayúsculas y minúsculas en el editor
+# <a name="how-to-change-text-case-in-the-editor"></a>Procedimiento Cambiar mayúsculas y minúsculas en el Editor de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar comandos de menú o métodos abreviados de teclado para convertir las mayúsculas y minúsculas del texto seleccionado todas a mayúsculas o todas a minúsculas.  
@@ -31,11 +31,11 @@ Puede usar comandos de menú o métodos abreviados de teclado para convertir las
   
 #### <a name="to-switch-text-to-upper-case"></a>Para cambiar texto a mayúsculas  
   
-1.  Seleccione el texto que quiere convertir.  
+1. Seleccione el texto que quiere convertir.  
   
-2.  En el menú **Edición**, seleccione **Opciones avanzadas**.  
+2. En el menú **Edición**, seleccione **Opciones avanzadas**.  
   
-3.  Para convertir todo el texto a mayúsculas, pulse **Poner en mayúsculas**, o presione **CTRL**+**MAYÚS**+**U**.  
+3. Para convertir todo el texto a mayúsculas, pulse **Poner en mayúsculas**, o presione **CTRL**+**MAYÚS**+**U**.  
   
      o  
   

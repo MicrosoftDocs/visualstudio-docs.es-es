@@ -11,23 +11,23 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fb532c122bec0ff56c00a261ca464daba0a464f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bdb818735a19be8dc6e8a96f677072d00aae6a46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055605"
 ---
 # <a name="text-template-control-blocks"></a>Bloques de control de las plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bloques de control le permite escribir código en su plantilla de texto para variar el resultado. Hay tres tipos de bloques de control, que se distinguen por los corchetes de apertura:  
   
--   `<# Standard control blocks #>` puede contener instrucciones.  
+- `<# Standard control blocks #>` puede contener instrucciones.  
   
--   `<#= Expression control blocks #>` puede contener expresiones.  
+- `<#= Expression control blocks #>` puede contener expresiones.  
   
--   `<#+ Class feature control blocks #>` puede contener métodos, campos y propiedades.  
+- `<#+ Class feature control blocks #>` puede contener métodos, campos y propiedades.  
   
 ## <a name="standard-control-block"></a>Bloque de control estándar  
  Los bloques de control estándar contienen instrucciones. Por ejemplo, el siguiente bloque estándar obtiene los nombres de todos los atributos del documento XML:  
@@ -150,17 +150,17 @@ Some text.
   
  Cuando utilice bloques de control, debe tener en cuenta las siguientes consideraciones:  
   
--   **Lenguaje.** En una plantilla de texto puede utilizar el código C# o Visual Basic. El lenguaje predeterminado es C#, pero puede especificar Visual Basic con el parámetro `language` de la directiva `template`. (Para obtener más información sobre la `template` la directiva, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).)  
+- **Lenguaje.** En una plantilla de texto puede utilizar el código C# o Visual Basic. El lenguaje predeterminado es C#, pero puede especificar Visual Basic con el parámetro `language` de la directiva `template`. (Para obtener más información sobre la `template` la directiva, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).)  
   
      El lenguaje que usa en los bloques de control no tiene nada que ver con el lenguaje o el formato del texto que genera en una plantilla de texto. Puede generar C# usando el código Visual Basic o viceversa.  
   
      Solo puede usar un lenguaje en una plantilla de texto determinada, incluidas todas las plantillas de texto que incluya con la directiva `include`.  
   
--   **Variables locales.** Puesto que todo el código de los bloques de control estándar y de expresiones de una plantilla de texto se genera como un único método, debe asegurarse de que no existe ningún conflicto con los nombres de las variables locales. Si va a incluir otras plantillas de texto, debe asegurarse de que los nombres de variable sean únicos en todas las plantillas incluidas. Una manera de asegurarse de esto es agregar una cadena a cada nombre de variable local que identifique la plantilla de texto en la que se ha declarado.  
+- **Variables locales.** Puesto que todo el código de los bloques de control estándar y de expresiones de una plantilla de texto se genera como un único método, debe asegurarse de que no existe ningún conflicto con los nombres de las variables locales. Si va a incluir otras plantillas de texto, debe asegurarse de que los nombres de variable sean únicos en todas las plantillas incluidas. Una manera de asegurarse de esto es agregar una cadena a cada nombre de variable local que identifique la plantilla de texto en la que se ha declarado.  
   
      También es una buena idea inicializar las variables locales en valores razonables al declararlas, especialmente cuando incluya varias plantillas de texto.  
   
--   **Anidamiento de bloques de control.** Los bloques de control no pueden anidarse dentro de otros bloques de control. Siempre debe finalizar un bloque de control determinado antes de abrir otro. Por ejemplo, a continuación se muestra cómo imprimir algún texto en un bloque de expresiones como parte de un bloque de control estándar.  
+- **Anidamiento de bloques de control.** Los bloques de control no pueden anidarse dentro de otros bloques de control. Siempre debe finalizar un bloque de control determinado antes de abrir otro. Por ejemplo, a continuación se muestra cómo imprimir algún texto en un bloque de expresiones como parte de un bloque de control estándar.  
   
     ```  
     <#   
@@ -172,4 +172,4 @@ Some text.
     <# } #>  
     ```  
   
--   **La refactorización.** Para conseguir que las plantillas de texto sean breves y fáciles de entender, se recomienda evitar un código repetitivo factorizando el código reutilizable en funciones del asistente en los bloques de características de clase, o bien creando su propia clase de plantilla de texto que herede de la clase Microsoft.VisualStudio.TextTemplating.TextTransformation.
+- **La refactorización.** Para conseguir que las plantillas de texto sean breves y fáciles de entender, se recomienda evitar un código repetitivo factorizando el código reutilizable en funciones del asistente en los bloques de características de clase, o bien creando su propia clase de plantilla de texto que herede de la clase Microsoft.VisualStudio.TextTemplating.TextTransformation.

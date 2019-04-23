@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c29b5c5e80f8a0381a2c42704d14a8ea9fc3cae5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a806e434bebb5a561534fb8aec19d16dc9e28ffd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057438"
 ---
 # <a name="create-custom-editors-and-designers"></a>Creación de diseñadores y editores personalizados
+
 El entorno de desarrollo integrado (IDE) de Visual Studio puede hospedar diferentes tipos de editor:
 
 - El editor de núcleo de Visual Studio
@@ -29,10 +30,11 @@ El entorno de desarrollo integrado (IDE) de Visual Studio puede hospedar diferen
 
 - Diseñadores
 
-  La siguiente información le ayuda a elegir el tipo de editor que necesita.
+La siguiente información le ayuda a elegir el tipo de editor que necesita.
 
 ## <a name="types-of-editor"></a>Tipos de editor
- Para obtener información acerca del editor de núcleo de Visual Studio, consulte [ampliar los servicios de editor y lenguaje](../extensibility/extending-the-editor-and-language-services.md).
+
+Para obtener información acerca del editor de núcleo de Visual Studio, consulte [ampliar los servicios de editor y lenguaje](../extensibility/extending-the-editor-and-language-services.md).
 
 ### <a name="custom-editors"></a>Editores personalizados
  Un editor personalizado es aquella que está diseñado para funcionar en circunstancias específicas. Por ejemplo, puede crear un editor cuya función consiste en leer y escribir datos en un repositorio específico, como un servidor Microsoft Exchange. Si desea un editor que funciona con el tipo de proyecto solo o si desea que un editor que tenga solo unos comandos específicos, elija un editor personalizado. Sin embargo, tenga en cuenta que los usuarios no podrán utilizar un editor personalizado para modificar estándar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyectos.
@@ -70,24 +72,36 @@ El entorno de desarrollo integrado (IDE) de Visual Studio puede hospedar diferen
    Si se puede incrustar, debe crear una ventana de host para el editor externo y, a continuación, llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> método y establezca el <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valor de enumeración para `DP_External`. Si no se puede incrustar el editor, el IDE creará automáticamente una ventana independiente para él.
 
 ## <a name="in-this-section"></a>En esta sección
-- [Tutorial: Crear un editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md) se explica cómo crear un editor personalizado.
 
-- [Tutorial: Agregar características a un editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md) se explica cómo agregar características a un editor personalizado.
+[Tutorial: Crear un editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md)\
+Explica cómo crear un editor personalizado.
 
-- [Configuración de inicialización y metadatos del diseñador](../extensibility/designer-initialization-and-metadata-configuration.md) explica cómo inicializar un diseñador.
+[Tutorial: Agregar características a un editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
+Explica cómo agregar características a un editor personalizado.
 
-- [Proporcionar soporte para deshacer a diseñadores](../extensibility/supplying-undo-support-to-designers.md) se explica cómo proporcionar soporte para deshacer para diseñadores.
+[Configuración de inicialización y metadatos del diseñador](../extensibility/designer-initialization-and-metadata-configuration.md)\
+Explica cómo inicializar un diseñador.
 
-- [Colores de sintaxis en editores personalizados](../extensibility/syntax-coloring-in-custom-editors.md) explica la diferencia entre los colores en el editor básico y en editores personalizados de la sintaxis.
+[Fuente de alimentación de deshacer a diseñadores](../extensibility/supplying-undo-support-to-designers.md)\
+Explica cómo proporcionar soporte para deshacer para diseñadores.
 
-- [Vista de datos y el documento en editores personalizados de documento](../extensibility/document-data-and-document-view-in-custom-editors.md) se explica cómo implementar datos de documentos y vistas de documento en editores personalizados.
+[Colores de sintaxis en editores personalizados](../extensibility/syntax-coloring-in-custom-editors.md)\
+Explica la diferencia entre los colores en el editor básico y en editores personalizados de la sintaxis.
+
+[Datos del documento y vista de documento en editores personalizados](../extensibility/document-data-and-document-view-in-custom-editors.md)\
+Explica cómo implementar datos de documentos y vistas de documento en editores personalizados.
 
 ## <a name="related-sections"></a>Secciones relacionadas
-- [Las interfaces heredadas en el editor](../extensibility/legacy-interfaces-in-the-editor.md) se explica cómo obtener acceso al editor de núcleo por medio de la API heredada.
 
-- [Desarrollar un servicio de lenguaje heredado](../extensibility/internals/developing-a-legacy-language-service.md) explica cómo implementar un servicio de lenguaje.
+[Interfaces heredadas en el editor](../extensibility/legacy-interfaces-in-the-editor.md)\
+Explica cómo obtener acceso al editor de núcleo por medio de la API heredada.
 
-- [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md) se explica cómo crear elementos de interfaz de usuario que coinciden con el resto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+[Desarrollar un servicio de lenguaje heredado](../extensibility/internals/developing-a-legacy-language-service.md)\
+Explica cómo implementar un servicio de lenguaje.
+
+[Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
+Explica cómo crear elementos de interfaz de usuario que coinciden con el resto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Vea también
+
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

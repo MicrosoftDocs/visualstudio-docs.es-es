@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65760d8203ad01e9bab7987435691a8d5acf4b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab88824055b890fcc65424d692dd12500d021712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056487"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Error: la dependencia &#39;archivo&#39; proyecto &#39;proyecto&#39; no se puede copiar en el directorio de ejecución porque entraría en conflicto con la dependencia &#39;archivo&#39;
 Existe un conflicto entre referencias; se está copiando más de una dependencia distinta con el mismo nombre de archivo en el directorio bin para que la aplicación se ejecute. El directorio de ejecución no puede resolver el conflicto porque ninguna de las dependencias es una referencia principal.  
@@ -27,11 +27,11 @@ Existe un conflicto entre referencias; se está copiando más de una dependencia
   
  **Para corregir este error**  
   
--   Convierta uno de los ensamblados en una referencia directa del proyecto. Un posible inconveniente de este método es que no está garantizado que el ensamblado que elija funcione con los ensamblados que pueden requerir alguna otra versión del ensamblado al que se hace referencia.  
+- Convierta uno de los ensamblados en una referencia directa del proyecto. Un posible inconveniente de este método es que no está garantizado que el ensamblado que elija funcione con los ensamblados que pueden requerir alguna otra versión del ensamblado al que se hace referencia.  
   
      \- o -  
   
--   Procure que ambas copias del ensamblado tengan nombres seguros y estén en la memoria caché global de ensamblados. Así, no será necesario copiar los ensamblados en el directorio bin.  
+- Procure que ambas copias del ensamblado tengan nombres seguros y estén en la memoria caché global de ensamblados. Así, no será necesario copiar los ensamblados en el directorio bin.  
   
 ## <a name="see-also"></a>Vea también  
  [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)   

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be8d42a5a4557b39a02e724eb54b5434c1b454ea
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055267"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procedimiento Utilizar fragmentos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,46 +31,46 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Para insertar fragmentos desde el menú contextual  
   
-1.  Coloque el cursor en el lugar en el que desea insertar el fragmento XML.  
+1. Coloque el cursor en el lugar en el que desea insertar el fragmento XML.  
   
-2.  Haga clic en y seleccione **Insertar fragmento de código**.  
+2. Haga clic en y seleccione **Insertar fragmento de código**.  
   
      Se muestra una lista de fragmentos XML disponibles.  
   
-3.  Seleccione un fragmento de la lista con el mouse o escriba el nombre del fragmento y presione la tecla TAB o INTRO.  
+3. Seleccione un fragmento de la lista con el mouse o escriba el nombre del fragmento y presione la tecla TAB o INTRO.  
   
 #### <a name="to-insert-snippets-using-the-intellisense-menu"></a>Para insertar fragmentos con el menú IntelliSense  
   
-1.  Coloque el cursor en el lugar en el que desea insertar el fragmento XML.  
+1. Coloque el cursor en el lugar en el que desea insertar el fragmento XML.  
   
-2.  Desde el **editar** menú, elija **IntelliSense**y, a continuación, seleccione **Insertar fragmento de código**.  
+2. Desde el **editar** menú, elija **IntelliSense**y, a continuación, seleccione **Insertar fragmento de código**.  
   
      Se muestra una lista de fragmentos XML disponibles.  
   
-3.  Seleccione un fragmento de la lista con el mouse o escriba el nombre del fragmento y presione la tecla TAB o INTRO.  
+3. Seleccione un fragmento de la lista con el mouse o escriba el nombre del fragmento y presione la tecla TAB o INTRO.  
   
 #### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Para insertar fragmentos mediante la lista de palabras completas de IntelliSense  
   
-1.  Coloque el cursor en el lugar en el que desea insertar el fragmento XML.  
+1. Coloque el cursor en el lugar en el que desea insertar el fragmento XML.  
   
-2.  Comience a escribir el fragmento XML que desea agregar al archivo. Si la finalización automática está activada, se muestra la lista de palabras completas de IntelliSense. Si no aparece, presione CTRL+BARRA ESPACIADORA para activarla.  
+2. Comience a escribir el fragmento XML que desea agregar al archivo. Si la finalización automática está activada, se muestra la lista de palabras completas de IntelliSense. Si no aparece, presione CTRL+BARRA ESPACIADORA para activarla.  
   
-3.  Seleccione el fragmento XML de la lista de palabras completas.  
+3. Seleccione el fragmento XML de la lista de palabras completas.  
   
-4.  Presione TAB, TAB para invocar el fragmento XML.  
+4. Presione TAB, TAB para invocar el fragmento XML.  
   
 > [!NOTE]
 >  Puede haber casos en los que el fragmento XML no se llegue a invocar. Por ejemplo, si intenta insertar un elemento `xs:complexType` dentro de un nodo `xs:element`, el editor no genera un fragmento XML. Cuando un elemento `xs:complexType` se utiliza dentro de un nodo `xs:element`, no están los atributos o subelementos necesarios, así que el editor no tiene datos que insertar.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Para insertar fragmentos con el nombre de acceso directo  
   
-1.  Coloque el cursor en el lugar en el que desea insertar el fragmento XML.  
+1. Coloque el cursor en el lugar en el que desea insertar el fragmento XML.  
   
-2.  Escriba `<` en el panel del editor.  
+2. Escriba `<` en el panel del editor.  
   
-3.  Presione ESC para cerrar la lista de palabras completas de IntelliSense.  
+3. Presione ESC para cerrar la lista de palabras completas de IntelliSense.  
   
-4.  Escriba el nombre de acceso directo del fragmento y presione TAB para invocar el fragmento XML.  
+4. Escriba el nombre de acceso directo del fragmento y presione TAB para invocar el fragmento XML.  
   
 ## <a name="surround-with"></a>Delimitar con  
  Los procedimientos siguientes describen cómo tener acceso a la **rodear con** comando.  
@@ -80,23 +80,23 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Para utilizar este comando desde el menú de acceso directo  
   
-1.  Seleccione el texto que se va a rodear en el Editor XML.  
+1. Seleccione el texto que se va a rodear en el Editor XML.  
   
-2.  Haga clic en y seleccione **rodear con**.  
+2. Haga clic en y seleccione **rodear con**.  
   
      Se muestra una lista de bordes disponibles con fragmentos XML.  
   
-3.  Seleccione un fragmento de la lista con el mouse o escriba el nombre del fragmento y presione la tecla TAB o INTRO.  
+3. Seleccione un fragmento de la lista con el mouse o escriba el nombre del fragmento y presione la tecla TAB o INTRO.  
   
 #### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Para utilizar este comando desde el menú IntelliSense  
   
-1.  Seleccione el texto que se va a rodear en el Editor XML.  
+1. Seleccione el texto que se va a rodear en el Editor XML.  
   
-2.  Desde el **editar** menú, elija **IntelliSense**y, a continuación, seleccione **rodear con**.  
+2. Desde el **editar** menú, elija **IntelliSense**y, a continuación, seleccione **rodear con**.  
   
      Se muestra una lista de bordes disponibles con fragmentos XML.  
   
-3.  Seleccione un fragmento de la lista con el mouse o escriba el nombre del fragmento y presione la tecla TAB o INTRO.  
+3. Seleccione un fragmento de la lista con el mouse o escriba el nombre del fragmento y presione la tecla TAB o INTRO.  
   
 ## <a name="using-xml-snippets"></a>Uso de fragmentos XML  
  Una vez elegido un fragmento XML, el texto del fragmento de código se inserta automáticamente en la posición del cursor. Todos los campos editables del fragmento se resaltan y el primero de estos campos se selecciona automáticamente. Al campo actualmente seleccionado se le aplica la conversión boxing.  

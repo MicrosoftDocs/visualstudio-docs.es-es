@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a79aeabcbe0a405248d530e56ed5fe9e3f4e9994
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055254"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Examinar y reorganizar mapas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,26 +40,26 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
   
  **Requisitos**  
   
--   Para crear mapas de código, debe tener Visual Studio Enterprise.  
+- Para crear mapas de código, debe tener Visual Studio Enterprise.  
   
--   En Visual Studio Professional, puede ver mapas de código y realizar ediciones limitadas a los mapas de código.  
+- En Visual Studio Professional, puede ver mapas de código y realizar ediciones limitadas a los mapas de código.  
   
-##  <a name="ManageLargeGraphs"></a> Empezar a trabajar con mapas de código  
+## <a name="ManageLargeGraphs"></a> Empezar a trabajar con mapas de código  
  Crear un mapa de código (consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md) para obtener más detalles). Si no desea esperar el mapa termine de generar, haga clic en el **cancelar** vínculo en cualquier momento para detener el proceso de generación. Sin embargo, si lo hace, no podrá ver los detalles de todas las dependencias y vínculos.  
   
  Después de generar el mapa, siga primero estas sugerencias para revisar el código:  
   
--   Observe los clústeres de dependencia naturales en el código. En la barra de herramientas del mapa, elija **diseño**, **clústeres rápidos**![botón clústeres rápidos en la barra de herramientas de gráfico](../modeling/media/quickclustersicon.gif "QuickClustersIcon"). Consulte [cambiar el diseño del mapa](#Selecting).  
+- Observe los clústeres de dependencia naturales en el código. En la barra de herramientas del mapa, elija **diseño**, **clústeres rápidos**![botón clústeres rápidos en la barra de herramientas de gráfico](../modeling/media/quickclustersicon.gif "QuickClustersIcon"). Consulte [cambiar el diseño del mapa](#Selecting).  
   
      ![Gráfico de dependencias &#45; diseño clústeres rápidos](../modeling/media/dependencygraph-quickclusters.png "DependencyGraph_QuickClusters")  
   
--   Organice el mapa en áreas más pequeñas mediante la agrupación de los nodos relacionados. Contraiga esos grupos para ver solo las dependencias intergrupo, que aparecen automáticamente. Consulte [agrupar nodos](#OrganizeGroups).  
+- Organice el mapa en áreas más pequeñas mediante la agrupación de los nodos relacionados. Contraiga esos grupos para ver solo las dependencias intergrupo, que aparecen automáticamente. Consulte [agrupar nodos](#OrganizeGroups).  
   
--   Utilice los filtros para simplificar el mapa y centrarse en los tipos de nodos o vínculos que le interesen. Consulte [filtrar nodos y vínculos](#FilterNodes).  
+- Utilice los filtros para simplificar el mapa y centrarse en los tipos de nodos o vínculos que le interesen. Consulte [filtrar nodos y vínculos](#FilterNodes).  
   
--   Obtenga el máximo rendimiento de los mapas grandes. Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md) para obtener más información. Por ejemplo, activar **Skip Build** por lo que Visual Studio no recompile la solución al actualizar los elementos del mapa de la barra de herramientas del mapa.  
+- Obtenga el máximo rendimiento de los mapas grandes. Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md) para obtener más información. Por ejemplo, activar **Skip Build** por lo que Visual Studio no recompile la solución al actualizar los elementos del mapa de la barra de herramientas del mapa.  
   
-##  <a name="Selecting"></a> Cambiar el diseño del mapa  
+## <a name="Selecting"></a> Cambiar el diseño del mapa  
   
 |**En**|**Siga estos pasos**|  
 |------------|-----------------------------|  
@@ -70,7 +70,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
 |Cambiar el diseño de un grupo independientemente del resto de nodos y grupos del mapa.|Seleccione un nodo y abra el menú contextual. Elija **diseño** y seleccione un estilo de diseño.<br /><br /> o bien<br /><br /> Seleccione un nodo y expándalo para mostrar los nodos secundarios. Haga clic en el título de nodo para mostrar la barra de herramientas emergente del grupo y abra el **cambiar el estilo de diseño del grupo**![gráfico de dependencias &#45; barra de herramientas del grupo &#45; diseño](../modeling/media/dependencygraph-grouptoolbar.gif "DependencyGraph_ GroupToolbar") lista. Seleccione uno de los diseños de árbol, **clústeres rápidos**, o **vista de lista** (que organiza el contenido del grupo en una lista).<br /><br /> Consulte [agrupar nodos](#OrganizeGroups) para obtener más detalles.|  
 |Deshacer una acción en el mapa.|Presione **CTRL** + **Z** o usar Visual Studio **deshacer** comando.|  
   
-##  <a name="Explore"></a> Examinar el mapa  
+## <a name="Explore"></a> Examinar el mapa  
   
 |**En**|**Siga estos pasos**|  
 |------------|-----------------------------|  
@@ -82,7 +82,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
 |Seleccionar los nodos no seleccionados.|Abra el menú contextual de los nodos seleccionados. Elija **seleccione**, **Invertir selección**.|  
 |Seleccionar nodos adicionales vinculados a los nodos seleccionados.|Abra el menú contextual de los nodos seleccionados. Elija **seleccione** y uno de los siguientes:<br /><br /> -Para seleccionar nodos adicionales vinculados directamente al nodo seleccionado, elija **dependencias entrantes**.<br />-Para seleccionar nodos adicionales vinculados directamente desde el nodo seleccionado, elija **dependencias salientes**.<br />-Para seleccionar nodos adicionales vinculados directamente hacia y desde el nodo seleccionado, elija **ambos**.<br />-Para seleccionar todos los nodos que se vinculan a y desde el nodo seleccionado, elija **subgráfico conectado**.<br />-Para seleccionar todos los elementos secundarios del nodo seleccionado, elija **hijos**.|  
   
-##  <a name="FilterNodes"></a> Filtrar nodos y vínculos  
+## <a name="FilterNodes"></a> Filtrar nodos y vínculos  
   
 |**En**|**Siga estos pasos**|  
 |------------|-----------------------------|  
@@ -93,14 +93,14 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
   
  Los iconos mostrados en el panel Leyenda del mapa reflejan la configuración establecida en la lista. Para mostrar u ocultar el panel leyenda, haga clic en el **leyenda** botón en la barra de herramientas del mapa de código.  
   
-##  <a name="Inspect"></a> Examinar nodos y vínculos  
+## <a name="Inspect"></a> Examinar nodos y vínculos  
  Los mapas de código muestran los siguientes tipos de vínculos:  
   
--   Un vínculo individual representa una relación única entre dos nodos.  
+- Un vínculo individual representa una relación única entre dos nodos.  
   
--   Un vínculo entre grupos representa una relación entre dos nodos de diferentes grupos.  
+- Un vínculo entre grupos representa una relación entre dos nodos de diferentes grupos.  
   
--   Un vínculo agregado representa todas las relaciones que señalan la misma dirección entre dos grupos.  
+- Un vínculo agregado representa todas las relaciones que señalan la misma dirección entre dos grupos.  
   
 > [!TIP]
 >  De forma predeterminada, el mapa muestra los vínculos entre grupos solo para los nodos seleccionados. Para cambiar este comportamiento para mostrar u ocultar vínculos agregados entre grupos, haga clic en **diseño** en el código de barra de herramientas de mapa y elija **avanzadas**, a continuación, **mostrar todos los vínculos entre grupos** o **Ocultar todos los vínculos entre grupos**. Consulte [ocultar o mostrar nodos y vínculos](#HidingShowing) para obtener más detalles.  
@@ -114,7 +114,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
 |Examinar las dependencias entre varios nodos de grupos diferentes.|Expanda los grupos de modo que pueda ver todos sus elementos secundarios. Seleccione todos los nodos que le interesen, incluidos sus elementos secundarios. En el mapa se muestran los vínculos entre grupos de los nodos seleccionados.<br /><br /> Para seleccionar todos los nodos de un grupo, mantenga presionada **MAYÚS** y el botón primario del mouse mientras dibuja un rectángulo alrededor de ese grupo. Para seleccionar todos los nodos en un mapa, presione **CTRL**+**A**. **Sugerencia:**  Para mostrar los vínculos entre grupos en todo momento, elija **diseño** en la barra de herramientas del mapa, **avanzadas**, **mostrar todos los vínculos entre grupos**.|  
 |Ver los elementos a los que un nodo o vínculo hace referencia.|Abra el menú contextual del nodo y elija **buscar todas las referencias**. **Nota:**  Esto solo se aplica cuando el atributo `Reference` se establece para el nodo o vínculo en el archivo .dgml del mapa. Para agregar referencias a elementos de los nodos o vínculos, consulte [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|  
   
-##  <a name="HidingShowing"></a> Ocultar o mostrar nodos y vínculos  
+## <a name="HidingShowing"></a> Ocultar o mostrar nodos y vínculos  
  Al ocultar nodos, se evita que participen en algoritmos de diseño. De forma predeterminada, los vínculos entre grupos se ocultan. Los vínculos entre grupos son vínculos individuales que conectan nodos entre diferentes grupos. Cuando se contraen los grupos, el mapa agrega todos los vínculos entre grupos a los vínculos individuales que hay entre los grupos. Cuando se expande un grupo y se seleccionan los nodos que hay dentro de este, los vínculos entre grupos aparecen y muestran las dependencias que existen dentro de ese grupo.  
   
 > [!CAUTION]
@@ -137,7 +137,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
 |Mostrar solo los vínculos entre grupos de los nodos seleccionados.|**Mostrar vínculos entre grupos de los nodos seleccionados**|  
 |Ocultar todos los vínculos.|**Ocultar todos los vínculos**. Para volver a mostrar los vínculos, elija una de las opciones mencionadas anteriormente.|  
   
-##  <a name="OrganizeGroups"></a> Nodos de grupo  
+## <a name="OrganizeGroups"></a> Nodos de grupo  
   
 |**En**|**Siga estos pasos**|  
 |------------|-----------------------------|  
@@ -149,7 +149,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
 |Quitar grupos.|Seleccione el grupo o los grupos que desee quitar. Abra el menú contextual de la selección y elija **grupo**, **quitar grupo**.|  
 |Quitar los nodos del grupo primario.|Seleccione los nodos que desea mover. Abra el menú contextual de la selección y elija **grupo**, **quitar del elemento primario**. Esta acción quita los nodos hasta el grupo primario principal o fuera del grupo si no hay ningún grupo primario principal.<br /><br /> o bien<br /><br /> Seleccione los nodos y arrástrelos fuera del grupo.|  
   
-##  <a name="AddRemoveNodesLinks"></a> Agregar, quitar o cambiar el nombre de nodos, vínculos y comentarios  
+## <a name="AddRemoveNodesLinks"></a> Agregar, quitar o cambiar el nombre de nodos, vínculos y comentarios  
  Puede mostrar más o menos elementos de un mapa con el fin de explorar en profundidad o simplificar el mapa. También puede cambiar el nombre de los elementos y agregar comentarios a los elementos.  
   
 > [!CAUTION]
@@ -172,7 +172,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
 |Elementos de código relacionados con elementos de código del mapa.|Haga clic en el **mostrar relacionados** situado en la barra de herramientas del mapa de código y elija el tipo de elementos relacionados que le interese.<br /><br /> o bien<br /><br /> Abra el menú contextual del elemento de código. Elija uno de los **mostrar...** elementos del menú según el tipo de relación que le interese. Por ejemplo, puede ver los elementos a los que hace referencia el elemento actual, los elementos que hacen referencia al elemento actual, los tipos base y derivado para las clases, los llamadores de métodos y las clases, los nombres de espacios y los ensamblados.<br /><br /> Para obtener más información, consulte [en este tema](../modeling/map-dependencies-across-your-solutions.md).|  
 |Ensamblados .NET (.dll o .exe) o archivos binarios compilados.|Arrastre los ensamblados o archivos binarios desde fuera de Visual Studio a un mapa.<br /><br /> Solo puede arrastrar desde el Explorador de Windows o el Explorador de archivos si ejecuta tanto dichos exploradores como Visual Studio en el mismo nivel de permisos del Control de cuentas de usuario (UAC). Por ejemplo, si UAC está activado y está ejecutando Visual Studio como administrador, el Explorador de Windows o el Explorador de archivos bloquearán la operación de arrastre.|  
   
-###  <a name="AddNodes"></a>   
+### <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>Para agregar un vínculo entre elementos de código existentes  
   
 1. Seleccione el elemento de código de origen. Aparece una barra de herramientas por encima del elemento de código.  
@@ -195,83 +195,83 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
   
 8. Presione **RETORNO**.  
   
-###  <a name="AddComments"></a>   
+### <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>Agregar un comentario a un nodo existente en el mapa  
   
-1.  Seleccione el elemento de código. Aparece una barra de herramientas sobre él.  
+1. Seleccione el elemento de código. Aparece una barra de herramientas sobre él.  
   
      ![Barra de herramientas de gráfico de dependencia](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  En la barra de herramientas, elija el tercer icono, **crear un nuevo nodo de comentario con un nuevo vínculo al nodo seleccionado**.  
+2. En la barra de herramientas, elija el tercer icono, **crear un nuevo nodo de comentario con un nuevo vínculo al nodo seleccionado**.  
   
      \- o -  
   
      Abra el menú contextual para el elemento de código y elija **editar**, **nuevo comentario**.  
   
-3.  Escriba sus comentarios. Para escribir en una nueva línea, presione **MAYÚS** + **devolver**.  
+3. Escriba sus comentarios. Para escribir en una nueva línea, presione **MAYÚS** + **devolver**.  
   
 ##### <a name="add-a-comment-to-the-map-itself"></a>Agregar un comentario al propio mapa  
   
-1.  Abra el menú contextual del mapa y elija **editar**, **nuevo comentario**.  
+1. Abra el menú contextual del mapa y elija **editar**, **nuevo comentario**.  
   
-2.  Escriba sus comentarios. Para escribir en una nueva línea, presione **MAYÚS** + **devolver**.  
+2. Escriba sus comentarios. Para escribir en una nueva línea, presione **MAYÚS** + **devolver**.  
   
-###  <a name="RenameNodes"></a>   
+### <a name="RenameNodes"></a>   
 ##### <a name="rename-a-code-element-or-link"></a>Cambiar el nombre de un elemento de código o vínculo  
   
-1.  Seleccione el elemento de código o el vínculo cuyo nombre quiere cambiar.  
+1. Seleccione el elemento de código o el vínculo cuyo nombre quiere cambiar.  
   
-2.  Presione **F2**, o abra el menú contextual y elija **editar**, **cambiar el nombre**.  
+2. Presione **F2**, o abra el menú contextual y elija **editar**, **cambiar el nombre**.  
   
-3.  Cuando el cuadro de edición aparece en el mapa, cambie el nombre del elemento de código o del vínculo.  
+3. Cuando el cuadro de edición aparece en el mapa, cambie el nombre del elemento de código o del vínculo.  
   
      \- o -  
   
-4.  Abra el menú contextual y elija **editar**, **propiedades**.  
+4. Abra el menú contextual y elija **editar**, **propiedades**.  
   
-5.  Editar el **etiqueta** propiedad en la ventana Propiedades de Visual Studio.  
+5. Editar el **etiqueta** propiedad en la ventana Propiedades de Visual Studio.  
   
 ##### <a name="remove-a-code-element-or-link-from-the-map"></a>Quitar un elemento de código o vínculo del mapa  
   
-1.  Seleccione el elemento de código o vínculo y presione la **eliminar** clave.  
+1. Seleccione el elemento de código o vínculo y presione la **eliminar** clave.  
   
      \- o -  
   
      Abra el menú contextual para el elemento de código o vínculo y elija **editar**, **quitar**.  
   
-2.  Si el elemento o vínculo forma parte de un grupo, el **volver a obtener elementos secundarios** botón ![volver a obtener elementos secundarios icono](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") aparece dentro del grupo. Haga clic aquí para recuperar los elementos y vínculos que faltan.  
+2. Si el elemento o vínculo forma parte de un grupo, el **volver a obtener elementos secundarios** botón ![volver a obtener elementos secundarios icono](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") aparece dentro del grupo. Haga clic aquí para recuperar los elementos y vínculos que faltan.  
   
--   Puede quitar los elementos de código y vínculos de un mapa sin que ello afecte al código subyacente. Al eliminarlos, sus definiciones se quitan del archivo DGML (.dgml).  
+- Puede quitar los elementos de código y vínculos de un mapa sin que ello afecte al código subyacente. Al eliminarlos, sus definiciones se quitan del archivo DGML (.dgml).  
   
--   Los mapas que se crean editando el DGML, agregando elementos de código sin definir o usando versiones anteriores de Visual Studio, no admiten esta funcionalidad.  
+- Los mapas que se crean editando el DGML, agregando elementos de código sin definir o usando versiones anteriores de Visual Studio, no admiten esta funcionalidad.  
   
 ##### <a name="flag-a-code-element-for-follow-up"></a>Marcar un elemento de código para su seguimiento  
   
-1.  Seleccione el elemento de código o el vínculo que quiera marcar para el seguimiento.  
+1. Seleccione el elemento de código o el vínculo que quiera marcar para el seguimiento.  
   
-2.  Abra el menú contextual y elija **editar**, **marca de seguimiento**.  
+2. Abra el menú contextual y elija **editar**, **marca de seguimiento**.  
   
--   De forma predeterminada, el elemento de código adquiere un fondo de color rojo. Considere la posibilidad de [agregar un comentario](#AddComments) a él con la información de seguimiento adecuada.  
+- De forma predeterminada, el elemento de código adquiere un fondo de color rojo. Considere la posibilidad de [agregar un comentario](#AddComments) a él con la información de seguimiento adecuada.  
   
--   Cambiar el color de fondo del elemento o borrar la marca de seguimiento eligiendo **editar**, **otros colores de marca**.  
+- Cambiar el color de fondo del elemento o borrar la marca de seguimiento eligiendo **editar**, **otros colores de marca**.  
   
-##  <a name="ChangeStyleCodeOrLink"></a> Cambiar el estilo de un elemento de código o vínculo  
+## <a name="ChangeStyleCodeOrLink"></a> Cambiar el estilo de un elemento de código o vínculo  
  Puede cambiar los iconos de los elementos de código y los colores de los elementos de código y vínculos con el uso de iconos y colores predefinidos. Por ejemplo, puede elegir un color para resaltar los elementos de código y vínculos que tengan cierta categoría o propiedad. De este modo, podrá identificar áreas específicas del mapa y concentrarse en ellas. Puede especificar iconos personalizados y los colores editando el archivo del mapa .dgml; consulte [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 #### <a name="to-apply-a-predefined-color-or-icon-to-code-elements-or-links-with-a-certain-category-or-property"></a>Para aplicar un color o icono predefinido a los elementos de código o vínculos con cierta categoría o propiedad  
   
-1.  En la barra de herramientas del mapa, elija **leyenda**.  
+1. En la barra de herramientas del mapa, elija **leyenda**.  
   
-2.  En el **leyenda** cuadro, vea si la propiedad o categoría de elemento de código ya aparece en la lista.  
+2. En el **leyenda** cuadro, vea si la propiedad o categoría de elemento de código ya aparece en la lista.  
   
-3.  Si la lista no incluye la categoría o propiedad, elija **+** en el **leyenda** cuadro y luego elija **propiedad de nodo**, **categoría de nodo** , **Vincular propiedad**, o **vincular categoría**. Después, elija la propiedad o categoría. La categoría o propiedad aparece ahora en el **leyenda** cuadro.  
+3. Si la lista no incluye la categoría o propiedad, elija **+** en el **leyenda** cuadro y luego elija **propiedad de nodo**, **categoría de nodo** , **Vincular propiedad**, o **vincular categoría**. Después, elija la propiedad o categoría. La categoría o propiedad aparece ahora en el **leyenda** cuadro.  
   
     > [!NOTE]
     >  Para crear y asignar una categoría o propiedad a un elemento de código, puede editar el archivo del mapa .dgml; consulte [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-4.  En el **leyenda** cuadro, haga clic en el icono situado junto a la categoría o propiedad agregada o que desee cambiar.  
+4. En el **leyenda** cuadro, haga clic en el icono situado junto a la categoría o propiedad agregada o que desee cambiar.  
   
-5.  Use la tabla siguiente para seleccionar el estilo que desea cambiar:  
+5. Use la tabla siguiente para seleccionar el estilo que desea cambiar:  
   
     |**Para cambiar el**|**Choose**|  
     |-----------------------|----------------|  
@@ -282,7 +282,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
   
      El **selector de conjunto de colores** o **selector de conjunto de iconos** aparece el cuadro de diálogo para que seleccionar un color o icono.  
   
-6.  En el **selector de conjunto de colores** o **selector de conjunto de iconos** cuadro de diálogo, realice una de las siguientes acciones:  
+6. En el **selector de conjunto de colores** o **selector de conjunto de iconos** cuadro de diálogo, realice una de las siguientes acciones:  
   
     |**Para aplicar un**|**Siga estos pasos**|  
     |--------------------|-----------------------------|  
@@ -292,12 +292,12 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
     > [!NOTE]
     >  Puede reorganizar, eliminar o desactivar temporalmente los estilos en el **leyenda** cuadro. Consulte [editar el cuadro leyenda](#ModifyLegend).  
   
-##  <a name="ModifyLegend"></a> Editar el cuadro leyenda  
+## <a name="ModifyLegend"></a> Editar el cuadro leyenda  
  Puede reorganizar, eliminar o desactivar temporalmente los estilos en el **leyenda** cuadro:  
   
-1.  Abra el menú contextual para un estilo en el **leyenda** cuadro.  
+1. Abra el menú contextual para un estilo en el **leyenda** cuadro.  
   
-2.  Realice una de las tareas siguientes:  
+2. Realice una de las tareas siguientes:  
   
     |**En**|**Choose**|  
     |------------|----------------|  
@@ -306,15 +306,15 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
     |Subir el estilo|**Mover hacia arriba**|  
     |Bajar el elemento de código|**Mover hacia abajo**|  
   
-##  <a name="CopyLegend"></a> Copiar estilos de un mapa a otro  
+## <a name="CopyLegend"></a> Copiar estilos de un mapa a otro  
   
-1.  Asegúrese de que el **leyenda** cuadro aparece en el mapa de origen. Si no está visible, en la barra de herramientas del mapa, haga clic en **leyenda**.  
+1. Asegúrese de que el **leyenda** cuadro aparece en el mapa de origen. Si no está visible, en la barra de herramientas del mapa, haga clic en **leyenda**.  
   
-2.  Abra el menú contextual para el **leyenda** cuadro. Elija **copiar leyenda**.  
+2. Abra el menú contextual para el **leyenda** cuadro. Elija **copiar leyenda**.  
   
-3.  Pegue la leyenda en el mapa de destino.  
+3. Pegue la leyenda en el mapa de destino.  
   
-##  <a name="MergeMaps"></a> Combinar mapas de código  
+## <a name="MergeMaps"></a> Combinar mapas de código  
  Para combinar mapas, puede copiar y pegar elementos de código entre mapas. Si los identificadores de elemento de código coinciden, el pegado de elementos de código funciona como una operación de combinación. Para facilitar esta tarea, coloque todos los ensamblados o archivos binarios que quiere visualizar en la misma carpeta, de modo que la ruta de acceso completa de cada ensamblado o binario sea la misma para cada mapa que quiere combinar.  
   
  También puede arrastrar los ensamblados o archivos binarios al mismo mapa desde esa carpeta.  

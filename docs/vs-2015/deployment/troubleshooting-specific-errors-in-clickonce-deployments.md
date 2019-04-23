@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 348cb15ebc348d6c0ece5e7118e896cc6a21b23b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043201"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Solucionar problemas de errores específicos de las implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Este tema enumeran los siguientes errores comunes que pueden producirse al imple
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Mensaje de error: "no se puede recuperar la aplicación. No se encuentra en la implementación de archivos"o"se ha interrumpido la descarga de la aplicación, compruebe si hay errores de red y vuelva a intentarlo más tarde"  
  Este mensaje indica que uno o varios archivos que se hace referencia el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] no se puede descargar los manifiestos. La manera más fácil de depurar este error es intentar descargar la dirección URL que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] no puede descargar. Estas son algunas causas posibles:  
   
--   Si el archivo de registro dice "(403) prohibido" o "(404) no encontrado", compruebe que el servidor Web está configurado para que no bloquea la descarga de este archivo. Para obtener más información, vea [Problemas de configuración de servidor y cliente en implementaciones de ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+- Si el archivo de registro dice "(403) prohibido" o "(404) no encontrado", compruebe que el servidor Web está configurado para que no bloquea la descarga de este archivo. Para obtener más información, vea [Problemas de configuración de servidor y cliente en implementaciones de ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Si el servidor está bloqueando el archivo .config, consulte la sección "error de descarga al intentar instalar una [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que tiene un archivo .config" más adelante en este tema.  
+- Si el servidor está bloqueando el archivo .config, consulte la sección "error de descarga al intentar instalar una [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que tiene un archivo .config" más adelante en este tema.  
   
--   Determinar si esto se produjo porque la `deploymentProvider` dirección URL del manifiesto de implementación está señalando a una ubicación diferente a la dirección URL usada para la activación.  
+- Determinar si esto se produjo porque la `deploymentProvider` dirección URL del manifiesto de implementación está señalando a una ubicación diferente a la dirección URL usada para la activación.  
   
--   Asegúrese de que todos los archivos están presentes en el servidor. el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] registro debe indicarle qué archivos no se encontró.  
+- Asegúrese de que todos los archivos están presentes en el servidor. el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] registro debe indicarle qué archivos no se encontró.  
   
--   Si hay problemas de conectividad de red; puede recibir este mensaje si el equipo cliente estuvo sin conexión durante la descarga.  
+- Si hay problemas de conectividad de red; puede recibir este mensaje si el equipo cliente estuvo sin conexión durante la descarga.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Error de descarga al intentar instalar una aplicación ClickOnce que tiene un archivo .config  
  De forma predeterminada, una aplicación basada en Windows de Visual Basic incluye un archivo App.config. Habrá un problema cuando un usuario intenta instalar desde un servidor Web que utiliza Windows Server 2003, porque ese sistema operativo bloquea la instalación de los archivos .config por motivos de seguridad. Para habilitar el archivo .config para instalarse, haga clic en **usar extensión de archivo ".deploy"** en el **opciones de publicación** cuadro de diálogo.  
@@ -67,11 +67,11 @@ Este tema enumeran los siguientes errores comunes que pueden producirse al imple
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Actualiza la aplicación en el servidor, pero el cliente no descarga la actualización  
  Este problema podría resolverse realizando una de las tareas siguientes:  
   
--   Examine el `deploymentProvider` dirección URL del manifiesto de implementación. Asegúrese de que está actualizando los bits en la misma ubicación que `deploymentProvider` apunta a.  
+- Examine el `deploymentProvider` dirección URL del manifiesto de implementación. Asegúrese de que está actualizando los bits en la misma ubicación que `deploymentProvider` apunta a.  
   
--   Compruebe el intervalo de actualización en el manifiesto de implementación. Si este intervalo se establece en un intervalo periódico, como una vez cada seis horas, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] no examinará una actualización hasta que haya transcurrido este intervalo. Puede cambiar el manifiesto para buscar una actualización cada vez que se inicia la aplicación. Cambiar el intervalo de actualización es una opción recomendable durante el tiempo de desarrollo para comprobar las actualizaciones se instalan pero ralentiza la activación de la aplicación.  
+- Compruebe el intervalo de actualización en el manifiesto de implementación. Si este intervalo se establece en un intervalo periódico, como una vez cada seis horas, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] no examinará una actualización hasta que haya transcurrido este intervalo. Puede cambiar el manifiesto para buscar una actualización cada vez que se inicia la aplicación. Cambiar el intervalo de actualización es una opción recomendable durante el tiempo de desarrollo para comprobar las actualizaciones se instalan pero ralentiza la activación de la aplicación.  
   
--   Pruebe a iniciar la aplicación de nuevo en el menú Inicio. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es posible que haya detectado la actualización en segundo plano, pero se le solicitará que instale los bits en la siguiente activación.  
+- Pruebe a iniciar la aplicación de nuevo en el menú Inicio. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es posible que haya detectado la actualización en segundo plano, pero se le solicitará que instale los bits en la siguiente activación.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante la actualización, recibirá un error que tiene la siguiente entrada del registro: "La referencia en la implementación no coincide con la identidad definida en el manifiesto de aplicación"  
  Este error puede producirse porque se han editado manualmente los manifiestos de aplicación e implementación y haber causado la descripción de la identidad de un ensamblado en un manifiesto para que dejen de estar sincronizados con las demás. La identidad de un ensamblado consta de su nombre, versión, referencia cultural y token de clave pública. Examine las descripciones de identidad en los manifiestos y corrija cualquier diferencia.  
@@ -84,9 +84,9 @@ Este tema enumeran los siguientes errores comunes que pueden producirse al imple
   
  Debe hacer lo siguiente:  
   
--   Compruebe que la identidad del manifiesto de implementación, la identidad del manifiesto de aplicación y la aplicación principal EXE son únicas.  
+- Compruebe que la identidad del manifiesto de implementación, la identidad del manifiesto de aplicación y la aplicación principal EXE son únicas.  
   
--   Compruebe que las rutas de acceso de archivo no son más de 100 caracteres. Si la aplicación contiene las rutas de acceso de archivo que son demasiado grandes, puede superar las limitaciones en la ruta de acceso máxima que puede almacenar. Intente acortar las rutas de acceso y vuelva a instalar.  
+- Compruebe que las rutas de acceso de archivo no son más de 100 caracteres. Si la aplicación contiene las rutas de acceso de archivo que son demasiado grandes, puede superar las limitaciones en la ruta de acceso máxima que puede almacenar. Intente acortar las rutas de acceso y vuelva a instalar.  
   
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>No se respeta la configuración PrivatePath en el archivo de configuración de aplicación  
  Para utilizar PrivatePath (rutas de búsqueda de fusión), la aplicación debe solicitar permiso de plena confianza. Pruebe a cambiar el manifiesto de aplicación para solicitar la plena confianza y, a continuación, vuelva a intentarlo.  
@@ -115,9 +115,9 @@ Este tema enumeran los siguientes errores comunes que pueden producirse al imple
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Se intentó iniciar sesión con un certificado en el almacén de certificados y un cuadro de mensaje en blanco.  
  En el **firma** cuadro de diálogo, debe:  
   
--   Seleccione **firmar con un certificado almacenado**, y  
+- Seleccione **firmar con un certificado almacenado**, y  
   
--   Seleccione un certificado de la lista. el primer certificado no es la selección predeterminada.  
+- Seleccione un certificado de la lista. el primer certificado no es la selección predeterminada.  
   
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Al hacer clic en el botón "Inicio de sesión no" produce una excepción  
  Este problema es un problema conocido. Todos los [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiestos son debe estar firmado. Seleccione una de las opciones de firma y, a continuación, haga clic en **Aceptar**.  

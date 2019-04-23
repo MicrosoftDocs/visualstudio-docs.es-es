@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b16b8e4e15c304f6e349d2f831ca879a4f7a183
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618840"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062000"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Empezar a programar complementos de VSTO
   Puede utilizar complementos de VSTO para automatizar las aplicaciones de Microsoft Office, ampliar las características de la aplicación y personalizar la interfaz de usuario de la aplicación. Para obtener información acerca de cómo se comparan los complementos de VSTO para otros tipos de soluciones de Office puede crear con Visual Studio, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -40,19 +40,19 @@ ms.locfileid: "56618840"
 
  Para obtener más información acerca de los modelos de objetos de aplicaciones de Microsoft Office concretas, vea los temas siguientes:
 
--   [Información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md)
+- [Información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md)
 
--   [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)
+- [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)
 
--   [Información general sobre el modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md)
+- [Información general sobre el modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md)
 
--   [Soluciones de InfoPath](../vsto/infopath-solutions.md)
+- [Soluciones de InfoPath](../vsto/infopath-solutions.md)
 
--   [Soluciones de PowerPoint](../vsto/powerpoint-solutions.md)
+- [Soluciones de PowerPoint](../vsto/powerpoint-solutions.md)
 
--   [Soluciones de proyecto](../vsto/project-solutions.md)
+- [Soluciones de proyecto](../vsto/project-solutions.md)
 
--   [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)
+- [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)
 
 ## <a name="customize-the-user-interface-of-applications"></a>Personalizar la interfaz de usuario de aplicaciones
  Hay varias maneras diferentes de personalizar la interfaz de usuario de la aplicación host mediante el uso de un complemento de VSTO:

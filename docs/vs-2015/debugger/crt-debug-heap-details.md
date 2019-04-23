@@ -75,19 +75,19 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95add394f6f3e3e62a7441fe5bb0b4c415509527
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057461"
 ---
 # <a name="crt-debug-heap-details"></a>Detalles del montón de depuración de CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tema proporciona un examen detallado del montón de depuración de CRT.  
   
-##  <a name="BKMK_Contents"></a> Contenido  
+## <a name="BKMK_Contents"></a> Contenido  
  [Buscar saturaciones de búfer mediante el montón de depuración](#BKMK_Find_buffer_overruns_with_debug_heap)  
   
  [Tipos de bloques en el montón de depuración](#BKMK_Types_of_blocks_on_the_debug_heap)  
@@ -102,7 +102,7 @@ Este tema proporciona un examen detallado del montón de depuración de CRT.
   
  [Seguir las solicitudes de asignación en el montón](#BKMK_Track_Heap_Allocation_Requests)  
   
-##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Buscar saturaciones de búfer mediante el montón de depuración  
+## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Buscar saturaciones de búfer mediante el montón de depuración  
  Dos de los problemas más comunes y difíciles de tratar con los que se encuentran los programadores son la sobrescritura al final de un búfer asignado y las pérdidas de memoria (incapacidad de liberar asignaciones de memoria que ya no se necesitan). El montón de depuración proporciona herramientas eficaces para solucionar este tipo de problemas de asignación de memoria.  
   
  Las versiones de depuración de las funciones del montón llaman a las versiones base o estándar utilizadas en las versiones de lanzamiento. Cuando se solicita un bloque de memoria, el administrador del montón de depuración asigna en el montón base un bloque de memoria ligeramente mayor que el solicitado y devuelve un puntero a la parte solicitada. Por ejemplo, suponga que la aplicación contiene la llamada: `malloc( 10 )`. En una versión de lanzamiento, [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) llamaría a la rutina de asignación del montón base solicitaría una asignación de 10 bytes. En una compilación de depuración, sin embargo, `malloc` llamaría [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), que, a continuación, llamaría a la rutina de asignación del montón base solicitaría una asignación de 10 bytes más unos 36 bytes de memoria adicional. Todos los bloques de memoria del montón de depuración se encuentran conectados en una lista simplemente vinculada, ordenados según el momento en que fueron asignados.  
@@ -149,7 +149,7 @@ typedef struct _CrtMemBlockHeader
   
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Tipos de bloques en el montón de depuración  
+## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Tipos de bloques en el montón de depuración  
  Cada bloque de memoria del montón de depuración se asigna a uno de entre cinco tipos de asignación. Estos tipos reciben un seguimiento y se informa de ellos de forma diferente en cuanto a detección de pérdidas e informe de estados. El tipo de un bloque se puede especificar asignándolo mediante una llamada directa a una de las funciones de asignación del montón de depuración, como [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Los cinco tipos de bloques de memoria del montón de depuración (definidos en el miembro **nBlockUse** de la estructura **_CrtMemBlockHeader**) son los siguientes:  
   
  **_NORMAL_BLOCK**  
@@ -183,7 +183,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Comprobar la integridad y pérdidas de memoria del montón  
+## <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Comprobar la integridad y pérdidas de memoria del montón  
  El acceso a muchas de las características del montón de depuración se debe realizar desde dentro del código. En la sección siguiente se describen algunas características y cómo utilizarlas.  
   
  `_CrtCheckMemory`  
@@ -204,7 +204,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_Configure_the_debug_heap"></a> Configurar el montón de depuración  
+## <a name="BKMK_Configure_the_debug_heap"></a> Configurar el montón de depuración  
  Todas las llamadas a funciones del montón, como `malloc`, `free`, `calloc`, `realloc`, `new` y `delete`, se resuelven en versiones de depuración de esas funciones que operan sobre el montón de depuración. Cuando se libera un bloque de memoria, el montón de depuración comprueba automáticamente la integridad de los búferes situados a cada lado del área asignada y emite un informe de error en caso de sobrescritura.  
   
  **Para utilizar el montón de depuración**  
@@ -239,7 +239,7 @@ _CrtSetDbgFlag( tmpFlag );
   
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> new, delete y _CLIENT_BLOCKs en el montón de depuración de C++  
+## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> new, delete y _CLIENT_BLOCKs en el montón de depuración de C++  
  Las versiones de depuración de la biblioteca en tiempo de ejecución de C contienen versiones de depuración de los operadores `new` y `delete` de C++. Si usa el tipo de asignación `_CLIENT_BLOCK`, debe llamar a la versión de depuración del operador `new` directamente o crear macros que reemplacen al operador `new` en modo de depuración, como se muestra en el siguiente ejemplo:  
   
 ```  
@@ -277,7 +277,7 @@ int main( )   {
   
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Funciones que indican el estado del montón  
+## <a name="BKMK_Heap_State_Reporting_Functions"></a> Funciones que indican el estado del montón  
  **_CrtMemState**  
   
  Para capturar una instantánea resumen del estado del montón en un instante determinado, use la estructura _CrtMemState definida en CRTDBG.H:  
@@ -314,7 +314,7 @@ typedef struct _CrtMemState
   
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
-##  <a name="BKMK_Track_Heap_Allocation_Requests"></a> Seguir las solicitudes de asignación en el montón  
+## <a name="BKMK_Track_Heap_Allocation_Requests"></a> Seguir las solicitudes de asignación en el montón  
  Aunque la determinación exacta del nombre del archivo de código fuente y el número de línea en el que una aserción o una macro de informe se ejecuta suele ser muy útil para localizar la causa de un problema, esto no es aplicable siempre en el caso de funciones de asignación de memoria en el montón. Mientras que las macros se pueden insertar en muchos puntos apropiados del árbol lógico de una aplicación, una asignación de memoria se suele incluir en una rutina especial a la que se llama desde muchos sitios diferentes y en muchos momentos diferentes. Normalmente, la cuestión no es qué línea de código realizó una asignación incorrecta, sino cuál de las miles de asignaciones efectuadas por esa línea de código fue incorrecta y por qué.  
   
  **Números de solicitud de asignación únicos y _crtBreakAlloc**  

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Suprimir advertencias de análisis de código para código generado | Microsoft Docs
+title: Procedimiento Suprimir advertencias de análisis de código para código generado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,14 +9,14 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c39ee1113d04cdd3212deccee626a96dd1e3dae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 038ea6d6daec4c387d3344809d62bbbd67a12eee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057586"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Filtrar Suprimir advertencias de análisis de código para código generado
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procedimiento Suprimir advertencias de análisis de código para código generado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Compiladores de código administrado a menudo generan código que se agrega a un proyecto para facilitar el desarrollo rápido de código. Además, los desarrolladores suelen utilizar herramientas de terceros para ayudar a desarrollar aplicaciones rápidamente. Estas herramientas también generan código que se agrega al proyecto.  
@@ -30,8 +30,8 @@ Compiladores de código administrado a menudo generan código que se agrega a un
   
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Para suprimir advertencias de código generado en un proyecto  
   
-1.  Haga clic en el proyecto en el Explorador de soluciones y, a continuación, haga clic en **propiedades**.  
+1. Haga clic en el proyecto en el Explorador de soluciones y, a continuación, haga clic en **propiedades**.  
   
-2.  Haga clic en **análisis de código**.  
+2. Haga clic en **análisis de código**.  
   
-3.  Seleccione el **Suprimir resultados del código generado** casilla de verificación.
+3. Seleccione el **Suprimir resultados del código generado** casilla de verificación.

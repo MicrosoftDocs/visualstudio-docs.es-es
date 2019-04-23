@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999710"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055423"
 ---
 # <a name="registering-single-file-generators"></a>Registro de generadores de un solo archivo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](.
   
 ### <a name="to-register-a-custom-tool"></a>Para registrar una herramienta personalizada  
   
-1.  Registrar la DLL de la herramienta personalizada o en el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] registro local o en el registro del sistema, en HKEY_CLASSES_ROOT.  
+1. Registrar la DLL de la herramienta personalizada o en el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] registro local o en el registro del sistema, en HKEY_CLASSES_ROOT.  
   
      Por ejemplo, esta es la información de registro para la herramienta personalizada de MSDataSetGenerator administrada, que se incluye con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -38,17 +38,17 @@ Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](.
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Crear una clave del registro en deseado [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive en generadores\\*GUID* donde *GUID* es el GUID definido por el sistema del proyecto o el servicio de lenguaje específico. El nombre de la clave se convierte en el nombre de programación de la herramienta personalizada. La clave de la herramienta personalizada tiene los siguientes valores:  
+2. Crear una clave del registro en deseado [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive en generadores\\*GUID* donde *GUID* es el GUID definido por el sistema del proyecto o el servicio de lenguaje específico. El nombre de la clave se convierte en el nombre de programación de la herramienta personalizada. La clave de la herramienta personalizada tiene los siguientes valores:  
   
-    -   (Predeterminado)  
+    - (Predeterminado)  
   
          Opcional. Proporciona una descripción fácil de usar de la herramienta personalizada. Este parámetro es opcional pero recomendado.  
   
-    -   CLSID  
+    - CLSID  
   
          Obligatorio. Especifica el identificador de la biblioteca de clases del componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          Obligatorio. Indica si los tipos de los archivos generados por esta herramienta personalizada están disponibles para los diseñadores visuales. El valor de este parámetro debe ser (cero) 0 para tipos no están disponibles para los diseñadores visuales o 1 (uno) para los tipos disponibles para los diseñadores visuales.  
   

@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567220"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057101"
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
   
  Puede hacer referencia a los siguientes tipos de componentes/servicios:  
   
--   Referencias de aplicaciones de la Tienda Windows  
+- Referencias de aplicaciones de la Tienda Windows  
   
--   Bibliotecas de clases o ensamblados de .NET Framework  
+- Bibliotecas de clases o ensamblados de .NET Framework  
   
--   componentes COM  
+- componentes COM  
   
--   Otros ensamblados o bibliotecas de clases de proyectos de la misma solución  
+- Otros ensamblados o bibliotecas de clases de proyectos de la misma solución  
   
--   servicios Web XML  
+- servicios Web XML  
   
 ## <a name="windows-store-app-references"></a>Referencias de aplicaciones de la Tienda Windows  
   
@@ -63,9 +63,9 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
   
  Si determina que el SDK de extensión al que la aplicación hace referencia no es compatible, debe realizar los pasos siguientes:  
   
-1.  Consulte el nombre del proyecto que está provocando el error. La plataforma de destino del proyecto se indica entre paréntesis junto al nombre del mismo. Por ejemplo, **MyProjectName (Windows 8.1)** significa que el proyecto **MyProjectName** tiene como destino la versión de la plataforma [!INCLUDE[win81](../includes/win81-md.md)].  
+1. Consulte el nombre del proyecto que está provocando el error. La plataforma de destino del proyecto se indica entre paréntesis junto al nombre del mismo. Por ejemplo, **MyProjectName (Windows 8.1)** significa que el proyecto **MyProjectName** tiene como destino la versión de la plataforma [!INCLUDE[win81](../includes/win81-md.md)].  
   
-2.  Vaya al sitio del proveedor del SDK de extensión no compatible e instale la versión del SDK de extensión con dependencias que son compatibles con la versión de la plataforma a la que está destinada su proyecto.  
+2. Vaya al sitio del proveedor del SDK de extensión no compatible e instale la versión del SDK de extensión con dependencias que son compatibles con la versión de la plataforma a la que está destinada su proyecto.  
   
     > [!NOTE]
     >  Una forma de averiguar si un SDK de extensión tiene dependencias de otros SDK de extensión consiste en realizar los siguientes pasos: reinicie Visual Studio, cree un nuevo proyecto de la Tienda Windows en C#, haga clic con el botón derecho en el proyecto y elija **Agregar referencia**, vaya a la pestaña **Windows** y luego a la subpestaña **Extensiones** , seleccione el SDK de extensión y fíjese en el panel derecho del **Administrador de referencias**. Si tiene dependencias, se mostrarán allí.  
@@ -73,20 +73,20 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
     > [!IMPORTANT]
     >  Si el proyecto tiene como destino Windows 10 y el SDK de extensión instalado anteriormente tiene una dependencia del paquete en tiempo de ejecución de Microsoft Visual C++, la versión de dicho paquete que es compatible con Windows 10 es v14.0 y se instala con Visual Studio 2015.  
   
-3.  Si el SDK de extensión que instaló en el paso anterior tiene dependencias de otros SDK de extensión, vaya a los sitios web de los proveedores de las dependencias e instale las versiones de estas dependencias que sean compatibles con la versión de la plataforma a la que está destinada su proyecto.  
+3. Si el SDK de extensión que instaló en el paso anterior tiene dependencias de otros SDK de extensión, vaya a los sitios web de los proveedores de las dependencias e instale las versiones de estas dependencias que sean compatibles con la versión de la plataforma a la que está destinada su proyecto.  
   
-4.  Reinicie Visual Studio y abra la aplicación.  
+4. Reinicie Visual Studio y abra la aplicación.  
   
-5.  Haga clic con el botón derecho en el nodo **Referencias** en el proyecto que produjo el error y elija **Agregar referencia**.  
+5. Haga clic con el botón derecho en el nodo **Referencias** en el proyecto que produjo el error y elija **Agregar referencia**.  
   
-6.  Haga clic en la pestaña **Windows** y, a continuación, en la subpestaña **Extensiones** y, a continuación, desactive las casillas de los antiguos SDK de extensión y active las casillas de los nuevos SDK de extensión. Haga clic en **Aceptar**.  
+6. Haga clic en la pestaña **Windows** y, a continuación, en la subpestaña **Extensiones** y, a continuación, desactive las casillas de los antiguos SDK de extensión y active las casillas de los nuevos SDK de extensión. Haga clic en **Aceptar**.  
   
 ## <a name="adding-a-reference-at-design-time"></a>Agregar una referencia en tiempo de diseño  
  Cuando hace una referencia a un ensamblado de su proyecto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] busca el ensamblado en las siguientes ubicaciones:  
   
--   Directorio del proyecto actual. (Puede buscar estos ensamblados utilizando la ficha **Examinar** .)  
+- Directorio del proyecto actual. (Puede buscar estos ensamblados utilizando la ficha **Examinar** .)  
   
--   Otros directorios del proyecto de la misma solución. (Puede encontrar estos ensamblados en la pestaña **Proyectos** ).  
+- Otros directorios del proyecto de la misma solución. (Puede encontrar estos ensamblados en la pestaña **Proyectos** ).  
   
 > [!NOTE]
 >  Todos los proyectos contienen una referencia implícita a mscorlib. Los proyectos de Visual Basic contienen una referencia implícita a `Microsoft.VisualBasic`.  

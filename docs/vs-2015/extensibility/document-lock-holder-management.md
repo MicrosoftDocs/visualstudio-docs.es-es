@@ -10,12 +10,12 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 260f82822c575ba2476541c889608e9cdcba8ed0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73c6151b5c02cb81a10c2725091c16457db70e33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996354"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056827"
 ---
 # <a name="document-lock-holder-management"></a>Administración de propietarios de bloqueo de documentos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ La tabla de documentos de ejecución (RDT) mantiene un recuento de documentos ab
 ### <a name="file-b-is-opened-by-a-different-editor"></a>Se abre el archivo "b" por otro Editor  
  En caso de que ya está abierto el archivo "b" Editor "B" cuando "A" editor intenta abrirlo, hay dos escenarios independientes para controlar:  
   
--   Si el archivo "b" está abierto en un editor compatible, debe tener editor "A" registrar un bloqueo de edición del documento sobre el uso de archivo "b" el <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> método. Después de que el editor "A" se realiza una modificación de archivo "b", anular el registro del documento editar bloqueo mediante la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> método.  
+- Si el archivo "b" está abierto en un editor compatible, debe tener editor "A" registrar un bloqueo de edición del documento sobre el uso de archivo "b" el <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> método. Después de que el editor "A" se realiza una modificación de archivo "b", anular el registro del documento editar bloqueo mediante la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> método.  
   
--   Si el archivo "b" está abierto en un modo incompatible, se puede dejar que la apertura de intentada de archivo "b" Editor "A" por error, o puede dejar la vista asociada con el editor "A" parcialmente abre y mostrar un mensaje de error adecuado. El mensaje de error debe indicar al usuario para cerrar el archivo "b" en el editor incompatible y, a continuación, vuelva a abrir el archivo "a" usando el editor "A". También puede implementar la [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] método <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> para preguntar al usuario al cerrar el archivo "b" que está abierto en el editor incompatible. Si el usuario cierra el archivo "b", la apertura del archivo "a" in editor "A" continúa con normalidad.  
+- Si el archivo "b" está abierto en un modo incompatible, se puede dejar que la apertura de intentada de archivo "b" Editor "A" por error, o puede dejar la vista asociada con el editor "A" parcialmente abre y mostrar un mensaje de error adecuado. El mensaje de error debe indicar al usuario para cerrar el archivo "b" en el editor incompatible y, a continuación, vuelva a abrir el archivo "a" usando el editor "A". También puede implementar la [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] método <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> para preguntar al usuario al cerrar el archivo "b" que está abierto en el editor incompatible. Si el usuario cierra el archivo "b", la apertura del archivo "a" in editor "A" continúa con normalidad.  
   
 ## <a name="additional-document-edit-lock-considerations"></a>Consideraciones de bloqueo de documento adicionales edición  
  Obtener un comportamiento diferente si el editor "A" es el único editor que tiene un documento de editar el bloqueo en el archivo "b" a como lo haría si editor "B" también contiene un documento de editar el bloqueo en el archivo "b". En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], **Diseñador de clases** es un ejemplo de un diseñador visual que no contiene un bloqueo de edición en el archivo de código asociado. Es decir, si el usuario tiene un diagrama de clases abierto en la vista Diseño y el archivo de código asociado se abre al mismo tiempo, y si el usuario modifica el archivo de código, pero no guardar los cambios, los cambios también se pierden en el archivo de diagrama (. CD). Si el **Diseñador de clases** tiene el documento solo editar bloqueo en el archivo de código, el usuario no se le pide para guardar los cambios al cerrar el archivo de código. El IDE le pide al usuario para guardar los cambios solo después de que el usuario cierra el **Diseñador de clases**. Los cambios guardados se reflejan en ambos archivos. Si tanto el **Diseñador de clases** y el editor de archivos de código mantiene los bloqueos de edición del documento en el archivo de código, a continuación, se solicita al usuario guardar al cerrar el archivo de código o el formulario. En ese momento se reflejan los cambios guardados en el formulario y el archivo de código. Para obtener más información sobre los diagramas de clases, vea [trabajar con diagramas de clases (Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md).  

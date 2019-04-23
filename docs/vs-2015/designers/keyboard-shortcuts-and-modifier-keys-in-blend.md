@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22704b0d754b9d77c45c1a7beb49e2e8863a3eb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b6da7ef473f279c968c676c768e89a6f1145ae4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059167"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Métodos abreviados de teclado y teclas modificadoras en Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,8 +40,8 @@ Los métodos abreviados de teclado pueden agilizar el trabajo al reducir una acc
 ## <a name="modifier-keys"></a>Teclas modificadoras  
  Algunos métodos abreviados de teclado no tienen elementos de menú asociados, lo que significa que no puede usar la interfaz de usuario de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] para descubrirlos. En los siguientes temas se proporcionan los métodos abreviados de teclado que modifican el comportamiento de las herramientas, o que modifican una acción como, por ejemplo, cambiar el tamaño de un objeto:  
   
--   [Teclas modificadoras de la mesa de trabajo](../designers/artboard-modifier-keys-in-blend.md)  
+- [Teclas modificadoras de la mesa de trabajo](../designers/artboard-modifier-keys-in-blend.md)  
   
--   [Teclas modificadoras de la herramienta Pluma](../designers/pen-tool-modifier-keys-in-blend.md)  
+- [Teclas modificadoras de la herramienta Pluma](../designers/pen-tool-modifier-keys-in-blend.md)  
   
--   [Teclas modificadoras de la herramienta Selección directa](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Teclas modificadoras de la herramienta Selección directa](../designers/direct-selection-tool-modifier-keys-in-blend.md)

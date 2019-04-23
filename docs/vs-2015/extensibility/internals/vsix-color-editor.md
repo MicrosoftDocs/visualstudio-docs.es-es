@@ -6,12 +6,12 @@ ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1a4f38224c31862f44e7d1d09578325ccc710bd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58996783"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057750"
 ---
 # <a name="vsix-color-editor"></a>Editor de colores de VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ La herramienta Editor de colores de extensión de Visual Studio puede crear y ed
   
  Un token de color se compone de cuatro elementos:  
   
--   **Nombre de categoría:** Una agrupación lógica de un conjunto de colores. Use un nombre de categoría existente si ya hay colores que son específicos para el elemento deseado de la interfaz de usuario o grupo de elementos de interfaz de usuario.  
+- **Nombre de categoría:** Una agrupación lógica de un conjunto de colores. Use un nombre de categoría existente si ya hay colores que son específicos para el elemento deseado de la interfaz de usuario o grupo de elementos de interfaz de usuario.  
   
--   **Nombre del token:** Establece un nombre descriptivo para el color de token y token. Conjuntos de incluyen en segundo plano y los nombres de token de primer plano (texto), así como todos sus Estados, y estos deben tener un nombre para que sea fácil identificar los pares y los Estados que se aplican a.  
+- **Nombre del token:** Establece un nombre descriptivo para el color de token y token. Conjuntos de incluyen en segundo plano y los nombres de token de primer plano (texto), así como todos sus Estados, y estos deben tener un nombre para que sea fácil identificar los pares y los Estados que se aplican a.  
   
--   **Los valores de color (o tonos):** Es necesario para cada tema color. Siempre cree en segundo plano y el texto valores de color en pares. Se emparejan colores de primer plano y fondo para que siempre sea legible con el color de fondo en el que se dibuja el color del texto (primer plano). Estos colores se vinculan y usarán conjuntamente en la interfaz de usuario. Si el fondo no está diseñado para su uso con texto, no se define un color de primer plano.  
+- **Los valores de color (o tonos):** Es necesario para cada tema color. Siempre cree en segundo plano y el texto valores de color en pares. Se emparejan colores de primer plano y fondo para que siempre sea legible con el color de fondo en el que se dibuja el color del texto (primer plano). Estos colores se vinculan y usarán conjuntamente en la interfaz de usuario. Si el fondo no está diseñado para su uso con texto, no se define un color de primer plano.  
   
--   **Nombre del color del sistema:** Para su uso en pantallas de alto contraste.  
+- **Nombre del color del sistema:** Para su uso en pantallas de alto contraste.  
   
 ## <a name="how-to-use-the-tool"></a>Cómo usar la herramienta  
  Tanto como sea posible, y en su caso, los colores de Visual Studio existentes deben reutilizarse en lugar de hacer otras nuevas. Sin embargo, para los casos donde no se definen colores adecuados, se deben crear colores personalizados para mantener una aplicación de temas de extensión compatible.  

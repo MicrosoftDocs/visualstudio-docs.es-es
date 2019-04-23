@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar texto y formato a celdas de tablas de Word mediante programación
+title: Procedimiento Agregar texto y formato a celdas de tablas de Word mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,21 +15,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 983b2939d652c20c3fbcb42dd8caded802495c8d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a415e55c263534ee4b29e5b45e24ad471d68fe0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063873"
 ---
-# <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Filtrar Agregar texto y formato a celdas de tablas de Word mediante programación
+# <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Procedimiento Agregar texto y formato a celdas de tablas de Word mediante programación
   Cada tabla consta de una colección de celdas. Cada objeto <xref:Microsoft.Office.Interop.Word.Cell> individual representa una celda de la tabla. Se hace referencia a cada celda mediante su ubicación en la tabla. Este ejemplo hace referencia a la celda ubicada en la primera fila y la primera columna de la tabla, le añade texto y le aplica formato.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="to-add-text-and-formatting-to-cells"></a>Para agregar texto y formato a celdas
 
-1.  Haga referencia a la celda por su ubicación en la tabla, agregue texto a la celda y aplique el formato.
+1. Haga referencia a la celda por su ubicación en la tabla, agregue texto a la celda y aplique el formato.
 
      El siguiente ejemplo de código se puede usar en una personalización de nivel de documento. Para usar este ejemplo, ejecútelo desde la clase `ThisDocument` del proyecto.
 

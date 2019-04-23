@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd897e0d340bed3c82ab47a9e315915456d10480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fd484422cdae8cfc04cab169feefdd452f178a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056684"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Configuración del proyecto para configuraciones de depuración en C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Puede cambiar la configuración del proyecto para una configuración de depuraci
 > [!WARNING]
 >  Este tema no se aplica a las aplicaciones de la Tienda Windows. Consulte [iniciar una sesión de depuración (VB, C#, C++ y XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a> Ficha Depurar  
+## <a name="BKMK_Debug_tab"></a> Ficha Depurar  
   
 |**Configuración**|**Descripción**|  
 |-----------------|---------------------|  
@@ -50,7 +50,7 @@ Puede cambiar la configuración del proyecto para una configuración de depuraci
 |**Habilitar depuración de código no administrado**|Permite depurar llamadas a código nativo Win32 (no administrado) desde una aplicación administrada.|  
 |**Habilitar depuración de SQL Server**|Permite depurar objetos de la base de datos de SQL Server.|  
   
-##  <a name="BKMK_Build_tab"></a> Pestaña de la compilación  
+## <a name="BKMK_Build_tab"></a> Pestaña de la compilación  
   
 |Parámetro|Descripción|  
 |-------------|-----------------|  

@@ -23,45 +23,45 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba3a7c26f56b923b9286a5e2f290502f2765e2b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0183e17da3eacad4fbcb3eed256396ab68249099
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054552"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para ver un tutorial paso a paso, consulte [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md).
+Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para obtener un tutorial paso a paso, vea [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 >  La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, abra el menú **Herramientas** y elija **Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para compilar, recompilar o limpiar toda la solución
 
-1.  En el **Explorador de soluciones**, seleccione o abra la solución.
+1. En el **Explorador de soluciones**, seleccione o abra la solución.
 
-2.  En la barra de menús, seleccione **Compilar** y, después, elija uno de los comandos siguientes:
+2. En la barra de menús, seleccione **Compilar** y, después, elija uno de los comandos siguientes:
 
-    -   Seleccione **Compilar** o **Compilar solución** para compilar solo los archivos de proyecto y los componentes que han cambiado desde la compilación más reciente.
+    - Seleccione **Compilar** o **Compilar solución** para compilar solo los archivos de proyecto y los componentes que han cambiado desde la compilación más reciente.
 
         > [!NOTE]
         >  El comando **Compilar** se convierte en **Compilar solución** cuando una solución incluye más de un proyecto.
 
-    -   Seleccione **Recompilar solución** para "limpiar" la solución y, después, compilar todos los archivos de proyecto y los componentes.
+    - Seleccione **Recompilar solución** para "limpiar" la solución y, después, compilar todos los archivos de proyecto y los componentes.
 
-    -   Seleccione **Limpiar solución** para eliminar los archivos intermedios y de salida. Cuando solo quedan los archivos de proyecto y componente, se pueden compilar nuevas instancias de archivos intermedios y de salida.
+    - Seleccione **Limpiar solución** para eliminar los archivos intermedios y de salida. Cuando solo quedan los archivos de proyecto y componente, se pueden compilar nuevas instancias de archivos intermedios y de salida.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Para compilar o recompilar un solo proyecto
 
-1.  En el **Explorador de soluciones**, seleccione o abra el proyecto.
+1. En el **Explorador de soluciones**, seleccione o abra el proyecto.
 
-2.  En la barra de menús, seleccione **Compilar** y, después, elija **Compilar** _NombreDelProyecto_ o **Recompilar** _NombreDelProyecto_.
+2. En la barra de menús, seleccione **Compilar** y, después, elija **Compilar** _NombreDelProyecto_ o **Recompilar** _NombreDelProyecto_.
 
-    -   Seleccione **Compilar** _NombreDelProyecto_ para compilar solo los componentes del proyecto que han cambiado desde la compilación más reciente.
+    - Seleccione **Compilar** _NombreDelProyecto_ para compilar solo los componentes del proyecto que han cambiado desde la compilación más reciente.
 
-    -   Seleccione **Recompilar** _NombreDelProyecto_ para "limpiar" el proyecto y, después, compilar los archivos de proyecto y todos los componentes del proyecto.
+    - Seleccione **Recompilar** _NombreDelProyecto_ para "limpiar" el proyecto y, después, compilar los archivos de proyecto y todos los componentes del proyecto.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Para compilar solo el proyecto de inicio y sus dependencias
 
@@ -97,17 +97,17 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
 
 ## <a name="to-compile-multiple-c-project-items"></a>Para compilar varios elementos de proyecto de C++
 
-1.  En el **Explorador de soluciones**, seleccione varios archivos, que pueden ser acciones compiladas, abra el menú contextual de uno de esos archivos y, después, seleccione **Compilar**.
+1. En el **Explorador de soluciones**, seleccione varios archivos, que pueden ser acciones compiladas, abra el menú contextual de uno de esos archivos y, después, seleccione **Compilar**.
 
      Si los archivos tienen dependencias, se compilarán en orden de dependencia. Se producirá un error en la operación de compilación si los archivos requieren un encabezado precompilado que no está disponible al compilar. La operación de compilación usa la configuración de la solución activa actual.
 
 ## <a name="to-stop-a-build"></a>Para detener una compilación
 
-1.  Realice uno de estos pasos:
+1. Realice uno de estos pasos:
 
-    -   En la barra de menús, seleccione **Compilar**, **Cancelar**.
+    - En la barra de menús, seleccione **Compilar**, **Cancelar**.
 
-    -   Presione las teclas Ctrl+Interrumpir.
+    - Presione las teclas Ctrl+Interrumpir.
 
 ## <a name="see-also"></a>Vea también
- [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md) [obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md) [compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [Depurar y liberar configuraciones de proyecto](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/c ++ Building Reference](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md) [soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)
+ [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md) [obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md) [compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [Depurar y liberar configuraciones de proyecto](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ referencia de compilación](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md) [soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)

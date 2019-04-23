@@ -10,12 +10,12 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d73acf8f46966cd0de9eb779acb5a5c53ad4e329
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 04151a6fd3b934dd39e795cafc375974ac5a6b33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998354"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043671"
 ---
 # <a name="creating-a-settings-category"></a>Creación de una categoría de configuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ En este tutorial crea una categoría de configuración de Visual Studio y usarlo
   
 #### <a name="to-create-a-settings-category"></a>Para crear una categoría de configuración  
   
-1.  Completar la [creación de una página de opciones](../extensibility/creating-an-options-page.md).  
+1. Completar la [creación de una página de opciones](../extensibility/creating-an-options-page.md).  
   
-2.  Abra el archivo VSPackage.resx y agregar estos recursos de tres cadena:  
+2. Abra el archivo VSPackage.resx y agregar estos recursos de tres cadena:  
   
     |Name|Valor|  
     |----------|-----------|  
@@ -49,7 +49,7 @@ En este tutorial crea una categoría de configuración de Visual Studio y usarlo
     > [!NOTE]
     >  De estos tres, solo el nombre de categoría no aparecen en el Asistente para importar y exportar configuraciones.  
   
-3.  En MyToolsOptionsPackage.cs, agregue un `float` propiedad denominada `OptionFloat` a la `OptionPageGrid` clase, como se muestra en el ejemplo siguiente.  
+3. En MyToolsOptionsPackage.cs, agregue un `float` propiedad denominada `OptionFloat` a la `OptionPageGrid` clase, como se muestra en el ejemplo siguiente.  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
@@ -79,39 +79,39 @@ En este tutorial crea una categoría de configuración de Visual Studio y usarlo
     > [!NOTE]
     >  El `OptionPageGrid` categoría denominada "My Category" ahora consta de las dos propiedades, `OptionInteger` y `OptionFloat`.  
   
-4.  Agregar un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a la `MyToolsOptionsPackage` clase y asígnele el nombre de categoría "My Category", asígnele el ObjectName "My Settings" y isToolsOptionPage se establece en true. Establecer categoryResourceID, objectNameResourceID y DescriptionResourceID al recurso de cadena correspondiente que identificadores creados anteriormente.  
+4. Agregar un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a la `MyToolsOptionsPackage` clase y asígnele el nombre de categoría "My Category", asígnele el ObjectName "My Settings" y isToolsOptionPage se establece en true. Establecer categoryResourceID, objectNameResourceID y DescriptionResourceID al recurso de cadena correspondiente que identificadores creados anteriormente.  
   
     ```csharp  
     [ProvideProfileAttribute(typeof(OptionPageGrid),   
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]  
     ```  
   
-5.  Compile la solución y comience la depuración. En la instancia experimental debería ver que **mi página de cuadrícula** ahora tiene valores enteros y flotantes.  
+5. Compile la solución y comience la depuración. En la instancia experimental debería ver que **mi página de cuadrícula** ahora tiene valores enteros y flotantes.  
   
 ## <a name="examining-the-settings-file"></a>Examine el archivo de configuración  
  En esta sección, exportará los valores de categoría de propiedad a un archivo de configuración. Examine el archivo y, a continuación, importe los valores en la categoría de propiedad.  
   
-1.  Inicie el proyecto en modo de depuración presionando F5. Esto inicia la instancia experimental.  
+1. Inicie el proyecto en modo de depuración presionando F5. Esto inicia la instancia experimental.  
   
-2.  Abra el **herramientas / opciones** cuadro de diálogo.  
+2. Abra el **herramientas / opciones** cuadro de diálogo.  
   
-3.  En la vista de árbol en el panel izquierdo, expanda **My Category** y, a continuación, haga clic en **mi página de cuadrícula**.  
+3. En la vista de árbol en el panel izquierdo, expanda **My Category** y, a continuación, haga clic en **mi página de cuadrícula**.  
   
-4.  Cambie el valor de **OptionFloat** a 3,1416 y **OptionInteger** en 12. Haga clic en **Aceptar**.  
+4. Cambie el valor de **OptionFloat** a 3,1416 y **OptionInteger** en 12. Haga clic en **Aceptar**.  
   
-5.  En el menú **Herramientas**, haga clic en **Importar y exportar configuraciones**.  
+5. En el menú **Herramientas**, haga clic en **Importar y exportar configuraciones**.  
   
      El **importar y exportar configuraciones** aparece el asistente.  
   
-6.  Asegúrese de que **exportar la configuración de entorno seleccionada** está seleccionada y, a continuación, haga clic en **siguiente**.  
+6. Asegúrese de que **exportar la configuración de entorno seleccionada** está seleccionada y, a continuación, haga clic en **siguiente**.  
   
      El **elija la configuración para exportar** aparece la página.  
   
-7.  Haga clic en **mi configuración**.  
+7. Haga clic en **mi configuración**.  
   
      El **descripción** cambia a **OptionInteger y OptionFloat**.  
   
-8.  Asegúrese de que **mi configuración** es la única categoría que está seleccionada y, a continuación, haga clic en **siguiente**.  
+8. Asegúrese de que **mi configuración** es la única categoría que está seleccionada y, a continuación, haga clic en **siguiente**.  
   
      El **nombre su archivo de configuración** aparece la página.  
   

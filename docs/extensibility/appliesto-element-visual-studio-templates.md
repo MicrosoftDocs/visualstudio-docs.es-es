@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335199"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055202"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo (elemento) (plantillas de Visual Studio)
 
@@ -60,19 +60,19 @@ Se requiere un valor de texto. Este texto especifica las funciones del proyecto.
 
 La sintaxis de expresión válida se define como:
 
--   La expresión de la función, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
+- La expresión de la función, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
 
--   El "&#124;" es el operador OR.
+- El "&#124;" es el operador OR.
 
--   Los caracteres "&" y "+" son operadores AND.
+- El "&" y "+" caracteres son operadores AND.
 
--   El carácter “!” es el operador NOT.
+- El carácter “!” es el operador NOT.
 
--   Los paréntesis indican el orden de prioridad de la evaluación.
+- Los paréntesis indican el orden de prioridad de la evaluación.
 
--   Una expresión null o vacía se evalúa como una coincidencia.
+- Una expresión null o vacía se evalúa como una coincidencia.
 
--   ¿Las funciones de proyecto pueden ser cualquier carácter salvo estos caracteres reservados: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
+- ¿Las funciones de proyecto pueden ser cualquier carácter salvo estos caracteres reservados: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
 
 ## <a name="example"></a>Ejemplo
 

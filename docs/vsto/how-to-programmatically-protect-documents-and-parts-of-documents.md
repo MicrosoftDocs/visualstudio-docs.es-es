@@ -1,5 +1,5 @@
 ---
-title: Filtrar Proteger documentos y partes de documentos mediante programación
+title: Procedimiento Proteger documentos y partes de documentos mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c7d284e116f72b5f1c19017cf234ea42832c202
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ac93b71d67bc842b2498fbd4d017b17d9ddcf00c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062623"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Filtrar Proteger documentos y partes de documentos mediante programación
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Procedimiento Proteger documentos y partes de documentos mediante programación
   Puede agregar protección a documentos de Microsoft Office Word para impedir que los usuarios realicen cualquier modificación en el documento.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -37,19 +37,19 @@ ms.locfileid: "56613419"
 
 ### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>Para proteger un documento que forma parte de una personalización de nivel de documento
 
-1.  Llame al método <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> de la clase `ThisDocument` en su proyecto.
+1. Llame al método <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> de la clase `ThisDocument` en su proyecto.
 
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
 
 ### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>Para excluir un control de marcador de la protección de documento
 
-1.  Proteja todo el documento mediante el método <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> .
+1. Proteja todo el documento mediante el método <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> .
 
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
 
-2.  Excluya `Bookmark1` de la protección del documento.
+2. Excluya `Bookmark1` de la protección del documento.
 
      [!code-vb[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#112)]
      [!code-csharp[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#112)]
@@ -61,7 +61,7 @@ ms.locfileid: "56613419"
 
 ### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>Para proteger un documento mediante un complemento de VSTO de nivel de aplicación
 
-1.  Llame al método <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> del <xref:Microsoft.Office.Interop.Word.Document> que quiere proteger.
+1. Llame al método <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> del <xref:Microsoft.Office.Interop.Word.Document> que quiere proteger.
 
      El siguiente ejemplo de código protege el documento activo. Para usar este ejemplo de código, ejecútelo desde la clase `ThisAddIn` del proyecto.
 

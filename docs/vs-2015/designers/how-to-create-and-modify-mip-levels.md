@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear y modificar niveles de MIP | Microsoft Docs
+title: Procedimiento Crear y modificar niveles de MIP | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6495f9271114be5fcd35e38d9ed210e07a8b6f66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ac8612530ad7a28fef76b3339b9207408842aa8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774067"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055098"
 ---
-# <a name="how-to-create-and-modify-mip-levels"></a>Cómo: Crear y modificar niveles de MIP
+# <a name="how-to-create-and-modify-mip-levels"></a>Procedimiento Crear y modificar niveles de MIP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el **Editor de imágenes** para generar y modificar *niveles de MIP* con nivel de detalle (LoD) del espacio de textura.  
@@ -26,9 +26,9 @@ En este documento se muestra cómo usar el **Editor de imágenes** para generar 
   
 #### <a name="to-generate-mip-levels"></a>Para generar niveles de MIP  
   
-1.  Comience con una textura básica, como se describe en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md). Para obtener mejores resultados, especifique una textura que tenga un ancho y un alto que sean la potencia de dos del tamaño, por ejemplo, 256, 512, 1024, etc.  
+1. Comience con una textura básica, como se describe en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md). Para obtener mejores resultados, especifique una textura que tenga un ancho y un alto que sean la potencia de dos del tamaño, por ejemplo, 256, 512, 1024, etc.  
   
-2.  Genere los niveles de MIP. En la barra de herramientas del **modo Editor de imágenes**, elija **Avanzado**, **Herramientas**, **Generar Mips**.  
+2. Genere los niveles de MIP. En la barra de herramientas del **modo Editor de imágenes**, elija **Avanzado**, **Herramientas**, **Generar Mips**.  
   
      Observe que los botones para **ir al nivel de MIP siguiente** e **ir al nivel de MIP anterior** aparecen ahora en la barra de herramientas del **modo Editor de imágenes**. Si se muestra la ventana **Propiedades**, observe también que las propiedades de solo lectura **Nivel de Mip** y **Número de niveles de MIP** aparecen ahora en las propiedades de la imagen.  
   
@@ -37,9 +37,9 @@ En este documento se muestra cómo usar el **Editor de imágenes** para generar 
   
 #### <a name="to-modify-an-individual-mip-level"></a>Para modificar un nivel de MIP individual  
   
-1.  Seleccione el nivel de MIP que quiere modificar. En la barra de herramientas del **modo Editor de imágenes**, use los botones para **ir al nivel de MIP siguiente** e **ir al nivel de MIP anterior** para moverse entre los niveles.  
+1. Seleccione el nivel de MIP que quiere modificar. En la barra de herramientas del **modo Editor de imágenes**, use los botones para **ir al nivel de MIP siguiente** e **ir al nivel de MIP anterior** para moverse entre los niveles.  
   
-2.  Una vez que haya seleccionado el nivel de MIP que quiere modificar, puede usar las herramientas de dibujo para modificarlo sin cambiar el contenido de otros niveles de MIP. Las herramientas de dibujo están disponibles en la barra de herramientas del **Editor de imágenes**. Después de seleccionar una herramienta, puede cambiar sus propiedades en la ventana **Propiedades**. Para obtener información sobre las herramientas de dibujo y sus propiedades, vea [Editor de imágenes](../designers/image-editor.md).  
+2. Una vez que haya seleccionado el nivel de MIP que quiere modificar, puede usar las herramientas de dibujo para modificarlo sin cambiar el contenido de otros niveles de MIP. Las herramientas de dibujo están disponibles en la barra de herramientas del **Editor de imágenes**. Después de seleccionar una herramienta, puede cambiar sus propiedades en la ventana **Propiedades**. Para obtener información sobre las herramientas de dibujo y sus propiedades, vea [Editor de imágenes](../designers/image-editor.md).  
   
 > [!NOTE]
 >  Si no necesita modificar el contenido de los niveles de MIP individuales (como haría para lograr determinados efectos), se recomienda que genere los mapas MIP desde la textura de origen en tiempo de compilación. Esto ayuda a garantizar que los niveles de MIP permanezcan sincronizados con la textura de origen, ya que las modificaciones realizadas en un nivel de MIP no se propagan automáticamente a otros niveles. Para obtener más información sobre cómo generar mapas MIP en tiempo de compilación, vea [Cómo: Exportar una textura que contiene mapas MIP](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  

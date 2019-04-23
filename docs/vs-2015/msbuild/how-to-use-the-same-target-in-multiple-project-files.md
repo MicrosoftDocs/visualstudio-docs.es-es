@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66a916203f008aee84010bcc910f1a35dc39e5d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056840"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Cómo: Utilizar el mismo destino en varios archivos de proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Si ha creado varios archivos de proyecto con [!INCLUDE[vstecmsbuild](../includes
   
 #### <a name="to-import-a-project"></a>Para importar un proyecto  
   
-1.  En el archivo de proyecto de importación, defina todas las propiedades y elementos utilizados como parámetros para las propiedades y elementos del proyecto importado.  
+1. En el archivo de proyecto de importación, defina todas las propiedades y elementos utilizados como parámetros para las propiedades y elementos del proyecto importado.  
   
-2.  Utilice el elemento `Import` para importar el proyecto. Por ejemplo:  
+2. Utilice el elemento `Import` para importar el proyecto. Por ejemplo:  
   
      `<Import Project="MyCommon.targets"/>`  
   
-3.  A continuación del elemento `Import`, defina todas las propiedades y elementos que deben reemplazar las definiciones predeterminadas de las propiedades y los elementos del proyecto importado.  
+3. A continuación del elemento `Import`, defina todas las propiedades y elementos que deben reemplazar las definiciones predeterminadas de las propiedades y los elementos del proyecto importado.  
   
 ## <a name="order-of-evaluation"></a>Orden de evaluación  
  Cuando [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] alcanza un elemento `Import`, el proyecto importado se inserta de manera efectiva en el proyecto de importación en la ubicación del elemento `Import`. Por tanto, la ubicación del elemento `Import` puede afectar a los valores de propiedades y elementos. Es importante comprender las propiedades y elementos que especifica el proyecto importado, así como las propiedades y los elementos que utiliza dicho proyecto.  
@@ -77,11 +77,11 @@ Si ha creado varios archivos de proyecto con [!INCLUDE[vstecmsbuild](../includes
   
 #### <a name="use-the-following-approach-when-importing-projects"></a>Utilice el enfoque siguiente al importar los proyectos  
   
-1.  En el archivo de proyecto, defina todas las propiedades y los elementos utilizados como parámetros para las propiedades y los elementos del proyecto importado.  
+1. En el archivo de proyecto, defina todas las propiedades y los elementos utilizados como parámetros para las propiedades y los elementos del proyecto importado.  
   
-2.  Importe el proyecto.  
+2. Importe el proyecto.  
   
-3.  En el archivo de proyecto, defina todas las propiedades y los elementos que deben reemplazar las definiciones predeterminadas de propiedades y elementos del proyecto importado.  
+3. En el archivo de proyecto, defina todas las propiedades y los elementos que deben reemplazar las definiciones predeterminadas de propiedades y elementos del proyecto importado.  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se muestra el archivo MyCommon.targets importado por el segundo ejemplo de código. El archivo .targets evalúa las propiedades del proyecto de importación para configurar la compilación.  

@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994891"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059180"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Revisar el uso de SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "58994891"
 
  La directiva de seguridad predeterminada no conceder el permiso de código no administrado a un ensamblado a menos que se está ejecutando desde el equipo local o es un miembro de uno de los siguientes grupos:
 
--   Mi grupo de código de la zona de equipo
+- Mi grupo de código de la zona de equipo
 
--   Grupo de código de nombre seguro de Microsoft
+- Grupo de código de nombre seguro de Microsoft
 
--   Grupo de código de nombre seguro de ECMA
+- Grupo de código de nombre seguro de ECMA
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Lea detenidamente el código para asegurarse de que este atributo es absolutamente necesario. Si no está familiarizado con la seguridad del código administrado, o no entiende las implicaciones de seguridad del uso de este atributo, quitarlo de su código. Si el atributo es necesario, debe asegurarse de que los llamadores no pueden usar el código de forma malintencionada. Si el código no tiene permiso para ejecutar código no administrado, este atributo no tiene ningún efecto y se debe quitar.

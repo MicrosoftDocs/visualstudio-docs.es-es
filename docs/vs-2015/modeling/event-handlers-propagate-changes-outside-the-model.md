@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c723e0a2cc76b6432fc6f209a7edf4a988a0b3fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998813"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059908"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ En el SDK de modelado y visualización, puede definir controladores de eventos d
   
 1. Elija el tipo de evento que desea supervisar. Para obtener una lista completa, examine las propiedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propiedad se corresponde con un tipo de evento. Usado con mayor frecuencia son tipos de evento:  
   
-   -   `ElementAdded` : se desencadena cuando un elemento de modelo, se crea el vínculo de relación, forma o conector.  
+   - `ElementAdded` : se desencadena cuando un elemento de modelo, se crea el vínculo de relación, forma o conector.  
   
-   -   La ElementPropertyChanged: se desencadena cuando el valor de un `Normal` se cambia la propiedad de dominio. El evento se desencadena únicamente si los valores nuevos y antiguos no son iguales. El evento no se puede aplicar a las propiedades de almacenamiento calculadas y personalizadas.  
+   - La ElementPropertyChanged: se desencadena cuando el valor de un `Normal` se cambia la propiedad de dominio. El evento se desencadena únicamente si los valores nuevos y antiguos no son iguales. El evento no se puede aplicar a las propiedades de almacenamiento calculadas y personalizadas.  
   
         No se puede aplicar a las propiedades de rol que se corresponden con los vínculos de relación. En su lugar, use `ElementAdded` para supervisar la relación de dominio.  
   
-   -   `ElementDeleted` : se desencadena después de un elemento de modelo, relación, forma o conector se ha eliminado. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.  
+   - `ElementDeleted` : se desencadena después de un elemento de modelo, relación, forma o conector se ha eliminado. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.  
   
 2. Agregue una definición de clase parcial para _Sudsl_**DocData** en un archivo de código independiente en el **DslPackage** proyecto.  
   
@@ -166,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  Si escribe un evento que se actualiza el almacén:  
   
--   Use `store.InUndoRedoOrRollback` para evitar realizar cambios en los elementos del modelo en la fase de reversión. El Administrador de transacciones todo lo establecerá en el almacén a su estado original.  
+- Use `store.InUndoRedoOrRollback` para evitar realizar cambios en los elementos del modelo en la fase de reversión. El Administrador de transacciones todo lo establecerá en el almacén a su estado original.  
   
--   Use `store.InSerializationTransaction` para evitar realizar cambios mientras se carga el modelo del archivo.  
+- Use `store.InSerializationTransaction` para evitar realizar cambios mientras se carga el modelo del archivo.  
   
--   Hará que los cambios aún más los eventos que se desencadene. Asegúrese de que se evite un bucle infinito.  
+- Hará que los cambios aún más los eventos que se desencadene. Asegúrese de que se evite un bucle infinito.  
   
 ## <a name="store-event-types"></a>Tipos de evento de Store  
  Cada tipo de evento corresponde a una colección en Store.EventManagerDirectory. Puede agregar o quitar controladores de eventos en cualquier momento, pero resulta habitual para agregarlos al cargar el documento.  

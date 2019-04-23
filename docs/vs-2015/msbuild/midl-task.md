@@ -27,12 +27,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 883c56ce2bd272e508bc79d1d0c07db02350862d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062040"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea **MIDL**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.  
   
--   **AdditionalIncludeDirectories**  
+- **AdditionalIncludeDirectories**  
   
      Parámetro **String[]** opcional.  
   
@@ -50,7 +50,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/I** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      Parámetro **String** opcional.  
   
@@ -58,7 +58,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ApplicationConfigurationMode**  
+- **ApplicationConfigurationMode**  
   
      Parámetro **Boolean** opcional.  
   
@@ -66,7 +66,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **//app_config** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ClientStubFile**  
+- **ClientStubFile**  
   
      Parámetro **String** opcional.  
   
@@ -74,7 +74,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/cstub** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **ServerStubFile** en esta tabla.  
   
--   **CPreprocessOptions**  
+- **CPreprocessOptions**  
   
      Parámetro **String** opcional.  
   
@@ -82,7 +82,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/cpp_opt** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **DefaultCharType**  
+- **DefaultCharType**  
   
      Parámetro **String** opcional.  
   
@@ -98,7 +98,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/char** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **DllDataFileName**  
+- **DllDataFileName**  
   
      Parámetro **String** opcional.  
   
@@ -106,7 +106,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/dlldata** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **EnableErrorChecks**  
+- **EnableErrorChecks**  
   
      Parámetro **String** opcional.  
   
@@ -122,7 +122,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/error** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckAllocations**  
+- **ErrorCheckAllocations**  
   
      Parámetro **Boolean** opcional.  
   
@@ -130,7 +130,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/error allocation** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckBounds**  
+- **ErrorCheckBounds**  
   
      Parámetro **Boolean** opcional.  
   
@@ -138,7 +138,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/error bounds_check** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckEnumRange**  
+- **ErrorCheckEnumRange**  
   
      Parámetro **Boolean** opcional.  
   
@@ -146,7 +146,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/error enum** en la Ayuda de la línea de comandos (**/?**) de midl.exe.  
   
--   **ErrorCheckRefPointers**  
+- **ErrorCheckRefPointers**  
   
      Parámetro **Boolean** opcional.  
   
@@ -154,7 +154,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/error ref** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckStubData**  
+- **ErrorCheckStubData**  
   
      Parámetro **Boolean** opcional.  
   
@@ -162,7 +162,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/error stub_data** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateClientFiles**  
+- **GenerateClientFiles**  
   
      Parámetro **String** opcional.  
   
@@ -177,7 +177,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/client** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateServerFiles**  
+- **GenerateServerFiles**  
   
      Parámetro **String** opcional.  
   
@@ -192,7 +192,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/server** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateStublessProxies**  
+- **GenerateStublessProxies**  
   
      Parámetro **Boolean** opcional.  
   
@@ -200,7 +200,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/Oicf** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateTypeLibrary**  
+- **GenerateTypeLibrary**  
   
      Parámetro **Boolean** opcional.  
   
@@ -208,7 +208,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/notlb** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **HeaderFileName**  
+- **HeaderFileName**  
   
      Parámetro **String** opcional.  
   
@@ -216,7 +216,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/h** o **/header** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **IgnoreStandardIncludePath**  
+- **IgnoreStandardIncludePath**  
   
      Parámetro **Boolean** opcional.  
   
@@ -224,7 +224,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/no_def_idir** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **InterfaceIdentifierFileName**  
+- **InterfaceIdentifierFileName**  
   
      Parámetro **String** opcional.  
   
@@ -232,7 +232,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/iid** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **LocaleID**  
+- **LocaleID**  
   
      Parámetro **int** opcional.  
   
@@ -240,7 +240,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/lcid** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también "Identificadores de configuración regional asignados por Microsoft" en MSDN.  
   
--   **MkTypLibCompatible**  
+- **MkTypLibCompatible**  
   
      Parámetro **Boolean** opcional.  
   
@@ -248,7 +248,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/mktyplib203** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también "Sintaxis de archivos ODL" en el sitio web de MSDN.  
   
--   **OutputDirectory**  
+- **OutputDirectory**  
   
      Parámetro **String** opcional.  
   
@@ -256,7 +256,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/out** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **PreprocessorDefinitions**  
+- **PreprocessorDefinitions**  
   
      Parámetro **String[]** opcional.  
   
@@ -264,7 +264,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/D** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **UndefinePreprocessorDefinitions** en esta tabla.  
   
--   **ProxyFileName**  
+- **ProxyFileName**  
   
      Parámetro **String** opcional.  
   
@@ -272,7 +272,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/proxy** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **RedirectOutputAndErrors**  
+- **RedirectOutputAndErrors**  
   
      Parámetro **String** opcional.  
   
@@ -280,7 +280,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/o** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ServerStubFile**  
+- **ServerStubFile**  
   
      Parámetro **String** opcional.  
   
@@ -288,13 +288,13 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/sstub** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **ClientStubFile** en esta tabla.  
   
--   **Source**  
+- **Source**  
   
      Parámetro `ITaskItem[]` requerido.  
   
      Especifica una lista de archivos de código fuente, separados por espacios.  
   
--   **StructMemberAlignment**  
+- **StructMemberAlignment**  
   
      Parámetro **String** opcional.  
   
@@ -312,7 +312,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/Zp** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). La opción **/Zp** es equivalente a la opción **/pack** y a la antigua opción **/align**.  
   
--   **SuppressCompilerWarnings**  
+- **SuppressCompilerWarnings**  
   
      Parámetro **Boolean** opcional.  
   
@@ -320,7 +320,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/no_warn** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      Parámetro `Boolean` opcional.  
   
@@ -328,7 +328,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/nologo** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TargetEnvironment**  
+- **TargetEnvironment**  
   
      Parámetro **String** opcional.  
   
@@ -345,13 +345,13 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/env** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      Parámetro `String` opcional.  
   
      Especifica el directorio intermedio en que se almacenan los registros de seguimiento para esta tarea.  
   
--   **TypeLibFormat**  
+- **TypeLibFormat**  
   
      Parámetro **String** opcional.  
   
@@ -366,7 +366,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte las opciones **/newtlb** y **/oldtlb** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TypeLibraryName**  
+- **TypeLibraryName**  
   
      Parámetro **String** opcional.  
   
@@ -374,7 +374,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/tlb** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **UndefinePreprocessorDefinitions**  
+- **UndefinePreprocessorDefinitions**  
   
      Parámetro **String[]** opcional.  
   
@@ -382,7 +382,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/U** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **PreprocessorDefinitions** en esta tabla.  
   
--   **ValidateAllParameters**  
+- **ValidateAllParameters**  
   
      Parámetro `Boolean` opcional.  
   
@@ -390,7 +390,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte las opciones **/robust** y **/no_robust** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **WarnAsError**  
+- **WarnAsError**  
   
      Parámetro `Boolean` opcional.  
   
@@ -400,7 +400,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/WX** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **WarningLevel** en esta tabla.  
   
--   **WarningLevel**  
+- **WarningLevel**  
   
      Parámetro **String** opcional.  
   

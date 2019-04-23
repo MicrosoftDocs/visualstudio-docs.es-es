@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 770c805489e358252151dc8e777941a267f76363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061429"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Los literales de cadena de atributo se deben analizar correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,11 +55,11 @@ ms.locfileid: "58994911"
 
  La regla se desencadena por el texto siguiente:
 
--   Parámetros que contienen 'version' y no se puede analizar como System.Version.
+- Parámetros que contienen 'version' y no se puede analizar como System.Version.
 
--   Parámetros que contienen 'guid' y no se puede analizar como System.Guid.
+- Parámetros que contienen 'guid' y no se puede analizar como System.Guid.
 
--   Parámetros que contienen "uri", 'urn' o 'url' y no se puede analizar a System.Uri.
+- Parámetros que contienen "uri", 'urn' o 'url' y no se puede analizar a System.Uri.
 
 ## <a name="see-also"></a>Vea también
  [CA1054: Los parámetros de URI no deben ser cadenas](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

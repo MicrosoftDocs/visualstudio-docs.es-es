@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053538"
 ---
 # <a name="graphics-frame-analysis"></a>Análisis de fotograma de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
   
  El Análisis de fotogramas limita el número de reintentos a 10. Si su plataforma tiene una gestión de la energía o un canalizador del reloj agresivos, es posible que el Análisis de fotogramas no se ejecute correctamente e informe de un error porque haya superado el límite de reintentos. Tal vez pueda mitigar el problema restaurando la limitación de la velocidad del reloj y la administración de energía de la plataforma de modo que sean menos agresivas, si la plataforma lo permite.  
   
-##  <a name="HardwareSupport"></a> Compatibilidad de hardware  
+## <a name="HardwareSupport"></a> Compatibilidad de hardware  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Marcas de tiempo y consultas de oclusión  
  Las marcas de tiempo se admiten en todas las plataformas que admiten el Análisis de fotogramas. Las consultas de oclusión de profundidad, necesarias para el contador de píxeles ocluidos, se admiten en las plataformas que admiten el nivel de características 9.2 o superiores.  
@@ -182,7 +182,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 > [!NOTE]
 >  Esto se aplica solo a las llamadas de la API Direct3D que utilice, no a los niveles de características. Mientras utilice la API Direct3D 11, Direct3D 11.1 o Direct3D 11.2, puede usar el nivel de características que quiera y el Análisis de fotogramas funcionará.  
   
-##  <a name="Variants"></a> Variantes  
+## <a name="Variants"></a> Variantes  
  Cada cambio que el Análisis de fotogramas realiza en la manera en que se representa un fotograma durante la reproducción se conoce como *variante*. Las variantes que el Análisis de fotogramas examina corresponden a cambios comunes relativamente fáciles que puede realizar para mejorar el rendimiento de la representación o la calidad visual de la aplicación, por ejemplo, reducir el tamaño de las texturas, usar compresión de textura o permitir diferentes tipos de suavizado de contorno. Las variantes reemplazan el contexto de representación y los parámetros habituales de la aplicación. A continuación, se muestra un resumen:  
   
 |Variante|Descripción|  

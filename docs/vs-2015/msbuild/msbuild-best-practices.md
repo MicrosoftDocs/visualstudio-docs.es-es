@@ -12,19 +12,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6973e905a0587ffdc7cbd0a401e03f933fc60a3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e597b10913ad495193545ab304b3b324d8f66b41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662224"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043426"
 ---
 # <a name="msbuild-best-practices"></a>Procedimientos recomendados de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le recomendamos los siguientes procedimientos para escribir scripts de MSBuild:  
   
--   Los valores de propiedad predeterminados se controlan mejor mediante el uso del atributo `Condition` sin declarar una propiedad cuyo valor predeterminado se puede reemplazar en la línea de comandos. Por ejemplo, use  
+- Los valores de propiedad predeterminados se controlan mejor mediante el uso del atributo `Condition` sin declarar una propiedad cuyo valor predeterminado se puede reemplazar en la línea de comandos. Por ejemplo, use  
   
      `<MyProperty Condition="$(MyProperty)" == ''>`  
   
@@ -32,7 +32,7 @@ Le recomendamos los siguientes procedimientos para escribir scripts de MSBuild:
   
      `</MyProperty>`  
   
--   Evite los caracteres comodín cuando seleccione elementos. En su lugar, especifique los archivos explícitamente. Esto hace más fácil realizar un seguimiento de los errores que pueden producirse al agregar o eliminar archivos.  
+- Evite los caracteres comodín cuando seleccione elementos. En su lugar, especifique los archivos explícitamente. Esto hace más fácil realizar un seguimiento de los errores que pueden producirse al agregar o eliminar archivos.  
   
 ## <a name="see-also"></a>Vea también  
  [Conceptos avanzados](../msbuild/msbuild-advanced-concepts.md)

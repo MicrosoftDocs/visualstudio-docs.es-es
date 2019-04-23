@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05360ca6e557ae0153715497b85792bc2fb6e2fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043725"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Archivo de control de código fuente
 Cuando se coloca una solución de Visual Studio o proyecto bajo control de código fuente mediante el IDE, el IDE recibe dos piezas clave de la información. La información procede el complemento en forma de cadenas de control de código fuente. Estas cadenas, "AuxPath" y "Nombre_proyecto", son opacas para el IDE, pero se usan por el complemento para buscar la solución o proyecto bajo control de versiones. El IDE normalmente obtiene estas cadenas de la primera vez mediante una llamada a la [SccGetProjPath](../extensibility/sccgetprojpath-function.md), y, a continuación, guarda en el archivo de solución o proyecto para las futuras llamadas a la [SccOpenProject](../extensibility/sccopenproject-function.md). Cuando se insertan en los archivos de solución y proyecto, las cadenas "AuxPath" y "Nombre_proyecto" no se actualizan automáticamente cuando un usuario, ramas, las bifurcaciones, o copia los archivos de solución y proyecto que se encuentran en el control de versiones. Para asegurarse de que los archivos de solución y proyecto señalan a su ubicación correcta en el control de versiones, los usuarios deben actualizar manualmente las cadenas. Dado que las cadenas están diseñadas para ser opaca, no siempre puede claro cómo debe actualizarse.
@@ -25,19 +25,19 @@ Cuando se coloca una solución de Visual Studio o proyecto bajo control de códi
 
  Un complemento de control de código fuente que admita la *MSSCCPRJ.SCC* archivo debe cumplir las siguientes directrices:
 
--   Solo puede haber un *MSSCCPRJ.SCC* archivos por directorio.
+- Solo puede haber un *MSSCCPRJ.SCC* archivos por directorio.
 
--   Un *MSSCCPRJ.SCC* archivo puede contener la "AuxPath" y "Nombre_proyecto" para varios archivos que están bajo control de código fuente dentro de un directorio determinado.
+- Un *MSSCCPRJ.SCC* archivo puede contener la "AuxPath" y "Nombre_proyecto" para varios archivos que están bajo control de código fuente dentro de un directorio determinado.
 
--   La cadena "AuxPath" no debe tener comillas dentro de él. Se le permite tener comillas como delimitadores (por ejemplo, un par de comillas dobles puede utilizarse para indicar una cadena vacía). El IDE eliminará todas las ofertas de la cadena "AuxPath" cuando se lee desde el *MSSCCPRJ.SCC* archivo.
+- La cadena "AuxPath" no debe tener comillas dentro de él. Se le permite tener comillas como delimitadores (por ejemplo, un par de comillas dobles puede utilizarse para indicar una cadena vacía). El IDE eliminará todas las ofertas de la cadena "AuxPath" cuando se lee desde el *MSSCCPRJ.SCC* archivo.
 
--   Cadena de la "Nombre_proyecto" en el *MSSCCPRJ. Archivo de SCC* deben coincidir exactamente con la cadena devuelta desde el `SccGetProjPath` función. Si la cadena devuelta por la función tiene comillas alrededor de ella, la cadena en el *MSSCCPRJ.SCC* archivo debe tener comillas alrededor de ella y viceversa.
+- Cadena de la "Nombre_proyecto" en el *MSSCCPRJ. Archivo de SCC* deben coincidir exactamente con la cadena devuelta desde el `SccGetProjPath` función. Si la cadena devuelta por la función tiene comillas alrededor de ella, la cadena en el *MSSCCPRJ.SCC* archivo debe tener comillas alrededor de ella y viceversa.
 
--   Un *MSSCCPRJ.SCC* archivo se crea o actualiza cada vez que se coloca un archivo bajo control de código fuente.
+- Un *MSSCCPRJ.SCC* archivo se crea o actualiza cada vez que se coloca un archivo bajo control de código fuente.
 
--   Si un *MSSCCPRJ.SCC* se elimina el archivo, un proveedor debe regenerar la próxima vez que realiza una operación de control de código fuente relativos a ese directorio.
+- Si un *MSSCCPRJ.SCC* se elimina el archivo, un proveedor debe regenerar la próxima vez que realiza una operación de control de código fuente relativos a ese directorio.
 
--   Un *MSSCCPRJ.SCC* archivo estrictamente debe seguir el formato definido.
+- Un *MSSCCPRJ.SCC* archivo estrictamente debe seguir el formato definido.
 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Ver una ilustración de la MSSCCPRJ. Formato de archivo de control de código fuente
  Siguiente es un ejemplo de la *MSSCCPRJ.SCC* formato de archivo (los números de línea solo se proporcionan como guía y no deben incluirse en el cuerpo del archivo):
