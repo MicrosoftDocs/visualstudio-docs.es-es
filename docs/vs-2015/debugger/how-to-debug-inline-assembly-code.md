@@ -1,5 +1,5 @@
 ---
-title: Filtrar Depurar código ensamblador en línea | Documentos de Microsoft
+title: Procedimiento Depurar código ensamblador en línea | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,14 +21,14 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55ccb6ffd319f725fade42a6e8490f0b0dc22b0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ece89b3e05e775b5aea50be3643653b258667935
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988869"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055111"
 ---
-# <a name="how-to-debug-inline-assembly-code"></a>Filtrar Depuración del código de ensamblado en línea
+# <a name="how-to-debug-inline-assembly-code"></a>Procedimiento Depuración del código de ensamblado en línea
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
@@ -40,9 +40,9 @@ NOTA]
   
 #### <a name="to-debug-inline-assembly-code"></a>Para depurar código de ensamblado en línea  
   
-1.  Utilice la ventana **Desensamblado** para ver las instrucciones de ensamblado.  
+1. Utilice la ventana **Desensamblado** para ver las instrucciones de ensamblado.  
   
-2.  Utilice la ventana **Registros** para ver el contenido de los registros.  
+2. Utilice la ventana **Registros** para ver el contenido de los registros.  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   

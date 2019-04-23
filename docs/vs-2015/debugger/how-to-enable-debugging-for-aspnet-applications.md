@@ -1,5 +1,5 @@
 ---
-title: Filtrar Habilitar la depuración de aplicaciones de ASP.NET | Microsoft Docs
+title: Procedimiento Habilitar la depuración de aplicaciones de ASP.NET | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,14 +18,14 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059960"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Filtrar Habilitar la depuración de aplicaciones de ASP.NET
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Procedimiento Habilitar la depuración de aplicaciones de ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para habilitar la depuración, debe habilitarla en la página **Propiedades del proyecto** y en el archivo de configuración web.config de la aplicación.  
@@ -35,32 +35,32 @@ Para habilitar la depuración, debe habilitarla en la página **Propiedades del 
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Para habilitar la depuración ASP.NET en las propiedades del proyecto (Visual Basic/C #)  
   
-1.  En el **Explorador de soluciones**, haga clic con el botón secundario en el nombre de un proyecto web y seleccione **Propiedades**.  
+1. En el **Explorador de soluciones**, haga clic con el botón secundario en el nombre de un proyecto web y seleccione **Propiedades**.  
   
-2.  En la página de propiedades del proyecto, haga clic en la pestaña **Web** .  
+2. En la página de propiedades del proyecto, haga clic en la pestaña **Web** .  
   
-3.  En **Depuradores**, active la casilla **ASP.NET** .  
+3. En **Depuradores**, active la casilla **ASP.NET** .  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>Para habilitar la depuración en el archivo web.config  
   
-1.  Abra el archivo web.config utilizando cualquier editor de texto estándar o un analizador XML.  
+1. Abra el archivo web.config utilizando cualquier editor de texto estándar o un analizador XML.  
   
     > [!NOTE]  
     > Sin embargo, no se puede tener acceso al archivo en modo remoto utilizando un explorador web. Por motivos de seguridad, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] configura Microsoft IIS para impedir el acceso directo del explorador a los archivos Web.config. Si intenta obtener acceso a un archivo de configuración utilizando un explorador, obtendrá el error de acceso 403 de HTTP (prohibido).  
   
-2.  Web.config es un archivo XML, por lo que contiene secciones anidadas marcadas por etiquetas. Busque el elemento `configuration/system.web/compilation` . Si el elemento compilation no existe, créelo.  
+2. Web.config es un archivo XML, por lo que contiene secciones anidadas marcadas por etiquetas. Busque el elemento `configuration/system.web/compilation` . Si el elemento compilation no existe, créelo.  
   
-3.  Si el elemento `compilation` no tiene un atributo `debug` , agregue el atributo al elemento.  
+3. Si el elemento `compilation` no tiene un atributo `debug` , agregue el atributo al elemento.  
   
-4.  Asegúrese de que el valor del atributo `debug` está establecido en `true`.  
+4. Asegúrese de que el valor del atributo `debug` está establecido en `true`.  
   
 El archivo web.config debe ser similar al del ejemplo siguiente. Tenga en cuenta que puede haber secciones entre los elementos configuration y system.web  
   
--   secciones element entre los elementos configuration y system.web  
+- secciones element entre los elementos configuration y system.web  
   
--   secciones element entre los elementos system.web y compilation  
+- secciones element entre los elementos system.web y compilation  
   
--   El elemento compilation puede contener otros atributos y elementos.  
+- El elemento compilation puede contener otros atributos y elementos.  
   
 ## <a name="example"></a>Ejemplo  
   

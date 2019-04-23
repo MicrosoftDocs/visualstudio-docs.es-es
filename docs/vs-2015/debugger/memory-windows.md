@@ -27,12 +27,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: e60f9b3c9acf1377139fee27486bb10251d8804a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58999009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059597"
 ---
 # <a name="memory-windows"></a>Memoria (Ventana)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ El **memoria** ventana proporciona una vista en el espacio de memoria que se usa
   
 #### <a name="to-open-a-memory-window"></a>Para abrir una ventana Memoria  
   
-1.  Inicie la depuración, si aún no está en modo de depuración.  
+1. Inicie la depuración, si aún no está en modo de depuración.  
   
-2.  En el **depurar** menú, elija **Windows**. A continuación, elija **memoria** y, a continuación, haga clic en **memoria 1**, **memoria 2**, **memoria 3**, o **memoria 4**. (Las ediciones de bajo nivel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tienen una sola **memoria** ventana. Si usa una de esas ediciones, simplemente haga clic en **memoria**.)  
+2. En el **depurar** menú, elija **Windows**. A continuación, elija **memoria** y, a continuación, haga clic en **memoria 1**, **memoria 2**, **memoria 3**, o **memoria 4**. (Las ediciones de bajo nivel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tienen una sola **memoria** ventana. Si usa una de esas ediciones, simplemente haga clic en **memoria**.)  
   
 ## <a name="paging-in-the-memory-window"></a>Paginación en la ventana Memoria  
  El **memoria** ventana tiene una barra de desplazamiento vertical funciona de forma no estándar. El espacio de direcciones de un equipo moderno es muy grande, por lo que podría perderse fácilmente al arrastrar el control de desplazamiento a una ubicación aleatoria. Por ese motivo, el control de desplazamiento se comporta como un resorte y siempre permanece en el centro de la barra de desplazamiento. En las aplicaciones en código nativo, puede retroceder o avanzar una página, pero no puede desplazarse libremente por la ventana.  
@@ -56,33 +56,33 @@ El **memoria** ventana proporciona una vista en el espacio de memoria que se usa
   
 #### <a name="to-page-up-or-down-in-memory"></a>Para retroceder o avanzar en la memoria  
   
-1.  Para avanzar (moverse a una dirección de memoria más alta), haga clic debajo del control de la barra de desplazamiento vertical.  
+1. Para avanzar (moverse a una dirección de memoria más alta), haga clic debajo del control de la barra de desplazamiento vertical.  
   
-2.  Para retroceder (moverse a una dirección de memoria más baja), haga clic encima del control de la barra de desplazamiento vertical.  
+2. Para retroceder (moverse a una dirección de memoria más baja), haga clic encima del control de la barra de desplazamiento vertical.  
   
 ## <a name="selecting-a-memory-location"></a>Seleccionar una ubicación de memoria  
  Si desea moverse instantáneamente a una ubicación de memoria seleccionada, puede hacerlo mediante una operación de arrastrar y colocar o modificando el valor de la **dirección** cuadro. El **dirección** cuadro acepta no sólo valores numéricos sino también expresiones que se evalúan como direcciones. De forma predeterminada, el **memoria** ventana trata un **dirección** expresión como una expresión en directo que se reevalúa cuando se ejecuta el programa. Las expresiones en directo pueden ser muy útiles. Puede utilizarlas, por ejemplo, para ver la memoria a la que señala un puntero.  
   
 #### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Para seleccionar una ubicación de memoria arrastrando y colocando  
   
-1.  En cualquier ventana, seleccione una dirección de memoria o una variable de puntero que contenga una dirección de memoria.  
+1. En cualquier ventana, seleccione una dirección de memoria o una variable de puntero que contenga una dirección de memoria.  
   
-2.  Arrastre la dirección o un puntero a la **memoria** ventana.  
+2. Arrastre la dirección o un puntero a la **memoria** ventana.  
   
 #### <a name="to-select-a-memory-location-by-editing"></a>Para seleccionar una ubicación de memoria mediante edición  
   
-1.  En el **memoria** ventana, seleccione el **dirección** cuadro.  
+1. En el **memoria** ventana, seleccione el **dirección** cuadro.  
   
-2.  Escriba o pegue la dirección que desea ver y, a continuación, presione **ENTRAR**.  
+2. Escriba o pegue la dirección que desea ver y, a continuación, presione **ENTRAR**.  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>Cambiar la forma en que la ventana Memoria muestra información  
  Puede personalizar el modo en que la ventana **Memoria** muestra el contenido de la memoria. De forma predeterminada, el contenido de la memoria aparece como números enteros en formato hexadecimal, y el número de columnas viene determinado automáticamente por el ancho actual de la ventana.  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>Para cambiar el formato del contenido de la memoria  
   
-1.  Haga clic en el **memoria** ventana.  
+1. Haga clic en el **memoria** ventana.  
   
-2.  Elija el formato que desee.  
+2. Elija el formato que desee.  
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Para cambiar el número de columnas de la ventana Memoria  
   
@@ -104,9 +104,9 @@ El **memoria** ventana proporciona una vista en el espacio de memoria que se usa
   
 #### <a name="to-toggle-the-toolbar"></a>Para mostrar u ocultar la barra de herramientas  
   
-1.  Haga clic en un **memoria** ventana.  
+1. Haga clic en un **memoria** ventana.  
   
-2.  En el menú contextual, haga clic en **Mostrar barra de herramientas**.  
+2. En el menú contextual, haga clic en **Mostrar barra de herramientas**.  
   
      La barra de herramientas aparece o desaparece según su estado anterior.  
   
@@ -115,9 +115,9 @@ El **memoria** ventana proporciona una vista en el espacio de memoria que se usa
   
 #### <a name="to-follow-a-pointer-through-memory"></a>Para seguir un puntero a través de la memoria  
   
-1.  En el **memoria** ventana **dirección** , escriba una expresión de puntero. La variable de puntero debe encontrarse en el ámbito actual. Dependiendo del lenguaje que utilice, quizá tenga que desreferenciar esta variable.  
+1. En el **memoria** ventana **dirección** , escriba una expresión de puntero. La variable de puntero debe encontrarse en el ámbito actual. Dependiendo del lenguaje que utilice, quizá tenga que desreferenciar esta variable.  
   
-2.  Presione **ENTRAR**.  
+2. Presione **ENTRAR**.  
   
      Ahora, cuando se usa un comando de ejecución como **paso**, la dirección de memoria que se muestra cambiará automáticamente conforme cambie el puntero.  
   

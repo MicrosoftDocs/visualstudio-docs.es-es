@@ -1,5 +1,5 @@
 ---
-title: Filtrar Desactivar las advertencias de compatibilidad para complementos de Control de código fuente | Microsoft Docs
+title: Procedimiento Desactivar las advertencias de compatibilidad para complementos de Control de código fuente | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,21 +11,21 @@ ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9efe961774ef1939cfc95c2efe9146a59e46bc17
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4397b2710a7de4addd97bfcbdb4f8e80e2b9c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060584"
 ---
-# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Filtrar Desactivar advertencias de compatibilidad para complementos de control de código fuente
+# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Procedimiento Desactivar advertencias de compatibilidad para complementos de control de código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un usuario que vea varias advertencias de compatibilidad al emplear el control de código fuente en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Las advertencias presentarlos dependen de las capacidades del complemento de control de código fuente y se pueden deshabilitar como detallados aquí.  
   
 ### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Para deshabilitar la advertencia: "Para asegurarse de óptima integración del código fuente con Visual Studio..."  
   
--   Establezca la siguiente entrada del registro (agregando el valor si es necesario):  
+- Establezca la siguiente entrada del registro (agregando el valor si es necesario):  
   
      HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD: 00000001  
   
@@ -33,7 +33,7 @@ Un usuario que vea varias advertencias de compatibilidad al emplear el control d
   
 ### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Para deshabilitar la advertencia: "El proveedor de control de código fuente instalado no admite todas las capacidades..."  
   
--   Establezca los siguientes dos valores del registro (agregando los valores si es necesario):  
+- Establezca los siguientes dos valores del registro (agregando los valores si es necesario):  
   
      HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:00000000  
   

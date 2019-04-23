@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 132cc5acd705c45d56a9234467b807a86b5ae1ec
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 847d8e02f1d8cb6b1273ed4206d25207de59e3e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056593"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Procedimiento Crear y editar un archivo de esquema XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,19 +23,19 @@ En este tema se describe cómo crear un nuevo archivo de esquema XML (XSD) y lue
   
 ### <a name="to-create-a-new-xml-schema-file"></a>Para crear un nuevo archivo de esquema XML  
   
-1.  En Visual Studio, abra el **archivo** menú y seleccione **New** y, a continuación, **archivo**. O bien, utilice el método abreviado de teclado CTRL+N.  
+1. En Visual Studio, abra el **archivo** menú y seleccione **New** y, a continuación, **archivo**. O bien, utilice el método abreviado de teclado CTRL+N.  
   
-2.  En el **nuevo archivo** cuadro de diálogo, seleccione **esquema XML** y haga clic en **abierto**.  
+2. En el **nuevo archivo** cuadro de diálogo, seleccione **esquema XML** y haga clic en **abierto**.  
   
      Se creará un nuevo archivo. En Visual Studio aparece la vista Inicio y una ventana vacía del Explorador de esquema XML.  
   
 ### <a name="to-edit-a-file"></a>Para modificar un archivo  
   
-1.  Haga clic en el **Use el Editor XML para ver y editar el archivo de esquema XML subyacente** vínculo en la vista inicio.  
+1. Haga clic en el **Use el Editor XML para ver y editar el archivo de esquema XML subyacente** vínculo en la vista inicio.  
   
      Aparece el Editor XML con el nuevo archivo abierto.  
   
-2.  Copie el código de ejemplo de esquema XML de [esquema de pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md) y péguelo para reemplazar el código que se ha agregado el nuevo archivo XSD de forma predeterminada.  
+2. Copie el código de ejemplo de esquema XML de [esquema de pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md) y péguelo para reemplazar el código que se ha agregado el nuevo archivo XSD de forma predeterminada.  
   
      El Explorador de esquema XML se actualiza con el nuevo conjunto de esquemas.  
   

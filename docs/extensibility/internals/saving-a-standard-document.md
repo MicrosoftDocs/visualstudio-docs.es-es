@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ced873db6c1a3c9adbe40625ed44817eb6703d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614901"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043463"
 ---
 # <a name="saving-a-standard-document"></a>Guardado de un documento estándar
 El entorno controla los guardar, guardar como y guardar todos los comandos. Cuando un usuario selecciona **guardar**, **Guardar como**, o **guardar todo** desde el **archivo** menú o se cierra la solución, lo que resulta en un  **Guardar todo**, se produce el siguiente proceso.
@@ -50,11 +50,11 @@ El entorno controla los guardar, guardar como y guardar todos los comandos. Cuan
 
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Para cambiar la propiedad de archivo al proyecto archivos varios
 
-1.  Consultar el servicio para el <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfaz.
+1. Consultar el servicio para el <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfaz.
 
      Un puntero a <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> se devuelve.
 
-2.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) método para transferir el documento a la nueva jerarquía. Este método llama a la jerarquía de la ejecución del comando Guardar como.
+2. Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) método para transferir el documento a la nueva jerarquía. Este método llama a la jerarquía de la ejecución del comando Guardar como.
 
 ## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

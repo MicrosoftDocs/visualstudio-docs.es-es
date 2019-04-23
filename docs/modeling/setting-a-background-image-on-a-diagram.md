@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4b559b80613197dae62bc6246bd7ef1532d7071
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e79a7fd37bd5f2d5298bda6dca7568c6ba4db6ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057009"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Establecer una imagen de fondo en un diagrama
 En Visual Studio de visualización y el SDK de modelado, puede establecer la imagen de fondo para un diseñador generado usando código personalizado.
@@ -21,21 +21,21 @@ En Visual Studio de visualización y el SDK de modelado, puede establecer la ima
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Para establecer una imagen de fondo para un diseñador generado
 
-1.  Copie el archivo de imagen que quiere usar como fondo del diagrama en el directorio Dsl\Resources para el proyecto actual.
+1. Copie el archivo de imagen que quiere usar como fondo del diagrama en el directorio Dsl\Resources para el proyecto actual.
 
-2.  En **el Explorador de soluciones**, haga clic en la carpeta Dsl\Resources, elija **agregar**y, a continuación, haga clic en **elemento existente**.
+2. En **el Explorador de soluciones**, haga clic en la carpeta Dsl\Resources, elija **agregar**y, a continuación, haga clic en **elemento existente**.
 
-3.  En el **Agregar elemento existente** cuadro de diálogo, vaya a la carpeta Dsl\Resources.
+3. En el **Agregar elemento existente** cuadro de diálogo, vaya a la carpeta Dsl\Resources.
 
-4.  En el **archivos de tipo** lista, haga clic en **archivos de imagen**.
+4. En el **archivos de tipo** lista, haga clic en **archivos de imagen**.
 
-5.  Haga clic en el archivo de imagen que ha copiado en el directorio y, a continuación, haga clic en **agregar**.
+5. Haga clic en el archivo de imagen que ha copiado en el directorio y, a continuación, haga clic en **agregar**.
 
-6.  Haga clic en Dsl y haga clic en **propiedades** para abrir las propiedades del proyecto de Dsl.
+6. Haga clic en Dsl y haga clic en **propiedades** para abrir las propiedades del proyecto de Dsl.
 
-7.  En el **recursos** , haga clic **este proyecto no contiene un archivo de recursos predeterminado. Haga clic aquí para crear uno.**
+7. En el **recursos** , haga clic **este proyecto no contiene un archivo de recursos predeterminado. Haga clic aquí para crear uno.**
 
-8.  Agregue el archivo de imagen al archivo de recursos arrastrando la imagen desde **el Explorador de soluciones** en la ventana de recursos.
+8. Agregue el archivo de imagen al archivo de recursos arrastrando la imagen desde **el Explorador de soluciones** en la ventana de recursos.
 
 9. Abra el menú Archivo y haga clic en la opción para guardar las propiedades del proyecto.
 

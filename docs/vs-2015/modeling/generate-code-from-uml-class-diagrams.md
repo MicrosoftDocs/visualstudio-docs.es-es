@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663997"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056164"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generar código a partir de diagramas de clases UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
 
 2. En un diagrama de clases o en **Explorador de modelos UML**, seleccione los elementos desde el que va a generar código. Puede seleccionar uno de los siguientes:  
 
-   -   Un conjunto concreto de elementos.  
+   - Un conjunto concreto de elementos.  
 
-   -   Un paquete o el modelo, para generar el código a partir del contenido.  
+   - Un paquete o el modelo, para generar el código a partir del contenido.  
 
-   -   El diagrama, para seleccionar todos sus elementos.  
+   - El diagrama, para seleccionar todos sus elementos.  
 
 3. Abra el menú contextual para un elemento seleccionado y, a continuación, elija **generar código**.  
 
@@ -71,7 +71,7 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
 
    Se aplican al modelo algunas pruebas de validación para asegurarse de que se puede traducir a C#. Si se produce un error en las pruebas, se muestra un mensaje de error y no se realiza la generación de código. Si ha creado un comando de menú de validación, no se genera código para ningún elemento cuyo comando de validación produzca errores. Para obtener más información, consulte [definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md).  
 
-##  <a name="default"></a> Transformaciones de generación de código predeterminadas  
+## <a name="default"></a> Transformaciones de generación de código predeterminadas  
  En esta sección se resume los resultados producidos por el **generar código** comando, a menos que personalice el comando. Para obtener más información, consulte [personalizar el comando generar código](#custom).  
 
 - Se genera un tipo de C# para cada tipo seleccionado en el modelo de UML. Cada tipo se coloca en un archivo de código independiente bajo la **GeneratedCode** carpeta.  
@@ -126,7 +126,7 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
 
   Cada atributo y operación tiene también propiedades de estereotipo que puede establecer. Si no ve las propiedades de un atributo nuevo, ejecute **generar código**.  
 
-##  <a name="custom"></a> Personalizar el comando generar código  
+## <a name="custom"></a> Personalizar el comando generar código  
  El **generar código** comando funciona transformando los elementos del modelo mediante un conjunto de plantillas de texto. Para obtener más información acerca de las plantillas de texto, consulte [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md).  
 
  Las plantillas se especifican en un conjunto de *enlaces de plantilla de texto*. Un enlace de plantilla de texto especifica qué plantilla se debe aplicar, dónde se debe colocar la salida generada y otros parámetros de la **generar código** comando.  
@@ -175,7 +175,7 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
 
 5. Puede adjuntar tantos enlaces a un elemento como desee.  
 
-##  <a name="writing"></a> Escribir una plantilla de texto  
+## <a name="writing"></a> Escribir una plantilla de texto  
  Puede escribir a sus propias plantillas de texto. Las plantillas de texto pueden generar código de programa o cualquier otro tipo de archivo de texto.  
 
  Recomendamos comenzar por modificar las copias de las plantillas estándar. Puede copiar las plantillas de las ubicaciones siguientes:  

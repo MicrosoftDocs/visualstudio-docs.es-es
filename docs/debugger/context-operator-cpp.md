@@ -1,5 +1,5 @@
 ---
-title: Operador de contexto en el depurador (C++) | Microsoft Docs
+title: Operador de contexto en el depurador (C++) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c39a9e4f268a0e11d7a0962820b418876e9733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059024"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operador de contexto en el depurador de Visual Studio (C++)
 Puede usar el operador de contexto en C++ para calificar una ubicación de punto de interrupción, un nombre de variable o una expresión. El operador de contexto resulta útil para especificar un nombre desde un ámbito externo que se encuentra oculto por un nombre local.
 
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintaxis
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintaxis
  Hay dos formas de especificar el contexto:
 
-1.  {,,[*módulo*] } *expresión*
+1. {,,[*módulo*] } *expresión*
 
      Las llaves deben contener dos comas y el nombre o la ruta de acceso completa del módulo (archivo ejecutable o DLL).
 
@@ -45,7 +45,7 @@ Puede usar el operador de contexto en C++ para calificar una ubicación de punto
     {,,EXAMPLE.dll}SomeFunction
     ```
 
-2.  *module*!*expresión*
+2. *module*!*expresión*
 
     ```C++
     EXAMPLE.dll!SomeFunction
@@ -63,12 +63,12 @@ Puede usar el operador de contexto en C++ para calificar una ubicación de punto
 
   Cuando el evaluador de expresiones encuentra un símbolo en una expresión, busca el símbolo en el siguiente orden:
 
-1.  Salida del ámbito léxico, empezando por el bloque actual, la serie de instrucciones entre llaves y continuando la salida con el bloque de inclusión. El bloque actual es el código que contiene la ubicación actual, la dirección del puntero de instrucción.
+1. Salida del ámbito léxico, empezando por el bloque actual, la serie de instrucciones entre llaves y continuando la salida con el bloque de inclusión. El bloque actual es el código que contiene la ubicación actual, la dirección del puntero de instrucción.
 
-2.  Ámbito de función. La función actual.
+2. Ámbito de función. La función actual.
 
-3.  Ámbito de clase, si la ubicación actual está dentro de una función miembro de C++. El ámbito de clase incluye todas las clases base. El evaluador de expresiones utiliza las reglas de dominación normales.
+3. Ámbito de clase, si la ubicación actual está dentro de una función miembro de C++. El ámbito de clase incluye todas las clases base. El evaluador de expresiones utiliza las reglas de dominación normales.
 
-4.  Símbolos globales del módulo actual.
+4. Símbolos globales del módulo actual.
 
-5.  Símbolos públicos del programa actual.
+5. Símbolos públicos del programa actual.

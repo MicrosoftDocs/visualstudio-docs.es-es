@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056073"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,48 +52,48 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 > [!NOTE]
 >  La configuración y edición de Visual Studio podría cambiar los nombres y las ubicaciones de los comandos de menú y las opciones que aparecen en los cuadros de diálogo. Este tema se basa en la **configuración general de desarrollo**.
 
-##  <a name="bkmk_identify"></a> Identificar un método abreviado de teclado
+## <a name="bkmk_identify"></a> Identificar un método abreviado de teclado
 
-1.  En la barra de menús, elija **Herramientas**, **Opciones**.
+1. En la barra de menús, elija **Herramientas**, **Opciones**.
 
-2.  Expanda **Entorno** y elija **Teclado**.
+2. Expanda **Entorno** y elija **Teclado**.
 
      ![Mostrar métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  En el cuadro **Mostrar los comandos que contengan**, escriba todo o parte del nombre del comando sin espacios.
+3. En el cuadro **Mostrar los comandos que contengan**, escriba todo o parte del nombre del comando sin espacios.
 
      Por ejemplo, puede buscar comandos para el **Explorador de soluciones**.
 
-4.  En la lista, elija el comando correcto.
+4. En la lista, elija el comando correcto.
 
      Por ejemplo, puede elegir **View.SolutionExplorer**.
 
-5.  Si el comando tiene un método abreviado de teclado, aparece en la lista **Métodos abreviados para el comando seleccionado**.
+5. Si el comando tiene un método abreviado de teclado, aparece en la lista **Métodos abreviados para el comando seleccionado**.
 
      ![Ver un método abreviado de un comando específico](../ide/media/viewshortcut.png "ViewShortcut")
 
-##  <a name="bkmk_assign"></a> Personalizar un método abreviado de teclado
+## <a name="bkmk_assign"></a> Personalizar un método abreviado de teclado
 
-1.  En la barra de menús, elija **Herramientas**, **Opciones**.
+1. En la barra de menús, elija **Herramientas**, **Opciones**.
 
-2.  Expanda la carpeta **Entorno** y elija **Teclado**.
+2. Expanda la carpeta **Entorno** y elija **Teclado**.
 
      ![Mostrar métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  En el cuadro **Mostrar los comandos que contengan**, escriba todo o parte del nombre del comando sin espacios.
+3. En el cuadro **Mostrar los comandos que contengan**, escriba todo o parte del nombre del comando sin espacios.
 
      Por ejemplo, puede buscar comandos para el **Explorador de soluciones**.
 
-4.  En la lista, elija el comando al que desea asignar un método abreviado de teclado.
+4. En la lista, elija el comando al que desea asignar un método abreviado de teclado.
 
-5.  En la lista **Usar nuevo método abreviado**, elija el área de características en la que quiere usar el método abreviado.
+5. En la lista **Usar nuevo método abreviado**, elija el área de características en la que quiere usar el método abreviado.
 
      Por ejemplo, puede elegir **Global** si quiere que el método abreviado funcione en todos los contextos. Puede usar cualquier método abreviado que no esté asignado (como Global) en otro editor. De lo contrario, el editor reemplaza el método abreviado.
 
     > [!NOTE]
     >  No se pueden asignar las siguientes teclas a un método abreviado de teclado en **Global**: Imp Pant/Pet Sis, Bloq Despl, Pausa/Inter, Tab, Bloq Mayús, Ins, Inicio, Fin, Re Pág, Av Pág, la tecla del logotipo de Windows, la tecla de aplicación, cualquiera de las teclas de dirección o ENTRAR; Bloq Num o Supr en el teclado numérico; o CTRL+Alt+Supr.
 
-6.  En el cuadro **Presionar teclas de método abreviado**, especifique el método abreviado que quiere usar.
+6. En el cuadro **Presionar teclas de método abreviado**, especifique el método abreviado que quiere usar.
 
     > [!NOTE]
     >  Puede crear un método abreviado que combine una letra con la tecla Alt, Ctrl o ambas. También puede crear un método abreviado que combine la tecla Mayús y una letra con la tecla Alt, Ctrl o ambas.
@@ -102,45 +102,45 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
      ![Especificar un método abreviado diferente para un comando](../ide/media/reassignshortcut.png "ReassignShortcut")
 
-7.  Elija el botón **Asignar**.
+7. Elija el botón **Asignar**.
 
     > [!NOTE]
     >  Si especifica un método abreviado diferente para un comando, elija el botón **Asignar** y luego el botón **Cancelar**. El cuadro de diálogo se cierra, pero el cambio no se revierte.
 
-##  <a name="bkmk_transfer"></a> Compartir métodos abreviados de teclado personalizados
+## <a name="bkmk_transfer"></a> Compartir métodos abreviados de teclado personalizados
  Puede compartir los métodos abreviados de teclado personalizados exportándolos a un archivo y proporcionando el archivo a otras personas para que puedan importar los datos.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>Para exportar solo métodos abreviados de teclado
 
-1.  En la barra de menús, elija **Herramientas**, **Importar y exportar configuraciones**.
+1. En la barra de menús, elija **Herramientas**, **Importar y exportar configuraciones**.
 
-2.  Seleccione **Exportar la configuración de entorno seleccionada** y elija el botón **Siguiente**.
+2. Seleccione **Exportar la configuración de entorno seleccionada** y elija el botón **Siguiente**.
 
-3.  En **¿Qué configuración desea exportar?**, desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
+3. En **¿Qué configuración desea exportar?**, desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
 
-4.  Active la casilla **Teclado** y elija el botón **Siguiente**.
+4. Active la casilla **Teclado** y elija el botón **Siguiente**.
 
      ![Exportar solo los métodos abreviados de teclado personalizados](../ide/media/exportshortcuts.png "ExportShortcuts")
 
-5.  En los cuadros **¿Qué nombre desea dar al archivo de configuración?** y **Almacenar mi archivo de configuración en este directorio**, deje los valores predeterminados o especifique otros diferentes y elija el botón **Finalizar**.
+5. En los cuadros **¿Qué nombre desea dar al archivo de configuración?** y **Almacenar mi archivo de configuración en este directorio**, deje los valores predeterminados o especifique otros diferentes y elija el botón **Finalizar**.
 
      De forma predeterminada, los métodos abreviados se guardan en un archivo en la carpeta %USERPROFILE%\Documents\Visual Studio 2013\Settings. El nombre del archivo indica la fecha en la que exportó la configuración y la extensión es .vssettings.
 
 #### <a name="to-import-only-keyboard-shortcuts"></a>Para importar solo métodos abreviados de teclado
 
-1.  En la barra de menús, elija **Herramientas**, **Importar y exportar configuraciones**.
+1. En la barra de menús, elija **Herramientas**, **Importar y exportar configuraciones**.
 
-2.  Elija el botón de opción **Importar la configuración de entorno seleccionada** y después el botón **Siguiente**.
+2. Elija el botón de opción **Importar la configuración de entorno seleccionada** y después el botón **Siguiente**.
 
-3.  Elija el botón de opción **No, solo importar la nueva configuración, reemplazando la configuración actual** y elija el botón **Siguiente**.
+3. Elija el botón de opción **No, solo importar la nueva configuración, reemplazando la configuración actual** y elija el botón **Siguiente**.
 
-4.  En **Mi configuración**, elija el archivo que contiene los métodos abreviados que quiere importar o elija el botón **Examinar** para buscar el archivo correcto.
+4. En **Mi configuración**, elija el archivo que contiene los métodos abreviados que quiere importar o elija el botón **Examinar** para buscar el archivo correcto.
 
-5.  Elija el botón **Siguiente**.
+5. Elija el botón **Siguiente**.
 
-6.  En **¿Qué configuración desea importar?**, desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
+6. En **¿Qué configuración desea importar?**, desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
 
-7.  Active la casilla **Teclado** y elija el botón **Finalizar**.
+7. Active la casilla **Teclado** y elija el botón **Finalizar**.
 
      ![Importar solo los métodos abreviados de teclado personalizados](../ide/media/importshortcuts.png "ImportShortcuts")
 

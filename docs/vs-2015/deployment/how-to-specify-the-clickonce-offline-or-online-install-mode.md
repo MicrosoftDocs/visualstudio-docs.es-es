@@ -1,5 +1,5 @@
 ---
-title: Filtrar Especifique el sin conexión de ClickOnce o instalar el modo en línea | Documentos de Microsoft
+title: Procedimiento Especifique el sin conexión de ClickOnce o instalar el modo en línea | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,14 +19,14 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0e16c3b921c8ecd2c4c944b60cb5541eac49463e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d4111ca5aee4a405a4a797dbfee14a3d4b50435f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054256"
 ---
-# <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Filtrar Especificar el modo de instalación en línea y sin conexión de ClickOnce
+# <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Procedimiento Especificar el modo de instalación en línea y sin conexión de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El `Install Mode` para un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación determina si la aplicación estará disponible en línea o sin conexión. Cuando se elige **la aplicación solo está disponible en línea**, el usuario debe tener acceso a la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ubicación (una página Web o un recurso compartido de archivos) para ejecutar la aplicación de publicación. Cuando se elige **la aplicación también está disponible sin conexión**, la aplicación agrega entradas a la **iniciar** menú y el **agregar o quitar programas** cuadro de diálogo; el usuario es puede ejecutar la aplicación cuando no están conectados.  
@@ -37,19 +37,19 @@ El `Install Mode` para un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]
   
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>Para que una aplicación ClickOnce esté disponible solo en línea  
   
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la pestaña **Publicar**.  
+2. Haga clic en la pestaña **Publicar**.  
   
-3.  En el **instalar el modo y configuración** área, haga clic en el **la aplicación solo está disponible en línea** botón de opción.  
+3. En el **instalar el modo y configuración** área, haga clic en el **la aplicación solo está disponible en línea** botón de opción.  
   
 ### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>Para que una aplicación ClickOnce esté disponible en línea o sin conexión  
   
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la pestaña **Publicar**.  
+2. Haga clic en la pestaña **Publicar**.  
   
-3.  En el **instalar el modo y configuración** área, haga clic en el **la aplicación también está disponible sin conexión** botón de opción.  
+3. En el **instalar el modo y configuración** área, haga clic en el **la aplicación también está disponible sin conexión** botón de opción.  
   
      Cuando se instala, la aplicación agrega entradas a la **iniciar** menú y a **agregar o quitar programas** en el Panel de Control.  
   

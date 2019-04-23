@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 323850d6abbdd46fba609ebf9eaba9ca11225544
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa93413a8b0972fd40b8943a6121367196e07d5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058842"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Los tipos descartables deben declarar el finalizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58988023"
 ## <a name="rule-description"></a>Descripción de la regla
  Una infracción de esta regla se notifica si el tipo desechable contiene campos de los siguientes tipos:
 
--   <xref:System.IntPtr?displayProperty=fullName>
+- <xref:System.IntPtr?displayProperty=fullName>
 
--   <xref:System.UIntPtr?displayProperty=fullName>
+- <xref:System.UIntPtr?displayProperty=fullName>
 
--   <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
+- <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, implemente un finalizador que llama a su <xref:System.IDisposable.Dispose%2A> método.

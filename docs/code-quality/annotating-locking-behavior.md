@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053734"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 Para evitar errores de simultaneidad en el programa multiproceso, siempre que siga una disciplina de bloqueo apropiada y utilizar anotaciones SAL.
@@ -55,11 +55,11 @@ Para evitar errores de simultaneidad en el programa multiproceso, siempre que si
 
  Algunas reglas de la propiedad de subprocesos debe tener en cuenta:
 
--   Bloqueos de giro son bloqueos uncounted que tienen la propiedad de subprocesos no cifrado.
+- Bloqueos de giro son bloqueos uncounted que tienen la propiedad de subprocesos no cifrado.
 
--   Secciones críticas y las exclusiones mutuas se cuentan los bloqueos que tienen la propiedad clara de subproceso.
+- Secciones críticas y las exclusiones mutuas se cuentan los bloqueos que tienen la propiedad clara de subproceso.
 
--   Los semáforos y eventos se cuentan los bloqueos que no tienen la propiedad de subprocesos no cifrado.
+- Los semáforos y eventos se cuentan los bloqueos que no tienen la propiedad de subprocesos no cifrado.
 
 ## <a name="locking-annotations"></a>Anotaciones de bloqueos
  En la tabla siguiente se enumera las anotaciones de bloqueos.

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd4a839c1d93d89cf6d0502e234f7cb1401a6809
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d297c1ef7079a894a53a77694d213f8b0f5cb257
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055410"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Información general de Diagnóstico de gráficos de Visual Studio
 El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas para grabar y analizar problemas de representación y rendimiento de las aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse en aplicaciones que se ejecutan localmente en su PC de Windows o en un dispositivo o equipo remoto.
@@ -59,7 +59,7 @@ El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas p
 
 #### <a name="to-open-the-directx-control-panel"></a>Para abrir el panel de control de DirectX
 
--   En la barra de menús, elija **Depurar**, **Gráficos**, **Panel de control de DirectX**.
+- En la barra de menús, elija **Depurar**, **Gráficos**, **Panel de control de DirectX**.
 
 ## <a name="graphics-analyzer"></a>Analizador de gráficos
  El Analizador de gráficos de Visual Studio es una interfaz dedicada para examinar los problemas de representación y de rendimiento en fotogramas que ya se ha capturado. Dentro del Analizador de gráficos encontrará varias herramientas que le ayudarán a explorar y comprender el comportamiento de representación de la aplicación. Cada herramienta expone un tipo diferente de información acerca del fotograma que se va a inspeccionar, y todas están diseñadas para utilizarse conjuntamente y delimitar intuitivamente el origen de un problema de representación a partir de la su aparición en el búfer de fotogramas.

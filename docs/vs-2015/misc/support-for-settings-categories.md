@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988820"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054487"
 ---
 # <a name="support-for-settings-categories"></a>Compatibilidad con categorías de configuración
 Una categoría de configuración consta de un grupo de opciones que personalizan el entorno de desarrollo integrado (IDE). Por ejemplo, la configuración puede controlar el diseño de las ventanas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y el contenido de los menús. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -29,11 +29,11 @@ Una categoría de configuración consta de un grupo de opciones que personalizan
   
  El marco de trabajo de paquetes administrados (MPF) admite la creación de categorías de configuración con un mínimo de código adicional.  
   
--   Cree un VSPackage para proporcionar un contenedor para la categoría mediante la creación de subclases en la clase <xref:Microsoft.VisualStudio.Shell.Package>.  
+- Cree un VSPackage para proporcionar un contenedor para la categoría mediante la creación de subclases en la clase <xref:Microsoft.VisualStudio.Shell.Package>.  
   
--   Cree la categoría en sí derivándola de la clase <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+- Cree la categoría en sí derivándola de la clase <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
--   Conéctelos con <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+- Conéctelos con <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="support-for-settings-categories"></a>Compatibilidad con categorías de configuración  
  La clase <xref:Microsoft.VisualStudio.Shell.Package> proporciona compatibilidad para la creación de categorías. La clase <xref:Microsoft.VisualStudio.Shell.DialogPage> implementa una categoría. La implementación predeterminada de <xref:Microsoft.VisualStudio.Shell.DialogPage> ofrece sus propiedades públicas a un usuario como una categoría. Para obtener más información, consulta [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  

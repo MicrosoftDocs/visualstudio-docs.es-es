@@ -1,5 +1,5 @@
 ---
-title: Filtrar Depurar código insertado | Documentos de Microsoft
+title: Procedimiento Depurar código insertado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,14 +26,14 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a38b84c5b45ba8111977701d9026f22f90abf50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ebcb793a0fc653931e1ea271340294aea532e02
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987960"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055371"
 ---
-# <a name="how-to-debug-injected-code"></a>Filtrar Depuración de código insertado
+# <a name="how-to-debug-injected-code"></a>Procedimiento Depuración de código insertado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
@@ -49,25 +49,25 @@ NOTA]
   
 ### <a name="to-turn-on-source-annotation"></a>Para activar la anotación del código fuente  
   
--   Haga clic con el botón derecho en la ventana **Desensamblado** y elija **Mostrar código fuente** en el menú contextual.  
+- Haga clic con el botón derecho en la ventana **Desensamblado** y elija **Mostrar código fuente** en el menú contextual.  
   
      Si conoce la ubicación de un atributo en una ventana de código fuente, puede utilizar el menú contextual para buscar el código insertado en la ventana **Desensamblado**.  
   
 ### <a name="to-view-injected-code"></a>Para ver el código insertado  
   
-1.  El depurador debe hallarse en modo de interrupción.  
+1. El depurador debe hallarse en modo de interrupción.  
   
-2.  En una ventana de código fuente, coloque el cursor delante de los atributos cuyo código insertado desea ver.  
+2. En una ventana de código fuente, coloque el cursor delante de los atributos cuyo código insertado desea ver.  
   
-3.  Haga clic con el botón derecho y seleccione **Ir al desensamblado** en el menú contextual.  
+3. Haga clic con el botón derecho y seleccione **Ir al desensamblado** en el menú contextual.  
   
      Si la ubicación del atributo está cerca del punto de ejecución actual, puede seleccionar la ventana **Desensamblado** en el menú **Depurar**.  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Para ver el código de desensamblado en el punto de ejecución actual  
   
-1.  El depurador debe hallarse en modo de interrupción.  
+1. El depurador debe hallarse en modo de interrupción.  
   
-2.  En el menú **Depurar**, elija **Ventanas** y después haga clic en **Desensamblado**.  
+2. En el menú **Depurar**, elija **Ventanas** y después haga clic en **Desensamblado**.  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   

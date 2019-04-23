@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee8e4b412422d6f385e39f4fdbf44e151313c0a2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a331e94ad57fc4ca23dc859415c61609025f799b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605125"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058257"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Tutorial: Crear un elemento web de Silverlight que muestre OData para SharePoint
   SharePoint 2010 expone sus datos de la lista por medio de OData. En SharePoint, el servicio de OData se implementa el servicio RESTful ListData.svc. Este tutorial muestra cómo crear un elemento web de SharePoint que hospeda una aplicación de Silverlight. La aplicación de Silverlight, muestra información de la lista de SharePoint anuncio mediante ListData.svc. Para obtener más información, consulte [interfaz REST de SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) y [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
@@ -27,9 +27,9 @@ ms.locfileid: "56605125"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   Ediciones compatibles de Microsoft Windows y SharePoint.
+- Ediciones compatibles de Microsoft Windows y SharePoint.
 
--   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Crear una aplicación de Silverlight y el elemento web de Silverlight
  En primer lugar, cree una aplicación de Silverlight en Visual Studio. La aplicación de Silverlight recupera datos de la lista de anuncios de SharePoint mediante el servicio ListData.svc.
@@ -68,30 +68,30 @@ ms.locfileid: "56605125"
 
 #### <a name="to-customize-the-silverlight-application"></a>Para personalizar la aplicación de Silverlight
 
-1.  Agregue una referencia a System.Windows.Data ensamblado en la aplicación de Silverlight. Para obtener más información, vea [Cómo: Agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+1. Agregue una referencia a System.Windows.Data ensamblado en la aplicación de Silverlight. Para obtener más información, vea [Cómo: Agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
-2.  En **el Explorador de soluciones**, abra el menú contextual para **referencias**y, a continuación, elija **Add Service Reference**.
+2. En **el Explorador de soluciones**, abra el menú contextual para **referencias**y, a continuación, elija **Add Service Reference**.
 
     > [!NOTE]
     >  Si está utilizando Visual Basic, debe elegir el **mostrar todos los archivos** situado en la parte superior de **el Explorador de soluciones** para mostrar el **referencias** nodo.
 
-3.  En el cuadro Dirección de la **Add Service Reference** diálogo cuadro, escriba la dirección URL del sitio de SharePoint, como **http://MySPSite**y, a continuación, elija el **vaya** botón.
+3. En el cuadro Dirección de la **Add Service Reference** diálogo cuadro, escriba la dirección URL del sitio de SharePoint, como **http://MySPSite**y, a continuación, elija el **vaya** botón.
 
      Cuando Silverlight localiza el servicio SharePoint OData ListData.svc, reemplaza la dirección con la dirección URL completa del servicio. En este ejemplo, http://myserver se convierte en http://myserver/_vti_bin/ListData.svc.
 
-4.  Elija la **Aceptar** botón para agregar la referencia de servicio al proyecto y use el nombre de servicio predeterminado, ServiceReference1.
+4. Elija la **Aceptar** botón para agregar la referencia de servicio al proyecto y use el nombre de servicio predeterminado, ServiceReference1.
 
-5.  En la barra de menús, elija **Compilar** > **Compilar solución**.
+5. En la barra de menús, elija **Compilar** > **Compilar solución**.
 
-6.  Agregar un nuevo origen de datos al proyecto basado en el servicio de SharePoint. Para ello, en la barra de menús, elija **vista** > **Other Windows** > **orígenes de datos**.
+6. Agregar un nuevo origen de datos al proyecto basado en el servicio de SharePoint. Para ello, en la barra de menús, elija **vista** > **Other Windows** > **orígenes de datos**.
 
      El **orígenes de datos** ventana muestra todos los datos de lista de SharePoint disponibles, como tareas, anuncios y el calendario.
 
-7.  Agregue los datos de la lista de anuncios a la aplicación de Silverlight. Puede arrastrar "Anuncios" desde el **orígenes de datos** ventana hasta Silverlight designer.
+7. Agregue los datos de la lista de anuncios a la aplicación de Silverlight. Puede arrastrar "Anuncios" desde el **orígenes de datos** ventana hasta Silverlight designer.
 
      Esto crea un control de cuadrícula enlazado a la lista de anuncios del sitio de SharePoint.
 
-8.  El tamaño del control de cuadrícula para ajustarse a la página de Silverlight.
+8. El tamaño del control de cuadrícula para ajustarse a la página de Silverlight.
 
 9. En el archivo de código de MainPage.xaml (*MainPage.xaml.cs* para Visual C# o *MainPage.xaml.vb* para Visual Basic), agregue las siguientes referencias de espacio de nombres.
 
@@ -159,6 +159,7 @@ ms.locfileid: "56605125"
         }
     }
     ```
+
      No olvide reemplazar el *ServerName* marcador de posición con el nombre del servidor que ejecuta SharePoint.
 
 12. Agregue el siguiente procedimiento de control de errores.
@@ -195,34 +196,34 @@ ms.locfileid: "56605125"
 
 #### <a name="to-modify-the-silverlight-web-part"></a>Para modificar el elemento web de Silverlight
 
-1.  Abra el menú contextual para el proyecto de elemento web de Silverlight (**SLWebPartTest**) y, a continuación, elija **propiedades**.
+1. Abra el menú contextual para el proyecto de elemento web de Silverlight (**SLWebPartTest**) y, a continuación, elija **propiedades**.
 
-2.  En el **propiedades** ventana, elija el **SharePoint** ficha.
+2. En el **propiedades** ventana, elija el **SharePoint** ficha.
 
-3.  Si aún no está seleccionada, seleccione el **Silverlight Habilitar depuración (en lugar de depuración de Script)** casilla de verificación.
+3. Si aún no está seleccionada, seleccione el **Silverlight Habilitar depuración (en lugar de depuración de Script)** casilla de verificación.
 
-4.  Guarde el proyecto.
+4. Guarde el proyecto.
 
 ## <a name="test-the-silverlight-web-part"></a>Probar el elemento web de Silverlight
  Pruebe el nuevo elemento web de Silverlight en SharePoint para asegurarse de que muestran correctamente los datos de la lista de SharePoint.
 
 #### <a name="to-test-the-silverlight-web-part"></a>Para probar el elemento web de Silverlight
 
-1.  Elija la **F5** clave para compilar y ejecutar la solución de SharePoint.
+1. Elija la **F5** clave para compilar y ejecutar la solución de SharePoint.
 
-2.  En SharePoint, en la **acciones del sitio** menú, elija **nueva página**.
+2. En SharePoint, en la **acciones del sitio** menú, elija **nueva página**.
 
-3.  En el **nueva página** cuadro de diálogo, escriba un título, como **SL Web parte prueba**y, a continuación, elija el **crear** botón.
+3. En el **nueva página** cuadro de diálogo, escriba un título, como **SL Web parte prueba**y, a continuación, elija el **crear** botón.
 
-4.  En el Diseñador de páginas, en el **herramientas de edición de** ficha, elija **insertar**.
+4. En el Diseñador de páginas, en el **herramientas de edición de** ficha, elija **insertar**.
 
-5.  En la franja de pestañas, elija **elemento Web**.
+5. En la franja de pestañas, elija **elemento Web**.
 
-6.  En el **categorías** , seleccione el **personalizado** carpeta.
+6. En el **categorías** , seleccione el **personalizado** carpeta.
 
-7.  En el **elementos Web** lista, elija el elemento web de Silverlight y, a continuación, elija el **agregar** para agregar el elemento web para el diseñador.
+7. En el **elementos Web** lista, elija el elemento web de Silverlight y, a continuación, elija el **agregar** para agregar el elemento web para el diseñador.
 
-8.  Una vez realizadas todas las adiciones a la página web que desee, elija el **página** pestaña y, a continuación, elija el **guardar y cerrar** botón en la barra de herramientas.
+8. Una vez realizadas todas las adiciones a la página web que desee, elija el **página** pestaña y, a continuación, elija el **guardar y cerrar** botón en la barra de herramientas.
 
      El elemento web de Silverlight ahora debe mostrar datos de anuncio desde el sitio de SharePoint. De forma predeterminada, la página se almacena en la lista de las páginas del sitio de SharePoint.
 

@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1f82c9e79957b12dba36eaa70a94cb6fff84ff7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 3fd223b0a5891bc28cdef18dcd64312812607422
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58988082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060441"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar y continuar (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Puede usar Editar y continuar en proyectos de Visual C++. Consulte [cambios de c
   
  **/ Zo** deshabilita Editar y continuar. Vea [Cómo: Depuración de código optimizado](../debugger/how-to-debug-optimized-code.md).  
   
-##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Habilitar o deshabilitar Editar y continuar  
+## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Habilitar o deshabilitar Editar y continuar  
  Quizá quiera deshabilitar la invocación automática de Editar y continuar si realiza modificaciones en el código que no quiere aplicar durante la sesión de depuración actual. También puede volver a habilitar la invocación automática de Editar y continuar.  
   
 1. En el menú **Herramientas** , elija **Opciones**.  
@@ -49,14 +49,14 @@ Puede usar Editar y continuar en proyectos de Visual C++. Consulte [cambios de c
   
    La modificación de esta configuración afecta a todos los proyectos en los que trabaje. No es necesario recompilar la aplicación después de cambiar esta configuración. Puede cambiarla incluso mientras realiza la depuración. Si compila la aplicación desde la línea de comandos o desde un archivo Make, pero realiza la depuración en el entorno de Visual Studio, puede seguir usando Editar y continuar si establece la opción **/ZI** .  
   
-##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Aplicar cambios en el código de forma explícita  
+## <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Aplicar cambios en el código de forma explícita  
  En Visual C++, Editar y continuar puede aplicar cambios de código de dos maneras. Los cambios de código se pueden aplicar de forma implícita cuando se elige un comando de ejecución, o de forma explícita mediante el comando **Aplicar cambios en el código** .  
   
  Cuando los cambios en el código se aplican de forma explícita, el programa permanece en modo de interrupción y no se produce ninguna ejecución.  
   
--   Para aplicar los cambios en el código de manera explícita, vaya al menú **Depurar** y elija **Aplicar cambios en el código**.  
+- Para aplicar los cambios en el código de manera explícita, vaya al menú **Depurar** y elija **Aplicar cambios en el código**.  
   
-##  <a name="BKMK_How_to_stop_code_changes"></a> Detener cambios en el código  
+## <a name="BKMK_How_to_stop_code_changes"></a> Detener cambios en el código  
  Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del código, puede detener la operación.  
   
  Para detener la aplicación de los cambios en el código:  
@@ -67,12 +67,12 @@ Puede usar Editar y continuar en proyectos de Visual C++. Consulte [cambios de c
   
   Si elige esta opción, no se confirmará ninguno de los cambios en el código.  
   
-##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Restablecer el punto de ejecución  
+## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Restablecer el punto de ejecución  
  Algunos cambios realizados en el código pueden hacer que el punto de ejecución se desplace a una nueva ubicación cuando Editar y continuar aplique los cambios. Editar y continuar coloca el punto de ejecución con la mayor exactitud posible, pero puede ocurrir que los resultados no sean correctos en todos los casos.  
   
  En Visual C++, un cuadro de diálogo le informa cuando cambia el punto de ejecución. Deberá comprobar si la ubicación es correcta antes de continuar con la depuración. Si no es correcta, utilice el comando **Establecer instrucción siguiente** . Para más información, consulte [Establecer la siguiente instrucción que se debe ejecutar](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
-##  <a name="BKMK_How_to_work_with_stale_code"></a> Trabajar con código obsoleto  
+## <a name="BKMK_How_to_work_with_stale_code"></a> Trabajar con código obsoleto  
  En algunos casos, la función Editar y continuar no puede aplicar al archivo ejecutable cambios en el código de forma inmediata, pero puede que lo consiga más tarde si continúa la depuración. Esto ocurre si se modifica una función que llama a la función actual o se agregan más de 64 bytes de nuevas variables a una función que está en la pila de llamadas.  
   
  En esos casos, el depurador sigue ejecutando el código original hasta que se puedan aplicar los cambios. El código obsoleto aparece como una ventana de archivo de código fuente temporal en una ventana de código fuente independiente, con un título como `enc25.tmp`. El código fuente modificado continúa apareciendo en la ventana de código fuente original. Si intenta modificar el código obsoleto, aparece un mensaje de advertencia.  

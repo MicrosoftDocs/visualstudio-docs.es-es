@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: bd488230fc6b88feb60ceeb0556385b99e823de9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 71b72b677e9735edb3254290055815885e543fa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055028"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>Tutorial: Crear un Host de plantilla de texto personalizado
+# <a name="walkthrough-create-a-custom-text-template-host"></a>Tutorial: Creación de un host de plantilla de texto personalizado
 
 Un *host de plantillas de texto* proporciona un entorno que permite el *motor de transformación de plantillas de texto* para ejecutar. El host es responsable de administrar la interacción del motor con el sistema de archivos. El motor o *procesador de directivas* que necesita un archivo o un ensamblado puede solicitar un recurso desde el host. Este puede entonces buscar en los directorios y en la memoria caché global de ensamblados el recurso solicitado. Para obtener más información, consulte [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).
 
@@ -31,19 +31,19 @@ Puede escribir un host personalizado si desea usar el *transformación de planti
 
 En este tutorial se muestran las tareas siguientes:
 
--   Crear un host de plantilla de texto personalizado.
+- Crear un host de plantilla de texto personalizado.
 
--   Probar el host personalizado.
+- Probar el host personalizado.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Para completar este tutorial, hay que disponer de lo siguiente:
 
--   Visual Studio 2010 o versiones posteriores
+- Visual Studio 2010 o versiones posteriores
 
--   Visual Studio SDK
+- Visual Studio SDK
 
-## <a name="create-a-custom-text-template-host"></a>Crear un Host de plantilla de texto personalizado
+## <a name="create-a-custom-text-template-host"></a>Creación de un host de plantilla de texto personalizado
 
 En este tutorial, creará un host personalizado en una aplicación ejecutable a la que se puede llamar desde la línea de comandos. La aplicación acepta un archivo de plantilla de texto como argumento, lee la plantilla, llama al motor para transformar la plantilla y muestra cualquier error que se produzca en la ventana del símbolo del sistema.
 
@@ -51,9 +51,9 @@ En este tutorial, creará un host personalizado en una aplicación ejecutable a 
 
 2. Agregue referencias a los siguientes ensamblados:
 
-   -   **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-   -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 y versiones posteriores**
+   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 y versiones posteriores**
 
 3. Reemplace el código del archivo Program.cs o Module1.vb con el siguiente código:
 
@@ -726,11 +726,11 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Para crear una plantilla de texto para probar el host personalizado
 
-1.  Cree un archivo de texto y asígnele el nombre `TestTemplate.tt`.
+1. Cree un archivo de texto y asígnele el nombre `TestTemplate.tt`.
 
      Puede usar cualquier editor de texto (por ejemplo, Bloc de notas) para crear el archivo.
 
-2.  Agregue el siguiente código al archivo:
+2. Agregue el siguiente código al archivo:
 
     > [!NOTE]
     > El lenguaje de programación de la plantilla de texto no tiene que coincidir con el lenguaje del host personalizado.
@@ -773,13 +773,13 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
 
     ```
 
-3.  Guarde y cierre el archivo.
+3. Guarde y cierre el archivo.
 
 ### <a name="to-test-the-custom-host"></a>Para probar el host personalizado
 
-1.  Abra la ventana del símbolo del sistema.
+1. Abra la ventana del símbolo del sistema.
 
-2.  Escriba la ruta de acceso del archivo ejecutable del host personalizado, pero no presione ENTRAR todavía.
+2. Escriba la ruta de acceso del archivo ejecutable del host personalizado, pero no presione ENTRAR todavía.
 
      Por ejemplo, escriba:
 
@@ -788,9 +788,9 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
     > [!NOTE]
     > En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en **Windows Explorer** y, a continuación, arrastre el archivo a la ventana de símbolo del sistema.
 
-3.  Escriba un espacio.
+3. Escriba un espacio.
 
-4.  Escriba la ruta de acceso del archivo de plantilla de texto y, a continuación, presione ENTRAR.
+4. Escriba la ruta de acceso del archivo de plantilla de texto y, a continuación, presione ENTRAR.
 
      Por ejemplo, escriba:
 
@@ -801,11 +801,11 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
 
      La aplicación host personalizada se ejecuta y completa el proceso de transformación de la plantilla de texto.
 
-5.  En **Windows Explorer**, vaya a la carpeta que contiene el archivo TestTemplate.tt.
+5. En **Windows Explorer**, vaya a la carpeta que contiene el archivo TestTemplate.tt.
 
      Esta carpeta también contiene el archivo TestTemplate1.txt.
 
-6.  Abra este archivo para ver el resultados de la transformación de la plantilla de texto.
+6. Abra este archivo para ver el resultados de la transformación de la plantilla de texto.
 
      Aparece el texto de salida generado, con el siguiente aspecto:
 

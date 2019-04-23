@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88690e57e1781e9fe43b3cf4108c62fab189a988
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949036"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059011"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 
@@ -206,13 +206,15 @@ protected override void SpecificFragment2()
 #>
 ```
 
- Código de aplicación para invocar a DerivedTemplate1:
- ```csharp
+Código de aplicación para invocar a DerivedTemplate1:
+
+```csharp
 Console.WriteLine(new DerivedTemplate().TransformText());
 ```
 
- Resultado que se obtiene:
- ```
+Resultado que se obtiene:
+
+```
 This is the common header.
    Fragment 1 for DerivedTemplate1
 A common central text.

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Proteger libros mediante programación
+title: Procedimiento Proteger libros mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12391f16e2797941cf83177aa1c83ed0dd2c0045
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ad45097146a7566f2d043fba5e14265c05dc4d7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644606"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053423"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Procedimiento Proteger libros mediante programación
   Puede proteger un libro de Microsoft Office Excel para que los usuarios no se pueden agregar o eliminar hojas de cálculo y también puede desproteger el libro mediante programación. Opcionalmente, puede especificar una contraseña, indicar si desea que la estructura protegida (por lo que los usuarios no pueden mover las hojas) y que indique si desea que estén protegidas las ventanas del libro.
@@ -37,14 +37,14 @@ ms.locfileid: "56644606"
 
 ### <a name="to-protect-a-workbook"></a>Para proteger un libro
 
-1.  Llame a la <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> método del libro e incluya una contraseña. Para usar el siguiente ejemplo de código, ejecútelo la `ThisWorkbook` (clase), no en una clase de hoja.
+1. Llame a la <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> método del libro e incluya una contraseña. Para usar el siguiente ejemplo de código, ejecútelo la `ThisWorkbook` (clase), no en una clase de hoja.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#10)]
      [!code-vb[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#10)]
 
 ### <a name="to-unprotect-a-workbook"></a>Para desproteger un libro
 
-1.  Llame a la <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> método, pasando una contraseña si es necesario. Para usar el siguiente ejemplo de código, ejecútelo la `ThisWorkbook` (clase), no en una clase de hoja.
+1. Llame a la <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> método, pasando una contraseña si es necesario. Para usar el siguiente ejemplo de código, ejecútelo la `ThisWorkbook` (clase), no en una clase de hoja.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#11)]
@@ -53,14 +53,14 @@ ms.locfileid: "56644606"
 
 ### <a name="to-protect-a-workbook"></a>Para proteger un libro
 
-1.  Llame a la <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> método del libro e incluya una contraseña. Este ejemplo de código usa el libro activo. Para usar este ejemplo, ejecute el código desde la clase `ThisAddIn` del proyecto.
+1. Llame a la <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> método del libro e incluya una contraseña. Este ejemplo de código usa el libro activo. Para usar este ejemplo, ejecute el código desde la clase `ThisAddIn` del proyecto.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#6)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#6)]
 
 ### <a name="to-unprotect-a-workbook"></a>Para desproteger un libro
 
-1.  Llame a la <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> método del libro activo, pasando una contraseña si es necesario. Para usar este ejemplo, ejecute el código desde la clase `ThisAddIn` del proyecto.
+1. Llame a la <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> método del libro activo, pasando una contraseña si es necesario. Para usar este ejemplo, ejecute el código desde la clase `ThisAddIn` del proyecto.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c91aa3cbad7fd58fbd819e46f3f3428f68801e9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618944"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060831"
 ---
 # <a name="running-document-table"></a>Tabla de documentos en ejecución
 El IDE mantiene la lista de todos los documentos abiertos actualmente en una estructura interna denominada de la tabla de documentos en ejecución (RDT). Esta lista incluye todos los documentos abiertos en memoria, independientemente de si actualmente se está editando estos documentos. Un documento es cualquier elemento que se conserva, incluidos los archivos en un proyecto o el archivo de proyecto principal (por ejemplo, un archivo .vcxproj).
@@ -52,9 +52,9 @@ El IDE mantiene la lista de todos los documentos abiertos actualmente en una est
 
  El IDE usa también la RDT reaparece (Traer al frente) un documento abierto, si un usuario solicita ese documento. Para obtener más información, consulte [mostrar archivos mediante el uso del comando archivo abrir](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Para determinar si un archivo está abierto en el RDT, realice una de las siguientes.
 
--   Consulta para el moniker del documento (es decir, la ruta de acceso completa del documento) averiguar si el elemento está abierto.
+- Consulta para el moniker del documento (es decir, la ruta de acceso completa del documento) averiguar si el elemento está abierto.
 
--   Use el identificador de jerarquía o el elemento para formular el sistema del proyecto para la ruta de acceso completa del documento y, a continuación, busque el elemento en el RDT.
+- Use el identificador de jerarquía o el elemento para formular el sistema del proyecto para la ruta de acceso completa del documento y, a continuación, busque el elemento en el RDT.
 
 ## <a name="see-also"></a>Vea también
 - [Uso de RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)

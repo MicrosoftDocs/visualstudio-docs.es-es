@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055793"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Cambios admitidos en el código (C# y Visual Basic)
 Editar y continuar controla la mayoría de los tipos de cambios de código dentro de los cuerpos de método. Ahora bien, durante la depuración, no es posible efectuar la mayoría de cambios fuera de los cuerpos de método y algunos cambios dentro de estos. Para efectuar dichos cambios no compatibles, es necesario detener la depuración y reiniciar con una versión nueva del código.
@@ -45,7 +45,7 @@ En la tabla siguiente muestra los cambios que pueden realizarse en código C# y 
 ## <a name="unsupported-changes-to-code"></a>Cambios no admitidos en código
  Los siguientes cambios no se puede aplicar al código de C# y Visual Basic durante una sesión de depuración:
 
--   Cambios en la instrucción actual o en cualquier otra instrucción activa.
+- Cambios en la instrucción actual o en cualquier otra instrucción activa.
 
      Entre las instrucciones activas se incluye cualquier instrucción, en funciones de la pila de llamadas, que haya sido llamada para llegar a la instrucción actual.
 
@@ -78,7 +78,7 @@ En la tabla siguiente muestra los cambios que pueden realizarse en código C# y 
 |Iterators|Modificar un iterador en un proyecto destinado a .NET Framework 4 y reducir (consulte [detalles](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Código no seguro
- Los cambios efectuados en el código no seguro tienen las mismas limitaciones que los cambios efectuados en el código seguro, con una restricción adicional: Editar y continuar no admite cambios en el código no seguro que esté dentro de un método que contenga el operador `stackalloc`.
+ Los cambios en el código no seguro tienen las mismas limitaciones que los cambios en el código seguro, con una restricción adicional: Editar y continuar no admite cambios en el código no seguro que esté dentro de un método que contiene el `stackalloc` operador.
 
 ## <a name="unsupported-app-scenarios"></a>Escenarios de aplicaciones no compatibles
 
@@ -90,20 +90,20 @@ Plataformas y aplicaciones no compatibles se incluyen ASP.NET 5, 5 de Silverligh
 ## <a name="unsupported-scenarios"></a>Escenarios no admitidos
  La opción Editar y continuar no se encuentra disponible en los siguientes escenarios de depuración:
 
--   Depuración en modo mixto (nativa o administrada).
+- Depuración en modo mixto (nativa o administrada).
 
--   Depuración de SQL.
+- Depuración de SQL.
 
--   Depuración de un volcado de Dr. Watson.
+- Depuración de un volcado de Dr. Watson.
 
--   Depuración de una aplicación incrustada en tiempo de ejecución.
+- Depuración de una aplicación incrustada en tiempo de ejecución.
 
--   Depurar una aplicación utilizando asociar al proceso (**Depurar > asociar al proceso**) en lugar de ejecutar la aplicación eligiendo **iniciar** desde el **depurar** menú.
+- Depurar una aplicación utilizando asociar al proceso (**Depurar > asociar al proceso**) en lugar de ejecutar la aplicación eligiendo **iniciar** desde el **depurar** menú.
 
--   Depuración de código optimizado.
+- Depuración de código optimizado.
 
--   Depurar una versión anterior del código cuando no ha sido posible generar una nueva versión debido a errores de compilación.
+- Depurar una versión anterior del código cuando no ha sido posible generar una nueva versión debido a errores de compilación.
 
 ## <a name="see-also"></a>Vea también
 - [Editar y continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [Cómo: Usar Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Cómo: Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

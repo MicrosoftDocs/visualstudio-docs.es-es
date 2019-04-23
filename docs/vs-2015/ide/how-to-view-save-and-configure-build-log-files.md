@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760062"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053576"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Cómo: Ver, guardar y configurar archivos de registro de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,23 +25,23 @@ Después de compilar un proyecto en el IDE de Visual Studio, puede ver informaci
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>Para ver el archivo de registro de compilación de un proyecto de C++  
   
-1.  En el **Explorador de Windows** o el **Explorador de archivos**, abra el archivo siguiente: \\…\Visual Studio *Versión*\Projects\\*NombreDelProyecto*\\*NombreDelProyecto*\Debug\\*NombreDelProyecto*.txt  
+1. En el **Explorador de Windows** o el **Explorador de archivos**, abra el archivo siguiente: \\…\Visual Studio *Versión*\Projects\\*NombreDelProyecto*\\*NombreDelProyecto*\Debug\\*NombreDelProyecto*.txt  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Para crear un archivo de registro de compilación para un proyecto de código administrado  
   
-1.  En la barra de menús, elija **Compilar**, **Compilar solución**.  
+1. En la barra de menús, elija **Compilar**, **Compilar solución**.  
   
-2.  En la ventana **Salida**, resalte la información de la compilación y, después, cópiela en el Portapapeles.  
+2. En la ventana **Salida**, resalte la información de la compilación y, después, cópiela en el Portapapeles.  
   
-3.  Abra un editor de texto, como el Bloc de notas, pegue la información en el archivo y guárdelo.  
+3. Abra un editor de texto, como el Bloc de notas, pegue la información en el archivo y guárdelo.  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Para cambiar el volumen de información incluida en el registro de compilación  
   
-1.  En la barra de menús, elija **Herramientas**, **Opciones**.  
+1. En la barra de menús, elija **Herramientas**, **Opciones**.  
   
-2.  En la página **Proyectos y soluciones**, elija la página **Compilar y ejecutar**.  
+2. En la página **Proyectos y soluciones**, elija la página **Compilar y ejecutar**.  
   
-3.  En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, seleccione uno de los valores siguientes y, después, elija el botón **Aceptar**.  
+3. En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, seleccione uno de los valores siguientes y, después, elija el botón **Aceptar**.  
   
     |Nivel de detalle|Descripción|  
     |---------------------|-----------------|  

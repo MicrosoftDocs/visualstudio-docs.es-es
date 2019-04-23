@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d53c21247e18f198fdac1c22a3b38c0bc5348b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060143"
 ---
-# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Filtrar Abrir archivos de texto mediante programación como libros
+# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Procedimiento Abrir archivos de texto mediante programación como libros
   Puede abrir un archivo de texto como un libro. Se debe pasar el nombre del archivo de texto que desea abrir. Puede especificar varios parámetros opcionales, como el número de fila para iniciar el análisis y el formato de columna de los datos en el archivo.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "56633920"
 ## <a name="compile-the-code"></a>Compilar el código
  En este ejemplo requiere los siguientes componentes:
 
--   Un archivo de texto delimitado por comas denominado `Test.txt` que contiene al menos tres líneas de texto.
+- Un archivo de texto delimitado por comas denominado `Test.txt` que contiene al menos tres líneas de texto.
 
--   El archivo de texto `Test.txt` se almacenen en la unidad C.
+- El archivo de texto `Test.txt` se almacenen en la unidad C.
 
 ## <a name="see-also"></a>Vea también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)

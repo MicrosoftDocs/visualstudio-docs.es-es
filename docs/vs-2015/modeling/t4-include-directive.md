@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b67f3def0eadc35f67d590b282001cac1c526ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057711"
 ---
 # <a name="t4-include-directive"></a>Directiva Include T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a> Uso de las propiedades del proyecto de MSBuild y Visual Studio  
+## <a name="msbuild"></a> Uso de las propiedades del proyecto de MSBuild y Visual Studio  
  Aunque puede usar macros de Visual Studio como $ (SolutionDir) en una directiva include, estas macros no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.  
   
  Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. En este ejemplo se define una propiedad denominada `myIncludeFolder`:  

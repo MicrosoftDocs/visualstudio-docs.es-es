@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e3c479e7e5ae706121e0513d825d57d1cb540c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939637"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060428"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propiedades calculadas y de almacenamiento personalizado
 Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se pueden mostrar al usuario en el diagrama y en el explorador del lenguaje y pueden tener acceso a código de programa. Sin embargo, las propiedades difieren de la manera en que se almacenan sus valores.
@@ -33,30 +33,30 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
 
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>Para definir un Calculated o la propiedad de almacenamiento personalizado
 
-1.  En DslDefinition.dsl, seleccione la propiedad de dominio en el diagrama o en **DSL Explorer**.
+1. En DslDefinition.dsl, seleccione la propiedad de dominio en el diagrama o en **DSL Explorer**.
 
-2.  En el **propiedades** ventana, establezca el **tipo** campo **Calculated** o **almacenamiento personalizado**.
+2. En el **propiedades** ventana, establezca el **tipo** campo **Calculated** o **almacenamiento personalizado**.
 
      Asegúrese de que ha establecido su **tipo** que desee.
 
-3.  Haga clic en **Transformar todas las plantillas** en la barra de herramientas de **el Explorador de soluciones**.
+3. Haga clic en **Transformar todas las plantillas** en la barra de herramientas de **el Explorador de soluciones**.
 
-4.  En el menú **Compilar** , haga clic en **Compilar solución**.
+4. En el menú **Compilar** , haga clic en **Compilar solución**.
 
      Puede recibir el mensaje de error siguiente: "*Suclase* no contiene una definición para Get*Supropiedad*."
 
-5.  Haga doble clic en el mensaje de error.
+5. Haga doble clic en el mensaje de error.
 
      Se abrirá DomainRelationships.cs o Dsl\GeneratedCode\DomainClasses.cs. Por encima de la llamada de método resaltada, un comentario le solicita que proporcione una implementación de Get*Supropiedad*().
 
     > [!NOTE]
     >  Este archivo se genera a partir de DslDefinition.dsl. Si edita este archivo, los cambios se perderán la próxima vez que se hace clic **Transformar todas las plantillas**. En su lugar, agregue el método requerido en un archivo independiente.
 
-6.  Cree o abra un archivo de clase en una carpeta independiente, por ejemplo, un valor CustomCode\\*YourDomainClass*. cs.
+6. Cree o abra un archivo de clase en una carpeta independiente, por ejemplo, un valor CustomCode\\*YourDomainClass*. cs.
 
      Asegúrese de que el espacio de nombres es el mismo que el código generado.
 
-7.  En el archivo de clase, escribir una implementación parcial de la clase de dominio. En la clase, escribir una definición para el que falta `Get` método que es similar al siguiente:
+7. En el archivo de clase, escribir una implementación parcial de la clase de dominio. En la clase, escribir una definición para el que falta `Get` método que es similar al siguiente:
 
     ```
     namespace Company.FamilyTree
@@ -66,7 +66,7 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
     }  }
     ```
 
-8.  Si establece **tipo** a **almacenamiento personalizado**, también deberá proporcionar un `Set` método. Por ejemplo:
+8. Si establece **tipo** a **almacenamiento personalizado**, también deberá proporcionar un `Set` método. Por ejemplo:
 
     ```
     void SetAgeValue(int value)
@@ -81,7 +81,7 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
 
 10. Probar la propiedad. Asegúrese de que intente **deshacer** y **rehacer**.
 
-##  <a name="setters"></a> Las transacciones y establecedores personalizados
+## <a name="setters"></a> Las transacciones y establecedores personalizados
  En el método Set de propiedad de almacenamiento personalizado, no tendrá que abrir una transacción, ya que normalmente se llama al método dentro de una transacción activa.
 
  Sin embargo, también se podría llamar al método Set si el usuario invoca la operación de deshacer o rehacer, o si se está revirtiendo una transacción. Cuando <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> es true, el método Set debe comportarse como sigue:

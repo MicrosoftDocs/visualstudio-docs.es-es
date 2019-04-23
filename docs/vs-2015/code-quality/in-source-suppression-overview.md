@@ -12,19 +12,19 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057165"
 ---
 # <a name="in-source-suppression-overview"></a>Información general sobre supresiones en código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Supresión en el código fuente es la capacidad para suprimir o pasar por alto infracciones de análisis de código en código administrado mediante la adición de la **SuppressMessage** los segmentos de código que provocan las infracciones de atributo. El **SuppressMessage** es un atributo condicional que se incluye en los metadatos de IL del ensamblado de código administrado solo si se ha definido el símbolo de compilación CODE_ANALYSIS en tiempo de compilación.  
   
- En C / c++ / CLI, use las macros CA_GLOBAL_SUPPRESS_MESSAGE o CA_SUPPRESS_MESSAGE en el archivo de encabezado para agregar el atributo.  
+ En C++/CLI, use las macros CA_GLOBAL_SUPPRESS_MESSAGE o CA_SUPPRESS_MESSAGE en el archivo de encabezado para agregar el atributo.  
   
  No debe utilizar supresiones en código fuente en las compilaciones de versión para evitar que los metadatos de supresión en el origen de trasvase de registros por accidente. Debido al costo de procesamiento de supresión en el código fuente, también puede disminuir el rendimiento de la aplicación mediante la inclusión de los metadatos de supresión en el código fuente.  
   
@@ -54,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  Dónde:  
   
--   **Categoría de regla** -la categoría en la que se define la regla. Para obtener más información acerca de las categorías de regla de análisis de código, vea [Code Analysis for Managed Code Warnings](../code-quality/code-analysis-for-managed-code-warnings.md).  
+- **Categoría de regla** -la categoría en la que se define la regla. Para obtener más información acerca de las categorías de regla de análisis de código, vea [Code Analysis for Managed Code Warnings](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Id. de regla** -el identificador de la regla. La compatibilidad incluye tanto un nombre corto y largo para el identificador de regla. El nombre corto es la regla. el nombre corto es CAXXXX.  
+- **Id. de regla** -el identificador de la regla. La compatibilidad incluye tanto un nombre corto y largo para el identificador de regla. El nombre corto es la regla. el nombre corto es CAXXXX.  
   
--   **Justificación** -el texto que se usa para documentar el motivo para suprimir el mensaje.  
+- **Justificación** -el texto que se usa para documentar el motivo para suprimir el mensaje.  
   
--   **Id. de mensaje** -identificador único de un problema para cada mensaje.  
+- **Id. de mensaje** -identificador único de un problema para cada mensaje.  
   
--   **Ámbito** -el destino en el que se suprime la advertencia. Si el destino no se especifica, se establece en el destino del atributo. Los ámbitos admitidos incluyen lo siguiente:  
+- **Ámbito** -el destino en el que se suprime la advertencia. Si el destino no se especifica, se establece en el destino del atributo. Los ámbitos admitidos incluyen lo siguiente:  
   
-    -   Module  
+    - Module  
   
-    -   Espacio de nombres  
+    - Espacio de nombres  
   
-    -   Recurso  
+    - Recurso  
   
-    -   Tipo  
+    - Tipo  
   
-    -   Miembro  
+    - Miembro  
   
--   **Destino** : un identificador que se usa para especificar el destino en el que se suprime la advertencia. Debe contener un nombre de elemento completo.  
+- **Destino** : un identificador que se usa para especificar el destino en el que se suprime la advertencia. Debe contener un nombre de elemento completo.  
   
 ## <a name="suppressmessage-usage"></a>Uso de SuppressMessage  
  Se suprimen las advertencias de análisis de código en el nivel al que una instancia de la **SuppressMessage** se aplica el atributo. El propósito de esto es acoplando la información de supresión en el código donde se produce la infracción.  

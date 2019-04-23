@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41fb80c229d016658b030d6ebf6981051c5de096
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631502"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056333"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Empezar a programar personalizaciones de nivel de documento para Word
   Si acaba de empezar a crear personalizaciones de nivel de documento para Microsoft Office Word mediante Visual Studio, aquí es lo que necesita saber.
@@ -44,11 +44,11 @@ ms.locfileid: "56631502"
 
  Para obtener más información, vea los temas siguientes:
 
--   [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)
+- [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)
 
--   [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
+- [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 
--   [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
+- [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-word"></a>Personalizar la interfaz de usuario de Word
  La mayoría de las soluciones de Microsoft Office modifican la interfaz de usuario (UI) de la aplicación de Office para ofrecer alguna forma para que los usuarios interactuar con la solución. Hay muchas maneras en que puede modificar la interfaz de usuario de Word mediante una personalización de nivel de documento. Por ejemplo, puede agregar controles a la cinta de opciones, y puede mostrar un panel de acciones. Para obtener más información, consulte [personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md).

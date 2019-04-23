@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 578835b770a9895b00513b6907956bc3bb9f9da7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 001f3a3c74f792fbe3028b6915cb350d359221a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653767"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043141"
 ---
 # <a name="insert-new-records-into-a-database"></a>Insertar nuevos registros en una base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Para insertar nuevos registros en una base de datos, puede usar el `TableAdapter
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Para insertar nuevos registros en una base de datos mediante el método TableAdapter.Insert  
   
--   Llamar a del TableAdapter `Insert` método, pasando los valores para cada columna como parámetros.  
+- Llamar a del TableAdapter `Insert` método, pasando los valores para cada columna como parámetros.  
   
     > [!NOTE]
     >  Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
@@ -77,7 +77,7 @@ Para insertar nuevos registros en una base de datos, puede usar el `TableAdapter
   
 #### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Para insertar nuevos registros en una base de datos mediante el uso de objetos de comando  
   
--   Cree un nuevo objeto de comando y, a continuación, establezca su `Connection`, `CommandType`, y `CommandText` propiedades.  
+- Cree un nuevo objeto de comando y, a continuación, establezca su `Connection`, `CommandType`, y `CommandText` propiedades.  
   
      [!code-csharp[VbRaddataSaving#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#16)]
      [!code-vb[VbRaddataSaving#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#16)]  

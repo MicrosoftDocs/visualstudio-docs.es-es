@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059271"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>Para crear una plantilla de texto en tiempo de ejecución  
   
-1.  En el Explorador de soluciones, en el menú contextual del proyecto, elija **agregar**, **nuevo elemento**.  
+1. En el Explorador de soluciones, en el menú contextual del proyecto, elija **agregar**, **nuevo elemento**.  
   
-2.  En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **plantilla de texto en tiempo de ejecución**. (En [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mire en **Items\General común**.)  
+2. En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **plantilla de texto en tiempo de ejecución**. (En [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mire en **Items\General común**.)  
   
-3.  Escriba un nombre para el archivo de plantilla.  
+3. Escriba un nombre para el archivo de plantilla.  
   
     > [!NOTE]
     >  El nombre de archivo de plantilla se utilizará como nombre de clase en el código generado. Por lo tanto, no debe tener espacios o signos de puntuación.  
   
-4.  Haga clic en **Agregar**.  
+4. Haga clic en **Agregar**.  
   
      Se crea un nuevo archivo con extensión **.tt**. Su **Custom Tool** propiedad está establecida en **TextTemplatingFilePreprocessor**. Contiene las siguientes líneas:  
   
@@ -79,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Para convertir un archivo de texto existente en una plantilla en tiempo de ejecución  
   
-1.  Incluir el archivo en su [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proyecto. En el Explorador de soluciones, en el menú contextual del proyecto, elija **agregar**, **elemento existente**.  
+1. Incluir el archivo en su [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proyecto. En el Explorador de soluciones, en el menú contextual del proyecto, elija **agregar**, **elemento existente**.  
   
-2.  Establezca el archivo **Custom Tools** propiedad **TextTemplatingFilePreprocessor**. En el Explorador de soluciones, en el menú contextual del archivo, elija **propiedades**.  
+2. Establezca el archivo **Custom Tools** propiedad **TextTemplatingFilePreprocessor**. En el Explorador de soluciones, en el menú contextual del archivo, elija **propiedades**.  
   
     > [!NOTE]
     >  Si la propiedad ya está establecida, asegúrese de que es **TextTemplatingFilePreprocessor** y no **TextTemplatingFileGenerator**. Esto puede ocurrir si incluye un archivo que ya tiene la extensión **.tt**.  
   
-3.  Cambiar la extensión de nombre de archivo a **.tt**. Aunque este paso es opcional, le ayuda a evitar que se abra el archivo en un editor incorrecto.  
+3. Cambiar la extensión de nombre de archivo a **.tt**. Aunque este paso es opcional, le ayuda a evitar que se abra el archivo en un editor incorrecto.  
   
-4.  Quitar espacios ni signos de puntuación de la parte principal del nombre de archivo. Por ejemplo "Mi página Web.tt" sería correcto, pero "MyWebPage.tt" es correcta. El nombre de archivo se usará como nombre de clase en el código generado.  
+4. Quitar espacios ni signos de puntuación de la parte principal del nombre de archivo. Por ejemplo "Mi página Web.tt" sería correcto, pero "MyWebPage.tt" es correcta. El nombre de archivo se usará como nombre de clase en el código generado.  
   
-5.  Inserte la siguiente línea al principio del archivo. Si está trabajando en un proyecto de Visual Basic, reemplace "C#" con "VB".  
+5. Inserte la siguiente línea al principio del archivo. Si está trabajando en un proyecto de Visual Basic, reemplace "C#" con "VB".  
   
      `<#@ template language="C#" #>`  
   

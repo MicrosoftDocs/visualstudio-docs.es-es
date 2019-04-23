@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1552e45b13fbbd860a429238cf233bbfccbb3f02
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053941"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Tutorial: Importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio
   Este tutorial muestra cómo importar un flujo de trabajo reutilizable creado en SharePoint Designer 2010 en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de flujo de trabajo de SharePoint.
@@ -48,11 +48,11 @@ ms.locfileid: "56603429"
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
--   Ediciones compatibles de [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] y SharePoint.
+- Ediciones compatibles de [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] y SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010.
+- Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010.
 
 ## <a name="create-target-sharepoint-subsites"></a>Crear subsitios de SharePoint de destino
  En primer lugar cree dos nuevos subsitios de SharePoint: uno para hospedar los flujos de trabajo reutilizables de SharePoint Designer, otro para hospedar los flujos de trabajo convertidos.
@@ -80,27 +80,27 @@ ms.locfileid: "56603429"
 
 #### <a name="to-create-a-sharepoint-designer-reusable-workflow"></a>Para crear un flujo de trabajo reutilizable de SharePoint Designer
 
-1.  En el **subsitios** sección, elija el **SPD1** sitio para modificarlo.
+1. En el **subsitios** sección, elija el **SPD1** sitio para modificarlo.
 
-2.  En la cinta de opciones, elija la **flujo de trabajo reutilizable** botón.
+2. En la cinta de opciones, elija la **flujo de trabajo reutilizable** botón.
 
      Aparece el Asistente de creación de flujo de trabajo reutilizable.
 
-3.  En el **nombre** , escriba **flujo de trabajo de tarea SPD**.
+3. En el **nombre** , escriba **flujo de trabajo de tarea SPD**.
 
-4.  En el **tipo de contenido** elija **tarea**y, a continuación, elija el **Aceptar** botón.
+4. En el **tipo de contenido** elija **tarea**y, a continuación, elija el **Aceptar** botón.
 
      El flujo de trabajo se abre en el Diseñador de flujo de trabajo de SharePoint Designer.
 
-5.  En el Diseñador de flujo de trabajo, elija el paso 1 y, a continuación, en la cinta de opciones, elija la **condición** botón.
+5. En el Diseñador de flujo de trabajo, elija el paso 1 y, a continuación, en la cinta de opciones, elija la **condición** botón.
 
-6.  En la lista de condiciones, elija **si el campo de elemento actual es igual al valor**.
+6. En la lista de condiciones, elija **si el campo de elemento actual es igual al valor**.
 
      Este paso agrega una condición que se denomina **si campo es igual al valor**.
 
-7.  En el **si campo es igual al valor** de condición, elija el **campo** vínculo.
+7. En el **si campo es igual al valor** de condición, elija el **campo** vínculo.
 
-8.  En la lista de valores, elija **título**.
+8. En la lista de valores, elija **título**.
 
 9. En el **si campo es igual al valor** de condición, elija el **valor** vínculo.
 
@@ -128,23 +128,23 @@ ms.locfileid: "56603429"
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>Para guardar e implementar el flujo de trabajo reutilizable
 
-1.  En la parte superior de SharePoint Designer, elija el **guardar** botón para guardar el progreso y, a continuación, elija el **publicar** botón para implementar el flujo de trabajo la **SPD1** sitio de SharePoint .
+1. En la parte superior de SharePoint Designer, elija el **guardar** botón para guardar el progreso y, a continuación, elija el **publicar** botón para implementar el flujo de trabajo la **SPD1** sitio de SharePoint .
 
-2.  En el panel de navegación, elija el **flujos de trabajo** objeto.
+2. En el panel de navegación, elija el **flujos de trabajo** objeto.
 
-3.  En **flujo de trabajo reutilizable**, elija **flujo de trabajo de tarea SPD**.
+3. En **flujo de trabajo reutilizable**, elija **flujo de trabajo de tarea SPD**.
 
-4.  En la cinta de opciones, elija la **Guardar como plantilla** botón para guardar el flujo de trabajo como un *.wsp* archivo.
+4. En la cinta de opciones, elija la **Guardar como plantilla** botón para guardar el flujo de trabajo como un *.wsp* archivo.
 
-5.  Abra el **SPD1** sitio de SharePoint en un explorador para ver el *.wsp* archivo en SharePoint.
+5. Abra el **SPD1** sitio de SharePoint en un explorador para ver el *.wsp* archivo en SharePoint.
 
-6.  En la barra Inicio rápido, elija el **bibliotecas** vínculo.
+6. En la barra Inicio rápido, elija el **bibliotecas** vínculo.
 
-7.  En el **las bibliotecas de documentos** sección, elija el **activos del sitio** vínculo.
+7. En el **las bibliotecas de documentos** sección, elija el **activos del sitio** vínculo.
 
      El **flujo de trabajo de tarea SPD** archivo aparece con otros recursos del sitio.
 
-8.  En la lista de archivos, elija el nombre de archivo
+8. En la lista de archivos, elija el nombre de archivo
 
 9. En el **descarga de archivos** diálogo cuadro, elija el **guardar** botón para guardar la *.wsp* archivo en el sistema local.
 
@@ -188,11 +188,11 @@ ms.locfileid: "56603429"
 
 11. Dado que el **flujo de trabajo de importación reutilizable de SharePoint 2010** plantilla no importa los valores de propiedad de asociación del flujo de trabajo importado, debe escribirlos. Para hacerlo:
 
-    1.  En **el Explorador de soluciones**, elija el **SPD_Workflow_TestFT** nodo.
+    1. En **el Explorador de soluciones**, elija el **SPD_Workflow_TestFT** nodo.
 
-    2.  Elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) situado junto a una de las propiedades de la lista, como el **lista destino** propiedad.
+    2. Elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) situado junto a una de las propiedades de la lista, como el **lista destino** propiedad.
 
-    3.  Rellene los valores que faltan en el Asistente de personalización de SharePoint y, a continuación, elija el **finalizar** botón.
+    3. Rellene los valores que faltan en el Asistente de personalización de SharePoint y, a continuación, elija el **finalizar** botón.
 
 12. Elija el archivo .xoml y, a continuación, en la barra de menús, elija **vista** > **diseñador** para ver el flujo de trabajo importado en el Diseñador de flujo de trabajo.
 
@@ -206,9 +206,9 @@ ms.locfileid: "56603429"
 
 14. Siga una de estas series de procedimientos:
 
-    -   Haga doble clic en **CodeActivity1** para generar un controlador de eventos y ver el código.
+    - Haga doble clic en **CodeActivity1** para generar un controlador de eventos y ver el código.
 
-    -   En el **propiedades** ventana para **CodeActivity1**, establezca el valor de la **ExecuteCode** propiedad **codeActivity_ExecuteCode**.
+    - En el **propiedades** ventana para **CodeActivity1**, establezca el valor de la **ExecuteCode** propiedad **codeActivity_ExecuteCode**.
 
 15. Agregue lo siguiente bajo existente **mediante** o **importaciones** instrucciones:
 
@@ -225,27 +225,27 @@ ms.locfileid: "56603429"
 
 #### <a name="to-deploy-the-project-and-associate-the-workflow"></a>Para implementar el proyecto y asociar el flujo de trabajo
 
-1.  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], elija el **F5** clave ejecutar e implementar el proyecto de flujo de trabajo convertido.
+1. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], elija el **F5** clave ejecutar e implementar el proyecto de flujo de trabajo convertido.
 
-2.  En la barra Inicio rápido, elija el **tareas** vínculo para mostrar la lista de tareas.
+2. En la barra Inicio rápido, elija el **tareas** vínculo para mostrar la lista de tareas.
 
-3.  En el **herramientas de lista** ficha, elija la **elementos** botón y, a continuación, elija el **nuevo elemento** botón.
+3. En el **herramientas de lista** ficha, elija la **elementos** botón y, a continuación, elija el **nuevo elemento** botón.
 
      El **tareas - nuevo elemento** abre el cuadro de diálogo.
 
-4.  En el **título** , escriba **nueva tarea**y, a continuación, elija el **guardar** botón.
+4. En el **título** , escriba **nueva tarea**y, a continuación, elija el **guardar** botón.
 
-5.  En el **herramientas de lista** ficha, elija la **lista** botón y, a continuación, elija el **configuración de la lista** botón.
+5. En el **herramientas de lista** ficha, elija la **lista** botón y, a continuación, elija el **configuración de la lista** botón.
 
      El **configuración de la lista** aparece la página.
 
-6.  En el **permisos y administración** sección, elija el **Workflow Settings** vínculo.
+6. En el **permisos y administración** sección, elija el **Workflow Settings** vínculo.
 
      El **Workflow Settings** aparece la página.
 
-7.  Elija la **agregar un flujo de trabajo** vínculo.
+7. Elija la **agregar un flujo de trabajo** vínculo.
 
-8.  En el **flujo de trabajo** elija **WorkflowImportProject1 - prueba de flujo de trabajo SPD**.
+8. En el **flujo de trabajo** elija **WorkflowImportProject1 - prueba de flujo de trabajo SPD**.
 
 9. En el **nombre** , escriba **prueba de flujo de trabajo SPD**y, a continuación, elija el **Aceptar** botón.
 

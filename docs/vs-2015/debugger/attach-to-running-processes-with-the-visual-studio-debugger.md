@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fca78c684ac30ca09aedf3c1b9547103608a4f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053304"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Crear asociaciones con procesos en ejecución con el depurador de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,12 +46,12 @@ Puede usar esta capacidad para depurar aplicaciones que se ejecutan en un equipo
 > [!TIP]
 > ¿No está seguro de que si se debe usar **asociar al proceso** para su escenario de depuración? Consulte [comunes en escenarios de depuración](#BKMK_Scenarios). Si desea depurar aplicaciones de ASP.NET que se han implementado en IIS, consulte [Remote Debugging ASP.NET en un equipo IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Adjuntar a un proceso en ejecución en el equipo local
+## <a name="BKMK_Attach_to_a_running_process"></a> Adjuntar a un proceso en ejecución en el equipo local
  Para asociar a un proceso, debe conocer el nombre del proceso (consulte [comunes en escenarios de depuración](#BKMK_Scenarios) para algunos nombres comunes de proceso).
 
-1.  En Visual Studio, seleccione **depurar / asociar al proceso** (o presione **CTRL + ALT + P**).
+1. En Visual Studio, seleccione **depurar / asociar al proceso** (o presione **CTRL + ALT + P**).
 
-2.  En el cuadro de diálogo **Asociar al proceso** , seleccione el programa que desea asociar en la lista **Procesos disponibles** .
+2. En el cuadro de diálogo **Asociar al proceso** , seleccione el programa que desea asociar en la lista **Procesos disponibles** .
 
      Para seleccionar rápidamente el proceso que desea, escriba la primera letra del nombre del proceso. Si no conoce el nombre del proceso, consulte [comunes en escenarios de depuración](#BKMK_Scenarios).
 
@@ -59,17 +59,17 @@ Puede usar esta capacidad para depurar aplicaciones que se ejecutan en un equipo
 
      Si el proceso se ejecuta con una cuenta de usuario diferente, active la casilla **Mostrar los procesos de todos los usuarios** .
 
-3.  En el cuadro **Asociar a** , asegúrese de que aparece el tipo de código que quiere depurar. El valor predeterminado **Automático** intenta determinar qué tipo de código desea depurar. Para establecer el tipo de código manualmente, haga lo siguiente:
+3. En el cuadro **Asociar a** , asegúrese de que aparece el tipo de código que quiere depurar. El valor predeterminado **Automático** intenta determinar qué tipo de código desea depurar. Para establecer el tipo de código manualmente, haga lo siguiente:
 
-    1.  En el cuadro de diálogo **Asociar a** , haga clic en **Seleccionar**.
+    1. En el cuadro de diálogo **Asociar a** , haga clic en **Seleccionar**.
 
-    2.  En el cuadro de diálogo **Seleccionar tipo de código** , haga clic en **Depurar estos tipos de código** y seleccione los tipos que va a depurar.
+    2. En el cuadro de diálogo **Seleccionar tipo de código** , haga clic en **Depurar estos tipos de código** y seleccione los tipos que va a depurar.
 
-    3.  Haga clic en **Aceptar**.
+    3. Haga clic en **Aceptar**.
 
-4.  Haga clic en **Adjuntar**.
+4. Haga clic en **Adjuntar**.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Asociar a un proceso en un equipo remoto
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Asociar a un proceso en un equipo remoto
  Para asociar a un proceso, debe conocer el nombre del proceso (consulte [comunes en escenarios de depuración](#BKMK_Scenarios) para algunos nombres comunes de proceso). Para obtener más detalles para las aplicaciones ASP.NET que se han implementado en IIS, consulte [Remote Debugging ASP.NET en un equipo IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). En el caso de las demás aplicaciones, encontrará el nombre del proceso en el Administrador de tareas.
 
  En el cuadro de diálogo **Asociar al proceso** , puede seleccionar otro equipo configurado para la depuración remota. Para obtener más información, consulte [depuración remota](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Cuando se ha seleccionado un equipo remoto, se puede consultar una lista con los procesos disponibles que se están ejecutando en dicho equipo y establecer una asociación con uno o varios procesos para llevar a cabo la depuración.
@@ -146,7 +146,7 @@ Para escenarios de depuración remotos, debe tener el código fuente (o una copi
 
 En algunos escenarios de depuración locales, puede depurar en Visual Studio sin acceso al origen si los archivos de símbolos correctos están presentes con la aplicación (de forma predeterminada, esto requiere una compilación de depuración). Para obtener más información, consulte [especificar archivos de código fuente y símbolos](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Solucionar problemas de errores de asociación
+## <a name="BKMK_Troubleshoot_attach_errors"></a> Solucionar problemas de errores de asociación
  Cuando el depurador se asocia a un proceso en ejecución, el proceso puede contener uno o varios tipos de código. Los tipos de código a los que se puede asociar el depurador se muestran y seleccionan en el cuadro de diálogo **Seleccionar tipo de código** .
 
  A veces, el depurador puede asociarse correctamente a un tipo de código, pero no a otro. Esto puede ocurrir cuando se intenta asociar el depurador a un proceso que está ejecutándose en un equipo remoto. Puede que el equipo remoto tenga instalados los componentes de depuración remota para algunos tipos de código, pero no para otros. También puede ocurrir al intentar asociar el depurador a dos o varios procesos para realizar una depuración directa de la base de datos. La depuración de SQL sólo admite la asociación a un único proceso.
