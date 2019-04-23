@@ -4,6 +4,7 @@ description: Cree una aplicación sencilla de .NET de escritorio de Windows en V
 ms.custom: seodec18, get-started
 ms.date: 03/14/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,22 +14,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c80c5ec1af0129486c465075209cfb39dbe2476a
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324258"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857410"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Creación de una aplicación sencilla con Visual Basic
 
 Tras completar este tutorial, estará familiarizado con muchas de las herramientas, cuadros de diálogo y diseñadores que puede usar para desarrollar aplicaciones con Visual Studio. Creará una aplicación "Hola mundo", diseñará la interfaz de usuario, agregará código y depurará errores, mientras aprende a trabajar en el entorno de desarrollo integrado ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
+
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) para instalarlo de forma gratuita.
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
+
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>Configurar el IDE
@@ -47,7 +53,7 @@ Una vez que se haya iniciado Visual Studio, verá las ventanas de herramientas, 
 
 ::: moniker range=">=vs-2019"
 
-Al iniciar Visual Studio, la primera ventana que se abre es la de inicio. Haga clic en **Continuar sin código** para abrir el entorno de desarrollo. Se mostrarán las ventanas de herramientas, los menús, las barras de herramientas y el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio central de la ventana de la aplicación. Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.
+Al iniciar Visual Studio, la primera ventana que se abre es la de inicio. Haga clic en **Continuar sin código** para abrir el entorno de desarrollo. Se mostrarán las ventanas de herramientas, los menús, las barras de herramientas y el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con un cuadro de búsqueda, la barra de menús y la barra de herramientas estándar en la parte superior. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio central de la ventana de la aplicación. Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.
 
 ::: moniker-end
 
@@ -55,35 +61,36 @@ Al iniciar Visual Studio, la primera ventana que se abre es la de inicio. Haga 
 
 Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una solución. Para este ejemplo, creará un proyecto de Windows Presentation Foundation (WPF).
 
+::: moniker range="vs-2017"
+
 1. Cree un nuevo proyecto. En la barra de menús, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
-     ::: moniker range="vs-2017"
      ![En la barra de menús, elija Archivo, Nuevo, Proyecto](../media/exploreide-filenewproject.png)
-     ::: moniker-end
-     ::: moniker range=">=vs-2019"
-     ![En la barra de menús, elija Archivo, Nuevo, Proyecto](../media/vs-2019/exploreide-filenewproject-vs2019.png)
-     ::: moniker-end
 
-::: moniker range="vs-2017"
 2. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual Basic** > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)**. Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
 
      ![Plantilla de aplicación de WPF en el cuadro de diálogo Nuevo proyecto de Visual Studio](media/exploreide-newproject-vb.png)
+
+Visual Studio crea el proyecto HelloWPFApp y la solución, y el **Explorador de soluciones** muestra los distintos archivos. **WPF Designer** muestra una vista de diseño y una vista XAML de *MainWindow.xaml* en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas. Puede elegir ver solo la vista visual o solo la vista XAML. Los elementos siguientes aparecen en el **Explorador de soluciones**:
+
+![Explorador de soluciones con los archivos HelloWPFApp cargados](../media/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
-::: moniker range=">=vs-2019"
+
+::: moniker range="vs-2019"
+
+1. Abra Visual Studio 2019.
+
 2. En la pantalla **Crear un nuevo proyecto**, busque "WPF", elija **Aplicación de WPF (.NET Framework)** y haga clic en **Siguiente**.
 
    ![Plantilla de aplicación de WPF en el cuadro de diálogo Nuevo proyecto de Visual Studio](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
 3. En la pantalla siguiente, asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Crear**.
-::: moniker-end
 
 Visual Studio crea el proyecto HelloWPFApp y la solución, y el **Explorador de soluciones** muestra los distintos archivos. **WPF Designer** muestra una vista de diseño y una vista XAML de *MainWindow.xaml* en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas. Puede elegir ver solo la vista visual o solo la vista XAML. Los elementos siguientes aparecen en el **Explorador de soluciones**:
 
-::: moniker range="vs-2017"
-![Explorador de soluciones con los archivos HelloWPFApp cargados](../media/exploreide-hellowpfappfiles.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
 ![Explorador de soluciones con los archivos HelloWPFApp cargados](../media/vs-2019/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
 
 > [!NOTE]
@@ -109,7 +116,7 @@ Agregaremos tres tipos de controles a esta aplicación: un control <xref:System.
 
 ### <a name="add-a-textblock-control"></a>Agregar un control TextBlock
 
-1.  Escriba **Ctrl**+**Q** para invocar a **Inicio rápido** y escriba **Cuadro de herramientas**. Elija **Ver > Cuadro de herramientas** en la lista de resultados.
+1.  Presione **Ctrl**+**Q** para activar el cuadro de búsqueda y escriba **cuadro de herramientas**. Elija **Ver > Cuadro de herramientas** en la lista de resultados.
 
 2. En el **Cuadro de herramientas**, expanda el nodo **Controles WPF comunes** para ver el control TextBlock.
 
