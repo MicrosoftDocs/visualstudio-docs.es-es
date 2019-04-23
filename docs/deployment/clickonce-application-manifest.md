@@ -15,28 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2da8014d35cd37fddf1a78c494b973ea206affc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: be9bfe19b92740d6be6c91802d193bf2fc401847
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609483"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653664"
 ---
 # <a name="clickonce-application-manifest"></a>Manifiesto de aplicación ClickOnce
 Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación es un archivo XML que describe una aplicación que se implementa mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos de aplicación tienen los siguientes elementos y atributos.
 
-
 | Elemento | Descripción | Atributos |
 | - | - | - |
-| [\<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md) | Obligatorio. Elemento de nivel superior. | `manifestVersion` |
-| [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md) | Obligatorio. Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
-| [\<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md) | Identifica los requisitos de seguridad de la aplicación. | Ninguna |
-| [\<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md) | Obligatorio. Identifica el punto de entrada de código de aplicación. | `name` |
-| [\<dependencia > elemento](../deployment/dependency-element-clickonce-application.md) | Obligatorio. Identifica cada dependencia necesaria para que se ejecute la aplicación. Identifica opcionalmente los ensamblados que se tienen que preinstalar. | Ninguna |
+| [\<assembly> Element](../deployment/assembly-element-clickonce-application.md) | Obligatorio. Elemento de nivel superior. | `manifestVersion` |
+| [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-application.md) | Obligatorio. Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
+| [\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md) | Identifica los requisitos de seguridad de la aplicación. | Ninguna |
+| [\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md) | Obligatorio. Identifica el punto de entrada de código de aplicación. | `name` |
+| [\<dependency> Element](../deployment/dependency-element-clickonce-application.md) | Obligatorio. Identifica cada dependencia necesaria para que se ejecute la aplicación. Identifica opcionalmente los ensamblados que se tienen que preinstalar. | Ninguna |
 | [Elemento \<file>](../deployment/file-element-clickonce-application.md) | Opcional. Identifica cada archivo nonassembly utilizado por la aplicación. Puede incluir datos de aislamiento del modelo de objetos componentes (COM) asociados al archivo. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md) | Opcional. Identifica una extensión de archivo que se asociará con la aplicación. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<fileAssociation> Element](../deployment/fileassociation-element-clickonce-application.md) | Opcional. Identifica una extensión de archivo que se asociará con la aplicación. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
 ## <a name="remarks"></a>Comentarios
  El [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] archivo de manifiesto de aplicación identifica una aplicación implementada mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Para obtener más información sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vea [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md).
@@ -44,7 +43,7 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto 
 ## <a name="file-location"></a>Ubicación del archivo
  Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación es específico para una única versión de una implementación. Por este motivo, deben almacenarse por separado de los manifiestos de implementación. La convención común es colocarlos en un subdirectorio con el nombre de la versión asociada.
 
- El manifiesto de aplicación siempre debe estar firmado antes de la implementación. Si cambia un manifiesto de aplicación manualmente, debe usar *mage.exe* para volver a firmar el manifiesto de aplicación, puede actualizar el manifiesto de implementación y, a continuación, volver a firmar el manifiesto de implementación. Para obtener más información, consulte [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ El manifiesto de aplicación siempre debe estar firmado antes de la implementación. Si cambia un manifiesto de aplicación manualmente, debe usar *mage.exe* para volver a firmar el manifiesto de aplicación, puede actualizar el manifiesto de implementación y, a continuación, volver a firmar el manifiesto de implementación. Para obtener más información, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="file-name-syntax"></a>Sintaxis de los nombres de archivo
  El nombre de un archivo de manifiesto de aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] debe ser el nombre completo y la extensión de la aplicación según se identifica en el elemento `assemblyIdentity`, seguido por la extensión *.manifest*. Por ejemplo, un manifiesto de aplicación que hace referencia a la *Example.exe* aplicación utilizaría la siguiente sintaxis de nombre de archivo.

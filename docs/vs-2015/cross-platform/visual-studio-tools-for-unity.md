@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: e91bfef287a16db45ada783a4e109781d247ecf2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775277"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657485"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En esta sección conocerá Visual Studio Tools para Unity, una extensión gratuita que convierte Visual Studio en una herramienta eficaz para la compilación de juegos con Unity.  
   
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools para Unity  
@@ -42,7 +41,7 @@ En esta sección conocerá Visual Studio Tools para Unity, una extensión gratui
  En esta sección aprenderá a utilizar las características de productividad e integración de Visual Studio Tools para Unity y cómo utilizar al depurador de Visual Studio para el desarrollo en Unity.  
   
  [Programación de Visual Studio Tools para Unity](../cross-platform/programming-visual-studio-tools-for-unity.md)  
- En esta sección encontrará ejemplos de uso de Visual Studio Tools para la API de Unity.  
+ En esta sección encontrará ejemplos de uso de la API de Visual Studio Tools para Unity.  
   
  [Solución de problemas y problemas conocidos](../cross-platform/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md)  
  En esta sección encontrará soluciones a problemas comunes con Visual Studio Tools para Unity y descripciones de problemas conocidos. Asimismo descubrirá cómo puede ayudar a mejorar Visual Studio Tools para Unity mediante la notificación de errores.  

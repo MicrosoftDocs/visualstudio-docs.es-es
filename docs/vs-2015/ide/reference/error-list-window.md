@@ -16,17 +16,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785776"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658154"
 ---
 # <a name="error-list-window"></a>Lista de errores (ventana)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 NOTA]
 >  La Lista de errores muestra información sobre un mensaje de error específico. Puede copiar el número de error o el texto de la cadena de error de la ventana de salida. Para mostrar la ventana de salida, presione Ctrl+Alt+O. Vea [Ventana de salida](../../ide/reference/output-window.md).  
   
@@ -58,14 +57,14 @@ NOTA]
   
  Puede limitar el ámbito de búsqueda para analizar y actuar en grupos de errores. Por ejemplo, puede que desee centrarse en los errores más importantes que están impidiendo que un proyecto se compile. Entre las opciones para delimitar el ámbito se incluyen las siguientes:  
   
-1. **Documentos abiertos**: muestra los errores, las advertencias y los mensajes de los documentos abiertos.  
+1. **Documentos abiertos**: Muestra los errores, las advertencias y los mensajes de los documentos abiertos.  
   
-2. **Proyecto actual**: muestra los errores, las advertencias y los mensajes del proyecto del documento seleccionado actualmente en el **Editor** o del proyecto seleccionado en el **Explorador de soluciones**.  
+2. **Proyecto actual**: Muestra los errores, las advertencias y los mensajes del proyecto del documento seleccionado actualmente en el **Editor** o del proyecto seleccionado en **Explorador de soluciones**.  
   
    > [!NOTE]
    >  La lista filtrada de errores, advertencias y mensajes cambia si el proyecto del documento seleccionado actualmente es diferente al proyecto seleccionado en el **Explorador de soluciones**.  
   
-3. **Documento actual**: muestra los errores, las advertencias y los mensajes del documento seleccionado actualmente en el **Editor** o en el **Explorador de soluciones**.  
+3. **Documento actual**: Muestra los errores, las advertencias y los mensajes del documento seleccionado actualmente en **Editor** o **Explorador de soluciones**.  
   
    Si se aplica un filtro actualmente al resultado de la búsqueda, el nombre del filtro aparece en la barra de título de **Lista de errores**. Después, los botones **Errores**, **Advertencias** y **Mensajes** muestran el número de elementos filtrados junto con el número total de elementos, por ejemplo, los botones muestran x de y errores. Si no se aplica ningún filtro, en la barra de título solo aparece "Lista de errores”.  
   

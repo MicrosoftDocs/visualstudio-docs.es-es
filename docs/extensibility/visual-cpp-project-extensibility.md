@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 94f61902090c2ada0770a41375d5cb501b92580f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268725"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660744"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidad y el conjunto de herramientas de integración de Project
 
@@ -285,7 +285,6 @@ MSBuild proporciona estas clases auxiliares para leer y escribir archivos .tlog:
 El [FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata) clase puede utilizarse para tener acceso tanto de lectura y escribir archivos .tlog e identificar las entradas que son más recientes que da como resultado, o si falta una salida. Se utiliza en la comprobación de actualización.
 
 Archivos .tlog de línea de comandos contienen información acerca de las líneas de comandos que se usará en la compilación. Solo se usan para las compilaciones incrementales, las comprobaciones no actualizadas, por lo que el formato interno viene determinada por la tarea de MSBuild que los genera.
-
 
 ### <a name="read-tlog-format"></a>Formato de lectura .tlog
 

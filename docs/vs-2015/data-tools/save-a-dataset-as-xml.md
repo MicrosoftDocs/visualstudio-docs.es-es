@@ -19,17 +19,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49fb600b2c27725eb6fe888aa2a41a6b19c123b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3e155b33c501326be3d3dcc89fb6b73d501556be
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997151"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657852"
 ---
 # <a name="save-a-dataset-as-xml"></a>Guardar un conjunto de datos como XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Los datos XML en un conjunto de datos pueden tener acceso mediante una llamada a los métodos XML disponibles en el conjunto de datos. Para guardar los datos en formato XML, puede llamar el <xref:System.Data.DataSet.GetXml%2A> método o la <xref:System.Data.DataSet.WriteXml%2A> método de un <xref:System.Data.DataSet>.  
   
  Una llamada a la <xref:System.Data.DataSet.GetXml%2A> método devuelve una cadena que contiene los datos de todas las tablas de datos del conjunto de datos con formato XML.  

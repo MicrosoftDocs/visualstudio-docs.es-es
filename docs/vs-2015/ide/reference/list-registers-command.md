@@ -15,17 +15,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fadd5429b351eb2393aa0823dec133749b32c83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f9eaa1299ec49cf20713723e822f8fc641401d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763044"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658544"
 ---
 # <a name="list-registers-command"></a>Mostrar registros (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Muestra el valor de los registros seleccionados y permite modificar la lista de registros que se van a mostrar.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -67,5 +66,5 @@ r /Display Flags
   
 ## <a name="see-also"></a>Vea también  
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Fundamentos de la depuración: ventana Registros](../../debugger/debugging-basics-registers-window.md)   
- [Cómo: Usar la ventana Registros](../../debugger/how-to-use-the-registers-window.md)
+ [Fundamentos de la depuración: Ventana registros](../../debugger/debugging-basics-registers-window.md)   
+ [Cómo: Uso de la ventana Registros](../../debugger/how-to-use-the-registers-window.md)

@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988174"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657264"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Mostrar datos relacionados en aplicaciones WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En algunas aplicaciones, es posible que desea trabajar con datos procedentes de varias tablas o entidades que se relacionan entre sí en una relación de elementos primarios y secundarios. Por ejemplo, desea mostrar una cuadrícula que muestra los clientes de un `Customers` tabla. Cuando el usuario selecciona un cliente específico, otra cuadrícula muestra los pedidos para ese cliente desde un relacionados `Orders` tabla.  
   
  Puede crear controles enlazados a datos que muestran datos relacionados arrastrando elementos desde la **orígenes de datos** ventana hasta WPF Designer.  

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Usar el Diseñador de esquemas XML con literales XML | Documentos de Microsoft
+title: Procedimiento Usar el Diseñador de esquemas XML con literales XML | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 630505b317d5d8671a8214701cd2af13bfa40482
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7855a5dc8c6524dd28a730a81df1c291e04ec466
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998531"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653611"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Filtrar Usar el Diseñador de esquemas XML con literales XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedimiento Usar el Diseñador de esquemas XML con literales XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En este tema se explica cómo ver un esquema asociado a un literal XML en un proyecto Visual Basic.  
   
 ### <a name="to-create-a-new-visual-basic-console-application-project"></a>Para crear un proyecto para una aplicación de consola de Visual Basic  

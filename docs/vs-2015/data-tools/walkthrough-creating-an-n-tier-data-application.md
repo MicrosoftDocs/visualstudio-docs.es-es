@@ -17,17 +17,16 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3185a6b7ebe4f5f37428e04f1b4215431921c51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d48cea795cbbe3b7cc749c5866bfd5e720ac768a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994753"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654690"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Tutorial: Creación de una aplicación de datos de n niveles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-aplicaciones de datos de nivel * son aplicaciones que acceden a datos y se dividen en varias capas lógicas, o *niveles*. Al separar los componentes de la aplicación en estos niveles individuales, se aumenta la facilidad de mantenimiento y la escalabilidad de la aplicación. Esto se consigue mediante una integración más sencilla de nuevas tecnologías, que se pueden aplicar a un solo nivel sin necesidad de volver a diseñar la solución completa. Una arquitectura típica con n niveles incluye un nivel de presentación, un nivel intermedio y una capa de datos. El nivel intermedio incluye normalmente una capa de acceso a datos, una capa de la lógica empresarial y componentes compartidos, tales como autenticación y validación. La capa de datos incluye una base de datos relacional. Las aplicaciones con n niveles normalmente almacenan la información confidencial en la capa de acceso a datos del nivel intermedio para aislar esa información de los usuarios finales que obtienen acceso al nivel de presentación. Para obtener más información, consulte [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).  
   
  Una manera de separar los distintos niveles de una aplicación con n niveles consiste en crear proyectos independientes para cada nivel que se desee incluir en la aplicación. Los conjuntos de datos con tipo contienen una propiedad `DataSet Project` que determina en qué proyectos deben ir el conjunto de datos y el código de `TableAdapter` generados.  

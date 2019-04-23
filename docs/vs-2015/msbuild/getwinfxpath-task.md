@@ -19,17 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3587cb1308c5d85cebc57f759ab488cb205cddf0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 846eb1ca1c63ee8dad88d31bbc574ef6d71efc4b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778904"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657750"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> devuelve el directorio del runtime [!INCLUDE[TLA#tla_winfx](../includes/tlasharptla-winfx-md.md)] actual.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  

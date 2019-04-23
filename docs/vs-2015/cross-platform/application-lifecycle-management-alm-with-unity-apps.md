@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: b37f379fc60a260e7c16e87d7c1553429e73fbad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c4f431dba7f9732333812f64b44db52358071996
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778596"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658804"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con aplicaciones de Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El desarrollo de aplicaciones para plataformas modernas implica muchas otras actividades, además de escribir código. Estas actividades, denominadas DevOps (desarrollo + operaciones), abarcan el ciclo de vida completo de una aplicación e incluyen la planeación y el seguimiento del trabajo, el diseño y la implementación del código, la administración de un repositorio de código fuente, las compilaciones, la administración de integraciones e implementaciones continuas, las pruebas (incluidas las pruebas unitarias y las pruebas de la interfaz de usuario), la ejecución de diversas formas de diagnóstico tanto en entornos de desarrollo como de producción y la supervisión del rendimiento de la aplicación y del comportamiento de los usuarios en tiempo real mediante telemetría y análisis.  
   
  Visual Studio, Visual Studio Team Services y Team Foundation Server ofrecen una variedad de capacidades de DevOps, también llamada administración del ciclo de vida de las aplicaciones o ALM. Muchas de ellas son aplicables a proyectos de varias plataformas, incluidos los juegos y las aplicaciones gráficas inmersivas creados con Unity, especialmente cuando se usa C# como un lenguaje de scripting. Sin embargo, dado que Unity tiene su propio entorno de desarrollo y motor en tiempo de ejecución, hay una serie de características de ALM que no se aplican como lo harían en otros tipos de proyectos generados en Visual Studio.  
@@ -42,7 +41,7 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 ## <a name="modeling"></a>Modelado  
  Vínculo de referencia: **[Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)**  
   
- Comentario general: aunque estas características de diseño son independientes del lenguaje de codificación o funcionan con lenguajes .NET como C#, operan en un paradigma de aplicaciones tradicional con jerarquías de objetos y relaciones de clases. Diseñar un juego en Unity implica todo un paradigma diferente, como por ejemplo, relaciones de objetos gráficos, sonidos, sombreadores y scripts. Por este motivo, las herramientas del diagrama de modelado de Visual Studio no son especialmente relevantes para la totalidad de un proyecto de Unity. Posiblemente se podrían usar para administrar las relaciones entre scripts C#, pero eso es solo una parte del conjunto.  
+ Comentario general: Aunque estas características de diseño son independientes del lenguaje de codificación o trabajan con lenguajes .NET como C#, operan en un paradigma de aplicaciones tradicional con jerarquías de objetos y relaciones de clases. Diseñar un juego en Unity implica todo un paradigma diferente, como por ejemplo, relaciones de objetos gráficos, sonidos, sombreadores y scripts. Por este motivo, las herramientas del diagrama de modelado de Visual Studio no son especialmente relevantes para la totalidad de un proyecto de Unity. Posiblemente se podrían usar para administrar las relaciones entre scripts C#, pero eso es solo una parte del conjunto.  
   
 |Característica|Compatible con Unity|Comentarios adicionales|  
 |-------------|--------------------------|-------------------------|  
@@ -74,7 +73,7 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 3.  Los activos binarios de un proyecto de Unity, como las texturas o los archivos de audio, pueden ocupar una gran cantidad de almacenamiento. Varios sistemas de control de código fuente como Git almacenan una única copia de un archivo por cada cambio realizado, incluso si el cambio afecta solo a una pequeña parte del archivo. Esto puede hacer que el repositorio Git se infle. Para solucionar este problema, los desarrolladores de Unity a menudo optan por agregar solo los activos finales al repositorio y usar varios métodos para mantener un historial de trabajo de sus activos, como OneDrive, DropBox o git-annex. Este enfoque funciona porque normalmente no es necesario crear versiones de dichos activos conforme se realizan cambios en el código fuente. Los desarrolladores también suelen establecer el modo de serialización de activos del editor del proyecto en Forzar texto para almacenar archivos de escenas como texto en lugar de hacerlo en formato binario, lo que permite hacer combinaciones en el control de código fuente. Para más detalles, vea [Editor Settings](http://docs.unity3d.com/Manual/class-EditorManager.html) (Configuración del editor, documentación de Unity).  
   
 ## <a name="build"></a>Compilar  
- Vínculo de referencia: **[Compilar](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Vínculo de referencia: **[Compilación](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Característica|Compatible con Unity|Comentarios adicionales|  
 |-------------|--------------------------|-------------------------|  
@@ -85,7 +84,7 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 |Integración continua, incluidas entradas validadas|Sí|Entradas validadas para TFVC solo cuando GIT funciona en un modelo de solicitud de extracción en lugar de entradas.|  
   
 ## <a name="testing"></a>Pruebas  
- Vínculo de referencia: **[Testing the application (Probar la aplicación)](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Vínculo de referencia: **[Probar la aplicación](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Característica|Compatible con Unity|Comentarios adicionales|  
 |-------------|--------------------------|-------------------------|  
@@ -108,7 +107,7 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 |[Analizar problemas de memoria de .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono (usado por Unity) para la generación de perfiles. Use el [generador de perfiles de Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentación de Unity).|  
   
 ## <a name="release-management"></a>Administración de versiones  
- Vínculo de referencia: **[Automate deployments with Release Management (Automatizar implementaciones con Release Management)](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ Vínculo de referencia: **[Automatizar implementaciones con Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Característica|Compatible con Unity|Comentarios adicionales|  
 |-------------|--------------------------|-------------------------|  

@@ -11,17 +11,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91e2992a5c1a79f838e035b5993bf21dbfeca1bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f59a6007ca272c2bd0df0278605ff5d01807ce91
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797113"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660149"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Cuadro de diálogo Opciones, Proyectos y soluciones, Proyectos web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Establece el servidor web que se va a usar para el desarrollo en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obtener acceso a este cuadro de diálogo, haga clic en **Opciones de herramientas**. Expanda **Proyectos y Soluciones** y, después, haga clic en **Proyectos web**.  
   
  De forma predeterminada, cuando se ejecuta un proyecto web en Visual Studio (por ejemplo, mediante F5 o CTRL+F5), Visual Studio utiliza el servidor de desarrollo de Visual Studio. Para obtener más información, vea [Servidores web en Visual Studio para proyectos web ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  

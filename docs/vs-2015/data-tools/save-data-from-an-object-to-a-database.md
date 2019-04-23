@@ -18,17 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988483"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659025"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Guardar los datos de un objeto en una base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede guardar datos de objetos de una base de datos pasando los valores desde el objeto a uno de los métodos DBDirect del TableAdapter (por ejemplo, `TableAdapter.Insert`).
   
  Para guardar los datos de una colección de objetos, recorra en iteración la colección de objetos (por ejemplo, un bucle for-next) y envíe los valores para cada objeto a la base de datos mediante uno de los métodos DBDirect del TableAdapter.  

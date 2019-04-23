@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3ebfcd9ad335cf95894aa916412da1a91cf008
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995561"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660975"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>No se puede crear una asociación &lt;nombre de asociación&gt;; la propiedad aparece dos veces.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 No se puede crear una asociación \<nombre de asociación>. La misma propiedad aparece más de una vez: \<nombre de propiedad>.  
   
  Las asociaciones las define el comando **Propiedades de la asociación** seleccionado en el cuadro de diálogo **Editor de asociaciones**. Las propiedades pueden aparecer solamente una vez para cada clase en la asociación.  

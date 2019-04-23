@@ -17,17 +17,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2328b318c00b214138cf70e505c1988f8f1afc6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 75c1a94e9db6e1a141668f6ba314c39cedc3fd6c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802207"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655912"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Reanuda el seguimiento en el contexto actual.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -37,10 +36,10 @@ HRESULT WINAPI ResumeTracking();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Un elemento [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con el conjunto de bits [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) si el seguimiento se ha reanudado. Se devuelve [E_FAIL](<!-- TODO: review code entity reference <xref:assetId:///E_FAIL?qualifyHint=False&amp;autoUpgrade=True>  -->) si el seguimiento no se puede reanudar porque el contexto no estaba disponible.  
+ Una ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con el ([correcto]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) conjunto de bits si se ha reanudado el seguimiento. [E_FAIL](<!-- TODO: review code entity reference <xref:assetId:///E_FAIL?qualifyHint=False&amp;autoUpgrade=True>  -->) se devuelve si no se puede reanudar seguimiento porque el contexto no estaba disponible.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** FileTracker.h  
+ **Encabezado**: FileTracker.h  
   
 ## <a name="see-also"></a>Vea también  
  [SuspendTracking](../msbuild/suspendtracking.md)

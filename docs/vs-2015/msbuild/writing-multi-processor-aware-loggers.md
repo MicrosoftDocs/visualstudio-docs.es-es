@@ -13,17 +13,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8efc470db346e4de9036a5869c0118b68ea76f81
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ec8cefeaf005c17ecb09d109c161b5cbae3dc03a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802294"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655353"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Escribir registradores que reconocen varios procesadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La capacidad de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para aprovechar las ventajas de varios procesadores puede disminuir el tiempo de compilación de los proyectos, pero también agrega complejidad al registro de eventos de compilación. En un entorno de un solo procesador, los eventos, mensajes, advertencias y errores llegan al registrador de una manera predecible y secuencial. Sin embargo, en un entorno de varios procesadores, pueden llegar eventos de orígenes diferentes al mismo tiempo o desordenados. Para solucionar este asunto, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] dispone de un registrador que reconoce varios procesadores y un nuevo modelo de registro, y permite crear "registradores de reenvío" personalizados.  
   
 ## <a name="multi-processor-logging-challenges"></a>Dificultades del registro de varios procesadores  

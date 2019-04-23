@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 129b94087b19ebed9f95ec29dd093f3c18e42e87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1f5dced1acba79b0559db49f079e04f605263e0f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988086"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653481"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Iniciar una sesión de depuración para aplicaciones de la Tienda en Visual Studio (VB, C#, C++ y XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -256,13 +256,11 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 2. Elige una de las opciones siguientes de la lista:
 
-
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **Equipo local**  |                                                                                                                Depura la aplicación en la sesión actual en el equipo local. Consulte [ejecución Windows Store apps en el equipo local](../debugger/run-windows-store-apps-on-the-local-machine.md).                                                                                                                 |
    |   **Simulador**    | Depura la aplicación en el simulador de Visual Studio para aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] . El simulador es una ventana del escritorio que te permite depurar la funcionalidad del dispositivo (por ejemplo, gestos táctiles y de rotación de dispositivos) que no está disponible en el equipo local. Consulte [ejecución Windows Store apps en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md). |
    | **Equipo remoto** |                          Depura la aplicación en un dispositivo que esté conectado al equipo local a través de la intranet o directamente mediante un cable Ethernet. Para depurar remotamente, las Herramientas remotas de Visual Studio deben estar instaladas y ejecutándose en el dispositivo remoto. Consulte [ejecución Windows Store apps en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).                           |
-
 
 3. Elige la aplicación en la lista **Paquetes de aplicaciones instalados** .
 

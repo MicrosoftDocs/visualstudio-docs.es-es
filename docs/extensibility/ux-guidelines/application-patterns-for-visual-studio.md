@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MT
+ms.openlocfilehash: c498fd10403bcb6b62552c30fe3a92b71ded4944
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796886"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659792"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicación para Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interacciones de ventana
@@ -115,7 +115,7 @@ Ejemplos de ventanas de herramientas de lista navegable son el Explorador de sol
 
 | Ventana de herramientas | Función |
 | --- | --- |
-| Ayuda | Una ventana que permite a los usuarios acceso a los distintos métodos de obtención de Ayuda de "¿cómo?" vídeos a los foros MSDN. |
+| Help | Una ventana que permite a los usuarios acceso a los distintos métodos de obtención de Ayuda de "¿cómo?" vídeos a los foros MSDN. |
 | Ayuda dinámica | Una ventana de herramientas que muestra vínculos a temas que se aplica a la selección actual de ayuda. |
 | Examinador de objetos | Un conjunto de marcos de dos columnas con una lista de componentes de objetos jerárquico en el panel izquierdo y el objeto propiedades y métodos en la columna derecha. |
 
@@ -417,7 +417,7 @@ No utilice las teclas de acceso para **Aceptar**, **cancelar**, o **ayuda** boto
 | --- | --- |
 | Aceptar | Entrar |
 | Cancelar | Esc |
-| Ayuda | F1 |
+| Help | F1 |
 
 #### <a name="imagery"></a>Imágenes
 Usar imágenes con moderación en los cuadros de diálogo. No utilizar iconos grandes en los cuadros de diálogo simplemente para usar un espacio. Usar imágenes solo si son una parte importante de transmitir el mensaje al usuario, como iconos de advertencia o animaciones de estado.
@@ -521,55 +521,54 @@ El usuario siempre debe ser capaz de determinar el efecto de una operación de a
 | --- | --- | --- | --- |
 | Ningún modificador | Acción | Mover | Link |
 | Ningún modificador | Destino | Agrega la referencia al elemento original | Agrega la referencia al elemento original |
-| Ningún modificador | Origen | Referencia de eliminaciones al elemento original | Conserva el elemento original |
+| Ningún modificador | Source | Referencia de eliminaciones al elemento original | Conserva el elemento original |
 | Ningún modificador | Resultado | `DROPEFFECT_MOVE` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento | `DROPEFFECT_LINK` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento |
 | Mayús + arrastrar | Acción | Mover | No colocar |
 | Mayús + arrastrar | Destino | Agrega la referencia al elemento original | No colocar |
-| Mayús + arrastrar | Origen | Referencia de eliminaciones al elemento original | No colocar |
+| Mayús + arrastrar | Source | Referencia de eliminaciones al elemento original | No colocar |
 | Mayús + arrastrar | Resultado | `DROPEFFECT_MOVE` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento | No colocar |
 | CTRL + arrastrar | Acción | Copiar | No colocar |
 | CTRL + arrastrar | Destino | Agrega la referencia al elemento original | No colocar |
-| CTRL + arrastrar | Origen | Conserva la referencia al elemento original | No colocar |
+| CTRL + arrastrar | Source | Conserva la referencia al elemento original | No colocar |
 | CTRL + arrastrar | Resultado | `DROPEFFECT_COPY` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento | No colocar |
 | Ctrl + Mayús + arrastrar | Acción | Link | Link |
 | Ctrl + Mayús + arrastrar | Destino | Agrega la referencia al elemento original | Agrega la referencia al elemento original |
-| Ctrl + Mayús + arrastrar | Origen | Conserva la referencia al elemento original | Conserva el elemento original |
+| Ctrl + Mayús + arrastrar | Source | Conserva la referencia al elemento original | Conserva el elemento original |
 | Ctrl + Mayús + arrastrar | Resultado | `DROPEFFECT_LINK` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento | `DROPEFFECT_LINK` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento |
 | Ctrl + Mayús + arrastrar | Nota | Igual que el comportamiento de arrastrar y colocar para los accesos directos en el Explorador de Windows. ||
 | Cortar y pegar | Acción | Mover | Link |
 | Cortar y pegar | Destino | Agrega la referencia al elemento original | Agrega la referencia al elemento original |
-| Cortar y pegar | Origen | Conserva la referencia al elemento original|Conserva el elemento original |
+| Cortar y pegar | Source | Conserva la referencia al elemento original|Conserva el elemento original |
 | Cortar y pegar | Resultado | Elemento permanece en la ubicación original en el almacenamiento | Elemento permanece en la ubicación original en el almacenamiento |
 | Copiar y pegar | Acción | Copiar | Link |
-| Copiar y pegar | Origen | Agrega la referencia al elemento original | Agrega la referencia al elemento original |
+| Copiar y pegar | Source | Agrega la referencia al elemento original | Agrega la referencia al elemento original |
 | Copiar y pegar | Resultado | Conserva la referencia al elemento original | Conserva el elemento original |
 | Copiar y pegar | Acción | Elemento permanece en la ubicación original en el almacenamiento | Elemento permanece en la ubicación original en el almacenamiento |
 
 #### <a name="directory-based-projects"></a>Proyectos basados en el directorio
 En la tabla siguiente se resume las operaciones de arrastrar y colocar (así como cortar/copiar/pegar) que deben realizarse según la naturaleza de las claves de elemento y el modificador de origen presionado para proyectos de destino basado en el directorio:
 
-
 | Modificador | Categoría | Elemento de origen: Referencia o vínculo | Elemento de origen: Sistema de elemento o el archivo físico (`CF_HDROP`) |
 |-----------------|----------| - | - |
 | Ningún modificador | Acción | Mover | Mover |
 | Ningún modificador | Destino | Elemento de copia a la ubicación de destino | Elemento de copia a la ubicación de destino |
-| Ningún modificador | Origen | Referencia de eliminaciones al elemento original | Referencia de eliminaciones al elemento original |
+| Ningún modificador | Source | Referencia de eliminaciones al elemento original | Referencia de eliminaciones al elemento original |
 | Mayús + arrastrar | Acción | Mover | Mover |
 | Mayús + arrastrar | Destino | Elemento de copia a la ubicación de destino | Elemento de copia a la ubicación de destino |
-| Mayús + arrastrar | Origen | Referencia de eliminaciones al elemento original | Elimina el elemento de ubicación original |
+| Mayús + arrastrar | Source | Referencia de eliminaciones al elemento original | Elimina el elemento de ubicación original |
 | Mayús + arrastrar | Resultado | `DROPEFFECT_MOVE` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento | `DROPEFFECT_MOVE` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento |
 | CTRL + arrastrar | Acción | Copiar | Copiar |
 | CTRL + arrastrar | Destino | Elemento de copia a la ubicación de destino | Elemento de copia a la ubicación de destino |
-| CTRL + arrastrar | Origen | Conserva la referencia al elemento original | Conserva la referencia al elemento original |
+| CTRL + arrastrar | Source | Conserva la referencia al elemento original | Conserva la referencia al elemento original |
 | CTRL + arrastrar | Resultado | `DROPEFFECT_COPY` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento | `DROPEFFECT_COPY` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento |
 | Ctrl + Mayús + arrastrar | | No colocar | No colocar |
 | Cortar y pegar | Acción | Mover | Mover |
 | Cortar y pegar | Destino | Elemento de copia a la ubicación de destino | Elemento de copia a la ubicación de destino |
-| Cortar y pegar | Origen | Referencia de eliminaciones al elemento original | Elimina el elemento de ubicación original |
+| Cortar y pegar | Source | Referencia de eliminaciones al elemento original | Elimina el elemento de ubicación original |
 | Cortar y pegar | Resultado | Elemento permanece en la ubicación original en el almacenamiento | Elemento se elimina de la ubicación original en el almacenamiento |
 | Copiar y pegar | Acción | Copiar | Copiar |
 | Copiar y pegar | Destino | Agrega la referencia al elemento original | Elemento de copia a la ubicación de destino |
-| Copiar y pegar | Origen | Conserva el elemento original | Conserva el elemento original |
+| Copiar y pegar | Source | Conserva el elemento original | Conserva el elemento original |
 | Copiar y pegar | Resultado | Elemento permanece en la ubicación original en el almacenamiento | Elemento permanece en el almacenamiento de inicios de ubicación original |
 
 #### <a name="mixed-target-projects"></a>Proyectos destino mixto
@@ -579,27 +578,27 @@ En la tabla siguiente se resume las operaciones de arrastrar y colocar (así com
 | --- | --- | --- | --- |
 | Ningún modificador | Acción | Mover | Mover |
 | Ningún modificador | Destino | Agrega la referencia al elemento original | Elemento de copia a la ubicación de destino |
-| Ningún modificador | Origen | Referencia de eliminaciones al elemento original | Referencia de eliminaciones al elemento original |
+| Ningún modificador | Source | Referencia de eliminaciones al elemento original | Referencia de eliminaciones al elemento original |
 | Ningún modificador | Resultado | `DROPEFFECT_ MOVE` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento | `DROPEFFECT_ MOVE` se devuelve como acción de `::Drop` y elemento se elimina de la ubicación original en el almacenamiento |
 | Mayús + arrastrar | Acción | Mover | Mover |
 | Mayús + arrastrar | Destino | Agrega la referencia al elemento original | Elemento de copia a la ubicación de destino |
-| Mayús + arrastrar | Origen | Referencia de eliminaciones al elemento original | Elimina el elemento de ubicación original |
+| Mayús + arrastrar | Source | Referencia de eliminaciones al elemento original | Elimina el elemento de ubicación original |
 | Mayús + arrastrar | Resultado | `DROPEFFECT_ MOVE` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento | `DROPEFFECT_ MOVE` se devuelve como acción de `::Drop` y elemento se elimina de la ubicación original en el almacenamiento |
 | CTRL + arrastrar | Acción | Copiar | Copiar |
 | CTRL + arrastrar | Destino | Agrega la referencia al elemento original | Elemento de copia a la ubicación de destino |
-| CTRL + arrastrar | Origen | Conserva la referencia al elemento original | Conserva el elemento original |
+| CTRL + arrastrar | Source | Conserva la referencia al elemento original | Conserva el elemento original |
 | CTRL + arrastrar | Resultado | `DROPEFFECT_ COPY` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento | `DROPEFFECT_ COPY` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento |
 | Ctrl + Mayús + arrastrar | Acción | Link | Link |
 | Ctrl + Mayús + arrastrar | Destino | Agrega la referencia al elemento original | Agrega la referencia al elemento de origen original |
-| Ctrl + Mayús + arrastrar | Origen | Conserva la referencia al elemento original | Conserva el elemento original |
+| Ctrl + Mayús + arrastrar | Source | Conserva la referencia al elemento original | Conserva el elemento original |
 | Ctrl + Mayús + arrastrar | Resultado | `DROPEFFECT_ LINK` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento | `DROPEFFECT_ LINK` se devuelve como acción de `::Drop` y elemento permanece en la ubicación original en el almacenamiento |
 | Cortar y pegar | Acción | Mover | Mover |
 | Cortar y pegar | Destino | Elemento de copia a la ubicación de destino | Elemento de copia a la ubicación de destino |
-| Cortar y pegar | Origen | Referencia de eliminaciones al elemento original | Elimina el elemento de ubicación original |
+| Cortar y pegar | Source | Referencia de eliminaciones al elemento original | Elimina el elemento de ubicación original |
 | Cortar y pegar | Resultado | Elemento permanece en la ubicación original en el almacenamiento | Elemento se elimina de la ubicación original en el almacenamiento |
 | Copiar y pegar | Acción | Copiar | Copiar |
 | Copiar y pegar | Destino | Agrega la referencia al elemento original | Elemento de copia a la ubicación de destino |
-| Copiar y pegar | Origen | Conserva el elemento original | Conserva el elemento original |
+| Copiar y pegar | Source | Conserva el elemento original | Conserva el elemento original |
 | Copiar y pegar | Resultado | Elemento permanece en la ubicación original en el almacenamiento | Elemento permanece en la ubicación original en el almacenamiento |
 
 Estos detalles deben tenerse en cuenta al implementar arrastrar en el **el Explorador de soluciones**:

@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24772233f80332ec88030af0d7862b00e5d61655
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2af02842ffc5c498d27578bcff2cb9fdfa0f6e07
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002493"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658856"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas nativas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las reglas recomendadas nativas se centran en los problemas más graves y habituales del código nativo, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación.  Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos nativos.  Este conjunto de reglas está diseñado para funcionar con Visual Studio Professional y versiones posteriores.  
-
 
 |                                      Regla                                      |                                                             Descripción                                                             |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

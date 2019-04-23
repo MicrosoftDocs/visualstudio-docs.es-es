@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856695"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654716"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Depuración de Azure Kubernetes Service de ASP.NET en vivo con Snapshot Debugger
 
@@ -35,9 +35,9 @@ En este tutorial va a:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Snapshot Debugger para Azure Kubernetes Service solo está disponible para Visual Studio 2019 Enterprise en versión preliminar o posterior con la **carga de trabajo de desarrollo de Azure**. (En la pestaña **Componentes individuales**, puede encontrarlo en **Depuración y pruebas** > **Snapshot Debugger**).
+* Depurador de instantáneas de Azure Kubernetes Services solo está disponible para Visual Studio 2019 Enterprise o superior con el **carga de trabajo de desarrollo de Azure**. (En la pestaña **Componentes individuales**, puede encontrarlo en **Depuración y pruebas** > **Snapshot Debugger**).
 
-    Si aún no está instalado, instale [Visual Studio 2019 Enterprise (versión preliminar)](https://visualstudio.microsoft.com/vs/preview/).
+    Si aún no está instalado, instale [Visual Studio Enterprise de 2019](https://visualstudio.microsoft.com/vs/).
 
 * La colección de instantáneas está disponible para las siguientes aplicaciones web de Azure Kubernetes Service:
   * Aplicaciones ASP.NET Core que se ejecutan en .NET Core 2.2 o versiones posteriores en Debian 9.
@@ -121,7 +121,7 @@ Si es difícil volver a crear un estado determinado en la aplicación, considere
 
 ## <a name="set-a-logpoint"></a>Establecer un punto de registro
 
-Además de realizar una instantánea cuando se alcanza un punto de instantánea, también puede configurar un punto de instantánea para registrar un mensaje (es decir, crear un punto de registro). Puede establecer puntos de registro sin tener que volver a implementar la aplicación. Los puntos de registro se ejecutan de forma virtual y no causan ningún impacto o efecto secundario en la aplicación en ejecución.
+Además de realizar una instantánea cuando se alcanza un punto de instantánea, también puede configurar un punto de instantánea para registrar un mensaje (es decir, crear un punto de registro). Puede establecer puntos de registro sin tener que volver a implementar la aplicación. Los puntos de registro se ejecutan de forma práctica y no causan ningún impacto o efecto secundario en la aplicación en ejecución.
 
 #### <a name="to-create-a-logpoint"></a>Para crear un punto de registro
 
@@ -144,4 +144,4 @@ Además de realizar una instantánea cuando se alcanza un punto de instantánea,
 En este tutorial, ha aprendido cómo utilizar Snapshot Debugger para Azure Kubernetes. Es posible que desee obtener más información sobre esta característica.
 
 > [!div class="nextstepaction"]
-> [Preguntas frecuentes sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)
+> [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)

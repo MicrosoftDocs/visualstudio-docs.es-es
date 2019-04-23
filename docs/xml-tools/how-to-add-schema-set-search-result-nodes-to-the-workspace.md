@@ -8,20 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb8e66292a1cdb393401d180bd8b9f8691dc8f0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 406eb2872a2be7127aaf2d37ee654cfe2f58ac3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913933"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654495"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Filtrar Agregar nodos de resultados de búsqueda de conjunto de esquemas al área de trabajo
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procedimiento Adición de nodos de resultados de búsqueda del conjunto de esquemas al área de trabajo
 
 En este tema se explica cómo agregar nodos que están resaltados en la **Explorador de esquemas XML** como resultado de una búsqueda de palabra clave en el área de trabajo.
 
 > [!NOTE]
 > Solo los nodos globales se pueden agregar a la [área de trabajo](../xml-tools/xml-schema-designer-workspace.md).
-
 
  En este ejemplo se utiliza el ejemplo [esquema de pedido de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md).
 

@@ -11,17 +11,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792225"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655015"
 ---
-# <a name="walkthrough-using-msbuild"></a>Tutorial: Usar MSBuild
+# <a name="walkthrough-using-msbuild"></a>Tutorial: Uso de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tutorial presenta los bloques de compilación de MSBuild y muestra la forma de escribir, manipular y depurar los proyectos de MSBuild. Aprenderá a:  
   
 - Crear y manipular un archivo del proyecto  
@@ -41,7 +40,7 @@ MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tu
   
 2.  En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
   
-3.  En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de Visual C# y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, `D:\`. Acepte los valores predeterminados para **Crear directorio para la solución** (seleccionado), **Agregar al Control de código fuente** (no seleccionado) y **Nombre de la solución** (`BuildApp`).  
+3.  En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de Visual C# y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre**, escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, `D:\`. Acepte los valores predeterminados para **Crear directorio para la solución** (seleccionado), **Agregar al Control de código fuente** (no seleccionado) y **Nombre de la solución** (`BuildApp`).  
   
      Haga clic en **Aceptar** para crear el archivo del proyecto.  
   
@@ -242,10 +241,10 @@ $(PropertyName)
  Casi todos elementos de MSBuild pueden tener un atributo Condition. Para obtener más información sobre cómo utilizar el atributo Condition, consulte [Condiciones](../msbuild/msbuild-conditions.md).  
   
 ### <a name="reserved-properties"></a>Propiedades reservadas  
- MSBuild reserva algunos nombres de propiedades para almacenar información sobre el archivo del proyecto y los archivos binarios de MSBuild. MSBuildToolsPath es un ejemplo de una propiedad reservada. Como a cualquier otra propiedad, a las propiedades reservadas se hace referencia con la notación $. Para obtener más información, consulte [Cómo: Hacer referencia al nombre o la ubicación del archivo del proyecto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) y [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ MSBuild reserva algunos nombres de propiedades para almacenar información sobre el archivo del proyecto y los archivos binarios de MSBuild. MSBuildToolsPath es un ejemplo de una propiedad reservada. Como a cualquier otra propiedad, a las propiedades reservadas se hace referencia con la notación $. Para obtener más información, vea [Cómo: Hace referencia al nombre o ubicación del archivo del proyecto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) y [MSBuild propiedades reservadas y conocidas](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ### <a name="environment-variables"></a>Variables de entorno  
- En los archivos del proyecto, se puede hacer referencia a las variables de entorno como si fueran propiedades de compilación. Por ejemplo, para utilizar la variable de entorno PATH en el archivo de proyecto, utilice $(Path). Si el proyecto incluye la definición de una propiedad que tiene el mismo nombre que una variable de entorno, la propiedad del proyecto reemplaza el valor de la variable de entorno. Para obtener más información, consulte [Cómo: Utilizar variables de entorno en una compilación](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ En los archivos del proyecto, se puede hacer referencia a las variables de entorno como si fueran propiedades de compilación. Por ejemplo, para utilizar la variable de entorno PATH en el archivo de proyecto, utilice $(Path). Si el proyecto incluye la definición de una propiedad que tiene el mismo nombre que una variable de entorno, la propiedad del proyecto reemplaza el valor de la variable de entorno. Para obtener más información, vea [Cómo: Usar Variables de entorno en una compilación](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="setting-properties-from-the-command-line"></a>Establecer propiedades desde la línea de comandos  
  Las propiedades se pueden definir en la línea de comandos utilizando el modificador de línea de comandos /property o /p. Los valores de propiedad recibidos desde la línea de comandos invalidan los valores de propiedad establecidos en el archivo del proyecto y las variables de entorno.  
@@ -307,7 +306,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- define un grupo de elementos que contiene dos elementos. El tipo de elemento Compile tiene dos valores: "Program.cs" y "Properties\AssemblyInfo.cs".  
+ define un grupo de elementos que contiene dos elementos. El tipo de elemento Compile tiene dos valores: "Program.cs" y "Properties\AssemblyInfo. cs".  
   
  El código siguiente crea el mismo tipo de elemento declarando ambos archivos en un atributo Include, separados por punto y coma.  
   
@@ -403,7 +402,7 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- agrega todos los archivos con la extensión ".jpeg" de la carpeta images, y todas sus subcarpetas, al tipo de elemento Photos. Para obtener más ejemplos, consulte [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).  
+ agrega todos los archivos con la extensión ".jpeg" de la carpeta images, y todas sus subcarpetas, al tipo de elemento Photos. Para obtener más ejemplos, vea [Cómo: Seleccione los archivos de compilación](../msbuild/how-to-select-the-files-to-build.md).  
   
  Observe que según se declaran elementos se agregan al tipo de elemento. Por ejemplo,  
   
@@ -424,7 +423,7 @@ $(PropertyName)
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- agrega todos los archivos con la extensión ".cs" al tipo de elemento Compile, salvo los archivos cuyos nombres contienen la cadena "Designer". Para obtener más ejemplos, consulte [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).  
+ agrega todos los archivos con la extensión ".cs" al tipo de elemento Compile, salvo los archivos cuyos nombres contienen la cadena "Designer". Para obtener más ejemplos, vea [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).  
   
  El atributo Exclude solamente afecta a los elementos agregados por el atributo Include en el elemento que contiene ambos. Por ejemplo,  
   
@@ -577,7 +576,7 @@ $(PropertyName)
    Observe que los metadatos expresados en esta sintaxis no producen el procesamiento por lotes.  
   
 ## <a name="whats-next"></a>Pasos adicionales  
- Para obtener información sobre cómo crear un archivo del proyecto paso a paso, consulte [Tutorial: Crear un archivo del proyecto de MSBuild desde el principio](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ Para saber cómo crear un sencillo archivo de proyecto paso por paso, pruebe con [Tutorial: Crear un archivo de proyecto de MSBuild desde el principio](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ## <a name="see-also"></a>Vea también
 [Información general sobre MSBuild](msbuild.md)  

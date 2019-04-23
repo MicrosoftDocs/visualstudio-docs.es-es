@@ -19,17 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ec788e9f0ef80a1543aa15f4ff9bfb21daac6123
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6470125656debf420990ed9b471a5303f66d5712
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803474"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654921"
 ---
 # <a name="lc-task"></a>LC (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ajusta LC.exe, que genera un archivo .license de un archivo .licx. Para obtener más información sobre LC.exe, vea [Lc.exe (License Compiler)](http://msdn.microsoft.com/library/2de803b8-495e-4982-b209-19a72aba0460).  
   
 ## <a name="parameters"></a>Parámetros  

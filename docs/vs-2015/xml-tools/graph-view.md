@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988549"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658609"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La vista Gráfico proporciona una representación gráfica de los nodos de esquema globales y de las relaciones entre ellos. Tenga en cuenta que la vista Gráfico no le permite modificar el diseño del conjunto de esquemas en la superficie de diseño. La vista Gráfico también incluye la barra de herramientas del Diseñador de esquemas XML y la barra de ruta de navegación.  
   
  La imagen siguiente muestra la vista Gráfico con seis nodos globales en su superficie de diseño.  

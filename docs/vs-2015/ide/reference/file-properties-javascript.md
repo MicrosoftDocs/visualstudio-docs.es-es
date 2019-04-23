@@ -26,17 +26,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fc7c3202b26e94736f59561c6c13f8350102d7b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780374"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656493"
 ---
 # <a name="file-properties-javascript"></a>Propiedades de archivo, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Puede usar propiedades de archivo para indicar qué acciones debe realizar el sistema del proyecto en los archivos. Por ejemplo, puede establecer propiedades de archivo para indicar si un archivo debe agregarse al paquete como un archivo de recursos.  
   
  Puede seleccionar cualquier archivo del Explorador de soluciones y, después, examinar sus propiedades en la ventana Propiedades. Los archivos de JavaScript tienen cuatro propiedades: **Copiar en el directorio de salida**, **Acción del paquete**, **Nombre de archivo** y **Ruta de acceso del archivo**.  

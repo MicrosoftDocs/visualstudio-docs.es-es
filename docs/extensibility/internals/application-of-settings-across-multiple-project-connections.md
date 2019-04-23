@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7274f0daaf809116dc502a528fce1b540c2c53b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f7d0a13a72613ba72be5a90aa65be991d6ca10b3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620751"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657043"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Aplicación de configuración en varias conexiones de proyecto
 Un complemento de control de origen creados con el origen de Control de complemento de API versión 1.2, puede usar una operación por lotes para ejecutar la misma operación de control de código fuente a través de varios proyectos o varios contextos de conexión. Los lotes pueden utilizarse para eliminar redundantes, cuadros de diálogo de la experiencia del usuario por proyecto.
@@ -31,7 +31,6 @@ Las siguientes funciones nuevas admiten la operación por lotes:
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)
-
 
 El `SCCBeginBatch` función inicia un grupo de operaciones de control de código fuente. El `SccEndBatch` función cierra el grupo. No se pueden anidar los grupos.
 

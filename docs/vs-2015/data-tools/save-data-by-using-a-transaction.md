@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 243170acd838b96efac6521a548596a021893e41
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ba83cf7db6415eefcb989f678bc4149d495016e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997700"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658349"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Guardar datos mediante una transacción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Guardar datos en una transacción mediante la <xref:System.Transactions> espacio de nombres. Use la <xref:System.Transactions.TransactionScope> objeto participe en una transacción que se administra automáticamente.  
   
  Los proyectos no se crean con una referencia al ensamblado System.Transactions, por lo que deberá agregar manualmente una referencia a los proyectos que utilizan transacciones.  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6f2a8b25438d7909f47087b8f6a80e595e7cba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630527"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658404"
 ---
 # <a name="registering-project-and-item-templates"></a>Registro de plantillas para proyectos y elementos
 Tipos de proyecto deben registrar los directorios donde se encuentran sus plantillas de proyecto y elemento de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa la información de registro asociada con los tipos de proyecto para determinar qué se debe mostrar en el **Agregar nuevo proyecto** y **Agregar nuevo elemento** cuadros de diálogo.
@@ -37,7 +37,7 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|nombre|Tipo|Descripción|
+|Name|Tipo|Descripción|
 |----------|----------|-----------------|
 |@|REG_SZ|Nombre predeterminado de los proyectos de este tipo.|
 |DisplayName|REG_SZ|Id. de recurso del nombre que deben recuperarse de la DLL satélite registrados en los paquetes.|
@@ -55,8 +55,7 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "SortPriority"=dword:00000064
 ```
 
-
-| nombre | Tipo | Descripción |
+| Name | Tipo | Descripción |
 |--------------------------|-----------| - |
 | @ | REG_SZ | Identificador de recurso para las plantillas Agregar elemento. |
 | TemplatesDir | REG_SZ | Ruta de acceso de los elementos de proyecto que se muestra en el cuadro de diálogo para la **Agregar nuevo elemento** asistente. |
@@ -83,7 +82,7 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "SortPriority"=dword:00000064
 ```
 
-|nombre|Tipo|Descripción|
+|Name|Tipo|Descripción|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **buscar en archivos** cuadro de diálogo. Los filtros comunes se muestran en la lista de filtros antes de los filtros de marcado no tan comunes.|
 |CommonOpenFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **abrir archivo** cuadro de diálogo. Los filtros comunes se muestran en la lista de filtros antes de los filtros de marcado no tan comunes.|

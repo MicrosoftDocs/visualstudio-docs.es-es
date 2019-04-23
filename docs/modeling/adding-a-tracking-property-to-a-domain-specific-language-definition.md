@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e3c4aabd973a755f2289abfa809df556680070
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944538"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657394"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 
@@ -45,7 +45,6 @@ En este tutorial, creará un lenguaje específico de dominio (DSL) que tiene una
 ## <a name="prerequisites"></a>Requisitos previos
 
 Antes de empezar este tutorial, primero debe instalar estos componentes:
-
 
 | | |
 |-|-|

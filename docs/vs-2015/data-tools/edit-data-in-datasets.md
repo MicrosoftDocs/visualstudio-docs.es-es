@@ -17,17 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998297"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656614"
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Editar tablas de datos al igual que editar los datos en una tabla en cualquier base de datos. El proceso puede incluir insertar, actualizar y eliminar registros en la tabla. En un formulario enlazado a datos, puede especificar cuáles son los campos editables del usuario. En esos casos, la infraestructura de enlace de datos controla todo el seguimiento de cambios para que los cambios se puedan enviar a la base de datos más adelante. Si realiza ediciones mediante programación a los datos y tiene pensado enviar los cambios a la base de datos, debe usar los objetos y métodos que realizan el seguimiento de cambios para usted.  
   
  Además de cambiar los datos reales, también puede consultar un <xref:System.Data.DataTable> para devolver filas específicas de datos. Por ejemplo, podría consultar filas individuales, versiones específicas de filas (originales y propuestas), las filas que han cambiado o filas con errores.  

@@ -19,17 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07215b20da99a02100eeb8781c5a637c3b689e71
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc65715c2e0bc1e6e36e86c1ce8e3cd1b4c81058
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764897"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660351"
 ---
 # <a name="signfile-task"></a>SignFile (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Firma un archivo determinado con el certificado especificado.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -38,7 +37,7 @@ Firma un archivo determinado con el certificado especificado.
  Tenga en cuenta que los certificados SHA-256 solo están permitidos en equipos que tienen .NET 4.5 y versiones posteriores.  
   
 > [!WARNING]
->  A partir de Visual Studio 2013 Update 3, esta tarea tiene una signatura nueva que le permite especificar la versión de la plataforma de destino para el archivo. Le recomendamos utilizar la nueva firma, siempre que sea posible, ya que el proceso de MSBuild solo utiliza hashes SHA-256 cuando la plataforma de destino es .NET 4.5 o una versión posterior. Si la plataforma de destino es .NET 4.0 o una versión anterior, no se utilizará el hash SHA-256.  
+>  A partir de Visual Studio 2013 Update 3, esta tarea tiene una signatura nueva que le permite especificar la versión del marco de trabajo de destino para el archivo. Le recomendamos utilizar la nueva firma, siempre que sea posible, ya que el proceso de MSBuild solo utiliza hashes SHA-256 cuando el marco de trabajo de destino es .NET 4.5 o una versión posterior. Si el marco de trabajo destino es .NET 4.0 o una versión anterior, no se utilizará el hash SHA-256.  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  

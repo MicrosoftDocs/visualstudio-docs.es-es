@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Seleccionar los archivos que se van a compilar | Microsoft Docs'
+title: Procedimiento Seleccionar los archivos que se van a compilar | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798909"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659823"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Cómo: Seleccionar los archivos que se van a compilar
+# <a name="how-to-select-the-files-to-build"></a>Procedimiento Seleccionar los archivos que se van a compilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cuando se compila un proyecto que contiene varios archivos, se puede enumerar cada archivo en el archivo de proyecto de forma independiente, o bien usar comodines para incluir todos los archivos de un directorio o un conjunto anidado de directorios.  
   
 ## <a name="specifying-inputs"></a>Especificar entradas  

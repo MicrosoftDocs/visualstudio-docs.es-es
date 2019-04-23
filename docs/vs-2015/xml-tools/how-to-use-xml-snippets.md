@@ -1,5 +1,5 @@
 ---
-title: Filtrar Utilizar fragmentos XML | Documentos de Microsoft
+title: Procedimiento Utilizar fragmentos XML | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec1b206bffa5ea49a17bd76487cdc398395c1f48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: be8d42a5a4557b39a02e724eb54b5434c1b454ea
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999091"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659974"
 ---
-# <a name="how-to-use-xml-snippets"></a>Filtrar Utilizar fragmentos XML
+# <a name="how-to-use-xml-snippets"></a>Procedimiento Utilizar fragmentos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede invocar fragmentos XML mediante los dos siguientes comandos del menú contextual del Editor XML. El **Insertar fragmento de código** comando inserta el fragmento XML en la posición del cursor. El **rodear con** comando encapsula el fragmento XML alrededor del texto seleccionado. Cada fragmento XML tiene designados tipos de fragmentos. Los tipos de fragmentos determinan si el fragmento de código está disponible con la **Insertar fragmento de código** comando, el **rodear con** comando, o ambos.  
   
  Una vez que el fragmento XML se ha agregado al editor, todos los campos editables del fragmento se resaltan en amarillo y el cursor se coloca en el primer campo editable.  

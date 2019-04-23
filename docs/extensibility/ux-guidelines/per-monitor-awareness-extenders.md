@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4d9afdfcc221e8f07bae7d4bbf7dee57dda31f
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504255"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660702"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Compatibilidad con reconocimiento de Monitor para que los extensores de Visual Studio
 Las versiones anteriores a Visual Studio de 2019 tenían su contexto de reconocimiento de PPP establecido en el sistema tenga en cuenta, en lugar de tener en cuenta DPI (PMA) por monitor. Que se ejecuta en el reconocimiento del sistema dieron lugar a un objeto visual degradado experiencia (p. ej. borrosas fuentes o iconos) cada vez que Visual Studio tenía que procesar en varios monitores con factores de escala diferentes o remota en equipos con configuraciones de pantalla diferentes, por ejemplo, (que son distintas Windows escalado).
@@ -40,10 +40,13 @@ Hacer referencia a la [desarrollo de aplicaciones de escritorio de alto PPP en W
 ## <a name="enabling-pma"></a>Habilitar PMA
 Para habilitar PMA en Visual Studio, deben cumplirse los siguientes requisitos:
 1)  10 de abril de 2018 de Windows Update (v1803, RS4) o posterior
-2)  .NET framework 4.8 RTM o posterior (actualmente se distribuye como vista previa independiente o paquete reciente Insider de Windows en las versiones)
+2)  .NET framework 4.8 RTM o posterior
 3)  2019 de Visual Studio con el ["Optimizar el procesamiento de las pantallas con densidades de píxeles diferente"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) opción habilitada
 
 Una vez que se cumplen estos requisitos, Visual Studio habilitará automáticamente el modo PMA a través del proceso.
+
+> [!NOTE]
+> Contenido de Windows Forms en Visual Studio (por ejemplo el Explorador de propiedades) admitirá PMA solo cuando tenga la actualización 1 de Visual Studio de 2019.
 
 ## <a name="testing-your-extensions-for-pma-issues"></a>Probar las extensiones para PMA problemas
 
@@ -106,12 +109,18 @@ Cada vez que dentro de los escenarios de PPP de modo mixto (por ejemplo, distint
 #### <a name="out-of-process-ui"></a>Interfaz de usuario de fuera de proceso
 Alguna interfaz de usuario se crea fuera de proceso y si el proceso externo creación está en un modo de reconocimiento de PPP diferente que Visual Studio, esto puede presentar alguno de los problemas de representación anterior.
 
-#### <a name="windows-forms-controls-images-or-windows-not-displaying"></a>Windows no se están mostrando, imágenes o controles de formularios Windows Forms
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Controles de formularios Windows Forms, imágenes o diseños representados de forma incorrecta
+Todo el contenido de Windows Forms no admite el modo PMA. Como resultado, es posible que vea representación problema con diseños incorrectos o la escala. En este caso es una solución posible representar explícitamente el contenido de Windows Forms en DpiAwarenessContext "Sistema compatible con" (consulte [forzar un control en un DpiAwarenessContext específico](#forcing-a-control-into-a-specific-dpiawarenesscontext)).
+
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Controles de formularios Windows Forms o windows que no se están mostrando
 Una de las principales causas para este problema es que los desarrolladores que intentan cambiar primario de un control o ventana con una DpiAwarenessContext a una ventana con un DpiAwarenessContext diferentes.
 
-Las siguientes imágenes muestran las restricciones de sistema operativo actuales de Windows en windows puede ser el primario:
+Las siguientes imágenes muestran actual **predeterminada** restricciones del sistema operativo Windows en windows puede ser el primario:
 
 ![Captura de pantalla del comportamiento de la relación jerárquica correcta](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+
+> [!Note]
+> Puede cambiar este comportamiento estableciendo el comportamiento de hospedaje de subprocesos (consulte [DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 Como resultado, si establece la relación de elementos primarios y secundarios entre los modos no admitidos, se producirá un error y el control o la ventana no se puede representar según lo previsto.
 

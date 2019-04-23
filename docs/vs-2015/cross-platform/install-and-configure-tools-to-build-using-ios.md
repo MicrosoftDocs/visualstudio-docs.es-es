@@ -11,17 +11,16 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c1eaa934c83676ee11854701f372b972f3045e66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3ca198b88a8e42ba937ceb2426edd23793765b03
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792868"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656211"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS; sin embargo, debido a las restricciones de licencia, el código se debe compilar y ejecutar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)en el equipo Mac. El agente remoto controla las solicitudes de compilación de Visual Studio y ejecuta la aplicación en un dispositivo de iOS conectado al equipo Mac o en el simulador de iOS del equipo Mac.  
   
 > [!NOTE]

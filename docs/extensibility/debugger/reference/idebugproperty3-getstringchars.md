@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 900238434f5671cd9a5ba1bd358304638551dbc5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01558ccf2d4f0e06231a9cbe152c47b1601bfdb2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698149"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658112"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Recupera la cadena asociada a esta propiedad y lo almacena en un búfer proporcionado por el usuario.
@@ -49,8 +49,7 @@ int GetStringChars(
 
  [out] Devuelve la cadena.
 
-
- [Solo en C++], `rgString` es un puntero a un búfer que recibe los caracteres Unicode de la cadena. Este búfer debe ser al menos `buflen` caracteres (no bytes) de tamaño.
+ [C++ solo], `rgString` es un puntero a un búfer que recibe los caracteres Unicode de la cadena. Este búfer debe ser al menos `buflen` caracteres (no bytes) de tamaño.
 
 `pceltFetched`
 

@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9f4844431215d952f03ab9acc3f11ab57644abde
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d62053381e4d42c50a5d15a85afaef3ed816491d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003084"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658336"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: En las palabras compuestas se deben utilizar mayúsculas y minúsculas correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio, consulte [CA1702: Las palabras compuestas se deberían escribirse correctamente](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [CA1702: Las palabras compuestas se deberían escribirse correctamente](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).  
   
 |||  
 |-|-|  

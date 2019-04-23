@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09df214f5537ac81c7fb9802a34b48ee01ceb75b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: eb021b5222c0c89d15ca9be9c9c155152118df5f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998390"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658778"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>No se puede modificar el diseñador durante la depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Este mensaje aparece cuando se intentan modificar elementos en Object Relational Designer y la aplicación se está ejecutando en modo de depuración. Cuando la aplicación se está ejecutando en modo de depuración, Object Relational Designer es de solo lectura.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  

@@ -14,17 +14,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22a1accc7421e169ee345fda0446a8474d2eda00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 611b9c02fd7aaeb4621c4e59555fae2c6dfab247
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776149"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656952"
 ---
 # <a name="debug-page-project-designer"></a>Página Depuración, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 > [!WARNING]
 >  Este tema no se aplica a las aplicaciones de la Tienda Windows. Vea [Start a debug session (VB, C#, C++ and XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) (Iniciar una sesión de depuración (VB, C#, C++ y XAML)) en el Centro de desarrollo de Windows.  
   

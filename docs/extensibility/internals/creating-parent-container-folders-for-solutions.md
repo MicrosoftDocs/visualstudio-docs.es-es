@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6845e867a8c5fd0ef2b367dc5f2e3b5760869746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602027"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661066"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Crear carpetas de contenedor para las soluciones de primario
 En el origen de Control de complemento de API versión 1.2, un usuario puede especificar un destino de control de origen de raíz única para todos los proyectos web dentro de la solución. Esta raíz solo se llama a una raíz de Unified Super (SUR).
@@ -42,7 +42,6 @@ En el origen de Control de complemento de API versión 1.2, un usuario puede esp
 -   Existen diversos recursos compartidos para el proyecto y el archivo de solución.
 
 -   Los proyectos se agregaron por separado (en una solución controlados por código fuente).
-
 
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], se recomienda que el nombre de la carpeta Surname ser el mismo que el nombre de la solución sin la extensión. En la tabla siguiente se resume el comportamiento en las dos versiones.
 
