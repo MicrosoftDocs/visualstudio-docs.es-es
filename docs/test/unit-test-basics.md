@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416375"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647419"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -78,7 +78,7 @@ Ahora que tenemos código, es el momento de probar.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Crear proyectos de prueba unitaria y métodos de prueba
 
-En general, es más rápido generar el proyecto de prueba unitaria y los códigos auxiliares de pruebas unitarias a partir del código, aunque también puede crear el proyecto y las pruebas manualmente según sus requisitos.
+En general, es más rápido generar el proyecto de prueba unitaria y los códigos auxiliares de pruebas unitarias a partir del código, aunque también puede crear el proyecto y las pruebas manualmente según sus requisitos. Si quiere crear pruebas unitarias con un marco de terceros, necesitará tener una de las siguientes extensiones instaladas: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) o [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generar el proyecto de prueba unitaria y los códigos auxiliares correspondientes
 
@@ -88,7 +88,7 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
 2. Haga clic en **Aceptar** para aceptar los valores predeterminados al crear las pruebas unitarias o cambiar los valores usados para crear las pruebas unitarias y el proyecto que las engloba, y asignarles un nombre. Puede seleccionar el código que se agrega de forma predeterminada a los métodos de prueba unitaria.
 
-    ![Haga clic con el botón derecho en el editor y elija Crear pruebas unitarias](../test/media/createunittestsdialog.png)
+    ![Cuadro de diálogo Crear pruebas unitarias en Visual Studio](../test/media/create-unit-tests.png)
 
 3. El código auxiliar de prueba unitaria se crea en un proyecto de prueba unitaria nuevo para todos los métodos de la clase.
 

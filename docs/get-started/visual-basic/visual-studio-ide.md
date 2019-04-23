@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: aa242fc8908ec7d07728b706c12f581e5f02548d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324086"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790685"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Le damos la bienvenida al IDE de Visual Studio | Visual Basic
 
@@ -102,22 +102,24 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
 
    ::: moniker-end
 
-- [Inicio rápido](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Cuadro de búsqueda
 
-   Visual Studio puede parecer abrumador a veces con tantas propiedades, opciones y menús. El cuadro de búsqueda **Inicio rápido** supone una excelente manera de encontrar rápidamente lo que necesita en Visual Studio. Al empezar a escribir el nombre de lo que está buscando, Visual Studio muestra resultados que llevan exactamente a donde necesita ir. Si necesita agregar funcionalidad a Visual Studio, por ejemplo, agregar compatibilidad con otro lenguaje de programación, **Inicio rápido** proporciona resultados que abren el Instalador de Visual Studio para instalar un componente individual o una carga de trabajo.
+   Visual Studio puede parecer abrumador a veces con tantas propiedades, opciones y menús. El cuadro de búsqueda supone una excelente manera de encontrar rápidamente lo que necesita en Visual Studio. Al empezar a escribir el nombre de lo que está buscando, Visual Studio muestra resultados que llevan exactamente a donde necesita ir. Si necesita agregar funcionalidad a Visual Studio para, por ejemplo, agregar compatibilidad con otro lenguaje de programación, el cuadro de búsqueda proporciona resultados que abren el Instalador de Visual Studio para instalar un componente individual o una carga de trabajo.
 
    > [!TIP]
-   > Presione **Ctrl**+**Q** como método abreviado para el cuadro de búsqueda **Inicio rápido**.
+   > Presione **Ctrl**+**Q** como acceso directo al cuadro de búsqueda.
 
    ::: moniker range="vs-2017"
 
    ![Cuadro de búsqueda Inicio rápido de Visual Studio 2017](../media/quick-launch-nuget.png)
 
+   Para más información, vea [Inicio rápido](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   ![Cuadro de búsqueda Inicio rápido de Visual Studio 2019](media/vs-2019/quick-launch.png)
+   ![Cuadro de búsqueda de Visual Studio 2019](media/vs-2019/quick-launch.png)
 
    ::: moniker-end
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 157617ae085a5d298b1e552d0280b98f63e1fc0b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324791"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515199"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Crear proyectos de R en Visual Studio
 
@@ -56,7 +56,7 @@ Si dispone de una carpeta existente de archivos *.R* que quiera administrar en u
 
 1. Cree un proyecto en Visual Studio, como se muestra en la sección anterior.
 1. Copie los archivos en la carpeta del proyecto.
-1. En el Explorador de soluciones de Visual Studio, haga clic con el botón derecho en el proyecto, seleccione **Agregar** > **Elemento existente** y busque los archivos que quiera agregar. Esos archivos aparecen en el árbol del proyecto después de seleccionar **Aceptar**.
+1. En el Explorador de soluciones de Visual Studio, haga clic con el botón derecho en el proyecto, seleccione **Agregar** > **Elemento existente** y busque los archivos que quiere agregar. Esos archivos aparecen en el árbol del proyecto después de seleccionar **Aceptar**.
 1. Para organizar el código en subcarpetas, haga clic con el botón derecho en el proyecto, seleccione **Agregar** > **Nueva carpeta** en primer lugar, después copie los archivos en esa carpeta y agregue los elementos existentes del paso 3.
 
 ## <a name="project-properties"></a>Propiedades del proyecto

@@ -1,6 +1,6 @@
 ---
 title: Introducción a las pruebas unitarias
-ms.date: 05/02/2017
+ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57984123"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856465"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
@@ -25,150 +25,145 @@ Use Visual Studio para definir y ejecutar pruebas unitarias para conservar el es
 En esta sección se describe de forma general cómo se crea un proyecto de prueba unitaria.
 
 > [!TIP]
-> El proyecto que se va a probar, "Hola mundo", es un proyecto de ejemplo y no se mostrará código relacionado con él. Si quiere crear un proyecto "Hola mundo" para probarlo, vea [Uso de Visual Studio para crear la primera aplicación de consola de C#](../ide/quickstart-csharp-console.md). Para obtener un artículo con un tutorial completo, vea [Crear y ejecutar pruebas unitarias en código administrado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+> El proyecto que se va a probar, "HelloWorldCore", es un proyecto de ejemplo y no se mostrará ningún código relacionado con él. Si quiere crear un proyecto "Hola mundo" para probarlo, vea [Uso de Visual Studio para crear la primera aplicación de consola de C#](../ide/quickstart-csharp-console.md). Para obtener un artículo con un tutorial completo, vea [Crear y ejecutar pruebas unitarias en código administrado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
-1. Cree un proyecto de prueba unitaria.
+1. Abra el proyecto que quiere probar en Visual Studio.
 
-   ![Agregar un proyecto de prueba unitaria a la solución](media/createunittest1.png)
+1. En el **Explorador de soluciones**, seleccione el nodo de la solución. Después, en la barra de menús superior, seleccione **Archivo** > **Agregar** > **Nuevo proyecto**.
 
-1. Dé un nombre al proyecto.
+1. En el cuadro de diálogo Nuevo proyecto, busque una plantilla de proyecto de prueba unitaria para el marco de pruebas que quiera utilizar y selecciónela.
 
-   ![Plantilla de proyecto de prueba unitaria](media/createunittest2.png)
+   ::: moniker range=">=vs-2019"
+
+   ![Plantilla de proyecto de prueba unitaria en Visual Studio 2019](media/vs-2019/add-new-test-project.png)
+
+   Haga clic en **Siguiente**, elija un nombre para el proyecto de prueba y luego haga clic en **Crear**.
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2017"
+
+   ![Plantilla de proyecto de prueba unitaria en Visual Studio 2019](media/mstest-test-project-template.png)
+
+   Elija un nombre para el proyecto de prueba y haga clic en **Aceptar**.
+
+   ::: moniker-end
 
    El proyecto se agrega a la solución.
 
-   ![Proyecto de prueba unitaria en el Explorador de soluciones](media/createunittest5.png)
+   ![Proyecto de prueba unitaria en el Explorador de soluciones](media/vs-2019/solution-explorer.png)
 
-1. En el proyecto de prueba unitaria, agregue una referencia al proyecto que quiere probar.
+1. En el proyecto de prueba unitaria, agregue una referencia al proyecto que quiere probar haciendo clic con el botón derecho en **Referencias** o **Dependencias** y luego elija **Agregar referencia**.
 
-   ![Agregar una referencia al proyecto de prueba unitaria](media/createunittest6.png)
+1. Seleccione el proyecto que contiene el código que va a probar y haga clic en **Aceptar**.
 
-1. Seleccione el proyecto que contiene el código que va a probar.
+   ![Incorporación de una referencia de proyecto en Visual Studio](media/vs-2019/reference-manager.png)
 
-   ![Seleccionar la referencia que se va a agregar](media/createunittest7.png)
+1. Agregue código al método de prueba unitaria.
 
-1. Codifique la prueba unitaria.
-
-   ![Agregar código a la prueba unitaria](media/createunittest8.png)
-
-También puede crear códigos auxiliares de método de pruebas unitarias con el **comando** [Crear pruebas unitarias](create-unit-tests-menu.md).
-
-![Usar el comando Crear pruebas unitarias](media/createunittestcommand2.png)
+   ![Incorporación de código al método de prueba unitaria en Visual Studio](media/vs-2019/unit-test-method.png)
 
 ## <a name="run-unit-tests"></a>Ejecutar pruebas unitarias
 
-1. Abra el **Explorador de pruebas**.
+1. Abra el [Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md) eligiendo **Probar** > **Windows** > **Explorador de pruebas** desde la barra de menús superior.
 
-   ![En el menú Prueba, abra el Explorador de pruebas.](media/rununittest1.png)
+1. Ejecute las pruebas unitarias haciendo clic en **Ejecutar todo**.
 
-1. Ejecute las pruebas unitarias.
+   ![Ejecutar pruebas unitarias en el Explorador de pruebas](media/vs-2019/test-explorer-run-all.png)
 
-   ![Ejecutar pruebas unitarias en el Explorador de pruebas](media/rununittest2.png)
+   Cuando se hayan completado las pruebas, una marca de verificación verde indica que una prueba se superó. Un icono "x" rojo indica que una prueba no se superó.
 
-   Puede ver las pruebas unitarias que se han superado o han dado error en el **Explorador de pruebas**.
+   ![Revisar los resultados de pruebas unitarias en el Explorador de pruebas](media/vs-2019/unit-test-passed.png)
 
-   ![Revisar los resultados de pruebas unitarias en el Explorador de pruebas](media/rununittest3.png)
+> [!TIP]
+> Puede usar el [Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md) para ejecutar pruebas unitarias en el marco de pruebas integrado (MSTest) o en marcos de pruebas de terceros. Puede agrupar las pruebas en categorías, filtrar la lista de pruebas y crear, guardar y ejecutar listas de reproducción de pruebas. También puede depurar las pruebas, y analizar la cobertura de código y el rendimiento de la prueba.
 
 ## <a name="view-live-unit-test-results"></a>Ver los resultados de las pruebas unitarias en vivo
 
 Si está usando el marco de pruebas de MSTest, xUnit o NUnit en Visual Studio 2017 o versiones posteriores, puede ver los resultados en vivo de sus pruebas unitarias.
 
 > [!NOTE]
-> Live Unit Testing solo está disponible en Visual Studio Enterprise Edition.
+> Live Unit Testing solo está disponible en Enterprise Edition.
 
-1. Active las pruebas unitarias en vivo desde el menú **Prueba**.
+1. Active Live Unit Testing desde el menú **Probar** seleccionando **Probar** > **Live Unit Testing** > **Iniciar**.
+
+   ::: moniker range="vs-2017"
 
    ![Activar las pruebas unitarias en vivo](media/live-test-results-start.png)
 
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Live Unit Testing en Visual Studio 2019](media/vs-2019/start-live-unit-testing.png)
+
+   ::: moniker-end
+
 1. Vea los resultados de las pruebas dentro de la ventana del editor de código a medida que escribe y edita el código.
 
-   ![Ver los resultados de las pruebas](media/live-test-results-ui.png)
+   ![Ver los resultados de las pruebas](media/vs-2019/live-unit-testing-results.png)
 
-1. Seleccione los indicadores de resultados de la prueba para ver más información.
+1. Haga clic en un indicador de resultado de la prueba para obtener más información, como, por ejemplo, los nombres de las pruebas que contemplan ese método.
 
-   ![Seleccionar los indicadores de resultados de la prueba](media/live-test-results-details.png)
+   ![Seleccionar los indicadores de resultados de la prueba](media/vs-2019/live-unit-testing-details.png)
 
-Para obtener más información, vea [Live Unit Testing](../test/live-unit-testing-intro.md).
+Para obtener más información sobre esta característica, vea [Live Unit Testing](../test/live-unit-testing-intro.md).
 
 ## <a name="generate-unit-tests-with-intellitest"></a>Generar pruebas unitarias con IntelliTest
 
-Cuando ejecuta Intelltest, puede ver fácilmente qué pruebas son las que fallan y agregar cualquier código para corregirlas. Puede seleccionar las pruebas generadas que quiere guardar en un proyecto de prueba para proporcionar un conjunto de regresión. Cuando cambie el código, vuelva a ejecutar IntelliTest para mantener sincronizadas las pruebas generadas con los cambios de código. Para obtener información sobre cómo hacerlo, vea [Generar pruebas unitarias para el código con IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+Cuando ejecuta IntelliTest, puede ver qué pruebas son las que fallan y agregar cualquier código para corregirlas. Puede seleccionar las pruebas generadas que quiere guardar en un proyecto de prueba para proporcionar un conjunto de regresión. Cuando cambie el código, vuelva a ejecutar IntelliTest para mantener sincronizadas las pruebas generadas con los cambios de código. Para obtener información sobre cómo hacerlo, vea [Generar pruebas unitarias para el código con IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+
+> [!TIP]
+> IntelliTest solo está disponible para código administrado que tenga como destino .NET Framework.
 
 ![Generar pruebas unitarias con IntelliTest](media/intellitest.png)
 
-## <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
-
-Con el **Explorador de pruebas** puede ejecutar pruebas unitarias de Visual Studio o proyectos de prueba unitaria de terceros, agrupar pruebas en categorías, filtrar la lista de pruebas, y crear, guardar y ejecutar las listas de reproducción de pruebas. También puede depurar las pruebas, y analizar la cobertura de código y el rendimiento de la prueba. Para obtener información sobre cómo hacerlo, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md).
-
-![Ejecutar pruebas unitarias con el Explorador de pruebas](media/testexplorer.png)
-
-## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
+## <a name="analyze-code-coverage"></a>Análisis de la cobertura de código
 
 Para determinar qué proporción de código del proyecto se está probando realmente mediante pruebas codificadas como pruebas unitarias, se puede utilizar la característica de cobertura de código de Visual Studio. Para restringir con eficacia los errores, las pruebas deberían ensayar una proporción considerable del código. Para obtener información sobre cómo hacerlo, vea [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
-## <a name="use-a-different-unit-test-framework"></a>Usar otro marco de pruebas unitarias
+## <a name="use-a-third-party-test-framework"></a>Uso de un marco de pruebas de terceros
 
-Es posible ejecutar pruebas unitarias en Visual Studio con un marco de pruebas de un tercero, como Boost, Google y NUnit. Utilice el complemento de ese marco de trabajo a fin de que el ejecutor de pruebas de Visual Studio pueda funcionar con él.
+Es posible ejecutar pruebas unitarias en Visual Studio con un marco de pruebas de un tercero, como Boost, Google y NUnit. Use el **Administrador de paquetes NuGet** para instalar el paquete NuGet correspondiente al marco de trabajo que prefiera. O bien, en el caso de marcos de pruebas de xUnit y NUnit, Visual Studio incluye plantillas de proyecto de prueba preconfiguradas que incluyen los paquetes NuGet necesarios.
 
-Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
+Para crear pruebas unitarias que usen [NUnit](https://nunit.org/):
 
-::: moniker range="vs-2017"
+1. Abra la solución que contiene el código que quiere probar.
 
-1. Elija **Herramientas** > **Extensiones y actualizaciones** en la barra de menús.
+2. Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y seleccione **Agregar** > **Nuevo proyecto**.
 
-2. En el cuadro de diálogo **Extensiones y actualizaciones**, expanda la categoría **En línea** y, después, elija **Visual Studio Marketplace**. A continuación, elija **Herramientas** > **Pruebas**.
+3. Seleccione la platilla de proyecto **Proyecto de prueba de NUnit**.
 
-   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+   ::: moniker range=">=vs-2019"
 
-::: moniker-end
+   ![Plantilla de proyecto de prueba de NUnit en Visual Studio 2019](media/vs-2019/nunit-test-project-template.png)
 
-::: moniker range=">=vs-2019"
+   Haga clic en **Siguiente**, asigne un nombre al proyecto y haga clic en **Crear**.
 
-1. Elija **Extensiones** > **Administrar extensiones** en la barra de menús.
+   ::: moniker-end
 
-2. En el cuadro de diálogo **Administrar extensiones**, expanda la categoría **En línea** y, después, elija **Visual Studio Marketplace**. A continuación, elija **Herramientas** > **Pruebas**.
+   ::: moniker range="vs-2017"
 
-   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+   Asigne al proyecto un nombre y haga clic en **Aceptar** para crearlo.
 
-::: moniker-end
+   ::: moniker-end
 
-3. Seleccione el marco o el adaptador que quiera instalar y, después, elija **Descargar**.
+   La plantilla de proyecto incluye referencias de NuGet para NUnit y NUnit3TestAdapter.
 
-4. Cree un proyecto de biblioteca de clases y agréguelo a su solución.
+   ![Dependencias de NuGet de NUnit en el Explorador de soluciones](media/vs-2019/nunit-nuget-dependencies.png)
 
-   ![Asignar un nombre al proyecto de biblioteca de clases y agregarlo](media/create3rdpartyunittest3.png)
+4. Agregue una referencia del proyecto de prueba al proyecto que contiene el código que quiera probar.
 
-5. Instale el complemento. En el **Explorador de soluciones**, seleccione el proyecto de biblioteca de clases y, después, haga clic con el botón derecho y elija **Administrar paquetes NuGet** en el menú contextual.
+5. Agregue código a al método de prueba.
 
-   ![Administrar paquetes NuGet para instalar el complemento](media/create3rdpartyunittest3a.png)
+   ![Adición de código al archivo de prueba unitaria](media/vs-2019/unit-test-method.png)
 
-   [NuGet](https://www.nuget.org/) es una extensión de Visual Studio que puede usar para agregar y actualizar bibliotecas y herramientas para sus proyectos.
-
-6. En la ventana **Administrador de paquetes NuGet**, busque y seleccione el complemento y, después, elija **Instalar**.
-
-   ![Instalar el marco de terceros](media/create3rdpartyunittest4.png)
-
-   En el proyecto se hace referencia al marco.
-
-   ![La referencia del marco de pruebas unitarias de terceros se agrega a la solución](media/create3rdpartyunittest6.png)
-
-7. En el nodo **Referencias** del proyecto de biblioteca de clases, seleccione **Agregar referencia**.
-
-   ![Agregar una referencia al proyecto](media/createunittest6.png)
-
-8. En el cuadro de diálogo **Administrador de referencias**, seleccione el proyecto que contiene el código que va a probar.
-
-   ![Seleccionar el proyecto de código que va a probar](media/createunittest7.png)
-
-9. Codifique la prueba unitaria.
-
-   ![Adición de código al archivo de prueba unitaria](media/create3rdpartyunittest7.png)
+6. Ejecute la prueba desde el **Explorador de pruebas** o haciendo clic con el botón derecho en el código de prueba y eligiendo **Run Test(s)** (Ejecutar pruebas).
 
 ## <a name="see-also"></a>Vea también
 
 * [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Crear un comando de pruebas unitarias](create-unit-tests-menu.md)
-* [Generate tests with IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md) (Generar pruebas con IntelliTest)
-* [Ejecutar pruebas con el Explorador de pruebas](run-unit-tests-with-test-explorer.md)
-* [Determine code coverage](using-code-coverage-to-determine-how-much-code-is-being-tested.md) (Determinar la cobertura de código)
-* [Mejorar la calidad del código](improve-code-quality.md)
+* [Generate tests with IntelliTest (Generación de pruebas con IntelliTest)](generate-unit-tests-for-your-code-with-intellitest.md)
+* [Run tests with Test Explorer (Ejecución de pruebas con el Explorador de pruebas)](run-unit-tests-with-test-explorer.md)
+* [Análisis de la cobertura de código](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

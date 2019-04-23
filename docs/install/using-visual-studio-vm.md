@@ -2,7 +2,7 @@
 title: Uso de Visual Studio en una máquina virtual de Azure
 titleSuffix: ''
 description: Aprenda a usar Visual Studio en una máquina virtual de Azure
-ms.date: 03/25/2019
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476025"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866723"
 ---
 # <a id="top"> </a> Imágenes de Visual Studio en Azure
 
@@ -32,12 +32,12 @@ El uso de Visual Studio en una máquina virtual de Azure preconfigurada es una f
 
 ## <a name="what-configurations-and-versions-are-available"></a>¿Qué configuraciones y versiones están disponibles?
 
-En Azure Marketplace puede encontrar imágenes de las versiones principales más recientes: Visual Studio 2017 y Visual Studio 2015.  Recientemente hemos agregado compatibilidad con las versiones preliminares de la próxima versión principal: Visual Studio 2019.  En cada versión principal lanzada, verá la versión de lanzamiento original (RTW) y las versiones actualizadas más recientes.  Cada una de estas versiones ofrece las ediciones Visual Studio Enterprise y Visual Studio Community.  Estas imágenes se actualizan como mínimo cada mes para incluir las actualizaciones más recientes de Visual Studio y Windows.  Aunque los nombres de las imágenes siguen siendo los mismos, la descripción de cada imagen incluye la versión del producto instalada y la fecha de inicio de la imagen.
+En Azure Marketplace puede encontrar imágenes de las versiones principales más recientes: Visual Studio 2019, Visual Studio 2017 y Visual Studio 2015.  En cada versión principal que se lance, verá la versión de lanzamiento original "lanzada en web" (RTW) y las últimas versiones actualizadas.  Cada una de estas versiones ofrece las ediciones Visual Studio Enterprise y Visual Studio Community.  Estas imágenes se actualizan como mínimo cada mes para incluir las actualizaciones más recientes de Visual Studio y Windows.  Aunque los nombres de las imágenes siguen siendo los mismos, la descripción de cada imagen incluye la versión del producto instalada y la fecha de inicio de la imagen.
 
 | Versión de lanzamiento                                              | Ediciones                     |     Versión del producto      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|       Visual Studio 2019: Versión preliminar (RC3)                      |           Empresa         |    Versión 16.0.0 RC3    |
-| Visual Studio 2017: Versión más reciente (15.9)                    |    Enterprise, Community     |      Versión 15.9.9      |
+|       Visual Studio 2019: RTW                                |    Enterprise, Community     |      Versión 16.0.0      |
+| Visual Studio 2017: Versión más reciente (15.9)                    |    Enterprise, Community     |      Versión 15.9.10     |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versión 15.0.22     |
 |   Visual Studio 2015: Más reciente (actualización 3)                      |    Enterprise, Community     |  Versión 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Ninguna             | (Servicio de mantenimiento expirado)  |
@@ -105,7 +105,7 @@ Un resumen rápido: use la herramienta de preparación del sistema (Sysprep) y a
 
 ![Captura de una imagen mediante la interfaz de usuario de Azure Portal.](media/capture-vm.png)
 
-*(Figura 1) Captura de una imagen mediante la interfaz de usuario de Azure Portal.*
+*(Figura 1) Captura de una imagen mediante la interfaz de usuario de Azure Portal.*
 
 Para obtener más información, consulte [Captura de una imagen administrada de una máquina virtual generalizada en Azure](/azure/virtual-machines/windows/capture-image-resource).
 
@@ -121,5 +121,5 @@ Además, puede que las tecnologías o las tareas de desarrollo requieran mayor e
 
 Ahora que ya está informado sobre las imágenes preconfiguradas de Visual Studio, el siguiente paso es crear una máquina virtual:
 
-* [Creación de una máquina virtual en Azure Portal](/azure/virtual-machines/windows/quick-create-portal)
-* [Información general sobre las máquinas virtuales Windows](/azure/virtual-machines/windows/overview)
+* [Creación de una máquina virtual en Azure Portal](/azure/virtual-machines/windows/quick-create-portal)
+* [Información general sobre Windows Virtual Machines](/azure/virtual-machines/windows/overview)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7886981dd3bc2ed93e987256a906f021e6ea5f2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941093"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647445"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Introducción de Blend para Visual Studio
 
@@ -30,11 +30,18 @@ Si no ha trabajado nunca con Blend para Visual Studio, tómese un momento para f
 > [!NOTE]
 > Para recorrer las características de diseño compartido como la mesa de trabajo, la ventana **Esquema del documento** y la ventana **Dispositivo**, vea [Crear una IU con el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="tour-of-the-tools-panel"></a>Paseo por el panel Herramientas 
+## <a name="tools-panel"></a>Panel Herramientas
 
-Puede usar el panel **Herramientas** en Blend para Visual Studio para crear y modificar objetos en la aplicación. Para crear objetos, seleccione una herramienta y dibuje en la mesa de trabajo utilizando el mouse.
+Puede usar el panel **Herramientas** en Blend para Visual Studio para crear y modificar objetos en la aplicación. El panel **Herramientas** aparece a la izquierda del Diseñador XAML cuando se tiene un archivo *.xaml* abierto.
 
-![Panel Herramientas](../designers/media/blend5toolspanel.png)
+Para crear objetos, seleccione una herramienta y dibuje en la mesa de trabajo utilizando el mouse.
+
+![Panel Herramientas en Blend para Visual Studio](../designers/media/blend5toolspanel.png)
+
+> [!TIP]
+> Algunas de las herramientas del panel **Herramientas** tienen variantes (mostradas de la A a la F en la ilustración). Para obtener acceso a estas variantes, haga clic con el botón derecho o haga clic y mantenga presionado el botón en la herramienta.
+>
+> ![Variantes de la herramienta Forma en Blend para Visual Studio](media/rectangle-shape-tool-blend.png)
 
 |||||
 |-|-|-|-|
@@ -45,13 +52,11 @@ Puede usar el panel **Herramientas** en Blend para Visual Studio para crear y mo
 |![Herramientas de recursos](../designers/media/b1_5.png)|**Herramientas de activos** Acceda al panel **Activos** y muestre el último activo usado de la biblioteca.|![Llamada E](../designers/media/b5_label_e.png)|**Controles de texto**|
 |||![Llamada F](../designers/media/b5_label_f.png)|**Controles comunes**|
 
-**Vea un vídeo corto:** ![Configuración de las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [La barra de herramientas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+## <a name="assets-window"></a>Ventana Activos
 
-## <a name="tour-of-the-assets-panel"></a>Paseo por el panel Activos
+La ventana **Activos** contiene todos los objetos visuales disponibles y es similar al **cuadro de herramientas** de Visual Studio. Además de los objetos visuales, encontrará todo lo que puede agregar a la mesa de trabajo en la ventana **Activos**, como, por ejemplo, estilos, elementos multimedia, comportamientos y efectos. Para abrir la ventana **Activos**, elija **Ver** > **Ventana Activos** o presione **Ctrl**+**Alt**+**X**.
 
-Puede encontrar todos los controles en el panel **Activos**, similar al **Cuadro de herramientas** de Visual Studio. Además de los controles, encontrará todo lo que puede agregar a la mesa de trabajo en el panel **Activos**, incluidos estilos, elementos multimedia, comportamientos y efectos.
-
-![Panel Activos](../designers/media/blend5_assets_panel.png)
+![Ventana Activos en Blend para Visual Studio](../designers/media/blend5_assets_panel.png)
 
 |||
 |-|-|
@@ -61,11 +66,11 @@ Puede encontrar todos los controles en el panel **Activos**, similar al **Cuadro
 |![Estilos](../designers/media/b1_4.png)|**Estilos** Muestre todos los estilos que se encuentran en el diccionario de recursos.|
 |![Descripción](../designers/media/b1_5.png)|**Descripción** Vea una descripción de la categoría o subcategoría de activos seleccionada.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a>Paseo por el panel Objetos y escala de tiempo
+## <a name="objects-and-timeline-window"></a>Ventana Objetos y escala de tiempo
 
-Utilice este panel para organizar los objetos en la mesa de trabajo y, si lo desea, para animarlos.
+Utilice esta ventana para organizar los objetos en la mesa de trabajo y, si quiere, para animarlos. Para abrir la ventana **Objetos y escala de tiempo**, elija **Ver** > **Objetos y escala de tiempo** o presione **Ctrl**+**W**, **U**.
 
-![Panel Objetos y escala de tiempo en modo de animación](../designers/media/b5_object_timeline_animation.png)
+![Ventana Objetos y escala de tiempo en modo de animación](../designers/media/b5_object_timeline_animation.png)
 
 |||
 |-|-|
@@ -86,11 +91,11 @@ Utilice este panel para organizar los objetos en la mesa de trabajo y, si lo des
 |![Zoom de escala de tiempo](../designers/media/b1_15.png)|**Zoom de escala de tiempo** Establezca la resolución de zoom de la escala de tiempo. El acercamiento le permite modificar una animación con más detalle, mientras que el alejamiento muestra una visión general de lo que ocurre en períodos de tiempo más largos. Si se acerca pero no puede establecer un fotograma clave en la posición temporal que desee, compruebe si la resolución de ajuste es lo bastante alta.|
 |![Llamada 16](../designers/media/b5_label_16.png)|**Área de composición de la escala de tiempo** Vea la escala de tiempo y mueva los fotogramas clave arrastrándolos o usando sus menús contextuales.|
 
-## <a name="tour-of-the-properties-panel"></a>Paseo por el panel Propiedades
+## <a name="properties-window"></a>Propiedades (ventana)
 
-Utilice este panel para ver y modificar las propiedades de un objeto. También puede establecer esas propiedades directamente en la mesa de trabajo. Si lo hace, los cambios de propiedad se reflejarán en el panel **Propiedades**.
+Utilice esta ventana para ver y modificar las propiedades de un objeto. También puede establecer esas propiedades directamente en la mesa de trabajo. Si lo hace, los cambios de propiedad se reflejarán en el panel **Propiedades**. Para abrir la ventana **Propiedades**, elija **Ver** > **Ventana Propiedades** o presione **Ctrl**+ **W**, **P**.
 
-![Panel Propiedades](../designers/media/blend5_properties_panel.png)
+![Ventana Propiedades en Blend para Visual Studio](../designers/media/blend5_properties_panel.png)
 
 **Categorías** Expanda y contraiga las categorías de propiedades. Haga clic en **Expandir** ![Expand](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) y en **Contraer** ![Collapse](../designers/media/b5_collapse_button.png) para mostrar u ocultar los detalles de la categoría.
 
@@ -113,8 +118,6 @@ Utilice este panel para ver y modificar las propiedades de un objeto. También p
 |![](../designers/media/b1_15.png)|**Valor hexadecimal** Vea el valor hexadecimal del color mostrado.|
 |![Llamada 16](../designers/media/b5_label_16.png)|**Control deslizante de degradado** Aparece únicamente si se selecciona un pincel de degradado.|
 |![Mostrar propiedades avanzadas](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostrar propiedades avanzadas** Vea las categorías de propiedades que se usan con menos frecuencia.|
-
-**Vea un vídeo corto:** ![Configuración de las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [El panel Propiedades](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Vea también
 

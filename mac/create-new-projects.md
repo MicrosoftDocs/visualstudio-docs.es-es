@@ -3,20 +3,20 @@ title: Creación de nuevos proyectos y soluciones
 description: En este artículo se explica cómo crear proyectos y soluciones en Visual Studio para Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294271"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856478"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Creación de nuevos proyectos y soluciones
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>Creación de nuevos proyectos y soluciones a partir de una plantilla
 
-Es posible crear soluciones en cualquier momento mediante una plantilla predefinida. Para crear una solución de esta manera, vaya a  **Archivo > Nueva solución**, seleccione las plataformas necesarias y luego la plantilla requerida:
+Es posible crear soluciones en cualquier momento mediante una plantilla predefinida. A partir de Visual Studio 2019 para Mac, elija **Nuevo** en la ventana de inicio. Como alternativa, vaya a  **Archivo > Nueva solución**. Seleccione las plataformas necesarias y luego, la plantilla requerida:
 
 ![Creación de nuevas soluciones](media/projects-and-solutions-image0.png)
 
@@ -32,7 +32,7 @@ Este método para agregar nuevos proyectos se puede usar para aprovechar las cap
 
 ## <a name="opening-recent-solutions"></a>Apertura de soluciones recientes.
 
-La página de inicio de Visual Studio muestra una lista de proyectos recientes en los que se ha estado trabajando:
+La página de inicio de Visual Studio muestra una lista de proyectos recientes en los que se ha estado trabajando:
 
 ![Sección de soluciones recientes en la página principal](media/create-new-projects-recent.png)
 
@@ -40,4 +40,4 @@ Puede filtrar esta lista con el cuadro Filtrar o quitar elementos individuales d
 
 ## <a name="see-also"></a>Vea también
 
-- [Crear soluciones y proyectos (Visual Studio en Windows)](/visualstudio/ide/creating-solutions-and-projects)
+- [Crear soluciones y proyectos (Visual Studio en Windows)](/visualstudio/ide/creating-solutions-and-projects)

@@ -3,14 +3,14 @@ title: Empleo de Visual Studio for Mac Tools for Unity
 description: Esta guía describe cómo usar la extensión de Visual Studio for Mac Tools for Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 07/17/2017
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027307"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857013"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Empleo de Visual Studio for Mac Tools for Unity
 
@@ -103,6 +103,13 @@ Para iniciar la depuración:
 
 3. Cuando se ejecuta el juego en el editor de Unity mientras se está conectado a Visual Studio, cualquier punto de interrupción detectado detiene la ejecución del juego y muestra la línea de código donde el juego alcanza el punto de interrupción en Visual Studio para Mac.
 
+
+### <a name="start-debugging-in-a-single-step"></a>Inicio de la depuración en un solo paso
+
+El inicio de la depuración y la reproducción del editor Unity se pueden llevar a cabo en un solo paso directamente desde Visual Studio para Mac eligiendo la configuración **Asociar a Unity y jugar**.
+
+![Selección de Asociar a Unity y jugar](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>Detener depuración
 
 Para detener la depuración:
@@ -110,5 +117,8 @@ Para detener la depuración:
 1. Haga clic en el botón **Detener** de Visual Studio para Mac o presione **Mayús + Comando + Entrar**.
 
    ![Haga clic en Detener en Visual Studio](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> Si la depuración se inició con la configuración **Asociar a Unity y jugar**, el botón **Detener** también detendrá Unity.
 
 Para más información sobre la depuración en Visual Studio para Mac, vea [Empleo del depurador](debugging.md).

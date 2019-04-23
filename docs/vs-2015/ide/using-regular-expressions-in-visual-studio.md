@@ -19,12 +19,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ede92874833ca54f44740f518994dac1d6a822f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669346"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Uso de expresiones regulares en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +42,7 @@ En las versiones previas a Visual Studio 2012, se usaba una sintaxis de expresio
 
 A continuación se muestran algunos ejemplos:
 
-
-|                                                                                                                       Propósito                                                                                                                       |                                                     Expresión                                                     |                                                                          Ejemplo                                                                          |
+|                                                                                                                       Finalidad                                                                                                                       |                                                     Expresión                                                     |                                                                          Ejemplo                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                                                                                  Coincidencia con cualquier carácter (excepto un salto de línea)                                                                                                   |                                                         .                                                          |                                     `a.o` coincide con "aro" en "around" y "abo" en "about", pero no con "acro" en "across".                                      |
 |                                                                          Coincidencia con cero o más apariciones de la expresión anterior (coincidencias con tantos caracteres como sea posible)                                                                          |                                                         \*                                                         |                                            `a*r` coincide con "r" en "rack", "ar" en "ark" y "aar" en "aardvark".                                            |

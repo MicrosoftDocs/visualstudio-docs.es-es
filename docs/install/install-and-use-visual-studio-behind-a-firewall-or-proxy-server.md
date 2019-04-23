@@ -1,7 +1,7 @@
 ---
 title: Instalación y uso detrás de un firewall o proxy
 description: Revise las direcciones URL de dominio, los puertos y los protocolos que quiere incluir en la lista de permitidos o abrir si la organización usa un firewall o un servidor proxy
-ms.date: 07/10/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b483115daf15d7bf44c188e76993e5ffaedab699
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323849"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857533"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
@@ -102,7 +102,7 @@ Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual
 | Información sobre el repositorio de GitHub | api.github.com | https | 443 | Necesario para obtener información adicional acerca de los paquetes Bower. |
 | Linter web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Detección de<br>plantillas del explorador<br>de cookiecutter <br><br>Creación de <br>proyectos del explorador<br> de cookiecutter | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Se usa para detectar plantillas en línea de nuestra fuente recomendada y de repositorios GitHub. <br><br>Se utiliza para crear un proyecto de una plantilla de cookiecutter que requiere una única instalación a petición de un paquete Python cookiecutter desde el índice de paquetes Python (PyPI). |
-| Detección de <br>paquetes Python<br><br>Administración <br>de paquetes Python<br><br>Plantillas de <br>nuevo proyecto <br>Python | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Permite buscar paquetes pip.<br><br>Se utiliza para instalar un paquete pip automáticamente si falta. <br><br> Se utiliza para crear <br><br>Se utiliza para resolver las siguiente plantillas de proyecto Python en el cuadro de diálogo Nuevo proyecto a direcciones URL de la plantilla de cookiecutter:<br> - Proyecto de clasificador<br>- Proyecto de agrupación en clústeres <br> - Proyecto de regresión <br> - PyGame con PyKinect <br> - Proyecto de Pyvot |
+| Detección de <br>paquetes Python<br><br>Administración <br>de paquetes Python<br><br>Nuevo <br>Python <br> proyecto <br>Python | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Permite buscar paquetes pip.<br><br>Se utiliza para instalar un paquete pip automáticamente si falta. <br><br>Se utiliza para resolver las siguiente plantillas de proyecto de Python en direcciones URL de la plantilla de Cookiecutter:<br> - Proyecto de clasificador<br>- Proyecto de agrupación en clústeres <br> - Proyecto de regresión <br> - PyGame con PyKinect <br> - Proyecto de Pyvot |
 | Servicio <br>de comprobación <br> de manifiesto <br>para complementos <br>web de Office | verificationservice.osi.office.net | https | 443 | Se utiliza para validar los manifiestos para complementos web de Office |
 | Complementos de Office <br>y SharePoint | sharepoint.com | https | 443 | Se utiliza para publicar y probar los complementos de Office y SharePoint en SharePoint Online |
 | Host del servicio <br>de pruebas del<br> administrador de flujos de trabajo | | http | 12292 | Una regla de firewall que se crea automáticamente para probar los complementos de SharePoint con los flujos de trabajo |
@@ -141,7 +141,8 @@ Aquí tiene algunas opciones de soporte técnico más:
 
 ## <a name="see-also"></a>Vea también
 
+* [Requisitos de conectividad de Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Creación de una instalación de red de Visual Studio](create-a-network-installation-of-visual-studio.md)
-* [Solución de problemas de errores relacionados con la red en Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
+* [Solución de problemas de errores relacionados con la red en Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
-* [Instalación y uso de Visual Studio para Mac detrás de un firewall o servidor proxy](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
+* [Install behind a firewall or proxy server (Visual Studio for Mac) (Instalación detrás de un firewall o servidor proxy [Visual Studio para Mac])](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)

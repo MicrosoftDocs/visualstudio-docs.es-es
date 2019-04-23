@@ -1,70 +1,36 @@
 ---
 title: Instalar marcos de prueba unitaria de terceros
-ms.date: 06/07/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982927"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857707"
 ---
 # <a name="install-unit-test-frameworks"></a>Instalación de marcos de pruebas unitarias
 
-El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de pruebas que haya desarrollado una interfaz de adaptador para el explorador. El programa de instalación del marco instala los binarios y agrega plantillas del proyecto de Visual Studio para los idiomas que admite. Cuando crea un proyecto con la plantilla, el marco se registra en el Explorador de pruebas. Una solución de Visual Studio puede contener proyectos de prueba unitaria que usen diferentes marcos y que estén destinados a diferentes idiomas. El Explorador de pruebas los ejecuta todos.
+El Explorador de pruebas de Visual Studio puede ejecutar pruebas de cualquier marco de pruebas unitarias que haya desarrollado una interfaz de adaptador para él. El programa instalación del marco copia los archivos binarios y agrega plantillas del proyecto de Visual Studio para los idiomas que admite. Cuando crea un proyecto con la plantilla, el marco se registra en el Explorador de pruebas.
 
-[MSTest](getting-started-with-unit-testing.md) es el marco de pruebas proporcionado por Visual Studio y se instala con Visual Studio de forma predeterminada.
+Una solución de Visual Studio puede contener proyectos de prueba unitaria que usen diferentes marcos y que estén destinados a diferentes idiomas.
+
+[MSTest](getting-started-with-unit-testing.md) es el marco de pruebas que ofrece Visual Studio y está instalado de forma predeterminada.
 
 ## <a name="acquire-frameworks"></a>Adquisición de marcos de trabajo
 
-Puede descargar e instalar marcos de pruebas unitarias de terceros mediante el Administrador de extensiones de Visual Studio o desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Los marcos también pueden descargarse desde otros sitios, como el sitio web del marco.
+Instale marcos de pruebas unitarias de terceros mediante **Administrador de paquetes NuGet**.
 
-### <a name="install-from-visual-studio"></a>Instalar desde Visual Studio
+1. Haga clic con el botón derecho en el proyecto que va a contener el código de prueba y seleccione **Administrar paquetes NuGet**.
 
-::: moniker range="vs-2017"
+2. En el **Administrador de paquetes NuGet**, busque el marco de pruebas que quiera instalar y haga clic en **Instalar**.
 
-1. Elija **Herramientas** > **Extensiones y actualizaciones**.
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. Elija **Extensiones** > **Administrar extensiones**.
-
-::: moniker-end
-
-2. Expanda **En línea** > **Visual Studio Marketplace** > **Herramientas** y, a continuación, elija **Pruebas**.
-
-3. Examine la lista para buscar el marco.
-
-4. Elija el marco y seleccione **Descargar**.
-
-Para obtener más información, vea [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
-
-### <a name="install-from-the-web"></a>Instalar desde Internet
-
-Si sabe qué marco le interesa, realice lo siguiente:
-
-1. Abra [Visual Studio Marketplace ](https://marketplace.visualstudio.com/vs).
-
-2. Escriba el nombre del marco en el cuadro **Buscar**.
-
-3. Elija el marco en la lista de resultados para desplazarse a la página de **Visual Studio Marketplace** de la herramienta.
-
-Para examinar una lista de los marcos junto con otras herramientas de pruebas, realice lo siguiente:
-
-1. Abra [Visual Studio Marketplace ](https://marketplace.visualstudio.com/vs).
-
-2. En **Filtrar por categoría/colección**, elija **Ver todo**.
-
-3. En la lista **Categoría** (etiquetada como **Mostrando**), expanda el nodo **Herramientas** y seleccione **Pruebas**.
-
-4. Elija un marco en la lista de resultados para desplazarse a la página de **Visual Studio Marketplace** de la herramienta.
+   ![Administrador de paquetes NuGet en Visual Studio](media/vs-2019/nuget-package-manager.png)
 
 ## <a name="update-to-the-latest-test-adapters"></a>Actualización a los adaptadores de prueba más recientes
 
@@ -84,4 +50,4 @@ Actualice al adaptador de pruebas estable más reciente para experimentar una me
 
 ## <a name="see-also"></a>Vea también
 
-- [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
+- [Prueba unitaria del código](../test/unit-test-your-code.md)
