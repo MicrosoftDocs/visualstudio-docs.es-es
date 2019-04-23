@@ -22,12 +22,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7fe876b9205d7efede2f5c1085c082f7b0ec6fd2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 631b1d35a0878bfc362b03751f35909839c7da19
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088059"
 ---
 # <a name="com-server-and-container-debugging"></a>Depuración de servidores y contenedores COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ Las aplicaciones COM realizan una serie de tareas fuera del control directo del 
   
  El depurador de Visual Studio permite la depuración superficial o exhaustiva de contenedores y servidores. Esto incluye la capacidad de ejecutar instrucciones paso a paso entre llamadas a procedimientos remotos (RPC).  
   
-##  <a name="BKMK_COMServerandContainerintheSameSolution"></a> Depuración de un servidor COM y un contenedor en la misma solución  
+## <a name="BKMK_COMServerandContainerintheSameSolution"></a> Depuración de un servidor COM y un contenedor en la misma solución  
  Se puede depurar un servidor y contenedor COM mediante dos proyectos dentro de la misma solución. Establezca los puntos de interrupción apropiados en cada proyecto y depure. Cuando el contenedor llama al servidor que visita un punto de interrupción, el contenedor esperará hasta que regrese el código del servidor, es decir, hasta que termine de depurarlo.  
   
  La depuración de un contenedor COM es similar a la de un programa estándar. Una diferencia está en la depuración de un evento que genera una devolución de llamada (por ejemplo, al arrastrar datos a la aplicación contenedora). En este caso, debe establecer un punto de interrupción en la función de devolución de llamada.  
   
-##  <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Depuración de una aplicación de servidor sin información del contenedor  
+## <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Depuración de una aplicación de servidor sin información del contenedor  
  Si no tiene o no desea utilizar información de depuración para la aplicación contenedora, puede empezar el proceso de depuración de la aplicación del servidor en tres pasos:  
   
-1.  Comience a depurar el servidor como si se tratara de una aplicación normal.  
+1. Comience a depurar el servidor como si se tratara de una aplicación normal.  
   
-2.  Establezca puntos de interrupción donde desee.  
+2. Establezca puntos de interrupción donde desee.  
   
-3.  Inicie la aplicación contenedora.  
+3. Inicie la aplicación contenedora.  
   
-##  <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Depuración de una aplicación de Aislamiento de servidor y dominio (SDI)  
+## <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Depuración de una aplicación de Aislamiento de servidor y dominio (SDI)  
  Si está depurando una aplicación de servidor SDI, debe especificar `/Embedding` o `/Automation` en la propiedad **Argumentos de la línea de comandos** del cuadro de diálogo Páginas de propiedades de *proyecto* de los proyectos de C/C++, C# o Visual Basic.  
   
  Con los argumentos de esta línea de comandos, el depurador puede iniciar la aplicación de servidor como si se iniciara desde un contenedor. Después, al iniciar el contenedor desde el Administrador de programas o desde el Administrador de archivos, el contenedor utilizará la instancia del servidor que se inició en el depurador.  

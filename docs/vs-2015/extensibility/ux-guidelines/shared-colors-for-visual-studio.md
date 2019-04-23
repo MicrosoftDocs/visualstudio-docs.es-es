@@ -8,56 +8,59 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c8d0dfb8a7758d0619557f6c54056cd88ec68771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086434"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual Studio, o si quiere que el elemento de la interfaz sea coherente con características similares, use los nombres de token existentes de los archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.
 
- En este artículo se describen los elementos de interfaz de usuario comunes y los nombres de token que estos usan y a los que se puede hacer referencia al crear una interfaz de usuario similar. Para obtener información específica sobre cómo tener acceso a estos tokens de color, vea [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
+En este artículo se describen los elementos de interfaz de usuario comunes y los nombres de token que estos usan y a los que se puede hacer referencia al crear una interfaz de usuario similar. Para obtener información específica sobre cómo tener acceso a estos tokens de color, vea [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
- Asegúrese de usar correctamente los nombres de token:
+Asegúrese de usar correctamente los nombres de token:
 
--   **Usar nombres de token en función de la función, no en el color en Sí.** Los colores comunes compartidos están asociados a elementos específicos de la interfaz y solo están destinados para características iguales o similares. Por ejemplo, no vuelva a usar el color de un cuadro combinado presionado para una animación de progreso de giro solo porque le gusta el color. Las funciones del cuadro combinado y de la animación son diferentes, y si se cambia el color asociado con el cuadro combinado, ya no puede ser un color adecuado para el elemento de animación. Un uso coherente del color ayuda a orientar a los usuarios y evitar confusiones.
+- **Usar nombres de token en función de la función, no en el color en Sí.** Los colores comunes compartidos están asociados a elementos específicos de la interfaz y solo están destinados para características iguales o similares. Por ejemplo, no vuelva a usar el color de un cuadro combinado presionado para una animación de progreso de giro solo porque le gusta el color. Las funciones del cuadro combinado y de la animación son diferentes, y si se cambia el color asociado con el cuadro combinado, ya no puede ser un color adecuado para el elemento de animación. Un uso coherente del color ayuda a orientar a los usuarios y evitar confusiones.
 
--   **Usar colores de fondo y texto en la combinación correcta.** Los colores de fondo destinados para usarse con texto tendrán un color de texto asociado. No use colores de texto que no sean los que se especifican para el fondo. Si no hay un color de texto asociado, no use ese color de fondo para cualquier superficie en la que tiene pensado mostrar texto. Otras combinaciones de colores de fondo y de texto pueden dar lugar a una interfaz ilegible.
+- **Usar colores de fondo y texto en la combinación correcta.** Los colores de fondo destinados para usarse con texto tendrán un color de texto asociado. No use colores de texto que no sean los que se especifican para el fondo. Si no hay un color de texto asociado, no use ese color de fondo para cualquier superficie en la que tiene pensado mostrar texto. Otras combinaciones de colores de fondo y de texto pueden dar lugar a una interfaz ilegible.
 
--   **Usar colores de control que son adecuados para su ubicación.** En determinados estados, algunos controles de Visual Studio no tienen colores de borde y de fondo independientes. En su lugar, toman los colores de las superficies que están detrás de ellos. Procure usar siempre los nombres de token que sean adecuados para la ubicación donde coloca el control.
+- **Usar colores de control que son adecuados para su ubicación.** En determinados estados, algunos controles de Visual Studio no tienen colores de borde y de fondo independientes. En su lugar, toman los colores de las superficies que están detrás de ellos. Procure usar siempre los nombres de token que sean adecuados para la ubicación donde coloca el control.
 
 > [!IMPORTANT]
->  No use tokens que se encuentran en las categorías "Página de inicio" o "Cider".
+> No use tokens que se encuentran en las categorías "Página de inicio" o "Cider".
 
 ## <a name="command-structures"></a>Estructuras de comandos
 
-###  <a name="BKMK_CommandMenus"></a> Menús
- Los menús pueden aparecer en varios lugares dentro de Visual Studio: la barra de menú principal, insertada en el documento o ventanas de herramientas, o en el botón derecho en diversas ubicaciones en todo el IDE. Las implementaciones de menús asociados con otros elementos de la interfaz de usuario se describen en la sección del elemento respectivo. Se debe usar siempre la implementación de menús estándar proporcionada por el entorno de Visual Studio. Sin embargo, en algunas ocasiones podría no tener acceso a los menús estándar de Visual Studio. En estos casos, use los siguientes nombres de token para asegurarse de que la interfaz de usuario sea coherente con otros menús de Visual Studio.
+### <a name="BKMK_CommandMenus"></a> Menús
 
- ![Menus redline](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")
+Los menús pueden aparecer en varios lugares dentro de Visual Studio: la barra de menú principal, insertada en el documento o ventanas de herramientas, o en el botón derecho en diversas ubicaciones en todo el IDE. Las implementaciones de menús asociados con otros elementos de la interfaz de usuario se describen en la sección del elemento respectivo. Se debe usar siempre la implementación de menús estándar proporcionada por el entorno de Visual Studio. Sin embargo, en algunas ocasiones podría no tener acceso a los menús estándar de Visual Studio. En estos casos, use los siguientes nombres de token para asegurarse de que la interfaz de usuario sea coherente con otros menús de Visual Studio.
 
- Use…
- -   siempre que necesite crear un menú personalizado.
+![Menus redline](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")
+
+Use…
+- siempre que necesite crear un menú personalizado.
 
 - cuando haya un nuevo componente de interfaz de usuario que quiera hacer coincidir con los menús de Visual Studio.
 
-  No use…
-  el color de fondo por sí solo. Use siempre la combinación de primer plano y fondo tal como se especifica.
+No use…
+el color de fondo por sí solo. Use siempre la combinación de primer plano y fondo tal como se especifica.
 
 #### <a name="menu-title"></a>Título de menú
- Los títulos de menú constan de un fondo, un borde y el texto del título, así como un glifo opcional, que suele usarse cuando el menú se encuentra en una barra de comandos.
 
- ![Menu title redline](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303-001_MenuTitleRedline")
+Los títulos de menú constan de un fondo, un borde y el texto del título, así como un glifo opcional, que suele usarse cuando el menú se encuentra en una barra de comandos.
 
- Use…
+![Menu title redline](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303-001_MenuTitleRedline")
+
+Use…
 cada vez que cree un título de menú personalizado.
 
- No use…
- -   para cualquier elemento que no desea que siempre coincida con el título de menú.
+No use…
+- para cualquier elemento que no desea que siempre coincida con el título de menú.
 
 - en cualquier combinación de primer plano y fondo distinta de la especificada.
 
@@ -192,15 +195,16 @@ cada vez que cree un título de menú personalizado.
   Ninguna
 
 #### <a name="menu"></a>Menú
- Un elemento de menú individual se compone del texto del menú y un icono opcional, una casilla o un glifo de submenú. Su color de fondo y de texto cambian al mantener el puntero. Este token de color es un par de primer plano y fondo.
 
- ![Menu items redline](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303-009_MenuItemRedline")
+Un elemento de menú individual se compone del texto del menú y un icono opcional, una casilla o un glifo de submenú. Su color de fondo y de texto cambian al mantener el puntero. Este token de color es un par de primer plano y fondo.
 
- Use…
+![Menu items redline](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303-009_MenuItemRedline")
+
+Use…
 para cualquier lista desplegable que se inicia desde una barra de menús o una barra de comandos.
 
- No use…
- -   para cualquier lista desplegable que se muestra en otro contexto.
+No use…
+- para cualquier lista desplegable que se muestra en otro contexto.
 
 - en cualquier combinación de primer plano y fondo distinta de la especificada.
 
@@ -351,32 +355,34 @@ para cualquier lista desplegable que se inicia desde una barra de menús o una b
   `Environment.CommandBarSelectedIconDisabled`
 
 ### <a name="command-bar"></a>Barra de comandos
- La barra de comandos puede aparecer en varios lugares del IDE de Visual Studio, sobre todo en el área de comandos e insertados en ventanas de herramientas o documentos.
 
- En general, use siempre la implementación de menús estándar proporcionada por el entorno de Visual Studio. El uso del mecanismo estándar, garantiza que todos los detalles visuales se mostrarán correctamente y que los elementos interactivos se comportarán de forma coherente con otros controles de barra de comandos de Visual Studio. Sin embargo, si necesita crear su propia barra de comandos, asegúrese de diseñarla correctamente mediante los siguientes nombres de token.
+La barra de comandos puede aparecer en varios lugares del IDE de Visual Studio, sobre todo en el área de comandos e insertados en ventanas de herramientas o documentos.
 
- ![Límite de barra de comandos](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
+En general, use siempre la implementación de menús estándar proporcionada por el entorno de Visual Studio. El uso del mecanismo estándar, garantiza que todos los detalles visuales se mostrarán correctamente y que los elementos interactivos se comportarán de forma coherente con otros controles de barra de comandos de Visual Studio. Sin embargo, si necesita crear su propia barra de comandos, asegúrese de diseñarla correctamente mediante los siguientes nombres de token.
 
- ![Límite de botón de desbordamiento](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+![Límite de barra de comandos](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
 
- Use…
+![Límite de botón de desbordamiento](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+
+Use…
 en lugares donde se necesita una barra de comandos insertada pero no se puede usar la implementación estándar de barra de comandos de Visual Studio.
 
- No use…
- -   para elementos de la interfaz de usuario que no sean similares a una barra de comandos.
+No use…
+- para elementos de la interfaz de usuario que no sean similares a una barra de comandos.
 
--   para los componentes de barra de comandos distintos de aquellos para los que se especifican nombres de los token.
+- para los componentes de barra de comandos distintos de aquellos para los que se especifican nombres de los token.
 
 #### <a name="command-bar-group"></a>Grupo de la barra de comandos
- Un grupo de la barra de comandos se compone de un conjunto relacionado de controles de barra de comandos y puede incluir cualquier número de botones, botones de expansión, menús desplegables, cuadros combinados o menús. Los colores de dichos controles se regulan mediante nombres de token independientes y se describen individualmente en esta guía. Se usa una línea divisoria para dividir un grupo de la barra de comandos en subgrupos relacionados.
 
- ![Límite de grupo de la barra de comandos](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+Un grupo de la barra de comandos se compone de un conjunto relacionado de controles de barra de comandos y puede incluir cualquier número de botones, botones de expansión, menús desplegables, cuadros combinados o menús. Los colores de dichos controles se regulan mediante nombres de token independientes y se describen individualmente en esta guía. Se usa una línea divisoria para dividir un grupo de la barra de comandos en subgrupos relacionados.
 
- Use…
+![Límite de grupo de la barra de comandos](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+
+Use…
 en lugares donde se necesita una barra de comandos insertada pero no se puede usar la implementación estándar de barra de comandos de Visual Studio.
 
- No use…
- -   para elementos de la interfaz de usuario que no sean similares a una barra de comandos.
+No use…
+- para elementos de la interfaz de usuario que no sean similares a una barra de comandos.
 
 - para los componentes de barra de comandos distintos de aquellos para los que se especifican nombres de los token.
 
@@ -407,15 +413,16 @@ en lugares donde se necesita una barra de comandos insertada pero no se puede us
   `Environment.CommandBarToolBarSeparatorHighlight`
 
 #### <a name="command-icons"></a>Iconos de comando
- ![Límite de icono de comando](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- ![Límite de icono de comando](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+![Límite de icono de comando](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- Use…
+![Límite de icono de comando](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+
+Use…
 para los botones que se colocarán en una barra de comandos.
 
- No use…
- -   para controles que tienen sus propios nombres de token.
+No use…
+- para controles que tienen sus propios nombres de token.
 
 - en cualquier combinación de primer plano y fondo distinta de la especificada.
 
@@ -551,20 +558,20 @@ para los botones que se colocarán en una barra de comandos.
 
   N/D
 
-####  <a name="BKMK_CommandComboBox"></a> Cuadro combinado
+#### <a name="BKMK_CommandComboBox"></a> Cuadro combinado
 
 > [!IMPORTANT]
->  Los cuadros combinados son similares a las listas desplegables, pero incluyen un área de texto editable. Si la lista desplegable no incluye un área de texto editable, use los tokens de color que se encuentran en [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
+> Los cuadros combinados son similares a las listas desplegables, pero incluyen un área de texto editable. Si la lista desplegable no incluye un área de texto editable, use los tokens de color que se encuentran en [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
 
- ![Combo box redline](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
+![Combo box redline](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
 
- Use…
- -   al crear cuadros combinados personalizados.
+Use…
+- al crear cuadros combinados personalizados.
 
 - al crear un control de barra de comandos que sea similar a un cuadro combinado.
 
   No use…
-  -   para ningún elemento que no desea que siempre coincida con la interfaz de usuario de la barra de comandos.
+  - para ningún elemento que no desea que siempre coincida con la interfaz de usuario de la barra de comandos.
 
 - si tiene acceso a un cuadro combinado con estilo.
 
@@ -798,18 +805,18 @@ para los botones que se colocarán en una barra de comandos.
 
   `Environment.ComboBoxDisabledGlyph`
 
-####  <a name="BKMK_CommandDropDown"></a> Lista desplegable
+#### <a name="BKMK_CommandDropDown"></a> Lista desplegable
 
 > [!IMPORTANT]
->  Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color que se encuentran en [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color que se encuentran en [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
- ![Quitar&#45;hacia abajo línea roja](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
+![Quitar&#45;hacia abajo línea roja](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
 
- Use…
+Use…
 al crear controles de lista desplegable personalizados.
 
- No use…
- -   para cualquier elemento que no sea similar a una lista desplegable.
+No use…
+- para cualquier elemento que no sea similar a una lista desplegable.
 
 - para cuadros combinados o botones de expansión.
 
@@ -1010,15 +1017,16 @@ al crear controles de lista desplegable personalizados.
   `Environment.DropDownDisabledGlyph`
 
 #### <a name="split-button"></a>Botón de expansión
- Los botones de expansión comparten muchos nombres de token con otros controles de barra de comandos como, por ejemplo, botones, menús y texto de la barra de comandos. Todos los nombres de token de acciones y botones desplegables necesarios se repiten aquí para su comodidad. Las listas desplegables de botón de expansión son implementaciones de la barra de comandos [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
- ![Límite de botón de división](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+Los botones de expansión comparten muchos nombres de token con otros controles de barra de comandos como, por ejemplo, botones, menús y texto de la barra de comandos. Todos los nombres de token de acciones y botones desplegables necesarios se repiten aquí para su comodidad. Las listas desplegables de botón de expansión son implementaciones de la barra de comandos [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
- Use…
+![Límite de botón de división](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+
+Use…
 si crea un botón de expansión personalizado.
 
- No use…
- -   para otros tipos de botones.
+No use…
+- para otros tipos de botones.
 
 - en cualquier combinación de primer plano y fondo distinta de la especificada.
 
@@ -1425,7 +1433,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
   al crear pestañas de documentos personalizadas.
 
   No use…
-  -   para pestañas provisionales (vista previa).
+  - para pestañas provisionales (vista previa).
 
 - para cualquier interfaz de usuario que no desea que cambie automáticamente si se actualiza un tema del shell.
 
@@ -1538,15 +1546,16 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
  Se establece en el mismo color que el fondo.
 
 #### <a name="preview-tab"></a>Pestaña de vista previa
- La pestaña de vista previa aparece en la parte derecha del canal de pestañas de documentos cuando el usuario hace clic en un elemento de la ventana de herramientas del Explorador de soluciones. Funciona como una vista previa del documento y también proporciona al usuario la posibilidad de mantener el documento abierto en la parte izquierda del canal de pestañas de documentos. Solo se puede abrir una pestaña de vista previa a la vez. Las pestañas de vista previa tienen tanto el estado seleccionado como en segundo plano al igual que las pestañas abiertas y, además, pueden estar con y sin foco en su estado activo.
 
- ![Preview tab redline](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303-078_PreviewTabRedline")
+La pestaña de vista previa aparece en la parte derecha del canal de pestañas de documentos cuando el usuario hace clic en un elemento de la ventana de herramientas del Explorador de soluciones. Funciona como una vista previa del documento y también proporciona al usuario la posibilidad de mantener el documento abierto en la parte izquierda del canal de pestañas de documentos. Solo se puede abrir una pestaña de vista previa a la vez. Las pestañas de vista previa tienen tanto el estado seleccionado como en segundo plano al igual que las pestañas abiertas y, además, pueden estar con y sin foco en su estado activo.
 
- Use…
+![Preview tab redline](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303-078_PreviewTabRedline")
+
+Use…
 en cualquier parte donde cree vista previa provisional y quiere hacer coincidir algún elemento con el color de la pestaña de vista previa actual.
 
- No use…
- -   para cualquier tipo de documento o pestaña que no sea provisional (vista previa).
+No use…
+- para cualquier tipo de documento o pestaña que no sea provisional (vista previa).
 
 - para cualquier interfaz de usuario que no desea que cambie automáticamente si se actualiza un tema del shell.
 
@@ -1661,15 +1670,16 @@ en cualquier parte donde cree vista previa provisional y quiere hacer coincidir 
   Se establece en el mismo color que el fondo.
 
 #### <a name="document-overflow-button"></a>Botón de desbordamiento de documento
- El botón de desbordamiento de documento se muestra si hay uno o varios documentos abiertos, independientemente de si hay espacio vertical en la configuración actual para que quepan todas las pestañas de documentos. En el menú desplegable de desbordamiento de documento, que está controlado por los colores de **CommandBarMenu** (consulte [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), se muestra una lista de todos los documentos abiertos (visibles y ocultos) y los cambios de glifo de desbordamiento según si se muestran todos los documentos abiertos en el canal de pestañas.
 
- ![Límite de desbordamiento](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+El botón de desbordamiento de documento se muestra si hay uno o varios documentos abiertos, independientemente de si hay espacio vertical en la configuración actual para que quepan todas las pestañas de documentos. En el menú desplegable de desbordamiento de documento, que está controlado por los colores de **CommandBarMenu** (consulte [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), se muestra una lista de todos los documentos abiertos (visibles y ocultos) y los cambios de glifo de desbordamiento según si se muestran todos los documentos abiertos en el canal de pestañas.
 
- Use…
+![Límite de desbordamiento](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+
+Use…
 si crea un botón de desbordamiento de documento personalizado.
 
- No use…
- -   para interfaz de usuario que no sea similar a un botón de desbordamiento.
+No use…
+- para interfaz de usuario que no sea similar a un botón de desbordamiento.
 
 - para botones de desbordamiento de la barra de comandos.
 
@@ -1895,13 +1905,14 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
  `Environment.TitleBarDragHandle`
 
 #### <a name="title-bar-buttons"></a>Botones de la barra de título
- ![Límite de botón de barra de título](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
 
- Use…
+![Límite de botón de barra de título](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
+
+Use…
 para los botones que aparecen en la interfaz de usuario que usa los tokens de color de las barras de título de la ventana de herramientas.
 
- No use…
- -   para los botones que aparecen en otras ubicaciones.
+No use…
+- para los botones que aparecen en otras ubicaciones.
 
 - en cualquier combinación de primer plano y fondo distinta de la especificada.
 
@@ -2227,7 +2238,7 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
   al diseñar un cuadro de búsqueda personalizado.
 
   No use…
-  -   para elementos que no sean un cuadro de búsqueda.
+  - para elementos que no sean un cuadro de búsqueda.
 
 - para elementos que no desea que siempre coincidan con la interfaz de usuario de búsqueda.
 
@@ -2516,17 +2527,18 @@ para cualquier interfaz de usuario que no desea que cambie automáticamente si s
   Ninguna
 
 #### <a name="search-drop-down-lists"></a>Listas desplegables de búsqueda
- El menú desplegable del cuadro de búsqueda puede ser ligeramente más complejo que otros menús desplegables en Visual Studio. Las secciones de "búsquedas sugeridas" y "opciones de búsqueda" pueden aparecer solas o juntas en el menú y cada una de ellas se colorea por separado. Además, estas secciones están separadas por una línea cuando aparecen juntas y un borde rodea todo el menú desplegable.
 
- ![Lista de búsqueda&#45;hacia abajo línea roja](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+El menú desplegable del cuadro de búsqueda puede ser ligeramente más complejo que otros menús desplegables en Visual Studio. Las secciones de "búsquedas sugeridas" y "opciones de búsqueda" pueden aparecer solas o juntas en el menú y cada una de ellas se colorea por separado. Además, estas secciones están separadas por una línea cuando aparecen juntas y un borde rodea todo el menú desplegable.
 
- Use…
- -   si crea una lista desplegable de búsqueda personalizada.
+![Lista de búsqueda&#45;hacia abajo línea roja](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+
+Use…
+- si crea una lista desplegable de búsqueda personalizada.
 
 - los nombres de token correctos para los componentes de lista correctos.
 
   No use…
-  -   para las listas desplegables que aparecen en otros contextos.
+  - para las listas desplegables que aparecen en otros contextos.
 
 - en cualquier combinación de primer plano y fondo distinta de la especificada.
 
@@ -2906,16 +2918,17 @@ si crea interfaz de usuario que quiere hacer coincidir con las barras de desplaz
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-###  <a name="BKMK_TreeView"></a> Vista de árbol
- Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explorador de servidores y la Vista de clases, implementan un esquema organizativo jerárquico cuyos colores se controlan mediante los nombres de colores de la categoría TreeView. Todos los elementos de una vista de árbol tienen colores de fondo y de texto. Los elementos que tienen elementos secundarios anidados también tienen glifos que indican si el elemento está expandido o contraído.
+### <a name="BKMK_TreeView"></a> Vista de árbol
 
- ![Tree view redline](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")
+Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explorador de servidores y la Vista de clases, implementan un esquema organizativo jerárquico cuyos colores se controlan mediante los nombres de colores de la categoría TreeView. Todos los elementos de una vista de árbol tienen colores de fondo y de texto. Los elementos que tienen elementos secundarios anidados también tienen glifos que indican si el elemento está expandido o contraído.
 
- Use…
+![Tree view redline](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")
+
+Use…
 en cualquier lugar en el que es necesario implementar una vista organizativa jerárquica.
 
- No use…
- -   para cualquier elemento que no sea similar a una vista de árbol.
+No use…
+- para cualquier elemento que no sea similar a una vista de árbol.
 
 - en cualquier combinación de primer plano y fondo distinta de la especificada.
 
@@ -3332,13 +3345,14 @@ para cualquier interfaz de usuario que no sea un control de casilla.
  `CommonControls.CheckBoxGlyphFocused`
 
 ### <a name="drop-boxcombo-box-controls"></a>Controles de cuadro combinado o lista desplegable
- ![Drop&#45;down&#47;combo box redline](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")
 
- Use…
+![Drop&#45;down&#47;combo box redline](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")
+
+Use…
 para las listas desplegables y cuadros combinado que forman parte del cuadro de documento.
 
- No use…
- -   para cualquier interfaz de usuario que no sea una lista desplegable o un cuadro combinado.
+No use…
+- para cualquier interfaz de usuario que no sea una lista desplegable o un cuadro combinado.
 
 - para una [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) o un [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) de la barra de comandos.
 
@@ -3690,17 +3704,18 @@ para cualquier interfaz de usuario que no sea un control tabular o de cuadrícul
  Ninguna
 
 ## <a name="manifest-designer"></a>Diseñador de manifiestos
- El Diseñador de manifiestos se creó para que resulte más fácil editar el archivo de manifiesto en los proyectos de Windows 8 y Windows Phone 8. Aunque no hay ningún marco compartido disponible para su consumo, es conveniente que haga coincidir el diseño y los colores de las pestañas de navegación u orientación con la estructura general. Para obtener más información sobre el diseño, vea [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- ![Límite de diseñador de manifiestos](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+El Diseñador de manifiestos se creó para que resulte más fácil editar el archivo de manifiesto en los proyectos de Windows 8 y Windows Phone 8. Aunque no hay ningún marco compartido disponible para su consumo, es conveniente que haga coincidir el diseño y los colores de las pestañas de navegación u orientación con la estructura general. Para obtener más información sobre el diseño, vea [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- Use…
- -   para los diseñadores que son similares al Diseñador de manifiestos.
+![Límite de diseñador de manifiestos](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+
+Use…
+- para los diseñadores que son similares al Diseñador de manifiestos.
 
 - en lugar de usar los controles comunes de pestaña en la parte superior de un editor en el cuadro de documento.
 
-  No use…
-  -   si tiene más de seis pestañas.
+No use…
+- si tiene más de seis pestañas.
 
 - para cualquier interfaz de usuario que no tenga la misma estructura que el Diseñador de manifiestos.
 
@@ -3964,15 +3979,16 @@ para cualquier otro tipo de interfaz de usuario.
 ## <a name="shell"></a>Shell
 
 ### <a name="background"></a>Fondo
- El fondo del entorno consta de dos niveles. El nivel inferior es un color sólido que cubre todo el IDE. El nivel superior se encuentra debajo del área de comandos y entre los canales de ocultación automática de la ventana de herramientas en los extremos izquierdo y derecho del IDE. A partir de Visual Studio 2013, los niveles de fondo superior e inferior se establecen en el mismo color en los temas claro y oscuro.
 
- ![Límite de fondo del shell](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+El fondo del entorno consta de dos niveles. El nivel inferior es un color sólido que cubre todo el IDE. El nivel superior se encuentra debajo del área de comandos y entre los canales de ocultación automática de la ventana de herramientas en los extremos izquierdo y derecho del IDE. A partir de Visual Studio 2013, los niveles de fondo superior e inferior se establecen en el mismo color en los temas claro y oscuro.
 
- Use…
+![Límite de fondo del shell](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+
+Use…
 para los lugares que quiere hacer coincidir con el fondo del entorno de Visual Studio.
 
- No use…
- -   como relleno de lugares que no son superficies de fondo.
+No use…
+- como relleno de lugares que no son superficies de fondo.
 
 - como fondo en el que quiere colocar elementos en primer plano.
 
@@ -4009,17 +4025,18 @@ para los lugares que quiere hacer coincidir con el fondo del entorno de Visual S
   `Environment.EnvironmentBackgroundGradientMiddle2`
 
 ### <a name="command-shelf"></a>Área de comandos
- Para los fondos del área de comandos se usan dos conjuntos de nombres de token: un conjunto para la ubicación donde se coloca la barra de menús y uno para la ubicación donde se colocan las barras de comandos. Un grupo individual de la barra de comandos tiene sus propios valores de color de fondo, que se describen con más detalle en la sección "Barra de comandos". El texto de la barra de menús y la barra de comandos se describe en las secciones de barra de menús y barra de comandos, respectivamente.
 
- ![Límite de shell de comandos](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+Para los fondos del área de comandos se usan dos conjuntos de nombres de token: un conjunto para la ubicación donde se coloca la barra de menús y uno para la ubicación donde se colocan las barras de comandos. Un grupo individual de la barra de comandos tiene sus propios valores de color de fondo, que se describen con más detalle en la sección "Barra de comandos". El texto de la barra de menús y la barra de comandos se describe en las secciones de barra de menús y barra de comandos, respectivamente.
 
- Use…
- -   para las áreas donde se colocan menús o barras de herramientas.
+![Límite de shell de comandos](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+
+Use…
+- para las áreas donde se colocan menús o barras de herramientas.
 
 - con el fondo correcto /? primer plano.
 
-  No use…
-  para áreas que no sean similares a un área de comandos.
+No use…
+para áreas que no sean similares a un área de comandos.
 
   Componente
 

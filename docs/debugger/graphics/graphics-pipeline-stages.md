@@ -1,5 +1,5 @@
 ---
-title: Etapas de canalización de gráficos | Microsoft Docs
+title: Etapas de canalización de gráficos | Documentos de Microsoft
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba192d5ec897a1914ef0ba70188930c8c4ae7ecc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 0eb6cf6f460ca0cf164f6acb78b1309d2222ea39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089138"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapas de canalización de gráficos
 La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etapa de la canalización de gráficos Direct3D transforma una llamada a draw individual.
@@ -43,14 +43,14 @@ La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etap
 
 #### <a name="to-view-a-shaders-source-code"></a>Para ver el código fuente de un sombreador
 
--   En la ventana **Etapas de canalización de gráficos**, busque la etapa del sombreador que se corresponde con el sombreador que desea examinar. A continuación, debajo de la imagen de vista previa, siga el vínculo del título de la etapa del sombreador. Por ejemplo, siga el vínculo **Sombreador de vértices obj:30** para ver el código fuente del sombreador de vértices.
+- En la ventana **Etapas de canalización de gráficos**, busque la etapa del sombreador que se corresponde con el sombreador que desea examinar. A continuación, debajo de la imagen de vista previa, siga el vínculo del título de la etapa del sombreador. Por ejemplo, siga el vínculo **Sombreador de vértices obj:30** para ver el código fuente del sombreador de vértices.
 
     > [!TIP]
     >  El número de objeto, **obj:30**, identifica este sombreador en toda la interfaz del Analizador de gráficos, tal como se muestra en la ventana del historial de píxeles y la tabla de objetos.
 
 #### <a name="to-debug-a-shader"></a>Para depurar un sombreador
 
--   En la ventana **Etapas de canalización de gráficos**, busque la etapa del sombreador que se corresponde con el sombreador que desea depurar. A continuación, debajo de la imagen de vista previa, elija **Iniciar depuración**. Este punto de entrada en el depurador HLSL tiene como valor predeterminado la primera invocación del sombreador para la etapa correspondiente, es decir, el primer píxel, vértice o primitiva que procesa el sombreador durante esta llamada a draw. Es posible acceder a las invocaciones de este sombreador para un vértice o píxel concreto a través del **Historial de píxeles de gráfico**.
+- En la ventana **Etapas de canalización de gráficos**, busque la etapa del sombreador que se corresponde con el sombreador que desea depurar. A continuación, debajo de la imagen de vista previa, elija **Iniciar depuración**. Este punto de entrada en el depurador HLSL tiene como valor predeterminado la primera invocación del sombreador para la etapa correspondiente, es decir, el primer píxel, vértice o primitiva que procesa el sombreador durante esta llamada a draw. Es posible acceder a las invocaciones de este sombreador para un vértice o píxel concreto a través del **Historial de píxeles de gráfico**.
 
 ### <a name="the-pipeline-stages"></a>Etapas de canalización
  La ventana Etapas de canalización muestra solamente las etapas de canalización que estaban activas durante la llamada a draw. Cada etapa de canalización de gráficos transforma la entrada de la etapa anterior y pasa el resultado a la etapa siguiente. La primera etapa (el ensamblador de entrada) toma como entrada los datos del índice y del vértice de la aplicación; la última etapa (la fusión de salida) combina los píxeles recién representados con el contenido actual del búfer de fotogramas o destino de representación como salida para generar la imagen final que se ve en pantalla.
@@ -115,4 +115,4 @@ La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etap
 
 ## <a name="see-also"></a>Vea también
 - [Tutorial: Objetos ausentes debido al sombreado de vértices](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Tutorial: Depurar errores de representación debidos al sombreado](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Tutorial: Depuración de errores de representación debidos al sombreado](walkthrough-debugging-rendering-errors-due-to-shading.md)

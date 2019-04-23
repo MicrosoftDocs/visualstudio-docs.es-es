@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e53c91a641606f0ab4b29f9ce0357f4e9ee87022
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b38f81b3269d0a456c077023d23861a55ac06a4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117194"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 La API de inmutabilidad del SDK de modelado y visualización de Visual Studio permite que un programa bloquear la totalidad o parte de un modelo de lenguaje específico de dominio (DSL) para que se pueden leer pero no cambia. Podría usar esta opción de solo lectura, por ejemplo, para que un usuario puede pedir a sus compañeros para anotar y revisar un modelo DSL pero puede no puedan cambiar el original.
@@ -56,15 +56,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>Usar bloqueos
  Puede usar bloqueos para implementar esquemas como los ejemplos siguientes:
 
--   No permitir cambios en todos los elementos y relaciones, excepto aquellos que representan los comentarios. Esto permite a los usuarios anotar un modelo sin cambiarlo.
+- No permitir cambios en todos los elementos y relaciones, excepto aquellos que representan los comentarios. Esto permite a los usuarios anotar un modelo sin cambiarlo.
 
--   No permitir cambios en la partición predeterminada, pero permitir que los cambios en la partición de diagrama. El usuario puede reorganizar el diagrama, pero no puede modificar el modelo subyacente.
+- No permitir cambios en la partición predeterminada, pero permitir que los cambios en la partición de diagrama. El usuario puede reorganizar el diagrama, pero no puede modificar el modelo subyacente.
 
--   No permitir cambios en el Store excepto para un grupo de usuarios que están registrados en una base de datos independiente. Para otros usuarios, el diagrama de modelo son de solo lectura.
+- No permitir cambios en el Store excepto para un grupo de usuarios que están registrados en una base de datos independiente. Para otros usuarios, el diagrama de modelo son de solo lectura.
 
--   No permitir cambios en el modelo si se establece una propiedad booleana del diagrama en true. Proporcione un comando de menú para cambiar esa propiedad. Esto ayuda a garantizar que los usuarios que no hagan cambios accidentalmente.
+- No permitir cambios en el modelo si se establece una propiedad booleana del diagrama en true. Proporcione un comando de menú para cambiar esa propiedad. Esto ayuda a garantizar que los usuarios que no hagan cambios accidentalmente.
 
--   No permitir la adición y eliminación de elementos y relaciones de determinadas clases, pero permitir que los cambios de propiedad. Esto proporciona a los usuarios un formulario fijo en el que pueden rellenar las propiedades.
+- No permitir la adición y eliminación de elementos y relaciones de determinadas clases, pero permitir que los cambios de propiedad. Esto proporciona a los usuarios un formulario fijo en el que pueden rellenar las propiedades.
 
 ## <a name="lock-values"></a>Valores de bloqueo
  Los bloqueos se pueden establecer en Store, partición o ModelElement individual. Bloqueos es un `Flags` enumeración: puede combinar sus valores mediante '&#124;'.
@@ -78,7 +78,7 @@ partition.SetLocks(Locks.Delete);
 |Valor|Lo que significa que si `IsLocked(Value)` es true|
 |-|-|
 |Ninguna|Sin restricción.|
-|Property|No se puede cambiar las propiedades de dominio de elementos. Esto no es aplicable a las propiedades que se generan mediante la función de una clase de dominio en una relación.|
+|Propiedad|No se puede cambiar las propiedades de dominio de elementos. Esto no es aplicable a las propiedades que se generan mediante la función de una clase de dominio en una relación.|
 |Agregar|No se puede crear nuevos elementos y vínculos en una partición o almacenar.<br /><br /> No se aplica a `ModelElement`.|
 |Mover|Elemento no puede moverse entre las particiones si `element.IsLocked(Move)` es true, o si `targetPartition.IsLocked(Move)` es true.|
 |Eliminar|No se puede eliminar un elemento si este bloqueo se establece en el propio elemento, o en cualquiera de los elementos a la que podría propagar la eliminación, como las formas y elementos incrustados.<br /><br /> Puede usar `element.CanDelete()` para detectar si se puede eliminar un elemento.|
@@ -95,9 +95,9 @@ partition.SetLocks(Locks.Delete);
 
  Para definir una directiva de bloqueo, tendrá que:
 
--   Cree una clase que implemente <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
+- Cree una clase que implemente <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
 
--   Agregar esta clase a los servicios que están disponibles a través de DocData de su DSL.
+- Agregar esta clase a los servicios que están disponibles a través de DocData de su DSL.
 
 ### <a name="to-define-a-locking-policy"></a>Para definir una directiva de bloqueo
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> tiene la siguiente definición:

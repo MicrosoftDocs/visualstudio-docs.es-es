@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27aed07b7e4212502a819ce024b0ce46680df6bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089580"
 ---
 # <a name="resource-details-view---contention-data"></a>Vista Detalles de recursos: datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ La vista Detalles de recursos presenta un gráfico de escala de tiempo de los ev
   
 #### <a name="to-magnify-a-timeline-segment"></a>Para ampliar un segmento de la escala de tiempo  
   
--   Arrastre el puntero del mouse sobre un área de la escala de tiempo.  
+- Arrastre el puntero del mouse sobre un área de la escala de tiempo.  
   
      Al soltar el botón del mouse, la vista amplía el segmento de tiempo seleccionado. Puede repetir el proceso para ampliar todavía más el segmento. El cuadro de desplazamiento de la barra de desplazamiento temporal representa el tamaño relativo del segmento de tiempo que aparece en la vista.  
   
 #### <a name="to-zoom-out-on-a-timeline"></a>Para alejar una escala de tiempo  
   
--   Realice uno de estos pasos:  
+- Realice uno de estos pasos:  
   
-    -   Haga clic en **Alejar** para volver al nivel de zoom anterior.  
+    - Haga clic en **Alejar** para volver al nivel de zoom anterior.  
   
-    -   Haga clic en **Restablecer zoom** para mostrar toda la escala de tiempo en la vista.  
+    - Haga clic en **Restablecer zoom** para mostrar toda la escala de tiempo en la vista.  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>Para ver la pila de llamadas de un evento  
   
--   En el gráfico de escala de tiempo, haga clic en la barra de eventos.  
+- En el gráfico de escala de tiempo, haga clic en la barra de eventos.  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Para ver o editar el código fuente de una función en la pila de llamadas  
   
@@ -55,12 +55,12 @@ La vista Detalles de recursos presenta un gráfico de escala de tiempo de los ev
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>Para ver el árbol de llamadas de eventos de contención del recurso  
   
--   En el gráfico de escala de tiempo, haga clic en **Total**.  
+- En el gráfico de escala de tiempo, haga clic en **Total**.  
   
      Aparece la vista Contenciones del recurso. Para obtener más información, consulte [Vista Contenciones del recurso](../profiling/resource-contentions-view-contention-data.md)  
   
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Para ver todos los eventos de contención de un subproceso  
   
--   En el gráfico de escala de tiempo, haga clic en el nombre o identificador del subproceso.  
+- En el gráfico de escala de tiempo, haga clic en el nombre o identificador del subproceso.  
   
      Aparece la vista Detalles del subproceso para el subproceso seleccionado. Para obtener más información, consulte [Vista Detalles del subproceso](../profiling/thread-details-view-contention-data.md).

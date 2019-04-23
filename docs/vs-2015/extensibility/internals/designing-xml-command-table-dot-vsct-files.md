@@ -10,12 +10,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085916"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Diseñar la tabla de comandos XML (. Archivos Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -100,19 +100,19 @@ Un archivo de tabla (.vsct) del comando XML describe el diseño y la apariencia 
 ## <a name="vsct-file-design-guidelines"></a>. Instrucciones de diseño del archivo de Vsct  
  Para diseñar correctamente un archivo .vsct, siga estas instrucciones.  
   
--   Los comandos se pueden colocar solo en grupos, grupos se pueden colocar solo en los menús y menús pueden colocarse únicamente en grupos. Sólo los menús realmente se muestran en el IDE, grupos y los comandos no están.  
+- Los comandos se pueden colocar solo en grupos, grupos se pueden colocar solo en los menús y menús pueden colocarse únicamente en grupos. Sólo los menús realmente se muestran en el IDE, grupos y los comandos no están.  
   
--   No se puede asignar directamente a un menú submenús, pero deben asignarse a un grupo, que a su vez se asigna a un menú.  
+- No se puede asignar directamente a un menú submenús, pero deben asignarse a un grupo, que a su vez se asigna a un menú.  
   
--   Comandos, submenús y grupos pueden asignarse a un menú mediante el campo principal de su definición de directiva o grupo de la relación jerárquica.  
+- Comandos, submenús y grupos pueden asignarse a un menú mediante el campo principal de su definición de directiva o grupo de la relación jerárquica.  
   
--   Organización de una tabla de comandos únicamente a través de los campos de elemento primario en las directivas tiene una limitación importante. Las directivas que definen objetos pueden tomar el argumento de un único elemento primario.  
+- Organización de una tabla de comandos únicamente a través de los campos de elemento primario en las directivas tiene una limitación importante. Las directivas que definen objetos pueden tomar el argumento de un único elemento primario.  
   
--   Volver a usar los comandos, grupos o submenús requiere el uso de una directiva nueva para crear una nueva instancia del objeto con su propio `GUID:ID` par.  
+- Volver a usar los comandos, grupos o submenús requiere el uso de una directiva nueva para crear una nueva instancia del objeto con su propio `GUID:ID` par.  
   
--   Cada `GUID:ID` par debe ser único. Volver a usar un comando, por ejemplo, colocados en un menú, una barra de herramientas, o en un menú contextual, se controla mediante el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.  
+- Cada `GUID:ID` par debe ser único. Volver a usar un comando, por ejemplo, colocados en un menú, una barra de herramientas, o en un menú contextual, se controla mediante el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.  
   
--   Los comandos y submenús también pueden asignarse a varios grupos y grupos se pueden asignar a varios menús con el [elemento Commands](../../extensibility/commands-element.md).  
+- Los comandos y submenús también pueden asignarse a varios grupos y grupos se pueden asignar a varios menús con el [elemento Commands](../../extensibility/commands-element.md).  
   
 ## <a name="vsct-file-notes"></a>. Notas de archivo de Vsct  
  Si realiza cambios en un archivo .vsct después de que lo compilará y lo coloca en un archivo DLL nativo, debe ejecutar **devenv.exe /setup /nosetupvstemplates**. Esto obliga a los recursos de VSPackage especificados en el registro de experimental a leer y la base de datos interna que describe [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se vuelvan a generar.  

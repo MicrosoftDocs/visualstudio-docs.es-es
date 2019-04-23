@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar nuevas hojas de cálculo a libros mediante programación
+title: Procedimiento Agregar nuevas hojas de cálculo a libros mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,21 +15,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc23a3d0dfc18a9271db80df2cb1a42677b8ed5e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e1b45196fa70328809aa5da3a1f56ea57fce2085
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087357"
 ---
-# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Filtrar Agregar nuevas hojas de cálculo a libros mediante programación
+# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Procedimiento Agregar nuevas hojas de cálculo a libros mediante programación
   Puede crear una hoja de cálculo mediante programación y, a continuación, agregarla a la colección de hojas de cálculo del libro.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="to-add-a-new-worksheet-to-a-workbook-in-a-document-level-customization"></a>Para agregar una nueva hoja de cálculo a un libro en una personalización de nivel de documento
 
-1.  Use el método <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> de la colección <xref:Microsoft.Office.Interop.Excel.Sheets> .
+1. Use el método <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> de la colección <xref:Microsoft.Office.Interop.Excel.Sheets> .
 
      [!code-csharp[Trin_VstcoreExcelAutomation#15](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomation#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#15)]
@@ -38,7 +38,7 @@ ms.locfileid: "56643696"
 
 ## <a name="to-add-a-new-worksheet-to-a-workbook-in-a-vsto-add-in"></a>Para agregar una nueva hoja de cálculo a un libro en un complemento de VSTO
 
-1.  Use el método <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> de la colección <xref:Microsoft.Office.Interop.Excel.Sheets> .
+1. Use el método <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> de la colección <xref:Microsoft.Office.Interop.Excel.Sheets> .
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#11)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#11)]

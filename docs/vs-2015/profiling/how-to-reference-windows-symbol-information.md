@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Hacer referencia a información de símbolos de Windows | Microsoft Docs'
+title: Procedimiento Hacer referencia a información de símbolos de Windows | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,14 +14,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8819964eff232cc01cbcfc2081e01eca47f04c15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 45e1ad3c89d811a0a2bd715c86d8fcd8006600b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086707"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Cómo: Hacer referencia a información de símbolos de Windows
+# <a name="how-to-reference-windows-symbol-information"></a>Procedimiento Información de símbolos de Windows de referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las herramientas de generación de perfiles de Visual Studio utilizan archivos de símbolos (.pdb) para resolver nombres simbólicos como los nombres de función en binarios del programa. Puede seguir estos pasos para descargar y actualizar automáticamente los archivos .pdb correctos para la versión de Windows en el equipo local.  
@@ -33,17 +33,17 @@ Las herramientas de generación de perfiles de Visual Studio utilizan archivos d
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>Para utilizar el servidor de símbolos de Microsoft  
   
-1.  Cree una carpeta para que contenga la información del archivo de símbolos, como C:\SymbolCache.  
+1. Cree una carpeta para que contenga la información del archivo de símbolos, como C:\SymbolCache.  
   
-2.  En el menú **Herramientas** , haga clic en **Opciones**.  
+2. En el menú **Herramientas** , haga clic en **Opciones**.  
   
      Aparecerá el cuadro de diálogo **Opciones** .  
   
-3.  Expanda el árbol **Depuración** y después haga clic en **Símbolos**.  
+3. Expanda el árbol **Depuración** y después haga clic en **Símbolos**.  
   
-4.  En **Ubicaciones de archivos de símbolos (.pdb)**, seleccione **Servidores de símbolos de Microsoft**  
+4. En **Ubicaciones de archivos de símbolos (.pdb)**, seleccione **Servidores de símbolos de Microsoft**  
   
-5.  En **Almacenar símbolos en caché desde los servidores de símbolos a este directorio**, escriba la ruta de acceso de la carpeta que creó en el paso 1, por ejemplo:  
+5. En **Almacenar símbolos en caché desde los servidores de símbolos a este directorio**, escriba la ruta de acceso de la carpeta que creó en el paso 1, por ejemplo:  
   
      **C:\SymbolCache**  
   
@@ -51,4 +51,4 @@ Las herramientas de generación de perfiles de Visual Studio utilizan archivos d
   
 ## <a name="see-also"></a>Vea también  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Cómo: Serializar la información de símbolos](../profiling/how-to-serialize-symbol-information.md)
+ [Cómo: Serialización de la información de símbolos](../profiling/how-to-serialize-symbol-information.md)

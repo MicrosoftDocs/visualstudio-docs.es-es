@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088683"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Vincular un caso de uso a documentos y diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,45 +40,45 @@ Puede vincular un caso de uso de un diagrama de casos de uso a otro diagrama o d
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Para abrir un documento asociado a un artefacto  
   
--   En el diagrama de casos de uso, haga doble clic en la forma del artefacto.  
+- En el diagrama de casos de uso, haga doble clic en la forma del artefacto.  
   
      Se abrirá el documento asociado.  
   
 ### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Para vincular un caso de uso a un diagrama o a un archivo en la misma solución  
   
-1.  Dibuje un diagrama, por ejemplo un diagrama de secuencia o de actividades, para mostrar un escenario del caso de uso.  
+1. Dibuje un diagrama, por ejemplo un diagrama de secuencia o de actividades, para mostrar un escenario del caso de uso.  
   
-2.  Vuelva al diagrama de casos de uso.  
+2. Vuelva al diagrama de casos de uso.  
   
-3.  Arrastre el diagrama o el archivo desde el Explorador de soluciones a una zona vacía del diagrama de casos de uso.  
+3. Arrastre el diagrama o el archivo desde el Explorador de soluciones a una zona vacía del diagrama de casos de uso.  
   
-4.  Asocie el artefacto en el caso de uso mediante una **dependencia**.  
+4. Asocie el artefacto en el caso de uso mediante una **dependencia**.  
   
 ### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Para vincular a un archivo de solución, por ejemplo a un documento de Word o a una presentación de PowerPoint  
   
-1.  Agregue el documento a la solución.  
+1. Agregue el documento a la solución.  
   
-    1.  Mueva el documento de Word a la misma carpeta de Windows que la solución.  
+    1. Mueva el documento de Word a la misma carpeta de Windows que la solución.  
   
-    2.  En el Explorador de soluciones, haga clic en la solución, seleccione **agregar**y, a continuación, haga clic en **elemento existente**.  
+    2. En el Explorador de soluciones, haga clic en la solución, seleccione **agregar**y, a continuación, haga clic en **elemento existente**.  
   
-    3.  Desplácese hasta el documento de Word y haga clic en **agregar**.  
+    3. Desplácese hasta el documento de Word y haga clic en **agregar**.  
   
          El documento de Word aparece en una carpeta de la solución en el Explorador de soluciones.  
   
-2.  Arrastre el documento de Word desde el Explorador de soluciones a una parte en blanco del diagrama de casos de uso.  
+2. Arrastre el documento de Word desde el Explorador de soluciones a una parte en blanco del diagrama de casos de uso.  
   
      Aparece un nuevo artefacto.  
   
-3.  Asocie el artefacto en el caso de uso mediante una **dependencia**.  
+3. Asocie el artefacto en el caso de uso mediante una **dependencia**.  
   
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Para vincular un documento compartido, elemento de OneNote o página web  
   
-1.  Obtenga la dirección URL del elemento compartido. Esto puede ser, por ejemplo, un principio de ruta de acceso del archivo de red '\\\\', o una página web o dirección URL de Sharepoint comience por 'http://' o un vínculo a una sección de OneNote, página o párrafo principio ' onenote:'.  
+1. Obtenga la dirección URL del elemento compartido. Esto puede ser, por ejemplo, un principio de ruta de acceso del archivo de red '\\\\', o una página web o dirección URL de Sharepoint comience por 'http://' o un vínculo a una sección de OneNote, página o párrafo principio ' onenote:'.  
   
-2.  En el cuadro de herramientas, haga clic en **artefacto** y, a continuación, haga clic en el diagrama de casos de uso.  
+2. En el cuadro de herramientas, haga clic en **artefacto** y, a continuación, haga clic en el diagrama de casos de uso.  
   
-3.  Con el nuevo artefacto seleccionado, escriba o pegue la dirección URL en el **hipervínculo** propiedad.  
+3. Con el nuevo artefacto seleccionado, escriba o pegue la dirección URL en el **hipervínculo** propiedad.  
   
     > [!NOTE]
     >  Si desea proporcionar una ruta de acceso de archivo, es mejor elegir un archivo en un área de trabajo comunes (a partir de '\\\\'), o un archivo dentro de la solución de Visual Studio. Esto garantizará que la ruta de acceso del archivo seguirá siendo válida en el sistema de otro miembro del equipo o si se mueve la solución. Para agregar un documento como un documento de Word a la solución, haga clic en la solución en el Explorador de soluciones, seleccione **agregar** y, a continuación, haga clic en **elemento existente**.  

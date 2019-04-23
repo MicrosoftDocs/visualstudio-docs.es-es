@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6821275f7511b48ac6472b468480e6248463b253
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6fb65b66bed790a306280a437a1722abea27848a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704883"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113448"
 ---
 # <a name="task-class---internal-members"></a>Clase de tarea: miembros internos
 En este artículo se describe los miembros internos de la <xref:System.Threading.Tasks.Task?displayProperty=fullName> clase que le ayudarán a implementar un depurador personalizado. Para obtener información general acerca de esta clase, vea el <xref:System.Threading.Tasks.Task> artículo de referencia.
@@ -49,7 +49,7 @@ En este artículo se describe los miembros internos de la <xref:System.Threading
 
 ### <a name="fields"></a>Campos
 
-|nombre|Descripción|
+|Name|Descripción|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|Delegado que representa el código para ejecutarlo en el <xref:System.Threading.Tasks.Task> objeto.|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Almacena las propiedades adicionales de la <xref:System.Threading.Tasks.Task> objeto.|
@@ -67,17 +67,17 @@ En este artículo se describe los miembros internos de la <xref:System.Threading
 ## <a name="remarks"></a>Comentarios
  Los siguientes métodos internos son útiles para un motor de depuración porque son la entrada a una marca <xref:System.Threading.Tasks.Task> la ejecución de código:
 
--   `Execute`
+- `Execute`
 
--   `ExecuteEntry`
+- `ExecuteEntry`
 
--   `ExecuteWithThreadLocal`
+- `ExecuteWithThreadLocal`
 
--   `Finish`
+- `Finish`
 
--   `InnerInvoke`
+- `InnerInvoke`
 
--   `InternalWait`
+- `InternalWait`
 
 ## <a name="see-also"></a>Vea también
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>

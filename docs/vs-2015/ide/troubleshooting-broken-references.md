@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc1bff5ad547a946efa3edcd5c21cc6de4fad07
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113955"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Si la aplicación intenta usar una referencia rota, se genera un error de excepc
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Para reparar una referencia de proyecto rota mediante la corrección de la ruta de acceso de referencia  
   
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto y haga clic en **Propiedades**.  
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto y haga clic en **Propiedades**.  
   
-2.  Aparece el **Diseñador de proyectos**.  
+2. Aparece el **Diseñador de proyectos**.  
   
-3.  Si usa Visual Basic, seleccione la página **Referencias** y haga clic en el botón **Rutas de acceso de referencia**. En el cuadro de diálogo **Rutas de acceso de referencia**, escriba la ruta de acceso de la carpeta que contiene el elemento al que quiere hacer referencia en el campo **Carpeta** y luego haga clic en el botón **Agregar carpeta**.  
+3. Si usa Visual Basic, seleccione la página **Referencias** y haga clic en el botón **Rutas de acceso de referencia**. En el cuadro de diálogo **Rutas de acceso de referencia**, escriba la ruta de acceso de la carpeta que contiene el elemento al que quiere hacer referencia en el campo **Carpeta** y luego haga clic en el botón **Agregar carpeta**.  
   
      o bien  
   
@@ -69,20 +69,20 @@ Si la aplicación intenta usar una referencia rota, se genera un error de excepc
   
 #### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>Para reparar una referencia de proyecto rota de un archivo que ya no existe en la unidad  
   
--   Elimine la referencia.  
+- Elimine la referencia.  
   
--   Si la referencia existe en otra ubicación del equipo, léala desde esa ubicación.  
+- Si la referencia existe en otra ubicación del equipo, léala desde esa ubicación.  
   
--   Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="referenced-file-has-been-renamed"></a>Se ha cambiado el nombre del archivo al que se hace referencia  
  Es posible que se haya cambiado el nombre del archivo al que se hace referencia.  
   
 #### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>Para reparar una referencia rota de un archivo al que se le ha cambiado el nombre  
   
--   Elimine la referencia y después agregue una referencia al archivo al que se le ha cambiado el nombre.  
+- Elimine la referencia y después agregue una referencia al archivo al que se le ha cambiado el nombre.  
   
--   Si la referencia existe en otra ubicación del equipo, tiene que leerla desde esa ubicación. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Si la referencia existe en otra ubicación del equipo, tiene que leerla desde esa ubicación. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>Se ha producido un error en la conexión de red o en la autenticación  
  Puede haber varias causas por las que no se pueda tener acceso a los archivos, por ejemplo, una conexión de red o una autenticación incorrectas. Cada causa puede tener un único medio de recuperación; por ejemplo, es posible que tenga que ponerse en contacto con el administrador local para acceder a los recursos necesarios. No obstante, siempre hay la opción de eliminar la referencia y corregir el código en el que se usaba esa referencia. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  

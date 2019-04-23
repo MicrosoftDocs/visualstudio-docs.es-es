@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear un documento XML basado en un esquema XSD
+title: Procedimiento Crear un documento XML basado en un esquema XSD
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
@@ -8,42 +8,42 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115359"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Filtrar Crear un documento XML basado en un esquema XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedimiento Creación de un documento XML basado en un esquema XSD
 
 El **generar XML de ejemplo** característica genera un archivo XML de ejemplo basado en el archivo de esquema XML (XSD).
 
  Puede usar esta opción en los escenarios siguientes:
 
--   Si desea comprender el uso de varias construcciones en un esquema dado.
+- Si desea comprender el uso de varias construcciones en un esquema dado.
 
--   Confirmar que el esquema hace aquello que estaba previsto.
+- Confirmar que el esquema hace aquello que estaba previsto.
 
 El **generar XML de ejemplo** característica solo está disponible en los elementos globales y requiere un conjunto de esquemas XML válido.
 
 Esta característica suele generar documentos XML válidos. Sin embargo, si el esquema contiene uno o varios de los siguientes elementos, la muestra podría no ser válida:
 
--   Las restricciones de identidad `xs:key`, `xs:keyref` y `xs:unique`.
+- Las restricciones de identidad `xs:key`, `xs:keyref` y `xs:unique`.
 
--   Facetas `xs:pattern`.
+- Facetas `xs:pattern`.
 
--   Enumeraciones del tipo `xs:QName`.
+- Enumeraciones del tipo `xs:QName`.
 
--   Los tipos `xs:ENTITY`, `xs:ENTITIES` y `xs:NOTATION`.
+- Los tipos `xs:ENTITY`, `xs:ENTITIES` y `xs:NOTATION`.
 
 Además, observe que el contenido de `xs:base64Binary` solo se generará si aparecen enumeraciones en el esquema para ese tipo.
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Para generar un documento de instancia XML basado en el archivo XSD
 
-1.  Siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  En el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), haga clic en el `PurchaseOrder` elemento global. Seleccione **generar XML de ejemplo**.
+2. En el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), haga clic en el `PurchaseOrder` elemento global. Seleccione **generar XML de ejemplo**.
 
      Cuando se selecciona esta opción, PurchaseOrder. *xml* archivo con el siguiente contenido XML de ejemplo se genera y se abre en el editor XML:
 

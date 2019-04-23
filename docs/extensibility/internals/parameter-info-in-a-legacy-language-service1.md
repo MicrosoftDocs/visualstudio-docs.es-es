@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba1c2c053a9e2c906e5ca9e530a5a46a2501a840
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086318"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Información de parámetros en un servicio de lenguaje heredado
 La información sobre herramientas de información de parámetros IntelliSense proporciona a los usuarios con sugerencias sobre dónde se encuentra en una construcción de lenguaje.
@@ -43,31 +43,31 @@ La información sobre herramientas de información de parámetros IntelliSense p
 
  Cuando su <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> se invoca la clase, sus métodos se llaman en el orden siguiente:
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
 
      Devuelve la posición y longitud de los datos relevantes en el búfer de texto actual. Esto indica al IDE que no oculte esos datos con la ventana de información sobre herramientas.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
 
      Devuelve el número del método (índice de base cero) que desea que se muestre inicialmente. Por ejemplo, si se devuelve cero, inicialmente se presenta el primer método sobrecargado.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
 
      Devuelve el número de métodos sobrecargados que son aplicables en el contexto actual. Si devuelve un valor mayor que 1 para este método, a continuación, la vista de texto muestra flechas arriba y abajo para usted. Si hace clic en la flecha hacia abajo, el IDE llama el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> método. Si hace clic en la flecha hacia arriba, el IDE llama el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> método.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
 
      El texto de la información de parámetros, información sobre herramientas se construye durante varias llamadas a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> métodos.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
 
      Devuelve el número de parámetros que se muestra en el método.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
 
      Si devuelve un número del método correspondiente con la sobrecarga que desea mostrar, se llama a este método, seguido por una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> método.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
 
      Informa a su servicio de lenguaje para actualizar el editor cuando se muestra una sugerencia de método. En el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> método, llame a lo siguiente:
 
@@ -75,6 +75,6 @@ La información sobre herramientas de información de parámetros IntelliSense p
     <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).
     ```
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
 
      Recibir una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> al cerrar la ventana de sugerencia de método.

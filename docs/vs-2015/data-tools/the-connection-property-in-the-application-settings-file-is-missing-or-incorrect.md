@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a29d98455ccf796f331513c7abf5e679e55af8b5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 043db1aca02a82abe08786466f4b47213d09540d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086031"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Falta o no es correcta la propiedad de conexión del archivo de configuración d
   
 ### <a name="to-respond-to-this-message"></a>Para responder a este mensaje  
   
--   Haga clic en **Aceptar**. La información de conexión que contiene el archivo .dbml se agrega a la configuración de la aplicación.  
+- Haga clic en **Aceptar**. La información de conexión que contiene el archivo .dbml se agrega a la configuración de la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

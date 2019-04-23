@@ -1,5 +1,5 @@
 ---
-title: Filtrar Especificar una ubicación alternativa para las actualizaciones de implementación | Documentos de Microsoft
+title: Procedimiento Especificar una ubicación alternativa para las actualizaciones de implementación | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,14 +16,14 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087948"
 ---
-# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Filtrar Especificar una ubicación alternativa para las actualizaciones de implementación
+# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procedimiento Especificar una ubicación alternativa para las actualizaciones de implementación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede instalar su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación inicialmente desde un CD o un recurso compartido de archivos, pero la aplicación debe buscar actualizaciones periódicas en la Web. Puede especificar una ubicación alternativa para las actualizaciones en el manifiesto de implementación para que la aplicación pueda actualizarse desde el Web tras la instalación inicial.  
@@ -33,27 +33,27 @@ Puede instalar su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicac
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Especificar una ubicación alternativa para las actualizaciones mediante MageUI.exe (Utilidad basada en formularios de Windows)  
   
-1.  Abra un símbolo del sistema de .NET Framework y escriba:  
+1. Abra un símbolo del sistema de .NET Framework y escriba:  
   
      **mageui.exe**  
   
-2.  En el **archivo** menú, elija **abrir** para abrir el manifiesto de implementación de la aplicación.  
+2. En el **archivo** menú, elija **abrir** para abrir el manifiesto de implementación de la aplicación.  
   
-3.  Seleccione la pestaña **Opciones de implementación**.  
+3. Seleccione la pestaña **Opciones de implementación**.  
   
-4.  En el cuadro de texto denominado **iniciar ubicación**, escriba la dirección URL del directorio que contendrá el manifiesto de implementación de actualizaciones de la aplicación.  
+4. En el cuadro de texto denominado **iniciar ubicación**, escriba la dirección URL del directorio que contendrá el manifiesto de implementación de actualizaciones de la aplicación.  
   
-5.  Guarde el manifiesto de implementación.  
+5. Guarde el manifiesto de implementación.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Especificar una ubicación alternativa para las actualizaciones mediante Mage.exe  
   
-1.  Abra un símbolo del sistema de .NET Framework.  
+1. Abra un símbolo del sistema de .NET Framework.  
   
-2.  Establezca la ubicación de actualización mediante el comando siguiente. En este ejemplo, **HelloWorld.exe.application** es la ruta de acceso a su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de aplicación, que siempre tiene la extensión .application, y **http://adatum.com/Update/Path** es la dirección URL que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] comprobará las actualizaciones de la aplicación.  
+2. Establezca la ubicación de actualización mediante el comando siguiente. En este ejemplo, **HelloWorld.exe.application** es la ruta de acceso a su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de aplicación, que siempre tiene la extensión .application, y **http://adatum.com/Update/Path** es la dirección URL que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] comprobará las actualizaciones de la aplicación.  
   
      **Mage-actualizar HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
   
-3.  Guarde el archivo.  
+3. Guarde el archivo.  
   
     > [!NOTE]
     >  Deberá volver a firmar el archivo con Mage.exe. Para obtener más información, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

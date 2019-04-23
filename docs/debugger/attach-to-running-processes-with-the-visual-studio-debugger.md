@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f810761d088eaf6ec94524a7d76ec255c931686b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115164"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
 Puede asociar el depurador de Visual Studio a un proceso en ejecución en un equipo local o remoto. Una vez que se ejecuta el proceso, seleccione **depurar** > **asociar al proceso** o presione **Ctrl**+**Alt** + **P** en Visual Studio y usan el **asociar al proceso** cuadro de diálogo para asociar el depurador al proceso.
@@ -43,7 +43,7 @@ Puede usar **asociar al proceso** para depurar aplicaciones en ejecución en equ
 > [!TIP]
 > ¿No está seguro de si se debe usar **asociar al proceso** para su escenario de depuración? Consulte [comunes en escenarios de depuración](#BKMK_Scenarios).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Adjuntar a un proceso en ejecución en el equipo local
+## <a name="BKMK_Attach_to_a_running_process"></a> Adjuntar a un proceso en ejecución en el equipo local
 
 Para volver a asociar rápidamente a un proceso que ha adjuntado a previamente, vea [volver a adjuntar a un proceso](#BKMK_reattach).
 
@@ -79,7 +79,7 @@ Para depurar un proceso en un equipo remoto, consulte [asociar a un proceso en u
 >[!NOTE]
 >Pueden asociarse a varias aplicaciones para la depuración, pero solo una aplicación está activa en el depurador a la vez. Puede establecer la aplicación activa en Visual Studio **ubicación de depuración** barra de herramientas o **procesos** ventana.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Asociar a un proceso en un equipo remoto
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Asociar a un proceso en un equipo remoto
 
 También puede seleccionar un equipo remoto en el **asociar al proceso** cuadro de diálogo, ver una lista de procesos disponibles que se ejecutan en ese equipo y asociar a uno o varios de los procesos para la depuración. El depurador remoto (*msvsmon.exe*) debe ejecutarse en el equipo remoto. Para obtener más información, consulte [depuración remota](../debugger/remote-debugging.md).
 
@@ -186,7 +186,7 @@ Para escenarios de depuración remotos, debe tener el código fuente (o una copi
 
 En algunos escenarios de depuración locales, puede depurar en Visual Studio sin acceso al origen si los archivos de símbolos correctos están presentes con la aplicación. De forma predeterminada, esto requiere una compilación de depuración. Para obtener más información, consulte [especificar archivos de código fuente y símbolos](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Solucionar problemas de errores de asociación
+## <a name="BKMK_Troubleshoot_attach_errors"></a> Solucionar problemas de errores de asociación
  Cuando el depurador se asocia a un proceso en ejecución, el proceso puede contener uno o varios tipos de código. Los tipos de código a los que se puede asociar el depurador se muestran y seleccionan en el cuadro de diálogo **Seleccionar tipo de código** .
 
  A veces, el depurador puede asociarse correctamente a un tipo de código, pero no a otro. Esto puede ocurrir cuando se intenta asociar el depurador a un proceso que está ejecutándose en un equipo remoto. Puede que el equipo remoto tenga instalados los componentes de depuración remota para algunos tipos de código, pero no para otros. También puede ocurrir al intentar asociar el depurador a dos o varios procesos para realizar una depuración directa de la base de datos. La depuración de SQL sólo admite la asociación a un único proceso.
@@ -199,19 +199,19 @@ En algunos escenarios de depuración locales, puede depurar en Visual Studio sin
 
  **Para obtener información específica sobre la causa por la que no se ha asociado correctamente un tipo de código:**
 
-1.  Desasocie el proceso. En el **depurar** menú, seleccione **Desasociar todo**.
+1. Desasocie el proceso. En el **depurar** menú, seleccione **Desasociar todo**.
 
-1.  Vuelva a asociar el proceso, pero seleccionando sólo el tipo de código que no se pudo conectar.
+1. Vuelva a asociar el proceso, pero seleccionando sólo el tipo de código que no se pudo conectar.
 
-    1.  En el cuadro de diálogo **Asociar al proceso**, seleccione el proceso en la lista **Procesos disponibles**.
+    1. En el cuadro de diálogo **Asociar al proceso**, seleccione el proceso en la lista **Procesos disponibles**.
 
-    2.  Seleccione **seleccione**.
+    2. Seleccione **seleccione**.
 
-    3.  En el cuadro de diálogo **Seleccionar tipo de código** , seleccione **Depurar estos tipos de código** y el tipo de código que no se haya asociado correctamente. Anule la selección de los otros tipos de código.
+    3. En el cuadro de diálogo **Seleccionar tipo de código** , seleccione **Depurar estos tipos de código** y el tipo de código que no se haya asociado correctamente. Anule la selección de los otros tipos de código.
 
-    4.  Seleccione **Aceptar**.
+    4. Seleccione **Aceptar**.
 
-    5.  En el **asociar al proceso** cuadro de diálogo, seleccione **adjuntar**.
+    5. En el **asociar al proceso** cuadro de diálogo, seleccione **adjuntar**.
 
     Esta vez se producirá un error en todo el proceso de asociación y aparecerá un mensaje de error específico.
 

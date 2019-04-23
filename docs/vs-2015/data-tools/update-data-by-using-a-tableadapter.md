@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 585dfa357082fbb46794ab5f6dcc7b0e141fc9b7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653759"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113833"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Actualizar datos mediante un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Después de modificar y validados los datos del conjunto de datos, puede enviar 
   
  El procedimiento exacto para actualizar un origen de datos puede variar según las necesidades empresariales, pero incluye los siguientes pasos:  
   
-1.  Llame a la del adaptador `Update` método en un `try` / `catch` bloque.  
+1. Llame a la del adaptador `Update` método en un `try` / `catch` bloque.  
   
-2.  Si se detecta una excepción, buscar la fila de datos que causó el error. Para obtener más información, vea [Cómo: Localizar filas con errores](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
+2. Si se detecta una excepción, buscar la fila de datos que causó el error. Para obtener más información, vea [Cómo: Localizar filas con errores](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
   
-3.  Concilie el problema de los datos de fila (mediante programación si es posible, o mediante la presentación de la fila no válida para el usuario para la modificación) y, a continuación, inténtelo de nuevo la actualización (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
+3. Concilie el problema de los datos de fila (mediante programación si es posible, o mediante la presentación de la fila no válida para el usuario para la modificación) y, a continuación, inténtelo de nuevo la actualización (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
   
 ## <a name="savedata-to-a-database"></a>SaveData a una base de datos  
  Llame a la `Update` método de un TableAdapter. Pase el nombre de la tabla de datos que contiene los valores que se escriban en la base de datos.  
   
 #### <a name="to-update-a-database-by-using-a-tableadapter"></a>Para actualizar una base de datos mediante un TableAdapter  
   
--   Incluya el TableAdapter`Update` método en un `try` / `catch` bloque. El ejemplo siguiente muestra cómo actualizar el contenido de la `Customers` tabla `NorthwindDataSet` desde dentro un `try` / `catch` bloque.  
+- Incluya el TableAdapter`Update` método en un `try` / `catch` bloque. El ejemplo siguiente muestra cómo actualizar el contenido de la `Customers` tabla `NorthwindDataSet` desde dentro un `try` / `catch` bloque.  
   
      [!code-csharp[VbRaddataSaving#9](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#9)]
      [!code-vb[VbRaddataSaving#9](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#9)]  

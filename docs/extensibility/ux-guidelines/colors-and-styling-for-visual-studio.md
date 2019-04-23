@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650637"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114774"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 
@@ -85,7 +85,7 @@ A veces, desea permitir que el usuario final personalizar la interfaz de usuario
 
 ![Herramientas &gt; cuadro de diálogo Opciones](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")<br />Herramientas &gt; cuadro de diálogo Opciones
 
-##  <a name="BKMK_TheVSColorService"></a> El servicio VSColor
+## <a name="BKMK_TheVSColorService"></a> El servicio VSColor
 
 Visual Studio proporciona un servicio de color de entorno, también denominado el servicio VSColor o el servicio de color de shell. Este servicio permite enlazar los valores de color los elementos de la interfaz de usuario a un conjunto que contiene los colores para cada tema de colores de nombre y valor. El servicio VSColor debe usarse para todos los elementos de interfaz de usuario, por lo que los colores automáticamente cambian para reflejar el tema seleccionado por el usuario actual y para que la interfaz de usuario enlazada al servicio de color de entorno integrarán con nuevos temas en futuras versiones de Visual Studio.
 
@@ -267,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Selección de colores de contraste alto
+## <a name="BKMK_ChoosingHighContrastColors"></a> Selección de colores de contraste alto
 
 ### <a name="overview"></a>Información general
 
@@ -330,7 +330,7 @@ Muchos elementos comunes de la interfaz de usuario ya tienen definido de colores
 | WindowFrame | : Borde IDE |
 | WindowText | -Primer plano de pestaña ocultación automática<br />-Primer plano de ficha de ventana de herramienta seleccionada<br />-Pestaña de ventana de documento sin foco y de primer plano de la pestaña provisional seleccionado o sin foco<br />-Árbol predeterminado de primer plano de vista y al mantener el mouse sobre un glifo no seleccionado<br />: Borde de ficha seleccionada de ventana de herramientas<br />-La barra de desplazamiento glifo, borde y fondo de miniatura |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Exposición de colores para los usuarios finales
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Exposición de colores para los usuarios finales
 
 ### <a name="overview"></a>Información general
 

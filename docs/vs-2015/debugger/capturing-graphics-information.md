@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b64be59e1a962eb23ef12ba49e8b4fa73bd7a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988517"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114238"
 ---
 # <a name="capturing-graphics-information"></a>Capturar información de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +60,9 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
   
 ##### <a name="to-configure-graphics-diagnostics-capture-options"></a>Para configurar las opciones de captura de diagnóstico de gráficos  
   
-1.  En la barra de menús, elija Herramientas y Opciones. Aparecerá el cuadro de diálogo Opciones.  
+1. En la barra de menús, elija Herramientas y Opciones. Aparecerá el cuadro de diálogo Opciones.  
   
-2.  En la lista de categorías de las opciones de la izquierda, elija Diagnóstico de gráficos y, a continuación, configure las opciones de diagnóstico de gráficos que quiera.  
+2. En la lista de categorías de las opciones de la izquierda, elija Diagnóstico de gráficos y, a continuación, configure las opciones de diagnóstico de gráficos que quiera.  
   
      **Recopilación de pilas de llamadas durante la captura (ralentiza la captura)**  
      Active esta casilla para recopilar pilas de llamadas. Las pilas de llamadas no se recopilan de forma predeterminada. Para capturar las pilas de llamadas, asegúrese de que esté activada la casilla **Recopilar pilas de llamadas durante la captura (ralentiza la captura)** para habilitar la recopilación y, después, establezca la opción **para los marcadores draw, dispatch, present y perf** (valor predeterminado) para recopilar únicamente las pilas de llamadas más importantes, o la opción **para todo** para recopilar todas las pilas de llamadas. Para detener la recopilación de pilas de llamadas más adelante, desactive la casilla **Recopilar pilas de llamadas durante la captura (ralentiza la captura)**.  

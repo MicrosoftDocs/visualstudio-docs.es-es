@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113994"
 ---
 # <a name="the-text-template-transformation-process"></a>El proceso de transformación de las plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ El proceso de transformación de plantillas de texto toma un archivo de plantill
 ## <a name="the-host"></a>El host  
  El host es responsable de todo lo que se relaciona con el entorno fuera del proceso de transformación, incluidos los siguientes:  
   
--   Buscar archivos de texto y binarios solicitados por el motor o un procesador de directivas. El host puede buscar los directorios y la caché global de ensamblados para buscar ensamblados. El host puede localizar el código de procesador de directivas personalizadas para el motor. El host también puede buscar y leer archivos de texto y devolver su contenido como cadenas.  
+- Buscar archivos de texto y binarios solicitados por el motor o un procesador de directivas. El host puede buscar los directorios y la caché global de ensamblados para buscar ensamblados. El host puede localizar el código de procesador de directivas personalizadas para el motor. El host también puede buscar y leer archivos de texto y devolver su contenido como cadenas.  
   
--   Proporcionar listas de ensamblados estándar y espacios de nombres utilizados por el motor para crear la clase de transformación generada.  
+- Proporcionar listas de ensamblados estándar y espacios de nombres utilizados por el motor para crear la clase de transformación generada.  
   
--   Proporcionar el dominio de aplicación que se usa cuando el motor se compila y ejecuta la clase de transformación generada. Se usa un dominio de aplicación independiente con el fin de proteger la aplicación host de los errores en el código de plantilla.  
+- Proporcionar el dominio de aplicación que se usa cuando el motor se compila y ejecuta la clase de transformación generada. Se usa un dominio de aplicación independiente con el fin de proteger la aplicación host de los errores en el código de plantilla.  
   
--   Escribir el archivo de salida generado.  
+- Escribir el archivo de salida generado.  
   
--   Establecer la extensión predeterminada del archivo de salida generado.  
+- Establecer la extensión predeterminada del archivo de salida generado.  
   
--   Control de errores de transformación de plantilla de texto. Por ejemplo, el host puede mostrar los errores en la interfaz de usuario o escribirlos en un archivo. (En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], los errores aparecen en la ventana de mensaje de Error.)  
+- Control de errores de transformación de plantilla de texto. Por ejemplo, el host puede mostrar los errores en la interfaz de usuario o escribirlos en un archivo. (En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], los errores aparecen en la ventana de mensaje de Error.)  
   
--   Al proporcionar un valor de parámetro necesario si un usuario ha llamado a una directiva sin proporcionar un valor. El procesador de directivas puede especificar el nombre de la directiva y el parámetro y pedir al host proporcionar un valor predeterminado si lo tiene.  
+- Al proporcionar un valor de parámetro necesario si un usuario ha llamado a una directiva sin proporcionar un valor. El procesador de directivas puede especificar el nombre de la directiva y el parámetro y pedir al host proporcionar un valor predeterminado si lo tiene.  
   
 ## <a name="directives-and-directive-processors"></a>Las directivas y los procesadores de directivas  
  Una directiva es un comando en la plantilla de texto. Proporciona los parámetros para el proceso de generación. Normalmente, las directivas definen el origen y el tipo del modelo u otra entrada y la extensión de nombre de archivo del archivo de salida.  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdac288755ca02face6f3422e2da0c78629e2905
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085940"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Compatibilidad con la barra de navegación en un servicio de lenguaje heredado
 La barra de navegación en la parte superior de la vista del editor muestra los tipos y miembros en el archivo. Tipos se muestran en la lista desplegable izquierda y los miembros se muestran en el derecho de la lista desplegable. Cuando el usuario selecciona un tipo, el símbolo de intercalación se coloca en la primera línea del tipo. Cuando el usuario selecciona un miembro, se coloca el símbolo de intercalación en la definición del miembro. Los cuadros de lista desplegable se actualizan para reflejar la ubicación actual del símbolo de intercalación.
@@ -68,24 +68,24 @@ namespace TestLanguagePackage
 
   Una implementación de la <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método normalmente lleva a cabo los pasos siguientes:
 
-1.  Obtener una lista de declaraciones actuales para el archivo de origen.
+1. Obtener una lista de declaraciones actuales para el archivo de origen.
 
      Hay varias maneras de rellenar las listas. Un enfoque consiste en crear un método personalizado en su versión de la <xref:Microsoft.VisualStudio.Package.LanguageService> clase que llama a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método con un motivo por el análisis personalizado que devuelve una lista de todas las declaraciones. Otro enfoque podría ser llamar a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método directamente desde el <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método con el motivo por el análisis personalizado. Un tercer enfoque podría ser almacenar en caché las declaraciones en el <xref:Microsoft.VisualStudio.Package.AuthoringScope> clase devuelta por la última operación de análisis completa en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase y recuperar desde el <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método.
 
-2.  Rellenar o actualizar la lista de tipos.
+2. Rellenar o actualizar la lista de tipos.
 
      Es posible que el contenido de la lista de tipos para actualizarse cuando cambia el origen o si ha elegido cambiar el estilo del texto de los tipos basados en la posición del símbolo de intercalación actual. Tenga en cuenta que esta posición se pasa a la <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método.
 
-3.  Determinar el tipo para seleccionarlo en la lista de tipos basándose en la posición del símbolo de intercalación actual.
+3. Determinar el tipo para seleccionarlo en la lista de tipos basándose en la posición del símbolo de intercalación actual.
 
      Puede buscar las declaraciones que se obtuvieron en el paso 1 para buscar el tipo que rodea la posición del símbolo de intercalación actual y, a continuación, busque en la lista de tipos para ese tipo determinar su índice en la lista de tipos.
 
-4.  Rellenar o actualizar la lista de miembros en función del tipo seleccionado.
+4. Rellenar o actualizar la lista de miembros en función del tipo seleccionado.
 
      La lista de miembros refleja lo que se muestra actualmente en el **miembros** lista desplegable. El contenido de la lista de miembros que deba actualizarse si el origen ha cambiado o si se va a mostrar a solo los miembros del tipo seleccionado y ha cambiado el tipo seleccionado. Si decide mostrar a todos los miembros en el archivo de origen, a continuación, el estilo del texto de cada miembro en la lista debe actualizarse si ha cambiado el tipo seleccionado actualmente.
 
-5.  Determinar el miembro para seleccionar en la lista de miembros en función de la posición del símbolo de intercalación actual.
+5. Determinar el miembro para seleccionar en la lista de miembros en función de la posición del símbolo de intercalación actual.
 
      Busque las declaraciones que se obtuvieron en el paso 1 del miembro que contiene la posición actual del símbolo de intercalación, a continuación, busque en la lista de miembros para ese miembro determinar su índice en la lista de miembros.
 
-6.  Devolver `true` si se han realizado cambios en las listas o las selecciones en la lista.
+6. Devolver `true` si se han realizado cambios en las listas o las selecciones en la lista.

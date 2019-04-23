@@ -10,12 +10,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b40c0590b19b555f757af1e0a38481b0b245c07d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9cb20bafa552c47a2f599d12e6b66fdb2bde59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085908"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Tutorial: Usar una tecla de método abreviado con una extensión del editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="defining-the-command-filter"></a>Define el filtro de comando  
  El filtro de comandos es una implementación de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, que controla el comando al crear una instancia del elemento gráfico.  
   
-1.  Agregue un archivo de clase y asígnele el nombre `KeyBindingCommandFilter`.  
+1. Agregue un archivo de clase y asígnele el nombre `KeyBindingCommandFilter`.  
   
-2.  Agregue las siguientes instrucciones de uso.  
+2. Agregue las siguientes instrucciones de uso.  
   
     ```csharp  
     using System;  
@@ -63,13 +63,13 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-3.  La clase denominada KeyBindingCommandFilter debe heredar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+3. La clase denominada KeyBindingCommandFilter debe heredar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4.  Agregue los campos privados de la vista de texto, el comando siguiente en la cadena de comandos y una marca para representar si ya se ha agregado el filtro de comandos.  
+4. Agregue los campos privados de la vista de texto, el comando siguiente en la cadena de comandos y una marca para representar si ya se ha agregado el filtro de comandos.  
   
     ```csharp  
     private IWpfTextView m_textView;  
@@ -78,7 +78,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     internal bool m_adorned;  
     ```  
   
-5.  Agregue un constructor que establece la vista de texto.  
+5. Agregue un constructor que establece la vista de texto.  
   
     ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
@@ -88,7 +88,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-6.  Implemente el `QueryStatus()` método tal como se indica a continuación.  
+6. Implemente el `QueryStatus()` método tal como se indica a continuación.  
   
     ```vb  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -97,7 +97,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-7.  Implemente el `Exec()` método por lo que TI agrega un cuadro de color púrpura en la vista si un + carácter se escribe.  
+7. Implemente el `Exec()` método por lo que TI agrega un cuadro de color púrpura en la vista si un + carácter se escribe.  
   
     ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -124,7 +124,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="adding-the-command-filter"></a>Agregar el filtro de comandos  
  El proveedor del elemento gráfico debe agregar un filtro de comando a la vista de texto. En este ejemplo, el proveedor implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> para escuchar los eventos de creación de la vista de texto. Este proveedor de elemento gráfico también exporta el nivel del elemento gráfico, que define el orden Z del elemento gráfico.  
   
-1.  En el archivo KeyBindingTestTextViewCreationListener, agregue las siguientes instrucciones using:  
+1. En el archivo KeyBindingTestTextViewCreationListener, agregue las siguientes instrucciones using:  
   
     ```csharp  
     using System;  
@@ -139,7 +139,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  En la definición de nivel de elemento gráfico, cambie el nombre de la AdornmentLayer de **KeyBindingTest** a **PurpleCornerBox**.  
+2. En la definición de nivel de elemento gráfico, cambie el nombre de la AdornmentLayer de **KeyBindingTest** a **PurpleCornerBox**.  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -148,7 +148,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
   
-3.  Para obtener el adaptador de vista de texto, debe importar el <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+3. Para obtener el adaptador de vista de texto, debe importar el <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -156,7 +156,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  Cambiar el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método por lo que TI agrega el `KeyBindingCommandFilter`.  
+4. Cambiar el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método por lo que TI agrega el `KeyBindingCommandFilter`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -165,7 +165,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  El `AddCommandFilter` controlador obtiene el adaptador de vista de texto y agrega el filtro de comandos.  
+5. El `AddCommandFilter` controlador obtiene el adaptador de vista de texto y agrega el filtro de comandos.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -238,8 +238,8 @@ private void CreateVisuals(ITextViewLine line)
   
 ## <a name="building-and-testing-the-code"></a>Compilar y probar el código  
   
-1.  Compile la solución KeyBindingTest y ejecútelo en la instancia experimental.  
+1. Compile la solución KeyBindingTest y ejecútelo en la instancia experimental.  
   
-2.  Cree o abra un archivo de texto. Escriba algunas palabras que contengan el carácter 'a' y, a continuación, escriba + en cualquier parte de la vista de texto.  
+2. Cree o abra un archivo de texto. Escriba algunas palabras que contengan el carácter 'a' y, a continuación, escriba + en cualquier parte de la vista de texto.  
   
      Debería aparecer un cuadrado de color púrpura en cada carácter 'a' en el archivo.

@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995361"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088891"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramas de clases UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,14 +36,14 @@ En Visual Studio, puede usar un *diagrama de clases UML* para describir los tipo
 > [!NOTE]
 >  En este tema se analizan los diagramas de clases de UML. Existe otro tipo de diagrama de clases, que se crea y utiliza para visualizar el código del programa. Consulte [diseñar y ver clases y tipos](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
-##  <a name="Using"></a> Uso de diagramas de clases UML  
+## <a name="Using"></a> Uso de diagramas de clases UML  
  Los diagramas de clases de UML pueden utilizarse para una gran variedad de propósitos:  
   
--   Para proporcionar una descripción de los tipos que se utilizan en un sistema y se pasan entre sus componentes que no tenga nada que ver con su implementación.  
+- Para proporcionar una descripción de los tipos que se utilizan en un sistema y se pasan entre sus componentes que no tenga nada que ver con su implementación.  
   
      Por ejemplo, en el código .NET, el tipo Pedido de menú podría implementarse en la capa del negocio; en XML, en las interfaces entre los componentes; en SQL, en la base de datos, y en HTML, en la interfaz de usuario. Aunque estas implementaciones tengan un nivel de detalle diferente, la relación entre el tipo Pedido de menú y otros tipos, como Menú y Pago, es siempre la misma. El diagrama de clases de UML permite analizar estas relaciones con independencia de las implementaciones.  
   
--   Para clarificar el glosario de términos que se utiliza en la comunicación entre la aplicación y los usuarios y en las descripciones de las necesidades de los usuarios. Consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).  
+- Para clarificar el glosario de términos que se utiliza en la comunicación entre la aplicación y los usuarios y en las descripciones de las necesidades de los usuarios. Consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).  
   
      Por ejemplo, piense en los casos de usuario, los casos de uso y otras descripciones de los requisitos de la aplicación de un restaurante. En este tipo de descripción, encontrará términos como Menú, Pedido, Comida, Precio, Pago, etc. Puede dibujar un diagrama de clases de UML en el que se definan las relaciones entre estos términos. De este modo, se reducirá el riesgo de inconsistencias en las descripciones de los requisitos, así como en la interfaz de usuario y los documentos de ayuda.  
   
@@ -78,7 +78,7 @@ En Visual Studio, puede usar un *diagrama de clases UML* para describir los tipo
   
  Consulte [diagramas de casos de uso UML: Directrices](../modeling/uml-use-case-diagrams-guidelines.md).  
   
-##  <a name="BasicSteps"></a> Pasos básicos para dibujar diagramas de clases  
+## <a name="BasicSteps"></a> Pasos básicos para dibujar diagramas de clases  
  Para obtener información de referencia sobre los elementos de diagramas de clases UML, vea [diagramas de clases UML: referencia](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
@@ -86,35 +86,35 @@ En Visual Studio, puede usar un *diagrama de clases UML* para describir los tipo
   
 #### <a name="to-create-a-uml-class-diagram"></a>Para crear un diagrama de clases de UML  
   
-1.  En el **arquitectura** menú, elija **nuevo UML o diagrama de capas**.  
+1. En el **arquitectura** menú, elija **nuevo UML o diagrama de capas**.  
   
-2.  En **plantillas**, elija **diagrama de clases UML**.  
+2. En **plantillas**, elija **diagrama de clases UML**.  
   
-3.  Especifique un nombre para el diagrama.  
+3. Especifique un nombre para el diagrama.  
   
-4.  En **agregar a proyecto de modelado**, seleccione un proyecto de modelado existente de la solución, o **crear un nuevo proyecto de modelado**y, a continuación, elija **Aceptar**.  
+4. En **agregar a proyecto de modelado**, seleccione un proyecto de modelado existente de la solución, o **crear un nuevo proyecto de modelado**y, a continuación, elija **Aceptar**.  
   
      Aparece un nuevo diagrama de clase con el **UMLClass diagrama** cuadro de herramientas. El cuadro de herramientas contiene las relaciones y elementos necesarios.  
   
 #### <a name="to-draw-a-uml-class-diagram"></a>Para dibujar un diagrama de clases de UML  
   
-1.  Para crear un tipo, elija el **clase**, **interfaz** o **enumeración** herramienta en el cuadro de herramientas y, a continuación, haga clic en una parte en blanco del diagrama. (Si no puede ver el cuadro de herramientas, presione CTRL+ALT+X).  
+1. Para crear un tipo, elija el **clase**, **interfaz** o **enumeración** herramienta en el cuadro de herramientas y, a continuación, haga clic en una parte en blanco del diagrama. (Si no puede ver el cuadro de herramientas, presione CTRL+ALT+X).  
   
-2.  Para agregar atributos u operaciones a los tipos o literales a una enumeración, elija el **atributos**, **operaciones** o **literales** encabezado en el tipo y presione ENTRAR.  
+2. Para agregar atributos u operaciones a los tipos o literales a una enumeración, elija el **atributos**, **operaciones** o **literales** encabezado en el tipo y presione ENTRAR.  
   
      Puede escribir una firma, como por ejemplo `f(x:Boolean):Integer`. Consulte [atributos y operaciones](#AttributesAndOperations).  
   
      Para agregar rápidamente varios elementos, presione ENTRAR dos veces al final de cada elemento. Puede utilizar las teclas de dirección para subir y bajar la lista.  
   
-3.  Para expandir o contraer un tipo, elija el icono de botón de contenido adicional situado en la parte superior izquierda. También puede expandir y contraer la **atributos** y **operaciones** sección de una clase o interfaz.  
+3. Para expandir o contraer un tipo, elija el icono de botón de contenido adicional situado en la parte superior izquierda. También puede expandir y contraer la **atributos** y **operaciones** sección de una clase o interfaz.  
   
-4.  Para dibujar vínculos de asociación, herencia o dependencia entre los tipos, haga clic en la herramienta adecuada, a continuación, en el tipo de origen y, por último, en el tipo de destino.  
+4. Para dibujar vínculos de asociación, herencia o dependencia entre los tipos, haga clic en la herramienta adecuada, a continuación, en el tipo de origen y, por último, en el tipo de destino.  
   
-5.  Para crear tipos en un paquete, cree un paquete mediante el **paquete** herramienta y, a continuación, crear nuevos tipos y paquetes dentro del paquete. También puede copiarlos con el comando Copiar y pegarlos después en un paquete.  
+5. Para crear tipos en un paquete, cree un paquete mediante el **paquete** herramienta y, a continuación, crear nuevos tipos y paquetes dentro del paquete. También puede copiarlos con el comando Copiar y pegarlos después en un paquete.  
   
-6.  Cada diagrama es una vista de un modelo que comparten otros diagramas del mismo proyecto. Para ver una vista de árbol del modelo completo, elija **vista**, **Other Windows**, **Explorador de modelos UML**.  
+6. Cada diagrama es una vista de un modelo que comparten otros diagramas del mismo proyecto. Para ver una vista de árbol del modelo completo, elija **vista**, **Other Windows**, **Explorador de modelos UML**.  
   
-##  <a name="UsingTypes"></a> Uso de clases, Interfaces y enumeraciones  
+## <a name="UsingTypes"></a> Uso de clases, Interfaces y enumeraciones  
  Hay tres tipos estándar de clasificadores disponibles en el cuadro de herramientas. Estos se conocen como *tipos* a lo largo de este documento.  
   
  ![Una clase, una enumeración y una interfaz](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")  
@@ -125,9 +125,9 @@ En Visual Studio, puede usar un *diagrama de clases UML* para describir los tipo
   
 - Use un **enumeración** (3) para representar un tipo que tiene un número limitado de valores literales, por ejemplo `Stop` y `Go`.  
   
-  -   Agregue los valores literales a la enumeración. Asigne a cada uno un nombre diferente.  
+  - Agregue los valores literales a la enumeración. Asigne a cada uno un nombre diferente.  
   
-  -   Si lo desea, también puede proporcionar un valor numérico para cada valor literal. Abra el menú contextual del literal de la enumeración, elija **propiedades**y, a continuación, escriba un número en el **valor** campo el **propiedades** ventana.  
+  - Si lo desea, también puede proporcionar un valor numérico para cada valor literal. Abra el menú contextual del literal de la enumeración, elija **propiedades**y, a continuación, escriba un número en el **valor** campo el **propiedades** ventana.  
   
   Asigne un nombre único a cada tipo.  
   
@@ -154,7 +154,7 @@ En Visual Studio, puede usar un *diagrama de clases UML* para describir los tipo
   
  Para crear una clase desde una línea de vida, abra el menú contextual de la línea de vida y, a continuación, elija **crear clase** o **crear interfaz**. Consulte [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).  
   
-##  <a name="AttributesAndOperations"></a> Atributos y operaciones  
+## <a name="AttributesAndOperations"></a> Atributos y operaciones  
  Un atributo (4) es un valor con nombre que todas las instancias de un tipo pueden tener. Cuando se obtiene acceso a un atributo, no se modifica el estado de la instancia.  
   
  Una operación (5) es un método o función que las instancias del tipo pueden realizar. Puede devolver un valor. Si su **isQuery** propiedad es true, no puede cambiar el estado de la instancia.  
@@ -167,9 +167,9 @@ En Visual Studio, puede usar un *diagrama de clases UML* para describir los tipo
   
  Para obtener información detallada sobre todas las propiedades que puede establecer, consulte:  
   
--   [Propiedades de los atributos de diagramas de clases de UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Propiedades de los atributos de diagramas de clases de UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Propiedades de las operaciones de diagramas de clases de UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Propiedades de las operaciones de diagramas de clases de UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
 ### <a name="types-of-attributes-and-operations"></a>Tipos de atributos y operaciones  
  Cada *tipo* de un atributo u operación y cada tipo de parámetro, puede ser uno de los siguientes:  
@@ -214,9 +214,9 @@ En Visual Studio, puede usar un *diagrama de clases UML* para describir los tipo
   
  Si la multiplicidad es mayor que 1, también puede establecer estas propiedades:  
   
--   **IsOrdered** : si es true, la colección tiene un orden definido.  
+- **IsOrdered** : si es true, la colección tiene un orden definido.  
   
--   **IsUnique** : si es true, no hay ningún valor duplicado en la colección.  
+- **IsUnique** : si es true, no hay ningún valor duplicado en la colección.  
   
 ### <a name="visibility"></a>Visibility  
  *Visibilidad* indica si el atributo u operación es accesible fuera de la definición de clase. Los valores permitidos son los siguientes:  
@@ -330,7 +330,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Normalmente, la firma completa solamente aparece en el diagrama mientras se está editando. Al finalizar la edición, las propiedades adicionales quedan ocultas. Si desea ver todo el tiempo de la firma completa, abra el menú contextual para el tipo y, a continuación, elija **Mostrar firma completa**.  
   
-##  <a name="Associations"></a> Dibujar y utilizar asociaciones  
+## <a name="Associations"></a> Dibujar y utilizar asociaciones  
  Utilice una asociación para representar cualquier tipo de vinculación entre dos elementos, con independencia del modo en que esta vinculación se implemente en el software. Puede utilizar, por ejemplo, una asociación para representar un puntero en C#, una relación de una base de datos o una referencia cruzada que asocie una parte de un archivo XML con otra. Puede representar una asociación entre objetos en el mundo real, como la tierra y el sol. La asociación no indica cómo se representa el vínculo, solo que existe la información.  
   
 ### <a name="properties-of-an-association"></a>Propiedades de una asociación  
@@ -362,7 +362,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  ![Atributos y asociación equivalentes](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")  
   
-##  <a name="Inheritance"></a> Herencia  
+## <a name="Inheritance"></a> Herencia  
  Use la **herencia** herramienta para crear las relaciones siguientes:  
   
 - Un *generalización* relación entre un tipo especializado y un tipo general  
@@ -405,7 +405,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  ![Realización mostrada con conector y círculo](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")  
   
-##  <a name="Templates"></a> Tipos de plantilla  
+## <a name="Templates"></a> Tipos de plantilla  
  Puede definir un tipo genérico o un tipo de plantilla que otros tipos o valores puedan parametrizar.  
   
  Por ejemplo, puede crear un Diccionario genérico parametrizado por tipos de valor y clave:  
@@ -446,29 +446,29 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 #### <a name="to-use-a-template-type"></a>Para utilizar un tipo de plantilla  
   
-1.  Cree un nuevo tipo, por ejemplo, `AddressTable`.  
+1. Cree un nuevo tipo, por ejemplo, `AddressTable`.  
   
-2.  Abra el menú contextual para el nuevo tipo y, a continuación, elija **propiedades**.  
+2. Abra el menú contextual para el nuevo tipo y, a continuación, elija **propiedades**.  
   
-3.  En el **Template Binding** propiedad, seleccione el tipo de plantilla, por ejemplo `Dictionary`, en la lista desplegable.  
+3. En el **Template Binding** propiedad, seleccione el tipo de plantilla, por ejemplo `Dictionary`, en la lista desplegable.  
   
-4.  Expanda el **Template Binding** propiedad.  
+4. Expanda el **Template Binding** propiedad.  
   
      Aparecerá una fila para cada parámetro del tipo de plantilla.  
   
-5.  Establezca cada parámetro en un valor apropiado. Por ejemplo, establezca el parámetro `Key` en una clase denominada `Name`.  
+5. Establezca cada parámetro en un valor apropiado. Por ejemplo, establezca el parámetro `Key` en una clase denominada `Name`.  
   
-##  <a name="Packages"></a> Paquetes  
+## <a name="Packages"></a> Paquetes  
  Puede ver los paquetes en un diagrama de clases de UML. Un paquete es un contenedor de otros elementos del modelo. Puede crear cualquier elemento dentro de un paquete. En el diagrama, los elementos incluidos en el paquete se desplazarán al mover el paquete.  
   
  Puede utilizar el control de expandir y contraer para ocultar o mostrar el contenido del paquete.  
   
  Consulte [definir paquetes y espacios de nombres](../modeling/define-packages-and-namespaces.md).  
   
-##  <a name="generating"></a> Generar código a partir de diagramas de clases UML  
+## <a name="generating"></a> Generar código a partir de diagramas de clases UML  
  Para iniciar la implementación de las clases en un diagrama de clases UML, puede generar código C# o personalizar plantillas para la generación de código. Para iniciar la generación de código usando las plantillas de C# proporcionadas:  
   
--   Abra el menú contextual del diagrama o un elemento, elija **generar código**y, a continuación, establezca las propiedades necesarias.  
+- Abra el menú contextual del diagrama o un elemento, elija **generar código**y, a continuación, establezca las propiedades necesarias.  
   
      Para obtener más información acerca de cómo establecer estas propiedades y personalizar las plantillas proporcionadas, consulte [generar código a partir de diagramas de clases UML](../modeling/generate-code-from-uml-class-diagrams.md).  
   

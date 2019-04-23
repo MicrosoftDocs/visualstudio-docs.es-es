@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a782fe1b69fba6a61b790cb5a6fa8c79f20e5e1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649152"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114371"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referencias, Diseñador de proyectos (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,9 +46,9 @@ Use la página **Referencias** del **Diseñador de proyectos** para administrar 
 >  Cuando el sistema del proyecto busca una referencia de ensamblado, el sistema resuelve la referencia buscando en las siguientes ubicaciones, en el orden siguiente:  
 > 
 > 1. La carpeta del proyecto. Los archivos de la carpeta del proyecto aparecen en el **Explorador de soluciones** cuando **Mostrar todos los archivos** no está en vigor.  
->    2.  Las carpetas que se especifican en el cuadro de diálogo **Rutas de acceso de referencia**.  
->    3.  Las carpetas que muestran archivos en el cuadro de diálogo **Agregar referencia**.  
->    4.  La carpeta de objetos del proyecto. (Cuando agrega una referencia COM a su proyecto, uno o más ensamblados pueden agregarse a la carpeta de objetos del proyecto).  
+>    2. Las carpetas que se especifican en el cuadro de diálogo **Rutas de acceso de referencia**.  
+>    3. Las carpetas que muestran archivos en el cuadro de diálogo **Agregar referencia**.  
+>    4. La carpeta de objetos del proyecto. (Cuando agrega una referencia COM a su proyecto, uno o más ensamblados pueden agregarse a la carpeta de objetos del proyecto).  
   
  **Referencias**  
  Esta lista muestra todas las referencias del proyecto, usadas o sin usar.  
@@ -80,11 +80,11 @@ Use la página **Referencias** del **Diseñador de proyectos** para administrar 
  **Actualizar importación del usuario**  
  Seleccione un espacio de nombres especificado por el usuario en la lista de espacios de nombres, escriba el nombre por el que quiere reemplazarlo en el cuadro **Espacios de nombres importados** y, después, haga clic en este botón para cambiar al nuevo espacio de nombres. El botón está activo solo si el espacio de nombres seleccionado es uno que ha agregado a la lista con el botón **Agregar importación del usuario**. Puede agregar:  
   
--   Clases o espacios de nombres, como <xref:System.Math?displayProperty=fullName>.  
+- Clases o espacios de nombres, como <xref:System.Math?displayProperty=fullName>.  
   
--   Importaciones de alias, como `VB=Microsoft.VisualBasic`.  
+- Importaciones de alias, como `VB=Microsoft.VisualBasic`.  
   
--   Espacios de nombres XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
+- Espacios de nombres XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
   
 ## <a name="see-also"></a>Vea también  
  [NIB Cómo: Agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9878fea72c83cd6a466f2743f44d3eddca0bdba7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702062"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117569"
 ---
 # <a name="load-vspackages"></a>Cargar VSPackages
 Los paquetes VSPackage se cargan en Visual Studio solo cuando su funcionalidad es necesaria. Por ejemplo, un VSPackage se carga cuando Visual Studio utiliza un generador de proyectos o un servicio que implementa el VSPackage. Esta característica se denomina la carga diferida, que se usa siempre que sea posible mejorar el rendimiento.
@@ -28,7 +28,7 @@ Los paquetes VSPackage se cargan en Visual Studio solo cuando su funcionalidad e
 
 ### <a name="autoload-a-vspackage-in-a-specific-context"></a>Cargar automáticamente un VSPackage en un contexto específico
 
--   Agregar el `ProvideAutoLoad` atributo a los atributos de VSPackage:
+- Agregar el `ProvideAutoLoad` atributo a los atributos de VSPackage:
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -41,11 +41,11 @@ Los paquetes VSPackage se cargan en Visual Studio solo cuando su funcionalidad e
 
      Ver los campos enumerados de <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> para obtener una lista de los contextos de interfaz de usuario y sus valores GUID.
 
--   Establecer un punto de interrupción en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.
+- Establecer un punto de interrupción en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.
 
--   Crear el VSPackage e iniciar la depuración.
+- Crear el VSPackage e iniciar la depuración.
 
--   Cargue una solución o cree uno.
+- Cargue una solución o cree uno.
 
      El VSPackage carga y se detiene en el punto de interrupción.
 
@@ -54,7 +54,7 @@ Los paquetes VSPackage se cargan en Visual Studio solo cuando su funcionalidad e
 
  Puede usar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> método para forzar la carga de un paquete VSPackage.
 
--   Inserte este código en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método del VSPackage que obliga a otro VSPackage para cargar:
+- Inserte este código en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método del VSPackage que obliga a otro VSPackage para cargar:
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;

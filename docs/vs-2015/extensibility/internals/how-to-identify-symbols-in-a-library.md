@@ -1,5 +1,5 @@
 ---
-title: Filtrar Identificación de símbolos en una biblioteca | Documentos de Microsoft
+title: Procedimiento Identificación de símbolos en una biblioteca | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,14 +11,14 @@ ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5dcdbd6d9f9f24b094d62289b0b058edde8c156b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f154c63940189f1a6035246fb7f72ec27be677f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116256"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Filtrar Identificar símbolos en una biblioteca
+# <a name="how-to-identify-symbols-in-a-library"></a>Procedimiento Identificar símbolos en una biblioteca
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Herramientas de exploración de símbolos muestran las vistas jerárquicas de símbolos. Los símbolos representan espacios de nombres, objetos, clases, miembros de clase y otros elementos de lenguaje.  
@@ -56,7 +56,7 @@ N1
   
 #### <a name="to-obtain-canonical-and-presentation-forms-information"></a>Para obtener canónico y presentación de información de formularios  
   
-1.  Implemente el método <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>.  
+1. Implemente el método <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>.  
   
      El Administrador de objetos llama a este método para obtener la lista de nodos contenidos en la ruta de acceso canónica del símbolo.  
   
@@ -79,7 +79,7 @@ N1
   
     ```  
   
-2.  Implemente el método <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>.  
+2. Implemente el método <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>.  
   
      El Administrador de objetos llama a este método para obtener la lista de nodos contenidos en la ruta de acceso de presentación del símbolo.  
   

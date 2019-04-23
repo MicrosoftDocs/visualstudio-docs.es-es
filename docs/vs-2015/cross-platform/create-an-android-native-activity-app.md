@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 01989e9e9d6b186e520f48d45202687d690410fc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115645"
 ---
 # <a name="create-an-android-native-activity-app"></a>Crear una aplicación de Android Native Activity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataform
  [Crear un nuevo proyecto de Native Activity](#Create)   
  [Compilar y ejecutar la aplicación predeterminada Native Activity de Android](#BuildHello)  
   
-##  <a name="req"></a> Requisitos  
+## <a name="req"></a> Requisitos  
  Antes de crear una aplicación de Android Native Activity, asegúrese de que cumple todos los requisitos del sistema y de que tiene instalada la opción Visual C++ para el desarrollo móvil multiplataforma en Visual Studio 2015. Para obtener más información, consulta [Instalar Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Asegúrese de que las herramientas de terceros y SDK necesarios estén incluidos en la instalación y que está instalado el emulador de Microsoft Visual Studio para Android.  
   
-##  <a name="Create"></a> Crear un nuevo proyecto de Native Activity  
+## <a name="Create"></a> Crear un nuevo proyecto de Native Activity  
  En este tutorial, primero debe crear un nuevo proyecto de Android Native Activity y, a continuación, compilar y ejecutar la aplicación predeterminada en el emulador de Visual Studio para Android.  
   
 #### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
@@ -49,30 +49,30 @@ Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataform
   
    La nueva solución de aplicaciones Native Activity de Android incluye dos proyectos:  
   
--   **MyAndroidApp.NativeActivity** contiene las referencias y el código de adherencia para que su aplicación se ejecute como Native Activity en Android. La implementación de los puntos de entrada del código de adherencia está en main.cpp. Los encabezados precompilados están en pch.h. Su proyecto de aplicación de Native Activity se compila en un archivo de biblioteca compartida (.so) que selecciona el proyecto Packaging.  
+- **MyAndroidApp.NativeActivity** contiene las referencias y el código de adherencia para que su aplicación se ejecute como Native Activity en Android. La implementación de los puntos de entrada del código de adherencia está en main.cpp. Los encabezados precompilados están en pch.h. Su proyecto de aplicación de Native Activity se compila en un archivo de biblioteca compartida (.so) que selecciona el proyecto Packaging.  
   
--   **MyAndroidApp.Packaging** crea el archivo .apk para la implementación en un emulador o dispositivo Android. Este contiene los recursos y el archivo AndroidManifest.xml donde se establecen las propiedades del manifiesto. También contiene el archivo build.xml que controla el proceso de compilación de Ant. Se establece como proyecto de inicio de manera predeterminada para que se pueda implementar y ejecutar directamente desde Visual Studio.  
+- **MyAndroidApp.Packaging** crea el archivo .apk para la implementación en un emulador o dispositivo Android. Este contiene los recursos y el archivo AndroidManifest.xml donde se establecen las propiedades del manifiesto. También contiene el archivo build.xml que controla el proceso de compilación de Ant. Se establece como proyecto de inicio de manera predeterminada para que se pueda implementar y ejecutar directamente desde Visual Studio.  
   
-##  <a name="BuildHello"></a> Compilar y ejecutar la aplicación predeterminada Native Activity de Android  
+## <a name="BuildHello"></a> Compilar y ejecutar la aplicación predeterminada Native Activity de Android  
  Compile y ejecute la aplicación generada por la plantilla para comprobar su instalación y configuración. Para realizar esta prueba inicial, ejecute la aplicación en uno de los perfiles de dispositivo que instala el emulador de Visual Studio para Android. Si prefiere probar la aplicación en otro destino, cargue el emulador de destino o conecte el dispositivo a su equipo.  
   
 #### <a name="to-build-and-run-the-default-native-activity-app"></a>Para compilar y ejecutar la aplicación Native Activity predeterminada  
   
-1.  Si aún no está seleccionada, elija la opción **x86** en la lista desplegable **Plataformas de solución** .  
+1. Si aún no está seleccionada, elija la opción **x86** en la lista desplegable **Plataformas de solución** .  
   
      ![Selección de x86 en el menú desplegable Plataformas de solución](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
   
      Si la lista **Plataformas de solución** no aparece, elija **Plataformas de solución** en la lista desplegable **Agregar o quitar botones** y luego elija la plataforma.  
   
-2.  En la barra de menús, elija **Compilar**, **Compilar solución**.  
+2. En la barra de menús, elija **Compilar**, **Compilar solución**.  
   
      La ventana Salida muestra la salida del proceso de compilación para los dos proyectos que hay en la solución.  
   
-3.  Elija como destino de la implementación uno de los perfiles de VS Emulator Android Phone (x86).  
+3. Elija como destino de la implementación uno de los perfiles de VS Emulator Android Phone (x86).  
   
      Si ha instalado otros emuladores o ha conectado un dispositivo Android, puede elegirlos en la lista desplegable de destinos de implementación.  
   
-4.  Presione F5 para iniciar la depuración o Mayús+F5 para iniciar sin depurar.  
+4. Presione F5 para iniciar la depuración o Mayús+F5 para iniciar sin depurar.  
   
      Este es el aspecto de la aplicación predeterminada en el emulador de Visual Studio para Android.  
   
@@ -80,6 +80,6 @@ Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataform
   
      Visual Studio inicia el emulador, que tarda unos segundos en cargarse e implementar el código. Cuando la aplicación se inicia, puede establecer puntos de interrupción y usar el depurador para ver el código, examinar los locales e inspeccionar los valores.  
   
-5.  Presione Mayús+F5 para detener la depuración.  
+5. Presione Mayús+F5 para detener la depuración.  
   
      El emulador es un proceso independiente que sigue ejecutándose. Puede editar, compilar e implementar el código varias veces en el mismo emulador.

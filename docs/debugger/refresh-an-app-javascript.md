@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1a0b90e5d863d41c46057e38c5f87bdad2481581
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790295"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088033"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Actualizar una aplicación para UWP en Visual Studio
 
@@ -32,34 +32,34 @@ ms.locfileid: "58790295"
 
  La actualización no conserva el estado de la aplicación ni refleja los siguientes cambios en la aplicación:
 
--   Cambios en el archivo de manifiesto del paquete, incluidos los cambios de imágenes especificadas en el manifiesto del paquete.
+- Cambios en el archivo de manifiesto del paquete, incluidos los cambios de imágenes especificadas en el manifiesto del paquete.
 
--   Cambios de referencias, como agregar o quitar una referencia de SDK, o cambios a los componentes de Windows en tiempo de ejecución (archivos .winmd).
+- Cambios de referencias, como agregar o quitar una referencia de SDK, o cambios a los componentes de Windows en tiempo de ejecución (archivos .winmd).
 
--   Cambios de recursos, como los aplicados a cadenas de archivos .resjson.
+- Cambios de recursos, como los aplicados a cadenas de archivos .resjson.
 
--   Cambios del archivo de proyecto que dan lugar a cambios del nombre de la ruta de acceso, nuevos archivos de proyecto o archivos eliminados.
+- Cambios del archivo de proyecto que dan lugar a cambios del nombre de la ruta de acceso, nuevos archivos de proyecto o archivos eliminados.
 
--   Cambios de propiedades del proyecto y de elementos, como cambios en el dispositivo de depuración seleccionado, o en la acción de empaquetado de un archivo (en la ventana Propiedades).
+- Cambios de propiedades del proyecto y de elementos, como cambios en el dispositivo de depuración seleccionado, o en la acción de empaquetado de un archivo (en la ventana Propiedades).
 
 > [!IMPORTANT]
 >  Cuando cambias las referencias, cambias el manifiesto del paquete o realizas otros cambios especificados en la lista anterior, debes detener y reiniciar el depurador para actualizar los archivos de código fuente HTML, CSS y JavaScript.
 
 ### <a name="to-refresh-an-app"></a>Para actualizar una aplicación
 
-1.  Con el proyecto UWP abierto en Visual Studio, seleccione **máquina Local** como el destino de depuración.
+1. Con el proyecto UWP abierto en Visual Studio, seleccione **máquina Local** como el destino de depuración.
 
      ![Lista de destinos de depuración seleccione](../debugger/media/js_select_target.png "JS_Select_Target")
 
-3.  Presiona F5 para ejecutar la aplicación en modo de depuración.
+3. Presiona F5 para ejecutar la aplicación en modo de depuración.
 
-4.  Cambia a Visual Studio.
+4. Cambia a Visual Studio.
 
-5.  En la página principal de la aplicación para UWP, editar algunas de HTML.
+5. En la página principal de la aplicación para UWP, editar algunas de HTML.
 
-7.  Haga clic en el **actualizar Windows app** button, que tiene el siguiente aspecto: ![Botón de la aplicación de Windows actualizar](../debugger/media/js_refresh.png "JS_Refresh"). (O bien, presiona F4).
+7. Haga clic en el **actualizar Windows app** button, que tiene el siguiente aspecto: ![Botón de la aplicación de Windows actualizar](../debugger/media/js_refresh.png "JS_Refresh"). (O bien, presiona F4).
 
-8.  Cambia a la aplicación. Se vuelve a cargar la aplicación y el HTML actualizado se usa para representar la aplicación.
+8. Cambia a la aplicación. Se vuelve a cargar la aplicación y el HTML actualizado se usa para representar la aplicación.
 
 ## <a name="see-also"></a>Vea también
 - [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)

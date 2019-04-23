@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5363a4d2f07b22aa0a256ff40f039792a3d2a6c2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087383"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leer modelos y diagramas en otras ediciones de Visual Studio
 
@@ -34,16 +34,16 @@ Por este motivo, si desea leer un diagrama de dependencia, también debe tener a
 
 Para leer un diagrama de dependencia, el conjunto mínimo de archivos que necesita es como sigue:
 
--   Los dos archivos de diagrama que desea leer, por ejemplo, de diagrama **MyDiagram.classdiagram y MyDiagram.classdiagram.layout**.
+- Los dos archivos de diagrama que desea leer, por ejemplo, de diagrama **MyDiagram.classdiagram y MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
     > Para diagramas de dependencia, también debe tener el archivo que se denomina _MyDiagram_**. layerdiagram.suppressions**.
 
--   El modelado del archivo de proyecto (**MyModel.modelproj**)
+- El modelado del archivo de proyecto (**MyModel.modelproj**)
 
--   El archivo de modelo raíz (**ModelDefinition\MyModel. UML**)
+- El archivo de modelo raíz (**ModelDefinition\MyModel. UML**)
 
--   Los archivos del paquete para los paquetes que se hace referencia en el diagrama (**ModelDefinition\MyPackage.uml**)
+- Los archivos del paquete para los paquetes que se hace referencia en el diagrama (**ModelDefinition\MyPackage.uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Cambios que puede realizar en modo de solo lectura
 
@@ -57,5 +57,5 @@ Puede guardar estos cambios. Si desea que los cambios sea visible para otros usu
 
 ## <a name="see-also"></a>Vea también
 
-- [Diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Uso de AsyncPackage para cargar VSPackages en segundo plano | Microsoft Docs
+title: Procedimiento Uso de AsyncPackage para cargar VSPackages en segundo plano | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
@@ -7,14 +7,14 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0de1ccf4a75bb10ae120e9237ceb176a3794a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113968"
 ---
-# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Filtrar Uso de AsyncPackage para cargar VSPackages en segundo plano
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Procedimiento Uso de AsyncPackage para cargar VSPackages en segundo plano
 Cargar e inicializar un paquete de VS pueden dar lugar a E/S de disco. Si se produce este tipo de E/S en el subproceso de interfaz de usuario, puede provocar problemas de capacidad de respuesta. Para solucionar este problema, Visual Studio 2015 introdujo la <xref:Microsoft.VisualStudio.Shell.AsyncPackage> clase que habilita la carga del paquete en un subproceso en segundo plano.
 
 ## <a name="create-an-asyncpackage"></a>Crear un AsyncPackage
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Convertir un VSPackage existente para AsyncPackage
  La mayoría del trabajo es lo mismo que crear un nuevo **AsyncPackage**. Siga los pasos 1 a 5 anteriores. También debe tener cautela con las siguientes recomendaciones:
 
-1.  No olvide quitar el `Initialize` invalidación que tenía en el paquete.
+1. No olvide quitar el `Initialize` invalidación que tenía en el paquete.
 
-2.  Evitar los interbloqueos: Podría haber oculto de RPC en el código. que tienen lugar en un subproceso en segundo plano. Asegúrese de que si está realizando una llamada RPC (por ejemplo, **GetService**), necesita para cambiar al subproceso principal (1) o (2) use la versión asincrónica de la API si existe (por ejemplo, **GetServiceAsync**).
+2. Evitar los interbloqueos: Podría haber oculto de RPC en el código. que tienen lugar en un subproceso en segundo plano. Asegúrese de que si está realizando una llamada RPC (por ejemplo, **GetService**), necesita para cambiar al subproceso principal (1) o (2) use la versión asincrónica de la API si existe (por ejemplo, **GetServiceAsync**).
 
-3.  No alterne entre los subprocesos con demasiada frecuencia. Intenta localizar el trabajo que se puede producir en un subproceso en segundo plano para reducir el tiempo de carga.
+3. No alterne entre los subprocesos con demasiada frecuencia. Intenta localizar el trabajo que se puede producir en un subproceso en segundo plano para reducir el tiempo de carga.
 
 ## <a name="querying-services-from-asyncpackage"></a>Consultar los servicios de AsyncPackage
  Un **AsyncPackage** puede o no puede cargar de forma asincrónica según el autor de llamada. Por ejemplo,

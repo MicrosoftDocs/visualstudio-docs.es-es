@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: a1cf66baf73fe4a04dcb21b0c7ac7609214bea20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997054"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088709"
 ---
 # <a name="extending-the-toolbox"></a>Extensión del Cuadro de herramientas
 El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Cuadro de herramientas** ofrece una colección de objetos que proporcionan características a los editores y diseñadores a través del mecanismo de arrastrar y colocar del IDE.  
   
  Hay dos formas básicas en que un VSPackage funciona con el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Cuadro de herramientas**:  
   
--   Un VSPackage puede agregar nuevos elementos de datos y controles al **Cuadro de herramientas**.  
+- Un VSPackage puede agregar nuevos elementos de datos y controles al **Cuadro de herramientas**.  
   
--   Un VSPackage puede ser un destino o un consumidor de la característica **Cuadro de herramientas** existente, además de admitir las operaciones de arrastrar y colocar y la configuración del aspecto del **Cuadro de herramientas**.  
+- Un VSPackage puede ser un destino o un consumidor de la característica **Cuadro de herramientas** existente, además de admitir las operaciones de arrastrar y colocar y la configuración del aspecto del **Cuadro de herramientas**.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Cómo: Crear un Control de cuadro de herramientas que usa Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  

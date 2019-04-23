@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996803"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114737"
 ---
 # <a name="rename-refactoring-c"></a>Cambiar el nombre de refactorización (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,12 +50,12 @@ ms.locfileid: "58996803"
 |variable local|Cambia la declaración y los usos de la variable en el nuevo nombre.|  
 |Método|Cambia el nombre del método y todas las referencias a ese método para el nuevo nombre. **Nota:**  Al cambiar el nombre de un método de extensión, la operación de cambio se propaga a todas las instancias del método que están en el ámbito, independientemente de si se utiliza el método de extensión como un método estático o un método de instancia. Para obtener más información, vea [Métodos de extensión](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
 |Espacio de nombres|Cambia el nombre del espacio de nombres para el nuevo nombre en la declaración, todos los `using` instrucciones y nombres completos. **Nota:**  Al cambiar el nombre de un espacio de nombres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] también actualiza el **Default Namespace** propiedad en el **aplicación** página de la **Diseñador de proyectos**. Esta propiedad no se puede restablecer seleccionando **deshacer** desde el **editar** menú. Para restablecer la **Default Namespace** valor de propiedad, debe modificar la propiedad en el **Diseñador de proyectos**. Para obtener más información, consulte [página aplicación](../ide/reference/application-page-project-designer-csharp.md).|  
-|Property|Cambia la declaración y los usos de la propiedad para el nuevo nombre.|  
+|Propiedad|Cambia la declaración y los usos de la propiedad para el nuevo nombre.|  
 |Tipo|Cambia todas las declaraciones y todos los usos del tipo para el nuevo nombre, incluidos constructores y destructores. Para los tipos parciales, la operación de cambio se propagará a todas las partes.|  
   
 #### <a name="to-rename-an-identifier"></a>Para cambiar el nombre de un identificador  
   
-1.  Cree una aplicación de consola denominada `RenameIdentifier` y, a continuación, reemplace `Program` por el siguiente código de ejemplo.  
+1. Cree una aplicación de consola denominada `RenameIdentifier` y, a continuación, reemplace `Program` por el siguiente código de ejemplo.  
   
     ```csharp  
     class ProtoClassA  
@@ -76,23 +76,23 @@ ms.locfileid: "58996803"
     }  
     ```  
   
-2.  Coloque el cursor en `MethodB`, ya sea en la declaración de método o la llamada al método.  
+2. Coloque el cursor en `MethodB`, ya sea en la declaración de método o la llamada al método.  
   
-3.  Desde el **refactorizar** menú, seleccione **cambiar el nombre**. El **cambiar el nombre** aparece el cuadro de diálogo.  
+3. Desde el **refactorizar** menú, seleccione **cambiar el nombre**. El **cambiar el nombre** aparece el cuadro de diálogo.  
   
      También puede haga clic en el cursor, apuntar a **refactorizar** en el menú contextual y, a continuación, haga clic en **cambiar el nombre de** para mostrar el **cambiar el nombre de** cuadro de diálogo.  
   
-4.  En el **nuevo nombre** , escriba `MethodC`.  
+4. En el **nuevo nombre** , escriba `MethodC`.  
   
-5.  Seleccione el **buscar en los comentarios** casilla de verificación.  
+5. Seleccione el **buscar en los comentarios** casilla de verificación.  
   
-6.  Haga clic en **Aceptar**.  
+6. Haga clic en **Aceptar**.  
   
-7.  En el **vista previa de cambios** cuadro de diálogo, haga clic en **aplicar**.  
+7. En el **vista previa de cambios** cuadro de diálogo, haga clic en **aplicar**.  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>Para cambiar el nombre de un identificador de etiquetas inteligentes  
   
-1.  Cree una aplicación de consola denominada `RenameIdentifier` y, a continuación, reemplace `Program` por el siguiente código de ejemplo.  
+1. Cree una aplicación de consola denominada `RenameIdentifier` y, a continuación, reemplace `Program` por el siguiente código de ejemplo.  
   
     ```csharp  
     class ProtoClassA  
@@ -113,18 +113,18 @@ ms.locfileid: "58996803"
     }  
     ```  
   
-2.  En la declaración de `MethodB`, escriba o borrarlo el identificador de método. Aparecerá un mensaje de etiqueta inteligente por debajo de este identificador.  
+2. En la declaración de `MethodB`, escriba o borrarlo el identificador de método. Aparecerá un mensaje de etiqueta inteligente por debajo de este identificador.  
   
     > [!NOTE]
     >  Sólo puede invocar la operación de refactorización con las etiquetas inteligentes en la declaración de un identificador.  
   
-3.  Escriba el método abreviado de teclado MAYÚS + ALT + F10 y, a continuación, presione la flecha abajo para mostrar el menú de etiquetas inteligentes.  
+3. Escriba el método abreviado de teclado MAYÚS + ALT + F10 y, a continuación, presione la flecha abajo para mostrar el menú de etiquetas inteligentes.  
   
      -o bien-  
   
      Mueva el puntero del mouse sobre el símbolo del sistema de etiqueta inteligente para mostrar la etiqueta inteligente. A continuación, mueva el puntero del mouse sobre la etiqueta inteligente y haga clic en la flecha hacia abajo para mostrar el menú de etiquetas inteligentes.  
   
-4.  Seleccione el **cambiar el nombre '\<identifer1 >' a '\<identificador2 >'** elemento de menú para invocar la operación de refactorización sin una vista previa de los cambios en el código. Todas las referencias a  **\<identifer1 >** se actualizarán automáticamente a  **\<identificador2 >**.  
+4. Seleccione el **cambiar el nombre '\<identifer1 >' a '\<identificador2 >'** elemento de menú para invocar la operación de refactorización sin una vista previa de los cambios en el código. Todas las referencias a  **\<identifer1 >** se actualizarán automáticamente a  **\<identificador2 >**.  
   
      -o bien-  
   

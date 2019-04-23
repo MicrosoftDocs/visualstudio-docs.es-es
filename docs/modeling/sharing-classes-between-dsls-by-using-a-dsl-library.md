@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 640936fbe0218bbb8e6d710547c39a4bfbf0bc9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087487"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Compartir clases entre DSL mediante una biblioteca DSL
 En Visual Studio de visualización y SDK de modelado, puede crear una definición incompleta de DSL que pueden importar a otro DSL. Esto le permite incluir partes comunes de modelos similares.
@@ -21,11 +21,11 @@ En Visual Studio de visualización y SDK de modelado, puede crear una definició
 
 #### <a name="to-create-a-dsl-library"></a>Para crear una biblioteca DSL
 
-1.  Cree un nuevo proyecto DSL y elija la plantilla de solución de la biblioteca DSL.
+1. Cree un nuevo proyecto DSL y elija la plantilla de solución de la biblioteca DSL.
 
      Con un modelo vacío, se creará un único proyecto DSL.
 
-2.  Puede agregar clases de dominio, relaciones, formas y así sucesivamente.
+2. Puede agregar clases de dominio, relaciones, formas y así sucesivamente.
 
      Los elementos de la biblioteca no es necesario que formar un único árbol de incrustación.
 
@@ -33,15 +33,15 @@ En Visual Studio de visualización y SDK de modelado, puede crear una definició
 
      Considere la posibilidad de la **modificador de herencia** de las clases de dominio para `Abstract`.
 
-3.  Puede agregar elementos que se definen en el Explorador de DSL, por ejemplo, los generadores de conexiones.
+3. Puede agregar elementos que se definen en el Explorador de DSL, por ejemplo, los generadores de conexiones.
 
-4.  Puede agregar las personalizaciones que requieren código adicional, como las restricciones de validación.
+4. Puede agregar las personalizaciones que requieren código adicional, como las restricciones de validación.
 
-5.  Haga clic en **Transformar todas las plantillas**.
+5. Haga clic en **Transformar todas las plantillas**.
 
-6.  Compile el proyecto.
+6. Compile el proyecto.
 
-7.  Cuando se distribuye el DSL para otras personas usar, debe proporcionar el ensamblado compilado (DLL) y el archivo `DslDefinition.dsl`. Puede encontrar el ensamblado compilado en una carpeta bajo `Dsl\bin\*`
+7. Cuando se distribuye el DSL para otras personas usar, debe proporcionar el ensamblado compilado (DLL) y el archivo `DslDefinition.dsl`. Puede encontrar el ensamblado compilado en una carpeta bajo `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Para importar una biblioteca DSL
 

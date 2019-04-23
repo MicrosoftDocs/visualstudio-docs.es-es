@@ -1,5 +1,5 @@
 ---
-title: Filtrar Buscar una ventana de Windows Vista | Documentos de Microsoft
+title: Procedimiento Buscar una ventana de Windows Vista | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,14 +11,14 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 435f189d22abed9697953fc8b946deac64f86740
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 205ff44c44a73dc44d3a3493347a153fb52e712d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113045"
 ---
-# <a name="how-to-search-for-a-window-in-windows-view"></a>Filtrar Buscar una ventana en la vista Ventanas
+# <a name="how-to-search-for-a-window-in-windows-view"></a>Procedimiento Buscar una ventana en la vista Ventanas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede buscar una ventana concreta en la vista de Windows mediante su identificador, título, clase o una combinación de su título y la clase como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. Los campos en el cuadro de diálogo mostrará los atributos de la ventana seleccionada en el árbol de la ventana.  
@@ -27,16 +27,16 @@ Puede buscar una ventana concreta en la vista de Windows mediante su identificad
   
 ### <a name="to-search-for-a-window-in-windows-view"></a>Para buscar una ventana en la vista de Windows  
   
-1.  Organizar las ventanas por lo que ese Spy ++ la [Windows Vista](../debugger/windows-view.md) ventana y la ventana de destino están visibles.  
+1. Organizar las ventanas por lo que ese Spy ++ la [Windows Vista](../debugger/windows-view.md) ventana y la ventana de destino están visibles.  
   
-2.  Desde el **búsqueda** menú, elija **Buscar ventana**.  
+2. Desde el **búsqueda** menú, elija **Buscar ventana**.  
   
      El [cuadro de diálogo Buscar ventana](../debugger/window-search-dialog-box.md) se abre.  
   
     > [!TIP]
     >  Para reducir la confusión en la pantalla, seleccione el **Ocultar Spy** opción. Esta opción oculta la ventana principal de Spy ++ y deja solo la **Buscar ventana** cuadro de diálogo visible encima de las otras aplicaciones. La ventana principal de Spy ++ se restaura al hacer clic en **Aceptar** o **cancelar**, o cuando se borra el **Ocultar Spy ++** opción.  
   
-3.  Arrastre el **herramienta de búsqueda** a través de la ventana de destino. A medida que arrastra la herramienta, el **Buscar ventana** cuadro de diálogo muestra los detalles de la ventana seleccionada.  
+3. Arrastre el **herramienta de búsqueda** a través de la ventana de destino. A medida que arrastra la herramienta, el **Buscar ventana** cuadro de diálogo muestra los detalles de la ventana seleccionada.  
   
      -O bien-  
   
@@ -46,8 +46,8 @@ Puede buscar una ventana concreta en la vista de Windows mediante su identificad
   
      Si conoce el título o una clase de la ventana que desea, puede escribir en el **título** y **clase** cuadros de texto y borre el **controlar** cuadro de texto.  
   
-4.  Elija **seguridad** o **abajo** para la dirección inicial de la búsqueda.  
+4. Elija **seguridad** o **abajo** para la dirección inicial de la búsqueda.  
   
-5.  Haga clic en **Aceptar**.  
+5. Haga clic en **Aceptar**.  
   
      Si se encuentra una ventana coincidente, se resalta en el [Windows Vista](../debugger/windows-view.md) ventana.

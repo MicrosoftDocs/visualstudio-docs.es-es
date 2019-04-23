@@ -11,12 +11,12 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27623c22664e9d3c6b651615465e6abe812ea408
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 31b55c57f47f25814eff24f13bcf91408468d0f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087326"
 ---
 # <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>¿Qué&#39;s de Control de código fuente en Visual Studio 2015
 
@@ -33,17 +33,17 @@ En [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] puede proporcionar una solu
   
  Los pasos siguientes dan una visión general de lo que es necesario para implementar un paquete de control de código fuente. Para obtener más información, consulte [crear un VSPackage de Control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md).  
   
-1.  Cree un VSPackage que ofrece un servicio de control de origen privado.  
+1. Cree un VSPackage que ofrece un servicio de control de origen privado.  
   
-2.  Implementar las interfaces en los servicios relacionados con el control de código fuente son ofrecidos por [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (por ejemplo, el <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> interfaz).  
+2. Implementar las interfaces en los servicios relacionados con el control de código fuente son ofrecidos por [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (por ejemplo, el <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> interfaz).  
   
-3.  Registre el VSPackage de control de código fuente.  
+3. Registre el VSPackage de control de código fuente.  
   
-4.  Implementar el control de código fuente todas la interfaz de usuario, incluidos los elementos de menú, cuadros de diálogo, barras de herramientas y menús contextuales.  
+4. Implementar el control de código fuente todas la interfaz de usuario, incluidos los elementos de menú, cuadros de diálogo, barras de herramientas y menús contextuales.  
   
-5.  Todos los eventos relacionados con el control de origen se pasan al control de código fuente VSackage cuando está activo y debe controlarse mediante el paquete de VS.  
+5. Todos los eventos relacionados con el control de origen se pasan al control de código fuente VSackage cuando está activo y debe controlarse mediante el paquete de VS.  
   
-6.  El VSPackage de control de código fuente debe escuchar eventos tales como implementación el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> , así como los eventos de documento de proyecto de pista (TPD) de la interfaz (tal como está implementado por el <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interfaz) y tomar las medidas necesarias.  
+6. El VSPackage de control de código fuente debe escuchar eventos tales como implementación el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> , así como los eventos de documento de proyecto de pista (TPD) de la interfaz (tal como está implementado por el <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interfaz) y tomar las medidas necesarias.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   

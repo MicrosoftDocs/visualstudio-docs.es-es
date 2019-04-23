@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d95c3db11551eb6551f509b4afbe52a70ff55ab9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3e292dad6c6b633d5f30f263f388d8e85bb6c541
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115281"
 ---
 # <a name="iactivescriptprofilercallback2-interface"></a>IActiveScriptProfilerCallback2 (Interfaz)
 Proporciona métodos que se utilizan el motor de scripting para notificar a un objeto de generador de perfiles cuando se producen eventos de Document Object Model (DOM). Esta interfaz se implementa mediante el objeto de generador de perfiles.  
@@ -39,7 +39,7 @@ Proporciona métodos que se utilizan el motor de scripting para notificar a un o
 >  Para agregar la capacidad de iniciar y detener la generación de perfiles cuando se ejecuta una secuencia de comandos, llame a los métodos siguientes. Mediante estos métodos, se puede obtener la pila de llamadas completa si [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] se ejecuta al iniciar o detener la generación de perfiles.  
 > 
 > - Llame a [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) para notificar al generador de perfiles que ha iniciado la generación de perfiles.  
->   -   Llame a [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) para notificar al generador de perfiles que pronto dejará de generación de perfiles.  
+>   - Llame a [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) para notificar al generador de perfiles que pronto dejará de generación de perfiles.  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script Profiler (Interfaces)](../../winscript/reference/active-script-profiler-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Error: El equipo remoto no aparece en un cuadro de diálogo conexiones remotas | Microsoft Docs'
+title: 'Error: La máquina remota no aparece en un cuadro de diálogo conexiones remotas | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a081eceb137c7958a489fb0968f190d0d01b32fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: dd194bc26574e8004894a72ce29d753cabf66a21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114722"
 ---
-# <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Error: la máquina remota no aparece en el cuadro de diálogo Conexiones remotas
+# <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Error: La máquina remota no aparece en el cuadro de diálogo Conexiones remotas
 Si el equipo remoto no aparece en el cuadro de diálogo Conexiones remotas, compruebe las siguientes causas comunes.
 
- Si usa el modo de compatibilidad administrada, vea la documentación de Visual Studio 2010: [Solución de problemas de depuración remota - Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100)).
+ Si está utilizando el modo de compatibilidad administrado, consulte la documentación de Visual Studio 2010: [Solución de problemas de depuración remota - Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100)).
 
 ### <a name="common-causes-for-this-error"></a>Causas comunes de este error
 
--   El equipo remoto se está ejecutando en una máquina que se encuentra en una subred diferente. Para solucionar este problema, escriba manualmente la dirección IP o el nombre del equipo en el cuadro de diálogo Calificador
+- El equipo remoto se está ejecutando en una máquina que se encuentra en una subred diferente. Para solucionar este problema, escriba manualmente la dirección IP o el nombre del equipo en el cuadro de diálogo Calificador
 
--   El depurador remoto no se está ejecutando en la máquina remota. Para solucionar este problema, inicie al depurador remoto.
+- El depurador remoto no se está ejecutando en la máquina remota. Para solucionar este problema, inicie al depurador remoto.
 
--   El firewall está bloqueando la comunicación entre Visual Studio y la máquina remota. Para solucionar este problema, configure el firewall para permitir la comunicación entre Visual Studio y el depurador remoto (msvsmon).
+- El firewall está bloqueando la comunicación entre Visual Studio y la máquina remota. Para solucionar este problema, configure el firewall para permitir la comunicación entre Visual Studio y el depurador remoto (msvsmon).
 
--   El software antivirus está bloqueando la comunicación entre Visual Studio y la máquina remota. Para solucionar este problema, configure el software antivirus para permitir la comunicación entre Visual Studio y el depurador remoto (msvsmon).
+- El software antivirus está bloqueando la comunicación entre Visual Studio y la máquina remota. Para solucionar este problema, configure el software antivirus para permitir la comunicación entre Visual Studio y el depurador remoto (msvsmon).
 
 ## <a name="see-also"></a>Vea también
 - [Remote Debugging](../debugger/remote-debugging.md)

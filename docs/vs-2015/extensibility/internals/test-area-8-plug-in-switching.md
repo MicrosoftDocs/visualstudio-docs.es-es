@@ -11,12 +11,12 @@ ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8064ffec4b98c1a05d8236b11bec226a08f20321
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112955"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Área de prueba 8: Cambio de los complementos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo inte
 ## <a name="command-menu-access"></a>Acceso al menú de comandos  
  La siguiente [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rutas de menú del entorno de desarrollo integrado que se usan en los casos de prueba.  
   
--   Control de código fuente actual complemento: **Herramientas** -> **opciones** -> **Control de código fuente** -> **selección de complemento**.  
+- Control de código fuente actual complemento: **Herramientas** -> **opciones** -> **Control de código fuente** -> **selección de complemento**.  
   
--   Cambiar origen de enlace de control: **Archivo** -> **Control de código fuente** -> **cambiar Control de código fuente**...  
+- Cambiar origen de enlace de control: **Archivo** -> **Control de código fuente** -> **cambiar Control de código fuente**...  
   
 ## <a name="common-expected-behavior"></a>Comportamiento esperado comunes  
  Es posible cambiar el complemento para una solución de control de origen sin salir de Visual Studio ni volver a cargar la solución. Además, el complemento de control de código fuente actual cambia automáticamente a la utilizada por una solución cuando se carga esa solución.  

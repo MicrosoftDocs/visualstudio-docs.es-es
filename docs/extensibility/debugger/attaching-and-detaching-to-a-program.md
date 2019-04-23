@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b81ea271e1ab5d44337ce111e89d5624efd452d0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fe89c6106ab1b411974e44bb05128b2bfc99fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089608"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Asociación y desasociación a un programa
 Asociar al depurador requiere el envío de la secuencia correcta de métodos y eventos con los atributos adecuados.
@@ -31,11 +31,11 @@ Asociar al depurador requiere el envío de la secuencia correcta de métodos y e
 
     Si `S_OK` se devuelve es la DE que se cargue en el mismo proceso que el SDM. El SDM realiza las siguientes tareas:
 
-   1.  Las llamadas [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) para obtener la información del motor de la DE.
+   1. Las llamadas [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) para obtener la información del motor de la DE.
 
-   2.  Crea conjuntamente la DE.
+   2. Crea conjuntamente la DE.
 
-   3.  Las llamadas [adjuntar](../../extensibility/debugger/reference/idebugengine2-attach.md).
+   3. Las llamadas [adjuntar](../../extensibility/debugger/reference/idebugengine2-attach.md).
 
 2. Los envíos DE un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) en el SDM con un `EVENT_SYNC` atributo.
 

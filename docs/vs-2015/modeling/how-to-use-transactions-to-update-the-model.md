@@ -1,5 +1,5 @@
 ---
-title: Filtrar Usar transacciones para actualizar el modelo | Documentos de Microsoft
+title: Procedimiento Usar transacciones para actualizar el modelo | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff4aba08b4eaa1d508c3371a3da80b8cac48534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbc09543d0ee0297678d3f205becc55a6b6d7714
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085938"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Filtrar Usar transacciones para actualizar el modelo
+# <a name="how-to-use-transactions-to-update-the-model"></a>Procedimiento Usar transacciones para actualizar el modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las transacciones Asegúrese de que los cambios realizados en el almacén se tratan como un grupo. Los cambios que se agrupan pueden ser confirmados o revertidos como una sola unidad.  
@@ -61,9 +61,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Deshacer una transacción  
  Para asegurarse de que permanece en el Store o se revierte a su estado anterior a la transacción, puede utilizar cualquiera de estas tácticas:  
   
-1.  Generar una excepción que no se captura dentro del ámbito de la transacción.  
+1. Generar una excepción que no se captura dentro del ámbito de la transacción.  
   
-2.  Revertir explícitamente la transacción:  
+2. Revertir explícitamente la transacción:  
   
     ```  
     this.Store.TransactionManager.CurrentTransaction.Rollback();  

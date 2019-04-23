@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775832"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113019"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Métodos abreviados de teclado y de mouse en el diagrama de clases y la ventana de detalles de clase (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
   
  **En este tema**  
   
--   [Usar el mouse en el Diseñador de clases](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [Usar el mouse en el Diseñador de clases](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [Usar el mouse en la ventana Detalles de clase](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [Usar el mouse en la ventana Detalles de clase](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [Usar el teclado en el Diseñador de clases](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [Usar el teclado en el Diseñador de clases](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [Usar el teclado en la ventana Detalles de clase](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [Usar el teclado en la ventana Detalles de clase](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> Usar el mouse en el Diseñador de clases  
+## <a name="MouseClassDesigner"></a> Usar el mouse en el Diseñador de clases  
  Se admiten las siguientes acciones del mouse en los diagramas de clases:  
   
 |Combinación del mouse|Contexto|Descripción|  
@@ -49,20 +49,20 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 |CTRL + rueda del mouse|Diagrama de clases|Zoom.|  
 |CTRL + MAYÚS + clic|Diagrama de clases|Zoom.|  
   
-##  <a name="MouseClassDetails"></a> Usar el mouse en la ventana Detalles de clase  
+## <a name="MouseClassDetails"></a> Usar el mouse en la ventana Detalles de clase  
  Puede usar un mouse para cambiar la apariencia de la ventana Detalles de clase y los datos que muestra de las siguientes maneras:  
   
--   Haga clic en cualquier celda modificable para editar su contenido. Los cambios se reflejan en todos los lugares en los que se almacenan o muestran los datos, incluida la ventana Propiedades y el código fuente.  
+- Haga clic en cualquier celda modificable para editar su contenido. Los cambios se reflejan en todos los lugares en los que se almacenan o muestran los datos, incluida la ventana Propiedades y el código fuente.  
   
--   Haga clic en cualquier celda de una fila para que la ventana Propiedades muestre las propiedades del elemento representado por la fila.  
+- Haga clic en cualquier celda de una fila para que la ventana Propiedades muestre las propiedades del elemento representado por la fila.  
   
--   Para cambiar el ancho de una columna, arrastre el límite del lado derecho del encabezado de columna hasta obtener el ancho deseado.  
+- Para cambiar el ancho de una columna, arrastre el límite del lado derecho del encabezado de columna hasta obtener el ancho deseado.  
   
--   Puede expandir o contraer nodos de compartimiento o de propiedad haciendo clic en los símbolos de flecha situados a la izquierda de la fila.  
+- Puede expandir o contraer nodos de compartimiento o de propiedad haciendo clic en los símbolos de flecha situados a la izquierda de la fila.  
   
--   La ventana Detalles de clase dispone de varios botones para crear nuevos miembros en la clase actual y para navegar entre los compartimientos de los miembros en la cuadrícula de la ventana Detalles de clase. Para obtener más información, consulte Botones de la ventana Detalles de clase.  
+- La ventana Detalles de clase dispone de varios botones para crear nuevos miembros en la clase actual y para navegar entre los compartimientos de los miembros en la cuadrícula de la ventana Detalles de clase. Para obtener más información, consulte Botones de la ventana Detalles de clase.  
   
-##  <a name="KeyboardClassDesigner"></a> Usar el teclado en el Diseñador de clases  
+## <a name="KeyboardClassDesigner"></a> Usar el teclado en el Diseñador de clases  
  Se admiten las siguientes acciones del teclado en los diagramas de clases:  
   
 |Key|Contexto|Descripción|  
@@ -89,7 +89,7 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 |MAYÚS+TAB|Todos los contextos|Navega al elemento secundario anterior del mismo elemento primario (permite el recorrido cíclico).|  
 |Barra espaciadora|Todos los contextos|Alterna la selección sobre el elemento actual.|  
   
-##  <a name="KeyboardClassDetails"></a> Usar el teclado en la ventana Detalles de clase  
+## <a name="KeyboardClassDetails"></a> Usar el teclado en la ventana Detalles de clase  
   
 > [!NOTE]
 >  Se han elegido los siguientes enlaces de teclado para imitar la experiencia de escritura de código.  
