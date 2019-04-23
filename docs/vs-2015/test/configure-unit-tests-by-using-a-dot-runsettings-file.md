@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12acdaa6884a657782aa1e61e0a02f7118a59392
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a86811bb4d87dffcf9abdacae9bca1fdac4298ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043047"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar pruebas unitarias usando un archivo .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
   
    ![Habilitar un archivo de parámetros de ejecución](../test/media/runsettings-1.png "RunSettings-1")  
   
-##  <a name="example"></a> Copiar este archivo de ejemplo .runsettings  
+## <a name="example"></a> Copiar este archivo de ejemplo .runsettings  
  A continuación se muestra un archivo *.runsettings típico. Cada elemento del archivo es opcional, porque cada valor tiene una configuración predeterminada.  
   
 ```xml  

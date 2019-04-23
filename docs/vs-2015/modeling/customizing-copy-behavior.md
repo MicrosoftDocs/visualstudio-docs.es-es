@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997261"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054944"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizar comportamiento de copia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -217,7 +217,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Permitir que el usuario arrastre y coloque elementos.**  
  Vea [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a> Personalizar el comportamiento de copiar vínculos  
+## <a name="customizeLinks"></a> Personalizar el comportamiento de copiar vínculos  
  Cuando el usuario copia un elemento, el comportamiento estándar es que los elementos incrustados también se copien. Puede modificar el comportamiento estándar de la operación de copiar. En la definición de DSL, seleccione un rol en un lado de una relación y, en la ventana de propiedades establecidas la **Propagates Copy** valor.  
   
  ![Propiedad propagates Copy del rol de dominio](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -291,9 +291,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
  Defina dos métodos en su clase ElementOperations:  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` que determina si el elemento de origen se puede arrastrar a la forma, conector o diagrama de destino.  
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` que determina si el elemento de origen se puede arrastrar a la forma, conector o diagrama de destino.  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` que combina el elemento de origen en el destino.  
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` que combina el elemento de origen en el destino.  
   
 ### <a name="canmerge"></a>CanMerge()  
  Se llama a `CanMerge()` para determinar los comentarios que se deben proporcionar al usuario mientras el mouse se mueve por el diagrama. Los parámetros del método son el elemento sobre el cual se mantiene el mouse y los datos sobre el origen desde el cual se realizó la operación de arrastrar. El usuario puede arrastrar desde cualquier lugar de la pantalla. Por lo tanto, el objeto de origen puede ser de muchos tipos diferentes y se puede serializar con diferentes formatos. Si el origen es un DSL o un modelo UML, el parámetro de datos es la serialización de un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Las operaciones de arrastrar, copiar y cuadro de herramientas usan prototipos de grupos de elementos para representar fragmentos de modelos.  
