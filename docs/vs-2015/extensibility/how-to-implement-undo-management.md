@@ -1,5 +1,5 @@
 ---
-title: Filtrar Implementar la administración de deshacer | Documentos de Microsoft
+title: Procedimiento Implementar la administración de deshacer | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,14 +10,14 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 267cd5d5487bfb5f861143e3767c066330bff81e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112616"
 ---
-# <a name="how-to-implement-undo-management"></a>Filtrar Implementar la administración de deshacer
+# <a name="how-to-implement-undo-management"></a>Procedimiento Implementar la administración de deshacer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La interfaz principal que se usa para la administración de deshacer es <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, que es implementado por el entorno. Para admitir la administración de deshacer, implementar unidades de deshacer independiente (es decir, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, que puede contener varios pasos individuales.  
@@ -29,9 +29,9 @@ La interfaz principal que se usa para la administración de deshacer es <xref:Mi
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>Para admitir la administración de la fase de reversión para un editor de vista única  
   
-1.  Llame a `QueryInterface` en el `IServiceProvider` interfaz en el marco de ventana para `IOleUndoManager`, desde el objeto de vista de documento para obtener acceso al administrador de deshacer (`IID_IOLEUndoManager`).  
+1. Llame a `QueryInterface` en el `IServiceProvider` interfaz en el marco de ventana para `IOleUndoManager`, desde el objeto de vista de documento para obtener acceso al administrador de deshacer (`IID_IOLEUndoManager`).  
   
-2.  Cuando una vista está ubicada en un marco de ventana, obtiene un puntero de sitio, que puede usar para llamar a `QueryInterface` para `IServiceProvider`.  
+2. Cuando una vista está ubicada en un marco de ventana, obtiene un puntero de sitio, que puede usar para llamar a `QueryInterface` para `IServiceProvider`.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Casos donde un editor admite varias vistas  
  Si dispone de separación de documento y vista, hay administrador de deshacer normalmente, un asociado con el propio documento. Todas las unidades de deshacer se colocan en el Administrador de deshacer asociado al objeto de datos de documento.  
@@ -48,17 +48,17 @@ La interfaz principal que se usa para la administración de deshacer es <xref:Mi
   
 3. Retransmisión su <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> llama a almacenado `IOleCommandTarget` interfaz para los siguientes comandos de StandardCommandSet97:  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. Llame a `QueryInterface` en `IOleUndoManager` para `IID_IVsChangeTrackingUndoManager`. Store el puntero a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   
