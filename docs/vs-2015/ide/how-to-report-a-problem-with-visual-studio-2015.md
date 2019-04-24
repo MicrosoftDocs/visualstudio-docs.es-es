@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083654"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Cómo notificar un problema con Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Haga clic en el icono de comentarios del usuario junto a **Inicio rápido** en l
 
 ## <a name="describe-the-problem"></a>Describir el problema
 
-###  <a name="describe_the_problem"></a>
+### <a name="describe_the_problem"></a>
 
 1. Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio correcto.
 
@@ -49,15 +49,15 @@ Elija **Incluir captura de pantalla** para enviar la pantalla actual a Microsoft
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Proporcione un volcado de seguimiento y montón (opcional)
 
-###  <a name="provide_a_trace_and_heap_dump"></a>
+### <a name="provide_a_trace_and_heap_dump"></a>
 
-1.  Los archivos de volcado de seguimiento y montón son muy útiles para ayudarnos a diagnosticar problemas.   Apreciamos mucho que use la herramienta Notificar un problema para grabar los pasos de reproducción y enviar los datos a Microsoft.
+1. Los archivos de volcado de seguimiento y montón son muy útiles para ayudarnos a diagnosticar problemas.   Apreciamos mucho que use la herramienta Notificar un problema para grabar los pasos de reproducción y enviar los datos a Microsoft.
 
-2.  Haga clic en el botón de contenido adicional junto a **Registre sus acciones para reproducir el problema**. Si el problema provoca que Visual Studio se bloquee, abra otra instancia de Visual Studio y selecciónela en la Vista de lista.
+2. Haga clic en el botón de contenido adicional junto a **Registre sus acciones para reproducir el problema**. Si el problema provoca que Visual Studio se bloquee, abra otra instancia de Visual Studio y selecciónela en la Vista de lista.
 
-3.  Haga clic en **Iniciar grabación** y realice los pasos que reproducen el problema. Cuando haya terminado, haga clic en **Detener grabación** en la ventana flotante.
+3. Haga clic en **Iniciar grabación** y realice los pasos que reproducen el problema. Cuando haya terminado, haga clic en **Detener grabación** en la ventana flotante.
 
-4.  Espere unos minutos mientras Visual Studio recopila y empaqueta la información que se haya grabado. El cuadro de diálogo tendrá un aspecto similar al siguiente cuando el proceso de recopilación se haya completado:
+4. Espere unos minutos mientras Visual Studio recopila y empaqueta la información que se haya grabado. El cuadro de diálogo tendrá un aspecto similar al siguiente cuando el proceso de recopilación se haya completado:
 
      ![Registrar un archivo de seguimiento](../ide/media/record-a-trace-file.png "Registrar un archivo de seguimiento")
 
