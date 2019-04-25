@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: crear y ejecutar una instalación desatendida | Microsoft Docs'
+title: 'Procedimiento: Creación y ejecución de una instalación desatendida | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803567"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040551"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Cómo: Crear y ejecutar una instalación desatendida de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Puede ejecutar la aplicación de instalación de [!INCLUDE[vsprvs](../includes/v
 
 #### <a name="to-create-a-network-image"></a>Para crear una imagen de red
 
-1.  Cree una carpeta en el servidor (por ejemplo, *Unidad*:\IDEinstall\\).
+1. Cree una carpeta en el servidor (por ejemplo, *Unidad*:\IDEinstall\\).
 
-2.  Descargar el instalador desde [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)y, a continuación, ejecute *producto*.exe/Layout *unidad*: \IDEinstall\
+2. Descargue el instalador desde [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) y, luego, ejecute *Product*.exe /Layout *Unidad*:\IDEinstall\.
 
-3.  Comparta la carpeta IDEinstall en la red y, a continuación, establezca la configuración de seguridad adecuada.
+3. Comparta la carpeta IDEinstall en la red y, luego, defina la configuración de seguridad adecuada.
 
-     La ruta de acceso de red de la aplicación de instalación para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] es similar a \\ \\ *ServerName*\IDEinstall\\*producto*.exe.
+     La ruta de acceso de red de la aplicación de instalación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se parece a \\\\*ServerName*\IDEinstall\\*Product*.exe.
 
     > [!NOTE]
     >  En la instalación puede producirse un error si la combinación de ruta de acceso y nombre de archivo supera los 260 caracteres. La longitud máxima de una ruta de acceso en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] es de 221 caracteres.  El nombre de la ruta de acceso local no debe tener más de 70 caracteres y el nombre de la ruta de acceso de red no debe superar los 39 caracteres.
@@ -43,14 +43,14 @@ Puede ejecutar la aplicación de instalación de [!INCLUDE[vsprvs](../includes/v
      La instalación también puede producir un error si los nombres de carpeta de la ruta de acceso incluyen espacios insertados (por ejemplo, "\\\\*ServerName*\IDE install" o \\\\*ServerName*\Visual Studio\\).
 
 ## <a name="deploying-visual-studio-in-unattended-mode"></a>Implementar Visual Studio en modo desatendido
- Para implementar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en modo desatendido, debe modificar el archivo AdminDeployment.xml. Para ello, primero debe crear el archivo AdminDeployment.xml utilizando el `/CreateAdminFile`  *\<ubicación del archivo >* parámetro de línea de comandos. Luego, puede usar este archivo para situar una implementación de Visual Studio en la red o extraerla en una instalación si coloca ese archivo en el directorio *Unidad*:\IDEinstall\packages. El archivo AdminDeployment.xml no es único para un sistema operativo, una arquitectura, una edición de Visual Studio o un lenguaje del sistema operativo.
+ Para implementar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en modo desatendido, debe modificar el archivo AdminDeployment.xml. Para ello, primero debe crear el archivo AdminDeployment.xml con el parámetro de línea de comandos `/CreateAdminFile` *\<ubicación del archivo>*. Luego, puede usar este archivo para situar una implementación de Visual Studio en la red o extraerla en una instalación si coloca ese archivo en el directorio *Unidad*:\IDEinstall\packages. El archivo AdminDeployment.xml no es único para un sistema operativo, una arquitectura, una edición de Visual Studio o un lenguaje del sistema operativo.
 
 > [!CAUTION]
 >  A veces, los elementos que aparecen seleccionados en el archivo AdminDeployment.xml no se instalan. Para resolver este problema, coloque los elementos marcados como “Selected="yes"” al **final** del archivo AdminDeployment.xml.
 >
 >  Si no desea instalar las dependencias opcionales de un elemento, debe seleccionar primero el elemento primario y, a continuación, cancelar la selección de las dependencias opcionales después del elemento primario, tal como se muestra en la siguiente captura de pantalla:
 >
->  ![Elementos de la instalación al final del archivo AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+>  ![Elementos de instalación al final del archivo AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
 >  Otra manera de hacer esto es simplemente omitir los elementos secundarios opcionales de un elemento primario. En otras palabras, no incluya elementos “Selected=”no””. Sin embargo, aún deberá colocar todos los elementos “Selected=”yes”” al final del archivo AdminDeployment.xml.
 
@@ -62,39 +62,39 @@ Puede ejecutar la aplicación de instalación de [!INCLUDE[vsprvs](../includes/v
 |Elemento|Atributo|Valores|Descripción|
 |-------------|---------------|------------|-----------------|
 |BundleCustomizations|TargetDir|*Ruta de acceso*|Tiene el mismo comportamiento que reemplazar la ruta de acceso en la interfaz de usuario de la aplicación de instalación. Este elemento se omite si Visual Studio ya está instalado.|
-|BundleCustomizations|NoWeb|Sí&#124;predeterminada|Si el valor de este elemento es yes, la aplicación de instalación nunca intenta ir a la web durante la instalación.|
-|SelectableItemCustomization|Hidden|Sí&#124;n|Si el valor de este elemento es Yes, oculta un elemento seleccionable en el árbol de personalización.|
-|SelectableItemCustomization|Seleccionado|Sí&#124;n|Activa o desactiva un elemento seleccionable en el árbol de personalización.|
+|BundleCustomizations|NoWeb|Sí&#124;valor predeterminado|Si el valor de este elemento es yes, la aplicación de instalación nunca intenta ir a la web durante la instalación.|
+|SelectableItemCustomization|Hidden|Sí&#124;No|Si el valor de este elemento es Yes, oculta un elemento seleccionable en el árbol de personalización.|
+|SelectableItemCustomization|Seleccionado|Sí&#124;No|Activa o desactiva un elemento seleccionable en el árbol de personalización.|
 |BundleCustomizations|Fuente|Ruta de acceso|Ubicación de la fuente que el usuario desea usar.  Esta fuente se usa para posteriores operaciones de modificación en la máquina (“Default” de forma predeterminada).|
-|BundleCustomizations|SuppressRefreshPrompt|Sí&#124;predeterminada|Impide que se solicite al usuario que actualice la configuración si hay disponible una más reciente.|
-|BundleCustomizations|NoRefresh|Sí&#124;predeterminada|No actualizará la configuración si hay disponible una versión más reciente.|
-|BundleCustomizations|NoCacheOnlyMode|Sí&#124;predeterminada|Impide que se rellene automáticamente la memoria caché del paquete.|
+|BundleCustomizations|SuppressRefreshPrompt|Sí&#124;valor predeterminado|Impide que se solicite al usuario que actualice la configuración si hay disponible una más reciente.|
+|BundleCustomizations|NoRefresh|Sí&#124;valor predeterminado|No actualizará la configuración si hay disponible una versión más reciente.|
+|BundleCustomizations|NoCacheOnlyMode|Sí&#124;valor predeterminado|Impide que se rellene automáticamente la memoria caché del paquete.|
 
 > [!WARNING]
 >  La aplicación de instalación respetará el estado seleccionado de un elemento SelectableItem incluso si está oculto. Por ejemplo, si desea instalar siempre un elemento seleccionable, márquelo como oculto y seleccionado.
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>Para crear una instalación desatendida de Visual Studio
 
-1.  En el archivo *Unidad*:\IDEinstall\AdminDeployment.xml, cambie el valor del atributo NoWeb del elemento BundleCustomizations de “default” a “yes” tal como se muestra en el siguiente ejemplo:
+1. En el archivo *Unidad*:\IDEinstall\AdminDeployment.xml, cambie el valor del atributo NoWeb del elemento BundleCustomizations de “default” a “yes” tal como se muestra en el siguiente ejemplo:
 
      Cambiar `<BundleCustomizations TargetDir="default" NoWeb="default"/>` a `<BundleCustomizations TargetDir="default" NoWeb="yes"/>`
 
-2.  Cambie el atributo SelectableItemCustomization según sea necesario para los componentes opcionales y guarde el archivo.
+2. Cambie el atributo SelectableItemCustomization según sea necesario para los componentes opcionales y guarde el archivo.
 
 ## <a name="running-unattended-setup"></a>Ejecutar una instalación desatendida
  Para ejecutar la instalación desatendida, puede ejecutar automáticamente la aplicación de instalación de Visual Studio en los equipos cliente o puede permitir que los usuarios ejecuten la aplicación ellos mismos con los valores que usted defina.
 
 #### <a name="to-run-an-unattended-installation-on-a-client-computer"></a>Para ejecutar una instalación desatendida en un equipo cliente
 
-- Abra el **iniciar** menú, elija **ejecutar**y, a continuación, escriba \\ \\ *ServerName*\IDEinstall\vs_*producto*.exe /adminfile *PathOfTheAdmindeployment.xmlFile*<em>AdditionalParametersAsNeeded</em>
+- Abra el menú **Iniciar**, elija **Ejecutar** y, luego, escriba \\\\*ServerName*\IDEinstall\vs_*Product*.exe /adminfile *PathOfTheAdmindeployment.xmlFile*<em>AdditionalParametersAsNeeded</em>.
 
    Por ejemplo, puede especificar la siguiente línea de comandos: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`
 
 #### <a name="to-enable-clients-to-manually-install-visual-studio-with-pre-defined-settings"></a>Para permitir que los clientes instalen manualmente Visual Studio con valores predefinidos
 
-1.  Copie el archivo personalizado AdminDeployment.xml en un recurso compartido de red que sea de solo lectura (por ejemplo, \\\\*ServerName*\IDEinstall\packages\AdminDeployment.xml).
+1. Copie el archivo personalizado AdminDeployment.xml en un recurso compartido de red que sea de solo lectura (por ejemplo, \\\\*ServerName*\IDEinstall\packages\AdminDeployment.xml).
 
-2.  Permita a los usuarios instalar desde ese recurso compartido.
+2. Permita a los usuarios instalar desde ese recurso compartido.
 
 ## <a name="maintaining-an-installation"></a>Mantener una instalación
  Si abre **Panel de control** y vuelve a ejecutar la aplicación de instalación, puede modificar las características de Visual Studio, desinstalar lenguajes de programación y reparar o desinstalar Visual Studio.
@@ -104,9 +104,9 @@ Puede ejecutar la aplicación de instalación de [!INCLUDE[vsprvs](../includes/v
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>Para mantener una instalación en un equipo cliente
 
--   Abra el **Panel de control**y elija **Programas y características**.
+- Abra el **Panel de control**y elija **Programas y características**.
 
--   Elija [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]y, después, elija **Cambiar**.
+- Elija [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]y, después, elija **Cambiar**.
 
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Para cambiar los valores de AdminDeployment en un equipo cliente una vez instalado Visual Studio
 
@@ -114,66 +114,65 @@ Puede ejecutar la aplicación de instalación de [!INCLUDE[vsprvs](../includes/v
 
 2. Abra el menú **Iniciar** y, a continuación, elija **Ejecutar**.
 
-3. Escriba el siguiente texto: \\ \\ *ServerName*\IDEinstall\vs_*producto*.exe /AdminFile PathToAdmindeployment.xml archivo
+3. Escriba el siguiente texto: \\\\*ServerName*\IDEinstall\vs_*Product*.exe /AdminFile PathToAdmindeployment.xml.
 
     AdditionalParametersAsNeeded
 
     Por ejemplo, puede especificar la siguiente línea de comandos: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`
 
-   Repair es el parámetro predeterminado cuando Visual Studio está instalado. Si repara Visual Studio con /AdminFile actualizado, se invalidará la configuración de implementación de administración actual con los que invoca el archivo AdminDeployment.xml actualizado.
+   Repair es el parámetro predeterminado cuando Visual Studio está instalado. Si repara Visual Studio con /AdminFile actualizado, los valores actuales de la implementación de administración se reemplazarán por los que invoque el archivo AdminDeployment.xml actualizado.
 
-## <a name="updating-an-installation"></a>Actualizar una instalación
- Microsoft ha lanzado varias actualizaciones a Visual Studio 2015. Esta sección explica cómo actualizar la imagen de instalación desatendida de Visual Studio 2015 para que incluya las actualizaciones.
+## <a name="updating-an-installation"></a>Actualización de una instalación
+ Microsoft ha lanzado varias actualizaciones para Visual Studio 2015. En esta sección se explica cómo actualizar la imagen de instalación desatendida de Visual Studio 2015 para que incluya las actualizaciones.
 
-#### <a name="to-update-an-unattended-installation-of-visual-studio"></a>Para actualizar una instalación desatendida de Visual Studio
+#### <a name="to-update-an-unattended-installation-of-visual-studio"></a>Para actualizar una instalación desatendida de Visual Studio, siga estos pasos:
 
-1. Busque el archivo de Product.exe en la imagen de red existente, haga clic en él y, a continuación, haga clic en **propiedades**.
+1. Busque el archivo Product.exe en la imagen de red existente, haga clic en él con el botón derecho y, luego, haga clic en **Propiedades**.
 
-2. Haga clic en el **detalles** pestaña y, a continuación, tome nota de la **versión del producto** propiedad.
+2. Haga clic en la pestaña **Detalles** y tome nota de la propiedad **Versión del producto**.
 
-    ![Ejemplo de cuadro de diálogo de propiedades en una instalación desatendida de Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "instalación desatendida: cuadro de diálogo Propiedades")
+    ![Ejemplo de cuadro de diálogo de propiedades en una instalación desatendida de Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "Instalación desatendida: cuadro de diálogo Propiedades")
 
 3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Si la versión del producto es 14.0.24720.0 o 14.0.24720.1, siga estos pasos:
-4. 1.  Ejecute *Product.exe* /Layout *unidad:* \IDEinstall en un equipo que tenga acceso a Internet. (Por ejemplo, ejecute: `vs_enterprise.exe /Layout d:\IDEinstall`.)
+   1. Ejecute *Product.exe* /Layout *Unidad:* \IDEinstall en una máquina que tenga acceso a Internet. (Por ejemplo, ejecute: `vs_enterprise.exe /Layout d:\IDEinstall`.)
 
-   2.  Una vez completada la/Layout, copie la nueva imagen a una nueva ubicación.
+   2. Una vez finalizado /Layout, copie la nueva imagen en una nueva ubicación.
 
-   3.  Crear y modificar el archivo AdminDeployment.xml. Para ello, use el `/CreateAdminFile`  *\<ubicación del archivo >* parámetro de línea de comandos. (Para obtener más información, consulte la sección "Deploying Visual Studio en modo desatendido" de este artículo).
+   3. Cree y modifique el archivo AdminDeployment.xml. Para ello, use el parámetro de línea de comandos `/CreateAdminFile`*\<ubicación del archivo>*. (Para más información, consulte la sección "Implementar Visual Studio en modo desatendido" de este artículo).
 
-   4.  En el equipo cliente, ejecute el siguiente comando para actualizar la copia de Visual Studio que instaló anteriormente: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe*  /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart ".
+   4. En la máquina cliente, ejecute el siguiente comando para actualizar la copia de Visual Studio que instaló anteriormente: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart".
 
         Por ejemplo, ejecute: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`.
 5. ###### <a name="for-other-product-version-values-follow-these-steps"></a>Para otros valores de versión del producto, siga estos pasos:
-6. 1.  Ejecute *Product.exe* /Layout *unidad:* \IDEinstall en un equipo que tenga acceso a Internet. (Por ejemplo, ejecute `vs-enterprise.exe /Layout d:\IDEinstall`.)
+   1. Ejecute *Product.exe* /Layout *Unidad:* \IDEinstall en una máquina que tenga acceso a Internet. (Por ejemplo, ejecute `vs-enterprise.exe /Layout d:\IDEinstall`.)
 
-   2.  Una vez completada la/Layout, copie la nueva imagen a una nueva ubicación. (O bien, puede reemplazar la imagen de red existente en su lugar).
+   2. Una vez finalizado /Layout, copie la nueva imagen en una nueva ubicación. (O bien, puede reemplazar la imagen de red existente).
 
-   3.  Crear y, a continuación, modifique el archivo AdminDeployment.xml. Para ello, use el `/CreateAdminFile`  *\<ubicación del archivo >* parámetro de línea de comandos. (Para obtener más información, consulte la sección "Deploying Visual Studio en modo desatendido" de este artículo).
+   3. Cree y modifique el archivo AdminDeployment.xml. Para ello, use el parámetro de línea de comandos `/CreateAdminFile`*\<ubicación del archivo>*. (Para más información, consulte la sección "Implementar Visual Studio en modo desatendido" de este artículo).
 
-   4.  Si copia la imagen a una nueva ubicación, debe ejecutar el comando siguiente en el equipo cliente para actualizar la copia de Visual Studio que instaló anteriormente: "\\\\*server1*\IDEinstall_Updated_1\\ *Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart ".
+   4. Si copia la imagen en una nueva ubicación, debe ejecutar el siguiente comando en la máquina cliente para actualizar la copia de Visual Studio que instaló anteriormente: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart".
 
         Por ejemplo, ejecute: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`.
 
-   5.  Si reemplaza la imagen de red existente, puede ejecutar el comando como se muestra en el paso anterior, o puede hacer lo siguiente:
+   5. Si reemplaza la imagen de red existente, puede ejecutar el comando como se muestra en el paso anterior, o puede hacer lo siguiente:
+       1. Abra el **Panel de control**y elija **Programas y características**.
 
-   6.  1.  Abra el **Panel de control**y elija **Programas y características**.
+       2. Elija **Visual Studio** y, luego, **Cambiar**.
 
-       2.  Elija **Visual Studio**y, a continuación, elija **cambio**.
+       3. Después de que Visual Studio se inicie en modo de mantenimiento, haga clic en **Modificar**.
 
-       3.  Después de que Visual Studio se inicia en modo de mantenimiento, haga clic en **modificar**.
+       4. La actualización más reciente debe aparecer en la página de características. Seleccione las otras características que quiere instalar, haga clic en **Siguiente** y, luego, haga clic en **Actualizar** para instalar la actualización y las nuevas características.
 
-       4.  La actualización más reciente debe aparecer en la página de características. Seleccione las otras características que desea instalar, haga clic en **siguiente**y, a continuación, haga clic en **actualizar** para instalar la actualización y las nuevas características.
-
-## <a name="registering-the-product"></a>Registrar el producto
+## <a name="registering-the-product"></a>Registro del producto
  Una vez completada la instalación, puede registrar la copia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 #### <a name="to-register"></a>Para registrarlo
 
-1.  Abra el menú **Ayuda** y, a continuación, elija **Registrar producto**.
+1. Abra el menú **Ayuda** y, a continuación, elija **Registrar producto**.
 
-2.  Escriba la clave de producto.
+2. Escriba la clave de producto.
 
-     (Para obtener más información, consulte el [Cómo: buscar la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) y [Cómo: aplicar automáticamente las claves de producto durante la implementación de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) temas.)
+     (Para más información, consulte los temas [Cómo: Encontrar la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) y [Cómo: aplicar automáticamente las claves de producto durante la implementación de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)).
 
 ## <a name="see-also"></a>Vea también
  [Instalar Visual Studio](../install/install-visual-studio-2015.md)

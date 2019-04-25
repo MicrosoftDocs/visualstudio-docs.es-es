@@ -1,5 +1,5 @@
 ---
-title: Paquetes de interfaz de idioma de Microsoft (LIP) | Microsoft Docs
+title: Paquetes de interfaz de idioma (LIP) de Microsoft | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8d5bf89a4f4b33306176b1fe5e33fa91fb1d325d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776927"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096509"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Paquetes de interfaz de idioma (LIP) de Microsoft y Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,46 +43,46 @@ Con un paquete de interfaz de idiomas (LIP) de Windows, puede instalar una versi
 ### <a name="support-for-code-pages"></a>Compatibilidad con páginas de códigos
  Algunas Visual Studio Tools no muestran el texto correctamente si el texto contiene caracteres que no se encuentran en la página de códigos actual. En su lugar, aparecen signos de interrogación o texto dañado. Las siguientes herramientas o áreas se ven afectadas:
 
--   Sitios implementados mediante FTP.
+- Sitios implementados mediante FTP.
 
--   Nombres de equipo no ASCII en algunos controles.
+- Nombres de equipo no ASCII en algunos controles.
 
--   Herramientas de línea de comandos que se ejecutan fuera de Visual Studio.
+- Herramientas de línea de comandos que se ejecutan fuera de Visual Studio.
 
--   Asistente para migración de Visual Basic
+- Asistente para migración de Visual Basic
 
--   ActiveX Control Test Container.
+- ActiveX Control Test Container.
 
--   Visor de objetos OLE y COM.
+- Visor de objetos OLE y COM.
 
--   Herramienta de depuración Web ISAPI.
+- Herramienta de depuración Web ISAPI.
 
--   Proyectos de aplicación MFC que tienen contenido HTML de la Ayuda.
+- Proyectos de aplicación MFC que tienen contenido HTML de la Ayuda.
 
--   La interfaz de usuario de Visual SourceSafe/SCCI vuelve al inglés si hay una página de códigos incompatible.
+- La interfaz de usuario de Visual SourceSafe/SCCI vuelve al inglés si hay una página de códigos incompatible.
 
--   Visual SourceSafe no admite nombres de archivo Unicode.
+- Visual SourceSafe no admite nombres de archivo Unicode.
 
--   Los caracteres definidos por el usuario final (zona de uso privado) no se pueden utilizar como tokens ni identificadores.
+- Los caracteres definidos por el usuario final (zona de uso privado) no se pueden utilizar como tokens ni identificadores.
 
--   Los caracteres de Latín extendido-B no se pueden mostrar en algunas ventanas de herramientas de Visual Studio cuando la página de códigos de Windows está establecida en un idioma de Asia Oriental.
+- Los caracteres de Latín extendido-B no se pueden mostrar en algunas ventanas de herramientas de Visual Studio cuando la página de códigos de Windows está establecida en un idioma de Asia Oriental.
 
--   Las ejecuciones de texto que constan de caracteres de scripts de varios lenguajes pueden mostrar el glifo predeterminado para algunos caracteres.
+- Las ejecuciones de texto que constan de caracteres de scripts de varios lenguajes pueden mostrar el glifo predeterminado para algunos caracteres.
 
--   Al copiar y pegar cadenas de script complejas en controles comunes, es posible que los caracteres pierdan su forma. Por consiguiente, utilice un teclado del idioma correspondiente para escribir texto.
+- Al copiar y pegar cadenas de script complejas en controles comunes, es posible que los caracteres pierdan su forma. Por consiguiente, utilice un teclado del idioma correspondiente para escribir texto.
 
 ##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>Para mostrar correctamente los caracteres que no están incluidos en la página de códigos actual
 
-1.  Haga clic en **Iniciar** y en **Panel de control** y, a continuación, abra **Configuración regional y de idioma** (o **Región** en [!INCLUDE[win8](../includes/win8-md.md)]).
+1. Haga clic en **Iniciar** y en **Panel de control** y, a continuación, abra **Configuración regional y de idioma** (o **Región** en [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
     >  Para poder llevar a cabo estos pasos, debe ser administrador del equipo.
 
-2.  Haga clic en la pestaña **Opciones avanzadas**.
+2. Haga clic en la pestaña **Opciones avanzadas**.
 
-3.  En la lista **Seleccione un idioma que coincida con la versión del idioma de los programas no Unicode que quiera utilizar**, seleccione su idioma habitual.
+3. En la lista **Seleccione un idioma que coincida con la versión del idioma de los programas no Unicode que quiera utilizar**, seleccione su idioma habitual.
 
-4.  Haga clic en **Aceptar**.
+4. Haga clic en **Aceptar**.
 
 ## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>Cambiar el idioma utilizado para el texto de la interfaz de usuario de Visual Studio
  Al instalar varias versiones de idioma de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en el mismo equipo, la interfaz de usuario de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cambia de forma predeterminada a **Igual que en Microsoft Windows**. Este valor indica que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mostrará el texto de la interfaz de usuario en el idioma de la interfaz de usuario del sistema operativo.

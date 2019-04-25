@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d7a7ee6b8dec07284e35ff6807859136a1223fb7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044308"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Tutorial: Crear un entorno de compilación para varios equipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,22 +68,22 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
 ## <a name="prerequisites"></a>Requisitos previos  
   
--   Una copia con licencia de Visual Studio Ultimate, Visual Studio Premium o Visual Studio Professional  
+- Una copia con licencia de Visual Studio Ultimate, Visual Studio Premium o Visual Studio Professional  
   
--   Una copia de .NET Framework 4.5.1, que puede descargar desde el [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779) sitio Web.  
+- Una copia de .NET Framework 4.5.1, que se puede descargar del sitio web de [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779).  
   
-##  <a name="InstallingSoftware"></a> Instalar software en los equipos  
+## <a name="InstallingSoftware"></a> Instalar software en los equipos  
  En primer lugar, configure el equipo host y configure después el equipo de compilación.  
   
  Al instalar Visual Studio en el equipo host, se crean los archivos y las configuraciones que copiará al equipo de compilación más adelante. Puede instalar Visual Studio en un equipo x86 o x64, pero la arquitectura del equipo de compilación debe coincidir con la arquitectura del equipo host.  
   
 #### <a name="to-install-software-on-the-computers"></a>Para instalar software en los equipos  
   
-1.  En el equipo host, instale Visual Studio.  
+1. En el equipo host, instale Visual Studio.  
   
-2.  En el equipo de compilación, instale .NET Framework 4.5. Para comprobar que está instalado, asegúrese de que el valor de la clave del Registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version comienza con "4.5".  
+2. En el equipo de compilación, instale .NET Framework 4.5. Para comprobar que está instalado, asegúrese de que el valor de la clave del Registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version comienza con "4.5".  
   
-##  <a name="CopyingFiles"></a> Copiar archivos del equipo host al equipo de compilación  
+## <a name="CopyingFiles"></a> Copiar archivos del equipo host al equipo de compilación  
  En esta sección se explica cómo copiar los archivos, compiladores, herramientas de compilación, activos de MSBuild y configuraciones del Registro necesarios del equipo host al equipo de compilación. En estas instrucciones se da por supuesto que ha instalado Visual Studio en la ubicación predeterminada en el equipo host; si lo instaló en otra ubicación, ajuste los pasos en consecuencia.  
   
 - En un equipo x86, la ubicación predeterminada es C:\Archivos de programa\Microsoft Visual Studio 11.0\  
@@ -125,97 +125,97 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
 2. Copie las siguientes carpetas de forma recursiva del equipo host al equipo de compilación:  
   
-   -   %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
+   - %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
   
-   -   %ProgramFiles%\Common Files\Merge Modules\  
+   - %ProgramFiles%\Common Files\Merge Modules\  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\VC\  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\VC\  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
   
-   -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
+   - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
   
-   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
+   - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
   
-   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
+   - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
   
 3. Copie estos archivos del equipo host al equipo de compilación:  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
   
 4. Las siguientes bibliotecas en tiempo de ejecución de Visual C++ solo se requieren si ejecuta resultados de la compilación en el equipo de compilación, por ejemplo, como parte de pruebas automatizadas. Los archivos suelen encontrarse en subcarpetas bajo la carpeta %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86\ o %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64\, según la arquitectura del sistema. En los sistemas x86, copie los archivos binarios x86 a la carpeta \Windows\System32\. En los sistemas x64, copie los archivos binarios x86 a la carpeta Windows\SysWOW64\ y los archivos binarios x64 a la carpeta Windows\System32\.  
   
-   -   \Microsoft.VC110.ATL\atl110.dll  
+   - \Microsoft.VC110.ATL\atl110.dll  
   
-   -   \Microsoft.VC110.CRT\msvcp110.dll  
+   - \Microsoft.VC110.CRT\msvcp110.dll  
   
-   -   \Microsoft.VC110.CRT\msvcr110.dll  
+   - \Microsoft.VC110.CRT\msvcr110.dll  
   
-   -   \Microsoft.VC110.CXXAMP\vcamp110.dll  
+   - \Microsoft.VC110.CXXAMP\vcamp110.dll  
   
-   -   \Microsoft.VC110.MFC\mfc110.dll  
+   - \Microsoft.VC110.MFC\mfc110.dll  
   
-   -   \Microsoft.VC110.MFC\mfc110u.dll  
+   - \Microsoft.VC110.MFC\mfc110u.dll  
   
-   -   \Microsoft.VC110.MFC\mfcm110.dll  
+   - \Microsoft.VC110.MFC\mfcm110.dll  
   
-   -   \Microsoft.VC110.MFC\mfcm110u.dll  
+   - \Microsoft.VC110.MFC\mfcm110u.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110chs.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110chs.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110cht.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110cht.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110deu.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110deu.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110enu.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110enu.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110esn.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110esn.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110fra.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110fra.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110ita.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110ita.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110kor.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110kor.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110rus.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110rus.dll  
   
-   -   \Microsoft.VC110.OPENMP\vcomp110.dll  
+   - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
 5. Copie solo los siguientes archivos de la carpeta \Debug_NonRedist\x86\ o \Debug_NonRedist\x64\ al equipo de compilación, como se describe en [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). No se puede copiar ningún otro archivo.  
   
-   -   \Microsoft.VC110.DebugCRT\msvcp110d.dll  
+   - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
-   -   \Microsoft.VC110.DebugCRT\msvcr110d.dll  
+   - \Microsoft.VC110.DebugCRT\msvcr110d.dll  
   
-   -   \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
+   - \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfc110d.dll  
+   - \Microsoft.VC110.DebugMFC\mfc110d.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfc110ud.dll  
+   - \Microsoft.VC110.DebugMFC\mfc110ud.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfcm110d.dll  
+   - \Microsoft.VC110.DebugMFC\mfcm110d.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
+   - \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
   
-   -   \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
+   - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
   
-##  <a name="CreatingRegistry"></a> Crear la configuración del Registro  
+## <a name="CreatingRegistry"></a> Crear la configuración del Registro  
  Debe crear entradas del Registro para configurar los valores de MSBuild.  
   
 #### <a name="to-create-registry-settings"></a>Para crear la configuración del Registro  
@@ -277,12 +277,12 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
   
-##  <a name="SettingEnvVariables"></a> Establecer variables de entorno en el equipo de compilación  
+## <a name="SettingEnvVariables"></a> Establecer variables de entorno en el equipo de compilación  
  Para utilizar MSBuild en el equipo de compilación, debe establecer las variables de entorno PATH. Puede utilizar vcvarsall.bat para establecer las variables o puede configurarlas manualmente.  
   
 #### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>Para utilizar vcvarsall.bat con el fin de establecer variables de entorno  
   
--   Abra una ventana de símbolo del sistema en el equipo de compilación y ejecute %Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat. Puede usar un argumento de línea de comandos para especificar el conjunto de herramientas que desea usar: x86, x64 nativo o compilador cruzado de x64. Si no especifica ningún argumento de la línea de comandos, se utiliza el conjunto de herramientas de x86.  
+- Abra una ventana de símbolo del sistema en el equipo de compilación y ejecute %Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat. Puede usar un argumento de línea de comandos para especificar el conjunto de herramientas que desea usar: x86, x64 nativo o compilador cruzado de x64. Si no especifica ningún argumento de la línea de comandos, se utiliza el conjunto de herramientas de x86.  
   
      En esta tabla se describen los argumentos admitidos para vcvarsall.bat:  
   
@@ -298,7 +298,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
 1. Para configurar manualmente el entorno de la línea de comandos, agregue esta ruta de acceso a la variable de entorno PATH:  
   
-   -   %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
+   - %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
   
 2. Opcionalmente, también puede agregar las rutas de acceso siguientes a la variable PATH para que sea más fácil usar MSBuild para compilar las soluciones.  
   
@@ -314,20 +314,20 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
    - %windir%\Microsoft.NET\Framework64\v4.0.30319  
   
-##  <a name="InstallingMSBuildToGAC"></a> Instalar ensamblados de MSBuild en la caché global de ensamblados (GAC) en el equipo de compilación  
+## <a name="InstallingMSBuildToGAC"></a> Instalar ensamblados de MSBuild en la caché global de ensamblados (GAC) en el equipo de compilación  
  MSBuild requiere la instalación de algunos ensamblados adicionales en la GAC del equipo de compilación.  
   
 #### <a name="to-copy-assemblies-from-the-host-computer-and-install-them-on-the-build-computer"></a>Para copiar los ensamblados del equipo host e instalarlos en el equipo de compilación  
   
-1.  Copie los ensamblados siguientes del equipo host al equipo de compilación. Como se instalarán en la GAC, puede ponerlos en cualquier lugar del equipo de compilación.  
+1. Copie los ensamblados siguientes del equipo host al equipo de compilación. Como se instalarán en la GAC, puede ponerlos en cualquier lugar del equipo de compilación.  
   
-    -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll  
+    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll  
+    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll  
+    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll  
   
-2.  Para instalar los ensamblados en la GAC, busque gacutil.exe en el equipo de compilación; normalmente está en %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Si no encuentra esta carpeta, repita los pasos de la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) de este tutorial.  
+2. Para instalar los ensamblados en la GAC, busque gacutil.exe en el equipo de compilación; normalmente está en %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Si no encuentra esta carpeta, repita los pasos de la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) de este tutorial.  
   
      Abra una ventana de símbolo del sistema que tenga derechos administrativos y ejecute este comando para cada archivo:  
   
@@ -336,7 +336,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
     > [!NOTE]
     >  Puede que sea necesario reiniciar el sistema para que un ensamblado se instale totalmente en la GAC.  
   
-##  <a name="BuildingProjects"></a> Compilar proyectos  
+## <a name="BuildingProjects"></a> Compilar proyectos  
  Puede utilizar Team Foundation Build para compilar proyectos y soluciones de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o puede compilarlos en la línea de comandos. Cuando se utiliza Team Foundation Build para compilar proyectos, invoca el ejecutable de MSBuild correspondiente a la arquitectura del sistema.  En la línea de comandos, puede utilizar MSBuild de 32 bits o MSBuild 64 bits, y puede elegir la arquitectura de MSBuild estableciendo la variable de entorno PATH o invocando directamente el archivo ejecutable de MSBuild específico de la arquitectura.  
   
  Para usar msbuild.exe en el símbolo del sistema, ejecute el comando siguiente, donde *solution.sln* es un marcador de posición para el nombre de la solución.  
@@ -350,7 +350,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 >   
 >  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
-##  <a name="CreatingForSourceControl"></a> Crear el entorno de compilación para que se pueda proteger en el control de código fuente  
+## <a name="CreatingForSourceControl"></a> Crear el entorno de compilación para que se pueda proteger en el control de código fuente  
  Puede crear un entorno de compilación que se pueda implementar en varios equipos y no requiera almacenar archivos en la GAC ni modificar configuraciones del Registro. Los pasos siguientes son simplemente una forma de realizarlo. Adapte estos pasos a las características únicas de su entorno de compilación.  
   
 > [!NOTE]
@@ -360,15 +360,15 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>Para crear un entorno de compilación que se pueda proteger en el control de código fuente  
   
-1.  Cree un directorio "Depot" en el equipo host.  
+1. Cree un directorio "Depot" en el equipo host.  
   
      En estos pasos se hace referencia al directorio como %Depot%.  
   
-2.  Copie los directorios y los archivos como se describe en la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) de este tutorial, pero péguelos en el directorio %Depot% recién creado. Por ejemplo, copie de %ProgramFiles%\Windows Kits\8.0\bin\ a %Depot%\Windows Kits\8.0\bin\\.  
+2. Copie los directorios y los archivos como se describe en la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) de este tutorial, pero péguelos en el directorio %Depot% recién creado. Por ejemplo, copie de %ProgramFiles%\Windows Kits\8.0\bin\ a %Depot%\Windows Kits\8.0\bin\\.  
   
-3.  Cuando los archivos se hayan pegado en %Depot%, realice estos cambios:  
+3. Cuando los archivos se hayan pegado en %Depot%, realice estos cambios:  
   
-    -   En %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ y \Microsoft.CppCommon.targets\\, cambie cada instancia de  
+    - En %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ y \Microsoft.CppCommon.targets\\, cambie cada instancia de  
   
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
@@ -378,7 +378,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
          La nomenclatura anterior se basa en el almacenamiento de los ensamblados en la GAC.  
   
-    -   En %Depot% \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets, cambie cada instancia de  
+    - En %Depot% \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets, cambie cada instancia de  
   
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
@@ -386,7 +386,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
   
-4.  Cree un archivo .props (por ejemplo, Partner.AutoImports.props) y póngalo en la raíz de la carpeta que contiene los proyectos. Este archivo se usa para establecer las variables utilizadas por MSBuild para buscar diversos recursos. Si las variables no se establecen con este archivo, se establecen mediante otros archivos .props y .targets que dependen de las configuraciones del Registro. Puesto no vamos a establecer ninguna configuración del Registro, estas variables estarán vacías y se produciría un error de compilación. En su lugar, agregue esto a Partner.AutoImports.props:  
+4. Cree un archivo .props (por ejemplo, Partner.AutoImports.props) y póngalo en la raíz de la carpeta que contiene los proyectos. Este archivo se usa para establecer las variables utilizadas por MSBuild para buscar diversos recursos. Si las variables no se establecen con este archivo, se establecen mediante otros archivos .props y .targets que dependen de las configuraciones del Registro. Puesto no vamos a establecer ninguna configuración del Registro, estas variables estarán vacías y se produciría un error de compilación. En su lugar, agregue esto a Partner.AutoImports.props:  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -409,17 +409,17 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
     </Project>  
     ```  
   
-5.  En cada uno de los archivos de proyecto, agregue la siguiente línea al principio, después de la línea `<Project Default Targets…>`.  
+5. En cada uno de los archivos de proyecto, agregue la siguiente línea al principio, después de la línea `<Project Default Targets…>`.  
   
     ```  
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>  
     ```  
   
-6.  Cambie el entorno de la línea de comandos de la manera siguiente:  
+6. Cambie el entorno de la línea de comandos de la manera siguiente:  
   
-    -   Establezca Depot =*ubicación del directorio Depot creado en el paso 1*  
+    - Establezca Depot =*ubicación del directorio Depot creado en el paso 1*  
   
-    -   Establezca path=%path%;*ubicación de MSBuild en el equipo*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 11.0\Common7\IDE\  
+    - Establezca path=%path%;*ubicación de MSBuild en el equipo*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 11.0\Common7\IDE\  
   
          Para la compilación nativa de 64 bits, apunte a MSBuild de 64 bits.  
   
